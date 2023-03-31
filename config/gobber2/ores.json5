@@ -1,0 +1,102 @@
+{
+	/* 
+	   
+	   ***********************
+	   Lucky Block
+	   ***********************
+	*/
+	"luckyVeinSize": 4,
+	"luckyMaxLevel": 120,
+	"luckyPerChunk": 15,
+	"luckyExpOrbs": 2,
+	/* 
+	   
+	   ***********************
+	   Lucky Block - Deepslate
+	   ***********************
+	*/
+	"luckyDeepslateVeinSize": 4,
+	"luckyDeepslateMaxLevel": 0,
+	"luckyDeepslatePerChunk": 15,
+	/* 
+	   
+	   ***********************
+	   Lucky Block - Nether
+	   ***********************
+	*/
+	"luckyNetherVeinSize": 4,
+	"luckyNetherMaxLevel": 128,
+	"luckyNetherPerChunk": 15,
+	/* 
+	   
+	   ***********************
+	   Lucky Block - End
+	   ***********************
+	*/
+	"luckyEndVeinSize": 9,
+	"luckyEndMaxLevel": 180,
+	"luckyEndPerChunk": 25,
+	/* 
+	   
+	   ***********************
+	   Lucky Block - Drops
+	   - only use values between .001 to .999
+	   - values cannot overlap
+	   - values should be in decending order from
+	   cutoff, common, uncommon, and rare
+	   - values above cutoff threshold get nothing
+	   ***********************
+	*/
+	"enableExtraLoot": false,
+	"enableFortune": false,
+	"cutoffThreshold": 0.1,
+	"commonThreshold": 0.02,
+	"uncommonThreshold": 0.009,
+	"rareThreshold": 0.006,
+	"defaultDrop": "gobbers:gobber2_foo",
+	/* 
+	   
+	   ***********************
+	   Blast Resistance
+	   ***********************
+	*/
+	"oreBlastResistance": 1300,
+	"glassBlastResistance": 1300,
+	"blockBlastResistance": 1300,
+	/* 
+	   
+	   ***********************
+	   Gobber Ore
+	   ***********************
+	*/
+	"gobberVeinSize": 4,
+	"gobberMaxLevel": 5,
+	"gobberPerChunk": 20,
+	/* 
+	   
+	   ***********************
+	   Deepslate Gobber Ore
+	   ***********************
+	*/
+	"gobberDeepslateVeinSize": 4,
+	"gobberDeepslateMaxLevel": 0,
+	"gobberDeepslatePerChunk": 20,
+	/* 
+	   
+	   ***********************
+	   Nether Gobber Ore
+	   ***********************
+	*/
+	"netherGobberVeinSize": 4,
+	"netherGobberMaxLevel": 40,
+	"netherGobberPerChunk": 20,
+	/* 
+	   
+	   ***********************
+	   End Gobber Ore
+	   ***********************
+	*/
+	"endGobberVeinSize": 9,
+	"endGobberMaxLevel": 180,
+	"endGobberPerChunk": 25
+}

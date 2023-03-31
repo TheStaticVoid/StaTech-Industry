@@ -1,0 +1,520 @@
+{
+	/* 
+	   
+	   ***********************
+	   Ring Settings
+	   ***********************
+	*/
+	"ringAboveCooldown": 120,
+	"enableAirWalkingPlaceGlass": true,
+	"ringAscentDuration": 3200,
+	"ringAttractionRange": 8,
+	"ringAttractionEnableCoal": false,
+	"ringBlinkDistance": 100,
+	"ringBlinkCooldown": 120,
+	"enableCuringAlwaysOn": false,
+	"ringCuringCooldown": 120,
+	"ringDismissalRange": 8.0,
+	"ringDismissalVelocity": 0.2,
+	"ringDismissalLift": 1.5,
+	"ringExplorerCooldown": 240,
+	"ringExplorerUsePlayerPos": false,
+	"ringExplorerMin": 5000,
+	"ringExplorerMax": 20000,
+	"ringFarmerHorizRange": 12,
+	"ringFarmerVertRange": 6,
+	"ringFarmerInterval": 60,
+	"ringFarmerIntervalCactus": 20,
+	"ringFarmerExtraCrops": false,
+	"ringPhoenixHealAmount": 5,
+	"ringHasteLevel": 2,
+	"ringLuckLevel": 4,
+	"ringMinerCooldown": 120,
+	"ringMinerRange": 5,
+	"ringMinerVerticalRange": 4,
+	"ringMinerCentralizedBreaking": false,
+	"ringMinerCentralizedBreakingDelay": true,
+	"ringMinerInstantBreak": false,
+	"ringRepairInterval": 90,
+	"ringStrengthLevel": 2,
+	"ringStrengthResistenceLevel": 1,
+	"ringSunshineAuto": false,
+	"ringSwiftnessLevel": 1,
+	"ringSwiftnessJump": 3,
+	"ringTravelerLaunch": 4.0,
+	"ringTravelerCruising": 0.2,
+	"allowWorkInEnderchest": false,
+	"enableRingStealthInvisible": true,
+	/* 
+	   
+	   ***********************
+	   Medallion Settings
+	   ***********************
+	*/
+	"medallionExpXPBoost": true,
+	"medallionLesserHealingAmount": 1,
+	"medallionHealingAmount": 2,
+	"medallionGreaterHealingAmount": 3,
+	"medallionHealingIncludesSaturation": false,
+	"medallionSeaAlwaysOn": false,
+	"medallionShieldingHorizRange": 3,
+	"medallionShieldingVertRange": 2,
+	"medallionShieldingAgainstWither": false,
+	"medallionSufferingRange": 6,
+	"medallionSufferingDamage": 2,
+	/* 
+	   
+	   ***********************
+	   Staff Settings
+	   ***********************
+	*/
+	"staffTransformationDurability": 1025,
+	"staffClearingHorizRange": 6,
+	"staffClearingVertRange": 3,
+	"staffClearingCooldown": 120,
+	"staffSniperCooldown": 240,
+	"staffSniperArrowVelocity": 60.0,
+	"staffSniperArrowExtraDamage": 1,
+	"staffSniperEnableQuickUse": true,
+	"staffFarmerHorizRange": 12,
+	"staffFarmerVertRange": 6,
+	"staffFarmerInterval": 60,
+	"staffFarmerIntervalCactus": 20,
+	"staffFarmerIntervalExtra": 20,
+	"staffFarmerExtraCrops": false,
+	"staffFarmerReplant": true,
+	"staffEnsnarementHotileMobs": false,
+	/* 
+	   
+	   ***********************
+	   General Effect Settings
+	   -used with optimization mods
+	   that break things
+	   Value of 300 works
+	   - only needed if there is a problem
+	   ***********************
+	*/
+	"effectDuration": 8,
+	"effectDurationNightVision": 240,
+	/* 
+	   
+	   ***********************
+	   Blessing Effect Settings
+	   ***********************
+	*/
+	"effectBlessingDuration": 90,
+	"effectBlessingPoints": 1,
+	"effectBlessingFood": 1,
+	"effectBlessingDelay": 20,
+	/* 
+	   
+	   ***********************
+	   GobberForce Settings (WIP)
+	   - not ready for prime time
+	   - use at your own risk
+	   - values are unbalanced
+	   ***********************
+	*/
+	"enableGobberForce": false,
+	"enableGFNaturalRegen": true,
+	"enableGFBreathing": true,
+	"enableGFDamageShield": true,
+	"enableGFVigor": true,
+	"enableGFAutoFeed": true,
+	"enableGFHealthRestore": true,
+	"enableGFExtraHearts": true,
+	"enableGFChrisma": true,
+	"enableGFBadOmen": true,
+	"enableGFKillEarning": true,
+	"enableGFMiningEarning": true,
+	"forceNaturalRegenDelayGobber": 1200,
+	"forceNaturalRegenDelayNether": 900,
+	"forceNaturalRegenDelayEnd": 600,
+	"forceNaturalRegenDelayDragon": 300,
+	"forceEarnedFullArmor": 1,
+	"forceEarnedFromKill": 2,
+	"forceEarnedFromOre": 3,
+	"forceDamageAbsorbLevel": 50,
+	"forceExhausionLevel": 75,
+	"forceExhausionCost": 1,
+	"forceAirLevel": 30,
+	"forceAirCost": 1,
+	"forceHungerRestoreLevel": 50,
+	"forceHungerRestoreCost": 5,
+	"forceHealthRestoreLevel": 50,
+	"forceHealthRestoreCost": 5,
+	"forceExtraHeartsLevel": 100,
+	"forceExtraHeartsCost": 10,
+	"forceExtraHeartsGobber": 2,
+	"forceRemoveBadOmenLevel": 50,
+	"forceRemoveBadOmenCost": 5,
+	"forceCharismaLevel": 100,
+	"forceCharismaCost": 1,
+	/* 
+	   
+	   ***********************
+	   Experience Effect Settings
+	   -used by Experience Boost enchant,
+	   Medallion of Experience, and
+	   Nether Sword perks
+	   -to nerf xp, either increase effect
+	   delay and/or decrease XP per tick
+	   ***********************
+	*/
+	"effectDurationExpBoost": 60,
+	"effectDelayExpBoost": 60,
+	"ExperienceBaseXPPerTick": 8,
+	"medallionExpAmplifer": 4,
+	"medallionExpDuration": 60,
+	"medallionExpFromAnyBlock": false,
+	"netherSwordXPPerTick": 8,
+	/* 
+	   
+	   ***********************
+	   Enable/Disable Enchantments
+	   ***********************
+	*/
+	"enableApotropaic": true,
+	"enableBlinders": true,
+	"enableBlessing": true,
+	"enableFasterObsidian": true,
+	"enableFluidMaster": true,
+	"enableExpBoost": true,
+	"enableQuickUse": true,
+	"enableQuietFeet": true,
+	"enableRebuffing": true,
+	"enableSmithBlade": true,
+	"enableSolidFooting": true,
+	"enableSummoner": true,
+	"enableUntouchable": true,
+	/* 
+	   
+	   ***********************
+	   Enchantment Settings
+	   ***********************
+	*/
+	"smithbladeAttackAmount": 2,
+	"smithbladeMaxLevel": 5,
+	"rebuffingMaxLevel": 3,
+	"untouchableBaseDamage": 8,
+	"untouchableMaxLevel": 4,
+	"untouchableAttackChance": 0.5,
+	"enableRingEnchanting": true,
+	"enableStaffEnchanting": true,
+	"enableMedallionEnchanting": true,
+	"apotropaicEventEnable": true,
+	"summonerEventEnable": true,
+	"summonerEnableRandomMode": false,
+	"summonerRandomModeChance": 0.30000001192092896,
+	"summonerEnableBonusStats": true,
+	"summonerGoldGear": true,
+	"summonerMobLifespan": 120,
+	"summonerHealthBonus": 10.0,
+	"summonerAttackBonus": 10.0,
+	"summonerMovementBonus": 0.4,
+	"summonerArmorBonus": 10.0,
+	/* 
+	   
+	   ***********************
+	   Tool Settings
+	   ***********************
+	*/
+	"swordSniperCooldoown": 240,
+	"swordSniperArrowVelocity": 60.0,
+	"swordSniperArrowExtraDamage": 1,
+	"swordSniperEnableQuickUse": true,
+	"enableEndHammer5x5": true,
+	"enableEndExcavator5x5": true,
+	"enableNetherSwordPerks": true,
+	/* 
+	   
+	   
+	   ******************************
+	   Bow Durability
+	   ******************************
+	*/
+	"gobberBowDurability": 3800,
+	"gobberNetherBowDurability": 5200,
+	"gobberEndBowDurability": 8000,
+	/* 
+	   
+	   
+	   ******************************
+	   Bow Zoom Multiplier
+	   - vanilla bow value = .15F
+	   - pretty good value = .45F
+	   - awesome value = .75F
+	   ******************************
+	*/
+	"bowZoomMultiplier": 0.44999998807907104,
+	/* 
+	   
+	   
+	   ******************************
+	   Global Bow Settings
+	   ******************************
+	*/
+	"projectileSpeed": 6.5,
+	"projectileDivergence": 0.0,
+	"projectileRoll": 0.0,
+	"projectilePowerDamageBonus": 0.75,
+	"projectileFlameBurnSeconds": 100,
+	"projectileExtraDamage": 0.0,
+	"projectileDropRange": 45,
+	/* 
+	   
+	   ***********************
+	   Gobber Arrow Settings
+	   - effects - slowing, poison, glowing
+	   - cobweb and explode are mutually exclusive
+	   ***********************
+	*/
+	"enableEffectsGobberArrow": true,
+	"effectDurationGobberArrow": 300,
+	"enableGobberArrowCobweb": false,
+	"enableGobberArrowExplode": false,
+	"explosionFactorGobberArrow": 2,
+	"extraDamageGobberArrow": 5,
+	"piercingLeveGobberArrow": 0,
+	"punchLevelGobberArrow": 0,
+	/* 
+	   
+	   ***********************
+	   Nether Arrow Settings
+	   - effects - slowing, wither, glowing
+	   ***********************
+	*/
+	"enableEffectsNetherArrow": true,
+	"effectDurationNetherArrow": 300,
+	"enableNetherArrowFire": true,
+	"secondsEntityOnFireDuration": 30,
+	"extraDamageNetherArrow": 7,
+	"piercingLevelNetherArrow": 1,
+	"punchLevelNetherArrow": 1,
+	/* 
+	   
+	   ***********************
+	   End Arrow Settings
+	   - effects - slowing, wither, glowing
+	   - cloud, cage, and levitation are mutually exclusive
+	   ***********************
+	*/
+	"enableEffectsEndArrow": true,
+	"effectDurationEndArrow": 300,
+	"enablEndArrowCloud": true,
+	"enableEndArrowGlassCage": false,
+	"enableLevitationEndArrow": false,
+	"extraDamageEndArrow": 10,
+	"piercingLevelEndArrow": 2,
+	"punchLevelEndArrow": 2,
+	/* 
+	   
+	   ***********************
+	   Full Tool Damage
+	   - effects hammer/excavator/treeaxe
+	   ***********************
+	*/
+	"enableFullDamage": false,
+	/* 
+	   
+	   
+	   ******************************
+	   Gobber Tool Material Stats
+	   ******************************
+	*/
+	"gobberDurability": 3800,
+	"gobberMiningSpeed": 9.0,
+	"gobberAttackDamage": 9.0,
+	"gobberSwordAttackSpeed": 2.0,
+	"gobberEnchantability": 20,
+	/* 
+	   
+	   
+	   ******************************
+	   Gobber Nether Tool Material Stats
+	   ******************************
+	*/
+	"gobberNetherDurability": 5200,
+	"gobberNetherMiningSpeed": 12.0,
+	"gobberNetherAttackDamage": 9.0,
+	"gobberNetherSwordAttackSpeed": 2.200000047683716,
+	"gobberNetherEnchantability": 25,
+	/* 
+	   
+	   
+	   ******************************
+	   Gobber End Tool Material Stats
+	   ******************************
+	*/
+	"unbreakableEndTools": true,
+	"gobberEndDurability": 8000,
+	"gobberEndMiningSpeed": 14.0,
+	"gobberEndAttackDamage": 9.0,
+	"gobberEndSwordAttackSpeed": 2.4000000953674316,
+	"gobberEndEnchantability": 30,
+	/* 
+	   
+	   
+	   ******************************
+	   Gobber Armor Material Stats
+	   ******************************
+	*/
+	"gobberDurabilityMultiplier": 71,
+	"gobberArmorEnchantability": 25,
+	"gobberToughness": 3.0,
+	"gobberKnockbackResistance": 0.0,
+	"gobberHeadProtection": 6,
+	"gobberChestProtection": 11,
+	"gobberLeggingsProtection": 9,
+	"gobberBootsProtection": 6,
+	/* 
+	   
+	   
+	   ******************************
+	   Gobber Nether Armor Material Stats
+	   ******************************
+	*/
+	"gobberNetherDurabilityMultiplier": 83,
+	"gobberNetherArmorEnchantability": 30,
+	"gobberNetherToughness": 3.25,
+	"gobberNetherKnockbackResistance": 0.10000000149011612,
+	"netherHeadProtection": 7,
+	"netherChestProtection": 12,
+	"netherLeggingsProtection": 10,
+	"netherBootsProtection": 7,
+	/* 
+	   
+	   
+	   ******************************
+	   Gobber End Armor Material Stats
+	   ******************************
+	*/
+	"gobberEndDurabilityMultiplier": 100,
+	"gobberEndArmorEnchantability": 30,
+	"gobberEndToughness": 3.5,
+	"gobberEndKnockbackResistance": 0.20000000298023224,
+	"endHeadProtection": 8,
+	"endChestProtection": 13,
+	"endLeggingsProtection": 11,
+	"endBootsProtection": 8,
+	/* 
+	   
+	   
+	   ******************************
+	   Dragon Armor Material Stats
+	   ******************************
+	*/
+	"gobberDragonDurabilityMultiplier": 100,
+	"gobberDragonArmorEnchantability": 30,
+	"gobberDragonToughness": 3.75,
+	"gobberDragonKnockbackResistance": 0.30000001192092896,
+	"dragonHeadProtection": 8,
+	"dragonChestProtecction": 13,
+	"dragonLeggingsProtection": 11,
+	"dragonBootsProtection": 8,
+	"enableaArmorCap": true,
+	/* 
+	   
+	   ***********************
+	   Gobber Armor Features
+	   ***********************
+	*/
+	"enableGobberBreathing": false,
+	"enableGobberHealthPerks": false,
+	"healingPointsGobberArmor": 2,
+	/* 
+	   
+	   ***********************
+	   Nether Armor Features
+	   ***********************
+	*/
+	"enableNetherFirePerk": false,
+	"enableNetherHealthPerks": false,
+	"healingPointsNetherArmor": 2,
+	/* 
+	   
+	   ***********************
+	   End Armor Features
+	   ***********************
+	*/
+	"unbreakableEndArmor": true,
+	"enableEndBreathing": false,
+	"enableEndFirePerk": false,
+	"enableEndHealthPerks": false,
+	"healingPointsEndArmor": 3,
+	"enableEndNoFallDamage": true,
+	"enableGlidingEndArmor": true,
+	/* 
+	   
+	   ***********************
+	   Dragon Armor Features
+	   ***********************
+	*/
+	"unbreakableDragonArmor": true,
+	"enableDragonBreathing": true,
+	"enableDragonFirePerk": true,
+	"enableDragonHealthPerks": false,
+	"healingPointsDragonArmor": 4,
+	"enableDragonCuring": true,
+	"enableDragonNoFallDamage": true,
+	"enableDragonFlying": true,
+	/* 
+	   
+	   ***********************
+	   Loot Chests
+	   ***********************
+	*/
+	"lootEnable": true,
+	"lootChance": 0.03999999910593033,
+	/* 
+	   
+	   ***********************
+	   Special Item
+	   
+	   Item provides a one-time random teleport
+	   and is consumed after successful teleport.
+	   Min/Max range from world spawn to search
+	   or from the player's current position
+	   Item does NOT have a standard recipe
+	   ***********************
+	*/
+	"specialItemMin": 20000,
+	"specialItemMax": 75000,
+	"specialItemUsePlayerPos": false,
+	/* 
+	   
+	   ***********************
+	   Fuel (Foo) Settings
+	   
+	   ***********************
+	*/
+	"fooBurntime": 12000,
+	"fooNetherBurntime": 24000,
+	"fooEndBurntime": 32000,
+	/* 
+	   
+	   ***********************
+	   Gobber Food Settings
+	   ***********************
+	*/
+	"gooHunger": 7,
+	"gooSaturation": 0.699999988079071,
+	"gooeyAppleHunger": 8,
+	"gooeyAppleSaturation": 0.800000011920929,
+	"gooeyBreadHunger": 8,
+	"gooeyBreadSaturation": 0.800000011920929,
+	"gooeyBeefHunger": 9,
+	"gooeyBeefSaturation": 0.8999999761581421,
+	"gooeyBeefStewHunger": 10,
+	"gooeyBeefStewSaturation": 1.0,
+	"gooHungerNether": 8,
+	"gooSaturationNether": 0.800000011920929,
+	"gooeyAppleHungerNether": 8,
+	"gooeyAppleSaturationNether": 0.800000011920929,
+	"gooeyBreadHungerNether": 9,
+	"gooeyBreadSaturationNether": 0.8999999761581421,
+	"gooeyBeefHungerNether": 10,
+	"gooeyBeefSaturationNether": 1.0,
+	"gooeyBeefStewHungerNether": 12,
+	"gooeyBeefStewSaturationNether": 1.5
+}

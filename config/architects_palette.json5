@@ -1,0 +1,13 @@
+{
+	//   Controls ALL worldgen features added by Architect's Palette.    (If false, NOTHING from AP will generate. If true, individual features may still be disabled.)
+	"globalWorldGenToggle": true,
+	//   Controls the spawning of Monazite, Ekanite, and Heliodor rods in various Nether biomes.
+	"netherCrystalGeneration": true,
+	//   Chance of updating adjacent moon/sunstone blocks, cascading updates and helping larger areas stay in sync (RANGE:0.0 ~ 1)
+	"sunstoneSpreadChance": 1.0,
+	//   Villagers that already sell AP items will continue to do so regardless of this setting.
+	"enableVillagerTrades": true,
+	"enableWandererTrades": true,
+	//   Adds vertical slabs for the OG builders out there
+	"enableVerticalSlabs": false
+}

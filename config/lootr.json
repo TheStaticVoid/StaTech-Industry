@@ -1,0 +1,45 @@
+{
+  "debug": {
+    "debugMode": false,
+    "report_unresolved_tables": false
+  },
+  "seed": {
+    "randomize_seed": true
+  },
+  "conversion": {
+    "skip_unloaded": true,
+    "maximum_age": 3600,
+    "convert_mineshafts": true
+  },
+  "breaking": {
+    "disable_break": false,
+    "power_comparators": true,
+    "blast_resistant": false
+  },
+  "lists": {
+    "dimension_whitelist": [],
+    "dimension_blacklist": [],
+    "loot_table_blacklist": [],
+    "loot_modid_blacklist": [],
+    "loot_structure_blacklist": []
+  },
+  "decay": {
+    "decay_value": 6000,
+    "decay_all": false,
+    "decay_modids": [],
+    "decay_loot_tables": [],
+    "decay_dimensions": [],
+    "decay_structures": []
+  },
+  "refresh": {
+    "refresh_value": 24000,
+    "refresh_all": false,
+    "refresh_modids": [],
+    "refresh_loot_tables": [],
+    "refresh_dimensions": [],
+    "refresh_structures": []
+  },
+  "vanilla": {
+    "vanilla_textures": false
+  }
+}

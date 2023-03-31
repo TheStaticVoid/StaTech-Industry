@@ -1,0 +1,18 @@
+{
+  "nightSpawnMod": {
+    "desc:": "Percentage of how many more monster can appear at night, default: 30",
+    "nightSpawnMod": 30
+  },
+  "baseMonsterCap": {
+    "desc:": "Base monster cap to act upon, this is the value it\u0027ll increase from/reduce to at the start/end of the night. Increase this to see more monsters in the world, default(Vanilla): 70",
+    "baseMonsterCap": 70
+  },
+  "minSleepTime": {
+    "desc:": "Min time required to sleep, default \u003d 14500, vanilla default time:12500, Midnight is 18000. Max: 23000",
+    "minSleepTime": 14500
+  },
+  "disableSleep": {
+    "desc:": "Disables sleeping entirely, default: false",
+    "disableSleep": false
+  }
+}
