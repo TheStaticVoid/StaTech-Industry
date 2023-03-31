@@ -1,0 +1,20 @@
+{
+	id: "6A0C8DAE8D3AFAB7"
+	group: "05A88037F88880CD"
+	order_index: 12
+	filename: "spirit"
+	title: "Spirit"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: -1.0d
+		y: -0.5d
+		id: "431D47D4C78964FF"
+		tasks: [{
+			id: "6E0B17F1F7099195"
+			type: "item"
+			item: "spirit:soul_cage"
+		}]
+	}]
+	quest_links: [ ]
+}

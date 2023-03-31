@@ -1,0 +1,2459 @@
+{
+	id: "30F5546C6C69D270"
+	group: "592A9A0E9A131D28"
+	order_index: 4
+	filename: "4__the_midgame"
+	title: "4 - The Midgame"
+	icon: "modern_industrialization:digital_circuit"
+	subtitle: ["Climbing up that hill"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: "modern_industrialization:oil_drilling_rig"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "You've caught the United States' attention"
+			description: [
+				"Now that you have your mining situation taken care of, it's time to focus in on fluid processing. The first step on that list is to create the Oil Drilling Rig. It's a huge multiblock that can dig for Crude Oil under the bedrock using fluid pipes. The Crude Oil will be extremely important as it can be processed into a lot of byproducs and can be used to produce energy."
+				""
+				"The structure of the multiblock is made of Steel Machine Casings, Steel Pipe Machine Casings, and Chains. Make sure to at least have an Item Input, Fluid Output, and Energy Input Hatch. If you need help building the multiblock, you can view its Ponder scene by holding 'W' on the Oil Drilling Rig item in your inventory, or by holding your wrench with the controller placed."
+				""
+				"Some of the first uses of your newly gathered Crude Oil will be to offer a much more efficient way of creating Rubber Sheets. Additionally, you can burn Crude Oil to produce power in Diesel Generators (coming up next)."
+			]
+			dependencies: ["1AFBAD9537A32176"]
+			id: "5000D009D884FB99"
+			tasks: [
+				{
+					id: "3575BB94A896F842"
+					type: "item"
+					item: "modern_industrialization:oil_drilling_rig"
+				}
+				{
+					id: "5381D14A18785798"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing"
+					count: 35L
+				}
+				{
+					id: "0C46F43BAF918197"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing_pipe"
+					count: 6L
+				}
+				{
+					id: "5D4D0AF7A8679FA4"
+					type: "item"
+					item: "minecraft:chain"
+					count: 18L
+				}
+				{
+					id: "0491CB02B7D0BFD1"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+				{
+					id: "61F9CFEC1CA927E3"
+					type: "item"
+					title: "Any Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+				}
+				{
+					id: "48C25BE16720B8D1"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0F9D9E6BD71EAEC9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			description: [
+				"The Diesel Generator can burn various kinds of fuel to generate EU. You can check REI for how many EU each fuel produces. The Diesel Generator will produce up to 256 EU/t and will only connect to MV cables."
+				""
+				"Diesel Generators will only use fuel when they need to, but if you need a constant supply of energy, you can put liquid fuels in the Large Steam Boiler instead of items. A fully heated Large Steam Boiler will roughly produce twice the amount of energy a Diesel Generator would produce using the same quantity of fuel."
+			]
+			dependencies: ["5000D009D884FB99"]
+			id: "7910E966A571DFCC"
+			tasks: [{
+				id: "37056D02DEB74FEA"
+				type: "item"
+				item: "modern_industrialization:diesel_generator"
+			}]
+			rewards: [
+				{
+					id: "29E66F9BABB61FD1"
+					type: "item"
+					item: {
+						id: "modern_industrialization:aluminum_tank"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								locked: 0b
+								fluid: {
+									fk: {
+										fluid: "modern_industrialization:crude_oil"
+									}
+								}
+								amt: 1296000L
+							}
+						}
+					}
+				}
+				{
+					id: "63F6B0D8C5F698B8"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			description: [
+				"The Diesel Jetpack allows you to have flight similar to that of the Elytra, but runs off of fuel rather than durability. The more powerful the fuel, the faster the jetpack! For really fast speeds, the Rubber Helmet and Rubber Boots are recommended."
+				""
+				"Don't forget to activate it using the Toggle Flight keybinding (Default: v)"
+			]
+			dependencies: ["5000D009D884FB99"]
+			id: "2FD9CBCD413E05DF"
+			tasks: [{
+				id: "743CE5A4C4B54A8B"
+				type: "item"
+				item: "modern_industrialization:diesel_jetpack"
+			}]
+			rewards: [{
+				id: "0D626795C9F7F815"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			subtitle: "The Drill That Will Pierce the Heavens"
+			description: [
+				"The Diesel Mining Drill can finally replace your Steam Powered Drill and pickaxes. Fill it with more powerful fuel for increased speed."
+				""
+				"Toggle between Silk Touch and Fortune III with shift-right click."
+			]
+			dependencies: ["5000D009D884FB99"]
+			id: "0DCBF872F6BC9F84"
+			tasks: [{
+				id: "7FE37DC7FB025BFF"
+				type: "item"
+				item: "modern_industrialization:diesel_mining_drill"
+			}]
+			rewards: [{
+				id: "3B57320A3793011B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			subtitle: "Deforestation"
+			description: ["The Diesel Chainsaw is a suped up axe that can chop down trees really quickly if you feed it more powerful fuels."]
+			dependencies: ["5000D009D884FB99"]
+			id: "19F713DD5C1AED48"
+			tasks: [{
+				id: "30F869CE6C2AA126"
+				type: "item"
+				item: "modern_industrialization:diesel_chainsaw"
+			}]
+			rewards: [{
+				id: "443F5D3869B02B94"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			dependencies: ["7DE19984A4DE57D4"]
+			id: "359CB19747F5A3F3"
+			tasks: [{
+				id: "037F95DD7000418A"
+				type: "item"
+				item: "modern_industrialization:sulfuric_light_fuel_bucket"
+			}]
+			rewards: [{
+				id: "0DE5B5FA3CED0F90"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			dependencies: ["7DE19984A4DE57D4"]
+			id: "2AB5F5DBA6ACA80E"
+			tasks: [{
+				id: "017B820258676358"
+				type: "item"
+				item: "modern_industrialization:sulfuric_heavy_fuel_bucket"
+			}]
+			rewards: [{
+				id: "44E266555F343F65"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.5d
+			dependencies: ["7DE19984A4DE57D4"]
+			id: "30D48F97B508E120"
+			tasks: [{
+				id: "136BF6CFD7C4EBCB"
+				type: "item"
+				item: "modern_industrialization:sulfuric_naphtha_bucket"
+			}]
+			rewards: [{
+				id: "103519732E84373F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Black Gold"
+			description: ["Crude Oil is produced from an Oil Drilling Rig using an Aluminum Drill. The following quests follow processing down Crude Oil into other usable byproducts."]
+			dependencies: ["5000D009D884FB99"]
+			id: "7DE19984A4DE57D4"
+			tasks: [{
+				id: "031F185843516416"
+				type: "item"
+				item: "modern_industrialization:crude_oil_bucket"
+			}]
+			rewards: [{
+				id: "33C848BF4FF835AE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Setting Distillery Recipes"
+			x: -2.5d
+			y: 1.5d
+			description: ["Unlike GregTech, MI machines do not have circuits. If you'd like to set the recipe you'd like a machine to run, click \"View Recipes for X\" and then click the + to set the recipe. This will be needed as you work through processing Crude Oil."]
+			dependencies: ["7DE19984A4DE57D4"]
+			id: "2704DC39313392E6"
+			tasks: [{
+				id: "0BE2D73B19E61C4E"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "47CCB99C8FADAD91"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.5d
+			description: ["Sulfuric Acid is a useful byproduct that can be used in a lot of different reactions. One most notably is the creation of Sulfur Dust, as well as being used in the production of Titanium Ingots and Stainless Steel Ingots."]
+			dependencies: [
+				"30D48F97B508E120"
+				"2AB5F5DBA6ACA80E"
+				"359CB19747F5A3F3"
+			]
+			id: "0B11A6F624EEC057"
+			tasks: [{
+				id: "6253F93AED56D48E"
+				type: "item"
+				item: "modern_industrialization:sulfuric_acid_bucket"
+			}]
+			rewards: [{
+				id: "372E670B586FBFB3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			description: ["Light Fuel can produce 160 EU per 1 mB used in a Diesel Generator. It's better to either combine it into Diesel or continue with Steam-Cracking it."]
+			dependencies: ["359CB19747F5A3F3"]
+			id: "2CFB5F9C3B6EA234"
+			tasks: [{
+				id: "076ED0F4854706A7"
+				type: "item"
+				item: "modern_industrialization:light_fuel_bucket"
+			}]
+			rewards: [{
+				id: "739F826B93B91822"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			description: ["Heavy Fuel can produce 240 EU per 1 mB used in a Diesel Generator. It's not as good as Diesel, so it's either better to make Diesel or continue to Steam-Cracking process."]
+			dependencies: ["2AB5F5DBA6ACA80E"]
+			id: "51A8CF3031F2765A"
+			tasks: [{
+				id: "2B0AEDF45DD8E71D"
+				type: "item"
+				item: "modern_industrialization:heavy_fuel_bucket"
+			}]
+			rewards: [{
+				id: "17A916C2B313F383"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			description: ["Naphtha can produce 80 EU per 1 mB used in a Diesel Generator. It's an extremely awful fuel source for Diesel Generators. It can be produced into Lubricant or continued down the chain by Steam-Cracking."]
+			dependencies: ["30D48F97B508E120"]
+			id: "34533B2E5B614E28"
+			tasks: [{
+				id: "79973DB15E3C21A4"
+				type: "item"
+				item: "modern_industrialization:naphtha_bucket"
+			}]
+			rewards: [{
+				id: "26610B56FA61F61D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 8.5d
+			dependencies: ["2CFB5F9C3B6EA234"]
+			id: "11D42439BA0DAE33"
+			tasks: [{
+				id: "36EA8B31633A44F1"
+				type: "item"
+				item: "modern_industrialization:steam_cracked_light_fuel_bucket"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			dependencies: ["51A8CF3031F2765A"]
+			id: "740BFCE0D14F89D7"
+			tasks: [{
+				id: "75C2CC01AE8CC5F9"
+				type: "item"
+				item: "modern_industrialization:steam_cracked_heavy_fuel_bucket"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 8.5d
+			dependencies: ["34533B2E5B614E28"]
+			id: "0F866EE01E29B82D"
+			tasks: [{
+				id: "7337B0E890B66442"
+				type: "item"
+				item: "modern_industrialization:steam_cracked_naphtha_bucket"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 8.0d
+			subtitle: "Good for the environment!"
+			description: ["Diesel can produce 400 EU per 1 mB used in a Diesel Generator. By combining Light and Heavy Fuel you can create Diesel. Diesel is a decent fuel source to use in Diesel Generators and Diesel tools."]
+			dependencies: [
+				"51A8CF3031F2765A"
+				"2CFB5F9C3B6EA234"
+			]
+			id: "6AA4B054D3E9959D"
+			tasks: [{
+				id: "58F76E8165E23620"
+				type: "item"
+				item: "modern_industrialization:diesel_bucket"
+			}]
+			rewards: [
+				{
+					id: "46D91EAEB3EC5EF0"
+					type: "item"
+					item: "modern_industrialization:diesel_bucket"
+				}
+				{
+					id: "3187F3D2D9B7E303"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 11.5d
+			description: ["Methane can be converted into Acetylene, which is important for making Vinyl Chloride, which itself gets made into Polyvinyl Chloride. It doesn't have any more recipes other than turning into Acetylene, so might as well just do that."]
+			dependencies: [
+				"11D42439BA0DAE33"
+				"740BFCE0D14F89D7"
+				"0F866EE01E29B82D"
+			]
+			dependency_requirement: "one_completed"
+			id: "7B3CFD8EC0032C17"
+			tasks: [{
+				id: "2F0731514A04C6D2"
+				type: "item"
+				item: "modern_industrialization:methane_bucket"
+			}]
+			rewards: [{
+				id: "071E48553D533F91"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: 11.5d
+			description: ["Acetylene is used in the production of Polyvinyl Chloride."]
+			dependencies: [
+				"11D42439BA0DAE33"
+				"0F866EE01E29B82D"
+			]
+			dependency_requirement: "one_completed"
+			id: "572CEB1A519C14E9"
+			tasks: [{
+				id: "356001DC9314B486"
+				type: "item"
+				item: "modern_industrialization:acetylene_bucket"
+			}]
+			rewards: [{
+				id: "32C1CAA094C224B8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: 11.5d
+			description: ["Ethylene is used in the production of Ethylbenzene, Ethanol, and Polyethylene."]
+			dependencies: [
+				"11D42439BA0DAE33"
+				"0F866EE01E29B82D"
+			]
+			dependency_requirement: "one_completed"
+			id: "6762FCBA521FFF4B"
+			tasks: [{
+				id: "3CA4A3A482BDA08E"
+				type: "item"
+				item: "modern_industrialization:ethylene_bucket"
+			}]
+			rewards: [{
+				id: "0F316C77FE77B598"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: 11.5d
+			description: ["Important for the creation of Styrene-Butadiene Rubber."]
+			dependencies: [
+				"11D42439BA0DAE33"
+				"740BFCE0D14F89D7"
+				"0F866EE01E29B82D"
+			]
+			dependency_requirement: "one_completed"
+			id: "3765635D66BF2766"
+			tasks: [{
+				id: "39CF2030A85649A1"
+				type: "item"
+				item: "modern_industrialization:butadiene_bucket"
+			}]
+			rewards: [{
+				id: "24738B9D336BEE0F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 11.5d
+			description: ["Benzene is important for creating Ethylbenzene, a component in the creation of Styrene-Butadiene Rubber. It can also be used to make Caprolactam which can make infinite String."]
+			dependencies: [
+				"11D42439BA0DAE33"
+				"740BFCE0D14F89D7"
+				"0F866EE01E29B82D"
+			]
+			dependency_requirement: "one_completed"
+			id: "12C2A8F5ED305E72"
+			tasks: [{
+				id: "42177B32BB92277D"
+				type: "item"
+				item: "modern_industrialization:benzene_bucket"
+			}]
+			rewards: [{
+				id: "200DBDEF5454631B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.0d
+			y: 11.5d
+			description: ["Propene is important for creating Acryllic Acid, which can be creates Diethyl Ether, an important component in Boosted Diesel. Acryllic Acid can also be reacted into Acryllic Glue, a form of creating infinite Slime."]
+			dependencies: ["0F866EE01E29B82D"]
+			dependency_requirement: "one_completed"
+			id: "4BC45FE0A3D522C3"
+			tasks: [{
+				id: "01A53367472912E0"
+				type: "item"
+				item: "modern_industrialization:propene_bucket"
+			}]
+			rewards: [{
+				id: "1930DF867D68AC50"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.5d
+			y: 11.5d
+			description: ["Toluene is used in the creation of Industrial TNT, which is necessary for the Nuke and usage in the Implosion Compressor."]
+			dependencies: ["0F866EE01E29B82D"]
+			dependency_requirement: "one_completed"
+			id: "30A1AF7E38D6C40D"
+			tasks: [{
+				id: "6968C43DC1D51BA5"
+				type: "item"
+				item: "modern_industrialization:toluene_bucket"
+			}]
+			rewards: [{
+				id: "0BCE6476D2EA030C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.5d
+			y: 11.5d
+			description: [
+				"Ethylbenzene is an important component in the creation of Styrene, which is used to make Styrene-Butadiene Rubber."
+				""
+				"For those of you who are observant, this is one process closer to Styrene-Butadiene Rubber than Benzene, making Naphtha a good source to produce Styrene-Butadiene Rubber."
+			]
+			dependencies: ["0F866EE01E29B82D"]
+			dependency_requirement: "one_completed"
+			id: "07D6884948E921AB"
+			tasks: [{
+				id: "123681550020687E"
+				type: "item"
+				item: "modern_industrialization:ethylbenzene_bucket"
+			}]
+			rewards: [{
+				id: "37142F0BA64AADBD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: 14.0d
+			description: ["Ethanol is an important component in Diethyl Ether, which will be used to make Boosted Diesel."]
+			dependencies: ["6762FCBA521FFF4B"]
+			id: "7B318DADE7D4B28E"
+			tasks: [{
+				id: "0D956B63FB9FF2B3"
+				type: "item"
+				item: "modern_industrialization:ethanol_bucket"
+			}]
+			rewards: [{
+				id: "7970D7FE2BADF222"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 8.5d
+			y: 14.0d
+			dependencies: ["6762FCBA521FFF4B"]
+			id: "735AA911E02186A4"
+			tasks: [{
+				id: "111AB21195D29034"
+				type: "item"
+				item: "modern_industrialization:polyethylene_bucket"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 14.0d
+			description: ["An important component in Polyvinyl Chloride."]
+			dependencies: ["572CEB1A519C14E9"]
+			id: "08161DE7D9265B43"
+			tasks: [{
+				id: "556523558BB4AA28"
+				type: "item"
+				item: "modern_industrialization:vinyl_chloride_bucket"
+			}]
+			rewards: [{
+				id: "61C55023E8651B0D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: 14.0d
+			description: ["An important component in Styrene-Butadiene Rubber."]
+			dependencies: [
+				"3765635D66BF2766"
+				"239E90A6EAC47789"
+			]
+			id: "12A157C15F6BEC4B"
+			tasks: [{
+				id: "5AD917FAA18AAE6D"
+				type: "item"
+				item: "modern_industrialization:styrene_butadiene_bucket"
+			}]
+			rewards: [{
+				id: "3B95410CB8B62612"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 14.0d
+			description: ["A component in Nylon."]
+			dependencies: ["12C2A8F5ED305E72"]
+			id: "39FEC909B97A7449"
+			tasks: [{
+				id: "2D734E82C6EA7340"
+				type: "item"
+				item: "modern_industrialization:caprolactam_bucket"
+			}]
+			rewards: [{
+				id: "0CAE0BC830002EA6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.0d
+			y: 16.0d
+			description: ["Acrylic Acid can be used to create Acrylic Glue, which will create infinite slime, or it can be used to make Diethyl Ether, which is used in Boosted Diesel"]
+			dependencies: ["4BC45FE0A3D522C3"]
+			id: "476EB7CF83477089"
+			tasks: [{
+				id: "5F4B5A4B7DD197DD"
+				type: "item"
+				item: "modern_industrialization:acrylic_acid_bucket"
+			}]
+			rewards: [{
+				id: "701DD22349834761"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.5d
+			y: 14.0d
+			description: ["A component in Styrene-Butadiene."]
+			dependencies: ["07D6884948E921AB"]
+			id: "239E90A6EAC47789"
+			tasks: [{
+				id: "55ADF2E7A39EB197"
+				type: "item"
+				item: "modern_industrialization:styrene_bucket"
+			}]
+			rewards: [{
+				id: "14CBAAD92D1804D8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: 16.0d
+			description: ["A very versatile rubber-like chemical. Can be used to make cables, RAM, and the best ratio for Rubber Sheets."]
+			dependencies: ["12A157C15F6BEC4B"]
+			id: "68988600213DC7AE"
+			tasks: [{
+				id: "539558B35C605C81"
+				type: "item"
+				item: "modern_industrialization:styrene_butadiene_rubber_bucket"
+			}]
+			rewards: [{
+				id: "741605B6E48992C6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Overclock Upgrades"
+			x: 8.5d
+			y: 16.0d
+			description: [
+				"Upgrades can be added to Electric Machines to increase their total EU/t overclock. "
+				""
+				"By default, Electric Machines have an overclock capped at 32 EU/t, and electric multiblocks have an overclock capped at 128 EU/t."
+				""
+				"In the Machine or Multiblocks menu, add upgrades in the top right slot to increase its maximum overclock. Check REI for exact amounts."
+			]
+			dependencies: ["735AA911E02186A4"]
+			id: "7AD837EF6D37373B"
+			tasks: [{
+				id: "09092BE674315B82"
+				type: "item"
+				item: "modern_industrialization:basic_upgrade"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "128795E29D8CA27A"
+					type: "item"
+					item: "modern_industrialization:basic_upgrade"
+					count: 4
+				}
+				{
+					id: "28804B718C379867"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 5.5d
+			description: ["Mixing Manganese Crushed Dust with 9000 mB of Sulfuric Acid will create 9000 mB Manganese Sulfuric Solution."]
+			dependencies: [
+				"0B11A6F624EEC057"
+				"60E8A38E2CC05E1A"
+			]
+			id: "306F6F7600712637"
+			tasks: [{
+				id: "4B6312FBFF83E8EE"
+				type: "item"
+				item: "modern_industrialization:manganese_sulfuric_solution_bucket"
+			}]
+			rewards: [{
+				id: "5045EA40A8822BE8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.5d
+			description: [
+				"Manganese Crushed Dust will be needed in the production of Stainless Steel. "
+				""
+				"If you haven't crafted the Centrifuge from the previous chapter, you will need it to process Raw Iron into Iron Dust and Manganese Crushed Dust."
+			]
+			dependencies: ["397DA1D48033C54E"]
+			id: "60E8A38E2CC05E1A"
+			tasks: [{
+				id: "7FB6FA9609D9B45A"
+				type: "item"
+				item: "modern_industrialization:manganese_crushed_dust"
+			}]
+			rewards: [{
+				id: "70DF5BA8CAF24D6F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.0d
+			y: 6.5d
+			description: ["Electrolyzing 1000mB of Manganese Sulfuric Solution will produce three Tiny Manganese Dust and 900 mB of Sulfuric Acid. That means you lose 100 mB of Sulfuric Acid in the production loop."]
+			dependencies: ["306F6F7600712637"]
+			id: "68D24C2EE907B5DD"
+			tasks: [{
+				id: "37D3D313413C37A4"
+				type: "item"
+				item: "modern_industrialization:manganese_tiny_dust"
+			}]
+			rewards: [{
+				id: "1F21F2BD288B6005"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.0d
+			y: 7.5d
+			description: [
+				"Chlorine can be made by processing Salt Dust through an Electrolyzer. If you missed crafting that in the last chapter, you will need to make that now."
+				""
+				"You also get Sodium Dust as a byproduct. Keep a hold of this, as you will need it for HV tiered batteries."
+			]
+			dependencies: ["141243B5EA1C954A"]
+			id: "40D97D3EF42D4A88"
+			tasks: [{
+				id: "5629A5A77577E97A"
+				type: "item"
+				item: "modern_industrialization:chlorine_bucket"
+			}]
+			rewards: [{
+				id: "59E1B5C025F263DF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.5d
+			description: ["Combining Hydrogen with Chlorine will produce Hydrochloric Acid."]
+			dependencies: ["40D97D3EF42D4A88"]
+			id: "1734CB7253E53672"
+			tasks: [{
+				id: "02FA9260B2EBD2D2"
+				type: "item"
+				item: "modern_industrialization:hydrochloric_acid_bucket"
+			}]
+			rewards: [{
+				id: "66D08B73CB267822"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: 9.5d
+			description: [
+				"While you can find Ruby Ore and crush it in a Macerator to get Ruby Dust, you're going to want to use a Centrifuge with Redstone, as Redstone Ore is renewable with the Quarry and you get additional useful outputs from doing so."
+				""
+				"If you didn't make the Centrifuge in the previous chapter, you're going to have to make that now."
+			]
+			dependencies: ["397DA1D48033C54E"]
+			id: "4A505547F73506F5"
+			tasks: [{
+				id: "1269E4CDCF114B11"
+				type: "item"
+				item: "modern_industrialization:ruby_dust"
+			}]
+			rewards: [{
+				id: "72590F855AC8E1CB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 8.0d
+			y: 9.5d
+			description: ["By Centrifuging the Ruby Dust you just acquired, you will obtain Chromium Crushed Dust and a little extra Aluminum Dust."]
+			dependencies: ["4A505547F73506F5"]
+			id: "7D56FAE45EE0F29C"
+			tasks: [{
+				id: "4E92E645AC676C6E"
+				type: "item"
+				item: "modern_industrialization:chromium_crushed_dust"
+			}]
+			rewards: [{
+				id: "24EE58E212904D1E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 8.0d
+			y: 7.5d
+			description: ["Combining 9000 mB of Hydrochloric Acid with Chromium Crushed Dust will create 9000 mB of Chromium Hydrochloric Solution."]
+			dependencies: [
+				"1734CB7253E53672"
+				"7D56FAE45EE0F29C"
+			]
+			id: "49C4F2DED9D7043A"
+			tasks: [{
+				id: "780A5A658F1E4B0D"
+				type: "item"
+				item: "modern_industrialization:chromium_hydrochloric_solution_bucket"
+			}]
+			rewards: [{
+				id: "6757AB98CE2701CD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.0d
+			y: 7.5d
+			description: ["Electrolyzing 1000 mB of Chromium Hydrochloric Solution will produce three Tiny Chromium Dust, 450 mB of Hydrogen, and 450 mB of Chlorine. This means that there is a 100 mB loss of Hydrochloric Acid for each process. Automating Salt Ore production through the Quarry is going to be essential."]
+			dependencies: ["49C4F2DED9D7043A"]
+			id: "76D9C0C5A1025CC2"
+			tasks: [{
+				id: "7BD9385DD0E78036"
+				type: "item"
+				item: "modern_industrialization:chromium_tiny_dust"
+			}]
+			rewards: [{
+				id: "5D681E6CB95212C6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 12.5d
+			y: 7.5d
+			description: ["Now, by combining Manganese Dust, Chromium Dust, Iron Dust, and Nickel Dust in a Mixer you will produce your first Stainless Steel Dust."]
+			dependencies: [
+				"68D24C2EE907B5DD"
+				"76D9C0C5A1025CC2"
+			]
+			id: "10C6529CD6C26AEE"
+			tasks: [{
+				id: "12871AF0C5365B02"
+				type: "item"
+				item: "modern_industrialization:stainless_steel_dust"
+			}]
+			rewards: [{
+				id: "2CB37D4F3A4DE330"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Vacuum Freezer"
+			icon: "modern_industrialization:vacuum_freezer"
+			x: 12.5d
+			y: 11.5d
+			subtitle: "It's getting cold in here"
+			dependencies: ["1E65E1332C2E57A2"]
+			id: "173001AFD7DFE49B"
+			tasks: [{
+				id: "6AEC705A52B557CE"
+				type: "item"
+				item: "modern_industrialization:vacuum_freezer"
+			}]
+			rewards: [{
+				id: "45ED643C711B8F69"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 12.5d
+			y: 9.5d
+			description: [
+				"Putting Stainless Steel Dust in an EBF doesn't return a regular ingot. Instead you will receive a hot ingot which you need to cool down. The next multiblock in this questline will help you in doing that"
+				""
+				"Unlike GregTech, these hot ingots will not damage you, but you shouldn't be manually putting items in and out of machines at this point..."
+			]
+			dependencies: ["10C6529CD6C26AEE"]
+			id: "1E65E1332C2E57A2"
+			tasks: [{
+				id: "17F632B2D27E9242"
+				type: "item"
+				item: "modern_industrialization:stainless_steel_hot_ingot"
+			}]
+			rewards: [{
+				id: "457CF7DFA1ADC420"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Stainless Steel"
+			x: 12.5d
+			y: 13.5d
+			subtitle: "Oooh, shiny!"
+			dependencies: ["173001AFD7DFE49B"]
+			size: 1.5d
+			id: "6375B17635AAC09D"
+			tasks: [{
+				id: "2D38E4F2BF314CA0"
+				type: "item"
+				item: "modern_industrialization:stainless_steel_ingot"
+			}]
+			rewards: [{
+				id: "0ACE4BC8EF4A569B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.5d
+			y: 16.0d
+			description: ["With your newly created Stainless Steel and Polyethylene, you can now create Digital Circuit Boards, an important precursor to the Digital Circuit."]
+			dependencies: [
+				"6375B17635AAC09D"
+				"735AA911E02186A4"
+			]
+			id: "47B1F3B024E8F7CD"
+			tasks: [{
+				id: "39CE9D0F8C1EC3C2"
+				type: "item"
+				item: "modern_industrialization:digital_circuit_board"
+			}]
+			rewards: [{
+				id: "0742A124E952706E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Advanced Upgrades"
+			x: 8.5d
+			y: 18.0d
+			description: ["With your Electronic Circuit Boards you can now create the Advanced Upgrade. These will significantly increase the speed of your overclocks, and your power draw."]
+			dependencies: ["7AD837EF6D37373B"]
+			id: "3AA8A664DD802851"
+			tasks: [{
+				id: "75AFF9D8048B88B9"
+				type: "item"
+				item: "modern_industrialization:advanced_upgrade"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "6B26756B4F4F7B35"
+					type: "item"
+					item: "modern_industrialization:advanced_upgrade"
+					count: 4
+				}
+				{
+					id: "53579AEE1EDE7103"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: 19.0d
+			subtitle: "Push it to the limit"
+			description: [
+				"The HV Steam Turbine can produce up to 512 EU/t. It consumes steam in a 1:1 ratio to generate power."
+				""
+				"The HV Steam Turbine is the last single-block steam energy generator you will have access to. "
+				""
+				"Remember that only HV Cables will connect to the HV Steam Turbine."
+				""
+				"Note: This Steam Turbine will not accept High Pressure Steam."
+			]
+			dependencies: [
+				"13156F21ECE373E3"
+				"74FD4A8145A0576F"
+			]
+			id: "5AF44D0A39BA6091"
+			tasks: [{
+				id: "44BC354EEA8BB048"
+				type: "item"
+				item: "modern_industrialization:hv_steam_turbine"
+			}]
+			rewards: [{
+				id: "27714A9F1C468666"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Advanced Components"
+			x: 13.5d
+			y: 14.5d
+			description: ["Stainless Steel opens up the ability to create Advanced Components. These will be needed for HV and EV tier crafting."]
+			dependencies: [
+				"6375B17635AAC09D"
+				"78E5C68ED157A31B"
+			]
+			id: "74FD4A8145A0576F"
+			tasks: [
+				{
+					id: "399FF30A4D3F0B07"
+					type: "item"
+					item: "modern_industrialization:advanced_motor"
+				}
+				{
+					id: "29567CCCC7CBBE27"
+					type: "item"
+					item: "modern_industrialization:advanced_pump"
+				}
+			]
+			rewards: [
+				{
+					id: "4C445CD03C852A2D"
+					type: "item"
+					item: "modern_industrialization:advanced_motor"
+				}
+				{
+					id: "13CBF4E9E2790389"
+					type: "item"
+					item: "modern_industrialization:advanced_pump"
+				}
+				{
+					id: "0FCCFCACCEAA4B9D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 20.0d
+			y: 13.5d
+			dependencies: ["6375B17635AAC09D"]
+			id: "354C87C444B34193"
+			tasks: [{
+				id: "1EBA2DB47CD44873"
+				type: "item"
+				item: "modern_industrialization:air_intake"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 19.0d
+			description: ["HV Storage Units have an interal buffer of 6.144M EU. A single one of these will make an extremely valuable power buffer for any setup you currently have."]
+			dependencies: ["13156F21ECE373E3"]
+			id: "1B0452A4C5B49AA7"
+			tasks: [{
+				id: "5AF9EDECDEB7C131"
+				type: "item"
+				item: "modern_industrialization:hv_storage_unit"
+			}]
+			rewards: [{
+				id: "196A6BFFBDBA7327"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Distillation Tower"
+			icon: "modern_industrialization:distillation_tower"
+			x: 20.25d
+			y: 17.0d
+			subtitle: "Advanced Petrochemistry!"
+			description: [
+				"Now that you have Digital Circuits you can create the Distillation Tower. The single-block Distillery only gives you one oil processing output, but the tower gives you ONE PER LAYER."
+				""
+				"By default the controller has a height value set to one. You will need to update this if you plan to add more layers. You can view the Ponder scene by holding 'W' on the Distillation Tower block in your inventory to view how to build it, or you can hold your wrench out with the controller placed to view where to place the blocks."
+			]
+			dependencies: ["13156F21ECE373E3"]
+			size: 1.5d
+			id: "3FE23DA95839AA3D"
+			tasks: [
+				{
+					id: "3E392FF33EE54BF5"
+					type: "item"
+					item: "modern_industrialization:distillation_tower"
+				}
+				{
+					id: "15CB57D7AF467A7A"
+					type: "item"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					count: 28L
+				}
+				{
+					id: "718E08F25DADD3FA"
+					type: "item"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					count: 3L
+				}
+				{
+					id: "627A8BD620D43096"
+					type: "item"
+					title: "Any 3x Fluid Output Hatches"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "1E1B7D730D4CE82D"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "261BE321B621B799"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 17.5d
+			y: 17.0d
+			description: ["The Turbo Machine Hull is the main machine hull of the HV tier of power. You can upgrade your existing machines or use it to craft brand new multiblocks!"]
+			dependencies: ["575EE8E0720CE7DC"]
+			id: "13156F21ECE373E3"
+			tasks: [{
+				id: "4E33CDCAB3B89EF3"
+				type: "item"
+				item: "modern_industrialization:turbo_machine_hull"
+			}]
+			rewards: [{
+				id: "27043A9AF265FB26"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Petrochemistry"
+			x: 2.5d
+			y: 1.5d
+			description: [
+				"Petrochemistry is the science of breaking Crude Oil into it's useful components. While looking at the quest tree may seem daunting, it's not as bad as you think. I highly recommend checking through REI to work through what process you will need to get your desired outcome."
+				""
+				"NOTE: I don't recommend rushing to make dozens of single block Distilleries for all the outputs just yet, you will soon unlock the Distillation Tower, which will allow you to use a single multiblock to get multiple outputs at once."
+				""
+				"I'd recommend focusing on Polyethylene and Sulfuric Acid production for now."
+			]
+			dependencies: ["7DE19984A4DE57D4"]
+			id: "460D8C9E5BF1E1BE"
+			tasks: [{
+				id: "2251797FE307AA33"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "10B3096144D821FB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Stainless Steel Drills"
+			x: 20.0d
+			y: 12.0d
+			description: [
+				"With access to Digital Circuits you can now craft Stainless Steel Drills. These can be used both in an &bElectric Quarry&f and an &aOil Drilling Rig."
+				""
+				"If used in the Electric Quarry, it will be your main source of Titanium, Tungsten, Mozanite, and Platinum Ore. When used in an Oil Drilling Rig it will mine 4000 mB of Shale Oil. I'd highly recommend using these instead of your Aluminum Drill for oil processing as you get a lot more oil."
+			]
+			dependencies: ["575EE8E0720CE7DC"]
+			id: "347A75BBC27DCD31"
+			tasks: [{
+				id: "25885E4CDEAE56DF"
+				type: "item"
+				item: "modern_industrialization:stainless_steel_drill"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "2BA8130EE7332C3B"
+					type: "item"
+					item: "modern_industrialization:stainless_steel_drill"
+					count: 4
+				}
+				{
+					id: "3B2ED1AF4548FF50"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 22.5d
+			y: 13.5d
+			dependencies: ["354C87C444B34193"]
+			id: "57353B9BFF2CF1E6"
+			tasks: [{
+				id: "5A61075D4C681146"
+				type: "item"
+				item: "modern_industrialization:liquid_air_bucket"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 15.0d
+			description: ["The Turbo Diesel Generator can produce up to 1024 EU/t. You can REI for a list of fuels and how much EU per mB they produce."]
+			dependencies: ["13156F21ECE373E3"]
+			id: "2CC2860405BF4D13"
+			tasks: [{
+				id: "12F0A1BDC380DB4C"
+				type: "item"
+				item: "modern_industrialization:turbo_diesel_generator"
+			}]
+			rewards: [{
+				id: "47274EC3651DFF6C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Kanthal Dust"
+			x: 12.5d
+			y: 5.5d
+			description: ["Mixing Chromium, Stainless Steel, and Aluminum Dusts will make Kanthal Dust. Kanthal is an important upgrade to your EBF coils allowing you to process higher tier recipes, such as Titanium."]
+			dependencies: ["10C6529CD6C26AEE"]
+			id: "7EB2342617A3ADDF"
+			tasks: [{
+				id: "3BC758AE7793E822"
+				type: "item"
+				item: "modern_industrialization:kanthal_dust"
+				count: 3L
+			}]
+			rewards: [
+				{
+					id: "4BFB421E9F9A3D47"
+					type: "item"
+					item: "modern_industrialization:kanthal_dust"
+					count: 3
+				}
+				{
+					id: "59EA5520B0542FF3"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Kanthal"
+			x: 15.0d
+			y: 7.5d
+			description: [
+				"Similar to Stainless Steel, using an EBF to process Kanthal will give you a Kanthal Hot Ingot. You will need to cool the ingot down in a Vacuum Freezer before it will become usable."
+				""
+				"The only usage of Kanthal is to make Kanthal Cables, an HV tiered cable, and Kanthal Coils for use in your EBFs."
+			]
+			dependencies: [
+				"7EB2342617A3ADDF"
+				"173001AFD7DFE49B"
+			]
+			id: "0A8EBA97C825EF06"
+			tasks: [{
+				id: "5B4B22C48F5669B5"
+				type: "item"
+				item: "modern_industrialization:kanthal_ingot"
+			}]
+			rewards: [{
+				id: "1AF6840E2FF9F937"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 16.5d
+			y: 7.5d
+			description: ["Kanthal Coils are your ticket to late game EBF recipes. With these you can now work towards producing Titanium, the next tier of material for usage in EV-tiered Machine Hulls and multiblocks."]
+			dependencies: ["0A8EBA97C825EF06"]
+			id: "68DDFA6E0465E81E"
+			tasks: [{
+				id: "52BA772297AAB5E8"
+				type: "item"
+				title: "Kanthal Coils"
+				item: "modern_industrialization:kanthal_coil"
+				count: 16L
+			}]
+			rewards: [{
+				id: "50E99C733FB2F7C0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Titanium"
+			x: 17.5d
+			y: 9.5d
+			description: ["Titanium Ore can only be acquired from an Electric Quarry using the Stainless Steel Drill. Processing Raw Titanium into a dust requires Manganese Sulfuric Solution, which you already have some of from the Stainless Steel processing."]
+			dependencies: [
+				"347A75BBC27DCD31"
+				"68DDFA6E0465E81E"
+			]
+			size: 1.5d
+			id: "08362FF409BFC7CC"
+			tasks: [{
+				id: "43512D11338B8C97"
+				type: "item"
+				item: "modern_industrialization:titanium_ingot"
+			}]
+			rewards: [{
+				id: "1919EBB1550FF25A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Pressurizer"
+			icon: "modern_industrialization:pressurizer"
+			x: 18.0d
+			y: 7.5d
+			subtitle: "Under pressure"
+			description: [
+				"The Pressurizer is a new multiblock made of Titanium that can turn water into High Pressure Water and Steam, and the inverse."
+				""
+				"If you plan to use the High Pressure Large Steam Boiler, you will need to be using the Pressurizer to make High Pressure Water."
+				""
+				"If you plan to use the Pressurizer to generate Liquid Air, you will need an Item Input Hatch for the Air Intake."
+			]
+			dependencies: ["08362FF409BFC7CC"]
+			id: "2D1CE7720270D118"
+			tasks: [
+				{
+					id: "5731DCA9B0445915"
+					type: "item"
+					item: "modern_industrialization:pressurizer"
+				}
+				{
+					id: "52AD70C62798EF9A"
+					type: "item"
+					item: "modern_industrialization:solid_titanium_machine_casing"
+					count: 7L
+				}
+				{
+					id: "4E375DD3C91D1461"
+					type: "item"
+					item: "modern_industrialization:titanium_machine_casing_pipe"
+					count: 9L
+				}
+				{
+					id: "4A38259D57E8F182"
+					type: "item"
+					title: "Any Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+				}
+				{
+					id: "45B9DA89591CBEF4"
+					type: "item"
+					title: "Any Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+				}
+				{
+					id: "40FA8FEDED5070EE"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3CA23F5593C2D6CE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "High Pressure Large Steam Boiler"
+			icon: "modern_industrialization:high_pressure_large_steam_boiler"
+			x: 18.0d
+			y: 5.5d
+			description: [
+				"The High Pressure Steam Boiler can produce up to 2048 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
+				""
+				"Maximum efficiency is only reached under continuous operation. Only accepts High Pressure Water and High Pressure Heavy Water."
+				""
+				"It's not worth starting up the Boiler right now unless you have a significant enough Large Tank to take the High Pressure Steam or have set up the next multiblock, the Large Steam Turbine."
+				""
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the High Pressure Large Steam Boiler block in your inventory or by holding your wrench out with the High Pressure Large Steam Boiler placed."
+			]
+			dependencies: ["2D1CE7720270D118"]
+			id: "26EF4E75B844E3BD"
+			tasks: [
+				{
+					id: "7481639224BAE077"
+					type: "item"
+					item: "modern_industrialization:high_pressure_large_steam_boiler"
+				}
+				{
+					id: "5F12A1FBC34CA63F"
+					type: "item"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					count: 24L
+				}
+				{
+					id: "44C90CA82AB1D425"
+					type: "item"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					count: 2L
+				}
+				{
+					id: "0F25C8B09F1B1E67"
+					type: "item"
+					item: "modern_industrialization:heatproof_machine_casing"
+					count: 6L
+				}
+				{
+					id: "1EB752A1003F2F61"
+					type: "item"
+					title: "Any 2x Fluid Input Hatches"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "4A17AA3A1FA59110"
+					type: "item"
+					title: "Any Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "61508B460F3145EF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Large Steam Turbine"
+			icon: "modern_industrialization:large_steam_turbine"
+			x: 18.0d
+			y: 3.5d
+			description: [
+				"The Large Steam Turbine will accept both regular steam ( 1 mB = 1 EU ) and HP Steam ( 1 mB = 8 EU ) into EU, and will generate up to 16384 EU/t."
+				""
+				"However it will not give you back give you back regular nor HP Water. If you'd like to recycle the HP Water, you will need to create the next multiblock, the Heat Exchanger."
+				""
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Large Steam Turbine block in your inventory or by holding your wrench out with the Large Steam Turbine placed."
+			]
+			dependencies: ["26EF4E75B844E3BD"]
+			id: "45E103B1646804FA"
+			tasks: [
+				{
+					id: "740168E85507A238"
+					type: "item"
+					item: "modern_industrialization:large_steam_turbine"
+				}
+				{
+					id: "65CD1348422000C6"
+					type: "item"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					count: 15L
+				}
+				{
+					id: "48ACDC1CEC8F16FD"
+					type: "item"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					count: 18L
+				}
+				{
+					id: "2539DEBA24791663"
+					type: "item"
+					title: "Any Energy Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_output_hatch"
+						}
+					}
+				}
+				{
+					id: "7FFF1F75AD9BC290"
+					type: "item"
+					title: "Any Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "23593CC5BA846048"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Closed High Pressure Steam Loop"
+			x: 18.0d
+			y: 1.5d
+			description: [
+				"I've included a schematic for a prebuilt closed loop HP Steam Turbine setup. It can be found in 'schematics/prebuilts/' under the name 'closed_hp_steam_turbine_system.litematic'"
+				""
+				"You can use Litematica to preview it and copy it, or figure it out yourself. If you need help, you can join the Discord (found in the Welcome chapter)"
+				""
+				"With a closed loop, you will always be net neutral on High Pressure Water, and can eventually remove the Pressurizer once it has generated enough High Pressure Water."
+			]
+			dependencies: ["45E103B1646804FA"]
+			id: "060A516AB0CE0320"
+			tasks: [{
+				id: "006FFD2499914ACD"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "03266783A01766A5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 16.5d
+			y: 11.5d
+			subtitle: "GIGA DRILL BREAK"
+			description: [
+				"The Industrial Drill is an upgraded, electric powered drill that features a powered mode that can mine 3x3."
+				""
+				"Shift-right click to activate and deactivate 3x3."
+				""
+				"You can charge it in the Charge-o-Mat"
+			]
+			dependencies: [
+				"08362FF409BFC7CC"
+				"1CC138DDB987411E"
+			]
+			id: "52DD4EA5020B2637"
+			tasks: [{
+				id: "6B91A71316620C7B"
+				type: "item"
+				item: {
+					id: "techreborn:industrial_drill"
+					Count: 1b
+					tag: {
+						energy: 1000000L
+					}
+				}
+			}]
+			rewards: [{
+				id: "1D828C0CAD347D1E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 18.5d
+			y: 11.5d
+			subtitle: "Say goodbye to the rainforests"
+			description: [
+				"The Industrial Chainsaw is an upgraded, electric powered chainsaw that features a powered mode that can instamine entire trees."
+				""
+				"Shift-right click to activate and deactivate."
+				""
+				"You can charge it in the Charge-o-Mat"
+			]
+			dependencies: [
+				"08362FF409BFC7CC"
+				"1CC138DDB987411E"
+			]
+			id: "078D2A02F5F0755A"
+			tasks: [{
+				id: "3C912386AC14E449"
+				type: "item"
+				item: {
+					id: "techreborn:industrial_chainsaw"
+					Count: 1b
+					tag: {
+						energy: 1000000L
+					}
+				}
+			}]
+			rewards: [{
+				id: "39756027807497D9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 16.5d
+			y: 13.0d
+			description: ["The Charge-o-Mat has an absolutely absurd 100M Energy buffer. Plugging this into your network may start draining it entirely, so be careful, but it is needed to charge the Industrial tools and Nanosaber."]
+			dependencies: ["575EE8E0720CE7DC"]
+			id: "1CC138DDB987411E"
+			tasks: [{
+				id: "62AA41D101D4EC2B"
+				type: "item"
+				item: "techreborn:charge_o_mat"
+			}]
+			rewards: [{
+				id: "2C3A1018987B77A0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 17.5d
+			y: 11.5d
+			subtitle: "Like a Protosaber!"
+			description: [
+				"The Nanosaber is an upgraded, electric powered sword that features a powered mode that can deal insane damage."
+				""
+				"Shift-right click to activate and deactivate."
+				""
+				"You can charge it in the Charge-o-Mat"
+			]
+			dependencies: [
+				"1CC138DDB987411E"
+				"08362FF409BFC7CC"
+			]
+			id: "53BA308E50B5070C"
+			tasks: [{
+				id: "0D81A8E55ACB89C7"
+				type: "item"
+				item: {
+					id: "techreborn:nanosaber"
+					Count: 1b
+					tag: {
+						isActive: 1b
+						energy: 1000000L
+					}
+				}
+			}]
+			rewards: [{
+				id: "752796E142A064A3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 15.5d
+			y: 9.5d
+			description: [
+				"Annealed Copper is more malleable and easier to work with than regular Copper. Mixing Oxygen with Copper Ingots in a Kanthal EBF will produce Annealed Copper Hot Ingot."
+				""
+				"You will need to cool the ingot in a Vacuum Freezer before you can use it."
+			]
+			dependencies: ["68DDFA6E0465E81E"]
+			id: "6C91896D4DF89A77"
+			tasks: [{
+				id: "656E0ADBC13E1167"
+				type: "item"
+				item: "modern_industrialization:annealed_copper_hot_ingot"
+			}]
+			rewards: [{
+				id: "50D896B7B34D1F16"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 14.5d
+			y: 11.5d
+			dependencies: ["6C91896D4DF89A77"]
+			id: "78E5C68ED157A31B"
+			tasks: [{
+				id: "486DF15BB7113D87"
+				type: "item"
+				item: "modern_industrialization:annealed_copper_ingot"
+			}]
+			rewards: [{
+				id: "154F1F5A99C350F7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Liquid Air Products"
+			x: 22.5d
+			y: 11.0d
+			description: [
+				"Centrifuging 3000 mB of Liquid Air will produce, 650 mB Oxygen, 2315 mB of Nitrogen, and a measly 35 mB of Argon."
+				""
+				"Argon will be very useful in the future, you should start stockpiling it."
+			]
+			dependencies: ["57353B9BFF2CF1E6"]
+			id: "0CF36C4D19B0CE1A"
+			tasks: [
+				{
+					id: "3BFAF1365AE2422D"
+					type: "item"
+					item: "modern_industrialization:oxygen_bucket"
+				}
+				{
+					id: "64077332269D9239"
+					type: "item"
+					item: "modern_industrialization:nitrogen_bucket"
+				}
+				{
+					id: "50B051D5B1C72165"
+					type: "item"
+					item: "modern_industrialization:argon_bucket"
+				}
+			]
+			rewards: [{
+				id: "19257A6801BA003B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.0d
+			y: 9.5d
+			description: [
+				"Processing Raw Platinum will produce a little bit of Iridium Tiny Dust as well as 3x Platinum Tiny Dust. Both of these will be very important to obtain in larger amounts moving forward. "
+				""
+				"This Iridium generation method is very, very slow, but you will soon be able to access The Matter Replicator and UU-Matter."
+			]
+			dependencies: ["347A75BBC27DCD31"]
+			id: "73E92504C29F7181"
+			tasks: [{
+				id: "59EBACB2A31D7156"
+				type: "item"
+				item: "modern_industrialization:platinum_sulfuric_solution_bucket"
+			}]
+			rewards: [{
+				id: "4D246688AFA1385D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.5d
+			y: 7.5d
+			description: ["Iridium Tiny Dust will be needed in the production of Monocrystalline Silicon boules."]
+			dependencies: ["73E92504C29F7181"]
+			id: "0A7B765B2AC2DD6D"
+			tasks: [{
+				id: "4E33C7E788461348"
+				type: "item"
+				item: "modern_industrialization:iridium_tiny_dust"
+			}]
+			rewards: [{
+				id: "50D070075219B453"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 19.5d
+			y: 7.5d
+			dependencies: ["73E92504C29F7181"]
+			id: "7111AA66B02C4877"
+			tasks: [{
+				id: "74C9FFFBE570AD60"
+				type: "item"
+				item: "modern_industrialization:platinum_dust"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 9.5d
+			description: ["Combining Argon, Silicon, and a little bit of Iridium you will be able to produce your first Monocrystalline Silicon boule."]
+			dependencies: [
+				"0CF36C4D19B0CE1A"
+				"0A7B765B2AC2DD6D"
+			]
+			id: "11D19824B39407CC"
+			tasks: [{
+				id: "181DD3F6200F684E"
+				type: "item"
+				item: "modern_industrialization:monocrystalline_silicon"
+			}]
+			rewards: [{
+				id: "1A6EA68B0506DEBE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 22.5d
+			y: 7.5d
+			description: ["Luckily one boule is able to produce a significant amount of wafers. These will be important for Processing Unit components."]
+			dependencies: ["11D19824B39407CC"]
+			id: "76BD64AFCE37E528"
+			tasks: [{
+				id: "2779DD54CDB97DDA"
+				type: "item"
+				item: "modern_industrialization:silicon_wafer"
+			}]
+			rewards: [{
+				id: "6FA05AC40FB1CFF7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Processing Unit Components"
+			x: 21.0d
+			y: 5.5d
+			description: ["It's time to pull it all together. These components from all over the chapter, if you're unable to make something, make sure you didn't miss a quest!"]
+			dependencies: [
+				"7111AA66B02C4877"
+				"76BD64AFCE37E528"
+			]
+			id: "3FEB290E25DD6BFD"
+			tasks: [
+				{
+					id: "7C463C63E77CD139"
+					type: "item"
+					item: "modern_industrialization:memory_management_unit"
+				}
+				{
+					id: "260C5D025BC94BD1"
+					type: "item"
+					item: "modern_industrialization:random_access_memory"
+					count: 2L
+				}
+				{
+					id: "266F9097AE164945"
+					type: "item"
+					item: "modern_industrialization:arithmetic_logic_unit"
+				}
+				{
+					id: "2ADB8DFAD956E24A"
+					type: "item"
+					item: "modern_industrialization:processing_unit_board"
+				}
+			]
+			rewards: [{
+				id: "409FCF215555EEAB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 22.5d
+			y: 3.0d
+			subtitle: "EV Voltage Circuits"
+			description: [
+				"The Processing Unit is the key to EV-tier hulls, multiblocks, and recipes. "
+				""
+				"This marks the end of the chapter. You're ready to head into the Lategame!"
+			]
+			dependencies: ["3FEB290E25DD6BFD"]
+			size: 3.0d
+			id: "4FDC0B405C330E4F"
+			tasks: [{
+				id: "43E1C82BC52BE00E"
+				type: "item"
+				item: "modern_industrialization:processing_unit"
+			}]
+			rewards: [{
+				id: "5746CAE054A746CE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 23.5d
+			y: 12.0d
+			description: ["Tungsten is a fairly tough material, and will require an Implosion Chamber to efficiently create the material. To get to that point, you will need to convert your Tungsten into tiny dusts."]
+			dependencies: ["347A75BBC27DCD31"]
+			id: "1D9CEDDFFF1C8A7F"
+			tasks: [{
+				id: "1EB958B0AD967559"
+				type: "item"
+				item: "modern_industrialization:tungsten_tiny_dust"
+			}]
+			rewards: [{
+				id: "33E204F18FE0DEFF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 25.0d
+			y: 12.0d
+			description: ["You can create Tungsten Nuggets by compressing Tungsten Tiny Dusts. This process is very, very slow, so you'll want to get as much as you need to make an Implosion Chamber and then never use the compressing method again."]
+			dependencies: ["1D9CEDDFFF1C8A7F"]
+			id: "3132A7C27E732259"
+			tasks: [{
+				id: "4D1A5D5535293770"
+				type: "item"
+				item: "modern_industrialization:tungsten_nugget"
+			}]
+			rewards: [{
+				id: "3B19B439705B565F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 25.0d
+			y: 10.5d
+			description: ["You will need a Mixed Tungsten Ingot to make Blastproof Alloy Platings."]
+			dependencies: [
+				"3132A7C27E732259"
+				"08362FF409BFC7CC"
+			]
+			id: "500668B023EA17CA"
+			tasks: [{
+				id: "359F39B3B3B7B11C"
+				type: "item"
+				item: "modern_industrialization:mixed_ingot_blastproof"
+			}]
+			rewards: [{
+				id: "32BE3A48BE5B21FD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Implosion Compressor"
+			icon: "modern_industrialization:implosion_compressor"
+			x: 27.0d
+			y: 10.5d
+			subtitle: "KABOOOOOOM"
+			description: [
+				"The Implosion Compressor is able to compress dust and ingots of the most resistant materials. This includes Tungsten, Blastproof Alloy, and Beryllium. These materials are very important for nuclear fission!"
+				""
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Implosion Compressor block in your inventory or by holding your wrench out with the Implosion Compressor placed."
+			]
+			dependencies: ["500668B023EA17CA"]
+			size: 1.5d
+			id: "0DF6FF0A1E872DC8"
+			tasks: [
+				{
+					id: "7486AB57F14DA12E"
+					type: "item"
+					item: "modern_industrialization:implosion_compressor"
+				}
+				{
+					id: "202BB4BEE0A093AC"
+					type: "item"
+					item: "modern_industrialization:solid_titanium_machine_casing"
+					count: 14L
+				}
+				{
+					id: "4152617B0B2CB5D1"
+					type: "item"
+					item: "modern_industrialization:blastproof_casing"
+					count: 16L
+				}
+				{
+					id: "4AC9E919C5BF0B88"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "44CE91CB15AD4DDD"
+					type: "item"
+					title: "Any Item Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+				}
+				{
+					id: "1D7B2553DE83530F"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "410E63DE96E0EF04"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Turbo Upgrades"
+			x: 10.5d
+			y: 18.0d
+			description: ["With your Digital Circuit Boards you can now create the Advanced Upgrade. These will significantly increase the speed of your overclocks, and your power draw."]
+			dependencies: [
+				"47B1F3B024E8F7CD"
+				"3AA8A664DD802851"
+			]
+			id: "043E635A81CA9986"
+			tasks: [{
+				id: "06E68C858E21175F"
+				type: "item"
+				item: "modern_industrialization:turbo_upgrade"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "3F48B14913650877"
+					type: "item"
+					item: "modern_industrialization:turbo_upgrade"
+					count: 4
+				}
+				{
+					id: "5FD2024EBA0A1651"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 16.0d
+			description: ["Mix this with Diesel to make Boosted Diesel. The most efficient fuel to burn."]
+			dependencies: [
+				"7B318DADE7D4B28E"
+				"476EB7CF83477089"
+			]
+			id: "6FC3B9DB61B11CB4"
+			tasks: [{
+				id: "154F88C2ABBAFF17"
+				type: "item"
+				item: "modern_industrialization:diethyl_ether_bucket"
+			}]
+			rewards: [{
+				id: "491BCD8B8E10AE8D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: 18.0d
+			description: ["Boosted Diesel can make 800 EU per mB burned. It's the most efficient fuel to burn."]
+			dependencies: [
+				"6FC3B9DB61B11CB4"
+				"6AA4B054D3E9959D"
+				"546FA5CADF43F18A"
+			]
+			size: 1.5d
+			id: "3F9D5D2011DA96F2"
+			tasks: [{
+				id: "3C5676D9D1B51A91"
+				type: "item"
+				item: "modern_industrialization:boosted_diesel_bucket"
+			}]
+			rewards: [{
+				id: "2BA8E96C9847E297"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 16.0d
+			description: ["Can be used to duplicate String."]
+			dependencies: ["39FEC909B97A7449"]
+			id: "1676F0CDF65CC8FC"
+			tasks: [{
+				id: "4DE70CB2B1798FE8"
+				type: "item"
+				item: "modern_industrialization:nylon_bucket"
+			}]
+			rewards: [{
+				id: "3EEF711F557B7882"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: 16.0d
+			description: ["Polyvinyl Chloride is an important chemical in more advanced Assembler recipes."]
+			dependencies: ["08161DE7D9265B43"]
+			id: "04672D52AF159537"
+			tasks: [{
+				id: "4D51DC167559D466"
+				type: "item"
+				item: "modern_industrialization:polyvinyl_chloride_bucket"
+			}]
+			rewards: [{
+				id: "2E656563C20DA842"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 19.0d
+			y: 19.0d
+			subtitle: "One man's trash..."
+			description: [
+				"The Matter Fabricator is an advanced machine that can create UU-Matter from scrap fed into it."
+				""
+				"UU-Matter is pretty important, as it can be used to create Iridium"
+			]
+			dependencies: ["13156F21ECE373E3"]
+			id: "6288718990D88342"
+			tasks: [{
+				id: "5A9CD8D64D036513"
+				type: "item"
+				item: "techreborn:matter_fabricator"
+			}]
+			rewards: [{
+				id: "331F941508D68501"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.5d
+			y: 19.0d
+			subtitle: "Nearly magic!"
+			description: ["UU-Matter can craft a variety of things, some of the most notable is Iridium, Platinum, and Chromium. There are other ways to get infinite amounts of those ores, but this offers another viable method in generating these resources."]
+			dependencies: ["6288718990D88342"]
+			size: 1.5d
+			id: "097A441985DCD241"
+			tasks: [{
+				id: "2A7EB1EC6AE6025D"
+				type: "item"
+				item: "techreborn:uu_matter"
+			}]
+			rewards: [{
+				id: "7DDC924010E278CA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.25d
+			y: 15.0d
+			subtitle: "To the Stars!"
+			description: [
+				"With your new Turbo Machine Hulls and Digital Circuits you now have access to the Fuel Refinery from Ad Astra. The refinery will be required to taking your first rocket to the moon and other celestial bodies."
+				""
+				"Ad Astra progression will not gate your Modern Industrialization mod progress, however if you plan to complete the pack you will need to obtain the Jet Suit, an endgame Ad Astra armor set. I recommend going down the Ad Astra progression ASAP because the Jet Suit is a really nice armor set to have and you can set up a space station too if you'd like! The rest of the Ad Astra progression can be found in it's separate mod tab."
+				""
+				"My recommendation is to wait to do Ad Astra until you have Nuclear Reactors setup, as they take a long time to deplete fuel and progressing through Ad Astra is a good way to pass the time."
+				""
+				"To make Fuel for your rocket, place Boosted Diesel in the Fuel Refinery to convert it in a 2:1 ratio. How is diesel being converted into rocket fuel you might ask? Magic !"
+			]
+			dependencies: ["13156F21ECE373E3"]
+			size: 1.5d
+			id: "6EE3455457F0E943"
+			tasks: [{
+				id: "009B686B13676C72"
+				type: "item"
+				item: "ad_astra:fuel_refinery"
+			}]
+			rewards: [{
+				id: "5B821F6915969DAB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.5d
+			y: 14.0d
+			description: ["Industrial TNT is a key component in the Implosion Compressor. Using Toulene and Nitrogen you can combine Sand and Flint to produce a controlled explosive."]
+			dependencies: ["30A1AF7E38D6C40D"]
+			id: "1643F0311C19D935"
+			tasks: [{
+				id: "3BA268B4F660CE7C"
+				type: "item"
+				item: "modern_industrialization:industrial_tnt"
+			}]
+			rewards: [{
+				id: "02C6737D145E572F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.5d
+			y: 15.5d
+			description: ["Raw Biodiesel can be processed into Biodiesel and then used as an alternative to Diesel or to supplement your Boosted Diesel."]
+			dependencies: ["7B318DADE7D4B28E"]
+			id: "06BDC86D8AF2405F"
+			tasks: [{
+				id: "26A0C455E2F2FCE6"
+				type: "item"
+				item: "modern_industrialization:raw_biodiesel_bucket"
+			}]
+			rewards: [{
+				id: "4EB42043D97015B5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.5d
+			y: 17.0d
+			description: ["Can be produced into Boosted Diesel at a better rate than reguarly processed Diesel."]
+			dependencies: ["06BDC86D8AF2405F"]
+			id: "546FA5CADF43F18A"
+			tasks: [{
+				id: "25B0286B23F2FEC2"
+				type: "item"
+				item: "modern_industrialization:biodiesel_bucket"
+			}]
+			rewards: [{
+				id: "0B161EBB36AE2458"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Mozanite Byproducts"
+			x: 21.0d
+			y: 11.0d
+			description: ["Mozanite on it's own is pretty useless, however running it through a Centrifuge will produce Neodymium, Yttrium, and Cadmium. These three materials will be important in components and processing in the late game."]
+			dependencies: ["347A75BBC27DCD31"]
+			id: "64C6B2B282D4DF0B"
+			tasks: [
+				{
+					id: "08F195A51BF8E52D"
+					type: "item"
+					item: "modern_industrialization:neodymium_dust"
+				}
+				{
+					id: "68B858F33A6DF949"
+					type: "item"
+					item: "modern_industrialization:yttrium_dust"
+				}
+				{
+					id: "2E14EB913B143B70"
+					type: "item"
+					item: "modern_industrialization:cadmium_dust"
+				}
+			]
+			rewards: [{
+				id: "28320A30E8D763F0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 21.0d
+			y: 13.0d
+			description: ["The Stainless Steel Drill in an Oil Drilling Rig will give you Shale Oil. Passing this through a Distillation Tower will give you a Sulfuric Crude Oil, Sulfuric Naphtha, and a little bit of Helium. The first two can be processed down in a similar manner as you were before, but the latter, Helium, is very important as you move into the lategame."]
+			dependencies: ["347A75BBC27DCD31"]
+			id: "2158E2092F54EFC4"
+			tasks: [{
+				id: "6F9C80AD58495E6B"
+				type: "item"
+				item: "modern_industrialization:shale_oil_bucket"
+			}]
+			rewards: [{
+				id: "4530466C76F3AD31"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "modern_industrialization:high_pressure_advanced_large_steam_boiler"
+			x: 19.5d
+			y: 5.5d
+			description: [
+				"The High Pressure Advanced Steam Boiler can produce up to 8192 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
+				""
+				"Maximum efficiency is only reached under continuous operation. Only accepts High Pressure Water and High Pressure Heavy Water."
+				""
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the High Pressure Large Steam Boiler block in your inventory or by holding your wrench out with the High Pressure Advanced Large Steam Boiler placed."
+			]
+			dependencies: [
+				"4FDC0B405C330E4F"
+				"26EF4E75B844E3BD"
+			]
+			id: "2EF95EF4396E8FE4"
+			tasks: [
+				{
+					id: "54D250E010FB05BE"
+					type: "item"
+					item: "modern_industrialization:high_pressure_advanced_large_steam_boiler"
+				}
+				{
+					id: "47654E01B09EAAD1"
+					type: "item"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					count: 24L
+				}
+				{
+					id: "6FFE9DA3A9A6DFCC"
+					type: "item"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					count: 2L
+				}
+				{
+					id: "204E89A5F7D33560"
+					type: "item"
+					item: "modern_industrialization:heatproof_machine_casing"
+					count: 6L
+				}
+				{
+					id: "16B382312846103A"
+					type: "item"
+					title: "Any 2x Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "766810053D655A90"
+					type: "item"
+					title: "Any Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "191C4E8B315CC218"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 15.5d
+			y: 19.0d
+			description: ["With Turbo Machine Hulls you can now create the next tier of solar. These will passively generate 48 EU/t during the day and 8 EU/t at night (due to magic I suppose)."]
+			dependencies: ["13156F21ECE373E3"]
+			id: "760AEF21E6403F48"
+			tasks: [{
+				id: "19653F8AC2A51DA6"
+				type: "item"
+				item: "techreborn:industrial_solar_panel"
+			}]
+			rewards: [{
+				id: "66B4297A12650D5A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}

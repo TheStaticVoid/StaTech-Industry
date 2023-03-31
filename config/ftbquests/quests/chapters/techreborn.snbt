@@ -1,0 +1,20 @@
+{
+	id: "322B4EFD9F4A7C21"
+	group: "05A88037F88880CD"
+	order_index: 0
+	filename: "techreborn"
+	title: "TechReborn"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: -1.0d
+		y: 0.0d
+		id: "58F18ACC1F873C8F"
+		tasks: [{
+			id: "38F1C392AFC35946"
+			type: "item"
+			item: "techreborn:greenhouse_controller"
+		}]
+	}]
+	quest_links: [ ]
+}

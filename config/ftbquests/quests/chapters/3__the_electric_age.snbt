@@ -1,0 +1,842 @@
+{
+	id: "353E0BE7938CCAE6"
+	group: "592A9A0E9A131D28"
+	order_index: 3
+	filename: "3__the_electric_age"
+	title: "3 - Electrical Age Old"
+	icon: "modern_industrialization:electronic_circuit"
+	subtitle: ["Shock me like an electric eel"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 15.0d
+			y: 2.0d
+			description: [
+				"The Centrifuge splits items by spinning them very fast. You can use it to make carbon dust and unlock better recipes for Steel and Silicon."
+				""
+				"There are about 5 real pages of recipes to look at with the Centrifuge, the rest are just different ways to make Plant Oil. Regardless, it's worth taking a look at those recipes as you will be using some of them shortly."
+			]
+			dependencies: ["36C698E0F31FDB20"]
+			id: "397DA1D48033C54E"
+			tasks: [{
+				id: "6C39E7A5871F4EFB"
+				type: "item"
+				item: "modern_industrialization:centrifuge"
+			}]
+			rewards: [{
+				id: "186F9F7BA80A87E1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Large Components"
+			x: 15.0d
+			y: 0.0d
+			shape: "square"
+			description: ["With your new fancy circuits you can now craft even more complicated components. At this point the recipes are getting a little crazy, but you should be able to step into AE2 now (which includes autocrafting, automation, and much more). I highly recommend you rush AE2 before going forward."]
+			dependencies: ["302958D57C6A10C7"]
+			id: "36C698E0F31FDB20"
+			tasks: [
+				{
+					id: "0536137AC05FD22C"
+					type: "item"
+					item: "modern_industrialization:large_motor"
+				}
+				{
+					id: "103580FBC34A7AEE"
+					type: "item"
+					item: "modern_industrialization:large_pump"
+				}
+			]
+			rewards: [{
+				id: "54138708B39C44BA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "AE2 Processors"
+			x: 9.0d
+			y: 3.0d
+			dependencies: ["0E556AD31516BB03"]
+			dependency_requirement: "one_completed"
+			id: "2BB495CFC3E6D6C8"
+			tasks: [
+				{
+					id: "19EA7F8024BB407C"
+					type: "item"
+					item: "ae2:logic_processor"
+				}
+				{
+					id: "4E054A947A80397F"
+					type: "item"
+					item: "ae2:calculation_processor"
+				}
+				{
+					id: "6A3C9A96F857A9AC"
+					type: "item"
+					item: "ae2:engineering_processor"
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: 3.0d
+			description: [
+				"With your Electronic Circuits you can now craft the AE2 Inscriber. The Inscriber is a necessary machine to create the AE2 Processors. While you can make the Printed Circuits in the Packer, you will ultimately need an Inscriber to combine the circuit with Printed Silicon to create the processors."
+				""
+				"The Inscriber can be powered directly with Modern Industrialization cables."
+			]
+			dependencies: ["302958D57C6A10C7"]
+			id: "0E556AD31516BB03"
+			tasks: [{
+				id: "55303A2F05494F75"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+			rewards: [{
+				id: "6A44940D24CB9FF5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.0d
+			id: "01D12D790B2DE5F5"
+			tasks: [{
+				id: "49D14D2D43E385A1"
+				type: "item"
+				item: "ae2:fluix_crystal"
+			}]
+			rewards: [{
+				id: "62C889F2BA826103"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 16.5d
+			y: 0.0d
+			description: [
+				"The Chemical Reactor is used to cause reactions between solid items and fluids."
+				""
+				"As you progress further, recipes using the Chemical Reactor will become much more common. Plan to make a lot of these."
+			]
+			dependencies: ["36C698E0F31FDB20"]
+			id: "025CAE2F9B3FF2A0"
+			tasks: [{
+				id: "0C58120985AB5357"
+				type: "item"
+				item: "modern_industrialization:chemical_reactor"
+			}]
+			rewards: [{
+				id: "7E664F1DD63C5988"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 16.0d
+			y: 1.5d
+			subtitle: "Bring out the barrels!"
+			description: ["The Distillery will turn various fluids into their lighter parts. This will be very useful for Oil Processing, which is coming up really soon."]
+			dependencies: ["36C698E0F31FDB20"]
+			id: "233D9FBFC921A3E2"
+			tasks: [{
+				id: "6DE940E714668610"
+				type: "item"
+				item: "modern_industrialization:distillery"
+			}]
+			rewards: [{
+				id: "383C35CC487D6F18"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 16.0d
+			y: -1.0d
+			description: [
+				"The Electrolyzer can split materials into their different parts using strong electric currents."
+				""
+				"You can electrolyze Bauxite Dust to get Aluminum Dust, which you can then directly smelt into Aluminum Ingots in the EBF."
+			]
+			dependencies: ["36C698E0F31FDB20"]
+			id: "141243B5EA1C954A"
+			tasks: [{
+				id: "7EF2A295C240FD4D"
+				type: "item"
+				item: "modern_industrialization:electrolyzer"
+			}]
+			rewards: [
+				{
+					id: "462DA4AEF8976695"
+					type: "item"
+					item: "modern_industrialization:bauxite_dust"
+					count: 8
+				}
+				{
+					id: "75B0DE6DE5951AF4"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 17.0d
+			y: 1.0d
+			description: [
+				"The Configurable Tank is a fluid equivalent of the Configurable Chest."
+				""
+				"It has 9 configurable slots that can each hold 16 buckets and auto-extract functionality! Useful for automation with many different fluids!"
+			]
+			dependencies: ["36C698E0F31FDB20"]
+			id: "5500D7E521DAA845"
+			tasks: [{
+				id: "256161BBBF34DBC6"
+				type: "item"
+				item: "modern_industrialization:configurable_tank"
+			}]
+			rewards: [{
+				id: "37191FA9E8E8969A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.0d
+			y: 6.0d
+			subtitle: "Heart of the Network"
+			description: [
+				"While technically not required to setup your first AE2 network, you will really want to craft at least one of these for now. "
+				""
+				"Thanks to the glorious Modern Industrialization's universal cables, you will not need to craft an Energy Acceptor to hook up your network to power. You can plug it right in to your power generation!"
+				""
+				"Applied Energistics is a pretty expansive mod with a lot of mechanics, but I don't want to clutter up the chapter with just detailing AE2. If you're unfamiliar with the mod, then I'd suggest taking a look at the separate quest tab for AE2 specifically."
+				""
+				"NOTE: AE2 uses it's own energy system, just now that EU is converted in a 1:2 power ratio, meaning that for every 1 EU put in you are actually generating 2 AE."
+			]
+			dependencies: [
+				"01D12D790B2DE5F5"
+				"2BB495CFC3E6D6C8"
+			]
+			size: 1.5d
+			id: "47AC1C475DEE0FE4"
+			tasks: [{
+				id: "6C4582D1D40B7A51"
+				type: "item"
+				item: "ae2:controller"
+			}]
+			rewards: [{
+				id: "0D50DAD08FCD86DB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.5d
+			y: 5.5d
+			subtitle: "All your stuff in a single block"
+			description: [
+				"The ME Drive is a block designed to store Storage Cells. The Drive can hold 10 Storage Cells."
+				""
+				"The front of the drive will display the status of the drive in the corresponding spot with a color:"
+				"- Red: The cell is full"
+				"- Orange: The cell cannot hold any more types, but can store more items"
+				"- Green: The cell can hold more types or more items"
+				"- Black: There is no channel or power is offline"
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "2D9D7FFDA18C95B5"
+			tasks: [{
+				id: "3B78757D8EAD40DD"
+				type: "item"
+				item: "ae2:drive"
+			}]
+			rewards: [{
+				id: "02C544D38A79DB7D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Meteorite Compass"
+			icon: "ae2:meteorite_compass"
+			x: 10.5d
+			y: 2.0d
+			description: [
+				"If you've yet to find an AE2 meteorite, then you might want to make this compass. "
+				""
+				"Placing a vanilla compass in a Charger will charge it up to search for meteorites in your world. Once you find the meteorite mine to the center to find the Presses and even some Certus Quartz Buds."
+				""
+				"Like the Inscriber, you can use MI cables directly on the Charger to plug it into your power network."
+			]
+			dependencies: ["0E556AD31516BB03"]
+			id: "4589D54579864AE8"
+			tasks: [
+				{
+					id: "1FBF3E80421EF68D"
+					type: "item"
+					item: "ae2:charger"
+				}
+				{
+					id: "5D108F3DA879349D"
+					type: "item"
+					item: "ae2:meteorite_compass"
+				}
+			]
+			rewards: [{
+				id: "641FCDE9F709FA30"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.5d
+			y: 6.0d
+			subtitle: "A MUCH better crafting table"
+			description: ["Attaching an ME Crafting Terminal to your AE2 network will grant you access to all the items stored within and and an included crafting grid you can use these stored items in. "]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "4372EB6B99CB383D"
+			tasks: [{
+				id: "134DCCD1F1D35772"
+				type: "item"
+				item: "ae2:crafting_terminal"
+			}]
+			rewards: [{
+				id: "3CE7B9635FE16B90"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 12.0d
+			y: 6.0d
+			subtitle: "That's how you do it"
+			dependencies: ["4372EB6B99CB383D"]
+			id: "4584D2A76B87D7F0"
+			tasks: [{
+				id: "315FF7E43F8769D8"
+				type: "item"
+				item: "ae2:pattern_encoding_terminal"
+			}]
+		}
+		{
+			title: "Patterns"
+			x: 12.0d
+			y: 7.5d
+			subtitle: "Get ready to autocraft!"
+			description: [
+				"Blank Patterns can be encoded in the ME Pattern Encoding Terminal. You can encode them either with a Crafting Pattern or a Processing Pattern. The Encoded Pattern is then used to control crafting by inserting them into Molecular Assemblers or ME Pattern Providers."
+				""
+				"A Crafting Pattern is your typical 3x3 or 2x2 grid crafting recipe. These patterns usually go inside of Molecular Assemblers."
+				""
+				"Processing Patterns are a bit more complicated, usually these are patterns designed to be used to automate outputs from machines. Processing Patterns allow you to encode recipes where an input goes into a machine and you get an expected output. Do not encode recipes that are for chance outputs, otherwise you will clog up your network and prevent crafting!"
+				""
+				"I've doubled the normal output for the Blank Pattern recipe due to the amount of things you probably intend to automate crafting for. You're welcome!"
+			]
+			dependencies: ["4584D2A76B87D7F0"]
+			id: "1B4704766DF1A934"
+			tasks: [{
+				id: "47CFF4CBF0901ACF"
+				type: "item"
+				item: "ae2:blank_pattern"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "7F994F5C549B7100"
+					type: "item"
+					item: "ae2:blank_pattern"
+					count: 4
+				}
+				{
+					id: "52B9CE02E0DE34BD"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 6.5d
+			subtitle: "It's like magic!"
+			description: [
+				"The Molecular Assembler is a powered machine which crafts items. It can be upgraded by inserting Acceleration Cards into it; once upgraded it is very fast."
+				""
+				"The assembler can function in one of two modes, single pattern mode or automatic crafting mode."
+				""
+				"In Single Pattern Mode, it uses a single Crafting Pattern inserted into the assembler to craft an item without a crafting network. This makes it useful in stand alone setups or in configurations where it can be fed by other mods and even chained together to craft a final output. Items will be accepted from any side and exported into any available inventories."
+				""
+				"In Automatic Crafting Mode the assembler will use the Crafting Pattern from an attached ME Pattern Provider to craft items when they are requested by the Crafting CPU. NOTE: This mode requires that the assembler's pattern slot is empty."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "3C433173976A9CCC"
+			tasks: [{
+				id: "49A3C57F99A56F45"
+				type: "item"
+				item: "ae2:molecular_assembler"
+			}]
+			rewards: [{
+				id: "4B1DD096933E59ED"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.5d
+			y: 7.5d
+			description: ["The ME Pattern Provider is the home of your encoded recipes. These need to be put on the same network as your Crafting CPU itself. When the crafting CPU needs to craft the primary result of that pattern, it'll delegate this to the Pattern Provider. Normally the Pattern Provider will then push out the ingredients to an adjancent block (a Molecular Assembler for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the Pattern Provider, an ME Interface, or any other means that would import the crafting result into the network. Molecular Assemblers are smart enough to automatically return the crafting result to the same Pattern Provider that provided the ingredients, leaving you to focus on ensuring the Processing Recipes outputs are put into the network when they're done."]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "2C1964927A0F7BE3"
+			tasks: [{
+				id: "0FEF672EBB5DBFC6"
+				type: "item"
+				item: "ae2:pattern_provider"
+			}]
+			rewards: [{
+				id: "6DE9FCE915E97674"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Crafting CPU"
+			x: 6.5d
+			y: 8.5d
+			subtitle: "Deep Thought"
+			description: [
+				"The Crafting CPU manages a single auto crafting task from start to finsih, and is built out of various crafting units."
+				""
+				"To be a valid crafting CPU, two rules must be met:"
+				"1. The CPU must be a cuboid, completely composed of the parts listed in the quest. Air and other blocks are not valid."
+				"2. The CPU must contain at least 1 Crafting Storage component."
+				""
+				"The Crafting CPU as a multi-block only requires a single channel for the entire structure. Crafting co-processors increase the number of tasks the crafting CPU can perform at once; with no co-processors, the crafting CPU can perform a single task at a time. Storage requirements are moderately complicated, and do not follow the usual ME storage math, but for a first approximation, you will need a little over one byte per input item, output item, or operation."
+				""
+				"You can name your Crafting CPUs by naming any of the Crafting Storage Units it is made up with an Inscriber or Anvil."
+				""
+				"To provide patterns to the autocrafting CPUs you can use the ME Interface or ME Level Emitter."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "528CD35EBF5D20F0"
+			tasks: [
+				{
+					id: "495520537A110001"
+					type: "item"
+					title: "Any AE2 Crafting Storage"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:crafting_storage"
+						}
+					}
+				}
+				{
+					id: "2BDEB8659DA7243F"
+					type: "item"
+					item: "ae2:crafting_accelerator"
+				}
+				{
+					id: "2437CF8D5C1FEC51"
+					type: "item"
+					item: "ae2:crafting_monitor"
+				}
+			]
+			rewards: [{
+				id: "14AA3802C834A2C3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.5d
+			y: 9.0d
+			description: [
+				"Perhaps the most desired item in all of AE2 is the Wireless Crafting Terminal. This grants you (while in range of an access point) full access to your ME network. You can craft items, start autocrafting processes, and view in-progress crafting process all from this little device. "
+				""
+				"To link the Wirelss Crafting Terminal to your network, you will need to put it in the top-right slot of your security terminal. Once linked, you will need to power it. You can do this by putting it in an AE2 Charger. It has a 1.6M AE internal energy storage, so you'll probably drain your entire power network charging it! "
+			]
+			dependencies: [
+				"67071C306C1C3A42"
+				"72F1B2987533A6F6"
+			]
+			id: "34E68D6337DE1792"
+			tasks: [{
+				id: "6733A409F19937C9"
+				type: "item"
+				item: "ae2:wireless_crafting_terminal"
+			}]
+			rewards: [{
+				id: "229A82C32C462757"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.0d
+			y: 9.0d
+			description: [
+				"The ME Security Terminal allows you to configure which users, and what permissions those users have within your ME System. By existing, it enforces permissions on the usage of the system."
+				""
+				"The security system does not prevent destructive tampering, removing cables / machines or breaking of drives. If you need to protect your system from physical vandalism, you will need to place it in FTB claimed chunks. This block only provides network security."
+				""
+				"The player who places the ME Security Terminal has full control over the network and cannot exclude themself any rights. By adding a blank Biometric Card you define a default behavior for every player who has no own Biometric Card registered."
+				""
+				"Other than adding security to your AE network, you can link up your Wireless Terminal with the network and access it wirelessly."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "72F1B2987533A6F6"
+			tasks: [{
+				id: "587C0FB684830328"
+				type: "item"
+				item: "ae2:security_station"
+			}]
+			rewards: [{
+				id: "5CBB141269E8366C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.5d
+			y: 7.5d
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "67071C306C1C3A42"
+			tasks: [{
+				id: "15C730D8449D0539"
+				type: "item"
+				item: "ae2:wireless_access_point"
+			}]
+			rewards: [{
+				id: "10D174DDB930BEF3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "There's more to know"
+			x: 7.5d
+			y: 9.0d
+			description: [
+				"While I have included some of the most popular uses for AE2, it relies heavily on you already understanding several parts, such as how channels, P2P connections, and other things work. "
+				""
+				"If you're newer to AE2, I've included a really fleshed out AE2 tab on the left that you can check out. You might have noticed yourself getting quest rewards from there while working through this chapter."
+				""
+				"If you need to learn anything about AE2 I'd definitely go check that chapter out, or even bypass the chapter directly and head to the Wiki: https://appliedenergistics.github.io/ "
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "3F9B145B568BA53C"
+			tasks: [{
+				id: "20F910B80DB9F2EF"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "597F3920DFE87B0A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Electric Quarry"
+			icon: "modern_industrialization:electric_quarry"
+			x: 17.5d
+			y: -3.75d
+			shape: "square"
+			subtitle: "Ores Infinitum"
+			description: [
+				"The Electric Quarry is very similar to it's Steam counterpart, except with the Fluid Input Hatch being changed to the Energy Input Hatch. "
+				""
+				"The structure of the Electric Quarry is the exact same of that to the Steam Quarry, but if you need help building it, you can view the Ponder scene by holding 'W' on the Electric Quarry block in your inventory, or by holding your MI wrench."
+				""
+				"The Electric Quarry can use the same drills as the Steam Quarry, but with the addition of several new drills that can be used. Some of these you won't get access to until much later, but it might be worth automating the crafting of a few of them."
+				""
+				"Now that you have the Electric Quarry, you have completed this chapter. The next chapter is all about the mid-game of the pack. Be prepared, it gets crazier from here!"
+			]
+			dependencies: [
+				"6C3EAE1F16E1048A"
+				"36C698E0F31FDB20"
+			]
+			size: 2.5d
+			id: "1AFBAD9537A32176"
+			tasks: [
+				{
+					id: "567AB6436381CD90"
+					type: "item"
+					item: "modern_industrialization:electric_quarry"
+				}
+				{
+					id: "617C61353CF3A329"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing"
+					count: 12L
+				}
+				{
+					id: "4229DEFBCEA36740"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing_pipe"
+					count: 6L
+				}
+				{
+					id: "53928F479491073A"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "55CD12ECE667B7A5"
+					type: "item"
+					title: "Any Item Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "30FC8CEE1F0FF841"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+				{
+					id: "3BF874D3858F9452"
+					type: "item"
+					item: "minecraft:chain"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "6551B51F852240BE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Gold Drills"
+			x: 16.5d
+			y: -5.5d
+			description: ["Putting Gold Drills in the Electric Quarry will output Nether related items. This is a great way to get a recurring amount of Glowstone, Netherite, and Quartz."]
+			dependencies: ["1AFBAD9537A32176"]
+			id: "1AC3D17D11B6CAD1"
+			tasks: [{
+				id: "6CECCF4B67366E27"
+				type: "item"
+				item: "modern_industrialization:gold_drill"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "1F5CC0425AB9866E"
+					type: "item"
+					item: "modern_industrialization:gold_drill"
+					count: 4
+				}
+				{
+					id: "7DDBCBDF51354973"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Steel Drills"
+			x: 18.5d
+			y: -5.5d
+			description: ["Putting Steel Drills in the Electric Quarry will output much rarer Overworld minerals, as well as some ores you will need in large quantities, such as Bauxite."]
+			dependencies: ["1AFBAD9537A32176"]
+			id: "2A76A7DC5A71E7FC"
+			tasks: [{
+				id: "30816AFBA0D4361F"
+				type: "item"
+				item: "modern_industrialization:steel_drill"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "27FAFC3FD5DF39F9"
+					type: "item"
+					item: "modern_industrialization:steel_drill"
+					count: 4
+				}
+				{
+					id: "1A9DA5481EF84E74"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			icon: "modern_industrialization:advanced_large_steam_boiler"
+			x: 14.25d
+			y: 3.75d
+			subtitle: "Overdrive!"
+			description: [
+				"The Advanced Large Steam Boiler is very similar to the original Large Steam Boiler, but rather this version can produce up to 1024 mb/t of Steam!"
+				""
+				"You will need to add an additional layer to the multiblock as compared to the original, but otherwise you can reuse a lot of the same structure. You can check the Ponder scene by holding 'W' on the Large Steam Boiler in your inventory, or by holding a wrench to view a diagram of where blocks need to be placed."
+			]
+			dependencies: ["302958D57C6A10C7"]
+			size: 1.5d
+			id: "57C1BE11C74FDAB8"
+			tasks: [
+				{
+					id: "6F360B8626F93E02"
+					type: "item"
+					item: "modern_industrialization:advanced_large_steam_boiler"
+				}
+				{
+					id: "513D83383716EAC1"
+					type: "item"
+					item: "modern_industrialization:bronze_plated_bricks"
+					count: 8L
+				}
+				{
+					id: "011E4C3D6FAFCC49"
+					type: "item"
+					item: "modern_industrialization:bronze_machine_casing_pipe"
+				}
+			]
+			rewards: [{
+				id: "2F9865E8DD23E008"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "MV Tier"
+			x: 14.25d
+			y: -2.25d
+			shape: "square"
+			subtitle: "Moving on up"
+			description: [
+				"With your newly acquired Advanced Machine Hulls, you can now make the MV version of Steam Turbines and Storage Units. "
+				""
+				"Remember that MV requires MV tier wires. You can find these in REI by typing $mv_wire. To power LV machines you will need to transform the MV power to LV with the provided transformer."
+			]
+			dependencies: [
+				"6C3EAE1F16E1048A"
+				"36C698E0F31FDB20"
+			]
+			size: 1.5d
+			id: "5CE08EB7A6109F5F"
+			tasks: [
+				{
+					id: "013170C7FCD6701D"
+					type: "item"
+					item: "modern_industrialization:mv_steam_turbine"
+				}
+				{
+					id: "5822AB3500C7946E"
+					type: "item"
+					item: "modern_industrialization:mv_storage_unit"
+				}
+			]
+			rewards: [
+				{
+					id: "4A41CAD6B3D93525"
+					type: "item"
+					item: "modern_industrialization:mv_lv_transformer"
+				}
+				{
+					id: "1C592FE29E4CEB08"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: -8.0d
+			description: ["The Scrapbox-inator can turn Scrapboxes into random outputs. It could be fun to have it run, or you can stockpile your scrap until you get UU-Matter, up to you."]
+			dependencies: ["5EC488946BE8FF2F"]
+			id: "092B11065EE78062"
+			tasks: [{
+				id: "783237CDF19B463A"
+				type: "item"
+				item: "techreborn:scrapboxinator"
+			}]
+			rewards: [{
+				id: "017AEAEA4C71F94E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.0d
+			y: -5.0d
+			description: ["Used to create Scrap from items you toss into it. Don't put anything in it you would miss!"]
+			dependencies: ["6C3EAE1F16E1048A"]
+			id: "3EA8163D99F7A61E"
+			tasks: [{
+				id: "2A2D9A1C3AD8976D"
+				type: "item"
+				item: "techreborn:recycler"
+			}]
+			rewards: [{
+				id: "0A59804E4A3AB939"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.0d
+			y: -6.5d
+			description: [
+				"Providing the Recycler materials will have it randomly spit out Scrap."
+				""
+				"Scrap can be used in a Matter Fabricator to create UU-Matter, or it can be converted into Scrapboxes and ran through a Scrapbox-inator to produce random outputs."
+			]
+			dependencies: ["3EA8163D99F7A61E"]
+			id: "5EC488946BE8FF2F"
+			tasks: [{
+				id: "1970BCA2D3FF7958"
+				type: "item"
+				item: "techreborn:scrap"
+			}]
+			rewards: [{
+				id: "66C9097CF70F5238"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 14.5d
+			y: -5.0d
+			description: ["With the Advanced Machine Hull you can now create an advanced version of solar panels. These still are rather weak, only generating 12 EU/t maximum during the daytime, but are completely free."]
+			dependencies: ["6C3EAE1F16E1048A"]
+			id: "4041852A8CA6299F"
+			tasks: [{
+				id: "386A3553125A28B5"
+				type: "item"
+				item: "techreborn:advanced_solar_panel"
+			}]
+			rewards: [{
+				id: "23F2A21456C8F8E6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}

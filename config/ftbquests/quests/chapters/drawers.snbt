@@ -1,0 +1,231 @@
+{
+	id: "26D331FA1A667DBF"
+	group: "05A88037F88880CD"
+	order_index: 6
+	filename: "drawers"
+	title: "Drawers"
+	icon: "extended_drawers:single_drawer"
+	subtitle: ["Mass storage solutions"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Drawers"
+			x: -1.5d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "No, not your pants"
+			description: [
+				"Drawers are an extremely compact and easy way to store a lot of items in a single block. The basic drawer comes in three different varieties, single, double, and quad. The Shadow Drawer acts similar to a Drawer Access Point, but allows the player to interact with a single item directly. For example, if you had two separate side-by-side drawers storing 10 logs each, and a shadow drawer set to logs, it will show 20."
+				""
+				"You can add items to a drawer by right clicking, and remove them by left clicking. You can remove stacks at a time from a drawer by shift-left clicking."
+				""
+				"You can apply upgrades and lock drawers by shift-right clicking the drawer with the upgrade/lock."
+			]
+			dependencies: ["045C683BF6E216CB"]
+			size: 1.5d
+			id: "4EB556BD36F09E16"
+			tasks: [{
+				id: "492A1753E44AAC04"
+				type: "item"
+				title: "Any Drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "extended_drawers:drawers"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6202D2478EEA5D09"
+					type: "item"
+					item: "extended_drawers:lock"
+				}
+				{
+					id: "5C387A4EFB6C3A3D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Drawer Upgrades"
+			x: 3.5d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "MORE MORE MORE"
+			description: [
+				"Upgrades are applied using different upgrade items. They increase the capacity of a drawer slot."
+				""
+				"To install one, simply click on a slot with the upgrade in hand while sneaking."
+				""
+				"- Tier one upgrade doubles the amount that can be stored"
+				"- Tier two upgrade is 4x the amount"
+				"- Tier three upgrade is 8x the amount"
+				"- Tier four upgrade is 16x the amount"
+				""
+				"The Drawer Downgrade can be used to limit the capacity of a drawer to a single stack. This can prove useful in automation scenarios."
+			]
+			dependencies: ["4F278EA5EC5E59E1"]
+			id: "313C9B884B08EAF8"
+			tasks: [{
+				id: "72FBBFD17DA765C9"
+				type: "item"
+				title: "Any Drawer Upgrade"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "extended_drawers:upgrade"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "17BB789AA0518B93"
+					type: "item"
+					item: "extended_drawers:upgrade_frame"
+					count: 8
+				}
+				{
+					id: "4741FF2831996B0C"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"Drawer Connectors are simple blocks that allow you to connect different parts of your drawer network together without wasting resources on drawers."
+				""
+				"They also produce less lag as they don't have to story any data."
+			]
+			dependencies: ["4F278EA5EC5E59E1"]
+			id: "2EDE467B8EA737A7"
+			tasks: [{
+				id: "5A245ACCB0C914C6"
+				type: "item"
+				item: "extended_drawers:connector"
+			}]
+			rewards: [
+				{
+					id: "481C8F25F9F103E5"
+					type: "item"
+					item: "extended_drawers:single_drawer"
+					count: 4
+				}
+				{
+					id: "299D4734BAF295F4"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Drawer Networks"
+			x: 2.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"Just by placing some drawers next to each other you have created a simple network. However, that network doesn't do anything yet. "
+				""
+				"To interact with your network, you can craft an access point. It allows you to insert items into the drawers they belong in automatically instead of having to do it by hand."
+			]
+			dependencies: ["4EB556BD36F09E16"]
+			id: "4F278EA5EC5E59E1"
+			tasks: [{
+				id: "0DFA3401B922331A"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "0ED3CB18F6FEDB28"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"Access Points allow inserting items to the whole network, automatically finding the right drawer."
+				""
+				"They also act as an interface for other mods to access the network."
+				""
+				"You can lock/unlock your entire network by shift-right clicking with a lock on the access point"
+			]
+			dependencies: ["4F278EA5EC5E59E1"]
+			id: "3604D1BBC61B844D"
+			tasks: [{
+				id: "113EF6D198476847"
+				type: "item"
+				item: "extended_drawers:access_point"
+			}]
+			rewards: [{
+				id: "274A2EC8DA43683C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Voiding Mode"
+			x: 3.0d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "Playing with fire"
+			description: [
+				"Voiding mode can be toggled with a lava bucket. It makes it so that the drawer deltes excess items."
+				""
+				"This is mostly useful when you have bulk storage for a very common item and don't want it to clog the system when it fills up."
+				""
+				"Like locks, they aren't consumed and can be applied to access points. Be careful as it can easily void important items if used improperly. Also make sure to aim well, or you might end up lacing the lava instead."
+			]
+			dependencies: ["4F278EA5EC5E59E1"]
+			id: "6A807C07969CA906"
+			tasks: [{
+				id: "3C842694F23866AE"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+			rewards: [{
+				id: "1934A630C496A649"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Hidden Mode"
+			x: 1.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"Hidden mode can be toggled with a black dye. It makes it so that the drawer doesn't show it's item."
+				""
+				"THis is mostly useful when you have a big network of drawers and want to improve performance as rendering the item icons can be very expensive."
+				""
+				"Like locks, the items aren't consumed and can be applied to access points."
+				""
+				"Hiding can also be applied to shadow drawers. This is mostly useful if you want to use one in a contraption."
+			]
+			dependencies: ["4F278EA5EC5E59E1"]
+			id: "2CA069F476518EB2"
+			tasks: [{
+				id: "055525E1721A0AA1"
+				type: "item"
+				item: "minecraft:black_dye"
+			}]
+			rewards: [{
+				id: "72902429B85D9AC6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}

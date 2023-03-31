@@ -1,0 +1,20 @@
+{
+	id: "7B164B26A6ECB112"
+	group: "05A88037F88880CD"
+	order_index: 11
+	filename: "simply_swords"
+	title: "Simply Swords"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "23CD8A7C9C3051CF"
+		tasks: [{
+			id: "3518169088B99855"
+			type: "item"
+			item: "simplyswords:runic_tablet"
+		}]
+	}]
+	quest_links: [ ]
+}
