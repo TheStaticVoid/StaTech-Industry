@@ -1,0 +1,114 @@
+{
+	id: "6471F4A220959084"
+	group: "05A88037F88880CD"
+	order_index: 8
+	filename: "inmis"
+	title: "Inmis"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 4.5d
+			y: 2.5d
+			shape: "rsquare"
+			description: ["By some kind of ender magic, this backpack allows you to remotely access your own ender chest."]
+			hide_dependency_lines: true
+			id: "54589AAB3003F421"
+			tasks: [{
+				id: "408B2186174A852E"
+				type: "item"
+				item: "inmis:ender_pouch"
+			}]
+			rewards: [{
+				id: "73BCD9525B39841A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			shape: "rsquare"
+			description: ["With this new piece of bling, you will be able to carry 45 item stacks."]
+			id: "1B19E2916336F297"
+			tasks: [{
+				id: "3217AE8712B2A04F"
+				type: "item"
+				item: "inmis:bejeweled_backpack"
+			}]
+			rewards: [{
+				id: "61550E79DEBF0CED"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			shape: "rsquare"
+			subtitle: "Fireproof!"
+			description: [
+				"The Blazing Backpack comes with the additional benefit of not burning in lava! Great for keeping your valuables safe. "
+				""
+				"It can also store 54 item stacks."
+			]
+			dependencies: ["1B19E2916336F297"]
+			id: "328DBF4E8E11FED7"
+			tasks: [{
+				id: "06CBD05F7D96A353"
+				type: "item"
+				item: "inmis:blazing_backpack"
+			}]
+			rewards: [{
+				id: "6F802283135092A3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.5d
+			shape: "rsquare"
+			description: [
+				"After taking down the Wither, you can use the Nether Star to upgrade your backpack to the Withered Backpack. This bad boy can hold 66 item stacks. "
+				""
+				"It maintains the fireproof status of the previous backpack."
+			]
+			dependencies: ["328DBF4E8E11FED7"]
+			id: "2A0BC5CB56BB5BAD"
+			tasks: [{
+				id: "236DD489F61D3036"
+				type: "item"
+				item: "inmis:withered_backpack"
+			}]
+			rewards: [{
+				id: "7AB873246919CC13"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.5d
+			shape: "rsquare"
+			description: [
+				"With materials from the end you can craft the final tier of backpack, the Endless Backpack."
+				""
+				"While not entirely \"endless,\" it does boast a whopping 90 item stacks. And yes, it still is fireproof."
+			]
+			dependencies: ["2A0BC5CB56BB5BAD"]
+			id: "6E832DECC59EA741"
+			tasks: [{
+				id: "6D266874561DCB98"
+				type: "item"
+				item: "inmis:endless_backpack"
+			}]
+			rewards: [{
+				id: "23E1B01870E773FB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}

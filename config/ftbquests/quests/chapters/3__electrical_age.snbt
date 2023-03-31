@@ -1,0 +1,1172 @@
+{
+	id: "76B50258D8A6EED7"
+	group: "592A9A0E9A131D28"
+	order_index: 2
+	filename: "3__electrical_age"
+	title: "3 - Electrical Age"
+	icon: "modern_industrialization:electronic_circuit"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["72090D36C27DC4AF"]
+			size: 1.5d
+			id: "473C1DE557D3E9C0"
+			tasks: [{
+				id: "31972FF371689C19"
+				type: "item"
+				item: "modern_industrialization:basic_machine_hull"
+			}]
+			rewards: [{
+				id: "3972A5DA26D3A97D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Lightning in a Box"
+			description: [
+				"The Steam Turbine uses Steam to produce electricity. It converts every mb of Steam to 1 EU, up to 32 mb converted every tick."
+				""
+				"The Steam Turbine will automatically send electricity to any machine connected directly to its output side. It will only connect to cables placed on its output side. It has the Low Voltage (LV) Tier."
+				""
+				"Every electric cable has a Tier which determines how many EU/t it can transfer and which machines it can connect to. Copper, Silver, and Tin are LV, Curponickel and Electrum are MV, and so on..."
+				""
+				"Cable networks have limitations on the amount of energy they will pull into the network: at most 256 EU/t for LV cables, 1024 EU/t for MV cables and 8192 EU/t for HV cables. Because there is no output limit for the network and because cables have a small internal storage, an LV network can provide more than 256 EU/t for a short amount of time."
+				""
+				"Note however that single block electric machines will only connect to LV cables!"
+				""
+				"To transfer more energy, you need to either create multiple pipe networks or use Transformers."
+				""
+				"A low tier to high tier Transformer (for example LV to MV) has 5 inputs and 1 output. A high tier to low tier (for example MV to LV) Transformer has 1 input and 5 outputs."
+			]
+			dependencies: ["473C1DE557D3E9C0"]
+			size: 2.0d
+			id: "6765B4B8D870CDA0"
+			tasks: [{
+				id: "266E5F8B72D0781F"
+				type: "item"
+				item: "modern_industrialization:lv_steam_turbine"
+			}]
+			rewards: [{
+				id: "61A0143B765799CD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Electricity and Tiers"
+			x: 6.0d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"For those of you who have played GregTech before, you will know that in that machines that connect to higher voltage tiers than themselves will explode. THIS IS NOT THE CASE HERE."
+				""
+				"In Modern Industrialization, your cables will not burn up if you connect higher tier generator to lower tier cable, and your machines will not explode if you connect a higher tier cable to a lower tier machine. Instead of all that, nothing happens. That's right, you don't have to worry about all of those negative effects. Machines will refuse to send / receive power if you don't connect the correct cabling."
+				""
+				"Also, unlike GT:NH, your machines will not explode if they are exposed to rain."
+			]
+			dependencies: ["6765B4B8D870CDA0"]
+			id: "11C4254DF67951A9"
+			tasks: [{
+				id: "3EEB76F3C5E9C50D"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "695A8059B5F1667F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: ["Now that you're generating power, it's probably best to create a buffer. This way while you're not fully stressing your power network you're creating a backlog for when you may be using it faster than you can produce. "]
+			dependencies: ["6765B4B8D870CDA0"]
+			id: "3AD3E65C11D8C2A5"
+			tasks: [{
+				id: "012DC71DB55F468A"
+				type: "item"
+				item: "modern_industrialization:lv_storage_unit"
+			}]
+			rewards: [{
+				id: "1E27FEAAD4DFF507"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Solar Power"
+			x: 4.5d
+			y: 1.0d
+			shape: "rsquare"
+			description: [
+				"As an alternative to Steam power, you can also create a Basic Solar Panel. Generally, solar is going to be weaker than other power sources, so if you'd actually like to use it, you will need to have to use a lot of solar panels."
+				""
+				"The Basic Solar Panel will produce 3 EU/t during the day and 0 EU/t during the night. If you'd like to have power in the night, you'll need to use a Storage Unit as a power buffer."
+			]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "56C3965074DC455E"
+			tasks: [{
+				id: "4D2FA9512720EB35"
+				type: "item"
+				item: "techreborn:basic_solar_panel"
+			}]
+			rewards: [{
+				id: "4C4AF57D9F08351E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Diesel Power"
+			x: 4.5d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "Good for the environment!"
+			description: [
+				"The Starter Diesel Generator is an alternative power generation method that will allow you to burn Creosote to generate up to 64 EU/t."
+				""
+				"I would not recommend making this your main power source and instead relying on Steam Turbines until you unlock the regular Diesel Generator."
+			]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "1DC734F9B44FDB9A"
+			tasks: [{
+				id: "71F91B8586811EF6"
+				type: "item"
+				item: "modern_industrialization:starter_diesel_generator"
+			}]
+			rewards: [{
+				id: "576FF2B9F41CC687"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			shape: "square"
+			description: ["The Electric Cutting Machine is the electrical version of the Steam Cutting Machine. The only recipe it unlocks is to turn Monocrystalline Silicon into Silicon Wafers, which you won't need right now. "]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "627C78680166E422"
+			tasks: [{
+				id: "4B607946D3546C69"
+				type: "item"
+				item: "modern_industrialization:electric_cutting_machine"
+			}]
+			rewards: [{
+				id: "3B8BEAE8CFA4F92A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.0d
+			y: 1.0d
+			shape: "square"
+			description: ["The Electric Furnace is the electrical version of the Steam Furnace. It doesn't open up any new recipes, but it will process recipes much faster than its Steam counterpart."]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "03D51B7E40C3A7CD"
+			tasks: [{
+				id: "494AFBE995C5A67C"
+				type: "item"
+				item: "modern_industrialization:electric_furnace"
+			}]
+			rewards: [{
+				id: "441089C7FE3232B2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -6.5d
+			y: 0.0d
+			shape: "square"
+			description: ["The Electric Macerator is the electrical version of the Steam Macerator. It opens up the ability to make Calcite Dust, and it will process recipes much faster than its Steam counterpart."]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "1EFA4209205571E3"
+			tasks: [{
+				id: "657C67D3EBFA05F0"
+				type: "item"
+				item: "modern_industrialization:electric_macerator"
+			}]
+			rewards: [{
+				id: "415F22A8710C757E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			shape: "square"
+			description: ["The Electric Wiremill is the electrical version of the Steam Wiremill. It doesn't open up any new recipes, but it will process recipes much faster than its Steam counterpart."]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "2ACF26FC95B88B16"
+			tasks: [{
+				id: "58D54D1A4D761C5F"
+				type: "item"
+				item: "modern_industrialization:electric_wiremill"
+			}]
+			rewards: [{
+				id: "14089010AC8995EF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["The Electric Unpacker is the electrical version of the Steam Unpacker. It doesn't open up any new recipes, but it will process recipes much faster than its Steam counterpart."]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "278BE1D13FE8E78E"
+			tasks: [{
+				id: "59FDA56AAA089F15"
+				type: "item"
+				item: "modern_industrialization:electric_unpacker"
+			}]
+			rewards: [{
+				id: "11209AFD93F7EC26"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			shape: "square"
+			subtitle: "Factorio!"
+			description: [
+				"This is the first machine you will probably want to make a lot of! The Assembler allows you to automate almost all recipes, up to 3 per Assembler if you use slot locking."
+				""
+				"I strongly suggest that you automate Machine Hulls, Analog Circuits, Motors, Pistons, Robot Arms, and Conveyor Belts using Assemblers as soon as possible, that will make crafting Electrical Machines basically free!"
+			]
+			dependencies: ["473C1DE557D3E9C0"]
+			size: 1.5d
+			id: "4E0D57D45D09B1D4"
+			tasks: [{
+				id: "065524BE43926CB0"
+				type: "item"
+				item: "modern_industrialization:assembler"
+			}]
+			rewards: [{
+				id: "52A0BFCE3D022CCB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.5d
+			shape: "rsquare"
+			description: [
+				"Calcite Dust can be made by crushing down Calcite blocks, which can be found around the world mainly in geodes."
+				""
+				"Once you have a Calcite block, you can replicate it in a mixer using water and lava."
+			]
+			dependencies: ["1EFA4209205571E3"]
+			id: "2AABAD74E8A63623"
+			tasks: [{
+				id: "40FABCF3F8CDC343"
+				type: "item"
+				item: "techreborn:calcite_dust"
+			}]
+			rewards: [{
+				id: "358515FA2E11724E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -6.5d
+			y: 4.5d
+			shape: "rsquare"
+			description: [
+				"By combining Calcite Dust and Iron Ingots in an Alloy Smelter, you can create Refined Iron Ingots. "
+				""
+				"These serve two main purposes. The first, an upgrade to your backpack, a second, an alternative way for generating Steel once you have your Electric Blast Furnace."
+			]
+			dependencies: [
+				"2AABAD74E8A63623"
+				"6A6C717EB97FD7B5"
+			]
+			id: "6012D781643367DA"
+			tasks: [{
+				id: "1066062C183FA7FB"
+				type: "item"
+				item: "techreborn:refined_iron_ingot"
+			}]
+			rewards: [{
+				id: "28E441DCD1CA6EAA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["The Electric Packer is the electrical version of the Steam Unpacker. It doesn't open up any new recipes, but it will process recipes much faster than its Steam counterpart."]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "3F0D5EA33B0F016B"
+			tasks: [{
+				id: "04EDF8B90A862D7D"
+				type: "item"
+				item: "modern_industrialization:electric_packer"
+			}]
+			rewards: [{
+				id: "09298B99FBFE96DD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			shape: "square"
+			description: ["The Polarizer is a machine that will allow you to magnetically charge certain types of metals. This means you can stop using Redstone to magnetise Steel Rods, as well as you will be able to magnetise certain important metals in the future."]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "5D6D204EAB87BF4A"
+			tasks: [{
+				id: "02173517ECE4C296"
+				type: "item"
+				item: "modern_industrialization:polarizer"
+			}]
+			rewards: [{
+				id: "6577791920C8F17B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -6.0d
+			y: -7.0d
+			id: "4E45A919AB388540"
+			tasks: [{
+				id: "4C7F8078B08986B1"
+				type: "item"
+				item: "modern_industrialization:distillery"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -8.0d
+			id: "0E9876A8FEF7F7E9"
+			tasks: [{
+				id: "593235A3E59A7B14"
+				type: "item"
+				item: "modern_industrialization:electrolyzer"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.0d
+			id: "517C3D6FBC5FEB2A"
+			tasks: [{
+				id: "573FF83303509FBF"
+				type: "item"
+				item: "modern_industrialization:chemical_reactor"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -5.0d
+			id: "136292FF2B54C503"
+			tasks: [{
+				id: "548C81467B76B0FD"
+				type: "item"
+				item: "modern_industrialization:centrifuge"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"As your Steam needs increase, you will probably find that the Steel Pumps are not cutting it anymore. "
+				""
+				"The solution is an Electric Pump. Instead of a measly 2000 mB of water every 5 seconds, it can produce 16000 mB of water every 5 seconds. That's an 8x increase! Once it's internal buffer is full, it only requires 1 EU/t to operate, very efficient!"
+			]
+			dependencies: ["6765B4B8D870CDA0"]
+			id: "67B29CAD95658175"
+			tasks: [{
+				id: "4305A8034C10ED39"
+				type: "item"
+				item: "modern_industrialization:electric_water_pump"
+			}]
+			rewards: [{
+				id: "1249556F20B33405"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			shape: "square"
+			description: ["On top of processing the Bronze/Steel recipes more efficiently, the Mixer opens up new recipes that will be very important in the near future, such as mixing fuels."]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "0D3703BE9C1401C8"
+			tasks: [{
+				id: "2DA969B16A5E3717"
+				type: "item"
+				item: "modern_industrialization:electric_mixer"
+			}]
+			rewards: [{
+				id: "594CF35097BB7CD7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			shape: "square"
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "106620634F331F30"
+			tasks: [{
+				id: "027F3812668A3C55"
+				type: "item"
+				item: "modern_industrialization:electric_compressor"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 4.5d
+			shape: "rsquare"
+			subtitle: "Long awaited upgrade"
+			description: ["Finally with your Refined Iron, you can upgrade your Frayed Backpack to become a Plated Backpack. This backpack can hold 18 stacks of items and can be equipped on your back trinket slot."]
+			dependencies: ["6012D781643367DA"]
+			id: "59141568014C03CB"
+			tasks: [{
+				id: "6B622BE622A9BF2D"
+				type: "item"
+				item: "inmis:plated_backpack"
+			}]
+			rewards: [{
+				id: "17E40DAC9A647C80"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.5d
+			shape: "square"
+			dependencies: ["03D51B7E40C3A7CD"]
+			id: "6A6C717EB97FD7B5"
+			tasks: [{
+				id: "0C68B03E63733D68"
+				type: "item"
+				item: "modern_industrialization:alloy_smelter"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.5d
+			shape: "square"
+			description: ["Electrum is an alloy of Gold and Silver. It's used in a variety of crafting recipes, as well as one of the cables that can support Medium Voltage."]
+			dependencies: ["6A6C717EB97FD7B5"]
+			id: "06EA6256AF717DAC"
+			tasks: [{
+				id: "6E3616900EDF2BC4"
+				type: "item"
+				item: "modern_industrialization:electrum_ingot"
+			}]
+			rewards: [{
+				id: "0B3808749AFFDE08"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.5d
+			shape: "square"
+			description: ["Invar is an alloy of Iron and Nickel. It's used in several crafting recipes, as well as in Heatproof Machine Casings, which are essential for the Pyrolyse Oven and the Electric Blast Furnace."]
+			dependencies: ["6A6C717EB97FD7B5"]
+			id: "47288A9C6EC0E705"
+			tasks: [{
+				id: "1775A016016312EA"
+				type: "item"
+				item: "modern_industrialization:invar_ingot"
+			}]
+			rewards: [{
+				id: "6E8AFDE7E7A929C5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Pyrolyse Oven"
+			icon: "modern_industrialization:pyrolyse_oven"
+			x: 2.0d
+			y: 6.25d
+			shape: "rsquare"
+			description: [
+				"In the need of more Creosote? Or would you like to get a headstart on Benzene production? Either way, the Pyrolyse Oven is the perfect multiblock solution for you."
+				""
+				"You can Ponder the multiblock by holding 'W' on the Pyrolyze Oven item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
+			]
+			dependencies: ["53CABAF5DA73AF92"]
+			size: 1.25d
+			id: "4365254BED40DF80"
+			tasks: [
+				{
+					id: "39E87085E6AB487E"
+					type: "item"
+					item: "modern_industrialization:pyrolyse_oven"
+				}
+				{
+					id: "020C94576C560ECC"
+					type: "item"
+					item: "modern_industrialization:cupronickel_coil"
+					count: 16L
+				}
+				{
+					id: "5C6D75ADD5E6E59B"
+					type: "item"
+					item: "modern_industrialization:heatproof_machine_casing"
+					count: 12L
+				}
+				{
+					id: "05442D32D8103171"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "2652EB8BD0440BF9"
+					type: "item"
+					title: "Any Item Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+				}
+				{
+					id: "1159061647A5008C"
+					type: "item"
+					title: "Any Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+				}
+				{
+					id: "6AEAA76C6ABF0D19"
+					type: "item"
+					title: "Any Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+				}
+				{
+					id: "6BA61BE79D28A964"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4D1DAFEBF1D2ACE6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			shape: "rsquare"
+			description: [
+				"The Extractor is a Tech Reborn machine that can, well... extract things from items. Check REI for the list of all the recipes it can process. "
+				""
+				"Most notably, it will give you a better ratio on Sap to Rubber, as well as some other Rubber production methods."
+			]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "318AAFF16CBD3C56"
+			tasks: [{
+				id: "2F46E33E1D0D7ECD"
+				type: "item"
+				item: "techreborn:extractor"
+			}]
+			rewards: [{
+				id: "42A7980B75E543B3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "modern_industrialization:electric_blast_furnace"
+			x: 3.75d
+			y: 3.0d
+			shape: "square"
+			subtitle: "EBF for short!"
+			description: [
+				"The Electric Blast Furnace is the electric version of the Steam Blast Furnace. It unlocks new recipes and like other multiblock electric machines, its overclock is bounded to 128 EU/t by default."
+				""
+				"The EBF is made of one layer of Heatproof Machine Casings, two hollow layers of Cupronickel Coils and one other layer of Heatproof Machine Casings. The controller must go on the bottom layer, and hatches on the top or bottom layer."
+				""
+				"Don't forget to add Energy Input Hatch(es) or the EBF won't have energy! The LV Energy Input Hatch will only connect to LV cables. There are higher tiers of input hatches, the MV one is not craftable yet, but keep in mind that they still exist!"
+				""
+				"Remember you can Ponder the multiblock by holding 'W' on the Electric Blast Furnace item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
+			]
+			dependencies: [
+				"071D9B8D5C16227B"
+				"53CABAF5DA73AF92"
+			]
+			size: 1.5d
+			id: "34BCB27D3481EDF4"
+			tasks: [
+				{
+					id: "0B96D1F767FB6DB4"
+					type: "item"
+					item: "modern_industrialization:electric_blast_furnace"
+				}
+				{
+					id: "4BCCDF03BA8AD008"
+					type: "item"
+					item: "modern_industrialization:heatproof_machine_casing"
+					count: 14L
+				}
+				{
+					id: "100BA8CC56CB9C2D"
+					type: "item"
+					item: "modern_industrialization:cupronickel_coil"
+					count: 16L
+				}
+				{
+					id: "259C0C7209C7C147"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "51DB3B11AFE0480A"
+					type: "item"
+					title: "Any Item Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+				}
+				{
+					id: "5CD709BE4330D4CD"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "424B26AFB97FC278"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Cupronickel Coils"
+			x: 2.0d
+			y: 4.5d
+			shape: "square"
+			description: [
+				"Cupronickel Coils will allow your Electric Blast Furnace to handle recipes up to 32 EU/t. To process higher power recipes you will need to upgrade your coils, but we don't need to worry about that just yet."
+				""
+				"You will have needed to make Cupronickel Ingots from the Alloy Smelter questline before you can make them. Go back and do that if you haven't already. While you're at it, make sure you've started producing Invar as well!"
+			]
+			dependencies: ["4E0D57D45D09B1D4"]
+			id: "53CABAF5DA73AF92"
+			tasks: [{
+				id: "50D32952C98925D7"
+				type: "item"
+				item: "modern_industrialization:cupronickel_coil"
+				count: 16L
+			}]
+			rewards: [{
+				id: "63CCBD2FA86A33C4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.5d
+			y: 4.5d
+			shape: "square"
+			description: ["Cupronickel is an alloy between Copper and Nickel which will be very important as you aim to create more electric machines, especially the Electric Blast Furnace."]
+			dependencies: ["6A6C717EB97FD7B5"]
+			id: "7C19430B71E2DE32"
+			tasks: [{
+				id: "74D459BF1CFE7DBD"
+				type: "item"
+				item: "modern_industrialization:cupronickel_ingot"
+			}]
+			rewards: [{
+				id: "0A9603A964AA9AD8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -9.5d
+			y: 4.5d
+			shape: "rsquare"
+			subtitle: "Like having a chest on your back"
+			description: [
+				"The Gilded Backpack will allow you to carry 27 item stacks."
+				""
+				"Note that it takes 4x Electrum and 4x Gold Plates. The textures look very similar."
+			]
+			dependencies: ["59141568014C03CB"]
+			id: "7FD5999E03B4F989"
+			tasks: [{
+				id: "50A2E3A40CE19BE5"
+				type: "item"
+				item: "inmis:gilded_backpack"
+			}]
+			rewards: [{
+				id: "21CE0AD298B3E53A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			shape: "rsquare"
+			description: [
+				"For the recipes the Assembler doesn't cover, you can create a Tech Reborn Auto Crafting Table. "
+				""
+				"The Auto Crafting Table works by placing items in the grid that will complete the recipe, and then locking it with the button in the top right. Once done, you can connect it up to power and insert items into it through pipes, hoppers, etc. and it will automatically craft the item after sometime."
+			]
+			dependencies: ["4E0D57D45D09B1D4"]
+			id: "5778899B530BDA93"
+			tasks: [{
+				id: "2B2DC109700BC532"
+				type: "item"
+				item: "techreborn:auto_crafting_table"
+			}]
+			rewards: [{
+				id: "036CE1731DBB196A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: -8.0d
+			description: ["Passing regular Iron Ingots through the Blast Furnace will give you Hardened Iron Ingots. These don't have any purpose in progressing for Modern Industrializations, but it will allow you to start creating guns from the Simple Animated Guns mod."]
+			id: "51842FF718B50E2C"
+			tasks: [{
+				id: "2A6D9C08941ADD98"
+				type: "item"
+				item: "anim_guns:hardened_iron_ingot"
+			}]
+			rewards: [{
+				id: "61930BD40164BA06"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Silicon"
+			x: 3.75d
+			y: 4.5d
+			shape: "square"
+			description: [
+				"Silicon will be an important component in crafting electronic components. By combining Quartz and Coke Dusts in the EBF you can start producing Silicon Dust. Smelting Silicon Dust in a furnace will give you its ingot form. You can alternatively use Carbon Dust to get slightly more Silicon Dust."
+				""
+				"Alternatively, once you have an Electrolyzer you can electrolyze Clay Balls or Lapis Lazuli Dust to get Silicon as a byproduct."
+			]
+			dependencies: ["34BCB27D3481EDF4"]
+			id: "45D0D6741E460128"
+			tasks: [{
+				id: "0F6673148CB1C781"
+				type: "item"
+				item: "modern_industrialization:silicon_dust"
+			}]
+			rewards: [{
+				id: "2AE806013FDB0813"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Aluminum"
+			x: 8.5d
+			y: 3.0d
+			shape: "square"
+			subtitle: "Not Aluminium"
+			description: [
+				"Aluminum is a material used to make more advanced machines and will be required as we move towards electric circuits."
+				""
+				"Put Bauxite Dust in an Electric Blast Furnace to get Aluminum. You can either put the dust in directly to get nuggets, or craft Bauxite Blocks to get Aluminum Ingots as the output."
+				""
+				"Alternatively, if you process the Aluminum into dust prior to the EBF it will save you some processing time."
+			]
+			dependencies: ["34BCB27D3481EDF4"]
+			size: 2.0d
+			id: "5D1DD7B1C1BB8BEC"
+			tasks: [{
+				id: "13AFA6B7EA440940"
+				type: "item"
+				item: "modern_industrialization:aluminum_ingot"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "65B3EEBBB9216016"
+					type: "item"
+					item: "modern_industrialization:aluminum_ingot"
+					count: 4
+				}
+				{
+					id: "5515018EA26C32CA"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 5.0d
+			shape: "square"
+			description: ["Now that you can process Aluminum, you can now process Advanced Machine Casings. These are the main component in making Advanced Machine Hulls."]
+			dependencies: ["5D1DD7B1C1BB8BEC"]
+			id: "43338129769822A8"
+			tasks: [{
+				id: "5028D4BC1EBD76AB"
+				type: "item"
+				item: "modern_industrialization:advanced_machine_casing"
+			}]
+			rewards: [{
+				id: "702FB819B6447745"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Electronic Components"
+			x: 9.0d
+			y: 5.0d
+			shape: "square"
+			description: ["With the EBF created and all the new materials created, it's time to put it all together. You're so close to your first Electronic Circuit!"]
+			dependencies: ["5D1DD7B1C1BB8BEC"]
+			id: "59F8FE8CBA6A4421"
+			tasks: [
+				{
+					id: "51A16B49FB1192CF"
+					type: "item"
+					item: "modern_industrialization:electronic_circuit_board"
+				}
+				{
+					id: "22C95009BAC5E51C"
+					type: "item"
+					item: "modern_industrialization:diode"
+					count: 2L
+				}
+				{
+					id: "5DD7F2649466F464"
+					type: "item"
+					item: "modern_industrialization:transistor"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "076EB5569D4E5DC5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 11.0d
+			y: 5.0d
+			shape: "rsquare"
+			subtitle: "Science and magic combine!"
+			description: [
+				"While you might have collected some Waystones on your adventures, crafting them had been out of your reach until now. Holding right-click with the Warp Stone will allow you to pick any visited Waystone to teleport to. "
+				""
+				"With the Warp Stone you can create new Waystones and Sharestones. If you want to learn more about this mod, the rest of this quest line is kept inside it's own tab on the left."
+			]
+			dependencies: ["302958D57C6A10C7"]
+			id: "1AB18180BA341189"
+			tasks: [{
+				id: "69C09B4BB4326EB7"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "3C40817D3DD6ED0D"
+					type: "item"
+					item: "waystones:warp_dust"
+				}
+				{
+					id: "5274D9455704ED4C"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 8.0d
+			shape: "square"
+			subtitle: "Did you remember the thermal paste?"
+			description: ["This is a big step for you, crafting your first Electronic Circuit is no small feat. This circuit makes up the basis of a lot of the recipes from here on out, so I'd recommend crafting these in bulk, and then setting up autocrafting once you have access to AE2 (which you can now make btw)"]
+			dependencies: ["59F8FE8CBA6A4421"]
+			size: 2.0d
+			id: "302958D57C6A10C7"
+			tasks: [{
+				id: "4362876D82BA81B6"
+				type: "item"
+				item: "modern_industrialization:electronic_circuit"
+			}]
+			rewards: [{
+				id: "2296C842D2E7FBD8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 8.0d
+			y: 8.0d
+			shape: "square"
+			subtitle: "Welcome to MV"
+			description: ["With your Advanced Machine Casings, you can now create Advanced Machine Hulls. These will be useful to access MV tier machines, as well as an essential part of the Electric Quarry."]
+			dependencies: [
+				"302958D57C6A10C7"
+				"43338129769822A8"
+				"107DB1172932C668"
+			]
+			size: 2.0d
+			id: "6C3EAE1F16E1048A"
+			tasks: [{
+				id: "29A86A47A2F2A4DF"
+				type: "item"
+				item: "modern_industrialization:advanced_machine_hull"
+			}]
+			rewards: [{
+				id: "2FE12D9777650750"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.5d
+			shape: "square"
+			description: ["Silicon Batteries are made similarly to the Redstone Batteries, just with Silicon instead. These will be important in the construction of the Advanced Machine Hull."]
+			dependencies: ["45D0D6741E460128"]
+			id: "107DB1172932C668"
+			tasks: [{
+				id: "53537FB5B2B43C76"
+				type: "item"
+				item: "modern_industrialization:silicon_battery"
+			}]
+			rewards: [{
+				id: "36BF8D436BE7384D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Hull Upgrades"
+			x: 5.5d
+			y: 8.0d
+			description: [
+				"Instead of GregTech's tiered machine system, instead you can use Advanced Machine Hulls, and even higher tiers past that, to replace the current tier of the machine with that of the hull you apply. "
+				""
+				"You can add the Machine Hull to the top right of the machine's inventory GUI."
+				""
+				"Increasing a machine's tier means it will accept a higher tier of cable connection, IT DOES NOT overclock the recipe. For that you will need machine upgrades, which we will soon get to."
+			]
+			dependencies: ["6C3EAE1F16E1048A"]
+			id: "1B27E6E60304C8F6"
+			tasks: [{
+				id: "3F9703CCEC91DF69"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "047B1D323AFB7651"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 11.0d
+			y: 13.5d
+			shape: "rsquare"
+			dependencies: ["302958D57C6A10C7"]
+			id: "1A3215B013A56DF3"
+			tasks: [{
+				id: "6C0E4D7A74A0984D"
+				type: "item"
+				item: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "69A5E9A9D0B8B72E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.0d
+			y: 13.5d
+			shape: "rsquare"
+			description: [
+				"Using your Warp Stone, or just grabbing a Waystone you broke earlier, you can now get Waystones!"
+				""
+				"These allow you to set locations you can warp between, even dimensions! These aren't as practical for traveling within your base as Travel Anchors are, but they are great if you find a cool place, useful resources, or land on another planet and want to travel back there again."
+			]
+			dependencies: ["1A3215B013A56DF3"]
+			id: "5122831846581262"
+			tasks: [{
+				id: "77C5AE25073B7AE1"
+				type: "item"
+				title: "Any Waystone"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "structory_towers:waystones_1"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "564B00A3C8CC5534"
+					type: "item"
+					item: "waystones:warp_dust"
+					count: 4
+				}
+				{
+					id: "1588AD6F9DEB73B8"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 15.5d
+			shape: "rsquare"
+			description: [
+				"If you find your Waystone bookmarks are getting clogged, you can consider using Sharestones."
+				""
+				"Sharestones allow you to warp between only other Sharestones of the same color, this is useful to organize the different locations you want to be warping to."
+			]
+			dependencies: ["1A3215B013A56DF3"]
+			id: "072C7BB315337A31"
+			tasks: [{
+				id: "4A44D9CF80920734"
+				type: "item"
+				title: "Any Sharestones"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "waystones:sharestone"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6696ED8BC185DF03"
+					type: "item"
+					item: "waystones:warp_dust"
+					count: 4
+				}
+				{
+					id: "40522981D6BD7F9A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 11.5d
+			shape: "rsquare"
+			description: ["The Port Stone will allow you to select a destination from the list of Waystones you have previously visited, but you will not be able to warp back to the Portstone."]
+			dependencies: ["1A3215B013A56DF3"]
+			id: "5233BABEDED66C9C"
+			tasks: [{
+				id: "68176AD7692CEBBF"
+				type: "item"
+				item: "waystones:portstone"
+			}]
+			rewards: [
+				{
+					id: "2375EAE2C925263D"
+					type: "item"
+					item: "waystones:warp_dust"
+					count: 4
+				}
+				{
+					id: "33B67C43D31AD529"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

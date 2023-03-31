@@ -1,0 +1,661 @@
+{
+	id: "20F5511EC4811EE1"
+	group: "05A88037F88880CD"
+	order_index: 1
+	filename: "ad_astra"
+	title: "Ad Astra!"
+	icon: {
+		id: "ad_astra:tier_3_rocket"
+		Count: 1b
+		tag: {
+			BotariumData: { }
+		}
+	}
+	subtitle: ["To the stars!"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 10.75d
+			y: 3.0d
+			width: 2.5d
+			height: 2.5d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/moon.png"
+			hover: ["Mun"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 17.5d
+			y: -1.75d
+			width: 3.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/mars.png"
+			hover: ["The Red Planet"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 24.5d
+			y: -3.0d
+			width: 2.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/venus.png"
+			hover: ["Extremely Hostile Environment"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 24.5d
+			y: 4.0d
+			width: 2.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/mercury.png"
+			hover: ["Hot, hot, hot!"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 36.0d
+			y: 0.5d
+			width: 3.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/glacio.png"
+			hover: ["Cold for sure, but habitable"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			x: 0.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Welcome to Ad Astra!"
+			dependencies: ["575EE8E0720CE7DC"]
+			id: "54E80D25AACC25E3"
+			tasks: [{
+				id: "2C103701A0C33CF5"
+				type: "item"
+				item: "ad_astra:fuel_refinery"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Don't tell the Spaceballs"
+			description: ["Before you can even think of starting to make your rocket and space suit, you're going to need Oxygen! The Oxygen Loader will convert your Modern Industrialization Oxygen into Ad Astra Oxygen at a 1:1 ratio so that it can be loaded into tanks and your space suit!"]
+			dependencies: ["54E80D25AACC25E3"]
+			id: "759BC7BEE3DE5E8A"
+			tasks: [{
+				id: "43FDBEC17AA2471F"
+				type: "item"
+				item: "ad_astra:oxygen_loader"
+			}]
+			rewards: [{
+				id: "5D9E8D72CA0EED26"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.5d
+			subtitle: "An insurance plan"
+			description: [
+				"While you made an Oxygen Tank for the Oxygen Loader, you're going to want some extra to extend how long you can have breathable air on the moon and other planets."
+				""
+				"I recommend two, luckily you only need to craft one more for this quest! (You'll need to make more for the space suit anyway)"
+			]
+			dependencies: ["759BC7BEE3DE5E8A"]
+			id: "41E37605C86F15AA"
+			tasks: [{
+				id: "6521CDDDB0C0B092"
+				type: "item"
+				item: {
+					id: "ad_astra:oxygen_tank"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "51CC7407084F1B44"
+					type: "item"
+					item: {
+						id: "ad_astra:oxygen_tank"
+						Count: 1b
+						tag: {
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "02CB76335B730104"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Space Suit"
+			x: 2.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "Amogus ඞ"
+			description: [
+				"The Space Suit is a required set of armor that will allow you to breathe (temporarily) on planets that do not have rich enough atmospheres to breath in."
+				""
+				"To load Oxygen directly into your suit, place the chest piece in the Oxygen Loader. No other parts of the suit will need to have Oxygen loaded to them. You can refill Oxygen while you're still wearing the suit by right-clicking with Oxygen Tanks while holding them."
+				""
+				"Be careful, as this suit is fairly weak, and if it breaks while you're not in an Oyxgen rich-atmosphere you're going to be in big trouble!"
+			]
+			dependencies: ["759BC7BEE3DE5E8A"]
+			id: "240A32C6B7DD0DD5"
+			tasks: [
+				{
+					id: "6ABD3111533415CE"
+					type: "item"
+					item: {
+						id: "ad_astra:space_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "020579562F59B6F7"
+					type: "item"
+					item: {
+						id: "ad_astra:space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "437C110384CF3694"
+					type: "item"
+					item: {
+						id: "ad_astra:space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "06BDE5B442855370"
+					type: "item"
+					item: {
+						id: "ad_astra:space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6852B7B15D288218"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "T-10"
+			description: [
+				"It's time to put all the preparation to good use. Using a copious amounts of Steel, create the Tier 1 Rocket."
+				""
+				"To put fuel in the rocket, shift-right to open its inventory. You can put buckets of fuel into the rocket. You'll need 12000 mB of Fuel to fully fuel the rocket for launch. Unfortunately you'll have to load them with buckets, as MI Tanks don't seem to work, but placing an MI Tank and filling up several buckets and unloading them into the rocket will make quick work of this task."
+				""
+				"Here's a pre-launch checklist just so you're ready:"
+				"- Tools/Weapons"
+				"- Full Space Suit w/ Oxygen"
+				"- Extra Oxygen Tanks"
+				"- Launch Pad"
+				"- MI Tank with 12000 mB of Fuel (return flight)"
+				"- Inventory space (backpack recommended)"
+				""
+				"Do not press 'Shift' to dismount the rocket, otherwise it'll fly up without you! You'll need to hold 'Space' when descending to avoid blowing up on touchdown!"
+			]
+			dependencies: ["41EE82F6FDB2109C"]
+			id: "66D955E646FC75EF"
+			tasks: [{
+				id: "15315B5B931AF815"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_1_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "34B21C48A922815E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Vehicle Assembly... Building?"
+			description: ["The NASA Workbench is the birthplace of your rockets. Check REI for the Tier 1 Rocket recipe and prepare crafting the Steel components needed to create it."]
+			dependencies: [
+				"41E37605C86F15AA"
+				"240A32C6B7DD0DD5"
+			]
+			id: "565F8D6169BE21A4"
+			tasks: [{
+				id: "09F5EFD668F7EE53"
+				type: "item"
+				item: "ad_astra:nasa_workbench"
+			}]
+			rewards: [{
+				id: "7313CA47411F2463"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.75d
+			y: 0.5d
+			shape: "square"
+			subtitle: "One Small Step..."
+			description: [
+				"Welcome to the moon!"
+				""
+				"Collect your Tier 1 Rocket by punching the Lander. Once you've gotten everything feel free to explore, but pay attention to your Oxygen reserves. The main goal of coming to the moon is the acquisition of Desh, which can be found underground in caves. You'll need quite a bit to progress, so try to get as much as possible!"
+			]
+			dependencies: ["66D955E646FC75EF"]
+			size: 1.5d
+			id: "400774ADB8A19D03"
+			tasks: [{
+				id: "5D2D9EE7D9DFAF7D"
+				type: "dimension"
+				title: "The Moon"
+				icon: "ad_astra:moon_globe"
+				dimension: "ad_astra:moon"
+			}]
+			rewards: [{
+				id: "63FF8067CB606DB2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Preparations complete"
+			description: [
+				"Of course you'll need some place to take off from. You'll need a Launch Pad anytime you plan to make a rocket launch, which includes the return flight."
+				""
+				"I've given you an extra in the quest reward to make sure you have an extra on you for when you plan to return from the moon. Just know that for every other planet you plan to take off from you'll need an extra!"
+			]
+			dependencies: ["565F8D6169BE21A4"]
+			id: "41EE82F6FDB2109C"
+			tasks: [{
+				id: "3B455A82B7C1B645"
+				type: "item"
+				item: "ad_astra:launch_pad"
+			}]
+			rewards: [
+				{
+					id: "59F6142B57C5AD4C"
+					type: "item"
+					item: "ad_astra:launch_pad"
+				}
+				{
+					id: "75A8CE37D59D93BD"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: -0.5d
+			shape: "square"
+			description: ["Desh is the main thing you came to the moon for. You'll need a lot of it for the T2 Rocket and other recipes, so plan to get a bunch!"]
+			dependencies: ["400774ADB8A19D03"]
+			id: "0D0CC636458E8446"
+			tasks: [{
+				id: "4339BF0F47F04383"
+				type: "item"
+				item: "ad_astra:raw_desh"
+			}]
+			rewards: [{
+				id: "1C23D309FB0665A0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 10.75d
+			y: -2.0d
+			description: ["Forget to pack a snack? The moon's got you. Moon Cheese can be eaten in a pinch to keep you from starving."]
+			dependencies: ["400774ADB8A19D03"]
+			id: "2AE79CA076C2EA64"
+			tasks: [{
+				id: "6C1B1A9C74C005FC"
+				type: "item"
+				item: "ad_astra:cheese"
+			}]
+			rewards: [{
+				id: "18FB8A26D86A17F5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.0d
+			y: 1.5d
+			description: ["You can find Ice Shards on the moon as well. They don't have much use to you yet, but will be important for a more efficient rocket fuel later."]
+			dependencies: ["400774ADB8A19D03"]
+			id: "5B5287B537A656A6"
+			tasks: [{
+				id: "7E232A46F59A8E1E"
+				type: "item"
+				item: "ad_astra:ice_shard"
+			}]
+			rewards: [{
+				id: "6305DD61125E4E1E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Space Station"
+			icon: "ad_astra:space_painting"
+			x: 13.0d
+			y: -2.0d
+			description: [
+				"With your newly acquired Desh, you can now create Space Stations around celestial bodies. You can create them by launching your rocket, then selecting Space Station when selecting destinations. To return to the station once it's created click Orbit instead."
+				""
+				"Is building a station required for progression? No, but it sure is cool!"
+			]
+			dependencies: ["0D0CC636458E8446"]
+			id: "0784DA52E6B2F926"
+			tasks: [
+				{
+					id: "2BFECDC9E5B60973"
+					type: "item"
+					item: "ad_astra:desh_ingot"
+					count: 32L
+				}
+				{
+					id: "757E49B7A7DB98ED"
+					type: "item"
+					item: "modern_industrialization:steel_ingot"
+					count: 32L
+				}
+				{
+					id: "7084146FAA70E7F8"
+					type: "item"
+					item: "modern_industrialization:iron_plate"
+					count: 64L
+				}
+				{
+					id: "75C2AF5F5168DCDB"
+					type: "item"
+					item: "ad_astra:desh_plate"
+					count: 32L
+				}
+			]
+			rewards: [{
+				id: "608512339B911635"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "An Alternate Way Home"
+			icon: {
+				id: "waystones:warp_stone"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.5d
+			y: -1.5d
+			description: ["If you recall, back in the Electronic Age you unlocked the ability to create a Warp Stone. You could bring a Waystone with you to the moon and be able to warp back and forth freely without having to spend resources on multiple rocket launches."]
+			dependencies: ["41EE82F6FDB2109C"]
+			id: "671F69640B982683"
+			tasks: [{
+				id: "5B6EB4A8BA770450"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "7D3BC78B32ECDAA0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 15.0d
+			y: 0.5d
+			shape: "square"
+			dependencies: ["0D0CC636458E8446"]
+			id: "545476817EE9C941"
+			tasks: [{
+				id: "6082E434CEFF1232"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_2_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 17.5d
+			y: 0.5d
+			shape: "square"
+			dependencies: ["545476817EE9C941"]
+			size: 1.5d
+			id: "299AA5584498D69A"
+			tasks: [{
+				id: "1081BAD90AF93A17"
+				type: "item"
+				item: "ad_astra:mars_globe"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 0.5d
+			shape: "square"
+			dependencies: ["299AA5584498D69A"]
+			id: "7633B2FDE567585E"
+			tasks: [{
+				id: "644C42E2C2241070"
+				type: "item"
+				item: "ad_astra:raw_ostrum"
+			}]
+		}
+		{
+			x: 22.0d
+			y: 0.5d
+			shape: "square"
+			dependencies: ["7633B2FDE567585E"]
+			id: "24993B650ABE820B"
+			tasks: [{
+				id: "684CCC3270993AD4"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_3_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 24.5d
+			y: -1.0d
+			shape: "square"
+			dependencies: ["24993B650ABE820B"]
+			size: 1.5d
+			id: "199E258B212D744F"
+			tasks: [{
+				id: "66F4E9888BA5A4DA"
+				type: "item"
+				item: "ad_astra:venus_globe"
+			}]
+		}
+		{
+			x: 24.5d
+			y: 2.0d
+			shape: "square"
+			dependencies: ["24993B650ABE820B"]
+			size: 1.5d
+			id: "234D4BC93E0C9108"
+			tasks: [{
+				id: "65742DC0ABF09BB6"
+				type: "item"
+				item: "ad_astra:mercury_globe"
+			}]
+		}
+		{
+			x: 27.0d
+			y: 0.5d
+			shape: "square"
+			dependencies: [
+				"234D4BC93E0C9108"
+				"199E258B212D744F"
+			]
+			id: "488543DD1EEAF483"
+			tasks: [{
+				id: "2CEA60D72656BF33"
+				type: "item"
+				item: "ad_astra:raw_calorite"
+			}]
+		}
+		{
+			title: "The Jet Suit"
+			x: 27.0d
+			y: -1.5d
+			dependencies: ["488543DD1EEAF483"]
+			id: "227FD6EF200D097F"
+			tasks: [
+				{
+					id: "09FFE23A4E707E00"
+					type: "item"
+					item: {
+						id: "ad_astra:jet_suit_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "75000648CAC2C18A"
+					type: "item"
+					item: {
+						id: "ad_astra:jet_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "213B5E55A9A4D329"
+					type: "item"
+					item: {
+						id: "ad_astra:jet_suit_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "776D8B9D72C35C4A"
+					type: "item"
+					item: {
+						id: "ad_astra:jet_suit_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0C6865537D4FCBF5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 29.5d
+			y: 0.5d
+			shape: "square"
+			dependencies: ["488543DD1EEAF483"]
+			id: "15342C97054EE216"
+			tasks: [{
+				id: "552F4F1242708E2F"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_4_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Glacio"
+			x: 32.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Interstellar"
+			dependencies: ["15342C97054EE216"]
+			size: 2.0d
+			id: "52A5935A0A4740C3"
+			tasks: [{
+				id: "1A49C64C22097EE8"
+				type: "item"
+				item: "ad_astra:glacio_globe"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

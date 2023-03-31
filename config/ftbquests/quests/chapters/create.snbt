@@ -1,0 +1,48 @@
+{
+	id: "0B7DC5CF240DF210"
+	group: "05A88037F88880CD"
+	order_index: 5
+	filename: "create"
+	title: "Create"
+	icon: "create:wrench"
+	subtitle: ["Do as you will"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.0d
+			y: 0.5d
+			description: ["Andesite Alloy is the basis of the Create mod. Don't make too much at the beginning, as you will unlock a more efficient recipe once you have a Mechanical Mixer and Basin."]
+			dependencies: ["0548E4DEA1B29E91"]
+			id: "632520CC26B43DD5"
+			tasks: [{
+				id: "3B5B2247CE93D71B"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: "Chapters vs. Mod Sections"
+			x: -3.0d
+			y: -1.5d
+			description: [
+				"While chapters will highlight what must be done to progress, the mod sections, such as the one you are currently in, are to show off everything capable by the mod."
+				""
+				"The Create mod is very expansive, and while only acting as a slight gate into Modern Industrializations, there is so much more you can do with it. From trains, to ore processing, to automating potions and other materials, there is so much you can do. If you've never played around with the Create mod I'd highly recommend it, but its usage is not required to finish this pack."
+			]
+			dependencies: ["632520CC26B43DD5"]
+			id: "2A36D1F22B7AF9B3"
+			tasks: [{
+				id: "76CD0CE55AE54E4E"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "7E331507A58AC9FF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}

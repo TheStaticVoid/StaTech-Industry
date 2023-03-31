@@ -55,7 +55,7 @@
 	carrot: {
 		// Enables the carrot style module.
 		// default: false
-		enable: false
+		enable: true
 		// Specifies an offset in health points (half hearts) from default health.
 		// Default health in vanilla is 20 but that may change through mods like Origins.
 		// The resulting value will be floored before use.
@@ -75,18 +75,14 @@
 	// 
 	// Otherwise the mod has to be installed on the client as well.
 	items: {
-		// Whether to use Polymer for server-side only usage.
-		// Using Polymer in other scenarios is not recommended.
-		// default: false
-		use-polymer: false
 		// Enable a low end food container that can be crafted from paper and holds up to 5 stacks of food.
 		// default: false
-		enable-paper-bag: false
+		enable-paper-bag: true
 		// Enable a food container that can be crafted from planks and gold and holds up to 9 stacks of food.
 		// default: false
-		enable-lunch-box: false
+		enable-lunch-box: true
 		// Enable a food container that can be crafted from bamboo and holds up to 9 stacks of food.
 		// default: false
-		enable-picnic-basket: false
+		enable-picnic-basket: true
 	}
 }

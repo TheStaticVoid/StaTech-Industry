@@ -1,0 +1,898 @@
+{
+	id: "0D2887F1B436D1D7"
+	group: "592A9A0E9A131D28"
+	order_index: 0
+	filename: "1__stone_age"
+	title: "1 - Getting Started"
+	icon: "minecraft:stone"
+	subtitle: ["Gotta start somewhere"]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Stone Age"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "You're now a caveman!"
+			description: ["Pretty much following vanilla progression here for a bit. I'll even give you a bit extra to help build a simple shelter or some more tools."]
+			dependencies: ["045C683BF6E216CB"]
+			id: "300516B03C1580A2"
+			tasks: [{
+				id: "7CC55C91038E66C3"
+				type: "item"
+				title: "Any Cobblestone"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:stone_crafting_materials"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "5833D9B6DF294CC9"
+					type: "item"
+					item: "minecraft:cobblestone"
+					count: 32
+				}
+				{
+					id: "208E635036EE41FF"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Punch Trees"
+			x: -1.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "The noble start of any playthrough"
+			description: ["This is the start to 99% of any playthrough. You can explore the world a bit, but eventually you will need to make some tools."]
+			id: "045C683BF6E216CB"
+			tasks: [{
+				id: "229519744915FFDA"
+				type: "item"
+				title: "Any Logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "511F947A825BC323"
+					type: "item"
+					item: "minecraft:oak_log"
+					count: 16
+				}
+				{
+					id: "63B238BB617EDB85"
+					type: "item"
+					item: "minecraft:oak_sapling"
+					count: 4
+				}
+				{
+					id: "201A1ACB23F82D5A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Prepare for Create"
+			x: 1.5d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"The early game of this pack is focused around the Create modpack. For this, you will need a lot of Andesite. Luckily, this quest rewards you with some extra."
+				""
+				"For those of you who don't like Create, I've kept the early game Create requirements low. You can choose to pursue Create further after you pass the parts where it is required, but fully progressing in Create is not needed to beat the pack."
+			]
+			dependencies: ["300516B03C1580A2"]
+			id: "0548E4DEA1B29E91"
+			tasks: [{
+				id: "1DFDBFD89EC6C8D3"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "05A64FF589146729"
+					type: "item"
+					item: "minecraft:andesite"
+					count: 32
+				}
+				{
+					id: "7B5B586AAE607B0F"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Andesite Alloy"
+			x: 3.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Andesite Alloy is the most important material you will need for early game Create. The crafting cost can be a little steep at first, but once you create a Mixer the cost will drop significantly."
+				""
+				"The Wrench and Goggles will be your essential tools when using the Create mod. The Wrench allows you to shift-right click to instantly harvest any Create block, right-click to rotate, or adjust certain settings on a block. The Goggles, when worn, will allow you to see the total stress units used / available."
+			]
+			dependencies: ["0548E4DEA1B29E91"]
+			id: "13D6BD373F034937"
+			tasks: [{
+				id: "4278485AD9706147"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "44ACA01BA7C36F50"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "7C0E187609F7E623"
+					type: "item"
+					item: "create:goggles"
+				}
+				{
+					id: "0B8CFA27D2F6BFE0"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Rotational Power"
+			x: 6.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "You spin me right round"
+			description: ["Water Wheels make up the basis of your early game rotational force production. If you aren't familiar with Create's \"power\" generation, I recommend reading the next quest or checking the Ponder menu by holding W on the Create items you've made so far."]
+			dependencies: ["6CA102659DCBDB31"]
+			id: "288AF08BF01DAADF"
+			tasks: [{
+				id: "5C74BD16A7F70B45"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [{
+				id: "0F05E94511FD478F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Windmill"
+			icon: "create:windmill_bearing"
+			x: 6.5d
+			y: -1.5d
+			shape: "rsquare"
+			subtitle: "High stress, low speed"
+			description: ["While the rotational speed of the water wheel is decent, they don't provide a high stress unit capacity. If you're constantly overstressing your machines, perhaps you should invest in some Windmills. These fantastic rotational power generators offer some of the best in terms of stress unit capacity."]
+			dependencies: ["288AF08BF01DAADF"]
+			id: "2878CB8F8C4B8B91"
+			tasks: [
+				{
+					id: "65D2FAC25DDF161B"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "2D192B219137AE28"
+					type: "item"
+					item: "create:white_sail"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "616951A31FC53E83"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Big and Little Cogs"
+			x: 4.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "CogChamp"
+			description: [
+				"Cogs are the basis of rotational power in the Create mod. You will need them to transfer kinetic forces from your generators to your Create machines. "
+				""
+				"Don't worry, we'll make a generator to use soon enough."
+			]
+			dependencies: ["13D6BD373F034937"]
+			id: "6CA102659DCBDB31"
+			tasks: [
+				{
+					id: "338250AFF61DDAF8"
+					type: "item"
+					item: "create:cogwheel"
+					count: 4L
+				}
+				{
+					id: "46F0471E68486F26"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "0ACDA2913BEA1838"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Stress Units and Rotational Force"
+			x: 6.0d
+			y: 1.5d
+			shape: "rsquare"
+			description: [
+				"Before you continue, it's pivotal to know how the rotation and stress units work in Create."
+				""
+				"The mod developers of Create spent a lot of time creating a wonderful in-game tutorial system called Ponder. If you look in REI, or have create items in your inventory, you can hold W to \"Ponder\" the item to view a nice in-game diagram of how it's used."
+				""
+				"As a basic breakdown, stress units are the total amount of stress your rotational network (cogs, shafts, machines, etc.) can handle. Rotational speed is how fast the shafts/cogs spin in your network and how fast your machines run. Higher rotational power incurs a higher amount of stress units to compensate. "
+			]
+			dependencies: ["288AF08BF01DAADF"]
+			id: "58577BDF79E67EA7"
+			tasks: [{
+				id: "6304982F30415E1A"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "6DB314EB575EB829"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Increase/Decrease Rotation Speed"
+			x: 4.5d
+			y: 1.5d
+			shape: "rsquare"
+			description: [
+				"You can use cogwheels to increase the rotation speed by connecting a smaller cogwheel to a large cogwheel. You can then attach another large cogwheel to the front of the small cogwheel and continue the process. Doing this will increase the overall rotation speed. Doing the inverse will lower the speed. "
+				""
+				"Note that increases the rotational speed will also mean your machines require more stress units on the network to operate."
+			]
+			dependencies: ["6CA102659DCBDB31"]
+			id: "58FEBEF013463B80"
+			tasks: [{
+				id: "0FC2EC17F4A216F2"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "268AD6C4E249488A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.5d
+			shape: "rsquare"
+			description: ["The Hand Crank is another alternative form of generating rotational force. Extended use of this will leave the user very hungry, so it's more optimal to have a windmill / water wheel generate your power."]
+			dependencies: ["288AF08BF01DAADF"]
+			id: "654B073CCFC06D24"
+			tasks: [{
+				id: "5BB4A00DD7989348"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+			rewards: [{
+				id: "2072F21723B12313"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Under Pressure"
+			description: ["Metal plates are going to be very important moving forward. It's highly recommended that you prioritize making a Mechanical Press."]
+			dependencies: ["31EA279E4F99BE53"]
+			id: "63276C644789068A"
+			tasks: [{
+				id: "3092F3C88A1F8196"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [
+				{
+					id: "610E14DF0F5137AB"
+					type: "item"
+					item: "modern_industrialization:iron_plate"
+					count: 4
+				}
+				{
+					id: "6DF3C7C960FAA91A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Mechanical Mixer"
+			icon: "create:mechanical_mixer"
+			x: 10.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Mix, swirl, mix"
+			description: [
+				"Creating a Mechanical Mixer and a Basin will allow you to create Andesite Alloy for much cheaper. It will also be necessary to progress into the next chapters."
+				""
+				"As a quest reward, I've given you a new friend. Name it whatever you'd like, but know that he's very helpful if you place him below your Basin and feed him flammable materials. This will allow you to use recipes that require the Basin to be Heated."
+			]
+			dependencies: ["63276C644789068A"]
+			id: "08A908B359D67DA6"
+			tasks: [
+				{
+					id: "50EC0E9E209680AD"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "364CA046142A7A37"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+			rewards: [
+				{
+					id: "67EC919B3FF01EEE"
+					type: "item"
+					item: "create:andesite_alloy"
+					count: 16
+				}
+				{
+					id: "50F5FF4F1608AFFA"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+				{
+					id: "56F36E1FC77C9051"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Bronze Ingot"
+			x: 12.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Your first real alloy"
+			description: [
+				"With Bronze, you can now pretend to be an early 3000 B.C. human!"
+				""
+				"Combining raw copper and tin ores in a Heated Basin will create Bronze. This is an essential material to early Modern Industrialization."
+				""
+				"The ratio for Bronze Ingots isn't the best in the Create Mixer, but you will soon unlock a better ratio with your first steam machines."
+			]
+			dependencies: ["08A908B359D67DA6"]
+			size: 1.5d
+			id: "2D6BC53B4C3E06F0"
+			tasks: [{
+				id: "56D00DC36CAED6E5"
+				type: "item"
+				item: "modern_industrialization:bronze_ingot"
+			}]
+			rewards: [{
+				id: "038533518022F50F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 15.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "More like Fabric Hammer"
+			description: [
+				"With the Forge Hammer crafted, you have completed your first chapter. The Forge Hammer is essential to progressing in Modern Industrialization."
+				""
+				"While also being used to craft essential materials, it also allows you to duplicate your ores. Check REI for everything you can do with it."
+			]
+			dependencies: ["2D6BC53B4C3E06F0"]
+			size: 2.0d
+			id: "59442F8EBE6F9F06"
+			tasks: [{
+				id: "41F68D0F454BDC60"
+				type: "item"
+				item: "modern_industrialization:forge_hammer"
+			}]
+			rewards: [
+				{
+					id: "370E333085F80CC7"
+					type: "item"
+					item: {
+						id: "modern_industrialization:iron_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "67C65039D27861DF"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: 1.5d
+			shape: "rsquare"
+			description: [
+				"The quest rewards are very generous with distribution experience, and you might want to store that before you lose it in an untimely manner."
+				""
+				"The first step in storing your experience is mixing together some Soulcopper Blend. The questline for the rest of the XP Storage is in its own seperate tab on the left."
+				""
+				"You can also wait until you have your first Bronze Mixer, as it provides a better ratio for this dust, making any of the XP Storage options much cheaper."
+			]
+			dependencies: ["08A908B359D67DA6"]
+			id: "11B147A60B77ED4A"
+			tasks: [{
+				id: "59FC8E066DD82AE6"
+				type: "item"
+				item: "xps:soul_copper_blend"
+			}]
+			rewards: [{
+				id: "7EF0E53931C4D470"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			shape: "square"
+			description: ["Andesite Casings make up the basis of most Create machines. To create an Andesite Casing, right click with an Andesite Alloy on any Stripped Log."]
+			dependencies: ["288AF08BF01DAADF"]
+			id: "31EA279E4F99BE53"
+			tasks: [{
+				id: "01BEB06A15AF17AC"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+			rewards: [{
+				id: "3BBE76CE68C668BC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Drawers"
+			x: -2.0d
+			y: 2.5d
+			shape: "rsquare"
+			description: ["You'll be collecting a lot of materials through your playthrough. It may be wise to invest in some storage that can hold a lot of a single item, such as wood, cobblestone, iron, etc. to help in keeping yourself organized."]
+			dependencies: ["045C683BF6E216CB"]
+			id: "2B2E39F057813993"
+			tasks: [{
+				id: "74E53A7BD8B94CFB"
+				type: "item"
+				title: "Any Drawers"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "extended_drawers:drawers"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6FF1EFC40868552E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.5d
+			shape: "rsquare"
+			description: [
+				"If you can find some cows near where you spawned you can kill them for their leather and make yourself a backpack."
+				""
+				"The backpack can be worn on your back and provides 9 item slots. Great for all the stuff you'll be collecting."
+			]
+			dependencies: ["045C683BF6E216CB"]
+			id: "52F75C5E2E606991"
+			tasks: [{
+				id: "425EDF48099F439E"
+				type: "item"
+				item: "inmis:frayed_backpack"
+			}]
+			rewards: [{
+				id: "5AEC2AD214EB109B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.5d
+			shape: "rsquare"
+			description: ["Why lug around a crafting table everywhere you go when you could instead make a Pocket Crafting Table. Using this item, you will have access to a 3x3 crafting grid anywhere you go!"]
+			dependencies: ["045C683BF6E216CB"]
+			id: "3FD7E4529B0A24EC"
+			tasks: [{
+				id: "3E7C1308D15E5EE1"
+				type: "item"
+				item: "kibe:pocket_crafting_table"
+			}]
+			rewards: [{
+				id: "7744815D8C737BC8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Spikes"
+			x: -1.0d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"Spikes will damage any entity that step on it. Each tier has a different effect on the mobs that die from it."
+				""
+				"Stone Spikes - Mobs will drop nothing"
+				"Iron Spikes - Mobs will drop their regular loot"
+				"Gold Spikes - Mobs will only drop experience"
+				"Diamond Spikes - Mobs will drop both loot and experience"
+			]
+			dependencies: ["300516B03C1580A2"]
+			id: "25291CED32101F14"
+			tasks: [{
+				id: "6422F0DC64D57FBB"
+				type: "item"
+				title: "Any Spikes"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:kibe_spikes"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6978555378F31F38"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			shape: "rsquare"
+			description: ["Wooden Buckets act just like normal buckets with the only downside being they cannot pick up hot liquids such as lava."]
+			dependencies: ["045C683BF6E216CB"]
+			id: "553FA47CB9256B2A"
+			tasks: [{
+				id: "670FE6D387A215F2"
+				type: "item"
+				item: "kibe:wooden_bucket"
+			}]
+			rewards: [{
+				id: "566168388EB04C97"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			shape: "rsquare"
+			description: ["The Torch Sling uses torches from your inventory as ammo. Torches are placed where they land."]
+			dependencies: ["045C683BF6E216CB"]
+			id: "6B73816AE3918455"
+			tasks: [{
+				id: "31AC1EE1BE10D2CD"
+				type: "item"
+				item: "kibe:torch_sling"
+			}]
+			rewards: [{
+				id: "62DEC43E061D23B2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"Have too much cobble? I wouldn't recommend trashing it, but if you really really want to, you can create a Trash Can to throw away items."
+				""
+				"BE CAREFUL! Items thrown away CANNOT be restored."
+			]
+			dependencies: ["300516B03C1580A2"]
+			id: "5F1AEEB670B6EE12"
+			tasks: [{
+				id: "3F99241ECE62A3E8"
+				type: "item"
+				item: "kibe:trash_can"
+			}]
+			rewards: [{
+				id: "13DF2FE5C263A459"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			shape: "rsquare"
+			description: ["Throw stuff away on the go!"]
+			dependencies: ["5F1AEEB670B6EE12"]
+			id: "0AF85D22E0491F02"
+			tasks: [{
+				id: "172F02A7EA7B9FE0"
+				type: "item"
+				item: "kibe:pocket_trash_can"
+			}]
+			rewards: [{
+				id: "344F299C4C060276"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			shape: "rsquare"
+			description: ["Stores exactly 1 stack of items. Can be useful in some automations."]
+			dependencies: ["045C683BF6E216CB"]
+			id: "01AEE5C702B4D1CB"
+			tasks: [{
+				id: "6304E3A65BDD3BFC"
+				type: "item"
+				item: "ironchests:dirt_chest"
+			}]
+			rewards: [{
+				id: "3D463FADE28BA553"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 12.0d
+			y: 5.5d
+			shape: "rsquare"
+			description: ["The XP Storage block is the core block that stores Experience."]
+			dependencies: [
+				"1C23C4B16844849F"
+				"1BE89CC00209CD24"
+			]
+			size: 1.5d
+			id: "48566D7F1724EB6B"
+			tasks: [{
+				id: "120A355F61514921"
+				type: "item"
+				item: "xps:block_xp_obelisk"
+			}]
+			rewards: [{
+				id: "01D679FB4DCE3993"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 12.0d
+			y: 3.5d
+			shape: "rsquare"
+			description: ["Smelting up your Soulcopper Blend will yield a Soulcopper Ingot"]
+			dependencies: ["11B147A60B77ED4A"]
+			id: "1BE89CC00209CD24"
+			tasks: [{
+				id: "5E786A7E60747D07"
+				type: "item"
+				item: "xps:soul_copper_ingot"
+			}]
+			rewards: [{
+				id: "542323ABADB36CB3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.5d
+			y: 5.5d
+			shape: "rsquare"
+			description: [
+				"The XP Transfer is used to transfer experience to the XP Storage. To swap between push and pull, sneak right-click with the item in your hand."
+				""
+				"Crafting the XP Storage consumes an XP Transfer, so this quest gives you an extra!"
+			]
+			dependencies: ["5CFF5EB2DF342268"]
+			id: "1C23C4B16844849F"
+			tasks: [{
+				id: "3C318C6F1B2AEC5B"
+				type: "item"
+				item: "xps:xp_remover"
+			}]
+			rewards: [
+				{
+					id: "39DD03B0CD4590AA"
+					type: "item"
+					item: "xps:xp_remover"
+				}
+				{
+					id: "753E071BDA40C026"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: 3.5d
+			shape: "rsquare"
+			description: ["By melting down any Enchanted Book, you can create XP Dust. "]
+			dependencies: ["11B147A60B77ED4A"]
+			id: "5CFF5EB2DF342268"
+			tasks: [{
+				id: "7FEA47FB35EE13E6"
+				type: "item"
+				item: "xps:xp_dust"
+			}]
+			rewards: [{
+				id: "5CCDC6D70A97A042"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 8.5d
+			y: 5.5d
+			shape: "rsquare"
+			description: ["Combining Blaze Rods with XP Dust will create an XP Rod."]
+			dependencies: ["5CFF5EB2DF342268"]
+			id: "7B5620C673B4A11C"
+			tasks: [{
+				id: "058E3B21C55EFE89"
+				type: "item"
+				item: "xps:xp_rod"
+			}]
+			rewards: [{
+				id: "61921A263E64F091"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.5d
+			y: 7.5d
+			shape: "rsquare"
+			description: [
+				"The XP Storage Inspector inspects XP Storage blocks. Right-clicking the XP Storage it will show you:"
+				"- Owner"
+				"- Stored XP"
+				"- Fill level"
+				"- Player XP"
+			]
+			dependencies: [
+				"7B5620C673B4A11C"
+				"48566D7F1724EB6B"
+			]
+			id: "7EA0E0394E00D73F"
+			tasks: [{
+				id: "695B186C1C6E74CD"
+				type: "item"
+				item: "xps:inspector"
+			}]
+			rewards: [{
+				id: "7C5222CDDFBA884D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Lock \\& Key"
+			x: 7.5d
+			y: 7.5d
+			shape: "rsquare"
+			description: [
+				"The Lock is used to lock the XP Storage. While locked, fluid extraction is disabled."
+				""
+				"The Key is used to unlcok the XP Storage."
+			]
+			dependencies: ["7B5620C673B4A11C"]
+			id: "09F4687F1FD4C914"
+			tasks: [
+				{
+					id: "748FE42CD3287D08"
+					type: "item"
+					item: "xps:lock"
+				}
+				{
+					id: "50F70D8245C5C204"
+					type: "item"
+					item: "xps:key"
+				}
+			]
+			rewards: [{
+				id: "38863C7AEB8A7162"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 14.0d
+			y: 5.5d
+			shape: "rsquare"
+			description: [
+				"XP Berries can be used on XP Storage to insert some Experience."
+				""
+				"XP Berries can always be eaten. If you sneak while eating them they drop XP-Orbs to repair items with Mending."
+			]
+			dependencies: ["453B9CA792F2A521"]
+			id: "2EA9DB5966BD8CCB"
+			tasks: [{
+				id: "7815C84AEACAD539"
+				type: "item"
+				item: "xps:xp_berries"
+			}]
+			rewards: [{
+				id: "07E15FD08C596AC5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 14.0d
+			y: 3.5d
+			shape: "rsquare"
+			description: ["XP Berries can be used to generate passive experience. Can be planted on Soul Soil."]
+			dependencies: ["1BE89CC00209CD24"]
+			id: "453B9CA792F2A521"
+			tasks: [{
+				id: "314893B207C062D5"
+				type: "item"
+				item: "xps:xp_berries_seeds"
+			}]
+			rewards: [{
+				id: "0FD75B394EB8F129"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 12.0d
+			y: 7.5d
+			shape: "rsquare"
+			description: ["Use an Empty Bucket on the XP Storage to fill it. You can right click with a full bucket to empty it into the XP Storage."]
+			dependencies: ["48566D7F1724EB6B"]
+			id: "418B2D30B385C75E"
+			tasks: [{
+				id: "4AEB59F5A94D4950"
+				type: "item"
+				item: "xps:xp_bucket"
+			}]
+			rewards: [{
+				id: "42C3DAB90E1FC11E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}

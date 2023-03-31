@@ -1,0 +1,2562 @@
+{
+	id: "713C181A74B14589"
+	group: "592A9A0E9A131D28"
+	order_index: 1
+	filename: "2__the_steam_age"
+	title: "2 - Steam Age"
+	icon: "modern_industrialization:bronze_boiler"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Welcome to Chapter 2"
+				""
+				"The majority of this chapter will be focused on getting your first Bronze Machines and Steel Ingots using Steam as power."
+			]
+			dependencies: ["59442F8EBE6F9F06"]
+			id: "5EDE88BDA0182BD7"
+			tasks: [{
+				id: "0173357011F010FF"
+				type: "item"
+				item: "modern_industrialization:forge_hammer"
+			}]
+			rewards: [{
+				id: "1D807100C2C4475B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"Now you may want to consider creating a Steam Mining Drill to obtain the ores directly without needing a Silk Touch pickaxe."
+				""
+				"The Steam Mining Drill can mine 3x3 blocks at the time, perfect for your early game mining needs. The Steam Mining Drill requires both water and solid fuel (for example coal)."
+				""
+				"Right-click a water source to fill it with water, and make sure to place some fuel in your drill by right-clicking the fuel items on it in your inventory. The water block is not consumed to fill the drill, but will be drained alongside the fuel when it is used to mine."
+			]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "0F56A61DD1E8BC5D"
+			tasks: [{
+				id: "36E79689C51B2EC4"
+				type: "item"
+				item: "modern_industrialization:steam_mining_drill"
+			}]
+			rewards: [{
+				id: "14475B7432055EA1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"Bronze Barrels can be used to store and move 32 stacks of one item. If you break a barrel it will keep its stored contents."
+				""
+				"Right-click on a barrel item with an item to insert it into the barrel. Left-click the barrel to extract some items from it."
+			]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "60602FA8424D3937"
+			tasks: [{
+				id: "5AAB047D6E420E3C"
+				type: "item"
+				item: "modern_industrialization:bronze_barrel"
+			}]
+			rewards: [{
+				id: "3C1FCF1B266E0161"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"Bronze Tanks can store 4 buckets of fluid each, and you can use them to interact with machines or place them in the world."
+				""
+				"When placed in the world, you can right-click them with a bucket or other tanks to transfer fluids. They maintain their contents when broken, and you can stack them if they have the same contents."
+			]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "61F04B75BE5F5E17"
+			tasks: [{
+				id: "4E89E8F0CE2FF3C3"
+				type: "item"
+				item: "modern_industrialization:bronze_tank"
+			}]
+			rewards: [{
+				id: "517D98180BC11378"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Fire Clay Bricks"
+			icon: "modern_industrialization:fire_clay_bricks"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			description: ["Smelt up your newly created Fire Clay Dusts and then combine them into a crafting table to get Fire Clay Bricks."]
+			dependencies: ["01E58DD70F1D9B15"]
+			id: "105E5F967328888F"
+			tasks: [{
+				id: "2FE274205C6F3A35"
+				type: "item"
+				item: "modern_industrialization:fire_clay_bricks"
+				count: 3L
+			}]
+			rewards: [{
+				id: "265502E377F0C170"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Fire Clay Dust"
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Fire Clay Dust can be made by mixing two Clay Balls and two Brick Dusts in a Create Mechanical Mixer."
+				""
+				"You can get Brick Dust by smashing bricks in the Forge Hammer. Similar to Bronze, mixing these dusts in a Create Mechanical Mixer has a worse output ratio than when you unlock the Bronze Mixer."
+				""
+				"You're going to need 12 dust for your first boiler, but it may be wise to make some extra."
+			]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "01E58DD70F1D9B15"
+			tasks: [{
+				id: "6CA49EAEA9276BEB"
+				type: "item"
+				item: "modern_industrialization:fire_clay_dust"
+				count: 12L
+			}]
+			rewards: [{
+				id: "5284EF681F6D3C5A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Steampunk!"
+			description: [
+				"The steam machines you will soon be crafting will require steam to function. To create steam, you will need to create the Bronze Boiler. "
+				""
+				"It probably looks expensive to you right now, but don't forget that you can triple ores with the Forge Hammer. As you gain access to machines the recipes will become cheaper. "
+				""
+				"The boiler will slowly use fuel to heat itself up. When it's hot enough, it will start to produce steam."
+				""
+				"Don't worry, the boiler will not void your fuel if the Steam output is full. You can input water the boiler with a bucket or with pipes."
+			]
+			dependencies: ["105E5F967328888F"]
+			size: 1.5d
+			id: "77EAB1D011541800"
+			tasks: [{
+				id: "02F23CAB7D46B36C"
+				type: "item"
+				item: "modern_industrialization:bronze_boiler"
+			}]
+			rewards: [{
+				id: "6682BCFCCACC02CA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"You might be wondering if there's a way to automatically input water into the Bronze Boiler instead of by hand with buckets, and there is!"
+				""
+				"Surrounding a Bronze Water Pump horizontally with water will have it start producing water for 1 EU/t."
+				""
+				"The pump will produce 1/8th of a bucket of water for every adjacent water source every 5 seconds, for a max output of 1 bucket / 5 seconds."
+				""
+				"You don't have access to pipes right now, so you can place your Steam Boiler directly on top for now."
+			]
+			dependencies: ["77EAB1D011541800"]
+			id: "4B5B04123C38AA37"
+			tasks: [{
+				id: "44CDB79CFDED9A1C"
+				type: "item"
+				item: "modern_industrialization:bronze_water_pump"
+			}]
+			rewards: [{
+				id: "70FD7DC69CE3EC13"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Alternative Water Pump"
+			icon: "create:mechanical_pump"
+			x: 7.0d
+			y: -2.0d
+			shape: "rsquare"
+			description: ["If you'd rather save on some materials, you can use the Create mod's pump to pump water from an infinite pool and pipe it into the boiler directly."]
+			dependencies: ["77EAB1D011541800"]
+			id: "4F22C9E20AB004D9"
+			tasks: [
+				{
+					id: "003BFCFEBEF35993"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+				{
+					id: "2AE682F5D94BC842"
+					type: "item"
+					item: "create:fluid_pipe"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "4B638E6A6324C45B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Interacting with Machines"
+			icon: "modern_industrialization:wrench"
+			x: 6.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"Now that you have a boiler built, you can use it to power other steam machines. The boiler will automatically produce and send steam to adjacent machines, up to 8 millibuckets per tick. You will soon learn about pipes to extend the range of steam distribution."
+				""
+				"Bronze machines can only process recipes up to 2 EU/t. 1mB of steam is equivalent to 1 EU, meaning a boiler at max temperature can power 4 machines simultaneously."
+				""
+				"Steam machines will accept inputs from any side, be it items, steam or another fluid. You can lock their slots by clicking on the lock in the interface. Locked slots only accept one type of item or fluid."
+				""
+				"Every machine has an output side, and you can enable auto-output from the interface. Hoppers, pipes, and other automation can extract output items from any side, of course. You can also reduce the maximum number of items in a slot by scrolling."
+				""
+				"Using a wrench, you can rotate any machine by right-clicking. You can rotate the output side by sneaking while you shift-click."
+				""
+				"NOTE: Breaking a machine with the wrench WILL NOT drop it. Use a pickaxe for that!"
+			]
+			dependencies: ["77EAB1D011541800"]
+			id: "343C68866C58ADC3"
+			tasks: [{
+				id: "239655E16B64B677"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [
+				{
+					id: "2014045C4DB4C4D1"
+					type: "item"
+					item: "modern_industrialization:wrench"
+				}
+				{
+					id: "429CB00FD9A4998B"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Fluid Pipes"
+			x: 8.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Let the spaghetti commence"
+			description: [
+				"Pipes are used in the recipes of some machines, but they can also be placed in the world. Up to 3 pipes can fit in a single block."
+				""
+				"Pipes of different colors will not connect."
+				""
+				"Right-clicking a pipe with a wrench will change the connection type, shift-right-clicking will drop the pipe."
+				""
+				"Fluid Pipes can only contain one type of fluid, and by default they won't connect to empty pipes or blocks. You can force a connection by right-clicking the center of the pipe with the wrench, or by right-clicking a block with a pipe in your hand: it will connect, but not consume the item in your hand."
+				""
+				"The different types of pipes don't work exactly the same way. Every tick, Fluid Pipes will try to evenly extract for all connected blocks, and then try to insert that evenly. "
+			]
+			dependencies: ["77EAB1D011541800"]
+			id: "396573B9EAE57B42"
+			tasks: [{
+				id: "6F720BA2AF1DDBAD"
+				type: "item"
+				title: "Any MI Fluid Pipe"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "modern_industrialization:fluid_pipes"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "119662EE60660195"
+					type: "item"
+					item: "modern_industrialization:fluid_pipe"
+					count: 16
+				}
+				{
+					id: "48E6E1E9570EBFCA"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Fluid Pipe Speed"
+			x: 9.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"Each fluid pipe has an internal buffer of exactly one bucket (1000 millibuckets). When you connect multiple pipes directly, they become linked and share their internal storage. "
+				""
+				"How much fluid is transferred every tick is then bounded by the total capacity of the network. For example, 25 fluid pipes linked together can transfer up to 25000 mb/t of fluid - assuming you can produce that much fluid of course!"
+				""
+				"Note that you might be limited by the transfer rates of the tanks/machines the pipes are connected to."
+			]
+			dependencies: ["396573B9EAE57B42"]
+			id: "0AC4D9039788F1C6"
+			tasks: [{
+				id: "777428835753C221"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "5DE8E1C0DDD00672"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "More bang for your buck"
+			description: [""]
+			dependencies: ["343C68866C58ADC3"]
+			id: "73AF6917A7A85244"
+			tasks: [{
+				id: "694AFF81EF1DB9B4"
+				type: "item"
+				item: "modern_industrialization:bronze_macerator"
+			}]
+			rewards: [{
+				id: "43D82687BF2096AC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 7.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "Smoosh"
+			description: [
+				"The Bronze Compressor will turn ingots into plates at a 1:1 ratio. It can also turn each double ingot into 2 plates."
+				""
+				"Create's Mechanical Press is not powerful enough for some recipes, so you will want to craft one of these."
+				""
+				"I would recommend making this one first."
+			]
+			dependencies: ["343C68866C58ADC3"]
+			id: "62474684DD7A1B7C"
+			tasks: [{
+				id: "246E6C87628C9A93"
+				type: "item"
+				item: "modern_industrialization:bronze_compressor"
+			}]
+			rewards: [{
+				id: "6821944FF1CC38EA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.0d
+			shape: "rsquare"
+			subtitle: "A more efficient furnace"
+			description: ["The Bronze Furnace is a furnace that accepts Steam instead of traditional fuels. It is as slow as a normal furnace, but is 10 times more fuel efficient due to using Steam."]
+			dependencies: ["343C68866C58ADC3"]
+			id: "112E7B1922E2CCC3"
+			tasks: [{
+				id: "4DADF925D4C73783"
+				type: "item"
+				item: "modern_industrialization:bronze_furnace"
+			}]
+			rewards: [{
+				id: "6D2E1F00B925612E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "Mixing it up!"
+			description: ["The Bronze Mixer will help you mix dusts, giving you a better ratio for Bronze, Fire Clay, and Uncooked Steel. It can also create Cobblestone and Clay."]
+			dependencies: ["343C68866C58ADC3"]
+			id: "693368CF3E13AB7A"
+			tasks: [{
+				id: "7FBC0263B2E87A16"
+				type: "item"
+				item: "modern_industrialization:bronze_mixer"
+			}]
+			rewards: [{
+				id: "28251D12F2D4E469"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "Bzzzzz"
+			description: [
+				"The Bronze Cutting Machine will give you better ratios for bolts, gears, rings and rods. It uses a little bit of lubricant every time."
+				""
+				"The Cutting Machine is also useful for automatically chiseling blocks, getting better ratios for wood, and many other things. Check out the REI recipes for it, it's quite expansive!"
+				""
+				"Until you have a Coke Oven, you don't have any Lubricant, so maybe wait until you have access to Creosote before making this?"
+			]
+			dependencies: ["343C68866C58ADC3"]
+			id: "3730B6FAEF7DAA37"
+			tasks: [{
+				id: "1F17A3F1DD5F141B"
+				type: "item"
+				item: "modern_industrialization:bronze_cutting_machine"
+			}]
+			rewards: [{
+				id: "501A101C89F49B59"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Coke Oven"
+			icon: "modern_industrialization:coke_oven"
+			x: 7.5d
+			y: 7.5d
+			shape: "square"
+			subtitle: "Your first multiblock machine!"
+			description: [
+				"Once you have had enough of the bronze machines, you can start working toward making Steel. The ultimate goal is to be able to build the quarry, a multiblock that will dig ores for you."
+				""
+				"The first step in Steel production is to make Coke by heating coal without oxygen. To do this, you will need to make the Coke Oven multiblock. The requirements for building this match directly to the requirements of this quest."
+				""
+				"The Coke Oven block has the role of the controller. Every multiblock is managed by a controller, but you usually cannot I/O from the controller directly: all input and output goes through the hatches. We need a fluid input because the coke oven is powered by steam, we need an item input for the coal and output for the coke."
+				""
+				"If you're having trouble forming the multiblock, hold W on the Coke Oven in your inventory to view the Ponder scene for the multiblock, additionally you can hold the Wrench to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
+				""
+				"Once the Coke Oven says Shape Valid, fill the fluid input hatch with Steam, put Coal in the Item Input Hatch and you're good to go!"
+				""
+				"Coke will be very useful for steel, but it also is a powerful fuel as it lasts four times as long as coal."
+			]
+			dependencies: ["4AF847F8B403E6E3"]
+			dependency_requirement: "one_completed"
+			size: 2.0d
+			id: "4AD151B1DCA26F4F"
+			tasks: [
+				{
+					id: "551347B33934D92B"
+					type: "item"
+					item: "modern_industrialization:coke_oven"
+				}
+				{
+					id: "6538C7F3D5B94551"
+					type: "item"
+					item: "minecraft:bricks"
+					count: 21L
+				}
+				{
+					id: "7DEB4014E51BC010"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "2D4861797B81DB4B"
+					type: "item"
+					title: "Any Item Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+				}
+				{
+					id: "71B2EAB4ACB80134"
+					type: "item"
+					title: "Any Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "0F764BE368EF2638"
+					type: "item"
+					item: "minecraft:coal"
+					count: 64
+				}
+				{
+					id: "38FCDC56E28D3670"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 5.5d
+			shape: "square"
+			description: ["Individually Bricks need to be packaged down into Brick blocks. You can do this for now with a Bronze Compressor, but it's rather slow and you'll want to use a Steel Packer once it's available for a quicker recipe."]
+			dependencies: ["62474684DD7A1B7C"]
+			id: "4AF847F8B403E6E3"
+			tasks: [{
+				id: "56E0C35372B18CCB"
+				type: "item"
+				item: "minecraft:bricks"
+			}]
+			rewards: [{
+				id: "2E7888DA04E633B6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.5d
+			y: 7.5d
+			shape: "square"
+			description: [
+				"You may have noticed in the recipe for Coke that you have a chance to get Creosote. By default, since we didn't attach a Fluid Output Hatch, this fluid is voided in the process in the Coke Oven."
+				""
+				"Creosote can prove to be very useful, such as being able to make Lubricant for your Cutting Machines. If you'd like to start storing Creosote, attach a Fluid Output Hatch to the Coke Oven and pipe the fluid into tanks."
+			]
+			dependencies: ["4AD151B1DCA26F4F"]
+			id: "7A6086319A01A16C"
+			tasks: [{
+				id: "065D07068212BE85"
+				type: "item"
+				item: "modern_industrialization:creosote_bucket"
+			}]
+			rewards: [{
+				id: "59E358C33451AABF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: 5.5d
+			shape: "square"
+			description: ["By combining Creosote with Redstone Dust in a mixer you can create Lubricant. This fluid will be very useful in use of a Cutting Machine."]
+			dependencies: [
+				"7A6086319A01A16C"
+				"693368CF3E13AB7A"
+			]
+			id: "2B3D7AC154932A16"
+			tasks: [{
+				id: "7A43A42E57FDB155"
+				type: "item"
+				item: "modern_industrialization:lubricant_bucket"
+			}]
+			rewards: [{
+				id: "404D5FB42B5B4289"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Wall Sharing"
+			x: 9.5d
+			y: 7.5d
+			shape: "rsquare"
+			description: ["With multiblocks from Modern Industrialization, you can share a wall between two separate multiblocks to save on some resources. You cannot place hatches on the shared wall, as it will not form the multiblock if you do so."]
+			dependencies: ["4AD151B1DCA26F4F"]
+			id: "05EB37A2156293FE"
+			tasks: [{
+				id: "578E796E751C6439"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "506679DA46EDCEDB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Uncooked Steel Dust"
+			x: 7.5d
+			y: 10.75d
+			shape: "square"
+			description: ["Mixing your newly created Coke Dust with Iron Dust in a Mixer you can make Uncooked Steel Dust. This is the precursor for Steel, now you will need another multiblock to smelt it!"]
+			dependencies: ["738FE28369D3A550"]
+			id: "4A1086D69A76909D"
+			tasks: [{
+				id: "7ADE537482D26B2B"
+				type: "item"
+				item: "modern_industrialization:uncooked_steel_dust"
+				count: 9L
+			}]
+			rewards: [{
+				id: "313D42FF2B3F73E4"
+				type: "item"
+				item: "modern_industrialization:uncooked_steel_dust"
+				count: 9
+			}]
+		}
+		{
+			x: 7.5d
+			y: 9.5d
+			shape: "square"
+			subtitle: "Not the soda"
+			description: [
+				"Coke is a heavily improved version of coal. It's 4x as powerful as regular coal, and is a key component in creating Steel."
+				""
+				"To make Coke Dust, you will need to pass regular Coke through a Macerator."
+			]
+			dependencies: ["4AD151B1DCA26F4F"]
+			id: "738FE28369D3A550"
+			tasks: [
+				{
+					id: "4E5C896A4222A492"
+					type: "item"
+					item: "modern_industrialization:coke"
+				}
+				{
+					id: "7834284D2B2445A1"
+					type: "item"
+					item: "modern_industrialization:coke_dust"
+				}
+			]
+			rewards: [{
+				id: "1ACB8BA0724C8E54"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "modern_industrialization:steam_blast_furnace"
+			x: 7.5d
+			y: 12.5d
+			shape: "square"
+			subtitle: "Better than the vanilla version!"
+			description: [
+				"To turn your Uncooked Steel Dust into Steel Ingots, you will need a Blast Furnace. For now your Blast Furnace will be powered off of steam. "
+				""
+				"You will need the same amount of materials in the quest requirements to build the Blast Furnace. It's structure is very similar to the Coke Oven's with Bricks being replaced by Fire Clay Bricks and one extra hollow layer on top. Like before, if you forget how to build the multiblock, you can always hold your wrench to see it or hold 'W' on the Steam Blast Furnace item to view it's Ponder scene."
+			]
+			dependencies: ["4A1086D69A76909D"]
+			size: 2.0d
+			id: "578C4D10471D6EC9"
+			tasks: [
+				{
+					id: "573C9F281EB020DE"
+					type: "item"
+					item: "modern_industrialization:steam_blast_furnace"
+				}
+				{
+					id: "4CB21AEEF7B8D991"
+					type: "item"
+					item: "modern_industrialization:fire_clay_bricks"
+					count: 29L
+				}
+				{
+					id: "18716D1B45657A27"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "16380677E8B21B57"
+					type: "item"
+					title: "Any Item Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+				}
+				{
+					id: "0D65A5D3390D81CE"
+					type: "item"
+					title: "Any Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0C2ED5E8AF1EB0ED"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Steel Ingots"
+			x: 15.5d
+			y: 12.5d
+			shape: "square"
+			subtitle: "The beginning of industry"
+			description: [
+				"Now that you have Steel, you can upgrade your Bronze Machines if you want. Steel machines can process recipes up to 4 EU/t, and they will process recipes at twice the speed as long as the energy usage doesn't go above 4 EU/t. Basically they are twice as fast as Bronze Machines and they may also unlock new recipes."
+				""
+				"Additionally, Steel Hatches have more capacity than Bronze Hatches, and a multiblock with at least ONE steel hatch (regardless of item/fluid/etc.) will be upgraded to Steel tier. This means that it will go twice as fast if its energy usage wouldn't exceed 4 EU/t."
+				""
+				"A Steel Boiler will produce twice as much steam as a Bronze one, that means up to 16 EU/t, and a Steel Water Pump will produce twice as much water as its Bronze counterpart, so up to 2 buckets / 5 seconds."
+				""
+				"Steel Tanks store up to 8 buckets. Steel Pipes are equivalent to other kinds of pipes, but you can combine them with other types of pipes on the same block, so they may be useful if you really need another distinct pipe network."
+				""
+				"You can check all recipes in REI."
+			]
+			dependencies: ["578C4D10471D6EC9"]
+			size: 1.25d
+			id: "45CE5F461A159F66"
+			tasks: [{
+				id: "72B36D278758508E"
+				type: "item"
+				item: "modern_industrialization:steel_ingot"
+				count: 18L
+			}]
+			rewards: [{
+				id: "5682EC3442B981E5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Item Pipes"
+			x: 17.5d
+			y: 12.5d
+			shape: "square"
+			description: [
+				"Item Pipes are very similar to the Fluid Pipe counterpart, except they transfer items instead of fluids. Alongside this, there are several other changes:"
+				""
+				"Item Pipes will not connect to inventories by default, but again you can force a connection. Right-clicking a connection without holding a wrench will allow you to set a filter. By default, whitelist mode is enabled, so no items will be inserted or extracted directly. "
+				""
+				"Item Pipes will insert items into higher priorities first and they will transfer 16 items every few seconds. They can be upgraded with motors."
+				""
+				"Note: The item pipes are on whitelist by default (which mean only the items in the filter will be moved). You need to switch to blacklist (only the items NOT in the filter will be moved) or add the item you want to move to the filter. Be careful that you need to configure BOTH sides of the pipe, otherwise items will not move."
+			]
+			dependencies: ["45CE5F461A159F66"]
+			id: "4D4B76A0251E4A45"
+			tasks: [{
+				id: "0A61EC683D66F0E7"
+				type: "item"
+				title: "Any MI Item Pipes"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "modern_industrialization:item_pipes"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "40D6A76C5020BAFD"
+					type: "item"
+					item: "modern_industrialization:item_pipe"
+					count: 16
+				}
+				{
+					id: "5E75459B1947C2B7"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Steel Upgrades"
+			x: 15.5d
+			y: 16.0d
+			shape: "rsquare"
+			description: ["Instead of crafting entirely new machines, you can use the Steel Upgrade with a Bronze Machine in a Smithing Table to upgrade it into its Steel version."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "577BA8EF0FB84BCE"
+			tasks: [{
+				id: "1B6BCD5209E4A2F7"
+				type: "item"
+				item: "modern_industrialization:steel_upgrade"
+				count: 2L
+			}]
+			rewards: [
+				{
+					id: "27123463B04BC7D4"
+					type: "item"
+					item: "modern_industrialization:steel_upgrade"
+					count: 2
+				}
+				{
+					id: "5C9E73CE4E91582F"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 15.5d
+			y: 15.0d
+			shape: "rsquare"
+			description: ["With a few steel plates, you can craft the Automatic Trash Can. It will destroy any item or fluid that is piped into it."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "5F56BBCF8B57F434"
+			tasks: [{
+				id: "1D4CF1C762EC4EC8"
+				type: "item"
+				item: "modern_industrialization:trash_can"
+			}]
+			rewards: [{
+				id: "48B3F5F04EBB9FFD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 16.5d
+			y: 15.0d
+			shape: "rsquare"
+			description: ["The Steel Unpacker, a new machine only available in Steel. It acts to unpack items, check REI for recipes."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "3B911268380F061D"
+			tasks: [{
+				id: "742137C5ED3F53CE"
+				type: "item"
+				item: "modern_industrialization:steel_unpacker"
+			}]
+			rewards: [{
+				id: "0AB2A0A3EF801C98"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 17.5d
+			y: 15.0d
+			shape: "rsquare"
+			description: ["The Steel Packer, a new machine only available in Steel, can perform simple crafts for you. You can now automate double ingots and pipes. Check REI for all the recipes."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "759C375900C081FF"
+			tasks: [{
+				id: "56CF510B4417E8DB"
+				type: "item"
+				item: "modern_industrialization:steel_packer"
+			}]
+			rewards: [{
+				id: "348EA4CD01DA3C06"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Packer Templates"
+			x: 17.5d
+			y: 16.0d
+			shape: "rsquare"
+			description: ["For those of you who have played GregTech, these are similar to using circuit numbers in recipes. Similar to that sytem, using one of these items in a recipe will tell the Packer what recipe to use without consuming the item."]
+			dependencies: ["759C375900C081FF"]
+			id: "28EEDBD2BE127F84"
+			tasks: [
+				{
+					id: "033602CDF480E9D1"
+					type: "item"
+					item: "modern_industrialization:packer_block_template"
+				}
+				{
+					id: "79780F460C630AAB"
+					type: "item"
+					item: "modern_industrialization:packer_double_ingot_template"
+				}
+			]
+			rewards: [{
+				id: "0ABA02979E3C0BFA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Steam Quarry"
+			icon: "modern_industrialization:steam_quarry"
+			x: 20.0d
+			y: 12.5d
+			shape: "square"
+			subtitle: "Ores Ad Nauseam"
+			description: [
+				"The Steam Quarry is a Steam multiblock machine that consumes Bronze Drills to dig deeper than the bedrock and gives you back some ores. It's recommended that before you build this multiblock you create multiple SBFs running before you attempt to build it because it requires a lot of Steel."
+				""
+				"To build this multiblock, you will need the material list from this quest. You can check the Ponder scene by holding 'W' on the Steam Quarry block in your inventory. Alternatively, holding your wrench will show where blocks need to go."
+				""
+				"I'd recommend having multiple Item Output Hatches in the case you get lucky and get multiple ores from a single process."
+			]
+			dependencies: ["4D4B76A0251E4A45"]
+			size: 1.5d
+			id: "1F5ACBB3A3D021B3"
+			tasks: [
+				{
+					id: "2228745932E9D571"
+					type: "item"
+					item: "modern_industrialization:steam_quarry"
+				}
+				{
+					id: "1247FDBC5B6260FF"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing"
+					count: 12L
+				}
+				{
+					id: "6597130716F5FF39"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing_pipe"
+					count: 6L
+				}
+				{
+					id: "5010F6B8B45E62AC"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "65B2A20B27F674CA"
+					type: "item"
+					title: "Any Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+				}
+				{
+					id: "73913FBE80A172BE"
+					type: "item"
+					title: "Any Item Output Hatches"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "47A9DEAC94A96343"
+					type: "item"
+					item: "minecraft:chain"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "782AA4603FE86681"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 22.0d
+			y: 11.5d
+			shape: "rsquare"
+			description: ["Putting the Bronze Drill in the Steam Quarry will return ores in the item output. Make sure to pipe out the items immediately so you don't void any of the ores!"]
+			dependencies: ["1F5ACBB3A3D021B3"]
+			id: "1CBCB4D1ECFBDE9E"
+			tasks: [{
+				id: "44BB30C1E1C8A00B"
+				type: "item"
+				item: "modern_industrialization:bronze_drill"
+			}]
+			rewards: [
+				{
+					id: "61AA8AE6030D48DE"
+					type: "item"
+					item: "modern_industrialization:bronze_drill"
+					count: 3
+				}
+				{
+					id: "328CBD24EE6A4D8A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 22.0d
+			y: 13.5d
+			shape: "rsquare"
+			description: ["Putting a Copper Drill in a Steam Quarry is a good way to get various types of stones. Make sure to pipe out the items immediately to avoid voiding any outputs!"]
+			dependencies: ["1F5ACBB3A3D021B3"]
+			id: "52D685C4965BE0EF"
+			tasks: [{
+				id: "041F228E1BE8C19F"
+				type: "item"
+				item: "modern_industrialization:copper_drill"
+			}]
+			rewards: [
+				{
+					id: "28CC1882886066C1"
+					type: "item"
+					item: "modern_industrialization:copper_drill"
+					count: 3
+				}
+				{
+					id: "33EB119028755542"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 15.5d
+			y: 11.0d
+			shape: "square"
+			description: ["The Wiremill will be useful in the future for the creation of wires. Combine the wires with Rubber Sheets to get cables."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "3C093BB3F3D520D9"
+			tasks: [{
+				id: "1EBE157581A176E9"
+				type: "item"
+				item: "modern_industrialization:steel_wiremill"
+			}]
+			rewards: [{
+				id: "22539C983B0A0952"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Alternative Rubber Source"
+			icon: "techreborn:rubber"
+			x: 13.5d
+			y: 11.0d
+			shape: "rsquare"
+			description: [
+				"If you find yourself lucky to find a Rubber Tree, you can use a Tree Tap to extract Sap and process it into Rubber. You can then use a Compressor to turn the Rubber into Rubber Sheets."
+				""
+				"A little bit more of a manual way, but you can get a lot of Rubber Sheets if you feel like putting in the effort."
+			]
+			dependencies: ["38E38B24C0432327"]
+			id: "68DF10A8AB2D074A"
+			tasks: [
+				{
+					id: "149CC1F3951E9C0C"
+					type: "item"
+					item: {
+						id: "techreborn:treetap"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3989B90636B79DC9"
+					type: "item"
+					item: "techreborn:sap"
+				}
+				{
+					id: "0CBC975F8341F726"
+					type: "item"
+					item: "techreborn:rubber"
+				}
+			]
+			rewards: [{
+				id: "0E7C5851252F49E2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Rubber Sheets"
+			x: 12.5d
+			y: 9.5d
+			shape: "square"
+			description: ["Combining Synthetic Oil with Paper in a Mixer will grant you two Rubber Sheets. You will unlock a more efficient recipe with petrochemistry in the future."]
+			dependencies: ["4D3EDFA212A5B4F1"]
+			id: "38E38B24C0432327"
+			tasks: [{
+				id: "230193C6FABE0299"
+				type: "item"
+				item: "modern_industrialization:rubber_sheet"
+			}]
+			rewards: [{
+				id: "6C4FAE3DECF41A04"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.5d
+			y: 11.0d
+			shape: "square"
+			description: ["Burning Raw Synthetic Oil in a Steam Blast Furnace will get you Synthetic Oil."]
+			dependencies: [
+				"4F060179B81581AB"
+				"578C4D10471D6EC9"
+			]
+			id: "4D3EDFA212A5B4F1"
+			tasks: [{
+				id: "0F35D80A1E316106"
+				type: "item"
+				item: "modern_industrialization:synthetic_oil_bucket"
+			}]
+			rewards: [{
+				id: "692AA14FBB2CC4C0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.5d
+			y: 9.5d
+			shape: "square"
+			description: [
+				"Mixing Coke Dust and Water in a Mixer will get you Raw Synthetic Oil, which you can burn in a Steam Blast Furnace to get Synthetic Oil. Mix it with paper and that gives you Rubber Sheets!"
+				""
+				"Automating this process is strongly recommended! Note that paper can be made from wood using wood pulp."
+			]
+			dependencies: ["738FE28369D3A550"]
+			id: "4F060179B81581AB"
+			tasks: [{
+				id: "00A681C52DF406BB"
+				type: "item"
+				item: "modern_industrialization:raw_synthetic_oil_bucket"
+			}]
+			rewards: [{
+				id: "6833B1696D3E857B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: 5.5d
+			shape: "square"
+			description: [
+				"Paper production has been &mgregified&r statified. Macerating logs into Wood Pulp, then mixing that Wood Pulp with Water will produce paper!"
+				""
+				"I wouldn't put this off, as you will need it to make Rubber Sheets!"
+			]
+			dependencies: ["693368CF3E13AB7A"]
+			id: "6BF59CA2D21361D1"
+			tasks: [{
+				id: "6D44B15036BCEE18"
+				type: "item"
+				item: "minecraft:paper"
+			}]
+			rewards: [{
+				id: "6144DA3C0791278E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Advanced Pipe Configuration"
+			x: 12.5d
+			y: 11.0d
+			shape: "rsquare"
+			description: [
+				"The configuration card can be used to camouflage pipes and to copy the sittings of the Item Pipes."
+				""
+				"Holding the card in your offhand will automatically apply its settings to any Item Pipe you place."
+			]
+			dependencies: ["38E38B24C0432327"]
+			id: "1EE124C7111A27F0"
+			tasks: [{
+				id: "48FC7AE4535CB088"
+				type: "item"
+				item: "modern_industrialization:config_card"
+			}]
+			rewards: [{
+				id: "1FACB0B9BF80CD9A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Rubber Hat \\& Shoes"
+			x: 11.5d
+			y: 11.0d
+			shape: "rsquare"
+			description: [
+				"If you need a little bit of armor in a pinch, you can craft a Rubber Helmet and Rubber Boots."
+				""
+				"They don't do anything special other than being a pretty poor excuse for armor."
+			]
+			dependencies: ["38E38B24C0432327"]
+			id: "5CF5CDD58DA92BDB"
+			tasks: [
+				{
+					id: "11CFA4E109A6F9C2"
+					type: "item"
+					item: {
+						id: "modern_industrialization:rubber_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5A975D3A06186152"
+					type: "item"
+					item: {
+						id: "modern_industrialization:rubber_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3AE6281D0655F5D1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "LV Cables"
+			x: 15.5d
+			y: 9.5d
+			shape: "square"
+			description: [
+				"With your Wiremill and Rubber Sheets you can now craft your first Cables. There are three variants in LV, Copper, Tin, and Silver Cables."
+				""
+				"There is not any EU loss per block as in GregTech, but there still is a max transfer rate. Hovering over the Cable in world will show you how much power is flowing through it."
+				""
+				"Cables of different types do not connect to one another."
+			]
+			dependencies: [
+				"38E38B24C0432327"
+				"3C093BB3F3D520D9"
+			]
+			id: "004069E9EBF8D803"
+			tasks: [{
+				id: "68056AAB07BEE307"
+				type: "item"
+				title: "Any LV Cable"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:lv_wire"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "2FEEC336AC9FCDE3"
+					type: "item"
+					item: "modern_industrialization:copper_cable"
+					count: 12
+				}
+				{
+					id: "677A61D327978C76"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Large Tank"
+			icon: "modern_industrialization:large_tank"
+			x: 18.5d
+			y: 9.5d
+			shape: "rsquare"
+			subtitle: "Mass Fluid Storage"
+			description: [
+				"The Large Tank is a multiblock that allows you to store large amounts of some fluid, for example steam. It can store 64 buckets worth of fluid for every block in the structure (including sides). "
+				""
+				"The Large Tank has many possible sizes depending on how much storage you need. You can open the size configuration panel by clicking on a button in the controller."
+				""
+				"Only pipes may access the tank, and only through the controller. Don't break the controller or you will void all of the stored fluid!"
+				""
+				"If you need help building the various sizes, make sure to hold out a wrench to see where all the blocks need to go. You can also check the Ponder scene by holding 'W' on the Large Tank block in your inventory."
+			]
+			dependencies: ["3505E9029F3CEAD0"]
+			id: "1F61820447808CD1"
+			tasks: [
+				{
+					id: "60C5F9E8BC2BAC80"
+					type: "item"
+					item: "modern_industrialization:large_tank"
+				}
+				{
+					id: "323B027726876C6A"
+					type: "item"
+					item: "modern_industrialization:steel_machine_casing"
+					count: 20L
+				}
+				{
+					id: "099E6D7CBED914DB"
+					type: "item"
+					item: "minecraft:glass"
+					count: 5L
+				}
+			]
+			rewards: [{
+				id: "0CE769F1C3E7F637"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Basic Components"
+			x: 17.0d
+			y: 9.5d
+			shape: "square"
+			description: ["Motors, Pumps, Robot Arms, and Pistons are key components moving forward for a lot of the machines you will be making."]
+			dependencies: ["004069E9EBF8D803"]
+			id: "3505E9029F3CEAD0"
+			tasks: [
+				{
+					id: "3FEA6C2C48642EF8"
+					type: "item"
+					item: "modern_industrialization:motor"
+				}
+				{
+					id: "117AC33ECCDBBF6A"
+					type: "item"
+					item: "modern_industrialization:pump"
+				}
+				{
+					id: "0A96ECB71D0DFE53"
+					type: "item"
+					item: "modern_industrialization:robot_arm"
+				}
+				{
+					id: "6256FBC6E218B4A7"
+					type: "item"
+					item: "modern_industrialization:piston"
+				}
+			]
+			rewards: [{
+				id: "0981D8968C36AA94"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Circuit Components"
+			x: 12.5d
+			y: 7.0d
+			shape: "square"
+			description: [
+				"Now with access to Rubber and Cables, you can now craft all the parts you will need for your first circuits."
+				""
+				"You will be crafting a lot of these over the course of the pack (hopefully automatically), so I'll go ahead and throw in a few more."
+			]
+			dependencies: ["38E38B24C0432327"]
+			id: "5CAAB61AA7E9FC66"
+			tasks: [
+				{
+					id: "49EFE0B9CD036536"
+					type: "item"
+					item: "modern_industrialization:resistor"
+				}
+				{
+					id: "36D9CC620927B060"
+					type: "item"
+					item: "modern_industrialization:inductor"
+				}
+				{
+					id: "6AD3FEF767859074"
+					type: "item"
+					item: "modern_industrialization:analog_circuit_board"
+				}
+				{
+					id: "55B94874DCEE5321"
+					type: "item"
+					item: "modern_industrialization:capacitor"
+				}
+			]
+			rewards: [
+				{
+					id: "0C0E035047B7B559"
+					type: "item"
+					item: "modern_industrialization:resistor"
+					count: 4
+				}
+				{
+					id: "029C2BEF7E65E94A"
+					type: "item"
+					item: "modern_industrialization:inductor"
+					count: 4
+				}
+				{
+					id: "3E03967838ACF73A"
+					type: "item"
+					item: "modern_industrialization:analog_circuit_board"
+					count: 4
+				}
+				{
+					id: "1C5FBBE5D58A24DD"
+					type: "item"
+					item: "modern_industrialization:capacitor"
+					count: 4
+				}
+				{
+					id: "5942D2BC1F2117A7"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 12.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "Your first circuits!"
+			description: [
+				"Congratulations, you've made your first circuits! With these you can finally start making Basic Machine Hulls, opening up electric machines."
+				""
+				"You'll need a lot of these through progression, I'd recommend automating them or batching large quantities."
+			]
+			dependencies: ["5CAAB61AA7E9FC66"]
+			size: 2.0d
+			id: "72090D36C27DC4AF"
+			tasks: [{
+				id: "40169C9AFB021394"
+				type: "item"
+				item: "modern_industrialization:analog_circuit"
+			}]
+			rewards: [{
+				id: "71124315137C5490"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.5d
+			shape: "square"
+			description: [
+				"You will soon be needing to make Heatproof Machine Casings, which require Invar. Invar is made in a Mixer by combining 2 Iron Dusts with 1 Nickel Dust. "
+				""
+				"I wouldn't put off making this until later, as you will need it for the Electric Blast Furnace very soon!"
+			]
+			dependencies: ["693368CF3E13AB7A"]
+			id: "071D9B8D5C16227B"
+			tasks: [{
+				id: "0F360811F97A1D47"
+				type: "item"
+				item: "modern_industrialization:invar_ingot"
+			}]
+			rewards: [{
+				id: "0BADBCEC080BD9E8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Large Steam Boiler"
+			icon: "modern_industrialization:large_steam_boiler"
+			x: 9.75d
+			y: 4.0d
+			shape: "rsquare"
+			subtitle: "Goodbye fuel"
+			description: [
+				"The Large Steam Boiler is an upgraded version of the smaller Bronze and Steel Boilers. It uses fuels 8 times faster than the Furnace, but it produces 256 mb/t of Steam when fully heated."
+				""
+				"Unlike its single block counterpart, in the Large Steam Boiler, 80% of any unconsumed heat will be lost. This means the ratio of energy produced by fuel consumed will be drastically decreased when the output decreases below maximum. This will happen when the Boiler is not used continuously at maximum output. It would be a good idea to put the Steam produced into a buffer, such as a Large Tank multiblock structure."
+				""
+				"The Large Steam Boiler is comprised of one layer of Heatproof Machine Casings and three layers of Bronze Plated Bricks."
+				""
+				"The controller goes on the second layer (i.e. the first layer of Bronze Plated Bricks). The two middle blocks are Bronze Pipe Machine Casings."
+				""
+				"Hatches must be placed on the bottom layer."
+				""
+				"You can check the Ponder scene for this block by holding 'W' on the Large Steam Boiler block in your inventory, or hold a wrench to see a diagram of where the blocks need to go."
+			]
+			dependencies: ["72090D36C27DC4AF"]
+			size: 1.5d
+			id: "4C40D7303E037FDC"
+			tasks: [
+				{
+					id: "31971360F1C35F1E"
+					type: "item"
+					item: "modern_industrialization:large_steam_boiler"
+				}
+				{
+					id: "2F604930A295E5C0"
+					type: "item"
+					item: "modern_industrialization:bronze_plated_bricks"
+					count: 24L
+				}
+				{
+					id: "1F2554CE564ACEC7"
+					type: "item"
+					item: "modern_industrialization:heatproof_machine_casing"
+					count: 6L
+				}
+				{
+					id: "1D73C4FDFF60CB26"
+					type: "item"
+					item: "modern_industrialization:bronze_machine_casing_pipe"
+					count: 2L
+				}
+				{
+					id: "6D304356F954352A"
+					type: "item"
+					title: "Any Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+				}
+				{
+					id: "192614F1B880F127"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "6D882B52C0D220F8"
+					type: "item"
+					title: "Any Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "263E205D18C20C11"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Battery Alloy Dust"
+			x: 4.0d
+			y: 5.5d
+			shape: "square"
+			description: ["Battery Alloy is going to be required as you move forward towards your first Steam Turbine. If you have found some Antimony, you can go ahead and mix it together with some Lead Dust to make Battery Alloy Dust."]
+			dependencies: ["693368CF3E13AB7A"]
+			id: "3820A443B373ADA0"
+			tasks: [{
+				id: "4853EC8C9EF922DE"
+				type: "item"
+				item: "modern_industrialization:battery_alloy_dust"
+				count: 2L
+			}]
+			rewards: [
+				{
+					id: "2C79BEF3416E9F24"
+					type: "item"
+					item: "modern_industrialization:battery_alloy_dust"
+					count: 4
+				}
+				{
+					id: "1A887783966FC0C8"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 15.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "End of the Steam Age"
+			description: [
+				"With all the components you have available now, you can create a Basic Machine Hull. This is the basis for most electrical machines, so be prepared to make a lot of these."
+				""
+				"This marks the end of Chapter 2. Congratulations! Get ready, as LV brings a lot of new things to work on!"
+			]
+			dependencies: [
+				"0390CA76F7045D0F"
+				"72090D36C27DC4AF"
+			]
+			size: 2.5d
+			id: "6EB26F44ECEEF81A"
+			tasks: [{
+				id: "46B1ADA5726A1B18"
+				type: "item"
+				item: "modern_industrialization:basic_machine_hull"
+			}]
+			rewards: [{
+				id: "79968765F8871EA0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 15.5d
+			y: 7.0d
+			shape: "square"
+			description: [
+				"Using the Battery Alloy you (hopefully) made earlier, you can make Redstone Batteries. Each tier of machine hull has their own tier of battery used to craft them, so expect to be making these often."
+				""
+				"These batteries on their own do not hold a charge, if you'd like a more traditional modded battery, you can follow the next quest to make a Red Cell Battery from Tech Reborn."
+			]
+			dependencies: ["004069E9EBF8D803"]
+			id: "0390CA76F7045D0F"
+			tasks: [{
+				id: "51BB44EEBA22738A"
+				type: "item"
+				item: "modern_industrialization:redstone_battery"
+			}]
+			rewards: [{
+				id: "1EFB515E922B6801"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 14.5d
+			y: 15.0d
+			shape: "rsquare"
+			description: ["The Steel Tank is an upgrade to the Bronze Tank from earlier. It now can store up to 8000 mB of any fluid and continues to retain it's inventory when broken."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "0A8E881B45C7FCFC"
+			tasks: [{
+				id: "36ED58C8C8DBB8EB"
+				type: "item"
+				item: "modern_industrialization:steel_tank"
+			}]
+			rewards: [{
+				id: "7992BF5167F21AC5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 14.5d
+			y: 16.0d
+			shape: "rsquare"
+			description: ["An upgrade to the Bronze Barrel. This barrel can hold up to 128 stacks of the same item. Probably really good for all the cobblestone you've been amassing."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "39D48C79329C6E09"
+			tasks: [{
+				id: "27B34989D6BF4893"
+				type: "item"
+				item: "modern_industrialization:steel_barrel"
+			}]
+			rewards: [{
+				id: "14437200D2A77E02"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 17.0d
+			y: 6.5d
+			shape: "rsquare"
+			description: [
+				"The Battery Box from Tech Reborn will allow you to store any excess power you will be generating. The Battery Box has a 40k E buffer and two slots to charge your items."
+				""
+				"While 40k may seem impressive, you will soon be able to make LV Storage Units, which can store 192k EU. They're much better for storage, but don't have the ability to recharge items."
+				""
+				"Tech Reborn's energy system is just called Energy (E). It's a 1:1 conversion between Modern Industrializations EU and Tech Reborn E, so it makes it really easy to understand."
+			]
+			dependencies: ["0390CA76F7045D0F"]
+			id: "2275EBB47166F9D2"
+			tasks: [{
+				id: "5E21AAA42909D693"
+				type: "item"
+				item: "techreborn:low_voltage_su"
+			}]
+			rewards: [{
+				id: "10C368FDA1555FB9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 16.5d
+			y: 16.0d
+			shape: "rsquare"
+			description: ["Probably the least interesting thing you can make with your new Steel is armor. It's definitely an upgrade from Iron, but I wouldn't recommend making it unless you have a lot of extra Steel or are having trouble with mobs."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "1C7E832A64CD1620"
+			tasks: [
+				{
+					id: "01A1E25F2E2004C3"
+					type: "item"
+					item: {
+						id: "techreborn:steel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "136E68A02BA946A7"
+					type: "item"
+					item: {
+						id: "techreborn:steel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7D9A763D85D381A2"
+					type: "item"
+					item: {
+						id: "techreborn:steel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "66DEC4116F45DD05"
+					type: "item"
+					item: {
+						id: "techreborn:steel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "35B9DD3EB4540650"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: 12.0d
+			shape: "rsquare"
+			description: [
+				"Once you have Steel, you can upgrade any one of your hatches on the Steam Blast Furnace to allow it to process 4 EU/t recipes."
+				""
+				"With that you can run Redstone Dust through the Blast Furnace to produce Molten Redstone. At this point you won't really have a reason to generate any, but know that you will need it in the future once you get to AE2."
+			]
+			dependencies: ["578C4D10471D6EC9"]
+			id: "4FBE60D1D4995C8D"
+			tasks: [{
+				id: "2E703C763E482D80"
+				type: "item"
+				item: "modern_industrialization:molten_redstone_bucket"
+			}]
+			rewards: [{
+				id: "00F4391EDFF64C76"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.0d
+			y: 13.5d
+			shape: "rsquare"
+			description: [
+				"Once you have Steel, you can upgrade any one of your hatches on the Steam Blast Furnace to allow it to process 4 EU/t recipes."
+				""
+				"Soldering Alloy is an important fluid to have on hand moving forward, as it can be used in assemblers to reduce the cost of crafting certain items by hand."
+			]
+			dependencies: ["578C4D10471D6EC9"]
+			id: "05FD1FD793252EF5"
+			tasks: [{
+				id: "6937D80F4C61CD3B"
+				type: "item"
+				item: "modern_industrialization:soldering_alloy_bucket"
+			}]
+			rewards: [{
+				id: "3BBA148D65A211DA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.5d
+			y: 15.0d
+			shape: "rsquare"
+			description: ["The Steel Boiler is an upgrade to your Bronze Boiler. It can produce up to 16 EU/t worth of Steam, double that of the Bronze."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "4DD579C699181982"
+			tasks: [{
+				id: "7FC015A7D52B67D1"
+				type: "item"
+				item: "modern_industrialization:steel_boiler"
+			}]
+			rewards: [{
+				id: "2AE7E9C4EEE3F336"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Elevators"
+			x: 1.0d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"Now that you have a Forge Hammer, you can make Iron Rods required for making pistons, which allow you to make Elevators."
+				""
+				"These are great tools to help you traverse your base vertically, especially if you're doing the boring strat of building entirely underground."
+				""
+				"Elevators will allow you to travel up and down between two points by pressing jump or crouch respectively."
+				""
+				"Elevators of different colors will not travel to each other."
+			]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "486ADC13C8868424"
+			tasks: [{
+				id: "6145677CF9FAAE1B"
+				type: "item"
+				title: "Any Elevator"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kibe:elevators"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5C24FC870A7448D1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Travel Anchors"
+			x: 13.5d
+			y: 16.0d
+			shape: "rsquare"
+			description: ["Travel Anchors are pulled straight out of EnderIO. You can place them down, name them, and use the wand to warp between them. You can also stand on them to warp to others by looking at them and pressing right-click."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "4434AD65DF2DD224"
+			tasks: [
+				{
+					id: "5D15640FC1891679"
+					type: "item"
+					item: "travelstaff:travel_staff"
+				}
+				{
+					id: "623290FEDDFE8248"
+					type: "item"
+					item: "travelstaff:travel_anchor"
+				}
+			]
+			rewards: [{
+				id: "62C3D812C9ED4815"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "A factory staple"
+			description: [
+				"Catwalks are a decorative block that can be used to add a lot of aesthetic to your builds. The wrench can be used to edit how the handrails appear on the sides of the catwalks."
+				""
+				"You can craft a Paint Roller to adjust the color of your catwalks."
+			]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "1EDCF314B9A08129"
+			tasks: [{
+				id: "38685961DF002C39"
+				type: "item"
+				item: "catwalksinc:catwalk"
+			}]
+			rewards: [
+				{
+					id: "11E95C62ADD283BA"
+					type: "item"
+					item: {
+						id: "catwalksinc:wrench"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "72CD3822F4A7BAF9"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Explore the world"
+			description: ["The Nature's Compass is a very helpful tool if you're looking for any specific biome. It provides both the direction and the distance to any biome in the pack."]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "5F1733B6400DD9BA"
+			tasks: [{
+				id: "6F2740E8C8E62050"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "562DDA60269E5ECB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 17.5d
+			y: 11.0d
+			shape: "rsquare"
+			description: [
+				"Similar to the other machine upgrades you can make with steel, the Steel Pump works twice as fast as the Bronze variant. "
+				""
+				"That means a fully encircled Steel Pump will pump 2 buckets of water every 5 seconds. You will probably need this as your Steam requirements increase as you progress."
+			]
+			dependencies: ["45CE5F461A159F66"]
+			id: "4DB42F0D980DA49F"
+			tasks: [{
+				id: "227F56E3A1F55CFE"
+				type: "item"
+				item: "modern_industrialization:steel_water_pump"
+			}]
+			rewards: [{
+				id: "4D14F2EA55C04C1B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 12.5d
+			y: 15.0d
+			shape: "rsquare"
+			description: ["The Magnet, when activated, will attract nearby dropped items to the player."]
+			dependencies: ["45CE5F461A159F66"]
+			id: "5ACF260F9E41D82C"
+			tasks: [{
+				id: "74043B260FABE0CA"
+				type: "item"
+				item: {
+					id: "kibe:magnet"
+					Count: 1b
+					tag: {
+						enabled: 1b
+					}
+				}
+			}]
+			rewards: [{
+				id: "65DF58FDD3D74A83"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "Time is money"
+			description: ["Time in a Bottle offers a way to passively store the time spent playing so that you can spend it to speed up any process, such as a furnace smelting or machine operating."]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "765220E44F7D027E"
+			tasks: [{
+				id: "54554F78AA9BB8E1"
+				type: "item"
+				item: {
+					id: "timeinabottle:time_in_a_bottle"
+					Count: 1b
+					tag: {
+						timeData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "0148975071C9E97C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Take to the Skies"
+			x: 0.5d
+			y: -3.0d
+			shape: "rsquare"
+			description: ["A Glider is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally."]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "0B735B2265B363C8"
+			tasks: [{
+				id: "4E6AFDE227A4FB70"
+				type: "item"
+				item: {
+					id: "kibe:white_glider"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "270E680742DC3B4B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 17.0d
+			y: 7.5d
+			shape: "rsquare"
+			description: [
+				"The Red Cell Battery can carry 10k E and can be activated by holding it and shift-right clicking. While active, it will charge any chargable electronic in your inventory."
+				""
+				"You will need the Battery Box to initially charge the battery itself though."
+			]
+			dependencies: ["0390CA76F7045D0F"]
+			id: "5F7B86F96F250B3D"
+			tasks: [{
+				id: "1E986E95C01D9924"
+				type: "item"
+				item: "techreborn:red_cell_battery"
+			}]
+			rewards: [{
+				id: "4F9924F9FCE4CB7C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 11.5d
+			y: 1.5d
+			shape: "rsquare"
+			description: [
+				"If you're manually collecting Sap from Rubber Trees, you surely must be exhausted by now having to create Treetaps due to their low durability."
+				""
+				"Stress no more, as the Electric Treetap can offer you a rechargable tool that can harvest Sap."
+				""
+				"You will need to make the Battery Box to charge it."
+			]
+			dependencies: ["72090D36C27DC4AF"]
+			id: "1BF78FD92C018648"
+			tasks: [{
+				id: "6365CFAB33A3C3DF"
+				type: "item"
+				item: "techreborn:electric_treetap"
+			}]
+			rewards: [{
+				id: "437E528973596539"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Overclocking"
+			x: 4.5d
+			y: 7.5d
+			shape: "rsquare"
+			description: [
+				"You might have noticed the tooltip for Overclocking on your Steam Machines, but that only used Gunpowder. This won't work once you unlock Electrical Machines though, to overclock Electrical Machines, you can use Lubricant."
+				""
+				"To Overclock a machine, right-click an Electrical Machine with a lubricant container, such as a lubricant bucket, to overclock it manually. Each 25 mb of lubricant will add 1 (overclocking) efficiency tick to the machine."
+			]
+			dependencies: ["2B3D7AC154932A16"]
+			id: "402F586B741ADE1B"
+			tasks: [{
+				id: "436E872C2D8C8DE4"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "1DD30A36EE536D4F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.5d
+			y: 1.5d
+			shape: "rsquare"
+			description: ["The Configurable Chest is not a machine, but once you have Analog Circuits, you can craft it. It has 27 configurable slots, and auto-extract functionality! Very useful for automation!"]
+			dependencies: ["72090D36C27DC4AF"]
+			id: "45E0DB65DD53DC8E"
+			tasks: [{
+				id: "1D37B2F675EE77B6"
+				type: "item"
+				item: "modern_industrialization:configurable_chest"
+			}]
+			rewards: [{
+				id: "23A33D47D0F0C237"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			shape: "rsquare"
+			description: ["The Gold Chest stores 66 stacks of items. This is the highest tier you can make until you can process Diamond Plates."]
+			dependencies: ["6B3BEC96CBAB7760"]
+			id: "37A8157AB01079F0"
+			tasks: [{
+				id: "2AF4856E062F0CC3"
+				type: "item"
+				item: "ironchests:gold_chest"
+			}]
+			rewards: [{
+				id: "08D76671E0198D8A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			shape: "rsquare"
+			description: ["The Iron Chest can store 54 stacks of items."]
+			dependencies: ["181F0CD6428732B2"]
+			id: "6B3BEC96CBAB7760"
+			tasks: [{
+				id: "5B31DECC1F4FB815"
+				type: "item"
+				item: "ironchests:iron_chest"
+			}]
+			rewards: [{
+				id: "1457DD99C5ABBE65"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["With Copper Plates, you can upgrade your normal chests to hold more items. This one can store up to 36 stacks of items."]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "181F0CD6428732B2"
+			tasks: [{
+				id: "16FEE1AAF2F26234"
+				type: "item"
+				item: "ironchests:copper_chest"
+			}]
+			rewards: [{
+				id: "423B461A68650351"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Chest Upgrades"
+			x: -5.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Chest Upgrades allow you to upgrade your chests without having to break them or move their contents into a new chest."]
+			dependencies: ["181F0CD6428732B2"]
+			id: "20FE11ACDC27CA84"
+			tasks: [{
+				id: "40F4E4A27381D161"
+				type: "item"
+				title: "Any Chest Upgrade"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:chest_upgrade"
+					}
+				}
+			}]
+			rewards: [{
+				id: "08B3219BAAA1D087"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"The Iron Dolly allows you to shift-right click pickup your chests and move them. Much better than breaking them and having their contents spill everywhere."
+				""
+				"The iron version has durability, but the diamond upgrade doesn't."
+			]
+			dependencies: ["181F0CD6428732B2"]
+			id: "3088E454104EA8C6"
+			tasks: [{
+				id: "6359B09013F2D07C"
+				type: "item"
+				item: {
+					id: "ironchests:iron_dolly"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "23B598EEEF0555A3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Lock \\& Key"
+			x: -4.5d
+			y: -1.5d
+			shape: "rsquare"
+			description: [
+				"The Iron Chest mod also includes a lock and key. You can apply a Lock to a chest by shift-right clicking it. You can then link a Key to that lock by shift-right clicking."
+				""
+				"Honestly it's a big risk to lock your chest, you'd be better off just chunk protecting them."
+			]
+			dependencies: ["181F0CD6428732B2"]
+			id: "018F1B1A8EF2C04E"
+			tasks: [
+				{
+					id: "560CDAFDD7E6CD51"
+					type: "item"
+					item: "ironchests:lock"
+				}
+				{
+					id: "314538D8B80D71B6"
+					type: "item"
+					item: "ironchests:key"
+				}
+			]
+			rewards: [{
+				id: "504AF2E895DD015A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.5d
+			y: 4.0d
+			shape: "rsquare"
+			dependencies: ["73AF6917A7A85244"]
+			id: "6F88FC11E59E8E80"
+			tasks: [{
+				id: "4537933397F0E443"
+				type: "item"
+				item: "techreborn:ender_pearl_dust"
+			}]
+			rewards: [{
+				id: "6E6DD23551A6497D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			shape: "rsquare"
+			dependencies: ["6F88FC11E59E8E80"]
+			id: "5B1A75C2F76C6D8A"
+			tasks: [{
+				id: "630A87404EF3617E"
+				type: "item"
+				item: "waystones:warp_dust"
+			}]
+		}
+		{
+			title: "Scrolls"
+			x: 0.0d
+			y: 5.5d
+			shape: "rsquare"
+			subtitle: "Don't sue me Bethesda"
+			description: [
+				"Before you fully unlock the Warp Stone, you can use Warp Scrolls as temporary teleportation devices."
+				""
+				"The Bound Scroll is used on existing Waystones to bind itself to that location. Using the scroll will teleport the user back to that Waystone, consuming the Scroll in the process."
+				""
+				"The Return Scroll will teleport the user back to where they just teleported from. Useful in conjunction with the Bound Scroll. Consumed on use."
+				""
+				"Warp Scrolls act as temporary Warp Stones, allowing you to select any Waystone you have previously visited, but taking a use off the Scroll each time it's used. "
+			]
+			dependencies: ["5B1A75C2F76C6D8A"]
+			id: "0730D6CF32E895DB"
+			tasks: [
+				{
+					id: "59EF3BF5517866C7"
+					type: "item"
+					item: "waystones:return_scroll"
+				}
+				{
+					id: "66069FAE8406F937"
+					type: "item"
+					item: "waystones:bound_scroll"
+				}
+				{
+					id: "3CD52E3D9C00172E"
+					type: "item"
+					item: "waystones:warp_scroll"
+				}
+			]
+			rewards: [{
+				id: "08B6B041037A31FA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.5d
+			shape: "rsquare"
+			description: [
+				"Warp Plates aren't very useful until you have two of them. When you place the Warp Plate, it will code an Attuned Shard to it's location. If you place another Warp Plate and place the Attuned Shard from the previous, that new Warp Plate will teleport you to the previous location."
+				""
+				"If you lose your Attuned Shard, or want multiple Warp Plates to reach a single destination, then you can place Warp Dust in the destination Warp Plate to create a new Attuned Shard for wherever you want to create a new Warp Plate."
+			]
+			dependencies: ["5B1A75C2F76C6D8A"]
+			id: "1CC8F1192E2178EB"
+			tasks: [{
+				id: "51BA7D3FE7438D53"
+				type: "item"
+				item: "waystones:warp_plate"
+			}]
+			rewards: [
+				{
+					id: "3007ED33F2354F2F"
+					type: "item"
+					item: "waystones:warp_plate"
+				}
+				{
+					id: "317CAEB48D4B2FA4"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Scannable"
+			x: 12.5d
+			y: 1.5d
+			shape: "rsquare"
+			description: [
+				"Having trouble finding specific ores when you need them? The Scanner is the tool for you. Now that you have circuits you can go ahead and craft a Scanner to help in finding ores and other interesting things. "
+				""
+				"Modules can be installed by shift-right clicking while holding the Scanner."
+				""
+				"You'll need to have made the Battery Box to charge it at this point."
+			]
+			dependencies: ["72090D36C27DC4AF"]
+			id: "408C2940A18F43BC"
+			tasks: [{
+				id: "57703C0E1ED3BE1C"
+				type: "item"
+				item: "scannable:scanner"
+			}]
+			rewards: [
+				{
+					id: "466CAF732C2DA64C"
+					type: "item"
+					item: "scannable:blank_module"
+					count: 3
+				}
+				{
+					id: "0BCC0AD20277085E"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["The scanner module can be used to increase the radius of your scans for the price of more power consumption. "]
+			dependencies: ["408C2940A18F43BC"]
+			id: "02DA362B49E4D749"
+			tasks: [{
+				id: "559471DB58823FF6"
+				type: "item"
+				item: "scannable:range_module"
+			}]
+			rewards: [{
+				id: "0C52DA58378DE4D5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Right-click on a mob to add it to the list. Your scans will now specifically search for that entity."]
+			dependencies: ["408C2940A18F43BC"]
+			id: "2347443050780634"
+			tasks: [{
+				id: "2800F58098877465"
+				type: "item"
+				item: "scannable:entity_module"
+			}]
+			rewards: [{
+				id: "0D22D8E429068FD8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["This module will find any nearby animals."]
+			dependencies: ["408C2940A18F43BC"]
+			id: "5E9CDEF56C78DEBE"
+			tasks: [{
+				id: "6FE3E4BA2B1DE7FF"
+				type: "item"
+				item: "scannable:friendly_entity_module"
+			}]
+			rewards: [{
+				id: "55886473982C814C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["This module will find any nearby hostile mobs."]
+			dependencies: ["408C2940A18F43BC"]
+			id: "60AC43AD4B1815C6"
+			tasks: [{
+				id: "687430EB92CE4BCD"
+				type: "item"
+				item: "scannable:hostile_entity_module"
+			}]
+			rewards: [{
+				id: "3BF34977DEE43868"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 11.0d
+			y: -1.0d
+			shape: "rsquare"
+			description: ["Used to find specific configured blocks in your scans. Can be very useful if you're looking for something specific."]
+			dependencies: ["408C2940A18F43BC"]
+			id: "7CFA7141E7D3D4A1"
+			tasks: [{
+				id: "5ED4DE6E0755E699"
+				type: "item"
+				item: "scannable:block_module"
+			}]
+			rewards: [{
+				id: "42A42CCA7FCDCBC6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 12.0d
+			y: -1.0d
+			shape: "rsquare"
+			description: ["This module finds and highlights common ores in the world, such as iron, coal, etc."]
+			dependencies: ["408C2940A18F43BC"]
+			id: "742A8939A0EF9A1F"
+			tasks: [{
+				id: "74EC9078C50FE2BE"
+				type: "item"
+				item: "scannable:common_ores_module"
+			}]
+			rewards: [{
+				id: "1BD156E0F4A9D5C2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.0d
+			y: -1.0d
+			shape: "rsquare"
+			description: ["This module scans for rare ores, such as diamonds and emeralds."]
+			dependencies: ["408C2940A18F43BC"]
+			id: "2AF412025C6565FC"
+			tasks: [{
+				id: "2A89F40D82CC6B52"
+				type: "item"
+				item: "scannable:rare_ores_module"
+			}]
+			rewards: [{
+				id: "510DE94CE1D7DB31"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 14.0d
+			y: -1.0d
+			shape: "rsquare"
+			description: ["This module can be used to detect water and lava."]
+			dependencies: ["408C2940A18F43BC"]
+			id: "54DDB1F3D573A0CE"
+			tasks: [{
+				id: "021AF263852B3FBB"
+				type: "item"
+				item: "scannable:fluid_module"
+			}]
+			rewards: [{
+				id: "15C928FFF6CA7936"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}
