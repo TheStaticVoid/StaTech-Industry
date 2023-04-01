@@ -2454,6 +2454,39 @@
 				xp: 100
 			}]
 		}
+		{
+			x: 15.0d
+			y: 16.0d
+			subtitle: "Welcome to High-Voltage"
+			description: [
+				"I hope you have a bunch of Blank Patterns, as the recipe for this gets really tedious to do by hand."
+				""
+				"Creating a Digital Circuit marks the beginning of the HV tier. There are a lot of new opportunities available to you now, such as the Distillation Tower and Turbo Machine Casings/Hulls."
+				""
+				"You've worked hard to get to this point, so I'm throwing in a few freebies in the rewards."
+			]
+			dependencies: ["47B1F3B024E8F7CD"]
+			size: 2.0d
+			id: "575EE8E0720CE7DC"
+			tasks: [{
+				id: "50163AA13FCDFAB4"
+				type: "item"
+				item: "modern_industrialization:digital_circuit"
+			}]
+			rewards: [
+				{
+					id: "71FEAC927705AF48"
+					type: "item"
+					item: "modern_industrialization:digital_circuit"
+					count: 3
+				}
+				{
+					id: "3A784DE9DA9102E3"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }

@@ -922,7 +922,7 @@
 			shape: "square"
 			subtitle: "Ores Ad Nauseam"
 			description: [
-				"The Steam Quarry is a Steam multiblock machine that consumes Bronze Drills to dig deeper than the bedrock and gives you back some ores. It's recommended that before you build this multiblock you create multiple SBFs running before you attempt to build it because it requires a lot of Steel."
+				"The Steam Quarry is a Steam multiblock machine that consumes drills to dig deeper than the bedrock and gives you back some ores. It's recommended that before you build this multiblock you create multiple Steam Blast Furnaces before you attempt to build it because it requires a lot of Steel."
 				""
 				"To build this multiblock, you will need the material list from this quest. You can check the Ponder scene by holding 'W' on the Steam Quarry block in your inventory. Alternatively, holding your wrench will show where blocks need to go."
 				""
@@ -1351,7 +1351,7 @@
 			x: 17.0d
 			y: 9.5d
 			shape: "square"
-			description: ["Motors, Pumps, Robot Arms, and Pistons are key components moving forward for a lot of the machines you will be making."]
+			description: ["Motors, Pumps, Robot Arms, Conveyors, and Pistons are key components moving forward for a lot of the machines you will be making."]
 			dependencies: ["004069E9EBF8D803"]
 			id: "3505E9029F3CEAD0"
 			tasks: [
@@ -1374,6 +1374,11 @@
 					id: "6256FBC6E218B4A7"
 					type: "item"
 					item: "modern_industrialization:piston"
+				}
+				{
+					id: "70CB3E59304A74FB"
+					type: "item"
+					item: "modern_industrialization:conveyor"
 				}
 			]
 			rewards: [{
