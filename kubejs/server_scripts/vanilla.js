@@ -59,27 +59,23 @@ ServerEvents.recipes(e => {
 
     // -- CLOCK -- //
     e.shaped('minecraft:clock', [
-        'IRI',
-        'DGD',
-        'IRI'
+        ' R ',
+        'RGR',
+        ' R '
     ],
     {
         R: 'minecraft:redstone',
-        G: 'modern_industrialization:gold_ring',
-        I: 'modern_industrialization:iron_gear',
-        D: 'modern_industrialization:iron_rod'
+        G: 'modern_industrialization:gold_ring'
     });
 
     // -- COMPASS -- //
     e.shaped('minecraft:compass', [
-        'IRI',
-        'DOD',
-        'IRI'
+        ' R ',
+        'ROR',
+        ' R '
     ],
     {
-        I: 'modern_industrialization:iron_gear',
         R: 'minecraft:redstone',
-        D: '#c:iron_plates',
         O: 'modern_industrialization:iron_ring'
     });
     

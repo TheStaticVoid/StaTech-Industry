@@ -1,0 +1,233 @@
+To refresh this file, delete it and run /reload command again! Last updated: Feb 26, 2023, 4:53:48 AM
+
+#minecraft:axolotl_always_hostiles
+- minecraft:drowned (from Default)
+- minecraft:guardian (from Default)
+- minecraft:elder_guardian (from Default)
+
+#minecraft:freeze_immune_entity_types
+- minecraft:stray (from Default)
+- minecraft:polar_bear (from Default)
+- minecraft:snow_golem (from Default)
+- minecraft:wither (from Default)
+- betteranimalsplus:feralwolf (from Better Animals Plus)
+- betteranimalsplus:walrus (from Better Animals Plus)
+- betteranimalsplus:whale (from Better Animals Plus)
+- betteranimalsplus:reindeer (from Better Animals Plus)
+- betteranimalsplus:boar (from Better Animals Plus)
+- betteranimalsplus:shark (from Better Animals Plus)
+- betteranimalsplus:moose (from Better Animals Plus)
+- betteranimalsplus:lammergeier (from Better Animals Plus)
+- promenade:duck (from Promenade)
+
+#ad_astra:entities/lives_without_oxygen
+- ad_astra:lunarian (from Ad Astra)
+- ad_astra:corrupted_lunarian (from Ad Astra)
+- ad_astra:star_crawler (from Ad Astra)
+- ad_astra:martian_raptor (from Ad Astra)
+- ad_astra:pygro (from Ad Astra)
+- ad_astra:zombified_pygro (from Ad Astra)
+- ad_astra:pygro_brute (from Ad Astra)
+- ad_astra:mogler (from Ad Astra)
+- ad_astra:zombified_mogler (from Ad Astra)
+- ad_astra:sulfur_creeper (from Ad Astra)
+- ad_astra:lunarian_wandering_trader (from Ad Astra)
+- minecraft:ender_dragon (from Ad Astra)
+- minecraft:wither (from Ad Astra)
+- minecraft:skeleton (from Ad Astra)
+- minecraft:stray (from Ad Astra)
+- minecraft:armor_stand (from Ad Astra)
+- minecraft:iron_golem (from Ad Astra)
+- minecraft:snow_golem (from Ad Astra)
+- minecraft:magma_cube (from Ad Astra)
+- minecraft:allay (from Ad Astra)
+- minecraft:warden (from Ad Astra)
+
+#ad_astra:entities/fire_immune
+- ad_astra:pygro (from Ad Astra)
+- ad_astra:zombified_pygro (from Ad Astra)
+- ad_astra:pygro_brute (from Ad Astra)
+- ad_astra:mogler (from Ad Astra)
+- ad_astra:zombified_mogler (from Ad Astra)
+- ad_astra:sulfur_creeper (from Ad Astra)
+- ad_astra:lunarian_wandering_trader (from Ad Astra)
+
+#byg:boats
+- byg:boat (from Oh The Biomes You'll Go)
+- byg:chest_boat (from Oh The Biomes You'll Go)
+
+#byg:not_hurt_by_quartz_crystals
+- minecraft:ghast (from Oh The Biomes You'll Go)
+- minecraft:hoglin (from Oh The Biomes You'll Go)
+- minecraft:enderman (from Oh The Biomes You'll Go)
+
+#carryon:stacking_whitelist
+
+#carryon:stacking_blacklist
+
+#naturalist:lion_hostiles
+- naturalist:rhino (from Naturalist)
+- minecraft:horse (from Naturalist)
+
+#naturalist:bear_hostiles
+- minecraft:tropical_fish (from Naturalist)
+- minecraft:salmon (from Naturalist)
+- minecraft:cod (from Naturalist)
+- naturalist:deer (from Naturalist)
+
+#minecraft:frog_food
+- minecraft:slime (from Default)
+- minecraft:magma_cube (from Default)
+- naturalist:firefly (from Naturalist)
+
+#forge:boats
+- #byg:boats (from Oh The Biomes You'll Go)
+
+#c:bosses
+- minecraft:ender_dragon (from Fabric Convention Tags)
+- minecraft:wither (from Fabric Convention Tags)
+- minecraft:ender_dragon (from Porting Lib Tags)
+- minecraft:wither (from Porting Lib Tags)
+
+#minecraft:raiders
+- minecraft:evoker (from Default)
+- minecraft:pillager (from Default)
+- minecraft:ravager (from Default)
+- minecraft:vindicator (from Default)
+- minecraft:illusioner (from Default)
+- minecraft:witch (from Default)
+
+#minecraft:powder_snow_walkable_mobs
+- minecraft:rabbit (from Default)
+- minecraft:endermite (from Default)
+- minecraft:silverfish (from Default)
+- minecraft:fox (from Default)
+
+#industrialforegoing:mob_imprisonment_tool_blacklist
+- artifacts:mimic (from Artifacts)
+
+#byg:all/boats
+- #byg:boats? (from Oh The Biomes You'll Go)
+- #c:boats? (from Oh The Biomes You'll Go)
+- #forge:boats? (from Oh The Biomes You'll Go)
+
+#minecraft:axolotl_hunt_targets
+- minecraft:tropical_fish (from Default)
+- minecraft:pufferfish (from Default)
+- minecraft:salmon (from Default)
+- minecraft:cod (from Default)
+- minecraft:squid (from Default)
+- minecraft:glow_squid (from Default)
+- minecraft:tadpole (from Default)
+
+#carryon:entity_whitelist
+
+#naturalist:deer_predators
+- naturalist:bear (from Naturalist)
+
+#minecraft:impact_projectiles
+- #minecraft:arrows (from Default)
+- minecraft:snowball (from Default)
+- minecraft:fireball (from Default)
+- minecraft:small_fireball (from Default)
+- minecraft:egg (from Default)
+- minecraft:trident (from Default)
+- minecraft:dragon_fireball (from Default)
+- minecraft:wither_skull (from Default)
+- ad_astra:ice_spit (from Ad Astra)
+
+#minecraft:beehive_inhabitors
+- minecraft:bee (from Default)
+
+#c:boats
+- #byg:boats (from Oh The Biomes You'll Go)
+- minecraft:boat (from Fabric Convention Tags)
+- minecraft:chest_boat (from Fabric Convention Tags)
+
+#minecraft:skeletons
+- minecraft:skeleton (from Default)
+- minecraft:stray (from Default)
+- minecraft:wither_skeleton (from Default)
+
+#ftbquests:no_loot_crates
+
+#minecraft:arrows
+- minecraft:arrow (from Default)
+- minecraft:spectral_arrow (from Default)
+
+#naturalist:snake_hostiles
+- minecraft:rabbit (from Naturalist)
+- minecraft:chicken (from Naturalist)
+- minecraft:silverfish (from Naturalist)
+- naturalist:snail (from Naturalist)
+
+#minecraft:freeze_hurts_extra_types
+- minecraft:strider (from Default)
+- minecraft:blaze (from Default)
+- minecraft:magma_cube (from Default)
+
+#carryon:entity_blacklist
+- ad_astra:tier_1_rocket (from Ad Astra)
+- ad_astra:tier_2_rocket (from Ad Astra)
+- ad_astra:tier_3_rocket (from Ad Astra)
+- ad_astra:tier_4_rocket (from Ad Astra)
+
+#dml-refabricated:slimy_mobs
+- terrarianslimes:green_slime (from Terrarian Slimes)
+- terrarianslimes:blue_slime (from Terrarian Slimes)
+- terrarianslimes:red_slime (from Terrarian Slimes)
+- terrarianslimes:purple_slime (from Terrarian Slimes)
+- terrarianslimes:yellow_slime (from Terrarian Slimes)
+- terrarianslimes:black_slime (from Terrarian Slimes)
+- terrarianslimes:ice_slime (from Terrarian Slimes)
+- terrarianslimes:sand_slime (from Terrarian Slimes)
+- terrarianslimes:jungle_slime (from Terrarian Slimes)
+- terrarianslimes:spiked_ice_slime (from Terrarian Slimes)
+- terrarianslimes:spiked_jungle_slime (from Terrarian Slimes)
+- terrarianslimes:mother_slime (from Terrarian Slimes)
+- terrarianslimes:baby_slime (from Terrarian Slimes)
+- terrarianslimes:lava_slime (from Terrarian Slimes)
+- terrarianslimes:pinky (from Terrarian Slimes)
+- terrarianslimes:spiked_slime (from Terrarian Slimes)
+- terrarianslimes:umbrella_slime (from Terrarian Slimes)
+- terrarianslimes:corrupt_slime (from Terrarian Slimes)
+- terrarianslimes:slimeling (from Terrarian Slimes)
+- terrarianslimes:crimslime (from Terrarian Slimes)
+- terrarianslimes:illuminant_slime (from Terrarian Slimes)
+- terrarianslimes:rainbow_slime (from Terrarian Slimes)
+
+#c:creepers
+- creeperoverhaul:jungle_creeper (from Creeper Overhaul)
+- creeperoverhaul:bamboo_creeper (from Creeper Overhaul)
+- creeperoverhaul:desert_creeper (from Creeper Overhaul)
+- creeperoverhaul:badlands_creeper (from Creeper Overhaul)
+- creeperoverhaul:hills_creeper (from Creeper Overhaul)
+- creeperoverhaul:savannah_creeper (from Creeper Overhaul)
+- creeperoverhaul:mushroom_creeper (from Creeper Overhaul)
+- creeperoverhaul:swamp_creeper (from Creeper Overhaul)
+- creeperoverhaul:dripstone_creeper (from Creeper Overhaul)
+- creeperoverhaul:cave_creeper (from Creeper Overhaul)
+- creeperoverhaul:dark_oak_creeper (from Creeper Overhaul)
+- creeperoverhaul:spruce_creeper (from Creeper Overhaul)
+- creeperoverhaul:beach_creeper (from Creeper Overhaul)
+- creeperoverhaul:snowy_creeper (from Creeper Overhaul)
+
+#naturalist:vulture_hostiles
+- minecraft:zombie (from Naturalist)
+- minecraft:zombie_villager (from Naturalist)
+- minecraft:husk (from Naturalist)
+- minecraft:zombified_piglin (from Naturalist)
+- minecraft:zoglin (from Naturalist)
+- minecraft:zombie_horse (from Naturalist)
+
+#ftbchunks:entity_interact_whitelist
+- corpse:corpse? (from FTB Chunks)
+
+#c:minecarts
+- minecraft:minecart (from Fabric Convention Tags)
+- minecraft:tnt_minecart (from Fabric Convention Tags)
+- minecraft:chest_minecart (from Fabric Convention Tags)
+- minecraft:furnace_minecart (from Fabric Convention Tags)
+- minecraft:command_block_minecart (from Fabric Convention Tags)
+- minecraft:hopper_minecart (from Fabric Convention Tags)
+- minecraft:spawner_minecart (from Fabric Convention Tags)

@@ -10,7 +10,8 @@ ServerEvents.recipes(e => {
         'techreborn:crafting_table/machine/extractor',
         'techreborn:crafting_table/battery/red_cell_battery',
         'techreborn:crafting_table/tool/electric_treetap',
-        'techreborn:crafting_table/machine/auto_crafting_table'
+        'techreborn:crafting_table/machine/auto_crafting_table',
+        'techreborn:crafting_table/machine/recycler'
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
