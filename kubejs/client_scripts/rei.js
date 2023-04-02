@@ -15,7 +15,8 @@ const REI_DELETED_ITEMS = [
     'kibe:xp_shower',
     'kibe:xp_drain',
     'ae2:sky_stone_tank',
-    'modern_industrialization:guidebook'
+    'modern_industrialization:guidebook',
+    'techreborn:nichrome_heating_coil'
 ];
 
 REIEvents.hide('item', e => {

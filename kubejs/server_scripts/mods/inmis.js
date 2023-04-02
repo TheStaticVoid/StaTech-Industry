@@ -4,7 +4,8 @@ ServerEvents.recipes(e => {
         'inmis:plated_backpack',
         'inmis:gilded_backpack',
         'inmis:bejeweled_backpack',
-        'inmis:endless_backpack'
+        'inmis:endless_backpack',
+        'inmis:blazing_backpack'
     ];
     INMIS_DELETED_RECIPES.forEach(id => e.remove({id: id}));
 

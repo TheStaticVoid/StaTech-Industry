@@ -44,4 +44,35 @@ ServerEvents.recipes(e => {
             }
         ]
     });
+
+    // -- ELECTROLYZING SALT -- //
+    e.custom({
+        type: 'modern_industrialization:electrolyzer',
+        eu: 16,
+        duration: 400,
+        item_inputs: [
+            {
+                amount: 2,
+                tag: 'c:salt_dusts'
+            }
+        ],
+        fluid_inputs: [
+            {
+                amount: 100,
+                fluid: 'minecraft:water'
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: 'modern_industrialization:sodium_dust'
+            }
+        ],
+        fluid_outputs: [
+            {
+                amount: 125,
+                fluid: 'modern_industrialization:chlorine'
+            }
+        ]
+    });
 });

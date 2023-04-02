@@ -1,7 +1,7 @@
 ServerEvents.recipes(e => {
     const DELETED_RECIPE = [
         'modern_industrialization:materials/diamond/compressor/main',
-        'modern_industrialization:materials/diamond/emerald/main',
+        'modern_industrialization:materials/emerald/compressor/main',
         'modern_industrialization:vanilla_recipes/compressor/paper_with_sugarcane'
     ];
     DELETED_RECIPE.forEach(id => e.remove({id: id}));
@@ -10,7 +10,7 @@ ServerEvents.recipes(e => {
     e.custom({
         type: 'modern_industrialization:compressor',
         duration: 800,
-        eu: 34,
+        eu: 48,
         item_inputs: [
             {
                 amount: 1,
@@ -29,7 +29,7 @@ ServerEvents.recipes(e => {
     e.custom({
         type: 'modern_industrialization:compressor',
         duration: 800,
-        eu: 34,
+        eu: 48,
         item_inputs: [
             {
                 amount: 1,

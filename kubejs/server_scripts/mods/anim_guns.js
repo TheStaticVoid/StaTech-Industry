@@ -1,16 +1,26 @@
 ServerEvents.recipes(e => {
-    e.remove({ id: 'anim_guns:hardened_iron_ingot_from_blasting' });
-    e.custom({
-        type: 'modern_industrialization:blast_furnace',
-        eu: 16,
-        duration: 300,
-        item_inputs: {
-            tag: 'c:iron_ingots',
-            amount: 1
-        },
-        item_outputs: {
-            item: 'anim_guns:hardened_iron_ingot',
-            amount: 1
-        }
-    });
+    const REMOVED_RECIPES = [
+        'anim_guns:hardened_iron_ingot_from_blasting',
+        'anim_guns:plastic',
+        'anim_guns:plastic_exported_mi_furnace'
+    ];
+    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+});
+
+ServerEvents.tags('item', e => {
+    const GUNS = [
+        'anim_guns:pistol_light',
+        'anim_guns:pistol_heavy',
+        'anim_guns:revolver_magnum',
+        'anim_guns:revolver_coltarmy',
+        'anim_guns:smg_machinepistol',
+        'anim_guns:assaultrifle_light',
+        'anim_guns:assaultrifle_heavy',
+        'anim_guns:assaultrifle_rus',
+        'anim_guns:shotgun_doublebarrel',
+        'anim_guns:shotgun_combat',
+        'anim_guns:sniper_classic',
+        'anim_guns:sniper_cowboy'
+    ];
+    GUNS.forEach(id => e.add('kubejs:guns', id));
 });

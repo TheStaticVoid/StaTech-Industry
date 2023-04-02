@@ -22,7 +22,10 @@ ServerEvents.recipes(e => {
         'modern_industrialization:materials/cupronickel/craft/coil',
         'modern_industrialization:guidebook',
         'modern_industrialization:vanilla_recipes/chains',
-        'modern_industrialization:vanilla_recipes/packager/chains'
+        'modern_industrialization:vanilla_recipes/packager/chains',
+        'modern_industrialization:materials/electrolyzer/salt_electrolysis',
+        'modern_industrialization:materials/kanthal/craft/coil',
+        'modern_industrialization:materials/superconductor/craft/coil'
     ];
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     
