@@ -808,7 +808,7 @@
 		}
 		{
 			title: "Steel Upgrades"
-			x: 15.5d
+			x: 16.0d
 			y: 16.0d
 			shape: "rsquare"
 			description: ["Instead of crafting entirely new machines, you can use the Steel Upgrade with a Bronze Machine in a Smithing Table to upgrade it into its Steel version."]
@@ -835,7 +835,7 @@
 			]
 		}
 		{
-			x: 15.5d
+			x: 16.0d
 			y: 15.0d
 			shape: "rsquare"
 			description: ["With a few steel plates, you can craft the Automatic Trash Can. It will destroy any item or fluid that is piped into it."]
@@ -853,7 +853,7 @@
 			}]
 		}
 		{
-			x: 16.5d
+			x: 17.0d
 			y: 15.0d
 			shape: "rsquare"
 			description: ["The Steel Unpacker, a new machine only available in Steel. It acts to unpack items, check REI for recipes."]
@@ -871,7 +871,7 @@
 			}]
 		}
 		{
-			x: 17.5d
+			x: 18.0d
 			y: 15.0d
 			shape: "rsquare"
 			description: ["The Steel Packer, a new machine only available in Steel, can perform simple crafts for you. You can now automate double ingots and pipes. Check REI for all the recipes."]
@@ -890,7 +890,7 @@
 		}
 		{
 			title: "Packer Templates"
-			x: 17.5d
+			x: 18.0d
 			y: 16.0d
 			shape: "rsquare"
 			description: ["For those of you who have played GregTech, these are similar to using circuit numbers in recipes. Similar to that sytem, using one of these items in a recipe will tell the Packer what recipe to use without consuming the item."]
@@ -1667,7 +1667,7 @@
 			}]
 		}
 		{
-			x: 14.5d
+			x: 15.0d
 			y: 15.0d
 			shape: "rsquare"
 			description: ["The Steel Tank is an upgrade to the Bronze Tank from earlier. It now can store up to 8000 mB of any fluid and continues to retain it's inventory when broken."]
@@ -1685,7 +1685,7 @@
 			}]
 		}
 		{
-			x: 14.5d
+			x: 15.0d
 			y: 16.0d
 			shape: "rsquare"
 			description: ["An upgrade to the Bronze Barrel. This barrel can hold up to 128 stacks of the same item. Probably really good for all the cobblestone you've been amassing."]
@@ -1727,7 +1727,7 @@
 			}]
 		}
 		{
-			x: 16.5d
+			x: 17.0d
 			y: 16.0d
 			shape: "rsquare"
 			description: ["Probably the least interesting thing you can make with your new Steel is armor. It's definitely an upgrade from Iron, but I wouldn't recommend making it unless you have a lot of extra Steel or are having trouble with mobs."]
@@ -1830,7 +1830,7 @@
 			}]
 		}
 		{
-			x: 13.5d
+			x: 14.0d
 			y: 15.0d
 			shape: "rsquare"
 			description: ["The Steel Boiler is an upgrade to your Bronze Boiler. It can produce up to 16 EU/t worth of Steam, double that of the Bronze."]
@@ -1883,7 +1883,7 @@
 		}
 		{
 			title: "Travel Anchors"
-			x: 13.5d
+			x: 14.0d
 			y: 16.0d
 			shape: "rsquare"
 			description: ["Travel Anchors are pulled straight out of EnderIO. You can place them down, name them, and use the wand to warp between them. You can also stand on them to warp to others by looking at them and pressing right-click."]
@@ -1989,7 +1989,7 @@
 			}]
 		}
 		{
-			x: 12.5d
+			x: 13.0d
 			y: 15.0d
 			shape: "rsquare"
 			description: ["The Magnet, when activated, will attract nearby dropped items to the player."]
@@ -2560,6 +2560,39 @@
 				id: "15C928FFF6CA7936"
 				type: "xp"
 				xp: 100
+			}]
+		}
+		{
+			x: 13.0d
+			y: 16.0d
+			shape: "rsquare"
+			subtitle: "Dungeons, pyramids, and strongholds. Oh my!"
+			description: ["The Explorer's Compass is similar to the Nature's Compass in concept, except it will focus in on any structure in the game. "]
+			dependencies: ["45CE5F461A159F66"]
+			id: "2A34BE4E2ACB0B5B"
+			tasks: [{
+				id: "7D2EFF47926958B7"
+				type: "item"
+				item: {
+					id: "explorerscompass:explorerscompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "3D9FF7EF5D3B6704"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.0d
+			id: "29D1C9F53F1721BF"
+			tasks: [{
+				id: "6E0FD7B7CFD112EA"
+				type: "item"
+				item: "measurements:tape_measure"
 			}]
 		}
 	]
