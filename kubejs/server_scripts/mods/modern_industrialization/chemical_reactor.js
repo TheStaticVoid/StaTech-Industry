@@ -21,4 +21,29 @@ ServerEvents.recipes(e => {
             }
         ]
     });
+
+    // -- PLASTIC BAR -- //
+    e.custom({
+        type: 'modern_industrialization:chemical_reactor',
+        eu: 16,
+        duration: 300,
+        item_inputs: [
+            {
+                amount: 1,
+                item: 'minecraft:paper'
+            }
+        ],
+        fluid_inputs: [
+            {
+                amount: 500,
+                fluid: 'modern_industrialization:polyethylene'
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: 'anim_guns:plastic'
+            }
+        ]
+    });
 });

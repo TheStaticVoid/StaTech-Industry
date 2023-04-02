@@ -11,7 +11,7 @@
 		{
 			title: "Bouncy Transportation"
 			x: -1.0d
-			y: 1.0d
+			y: 5.5d
 			shape: "rsquare"
 			description: [
 				"This item combo is a modded Minecraft classic. You can charge the Slime Sling up and it will launch you in the opposite direction. The Slime Boots will negate all fall damage and cause you to bounce. "
@@ -47,7 +47,7 @@
 		}
 		{
 			x: -2.5d
-			y: 1.0d
+			y: 4.0d
 			shape: "rsquare"
 			subtitle: "Moves fluids instead of items!"
 			description: [
@@ -68,8 +68,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: 1.0d
+			x: -1.0d
+			y: 2.5d
 			shape: "rsquare"
 			description: ["The Redstone Timer will toggle its output state after a set amount of ticks. You can adjust the delay by right clicking the block."]
 			id: "7AE5106D5AF45BED"
@@ -151,7 +151,7 @@
 		}
 		{
 			x: -1.0d
-			y: 5.5d
+			y: 7.0d
 			shape: "rsquare"
 			description: ["Drawbridges will place the blocks in its inventory directly in front of it when powered by redstone."]
 			id: "7A956433C33A9C44"
@@ -202,7 +202,7 @@
 		}
 		{
 			x: -1.0d
-			y: 7.0d
+			y: 8.5d
 			shape: "rsquare"
 			description: ["Melts ice and snow in a 3x3 chunk radius when powered by redstone."]
 			id: "291CD73E1846E514"
@@ -219,7 +219,7 @@
 		}
 		{
 			x: -1.0d
-			y: 8.5d
+			y: 10.0d
 			shape: "rsquare"
 			description: ["Prevents rain / snow particles in a 3x3 chunk radius when powered by redstone."]
 			id: "060A731AEBEA372B"
@@ -358,8 +358,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 10.0d
+			x: -2.5d
+			y: 2.5d
 			shape: "rsquare"
 			description: ["The Sleeping Bag lets you sleep anywhere without overwriting your bed spawn point."]
 			id: "4280BD3627ECC8A2"
@@ -484,8 +484,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 10.0d
+			x: -4.0d
+			y: 2.5d
 			shape: "rsquare"
 			description: ["The Escape Rope is a quick and easy way to get out of a cave. When used, it teleports you to the highest point above you in the world."]
 			id: "375463DA61D3A69C"
@@ -822,10 +822,10 @@
 					tag: {
 						BlockEntityTag: {
 							Items: [ ]
-							y: 64
+							x: -198
 							id: "kibe:cooler"
 							z: 126
-							x: -198
+							y: 64
 						}
 					}
 				}
@@ -837,8 +837,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 8.5d
+			x: 2.0d
+			y: 10.0d
 			shape: "rsquare"
 			description: ["Kibe is a special food added by Kibe."]
 			id: "0A90B4083920FDBD"
@@ -854,8 +854,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 10.0d
+			x: 0.5d
+			y: 11.5d
 			shape: "rsquare"
 			description: ["A very filling food item."]
 			dependencies: ["0A90B4083920FDBD"]
@@ -872,8 +872,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 11.5d
+			x: 2.0d
+			y: 13.0d
 			shape: "rsquare"
 			description: ["An insanely filling food. You'll only need one to fill yourself up completely."]
 			dependencies: ["6EC19D9A85925FE2"]
@@ -890,8 +890,8 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 10.0d
+			x: 3.5d
+			y: 11.5d
 			shape: "rsquare"
 			description: ["A dubious food item that may lead to an early death."]
 			dependencies: ["0A90B4083920FDBD"]
@@ -909,8 +909,8 @@
 		}
 		{
 			title: "Wither Builder"
-			x: 0.5d
-			y: 1.0d
+			x: -1.0d
+			y: 4.0d
 			shape: "square"
 			description: [
 				"Fighting the Wither can be very dangerous and can cause a lot of damage to your world if you're not careful."

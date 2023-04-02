@@ -21,4 +21,11 @@ ServerEvents.recipes(e => {
             }
         ]
     });
+
+    const RECIPES = [
+        'modern_industrialization:vanilla_recipes/mixer/granite',
+        'modern_industrialization:vanilla_recipes/mixer/mud',
+
+    ];
+    //RECIPES.forEach(id => e.remove({id: id}));
 });

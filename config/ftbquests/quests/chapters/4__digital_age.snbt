@@ -1,0 +1,238 @@
+{
+	id: "569B3ABF590052B4"
+	group: "592A9A0E9A131D28"
+	order_index: 3
+	filename: "4__digital_age"
+	title: "4 - Digital Age"
+	icon: "modern_industrialization:digital_circuit"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: -6.5d
+			subtitle: "Push it to the limit"
+			description: [
+				"The HV Steam Turbine can produce up to 512 EU/t. It consumes steam in a 1:1 ratio to generate power."
+				""
+				"The HV Steam Turbine is the last single-block steam energy generator you will have access to. "
+				""
+				"Remember that only HV Cables will connect to the HV Steam Turbine."
+				""
+				"Note: This Steam Turbine will not accept High Pressure Steam."
+			]
+			dependencies: ["13156F21ECE373E3"]
+			id: "5AF44D0A39BA6091"
+			tasks: [{
+				id: "44BC354EEA8BB048"
+				type: "item"
+				item: "modern_industrialization:hv_steam_turbine"
+			}]
+			rewards: [{
+				id: "27714A9F1C468666"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: ["The Turbo Diesel Generator can produce up to 1024 EU/t. You can REI for a list of fuels and how much EU per mB they produce."]
+			dependencies: ["13156F21ECE373E3"]
+			id: "2CC2860405BF4D13"
+			tasks: [{
+				id: "12F0A1BDC380DB4C"
+				type: "item"
+				item: "modern_industrialization:turbo_diesel_generator"
+			}]
+			rewards: [{
+				id: "47274EC3651DFF6C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			description: ["The Turbo Machine Hull is the main machine hull of the HV tier of power. You can upgrade your existing machines or use it to craft brand new multiblocks!"]
+			id: "13156F21ECE373E3"
+			tasks: [{
+				id: "4E33CDCAB3B89EF3"
+				type: "item"
+				item: "modern_industrialization:turbo_machine_hull"
+			}]
+			rewards: [{
+				id: "27043A9AF265FB26"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			description: ["With Turbo Machine Hulls you can now create the next tier of solar. These will passively generate 48 EU/t during the day and 8 EU/t at night (due to magic I suppose)."]
+			dependencies: ["13156F21ECE373E3"]
+			id: "760AEF21E6403F48"
+			tasks: [{
+				id: "19653F8AC2A51DA6"
+				type: "item"
+				item: "techreborn:industrial_solar_panel"
+			}]
+			rewards: [{
+				id: "66B4297A12650D5A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			description: ["HV Storage Units have an interal buffer of 6.144M EU. A single one of these will make an extremely valuable power buffer for any setup you currently have."]
+			dependencies: ["13156F21ECE373E3"]
+			id: "1B0452A4C5B49AA7"
+			tasks: [{
+				id: "5AF9EDECDEB7C131"
+				type: "item"
+				item: "modern_industrialization:hv_storage_unit"
+			}]
+			rewards: [{
+				id: "196A6BFFBDBA7327"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.5d
+			subtitle: "One man's trash..."
+			description: [
+				"The Matter Fabricator is an advanced machine that can create UU-Matter from scrap fed into it."
+				""
+				"UU-Matter is pretty important, as it can be used to create Iridium"
+			]
+			dependencies: ["13156F21ECE373E3"]
+			id: "6288718990D88342"
+			tasks: [{
+				id: "5A9CD8D64D036513"
+				type: "item"
+				item: "techreborn:matter_fabricator"
+			}]
+			rewards: [{
+				id: "331F941508D68501"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			subtitle: "Nearly magic!"
+			description: ["UU-Matter can craft a variety of things, some of the most notable is Iridium, Platinum, and Chromium. There are other ways to get infinite amounts of those ores, but this offers another viable method in generating these resources."]
+			dependencies: ["6288718990D88342"]
+			size: 1.5d
+			id: "097A441985DCD241"
+			tasks: [{
+				id: "2A7EB1EC6AE6025D"
+				type: "item"
+				item: "techreborn:uu_matter"
+			}]
+			rewards: [{
+				id: "7DDC924010E278CA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Distillation Tower"
+			icon: "modern_industrialization:distillation_tower"
+			x: 2.75d
+			y: 1.5d
+			subtitle: "Advanced Petrochemistry!"
+			description: [
+				"Now that you have Digital Circuits you can create the Distillation Tower. The single-block Distillery only gives you one oil processing output, but the tower gives you ONE PER LAYER."
+				""
+				"By default the controller has a height value set to one. You will need to update this if you plan to add more layers. You can view the Ponder scene by holding 'W' on the Distillation Tower block in your inventory to view how to build it, or you can hold your wrench out with the controller placed to view where to place the blocks."
+			]
+			dependencies: ["13156F21ECE373E3"]
+			size: 1.5d
+			id: "3FE23DA95839AA3D"
+			tasks: [
+				{
+					id: "3E392FF33EE54BF5"
+					type: "item"
+					item: "modern_industrialization:distillation_tower"
+				}
+				{
+					id: "15CB57D7AF467A7A"
+					type: "item"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					count: 28L
+				}
+				{
+					id: "718E08F25DADD3FA"
+					type: "item"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					count: 3L
+				}
+				{
+					id: "627A8BD620D43096"
+					type: "item"
+					title: "Any 3x Fluid Output Hatches"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "1E1B7D730D4CE82D"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "261BE321B621B799"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.75d
+			y: -0.5d
+			subtitle: "To the Stars!"
+			description: [
+				"With your new Turbo Machine Hulls and Digital Circuits you now have access to the Fuel Refinery from Ad Astra. The refinery will be required to taking your first rocket to the moon and other celestial bodies."
+				""
+				"Ad Astra progression will not gate your Modern Industrialization mod progress, however if you plan to complete the pack you will need to obtain the Jet Suit, an endgame Ad Astra armor set. I recommend going down the Ad Astra progression ASAP because the Jet Suit is a really nice armor set to have and you can set up a space station too if you'd like! The rest of the Ad Astra progression can be found in it's separate mod tab."
+				""
+				"My recommendation is to wait to do Ad Astra until you have Nuclear Reactors setup, as they take a long time to deplete fuel and progressing through Ad Astra is a good way to pass the time."
+				""
+				"To make Fuel for your rocket, place Boosted Diesel in the Fuel Refinery to convert it in a 2:1 ratio. How is diesel being converted into rocket fuel you might ask? Magic !"
+			]
+			dependencies: ["13156F21ECE373E3"]
+			size: 1.5d
+			id: "6EE3455457F0E943"
+			tasks: [{
+				id: "009B686B13676C72"
+				type: "item"
+				item: "ad_astra:fuel_refinery"
+			}]
+			rewards: [{
+				id: "5B821F6915969DAB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}

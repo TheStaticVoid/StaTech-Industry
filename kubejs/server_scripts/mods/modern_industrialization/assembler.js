@@ -17,6 +17,25 @@ ServerEvents.recipes(e => {
             }
         ]
     });
+    
+    // -- KANTHAL HEATING COIL -- //
+    e.custom({
+        type: 'modern_industrialization:assembler',
+        duration: 400,
+        eu: 48,
+        item_inputs: [
+            {
+                amount: 4,
+                item: 'modern_industrialization:kanthal_wire'
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: 'techreborn:kanthal_heating_coil'
+            }
+        ]
+    });
 
     // -- AUTO CRAFTING TABLE -- //
     e.custom({

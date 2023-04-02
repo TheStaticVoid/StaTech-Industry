@@ -8,7 +8,8 @@ ServerEvents.recipes(e => {
         'ironchests:gold_chest_upgrade',
         'ironchests:diamond_chest_upgrade',
         'ironchests:copper_chest_upgrade',
-        'ironchests:iron_dolly'
+        'ironchests:iron_dolly',
+        'ironchests:diamond_dolly'
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
@@ -120,6 +121,17 @@ ServerEvents.recipes(e => {
         R: '#c:iron_rods',
         C: 'create:cogwheel',
         P: '#c:iron_plates'
+    });
+
+    // -- DIAMOND DOLLY -- //
+    e.shaped('ironchests:diamond_dolly', [
+        'D D',
+        'D D',
+        'WDW'
+    ],
+    {
+        D: '#c:diamond_plates',
+        W: 'ad_astra:wheel'
     });
 });
 

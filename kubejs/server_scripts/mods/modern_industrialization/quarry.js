@@ -1,7 +1,8 @@
 ServerEvents.recipes(e => {
     const REMOVED_RECIPES = [
         'modern_industrialization:quarry/bronze',
-        'modern_industrialization:quarry/gold'
+        'modern_industrialization:quarry/gold',
+        'modern_industrialization:quarry/stainless_steel'
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
@@ -155,4 +156,40 @@ ServerEvents.recipes(e => {
             }
         ]
     });
+
+    // -- STAINLESS STEEL -- //
+    e.custom({
+        type: 'modern_industrialization:quarry',
+        eu: 64,
+        duration: 600,
+        item_inputs: [
+            {
+                item: 'modern_industrialization:stainless_steel_drill',
+                amount: 1,
+                probability: 0.04
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: 'modern_industrialization:titanium_ore',
+                probability: 0.15
+            },
+            {
+                amount: 1,
+                item: 'modern_industrialization:tungsten_ore',
+                probability: 0.20
+            },
+            {
+                amount: 1,
+                item: 'modern_industrialization:mozanite_ore',
+                probability: 0.25
+            },
+            {
+                amount: 1,
+                item: 'modern_industrialization:platinum_ore',
+                probability: 0.12
+            }
+        ]
+    })
 });
