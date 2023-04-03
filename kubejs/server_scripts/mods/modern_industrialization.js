@@ -68,6 +68,21 @@ ServerEvents.recipes(e => {
         F: 'modern_industrialization:electric_furnace'
     });
 
+    // -- ROCKET PART ASSEMBLER -- //
+    e.shaped('modern_industrialization:rocket_part_assembler', [
+        'RMR',
+        'GHG',
+        'APA'
+    ],
+    {
+        R: 'modern_industrialization:robot_arm',
+        M: 'modern_industrialization:advanced_motor',
+        G: 'modern_industrialization:stainless_steel_gear',
+        H: 'modern_industrialization:turbo_machine_hull',
+        A: 'modern_industrialization:aluminum_cable',
+        P: 'modern_industrialization:advanced_pump'
+    });
+
     // -- Gravichestplate -- //
     e.shaped('modern_industrialization:gravichestplate', [
         'PUP',
