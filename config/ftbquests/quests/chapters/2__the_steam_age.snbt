@@ -665,7 +665,7 @@
 		{
 			icon: "modern_industrialization:steam_blast_furnace"
 			x: 7.5d
-			y: 12.5d
+			y: 13.0d
 			shape: "square"
 			subtitle: "Better than the vanilla version!"
 			description: [
@@ -734,7 +734,7 @@
 		{
 			title: "Steel Ingots"
 			x: 15.5d
-			y: 12.5d
+			y: 13.0d
 			shape: "square"
 			subtitle: "The beginning of industry"
 			description: [
@@ -766,7 +766,7 @@
 		{
 			title: "Item Pipes"
 			x: 17.5d
-			y: 12.5d
+			y: 13.0d
 			shape: "square"
 			description: [
 				"Item Pipes are very similar to the Fluid Pipe counterpart, except they transfer items instead of fluids. Alongside this, there are several other changes:"
@@ -809,7 +809,7 @@
 		{
 			title: "Steel Upgrades"
 			x: 16.0d
-			y: 16.0d
+			y: 16.5d
 			shape: "rsquare"
 			description: ["Instead of crafting entirely new machines, you can use the Steel Upgrade with a Bronze Machine in a Smithing Table to upgrade it into its Steel version."]
 			dependencies: ["45CE5F461A159F66"]
@@ -836,7 +836,7 @@
 		}
 		{
 			x: 16.0d
-			y: 15.0d
+			y: 15.5d
 			shape: "rsquare"
 			description: ["With a few steel plates, you can craft the Automatic Trash Can. It will destroy any item or fluid that is piped into it."]
 			dependencies: ["45CE5F461A159F66"]
@@ -854,7 +854,7 @@
 		}
 		{
 			x: 17.0d
-			y: 15.0d
+			y: 15.5d
 			shape: "rsquare"
 			description: ["The Steel Unpacker, a new machine only available in Steel. It acts to unpack items, check REI for recipes."]
 			dependencies: ["45CE5F461A159F66"]
@@ -872,7 +872,7 @@
 		}
 		{
 			x: 18.0d
-			y: 15.0d
+			y: 15.5d
 			shape: "rsquare"
 			description: ["The Steel Packer, a new machine only available in Steel, can perform simple crafts for you. You can now automate double ingots and pipes. Check REI for all the recipes."]
 			dependencies: ["45CE5F461A159F66"]
@@ -891,7 +891,7 @@
 		{
 			title: "Packer Templates"
 			x: 18.0d
-			y: 16.0d
+			y: 16.5d
 			shape: "rsquare"
 			description: ["For those of you who have played GregTech, these are similar to using circuit numbers in recipes. Similar to that sytem, using one of these items in a recipe will tell the Packer what recipe to use without consuming the item."]
 			dependencies: ["759C375900C081FF"]
@@ -918,7 +918,7 @@
 			title: "Steam Quarry"
 			icon: "modern_industrialization:steam_quarry"
 			x: 20.0d
-			y: 12.5d
+			y: 13.0d
 			shape: "square"
 			subtitle: "Ores Ad Nauseam"
 			description: [
@@ -1001,7 +1001,7 @@
 		}
 		{
 			x: 22.0d
-			y: 11.5d
+			y: 12.0d
 			shape: "rsquare"
 			description: ["Putting the Bronze Drill in the Steam Quarry will return ores in the item output. Make sure to pipe out the items immediately so you don't void any of the ores!"]
 			dependencies: ["1F5ACBB3A3D021B3"]
@@ -1027,7 +1027,7 @@
 		}
 		{
 			x: 22.0d
-			y: 13.5d
+			y: 14.0d
 			shape: "rsquare"
 			description: ["Putting a Copper Drill in a Steam Quarry is a good way to get various types of stones. Make sure to pipe out the items immediately to avoid voiding any outputs!"]
 			dependencies: ["1F5ACBB3A3D021B3"]
@@ -1668,7 +1668,7 @@
 		}
 		{
 			x: 15.0d
-			y: 15.0d
+			y: 15.5d
 			shape: "rsquare"
 			description: ["The Steel Tank is an upgrade to the Bronze Tank from earlier. It now can store up to 8000 mB of any fluid and continues to retain it's inventory when broken."]
 			dependencies: ["45CE5F461A159F66"]
@@ -1686,7 +1686,7 @@
 		}
 		{
 			x: 15.0d
-			y: 16.0d
+			y: 16.5d
 			shape: "rsquare"
 			description: ["An upgrade to the Bronze Barrel. This barrel can hold up to 128 stacks of the same item. Probably really good for all the cobblestone you've been amassing."]
 			dependencies: ["45CE5F461A159F66"]
@@ -1728,7 +1728,7 @@
 		}
 		{
 			x: 17.0d
-			y: 16.0d
+			y: 16.5d
 			shape: "rsquare"
 			description: ["Probably the least interesting thing you can make with your new Steel is armor. It's definitely an upgrade from Iron, but I wouldn't recommend making it unless you have a lot of extra Steel or are having trouble with mobs."]
 			dependencies: ["45CE5F461A159F66"]
@@ -1787,7 +1787,7 @@
 		}
 		{
 			x: 5.0d
-			y: 12.0d
+			y: 12.5d
 			shape: "rsquare"
 			description: [
 				"Once you have Steel, you can upgrade any one of your hatches on the Steam Blast Furnace to allow it to process 4 EU/t recipes."
@@ -1809,7 +1809,7 @@
 		}
 		{
 			x: 5.0d
-			y: 13.5d
+			y: 14.0d
 			shape: "rsquare"
 			description: [
 				"Once you have Steel, you can upgrade any one of your hatches on the Steam Blast Furnace to allow it to process 4 EU/t recipes."
@@ -1831,7 +1831,7 @@
 		}
 		{
 			x: 14.0d
-			y: 15.0d
+			y: 15.5d
 			shape: "rsquare"
 			description: ["The Steel Boiler is an upgrade to your Bronze Boiler. It can produce up to 16 EU/t worth of Steam, double that of the Bronze."]
 			dependencies: ["45CE5F461A159F66"]
@@ -1884,7 +1884,7 @@
 		{
 			title: "Travel Anchors"
 			x: 14.0d
-			y: 16.0d
+			y: 16.5d
 			shape: "rsquare"
 			description: ["Travel Anchors are pulled straight out of EnderIO. You can place them down, name them, and use the wand to warp between them. You can also stand on them to warp to others by looking at them and pressing right-click."]
 			dependencies: ["45CE5F461A159F66"]
@@ -1990,7 +1990,7 @@
 		}
 		{
 			x: 13.0d
-			y: 15.0d
+			y: 15.5d
 			shape: "rsquare"
 			description: ["The Magnet, when activated, will attract nearby dropped items to the player."]
 			dependencies: ["45CE5F461A159F66"]
@@ -2564,7 +2564,7 @@
 		}
 		{
 			x: 13.0d
-			y: 16.0d
+			y: 16.5d
 			shape: "rsquare"
 			subtitle: "Dungeons, pyramids, and strongholds. Oh my!"
 			description: ["The Explorer's Compass is similar to the Nature's Compass in concept, except it will focus in on any structure in the game. "]
@@ -2593,6 +2593,24 @@
 				id: "6E0FD7B7CFD112EA"
 				type: "item"
 				item: "measurements:tape_measure"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 12.0d
+			shape: "rsquare"
+			description: ["The Resin Basin can be used to semi-automate extracting sap from Rubber Trees. When placed at the base of the tree, they will slowly extract Sap from the tree. This Sap can be collected by right-clicking the basin. "]
+			dependencies: ["68DF10A8AB2D074A"]
+			id: "476DDBFB1BC389C0"
+			tasks: [{
+				id: "44EF1B5E8C94B2E0"
+				type: "item"
+				item: "techreborn:resin_basin"
+			}]
+			rewards: [{
+				id: "287AF4AB32A71055"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]

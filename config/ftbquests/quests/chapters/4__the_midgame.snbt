@@ -10,8 +10,48 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 20.0d
-			y: 13.5d
+			x: -6.5d
+			y: 3.0d
+			subtitle: "One man's trash..."
+			description: [
+				"The Matter Fabricator is an advanced machine that can create UU-Matter from scrap fed into it."
+				""
+				"UU-Matter is pretty important, as it can be used to create Iridium"
+			]
+			id: "6288718990D88342"
+			tasks: [{
+				id: "5A9CD8D64D036513"
+				type: "item"
+				item: "techreborn:matter_fabricator"
+			}]
+			rewards: [{
+				id: "331F941508D68501"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.0d
+			subtitle: "Nearly magic!"
+			description: ["UU-Matter can craft a variety of things, some of the most notable is Iridium, Platinum, and Chromium. There are other ways to get infinite amounts of those ores, but this offers another viable method in generating these resources."]
+			dependencies: ["6288718990D88342"]
+			size: 1.5d
+			id: "097A441985DCD241"
+			tasks: [{
+				id: "2A7EB1EC6AE6025D"
+				type: "item"
+				item: "techreborn:uu_matter"
+			}]
+			rewards: [{
+				id: "7DDC924010E278CA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.0d
 			dependencies: ["6375B17635AAC09D"]
 			id: "354C87C444B34193"
 			tasks: [{
@@ -21,39 +61,8 @@
 			}]
 		}
 		{
-			title: "Stainless Steel Drills"
-			x: 20.0d
-			y: 12.0d
-			description: [
-				"With access to Digital Circuits you can now craft Stainless Steel Drills. These can be used both in an &bElectric Quarry&f and an &aOil Drilling Rig."
-				""
-				"If used in the Electric Quarry, it will be your main source of Titanium, Tungsten, Mozanite, and Platinum Ore. When used in an Oil Drilling Rig it will mine 4000 mB of Shale Oil. I'd highly recommend using these instead of your Aluminum Drill for oil processing as you get a lot more oil."
-			]
-			dependencies: ["575EE8E0720CE7DC"]
-			id: "347A75BBC27DCD31"
-			tasks: [{
-				id: "25885E4CDEAE56DF"
-				type: "item"
-				item: "modern_industrialization:stainless_steel_drill"
-				count: 4L
-			}]
-			rewards: [
-				{
-					id: "2BA8130EE7332C3B"
-					type: "item"
-					item: "modern_industrialization:stainless_steel_drill"
-					count: 4
-				}
-				{
-					id: "3B2ED1AF4548FF50"
-					type: "xp"
-					xp: 100
-				}
-			]
-		}
-		{
-			x: 22.5d
-			y: 13.5d
+			x: 5.0d
+			y: 6.0d
 			dependencies: ["354C87C444B34193"]
 			id: "57353B9BFF2CF1E6"
 			tasks: [{
@@ -64,8 +73,8 @@
 		}
 		{
 			title: "Titanium"
-			x: 17.5d
-			y: 9.5d
+			x: 0.0d
+			y: 2.0d
 			description: ["Titanium Ore can only be acquired from an Electric Quarry using the Stainless Steel Drill. Processing Raw Titanium into a dust requires Manganese Sulfuric Solution, which you already have some of from the Stainless Steel processing."]
 			dependencies: ["68DDFA6E0465E81E"]
 			size: 1.5d
@@ -84,8 +93,8 @@
 		{
 			title: "The Pressurizer"
 			icon: "modern_industrialization:pressurizer"
-			x: 18.0d
-			y: 7.5d
+			x: 0.5d
+			y: 0.0d
 			subtitle: "Under pressure"
 			description: [
 				"The Pressurizer is a new multiblock made of Titanium that can turn water into High Pressure Water and Steam, and the inverse."
@@ -160,8 +169,8 @@
 		{
 			title: "High Pressure Large Steam Boiler"
 			icon: "modern_industrialization:high_pressure_large_steam_boiler"
-			x: 18.0d
-			y: 5.5d
+			x: 0.5d
+			y: -2.0d
 			description: [
 				"The High Pressure Steam Boiler can produce up to 2048 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
 				""
@@ -232,8 +241,8 @@
 		{
 			title: "The Large Steam Turbine"
 			icon: "modern_industrialization:large_steam_turbine"
-			x: 18.0d
-			y: 3.5d
+			x: 0.5d
+			y: -4.0d
 			description: [
 				"The Large Steam Turbine will accept both regular steam ( 1 mB = 1 EU ) and HP Steam ( 1 mB = 8 EU ) into EU, and will generate up to 16384 EU/t."
 				""
@@ -294,8 +303,8 @@
 		}
 		{
 			title: "Closed High Pressure Steam Loop"
-			x: 18.0d
-			y: 1.5d
+			x: 0.5d
+			y: -6.0d
 			description: [
 				"I've included a schematic for a prebuilt closed loop HP Steam Turbine setup. It can be found in 'schematics/prebuilts/' under the name 'closed_hp_steam_turbine_system.litematic'"
 				""
@@ -317,8 +326,8 @@
 			}]
 		}
 		{
-			x: 16.5d
-			y: 11.5d
+			x: -1.0d
+			y: 4.0d
 			subtitle: "GIGA DRILL BREAK"
 			description: [
 				"The Industrial Drill is an upgraded, electric powered drill that features a powered mode that can mine 3x3."
@@ -350,8 +359,8 @@
 			}]
 		}
 		{
-			x: 18.5d
-			y: 11.5d
+			x: 1.0d
+			y: 4.0d
 			subtitle: "Say goodbye to the rainforests"
 			description: [
 				"The Industrial Chainsaw is an upgraded, electric powered chainsaw that features a powered mode that can instamine entire trees."
@@ -383,8 +392,8 @@
 			}]
 		}
 		{
-			x: 16.5d
-			y: 13.0d
+			x: -1.0d
+			y: 5.5d
 			description: ["The Charge-o-Mat has an absolutely absurd 100M Energy buffer. Plugging this into your network may start draining it entirely, so be careful, but it is needed to charge the Industrial tools and Nanosaber."]
 			id: "1CC138DDB987411E"
 			tasks: [{
@@ -399,8 +408,8 @@
 			}]
 		}
 		{
-			x: 17.5d
-			y: 11.5d
+			x: 0.0d
+			y: 4.0d
 			subtitle: "Like a Protosaber!"
 			description: [
 				"The Nanosaber is an upgraded, electric powered sword that features a powered mode that can deal insane damage."
@@ -434,8 +443,8 @@
 		}
 		{
 			title: "Liquid Air Products"
-			x: 22.5d
-			y: 11.0d
+			x: 5.0d
+			y: 3.5d
 			description: [
 				"Centrifuging 3000 mB of Liquid Air will produce, 650 mB Oxygen, 2315 mB of Nitrogen, and a measly 35 mB of Argon."
 				""
@@ -467,14 +476,13 @@
 			}]
 		}
 		{
-			x: 20.0d
-			y: 9.5d
+			x: 2.5d
+			y: 2.0d
 			description: [
 				"Processing Raw Platinum will produce a little bit of Iridium Tiny Dust as well as 3x Platinum Tiny Dust. Both of these will be very important to obtain in larger amounts moving forward. "
 				""
 				"This Iridium generation method is very, very slow, but you will soon be able to access The Matter Replicator and UU-Matter."
 			]
-			dependencies: ["347A75BBC27DCD31"]
 			id: "73E92504C29F7181"
 			tasks: [{
 				id: "59EBACB2A31D7156"
@@ -488,8 +496,8 @@
 			}]
 		}
 		{
-			x: 20.5d
-			y: 7.5d
+			x: 3.0d
+			y: 0.0d
 			description: ["Iridium Tiny Dust will be needed in the production of Monocrystalline Silicon boules."]
 			dependencies: ["73E92504C29F7181"]
 			id: "0A7B765B2AC2DD6D"
@@ -505,8 +513,8 @@
 			}]
 		}
 		{
-			x: 19.5d
-			y: 7.5d
+			x: 2.0d
+			y: 0.0d
 			dependencies: ["73E92504C29F7181"]
 			id: "7111AA66B02C4877"
 			tasks: [{
@@ -516,8 +524,8 @@
 			}]
 		}
 		{
-			x: 22.5d
-			y: 9.5d
+			x: 5.0d
+			y: 2.0d
 			description: ["Combining Argon, Silicon, and a little bit of Iridium you will be able to produce your first Monocrystalline Silicon boule."]
 			dependencies: [
 				"0CF36C4D19B0CE1A"
@@ -536,8 +544,8 @@
 			}]
 		}
 		{
-			x: 22.5d
-			y: 7.5d
+			x: 5.0d
+			y: 0.0d
 			description: ["Luckily one boule is able to produce a significant amount of wafers. These will be important for Processing Unit components."]
 			dependencies: ["11D19824B39407CC"]
 			id: "76BD64AFCE37E528"
@@ -554,8 +562,8 @@
 		}
 		{
 			title: "Processing Unit Components"
-			x: 21.0d
-			y: 5.5d
+			x: 3.5d
+			y: -2.0d
 			description: ["It's time to pull it all together. These components from all over the chapter, if you're unable to make something, make sure you didn't miss a quest!"]
 			dependencies: [
 				"7111AA66B02C4877"
@@ -592,8 +600,8 @@
 			}]
 		}
 		{
-			x: 22.5d
-			y: 3.0d
+			x: 5.0d
+			y: -4.5d
 			subtitle: "EV Voltage Circuits"
 			description: [
 				"The Processing Unit is the key to EV-tier hulls, multiblocks, and recipes. "
@@ -615,10 +623,9 @@
 			}]
 		}
 		{
-			x: 23.5d
-			y: 12.0d
+			x: 6.0d
+			y: 4.5d
 			description: ["Tungsten is a fairly tough material, and will require an Implosion Chamber to efficiently create the material. To get to that point, you will need to convert your Tungsten into tiny dusts."]
-			dependencies: ["347A75BBC27DCD31"]
 			id: "1D9CEDDFFF1C8A7F"
 			tasks: [{
 				id: "1EB958B0AD967559"
@@ -632,8 +639,8 @@
 			}]
 		}
 		{
-			x: 25.0d
-			y: 12.0d
+			x: 7.5d
+			y: 4.5d
 			description: ["You can create Tungsten Nuggets by compressing Tungsten Tiny Dusts. This process is very, very slow, so you'll want to get as much as you need to make an Implosion Chamber and then never use the compressing method again."]
 			dependencies: ["1D9CEDDFFF1C8A7F"]
 			id: "3132A7C27E732259"
@@ -649,8 +656,8 @@
 			}]
 		}
 		{
-			x: 25.0d
-			y: 10.5d
+			x: 7.5d
+			y: 3.0d
 			description: ["You will need a Mixed Tungsten Ingot to make Blastproof Alloy Platings."]
 			dependencies: [
 				"3132A7C27E732259"
@@ -671,8 +678,8 @@
 		{
 			title: "The Implosion Compressor"
 			icon: "modern_industrialization:implosion_compressor"
-			x: 27.0d
-			y: 10.5d
+			x: 9.5d
+			y: 3.0d
 			subtitle: "KABOOOOOOM"
 			description: [
 				"The Implosion Compressor is able to compress dust and ingots of the most resistant materials. This includes Tungsten, Blastproof Alloy, and Beryllium. These materials are very important for nuclear fission!"
@@ -744,56 +751,9 @@
 			}]
 		}
 		{
-			title: "Mozanite Byproducts"
-			x: 21.0d
-			y: 11.0d
-			description: ["Mozanite on it's own is pretty useless, however running it through a Centrifuge will produce Neodymium, Yttrium, and Cadmium. These three materials will be important in components and processing in the late game."]
-			dependencies: ["347A75BBC27DCD31"]
-			id: "64C6B2B282D4DF0B"
-			tasks: [
-				{
-					id: "08F195A51BF8E52D"
-					type: "item"
-					item: "modern_industrialization:neodymium_dust"
-				}
-				{
-					id: "68B858F33A6DF949"
-					type: "item"
-					item: "modern_industrialization:yttrium_dust"
-				}
-				{
-					id: "2E14EB913B143B70"
-					type: "item"
-					item: "modern_industrialization:cadmium_dust"
-				}
-			]
-			rewards: [{
-				id: "28320A30E8D763F0"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 21.0d
-			y: 13.0d
-			description: ["The Stainless Steel Drill in an Oil Drilling Rig will give you Shale Oil. Passing this through a Distillation Tower will give you a Sulfuric Crude Oil, Sulfuric Naphtha, and a little bit of Helium. The first two can be processed down in a similar manner as you were before, but the latter, Helium, is very important as you move into the lategame."]
-			dependencies: ["347A75BBC27DCD31"]
-			id: "2158E2092F54EFC4"
-			tasks: [{
-				id: "6F9C80AD58495E6B"
-				type: "item"
-				item: "modern_industrialization:shale_oil_bucket"
-			}]
-			rewards: [{
-				id: "4530466C76F3AD31"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			icon: "modern_industrialization:high_pressure_advanced_large_steam_boiler"
-			x: 19.5d
-			y: 5.5d
+			x: 2.0d
+			y: -2.0d
 			description: [
 				"The High Pressure Advanced Steam Boiler can produce up to 8192 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
 				""
@@ -864,8 +824,8 @@
 		}
 		{
 			title: "AE2 Processors"
-			x: 32.0d
-			y: 4.5d
+			x: 14.5d
+			y: -3.0d
 			dependencies: ["0E556AD31516BB03"]
 			dependency_requirement: "one_completed"
 			id: "2BB495CFC3E6D6C8"
@@ -888,8 +848,8 @@
 			]
 		}
 		{
-			x: 34.5d
-			y: 4.5d
+			x: 17.0d
+			y: -3.0d
 			description: [
 				"With your Electronic Circuits you can now craft the AE2 Inscriber. The Inscriber is a necessary machine to create the AE2 Processors. While you can make the Printed Circuits in the Packer, you will ultimately need an Inscriber to combine the circuit with Printed Silicon to create the processors."
 				""
@@ -909,8 +869,8 @@
 			}]
 		}
 		{
-			x: 31.0d
-			y: 5.5d
+			x: 13.5d
+			y: -2.0d
 			id: "01D12D790B2DE5F5"
 			tasks: [{
 				id: "49D14D2D43E385A1"
@@ -924,8 +884,8 @@
 			}]
 		}
 		{
-			x: 32.0d
-			y: 7.5d
+			x: 14.5d
+			y: 0.0d
 			subtitle: "Heart of the Network"
 			description: [
 				"While technically not required to setup your first AE2 network, you will really want to craft at least one of these for now. "
@@ -954,8 +914,8 @@
 			}]
 		}
 		{
-			x: 29.5d
-			y: 7.0d
+			x: 12.0d
+			y: -0.5d
 			subtitle: "All your stuff in a single block"
 			description: [
 				"The ME Drive is a block designed to store Storage Cells. The Drive can hold 10 Storage Cells."
@@ -982,8 +942,8 @@
 		{
 			title: "Meteorite Compass"
 			icon: "ae2:meteorite_compass"
-			x: 33.5d
-			y: 3.5d
+			x: 16.0d
+			y: -4.0d
 			description: [
 				"If you've yet to find an AE2 meteorite, then you might want to make this compass. "
 				""
@@ -1012,8 +972,8 @@
 			}]
 		}
 		{
-			x: 33.5d
-			y: 7.5d
+			x: 16.0d
+			y: 0.0d
 			subtitle: "A MUCH better crafting table"
 			description: ["Attaching an ME Crafting Terminal to your AE2 network will grant you access to all the items stored within and and an included crafting grid you can use these stored items in. "]
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -1030,8 +990,8 @@
 			}]
 		}
 		{
-			x: 35.0d
-			y: 7.5d
+			x: 17.5d
+			y: 0.0d
 			subtitle: "That's how you do it"
 			dependencies: ["4372EB6B99CB383D"]
 			id: "4584D2A76B87D7F0"
@@ -1043,8 +1003,8 @@
 		}
 		{
 			title: "Patterns"
-			x: 35.0d
-			y: 9.0d
+			x: 17.5d
+			y: 1.5d
 			subtitle: "Get ready to autocraft!"
 			description: [
 				"Blank Patterns can be encoded in the ME Pattern Encoding Terminal. You can encode them either with a Crafting Pattern or a Processing Pattern. The Encoded Pattern is then used to control crafting by inserting them into Molecular Assemblers or ME Pattern Providers."
@@ -1078,8 +1038,8 @@
 			]
 		}
 		{
-			x: 29.5d
-			y: 8.0d
+			x: 12.0d
+			y: 0.5d
 			subtitle: "It's like magic!"
 			description: [
 				"The Molecular Assembler is a powered machine which crafts items. It can be upgraded by inserting Acceleration Cards into it; once upgraded it is very fast."
@@ -1104,8 +1064,8 @@
 			}]
 		}
 		{
-			x: 29.5d
-			y: 9.0d
+			x: 12.0d
+			y: 1.5d
 			description: ["The ME Pattern Provider is the home of your encoded recipes. These need to be put on the same network as your Crafting CPU itself. When the crafting CPU needs to craft the primary result of that pattern, it'll delegate this to the Pattern Provider. Normally the Pattern Provider will then push out the ingredients to an adjancent block (a Molecular Assembler for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the Pattern Provider, an ME Interface, or any other means that would import the crafting result into the network. Molecular Assemblers are smart enough to automatically return the crafting result to the same Pattern Provider that provided the ingredients, leaving you to focus on ensuring the Processing Recipes outputs are put into the network when they're done."]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "2C1964927A0F7BE3"
@@ -1122,8 +1082,8 @@
 		}
 		{
 			title: "Crafting CPU"
-			x: 29.5d
-			y: 10.0d
+			x: 12.0d
+			y: 2.5d
 			subtitle: "Deep Thought"
 			description: [
 				"The Crafting CPU manages a single auto crafting task from start to finsih, and is built out of various crafting units."
@@ -1171,8 +1131,8 @@
 			}]
 		}
 		{
-			x: 33.5d
-			y: 10.5d
+			x: 16.0d
+			y: 3.0d
 			description: [
 				"Perhaps the most desired item in all of AE2 is the Wireless Crafting Terminal. This grants you (while in range of an access point) full access to your ME network. You can craft items, start autocrafting processes, and view in-progress crafting process all from this little device. "
 				""
@@ -1195,8 +1155,8 @@
 			}]
 		}
 		{
-			x: 32.0d
-			y: 10.5d
+			x: 14.5d
+			y: 3.0d
 			description: [
 				"The ME Security Terminal allows you to configure which users, and what permissions those users have within your ME System. By existing, it enforces permissions on the usage of the system."
 				""
@@ -1220,8 +1180,8 @@
 			}]
 		}
 		{
-			x: 33.5d
-			y: 9.0d
+			x: 16.0d
+			y: 1.5d
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "67071C306C1C3A42"
 			tasks: [{
@@ -1237,8 +1197,8 @@
 		}
 		{
 			title: "There's more to know"
-			x: 30.5d
-			y: 10.5d
+			x: 13.0d
+			y: 3.0d
 			description: [
 				"While I have included some of the most popular uses for AE2, it relies heavily on you already understanding several parts, such as how channels, P2P connections, and other things work. "
 				""

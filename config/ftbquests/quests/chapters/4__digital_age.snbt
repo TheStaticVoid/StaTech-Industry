@@ -9,86 +9,37 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -4.0d
-			y: -6.5d
-			subtitle: "Push it to the limit"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
 			description: [
-				"The HV Steam Turbine can produce up to 512 EU/t. It consumes steam in a 1:1 ratio to generate power."
+				"Welcome to Chapter 4."
 				""
-				"The HV Steam Turbine is the last single-block steam energy generator you will have access to. "
+				"Quite the accomplishment to make it this far, but we're not done yet. There's still much to do, the factory must grow."
 				""
-				"Remember that only HV Cables will connect to the HV Steam Turbine."
+				"There's a few paths you can start down. If you'd like, you can start building parts for your first rocket and get to the moon, you could look to setup better automations with AE2, or you could continue progressing in Modern Industrializations."
 				""
-				"Note: This Steam Turbine will not accept High Pressure Steam."
+				"A sane person would pick AE2, but it's ultimately your choice."
 			]
-			dependencies: ["13156F21ECE373E3"]
-			id: "5AF44D0A39BA6091"
+			dependencies: ["575EE8E0720CE7DC"]
+			id: "3F4A396DD273A543"
 			tasks: [{
-				id: "44BC354EEA8BB048"
-				type: "item"
-				item: "modern_industrialization:hv_steam_turbine"
-			}]
-			rewards: [{
-				id: "27714A9F1C468666"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 0.0d
-			y: -0.5d
-			description: ["The Turbo Diesel Generator can produce up to 1024 EU/t. You can REI for a list of fuels and how much EU per mB they produce."]
-			dependencies: ["13156F21ECE373E3"]
-			id: "2CC2860405BF4D13"
-			tasks: [{
-				id: "12F0A1BDC380DB4C"
-				type: "item"
-				item: "modern_industrialization:turbo_diesel_generator"
-			}]
-			rewards: [{
-				id: "47274EC3651DFF6C"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 0.0d
-			y: 1.5d
-			description: ["The Turbo Machine Hull is the main machine hull of the HV tier of power. You can upgrade your existing machines or use it to craft brand new multiblocks!"]
-			id: "13156F21ECE373E3"
-			tasks: [{
-				id: "4E33CDCAB3B89EF3"
+				id: "415FA1DEC3380ED3"
 				type: "item"
 				item: "modern_industrialization:turbo_machine_hull"
 			}]
 			rewards: [{
-				id: "27043A9AF265FB26"
+				id: "39A6609E37325F74"
 				type: "xp"
 				xp: 100
 			}]
 		}
 		{
-			x: -2.0d
-			y: 3.5d
-			description: ["With Turbo Machine Hulls you can now create the next tier of solar. These will passively generate 48 EU/t during the day and 8 EU/t at night (due to magic I suppose)."]
-			dependencies: ["13156F21ECE373E3"]
-			id: "760AEF21E6403F48"
-			tasks: [{
-				id: "19653F8AC2A51DA6"
-				type: "item"
-				item: "techreborn:industrial_solar_panel"
-			}]
-			rewards: [{
-				id: "66B4297A12650D5A"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 0.0d
-			y: 3.5d
+			x: 1.5d
+			y: -2.0d
+			shape: "rsquare"
 			description: ["HV Storage Units have an interal buffer of 6.144M EU. A single one of these will make an extremely valuable power buffer for any setup you currently have."]
-			dependencies: ["13156F21ECE373E3"]
+			dependencies: ["3F4A396DD273A543"]
 			id: "1B0452A4C5B49AA7"
 			tasks: [{
 				id: "5AF9EDECDEB7C131"
@@ -102,42 +53,92 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 3.5d
-			subtitle: "One man's trash..."
+			x: -1.5d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "Push it to the limit"
 			description: [
-				"The Matter Fabricator is an advanced machine that can create UU-Matter from scrap fed into it."
+				"The HV Steam Turbine can produce up to 512 EU/t. It consumes steam in a 1:1 ratio to generate power."
 				""
-				"UU-Matter is pretty important, as it can be used to create Iridium"
+				"The HV Steam Turbine is the last single-block steam energy generator you will have access to. "
+				""
+				"Remember that only HV Cables will connect to the HV Steam Turbine."
+				""
+				"Note: This Steam Turbine will not accept High Pressure Steam."
 			]
-			dependencies: ["13156F21ECE373E3"]
-			id: "6288718990D88342"
+			dependencies: ["3F4A396DD273A543"]
+			id: "5AF44D0A39BA6091"
 			tasks: [{
-				id: "5A9CD8D64D036513"
+				id: "44BC354EEA8BB048"
 				type: "item"
-				item: "techreborn:matter_fabricator"
+				item: "modern_industrialization:hv_steam_turbine"
 			}]
 			rewards: [{
-				id: "331F941508D68501"
+				id: "27714A9F1C468666"
 				type: "xp"
 				xp: 100
 			}]
 		}
 		{
-			x: 3.0d
-			y: 3.5d
-			subtitle: "Nearly magic!"
-			description: ["UU-Matter can craft a variety of things, some of the most notable is Iridium, Platinum, and Chromium. There are other ways to get infinite amounts of those ores, but this offers another viable method in generating these resources."]
-			dependencies: ["6288718990D88342"]
-			size: 1.5d
-			id: "097A441985DCD241"
+			x: -0.5d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"The Turbo Diesel Generator can produce up to 1024 EU/t. You can REI for a list of fuels and how much EU per mB they produce."
+				""
+				"At this point you might have a decent backlog of Diesel / Boosted Diesel. It could be a good choice to use if you're struggling on Steam production."
+			]
+			dependencies: ["3F4A396DD273A543"]
+			id: "2CC2860405BF4D13"
 			tasks: [{
-				id: "2A7EB1EC6AE6025D"
+				id: "12F0A1BDC380DB4C"
 				type: "item"
-				item: "techreborn:uu_matter"
+				item: "modern_industrialization:turbo_diesel_generator"
 			}]
 			rewards: [{
-				id: "7DDC924010E278CA"
+				id: "47274EC3651DFF6C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			shape: "rsquare"
+			description: ["With Turbo Machine Hulls you can now create the next tier of solar. These will passively generate 48 EU/t during the day and 8 EU/t at night (due to magic I suppose)."]
+			dependencies: ["3F4A396DD273A543"]
+			id: "760AEF21E6403F48"
+			tasks: [{
+				id: "19653F8AC2A51DA6"
+				type: "item"
+				item: "techreborn:industrial_solar_panel"
+			}]
+			rewards: [{
+				id: "66B4297A12650D5A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "To the Stars!"
+			description: [
+				"With your new Turbo Machine Hulls and Digital Circuits you now have access to the Fuel Refinery from Ad Astra. The refinery will be required to taking your first rocket to the moon and other celestial bodies."
+				""
+				"To make Fuel for your rocket, place Boosted Diesel in the Fuel Refinery to convert it in a 2:1 ratio. How is diesel being converted into rocket fuel you might ask? Magic ! But seriously, there will probably be a more realistic process in the future."
+			]
+			dependencies: ["68CE43C175FB0826"]
+			size: 1.5d
+			id: "6EE3455457F0E943"
+			tasks: [{
+				id: "009B686B13676C72"
+				type: "item"
+				item: "ad_astra:fuel_refinery"
+			}]
+			rewards: [{
+				id: "5B821F6915969DAB"
 				type: "xp"
 				xp: 100
 			}]
@@ -145,15 +146,16 @@
 		{
 			title: "The Distillation Tower"
 			icon: "modern_industrialization:distillation_tower"
-			x: 2.75d
-			y: 1.5d
+			x: 5.25d
+			y: 0.0d
+			shape: "square"
 			subtitle: "Advanced Petrochemistry!"
 			description: [
 				"Now that you have Digital Circuits you can create the Distillation Tower. The single-block Distillery only gives you one oil processing output, but the tower gives you ONE PER LAYER."
 				""
 				"By default the controller has a height value set to one. You will need to update this if you plan to add more layers. You can view the Ponder scene by holding 'W' on the Distillation Tower block in your inventory to view how to build it, or you can hold your wrench out with the controller placed to view where to place the blocks."
 			]
-			dependencies: ["13156F21ECE373E3"]
+			dependencies: ["529FBE21C8B21DC1"]
 			size: 1.5d
 			id: "3FE23DA95839AA3D"
 			tasks: [
@@ -207,28 +209,222 @@
 			}]
 		}
 		{
-			x: 2.75d
-			y: -0.5d
-			subtitle: "To the Stars!"
+			x: -6.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "To the Stars"
 			description: [
-				"With your new Turbo Machine Hulls and Digital Circuits you now have access to the Fuel Refinery from Ad Astra. The refinery will be required to taking your first rocket to the moon and other celestial bodies."
+				"The Rocket Part Assembler is a new singleblock machine you can create that will allow you to create rocket parts (shocker, I know)."
 				""
-				"Ad Astra progression will not gate your Modern Industrialization mod progress, however if you plan to complete the pack you will need to obtain the Jet Suit, an endgame Ad Astra armor set. I recommend going down the Ad Astra progression ASAP because the Jet Suit is a really nice armor set to have and you can set up a space station too if you'd like! The rest of the Ad Astra progression can be found in it's separate mod tab."
-				""
-				"My recommendation is to wait to do Ad Astra until you have Nuclear Reactors setup, as they take a long time to deplete fuel and progressing through Ad Astra is a good way to pass the time."
-				""
-				"To make Fuel for your rocket, place Boosted Diesel in the Fuel Refinery to convert it in a 2:1 ratio. How is diesel being converted into rocket fuel you might ask? Magic !"
+				"Along with the other important Ad Astra machines you will need to make before your main launch, this one will be the most important, as it's where you make all the parts to your rocket!"
 			]
-			dependencies: ["13156F21ECE373E3"]
-			size: 1.5d
-			id: "6EE3455457F0E943"
+			dependencies: ["68CE43C175FB0826"]
+			id: "7839B0187F555DC9"
 			tasks: [{
-				id: "009B686B13676C72"
+				id: "7C5FBB274C79B346"
 				type: "item"
-				item: "ad_astra:fuel_refinery"
+				item: "modern_industrialization:rocket_part_assembler"
 			}]
 			rewards: [{
-				id: "5B821F6915969DAB"
+				id: "1F595135E2E44587"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Route A"
+			x: -2.5d
+			y: 0.0d
+			shape: "square"
+			description: ["This quest path will end up taking you to the Moon and Mars"]
+			dependencies: ["3F4A396DD273A543"]
+			id: "68CE43C175FB0826"
+			tasks: [{
+				id: "75E935D0F1472316"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+		}
+		{
+			title: "Route B"
+			x: 0.0d
+			y: 2.5d
+			shape: "square"
+			description: ["This route will have you creating your first ME system with Applied Energistics. "]
+			dependencies: ["3F4A396DD273A543"]
+			id: "5FDDE9153DE118DF"
+			tasks: [{
+				id: "531D8A591837029A"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "0542DA11077EC51E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Route C"
+			x: 2.5d
+			y: 0.0d
+			shape: "square"
+			description: ["This route will take you down further progressing in Modern Industrializations. You will eventually hit a road block if you haven't completed Route A, but there may be a few things you will find very essential that you can access right now, such as the Distillation Tower."]
+			dependencies: ["3F4A396DD273A543"]
+			id: "529FBE21C8B21DC1"
+			tasks: [{
+				id: "3B19D63490967A0A"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Don't tell the Spaceballs"
+			description: ["Before you can even think of starting to make your rocket and space suit, you're going to need Oxygen! The Oxygen Loader will convert your Modern Industrialization Oxygen into Ad Astra Oxygen at a 1:1 ratio so that it can be loaded into tanks and your space suit!"]
+			dependencies: ["68CE43C175FB0826"]
+			id: "759BC7BEE3DE5E8A"
+			tasks: [{
+				id: "43FDBEC17AA2471F"
+				type: "item"
+				item: "ad_astra:oxygen_loader"
+			}]
+			rewards: [{
+				id: "5D9E8D72CA0EED26"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "An insurance plan"
+			description: [
+				"While you made an Oxygen Tank for the Oxygen Loader, you're going to want some extra to extend how long you can have breathable air on the moon and other planets."
+				""
+				"I recommend two, luckily you only need to craft one for this quest! (You'll need to make more for the space suit anyway)"
+			]
+			dependencies: ["759BC7BEE3DE5E8A"]
+			id: "41E37605C86F15AA"
+			tasks: [{
+				id: "6521CDDDB0C0B092"
+				type: "item"
+				item: {
+					id: "ad_astra:oxygen_tank"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "51CC7407084F1B44"
+					type: "item"
+					item: {
+						id: "ad_astra:oxygen_tank"
+						Count: 1b
+						tag: {
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "02CB76335B730104"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Space Suit"
+			x: -6.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "Amogus ඞ"
+			description: [
+				"The Space Suit is a required set of armor that will allow you to breathe (temporarily) on planets that do not have rich enough atmospheres to breath in."
+				""
+				"To load Oxygen directly into your suit, place the chest piece in the Oxygen Loader. No other parts of the suit will need to have Oxygen loaded to them. You can refill Oxygen while you're still wearing the suit by right-clicking with Oxygen Tanks while holding them."
+				""
+				"Be careful, as this suit is fairly weak, and if it breaks while you're not in an Oyxgen rich-atmosphere you're going to be in big trouble!"
+			]
+			dependencies: ["759BC7BEE3DE5E8A"]
+			id: "240A32C6B7DD0DD5"
+			tasks: [
+				{
+					id: "6ABD3111533415CE"
+					type: "item"
+					item: {
+						id: "ad_astra:space_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "020579562F59B6F7"
+					type: "item"
+					item: {
+						id: "ad_astra:space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "437C110384CF3694"
+					type: "item"
+					item: {
+						id: "ad_astra:space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "06BDE5B442855370"
+					type: "item"
+					item: {
+						id: "ad_astra:space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6852B7B15D288218"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Vehicle Assembly... Building?"
+			description: ["The NASA Workbench is the birthplace of your rockets. Check REI for the Tier 1 Rocket recipe and prepare crafting the Steel components needed to create it."]
+			dependencies: ["7839B0187F555DC9"]
+			id: "565F8D6169BE21A4"
+			tasks: [{
+				id: "09F5EFD668F7EE53"
+				type: "item"
+				item: "ad_astra:nasa_workbench"
+			}]
+			rewards: [{
+				id: "7313CA47411F2463"
 				type: "xp"
 				xp: 100
 			}]
