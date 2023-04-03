@@ -135,17 +135,6 @@ ServerEvents.recipes(e => {
         P: '#c:steel_plates'
     });
 
-    e.shaped('ad_astra:steel_tank', [
-        'PP ',
-        'PTR',
-        'PP '
-    ],
-    {
-        P: '#c:steel_plates',
-        T: 'modern_industrialization:steel_tank',
-        R: 'modern_industrialization:steel_rod'
-    });
-
     e.custom({
         type: 'modern_industrialization:assembler',
         duration: 300,

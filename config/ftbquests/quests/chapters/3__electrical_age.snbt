@@ -12,6 +12,11 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "square"
+			description: [
+				"Welcome to Chapter 3."
+				""
+				"This chapter of the modpack is focused on getting your first electrical machines, aluminum, stainless steel, and oil processing! There's a lot to do, so get started!"
+			]
 			dependencies: ["72090D36C27DC4AF"]
 			size: 1.5d
 			id: "473C1DE557D3E9C0"
@@ -348,7 +353,7 @@
 			}]
 		}
 		{
-			x: 20.0d
+			x: 18.0d
 			y: 11.0d
 			shape: "square"
 			subtitle: "Bring out the barrels!"
@@ -367,7 +372,7 @@
 			}]
 		}
 		{
-			x: 20.0d
+			x: 18.0d
 			y: 5.0d
 			shape: "square"
 			subtitle: "Shocking"
@@ -390,7 +395,7 @@
 			}]
 		}
 		{
-			x: 20.0d
+			x: 18.0d
 			y: 7.0d
 			shape: "square"
 			subtitle: "No PHD required"
@@ -413,7 +418,7 @@
 			}]
 		}
 		{
-			x: 20.0d
+			x: 18.0d
 			y: 9.0d
 			shape: "square"
 			subtitle: "You spin me right round"
@@ -2705,7 +2710,7 @@
 			}]
 		}
 		{
-			x: 24.0d
+			x: 22.0d
 			y: 9.0d
 			shape: "square"
 			description: ["Mixing Manganese Crushed Dust with 9000 mB of Sulfuric Acid will create 9000 mB Manganese Sulfuric Solution."]
@@ -2723,7 +2728,7 @@
 			}]
 		}
 		{
-			x: 22.0d
+			x: 20.0d
 			y: 9.0d
 			shape: "square"
 			description: [
@@ -2745,7 +2750,7 @@
 			}]
 		}
 		{
-			x: 26.0d
+			x: 24.0d
 			y: 9.0d
 			shape: "square"
 			description: ["Electrolyzing 1000mB of Manganese Sulfuric Solution will produce three Tiny Manganese Dust and 900 mB of Sulfuric Acid. That means you lose 100 mB of Sulfuric Acid in the production loop."]
@@ -2763,7 +2768,7 @@
 			}]
 		}
 		{
-			x: 22.0d
+			x: 20.0d
 			y: 5.0d
 			shape: "square"
 			description: [
@@ -2785,7 +2790,7 @@
 			}]
 		}
 		{
-			x: 22.0d
+			x: 20.0d
 			y: 7.0d
 			shape: "square"
 			description: ["Combining Hydrogen with Chlorine will produce Hydrochloric Acid."]
@@ -2806,7 +2811,7 @@
 			}]
 		}
 		{
-			x: 22.0d
+			x: 20.0d
 			y: 8.0d
 			shape: "square"
 			description: [
@@ -2828,7 +2833,7 @@
 			}]
 		}
 		{
-			x: 24.0d
+			x: 22.0d
 			y: 8.0d
 			shape: "square"
 			description: ["Combining 9000 mB of Hydrochloric Acid with Chromium Crushed Dust will create 9000 mB of Chromium Hydrochloric Solution."]
@@ -2849,7 +2854,7 @@
 			}]
 		}
 		{
-			x: 26.0d
+			x: 24.0d
 			y: 8.0d
 			shape: "square"
 			description: ["Electrolyzing 1000 mB of Chromium Hydrochloric Solution will produce three Tiny Chromium Dust, 450 mB of Hydrogen, and 450 mB of Chlorine. This means that there is a 100 mB loss of Hydrochloric Acid for each process. Automating Salt Ore production through the Quarry is going to be essential."]
@@ -2867,20 +2872,18 @@
 			}]
 		}
 		{
-			x: 36.0d
+			x: 34.0d
 			y: 9.0d
-			subtitle: "Welcome to High-Voltage"
+			shape: "square"
 			description: [
 				"I hope you've setup some good automation before getting here. It's definitly a feat if you haven't."
 				""
 				"Creating a Digital Circuit marks the beginning of the HV tier. There are a lot of new opportunities available to you now, such as the Distillation Tower and Turbo Machine Casings/Hulls."
 				""
 				"You've worked hard to get to this point, so I'm throwing in a few freebies in the rewards."
-				""
-				"With these circuits you've completed this chapter and can now move on to the next chapter."
 			]
 			dependencies: ["47B1F3B024E8F7CD"]
-			size: 2.5d
+			size: 1.5d
 			id: "575EE8E0720CE7DC"
 			tasks: [{
 				id: "50163AA13FCDFAB4"
@@ -2903,8 +2906,9 @@
 		}
 		{
 			title: "Turbo Upgrades"
-			x: 33.75d
+			x: 32.0d
 			y: 10.5d
+			shape: "rsquare"
 			description: ["With your Digital Circuit Boards you can now create the Advanced Upgrade. These will significantly increase the speed of your overclocks, and your power draw."]
 			dependencies: ["47B1F3B024E8F7CD"]
 			id: "043E635A81CA9986"
@@ -2930,8 +2934,9 @@
 		}
 		{
 			title: "Digital Circuit Components"
-			x: 33.75d
+			x: 32.0d
 			y: 9.0d
+			shape: "square"
 			description: [
 				"With your newly created Stainless Steel and Polyethylene, you can now create Digital Circuit Boards, an important precursor to the Digital Circuit."
 				""
@@ -2972,6 +2977,7 @@
 			title: "Advanced Components"
 			x: 32.0d
 			y: 7.0d
+			shape: "square"
 			description: ["Stainless Steel opens up the ability to create Advanced Components. These will be needed for HV and EV tier crafting."]
 			dependencies: [
 				"6375B17635AAC09D"
@@ -3010,8 +3016,9 @@
 		}
 		{
 			title: "Stainless Steel"
-			x: 32.0d
+			x: 30.0d
 			y: 9.0d
+			shape: "square"
 			subtitle: "Oooh, shiny!"
 			dependencies: ["1E65E1332C2E57A2"]
 			size: 1.5d
@@ -3030,7 +3037,7 @@
 		{
 			title: "The Vacuum Freezer"
 			icon: "modern_industrialization:vacuum_freezer"
-			x: 20.0d
+			x: 18.0d
 			y: 13.0d
 			shape: "square"
 			subtitle: "It's getting cold in here"
@@ -3055,7 +3062,7 @@
 			}]
 		}
 		{
-			x: 30.0d
+			x: 28.0d
 			y: 9.0d
 			shape: "square"
 			description: [
@@ -3077,7 +3084,7 @@
 			}]
 		}
 		{
-			x: 28.0d
+			x: 26.0d
 			y: 9.0d
 			shape: "square"
 			description: ["Now, by combining Manganese Dust, Chromium Dust, Iron Dust, and Nickel Dust in a Mixer you will produce your first Stainless Steel Dust."]
@@ -3099,8 +3106,9 @@
 		}
 		{
 			title: "Kanthal Dust"
-			x: 28.0d
+			x: 26.0d
 			y: 7.0d
+			shape: "square"
 			description: ["Mixing Chromium, Stainless Steel, and Aluminum Dusts will make Kanthal Dust. Kanthal is an important upgrade to your EBF coils allowing you to process higher tier recipes, such as Titanium."]
 			dependencies: ["10C6529CD6C26AEE"]
 			id: "7EB2342617A3ADDF"
@@ -3126,8 +3134,9 @@
 		}
 		{
 			title: "Kanthal"
-			x: 28.5d
+			x: 26.0d
 			y: 6.0d
+			shape: "square"
 			description: [
 				"Similar to Stainless Steel, using an EBF to process Kanthal will give you a Kanthal Hot Ingot. You will need to cool the ingot down in a Vacuum Freezer before it will become usable."
 				""
@@ -3147,8 +3156,9 @@
 			}]
 		}
 		{
-			x: 29.5d
+			x: 26.0d
 			y: 5.0d
+			shape: "square"
 			description: ["Kanthal Coils are your ticket to late game EBF recipes. With these you can now work towards producing Titanium, the next tier of material for usage in EV-tiered Machine Hulls and multiblocks."]
 			dependencies: ["0A8EBA97C825EF06"]
 			id: "68DDFA6E0465E81E"
@@ -3166,8 +3176,9 @@
 			}]
 		}
 		{
-			x: 30.5d
+			x: 28.0d
 			y: 5.0d
+			shape: "square"
 			description: [
 				"Annealed Copper is more malleable and easier to work with than regular Copper. Mixing Oxygen with Copper Ingots in a Kanthal EBF will produce Annealed Copper Hot Ingot."
 				""
@@ -3187,8 +3198,9 @@
 			}]
 		}
 		{
-			x: 31.5d
-			y: 6.0d
+			x: 30.0d
+			y: 5.0d
+			shape: "square"
 			dependencies: ["6C91896D4DF89A77"]
 			id: "78E5C68ED157A31B"
 			tasks: [{
@@ -3198,6 +3210,141 @@
 			}]
 			rewards: [{
 				id: "154F1F5A99C350F7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 37.0d
+			y: 9.0d
+			shape: "square"
+			subtitle: "Welcome to High-Voltage"
+			description: [
+				"The Turbo Machine Hull is the machine hull of the HV tier. This hull can upgrade your machines to the HV tier or you can use them to craft the brand new multiblocks!"
+				""
+				"With these hulls made you've completed this chapter and can now move on to the next chapter."
+			]
+			dependencies: ["575EE8E0720CE7DC"]
+			size: 2.5d
+			id: "13156F21ECE373E3"
+			tasks: [{
+				id: "4E33CDCAB3B89EF3"
+				type: "item"
+				item: "modern_industrialization:turbo_machine_hull"
+			}]
+			rewards: [{
+				id: "27043A9AF265FB26"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 34.0d
+			y: 7.0d
+			shape: "square"
+			description: [
+				"With access to Digital Circuits you can now craft Stainless Steel Drills. These can be used both in an &bElectric Quarry&f and an &aOil Drilling Rig."
+				""
+				"If used in the Electric Quarry, it will be your main source of Titanium, Tungsten, Mozanite, and Platinum Ore. When used in an Oil Drilling Rig it will mine 4000 mB of Shale Oil. I'd highly recommend using these instead of your Aluminum Drill for oil processing as you get a lot more oil."
+			]
+			dependencies: [
+				"74FD4A8145A0576F"
+				"575EE8E0720CE7DC"
+			]
+			size: 1.5d
+			id: "3E13D3CD4173DBE2"
+			tasks: [{
+				id: "41118F546F177CB1"
+				type: "item"
+				item: "modern_industrialization:stainless_steel_drill"
+			}]
+			rewards: [{
+				id: "3E70CA7A58ACA882"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 29.5d
+			y: 10.5d
+			shape: "rsquare"
+			description: ["The Stainless Steel Barrel can store an incredible 4096 stacks of a single item."]
+			dependencies: ["6375B17635AAC09D"]
+			id: "3DADE1F0A3BB9AB4"
+			tasks: [{
+				id: "0BF96EDA04EC3949"
+				type: "item"
+				item: "modern_industrialization:stainless_steel_barrel"
+			}]
+			rewards: [{
+				id: "48939BB14E1038B7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 30.5d
+			y: 10.5d
+			shape: "rsquare"
+			description: ["The Stainless Steel tank is the next tier of portable fluid tank you can create. It can store up to 32 buckets of any kind of fluid and retains the contents when broken."]
+			dependencies: ["6375B17635AAC09D"]
+			id: "21D65F793422444B"
+			tasks: [{
+				id: "7D13565A3933437E"
+				type: "item"
+				item: "modern_industrialization:stainless_steel_tank"
+			}]
+			rewards: [{
+				id: "3C5A8C5717B87174"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Mozanite Byproducts"
+			x: 34.5d
+			y: 5.0d
+			shape: "square"
+			description: ["Mozanite on it's own is pretty useless, however running it through a Centrifuge will produce Neodymium, Yttrium, and Cadmium. These three materials will be important in components and processing in the late game."]
+			dependencies: ["3E13D3CD4173DBE2"]
+			id: "64C6B2B282D4DF0B"
+			tasks: [
+				{
+					id: "08F195A51BF8E52D"
+					type: "item"
+					item: "modern_industrialization:neodymium_dust"
+				}
+				{
+					id: "68B858F33A6DF949"
+					type: "item"
+					item: "modern_industrialization:yttrium_dust"
+				}
+				{
+					id: "2E14EB913B143B70"
+					type: "item"
+					item: "modern_industrialization:cadmium_dust"
+				}
+			]
+			rewards: [{
+				id: "28320A30E8D763F0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 33.5d
+			y: 5.0d
+			shape: "square"
+			description: ["The Stainless Steel Drill in an Oil Drilling Rig will give you Shale Oil. Passing this through a Distillation Tower will give you a Sulfuric Crude Oil, Sulfuric Naphtha, and a little bit of Helium. The first two can be processed down in a similar manner as you were before, but the latter, Helium, is very important as you move into the lategame."]
+			dependencies: ["3E13D3CD4173DBE2"]
+			id: "2158E2092F54EFC4"
+			tasks: [{
+				id: "6F9C80AD58495E6B"
+				type: "item"
+				item: "modern_industrialization:shale_oil_bucket"
+			}]
+			rewards: [{
+				id: "4530466C76F3AD31"
 				type: "xp"
 				xp: 100
 			}]
