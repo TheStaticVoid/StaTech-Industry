@@ -1,6 +1,7 @@
 let ALLOY_SMELTER;
 let PYROLYSE_OVEN;
 let ROCKET_PART_ASSEMBLER;
+let MEGA_SMELTER;
 
 MIMachineEvents.registerRecipeTypes(e => {
     ALLOY_SMELTER = e.register('alloy_smelter')
@@ -15,6 +16,9 @@ MIMachineEvents.registerRecipeTypes(e => {
         .withItemOutputs()
         .withFluidInputs()
         .withFluidOutputs();
+    MEGA_SMELTER = e.register('mega_smelter')
+        .withItemInputs()
+        .withItemOutputs();
 });
 
 MIMachineEvents.registerMachines(e => {
@@ -93,7 +97,11 @@ MIMachineEvents.registerMachines(e => {
                         pyrolyseShapeBuilder.add(x, y, z, cupronickelCoilMember, e.noHatch());
                     }
                 } else {
-                    pyrolyseShapeBuilder.add(x, y, z, heatproofMember, pyrolyseHatch);
+                    if (x == 0 && y == 1 && z == 1) {
+                        continue;
+                    } else {
+                        pyrolyseShapeBuilder.add(x, y, z, heatproofMember, pyrolyseHatch);
+                    }
                 }
             }
         }
@@ -115,6 +123,49 @@ MIMachineEvents.registerMachines(e => {
         /* MODEL CONFIGUATION */
         "heatproof_machine_casing", // casing of the controller
         "pyrolyse_oven", // overlay folder
+        true, // front overlay
+        false, // top overlay
+        false, // side overlay
+    );
+
+    // -- MEGA SMELTER -- //
+    const smelterHatch = e.hatchOf("item_input", "item_output", "energy_input");
+    // reuse cupronickel definition from earlier
+    const smelterShapeBuilder = e.startShape("heatproof_machine_casing");
+
+    for (let y = 0; y <= 2; y++) {
+        for (let x = -1; x <=1; x++) {
+            for (let z = 0; z <= 2; z++) {
+                if (y == 0 || y == 2) {
+                    // dont fill the center block
+                    smelterShapeBuilder.add(x, y, z, heatproofMember, smelterHatch);
+                } else {
+                    if (z == 1 && x == 0) continue;
+                    else {
+                        smelterShapeBuilder.add(x, y, z, cupronickelCoilMember, e.noHatch());
+                    }
+                }
+            }
+        }
+    }
+    const megaSmelter = smelterShapeBuilder.build();
+
+    e.simpleElectricCraftingMultiBlock(
+        // General parameters
+        "Mega Smelter", // English name
+        "mega_smelter", // internal name
+        MEGA_SMELTER, // recipe type
+        megaSmelter, // multiblock shape
+
+        // REI Display configuration
+        e.progressBar(77, 33, "arrow"),
+        // REI Item inputs, item outputs, fluid inputs, fluid outputs
+        itemInputs => itemInputs.addSlots(56, 35, 1, 1), itemOutputs => itemOutputs.addSlot(102, 35),
+        fluidInputs => {}, fluidOutputs => {},
+        
+        /* Model Configuration */
+        "heatproof_machine_casing", // casing of the controller
+        "mega_smelter", // ovleray folder
         true, // front overlay
         false, // top overlay
         false, // side overlay
