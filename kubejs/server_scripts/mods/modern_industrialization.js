@@ -83,6 +83,19 @@ ServerEvents.recipes(e => {
         P: 'modern_industrialization:advanced_pump'
     });
 
+    // -- MEGA SMELTER -- //
+    e.shaped('modern_industrialization:mega_smelter', [
+        'MCM',
+        'FHF',
+        'MCM'
+    ],
+    {
+        M: 'modern_industrialization:cupronickel_wire_magnetic',
+        C: 'modern_industrialization:electronic_circuit',
+        F: 'modern_industrialization:electric_furnace',
+        H: 'modern_industrialization:advanced_machine_hull'
+    });
+
     // -- Gravichestplate -- //
     e.shaped('modern_industrialization:gravichestplate', [
         'PUP',
