@@ -298,8 +298,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: 4.0d
+			x: -6.0d
+			y: 3.5d
 			shape: "square"
 			subtitle: "An insurance plan"
 			description: [
@@ -341,8 +341,8 @@
 		}
 		{
 			title: "Space Suit"
-			x: -6.5d
-			y: 4.0d
+			x: -8.0d
+			y: 2.0d
 			shape: "square"
 			subtitle: "Amogus ඞ"
 			description: [
@@ -425,6 +425,78 @@
 			}]
 			rewards: [{
 				id: "7313CA47411F2463"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			shape: "square"
+			dependencies: ["6EE3455457F0E943"]
+			id: "05EBD7E7DF3DBF8A"
+			tasks: [{
+				id: "6AE3331EB16CB72A"
+				type: "item"
+				item: "ad_astra:fuel_bucket"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "T-10"
+			description: [
+				"It's time to put all the preparation to good use. Using a copious amounts of Steel, create the Tier 1 Rocket."
+				""
+				"To put fuel in the rocket, shift-right to open its inventory. You can put buckets of fuel into the rocket. You'll need 12000 mB of Fuel to fully fuel the rocket for launch. Unfortunately you'll have to load them with buckets, as MI Tanks don't seem to work, but placing an MI Tank and filling up several buckets and unloading them into the rocket will make quick work of this task."
+				""
+				"Here's a pre-launch checklist just so you're ready:"
+				"- Tools/Weapons"
+				"- Full Space Suit w/ Oxygen"
+				"- Extra Oxygen Tanks"
+				"- Launch Pad"
+				"- MI Tank with 12000 mB of Fuel (return flight)"
+				"- Inventory space (backpack recommended)"
+				""
+				"Do not press 'Shift' to dismount the rocket, otherwise it'll fly up without you! You'll need to hold 'Space' when descending to avoid blowing up on touchdown!"
+			]
+			dependencies: [
+				"565F8D6169BE21A4"
+				"05EBD7E7DF3DBF8A"
+				"240A32C6B7DD0DD5"
+			]
+			size: 2.0d
+			id: "66D955E646FC75EF"
+			tasks: [{
+				id: "15315B5B931AF815"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_1_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "34B21C48A922815E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			description: ["The Charge-o-Mat has an absolutely absurd 100M Energy buffer. Plugging this into your network may start draining it entirely, so be careful, but it is needed to charge the Industrial tools and Nanosaber."]
+			id: "1CC138DDB987411E"
+			tasks: [{
+				id: "62AA41D101D4EC2B"
+				type: "item"
+				item: "techreborn:charge_o_mat"
+			}]
+			rewards: [{
+				id: "2C3A1018987B77A0"
 				type: "xp"
 				xp: 100
 			}]

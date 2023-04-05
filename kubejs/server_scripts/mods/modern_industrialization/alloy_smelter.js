@@ -159,4 +159,108 @@ ServerEvents.recipes(e => {
             }
         ]
     });
+
+    // -- SPACE HELMET -- //
+    e.custom({
+        type: 'modern_industrialization:assembler',
+        duration: 300,
+        eu: 16,
+        item_inputs: [
+            {
+                amount: 4,
+                tag: 'c:steel_ingots'
+            },
+            {
+                amount: 1,
+                tag: 'minecraft:glass_panes'
+            },
+            {
+                amount: 1,
+                tag: 'minecraft:wool'
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: 'ad_astra:space_helmet'
+            }
+        ]
+    });
+
+    // -- SPACE SUIT -- // 
+    e.custom({
+        type: 'modern_industrialization:assembler',
+        duration: 300,
+        eu: 16,
+        item_inputs: [
+            {
+                amount: 4,
+                tag: 'c:steel_ingots'
+            },
+            {
+                amount: 1,
+                item: 'ad_astra:oxygen_gear',
+            },
+            {
+                amount: 2,
+                item: 'ad_astra:oxygen_tank'
+            }, 
+            {
+                amount: 2,
+                tag: 'minecraft:wool'
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: 'ad_astra:space_suit'
+            }
+        ]
+    });
+
+    // -- SPACE PANTS -- //
+    e.custom({
+        type: 'modern_industrialization:assembler',
+        duration: 300,
+        eu: 16,
+        item_inputs: [
+            {
+                amount: 5,
+                tag: 'c:steel_ingots'
+            },
+            {
+                amount: 2,
+                tag: 'minecraft:wool'
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: 'ad_astra:space_pants'
+            }
+        ]
+    });    
+
+    // -- SPACE BOOTS -- //
+    e.custom({
+        type: 'modern_industrialization:assembler',
+        duration: 300,
+        eu: 16,
+        item_inputs: [
+            {
+                amount: 2,
+                tag: 'c:steel_ingots'
+            },
+            {
+                amount: 2,
+                tag: 'minecraft:wool'
+            }
+        ],
+        item_outputs: [
+            {
+                amount: 1,
+                item: 'ad_astra:space_boots'
+            }
+        ]
+    });  
 });

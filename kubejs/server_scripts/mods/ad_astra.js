@@ -36,13 +36,17 @@ const AD_ASTRA_DELETED_ITEMS = [
     'ad_astra:recipes/wheel',
     'ad_astra:recipes/tier_1_rover',
     'ad_astra:recipes/desh_tank',
-    'ad_astra:recipes/iron_rod'
+    'ad_astra:recipes/iron_rod',
+    'ad_astra:recipes/rocket_fin',
+    'ad_astra:recipes/rocket_nose_cone',
+    'ad_astra:recipes/steel_engine'
 ]
 
 ServerEvents.recipes(e => {
     AD_ASTRA_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove({ type: 'ad_astra:fuel_conversion' });
 
+    // -- OXYGEN TO AD ASTRA OXYGEN -- //
     e.custom({
         type: 'ad_astra:oxygen_conversion',
         input: 'modern_industrialization:oxygen',
@@ -50,6 +54,7 @@ ServerEvents.recipes(e => {
         conversion_ratio: 1.0
     });
 
+    // -- BOOSTED DIESEL TO ROCKET FUEL -- //
     e.custom({
         type: 'ad_astra:fuel_conversion',
         input: 'modern_industrialization:boosted_diesel',
@@ -57,6 +62,7 @@ ServerEvents.recipes(e => {
         conversion_ratio: 0.5
     });
 
+    // -- FUEL REFINERY -- //
     e.shaped('ad_astra:fuel_refinery', [
         'SCS',
         'PHP',
@@ -69,16 +75,7 @@ ServerEvents.recipes(e => {
         C: 'modern_industrialization:digital_circuit'
     });
 
-    e.shaped('ad_astra:engine_fan', [
-        ' R ',
-        'RPR',
-        ' R '
-    ],
-    {
-        R: 'modern_industrialization:steel_rod',
-        P: '#c:steel_plates'
-    });
-
+    // -- OXYGEN TANK -- //
     e.shaped('ad_astra:oxygen_tank', [
         'PR',
         'PP',
@@ -89,6 +86,7 @@ ServerEvents.recipes(e => {
         R: 'modern_industrialization:steel_rod'
     });
 
+    // -- OXYGEN LOADER -- //
     e.shaped('ad_astra:oxygen_loader', [
         'PFP',
         'THT',
@@ -102,6 +100,7 @@ ServerEvents.recipes(e => {
         C: 'modern_industrialization:digital_circuit'
     });
 
+    // -- OXYGEN GEAR -- //
     e.shaped('ad_astra:oxygen_gear', [
         ' R ',
         'PRP',
@@ -112,6 +111,7 @@ ServerEvents.recipes(e => {
         P: '#c:steel_plates'
     });
 
+    // -- NASA WORKBENCH -- //
     e.shaped('ad_astra:nasa_workbench', [
         'AAA',
         'PHP',
@@ -125,117 +125,7 @@ ServerEvents.recipes(e => {
         M: 'modern_industrialization:advanced_motor'
     });
 
-    e.shaped('ad_astra:engine_frame', [
-        'RRR',
-        'RPR',
-        'RRR'
-    ],
-    {
-        R: 'modern_industrialization:steel_rod',
-        P: '#c:steel_plates'
-    });
-
-    e.custom({
-        type: 'modern_industrialization:assembler',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 4,
-                tag: 'c:steel_ingots'
-            },
-            {
-                amount: 1,
-                tag: 'minecraft:glass_panes'
-            },
-            {
-                amount: 1,
-                tag: 'minecraft:wool'
-            }
-        ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'ad_astra:space_helmet'
-            }
-        ]
-    });
-
-
-    e.custom({
-        type: 'modern_industrialization:assembler',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 4,
-                tag: 'c:steel_ingots'
-            },
-            {
-                amount: 1,
-                item: 'ad_astra:oxygen_gear',
-            },
-            {
-                amount: 2,
-                item: 'ad_astra:oxygen_tank'
-            }, 
-            {
-                amount: 2,
-                tag: 'minecraft:wool'
-            }
-        ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'ad_astra:space_suit'
-            }
-        ]
-    });
-
-    e.custom({
-        type: 'modern_industrialization:assembler',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 5,
-                tag: 'c:steel_ingots'
-            },
-            {
-                amount: 2,
-                tag: 'minecraft:wool'
-            }
-        ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'ad_astra:space_pants'
-            }
-        ]
-    });    
-
-    e.custom({
-        type: 'modern_industrialization:assembler',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 2,
-                tag: 'c:steel_ingots'
-            },
-            {
-                amount: 2,
-                tag: 'minecraft:wool'
-            }
-        ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'ad_astra:space_boots'
-            }
-        ]
-    });  
-
+    // -- WHEEL -- // 
     e.shaped('ad_astra:wheel', [
         ' R ',
         'RSR',
@@ -246,6 +136,7 @@ ServerEvents.recipes(e => {
         S: '#c:steel_plates'
     });
 
+    // -- TIER 1 ROVER -- // 
     e.shaped('ad_astra:tier_1_rover', [
         'D R',
         'SDE',
@@ -260,6 +151,7 @@ ServerEvents.recipes(e => {
         P: 'ad_astra:desh_plate'
     });
 
+    // -- DESH TANK -- //
     e.shaped('ad_astra:desh_tank', [
         'DD ',
         'DBR',

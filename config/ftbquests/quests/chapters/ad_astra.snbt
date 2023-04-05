@@ -78,45 +78,6 @@
 	]
 	quests: [
 		{
-			x: 8.5d
-			y: 0.5d
-			shape: "square"
-			subtitle: "T-10"
-			description: [
-				"It's time to put all the preparation to good use. Using a copious amounts of Steel, create the Tier 1 Rocket."
-				""
-				"To put fuel in the rocket, shift-right to open its inventory. You can put buckets of fuel into the rocket. You'll need 12000 mB of Fuel to fully fuel the rocket for launch. Unfortunately you'll have to load them with buckets, as MI Tanks don't seem to work, but placing an MI Tank and filling up several buckets and unloading them into the rocket will make quick work of this task."
-				""
-				"Here's a pre-launch checklist just so you're ready:"
-				"- Tools/Weapons"
-				"- Full Space Suit w/ Oxygen"
-				"- Extra Oxygen Tanks"
-				"- Launch Pad"
-				"- MI Tank with 12000 mB of Fuel (return flight)"
-				"- Inventory space (backpack recommended)"
-				""
-				"Do not press 'Shift' to dismount the rocket, otherwise it'll fly up without you! You'll need to hold 'Space' when descending to avoid blowing up on touchdown!"
-			]
-			dependencies: ["41EE82F6FDB2109C"]
-			id: "66D955E646FC75EF"
-			tasks: [{
-				id: "15315B5B931AF815"
-				type: "item"
-				item: {
-					id: "ad_astra:tier_1_rocket"
-					Count: 1b
-					tag: {
-						BotariumData: { }
-					}
-				}
-			}]
-			rewards: [{
-				id: "34B21C48A922815E"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			x: 10.75d
 			y: 0.5d
 			shape: "square"
@@ -126,7 +87,6 @@
 				""
 				"Collect your Tier 1 Rocket by punching the Lander. Once you've gotten everything feel free to explore, but pay attention to your Oxygen reserves. The main goal of coming to the moon is the acquisition of Desh, which can be found underground in caves. You'll need quite a bit to progress, so try to get as much as possible!"
 			]
-			dependencies: ["66D955E646FC75EF"]
 			size: 1.5d
 			id: "400774ADB8A19D03"
 			tasks: [{
