@@ -21,6 +21,18 @@ MIMachineEvents.registerRecipeTypes(e => {
         .withItemOutputs();
 });
 
+MIRegistrationEvents.registerFluids(e => {
+    // -- LITHIUM -- //
+    e.register(
+        "Lithium",      // English name
+        "lithium",      // internal name
+        0xb2b2b2,       // Hex color code
+        "water",        // Texture type
+        true,           // is a gas?
+        "medium"        // opacity
+    );
+});
+
 MIMachineEvents.registerMachines(e => {
 
     // -- ALLOY SMELTER SINGLE BLOCK -- //
@@ -97,11 +109,7 @@ MIMachineEvents.registerMachines(e => {
                         pyrolyseShapeBuilder.add(x, y, z, cupronickelCoilMember, e.noHatch());
                     }
                 } else {
-                    if (x == 0 && y == 1 && z == 1) {
-                        continue;
-                    } else {
-                        pyrolyseShapeBuilder.add(x, y, z, heatproofMember, pyrolyseHatch);
-                    }
+                    pyrolyseShapeBuilder.add(x, y, z, heatproofMember, pyrolyseHatch);
                 }
             }
         }

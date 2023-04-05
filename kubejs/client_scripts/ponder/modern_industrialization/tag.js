@@ -21,6 +21,7 @@ Ponder.tags((event) => {
         'modern_industrialization:nuclear_reactor',
         'modern_industrialization:fusion_reactor',
         'modern_industrialization:plasma_turbine',
-        'modern_industrialization:pyrolyse_oven'
+        'modern_industrialization:pyrolyse_oven',
+        'modern_industrialization:mega_smelter'
     ]);
 });

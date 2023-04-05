@@ -45,33 +45,40 @@ ServerEvents.recipes(e => {
         'minecraft:iron_horse_armor'
     ];
 
+    // The cost of every recipe
+    let eu = 16;
+    // The duration (in ticks) of every recipe
+    let duration = 200;
+    // The amount at a time to process
+    let amount = 16;
+
     let megaSmelt = (input, output, isTag) => {
         if (!item_blacklist.includes(input)) {
             if (!isTag) {
                 e.custom({
                     type: 'modern_industrialization:mega_smelter',
-                    eu: 16,
-                    duration: 20,
+                    eu: eu,
+                    duration: duration,
                     item_inputs: [ {
-                        amount: 8,
+                        amount: amount,
                         item: input
                     }],
                     item_outputs: [ {
-                        amount: 8,
+                        amount: amount,
                         item: output
                     }]
                 });
             } else {
                 e.custom({
                     type: 'modern_industrialization:mega_smelter',
-                    eu: 16,
-                    duration: 20,
+                    eu: eu,
+                    duration: duration,
                     item_inputs: [{
-                            amount: 8,
+                            amount: amount,
                             tag: input
                     }],
                     item_outputs: [{
-                            amount: 8,
+                            amount: amount,
                             item: output
                     }]
                 });

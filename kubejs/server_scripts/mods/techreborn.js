@@ -13,7 +13,9 @@ ServerEvents.recipes(e => {
         'techreborn:crafting_table/machine/auto_crafting_table',
         'techreborn:crafting_table/machine/recycler',
         'techreborn:crafting_table/parts/wood_plate',
-        'techreborn:rolling_machine/nichrome_heating_coil'
+        'techreborn:rolling_machine/nichrome_heating_coil',
+        'techreborn:chemical_reactor/synthetic_redstone_crystal',
+        'techreborn:assembling_machine/lithium_ion_battery'
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
