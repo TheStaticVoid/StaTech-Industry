@@ -3350,15 +3350,111 @@
 			}]
 		}
 		{
+			icon: "modern_industrialization:mega_smelter"
 			x: 6.5d
 			y: 13.5d
 			shape: "rsquare"
+			description: [
+				"Find yourself waiting on your electric smelters, even with upgrades? Need to smelt up a ton of cobblestone? Then the Mega Smelter is for you."
+				""
+				"The Mega Smelter processes 16 items of the same type at a time at relatively quick speeds. You can upgrade it to go even faster."
+				""
+				"Upgrading the coils to Kanthal doesn't speed up the recipes, not yet at least..."
+			]
 			dependencies: ["6C3EAE1F16E1048A"]
 			id: "2E1BFF08F0365119"
+			tasks: [
+				{
+					id: "73ACCBA989011793"
+					type: "item"
+					item: "modern_industrialization:mega_smelter"
+				}
+				{
+					id: "762A56B4A66A859B"
+					type: "item"
+					item: "modern_industrialization:heatproof_machine_casing"
+					count: 14L
+				}
+				{
+					id: "1CAFF93FBA65962B"
+					type: "item"
+					item: "modern_industrialization:cupronickel_coil"
+					count: 8L
+				}
+				{
+					id: "773DE3C88A98CEFA"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+				{
+					id: "49C50BB64973692D"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "58A69194DFC0B2F8"
+					type: "item"
+					title: "Any Item Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "34B8F83B5BC88184"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.0d
+			y: 3.0d
+			dependencies: ["5D1DD7B1C1BB8BEC"]
+			id: "45060869501B9546"
 			tasks: [{
-				id: "73ACCBA989011793"
+				id: "43BC83FA4C391380"
 				type: "item"
-				item: "modern_industrialization:mega_smelter"
+				item: "techreborn:lithium_ion_battery"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 3.0d
+			shape: "rsquare"
+			description: [
+				"By electrolyzing clay, you can now get little bits of Lithium gas. You can combine your old Red Cell Batteries with Aluminum Plates and some Lithium to make Lithium Ion Batteries."
+				""
+				"These hold 100k and can distribute power to other items in your inventory, very useful!"
+			]
+			dependencies: ["0E9876A8FEF7F7E9"]
+			id: "42A6888AA162648D"
+			tasks: [{
+				id: "55D47A3F72D63B2E"
+				type: "item"
+				item: "techreborn:lithium_ion_battery"
+			}]
+			rewards: [{
+				id: "596294C9DCF5102E"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]

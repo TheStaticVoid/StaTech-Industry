@@ -336,10 +336,7 @@
 				""
 				"You can charge it in the Charge-o-Mat"
 			]
-			dependencies: [
-				"08362FF409BFC7CC"
-				"1CC138DDB987411E"
-			]
+			dependencies: ["08362FF409BFC7CC"]
 			id: "52DD4EA5020B2637"
 			tasks: [{
 				id: "6B91A71316620C7B"
@@ -369,10 +366,7 @@
 				""
 				"You can charge it in the Charge-o-Mat"
 			]
-			dependencies: [
-				"08362FF409BFC7CC"
-				"1CC138DDB987411E"
-			]
+			dependencies: ["08362FF409BFC7CC"]
 			id: "078D2A02F5F0755A"
 			tasks: [{
 				id: "3C912386AC14E449"
@@ -392,22 +386,6 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 5.5d
-			description: ["The Charge-o-Mat has an absolutely absurd 100M Energy buffer. Plugging this into your network may start draining it entirely, so be careful, but it is needed to charge the Industrial tools and Nanosaber."]
-			id: "1CC138DDB987411E"
-			tasks: [{
-				id: "62AA41D101D4EC2B"
-				type: "item"
-				item: "techreborn:charge_o_mat"
-			}]
-			rewards: [{
-				id: "2C3A1018987B77A0"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			x: 0.0d
 			y: 4.0d
 			subtitle: "Like a Protosaber!"
@@ -418,10 +396,7 @@
 				""
 				"You can charge it in the Charge-o-Mat"
 			]
-			dependencies: [
-				"1CC138DDB987411E"
-				"08362FF409BFC7CC"
-			]
+			dependencies: ["08362FF409BFC7CC"]
 			id: "53BA308E50B5070C"
 			tasks: [{
 				id: "0D81A8E55ACB89C7"
