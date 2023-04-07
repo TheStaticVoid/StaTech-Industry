@@ -21,6 +21,7 @@ ServerEvents.recipes(e => {
         'modern_industrialization:vanilla_recipes/packager/chains',
         'modern_industrialization:materials/kanthal/craft/coil',
         'modern_industrialization:materials/superconductor/craft/coil',
+        'modern_industrialization:armor/gravichestplate'
     ];
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     
@@ -99,7 +100,7 @@ ServerEvents.recipes(e => {
     ],
     {
         P: '#c:superconductor_plates',
-        U: 'modern_industrialization:highly_advanced_upgrade',
+        U: 'modern_industrialization:turbo_upgrade',
         J: 'ad_astra:jet_suit',
         C: 'modern_industrialization:cooling_cell'
     });

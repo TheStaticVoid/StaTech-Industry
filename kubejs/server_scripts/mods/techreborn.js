@@ -17,7 +17,17 @@ ServerEvents.recipes(e => {
         'techreborn:chemical_reactor/synthetic_redstone_crystal',
         'techreborn:assembling_machine/lithium_ion_battery',
         'techreborn:centrifuge/glowstone_dust',
-        'techreborn:centrifuge/endstone_dust'
+        'techreborn:centrifuge/endstone_dust',
+        'techreborn:crafting_table/armor/lithium_ion_batpack',
+        'techreborn:crafting_table/small_dust/titanium_small_dust_from_dust',
+        'techreborn:industrial_electrolyzer/pyrite_dust',
+        'techreborn:centrifuge/lapis_lazuli',
+        'techreborn:compressor/lazurite_plate',
+        'techreborn:assembling_machine/energy_crystal',
+        'techreborn:crafting_table/battery/lapotron_crystal',
+        'techreborn:crafting_table/tool/industrial_drill',
+        'techreborn:crafting_table/tool/industrial_chainsaw',
+        'techreborn:crafting_table/tool/nanosaber'
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
@@ -25,7 +35,7 @@ ServerEvents.recipes(e => {
     e.shaped('techreborn:industrial_drill', [
         'CRD',
         'MPR',
-        'TMC'
+        'TLC'
     ], 
     {
         C: 'modern_industrialization:digital_circuit',
@@ -33,21 +43,23 @@ ServerEvents.recipes(e => {
         D: 'modern_industrialization:titanium_drill_head',
         M: 'modern_industrialization:advanced_motor',
         P: 'modern_industrialization:advanced_pump',
-        T: 'modern_industrialization:titanium_tank'
+        T: 'modern_industrialization:titanium_tank',
+        L: 'techreborn:lapotron_crystal'
     });
 
     // -- INDUSTRIAL CHAINSAW -- //
     e.shaped('techreborn:industrial_chainsaw', [
         'CSR',
         'MRS',
-        'TMC'
+        'TLC'
     ], 
     {
         C: 'modern_industrialization:digital_circuit',
         R: 'modern_industrialization:invar_rotary_blade',
         M: 'modern_industrialization:advanced_motor',
         T: 'modern_industrialization:titanium_tank',
-        S: 'modern_industrialization:rubber_sheet'
+        S: 'modern_industrialization:rubber_sheet',
+        L: 'techreborn:lapotron_crystal'
     });
 
     // -- CHARGE O MAT -- //
@@ -68,12 +80,13 @@ ServerEvents.recipes(e => {
     e.shaped('techreborn:nanosaber', [
         '  B',
         'CB ',
-        'NC '
+        'NL '
     ],
     {
         N: 'minecraft:netherite_sword',
         B: 'modern_industrialization:titanium_blade',
         C: 'modern_industrialization:digital_circuit',
+        L: 'techreborn:lapotron_crystal'
     });
 
     // -- RECYCLER -- //

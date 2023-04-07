@@ -76,4 +76,19 @@ ServerEvents.recipes(e => {
             { amount: 125, fluid: mi('chlorine') }
         ]
     );
+
+    // -- ELECTROLYZING PYRITE DUST -- //
+    electrolyzer(
+        60,
+        1200,
+        [
+            { amount: 3, item: tr('pyrite_dust') },
+        ],
+        [
+            { amount: 1, item: mc('raw_iron') },
+            { amount: 2, item: mi('sulfur_dust') }
+        ],
+        null,
+        null
+    )
 });

@@ -85,4 +85,21 @@ ServerEvents.recipes(e => {
             { amount: 1, fluid: mi('helium_3') }
         ]
     );
+
+    // -- CENTRIFUGE LAPIS -- //
+    centrifuge(
+        64,
+        1500,
+        [
+            { amount: 4, item: mc('lapis_lazuli') }
+        ],
+        [
+            { amount: 3, item: tr('lazurite_dust') },
+            { amount: 1, item: tr('pyrite_small_dust') },
+            { amount: 1, item: tr('calcite_small_dust') },
+            { amount: 2, item: tr('sodalite_small_dust') }
+        ],
+        null,
+        null
+    )
 })

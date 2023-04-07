@@ -72,4 +72,16 @@ ServerEvents.recipes(e => {
             { amount: 4, item: mi('rubber_sheet') }
         ]
     );
+
+    // -- LAZURITE PLATE -- //
+    compressor(
+        10,
+        300,
+        [
+            { amount: 1, item: tr('lazurite_dust') }
+        ],
+        [
+            { amount: 1, item: tr('lazurite_plate') }
+        ]
+    );
 })

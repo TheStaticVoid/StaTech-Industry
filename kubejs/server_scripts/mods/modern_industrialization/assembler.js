@@ -92,6 +92,65 @@ ServerEvents.recipes(e => {
         ],
         null
     );
+
+    // -- LITHIUM BATPACK -- //
+    assembler(
+        16,
+        300,
+        [
+            { amount: 1, item: tr('lithium_ion_battery') },
+            { amount: 1, item: tr('lithium_ion_battery') },
+            { amount: 1, item: tr('lithium_ion_battery') },
+            { amount: 1, item: tr('lithium_ion_battery') },
+            { amount: 1, item: tr('lithium_ion_battery') },
+            { amount: 1, item: tr('lithium_ion_battery') },
+            { amount: 1, tag: 'c:aluminum_plates' }
+        ],
+        [
+            { amount: 1, item: tr('lithium_ion_batpack') }
+        ],
+        [
+            { amount: 1000, fluid: mi('acrylic_glue') }
+        ],
+        null
+    );
+
+    // -- ENERGY CRYSTAL -- //
+    assembler(
+        80,
+        300,
+        [
+            { amount: 2, tag: 'c:stainless_steel_plates' },
+            { amount: 2, item: tr('synthetic_redstone_crystal') },
+            { amount: 2, item: mi('digital_circuit') }
+        ],
+        [
+            { amount: 1, item: tr('energy_crystal') }
+        ],
+        [
+            { amount: 500, fluid: mi('polyethylene') }
+        ],
+        null
+    );
+
+    // -- LAPOTRON CRYSTAL -- //
+    assembler(
+        128,
+        400,
+        [
+            { amount: 4, item: tr('lazurite_plate') },
+            { amount: 2, item: mi('digital_circuit') },
+            { amount: 2, item: mi('titanium_plate') },
+            { amount: 1, item: tr('energy_crystal') }
+        ],
+        [
+            { amount: 1, item: tr('lapotron_crystal') }
+        ],
+        [
+            { amount: 500, fluid: mi('polyethylene') }
+        ],
+        null
+    )
     
 
     // -- SPACE HELMET -- //
