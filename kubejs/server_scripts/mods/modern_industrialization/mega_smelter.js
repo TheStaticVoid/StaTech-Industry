@@ -42,7 +42,8 @@ ServerEvents.recipes(e => {
         'c:iron_ingots',
         'c:iron_plates',
         'minecraft:netherite_axe',
-        'minecraft:iron_horse_armor'
+        'minecraft:iron_horse_armor',
+        'minecraft:sugar_cane'
     ];
 
     // The cost of every recipe
@@ -52,69 +53,32 @@ ServerEvents.recipes(e => {
     // The amount at a time to process
     let amount = 16;
 
-    let megaSmelt = (input, output, isTag) => {
-        if (!item_blacklist.includes(input)) {
-            if (!isTag) {
-                e.custom({
-                    type: 'modern_industrialization:mega_smelter',
-                    eu: eu,
-                    duration: duration,
-                    item_inputs: [ {
-                        amount: amount,
-                        item: input
-                    }],
-                    item_outputs: [ {
-                        amount: amount,
-                        item: output
-                    }]
-                });
-            } else {
-                e.custom({
-                    type: 'modern_industrialization:mega_smelter',
-                    eu: eu,
-                    duration: duration,
-                    item_inputs: [{
-                            amount: amount,
-                            tag: input
-                    }],
-                    item_outputs: [{
-                            amount: amount,
-                            item: output
-                    }]
-                });
-            }
-        }
+    let megaSmelt = (input, output) => {
+        e.custom({
+            type: 'modern_industrialization:mega_smelter',
+            eu: eu,
+            duration: duration,
+            item_inputs: input,
+            item_outputs: output
+        });
     }
-
-    let loopList = (input, output, recipeJson) => {
-        console.info('input: ' + recipeJson.ingredient[input].item);
-        console.info('tag: ' + recipeJson.ingredient[input].tag);
-
-        recipeJson.ingredient[input].item == null ? megaSmelt(recipeJson.ingredient[input].tag, output, true) : megaSmelt(recipeJson.ingredient[input].item, output, false);
-    }   
     
 
     e.forEachRecipe( {type: 'minecraft:smelting', not: { mod: 'catwalksinc' }}, recipe => {
         const recipeJson = JSON.parse(recipe.json.toString());
-        console.info('recipeJson: ' + recipeJson);
+        for (let key in recipeJson.ingredient) {
+            if (key == 'item' || key == 'tag') {
+                let newIngredient = { amount: amount }
+                newIngredient[key] = recipeJson.ingredient[key];
 
-        let recipeOutput = recipeJson.result;
-        for (let input in recipeJson.ingredient) {
-            console.info('input: ' + input);
-            switch(input) {
-                case 'item':
-                        megaSmelt(recipeJson.ingredient.item, recipeOutput, false);
-                        break;
-                case 'tag':
-                        megaSmelt(recipeJson.ingredient.tag, recipeOutput, true);
-                        break;
-                default:
-                    loopList(input, recipeOutput, recipeJson);
+                if (item_blacklist.includes(recipeJson.ingredient[key]))
+                    continue;
+
+                let newResult = { amount: amount }
+                newResult['item'] = recipeJson.result;
+                
+                megaSmelt(newIngredient, newResult);
             }
-        }
-
-        if (recipeOutput == 'techreborn:refined_iron_ingot') {
-            console.info(recipeJson);
         }
     });
 });

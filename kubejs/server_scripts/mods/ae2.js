@@ -1,6 +1,6 @@
 ServerEvents.recipes(e => {
     // -- REMOVE RECIPES -- //
-    const AE2_DELETED_ITEMS = [
+    const REMOVED_RECIPES = [
         'ae2:network/blocks/inscribers',
         'ae2:transform/fluix_crystals',
         'ae2:transform/fluix_crystal',
@@ -10,45 +10,52 @@ ServerEvents.recipes(e => {
         'ae2:network/crafting/patterns_blank',
         'ae2:misc/tank_sky_stone'
     ];
-    AE2_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
-    // -- REMOVE ENDER DUST -- //
+    REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
+
+    let mi = (id) => `modern_industrialization:${id}`;
+    let ae = (id) => `ae2:${id}`;
+
+    // -- REMOVE ALL ENDER DUST OUTPUTS -- //
     e.remove({output: 'ae2:ender_dust'});
     
-    // gregify the inscriber recipe
+    // -- INSCRIBER -- //
     e.shaped('ae2:inscriber', [
         'MPM',
         'CHC',
         'MPM'
     ],
     {
-        P: 'modern_industrialization:piston',
-        M: 'modern_industrialization:motor',
-        H: 'modern_industrialization:basic_machine_hull',
-        C: 'modern_industrialization:electronic_circuit'
+        P: mi('piston'),
+        M: mi('advanced_motor'),
+        H: mi('turbo_machine_hull'),
+        C: mi('digital_circuit')
     });
 
-    // gregify the controller recipe
+    // -- CONTROLLER -- //
     e.shaped('ae2:controller', [
-        'HFH',
-        'PCP',
-        'HFH'
+        'EFE',
+        'CHC',
+        'LFP'
     ],
     {
-        H: 'modern_industrialization:basic_machine_hull',
-        F: '#c:fluix',
-        P: 'ae2:engineering_processor',
-        C: 'modern_industrialization:electronic_circuit'
+        E: ae('engineering_processor'),
+        F: ae('fluix_crystal'),
+        C: mi('digital_circuit'),
+        H: mi('turbo_machine_hull'),
+        L: ae('logic_processor'),
+        P: ae('calculation_processor')
     });
 
-    // Modify the charger recipe
+    // -- CHARGER -- //
     e.shaped('ae2:charger', [
         'SCS',
-        'S  ',
+        'B  ',
         'SCS'
     ],
     {
-        S: '#c:steel_plates',
-        C: '#c:copper_plates'
+        S: mi('steel_large_plate'),
+        C: mi('annealed_copper_wire'),
+        B: 'techreborn:low_voltage_su'
     });
 
     // Buff the Blank Pattern recipe

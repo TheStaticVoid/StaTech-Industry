@@ -6,79 +6,81 @@ ServerEvents.recipes(e => {
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
+    let mi = (id) => `modern_industrialization:${id}`;
+
+    let blastFurnace = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
+        let newRecipe = {
+            type: mi('blast_furnace'),
+            eu: eu,
+            duration: duration
+        }
+
+        if (item_inputs)
+            newRecipe['item_inputs'] = item_inputs;
+        if (item_outputs) 
+            newRecipe['item_outputs'] = item_outputs;
+        if (fluid_inputs)
+            newRecipe['fluid_inputs'] = fluid_inputs;
+        if (fluid_outputs)
+            newRecipe['fluid_outputs'] = fluid_outputs;
+        
+        e.custom(newRecipe);
+    }
+
     // -- UNCOOKED STEEL DUST -> STEEL INGOT -- //
-    e.custom({
-        type: 'modern_industrialization:blast_furnace',
-        eu: 2,
-        duration: 1200,
-        item_inputs: [
-            {
-                item: 'modern_industrialization:uncooked_steel_dust',
-                amount: 1
-            }
+    blastFurnace(
+        2,
+        1200,
+        [
+            { amount: 1, item: mi('uncooked_steel_dust') }
         ],
-        item_outputs: [
-            {
-                item: 'modern_industrialization:steel_ingot',
-                amount: 1
-            }
-        ]
-    });
+        [ 
+            { amount: 1, item: mi('steel_ingot') }
+        ],
+        null,
+        null
+    );
 
     // -- REFINED IRON INGOT -> STEEL INGOT -- //
-    e.custom({
-        type: 'modern_industrialization:blast_furnace',
-        eu: 16,
-        duration: 40,
-        item_inputs: [
-            {
-                tag: 'c:refined_iron_ingots',
-                amount: 1
-            },
-            {
-                tag: 'c:carbon_dusts',
-                amount: 1
-            }
+    blastFurnace(
+        16,
+        40,
+        [
+            { amount: 1, tag: 'c:refined_iron_ingots' },
+            { amount: 1, tag: 'c:carbon_dusts' }
         ],
-        item_outputs: [
-            {
-                item: 'modern_industrialization:steel_ingot',
-                amount: 1
-            }
-        ]
-    });
+        [
+            { amount: 1, item: mi('steel_ingot') }
+        ],
+        null,
+        null
+    );
 
     // -- ALUMINUM EBF -- //
-    e.custom({
-        type: 'modern_industrialization:blast_furnace',
-        duration: 600,
-        eu: 32,
-        item_inputs: [
-            {
-                amount: 1,
-                item: 'modern_industrialization:aluminum_dust'
-            }
+    blastFurnace(
+        32,
+        600,
+        [
+            { amount: 1, item: mi('aluminum_dust') }
         ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'modern_industrialization:aluminum_ingot'
-            }
-        ]
-    });
+        [
+            { amount: 1, item: mi('aluminum_ingot') }
+        ],
+        null,
+        null
+    );
 
     // -- IRON INGOTS -> HARDENED IRON INGOT -- //
-    e.custom({
-        type: 'modern_industrialization:blast_furnace',
-        eu: 16,
-        duration: 300,
-        item_inputs: {
-            tag: 'c:iron_ingots',
-            amount: 1
-        },
-        item_outputs: {
-            item: 'anim_guns:hardened_iron_ingot',
-            amount: 1
-        }
-    });
+    blastFurnace(
+        16,
+        300,
+        [
+            { amount: 1, tag: 'c:iron_ingots' },
+        ],
+        [
+            { amount: 1, item: 'anim_guns:hardened_iron_ingot' }
+        ],
+        null,
+        null
+    );
 });

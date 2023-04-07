@@ -6,79 +6,70 @@ ServerEvents.recipes(e => {
     ];
     DELETED_RECIPE.forEach(id => e.remove({id: id}));
 
+    let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    let tr = (id) => `techreborn:${id}`;
+
+    let compressor = (eu, duration, item_inputs, item_outputs) => {
+        let newRecipe = {
+            type: mi('compressor'),
+            eu: eu,
+            duration: duration
+        }
+
+        if (item_inputs) 
+            newRecipe['item_inputs'] = item_inputs;
+        if (item_outputs)
+            newRecipe['item_outputs'] = item_outputs;
+        
+        e.custom(newRecipe);
+    }
+
     // -- DIAMOND PLATE -- //
-    e.custom({
-        type: 'modern_industrialization:compressor',
-        duration: 800,
-        eu: 48,
-        item_inputs: [
-            {
-                amount: 1,
-                item: 'minecraft:diamond'
-            }
+    compressor(
+        48,
+        400,
+        [
+            { amount: 1, item: mc('diamond') }
         ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'modern_industrialization:diamond_plate'
-            }
+        [
+            { amount: 1, item: mi('diamond_plate') }
         ]
-    });
+    )
 
     // -- EMERALD PLATE -- //
-    e.custom({
-        type: 'modern_industrialization:compressor',
-        duration: 800,
-        eu: 48,
-        item_inputs: [
-            {
-                amount: 1,
-                item: 'minecraft:emerald'
-            }
+    compressor(
+        48,
+        400,
+        [
+            { amount: 1, item: mc('emerald') }
         ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'modern_industrialization:emerald_plate'
-            }
+        [
+            { amount: 1, item: mi('emerald_plate') }
         ]
-    });
+    );
 
     // -- BRICKS -- //
-    e.custom({
-        type: 'modern_industrialization:compressor',
-        duration: 300,
-        eu: 2,
-        item_inputs: [
-            {
-                amount: 4,
-                item: 'minecraft:brick'
-            }
+    compressor(
+        2,
+        300,
+        [
+            { amount: 4, item: mc('brick') }
         ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'minecraft:bricks'
-            }
+        [
+            { amount: 1, item: mc('bricks') }
         ]
-    });
+    );
 
     // -- RUBBER SHEETS -- //
-    e.custom({
-        type: 'modern_industrialization:compressor',
-        duration: 200,
-        eu: 2,
-        item_inputs: [
-            {
-                amount: 1,
-                item: 'techreborn:rubber'
-            }
+    compressor(
+        2,
+        200,
+        [
+            { amount: 1, item: tr('rubber') }
         ],
-        item_outputs: [
-            {
-                amount: 4,
-                item: 'modern_industrialization:rubber_sheet'
-            }
+        [
+            { amount: 4, item: mi('rubber_sheet') }
         ]
-    });
+    );
 })

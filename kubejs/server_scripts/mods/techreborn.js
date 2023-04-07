@@ -15,7 +15,9 @@ ServerEvents.recipes(e => {
         'techreborn:crafting_table/parts/wood_plate',
         'techreborn:rolling_machine/nichrome_heating_coil',
         'techreborn:chemical_reactor/synthetic_redstone_crystal',
-        'techreborn:assembling_machine/lithium_ion_battery'
+        'techreborn:assembling_machine/lithium_ion_battery',
+        'techreborn:centrifuge/glowstone_dust',
+        'techreborn:centrifuge/endstone_dust'
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 

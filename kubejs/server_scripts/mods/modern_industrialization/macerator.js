@@ -1,58 +1,58 @@
 ServerEvents.recipes(e => {
+    let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    let crate = (id) => `create:${id}`; // mispelled on purpose ;)
+    let ed = (id) => `expandeddelight:${id}`;
+    let tr = (id) => `techreborn:${id}`;
+
+    let macerator = (eu, duration, item_inputs, item_outputs) => {
+        let newRecipe = {
+            type: mi('macerator'),
+            eu: eu,
+            duration: duration
+        }
+
+        if (item_inputs)
+            newRecipe['item_inputs'] = item_inputs;
+        if (item_outputs)
+            newRecipe['item_outputs'] = item_outputs;
+        
+            e.custom(newRecipe);
+    }
+
     // -- WHEAT DOUGH -- //
-    e.custom({
-        type: 'modern_industrialization:macerator',
-        eu: 2,
-        duration: 200,
-        item_inputs: [
-            {
-                amount: 1,
-                item: 'minecraft:wheat'
-            }
+    macerator(
+        2,
+        200,
+        [
+            { amount: 1, item: mc('wheat') }
         ],
-        item_outputs: [
-            {
-                amount: 2,
-                item: 'create:wheat_flour'
-            }
+        [
+            { amount: 2, item: crate('wheat_flour') }
         ]
-    });
+    );
 
     // -- SALT DUST -- //
-    e.custom({
-        type: 'modern_industrialization:macerator',
-        duration: 100,
-        eu: 2,
-        item_inputs: [
-            {
-                amount: 1,
-                item: 'expandeddelight:salt_rock'
-            }
+    macerator(
+        2,
+        100,
+        [
+            { amount: 1, item: ed('salt_rock') }
         ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'expandeddelight:ground_salt'
-            }
+        [
+            { amount: 1, item: ed('ground_salt') }
         ]
-    });
+    );
 
     // -- CALCITE DUST -- //
-    e.custom({
-        type: 'modern_industrialization:macerator',
-        duration: 100,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 1,
-                item: 'minecraft:calcite'
-            }
+    macerator(
+        16,
+        100,
+        [
+            { amount: 1, item: mc('calcite') }
         ],
-        item_outputs: [
-            {
-                amount: 2,
-                item: 'techreborn:calcite_dust'
-            }
-        ]
-    });
+        [
+            { amount: 2, item: tr('calcite_dust') }
+        ]   
+    );
 });
