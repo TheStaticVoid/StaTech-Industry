@@ -4,6 +4,7 @@ ServerEvents.recipes(e => {
         'ae2:network/blocks/inscribers',
         'ae2:transform/fluix_crystals',
         'ae2:transform/fluix_crystal',
+        'ae2:transform/certus_quartz_crystals',
         'ae2:network/blocks/controller',
         'ae2:network/blocks/crystal_processing_charger',
         'ae2:network/blocks/energy_vibration_chamber',
@@ -16,10 +17,10 @@ ServerEvents.recipes(e => {
     let ae = (id) => `ae2:${id}`;
 
     // -- REMOVE ALL ENDER DUST OUTPUTS -- //
-    e.remove({output: 'ae2:ender_dust'});
+    e.remove({output: ae('ender_dust')});
     
     // -- INSCRIBER -- //
-    e.shaped('ae2:inscriber', [
+    e.shaped(ae('inscriber'), [
         'MPM',
         'CHC',
         'MPM'
@@ -32,7 +33,7 @@ ServerEvents.recipes(e => {
     });
 
     // -- CONTROLLER -- //
-    e.shaped('ae2:controller', [
+    e.shaped(ae('controller'), [
         'EFE',
         'CHC',
         'LFP'
@@ -47,7 +48,7 @@ ServerEvents.recipes(e => {
     });
 
     // -- CHARGER -- //
-    e.shaped('ae2:charger', [
+    e.shaped(ae('charger'), [
         'SCS',
         'B  ',
         'SCS'
@@ -65,14 +66,14 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        Q: 'ae2:quartz_glass',
+        Q: ae('quartz_glass'),
         G: '#c:glowstone_dusts',
         C: '#c:certus_quartz',
         S: '#c:stainless_steel_ingots'
     });
 
     // -- Replace the remaining iron ingots in recipes to be stainless steel -- //
-    e.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', '#c:stainless_steel_ingots');
+    e.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', '#c:stainless_steel_plates');
 });
 
 ServerEvents.tags('item', e=> {

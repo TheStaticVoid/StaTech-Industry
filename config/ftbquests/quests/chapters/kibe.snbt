@@ -1,7 +1,7 @@
 {
 	id: "1C0C1689AD74E063"
 	group: "05A88037F88880CD"
-	order_index: 7
+	order_index: 6
 	filename: "kibe"
 	title: "Kibe"
 	icon: "kibe:slime_sling"
@@ -218,8 +218,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 10.0d
+			x: -2.5d
+			y: 8.5d
 			shape: "rsquare"
 			description: ["Prevents rain / snow particles in a 3x3 chunk radius when powered by redstone."]
 			id: "060A731AEBEA372B"
@@ -230,90 +230,6 @@
 			}]
 			rewards: [{
 				id: "5FE27407A1FFC117"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: -4.0d
-			y: 8.5d
-			shape: "rsquare"
-			description: [
-				"Entangled Chests are universally linked chests that work across dimensions and store the same items as long as they are color-code the same."
-				""
-				"You can use runes to change the color-coding."
-			]
-			id: "616AB06164FF575F"
-			tasks: [{
-				id: "4281D358BBE797BE"
-				type: "item"
-				item: "kibe:entangled_chest"
-			}]
-			rewards: [{
-				id: "500D996C415F2987"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: -2.5d
-			y: 8.5d
-			shape: "rsquare"
-			description: [
-				"Entangled Bags are able to access the contents of your Entangled Chest on the go."
-				""
-				"Shift right-click an Entangled Chest with an Entangled Bag to link them together."
-			]
-			id: "1044FF1E86B2615A"
-			tasks: [{
-				id: "1178ABAC40FC7031"
-				type: "item"
-				item: "kibe:entangled_bag"
-			}]
-			rewards: [{
-				id: "7592E538897942CE"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: -4.0d
-			y: 10.0d
-			shape: "rsquare"
-			description: [
-				"Entangled Tanks are exactly like Entangled Chests, but they can store fluids instead."
-				""
-				"You can use runes to change the color-coding."
-			]
-			id: "152E753AE4B119C1"
-			tasks: [{
-				id: "6C36FB2FA87E0680"
-				type: "item"
-				item: "kibe:entangled_tank"
-			}]
-			rewards: [{
-				id: "76E38923352C5B46"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: -2.5d
-			y: 10.0d
-			shape: "rsquare"
-			description: [
-				"Entangled Buckets can be used to directly access the contents of your Entangled Tank on the go."
-				""
-				"Shift right-click an Entangled Tank with an Entangled Bucket to link them together."
-			]
-			id: "5E0F3A2885C0E0DD"
-			tasks: [{
-				id: "4D6D096AB9AEAC06"
-				type: "item"
-				item: "kibe:entangled_bucket"
-			}]
-			rewards: [{
-				id: "45B27763DC89837B"
 				type: "xp"
 				xp: 100
 			}]
@@ -822,10 +738,10 @@
 					tag: {
 						BlockEntityTag: {
 							Items: [ ]
-							x: -198
+							y: 64
 							id: "kibe:cooler"
 							z: 126
-							y: 64
+							x: -198
 						}
 					}
 				}
@@ -837,8 +753,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 10.0d
+			x: -4.0d
+			y: 8.5d
 			shape: "rsquare"
 			description: ["Kibe is a special food added by Kibe."]
 			id: "0A90B4083920FDBD"
@@ -854,8 +770,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 11.5d
+			x: -5.5d
+			y: 10.0d
 			shape: "rsquare"
 			description: ["A very filling food item."]
 			dependencies: ["0A90B4083920FDBD"]
@@ -872,8 +788,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 13.0d
+			x: -4.0d
+			y: 11.5d
 			shape: "rsquare"
 			description: ["An insanely filling food. You'll only need one to fill yourself up completely."]
 			dependencies: ["6EC19D9A85925FE2"]
@@ -890,8 +806,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 11.5d
+			x: -2.5d
+			y: 10.0d
 			shape: "rsquare"
 			description: ["A dubious food item that may lead to an early death."]
 			dependencies: ["0A90B4083920FDBD"]

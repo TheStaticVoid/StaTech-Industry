@@ -361,7 +361,6 @@
 			description: ["It's time to start putting the puzzle together. Plutonium from your depleted fuel rods, various chemicals, and other materials you have processed this far."]
 			dependencies: [
 				"43D2E858079C12E0"
-				"569821B175311340"
 				"5D79372CA3921A4D"
 				"494104440623C825"
 			]
@@ -531,36 +530,6 @@
 				id: "0E943D96AEF01F3A"
 				type: "xp"
 				xp: 100
-			}]
-		}
-		{
-			x: -1.5d
-			y: 2.0d
-			description: ["Combingin 3x Neodymium, 3x Annealed Copper, 3x Yttrium, and 1x Iridium Dust you can mix together Superconductor Dust. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a Kanthal EBF and then cool it in a vacuum freezer."]
-			dependencies: ["229C752D3B9B8D48"]
-			id: "569821B175311340"
-			tasks: [{
-				id: "7F7814394EC4D8DA"
-				type: "item"
-				item: "modern_industrialization:superconductor_dust"
-			}]
-			rewards: [{
-				id: "6DB07CF0D3B65E62"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: -3.5d
-			y: 2.0d
-			subtitle: "Creative Flight!"
-			dependencies: ["569821B175311340"]
-			size: 1.5d
-			id: "39FB6B43C46FC7D7"
-			tasks: [{
-				id: "2A8B4FAC4C2F3B90"
-				type: "item"
-				item: "modern_industrialization:gravichestplate"
 			}]
 		}
 		{

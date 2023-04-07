@@ -172,7 +172,7 @@
 			title: "The Distillation Tower"
 			icon: "modern_industrialization:distillation_tower"
 			x: 5.25d
-			y: 0.0d
+			y: -2.25d
 			shape: "square"
 			subtitle: "Advanced Petrochemistry!"
 			description: [
@@ -682,6 +682,7 @@
 			title: "AE2 Processors"
 			x: 1.0d
 			y: 6.5d
+			shape: "rsquare"
 			description: ["By combining printed AE2 circuits and silicon in an Inscriber you will create the basic components for all of AE2."]
 			dependencies: ["0E556AD31516BB03"]
 			dependency_requirement: "one_completed"
@@ -712,6 +713,7 @@
 		{
 			x: 0.0d
 			y: 4.5d
+			shape: "rsquare"
 			description: [
 				"With your Turbo Machine Hulls you can now craft the AE2 Inscriber. The Inscriber is a necessary machine to create the AE2 Processors. While you can make the Printed Circuits in the Packer, you will ultimately need an Inscriber to combine the circuit with Printed Silicon to create the processors."
 				""
@@ -736,6 +738,7 @@
 		{
 			x: -1.0d
 			y: 6.5d
+			shape: "rsquare"
 			description: [
 				"Fluix Crystals have been craftable since you created your first Electrolyzer, but they have been unusable. "
 				""
@@ -757,15 +760,16 @@
 		{
 			x: 0.0d
 			y: 9.0d
+			shape: "rsquare"
 			subtitle: "Heart of the Network"
 			description: [
 				"While technically not required to setup your first AE2 network, you will really want to craft at least one of these for now. "
 				""
 				"Thanks to the glorious Modern Industrialization's universal cables, you will not need to craft an Energy Acceptor to hook up your network to power. You can plug it right in to your power generation!"
 				""
-				"Applied Energistics is a pretty expansive mod with a lot of mechanics, but I don't want to clutter up the chapter with just detailing AE2. If you're unfamiliar with the mod, then I'd suggest taking a look at the separate quest tab for AE2 specifically."
+				"Applied Energistics is a pretty expansive mod with a lot of mechanics, with P2P and channels being the most complex part."
 				""
-				"NOTE: AE2 uses it's own energy system, just now that EU is converted in a 1:2 power ratio, meaning that for every 1 EU put in you are actually generating 2 AE."
+				"NOTE: AE2 uses it's own energy system, just know that EU is converted in a 1:2 power ratio, meaning that for every 1 EU put in you are actually generating 2 AE."
 			]
 			dependencies: [
 				"01D12D790B2DE5F5"
@@ -785,8 +789,9 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 9.5d
+			x: 2.5d
+			y: 9.0d
+			shape: "rsquare"
 			subtitle: "All your stuff in a single block"
 			description: [
 				"The ME Drive is a block designed to store Storage Cells. The Drive can hold 10 Storage Cells."
@@ -815,6 +820,7 @@
 			icon: "ae2:meteorite_compass"
 			x: -2.0d
 			y: 4.5d
+			shape: "rsquare"
 			description: [
 				"If you've yet to find an AE2 meteorite, then you might want to make this compass. "
 				""
@@ -843,11 +849,16 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: 5.5d
 			y: 9.0d
+			shape: "rsquare"
 			subtitle: "A MUCH better crafting table"
-			description: ["Attaching an ME Crafting Terminal to your AE2 network will grant you access to all the items stored within and and an included crafting grid you can use these stored items in. "]
-			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"Attaching an ME Crafting Terminal to your AE2 network will grant you access to all the items stored within and and an included crafting grid you can use these stored items in. "
+				""
+				"It requires a channel to function."
+			]
+			dependencies: ["742FEDEA09A5FEA7"]
 			id: "4372EB6B99CB383D"
 			tasks: [{
 				id: "134DCCD1F1D35772"
@@ -861,21 +872,33 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 9.0d
-			subtitle: "That's how you do it"
-			dependencies: ["4372EB6B99CB383D"]
+			x: 5.5d
+			y: 8.0d
+			shape: "rsquare"
+			subtitle: "Managing your autocrafting!"
+			description: [
+				"The Pattern Access Terminal gives remote access to all pattern slots for the Pattern Providers on your network separated by which type of machine they are on. It will show the type of machine in the terminal, however you can name the ME Pattern Provider in the Inscriber or Anvil to alter the name displayed in the ME Pattern Access Terminal."
+				""
+				"Requires a channel to be operational."
+			]
+			dependencies: ["742FEDEA09A5FEA7"]
 			id: "4584D2A76B87D7F0"
 			tasks: [{
-				id: "315FF7E43F8769D8"
+				id: "14FB1AD0D5E9CF9F"
 				type: "item"
-				item: "ae2:pattern_encoding_terminal"
+				item: "ae2:pattern_access_terminal"
+			}]
+			rewards: [{
+				id: "58E22E92E4E01077"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
 			title: "Patterns"
-			x: 3.0d
-			y: 10.5d
+			x: 8.5d
+			y: 9.0d
+			shape: "rsquare"
 			subtitle: "Get ready to autocraft!"
 			description: [
 				"Blank Patterns can be encoded in the ME Pattern Encoding Terminal. You can encode them either with a Crafting Pattern or a Processing Pattern. The Encoded Pattern is then used to control crafting by inserting them into Molecular Assemblers or ME Pattern Providers."
@@ -886,7 +909,7 @@
 				""
 				"I've doubled the normal output for the Blank Pattern recipe due to the amount of things you probably intend to automate crafting for. You're welcome!"
 			]
-			dependencies: ["4584D2A76B87D7F0"]
+			dependencies: ["19EAC8C0A6889843"]
 			id: "1B4704766DF1A934"
 			tasks: [{
 				id: "47CFF4CBF0901ACF"
@@ -909,8 +932,9 @@
 			]
 		}
 		{
-			x: 6.0d
-			y: 10.5d
+			x: 2.0d
+			y: 11.5d
+			shape: "rsquare"
 			subtitle: "It's like magic!"
 			description: [
 				"The Molecular Assembler is a powered machine which crafts items. It can be upgraded by inserting Acceleration Cards into it; once upgraded it is very fast."
@@ -935,8 +959,9 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 3.0d
 			y: 11.5d
+			shape: "rsquare"
 			description: ["The ME Pattern Provider is the home of your encoded recipes. These need to be put on the same network as your Crafting CPU itself. When the crafting CPU needs to craft the primary result of that pattern, it'll delegate this to the Pattern Provider. Normally the Pattern Provider will then push out the ingredients to an adjancent block (a Molecular Assembler for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the Pattern Provider, an ME Interface, or any other means that would import the crafting result into the network. Molecular Assemblers are smart enough to automatically return the crafting result to the same Pattern Provider that provided the ingredients, leaving you to focus on ensuring the Processing Recipes outputs are put into the network when they're done."]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "2C1964927A0F7BE3"
@@ -953,8 +978,9 @@
 		}
 		{
 			title: "Crafting CPU"
-			x: 6.0d
+			x: 2.0d
 			y: 12.5d
+			shape: "rsquare"
 			subtitle: "Deep Thought"
 			description: [
 				"The Crafting CPU manages a single auto crafting task from start to finsih, and is built out of various crafting units."
@@ -1002,8 +1028,9 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 12.0d
+			x: -4.5d
+			y: 7.0d
+			shape: "rsquare"
 			description: [
 				"Perhaps the most desired item in all of AE2 is the Wireless Crafting Terminal. This grants you (while in range of an access point) full access to your ME network. You can craft items, start autocrafting processes, and view in-progress crafting process all from this little device. "
 				""
@@ -1026,8 +1053,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 12.0d
+			x: -2.5d
+			y: 6.5d
+			shape: "rsquare"
 			description: [
 				"The ME Security Terminal allows you to configure which users, and what permissions those users have within your ME System. By existing, it enforces permissions on the usage of the system."
 				""
@@ -1051,8 +1079,16 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 10.5d
+			x: -2.5d
+			y: 7.5d
+			shape: "rsquare"
+			description: [
+				"The ME Wireless Access Point allows wireless access via a Wireless Terminal. Range and power usage are determined based on the number of Wireless Booster installed into the ME Wireless Access Point."
+				""
+				"A network can have any number of ME Wireless Access Point with any number of Wireless Booster in each one, allowing you to optimize power usage and range by altering your setup."
+				""
+				"Requires a channel to be operational."
+			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "67071C306C1C3A42"
 			tasks: [{
@@ -1067,8 +1103,8 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: 11.0d
+			x: 10.0d
+			y: 4.5d
 			subtitle: "One man's trash..."
 			description: [
 				"The Matter Fabricator is an advanced machine that can create UU-Matter from scrap fed into it."
@@ -1088,8 +1124,8 @@
 			}]
 		}
 		{
-			x: 12.5d
-			y: 11.0d
+			x: 11.5d
+			y: 4.5d
 			subtitle: "Nearly magic!"
 			description: ["UU-Matter can craft a variety of things, some of the most notable is Iridium, Platinum, and Chromium. There are other ways to get infinite amounts of those ores, but this offers another viable method in generating these resources."]
 			dependencies: ["6288718990D88342"]
@@ -1107,17 +1143,6 @@
 			}]
 		}
 		{
-			x: 20.0d
-			y: 14.0d
-			dependencies: ["6375B17635AAC09D"]
-			id: "354C87C444B34193"
-			tasks: [{
-				id: "1EBA2DB47CD44873"
-				type: "item"
-				item: "modern_industrialization:air_intake"
-			}]
-		}
-		{
 			x: 22.5d
 			y: 14.0d
 			dependencies: ["354C87C444B34193"]
@@ -1130,10 +1155,14 @@
 		}
 		{
 			title: "Titanium"
-			x: 17.5d
-			y: 10.0d
+			x: 8.5d
+			y: 0.0d
+			shape: "square"
 			description: ["Titanium Ore can only be acquired from an Electric Quarry using the Stainless Steel Drill. Processing Raw Titanium into a dust requires Manganese Sulfuric Solution, which you already have some of from the Stainless Steel processing."]
-			dependencies: ["68DDFA6E0465E81E"]
+			dependencies: [
+				"68DDFA6E0465E81E"
+				"293DB25BD2827372"
+			]
 			size: 1.5d
 			id: "08362FF409BFC7CC"
 			tasks: [{
@@ -1383,8 +1412,8 @@
 			}]
 		}
 		{
-			x: 16.5d
-			y: 12.0d
+			x: 7.5d
+			y: -4.0d
 			subtitle: "GIGA DRILL BREAK"
 			description: [
 				"The Industrial Drill is an upgraded, electric powered drill that features a powered mode that can mine 3x3."
@@ -1393,7 +1422,7 @@
 				""
 				"You can charge it in the Charge-o-Mat"
 			]
-			dependencies: ["08362FF409BFC7CC"]
+			dependencies: ["779458EF9AEE3AC9"]
 			id: "52DD4EA5020B2637"
 			tasks: [{
 				id: "6B91A71316620C7B"
@@ -1413,8 +1442,8 @@
 			}]
 		}
 		{
-			x: 18.5d
-			y: 12.0d
+			x: 9.5d
+			y: -4.0d
 			subtitle: "Say goodbye to the rainforests"
 			description: [
 				"The Industrial Chainsaw is an upgraded, electric powered chainsaw that features a powered mode that can instamine entire trees."
@@ -1423,7 +1452,7 @@
 				""
 				"You can charge it in the Charge-o-Mat"
 			]
-			dependencies: ["08362FF409BFC7CC"]
+			dependencies: ["779458EF9AEE3AC9"]
 			id: "078D2A02F5F0755A"
 			tasks: [{
 				id: "3C912386AC14E449"
@@ -1443,8 +1472,8 @@
 			}]
 		}
 		{
-			x: 17.5d
-			y: 12.0d
+			x: 8.5d
+			y: -4.0d
 			subtitle: "Like a Protosaber!"
 			description: [
 				"The Nanosaber is an upgraded, electric powered sword that features a powered mode that can deal insane damage."
@@ -1453,7 +1482,7 @@
 				""
 				"You can charge it in the Charge-o-Mat"
 			]
-			dependencies: ["08362FF409BFC7CC"]
+			dependencies: ["779458EF9AEE3AC9"]
 			id: "53BA308E50B5070C"
 			tasks: [{
 				id: "0D81A8E55ACB89C7"
@@ -1850,6 +1879,788 @@
 			]
 			rewards: [{
 				id: "191C4E8B315CC218"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.0d
+			y: 9.0d
+			shape: "rsquare"
+			description: [
+				"The ME Terminal gives you access to items stored in your ME Network. This will also include items accessible through ME Storage Bus."
+				""
+				"It has the ability to sort and search, as well as filter by using View Cell. It requires a channel to function."
+			]
+			dependencies: ["2D9D7FFDA18C95B5"]
+			id: "742FEDEA09A5FEA7"
+			tasks: [{
+				id: "4EA6EEE45103709C"
+				type: "item"
+				item: "ae2:terminal"
+			}]
+			rewards: [{
+				id: "3223CC98DD221E94"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 7.0d
+			y: 9.0d
+			shape: "rsquare"
+			description: [
+				"The Pattern Encoding Terminal is a specialized version of the ME Crafting Terminal designed to encode Blank Patterns into Crafting Patterns or Processing Patterns."
+				""
+				"The Pattern Encoding Terminal lets you browse the contents of your network like other terminals, but also contains an area for designing patterns. There are two modes for pattern encoding, crafting and processing. Processing patterns are designed for use with machines that do not use standard crafting recipes; such as furnaces, MI machines, etc. To select between modes, click the button to the right of the interface; when it shows a standard crafting table, it will create Crafting Patterns, and when it shows a furnace, it will create Processing Patterns."
+				""
+				"For Crafting Patterns, you specify the input crafting materials on a standard 3x3 crafting grid, and the output materials are determined automatically."
+				""
+				"For Processing Patterns, you specify the input materials and output materials, including quantity, by placing stacks of items in the interface. If a process operation is not gauranteed to succeed (such as secondary products from some machines), it will not work correctly as a Processing Pattern."
+				""
+				"Requires a channel to be operational."
+			]
+			dependencies: ["4372EB6B99CB383D"]
+			id: "19EAC8C0A6889843"
+			tasks: [{
+				id: "3DC76830282291B2"
+				type: "item"
+				item: "ae2:pattern_encoding_terminal"
+			}]
+			rewards: [{
+				id: "28A01028C42707EF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "CHANNELS!"
+			x: 2.5d
+			y: 7.0d
+			shape: "rsquare"
+			subtitle: "Tedious but rewarding!"
+			description: [
+				"Many devices, but not all, require a channel to function. If the device deals solely with power, or connectivity like cables, the device will not require a channel. Anything that uses items, or moves them around, will."
+				""
+				"Channels limits are doubled from the standard, meaning that a controllerless network will be able to support up to 16 channels. Once you break that limit, you will need to add an ME Controller to your network."
+				""
+				"Each face of the ME Controller will output 64 channels. What these channels are connected to will determine what they get used for, for instance, if you place Fluix ME Dense Covered Cable next to the controller you will be able to carry a full 32 channels, however if you place an ME Drive next to it, or non-dense cable, you will only get 8 channels."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "34EC66DC503EE2AD"
+			tasks: [{
+				id: "20B32213DF9AA2CE"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "770EAA5AB2C198F8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 12.5d
+			shape: "rsquare"
+			description: [
+				"Cable Anchors are small decorative cable-mounted spikes that you can use to create ladders with cables, or make the cable appear connected to the walls around it."
+				""
+				"Most notably, Cable Anchors prevent connections from forming on the side they're mounted on."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "3939773BB1720493"
+			tasks: [{
+				id: "1A21A6A0EBB132ED"
+				type: "item"
+				item: "ae2:cable_anchor"
+			}]
+			rewards: [{
+				id: "4DB61BD4A9D673B6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 11.5d
+			shape: "rsquare"
+			description: [
+				"So when channels become a nusance, you can turn to ME P2P Tunnels. When configured for ME, they allow you to move channels from point to point. This allows you to move up to 32 channels per pair of ME P2P Tunnel."
+				""
+				"The P2P Tunnel can be configured to transfer other things, such as items, redstone, power, and fluids. Check REI on how to configure the P2P."
+				""
+				"Tunnels are 1 input to N outputs. This means you can output as many points as you want, but only input at a single point per tunnel. Networks can support any number of tunnels, of any different t ypes, and they all function independently."
+				""
+				"ME Tunnels can be used to carry channels from one location to another, and carry up to 32 channels, same as Fluix ME Dense Covered Cable, while only requiring a single channel per point, making tunnels a very powerful tool to expand ME Networks, especially over distance. "
+				""
+				"The channel required by a P2P Tunnel cannot be carried through another P2P Tunnel."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "1DBBA5E170B9B5D6"
+			tasks: [{
+				id: "337A787E6839F1D4"
+				type: "item"
+				item: "ae2:me_p2p_tunnel"
+			}]
+			rewards: [{
+				id: "363B20DC6AF9511F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Quantum Ring"
+			x: 2.0d
+			y: 13.5d
+			shape: "rsquare"
+			description: [
+				"Quantum Network Bridges can connect two networks over infinite distances and even between dimensions.  They can carry 32 channels in t otal (regardless of how cables are connected to each face)."
+				""
+				"Eight Quantum Rings are placed around an ME Quantum Link Chamber to create a Quantum Network Bridge. Only the 4 ME Quantum Ring blocks adjacent to the ME Quantum Link Chamber will accept network connections, the 4 corner blocks cannot connect to cables."
+				""
+				"The Quantum Link Chamber can accept one item in its inventory, the Quantum Entangled Singularity."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "13ADC5EC083B64D0"
+			tasks: [
+				{
+					id: "6C3D7A727C709366"
+					type: "item"
+					item: "ae2:quantum_ring"
+					count: 8L
+				}
+				{
+					id: "471A1AB08E4E2F21"
+					type: "item"
+					item: "ae2:quantum_link"
+				}
+			]
+			rewards: [{
+				id: "09A71D511F21E31F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Glass Cables"
+			x: -2.5d
+			y: 9.0d
+			shape: "rsquare"
+			description: [
+				"Fluix ME Glass Cables are the simplest cable to make, transfers power and up to 8 channels. It comes in 17 different colors, the default being Fluix, and can be dyed any color using any of the 16 dyes."
+				""
+				"To craft colored cables, surround a dye of any type with 8 cables of the same type (color of the cables don't matter, but they must be the same type). You can also paint cables with any forge compatible paint brush in world."
+				""
+				"You can craft any colored cable with a water bucket to remove the dye."
+				""
+				"You can cover the cable with wool to create Fluix ME Covered Cable, and craft Fluix ME Smart Cable to get better ideaa of what is going on with your channels."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "0185C45DF71403A5"
+			tasks: [{
+				id: "7C3BE9D5466690C5"
+				type: "item"
+				title: "Any Glass Cable"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "ae2:glass_cable"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2183012CF34F39C2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Colored Cables"
+			x: -4.5d
+			y: 9.0d
+			shape: "rsquare"
+			description: [
+				"The Covered Cable variant offers no gameplay benewfits over its Fluix ME Glass Cable counterpart. It can however be used as an alternate aesthetic choice if you prefer the covered look."
+				""
+				"Can be colored in the same manner as Fluix ME Glass Cable. Four Fluix ME Covered Cable can be crafted with Redstone and Glowstone to make Fluix ME Smart Cable."
+			]
+			dependencies: ["0185C45DF71403A5"]
+			id: "56A9ADF766CC038C"
+			tasks: [{
+				id: "69B5FA12A13886E6"
+				type: "item"
+				title: "Any Covered Cable"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "ae2:covered_cable"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5FAB2D774C819C17"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Dense Covered Cables"
+			x: -4.0d
+			y: 10.5d
+			shape: "rsquare"
+			description: ["The Fluix ME Dense Covered Cable can carry up to 64 channels unlike standard cable which can only carry 16, however it doesn't support buses, so you must first step down from dense to smaller cable (such as Fluix ME Glass Cable or Fluix ME Smart Cable) before using buses or panels."]
+			dependencies: ["56A9ADF766CC038C"]
+			id: "156DB9FCCDFE4C57"
+			tasks: [{
+				id: "2671CFDA4FBDA8A4"
+				type: "item"
+				title: "Any Dense Covered Cable"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "ae2:covered_dense_cable"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2ECC829B1A82E981"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Smart Cables"
+			x: -5.0d
+			y: 10.5d
+			shape: "rsquare"
+			description: [
+				"While bearing some similarity to Fluix ME Covered Cables in appearance, the Fluix ME Smart Cable provides diagnostic function by visualizing the channel usage on the cables, the channels appear as lit colored lines that run along the black stripe on the cables giving you an understanding of how your channels are being used on your network. The first four channels show as lines matching the color of the cable, the next four show as white lines."
+				""
+				"These can be colored in the same manner as Fluix ME Glass Cable."
+			]
+			dependencies: ["56A9ADF766CC038C"]
+			id: "7C0F5471E36D2678"
+			tasks: [{
+				id: "36DE906D5C60EBCF"
+				type: "item"
+				title: "Any Smart Cable"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "ae2:smart_cable"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0FDF2EA918696E1E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Smart Dense Cables"
+			x: -5.0d
+			y: 12.0d
+			shape: "rsquare"
+			description: ["Similar to the regular Dense Covered Cables, the Fluix ME Smart Dense Cables carry 64 channels instead of the default 16. Shows load similarly to Fluix ME Smart Cable with each line lit representing four channels in use."]
+			dependencies: ["7C0F5471E36D2678"]
+			id: "0EA5A3091E3732A8"
+			tasks: [{
+				id: "118A781A1E239A22"
+				type: "item"
+				title: "Any Smart Dense Cables"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "ae2:smart_dense_cable"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5950F027ADE5E70D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: 11.5d
+			shape: "rsquare"
+			description: [
+				"The Toggle Bus is a bus which functions similarly to Fluix ME Glass Cable or other cables, but it allows it connection state to be toggled via redstone. This allows you to cut off a section of a ME Network."
+				""
+				"When redstone signal supplied the part enables the connection, ME Inverted Toggle Bus provides the reverse behavior by disabling the connection instead."
+				""
+				"There is also an inverted version of the toggle that disables the connection when a redstone signal is supplied."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "66B50C954D74B139"
+			tasks: [{
+				id: "7A626F89D6A3E77D"
+				type: "item"
+				item: "ae2:toggle_bus"
+			}]
+			rewards: [{
+				id: "46A4BE8A758F90AB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: 11.5d
+			shape: "rsquare"
+			description: [
+				"Lowest tier storage cell, which can contain 1024 bytes of storage."
+				""
+				"1024 bytes of storagne can hold 127 stacks of a single item, or 65 stacks, while holding 63 different items."
+				""
+				"The 1k Storage Cell uses 8 bytes of data to store a single type. When placed inside a drive or chest, it will add an additional 0.5 AE/t to the power cost of the connection."
+				""
+				"You can remove the 1k ME Storage Component by fully emptying the Storage Cell, and shift-right clicking while holding it. The settings can be changed in the Cell Workbench."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "2BA27AB43B03F656"
+			tasks: [{
+				id: "4279A4ECEAB86B7B"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "26D9E14E2B464CE8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 11.5d
+			shape: "rsquare"
+			description: ["Fluid Cells are similar to the item storage counterparts, except they hold fluids (duh!). Fluid storage cells can hold up to 5 distinct types of fluids; the volume of fluid they can store depend in part on how many types they are holding, and their storage capacity."]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "5270F349E0B5F580"
+			tasks: [{
+				id: "6C35800BBCD5C70D"
+				type: "item"
+				item: {
+					id: "ae2:fluid_storage_cell_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "59CD30D814B9B038"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: 12.5d
+			shape: "rsquare"
+			description: [
+				"A low tier storage cell, which can contain 4096 bytes of storage."
+				""
+				"4096 bytes of storage can hold 508 stacks of a single item, or 260 stacks while holding 63 different items."
+				""
+				"The 4k Storage Cell uses 32 bytes of data to store a single type. When placed inside a drive or chest it will consume an additional 1.0 AE/t of power for the connection."
+				""
+				"You can remove the 4k ME Storage Component by fully emptying the storage cell, and sneak right-clicking it in your hand."
+			]
+			dependencies: ["2BA27AB43B03F656"]
+			id: "0F6CB1AEE71CFB16"
+			tasks: [{
+				id: "225AABEB1973E3A7"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_4k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7FD28C1AB7C9417C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 12.5d
+			shape: "rsquare"
+			description: ["A low tier fluid storage cell that can store 4096 bytes of information."]
+			dependencies: ["5270F349E0B5F580"]
+			id: "267CC8AF07E94284"
+			tasks: [{
+				id: "797B1EE462546C57"
+				type: "item"
+				item: {
+					id: "ae2:fluid_storage_cell_4k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "08422FA92D250DAD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: 13.5d
+			shape: "rsquare"
+			description: [
+				"Middle Tier Storage Cell, which can contain 16384 bytes of storage."
+				""
+				"16,384 bytes of storage can hold 2032 Stacks of a single item, or 1040 Stacks, while holding 63 Different items."
+				""
+				"The 16k Storage Cell uses 128 bytes of data to store a single type. When placed inside a drive or chest will consume 1.5 AE/t."
+				""
+				"You can remove the 16k ME Storage Component by fully emptying the storage cell, and sneak-right clicking it in your hand."
+			]
+			dependencies: ["0F6CB1AEE71CFB16"]
+			id: "0338A0F80C416F09"
+			tasks: [{
+				id: "73BD039352384790"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_16k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "4331FA7E270C108E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 13.5d
+			shape: "rsquare"
+			description: ["A midtier fluid storage cell that can store 16384 bytes of information."]
+			dependencies: ["267CC8AF07E94284"]
+			id: "195CA8E85827FF47"
+			tasks: [{
+				id: "5B5222E20ED643BA"
+				type: "item"
+				item: {
+					id: "ae2:fluid_storage_cell_16k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2B9EE733B2C32D44"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: 14.5d
+			shape: "rsquare"
+			description: [
+				"High Tier Storage Cell, which can contain 65536 bytes of storage."
+				""
+				"65536 bytes of storage can hold 8128 Stacks of a single item. or 4160 Stacks,while holding 63 Different items."
+				""
+				"The 64k Storage Cell uses 512 bytes of data to store a single type. When placed inside a drive or chest will consume 2.0 AE/t."
+				""
+				"You can remove the 64k ME Storage Component by fully emptying the storage cell, and sneak-right clicking it in your hand."
+			]
+			dependencies: ["0338A0F80C416F09"]
+			id: "0C4AEF63DE034490"
+			tasks: [{
+				id: "0634EB755972A894"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_64k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6812D3F82B67FED1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 14.5d
+			shape: "rsquare"
+			description: ["A high tier fluid storage cell that can store up to 65536 bytes of information."]
+			dependencies: ["195CA8E85827FF47"]
+			id: "63339BE5D6244E37"
+			tasks: [{
+				id: "29B18C263C01CF25"
+				type: "item"
+				item: {
+					id: "ae2:fluid_storage_cell_64k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "59C6D9270F8D269B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: 15.5d
+			shape: "rsquare"
+			description: [
+				"Highest Tier Storage Cell, which can contain 262144 bytes of storage."
+				""
+				"262144 bytes of storage can hold 32512 stacks of a single item, or 16256 stacks while holding 63 different items."
+				""
+				"The 256k Storage Cell uses 1024 bytes of data to store a single type. When placed inside a drive, will consume 2.5 AE/t."
+				""
+				"You can remove the 256K ME Storage Component by fully emptying the storage cell and sneak clicking it in your hand."
+			]
+			dependencies: ["0C4AEF63DE034490"]
+			id: "0BF80E377CADB790"
+			tasks: [{
+				id: "01881CB72B69C88C"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_256k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "5BEF17284E5AF6D7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 15.5d
+			shape: "rsquare"
+			description: ["The highest tier fluid storage cell that can store up to 262144 bytes of information."]
+			dependencies: ["63339BE5D6244E37"]
+			id: "502345F01035C536"
+			tasks: [{
+				id: "3F1F4B1CF6A614AF"
+				type: "item"
+				item: {
+					id: "ae2:fluid_storage_cell_256k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "4EEDDBA4E2188B0E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 13.5d
+			shape: "rsquare"
+			description: [
+				"The ME Storage Montior is a simple way to see the current level of a specified item. There are several interactions to modify it."
+				"- Right-click with item: Will display the current stored amount of that item if not locked"
+				"- Right-click with empty hand: Will reset the display if not locked."
+				"- Shift+right-click with empty hand: Will toggle the lock"
+				"- Right-click with wrench: Will rotate the monitor if its locked and on the ground or ceiling"
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "7E211328EEB3CB9C"
+			tasks: [{
+				id: "2AC295360D59CF76"
+				type: "item"
+				item: "ae2:storage_monitor"
+			}]
+			rewards: [{
+				id: "2A6F037AA7D8AF8F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: 12.5d
+			shape: "rsquare"
+			description: [
+				"The ME Level Emitter can indicate either the level of a specified item or the ME Network energy level. You can set the threshold and if the ME Level Emitter will emit a redstone signal or turn it off."
+				""
+				"Requires a channel to function, if its power or channel is lost the emitter will switch to an off state."
+				""
+				"These can tap into the crafting system when a crafting grid is installed, allowing you to output redstone while an item is being crafted or even configure the system to output redstone to perform a crafting task, its important to note that you cannot mix level emitter craft via redstone with interface patterns."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "59B25EC6B8490E78"
+			tasks: [{
+				id: "78EB484BB1A1F0E3"
+				type: "item"
+				item: "ae2:level_emitter"
+			}]
+			rewards: [{
+				id: "37CE84EBA7041C6A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -4.0d
+			y: 13.5d
+			shape: "rsquare"
+			description: [
+				"The ME Conversion Monitor is the upgraded version of the ME Storage Monitor. It adds the ability to withdraw from or store items into the ME Network."
+				""
+				"In addition to the storage monitor's interactions, conversion monitors support the following actions:"
+				"- Left-click: Extracts a stack of the shown item into your inventory"
+				"- Right-click with item: Inserts the held item into the network"
+				"- Right-click with empty hand: Will insert all of the shown item from your inventory into the network."
+			]
+			dependencies: ["7E211328EEB3CB9C"]
+			id: "6A5AD2356F8AC735"
+			tasks: [{
+				id: "4939C15297BA8D8D"
+				type: "item"
+				item: "ae2:conversion_monitor"
+			}]
+			rewards: [{
+				id: "13639A1914E4CF10"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.5d
+			y: 13.5d
+			shape: "rsquare"
+			description: [
+				"The Quantum Entangled Singularity is required to create a connection between two Quantum Network Bridges. They are always produced in matching pairs, to create a connection place 1 of the pair of Quantum Entangled Singularity into the ME Quantum Link Chamber of the bridge on each side."
+				""
+				"They are crafted by causing a reaction between an Ender Pearl and a Singularity. Any explosive force should be enough to trigger the reaction. The two singularities produced are connected to one another, it's probably best to label these with names when you create them using an anvil."
+				""
+				"If the server you're playing on doesn't allow regular TNT detonations, AE2 includes Tiny TNT, which will still explode but not cause any explosive damage."
+			]
+			dependencies: ["13ADC5EC083B64D0"]
+			id: "5370C2CEF127113C"
+			tasks: [{
+				id: "7FE866305A35771C"
+				type: "item"
+				item: "ae2:quantum_entangled_singularity"
+			}]
+			rewards: [{
+				id: "58A62CFD44666C66"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: 12.5d
+			shape: "rsquare"
+			description: [
+				"The Matter Condenser has two key functions, elimination of excess materials in a cheap manor and the production of Singularity and Matter Ball."
+				""
+				"Can accept both fluids and items to be destroyed. Each item or fluid will count as one additional energy. This energy can be stored on ME Storage Components. 256 Energy is required to generate a Matter Ball, and 256,000 energy will be required for the Singularity."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "511ACED1E299766B"
+			tasks: [{
+				id: "24640E3E331DBC76"
+				type: "item"
+				item: "ae2:condenser"
+			}]
+			rewards: [{
+				id: "3E8ECDE163923A9C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.25d
+			y: 0.0d
+			shape: "square"
+			description: ["Hopefully with your Stainless Steel Drill in your Electric Quarry you have a decent amount of Titanium Ores to process. Using Manganese Sufluric Solution you can process the raw ore into an ingot in a Kanthal EBF. Just like Stainless Steel, the ingot you will get will be hot and will need to be cooled down before it can be used."]
+			dependencies: ["529FBE21C8B21DC1"]
+			id: "293DB25BD2827372"
+			tasks: [{
+				id: "16ABEC172F9DB7DA"
+				type: "item"
+				item: "modern_industrialization:titanium_hot_ingot"
+			}]
+			rewards: [{
+				id: "453712F1B5791764"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.0d
+			dependencies: ["08362FF409BFC7CC"]
+			id: "779458EF9AEE3AC9"
+			tasks: [{
+				id: "7007B8895EE4D89D"
+				type: "item"
+				item: "techreborn:lapotron_crystal"
+			}]
+			rewards: [{
+				id: "4FAB831F909B4F84"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 14.25d
+			y: -5.25d
+			subtitle: "Creative Flight!"
+			size: 1.5d
+			id: "39FB6B43C46FC7D7"
+			tasks: [{
+				id: "2A8B4FAC4C2F3B90"
+				type: "item"
+				item: "modern_industrialization:gravichestplate"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -2.0d
+			shape: "square"
+			dependencies: ["08362FF409BFC7CC"]
+			id: "145521361CF7410E"
+			tasks: [{
+				id: "297F22AA3CDA2002"
+				type: "item"
+				item: "modern_industrialization:titanium_drill"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -3.0d
+			description: ["Combingin 3x Neodymium, 3x Annealed Copper, 3x Yttrium, and 1x Iridium Dust you can mix together Superconductor Dust. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a Kanthal EBF and then cool it in a vacuum freezer."]
+			id: "569821B175311340"
+			tasks: [{
+				id: "7F7814394EC4D8DA"
+				type: "item"
+				item: "modern_industrialization:superconductor_dust"
+			}]
+			rewards: [{
+				id: "6DB07CF0D3B65E62"
 				type: "xp"
 				xp: 100
 			}]

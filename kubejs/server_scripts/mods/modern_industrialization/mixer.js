@@ -10,6 +10,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let xps = (id) => `xps:${id}`;
+    let ae = (id) => `ae2:${id}`;
 
     let mixer = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
@@ -44,6 +45,23 @@ ServerEvents.recipes(e => {
         null,
         null
     );    
+
+    // -- CERTUS QUARTS CRYSTAL -- //
+    mixer(
+        8,
+        100,
+        [
+            { amount: 1, item: ae('charged_certus_quartz_crystal') },
+            { amount: 1, item: ae('certus_quartz_dust') }
+        ],
+        [
+            { amount: 2, item: ae('certus_quartz_crystal') }
+        ],
+        [
+            { amount: 1000, fluid: mc('water'), probability: 0 }
+        ],
+        null
+    );
 
     let mixerConsumable = (fluid, amount) => {
         if (amount < 100)

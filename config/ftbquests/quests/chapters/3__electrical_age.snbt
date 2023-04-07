@@ -354,7 +354,7 @@
 		}
 		{
 			x: 18.0d
-			y: 11.0d
+			y: 9.0d
 			shape: "square"
 			subtitle: "Bring out the barrels!"
 			description: ["The Distillery will turn various fluids into their lighter parts. This will be very useful for Oil Processing!"]
@@ -419,7 +419,7 @@
 		}
 		{
 			x: 18.0d
-			y: 9.0d
+			y: 13.0d
 			shape: "square"
 			subtitle: "You spin me right round"
 			description: [
@@ -2711,7 +2711,7 @@
 		}
 		{
 			x: 22.0d
-			y: 9.0d
+			y: 13.0d
 			shape: "square"
 			description: ["Mixing Manganese Crushed Dust with 9000 mB of Sulfuric Acid will create 9000 mB Manganese Sulfuric Solution."]
 			dependencies: ["60E8A38E2CC05E1A"]
@@ -2729,7 +2729,7 @@
 		}
 		{
 			x: 20.0d
-			y: 9.0d
+			y: 13.0d
 			shape: "square"
 			description: [
 				"Manganese Crushed Dust will be needed in the production of Stainless Steel. "
@@ -2751,7 +2751,7 @@
 		}
 		{
 			x: 24.0d
-			y: 9.0d
+			y: 11.0d
 			shape: "square"
 			description: ["Electrolyzing 1000mB of Manganese Sulfuric Solution will produce three Tiny Manganese Dust and 900 mB of Sulfuric Acid. That means you lose 100 mB of Sulfuric Acid in the production loop."]
 			dependencies: ["306F6F7600712637"]
@@ -2768,7 +2768,7 @@
 			}]
 		}
 		{
-			x: 20.0d
+			x: 22.0d
 			y: 5.0d
 			shape: "square"
 			description: [
@@ -2790,7 +2790,7 @@
 			}]
 		}
 		{
-			x: 20.0d
+			x: 22.0d
 			y: 7.0d
 			shape: "square"
 			description: ["Combining Hydrogen with Chlorine will produce Hydrochloric Acid."]
@@ -2812,7 +2812,7 @@
 		}
 		{
 			x: 20.0d
-			y: 8.0d
+			y: 12.0d
 			shape: "square"
 			description: [
 				"You can macerate Ruby Ore or Centrifugre Redstone Dust to get Ruby Dust. "
@@ -2834,7 +2834,7 @@
 		}
 		{
 			x: 22.0d
-			y: 8.0d
+			y: 12.0d
 			shape: "square"
 			description: ["Combining 9000 mB of Hydrochloric Acid with Chromium Crushed Dust will create 9000 mB of Chromium Hydrochloric Solution."]
 			dependencies: [
@@ -2855,7 +2855,7 @@
 		}
 		{
 			x: 24.0d
-			y: 8.0d
+			y: 10.0d
 			shape: "square"
 			description: ["Electrolyzing 1000 mB of Chromium Hydrochloric Solution will produce three Tiny Chromium Dust, 450 mB of Hydrogen, and 450 mB of Chlorine. This means that there is a 100 mB loss of Hydrochloric Acid for each process. Automating Salt Ore production through the Quarry is going to be essential."]
 			dependencies: ["49C4F2DED9D7043A"]
@@ -3038,7 +3038,7 @@
 			title: "The Vacuum Freezer"
 			icon: "modern_industrialization:vacuum_freezer"
 			x: 18.0d
-			y: 13.0d
+			y: 11.0d
 			shape: "square"
 			subtitle: "It's getting cold in here"
 			description: [
@@ -3184,7 +3184,10 @@
 				""
 				"You will need to cool the ingot in a Vacuum Freezer before you can use it."
 			]
-			dependencies: ["68DDFA6E0465E81E"]
+			dependencies: [
+				"68DDFA6E0465E81E"
+				"354C87C444B34193"
+			]
 			id: "6C91896D4DF89A77"
 			tasks: [{
 				id: "656E0ADBC13E1167"
@@ -3425,19 +3428,8 @@
 			}]
 		}
 		{
-			x: 13.0d
-			y: 3.0d
-			dependencies: ["5D1DD7B1C1BB8BEC"]
-			id: "45060869501B9546"
-			tasks: [{
-				id: "43BC83FA4C391380"
-				type: "item"
-				item: "techreborn:lithium_ion_battery"
-			}]
-		}
-		{
 			x: 18.0d
-			y: 3.0d
+			y: 3.5d
 			shape: "rsquare"
 			description: [
 				"By electrolyzing clay, you can now get little bits of Lithium gas. You can combine your old Red Cell Batteries with Aluminum Plates and some Lithium to make Lithium Ion Batteries."
@@ -3458,15 +3450,17 @@
 			}]
 		}
 		{
-			x: 34.0d
-			y: 10.5d
+			x: 18.0d
+			y: 2.0d
 			shape: "rsquare"
 			description: [
 				"With your advancements in science, you have found that you can glue six Lithium Ion Batteries together and use as a single battery!"
 				""
 				"This has a 600k internal energy buffer, at this point I doubt you have anything that could possibly drain that much, but it will be useful as soon as you unlock the electric TechReborn tools!"
+				""
+				"It can also be equipped into your chest slot."
 			]
-			dependencies: ["575EE8E0720CE7DC"]
+			dependencies: ["42A6888AA162648D"]
 			id: "6EA807A04401F8AE"
 			tasks: [{
 				id: "7DA97BD25EBB4C85"
@@ -3475,6 +3469,169 @@
 			}]
 			rewards: [{
 				id: "5BB603F50F6CFDFD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.0d
+			y: 8.0d
+			shape: "rsquare"
+			description: [
+				"With access to the Chemical Reactor, you can now create Eye of Enders. "
+				""
+				"Whether you want to go and fight the Ender Dragon now is up to you, as it's not required to beat the pack, but it could be useful to get access to the Elytra and other rare items."
+			]
+			dependencies: ["517C3D6FBC5FEB2A"]
+			id: "4E194F2BBB21F033"
+			tasks: [{
+				id: "7EC5928DEEEA17FF"
+				type: "item"
+				item: "minecraft:ender_eye"
+			}]
+			rewards: [{
+				id: "4F739E599354E92A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 21.0d
+			y: 8.0d
+			shape: "rsquare"
+			description: ["By some kind of ender magic, this backpack allows you to remotely access your own ender chest."]
+			dependencies: ["4E194F2BBB21F033"]
+			id: "54589AAB3003F421"
+			tasks: [{
+				id: "408B2186174A852E"
+				type: "item"
+				item: "inmis:ender_pouch"
+			}]
+			rewards: [{
+				id: "73BCD9525B39841A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.0d
+			y: 9.0d
+			shape: "rsquare"
+			description: [
+				"Entangled Chests are universally linked chests that work across dimensions and store the same items as long as they are color-code the same."
+				""
+				"You can use runes to change the color-coding."
+			]
+			dependencies: ["517C3D6FBC5FEB2A"]
+			id: "616AB06164FF575F"
+			tasks: [{
+				id: "4281D358BBE797BE"
+				type: "item"
+				item: "kibe:entangled_chest"
+			}]
+			rewards: [{
+				id: "500D996C415F2987"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 21.0d
+			y: 9.0d
+			shape: "rsquare"
+			description: [
+				"Entangled Bags are able to access the contents of your Entangled Chest on the go."
+				""
+				"Shift right-click an Entangled Chest with an Entangled Bag to link them together."
+			]
+			dependencies: ["517C3D6FBC5FEB2A"]
+			id: "1044FF1E86B2615A"
+			tasks: [{
+				id: "1178ABAC40FC7031"
+				type: "item"
+				item: "kibe:entangled_bag"
+			}]
+			rewards: [{
+				id: "7592E538897942CE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.0d
+			y: 10.0d
+			shape: "rsquare"
+			description: [
+				"Entangled Tanks are exactly like Entangled Chests, but they can store fluids instead."
+				""
+				"You can use runes to change the color-coding."
+			]
+			dependencies: ["517C3D6FBC5FEB2A"]
+			id: "152E753AE4B119C1"
+			tasks: [{
+				id: "6C36FB2FA87E0680"
+				type: "item"
+				item: "kibe:entangled_tank"
+			}]
+			rewards: [{
+				id: "76E38923352C5B46"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 21.0d
+			y: 10.0d
+			shape: "rsquare"
+			description: [
+				"Entangled Buckets can be used to directly access the contents of your Entangled Tank on the go."
+				""
+				"Shift right-click an Entangled Tank with an Entangled Bucket to link them together."
+			]
+			dependencies: ["517C3D6FBC5FEB2A"]
+			id: "5E0F3A2885C0E0DD"
+			tasks: [{
+				id: "4D6D096AB9AEAC06"
+				type: "item"
+				item: "kibe:entangled_bucket"
+			}]
+			rewards: [{
+				id: "45B27763DC89837B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 28.0d
+			y: 7.5d
+			shape: "square"
+			description: ["The Air Intake will allow your Vacuum Freezers and Pressurizers to produce Liquid Air, which can be distilled into it's base components."]
+			dependencies: ["6375B17635AAC09D"]
+			id: "354C87C444B34193"
+			tasks: [{
+				id: "1EBA2DB47CD44873"
+				type: "item"
+				item: "modern_industrialization:air_intake"
+			}]
+			rewards: [{
+				id: "000AFBF64B2CDCDB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 34.0d
+			y: 10.5d
+			shape: "rsquare"
+			dependencies: ["575EE8E0720CE7DC"]
+			id: "39A53780808097E7"
+			tasks: [{
+				id: "458F30860C8B7756"
+				type: "item"
+				item: "techreborn:energy_crystal"
+			}]
+			rewards: [{
+				id: "033A33C1C73505D5"
 				type: "xp"
 				xp: 100
 			}]
