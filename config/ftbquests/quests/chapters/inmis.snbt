@@ -1,30 +1,12 @@
 {
 	id: "6471F4A220959084"
 	group: "05A88037F88880CD"
-	order_index: 6
+	order_index: 5
 	filename: "inmis"
 	title: "Inmis"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
-		{
-			x: 4.5d
-			y: 2.5d
-			shape: "rsquare"
-			description: ["By some kind of ender magic, this backpack allows you to remotely access your own ender chest."]
-			hide_dependency_lines: true
-			id: "54589AAB3003F421"
-			tasks: [{
-				id: "408B2186174A852E"
-				type: "item"
-				item: "inmis:ender_pouch"
-			}]
-			rewards: [{
-				id: "73BCD9525B39841A"
-				type: "xp"
-				xp: 100
-			}]
-		}
 		{
 			x: 5.5d
 			y: 0.5d
