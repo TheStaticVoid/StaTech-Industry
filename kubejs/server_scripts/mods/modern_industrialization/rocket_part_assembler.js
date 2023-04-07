@@ -4,7 +4,7 @@ ServerEvents.recipes(e => {
     let astra = (id) => `ad_astra:${id}`;
 
     // helper function for assembler
-    let rocketAssembler = (eu, duration, item_inputs, fluid_inputs, item_outputs) => {
+    let rocketAssembler = (eu, duration, item_inputs, item_outputs, fluid_inputs) => {
         let newRecipe = {
             type: 'modern_industrialization:rocket_part_assembler',
             eu: eu,
@@ -12,10 +12,10 @@ ServerEvents.recipes(e => {
         }
         if (item_inputs != null)
             newRecipe['item_inputs'] = item_inputs;
-        if (fluid_inputs != null) 
-            newRecipe['fluid_inputs'] = fluid_inputs;
         if (item_outputs) 
             newRecipe['item_outputs'] = item_outputs;
+        if (fluid_inputs != null) 
+            newRecipe['fluid_inputs'] = fluid_inputs;
 
         e.custom(newRecipe);
     }
@@ -30,10 +30,10 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('steel_tank') }
         ],
         [
-            { amount: 100, fluid: mi('soldering_alloy') }
+            { amount: 1, item: astra('steel_tank') }
         ],
         [
-            { amount: 1, item: astra('steel_tank') }
+            { amount: 100, fluid: mi('soldering_alloy') }
         ]
     );
 
@@ -47,10 +47,10 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('advanced_motor') }
         ],
         [
-            { amount: 100, fluid: mi('soldering_alloy') }
+            { amount: 1, item: astra('engine_fan') }
         ],
         [
-            { amount: 1, item: astra('engine_fan') }
+            { amount: 100, fluid: mi('soldering_alloy') }
         ]
     );
 
@@ -63,10 +63,10 @@ ServerEvents.recipes(e => {
             { amount: 2, item: mi('steel_large_plate') }
         ],
         [
-            { amount: 100, fluid: mi('soldering_alloy') }
+            { amount: 1, item: astra('engine_frame') }
         ],
         [
-            { amount: 1, item: astra('engine_frame') }
+            { amount: 100, fluid: mi('soldering_alloy') }
         ]
     );
 
@@ -80,10 +80,10 @@ ServerEvents.recipes(e => {
             { amount: 1, item: astra('engine_fan') }
         ],
         [
-            { amount: 100, fluid: mi('soldering_alloy') }
-        ],
-        [
             { amount: 1, item: astra('steel_engine') }
+        ], 
+        [
+            { amount: 100, fluid: mi('soldering_alloy') }
         ]
     );
 
@@ -96,10 +96,10 @@ ServerEvents.recipes(e => {
             { amount: 3, item: mi('steel_curved_plate') }
         ],
         [
-            { amount: 100, fluid: mi('soldering_alloy') }
+            { amount: 1, item: astra('rocket_fin') }
         ],
         [
-            { amount: 1, item: astra('rocket_fin') }
+            { amount: 100, fluid: mi('soldering_alloy') }
         ]
     );
 
@@ -112,10 +112,10 @@ ServerEvents.recipes(e => {
             { amount: 1, item: 'techreborn:synthetic_redstone_crystal' }
         ],
         [
-            { amount: 100, fluid: mi('soldering_alloy') }
+            { amount: 1, item: astra('rocket_nose_cone') }
         ],
         [
-            { amount: 1, item: astra('rocket_nose_cone') }
+            { amount: 100, fluid: mi('soldering_alloy') }
         ]
     );
 });

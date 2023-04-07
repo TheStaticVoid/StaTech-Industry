@@ -1,266 +1,113 @@
 ServerEvents.recipes(e => {
+    
+    let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    let tr = (id) => `techreborn:${id}`;
+    let crate = (id) => `create:${id}`; // mispelled on purpose ;)
+
+    let alloySmelter = (eu, duration, item_inputs, item_outputs) => {
+        let newRecipe = {
+            type: mi('alloy_smelter'),
+            eu: eu,
+            duration: duration
+        }
+
+        if (item_inputs)
+            newRecipe['item_inputs'] = item_inputs;
+        if (item_outputs)
+            newRecipe['item_outputs'] = item_outputs;
+
+        e.custom(newRecipe);
+    }
+
     // -- REFINED IRON INGOT -- //
-    e.custom({
-        type: 'modern_industrialization:alloy_smelter',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 4,
-                item: 'techreborn:calcite_dust'
-            },
-            {
-                amount: 1,
-                item: 'minecraft:iron_ingot'
-            }
+    alloySmelter(
+        16,
+        300,
+        [
+            { amount: 4, item: tr('calcite_dust') },
+            { amount: 1, tag: 'c:iron_ingots' }
         ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'techreborn:refined_iron_ingot'
-            }
+        [
+            { amount: 1, item: tr('refined_iron_ingot') }
         ]
-    });
+    );
 
     // -- NETHERITE INGOT -- //
-    e.custom({
-        type: 'modern_industrialization:alloy_smelter',
-        duration: 600,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 4,
-                item: 'minecraft:gold_ingot'
-            },
-            {
-                amount: 4,
-                item: 'minecraft:netherite_scrap'
-            }
+    alloySmelter(
+        16,
+        600,
+        [
+            { amount: 4, tag: 'c:gold_ingots' },
+            { amount: 4, item: mc('netherite_scrap') }
         ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'minecraft:netherite_ingot'
-            }
+        [
+            { amount: 1, item: mc('netherite_ingot') }
         ]
-    });
+    );
 
     // -- INVAR INGOT -- //
-    e.custom({
-        type: 'modern_industrialization:alloy_smelter',
-        duration: 200,
-        eu: 8,
-        item_inputs: [
-            {
-                amount: 3,
-                item: 'minecraft:iron_ingot'
-            },
-            {
-                amount: 1, 
-                item: 'modern_industrialization:nickel_ingot'
-            }
+    alloySmelter(
+        8,
+        200,
+        [
+            { amount: 3, tag: 'c:iron_ingots' },
+            { amount: 1, tag: 'c:nickel_ingots' }
         ],
-        item_outputs: [
-            {
-                amount: 4,
-                item: 'modern_industrialization:invar_ingot'
-            }
+        [
+            { amount: 4, item: mi('invar_ingot') }
         ]
-    });
+    );
 
     // -- BRONZE INGOT -- //
-    e.custom({
-        type: 'modern_industrialization:alloy_smelter',
-        duration: 100,
-        eu: 8,
-        item_inputs: [
-            {
-                amount: 3,
-                item: 'minecraft:copper_ingot'
-            },
-            {
-                amount: 1,
-                item: 'modern_industrialization:tin_ingot'
-            }
+    alloySmelter(
+        8,
+        100,
+        [
+            { amount: 3, tag: 'c:copper_ingots' },
+            { amount: 1, tag: 'c:tin_ingots' }
         ],
-        item_outputs: [
-            {
-                amount: 4,
-                item: 'modern_industrialization:bronze_ingot'
-            }
+        [
+            { amount: 4, item: mi('bronze_ingot') }
         ]
-    });
+    );
 
     // -- BRASS INGOT -- //
-    e.custom({
-        type: 'modern_industrialization:alloy_smelter',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 3,
-                item: 'minecraft:copper_ingot'
-            },
-            {
-                amount: 1,
-                item: 'create:zinc_ingot'
-            }
+    alloySmelter(
+        16,
+        300,
+        [
+            { amount: 4, tag: 'c:copper_ingots' },
+            { amount: 1, tag: 'c:zinc_ingots' }
         ],
-        item_outputs: [
-            {
-                amount: 4,
-                item: 'create:brass_ingot'
-            }
+        [
+            { amount: 4, item: crate('brass_ingot') }
         ]
-    });
+    );
 
     // -- ELECTRUM INGOT -- //
-    e.custom({
-        type: 'modern_industrialization:alloy_smelter',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 2,
-                tag: 'c:gold_ingots'
-            },
-            {
-                amount: 2,
-                tag: 'c:silver_ingots'
-            }
+    alloySmelter(
+        16,
+        300,
+        [
+            { amount: 2, tag: 'c:gold_ingots' },
+            { amount: 2, tag: 'c:silver_ingots' }
         ],
-        item_outputs: [
-            {
-                amount: 4,
-                item: 'modern_industrialization:electrum_ingot'
-            }
+        [
+            { amount: 4, item: mi('electrum_ingot') }
         ]
-    });
+    );
 
     // -- CUPRONICKEL INGOT -- //
-    e.custom({
-        type: 'modern_industrialization:alloy_smelter',
-        duration: 200,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 1, 
-                tag: 'c:copper_ingots'
-            },
-            {
-                amount: 1,
-                tag: 'c:nickel_ingots'
-            }
+    alloySmelter(
+        16,
+        200,
+        [
+            { amount: 1, tag: 'c:copper_ingots' },
+            { amount: 1, tag: 'c:nickel_ingots' }
         ],
-        item_outputs: [
-            {
-                amount: 2,
-                item: 'modern_industrialization:cupronickel_ingot'
-            }
+        [
+            { amount: 2, item: mi('cupronickel_ingot') }
         ]
-    });
-
-    // -- SPACE HELMET -- //
-    e.custom({
-        type: 'modern_industrialization:assembler',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 4,
-                tag: 'c:steel_ingots'
-            },
-            {
-                amount: 1,
-                tag: 'minecraft:glass_panes'
-            },
-            {
-                amount: 1,
-                tag: 'minecraft:wool'
-            }
-        ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'ad_astra:space_helmet'
-            }
-        ]
-    });
-
-    // -- SPACE SUIT -- // 
-    e.custom({
-        type: 'modern_industrialization:assembler',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 4,
-                tag: 'c:steel_ingots'
-            },
-            {
-                amount: 1,
-                item: 'ad_astra:oxygen_gear',
-            },
-            {
-                amount: 2,
-                item: 'ad_astra:oxygen_tank'
-            }, 
-            {
-                amount: 2,
-                tag: 'minecraft:wool'
-            }
-        ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'ad_astra:space_suit'
-            }
-        ]
-    });
-
-    // -- SPACE PANTS -- //
-    e.custom({
-        type: 'modern_industrialization:assembler',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 5,
-                tag: 'c:steel_ingots'
-            },
-            {
-                amount: 2,
-                tag: 'minecraft:wool'
-            }
-        ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'ad_astra:space_pants'
-            }
-        ]
-    });    
-
-    // -- SPACE BOOTS -- //
-    e.custom({
-        type: 'modern_industrialization:assembler',
-        duration: 300,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 2,
-                tag: 'c:steel_ingots'
-            },
-            {
-                amount: 2,
-                tag: 'minecraft:wool'
-            }
-        ],
-        item_outputs: [
-            {
-                amount: 1,
-                item: 'ad_astra:space_boots'
-            }
-        ]
-    });  
+    ); 
 });

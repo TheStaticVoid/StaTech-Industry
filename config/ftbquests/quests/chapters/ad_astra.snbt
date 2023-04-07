@@ -16,18 +16,6 @@
 	default_hide_dependency_lines: false
 	images: [
 		{
-			x: 10.75d
-			y: 3.0d
-			width: 2.5d
-			height: 2.5d
-			rotation: 0.0d
-			image: "ad_astra:textures/painting/moon.png"
-			hover: ["Mun"]
-			click: ""
-			dev: false
-			corner: false
-		}
-		{
 			x: 17.5d
 			y: -1.75d
 			width: 3.0d
@@ -78,113 +66,6 @@
 	]
 	quests: [
 		{
-			x: 10.75d
-			y: 0.5d
-			shape: "square"
-			subtitle: "One Small Step..."
-			description: [
-				"Welcome to the moon!"
-				""
-				"Collect your Tier 1 Rocket by punching the Lander. Once you've gotten everything feel free to explore, but pay attention to your Oxygen reserves. The main goal of coming to the moon is the acquisition of Desh, which can be found underground in caves. You'll need quite a bit to progress, so try to get as much as possible!"
-			]
-			size: 1.5d
-			id: "400774ADB8A19D03"
-			tasks: [{
-				id: "5D2D9EE7D9DFAF7D"
-				type: "dimension"
-				title: "The Moon"
-				icon: "ad_astra:moon_globe"
-				dimension: "ad_astra:moon"
-			}]
-			rewards: [{
-				id: "63FF8067CB606DB2"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 6.5d
-			y: 0.5d
-			shape: "square"
-			subtitle: "Preparations complete"
-			description: [
-				"Of course you'll need some place to take off from. You'll need a Launch Pad anytime you plan to make a rocket launch, which includes the return flight."
-				""
-				"I've given you an extra in the quest reward to make sure you have an extra on you for when you plan to return from the moon. Just know that for every other planet you plan to take off from you'll need an extra!"
-			]
-			dependencies: ["565F8D6169BE21A4"]
-			id: "41EE82F6FDB2109C"
-			tasks: [{
-				id: "3B455A82B7C1B645"
-				type: "item"
-				item: "ad_astra:launch_pad"
-			}]
-			rewards: [
-				{
-					id: "59F6142B57C5AD4C"
-					type: "item"
-					item: "ad_astra:launch_pad"
-				}
-				{
-					id: "75A8CE37D59D93BD"
-					type: "xp"
-					xp: 100
-				}
-			]
-		}
-		{
-			x: 13.0d
-			y: -0.5d
-			shape: "square"
-			description: ["Desh is the main thing you came to the moon for. You'll need a lot of it for the T2 Rocket and other recipes, so plan to get a bunch!"]
-			dependencies: ["400774ADB8A19D03"]
-			id: "0D0CC636458E8446"
-			tasks: [{
-				id: "4339BF0F47F04383"
-				type: "item"
-				item: "ad_astra:raw_desh"
-			}]
-			rewards: [{
-				id: "1C23D309FB0665A0"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 10.75d
-			y: -2.0d
-			description: ["Forget to pack a snack? The moon's got you. Moon Cheese can be eaten in a pinch to keep you from starving."]
-			dependencies: ["400774ADB8A19D03"]
-			id: "2AE79CA076C2EA64"
-			tasks: [{
-				id: "6C1B1A9C74C005FC"
-				type: "item"
-				item: "ad_astra:cheese"
-			}]
-			rewards: [{
-				id: "18FB8A26D86A17F5"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 13.0d
-			y: 1.5d
-			description: ["You can find Ice Shards on the moon as well. They don't have much use to you yet, but will be important for a more efficient rocket fuel later."]
-			dependencies: ["400774ADB8A19D03"]
-			id: "5B5287B537A656A6"
-			tasks: [{
-				id: "7E232A46F59A8E1E"
-				type: "item"
-				item: "ad_astra:ice_shard"
-			}]
-			rewards: [{
-				id: "6305DD61125E4E1E"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "Space Station"
 			icon: "ad_astra:space_painting"
 			x: 13.0d
@@ -224,31 +105,6 @@
 			]
 			rewards: [{
 				id: "608512339B911635"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "An Alternate Way Home"
-			icon: {
-				id: "waystones:warp_stone"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: 6.5d
-			y: -1.5d
-			description: ["If you recall, back in the Electronic Age you unlocked the ability to create a Warp Stone. You could bring a Waystone with you to the moon and be able to warp back and forth freely without having to spend resources on multiple rocket launches."]
-			dependencies: ["41EE82F6FDB2109C"]
-			id: "671F69640B982683"
-			tasks: [{
-				id: "5B6EB4A8BA770450"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
-			rewards: [{
-				id: "7D3BC78B32ECDAA0"
 				type: "xp"
 				xp: 100
 			}]

@@ -2,6 +2,7 @@ ServerEvents.recipes(e => {
     // -- REMOVED RECIPES -- //
     const MI_DELETED_ITEMS = [
         'modern_industrialization:forge_hammer',
+        'modern_industrialization:guidebook',
         'modern_industrialization:vanilla_recipes/steel_forge_hammer_asbl',
         'modern_industrialization:materials/bronze_dust',
         'modern_industrialization:materials/bronze_tiny_dust',
@@ -15,17 +16,11 @@ ServerEvents.recipes(e => {
         'modern_industrialization:armor/smithing/quantum_chestplate',
         'modern_industrialization:armor/smithing/quantum_boots',
         'modern_industrialization:vanilla_recipes/mixer/netherite',
-        'modern_industrialization:alloy/mixer/electrum/dust',
-        'modern_industrialization:alloy/mixer/cupronickel/dust',
-        'modern_industrialization:alloy/mixer/electrum/tiny_dust',
-        'modern_industrialization:alloy/mixer/cupronickel/tiny_dust',
         'modern_industrialization:materials/cupronickel/craft/coil',
-        'modern_industrialization:guidebook',
         'modern_industrialization:vanilla_recipes/chains',
         'modern_industrialization:vanilla_recipes/packager/chains',
-        'modern_industrialization:materials/electrolyzer/salt_electrolysis',
         'modern_industrialization:materials/kanthal/craft/coil',
-        'modern_industrialization:materials/superconductor/craft/coil'
+        'modern_industrialization:materials/superconductor/craft/coil',
     ];
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     

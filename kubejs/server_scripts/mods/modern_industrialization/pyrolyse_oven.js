@@ -1,96 +1,81 @@
 ServerEvents.recipes(e => {
+
+    let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+
+    let pyrolyseOven = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
+        let newRecipe = {
+            type: mi('pyrolyse_oven'),
+            eu: eu,
+            duration: duration
+        }
+
+        if (item_inputs)
+            newRecipe['item_inputs'] = item_inputs;
+        if (item_outputs)
+            newRecipe['item_outputs'] = item_outputs;
+        if (fluid_inputs)
+            newRecipe['fluid_inputs'] = fluid_inputs;
+        if (fluid_outputs)
+            newRecipe['fluid_outputs'] = fluid_outputs;
+
+        e.custom(newRecipe);
+    }
+
+
     // -- LOGS TO CHARCOAL + CREOSOTE
-    e.custom({
-        type: 'modern_industrialization:pyrolyse_oven',
-        duration: 600,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 16,
-                tag: 'minecraft:logs'
-            },
+    pyrolyseOven(
+        16,
+        600,
+        [
+            { amount: 16, tag: mc('logs') }
         ],
-        fluid_inputs: [
-            {
-                amount: 8000,
-                fluid: 'modern_industrialization:steam'
-            }
+        [
+            { amount: 16, item: mc('charcoal') }
         ],
-        item_outputs: [
-            {
-                amount: 16,
-                item: 'minecraft:charcoal'
-            }
+        [
+            { amount: 8000, fluid: mi('steam') }
         ],
-        fluid_outputs: [
-            {
-                amount: 2000,
-                fluid: 'modern_industrialization:creosote'
-            }
+        [
+            { amount: 2000, fluid: mi('creosote') }
         ]
-    });
+    );
 
     // -- COAL TO COKE + BENZENE -- //
     // Was originally going to be Phenol, but Benzene is basically phenol without the hydroxide
     // Maybe I will add the distillation later
-    e.custom({
-        type: 'modern_industrialization:pyrolyse_oven',
-        duration: 600,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 16,
-                item: 'minecraft:coal'
-            }
+    pyrolyseOven(
+        16,
+        600,
+        [
+            { amount: 16, item: mc('coal') }
         ],
-        fluid_inputs: [
-            {
-                amount: 8000,
-                fluid: 'modern_industrialization:steam'
-            }
+        [
+            { amount: 16, item: mi('coke') }
         ],
-        item_outputs: [
-            {
-                amount: 16,
-                item: 'modern_industrialization:coke'
-            }
+        [
+            { amount: 8000, fluid: mi('steam') }
         ],
-        fluid_outputs: [
-            {
-                amount: 2000,
-                fluid: 'modern_industrialization:benzene'
-            }
+        [
+            { amount: 2000, fluid: mi('benzene') }
         ]
-    });
+    );
 
     // -- COAL DUST TO COKE DUST + BENZENE -- //
-    e.custom({
-        type: 'modern_industrialization:pyrolyse_oven',
-        duration: 600,
-        eu: 16,
-        item_inputs: [
-            {
-                amount: 16,
-                tag: 'c:coal_dusts'
-            }
+    pyrolyseOven(
+        16,
+        600,
+        [
+            { amount: 16, tag: 'c:coal_dusts' }
         ],
-        fluid_inputs: [
-            {
-                amount: 8000,
-                fluid: 'modern_industrialization:steam'
-            }
+        [
+            { amount: 16, item: mi('coke_dust') }
         ],
-        item_outputs: [
-            {
-                amount: 16,
-                item: 'modern_industrialization:coke_dust'
-            }
+        [
+            { amount: 8000, fluid: mi('steam') }
         ],
-        fluid_outputs: [
-            {
-                amount: 2000,
-                fluid: 'modern_industrialization:benzene'
-            }
+        [
+            { amount: 2000, fluid: mi('benzene') }
         ]
-    });
+    );
 });
