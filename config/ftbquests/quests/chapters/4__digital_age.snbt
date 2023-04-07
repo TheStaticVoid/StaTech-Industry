@@ -7,6 +7,35 @@
 	icon: "modern_industrialization:digital_circuit"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -15.0d
+			y: -2.0d
+			width: 2.5d
+			height: 2.5d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/moon.png"
+			hover: ["Mun"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 2.0d
+			y: 4.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ae2:item/blank_pattern"
+			hover: [
+				"I may have missed some crucial info"
+				"Click here to check the wiki"
+			]
+			click: "https://appliedenergistics.github.io/"
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			x: 0.0d
@@ -35,7 +64,7 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: 1.0d
 			y: -2.0d
 			shape: "rsquare"
 			description: ["HV Storage Units have an interal buffer of 6.144M EU. A single one of these will make an extremely valuable power buffer for any setup you currently have."]
@@ -53,7 +82,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -1.0d
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "Push it to the limit"
@@ -80,7 +109,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: -2.0d
 			shape: "rsquare"
 			description: [
@@ -103,7 +132,7 @@
 		}
 		{
 			x: 0.5d
-			y: -2.0d
+			y: -3.0d
 			shape: "rsquare"
 			description: ["With Turbo Machine Hulls you can now create the next tier of solar. These will passively generate 48 EU/t during the day and 8 EU/t at night (due to magic I suppose)."]
 			dependencies: ["3F4A396DD273A543"]
@@ -120,15 +149,11 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -5.0d
 			y: 0.0d
 			shape: "square"
 			subtitle: "To the Stars!"
-			description: [
-				"With your new Turbo Machine Hulls and Digital Circuits you now have access to the Fuel Refinery from Ad Astra. The refinery will be required to taking your first rocket to the moon and other celestial bodies."
-				""
-				"To make Fuel for your rocket, place Boosted Diesel in the Fuel Refinery to convert it in a 2:1 ratio. How is diesel being converted into rocket fuel you might ask? Magic ! But seriously, there will probably be a more realistic process in the future."
-			]
+			description: ["With your new Turbo Machine Hulls and Digital Circuits you now have access to the Fuel Refinery from Ad Astra. The refinery will be required to taking your first rocket to the moon and other celestial bodies."]
 			dependencies: ["68CE43C175FB0826"]
 			size: 1.5d
 			id: "6EE3455457F0E943"
@@ -209,7 +234,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -5.0d
 			y: -2.0d
 			shape: "square"
 			subtitle: "To the Stars"
@@ -279,7 +304,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -5.0d
 			y: 2.0d
 			shape: "square"
 			subtitle: "Don't tell the Spaceballs"
@@ -298,7 +323,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -5.0d
 			y: 3.5d
 			shape: "square"
 			subtitle: "An insurance plan"
@@ -341,7 +366,7 @@
 		}
 		{
 			title: "Space Suit"
-			x: -8.0d
+			x: -7.0d
 			y: 2.0d
 			shape: "square"
 			subtitle: "Amogus ඞ"
@@ -411,7 +436,7 @@
 			}]
 		}
 		{
-			x: -8.0d
+			x: -7.0d
 			y: -2.0d
 			shape: "square"
 			subtitle: "Vehicle Assembly... Building?"
@@ -430,9 +455,10 @@
 			}]
 		}
 		{
-			x: -8.0d
+			x: -7.0d
 			y: 0.0d
 			shape: "square"
+			description: ["To make Fuel for your rocket, place Boosted Diesel in the Fuel Refinery to convert it in a 2:1 ratio. How is diesel being converted into rocket fuel you might ask? Magic ! But seriously, there will probably be a more realistic process in the future."]
 			dependencies: ["6EE3455457F0E943"]
 			id: "05EBD7E7DF3DBF8A"
 			tasks: [{
@@ -440,12 +466,17 @@
 				type: "item"
 				item: "ad_astra:fuel_bucket"
 			}]
+			rewards: [{
+				id: "51656ECDCA86C9C1"
+				type: "xp"
+				xp: 100
+			}]
 		}
 		{
-			x: -11.0d
+			x: -12.0d
 			y: 0.0d
 			shape: "square"
-			subtitle: "T-10"
+			subtitle: "T-10 to Launch"
 			description: [
 				"It's time to put all the preparation to good use. Using a copious amounts of Steel, create the Tier 1 Rocket."
 				""
@@ -461,11 +492,7 @@
 				""
 				"Do not press 'Shift' to dismount the rocket, otherwise it'll fly up without you! You'll need to hold 'Space' when descending to avoid blowing up on touchdown!"
 			]
-			dependencies: [
-				"565F8D6169BE21A4"
-				"05EBD7E7DF3DBF8A"
-				"240A32C6B7DD0DD5"
-			]
+			dependencies: ["41EE82F6FDB2109C"]
 			size: 2.0d
 			id: "66D955E646FC75EF"
 			tasks: [{
@@ -486,9 +513,15 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: -0.5d
 			y: -3.0d
-			description: ["The Charge-o-Mat has an absolutely absurd 100M Energy buffer. Plugging this into your network may start draining it entirely, so be careful, but it is needed to charge the Industrial tools and Nanosaber."]
+			shape: "rsquare"
+			description: [
+				"Battery Box too slow for you now? The Charge-O-Mat is the solution for you!"
+				""
+				"The Charge-o-Mat has an absolutely absurd 100M Energy buffer. Plugging this into your network may start draining it entirely, so be careful, but it is needed to charge the Industrial tools and Nanosaber in a timely manner."
+			]
+			dependencies: ["3F4A396DD273A543"]
 			id: "1CC138DDB987411E"
 			tasks: [{
 				id: "62AA41D101D4EC2B"
@@ -497,6 +530,1326 @@
 			}]
 			rewards: [{
 				id: "2C3A1018987B77A0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -15.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "One Small Step..."
+			description: [
+				"Welcome to the moon!"
+				""
+				"Collect your Tier 1 Rocket by punching the Lander. Once you've gotten everything feel free to explore, but pay attention to your Oxygen reserves. The main goal of coming to the moon is the acquisition of Desh, which can be found underground in caves. You'll need quite a bit to progress, so try to get as much as possible!"
+			]
+			dependencies: ["66D955E646FC75EF"]
+			size: 1.5d
+			id: "400774ADB8A19D03"
+			tasks: [{
+				id: "5D2D9EE7D9DFAF7D"
+				type: "dimension"
+				title: "The Moon"
+				icon: "ad_astra:moon_globe"
+				dimension: "ad_astra:moon"
+			}]
+			rewards: [{
+				id: "63FF8067CB606DB2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -15.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"You can find Ice Shards on the moon as well. They don't have much use to you yet, but will be important for a more efficient rocket fuel later."
+				""
+				"Additionally, they can be centrifuged to produce Helium-3, an important gas when you get to the Fusion Reactor."
+			]
+			dependencies: ["400774ADB8A19D03"]
+			id: "5B5287B537A656A6"
+			tasks: [{
+				id: "7E232A46F59A8E1E"
+				type: "item"
+				item: "ad_astra:ice_shard"
+			}]
+			rewards: [{
+				id: "6305DD61125E4E1E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -16.0d
+			y: 2.0d
+			shape: "square"
+			description: ["Desh is the main thing you came to the moon for. You'll need a lot of it for the T2 Rocket and other recipes, so plan to get a bunch!"]
+			dependencies: ["400774ADB8A19D03"]
+			id: "0D0CC636458E8446"
+			tasks: [{
+				id: "4339BF0F47F04383"
+				type: "item"
+				item: "ad_astra:raw_desh"
+			}]
+			rewards: [{
+				id: "1C23D309FB0665A0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -14.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: ["Forget to pack a snack? The moon's got you. Moon Cheese can be eaten in a pinch to keep you from starving."]
+			dependencies: ["400774ADB8A19D03"]
+			id: "2AE79CA076C2EA64"
+			tasks: [{
+				id: "6C1B1A9C74C005FC"
+				type: "item"
+				item: "ad_astra:cheese"
+			}]
+			rewards: [{
+				id: "18FB8A26D86A17F5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -9.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Preparations complete"
+			description: [
+				"Of course you'll need some place to take off from. You'll need a Launch Pad anytime you plan to make a rocket launch, which includes the return flight."
+				""
+				"I've given you an extra in the quest reward to make sure you have an extra on you for when you plan to return from the moon. Just know that for every other planet you plan to take off from you'll need an extra!"
+			]
+			dependencies: [
+				"240A32C6B7DD0DD5"
+				"565F8D6169BE21A4"
+				"05EBD7E7DF3DBF8A"
+			]
+			id: "41EE82F6FDB2109C"
+			tasks: [{
+				id: "3B455A82B7C1B645"
+				type: "item"
+				item: "ad_astra:launch_pad"
+			}]
+			rewards: [
+				{
+					id: "59F6142B57C5AD4C"
+					type: "item"
+					item: "ad_astra:launch_pad"
+				}
+				{
+					id: "75A8CE37D59D93BD"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "An Alternate Way Home"
+			icon: {
+				id: "waystones:warp_stone"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: 2.0d
+			shape: "rsquare"
+			description: ["If you recall, back in the Electrical Age you unlocked the ability to create a Warp Stone. You could bring a Waystone with you to the moon and be able to warp back and forth freely without having to spend resources on multiple rocket launches."]
+			dependencies: ["68CE43C175FB0826"]
+			id: "671F69640B982683"
+			tasks: [{
+				id: "5B6EB4A8BA770450"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "7D3BC78B32ECDAA0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "AE2 Processors"
+			x: 1.0d
+			y: 6.5d
+			description: ["By combining printed AE2 circuits and silicon in an Inscriber you will create the basic components for all of AE2."]
+			dependencies: ["0E556AD31516BB03"]
+			dependency_requirement: "one_completed"
+			id: "2BB495CFC3E6D6C8"
+			tasks: [
+				{
+					id: "19EA7F8024BB407C"
+					type: "item"
+					item: "ae2:logic_processor"
+				}
+				{
+					id: "4E054A947A80397F"
+					type: "item"
+					item: "ae2:calculation_processor"
+				}
+				{
+					id: "6A3C9A96F857A9AC"
+					type: "item"
+					item: "ae2:engineering_processor"
+				}
+			]
+			rewards: [{
+				id: "3A1EB84E5EB5FA1F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			description: [
+				"With your Turbo Machine Hulls you can now craft the AE2 Inscriber. The Inscriber is a necessary machine to create the AE2 Processors. While you can make the Printed Circuits in the Packer, you will ultimately need an Inscriber to combine the circuit with Printed Silicon to create the processors."
+				""
+				"The Inscriber can be powered directly with Modern Industrialization cables."
+			]
+			dependencies: [
+				"302958D57C6A10C7"
+				"5FDDE9153DE118DF"
+			]
+			id: "0E556AD31516BB03"
+			tasks: [{
+				id: "55303A2F05494F75"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+			rewards: [{
+				id: "6A44940D24CB9FF5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.5d
+			description: [
+				"Fluix Crystals have been craftable since you created your first Electrolyzer, but they have been unusable. "
+				""
+				"Finally, it's time to make some, as they are an important crafting component in AE2 items."
+			]
+			dependencies: ["0E556AD31516BB03"]
+			id: "01D12D790B2DE5F5"
+			tasks: [{
+				id: "49D14D2D43E385A1"
+				type: "item"
+				item: "ae2:fluix_crystal"
+			}]
+			rewards: [{
+				id: "62C889F2BA826103"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 9.0d
+			subtitle: "Heart of the Network"
+			description: [
+				"While technically not required to setup your first AE2 network, you will really want to craft at least one of these for now. "
+				""
+				"Thanks to the glorious Modern Industrialization's universal cables, you will not need to craft an Energy Acceptor to hook up your network to power. You can plug it right in to your power generation!"
+				""
+				"Applied Energistics is a pretty expansive mod with a lot of mechanics, but I don't want to clutter up the chapter with just detailing AE2. If you're unfamiliar with the mod, then I'd suggest taking a look at the separate quest tab for AE2 specifically."
+				""
+				"NOTE: AE2 uses it's own energy system, just now that EU is converted in a 1:2 power ratio, meaning that for every 1 EU put in you are actually generating 2 AE."
+			]
+			dependencies: [
+				"01D12D790B2DE5F5"
+				"2BB495CFC3E6D6C8"
+			]
+			size: 1.5d
+			id: "47AC1C475DEE0FE4"
+			tasks: [{
+				id: "6C4582D1D40B7A51"
+				type: "item"
+				item: "ae2:controller"
+			}]
+			rewards: [{
+				id: "0D50DAD08FCD86DB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: 9.5d
+			subtitle: "All your stuff in a single block"
+			description: [
+				"The ME Drive is a block designed to store Storage Cells. The Drive can hold 10 Storage Cells."
+				""
+				"The front of the drive will display the status of the drive in the corresponding spot with a color:"
+				"- Red: The cell is full"
+				"- Orange: The cell cannot hold any more types, but can store more items"
+				"- Green: The cell can hold more types or more items"
+				"- Black: There is no channel or power is offline"
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "2D9D7FFDA18C95B5"
+			tasks: [{
+				id: "3B78757D8EAD40DD"
+				type: "item"
+				item: "ae2:drive"
+			}]
+			rewards: [{
+				id: "02C544D38A79DB7D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Meteorite Compass"
+			icon: "ae2:meteorite_compass"
+			x: -2.0d
+			y: 4.5d
+			description: [
+				"If you've yet to find an AE2 meteorite, then you might want to make this compass. "
+				""
+				"Placing a vanilla compass in a Charger will charge it up to search for meteorites in your world. Once you find the meteorite mine to the center to find the Presses and even some Certus Quartz Buds."
+				""
+				"Like the Inscriber, you can use MI cables directly on the Charger to plug it into your power network."
+			]
+			dependencies: ["0E556AD31516BB03"]
+			id: "4589D54579864AE8"
+			tasks: [
+				{
+					id: "1FBF3E80421EF68D"
+					type: "item"
+					item: "ae2:charger"
+				}
+				{
+					id: "5D108F3DA879349D"
+					type: "item"
+					item: "ae2:meteorite_compass"
+				}
+			]
+			rewards: [{
+				id: "641FCDE9F709FA30"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 9.0d
+			subtitle: "A MUCH better crafting table"
+			description: ["Attaching an ME Crafting Terminal to your AE2 network will grant you access to all the items stored within and and an included crafting grid you can use these stored items in. "]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "4372EB6B99CB383D"
+			tasks: [{
+				id: "134DCCD1F1D35772"
+				type: "item"
+				item: "ae2:crafting_terminal"
+			}]
+			rewards: [{
+				id: "3CE7B9635FE16B90"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: 9.0d
+			subtitle: "That's how you do it"
+			dependencies: ["4372EB6B99CB383D"]
+			id: "4584D2A76B87D7F0"
+			tasks: [{
+				id: "315FF7E43F8769D8"
+				type: "item"
+				item: "ae2:pattern_encoding_terminal"
+			}]
+		}
+		{
+			title: "Patterns"
+			x: 3.0d
+			y: 10.5d
+			subtitle: "Get ready to autocraft!"
+			description: [
+				"Blank Patterns can be encoded in the ME Pattern Encoding Terminal. You can encode them either with a Crafting Pattern or a Processing Pattern. The Encoded Pattern is then used to control crafting by inserting them into Molecular Assemblers or ME Pattern Providers."
+				""
+				"A Crafting Pattern is your typical 3x3 or 2x2 grid crafting recipe. These patterns usually go inside of Molecular Assemblers."
+				""
+				"Processing Patterns are a bit more complicated, usually these are patterns designed to be used to automate outputs from machines. Processing Patterns allow you to encode recipes where an input goes into a machine and you get an expected output. Do not encode recipes that are for chance outputs, otherwise you will clog up your network and prevent crafting!"
+				""
+				"I've doubled the normal output for the Blank Pattern recipe due to the amount of things you probably intend to automate crafting for. You're welcome!"
+			]
+			dependencies: ["4584D2A76B87D7F0"]
+			id: "1B4704766DF1A934"
+			tasks: [{
+				id: "47CFF4CBF0901ACF"
+				type: "item"
+				item: "ae2:blank_pattern"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "7F994F5C549B7100"
+					type: "item"
+					item: "ae2:blank_pattern"
+					count: 4
+				}
+				{
+					id: "52B9CE02E0DE34BD"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 10.5d
+			subtitle: "It's like magic!"
+			description: [
+				"The Molecular Assembler is a powered machine which crafts items. It can be upgraded by inserting Acceleration Cards into it; once upgraded it is very fast."
+				""
+				"The assembler can function in one of two modes, single pattern mode or automatic crafting mode."
+				""
+				"In Single Pattern Mode, it uses a single Crafting Pattern inserted into the assembler to craft an item without a crafting network. This makes it useful in stand alone setups or in configurations where it can be fed by other mods and even chained together to craft a final output. Items will be accepted from any side and exported into any available inventories."
+				""
+				"In Automatic Crafting Mode the assembler will use the Crafting Pattern from an attached ME Pattern Provider to craft items when they are requested by the Crafting CPU. NOTE: This mode requires that the assembler's pattern slot is empty."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "3C433173976A9CCC"
+			tasks: [{
+				id: "49A3C57F99A56F45"
+				type: "item"
+				item: "ae2:molecular_assembler"
+			}]
+			rewards: [{
+				id: "4B1DD096933E59ED"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.0d
+			y: 11.5d
+			description: ["The ME Pattern Provider is the home of your encoded recipes. These need to be put on the same network as your Crafting CPU itself. When the crafting CPU needs to craft the primary result of that pattern, it'll delegate this to the Pattern Provider. Normally the Pattern Provider will then push out the ingredients to an adjancent block (a Molecular Assembler for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the Pattern Provider, an ME Interface, or any other means that would import the crafting result into the network. Molecular Assemblers are smart enough to automatically return the crafting result to the same Pattern Provider that provided the ingredients, leaving you to focus on ensuring the Processing Recipes outputs are put into the network when they're done."]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "2C1964927A0F7BE3"
+			tasks: [{
+				id: "0FEF672EBB5DBFC6"
+				type: "item"
+				item: "ae2:pattern_provider"
+			}]
+			rewards: [{
+				id: "6DE9FCE915E97674"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Crafting CPU"
+			x: 6.0d
+			y: 12.5d
+			subtitle: "Deep Thought"
+			description: [
+				"The Crafting CPU manages a single auto crafting task from start to finsih, and is built out of various crafting units."
+				""
+				"To be a valid crafting CPU, two rules must be met:"
+				"1. The CPU must be a cuboid, completely composed of the parts listed in the quest. Air and other blocks are not valid."
+				"2. The CPU must contain at least 1 Crafting Storage component."
+				""
+				"The Crafting CPU as a multi-block only requires a single channel for the entire structure. Crafting co-processors increase the number of tasks the crafting CPU can perform at once; with no co-processors, the crafting CPU can perform a single task at a time. Storage requirements are moderately complicated, and do not follow the usual ME storage math, but for a first approximation, you will need a little over one byte per input item, output item, or operation."
+				""
+				"You can name your Crafting CPUs by naming any of the Crafting Storage Units it is made up with an Inscriber or Anvil."
+				""
+				"To provide patterns to the autocrafting CPUs you can use the ME Interface or ME Level Emitter."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "528CD35EBF5D20F0"
+			tasks: [
+				{
+					id: "495520537A110001"
+					type: "item"
+					title: "Any AE2 Crafting Storage"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:crafting_storage"
+						}
+					}
+				}
+				{
+					id: "2BDEB8659DA7243F"
+					type: "item"
+					item: "ae2:crafting_accelerator"
+				}
+				{
+					id: "2437CF8D5C1FEC51"
+					type: "item"
+					item: "ae2:crafting_monitor"
+				}
+			]
+			rewards: [{
+				id: "14AA3802C834A2C3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 12.0d
+			description: [
+				"Perhaps the most desired item in all of AE2 is the Wireless Crafting Terminal. This grants you (while in range of an access point) full access to your ME network. You can craft items, start autocrafting processes, and view in-progress crafting process all from this little device. "
+				""
+				"To link the Wirelss Crafting Terminal to your network, you will need to put it in the top-right slot of your security terminal. Once linked, you will need to power it. You can do this by putting it in an AE2 Charger. It has a 1.6M AE internal energy storage, so you'll probably drain your entire power network charging it! "
+			]
+			dependencies: [
+				"67071C306C1C3A42"
+				"72F1B2987533A6F6"
+			]
+			id: "34E68D6337DE1792"
+			tasks: [{
+				id: "6733A409F19937C9"
+				type: "item"
+				item: "ae2:wireless_crafting_terminal"
+			}]
+			rewards: [{
+				id: "229A82C32C462757"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 12.0d
+			description: [
+				"The ME Security Terminal allows you to configure which users, and what permissions those users have within your ME System. By existing, it enforces permissions on the usage of the system."
+				""
+				"The security system does not prevent destructive tampering, removing cables / machines or breaking of drives. If you need to protect your system from physical vandalism, you will need to place it in FTB claimed chunks. This block only provides network security."
+				""
+				"The player who places the ME Security Terminal has full control over the network and cannot exclude themself any rights. By adding a blank Biometric Card you define a default behavior for every player who has no own Biometric Card registered."
+				""
+				"Other than adding security to your AE network, you can link up your Wireless Terminal with the network and access it wirelessly."
+			]
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "72F1B2987533A6F6"
+			tasks: [{
+				id: "587C0FB684830328"
+				type: "item"
+				item: "ae2:security_station"
+			}]
+			rewards: [{
+				id: "5CBB141269E8366C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 10.5d
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "67071C306C1C3A42"
+			tasks: [{
+				id: "15C730D8449D0539"
+				type: "item"
+				item: "ae2:wireless_access_point"
+			}]
+			rewards: [{
+				id: "10D174DDB930BEF3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 11.0d
+			y: 11.0d
+			subtitle: "One man's trash..."
+			description: [
+				"The Matter Fabricator is an advanced machine that can create UU-Matter from scrap fed into it."
+				""
+				"UU-Matter is pretty important, as it can be used to create Iridium"
+			]
+			id: "6288718990D88342"
+			tasks: [{
+				id: "5A9CD8D64D036513"
+				type: "item"
+				item: "techreborn:matter_fabricator"
+			}]
+			rewards: [{
+				id: "331F941508D68501"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 12.5d
+			y: 11.0d
+			subtitle: "Nearly magic!"
+			description: ["UU-Matter can craft a variety of things, some of the most notable is Iridium, Platinum, and Chromium. There are other ways to get infinite amounts of those ores, but this offers another viable method in generating these resources."]
+			dependencies: ["6288718990D88342"]
+			size: 1.5d
+			id: "097A441985DCD241"
+			tasks: [{
+				id: "2A7EB1EC6AE6025D"
+				type: "item"
+				item: "techreborn:uu_matter"
+			}]
+			rewards: [{
+				id: "7DDC924010E278CA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.0d
+			y: 14.0d
+			dependencies: ["6375B17635AAC09D"]
+			id: "354C87C444B34193"
+			tasks: [{
+				id: "1EBA2DB47CD44873"
+				type: "item"
+				item: "modern_industrialization:air_intake"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 14.0d
+			dependencies: ["354C87C444B34193"]
+			id: "57353B9BFF2CF1E6"
+			tasks: [{
+				id: "5A61075D4C681146"
+				type: "item"
+				item: "modern_industrialization:liquid_air_bucket"
+			}]
+		}
+		{
+			title: "Titanium"
+			x: 17.5d
+			y: 10.0d
+			description: ["Titanium Ore can only be acquired from an Electric Quarry using the Stainless Steel Drill. Processing Raw Titanium into a dust requires Manganese Sulfuric Solution, which you already have some of from the Stainless Steel processing."]
+			dependencies: ["68DDFA6E0465E81E"]
+			size: 1.5d
+			id: "08362FF409BFC7CC"
+			tasks: [{
+				id: "43512D11338B8C97"
+				type: "item"
+				item: "modern_industrialization:titanium_ingot"
+			}]
+			rewards: [{
+				id: "1919EBB1550FF25A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Pressurizer"
+			icon: "modern_industrialization:pressurizer"
+			x: 18.0d
+			y: 8.0d
+			subtitle: "Under pressure"
+			description: [
+				"The Pressurizer is a new multiblock made of Titanium that can turn water into High Pressure Water and Steam, and the inverse."
+				""
+				"If you plan to use the High Pressure Large Steam Boiler, you will need to be using the Pressurizer to make High Pressure Water."
+				""
+				"If you plan to use the Pressurizer to generate Liquid Air, you will need an Item Input Hatch for the Air Intake."
+			]
+			dependencies: ["08362FF409BFC7CC"]
+			id: "2D1CE7720270D118"
+			tasks: [
+				{
+					id: "5731DCA9B0445915"
+					type: "item"
+					item: "modern_industrialization:pressurizer"
+				}
+				{
+					id: "52AD70C62798EF9A"
+					type: "item"
+					item: "modern_industrialization:solid_titanium_machine_casing"
+					count: 7L
+				}
+				{
+					id: "4E375DD3C91D1461"
+					type: "item"
+					item: "modern_industrialization:titanium_machine_casing_pipe"
+					count: 9L
+				}
+				{
+					id: "4A38259D57E8F182"
+					type: "item"
+					title: "Any Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+				}
+				{
+					id: "45B9DA89591CBEF4"
+					type: "item"
+					title: "Any Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+				}
+				{
+					id: "40FA8FEDED5070EE"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3CA23F5593C2D6CE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "High Pressure Large Steam Boiler"
+			icon: "modern_industrialization:high_pressure_large_steam_boiler"
+			x: 18.0d
+			y: 6.0d
+			description: [
+				"The High Pressure Steam Boiler can produce up to 2048 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
+				""
+				"Maximum efficiency is only reached under continuous operation. Only accepts High Pressure Water and High Pressure Heavy Water."
+				""
+				"It's not worth starting up the Boiler right now unless you have a significant enough Large Tank to take the High Pressure Steam or have set up the next multiblock, the Large Steam Turbine."
+				""
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the High Pressure Large Steam Boiler block in your inventory or by holding your wrench out with the High Pressure Large Steam Boiler placed."
+			]
+			dependencies: ["2D1CE7720270D118"]
+			id: "26EF4E75B844E3BD"
+			tasks: [
+				{
+					id: "7481639224BAE077"
+					type: "item"
+					item: "modern_industrialization:high_pressure_large_steam_boiler"
+				}
+				{
+					id: "5F12A1FBC34CA63F"
+					type: "item"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					count: 24L
+				}
+				{
+					id: "44C90CA82AB1D425"
+					type: "item"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					count: 2L
+				}
+				{
+					id: "0F25C8B09F1B1E67"
+					type: "item"
+					item: "modern_industrialization:heatproof_machine_casing"
+					count: 6L
+				}
+				{
+					id: "1EB752A1003F2F61"
+					type: "item"
+					title: "Any 2x Fluid Input Hatches"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "4A17AA3A1FA59110"
+					type: "item"
+					title: "Any Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "61508B460F3145EF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Large Steam Turbine"
+			icon: "modern_industrialization:large_steam_turbine"
+			x: 18.0d
+			y: 4.0d
+			description: [
+				"The Large Steam Turbine will accept both regular steam ( 1 mB = 1 EU ) and HP Steam ( 1 mB = 8 EU ) into EU, and will generate up to 16384 EU/t."
+				""
+				"However it will not give you back give you back regular nor HP Water. If you'd like to recycle the HP Water, you will need to create the next multiblock, the Heat Exchanger."
+				""
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Large Steam Turbine block in your inventory or by holding your wrench out with the Large Steam Turbine placed."
+			]
+			dependencies: ["26EF4E75B844E3BD"]
+			id: "45E103B1646804FA"
+			tasks: [
+				{
+					id: "740168E85507A238"
+					type: "item"
+					item: "modern_industrialization:large_steam_turbine"
+				}
+				{
+					id: "65CD1348422000C6"
+					type: "item"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					count: 15L
+				}
+				{
+					id: "48ACDC1CEC8F16FD"
+					type: "item"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					count: 18L
+				}
+				{
+					id: "2539DEBA24791663"
+					type: "item"
+					title: "Any Energy Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_output_hatch"
+						}
+					}
+				}
+				{
+					id: "7FFF1F75AD9BC290"
+					type: "item"
+					title: "Any Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "23593CC5BA846048"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Closed High Pressure Steam Loop"
+			x: 18.0d
+			y: 2.0d
+			description: [
+				"I've included a schematic for a prebuilt closed loop HP Steam Turbine setup. It can be found in 'schematics/prebuilts/' under the name 'closed_hp_steam_turbine_system.litematic'"
+				""
+				"You can use Litematica to preview it and copy it, or figure it out yourself. If you need help, you can join the Discord (found in the Welcome chapter)"
+				""
+				"With a closed loop, you will always be net neutral on High Pressure Water, and can eventually remove the Pressurizer once it has generated enough High Pressure Water."
+			]
+			dependencies: ["45E103B1646804FA"]
+			id: "060A516AB0CE0320"
+			tasks: [{
+				id: "006FFD2499914ACD"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "03266783A01766A5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 16.5d
+			y: 12.0d
+			subtitle: "GIGA DRILL BREAK"
+			description: [
+				"The Industrial Drill is an upgraded, electric powered drill that features a powered mode that can mine 3x3."
+				""
+				"Shift-right click to activate and deactivate 3x3."
+				""
+				"You can charge it in the Charge-o-Mat"
+			]
+			dependencies: ["08362FF409BFC7CC"]
+			id: "52DD4EA5020B2637"
+			tasks: [{
+				id: "6B91A71316620C7B"
+				type: "item"
+				item: {
+					id: "techreborn:industrial_drill"
+					Count: 1b
+					tag: {
+						energy: 1000000L
+					}
+				}
+			}]
+			rewards: [{
+				id: "1D828C0CAD347D1E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 18.5d
+			y: 12.0d
+			subtitle: "Say goodbye to the rainforests"
+			description: [
+				"The Industrial Chainsaw is an upgraded, electric powered chainsaw that features a powered mode that can instamine entire trees."
+				""
+				"Shift-right click to activate and deactivate."
+				""
+				"You can charge it in the Charge-o-Mat"
+			]
+			dependencies: ["08362FF409BFC7CC"]
+			id: "078D2A02F5F0755A"
+			tasks: [{
+				id: "3C912386AC14E449"
+				type: "item"
+				item: {
+					id: "techreborn:industrial_chainsaw"
+					Count: 1b
+					tag: {
+						energy: 1000000L
+					}
+				}
+			}]
+			rewards: [{
+				id: "39756027807497D9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 17.5d
+			y: 12.0d
+			subtitle: "Like a Protosaber!"
+			description: [
+				"The Nanosaber is an upgraded, electric powered sword that features a powered mode that can deal insane damage."
+				""
+				"Shift-right click to activate and deactivate."
+				""
+				"You can charge it in the Charge-o-Mat"
+			]
+			dependencies: ["08362FF409BFC7CC"]
+			id: "53BA308E50B5070C"
+			tasks: [{
+				id: "0D81A8E55ACB89C7"
+				type: "item"
+				item: {
+					id: "techreborn:nanosaber"
+					Count: 1b
+					tag: {
+						isActive: 1b
+						energy: 1000000L
+					}
+				}
+			}]
+			rewards: [{
+				id: "752796E142A064A3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Liquid Air Products"
+			x: 22.5d
+			y: 11.5d
+			description: [
+				"Centrifuging 3000 mB of Liquid Air will produce, 650 mB Oxygen, 2315 mB of Nitrogen, and a measly 35 mB of Argon."
+				""
+				"Argon will be very useful in the future, you should start stockpiling it."
+			]
+			dependencies: ["57353B9BFF2CF1E6"]
+			id: "0CF36C4D19B0CE1A"
+			tasks: [
+				{
+					id: "3BFAF1365AE2422D"
+					type: "item"
+					item: "modern_industrialization:oxygen_bucket"
+				}
+				{
+					id: "64077332269D9239"
+					type: "item"
+					item: "modern_industrialization:nitrogen_bucket"
+				}
+				{
+					id: "50B051D5B1C72165"
+					type: "item"
+					item: "modern_industrialization:argon_bucket"
+				}
+			]
+			rewards: [{
+				id: "19257A6801BA003B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.0d
+			y: 10.0d
+			description: [
+				"Processing Raw Platinum will produce a little bit of Iridium Tiny Dust as well as 3x Platinum Tiny Dust. Both of these will be very important to obtain in larger amounts moving forward. "
+				""
+				"This Iridium generation method is very, very slow, but you will soon be able to access The Matter Replicator and UU-Matter."
+			]
+			id: "73E92504C29F7181"
+			tasks: [{
+				id: "59EBACB2A31D7156"
+				type: "item"
+				item: "modern_industrialization:platinum_sulfuric_solution_bucket"
+			}]
+			rewards: [{
+				id: "4D246688AFA1385D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.5d
+			y: 8.0d
+			description: ["Iridium Tiny Dust will be needed in the production of Monocrystalline Silicon boules."]
+			dependencies: ["73E92504C29F7181"]
+			id: "0A7B765B2AC2DD6D"
+			tasks: [{
+				id: "4E33C7E788461348"
+				type: "item"
+				item: "modern_industrialization:iridium_tiny_dust"
+			}]
+			rewards: [{
+				id: "50D070075219B453"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 19.5d
+			y: 8.0d
+			dependencies: ["73E92504C29F7181"]
+			id: "7111AA66B02C4877"
+			tasks: [{
+				id: "74C9FFFBE570AD60"
+				type: "item"
+				item: "modern_industrialization:platinum_dust"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 10.0d
+			description: ["Combining Argon, Silicon, and a little bit of Iridium you will be able to produce your first Monocrystalline Silicon boule."]
+			dependencies: [
+				"0CF36C4D19B0CE1A"
+				"0A7B765B2AC2DD6D"
+			]
+			id: "11D19824B39407CC"
+			tasks: [{
+				id: "181DD3F6200F684E"
+				type: "item"
+				item: "modern_industrialization:monocrystalline_silicon"
+			}]
+			rewards: [{
+				id: "1A6EA68B0506DEBE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 22.5d
+			y: 8.0d
+			description: ["Luckily one boule is able to produce a significant amount of wafers. These will be important for Processing Unit components."]
+			dependencies: ["11D19824B39407CC"]
+			id: "76BD64AFCE37E528"
+			tasks: [{
+				id: "2779DD54CDB97DDA"
+				type: "item"
+				item: "modern_industrialization:silicon_wafer"
+			}]
+			rewards: [{
+				id: "6FA05AC40FB1CFF7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Processing Unit Components"
+			x: 21.0d
+			y: 6.0d
+			description: ["It's time to pull it all together. These components from all over the chapter, if you're unable to make something, make sure you didn't miss a quest!"]
+			dependencies: [
+				"7111AA66B02C4877"
+				"76BD64AFCE37E528"
+			]
+			id: "3FEB290E25DD6BFD"
+			tasks: [
+				{
+					id: "7C463C63E77CD139"
+					type: "item"
+					item: "modern_industrialization:memory_management_unit"
+				}
+				{
+					id: "260C5D025BC94BD1"
+					type: "item"
+					item: "modern_industrialization:random_access_memory"
+					count: 2L
+				}
+				{
+					id: "266F9097AE164945"
+					type: "item"
+					item: "modern_industrialization:arithmetic_logic_unit"
+				}
+				{
+					id: "2ADB8DFAD956E24A"
+					type: "item"
+					item: "modern_industrialization:processing_unit_board"
+				}
+			]
+			rewards: [{
+				id: "409FCF215555EEAB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 22.5d
+			y: 3.5d
+			subtitle: "EV Voltage Circuits"
+			description: [
+				"The Processing Unit is the key to EV-tier hulls, multiblocks, and recipes. "
+				""
+				"This marks the end of the chapter. You're ready to head into the Lategame!"
+			]
+			dependencies: ["3FEB290E25DD6BFD"]
+			size: 3.0d
+			id: "4FDC0B405C330E4F"
+			tasks: [{
+				id: "43E1C82BC52BE00E"
+				type: "item"
+				item: "modern_industrialization:processing_unit"
+			}]
+			rewards: [{
+				id: "5746CAE054A746CE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 23.5d
+			y: 12.5d
+			description: ["Tungsten is a fairly tough material, and will require an Implosion Chamber to efficiently create the material. To get to that point, you will need to convert your Tungsten into tiny dusts."]
+			id: "1D9CEDDFFF1C8A7F"
+			tasks: [{
+				id: "1EB958B0AD967559"
+				type: "item"
+				item: "modern_industrialization:tungsten_tiny_dust"
+			}]
+			rewards: [{
+				id: "33E204F18FE0DEFF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 25.0d
+			y: 12.5d
+			description: ["You can create Tungsten Nuggets by compressing Tungsten Tiny Dusts. This process is very, very slow, so you'll want to get as much as you need to make an Implosion Chamber and then never use the compressing method again."]
+			dependencies: ["1D9CEDDFFF1C8A7F"]
+			id: "3132A7C27E732259"
+			tasks: [{
+				id: "4D1A5D5535293770"
+				type: "item"
+				item: "modern_industrialization:tungsten_nugget"
+			}]
+			rewards: [{
+				id: "3B19B439705B565F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 25.0d
+			y: 11.0d
+			description: ["You will need a Mixed Tungsten Ingot to make Blastproof Alloy Platings."]
+			dependencies: [
+				"3132A7C27E732259"
+				"08362FF409BFC7CC"
+			]
+			id: "500668B023EA17CA"
+			tasks: [{
+				id: "359F39B3B3B7B11C"
+				type: "item"
+				item: "modern_industrialization:mixed_ingot_blastproof"
+			}]
+			rewards: [{
+				id: "32BE3A48BE5B21FD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Implosion Compressor"
+			icon: "modern_industrialization:implosion_compressor"
+			x: 27.0d
+			y: 11.0d
+			subtitle: "KABOOOOOOM"
+			description: [
+				"The Implosion Compressor is able to compress dust and ingots of the most resistant materials. This includes Tungsten, Blastproof Alloy, and Beryllium. These materials are very important for nuclear fission!"
+				""
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Implosion Compressor block in your inventory or by holding your wrench out with the Implosion Compressor placed."
+			]
+			dependencies: ["500668B023EA17CA"]
+			size: 1.5d
+			id: "0DF6FF0A1E872DC8"
+			tasks: [
+				{
+					id: "7486AB57F14DA12E"
+					type: "item"
+					item: "modern_industrialization:implosion_compressor"
+				}
+				{
+					id: "202BB4BEE0A093AC"
+					type: "item"
+					item: "modern_industrialization:solid_titanium_machine_casing"
+					count: 14L
+				}
+				{
+					id: "4152617B0B2CB5D1"
+					type: "item"
+					item: "modern_industrialization:blastproof_casing"
+					count: 16L
+				}
+				{
+					id: "4AC9E919C5BF0B88"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "44CE91CB15AD4DDD"
+					type: "item"
+					title: "Any Item Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+				}
+				{
+					id: "1D7B2553DE83530F"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "410E63DE96E0EF04"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "modern_industrialization:high_pressure_advanced_large_steam_boiler"
+			x: 19.5d
+			y: 6.0d
+			description: [
+				"The High Pressure Advanced Steam Boiler can produce up to 8192 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
+				""
+				"Maximum efficiency is only reached under continuous operation. Only accepts High Pressure Water and High Pressure Heavy Water."
+				""
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the High Pressure Large Steam Boiler block in your inventory or by holding your wrench out with the High Pressure Advanced Large Steam Boiler placed."
+			]
+			dependencies: [
+				"4FDC0B405C330E4F"
+				"26EF4E75B844E3BD"
+			]
+			id: "2EF95EF4396E8FE4"
+			tasks: [
+				{
+					id: "54D250E010FB05BE"
+					type: "item"
+					item: "modern_industrialization:high_pressure_advanced_large_steam_boiler"
+				}
+				{
+					id: "47654E01B09EAAD1"
+					type: "item"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					count: 24L
+				}
+				{
+					id: "6FFE9DA3A9A6DFCC"
+					type: "item"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					count: 2L
+				}
+				{
+					id: "204E89A5F7D33560"
+					type: "item"
+					item: "modern_industrialization:heatproof_machine_casing"
+					count: 6L
+				}
+				{
+					id: "16B382312846103A"
+					type: "item"
+					title: "Any 2x Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "766810053D655A90"
+					type: "item"
+					title: "Any Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "191C4E8B315CC218"
 				type: "xp"
 				xp: 100
 			}]

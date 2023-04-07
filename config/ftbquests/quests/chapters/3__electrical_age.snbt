@@ -3457,6 +3457,28 @@
 				xp: 100
 			}]
 		}
+		{
+			x: 34.0d
+			y: 10.5d
+			shape: "rsquare"
+			description: [
+				"With your advancements in science, you have found that you can glue six Lithium Ion Batteries together and use as a single battery!"
+				""
+				"This has a 600k internal energy buffer, at this point I doubt you have anything that could possibly drain that much, but it will be useful as soon as you unlock the electric TechReborn tools!"
+			]
+			dependencies: ["575EE8E0720CE7DC"]
+			id: "6EA807A04401F8AE"
+			tasks: [{
+				id: "7DA97BD25EBB4C85"
+				type: "item"
+				item: "techreborn:lithium_ion_batpack"
+			}]
+			rewards: [{
+				id: "5BB603F50F6CFDFD"
+				type: "xp"
+				xp: 100
+			}]
+		}
 	]
 	quest_links: [ ]
 }
