@@ -27,7 +27,10 @@ ServerEvents.recipes(e => {
         'techreborn:crafting_table/battery/lapotron_crystal',
         'techreborn:crafting_table/tool/industrial_drill',
         'techreborn:crafting_table/tool/industrial_chainsaw',
-        'techreborn:crafting_table/tool/nanosaber'
+        'techreborn:crafting_table/tool/nanosaber',
+        'techreborn:crafting_table/tool/industrial_jackhammer',
+        'techreborn:crafting_table/ingot/tungsten_ingot_from_nugget',
+        'techreborn:crafting_table/dust/raw_tungsten_from_small'
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
@@ -35,15 +38,14 @@ ServerEvents.recipes(e => {
     e.shaped('techreborn:industrial_drill', [
         'CRD',
         'MPR',
-        'TLC'
+        'LMC'
     ], 
     {
         C: 'modern_industrialization:digital_circuit',
         R: 'modern_industrialization:invar_rotary_blade',
-        D: 'modern_industrialization:titanium_drill_head',
+        D: 'modern_industrialization:stainless_steel_drill_head',
         M: 'modern_industrialization:advanced_motor',
         P: 'modern_industrialization:advanced_pump',
-        T: 'modern_industrialization:titanium_tank',
         L: 'techreborn:lapotron_crystal'
     });
 
@@ -51,15 +53,29 @@ ServerEvents.recipes(e => {
     e.shaped('techreborn:industrial_chainsaw', [
         'CSR',
         'MRS',
-        'TLC'
+        'LMC'
     ], 
     {
         C: 'modern_industrialization:digital_circuit',
         R: 'modern_industrialization:invar_rotary_blade',
         M: 'modern_industrialization:advanced_motor',
-        T: 'modern_industrialization:titanium_tank',
         S: 'modern_industrialization:rubber_sheet',
         L: 'techreborn:lapotron_crystal'
+    });
+
+    // -- INDUSTRIAL JACKHAMMER -- //
+    e.shaped('techreborn:industrial_jackhammer', [
+        'CSR',
+        'MBS',
+        'LMC'
+    ],
+    {
+        R: 'modern_industrialization:stainless_steel_drill_head',
+        M: 'modern_industrialization:advanced_motor',
+        L: 'techreborn:lapotron_crystal',
+        B: 'modern_industrialization:stainless_steel_rod',
+        C: 'modern_industrialization:digital_circuit',
+        S: 'modern_industrialization:rubber_sheet'
     });
 
     // -- CHARGE O MAT -- //
@@ -84,7 +100,7 @@ ServerEvents.recipes(e => {
     ],
     {
         N: 'minecraft:netherite_sword',
-        B: 'modern_industrialization:titanium_blade',
+        B: 'modern_industrialization:stainless_steel_blade',
         C: 'modern_industrialization:digital_circuit',
         L: 'techreborn:lapotron_crystal'
     });

@@ -1,32 +1,39 @@
 ServerEvents.recipes(e => {
+
+    let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    let tr = (id) => `techreborn:${id}`;
+    let astra = (id) => `ad_astra:${id}`;
+
     // -- REMOVED RECIPES -- //
     const MI_DELETED_ITEMS = [
-        'modern_industrialization:forge_hammer',
-        'modern_industrialization:guidebook',
-        'modern_industrialization:vanilla_recipes/steel_forge_hammer_asbl',
-        'modern_industrialization:materials/bronze_dust',
-        'modern_industrialization:materials/bronze_tiny_dust',
-        'modern_industrialization:materials/fire_clay_dust',
-        'modern_industrialization:vanilla_recipes/steam_bucket',
-        'modern_industrialization:vanilla_recipes/steam_bucket_exported_mi_furnace',
-        'modern_industrialization:materials/uncooked_steel_dust',
-        'modern_industrialization:tools/smithing/quantum_sword',
-        'modern_industrialization:armor/smithing/quantum_leggings',
-        'modern_industrialization:armor/smithing/quantum_helmet',
-        'modern_industrialization:armor/smithing/quantum_chestplate',
-        'modern_industrialization:armor/smithing/quantum_boots',
-        'modern_industrialization:vanilla_recipes/mixer/netherite',
-        'modern_industrialization:materials/cupronickel/craft/coil',
-        'modern_industrialization:vanilla_recipes/chains',
-        'modern_industrialization:vanilla_recipes/packager/chains',
-        'modern_industrialization:materials/kanthal/craft/coil',
-        'modern_industrialization:materials/superconductor/craft/coil',
-        'modern_industrialization:armor/gravichestplate'
+        mi('forge_hammer'),
+        mi('guidebook'),
+        mi('vanilla_recipes/steel_forge_hammer_asbl'),
+        mi('materials/bronze_dust'),
+        mi('materials/bronze_tiny_dust'),
+        mi('materials/fire_clay_dust'),
+        mi('vanilla_recipes/steam_bucket'),
+        mi('vanilla_recipes/steam_bucket_exported_mi_furnace'),
+        mi('materials/uncooked_steel_dust'),
+        mi('tools/smithing/quantum_sword'),
+        mi('armor/smithing/quantum_leggings'),
+        mi('armor/smithing/quantum_helmet'),
+        mi('armor/smithing/quantum_chestplate'),
+        mi('armor/smithing/quantum_boots'),
+        mi('vanilla_recipes/mixer/netherite'),
+        mi('materials/cupronickel/craft/coil'),
+        mi('vanilla_recipes/chains'),
+        mi('vanilla_recipes/packager/chains'),
+        mi('materials/kanthal/craft/coil'),
+        mi('materials/superconductor/craft/coil'),
+        mi('armor/gravichestplate')
     ];
+
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     
     // -- FORGE HAMMER -- //
-    e.shaped('modern_industrialization:forge_hammer', [
+    e.shaped(mi('forge_hammer'), [
         'PPP',
         ' B ',
         'III'
@@ -38,216 +45,220 @@ ServerEvents.recipes(e => {
     });
 
     // -- PYROLYSE OVEN -- //
-    e.shaped('modern_industrialization:pyrolyse_oven', [
+    e.shaped(mi('pyrolyse_oven'), [
         'HIH',
         'ICI',
         'HAH'
     ],
     {
-        H: 'techreborn:cupronickel_heating_coil',
-        I: 'modern_industrialization:inductor',
-        C: 'modern_industrialization:basic_machine_hull',
-        A: 'modern_industrialization:analog_circuit'
+        H: tr('cupronickel_heating_coil'),
+        I: mi('inductor'),
+        C: mi('basic_machine_hull'),
+        A: mi('analog_circuit')
     });
 
     // -- ALLOY SMELTER -- //
-    e.shaped('modern_industrialization:alloy_smelter', [
+    e.shaped(mi('alloy_smelter'), [
         'MAM',
         'IFI',
         'TAT'
     ],
     {
-        M: 'modern_industrialization:cupronickel_wire_magnetic',
-        A: 'modern_industrialization:analog_circuit',
-        I: 'modern_industrialization:inductor',
-        T: 'modern_industrialization:tin_cable',
-        F: 'modern_industrialization:electric_furnace'
+        M: mi('cupronickel_wire_magnetic'),
+        A: mi('analog_circuit'),
+        I: mi('inductor'),
+        T: mi('tin_cable'),
+        F: mi('electric_furnace')
     });
 
     // -- ROCKET PART ASSEMBLER -- //
-    e.shaped('modern_industrialization:rocket_part_assembler', [
+    e.shaped(mi('rocket_part_assembler'), [
         'RMR',
         'GHG',
         'APA'
     ],
     {
-        R: 'modern_industrialization:robot_arm',
-        M: 'modern_industrialization:advanced_motor',
-        G: 'modern_industrialization:stainless_steel_gear',
-        H: 'modern_industrialization:turbo_machine_hull',
-        A: 'modern_industrialization:aluminum_cable',
-        P: 'modern_industrialization:advanced_pump'
+        R: mi('robot_arm'),
+        M: mi('advanced_motor'),
+        G: mi('stainless_steel_gear'),
+        H: mi('turbo_machine_hull'),
+        A: mi('aluminum_cable'),
+        P: mi('advanced_pump')
     });
 
     // -- MEGA SMELTER -- //
-    e.shaped('modern_industrialization:mega_smelter', [
+    e.shaped(mi('mega_smelter'), [
         'MCM',
         'FHF',
         'MCM'
     ],
     {
-        M: 'modern_industrialization:cupronickel_wire_magnetic',
-        C: 'modern_industrialization:electronic_circuit',
-        F: 'modern_industrialization:electric_furnace',
-        H: 'modern_industrialization:advanced_machine_hull'
+        M: mi('cupronickel_wire_magnetic'),
+        C: mi('electronic_circuit'),
+        F: mi('electric_furnace'),
+        H: mi('advanced_machine_hull')
     });
 
     // -- Gravichestplate -- //
-    e.shaped('modern_industrialization:gravichestplate', [
+    e.shaped(mi('gravichestplate'), [
         'PUP',
         'PJP',
-        'CPC'
+        'CLC'
     ],
     {
-        P: '#c:superconductor_plates',
-        U: 'modern_industrialization:turbo_upgrade',
-        J: 'ad_astra:jet_suit',
-        C: 'modern_industrialization:cooling_cell'
+        P: '#c:diamond_plates',
+        U: mi('turbo_upgrade'),
+        J: astra('jet_suit'),
+        C: mi('titanium_large_plate'),
+        L: tr('lapotron_crystal')
     });
 
     // -- Quantum Helmet -- //
     e.smithing(
-        'modern_industrialization:quantum_helmet',
-        'ad_astra:jet_suit_helmet',
-        'modern_industrialization:quantum_upgrade'
+        mi('quantum_helmet'),
+        astra('jet_suit_helmet'),
+        mi('quantum_upgrade')
     );
     // -- Quantum Chestplate -- //
     e.smithing(
-        'modern_industrialization:quantum_chestplate',
-        'modern_industrialization:gravichestplate',
-        'modern_industrialization:quantum_upgrade'
+        mi('quantum_chestplate'),
+        mi('gravichestplate'),
+        mi('quantum_upgrade')
     );
     // -- Quantum Leggings -- //
     e.smithing(
-        'modern_industrialization:quantum_leggings',
-        'ad_astra:jet_suit_pants',
-        'modern_industrialization:quantum_upgrade'
+        mi('quantum_leggings'),
+        astra('jet_suit_pants'),
+        mi('quantum_upgrade')
     );
     // -- Quantum Boots -- //
     e.smithing(
-        'modern_industrialization:quantum_boots',
-        'ad_astra:jet_suit_boots',
-        'modern_industrialization:quantum_upgrade'
+        mi('quantum_boots'),
+        astra('jet_suit_boots'),
+        mi('quantum_upgrade')
     );
     // -- Quantum Sword -- //
     e.smithing(
-        'modern_industrialization:quantum_sword',
-        'techreborn:nanosaber',
-        'modern_industrialization:quantum_upgrade'
+        mi('quantum_sword'),
+        tr('nanosaber'),
+        mi('quantum_upgrade')
     );
 });
 
 ServerEvents.tags('item', e => {
+
+    let mi = (id) => `modern_industrialization:${id}`;
+
     const LV_WIRE = [
-        'modern_industrialization:copper_cable',
-        'modern_industrialization:tin_cable',
-        'modern_industrialization:silver_cable'
+        mi('copper_cable'),
+        mi('tin_cable'),
+        mi('silver_cable')
     ];
     LV_WIRE.forEach(id => { e.add('kubejs:lv_wire', id) });
 
     const MV_WIRE = [
-        'modern_industrialization:cupronickel_cable',
-        'modern_industrialization:electrum_cable'
+        mi('cupronickel_cable'),
+        mi('electrum_cable')
     ];
     MV_WIRE.forEach(id => { e.add('kubejs:mv_wire', id) });
 
     const HV_WIRE = [
-        'modern_industrialization:aluminum_cable',
-        'modern_industrialization:kanthal_cable'
+        mi('aluminum_cable'),
+        mi('kanthal_cable')
     ]
     HV_WIRE.forEach(id => { e.add('kubejs:hv_wire', id) });
 
     const EV_WIRE = [
-        'modern_industrialization:annealed_copper_cable',
-        'modern_industrialization:platinum_cable'
+        mi('annealed_copper_cable'),
+        mi('platinum_cable')
     ]
     EV_WIRE.forEach(id => { e.add('kubejs:ev_wire', id) });
 
     const ENERGY_INPUT_HATCH = [
-        'modern_industrialization:lv_energy_input_hatch',
-        'modern_industrialization:mv_energy_input_hatch',
-        'modern_industrialization:hv_energy_input_hatch',
-        'modern_industrialization:ev_energy_input_hatch',
-        'modern_industrialization:superconductor_energy_input_hatch'
+        mi('lv_energy_input_hatch'),
+        mi('mv_energy_input_hatch'),
+        mi('hv_energy_input_hatch'),
+        mi('ev_energy_input_hatch'),
+        mi('superconductor_energy_input_hatch')
     ];
     ENERGY_INPUT_HATCH.forEach(id => { e.add('kubejs:energy_input_hatch', id) });
 
     const ENERGY_OUTPUT_HATCH = [
-        'modern_industrialization:lv_energy_output_hatch',
-        'modern_industrialization:mv_energy_output_hatch',
-        'modern_industrialization:hv_energy_output_hatch',
-        'modern_industrialization:ev_energy_output_hatch',
-        'modern_industrialization:superconductor_energy_output_hatch'
+        mi('lv_energy_output_hatch'),
+        mi('mv_energy_output_hatch'),
+        mi('hv_energy_output_hatch'),
+        mi('ev_energy_output_hatch'),
+        mi('superconductor_energy_output_hatch')
     ];
     ENERGY_OUTPUT_HATCH.forEach(id => { e.add('kubejs:energy_output_hatch', id) });
 
     const FLUID_INPUT_HATCH = [
-        'modern_industrialization:bronze_fluid_input_hatch',
-        'modern_industrialization:steel_fluid_input_hatch',
-        'modern_industrialization:advanced_fluid_input_hatch',
-        'modern_industrialization:turbo_fluid_input_hatch',
-        'modern_industrialization:highly_advanced_fluid_input_hatch',
+        mi('bronze_fluid_input_hatch'),
+        mi('steel_fluid_input_hatch'),
+        mi('advanced_fluid_input_hatch'),
+        mi('turbo_fluid_input_hatch'),
+        mi('highly_advanced_fluid_input_hatch'),
     ];
     FLUID_INPUT_HATCH.forEach(id => { e.add('kubejs:fluid_input_hatch', id) });
 
     const FLUID_OUTPUT_HATCH = [
-        'modern_industrialization:bronze_fluid_output_hatch',
-        'modern_industrialization:steel_fluid_output_hatch',
-        'modern_industrialization:advanced_fluid_output_hatch',
-        'modern_industrialization:turbo_fluid_output_hatch',
-        'modern_industrialization:highly_advanced_fluid_output_hatch',
+        mi('bronze_fluid_output_hatch'),
+        mi('steel_fluid_output_hatch'),
+        mi('advanced_fluid_output_hatch'),
+        mi('turbo_fluid_output_hatch'),
+        mi('highly_advanced_fluid_output_hatch'),
     ];
     FLUID_OUTPUT_HATCH.forEach(id => { e.add('kubejs:fluid_output_hatch', id) });
 
     const ITEM_INPUT_HATCH = [
-        'modern_industrialization:bronze_item_input_hatch',
-        'modern_industrialization:steel_item_input_hatch',
-        'modern_industrialization:advanced_item_input_hatch',
-        'modern_industrialization:turbo_item_input_hatch',
-        'modern_industrialization:highly_advanced_item_input_hatch',
+        mi('bronze_item_input_hatch'),
+        mi('steel_item_input_hatch'),
+        mi('advanced_item_input_hatch'),
+        mi('turbo_item_input_hatch'),
+        mi('highly_advanced_item_input_hatch'),
     ];
     ITEM_INPUT_HATCH.forEach(id => { e.add('kubejs:item_input_hatch', id) });
 
     const ITEM_OUTPUT_HATCH = [
-        'modern_industrialization:bronze_item_output_hatch',
-        'modern_industrialization:steel_item_output_hatch',
-        'modern_industrialization:advanced_item_output_hatch',
-        'modern_industrialization:turbo_item_output_hatch',
-        'modern_industrialization:highly_advanced_item_output_hatch',
+        mi('bronze_item_output_hatch'),
+        mi('steel_item_output_hatch'),
+        mi('advanced_item_output_hatch'),
+        mi('turbo_item_output_hatch'),
+        mi('highly_advanced_item_output_hatch'),
     ];
     ITEM_OUTPUT_HATCH.forEach(id => { e.add('kubejs:item_output_hatch', id) });
 
     const NUCLEAR_INPUT_HATCH = [
-        'modern_industrialization:nuclear_fluid_hatch',
-        'modern_industrialization:nuclear_item_hatch'
+        mi('nuclear_fluid_hatch'),
+        mi('nuclear_item_hatch')
     ];
     NUCLEAR_INPUT_HATCH.forEach(id => { e.add('kubejs:nuclear_hatch', id) });
 
     const NUCLEAR_FUEL = [
-        'modern_industrialization:uranium_fuel_rod',
-        'modern_industrialization:uranium_fuel_rod_double',
-        'modern_industrialization:uranium_fuel_rod_quad',
-        'modern_industrialization:le_uranium_fuel_rod',
-        'modern_industrialization:le_uranium_fuel_rod_double',
-        'modern_industrialization:le_uranium_fuel_rod_quad',
-        'modern_industrialization:he_uranium_fuel_rod',
-        'modern_industrialization:he_uranium_fuel_rod_double',
-        'modern_industrialization:he_uranium_fuel_rod_quad',
-        'modern_industrialization:le_mox_fuel_rod',
-        'modern_industrialization:le_mox_fuel_rod_double',
-        'modern_industrialization:le_mox_fuel_rod_quad',
-        'modern_industrialization:he_mox_fuel_rod',
-        'modern_industrialization:he_mox_fuel_rod_double',
-        'modern_industrialization:he_mox_fuel_rod_quad'
+        mi('uranium_fuel_rod'),
+        mi('uranium_fuel_rod_double'),
+        mi('uranium_fuel_rod_quad'),
+        mi('le_uranium_fuel_rod'),
+        mi('le_uranium_fuel_rod_double'),
+        mi('le_uranium_fuel_rod_quad'),
+        mi('he_uranium_fuel_rod'),
+        mi('he_uranium_fuel_rod_double'),
+        mi('he_uranium_fuel_rod_quad'),
+        mi('le_mox_fuel_rod'),
+        mi('le_mox_fuel_rod_double'),
+        mi('le_mox_fuel_rod_quad'),
+        mi('he_mox_fuel_rod'),
+        mi('he_mox_fuel_rod_double'),
+        mi('he_mox_fuel_rod_quad')
     ];
     NUCLEAR_FUEL.forEach(id => { e.add('kubejs:nuclear_fuel', id) });
 
     const DEPLETED_FUEL = [
-        'modern_industrialization:uranium_fuel_rod_depleted',
-        'modern_industrialization:le_uranium_fuel_rod_depleted',
-        'modern_industrialization:he_uranium_fuel_rod_depleted',
-        'modern_industrialization:le_mox_fuel_rod_depleted',
-        'modern_industrialization:he_mox_fuel_rod_depleted'
+        mi('uranium_fuel_rod_depleted'),
+        mi('le_uranium_fuel_rod_depleted'),
+        mi('he_uranium_fuel_rod_depleted'),
+        mi('le_mox_fuel_rod_depleted'),
+        mi('he_mox_fuel_rod_depleted')
     ];
     DEPLETED_FUEL.forEach(id => { e.add('kubejs:depleted_nuclear_fuel', id) });
 });

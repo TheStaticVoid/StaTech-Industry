@@ -179,3 +179,14 @@ MIMachineEvents.registerMachines(e => {
         false, // side overlay
     );
 });
+
+MIMaterialEvents.addMaterials(e => {
+    e.createMaterial('Desh', 'desh', 0xe9ba5d,
+        builder => {
+            builder.addParts('dust', 'tiny_dust', 'rod', 'gear', 'ring', 'blade', 'bolt', 'large_plate', 'curved_plate')
+            .machineCasing(8.0)
+            .pipeCasing(8.0)
+            .defaultRecipes()
+            .forgeHammerRecipes()
+        });
+});

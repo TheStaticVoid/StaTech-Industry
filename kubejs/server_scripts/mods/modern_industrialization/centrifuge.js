@@ -73,7 +73,7 @@ ServerEvents.recipes(e => {
         32,
         4000,
         [
-            { amount: 16, item: tr('endstone_dust') }
+            { amount: 16, item: astra('moon_sand') }
         ],
         [
             { amount: 12, item: mc('sand') },
