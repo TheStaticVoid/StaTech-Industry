@@ -1,7 +1,7 @@
 {
 	id: "1F602B903C9EFF1C"
 	group: "592A9A0E9A131D28"
-	order_index: 4
+	order_index: 5
 	filename: "5__lategame"
 	title: "5 - Lategame"
 	icon: "modern_industrialization:quantum_circuit"
@@ -9,33 +9,15 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
-			y: 0.0d
-			description: ["Welcome to the late game, time to make the EV-tiered machine hulls."]
-			dependencies: ["4FDC0B405C330E4F"]
-			id: "229C752D3B9B8D48"
-			tasks: [{
-				id: "51BF79871438565C"
-				type: "item"
-				item: "modern_industrialization:highly_advanced_machine_hull"
-			}]
-			rewards: [{
-				id: "125A850D766A7E53"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "The Large Diesel Generator"
 			icon: "modern_industrialization:large_diesel_generator"
-			x: -3.0d
+			x: 30.0d
 			y: 0.0d
 			description: [
 				"A Large Diesel Generator is able to burn fuel to generate up to 16384 EU/t. Check REI to view how much EU per mB each fuel can produce."
 				""
 				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Large Diesel Generator block in your inventory or by holding your wrench out with the Large Diesel Generator placed."
 			]
-			dependencies: ["229C752D3B9B8D48"]
 			size: 1.5d
 			id: "32DF938D1E6E89BB"
 			tasks: [
@@ -88,67 +70,14 @@
 			}]
 		}
 		{
-			title: "Titanium Drill"
-			x: -2.5d
-			y: -2.5d
-			description: ["With the Titanium Drill you can obtain infinite Uranium and Iridium. It may be better to just use UU-matter to get these materials, but it's up to you."]
-			dependencies: ["78EE20BD0B4E84DE"]
-			id: "66B1A1FFF15E53B0"
-			tasks: [{
-				id: "11FF72C4C16990F7"
-				type: "item"
-				item: "modern_industrialization:titanium_drill"
-				count: 4L
-			}]
-			rewards: [
-				{
-					id: "6FF61ABB69AD75DB"
-					type: "item"
-					item: "modern_industrialization:titanium_drill"
-					count: 4
-				}
-				{
-					id: "624EBB9D0EF11E72"
-					type: "xp"
-					xp: 100
-				}
-			]
-		}
-		{
-			title: "Large Advanced Components"
-			x: -1.5d
-			y: -1.5d
-			description: ["With your new Processing Units you can now craft the large versions of the advanced components."]
-			dependencies: ["229C752D3B9B8D48"]
-			id: "78EE20BD0B4E84DE"
-			tasks: [
-				{
-					id: "1B85C742981B2BDA"
-					type: "item"
-					item: "modern_industrialization:large_advanced_motor"
-				}
-				{
-					id: "29913BFC4F7475B3"
-					type: "item"
-					item: "modern_industrialization:large_advanced_pump"
-				}
-			]
-			rewards: [{
-				id: "02AA476EE7E6D25E"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "Prepare for Nuclear Fission"
-			x: 1.5d
+			x: 34.5d
 			y: 0.0d
 			description: [
 				"Before you can make a Nuclear Reactor, you will need Nuclear Alloy Plates. These are made with Blastproof, Beryllium, and Cadmium Ingots. "
 				""
 				"Beryllium can be obtained from centrifuging Emeralds and Cadmium can be obtained by centrifuging Mozanite."
 			]
-			dependencies: ["229C752D3B9B8D48"]
 			id: "56A30502A268BB60"
 			tasks: [{
 				id: "13BA3670095FB899"
@@ -162,7 +91,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 36.0d
 			y: 0.0d
 			description: [
 				"If you skipped the Implosion Compressor from the previous chapter, you're going to need it before you can make this alloy."
@@ -188,7 +117,7 @@
 		{
 			title: "The Nuclear Reactor"
 			icon: "modern_industrialization:nuclear_reactor"
-			x: 4.5d
+			x: 37.5d
 			y: 0.0d
 			subtitle: "With great power comes great responsibility"
 			description: [
@@ -246,7 +175,7 @@
 		{
 			title: "Nuclear Science"
 			icon: "modern_industrialization:large_heat_exchanger"
-			x: 4.5d
+			x: 37.5d
 			y: -1.5d
 			subtitle: "Nerd Emoji"
 			description: [
@@ -281,7 +210,7 @@
 		}
 		{
 			title: "Nuclear Fuel"
-			x: 4.5d
+			x: 37.5d
 			y: 2.0d
 			subtitle: "Hazmat suit not required?"
 			description: ["There's a variety of Nuclear Fuels available to you. The most basic is just regular Uranium Rods, but you can make Lightly-Enriched (LE) or Highly-Enriched (HE) variants. Check JEI for more details on each fuel and find what works best for you."]
@@ -307,7 +236,7 @@
 		}
 		{
 			title: "Depleted Nuclear Fuel"
-			x: 4.5d
+			x: 37.5d
 			y: 4.5d
 			description: [
 				"Once the Nuclear Fuel is used up it turns into a Depleted variant. These depleted variants are still very useful, so don't throw them out!"
@@ -335,7 +264,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 33.0d
 			y: 7.0d
 			subtitle: "The Final Circuit"
 			description: ["Getting to the Quantum Circuits in their own is an accomplishment. These are used for all the end game MI machines and materials."]
@@ -355,7 +284,7 @@
 		}
 		{
 			title: "Quantum Circuit Components"
-			x: 0.0d
+			x: 33.0d
 			y: 4.5d
 			subtitle: "Bringing it all together"
 			description: ["It's time to start putting the puzzle together. Plutonium from your depleted fuel rods, various chemicals, and other materials you have processed this far."]
@@ -391,7 +320,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 33.0d
 			y: 14.25d
 			description: ["The Plasma Turbine can turn Helium Plasma into EU, at the rate of 100kEU per mB. Its maximum production rate is rougly 1M EU/t."]
 			dependencies: ["6CD8A3092DDAC055"]
@@ -411,7 +340,7 @@
 		{
 			title: "The Fusion Reactor"
 			icon: "modern_industrialization:fusion_reactor"
-			x: 0.0d
+			x: 33.0d
 			y: 12.0d
 			subtitle: "The power of a star in the palm of your hand"
 			description: ["The Fusion Reactor is the ultimate energy source! It can combine Deuterium, Tritium, and/or Helium-3 into Helium Plasma, the most powerful fuel in the game! However, it requires a large amount of energy to ignite the reaction."]
@@ -482,7 +411,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 33.0d
 			y: 10.0d
 			description: ["The Quantum Machine Hull is the final tier of Machine Hull in MI. It allows you to upgrade your machines to the Quantum tier. It's also used in several lategame recipes."]
 			dependencies: ["23D9328B5F627E65"]
@@ -499,10 +428,9 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 33.0d
 			y: 2.0d
 			description: ["Combining Argon and Helium will give you Cryofluid, an important fluid in quantum crafting."]
-			dependencies: ["229C752D3B9B8D48"]
 			id: "5D79372CA3921A4D"
 			tasks: [{
 				id: "044CD9E92387E138"
@@ -516,10 +444,9 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: 34.5d
 			y: 2.0d
 			description: ["Tritium can be produced in a multitude of ways. You can centrifuge Hydrogen for a very small output or you can use Heavy Water in a Nuclear Reactor which will be converted into Tritium over time."]
-			dependencies: ["229C752D3B9B8D48"]
 			id: "43D2E858079C12E0"
 			tasks: [{
 				id: "7511D1E0AB15A451"
@@ -533,7 +460,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: 31.5d
 			y: 8.5d
 			description: [
 				"The Quantum Tank is the highest tier Tank offered by MI. It can store an absolutely absurd 2.14 billion buckets of fluid."
@@ -554,7 +481,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: 31.5d
 			y: 9.5d
 			description: ["The Quantum Barrel is the biggest Barrel available in MI. It can store 2.14 billion stacks of a single item. "]
 			dependencies: ["286BD460010AA281"]
@@ -571,7 +498,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 37.0d
 			y: 10.0d
 			subtitle: "Legal Duping"
 			description: [
@@ -597,7 +524,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: 31.5d
 			y: 10.5d
 			description: ["A single Superconductor Storage Unit can hold an absolute insane 768 billion EU."]
 			dependencies: ["286BD460010AA281"]
@@ -614,10 +541,9 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 33.0d
 			y: -2.0d
 			description: ["The EV tier storage unit. It can store a little more than 45 million EU. "]
-			dependencies: ["229C752D3B9B8D48"]
 			id: "64D20685E4A57EED"
 			tasks: [{
 				id: "3354DB1A9D9AE43E"
@@ -631,7 +557,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 37.0d
 			y: 7.0d
 			description: ["The Quantum Upgrade is the highest tier upgrade available in MI. It allows for a 1 Billion EU overclock on any machine it is in. Whether or not you can produce that much power is a better question..."]
 			dependencies: [
@@ -651,24 +577,7 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -3.0d
-			description: ["The Highly Advanced Upgrade is the second to last upgrade available for your machines. It offers a 4x EU overclock as compared to the previous tier."]
-			dependencies: ["78EE20BD0B4E84DE"]
-			id: "560374EE3ACBFFB5"
-			tasks: [{
-				id: "2CF54F579E95BFF5"
-				type: "item"
-				item: "modern_industrialization:highly_advanced_upgrade"
-			}]
-			rewards: [{
-				id: "5D239FD8C9ECA7F1"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 6.5d
+			x: 39.5d
 			y: 6.5d
 			subtitle: "A sword to end all swords"
 			description: [
@@ -691,7 +600,7 @@
 		}
 		{
 			title: "Quantum Suit"
-			x: 6.5d
+			x: 39.5d
 			y: 7.5d
 			subtitle: "Basically creative mode"
 			description: [
@@ -730,7 +639,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 37.0d
 			y: 5.5d
 			subtitle: "Pocket-size blackhole "
 			description: ["By blasting an Ultradense Metal Ball with more energy than several times our entire sun we can create a single Singularity."]
@@ -748,7 +657,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 38.0d
 			y: 5.5d
 			subtitle: "Surprisingly Ineffective"
 			description: [
@@ -770,7 +679,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 35.5d
 			y: 5.5d
 			description: ["With a suitable Electrolyzer setup and a Singularity, large amounts of energy can be turned through Quantum Hawking Radiation, into a liquid form of UU Matter."]
 			dependencies: ["10943911EAB7196F"]
@@ -787,10 +696,9 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: 34.5d
 			y: -2.0d
 			description: ["With the Highly Advanced Machine Hulls you now have access to Ultimate Solar Panels. This will generate 192 EU/t during the day, and 16 EU/t at night. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
-			dependencies: ["229C752D3B9B8D48"]
 			id: "786ACF473177AA23"
 			tasks: [{
 				id: "6F8D42F55B4F5EF4"
@@ -804,7 +712,7 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: 34.5d
 			y: 8.5d
 			dependencies: ["286BD460010AA281"]
 			id: "18A5221397607F68"
@@ -812,6 +720,22 @@
 				id: "003B87D6A0BE31DA"
 				type: "item"
 				item: "techreborn:quantum_solar_panel"
+			}]
+		}
+		{
+			x: 31.5d
+			y: 3.5d
+			description: ["Combingin 3x Neodymium, 3x Annealed Copper, 3x Yttrium, and 1x Iridium Dust you can mix together Superconductor Dust. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a Kanthal EBF and then cool it in a vacuum freezer."]
+			id: "569821B175311340"
+			tasks: [{
+				id: "7F7814394EC4D8DA"
+				type: "item"
+				item: "modern_industrialization:superconductor_dust"
+			}]
+			rewards: [{
+				id: "6DB07CF0D3B65E62"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]

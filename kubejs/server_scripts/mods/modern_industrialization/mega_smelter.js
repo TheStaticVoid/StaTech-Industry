@@ -43,7 +43,10 @@ ServerEvents.recipes(e => {
         'c:iron_plates',
         'minecraft:netherite_axe',
         'minecraft:iron_horse_armor',
-        'minecraft:sugar_cane'
+        'minecraft:sugar_cane',
+        'modern_industrialization:raw_iridium',
+        'modern_industrialization:iridium_dust',
+        'modern_industrialization:iridium_ore'
     ];
 
     // The cost of every recipe

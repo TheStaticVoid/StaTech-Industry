@@ -1168,7 +1168,7 @@
 			x: 7.5d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["The Scrapbox-inator can turn Scrapboxes into random outputs. It could be fun to have it run, or you can stockpile your scrap until you get UU-Matter, up to you."]
+			description: ["The Scrapbox-inator can turn Scrapboxes into random outputs. It could be fun to have it run, or you can stockpile your scrap until you get a Matter Fabricator, up to you."]
 			dependencies: ["5EC488946BE8FF2F"]
 			id: "092B11065EE78062"
 			tasks: [{
@@ -3186,7 +3186,7 @@
 			]
 			dependencies: [
 				"68DDFA6E0465E81E"
-				"354C87C444B34193"
+				"0CF36C4D19B0CE1A"
 			]
 			id: "6C91896D4DF89A77"
 			tasks: [{
@@ -3603,7 +3603,7 @@
 		}
 		{
 			x: 28.0d
-			y: 7.5d
+			y: 7.0d
 			shape: "square"
 			description: ["The Air Intake will allow your Vacuum Freezers and Pressurizers to produce Liquid Air, which can be distilled into it's base components."]
 			dependencies: ["6375B17635AAC09D"]
@@ -3632,6 +3632,41 @@
 			}]
 			rewards: [{
 				id: "033A33C1C73505D5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Liquid Air Products"
+			x: 28.0d
+			y: 6.0d
+			shape: "square"
+			description: [
+				"Centrifuging 3000 mB of Liquid Air will produce, 650 mB Oxygen, 2315 mB of Nitrogen, and a measly 35 mB of Argon."
+				""
+				"Argon will be very useful in the future, you should start stockpiling it."
+			]
+			dependencies: ["354C87C444B34193"]
+			id: "0CF36C4D19B0CE1A"
+			tasks: [
+				{
+					id: "3BFAF1365AE2422D"
+					type: "item"
+					item: "modern_industrialization:oxygen_bucket"
+				}
+				{
+					id: "64077332269D9239"
+					type: "item"
+					item: "modern_industrialization:nitrogen_bucket"
+				}
+				{
+					id: "50B051D5B1C72165"
+					type: "item"
+					item: "modern_industrialization:argon_bucket"
+				}
+			]
+			rewards: [{
+				id: "19257A6801BA003B"
 				type: "xp"
 				xp: 100
 			}]
