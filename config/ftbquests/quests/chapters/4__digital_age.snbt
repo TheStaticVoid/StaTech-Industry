@@ -10,9 +10,9 @@
 	images: [
 		{
 			x: -15.0d
-			y: -2.0d
-			width: 2.5d
-			height: 2.5d
+			y: -1.5d
+			width: 0.75d
+			height: 0.75d
 			rotation: 0.0d
 			image: "ad_astra:textures/painting/moon.png"
 			hover: ["Mun"]
@@ -32,6 +32,54 @@
 				"Click here to check the wiki"
 			]
 			click: "https://appliedenergistics.github.io/"
+			dev: false
+			corner: false
+		}
+		{
+			x: -17.5d
+			y: 6.25d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/mars.png"
+			hover: ["The Red Planet"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -13.75d
+			y: 7.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/venus.png"
+			hover: ["Extremely Hostile Environment"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -9.0d
+			y: 4.5d
+			width: 2.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/glacio.png"
+			hover: ["Cold for sure, but habitable"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -13.75d
+			y: 12.25d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/mercury.png"
+			hover: ["Hot, hot, hot!"]
+			click: ""
 			dev: false
 			corner: false
 		}
@@ -1103,57 +1151,6 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 4.5d
-			subtitle: "One man's trash..."
-			description: [
-				"The Matter Fabricator is an advanced machine that can create UU-Matter from scrap fed into it."
-				""
-				"UU-Matter is pretty important, as it can be used to create Iridium"
-			]
-			id: "6288718990D88342"
-			tasks: [{
-				id: "5A9CD8D64D036513"
-				type: "item"
-				item: "techreborn:matter_fabricator"
-			}]
-			rewards: [{
-				id: "331F941508D68501"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 11.5d
-			y: 4.5d
-			subtitle: "Nearly magic!"
-			description: ["UU-Matter can craft a variety of things, some of the most notable is Iridium, Platinum, and Chromium. There are other ways to get infinite amounts of those ores, but this offers another viable method in generating these resources."]
-			dependencies: ["6288718990D88342"]
-			size: 1.5d
-			id: "097A441985DCD241"
-			tasks: [{
-				id: "2A7EB1EC6AE6025D"
-				type: "item"
-				item: "techreborn:uu_matter"
-			}]
-			rewards: [{
-				id: "7DDC924010E278CA"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 22.5d
-			y: 14.0d
-			dependencies: ["354C87C444B34193"]
-			id: "57353B9BFF2CF1E6"
-			tasks: [{
-				id: "5A61075D4C681146"
-				type: "item"
-				item: "modern_industrialization:liquid_air_bucket"
-			}]
-		}
-		{
 			title: "Titanium"
 			x: 8.5d
 			y: 0.0d
@@ -1179,13 +1176,14 @@
 		{
 			title: "The Pressurizer"
 			icon: "modern_industrialization:pressurizer"
-			x: 18.0d
-			y: 8.0d
+			x: 11.0d
+			y: -2.0d
+			shape: "square"
 			subtitle: "Under pressure"
 			description: [
 				"The Pressurizer is a new multiblock made of Titanium that can turn water into High Pressure Water and Steam, and the inverse."
 				""
-				"If you plan to use the High Pressure Large Steam Boiler, you will need to be using the Pressurizer to make High Pressure Water."
+				"If you plan to use the High Pressure Large Steam Boiler, you will need to be using the Pressurizer to make High Pressure Water or High Pressure Steam."
 				""
 				"If you plan to use the Pressurizer to generate Liquid Air, you will need an Item Input Hatch for the Air Intake."
 			]
@@ -1253,82 +1251,11 @@
 			}]
 		}
 		{
-			title: "High Pressure Large Steam Boiler"
-			icon: "modern_industrialization:high_pressure_large_steam_boiler"
-			x: 18.0d
-			y: 6.0d
-			description: [
-				"The High Pressure Steam Boiler can produce up to 2048 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
-				""
-				"Maximum efficiency is only reached under continuous operation. Only accepts High Pressure Water and High Pressure Heavy Water."
-				""
-				"It's not worth starting up the Boiler right now unless you have a significant enough Large Tank to take the High Pressure Steam or have set up the next multiblock, the Large Steam Turbine."
-				""
-				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the High Pressure Large Steam Boiler block in your inventory or by holding your wrench out with the High Pressure Large Steam Boiler placed."
-			]
-			dependencies: ["2D1CE7720270D118"]
-			id: "26EF4E75B844E3BD"
-			tasks: [
-				{
-					id: "7481639224BAE077"
-					type: "item"
-					item: "modern_industrialization:high_pressure_large_steam_boiler"
-				}
-				{
-					id: "5F12A1FBC34CA63F"
-					type: "item"
-					item: "modern_industrialization:clean_stainless_steel_machine_casing"
-					count: 24L
-				}
-				{
-					id: "44C90CA82AB1D425"
-					type: "item"
-					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
-					count: 2L
-				}
-				{
-					id: "0F25C8B09F1B1E67"
-					type: "item"
-					item: "modern_industrialization:heatproof_machine_casing"
-					count: 6L
-				}
-				{
-					id: "1EB752A1003F2F61"
-					type: "item"
-					title: "Any 2x Fluid Input Hatches"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "kubejs:fluid_input_hatch"
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "4A17AA3A1FA59110"
-					type: "item"
-					title: "Any Fluid Output Hatch"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "kubejs:fluid_output_hatch"
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "61508B460F3145EF"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "The Large Steam Turbine"
 			icon: "modern_industrialization:large_steam_turbine"
-			x: 18.0d
-			y: 4.0d
+			x: 17.0d
+			y: -2.0d
+			shape: "square"
 			description: [
 				"The Large Steam Turbine will accept both regular steam ( 1 mB = 1 EU ) and HP Steam ( 1 mB = 8 EU ) into EU, and will generate up to 16384 EU/t."
 				""
@@ -1336,7 +1263,7 @@
 				""
 				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Large Steam Turbine block in your inventory or by holding your wrench out with the Large Steam Turbine placed."
 			]
-			dependencies: ["26EF4E75B844E3BD"]
+			dependencies: ["1C6856D2C944D9F2"]
 			id: "45E103B1646804FA"
 			tasks: [
 				{
@@ -1388,31 +1315,7 @@
 			}]
 		}
 		{
-			title: "Closed High Pressure Steam Loop"
-			x: 18.0d
-			y: 2.0d
-			description: [
-				"I've included a schematic for a prebuilt closed loop HP Steam Turbine setup. It can be found in 'schematics/prebuilts/' under the name 'closed_hp_steam_turbine_system.litematic'"
-				""
-				"You can use Litematica to preview it and copy it, or figure it out yourself. If you need help, you can join the Discord (found in the Welcome chapter)"
-				""
-				"With a closed loop, you will always be net neutral on High Pressure Water, and can eventually remove the Pressurizer once it has generated enough High Pressure Water."
-			]
-			dependencies: ["45E103B1646804FA"]
-			id: "060A516AB0CE0320"
-			tasks: [{
-				id: "006FFD2499914ACD"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
-			rewards: [{
-				id: "03266783A01766A5"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 7.5d
+			x: 7.0d
 			y: -4.0d
 			subtitle: "GIGA DRILL BREAK"
 			description: [
@@ -1442,7 +1345,7 @@
 			}]
 		}
 		{
-			x: 9.5d
+			x: 9.0d
 			y: -4.0d
 			subtitle: "Say goodbye to the rainforests"
 			description: [
@@ -1472,7 +1375,7 @@
 			}]
 		}
 		{
-			x: 8.5d
+			x: 8.0d
 			y: -4.0d
 			subtitle: "Like a Protosaber!"
 			description: [
@@ -1503,47 +1406,15 @@
 			}]
 		}
 		{
-			title: "Liquid Air Products"
-			x: 22.5d
-			y: 11.5d
-			description: [
-				"Centrifuging 3000 mB of Liquid Air will produce, 650 mB Oxygen, 2315 mB of Nitrogen, and a measly 35 mB of Argon."
-				""
-				"Argon will be very useful in the future, you should start stockpiling it."
-			]
-			dependencies: ["57353B9BFF2CF1E6"]
-			id: "0CF36C4D19B0CE1A"
-			tasks: [
-				{
-					id: "3BFAF1365AE2422D"
-					type: "item"
-					item: "modern_industrialization:oxygen_bucket"
-				}
-				{
-					id: "64077332269D9239"
-					type: "item"
-					item: "modern_industrialization:nitrogen_bucket"
-				}
-				{
-					id: "50B051D5B1C72165"
-					type: "item"
-					item: "modern_industrialization:argon_bucket"
-				}
-			]
-			rewards: [{
-				id: "19257A6801BA003B"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 20.0d
-			y: 10.0d
+			x: 11.0d
+			y: 0.0d
+			shape: "square"
 			description: [
 				"Processing Raw Platinum will produce a little bit of Iridium Tiny Dust as well as 3x Platinum Tiny Dust. Both of these will be very important to obtain in larger amounts moving forward. "
 				""
 				"This Iridium generation method is very, very slow, but you will soon be able to access The Matter Replicator and UU-Matter."
 			]
+			dependencies: ["08362FF409BFC7CC"]
 			id: "73E92504C29F7181"
 			tasks: [{
 				id: "59EBACB2A31D7156"
@@ -1557,8 +1428,9 @@
 			}]
 		}
 		{
-			x: 20.5d
-			y: 8.0d
+			x: 13.0d
+			y: 0.5d
+			shape: "square"
 			description: ["Iridium Tiny Dust will be needed in the production of Monocrystalline Silicon boules."]
 			dependencies: ["73E92504C29F7181"]
 			id: "0A7B765B2AC2DD6D"
@@ -1574,8 +1446,9 @@
 			}]
 		}
 		{
-			x: 19.5d
-			y: 8.0d
+			x: 13.0d
+			y: -0.5d
+			shape: "square"
 			dependencies: ["73E92504C29F7181"]
 			id: "7111AA66B02C4877"
 			tasks: [{
@@ -1585,13 +1458,11 @@
 			}]
 		}
 		{
-			x: 22.5d
-			y: 10.0d
+			x: 15.0d
+			y: 0.5d
+			shape: "square"
 			description: ["Combining Argon, Silicon, and a little bit of Iridium you will be able to produce your first Monocrystalline Silicon boule."]
-			dependencies: [
-				"0CF36C4D19B0CE1A"
-				"0A7B765B2AC2DD6D"
-			]
+			dependencies: ["0A7B765B2AC2DD6D"]
 			id: "11D19824B39407CC"
 			tasks: [{
 				id: "181DD3F6200F684E"
@@ -1605,8 +1476,9 @@
 			}]
 		}
 		{
-			x: 22.5d
-			y: 8.0d
+			x: 15.0d
+			y: 2.0d
+			shape: "square"
 			description: ["Luckily one boule is able to produce a significant amount of wafers. These will be important for Processing Unit components."]
 			dependencies: ["11D19824B39407CC"]
 			id: "76BD64AFCE37E528"
@@ -1623,8 +1495,9 @@
 		}
 		{
 			title: "Processing Unit Components"
-			x: 21.0d
-			y: 6.0d
+			x: 17.0d
+			y: -0.5d
+			shape: "square"
 			description: ["It's time to pull it all together. These components from all over the chapter, if you're unable to make something, make sure you didn't miss a quest!"]
 			dependencies: [
 				"7111AA66B02C4877"
@@ -1661,16 +1534,13 @@
 			}]
 		}
 		{
-			x: 22.5d
-			y: 3.5d
+			x: 17.0d
+			y: 2.25d
+			shape: "square"
 			subtitle: "EV Voltage Circuits"
-			description: [
-				"The Processing Unit is the key to EV-tier hulls, multiblocks, and recipes. "
-				""
-				"This marks the end of the chapter. You're ready to head into the Lategame!"
-			]
+			description: ["The Processing Unit is the key to EV-tier hulls, multiblocks, and recipes. "]
 			dependencies: ["3FEB290E25DD6BFD"]
-			size: 3.0d
+			size: 1.5d
 			id: "4FDC0B405C330E4F"
 			tasks: [{
 				id: "43E1C82BC52BE00E"
@@ -1684,26 +1554,11 @@
 			}]
 		}
 		{
-			x: 23.5d
-			y: 12.5d
-			description: ["Tungsten is a fairly tough material, and will require an Implosion Chamber to efficiently create the material. To get to that point, you will need to convert your Tungsten into tiny dusts."]
-			id: "1D9CEDDFFF1C8A7F"
-			tasks: [{
-				id: "1EB958B0AD967559"
-				type: "item"
-				item: "modern_industrialization:tungsten_tiny_dust"
-			}]
-			rewards: [{
-				id: "33E204F18FE0DEFF"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			x: 25.0d
-			y: 12.5d
+			x: 8.5d
+			y: 4.5d
+			shape: "square"
 			description: ["You can create Tungsten Nuggets by compressing Tungsten Tiny Dusts. This process is very, very slow, so you'll want to get as much as you need to make an Implosion Chamber and then never use the compressing method again."]
-			dependencies: ["1D9CEDDFFF1C8A7F"]
+			dependencies: ["1724FEEB2622FB70"]
 			id: "3132A7C27E732259"
 			tasks: [{
 				id: "4D1A5D5535293770"
@@ -1717,8 +1572,9 @@
 			}]
 		}
 		{
-			x: 25.0d
-			y: 11.0d
+			x: 11.0d
+			y: 2.0d
+			shape: "square"
 			description: ["You will need a Mixed Tungsten Ingot to make Blastproof Alloy Platings."]
 			dependencies: [
 				"3132A7C27E732259"
@@ -1739,8 +1595,9 @@
 		{
 			title: "The Implosion Compressor"
 			icon: "modern_industrialization:implosion_compressor"
-			x: 27.0d
-			y: 11.0d
+			x: 13.0d
+			y: 2.0d
+			shape: "square"
 			subtitle: "KABOOOOOOM"
 			description: [
 				"The Implosion Compressor is able to compress dust and ingots of the most resistant materials. This includes Tungsten, Blastproof Alloy, and Beryllium. These materials are very important for nuclear fission!"
@@ -1748,7 +1605,6 @@
 				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Implosion Compressor block in your inventory or by holding your wrench out with the Implosion Compressor placed."
 			]
 			dependencies: ["500668B023EA17CA"]
-			size: 1.5d
 			id: "0DF6FF0A1E872DC8"
 			tasks: [
 				{
@@ -1814,7 +1670,8 @@
 		{
 			icon: "modern_industrialization:high_pressure_advanced_large_steam_boiler"
 			x: 19.5d
-			y: 6.0d
+			y: 2.75d
+			shape: "square"
 			description: [
 				"The High Pressure Advanced Steam Boiler can produce up to 8192 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
 				""
@@ -1822,10 +1679,7 @@
 				""
 				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the High Pressure Large Steam Boiler block in your inventory or by holding your wrench out with the High Pressure Advanced Large Steam Boiler placed."
 			]
-			dependencies: [
-				"4FDC0B405C330E4F"
-				"26EF4E75B844E3BD"
-			]
+			dependencies: ["4FDC0B405C330E4F"]
 			id: "2EF95EF4396E8FE4"
 			tasks: [
 				{
@@ -2626,9 +2480,16 @@
 			}]
 		}
 		{
-			x: 14.25d
-			y: -5.25d
+			x: 8.5d
+			y: 2.5d
+			shape: "square"
 			subtitle: "Creative Flight!"
+			description: [
+				"If you already tackled Route A, and reached all the planets in Ad Astra, then you surely have enough materials to make the Jet Suit, which can now be upgraded into the Gravichestplate. "
+				""
+				"For the first time, you now have access to creative flight in the pack. I don't think I need to describe how powerful this is."
+			]
+			dependencies: ["08362FF409BFC7CC"]
 			size: 1.5d
 			id: "39FB6B43C46FC7D7"
 			tasks: [{
@@ -2636,31 +2497,555 @@
 				type: "item"
 				item: "modern_industrialization:gravichestplate"
 			}]
-		}
-		{
-			x: 11.0d
-			y: -2.0d
-			shape: "square"
-			dependencies: ["08362FF409BFC7CC"]
-			id: "145521361CF7410E"
-			tasks: [{
-				id: "297F22AA3CDA2002"
-				type: "item"
-				item: "modern_industrialization:titanium_drill"
+			rewards: [{
+				id: "6047340E48789E3C"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
-			x: 12.0d
-			y: -3.0d
-			description: ["Combingin 3x Neodymium, 3x Annealed Copper, 3x Yttrium, and 1x Iridium Dust you can mix together Superconductor Dust. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a Kanthal EBF and then cool it in a vacuum freezer."]
-			id: "569821B175311340"
+			x: 10.0d
+			y: -4.0d
+			description: [
+				"The Industrial Jackhammer is a lot like the Industrial Drill, but with some drawbacks and benefits. "
+				""
+				"Using shift-right click you can toggle the area it will mine, however it will only efficiently mine stone. Great for clearing out large areas, but awful as an everyday pickaxe / tool."
+				""
+				"Making it is up to you."
+			]
+			dependencies: ["779458EF9AEE3AC9"]
+			id: "237FD6F79696DF97"
 			tasks: [{
-				id: "7F7814394EC4D8DA"
+				id: "2B0B54F0FEAD7220"
 				type: "item"
-				item: "modern_industrialization:superconductor_dust"
+				item: {
+					id: "techreborn:industrial_jackhammer"
+					Count: 1b
+					tag: {
+						energy: 1000000L
+					}
+				}
 			}]
 			rewards: [{
-				id: "6DB07CF0D3B65E62"
+				id: "386B4FFB5DDF5B3E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Space Station"
+			icon: "ad_astra:space_painting"
+			x: -17.5d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"With your newly acquired Desh, you can now create Space Stations around celestial bodies. You can create them by launching your rocket, then selecting Space Station when selecting destinations. To return to the station once it's created click Orbit instead."
+				""
+				"Is building a station required for progression? No, but it sure is cool, and may prove a useful location to build the Space Probe multiblock."
+			]
+			dependencies: ["0D0CC636458E8446"]
+			id: "0784DA52E6B2F926"
+			tasks: [
+				{
+					id: "2BFECDC9E5B60973"
+					type: "item"
+					item: "ad_astra:desh_ingot"
+					count: 32L
+				}
+				{
+					id: "757E49B7A7DB98ED"
+					type: "item"
+					item: "modern_industrialization:steel_ingot"
+					count: 32L
+				}
+				{
+					id: "7084146FAA70E7F8"
+					type: "item"
+					item: "modern_industrialization:iron_plate"
+					count: 64L
+				}
+				{
+					id: "75C2AF5F5168DCDB"
+					type: "item"
+					item: "ad_astra:desh_plate"
+					count: 32L
+				}
+			]
+			rewards: [{
+				id: "608512339B911635"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -16.0d
+			y: 4.0d
+			shape: "square"
+			dependencies: ["0D0CC636458E8446"]
+			size: 1.5d
+			id: "545476817EE9C941"
+			tasks: [{
+				id: "6082E434CEFF1232"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_2_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			x: -16.0d
+			y: 6.25d
+			shape: "square"
+			dependencies: ["545476817EE9C941"]
+			size: 1.5d
+			id: "299AA5584498D69A"
+			tasks: [{
+				id: "1081BAD90AF93A17"
+				type: "item"
+				item: "ad_astra:mars_globe"
+			}]
+		}
+		{
+			x: -16.0d
+			y: 8.0d
+			shape: "square"
+			dependencies: ["299AA5584498D69A"]
+			id: "7633B2FDE567585E"
+			tasks: [{
+				id: "644C42E2C2241070"
+				type: "item"
+				item: "ad_astra:raw_ostrum"
+			}]
+		}
+		{
+			x: -16.0d
+			y: 9.5d
+			shape: "square"
+			dependencies: ["7633B2FDE567585E"]
+			id: "24993B650ABE820B"
+			tasks: [{
+				id: "684CCC3270993AD4"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_3_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			x: -13.75d
+			y: 8.5d
+			shape: "square"
+			dependencies: ["24993B650ABE820B"]
+			size: 1.5d
+			id: "199E258B212D744F"
+			tasks: [{
+				id: "66F4E9888BA5A4DA"
+				type: "item"
+				item: "ad_astra:venus_globe"
+			}]
+		}
+		{
+			x: -13.75d
+			y: 10.75d
+			shape: "square"
+			dependencies: ["24993B650ABE820B"]
+			size: 1.5d
+			id: "234D4BC93E0C9108"
+			tasks: [{
+				id: "65742DC0ABF09BB6"
+				type: "item"
+				item: "ad_astra:mercury_globe"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 9.5d
+			shape: "square"
+			dependencies: [
+				"234D4BC93E0C9108"
+				"199E258B212D744F"
+			]
+			id: "488543DD1EEAF483"
+			tasks: [{
+				id: "2CEA60D72656BF33"
+				type: "item"
+				item: "ad_astra:raw_calorite"
+			}]
+		}
+		{
+			title: "The Jet Suit"
+			x: -11.5d
+			y: 7.5d
+			dependencies: ["488543DD1EEAF483"]
+			id: "227FD6EF200D097F"
+			tasks: [
+				{
+					id: "09FFE23A4E707E00"
+					type: "item"
+					item: {
+						id: "ad_astra:jet_suit_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "75000648CAC2C18A"
+					type: "item"
+					item: {
+						id: "ad_astra:jet_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "213B5E55A9A4D329"
+					type: "item"
+					item: {
+						id: "ad_astra:jet_suit_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "776D8B9D72C35C4A"
+					type: "item"
+					item: {
+						id: "ad_astra:jet_suit_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0C6865537D4FCBF5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -9.0d
+			y: 9.5d
+			shape: "square"
+			dependencies: ["488543DD1EEAF483"]
+			id: "15342C97054EE216"
+			tasks: [{
+				id: "552F4F1242708E2F"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_4_rocket"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Glacio"
+			x: -9.0d
+			y: 6.5d
+			shape: "square"
+			subtitle: "Interstellar"
+			dependencies: ["15342C97054EE216"]
+			size: 2.0d
+			id: "52A5935A0A4740C3"
+			tasks: [{
+				id: "1A49C64C22097EE8"
+				type: "item"
+				item: "ad_astra:glacio_globe"
+			}]
+		}
+		{
+			x: -17.5d
+			y: 8.0d
+			shape: "rsquare"
+			subtitle: "Fireproof!"
+			description: [
+				"Ostrum's cold properties make for a great insulator for your gear! Finally you can upgrade your backpack!"
+				""
+				"The Blazing Backpack comes with the additional benefit of not burning in lava!"
+				""
+				"It can also store 54 item stacks."
+			]
+			dependencies: [
+				"1B19E2916336F297"
+				"7633B2FDE567585E"
+			]
+			id: "328DBF4E8E11FED7"
+			tasks: [{
+				id: "06CBD05F7D96A353"
+				type: "item"
+				item: "inmis:blazing_backpack"
+			}]
+			rewards: [{
+				id: "6F802283135092A3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "High Pressure Large Steam Boiler"
+			icon: "modern_industrialization:high_pressure_large_steam_boiler"
+			x: 13.0d
+			y: -2.0d
+			shape: "square"
+			description: [
+				"The High Pressure Steam Boiler can produce up to 2048 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
+				""
+				"Maximum efficiency is only reached under continuous operation. Only accepts High Pressure Water and High Pressure Heavy Water."
+				""
+				"It's not worth starting up the Boiler right now unless you have a significant enough Large Tank to take the High Pressure Steam or have set up the next multiblock, the Large Steam Turbine."
+				""
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the High Pressure Large Steam Boiler block in your inventory or by holding your wrench out with the High Pressure Large Steam Boiler placed."
+			]
+			dependencies: ["2D1CE7720270D118"]
+			id: "26EF4E75B844E3BD"
+			tasks: [
+				{
+					id: "7481639224BAE077"
+					type: "item"
+					item: "modern_industrialization:high_pressure_large_steam_boiler"
+				}
+				{
+					id: "5F12A1FBC34CA63F"
+					type: "item"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					count: 24L
+				}
+				{
+					id: "44C90CA82AB1D425"
+					type: "item"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					count: 2L
+				}
+				{
+					id: "0F25C8B09F1B1E67"
+					type: "item"
+					item: "modern_industrialization:heatproof_machine_casing"
+					count: 6L
+				}
+				{
+					id: "1EB752A1003F2F61"
+					type: "item"
+					title: "Any 2x Fluid Input Hatches"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "4A17AA3A1FA59110"
+					type: "item"
+					title: "Any Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "61508B460F3145EF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 15.0d
+			y: -2.0d
+			shape: "square"
+			dependencies: ["26EF4E75B844E3BD"]
+			id: "1C6856D2C944D9F2"
+			tasks: [{
+				id: "4FBBFE944FDE8A3C"
+				type: "item"
+				item: "modern_industrialization:heat_exchanger"
+			}]
+		}
+		{
+			x: 5.25d
+			y: 2.5d
+			shape: "square"
+			description: [
+				"Tungsten is an incredibly tough material that you will be needing moving forward. Due to its special characteristics, it can't be smelted in normal means and will need to be processed through an Implosion Chamber in order to get a decent amount."
+				""
+				"To get Tungsten Dust, you will first need to Macerate Tungsten Ore, which you get from the Electric Quarry or solid UU-Matter, and then Macerate the Raw Tungsten into dust."
+			]
+			dependencies: ["529FBE21C8B21DC1"]
+			size: 1.5d
+			id: "1724FEEB2622FB70"
+			tasks: [{
+				id: "4841AFE6662F7479"
+				type: "item"
+				item: "modern_industrialization:tungsten_dust"
+			}]
+			rewards: [{
+				id: "3B47AFA1563BB9E2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 17.0d
+			y: 5.0d
+			shape: "square"
+			subtitle: "Welcome to EV"
+			description: [
+				"Welcome to the late game, time to make the EV-tiered machine hulls."
+				""
+				"This marks the end of the chapter. You're ready to head into the Lategame!"
+			]
+			dependencies: ["4FDC0B405C330E4F"]
+			size: 2.0d
+			id: "229C752D3B9B8D48"
+			tasks: [{
+				id: "51BF79871438565C"
+				type: "item"
+				item: "modern_industrialization:highly_advanced_machine_hull"
+			}]
+			rewards: [{
+				id: "125A850D766A7E53"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Titanium Drill"
+			x: 20.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["With the Titanium Drill you can obtain infinite Uranium and Iridium. This is not the only way to get these materials at this point, as you can make solid UU-Matter to craft the raw ores."]
+			dependencies: ["78EE20BD0B4E84DE"]
+			id: "66B1A1FFF15E53B0"
+			tasks: [{
+				id: "11FF72C4C16990F7"
+				type: "item"
+				item: "modern_industrialization:titanium_drill"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "6FF61ABB69AD75DB"
+					type: "item"
+					item: "modern_industrialization:titanium_drill"
+					count: 4
+				}
+				{
+					id: "624EBB9D0EF11E72"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Large Advanced Components"
+			x: 19.5d
+			y: 1.75d
+			shape: "square"
+			description: ["With your new Processing Units you can now craft the large versions of the advanced components."]
+			dependencies: ["4FDC0B405C330E4F"]
+			id: "78EE20BD0B4E84DE"
+			tasks: [
+				{
+					id: "1B85C742981B2BDA"
+					type: "item"
+					item: "modern_industrialization:large_advanced_motor"
+				}
+				{
+					id: "29913BFC4F7475B3"
+					type: "item"
+					item: "modern_industrialization:large_advanced_pump"
+				}
+			]
+			rewards: [{
+				id: "02AA476EE7E6D25E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 19.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["The Highly Advanced Upgrade is the second to last upgrade available for your machines. It offers a 4x EU overclock as compared to the previous tier."]
+			dependencies: ["78EE20BD0B4E84DE"]
+			id: "560374EE3ACBFFB5"
+			tasks: [{
+				id: "2CF54F579E95BFF5"
+				type: "item"
+				item: "modern_industrialization:highly_advanced_upgrade"
+			}]
+			rewards: [{
+				id: "5D239FD8C9ECA7F1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 21.5d
+			y: 1.75d
+			shape: "rsquare"
+			subtitle: "One man's trash..."
+			description: [
+				"The Matter Fabricator is an advanced machine that can create UU-Matter from scrap fed into it."
+				""
+				"UU-Matter can be used to craft different types of ores and items, as well converted into liquid UU-Matter in the future."
+			]
+			dependencies: ["78EE20BD0B4E84DE"]
+			id: "6288718990D88342"
+			tasks: [{
+				id: "5A9CD8D64D036513"
+				type: "item"
+				item: "techreborn:matter_fabricator"
+			}]
+			rewards: [{
+				id: "331F941508D68501"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 21.5d
+			y: 3.75d
+			shape: "rsquare"
+			subtitle: "Nearly magic!"
+			description: ["UU-Matter can craft a variety of things, some of the most notable is Iridium, Platinum, and Chromium. There are other ways to get infinite amounts of those ores, but this offers another viable method in generating these resources."]
+			dependencies: ["6288718990D88342"]
+			size: 1.5d
+			id: "097A441985DCD241"
+			tasks: [{
+				id: "2A7EB1EC6AE6025D"
+				type: "item"
+				item: "techreborn:uu_matter"
+			}]
+			rewards: [{
+				id: "7DDC924010E278CA"
 				type: "xp"
 				xp: 100
 			}]

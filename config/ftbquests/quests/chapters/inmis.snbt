@@ -1,35 +1,12 @@
 {
 	id: "6471F4A220959084"
 	group: "05A88037F88880CD"
-	order_index: 5
+	order_index: 4
 	filename: "inmis"
 	title: "Inmis"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
-		{
-			x: 5.5d
-			y: 0.5d
-			shape: "rsquare"
-			subtitle: "Fireproof!"
-			description: [
-				"The Blazing Backpack comes with the additional benefit of not burning in lava! Great for keeping your valuables safe. "
-				""
-				"It can also store 54 item stacks."
-			]
-			dependencies: ["1B19E2916336F297"]
-			id: "328DBF4E8E11FED7"
-			tasks: [{
-				id: "06CBD05F7D96A353"
-				type: "item"
-				item: "inmis:blazing_backpack"
-			}]
-			rewards: [{
-				id: "6F802283135092A3"
-				type: "xp"
-				xp: 100
-			}]
-		}
 		{
 			x: 7.5d
 			y: 0.5d
