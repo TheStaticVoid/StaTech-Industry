@@ -3671,6 +3671,91 @@
 				xp: 100
 			}]
 		}
+		{
+			x: 30.0d
+			y: 6.0d
+			shape: "square"
+			description: ["Combining Argon and Helium in a Vacuum Freezer will give you Cryofluid, an important fluid in quantum crafting."]
+			dependencies: ["0CF36C4D19B0CE1A"]
+			id: "5D79372CA3921A4D"
+			tasks: [{
+				id: "044CD9E92387E138"
+				type: "item"
+				item: "modern_industrialization:cryofluid_bucket"
+			}]
+			rewards: [{
+				id: "5D9CCD7DC0591702"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "LV Cables"
+			x: 8.0d
+			y: 2.0d
+			shape: "square"
+			description: [
+				"Now that you have power, how do you transfer it? Cables of course! "
+				""
+				"The cables of the LV tier are:"
+				"- Copper"
+				"- Tin"
+				"- Silver"
+				""
+				"These cables can transfer up to 256 EU/t and have an internal buffer of 256 EU. The three cables are pretty much the same, just made out of different materials, no EU loss per block here!"
+			]
+			dependencies: ["6765B4B8D870CDA0"]
+			id: "6057F77940F5356C"
+			tasks: [{
+				id: "04DB6C95B52E09A4"
+				type: "item"
+				title: "Any LV Cable"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:lv_wire"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5B457590986F35BC"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "MV Cables"
+			x: 10.5d
+			y: 12.0d
+			shape: "square"
+			description: [
+				"The Cables of MV are:"
+				"- Cupronickel"
+				"- Electrum"
+				""
+				"These cables can transfer up to 1024 EU/t and have an internal buffer of 1024 EU."
+			]
+			dependencies: ["6C3EAE1F16E1048A"]
+			id: "6E7B9D7C331203C4"
+			tasks: [{
+				id: "7C76F557D40DBDB9"
+				type: "item"
+				title: "Any MV Cable"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:mv_wire"
+					}
+				}
+			}]
+			rewards: [{
+				id: "25D661E4B4A5FA9F"
+				type: "xp"
+				xp: 100
+			}]
+		}
 	]
 	quest_links: [ ]
 }

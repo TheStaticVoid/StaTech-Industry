@@ -2,6 +2,7 @@ let ALLOY_SMELTER;
 let PYROLYSE_OVEN;
 let ROCKET_PART_ASSEMBLER;
 let MEGA_SMELTER;
+let SPACE_PROBE_LAUNCHER;
 
 MIMachineEvents.registerRecipeTypes(e => {
     ALLOY_SMELTER = e.register('alloy_smelter')
@@ -19,18 +20,13 @@ MIMachineEvents.registerRecipeTypes(e => {
     MEGA_SMELTER = e.register('mega_smelter')
         .withItemInputs()
         .withItemOutputs();
+    SPACE_PROBE_LAUNCHER = e.register('space_probe_launcher')
+        .withItemInputs()
+        .withItemOutputs();
 });
 
-MIRegistrationEvents.registerFluids(e => {
-    // -- LITHIUM -- //
-    e.register(
-        "Lithium",      // English name
-        "lithium",      // internal name
-        0xb2b2b2,       // Hex color code
-        "water",        // Texture type
-        true,           // is a gas?
-        "medium"        // opacity
-    );
+MIMachineEvents.registerCasings(e => {
+    e.register('calorite_machine_casing');
 });
 
 MIMachineEvents.registerMachines(e => {
@@ -136,7 +132,7 @@ MIMachineEvents.registerMachines(e => {
         false, // side overlay
     );
 
-    // -- MEGA SMELTER -- //
+    // -- MEGA SMELTER MULTIBLOCK -- //
     const smelterHatch = e.hatchOf("item_input", "item_output", "energy_input");
     // reuse cupronickel definition from earlier
     const smelterShapeBuilder = e.startShape("heatproof_machine_casing");
@@ -145,9 +141,9 @@ MIMachineEvents.registerMachines(e => {
         for (let x = -1; x <=1; x++) {
             for (let z = 0; z <= 2; z++) {
                 if (y == 0 || y == 2) {
-                    // dont fill the center block
                     smelterShapeBuilder.add(x, y, z, heatproofMember, smelterHatch);
                 } else {
+                    // dont fill the center block
                     if (z == 1 && x == 0) continue;
                     else {
                         smelterShapeBuilder.add(x, y, z, cupronickelCoilMember, e.noHatch());
@@ -178,6 +174,106 @@ MIMachineEvents.registerMachines(e => {
         false, // top overlay
         false, // side overlay
     );
+
+    // -- SPACE PROBE LAUNCHER MULTIBLOCK -- //
+    const launcherHatch = e.hatchOf('item_input', 'item_output', 'energy_input');
+    const caloriteMachineCasing = e.memberOfBlock('modern_industrialization:calorite_machine_casing');
+    const caloritePipeCasing = e.memberOfBlock('modern_industrialization:calorite_machine_casing_pipe');
+    const tungstensteelCoilMember = e.memberOfBlock('modern_industrialization:tungstensteel_coil');
+    const spaceProbeLauncherBuilder = e.startShape('calorite_machine_casing');
+
+    spaceProbeLauncherBuilder.add(0, -1, 0, caloriteMachineCasing, launcherHatch);
+    spaceProbeLauncherBuilder.add(-1, -1, 1, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, -1, 1, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(1, -1, 1, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(-2, -1, 2, caloriteMachineCasing, launcherHatch);
+    spaceProbeLauncherBuilder.add(-1, -1, 2, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, -1, 2, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(1, -1, 2, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(2, -1, 2, caloriteMachineCasing, launcherHatch);
+    spaceProbeLauncherBuilder.add(-1, -1, 3, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, -1, 3, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(1, -1, 3, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, -1, 4, caloriteMachineCasing, launcherHatch);
+
+    spaceProbeLauncherBuilder.add(0, 0, 0,  caloriteMachineCasing, launcherHatch);
+    spaceProbeLauncherBuilder.add(-1, 0, 1, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, 0, 1, caloritePipeCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(1, 0, 1, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(-2, 0, 2, caloriteMachineCasing, launcherHatch);
+    spaceProbeLauncherBuilder.add(-1, 0, 2, caloritePipeCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, 0, 2, caloritePipeCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(1, 0, 2, caloritePipeCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(2, 0, 2, caloriteMachineCasing, launcherHatch);
+    spaceProbeLauncherBuilder.add(-1, 0, 3, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, 0, 3, caloritePipeCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(1, 0, 3, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, 0, 4, caloriteMachineCasing, launcherHatch);
+
+    spaceProbeLauncherBuilder.add(0, 1, 0,  caloriteMachineCasing, launcherHatch);
+    spaceProbeLauncherBuilder.add(-1, 1, 1, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, 1, 1, caloritePipeCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(1, 1, 1, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(-2, 1, 2, caloriteMachineCasing, launcherHatch);
+    spaceProbeLauncherBuilder.add(-1, 1, 2, caloritePipeCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, 1, 2, caloritePipeCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(1, 1, 2, caloritePipeCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(2, 1, 2, caloriteMachineCasing, launcherHatch);
+    spaceProbeLauncherBuilder.add(-1, 1, 3, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, 1, 3, caloritePipeCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(1, 1, 3, caloriteMachineCasing, e.noHatch());
+    spaceProbeLauncherBuilder.add(0, 1, 4, caloriteMachineCasing, launcherHatch);
+
+    for (let y = 2; y <= 6; y++) {
+        for (let x = -1; x <= 1; x++) {
+            for (let z = 1; z <= 3; z++) {
+                if (x == 0 && z == 2) continue;
+                else {
+                    if ((z == 1 || z == 3) && (x == 0)) {
+                        spaceProbeLauncherBuilder.add(x, y, z, tungstensteelCoilMember, e.noHatch());
+                    }
+
+                    if (z == 2 && (x == -1 || x == 1)) {
+                        spaceProbeLauncherBuilder.add(x, y, z, tungstensteelCoilMember, e.noHatch());
+                    }
+                }
+            }
+        }
+    }
+    const spaceProbeLauncher = spaceProbeLauncherBuilder.build();
+
+    e.simpleElectricCraftingMultiBlock(
+        // General parameters
+        'Space Probe Launcher', // English name
+        'space_probe_launcher', // internal name
+        SPACE_PROBE_LAUNCHER, // recipe type
+        spaceProbeLauncher, // multiblock shape
+
+        // REI Display configuration
+        e.progressBar(77, 33, 'arrow'),
+        // REI Item inputs, item outputs, fluid inputs, fluid outputs
+        itemInputs => itemInputs.addSlot(56, 35), itemOutputs => itemOutputs.addSlots(102, 35, 4, 4),
+        fluidInpouts => {}, fluidOutputs => {},
+
+        /* Model Configuration */ 
+        'calorite_machine_casing', // casing of the controller
+        'space_probe_launcher', // overlay folder
+        true, // front overlay
+        false, // top overlay
+        false, // side overlay
+    );
+});
+
+MIRegistrationEvents.registerFluids(e => {
+    // -- LITHIUM -- //
+    e.register(
+        "Lithium",      // English name
+        "lithium",      // internal name
+        0xb2b2b2,       // Hex color code
+        "water",        // Texture type
+        true,           // is a gas?
+        "medium"        // opacity
+    );
 });
 
 MIMaterialEvents.addMaterials(e => {
@@ -186,6 +282,22 @@ MIMaterialEvents.addMaterials(e => {
             builder.addParts('dust', 'tiny_dust', 'rod', 'gear', 'ring', 'blade', 'bolt', 'large_plate', 'curved_plate')
             .machineCasing(8.0)
             .pipeCasing(8.0)
+            .defaultRecipes()
+            .forgeHammerRecipes()
+        });
+    
+    e.createMaterial('Tungstensteel', 'tungstensteel', 0x677680,
+        builder => {
+            builder.addParts('rod', 'gear', 'ring', 'coil', 'blade', 'bolt', 'large_plate', 'curved_plate')
+            .defaultRecipes()
+            .forgeHammerRecipes()
+        });
+    
+    e.createMaterial('Calorite', 'calorite', 0xb63044,
+        builder => {
+            builder.addParts('rod', 'gear', 'ring', 'blade', 'bolt', 'large_plate', 'curved_plate')
+            .machineCasing(12.0)
+            .pipeCasing(12.0)
             .defaultRecipes()
             .forgeHammerRecipes()
         });
