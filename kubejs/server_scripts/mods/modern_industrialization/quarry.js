@@ -1,16 +1,17 @@
 ServerEvents.recipes(e => {
-    const REMOVED_RECIPES = [
-        'modern_industrialization:quarry/bronze',
-        'modern_industrialization:quarry/gold',
-        'modern_industrialization:quarry/stainless_steel'
-    ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
-
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let byg = (id) => `byg:${id}`;
     let crate = (id) => `create:${id}`; // mispelled on purpose ;)
+
+    const REMOVED_RECIPES = [
+        mi('quarry/bronze'),
+        mi('quarry/gold'),
+        mi('quarry/steel'),
+        mi('quarry/stainless_steel')
+    ];
+    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
     let quarry = (eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
@@ -70,6 +71,27 @@ ServerEvents.recipes(e => {
             { amount: 1, item: tr('cinnabar_ore'), probability: 0.1 },
             { amount: 1, item: tr('pyrite_ore'), probability: 0.15 },
             { amount: 1, item: tr('sphalerite_ore'), probability: 0.15}
+        ]
+    );
+
+    // -- STEEL -- //
+    quarry(
+        12,
+        600,
+        [
+            { amount: 1, item: mi('steel_drill'), probability: 0.04 }
+        ],
+        [
+            { amount: 1, item: mi('antimony_ore'), probability: 0.2 },
+            { amount: 1, item: mc('diamond_ore'), probability: 0.12 },
+            { amount: 1, item: mc('lapis_ore'), probability: 0.1 },
+            { amount: 1, item: mi('lead_ore'), probability: 0.25 },
+            { amount: 1, item: mi('nickel_ore'), probability: 0.18 },
+            { amount: 1, item: mi('bauxite_ore'), probability: 0.4 },
+            { amount: 1, item: mi('salt_ore'), probability: 0.12 },
+            { amount: 1, item: mc('emerald_ore'), probability: 0.1 },
+            { amount: 1, item: mi('quartz_ore'), probability: 0.2 },
+            { amount: 1, item: tr('ruby_ore'), probability: 0.15 }
         ]
     );
 

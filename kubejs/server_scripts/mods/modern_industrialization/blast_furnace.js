@@ -7,6 +7,7 @@ ServerEvents.recipes(e => {
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
     let mi = (id) => `modern_industrialization:${id}`;
+    let tr = (id) => `techreborn:${id}`;
 
     let blastFurnace = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
@@ -35,7 +36,8 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('uncooked_steel_dust') }
         ],
         [ 
-            { amount: 1, item: mi('steel_ingot') }
+            { amount: 1, item: mi('steel_ingot') },
+            { amount: 1, item: tr('dark_ashes_dust') }
         ],
         null,
         null
@@ -47,10 +49,11 @@ ServerEvents.recipes(e => {
         40,
         [
             { amount: 1, tag: 'c:refined_iron_ingots' },
-            { amount: 1, tag: 'c:carbon_dusts' }
+            { amount: 4, tag: 'c:carbon_dusts' }
         ],
         [
-            { amount: 1, item: mi('steel_ingot') }
+            { amount: 1, item: mi('steel_ingot') },
+            { amount: 2, item: tr('dark_ashes_dust') }
         ],
         null,
         null
@@ -78,7 +81,24 @@ ServerEvents.recipes(e => {
             { amount: 1, tag: 'c:iron_ingots' },
         ],
         [
-            { amount: 1, item: 'anim_guns:hardened_iron_ingot' }
+            { amount: 1, item: 'anim_guns:hardened_iron_ingot' },
+            { amount: 1, item: tr('dark_ashes_dust') }
+        ],
+        null,
+        null
+    );
+
+    // -- TUNGSTEN + STEEL -> HOT TUNGSTENSTEEL -- //
+    blastFurnace(
+        128,
+        4800,
+        [
+            { amount: 1, tag: 'c:tungsten_ingots' },
+            { amount: 1, tag: 'c:steel_ingots' }
+        ],
+        [
+            { amount: 1, item: tr('hot_tungstensteel_ingot') },
+            { amount: 2, item: tr('dark_ashes_dust') }
         ],
         null,
         null

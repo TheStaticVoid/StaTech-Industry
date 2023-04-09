@@ -101,5 +101,29 @@ ServerEvents.recipes(e => {
         ],
         null,
         null
-    )
-})
+    );
+
+    // -- CENTRIFUGE DARK ASHES -- //
+    centrifuge(
+        8,
+        1200,
+        [
+            { amount: 2, item: tr('dark_ashes_dust') }
+        ],
+        [
+            { amount: 1, item: tr('ashes_dust') }
+        ]
+    );
+
+    // -- CENTRIFUGE ASHES -- //
+    centrifuge(
+        12,
+        320,
+        [
+            { amount: 3, item: tr('ashes_dust') }
+        ],
+        [
+            { amount: 2, item: mi('carbon_dust') }
+        ]
+    );
+});
