@@ -2745,7 +2745,7 @@
 		{
 			x: -9.0d
 			y: 9.5d
-			shape: "square"
+			shape: "rsquare"
 			dependencies: ["488543DD1EEAF483"]
 			id: "15342C97054EE216"
 			tasks: [{
@@ -2764,8 +2764,9 @@
 			title: "Glacio"
 			x: -9.0d
 			y: 6.5d
-			shape: "square"
+			shape: "rsquare"
 			subtitle: "Interstellar"
+			description: ["While not required to beat the pack, why not be the first of the human race to make it to an interstellar body? "]
 			dependencies: ["15342C97054EE216"]
 			size: 2.0d
 			id: "52A5935A0A4740C3"
@@ -2773,6 +2774,11 @@
 				id: "1A49C64C22097EE8"
 				type: "item"
 				item: "ad_astra:glacio_globe"
+			}]
+			rewards: [{
+				id: "56C23990A63CBD98"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -3046,6 +3052,56 @@
 			}]
 			rewards: [{
 				id: "7DDC924010E278CA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.0d
+			y: 3.5d
+			shape: "square"
+			description: ["Industrial TNT is required for recipes in the Implosion Compressor. Regular TNT would add too much impurity into the reaction, and therefore cannot be used."]
+			dependencies: ["0DF6FF0A1E872DC8"]
+			id: "53F8A79D2BE1F5C0"
+			tasks: [{
+				id: "2ECBD44F098570A0"
+				type: "item"
+				item: "modern_industrialization:industrial_tnt"
+			}]
+			rewards: [{
+				id: "5BDF75C3247258DB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "HV Cables"
+			x: 2.5d
+			y: 1.0d
+			shape: "square"
+			description: [
+				"The cables of HV are:"
+				"- Aluminum"
+				"- Kanthal"
+				""
+				"These cables can transfer up to 8192 EU/t and have an internal buffer of 8192 EU."
+			]
+			dependencies: ["3F4A396DD273A543"]
+			id: "7FD9582038C29150"
+			tasks: [{
+				id: "71A8D60E51326666"
+				type: "item"
+				title: "Any HV Cable"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:hv_wire"
+					}
+				}
+			}]
+			rewards: [{
+				id: "7700374B6D439D9A"
 				type: "xp"
 				xp: 100
 			}]

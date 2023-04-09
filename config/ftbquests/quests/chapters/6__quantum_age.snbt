@@ -1,0 +1,330 @@
+{
+	id: "0E3388F02406CCAF"
+	group: "592A9A0E9A131D28"
+	order_index: 5
+	filename: "6__quantum_age"
+	title: "6 - Quantum Age"
+	icon: "modern_industrialization:quantum_circuit"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: 5.25d
+			description: ["The Plasma Turbine can turn Helium Plasma into EU, at the rate of 100kEU per mB. Its maximum production rate is rougly 1M EU/t."]
+			dependencies: ["6CD8A3092DDAC055"]
+			size: 1.5d
+			id: "18765B0B6FE4E653"
+			tasks: [{
+				id: "0C519A64F3D02DAF"
+				type: "item"
+				item: "modern_industrialization:plasma_turbine"
+			}]
+			rewards: [{
+				id: "504F13EA5D2C61B5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "The Fusion Reactor"
+			icon: "modern_industrialization:fusion_reactor"
+			x: -1.0d
+			y: 3.0d
+			subtitle: "The power of a star in the palm of your hand"
+			description: ["The Fusion Reactor is the ultimate energy source! It can combine Deuterium, Tritium, and/or Helium-3 into Helium Plasma, the most powerful fuel in the game! However, it requires a large amount of energy to ignite the reaction."]
+			dependencies: ["286BD460010AA281"]
+			size: 1.5d
+			id: "6CD8A3092DDAC055"
+			tasks: [
+				{
+					id: "3E34FF524BAF3AD0"
+					type: "item"
+					item: "modern_industrialization:fusion_reactor"
+				}
+				{
+					id: "7BD9A95E03081C2E"
+					type: "item"
+					item: "modern_industrialization:highly_advanced_machine_hull"
+					count: 198L
+				}
+				{
+					id: "5AB77EE9B0BBFAE7"
+					type: "item"
+					item: "modern_industrialization:fusion_chamber"
+					count: 40L
+				}
+				{
+					id: "2EE89DD03842BD06"
+					type: "item"
+					title: "Any 2x Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "747A45BE0603F600"
+					type: "item"
+					title: "Any 2x Fluid Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "227C74C617BC0803"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "5EB050DDFA494A15"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			description: ["The Quantum Machine Hull is the final tier of Machine Hull in MI. It allows you to upgrade your machines to the Quantum tier. It's also used in several lategame recipes."]
+			dependencies: ["23D9328B5F627E65"]
+			id: "286BD460010AA281"
+			tasks: [{
+				id: "323F561B1E2A8A07"
+				type: "item"
+				item: "modern_industrialization:quantum_machine_hull"
+			}]
+			rewards: [{
+				id: "4A8C8BF3274E15E0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			description: [
+				"The Quantum Tank is the highest tier Tank offered by MI. It can store an absolutely absurd 2.14 billion buckets of fluid."
+				""
+				"Filling it would be an achievement."
+			]
+			dependencies: ["286BD460010AA281"]
+			id: "7F499A3A91F4AC6D"
+			tasks: [{
+				id: "1C2DEE6D23BE5CA1"
+				type: "item"
+				item: "modern_industrialization:quantum_tank"
+			}]
+			rewards: [{
+				id: "5A17ACCAAAE75CDA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.5d
+			description: ["The Quantum Barrel is the biggest Barrel available in MI. It can store 2.14 billion stacks of a single item. "]
+			dependencies: ["286BD460010AA281"]
+			id: "7D17913DECB347F1"
+			tasks: [{
+				id: "1DE9A31A935B6B9C"
+				type: "item"
+				item: "modern_industrialization:quantum_barrel"
+			}]
+			rewards: [{
+				id: "5D971A6BD440481B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			subtitle: "Legal Duping"
+			description: [
+				"With 100 mB of liquid UU Matter, the replicator can duplicate (almost) any item in the game."
+				""
+				"While this might seem like the end, it is not. Duping will now allow you to work towards the final chapter: The Endgame"
+			]
+			dependencies: [
+				"286BD460010AA281"
+				"3E139335E6F04C69"
+			]
+			size: 2.0d
+			id: "4FD7572FC6CC4140"
+			tasks: [{
+				id: "3993E47E456846A3"
+				type: "item"
+				item: "modern_industrialization:replicator"
+			}]
+			rewards: [{
+				id: "072EEA3A4446D2C3"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			description: ["A single Superconductor Storage Unit can hold an absolute insane 768 billion EU."]
+			dependencies: ["286BD460010AA281"]
+			id: "0448EA623C79DA7B"
+			tasks: [{
+				id: "4445EC251C8C0248"
+				type: "item"
+				item: "modern_industrialization:superconductor_storage_unit"
+			}]
+			rewards: [{
+				id: "481274D455455541"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			dependencies: ["286BD460010AA281"]
+			id: "18A5221397607F68"
+			tasks: [{
+				id: "003B87D6A0BE31DA"
+				type: "item"
+				item: "techreborn:quantum_solar_panel"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			description: ["The Quantum Upgrade is the highest tier upgrade available in MI. It allows for a 1 Billion EU overclock on any machine it is in. Whether or not you can produce that much power is a better question..."]
+			dependencies: [
+				"23D9328B5F627E65"
+				"10943911EAB7196F"
+			]
+			id: "3E139335E6F04C69"
+			tasks: [{
+				id: "6DF16E37BD8E4BD3"
+				type: "item"
+				item: "modern_industrialization:quantum_upgrade"
+			}]
+			rewards: [{
+				id: "7EFB56A781DE5021"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.5d
+			subtitle: "Pocket-size blackhole "
+			description: ["By blasting an Ultradense Metal Ball with more energy than several times our entire sun we can create a single Singularity."]
+			dependencies: ["50D18ACF6401C05D"]
+			id: "10943911EAB7196F"
+			tasks: [{
+				id: "10057B6A9C68E33C"
+				type: "item"
+				item: "modern_industrialization:singularity"
+			}]
+			rewards: [{
+				id: "209CDEB9D0BD767B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			subtitle: "A sword to end all swords"
+			description: [
+				"The Quantum Sword is the most powerful sword in the entire game. It will instantly kill anything you hit with it (this includes your friends)."
+				""
+				"Still not as cool as the Sword of the Cosmos..."
+			]
+			dependencies: ["3E139335E6F04C69"]
+			id: "152140F96FA2944E"
+			tasks: [{
+				id: "2984BF4A049BC986"
+				type: "item"
+				item: "modern_industrialization:quantum_sword"
+			}]
+			rewards: [{
+				id: "56D227DC7E036F65"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Quantum Suit"
+			x: 5.5d
+			y: -1.5d
+			subtitle: "Basically creative mode"
+			description: [
+				"The Quantum Suit is a Jet Suit ( and Gravichestplate ) empowered with Quantum Upgrades to make it the most powerful armor in the game. You don't take damage while wearing this suit and you have creative-flight similar to the Gravi Chestplate."
+				""
+				"Each piece individually adds a 25% chance to not take damage, with full protection when wearing the entire set."
+			]
+			dependencies: ["3E139335E6F04C69"]
+			id: "1E378F2F641048F1"
+			tasks: [
+				{
+					id: "644C2DCB1D55C7E8"
+					type: "item"
+					item: "modern_industrialization:quantum_helmet"
+				}
+				{
+					id: "55E6C1C7A57FE87F"
+					type: "item"
+					item: "modern_industrialization:quantum_chestplate"
+				}
+				{
+					id: "45C3F6978CECD834"
+					type: "item"
+					item: "modern_industrialization:quantum_leggings"
+				}
+				{
+					id: "0CE944469E1D99E4"
+					type: "item"
+					item: "modern_industrialization:quantum_boots"
+				}
+			]
+			rewards: [{
+				id: "024CF9B78F0404FD"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			description: ["With a suitable Electrolyzer setup and a Singularity, large amounts of energy can be turned through Quantum Hawking Radiation, into a liquid form of UU Matter."]
+			dependencies: ["10943911EAB7196F"]
+			id: "5E0967F2B54D6B34"
+			tasks: [{
+				id: "633737ED60FC7421"
+				type: "item"
+				item: "modern_industrialization:uu_matter_bucket"
+			}]
+			rewards: [{
+				id: "5930C5079074735F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
+	quest_links: [ ]
+}
