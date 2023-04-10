@@ -90,5 +90,21 @@ ServerEvents.recipes(e => {
         ],
         null,
         null
-    )
+    );
+
+    // -- GALENA DUST -- //
+    electrolyzer(
+        16,
+        1200,
+        [
+            { amount: 2, tag: 'c:galena_dusts' }
+        ],
+        [
+            { amount: 6, item: mi('silver_nugget') },
+            { amount: 6, item: mi('lead_nugget') },
+            { amount: 1, item: tr('sulfur_dust') }
+        ],
+        null,
+        null
+    );
 });

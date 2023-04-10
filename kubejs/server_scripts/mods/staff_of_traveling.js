@@ -13,4 +13,14 @@ ServerEvents.recipes(e => {
     });
 
     e.remove( {id: 'travelstaff:travel_staff'} );
+    e.shaped('travelstaff:travel_staff', [
+        ' PE',
+        ' RP',
+        'R  '
+    ],
+    {
+        R: 'modern_industrialization:steel_rod',
+        E: 'minecraft:emerald',
+        P: 'minecraft:ender_pearl'
+    });
 });

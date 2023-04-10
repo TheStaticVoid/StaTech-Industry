@@ -274,6 +274,16 @@ MIRegistrationEvents.registerFluids(e => {
         true,           // is a gas?
         "medium"        // opacity
     );
+
+    // -- NEUTRONIUM -- //
+    e.register(
+        "Neutronium",
+        "neutronium",
+        0x1a1a1a,
+        "lava",
+        true,
+        "full"
+    );
 });
 
 MIMaterialEvents.addMaterials(e => {
@@ -289,6 +299,8 @@ MIMaterialEvents.addMaterials(e => {
     e.createMaterial('Tungstensteel', 'tungstensteel', 0x677680,
         builder => {
             builder.addParts('rod', 'gear', 'ring', 'coil', 'blade', 'bolt', 'large_plate', 'curved_plate')
+            .barrel("Tungstensteel Barrel", "tungstensteel_barrel", 16384)
+            .tank("Tungstensteel Tank", "tungstensteel_tank", 256)
             .defaultRecipes()
             .forgeHammerRecipes()
         });

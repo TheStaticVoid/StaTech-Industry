@@ -1,4 +1,26 @@
-To refresh this file, delete it and run /reload command again! Last updated: Feb 26, 2023, 4:53:48 AM
+To refresh this file, delete it and run /reload command again! Last updated: Apr 9, 2023, 3:01:11 PM
+
+#towns_and_towers:has_structure/pillager_outpost_taiga
+- minecraft:taiga (from Towns and Towers)
+- biomesoplenty:coniferous_forest? (from Towns and Towers)
+- biomesoplenty:crag? (from Towns and Towers)
+- biomesoplenty:fir_clearing? (from Towns and Towers)
+- byg:autumnal_taiga? (from Towns and Towers)
+- byg:black_forest? (from Towns and Towers)
+- byg:canadian_shield? (from Towns and Towers)
+- byg:coniferous_forest? (from Towns and Towers)
+- byg:dacite_ridges? (from Towns and Towers)
+- terralith:alpine_highlands? (from Towns and Towers)
+- terralith:lush_valley? (from Towns and Towers)
+- terralith:shield_clearing? (from Towns and Towers)
+- terralith:shield? (from Towns and Towers)
+- terralith:yosemite_lowlands? (from Towns and Towers)
+- wythers:forested_highlands? (from Towns and Towers)
+- wythers:larch_taiga? (from Towns and Towers)
+- wythers:pine_barrens? (from Towns and Towers)
+- traverse:coniferious_forest? (from Towns and Towers)
+- terrestria:snowy_hemlock_forest? (from Towns and Towers)
+- terrestria:hemlock_rainforest? (from Towns and Towers)
 
 #minecraft:has_structure/nether_fortress
 - #minecraft:is_nether (from Default)
@@ -26,6 +48,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #minecraft:is_taiga (from When Dungeons Arise)
 - #minecraft:is_hill (from When Dungeons Arise)
 - #minecraft:is_mountain (from When Dungeons Arise)
+
+#towns_and_towers:has_structure/pillager_outpost_meadow
+- minecraft:meadow (from Towns and Towers)
+- terralith:blooming_plateau? (from Towns and Towers)
+- biomesoplenty:clover_patch? (from Towns and Towers)
+- biomesoplenty:field? (from Towns and Towers)
+- wythers:highland_plains? (from Towns and Towers)
+- wythers:highlands? (from Towns and Towers)
+- tectonic:alpine_meadow? (from Towns and Towers)
 
 #minecraft:has_structure/jungle_temple
 - minecraft:bamboo_jungle (from Default)
@@ -63,6 +94,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #minecraft:is_badlands (from More Geodes)
 - #c:badlands (from More Geodes)
 
+#towns_and_towers:has_structure/pillager_outpost_sunflower_plains
+- minecraft:sunflower_plains (from Towns and Towers)
+- terralith:steppe? (from Towns and Towers)
+- biomesoplenty:pasture? (from Towns and Towers)
+- byg:prairie? (from Towns and Towers)
+- byg:autumnal_valley? (from Towns and Towers)
+- biomesoplenty:pumpkin_patch? (from Towns and Towers)
+
 #awesomedungeon:has_structure/the_usine_biomes
 - #minecraft:is_forest (from Awesome dungeon)
 
@@ -78,6 +117,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #ae2:has_meteorites
 - #c:in_overworld? (from Applied Energistics 2)
+
+#rottencreatures:frostbitten_blacklist
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_tudor
+- terralith:highlands? (from Towns and Towers)
+- biomesoplenty:highland? (from Towns and Towers)
+- biomesoplenty:highland_moor? (from Towns and Towers)
+- wythers:cold_plains? (from Towns and Towers)
+- wythers:temperate_island? (from Towns and Towers)
+- tectonic:cold_plains? (from Towns and Towers)
 
 #yungsextras:has_structure/vanilla_desert_well
 - minecraft:desert (from YUNG's Extras)
@@ -97,13 +146,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - projectvibrantjourneys:desert_shrubland? (from YUNG's Extras)
 - projectvibrantjourneys:verdant_sands? (from YUNG's Extras)
 
-#croptopia:has_crop/basil
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
+#structory_towers:beaches
+- minecraft:beach (from Structory: Towers)
+- terralith:gravel_beach? (from Structory: Towers)
 
 #minecraft:produces_corals_from_bonemeal
 - minecraft:warm_ocean (from Default)
@@ -116,31 +161,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #forge:is_savanna? (from Naturalist)
 - #c:desert? (from Naturalist)
 - #c:savanna? (from Naturalist)
-
-#croptopia:has_crop/strawberry
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:old_growth_pine_taiga (from Croptopia)
-- minecraft:old_growth_spruce_taiga (from Croptopia)
-- minecraft:taiga (from Croptopia)
-- minecraft:snowy_taiga (from Croptopia)
-- minecraft:grove (from Croptopia)
-- terralith:alpine_highlands? (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
 
 #forge:is_peak
 - terralith:emerald_peaks (from Terralith)
@@ -192,38 +212,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:jungle_mountains (from Terralith)
 - terralith:haze_mountain (from Terralith)
 
-#croptopia:has_crop/cantaloupe
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- byg:aspen_forest? (from Croptopia)
-- byg:borealis_grove? (from Croptopia)
-- byg:cherry_blossom_forest? (from Croptopia)
-- byg:cika_woods? (from Croptopia)
-- byg:ebony_woods? (from Croptopia)
-- byg:forgotten_forest? (from Croptopia)
-- byg:red_oak_forest? (from Croptopia)
-- byg:autumnal_forest? (from Croptopia)
-- byg:redwood_thicket? (from Croptopia)
-- byg:fragment_forest? (from Croptopia)
-- byg:twilight_meadow? (from Croptopia)
-- byg:weeping_witch_forest? (from Croptopia)
-- byg:temperate_rainforest? (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
-
 #naturalist:has_zebra
 - #minecraft:is_savanna (from Naturalist)
 - #forge:is_savanna? (from Naturalist)
 - #c:savanna? (from Naturalist)
+
+#structory_towers:birch_biomes
+- minecraft:birch_forest (from Structory: Towers)
+- minecraft:old_growth_birch_forest (from Structory: Towers)
+- terralith:birch_taiga? (from Structory: Towers)
 
 #c:forest
 - #byg:is_forest (from Oh The Biomes You'll Go)
@@ -245,20 +242,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #c:end_islands
 
-#croptopia:has_crop/tea_leaves
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
+#towns_and_towers:has_structure/pillager_outpost_deep_oceans
+- minecraft:deep_cold_ocean (from Towns and Towers)
+- minecraft:deep_ocean (from Towns and Towers)
+- minecraft:deep_lukewarm_ocean (from Towns and Towers)
 
 #c:is_plateau
 - minecraft:savanna_plateau (from Porting Lib Tags)
@@ -289,6 +276,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:volcanic_peaks? (from More Geodes)
 - terralith:windswept_spires? (from More Geodes)
 - #forge:is_mountain? (from More Geodes)
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_iberian
+- byg:rose_fields? (from Towns and Towers)
+- biomesoplenty:lush_savanna? (from Towns and Towers)
+- wythers:flowering_pantanal? (from Towns and Towers)
+- wythers:humid_tropical_grassland? (from Towns and Towers)
+- wythers:jacaranda_savanna? (from Towns and Towers)
+- wythers:lapacho_plains? (from Towns and Towers)
+- wythers:subtropical_forest? (from Towns and Towers)
+- wythers:subtropical_forest_edge? (from Towns and Towers)
+- wythers:subtropical_grassland? (from Towns and Towers)
+- wythers:tropical_grassland? (from Towns and Towers)
+- traverse:grasslands? (from Towns and Towers)
+- jermsy:shrubland? (from Towns and Towers)
 
 #c:in_overworld
 - #byg:is_overworld (from Oh The Biomes You'll Go)
@@ -367,6 +368,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - projectvibrantjourneys:prairie? (from YUNG's Better Mineshafts)
 - #c:plains? (from YUNG's Better Mineshafts)
 
+#towns_and_towers:has_structure/pillager_outpost_sparse_jungle
+- minecraft:sparse_jungle (from Towns and Towers)
+- terralith:tropical_jungle? (from Towns and Towers)
+- biomesoplenty:floodplain? (from Towns and Towers)
+- biomesoplenty:tropics? (from Towns and Towers)
+- byg:jacaranda_forest? (from Towns and Towers)
+- wythers:snady_jungle? (from Towns and Towers)
+- wythers:sparse_bamboo_jungle? (from Towns and Towers)
+- wythers:sparse_eucalyptus_jungle? (from Towns and Towers)
+- wythers:tropical_forest? (from Towns and Towers)
+- wythers:tropical_island? (from Towns and Towers)
+- traverse:flatlands? (from Towns and Towers)
+- terrestria:volcanic_island? (from Towns and Towers)
+- terrestria:volcanic_island? (from Towns and Towers)
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_classic
+- terralith:alpha_islands? (from Towns and Towers)
+- biomesoplenty:origin_valley? (from Towns and Towers)
+
 #dungeons_arise:has_structure/small_prairie_house_biomes
 - minecraft:plains (from When Dungeons Arise)
 - minecraft:meadow (from When Dungeons Arise)
@@ -383,6 +403,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - biomesoplenty:lush_desert? (from YUNG's Better Desert Temples)
 - projectvibrantjourneys:desert_shrubland? (from YUNG's Better Desert Temples)
 - projectvibrantjourneys:verdant_sands? (from YUNG's Better Desert Temples)
+
+#towns_and_towers:has_structure/pillager_outpost_savanna
+- minecraft:savanna (from Towns and Towers)
+- terralith:shrubland? (from Towns and Towers)
+- terralith:savanna_slopes? (from Towns and Towers)
+- biomesoplenty:wooded_scrubland? (from Towns and Towers)
+- byg:araucaria_savanna? (from Towns and Towers)
+- byg:baobab_savanna? (from Towns and Towers)
+- byg:firecracker_shrubland? (from Towns and Towers)
+- wythers:eucalyptus_salubris_woodland? (from Towns and Towers)
+- wythers:eucalyptus_woodland? (from Towns and Towers)
+- wythers:sparse_eucalyptus_woodland? (from Towns and Towers)
+- wythers:wooded_savanna? (from Towns and Towers)
 
 #forge:is_rare
 - terralith:alpha_islands (from Terralith)
@@ -506,13 +539,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:meadow (from Porting Lib Tags)
 - minecraft:sunflower_plains (from Porting Lib Tags)
 
-#croptopia:has_crop/artichoke
-- minecraft:swamp (from Croptopia)
-- byg:bayou? (from Croptopia)
-- byg:cypress_swamplands? (from Croptopia)
-- byg:white_mangrove_marshes? (from Croptopia)
-- terralith:mirage_isles? (from Croptopia)
-- terralith:orchid_swamp? (from Croptopia)
+#rottencreatures:glacial_hunter_whitelist
+- minecraft:ice_spikes (from Rotten Creatures)
+- #minecraft:has_structure/igloo? (from Rotten Creatures)
+
+#towns_and_towers:has_structure/exclusives/village_rustic
+- byg:autumnal_forest? (from Towns and Towers)
+- byg:autumnal_taiga? (from Towns and Towers)
+- biomesoplenty:boreal_forest? (from Towns and Towers)
+- biomesoplenty:seasonal_forest? (from Towns and Towers)
+- promenade:pumpkin_pastures? (from Towns and Towers)
+- wythers:autumnal_flower_forest? (from Towns and Towers)
+- wythers:autumnal_forest? (from Towns and Towers)
+- wythers:autumnal_forest_edge? (from Towns and Towers)
+- wythers:autumnal_plains? (from Towns and Towers)
+- wythers:harvest_fields? (from Towns and Towers)
+- tectonic:autumn_forest? (from Towns and Towers)
+- tectonic:autumn_birch_forest? (from Towns and Towers)
+- traverse:autumnal_woods? (from Towns and Towers)
+- jermsy:seasonal_forest? (from Towns and Towers)
 
 #byg:is_spooky
 - byg:weeping_witch_forest (from Oh The Biomes You'll Go)
@@ -522,16 +567,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - byg:cypress_swamplands (from Oh The Biomes You'll Go)
 - byg:white_mangrove_marshes (from Oh The Biomes You'll Go)
 
-#croptopia:has_crop/ginger
-- minecraft:savanna (from Croptopia)
-- minecraft:savanna_plateau (from Croptopia)
-- minecraft:windswept_savanna (from Croptopia)
-- terralith:arid_highlands? (from Croptopia)
-- terralith:brushland? (from Croptopia)
-- terralith:fractured_savanna? (from Croptopia)
-- terralith:savanna_badlands? (from Croptopia)
-- terralith:savanna_slopes? (from Croptopia)
-
 #byg:is_snowy
 - byg:cardinal_tundra (from Oh The Biomes You'll Go)
 - byg:frosted_coniferous_forest (from Oh The Biomes You'll Go)
@@ -540,25 +575,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #awesomedungeon:has_structure/abandoned_oak_palace_biomes
 - #minecraft:is_forest (from Awesome dungeon)
-
-#croptopia:has_crop/saguaro
-- minecraft:desert (from Croptopia)
-- byg:atacama_desert? (from Croptopia)
-- byg:windswept_dunes? (from Croptopia)
-- byg:windswept_desert? (from Croptopia)
-- byg:mojave_desert? (from Croptopia)
-- byg:red_rock_valley? (from Croptopia)
-- byg:firecracker_shrubland? (from Croptopia)
-- terralith:ancient_sands? (from Croptopia)
-- terralith:bryce_canyon? (from Croptopia)
-- terralith:desert_canyon? (from Croptopia)
-- terralith:desert_oasis? (from Croptopia)
-- terralith:desert_spires? (from Croptopia)
-- terralith:hot_shrubland? (from Croptopia)
-- terralith:painted_mountains? (from Croptopia)
-- terralith:red_oasis? (from Croptopia)
-- terralith:sandstone_valley? (from Croptopia)
-- terralith:warped_mesa? (from Croptopia)
 
 #naturalist:has_hippo
 - #minecraft:is_savanna (from Naturalist)
@@ -591,25 +607,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - incendium:weeping_valley? (from More Geodes)
 - incendium:withered_forest? (from More Geodes)
 
-#croptopia:has_crop/yam
-- minecraft:savanna (from Croptopia)
-- minecraft:savanna_plateau (from Croptopia)
-- minecraft:windswept_savanna (from Croptopia)
-- terralith:arid_highlands? (from Croptopia)
-- terralith:brushland? (from Croptopia)
-- terralith:cold_shrubland? (from Croptopia)
-- terralith:fractured_savanna? (from Croptopia)
-- terralith:rocky_mountains? (from Croptopia)
-- terralith:sakura_grove? (from Croptopia)
-- terralith:sakura_valley? (from Croptopia)
-- terralith:savanna_badlands? (from Croptopia)
-- terralith:savanna_slopes? (from Croptopia)
-- terralith:scarlet_mountains? (from Croptopia)
-- terralith:shield? (from Croptopia)
-- terralith:shrubland? (from Croptopia)
-- terralith:wintry_forest? (from Croptopia)
-- terralith:wintry_lowlands? (from Croptopia)
-
 #byg:is_magical
 - byg:forgotten_forest (from Oh The Biomes You'll Go)
 - byg:twilight_meadow (from Oh The Biomes You'll Go)
@@ -637,8 +634,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:white_cliffs (from Terralith)
 
 #minecraft:has_structure/village_desert
-- minecraft:desert (from Default)
-- #byg:has_structure/village_desert (from Oh The Biomes You'll Go)
+- minecraft:desert (from Towns and Towers)
+- biomesoplenty:lush_desert? (from Towns and Towers)
+- byg:mojave_desert? (from Towns and Towers)
+- byg:windswept_desert? (from Towns and Towers)
+- terralith:sandstone_valley? (from Towns and Towers)
+- terralith:desert_oasis? (from Towns and Towers)
+- wythers:deep_desert? (from Towns and Towers)
+- wythers:wooded_desert? (from Towns and Towers)
 - minecraft:desert (from Terralith)
 - terralith:sandstone_valley (from Terralith)
 - terralith:desert_oasis (from Terralith)
@@ -732,78 +735,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:windswept_savanna (from Porting Lib Tags)
 - minecraft:eroded_badlands (from Porting Lib Tags)
 
-#croptopia:has_crop/greenonion
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- terralith:amethyst_canyon? (from Croptopia)
-- terralith:amethyst_rainforest? (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
-
 #dungeons_arise:has_structure/fishing_hut_biomes
 - #minecraft:is_beach (from When Dungeons Arise)
-
-#croptopia:has_crop/blackberry
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:old_growth_pine_taiga (from Croptopia)
-- minecraft:old_growth_spruce_taiga (from Croptopia)
-- minecraft:taiga (from Croptopia)
-- minecraft:snowy_taiga (from Croptopia)
-- minecraft:grove (from Croptopia)
-- byg:aspen_forest? (from Croptopia)
-- byg:black_forest? (from Croptopia)
-- byg:borealis_grove? (from Croptopia)
-- byg:cherry_blossom_forest? (from Croptopia)
-- byg:cika_woods? (from Croptopia)
-- byg:coniferous_forest? (from Croptopia)
-- byg:ebony_woods? (from Croptopia)
-- byg:forgotten_forest? (from Croptopia)
-- byg:maple_taiga? (from Croptopia)
-- byg:red_oak_forest? (from Croptopia)
-- byg:autumnal_forest? (from Croptopia)
-- byg:autumnal_taiga? (from Croptopia)
-- byg:redwood_thicket? (from Croptopia)
-- byg:frosted_taiga? (from Croptopia)
-- byg:frosted_coniferous_forest? (from Croptopia)
-- byg:fragment_forest? (from Croptopia)
-- byg:twilight_meadow? (from Croptopia)
-- byg:weeping_witch_forest? (from Croptopia)
-- byg:temperate_rainforest? (from Croptopia)
-- byg:zelkova_forest? (from Croptopia)
-- terralith:alpine_grove? (from Croptopia)
-- terralith:alpine_highlands? (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:forested_highlands? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:lush_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:siberian_grove? (from Croptopia)
-- terralith:siberian_taiga? (from Croptopia)
-- terralith:snowy_maple_forest? (from Croptopia)
-- terralith:snowy_shield? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
-- terralith:yosemite_lowlands? (from Croptopia)
 
 #minecraft:polar_bears_spawn_on_alternate_blocks
 - minecraft:frozen_ocean (from Default)
 - minecraft:deep_frozen_ocean (from Default)
-
-#croptopia:has_crop/honeydew
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
 
 #naturalist:has_firefly
 - #minecraft:is_forest (from Naturalist)
@@ -819,15 +756,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #c:plains? (from Naturalist)
 - #c:swamp? (from Naturalist)
 - #c:mushroom? (from Naturalist)
-
-#croptopia:has_crop/soybean
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
 
 #betterstrongholds:has_structure/better_stronghold
 - #minecraft:is_mountain (from YUNG's Better Strongholds)
@@ -892,27 +820,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #waystones:is_mushroom
 - minecraft:mushroom_fields (from Waystones)
 
-#croptopia:has_crop/garlic
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- byg:crag_gardens? (from Croptopia)
-- byg:guiana_shield? (from Croptopia)
-- byg:jacaranda_forest? (from Croptopia)
-- byg:tropical_rainforest? (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
-
-#croptopia:has_crop/mustard
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
-
 #ad_astra:has_structure/venus_bullet_biomes
 - ad_astra:venus_wastelands (from Ad Astra)
 
@@ -931,6 +838,21 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #c:is_dry/nether (from Porting Lib Tags)
 - #c:is_dry/end (from Porting Lib Tags)
 
+#towns_and_towers:has_structure/village_snowy_taiga_viking
+- minecraft:snowy_taiga (from Towns and Towers)
+- terralith:forested_highlands? (from Towns and Towers)
+- terralith:shield? (from Towns and Towers)
+- terralith:shield_clearing? (from Towns and Towers)
+- terralith:snowy_maple_forest? (from Towns and Towers)
+- terralith:snowy_shield? (from Towns and Towers)
+- wythers:berry_bog? (from Towns and Towers)
+- wythers:crimson_tundra? (from Towns and Towers)
+- wythers:frigid_island? (from Towns and Towers)
+- wythers:frozen_island? (from Towns and Towers)
+- wythers:tundra? (from Towns and Towers)
+- minecraft:snowy_coniferious_forest? (from Towns and Towers)
+- jermsy:tundra? (from Towns and Towers)
+
 #byg:has_structure/ocean_ruin_warm
 - byg:lush_stacks (from Oh The Biomes You'll Go)
 - byg:dead_sea (from Oh The Biomes You'll Go)
@@ -948,37 +870,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #byg:is_icy
 - byg:shattered_glacier (from Oh The Biomes You'll Go)
-
-#croptopia:has_crop/squash
-- minecraft:old_growth_pine_taiga (from Croptopia)
-- minecraft:old_growth_spruce_taiga (from Croptopia)
-- minecraft:taiga (from Croptopia)
-- minecraft:snowy_taiga (from Croptopia)
-- minecraft:savanna (from Croptopia)
-- minecraft:savanna_plateau (from Croptopia)
-- minecraft:windswept_savanna (from Croptopia)
-- terralith:alpine_grove? (from Croptopia)
-- terralith:arid_highlands? (from Croptopia)
-- terralith:brushland? (from Croptopia)
-- terralith:cold_shrubland? (from Croptopia)
-- terralith:forested_highlands? (from Croptopia)
-- terralith:fractured_savanna? (from Croptopia)
-- terralith:lush_valley? (from Croptopia)
-- terralith:rocky_mountains? (from Croptopia)
-- terralith:sakura_grove? (from Croptopia)
-- terralith:sakura_valley? (from Croptopia)
-- terralith:savanna_badlands? (from Croptopia)
-- terralith:savanna_slopes? (from Croptopia)
-- terralith:scarlet_mountains? (from Croptopia)
-- terralith:shield? (from Croptopia)
-- terralith:shrubland? (from Croptopia)
-- terralith:siberian_grove? (from Croptopia)
-- terralith:siberian_taiga? (from Croptopia)
-- terralith:snowy_maple_forest? (from Croptopia)
-- terralith:snowy_shield? (from Croptopia)
-- terralith:wintry_forest? (from Croptopia)
-- terralith:wintry_lowlands? (from Croptopia)
-- terralith:yosemite_lowlands? (from Croptopia)
 
 #byg:has_structure/nether_fortress
 - #byg:is_nether (from Oh The Biomes You'll Go)
@@ -1029,6 +920,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:snowy_beach (from Terralith)
 - terralith:gravel_beach (from Terralith)
 
+#structory_towers:shattered_biomes
+- #minecraft:is_hill (from Structory: Towers)
+- minecraft:windswept_hills (from Structory: Towers)
+- minecraft:windswept_forest (from Structory: Towers)
+- minecraft:windswept_savanna (from Structory: Towers)
+- minecraft:windswept_gravelly_hills (from Structory: Towers)
+- terralith:fractured_savanna? (from Structory: Towers)
+- terralith:cloud_forest? (from Structory: Towers)
+- terralith:jungle_mountains? (from Structory: Towers)
+
+#c:birch_forest
+- minecraft:birch_forest (from Fabric Convention Tags)
+- minecraft:old_growth_birch_forest (from Fabric Convention Tags)
+
+#towns_and_towers:has_structure/pillager_outpost_snowy_beach
+- minecraft:snowy_beach (from Towns and Towers)
+- byg:shattered_glacier? (from Towns and Towers)
+- byg:glacial_chasm? (from Towns and Towers)
+
 #forge:is_swamp
 - terralith:ice_marsh (from Terralith)
 - terralith:orchid_swamp (from Terralith)
@@ -1038,18 +948,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:dark_forest (from Porting Lib Tags)
 - minecraft:old_growth_birch_forest (from Porting Lib Tags)
 - minecraft:old_growth_spruce_taiga (from Porting Lib Tags)
-
-#croptopia:has_crop/peanut
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- byg:crag_gardens? (from Croptopia)
-- byg:guiana_shield? (from Croptopia)
-- byg:jacaranda_forest? (from Croptopia)
-- byg:tropical_rainforest? (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
 
 #minecraft:is_mountain
 - minecraft:meadow (from Default)
@@ -1072,33 +970,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #dungeons_arise:has_structure/bandit_village_biomes
 - #minecraft:is_badlands (from When Dungeons Arise)
 
-#croptopia:has_crop/celery
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- byg:aspen_forest? (from Croptopia)
-- byg:borealis_grove? (from Croptopia)
-- byg:cherry_blossom_forest? (from Croptopia)
-- byg:cika_woods? (from Croptopia)
-- byg:ebony_woods? (from Croptopia)
-- byg:forgotten_forest? (from Croptopia)
-- byg:red_oak_forest? (from Croptopia)
-- byg:autumnal_forest? (from Croptopia)
-- byg:redwood_thicket? (from Croptopia)
-- byg:fragment_forest? (from Croptopia)
-- byg:twilight_meadow? (from Croptopia)
-- byg:weeping_witch_forest? (from Croptopia)
-- byg:temperate_rainforest? (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
+#towns_and_towers:has_structure/pillager_outpost_birch_forest
+- minecraft:birch_forest (from Towns and Towers)
+- minecraft:old_growth_birch_forest (from Towns and Towers)
+- terralith:birch_taiga? (from Towns and Towers)
+- terralith:temperate_highlands? (from Towns and Towers)
+- byg:aspen_forest? (from Towns and Towers)
+- byg:temperate_grove? (from Towns and Towers)
+- wythers:autumnal_birch_forest? (from Towns and Towers)
+- wythers:birch_taiga? (from Towns and Towers)
+- wythers:warm_birch_forest? (from Towns and Towers)
+- tectonic:autumn_birch_forest? (from Towns and Towers)
 
 #byg:is_overworld
 - byg:allium_fields (from Oh The Biomes You'll Go)
@@ -1208,24 +1090,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:end_highlands (from Default)
 - minecraft:end_midlands (from Default)
 - #byg:has_structure/end_city (from Oh The Biomes You'll Go)
+- nullscape:void_barrens (from Nullscape)
+- nullscape:shadowlands (from Nullscape)
+- nullscape:crystal_peaks (from Nullscape)
 - #promenade:dark_amaranth_forests (from Promenade)
 - minecraft:end_highlands (from Terralith)
 - minecraft:end_midlands (from Terralith)
-
-#croptopia:has_crop/grape
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
 
 #forge:is_dense/overworld
 - terralith:jungle_mountains (from Terralith)
@@ -1303,45 +1173,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:stony_shore (from Terralith)
 - #minecraft:is_mountain (from Terralith)
 
-#croptopia:has_crop/raspberry
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:old_growth_pine_taiga (from Croptopia)
-- minecraft:old_growth_spruce_taiga (from Croptopia)
-- minecraft:taiga (from Croptopia)
-- minecraft:snowy_taiga (from Croptopia)
-- minecraft:grove (from Croptopia)
-- byg:aspen_forest? (from Croptopia)
-- byg:black_forest? (from Croptopia)
-- byg:borealis_grove? (from Croptopia)
-- byg:cherry_blossom_forest? (from Croptopia)
-- byg:cika_woods? (from Croptopia)
-- byg:coniferous_forest? (from Croptopia)
-- byg:ebony_woods? (from Croptopia)
-- byg:forgotten_forest? (from Croptopia)
-- byg:maple_taiga? (from Croptopia)
-- byg:red_oak_forest? (from Croptopia)
-- byg:autumnal_forest? (from Croptopia)
-- byg:autumnal_taiga? (from Croptopia)
-- byg:redwood_thicket? (from Croptopia)
-- byg:frosted_taiga? (from Croptopia)
-- byg:frosted_coniferous_forest? (from Croptopia)
-- byg:fragment_forest? (from Croptopia)
-- byg:twilight_meadow? (from Croptopia)
-- byg:weeping_witch_forest? (from Croptopia)
-- byg:temperate_rainforest? (from Croptopia)
-- byg:zelkova_forest? (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
-
 #byg:overworld/climate/wet
 - byg:cypress_swamplands (from Oh The Biomes You'll Go)
 
@@ -1371,30 +1202,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:cave/thermal_caves (from Terralith)
 - terralith:cave/underground_jungle (from Terralith)
 
-#croptopia:has_crop/chile_pepper
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
+#towns_and_towers:has_structure/village_meadow_swiss
+- minecraft:meadow (from Towns and Towers)
+- terralith:blooming_plateau? (from Towns and Towers)
+- biomesoplenty:clover_patch? (from Towns and Towers)
+- biomesoplenty:field? (from Towns and Towers)
+- wythers:highland_plains? (from Towns and Towers)
+- wythers:highlands? (from Towns and Towers)
+- tectonic:alpine_meadow? (from Towns and Towers)
 
 #minecraft:is_river
 - minecraft:river (from Default)
 - minecraft:frozen_river (from Default)
 - minecraft:river (from Terralith)
 - minecraft:frozen_river (from Terralith)
-
-#croptopia:has_crop/tomato
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
 
 #dungeons_arise:has_structure/illager_campsite_biomes
 - minecraft:plains (from When Dungeons Arise)
@@ -1467,38 +1288,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:lush_caves (from Porting Lib Tags)
 - minecraft:mangrove_swamp (from Porting Lib Tags)
 
-#croptopia:has_crop/corn
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- byg:allium_fields? (from Croptopia)
-- byg:amaranth_fields? (from Croptopia)
-- byg:autumnal_valley? (from Croptopia)
-- byg:temperate_grove? (from Croptopia)
-- byg:coconino_meadow? (from Croptopia)
-- byg:orchard? (from Croptopia)
-- byg:prairie? (from Croptopia)
-- byg:rose_fields? (from Croptopia)
-- byg:sierra_badlands? (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:cold_shrubland? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:rocky_mountains? (from Croptopia)
-- terralith:sakura_grove? (from Croptopia)
-- terralith:sakura_valley? (from Croptopia)
-- terralith:scarlet_mountains? (from Croptopia)
-- terralith:shield? (from Croptopia)
-- terralith:shrubland? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
-- terralith:wintry_forest? (from Croptopia)
-- terralith:wintry_lowlands? (from Croptopia)
-
 #ad_astra:has_structure/moon_dungeon_biomes
 - ad_astra:lunar_wastelands (from Ad Astra)
 
 #ad_astra:has_structure/pygro_tower_biomes
 - ad_astra:venus_wastelands (from Ad Astra)
+
+#towns_and_towers:has_structure/village_swamp_boat
+- minecraft:swamp (from Towns and Towers)
+- terralith:ice_marsh? (from Towns and Towers)
+- terralith:orchid_swamp? (from Towns and Towers)
+- biomesoplenty:wetland? (from Towns and Towers)
+- byg:cypress_swamplands? (from Towns and Towers)
+- wythers:ancient_mossy_swamp? (from Towns and Towers)
+- wythers:ancient_oak_swamp? (from Towns and Towers)
+- wythers:marsh? (from Towns and Towers)
+- wythers:waterlilly_swamp? (from Towns and Towers)
 
 #byg:is_dead
 - byg:dead_sea (from Oh The Biomes You'll Go)
@@ -1513,19 +1318,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #byg:nether/climate/cold
 - byg:subzero_hypogeal (from Oh The Biomes You'll Go)
-
-#croptopia:has_crop/sweetpotato
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- terralith:cold_shrubland? (from Croptopia)
-- terralith:rocky_mountains? (from Croptopia)
-- terralith:sakura_grove? (from Croptopia)
-- terralith:sakura_valley? (from Croptopia)
-- terralith:scarlet_mountains? (from Croptopia)
-- terralith:shield? (from Croptopia)
-- terralith:shrubland? (from Croptopia)
-- terralith:wintry_forest? (from Croptopia)
-- terralith:wintry_lowlands? (from Croptopia)
 
 #naturalist:has_canary
 - #minecraft:is_hill (from Naturalist)
@@ -1575,6 +1367,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:wintry_forest (from Terralith)
 - terralith:snowy_badlands (from Terralith)
 
+#towns_and_towers:has_structure/exclusives/village_nilotic
+- wythers:dripleaf_swamp? (from Towns and Towers)
+- wythers:flooded_jungle? (from Towns and Towers)
+- wythers:flooded_rainforest? (from Towns and Towers)
+- wythers:flooded_savanna? (from Towns and Towers)
+- wythers:flooded_temperate_rainforest? (from Towns and Towers)
+- wythers:pantanal? (from Towns and Towers)
+
+#rottencreatures:swampy_whitelist
+- #minecraft:has_structure/ruined_portal_swamp? (from Rotten Creatures)
+
 #minecraft:has_structure/shipwreck_beached
 - #minecraft:is_beach (from Default)
 - #minecraft:is_beach (from Terralith)
@@ -1588,11 +1391,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:shield? (from Structory)
 - terralith:lush_valley? (from Structory)
 - terralith:siberian_taiga? (from Structory)
-
-#croptopia:has_crop/cranberry
-- minecraft:swamp (from Croptopia)
-- terralith:mirage_isles? (from Croptopia)
-- terralith:orchid_swamp? (from Croptopia)
 
 #byg:is_nether
 - byg:arisian_undergrowth (from Oh The Biomes You'll Go)
@@ -1616,22 +1414,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #c:is_dense/nether? (from Porting Lib Tags)
 - #c:is_dense/end? (from Porting Lib Tags)
 
+#rottencreatures:undead_miner_blacklist
+- minecraft:mushroom_fields (from Rotten Creatures)
+- minecraft:deep_dark (from Rotten Creatures)
+
 #dungeons_arise:has_structure/illager_windmill_biomes
 - minecraft:plains (from When Dungeons Arise)
 - minecraft:meadow (from When Dungeons Arise)
 - minecraft:sunflower_plains (from When Dungeons Arise)
-
-#croptopia:has_crop/rhubarb
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- byg:crag_gardens? (from Croptopia)
-- byg:guiana_shield? (from Croptopia)
-- byg:jacaranda_forest? (from Croptopia)
-- byg:tropical_rainforest? (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
 
 #byg:has_structure/village_desert
 - #byg:is_desert (from Oh The Biomes You'll Go)
@@ -1659,6 +1449,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #c:climate_cold
 - #byg:is_cold (from Oh The Biomes You'll Go)
+- minecraft:snowy_plains (from Fabric Convention Tags)
 - minecraft:grove (from Fabric Convention Tags)
 - minecraft:jagged_peaks (from Fabric Convention Tags)
 - minecraft:taiga (from Fabric Convention Tags)
@@ -1707,6 +1498,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #minecraft:plays_underwater_music
 - #minecraft:is_ocean (from Default)
 - #minecraft:is_river (from Default)
+
+#structory_towers:badlands
+- minecraft:badlands (from Structory: Towers)
+- minecraft:wooded_badlands (from Structory: Towers)
 
 #c:in_the_end
 - #byg:is_end (from Oh The Biomes You'll Go)
@@ -1771,10 +1566,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:siberian_taiga? (from Immersive structures)
 - terralith:yosemite_lowlands? (from Immersive structures)
 
+#towns_and_towers:has_structure/exclusives/village_swedish
+- terralith:snowy_maple_forest? (from Towns and Towers)
+- terralith:forested_highlands? (from Towns and Towers)
+- terralith:shield? (from Towns and Towers)
+- biomesoplenty:fir_clearing? (from Towns and Towers)
+- byg:maple_taiga? (from Towns and Towers)
+- byg:zelkova_forest? (from Towns and Towers)
+- biomesoplenty:snowy_fir_clearing? (from Towns and Towers)
+- biomesoplenty:snowy_maple_forest? (from Towns and Towers)
+- wythers:boreal_forest_red? (from Towns and Towers)
+- wythers:boreal_forest_yellow? (from Towns and Towers)
+- wythers:cold_island? (from Towns and Towers)
+- wythers:maple_mountains? (from Towns and Towers)
+
 #minecraft:has_structure/woodland_mansion
 - minecraft:dark_forest (from Default)
 - minecraft:dark_forest (from Terralith)
 - terralith:sakura_grove (from Terralith)
+
+#structory_towers:soul_sand_valleys
+- minecraft:soul_sand_valley (from Structory: Towers)
+- incendium:withered_forest? (from Structory: Towers)
+- incendium:weeping_valley? (from Structory: Towers)
 
 #bettermineshafts:has_structure/better_mineshaft_ice
 - minecraft:ice_spikes (from YUNG's Better Mineshafts)
@@ -1802,6 +1616,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:deep_lukewarm_ocean (from Default)
 - #byg:has_structure/ocean_ruin_warm (from Oh The Biomes You'll Go)
 
+#towns_and_towers:has_structure/village_mushroom_fields_fantasy
+- minecraft:mushroom_fields (from Towns and Towers)
+
+#towns_and_towers:has_structure/pillager_outpost_desert
+- minecraft:desert (from Towns and Towers)
+- byg:mojave_desert? (from Towns and Towers)
+- wythers:cactus_desert? (from Towns and Towers)
+- wythers:deep_desert? (from Towns and Towers)
+- wythers:temperate_rainforest? (from Towns and Towers)
+- wythers:wooded_desert? (from Towns and Towers)
+- tectonic:desert_dunes? (from Towns and Towers)
+
 #naturalist:has_butterfly
 - #minecraft:is_forest (from Naturalist)
 - minecraft:plains (from Naturalist)
@@ -1810,21 +1636,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #c:forest? (from Naturalist)
 - #c:plains? (from Naturalist)
 
+#towns_and_towers:has_structure/exclusives/village_iberian
+- byg:rose_fields? (from Towns and Towers)
+- biomesoplenty:lush_savanna? (from Towns and Towers)
+- wythers:flowering_pantanal? (from Towns and Towers)
+- wythers:humid_tropical_grassland? (from Towns and Towers)
+- wythers:jacaranda_savanna? (from Towns and Towers)
+- wythers:lapacho_plains? (from Towns and Towers)
+- wythers:subtropical_forest? (from Towns and Towers)
+- wythers:subtropical_forest_edge? (from Towns and Towers)
+- wythers:subtropical_grassland? (from Towns and Towers)
+- wythers:tropical_grassland? (from Towns and Towers)
+- traverse:grasslands? (from Towns and Towers)
+- jermsy:shrubland? (from Towns and Towers)
+
 #betteroceanmonuments:has_structure/better_ocean_monument
 - #minecraft:is_deep_ocean (from YUNG's Better Ocean Monuments)
 - #c:deep_ocean? (from YUNG's Better Ocean Monuments)
-
-#croptopia:has_crop/pineapple
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- byg:crag_gardens? (from Croptopia)
-- byg:guiana_shield? (from Croptopia)
-- byg:jacaranda_forest? (from Croptopia)
-- byg:tropical_rainforest? (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
 
 #c:is_spooky
 - minecraft:dark_forest (from Porting Lib Tags)
@@ -1835,34 +1663,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:meadow (from When Dungeons Arise)
 - minecraft:sunflower_plains (from When Dungeons Arise)
 
-#croptopia:has_crop/radish
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- byg:aspen_forest? (from Croptopia)
-- byg:borealis_grove? (from Croptopia)
-- byg:cherry_blossom_forest? (from Croptopia)
-- byg:cika_woods? (from Croptopia)
-- byg:ebony_woods? (from Croptopia)
-- byg:forgotten_forest? (from Croptopia)
-- byg:red_oak_forest? (from Croptopia)
-- byg:autumnal_forest? (from Croptopia)
-- byg:redwood_thicket? (from Croptopia)
-- byg:fragment_forest? (from Croptopia)
-- byg:twilight_meadow? (from Croptopia)
-- byg:weeping_witch_forest? (from Croptopia)
-- byg:temperate_rainforest? (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
-
 #minecraft:without_patrol_spawns
 - minecraft:mushroom_fields (from Default)
 
@@ -1871,8 +1671,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:steppe? (from Immersive structures)
 
 #minecraft:has_structure/village_taiga
-- minecraft:taiga (from Default)
-- #byg:has_structure/village_taiga (from Oh The Biomes You'll Go)
+- minecraft:taiga (from Towns and Towers)
+- biomesoplenty:coniferous_forest? (from Towns and Towers)
+- biomesoplenty:dead_forest? (from Towns and Towers)
+- biomesoplenty:maple_woods? (from Towns and Towers)
+- byg:borealis_grove? (from Towns and Towers)
+- byg:canadian_shield? (from Towns and Towers)
+- byg:cika_woods? (from Towns and Towers)
+- byg:coniferous_forest? (from Towns and Towers)
+- terralith:alpine_highlands? (from Towns and Towers)
+- terralith:lush_valley? (from Towns and Towers)
+- terralith:rocky_shrubland? (from Towns and Towers)
+- terralith:shield? (from Towns and Towers)
+- wythers:forested_highlands? (from Towns and Towers)
+- wythers:larch_taiga? (from Towns and Towers)
+- wythers:pine_barrens? (from Towns and Towers)
+- traverse:coniferious_forest? (from Towns and Towers)
+- terrestria:snowy_hemlock_forest? (from Towns and Towers)
+- terrestria:hemlock_rainforest? (from Towns and Towers)
 - minecraft:taiga (from Terralith)
 - terralith:highlands (from Terralith)
 - terralith:forested_highlands (from Terralith)
@@ -1886,15 +1702,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #dungeons_arise:has_structure/plague_asylum_biomes
 - #minecraft:is_forest (from When Dungeons Arise)
-
-#croptopia:has_crop/lettuce
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
 
 #c:void
 - #byg:is_void (from Oh The Biomes You'll Go)
@@ -1919,6 +1726,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:swamp (from Terralith)
 - terralith:orchid_swamp (from Terralith)
 - terralith:ice_marsh (from Terralith)
+
+#towns_and_towers:has_structure/village_snowy_slopes_inn
+- minecraft:snowy_slopes (from Towns and Towers)
+- byg:howling_peaks? (from Towns and Towers)
+- terralith:alpine_grove? (from Towns and Towers)
 
 #byg:has_structure/stronghold
 - #byg:is_overworld (from Oh The Biomes You'll Go)
@@ -1968,6 +1780,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #c:is_mushroom
 - minecraft:mushroom_fields (from Porting Lib Tags)
 
+#towns_and_towers:has_structure/exclusives/pillager_outpost_rustic
+- byg:autumnal_forest? (from Towns and Towers)
+- byg:autumnal_taiga? (from Towns and Towers)
+- biomesoplenty:boreal_forest? (from Towns and Towers)
+- biomesoplenty:seasonal_forest? (from Towns and Towers)
+- promenade:pumpkin_pastures? (from Towns and Towers)
+- wythers:autumnal_flower_forest? (from Towns and Towers)
+- wythers:autumnal_forest? (from Towns and Towers)
+- wythers:autumnal_forest_edge? (from Towns and Towers)
+- wythers:autumnal_plains? (from Towns and Towers)
+- wythers:harvest_fields? (from Towns and Towers)
+- tectonic:autumn_forest? (from Towns and Towers)
+- tectonic:autumn_birch_forest? (from Towns and Towers)
+- traverse:autumnal_woods? (from Towns and Towers)
+- jermsy:seasonal_forest? (from Towns and Towers)
+
 #minecraft:is_end
 - minecraft:the_end (from Default)
 - minecraft:end_highlands (from Default)
@@ -1975,6 +1803,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:small_end_islands (from Default)
 - minecraft:end_barrens (from Default)
 - #byg:is_end (from Oh The Biomes You'll Go)
+
+#structory_towers:deserts
+- minecraft:desert (from Structory: Towers)
+- terralith:desert_oasis? (from Structory: Towers)
+- terralith:sandstone_valley? (from Structory: Towers)
+- terralith:lush_desert? (from Structory: Towers)
+- terralith:ancient_sands? (from Structory: Towers)
+- terralith:desert_canyon? (from Structory: Towers)
 
 #ad_astra:has_structure/meteor_biomes
 - #minecraft:is_jungle (from Ad Astra)
@@ -2003,15 +1839,21 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:savanna_plateau (from When Dungeons Arise)
 - minecraft:windswept_savanna (from When Dungeons Arise)
 
-#croptopia:has_crop/olive
-- minecraft:savanna (from Croptopia)
-- minecraft:savanna_plateau (from Croptopia)
-- minecraft:windswept_savanna (from Croptopia)
-- terralith:arid_highlands? (from Croptopia)
-- terralith:brushland? (from Croptopia)
-- terralith:fractured_savanna? (from Croptopia)
-- terralith:savanna_badlands? (from Croptopia)
-- terralith:savanna_slopes? (from Croptopia)
+#towns_and_towers:has_structure/pillager_outpost_snowy_taiga
+- minecraft:snowy_taiga (from Towns and Towers)
+- terralith:forested_highlands? (from Towns and Towers)
+- terralith:shield? (from Towns and Towers)
+- terralith:shield_clearing? (from Towns and Towers)
+- terralith:snowy_maple_forest? (from Towns and Towers)
+- terralith:snowy_shield? (from Towns and Towers)
+- wythers:berry_bog? (from Towns and Towers)
+- wythers:crimson_tundra? (from Towns and Towers)
+- wythers:frigid_island? (from Towns and Towers)
+- wythers:frozen_island? (from Towns and Towers)
+- wythers:tundra? (from Towns and Towers)
+- tectonic:old_growth_snowy_taiga? (from Towns and Towers)
+- minecraft:snowy_coniferious_forest? (from Towns and Towers)
+- jermsy:tundra? (from Towns and Towers)
 
 #c:mesa
 - minecraft:wooded_badlands (from Fabric Convention Tags)
@@ -2042,6 +1884,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:wintry_forest (from Terralith)
 - terralith:yosemite_lowlands (from Terralith)
 
+#towns_and_towers:has_structure/pillager_outpost_snowy_plains
+- minecraft:snowy_plains (from Towns and Towers)
+- biomesoplenty:cold_desert? (from Towns and Towers)
+- biomesoplenty:muskeg? (from Towns and Towers)
+- byg:frosted_coniferous_forest? (from Towns and Towers)
+- wythers:deep_snowy_taiga? (from Towns and Towers)
+- wythers:snowy_bog? (from Towns and Towers)
+- wythers:snowy_fen? (from Towns and Towers)
+- wythers:snowy_tundra? (from Towns and Towers)
+
 #forge:is_wasteland
 - terralith:ashen_savanna (from Terralith)
 - terralith:basalt_cliffs (from Terralith)
@@ -2053,14 +1905,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:volcanic_peaks (from Terralith)
 - terralith:yellowstone (from Terralith)
 
-#croptopia:has_crop/cabbage
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
+#towns_and_towers:has_structure/village_old_growth_taiga_polish
+- minecraft:old_growth_pine_taiga (from Towns and Towers)
+- minecraft:old_growth_spruce_taiga (from Towns and Towers)
+- terralith:siberian_taiga? (from Towns and Towers)
+- terralith:valley_clearing? (from Towns and Towers)
+- byg:black_forest? (from Towns and Towers)
+- byg:dacite_ridges? (from Towns and Towers)
+- wythers:ancient_taiga? (from Towns and Towers)
+- wythers:old_growth_taiga_swamp? (from Towns and Towers)
+- wythers:temperate_rainforest? (from Towns and Towers)
+- tectonic:old_growth_snowy_taiga? (from Towns and Towers)
 
 #c:snowy
 - minecraft:snowy_beach (from Fabric Convention Tags)
@@ -2086,21 +1941,31 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #geodes:has_echo_geode
 - minecraft:deep_dark (from More Geodes)
 
-#croptopia:has_crop/leek
-- minecraft:savanna (from Croptopia)
-- minecraft:savanna_plateau (from Croptopia)
-- minecraft:windswept_savanna (from Croptopia)
-- terralith:arid_highlands? (from Croptopia)
-- terralith:brushland? (from Croptopia)
-- terralith:fractured_savanna? (from Croptopia)
-- terralith:savanna_badlands? (from Croptopia)
-- terralith:savanna_slopes? (from Croptopia)
+#towns_and_towers:has_structure/village_wooded_badlands_tipi
+- minecraft:wooded_badlands (from Towns and Towers)
+- terralith:bryce_canyon? (from Towns and Towers)
+- terralith:painted_mountains? (from Towns and Towers)
+- byg:sierra_badlands? (from Towns and Towers)
 
 #dungeons_arise:has_structure/illager_galley_biomes
 - #minecraft:is_ocean (from When Dungeons Arise)
 
 #byg:has_structure/end_city
 - #byg:is_end (from Oh The Biomes You'll Go)
+
+#towns_and_towers:has_structure/pillager_outpost_forest
+- minecraft:forest (from Towns and Towers)
+- biomesoplenty:old_growth_woodland? (from Towns and Towers)
+- biomesoplenty:woodland? (from Towns and Towers)
+- byg:ebony_woods? (from Towns and Towers)
+- byg:red_oak_forest? (from Towns and Towers)
+- wythers:ancient_copper_beech_forest? (from Towns and Towers)
+- wythers:ancient_emerald_beech_forest? (from Towns and Towers)
+- wythers:ancient_golden_beech_forest? (from Towns and Towers)
+- wythers:ancient_moss_forest? (from Towns and Towers)
+- wythers:forest_edge? (from Towns and Towers)
+- terrestria:dense_woodlands? (from Towns and Towers)
+- jermsy:sparse_forest? (from Towns and Towers)
 
 #c:is_underground
 - minecraft:lush_caves (from Porting Lib Tags)
@@ -2125,46 +1990,48 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #c:river? (from Naturalist)
 - #c:beach? (from Naturalist)
 
+#towns_and_towers:has_structure/exclusives/pillager_outpost_swedish
+- terralith:snowy_maple_forest? (from Towns and Towers)
+- terralith:forested_highlands? (from Towns and Towers)
+- terralith:shield? (from Towns and Towers)
+- biomesoplenty:fir_clearing? (from Towns and Towers)
+- byg:maple_taiga? (from Towns and Towers)
+- byg:zelkova_forest? (from Towns and Towers)
+- biomesoplenty:snowy_fir_clearing? (from Towns and Towers)
+- biomesoplenty:snowy_maple_forest? (from Towns and Towers)
+- wythers:boreal_forest_red? (from Towns and Towers)
+- wythers:boreal_forest_yellow? (from Towns and Towers)
+- wythers:cold_island? (from Towns and Towers)
+- wythers:maple_mountains? (from Towns and Towers)
+
 #ad_astra:has_structure/oil_well_biomes
 - #minecraft:is_ocean (from Ad Astra)
 - #minecraft:is_deep_ocean (from Ad Astra)
 - minecraft:swamp (from Ad Astra)
 
-#croptopia:has_crop/zucchini
-- minecraft:savanna (from Croptopia)
-- minecraft:savanna_plateau (from Croptopia)
-- minecraft:windswept_savanna (from Croptopia)
-- terralith:arid_highlands? (from Croptopia)
-- terralith:brushland? (from Croptopia)
-- terralith:fractured_savanna? (from Croptopia)
-- terralith:savanna_badlands? (from Croptopia)
-- terralith:savanna_slopes? (from Croptopia)
-
-#croptopia:has_crop/asparagus
-- minecraft:swamp (from Croptopia)
-- terralith:mirage_isles? (from Croptopia)
-- terralith:orchid_swamp? (from Croptopia)
-
-#croptopia:has_crop/onion
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- terralith:alpine_grove? (from Croptopia)
-- terralith:forested_highlands? (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:lush_valley? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:siberian_grove? (from Croptopia)
-- terralith:siberian_taiga? (from Croptopia)
-- terralith:snowy_maple_forest? (from Croptopia)
-- terralith:snowy_shield? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
-- terralith:yosemite_lowlands? (from Croptopia)
-
 #byg:is_dry
 - #byg:is_desert (from Oh The Biomes You'll Go)
 - #byg:is_badlands (from Oh The Biomes You'll Go)
 - byg:prairie (from Oh The Biomes You'll Go)
+
+#towns_and_towers:has_structure/village_flower_forest_japanese
+- minecraft:flower_forest (from Towns and Towers)
+- terralith:cloud_forest? (from Towns and Towers)
+- terralith:sakura_grove? (from Towns and Towers)
+- promenade:white_cherry_oak_forest? (from Towns and Towers)
+- promenade:pink_cherry_oak_forest? (from Towns and Towers)
+- biomesoplenty:bamboo_grove? (from Towns and Towers)
+- biomesoplenty:cherry_blossom_grove? (from Towns and Towers)
+- byg:cherry_blossom_forest? (from Towns and Towers)
+- wythers:jade_highlands? (from Towns and Towers)
+- wythers:sakura_forest? (from Towns and Towers)
+- terrestria:japanese_maple_forest? (from Towns and Towers)
+- terrestria:sakura_forest? (from Towns and Towers)
+- jermsy:flower_fields? (from Towns and Towers)
+
+#structory_towers:warped_forests
+- minecraft:warped_forest (from Structory: Towers)
+- incendium:inverted_forest? (from Structory: Towers)
 
 #c:is_hot/overworld
 - minecraft:desert (from Porting Lib Tags)
@@ -2248,55 +2115,33 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #minecraft:is_hill (from When Dungeons Arise)
 - #minecraft:is_mountain (from When Dungeons Arise)
 
-#croptopia:has_crop/coffee_beans
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
-
 #c:mushroom
 - #byg:is_mushroom (from Oh The Biomes You'll Go)
 - minecraft:mushroom_fields (from Fabric Convention Tags)
 - terralith:mirage_isles (from Terralith)
 - terralith:cave/fungal_caves (from Terralith)
 
-#croptopia:has_crop/oat
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
+#towns_and_towers:has_structure/pillager_outpost_jungle
+- minecraft:jungle (from Towns and Towers)
+- terralith:amethyst_rainforest? (from Towns and Towers)
+- terralith:rocky_jungle? (from Towns and Towers)
+- byg:tropical_rainforest? (from Towns and Towers)
+- biomesoplenty:rainforest? (from Towns and Towers)
+- biomesoplenty:rocky_rainforest? (from Towns and Towers)
+- wythers:eucalyptus_deanei_forest? (from Towns and Towers)
+- wythers:eucalyptus_jungle? (from Towns and Towers)
+- wythers:highland_tropical_rainforest? (from Towns and Towers)
+- wythers:jungle_island? (from Towns and Towers)
+- wythers:tropical_rainforest? (from Towns and Towers)
+- jermsy:rainforest? (from Towns and Towers)
 
-#croptopia:has_crop/kiwi
-- minecraft:savanna (from Croptopia)
-- minecraft:savanna_plateau (from Croptopia)
-- minecraft:windswept_savanna (from Croptopia)
-- byg:araucaria_savanna? (from Croptopia)
-- byg:baobab_savanna? (from Croptopia)
-- terralith:arid_highlands? (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:brushland? (from Croptopia)
-- terralith:fractured_savanna? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:savanna_badlands? (from Croptopia)
-- terralith:savanna_slopes? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
-
-#croptopia:has_crop/rice
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- terralith:amethyst_canyon? (from Croptopia)
-- terralith:amethyst_rainforest? (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
+#towns_and_towers:has_structure/village_sunflower_plains_farm
+- minecraft:sunflower_plains (from Towns and Towers)
+- terralith:steppe? (from Towns and Towers)
+- biomesoplenty:pasture? (from Towns and Towers)
+- byg:prairie? (from Towns and Towers)
+- byg:autumnal_valley? (from Towns and Towers)
+- biomesoplenty:pumpkin_patch? (from Towns and Towers)
 
 #c:mountain
 - #byg:is_mountain (from Oh The Biomes You'll Go)
@@ -2368,6 +2213,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #c:is_water
 - #minecraft:is_ocean (from Porting Lib Tags)
 - #minecraft:is_river (from Porting Lib Tags)
+
+#towns_and_towers:has_structure/pillager_outpost_old_growth_taiga
+- minecraft:old_growth_pine_taiga (from Towns and Towers)
+- minecraft:old_growth_spruce_taiga (from Towns and Towers)
+- terralith:siberian_taiga? (from Towns and Towers)
+- terralith:valley_clearing? (from Towns and Towers)
+- byg:black_forest? (from Towns and Towers)
+- byg:dacite_ridges? (from Towns and Towers)
+- wythers:ancient_taiga? (from Towns and Towers)
+- wythers:old_growth_taiga_swamp? (from Towns and Towers)
+- wythers:temperate_rainforest? (from Towns and Towers)
+- tectonic:old_growth_snowy_taiga? (from Towns and Towers)
 
 #byg:has_structure/red_rock_arch
 - byg:red_rock_valley (from Oh The Biomes You'll Go)
@@ -2503,6 +2360,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #dungeons_arise:has_structure/mushroom_house_biomes
 - #minecraft:is_forest (from When Dungeons Arise)
 
+#towns_and_towers:has_structure/shallow_oceans_wreckage
+- minecraft:cold_ocean (from Towns and Towers)
+- minecraft:ocean (from Towns and Towers)
+- minecraft:lukewarm_ocean (from Towns and Towers)
+- minecraft:warm_ocean (from Towns and Towers)
+- tectonic:lagoon? (from Towns and Towers)
+
 #naturalist:has_deer
 - #minecraft:is_forest (from Naturalist)
 - #forge:is_forest? (from Naturalist)
@@ -2575,23 +2439,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:scarlet_mountains (from Terralith)
 - terralith:temperate_highlands (from Terralith)
 
+#towns_and_towers:has_structure/exclusives/village_tudor
+- terralith:highlands? (from Towns and Towers)
+- biomesoplenty:highland? (from Towns and Towers)
+- biomesoplenty:highland_moor? (from Towns and Towers)
+- wythers:temperate_island? (from Towns and Towers)
+- wythers:cold_plains? (from Towns and Towers)
+- wythers:temperate_island? (from Towns and Towers)
+- tectonic:cold_plains? (from Towns and Towers)
+
 #betterdungeons:has_structure/small_nether_dungeon
 - #minecraft:is_nether (from YUNG's Better Dungeons)
-
-#croptopia:has_crop/spinach
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
 
 #byg:is_temperate
 
@@ -2601,12 +2459,28 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #byg:has_structure/village_tropical
 - byg:guiana_shield (from Oh The Biomes You'll Go)
 
+#structory_towers:mangrove
+- minecraft:mangrove_swamp (from Structory: Towers)
+
 #minecraft:has_structure/ruined_portal_ocean
 - #minecraft:is_ocean (from Default)
 - #minecraft:is_ocean (from Terralith)
 
 #byg:has_structure/desert_pyramid
 - byg:mojave_desert (from Oh The Biomes You'll Go)
+
+#rottencreatures:swampy_blacklist
+
+#towns_and_towers:has_structure/exclusives/village_mediterranean
+- terralith:hot_shrubland? (from Towns and Towers)
+- terralith:brushland? (from Towns and Towers)
+- terralith:shrubland? (from Towns and Towers)
+- biomesoplenty:mediterranean_forest? (from Towns and Towers)
+- biomesoplenty:rocky_shrubland? (from Towns and Towers)
+- biomesoplenty:scrubland? (from Towns and Towers)
+- biomesoplenty:shrubland? (from Towns and Towers)
+- biomesoplenty:wooded_scrubland? (from Towns and Towers)
+- wythers:mediterranean_island? (from Towns and Towers)
 
 #naturalist:has_cardinal
 - #minecraft:is_forest (from Naturalist)
@@ -2622,6 +2496,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #c:savanna? (from Naturalist)
 - #c:swamp? (from Naturalist)
 - #c:desert? (from Naturalist)
+
+#c:windswept
+- minecraft:windswept_hills (from Fabric Convention Tags)
+- minecraft:windswept_gravelly_hills (from Fabric Convention Tags)
+- minecraft:windswept_forest (from Fabric Convention Tags)
+- minecraft:windswept_savanna (from Fabric Convention Tags)
 
 #byg:has_structure/village_ruins
 - byg:coconino_meadow (from Oh The Biomes You'll Go)
@@ -2641,6 +2521,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - promenade:tritanopian_gallery (from Promenade)
 - promenade:achromatopsian_gallery (from Promenade)
 - promenade:protanopian_gallery (from Promenade)
+
+#rottencreatures:mummy_blacklist
 
 #structory:has_structure/northern_ruin
 - minecraft:plains (from Structory)
@@ -2690,6 +2572,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:old_growth_pine_taiga (from Porting Lib Tags)
 - minecraft:grove (from Porting Lib Tags)
 
+#stoneholm:has_structure/underground_village
+- #minecraft:is_forest (from Stoneholm)
+- #minecraft:is_hill (from Stoneholm)
+- #minecraft:is_jungle (from Stoneholm)
+- #minecraft:is_mountain (from Stoneholm)
+- #minecraft:is_taiga (from Stoneholm)
+- #minecraft:is_savanna (from Stoneholm)
+
 #c:is_rare
 - minecraft:mushroom_fields (from Porting Lib Tags)
 - minecraft:sparse_jungle (from Porting Lib Tags)
@@ -2713,15 +2603,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - byg:frosted_coniferous_forest (from Oh The Biomes You'll Go)
 - byg:maple_taiga (from Oh The Biomes You'll Go)
 
-#croptopia:has_crop/bellpepper
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
-
 #naturalist:has_lion
 - #minecraft:is_savanna (from Naturalist)
 - #forge:is_savanna? (from Naturalist)
@@ -2729,6 +2610,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #minecraft:more_frequent_drowned_spawns
 - #minecraft:is_river (from Default)
+
+#towns_and_towers:has_structure/exclusives/village_classic
+- terralith:alpha_islands? (from Towns and Towers)
+- biomesoplenty:origin_valley? (from Towns and Towers)
 
 #byg:has_structure/village_snowy
 - byg:shattered_glacier (from Oh The Biomes You'll Go)
@@ -2750,6 +2635,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:granite_cliffs (from Terralith)
 - terralith:gravel_beach (from Terralith)
 
+#rottencreatures:dead_beard_blacklist
+
 #structory:has_structure/jungle_well
 - minecraft:jungle (from Structory)
 - minecraft:bamboo_jungle (from Structory)
@@ -2760,18 +2647,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #minecraft:allows_tropical_fish_spawns_at_any_height
 - minecraft:lush_caves (from Default)
 
-#croptopia:has_crop/eggplant
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
+#rottencreatures:undead_miner_whitelist
+- #minecraft:is_overworld? (from Rotten Creatures)
 
 #minecraft:has_structure/village_plains
-- minecraft:plains (from Default)
-- minecraft:meadow (from Default)
-- #byg:has_structure/village_plains (from Oh The Biomes You'll Go)
+- minecraft:plains (from Towns and Towers)
+- biomesoplenty:grassland? (from Towns and Towers)
+- biomesoplenty:prairie? (from Towns and Towers)
+- byg:allium_fields? (from Towns and Towers)
+- byg:temperate_rainforest? (from Towns and Towers)
+- wythers:cool_plains? (from Towns and Towers)
 - minecraft:plains (from Terralith)
 - minecraft:meadow (from Terralith)
 - terralith:blooming_plateau (from Terralith)
@@ -2790,6 +2675,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:warped_forest (from Porting Lib Tags)
 - minecraft:basalt_deltas (from Porting Lib Tags)
 
+#towns_and_towers:has_structure/village_badlands_pueblo
+- minecraft:badlands (from Towns and Towers)
+- byg:autacama_desert? (from Towns and Towers)
+- terralith:arid_highlands? (from Towns and Towers)
+- terralith:red_oasis? (from Towns and Towers)
+- terralith:snowy_badlands? (from Towns and Towers)
+- wythers:badlands_desert? (from Towns and Towers)
+- wythers:kwongan_heath? (from Towns and Towers)
+- wythers:outback_desert? (from Towns and Towers)
+- wythers:red_desert? (from Towns and Towers)
+- tectonic:red_desert? (from Towns and Towers)
+- tectonic:red_desert_dunes? (from Towns and Towers)
+- jermsy:red_desert? (from Towns and Towers)
+
 #ad_astra:has_structure/mars_temple_biomes
 - ad_astra:martian_wastelands (from Ad Astra)
 - ad_astra:martian_canyon_creek (from Ad Astra)
@@ -2800,6 +2699,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #c:deep_ocean? (from Fabric Convention Tags)
 - #c:shallow_ocean? (from Fabric Convention Tags)
 - #minecraft:is_ocean? (from Fabric Convention Tags)
+
+#rottencreatures:frostbitten_whitelist
+- minecraft:ice_spikes (from Rotten Creatures)
+- #minecraft:has_structure/igloo? (from Rotten Creatures)
+
+#rottencreatures:burned_blacklist
 
 #forge:is_snowy
 - terralith:alpha_islands_winter (from Terralith)
@@ -2844,18 +2749,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #dungeons_arise:has_structure/mushroom_village_biomes
 - #minecraft:is_forest (from When Dungeons Arise)
 
-#croptopia:has_crop/barley
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- minecraft:old_growth_pine_taiga (from Croptopia)
-- minecraft:old_growth_spruce_taiga (from Croptopia)
-- minecraft:taiga (from Croptopia)
-- minecraft:snowy_taiga (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
+#towns_and_towers:has_structure/village_grove_villager_outpost
+- minecraft:grove (from Towns and Towers)
+- terralith:siberian_grove? (from Towns and Towers)
 
 #minecraft:has_structure/ruined_portal_nether
 - #minecraft:is_nether (from Default)
@@ -2909,14 +2805,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - byg:temperate_rainforest (from Oh The Biomes You'll Go)
 
 #minecraft:has_structure/pillager_outpost
-- minecraft:desert (from Default)
-- minecraft:plains (from Default)
-- minecraft:savanna (from Default)
-- minecraft:snowy_plains (from Default)
-- minecraft:taiga (from Default)
-- #minecraft:is_mountain (from Default)
-- minecraft:grove (from Default)
-- #byg:has_structure/pillager_outpost (from Oh The Biomes You'll Go)
+- minecraft:plains (from Towns and Towers)
 - minecraft:desert (from Terralith)
 - minecraft:plains (from Terralith)
 - minecraft:savanna (from Terralith)
@@ -2937,6 +2826,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - byg:rose_fields (from Oh The Biomes You'll Go)
 - byg:cherry_blossom_forest (from Oh The Biomes You'll Go)
 - byg:orchard (from Oh The Biomes You'll Go)
+
+#structory_towers:jungles
+- minecraft:jungle (from Structory: Towers)
+- minecraft:bamboo_jungle (from Structory: Towers)
+- terralith:rocky_jungle? (from Structory: Towers)
+- terralith:sakura_grove? (from Structory: Towers)
+- terralith:sakura_valley? (from Structory: Towers)
 
 #byg:is_void
 
@@ -3214,6 +3110,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:windswept_spires (from Terralith)
 - terralith:yosemite_cliffs (from Terralith)
 
+#towns_and_towers:has_structure/pillager_outpost_grove
+- minecraft:grove (from Towns and Towers)
+- byg:holing_peaks? (from Towns and Towers)
+- terralith:alpine_grove? (from Towns and Towers)
+- terralith:siberian_grove? (from Towns and Towers)
+
 #dungeons_arise:has_structure/illager_corsair_biomes
 - #minecraft:is_ocean (from When Dungeons Arise)
 
@@ -3249,6 +3151,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:swamp (from Porting Lib Tags)
 - minecraft:mangrove_swamp (from Porting Lib Tags)
 
+#structory_towers:mushroom
+- minecraft:mushroom_fields (from Structory: Towers)
+- minecraft:dark_forest (from Structory: Towers)
+
 #dungeons_arise:has_structure/jungle_tree_house_biomes
 - #minecraft:is_jungle (from When Dungeons Arise)
 
@@ -3270,18 +3176,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:swamp (from Default)
 - minecraft:mangrove_swamp (from Default)
 
-#croptopia:has_crop/turnip
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- byg:crag_gardens? (from Croptopia)
-- byg:guiana_shield? (from Croptopia)
-- byg:jacaranda_forest? (from Croptopia)
-- byg:tropical_rainforest? (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
-
 #c:nether_forests
 - minecraft:warped_forest (from Fabric Convention Tags)
 - minecraft:crimson_forest (from Fabric Convention Tags)
@@ -3295,24 +3189,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 
 #byg:is_wasteland
 - byg:dead_sea (from Oh The Biomes You'll Go)
-
-#croptopia:has_crop/cucumber
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- byg:allium_fields? (from Croptopia)
-- byg:amaranth_fields? (from Croptopia)
-- byg:autumnal_valley? (from Croptopia)
-- byg:temperate_grove? (from Croptopia)
-- byg:coconino_meadow? (from Croptopia)
-- byg:orchard? (from Croptopia)
-- byg:prairie? (from Croptopia)
-- byg:rose_fields? (from Croptopia)
-- byg:sierra_badlands? (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
 
 #naturalist:has_bluejay
 - #minecraft:is_taiga (from Naturalist)
@@ -3441,10 +3317,33 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #bettermineshafts:has_structure/better_mineshaft_lush
 - minecraft:lush_caves (from YUNG's Better Mineshafts)
 
+#structory_towers:oak_biomes
+- minecraft:plains (from Structory: Towers)
+- minecraft:forest (from Structory: Towers)
+- minecraft:flower_forest (from Structory: Towers)
+- minecraft:swamp (from Structory: Towers)
+- minecraft:meadow (from Structory: Towers)
+- minecraft:sunflower_plains (from Structory: Towers)
+- minecraft:savanna (from Structory: Towers)
+- terralith:brushland? (from Structory: Towers)
+- terralith:arid_highlands? (from Structory: Towers)
+- terralith:shrubland? (from Structory: Towers)
+
 #byg:is_water
 - #byg:is_ocean (from Oh The Biomes You'll Go)
 - #byg:is_deep_ocean (from Oh The Biomes You'll Go)
 - #byg:is_swamp (from Oh The Biomes You'll Go)
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_oriental
+- terralith:desert_oasis? (from Towns and Towers)
+- terralith:warped_mesa? (from Towns and Towers)
+- biomesoplenty:lush_desert? (from Towns and Towers)
+- byg:windswept_desert? (from Towns and Towers)
+- byg:windswept_dunes? (from Towns and Towers)
+- wythers:desert_lakes? (from Towns and Towers)
+- wythers:desert_island? (from Towns and Towers)
+- terrestria:lush_desert? (from Towns and Towers)
+- jermsy:desert_hills? (from Towns and Towers)
 
 #c:caves
 - #byg:is_underground (from Oh The Biomes You'll Go)
@@ -3512,6 +3411,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:cave/thermal_caves (from Terralith)
 - terralith:cave/underground_jungle (from Terralith)
 
+#towns_and_towers:has_structure/exclusives/village_oriental
+- terralith:desert_oasis? (from Towns and Towers)
+- terralith:warped_mesa? (from Towns and Towers)
+- biomesoplenty:lush_desert? (from Towns and Towers)
+- byg:windswept_desert? (from Towns and Towers)
+- byg:windswept_dunes? (from Towns and Towers)
+- wythers:desert_lakes? (from Towns and Towers)
+- wythers:desert_island? (from Towns and Towers)
+- terrestria:volcanic_island? (from Towns and Towers)
+- terrestria:lush_desert? (from Towns and Towers)
+- terrestria:oasis? (from Towns and Towers)
+
 #dungeons_arise:has_structure/illager_fort_biomes
 - minecraft:snowy_taiga (from When Dungeons Arise)
 - minecraft:snowy_plains (from When Dungeons Arise)
@@ -3524,15 +3435,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #byg:has_structure/village_skyris
 - byg:skyris_vale (from Oh The Biomes You'll Go)
 
-#croptopia:has_crop/vanilla
-- minecraft:jungle (from Croptopia)
-- minecraft:sparse_jungle (from Croptopia)
-- minecraft:bamboo_jungle (from Croptopia)
-- terralith:amethyst_canyon? (from Croptopia)
-- terralith:amethyst_rainforest? (from Croptopia)
-- terralith:jungle_mountains? (from Croptopia)
-- terralith:rocky_jungle? (from Croptopia)
-- terralith:tropical_jungle? (from Croptopia)
+#towns_and_towers:has_structure/pillager_outpost_mushroom_fields
+- minecraft:mushroom_fields (from Towns and Towers)
+- biomesoplenty:mystic_forest? (from Towns and Towers)
+- biomesoplenty:raimbow_hills? (from Towns and Towers)
+
+#structory_towers:mountain_peaks
+- minecraft:stony_peaks (from Structory: Towers)
+- minecraft:jagged_peaks (from Structory: Towers)
+- minecraft:frozen_peaks (from Structory: Towers)
+- minecraft:snowy_slopes (from Structory: Towers)
+- minecraft:grove (from Structory: Towers)
+- terralith:scarlet_mountains? (from Structory: Towers)
+- terralith:volcanic_peaks? (from Structory: Towers)
+- terralith:rocky_mountains? (from Structory: Towers)
+- terralith:snowy_maple_forest? (from Structory: Towers)
+- terralith:siberian_grove? (from Structory: Towers)
+- terralith:snowy_shield? (from Structory: Towers)
 
 #c:badlands
 - #byg:is_badlands (from Oh The Biomes You'll Go)
@@ -3548,29 +3467,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #byg:has_structure/ruined_portal_standard
 - #byg:is_overworld (from Oh The Biomes You'll Go)
 
-#croptopia:has_crop/rutabaga
-- minecraft:old_growth_pine_taiga (from Croptopia)
-- minecraft:old_growth_spruce_taiga (from Croptopia)
-- minecraft:taiga (from Croptopia)
-- minecraft:snowy_taiga (from Croptopia)
-- minecraft:savanna (from Croptopia)
-- minecraft:savanna_plateau (from Croptopia)
-- minecraft:windswept_savanna (from Croptopia)
-- byg:araucaria_savanna? (from Croptopia)
-- byg:baobab_savanna? (from Croptopia)
-- byg:black_forest? (from Croptopia)
-- byg:coniferous_forest? (from Croptopia)
-- byg:maple_taiga? (from Croptopia)
-- byg:autumnal_taiga? (from Croptopia)
-- byg:frosted_taiga? (from Croptopia)
-- byg:frosted_coniferous_forest? (from Croptopia)
-- byg:zelkova_forest? (from Croptopia)
-- terralith:arid_highlands? (from Croptopia)
-- terralith:brushland? (from Croptopia)
-- terralith:fractured_savanna? (from Croptopia)
-- terralith:savanna_badlands? (from Croptopia)
-- terralith:savanna_slopes? (from Croptopia)
-
 #c:jungle
 - #minecraft:is_jungle? (from Fabric Convention Tags)
 - terralith:amethyst_canyon (from Terralith)
@@ -3581,23 +3477,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:tropical_jungle (from Terralith)
 - terralith:cave/underground_jungle (from Terralith)
 
+#towns_and_towers:has_structure/village_jungle_tribal
+- minecraft:jungle (from Towns and Towers)
+- terralith:amethyst_rainforest? (from Towns and Towers)
+- terralith:rocky_jungle? (from Towns and Towers)
+- byg:tropical_rainforest? (from Towns and Towers)
+- biomesoplenty:rainforest? (from Towns and Towers)
+- biomesoplenty:rocky_rainforest? (from Towns and Towers)
+- wythers:eucalyptus_deanei_forest? (from Towns and Towers)
+- wythers:eucalyptus_jungle? (from Towns and Towers)
+- wythers:highland_tropical_rainforest? (from Towns and Towers)
+- wythers:jungle_island? (from Towns and Towers)
+- wythers:tropical_rainforest? (from Towns and Towers)
+- jermsy:rainforest? (from Towns and Towers)
+
 #bettermineshafts:has_structure/better_mineshaft_dripstone
 - minecraft:dripstone_caves (from YUNG's Better Mineshafts)
-
-#croptopia:has_crop/cauliflower
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
 
 #c:wasteland
 - #byg:is_wasteland (from Oh The Biomes You'll Go)
@@ -3617,6 +3512,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #c:in_mesa? (from YUNG's Better Mineshafts)
 - #forge:is_badlands? (from YUNG's Better Mineshafts)
 - #c:badlands? (from YUNG's Better Mineshafts)
+
+#structory_towers:oceans
+- minecraft:ocean (from Structory: Towers)
+- minecraft:lukewarm_ocean (from Structory: Towers)
+- minecraft:cold_ocean (from Structory: Towers)
+- minecraft:warm_ocean (from Structory: Towers)
 
 #dungeons_arise:has_structure/infested_temple_biomes
 - #minecraft:is_taiga (from When Dungeons Arise)
@@ -3638,24 +3539,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #byg:has_structure/mineshaft
 - #byg:is_overworld (from Oh The Biomes You'll Go)
 
-#croptopia:has_crop/greenbean
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- byg:allium_fields? (from Croptopia)
-- byg:amaranth_fields? (from Croptopia)
-- byg:autumnal_valley? (from Croptopia)
-- byg:temperate_grove? (from Croptopia)
-- byg:coconino_meadow? (from Croptopia)
-- byg:orchard? (from Croptopia)
-- byg:prairie? (from Croptopia)
-- byg:rose_fields? (from Croptopia)
-- byg:sierra_badlands? (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
-
 #betterwitchhuts:has_structure/witch_circle
 - minecraft:swamp (from YUNG's Better Witch Huts)
 - #forge:is_swamp? (from YUNG's Better Witch Huts)
@@ -3675,10 +3558,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:deep_cold_ocean (from Fabric Convention Tags)
 - minecraft:deep_ocean (from Fabric Convention Tags)
 
+#towns_and_towers:has_structure/village_deep_oceans_ships
+- minecraft:deep_cold_ocean (from Towns and Towers)
+- minecraft:deep_ocean (from Towns and Towers)
+- minecraft:deep_lukewarm_ocean (from Towns and Towers)
+
 #forge:is_plains
 - terralith:alpine_highlands (from Terralith)
 - terralith:highlands (from Terralith)
 - terralith:rocky_shrubland (from Terralith)
+
+#rottencreatures:mummy_whitelist
+- #minecraft:has_structure/desert_pyramid? (from Rotten Creatures)
 
 #minecraft:required_ocean_monument_surrounding
 - #minecraft:is_ocean (from Default)
@@ -3744,6 +3635,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:end_highlands (from Porting Lib Tags)
 - minecraft:end_barrens (from Porting Lib Tags)
 
+#rottencreatures:glacial_hunter_blacklist
+
 #dungeons_arise:has_structure/coliseum_biomes
 - minecraft:plains (from When Dungeons Arise)
 - minecraft:meadow (from When Dungeons Arise)
@@ -3779,13 +3672,41 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #dungeons_arise:has_structure/typhon_biomes
 - #minecraft:is_ocean (from When Dungeons Arise)
 
+#towns_and_towers:has_structure/village_beach_lighthouse
+- minecraft:beach (from Towns and Towers)
+- biomesoplenty:dune_beach? (from Towns and Towers)
+- byg:rainbow_beach? (from Towns and Towers)
+- byg:windswept_beach? (from Towns and Towers)
+- terralith:gravel_beach? (from Towns and Towers)
+- wythers:black_beach? (from Towns and Towers)
+- wythers:desert_beach? (from Towns and Towers)
+- wythers:gravelly_beach? (from Towns and Towers)
+- wythers:sand_dunes? (from Towns and Towers)
+- wythers:tropical_beach? (from Towns and Towers)
+- tectonic:cold_beach? (from Towns and Towers)
+- tectonic:lukewarm_beach? (from Towns and Towers)
+- jermsy:gravelly_beach? (from Towns and Towers)
+
 #minecraft:has_structure/desert_pyramid
-- minecraft:desert (from Default)
-- #byg:has_structure/desert_pyramid (from Oh The Biomes You'll Go)
+- minecraft:desert (from Towns and Towers)
+- byg:mojave_desert? (from Towns and Towers)
+- terralith:desert_oasis? (from Towns and Towers)
 - minecraft:desert (from Terralith)
 - terralith:desert_oasis (from Terralith)
 - terralith:sandstone_valley (from Terralith)
 - terralith:desert_spires (from Terralith)
+
+#structory_towers:taigas
+- minecraft:taiga (from Structory: Towers)
+- minecraft:snowy_taiga (from Structory: Towers)
+- minecraft:grove (from Structory: Towers)
+- terralith:snowy_maple_forest? (from Structory: Towers)
+- terralith:siberian_taiga? (from Structory: Towers)
+- terralith:siberian_grove? (from Structory: Towers)
+- terralith:snowy_shield? (from Structory: Towers)
+
+#structory_towers:sparse_jungle
+- minecraft:sparse_jungle (from Structory: Towers)
 
 #terralith:has_structure/underground_cabin
 - minecraft:lush_caves (from Terralith)
@@ -3800,18 +3721,27 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #byg:has_structure/village_red_rock
 - byg:red_rock_valley (from Oh The Biomes You'll Go)
 
-#croptopia:has_crop/kale
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- byg:allium_fields? (from Croptopia)
-- byg:amaranth_fields? (from Croptopia)
-- byg:autumnal_valley? (from Croptopia)
-- byg:temperate_grove? (from Croptopia)
-- byg:coconino_meadow? (from Croptopia)
-- byg:orchard? (from Croptopia)
-- byg:prairie? (from Croptopia)
-- byg:rose_fields? (from Croptopia)
-- byg:sierra_badlands? (from Croptopia)
+#structory_towers:terralith_forests
+- terralith:forested_highlands? (from Structory: Towers)
+- terralith:shield? (from Structory: Towers)
+- terralith:siberian_taiga? (from Structory: Towers)
+- terralith:snowy_maple_forest? (from Structory: Towers)
+- terralith:snowy_shield? (from Structory: Towers)
+- terralith:siberian_grove? (from Structory: Towers)
+
+#towns_and_towers:has_structure/pillager_outpost_beach
+- minecraft:beach (from Towns and Towers)
+- biomesoplenty:dune_beach? (from Towns and Towers)
+- byg:rainbow_beach? (from Towns and Towers)
+- terralith:gravel_beach? (from Towns and Towers)
+- wythers:black_beach? (from Towns and Towers)
+- wythers:desert_beach? (from Towns and Towers)
+- wythers:gravelly_beach? (from Towns and Towers)
+- wythers:sand_dunes? (from Towns and Towers)
+- wythers:tropical_beach? (from Towns and Towers)
+- tectonic:cold_beach? (from Towns and Towers)
+- tectonic:lukewarm_beach? (from Towns and Towers)
+- jermsy:gravelly_beach? (from Towns and Towers)
 
 #forge:is_dry/overworld
 - terralith:alpine_highlands (from Terralith)
@@ -3842,42 +3772,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #byg:has_structure/overgrown_stone_arch
 - byg:lush_stacks (from Oh The Biomes You'll Go)
 
-#croptopia:has_crop/hops
-- minecraft:savanna (from Croptopia)
-- minecraft:savanna_plateau (from Croptopia)
-- minecraft:windswept_savanna (from Croptopia)
-- terralith:arid_highlands? (from Croptopia)
-- terralith:brushland? (from Croptopia)
-- terralith:fractured_savanna? (from Croptopia)
-- terralith:savanna_badlands? (from Croptopia)
-- terralith:savanna_slopes? (from Croptopia)
-
-#croptopia:has_crop/tomatillo
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
-
-#croptopia:has_crop/turmeric
-- minecraft:savanna (from Croptopia)
-- minecraft:savanna_plateau (from Croptopia)
-- minecraft:windswept_savanna (from Croptopia)
-- byg:araucaria_savanna? (from Croptopia)
-- byg:baobab_savanna? (from Croptopia)
-- terralith:arid_highlands? (from Croptopia)
-- terralith:brushland? (from Croptopia)
-- terralith:fractured_savanna? (from Croptopia)
-- terralith:savanna_badlands? (from Croptopia)
-- terralith:savanna_slopes? (from Croptopia)
+#towns_and_towers:has_structure/pillager_outpost_snowy_slopes
+- minecraft:snowy_slopes (from Towns and Towers)
+- byg:zelkova_forest? (from Towns and Towers)
+- terralith:rocky_shrubland? (from Towns and Towers)
 
 #structory:has_structure/old_manor
 - minecraft:dark_forest (from Structory)
@@ -3885,11 +3783,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:old_growth_spruce_taiga (from Structory)
 - terralith:shield? (from Structory)
 - terralith:forested_highlands? (from Structory)
-
-#croptopia:has_crop/currant
-- minecraft:swamp (from Croptopia)
-- terralith:mirage_isles? (from Croptopia)
-- terralith:orchid_swamp? (from Croptopia)
 
 #awesomedungeon:has_structure/witch_castle_biomes
 - #minecraft:is_forest (from Awesome dungeon)
@@ -3906,20 +3799,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 #c:is_lush
 - minecraft:lush_caves (from Porting Lib Tags)
 
-#croptopia:has_crop/blackbean
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
+#towns_and_towers:has_structure/pillager_outpost_swamp
+- minecraft:swamp (from Towns and Towers)
+- terralith:ice_marsh? (from Towns and Towers)
+- terralith:orchid_swamp? (from Towns and Towers)
+- biomesoplenty:wetland? (from Towns and Towers)
+- byg:cypress_swamplands? (from Towns and Towers)
+- wythers:ancient_mossy_swamp? (from Towns and Towers)
+- wythers:ancient_oak_swamp? (from Towns and Towers)
+- wythers:marsh? (from Towns and Towers)
+- wythers:waterlilly_swamp? (from Towns and Towers)
 
 #terralith:has_structure/fortified_village
 - minecraft:plains (from Terralith)
@@ -4068,33 +3957,21 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #terralith:all_terralith_biomes (from Terralith)
 
 #minecraft:has_structure/village_savanna
-- minecraft:savanna (from Default)
-- #byg:has_structure/village_savanna (from Oh The Biomes You'll Go)
+- minecraft:savanna (from Towns and Towers)
+- biomesoplenty:dryland? (from Towns and Towers)
+- byg:araucaria_savanna? (from Towns and Towers)
+- byg:baobab_savanna? (from Towns and Towers)
+- byg:firecracker_shrubland? (from Towns and Towers)
+- terralith:savanna_slopes? (from Towns and Towers)
+- wythers:eucalyptus_salubris_woodland? (from Towns and Towers)
+- wythers:eucalyptus_woodland? (from Towns and Towers)
+- wythers:sparse_eucalyptus_woodland? (from Towns and Towers)
+- wythers:wooded_savanna? (from Towns and Towers)
 - minecraft:savanna (from Terralith)
 - terralith:arid_highlands (from Terralith)
 - terralith:hot_shrubland (from Terralith)
 - terralith:savanna_slopes (from Terralith)
 - terralith:savanna_badlands (from Terralith)
-
-#croptopia:has_crop/blueberry
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:old_growth_pine_taiga (from Croptopia)
-- minecraft:old_growth_spruce_taiga (from Croptopia)
-- minecraft:taiga (from Croptopia)
-- minecraft:snowy_taiga (from Croptopia)
-- minecraft:grove (from Croptopia)
-- terralith:alpine_highlands? (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
 
 #c:mountain_slope
 - #byg:is_slope (from Oh The Biomes You'll Go)
@@ -4115,6 +3992,20 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - terralith:savanna_slopes (from Terralith)
 - terralith:siberian_grove (from Terralith)
 - terralith:stony_spires (from Terralith)
+
+#towns_and_towers:has_structure/pillager_outpost_badlands
+- minecraft:badlands (from Towns and Towers)
+- byg:autacama_desert? (from Towns and Towers)
+- terralith:arid_highlands? (from Towns and Towers)
+- terralith:red_oasis? (from Towns and Towers)
+- terralith:snowy_badlands? (from Towns and Towers)
+- wythers:badlands_desert? (from Towns and Towers)
+- wythers:kwongan_heath? (from Towns and Towers)
+- wythers:outback_desert? (from Towns and Towers)
+- wythers:red_desert? (from Towns and Towers)
+- tectonic:red_desert? (from Towns and Towers)
+- tectonic:red_desert_dunes? (from Towns and Towers)
+- jermsy:red_desert? (from Towns and Towers)
 
 #byg:is_sandy
 - byg:mojave_desert (from Oh The Biomes You'll Go)
@@ -4141,20 +4032,28 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - byg:weeping_witch_forest (from Oh The Biomes You'll Go)
 - byg:zelkova_forest (from Oh The Biomes You'll Go)
 
-#croptopia:has_crop/pepper
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- terralith:ashen_savanna? (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
+#towns_and_towers:has_structure/village_birch_forest_romanian
+- minecraft:birch_forest (from Towns and Towers)
+- minecraft:old_growth_birch_forest (from Towns and Towers)
+- terralith:birch_taiga? (from Towns and Towers)
+- terralith:temperate_highlands? (from Towns and Towers)
+- byg:aspen_forest? (from Towns and Towers)
+- byg:temperate_grove? (from Towns and Towers)
+- wythers:autumnal_birch_forest? (from Towns and Towers)
+- wythers:birch_taiga? (from Towns and Towers)
+- wythers:warm_birch_forest? (from Towns and Towers)
+- tectonic:autumn_birch_forest? (from Towns and Towers)
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_mediterranean
+- terralith:hot_shrubland? (from Towns and Towers)
+- terralith:brushland? (from Towns and Towers)
+- terralith:shrubland? (from Towns and Towers)
+- biomesoplenty:mediterranean_forest? (from Towns and Towers)
+- biomesoplenty:rocky_shrubland? (from Towns and Towers)
+- biomesoplenty:scrubland? (from Towns and Towers)
+- biomesoplenty:shrubland? (from Towns and Towers)
+- biomesoplenty:wooded_scrubland? (from Towns and Towers)
+- wythers:mediterranean_island? (from Towns and Towers)
 
 #byg:has_structure/pillager_outpost
 - #byg:is_overworld (from Oh The Biomes You'll Go)
@@ -4174,6 +4073,21 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - byg:dacite_shore (from Oh The Biomes You'll Go)
 - byg:rainbow_beach (from Oh The Biomes You'll Go)
 
+#towns_and_towers:has_structure/pillager_outpost_flower_forest
+- minecraft:flower_forest (from Towns and Towers)
+- terralith:cloud_forest? (from Towns and Towers)
+- terralith:sakura_grove? (from Towns and Towers)
+- promenade:white_cherry_oak_forest? (from Towns and Towers)
+- promenade:pink_cherry_oak_forest? (from Towns and Towers)
+- biomesoplenty:bamboo_grove? (from Towns and Towers)
+- biomesoplenty:cherry_blossom_grove? (from Towns and Towers)
+- byg:cherry_blossom_forest? (from Towns and Towers)
+- wythers:jade_highlands? (from Towns and Towers)
+- wythers:sakura_forest? (from Towns and Towers)
+- terrestria:japanese_maple_forest? (from Towns and Towers)
+- terrestria:sakura_forest? (from Towns and Towers)
+- jermsy:flower_fields? (from Towns and Towers)
+
 #bettermineshafts:has_structure/better_mineshaft_desert
 - minecraft:desert (from YUNG's Better Mineshafts)
 - #forge:is_desert? (from YUNG's Better Mineshafts)
@@ -4188,6 +4102,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #terralith:all_terralith_biomes? (from More Geodes)
 - #c:in_overworld? (from More Geodes)
 
+#rottencreatures:dead_beard_whitelist
+- #minecraft:has_structure/shipwreck_beached? (from Rotten Creatures)
+
 #byg:has_structure/igloo
 - byg:shattered_glacier (from Oh The Biomes You'll Go)
 
@@ -4195,15 +4112,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - #minecraft:is_jungle (from YUNG's Better Mineshafts)
 - #forge:is_jungle? (from YUNG's Better Mineshafts)
 - #c:in_jungle? (from YUNG's Better Mineshafts)
-
-#croptopia:has_crop/broccoli
-- minecraft:plains (from Croptopia)
-- minecraft:sunflower_plains (from Croptopia)
-- terralith:blooming_plateau? (from Croptopia)
-- terralith:blooming_valley? (from Croptopia)
-- terralith:highlands? (from Croptopia)
-- terralith:steppe? (from Croptopia)
-- terralith:valley_clearing? (from Croptopia)
 
 #c:climate_dry
 - #byg:is_dry (from Oh The Biomes You'll Go)
@@ -4326,30 +4234,47 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - projectvibrantjourneys:boreal_forest? (from YUNG's Better Mineshafts)
 - projectvibrantjourneys:crystal_lakes? (from YUNG's Better Mineshafts)
 
-#croptopia:has_crop/elderberry
-- minecraft:forest (from Croptopia)
-- minecraft:flower_forest (from Croptopia)
-- minecraft:birch_forest (from Croptopia)
-- minecraft:dark_forest (from Croptopia)
-- minecraft:old_growth_birch_forest (from Croptopia)
-- minecraft:grove (from Croptopia)
-- terralith:birch_taiga? (from Croptopia)
-- terralith:cloud_forest? (from Croptopia)
-- terralith:lavender_forest? (from Croptopia)
-- terralith:lavender_valley? (from Croptopia)
-- terralith:moonlight_grove? (from Croptopia)
-- terralith:moonlight_valley? (from Croptopia)
-- terralith:temperate_highlands? (from Croptopia)
+#structory_towers:dense_forests
+- minecraft:dark_forest (from Structory: Towers)
+- minecraft:old_growth_spruce_taiga (from Structory: Towers)
+- minecraft:old_growth_pine_taiga (from Structory: Towers)
 
 #minecraft:has_structure/village_snowy
-- minecraft:snowy_plains (from Default)
-- #byg:has_structure/village_snowy (from Oh The Biomes You'll Go)
+- minecraft:snowy_plains (from Towns and Towers)
+- biomesoplenty:cold_desert? (from Towns and Towers)
+- biomesoplenty:snowy_coniferous_forest? (from Towns and Towers)
+- byg:frosted_coniferous_forest? (from Towns and Towers)
+- byg:shattered_glacier? (from Towns and Towers)
+- wythers:deep_snowy_taiga? (from Towns and Towers)
+- wythers:snowy_bog? (from Towns and Towers)
+- wythers:snowy_fen? (from Towns and Towers)
+- wythers:snowy_tundra? (from Towns and Towers)
 - minecraft:snowy_plains (from Terralith)
 - terralith:snowy_badlands (from Terralith)
+
+#towns_and_towers:has_structure/village_sparse_jungle_polynesian
+- minecraft:sparse_jungle (from Towns and Towers)
+- terralith:tropical_jungle? (from Towns and Towers)
+- biomesoplenty:floodplain? (from Towns and Towers)
+- biomesoplenty:tropics? (from Towns and Towers)
+- byg:jacaranda_forest? (from Towns and Towers)
+- wythers:snady_jungle? (from Towns and Towers)
+- wythers:sparse_bamboo_jungle? (from Towns and Towers)
+- wythers:sparse_eucalyptus_jungle? (from Towns and Towers)
+- wythers:tropical_forest? (from Towns and Towers)
+- wythers:tropical_island? (from Towns and Towers)
 
 #byg:is_jungle
 - byg:crag_gardens (from Oh The Biomes You'll Go)
 - byg:guiana_shield (from Oh The Biomes You'll Go)
+
+#towns_and_towers:has_structure/pillager_outpost_wooded_badlands
+- minecraft:wooded_badlands (from Towns and Towers)
+- terralith:bryce_canyon? (from Towns and Towers)
+- terralith:painted_mountains? (from Towns and Towers)
+- byg:sierra_badlands? (from Towns and Towers)
+- wythers:chaparral? (from Towns and Towers)
+- terrestria:outback? (from Towns and Towers)
 
 #c:taiga
 - #byg:is_taiga (from Oh The Biomes You'll Go)
@@ -4373,6 +4298,21 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - byg:dead_sea (from Oh The Biomes You'll Go)
 - byg:lush_stacks (from Oh The Biomes You'll Go)
 
+#towns_and_towers:has_structure/village_forest_ruins
+- minecraft:forest (from Towns and Towers)
+- biomesoplenty:old_growth_woodland? (from Towns and Towers)
+- biomesoplenty:woodland? (from Towns and Towers)
+- byg:ebony_woods? (from Towns and Towers)
+- byg:red_oak_forest? (from Towns and Towers)
+- wythers:ancient_copper_beech_forest? (from Towns and Towers)
+- wythers:ancient_emerald_beech_forest? (from Towns and Towers)
+- wythers:ancient_golden_beech_forest? (from Towns and Towers)
+- wythers:ancient_moss_forest? (from Towns and Towers)
+- wythers:forest_edge? (from Towns and Towers)
+- terrestria:cypress_forest? (from Towns and Towers)
+- terrestria:dense_woodlands? (from Towns and Towers)
+- jermsy:sparse_forest? (from Towns and Towers)
+
 #dungeons_arise:has_structure/mining_system_biomes
 - #minecraft:is_jungle (from When Dungeons Arise)
 - #minecraft:is_forest (from When Dungeons Arise)
@@ -4384,6 +4324,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:savanna (from When Dungeons Arise)
 - minecraft:savanna_plateau (from When Dungeons Arise)
 - minecraft:windswept_savanna (from When Dungeons Arise)
+
+#rottencreatures:burned_whitelist
+- minecraft:nether_wastes (from Rotten Creatures)
 
 #structory:has_structure/boat
 - minecraft:ocean (from Structory)

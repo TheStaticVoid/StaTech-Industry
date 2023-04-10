@@ -354,7 +354,7 @@
 		}
 		{
 			x: 18.0d
-			y: 9.0d
+			y: 7.0d
 			shape: "square"
 			subtitle: "Bring out the barrels!"
 			description: ["The Distillery will turn various fluids into their lighter parts. This will be very useful for Oil Processing!"]
@@ -373,7 +373,7 @@
 		}
 		{
 			x: 18.0d
-			y: 5.0d
+			y: 9.0d
 			shape: "square"
 			subtitle: "Shocking"
 			description: [
@@ -396,7 +396,7 @@
 		}
 		{
 			x: 18.0d
-			y: 7.0d
+			y: 5.0d
 			shape: "square"
 			subtitle: "No PHD required"
 			description: [
@@ -2221,7 +2221,11 @@
 			x: -9.0d
 			y: 6.5d
 			shape: "square"
-			description: ["Polyvinyl Chloride is an important chemical in more advanced Assembler recipes."]
+			description: [
+				"Polyvinyl Chloride is an important chemical in more advanced Assembler recipes."
+				""
+				"You will need it particularly for Processing Unit components."
+			]
 			dependencies: ["08161DE7D9265B43"]
 			id: "04672D52AF159537"
 			tasks: [{
@@ -2768,8 +2772,8 @@
 			}]
 		}
 		{
-			x: 22.0d
-			y: 5.0d
+			x: 20.0d
+			y: 7.0d
 			shape: "square"
 			description: [
 				"Chlorine can be made by processing Salt Dust through an Electrolyzer. If you missed crafting that in the last chapter, you will need to make that now."
@@ -2791,7 +2795,7 @@
 		}
 		{
 			x: 22.0d
-			y: 7.0d
+			y: 5.0d
 			shape: "square"
 			description: ["Combining Hydrogen with Chlorine will produce Hydrochloric Acid."]
 			dependencies: [
@@ -3428,8 +3432,8 @@
 			}]
 		}
 		{
-			x: 18.0d
-			y: 3.5d
+			x: 20.0d
+			y: 9.0d
 			shape: "rsquare"
 			description: [
 				"By electrolyzing clay, you can now get little bits of Lithium gas. You can combine your old Red Cell Batteries with Aluminum Plates and some Lithium to make Lithium Ion Batteries."
@@ -3450,8 +3454,8 @@
 			}]
 		}
 		{
-			x: 18.0d
-			y: 2.0d
+			x: 21.0d
+			y: 9.0d
 			shape: "rsquare"
 			description: [
 				"With your advancements in science, you have found that you can glue six Lithium Ion Batteries together and use as a single battery!"
@@ -3474,8 +3478,8 @@
 			}]
 		}
 		{
-			x: 20.0d
-			y: 8.0d
+			x: 18.0d
+			y: 3.0d
 			shape: "rsquare"
 			description: [
 				"With access to the Chemical Reactor, you can now create Eye of Enders. "
@@ -3496,8 +3500,8 @@
 			}]
 		}
 		{
-			x: 21.0d
-			y: 8.0d
+			x: 18.5d
+			y: 1.0d
 			shape: "rsquare"
 			description: ["By some kind of ender magic, this backpack allows you to remotely access your own ender chest."]
 			dependencies: ["4E194F2BBB21F033"]
@@ -3514,15 +3518,15 @@
 			}]
 		}
 		{
-			x: 20.0d
-			y: 9.0d
+			x: 17.5d
+			y: 0.0d
 			shape: "rsquare"
 			description: [
 				"Entangled Chests are universally linked chests that work across dimensions and store the same items as long as they are color-code the same."
 				""
 				"You can use runes to change the color-coding."
 			]
-			dependencies: ["517C3D6FBC5FEB2A"]
+			dependencies: ["4E194F2BBB21F033"]
 			id: "616AB06164FF575F"
 			tasks: [{
 				id: "4281D358BBE797BE"
@@ -3536,15 +3540,15 @@
 			}]
 		}
 		{
-			x: 21.0d
-			y: 9.0d
+			x: 19.5d
+			y: 1.0d
 			shape: "rsquare"
 			description: [
 				"Entangled Bags are able to access the contents of your Entangled Chest on the go."
 				""
 				"Shift right-click an Entangled Chest with an Entangled Bag to link them together."
 			]
-			dependencies: ["517C3D6FBC5FEB2A"]
+			dependencies: ["4E194F2BBB21F033"]
 			id: "1044FF1E86B2615A"
 			tasks: [{
 				id: "1178ABAC40FC7031"
@@ -3558,15 +3562,15 @@
 			}]
 		}
 		{
-			x: 20.0d
-			y: 10.0d
+			x: 16.5d
+			y: 1.0d
 			shape: "rsquare"
 			description: [
 				"Entangled Tanks are exactly like Entangled Chests, but they can store fluids instead."
 				""
 				"You can use runes to change the color-coding."
 			]
-			dependencies: ["517C3D6FBC5FEB2A"]
+			dependencies: ["4E194F2BBB21F033"]
 			id: "152E753AE4B119C1"
 			tasks: [{
 				id: "6C36FB2FA87E0680"
@@ -3580,15 +3584,15 @@
 			}]
 		}
 		{
-			x: 21.0d
-			y: 10.0d
+			x: 17.5d
+			y: 1.0d
 			shape: "rsquare"
 			description: [
 				"Entangled Buckets can be used to directly access the contents of your Entangled Tank on the go."
 				""
 				"Shift right-click an Entangled Tank with an Entangled Bucket to link them together."
 			]
-			dependencies: ["517C3D6FBC5FEB2A"]
+			dependencies: ["4E194F2BBB21F033"]
 			id: "5E0F3A2885C0E0DD"
 			tasks: [{
 				id: "4D6D096AB9AEAC06"
@@ -3752,6 +3756,87 @@
 			}]
 			rewards: [{
 				id: "25D661E4B4A5FA9F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 18.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["The Void Bucket does not carry any liquids, instead it deletes any liquid you pick up with it. "]
+			dependencies: ["4E194F2BBB21F033"]
+			id: "493839A115C46F71"
+			tasks: [{
+				id: "41300F1E0FF7E2C6"
+				type: "item"
+				item: {
+					id: "kibe:void_bucket"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1AD080284365C954"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 19.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"Vacuum Hoppers are blocks that can pull nearby dropped items and experience orbs to its own inventory."
+				""
+				"Stored items can be accessed by opening the block's GUI or by using pipes / hoppers."
+				""
+				"Stored XP can be used to craft Bottle o' Enchanting or Liquid XP buckets."
+			]
+			id: "3CECE50DB2609499"
+			tasks: [{
+				id: "08B382F348B643EA"
+				type: "item"
+				item: "kibe:vacuum_hopper"
+			}]
+			rewards: [{
+				id: "2B85A4463CCC1917"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			shape: "rsquare"
+			description: ["Prevents rain / snow particles in a 3x3 chunk radius when powered by redstone."]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "060A731AEBEA372B"
+			tasks: [{
+				id: "11601ECCFFA4A1DE"
+				type: "item"
+				item: "kibe:dehumidifier"
+			}]
+			rewards: [{
+				id: "5FE27407A1FFC117"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			shape: "rsquare"
+			description: ["Melts ice and snow in a 3x3 chunk radius when powered by redstone."]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "291CD73E1846E514"
+			tasks: [{
+				id: "1EC01774F4CEEFDE"
+				type: "item"
+				item: "kibe:heater"
+			}]
+			rewards: [{
+				id: "6328677D22F2BE1B"
 				type: "xp"
 				xp: 100
 			}]

@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Feb 26, 2023, 4:53:48 AM
+To refresh this file, delete it and run /reload command again! Last updated: Apr 9, 2023, 3:01:11 PM
 
 #c:fuel
 - #ad_astra:fuel (from Ad Astra)
@@ -16,14 +16,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - create:honey (from Create)
 - create:flowing_chocolate (from Create)
 - create:chocolate (from Create)
-- createaddition:flowing_seed_oil (from Create Crafts & Additions)
-- createaddition:seed_oil (from Create Crafts & Additions)
 - milk:flowing_milk? (from Milk Lib)
 - milk:still_milk? (from Milk Lib)
-
-#createaddition:burnable_fuel_20000
-- minecraft:lava (from Create Crafts & Additions)
-- minecraft:flowing_lava (from Create Crafts & Additions)
+- xps:xp_fluid (from Xp Obelisk)
+- xps:flowing_xp (from Xp Obelisk)
 
 #ad_astra:oxygen
 - ad_astra:oxygen (from Ad Astra)
@@ -53,6 +49,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - ad_astra:fuel (from Ad Astra)
 - ad_astra:flowing_fuel (from Ad Astra)
 - #ad_astra:efficient_fuel (from Ad Astra)
+- #ad_astra_platform:diesel? (from Ad Astra)
+- #ad_astra_platform:biodiesel? (from Ad Astra)
 
 #ad_astra:efficient_fuel
 - ad_astra:cryo_fuel (from Ad Astra)
@@ -62,21 +60,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - minecraft:water (from Create)
 - minecraft:lava (from Create)
 
-#createaddition:burnable_fuel_4800
-- createaddition:seed_oil (from Create Crafts & Additions)
-- createaddition:flowing_seed_oil (from Create Crafts & Additions)
-
 #c:oxygen
 - #ad_astra:oxygen (from Ad Astra)
 
 #ae2:blacklisted/annihilation_plane
 
-#c:plantoil
-- createaddition:seed_oil (from Create Crafts & Additions)
-
 #c:milk
 - milk:flowing_milk? (from Milk Lib)
 - milk:still_milk? (from Milk Lib)
+
+#ad_astra_platform:diesel
+- #c:diesel? (from Ad Astra)
+- #forge:diesel? (from Ad Astra)
 
 #c:water
 - #minecraft:water? (from Fabric Convention Tags)
@@ -110,6 +105,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Feb
 - modern_industrialization:crude_oil? (from Ad Astra)
 - #forge:crude_oil? (from Ad Astra)
 
-#createaddition:burnable_fuel_12800
-- createaddition:bioethanol (from Create Crafts & Additions)
-- createaddition:flowing_seed_oil (from Create Crafts & Additions)
+#ad_astra_platform:biodiesel
+- #c:biodiesel? (from Ad Astra)
+- #forge:biodiesel? (from Ad Astra)

@@ -31,7 +31,8 @@ ServerEvents.recipes(e => {
         'techreborn:crafting_table/tool/industrial_jackhammer',
         'techreborn:crafting_table/ingot/tungsten_ingot_from_nugget',
         'techreborn:crafting_table/dust/raw_tungsten_from_small',
-        'techreborn:crafting_table/dust/chrome_dust_from_small'
+        'techreborn:crafting_table/dust/chrome_dust_from_small',
+        'techreborn:crafting_table/dust/invar_dust_from_small'
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 

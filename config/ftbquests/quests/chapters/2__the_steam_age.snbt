@@ -1306,7 +1306,7 @@
 		{
 			title: "Large Tank"
 			icon: "modern_industrialization:large_tank"
-			x: 18.5d
+			x: 19.0d
 			y: 9.5d
 			shape: "rsquare"
 			subtitle: "Mass Fluid Storage"
@@ -1348,7 +1348,7 @@
 		}
 		{
 			title: "Basic Components"
-			x: 17.0d
+			x: 17.5d
 			y: 9.5d
 			shape: "square"
 			description: ["Motors, Pumps, Robot Arms, Conveyors, and Pistons are key components moving forward for a lot of the machines you will be making."]
@@ -2609,6 +2609,104 @@
 			}]
 			rewards: [{
 				id: "287AF4AB32A71055"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Conveyor Belts"
+			x: 19.0d
+			y: 8.5d
+			shape: "rsquare"
+			description: ["Entities standing above it will be moved. Cursed Dirt can still spawn mobs when below it."]
+			dependencies: ["3505E9029F3CEAD0"]
+			id: "1EA36D56E6CCD3B4"
+			tasks: [{
+				id: "0BF3FCE07DB19715"
+				type: "item"
+				title: "Any Belts"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:kibe_belts"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2119C2A1CEB012BF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.0d
+			y: 8.0d
+			shape: "rsquare"
+			description: ["Placers are blocks that, when activated by a redstone signal, will place any block in its inventory in front of it, if possible."]
+			dependencies: ["3505E9029F3CEAD0"]
+			id: "1A915B3D1C8D5A46"
+			tasks: [{
+				id: "5D890C66DEFA9BE0"
+				type: "item"
+				item: "kibe:placer"
+			}]
+			rewards: [{
+				id: "5BC7568AED74F100"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.0d
+			y: 9.0d
+			shape: "rsquare"
+			description: ["Breakers are blocks that, when activated by a redstone signal, will break any block in front of it and store its drops in its inventory, if possible."]
+			dependencies: ["3505E9029F3CEAD0"]
+			id: "5E080BBBF5CF8CDE"
+			tasks: [{
+				id: "250DD5AB25707F7C"
+				type: "item"
+				item: "kibe:breaker"
+			}]
+			rewards: [{
+				id: "546D5B8877CF188A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 20.0d
+			y: 10.0d
+			shape: "rsquare"
+			description: ["Drawbridges will place the blocks in its inventory directly in front of it when powered by redstone."]
+			dependencies: ["3505E9029F3CEAD0"]
+			id: "7A956433C33A9C44"
+			tasks: [{
+				id: "6FC76F232B9F2BE6"
+				type: "item"
+				item: "kibe:drawbridge"
+			}]
+			rewards: [{
+				id: "2423586914D46FE1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 19.0d
+			y: 10.5d
+			shape: "rsquare"
+			description: ["The Igniter will light the block in front of it on fire when provided a redstone signal."]
+			dependencies: ["3505E9029F3CEAD0"]
+			id: "09CADCF8F4364A49"
+			tasks: [{
+				id: "4E52121FB57B0BB7"
+				type: "item"
+				item: "kibe:igniter"
+			}]
+			rewards: [{
+				id: "63A766DB373BD75D"
 				type: "xp"
 				xp: 100
 			}]

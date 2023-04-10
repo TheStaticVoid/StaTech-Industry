@@ -126,4 +126,17 @@ ServerEvents.recipes(e => {
             { amount: 2, item: mi('carbon_dust') }
         ]
     );
+
+    // -- TUFF -- //
+    centrifuge(
+        5,
+        300,
+        [
+            { amount: 16, item: mc('tuff') }
+        ],
+        [
+            { amount: 18, item: tr('dark_ashes_dust') },
+            { amount: 12, item: tr('ashes_dust') }
+        ]
+    );
 });
