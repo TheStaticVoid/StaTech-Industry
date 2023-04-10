@@ -21,7 +21,8 @@ const REI_DELETED_ITEMS = [
     'techreborn:heliumplasma',
     'techreborn:helium3',
     'techreborn:helium',
-    'techreborn:titanium_small_dust'
+    'techreborn:titanium_small_dust',
+    'kibe:angel_ring'
 ];
 
 REIEvents.hide('item', e => {

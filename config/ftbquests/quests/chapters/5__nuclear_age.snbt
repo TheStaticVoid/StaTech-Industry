@@ -271,8 +271,9 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: -4.0d
+			x: 3.0d
+			y: 7.0d
+			shape: "square"
 			subtitle: "The Final Circuit"
 			description: ["Getting to the Quantum Circuits in their own is an accomplishment. These are used for all the end game MI machines and materials."]
 			dependencies: ["649FE8A688C74216"]
@@ -308,8 +309,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 1.5d
+			x: 5.0d
+			y: 2.0d
 			shape: "square"
 			description: ["Tritium can be produced in a multitude of ways. You can centrifuge Hydrogen for a very small output or you can use Heavy Water in a Nuclear Reactor which will be converted into Tritium over time."]
 			dependencies: ["0C73D9DE1468EBB1"]
@@ -328,7 +329,9 @@
 		{
 			x: 1.0d
 			y: 2.0d
+			shape: "square"
 			description: ["Combining 3x Neodymium, 3x Annealed Copper, 3x Yttrium, and 1x Iridium Dust you can mix together Superconductor Dust. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a Kanthal EBF and then cool it in a vacuum freezer."]
+			dependencies: ["2F0042673C0E3910"]
 			id: "569821B175311340"
 			tasks: [{
 				id: "7F7814394EC4D8DA"
@@ -392,22 +395,344 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 5.5d
+			icon: "modern_industrialization:space_probe_launcher"
+			x: -1.0d
+			y: 6.0d
 			shape: "square"
 			description: [
 				"Running out of Ostrum or other space materials? Fear not there's a solution! The Space Probe Launcher launches small probes towards celestial bodies that fly back to the machine and deliver what they mine."
 				""
 				"Building the multiblock requires Calorite Machine Casings, if you haven't been to Mercury or Venus yet you will need to travel there and get the needed Calorite."
+				""
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Space Probe Launcher block in your inventory or by holding your wrench out with the Space Probe Launcher placed."
 			]
+			dependencies: ["5856A6281F140AEF"]
+			size: 1.5d
 			id: "0F1DC239BBC3D60F"
-			tasks: [{
-				id: "1C9C309ACA83F044"
-				type: "item"
-				item: "modern_industrialization:space_probe_launcher"
-			}]
+			tasks: [
+				{
+					id: "1C9C309ACA83F044"
+					type: "item"
+					item: "modern_industrialization:space_probe_launcher"
+				}
+				{
+					id: "3AFF48B36B7740D2"
+					type: "item"
+					item: "modern_industrialization:calorite_machine_casing"
+					count: 25L
+				}
+				{
+					id: "40EFD964A68D1C47"
+					type: "item"
+					item: "modern_industrialization:calorite_machine_casing_pipe"
+					count: 10L
+				}
+				{
+					id: "67A277DDEA13A91B"
+					type: "item"
+					item: "modern_industrialization:tungstensteel_coil"
+					count: 20L
+				}
+				{
+					id: "682237114DDD4320"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "52A9B0AD1FA5FF19"
+					type: "item"
+					title: "Any Item Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+				}
+				{
+					id: "5DBD8CB2A55293B5"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
 			rewards: [{
 				id: "078B6536E0BBEB2E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Nuclear Fuel"
+			x: 8.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "Hazmat suit not required?"
+			description: ["There's a variety of Nuclear Fuels available to you. The most basic is just regular Uranium Rods, but you can make Lightly-Enriched (LE) or Highly-Enriched (HE) variants. Check JEI for more details on each fuel and find what works best for you."]
+			dependencies: [
+				"131D19CE92E22D58"
+				"4E4FF04917B2E624"
+			]
+			id: "4A580712AAD72CFF"
+			tasks: [{
+				id: "052855B501BA4A98"
+				type: "item"
+				title: "Any Nuclear Fuel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:nuclear_fuel"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4C56DCE36A0BD7B9"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Depleted Nuclear Fuel"
+			x: 7.0d
+			y: 4.0d
+			shape: "square"
+			description: [
+				"Once the Nuclear Fuel is used up it turns into a Depleted variant. These depleted variants are still very useful, so don't throw them out!"
+				""
+				"You can centrifuge them to get various important resources as well as some of the original resources used to make it. The main output you're looking for is Plutonium, which is key as you move towards Quantum Circuits."
+			]
+			dependencies: ["4A580712AAD72CFF"]
+			id: "494104440623C825"
+			tasks: [{
+				id: "62A9365B03658408"
+				type: "item"
+				title: "Any Depleted Nuclear Fuel"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:depleted_nuclear_fuel"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0B943FD438C2556E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Quantum Circuit Components"
+			x: 3.0d
+			y: 4.0d
+			shape: "square"
+			subtitle: "Bringing it all together"
+			description: ["It's time to start putting the puzzle together. Plutonium from your depleted fuel rods, various chemicals, and other materials you have processed this far."]
+			dependencies: [
+				"43D2E858079C12E0"
+				"569821B175311340"
+				"5856A6281F140AEF"
+				"5A0295C9C976F0E0"
+			]
+			id: "649FE8A688C74216"
+			tasks: [
+				{
+					id: "3301EB094FCAA6F5"
+					type: "item"
+					item: "modern_industrialization:cooling_cell"
+					count: 2L
+				}
+				{
+					id: "16A1E516A9984598"
+					type: "item"
+					item: "modern_industrialization:qbit"
+					count: 2L
+				}
+				{
+					id: "0A2062E194D5AA55"
+					type: "item"
+					item: "modern_industrialization:quantum_circuit_board"
+				}
+			]
+			rewards: [{
+				id: "4C4A4D6289892EF6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 7.0d
+			y: 5.5d
+			shape: "rsquare"
+			subtitle: "Surprisingly Ineffective"
+			description: [
+				"With your Plutonium byproducts, you can now create Nukes. These unfortunately do not explode like you would expect and are mainly used for crafting Singularities."
+				""
+				"If you want a version to explode, I've added a 1:1 conversion to the TechReborn Nuke, which does explode!"
+			]
+			dependencies: ["494104440623C825"]
+			id: "50D18ACF6401C05D"
+			tasks: [{
+				id: "0E6A243ABE4F6954"
+				type: "item"
+				item: "modern_industrialization:nuke"
+			}]
+			rewards: [{
+				id: "09009B7552A3AF54"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.5d
+			shape: "rsquare"
+			description: ["The Tungstensteel Tank can store 256 buckets worth of any liquid inside of it! That means 16,384 buckets of a fluid for a full stack! Absolutely insane."]
+			dependencies: ["5856A6281F140AEF"]
+			id: "7BB996EF1FB18B1D"
+			tasks: [{
+				id: "362C11C9F3D2E501"
+				type: "item"
+				item: "modern_industrialization:tungstensteel_tank"
+			}]
+			rewards: [{
+				id: "7902F99D95FA65EB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			shape: "rsquare"
+			description: [
+				"The Tungstensteel Barrel can store 16,384 stacks of a single item. A full stack of full barrels is over 1 million stacks. "
+				""
+				"Quite an absurd amount to be sure."
+			]
+			dependencies: ["5856A6281F140AEF"]
+			id: "5AE17FE1577DF9E2"
+			tasks: [{
+				id: "6560042462F49072"
+				type: "item"
+				item: "modern_industrialization:tungstensteel_barrel"
+			}]
+			rewards: [{
+				id: "6F82AE32440D4680"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			shape: "square"
+			description: ["The Desh Drill (TO CHANGE) returns a good chunk of every space ore. The multiblock must be built in orbit (any planet will work) to use this recipe."]
+			dependencies: ["0F1DC239BBC3D60F"]
+			id: "3DD9AFAD287F29C2"
+			tasks: [{
+				id: "7644151EF6ED371A"
+				type: "item"
+				item: "kubejs:desh_drill"
+			}]
+			rewards: [{
+				id: "4763B61AD0497974"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			shape: "square"
+			description: ["Plutonium can be obtained by Centrifuging depleted nuclear fuel rods. You're going to need a lot of this for Quantum Processors, so I recommend setting up multiple breeder reactors (reactors made just to deplete fuel as fast as possible)."]
+			dependencies: ["494104440623C825"]
+			id: "5A0295C9C976F0E0"
+			tasks: [{
+				id: "6EC869F12BC70C23"
+				type: "item"
+				item: "modern_industrialization:plutonium_dust"
+			}]
+			rewards: [{
+				id: "15B532AF60229F0A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.0d
+			shape: "square"
+			dependencies: ["0C73D9DE1468EBB1"]
+			id: "131D19CE92E22D58"
+			tasks: [{
+				id: "34BC698AC3DDD393"
+				type: "item"
+				item: "modern_industrialization:uranium_dust"
+			}]
+			rewards: [{
+				id: "544F21166221DFAA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 8.5d
+			y: 2.0d
+			shape: "rsquare"
+			dependencies: ["131D19CE92E22D58"]
+			id: "4E4FF04917B2E624"
+			tasks: [
+				{
+					id: "0C3BC21583C2EF92"
+					type: "item"
+					item: "modern_industrialization:uranium_235_dust"
+				}
+				{
+					id: "33028DAEF98A8564"
+					type: "item"
+					item: "modern_industrialization:uranium_238_dust"
+				}
+			]
+			rewards: [{
+				id: "64E26E537DD4C866"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: 9.5d
+			shape: "square"
+			description: [
+				"The Quantum Machine Hull is the final tier of Machine Hull in MI. It allows you to upgrade your machines to the Quantum tier. It's also used in several lategame recipes."
+				""
+				"With your first Quantum Machine Hull made, you have completed this chapter. You are now ready to approach the endgame in Chapter 6 - Quantum Age."
+			]
+			dependencies: ["23D9328B5F627E65"]
+			id: "286BD460010AA281"
+			tasks: [{
+				id: "323F561B1E2A8A07"
+				type: "item"
+				item: "modern_industrialization:quantum_machine_hull"
+			}]
+			rewards: [{
+				id: "4A8C8BF3274E15E0"
 				type: "xp"
 				xp: 100
 			}]

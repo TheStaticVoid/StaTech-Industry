@@ -36,8 +36,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('uncooked_steel_dust') }
         ],
         [ 
-            { amount: 1, item: mi('steel_ingot') },
-            { amount: 1, item: tr('dark_ashes_dust') }
+            { amount: 1, item: mi('steel_ingot') }
         ],
         null,
         null
@@ -52,8 +51,7 @@ ServerEvents.recipes(e => {
             { amount: 4, tag: 'c:carbon_dusts' }
         ],
         [
-            { amount: 1, item: mi('steel_ingot') },
-            { amount: 2, item: tr('dark_ashes_dust') }
+            { amount: 1, item: mi('steel_ingot') }
         ],
         null,
         null
@@ -81,8 +79,7 @@ ServerEvents.recipes(e => {
             { amount: 1, tag: 'c:iron_ingots' },
         ],
         [
-            { amount: 1, item: 'anim_guns:hardened_iron_ingot' },
-            { amount: 1, item: tr('dark_ashes_dust') }
+            { amount: 1, item: 'anim_guns:hardened_iron_ingot' }
         ],
         null,
         null
@@ -91,14 +88,13 @@ ServerEvents.recipes(e => {
     // -- TUNGSTEN + STEEL -> HOT TUNGSTENSTEEL -- //
     blastFurnace(
         128,
-        4800,
+        3600,
         [
             { amount: 1, tag: 'c:tungsten_ingots' },
             { amount: 1, tag: 'c:steel_ingots' }
         ],
         [
-            { amount: 1, item: tr('hot_tungstensteel_ingot') },
-            { amount: 2, item: tr('dark_ashes_dust') }
+            { amount: 1, item: tr('hot_tungstensteel_ingot') }
         ],
         null,
         null

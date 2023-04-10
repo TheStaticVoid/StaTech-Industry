@@ -27,7 +27,8 @@ ServerEvents.recipes(e => {
         'kibe:water_ring',
         'kibe:tank',
         'kibe:xp_shower',
-        'kibe:xp_drain'
+        'kibe:xp_drain',
+        'kibe:angel_ring'
     ];
     KIBE_DELETED_ITEMS.forEach( id => e.remove( {id: id} ));
 
@@ -75,25 +76,27 @@ ServerEvents.recipes(e => {
     // -- FAST CONVEYOR BELT -- //
     e.shaped('8x kibe:fast_conveyor_belt', [
         'RRR',
-        'CCC',
+        'CTC',
         'III'
     ],
     {
         R: 'minecraft:red_dye',
         C: 'modern_industrialization:conveyor',
-        I: '#c:iron_plates'
+        I: '#c:iron_plates',
+        T: 'kibe:regular_conveyor_belt'
     });
 
     // -- EXPRESS CONVEYOR BELT -- //
     e.shaped('8x kibe:express_conveyor_belt', [
         'UUU',
-        'CCC',
+        'CTC',
         'III'
     ],
     {
         U: 'minecraft:blue_dye',
         C: 'modern_industrialization:conveyor',
-        I: '#c:iron_plates'
+        I: '#c:iron_plates',
+        T: 'kibe:fast_conveyor_belt'
     });
 
     // -- DRAWBRIDGE -- //

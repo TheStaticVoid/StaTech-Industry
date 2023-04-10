@@ -1317,6 +1317,7 @@
 		{
 			x: 7.0d
 			y: -4.0d
+			shape: "rsquare"
 			subtitle: "GIGA DRILL BREAK"
 			description: [
 				"The Industrial Drill is an upgraded, electric powered drill that features a powered mode that can mine 3x3."
@@ -1347,6 +1348,7 @@
 		{
 			x: 9.0d
 			y: -4.0d
+			shape: "rsquare"
 			subtitle: "Say goodbye to the rainforests"
 			description: [
 				"The Industrial Chainsaw is an upgraded, electric powered chainsaw that features a powered mode that can instamine entire trees."
@@ -1377,6 +1379,7 @@
 		{
 			x: 8.0d
 			y: -4.0d
+			shape: "rsquare"
 			subtitle: "Like a Protosaber!"
 			description: [
 				"The Nanosaber is an upgraded, electric powered sword that features a powered mode that can deal insane damage."
@@ -1595,8 +1598,8 @@
 		{
 			title: "The Implosion Compressor"
 			icon: "modern_industrialization:implosion_compressor"
-			x: 13.0d
-			y: 2.0d
+			x: 11.0d
+			y: 3.5d
 			shape: "square"
 			subtitle: "KABOOOOOOM"
 			description: [
@@ -2466,6 +2469,7 @@
 		{
 			x: 8.5d
 			y: -2.0d
+			shape: "rsquare"
 			dependencies: ["08362FF409BFC7CC"]
 			id: "779458EF9AEE3AC9"
 			tasks: [{
@@ -2485,7 +2489,7 @@
 			shape: "square"
 			subtitle: "Creative Flight!"
 			description: [
-				"If you already tackled Route A, and reached all the planets in Ad Astra, then you surely have enough materials to make the Jet Suit, which can now be upgraded into the Gravichestplate. "
+				"If you already tackled Route A, and reached all the planets in Ad Astra, then you surely have enough materials to make the Jet Suit, which can now be upgraded into the Gravichestplate. It may be best to make a separate Jet Suit chestplate, as the Gravichestplate isn't airtight for future space endeavors."
 				""
 				"For the first time, you now have access to creative flight in the pack. I don't think I need to describe how powerful this is."
 			]
@@ -2506,6 +2510,7 @@
 		{
 			x: 10.0d
 			y: -4.0d
+			shape: "rsquare"
 			description: [
 				"The Industrial Jackhammer is a lot like the Industrial Drill, but with some drawbacks and benefits. "
 				""
@@ -3057,8 +3062,8 @@
 			}]
 		}
 		{
-			x: 13.0d
-			y: 3.5d
+			x: 11.0d
+			y: 5.0d
 			shape: "square"
 			description: ["Industrial TNT is required for recipes in the Implosion Compressor. Regular TNT would add too much impurity into the reaction, and therefore cannot be used."]
 			dependencies: ["0DF6FF0A1E872DC8"]
@@ -3104,6 +3109,83 @@
 				id: "7700374B6D439D9A"
 				type: "xp"
 				xp: 100
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			shape: "rsquare"
+			description: [
+				"After taking down the Wither, you can use the Nether Star alongside Blastproof Plates to upgrade your backpack to the Withered Backpack. This bad boy can hold 66 item stacks. "
+				""
+				"It maintains the fireproof status of the previous backpack."
+			]
+			dependencies: ["500668B023EA17CA"]
+			id: "2A0BC5CB56BB5BAD"
+			tasks: [{
+				id: "236DD489F61D3036"
+				type: "item"
+				item: "inmis:withered_backpack"
+			}]
+			rewards: [{
+				id: "7AB873246919CC13"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 13.0d
+			y: 2.0d
+			shape: "rsquare"
+			subtitle: "A worthy upgrade"
+			description: [
+				"With materials from the end and your newly acquired Iridium you can craft the final tier of backpack, the Endless Backpack."
+				""
+				"While not entirely \"endless,\" it does boast a whopping 90 item stacks. And yes, it still is fireproof."
+			]
+			dependencies: [
+				"0A7B765B2AC2DD6D"
+				"2A0BC5CB56BB5BAD"
+			]
+			id: "6E832DECC59EA741"
+			tasks: [{
+				id: "6D266874561DCB98"
+				type: "item"
+				item: "inmis:endless_backpack"
+			}]
+			rewards: [{
+				id: "23E1B01870E773FB"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			shape: "rsquare"
+			dependencies: ["08362FF409BFC7CC"]
+			id: "77DB7F098F57FA69"
+			tasks: [{
+				id: "5CADAEF0C97D32A8"
+				type: "item"
+				item: "modern_industrialization:titanium_barrel"
+			}]
+			rewards: [{
+				id: "7685F69C335E9EF1"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 9.5d
+			y: -2.0d
+			shape: "rsquare"
+			dependencies: ["08362FF409BFC7CC"]
+			id: "696D98D3D7D8FDCD"
+			tasks: [{
+				id: "2F56BCA7967F712A"
+				type: "item"
+				item: "modern_industrialization:titanium_tank"
 			}]
 		}
 	]

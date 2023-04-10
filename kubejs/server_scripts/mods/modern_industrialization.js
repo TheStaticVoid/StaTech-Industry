@@ -99,6 +99,28 @@ ServerEvents.recipes(e => {
         H: mi('advanced_machine_hull')
     });
 
+    // -- TUNGSTENSTEEL TANK -- //
+    e.shaped(mi('tungstensteel_tank'), [
+        'PPP',
+        'PGP',
+        'PPP'
+    ],
+    {
+        P: '#c:tungstensteel_plates',
+        G: '#c:glass_blocks'
+    });
+
+    // -- TUNGSTENSTEEL BARREL -- //
+    e.shaped(mi('tungstensteel_barrel'), [
+        'PPP',
+        'PBP',
+        'PPP'
+    ],
+    {
+        P: '#c:tungstensteel_plates',
+        B: '#c:wooden_barrels'
+    });
+
     // -- Gravichestplate -- //
     e.shaped(mi('gravichestplate'), [
         'PUP',

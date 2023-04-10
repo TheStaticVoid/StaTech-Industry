@@ -33,7 +33,6 @@
 			y: 3.0d
 			subtitle: "The power of a star in the palm of your hand"
 			description: ["The Fusion Reactor is the ultimate energy source! It can combine Deuterium, Tritium, and/or Helium-3 into Helium Plasma, the most powerful fuel in the game! However, it requires a large amount of energy to ignite the reaction."]
-			dependencies: ["286BD460010AA281"]
 			size: 1.5d
 			id: "6CD8A3092DDAC055"
 			tasks: [
@@ -100,23 +99,6 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 1.0d
-			description: ["The Quantum Machine Hull is the final tier of Machine Hull in MI. It allows you to upgrade your machines to the Quantum tier. It's also used in several lategame recipes."]
-			dependencies: ["23D9328B5F627E65"]
-			id: "286BD460010AA281"
-			tasks: [{
-				id: "323F561B1E2A8A07"
-				type: "item"
-				item: "modern_industrialization:quantum_machine_hull"
-			}]
-			rewards: [{
-				id: "4A8C8BF3274E15E0"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			x: -2.5d
 			y: -0.5d
 			description: [
@@ -124,7 +106,7 @@
 				""
 				"Filling it would be an achievement."
 			]
-			dependencies: ["286BD460010AA281"]
+			dependencies: ["2FDA67B4920D335D"]
 			id: "7F499A3A91F4AC6D"
 			tasks: [{
 				id: "1C2DEE6D23BE5CA1"
@@ -141,7 +123,7 @@
 			x: -2.5d
 			y: 0.5d
 			description: ["The Quantum Barrel is the biggest Barrel available in MI. It can store 2.14 billion stacks of a single item. "]
-			dependencies: ["286BD460010AA281"]
+			dependencies: ["2FDA67B4920D335D"]
 			id: "7D17913DECB347F1"
 			tasks: [{
 				id: "1DE9A31A935B6B9C"
@@ -163,10 +145,7 @@
 				""
 				"While this might seem like the end, it is not. Duping will now allow you to work towards the final chapter: The Endgame"
 			]
-			dependencies: [
-				"286BD460010AA281"
-				"3E139335E6F04C69"
-			]
+			dependencies: ["3E139335E6F04C69"]
 			size: 2.0d
 			id: "4FD7572FC6CC4140"
 			tasks: [{
@@ -184,7 +163,7 @@
 			x: -2.5d
 			y: 1.5d
 			description: ["A single Superconductor Storage Unit can hold an absolute insane 768 billion EU."]
-			dependencies: ["286BD460010AA281"]
+			dependencies: ["2FDA67B4920D335D"]
 			id: "0448EA623C79DA7B"
 			tasks: [{
 				id: "4445EC251C8C0248"
@@ -198,9 +177,8 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 4.0d
 			y: -0.5d
-			dependencies: ["286BD460010AA281"]
 			id: "18A5221397607F68"
 			tasks: [{
 				id: "003B87D6A0BE31DA"
@@ -248,14 +226,13 @@
 		}
 		{
 			x: 5.5d
-			y: -2.5d
+			y: 2.0d
 			subtitle: "A sword to end all swords"
 			description: [
 				"The Quantum Sword is the most powerful sword in the entire game. It will instantly kill anything you hit with it (this includes your friends)."
 				""
 				"Still not as cool as the Sword of the Cosmos..."
 			]
-			dependencies: ["3E139335E6F04C69"]
 			id: "152140F96FA2944E"
 			tasks: [{
 				id: "2984BF4A049BC986"
@@ -271,14 +248,13 @@
 		{
 			title: "Quantum Suit"
 			x: 5.5d
-			y: -1.5d
+			y: 3.0d
 			subtitle: "Basically creative mode"
 			description: [
 				"The Quantum Suit is a Jet Suit ( and Gravichestplate ) empowered with Quantum Upgrades to make it the most powerful armor in the game. You don't take damage while wearing this suit and you have creative-flight similar to the Gravi Chestplate."
 				""
 				"Each piece individually adds a 25% chance to not take damage, with full protection when wearing the entire set."
 			]
-			dependencies: ["3E139335E6F04C69"]
 			id: "1E378F2F641048F1"
 			tasks: [
 				{
@@ -323,6 +299,84 @@
 				id: "5930C5079074735F"
 				type: "xp"
 				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["23D9328B5F627E65"]
+			id: "2FDA67B4920D335D"
+			tasks: [{
+				id: "658A5CFBE21AA05A"
+				type: "item"
+				item: "modern_industrialization:quantum_machine_hull"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 7.0d
+			dependencies: ["2E258EE704230870"]
+			id: "576E585F8DFC7073"
+			tasks: [{
+				id: "13FF5B9632CF71F1"
+				type: "item"
+				item: "create:creative_motor"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 7.0d
+			subtitle: "The World is Yours"
+			dependencies: ["2E258EE704230870"]
+			id: "1EE269859E6DD37B"
+			tasks: [{
+				id: "7A9A9CC7B61F520A"
+				type: "item"
+				item: "create:handheld_worldshaper"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 7.0d
+			dependencies: ["2E258EE704230870"]
+			id: "3DDD69F79F436684"
+			tasks: [{
+				id: "78F18B3BBAA3C573"
+				type: "item"
+				item: "modern_industrialization:creative_tank"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 7.0d
+			dependencies: ["2E258EE704230870"]
+			id: "1BE7697603B3C94F"
+			tasks: [{
+				id: "238DC19F04500FAA"
+				type: "item"
+				item: "modern_industrialization:creative_barrel"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 7.0d
+			dependencies: ["2E258EE704230870"]
+			id: "208D9031D68CE1AB"
+			tasks: [{
+				id: "50A838B28E13936D"
+				type: "item"
+				item: "modern_industrialization:creative_storage_unit"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			dependencies: ["4FD7572FC6CC4140"]
+			id: "2E258EE704230870"
+			tasks: [{
+				id: "069B38114AE87EC0"
+				type: "item"
+				item: "modern_industrialization:replicator"
 			}]
 		}
 	]

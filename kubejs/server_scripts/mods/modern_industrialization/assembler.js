@@ -1,16 +1,17 @@
 ServerEvents.recipes(e => {
 
-    const REMOVED_RECIPE = [
-        'modern_industrialization:compat/ae2/logic_processor',
-        'modern_industrialization:compat/ae2/calculation_processor',
-        'modern_industrialization:compat/ae2/engineering_processor'
-    ];
-    REMOVED_RECIPE.forEach(id => e.remove({id: id}));
-
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let astra = (id) => `ad_astra:${id}`;
     let mc = (id) => `minecraft:${id}`;
+
+    const REMOVED_RECIPE = [
+        mi('compat/ae2/logic_processor'),
+        mi('compat/ae2/calculation_processor'),
+        mi('compat/ae2/engineering_processor'),        
+        mi('electric_age/component/assembler/qbit')
+    ];
+    REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
     let assembler = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
@@ -150,8 +151,57 @@ ServerEvents.recipes(e => {
             { amount: 500, fluid: mi('polyethylene') }
         ],
         null
+    );
+
+    // -- QBIT -- //
+    assembler(
+        20,
+        200,
+        [
+            { amount: 2, item: mi('arithmetic_logic_unit') },
+            { amount: 2, tag: 'c:carbon_plates' },
+            { amount: 2, tag: 'c:tungstensteel_plates' },
+            { amount: 6, item: mi('superconductor_wire') }
+        ],
+        [
+            { amount: 1, item: mi('qbit') }
+        ],
+        [
+            { amount: 250, fluid: mi('cryofluid') },
+            { amount: 50, fluid: mi('tritium') }
+        ],
+        null
+    );
+
+    // -- TUNGSTENSTEEL TANK -- //
+    assembler(
+        16,
+        100,
+        [
+            { amount: 8, tag: 'c:tungstensteel_plates' },
+            { amount: 1, tag: 'c:glass_blocks' }
+        ],
+        [
+            { amount: 1, item: mi('tungstensteel_tank') }
+        ],
+        null,
+        null
+    );
+
+    // -- TUNGSTENSTEEL BARREL -- //
+    assembler(
+        16,
+        100,
+        [
+            { amount: 1, tag: 'c:wooden_barrels' },
+            { amount: 8, tag: 'c:tungstensteel_plates' }
+        ],
+        [
+            { amount: 1, item: mi('tungstensteel_barrel') }
+        ],
+        null,
+        null
     )
-    
 
     // -- SPACE HELMET -- //
     assembler(

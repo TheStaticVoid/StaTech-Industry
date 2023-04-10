@@ -46,7 +46,12 @@ ServerEvents.recipes(e => {
         astra('recipes/rocket_fin'),
         astra('recipes/rocket_nose_cone'),
         astra('recipes/steel_engine'),
-        astra('recipes/jet_suit')
+        astra('recipes/jet_suit'),
+        astra('recipes/desh_engine'),
+        astra('recipes/ostrum_tank'),
+        astra('recipes/ostrum_engine'),
+        astra('recipes/calorite_tank'),
+        astra('recipes/calorite_engine')
     ];
     AD_ASTRA_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove({ type: astra('fuel_conversion') });
@@ -154,18 +159,6 @@ ServerEvents.recipes(e => {
         E: astra('desh_engine'),
         W: astra('wheel'),
         P: astra('desh_plate')
-    });
-
-    // -- DESH TANK -- //
-    e.shaped(astra('desh_tank'), [
-        'DD ',
-        'DBR',
-        'DD '
-    ],
-    {
-        D: astra('desh_plate'),
-        B: mi('steel_tank'),
-        R: mi('steel_rod')
     });
 
     // -- JET SUIT -- //
