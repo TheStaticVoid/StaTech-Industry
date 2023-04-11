@@ -27,7 +27,8 @@ ServerEvents.recipes(e => {
         mi('vanilla_recipes/packager/chains'),
         mi('materials/kanthal/craft/coil'),
         mi('materials/superconductor/craft/coil'),
-        mi('armor/gravichestplate')
+        mi('armor/gravichestplate'),
+        mi('electric_age/component/craft/ultradense_metal_ball_asbl')
     ];
 
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));

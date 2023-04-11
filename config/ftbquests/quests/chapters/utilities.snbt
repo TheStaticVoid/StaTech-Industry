@@ -216,10 +216,10 @@
 						Count: 1b
 						tag: {
 							state: {
-								data: { }
 								state: {
 									Name: "minecraft:air"
 								}
+								data: { }
 								serializer: "buildinggadgets:dummy_serializer"
 							}
 							energy: 500000.0d
@@ -234,10 +234,10 @@
 						Count: 1b
 						tag: {
 							state: {
-								data: { }
 								state: {
 									Name: "minecraft:air"
 								}
+								data: { }
 								serializer: "buildinggadgets:dummy_serializer"
 							}
 							energy: 500000.0d
@@ -251,6 +251,7 @@
 						id: "buildinggadgets:gadget_copy_paste"
 						Count: 1b
 						tag: {
+							energy: 500000.0d
 							"buildinggadgets:template_key": {
 								template_id: [I;
 									-1638511729
@@ -259,7 +260,6 @@
 									-1770359759
 								]
 							}
-							energy: 500000.0d
 						}
 					}
 				}
@@ -669,10 +669,10 @@
 					tag: {
 						BlockEntityTag: {
 							Items: [ ]
-							x: -198
+							y: 64
 							id: "kibe:cooler"
 							z: 126
-							y: 64
+							x: -198
 						}
 					}
 				}
@@ -737,7 +737,7 @@
 			title: "Wither Builder"
 			x: 3.0d
 			y: 1.0d
-			shape: "square"
+			shape: "rsquare"
 			description: [
 				"Fighting the Wither can be very dangerous and can cause a lot of damage to your world if you're not careful."
 				""
@@ -794,6 +794,8 @@
 				"Cursed Seeds can be used on regular grass or dirt blocks to transform them into Cursed Dirt. The grass and dirt needs to be in darkness for you to convert it. "
 				""
 				"Cursed Dirt is a simple grass-like block that burns when exposed to sunlight, but will vastly improve spawn rates of monsters in dark environments."
+				""
+				"If you're playing on a server, consider using the Soul Revitilizer for better performance."
 			]
 			dependencies: ["38B71B456569296B"]
 			id: "1CB50572194C932F"
@@ -846,6 +848,35 @@
 			}]
 			rewards: [{
 				id: "1B584F1DAB867188"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Chimes"
+			x: 4.5d
+			y: 1.0d
+			shape: "rsquare"
+			description: [
+				"Chimes add a nice ambient sound to your base, as well as offering protection from those pesky phantoms! Each type has a different sound, see which one you like best!"
+				""
+				"Phantoms do not approach/attack players who are near chiming wind chimes. You can tie/untie a wind chime by crouch + right-clicking the block with an empty hand. Tied Wind Chimes reduce chiming sounds and movement of a Wind Chime, along with allowing Phantoms to approach once again."
+			]
+			id: "1853C266F78A8777"
+			tasks: [{
+				id: "37518E40AA8F3762"
+				type: "item"
+				title: "Any Chimes"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:chimes"
+					}
+				}
+			}]
+			rewards: [{
+				id: "29EC0300BFDF9512"
 				type: "xp"
 				xp: 100
 			}]

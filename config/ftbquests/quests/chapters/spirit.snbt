@@ -4,17 +4,419 @@
 	order_index: 5
 	filename: "spirit"
 	title: "Spirit"
+	icon: "spirit:soul_cage"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [{
-		x: -1.0d
-		y: -0.5d
-		id: "431D47D4C78964FF"
-		tasks: [{
-			id: "6E0B17F1F7099195"
-			type: "item"
-			item: "spirit:soul_cage"
-		}]
-	}]
+	quests: [
+		{
+			title: "Welcome to Spirit"
+			icon: "spirit:soul_cage"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"Spirit is a data driven sould magic mod. Utilizng the power of souls, player can summon mobs, create new ones, or channel their power to perform incredible new feats. "
+				""
+				"To get started, you'll need a Soul Fire. This is made by lighting a fire ontop of Soul Sand or Soul Soil blocks."
+			]
+			id: "0D67C6698685A00A"
+			tasks: [{
+				id: "7D9E53F848D75E9E"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "421D11D4A5D9D91F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["6E718515A6A76201"]
+			id: "6075A8D0F4DE541A"
+			tasks: [{
+				id: "1568A142DEC946F2"
+				type: "item"
+				item: "spirit:soul_steel_ingot"
+			}]
+			rewards: [{
+				id: "3A1B16FE5B2C0D09"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Soul Powder Blocks will make up the basis of some of the basic recipes. These are consumed when the recipe completes, so plan to make a lot."]
+			dependencies: ["76894C28C75188A1"]
+			id: "6E718515A6A76201"
+			tasks: [{
+				id: "641DB6B023AE4466"
+				type: "item"
+				item: "spirit:soul_powder_block"
+			}]
+			rewards: [{
+				id: "2B44EB9CBA82C530"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Soul Powder is an essential ingredient in the Spirit mod. You can drop Glowstone or Glowstone dust in a Soul Fire to convert it into Soul Powder."]
+			dependencies: ["0D67C6698685A00A"]
+			id: "76894C28C75188A1"
+			tasks: [{
+				id: "222CE265BCCC9D31"
+				type: "item"
+				item: "spirit:soul_powder"
+			}]
+			rewards: [{
+				id: "6D2CDFF7B67FC8C5"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Soul Steel Tools"
+			x: 6.5d
+			y: -1.5d
+			shape: "rsquare"
+			description: [
+				"Soul Steel Tools all grant double souls in Soul Catalysts when you kill the bound mob and allow for repairing if you place them in a Soul Fire."
+				""
+				"Their tier is on par with vanilla Diamond."
+				""
+				"If you have a Soul Crystal, you can empower the tools to have additional effects. Souls are consumed when the tool is used while empowered."
+				""
+				"Soul Steel Bows require souls to shoot rather than arrows."
+			]
+			dependencies: ["6075A8D0F4DE541A"]
+			id: "248EDBE399280D24"
+			tasks: [
+				{
+					id: "02696A9A97A87103"
+					type: "item"
+					item: {
+						id: "spirit:soul_steel_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2054FC8AC5492920"
+					type: "item"
+					item: {
+						id: "spirit:soul_steel_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0526BF49344288CA"
+					type: "item"
+					item: {
+						id: "spirit:soul_steel_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "34D73C9517BAD4A8"
+					type: "item"
+					item: {
+						id: "spirit:soul_steel_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "17C3A9674A254EDA"
+					type: "item"
+					item: {
+						id: "spirit:soul_steel_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "734EBD7E63A44269"
+					type: "item"
+					item: {
+						id: "spirit:soul_steel_bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0C3C11B7FDD7384E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			shape: "rsquare"
+			description: ["Converts the soul on a Soul Pedestal into a Crude Soul. Why? I'm not sure either..."]
+			dependencies: [
+				"6075A8D0F4DE541A"
+				"74DE588065FB6421"
+			]
+			id: "3517F74596880D48"
+			tasks: [{
+				id: "18E4595BA9428941"
+				type: "item"
+				item: "spirit:soul_steel_wand"
+			}]
+			rewards: [{
+				id: "5B0101A74113734B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["This pedestal mainly is for clearing the souls stored in a Soul Crystal. Right-click with a Crude Soul Crystal on top to clear the souls."]
+			dependencies: ["6075A8D0F4DE541A"]
+			id: "77454A0FC596FD77"
+			tasks: [{
+				id: "550AF746A9317861"
+				type: "item"
+				item: "spirit:crystal_pedestal"
+			}]
+			rewards: [{
+				id: "1AF57C9B556C35EE"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Soul Slate can be made by engulfing Deepslate in a Soul Fire."]
+			dependencies: ["0D67C6698685A00A"]
+			id: "775B33F2477BED1A"
+			tasks: [{
+				id: "1ECA409181D28ACB"
+				type: "item"
+				item: "spirit:soul_slate"
+			}]
+			rewards: [{
+				id: "6E6D6D32321B9CA6"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: [
+				"Soul Crystals will be used to store the souls of slain mobs."
+				""
+				"This process will consume the Quartz Blocks."
+			]
+			dependencies: ["76894C28C75188A1"]
+			id: "10FCC8343C29D893"
+			tasks: [{
+				id: "158A7AECD8951875"
+				type: "item"
+				item: "spirit:soul_crystal_shard"
+			}]
+			rewards: [{
+				id: "64D5BE2FC485FE6D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["The Crude Soul Crystal is a key component to getting your first Soul Crystal. "]
+			dependencies: [
+				"775B33F2477BED1A"
+				"10FCC8343C29D893"
+			]
+			id: "30D1F9DD071C8528"
+			tasks: [{
+				id: "105A8C739C0569C6"
+				type: "item"
+				item: "spirit:crude_soul_crystal"
+			}]
+			rewards: [{
+				id: "6EC29D035DD52579"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			shape: "rsquare"
+			description: ["Soul Glass luckily doesn't break the blocks required to craft it like the other recipes. You will only need 4x Lapis Lazuli Blocks to get started."]
+			dependencies: ["0D67C6698685A00A"]
+			id: "74DE588065FB6421"
+			tasks: [{
+				id: "794F67CA6ED00670"
+				type: "item"
+				item: "spirit:soul_glass"
+			}]
+			rewards: [{
+				id: "2920303431E50D64"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.0d
+			shape: "rsquare"
+			description: [
+				"Soul Crystals will store the souls of a single type of mob when you kill them. Once you kill 64 of the same mob, the crystal will rank up to tier 1. You can see your progress by hovering over the cyrstal in your inventory."
+				""
+				"You will lose any souls in the Crude Soul Crystal during this process!"
+			]
+			dependencies: [
+				"30D1F9DD071C8528"
+				"74DE588065FB6421"
+			]
+			id: "1F17C0D390C24243"
+			tasks: [{
+				id: "69436D5AD6B26531"
+				type: "item"
+				item: "spirit:soul_crystal"
+			}]
+			rewards: [{
+				id: "19FADDF7996B0E25"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			shape: "rsquare"
+			description: ["Obtained by breaking any spawner in the world. The type doesn't tend to matter, so feel free to break spawners of mundane mobs (zombies)."]
+			id: "2EE894E341889350"
+			tasks: [{
+				id: "3A47BD4F118D09E3"
+				type: "item"
+				item: "spirit:broken_spawner"
+			}]
+			rewards: [{
+				id: "0E170F219A981D35"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			shape: "rsquare"
+			description: [
+				"The Soul Cage is made by engulfing a Broken Spawner in a Soul Fire surrounded by Soul Steel Blocks."
+				""
+				"Soul Cages can be placed anywhere in the world in order to spawn mobs of the souls you have stored in Soul Crystals. The Soul Crystal will need at least 64 souls of the same mob in order to activate the Soul Cage."
+				""
+				"Right-click the Soul Cage with a Soul Crystal to activate the Soul Cage and it will spawn soul-bound mobs during the night. These mobs will drop the same loot and experience as normal mobs, and the higher the amount of souls used to activate the Soul Cage, the better it will perform."
+			]
+			dependencies: [
+				"2EE894E341889350"
+				"6075A8D0F4DE541A"
+			]
+			id: "3E7B47F377A4D739"
+			tasks: [{
+				id: "0AAC9CFF8B4280B8"
+				type: "item"
+				item: "spirit:soul_cage"
+			}]
+			rewards: [{
+				id: "007930003A88837B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "Souls to feed the factory"
+			description: [
+				"The Soul Vitalizer is a key component in simulating mob drops. It's quite expensive to make, but it will be very worth it."
+				""
+				"Once placed, the Soul Vitalizer will show where the Pylons should be placed. After placing the pylons, you should be able to use the Soul Vitalizer. As shown in the GUI, it needs storage as well as an energy input. You can use MI cables to power your vitalizer. Once the requirements are met, place a Soul Crystal in to start vitalizing."
+				""
+				"Once active, you will see particles around your Pylons as well as progress in the GUI. Once complete, the mob drops are automatically placed in the output."
+				""
+				"The effectiveness of the progress depends on the tier of the Soul Crystal in the machine."
+			]
+			dependencies: [
+				"775B33F2477BED1A"
+				"6075A8D0F4DE541A"
+			]
+			size: 1.5d
+			id: "634FCF8D69F2C9DA"
+			tasks: [{
+				id: "05652235BB65B578"
+				type: "item"
+				item: "vitalize:soul_revitalizer"
+			}]
+			rewards: [{
+				id: "69888479110A80F2"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Pylons"
+			x: 1.0d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "You must construct additional pylons"
+			description: [
+				"Pylons are support blocks and a needed structure for the Soul Vitalizer to work."
+				""
+				"Pylons can be upgraded to provide different effects."
+			]
+			dependencies: ["634FCF8D69F2C9DA"]
+			id: "222E172E0A9EB98E"
+			tasks: [{
+				id: "6628CD50AAE64D45"
+				type: "item"
+				item: "vitalize:pylon_base"
+				count: 8L
+			}]
+			rewards: [{
+				id: "72D601BAB406E3DF"
+				type: "xp"
+				xp: 100
+			}]
+		}
+	]
 	quest_links: [ ]
 }

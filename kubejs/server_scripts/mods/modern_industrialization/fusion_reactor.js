@@ -3,11 +3,11 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
 
-    const REMOVED_RECIPES = [
-        mi('fusion_reactor/deuterium_deuterium'),
-        mi('fusion_reactor/helium_helium'),
-    ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+    // const REMOVED_RECIPES = [
+    //     mi('fusion_reactor/deuterium_deuterium'),
+    //     mi('fusion_reactor/helium_helium'),
+    // ];
+    // REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
     let fusion = (eu, duration, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
