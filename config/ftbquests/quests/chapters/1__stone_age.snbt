@@ -481,7 +481,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: -4.0d
 			y: 2.5d
 			shape: "rsquare"
 			description: [
@@ -503,7 +503,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: -2.0d
 			y: 2.5d
 			shape: "rsquare"
 			description: ["Why lug around a crafting table everywhere you go when you could instead make a Pocket Crafting Table. Using this item, you will have access to a 3x3 crafting grid anywhere you go!"]
@@ -556,8 +556,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 2.5d
+			x: -2.5d
+			y: 1.5d
 			shape: "rsquare"
 			description: ["Wooden Buckets act just like normal buckets with the only downside being they cannot pick up hot liquids such as lava."]
 			dependencies: ["045C683BF6E216CB"]
@@ -575,7 +575,7 @@
 		}
 		{
 			x: -3.5d
-			y: 2.5d
+			y: 1.5d
 			shape: "rsquare"
 			description: ["The Torch Sling uses torches from your inventory as ammo. Torches are placed where they land."]
 			dependencies: ["045C683BF6E216CB"]
@@ -632,7 +632,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -3.0d
 			y: 2.5d
 			shape: "rsquare"
 			description: ["Stores exactly 1 stack of items. Can be useful in some automations."]
@@ -1083,6 +1083,189 @@
 				id: "72902429B85D9AC6"
 				type: "xp"
 				xp: 100
+			}]
+		}
+		{
+			title: "Tom's Simple Storage Mod"
+			x: 0.0d
+			y: 2.5d
+			shape: "rsquare"
+			description: [
+				"Tom's Simple Storage Mod is going to be a godsend for the early game, as you won't have access to a full Applied Energistics 2 network until Digital Circuits."
+				""
+				"The Inventory Connector acts similarly to the AE2 Controller. It's the heart of an inventory network. You can connect terminals to the Inventory Connector to access all the linked inventories."
+			]
+			dependencies: ["045C683BF6E216CB"]
+			size: 1.5d
+			id: "6BBBD642A60FDFB5"
+			tasks: [{
+				id: "71B5C2E2CBC5F162"
+				type: "item"
+				item: "toms_storage:ts.inventory_connector"
+			}]
+			rewards: [{
+				id: "0F9405E1445718F8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			shape: "rsquare"
+			description: ["The Storage Terminal can be connected to the Inventory Connector to display all the linked inventories and access all the items."]
+			dependencies: ["6BBBD642A60FDFB5"]
+			id: "3ED795611B49EB0E"
+			tasks: [{
+				id: "674CFAB6B09EF995"
+				type: "item"
+				item: "toms_storage:ts.storage_terminal"
+			}]
+			rewards: [{
+				id: "5F78BD7398A9A656"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.0d
+			shape: "rsquare"
+			description: ["The Crafting Terminal is an upgraded terminal that allows you to craft while accessing your inventory network. Pretty much similar to the AE2 Crafting Terminal."]
+			dependencies: ["3ED795611B49EB0E"]
+			id: "5E15C005B58CC8D7"
+			tasks: [{
+				id: "4DCC84445F628AE7"
+				type: "item"
+				item: "toms_storage:ts.crafting_terminal"
+			}]
+			rewards: [{
+				id: "08DBE5262E3815D4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			shape: "rsquare"
+			description: ["The Wireless Terminal is an item that can be used to remotely access your inventory Terminals. To use, hold the Wireless Terminal and aim at an terminal on your network, you'll need to be within 16 blocks to do so."]
+			dependencies: ["6BBBD642A60FDFB5"]
+			id: "3B4AD85236538A6A"
+			tasks: [{
+				id: "33D57845007A1A31"
+				type: "item"
+				item: "toms_storage:ts.wireless_terminal"
+			}]
+			rewards: [{
+				id: "011366C00672A054"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Inventory Cables"
+			x: -1.5d
+			y: 4.0d
+			shape: "rsquare"
+			subtitle: "Connect all the things!"
+			description: ["Inventory Cables can extend the range of your inventory connection. Use an Inventory Cable Connector to link the inventory to the cable."]
+			dependencies: ["6BBBD642A60FDFB5"]
+			id: "202F9363708E9BA5"
+			tasks: [
+				{
+					id: "682E301AF55B916D"
+					type: "item"
+					item: "toms_storage:ts.inventory_cable"
+				}
+				{
+					id: "547BB1BAED3335DE"
+					type: "item"
+					item: "toms_storage:ts.inventory_cable_connector"
+				}
+			]
+			rewards: [{
+				id: "1FA9F8682CE97269"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			shape: "rsquare"
+			description: [
+				"The Advanced Wireless Terminal allows you to access your network without having to be nearby and looking at the terminal. Shift-right click a terminal to bind to it."
+				""
+				"Placing a tier 1 beacon near the bound terminal will allow you to access the inventory anywhere in the current dimension."
+				"Placing a full tier 4 beacon near the bound terminal will allow you to access the inventory anywhere, even across dimensions. "
+				""
+				"The chunks the inventories are in will need to be loaded to access them remotely."
+			]
+			dependencies: ["3B4AD85236538A6A"]
+			id: "559DE4D9670C28F8"
+			tasks: [{
+				id: "3953D363A8837FE6"
+				type: "item"
+				item: "toms_storage:ts.adv_wireless_terminal"
+			}]
+			rewards: [{
+				id: "4A89F6AB35F63EB4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			shape: "rsquare"
+			description: ["The Inventory Trim can extend your Inventory Connector's connection."]
+			dependencies: ["6BBBD642A60FDFB5"]
+			id: "15266EC696E60BE3"
+			tasks: [{
+				id: "69C633BC22E5E9E5"
+				type: "item"
+				item: "toms_storage:ts.trim"
+			}]
+			rewards: [{
+				id: "117C48CF501A396B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			shape: "rsquare"
+			description: [
+				"The Basic Inventory Hopper can import or export from your inventory network."
+				""
+				"Right click to set the filter, shift-right click with an empty hand to clear the filter."
+			]
+			dependencies: ["6BBBD642A60FDFB5"]
+			id: "07F958D1B6C27546"
+			tasks: [{
+				id: "29938D65B3258B57"
+				type: "item"
+				item: "toms_storage:ts.inventory_hopper_basic"
+			}]
+			rewards: [{
+				id: "2679EC6B35F8307C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			shape: "rsquare"
+			description: ["Emits redstone signals based on your inventory storage. Similar to the AE2 Level Emitter."]
+			dependencies: ["6BBBD642A60FDFB5"]
+			id: "532263D258F71B9A"
+			tasks: [{
+				id: "2D0F6AB857FDC64E"
+				type: "item"
+				item: "toms_storage:ts.level_emitter"
 			}]
 		}
 	]

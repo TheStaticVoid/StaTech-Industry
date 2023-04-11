@@ -9,7 +9,8 @@ ServerEvents.recipes(e => {
         mi('compat/ae2/logic_processor'),
         mi('compat/ae2/calculation_processor'),
         mi('compat/ae2/engineering_processor'),        
-        mi('electric_age/component/assembler/qbit')
+        mi('electric_age/component/assembler/qbit'),
+        mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball')
     ];
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
@@ -201,7 +202,25 @@ ServerEvents.recipes(e => {
         ],
         null,
         null
-    )
+    );
+
+    // -- ULTRADENSE METAL BALL -- //
+    assembler(
+        512,
+        600,
+        [
+            { amount: 4, item: mi('tungstensteel_large_plate') },
+            { amount: 4, tag: 'c:lead_plates' },
+            { amount: 1, tag: 'c:iridium_alloy_plates' }
+        ],
+        [
+            { amount: 1, item: mi('ultradense_metal_ball') }
+        ],
+        [
+            { amount: 1000, fluid: mi('neutronium') }
+        ],
+        null
+    );
 
     // -- SPACE HELMET -- //
     assembler(
@@ -262,5 +281,134 @@ ServerEvents.recipes(e => {
         [
             { amount: 1, item: astra('space_boots') }
         ]
+    );
+
+    // -------------------------
+    // ENDGAME RECIPES
+    // -------------------------
+
+    // -- CREATIVE STORAGE UNIT -- //
+    assembler(
+        32000,
+        2400,
+        [
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('superconductor_storage_unit') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
+        ],
+        [
+            { amount: 1, item: mi('creative_storage_unit') }
+        ],
+        [
+            { amount: 16000, fluid: mi('uu_matter') },
+            { amount: 16000, fluid: mi('neutronium') }
+        ],
+        null
+    );
+
+    // -- CREATIVE BARREL -- //
+    assembler(
+        32000,
+        2400,
+        [
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('quantum_barrel') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
+        ],
+        [
+            { amount: 1, item: mi('creative_barrel') }
+        ],
+        [
+            { amount: 16000, fluid: mi('uu_matter') },
+            { amount: 16000, fluid: mi('neutronium') }
+        ],
+        null
+    );
+
+    // -- CREATIVE TANK -- //
+    assembler(
+        32000,
+        2400,
+        [
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('quantum_tank') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
+        ],
+        [
+            { amount: 1, item: mi('creative_tank') }
+        ],
+        [
+            { amount: 16000, fluid: mi('uu_matter') },
+            { amount: 16000, fluid: mi('neutronium') }
+        ],
+        null
+    );
+
+    // -- CREATIVE MOTOR -- //
+    assembler(
+        32000,
+        2400,
+        [
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('plasma_turbine') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
+        ],
+        [
+            { amount: 1, item: 'create:creative_motor' }
+        ],
+        [
+            { amount: 16000, fluid: mi('uu_matter') },
+            { amount: 16000, fluid: mi('neutronium') }
+        ],
+        null
+    );
+
+    // -- CREATIVE WORLDSHAPER -- //
+    assembler(
+        32000,
+        2400,
+        [
+            { amount: 1, item: mi('quantum_helmet') },
+            { amount: 64, item: mi('creative_tank') },
+            { amount: 1, item: mi('quantum_chestplate') },
+            { amount: 64, item: mi('creative_storage_unit') },
+            { amount: 1, item: mi('quantum_sword') },
+            { amount: 64, item: 'create:creative_motor' },
+            { amount: 1, item: mi('quantum_leggings') },
+            { amount: 64, item: mi('creative_barrel') },
+            { amount: 1, item: mi('quantum_boots') }
+        ],
+        [
+            { amount: 1, item: 'create:handheld_worldshaper' }
+        ],
+        [
+            { amount: 16000, fluid: mi('uu_matter') },
+            { amount: 16000, fluid: mi('neutronium') }
+        ],
+        null
     );
 });

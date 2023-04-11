@@ -94,7 +94,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 0.5d
 			y: -2.0d
 			shape: "rsquare"
 			description: ["The EV tier storage unit. It can store a little more than 45 million EU. "]
@@ -112,7 +112,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -0.5d
 			y: -2.0d
 			shape: "rsquare"
 			description: ["With the Highly Advanced Machine Hulls you now have access to Ultimate Solar Panels. This will generate 192 EU/t during the day, and 16 EU/t at night. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
@@ -346,7 +346,7 @@
 		}
 		{
 			title: "EV Cables"
-			x: 1.0d
+			x: 1.5d
 			y: -2.0d
 			shape: "square"
 			description: [
@@ -578,7 +578,7 @@
 		{
 			x: 7.0d
 			y: 5.5d
-			shape: "rsquare"
+			shape: "square"
 			subtitle: "Surprisingly Ineffective"
 			description: [
 				"With your Plutonium byproducts, you can now create Nukes. These unfortunately do not explode like you would expect and are mainly used for crafting Singularities."
@@ -733,6 +733,60 @@
 			}]
 			rewards: [{
 				id: "4A8C8BF3274E15E0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			shape: "rsquare"
+			description: ["Running out of power? Well the Dragon Egg Energy Siphon won't save you there, but it can be used to passively generate 4096 EU/t."]
+			dependencies: ["268F9C5384CD54EC"]
+			id: "545FBEB4D3A1C987"
+			tasks: [{
+				id: "3FD5C33750729B21"
+				type: "item"
+				item: "techreborn:dragon_egg_syphon"
+			}]
+			rewards: [{
+				id: "426AEFC232CC6312"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			shape: "rsquare"
+			description: ["The Lapotronic Energy Orb is an upgrade to the Lapotron Crystal. It has a 100M energy storage."]
+			dependencies: ["2F0042673C0E3910"]
+			id: "268F9C5384CD54EC"
+			tasks: [{
+				id: "176A7669B06753B5"
+				type: "item"
+				item: "techreborn:lapotronic_orb"
+			}]
+			rewards: [{
+				id: "2220B52B2787A44D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			shape: "rsquare"
+			description: ["The Lapotronic Orbpack is the wearable version of the Lapotronic Energy Orb."]
+			dependencies: ["268F9C5384CD54EC"]
+			id: "20174051C1847D01"
+			tasks: [{
+				id: "05359E9120194125"
+				type: "item"
+				item: "techreborn:lapotronic_orbpack"
+			}]
+			rewards: [{
+				id: "15B0842EBD9DA8D7"
 				type: "xp"
 				xp: 100
 			}]

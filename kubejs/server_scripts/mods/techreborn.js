@@ -1,266 +1,316 @@
 ServerEvents.recipes(e => {
+
+    let tr = (id) => `techreborn:${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
+    let ae = (id) => `ae2:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+
     const DELETED_RECIPES = [
-        'techreborn:smelting/refined_iron_ingot_from_iron_ingot',
-        'techreborn:blasting/refined_iron_ingot_from_iron_ingot',
-        'techreborn:smelting/refined_iron_plate_from_c_iron_plates',
-        'techreborn:blasting/refined_iron_plate_from_c_iron_plates',
-        'techreborn:rolling_machine/cupronickel_heating_coil',
-        'techreborn:crafting_table/machine/low_voltage_su',
-        'techreborn:crafting_table/paper',
-        'techreborn:crafting_table/machine/extractor',
-        'techreborn:crafting_table/battery/red_cell_battery',
-        'techreborn:crafting_table/tool/electric_treetap',
-        'techreborn:crafting_table/machine/auto_crafting_table',
-        'techreborn:crafting_table/machine/recycler',
-        'techreborn:crafting_table/parts/wood_plate',
-        'techreborn:rolling_machine/nichrome_heating_coil',
-        'techreborn:chemical_reactor/synthetic_redstone_crystal',
-        'techreborn:assembling_machine/lithium_ion_battery',
-        'techreborn:centrifuge/glowstone_dust',
-        'techreborn:centrifuge/endstone_dust',
-        'techreborn:crafting_table/armor/lithium_ion_batpack',
-        'techreborn:crafting_table/small_dust/titanium_small_dust_from_dust',
-        'techreborn:industrial_electrolyzer/pyrite_dust',
-        'techreborn:centrifuge/lapis_lazuli',
-        'techreborn:compressor/lazurite_plate',
-        'techreborn:assembling_machine/energy_crystal',
-        'techreborn:crafting_table/battery/lapotron_crystal',
-        'techreborn:crafting_table/tool/industrial_drill',
-        'techreborn:crafting_table/tool/industrial_chainsaw',
-        'techreborn:crafting_table/tool/nanosaber',
-        'techreborn:crafting_table/tool/industrial_jackhammer',
-        'techreborn:crafting_table/ingot/tungsten_ingot_from_nugget',
-        'techreborn:crafting_table/dust/raw_tungsten_from_small',
-        'techreborn:crafting_table/dust/chrome_dust_from_small',
-        'techreborn:crafting_table/dust/invar_dust_from_small'
+        tr('smelting/refined_iron_ingot_from_iron_ingot'),
+        tr('blasting/refined_iron_ingot_from_iron_ingot'),
+        tr('smelting/refined_iron_plate_from_c_iron_plates'),
+        tr('blasting/refined_iron_plate_from_c_iron_plates'),
+        tr('rolling_machine/cupronickel_heating_coil'),
+        tr('crafting_table/machine/low_voltage_su'),
+        tr('crafting_table/paper'),
+        tr('crafting_table/machine/extractor'),
+        tr('crafting_table/battery/red_cell_battery'),
+        tr('crafting_table/tool/electric_treetap'),
+        tr('crafting_table/machine/auto_crafting_table'),
+        tr('crafting_table/machine/recycler'),
+        tr('crafting_table/parts/wood_plate'),
+        tr('rolling_machine/nichrome_heating_coil'),
+        tr('chemical_reactor/synthetic_redstone_crystal'),
+        tr('assembling_machine/lithium_ion_battery'),
+        tr('centrifuge/glowstone_dust'),
+        tr('centrifuge/endstone_dust'),
+        tr('crafting_table/armor/lithium_ion_batpack'),
+        tr('crafting_table/small_dust/titanium_small_dust_from_dust'),
+        tr('industrial_electrolyzer/pyrite_dust'),
+        tr('centrifuge/lapis_lazuli'),
+        tr('compressor/lazurite_plate'),
+        tr('assembling_machine/energy_crystal'),
+        tr('crafting_table/battery/lapotron_crystal'),
+        tr('crafting_table/tool/industrial_drill'),
+        tr('crafting_table/tool/industrial_chainsaw'),
+        tr('crafting_table/tool/nanosaber'),
+        tr('crafting_table/tool/industrial_jackhammer'),
+        tr('crafting_table/ingot/tungsten_ingot_from_nugget'),
+        tr('crafting_table/dust/raw_tungsten_from_small'),
+        tr('crafting_table/dust/chrome_dust_from_small'),
+        tr('crafting_table/dust/invar_dust_from_small'),
+        tr('crafting_table/machine/alloy_smelter'),
+        tr('crafting_table/machine/iron_alloy_furnace'),
+        tr('crafting_table/machine/dragon_egg_syphon'),
+        tr('crafting_table/battery/lapotronic_orb'),
+        tr('crafting_table/armor/lapotronic_orbpack')
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
     // -- INDUSTRIAL DRILL -- //
-    e.shaped('techreborn:industrial_drill', [
+    e.shaped(tr('industrial_drill'), [
         'CRD',
         'MPR',
         'LMC'
     ], 
     {
-        C: 'modern_industrialization:digital_circuit',
-        R: 'modern_industrialization:invar_rotary_blade',
-        D: 'modern_industrialization:stainless_steel_drill_head',
-        M: 'modern_industrialization:advanced_motor',
-        P: 'modern_industrialization:advanced_pump',
-        L: 'techreborn:lapotron_crystal'
+        C: mi('digital_circuit'),
+        R: mi('invar_rotary_blade'),
+        D: mi('stainless_steel_drill_head'),
+        M: mi('advanced_motor'),
+        P: mi('advanced_pump'),
+        L: tr('lapotron_crystal')
     });
 
     // -- INDUSTRIAL CHAINSAW -- //
-    e.shaped('techreborn:industrial_chainsaw', [
+    e.shaped(tr('industrial_chainsaw'), [
         'CSR',
         'MRS',
         'LMC'
     ], 
     {
-        C: 'modern_industrialization:digital_circuit',
-        R: 'modern_industrialization:invar_rotary_blade',
-        M: 'modern_industrialization:advanced_motor',
-        S: 'modern_industrialization:rubber_sheet',
-        L: 'techreborn:lapotron_crystal'
+        C: mi('digital_circuit'),
+        R: mi('invar_rotary_blade'),
+        M: mi('advanced_motor'),
+        S: mi('rubber_sheet'),
+        L: tr('lapotron_crystal')
     });
 
     // -- INDUSTRIAL JACKHAMMER -- //
-    e.shaped('techreborn:industrial_jackhammer', [
+    e.shaped(tr('industrial_jackhammer'), [
         'CSR',
         'MBS',
         'LMC'
     ],
     {
-        R: 'modern_industrialization:stainless_steel_drill_head',
-        M: 'modern_industrialization:advanced_motor',
-        L: 'techreborn:lapotron_crystal',
-        B: 'modern_industrialization:stainless_steel_rod',
-        C: 'modern_industrialization:digital_circuit',
-        S: 'modern_industrialization:rubber_sheet'
+        R: mi('stainless_steel_drill_head'),
+        M: mi('advanced_motor'),
+        L: tr('lapotron_crystal'),
+        B: mi('stainless_steel_rod'),
+        C: mi('digital_circuit'),
+        S: mi('rubber_sheet')
     });
 
     // -- CHARGE O MAT -- //
-    e.shaped('techreborn:charge_o_mat', [
+    e.shaped(tr('charge_o_mat'), [
         'PPP',
         'KAK',
         'CHC'
     ],
     {
-        P: 'modern_industrialization:aluminum_large_plate',
-        K: 'modern_industrialization:kanthal_wire',
-        A: 'ae2:charger',
-        C: 'modern_industrialization:digital_circuit',
-        H: 'modern_industrialization:turbo_machine_hull'
+        P: mi('aluminum_large_plate'),
+        K: mi('kanthal_wire'),
+        A: ae('charger'),
+        C: mi('digital_circuit'),
+        H: mi('turbo_machine_hull')
     });
 
     // -- NANOSABER -- //
-    e.shaped('techreborn:nanosaber', [
+    e.shaped(tr('nanosaber'), [
         '  B',
         'CB ',
         'NL '
     ],
     {
-        N: 'minecraft:netherite_sword',
-        B: 'modern_industrialization:stainless_steel_blade',
-        C: 'modern_industrialization:digital_circuit',
-        L: 'techreborn:lapotron_crystal'
+        N: mc('netherite_sword'),
+        B: mi('stainless_steel_blade'),
+        C: mi('digital_circuit'),
+        L: tr('lapotron_crystal')
     });
 
     // -- RECYCLER -- //
-    e.shaped('techreborn:recycler', [
+    e.shaped(tr('recycler'), [
         'AMA',
         'CHC',
         'AMA'
     ],
     {
-        H: 'modern_industrialization:advanced_machine_hull',
-        C: 'modern_industrialization:electronic_circuit',
-        M: 'modern_industrialization:large_motor',
+        H: mi('advanced_machine_hull'),
+        C: mi('electronic_circuit'),
+        M: mi('large_motor'),
         A: '#c:aluminum_plates'
     });
 
     // -- SCRAPBOXINATOR -- //
-    e.shaped('techreborn:scrapboxinator', [
+    e.shaped(tr('scrapboxinator'), [
         'WBW',
         'CHC',
         'MBM'
     ],
     {
-        H: 'modern_industrialization:advanced_machine_hull',
-        C: 'modern_industrialization:electronic_circuit',
-        M: 'modern_industrialization:large_motor',
-        B: 'minecraft:chest',
-        W: 'modern_industrialization:cupronickel_cable'
+        H: mi('advanced_machine_hull'),
+        C: mi('electronic_circuit'),
+        M: mi('large_motor'),
+        B: mc('chest'),
+        W: mi('cupronickel_cable')
     });
 
     // -- URANIUM ORE FROM UU -- //
-    e.shaped('modern_industrialization:uranium_ore', [
+    e.shaped(mi('uranium_ore'), [
         'UUU',
         'UUU',
         'USU'
     ], 
     {
-        U: 'techreborn:uu_matter',
+        U: tr('uu_matter'),
         S: '#c:stones'
     });
 
     // -- NUKE CONVERSION -- //
-    e.shapeless('techreborn:nuke', ['modern_industrialization:nuke']);
-    e.shapeless('modern_industrialization:nuke', ['techreborn:nuke']);
+    e.shapeless(tr('nuke'), [mi('nuke')]);
+    e.shapeless(mi('nuke'), [tr('nuke')]);
 
     // -- BASIC SOLAR PANEL -- //
-    e.shaped('techreborn:basic_solar_panel', [
+    e.shaped(tr('basic_solar_panel'), [
         'GGG',
         'ZZZ',
         'AHA'
     ],
     {
-        G: 'minecraft:blue_stained_glass_pane',
+        G: mc('blue_stained_glass_pane'),
         Z: '#c:zinc_ingots',
-        A: 'modern_industrialization:analog_circuit',
-        H: 'modern_industrialization:basic_machine_hull'
+        A: mi('analog_circuit'),
+        H: mi('basic_machine_hull')
     });
 
     // -- ADVANCED SOLAR PANEL -- //
-    e.shaped('techreborn:advanced_solar_panel', [
+    e.shaped(tr('advanced_solar_panel'), [
         'GGG',
         'SSS',
         'EHE'
     ],
     {
-        G: 'minecraft:blue_stained_glass_pane',
+        G: mc('blue_stained_glass_pane'),
         S: '#c:silver_ingots',
-        E: 'modern_industrialization:electronic_circuit',
-        H: 'modern_industrialization:advanced_machine_hull'
+        E: mi('electronic_circuit'),
+        H: mi('advanced_machine_hull')
     });
 
     // -- INDUSTRIAL SOLAR PANEL -- //
-    e.shaped('techreborn:industrial_solar_panel', [
+    e.shaped(tr('industrial_solar_panel'), [
         'GGG',
         'AAA',
         'DHD'
     ],
     {
-        G: 'minecraft:blue_stained_glass_pane',
+        G: mc('blue_stained_glass_pane'),
         A: '#c:annealed_copper_ingots',
-        D: 'modern_industrialization:digital_circuit',
-        H: 'modern_industrialization:turbo_machine_hull'
+        D: mi('digital_circuit'),
+        H: mi('turbo_machine_hull')
     });
 
     // -- ULTIMATE SOLAR PANEL -- //
-    e.shaped('techreborn:ultimate_solar_panel', [
+    e.shaped(tr('ultimate_solar_panel'), [
         'GGG',
         'TTT',
         'PHC'
     ],
     {
-        G: 'minecraft:blue_stained_glass_pane',
+        G: mc('blue_stained_glass_pane'),
         T: '#c:titanium_ingots',
-        P: 'modern_industrialization:processing_unit',
-        H: 'modern_industrialization:highly_advanced_machine_hull',
-        C: 'modern_industrialization:small_heat_exchanger'
+        P: mi('processing_unit'),
+        H: mi('highly_advanced_machine_hull'),
+        C: mi('small_heat_exchanger')
     });
 
     // -- QUANTUM SOLAR PANEL -- //
-    e.shaped('techreborn:quantum_solar_panel', [
+    e.shaped(tr('quantum_solar_panel'), [
         'GGG',
         'III',
         'QHC'
     ],
     {
-        G: 'minecraft:blue_stained_glass_pane',
+        G: mc('blue_stained_glass_pane'),
         I: '#c:iridium_ingots',
-        Q: 'modern_industrialization:quantum_circuit',
-        H: 'modern_industrialization:quantum_machine_hull',
-        C: 'modern_industrialization:large_heat_exchanger'
+        Q: mi('quantum_circuit'),
+        H: mi('quantum_machine_hull'),
+        C: mi('large_heat_exchanger')
     });
 
     // -- BATTERY BOX -- //
-    e.shaped('techreborn:low_voltage_su', [
+    e.shaped(tr('low_voltage_su'), [
         'PCP',
         'BBB',
         'PPP'
     ],
     {
-        P: 'techreborn:wood_plate',
-        B: 'modern_industrialization:redstone_battery',
-        C: 'modern_industrialization:copper_cable'
+        P: tr('wood_plate'),
+        B: mi('redstone_battery'),
+        C: mi('copper_cable')
     });
 
     // -- EXTRACTOR -- //
-    e.shaped('techreborn:extractor', [
+    e.shaped(tr('extractor'), [
         'THT',
         'TCT'
     ],
     {
-        T: 'techreborn:treetap',
-        C: 'modern_industrialization:analog_circuit',
-        H: 'modern_industrialization:basic_machine_hull'
+        T: tr('treetap'),
+        C: mi('analog_circuit'),
+        H: mi('basic_machine_hull')
     });
 
     // -- RED CELL BATTERY -- //
-    e.shaped('techreborn:red_cell_battery', [
+    e.shaped(tr('red_cell_battery'), [
         ' C ',
         'LBL',
         'LBL'
     ],
     {
-        C: 'modern_industrialization:copper_cable',
+        C: mi('copper_cable'),
         L: '#c:lead_plates',
-        B: 'modern_industrialization:redstone_battery'
+        B: mi('redstone_battery')
     });
 
     // -- ELECTRIC TREETAP -- //
-    e.shaped('techreborn:electric_treetap', [
+    e.shaped(tr('electric_treetap'), [
         '  T',
         'CS ',
         'SB '
     ],
     {
-        T: 'techreborn:treetap',
-        C: 'modern_industrialization:analog_circuit',
+        T: tr('treetap'),
+        C: mi('analog_circuit'),
         S: '#c:wood_sticks',
-        B: 'techreborn:red_cell_battery'
+        B: tr('red_cell_battery')
     });
+
+    // -- DRAGON EGG SIPHON -- //
+    e.shaped(tr('dragon_egg_syphon'), [
+        'PUP',
+        'THT',
+        'POP'
+    ],
+    {
+        H: mi('highly_advanced_machine_hull'),
+        T: '#c:tungsten_plates',
+        U: mi('hv_storage_unit'),
+        O: tr('lapotronic_orb'),
+        P: '#c:iridium_alloy_plates'
+    });
+
+    // -- LAPOTRONIC ENERGY ORB -- //
+    e.shaped(tr('lapotronic_orb'), [
+        'CCC',
+        'CHC',
+        'CCC'
+    ],
+    { 
+        C: tr('lapotron_crystal'),
+        H: mi('highly_advanced_machine_hull')
+    });
+
+    // -- LAPOTRONIC ORBPACK -- //
+    e.shaped(tr('lapotronic_orbpack'), [
+        'PIP',
+        'SBS',
+        'POP'
+    ],
+    {
+        P: '#c:iridium_alloy_plates',
+        S: mi('superconductor_cable'),
+        B: tr('lithium_ion_batpack'),
+        I: '#c:iridium_plates',
+        O: tr('lapotronic_orb')
+    })
 });

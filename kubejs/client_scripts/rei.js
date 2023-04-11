@@ -22,7 +22,10 @@ const REI_DELETED_ITEMS = [
     'techreborn:helium3',
     'techreborn:helium',
     'techreborn:titanium_small_dust',
-    'kibe:angel_ring'
+    'kibe:angel_ring',
+    'techreborn:alloy_smelter',
+    'techreborn:iron_alloy_furnace',
+    'spirit:soul_pedestal'
 ];
 
 REIEvents.hide('item', e => {
@@ -31,7 +34,8 @@ REIEvents.hide('item', e => {
 
 REIEvents.removeCategories(e => {
     const REMOVED_CAT = [
-        'minecraft:plugins/tag'
+        'minecraft:plugins/tag',
+        'techreborn:alloy_smelter'
     ];
     REMOVED_CAT.forEach(id => e.remove(id));
 });
