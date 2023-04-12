@@ -41,7 +41,7 @@
 				{
 					id: "208E635036EE41FF"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -82,7 +82,7 @@
 				{
 					id: "201A1ACB23F82D5A"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -92,9 +92,9 @@
 			y: 0.0d
 			shape: "square"
 			description: [
-				"The early game of this pack is focused around the Create modpack. For this, you will need a lot of Andesite. Luckily, this quest rewards you with some extra."
+				"The early game of this pack is focused around the &eCreate&f mod. For this, you will need a lot of &aAndesite&f. Luckily, this quest rewards you with some extra."
 				""
-				"For those of you who don't like Create, I've kept the early game Create requirements low. You can choose to pursue Create further after you pass the parts where it is required, but fully progressing in Create is not needed to beat the pack."
+				"For those of you who don't like &eCreate&f, I've kept the &eCreate&f requirements low. You can choose to pursue &eCreate&f further after you pass the parts where it is required, but fully progressing in &eCreate&f &cis not needed&f to beat the pack."
 			]
 			dependencies: ["300516B03C1580A2"]
 			id: "0548E4DEA1B29E91"
@@ -114,7 +114,7 @@
 				{
 					id: "7B5B586AAE607B0F"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -124,9 +124,9 @@
 			y: 0.0d
 			shape: "square"
 			description: [
-				"Andesite Alloy is the most important material you will need for early game Create. The crafting cost can be a little steep at first, but once you create a Mixer the cost will drop significantly."
+				"&bAndesite Alloy&f is the most important material you will need for early game &eCreate&f. The crafting cost can be a little steep at first, but once you create a &aMixer&f the cost will drop significantly."
 				""
-				"The Wrench and Goggles will be your essential tools when using the Create mod. The Wrench allows you to shift-right click to instantly harvest any Create block, right-click to rotate, or adjust certain settings on a block. The Goggles, when worn, will allow you to see the total stress units used / available."
+				"The &cWrench&f and &cGoggles&f will be your essential tools when using the &eCreate&f mod. The &cWrench&f allows you to &ashift-right click&f to instantly harvest any &eCreate&f block, &aright-click&f to rotate, or adjust certain settings on a block. The &cGoggles&f, when worn, will allow you to see the &dtotal stress units&f used / available."
 			]
 			dependencies: ["0548E4DEA1B29E91"]
 			id: "13D6BD373F034937"
@@ -150,7 +150,7 @@
 				{
 					id: "0B8CFA27D2F6BFE0"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -160,7 +160,7 @@
 			y: 0.0d
 			shape: "square"
 			subtitle: "You spin me right round"
-			description: ["Water Wheels make up the basis of your early game rotational force production. If you aren't familiar with Create's \"power\" generation, I recommend reading the next quest or checking the Ponder menu by holding W on the Create items you've made so far."]
+			description: ["&aWater Wheels&f make up the basis of your early game rotational force production. If you aren't familiar with &eCreate&f's \"power\" generation, I recommend reading the &anext quest&f or checking the &bPonder&f menu by holding &bW&f on the &eCreate&f items you've made so far."]
 			dependencies: ["6CA102659DCBDB31"]
 			id: "288AF08BF01DAADF"
 			tasks: [{
@@ -169,9 +169,9 @@
 				item: "create:water_wheel"
 			}]
 			rewards: [{
-				id: "0F05E94511FD478F"
+				id: "3C9CCF9874FAF7C6"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -181,7 +181,7 @@
 			y: -1.5d
 			shape: "rsquare"
 			subtitle: "High stress, low speed"
-			description: ["While the rotational speed of the water wheel is decent, they don't provide a high stress unit capacity. If you're constantly overstressing your machines, perhaps you should invest in some Windmills. These fantastic rotational power generators offer some of the best in terms of stress unit capacity."]
+			description: ["While the &arotational speed&f of the water wheel is decent, they don't provide a high &bstress unit&f capacity. If you're constantly &coverstressing&f your machines, perhaps you should invest in some &eWindmills&f. These fantastic rotational power generators offer some of the best in terms of &bstress unit&f capacity."]
 			dependencies: ["288AF08BF01DAADF"]
 			id: "2878CB8F8C4B8B91"
 			tasks: [
@@ -198,9 +198,9 @@
 				}
 			]
 			rewards: [{
-				id: "616951A31FC53E83"
+				id: "0059BC5F5C32FB4B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -210,7 +210,7 @@
 			shape: "square"
 			subtitle: "CogChamp"
 			description: [
-				"Cogs are the basis of rotational power in the Create mod. You will need them to transfer kinetic forces from your generators to your Create machines. "
+				"&aCogs&f are the basis of &erotational power&f in the &eCreate&f mod. You will need them to transfer &bkinetic forces&f from your generators to your &eCreate&f machines. "
 				""
 				"Don't worry, we'll make a generator to use soon enough."
 			]
@@ -231,22 +231,23 @@
 				}
 			]
 			rewards: [{
-				id: "0ACDA2913BEA1838"
+				id: "486AA57AD9D99D05"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			title: "Stress Units and Rotational Force"
+			icon: "create:rotation_speed_controller"
 			x: 6.0d
 			y: 1.5d
 			shape: "rsquare"
 			description: [
-				"Before you continue, it's pivotal to know how the rotation and stress units work in Create."
+				"Before you continue, it's pivotal to know how the &arotation&f and &bstress&f units work in &eCreate&f."
 				""
-				"The mod developers of Create spent a lot of time creating a wonderful in-game tutorial system called Ponder. If you look in REI, or have create items in your inventory, you can hold W to \"Ponder\" the item to view a nice in-game diagram of how it's used."
+				"The mod developers of &eCreate&f spent a lot of time creating a wonderful in-game tutorial system called &aPonder&f. If you look in &bREI&f, or have &eCreate&f items in your inventory, you can hold &aW&f to \"&aPonder&f\" the item to view a nice in-game diagram of how it's used."
 				""
-				"As a basic breakdown, stress units are the total amount of stress your rotational network (cogs, shafts, machines, etc.) can handle. Rotational speed is how fast the shafts/cogs spin in your network and how fast your machines run. Higher rotational power incurs a higher amount of stress units to compensate. "
+				"As a basic breakdown, &bstress units&f are the total amount of &bstress&f your rotational network (cogs, shafts, machines, etc.) can handle. &aRotational speed&f is how fast the shafts/cogs spin in your network and how fast your machines run. &eHigher rotational power&f incurs a &ehigher amount of stress units&f to compensate. "
 			]
 			dependencies: ["288AF08BF01DAADF"]
 			id: "58577BDF79E67EA7"
@@ -256,39 +257,50 @@
 				title: "Click to Acknowledge"
 			}]
 			rewards: [{
-				id: "6DB314EB575EB829"
+				id: "09D3B2F41575744E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			title: "Increase/Decrease Rotation Speed"
-			x: 4.5d
-			y: 1.5d
+			icon: "create:speedometer"
+			x: 6.0d
+			y: 3.0d
 			shape: "rsquare"
 			description: [
-				"You can use cogwheels to increase the rotation speed by connecting a smaller cogwheel to a large cogwheel. You can then attach another large cogwheel to the front of the small cogwheel and continue the process. Doing this will increase the overall rotation speed. Doing the inverse will lower the speed. "
+				"You can use &bcogwheels&f to increase the &erotation speed&f by connecting a &asmaller cogwheel&f to a &alarge cogwheel&f. You can then attach another &alarge cogwheel&f to the front of the &bsmall cogwheel&f and continue the process. Doing this will &eincrease&f the overall rotation speed. Doing the inverse will &clower&f the speed. "
 				""
-				"Note that increases the rotational speed will also mean your machines require more stress units on the network to operate."
+				"Note that &eincreases&f the rotational speed will also mean your machines &crequire&f more stress units on the network to operate."
+				""
+				"The quest rewards grants a free &eSpeedometer&f. Attaching this to your shafts/gears will show you to &aRPM&f of your &eCreate&f network. You can place the &eSpeedometer&f in a crafting table to convert it into a &eStressometer&f. Placing this one your network will show you the total &bstress units&f your &eCreate&f network can support."
 			]
-			dependencies: ["6CA102659DCBDB31"]
+			dependencies: ["58577BDF79E67EA7"]
 			id: "58FEBEF013463B80"
 			tasks: [{
 				id: "0FC2EC17F4A216F2"
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "268AD6C4E249488A"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "6371539DE3C6DB56"
+					type: "item"
+					item: "create:speedometer"
+				}
+				{
+					id: "3B83CA3A037FCA30"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.5d
 			y: -1.5d
 			shape: "rsquare"
-			description: ["The Hand Crank is another alternative form of generating rotational force. Extended use of this will leave the user very hungry, so it's more optimal to have a windmill / water wheel generate your power."]
+			subtitle: "Manual Labor"
+			description: ["The &eHand Crank&f is another alternative form of generating &arotational force&f. Extended use of this will leave the user very hungry, so it's more optimal to have a &eWindmill&f / &eWater Wheel&f generate your power."]
 			dependencies: ["288AF08BF01DAADF"]
 			id: "654B073CCFC06D24"
 			tasks: [{
@@ -297,9 +309,9 @@
 				item: "create:hand_crank"
 			}]
 			rewards: [{
-				id: "2072F21723B12313"
+				id: "4655841312F4E384"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -307,7 +319,7 @@
 			y: 0.0d
 			shape: "square"
 			subtitle: "Under Pressure"
-			description: ["Metal plates are going to be very important moving forward. It's highly recommended that you prioritize making a Mechanical Press."]
+			description: ["&aMetal plates&f are going to be very important moving forward. To make them you're going to need a &eCreate&f &bMechanical Press&f. By placing certain &cingots&f below the press, and supplying the press &arotational force&f on the side, it will start pressing the ingots into &dplates&f!"]
 			dependencies: ["31EA279E4F99BE53"]
 			id: "63276C644789068A"
 			tasks: [{
@@ -325,7 +337,7 @@
 				{
 					id: "6DF3C7C960FAA91A"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -337,9 +349,9 @@
 			shape: "square"
 			subtitle: "Mix, swirl, mix"
 			description: [
-				"Creating a Mechanical Mixer and a Basin will allow you to create Andesite Alloy for much cheaper. It will also be necessary to progress into the next chapters."
+				"Creating a &bMechanical Mixer&f and a &bBasin&f will allow you to create &aAndesite Alloy&f for much cheaper. It will also be necessary to progress into the next chapters."
 				""
-				"As a quest reward, I've given you a new friend. Name it whatever you'd like, but know that he's very helpful if you place him below your Basin and feed him flammable materials. This will allow you to use recipes that require the Basin to be Heated."
+				"As a quest reward, I've given you a &enew friend&f. Name it whatever you'd like, but know that he's very helpful if you place him &abelow your Basin&f and feed him flammable materials. This will allow you to use recipes that require the &aBasin&f to be &cHeated&f."
 			]
 			dependencies: ["63276C644789068A"]
 			id: "08A908B359D67DA6"
@@ -370,22 +382,22 @@
 				{
 					id: "56F36E1FC77C9051"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
 		{
-			title: "Bronze Ingot"
+			title: "Bronze"
 			x: 12.5d
 			y: 0.0d
 			shape: "square"
 			subtitle: "Your first real alloy"
 			description: [
-				"With Bronze, you can now pretend to be an early 3000 B.C. human!"
+				"With &6Bronze&f, you can now pretend to be an early 3000 B.C. human!"
 				""
-				"Combining raw copper and tin ores in a Heated Basin will create Bronze. This is an essential material to early Modern Industrialization."
+				"Combining &craw copper&f and &7tin ores&f in a &aHeated Basin&f will create &6Bronze&f. This is an essential material to early &eModern Industrialization&f."
 				""
-				"The ratio for Bronze Ingots isn't the best in the Create Mixer, but you will soon unlock a better ratio with your first steam machines."
+				"The ratio for &6Bronze Ingots&f isn't the best in the &eCreate Mixer&f, but you will soon unlock a better ratio with your first steam machines."
 			]
 			dependencies: ["08A908B359D67DA6"]
 			size: 1.5d
@@ -398,18 +410,19 @@
 			rewards: [{
 				id: "038533518022F50F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
+			title: "The Forge Hammer"
 			x: 15.0d
 			y: 0.0d
 			shape: "square"
 			subtitle: "More like Fabric Hammer"
 			description: [
-				"With the Forge Hammer crafted, you have completed your first chapter. The Forge Hammer is essential to progressing in Modern Industrialization."
+				"With the &aForge Hammer&f crafted, you have completed your first chapter. The &aForge Hammer&f is essential to progressing in &eModern Industrialization&f."
 				""
-				"While also being used to craft essential materials, it also allows you to duplicate your ores. Check REI for everything you can do with it."
+				"While also being used to craft essential materials, it also allows you to duplicate your ores. Check &dREI&f for everything you can do with it."
 			]
 			dependencies: ["2D6BC53B4C3E06F0"]
 			size: 2.0d
@@ -443,11 +456,11 @@
 			y: 1.5d
 			shape: "rsquare"
 			description: [
-				"The quest rewards are very generous with distribution experience, and you might want to store that before you lose it in an untimely manner."
+				"The quest rewards are very generous with distributing &aexperience&f, and you might want to store that before you lose it in an &cuntimely manner&f."
 				""
-				"The first step in storing your experience is mixing together some Soulcopper Blend. The questline for the rest of the XP Storage is in its own seperate tab on the left."
+				"The first step in storing your experience is mixing together some &bSoulcopper Blend&f. The questline for the rest of the &eXP Storage&f is not required for progression, but may prove useful."
 				""
-				"You can also wait until you have your first Bronze Mixer, as it provides a better ratio for this dust, making any of the XP Storage options much cheaper."
+				"You can also wait until you have your first &bBronze Mixer&f, as it provides a better ratio for this dust, making any of the &eXP Storage&f options much cheaper."
 			]
 			dependencies: ["08A908B359D67DA6"]
 			id: "11B147A60B77ED4A"
@@ -457,16 +470,16 @@
 				item: "xps:soul_copper_blend"
 			}]
 			rewards: [{
-				id: "7EF0E53931C4D470"
+				id: "49A24CFF140D4957"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 7.5d
 			y: 0.0d
 			shape: "square"
-			description: ["Andesite Casings make up the basis of most Create machines. To create an Andesite Casing, right click with an Andesite Alloy on any Stripped Log."]
+			description: ["&bAndesite Casings&f make up the basis of most &eCreate&f machines. To create an &bAndesite Casing&f, right click with an &eAndesite Alloy&f on any &cStripped Log&f."]
 			dependencies: ["288AF08BF01DAADF"]
 			id: "31EA279E4F99BE53"
 			tasks: [{
@@ -475,9 +488,9 @@
 				item: "create:andesite_casing"
 			}]
 			rewards: [{
-				id: "3BBE76CE68C668BC"
+				id: "1ECB6E197EBEE674"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -485,9 +498,9 @@
 			y: 2.5d
 			shape: "rsquare"
 			description: [
-				"If you can find some cows near where you spawned you can kill them for their leather and make yourself a backpack."
+				"If you can find some cows near where you spawned you can kill them for their leather and make yourself a &eFrayed Backpack&f."
 				""
-				"The backpack can be worn on your back and provides 9 item slots. Great for all the stuff you'll be collecting."
+				"The backpack can be worn on your back and provides &a9 item slots&f. Great for all the stuff you'll be collecting."
 			]
 			dependencies: ["045C683BF6E216CB"]
 			id: "52F75C5E2E606991"
@@ -497,16 +510,16 @@
 				item: "inmis:frayed_backpack"
 			}]
 			rewards: [{
-				id: "5AEC2AD214EB109B"
+				id: "001A2792019A1763"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -2.0d
 			y: 2.5d
 			shape: "rsquare"
-			description: ["Why lug around a crafting table everywhere you go when you could instead make a Pocket Crafting Table. Using this item, you will have access to a 3x3 crafting grid anywhere you go!"]
+			description: ["Why lug around a crafting table everywhere you go when you could instead make a &ePocket Crafting Table&f. Using this item, you will have access to a 3x3 crafting grid anywhere you go!"]
 			dependencies: ["045C683BF6E216CB"]
 			id: "3FD7E4529B0A24EC"
 			tasks: [{
@@ -515,9 +528,9 @@
 				item: "kibe:pocket_crafting_table"
 			}]
 			rewards: [{
-				id: "7744815D8C737BC8"
+				id: "40D538D43219BE02"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -526,14 +539,14 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"Spikes will damage any entity that step on it. Each tier has a different effect on the mobs that die from it."
+				"&eSpikes&f will damage any entity that step on it. Each tier has a different effect on the mobs that die from it."
 				""
-				"Stone Spikes - Mobs will drop nothing"
-				"Iron Spikes - Mobs will drop their regular loot"
-				"Gold Spikes - Mobs will only drop experience"
-				"Diamond Spikes - Mobs will drop both loot and experience"
+				"&7Stone Spikes&f - Mobs will drop nothing"
+				"&bIron Spikes&f - Mobs will drop their regular loot"
+				"&eGold Spikes&f - Mobs will only drop experience"
+				"&aDiamond Spikes&f - Mobs will drop both loot and experience"
 				""
-				"These won't be useful until you can setup an efficient mob farm, preferably with Cursed Dirt."
+				"These won't be useful until you can setup an efficient mob farm, preferably with &cCursed Dirt&f."
 			]
 			dependencies: ["300516B03C1580A2"]
 			id: "25291CED32101F14"
@@ -550,16 +563,16 @@
 				}
 			}]
 			rewards: [{
-				id: "6978555378F31F38"
+				id: "41138B47D5466139"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -2.5d
 			y: 1.5d
 			shape: "rsquare"
-			description: ["Wooden Buckets act just like normal buckets with the only downside being they cannot pick up hot liquids such as lava."]
+			description: ["&bWooden Buckets&f act just like normal buckets with the only downside being they cannot pick up hot liquids such as lava."]
 			dependencies: ["045C683BF6E216CB"]
 			id: "553FA47CB9256B2A"
 			tasks: [{
@@ -568,16 +581,16 @@
 				item: "kibe:wooden_bucket"
 			}]
 			rewards: [{
-				id: "566168388EB04C97"
+				id: "72B8B0330F617DBB"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -3.5d
 			y: 1.5d
 			shape: "rsquare"
-			description: ["The Torch Sling uses torches from your inventory as ammo. Torches are placed where they land."]
+			description: ["The &bTorch Sling&f uses torches from your inventory as ammo. Torches are placed where they land."]
 			dependencies: ["045C683BF6E216CB"]
 			id: "6B73816AE3918455"
 			tasks: [{
@@ -586,9 +599,9 @@
 				item: "kibe:torch_sling"
 			}]
 			rewards: [{
-				id: "62DEC43E061D23B2"
+				id: "3E089AAE2D0118E9"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -598,7 +611,7 @@
 			description: [
 				"Have too much cobble? I wouldn't recommend trashing it, but if you really really want to, you can create a Trash Can to throw away items."
 				""
-				"BE CAREFUL! Items thrown away CANNOT be restored."
+				"&cBE CAREFUL!&f Items thrown away &cCANNOT&f be restored."
 			]
 			dependencies: ["300516B03C1580A2"]
 			id: "5F1AEEB670B6EE12"
@@ -608,9 +621,9 @@
 				item: "kibe:trash_can"
 			}]
 			rewards: [{
-				id: "13DF2FE5C263A459"
+				id: "5BF7497ADF0A2B1F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -626,16 +639,16 @@
 				item: "kibe:pocket_trash_can"
 			}]
 			rewards: [{
-				id: "344F299C4C060276"
+				id: "2090D15A68343D40"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -3.0d
 			y: 2.5d
 			shape: "rsquare"
-			description: ["Stores exactly 1 stack of items. Can be useful in some automations."]
+			description: ["Stores exactly &a1 stack of items&f. Can be useful in some automations."]
 			dependencies: ["045C683BF6E216CB"]
 			id: "01AEE5C702B4D1CB"
 			tasks: [{
@@ -644,16 +657,16 @@
 				item: "ironchests:dirt_chest"
 			}]
 			rewards: [{
-				id: "3D463FADE28BA553"
+				id: "28FBE15FDB3AB09A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 11.5d
 			y: 5.5d
 			shape: "rsquare"
-			description: ["The XP Storage block is the core block that stores Experience."]
+			description: ["The &bXP Storage&f block is the core block that stores &aExperience&f."]
 			dependencies: [
 				"1C23C4B16844849F"
 				"1BE89CC00209CD24"
@@ -666,16 +679,16 @@
 				item: "xps:block_xp_obelisk"
 			}]
 			rewards: [{
-				id: "01D679FB4DCE3993"
+				id: "6CABEC307F1A9475"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 11.0d
 			y: 3.5d
 			shape: "rsquare"
-			description: ["Smelting up your Soulcopper Blend will yield a Soulcopper Ingot"]
+			description: ["Smelting up your &aSoulcopper Blend&f will yield a &bSoulcopper Ingot&f"]
 			dependencies: ["11B147A60B77ED4A"]
 			id: "1BE89CC00209CD24"
 			tasks: [{
@@ -684,9 +697,9 @@
 				item: "xps:soul_copper_ingot"
 			}]
 			rewards: [{
-				id: "542323ABADB36CB3"
+				id: "51BA8F65D8B91F71"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -694,9 +707,9 @@
 			y: 5.5d
 			shape: "rsquare"
 			description: [
-				"The XP Transfer is used to transfer experience to the XP Storage. To swap between push and pull, sneak right-click with the item in your hand."
+				"The &aXP Transfer&f is used to transfer experience to the &eXP Storage&f. To swap between push and pull, &esneak right-click&f with the item in your hand."
 				""
-				"Crafting the XP Storage consumes an XP Transfer, so this quest gives you an extra!"
+				"Crafting the &eXP Storage&f consumes an &aXP Transfer&f, so this quest gives you an extra!"
 			]
 			dependencies: ["5CFF5EB2DF342268"]
 			id: "1C23C4B16844849F"
@@ -714,7 +727,7 @@
 				{
 					id: "753E071BDA40C026"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -722,7 +735,7 @@
 			x: 10.0d
 			y: 3.5d
 			shape: "rsquare"
-			description: ["By melting down any Enchanted Book, you can create XP Dust. "]
+			description: ["By melting down any &aEnchanted Book&f, you can create &bXP Dust&f."]
 			dependencies: ["11B147A60B77ED4A"]
 			id: "5CFF5EB2DF342268"
 			tasks: [{
@@ -731,16 +744,16 @@
 				item: "xps:xp_dust"
 			}]
 			rewards: [{
-				id: "5CCDC6D70A97A042"
+				id: "68A7F5249D1B0DDB"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 9.0d
 			y: 5.5d
 			shape: "rsquare"
-			description: ["Combining Blaze Rods with XP Dust will create an XP Rod."]
+			description: ["Combining &aBlaze Rods&f with &bXP Dust&f will create an &eXP Rod&f."]
 			dependencies: ["5CFF5EB2DF342268"]
 			id: "7B5620C673B4A11C"
 			tasks: [{
@@ -749,9 +762,9 @@
 				item: "xps:xp_rod"
 			}]
 			rewards: [{
-				id: "61921A263E64F091"
+				id: "36D5B63F1041B5BF"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -759,7 +772,7 @@
 			y: 7.5d
 			shape: "rsquare"
 			description: [
-				"The XP Storage Inspector inspects XP Storage blocks. Right-clicking the XP Storage it will show you:"
+				"The &bXP Storage Inspector&f inspects &eXP Storage&f blocks. &eRight-clicking&f the &eXP Storage&f it will show you:"
 				"- Owner"
 				"- Stored XP"
 				"- Fill level"
@@ -776,9 +789,9 @@
 				item: "xps:inspector"
 			}]
 			rewards: [{
-				id: "7C5222CDDFBA884D"
+				id: "608473D7DBAC434C"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -787,9 +800,9 @@
 			y: 7.5d
 			shape: "rsquare"
 			description: [
-				"The Lock is used to lock the XP Storage. While locked, fluid extraction is disabled."
+				"The &bLock&f is used to lock the &eXP Storage&f. While locked, fluid extraction is disabled."
 				""
-				"The Key is used to unlcok the XP Storage."
+				"The &aKey&f is used to unlcok the &eXP Storage&f."
 			]
 			dependencies: ["7B5620C673B4A11C"]
 			id: "09F4687F1FD4C914"
@@ -806,9 +819,9 @@
 				}
 			]
 			rewards: [{
-				id: "38863C7AEB8A7162"
+				id: "01C03D04D89CDAA4"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -816,9 +829,9 @@
 			y: 3.5d
 			shape: "rsquare"
 			description: [
-				"XP Berries can be used on XP Storage to insert some Experience."
+				"&aXP Berries&f can be used on &eXP Storage&f to insert some &aExperience&f."
 				""
-				"XP Berries can always be eaten. If you sneak while eating them they drop XP-Orbs to repair items with Mending."
+				"&aXP Berries&f can always be eaten. If you sneak while eating them they drop &eXP-Orbs&f to repair items with &dMending&f."
 			]
 			dependencies: ["453B9CA792F2A521"]
 			id: "2EA9DB5966BD8CCB"
@@ -828,16 +841,16 @@
 				item: "xps:xp_berries"
 			}]
 			rewards: [{
-				id: "07E15FD08C596AC5"
+				id: "227FD1357866F1DF"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 12.5d
 			y: 3.5d
 			shape: "rsquare"
-			description: ["XP Berries can be used to generate passive experience. Can be planted on Soul Soil."]
+			description: ["&aXP Berries&f can be used to generate passive experience. Can be planted on &bSoul Soil&f."]
 			dependencies: ["1BE89CC00209CD24"]
 			id: "453B9CA792F2A521"
 			tasks: [{
@@ -846,16 +859,16 @@
 				item: "xps:xp_berries_seeds"
 			}]
 			rewards: [{
-				id: "0FD75B394EB8F129"
+				id: "22D463B0A5F762C0"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 12.0d
 			y: 7.5d
 			shape: "rsquare"
-			description: ["Use an Empty Bucket on the XP Storage to fill it. You can right click with a full bucket to empty it into the XP Storage."]
+			description: ["Use an &aEmpty Bucket&b on the &eXP Storage&f to fill it. You can right click with a full bucket to empty it into the &eXP Storage&f."]
 			dependencies: ["48566D7F1724EB6B"]
 			id: "418B2D30B385C75E"
 			tasks: [{
@@ -864,9 +877,9 @@
 				item: "xps:xp_bucket"
 			}]
 			rewards: [{
-				id: "42C3DAB90E1FC11E"
+				id: "632CC0CA93C2CC7D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -876,11 +889,11 @@
 			shape: "rsquare"
 			subtitle: "No, not your pants"
 			description: [
-				"Drawers are an extremely compact and easy way to store a lot of items in a single block. The basic drawer comes in three different varieties, single, double, and quad. The Shadow Drawer acts similar to a Drawer Access Point, but allows the player to interact with a single item directly. For example, if you had two separate side-by-side drawers storing 10 logs each, and a shadow drawer set to logs, it will show 20."
+				"&aDrawers&f are an extremely compact and easy way to store a lot of items in a single block. The &bbasic drawer&f comes in three different varieties, single, double, and quad. The &eShadow Drawer&f acts similar to a &aDrawer Access Point&f, but allows the player to interact with a single item directly. For example, if you had two separate side-by-side drawers storing 10 logs each, and a shadow drawer set to logs, it will show 20."
 				""
-				"You can add items to a drawer by right clicking, and remove them by left clicking. You can remove stacks at a time from a drawer by shift-left clicking."
+				"You can add items to a drawer by right clicking, and remove them by left clicking. You can remove stacks at a time from a drawer by &eshift-left clicking&f."
 				""
-				"You can apply upgrades and lock drawers by shift-right clicking the drawer with the upgrade/lock."
+				"You can apply upgrades and lock drawers by &eshift-right clicking&f the drawer with the upgrade/lock."
 			]
 			dependencies: ["045C683BF6E216CB"]
 			id: "4EB556BD36F09E16"
@@ -905,7 +918,7 @@
 				{
 					id: "5C387A4EFB6C3A3D"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -916,16 +929,16 @@
 			shape: "rsquare"
 			subtitle: "MORE MORE MORE"
 			description: [
-				"Upgrades are applied using different upgrade items. They increase the capacity of a drawer slot."
+				"&bUpgrades&f are applied using different upgrade items. They increase the capacity of a drawer slot."
 				""
-				"To install one, simply click on a slot with the upgrade in hand while sneaking."
+				"To install one, simply &eclick&f on a slot with the upgrade in hand &ewhile sneaking&f."
 				""
-				"- Tier one upgrade doubles the amount that can be stored"
-				"- Tier two upgrade is 4x the amount"
-				"- Tier three upgrade is 8x the amount"
-				"- Tier four upgrade is 16x the amount"
+				"- &aTier one upgrade&f doubles the amount that can be stored"
+				"- &bTier two upgrade&f is 4x the amount"
+				"- &cTier three upgrade&f is 8x the amount"
+				"- &dTier four upgrade&f is 16x the amount"
 				""
-				"The Drawer Downgrade can be used to limit the capacity of a drawer to a single stack. This can prove useful in automation scenarios."
+				"The &aDrawer Downgrade&f can be used to &climit&f the capacity of a drawer to a single stack. This can prove useful in automation scenarios."
 			]
 			dependencies: ["4F278EA5EC5E59E1"]
 			id: "313C9B884B08EAF8"
@@ -941,28 +954,20 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "17BB789AA0518B93"
-					type: "item"
-					item: "extended_drawers:upgrade_frame"
-					count: 8
-				}
-				{
-					id: "4741FF2831996B0C"
-					type: "xp"
-					xp: 100
-				}
-			]
+			rewards: [{
+				id: "267358DCFE1FA1D5"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: -4.0d
 			y: -3.0d
 			shape: "rsquare"
 			description: [
-				"Drawer Connectors are simple blocks that allow you to connect different parts of your drawer network together without wasting resources on drawers."
+				"&bDrawer Connectors&f are simple blocks that allow you to connect different parts of your drawer network together without wasting resources on drawers."
 				""
-				"They also produce less lag as they don't have to story any data."
+				"They also produce &eless lag&f as they don't have to story any data."
 			]
 			dependencies: ["4F278EA5EC5E59E1"]
 			id: "2EDE467B8EA737A7"
@@ -981,7 +986,7 @@
 				{
 					id: "299D4734BAF295F4"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -991,9 +996,9 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"Just by placing some drawers next to each other you have created a simple network. However, that network doesn't do anything yet. "
+				"Just by placing some &bdrawers&f next to each other you have created a &esimple network&f. However, that network doesn't do anything yet. "
 				""
-				"To interact with your network, you can craft an access point. It allows you to insert items into the drawers they belong in automatically instead of having to do it by hand."
+				"To interact with your network, you can craft an &baccess point&f. It allows you to insert items into the drawers they belong in automatically instead of having to do it by hand."
 			]
 			dependencies: ["4EB556BD36F09E16"]
 			id: "4F278EA5EC5E59E1"
@@ -1003,9 +1008,9 @@
 				title: "Click to Acknowledge"
 			}]
 			rewards: [{
-				id: "0ED3CB18F6FEDB28"
+				id: "6EA1740D11E06354"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1013,11 +1018,11 @@
 			y: -3.0d
 			shape: "rsquare"
 			description: [
-				"Access Points allow inserting items to the whole network, automatically finding the right drawer."
+				"&bAccess Points&f allow inserting items to the &awhole network&f, automatically finding the right drawer."
 				""
-				"They also act as an interface for other mods to access the network."
+				"They also act as an &einterface&f for other mods to access the network."
 				""
-				"You can lock/unlock your entire network by shift-right clicking with a lock on the access point"
+				"You can lock/unlock your entire network by &eshift-right clicking&f with a lock on the access point"
 			]
 			dependencies: ["4F278EA5EC5E59E1"]
 			id: "3604D1BBC61B844D"
@@ -1027,9 +1032,9 @@
 				item: "extended_drawers:access_point"
 			}]
 			rewards: [{
-				id: "274A2EC8DA43683C"
+				id: "2C368C23B6B162FC"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1039,11 +1044,11 @@
 			shape: "rsquare"
 			subtitle: "Playing with fire"
 			description: [
-				"Voiding mode can be toggled with a lava bucket. It makes it so that the drawer deltes excess items."
+				"&bVoiding mode&f can be toggled with a &elava bucket&f. It makes it so that the drawer &cdeletes excess items&f."
 				""
 				"This is mostly useful when you have bulk storage for a very common item and don't want it to clog the system when it fills up."
 				""
-				"Like locks, they aren't consumed and can be applied to access points. Be careful as it can easily void important items if used improperly. Also make sure to aim well, or you might end up lacing the lava instead."
+				"Like locks, they aren't consumed and can be applied to access points. Be careful as it can easily void important items if used improperly. Also make sure to aim well, or you might end up placing the lava instead."
 			]
 			dependencies: ["4F278EA5EC5E59E1"]
 			id: "6A807C07969CA906"
@@ -1053,9 +1058,9 @@
 				item: "minecraft:lava_bucket"
 			}]
 			rewards: [{
-				id: "1934A630C496A649"
+				id: "01D525646519CEDE"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1064,13 +1069,13 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"Hidden mode can be toggled with a black dye. It makes it so that the drawer doesn't show it's item."
+				"&aHidden mode&f can be toggled with a &eblack dye&f. It makes it so that the drawer doesn't show it's item."
 				""
-				"THis is mostly useful when you have a big network of drawers and want to improve performance as rendering the item icons can be very expensive."
+				"This is mostly useful when you have a big network of drawers and want to improve performance as rendering the item icons can be very expensive."
 				""
-				"Like locks, the items aren't consumed and can be applied to access points."
+				"Like locks, the items &baren't consumed&f and can be applied to &eaccess points&f."
 				""
-				"Hiding can also be applied to shadow drawers. This is mostly useful if you want to use one in a contraption."
+				"&aHiding&f can also be applied to &eshadow drawers&f. This is mostly useful if you want to use one in a contraption."
 			]
 			dependencies: ["4F278EA5EC5E59E1"]
 			id: "2CA069F476518EB2"
@@ -1080,9 +1085,9 @@
 				item: "minecraft:black_dye"
 			}]
 			rewards: [{
-				id: "72902429B85D9AC6"
+				id: "29A05A3C9B9383C0"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1091,9 +1096,9 @@
 			y: 2.5d
 			shape: "rsquare"
 			description: [
-				"Tom's Simple Storage Mod is going to be a godsend for the early game, as you won't have access to a full Applied Energistics 2 network until Digital Circuits."
+				"&aTom's Simple Storage Mod&f is going to be a godsend for the early game, as you won't have access to a full &eApplied Energistics 2&f network until Digital Circuits."
 				""
-				"The Inventory Connector acts similarly to the AE2 Controller. It's the heart of an inventory network. You can connect terminals to the Inventory Connector to access all the linked inventories."
+				"The &bInventory Connector&f acts similarly to the &cAE2 Controller&f. It's the heart of an inventory network. You can connect terminals to the &bInventory Connector&f to access all the linked inventories."
 			]
 			dependencies: ["045C683BF6E216CB"]
 			size: 1.5d
@@ -1104,16 +1109,16 @@
 				item: "toms_storage:ts.inventory_connector"
 			}]
 			rewards: [{
-				id: "0F9405E1445718F8"
+				id: "68889F03CC2BD415"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 0.5d
 			y: 5.0d
 			shape: "rsquare"
-			description: ["The Storage Terminal can be connected to the Inventory Connector to display all the linked inventories and access all the items."]
+			description: ["The &aStorage Terminal&f can be connected to the &bInventory Connector&f to display all the linked inventories and access all the items."]
 			dependencies: ["6BBBD642A60FDFB5"]
 			id: "3ED795611B49EB0E"
 			tasks: [{
@@ -1122,16 +1127,16 @@
 				item: "toms_storage:ts.storage_terminal"
 			}]
 			rewards: [{
-				id: "5F78BD7398A9A656"
+				id: "25EDBC4A2AA87EA5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 2.0d
 			y: 5.0d
 			shape: "rsquare"
-			description: ["The Crafting Terminal is an upgraded terminal that allows you to craft while accessing your inventory network. Pretty much similar to the AE2 Crafting Terminal."]
+			description: ["The &aCrafting Terminal&f is an upgraded terminal that allows you to craft while accessing your inventory network. Pretty much similar to the &cAE2 Crafting Terminal&f."]
 			dependencies: ["3ED795611B49EB0E"]
 			id: "5E15C005B58CC8D7"
 			tasks: [{
@@ -1140,16 +1145,16 @@
 				item: "toms_storage:ts.crafting_terminal"
 			}]
 			rewards: [{
-				id: "08DBE5262E3815D4"
+				id: "5770B9E8FB3770C3"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -0.5d
 			y: 5.0d
 			shape: "rsquare"
-			description: ["The Wireless Terminal is an item that can be used to remotely access your inventory Terminals. To use, hold the Wireless Terminal and aim at an terminal on your network, you'll need to be within 16 blocks to do so."]
+			description: ["The &bWireless Terminal&f is an item that can be used to remotely access your &aInventory Terminals&f. To use, hold the &bWireless Terminal&f and aim at an terminal on your network, you'll need to be within 16 blocks to do so."]
 			dependencies: ["6BBBD642A60FDFB5"]
 			id: "3B4AD85236538A6A"
 			tasks: [{
@@ -1158,9 +1163,9 @@
 				item: "toms_storage:ts.wireless_terminal"
 			}]
 			rewards: [{
-				id: "011366C00672A054"
+				id: "40D67397F832345C"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1169,7 +1174,7 @@
 			y: 4.0d
 			shape: "rsquare"
 			subtitle: "Connect all the things!"
-			description: ["Inventory Cables can extend the range of your inventory connection. Use an Inventory Cable Connector to link the inventory to the cable."]
+			description: ["&bInventory Cables&f can extend the range of your inventory connection. Use an &bInventory Cable Connector&f to link the inventory to the cable."]
 			dependencies: ["6BBBD642A60FDFB5"]
 			id: "202F9363708E9BA5"
 			tasks: [
@@ -1185,9 +1190,9 @@
 				}
 			]
 			rewards: [{
-				id: "1FA9F8682CE97269"
+				id: "48CB9AF4912D21C6"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1195,12 +1200,12 @@
 			y: 5.0d
 			shape: "rsquare"
 			description: [
-				"The Advanced Wireless Terminal allows you to access your network without having to be nearby and looking at the terminal. Shift-right click a terminal to bind to it."
+				"The &aAdvanced Wireless Terminal&f allows you to access your network without having to be nearby and looking at the terminal. &eShift-right click&f a terminal to bind to it."
 				""
-				"Placing a tier 1 beacon near the bound terminal will allow you to access the inventory anywhere in the current dimension."
-				"Placing a full tier 4 beacon near the bound terminal will allow you to access the inventory anywhere, even across dimensions. "
+				"Placing a &ctier 1 beacon&f near the bound terminal will allow you to access the inventory anywhere in the current dimension."
+				"Placing a full &ctier 4 beacon&f near the bound terminal will allow you to access the inventory anywhere, even across dimensions. "
 				""
-				"The chunks the inventories are in will need to be loaded to access them remotely."
+				"The &echunks&f the inventories are in will &eneed to be loaded&f to access them remotely."
 			]
 			dependencies: ["3B4AD85236538A6A"]
 			id: "559DE4D9670C28F8"
@@ -1210,16 +1215,16 @@
 				item: "toms_storage:ts.adv_wireless_terminal"
 			}]
 			rewards: [{
-				id: "4A89F6AB35F63EB4"
+				id: "04EB6C47F16345A8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 0.5d
 			y: 4.0d
 			shape: "rsquare"
-			description: ["The Inventory Trim can extend your Inventory Connector's connection."]
+			description: ["The &aInventory Trim&f can extend your &bInventory Connector&f's connection."]
 			dependencies: ["6BBBD642A60FDFB5"]
 			id: "15266EC696E60BE3"
 			tasks: [{
@@ -1228,9 +1233,9 @@
 				item: "toms_storage:ts.trim"
 			}]
 			rewards: [{
-				id: "117C48CF501A396B"
+				id: "74B0C44C0ED6DF90"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1238,9 +1243,9 @@
 			y: 4.0d
 			shape: "rsquare"
 			description: [
-				"The Basic Inventory Hopper can import or export from your inventory network."
+				"The &aBasic Inventory Hopper&f can import or export from your inventory network."
 				""
-				"Right click to set the filter, shift-right click with an empty hand to clear the filter."
+				"&eRight click&f to set the filter, &eshift-right click&f with an empty hand to clear the filter."
 			]
 			dependencies: ["6BBBD642A60FDFB5"]
 			id: "07F958D1B6C27546"
@@ -1250,22 +1255,27 @@
 				item: "toms_storage:ts.inventory_hopper_basic"
 			}]
 			rewards: [{
-				id: "2679EC6B35F8307C"
+				id: "245C214EB3E80868"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 1.5d
 			y: 4.0d
 			shape: "rsquare"
-			description: ["Emits redstone signals based on your inventory storage. Similar to the AE2 Level Emitter."]
+			description: ["Emits redstone signals based on your inventory storage. Similar to the &eAE2 Level Emitter&f."]
 			dependencies: ["6BBBD642A60FDFB5"]
 			id: "532263D258F71B9A"
 			tasks: [{
 				id: "2D0F6AB857FDC64E"
 				type: "item"
 				item: "toms_storage:ts.level_emitter"
+			}]
+			rewards: [{
+				id: "76A5B764EC856113"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]

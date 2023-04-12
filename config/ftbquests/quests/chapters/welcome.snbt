@@ -7,28 +7,47 @@
 	icon: "minecraft:diamond"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [{
+		x: 0.0d
+		y: -6.5d
+		width: 7.5d
+		height: 7.5d
+		rotation: 0.0d
+		image: "statech:textures/item/mm_logo.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			title: "&aWelcome!"
 			icon: "modern_industrialization:quantum_upgrade"
-			x: 0.5d
-			y: 0.0d
+			x: 0.0d
+			y: -1.0d
 			shape: "square"
 			description: [
-				"&aHello and welcome to the pack!"
+				"Hello and welcome to &aStaTech Industry&f!"
 				""
-				"&bThis quest book will be your guide through the entirety of the pack. Progression is broken down into chapters, you must complete all the required quests in one chapter to advance to the next."
+				"This &aquest book&f will be your guide through the entirety of the pack. Progression is broken down into &achapters&f, you must complete all the required quests in one chapter to advance to the next."
 				""
-				"&aCompleting quests will reward you with XP and items, so it's worth following through your journey."
+				"Don't worry about losing the &bQuest Book&f. You can access the quests by clicking the &bQuest Book&f in your inventory or pressing tilde: &e~&f"
 				""
-				"&bThe main focus of this pack is the mod Modern Industrialization, a GregTech-like mod that will have you building complex machine lines and lots of automation to complete."
+				"Completing quests will reward you with &bXP and items&f, so it's worth following through your journey."
 				""
-				"&aDon't be afraid of the mention of GregTech, as MI has a lot of changes to make playing through it much easier, such as:"
-				"&b- Removal of individual tiered machines, you can choose to overclock machine speeds as you progress"
-				"&a- Removal of the half-dozen tools required in early crafting"
-				"&b- A powerful pipe-system that you get access to very early"
-				"&a- Ways of generating resources without having to continuously move miners"
+				"The main focus of this pack is the mod &aModern Industrialization&f, a &bGregTech&f-like mod that will have you building complex machine lines and lots of automation to complete."
+				""
+				"Don't be afraid of the mention of &bGregTech&f, as &aMI&f has a lot of changes to make playing through it much easier, such as:"
+				""
+				"- Removal of individual tiered machines, you can choose to &aoverclock&f machine speeds as you progress"
+				""
+				"- Removal of the half-dozen tools required in early crafting"
+				""
+				"- A powerful pipe-system that you get access to very early"
+				""
+				"- Ways of generating resources without having to continuously move miners"
 			]
+			size: 2.0d
 			id: "2174585D87F83C89"
 			tasks: [{
 				id: "3ABF0361BC517181"
@@ -36,26 +55,28 @@
 				title: "Click to Acknowledge"
 			}]
 			rewards: [{
-				id: "1993E25D901B8E76"
+				id: "695C833217AB4D8C"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			title: "REI Tips"
-			x: -0.5d
-			y: -3.0d
+			icon: "minecraft:writable_book"
+			x: -2.0d
+			y: -1.5d
 			shape: "rsquare"
 			description: [
-				"REI, or RoughlyEnoughItems, is the included item search mod in the pack. Knowing how to use REI will be key in the completion of the pack."
+				"&eREI&f, or &eRoughlyEnoughItems&f, is the included item search mod in the pack. Knowing how to use &eREI&f will be key in the completion of the pack."
 				""
-				"You can use the bar at the bottom of your inventory to search REI. Additionally, hovering over an item in your inventory and pressing 'R' will display how to craft said item. You can alternatively press 'U' to see all the uses of an item in your inventory."
-				"When hovering items in the REI pages to the right, you can use left-click to view recipes and right-click to view uses instead."
+				"You can use the bar at the bottom of your inventory to search &eREI&f. Additionally, hovering over an item in your inventory and pressing 'R' will display &bhow to craft&f said item. You can alternatively press 'U' to &bsee all the uses&f of an item in your inventory."
+				"When hovering items in the &eREI&f pages to the right, you can use left-click to view recipes and right-click to view uses instead."
 				""
 				"Knowing how to do some more complex searches will also be helpful."
-				"@modname - This will search REI for all items provided by a specific mod"
-				"$tagname - This will search REI for all items in a specified tag, useful for searcing things such as $ingots"
+				"&b@modname&f - This will search REI for all items provided by a specific mod"
+				"&e$tagname&f - This will search REI for all items in a specified tag, useful for searcing things such as $ingots"
 			]
+			dependencies: ["2174585D87F83C89"]
 			id: "0563A16875FB0D51"
 			tasks: [{
 				id: "0BD438227CEDDA08"
@@ -63,16 +84,23 @@
 				title: "Click to Acknowledge"
 			}]
 			rewards: [{
-				id: "1F791685928C11BE"
+				id: "01D51893E26BCCAD"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			title: "Spice of Life"
-			x: 1.0d
-			y: -3.0d
+			icon: "farmersdelight:hamburger"
+			x: -2.0d
+			y: -0.5d
 			shape: "rsquare"
+			description: [
+				"The mod &aSpice of Fabric&f has been included in the pack. This mod affects how much &esaturation&f and &chunger&f gets restored if you eat too much of a single item. "
+				""
+				"Additionally, every &eten&f unique foods eaten will grant you an additional &cheart&f!"
+			]
+			dependencies: ["2174585D87F83C89"]
 			id: "42DBEFEFCE44F5BB"
 			tasks: [{
 				id: "6467AAF803854F25"
@@ -80,40 +108,23 @@
 				title: "Click to Acknowledge"
 			}]
 			rewards: [{
-				id: "25CBEBD28D898DE1"
+				id: "74C001081CBC46D1"
 				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "FTB Ultimine"
-			x: -2.0d
-			y: -3.0d
-			shape: "rsquare"
-			subtitle: "Veinmeiner"
-			description: ["FTB Ultimine is included in this pack from the get-go. Hold down the tilde/grave key ( the one that looks like this `) to activate ultimine. You can break up to 32 blocks of the same type using this feature. It's a great way to chop down trees, mine up entire ore veins, ore break a lot of stone / dirt for resources."]
-			id: "1FD363AF79D5F4E5"
-			tasks: [{
-				id: "677B4BAC78BA05FE"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
-			rewards: [{
-				id: "52BBC92C01D33DA3"
-				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			title: "Automate Everything"
-			x: -3.5d
-			y: -3.0d
+			icon: "modern_industrialization:gold_gear"
+			x: -2.0d
+			y: -2.5d
 			shape: "rsquare"
 			description: [
 				"Early game may seem easy enough to brute force, but once you start getting to the electric and midgame chapters of this modpack you're going to run into a lot of problems if you didn't automate anything. "
 				""
-				"In general, if you find a way to automate producing something, you should do it. Everything will eventually be used at some point."
+				"In general, if you find a way to &aautomate producing something&f, you should do it."
 			]
+			dependencies: ["2174585D87F83C89"]
 			id: "44CD2B9B89F9183C"
 			tasks: [{
 				id: "205CF878A2DFA3D1"
@@ -121,36 +132,20 @@
 				title: "Click to Acknowledge"
 			}]
 			rewards: [{
-				id: "375AE93F36EB2135"
+				id: "76FE68EC0D66AB23"
 				type: "xp"
-				xp: 100
-			}]
-		}
-		{
-			title: "Quest Dependencies"
-			x: 2.5d
-			y: -3.0d
-			shape: "rsquare"
-			description: [
-				"Some quests have dependencies in a previous or different chapter. You can click the flashing red chevron in the top left of a quest description to see what dependencies need to be met."
-				""
-				"Some mods are gated to progression in Modern Industrializations. Sometimes there will be two quests completed when you complete a requirement, one in the chapter and one in its own mod tab."
-			]
-			id: "42943D8F97652177"
-			tasks: [{
-				id: "1F4420E656201E74"
-				type: "checkmark"
-				title: "Click to Acknowledge"
+				xp: 10
 			}]
 		}
 		{
 			title: "True Darkness"
 			icon: "kibe:big_torch"
-			x: -2.0d
-			y: -1.5d
+			x: 2.0d
+			y: -0.5d
 			shape: "rsquare"
 			subtitle: "It's dangerous to go alone"
-			description: ["The caves and night in this world aren't like you remember in vanilla. It gets dark, very dark. You can circumvent the darkness by placing / holding a torch in your offhand. Just make sure to light up your base, you never know what creepy crawlies may lurk around."]
+			description: ["The caves and night in this world aren't like you remember in vanilla. It gets dark, &cvery dark&f. You can circumvent the darkness by placing / holding a torch in your offhand. Just make sure to light up your base, you never know what creepy crawlies may lurk around."]
+			dependencies: ["2174585D87F83C89"]
 			id: "525523B87D97A371"
 			tasks: [{
 				id: "021B5A0269EAC365"
@@ -158,45 +153,57 @@
 				title: "Click to Acknowledge"
 			}]
 			rewards: [{
-				id: "7282857131F93E8C"
-				type: "item"
-				item: "minecraft:torch"
-				count: 16
+				id: "48E8E7BFEC73268F"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
 			title: "Required Quests"
-			x: 4.0d
-			y: -3.0d
+			icon: "minecraft:redstone_torch"
+			x: -2.0d
+			y: 0.5d
 			shape: "rsquare"
 			description: [
-				"Quests are separated between Required and Optional. Optional quests have a circular border, like the other quests in this chapter, while Required quests have a square border."
+				"Quests are separated between &bRequired&f and &eOptional&f. &eOptional&f quests have a &acircular border&f, like the other quests in this chapter, while &bRequired&f quests have a &asquare border&f."
 				""
-				"While some quests may be Optional, it doesn't mean you should overlook them, as they could be important in helping you in your journey!"
+				"While some quests may be &eOptional&f, it doesn't mean you should overlook them, as they could be important in helping you in your journey!"
 			]
+			dependencies: ["2174585D87F83C89"]
 			id: "2A1B2E53413418E1"
 			tasks: [{
 				id: "37CF0AB273567327"
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
+			rewards: [{
+				id: "45126F96E3D071C5"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "A Scarier Nether"
 			icon: "minecraft:netherrack"
-			x: -3.5d
-			y: -1.5d
+			x: 2.0d
+			y: 0.5d
 			shape: "rsquare"
 			description: [
-				"The mod Amplified Nether is included in this pack. This makes the Nether extend up to 192 blocks instead of the default 128. With this added height brings harder traversal and more dangers."
+				"The mod &aAmplified Nether&f is included in this pack. This makes the &cNether&f extend up to &a192&f blocks instead of the default &a128&f. With this added height brings harder traversal and more dangers."
 				""
-				"Alongside Amplified Nether, this modpack also includes Incendium, a mod that adds new structures and biomes to the Nether for you to find and explore."
+				"Alongside &aAmplified Nether&f, this modpack also includes &cIncendium&f, a mod that adds new structures and biomes to the &cNether&f for you to find and explore."
 			]
+			dependencies: ["2174585D87F83C89"]
 			id: "08002F088B54D2AF"
 			tasks: [{
 				id: "7FF8D25441251661"
 				type: "checkmark"
 				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "6DE0632E61A71013"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -208,10 +215,11 @@
 					Damage: 0
 				}
 			}
-			x: -0.5d
+			x: 2.0d
 			y: -1.5d
 			shape: "rsquare"
-			description: ["This modpack includes Simply Swords and Better Combat. Together these overhaul the combat of vanilla Minecraft completely and offer a broad variety of weapons to try out."]
+			description: ["This modpack includes &aSimply Swords&f and &eBetter Combat&f. Together these overhaul the combat of vanilla Minecraft completely and offer a broad variety of weapons to try out."]
+			dependencies: ["2174585D87F83C89"]
 			id: "1709043780838C78"
 			tasks: [{
 				id: "094A44397AB8351C"
@@ -219,22 +227,72 @@
 				title: "Click to Acknowledge"
 			}]
 			rewards: [{
-				id: "38003A84D5B99A71"
+				id: "61B17DCAA9063D60"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			title: "Oh the Biomes You'll Go"
 			icon: "byg:byg_logo"
-			x: 1.0d
-			y: -1.5d
+			x: 2.0d
+			y: -2.5d
 			shape: "rsquare"
+			description: ["&aOh The Biomes You'll Go&f is included in this pack alongside &eTerralith&f. Together, these world generation mods will vastly improve the landscape as you adventure."]
+			dependencies: ["2174585D87F83C89"]
 			id: "571425ED36DA521C"
 			tasks: [{
 				id: "6A3D3DA3D5DA4D06"
 				type: "checkmark"
 				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "450AC7A949C1BE02"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Optional Additions"
+			icon: "create:goggles"
+			x: 0.5d
+			y: 1.5d
+			shape: "rsquare"
+			description: [
+				"This pack includes &eComplimentaryReimagined&f. This is a highly customizable and performance friendly shader that you can enable through &aVideo Settings -> Shader Packs&f."
+				""
+				"Also included, and enabled by default is a &aSmooth Font&f resourcepack. If you'd rather have the default Minecraft font, you can disable the resource pack."
+			]
+			dependencies: ["2174585D87F83C89"]
+			id: "6C661605F1DBEE4D"
+			tasks: [{
+				id: "70B13DBDC276B4EA"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "5A35AE7006AA7D24"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Chapters vs. Mods"
+			x: -0.5d
+			y: 1.5d
+			shape: "rsquare"
+			description: ["&aMain Progressions&f are in the &eChapters&f. The entries below the &bMods&f section are helpful mods added in the pack that aren't locked behind &epack progression&f."]
+			dependencies: ["2174585D87F83C89"]
+			id: "0480052F3F1EDAFC"
+			tasks: [{
+				id: "030C38099F469C1F"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "32F27179EF571FEE"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]
