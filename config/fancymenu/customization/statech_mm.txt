@@ -9,6 +9,11 @@ customization-meta {
 }
 
 customization {
+  name = statechpanorama_01
+  action = setbackgroundpanorama
+}
+
+customization {
   keepaspectratio = false
   action = backgroundoptions
 }
@@ -97,7 +102,7 @@ customization {
   width = 165
   action = deep_customization_element:title_screen_branding
   actionid = 04cf3fc2-5d49-48d5-9606-18703dfd1c831681253574706
-  y = 327
+  y = 348
   height = 10
 }
 
