@@ -1,7 +1,13 @@
 {
 	version: 13
 	title: "StaTech Industry"
-	icon: "modern_industrialization:gold_gear"
+	icon: {
+		id: "modern_industrialization:iron_hammer"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
 	default_reward_team: false
 	default_consume_items: false
 	default_autoclaim_rewards: "disabled"

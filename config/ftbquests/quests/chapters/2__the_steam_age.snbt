@@ -5,6 +5,7 @@
 	filename: "2__the_steam_age"
 	title: "2 - Steam Age"
 	icon: "modern_industrialization:bronze_boiler"
+	subtitle: ["The Basis of Industry"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -27,7 +28,7 @@
 			rewards: [{
 				id: "1D807100C2C4475B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{

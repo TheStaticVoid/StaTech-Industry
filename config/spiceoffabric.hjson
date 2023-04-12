@@ -5,7 +5,7 @@
 	// If set to EXTENDED, there'll also be information on how many other foods the player needs to eat to restore the nutrition value.
 	// With NONE this tooltip is hidden.
 	// default: NONE
-	show-last-eaten-tips: NONE
+	show-last-eaten-tips: SIMPLE
 	// Edit the expressions that are used for calculating the player stats after respawning.
 	// Expressions are mathematical terms with the following variables:
 	// 	hunger is the amount of hunger the player had when dying
@@ -14,7 +14,7 @@
 		// Expression that determines the hunger level after a fresh respawn
 		// default: max(14, hunger)
 		// 	Must be a valid expression
-		hunger: max(14, hunger)
+		hunger: max(20, hunger)
 		// Expression that determines the saturation level after a fresh respawn
 		// default: saturation
 		// 	Must be a valid expression
@@ -60,7 +60,7 @@
 		// Default health in vanilla is 20 but that may change through mods like Origins.
 		// The resulting value will be floored before use.
 		// default: 0.6 * baseHealth + max(2 * floor(log2(uniqueFoodsEaten)), 0)
-		health-formula: 0.6 * baseHealth + max(2 * floor(log2(uniqueFoodsEaten)), 0)
+		health-formula: 1.0 * baseHealth + max(2* floor(uniqueFoodsEaten/10), 0)
 		// Specifies the maximum number of health points (half hearts) a player can get to through carrot mode.
 		// When 0, carrot mode is effectively disabled. (Why would you do this? :P)
 		// When -1, you can gain a basically infinite amount of hearts.
@@ -84,5 +84,9 @@
 		// Enable a food container that can be crafted from bamboo and holds up to 9 stacks of food.
 		// default: false
 		enable-picnic-basket: true
+		// Whether to use Polymer for server-side only usage.
+		// Using Polymer in other scenarios is not recommended.
+		// default: false
+		use-polymer: false
 	}
 }

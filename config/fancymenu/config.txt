@@ -4,7 +4,7 @@
 B:playbackgroundsoundsinworld = 'false';
 B:forcefullscreen = 'false';
 [If menu background sounds added by FancyMenu should be played or not.]
-B:playbackgroundsounds = 'true';
+B:playbackgroundsounds = 'false';
 [A minecraft restart is required after changing this value.]
 B:enablehotkeys = 'false';
 B:playmenumusic = 'true';
@@ -16,7 +16,7 @@ I:defaultguiscale = '-1';
 ##[customization]
 
 B:advancedmode = 'false';
-B:showcustomizationbuttons = 'true';
+B:showcustomizationbuttons = 'false';
 
 
 ##[loading]
@@ -34,7 +34,7 @@ S:customgameintroskiptext = '';
 [A minecraft restart is required after changing this value.]
 S:customwindowtitle = 'StaTech Industry';
 [A minecraft restart is required after changing this value.]
-B:customwindowicon = 'false';
+B:customwindowicon = 'true';
 
 
 ##[world_loading_screen]

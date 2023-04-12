@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
         'AI'
     ],
     {
-        I: '#c:iron_ingots',
+        I: '#c:iron_nuggets',
         A: 'minecraft:andesite'
     });
 
@@ -49,7 +49,7 @@ ServerEvents.recipes(e => {
     ],
     {
         W: '#minecraft:planks',
-        C: 'create:shaft'
+        C: 'create:cogwheel'
     });
 
     // -- BRONZE DUST -- //

@@ -25,7 +25,8 @@ const REI_DELETED_ITEMS = [
     'kibe:angel_ring',
     'techreborn:alloy_smelter',
     'techreborn:iron_alloy_furnace',
-    'spirit:soul_pedestal'
+    'spirit:soul_pedestal',
+    'techreborn:saw_dust'
 ];
 
 REIEvents.hide('item', e => {
