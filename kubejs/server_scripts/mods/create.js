@@ -1,24 +1,12 @@
 ServerEvents.recipes(e => {
     // -- RECIPE REMOVAL -- //
     const CREATE_DELETED_ITEMS = [
-        'create:crafting/materials/andesite_alloy_from_zinc',
-        'create:crafting/materials/andesite_alloy',
         'create:crafting/kinetics/cogwheel',
         'create:crafting/kinetics/large_cogwheel',
         'create:crafting/kinetics/large_cogwheelfrom_little'
     ];
     CREATE_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove( {type: 'create:mixing', output: 'ae2:fluix_crystal' });
-
-    // -- ANDESITE ALLOY -- //
-    e.shaped('create:andesite_alloy', [
-        'IA',
-        'AI'
-    ],
-    {
-        I: '#c:iron_nuggets',
-        A: 'minecraft:andesite'
-    });
 
     // -- COGWHEEL -- //
     e.shaped('create:cogwheel', [

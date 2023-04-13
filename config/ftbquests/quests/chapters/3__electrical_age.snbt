@@ -14,9 +14,9 @@
 			y: 0.0d
 			shape: "square"
 			description: [
-				"Welcome to Chapter 3."
+				"Welcome to &eChapter 3&f."
 				""
-				"This chapter of the modpack is focused on getting your first electrical machines, aluminum, stainless steel, and oil processing! There's a lot to do, so get started!"
+				"This chapter of the modpack is focused on getting your first &aelectrical machines&f, aluminum, stainless steel, and oil processing! There's a lot to do, so get started!"
 			]
 			dependencies: ["72090D36C27DC4AF"]
 			size: 1.5d
@@ -29,7 +29,7 @@
 			rewards: [{
 				id: "3972A5DA26D3A97D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -38,9 +38,9 @@
 			shape: "square"
 			subtitle: "Lightning in a Box"
 			description: [
-				"The Steam Turbine uses Steam to produce electricity. It converts every mb of Steam to 1 EU, up to 32 mb converted every tick."
+				"The &aSteam Turbine&f uses &7Steam&f to produce electricity. It converts every mb of &7Steam&f to 1 EU, up to 32 mb converted every tick."
 				""
-				"The Steam Turbine will automatically send electricity to any machine connected directly to its output side. It will only connect to cables placed on its output side. It has the Low Voltage (LV) Tier."
+				"The &aSteam Turbine&f will automatically send electricity to any machine connected directly to its output side. It will only connect to cables placed on its output side. It has the Low Voltage (LV) Tier."
 				""
 				"Every electric cable has a Tier which determines how many EU/t it can transfer and which machines it can connect to. Copper, Silver, and Tin are LV, Curponickel and Electrum are MV, and so on..."
 				""
@@ -63,7 +63,7 @@
 			rewards: [{
 				id: "61A0143B765799CD"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -72,11 +72,11 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"For those of you who have played GregTech before, you will know that in that machines that connect to higher voltage tiers than themselves will explode. THIS IS NOT THE CASE HERE."
+				"For those of you who have played &aGregTech&f before, you will know that in that machines that connect to higher voltage tiers than themselves will explode. &lTHIS IS NOT THE CASE HERE&r."
 				""
-				"In Modern Industrialization, your cables will not burn up if you connect higher tier generator to lower tier cable, and your machines will not explode if you connect a higher tier cable to a lower tier machine. Instead of all that, nothing happens. That's right, you don't have to worry about all of those negative effects. Machines will refuse to send / receive power if you don't connect the correct cabling."
+				"In &eModern Industrialization&f, your cables will not burn up if you connect higher tier generator to lower tier cable, and your machines will not explode if you connect a higher tier cable to a lower tier machine. Instead of all that, nothing happens. That's right, you don't have to worry about all of those negative effects. Machines will refuse to send / receive power if you don't connect the correct cabling."
 				""
-				"Also, unlike GT:NH, your machines will not explode if they are exposed to rain."
+				"Also, unlike &aGT:NH&f, your machines will not explode if they are exposed to rain."
 			]
 			dependencies: ["6765B4B8D870CDA0"]
 			id: "11C4254DF67951A9"
@@ -88,14 +88,14 @@
 			rewards: [{
 				id: "695A8059B5F1667F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 6.0d
 			y: 2.0d
 			shape: "rsquare"
-			description: ["Now that you're generating power, it's probably best to create a buffer. This way while you're not fully stressing your power network you're creating a backlog for when you may be using it faster than you can produce. "]
+			description: ["Now that you're generating power, it's probably best to create a &dbuffer&f. This way while you're not fully stressing your power network you're creating a backlog for when you may be using it faster than you can produce. "]
 			dependencies: ["6765B4B8D870CDA0"]
 			id: "3AD3E65C11D8C2A5"
 			tasks: [{
@@ -106,7 +106,7 @@
 			rewards: [{
 				id: "1E27FEAAD4DFF507"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -115,9 +115,9 @@
 			y: 1.0d
 			shape: "rsquare"
 			description: [
-				"As an alternative to Steam power, you can also create a Basic Solar Panel. Generally, solar is going to be weaker than other power sources, so if you'd actually like to use it, you will need to have to use a lot of solar panels."
+				"As an alternative to &7Steam&f power, you can also create a &aBasic Solar Panel&f. Generally, solar is going to be weaker than other power sources, so if you'd actually like to use it, you will need to have to use a lot of solar panels."
 				""
-				"The Basic Solar Panel will produce 3 EU/t during the day and 0 EU/t during the night. If you'd like to have power in the night, you'll need to use a Storage Unit as a power buffer."
+				"The &aBasic Solar Panel&f will produce 3 EU/t during the day and 0 EU/t during the night. If you'd like to have power in the night, you'll need to use a &bStorage Unit&f as a power buffer."
 			]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "56C3965074DC455E"
@@ -129,7 +129,7 @@
 			rewards: [{
 				id: "4C4AF57D9F08351E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -139,9 +139,9 @@
 			shape: "rsquare"
 			subtitle: "Good for the environment!"
 			description: [
-				"The Starter Diesel Generator is an alternative power generation method that will allow you to burn Creosote to generate up to 64 EU/t."
+				"The &aStarter Diesel Generator&f is an alternative power generation method that will allow you to burn Creosote to generate up to 64 EU/t."
 				""
-				"I would not recommend making this your main power source and instead relying on Steam Turbines until you unlock the regular Diesel Generator."
+				"I would not recommend making this your main power source and instead relying on &bSteam Turbines&f until you unlock the regular &aDiesel Generator&f."
 			]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "1DC734F9B44FDB9A"
@@ -153,14 +153,14 @@
 			rewards: [{
 				id: "576FF2B9F41CC687"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			x: 1.5d
+			x: 1.0d
 			y: -2.5d
 			shape: "square"
-			description: ["The Electric Cutting Machine is the electrical version of the Steam Cutting Machine. The only recipe it unlocks is to turn Monocrystalline Silicon into Silicon Wafers, which you won't need right now. "]
+			description: ["The &aElectric Cutting Machine&f is the electrical version of the &bSteam Cutting Machine&f. The only recipe it unlocks is to turn Monocrystalline Silicon into Silicon Wafers, which you won't need right now. Other than that, it processes existing recipes faster and more efficiently."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "627C78680166E422"
 			tasks: [{
@@ -171,14 +171,14 @@
 			rewards: [{
 				id: "3B8BEAE8CFA4F92A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -5.0d
 			y: 1.0d
 			shape: "square"
-			description: ["The Electric Furnace is the electrical version of the Steam Furnace. It doesn't open up any new recipes, but it will process recipes much faster than its Steam counterpart."]
+			description: ["The &aElectric Furnace&f is the electrical version of the &bSteam Furnace&f. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&f counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "03D51B7E40C3A7CD"
 			tasks: [{
@@ -189,14 +189,14 @@
 			rewards: [{
 				id: "441089C7FE3232B2"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -6.5d
 			y: 0.0d
 			shape: "square"
-			description: ["The Electric Macerator is the electrical version of the Steam Macerator. It opens up the ability to make Calcite Dust, and it will process recipes much faster than its Steam counterpart."]
+			description: ["The &aElectric Macerator&f is the electrical version of the &bSteam Macerator&a. It opens up the ability to make Calcite Dust, and it will process recipes much faster than its &7Steam&f counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "1EFA4209205571E3"
 			tasks: [{
@@ -207,14 +207,14 @@
 			rewards: [{
 				id: "415F22A8710C757E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 1.0d
 			y: -3.5d
 			shape: "square"
-			description: ["The Electric Wiremill is the electrical version of the Steam Wiremill. It doesn't open up any new recipes, but it will process recipes much faster than its Steam counterpart."]
+			description: ["The &aElectric Wiremill&f is the electrical version of the &bSteam Wiremill&f. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&f counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "2ACF26FC95B88B16"
 			tasks: [{
@@ -225,14 +225,14 @@
 			rewards: [{
 				id: "14089010AC8995EF"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			x: -1.5d
+			x: -2.0d
 			y: -2.5d
-			shape: "rsquare"
-			description: ["The Electric Unpacker is the electrical version of the Steam Unpacker. It doesn't open up any new recipes, but it will process recipes much faster than its Steam counterpart."]
+			shape: "square"
+			description: ["The &aElectric Unpacker&f is the electrical version of the &bSteam Unpacker&f. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&f counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "278BE1D13FE8E78E"
 			tasks: [{
@@ -243,7 +243,7 @@
 			rewards: [{
 				id: "11209AFD93F7EC26"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -252,9 +252,10 @@
 			shape: "square"
 			subtitle: "Factorio!"
 			description: [
-				"This is the first machine you will probably want to make a lot of! The Assembler allows you to automate almost all recipes, up to 3 per Assembler if you use slot locking."
+				"This is the first machine you will probably want to make a lot of! The &aAssembler&f allows you to automate almost all recipes, up to 3 per &aAssembler&f if you use slot locking."
 				""
-				"I strongly suggest that you automate Machine Hulls, Analog Circuits, Motors, Pistons, Robot Arms, and Conveyor Belts using Assemblers as soon as possible, that will make crafting Electrical Machines basically free!"
+				"I strongly suggest that you automate Machine Hulls, Analog Circuits, Motors, Pistons, Robot Arms, and Conveyor Belts using Assemblers as soon as possible, that will make crafting &eElectrical Machines&f basically free*!"
+				"* Materials not included"
 			]
 			dependencies: ["473C1DE557D3E9C0"]
 			size: 1.5d
@@ -267,7 +268,7 @@
 			rewards: [{
 				id: "52A0BFCE3D022CCB"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -289,7 +290,7 @@
 			rewards: [{
 				id: "358515FA2E11724E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -297,7 +298,7 @@
 			y: 4.5d
 			shape: "rsquare"
 			description: [
-				"By combining Calcite Dust and Iron Ingots in an Alloy Smelter, you can create Refined Iron Ingots. "
+				"By combining Calcite Dust and Iron Ingots in an &aAlloy Smelter&f, you can create &3Refined Iron Ingots&f. "
 				""
 				"These serve two main purposes. The first, an upgrade to your backpack, a second, an alternative way for generating Steel once you have your Electric Blast Furnace."
 			]
@@ -314,14 +315,14 @@
 			rewards: [{
 				id: "28E441DCD1CA6EAA"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			x: -0.5d
+			x: -1.0d
 			y: -2.5d
-			shape: "rsquare"
-			description: ["The Electric Packer is the electrical version of the Steam Unpacker. It doesn't open up any new recipes, but it will process recipes much faster than its Steam counterpart."]
+			shape: "square"
+			description: ["The &aElectric Packer&f is the electrical version of the &bSteam Unpacker&f. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&f counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "3F0D5EA33B0F016B"
 			tasks: [{
@@ -332,14 +333,14 @@
 			rewards: [{
 				id: "09298B99FBFE96DD"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			x: 0.0d
-			y: -3.5d
+			x: 2.0d
+			y: -2.5d
 			shape: "square"
-			description: ["The Polarizer is a machine that will allow you to magnetically charge certain types of metals. This means you can stop using Redstone to magnetise Steel Rods, as well as you will be able to magnetise certain important metals in the future."]
+			description: ["The &aPolarizer&f is a machine that will allow you to magnetically charge certain types of metals. This means you can stop using Redstone to magnetise Steel Rods, as well as you will be able to magnetise certain important metals in the future."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "5D6D204EAB87BF4A"
 			tasks: [{
@@ -350,7 +351,7 @@
 			rewards: [{
 				id: "6577791920C8F17B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -358,7 +359,7 @@
 			y: 7.0d
 			shape: "square"
 			subtitle: "Bring out the barrels!"
-			description: ["The Distillery will turn various fluids into their lighter parts. This will be very useful for Oil Processing!"]
+			description: ["The &aDistillery&f will turn various fluids into their lighter parts. This will be very useful for Oil Processing!"]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "4E45A919AB388540"
 			tasks: [{
@@ -369,7 +370,7 @@
 			rewards: [{
 				id: "29CBD79352F17A5A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -378,7 +379,7 @@
 			shape: "square"
 			subtitle: "Shocking"
 			description: [
-				"The Electrolyzer can split materials into their different parts using strong electric currents."
+				"The &aElectrolyzer&f can split materials into their different parts using strong electric currents."
 				""
 				"You can electrolyze Bauxite Dust to get Aluminum Dust, which you can then directly smelt into Aluminum Ingots in the EBF. Alternatively, you can electrolyze a bunch of clay to get some aluminum."
 			]
@@ -392,7 +393,7 @@
 			rewards: [{
 				id: "5F0B1F46332CF666"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -401,9 +402,9 @@
 			shape: "square"
 			subtitle: "No PHD required"
 			description: [
-				"The Chemical Reactor is used to cause reactions between solid items and fluids."
+				"The &aChemical Reactor&f is used to cause reactions between solid items and fluids."
 				""
-				"As you progress further, recipes using the Chemical Reactor will become much more common. Plan to make a lot of these."
+				"As you progress further, recipes using the &aChemical Reactor&f will become much more common. Plan to make a lot of these."
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "517C3D6FBC5FEB2A"
@@ -415,7 +416,7 @@
 			rewards: [{
 				id: "3F6192EA684F5358"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -424,9 +425,9 @@
 			shape: "square"
 			subtitle: "You spin me right round"
 			description: [
-				"The Centrifuge splits items by spinning them very fast. You can use it to make carbon dust and unlock better recipes for Steel and Silicon."
+				"The &aCentrifuge&f splits items by spinning them very fast. You can use it to make carbon dust and unlock better recipes for Steel and Silicon."
 				""
-				"There are about 5 real pages of recipes to look at with the Centrifuge, the rest are just different ways to make Plant Oil. Regardless, it's worth taking a look at those recipes as you will be using some of them shortly."
+				"There are about 5 real pages of recipes to look at with the &aCentrifuge&f, the rest are just different ways to make Plant Oil. Regardless, it's worth taking a look at those recipes as you will be using some of them shortly."
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "136292FF2B54C503"
@@ -438,7 +439,7 @@
 			rewards: [{
 				id: "5971708A407CC0CC"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -446,9 +447,9 @@
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"As your Steam needs increase, you will probably find that the Steel Pumps are not cutting it anymore. "
+				"As your &7Steam&f needs increase, you will probably find that the &aSteel Pumps&f are not cutting it anymore. "
 				""
-				"The solution is an Electric Pump. Instead of a measly 2000 mB of water every 5 seconds, it can produce 16000 mB of water every 5 seconds. That's an 8x increase! Once it's internal buffer is full, it only requires 1 EU/t to operate, very efficient!"
+				"The solution is an &bElectric Pump&f. Instead of a measly 2000 mB of water every 5 seconds, it can produce 16000 mB of water every 5 seconds. That's an 8x increase! Once it's internal buffer is full, it only requires 1 EU/t to operate, very efficient!"
 			]
 			dependencies: ["6765B4B8D870CDA0"]
 			id: "67B29CAD95658175"
@@ -460,14 +461,14 @@
 			rewards: [{
 				id: "1249556F20B33405"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			x: 0.5d
+			x: 0.0d
 			y: -2.5d
 			shape: "square"
-			description: ["On top of processing the Bronze/Steel recipes more efficiently, the Mixer opens up new recipes that will be very important in the near future, such as mixing fuels."]
+			description: ["On top of processing the Bronze/Steel recipes more efficiently, the &aMixer&f opens up new recipes that will be very important in the near future, such as mixing fuels."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "0D3703BE9C1401C8"
 			tasks: [{
@@ -478,7 +479,7 @@
 			rewards: [{
 				id: "594CF35097BB7CD7"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -498,7 +499,7 @@
 			y: 4.5d
 			shape: "rsquare"
 			subtitle: "Long awaited upgrade"
-			description: ["Finally with your Refined Iron, you can upgrade your Frayed Backpack to become a Plated Backpack. This backpack can hold 18 stacks of items and can be equipped on your back trinket slot."]
+			description: ["Finally with your &7Refined Iron&f, you can upgrade your Frayed Backpack to become a &ePlated Backpack&f. This backpack can hold 18 stacks of items and can be equipped on your back trinket slot."]
 			dependencies: ["6012D781643367DA"]
 			id: "59141568014C03CB"
 			tasks: [{
@@ -509,14 +510,14 @@
 			rewards: [{
 				id: "17E40DAC9A647C80"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -5.0d
 			y: 2.5d
 			shape: "square"
-			description: ["The Alloy Smelter is used to... smelt alloys. It's a key machine for progressing, as certain alloys are going to be required as you progress."]
+			description: ["The &aAlloy Smelter&f is used to... smelt alloys. It's a key machine for progressing, as certain alloys are going to be required as you progress."]
 			dependencies: ["03D51B7E40C3A7CD"]
 			id: "6A6C717EB97FD7B5"
 			tasks: [{
@@ -527,7 +528,7 @@
 			rewards: [{
 				id: "741CFA041AB56F6B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -545,7 +546,7 @@
 			rewards: [{
 				id: "0B3808749AFFDE08"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -563,7 +564,7 @@
 			rewards: [{
 				id: "6E8AFDE7E7A929C5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -575,7 +576,7 @@
 			description: [
 				"In the need of more Creosote? Or would you like to get a headstart on Benzene production? Either way, the Pyrolyse Oven is the perfect multiblock solution for you."
 				""
-				"You can Ponder the multiblock by holding 'W' on the Pyrolyze Oven item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
+				"You can Ponder the multiblock by holding 'W' on the &aPyrolyze Oven&f item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
 			]
 			dependencies: ["53CABAF5DA73AF92"]
 			size: 1.25d
@@ -662,15 +663,15 @@
 			rewards: [{
 				id: "4D1DAFEBF1D2ACE6"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			x: 3.0d
-			y: -1.5d
+			x: 0.0d
+			y: -3.5d
 			shape: "rsquare"
 			description: [
-				"The Extractor is a Tech Reborn machine that can, well... extract things from items. Check REI for the list of all the recipes it can process. "
+				"The &aExtractor&f is a &eTech Reborn&f machine that can, well... extract things from items. Check &dREI&f for the list of all the recipes it can process. "
 				""
 				"Most notably, it will give you a better ratio on Sap to Rubber, as well as some other Rubber production methods."
 			]
@@ -684,7 +685,7 @@
 			rewards: [{
 				id: "42A7980B75E543B3"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -694,13 +695,13 @@
 			shape: "square"
 			subtitle: "EBF for short!"
 			description: [
-				"The Electric Blast Furnace is the electric version of the Steam Blast Furnace. It unlocks new recipes and like other multiblock electric machines, its overclock is bounded to 128 EU/t by default."
+				"The &aElectric Blast Furnace&f is the electric version of the &bSteam Blast Furnace&f. It unlocks new recipes and like other multiblock electric machines, its overclock is bounded to 128 EU/t by default."
 				""
 				"The EBF is made of one layer of Heatproof Machine Casings, two hollow layers of Cupronickel Coils and one other layer of Heatproof Machine Casings. The controller must go on the bottom layer, and hatches on the top or bottom layer."
 				""
-				"Don't forget to add Energy Input Hatch(es) or the EBF won't have energy! The LV Energy Input Hatch will only connect to LV cables. There are higher tiers of input hatches, the MV one is not craftable yet, but keep in mind that they still exist!"
+				"Don't forget to add &cEnergy Input Hatch(es)&f or the EBF won't have energy! The LV Energy Input Hatch will only connect to LV cables. There are higher tiers of input hatches, the MV one is not craftable yet, but keep in mind that they still exist!"
 				""
-				"Remember you can Ponder the multiblock by holding 'W' on the Electric Blast Furnace item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
+				"Remember you can Ponder the multiblock by holding 'W' on the &aElectric Blast Furnace&f item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
 			]
 			dependencies: [
 				"071D9B8D5C16227B"
@@ -766,7 +767,7 @@
 			rewards: [{
 				id: "424B26AFB97FC278"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -775,9 +776,9 @@
 			y: 3.0d
 			shape: "square"
 			description: [
-				"Cupronickel Coils will allow your Electric Blast Furnace to handle recipes up to 32 EU/t. To process higher power recipes you will need to upgrade your coils, but we don't need to worry about that just yet."
+				"&aCupronickel Coils&f will allow your &bElectric Blast Furnace&f to handle recipes up to 32 EU/t. To process higher power recipes you will need to upgrade your coils, but we don't need to worry about that just yet."
 				""
-				"You will have needed to make Cupronickel Ingots from the Alloy Smelter questline before you can make them. Go back and do that if you haven't already. While you're at it, make sure you've started producing Invar as well!"
+				"You will have needed to make Cupronickel Ingots from the &eAlloy Smelter&f questline before you can make them. Go back and do that if you haven't already. While you're at it, make sure you've started producing Invar as well!"
 			]
 			dependencies: ["4E0D57D45D09B1D4"]
 			id: "53CABAF5DA73AF92"
@@ -790,14 +791,14 @@
 			rewards: [{
 				id: "63CCBD2FA86A33C4"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -3.5d
 			y: 4.5d
 			shape: "square"
-			description: ["Cupronickel is an alloy between Copper and Nickel which will be very important as you aim to create more electric machines, especially the Electric Blast Furnace."]
+			description: ["Cupronickel is an alloy between Copper and Nickel which will be very important as you aim to create more electric machines, especially the &aElectric Blast Furnace&f."]
 			dependencies: ["6A6C717EB97FD7B5"]
 			id: "7C19430B71E2DE32"
 			tasks: [{
@@ -808,7 +809,7 @@
 			rewards: [{
 				id: "0A9603A964AA9AD8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -817,7 +818,7 @@
 			shape: "rsquare"
 			subtitle: "Like having a chest on your back"
 			description: [
-				"The Gilded Backpack will allow you to carry 27 item stacks."
+				"The &6Gilded Backpack&f will allow you to carry 27 item stacks."
 				""
 				"Note that it takes 4x Electrum and 4x Gold Plates. The textures look very similar."
 			]
@@ -831,7 +832,7 @@
 			rewards: [{
 				id: "21CE0AD298B3E53A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -839,9 +840,9 @@
 			y: 3.0d
 			shape: "rsquare"
 			description: [
-				"For the recipes the Assembler doesn't cover, you can create a Tech Reborn Auto Crafting Table. "
+				"For the recipes the &aAssembler&f doesn't cover, you can create a &eTech Reborn&f &bAuto Crafting Table&f."
 				""
-				"The Auto Crafting Table works by placing items in the grid that will complete the recipe, and then locking it with the button in the top right. Once done, you can connect it up to power and insert items into it through pipes, hoppers, etc. and it will automatically craft the item after sometime."
+				"The &bAuto Crafting Table&f works by placing items in the grid that will complete the recipe, and then locking it with the button in the top right. Once done, you can connect it up to power and insert items into it through pipes, hoppers, etc. and it will automatically craft the item after sometime."
 			]
 			dependencies: ["4E0D57D45D09B1D4"]
 			id: "5778899B530BDA93"
@@ -853,7 +854,7 @@
 			rewards: [{
 				id: "036CE1731DBB196A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -864,7 +865,7 @@
 			description: [
 				"Silicon will be an important component in crafting electronic components. By combining Quartz and Coke Dusts in the EBF you can start producing Silicon Dust. Smelting Silicon Dust in a furnace will give you its ingot form. You can alternatively use Carbon Dust to get slightly more Silicon Dust."
 				""
-				"Alternatively, once you have an Electrolyzer you can electrolyze Clay Balls or Lapis Lazuli Dust to get Silicon as a byproduct."
+				"Alternatively, once you have an &aElectrolyzer&f you can electrolyze Clay Balls or Lapis Lazuli Dust to get Silicon as a byproduct."
 			]
 			dependencies: ["34BCB27D3481EDF4"]
 			id: "45D0D6741E460128"
@@ -876,7 +877,7 @@
 			rewards: [{
 				id: "2AE806013FDB0813"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -888,7 +889,7 @@
 			description: [
 				"Aluminum is a material used to make more advanced machines and will be required as we move towards electric circuits."
 				""
-				"Put Bauxite Dust in an Electric Blast Furnace to get Aluminum. You can either put the dust in directly to get nuggets, or craft Bauxite Blocks to get Aluminum Ingots as the output."
+				"Put Bauxite Dust in an &aElectric Blast Furnace&f to get Aluminum. You can either put the dust in directly to get nuggets, or craft Bauxite Blocks to get Aluminum Ingots as the output."
 				""
 				"Alternatively, if you process the Aluminum into dust prior to the EBF it will save you some processing time."
 			]
@@ -911,7 +912,7 @@
 				{
 					id: "5515018EA26C32CA"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -919,7 +920,7 @@
 			x: 9.5d
 			y: 6.0d
 			shape: "square"
-			description: ["Now that you can process Aluminum, you can now process Advanced Machine Casings. These are the main component in making Advanced Machine Hulls."]
+			description: ["Now that you can process Aluminum, you can now process &bAdvanced Machine Casings&f. These are the main component in making Advanced Machine Hulls."]
 			dependencies: ["5D1DD7B1C1BB8BEC"]
 			id: "43338129769822A8"
 			tasks: [{
@@ -930,7 +931,7 @@
 			rewards: [{
 				id: "702FB819B6447745"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -938,7 +939,7 @@
 			x: 12.0d
 			y: 6.0d
 			shape: "square"
-			description: ["With the EBF created and all the new materials created, it's time to put it all together. You're so close to your first Electronic Circuit!"]
+			description: ["With the EBF created and all the new materials created, it's time to put it all together. You're so close to your first &cElectronic Circuit&f!"]
 			dependencies: ["5D1DD7B1C1BB8BEC"]
 			id: "59F8FE8CBA6A4421"
 			tasks: [
@@ -963,7 +964,7 @@
 			rewards: [{
 				id: "076EB5569D4E5DC5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -971,7 +972,7 @@
 			y: 9.0d
 			shape: "square"
 			subtitle: "Did you remember the thermal paste?"
-			description: ["This is a big step for you, crafting your first Electronic Circuit is no small feat. This circuit makes up the basis of a lot of the recipes from here on out, so I'd recommend crafting these in bulk, and then setting up autocrafting once you have access to AE2 (which you can now make btw)"]
+			description: ["This is a big step for you, crafting your first &cElectronic Circuit&f is no small feat. This circuit makes up the basis of a lot of the recipes from here on out, so I'd recommend crafting these in bulk, and then setting up autocrafting once you have access to AE2 (which you can now make btw)"]
 			dependencies: ["59F8FE8CBA6A4421"]
 			size: 2.0d
 			id: "302958D57C6A10C7"
@@ -983,7 +984,7 @@
 			rewards: [{
 				id: "2296C842D2E7FBD8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -992,9 +993,9 @@
 			shape: "square"
 			subtitle: "Welcome to MV"
 			description: [
-				"With your Advanced Machine Hulls, you can now create Advanced Machine Hulls. These will be useful to access more advanced machines, as well as an essential part of the Electric Quarry."
+				"With your &aAdvanced Machine Casings&f, you can now create &bAdvanced Machine Hulls&f. These will be useful to access more advanced machines, as well as an essential part of the &eElectric Quarry&f."
 				""
-				"You can place Advanced Machine Hulls in existing machines to change their power tier. This does not make them process recipes faster, but does allow them to connect to higher tier cables."
+				"You can place &bAdvanced Machine Hulls&f in existing machines to change their power tier. This does not make them process recipes faster, but does allow them to connect to higher tier cables."
 				""
 				"If you upgrade a machine's hull, make sure to upgrade the corresponding power connection! LV wires won't connect to MV machines!"
 			]
@@ -1013,14 +1014,14 @@
 			rewards: [{
 				id: "2FE12D9777650750"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 5.5d
 			y: 4.75d
 			shape: "square"
-			description: ["Silicon Batteries are made similarly to the Redstone Batteries, just with Silicon instead. These will be important in the construction of the Advanced Machine Hull."]
+			description: ["&dSilicon Batteries&f are made similarly to the Redstone Batteries, just with Silicon instead. These will be important in the construction of the &aAdvanced Machine Hull&f."]
 			dependencies: ["45D0D6741E460128"]
 			id: "107DB1172932C668"
 			tasks: [{
@@ -1031,7 +1032,7 @@
 			rewards: [{
 				id: "36BF8D436BE7384D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1042,7 +1043,7 @@
 			description: [
 				"While you might have collected some Waystones on your adventures, crafting them had been out of your reach until now. Holding right-click with the Warp Stone will allow you to pick any visited Waystone to teleport to. "
 				""
-				"With the Warp Stone you can create new Waystones and Sharestones."
+				"With the &dWarp Stone&f you can create new &5Waystones&f and &5Sharestones&f."
 				""
 				"These could prove useful once you head to space..."
 			]
@@ -1062,7 +1063,7 @@
 			rewards: [{
 				id: "69A5E9A9D0B8B72E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1070,9 +1071,9 @@
 			y: 6.0d
 			shape: "rsquare"
 			description: [
-				"Using your Warp Stone, or just grabbing a Waystone you broke earlier, you can now get Waystones!"
+				"Using your &dWarp Stone&f, or just grabbing a &5Waystone&f you broke earlier, you can now get &5Waystones&f!"
 				""
-				"These allow you to set locations you can warp between, even dimensions! These aren't as practical for traveling within your base as Travel Anchors are, but they are great if you find a cool place, useful resources, or land on another planet and want to travel back there again."
+				"These allow you to set locations you can warp between, even dimensions! These aren't as practical for traveling within your base as &eTravel Anchors&f are, but they are great if you find a cool place, useful resources, or land on another planet and want to travel back there again."
 			]
 			dependencies: ["1A3215B013A56DF3"]
 			id: "5122831846581262"
@@ -1098,7 +1099,7 @@
 				{
 					id: "1588AD6F9DEB73B8"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1107,9 +1108,9 @@
 			y: 6.0d
 			shape: "rsquare"
 			description: [
-				"If you find your Waystone bookmarks are getting clogged, you can consider using Sharestones."
+				"If you find your &dWaystone&f bookmarks are getting clogged, you can consider using &5Sharestones&f."
 				""
-				"Sharestones allow you to warp between only other Sharestones of the same color, this is useful to organize the different locations you want to be warping to."
+				"&5Sharestones&f allow you to warp between only other &5Sharestones&f of the same color, this is useful to organize the different locations you want to be warping to."
 			]
 			dependencies: ["1A3215B013A56DF3"]
 			id: "072C7BB315337A31"
@@ -1135,7 +1136,7 @@
 				{
 					id: "40522981D6BD7F9A"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1143,7 +1144,7 @@
 			x: 13.5d
 			y: 6.0d
 			shape: "rsquare"
-			description: ["The Port Stone will allow you to select a destination from the list of Waystones you have previously visited, but you will not be able to warp back to the Portstone."]
+			description: ["The &dPort Stone&f will allow you to select a destination from the list of &5Waystones&f you have previously visited, but you will not be able to warp back to the &dPortstone&f."]
 			dependencies: ["1A3215B013A56DF3"]
 			id: "5233BABEDED66C9C"
 			tasks: [{
@@ -1161,7 +1162,7 @@
 				{
 					id: "33B67C43D31AD529"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1169,7 +1170,7 @@
 			x: 7.5d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["The Scrapbox-inator can turn Scrapboxes into random outputs. It could be fun to have it run, or you can stockpile your scrap until you get a Matter Fabricator, up to you."]
+			description: ["The &aScrapbox-inator&f can turn &bScrapboxes&f into random outputs. It could be fun to have it run, or you can stockpile your scrap until you get a &cMatter Fabricator&f, up to you."]
 			dependencies: ["5EC488946BE8FF2F"]
 			id: "092B11065EE78062"
 			tasks: [{
@@ -1180,7 +1181,7 @@
 			rewards: [{
 				id: "017AEAEA4C71F94E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1188,9 +1189,9 @@
 			y: 13.5d
 			shape: "rsquare"
 			description: [
-				"The Recyler is used to create Scrap from items you toss into it. Don't put anything in it you would miss!"
+				"The &aRecyler&f is used to create Scrap from items you toss into it. Don't put anything in it you would miss!"
 				""
-				"Scrap can be used in the future to turn into solid UU-Matter, which can be used to craft rare materials. For now, it's only able to be put through a Scrapboxinator for random outputs."
+				"Scrap can be used in the future to turn into solid &dUU-Matter&f, which can be used to craft rare materials. For now, it's only able to be put through a &bScrapboxinator&f for random outputs."
 			]
 			dependencies: ["6C3EAE1F16E1048A"]
 			id: "3EA8163D99F7A61E"
@@ -1202,7 +1203,7 @@
 			rewards: [{
 				id: "0A59804E4A3AB939"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1210,9 +1211,9 @@
 			y: 15.0d
 			shape: "rsquare"
 			description: [
-				"Providing the Recycler materials will have it randomly spit out Scrap."
+				"Providing the &aRecycler&f materials will have it randomly spit out Scrap."
 				""
-				"Scrap can be used in a Matter Fabricator to create UU-Matter, or it can be converted into Scrapboxes and ran through a Scrapbox-inator to produce random outputs."
+				"Scrap can be used in a Matter Fabricator to create &dUU-Matter&f, or it can be converted into Scrapboxes and ran through a &bScrapbox-inator&f to produce random outputs."
 			]
 			dependencies: ["3EA8163D99F7A61E"]
 			id: "5EC488946BE8FF2F"
@@ -1224,14 +1225,14 @@
 			rewards: [{
 				id: "66C9097CF70F5238"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 10.0d
 			y: 1.0d
 			shape: "rsquare"
-			description: ["The Aluminum Tank is the next tier of portable tank. It can store up to 16 buckets of any fluid, and retain that fluid when broken."]
+			description: ["The &bAluminum Tank&f is the next tier of portable tank. It can store up to 16 buckets of any fluid, and retain that fluid when broken."]
 			dependencies: ["5D1DD7B1C1BB8BEC"]
 			id: "55809AA82CD22409"
 			tasks: [{
@@ -1242,14 +1243,14 @@
 			rewards: [{
 				id: "14C5AAD1E1C53551"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 11.5d
 			y: 1.0d
 			shape: "rsquare"
-			description: ["The Aluminum Barrel is an upgrade to the Steel Barrel. It can store 512 stacks of a single item, and retains its inventory when broken."]
+			description: ["The &bAluminum Barrel&f is an upgrade to the Steel Barrel. It can store 512 stacks of a single item, and retains its inventory when broken."]
 			dependencies: ["5D1DD7B1C1BB8BEC"]
 			id: "0DA3EBE865EE51FE"
 			tasks: [{
@@ -1260,7 +1261,7 @@
 			rewards: [{
 				id: "0AA11616938210E2"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1287,7 +1288,7 @@
 			rewards: [{
 				id: "54138708B39C44BA"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1298,11 +1299,11 @@
 			shape: "square"
 			subtitle: "Ores Infinitum"
 			description: [
-				"The Electric Quarry is very similar to it's Steam counterpart, except with the Fluid Input Hatch being changed to the Energy Input Hatch. "
+				"The &aElectric Quarry&f is very similar to it's &7Steam&f counterpart, except with the &eFluid Input Hatch&f being changed to the &eEnergy Input Hatch&f. "
 				""
-				"The structure of the Electric Quarry is the exact same of that to the Steam Quarry, but if you need help building it, you can view the Ponder scene by holding 'W' on the Electric Quarry block in your inventory, or by holding your MI wrench."
+				"The structure of the &aElectric Quarry&f is the exact same of that to the &bSteam Quarry&f, but if you need help building it, you can view the Ponder scene by holding 'W' on the &aElectric Quarry&f block in your inventory, or by holding your MI wrench."
 				""
-				"The Electric Quarry can use the same drills as the Steam Quarry, but with the addition of several new drills that can be used. Some of these you won't get access to until much later, but it might be worth automating the crafting of a few of them."
+				"The &aElectric Quarry&f can use the same drills as the &bSteam Quarry&f, but with the addition of several new drills that can be used. Some of these you won't get access to until much later, but it might be worth automating the crafting of a few of them."
 			]
 			dependencies: ["6C3EAE1F16E1048A"]
 			size: 2.0d
@@ -1372,7 +1373,7 @@
 			rewards: [{
 				id: "6551B51F852240BE"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1380,7 +1381,7 @@
 			x: 11.5d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["Putting Gold Drills in the Electric Quarry will output Nether related items. This is a great way to get a recurring amount of Glowstone, Netherite, and Quartz."]
+			description: ["Putting &eGold Drills&f in the &aElectric Quarry will&f output Nether related items. This is a great way to get a recurring amount of Glowstone, Netherite, and Quartz."]
 			dependencies: ["1AFBAD9537A32176"]
 			id: "1AC3D17D11B6CAD1"
 			tasks: [{
@@ -1399,7 +1400,7 @@
 				{
 					id: "7DDBCBDF51354973"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1408,7 +1409,7 @@
 			x: 11.5d
 			y: 14.5d
 			shape: "rsquare"
-			description: ["Putting Steel Drills in the Electric Quarry will output much rarer Overworld minerals, as well as some ores you will need in large quantities, such as Bauxite."]
+			description: ["Putting &7Steel Drills&f in the &aElectric Quarry&f will output much rarer Overworld minerals, as well as some ores you will need in large quantities, such as Bauxite."]
 			dependencies: ["1AFBAD9537A32176"]
 			id: "2A76A7DC5A71E7FC"
 			tasks: [{
@@ -1427,7 +1428,7 @@
 				{
 					id: "1A9DA5481EF84E74"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1436,7 +1437,7 @@
 			y: 9.0d
 			shape: "rsquare"
 			description: [
-				"The MV Steam Turbine is the next tier of steam turbines. It can produce up to 128 EU/t by using Steam."
+				"The &aMV Steam Turbine&f is the next tier of steam turbines. It can produce up to 128 EU/t by using &7Steam&f."
 				""
 				"Remember that you can only connect MV wires to MV tier generators and machines. If you plan to continue using your old machines without upgrading their hulls, you will need to invest in the MV to LV Transformer."
 			]
@@ -1451,14 +1452,14 @@
 			rewards: [{
 				id: "6CE21DD70E40A8CF"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 3.5d
 			y: 11.5d
 			shape: "rsquare"
-			description: ["The MV Storage Unit is the next tier of energy storage. It can store up to 768k EU, quite sizable!"]
+			description: ["The &aMV Storage Unit&f is the next tier of energy storage. It can store up to 768k EU, quite sizable!"]
 			dependencies: ["6C3EAE1F16E1048A"]
 			id: "4FF00ADC29EF8FE2"
 			tasks: [{
@@ -1469,14 +1470,14 @@
 			rewards: [{
 				id: "13066E7465997B45"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 3.5d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["The MV to LV Transformer will accept MV power and output LV power. You can use this to tier down your power to lower-tier machines and cables."]
+			description: ["The &aMV to LV Transformer&f will accept MV power and output LV power. You can use this to tier down your power to lower-tier machines and cables."]
 			dependencies: ["6C3EAE1F16E1048A"]
 			id: "6184782C3B7C4508"
 			tasks: [{
@@ -1487,7 +1488,7 @@
 			rewards: [{
 				id: "321390BA0F1D06E8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1495,7 +1496,7 @@
 			y: 6.5d
 			shape: "rsquare"
 			description: [
-				"This upgraded version of the Solar Panel. It produces 12 EU/t during the day and 0 EU/t during the night."
+				"This upgraded version of the &bSolar Panel&f. It produces 12 EU/t during the day and 0 EU/t during the night."
 				""
 				"In general, solar is only going to be good if you have a large quantity of panels. Or you could use it in small scale automations that dont need much power, up to you."
 			]
@@ -1509,7 +1510,7 @@
 			rewards: [{
 				id: "60CBDB5DC38F3510"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1517,7 +1518,7 @@
 			y: -0.5d
 			shape: "rsquare"
 			description: [
-				"The Configurable Tank is a fluid equivalent of the Configurable Chest."
+				"The &aConfigurable Tank&f is a fluid equivalent of the &bConfigurable Chest&f."
 				""
 				"It has 9 configurable slots that can each hold 16 buckets and auto-extract functionality! Useful for automation with many different fluids!"
 			]
@@ -1531,7 +1532,7 @@
 			rewards: [{
 				id: "37191FA9E8E8969A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1541,9 +1542,9 @@
 			shape: "rsquare"
 			subtitle: "Overdrive!"
 			description: [
-				"The Advanced Large Steam Boiler is very similar to the original Large Steam Boiler, but rather this version can produce up to 1024 mb/t of Steam!"
+				"The &aAdvanced Large Steam Boiler&f is very similar to the original &bLarge Steam Boiler&f, but rather this version can produce up to 1024 mb/t of Steam!"
 				""
-				"You will need to add an additional layer to the multiblock as compared to the original, but otherwise you can reuse a lot of the same structure. You can check the Ponder scene by holding 'W' on the Large Steam Boiler in your inventory, or by holding a wrench to view a diagram of where blocks need to be placed."
+				"You will need to add an additional layer to the multiblock as compared to the original, but otherwise you can reuse a lot of the same structure. You can check the Ponder scene by holding 'W' on the &aAdvanced Large Steam Boiler&f in your inventory, or by holding a wrench to view a diagram of where blocks need to be placed."
 			]
 			dependencies: ["302958D57C6A10C7"]
 			size: 1.5d
@@ -1569,7 +1570,7 @@
 			rewards: [{
 				id: "2F9865E8DD23E008"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1577,9 +1578,9 @@
 			y: 7.5d
 			shape: "rsquare"
 			description: [
-				"The Diesel Generator can burn various kinds of fuel to generate EU. You can check REI for how many EU each fuel produces. The Diesel Generator will produce up to 256 EU/t and will only connect to MV cables."
+				"The &aDiesel Generator&f can burn various kinds of fuel to generate EU. You can check &dREI&f for how many EU each fuel produces. The &aDiesel Generator&f will produce up to 256 EU/t and will only connect to MV cables."
 				""
-				"Diesel Generators will only use fuel when they need to, but if you need a constant supply of energy, you can put liquid fuels in the Large Steam Boiler instead of items. A fully heated Large Steam Boiler will roughly produce twice the amount of energy a Diesel Generator would produce using the same quantity of fuel."
+				"&aDiesel Generators&f will only use fuel when they need to, but if you need a constant supply of energy, you can put liquid fuels in the &bLarge Steam Boiler&f instead of items. A fully heated &bLarge Steam Boiler&f will roughly produce twice the amount of energy a &aDiesel Generator&f would produce using the same quantity of fuel."
 			]
 			dependencies: ["6C3EAE1F16E1048A"]
 			id: "7910E966A571DFCC"
@@ -1591,14 +1592,14 @@
 			rewards: [{
 				id: "63F6B0D8C5F698B8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 14.5d
 			y: 11.5d
 			subtitle: "Deforestation"
-			description: ["The Diesel Chainsaw is a suped up axe that can chop down trees really quickly if you feed it more powerful fuels."]
+			description: ["The &aDiesel Chainsaw&f is a suped up axe that can chop down trees really quickly if you feed it more powerful fuels."]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "19F713DD5C1AED48"
 			tasks: [{
@@ -1609,7 +1610,7 @@
 			rewards: [{
 				id: "443F5D3869B02B94"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1617,9 +1618,9 @@
 			y: 11.5d
 			subtitle: "The Drill That Will Pierce the Heavens"
 			description: [
-				"The Diesel Mining Drill can finally replace your Steam Powered Drill and pickaxes. Fill it with more powerful fuel for increased speed."
+				"The &aDiesel Mining Drill&f can finally replace your &bSteam Powered Drill&f and pickaxes. Fill it with more powerful fuel for increased speed."
 				""
-				"Toggle between Silk Touch and Fortune III with shift-right click."
+				"Toggle between &dSilk Touch&f and &cFortune III&f with shift-right click."
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "0DCBF872F6BC9F84"
@@ -1631,7 +1632,7 @@
 			rewards: [{
 				id: "3B57320A3793011B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1639,9 +1640,9 @@
 			y: 11.5d
 			subtitle: "Fly me to the moon"
 			description: [
-				"The Diesel Jetpack allows you to have flight similar to that of the Elytra, but runs off of fuel rather than durability. The more powerful the fuel, the faster the jetpack! For really fast speeds, the Rubber Helmet and Rubber Boots are recommended."
+				"The &aDiesel Jetpack&f allows you to have flight similar to that of the Elytra, but runs off of fuel rather than durability. The more powerful the fuel, the faster the jetpack! For really fast speeds, the &bRubber Helmet&f and &bRubber Boots&f are recommended."
 				""
-				"Don't forget to activate it using the Toggle Flight keybinding (Default: v)"
+				"Don't forget to activate it using the Toggle Flight keybinding (Check your controls, default is: x)"
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "2FD9CBCD413E05DF"
@@ -1653,7 +1654,7 @@
 			rewards: [{
 				id: "0D626795C9F7F815"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1663,11 +1664,11 @@
 			shape: "square"
 			subtitle: "You've caught the United States' attention"
 			description: [
-				"Now it's time to focus in on fluid processing. The first step on that list is to create the Oil Drilling Rig. It's a huge multiblock that can dig for Crude Oil under the bedrock using fluid pipes. The Crude Oil will be extremely important as it can be processed into a lot of byproducs and can be used to produce energy."
+				"Now it's time to focus in on fluid processing. The first step on that list is to create the &aOil Drilling Rig&f. It's a huge multiblock that can dig for Crude Oil under the bedrock using fluid pipes. The Crude Oil will be extremely important as it can be processed into a lot of byproducs and can be used to produce energy."
 				""
 				"The structure of the multiblock is made of Steel Machine Casings, Steel Pipe Machine Casings, and Chains. Make sure to at least have an Item Input, Fluid Output, and Energy Input Hatch. If you need help building the multiblock, you can view its Ponder scene by holding 'W' on the Oil Drilling Rig item in your inventory, or by holding your wrench with the controller placed."
 				""
-				"Some of the first uses of your newly gathered Crude Oil will be to offer a much more efficient way of creating Rubber Sheets. Additionally, you can burn Crude Oil to produce power in Diesel Generators. Crude Oil itself is not very efficient, so we will be processing it into more useful products."
+				"Some of the first uses of your newly gathered Crude Oil will be to offer a much more efficient way of creating Rubber Sheets. Additionally, you can burn Crude Oil to produce power in &bDiesel Generators&f. Crude Oil itself is not very efficient, so we will be processing it into more useful products."
 			]
 			dependencies: ["6C3EAE1F16E1048A"]
 			size: 2.5d
@@ -1736,7 +1737,7 @@
 			rewards: [{
 				id: "0F9D9E6BD71EAEC9"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1744,7 +1745,7 @@
 			y: 15.0d
 			shape: "square"
 			subtitle: "Black Gold"
-			description: ["Crude Oil is produced from an Oil Drilling Rig using an Aluminum Drill. The following quests follow processing down Crude Oil into other usable byproducts."]
+			description: ["Crude Oil is produced from an &aOil Drilling Rig&f using an &7Aluminum Drill&f. The following quests follow processing down Crude Oil into other usable byproducts."]
 			dependencies: ["5000D009D884FB99"]
 			id: "7DE19984A4DE57D4"
 			tasks: [{
@@ -1755,7 +1756,7 @@
 			rewards: [{
 				id: "33C848BF4FF835AE"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1763,7 +1764,7 @@
 			x: 1.0d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["Unlike GregTech, MI machines do not have programmable circuits. If you'd like to set the recipe you'd like a machine to run, click \"View Recipes for X\" and then click the + to set the recipe. This will be needed as you work through processing Crude Oil."]
+			description: ["Unlike &bGregTech&f, MI machines do not have programmable circuits. If you'd like to set the recipe you'd like a machine to run, click \"View Recipes for X\" and then click the + to set the recipe. This will be needed as you work through processing Crude Oil."]
 			dependencies: ["7DE19984A4DE57D4"]
 			id: "2704DC39313392E6"
 			tasks: [{
@@ -1774,7 +1775,7 @@
 			rewards: [{
 				id: "47CCB99C8FADAD91"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1783,7 +1784,7 @@
 			y: 13.5d
 			shape: "rsquare"
 			description: [
-				"Petrochemistry is the science of breaking Crude Oil into it's useful components. While looking at the quest tree may seem daunting, it's not as bad as you think. I highly recommend checking through REI to work through what process you will need to get your desired outcome."
+				"Petrochemistry is the science of breaking Crude Oil into it's useful components. While looking at the quest tree may seem daunting, it's not as bad as you think. I highly recommend checking through &dREI&f to work through what process you will need to get your desired outcome."
 				""
 				"NOTE: I don't recommend rushing to make dozens of single block Distilleries for all the outputs just yet, you will soon unlock the Distillation Tower, which will allow you to use a single multiblock to get multiple outputs at once."
 				""
@@ -1799,7 +1800,7 @@
 			rewards: [{
 				id: "10B3096144D821FB"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1816,7 +1817,7 @@
 			rewards: [{
 				id: "0DE5B5FA3CED0F90"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1833,7 +1834,7 @@
 			rewards: [{
 				id: "44E266555F343F65"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1850,14 +1851,14 @@
 			rewards: [{
 				id: "103519732E84373F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -4.0d
 			y: 13.0d
 			shape: "square"
-			description: ["Light Fuel can produce 160 EU per 1 mB used in a Diesel Generator. It's better to either combine it into Diesel or continue with Steam-Cracking it."]
+			description: ["&aLight Fuel&f can produce 160 EU per 1 mB used in a &bDiesel Generator&f. It's better to either combine it into Diesel or continue with Steam-Cracking it."]
 			dependencies: ["359CB19747F5A3F3"]
 			id: "2CFB5F9C3B6EA234"
 			tasks: [{
@@ -1868,14 +1869,14 @@
 			rewards: [{
 				id: "739F826B93B91822"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -4.0d
 			y: 15.0d
 			shape: "square"
-			description: ["Heavy Fuel can produce 240 EU per 1 mB used in a Diesel Generator. It's not as good as Diesel, so it's either better to make Diesel or continue to Steam-Cracking process."]
+			description: ["&aHeavy Fuel&f can produce 240 EU per 1 mB used in a &bDiesel Generator&f. It's not as good as Diesel, so it's either better to make Diesel or continue to Steam-Cracking process."]
 			dependencies: ["2AB5F5DBA6ACA80E"]
 			id: "51A8CF3031F2765A"
 			tasks: [{
@@ -1886,14 +1887,14 @@
 			rewards: [{
 				id: "17A916C2B313F383"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -4.0d
 			y: 17.0d
 			shape: "square"
-			description: ["Naphtha can produce 80 EU per 1 mB used in a Diesel Generator. It's an extremely awful fuel source for Diesel Generators. It can be produced into Lubricant or continued down the chain by Steam-Cracking."]
+			description: ["&aNaphtha&f can produce 80 EU per 1 mB used in a &bDiesel Generator&f. It's an extremely awful fuel source for &bDiesel Generators&f. It can be produced into Lubricant or continued down the chain by Steam-Cracking."]
 			dependencies: ["30D48F97B508E120"]
 			id: "34533B2E5B614E28"
 			tasks: [{
@@ -1904,7 +1905,7 @@
 			rewards: [{
 				id: "26610B56FA61F61D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1912,7 +1913,7 @@
 			y: 10.5d
 			shape: "square"
 			subtitle: "Good for the environment!"
-			description: ["Diesel can produce 400 EU per 1 mB used in a Diesel Generator. By combining Light and Heavy Fuel you can create Diesel. Diesel is a decent fuel source to use in Diesel Generators and Diesel tools."]
+			description: ["&aDiesel&f can produce 400 EU per 1 mB used in a &bDiesel Generator&f. By combining Light and Heavy Fuel you can create &aDiesel&f. &aDiesel&f is a decent fuel source to use in &aDiesel Generators&f and Diesel tools."]
 			dependencies: ["7A4F605834E3AE7B"]
 			id: "6AA4B054D3E9959D"
 			tasks: [{
@@ -1929,7 +1930,7 @@
 				{
 					id: "3187F3D2D9B7E303"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1973,7 +1974,7 @@
 			x: -19.0d
 			y: 10.5d
 			shape: "square"
-			description: ["Ethylene is used in the production of Ethylbenzene, Ethanol, and Polyethylene."]
+			description: ["&aEthylene&f is used in the production of Ethylbenzene, Ethanol, and Polyethylene."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "6762FCBA521FFF4B"
@@ -1985,14 +1986,14 @@
 			rewards: [{
 				id: "0F316C77FE77B598"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -13.0d
 			y: 10.5d
 			shape: "square"
-			description: ["Toluene is used in the creation of Industrial TNT, which is necessary for the Nuke and usage in the Implosion Compressor."]
+			description: ["&aToluene&f is used in the creation of Industrial TNT, which is necessary for the Nuke and usage in the Implosion Compressor."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "30A1AF7E38D6C40D"
@@ -2004,14 +2005,14 @@
 			rewards: [{
 				id: "0BCE6476D2EA030C"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -17.0d
 			y: 10.5d
 			shape: "square"
-			description: ["Propene is important for creating Acryllic Acid, which can be creates Diethyl Ether, an important component in Boosted Diesel. Acryllic Acid can also be reacted into Acryllic Glue, a form of creating infinite Slime."]
+			description: ["&aPropene&f is important for creating Acryllic Acid, which can be creates Diethyl Ether, an important component in Boosted Diesel. Acryllic Acid can also be reacted into Acryllic Glue, a form of creating infinite Slime."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "4BC45FE0A3D522C3"
@@ -2023,14 +2024,14 @@
 			rewards: [{
 				id: "1930DF867D68AC50"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -11.0d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["Benzene is important for creating Ethylbenzene, a component in the creation of Styrene-Butadiene Rubber. It can also be used to make Caprolactam which can make infinite String."]
+			description: ["&aBenzene&f is important for creating Ethylbenzene, a component in the creation of Styrene-Butadiene Rubber. It can also be used to make Caprolactam which can make infinite String."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "12C2A8F5ED305E72"
@@ -2042,14 +2043,14 @@
 			rewards: [{
 				id: "200DBDEF5454631B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -9.0d
 			y: 10.5d
 			shape: "square"
-			description: ["Acetylene is used in the production of Polyvinyl Chloride."]
+			description: ["&aAcetylene&f is used in the production of Polyvinyl Chloride."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "572CEB1A519C14E9"
@@ -2061,14 +2062,14 @@
 			rewards: [{
 				id: "32C1CAA094C224B8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -7.0d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["Methane can be converted into Acetylene, which is important for making Vinyl Chloride, which itself gets made into Polyvinyl Chloride. It doesn't have any more recipes other than turning into Acetylene, so might as well just do that."]
+			description: ["&aMethane&f can be converted into Acetylene, which is important for making Vinyl Chloride, which itself gets made into Polyvinyl Chloride. It doesn't have any more recipes other than turning into Acetylene, so might as well just do that."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "7B3CFD8EC0032C17"
@@ -2080,7 +2081,7 @@
 			rewards: [{
 				id: "071E48553D533F91"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2099,7 +2100,7 @@
 			rewards: [{
 				id: "24738B9D336BEE0F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2107,7 +2108,7 @@
 			y: 10.5d
 			shape: "square"
 			description: [
-				"Ethylbenzene is an important component in the creation of Styrene, which is used to make Styrene-Butadiene Rubber."
+				"&aEthylbenzene&f is an important component in the creation of Styrene, which is used to make Styrene-Butadiene Rubber."
 				""
 				"For those of you who are observant, this is one process closer to Styrene-Butadiene Rubber than Benzene, making Naphtha a good source to produce Styrene-Butadiene Rubber."
 			]
@@ -2122,14 +2123,14 @@
 			rewards: [{
 				id: "37142F0BA64AADBD"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -3.5d
 			y: 8.5d
 			shape: "square"
-			description: ["An important component in Styrene-Butadiene Rubber."]
+			description: ["An important component in &aStyrene-Butadiene Rubber&f."]
 			dependencies: [
 				"3765635D66BF2766"
 				"239E90A6EAC47789"
@@ -2143,14 +2144,14 @@
 			rewards: [{
 				id: "3B95410CB8B62612"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -5.0d
 			y: 8.5d
 			shape: "square"
-			description: ["A component in Styrene-Butadiene."]
+			description: ["A component in &aStyrene-Butadiene&f."]
 			dependencies: ["07D6884948E921AB"]
 			id: "239E90A6EAC47789"
 			tasks: [{
@@ -2161,7 +2162,7 @@
 			rewards: [{
 				id: "14CBAAD92D1804D8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2179,14 +2180,14 @@
 			rewards: [{
 				id: "741605B6E48992C6"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -9.0d
 			y: 8.5d
 			shape: "square"
-			description: ["An important component in Polyvinyl Chloride."]
+			description: ["An important component in &aPolyvinyl Chloride&f."]
 			dependencies: ["572CEB1A519C14E9"]
 			id: "08161DE7D9265B43"
 			tasks: [{
@@ -2197,14 +2198,14 @@
 			rewards: [{
 				id: "61C55023E8651B0D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -11.0d
 			y: 8.5d
 			shape: "rsquare"
-			description: ["A component in Nylon."]
+			description: ["A component in &aNylon&f."]
 			dependencies: ["12C2A8F5ED305E72"]
 			id: "39FEC909B97A7449"
 			tasks: [{
@@ -2215,7 +2216,7 @@
 			rewards: [{
 				id: "0CAE0BC830002EA6"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2223,9 +2224,9 @@
 			y: 6.5d
 			shape: "square"
 			description: [
-				"Polyvinyl Chloride is an important chemical in more advanced Assembler recipes."
+				"&aPolyvinyl Chloride&f is an important chemical in more advanced &bAssembler&f recipes."
 				""
-				"You will need it particularly for Processing Unit components."
+				"You will need it particularly for &eProcessing Unit&f components."
 			]
 			dependencies: ["08161DE7D9265B43"]
 			id: "04672D52AF159537"
@@ -2237,7 +2238,7 @@
 			rewards: [{
 				id: "2E656563C20DA842"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2255,14 +2256,14 @@
 			rewards: [{
 				id: "3EEF711F557B7882"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -13.0d
 			y: 8.5d
 			shape: "square"
-			description: ["Industrial TNT is a key component in the Implosion Compressor. Using Toulene and Nitrogen you can combine Sand and Flint to produce a controlled explosive."]
+			description: ["&aIndustrial TNT&f is a key component in the &eImplosion Compressor&f. Using Toulene and Nitrogen you can combine Sand and Flint to produce a controlled explosive."]
 			dependencies: ["30A1AF7E38D6C40D"]
 			id: "1643F0311C19D935"
 			tasks: [{
@@ -2273,14 +2274,14 @@
 			rewards: [{
 				id: "02C6737D145E572F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -17.0d
 			y: 8.5d
 			shape: "square"
-			description: ["Acrylic Acid can be used to create Acrylic Glue, which will create infinite slime, or it can be used to make Diethyl Ether, which is used in Boosted Diesel"]
+			description: ["&aAcrylic Acid&f can be used to create Acrylic Glue, which will create infinite slime, or it can be used to make Diethyl Ether, which is used in Boosted Diesel"]
 			dependencies: ["4BC45FE0A3D522C3"]
 			id: "476EB7CF83477089"
 			tasks: [{
@@ -2291,14 +2292,14 @@
 			rewards: [{
 				id: "701DD22349834761"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -19.0d
 			y: 8.5d
 			shape: "square"
-			description: ["Ethanol is an important component in Diethyl Ether, which will be used to make Boosted Diesel."]
+			description: ["&aEthanol&f is an important component in Diethyl Ether, which will be used to make Boosted Diesel."]
 			dependencies: ["6762FCBA521FFF4B"]
 			id: "7B318DADE7D4B28E"
 			tasks: [{
@@ -2309,14 +2310,14 @@
 			rewards: [{
 				id: "7970D7FE2BADF222"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -17.0d
 			y: 6.5d
 			shape: "square"
-			description: ["Mix this with Diesel to make Boosted Diesel. The most efficient fuel to burn."]
+			description: ["Mix this with &aDiesel&f to make &bBoosted Diesel&f. The most efficient fuel to burn."]
 			dependencies: [
 				"7B318DADE7D4B28E"
 				"476EB7CF83477089"
@@ -2330,14 +2331,14 @@
 			rewards: [{
 				id: "491BCD8B8E10AE8D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -19.0d
 			y: 6.5d
 			shape: "square"
-			description: ["Raw Biodiesel can be processed into Biodiesel and then used as an alternative to Diesel or to supplement your Boosted Diesel."]
+			description: ["&aRaw Biodiesel&f can be processed into &bBiodiesel&f and then used as an alternative to &cDiesel&f or to supplement your &dBoosted Diesel&f."]
 			dependencies: ["7B318DADE7D4B28E"]
 			id: "06BDC86D8AF2405F"
 			tasks: [{
@@ -2348,14 +2349,14 @@
 			rewards: [{
 				id: "4EB42043D97015B5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -19.0d
 			y: 4.5d
 			shape: "square"
-			description: ["Can be produced into Boosted Diesel at a better rate than reguarly processed Diesel."]
+			description: ["Can be produced into &aBoosted Diesel&f at a better rate than reguarly processed &bDiesel&f."]
 			dependencies: ["06BDC86D8AF2405F"]
 			id: "546FA5CADF43F18A"
 			tasks: [{
@@ -2366,14 +2367,14 @@
 			rewards: [{
 				id: "0B161EBB36AE2458"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -15.0d
 			y: 4.5d
 			shape: "square"
-			description: ["Boosted Diesel can make 800 EU per mB burned. It's the most efficient fuel to burn."]
+			description: ["&aBoosted Diesel&f can make 800 EU per mB burned. It's the most efficient fuel to burn."]
 			dependencies: [
 				"6FC3B9DB61B11CB4"
 				"6AA4B054D3E9959D"
@@ -2389,14 +2390,14 @@
 			rewards: [{
 				id: "2BA8E96C9847E297"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -21.5d
 			y: 10.5d
 			shape: "square"
-			description: ["Polyethylene is an important chemical for the creation of circuit boards and upgrade."]
+			description: ["&aPolyethylene&f is an important chemical for the creation of circuit boards and upgrade."]
 			dependencies: ["6762FCBA521FFF4B"]
 			size: 1.5d
 			id: "735AA911E02186A4"
@@ -2408,7 +2409,7 @@
 			rewards: [{
 				id: "28E9BAD17FC1C0C1"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2419,7 +2420,7 @@
 			description: [
 				"The following quests are all the useful fluids / gases you can make from distilling Steam-Cracked Fuels / Naphtha. "
 				""
-				"You don't need to make everything, but you will need to make Polyethylene for sure, and Diesel / Nitro-Diesel are good for energy production."
+				"You don't need to make everything, but you will need to make &aPolyethylene&f for sure, and &bDiesel&f / &dNitro-Diesel&f are good for energy production."
 			]
 			dependencies: [
 				"0F866EE01E29B82D"
@@ -2435,7 +2436,7 @@
 			rewards: [{
 				id: "7241AE73FAEB3D8B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2444,11 +2445,11 @@
 			y: 12.5d
 			shape: "square"
 			description: [
-				"Upgrades can be added to Electric Machines to increase their total EU/t overclock. "
+				"Upgrades can be added to &aElectric Machines&f to increase their total EU/t overclock. "
 				""
-				"By default, Electric Machines have an overclock capped at 32 EU/t, and electric multiblocks have an overclock capped at 128 EU/t."
+				"By default, &aElectric Machines&f have an overclock capped at 32 EU/t, and electric multiblocks have an overclock capped at 128 EU/t."
 				""
-				"In the Machine or Multiblocks menu, add upgrades in the top right slot to increase its maximum overclock. Check REI for exact amounts."
+				"In the Machine or Multiblocks menu, add upgrades in the top right slot to increase its maximum overclock. Check &dREI&f for exact amounts."
 			]
 			dependencies: ["735AA911E02186A4"]
 			id: "7AD837EF6D37373B"
@@ -2468,7 +2469,7 @@
 				{
 					id: "28804B718C379867"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -2477,7 +2478,7 @@
 			x: -21.5d
 			y: 14.5d
 			shape: "square"
-			description: ["With your Electronic Circuit Boards you can now create the Advanced Upgrade. These will significantly increase the speed of your overclocks, and your power draw."]
+			description: ["With your &aElectronic Circuit&f Boards you can now create the &bAdvanced Upgrade&f. These will significantly increase the speed of your overclocks, and your power draw."]
 			dependencies: ["7AD837EF6D37373B"]
 			id: "3AA8A664DD802851"
 			tasks: [{
@@ -2496,7 +2497,7 @@
 				{
 					id: "53579AEE1EDE7103"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -2506,7 +2507,7 @@
 			y: 12.5d
 			shape: "rsquare"
 			description: [
-				"One of the first things you can now access with these upgrades is the ability to compress Diamonds and Emeralds into plates."
+				"One of the first things you can now access with these upgrades is the ability to compress &bDiamonds&f and &aEmeralds&f into plates."
 				""
 				"Finally, you can access that new tier of chest / backpack."
 			]
@@ -2529,7 +2530,7 @@
 			rewards: [{
 				id: "2B6A7DB65BDE04A9"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2547,7 +2548,7 @@
 			rewards: [{
 				id: "61550E79DEBF0CED"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2556,7 +2557,7 @@
 			y: 11.5d
 			shape: "rsquare"
 			subtitle: "A long awaited storage upgrade"
-			description: ["The Diamond Chest is a long awaited upgrade to your storage chests. It allows you to store 72 stacks of items."]
+			description: ["The &bDiamond Chest&f is a long awaited upgrade to your storage chests. It allows you to store 72 stacks of items."]
 			dependencies: ["7DE1DE92C45C81BB"]
 			id: "60B30C4A8471450A"
 			tasks: [{
@@ -2567,14 +2568,14 @@
 			rewards: [{
 				id: "509C5A372F087371"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -25.5d
 			y: 10.0d
 			shape: "rsquare"
-			description: ["The Crystal Chest has the same storage as the Diamond Chest, just a little nicer looking and slightly transparent."]
+			description: ["The &dCrystal Chest&f has the same storage as the &bDiamond Chest&f, just a little nicer looking and slightly transparent."]
 			dependencies: ["60B30C4A8471450A"]
 			id: "2849D0C7E2EE7246"
 			tasks: [{
@@ -2585,14 +2586,14 @@
 			rewards: [{
 				id: "08DAD1C9477B9C9B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -26.5d
 			y: 10.0d
 			shape: "rsquare"
-			description: ["The Obsidian Chest has the same storage as the Diamond Chest."]
+			description: ["The &dObsidian Chest&f has the same storage as the Diamond Chest."]
 			dependencies: ["60B30C4A8471450A"]
 			id: "37A888209FE71492"
 			tasks: [{
@@ -2603,14 +2604,14 @@
 			rewards: [{
 				id: "3E7775CCA964D698"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -24.5d
 			y: 10.0d
 			shape: "rsquare"
-			description: ["The Netherite Chest is the ultimate upgrade for your chest, boasting a capacity of 91 item stacks."]
+			description: ["The &cNetherite Chest&f is the ultimate upgrade for your chest, boasting a capacity of 91 item stacks."]
 			dependencies: ["60B30C4A8471450A"]
 			id: "58C2A1D3B3129D29"
 			tasks: [{
@@ -2621,14 +2622,14 @@
 			rewards: [{
 				id: "6C605B967A8967DA"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -23.5d
 			y: 10.0d
 			shape: "rsquare"
-			description: ["The Diamond Dolly is an upgrade to the Iron Dolly that has no durability. This means you can move your chests around whenever you need, without having to worry about breaking your tool."]
+			description: ["The &bDiamond Dolly&d is an upgrade to the &7Iron Dolly&f that has no durability. This means you can move your chests around whenever you need, without having to worry about breaking your tool."]
 			dependencies: ["7DE1DE92C45C81BB"]
 			id: "0982F8D1C5C4DBF9"
 			tasks: [{
@@ -2639,14 +2640,14 @@
 			rewards: [{
 				id: "07FA62F314AFBFB8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -6.0d
 			y: 19.0d
 			shape: "square"
-			description: ["Sulfuric Acid is a useful byproduct of oil refinement. Make sure to keep a hold of a decent amount."]
+			description: ["&eSulfuric Acid&f is a useful byproduct of oil refinement. Make sure to keep a hold of a decent amount."]
 			dependencies: [
 				"51A8CF3031F2765A"
 				"34533B2E5B614E28"
@@ -2661,7 +2662,7 @@
 			rewards: [{
 				id: "2EDA1A13D4CD7715"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2670,11 +2671,11 @@
 			y: 7.5d
 			shape: "rsquare"
 			description: [
-				"To craft the Simple Animated Guns mod, you will first need to create a Blueprint Bundle. Right-clicking while holding the bundle will allow you to set which blueprint you want it to become. "
+				"To craft the &eSimple Animated Guns&f mod, you will first need to create a &9Blueprint Bundle&f. Right-clicking while holding the bundle will allow you to set which blueprint you want it to become. "
 				""
-				"Next, you will need Hardened Iron, which is just Iron Ingots run through an EBF. "
+				"Next, you will need &7Hardened Iron&f, which is just Iron Ingots run through an EBF. "
 				""
-				"Lastly, you now can make the Plastic needed to make the parts for the weapons. "
+				"Lastly, you now can make the &aPlastic&f needed to make the parts for the weapons. "
 			]
 			dependencies: ["735AA911E02186A4"]
 			size: 1.5d
@@ -2711,14 +2712,14 @@
 			rewards: [{
 				id: "6C15639A10691E93"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 22.0d
 			y: 13.0d
 			shape: "square"
-			description: ["Mixing Manganese Crushed Dust with 9000 mB of Sulfuric Acid will create 9000 mB Manganese Sulfuric Solution."]
+			description: ["Mixing &aManganese Crushed Dust&f with 9000 mB of &eSulfuric Acid&f will create 9000 mB &bManganese Sulfuric Solution&f."]
 			dependencies: ["60E8A38E2CC05E1A"]
 			id: "306F6F7600712637"
 			tasks: [{
@@ -2729,7 +2730,7 @@
 			rewards: [{
 				id: "5045EA40A8822BE8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2737,9 +2738,9 @@
 			y: 13.0d
 			shape: "square"
 			description: [
-				"Manganese Crushed Dust will be needed in the production of Stainless Steel. "
+				"&aManganese Crushed Dust&f will be needed in the production of &bStainless Steel&f. "
 				""
-				"You can get Manganese Crushed Dust from Centrifuging Raw Iron Ore."
+				"You can get &aManganese Crushed Dust&f from &eCentrifuging&f &7Raw Iron Ore&f."
 			]
 			dependencies: ["136292FF2B54C503"]
 			id: "60E8A38E2CC05E1A"
@@ -2751,14 +2752,14 @@
 			rewards: [{
 				id: "70DF5BA8CAF24D6F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 24.0d
 			y: 11.0d
 			shape: "square"
-			description: ["Electrolyzing 1000mB of Manganese Sulfuric Solution will produce three Tiny Manganese Dust and 900 mB of Sulfuric Acid. That means you lose 100 mB of Sulfuric Acid in the production loop."]
+			description: ["&eElectrolyzing&f 1000mB of &aManganese Sulfuric Solution&f will produce three &bTiny Manganese Dust&f and 900 mB of &eSulfuric Acid&f. That means you lose 100 mB of &eSulfuric Acid&f in the production loop."]
 			dependencies: ["306F6F7600712637"]
 			id: "68D24C2EE907B5DD"
 			tasks: [{
@@ -2769,7 +2770,7 @@
 			rewards: [{
 				id: "1F21F2BD288B6005"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2777,9 +2778,9 @@
 			y: 7.0d
 			shape: "square"
 			description: [
-				"Chlorine can be made by processing Salt Dust through an Electrolyzer. If you missed crafting that in the last chapter, you will need to make that now."
+				"&aChlorine&f can be made by processing &bSalt Dust&f through an &eElectrolyzer&f. If you missed crafting that in the last chapter, you will need to make that now."
 				""
-				"You also get Sodium Dust as a byproduct. Keep a hold of this, as you will need it for HV tiered batteries."
+				"You also get &aSodium Dust&f as a byproduct. Keep a hold of this, as you will need it for HV tiered batteries."
 			]
 			dependencies: ["0E9876A8FEF7F7E9"]
 			id: "40D97D3EF42D4A88"
@@ -2791,14 +2792,14 @@
 			rewards: [{
 				id: "59E1B5C025F263DF"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 22.0d
 			y: 5.0d
 			shape: "square"
-			description: ["Combining Hydrogen with Chlorine will produce Hydrochloric Acid."]
+			description: ["Combining Hydrogen with Chlorine will produce &aHydrochloric Acid&f."]
 			dependencies: [
 				"40D97D3EF42D4A88"
 				"517C3D6FBC5FEB2A"
@@ -2812,7 +2813,7 @@
 			rewards: [{
 				id: "66D08B73CB267822"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2820,9 +2821,9 @@
 			y: 12.0d
 			shape: "square"
 			description: [
-				"You can macerate Ruby Ore or Centrifugre Redstone Dust to get Ruby Dust. "
+				"You can &eMacerate&f &cRuby Ore&f or &eCentrifuge&f &4Redstone Dust&f to get &cRuby Dust&f. "
 				""
-				"By Centrifuging the Ruby Dust you will get Chromium Crushed Dust and a little extra Aluminum Dust."
+				"By &eCentrifuging&f the &cRuby Dust&f you will get &dChromium Crushed Dust&f and a little extra &bAluminum Dust&f."
 			]
 			dependencies: ["136292FF2B54C503"]
 			id: "7D56FAE45EE0F29C"
@@ -2834,14 +2835,14 @@
 			rewards: [{
 				id: "24EE58E212904D1E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 22.0d
 			y: 12.0d
 			shape: "square"
-			description: ["Combining 9000 mB of Hydrochloric Acid with Chromium Crushed Dust will create 9000 mB of Chromium Hydrochloric Solution."]
+			description: ["Combining 9000 mB of &aHydrochloric Acid&f with &bChromium Crushed Dust&f will create 9000 mB of &dChromium Hydrochloric Solution&f."]
 			dependencies: [
 				"1734CB7253E53672"
 				"7D56FAE45EE0F29C"
@@ -2855,14 +2856,14 @@
 			rewards: [{
 				id: "6757AB98CE2701CD"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 24.0d
 			y: 10.0d
 			shape: "square"
-			description: ["Electrolyzing 1000 mB of Chromium Hydrochloric Solution will produce three Tiny Chromium Dust, 450 mB of Hydrogen, and 450 mB of Chlorine. This means that there is a 100 mB loss of Hydrochloric Acid for each process. Automating Salt Ore production through the Quarry is going to be essential."]
+			description: ["&eElectrolyzing&f 1000 mB of &aChromium Hydrochloric Solution&f will produce three &bTiny Chromium Dust&f, 450 mB of &9Hydrogen&f, and 450 mB of &2Chlorine&f. This means that there is a 100 mB loss of &aHydrochloric Acid&f for each process. Automating Salt Ore production through the Quarry is going to be essential."]
 			dependencies: ["49C4F2DED9D7043A"]
 			id: "76D9C0C5A1025CC2"
 			tasks: [{
@@ -2873,7 +2874,7 @@
 			rewards: [{
 				id: "5D681E6CB95212C6"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2883,7 +2884,7 @@
 			description: [
 				"I hope you've setup some good automation before getting here. It's definitly a feat if you haven't."
 				""
-				"Creating a Digital Circuit marks the beginning of the HV tier. There are a lot of new opportunities available to you now, such as the Distillation Tower and Turbo Machine Casings/Hulls."
+				"Creating a &eDigital Circuit&f marks the beginning of the &cHV tier&f. There are a lot of new opportunities available to you now, such as the &2Distillation Tower&f and &9Turbo Machine Casings/Hulls&f."
 				""
 				"You've worked hard to get to this point, so I'm throwing in a few freebies in the rewards."
 			]
@@ -2905,7 +2906,7 @@
 				{
 					id: "3A784DE9DA9102E3"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -2914,7 +2915,7 @@
 			x: 32.0d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["With your Digital Circuit Boards you can now create the Advanced Upgrade. These will significantly increase the speed of your overclocks, and your power draw."]
+			description: ["With your &eDigital Circuit Boards&f you can now create the &9Advanced Upgrade&f. These will significantly increase the speed of your overclocks, and your power draw."]
 			dependencies: ["47B1F3B024E8F7CD"]
 			id: "043E635A81CA9986"
 			tasks: [{
@@ -2933,7 +2934,7 @@
 				{
 					id: "5FD2024EBA0A1651"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -2943,7 +2944,7 @@
 			y: 9.0d
 			shape: "square"
 			description: [
-				"With your newly created Stainless Steel and Polyethylene, you can now create Digital Circuit Boards, an important precursor to the Digital Circuit."
+				"With your newly created &aStainless Steel&f and &bPolyethylene&f, you can now create &eDigital Circuit Boards&f, an important precursor to the &eDigital Circuit&f."
 				""
 				"There is a lot of microcrafting for each of the AND, NOT, and OR Gates. I would recommend making these in large batches."
 			]
@@ -2975,7 +2976,7 @@
 			rewards: [{
 				id: "0742A124E952706E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2983,7 +2984,7 @@
 			x: 32.0d
 			y: 7.0d
 			shape: "square"
-			description: ["Stainless Steel opens up the ability to create Advanced Components. These will be needed for HV and EV tier crafting."]
+			description: ["&aStainless Steel&f opens up the ability to create &bAdvanced Components&f. These will be needed for HV and EV tier crafting."]
 			dependencies: [
 				"6375B17635AAC09D"
 				"78E5C68ED157A31B"
@@ -3015,7 +3016,7 @@
 				{
 					id: "0FCCFCACCEAA4B9D"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -3025,6 +3026,7 @@
 			y: 9.0d
 			shape: "square"
 			subtitle: "Oooh, shiny!"
+			description: ["&aStainless Steel&f is a key component in all of the &dHigh-Voltage&f tier of machine hulls and multiblocks."]
 			dependencies: ["1E65E1332C2E57A2"]
 			size: 1.5d
 			id: "6375B17635AAC09D"
@@ -3036,7 +3038,7 @@
 			rewards: [{
 				id: "0ACE4BC8EF4A569B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3047,11 +3049,11 @@
 			shape: "square"
 			subtitle: "It's getting cold in here"
 			description: [
-				"The Vacuum Freezer is the next important multiblock you are going to need. With some of the ingots you will be processing soon, they come out of the EBF still extremely hot, and you will need to cool them down prior to using them."
+				"The &aVacuum Freezer&f is the next important multiblock you are going to need. With some of the ingots you will be processing soon, they come out of the EBF still extremely hot, and you will need to cool them down prior to using them."
 				""
-				"Unlike GregTech, the hot ingots don't damage you, they just can't be used in recipes."
+				"Unlike &bGregTech&f, the hot ingots don't damage you, they just can't be used in recipes."
 				""
-				"If you need help building the multiblock, remember you can hold \"W\" on the Vacuum Freezer item in your inventory to view the Ponder scene, or you can hold your wrench out to see where to place the blocks in the world with the Vacuum Freezer block placed."
+				"If you need help building the multiblock, remember you can hold \"W\" on the &aVacuum Freezer&f item in your inventory to view the &bPonder&b scene, or you can hold your wrench out to see where to place the blocks in the world with the &aVacuum Freezer&f block placed."
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "173001AFD7DFE49B"
@@ -3063,7 +3065,7 @@
 			rewards: [{
 				id: "45ED643C711B8F69"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3071,9 +3073,9 @@
 			y: 9.0d
 			shape: "square"
 			description: [
-				"Putting Stainless Steel Dust in an EBF doesn't return a regular ingot. Instead you will receive a hot ingot which you need to cool down. If you haven't made a Vacuum Freezer yet, you are going to need it."
+				"Putting &aStainless Steel Dust&f in an EBF doesn't return a regular ingot. Instead you will receive a hot ingot which you need to cool down. If you haven't made a &bVacuum Freezer&f yet, you are going to need it."
 				""
-				"Unlike GregTech, these hot ingots will not damage you, but you shouldn't be manually putting items in and out of machines at this point..."
+				"Unlike &bGregTech&f, these hot ingots will not damage you, but you shouldn't be manually putting items in and out of machines at this point..."
 			]
 			dependencies: ["10C6529CD6C26AEE"]
 			id: "1E65E1332C2E57A2"
@@ -3085,14 +3087,14 @@
 			rewards: [{
 				id: "457CF7DFA1ADC420"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 26.0d
 			y: 9.0d
 			shape: "square"
-			description: ["Now, by combining Manganese Dust, Chromium Dust, Iron Dust, and Nickel Dust in a Mixer you will produce your first Stainless Steel Dust."]
+			description: ["Now, by combining Manganese Dust, Chromium Dust, Iron Dust, and Nickel Dust in a Mixer you will produce your first &aStainless Steel Dust&f."]
 			dependencies: [
 				"68D24C2EE907B5DD"
 				"76D9C0C5A1025CC2"
@@ -3106,7 +3108,7 @@
 			rewards: [{
 				id: "2CB37D4F3A4DE330"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3114,7 +3116,7 @@
 			x: 26.0d
 			y: 7.0d
 			shape: "square"
-			description: ["Mixing Chromium, Stainless Steel, and Aluminum Dusts will make Kanthal Dust. Kanthal is an important upgrade to your EBF coils allowing you to process higher tier recipes, such as Titanium."]
+			description: ["Mixing Chromium, Stainless Steel, and Aluminum Dusts will make &aKanthal Dust&f. Kanthal is an important upgrade to your EBF coils allowing you to process higher tier recipes, such as &dTitanium&f."]
 			dependencies: ["10C6529CD6C26AEE"]
 			id: "7EB2342617A3ADDF"
 			tasks: [{
@@ -3133,7 +3135,7 @@
 				{
 					id: "59EA5520B0542FF3"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -3143,9 +3145,9 @@
 			y: 6.0d
 			shape: "square"
 			description: [
-				"Similar to Stainless Steel, using an EBF to process Kanthal will give you a Kanthal Hot Ingot. You will need to cool the ingot down in a Vacuum Freezer before it will become usable."
+				"Similar to &aStainless Steel&f, using an EBF to process Kanthal will give you a &bKanthal Hot Ingot&f. You will need to cool the ingot down in a Vacuum Freezer before it will become usable."
 				""
-				"The only usage of Kanthal is to make Kanthal Cables, an HV tiered cable, and Kanthal Coils for use in your EBFs."
+				"The only usage of &aKanthal&f is to make &bKanthal Cables&f, an HV tiered cable, and &bKanthal Coils&f for use in your EBFs."
 			]
 			dependencies: ["7EB2342617A3ADDF"]
 			id: "0A8EBA97C825EF06"
@@ -3157,14 +3159,14 @@
 			rewards: [{
 				id: "1AF6840E2FF9F937"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 26.0d
 			y: 5.0d
 			shape: "square"
-			description: ["Kanthal Coils are your ticket to late game EBF recipes. With these you can now work towards producing Titanium, the next tier of material for usage in EV-tiered Machine Hulls and multiblocks."]
+			description: ["&aKanthal Coils&f are your ticket to late game EBF recipes. With these you can now work towards producing &dTitanium&f, the next tier of material for usage in EV-tiered Machine Hulls and multiblocks."]
 			dependencies: ["0A8EBA97C825EF06"]
 			id: "68DDFA6E0465E81E"
 			tasks: [{
@@ -3177,7 +3179,7 @@
 			rewards: [{
 				id: "50E99C733FB2F7C0"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3185,9 +3187,9 @@
 			y: 5.0d
 			shape: "square"
 			description: [
-				"Annealed Copper is more malleable and easier to work with than regular Copper. Mixing Oxygen with Copper Ingots in a Kanthal EBF will produce Annealed Copper Hot Ingot."
+				"&aAnnealed Copper&f is more malleable and easier to work with than regular Copper. Mixing Oxygen with Copper Ingots in a Kanthal EBF will produce Annealed Copper Hot Ingot."
 				""
-				"You will need to cool the ingot in a Vacuum Freezer before you can use it."
+				"You will need to cool the ingot in a &eVacuum Freezer&f before you can use it."
 			]
 			dependencies: [
 				"68DDFA6E0465E81E"
@@ -3202,7 +3204,7 @@
 			rewards: [{
 				id: "50D896B7B34D1F16"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3219,7 +3221,7 @@
 			rewards: [{
 				id: "154F1F5A99C350F7"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3228,7 +3230,7 @@
 			shape: "square"
 			subtitle: "Welcome to High-Voltage"
 			description: [
-				"The Turbo Machine Hull is the machine hull of the HV tier. This hull can upgrade your machines to the HV tier or you can use them to craft the brand new multiblocks!"
+				"The &aTurbo Machine Hull&f is the machine hull of the HV tier. This hull can upgrade your machines to the HV tier or you can use them to craft the brand new multiblocks!"
 				""
 				"With these hulls made you've completed this chapter and can now move on to the next chapter."
 			]
@@ -3243,7 +3245,7 @@
 			rewards: [{
 				id: "27043A9AF265FB26"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3251,9 +3253,9 @@
 			y: 7.0d
 			shape: "square"
 			description: [
-				"With access to Digital Circuits you can now craft Stainless Steel Drills. These can be used both in an &bElectric Quarry&f and an &aOil Drilling Rig."
+				"With access to &eDigital Circuits&f you can now craft &bStainless Steel Drills&b. These can be used both in an &bElectric Quarry&f and an &aOil Drilling Rig&f."
 				""
-				"If used in the Electric Quarry, it will be your main source of Titanium, Tungsten, Mozanite, and Platinum Ore. When used in an Oil Drilling Rig it will mine 4000 mB of Shale Oil. I'd highly recommend using these instead of your Aluminum Drill for oil processing as you get a lot more oil."
+				"If used in the &bElectric Quarry&f, it will be your main source of Titanium, Tungsten, Mozanite, and Platinum Ore. When used in an &aOil Drilling Rig&f it will mine 4000 mB of Shale Oil. I'd highly recommend using these instead of your Aluminum Drill for oil processing as you get a lot more oil."
 			]
 			dependencies: [
 				"74FD4A8145A0576F"
@@ -3269,14 +3271,14 @@
 			rewards: [{
 				id: "3E70CA7A58ACA882"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 29.5d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["The Stainless Steel Barrel can store an incredible 4096 stacks of a single item."]
+			description: ["The &aStainless Steel Barrel&f can store an incredible 4096 stacks of a single item."]
 			dependencies: ["6375B17635AAC09D"]
 			id: "3DADE1F0A3BB9AB4"
 			tasks: [{
@@ -3287,14 +3289,14 @@
 			rewards: [{
 				id: "48939BB14E1038B7"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 30.5d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["The Stainless Steel tank is the next tier of portable fluid tank you can create. It can store up to 32 buckets of any kind of fluid and retains the contents when broken."]
+			description: ["The &aStainless Steel Tank&f is the next tier of portable fluid tank you can create. It can store up to 32 buckets of any kind of fluid and retains the contents when broken."]
 			dependencies: ["6375B17635AAC09D"]
 			id: "21D65F793422444B"
 			tasks: [{
@@ -3305,7 +3307,7 @@
 			rewards: [{
 				id: "3C5A8C5717B87174"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3336,14 +3338,14 @@
 			rewards: [{
 				id: "28320A30E8D763F0"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 33.5d
 			y: 5.0d
 			shape: "square"
-			description: ["The Stainless Steel Drill in an Oil Drilling Rig will give you Shale Oil. Passing this through a Distillation Tower will give you a Sulfuric Crude Oil, Sulfuric Naphtha, and a little bit of Helium. The first two can be processed down in a similar manner as you were before, but the latter, Helium, is very important as you move into the lategame."]
+			description: ["&aThe Stainless Steel Drill&f in an &bOil Drilling Rig&f will give you Shale Oil. Passing this through a &eDistillation Tower&f will give you a Sulfuric Crude Oil, Sulfuric Naphtha, and a little bit of Helium. The first two can be processed down in a similar manner as you were before, but the latter, Helium, is very important as you move into the lategame."]
 			dependencies: ["3E13D3CD4173DBE2"]
 			id: "2158E2092F54EFC4"
 			tasks: [{
@@ -3354,7 +3356,7 @@
 			rewards: [{
 				id: "4530466C76F3AD31"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3363,9 +3365,9 @@
 			y: 13.5d
 			shape: "rsquare"
 			description: [
-				"Find yourself waiting on your electric smelters, even with upgrades? Need to smelt up a ton of cobblestone? Then the Mega Smelter is for you."
+				"Find yourself waiting on your &aElectric Smelters&f, even with upgrades? Need to smelt up a ton of cobblestone? Then the &dMega Smelter&f is for you."
 				""
-				"The Mega Smelter processes 16 items of the same type at a time at relatively quick speeds. You can upgrade it to go even faster."
+				"The &dMega Smelter&f processes 16 items of the same type at a time at relatively quick speeds. You can upgrade it to go even faster."
 				""
 				"Upgrading the coils to Kanthal doesn't speed up the recipes, not yet at least..."
 			]
@@ -3429,7 +3431,7 @@
 			rewards: [{
 				id: "34B8F83B5BC88184"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3437,7 +3439,7 @@
 			y: 9.0d
 			shape: "rsquare"
 			description: [
-				"By electrolyzing clay, you can now get little bits of Lithium gas. You can combine your old Red Cell Batteries with Aluminum Plates and some Lithium to make Lithium Ion Batteries."
+				"By &eElectrolyzing&f clay, you can now get little bits of &bLithium gas&f. You can combine your old Red Cell Batteries with Aluminum Plates and some Lithium to make &aLithium Ion Batteries&f."
 				""
 				"These hold 100k and can distribute power to other items in your inventory, very useful!"
 			]
@@ -3451,7 +3453,7 @@
 			rewards: [{
 				id: "596294C9DCF5102E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3459,7 +3461,7 @@
 			y: 9.0d
 			shape: "rsquare"
 			description: [
-				"With your advancements in science, you have found that you can glue six Lithium Ion Batteries together and use as a single battery!"
+				"With your advancements in science, you have found that you can glue six &aLithium Ion Batteries&f together and use as a single battery!"
 				""
 				"This has a 600k internal energy buffer, at this point I doubt you have anything that could possibly drain that much, but it will be useful as soon as you unlock the electric TechReborn tools!"
 				""
@@ -3475,7 +3477,7 @@
 			rewards: [{
 				id: "5BB603F50F6CFDFD"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3483,9 +3485,9 @@
 			y: 3.0d
 			shape: "rsquare"
 			description: [
-				"With access to the Chemical Reactor, you can now create Eye of Enders. "
+				"With access to the &aChemical Reactor&f, you can now create &dEye of Enders&f. "
 				""
-				"Whether you want to go and fight the Ender Dragon now is up to you, as it's not required to beat the pack, but it could be useful to get access to the Elytra and other rare items."
+				"Whether you want to go and fight the &aEnder Dragon&f now is up to you, but it could be useful to get access to the &eElytra&f and other rare items."
 			]
 			dependencies: ["517C3D6FBC5FEB2A"]
 			id: "4E194F2BBB21F033"
@@ -3497,7 +3499,7 @@
 			rewards: [{
 				id: "4F739E599354E92A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3515,7 +3517,7 @@
 			rewards: [{
 				id: "73BCD9525B39841A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3523,7 +3525,7 @@
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"Entangled Chests are universally linked chests that work across dimensions and store the same items as long as they are color-code the same."
+				"&aEntangled Chests&f are universally linked chests that work across dimensions and store the same items as long as they are color-code the same."
 				""
 				"You can use runes to change the color-coding."
 			]
@@ -3537,7 +3539,7 @@
 			rewards: [{
 				id: "500D996C415F2987"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3545,9 +3547,9 @@
 			y: 1.0d
 			shape: "rsquare"
 			description: [
-				"Entangled Bags are able to access the contents of your Entangled Chest on the go."
+				"&bEntangled Bags&f are able to access the contents of your &bEntangled Chest&f on the go."
 				""
-				"Shift right-click an Entangled Chest with an Entangled Bag to link them together."
+				"Shift right-click an &bEntangled Chest&f with an &bEntangled Bag&f to link them together."
 			]
 			dependencies: ["4E194F2BBB21F033"]
 			id: "1044FF1E86B2615A"
@@ -3559,7 +3561,7 @@
 			rewards: [{
 				id: "7592E538897942CE"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3567,7 +3569,7 @@
 			y: 1.0d
 			shape: "rsquare"
 			description: [
-				"Entangled Tanks are exactly like Entangled Chests, but they can store fluids instead."
+				"&aEntangled Tanks&f are exactly like &bEntangled Chests&f, but they can store fluids instead."
 				""
 				"You can use runes to change the color-coding."
 			]
@@ -3581,7 +3583,7 @@
 			rewards: [{
 				id: "76E38923352C5B46"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3589,9 +3591,9 @@
 			y: 1.0d
 			shape: "rsquare"
 			description: [
-				"Entangled Buckets can be used to directly access the contents of your Entangled Tank on the go."
+				"&aEntangled Buckets&f can be used to directly access the contents of your &bEntangled Tank&f on the go."
 				""
-				"Shift right-click an Entangled Tank with an Entangled Bucket to link them together."
+				"Shift right-click an &aEntangled Tank&f with an &bEntangled Bucket&f to link them together."
 			]
 			dependencies: ["4E194F2BBB21F033"]
 			id: "5E0F3A2885C0E0DD"
@@ -3603,14 +3605,14 @@
 			rewards: [{
 				id: "45B27763DC89837B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 28.0d
 			y: 7.0d
 			shape: "square"
-			description: ["The Air Intake will allow your Vacuum Freezers and Pressurizers to produce Liquid Air, which can be distilled into it's base components."]
+			description: ["The &aAir Intake&f will allow your &eVacuum Freezers&f and &ePressurizers&f to produce &dLiquid Air&f, which can be distilled into it's base components."]
 			dependencies: ["6375B17635AAC09D"]
 			id: "354C87C444B34193"
 			tasks: [{
@@ -3621,13 +3623,14 @@
 			rewards: [{
 				id: "000AFBF64B2CDCDB"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 34.0d
 			y: 10.5d
 			shape: "rsquare"
+			description: ["The &aEnergy Crystal&f is similar to the &bLithium Ion Batteries&f, but it has a much larger buffer, being able to store &d1 million E&f."]
 			dependencies: ["575EE8E0720CE7DC"]
 			id: "39A53780808097E7"
 			tasks: [{
@@ -3638,7 +3641,7 @@
 			rewards: [{
 				id: "033A33C1C73505D5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3647,7 +3650,7 @@
 			y: 6.0d
 			shape: "square"
 			description: [
-				"Centrifuging 3000 mB of Liquid Air will produce, 650 mB Oxygen, 2315 mB of Nitrogen, and a measly 35 mB of Argon."
+				"Centrifuging 3000 mB of &aLiquid Air&f will produce, 650 mB Oxygen, 2315 mB of Nitrogen, and a measly 35 mB of Argon."
 				""
 				"Argon will be very useful in the future, you should start stockpiling it."
 			]
@@ -3673,14 +3676,14 @@
 			rewards: [{
 				id: "19257A6801BA003B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 30.0d
 			y: 6.0d
 			shape: "square"
-			description: ["Combining Argon and Helium in a Vacuum Freezer will give you Cryofluid, an important fluid in quantum crafting."]
+			description: ["Combining Argon and Helium in a &eVacuum Freezer&f will give you &bCryofluid&f, an important fluid in quantum crafting."]
 			dependencies: ["0CF36C4D19B0CE1A"]
 			id: "5D79372CA3921A4D"
 			tasks: [{
@@ -3691,7 +3694,7 @@
 			rewards: [{
 				id: "5D9CCD7DC0591702"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3726,7 +3729,7 @@
 			rewards: [{
 				id: "5B457590986F35BC"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3758,14 +3761,14 @@
 			rewards: [{
 				id: "25D661E4B4A5FA9F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 18.5d
 			y: 0.0d
 			shape: "rsquare"
-			description: ["The Void Bucket does not carry any liquids, instead it deletes any liquid you pick up with it. "]
+			description: ["The &dVoid Bucket&f does not carry any liquids, instead it deletes any liquid you pick up with it. "]
 			dependencies: ["4E194F2BBB21F033"]
 			id: "493839A115C46F71"
 			tasks: [{
@@ -3780,7 +3783,7 @@
 			rewards: [{
 				id: "1AD080284365C954"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3788,7 +3791,7 @@
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"Vacuum Hoppers are blocks that can pull nearby dropped items and experience orbs to its own inventory."
+				"&aVacuum Hoppers&f are blocks that can pull nearby dropped items and experience orbs to its own inventory."
 				""
 				"Stored items can be accessed by opening the block's GUI or by using pipes / hoppers."
 				""
@@ -3803,7 +3806,7 @@
 			rewards: [{
 				id: "2B85A4463CCC1917"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3821,7 +3824,7 @@
 			rewards: [{
 				id: "5FE27407A1FFC117"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -3839,7 +3842,7 @@
 			rewards: [{
 				id: "6328677D22F2BE1B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 	]

@@ -13,7 +13,7 @@
 			x: 0.0d
 			y: 5.25d
 			shape: "square"
-			description: ["The Plasma Turbine can turn Helium Plasma into EU, at the rate of 100kEU per mB. Its maximum production rate is rougly 1M EU/t."]
+			description: ["The &aPlasma Turbine&f can turn &eHelium Plasma&f into EU, at the rate of 100kEU per mB. Its maximum production rate is rougly 1M EU/t."]
 			dependencies: [
 				"6CD8A3092DDAC055"
 				"598DBC20FB201711"
@@ -28,7 +28,7 @@
 			rewards: [{
 				id: "504F13EA5D2C61B5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -38,7 +38,11 @@
 			y: 3.0d
 			shape: "square"
 			subtitle: "The power of a star in the palm of your hand"
-			description: ["The Fusion Reactor is the ultimate energy source! It can combine Deuterium, Tritium, and/or Helium-3 into Helium Plasma, the most powerful fuel in the game! However, it requires a large amount of energy to ignite the reaction."]
+			description: [
+				"The &aFusion Reactor&f is the ultimate energy source! It can combine &bDeuterium&f, &cTritium&f ,and/or &aHelium-3&f into &eHelium Plasma&f, the most powerful fuel in the game! However, it requires a large amount of energy to ignite the reaction."
+				""
+				"The &aFusion Reactor&f is also the way you will be generating &0Neutronium&f."
+			]
 			dependencies: ["2FDA67B4920D335D"]
 			size: 1.5d
 			id: "6CD8A3092DDAC055"
@@ -102,7 +106,7 @@
 			rewards: [{
 				id: "5EB050DDFA494A15"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -110,7 +114,7 @@
 			y: 7.5d
 			shape: "square"
 			description: [
-				"The Quantum Tank is the highest tier Tank offered by MI. It can store an absolutely absurd 2.14 billion buckets of fluid."
+				"The &aQuantum Tank&f is the highest tier Tank offered by MI. It can store an absolutely absurd 2.14 billion buckets of fluid."
 				""
 				"Filling it would be an achievement."
 			]
@@ -124,14 +128,14 @@
 			rewards: [{
 				id: "5A17ACCAAAE75CDA"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 6.5d
 			y: 8.5d
 			shape: "square"
-			description: ["The Quantum Barrel is the biggest Barrel available in MI. It can store 2.14 billion stacks of a single item. "]
+			description: ["The &aQuantum Barrel&f is the biggest Barrel available in MI. It can store 2.14 billion stacks of a single item. "]
 			dependencies: ["10943911EAB7196F"]
 			id: "7D17913DECB347F1"
 			tasks: [{
@@ -142,7 +146,7 @@
 			rewards: [{
 				id: "5D971A6BD440481B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -151,9 +155,9 @@
 			shape: "square"
 			subtitle: "Legal Duping"
 			description: [
-				"With 100 mB of liquid UU Matter, the replicator can duplicate (almost) any item in the game."
+				"With 100 mB of liquid &dUU-Matter&f, the replicator can duplicate (almost) any item in the game."
 				""
-				"While this might seem like the end, it is not. With complete molecular rearrangement at your fingertips, it's time to make a ton of UU-Matter and get the materials needed to make the creative items."
+				"While this might seem like the end, it is not. With complete molecular rearrangement at your fingertips, it's time to make a ton of &dUU-Matter&f and get the materials needed to make the creative items."
 			]
 			dependencies: [
 				"3E139335E6F04C69"
@@ -169,14 +173,14 @@
 			rewards: [{
 				id: "072EEA3A4446D2C3"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -2.0d
 			y: 1.0d
 			shape: "rsquare"
-			description: ["A single Superconductor Storage Unit can hold an absolute insane 768 billion EU."]
+			description: ["A single &aSuperconductor Storage Unit&f can hold an absolute insane 768 billion EU."]
 			dependencies: ["2FDA67B4920D335D"]
 			id: "0448EA623C79DA7B"
 			tasks: [{
@@ -187,7 +191,7 @@
 			rewards: [{
 				id: "481274D455455541"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -205,7 +209,7 @@
 			x: 4.0d
 			y: 11.0d
 			shape: "square"
-			description: ["The Quantum Upgrade is the highest tier upgrade available in MI. It allows for a 1 Billion EU overclock on any machine it is in. Whether or not you can produce that much power is a better question..."]
+			description: ["The &5Quantum Upgrade&f is the highest tier upgrade available in MI. It allows for a 1 Billion EU overclock on any machine it is in. Whether or not you can produce that much power is a better question..."]
 			dependencies: [
 				"23D9328B5F627E65"
 				"10943911EAB7196F"
@@ -220,7 +224,7 @@
 			rewards: [{
 				id: "7EFB56A781DE5021"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -228,7 +232,7 @@
 			y: 8.0d
 			shape: "square"
 			subtitle: "Pocket-size blackhole "
-			description: ["By blasting an Ultradense Metal Ball with more energy than several times our entire sun we can create a single Singularity."]
+			description: ["By blasting an &aUltradense Metal Ball&f with more energy than several times our entire sun we can create a single &5Singularity&f, a black-hole you can somehow hold in your hands..."]
 			dependencies: [
 				"50D18ACF6401C05D"
 				"4A2F6AA833C88B7C"
@@ -243,18 +247,19 @@
 			rewards: [{
 				id: "209CDEB9D0BD767B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
+			title: "Infinity Sword"
 			x: 5.0d
 			y: 13.0d
 			shape: "square"
 			subtitle: "A sword to end all swords"
 			description: [
-				"The Quantum Sword is the most powerful sword in the entire game. It will instantly kill anything you hit with it (this includes your friends)."
+				"The &dInfinity Sword&f is the most powerful sword in the entire game. It will instantly kill anything you hit with it (this includes your friends)."
 				""
-				"Still not as cool as the Sword of the Cosmos..."
+				"Still not as cool as the &aSword of the Cosmos&f..."
 			]
 			dependencies: ["3E139335E6F04C69"]
 			id: "152140F96FA2944E"
@@ -266,7 +271,7 @@
 			rewards: [{
 				id: "56D227DC7E036F65"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -276,9 +281,9 @@
 			shape: "square"
 			subtitle: "Basically creative mode"
 			description: [
-				"The Quantum Suit is a Jet Suit ( and Gravichestplate ) empowered with Quantum Upgrades to make it the most powerful armor in the game. You don't take damage while wearing this suit and you have creative-flight similar to the Gravi Chestplate."
+				"The &dInfinity Suit&f is an empowered suit of armor that's the most powerful armor in the game. You don't take damage while wearing the entire suit and you have creative-flight similar to the &dGravichestplate&f."
 				""
-				"Each piece individually adds a 25% chance to not take damage, with full protection when wearing the entire set."
+				"Each piece &aindividually adds a 25% chance to not take damage&f, with full protection when wearing the entire set."
 			]
 			dependencies: ["3E139335E6F04C69"]
 			id: "1E378F2F641048F1"
@@ -307,7 +312,7 @@
 			rewards: [{
 				id: "024CF9B78F0404FD"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -315,9 +320,9 @@
 			y: 8.0d
 			shape: "square"
 			description: [
-				"With a suitable Electrolyzer setup and a Singularity, large amounts of energy can be turned through Quantum Hawking Radiation, into a liquid form of UU Matter."
+				"With a suitable &eElectrolyzer&f setup and a &5Singularity&f, large amounts of energy can be turned through Quantum Hawking Radiation, into a liquid form of &dUU Matter&f."
 				""
-				"For those of you looking ahead or digging deep into REI, you might have already realized you could accelerate the process of making this fluid by electrolyzing solid UU-Matter."
+				"For those of you looking ahead or digging deep into &dREI&f, you might have already realized you could accelerate the process of making this fluid by electrolyzing solid &dUU-Matter&f."
 			]
 			dependencies: ["10943911EAB7196F"]
 			id: "5E0967F2B54D6B34"
@@ -329,7 +334,7 @@
 			rewards: [{
 				id: "5930C5079074735F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -337,7 +342,7 @@
 			y: 1.0d
 			shape: "square"
 			description: [
-				"Welcome to Chapter 6."
+				"Welcome to &eChapter 6&f."
 				""
 				"With the secrets of quantum computing realized, you can now work towards some extremely advanced machinery and sciences."
 			]
@@ -351,14 +356,14 @@
 			rewards: [{
 				id: "51C5C605A6A2EF8A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 3.0d
 			y: 13.0d
 			shape: "square"
-			description: ["The Creative Motor can provide an unlimited and configurable amount of rotational force for Create."]
+			description: ["The &dCreative Motor&f can provide an unlimited and configurable amount of rotational force for &eCreate&f."]
 			dependencies: ["4FD7572FC6CC4140"]
 			id: "576E585F8DFC7073"
 			tasks: [{
@@ -369,7 +374,7 @@
 			rewards: [{
 				id: "21715B8F45E2B294"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -379,9 +384,9 @@
 			shape: "diamond"
 			subtitle: "The World is Yours"
 			description: [
-				"I believe a congratulations is in order. You've done it! You've reached the end of StaTech Industry. With the Creative Worldshaper you can rearrange the world into whatever you see fit. "
+				"&lI believe a congratulations is in order. You've done it! You've reached the end of &bStaTech &eIndustry&f. With the &dCreative Worldshaper&f you can rearrange the world into whatever you see fit. "
 				""
-				"Thanks for playing!"
+				"&l&nThanks for playing!"
 			]
 			dependencies: [
 				"208D9031D68CE1AB"
@@ -401,7 +406,7 @@
 			rewards: [{
 				id: "5DE6D478547430BB"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -409,9 +414,9 @@
 			y: 13.0d
 			shape: "square"
 			description: [
-				"The Creative Tank can store an infinite amount of any fluid placed inside."
+				"The &dCreative Tank&f can store an infinite amount of any fluid placed inside."
 				""
-				"The Quantum Tank is blacklisted from the Replicator, so you'll need to make a bunch of them by replicating its components."
+				"The &aQuantum Tank&f is blacklisted from the &bReplicator&f, so you'll need to make a bunch of them by replicating its components."
 			]
 			dependencies: ["4FD7572FC6CC4140"]
 			id: "3DDD69F79F436684"
@@ -423,7 +428,7 @@
 			rewards: [{
 				id: "737186BDA6C5BBCC"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -432,9 +437,9 @@
 			shape: "square"
 			subtitle: "Non-euclidian!"
 			description: [
-				"The Creative Barrel stores infinite amounts of whatever item is placed inside."
+				"The &dCreative Barrel&f stores infinite amounts of whatever item is placed inside."
 				""
-				"The Quantum Barrel is blacklisted from the Replicator, so you'll need to make a bunch of them by replicating its components."
+				"The &aQuantum Barrel&f is blacklisted from the &bReplicator&f, so you'll need to make a bunch of them by replicating its components."
 			]
 			dependencies: ["4FD7572FC6CC4140"]
 			id: "1BE7697603B3C94F"
@@ -446,7 +451,7 @@
 			rewards: [{
 				id: "4A9588977405CB76"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -454,7 +459,7 @@
 			y: 13.0d
 			shape: "square"
 			subtitle: "UNLIMITED POWER"
-			description: ["The Creative Storage Unit is an infinite source of power."]
+			description: ["The &dCreative Storage Unit&f is an infinite source of power."]
 			dependencies: ["4FD7572FC6CC4140"]
 			id: "208D9031D68CE1AB"
 			tasks: [{
@@ -465,14 +470,14 @@
 			rewards: [{
 				id: "0EBA9BB92132514E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 2.0d
 			y: 3.0d
 			shape: "square"
-			description: ["Helium Plasma is a super heated state of Helium that can be used to power a Plasma Turbine or used in the production of Neutronium."]
+			description: ["&eHelium Plasma&f is a super heated state of &6Helium&f that can be used to power a &aPlasma Turbine&f or used in the production of &0Neutronium&f."]
 			dependencies: ["6CD8A3092DDAC055"]
 			id: "598DBC20FB201711"
 			tasks: [{
@@ -483,7 +488,7 @@
 			rewards: [{
 				id: "40C7B8AF42C6CF6C"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -492,9 +497,9 @@
 			shape: "square"
 			subtitle: "Theoretical Science!"
 			description: [
-				"Combining super heated Helium Plasma with Deuterium in a Fusion Reactor will cause some of the atoms to shred their neutrons into a Neutronium plasma. (I'm not a scientist, and I made the previous and this entire process entirely up)"
+				"Combining super heated &eHelium Plasma&f with &aDeuterium&f in a &bFusion Reactor&f will cause some of the atoms to shred their neutrons into a &0Neutronium plasma&f. &o(I'm not a scientist, and I made this process up)&r"
 				""
-				"Neutronium takes a long time to process, but with it you can finally look to create endgame items!"
+				"&0Neutronium&f takes a long time to process, but with it you can finally look to create endgame items!"
 			]
 			dependencies: ["598DBC20FB201711"]
 			size: 1.5d
@@ -507,14 +512,14 @@
 			rewards: [{
 				id: "788C035F6D993644"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 4.0d
 			y: 5.0d
 			shape: "square"
-			description: ["By combining lead, tungstensteel, iridium, and neutronium you can crate Ultradense Metal Balls. "]
+			description: ["By combining lead, tungstensteel, iridium, and neutronium you can crate &aUltradense Metal Balls*f."]
 			dependencies: ["1E525921822F56AC"]
 			id: "4A2F6AA833C88B7C"
 			tasks: [{
@@ -525,7 +530,7 @@
 			rewards: [{
 				id: "25AB8550FA6B42E6"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 	]
