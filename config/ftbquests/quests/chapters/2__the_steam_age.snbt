@@ -14,9 +14,9 @@
 			y: 0.0d
 			shape: "square"
 			description: [
-				"Welcome to Chapter 2"
+				"Welcome to &eChapter 2"
 				""
-				"The majority of this chapter will be focused on getting your first Bronze Machines and Steel Ingots using Steam as power."
+				"The majority of this chapter will be focused on getting your first &6Bronze Machines&f and &eSteel Ingots&f using &7steam&f as power."
 			]
 			dependencies: ["59442F8EBE6F9F06"]
 			id: "5EDE88BDA0182BD7"
@@ -36,11 +36,11 @@
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"Now you may want to consider creating a Steam Mining Drill to obtain the ores directly without needing a Silk Touch pickaxe."
+				"Now you may want to consider creating a &aSteam Mining Drill&f to obtain the ores directly without needing a Silk Touch pickaxe."
 				""
-				"The Steam Mining Drill can mine 3x3 blocks at the time, perfect for your early game mining needs. The Steam Mining Drill requires both water and solid fuel (for example coal)."
+				"The &aSteam Mining Drill&f can mine 3x3 blocks at the time, perfect for your early game mining needs. The &aSteam Mining Drill&f requires both &9water&f and solid fuel (for example coal)."
 				""
-				"Right-click a water source to fill it with water, and make sure to place some fuel in your drill by right-clicking the fuel items on it in your inventory. The water block is not consumed to fill the drill, but will be drained alongside the fuel when it is used to mine."
+				"Right-click a &9water&f source to fill it with water, and make sure to place some fuel in your drill by right-clicking the fuel items on it in your inventory. The &9water&f block is not consumed to fill the drill, but will be drained alongside the fuel when it is used to mine."
 			]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "0F56A61DD1E8BC5D"
@@ -52,7 +52,7 @@
 			rewards: [{
 				id: "14475B7432055EA1"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -60,7 +60,7 @@
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"Bronze Barrels can be used to store and move 32 stacks of one item. If you break a barrel it will keep its stored contents."
+				"&6Bronze Barrels&f can be used to store and move 32 stacks of one item. If you break a barrel it will keep its stored contents."
 				""
 				"Right-click on a barrel item with an item to insert it into the barrel. Left-click the barrel to extract some items from it."
 			]
@@ -74,7 +74,7 @@
 			rewards: [{
 				id: "3C1FCF1B266E0161"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -82,7 +82,7 @@
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"Bronze Tanks can store 4 buckets of fluid each, and you can use them to interact with machines or place them in the world."
+				"&6Bronze Tanks&f can store 4 buckets of fluid each, and you can use them to interact with machines or place them in the world."
 				""
 				"When placed in the world, you can right-click them with a bucket or other tanks to transfer fluids. They maintain their contents when broken, and you can stack them if they have the same contents."
 			]
@@ -96,7 +96,7 @@
 			rewards: [{
 				id: "517D98180BC11378"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -117,7 +117,7 @@
 			rewards: [{
 				id: "265502E377F0C170"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -126,9 +126,9 @@
 			y: 0.0d
 			shape: "square"
 			description: [
-				"Fire Clay Dust can be made by mixing two Clay Balls and two Brick Dusts in a Create Mechanical Mixer."
+				"Fire Clay Dust can be made by mixing two Clay Balls and two Brick Dusts in a &eCreate&f Mechanical Mixer."
 				""
-				"You can get Brick Dust by smashing bricks in the Forge Hammer. Similar to Bronze, mixing these dusts in a Create Mechanical Mixer has a worse output ratio than when you unlock the Bronze Mixer."
+				"You can get Brick Dust by smashing bricks in the Forge Hammer. Similar to Bronze, mixing these dusts in a &eCreate&f Mechanical Mixer has a worse output ratio than when you unlock the &6Bronze Mixer&f."
 				""
 				"You're going to need 12 dust for your first boiler, but it may be wise to make some extra."
 			]
@@ -143,7 +143,7 @@
 			rewards: [{
 				id: "5284EF681F6D3C5A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -152,13 +152,13 @@
 			shape: "square"
 			subtitle: "Steampunk!"
 			description: [
-				"The steam machines you will soon be crafting will require steam to function. To create steam, you will need to create the Bronze Boiler. "
+				"The &7steam&f machines you will soon be crafting will require &7steam&f to function. To create &7steam&f, you will need to create the Bronze Boiler. "
 				""
 				"It probably looks expensive to you right now, but don't forget that you can triple ores with the Forge Hammer. As you gain access to machines the recipes will become cheaper. "
 				""
-				"The boiler will slowly use fuel to heat itself up. When it's hot enough, it will start to produce steam."
+				"The boiler will slowly use fuel to heat itself up. When it's hot enough, it will start to produce &7steam&f."
 				""
-				"Don't worry, the boiler will not void your fuel if the Steam output is full. You can input water the boiler with a bucket or with pipes."
+				"Don't worry, the boiler will not void your fuel if the &7steam&f output is full. You can input &9water&f the boiler with a bucket or with pipes."
 			]
 			dependencies: ["105E5F967328888F"]
 			size: 1.5d
@@ -171,7 +171,7 @@
 			rewards: [{
 				id: "6682BCFCCACC02CA"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -179,13 +179,13 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"You might be wondering if there's a way to automatically input water into the Bronze Boiler instead of by hand with buckets, and there is!"
+				"You might be wondering if there's a way to automatically input &9water&f into the Bronze Boiler instead of by hand with buckets, and there is!"
 				""
-				"Surrounding a Bronze Water Pump horizontally with water will have it start producing water for 1 EU/t."
+				"Surrounding a &6Bronze Water Pump&f horizontally with &9water&f will have it start producing &9water&f for 1 EU/t."
 				""
-				"The pump will produce 1/8th of a bucket of water for every adjacent water source every 5 seconds, for a max output of 1 bucket / 5 seconds."
+				"The pump will produce 1/8th of a bucket of &9water&f for every adjacent &9water&f source every 5 seconds, for a max output of 1 bucket / 5 seconds."
 				""
-				"You don't have access to pipes right now, so you can place your Steam Boiler directly on top for now."
+				"You don't have access to pipes right now, so you can place your &7steam&f Boiler directly on top for now."
 			]
 			dependencies: ["77EAB1D011541800"]
 			id: "4B5B04123C38AA37"
@@ -197,7 +197,7 @@
 			rewards: [{
 				id: "70FD7DC69CE3EC13"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -206,7 +206,7 @@
 			x: 7.0d
 			y: -2.0d
 			shape: "rsquare"
-			description: ["If you'd rather save on some materials, you can use the Create mod's pump to pump water from an infinite pool and pipe it into the boiler directly."]
+			description: ["If you'd rather save on some materials, you can use the &eCreate&f mod's &aPump&f to pump &9water&f from an infinite pool and pipe it into the boiler directly."]
 			dependencies: ["77EAB1D011541800"]
 			id: "4F22C9E20AB004D9"
 			tasks: [
@@ -225,7 +225,7 @@
 			rewards: [{
 				id: "4B638E6A6324C45B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -235,17 +235,17 @@
 			y: 2.0d
 			shape: "square"
 			description: [
-				"Now that you have a boiler built, you can use it to power other steam machines. The boiler will automatically produce and send steam to adjacent machines, up to 8 millibuckets per tick. You will soon learn about pipes to extend the range of steam distribution."
+				"Now that you have a boiler built, you can use it to power other &7steam&f machines. The boiler will automatically produce and send &7steam&f to adjacent machines, up to 8 millibuckets per tick. You will soon learn about pipes to extend the range of &7steam&f distribution."
 				""
-				"Bronze machines can only process recipes up to 2 EU/t. 1mB of steam is equivalent to 1 EU, meaning a boiler at max temperature can power 4 machines simultaneously."
+				"&6Bronze machines&f can only process recipes up to 2 EU/t. 1mB of &7steam&f is equivalent to 1 EU, meaning a boiler at max temperature can power 4 machines simultaneously."
 				""
-				"Steam machines will accept inputs from any side, be it items, steam or another fluid. You can lock their slots by clicking on the lock in the interface. Locked slots only accept one type of item or fluid."
+				"&7Steam Machines&f will accept inputs from any side, be it items, &7steam&f or another fluid. You can lock their slots by clicking on the lock in the interface. Locked slots only accept one type of item or fluid."
 				""
 				"Every machine has an output side, and you can enable auto-output from the interface. Hoppers, pipes, and other automation can extract output items from any side, of course. You can also reduce the maximum number of items in a slot by scrolling."
 				""
 				"Using a wrench, you can rotate any machine by right-clicking. You can rotate the output side by sneaking while you shift-click."
 				""
-				"NOTE: Breaking a machine with the wrench WILL NOT drop it. Use a pickaxe for that!"
+				"&cNOTE&f: Breaking a machine with the wrench WILL NOT drop it. Use a pickaxe for that!"
 			]
 			dependencies: ["77EAB1D011541800"]
 			id: "343C68866C58ADC3"
@@ -263,7 +263,7 @@
 				{
 					id: "429CB00FD9A4998B"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -309,7 +309,7 @@
 				{
 					id: "48E6E1E9570EBFCA"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -335,7 +335,7 @@
 			rewards: [{
 				id: "5DE8E1C0DDD00672"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -354,7 +354,7 @@
 			rewards: [{
 				id: "43D82687BF2096AC"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -363,9 +363,9 @@
 			shape: "square"
 			subtitle: "Smoosh"
 			description: [
-				"The Bronze Compressor will turn ingots into plates at a 1:1 ratio. It can also turn each double ingot into 2 plates."
+				"The &6Bronze Compressor&f will turn ingots into plates at a 1:1 ratio. It can also turn each double ingot into 2 plates."
 				""
-				"Create's Mechanical Press is not powerful enough for some recipes, so you will want to craft one of these."
+				"&eCreate&f's &aMechanical Press&f is not powerful enough for some recipes, so you will want to craft one of these."
 				""
 				"I would recommend making this one first."
 			]
@@ -379,7 +379,7 @@
 			rewards: [{
 				id: "6821944FF1CC38EA"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -387,7 +387,7 @@
 			y: 4.0d
 			shape: "rsquare"
 			subtitle: "A more efficient furnace"
-			description: ["The Bronze Furnace is a furnace that accepts Steam instead of traditional fuels. It is as slow as a normal furnace, but is 10 times more fuel efficient due to using Steam."]
+			description: ["The &6Bronze Furnace&f is a furnace that accepts &7steam&f instead of traditional fuels. It is as slow as a normal furnace, but is 10 times more fuel efficient due to using &7Steam&f."]
 			dependencies: ["343C68866C58ADC3"]
 			id: "112E7B1922E2CCC3"
 			tasks: [{
@@ -398,7 +398,7 @@
 			rewards: [{
 				id: "6D2E1F00B925612E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -406,7 +406,7 @@
 			y: 4.0d
 			shape: "square"
 			subtitle: "Mixing it up!"
-			description: ["The Bronze Mixer will help you mix dusts, giving you a better ratio for Bronze, Fire Clay, and Uncooked Steel. It can also create Cobblestone and Clay."]
+			description: ["The &6Bronze Mixer&f will help you mix dusts, giving you a better ratio for Bronze, Fire Clay, and Uncooked &eSteel&f. It can also create Cobblestone and Clay."]
 			dependencies: ["343C68866C58ADC3"]
 			id: "693368CF3E13AB7A"
 			tasks: [{
@@ -417,7 +417,7 @@
 			rewards: [{
 				id: "28251D12F2D4E469"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -426,11 +426,11 @@
 			shape: "square"
 			subtitle: "Bzzzzz"
 			description: [
-				"The Bronze Cutting Machine will give you better ratios for bolts, gears, rings and rods. It uses a little bit of lubricant every time."
+				"The &6Bronze Cutting Machine&f will give you better ratios for bolts, gears, rings and rods. It uses a little bit of lubricant every time."
 				""
-				"The Cutting Machine is also useful for automatically chiseling blocks, getting better ratios for wood, and many other things. Check out the REI recipes for it, it's quite expansive!"
+				"The &6Cutting Machine&f is also useful for automatically chiseling blocks, getting better ratios for wood, and many other things. Check out the &dREI&f recipes for it, it's quite expansive!"
 				""
-				"Until you have a Coke Oven, you don't have any Lubricant, so maybe wait until you have access to Creosote before making this?"
+				"Until you have a &aCoke Oven&f, you don't have any Lubricant, so maybe wait until you have access to Creosote before making this?"
 			]
 			dependencies: ["343C68866C58ADC3"]
 			id: "3730B6FAEF7DAA37"
@@ -442,7 +442,7 @@
 			rewards: [{
 				id: "501A101C89F49B59"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -453,15 +453,15 @@
 			shape: "square"
 			subtitle: "Your first multiblock machine!"
 			description: [
-				"Once you have had enough of the bronze machines, you can start working toward making Steel. The ultimate goal is to be able to build the quarry, a multiblock that will dig ores for you."
+				"Once you have had enough of the bronze machines, you can start working toward making &eSteel&f. The ultimate goal is to be able to build the quarry, a multiblock that will dig ores for you."
 				""
-				"The first step in Steel production is to make Coke by heating coal without oxygen. To do this, you will need to make the Coke Oven multiblock. The requirements for building this match directly to the requirements of this quest."
+				"The first step in &eSteel&f production is to make Coke by heating coal without oxygen. To do this, you will need to make the &aCoke Oven&f multiblock. The requirements for building this match directly to the requirements of this quest."
 				""
-				"The Coke Oven block has the role of the controller. Every multiblock is managed by a controller, but you usually cannot I/O from the controller directly: all input and output goes through the hatches. We need a fluid input because the coke oven is powered by steam, we need an item input for the coal and output for the coke."
+				"The &aCoke Oven&f block has the role of the controller. Every multiblock is managed by a controller, but you usually cannot I/O from the controller directly: all input and output goes through the hatches. We need a fluid input because the coke oven is powered by &7steam&f, we need an item input for the coal and output for the coke."
 				""
-				"If you're having trouble forming the multiblock, hold W on the Coke Oven in your inventory to view the Ponder scene for the multiblock, additionally you can hold the Wrench to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
+				"If you're having trouble forming the multiblock, hold W on the &aCoke Oven&f in your inventory to view the Ponder scene for the multiblock, additionally you can hold the Wrench to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
 				""
-				"Once the Coke Oven says Shape Valid, fill the fluid input hatch with Steam, put Coal in the Item Input Hatch and you're good to go!"
+				"Once the &aCoke Oven&f says Shape Valid, fill the fluid input hatch with &7Steam&f, put Coal in the Item Input Hatch and you're good to go!"
 				""
 				"Coke will be very useful for steel, but it also is a powerful fuel as it lasts four times as long as coal."
 			]
@@ -528,7 +528,7 @@
 				{
 					id: "38FCDC56E28D3670"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -536,7 +536,7 @@
 			x: 7.5d
 			y: 5.5d
 			shape: "square"
-			description: ["Individually Bricks need to be packaged down into Brick blocks. You can do this for now with a Bronze Compressor, but it's rather slow and you'll want to use a Steel Packer once it's available for a quicker recipe."]
+			description: ["Individually Bricks need to be packaged down into Brick blocks. You can do this for now with a Bronze Compressor, but it's rather slow and you'll want to use a &eSteel Packer&f once it's available for a quicker recipe."]
 			dependencies: ["62474684DD7A1B7C"]
 			id: "4AF847F8B403E6E3"
 			tasks: [{
@@ -547,7 +547,7 @@
 			rewards: [{
 				id: "2E7888DA04E633B6"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -555,9 +555,9 @@
 			y: 7.5d
 			shape: "square"
 			description: [
-				"You may have noticed in the recipe for Coke that you have a chance to get Creosote. By default, since we didn't attach a Fluid Output Hatch, this fluid is voided in the process in the Coke Oven."
+				"You may have noticed in the recipe for Coke that you have a chance to get Creosote. By default, since we didn't attach a Fluid Output Hatch, this fluid is voided in the process in the &aCoke Oven&f."
 				""
-				"Creosote can prove to be very useful, such as being able to make Lubricant for your Cutting Machines. If you'd like to start storing Creosote, attach a Fluid Output Hatch to the Coke Oven and pipe the fluid into tanks."
+				"Creosote can prove to be very useful, such as being able to make Lubricant for your Cutting Machines. If you'd like to start storing Creosote, attach a Fluid Output Hatch to the &aCoke Oven&f and pipe the fluid into tanks."
 			]
 			dependencies: ["4AD151B1DCA26F4F"]
 			id: "7A6086319A01A16C"
@@ -569,14 +569,14 @@
 			rewards: [{
 				id: "59E358C33451AABF"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 5.0d
 			y: 5.5d
 			shape: "square"
-			description: ["By combining Creosote with Redstone Dust in a mixer you can create Lubricant. This fluid will be very useful in use of a Cutting Machine."]
+			description: ["By combining Creosote with &cRedstone Dust&f in a mixer you can create Lubricant. This fluid will be very useful in use of a Cutting Machine."]
 			dependencies: [
 				"7A6086319A01A16C"
 				"693368CF3E13AB7A"
@@ -590,7 +590,7 @@
 			rewards: [{
 				id: "404D5FB42B5B4289"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -598,7 +598,7 @@
 			x: 9.5d
 			y: 7.5d
 			shape: "rsquare"
-			description: ["With multiblocks from Modern Industrialization, you can share a wall between two separate multiblocks to save on some resources. You cannot place hatches on the shared wall, as it will not form the multiblock if you do so."]
+			description: ["With multiblocks from &eModern Industrialization&f, you can share a wall between two separate multiblocks to save on some resources. You cannot place hatches on the shared wall, as it will not form the multiblock if you do so."]
 			dependencies: ["4AD151B1DCA26F4F"]
 			id: "05EB37A2156293FE"
 			tasks: [{
@@ -609,15 +609,15 @@
 			rewards: [{
 				id: "506679DA46EDCEDB"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			title: "Uncooked Steel Dust"
+			title: "Uncooked &eSteel&f Dust"
 			x: 7.5d
 			y: 10.75d
 			shape: "square"
-			description: ["Mixing your newly created Coke Dust with Iron Dust in a Mixer you can make Uncooked Steel Dust. This is the precursor for Steel, now you will need another multiblock to smelt it!"]
+			description: ["Mixing your newly created Coke Dust with Iron Dust in a Mixer you can make &eUncooked Steel Dust&f. This is the precursor for &eSteel&f, now you will need another multiblock to smelt it!"]
 			dependencies: ["738FE28369D3A550"]
 			id: "4A1086D69A76909D"
 			tasks: [{
@@ -639,7 +639,7 @@
 			shape: "square"
 			subtitle: "Not the soda"
 			description: [
-				"Coke is a heavily improved version of coal. It's 4x as powerful as regular coal, and is a key component in creating Steel."
+				"Coke is a heavily improved version of coal. It's 4x as powerful as regular coal, and is a key component in creating &eSteel&f."
 				""
 				"To make Coke Dust, you will need to pass regular Coke through a Macerator."
 			]
@@ -660,7 +660,7 @@
 			rewards: [{
 				id: "1ACB8BA0724C8E54"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -670,9 +670,9 @@
 			shape: "square"
 			subtitle: "Better than the vanilla version!"
 			description: [
-				"To turn your Uncooked Steel Dust into Steel Ingots, you will need a Blast Furnace. For now your Blast Furnace will be powered off of steam. "
+				"To turn your &eUncooked Steel&f Dust into &eSteel Ingots&f, you will need a Blast Furnace. For now your Blast Furnace will be powered off of &7steam&f. "
 				""
-				"You will need the same amount of materials in the quest requirements to build the Blast Furnace. It's structure is very similar to the Coke Oven's with Bricks being replaced by Fire Clay Bricks and one extra hollow layer on top. Like before, if you forget how to build the multiblock, you can always hold your wrench to see it or hold 'W' on the Steam Blast Furnace item to view it's Ponder scene."
+				"You will need the same amount of materials in the quest requirements to build the Blast Furnace. It's structure is very similar to the &aCoke Oven&f's with Bricks being replaced by Fire Clay Bricks and one extra hollow layer on top. Like before, if you forget how to build the multiblock, you can always hold your wrench to see it or hold 'W' on the &aSteam Blast Furnace&f item to view it's Ponder scene."
 			]
 			dependencies: ["4A1086D69A76909D"]
 			size: 2.0d
@@ -729,23 +729,23 @@
 			rewards: [{
 				id: "0C2ED5E8AF1EB0ED"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			title: "Steel Ingots"
+			title: "&eSteel Ingots&f"
 			x: 15.5d
 			y: 13.0d
 			shape: "square"
 			subtitle: "The beginning of industry"
 			description: [
-				"Now that you have Steel, you can upgrade your Bronze Machines if you want. Steel machines can process recipes up to 4 EU/t, and they will process recipes at twice the speed as long as the energy usage doesn't go above 4 EU/t. Basically they are twice as fast as Bronze Machines and they may also unlock new recipes."
+				"Now that you have &eSteel&f, you can upgrade your &6Bronze Machines&f if you want. &eSteel machines&f can process recipes up to 4 EU/t, and they will process recipes at twice the speed as long as the energy usage doesn't go above 4 EU/t. Basically they are twice as fast as &6Bronze Machines&f and they may also unlock new recipes."
 				""
-				"Additionally, Steel Hatches have more capacity than Bronze Hatches, and a multiblock with at least ONE steel hatch (regardless of item/fluid/etc.) will be upgraded to Steel tier. This means that it will go twice as fast if its energy usage wouldn't exceed 4 EU/t."
+				"Additionally, &eSteel Hatches&f have more capacity than &6Bronze Hatches&f, and a multiblock with at least ONE steel hatch (regardless of item/fluid/etc.) will be upgraded to &eSteel&f tier. This means that it will go twice as fast if its energy usage wouldn't exceed 4 EU/t."
 				""
-				"A Steel Boiler will produce twice as much steam as a Bronze one, that means up to 16 EU/t, and a Steel Water Pump will produce twice as much water as its Bronze counterpart, so up to 2 buckets / 5 seconds."
+				"A &eSteel Boiler&f will produce twice as much &7steam&f as a Bronze one, that means up to 16 EU/t, and a &eSteel Water Pump&f will produce twice as much &9water&f as its Bronze counterpart, so up to 2 buckets / 5 seconds."
 				""
-				"Steel Tanks store up to 8 buckets. Steel Pipes are equivalent to other kinds of pipes, but you can combine them with other types of pipes on the same block, so they may be useful if you really need another distinct pipe network."
+				"&eSteel Tanks&f store up to 8 buckets. &eSteel&f Pipes are equivalent to other kinds of pipes, but you can combine them with other types of pipes on the same block, so they may be useful if you really need another distinct pipe network."
 				""
 				"You can check all recipes in REI."
 			]
@@ -761,7 +761,7 @@
 			rewards: [{
 				id: "5682EC3442B981E5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -803,7 +803,7 @@
 				{
 					id: "5E75459B1947C2B7"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -812,7 +812,7 @@
 			x: 16.0d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["Instead of crafting entirely new machines, you can use the Steel Upgrade with a Bronze Machine in a Smithing Table to upgrade it into its Steel version."]
+			description: ["Instead of crafting entirely new machines, you can use the &eSteel&f Upgrade with a &6Bronze Machine&f in a Smithing Table to upgrade it into its &eSteel&f version."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "577BA8EF0FB84BCE"
 			tasks: [{
@@ -831,7 +831,7 @@
 				{
 					id: "5C9E73CE4E91582F"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -839,7 +839,7 @@
 			x: 16.0d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["With a few steel plates, you can craft the Automatic Trash Can. It will destroy any item or fluid that is piped into it."]
+			description: ["With a few steel plates, you can craft the &aAutomatic Trash Can&f. It will destroy any item or fluid that is piped into it."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "5F56BBCF8B57F434"
 			tasks: [{
@@ -850,14 +850,14 @@
 			rewards: [{
 				id: "48B3F5F04EBB9FFD"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 17.0d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["The Steel Unpacker, a new machine only available in Steel. It acts to unpack items, check REI for recipes."]
+			description: ["The &eSteel Unpacker&f, a new machine only available in &eSteel&f. It acts to unpack items, check &dREI&f for recipes."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "3B911268380F061D"
 			tasks: [{
@@ -868,14 +868,14 @@
 			rewards: [{
 				id: "0AB2A0A3EF801C98"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 18.0d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["The Steel Packer, a new machine only available in Steel, can perform simple crafts for you. You can now automate double ingots and pipes. Check REI for all the recipes."]
+			description: ["The &eSteel Packer&f, a new machine only available in &eSteel&f, can perform simple crafts for you. You can now automate double ingots and pipes. Check &dREI&f for all the recipes."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "759C375900C081FF"
 			tasks: [{
@@ -886,7 +886,7 @@
 			rewards: [{
 				id: "348EA4CD01DA3C06"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -894,7 +894,7 @@
 			x: 18.0d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["For those of you who have played GregTech, these are similar to using circuit numbers in recipes. Similar to that sytem, using one of these items in a recipe will tell the Packer what recipe to use without consuming the item."]
+			description: ["For those of you who have played &bGregTech&f, these are similar to using circuit numbers in recipes. Similar to that sytem, using one of these items in a recipe will tell the Packer what recipe to use without consuming the item."]
 			dependencies: ["759C375900C081FF"]
 			id: "28EEDBD2BE127F84"
 			tasks: [
@@ -912,7 +912,7 @@
 			rewards: [{
 				id: "0ABA02979E3C0BFA"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -923,9 +923,9 @@
 			shape: "square"
 			subtitle: "Ores Ad Nauseam"
 			description: [
-				"The Steam Quarry is a Steam multiblock machine that consumes drills to dig deeper than the bedrock and gives you back some ores. It's recommended that before you build this multiblock you create multiple Steam Blast Furnaces before you attempt to build it because it requires a lot of Steel."
+				"&aThe Steam Quarry&f is a &7steam&f multiblock machine that consumes drills to dig deeper than the bedrock and gives you back some ores. It's recommended that before you build this multiblock you create multiple Steam Blast Furnaces before you attempt to build it because it requires a lot of &eSteel&f."
 				""
-				"To build this multiblock, you will need the material list from this quest. You can check the Ponder scene by holding 'W' on the Steam Quarry block in your inventory. Alternatively, holding your wrench will show where blocks need to go."
+				"To build this multiblock, you will need the material list from this quest. You can check the Ponder scene by holding 'W' on the &7steam&f Quarry block in your inventory. Alternatively, holding your wrench will show where blocks need to go."
 				""
 				"I'd recommend having multiple Item Output Hatches in the case you get lucky and get multiple ores from a single process."
 			]
@@ -997,14 +997,14 @@
 			rewards: [{
 				id: "782AA4603FE86681"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 22.0d
 			y: 12.0d
 			shape: "rsquare"
-			description: ["Putting the Bronze Drill in the Steam Quarry will return ores in the item output. Make sure to pipe out the items immediately so you don't void any of the ores!"]
+			description: ["Putting the &6Bronze Drill&f in the &aSteam Quarry&f will return ores in the item output. Make sure to pipe out the items immediately so you don't void any of the ores!"]
 			dependencies: ["1F5ACBB3A3D021B3"]
 			id: "1CBCB4D1ECFBDE9E"
 			tasks: [{
@@ -1022,7 +1022,7 @@
 				{
 					id: "328CBD24EE6A4D8A"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1030,7 +1030,7 @@
 			x: 22.0d
 			y: 14.0d
 			shape: "rsquare"
-			description: ["Putting a Copper Drill in a Steam Quarry is a good way to get various types of stones. Make sure to pipe out the items immediately to avoid voiding any outputs!"]
+			description: ["Putting a &cCopper Drill&f in a &aSteam Quarry&f is a good way to get various types of stones. Make sure to pipe out the items immediately to avoid voiding any outputs!"]
 			dependencies: ["1F5ACBB3A3D021B3"]
 			id: "52D685C4965BE0EF"
 			tasks: [{
@@ -1048,7 +1048,7 @@
 				{
 					id: "33EB119028755542"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1056,7 +1056,7 @@
 			x: 15.5d
 			y: 11.0d
 			shape: "square"
-			description: ["The Wiremill will be useful in the future for the creation of wires. Combine the wires with Rubber Sheets to get cables."]
+			description: ["The &bWiremill&f will be useful in the future for the creation of wires. Combine the wires with &8Rubber Sheets&f to get cables."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "3C093BB3F3D520D9"
 			tasks: [{
@@ -1067,7 +1067,7 @@
 			rewards: [{
 				id: "22539C983B0A0952"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1077,9 +1077,9 @@
 			y: 11.0d
 			shape: "rsquare"
 			description: [
-				"If you find yourself lucky to find a Rubber Tree, you can use a Tree Tap to extract Sap and process it into Rubber. You can then use a Compressor to turn the Rubber into Rubber Sheets."
+				"If you find yourself lucky to find a &aRubber Tree&f, you can use a &bTree Tap&f to extract Sap and process it into Rubber. You can then use a Compressor to turn the Rubber into Rubber Sheets."
 				""
-				"A little bit more of a manual way, but you can get a lot of Rubber Sheets if you feel like putting in the effort."
+				"A little bit more of a manual way, but you can get a lot of &8Rubber Sheets&f if you feel like putting in the effort."
 			]
 			dependencies: ["38E38B24C0432327"]
 			id: "68DF10A8AB2D074A"
@@ -1109,7 +1109,7 @@
 			rewards: [{
 				id: "0E7C5851252F49E2"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1117,7 +1117,7 @@
 			x: 12.5d
 			y: 9.5d
 			shape: "square"
-			description: ["Combining Synthetic Oil with Paper in a Mixer will grant you two Rubber Sheets. You will unlock a more efficient recipe with petrochemistry in the future."]
+			description: ["Combining &aSynthetic Oil&f with Paper in a Mixer will grant you two Rubber Sheets. You will unlock a more efficient recipe with petrochemistry in the future."]
 			dependencies: ["4D3EDFA212A5B4F1"]
 			id: "38E38B24C0432327"
 			tasks: [{
@@ -1128,14 +1128,14 @@
 			rewards: [{
 				id: "6C4FAE3DECF41A04"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 9.5d
 			y: 11.0d
 			shape: "square"
-			description: ["Burning Raw Synthetic Oil in a Steam Blast Furnace will get you Synthetic Oil."]
+			description: ["Burning Raw Synthetic Oil in a &aSteam Blast Furnace&f will get you Synthetic Oil."]
 			dependencies: [
 				"4F060179B81581AB"
 				"578C4D10471D6EC9"
@@ -1149,7 +1149,7 @@
 			rewards: [{
 				id: "692AA14FBB2CC4C0"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1157,7 +1157,7 @@
 			y: 9.5d
 			shape: "square"
 			description: [
-				"Mixing Coke Dust and Water in a Mixer will get you Raw Synthetic Oil, which you can burn in a Steam Blast Furnace to get Synthetic Oil. Mix it with paper and that gives you Rubber Sheets!"
+				"Mixing Coke Dust and &9Water&f in a Mixer will get you &bRaw Synthetic Oil&f, which you can burn in a &aSteam Blast Furnace&f to get &bSynthetic Oil&a. Mix it with paper and that gives you &8Rubber Sheets&f!"
 				""
 				"Automating this process is strongly recommended! Note that paper can be made from wood using wood pulp."
 			]
@@ -1171,7 +1171,7 @@
 			rewards: [{
 				id: "6833B1696D3E857B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1179,7 +1179,7 @@
 			y: 5.5d
 			shape: "square"
 			description: [
-				"Paper production has been &mgregified&r statified. Macerating logs into Wood Pulp, then mixing that Wood Pulp with Water will produce paper!"
+				"Paper production has been &mgregified&r statified. Macerating logs into Wood Pulp, then mixing that Wood Pulp with &9Water&f will produce paper!"
 				""
 				"I wouldn't put this off, as you will need it to make Rubber Sheets!"
 			]
@@ -1193,7 +1193,7 @@
 			rewards: [{
 				id: "6144DA3C0791278E"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1216,7 +1216,7 @@
 			rewards: [{
 				id: "1FACB0B9BF80CD9A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1258,7 +1258,7 @@
 			rewards: [{
 				id: "3AE6281D0655F5D1"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1267,7 +1267,7 @@
 			y: 9.5d
 			shape: "square"
 			description: [
-				"With your Wiremill and Rubber Sheets you can now craft your first Cables. There are three variants in LV, Copper, Tin, and Silver Cables."
+				"With your &aWiremill&f and &8Rubber Sheets&f you can now craft your first Cables. There are three variants in LV, Copper, Tin, and Silver Cables."
 				""
 				"There is not any EU loss per block as in GregTech, but there still is a max transfer rate. Hovering over the Cable in world will show you how much power is flowing through it."
 				""
@@ -1300,7 +1300,7 @@
 				{
 					id: "677A61D327978C76"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1312,9 +1312,9 @@
 			shape: "rsquare"
 			subtitle: "Mass Fluid Storage"
 			description: [
-				"The Large Tank is a multiblock that allows you to store large amounts of some fluid, for example steam. It can store 64 buckets worth of fluid for every block in the structure (including sides). "
+				"The &aLarge Tank&f is a multiblock that allows you to store large amounts of some fluid, for example &7steam&f. It can store 64 buckets worth of fluid for every block in the structure (including sides). "
 				""
-				"The Large Tank has many possible sizes depending on how much storage you need. You can open the size configuration panel by clicking on a button in the controller."
+				"The &aLarge Tank&f has many possible sizes depending on how much storage you need. You can open the size configuration panel by clicking on a button in the controller."
 				""
 				"Only pipes may access the tank, and only through the controller. Don't break the controller or you will void all of the stored fluid!"
 				""
@@ -1344,7 +1344,7 @@
 			rewards: [{
 				id: "0CE769F1C3E7F637"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1385,7 +1385,7 @@
 			rewards: [{
 				id: "0981D8968C36AA94"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1450,7 +1450,7 @@
 				{
 					id: "5942D2BC1F2117A7"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1460,7 +1460,7 @@
 			shape: "square"
 			subtitle: "Your first circuits!"
 			description: [
-				"Congratulations, you've made your first circuits! With these you can finally start making Basic Machine Hulls, opening up electric machines."
+				"&lCongratulations&r, you've made your &2first circuits&f! With these you can finally start making Basic Machine Hulls, opening up electric machines."
 				""
 				"You'll need a lot of these through progression, I'd recommend automating them or batching large quantities."
 			]
@@ -1475,7 +1475,7 @@
 			rewards: [{
 				id: "71124315137C5490"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1483,7 +1483,7 @@
 			y: 5.5d
 			shape: "square"
 			description: [
-				"You will soon be needing to make Heatproof Machine Casings, which require Invar. Invar is made in a Mixer by combining 2 Iron Dusts with 1 Nickel Dust. "
+				"You will soon be needing to make &aHeatproof Machine Casings&f, which require Invar. Invar is made in a Mixer by combining 2 Iron Dusts with 1 Nickel Dust. "
 				""
 				"I wouldn't put off making this until later, as you will need it for the Electric Blast Furnace very soon!"
 			]
@@ -1497,7 +1497,7 @@
 			rewards: [{
 				id: "0BADBCEC080BD9E8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1508,17 +1508,17 @@
 			shape: "rsquare"
 			subtitle: "Goodbye fuel"
 			description: [
-				"The Large Steam Boiler is an upgraded version of the smaller Bronze and Steel Boilers. It uses fuels 8 times faster than the Furnace, but it produces 256 mb/t of Steam when fully heated."
+				"The &aLarge Steam Boiler&f is an upgraded version of the smaller Bronze and &eSteel&f Boilers. It uses fuels 8 times faster than the Furnace, but it produces 256 mb/t of &7steam&f when fully heated."
 				""
-				"Unlike its single block counterpart, in the Large Steam Boiler, 80% of any unconsumed heat will be lost. This means the ratio of energy produced by fuel consumed will be drastically decreased when the output decreases below maximum. This will happen when the Boiler is not used continuously at maximum output. It would be a good idea to put the Steam produced into a buffer, such as a Large Tank multiblock structure."
+				"Unlike its single block counterpart, in the Large Steam Boiler, 80% of any unconsumed heat will be lost. This means the ratio of energy produced by fuel consumed will be drastically decreased when the output decreases below maximum. This will happen when the Boiler is not used continuously at maximum output. It would be a good idea to put the &7steam&f produced into a buffer, such as a Large Tank multiblock structure."
 				""
-				"The Large Steam Boiler is comprised of one layer of Heatproof Machine Casings and three layers of Bronze Plated Bricks."
+				"The &aLarge Steam Boiler&f is comprised of one layer of Heatproof Machine Casings and three layers of Bronze Plated Bricks."
 				""
 				"The controller goes on the second layer (i.e. the first layer of Bronze Plated Bricks). The two middle blocks are Bronze Pipe Machine Casings."
 				""
 				"Hatches must be placed on the bottom layer."
 				""
-				"You can check the Ponder scene for this block by holding 'W' on the Large Steam Boiler block in your inventory, or hold a wrench to see a diagram of where the blocks need to go."
+				"You can check the Ponder scene for this block by holding 'W' on the &aLarge Steam Boiler&f block in your inventory, or hold a wrench to see a diagram of where the blocks need to go."
 			]
 			dependencies: ["72090D36C27DC4AF"]
 			size: 1.5d
@@ -1587,7 +1587,7 @@
 			rewards: [{
 				id: "263E205D18C20C11"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1595,7 +1595,7 @@
 			x: 4.0d
 			y: 5.5d
 			shape: "square"
-			description: ["Battery Alloy is going to be required as you move forward towards your first Steam Turbine. If you have found some Antimony, you can go ahead and mix it together with some Lead Dust to make Battery Alloy Dust."]
+			description: ["&dBattery Alloy&f is going to be required as you move forward towards your first &7steam&f Turbine. If you have found some Antimony, you can go ahead and mix it together with some Lead Dust to make Battery Alloy Dust."]
 			dependencies: ["693368CF3E13AB7A"]
 			id: "3820A443B373ADA0"
 			tasks: [{
@@ -1614,7 +1614,7 @@
 				{
 					id: "1A887783966FC0C8"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1626,7 +1626,7 @@
 			description: [
 				"With all the components you have available now, you can create a Basic Machine Hull. This is the basis for most electrical machines, so be prepared to make a lot of these."
 				""
-				"This marks the end of Chapter 2. Congratulations! Get ready, as LV brings a lot of new things to work on!"
+				"This marks the end of &eChapter 2&f. &lCongratulations&r! Get ready, as LV brings a lot of new opportunities and challenges!"
 			]
 			dependencies: [
 				"0390CA76F7045D0F"
@@ -1642,7 +1642,7 @@
 			rewards: [{
 				id: "79968765F8871EA0"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1650,7 +1650,7 @@
 			y: 7.0d
 			shape: "square"
 			description: [
-				"Using the Battery Alloy you (hopefully) made earlier, you can make Redstone Batteries. Each tier of machine hull has their own tier of battery used to craft them, so expect to be making these often."
+				"Using the &dBattery Alloy&f you (hopefully) made earlier, you can make &aRedstone Batteries&f. Each tier of machine hull has their own tier of battery used to craft them, so expect to be making these often."
 				""
 				"These batteries on their own do not hold a charge, if you'd like a more traditional modded battery, you can follow the next quest to make a Red Cell Battery from Tech Reborn."
 			]
@@ -1664,14 +1664,14 @@
 			rewards: [{
 				id: "1EFB515E922B6801"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 15.0d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["The Steel Tank is an upgrade to the Bronze Tank from earlier. It now can store up to 8000 mB of any fluid and continues to retain it's inventory when broken."]
+			description: ["The &eSteel Tank&f is an upgrade to the &6Bronze Tank&f from earlier. It now can store up to 8000 mB of any fluid and continues to retain it's inventory when broken."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "0A8E881B45C7FCFC"
 			tasks: [{
@@ -1682,14 +1682,14 @@
 			rewards: [{
 				id: "7992BF5167F21AC5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 15.0d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["An upgrade to the Bronze Barrel. This barrel can hold up to 128 stacks of the same item. Probably really good for all the cobblestone you've been amassing."]
+			description: ["An upgrade to the &6Bronze Barrel&f. This barrel can hold up to 128 stacks of the same item. Probably really good for all the cobblestone you've been amassing."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "39D48C79329C6E09"
 			tasks: [{
@@ -1700,7 +1700,7 @@
 			rewards: [{
 				id: "14437200D2A77E02"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1708,11 +1708,11 @@
 			y: 6.5d
 			shape: "rsquare"
 			description: [
-				"The Battery Box from Tech Reborn will allow you to store any excess power you will be generating. The Battery Box has a 40k E buffer and two slots to charge your items."
+				"The &aBattery Box&f from &eTech Reborn&f will allow you to store any excess power you will be generating. The Battery Box has a 40k E buffer and two slots to charge your items."
 				""
 				"While 40k may seem impressive, you will soon be able to make LV Storage Units, which can store 192k EU. They're much better for storage, but don't have the ability to recharge items."
 				""
-				"Tech Reborn's energy system is just called Energy (E). It's a 1:1 conversion between Modern Industrializations EU and Tech Reborn E, so it makes it really easy to understand."
+				"&eTech Reborn&f's energy system is just called Energy (E). It's a 1:1 conversion between &eModern Industrializations&f EU and Tech Reborn E, so it makes it really easy to understand."
 			]
 			dependencies: ["0390CA76F7045D0F"]
 			id: "2275EBB47166F9D2"
@@ -1724,14 +1724,14 @@
 			rewards: [{
 				id: "10C368FDA1555FB9"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 17.0d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["Probably the least interesting thing you can make with your new Steel is armor. It's definitely an upgrade from Iron, but I wouldn't recommend making it unless you have a lot of extra Steel or are having trouble with mobs."]
+			description: ["Probably the least interesting thing you can make with your new &eSteel&f is armor. It's definitely an upgrade from Iron, but I wouldn't recommend making it unless you have a lot of extra &eSteel&f or are having trouble with mobs."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "1C7E832A64CD1620"
 			tasks: [
@@ -1783,7 +1783,7 @@
 			rewards: [{
 				id: "35B9DD3EB4540650"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1791,9 +1791,9 @@
 			y: 12.5d
 			shape: "rsquare"
 			description: [
-				"Once you have Steel, you can upgrade any one of your hatches on the Steam Blast Furnace to allow it to process 4 EU/t recipes."
+				"Once you have &eSteel&f, you can upgrade any one of your hatches on the &aSteam Blast Furnace&f to allow it to process 4 EU/t recipes."
 				""
-				"With that you can run Redstone Dust through the Blast Furnace to produce Molten Redstone. At this point you won't really have a reason to generate any, but know that you will need it in the future once you get to AE2."
+				"With that you can run &cRedstone Dust&f through the Blast Furnace to produce Molten Redstone. At this point you won't really have a reason to generate any, but know that you will need it in the future once you get to AE2."
 			]
 			dependencies: ["578C4D10471D6EC9"]
 			id: "4FBE60D1D4995C8D"
@@ -1805,7 +1805,7 @@
 			rewards: [{
 				id: "00F4391EDFF64C76"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1813,7 +1813,7 @@
 			y: 14.0d
 			shape: "rsquare"
 			description: [
-				"Once you have Steel, you can upgrade any one of your hatches on the Steam Blast Furnace to allow it to process 4 EU/t recipes."
+				"Once you have &eSteel&f, you can upgrade any one of your hatches on the &7steam&f Blast Furnace to allow it to process 4 EU/t recipes."
 				""
 				"Soldering Alloy is an important fluid to have on hand moving forward, as it can be used in assemblers to reduce the cost of crafting certain items by hand."
 			]
@@ -1827,14 +1827,14 @@
 			rewards: [{
 				id: "3BBA148D65A211DA"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 14.0d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["The Steel Boiler is an upgrade to your Bronze Boiler. It can produce up to 16 EU/t worth of Steam, double that of the Bronze."]
+			description: ["The &eSteel Boiler&f is an upgrade to your &6Bronze Boiler&f. It can produce up to 16 EU/t worth of &7Steam&f, double that of the Bronze."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "4DD579C699181982"
 			tasks: [{
@@ -1845,7 +1845,7 @@
 			rewards: [{
 				id: "2AE7E9C4EEE3F336"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1854,7 +1854,7 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"Now that you have a Forge Hammer, you can make Iron Rods required for making pistons, which allow you to make Elevators."
+				"Now that you have a &aForge Hammer&f, you can make Iron Rods required for making pistons, which allow you to make Elevators."
 				""
 				"These are great tools to help you traverse your base vertically, especially if you're doing the boring strat of building entirely underground."
 				""
@@ -1879,7 +1879,7 @@
 			rewards: [{
 				id: "5C24FC870A7448D1"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1905,7 +1905,7 @@
 			rewards: [{
 				id: "62C3D812C9ED4815"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1940,7 +1940,7 @@
 				{
 					id: "72CD3822F4A7BAF9"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -1964,7 +1964,7 @@
 			rewards: [{
 				id: "562DDA60269E5ECB"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -1972,9 +1972,9 @@
 			y: 11.0d
 			shape: "rsquare"
 			description: [
-				"Similar to the other machine upgrades you can make with steel, the Steel Pump works twice as fast as the Bronze variant. "
+				"Similar to the other machine upgrades you can make with steel, the &eSteel&f Pump works twice as fast as the Bronze variant. "
 				""
-				"That means a fully encircled Steel Pump will pump 2 buckets of water every 5 seconds. You will probably need this as your Steam requirements increase as you progress."
+				"That means a fully encircled &eSteel&f Pump will pump 2 buckets of &9water&f every 5 seconds. You will probably need this as your &7steam&f requirements increase as you progress."
 			]
 			dependencies: ["45CE5F461A159F66"]
 			id: "4DB42F0D980DA49F"
@@ -1986,7 +1986,7 @@
 			rewards: [{
 				id: "4D14F2EA55C04C1B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2010,11 +2010,11 @@
 			rewards: [{
 				id: "65DF58FDD3D74A83"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			x: -0.5d
+			x: -1.0d
 			y: -3.0d
 			shape: "rsquare"
 			subtitle: "Time is money"
@@ -2035,12 +2035,12 @@
 			rewards: [{
 				id: "0148975071C9E97C"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			title: "Take to the Skies"
-			x: 0.5d
+			x: 0.0d
 			y: -3.0d
 			shape: "rsquare"
 			description: ["A Glider is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally."]
@@ -2060,7 +2060,7 @@
 			rewards: [{
 				id: "270E680742DC3B4B"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2082,7 +2082,7 @@
 			rewards: [{
 				id: "4F9924F9FCE4CB7C"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2106,7 +2106,7 @@
 			rewards: [{
 				id: "437E528973596539"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2115,7 +2115,7 @@
 			y: 7.5d
 			shape: "rsquare"
 			description: [
-				"You might have noticed the tooltip for Overclocking on your Steam Machines, but that only used Gunpowder. This won't work once you unlock Electrical Machines though, to overclock Electrical Machines, you can use Lubricant."
+				"You might have noticed the tooltip for Overclocking on your &7steam&f Machines, but that only used Gunpowder. This won't work once you unlock Electrical Machines though, to overclock Electrical Machines, you can use Lubricant."
 				""
 				"To Overclock a machine, right-click an Electrical Machine with a lubricant container, such as a lubricant bucket, to overclock it manually. Each 25 mb of lubricant will add 1 (overclocking) efficiency tick to the machine."
 			]
@@ -2129,7 +2129,7 @@
 			rewards: [{
 				id: "1DD30A36EE536D4F"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2147,14 +2147,14 @@
 			rewards: [{
 				id: "23A33D47D0F0C237"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -3.0d
 			y: 3.0d
 			shape: "rsquare"
-			description: ["The Gold Chest stores 66 stacks of items. This is the highest tier you can make until you can process Diamond Plates."]
+			description: ["The &eGold Chest&f stores 66 stacks of items. This is the highest tier you can make until you can process Diamond Plates."]
 			dependencies: ["6B3BEC96CBAB7760"]
 			id: "37A8157AB01079F0"
 			tasks: [{
@@ -2165,14 +2165,14 @@
 			rewards: [{
 				id: "08D76671E0198D8A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -3.0d
 			y: 1.5d
 			shape: "rsquare"
-			description: ["The Iron Chest can store 54 stacks of items."]
+			description: ["The &7Iron Chest&f can store 54 stacks of items."]
 			dependencies: ["181F0CD6428732B2"]
 			id: "6B3BEC96CBAB7760"
 			tasks: [{
@@ -2183,14 +2183,14 @@
 			rewards: [{
 				id: "1457DD99C5ABBE65"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: -3.0d
 			y: 0.0d
 			shape: "rsquare"
-			description: ["With Copper Plates, you can upgrade your normal chests to hold more items. This one can store up to 36 stacks of items."]
+			description: ["With &cCopper Plates&f, you can upgrade your normal chests to hold more items. This one can store up to 36 stacks of items."]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "181F0CD6428732B2"
 			tasks: [{
@@ -2201,7 +2201,7 @@
 			rewards: [{
 				id: "423B461A68650351"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2227,7 +2227,7 @@
 			rewards: [{
 				id: "08B3219BAAA1D087"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2235,7 +2235,7 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"The Iron Dolly allows you to shift-right click pickup your chests and move them. Much better than breaking them and having their contents spill everywhere."
+				"The &7Iron Dolly&f allows you to shift-right click pickup your chests and move them. Much better than breaking them and having their contents spill everywhere."
 				""
 				"The iron version has durability, but the diamond upgrade doesn't."
 			]
@@ -2255,7 +2255,7 @@
 			rewards: [{
 				id: "23B598EEEF0555A3"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2264,7 +2264,7 @@
 			y: -1.5d
 			shape: "rsquare"
 			description: [
-				"The Iron Chest mod also includes a lock and key. You can apply a Lock to a chest by shift-right clicking it. You can then link a Key to that lock by shift-right clicking."
+				"The &eIron Chest&f mod also includes a lock and key. You can apply a Lock to a chest by shift-right clicking it. You can then link a Key to that lock by shift-right clicking."
 				""
 				"Honestly it's a big risk to lock your chest, you'd be better off just chunk protecting them."
 			]
@@ -2285,13 +2285,18 @@
 			rewards: [{
 				id: "504AF2E895DD015A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 2.5d
 			y: 4.0d
 			shape: "rsquare"
+			description: [
+				"&aEnder Pearl Dust&f is produced by sending &bEnder Pearls&f through a &6Macerator&f."
+				""
+				"&aEnder Pearl Dust&f is used in a variety of recipes, but for now it's useful in making &dWarp Dust&f."
+			]
 			dependencies: ["73AF6917A7A85244"]
 			id: "6F88FC11E59E8E80"
 			tasks: [{
@@ -2302,19 +2307,25 @@
 			rewards: [{
 				id: "6E6DD23551A6497D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 0.5d
 			y: 4.0d
 			shape: "rsquare"
+			description: ["&dWarp Dust&f is an important crafting component in &dWarp Scrolls&f and other &eWaystone&f related items."]
 			dependencies: ["6F88FC11E59E8E80"]
 			id: "5B1A75C2F76C6D8A"
 			tasks: [{
 				id: "630A87404EF3617E"
 				type: "item"
 				item: "waystones:warp_dust"
+			}]
+			rewards: [{
+				id: "7D1C38DEC5C71725"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -2324,13 +2335,13 @@
 			shape: "rsquare"
 			subtitle: "Don't sue me Bethesda"
 			description: [
-				"Before you fully unlock the Warp Stone, you can use Warp Scrolls as temporary teleportation devices."
+				"Before you fully unlock the &dWarp Stone&f, you can use Warp Scrolls as temporary teleportation devices."
 				""
-				"The Bound Scroll is used on existing Waystones to bind itself to that location. Using the scroll will teleport the user back to that Waystone, consuming the Scroll in the process."
+				"The &dBound Scroll&f is used on existing &eWaystones&fto bind itself to that location. Using the scroll will teleport the user back to that Waystone, consuming the Scroll in the process."
 				""
-				"The Return Scroll will teleport the user back to where they just teleported from. Useful in conjunction with the Bound Scroll. Consumed on use."
+				"The &dReturn Scroll&f will teleport the user back to where they just teleported from. Useful in conjunction with the &dBound Scroll&f. Consumed on use."
 				""
-				"Warp Scrolls act as temporary Warp Stones, allowing you to select any Waystone you have previously visited, but taking a use off the Scroll each time it's used. "
+				"&dWarp Scrolls&f act as temporary &dWarp Stones&f, allowing you to select any &eWaystone&f you have previously visited, but taking a use off the Scroll each time it's used. "
 			]
 			dependencies: ["5B1A75C2F76C6D8A"]
 			id: "0730D6CF32E895DB"
@@ -2354,7 +2365,7 @@
 			rewards: [{
 				id: "08B6B041037A31FA"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2362,9 +2373,9 @@
 			y: 5.5d
 			shape: "rsquare"
 			description: [
-				"Warp Plates aren't very useful until you have two of them. When you place the Warp Plate, it will code an Attuned Shard to it's location. If you place another Warp Plate and place the Attuned Shard from the previous, that new Warp Plate will teleport you to the previous location."
+				"&dWarp Plates&f aren't very useful until you have two of them. When you place the &dWarp Plate&f, it will code an &aAttuned Shard&f to it's location. If you place another Warp Plate and place the &aAttuned Shard&f from the previous, that new &dWarp Plate&f will teleport you to the previous location."
 				""
-				"If you lose your Attuned Shard, or want multiple Warp Plates to reach a single destination, then you can place Warp Dust in the destination Warp Plate to create a new Attuned Shard for wherever you want to create a new Warp Plate."
+				"If you lose your &aAttuned Shard&f, or want multiple &dWarp Plates&f to reach a single destination, then you can place &dWarp Dust&f in the destination &dWarp Plate&f to create a new &aAttuned Shard&f for wherever you want to create a new &dWarp Plate&f."
 			]
 			dependencies: ["5B1A75C2F76C6D8A"]
 			id: "1CC8F1192E2178EB"
@@ -2382,7 +2393,7 @@
 				{
 					id: "317CAEB48D4B2FA4"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -2415,7 +2426,7 @@
 				{
 					id: "0BCC0AD20277085E"
 					type: "xp"
-					xp: 100
+					xp: 10
 				}
 			]
 		}
@@ -2434,7 +2445,7 @@
 			rewards: [{
 				id: "0C52DA58378DE4D5"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2452,7 +2463,7 @@
 			rewards: [{
 				id: "0D22D8E429068FD8"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2470,7 +2481,7 @@
 			rewards: [{
 				id: "55886473982C814C"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2488,7 +2499,7 @@
 			rewards: [{
 				id: "3BF34977DEE43868"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2506,7 +2517,7 @@
 			rewards: [{
 				id: "42A42CCA7FCDCBC6"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2524,7 +2535,7 @@
 			rewards: [{
 				id: "1BD156E0F4A9D5C2"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2542,14 +2553,14 @@
 			rewards: [{
 				id: "510DE94CE1D7DB31"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
 			x: 14.0d
 			y: -1.0d
 			shape: "rsquare"
-			description: ["This module can be used to detect water and lava."]
+			description: ["This module can be used to detect &9water&f and lava."]
 			dependencies: ["408C2940A18F43BC"]
 			id: "54DDB1F3D573A0CE"
 			tasks: [{
@@ -2560,7 +2571,7 @@
 			rewards: [{
 				id: "15C928FFF6CA7936"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2583,17 +2594,31 @@
 			rewards: [{
 				id: "3D9FF7EF5D3B6704"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
-			x: -1.5d
-			y: 6.0d
+			x: 1.0d
+			y: -3.0d
+			shape: "rsquare"
+			description: [
+				"The &eTape Measure&f serves one purpose, to measure distance!"
+				""
+				"&6Right-click&f to mark position one, and again to mark position two."
+				""
+				"&6Shift right-click&f to clear the measurement."
+			]
+			dependencies: ["5EDE88BDA0182BD7"]
 			id: "29D1C9F53F1721BF"
 			tasks: [{
 				id: "6E0FD7B7CFD112EA"
 				type: "item"
 				item: "measurements:tape_measure"
+			}]
+			rewards: [{
+				id: "2E7455C93F17EF00"
+				type: "xp"
+				xp: 10
 			}]
 		}
 		{
@@ -2611,7 +2636,7 @@
 			rewards: [{
 				id: "287AF4AB32A71055"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2637,7 +2662,7 @@
 			rewards: [{
 				id: "2119C2A1CEB012BF"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2655,7 +2680,7 @@
 			rewards: [{
 				id: "5BC7568AED74F100"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2673,7 +2698,7 @@
 			rewards: [{
 				id: "546D5B8877CF188A"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2691,7 +2716,7 @@
 			rewards: [{
 				id: "2423586914D46FE1"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 		{
@@ -2709,7 +2734,7 @@
 			rewards: [{
 				id: "63A766DB373BD75D"
 				type: "xp"
-				xp: 100
+				xp: 10
 			}]
 		}
 	]
