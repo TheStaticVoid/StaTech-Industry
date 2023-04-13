@@ -293,7 +293,7 @@ MIMaterialEvents.addMaterials(e => {
             builder.addParts('dust', 'tiny_dust', 'rod', 'gear', 'ring', 'blade', 'bolt', 'large_plate', 'curved_plate')
             .machineCasing(8.0)
             .pipeCasing(8.0)
-            .defaultRecipes();
+            .defaultRecipes()
         });
     
     e.createMaterial('Tungstensteel', 'tungstensteel', 0x677680,
@@ -301,7 +301,7 @@ MIMaterialEvents.addMaterials(e => {
             builder.addParts('rod', 'gear', 'ring', 'coil', 'blade', 'bolt', 'large_plate', 'curved_plate')
             .barrel("Tungstensteel Barrel", "tungstensteel_barrel", 16384)
             .tank("Tungstensteel Tank", "tungstensteel_tank", 256)
-            .defaultRecipes();
+            .defaultRecipes()
         });
     
     e.createMaterial('Calorite', 'calorite', 0xb63044,
@@ -309,6 +309,6 @@ MIMaterialEvents.addMaterials(e => {
             builder.addParts('rod', 'gear', 'ring', 'blade', 'bolt', 'large_plate', 'curved_plate')
             .machineCasing(12.0)
             .pipeCasing(12.0)
-            .defaultRecipes();
+            .defaultRecipes()
         });
 });

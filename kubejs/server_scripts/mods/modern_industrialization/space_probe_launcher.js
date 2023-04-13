@@ -19,22 +19,8 @@ ServerEvents.recipes(e => {
     //     e.custom(newRecipe);
     // }
 
-    // // -- DESH DRILL -- //
-    // spl(
-    //     128,
-    //     12000,
-    //     [
-    //         { amount: 1, item: kjs('desh_drill') }
-    //     ],
-    //     [
-    //         { amount: 48, item: astra('deepslate_desh_ore') },
-    //         { amount: 48, item: astra('deepslate_ostrum_ore') },
-    //         { amount: 48, item: astra('deepslate_calorite_ore')}
-    //     ]
-    // );
-
     e.recipes.modern_industrialization.space_probe_launcher(128, 12000)
-        .itemIn(kjs('desh_drill'))
+        .itemIn(kjs('space_probe'))
         .itemOut('48x ' + astra('deepslate_desh_ore'))
         .itemOut('48x ' + astra('deepslate_ostrum_ore'))
         .itemOut('48x ' + astra('deepslate_calorite_ore'))
