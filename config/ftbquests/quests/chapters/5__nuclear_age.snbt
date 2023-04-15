@@ -14,9 +14,9 @@
 			y: 0.0d
 			shape: "square"
 			description: [
-				"Welcome to Chapter 5"
+				"Welcome to &eChapter 5&r"
 				""
-				"It's time to up the tech-level with these new machine hulls. Nuclear Reactors and refining your processing chains will be needed to advanced through this chapter."
+				"It's time to up the tech-level with these new machine hulls. &aNuclear Reactors&r and refining your processing chains will be needed to advanced through this chapter."
 			]
 			dependencies: ["4FDC0B405C330E4F"]
 			id: "2F0042673C0E3910"
@@ -38,9 +38,9 @@
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"A Large Diesel Generator is able to burn fuel to generate up to 16384 EU/t. Check REI to view how much EU per mB each fuel can produce."
+				"A &bLarge Diesel Generator&r is able to burn fuel to generate up to 16384 EU/t. Check &dREI&r to view how much EU per mB each fuel can produce."
 				""
-				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Large Diesel Generator block in your inventory or by holding your wrench out with the Large Diesel Generator placed."
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the &aLarge Diesel Generator&r block in your inventory or by holding your wrench out with the &bLarge Diesel Generator&r placed."
 			]
 			dependencies: ["2F0042673C0E3910"]
 			size: 1.5d
@@ -98,7 +98,7 @@
 			x: 0.5d
 			y: -2.0d
 			shape: "rsquare"
-			description: ["The EV tier storage unit. It can store a little more than 45 million EU. "]
+			description: ["The &aEV Tier Storage Unit&r. It can store a little more than 45 million EU. "]
 			dependencies: ["2F0042673C0E3910"]
 			id: "64D20685E4A57EED"
 			tasks: [{
@@ -116,7 +116,7 @@
 			x: -0.5d
 			y: -2.0d
 			shape: "rsquare"
-			description: ["With the Highly Advanced Machine Hulls you now have access to Ultimate Solar Panels. This will generate 192 EU/t during the day, and 16 EU/t at night. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
+			description: ["With the &bHighly Advanced Machine Hulls&r you now have access to &aUltimate Solar Panels&r. This will generate 192 EU/t during the day, and 16 EU/t at night. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
 			dependencies: ["2F0042673C0E3910"]
 			id: "786ACF473177AA23"
 			tasks: [{
@@ -136,11 +136,11 @@
 			y: 0.0d
 			shape: "square"
 			description: [
-				"Before you can make a Nuclear Reactor, you will need Nuclear Alloy Plates. These are made with Blastproof, Beryllium, and Cadmium Ingots. "
+				"Before you can make a &eNuclear Reactor&r, you will need &bNuclear Alloy Plates&r. These are made with Blastproof, Beryllium, and Cadmium Ingots. "
 				""
-				"Beryllium can be obtained from centrifuging Emeralds and Cadmium can be obtained by centrifuging Mozanite."
+				"Beryllium can be obtained from centrifuging Emeralds and Cadmium can be obtained by centrifuging &dMozanite&r."
 				""
-				"The Blastproof Ingots are going to dip heavily into your Ostrum supply. Consider going down the other questline first and building the Space Probe Launcher to obtain more extraterrestrial materials."
+				"The &cBlastproof Ingots&r are going to dip heavily into your &5Ostrum supply&r. Consider going down the other questline first and building the &eSpace Probe Launcher&r to obtain more extraterrestrial materials."
 			]
 			dependencies: ["2F0042673C0E3910"]
 			id: "56A30502A268BB60"
@@ -159,7 +159,7 @@
 			x: 4.0d
 			y: 0.0d
 			shape: "square"
-			description: ["Sending Nuclear Mixed Plates through an Implosion Compressor will create Nuclear Alloy Plates. You're going to need a lot of these for your reactors."]
+			description: ["Sending &bNuclear Mixed Plates&r through an &eImplosion Compressor&r will create &aNuclear Alloy Plates&r. You're going to need a lot of these for your reactors."]
 			dependencies: [
 				"56A30502A268BB60"
 				"0DF6FF0A1E872DC8"
@@ -184,7 +184,7 @@
 			shape: "square"
 			subtitle: "With great power comes great responsibility"
 			description: [
-				"The Nuclear Reactor is a large multiblock whose purpose is to generate massive amounts of energy by consuming nuclear fuel. It can produce 100s of times more EU/t than diesel. It comes in several sizes from small to large."
+				"The &bNuclear Reactor&r is a large multiblock whose purpose is to generate massive amounts of energy by consuming nuclear fuel. It can produce 100s of times more EU/t than diesel. It comes in several sizes from small to large."
 				""
 				"How it works under the hood can be a bit overwhelming, but you don't need to fully understand the details to be able to design a powerful reactor."
 				""
@@ -192,7 +192,7 @@
 				""
 				"The uppart part of the structure accepts Nuclear Item or Fluid Hatches. Those are the inputs and outputs of the reactor. Each hatch has one input (either item or fluid) and two outputs. The input slots will form a grid, displayed in the reactor GUI (accessible by right-clicking on the controller)."
 				""
-				"NOTE: The Nuclear Reactor CANNOT explode, emit radiation, or otherwise damage the map. The only thing that it can damage is the items you put in it if the temperature gets too high (more on this later)."
+				"&cNOTE&r: &bThe Nuclear Reactor&r CANNOT explode, emit radiation, or otherwise damage the map. The only thing that it can damage is the items you put in it if the &ctemperature&r gets too high (more on this later)."
 			]
 			dependencies: ["3308E0ADE29A5A9E"]
 			size: 1.5d
@@ -242,17 +242,17 @@
 			y: -1.5d
 			subtitle: "Nerd Emoji"
 			description: [
-				"Each hatch has a temperature and stores heat which can be dissipated in several ways. The heat will naturally move to an adjacent hatch or to the outside if the hatch is on the edge (the heat is then lost). The speed of this process is equal to the hatches content's heat transfer coefficient (shown in REI) times the temperature difference. The heat can also be extracted in a fluid hatch by producing steam. A temperature above an item's maxmimum temperature will destroy it."
+				"Each hatch has a &ctemperature&r and stores heat which can be dissipated in several ways. The heat will naturally move to an adjacent hatch or to the outside if the hatch is on the edge (the heat is then lost). The speed of this process is equal to the hatches content's heat transfer coefficient (shown in REI) times the &ctemperature&r difference. The heat can also be extracted in a fluid hatch by producing &7steam&r. A &ctemperature&r above an item's maxmimum &ctemperature&r will destroy it."
 				""
-				"The core Nuclear Reactor elements are neutrons. Those are produced by the nuclear fuel. There are two types of neutrons, fast and thermal: the fast carry energy while the thermal do not. Neutrons move in a straight line until they encounter an element or exit the reactor (for fast neutrons, their energy is then lost). The flow of neutrons is shown in the reactor GUI."
+				"The core &eNuclear Reactor&r elements are &aneutrons&r. Those are produced by the nuclear fuel. There are two types of &aneutrons&r, fast and thermal: the fast carry energy while the thermal do not. Neutrons move in a straight line until they encounter an element or exit the reactor (for fast &aneutrons&r, their energy is then lost). The flow of &aneutrons&r is shown in the reactor GUI."
 				""
 				"When a neutron encounters a non-empty hatch, two things can happen: the neutron is absorbed or scattered. A scattered neutron will randomly change direction. If the scattered neutron is fast, it has a chance of slowing down, becoming a thermal one. This transforms the energy from the neutron to the hatch in the form of heat. An absorbed neutron stops its course and also transfers its energy if it was a fast neutron."
 				""
-				"The number of absorbed neutrons in a single hatch can be seen in the GUI. The probability for each process is shown in REI. Those will strongly depend on the hatch's content and the neutron type (fast or thermal). Nuclear fuels absorb thermal neutrons far better."
+				"The number of absorbed &aneutrons&r in a single hatch can be seen in the GUI. The probability for each process is shown in REI. Those will strongly depend on the hatch's content and the neutron type (fast or thermal). Nuclear fuels absorb thermal &aneutrons&r far better."
 				""
-				"When a neutron, either fast or thermal, is absorbed in nuclear fuel, more neutrons are generated. Those are always fast neutrons and have random direction. Their generation is accompanied by the direct release of energy in the form of additional heat in the hatch."
+				"When a neutron, either fast or thermal, is absorbed in nuclear fuel, more &aneutrons&r are generated. Those are always fast &aneutrons&r and have random direction. Their generation is accompanied by the direct release of energy in the form of additional heat in the hatch."
 				""
-				"Above a certain threshold, the number of generated neutrons will decrease with the temperature until reaching zero. This process wastes some energy, but guarantees the stability of the reactor. The number of generated neutrons (and effective efficiency), the direct energy and the temperature thresheold are in REI."
+				"Above a certain threshold, the number of generated &aneutrons&r will decrease with the &ctemperature&r until reaching zero. This process wastes some energy, but guarantees the stability of the reactor. The number of generated &aneutrons&r (and effective efficiency), the direct energy and the &ctemperature&r thresheold are in REI."
 				""
 				"Each nuclear component has maximum number of absorptions. When reached, the item is eithewr destroyed or transformed into a depleted version. This is particularly useful for nuclear fuel because some part of the U238 is transformed into Plutonium in the depleted version, meaning some of it can be transformed back into fuel."
 				""
@@ -276,7 +276,7 @@
 			y: 7.0d
 			shape: "square"
 			subtitle: "The Final Circuit"
-			description: ["Getting to the Quantum Circuits in their own is an accomplishment. These are used for all the end game MI machines and materials."]
+			description: ["Getting to the &eQuantum Circuits&r in their own is an accomplishment. These are used for all the end game MI machines and materials."]
 			dependencies: ["649FE8A688C74216"]
 			size: 2.0d
 			id: "23D9328B5F627E65"
@@ -295,7 +295,7 @@
 			x: -1.0d
 			y: 2.0d
 			shape: "square"
-			description: ["Combining Tungsten and Steel in a Kanthal EBF will slowly, but surely, produce a Hot Tungstensteel Ingot. This will need to be cooled in a Vacuum Freezer before it can be used."]
+			description: ["Combining &dTungsten&r and &aSteel&r in a &bKanthal&r &eEBF&r will slowly, but surely, produce a &eHot Tungstensteel Ingot&r. This will need to be cooled in a &3Vacuum Freezer&r before it can be used."]
 			dependencies: ["2F0042673C0E3910"]
 			id: "518D1E231A932ECB"
 			tasks: [{
@@ -313,7 +313,7 @@
 			x: 5.0d
 			y: 2.0d
 			shape: "square"
-			description: ["Tritium can be produced in a multitude of ways. You can centrifuge Hydrogen for a very small output or you can use Heavy Water in a Nuclear Reactor which will be converted into Tritium over time."]
+			description: ["&dTritium&r can be produced in a multitude of ways. You can centrifuge &bHydrogen&r for a very small output or you can use Heavy Water in a &eNuclear Reactor&r which will be converted into &dTritium&r over time."]
 			dependencies: ["0C73D9DE1468EBB1"]
 			id: "43D2E858079C12E0"
 			tasks: [{
@@ -331,7 +331,7 @@
 			x: 1.0d
 			y: 2.0d
 			shape: "square"
-			description: ["Combining 3x Neodymium, 3x Annealed Copper, 3x Yttrium, and 1x Iridium Dust you can mix together Superconductor Dust. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a Kanthal EBF and then cool it in a vacuum freezer."]
+			description: ["Combining 3x Neodymium, 3x Annealed Copper, 3x Yttrium, and 1x Iridium Dust you can mix together &bSuperconductor Dust&r. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a Kanthal EBF and then cool it in a vacuum freezer."]
 			dependencies: ["2F0042673C0E3910"]
 			id: "569821B175311340"
 			tasks: [{
@@ -381,7 +381,7 @@
 			x: -1.0d
 			y: 4.0d
 			shape: "square"
-			description: ["Tungstensteel is an improved version of Tungsten that is extremely durable and versatile. It's a key component in the Space Probe Launcher"]
+			description: ["&bTungstensteel&r is an improved version of Tungsten that is extremely durable and versatile. It's a key component in the &eSpace Probe Launcher&r and &eQuantum Circuit components&r"]
 			dependencies: ["518D1E231A932ECB"]
 			id: "5856A6281F140AEF"
 			tasks: [{
@@ -401,11 +401,11 @@
 			y: 6.0d
 			shape: "square"
 			description: [
-				"Running out of Ostrum or other space materials? Fear not there's a solution! The Space Probe Launcher launches small probes towards celestial bodies that fly back to the machine and deliver what they mine."
+				"Running out of &dOstrum&r or other space materials? Fear not there's a solution! &eThe Space Probe Launcher&r launches small probes towards celestial bodies that fly back to the machine and deliver what they mine."
 				""
-				"Building the multiblock requires Calorite Machine Casings, if you haven't been to Mercury or Venus yet you will need to travel there and get the needed Calorite."
+				"Building the multiblock requires &cCalorite Machine Casings&r, if you haven't been to Mercury or Venus yet you will need to travel there and get the needed Calorite."
 				""
-				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Space Probe Launcher block in your inventory or by holding your wrench out with the Space Probe Launcher placed."
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the &eSpace Probe Launcher&r block in your inventory or by holding your wrench out with the &eSpace Probe Launcher&r placed."
 			]
 			dependencies: ["5856A6281F140AEF"]
 			size: 1.5d
@@ -483,7 +483,7 @@
 			y: 4.0d
 			shape: "square"
 			subtitle: "Hazmat suit not required?"
-			description: ["There's a variety of Nuclear Fuels available to you. The most basic is just regular Uranium Rods, but you can make Lightly-Enriched (LE) or Highly-Enriched (HE) variants. Check JEI for more details on each fuel and find what works best for you."]
+			description: ["There's a variety of &dNuclear Fuels&r available to you. The most basic is just regular &aUranium Rods&r, but you can make Lightly-Enriched (LE) or Highly-Enriched (HE) variants. Check &dJEI&r for more details on each fuel and find what works best for you."]
 			dependencies: [
 				"131D19CE92E22D58"
 				"4E4FF04917B2E624"
@@ -513,9 +513,9 @@
 			y: 4.0d
 			shape: "square"
 			description: [
-				"Once the Nuclear Fuel is used up it turns into a Depleted variant. These depleted variants are still very useful, so don't throw them out!"
+				"Once the &dNuclear Fuel&r is used up it turns into a &bDepleted&r variant. These depleted variants are still very useful, so don't throw them out!"
 				""
-				"You can centrifuge them to get various important resources as well as some of the original resources used to make it. The main output you're looking for is Plutonium, which is key as you move towards Quantum Circuits."
+				"You can centrifuge them to get various important resources as well as some of the original resources used to make it. The main output you're looking for is &5Plutonium&r, which is key as you move towards &eQuantum Circuits&r."
 			]
 			dependencies: ["4A580712AAD72CFF"]
 			id: "494104440623C825"
@@ -543,7 +543,7 @@
 			y: 4.0d
 			shape: "square"
 			subtitle: "Bringing it all together"
-			description: ["It's time to start putting the puzzle together. Plutonium from your depleted fuel rods, various chemicals, and other materials you have processed this far."]
+			description: ["It's time to start putting the puzzle together. &5Plutonium&r from your depleted fuel rods, various chemicals, and other materials you have processed this far."]
 			dependencies: [
 				"43D2E858079C12E0"
 				"569821B175311340"
@@ -582,9 +582,9 @@
 			shape: "square"
 			subtitle: "Surprisingly Ineffective"
 			description: [
-				"With your Plutonium byproducts, you can now create Nukes. These unfortunately do not explode like you would expect and are mainly used for crafting Singularities."
+				"With your &5Plutonium&r byproducts, you can now create &lNukes&r. These unfortunately do not explode like you would expect and are mainly used for crafting &aSingularities&r."
 				""
-				"If you want a version to explode, I've added a 1:1 conversion to the TechReborn Nuke, which does explode!"
+				"If you want a version to explode, I've added a 1:1 conversion to the &eTechReborn&r &bNuke&r, which does explode when powered by &credstone&r!"
 			]
 			dependencies: ["494104440623C825"]
 			id: "50D18ACF6401C05D"
@@ -603,7 +603,7 @@
 			x: -3.0d
 			y: 3.5d
 			shape: "rsquare"
-			description: ["The Tungstensteel Tank can store 256 buckets worth of any liquid inside of it! That means 16,384 buckets of a fluid for a full stack! Absolutely insane."]
+			description: ["The &bTungstensteel Tank&r can store 256 buckets worth of any liquid inside of it! That means 16,384 buckets of a fluid for a full stack! Absolutely insane."]
 			dependencies: ["5856A6281F140AEF"]
 			id: "7BB996EF1FB18B1D"
 			tasks: [{
@@ -622,7 +622,7 @@
 			y: 4.5d
 			shape: "rsquare"
 			description: [
-				"The Tungstensteel Barrel can store 16,384 stacks of a single item. A full stack of full barrels is over 1 million stacks. "
+				"The &bTungstensteel Barrel&r can store 16,384 stacks of a single item. A full stack of full barrels is over 1 million stacks. "
 				""
 				"Quite an absurd amount to be sure."
 			]
@@ -643,7 +643,7 @@
 			x: -3.0d
 			y: 6.0d
 			shape: "square"
-			description: ["The Desh Drill (TO CHANGE) returns a good chunk of every space ore. The multiblock must be built in orbit (any planet will work) to use this recipe."]
+			description: ["The &eSpace Probe&r returns a good chunk of every space ore after some travel time. The multiblock must be built in &aorbit&r (any planet will work) to use this recipe."]
 			dependencies: ["0F1DC239BBC3D60F"]
 			id: "3DD9AFAD287F29C2"
 			tasks: [{
@@ -661,7 +661,7 @@
 			x: 5.5d
 			y: 4.0d
 			shape: "square"
-			description: ["Plutonium can be obtained by Centrifuging depleted nuclear fuel rods. You're going to need a lot of this for Quantum Processors, so I recommend setting up multiple breeder reactors (reactors made just to deplete fuel as fast as possible)."]
+			description: ["&5Plutonium&r can be obtained by &eCentrifuging&r depleted nuclear fuel rods. You're going to need a lot of this for &eQuantum Processors&r, so I recommend setting up multiple &cbreeder reactors&r (reactors made just to deplete fuel as fast as possible)."]
 			dependencies: ["494104440623C825"]
 			id: "5A0295C9C976F0E0"
 			tasks: [{
@@ -721,9 +721,9 @@
 			y: 9.5d
 			shape: "square"
 			description: [
-				"The Quantum Machine Hull is the final tier of Machine Hull in MI. It allows you to upgrade your machines to the Quantum tier. It's also used in several lategame recipes."
+				"The &eQuantum Machine Hull&r is the final tier of Machine Hull in MI. It allows you to upgrade your machines to the &eQuantum tier&r. It's also used in several lategame recipes."
 				""
-				"With your first Quantum Machine Hull made, you have completed this chapter. You are now ready to approach the endgame in Chapter 6 - Quantum Age."
+				"With your first &eQuantum Machine Hull&r made, you have completed this chapter. You are now ready to approach the endgame in &eChapter 6 - Quantum Age&r."
 			]
 			dependencies: ["23D9328B5F627E65"]
 			id: "286BD460010AA281"
@@ -742,7 +742,7 @@
 			x: -1.0d
 			y: -4.0d
 			shape: "rsquare"
-			description: ["Running out of power? Well the Dragon Egg Energy Siphon won't save you there, but it can be used to passively generate 4096 EU/t."]
+			description: ["Running out of power? Well the &bDragon Egg Energy Siphon&r won't save you there, but it can be used to passively generate 4096 EU/t."]
 			dependencies: ["268F9C5384CD54EC"]
 			id: "545FBEB4D3A1C987"
 			tasks: [{
@@ -760,7 +760,7 @@
 			x: -1.5d
 			y: -2.0d
 			shape: "rsquare"
-			description: ["The Lapotronic Energy Orb is an upgrade to the Lapotron Crystal. It has a 100M energy storage."]
+			description: ["The &bLapotronic Energy Orb&r is an upgrade to the &aLapotron Crystal&r. It has a 100M energy storage."]
 			dependencies: ["2F0042673C0E3910"]
 			id: "268F9C5384CD54EC"
 			tasks: [{
@@ -778,7 +778,7 @@
 			x: -2.0d
 			y: -4.0d
 			shape: "rsquare"
-			description: ["The Lapotronic Orbpack is the wearable version of the Lapotronic Energy Orb."]
+			description: ["The &bLapotronic Orbpack&r is the wearable version of the &aLapotronic Energy Orb&r."]
 			dependencies: ["268F9C5384CD54EC"]
 			id: "20174051C1847D01"
 			tasks: [{

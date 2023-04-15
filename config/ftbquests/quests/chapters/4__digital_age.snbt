@@ -91,11 +91,11 @@
 			y: 0.0d
 			shape: "square"
 			description: [
-				"Welcome to Chapter 4."
+				"Welcome to &eChapter 4&r."
 				""
-				"Quite the accomplishment to make it this far, but we're not done yet. There's still much to do, the factory must grow."
+				"Quite the accomplishment to make it this far, but we're not done yet. There's still much to do, the &bfactory must grow&r."
 				""
-				"There's a few paths you can start down. If you'd like, you can start building parts for your first rocket and get to the moon, you could look to setup better automations with AE2, or you could continue progressing in Modern Industrializations."
+				"There's a &afew paths&r you can start down. If you'd like, you can start building parts for your &cfirst rocket and get to the moon&r, you could look to setup better automations with &dAE2&r, or you could continue progressing in &eModern Industrializations&r."
 				""
 				"A sane person would pick AE2, but it's ultimately your choice."
 			]
@@ -116,7 +116,7 @@
 			x: 1.0d
 			y: -2.0d
 			shape: "rsquare"
-			description: ["HV Storage Units have an interal buffer of 6.144M EU. A single one of these will make an extremely valuable power buffer for any setup you currently have."]
+			description: ["&bHV Storage Units&r have an interal buffer of 6.144M EU. A single one of these will make an extremely valuable power buffer for any setup you currently have."]
 			dependencies: ["3F4A396DD273A543"]
 			id: "1B0452A4C5B49AA7"
 			tasks: [{
@@ -136,13 +136,13 @@
 			shape: "rsquare"
 			subtitle: "Push it to the limit"
 			description: [
-				"The HV Steam Turbine can produce up to 512 EU/t. It consumes steam in a 1:1 ratio to generate power."
+				"The &bHV &7Steam&r Turbine&r can produce up to 512 EU/t. It consumes steam in a 1:1 ratio to generate power."
 				""
-				"The HV Steam Turbine is the last single-block steam energy generator you will have access to. "
+				"The &bHV &7Steam&r Turbine&r is the last single-block steam energy generator you will have access to. "
 				""
-				"Remember that only HV Cables will connect to the HV Steam Turbine."
+				"Remember that only HV Cables will connect to the &bHV &7Steam&r Turbine&r."
 				""
-				"Note: This Steam Turbine will not accept High Pressure Steam."
+				"Note: This &7Steam&r Turbine will &cnot&r accept &7High Pressure Steam&r."
 			]
 			dependencies: ["3F4A396DD273A543"]
 			id: "5AF44D0A39BA6091"
@@ -162,9 +162,9 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"The Turbo Diesel Generator can produce up to 1024 EU/t. You can REI for a list of fuels and how much EU per mB they produce."
+				"The &bTurbo Diesel Generator&r can produce up to 1024 EU/t. You can &dREI&r for a list of fuels and how much EU per mB they produce."
 				""
-				"At this point you might have a decent backlog of Diesel / Boosted Diesel. It could be a good choice to use if you're struggling on Steam production."
+				"At this point you might have a decent backlog of &6Diesel&r / &eBoosted Diesel&r. It could be a good choice to use if you're struggling on &7Steam&r production."
 			]
 			dependencies: ["3F4A396DD273A543"]
 			id: "2CC2860405BF4D13"
@@ -183,7 +183,7 @@
 			x: 0.5d
 			y: -3.0d
 			shape: "rsquare"
-			description: ["With Turbo Machine Hulls you can now create the next tier of solar. These will passively generate 48 EU/t during the day and 8 EU/t at night (due to magic I suppose)."]
+			description: ["With &bTurbo Machine Hulls&r you can now create the next tier of solar. These will passively generate 48 EU/t during the day and 8 EU/t at night (due to &dmagic&r I suppose)."]
 			dependencies: ["3F4A396DD273A543"]
 			id: "760AEF21E6403F48"
 			tasks: [{
@@ -202,7 +202,7 @@
 			y: 0.0d
 			shape: "square"
 			subtitle: "To the Stars!"
-			description: ["With your new Turbo Machine Hulls and Digital Circuits you now have access to the Fuel Refinery from Ad Astra. The refinery will be required to taking your first rocket to the moon and other celestial bodies."]
+			description: ["With your new &bTurbo Machine Hulls&r and &eDigital Circuits&r you now have access to the &aFuel Refinery&r from &eAd Astra&r. The refinery will be required to taking your first rocket to the moon and other celestial bodies."]
 			dependencies: ["68CE43C175FB0826"]
 			size: 1.5d
 			id: "6EE3455457F0E943"
@@ -225,9 +225,9 @@
 			shape: "square"
 			subtitle: "Advanced Petrochemistry!"
 			description: [
-				"Now that you have Digital Circuits you can create the Distillation Tower. The single-block Distillery only gives you one oil processing output, but the tower gives you ONE PER LAYER."
+				"Now that you have &eDigital Circuits&r you can create the &bDistillation Tower&r. The single-block &aDistillery&r only gives you one oil processing output, but the tower gives you &cONE PER LAYER&r."
 				""
-				"By default the controller has a height value set to one. You will need to update this if you plan to add more layers. You can view the Ponder scene by holding 'W' on the Distillation Tower block in your inventory to view how to build it, or you can hold your wrench out with the controller placed to view where to place the blocks."
+				"By default the controller has a height value set to one. You will need to update this if you plan to add more layers. You can view the Ponder scene by holding 'W' on the &bDistillation Tower&r block in your inventory to view how to build it, or you can hold your wrench out with the controller placed to view where to place the blocks."
 			]
 			dependencies: ["529FBE21C8B21DC1"]
 			size: 1.5d
@@ -288,9 +288,9 @@
 			shape: "square"
 			subtitle: "To the Stars"
 			description: [
-				"The Rocket Part Assembler is a new singleblock machine you can create that will allow you to create rocket parts (shocker, I know)."
+				"The &bRocket Part Assembler&r is a new singleblock machine you can create that will allow you to create rocket parts (shocker, I know)."
 				""
-				"Along with the other important Ad Astra machines you will need to make before your main launch, this one will be the most important, as it's where you make all the parts to your rocket!"
+				"Along with the other important &eAd Astra&r machines you will need to make before your main launch, this one will be the most important, as it's where you make all the parts to your rocket!"
 			]
 			dependencies: ["68CE43C175FB0826"]
 			id: "7839B0187F555DC9"
@@ -310,7 +310,7 @@
 			x: -2.5d
 			y: 0.0d
 			shape: "square"
-			description: ["This quest path will end up taking you to the Moon and Mars"]
+			description: ["This quest path will end up taking you to &bother planets in our solar system&r and even &aGlacio&r, a planet in another system!"]
 			dependencies: ["3F4A396DD273A543"]
 			id: "68CE43C175FB0826"
 			tasks: [{
@@ -324,7 +324,7 @@
 			x: 0.0d
 			y: 2.5d
 			shape: "square"
-			description: ["This route will have you creating your first ME system with Applied Energistics. "]
+			description: ["This route will have you creating your first &eMattery-Energy System&r with &eApplied Energistics&r. "]
 			dependencies: ["3F4A396DD273A543"]
 			id: "5FDDE9153DE118DF"
 			tasks: [{
@@ -343,7 +343,7 @@
 			x: 2.5d
 			y: 0.0d
 			shape: "square"
-			description: ["This route will take you down further progressing in Modern Industrializations. You will eventually hit a road block if you haven't completed Route A, but there may be a few things you will find very essential that you can access right now, such as the Distillation Tower."]
+			description: ["This route will take you down further progressing in &eModern Industrializations&r. You will eventually hit a road block if you haven't completed &eRoute A&r, but there may be a few things you will find very essential that you can access right now, such as the &bDistillation Tower&r."]
 			dependencies: ["3F4A396DD273A543"]
 			id: "529FBE21C8B21DC1"
 			tasks: [{
@@ -357,7 +357,7 @@
 			y: 2.0d
 			shape: "square"
 			subtitle: "Don't tell the Spaceballs"
-			description: ["Before you can even think of starting to make your rocket and space suit, you're going to need Oxygen! The Oxygen Loader will convert your Modern Industrialization Oxygen into Ad Astra Oxygen at a 1:1 ratio so that it can be loaded into tanks and your space suit!"]
+			description: ["Before you can even think of starting to make your rocket and space suit, you're going to need &bOxygen&r! The &aOxygen Loader&r will convert your &eModern Industrialization&r &bOxygen&r into &eAd Astra&r &3Oxygen&r at a 1:1 ratio so that it can be loaded into tanks and your space suit!"]
 			dependencies: ["68CE43C175FB0826"]
 			id: "759BC7BEE3DE5E8A"
 			tasks: [{
@@ -377,7 +377,7 @@
 			shape: "square"
 			subtitle: "An insurance plan"
 			description: [
-				"While you made an Oxygen Tank for the Oxygen Loader, you're going to want some extra to extend how long you can have breathable air on the moon and other planets."
+				"While you made an &bOxygen Tank&r for the &aOxygen Loader&r, you're going to want some extra to extend how long you can have breathable air on the moon and other planets."
 				""
 				"I recommend two, luckily you only need to craft one for this quest! (You'll need to make more for the space suit anyway)"
 			]
@@ -420,11 +420,11 @@
 			shape: "square"
 			subtitle: "Amogus ඞ"
 			description: [
-				"The Space Suit is a required set of armor that will allow you to breathe (temporarily) on planets that do not have rich enough atmospheres to breath in."
+				"The &bSpace Suit&r is a required set of armor that will allow you to breathe (&ctemporarily&r) on planets that do not have rich enough atmospheres to breath in."
 				""
-				"To load Oxygen directly into your suit, place the chest piece in the Oxygen Loader. No other parts of the suit will need to have Oxygen loaded to them. You can refill Oxygen while you're still wearing the suit by right-clicking with Oxygen Tanks while holding them."
+				"To load &bOxygen&r directly into your suit, place the chest piece in the &aOxygen Loader&r. No other parts of the suit will need to have &bOxygen&r loaded to them. You can refill &bOxygen&r while you're still wearing the suit by right-clicking with &dOxygen Tanks&r while holding them."
 				""
-				"Be careful, as this suit is fairly weak, and if it breaks while you're not in an Oyxgen rich-atmosphere you're going to be in big trouble!"
+				"Be careful, as this suit is &cfairly weak&r, and if it breaks while you're not in an &bOyxgen&r rich-atmosphere you're going to be in big trouble!"
 			]
 			dependencies: ["759BC7BEE3DE5E8A"]
 			id: "240A32C6B7DD0DD5"
@@ -489,7 +489,7 @@
 			y: -2.0d
 			shape: "square"
 			subtitle: "Vehicle Assembly... Building?"
-			description: ["The NASA Workbench is the birthplace of your rockets. Check REI for the Tier 1 Rocket recipe and prepare crafting the Steel components needed to create it."]
+			description: ["The &bNASA Workbench&r is the birthplace of your rockets. Check &dREI&r for the Tier 1 Rocket recipe and prepare crafting the Steel components needed to create it."]
 			dependencies: ["7839B0187F555DC9"]
 			id: "565F8D6169BE21A4"
 			tasks: [{
@@ -507,7 +507,7 @@
 			x: -7.0d
 			y: 0.0d
 			shape: "square"
-			description: ["To make Fuel for your rocket, place Boosted Diesel in the Fuel Refinery to convert it in a 2:1 ratio. How is diesel being converted into rocket fuel you might ask? Magic ! But seriously, there will probably be a more realistic process in the future."]
+			description: ["To make &aFuel&r for your rocket, place &6Boosted Diesel&r in the &bFuel Refinery&r to convert it in a 2:1 ratio. How is &6Diesel&r being converted into rocket fuel you might ask? &dMagic&r ! But seriously, there will probably be a more realistic process in the future."]
 			dependencies: ["6EE3455457F0E943"]
 			id: "05EBD7E7DF3DBF8A"
 			tasks: [{
@@ -527,9 +527,9 @@
 			shape: "square"
 			subtitle: "T-10 to Launch"
 			description: [
-				"It's time to put all the preparation to good use. Using a copious amounts of Steel, create the Tier 1 Rocket."
+				"It's time to put all the preparation to good use. Using a copious amounts of Steel, create the &bTier 1 Rocket&r."
 				""
-				"To put fuel in the rocket, shift-right to open its inventory. You can put buckets of fuel into the rocket. You'll need 12000 mB of Fuel to fully fuel the rocket for launch. Unfortunately you'll have to load them with buckets, as MI Tanks don't seem to work, but placing an MI Tank and filling up several buckets and unloading them into the rocket will make quick work of this task."
+				"To put fuel in the rocket, shift-right to open its inventory. You can put buckets of fuel into the rocket. You'll need &a12000 mB of Fuel&r to fully fuel the rocket for launch. Unfortunately you'll have to load them with buckets, as &eMI Tanks don't seem to work&r, but placing an &eMI Tank&r and filling up several buckets and unloading them into the rocket will make quick work of this task."
 				""
 				"Here's a pre-launch checklist just so you're ready:"
 				"- Tools/Weapons"
@@ -539,7 +539,7 @@
 				"- MI Tank with 12000 mB of Fuel (return flight)"
 				"- Inventory space (backpack recommended)"
 				""
-				"Do not press 'Shift' to dismount the rocket, otherwise it'll fly up without you! You'll need to hold 'Space' when descending to avoid blowing up on touchdown!"
+				"&cDo not press 'Shift' to dismount the rocket&r, otherwise it'll fly up without you! &bYou'll need to hold 'Space' when descending to avoid blowing up on touchdown&r!"
 			]
 			dependencies: ["41EE82F6FDB2109C"]
 			size: 2.0d
@@ -566,9 +566,9 @@
 			y: -3.0d
 			shape: "rsquare"
 			description: [
-				"Battery Box too slow for you now? The Charge-O-Mat is the solution for you!"
+				"&aBattery Box&r too slow for you now? The &bCharge-O-Mat&r is the solution for you!"
 				""
-				"The Charge-o-Mat has an absolutely absurd 100M Energy buffer. Plugging this into your network may start draining it entirely, so be careful, but it is needed to charge the Industrial tools and Nanosaber in a timely manner."
+				"The &bCharge-o-Mat&r has an absolutely absurd 100M Energy buffer. Plugging this into your network may &cstart draining it entirely&r, so be careful, but it is needed to charge the &dIndustrial tools and Nanosaber&r in a timely manner."
 			]
 			dependencies: ["3F4A396DD273A543"]
 			id: "1CC138DDB987411E"
@@ -591,7 +591,7 @@
 			description: [
 				"Welcome to the moon!"
 				""
-				"Collect your Tier 1 Rocket by punching the Lander. Once you've gotten everything feel free to explore, but pay attention to your Oxygen reserves. The main goal of coming to the moon is the acquisition of Desh, which can be found underground in caves. You'll need quite a bit to progress, so try to get as much as possible!"
+				"Collect your &bTier 1 Rocket&r by punching the Lander. Once you've gotten everything feel free to explore, but pay attention to your &bOxygen&r reserves. The main goal of coming to the moon is the acquisition of &eDesh&r, which can be found underground in caves. You'll need quite a bit to progress, so try to get as much as possible!"
 			]
 			dependencies: ["66D955E646FC75EF"]
 			size: 1.5d
@@ -614,9 +614,9 @@
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"You can find Ice Shards on the moon as well. They don't have much use to you yet, but will be important for a more efficient rocket fuel later."
+				"You can find &3Ice Shards&r on the moon as well. They don't have much use to you yet, but will be important for a more efficient rocket fuel later."
 				""
-				"Additionally, they can be centrifuged to produce Helium-3, an important gas when you get to the Fusion Reactor."
+				"Additionally, they can be &ecentrifuged&r to produce &eHelium-3&r, an important gas when you get to the &dFusion Reactor&r."
 			]
 			dependencies: ["400774ADB8A19D03"]
 			id: "5B5287B537A656A6"
@@ -635,7 +635,7 @@
 			x: -16.0d
 			y: 2.0d
 			shape: "square"
-			description: ["Desh is the main thing you came to the moon for. You'll need a lot of it for the T2 Rocket and other recipes, so plan to get a bunch!"]
+			description: ["&eDesh&r is the main thing you came to the moon for. You'll need a lot of it for the &bT2 Rocket&r and other recipes, so plan to get a bunch!"]
 			dependencies: ["400774ADB8A19D03"]
 			id: "0D0CC636458E8446"
 			tasks: [{
@@ -653,7 +653,7 @@
 			x: -14.0d
 			y: 2.0d
 			shape: "rsquare"
-			description: ["Forget to pack a snack? The moon's got you. Moon Cheese can be eaten in a pinch to keep you from starving."]
+			description: ["Forget to pack a snack? The moon's got you. &bMoon Cheese&r can be eaten in a pinch to keep you from starving."]
 			dependencies: ["400774ADB8A19D03"]
 			id: "2AE79CA076C2EA64"
 			tasks: [{
@@ -673,9 +673,9 @@
 			shape: "square"
 			subtitle: "Preparations complete"
 			description: [
-				"Of course you'll need some place to take off from. You'll need a Launch Pad anytime you plan to make a rocket launch, which includes the return flight."
+				"Of course you'll need some place to take off from. You'll need a &bLaunch Pad&r &canytime&r you plan to make a rocket launch, which &cincludes&r the return flight."
 				""
-				"I've given you an extra in the quest reward to make sure you have an extra on you for when you plan to return from the moon. Just know that for every other planet you plan to take off from you'll need an extra!"
+				"I've given you an extra in the quest reward to make sure you have an extra on you for when you plan to return from the moon. Just know that for every other planet you plan to take off from you'll need an &cextra&r!"
 			]
 			dependencies: [
 				"240A32C6B7DD0DD5"
@@ -713,7 +713,7 @@
 			x: -2.5d
 			y: 2.0d
 			shape: "rsquare"
-			description: ["If you recall, back in the Electrical Age you unlocked the ability to create a Warp Stone. You could bring a Waystone with you to the moon and be able to warp back and forth freely without having to spend resources on multiple rocket launches."]
+			description: ["If you recall, back in the &eElectrical Age&r you unlocked the ability to create a &dWarp Stone&r. You could bring a &bWaystone&r with you to the moon and be able to warp back and forth freely without having to spend resources on multiple rocket launches."]
 			dependencies: ["68CE43C175FB0826"]
 			id: "671F69640B982683"
 			tasks: [{
@@ -732,9 +732,8 @@
 			x: 1.0d
 			y: 6.5d
 			shape: "rsquare"
-			description: ["By combining printed AE2 circuits and silicon in an Inscriber you will create the basic components for all of AE2."]
+			description: ["By combining printed &bAE2 circuits&r and &7silicon&r in an &eInscriber&r you will create the basic components for all of &eAE2&r."]
 			dependencies: ["0E556AD31516BB03"]
-			dependency_requirement: "one_completed"
 			id: "2BB495CFC3E6D6C8"
 			tasks: [
 				{
@@ -764,9 +763,9 @@
 			y: 4.5d
 			shape: "rsquare"
 			description: [
-				"With your Turbo Machine Hulls you can now craft the AE2 Inscriber. The Inscriber is a necessary machine to create the AE2 Processors. While you can make the Printed Circuits in the Packer, you will ultimately need an Inscriber to combine the circuit with Printed Silicon to create the processors."
+				"With your &aTurbo Machine Hulls&r you can now craft the &eAE2 Inscriber&r. The &eInscriber&r is a necessary machine to create the &bAE2 Processors&r. While you can make the &aPrinted Circuits&r in the &eMI Packer&r, you will ultimately need an &eInscriber&r to combine the circuit with Printed Silicon to create the &bprocessors&r."
 				""
-				"The Inscriber can be powered directly with Modern Industrialization cables."
+				"The &eInscriber&r can be powered directly with &eModern Industrialization cables&r."
 			]
 			dependencies: [
 				"302958D57C6A10C7"
@@ -789,9 +788,9 @@
 			y: 6.5d
 			shape: "rsquare"
 			description: [
-				"Fluix Crystals have been craftable since you created your first Electrolyzer, but they have been unusable. "
+				"&dFluix Crystals&r have been craftable since you created your first &eElectrolyzer&r, but they have been unusable. "
 				""
-				"Finally, it's time to make some, as they are an important crafting component in AE2 items."
+				"Finally, it's time to make some, as they are an important crafting component in &eAE2&r items."
 			]
 			dependencies: ["0E556AD31516BB03"]
 			id: "01D12D790B2DE5F5"
@@ -812,13 +811,13 @@
 			shape: "rsquare"
 			subtitle: "Heart of the Network"
 			description: [
-				"While technically not required to setup your first AE2 network, you will really want to craft at least one of these for now. "
+				"While technically not required to setup your first &eAE2 network&r, you will really want to craft at least one of these for now. "
 				""
-				"Thanks to the glorious Modern Industrialization's universal cables, you will not need to craft an Energy Acceptor to hook up your network to power. You can plug it right in to your power generation!"
+				"Thanks to the glorious &eModern Industrialization&r's universal cables, you will not need to craft an &bEnergy Acceptor&r to hook up your network to power. You can plug it right in to your power generation!"
 				""
-				"Applied Energistics is a pretty expansive mod with a lot of mechanics, with P2P and channels being the most complex part."
+				"&eApplied Energistics&r is a pretty expansive mod with a lot of mechanics, with &aP2P&r and &bchannels&r being the most complex part."
 				""
-				"NOTE: AE2 uses it's own energy system, just know that EU is converted in a 1:2 power ratio, meaning that for every 1 EU put in you are actually generating 2 AE."
+				"&cNOTE&r: &eAE2&r uses it's own energy system, just know that EU is converted in a 1:2 power ratio, meaning that for every 1 EU put in you are actually generating 2 AE."
 			]
 			dependencies: [
 				"01D12D790B2DE5F5"
@@ -843,7 +842,7 @@
 			shape: "rsquare"
 			subtitle: "All your stuff in a single block"
 			description: [
-				"The ME Drive is a block designed to store Storage Cells. The Drive can hold 10 Storage Cells."
+				"The &bME Drive&r is a block designed to store &aStorage Cells&r. The &bME Drive&r can hold 10 Storage Cells."
 				""
 				"The front of the drive will display the status of the drive in the corresponding spot with a color:"
 				"- Red: The cell is full"
@@ -871,11 +870,11 @@
 			y: 4.5d
 			shape: "rsquare"
 			description: [
-				"If you've yet to find an AE2 meteorite, then you might want to make this compass. "
+				"If you've yet to find an &eAE2 meteorite&r, then you might want to make this compass. "
 				""
-				"Placing a vanilla compass in a Charger will charge it up to search for meteorites in your world. Once you find the meteorite mine to the center to find the Presses and even some Certus Quartz Buds."
+				"Placing a vanilla compass in a &eCharger&r will charge it up to search for meteorites in your world. Once you find the meteorite mine to the center to find the Presses and even some &7Certus Quartz Buds&r."
 				""
-				"Like the Inscriber, you can use MI cables directly on the Charger to plug it into your power network."
+				"Like the &eInscriber&r, you can use MI cables directly on the Charger to plug it into your power network."
 			]
 			dependencies: ["0E556AD31516BB03"]
 			id: "4589D54579864AE8"
@@ -903,7 +902,7 @@
 			shape: "rsquare"
 			subtitle: "A MUCH better crafting table"
 			description: [
-				"Attaching an ME Crafting Terminal to your AE2 network will grant you access to all the items stored within and and an included crafting grid you can use these stored items in. "
+				"Attaching an &bME Crafting Terminal&r to your &eAE2 network&r will grant you access to &lall&r the items stored within and and an included crafting grid you can use these stored items in. "
 				""
 				"It requires a channel to function."
 			]
@@ -926,7 +925,7 @@
 			shape: "rsquare"
 			subtitle: "Managing your autocrafting!"
 			description: [
-				"The Pattern Access Terminal gives remote access to all pattern slots for the Pattern Providers on your network separated by which type of machine they are on. It will show the type of machine in the terminal, however you can name the ME Pattern Provider in the Inscriber or Anvil to alter the name displayed in the ME Pattern Access Terminal."
+				"The &bPattern Access Terminal&r gives remote access to all pattern slots for the &aPattern Providers&r on your network separated by which type of machine they are on. It will show the type of machine in the terminal, however you can name the &aME Pattern Provider&r in the &eInscriber&r or &eAnvil&r to alter the name displayed in the &bME Pattern Access Terminal&r."
 				""
 				"Requires a channel to be operational."
 			]
@@ -950,13 +949,13 @@
 			shape: "rsquare"
 			subtitle: "Get ready to autocraft!"
 			description: [
-				"Blank Patterns can be encoded in the ME Pattern Encoding Terminal. You can encode them either with a Crafting Pattern or a Processing Pattern. The Encoded Pattern is then used to control crafting by inserting them into Molecular Assemblers or ME Pattern Providers."
+				"&bBlank Patterns&r can be encoded in the &aME &bPattern Encoding Terminal&r&r. You can encode them either with a &dCrafting Pattern&r or a &eProcessing Pattern&r. The &aEncoded Pattern&r is then used to control crafting by inserting them into &bMolecular Assemblers&r or &aME Pattern Providers&r."
 				""
-				"A Crafting Pattern is your typical 3x3 or 2x2 grid crafting recipe. These patterns usually go inside of Molecular Assemblers."
+				"A &dCrafting Pattern&r is your typical 3x3 or 2x2 grid crafting recipe. These patterns usually go inside of &bMolecular Assemblers&r."
 				""
-				"Processing Patterns are a bit more complicated, usually these are patterns designed to be used to automate outputs from machines. Processing Patterns allow you to encode recipes where an input goes into a machine and you get an expected output. Do not encode recipes that are for chance outputs, otherwise you will clog up your network and prevent crafting!"
+				"&eProcessing Patterns&r are a bit more complicated, usually these are patterns designed to be used to automate outputs from machines. &eProcessing Patterns&r allow you to encode recipes where an input goes into a machine and you get an expected output. Do not encode recipes that are for chance outputs, otherwise you will clog up your network and prevent crafting!"
 				""
-				"I've doubled the normal output for the Blank Pattern recipe due to the amount of things you probably intend to automate crafting for. You're welcome!"
+				"I've doubled the normal output for the &bBlank Pattern&r recipe due to the amount of things you probably intend to automate crafting for. You're welcome!"
 			]
 			dependencies: ["19EAC8C0A6889843"]
 			id: "1B4704766DF1A934"
@@ -986,13 +985,13 @@
 			shape: "rsquare"
 			subtitle: "It's like magic!"
 			description: [
-				"The Molecular Assembler is a powered machine which crafts items. It can be upgraded by inserting Acceleration Cards into it; once upgraded it is very fast."
+				"The &bMolecular Assembler&r is a powered machine which crafts items. It can be upgraded by inserting &dAcceleration Cards&r into it; once upgraded it is very fast."
 				""
 				"The assembler can function in one of two modes, single pattern mode or automatic crafting mode."
 				""
-				"In Single Pattern Mode, it uses a single Crafting Pattern inserted into the assembler to craft an item without a crafting network. This makes it useful in stand alone setups or in configurations where it can be fed by other mods and even chained together to craft a final output. Items will be accepted from any side and exported into any available inventories."
+				"In &aSingle Pattern Mode&r, it uses a single &cCrafting Pattern&r inserted into the assembler to craft an item without a crafting network. This makes it useful in stand alone setups or in configurations where it can be fed by other mods and even chained together to craft a final output. Items will be accepted from any side and exported into any available inventories."
 				""
-				"In Automatic Crafting Mode the assembler will use the Crafting Pattern from an attached ME Pattern Provider to craft items when they are requested by the Crafting CPU. NOTE: This mode requires that the assembler's pattern slot is empty."
+				"In &bAutomatic Crafting Mode&r the assembler will use the &cCrafting Pattern&r from an attached &eME Pattern Provider&r to craft items when they are requested by the Crafting CPU. &cNOTE&r: This mode requires that the assembler's pattern slot is empty."
 			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "3C433173976A9CCC"
@@ -1011,7 +1010,7 @@
 			x: 3.0d
 			y: 11.5d
 			shape: "rsquare"
-			description: ["The ME Pattern Provider is the home of your encoded recipes. These need to be put on the same network as your Crafting CPU itself. When the crafting CPU needs to craft the primary result of that pattern, it'll delegate this to the Pattern Provider. Normally the Pattern Provider will then push out the ingredients to an adjancent block (a Molecular Assembler for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the Pattern Provider, an ME Interface, or any other means that would import the crafting result into the network. Molecular Assemblers are smart enough to automatically return the crafting result to the same Pattern Provider that provided the ingredients, leaving you to focus on ensuring the Processing Recipes outputs are put into the network when they're done."]
+			description: ["The &bME Pattern Provider&r is the home of your encoded recipes. These need to be put on the same network as your &dCrafting CPU&r itself. When the &dCrafting CPU&e needs to craft the primary result of that pattern, it'll delegate this to the &bPattern Provider&r. Normally the &bPattern Provider&r will then push out the ingredients to an adjancent block (a &aMolecular Assembler&r for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the &bPattern Provider&r, an &cME Interface&r, or any other means that would import the crafting result into the network. &aMolecular Assemblers&r are smart enough to automatically return the crafting result to the same &bPattern Provider&r that provided the ingredients, leaving you to focus on ensuring the &eProcessing Recipes&r outputs are put into the network when they're done."]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "2C1964927A0F7BE3"
 			tasks: [{
@@ -1032,17 +1031,17 @@
 			shape: "rsquare"
 			subtitle: "Deep Thought"
 			description: [
-				"The Crafting CPU manages a single auto crafting task from start to finsih, and is built out of various crafting units."
+				"The &dCrafting CPU&r manages a single auto crafting task from start to finsih, and is built out of various crafting units."
 				""
 				"To be a valid crafting CPU, two rules must be met:"
 				"1. The CPU must be a cuboid, completely composed of the parts listed in the quest. Air and other blocks are not valid."
 				"2. The CPU must contain at least 1 Crafting Storage component."
 				""
-				"The Crafting CPU as a multi-block only requires a single channel for the entire structure. Crafting co-processors increase the number of tasks the crafting CPU can perform at once; with no co-processors, the crafting CPU can perform a single task at a time. Storage requirements are moderately complicated, and do not follow the usual ME storage math, but for a first approximation, you will need a little over one byte per input item, output item, or operation."
+				"The &dCrafting CPU&r as a multi-block only requires a single channel for the entire structure. Crafting co-processors increase the number of tasks the crafting CPU can perform at once; with no co-processors, the crafting CPU can perform a single task at a time. Storage requirements are moderately complicated, and do not follow the usual ME storage math, but for a first approximation, you will need a little over one byte per input item, output item, or operation."
 				""
-				"You can name your Crafting CPUs by naming any of the Crafting Storage Units it is made up with an Inscriber or Anvil."
+				"You can name your &dCrafting CPUs&r by naming any of the &aCrafting Storage Units&r it is made up with an &eInscriber&r or &eAnvil&r."
 				""
-				"To provide patterns to the autocrafting CPUs you can use the ME Interface or ME Level Emitter."
+				"To provide patterns to the autocrafting CPUs you can use the &dME Interface&r or &eME Level Emitter&r."
 			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "528CD35EBF5D20F0"
@@ -1081,9 +1080,9 @@
 			y: 7.0d
 			shape: "rsquare"
 			description: [
-				"Perhaps the most desired item in all of AE2 is the Wireless Crafting Terminal. This grants you (while in range of an access point) full access to your ME network. You can craft items, start autocrafting processes, and view in-progress crafting process all from this little device. "
+				"Perhaps the most desired item in all of AE2 is the &bWireless Crafting Terminal&r. This grants you (while in range of an access point) full access to your ME network. You can craft items, start autocrafting processes, and view in-progress crafting process all from this little device. "
 				""
-				"To link the Wirelss Crafting Terminal to your network, you will need to put it in the top-right slot of your security terminal. Once linked, you will need to power it. You can do this by putting it in an AE2 Charger. It has a 1.6M AE internal energy storage, so you'll probably drain your entire power network charging it! "
+				"To link the &bWirelss Crafting Terminal&r to your network, you will need to put it in the top-right slot of your &aSecurity Terminal&r. Once linked, you will need to power it. You can do this by putting it in an &eAE2 Charger&r or &eCharge-o-Mat&r. It has a 1.6M AE internal energy storage, so you'll probably drain your entire power network charging it! "
 			]
 			dependencies: [
 				"67071C306C1C3A42"
@@ -1106,13 +1105,13 @@
 			y: 6.5d
 			shape: "rsquare"
 			description: [
-				"The ME Security Terminal allows you to configure which users, and what permissions those users have within your ME System. By existing, it enforces permissions on the usage of the system."
+				"The &bME Security Terminal&r allows you to configure which users, and what permissions those users have within your &eME System&r. By existing, it enforces permissions on the usage of the system."
 				""
-				"The security system does not prevent destructive tampering, removing cables / machines or breaking of drives. If you need to protect your system from physical vandalism, you will need to place it in FTB claimed chunks. This block only provides network security."
+				"The &bSecurity Terminal&r does not prevent destructive tampering, removing cables / machines or breaking of drives. If you need to protect your system from physical vandalism, you will need to place it in &eFTB claimed chunks&r. This block only provides network security."
 				""
-				"The player who places the ME Security Terminal has full control over the network and cannot exclude themself any rights. By adding a blank Biometric Card you define a default behavior for every player who has no own Biometric Card registered."
+				"The player who places the &bME Security Terminal&r has full control over the network and cannot exclude themself any rights. By adding a blank &aBiometric Card&r you define a default behavior for every player who has no own Biometric Card registered."
 				""
-				"Other than adding security to your AE network, you can link up your Wireless Terminal with the network and access it wirelessly."
+				"Other than adding security to your &eAE network&r, you can link up your &bWireless Terminal&r with the network and access it wirelessly."
 			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "72F1B2987533A6F6"
@@ -1132,9 +1131,9 @@
 			y: 7.5d
 			shape: "rsquare"
 			description: [
-				"The ME Wireless Access Point allows wireless access via a Wireless Terminal. Range and power usage are determined based on the number of Wireless Booster installed into the ME Wireless Access Point."
+				"The &bME Wireless Access Point&r allows wireless access via a Wireless Terminal. Range and power usage are determined based on the number of &aWireless Booster&r installed into the ME Wireless Access Point."
 				""
-				"A network can have any number of ME Wireless Access Point with any number of Wireless Booster in each one, allowing you to optimize power usage and range by altering your setup."
+				"A network can have any number of &bME Wireless Access Point&r with any number of &aWireless Booster&r in each one, allowing you to optimize power usage and range by altering your setup."
 				""
 				"Requires a channel to be operational."
 			]
@@ -1156,7 +1155,7 @@
 			x: 8.5d
 			y: 0.0d
 			shape: "square"
-			description: ["Titanium Ore can only be acquired from an Electric Quarry using the Stainless Steel Drill. Processing Raw Titanium into a dust requires Manganese Sulfuric Solution, which you already have some of from the Stainless Steel processing."]
+			description: ["&dTitanium Ore&r can only be acquired from an &bElectric Quarry&r using the &aStainless Steel Drill&r. Processing &dRaw Titanium&r into a dust requires &7Manganese Sulfuric Solution&r, which you already have some of from the &aStainless Steel&r processing."]
 			dependencies: [
 				"68DDFA6E0465E81E"
 				"293DB25BD2827372"
@@ -1182,11 +1181,11 @@
 			shape: "square"
 			subtitle: "Under pressure"
 			description: [
-				"The Pressurizer is a new multiblock made of Titanium that can turn water into High Pressure Water and Steam, and the inverse."
+				"The &dPressurizer&r is a new multiblock made of Titanium that can turn water into &9High Pressure Water&r and &7Steam&r, and the inverse."
 				""
-				"If you plan to use the High Pressure Large Steam Boiler, you will need to be using the Pressurizer to make High Pressure Water or High Pressure Steam."
+				"If you plan to use the &bHigh Pressure Large Steam Boiler&r, you will need to be using the &dPressurizer&r to make &9High Pressure Water&r or &7High Pressure Steam&r."
 				""
-				"If you plan to use the Pressurizer to generate Liquid Air, you will need an Item Input Hatch for the Air Intake."
+				"If you plan to use the &dPressurizer&r to generate &aLiquid Air&r, you will need an &eItem Input Hatch&r for the &bAir Intake&r."
 			]
 			dependencies: ["08362FF409BFC7CC"]
 			id: "2D1CE7720270D118"
@@ -1252,17 +1251,17 @@
 			}]
 		}
 		{
-			title: "The Large Steam Turbine"
+			title: "The Large &7Steam&r Turbine"
 			icon: "modern_industrialization:large_steam_turbine"
 			x: 17.0d
 			y: -2.0d
 			shape: "square"
 			description: [
-				"The Large Steam Turbine will accept both regular steam ( 1 mB = 1 EU ) and HP Steam ( 1 mB = 8 EU ) into EU, and will generate up to 16384 EU/t."
+				"The &bLarge Steam Turbine&r will accept both regular steam ( 1 mB = 1 EU ) and &7HP Steam&r ( 1 mB = 8 EU ) into EU, and will generate up to 16384 EU/t."
 				""
-				"However it will not give you back give you back regular nor HP Water. If you'd like to recycle the HP Water, you will need to create the next multiblock, the Heat Exchanger."
+				"However it will not give you back give you back &9regular nor HP Water&r. If you'd like to recycle the &9HP Water, you will need to create the next multiblock, the &eHeat Exchanger&r."
 				""
-				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Large Steam Turbine block in your inventory or by holding your wrench out with the Large Steam Turbine placed."
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the &bLarge Steam Turbine&r block in your inventory or by holding your wrench out with the &bLarge Steam Turbine&r placed."
 			]
 			dependencies: ["1C6856D2C944D9F2"]
 			id: "45E103B1646804FA"
@@ -1321,7 +1320,7 @@
 			shape: "rsquare"
 			subtitle: "GIGA DRILL BREAK"
 			description: [
-				"The Industrial Drill is an upgraded, electric powered drill that features a powered mode that can mine 3x3."
+				"The &bIndustrial Drill&r is an upgraded, electric powered drill that features a powered mode that can mine 3x3."
 				""
 				"Shift-right click to activate and deactivate 3x3."
 				""
@@ -1352,7 +1351,7 @@
 			shape: "rsquare"
 			subtitle: "Say goodbye to the rainforests"
 			description: [
-				"The Industrial Chainsaw is an upgraded, electric powered chainsaw that features a powered mode that can instamine entire trees."
+				"The &bIndustrial Chainsaw&r is an upgraded, electric powered chainsaw that features a powered mode that can instamine entire trees."
 				""
 				"Shift-right click to activate and deactivate."
 				""
@@ -1383,7 +1382,7 @@
 			shape: "rsquare"
 			subtitle: "Like a Protosaber!"
 			description: [
-				"The Nanosaber is an upgraded, electric powered sword that features a powered mode that can deal insane damage."
+				"The &bNanosaber&r is an upgraded, electric powered sword that features a powered mode that can deal insane damage at a fast rate."
 				""
 				"Shift-right click to activate and deactivate."
 				""
@@ -1414,9 +1413,9 @@
 			y: 0.0d
 			shape: "square"
 			description: [
-				"Processing Raw Platinum will produce a little bit of Iridium Tiny Dust as well as 3x Platinum Tiny Dust. Both of these will be very important to obtain in larger amounts moving forward. "
+				"Processing &bRaw Platinum&r will produce a little bit of &aIridium Tiny Dust&r as well as 3x &bPlatinum Tiny Dust&r. Both of these will be very important to obtain in larger amounts moving forward. "
 				""
-				"This Iridium generation method is very, very slow, but you will soon be able to access The Matter Replicator and UU-Matter."
+				"This &aIridium&r generation method is very, very slow, but you will soon be able to access The &eMatter Replicator&r and solid &dUU-Matter&r."
 			]
 			dependencies: ["08362FF409BFC7CC"]
 			id: "73E92504C29F7181"
@@ -1435,7 +1434,7 @@
 			x: 13.0d
 			y: 0.5d
 			shape: "square"
-			description: ["Iridium Tiny Dust will be needed in the production of Monocrystalline Silicon boules."]
+			description: ["&bIridium Tiny Dust&r will be needed in the production of &aMonocrystalline Silicon&r boules."]
 			dependencies: ["73E92504C29F7181"]
 			id: "0A7B765B2AC2DD6D"
 			tasks: [{
@@ -1483,7 +1482,7 @@
 			x: 15.0d
 			y: 2.0d
 			shape: "square"
-			description: ["Luckily one boule is able to produce a significant amount of wafers. These will be important for Processing Unit components."]
+			description: ["Luckily one boule is able to produce a significant amount of wafers. These will be important for &dProcessing Unit&r components."]
 			dependencies: ["11D19824B39407CC"]
 			id: "76BD64AFCE37E528"
 			tasks: [{
@@ -1542,7 +1541,7 @@
 			y: 2.25d
 			shape: "square"
 			subtitle: "EV Voltage Circuits"
-			description: ["The Processing Unit is the key to EV-tier hulls, multiblocks, and recipes. "]
+			description: ["The &dProcessing Unit&r is the key to EV-tier hulls, multiblocks, and recipes. "]
 			dependencies: ["3FEB290E25DD6BFD"]
 			size: 1.5d
 			id: "4FDC0B405C330E4F"
@@ -1561,7 +1560,7 @@
 			x: 8.5d
 			y: 4.5d
 			shape: "square"
-			description: ["You can create Tungsten Nuggets by compressing Tungsten Tiny Dusts. This process is very, very slow, so you'll want to get as much as you need to make an Implosion Chamber and then never use the compressing method again."]
+			description: ["You can create &dTungsten Nuggets&r by compressing &dTungsten Tiny Dusts&r. This process is &cvery, very slow&r, so you'll want to get as much as you need to make an &eImplosion Chamber&r and then never use the compressing method again."]
 			dependencies: ["1724FEEB2622FB70"]
 			id: "3132A7C27E732259"
 			tasks: [{
@@ -1579,7 +1578,7 @@
 			x: 11.0d
 			y: 2.0d
 			shape: "square"
-			description: ["You will need a Mixed Tungsten Ingot to make Blastproof Alloy Platings."]
+			description: ["You will need a &bMixed Tungsten Ingot&r to make &aBlastproof Alloy Platings&r."]
 			dependencies: [
 				"3132A7C27E732259"
 				"08362FF409BFC7CC"
@@ -1604,9 +1603,9 @@
 			shape: "square"
 			subtitle: "KABOOOOOOM"
 			description: [
-				"The Implosion Compressor is able to compress dust and ingots of the most resistant materials. This includes Tungsten, Blastproof Alloy, and Beryllium. These materials are very important for nuclear fission!"
+				"The &bImplosion Compressor&r is able to compress dust and ingots of the most resistant materials. This includes &dTungsten&r, &aBlastproof Alloy&r, and &2Beryllium&r. These materials are very important for nuclear fission!"
 				""
-				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the Implosion Compressor block in your inventory or by holding your wrench out with the Implosion Compressor placed."
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the &bImplosion Compressor&r block in your inventory or by holding your wrench out with the &bImplosion Compressor&r placed."
 			]
 			dependencies: ["500668B023EA17CA"]
 			id: "0DF6FF0A1E872DC8"
@@ -1677,11 +1676,11 @@
 			y: 2.75d
 			shape: "square"
 			description: [
-				"The High Pressure Advanced Steam Boiler can produce up to 8192 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
+				"The &bHigh Pressure Advanced Steam Boiler&r can produce up to 8192 EU/t worth of Steam. One mB of &7HP Steam&r is worth 8 mB of regular &7Steam&r. "
 				""
-				"Maximum efficiency is only reached under continuous operation. Only accepts High Pressure Water and High Pressure Heavy Water."
+				"Maximum efficiency is only reached under continuous operation. Only accepts &9High Pressure Water&r and &bHigh Pressure Heavy Water&r."
 				""
-				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the High Pressure Large Steam Boiler block in your inventory or by holding your wrench out with the High Pressure Advanced Large Steam Boiler placed."
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the &bHigh Pressure Large Steam Boiler&r block in your inventory or by holding your wrench out with the &bHigh Pressure Advanced Large Steam Boiler&r placed."
 			]
 			dependencies: ["4FDC0B405C330E4F"]
 			id: "2EF95EF4396E8FE4"
@@ -1746,7 +1745,7 @@
 			y: 9.0d
 			shape: "rsquare"
 			description: [
-				"The ME Terminal gives you access to items stored in your ME Network. This will also include items accessible through ME Storage Bus."
+				"The &bME Terminal&r gives you access to items stored in your &eME Network&r. This will also include items accessible through &eME Storage Bus&r."
 				""
 				"It has the ability to sort and search, as well as filter by using View Cell. It requires a channel to function."
 			]
@@ -1768,13 +1767,13 @@
 			y: 9.0d
 			shape: "rsquare"
 			description: [
-				"The Pattern Encoding Terminal is a specialized version of the ME Crafting Terminal designed to encode Blank Patterns into Crafting Patterns or Processing Patterns."
+				"The &bPattern Encoding Terminal&r is a specialized version of the &aME Crafting Terminal&r designed to encode &cBlank Patterns&r into &dCrafting Patterns&r or &eProcessing Patterns&r."
 				""
-				"The Pattern Encoding Terminal lets you browse the contents of your network like other terminals, but also contains an area for designing patterns. There are two modes for pattern encoding, crafting and processing. Processing patterns are designed for use with machines that do not use standard crafting recipes; such as furnaces, MI machines, etc. To select between modes, click the button to the right of the interface; when it shows a standard crafting table, it will create Crafting Patterns, and when it shows a furnace, it will create Processing Patterns."
+				"The &bPattern Encoding Terminal&r lets you browse the contents of your network like other terminals, but also contains an area for designing patterns. There are two modes for pattern encoding, crafting and processing. &eProcessing patterns&r are designed for use with machines that do not use standard crafting recipes; such as furnaces, MI machines, etc. To select between modes, click the button to the right of the interface; when it shows a standard crafting table, it will create &dCrafting Patterns&r, and when it shows a furnace, it will create &eProcessing Patterns&r."
 				""
-				"For Crafting Patterns, you specify the input crafting materials on a standard 3x3 crafting grid, and the output materials are determined automatically."
+				"For &dCrafting Patterns&r, you specify the input crafting materials on a standard 3x3 crafting grid, and the output materials are determined automatically."
 				""
-				"For Processing Patterns, you specify the input materials and output materials, including quantity, by placing stacks of items in the interface. If a process operation is not gauranteed to succeed (such as secondary products from some machines), it will not work correctly as a Processing Pattern."
+				"For &eProcessing Patterns&r, you specify the input materials and output materials, including quantity, by placing stacks of items in the interface. If a process operation is not gauranteed to succeed (such as secondary products from some machines), it will not work correctly as a &eProcessing Pattern&r."
 				""
 				"Requires a channel to be operational."
 			]
@@ -1798,11 +1797,11 @@
 			shape: "rsquare"
 			subtitle: "Tedious but rewarding!"
 			description: [
-				"Many devices, but not all, require a channel to function. If the device deals solely with power, or connectivity like cables, the device will not require a channel. Anything that uses items, or moves them around, will."
+				"Many devices, but not all, require a &bchannel&r to function. If the device deals solely with power, or connectivity like cables, the device will not require a &bchannel&r. Anything that uses items, or moves them around, will."
 				""
-				"Channels limits are doubled from the standard, meaning that a controllerless network will be able to support up to 16 channels. Once you break that limit, you will need to add an ME Controller to your network."
+				"&bChannels&r limits are doubled from the standard, meaning that a &ccontrollerless&r network will be able to support up to &d16 channels&r. Once you break that limit, you will need to add an &eME Controller&r to your network."
 				""
-				"Each face of the ME Controller will output 64 channels. What these channels are connected to will determine what they get used for, for instance, if you place Fluix ME Dense Covered Cable next to the controller you will be able to carry a full 32 channels, however if you place an ME Drive next to it, or non-dense cable, you will only get 8 channels."
+				"Each face of the &eME Controller&r will output &d64 channels&r. What these channels are connected to will determine what they get used for, for instance, if you place &aFluix ME Dense Covered Cable&r next to the controller you will be able to carry a full &d64 channels&r, however if you place an &aME Drive&r next to it, or non-dense cable, you will only get &d16 channels&r."
 			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "34EC66DC503EE2AD"
@@ -1822,9 +1821,9 @@
 			y: 12.5d
 			shape: "rsquare"
 			description: [
-				"Cable Anchors are small decorative cable-mounted spikes that you can use to create ladders with cables, or make the cable appear connected to the walls around it."
+				"&bCable Anchors&r are small decorative cable-mounted spikes that you can use to create ladders with cables, or make the cable appear connected to the walls around it."
 				""
-				"Most notably, Cable Anchors prevent connections from forming on the side they're mounted on."
+				"Most notably, &bCable Anchors&r prevent connections from forming on the side they're mounted on."
 			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "3939773BB1720493"
@@ -1844,15 +1843,15 @@
 			y: 11.5d
 			shape: "rsquare"
 			description: [
-				"So when channels become a nusance, you can turn to ME P2P Tunnels. When configured for ME, they allow you to move channels from point to point. This allows you to move up to 32 channels per pair of ME P2P Tunnel."
+				"So when channels become a nusance, you can turn to &bME P2P Tunnels&r. When configured for ME, they allow you to move channels from point to point. This allows you to move up to 64 channels per pair of &bME P2P Tunnel&r."
 				""
-				"The P2P Tunnel can be configured to transfer other things, such as items, redstone, power, and fluids. Check REI on how to configure the P2P."
+				"The &bP2P Tunnel&r can be configured to transfer other things, such as items, redstone, power, and fluids. Check &dREI&r on how to configure the P2P."
 				""
-				"Tunnels are 1 input to N outputs. This means you can output as many points as you want, but only input at a single point per tunnel. Networks can support any number of tunnels, of any different t ypes, and they all function independently."
+				"&bTunnels&r are 1 input to N outputs. This means you can output as many points as you want, but only input at a single point per tunnel. Networks can support any number of tunnels, of any different t ypes, and they all function independently."
 				""
-				"ME Tunnels can be used to carry channels from one location to another, and carry up to 32 channels, same as Fluix ME Dense Covered Cable, while only requiring a single channel per point, making tunnels a very powerful tool to expand ME Networks, especially over distance. "
+				"&bME Tunnels&r can be used to carry channels from one location to another, and carry up to &d64 channels&r, same as &bFluix ME Dense Covered Cable&r, while only requiring a single channel per point, making tunnels a very powerful tool to expand ME Networks, especially over distance. "
 				""
-				"The channel required by a P2P Tunnel cannot be carried through another P2P Tunnel."
+				"The channel required by a &bP2P Tunnel&r cannot be carried through another &bP2P Tunnel&r."
 			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "1DBBA5E170B9B5D6"
@@ -1873,11 +1872,11 @@
 			y: 13.5d
 			shape: "rsquare"
 			description: [
-				"Quantum Network Bridges can connect two networks over infinite distances and even between dimensions.  They can carry 32 channels in t otal (regardless of how cables are connected to each face)."
+				"&bQuantum Network Bridges&r can connect two networks over &ainfinite distances and even between dimensions&r.  They can carry &d64 channels&r in total (regardless of how cables are connected to each face)."
 				""
-				"Eight Quantum Rings are placed around an ME Quantum Link Chamber to create a Quantum Network Bridge. Only the 4 ME Quantum Ring blocks adjacent to the ME Quantum Link Chamber will accept network connections, the 4 corner blocks cannot connect to cables."
+				"&aEight Quantum Rings&r are placed around an &eME Quantum Link Chamber&r to create a &bQuantum Network Bridge&r. Only the &a4 ME Quantum Ring&r blocks adjacent to the &eME Quantum Link Chamber&r will accept network connections, the 4 corner blocks &ccannot&r connect to cables."
 				""
-				"The Quantum Link Chamber can accept one item in its inventory, the Quantum Entangled Singularity."
+				"The &bQuantum Link Chamber&r can accept one item in its inventory, the &6Quantum Entangled Singularity&r."
 			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "13ADC5EC083B64D0"
@@ -1906,13 +1905,13 @@
 			y: 9.0d
 			shape: "rsquare"
 			description: [
-				"Fluix ME Glass Cables are the simplest cable to make, transfers power and up to 8 channels. It comes in 17 different colors, the default being Fluix, and can be dyed any color using any of the 16 dyes."
+				"&bFluix ME Glass Cables&r are the simplest cable to make, transfers power and up to &d16 channels&r. It comes in 17 different colors, the default being Fluix, and can be dyed any color using any of the 16 dyes."
 				""
 				"To craft colored cables, surround a dye of any type with 8 cables of the same type (color of the cables don't matter, but they must be the same type). You can also paint cables with any forge compatible paint brush in world."
 				""
 				"You can craft any colored cable with a water bucket to remove the dye."
 				""
-				"You can cover the cable with wool to create Fluix ME Covered Cable, and craft Fluix ME Smart Cable to get better ideaa of what is going on with your channels."
+				"You can cover the cable with wool to create &aFluix ME Covered Cable&r, and craft &eFluix ME Smart Cable&r to get better idea of what is going on with your channels."
 			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "0185C45DF71403A5"
@@ -1940,9 +1939,9 @@
 			y: 9.0d
 			shape: "rsquare"
 			description: [
-				"The Covered Cable variant offers no gameplay benewfits over its Fluix ME Glass Cable counterpart. It can however be used as an alternate aesthetic choice if you prefer the covered look."
+				"The &bCovered Cable&r variant offers no gameplay benewfits over its &aFluix ME Glass Cable&r counterpart. It can however be used as an alternate aesthetic choice if you prefer the covered look."
 				""
-				"Can be colored in the same manner as Fluix ME Glass Cable. Four Fluix ME Covered Cable can be crafted with Redstone and Glowstone to make Fluix ME Smart Cable."
+				"Can be colored in the same manner as &aFluix ME Glass Cable&r. &bFour Fluix ME Covered Cable&r can be crafted with Redstone and Glowstone to make &dFluix ME Smart Cable&r."
 			]
 			dependencies: ["0185C45DF71403A5"]
 			id: "56A9ADF766CC038C"
@@ -1969,7 +1968,7 @@
 			x: -4.0d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["The Fluix ME Dense Covered Cable can carry up to 64 channels unlike standard cable which can only carry 16, however it doesn't support buses, so you must first step down from dense to smaller cable (such as Fluix ME Glass Cable or Fluix ME Smart Cable) before using buses or panels."]
+			description: ["The &bFluix ME Dense Covered Cable&r can carry up to &d64 channels&r unlike standard cable which can only carry 16, however it doesn't support buses, so you must first step down from dense to smaller cable (such as &aFluix ME Glass Cable&r or &eFluix ME Smart Cable&r) before using buses or panels."]
 			dependencies: ["56A9ADF766CC038C"]
 			id: "156DB9FCCDFE4C57"
 			tasks: [{
@@ -1996,7 +1995,7 @@
 			y: 10.5d
 			shape: "rsquare"
 			description: [
-				"While bearing some similarity to Fluix ME Covered Cables in appearance, the Fluix ME Smart Cable provides diagnostic function by visualizing the channel usage on the cables, the channels appear as lit colored lines that run along the black stripe on the cables giving you an understanding of how your channels are being used on your network. The first four channels show as lines matching the color of the cable, the next four show as white lines."
+				"While bearing some similarity to &aFluix ME Covered Cables&r in appearance, the &bFluix ME Smart Cable&r provides diagnostic function by visualizing the channel usage on the cables, the channels appear as lit colored lines that run along the black stripe on the cables giving you an understanding of how your channels are being used on your network. The first four channels show as lines matching the color of the cable, the next four show as white lines."
 				""
 				"These can be colored in the same manner as Fluix ME Glass Cable."
 			]
@@ -2025,7 +2024,7 @@
 			x: -5.0d
 			y: 12.0d
 			shape: "rsquare"
-			description: ["Similar to the regular Dense Covered Cables, the Fluix ME Smart Dense Cables carry 64 channels instead of the default 16. Shows load similarly to Fluix ME Smart Cable with each line lit representing four channels in use."]
+			description: ["Similar to the regular &aDense Covered Cables&r, the &bFluix ME Smart Dense Cables&r carry &d64 channels&r instead of the default 16. Shows load similarly to &eFluix ME Smart Cable&r with each line lit representing four channels in use."]
 			dependencies: ["7C0F5471E36D2678"]
 			id: "0EA5A3091E3732A8"
 			tasks: [{
@@ -2051,9 +2050,9 @@
 			y: 11.5d
 			shape: "rsquare"
 			description: [
-				"The Toggle Bus is a bus which functions similarly to Fluix ME Glass Cable or other cables, but it allows it connection state to be toggled via redstone. This allows you to cut off a section of a ME Network."
+				"The &bToggle Bus&r is a bus which functions similarly to &aFluix ME Glass Cable&r or other cables, but it allows it connection state to be toggled via redstone. This allows you to cut off a section of a ME Network."
 				""
-				"When redstone signal supplied the part enables the connection, ME Inverted Toggle Bus provides the reverse behavior by disabling the connection instead."
+				"When redstone signal supplied the part enables the connection, &bME Inverted Toggle Bus&r provides the reverse behavior by disabling the connection instead."
 				""
 				"There is also an inverted version of the toggle that disables the connection when a redstone signal is supplied."
 			]
@@ -2075,13 +2074,13 @@
 			y: 11.5d
 			shape: "rsquare"
 			description: [
-				"Lowest tier storage cell, which can contain 1024 bytes of storage."
+				"Lowest tier storage cell, which can contain &d1024 bytes of storage&r."
 				""
 				"1024 bytes of storagne can hold 127 stacks of a single item, or 65 stacks, while holding 63 different items."
 				""
-				"The 1k Storage Cell uses 8 bytes of data to store a single type. When placed inside a drive or chest, it will add an additional 0.5 AE/t to the power cost of the connection."
+				"The &b1k Storage Cell&r uses 8 bytes of data to store a single type. When placed inside a drive or chest, it will add an additional 0.5 AE/t to the power cost of the connection."
 				""
-				"You can remove the 1k ME Storage Component by fully emptying the Storage Cell, and shift-right clicking while holding it. The settings can be changed in the Cell Workbench."
+				"You can remove the &a1k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. The settings can be changed in the Cell Workbench."
 			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "2BA27AB43B03F656"
@@ -2104,7 +2103,7 @@
 			x: 0.5d
 			y: 11.5d
 			shape: "rsquare"
-			description: ["Fluid Cells are similar to the item storage counterparts, except they hold fluids (duh!). Fluid storage cells can hold up to 5 distinct types of fluids; the volume of fluid they can store depend in part on how many types they are holding, and their storage capacity."]
+			description: ["&bFluid Cells&r are similar to the item storage counterparts, except they hold fluids (duh!). &bFluid storage cells&r can hold up to 5 distinct types of fluids; the volume of fluid they can store depend in part on how many types they are holding, and their storage capacity."]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "5270F349E0B5F580"
 			tasks: [{
@@ -2127,13 +2126,13 @@
 			y: 12.5d
 			shape: "rsquare"
 			description: [
-				"A low tier storage cell, which can contain 4096 bytes of storage."
+				"A low tier storage cell, which can contain &d4096 bytes of storage&r."
 				""
 				"4096 bytes of storage can hold 508 stacks of a single item, or 260 stacks while holding 63 different items."
 				""
-				"The 4k Storage Cell uses 32 bytes of data to store a single type. When placed inside a drive or chest it will consume an additional 1.0 AE/t of power for the connection."
+				"The &b4k Storage Cell&r uses 32 bytes of data to store a single type. When placed inside a drive or chest it will consume an additional 1.0 AE/t of power for the connection."
 				""
-				"You can remove the 4k ME Storage Component by fully emptying the storage cell, and sneak right-clicking it in your hand."
+				"You can remove the &b4k ME Storage Component&r by fully emptying the storage cell, and sneak right-clicking it in your hand."
 			]
 			dependencies: ["2BA27AB43B03F656"]
 			id: "0F6CB1AEE71CFB16"
@@ -2179,13 +2178,13 @@
 			y: 13.5d
 			shape: "rsquare"
 			description: [
-				"Middle Tier Storage Cell, which can contain 16384 bytes of storage."
+				"Middle Tier Storage Cell, which can contain &d16,384 bytes of storage&r."
 				""
 				"16,384 bytes of storage can hold 2032 Stacks of a single item, or 1040 Stacks, while holding 63 Different items."
 				""
-				"The 16k Storage Cell uses 128 bytes of data to store a single type. When placed inside a drive or chest will consume 1.5 AE/t."
+				"The &b16k Storage Cell&r uses 128 bytes of data to store a single type. When placed inside a drive or chest will consume 1.5 AE/t."
 				""
-				"You can remove the 16k ME Storage Component by fully emptying the storage cell, and sneak-right clicking it in your hand."
+				"You can remove the &a16k ME Storage Component&r by fully emptying the storage cell, and sneak-right clicking it in your hand."
 			]
 			dependencies: ["0F6CB1AEE71CFB16"]
 			id: "0338A0F80C416F09"
@@ -2231,13 +2230,13 @@
 			y: 14.5d
 			shape: "rsquare"
 			description: [
-				"High Tier Storage Cell, which can contain 65536 bytes of storage."
+				"High Tier Storage Cell, which can contain &d65,536 bytes of storage&r."
 				""
-				"65536 bytes of storage can hold 8128 Stacks of a single item. or 4160 Stacks,while holding 63 Different items."
+				"65,536 bytes of storage can hold 8128 Stacks of a single item. or 4160 Stacks,while holding 63 Different items."
 				""
-				"The 64k Storage Cell uses 512 bytes of data to store a single type. When placed inside a drive or chest will consume 2.0 AE/t."
+				"The &b64k Storage Cell&r uses 512 bytes of data to store a single type. When placed inside a drive or chest will consume 2.0 AE/t."
 				""
-				"You can remove the 64k ME Storage Component by fully emptying the storage cell, and sneak-right clicking it in your hand."
+				"You can remove the &a64k ME Storage Component&r by fully emptying the storage cell, and sneak-right clicking it in your hand."
 			]
 			dependencies: ["0338A0F80C416F09"]
 			id: "0C4AEF63DE034490"
@@ -2283,13 +2282,13 @@
 			y: 15.5d
 			shape: "rsquare"
 			description: [
-				"Highest Tier Storage Cell, which can contain 262144 bytes of storage."
+				"Highest Tier Storage Cell, which can contain &d262,144 bytes of storage&r."
 				""
 				"262144 bytes of storage can hold 32512 stacks of a single item, or 16256 stacks while holding 63 different items."
 				""
-				"The 256k Storage Cell uses 1024 bytes of data to store a single type. When placed inside a drive, will consume 2.5 AE/t."
+				"The &b256k Storage Cell&r uses 1024 bytes of data to store a single type. When placed inside a drive, will consume 2.5 AE/t."
 				""
-				"You can remove the 256K ME Storage Component by fully emptying the storage cell and sneak clicking it in your hand."
+				"You can remove the &a256K ME Storage Component&r by fully emptying the storage cell and sneak clicking it in your hand."
 			]
 			dependencies: ["0C4AEF63DE034490"]
 			id: "0BF80E377CADB790"
@@ -2335,7 +2334,7 @@
 			y: 13.5d
 			shape: "rsquare"
 			description: [
-				"The ME Storage Montior is a simple way to see the current level of a specified item. There are several interactions to modify it."
+				"The &bME Storage Montior&r is a simple way to see the current level of a specified item. There are several interactions to modify it."
 				"- Right-click with item: Will display the current stored amount of that item if not locked"
 				"- Right-click with empty hand: Will reset the display if not locked."
 				"- Shift+right-click with empty hand: Will toggle the lock"
@@ -2359,7 +2358,7 @@
 			y: 12.5d
 			shape: "rsquare"
 			description: [
-				"The ME Level Emitter can indicate either the level of a specified item or the ME Network energy level. You can set the threshold and if the ME Level Emitter will emit a redstone signal or turn it off."
+				"The &bME Level Emitter&r can indicate either the level of a specified item or the &aME Network&r energy level. You can set the threshold and if the &bME Level Emitter&r will emit a redstone signal or turn it off."
 				""
 				"Requires a channel to function, if its power or channel is lost the emitter will switch to an off state."
 				""
@@ -2383,7 +2382,7 @@
 			y: 13.5d
 			shape: "rsquare"
 			description: [
-				"The ME Conversion Monitor is the upgraded version of the ME Storage Monitor. It adds the ability to withdraw from or store items into the ME Network."
+				"The &bME Conversion Monitor&r is the upgraded version of the &aME Storage Monitor&r. It adds the ability to withdraw from or store items into the &eME Network&r."
 				""
 				"In addition to the storage monitor's interactions, conversion monitors support the following actions:"
 				"- Left-click: Extracts a stack of the shown item into your inventory"
@@ -2408,9 +2407,9 @@
 			y: 13.5d
 			shape: "rsquare"
 			description: [
-				"The Quantum Entangled Singularity is required to create a connection between two Quantum Network Bridges. They are always produced in matching pairs, to create a connection place 1 of the pair of Quantum Entangled Singularity into the ME Quantum Link Chamber of the bridge on each side."
+				"The &bQuantum Entangled Singularity&r is required to create a connection between two &aQuantum Network Bridges&r. They are always produced in matching pairs, to create a connection place 1 of the pair of &bQuantum Entangled Singularity&r into the &aME Quantum Link Chamber&r of the bridge on each side."
 				""
-				"They are crafted by causing a reaction between an Ender Pearl and a Singularity. Any explosive force should be enough to trigger the reaction. The two singularities produced are connected to one another, it's probably best to label these with names when you create them using an anvil."
+				"They are crafted by causing a reaction between an &dEnder Pearl&r and a &eSingularity&r (FROM AE). Any explosive force should be enough to trigger the reaction. The two singularities produced are connected to one another, it's probably best to label these with names when you create them using an anvil."
 				""
 				"If the server you're playing on doesn't allow regular TNT detonations, AE2 includes Tiny TNT, which will still explode but not cause any explosive damage."
 			]
@@ -2432,9 +2431,9 @@
 			y: 12.5d
 			shape: "rsquare"
 			description: [
-				"The Matter Condenser has two key functions, elimination of excess materials in a cheap manor and the production of Singularity and Matter Ball."
+				"The &bMatter Condenser&r has two key functions, elimination of excess materials in a cheap manor and the production of &eSingularity&r and &aMatter Ball&r."
 				""
-				"Can accept both fluids and items to be destroyed. Each item or fluid will count as one additional energy. This energy can be stored on ME Storage Components. 256 Energy is required to generate a Matter Ball, and 256,000 energy will be required for the Singularity."
+				"Can accept both fluids and items to be destroyed. Each item or fluid will count as one additional energy. This energy can be stored on &dME Storage Components&r. 256 Energy is required to generate a &aMatter Ball&r, and 256,000 energy will be required for the &eSingularity&r."
 			]
 			dependencies: ["47AC1C475DEE0FE4"]
 			id: "511ACED1E299766B"
@@ -2453,7 +2452,7 @@
 			x: 5.25d
 			y: 0.0d
 			shape: "square"
-			description: ["Hopefully with your Stainless Steel Drill in your Electric Quarry you have a decent amount of Titanium Ores to process. Using Manganese Sufluric Solution you can process the raw ore into an ingot in a Kanthal EBF. Just like Stainless Steel, the ingot you will get will be hot and will need to be cooled down before it can be used."]
+			description: ["Hopefully with your &bStainless Steel Drill&r in your &aElectric Quarry&r you have a decent amount of Titanium Ores to process. Using &7Manganese Sufluric Solution&r you can process the raw ore into an ingot in a &eKanthal EBF&r. Just like &bStainless Steel&r, the ingot you will get will be hot and will need to be cooled down before it can be used."]
 			dependencies: ["529FBE21C8B21DC1"]
 			id: "293DB25BD2827372"
 			tasks: [{
@@ -2490,7 +2489,7 @@
 			shape: "square"
 			subtitle: "Creative Flight!"
 			description: [
-				"If you already tackled Route A, and reached all the planets in Ad Astra, then you surely have enough materials to make the Jet Suit, which can now be upgraded into the Gravichestplate. It may be best to make a separate Jet Suit chestplate, as the Gravichestplate isn't airtight for future space endeavors."
+				"If you already tackled &aRoute A&r, and reached all the planets in &eAd Astra&r (Except Glacio), then you surely have enough materials to make the &cJet Suit&r, which can now be upgraded into the &bGravichestplate&r. It may be best to make a separate Jet Suit chestplate, as the &bGravichestplate&r isn't airtight for future space endeavors."
 				""
 				"For the first time, you now have access to creative flight in the pack. I don't think I need to describe how powerful this is."
 			]
@@ -2513,7 +2512,7 @@
 			y: -4.0d
 			shape: "rsquare"
 			description: [
-				"The Industrial Jackhammer is a lot like the Industrial Drill, but with some drawbacks and benefits. "
+				"The &bIndustrial Jackhammer&r is a lot like the &aIndustrial Drill&r, but with some drawbacks and benefits. "
 				""
 				"Using shift-right click you can toggle the area it will mine, however it will only efficiently mine stone. Great for clearing out large areas, but awful as an everyday pickaxe / tool."
 				""
@@ -2545,9 +2544,9 @@
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"With your newly acquired Desh, you can now create Space Stations around celestial bodies. You can create them by launching your rocket, then selecting Space Station when selecting destinations. To return to the station once it's created click Orbit instead."
+				"With your newly acquired &eDesh&r, you can now create &bSpace Stations&r around celestial bodies. You can create them by launching your rocket, then selecting &bSpace Station&r when selecting destinations. To return to the station once it's created click Orbit instead."
 				""
-				"Is building a station required for progression? No, but it sure is cool, and may prove a useful location to build the Space Probe multiblock."
+				"Is building a station required for progression? No, but it sure is cool, and may prove a useful location to build the &eSpace Probe Launcher&r multiblock."
 			]
 			dependencies: ["0D0CC636458E8446"]
 			id: "0784DA52E6B2F926"
@@ -2793,9 +2792,9 @@
 			shape: "rsquare"
 			subtitle: "Fireproof!"
 			description: [
-				"Ostrum's cold properties make for a great insulator for your gear! Finally you can upgrade your backpack!"
+				"&dOstrum&r's cold properties make for a great insulator for your gear! Finally you can upgrade your backpack!"
 				""
-				"The Blazing Backpack comes with the additional benefit of not burning in lava!"
+				"The &bBlazing Backpack&r comes with the additional benefit of not burning in lava!"
 				""
 				"It can also store 54 item stacks."
 			]
@@ -2816,19 +2815,19 @@
 			}]
 		}
 		{
-			title: "High Pressure Large Steam Boiler"
+			title: "High Pressure Large &7Steam&r Boiler"
 			icon: "modern_industrialization:high_pressure_large_steam_boiler"
 			x: 13.0d
 			y: -2.0d
 			shape: "square"
 			description: [
-				"The High Pressure Steam Boiler can produce up to 2048 EU/t worth of Steam. One mB of HP Steam is worth 8 mB of regular Steam. "
+				"The &bHigh Pressure Steam Boiler&r can produce up to 2048 EU/t worth of Steam. One mB of &7HP Steam&r is worth 8 mB of regular &7Steam&r. "
 				""
-				"Maximum efficiency is only reached under continuous operation. Only accepts High Pressure Water and High Pressure Heavy Water."
+				"Maximum efficiency is only reached under continuous operation. Only accepts &9High Pressure Water&r and &1High Pressure Heavy Water&r."
 				""
-				"It's not worth starting up the Boiler right now unless you have a significant enough Large Tank to take the High Pressure Steam or have set up the next multiblock, the Large Steam Turbine."
+				"It's not worth starting up the &bBoiler&r right now unless you have a significant enough &aLarge Tank&r to take the &7High Pressure Steam&r or have set up the next multiblock, the &bLarge Steam Turbine&r."
 				""
-				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the High Pressure Large Steam Boiler block in your inventory or by holding your wrench out with the High Pressure Large Steam Boiler placed."
+				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the &bHigh Pressure Large Steam Boiler&r block in your inventory or by holding your wrench out with the &bHigh Pressure Large Steam Boiler&r placed."
 			]
 			dependencies: ["2D1CE7720270D118"]
 			id: "26EF4E75B844E3BD"
@@ -2905,9 +2904,9 @@
 			y: 2.5d
 			shape: "square"
 			description: [
-				"Tungsten is an incredibly tough material that you will be needing moving forward. Due to its special characteristics, it can't be smelted in normal means and will need to be processed through an Implosion Chamber in order to get a decent amount."
+				"&dTungsten&r is an incredibly tough material that you will be needing moving forward. Due to its special characteristics, it can't be smelted in normal means and will need to be processed through an Implosion Chamber in order to get a decent amount."
 				""
-				"To get Tungsten Dust, you will first need to Macerate Tungsten Ore, which you get from the Electric Quarry or solid UU-Matter, and then Macerate the Raw Tungsten into dust."
+				"To get &dTungsten Dust&r, you will first need to &eMacerate&r &dTungsten Ore&r, which you get from the &eElectric Quarry&r or solid &dUU-Matter&r, and then &eMacerate&r the &dRaw Tungsten&r into dust."
 			]
 			dependencies: ["529FBE21C8B21DC1"]
 			size: 1.5d
@@ -2929,9 +2928,9 @@
 			shape: "square"
 			subtitle: "Welcome to EV"
 			description: [
-				"Welcome to the late game, time to make the EV-tiered machine hulls."
+				"Welcome to the late game, time to make the &eEV-tiered&r machine hulls."
 				""
-				"This marks the end of the chapter. You're ready to head into the Lategame!"
+				"This marks the end of the chapter. You're ready to head into the &dlategame&r!"
 			]
 			dependencies: ["4FDC0B405C330E4F"]
 			size: 2.0d
@@ -2952,7 +2951,7 @@
 			x: 20.0d
 			y: 0.0d
 			shape: "rsquare"
-			description: ["With the Titanium Drill you can obtain infinite Uranium and Iridium. This is not the only way to get these materials at this point, as you can make solid UU-Matter to craft the raw ores."]
+			description: ["With the &dTitanium Drill&r you can obtain infinite &aUranium&r and &bIridium&r. This is not the only way to get these materials at this point, as you can make solid &dUU-Matter&r to craft the raw ores."]
 			dependencies: ["78EE20BD0B4E84DE"]
 			id: "66B1A1FFF15E53B0"
 			tasks: [{
@@ -2980,7 +2979,7 @@
 			x: 19.5d
 			y: 1.75d
 			shape: "square"
-			description: ["With your new Processing Units you can now craft the large versions of the advanced components."]
+			description: ["With your new &bProcessing Units&r you can now craft the large versions of the advanced components."]
 			dependencies: ["4FDC0B405C330E4F"]
 			id: "78EE20BD0B4E84DE"
 			tasks: [
@@ -3005,7 +3004,7 @@
 			x: 19.0d
 			y: 0.0d
 			shape: "rsquare"
-			description: ["The Highly Advanced Upgrade is the second to last upgrade available for your machines. It offers a 4x EU overclock as compared to the previous tier."]
+			description: ["The &bHighly Advanced Upgrade&r is the second to last upgrade available for your machines. It offers a 4x EU overclock as compared to the previous tier."]
 			dependencies: ["78EE20BD0B4E84DE"]
 			id: "560374EE3ACBFFB5"
 			tasks: [{
@@ -3025,9 +3024,9 @@
 			shape: "rsquare"
 			subtitle: "One man's trash..."
 			description: [
-				"The Matter Fabricator is an advanced machine that can create UU-Matter from scrap fed into it."
+				"The &bMatter Fabricator&r is an advanced machine that can create &dUU-Matter&r from scrap fed into it."
 				""
-				"UU-Matter can be used to craft different types of ores and items, as well converted into liquid UU-Matter in the future."
+				"&dUU-Matter&r can be used to craft different types of ores and items, as well converted into liquid &dUU-Matter&r in the future."
 			]
 			dependencies: ["78EE20BD0B4E84DE"]
 			id: "6288718990D88342"
@@ -3047,7 +3046,7 @@
 			y: 3.75d
 			shape: "rsquare"
 			subtitle: "Nearly magic!"
-			description: ["UU-Matter can craft a variety of things, some of the most notable is Iridium, Platinum, and Chromium. There are other ways to get infinite amounts of those ores, but this offers another viable method in generating these resources."]
+			description: ["&dUU-Matter&r can craft a variety of things, some of the most notable is &bIridium&r, &aPlatinum&r, and &cChromium&r. There are other ways to get infinite amounts of those ores, but this offers another viable method in generating these resources."]
 			dependencies: ["6288718990D88342"]
 			size: 1.5d
 			id: "097A441985DCD241"
@@ -3066,7 +3065,7 @@
 			x: 11.0d
 			y: 5.0d
 			shape: "square"
-			description: ["Industrial TNT is required for recipes in the Implosion Compressor. Regular TNT would add too much impurity into the reaction, and therefore cannot be used."]
+			description: ["&bIndustrial TNT&r is required for recipes in the &dImplosion Compressor&r. Regular TNT would add too much impurity into the reaction, and therefore cannot be used."]
 			dependencies: ["0DF6FF0A1E872DC8"]
 			id: "53F8A79D2BE1F5C0"
 			tasks: [{
@@ -3117,7 +3116,7 @@
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"After taking down the Wither, you can use the Nether Star alongside Blastproof Plates to upgrade your backpack to the Withered Backpack. This bad boy can hold 66 item stacks. "
+				"After taking down the Wither, you can use the Nether Star alongside Blastproof Plates to upgrade your backpack to the &bWithered Backpack&r. This bad boy can hold 66 item stacks. "
 				""
 				"It maintains the fireproof status of the previous backpack."
 			]
@@ -3140,7 +3139,7 @@
 			shape: "rsquare"
 			subtitle: "A worthy upgrade"
 			description: [
-				"With materials from the end and your newly acquired Iridium you can craft the final tier of backpack, the Endless Backpack."
+				"With materials from the end and your newly acquired Iridium you can craft the final tier of backpack, the &bEndless Backpack&r."
 				""
 				"While not entirely \"endless,\" it does boast a whopping 90 item stacks. And yes, it still is fireproof."
 			]
