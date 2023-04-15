@@ -1,11 +1,4 @@
 ServerEvents.recipes(e => {
-    let REMOVED_RECIPE = [
-        'modern_industrialization:alloy/mixer/electrum/dust',
-        'modern_industrialization:alloy/mixer/cupronickel/dust',
-        'modern_industrialization:alloy/mixer/electrum/tiny_dust',
-        'modern_industrialization:alloy/mixer/cupronickel/tiny_dust'
-    ]
-    REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
