@@ -1,7 +1,7 @@
 {
 	id: "0B7DC5CF240DF210"
 	group: "05A88037F88880CD"
-	order_index: 2
+	order_index: 1
 	filename: "create"
 	title: "Create"
 	icon: "create:wrench"
@@ -10,10 +10,10 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -3.0d
-			y: 0.5d
+			x: 0.0d
+			y: 0.0d
 			description: ["Andesite Alloy is the basis of the Create mod. Don't make too much at the beginning, as you will unlock a more efficient recipe once you have a Mechanical Mixer and Basin."]
-			dependencies: ["0548E4DEA1B29E91"]
+			size: 2.0d
 			id: "632520CC26B43DD5"
 			tasks: [{
 				id: "3B5B2247CE93D71B"
@@ -22,25 +22,1830 @@
 			}]
 		}
 		{
-			title: "Chapters vs. Mod Sections"
-			x: -3.0d
-			y: -1.5d
+			title: "Shafts"
+			x: 3.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["&bShafts&r are one of the most important components in &eCreate&r, they can transfer &arotational force&r over distance and are a key component in &ecogs&r and other &6machines&r."]
+			dependencies: ["632520CC26B43DD5"]
+			id: "3239CF4A9CF033B1"
+			tasks: [{
+				id: "56356502CF0376E8"
+				type: "item"
+				item: "create:shaft"
+			}]
+			rewards: [{
+				id: "6324A6D478E6B75F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Cogs"
+			x: 5.0d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["3239CF4A9CF033B1"]
+			id: "51E52A2FF80C88B9"
+			tasks: [
+				{
+					id: "31936ED93A554D82"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "7BCF156CDA199504"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+			rewards: [{
+				id: "315CAF0F8483DFC7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
 			description: [
-				"While chapters will highlight what must be done to progress, the mod sections, such as the one you are currently in, are to show off everything capable by the mod."
+				"&bAndesite Tunnels&r can be used to cover your &aMechanical Belts&r, as well as split items to another &aMechanical Belt&r."
 				""
-				"The Create mod is very expansive, and while only acting as a slight gate into Modern Industrializations, there is so much more you can do with it. From trains, to ore processing, to automating potions and other materials, there is so much you can do. If you've never played around with the Create mod I'd highly recommend it, but its usage is not required to finish this pack."
+				"Check the &ePonder&r for more information."
 			]
 			dependencies: ["632520CC26B43DD5"]
-			id: "2A36D1F22B7AF9B3"
+			id: "326FE40599BCBF5E"
 			tasks: [{
-				id: "76CD0CE55AE54E4E"
+				id: "3306E2F80D951C0A"
+				type: "item"
+				item: "create:andesite_tunnel"
+			}]
+			rewards: [{
+				id: "6166D520E204A057"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			description: ["The &bAndesite Funnel&r can be used to extract or insert items into inventories. It only moves one item at a time and cannot be filtered."]
+			dependencies: ["632520CC26B43DD5"]
+			id: "3F8AE551391E2AAC"
+			tasks: [{
+				id: "17B2A44E462FEC31"
+				type: "item"
+				item: "create:andesite_funnel"
+			}]
+			rewards: [{
+				id: "42891EECD71842A3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			description: [
+				"The &bSticker&r can be used to attach blocks to the &bSticker&r itself. The state can be toggled with a &credstone pulse&r. "
+				""
+				"If the &bSticker&r is moved in a contraption while attached to a block, it will move with it."
+			]
+			dependencies: ["632520CC26B43DD5"]
+			id: "53E8235B83062412"
+			tasks: [{
+				id: "0A2A583CD7A7EC5B"
+				type: "item"
+				item: "create:sticker"
+			}]
+			rewards: [{
+				id: "2D250F069A7DB789"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -13.5d
+			y: -4.0d
+			description: ["The &bSteam Engine&r is the king of &arotational force&r generation. These can be a little complicated to setup, so I highly suggest checking the &ePonder&r scene for more information."]
+			dependencies: ["029C56FD6F1A36F0"]
+			id: "193BF21914D516D4"
+			tasks: [{
+				id: "3C393D2879AEC9FB"
+				type: "item"
+				item: "create:steam_engine"
+			}]
+			rewards: [{
+				id: "726AF1DBBFC62363"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -6.5d
+			y: -7.5d
+			description: ["The &bNozzle&r can be placed in front of an &aEncased Fan&r to distribute its effects in all directions."]
+			dependencies: ["29D31374AED2C5CA"]
+			id: "3556AF68516726A7"
+			tasks: [{
+				id: "41773EAF46DA3939"
+				type: "item"
+				item: "create:nozzle"
+			}]
+			rewards: [{
+				id: "0166E51786322C77"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.5d
+			y: -5.5d
+			description: [
+				"The &bMechanical Plough&r can be used in &dcontraptions&r to automate the breaking of blocks that don't have solid collision boxes, such as &etorches, levers, pressure plates, minecart rails, etc.&r"
+				""
+				"The broken items will be placed into any inventory connected to the &dcontraption."
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "54C28E82A9D14BD6"
+			tasks: [{
+				id: "3EE0C1E635313AFD"
+				type: "item"
+				item: "create:mechanical_plough"
+			}]
+			rewards: [{
+				id: "23C6AE9610D69607"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -6.5d
+			y: -5.5d
+			description: [
+				"The &bMechanical Harvester&r can be attached to contraptions to automate the farming of crops. When the &dcontraption&r moves over a crop, the &bMechanical Harvester&r will break and replant the seeds automatically. "
+				""
+				"Any connected inventory, such as chests, vaults, etc., will be filled with whatever the &bMechanical Harvester&r collects."
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "02F4E31DE3C32451"
+			tasks: [{
+				id: "4125D879E54DD4C2"
+				type: "item"
+				item: "create:mechanical_harvester"
+			}]
+			rewards: [{
+				id: "4134B65F4661C04C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -7.5d
+			y: 2.0d
+			description: [
+				"The &bMechanical Drill&r can be used to automatically mine the block in front of it. It can be used in &dcontraptions&r to make tunnel bores. "
+				""
+				"When used in a &dcontraption&r it will not require &arotational force&r."
+			]
+			dependencies: ["4F4C5DEE88EABE32"]
+			id: "00E0C91FE5B41AAB"
+			tasks: [{
+				id: "2A308BE0F295F56B"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+			rewards: [{
+				id: "6ADC831B0DB7B3CF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -8.5d
+			y: 4.5d
+			description: [
+				"The &bMechanical Arm&r can be used to automate input and output from multiple locations. The speed of the arm is dependent on the speed of your &arotational force&r."
+				""
+				"Be sure to check the &ePonder&r scene for this one!"
+			]
+			dependencies: ["533DF50DD1D042B2"]
+			id: "39A18229DA7BA475"
+			tasks: [{
+				id: "7BA62AAEF2F48D8A"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+			rewards: [{
+				id: "23BEE39C2031CE05"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Chassis"
+			x: -1.5d
+			y: 4.0d
+			description: ["&bLinear&r and &bRadial Chassis&r can be used to connect blocks to &dcontraptions&r."]
+			dependencies: ["632520CC26B43DD5"]
+			id: "4D50D8A56A41A02B"
+			tasks: [
+				{
+					id: "5A7CA80CF2B00B10"
+					type: "item"
+					item: "create:linear_chassis"
+				}
+				{
+					id: "45F60CE5E84C1E92"
+					type: "item"
+					item: "create:radial_chassis"
+				}
+			]
+			rewards: [{
+				id: "792CD2A1137630B2"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			description: ["The &bHand Crank&r can be used to manually provide &arotational force&r. Prolonged usage will make the user &cvery hungry&r."]
+			dependencies: ["632520CC26B43DD5"]
+			id: "427BC6F222164EA4"
+			tasks: [{
+				id: "495F2CE128889586"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+			rewards: [{
+				id: "125781D1690CEB7B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -15.5d
+			y: 6.0d
+			description: [
+				"The &bDisplay Board&r can be used to display realtime information when provided with &arotational force&r. "
+				""
+				"You can apply text either through a &cNametag&r or a &bDisplay Link&r. If you need to know more, I'd recommend checking the &ePonder&r for this block."
+			]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "1267AB38FC5D1702"
+			tasks: [{
+				id: "72A6D53AFFC2B5FC"
+				type: "item"
+				item: "create:display_board"
+			}]
+			rewards: [{
+				id: "5D17C19FE730B88B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.0d
+			description: ["The &bDepot&r can be used as a stationary belt element. You can place items on the &bDepot&r by right-clicking. Items can be taken off the &bDepot&r using &dRobot Arms&r or &cChutes&r."]
+			dependencies: ["4F4C5DEE88EABE32"]
+			id: "4B648AE558C01675"
+			tasks: [{
+				id: "4C1E931164B2A71A"
+				type: "item"
+				item: "create:depot"
+			}]
+			rewards: [{
+				id: "41775B5C2D7AD037"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -7.5d
+			y: -6.5d
+			description: ["The &bCopper Valve Handle&r can be used to apply manual &arotational force&r by right-clicking, similar to the &cHand Crank&r."]
+			dependencies: ["51356454DB10752D"]
+			id: "2ADF64052E72B660"
+			tasks: [{
+				id: "3E215B4A6A0E35DD"
+				type: "item"
+				item: "create:copper_valve_handle"
+			}]
+			rewards: [{
+				id: "5482AEDC950E38E4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			description: [
+				"The &bCart Assembler&r will attach structures above it to minecarts passing below it when powered by a &credstone signal&r. These are then called &aMinecart Contraptions&r. "
+				""
+				"&aMinecart Contraptions&r can be picked up by shift-right clicking them with a &eWrench&r."
+			]
+			dependencies: ["632520CC26B43DD5"]
+			id: "78FE278994F8313E"
+			tasks: [{
+				id: "3BD4690F8E0F9662"
+				type: "item"
+				item: "create:cart_assembler"
+			}]
+			rewards: [{
+				id: "1075117625B4A91F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Mixer \\& Basin"
+			x: -9.0d
+			y: -2.0d
+			description: ["The &bMechanical Mixer&r and &aBasin&r will allow you to mix certain dusts and ingots. If you've followed normal &eChapter&r progression, you will have made this to access &eModern Industrialization&r."]
+			dependencies: ["51356454DB10752D"]
+			id: "27E1D6ADECEF5F5C"
+			tasks: [
+				{
+					id: "046BE563E5AA6E06"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "7B4FBAB72697C8E1"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+			rewards: [{
+				id: "4EE6A7F3FEE96AEB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Diving Suit"
+			x: 0.5d
+			y: 4.0d
+			description: [
+				"The &bDiving Helmet&r can be used to breathe underwater when combined with a filled &cCopper Backtank&r. To fill the &cCopper Backtank&r, place it on a source of &arotational force&r. The faster the speed, the faster the tank will fill."
+				""
+				"The &bDiving Boots&r will allow the user to sink the to bottom of the body of liquid and move freely as if they were on land. &cYou cannot swim with these on&r. They also come with the added benefit that you won't be pushed by &aMechanical Belts&r with them on."
+			]
+			dependencies: ["632520CC26B43DD5"]
+			id: "10FBE866C3067840"
+			tasks: [
+				{
+					id: "38AA1FFCABED1D01"
+					type: "item"
+					item: {
+						id: "create:diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "52F9918274FA1EBA"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+				{
+					id: "73CBF76CCBD9F5FB"
+					type: "item"
+					item: {
+						id: "create:diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "36C7C97E4F266596"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -6.5d
+			y: 0.0d
+			description: ["&bAndesite Casings&r are made by right-clicking a stripped log with an &aAndesite Alloy&r. These are the basis of a lot of machines in &eCreate&r."]
+			dependencies: ["632520CC26B43DD5"]
+			id: "4F4C5DEE88EABE32"
+			tasks: [{
+				id: "1C7BEC121DA7234A"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+			rewards: [{
+				id: "624EC3F7D92E01EE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Windmill Bearing"
+			icon: "create:windmill_bearing"
+			x: 2.5d
+			y: -2.0d
+			description: [
+				"The &bWindmill Bearing&r provides exceptional stress units to your &arotation network&r, but lacks a lot in speed. "
+				""
+				"Requires at least 8x &bSails&r to be attached to operate. Rotation is sent from the bottom of the block."
+			]
+			dependencies: ["3239CF4A9CF033B1"]
+			id: "562334D89C7F25D7"
+			tasks: [
+				{
+					id: "4757800061263F48"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "3FD3B1790FA03335"
+					type: "item"
+					item: "create:white_sail"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "55CBB7B13D1EBBD0"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			description: ["The &bTurntable&r spins any entity on top of it when connected to &arotational force&r."]
+			dependencies: ["3239CF4A9CF033B1"]
+			id: "5CD3F629B0ED08A8"
+			tasks: [{
+				id: "6BB5058F2FD126A5"
+				type: "item"
+				item: "create:turntable"
+			}]
+			rewards: [{
+				id: "7ECA09A964C3B3AE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -6.5d
+			y: -2.0d
+			dependencies: ["4F4C5DEE88EABE32"]
+			size: 1.5d
+			id: "51356454DB10752D"
+			tasks: [{
+				id: "6562E4399AEE2343"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "41E9796BBE4E824B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.0d
+			description: ["The &bMechanical Bearing&r can be used to transform any block attached to it into a &dcontraption&r and rotates it based on the &arotational speed&r provided."]
+			dependencies: ["3239CF4A9CF033B1"]
+			id: "61127720B0515A9F"
+			tasks: [{
+				id: "273524AB5422D28C"
+				type: "item"
+				item: "create:mechanical_bearing"
+			}]
+			rewards: [{
+				id: "7DED68AE5679A9FE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -6.5d
+			y: -6.5d
+			description: [
+				"The &bEncased Fan&r can be used to push &eentities&r as well as being used to do &aBulk Blasting, Smelting, Smoking, and Haunting.&r"
+				""
+				"The direction of the fan is based on the direction of your &arotational force&r."
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "29D31374AED2C5CA"
+			tasks: [{
+				id: "672187D694093A4F"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+			rewards: [{
+				id: "1623E1F2E59E8B29"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -6.0d
+			y: 3.0d
+			description: ["The &bClutch&r can be used to stop rotation when provided with a &credstone signal&r."]
+			dependencies: ["4F4C5DEE88EABE32"]
+			id: "45030D0575117544"
+			tasks: [{
+				id: "5B92C001E4C3D86B"
+				type: "item"
+				item: "create:clutch"
+			}]
+			rewards: [{
+				id: "3008398AFAA833E3"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Create Mechanics"
+			x: 0.0d
+			y: -2.0d
+			description: [
+				"While briefly explained in the first chapter, &eCreate&r has some important mechanics that need to be understood to get the most out of the mod."
+				""
+				"&bRotational power&r is the basis of making any &eCreate&r machine work. It's split into two parts &aspeed&r and &dstress&r. &aSpeed&r is how fast the rotation is, and &dstress&r is how many machines at that speed can be used."
+				""
+				"Additionally, &eCreate&r includes a mechanic known as &dcontraptions&r, which is any grouping of blocks that are moved with &aMechanical Bearings&r, &bCart Assemblers&r, &cRope Pulleys&r, etc. You cannot place blocks directly on &dcontraptions&r, the will need to be swapped back into their block form, however contraptions offer free rotation for blocks like &bMechanical Drills&r and &aMechanical Saws&r."
+			]
+			dependencies: ["632520CC26B43DD5"]
+			id: "2688BECD1AE321D9"
+			tasks: [{
+				id: "385FEC16EF238B54"
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
 			rewards: [{
-				id: "7E331507A58AC9FF"
+				id: "0521E9C41BC58991"
 				type: "xp"
-				xp: 100
+				xp: 10
+			}]
+		}
+		{
+			x: -15.5d
+			y: 2.5d
+			description: [
+				"While most of &eCreate&r is not gated by any other mod, paper is gated behind the &6Mixer&r from &eModern Industrialization&r. You will need that before you can make &bSand Paper&r and &dPolished Rose Quartz&r!"
+				""
+				"To use, have the &bSand Paper&r either in your main or offhand with a &dRose Quartz&r in the other and hold right-click. "
+			]
+			id: "08C156EC82878D36"
+			tasks: [{
+				id: "5C8965F0A211F693"
+				type: "item"
+				item: {
+					id: "create:sand_paper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "32D5860E1632F837"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -16.5d
+			y: 4.0d
+			description: ["&dPolished Rose Quartz&r is an important material for making &bElectron Tubes&r, which are then used for more advanced &eCreate&r machines."]
+			dependencies: ["08C156EC82878D36"]
+			id: "2B1123DC479F00CB"
+			tasks: [{
+				id: "4E1116675BB91E5C"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
+			rewards: [{
+				id: "793B8EC4E7E62B4A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -14.0d
+			y: 6.0d
+			description: ["The &bDisplay Link&r can be used to display dynamic data on &aDisplay Boards&r. First right-click the &aDisplay Border&r with the &bDisplay Link&r then right-click the block you want to read from with the &bDisplay Link&r."]
+			dependencies: ["1267AB38FC5D1702"]
+			id: "4B5EFD81AA487CC0"
+			tasks: [{
+				id: "72CB78E4C6A5424D"
+				type: "item"
+				item: "create:display_link"
+			}]
+			rewards: [{
+				id: "3726B29E93D1020B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Brass"
+			x: -13.0d
+			y: -2.0d
+			subtitle: "Instruments not included"
+			dependencies: ["03B0AC7D643C8EC2"]
+			id: "029C56FD6F1A36F0"
+			tasks: [{
+				id: "3446BCB0BF2C50F7"
+				type: "item"
+				item: "techreborn:brass_ingot"
+			}]
+			rewards: [{
+				id: "2AE764CD32124F15"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -10.0d
+			y: 4.0d
+			description: [
+				"The &bPrecision Mechanism&r is an important crafting material for high-end &eCreate&r machines, most notably the &aSpeed Controller&r and &dRobot Arm&r."
+				""
+				"The &aSequenced Recipe&r for the &bPrecision Mechanism&r is only an 80% chance of success, meaning you plan to automate producing these, you will need to account for instances where it &cfails&r."
+			]
+			dependencies: ["5280346E492CDFF6"]
+			id: "533DF50DD1D042B2"
+			tasks: [{
+				id: "16C3CEAEAE0076E2"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+			rewards: [{
+				id: "77ED0D226E6BB497"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -13.0d
+			y: 4.0d
+			dependencies: [
+				"029C56FD6F1A36F0"
+				"2B1123DC479F00CB"
+			]
+			id: "1FB2AB80E328D561"
+			tasks: [{
+				id: "0C064565C5557DF6"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -2.0d
+			dependencies: ["029C56FD6F1A36F0"]
+			id: "38F45285404934C9"
+			tasks: [{
+				id: "31822179DF5991A5"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+		}
+		{
+			x: -15.5d
+			y: 7.0d
+			description: [
+				"The &bContent Observer&r can be used to... observe the contents... of whatever it's pointed into."
+				""
+				"It will output a &credstone signal&r if a configured item is in the observed container or transferred through a funnel."
+				""
+				"You can also attach a &aDisplay Link&r to it."
+			]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "69BA71FCCE7AFA07"
+			tasks: [{
+				id: "4FEFE4764B9BDCAB"
+				type: "item"
+				item: "create:content_observer"
+			}]
+			rewards: [{
+				id: "64715A34C901336F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -17.5d
+			y: 7.0d
+			description: [
+				"The &bBrass Tunnels&r can cover your &aMechanical Belts&r and offer multiple &dfiltering&r and &ddistribution&r methods. "
+				""
+				"I'd recommend checking the &ePonder&r for this item!"
+			]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "0D7D5019B3497608"
+			tasks: [{
+				id: "5D2C908BAFB13A52"
+				type: "item"
+				item: "create:brass_tunnel"
+			}]
+			rewards: [{
+				id: "30912E93A92F1116"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -16.5d
+			y: 7.0d
+			description: ["The &bBrass Funnel&r can insert or extract up to a stack of items at a time and can be filtered."]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "06DB051FC1D3AB47"
+			tasks: [{
+				id: "17A17806517FDF0F"
+				type: "item"
+				item: "create:brass_funnel"
+			}]
+			rewards: [{
+				id: "3BCB845FBD6E8792"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -17.0d
+			y: -6.5d
+			description: [
+				"&bTrain Signals&r can be used to ensure that your automatic &dtrains&r do not cross sections of track occupied by another &dtrain&r."
+				""
+				"If you've played &eFactorio&r before, these are pretty much the same as &bTrain Signals&r in that game. If you're unfamiliar with the concept, check the &ePonder&r scene."
+			]
+			dependencies: ["45827521A02CAC95"]
+			id: "0AF1648BAD9A6BC2"
+			tasks: [{
+				id: "1D4F4C957C6E5AD3"
+				type: "item"
+				item: "create:track_signal"
+			}]
+			rewards: [{
+				id: "571425D54E4DE580"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -17.5d
+			y: 8.0d
+			description: [
+				"The &bSequenced Gearshift&r can be used to fine tune rotation. "
+				""
+				"Once powered by a &credstone signal&r, it will begin to follow the list of instructions."
+				""
+				"A &acomparator&r can read the current progress of the instructions."
+			]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "5CAF0951F5C41801"
+			tasks: [{
+				id: "749EFFFE86A2A01F"
+				type: "item"
+				item: "create:sequenced_gearshift"
+			}]
+			rewards: [{
+				id: "72E5DC8B2D30BA8D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -16.5d
+			y: 6.0d
+			description: ["&bNixie Tubes&r can be used to display a &credstone&r signal strength, or right-clicked with a &enametag&r to display text."]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "70D5D91870A5D460"
+			tasks: [{
+				id: "0C95FB7F70D62C0A"
+				type: "item"
+				item: "create:nixie_tube"
+			}]
+			rewards: [{
+				id: "11B544DEE8D8B53C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -16.5d
+			y: 0.75d
+			description: [
+				"The &bMechanical Crafter&r allows for automating the crafting of items. Some items can only be crafted with the &bMechanical Crafter&r."
+				""
+				"The &bMechanical Crafter&r will automatically start crafting if a recipe is found when provided &arotational force&r. If it doesn't start crafting, apply a &credstone pulse&r to begin the craft. Alternatively, you can apply &aCrafter Slot Covers&r to the empty slots."
+			]
+			dependencies: [
+				"38F45285404934C9"
+				"2B1123DC479F00CB"
+			]
+			size: 1.5d
+			id: "1A75E897313419C8"
+			tasks: [{
+				id: "7573AD0D429516AB"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+			rewards: [{
+				id: "0B2B6D29D4375E3F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -17.5d
+			y: 6.0d
+			description: ["The &bController Rail&r is like a vanilla &ePowered Rail&r, except the speed can be controlled by providing a &credstone signal&r."]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "55D37DDFCB09FDE5"
+			tasks: [{
+				id: "4A5AD2613AF876DB"
+				type: "item"
+				item: "create:controller_rail"
+			}]
+			rewards: [{
+				id: "25AC348E3907308A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -16.5d
+			y: 9.0d
+			description: [
+				"The &bClockwork Bearing&r can be used to make custom clocks that display the time in the world."
+				""
+				"This is slightly complicated to setup, make sure to check the &ePonder&r scene for more information."
+			]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "11C9E678E8183077"
+			tasks: [{
+				id: "5A435FB74640ABA2"
+				type: "item"
+				item: "create:clockwork_bearing"
+			}]
+			rewards: [{
+				id: "71EF2ED18D8FA933"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -17.5d
+			y: 9.0d
+			description: ["The &bAdjustable Chain Gearshift&r works simularly to a regular &aChain Drive&r, however when powered by a &credstone signal&r, the rest of the &bAdjustable Chain Gearshifts&r in the row will have their speed doubled."]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "0845ACA6AC5C6133"
+			tasks: [{
+				id: "21D290AE34B67651"
+				type: "item"
+				item: "create:adjustable_chain_gearshift"
+			}]
+			rewards: [{
+				id: "5300926CA147E7C7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -12.5d
+			y: -4.0d
+			description: ["&bPulse Repeaters&r send a &credstone pulse&r after a configurable delay."]
+			dependencies: ["029C56FD6F1A36F0"]
+			id: "333E6F1B069BAD9B"
+			tasks: [{
+				id: "7568FA3C10A7B432"
+				type: "item"
+				item: "create:pulse_repeater"
+			}]
+			rewards: [{
+				id: "0372084D59B7420D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -11.5d
+			y: -4.0d
+			description: ["&bPulse Extenders&r can be used to extend the duration output of a &credstone signal&r."]
+			dependencies: ["029C56FD6F1A36F0"]
+			id: "7EB86063FC203097"
+			tasks: [{
+				id: "058573CE268EA468"
+				type: "item"
+				item: "create:pulse_extender"
+			}]
+			rewards: [{
+				id: "263355A4C7D89BBB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -16.5d
+			y: 8.0d
+			description: [
+				"The &bSmart Fluid Pipe&r allows you to control the fluids running through your pipes."
+				""
+				"When placed at the source, you can control what fluid to extract. When placed further down the pipe network, you can choose which fluid to allow to pass."
+			]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "2B492DF28D6BA003"
+			tasks: [{
+				id: "501700FCC08315CC"
+				type: "item"
+				item: "create:smart_fluid_pipe"
+			}]
+			rewards: [{
+				id: "2004E94303244B04"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -14.5d
+			y: -4.0d
+			description: ["The &bPlacard&r is similar to vanilla &eItem Frames&r, except these are &dcontraption&r friendly!"]
+			dependencies: ["029C56FD6F1A36F0"]
+			id: "1BBC92A8192D3088"
+			tasks: [{
+				id: "45B92EFA9CBF2461"
+				type: "item"
+				item: "create:placard"
+			}]
+			rewards: [{
+				id: "093C4D7E6FE36B21"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -15.5d
+			y: 8.0d
+			description: ["&bSmart Chutes&r are like &aChutes&r but offer a lot more configuration and filter capability."]
+			dependencies: ["2B1123DC479F00CB"]
+			id: "5A04649F71C48F37"
+			tasks: [{
+				id: "44B95D7EA63A3FAA"
+				type: "item"
+				item: "create:smart_chute"
+			}]
+			rewards: [{
+				id: "35E3AA14771195DE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -16.0d
+			y: -4.5d
+			description: ["&bTrain Casings&r can be made by applying &dObsidian Plates&r to &6Brass Casings&r. Making &dObsidian Plates&r can be done with either a &eModern Industrialization&r &bCompressor&r or through the normal &eCreate&r method of spouting &clava&r on &dobsidian dust&r in a &esequenced assembly&r."]
+			dependencies: ["38F45285404934C9"]
+			id: "45827521A02CAC95"
+			tasks: [{
+				id: "69434CA7B111CEED"
+				type: "item"
+				item: "create:railway_casing"
+			}]
+			rewards: [{
+				id: "0AC1882B04D00D2C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.5d
+			description: [
+				"The &bSpout&r can be used to fill fluid containers with a provided fluid. The input fluid will need to be &cpumped&r into the &bSpout&r. "
+				""
+				"You can either use a &aDepot&r or &dMechanical Belt&r to hold the item fluid will be put into. The &dMechanical Belt&r will hold the item in place until the &bSpout&r has fluid to input."
+			]
+			dependencies: ["7D701BCCC5BD6418"]
+			id: "769CFB937D75A903"
+			tasks: [{
+				id: "392DD2DC75CE884E"
+				type: "item"
+				item: "create:spout"
+			}]
+			rewards: [{
+				id: "5A0D8B8511B18743"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -17.0d
+			y: -8.0d
+			description: [
+				"The &bTrain Controls&r are used to control your &dtrain&r. You can start controlling your &dtrain&r by right-clicking the controls. Press shift to stop controlling your &dtrain&r."
+				""
+				"Hold spacebar when approaching a &aTrain Station&r to come to a stop at the station."
+			]
+			dependencies: ["56719D1E4C517695"]
+			id: "64C5F12BE26D9E50"
+			tasks: [{
+				id: "0B57099497457A44"
+				type: "item"
+				item: "create:controls"
+			}]
+			rewards: [{
+				id: "1DB9EA3FBC47EFB7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -15.0d
+			y: -6.5d
+			description: [
+				"The &bTrain Observer&r can be used to detect &dtrains&r rolling over sections of tracks. When a &dtrain&r is detected, it will output a &credstone signal&r."
+				""
+				"The &dtrain&r cargo can be filtered by right-clicking the detector with the item. A &credstone signal&r will not be sent unless the &dtrain&r contains that cargo."
+			]
+			dependencies: ["45827521A02CAC95"]
+			id: "5D71201E0F538DA2"
+			tasks: [{
+				id: "7B3BE404AB82C687"
+				type: "item"
+				item: "create:track_observer"
+			}]
+			rewards: [{
+				id: "10C672765D8CC82E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -16.0d
+			y: -6.5d
+			description: [
+				"The &bTrain Station&r can be used to create &dtrains&r. &dTrains&r can be added by using &aTrain Casings&r on &bTrain Station tracks&r. "
+				""
+				"There's a lot of mechanics related to &dtrains&r, and I suggest checking the &ePonder&r scenes for all these items if you need to learn everything about &dtrains&r."
+			]
+			dependencies: ["45827521A02CAC95"]
+			id: "56719D1E4C517695"
+			tasks: [{
+				id: "4C5BFD194831B4D0"
+				type: "item"
+				item: "create:track_station"
+			}]
+			rewards: [{
+				id: "0DB05B2937C79D22"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -15.0d
+			y: -8.0d
+			description: ["With the &bTrain Schedule&r you can fully automate your trains. There's a lot to unpack here that the &ePonder&r scene would do a much better job of than this quest description."]
+			dependencies: ["56719D1E4C517695"]
+			id: "7B2901618284D7E5"
+			tasks: [{
+				id: "3F886A2F97008867"
+				type: "item"
+				item: "create:schedule"
+			}]
+			rewards: [{
+				id: "709555AAD94AA3DE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -11.5d
+			y: 2.5d
+			dependencies: ["5280346E492CDFF6"]
+			id: "078843982FA6DF90"
+			tasks: [{
+				id: "38AAE2980E3890DE"
+				type: "item"
+				item: "create:track"
+			}]
+		}
+		{
+			title: "Sequenced Crafting"
+			x: -11.5d
+			y: 4.0d
+			description: [
+				"Some materials in &eCreate&r need to be processed in a specific order. In &dREI&r you can see in which order an item needs to have machines interact with it to produce the desired outcome."
+				""
+				"Some &bSequenced Recipes&r will need to be run multiple times, and some do not guarantee an output 100% of the time. &dREI&r contains all the information you will need for &bSequenced Recipes&r."
+			]
+			dependencies: ["1FB2AB80E328D561"]
+			id: "5280346E492CDFF6"
+			tasks: [{
+				id: "34BA2E902145A0AF"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "612502C1F52BDE40"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Moving Fluids"
+			x: -8.5d
+			y: -6.5d
+			description: [
+				"The &bMechanical Pump&r is used to push fluids through &aPipes&r. The direction of the &arotational force&r applied to the &bMechanical Pump&r will determine the direction it pushes fluids. You can inverse the behavior, without having to change the &arotational force&r direction by right-clicking the &bMechanical Pump&r with a &eCreate&r &6Wrench&r."
+				""
+				"&bFluid Pipes&r can be used to transfer fluids. They don't actually transfer fluids on their own, and will need the &aMechanical Pump&r to move the fluids."
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "15C0B7A968E7CA42"
+			tasks: [
+				{
+					id: "1A0D3FE3E350EBA8"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+				{
+					id: "5D1BDD60B05610F1"
+					type: "item"
+					item: "create:fluid_pipe"
+				}
+			]
+			rewards: [{
+				id: "6E3996A5C389AA90"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.0d
+			description: ["&bCopper Casings&r are a basic casing mainly used in &9fluid&r related items in &eCreate&r."]
+			id: "7D701BCCC5BD6418"
+			tasks: [{
+				id: "636E5C6033D98419"
+				type: "item"
+				item: "create:copper_casing"
+			}]
+			rewards: [{
+				id: "308E95B9A62824F1"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.5d
+			y: -6.5d
+			description: [
+				"&bChutes&r can be used to transfer items from inventories vertically. You can right-click with a wrench to toggle viewing the &dglass&r on the side of the &bChute&r. "
+				""
+				"If an &aEncased Fan&r is powered below pushing upwards, items will be sent up rather than down."
+				""
+				"You can also place them &ddiagonally&r."
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "414B56DC1F435AC1"
+			tasks: [{
+				id: "2CAAE93DCFF5492E"
+				type: "item"
+				item: "create:chute"
+			}]
+			rewards: [{
+				id: "0DDD14156853A9A8"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -1.5d
+			y: -5.5d
+			description: [
+				"The &bItem Drain&r is the counterpart to the &aSpout&r, as it drains items rather than filling them. "
+				""
+				"Items can be sent down a &dMechanical Belt&r to be automatically unloaded into the &bItem Drain&r."
+			]
+			dependencies: ["7D701BCCC5BD6418"]
+			id: "0DDD6FE36906140E"
+			tasks: [{
+				id: "663ACAFEB8F3BCE5"
+				type: "item"
+				item: "create:item_drain"
+			}]
+			rewards: [{
+				id: "4D3E4DC24974AC99"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.5d
+			description: [
+				"The &bPortable Fluid Interface&r is used to move fluids from your &dcontraptions&r. You will need a pair to connect to the contraption and whatever pipes you have to move the fluid."
+				""
+				"The interface will connect whenever it rotates around to the non-&dcontraption&r &bPortable Fluid Interface&r."
+				""
+				"For more information, check the &ePonder&r scene."
+			]
+			dependencies: ["7D701BCCC5BD6418"]
+			id: "6F5B129B002EF12E"
+			tasks: [{
+				id: "1C8766C788A71537"
+				type: "item"
+				item: "create:portable_fluid_interface"
+			}]
+			rewards: [{
+				id: "0974FC5C4A274680"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			description: [
+				"The &bHose Pulley&r can be used to fill or drain a body of fluid. Pumping into the &bHose Pulley&r will deposit that fluid at the level of the spout. Pumping out of the &bHose Pulley&r will begin pulling fluid from where the spout is. "
+				""
+				"The spout can be raised / lowered by rotating the side of the &bHose Pulley&r."
+				""
+				"If pumping from a body of fluid with greater than 10,000 source blocks, it will be considered &dinfinite&r. This means you won't have to worry about draining the &9ocean&r or the &clava lakes&r in the &4Nether&r."
+			]
+			dependencies: ["7D701BCCC5BD6418"]
+			id: "505CFF1BDC44772A"
+			tasks: [{
+				id: "38B64095C234D35D"
+				type: "item"
+				item: "create:hose_pulley"
+			}]
+			rewards: [{
+				id: "3141FE22E7FACC00"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.0d
+			description: ["The &bMechanical Belt&r can be used to move items to other machines. They need a &aShaft&r with &drotational force&r to move the &bMechanical Belt&r. "]
+			dependencies: ["3239CF4A9CF033B1"]
+			id: "0A13C4E6C760EE80"
+			tasks: [{
+				id: "0F3113E1761DC4D0"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "56872E19CABA8011"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			description: ["The &bMillstone&r can process items by grinding them down. Items cant be placed or inserted at the top and extracted from the bottom."]
+			dependencies: ["4F4C5DEE88EABE32"]
+			id: "29F54D8CD8A2BEFB"
+			tasks: [{
+				id: "4141615F2490CD8E"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [{
+				id: "46B39EC8385B0127"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Crushing Wheels"
+			x: -18.0d
+			y: 2.0d
+			description: [
+				"The &bCrushing Wheels&r allow you to crush down objects into useful components. They need to be spinning towards each other to work."
+				""
+				"You can use these to duplicate ores, crush stones, and much else (but you're probably better off using &eModern Industrialization&r machines)."
+			]
+			dependencies: ["1A75E897313419C8"]
+			id: "0CC6804816350D62"
+			tasks: [{
+				id: "36DDC9481E1C7465"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+			rewards: [{
+				id: "0DE138344B4F3E21"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.0d
+			description: ["The &bWrench&r is an essential tool in &eCreate&r. It allows you to &drotate&r blocks, break &eCreate&r blocks instantly by shift-right clicking, as well as several other important configurations."]
+			dependencies: ["51356454DB10752D"]
+			id: "1F3EC7D6BFE3E0A8"
+			tasks: [{
+				id: "5C966DB07940F29D"
+				type: "item"
+				item: "create:wrench"
+			}]
+			rewards: [{
+				id: "0D1C74473CF7F771"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -8.5d
+			y: -7.5d
+			description: [
+				"The &bWeighted Ejector&r will launch items with &arotational force&r. "
+				""
+				"Shift-right click when holding a &bWeighted Ejector&r to select its destination. If the destination is not in a direct line to the &bWeighted Ejector&r, it will not work."
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "7E6F464A895F0A6B"
+			tasks: [{
+				id: "5596184FE878FCE5"
+				type: "item"
+				item: "create:weighted_ejector"
+			}]
+			rewards: [{
+				id: "6AA2C9BE1D87DAAD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			icon: "create:schematicannon"
+			x: 1.5d
+			y: 5.0d
+			description: [
+				"The &bSchematicannon&r, &bSchematic Table&r, and &bEmpty Schematics&r to save, share, and build blueprints in your world."
+				""
+				"The &bSchematicannon&r requires a placed blueprint, gunpowder, and materials to function. Materials can be provided from adjacent inventories."
+				""
+				"The &bSchematic Table&r can be used to save or load schematics onto a blueprint."
+			]
+			dependencies: ["632520CC26B43DD5"]
+			id: "7EADACA2CBF87DD0"
+			tasks: [
+				{
+					id: "7839C6BE57357443"
+					type: "item"
+					item: "create:schematicannon"
+				}
+				{
+					id: "628277B76FB77794"
+					type: "item"
+					item: "create:schematic_table"
+				}
+				{
+					id: "56EBFE76843A7B7C"
+					type: "item"
+					item: "create:empty_schematic"
+				}
+			]
+			rewards: [{
+				id: "3B8AAFD1F6FB05CB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Blaze Burners"
+			x: -11.0d
+			y: -2.0d
+			description: [
+				"The &bEmpty Blaze Burner&r can be used on &cBlazes&r in the &4Nether&r to capture them. Captured &cBlazes&r can be used to heat &aBasins&r for certain recipes."
+				""
+				"Recipes with the &cHeated&r attribute will need the &cBlaze&r to be active. This can be done by right-clicking the &cBlaze&r with a flammable material. The duration the &cBlaze&r is active is based on the given item."
+				""
+				"&bSuper-Heated&r status requires a &cBlaze&r to be fed with a &dBlaze Cake&r."
+			]
+			dependencies: ["27E1D6ADECEF5F5C"]
+			id: "03B0AC7D643C8EC2"
+			tasks: [
+				{
+					id: "016FB33909975584"
+					type: "item"
+					item: "create:empty_blaze_burner"
+				}
+				{
+					id: "64436485AEC26D59"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
+			rewards: [{
+				id: "4D09F1D73498E2FF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -7.5d
+			y: -5.5d
+			description: ["The &bFluid Valve&r can be used to control the flow of fluids through a pipe. Applying &arotational force&r to the &bFluid Valve&r will change which direction it will allow fluids to flow."]
+			dependencies: ["51356454DB10752D"]
+			id: "7FB2C2856B76DB74"
+			tasks: [{
+				id: "02D6B1E406C43C35"
+				type: "item"
+				item: "create:fluid_valve"
+			}]
+			rewards: [{
+				id: "625DE5702503B6DE"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.5d
+			description: [
+				"&bFluid Tanks&r can be used to store large amounts of fluids. &cNote that &eModern Industrialization&c fluids cannot be stored in this type of tank&r."
+				""
+				"Fluids cannot be inserted manually with a bucket, and will need to be pumped in/out using &aFluid Pumps&r."
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "1F865DC37FBB0043"
+			tasks: [{
+				id: "394EB5A495A191B2"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+			rewards: [{
+				id: "2B3FE4094FD2CD4A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -5.5d
+			y: -7.5d
+			description: ["The &bRedstone Contact&r can be used to send a &credstone signal&r when another &bRedstone Contact&r comes in contact with the other. This also applies when one of them is a part of the &dcontraption&r."]
+			dependencies: ["51356454DB10752D"]
+			id: "5B9A86DA10D7F745"
+			tasks: [{
+				id: "23FDCDF1EFEF365C"
+				type: "item"
+				item: "create:redstone_contact"
+			}]
+			rewards: [{
+				id: "1D25965C388C3F69"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.5d
+			y: -6.5d
+			description: ["The &bRope Pulley&r can be used to move blocks up and down. Attached blocks are convereted into &dcontraptions&r when moved. The direction and speed of the provided &arotational force&r will affect the direction and speed of the &bRope Pulley&r."]
+			dependencies: ["51356454DB10752D"]
+			id: "0BFECFA644A74207"
+			tasks: [{
+				id: "640376A778D99AC3"
+				type: "item"
+				item: "create:rope_pulley"
+			}]
+			rewards: [{
+				id: "2010FA834F272656"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.5d
+			description: ["The &bToolbox&r allows you to store commonly used &eCreate&r items and access them while the &bToolbox&r is placed in the world nearby. It can be opened with a keybind, which you will need to set in the controls under the &dAccess Nearby Toolboxes&r."]
+			dependencies: ["51356454DB10752D"]
+			id: "3D3251680D5863BD"
+			tasks: [{
+				id: "74DFB40C0283FBE9"
+				type: "item"
+				item: "create:brown_toolbox"
+			}]
+			rewards: [{
+				id: "11E57194FAAB22BD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -18.0d
+			y: -1.0d
+			description: ["The &bWand of Symmetry&r will place a mirror that will allow you to symmetrically place blocks."]
+			dependencies: ["1A75E897313419C8"]
+			id: "5659EE03A46576FC"
+			tasks: [{
+				id: "3883CE8F23D3B4D0"
+				type: "item"
+				item: "create:wand_of_symmetry"
+			}]
+			rewards: [{
+				id: "58CB392D5805B86F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -18.0d
+			y: 0.0d
+			description: [
+				"The &bExtendo-Grip&r is a handy tool that allows you to extend the reach of your character. By default, the durability is consumed when using the grip, however you can use a &aCopper Backtank&r to avoid causing durability damage."
+				""
+				"Can be used in the offhand."
+			]
+			dependencies: ["1A75E897313419C8"]
+			id: "12F3C46F5D37860C"
+			tasks: [{
+				id: "0FE4242E5F617E2B"
+				type: "item"
+				item: {
+					id: "create:extendo_grip"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1AA87FDE997D3D43"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -18.0d
+			y: 1.0d
+			subtitle: "Thwomp"
+			description: ["The &bPotato Cannon&r can be use to shoot potatoes, and other materials, at high speeds. If you have a &aCopper Backtank&r, no durability will be used."]
+			dependencies: ["1A75E897313419C8"]
+			id: "5367CC5C90BBD3DC"
+			tasks: [{
+				id: "4B3A6BE15288FE29"
+				type: "item"
+				item: {
+					id: "create:potato_cannon"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "66F3C2EAE2E7AC59"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -18.5d
+			y: -4.5d
+			description: ["The &bLinked Controller&r can be used to remotely activate &aRedstone Links&r by pressing a bound button."]
+			dependencies: ["64A77382B60421C1"]
+			id: "24027FEAD3837B46"
+			tasks: [{
+				id: "64594C7B66C78BC7"
+				type: "item"
+				item: "create:linked_controller"
+			}]
+			rewards: [{
+				id: "350D198F23FF8B9C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			description: [
+				"The &bEngineer's Goggles&r can be used to display the &dstress usage&r on your &arotational network&r."
+				""
+				"They will also display detailed &9fluid&r information when looking at &aFluid Pipes&r / &bFluid Tanks&r."
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "7D34B7B67526BD03"
+			tasks: [{
+				id: "1C4B5661D4501D37"
+				type: "item"
+				item: "create:goggles"
+			}]
+			rewards: [{
+				id: "0E2377D2B947DA6C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -3.5d
+			y: -3.0d
+			description: [
+				"&bSuper Glue&r is used to connect blocks together when they are used in &dcontraptions&r."
+				""
+				"Right-click to set connection points, and left click to break existing connections."
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "6673D6E07AABD478"
+			tasks: [{
+				id: "47EF3C414E261403"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "443A30053D0096F4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -16.0d
+			y: -8.0d
+			description: ["&dTrains&r are in reality large moving &eentities&r, and players will find it difficult to stay on the &dtrain&r as it's moving. You can make &bSeats&r to sit down on your &dtrain&r!"]
+			dependencies: ["56719D1E4C517695"]
+			id: "2533F5C184FB0D23"
+			tasks: [{
+				id: "59E5A951F8A32312"
+				type: "item"
+				item: "create:white_seat"
+			}]
+			rewards: [{
+				id: "665294CFF2CB16D6"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.5d
+			description: [
+				"The &bRotation Speed Controller&r can be used to change the speed of your &arotational force&r sent into it."
+				""
+				"A &bLarge Cogwheel&r will need to be attached to the top to output the new speed."
+			]
+			dependencies: ["533DF50DD1D042B2"]
+			id: "657605737FCB93FD"
+			tasks: [{
+				id: "787E578DD1E9712E"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+			rewards: [{
+				id: "6A68340A68427407"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -4.5d
+			y: -5.5d
+			description: [
+				"The &bMechanical Saw&r can be used to (when provided &arotational force&r) chop down entire trees that are in front of the blade, or automatically cut certain blocks into other blocks."
+				""
+				"You can specify which block to cut into by applying a &dfilter&r on the &bMechanical Saw&r.|"
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "6A9C3ED132B45EA3"
+			tasks: [{
+				id: "2F8877BC1430B9BD"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+			rewards: [{
+				id: "5CDD6EB5B3BDB540"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			description: [
+				"The &bWater Wheel&r is the simplest form of generating free &arotational force&r. The rotation of the &bWater Wheel&r can be changed by shift-clicking when placing instead."
+				""
+				"Flowing &9water&r will need to be ran over the &bWater Wheel&r to start moving it."
+			]
+			dependencies: ["51E52A2FF80C88B9"]
+			id: "3FF27DBE79D8AC49"
+			tasks: [{
+				id: "69239D1A0179B00C"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [{
+				id: "42EF4E80CD612F14"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			icon: "create:mechanical_piston"
+			x: -7.5d
+			y: -7.5d
+			description: ["The &bMechanical Piston&r can move blocks in front of it. The &aSticky&r variant will also let you retract the blocks. The distance the blocks are pushed can be adjusted by adding &dPiston Extension Poles&r."]
+			dependencies: ["51356454DB10752D"]
+			id: "13DA8C85956D397F"
+			tasks: [
+				{
+					id: "5704033714B7F888"
+					type: "item"
+					item: "create:mechanical_piston"
+				}
+				{
+					id: "41F234DE9882C408"
+					type: "item"
+					item: "create:piston_extension_pole"
+				}
+			]
+			rewards: [{
+				id: "6E4E213773A57ACA"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Gantry Carriages"
+			icon: "create:gantry_carriage"
+			x: -4.5d
+			y: -7.5d
+			description: ["&bGantry Carriages&r are &dcontraptions&r that move along &aGantry Shafts&r. These are a rather complex &dcontraption&r, make sure to check the &ePonder&r scene."]
+			dependencies: ["51356454DB10752D"]
+			id: "529E83275EA5533F"
+			tasks: [
+				{
+					id: "5E67FC35BC434D0A"
+					type: "item"
+					item: "create:gantry_carriage"
+				}
+				{
+					id: "7FF0A43D2DBF4E3E"
+					type: "item"
+					item: "create:gantry_shaft"
+				}
+			]
+			rewards: [{
+				id: "1EF334E45BA4484D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -17.0d
+			y: -4.5d
+			description: ["The &bRedstone Link&r can be used to send &credstone signals&r wirelessly. You can set the channel by right-clicking with any item on the &bRedstone Link&r."]
+			dependencies: ["38F45285404934C9"]
+			id: "64A77382B60421C1"
+			tasks: [{
+				id: "574EBF4232E0263B"
+				type: "item"
+				item: "create:redstone_link"
+			}]
+			rewards: [{
+				id: "2AF4BFCA49FE468C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -7.0d
+			y: 3.0d
+			description: ["The &bEncased Chain Drive&r can be used to transfer the same rotation direction down a straight line. "]
+			dependencies: ["4F4C5DEE88EABE32"]
+			id: "0BC17503972F9151"
+			tasks: [{
+				id: "5E4A1A6F901E01FE"
+				type: "item"
+				item: "create:encased_chain_drive"
+			}]
+			rewards: [{
+				id: "4E56B4B980E9E41F"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]
