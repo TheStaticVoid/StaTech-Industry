@@ -1,13 +1,25 @@
 {
 	id: "3E16F2F46B00419C"
 	group: "05A88037F88880CD"
-	order_index: 6
+	order_index: 5
 	filename: "utilities"
 	title: "Utilities"
 	icon: "ae2:nether_quartz_wrench"
 	subtitle: ["Small, but important additions"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [{
+		x: 9.0d
+		y: 4.0d
+		width: 1.0d
+		height: 1.0d
+		rotation: 0.0d
+		image: "computercraft:block/computer_normal_front_blink"
+		hover: ["Click to check out the CC:Restitched wiki!"]
+		click: "https://tweaked.cc/"
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			x: 6.0d
@@ -216,10 +228,10 @@
 						Count: 1b
 						tag: {
 							state: {
-								data: { }
 								state: {
 									Name: "minecraft:air"
 								}
+								data: { }
 								serializer: "buildinggadgets:dummy_serializer"
 							}
 							energy: 500000.0d
@@ -234,10 +246,10 @@
 						Count: 1b
 						tag: {
 							state: {
-								data: { }
 								state: {
 									Name: "minecraft:air"
 								}
+								data: { }
 								serializer: "buildinggadgets:dummy_serializer"
 							}
 							energy: 500000.0d
@@ -251,6 +263,7 @@
 						id: "buildinggadgets:gadget_copy_paste"
 						Count: 1b
 						tag: {
+							energy: 500000.0d
 							"buildinggadgets:template_key": {
 								template_id: [I;
 									-1638511729
@@ -259,7 +272,6 @@
 									-1770359759
 								]
 							}
-							energy: 500000.0d
 						}
 					}
 				}
@@ -669,10 +681,10 @@
 					tag: {
 						BlockEntityTag: {
 							Items: [ ]
-							x: -198
+							y: 64
 							id: "kibe:cooler"
 							z: 126
-							y: 64
+							x: -198
 						}
 					}
 				}
@@ -877,6 +889,51 @@
 			}]
 			rewards: [{
 				id: "29EC0300BFDF9512"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Echo Locator"
+			x: 7.5d
+			y: 5.5d
+			shape: "rsquare"
+			description: ["This tool can be used to locate resource geodes underground. To use it, place it down on the ground, right click it, and it will attempt to locate a nearby geode."]
+			id: "131DE00E5538A45C"
+			tasks: [{
+				id: "1D7A17989A8566BF"
+				type: "item"
+				title: "Echo Locator"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "geodes:echo_locators"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3AAD71A6C064636D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: 7.5d
+			y: 4.0d
+			description: [
+				"&bCC:Restitched&r is a mod that adds programmable computers to the game. With these you can write custom programs to help with automation, have &aTurtles&r that will mine or farm for you!"
+				""
+				"It's an extremely complex mod, and definitely has a learning curve. I recommend checking the wiki by clicking the picture to the right of this quest!"
+			]
+			id: "787CC6E0C5E2D17A"
+			tasks: [{
+				id: "5CD1D26667C846D6"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+			rewards: [{
+				id: "01B1D61DAE305199"
 				type: "xp"
 				xp: 10
 			}]
