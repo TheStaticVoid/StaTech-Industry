@@ -222,6 +222,34 @@ ServerEvents.recipes(e => {
         null
     );
 
+    // -- CALORITE MACHINE CASING -- //
+    assembler(
+        16,
+        200,
+        [
+            { amount: 8, tag: 'c:calorite_plates' },
+            { amount: 1, tag: 'c:calorite_gears' }
+        ],
+        [
+            { amount: 1, item: mi('calorite_machine_casing') }
+        ],
+        null,
+        null
+    );
+
+    // -- CALORITE MACHINE PIPE CASING -- //
+    assembler(
+        16,
+        200,
+        [
+            { amount: 1, item: mi('calorite_machine_casing') },
+            { amount: 6, item: mi('calorite_curved_plate')}
+        ],
+        [
+            { amount: 1, item: mi('calorite_machine_casing_pipe')}
+        ]
+    );
+
     // -- SPACE HELMET -- //
     assembler(
         16,
@@ -260,7 +288,7 @@ ServerEvents.recipes(e => {
         16,
         300,
         [
-            { amount: 5, tag: 'c:stee_plates' },
+            { amount: 5, tag: 'c:steel_ingots' },
             { amount: 2, tag: mc('wool') }
         ],
         [

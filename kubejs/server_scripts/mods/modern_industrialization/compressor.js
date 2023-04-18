@@ -84,4 +84,20 @@ ServerEvents.recipes(e => {
             { amount: 1, item: tr('lazurite_plate') }
         ]
     );
+
+    // -- CALORITE CURVED PLATE -- //
+    compressor(
+        2,
+        100,
+        [ { amount: 1, tag: 'c:calorite_plates' } ],
+        [ { amount: 1, item: mi('calorite_curved_plate') } ]
+    );
+
+    // -- TUNGSTENSTEEL CURVED PLATE -- //
+    compressor(
+        2,
+        100,
+        [ { amount: 1, tag: 'c:tungstensteel_plates' } ],
+        [ { amount: 1, item: mi('tungstensteel_curved_plate') } ]
+    );
 })

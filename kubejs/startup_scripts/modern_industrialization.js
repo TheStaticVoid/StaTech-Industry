@@ -29,6 +29,11 @@ MIMachineEvents.registerCasings(e => {
     e.register('calorite_machine_casing');
 });
 
+// broken? 
+// MIMachineEvents.addEbfTiers(e => {
+//     e.add('modern_industrialization:tungstensteel_coil', 1024, ' (Tungstensteel Tier)');
+// });
+
 MIMachineEvents.registerMachines(e => {
 
     // -- ALLOY SMELTER SINGLE BLOCK -- //
@@ -290,17 +295,16 @@ MIRegistrationEvents.registerFluids(e => {
 MIMaterialEvents.addMaterials(e => {
     e.createMaterial('Desh', 'desh', 0xe9ba5d,
         builder => {
-            builder.addParts('dust', 'tiny_dust', 'rod', 'gear', 'ring', 'blade', 'bolt', 'large_plate', 'curved_plate')
-            .machineCasing(8.0)
-            .pipeCasing(8.0)
+            builder.addParts('dust', 'tiny_dust', 'rod', 'gear', 'ring', 'blade', 'bolt', 'large_plate', 'curved_plate', 'drill', 'drill_head')
             .defaultRecipes()
         });
     
     e.createMaterial('Tungstensteel', 'tungstensteel', 0x677680,
         builder => {
-            builder.addParts('rod', 'gear', 'ring', 'coil', 'blade', 'bolt', 'large_plate', 'curved_plate')
+            builder.addParts('rod', 'gear', 'ring', 'coil', 'blade', 'bolt', 'large_plate', 'curved_plate', 'wire')
             .barrel("Tungstensteel Barrel", "tungstensteel_barrel", 16384)
             .tank("Tungstensteel Tank", "tungstensteel_tank", 256)
+            .cable('ev')
             .defaultRecipes()
         });
     
