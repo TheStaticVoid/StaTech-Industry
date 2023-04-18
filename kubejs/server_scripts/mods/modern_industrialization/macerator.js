@@ -17,7 +17,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['item_outputs'] = item_outputs;
         
-            e.custom(newRecipe);
+        e.custom(newRecipe);
     }
 
     // -- WHEAT DOUGH -- //
@@ -54,5 +54,25 @@ ServerEvents.recipes(e => {
         [
             { amount: 2, item: tr('calcite_dust') }
         ]   
+    );
+
+    // -- DESH DUST -- //
+    macerator(
+        2,
+        100,
+        [ { amount: 1, tag: 'c:desh_ingots' } ],
+        [ { amount: 1, item: mi('desh_dust') } ]
+    );
+    macerator(
+        2,
+        100,
+        [ { amount: 1, tag: 'c:desh_plates' } ],
+        [ { amount: 1, item: mi('desh_dust') } ]
+    );
+    macerator(
+        2,
+        100,
+        [ { amount: 1, tag: 'c:desh_nuggets' } ],
+        [ { amount: 1, item: mi('desh_tiny_dust') } ]
     );
 });

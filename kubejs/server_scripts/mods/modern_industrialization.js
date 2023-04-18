@@ -27,6 +27,7 @@ ServerEvents.recipes(e => {
         mi('vanilla_recipes/packager/chains'),
         mi('materials/kanthal/craft/coil'),
         mi('materials/superconductor/craft/coil'),
+        mi('materials/tungstensteel/craft/coil'),
         mi('armor/gravichestplate'),
         mi('electric_age/component/craft/ultradense_metal_ball_asbl')
     ];
@@ -100,6 +101,21 @@ ServerEvents.recipes(e => {
         H: mi('advanced_machine_hull')
     });
 
+    // -- SPACE PROBE LAUNCHER -- //
+    e.shaped(mi('space_probe_launcher'), [
+        'PUP',
+        'GHG',
+        'MCM'
+    ],
+    {
+        P: mi('calorite_machine_casing_pipe'),
+        U: mi('processing_unit'),
+        G: mi('calorite_gear'),
+        H: mi('highly_advanced_machine_hull'),
+        M: mi('large_advanced_motor'),
+        C: mi('calorite_machine_casing')
+    });
+
     // -- TUNGSTENSTEEL TANK -- //
     e.shaped(mi('tungstensteel_tank'), [
         'PPP',
@@ -120,6 +136,81 @@ ServerEvents.recipes(e => {
     {
         P: '#c:tungstensteel_plates',
         B: '#c:wooden_barrels'
+    });
+
+    // -- CALORITE MACHINE CASING -- //
+    e.shaped(mi('calorite_machine_casing'), [
+        'PPP',
+        'PGP',
+        'PPP'
+    ],
+    {
+        P: '#c:calorite_plates',
+        G: '#c:calorite_gears'
+    });
+
+    // -- CALORITE MACHINE PIPE CASING -- // 
+    e.shaped(mi('calorite_machine_casing_pipe'), [
+        'C C',
+        'CMC',
+        'C C'
+    ],
+    {
+        C: mi('calorite_curved_plate'),
+        M: mi('calorite_machine_casing')
+    });
+
+    // -- CALORITE GEAR -- //
+    e.shaped(mi('calorite_gear'), [
+        'PBP',
+        'BRB',
+        'PBP'
+    ],
+    {
+        P: '#c:calorite_plates',
+        B: mi('calorite_bolt'),
+        R: mi('calorite_ring')
+    });
+
+    // -- TUNGSTENSTEEL GEAR -- //
+    e.shaped(mi('tungstensteel_gear'), [
+        'PBP',
+        'BRB',
+        'PBP'
+    ],
+    {
+        P: '#c:tungstensteel_plates',
+        B: mi('tungstensteel_bolt'),
+        R: mi('tungstensteel_ring')
+    });
+
+    // -- DESH DRILL HEAD -- //
+    e.shaped(mi('desh_drill_head'), [
+        'BCP',
+        'GRC',
+        'BGB'
+    ],
+    {
+        B: mi('desh_bolt'),
+        C: mi('desh_curved_plate'),
+        G: mi('desh_gear'),
+        P: astra('desh_plate'),
+        R: mi('desh_rod')
+    });
+
+    // -- DESH DRILL -- //
+    e.shaped(mi('desh_drill'), [
+        'GIH',
+        'MUI',
+        'CMG'
+    ],
+    {
+        G: '#c:iron_gears',
+        I: '#modern_industrialization:item_pipes',
+        H: mi('desh_drill_head'),
+        M: mi('large_advanced_motor'),
+        U: mi('processing_unit'),
+        C: mi('annealed_copper_wire')
     });
 
     // -- Gravichestplate -- //
@@ -193,7 +284,8 @@ ServerEvents.tags('item', e => {
 
     const EV_WIRE = [
         mi('annealed_copper_cable'),
-        mi('platinum_cable')
+        mi('platinum_cable'),
+        mi('tungstensteel_cable')
     ]
     EV_WIRE.forEach(id => { e.add('kubejs:ev_wire', id) });
 

@@ -51,7 +51,9 @@ ServerEvents.recipes(e => {
         astra('recipes/ostrum_tank'),
         astra('recipes/ostrum_engine'),
         astra('recipes/calorite_tank'),
-        astra('recipes/calorite_engine')
+        astra('recipes/calorite_engine'),
+        astra('recipes/solar_panel'),
+        astra('recipes/launch_pad')
     ];
     AD_ASTRA_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove({ type: astra('fuel_conversion') });
@@ -174,5 +176,16 @@ ServerEvents.recipes(e => {
         N: astra('netherite_space_suit'),
         B: '#c:calorite_blocks',
         G: astra('calorite_engine')
+    });
+
+    // -- LAUNCHPAD -- //
+    e.shaped(astra('launch_pad'), [
+        'SIS',
+        'ISI',
+        'SIS'
+    ],
+    {
+        S: mi('steel_large_plate'),
+        I: mi('iron_large_plate')
     });
 });

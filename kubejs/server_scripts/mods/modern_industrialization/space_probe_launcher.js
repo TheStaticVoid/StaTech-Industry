@@ -1,12 +1,33 @@
 ServerEvents.recipes(e => {
     let astra = (id) => `ad_astra:${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
     let kjs = (id) => `kubejs:${id}`;
 
-    e.recipes.modern_industrialization.space_probe_launcher(128, 12000)
-        .itemIn(kjs('space_probe'))
-        .itemOut('64x ' + astra('deepslate_desh_ore'))
-        .itemOut('64x ' + astra('deepslate_ostrum_ore'))
-        .itemOut('64x ' + astra('deepslate_calorite_ore'))
-        .itemOut('64x ' + astra('deepslate_ice_ore'))
-        .biome(astra('orbit'));
+    let spl = (eu, duration, item_inputs, item_outputs) => {
+        let newRecipe = {
+            type: mi('space_probe_launcher'),
+            eu: eu,
+            duration: duration,
+            process_conditions: [{'biome': 'ad_astra:orbit', 'id': 'modern_industrialization:biome'} ]
+        }
+
+        if (item_inputs)
+            newRecipe['item_inputs'] = item_inputs;
+        if (item_outputs)
+            newRecipe['item_outputs'] = item_outputs;
+        
+        e.custom(newRecipe);
+    }
+
+    spl(
+        128,
+        12000,
+        [ { amount: 1, item: kjs('space_probe') } ],
+        [ 
+            { amount: 64, item: astra('deepslate_desh_ore') },
+            { amount: 64, item: astra('deepslate_ostrum_ore') },
+            { amount: 64, item: astra('deepslate_calorite_ore') },
+            { amount: 64, item: astra('deepslate_ice_shard_ore') }
+        ]
+    );
 });

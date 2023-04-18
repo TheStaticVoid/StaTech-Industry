@@ -45,7 +45,8 @@ ServerEvents.recipes(e => {
         tr('crafting_table/battery/lapotronic_orb'),
         tr('crafting_table/armor/lapotronic_orbpack'),
         tr('scrapbox/auto/saw_dust'),
-        tr('crafting_table/dust/electrum_dust_from_small')
+        tr('crafting_table/dust/electrum_dust_from_small'),
+        tr('crafting_table/armor/cloaking_device')
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 

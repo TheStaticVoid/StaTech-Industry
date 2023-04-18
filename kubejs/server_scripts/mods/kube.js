@@ -5,18 +5,16 @@ ServerEvents.recipes(e => {
 
     // -- SPACE PROBE -- //
     e.shaped(kjs('space_probe'), [
-        'GID',
-        'MCF',
-        'APG'
+        'FCD',
+        'TMC',
+        'ETF'
     ],
     {
-        D: mi('steel_drill_head'),
-        I: '#modern_industrialization:item_pipes',
-        F: '#modern_industrialization:fluid_pipes',
-        G: mi('iron_gear'),
-        M: mi('advanced_motor'),
-        P: mi('advanced_pump'),
-        C: mi('digital_circuit'),
-        A: mi('aluminum_cable')
+        D: mi('desh_drill'),
+        T: mi('titanium_tank'),
+        M: mi('processing_unit'),
+        F: astra('rocket_fin'),
+        E: astra('desh_engine'),
+        C: mi('aluminum_gear')
     });
 });
