@@ -230,25 +230,25 @@ ServerEvents.recipes(e => {
     // -- Quantum Helmet -- //
     e.smithing(
         mi('quantum_helmet'),
-        astra('jet_suit_helmet'),
+        tr('quantum_helmet'),
         mi('quantum_upgrade')
     );
     // -- Quantum Chestplate -- //
     e.smithing(
         mi('quantum_chestplate'),
-        mi('gravichestplate'),
+        tr('quantum_chestplate'),
         mi('quantum_upgrade')
     );
     // -- Quantum Leggings -- //
     e.smithing(
         mi('quantum_leggings'),
-        astra('jet_suit_pants'),
+        tr('quantum_leggings'),
         mi('quantum_upgrade')
     );
     // -- Quantum Boots -- //
     e.smithing(
         mi('quantum_boots'),
-        astra('jet_suit_boots'),
+        tr('quantum_boots'),
         mi('quantum_upgrade')
     );
     // -- Quantum Sword -- //

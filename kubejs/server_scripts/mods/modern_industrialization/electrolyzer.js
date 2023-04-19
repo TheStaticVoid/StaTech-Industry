@@ -107,4 +107,129 @@ ServerEvents.recipes(e => {
         null,
         null
     );
+
+    // -- CINNABAR DUST -- //
+    electrolyzer(
+        32,
+        800,
+        [
+            { amount: 2, tag: 'c:cinnabar_dusts' }
+        ],
+        [
+            { amount: 1, item: mi('sulfur_dust') }
+        ],
+        null,
+        null
+    );
+
+    // -- PERIDOT DUST -- //
+    electrolyzer(
+        32,
+        500,
+        [
+            { amount: 9, tag: 'c:peridot_dusts' }
+        ],
+        [
+            { amount: 2, item: tr('magnesium_dust') },
+            { amount: 2, item: mc('raw_iron') },
+            { amount: 1, item: mi('silicon_dust') }
+        ],
+        null,
+        [
+            { amount: 100, fluid: mi('oxygen') }
+        ]
+    );
+
+    // -- SAPPHIRE DUST -- //
+    electrolyzer(
+        32,
+        600,
+        [
+            { amount: 8, tag: 'c:sapphire_dusts' }
+        ],
+        [
+            { amount: 2, item: mi('aluminum_dust') }
+        ],
+        null,
+        null
+    );
+
+    // -- SODALITE DUST -- //
+    electrolyzer(
+        32,
+        500,
+        [
+            { amount: 23, tag: 'c:sodalite_dusts' }
+        ],
+        [
+            { amount: 3, item: mi('aluminum_dust') },
+            { amount: 4, item: mi('sodium_dust') },
+            { amount: 3, item: mi('silicon_dust') }
+        ],
+        null,
+        null
+    );
+
+    // -- SPHALERITE DUST -- //
+    electrolyzer(
+        32,
+        400,
+        [
+            { amount: 2, tag: 'c:sphalerite_dusts' }
+        ],
+        [
+            { amount: 1, item: tr('zinc_dust') },
+            { amount: 1, item: mi('sulfur_dust') }
+        ],
+        null,
+        null
+    );
+
+    // -- PYROPE DUST -- //
+    electrolyzer(
+        32,
+        400,
+        [
+            { amount: 20, tag: 'c:pyrope_dusts' }
+        ],
+        [
+            { amount: 3, item: tr('magnesium_dust') },
+            { amount: 2, item: mi('aluminum_dust') },
+            { amount: 3, item: mi('silicon_dust') }
+        ],
+        null,
+        null
+    );
+
+    // -- ALAMANDINE DUST -- //
+    electrolyzer(
+        32,
+        400,
+        [
+            { amount: 20, tag: 'c:alamandine_dusts' }
+        ],
+        [
+            { amount: 3, item: mc('raw_iron') },
+            { amount: 2, item: mi('aluminum_dust') },
+            { amount: 3, item: mi('silicon_dust') }
+        ],
+        null,
+        null
+    );
+
+    // -- SPESSARTINE DUST -- //
+    electrolyzer(
+        32,
+        400,
+        [
+            { amount: 20, tag: 'c:spessartine_dusts' }
+        ],
+        [
+            { amount: 3, item: mi('manganese_dust') },
+            { amount: 2, item: mi('aluminum_dust') },
+            { amount: 3, item: mi('silicon_dust') }
+        ],
+        null,
+        null
+    );
 });
