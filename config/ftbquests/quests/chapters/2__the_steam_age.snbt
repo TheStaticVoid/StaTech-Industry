@@ -1175,7 +1175,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 3.0d
 			y: 5.5d
 			shape: "square"
 			description: [
@@ -1479,7 +1479,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 6.0d
 			y: 5.5d
 			shape: "square"
 			description: [
@@ -2625,7 +2625,7 @@
 			x: 13.5d
 			y: 12.0d
 			shape: "rsquare"
-			description: ["The Resin Basin can be used to semi-automate extracting sap from Rubber Trees. When placed at the base of the tree, they will slowly extract Sap from the tree. This Sap can be collected by right-clicking the basin. "]
+			description: ["The &bResin Basin&r can be used to semi-automate extracting &aSap&r from &dRubber Trees&r. When placed at the base of the tree, they will slowly extract &aSap&r from the tree. This &aSap&r can be collected by right-clicking the basin. "]
 			dependencies: ["68DF10A8AB2D074A"]
 			id: "476DDBFB1BC389C0"
 			tasks: [{
@@ -2733,6 +2733,40 @@
 			}]
 			rewards: [{
 				id: "63A766DB373BD75D"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 3.0d
+			y: 7.5d
+			description: ["The &eTechReborn&r &bStorage Buffer&r can hold only one item, but can be used as a buffer between your machines. It has &aconfigurable I/O&r and can have functionality toggled with &credstone signals&r."]
+			dependencies: ["6BF59CA2D21361D1"]
+			id: "3EB9221E20B83944"
+			tasks: [{
+				id: "61B54B4C5E0465F5"
+				type: "item"
+				item: "techreborn:storage_buffer"
+			}]
+			rewards: [{
+				id: "0EF28BE5F9776A85"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.5d
+			description: ["The &eTechReborn&r &bCrude Storage Unit&r is an alternative / upgrade to the &6Bronze Barrel&r. Similar to the &aStorage Buffer&r, the &bCrude Storage Unit&r allows for &aconfigurable I/O&r and toggles with &credstone signals&r."]
+			dependencies: ["6BF59CA2D21361D1"]
+			id: "632D55476B2A7FC6"
+			tasks: [{
+				id: "0D91E628C709A330"
+				type: "item"
+				item: "techreborn:crude_storage_unit"
+			}]
+			rewards: [{
+				id: "778FFCD42CB1979E"
 				type: "xp"
 				xp: 10
 			}]

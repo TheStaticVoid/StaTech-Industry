@@ -46,7 +46,8 @@ ServerEvents.recipes(e => {
         'minecraft:sugar_cane',
         'modern_industrialization:raw_iridium',
         'modern_industrialization:iridium_dust',
-        'modern_industrialization:iridium_ore'
+        'modern_industrialization:iridium_ore',
+        'c:sheldonite_ores'
     ];
 
     // The cost of every recipe

@@ -75,4 +75,28 @@ ServerEvents.recipes(e => {
         [ { amount: 1, tag: 'c:desh_nuggets' } ],
         [ { amount: 1, item: mi('desh_tiny_dust') } ]
     );
+
+    // -- RAW PLATINUM FROM SHELDONITE ORE -- //
+    macerator(
+        2,
+        200,
+        [
+            { amount: 1, tag: 'c:sheldonite_ores' }
+        ],
+        [
+            { amount: 3, item: mi('raw_platinum') }
+        ]
+    );
+
+    // -- OBSIDIAN -- //
+    macerator(
+        8,
+        1200,
+        [
+            { amount: 1, item: mc('obsidian') }
+        ],
+        [
+            { amount: 4, item: tr('obsidian_dust') }
+        ]
+    );
 });

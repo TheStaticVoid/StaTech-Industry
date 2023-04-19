@@ -11,7 +11,7 @@
 	quests: [
 		{
 			x: 0.0d
-			y: 0.0d
+			y: -0.5d
 			shape: "square"
 			description: [
 				"Welcome to &eChapter 3&r."
@@ -34,7 +34,7 @@
 		}
 		{
 			x: 6.0d
-			y: 0.0d
+			y: -0.5d
 			shape: "square"
 			subtitle: "Lightning in a Box"
 			description: [
@@ -69,7 +69,7 @@
 		{
 			title: "Electricity and Tiers"
 			x: 6.0d
-			y: -2.0d
+			y: -2.5d
 			shape: "rsquare"
 			description: [
 				"For those of you who have played &aGregTech&r before, you will know that in that machines that connect to higher voltage tiers than themselves will explode. &lTHIS IS NOT THE CASE HERE&r."
@@ -93,7 +93,7 @@
 		}
 		{
 			x: 6.0d
-			y: 2.0d
+			y: 1.5d
 			shape: "rsquare"
 			description: ["Now that you're generating power, it's probably best to create a &dbuffer&r. This way while you're not fully stressing your power network you're creating a backlog for when you may be using it faster than you can produce. "]
 			dependencies: ["6765B4B8D870CDA0"]
@@ -112,7 +112,7 @@
 		{
 			title: "Solar Power"
 			x: 4.5d
-			y: 1.0d
+			y: 0.5d
 			shape: "rsquare"
 			description: [
 				"As an alternative to &7Steam&r power, you can also create a &aBasic Solar Panel&r. Generally, solar is going to be weaker than other power sources, so if you'd actually like to use it, you will need to have to use a lot of solar panels."
@@ -135,7 +135,7 @@
 		{
 			title: "Diesel Power"
 			x: 4.5d
-			y: -1.0d
+			y: -1.5d
 			shape: "rsquare"
 			subtitle: "Good for the environment!"
 			description: [
@@ -158,7 +158,7 @@
 		}
 		{
 			x: 1.0d
-			y: -2.5d
+			y: -3.0d
 			shape: "square"
 			description: ["The &aElectric Cutting Machine&r is the electrical version of the &bSteam Cutting Machine&r. The only recipe it unlocks is to turn Monocrystalline Silicon into Silicon Wafers, which you won't need right now. Other than that, it processes existing recipes faster and more efficiently."]
 			dependencies: ["473C1DE557D3E9C0"]
@@ -176,7 +176,7 @@
 		}
 		{
 			x: -5.0d
-			y: 1.0d
+			y: -0.5d
 			shape: "square"
 			description: ["The &aElectric Furnace&r is the electrical version of the &bSteam Furnace&r. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&r counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
@@ -194,7 +194,7 @@
 		}
 		{
 			x: -6.5d
-			y: 0.0d
+			y: -1.5d
 			shape: "square"
 			description: ["The &aElectric Macerator&r is the electrical version of the &bSteam Macerator&a. It opens up the ability to make Calcite Dust, and it will process recipes much faster than its &7Steam&r counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
@@ -212,7 +212,7 @@
 		}
 		{
 			x: 1.0d
-			y: -3.5d
+			y: -4.0d
 			shape: "square"
 			description: ["The &aElectric Wiremill&r is the electrical version of the &bSteam Wiremill&r. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&r counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
@@ -230,7 +230,7 @@
 		}
 		{
 			x: -2.0d
-			y: -2.5d
+			y: -3.0d
 			shape: "square"
 			description: ["The &aElectric Unpacker&r is the electrical version of the &bSteam Unpacker&r. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&r counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
@@ -273,7 +273,7 @@
 		}
 		{
 			x: -6.5d
-			y: 2.5d
+			y: 1.5d
 			shape: "rsquare"
 			description: [
 				"Calcite Dust can be made by crushing down Calcite blocks, which can be found around the world mainly in geodes."
@@ -295,7 +295,7 @@
 		}
 		{
 			x: -6.5d
-			y: 4.5d
+			y: 3.5d
 			shape: "rsquare"
 			description: [
 				"By combining Calcite Dust and Iron Ingots in an &aAlloy Smelter&r, you can create &3Refined Iron Ingots&r. "
@@ -320,7 +320,7 @@
 		}
 		{
 			x: -1.0d
-			y: -2.5d
+			y: -3.0d
 			shape: "square"
 			description: ["The &aElectric Packer&r is the electrical version of the &bSteam Unpacker&r. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&r counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
@@ -338,7 +338,7 @@
 		}
 		{
 			x: 2.0d
-			y: -2.5d
+			y: -3.0d
 			shape: "square"
 			description: ["The &aPolarizer&r is a machine that will allow you to magnetically charge certain types of metals. This means you can stop using Redstone to magnetise Steel Rods, as well as you will be able to magnetise certain important metals in the future."]
 			dependencies: ["473C1DE557D3E9C0"]
@@ -444,7 +444,7 @@
 		}
 		{
 			x: 8.0d
-			y: 0.0d
+			y: -0.5d
 			shape: "rsquare"
 			description: [
 				"As your &7Steam&r needs increase, you will probably find that the &aSteel Pumps&r are not cutting it anymore. "
@@ -466,7 +466,7 @@
 		}
 		{
 			x: 0.0d
-			y: -2.5d
+			y: -3.0d
 			shape: "square"
 			description: ["On top of processing the Bronze/Steel recipes more efficiently, the &aMixer&r opens up new recipes that will be very important in the near future, such as mixing fuels."]
 			dependencies: ["473C1DE557D3E9C0"]
@@ -484,7 +484,7 @@
 		}
 		{
 			x: -1.0d
-			y: -3.5d
+			y: -4.0d
 			shape: "square"
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "106620634F331F30"
@@ -495,8 +495,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: 4.5d
+			x: -6.5d
+			y: 5.0d
 			shape: "rsquare"
 			subtitle: "Long awaited upgrade"
 			description: ["Finally with your &7Refined Iron&r, you can upgrade your Frayed Backpack to become a &ePlated Backpack&r. This backpack can hold 18 stacks of items and can be equipped on your back trinket slot."]
@@ -515,7 +515,7 @@
 		}
 		{
 			x: -5.0d
-			y: 2.5d
+			y: 1.5d
 			shape: "square"
 			description: ["The &aAlloy Smelter&r is used to... smelt alloys. It's a key machine for progressing, as certain alloys are going to be required as you progress."]
 			dependencies: ["03D51B7E40C3A7CD"]
@@ -533,7 +533,7 @@
 		}
 		{
 			x: -5.5d
-			y: 4.5d
+			y: 3.5d
 			shape: "square"
 			description: ["Electrum is an alloy of Gold and Silver. It's used in a variety of crafting recipes, as well as one of the cables that can support Medium Voltage."]
 			dependencies: ["6A6C717EB97FD7B5"]
@@ -551,7 +551,7 @@
 		}
 		{
 			x: -4.5d
-			y: 4.5d
+			y: 3.5d
 			shape: "square"
 			description: ["Invar is an alloy of Iron and Nickel. It's used in several crafting recipes, as well as in Heatproof Machine Casings, which are essential for the Pyrolyse Oven and the Electric Blast Furnace."]
 			dependencies: ["6A6C717EB97FD7B5"]
@@ -668,7 +668,7 @@
 		}
 		{
 			x: 0.0d
-			y: -3.5d
+			y: -4.0d
 			shape: "rsquare"
 			description: [
 				"The &aExtractor&r is a &eTech Reborn&r machine that can, well... extract things from items. Check &dREI&r for the list of all the recipes it can process. "
@@ -796,7 +796,7 @@
 		}
 		{
 			x: -3.5d
-			y: 4.5d
+			y: 3.5d
 			shape: "square"
 			description: ["Cupronickel is an alloy between Copper and Nickel which will be very important as you aim to create more electric machines, especially the &aElectric Blast Furnace&r."]
 			dependencies: ["6A6C717EB97FD7B5"]
@@ -813,8 +813,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: 4.5d
+			x: -6.5d
+			y: 6.0d
 			shape: "rsquare"
 			subtitle: "Like having a chest on your back"
 			description: [
@@ -1574,11 +1574,11 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 7.5d
+			x: 4.5d
+			y: 11.0d
 			shape: "rsquare"
 			description: [
-				"The &aDiesel Generator&r can burn various kinds of fuel to generate EU. You can check &dREI&r for how many EU each fuel produces. The &aDiesel Generator&r will produce up to 256 EU/t and will only connect to MV cables."
+				"The &aDiesel Generator&r can burn various kinds of fuel to generate EU. You can check &dREI&r for how much EU each fuel produces. The &aDiesel Generator&r will produce up to 256 EU/t and will only connect to MV cables."
 				""
 				"&aDiesel Generators&r will only use fuel when they need to, but if you need a constant supply of energy, you can put liquid fuels in the &bLarge Steam Boiler&r instead of items. A fully heated &bLarge Steam Boiler&r will roughly produce twice the amount of energy a &aDiesel Generator&r would produce using the same quantity of fuel."
 			]
@@ -2878,7 +2878,7 @@
 			}]
 		}
 		{
-			x: 34.0d
+			x: 35.0d
 			y: 9.0d
 			shape: "square"
 			description: [
@@ -2912,7 +2912,7 @@
 		}
 		{
 			title: "Turbo Upgrades"
-			x: 32.0d
+			x: 33.0d
 			y: 10.5d
 			shape: "rsquare"
 			description: ["With your &eDigital Circuit Boards&r you can now create the &9Advanced Upgrade&r. These will significantly increase the speed of your overclocks, and your power draw."]
@@ -2940,7 +2940,7 @@
 		}
 		{
 			title: "Digital Circuit Components"
-			x: 32.0d
+			x: 33.0d
 			y: 9.0d
 			shape: "square"
 			description: [
@@ -2981,7 +2981,7 @@
 		}
 		{
 			title: "Advanced Components"
-			x: 32.0d
+			x: 33.0d
 			y: 7.0d
 			shape: "square"
 			description: ["&aStainless Steel&r opens up the ability to create &bAdvanced Components&r. These will be needed for HV and EV tier crafting."]
@@ -3225,7 +3225,7 @@
 			}]
 		}
 		{
-			x: 37.0d
+			x: 38.0d
 			y: 9.0d
 			shape: "square"
 			subtitle: "Welcome to High-Voltage"
@@ -3249,7 +3249,7 @@
 			}]
 		}
 		{
-			x: 34.0d
+			x: 35.0d
 			y: 7.0d
 			shape: "square"
 			description: [
@@ -3275,7 +3275,7 @@
 			}]
 		}
 		{
-			x: 29.5d
+			x: 30.5d
 			y: 10.5d
 			shape: "rsquare"
 			description: ["The &aStainless Steel Barrel&r can store an incredible 4096 stacks of a single item."]
@@ -3293,7 +3293,7 @@
 			}]
 		}
 		{
-			x: 30.5d
+			x: 31.5d
 			y: 10.5d
 			shape: "rsquare"
 			description: ["The &aStainless Steel Tank&r is the next tier of portable fluid tank you can create. It can store up to 32 buckets of any kind of fluid and retains the contents when broken."]
@@ -3312,7 +3312,7 @@
 		}
 		{
 			title: "Mozanite Byproducts"
-			x: 34.5d
+			x: 35.5d
 			y: 5.0d
 			shape: "square"
 			description: ["Mozanite on it's own is pretty useless, however running it through a Centrifuge will produce Neodymium, Yttrium, and Cadmium. These three materials will be important in components and processing in the late game."]
@@ -3342,7 +3342,7 @@
 			}]
 		}
 		{
-			x: 33.5d
+			x: 34.5d
 			y: 5.0d
 			shape: "square"
 			description: ["&aThe Stainless Steel Drill&r in an &bOil Drilling Rig&r will give you Shale Oil. Passing this through a &eDistillation Tower&r will give you a Sulfuric Crude Oil, Sulfuric Naphtha, and a little bit of Helium. The first two can be processed down in a similar manner as you were before, but the latter, Helium, is very important as you move into the lategame."]
@@ -3627,7 +3627,7 @@
 			}]
 		}
 		{
-			x: 34.0d
+			x: 35.0d
 			y: 10.5d
 			shape: "rsquare"
 			description: ["The &aEnergy Crystal&r is similar to the &bLithium Ion Batteries&r, but it has a much larger buffer, being able to store &d1 million E&r."]
@@ -3700,7 +3700,7 @@
 		{
 			title: "LV Cables"
 			x: 8.0d
-			y: 2.0d
+			y: 1.5d
 			shape: "square"
 			description: [
 				"Now that you have power, how do you transfer it? Cables of course! "
@@ -3811,7 +3811,7 @@
 		}
 		{
 			x: -2.0d
-			y: -3.5d
+			y: -4.0d
 			shape: "rsquare"
 			description: ["Prevents rain / snow particles in a 3x3 chunk radius when powered by redstone."]
 			dependencies: ["473C1DE557D3E9C0"]
@@ -3829,7 +3829,7 @@
 		}
 		{
 			x: 2.0d
-			y: -3.5d
+			y: -4.0d
 			shape: "rsquare"
 			description: ["Melts ice and snow in a 3x3 chunk radius when powered by redstone."]
 			dependencies: ["473C1DE557D3E9C0"]
@@ -3841,6 +3841,277 @@
 			}]
 			rewards: [{
 				id: "6328677D22F2BE1B"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -8.0d
+			y: 5.0d
+			description: ["The &eTechReborn&r &bBasic Storage Unit&r is an upgrade to the &7Steel Tank&r. It can store up to 128 stacks of a single item and has &aconfigurable I/O&r and control through &credstone signals&r."]
+			dependencies: ["6012D781643367DA"]
+			id: "4332AA07E2B665B3"
+			tasks: [{
+				id: "0EA4C44AA9379330"
+				type: "item"
+				item: "techreborn:basic_storage_unit"
+			}]
+			rewards: [{
+				id: "35EF5E018D057370"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 11.5d
+			y: -0.5d
+			description: ["The &eTechReborn&r &bAdvanced Storage Unit&r is an upgrade to the &bAluminum Barrel&r that allows for &aconfigurable I/O&r and control through &credstone signals&r."]
+			dependencies: ["0DA3EBE865EE51FE"]
+			id: "3F71D86CD0AF220A"
+			tasks: [{
+				id: "62730CB69BE08932"
+				type: "item"
+				item: "techreborn:advanced_storage_unit"
+			}]
+			rewards: [{
+				id: "305B174F0959471E"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 28.5d
+			y: 10.5d
+			description: ["The &eTechReborn&r &bIndustrial Storage Unit&r isn't particularly a direct upgrade to the &aStainless Steel Barrel&r this time, so I've made it a little cheaper. It does still store &d1024 stacks&r of a single item, and still includes &aconfigurable I/O&r and control through &credstone signals&r."]
+			dependencies: ["6375B17635AAC09D"]
+			id: "1335AD822DD36A8A"
+			tasks: [{
+				id: "56E35A017ACF19BD"
+				type: "item"
+				item: "techreborn:industrial_storage_unit"
+			}]
+			rewards: [{
+				id: "160C34DBD2CF6EFF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 29.5d
+			y: 10.5d
+			description: ["If you already have an &aAdvanced Storage Unit&r, you can create this &bAdvanced Storage Upgrader&r to upgrade your existing storage units without having to break them."]
+			dependencies: ["6375B17635AAC09D"]
+			id: "5BA4E91BBA9B38F4"
+			tasks: [{
+				id: "36143F28117718A3"
+				type: "item"
+				item: "techreborn:advanced_unit_upgrader"
+			}]
+			rewards: [{
+				id: "3625A99377951EBD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 12.5d
+			y: -0.5d
+			description: ["If you already have a &aBasic Storage Unit&r, you can craft this &bBasic Storage Upgrader&r to save a bit on resources and to upgrade your in place storage units."]
+			dependencies: ["0DA3EBE865EE51FE"]
+			id: "328963DA271D7C4D"
+			tasks: [{
+				id: "3FDC8F5B67FDE928"
+				type: "item"
+				item: "techreborn:basic_unit_upgrader"
+			}]
+			rewards: [{
+				id: "3E1EF8E7A89A3D28"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -8.0d
+			y: 4.0d
+			description: ["The &bCrude Unit Upgrader&r can be used to upgrade your &aCrude Storage Unit&r into the &dBasic Storage Unit&r. You can apply the upgrade by shift-right clicking with the upgrade. "]
+			dependencies: ["6012D781643367DA"]
+			id: "1DC74D3B993B9147"
+			tasks: [{
+				id: "22A56E3395D3B193"
+				type: "item"
+				item: "techreborn:crude_unit_upgrader"
+			}]
+			rewards: [{
+				id: "11520DCC30E16A6C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -8.0d
+			y: 3.0d
+			description: ["The &bRolling Machine&r can be used to roll and bend materials into different shapes. Most notably, it makes &arails&r at a better ratio, &bQuarry Tubes&r, and &dMagnalium Plates&r."]
+			dependencies: ["6012D781643367DA"]
+			id: "667280790626DD37"
+			tasks: [{
+				id: "733FA5B2FFB2BBF2"
+				type: "item"
+				item: "techreborn:rolling_machine"
+			}]
+			rewards: [{
+				id: "57B505BE990C4E03"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -11.0d
+			y: 3.0d
+			description: ["The &bLaunchpad&r, when &apowered&r, will launch &dentities&r on top of it into the air."]
+			dependencies: ["046F01DB0758D7DD"]
+			id: "489CB40DCB36235E"
+			tasks: [{
+				id: "4E48D324C16904A6"
+				type: "item"
+				item: "techreborn:launchpad"
+			}]
+			rewards: [{
+				id: "0DA22167DBCD75DC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.5d
+			description: [
+				"The &eTechReborn&r &bThermal Generator&r can be used to generate power with &clava&r. Each bucket of &clava&r will generate a total of &a60k E&r at &d16 E/t&r."
+				""
+				"Not the best method, but if you can automate &clava&r, it can provide a useful energy generation."
+			]
+			dependencies: ["6C3EAE1F16E1048A"]
+			id: "7051134E3D2E48BD"
+			tasks: [{
+				id: "580E9644413BA9AC"
+				type: "item"
+				item: "techreborn:thermal_generator"
+			}]
+			rewards: [{
+				id: "4AB7525BAF1B0C36"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			description: [
+				"The &eTechReborn&r &bWater Mill&r is a passive generator that, when placed in water, will generate &d0.1 E/t&r per side exposed to water, up to &d0.4 E/t&r. "
+				""
+				"This is &cextremely slow&r, but &acompletely free&r power generation."
+			]
+			dependencies: ["473C1DE557D3E9C0"]
+			id: "56DA05EBA49BC57F"
+			tasks: [{
+				id: "786AD5A864AE19A0"
+				type: "item"
+				item: "techreborn:water_mill"
+			}]
+			rewards: [{
+				id: "2F4983F034F50E00"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -11.0d
+			y: 2.0d
+			description: [
+				"The &eTechReborn&r &bWind Mill&r can be used to passively generate power from the wind. It generates &d2 E/t&r and an additional &d0.5 E/t&r during &athunderstorms&r."
+				""
+				"Must be placed &cabove&r y=64 to function."
+			]
+			dependencies: ["046F01DB0758D7DD"]
+			id: "34678C097FD402DC"
+			tasks: [{
+				id: "6A68B8D53F1244B4"
+				type: "item"
+				item: "techreborn:wind_mill"
+			}]
+			rewards: [{
+				id: "2060D8C277335AFB"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -9.5d
+			y: 3.0d
+			description: ["With the &aRolling Machine&r, you can now make &bMagnalium Plates&r. To get the &bMagnesium&r required, you can centrifuge &dMarble Dust&r, which is made from &dTiny Obsidian Dust&r, and &aDiorite Dust&r."]
+			dependencies: ["667280790626DD37"]
+			id: "046F01DB0758D7DD"
+			tasks: [{
+				id: "6B0BD5646D1747F4"
+				type: "item"
+				item: "techreborn:magnalium_plate"
+			}]
+			rewards: [{
+				id: "038A5BDE60F1F66A"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			description: [
+				"The &bAlarm&r will produce a very &cfun and enjoyable&r sound when powered by a &credstone signal&r."
+				""
+				"You can change the type of alarm by shift-right clicking the &bAlarm&r."
+			]
+			dependencies: ["6012D781643367DA"]
+			id: "0899132267495880"
+			tasks: [{
+				id: "6F293AA30A6CD0DB"
+				type: "item"
+				item: "techreborn:alarm"
+			}]
+			rewards: [{
+				id: "0142C600C3581A52"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			description: ["The &bIncandescent Lamp&r, &awhen powered&r, while provide light to your base!"]
+			dependencies: ["2ACF26FC95B88B16"]
+			id: "28BB5906AFF03430"
+			tasks: [{
+				id: "222389501CC84F00"
+				type: "item"
+				item: "techreborn:lamp_incandescent"
+			}]
+			rewards: [{
+				id: "54AF63C6DCC2E742"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.5d
+			description: ["The &bLED Lamp&r, &awhen powered&r, will provide light to your base!"]
+			dependencies: ["2ACF26FC95B88B16"]
+			id: "4A2C5A3D969B3F34"
+			tasks: [{
+				id: "5AFA0E01D97F95D6"
+				type: "item"
+				item: "techreborn:lamp_led"
+			}]
+			rewards: [{
+				id: "2CDE994C366E4FC4"
 				type: "xp"
 				xp: 10
 			}]

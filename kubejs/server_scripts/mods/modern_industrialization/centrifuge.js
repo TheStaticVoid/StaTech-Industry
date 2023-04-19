@@ -98,9 +98,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: tr('pyrite_small_dust') },
             { amount: 1, item: tr('calcite_small_dust') },
             { amount: 2, item: tr('sodalite_small_dust') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- CENTRIFUGE DARK ASHES -- //
@@ -137,6 +135,46 @@ ServerEvents.recipes(e => {
         [
             { amount: 18, item: tr('dark_ashes_dust') },
             { amount: 12, item: tr('ashes_dust') }
+        ]
+    );
+
+    // -- GALENA DUST -- //
+    centrifuge(
+        32,
+        400,
+        [
+            { amount: 2, tag: 'c:galena_dusts' }
+        ],
+        [
+            { amount: 1, item: mi('silver_dust') },
+            { amount: 1, item: mi('lead_dust') }
+        ]
+    );
+
+    // -- RED GARNET DUST -- //
+    centrifuge(
+        8,
+        400,
+        [
+            { amount: 16, tag: 'c:red_garnet_dusts' }
+        ],
+        [
+            { amount: 3, item: tr('pyrope_dust') },
+            { amount: 5, item: tr('almandine_dust') },
+            { amount: 8, item: tr('spessartine_dust') }
+        ]
+    );
+
+    // -- MARBLE DUST -- //
+    centrifuge(
+        16,
+        200,
+        [
+            { amount: 8, tag: 'c:marble_dusts' }
+        ],
+        [
+            { amount: 7, item: tr('calcite_dust') },
+            { amount: 1, item: tr('magnesium_dust') }
         ]
     );
 });

@@ -247,8 +247,53 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: mi('calorite_machine_casing_pipe')}
-        ]
+        ],
+        null,
+        null
     );
+
+    // -- INDUSTRIAL CIRCUIT -- //
+    assembler(
+        48,
+        300,
+        [
+            { amount: 1, item: tr('advanced_circuit') },
+            { amount: 2, tag: 'c:tungsten_plates' }
+        ],
+        [
+            { amount: 1, item:  tr('industrial_circuit') }
+        ],
+        null,
+        null
+    );
+
+    // -- DATA STORAGE CORE -- //
+    assembler(
+        20,
+        200,
+        [
+            { amount: 1, item: tr('advanced_circuit') },
+            { amount: 1, tag: 'c:emerald_plates' }
+        ],
+        [
+            { amount: 1, item: tr('data_storage_core') }
+        ],
+        null,
+        null
+    );
+    assembler(
+        20,
+        200,
+        [
+            { amount: 1, item: tr('advanced_circuit') },
+            { amount: 2, tag: 'c:peridot_plates' }
+        ],
+        [
+            { amount: 1, item: tr('data_storage_core') } 
+        ],
+        null,
+        null
+    )
 
     // -- SPACE HELMET -- //
     assembler(
