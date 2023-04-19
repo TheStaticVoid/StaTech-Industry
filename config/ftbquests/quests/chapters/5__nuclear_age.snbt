@@ -739,7 +739,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -2.5d
 			y: -4.0d
 			shape: "rsquare"
 			description: ["Running out of power? Well the &bDragon Egg Energy Siphon&r won't save you there, but it can be used to passively generate 4096 EU/t."]
@@ -775,7 +775,7 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: -1.5d
 			y: -4.0d
 			shape: "rsquare"
 			description: ["The &bLapotronic Orbpack&r is the wearable version of the &aLapotronic Energy Orb&r."]
@@ -788,6 +788,50 @@
 			}]
 			rewards: [{
 				id: "15B0842EBD9DA8D7"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.5d
+			description: [
+				"The &bInterdimensional Storage Unit&r can be used to transfer energy between &ctwo points instantaneously&r."
+				""
+				"With an internal buffer of &d1G E (1 billion)&r, this could be a worthwile replacement to your energy storage."
+				""
+				"The energy storage is similar to an &dender chest&r and is locked to the player who placed it. &c(I think?)&r"
+			]
+			dependencies: ["10A6D6AC0DD81C92"]
+			id: "1B0477C42ED4EF77"
+			tasks: [{
+				id: "435363D8AC0C3E57"
+				type: "item"
+				item: "techreborn:interdimensional_su"
+			}]
+			rewards: [{
+				id: "7D1BCDB3AEAF53DF"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			description: [
+				"The &bAdjustable SU&r can be used to fine tune the flow of power leading out of it. "
+				""
+				"The power &coutput&r can be adjusted in the &bSU&r's GUI."
+			]
+			dependencies: ["268F9C5384CD54EC"]
+			id: "10A6D6AC0DD81C92"
+			tasks: [{
+				id: "45590C0708ED59B0"
+				type: "item"
+				item: "techreborn:adjustable_su"
+			}]
+			rewards: [{
+				id: "065F04F729D53F31"
 				type: "xp"
 				xp: 10
 			}]

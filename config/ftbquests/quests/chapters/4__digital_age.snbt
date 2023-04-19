@@ -1434,7 +1434,11 @@
 			x: 13.0d
 			y: 0.5d
 			shape: "square"
-			description: ["&bIridium Tiny Dust&r will be needed in the production of &aMonocrystalline Silicon&r boules."]
+			description: [
+				"&bIridium Tiny Dust&r will be needed in the production of &aMonocrystalline Silicon&r boules."
+				""
+				"The &bIridium&r production from processing &aPlatinum&r is extremely slow, but you will soon get access to &dTitanium Drills&r which will generate &bIridium Ores&r."
+			]
 			dependencies: ["73E92504C29F7181"]
 			id: "0A7B765B2AC2DD6D"
 			tasks: [{
@@ -1452,6 +1456,7 @@
 			x: 13.0d
 			y: -0.5d
 			shape: "square"
+			description: ["&bPlatinum&r can be obtained in the small dust form by processing &aPlatinum Sulfuric Solution&r, but will need to be packed into it's normal &ddust&r form in order to process it into an &aingot&r."]
 			dependencies: ["73E92504C29F7181"]
 			id: "7111AA66B02C4877"
 			tasks: [{
@@ -1459,9 +1464,14 @@
 				type: "item"
 				item: "modern_industrialization:platinum_dust"
 			}]
+			rewards: [{
+				id: "0BCC372B791A8B7F"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
-			x: 15.0d
+			x: 16.0d
 			y: 0.5d
 			shape: "square"
 			description: ["Combining Argon, Silicon, and a little bit of Iridium you will be able to produce your first Monocrystalline Silicon boule."]
@@ -1479,7 +1489,7 @@
 			}]
 		}
 		{
-			x: 15.0d
+			x: 16.0d
 			y: 2.0d
 			shape: "square"
 			description: ["Luckily one boule is able to produce a significant amount of wafers. These will be important for &dProcessing Unit&r components."]
@@ -1498,7 +1508,7 @@
 		}
 		{
 			title: "Processing Unit Components"
-			x: 17.0d
+			x: 18.0d
 			y: -0.5d
 			shape: "square"
 			description: ["It's time to pull it all together. These components from all over the chapter, if you're unable to make something, make sure you didn't miss a quest!"]
@@ -1537,7 +1547,7 @@
 			}]
 		}
 		{
-			x: 17.0d
+			x: 18.0d
 			y: 2.25d
 			shape: "square"
 			subtitle: "EV Voltage Circuits"
@@ -1672,7 +1682,7 @@
 		}
 		{
 			icon: "modern_industrialization:high_pressure_advanced_large_steam_boiler"
-			x: 19.5d
+			x: 20.5d
 			y: 2.75d
 			shape: "square"
 			description: [
@@ -2923,7 +2933,7 @@
 			}]
 		}
 		{
-			x: 17.0d
+			x: 18.0d
 			y: 5.0d
 			shape: "square"
 			subtitle: "Welcome to EV"
@@ -2948,7 +2958,7 @@
 		}
 		{
 			title: "Titanium Drill"
-			x: 20.0d
+			x: 21.0d
 			y: 0.0d
 			shape: "rsquare"
 			description: ["With the &dTitanium Drill&r you can obtain infinite &aUranium&r and &bIridium&r. This is not the only way to get these materials at this point, as you can make solid &dUU-Matter&r to craft the raw ores."]
@@ -2976,7 +2986,7 @@
 		}
 		{
 			title: "Large Advanced Components"
-			x: 19.5d
+			x: 20.5d
 			y: 1.75d
 			shape: "square"
 			description: ["With your new &bProcessing Units&r you can now craft the large versions of the advanced components."]
@@ -3001,7 +3011,7 @@
 			}]
 		}
 		{
-			x: 19.0d
+			x: 20.0d
 			y: 0.0d
 			shape: "rsquare"
 			description: ["The &bHighly Advanced Upgrade&r is the second to last upgrade available for your machines. It offers a 4x EU overclock as compared to the previous tier."]
@@ -3019,7 +3029,7 @@
 			}]
 		}
 		{
-			x: 21.5d
+			x: 22.5d
 			y: 1.75d
 			shape: "rsquare"
 			subtitle: "One man's trash..."
@@ -3042,7 +3052,7 @@
 			}]
 		}
 		{
-			x: 21.5d
+			x: 22.5d
 			y: 3.75d
 			shape: "rsquare"
 			subtitle: "Nearly magic!"
@@ -3186,6 +3196,99 @@
 				id: "2F56BCA7967F712A"
 				type: "item"
 				item: "modern_industrialization:titanium_tank"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.0d
+			description: ["The &eTechReborn&r &bQuantum Storage Unit&r this time is an insane upgrade to the &dTitanium Barrel&r. I actually don't feel like typing out how many stacks it can hold because &lit's a lot&r. Like always it still has &aconfigurable I/O&r and control through &bredstone signals&r."]
+			dependencies: ["3132A7C27E732259"]
+			id: "6D501CD206C0E782"
+			tasks: [{
+				id: "5B2D1AF09670267F"
+				type: "item"
+				item: "techreborn:quantum_storage_unit"
+			}]
+			rewards: [{
+				id: "73151E8E271E17FD"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 9.0d
+			y: 6.0d
+			description: ["If you already have an &aIndustrial Storage Unit&r, you can create this &bIndustrial Storage Upgrader&r. This saves a bit on resources and allows you to not have to move your existing storage units."]
+			dependencies: ["3132A7C27E732259"]
+			id: "7AD765F56A83337B"
+			tasks: [{
+				id: "7C93EA5138C5CB18"
+				type: "item"
+				item: "techreborn:industrial_unit_upgrader"
+			}]
+			rewards: [{
+				id: "6D8DE2088887780F"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			icon: "techreborn:lightning_rod"
+			x: 13.0d
+			y: 3.5d
+			subtitle: "Thunderstruck!"
+			description: [
+				"The &eTechReborn&r &bLightning Rod&r can generate power by harnessing the natural power of &dlightning&r. To start catching &dlightning bolts&r, place an &aIron Fence&r on top of the &bLightning Rod&r. More &aIron Fences&r placed on top will increase the chance for a &dlightning strike&r."
+				""
+				"The &bLightning Rod&r generates &d256K E/bolt&r, with a max output rate of &c2048 E/t&r and an internal storage of &a100M E&r."
+			]
+			dependencies: ["0DF6FF0A1E872DC8"]
+			id: "092B82E55D9BCDA1"
+			tasks: [
+				{
+					id: "19C47DD449F88219"
+					type: "item"
+					item: "techreborn:lightning_rod"
+				}
+				{
+					id: "6535A196D1BA5B85"
+					type: "item"
+					item: "techreborn:refined_iron_fence"
+				}
+			]
+			rewards: [
+				{
+					id: "3B5DE2167EF5271F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "738F1926C48D99E0"
+					type: "item"
+					item: "techreborn:refined_iron_fence"
+					count: 3
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: 4.5d
+			description: [
+				"The &bPlayer Detector&r is a machine that will output a &credstone signal&r when a player is detected nearby."
+				""
+				"The &ddistance&r is configurable, with a maximum range of &d128 blocks&r."
+			]
+			dependencies: ["0DF6FF0A1E872DC8"]
+			id: "78B9AAD1C8BA75E6"
+			tasks: [{
+				id: "200508D6C45FDDB4"
+				type: "item"
+				item: "techreborn:player_detector"
+			}]
+			rewards: [{
+				id: "3EDF82CF27A8190C"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]
