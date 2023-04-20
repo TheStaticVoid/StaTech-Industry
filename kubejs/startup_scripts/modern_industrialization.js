@@ -29,9 +29,8 @@ MIMachineEvents.registerCasings(e => {
     e.register('calorite_machine_casing');
 });
 
-// broken? 
 MIMachineEvents.addEbfTiers(e => {
-    e.add('modern_industrialization:tungstensteel_coil', 1024, ' (Tungstensteel Tier)');
+    e.add('modern_industrialization:tungstensteel_coil', 1024, 'Tungstensteel');
 });
 
 MIMachineEvents.registerMachines(e => {

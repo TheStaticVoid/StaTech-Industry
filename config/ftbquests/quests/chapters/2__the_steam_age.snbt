@@ -1073,7 +1073,7 @@
 		{
 			title: "Alternative Rubber Source"
 			icon: "techreborn:rubber"
-			x: 13.5d
+			x: 13.0d
 			y: 11.0d
 			shape: "rsquare"
 			description: [
@@ -1198,15 +1198,15 @@
 		}
 		{
 			title: "Advanced Pipe Configuration"
-			x: 12.5d
-			y: 11.0d
+			x: 11.0d
+			y: 7.0d
 			shape: "rsquare"
 			description: [
-				"The configuration card can be used to camouflage pipes and to copy the sittings of the Item Pipes."
+				"The &bPipe Config Card&r can be used to camouflage pipes and to &dcopy&r the settings of the &aItem Pipes&r."
 				""
-				"Holding the card in your offhand will automatically apply its settings to any Item Pipe you place."
+				"Holding the card in your offhand will automatically apply its settings to any &aItem Pipe&r you place."
 			]
-			dependencies: ["38E38B24C0432327"]
+			dependencies: ["5CAAB61AA7E9FC66"]
 			id: "1EE124C7111A27F0"
 			tasks: [{
 				id: "48FC7AE4535CB088"
@@ -1221,7 +1221,7 @@
 		}
 		{
 			title: "Rubber Hat \\& Shoes"
-			x: 11.5d
+			x: 12.0d
 			y: 11.0d
 			shape: "rsquare"
 			description: [
@@ -2622,7 +2622,7 @@
 			}]
 		}
 		{
-			x: 13.5d
+			x: 13.0d
 			y: 12.0d
 			shape: "rsquare"
 			description: ["The &bResin Basin&r can be used to semi-automate extracting &aSap&r from &dRubber Trees&r. When placed at the base of the tree, they will slowly extract &aSap&r from the tree. This &aSap&r can be collected by right-clicking the basin. "]

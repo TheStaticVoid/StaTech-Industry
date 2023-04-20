@@ -91,7 +91,10 @@ ServerEvents.recipes(e => {
         tr('crafting_table/upgrade/energy_storage_upgrade'),
         tr('crafting_table/upgrade/overclocker_upgrade_alt_alt'),
         tr('crafting_table/upgrade/overclocker_upgrade_alt'),
-        tr('crafting_table/upgrade/overclocker_upgrade')
+        tr('crafting_table/upgrade/overclocker_upgrade'),
+        tr('crafting_table/parts/helium_coolant_cell_60k'),
+        tr('crafting_table/parts/superconductor'),
+        tr('crafting_table/parts/thick_neutron_reflector')
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
@@ -675,5 +678,52 @@ ServerEvents.recipes(e => {
         C: tr('water_coolant_cell_10k'),
         W: mi('copper_cable'),
         A: mi('analog_circuit')
+    });
+
+    // -- 60k HELIUM COOLANT CELL -- //
+    e.shaped(tr('helium_coolant_cell_60k'), [
+        ' T ',
+        'THT',
+        ' T '
+    ],
+    {
+        T: '#c:tin_ingots',
+        H: mi('helium_bucket')
+    });
+
+    // -- SUPERCONDUCTOR -- //
+    e.shaped('4x ' + tr('superconductor'), [
+        'HHH',
+        'TCT',
+        'FFF'
+    ],
+    {
+        H: tr('helium_coolant_cell_60k'),
+        T: '#c:tungsten_ingots',
+        C: mi('quantum_circuit'),
+        F: tr('energy_flow_chip')
+    });
+
+    // -- SUPERCONDUCTOR UPGRADE -- //
+    e.shaped(tr('superconductor_upgrade'), [
+        'SCS',
+        'SFS',
+        'SCS'
+    ],
+    {
+        S: tr('superconductor'),
+        C: tr('data_storage_chip'),
+        F: tr('industrial_machine_frame')
+    });
+
+    // -- THICK NEUTRON DEFLECTOR -- //
+    e.shaped(tr('thick_neutron_reflector'), [
+        ' R ',
+        'RBR',
+        ' R '
+    ],
+    {
+        R: tr('neutron_reflector'),
+        B: mi('beryllium_dust')
     });
 });

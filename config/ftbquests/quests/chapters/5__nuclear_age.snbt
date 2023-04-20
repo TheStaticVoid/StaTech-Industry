@@ -331,7 +331,7 @@
 			x: 1.0d
 			y: 2.0d
 			shape: "square"
-			description: ["Combining 3x Neodymium, 3x Annealed Copper, 3x Yttrium, and 1x Iridium Dust you can mix together &bSuperconductor Dust&r. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a Kanthal EBF and then cool it in a vacuum freezer."]
+			description: ["Combining 3x &aNeodymium&b, 3x &cAnnealed Copper&r, 3x &bYttrium&r, and 1x &dIridium Dust&r you can mix together &bSuperconductor Dust&r. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a &bTungstensteel EBF&r and then cool it in a vacuum freezer."]
 			dependencies: ["2F0042673C0E3910"]
 			id: "569821B175311340"
 			tasks: [{
@@ -407,7 +407,7 @@
 				""
 				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the &eSpace Probe Launcher&r block in your inventory or by holding your wrench out with the &eSpace Probe Launcher&r placed."
 			]
-			dependencies: ["5856A6281F140AEF"]
+			dependencies: ["229F2B56037A748B"]
 			size: 1.5d
 			id: "0F1DC239BBC3D60F"
 			tasks: [
@@ -546,9 +546,8 @@
 			description: ["It's time to start putting the puzzle together. &5Plutonium&r from your depleted fuel rods, various chemicals, and other materials you have processed this far."]
 			dependencies: [
 				"43D2E858079C12E0"
-				"569821B175311340"
-				"5856A6281F140AEF"
 				"5A0295C9C976F0E0"
+				"229F2B56037A748B"
 			]
 			id: "649FE8A688C74216"
 			tasks: [
@@ -832,6 +831,68 @@
 			}]
 			rewards: [{
 				id: "065F04F729D53F31"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Tungstensteel Coils"
+			x: 1.0d
+			y: 4.0d
+			shape: "square"
+			description: ["&bTungstensteel Coils&r are the &ocurrent&r highest tier of coils available for your &aEBF&r. They are required to process &dSuperconductor Ingots&r."]
+			dependencies: [
+				"5856A6281F140AEF"
+				"569821B175311340"
+			]
+			id: "229F2B56037A748B"
+			tasks: [{
+				id: "7E9B39EB3F949BA2"
+				type: "item"
+				item: "modern_industrialization:tungstensteel_coil"
+				count: 16L
+			}]
+			rewards: [{
+				id: "556454D5426ADD05"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "The Quantum Suit"
+			x: 5.5d
+			y: 7.0d
+			description: [
+				"The &eTechReborn&r &bQuantum Suit&r is the second best armor in the entire game (and arguably better than the latter &aInfinity Suit&r)."
+				""
+				"With it, you get &dcreative flight&r, &cinsane speed&r, &ejumping while midair&r, and much more."
+			]
+			dependencies: ["23D9328B5F627E65"]
+			id: "5182858751A44A2B"
+			tasks: [
+				{
+					id: "239339AD0BC25D76"
+					type: "item"
+					item: "techreborn:quantum_helmet"
+				}
+				{
+					id: "6CB5F267A6B4FCD1"
+					type: "item"
+					item: "techreborn:quantum_chestplate"
+				}
+				{
+					id: "6C3D9C1E3AA0DB64"
+					type: "item"
+					item: "techreborn:quantum_leggings"
+				}
+				{
+					id: "3FBC8DAF2240590F"
+					type: "item"
+					item: "techreborn:quantum_boots"
+				}
+			]
+			rewards: [{
+				id: "1EF7CB87D45513C8"
 				type: "xp"
 				xp: 10
 			}]

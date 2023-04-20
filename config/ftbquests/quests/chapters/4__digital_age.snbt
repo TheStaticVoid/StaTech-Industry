@@ -1803,7 +1803,7 @@
 		{
 			title: "CHANNELS!"
 			x: 2.5d
-			y: 7.0d
+			y: 8.0d
 			shape: "rsquare"
 			subtitle: "Tedious but rewarding!"
 			description: [
@@ -3287,6 +3287,31 @@
 			}]
 			rewards: [{
 				id: "3EDF82CF27A8190C"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.5d
+			description: [
+				"The &bMemory Card&r can be used to store, copy, and paste settings. Shift right-click on a &dconfigurable object&r to save the settings on the memory card, then right click on any other block of the same type to paste the settings."
+				""
+				"They are most importantly used to &alink&r the &dinput&r &cME P2P Tunnel&r to the &eoutput&r."
+			]
+			dependencies: ["2BB495CFC3E6D6C8"]
+			id: "6CC25A557FED2562"
+			tasks: [{
+				id: "596537EA9D162748"
+				type: "item"
+				item: {
+					id: "ae2:memory_card"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6C9DC09429A737A3"
 				type: "xp"
 				xp: 10
 			}]

@@ -148,7 +148,13 @@
 					item: "create:goggles"
 				}
 				{
-					id: "0B8CFA27D2F6BFE0"
+					id: "2A52A606A38D910A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "122C2055A71F8E7C"
 					type: "xp"
 					xp: 10
 				}
@@ -168,11 +174,19 @@
 				type: "item"
 				item: "create:water_wheel"
 			}]
-			rewards: [{
-				id: "3C9CCF9874FAF7C6"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "652C9539A48BF0CF"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4682836084073725053L
+				}
+				{
+					id: "5C7C690862EE0E78"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Windmill"
@@ -197,11 +211,19 @@
 					count: 8L
 				}
 			]
-			rewards: [{
-				id: "0059BC5F5C32FB4B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "39C878C0FC0B08D9"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4682836084073725053L
+				}
+				{
+					id: "2CBFF4BD52BA592D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Big and Little Cogs"
@@ -230,11 +252,19 @@
 					count: 4L
 				}
 			]
-			rewards: [{
-				id: "486AA57AD9D99D05"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4B0C380F476474E5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4682836084073725053L
+				}
+				{
+					id: "7803D1867CF05321"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Stress Units and Rotational Force"
@@ -256,11 +286,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "09D3B2F41575744E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5F50C5DF4A129DD6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4682836084073725053L
+				}
+				{
+					id: "47691955E58DCF3C"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Increase/Decrease Rotation Speed"
@@ -289,7 +327,13 @@
 					item: "create:speedometer"
 				}
 				{
-					id: "3B83CA3A037FCA30"
+					id: "40F64889F209AF36"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "1CFB2B909D1D87E5"
 					type: "xp"
 					xp: 10
 				}
@@ -308,11 +352,19 @@
 				type: "item"
 				item: "create:hand_crank"
 			}]
-			rewards: [{
-				id: "4655841312F4E384"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "066C489C51141901"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4682836084073725053L
+				}
+				{
+					id: "3909C8B465CC9E83"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 9.0d
@@ -335,7 +387,13 @@
 					count: 4
 				}
 				{
-					id: "6DF3C7C960FAA91A"
+					id: "6AD28818623A1425"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "5EAEDCEBDF45A28A"
 					type: "xp"
 					xp: 10
 				}
@@ -407,11 +465,19 @@
 				type: "item"
 				item: "modern_industrialization:bronze_ingot"
 			}]
-			rewards: [{
-				id: "038533518022F50F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "477C345582417D81"
+					type: "item"
+					item: "modern_industrialization:bronze_ingot"
+					count: 6
+				}
+				{
+					id: "7F48107A80CB9533"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Forge Hammer"
@@ -469,11 +535,19 @@
 				type: "item"
 				item: "xps:soul_copper_blend"
 			}]
-			rewards: [{
-				id: "49A24CFF140D4957"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "58D4F22B0A58D17C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "14496C3E6FBEF4C4"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 7.5d
@@ -487,11 +561,19 @@
 				type: "item"
 				item: "create:andesite_casing"
 			}]
-			rewards: [{
-				id: "1ECB6E197EBEE674"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6B1BF3670F690425"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4682836084073725053L
+				}
+				{
+					id: "2987F4BF37AD18DC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -4.0d
@@ -509,11 +591,19 @@
 				type: "item"
 				item: "inmis:frayed_backpack"
 			}]
-			rewards: [{
-				id: "001A2792019A1763"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "051062ED2733D561"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "38FD021E3405C014"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -2.0d
@@ -527,11 +617,19 @@
 				type: "item"
 				item: "kibe:pocket_crafting_table"
 			}]
-			rewards: [{
-				id: "40D538D43219BE02"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "22A124C12EB3E8F5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "52B3C2CFFEB5128B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Spikes"
@@ -562,11 +660,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "41138B47D5466139"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "633FED0587318940"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "17EC775EE21119F3"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -2.5d
@@ -580,11 +686,19 @@
 				type: "item"
 				item: "kibe:wooden_bucket"
 			}]
-			rewards: [{
-				id: "72B8B0330F617DBB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "364FB74E530C8E2C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "608D9F29F37C3A17"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -3.5d
@@ -598,11 +712,19 @@
 				type: "item"
 				item: "kibe:torch_sling"
 			}]
-			rewards: [{
-				id: "3E089AAE2D0118E9"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "49922511BFF3BFA3"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "49D67708CB4FA791"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -620,11 +742,19 @@
 				type: "item"
 				item: "kibe:trash_can"
 			}]
-			rewards: [{
-				id: "5BF7497ADF0A2B1F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "028BE3449AEA2B08"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "72443867CCEE73BD"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -638,11 +768,19 @@
 				type: "item"
 				item: "kibe:pocket_trash_can"
 			}]
-			rewards: [{
-				id: "2090D15A68343D40"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "784D76EEBAAFAFD5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "37DF83DBBE8A1607"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -656,11 +794,18 @@
 				type: "item"
 				item: "ironchests:dirt_chest"
 			}]
-			rewards: [{
-				id: "28FBE15FDB3AB09A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "318EAEB184D5D025"
+					type: "random"
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "77ED3EC194F9E339"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 11.5d
@@ -678,11 +823,19 @@
 				type: "item"
 				item: "xps:block_xp_obelisk"
 			}]
-			rewards: [{
-				id: "6CABEC307F1A9475"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1A10AD9B1BFB468B"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "48D063EC31B718D1"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 11.0d
@@ -696,11 +849,19 @@
 				type: "item"
 				item: "xps:soul_copper_ingot"
 			}]
-			rewards: [{
-				id: "51BA8F65D8B91F71"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "248B442FCD084736"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "018135C2D7232293"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 10.0d
@@ -725,7 +886,13 @@
 					item: "xps:xp_remover"
 				}
 				{
-					id: "753E071BDA40C026"
+					id: "13454563EC0CD5ED"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "68432F38CE207C3B"
 					type: "xp"
 					xp: 10
 				}
@@ -743,11 +910,19 @@
 				type: "item"
 				item: "xps:xp_dust"
 			}]
-			rewards: [{
-				id: "68A7F5249D1B0DDB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "173599C48B20C79E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "1F97C1B0081F20BE"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 9.0d
@@ -761,11 +936,19 @@
 				type: "item"
 				item: "xps:xp_rod"
 			}]
-			rewards: [{
-				id: "36D5B63F1041B5BF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "148442689A1788AE"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "1E04015251128A35"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 11.0d
@@ -788,11 +971,19 @@
 				type: "item"
 				item: "xps:inspector"
 			}]
-			rewards: [{
-				id: "608473D7DBAC434C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "35D8EEAB3F46DFF5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "67CDAD14088F7E0B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Lock \\& Key"
@@ -818,11 +1009,19 @@
 					item: "xps:key"
 				}
 			]
-			rewards: [{
-				id: "01C03D04D89CDAA4"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "10467E747CEFE24F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "02C46C7A438A562E"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 14.0d
@@ -840,11 +1039,19 @@
 				type: "item"
 				item: "xps:xp_berries"
 			}]
-			rewards: [{
-				id: "227FD1357866F1DF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1E98C756C12EF76D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "2A1BB7F0AFE27910"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 12.5d
@@ -858,11 +1065,19 @@
 				type: "item"
 				item: "xps:xp_berries_seeds"
 			}]
-			rewards: [{
-				id: "22D463B0A5F762C0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4DCC878752E81B81"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "6136BBB95D508821"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 12.0d
@@ -876,11 +1091,19 @@
 				type: "item"
 				item: "xps:xp_bucket"
 			}]
-			rewards: [{
-				id: "632CC0CA93C2CC7D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "406416818070BF75"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "4E9B2DB06E531B76"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Drawers"
@@ -916,7 +1139,13 @@
 					item: "extended_drawers:lock"
 				}
 				{
-					id: "5C387A4EFB6C3A3D"
+					id: "29AB99CE9AA1DA1F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "5B3CE06444463A17"
 					type: "xp"
 					xp: 10
 				}
@@ -954,11 +1183,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "267358DCFE1FA1D5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "00F53472CC1613D2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "6D893A0897763F91"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -4.0d
@@ -984,7 +1221,13 @@
 					count: 4
 				}
 				{
-					id: "299D4734BAF295F4"
+					id: "3118DB30AFD83271"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "5CC9DD7A4455B046"
 					type: "xp"
 					xp: 10
 				}
@@ -1007,11 +1250,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "6EA1740D11E06354"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0646DCC0970C4027"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "3AEA637F669EC209"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -1031,11 +1282,19 @@
 				type: "item"
 				item: "extended_drawers:access_point"
 			}]
-			rewards: [{
-				id: "2C368C23B6B162FC"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2A69E47A2E7A20DF"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "27902F93581F6B09"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Voiding Mode"
@@ -1057,11 +1316,19 @@
 				type: "item"
 				item: "minecraft:lava_bucket"
 			}]
-			rewards: [{
-				id: "01D525646519CEDE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5CCC4C01D3006F2C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "3409C1E177C5CD21"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Hidden Mode"
@@ -1084,11 +1351,19 @@
 				type: "item"
 				item: "minecraft:black_dye"
 			}]
-			rewards: [{
-				id: "29A05A3C9B9383C0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6E4722E2F621B1D8"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "46B8061A77A568F1"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Tom's Simple Storage Mod"
@@ -1108,11 +1383,19 @@
 				type: "item"
 				item: "toms_storage:ts.inventory_connector"
 			}]
-			rewards: [{
-				id: "68889F03CC2BD415"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5C8ADCCBCBFABB4B"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "51DA2C135509998C"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -1126,11 +1409,19 @@
 				type: "item"
 				item: "toms_storage:ts.storage_terminal"
 			}]
-			rewards: [{
-				id: "25EDBC4A2AA87EA5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "145392B2B3DCAB43"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "52552E6F0CE3E4F4"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 2.0d
@@ -1144,11 +1435,19 @@
 				type: "item"
 				item: "toms_storage:ts.crafting_terminal"
 			}]
-			rewards: [{
-				id: "5770B9E8FB3770C3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "44EDDFE1B81D3442"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "21EB591E673DA7DF"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -1162,11 +1461,19 @@
 				type: "item"
 				item: "toms_storage:ts.wireless_terminal"
 			}]
-			rewards: [{
-				id: "40D67397F832345C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6544FD6BE1A0D113"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "71A3608402C9FC62"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Inventory Cables"
@@ -1189,11 +1496,19 @@
 					item: "toms_storage:ts.inventory_cable_connector"
 				}
 			]
-			rewards: [{
-				id: "48CB9AF4912D21C6"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "564FB1420B38A681"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "74690D37F795A663"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -2.0d
@@ -1214,11 +1529,19 @@
 				type: "item"
 				item: "toms_storage:ts.adv_wireless_terminal"
 			}]
-			rewards: [{
-				id: "04EB6C47F16345A8"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "721196161B0B5A1D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "20C8A4DF1DA57305"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -1232,11 +1555,19 @@
 				type: "item"
 				item: "toms_storage:ts.trim"
 			}]
-			rewards: [{
-				id: "74B0C44C0ED6DF90"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "13FF54C6B8CC7D2D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "705994C523DA81A1"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -1254,11 +1585,19 @@
 				type: "item"
 				item: "toms_storage:ts.inventory_hopper_basic"
 			}]
-			rewards: [{
-				id: "245C214EB3E80868"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "42D98EE46B713984"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "0B374A15F23522D1"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 1.5d
@@ -1272,11 +1611,19 @@
 				type: "item"
 				item: "toms_storage:ts.level_emitter"
 			}]
-			rewards: [{
-				id: "76A5B764EC856113"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4303F82D002636E9"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1292583397374875582L
+				}
+				{
+					id: "27EE0CBD43922B56"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 	]
 	quest_links: [ ]
