@@ -3797,6 +3797,7 @@
 				""
 				"Stored XP can be used to craft Bottle o' Enchanting or Liquid XP buckets."
 			]
+			dependencies: ["4E194F2BBB21F033"]
 			id: "3CECE50DB2609499"
 			tasks: [{
 				id: "08B382F348B643EA"
@@ -4112,6 +4113,31 @@
 			}]
 			rewards: [{
 				id: "2CDE994C366E4FC4"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: -11.0d
+			y: 4.0d
+			description: [
+				"The &bQuarry&r is an addon for &eTechReborn&r that adds a &bQuarry&r machine that will actually dig physical blocks around it. "
+				""
+				"It requires &aQuarry Tubes&r and &denergy&r to function. It has two modes, &eMine Ores&r and &bMine All&r. In &eMine Ores&r mode it will only look for ores and mine those, and in &bMine All&r mode it will start mining all the blocks in the radius."
+				""
+				"There are also &dupgrades&r specific to the &bQuarry&r that increase the &arange&r or add &bsilk touch&r or &cfortune&r to mined blocks."
+				""
+				"At &dmax overclocker upgrades&r the &bQuarry&r will nearly draw &a8,000 EU/t&r!"
+			]
+			dependencies: ["046F01DB0758D7DD"]
+			id: "7718CB4089841CFA"
+			tasks: [{
+				id: "235AD90C01224F4A"
+				type: "item"
+				item: "quarrymod:quarry"
+			}]
+			rewards: [{
+				id: "1579AF598D15FC20"
 				type: "xp"
 				xp: 10
 			}]
