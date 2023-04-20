@@ -95,16 +95,27 @@ REIEvents.hide('item', e => {
         tr('basic_chainsaw'),
         tr('advanced_chainsaw'),
         tr('transformer_upgrade'),
-        tr('omni_tool')
+        tr('omni_tool'),
+        tr('electronic_circuit'),
+        tr('solid_fuel_generator'), 
+        tr('manual'),
+        tr('grinder'),
+        tr('compressor'),
+        tr('copper_cable'),
+        tr('tin_cable'),
+        tr('gold_cable'),
+        tr('hv_cable'),
+        tr('glassfiber_cable'),
+        tr('insulated_copper_cable'),
+        tr('insulated_gold_cable'),
+        tr('insulated_hv_cable'),
+        tr('superconductor_cable')
     ];
     REI_DELETED_ITEMS.forEach(id => e.hide(id));
-
-    // temp 
-    // tr('electronic_circuit'),
-    // tr('solid_fuel_generator'),
 });
 
 REIEvents.removeCategories(e => {
+    let tr = (id) => `techreborn:${id}`;
     const REMOVED_CAT = [
         'minecraft:plugins/tag',
         tr('alloy_smelter'),
@@ -115,6 +126,12 @@ REIEvents.removeCategories(e => {
         tr('blast_furnace'),
         tr('centrifuge'),
         tr('industrial_electrolyzer'),
+        tr('grinder'),
+        tr('compressor'),
+        tr('chemical_reactor'),
+        tr('fusion_reactor'),
+        tr('fluid_replicator'),
+        tr('distillation_tower'),
         tr('industrial_grinder'),
         tr('industrial_sawmill'),
         tr('vacuum_freezer'),
@@ -122,7 +139,8 @@ REIEvents.removeCategories(e => {
         tr('wire_mill'),
         tr('gas_turbine'),
         tr('plasma_generator'),
+        tr('diesel_generator'),
         tr('semi_fluid_generator')
     ];
-    REMOVED_CAT.forEach(id => e.remove(id));
+    REMOVED_CAT.forEach(id => e.yeet(id));
 });

@@ -1,13 +1,15 @@
 ServerEvents.recipes(e => {
+    let mi = (id) => `modern_industrialization:${id}`;
+    let tr = (id) => `techreborn:${id}`;
+    
     const REMOVED_RECIPES = [
-        'modern_industrialization:materials/blast_furnace/steel',
-        'modern_industrialization:materials/aluminum/blast_furnace/dust',
-        'modern_industrialization:materials/aluminum/blast_furnace/tiny_dust'
+        mi('materials/blast_furnace/steel'),
+        mi('materials/aluminum/blast_furnace/dust'),
+        mi('materials/aluminum/blast_furnace/tiny_dust'),
+        mi('materials/blast_furnace/superconductor')
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
 
     let blastFurnace = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
@@ -37,9 +39,7 @@ ServerEvents.recipes(e => {
         ],
         [ 
             { amount: 1, item: mi('steel_ingot') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- REFINED IRON INGOT -> STEEL INGOT -- //
@@ -52,9 +52,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: mi('steel_ingot') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- ALUMINUM EBF -- //
@@ -66,9 +64,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: mi('aluminum_ingot') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- IRON INGOTS -> HARDENED IRON INGOT -- //
@@ -80,9 +76,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: 'anim_guns:hardened_iron_ingot' }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- TUNGSTEN + STEEL -> HOT TUNGSTENSTEEL -- //
@@ -95,8 +89,18 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: tr('hot_tungstensteel_ingot') }
+        ]
+    );
+
+    // -- SUPERCONDUCTOR -- //
+    blastFurnace(
+        512,
+        1200,
+        [
+            { amount: 1, tag: 'c:superconductor_dusts' }
         ],
-        null,
-        null
+        [
+            { amount: 1, item: mi('superconductor_hot_ingot') }
+        ]
     );
 });
