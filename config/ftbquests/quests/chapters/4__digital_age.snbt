@@ -106,11 +106,19 @@
 				type: "item"
 				item: "modern_industrialization:turbo_machine_hull"
 			}]
-			rewards: [{
-				id: "39A6609E37325F74"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "421FF0D2A0F3B889"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3B6A2E3C7E0E5D81"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 1.0d
@@ -124,11 +132,19 @@
 				type: "item"
 				item: "modern_industrialization:hv_storage_unit"
 			}]
-			rewards: [{
-				id: "196A6BFFBDBA7327"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "22FD1C4CD8DD4CCA"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "2C87A7922C2641F3"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -1.0d
@@ -151,11 +167,19 @@
 				type: "item"
 				item: "modern_industrialization:hv_steam_turbine"
 			}]
-			rewards: [{
-				id: "27714A9F1C468666"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1C942B99ACF4A9CB"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3F9E19D39F5AE52A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -173,11 +197,19 @@
 				type: "item"
 				item: "modern_industrialization:turbo_diesel_generator"
 			}]
-			rewards: [{
-				id: "47274EC3651DFF6C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "221B74B0A73EAF8D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "202C8412025F122A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -191,11 +223,19 @@
 				type: "item"
 				item: "techreborn:industrial_solar_panel"
 			}]
-			rewards: [{
-				id: "66B4297A12650D5A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "31DCD07FDC9DF744"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3DECA5569F034AC9"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -5.0d
@@ -211,11 +251,19 @@
 				type: "item"
 				item: "ad_astra:fuel_refinery"
 			}]
-			rewards: [{
-				id: "5B821F6915969DAB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3031C7BF1C6CE3D6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "0011C8BB174E281F"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Distillation Tower"
@@ -276,11 +324,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "261BE321B621B799"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2D1F2A865A6C79CA"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "31BB9B75FEEB6B75"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -5.0d
@@ -299,11 +355,19 @@
 				type: "item"
 				item: "modern_industrialization:rocket_part_assembler"
 			}]
-			rewards: [{
-				id: "1F595135E2E44587"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "72A9F1D53BF7814A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "50C46692534E132C"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Route A"
@@ -318,6 +382,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
+			rewards: [
+				{
+					id: "3E23E0FC36068280"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "2B0AC3263E4C546A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Route B"
@@ -332,11 +409,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "0542DA11077EC51E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7F2FEC63CBFB5EA6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "6DA5465AD0198CE3"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Route C"
@@ -351,6 +436,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
+			rewards: [
+				{
+					id: "346F35F9AD6737BE"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "78A66B941F2771AA"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -5.0d
@@ -365,11 +463,19 @@
 				type: "item"
 				item: "ad_astra:oxygen_loader"
 			}]
-			rewards: [{
-				id: "5D9E8D72CA0EED26"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "36309656ED794371"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "5FB07F90A83F279D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -5.0d
@@ -396,18 +502,13 @@
 			}]
 			rewards: [
 				{
-					id: "51CC7407084F1B44"
-					type: "item"
-					item: {
-						id: "ad_astra:oxygen_tank"
-						Count: 1b
-						tag: {
-							BotariumData: { }
-						}
-					}
+					id: "596E7FFD70B11BFD"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
 				}
 				{
-					id: "02CB76335B730104"
+					id: "0CAB72A0337DC0B4"
 					type: "xp"
 					xp: 10
 				}
@@ -478,11 +579,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "6852B7B15D288218"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "60BC60FE4E70DB7E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "69C6A6EBF4E5118D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -7.0d
@@ -497,11 +606,19 @@
 				type: "item"
 				item: "ad_astra:nasa_workbench"
 			}]
-			rewards: [{
-				id: "7313CA47411F2463"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "39A8D387C4B26FB6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "31399C0177A0ECCA"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -7.0d
@@ -515,11 +632,19 @@
 				type: "item"
 				item: "ad_astra:fuel_bucket"
 			}]
-			rewards: [{
-				id: "51656ECDCA86C9C1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "77E76EEB3AAC9F9A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "1E1AE8BE49DF84B1"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -12.0d
@@ -555,11 +680,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "34B21C48A922815E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "76189F82AE32F802"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "6D0485C367F3A78F"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -577,11 +710,19 @@
 				type: "item"
 				item: "techreborn:charge_o_mat"
 			}]
-			rewards: [{
-				id: "2C3A1018987B77A0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7A38E500A0AC95E5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3742B32EA6206F22"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -15.0d
@@ -603,11 +744,19 @@
 				icon: "ad_astra:moon_globe"
 				dimension: "ad_astra:moon"
 			}]
-			rewards: [{
-				id: "63FF8067CB606DB2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3C8B01D8229F7321"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "07CABE1300840FB3"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -15.0d
@@ -625,11 +774,19 @@
 				type: "item"
 				item: "ad_astra:ice_shard"
 			}]
-			rewards: [{
-				id: "6305DD61125E4E1E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "17DF77D6E6EA85B0"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "6F7090CE25CB207E"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -16.0d
@@ -643,11 +800,19 @@
 				type: "item"
 				item: "ad_astra:raw_desh"
 			}]
-			rewards: [{
-				id: "1C23D309FB0665A0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3A39F9648A3DA3D9"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "78FCC6528BBEF291"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -14.0d
@@ -661,11 +826,19 @@
 				type: "item"
 				item: "ad_astra:cheese"
 			}]
-			rewards: [{
-				id: "18FB8A26D86A17F5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5868866F49D99F9C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "78BC7D6FFABD8274"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -9.5d
@@ -695,7 +868,13 @@
 					item: "ad_astra:launch_pad"
 				}
 				{
-					id: "75A8CE37D59D93BD"
+					id: "6703AE92C36EEB90"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "35FC8516F51968AA"
 					type: "xp"
 					xp: 10
 				}
@@ -721,11 +900,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "7D3BC78B32ECDAA0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6B12FED24848CBB1"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "19E18C4EA141A484"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "AE2 Processors"
@@ -752,11 +939,19 @@
 					item: "ae2:engineering_processor"
 				}
 			]
-			rewards: [{
-				id: "3A1EB84E5EB5FA1F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "070EA9C8F966DC28"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "14102C19305AEACF"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -777,11 +972,19 @@
 				type: "item"
 				item: "ae2:inscriber"
 			}]
-			rewards: [{
-				id: "6A44940D24CB9FF5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "21621AE22BA64237"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "1099719E2C648FF4"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -1.0d
@@ -799,11 +1002,19 @@
 				type: "item"
 				item: "ae2:fluix_crystal"
 			}]
-			rewards: [{
-				id: "62C889F2BA826103"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6473F973283B1C53"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "482E962E3E2BE182"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -830,11 +1041,19 @@
 				type: "item"
 				item: "ae2:controller"
 			}]
-			rewards: [{
-				id: "0D50DAD08FCD86DB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0AAADCABFBDE036F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "6262E48190B4A879"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 2.5d
@@ -857,11 +1076,19 @@
 				type: "item"
 				item: "ae2:drive"
 			}]
-			rewards: [{
-				id: "02C544D38A79DB7D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3C8BEE4878B791A5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "0E119E0FC53AE859"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Meteorite Compass"
@@ -890,11 +1117,19 @@
 					item: "ae2:meteorite_compass"
 				}
 			]
-			rewards: [{
-				id: "641FCDE9F709FA30"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "146BD99F8CAD0C4E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "5283D26FB55E4758"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.5d
@@ -913,11 +1148,19 @@
 				type: "item"
 				item: "ae2:crafting_terminal"
 			}]
-			rewards: [{
-				id: "3CE7B9635FE16B90"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4E296D7D34515574"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "2D98475CD90C50D5"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.5d
@@ -936,11 +1179,19 @@
 				type: "item"
 				item: "ae2:pattern_access_terminal"
 			}]
-			rewards: [{
-				id: "58E22E92E4E01077"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5A974BF5E809A9A5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "5B1E86FC1428F070"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Patterns"
@@ -967,13 +1218,13 @@
 			}]
 			rewards: [
 				{
-					id: "7F994F5C549B7100"
-					type: "item"
-					item: "ae2:blank_pattern"
-					count: 4
+					id: "0A132A0A7B0EF27C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
 				}
 				{
-					id: "52B9CE02E0DE34BD"
+					id: "0DF40C523E8E0F0C"
 					type: "xp"
 					xp: 10
 				}
@@ -1000,11 +1251,19 @@
 				type: "item"
 				item: "ae2:molecular_assembler"
 			}]
-			rewards: [{
-				id: "4B1DD096933E59ED"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "35ACD7E3DEFC6C09"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "27AE815FABB8BF71"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -1018,11 +1277,19 @@
 				type: "item"
 				item: "ae2:pattern_provider"
 			}]
-			rewards: [{
-				id: "6DE9FCE915E97674"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4798F0E3C13C7249"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "0CA21FD761DD5F42"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Crafting CPU"
@@ -1069,11 +1336,19 @@
 					item: "ae2:crafting_monitor"
 				}
 			]
-			rewards: [{
-				id: "14AA3802C834A2C3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "37DD54CC239E6361"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3F7A26ED3462A362"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -4.5d
@@ -1094,11 +1369,19 @@
 				type: "item"
 				item: "ae2:wireless_crafting_terminal"
 			}]
-			rewards: [{
-				id: "229A82C32C462757"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5BC531158BA28987"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "704A7AEFE91FBA01"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -2.5d
@@ -1120,11 +1403,19 @@
 				type: "item"
 				item: "ae2:security_station"
 			}]
-			rewards: [{
-				id: "5CBB141269E8366C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "187EEDD790F29D50"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "24E264E9D9F60AE0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -2.5d
@@ -1144,11 +1435,19 @@
 				type: "item"
 				item: "ae2:wireless_access_point"
 			}]
-			rewards: [{
-				id: "10D174DDB930BEF3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4248EC23CD4EF022"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "7F210C1F696D10B8"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Titanium"
@@ -1156,10 +1455,7 @@
 			y: 0.0d
 			shape: "square"
 			description: ["&dTitanium Ore&r can only be acquired from an &bElectric Quarry&r using the &aStainless Steel Drill&r. Processing &dRaw Titanium&r into a dust requires &7Manganese Sulfuric Solution&r, which you already have some of from the &aStainless Steel&r processing."]
-			dependencies: [
-				"68DDFA6E0465E81E"
-				"293DB25BD2827372"
-			]
+			dependencies: ["293DB25BD2827372"]
 			size: 1.5d
 			id: "08362FF409BFC7CC"
 			tasks: [{
@@ -1167,11 +1463,19 @@
 				type: "item"
 				item: "modern_industrialization:titanium_ingot"
 			}]
-			rewards: [{
-				id: "1919EBB1550FF25A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0EE3E2253CC6177A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "7088D2B21954DE0F"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Pressurizer"
@@ -1244,11 +1548,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "3CA23F5593C2D6CE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "12969FE350E67E6A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "469648A27BBCCF7F"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Large &7Steam&r Turbine"
@@ -1308,11 +1620,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "23593CC5BA846048"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "471F3D5FEC0E555D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "710B95F9952EFCA8"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 7.0d
@@ -1339,11 +1659,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "1D828C0CAD347D1E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5E787161016A101C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "6A8316F7A2C00660"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 9.0d
@@ -1370,11 +1698,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "39756027807497D9"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6864ADFCD3CFBDD0"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "4D20B3AE0AF31C97"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 8.0d
@@ -1402,11 +1738,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "752796E142A064A3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "788E91BB67AA320F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "13899956182598B0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 11.0d
@@ -1424,11 +1768,19 @@
 				type: "item"
 				item: "modern_industrialization:platinum_sulfuric_solution_bucket"
 			}]
-			rewards: [{
-				id: "4D246688AFA1385D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "48F9F2BDC5FC75A0"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "2197572395B056FA"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 13.0d
@@ -1446,11 +1798,19 @@
 				type: "item"
 				item: "modern_industrialization:iridium_tiny_dust"
 			}]
-			rewards: [{
-				id: "50D070075219B453"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1124ACB56A582316"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "2DD93A004C9C3C24"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 13.0d
@@ -1464,11 +1824,19 @@
 				type: "item"
 				item: "modern_industrialization:platinum_dust"
 			}]
-			rewards: [{
-				id: "0BCC372B791A8B7F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1A899F29F3D9ED83"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "518E6401C5AFAAA4"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 16.0d
@@ -1482,11 +1850,19 @@
 				type: "item"
 				item: "modern_industrialization:monocrystalline_silicon"
 			}]
-			rewards: [{
-				id: "1A6EA68B0506DEBE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "46BD866F1A8AA326"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "6C8C3A46D8731B2D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 16.0d
@@ -1500,11 +1876,19 @@
 				type: "item"
 				item: "modern_industrialization:silicon_wafer"
 			}]
-			rewards: [{
-				id: "6FA05AC40FB1CFF7"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0F30262659A9B85F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "0F522C839E237BCC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Processing Unit Components"
@@ -1540,11 +1924,19 @@
 					item: "modern_industrialization:processing_unit_board"
 				}
 			]
-			rewards: [{
-				id: "409FCF215555EEAB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2B3BFBD8D72791FD"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "0AAD9D3E3B0728FC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 18.0d
@@ -1560,11 +1952,19 @@
 				type: "item"
 				item: "modern_industrialization:processing_unit"
 			}]
-			rewards: [{
-				id: "5746CAE054A746CE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "52C49E442D929A9A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 20727769443880000L
+				}
+				{
+					id: "727F185930D6754B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 8.5d
@@ -1578,11 +1978,19 @@
 				type: "item"
 				item: "modern_industrialization:tungsten_nugget"
 			}]
-			rewards: [{
-				id: "3B19B439705B565F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1EAD81BAEEEF5349"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "06952C2D58F27E78"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 11.0d
@@ -1599,11 +2007,19 @@
 				type: "item"
 				item: "modern_industrialization:mixed_ingot_blastproof"
 			}]
-			rewards: [{
-				id: "32BE3A48BE5B21FD"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6D769981ECD9C1B0"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "00CC0CB91A74BD90"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Implosion Compressor"
@@ -1674,11 +2090,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "410E63DE96E0EF04"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "01C4DC4A9A0A48DA"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "2DC50FAE4278E067"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			icon: "modern_industrialization:high_pressure_advanced_large_steam_boiler"
@@ -1744,11 +2168,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "191C4E8B315CC218"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2ED2F51D04E50172"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 20727769443880000L
+				}
+				{
+					id: "77DB493D48E225A7"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 4.0d
@@ -1766,11 +2198,19 @@
 				type: "item"
 				item: "ae2:terminal"
 			}]
-			rewards: [{
-				id: "3223CC98DD221E94"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2D4327E373348542"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "37FD241212AC5F6A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 7.0d
@@ -1794,11 +2234,19 @@
 				type: "item"
 				item: "ae2:pattern_encoding_terminal"
 			}]
-			rewards: [{
-				id: "28A01028C42707EF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "359A0CDD5410ACFE"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3AA9D89E667912EC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "CHANNELS!"
@@ -1820,11 +2268,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "770EAA5AB2C198F8"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "38157C5DC2BC02A7"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "377F87BC5B3707A9"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -2.0d
@@ -1842,11 +2298,19 @@
 				type: "item"
 				item: "ae2:cable_anchor"
 			}]
-			rewards: [{
-				id: "4DB61BD4A9D673B6"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "456E48AAC20B7275"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "79FE1EA30FCBC5A5"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -2.0d
@@ -1870,11 +2334,19 @@
 				type: "item"
 				item: "ae2:me_p2p_tunnel"
 			}]
-			rewards: [{
-				id: "363B20DC6AF9511F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4EC80D2F66743B50"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "5658AE5C34338575"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Quantum Ring"
@@ -1903,11 +2375,19 @@
 					item: "ae2:quantum_link"
 				}
 			]
-			rewards: [{
-				id: "09A71D511F21E31F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5A7CB1348357D9A7"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "17930EF5DB451280"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Glass Cables"
@@ -1937,11 +2417,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "2183012CF34F39C2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "440570B80C66342E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "20DAF5F61E477D22"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Colored Cables"
@@ -1967,11 +2455,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "5FAB2D774C819C17"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3278D5726A147F33"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "538F71A22182FE25"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Dense Covered Cables"
@@ -1993,11 +2489,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "2ECC829B1A82E981"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "481C03EFA569A597"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "1B69EF4B381AD12E"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Smart Cables"
@@ -2023,11 +2527,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "0FDF2EA918696E1E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7B0BA61D50D0B57A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3BFAD5555ED87AA8"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Smart Dense Cables"
@@ -2049,11 +2561,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "5950F027ADE5E70D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0D9B451CCDAC1191"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "1BDC6023C269820B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -2073,11 +2593,19 @@
 				type: "item"
 				item: "ae2:toggle_bus"
 			}]
-			rewards: [{
-				id: "46A4BE8A758F90AB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "573AE0B93C8CE752"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "4EE277DBBDC5FF8F"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -2103,11 +2631,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "26D9E14E2B464CE8"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "10014660473A3548"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "573298E08DB23E76"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -2125,11 +2661,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "59CD30D814B9B038"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2C500F42EF0D74E8"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "322426A77A5CEEA0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -2155,11 +2699,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "7FD28C1AB7C9417C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "50A39D45BC96DF68"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "0DC06FB8583C7BFB"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -2177,11 +2729,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "08422FA92D250DAD"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4BF157E0FC0D419D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "2FAF0D4BFF3F0677"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -2207,11 +2767,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "4331FA7E270C108E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4BECF4F4417A67C2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "2CD2FB4AD9460CD1"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -2229,11 +2797,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "2B9EE733B2C32D44"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2D8666BF24EC5612"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "60A908151663F66C"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -2259,11 +2835,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "6812D3F82B67FED1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4845406793A5AF64"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "24EF9E3CC26A8FCC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -2281,11 +2865,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "59C6D9270F8D269B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "16C53601DC2981CA"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "00E1C4D86F2B554F"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -2311,11 +2903,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "5BEF17284E5AF6D7"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "262367FCC5BA17B9"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "4F33F1D7D88DCF74"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -2333,11 +2933,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "4EEDDBA4E2188B0E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "16173B097DA13521"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "4C8688B47603CDD1"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -2.0d
@@ -2357,11 +2965,19 @@
 				type: "item"
 				item: "ae2:storage_monitor"
 			}]
-			rewards: [{
-				id: "2A6F037AA7D8AF8F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1A17A3FB83968DF8"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "79E3FED3A800A2CD"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -2381,11 +2997,19 @@
 				type: "item"
 				item: "ae2:level_emitter"
 			}]
-			rewards: [{
-				id: "37CE84EBA7041C6A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0096AE5C597DB6F7"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "37BCD57083DDD993"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -4.0d
@@ -2406,11 +3030,19 @@
 				type: "item"
 				item: "ae2:conversion_monitor"
 			}]
-			rewards: [{
-				id: "13639A1914E4CF10"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4A9A55EACDF38FC6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "39A783357B11C18F"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 4.5d
@@ -2430,11 +3062,19 @@
 				type: "item"
 				item: "ae2:quantum_entangled_singularity"
 			}]
-			rewards: [{
-				id: "58A62CFD44666C66"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "690193501CE5BFC1"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3F86DB40AF08BE53"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -2452,11 +3092,19 @@
 				type: "item"
 				item: "ae2:condenser"
 			}]
-			rewards: [{
-				id: "3E8ECDE163923A9C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "496B45FD0FAD6A95"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3C2DDEB53EEA71EE"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.25d
@@ -2470,11 +3118,19 @@
 				type: "item"
 				item: "modern_industrialization:titanium_hot_ingot"
 			}]
-			rewards: [{
-				id: "453712F1B5791764"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6136F8CA38A22245"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "5C0B16D93E30CD4D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 8.5d
@@ -2487,11 +3143,19 @@
 				type: "item"
 				item: "techreborn:lapotron_crystal"
 			}]
-			rewards: [{
-				id: "4FAB831F909B4F84"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "43D807CF563595FC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3D8C6F8BB8F90683"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 8.5d
@@ -2511,11 +3175,19 @@
 				type: "item"
 				item: "modern_industrialization:gravichestplate"
 			}]
-			rewards: [{
-				id: "6047340E48789E3C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0C01BE065C3CA0FE"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "643AF5C89981F955"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 10.0d
@@ -2541,11 +3213,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "386B4FFB5DDF5B3E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "697A22F92D24F84D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "7A641411D84A77C4"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Space Station"
@@ -2586,11 +3266,19 @@
 					count: 32L
 				}
 			]
-			rewards: [{
-				id: "608512339B911635"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "286970A8B6E5BD1E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "7FDB5CAB2DADD6C1"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -16.0d
@@ -2610,6 +3298,19 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "69BF99410AF21D40"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "769905D9F9326470"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -16.0d
@@ -2623,6 +3324,19 @@
 				type: "item"
 				item: "ad_astra:mars_globe"
 			}]
+			rewards: [
+				{
+					id: "5B657AD47089E30C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "2ECC4AD844CC274D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -16.0d
@@ -2635,6 +3349,19 @@
 				type: "item"
 				item: "ad_astra:raw_ostrum"
 			}]
+			rewards: [
+				{
+					id: "12F7F2413FA98F48"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "7AEBEC3E469C09C4"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -16.0d
@@ -2653,6 +3380,19 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "3AB5BDB23906D1CE"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "5ACA9D42121C789E"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -13.75d
@@ -2666,6 +3406,19 @@
 				type: "item"
 				item: "ad_astra:venus_globe"
 			}]
+			rewards: [
+				{
+					id: "2ADD586C764977BB"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "4E32D8DE434B45A3"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -13.75d
@@ -2679,6 +3432,19 @@
 				type: "item"
 				item: "ad_astra:mercury_globe"
 			}]
+			rewards: [
+				{
+					id: "61A9C116188F854C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "55DF4AF0F0303043"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -11.5d
@@ -2694,6 +3460,19 @@
 				type: "item"
 				item: "ad_astra:raw_calorite"
 			}]
+			rewards: [
+				{
+					id: "72FD950CCDD1E8E6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "53D2628E0787D564"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Jet Suit"
@@ -2751,11 +3530,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "0C6865537D4FCBF5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4A676FBFCD3B7EB7"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "6D1C76010F09989A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -9.0d
@@ -2774,6 +3561,19 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "061318FB9ECB5286"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "21DCD266F849A8A0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Glacio"
@@ -2790,11 +3590,19 @@
 				type: "item"
 				item: "ad_astra:glacio_globe"
 			}]
-			rewards: [{
-				id: "56C23990A63CBD98"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4672C1270CE596F2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "38A26CC5B5F8CF4F"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -17.5d
@@ -2818,11 +3626,19 @@
 				type: "item"
 				item: "inmis:blazing_backpack"
 			}]
-			rewards: [{
-				id: "6F802283135092A3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0F934089AC2C49E6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "5D0AE69A778BC5DD"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "High Pressure Large &7Steam&r Boiler"
@@ -2891,11 +3707,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "61508B460F3145EF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5E52731D9F74CF58"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "16AAB1E0046EA6EB"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 15.0d
@@ -2908,6 +3732,19 @@
 				type: "item"
 				item: "modern_industrialization:heat_exchanger"
 			}]
+			rewards: [
+				{
+					id: "3E6BF7FFE8DB119D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3976E1A90EC57AE1"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.25d
@@ -2926,11 +3763,19 @@
 				type: "item"
 				item: "modern_industrialization:tungsten_dust"
 			}]
-			rewards: [{
-				id: "3B47AFA1563BB9E2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "748CB40F28FE0D5E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "3223AFA4F3A19DB0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 18.0d
@@ -2950,11 +3795,19 @@
 				type: "item"
 				item: "modern_industrialization:highly_advanced_machine_hull"
 			}]
-			rewards: [{
-				id: "125A850D766A7E53"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3F6CE503D67CC489"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 20727769443880000L
+				}
+				{
+					id: "401F3CA0961F3D43"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Titanium Drill"
@@ -2972,13 +3825,13 @@
 			}]
 			rewards: [
 				{
-					id: "6FF61ABB69AD75DB"
-					type: "item"
-					item: "modern_industrialization:titanium_drill"
-					count: 4
+					id: "46F63852900A8596"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 20727769443880000L
 				}
 				{
-					id: "624EBB9D0EF11E72"
+					id: "5AE700E29E29BC6D"
 					type: "xp"
 					xp: 10
 				}
@@ -3004,11 +3857,19 @@
 					item: "modern_industrialization:large_advanced_pump"
 				}
 			]
-			rewards: [{
-				id: "02AA476EE7E6D25E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "760776CF05C317DD"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 20727769443880000L
+				}
+				{
+					id: "2788EFB3AE74E976"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 20.0d
@@ -3022,11 +3883,19 @@
 				type: "item"
 				item: "modern_industrialization:highly_advanced_upgrade"
 			}]
-			rewards: [{
-				id: "5D239FD8C9ECA7F1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "58EEA086B485263A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 20727769443880000L
+				}
+				{
+					id: "4B0E8795AE79747A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 22.5d
@@ -3045,11 +3914,19 @@
 				type: "item"
 				item: "techreborn:matter_fabricator"
 			}]
-			rewards: [{
-				id: "331F941508D68501"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "56CB8307B6FDD4B6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 20727769443880000L
+				}
+				{
+					id: "4575CC8B182C765B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 22.5d
@@ -3065,11 +3942,19 @@
 				type: "item"
 				item: "techreborn:uu_matter"
 			}]
-			rewards: [{
-				id: "7DDC924010E278CA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1B031748FC3F4B9D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 20727769443880000L
+				}
+				{
+					id: "217929BAAC3DB8CC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 11.0d
@@ -3083,11 +3968,19 @@
 				type: "item"
 				item: "modern_industrialization:industrial_tnt"
 			}]
-			rewards: [{
-				id: "5BDF75C3247258DB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "21E1F345C3BFD279"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "7F54C2FA361D1DE0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "HV Cables"
@@ -3115,11 +4008,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "7700374B6D439D9A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4A94F63CDB11DD40"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "396DDC7F521857CF"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 12.0d
@@ -3137,11 +4038,19 @@
 				type: "item"
 				item: "inmis:withered_backpack"
 			}]
-			rewards: [{
-				id: "7AB873246919CC13"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "49A24AED7FB6C2CA"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "00412EF956A31630"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 13.0d
@@ -3163,11 +4072,19 @@
 				type: "item"
 				item: "inmis:endless_backpack"
 			}]
-			rewards: [{
-				id: "23E1B01870E773FB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "219760F934764A86"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "0E4A57F61A681EC0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 7.5d
@@ -3180,11 +4097,19 @@
 				type: "item"
 				item: "modern_industrialization:titanium_barrel"
 			}]
-			rewards: [{
-				id: "7685F69C335E9EF1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3D090B8BE37F3B82"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "53D7001AE98337FE"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 9.5d
@@ -3197,6 +4122,19 @@
 				type: "item"
 				item: "modern_industrialization:titanium_tank"
 			}]
+			rewards: [
+				{
+					id: "4EFB9288F693BC02"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "40CB267244DD6EBB"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 8.0d
@@ -3209,11 +4147,19 @@
 				type: "item"
 				item: "techreborn:quantum_storage_unit"
 			}]
-			rewards: [{
-				id: "73151E8E271E17FD"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "37CB07FA24B3D583"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "4F69A7D4D535198E"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 9.0d
@@ -3226,11 +4172,19 @@
 				type: "item"
 				item: "techreborn:industrial_unit_upgrader"
 			}]
-			rewards: [{
-				id: "6D8DE2088887780F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2DA1AE613D0E4061"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "048B3BF6D1DC1EA6"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			icon: "techreborn:lightning_rod"
@@ -3258,15 +4212,15 @@
 			]
 			rewards: [
 				{
-					id: "3B5DE2167EF5271F"
-					type: "xp"
-					xp: 10
+					id: "4A0CB6B8066C512D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
 				}
 				{
-					id: "738F1926C48D99E0"
-					type: "item"
-					item: "techreborn:refined_iron_fence"
-					count: 3
+					id: "532F5182F46D420E"
+					type: "xp"
+					xp: 10
 				}
 			]
 		}
@@ -3285,11 +4239,19 @@
 				type: "item"
 				item: "techreborn:player_detector"
 			}]
-			rewards: [{
-				id: "3EDF82CF27A8190C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "130EA4DCACBEF62E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "451338D84CB9EB50"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 2.5d
@@ -3310,11 +4272,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "6C9DC09429A737A3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6D935CFBF190C41F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "72D56B337157C385"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 	]
 	quest_links: [ ]

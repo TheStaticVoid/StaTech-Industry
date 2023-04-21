@@ -44,11 +44,19 @@
 				type: "item"
 				item: "spirit:soul_steel_ingot"
 			}]
-			rewards: [{
-				id: "3A1B16FE5B2C0D09"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "421397EF42F52804"
+					type: "item"
+					item: "spirit:soul_steel_ingot"
+					count: 10
+				}
+				{
+					id: "2C63A5D585680C77"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -80,11 +88,19 @@
 				type: "item"
 				item: "spirit:soul_powder"
 			}]
-			rewards: [{
-				id: "6D2CDFF7B67FC8C5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5176A6A0824AFC17"
+					type: "item"
+					item: "spirit:soul_powder"
+					count: 12
+				}
+				{
+					id: "675CFBFA3B711B37"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Soul Steel Tools"

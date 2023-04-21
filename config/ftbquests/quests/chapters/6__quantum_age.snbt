@@ -10,6 +10,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			icon: "modern_industrialization:plasma_turbine"
 			x: 0.0d
 			y: 5.25d
 			shape: "square"
@@ -20,16 +21,62 @@
 			]
 			size: 1.5d
 			id: "18765B0B6FE4E653"
-			tasks: [{
-				id: "0C519A64F3D02DAF"
-				type: "item"
-				item: "modern_industrialization:plasma_turbine"
-			}]
-			rewards: [{
-				id: "504F13EA5D2C61B5"
-				type: "xp"
-				xp: 10
-			}]
+			tasks: [
+				{
+					id: "0C519A64F3D02DAF"
+					type: "item"
+					item: "modern_industrialization:plasma_turbine"
+				}
+				{
+					id: "6319C27B8BBCC8BE"
+					type: "item"
+					item: "modern_industrialization:plasma_handling_iridium_machine_casing"
+					count: 15L
+				}
+				{
+					id: "61FCCBFE765C0C9F"
+					type: "item"
+					item: "modern_industrialization:iridium_machine_casing_pipe"
+					count: 18L
+				}
+				{
+					id: "0DAF0F002AA82CA4"
+					type: "item"
+					title: "Any Energy Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_output_hatch"
+						}
+					}
+				}
+				{
+					id: "4A6B167539EAF884"
+					type: "item"
+					title: "Any Fluid Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "55BDE30F71E0C039"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "35AF936375A24CC6"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Fusion Reactor"
@@ -103,11 +150,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "5EB050DDFA494A15"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7D6DC3507414891B"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "71315175EF280BEC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 6.5d
@@ -125,11 +180,19 @@
 				type: "item"
 				item: "modern_industrialization:quantum_tank"
 			}]
-			rewards: [{
-				id: "5A17ACCAAAE75CDA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "73E4EF57B69E3DF3"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "29FA0F1BFA759227"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 6.5d
@@ -143,11 +206,19 @@
 				type: "item"
 				item: "modern_industrialization:quantum_barrel"
 			}]
-			rewards: [{
-				id: "5D971A6BD440481B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7C1A7EF4C720BD33"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "1EF06615DFE9C737"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -170,11 +241,19 @@
 				type: "item"
 				item: "modern_industrialization:replicator"
 			}]
-			rewards: [{
-				id: "072EEA3A4446D2C3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1481450EBAB95586"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "6907F996BB56E3AC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -2.0d
@@ -188,11 +267,19 @@
 				type: "item"
 				item: "modern_industrialization:superconductor_storage_unit"
 			}]
-			rewards: [{
-				id: "481274D455455541"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "24820D26A3282C58"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "365E5B7D6F319FAB"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -204,6 +291,19 @@
 				type: "item"
 				item: "techreborn:quantum_solar_panel"
 			}]
+			rewards: [
+				{
+					id: "02A80DDD065131BB"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "0DF39CACD174BD2A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 4.0d
@@ -221,11 +321,19 @@
 				type: "item"
 				item: "modern_industrialization:quantum_upgrade"
 			}]
-			rewards: [{
-				id: "7EFB56A781DE5021"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3E27FBA6F54334E0"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "6F4B187B90C3EF81"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 4.0d
@@ -244,11 +352,19 @@
 				type: "item"
 				item: "modern_industrialization:singularity"
 			}]
-			rewards: [{
-				id: "209CDEB9D0BD767B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2C10BC7AA527F03A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "4083234757F3A612"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Infinity Sword"
@@ -268,11 +384,19 @@
 				type: "item"
 				item: "modern_industrialization:quantum_sword"
 			}]
-			rewards: [{
-				id: "56D227DC7E036F65"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0F8BB8F956585C96"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "38198C65FC9ADE30"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Infinity Suit"
@@ -309,11 +433,19 @@
 					item: "modern_industrialization:quantum_boots"
 				}
 			]
-			rewards: [{
-				id: "024CF9B78F0404FD"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "064FBDAF14F9C21E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "04C7C12CEB30C76A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -331,11 +463,19 @@
 				type: "item"
 				item: "modern_industrialization:uu_matter_bucket"
 			}]
-			rewards: [{
-				id: "5930C5079074735F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "52F0964737149D3E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "24B0D5E379A6A82E"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -353,11 +493,19 @@
 				type: "item"
 				item: "modern_industrialization:quantum_machine_hull"
 			}]
-			rewards: [{
-				id: "51C5C605A6A2EF8A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5A450941CC91DEEE"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "48D3B50CDC7AA774"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -371,11 +519,19 @@
 				type: "item"
 				item: "create:creative_motor"
 			}]
-			rewards: [{
-				id: "21715B8F45E2B294"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1F866B5E23A3D661"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "20C5BA9E79D43D9E"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Creative Worldshaper"
@@ -404,9 +560,9 @@
 				item: "create:handheld_worldshaper"
 			}]
 			rewards: [{
-				id: "5DE6D478547430BB"
+				id: "1610F634B8734F6A"
 				type: "xp"
-				xp: 10
+				xp: 100
 			}]
 		}
 		{
@@ -425,11 +581,19 @@
 				type: "item"
 				item: "modern_industrialization:creative_tank"
 			}]
-			rewards: [{
-				id: "737186BDA6C5BBCC"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6DF7C96713D6CAE7"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "14F78E66D5FF1004"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -1.0d
@@ -448,11 +612,19 @@
 				type: "item"
 				item: "modern_industrialization:creative_barrel"
 			}]
-			rewards: [{
-				id: "4A9588977405CB76"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7AD23061ED57BB4D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "4AA4A81143636997"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -467,11 +639,19 @@
 				type: "item"
 				item: "modern_industrialization:creative_storage_unit"
 			}]
-			rewards: [{
-				id: "0EBA9BB92132514E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "473DECF14DBB0419"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "6D947C7DD7AB3317"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 2.0d
@@ -485,11 +665,19 @@
 				type: "item"
 				item: "modern_industrialization:helium_plasma_bucket"
 			}]
-			rewards: [{
-				id: "40C7B8AF42C6CF6C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0391F2846FA69D1A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "450ED48483F41A57"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 4.0d
@@ -509,11 +697,19 @@
 				type: "item"
 				item: "modern_industrialization:neutronium_bucket"
 			}]
-			rewards: [{
-				id: "788C035F6D993644"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "685E775AE45B2CDE"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "260472C504EFCD59"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 4.0d
@@ -527,11 +723,19 @@
 				type: "item"
 				item: "modern_industrialization:ultradense_metal_ball"
 			}]
-			rewards: [{
-				id: "25AB8550FA6B42E6"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "370D36D0B3FA7837"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1415984687807285627L
+				}
+				{
+					id: "4DA00054EEAE2FE8"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 	]
 	quest_links: [ ]

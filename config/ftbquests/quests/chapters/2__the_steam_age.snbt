@@ -25,11 +25,19 @@
 				type: "item"
 				item: "modern_industrialization:forge_hammer"
 			}]
-			rewards: [{
-				id: "1D807100C2C4475B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "60481B6B7D62BC1A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "2EC6A9D1128CC57A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -49,11 +57,19 @@
 				type: "item"
 				item: "modern_industrialization:steam_mining_drill"
 			}]
-			rewards: [{
-				id: "14475B7432055EA1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "43C2D4C676D6EC0D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "324D6246B7FA11EA"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 1.0d
@@ -71,11 +87,19 @@
 				type: "item"
 				item: "modern_industrialization:bronze_barrel"
 			}]
-			rewards: [{
-				id: "3C1FCF1B266E0161"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "49CD430D71978B1D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "09C7E121115FE1EB"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -1.0d
@@ -93,11 +117,19 @@
 				type: "item"
 				item: "modern_industrialization:bronze_tank"
 			}]
-			rewards: [{
-				id: "517D98180BC11378"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "63EBD33CAD73BCA1"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "13D8CDF8F7CC7B97"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Fire Clay Bricks"
@@ -114,11 +146,19 @@
 				item: "modern_industrialization:fire_clay_bricks"
 				count: 3L
 			}]
-			rewards: [{
-				id: "265502E377F0C170"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "36A2221B2D85743B"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "533D6700EF961544"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Fire Clay Dust"
@@ -140,11 +180,19 @@
 				item: "modern_industrialization:fire_clay_dust"
 				count: 12L
 			}]
-			rewards: [{
-				id: "5284EF681F6D3C5A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "63F1EEFE0FE6B00D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "797A02F565237C97"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 6.0d
@@ -168,11 +216,19 @@
 				type: "item"
 				item: "modern_industrialization:bronze_boiler"
 			}]
-			rewards: [{
-				id: "6682BCFCCACC02CA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "15799C757F6B2225"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "61AEC7F3411614A9"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.0d
@@ -194,11 +250,19 @@
 				type: "item"
 				item: "modern_industrialization:bronze_water_pump"
 			}]
-			rewards: [{
-				id: "70FD7DC69CE3EC13"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "57960C776FCBCA45"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "6017D2014B5925AA"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Alternative Water Pump"
@@ -222,11 +286,19 @@
 					count: 4L
 				}
 			]
-			rewards: [{
-				id: "4B638E6A6324C45B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6CCC69C042DDCD41"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "34116D52461A5119"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Interacting with Machines"
@@ -261,7 +333,13 @@
 					item: "modern_industrialization:wrench"
 				}
 				{
-					id: "429CB00FD9A4998B"
+					id: "105B96CB49F152EE"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "363600FDE0BDB6A8"
 					type: "xp"
 					xp: 10
 				}
@@ -307,7 +385,13 @@
 					count: 16
 				}
 				{
-					id: "48E6E1E9570EBFCA"
+					id: "777D4159715BD5AC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "09F5B845117D2CE2"
 					type: "xp"
 					xp: 10
 				}
@@ -332,18 +416,26 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "5DE8E1C0DDD00672"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1A6EADD1682777D6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "0EA84D2F6279FF4B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 4.0d
 			y: 2.0d
 			shape: "square"
 			subtitle: "More bang for your buck"
-			description: [""]
+			description: ["The &6Bronze Macerator&r is a helpful machine to help you get more value out of the &aores&r you mine. Processing &aores&r will grant you additional &ddusts&r which can be smelted into ingots."]
 			dependencies: ["343C68866C58ADC3"]
 			id: "73AF6917A7A85244"
 			tasks: [{
@@ -351,11 +443,19 @@
 				type: "item"
 				item: "modern_industrialization:bronze_macerator"
 			}]
-			rewards: [{
-				id: "43D82687BF2096AC"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1B0CF7B651972EA3"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "318173847CEC71BD"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 7.5d
@@ -376,16 +476,24 @@
 				type: "item"
 				item: "modern_industrialization:bronze_compressor"
 			}]
-			rewards: [{
-				id: "6821944FF1CC38EA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2EA7AD0AFC719330"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "7553BA1AC85CAF61"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 6.5d
 			y: 4.0d
-			shape: "rsquare"
+			shape: "square"
 			subtitle: "A more efficient furnace"
 			description: ["The &6Bronze Furnace&r is a furnace that accepts &7steam&r instead of traditional fuels. It is as slow as a normal furnace, but is 10 times more fuel efficient due to using &7Steam&r."]
 			dependencies: ["343C68866C58ADC3"]
@@ -395,11 +503,19 @@
 				type: "item"
 				item: "modern_industrialization:bronze_furnace"
 			}]
-			rewards: [{
-				id: "6D2E1F00B925612E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "71FAECC83AE23615"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "51414C5F17C714D3"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 4.5d
@@ -414,11 +530,19 @@
 				type: "item"
 				item: "modern_industrialization:bronze_mixer"
 			}]
-			rewards: [{
-				id: "28251D12F2D4E469"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7EC76F7254CF96E6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "43E1212B8614DF38"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.5d
@@ -439,11 +563,19 @@
 				type: "item"
 				item: "modern_industrialization:bronze_cutting_machine"
 			}]
-			rewards: [{
-				id: "501A101C89F49B59"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "32EEC822266AD324"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "4BA37F9F7237D514"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Coke Oven"
@@ -526,9 +658,15 @@
 					count: 64
 				}
 				{
-					id: "38FCDC56E28D3670"
+					id: "60B7AFE7D4A55B68"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "3D957AE71DF0DF44"
 					type: "xp"
-					xp: 10
+					xp: 100
 				}
 			]
 		}
@@ -544,11 +682,19 @@
 				type: "item"
 				item: "minecraft:bricks"
 			}]
-			rewards: [{
-				id: "2E7888DA04E633B6"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3F5B10AF7336A2D3"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "39E0BAE257A95909"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.5d
@@ -566,11 +712,19 @@
 				type: "item"
 				item: "modern_industrialization:creosote_bucket"
 			}]
-			rewards: [{
-				id: "59E358C33451AABF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "69835AA15EA8476E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "770C3122DF6B2C11"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.0d
@@ -587,11 +741,19 @@
 				type: "item"
 				item: "modern_industrialization:lubricant_bucket"
 			}]
-			rewards: [{
-				id: "404D5FB42B5B4289"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4AA7A9B847EB0B79"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "4E36C27AAAD0999C"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Wall Sharing"
@@ -606,11 +768,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "506679DA46EDCEDB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4DC45C98526955F5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "16B36AFE051DA44F"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Uncooked &eSteel&r Dust"
@@ -626,12 +796,25 @@
 				item: "modern_industrialization:uncooked_steel_dust"
 				count: 9L
 			}]
-			rewards: [{
-				id: "313D42FF2B3F73E4"
-				type: "item"
-				item: "modern_industrialization:uncooked_steel_dust"
-				count: 9
-			}]
+			rewards: [
+				{
+					id: "313D42FF2B3F73E4"
+					type: "item"
+					item: "modern_industrialization:uncooked_steel_dust"
+					count: 9
+				}
+				{
+					id: "26F759C276364CC4"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "66AAE83350B538C9"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 7.5d
@@ -657,11 +840,19 @@
 					item: "modern_industrialization:coke_dust"
 				}
 			]
-			rewards: [{
-				id: "1ACB8BA0724C8E54"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "46DCBE1F2DD57A70"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "57B8A0D05E650D0B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			icon: "modern_industrialization:steam_blast_furnace"
@@ -726,11 +917,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "0C2ED5E8AF1EB0ED"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3767424E11AD72B4"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "62C675EDB9C00649"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "&eSteel Ingots&r"
@@ -758,11 +957,19 @@
 				item: "modern_industrialization:steel_ingot"
 				count: 18L
 			}]
-			rewards: [{
-				id: "5682EC3442B981E5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "23F4CFEE012D6563"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "2D6F495AA7C34760"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Item Pipes"
@@ -801,7 +1008,13 @@
 					count: 16
 				}
 				{
-					id: "5E75459B1947C2B7"
+					id: "77EF3CEA888BB7DD"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "2EF18B20866925ED"
 					type: "xp"
 					xp: 10
 				}
@@ -829,7 +1042,13 @@
 					count: 2
 				}
 				{
-					id: "5C9E73CE4E91582F"
+					id: "7E11F5CD76C3ED77"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "1960518723B92A95"
 					type: "xp"
 					xp: 10
 				}
@@ -847,11 +1066,19 @@
 				type: "item"
 				item: "modern_industrialization:trash_can"
 			}]
-			rewards: [{
-				id: "48B3F5F04EBB9FFD"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1C80D03E5CCFBCC2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "05AED031951FB55A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 17.0d
@@ -865,11 +1092,19 @@
 				type: "item"
 				item: "modern_industrialization:steel_unpacker"
 			}]
-			rewards: [{
-				id: "0AB2A0A3EF801C98"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "633129EAF897D875"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "01DE7E95BB5AB95D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 18.0d
@@ -883,11 +1118,19 @@
 				type: "item"
 				item: "modern_industrialization:steel_packer"
 			}]
-			rewards: [{
-				id: "348EA4CD01DA3C06"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7D351979A0A5C7D6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "03FD280762ABB192"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Packer Templates"
@@ -909,11 +1152,19 @@
 					item: "modern_industrialization:packer_double_ingot_template"
 				}
 			]
-			rewards: [{
-				id: "0ABA02979E3C0BFA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "45AB5B16BC0D526F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "05DF7816CA0F9515"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Steam Quarry"
@@ -994,11 +1245,19 @@
 					count: 4L
 				}
 			]
-			rewards: [{
-				id: "782AA4603FE86681"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4EFEB86EBD8ECE12"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "652C763405933D34"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 22.0d
@@ -1020,7 +1279,13 @@
 					count: 3
 				}
 				{
-					id: "328CBD24EE6A4D8A"
+					id: "0FF37A8A58A96C7E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "0366B71A54A89722"
 					type: "xp"
 					xp: 10
 				}
@@ -1046,7 +1311,13 @@
 					count: 3
 				}
 				{
-					id: "33EB119028755542"
+					id: "771C677571B8C843"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "3F7824D5BA8E03CC"
 					type: "xp"
 					xp: 10
 				}
@@ -1064,11 +1335,19 @@
 				type: "item"
 				item: "modern_industrialization:steel_wiremill"
 			}]
-			rewards: [{
-				id: "22539C983B0A0952"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "39CB1B944701BE80"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "45712F56BFD0FD82"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Alternative Rubber Source"
@@ -1106,11 +1385,19 @@
 					item: "techreborn:rubber"
 				}
 			]
-			rewards: [{
-				id: "0E7C5851252F49E2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0969EEB113D25403"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "4AA52E8CE723BE83"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Rubber Sheets"
@@ -1125,11 +1412,19 @@
 				type: "item"
 				item: "modern_industrialization:rubber_sheet"
 			}]
-			rewards: [{
-				id: "6C4FAE3DECF41A04"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "52B0E68726421270"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "790EB62AA6F0272D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 9.5d
@@ -1146,11 +1441,19 @@
 				type: "item"
 				item: "modern_industrialization:synthetic_oil_bucket"
 			}]
-			rewards: [{
-				id: "692AA14FBB2CC4C0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4E3E84F24B8E6666"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "4474206C5F920791"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 9.5d
@@ -1168,11 +1471,19 @@
 				type: "item"
 				item: "modern_industrialization:raw_synthetic_oil_bucket"
 			}]
-			rewards: [{
-				id: "6833B1696D3E857B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "51A14AA6F8AC46A9"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "46DEDD5855C5F888"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -1190,11 +1501,19 @@
 				type: "item"
 				item: "minecraft:paper"
 			}]
-			rewards: [{
-				id: "6144DA3C0791278E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "79B6104339608ABC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "0EF44D6310BB19D0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Advanced Pipe Configuration"
@@ -1213,11 +1532,19 @@
 				type: "item"
 				item: "modern_industrialization:config_card"
 			}]
-			rewards: [{
-				id: "1FACB0B9BF80CD9A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5552D15BE02FD7BF"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "2CD1973F7942D392"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Rubber Hat \\& Shoes"
@@ -1255,11 +1582,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "3AE6281D0655F5D1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1DA6B735A9C3BD80"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "28BB2DF106DC3C92"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "LV Cables"
@@ -1298,7 +1633,13 @@
 					count: 12
 				}
 				{
-					id: "677A61D327978C76"
+					id: "69A8B2A85B601895"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "2C18504F7C7DA28C"
 					type: "xp"
 					xp: 10
 				}
@@ -1341,11 +1682,19 @@
 					count: 5L
 				}
 			]
-			rewards: [{
-				id: "0CE769F1C3E7F637"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "42D26AA998A2DFE2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "28CED012768E9676"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Basic Components"
@@ -1382,11 +1731,19 @@
 					item: "modern_industrialization:conveyor"
 				}
 			]
-			rewards: [{
-				id: "0981D8968C36AA94"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "31887F3CBCF2FCA6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "67F2A83BA640E966"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Circuit Components"
@@ -1448,7 +1805,13 @@
 					count: 4
 				}
 				{
-					id: "5942D2BC1F2117A7"
+					id: "0CA2D1C8336A3162"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "1EBFB029E2243707"
 					type: "xp"
 					xp: 10
 				}
@@ -1472,11 +1835,19 @@
 				type: "item"
 				item: "modern_industrialization:analog_circuit"
 			}]
-			rewards: [{
-				id: "71124315137C5490"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "648EB8982AB3FAE5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "62938E1D455FB81A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 6.0d
@@ -1494,11 +1865,19 @@
 				type: "item"
 				item: "modern_industrialization:invar_ingot"
 			}]
-			rewards: [{
-				id: "0BADBCEC080BD9E8"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "266E743A971578F8"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "4D40C45459A52789"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Large Steam Boiler"
@@ -1584,11 +1963,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "263E205D18C20C11"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "45D6D0B7F05801DA"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "6F953BB772044A71"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Battery Alloy Dust"
@@ -1612,7 +1999,13 @@
 					count: 4
 				}
 				{
-					id: "1A887783966FC0C8"
+					id: "34CAEDFBA5860273"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "12600DAEAB1A5C32"
 					type: "xp"
 					xp: 10
 				}
@@ -1639,11 +2032,19 @@
 				type: "item"
 				item: "modern_industrialization:basic_machine_hull"
 			}]
-			rewards: [{
-				id: "79968765F8871EA0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "22EEBDA06B785689"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "65EA54F103456B15"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 15.5d
@@ -1661,11 +2062,19 @@
 				type: "item"
 				item: "modern_industrialization:redstone_battery"
 			}]
-			rewards: [{
-				id: "1EFB515E922B6801"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "412D645A291777CF"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "041621CF0FBD285D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 15.0d
@@ -1679,11 +2088,19 @@
 				type: "item"
 				item: "modern_industrialization:steel_tank"
 			}]
-			rewards: [{
-				id: "7992BF5167F21AC5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3AACC385AE5EBF48"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "277E762C957736EB"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 15.0d
@@ -1697,11 +2114,19 @@
 				type: "item"
 				item: "modern_industrialization:steel_barrel"
 			}]
-			rewards: [{
-				id: "14437200D2A77E02"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0F03E85536370594"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "42B65667F60E1BD0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 17.0d
@@ -1721,11 +2146,19 @@
 				type: "item"
 				item: "techreborn:low_voltage_su"
 			}]
-			rewards: [{
-				id: "10C368FDA1555FB9"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "57C40355EAD75D82"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "04A2D5D480D9A2B0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 17.0d
@@ -1780,11 +2213,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "35B9DD3EB4540650"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "45593FC9EF417541"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "4C3F2B85BC8A8733"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.0d
@@ -1802,11 +2243,19 @@
 				type: "item"
 				item: "modern_industrialization:molten_redstone_bucket"
 			}]
-			rewards: [{
-				id: "00F4391EDFF64C76"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2508558B40FC2465"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "7B4118D5B0877D60"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.0d
@@ -1824,11 +2273,19 @@
 				type: "item"
 				item: "modern_industrialization:soldering_alloy_bucket"
 			}]
-			rewards: [{
-				id: "3BBA148D65A211DA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "73BA7760F3FF5C7D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "10755737EBC783FC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 14.0d
@@ -1842,11 +2299,19 @@
 				type: "item"
 				item: "modern_industrialization:steel_boiler"
 			}]
-			rewards: [{
-				id: "2AE7E9C4EEE3F336"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2CC5FBD690689DD1"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "124D473C6928C53D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Elevators"
@@ -1876,11 +2341,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "5C24FC870A7448D1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0AFDA444E647DA19"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "3A3B4A679DE73F31"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Travel Anchors"
@@ -1902,11 +2375,19 @@
 					item: "travelstaff:travel_anchor"
 				}
 			]
-			rewards: [{
-				id: "62C3D812C9ED4815"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3BDEF1A06194A811"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "1ED5FD7753DCBED7"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -1938,7 +2419,13 @@
 					}
 				}
 				{
-					id: "72CD3822F4A7BAF9"
+					id: "04DCF13EAAA74326"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "2EE2DAB3E2E9FB75"
 					type: "xp"
 					xp: 10
 				}
@@ -1961,11 +2448,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "562DDA60269E5ECB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4FCFD018E83B90DD"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "51FC41485005DFC9"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 17.5d
@@ -1983,11 +2478,19 @@
 				type: "item"
 				item: "modern_industrialization:steel_water_pump"
 			}]
-			rewards: [{
-				id: "4D14F2EA55C04C1B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3D589D7CD0C71E8D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "7E04F86351C8735A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 13.0d
@@ -2007,11 +2510,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "65DF58FDD3D74A83"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "368BCA315E412F81"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "1D6AF5B8FE61E183"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -1.0d
@@ -2032,11 +2543,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "0148975071C9E97C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5389A56D0CF4CD22"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "3500893ACC1B10D0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Take to the Skies"
@@ -2057,11 +2576,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "270E680742DC3B4B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "27A9BEF290789A60"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "7F63DE228A940241"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 17.0d
@@ -2079,11 +2606,19 @@
 				type: "item"
 				item: "techreborn:red_cell_battery"
 			}]
-			rewards: [{
-				id: "4F9924F9FCE4CB7C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "617DA7280929EB34"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "77E2A628C51E098C"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 11.5d
@@ -2103,11 +2638,19 @@
 				type: "item"
 				item: "techreborn:electric_treetap"
 			}]
-			rewards: [{
-				id: "437E528973596539"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "11654CA6F9F12B0D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "46BDB219AF7DDA8B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Overclocking"
@@ -2126,11 +2669,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "1DD30A36EE536D4F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1E8B17E31F09AAEC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "538337781288B915"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 13.5d
@@ -2144,149 +2695,19 @@
 				type: "item"
 				item: "modern_industrialization:configurable_chest"
 			}]
-			rewards: [{
-				id: "23A33D47D0F0C237"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: -3.0d
-			y: 3.0d
-			shape: "rsquare"
-			description: ["The &eGold Chest&r stores 66 stacks of items. This is the highest tier you can make until you can process Diamond Plates."]
-			dependencies: ["6B3BEC96CBAB7760"]
-			id: "37A8157AB01079F0"
-			tasks: [{
-				id: "2AF4856E062F0CC3"
-				type: "item"
-				item: "ironchests:gold_chest"
-			}]
-			rewards: [{
-				id: "08D76671E0198D8A"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: -3.0d
-			y: 1.5d
-			shape: "rsquare"
-			description: ["The &7Iron Chest&r can store 54 stacks of items."]
-			dependencies: ["181F0CD6428732B2"]
-			id: "6B3BEC96CBAB7760"
-			tasks: [{
-				id: "5B31DECC1F4FB815"
-				type: "item"
-				item: "ironchests:iron_chest"
-			}]
-			rewards: [{
-				id: "1457DD99C5ABBE65"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: -3.0d
-			y: 0.0d
-			shape: "rsquare"
-			description: ["With &cCopper Plates&r, you can upgrade your normal chests to hold more items. This one can store up to 36 stacks of items."]
-			dependencies: ["5EDE88BDA0182BD7"]
-			id: "181F0CD6428732B2"
-			tasks: [{
-				id: "16FEE1AAF2F26234"
-				type: "item"
-				item: "ironchests:copper_chest"
-			}]
-			rewards: [{
-				id: "423B461A68650351"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			title: "Chest Upgrades"
-			x: -5.0d
-			y: 0.0d
-			shape: "rsquare"
-			description: ["Chest Upgrades allow you to upgrade your chests without having to break them or move their contents into a new chest."]
-			dependencies: ["181F0CD6428732B2"]
-			id: "20FE11ACDC27CA84"
-			tasks: [{
-				id: "40F4E4A27381D161"
-				type: "item"
-				title: "Any Chest Upgrade"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "kubejs:chest_upgrade"
-					}
-				}
-			}]
-			rewards: [{
-				id: "08B3219BAAA1D087"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			x: -3.0d
-			y: -2.0d
-			shape: "rsquare"
-			description: [
-				"The &7Iron Dolly&r allows you to shift-right click pickup your chests and move them. Much better than breaking them and having their contents spill everywhere."
-				""
-				"The iron version has durability, but the diamond upgrade doesn't."
-			]
-			dependencies: ["181F0CD6428732B2"]
-			id: "3088E454104EA8C6"
-			tasks: [{
-				id: "6359B09013F2D07C"
-				type: "item"
-				item: {
-					id: "ironchests:iron_dolly"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "23B598EEEF0555A3"
-				type: "xp"
-				xp: 10
-			}]
-		}
-		{
-			title: "Lock \\& Key"
-			x: -4.5d
-			y: -1.5d
-			shape: "rsquare"
-			description: [
-				"The &eIron Chest&r mod also includes a lock and key. You can apply a Lock to a chest by shift-right clicking it. You can then link a Key to that lock by shift-right clicking."
-				""
-				"Honestly it's a big risk to lock your chest, you'd be better off just chunk protecting them."
-			]
-			dependencies: ["181F0CD6428732B2"]
-			id: "018F1B1A8EF2C04E"
-			tasks: [
+			rewards: [
 				{
-					id: "560CDAFDD7E6CD51"
-					type: "item"
-					item: "ironchests:lock"
+					id: "2A0DF02A510773DD"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
 				}
 				{
-					id: "314538D8B80D71B6"
-					type: "item"
-					item: "ironchests:key"
+					id: "54F53E49A33CB6B6"
+					type: "xp"
+					xp: 10
 				}
 			]
-			rewards: [{
-				id: "504AF2E895DD015A"
-				type: "xp"
-				xp: 10
-			}]
 		}
 		{
 			x: 2.5d
@@ -2304,11 +2725,19 @@
 				type: "item"
 				item: "techreborn:ender_pearl_dust"
 			}]
-			rewards: [{
-				id: "6E6DD23551A6497D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "266179E78D3BD262"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "7DA8CFEBE5E5BEE3"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -2322,11 +2751,19 @@
 				type: "item"
 				item: "waystones:warp_dust"
 			}]
-			rewards: [{
-				id: "7D1C38DEC5C71725"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3315F8613E8AD337"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "21ED813411C60015"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Scrolls"
@@ -2362,11 +2799,19 @@
 					item: "waystones:warp_scroll"
 				}
 			]
-			rewards: [{
-				id: "08B6B041037A31FA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4040774C4CFFB98E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "7737064AE681229D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 1.0d
@@ -2391,7 +2836,13 @@
 					item: "waystones:warp_plate"
 				}
 				{
-					id: "317CAEB48D4B2FA4"
+					id: "3B52BFD9C7731EFA"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "74955F0FED9AADF2"
 					type: "xp"
 					xp: 10
 				}
@@ -2424,7 +2875,13 @@
 					count: 3
 				}
 				{
-					id: "0BCC0AD20277085E"
+					id: "13FABC7EE0C13EB3"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "73202E9C34F99F97"
 					type: "xp"
 					xp: 10
 				}
@@ -2442,11 +2899,19 @@
 				type: "item"
 				item: "scannable:range_module"
 			}]
-			rewards: [{
-				id: "0C52DA58378DE4D5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0C95F9F51D9240FE"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "1B2D7FD92163DB7E"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 12.0d
@@ -2460,11 +2925,19 @@
 				type: "item"
 				item: "scannable:entity_module"
 			}]
-			rewards: [{
-				id: "0D22D8E429068FD8"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "646826FAEA02138C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "55781F92F59A7D83"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 13.0d
@@ -2478,11 +2951,19 @@
 				type: "item"
 				item: "scannable:friendly_entity_module"
 			}]
-			rewards: [{
-				id: "55886473982C814C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5037CF06A7A6D5C2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "27DC91290106E122"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 14.0d
@@ -2496,11 +2977,19 @@
 				type: "item"
 				item: "scannable:hostile_entity_module"
 			}]
-			rewards: [{
-				id: "3BF34977DEE43868"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1D3DCC916FCADAF3"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "407A8AD108B42DBD"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 11.0d
@@ -2514,11 +3003,19 @@
 				type: "item"
 				item: "scannable:block_module"
 			}]
-			rewards: [{
-				id: "42A42CCA7FCDCBC6"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4E11D82AF4BCEBE5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "0D95A934E228CCD9"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 12.0d
@@ -2532,11 +3029,19 @@
 				type: "item"
 				item: "scannable:common_ores_module"
 			}]
-			rewards: [{
-				id: "1BD156E0F4A9D5C2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "552FCA193923E6FD"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "0E2466698DEDDA9E"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 13.0d
@@ -2550,11 +3055,19 @@
 				type: "item"
 				item: "scannable:rare_ores_module"
 			}]
-			rewards: [{
-				id: "510DE94CE1D7DB31"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "719A7F18F6782C3B"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "2BAD649602AB0BA8"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 14.0d
@@ -2568,11 +3081,19 @@
 				type: "item"
 				item: "scannable:fluid_module"
 			}]
-			rewards: [{
-				id: "15C928FFF6CA7936"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4EE2A461787F78D5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "6C234383F0C5FAC4"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 13.0d
@@ -2591,11 +3112,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "3D9FF7EF5D3B6704"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2564698FCAC7ED79"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "33270C7DB4595299"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 1.0d
@@ -2615,11 +3144,19 @@
 				type: "item"
 				item: "measurements:tape_measure"
 			}]
-			rewards: [{
-				id: "2E7455C93F17EF00"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "42FEEE93587E622B"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "0C3682F86D4A0608"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 13.0d
@@ -2633,11 +3170,19 @@
 				type: "item"
 				item: "techreborn:resin_basin"
 			}]
-			rewards: [{
-				id: "287AF4AB32A71055"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "04B643BD518F022C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "29979155611189E7"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Conveyor Belts"
@@ -2659,15 +3204,23 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "2119C2A1CEB012BF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "144D50EBE4364D77"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "130B703A1FF2AA6D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 20.0d
-			y: 8.0d
+			y: 8.5d
 			shape: "rsquare"
 			description: ["Placers are blocks that, when activated by a redstone signal, will place any block in its inventory in front of it, if possible."]
 			dependencies: ["3505E9029F3CEAD0"]
@@ -2677,15 +3230,23 @@
 				type: "item"
 				item: "kibe:placer"
 			}]
-			rewards: [{
-				id: "5BC7568AED74F100"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "05E700926B19D287"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "52EC494A1DB2350B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 20.0d
-			y: 9.0d
+			y: 9.5d
 			shape: "rsquare"
 			description: ["Breakers are blocks that, when activated by a redstone signal, will break any block in front of it and store its drops in its inventory, if possible."]
 			dependencies: ["3505E9029F3CEAD0"]
@@ -2695,15 +3256,23 @@
 				type: "item"
 				item: "kibe:breaker"
 			}]
-			rewards: [{
-				id: "546D5B8877CF188A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2E882127CC68C12E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "595718A332437BB5"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 20.0d
-			y: 10.0d
+			y: 10.5d
 			shape: "rsquare"
 			description: ["Drawbridges will place the blocks in its inventory directly in front of it when powered by redstone."]
 			dependencies: ["3505E9029F3CEAD0"]
@@ -2713,11 +3282,19 @@
 				type: "item"
 				item: "kibe:drawbridge"
 			}]
-			rewards: [{
-				id: "2423586914D46FE1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "64180C7F777C1B8E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "1008579DBF29297C"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 19.0d
@@ -2731,11 +3308,19 @@
 				type: "item"
 				item: "kibe:igniter"
 			}]
-			rewards: [{
-				id: "63A766DB373BD75D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "28074DB575F1BBF5"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "5FEEED6B6B297309"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -2748,11 +3333,19 @@
 				type: "item"
 				item: "techreborn:storage_buffer"
 			}]
-			rewards: [{
-				id: "0EF28BE5F9776A85"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6BFC2C84317BA1E2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "51A94E3876833AF6"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 2.0d
@@ -2765,11 +3358,205 @@
 				type: "item"
 				item: "techreborn:crude_storage_unit"
 			}]
-			rewards: [{
-				id: "778FFCD42CB1979E"
-				type: "xp"
-				xp: 10
+			rewards: [
+				{
+					id: "4C3627226E59BB8F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "02CAF6B2B1396F94"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			shape: "rsquare"
+			description: ["The &eGold Chest&r stores 66 stacks of items. This is the highest tier you can make until you can process Diamond Plates."]
+			dependencies: ["6B3BEC96CBAB7760"]
+			id: "37A8157AB01079F0"
+			tasks: [{
+				id: "2AF4856E062F0CC3"
+				type: "item"
+				item: "ironchests:gold_chest"
 			}]
+			rewards: [
+				{
+					id: "09746A0FC3CA1197"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "3BEFA9146E46DD6E"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			shape: "rsquare"
+			description: ["The &7Iron Chest&r can store 54 stacks of items."]
+			dependencies: ["181F0CD6428732B2"]
+			id: "6B3BEC96CBAB7760"
+			tasks: [{
+				id: "5B31DECC1F4FB815"
+				type: "item"
+				item: "ironchests:iron_chest"
+			}]
+			rewards: [
+				{
+					id: "7EF343C4FB3BAE6D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "347DFDFD8BD0216D"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["With &cCopper Plates&r, you can upgrade your normal chests to hold more items. This one can store up to 36 stacks of items."]
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "181F0CD6428732B2"
+			tasks: [{
+				id: "16FEE1AAF2F26234"
+				type: "item"
+				item: "ironchests:copper_chest"
+			}]
+			rewards: [
+				{
+					id: "22C0B22017797204"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "6A80FA947F9D28B9"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Chest Upgrades"
+			x: -4.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Chest Upgrades allow you to upgrade your chests without having to break them or move their contents into a new chest."]
+			dependencies: ["181F0CD6428732B2"]
+			id: "20FE11ACDC27CA84"
+			tasks: [{
+				id: "40F4E4A27381D161"
+				type: "item"
+				title: "Any Chest Upgrade"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:chest_upgrade"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6B3E1425CCB734EC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "5657CBCEFDA5BFFA"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -1.0d
+			shape: "rsquare"
+			description: [
+				"The &7Iron Dolly&r allows you to shift-right click pickup your chests and move them. Much better than breaking them and having their contents spill everywhere."
+				""
+				"The iron version has durability, but the diamond upgrade doesn't."
+			]
+			dependencies: ["181F0CD6428732B2"]
+			id: "3088E454104EA8C6"
+			tasks: [{
+				id: "6359B09013F2D07C"
+				type: "item"
+				item: {
+					id: "ironchests:iron_dolly"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6DF24308FA57F0DB"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "747E0DACABA69D46"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Lock \\& Key"
+			x: -4.5d
+			y: 1.0d
+			shape: "rsquare"
+			description: [
+				"The &eIron Chest&r mod also includes a lock and key. You can apply a Lock to a chest by shift-right clicking it. You can then link a Key to that lock by shift-right clicking."
+				""
+				"Honestly it's a big risk to lock your chest, you'd be better off just chunk protecting them."
+			]
+			dependencies: ["181F0CD6428732B2"]
+			id: "018F1B1A8EF2C04E"
+			tasks: [
+				{
+					id: "560CDAFDD7E6CD51"
+					type: "item"
+					item: "ironchests:lock"
+				}
+				{
+					id: "314538D8B80D71B6"
+					type: "item"
+					item: "ironchests:key"
+				}
+			]
+			rewards: [
+				{
+					id: "1F9BB24B63EFBDC6"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 8055223505892499306L
+				}
+				{
+					id: "53CC843CB0E80481"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 	]
 	quest_links: [ ]
