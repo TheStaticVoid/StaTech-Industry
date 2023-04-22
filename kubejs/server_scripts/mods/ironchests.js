@@ -13,16 +13,6 @@ ServerEvents.recipes(e => {
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
-    // -- DIRT CHEST -- //
-    e.shaped('ironchests:dirt_chest', [
-        'DDD',
-        'D D',
-        'DDD'
-    ],
-    {
-        D: '#minecraft:dirt'
-    });
-
     // -- COPPER CHEST -- //
     e.shaped('ironchests:copper_chest', [
         'PPP',
