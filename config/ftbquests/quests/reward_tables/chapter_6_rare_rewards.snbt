@@ -1,0 +1,67 @@
+{
+	id: "13A696924425497B"
+	order_index: 11
+	title: "Chapter 6 Rare Rewards"
+	loot_size: 1
+	rewards: [
+		{ item: "modern_industrialization:quantum_circuit", count: 2 }
+		{ item: "modern_industrialization:digital_circuit", count: 32 }
+		{ item: "modern_industrialization:quantum_machine_hull" }
+		{ item: "modern_industrialization:superconductor_ingot", count: 32 }
+		{ item: "modern_industrialization:superconductor_storage_unit", count: 4 }
+		{ item: "modern_industrialization:turbo_machine_hull", count: 24 }
+		{ item: "modern_industrialization:highly_advanced_machine_hull", count: 8 }
+		{ item: "modern_industrialization:fusion_chamber", count: 4 }
+		{ item: "modern_industrialization:qbit", count: 16 }
+		{ item: "modern_industrialization:cooling_cell", count: 16 }
+		{ item: "modern_industrialization:plutonium_dust", count: 16 }
+		{
+			item: {
+				id: "simplyswords:awakened_lichblade"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "simplyswords:molten_edge"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "simplyswords:mjolnir"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "techreborn:tungstensteel_ingot", count: 16 }
+		{
+			item: {
+				id: "ae2:item_storage_cell_256k"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{ item: "ae2:256k_crafting_storage", count: 3 }
+		{
+			item: {
+				id: "simplyswords:emberblade"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "modern_industrialization:gravichestplate" }
+		{ item: "techreborn:superconductor", count: 16 }
+		{ item: "modern_industrialization:superconductor_cable", count: 12 }
+	]
+}

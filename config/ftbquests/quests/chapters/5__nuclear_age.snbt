@@ -25,11 +25,19 @@
 				type: "item"
 				item: "modern_industrialization:highly_advanced_machine_hull"
 			}]
-			rewards: [{
-				id: "36FCD5B6E6B25D42"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4C69E706C9E59F47"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "1F5586B0FB2C27F2"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Large Diesel Generator"
@@ -88,11 +96,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "17FD7278A26530F1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "03B8FE601462AB99"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "335345D7D0074D9D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -106,11 +122,19 @@
 				type: "item"
 				item: "modern_industrialization:ev_storage_unit"
 			}]
-			rewards: [{
-				id: "6D39CECFC52C3D08"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "45DC70484E6269E0"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "6EDBAC5F33D8B779"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -124,11 +148,19 @@
 				type: "item"
 				item: "techreborn:ultimate_solar_panel"
 			}]
-			rewards: [{
-				id: "6491A3710D0F893D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1BF6E647E2C9DDEF"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "14E351334FED97B9"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Prepare for Nuclear Fission"
@@ -149,11 +181,19 @@
 				type: "item"
 				item: "modern_industrialization:mixed_plate_nuclear"
 			}]
-			rewards: [{
-				id: "1B6F8976954FD958"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "123F4FEE8862A5BC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "514825E7466D56DE"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 4.0d
@@ -170,11 +210,19 @@
 				type: "item"
 				item: "modern_industrialization:nuclear_alloy_plate"
 			}]
-			rewards: [{
-				id: "56DCA7CFA5A82E75"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "34167CE7A5718066"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "7F805AD705C2F42A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Nuclear Reactor"
@@ -229,11 +277,19 @@
 					count: 9L
 				}
 			]
-			rewards: [{
-				id: "62F5933305D3131F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "38725B3FEB13FA8D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "387D0BE947333564"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Nuclear Science"
@@ -265,11 +321,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "6032717A092BCA31"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "63BCDB282787EC6D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "5E585E19DCC75742"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -285,11 +349,19 @@
 				type: "item"
 				item: "modern_industrialization:quantum_circuit"
 			}]
-			rewards: [{
-				id: "2C1EFCC86B7850FB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6DE576CCAC26D9B3"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4105254141913357569L
+				}
+				{
+					id: "7E3A9EBFA09557A0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -1.0d
@@ -303,11 +375,19 @@
 				type: "item"
 				item: "techreborn:hot_tungstensteel_ingot"
 			}]
-			rewards: [{
-				id: "1538E354B2B25971"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1724C41EE1F99D2C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "55883990009E21C4"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.0d
@@ -321,11 +401,19 @@
 				type: "item"
 				item: "modern_industrialization:tritium_bucket"
 			}]
-			rewards: [{
-				id: "0E943D96AEF01F3A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6E48C072A96625F3"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "4C9D95C2D367014D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 1.0d
@@ -339,11 +427,19 @@
 				type: "item"
 				item: "modern_industrialization:superconductor_dust"
 			}]
-			rewards: [{
-				id: "6DB07CF0D3B65E62"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "055B005AAAB584EC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "3A4D64DBB8A20504"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "EV Cables"
@@ -371,11 +467,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "3C6AC319653C31CC"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5343FEA90D2E1169"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "5602D978D0CFD34C"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -1.0d
@@ -389,11 +493,19 @@
 				type: "item"
 				item: "techreborn:tungstensteel_ingot"
 			}]
-			rewards: [{
-				id: "11FB26CC2178B14F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2EE5B0174B24F7AC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "2E7467DCC5EA2C5A"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			icon: "modern_industrialization:space_probe_launcher"
@@ -471,11 +583,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "078B6536E0BBEB2E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5D2E898A5E9B3DE9"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "4D01BC87C2FFA2B2"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Nuclear Fuel"
@@ -501,11 +621,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "4C56DCE36A0BD7B9"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1ECAD93D1274347C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "4103FDCF8276D45D"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Depleted Nuclear Fuel"
@@ -531,11 +659,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "0B943FD438C2556E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7BEBC8B1F6ED5AD0"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "0910E3B94B6AB25B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Quantum Circuit Components"
@@ -569,11 +705,19 @@
 					item: "modern_industrialization:quantum_circuit_board"
 				}
 			]
-			rewards: [{
-				id: "4C4A4D6289892EF6"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "358630E8BA8C74CC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4105254141913357569L
+				}
+				{
+					id: "3359F9CDF61733B9"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 7.0d
@@ -592,11 +736,19 @@
 				type: "item"
 				item: "modern_industrialization:nuke"
 			}]
-			rewards: [{
-				id: "09009B7552A3AF54"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4A7BB847AEC0F778"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "7788935F276B8B62"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -610,11 +762,19 @@
 				type: "item"
 				item: "modern_industrialization:tungstensteel_tank"
 			}]
-			rewards: [{
-				id: "7902F99D95FA65EB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0CCB8578EE9663E2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "5577D859E43EA5E4"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -632,11 +792,19 @@
 				type: "item"
 				item: "modern_industrialization:tungstensteel_barrel"
 			}]
-			rewards: [{
-				id: "6F82AE32440D4680"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "21F0D5C8EFB5F08C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "7854B0E9D6704AFF"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -650,11 +818,19 @@
 				type: "item"
 				item: "kubejs:space_probe"
 			}]
-			rewards: [{
-				id: "4763B61AD0497974"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3F8C5FB6F04D61E4"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "51129A98D083A12E"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 5.5d
@@ -668,11 +844,19 @@
 				type: "item"
 				item: "modern_industrialization:plutonium_dust"
 			}]
-			rewards: [{
-				id: "15B532AF60229F0A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3DEAB6FD0DB144EC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "2C9965FC2F7398CD"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 7.0d
@@ -685,11 +869,19 @@
 				type: "item"
 				item: "modern_industrialization:uranium_dust"
 			}]
-			rewards: [{
-				id: "544F21166221DFAA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "46F722559FFFF5AC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "46AFE97182885E89"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 8.5d
@@ -709,11 +901,19 @@
 					item: "modern_industrialization:uranium_238_dust"
 				}
 			]
-			rewards: [{
-				id: "64E26E537DD4C866"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "30D00B0E67AA573F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "05087040FAE2872B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -731,11 +931,19 @@
 				type: "item"
 				item: "modern_industrialization:quantum_machine_hull"
 			}]
-			rewards: [{
-				id: "4A8C8BF3274E15E0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "712834B1E2600C70"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4105254141913357569L
+				}
+				{
+					id: "51FEABF87D3025AF"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -2.5d
@@ -749,11 +957,19 @@
 				type: "item"
 				item: "techreborn:dragon_egg_syphon"
 			}]
-			rewards: [{
-				id: "426AEFC232CC6312"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "64D7AE381F9A923B"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "67904434D8D7E1DC"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -1.5d
@@ -767,11 +983,19 @@
 				type: "item"
 				item: "techreborn:lapotronic_orb"
 			}]
-			rewards: [{
-				id: "2220B52B2787A44D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "281D8F389AE4C4FE"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "6DEA3D0B84DA876B"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -1.5d
@@ -785,11 +1009,19 @@
 				type: "item"
 				item: "techreborn:lapotronic_orbpack"
 			}]
-			rewards: [{
-				id: "15B0842EBD9DA8D7"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0D137DC7818D8AB3"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "7249B4EC327111B2"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -808,11 +1040,19 @@
 				type: "item"
 				item: "techreborn:interdimensional_su"
 			}]
-			rewards: [{
-				id: "7D1BCDB3AEAF53DF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "18A73252AF2A0385"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "35ACD74DDA2AACDE"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -829,11 +1069,19 @@
 				type: "item"
 				item: "techreborn:adjustable_su"
 			}]
-			rewards: [{
-				id: "065F04F729D53F31"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "033F6EC157DCFBCF"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "050A982EC5F2B7D0"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Tungstensteel Coils"
@@ -852,11 +1100,19 @@
 				item: "modern_industrialization:tungstensteel_coil"
 				count: 16L
 			}]
-			rewards: [{
-				id: "556454D5426ADD05"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "080FE38AD7E61055"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 1098950661447874341L
+				}
+				{
+					id: "793F153FBF451528"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "The Quantum Suit"
@@ -891,11 +1147,19 @@
 					item: "techreborn:quantum_boots"
 				}
 			]
-			rewards: [{
-				id: "1EF7CB87D45513C8"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3EB6C23E6F40753D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4105254141913357569L
+				}
+				{
+					id: "11277526046491E6"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 	]
 	quest_links: [ ]
