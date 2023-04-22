@@ -42,6 +42,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('copper_ore'), probability: 0.24 },
             { amount: 1, item: mi('tin_ore'), probability: 0.3 },
             { amount: 1, item: mc('gold_ore'), probability: 0.15 },
+            { amount: 1, item: mi('lead_ore'), probability: 0.15 },
             { amount: 1, item: mc('redstone_ore'), probability: 0.2 },
             { amount: 1, item: crate('zinc_ore'), probability: 0.2 },
             { amount: 1, item: tr('silver_ore'), probability: 0.2 },
