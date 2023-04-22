@@ -5069,7 +5069,7 @@
 		}
 		{
 			x: -8.0d
-			y: 5.0d
+			y: 4.5d
 			description: ["The &eTechReborn&r &bBasic Storage Unit&r is an upgrade to the &7Steel Tank&r. It can store up to 128 stacks of a single item and has &aconfigurable I/O&r and control through &credstone signals&r."]
 			dependencies: ["6012D781643367DA"]
 			id: "4332AA07E2B665B3"
@@ -5194,7 +5194,7 @@
 		}
 		{
 			x: -8.0d
-			y: 4.0d
+			y: 3.5d
 			description: ["The &bCrude Unit Upgrader&r can be used to upgrade your &aCrude Storage Unit&r into the &dBasic Storage Unit&r. You can apply the upgrade by shift-right clicking with the upgrade. "]
 			dependencies: ["6012D781643367DA"]
 			id: "1DC74D3B993B9147"
@@ -5219,7 +5219,7 @@
 		}
 		{
 			x: -8.0d
-			y: 3.0d
+			y: 2.5d
 			description: ["The &bRolling Machine&r can be used to roll and bend materials into different shapes. Most notably, it makes &arails&r at a better ratio, &bQuarry Tubes&r, and &dMagnalium Plates&r."]
 			dependencies: ["6012D781643367DA"]
 			id: "667280790626DD37"
@@ -5244,7 +5244,7 @@
 		}
 		{
 			x: -11.0d
-			y: 3.0d
+			y: 2.5d
 			description: ["The &bLaunchpad&r, when &apowered&r, will launch &dentities&r on top of it into the air."]
 			dependencies: ["046F01DB0758D7DD"]
 			id: "489CB40DCB36235E"
@@ -5327,7 +5327,7 @@
 		}
 		{
 			x: -11.0d
-			y: 2.0d
+			y: 1.5d
 			description: [
 				"The &eTechReborn&r &bWind Mill&r can be used to passively generate power from the wind. It generates &d2 E/t&r and an additional &d0.5 E/t&r during &athunderstorms&r."
 				""
@@ -5356,7 +5356,7 @@
 		}
 		{
 			x: -9.5d
-			y: 3.0d
+			y: 2.5d
 			description: ["With the &aRolling Machine&r, you can now make &bMagnalium Plates&r. To get the &bMagnesium&r required, you can centrifuge &dMarble Dust&r, which is made from &dTiny Obsidian Dust&r, and &aDiorite Dust&r."]
 			dependencies: ["667280790626DD37"]
 			id: "046F01DB0758D7DD"
@@ -5381,7 +5381,7 @@
 		}
 		{
 			x: -8.0d
-			y: 2.0d
+			y: 5.5d
 			description: [
 				"The &bAlarm&r will produce a very &cfun and enjoyable&r sound when powered by a &credstone signal&r."
 				""
@@ -5460,7 +5460,7 @@
 		}
 		{
 			x: -11.0d
-			y: 4.0d
+			y: 3.5d
 			description: [
 				"The &bQuarry&r is an addon for &eTechReborn&r that adds a &bQuarry&r machine that will actually dig physical blocks around it. "
 				""
@@ -5490,6 +5490,29 @@
 					xp: 10
 				}
 			]
+		}
+		{
+			x: -8.0d
+			y: 1.5d
+			description: [
+				"The &eTechReborn&r &bGreenhouse Controller&r is a machine that will automatically farm crops for you. Place the &bGreenhouse Controller&r on the ground, provide it with energy, and put some crops behind it for it to start working. "
+				""
+				"&cStandard Minecraft requirements apply to the crops, such as lighting, water, etc.&r"
+				""
+				"&aPowered Lamps&r above the crops will speed up their growth. The &bGreenhouse Controller&r can also gather &eSap&r from &dRubber Trees&r."
+			]
+			dependencies: ["6012D781643367DA"]
+			id: "0E0B57C78E892965"
+			tasks: [{
+				id: "778EC6CCAE694BB2"
+				type: "item"
+				item: "techreborn:greenhouse_controller"
+			}]
+			rewards: [{
+				id: "3A78FE9830AD6575"
+				type: "xp"
+				xp: 10
+			}]
 		}
 	]
 	quest_links: [ ]

@@ -186,59 +186,39 @@ MIMachineEvents.registerMachines(e => {
     const tungstensteelCoilMember = e.memberOfBlock('modern_industrialization:tungstensteel_coil');
     const spaceProbeLauncherBuilder = e.startShape('calorite_machine_casing');
 
-    // FIX THIS SHIT 
-    spaceProbeLauncherBuilder.add(0, -1, 0, caloriteMachineCasing, launcherHatch);
-    spaceProbeLauncherBuilder.add(-1, -1, 1, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, -1, 1, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(1, -1, 1, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(-2, -1, 2, caloriteMachineCasing, launcherHatch);
-    spaceProbeLauncherBuilder.add(-1, -1, 2, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, -1, 2, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(1, -1, 2, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(2, -1, 2, caloriteMachineCasing, launcherHatch);
-    spaceProbeLauncherBuilder.add(-1, -1, 3, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, -1, 3, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(1, -1, 3, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, -1, 4, caloriteMachineCasing, launcherHatch);
 
-    spaceProbeLauncherBuilder.add(0, 0, 0,  caloriteMachineCasing, launcherHatch);
-    spaceProbeLauncherBuilder.add(-1, 0, 1, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, 0, 1, caloritePipeCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(1, 0, 1, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(-2, 0, 2, caloriteMachineCasing, launcherHatch);
-    spaceProbeLauncherBuilder.add(-1, 0, 2, caloritePipeCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, 0, 2, caloritePipeCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(1, 0, 2, caloritePipeCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(2, 0, 2, caloriteMachineCasing, launcherHatch);
-    spaceProbeLauncherBuilder.add(-1, 0, 3, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, 0, 3, caloritePipeCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(1, 0, 3, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, 0, 4, caloriteMachineCasing, launcherHatch);
+    for ( let x = -2; x <= 2; x++) {
+        for ( let z = 0; z <= 4; z++) {
+            for (let y = -1; y <= 6; y++) {
 
-    spaceProbeLauncherBuilder.add(0, 1, 0,  caloriteMachineCasing, launcherHatch);
-    spaceProbeLauncherBuilder.add(-1, 1, 1, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, 1, 1, caloritePipeCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(1, 1, 1, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(-2, 1, 2, caloriteMachineCasing, launcherHatch);
-    spaceProbeLauncherBuilder.add(-1, 1, 2, caloritePipeCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, 1, 2, caloritePipeCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(1, 1, 2, caloritePipeCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(2, 1, 2, caloriteMachineCasing, launcherHatch);
-    spaceProbeLauncherBuilder.add(-1, 1, 3, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, 1, 3, caloritePipeCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(1, 1, 3, caloriteMachineCasing, e.noHatch());
-    spaceProbeLauncherBuilder.add(0, 1, 4, caloriteMachineCasing, launcherHatch);
+                if (y >= -1 && y <= 1) {
+                    if ((x == 0 && z == 0) || (x == -2 && z == 2) || (x == 2 && z == 2) || (x == 0 && z == 4)) {
+                        spaceProbeLauncherBuilder.add(x, y, z, caloriteMachineCasing, launcherHatch);
+                    }
+                }
 
-    for (let y = 2; y <= 6; y++) {
-        for (let x = -1; x <= 1; x++) {
-            for (let z = 1; z <= 3; z++) {
-                if (x == 0 && z == 2) continue;
-                else {
-                    if ((z == 1 || z == 3) && (x == 0)) {
+                if (y == -1) {
+                    if ( (x >= -1 && x <= 1) && (z >= 1 && z <= 3)) {
+                        spaceProbeLauncherBuilder.add(x, y, z, caloriteMachineCasing, e.noHatch());
+                    }
+                }
+
+                if (y == 0 || y == 1) {
+                    if ((x == 1 || x == -1) && (z == 1 || z == 3)) {
+                        spaceProbeLauncherBuilder.add(x, y, z, caloriteMachineCasing, e.noHatch());
+                    }
+
+                    if ((z == 1 && x ==0) || (z == 3 && x == 0) || (z == 2 && (x >= -1 && x <= 1))) {
+                        spaceProbeLauncherBuilder.add(x, y, z, caloritePipeCasing, e.noHatch());
+                    }
+                }
+
+                if (y >= 2) {
+                    if (((x == 0) && (z == 1 || z == 3)) || ((x == -1 || x == 1) && (z == 2))) {
                         spaceProbeLauncherBuilder.add(x, y, z, tungstensteelCoilMember, e.noHatch());
                     }
 
-                    if (z == 2 && (x == -1 || x == 1)) {
+                    if ((x == -1 || x == 1) && (z == 2)) {
                         spaceProbeLauncherBuilder.add(x, y, z, tungstensteelCoilMember, e.noHatch());
                     }
                 }
