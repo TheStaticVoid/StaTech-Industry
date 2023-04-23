@@ -1,6 +1,6 @@
 version:3120
 toggleCrawl:false
-autoJump:true
+autoJump:false
 autoSuggestions:true
 chatColors:true
 chatLinks:true
@@ -15,14 +15,14 @@ reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:false
 touchscreen:false
-fullscreen:false
+fullscreen:true
 bobView:true
 toggleCrouch:false
 toggleSprint:false
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
 mouseSensitivity:0.5
-fov:0.0
+fov:0.5
 screenEffectScale:1.0
 fovEffectScale:1.0
 darknessEffectScale:1.0
@@ -30,7 +30,7 @@ gamma:0.5
 renderDistance:12
 simulationDistance:12
 entityDistanceScaling:1.0
-guiScale:0
+guiScale:3
 particles:0
 maxFps:120
 graphicsMode:1
@@ -64,7 +64,7 @@ useNativeTransport:true
 mainHand:"right"
 attackIndicator:1
 narrator:0
-tutorialStep:movement
+tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
@@ -78,8 +78,8 @@ showAutosaveIndicator:true
 allowServerListing:true
 chatPreview:1
 onlyShowSecureChat:false
-soundCategory_master:1.0
-soundCategory_music:1.0
+soundCategory_master:0.20914605
+soundCategory_music:0.20960332
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0
