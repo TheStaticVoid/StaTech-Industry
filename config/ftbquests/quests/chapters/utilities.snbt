@@ -1030,6 +1030,30 @@
 				xp: 10
 			}]
 		}
+		{
+			title: "Block Placement Randomizer"
+			icon: "minecraft:mossy_cobblestone"
+			x: 9.0d
+			y: 5.5d
+			description: [
+				"This mod allows you to place blocks from your &dhotbar&r randomly."
+				""
+				"After you turn it on, every time you place a block, your hotbar will select a different (or possibly the same) slot randomly, so your next placement will be that different block."
+				""
+				"To start randomly placing, you can use a &dcommand&r. For example, you want to build a wall from cobblestone, stone, and bricks, and manually insert a lantern from time to time. Place a stack of those three blocks into each of three adjacent hotbar slots. Then tell the mod which slots you're using - the command for that is &e/rblock <slotno> <slotno>&r with slot numbers counting from 1 to 9. So if you're using the last 3 slots, the command is &e/rblock 7 9&r."
+			]
+			id: "4DD24A8447481ACF"
+			tasks: [{
+				id: "28A1AD99166E0628"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "6DD3D1F4133CE8C3"
+				type: "xp"
+				xp: 10
+			}]
+		}
 	]
 	quest_links: [ ]
 }
