@@ -2562,7 +2562,11 @@
 			x: 0.0d
 			y: -3.0d
 			shape: "rsquare"
-			description: ["A Glider is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally."]
+			description: [
+				"A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally."
+				""
+				"&cNote&r that only the &aWhite&r version of the &bGlider&r will be accepted for this quest due to &dFTB Quests&r limitations with &eKibe&r."
+			]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "0B735B2265B363C8"
 			tasks: [{
