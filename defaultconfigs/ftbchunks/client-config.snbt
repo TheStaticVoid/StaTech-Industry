@@ -5,4 +5,9 @@
     # Enables creation of death waypoints
     # Default: true
     death_waypoints: false
+	
+	# Automatically remove death waypoints if closer than this many blocks away (distance of 0 disables removal)
+	# Default: 0
+	# Range: 0 ~ 2147483647
+	death_waypoint_autoremove_distance: 5
 }
