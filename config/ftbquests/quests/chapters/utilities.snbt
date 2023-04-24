@@ -228,10 +228,10 @@
 						Count: 1b
 						tag: {
 							state: {
-								data: { }
 								state: {
 									Name: "minecraft:air"
 								}
+								data: { }
 								serializer: "buildinggadgets:dummy_serializer"
 							}
 							energy: 500000.0d
@@ -246,10 +246,10 @@
 						Count: 1b
 						tag: {
 							state: {
-								data: { }
 								state: {
 									Name: "minecraft:air"
 								}
+								data: { }
 								serializer: "buildinggadgets:dummy_serializer"
 							}
 							energy: 500000.0d
@@ -263,6 +263,7 @@
 						id: "buildinggadgets:gadget_copy_paste"
 						Count: 1b
 						tag: {
+							energy: 500000.0d
 							"buildinggadgets:template_key": {
 								template_id: [I;
 									-1638511729
@@ -271,7 +272,6 @@
 									-1770359759
 								]
 							}
-							energy: 500000.0d
 						}
 					}
 				}
@@ -681,10 +681,10 @@
 					tag: {
 						BlockEntityTag: {
 							Items: [ ]
-							x: -198
+							y: 64
 							id: "kibe:cooler"
 							z: 126
-							y: 64
+							x: -198
 						}
 					}
 				}
@@ -963,6 +963,69 @@
 			}]
 			rewards: [{
 				id: "251B4ACD4E4E81ED"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			title: "Farming for Blockheads"
+			x: 7.5d
+			y: 1.0d
+			description: [
+				"This pack includes &eFarming for Blockheads&r, a helpful mod for those looking to get into farming."
+				""
+				"The &bMarket&r is a very useful block for &dbuying&r seeds for crops you might not have found in the wild."
+				""
+				"There is also &cfertilizer&r and other &autilities&r included with this mod. Check it out in &dJEI&r under &e@farming&r."
+			]
+			id: "7CA911BBA85464A1"
+			tasks: [{
+				id: "77970F443BB24354"
+				type: "item"
+				item: "farmingforblockheads:market"
+			}]
+			rewards: [{
+				id: "7F6B4D7927086FEC"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			description: ["Find a &acool item&r and want to &bshow it off&r to your friends? Then the &bDisplay Case&r is for you! You can place any item or block inside by right clicking."]
+			id: "67D30AFE3AFFB13C"
+			tasks: [{
+				id: "367599900BC40592"
+				type: "item"
+				item: {
+					id: "display_case:display_case"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "12D56DCB3793F474"
+				type: "xp"
+				xp: 10
+			}]
+		}
+		{
+			x: 9.0d
+			y: 2.5d
+			description: [
+				"Find something cool in your world, or just want to take a picture to remember the occasion? Take a picture with the &bCamera&r!"
+				""
+				"To take a photo, you must have an &aEmpty Map&r in your inventory and press '&eC&r' while using the Camera."
+			]
+			id: "6730EAFBD67277D8"
+			tasks: [{
+				id: "76EBB69AB1D46D20"
+				type: "item"
+				item: "polaroidcamera:camera"
+			}]
+			rewards: [{
+				id: "7BE5A4DD9C679C6C"
 				type: "xp"
 				xp: 10
 			}]

@@ -70,6 +70,13 @@
 			x: 5.0d
 			y: 0.0d
 			shape: "rsquare"
+			description: [
+				"&bCogs&r make up the basis of how you will be delivering &drotational force&r to your &eCreate&r machines."
+				""
+				"&aSmall Cogs&r can connect diagonally to &cLarge Cogs&r and &cLarge Cogs&r can only connect perpendicularly."
+				""
+				"Connecting &cLarge&r to &aSmall&r will double the &dspeed&r, and the inverse will &chalf&r the speed."
+			]
 			dependencies: ["3239CF4A9CF033B1"]
 			id: "51E52A2FF80C88B9"
 			tasks: [
@@ -460,7 +467,7 @@
 			]
 		}
 		{
-			x: -7.5d
+			x: -7.0d
 			y: -6.5d
 			description: ["The &bCopper Valve Handle&r can be used to apply manual &arotational force&r by right-clicking, similar to the &cHand Crank&r."]
 			dependencies: ["51356454DB10752D"]
@@ -698,6 +705,11 @@
 		{
 			x: -6.5d
 			y: -2.0d
+			description: [
+				"The &bMechanical Press&r when provided rotational force will transform &aingots&r into &cplates&r. "
+				""
+				"&aIngots&r can either be placed on the ground or on a &eDepot&r below the &bMechanical Press&r."
+			]
 			dependencies: ["4F4C5DEE88EABE32"]
 			size: 1.5d
 			id: "51356454DB10752D"
@@ -746,7 +758,7 @@
 			]
 		}
 		{
-			x: -6.5d
+			x: -6.0d
 			y: -6.5d
 			description: [
 				"The &bEncased Fan&r can be used to push &eentities&r as well as being used to do &aBulk Blasting, Smelting, Smoking, and Haunting.&r"
@@ -920,6 +932,11 @@
 			x: -13.0d
 			y: -2.0d
 			subtitle: "Instruments not included"
+			description: [
+				"Mixing &aCopper&r and &bZinc&r in a heated &eMechanical Mixer&r will create &6Brass&r. "
+				""
+				"&6Brass&r is the key alloy of the &eCreate&r mod and is required for advanced automation mechanisms."
+			]
 			dependencies: ["03B0AC7D643C8EC2"]
 			id: "029C56FD6F1A36F0"
 			tasks: [{
@@ -973,6 +990,11 @@
 		{
 			x: -13.0d
 			y: 4.0d
+			description: [
+				"&bDeployers&r can be used to automate placing, attacking, or using blocks, items, etc. "
+				""
+				"These are quite complex and I would recommend checking the &ePonder&r for these."
+			]
 			dependencies: [
 				"029C56FD6F1A36F0"
 				"2B1123DC479F00CB"
@@ -1601,6 +1623,14 @@
 		{
 			x: -11.5d
 			y: 2.5d
+			subtitle: "Minecarts++"
+			description: [
+				"&bTrain Tracks&r are what your &dtrains&r will move along. "
+				""
+				"Right-clicking the ground to start the placment process. If you have multiple &bTracks&r in your inventory you can choose how you would like them to be placed."
+				""
+				"These are somewhat complex to interact with, make sure to check the &ePonder&r!"
+			]
 			dependencies: ["5280346E492CDFF6"]
 			id: "078843982FA6DF90"
 			tasks: [{
@@ -1654,7 +1684,7 @@
 		}
 		{
 			title: "Moving Fluids"
-			x: -8.5d
+			x: -8.0d
 			y: -6.5d
 			description: [
 				"The &bMechanical Pump&r is used to push fluids through &aPipes&r. The direction of the &arotational force&r applied to the &bMechanical Pump&r will determine the direction it pushes fluids. You can inverse the behavior, without having to change the &arotational force&r direction by right-clicking the &bMechanical Pump&r with a &eCreate&r &6Wrench&r."
@@ -1714,7 +1744,7 @@
 			]
 		}
 		{
-			x: -5.5d
+			x: -5.0d
 			y: -6.5d
 			description: [
 				"&bChutes&r can be used to transfer items from inventories vertically. You can right-click with a wrench to toggle viewing the &dglass&r on the side of the &bChute&r. "
@@ -2133,7 +2163,7 @@
 			]
 		}
 		{
-			x: -4.5d
+			x: -4.0d
 			y: -6.5d
 			description: ["The &bRope Pulley&r can be used to move blocks up and down. Attached blocks are convereted into &dcontraptions&r when moved. The direction and speed of the provided &arotational force&r will affect the direction and speed of the &bRope Pulley&r."]
 			dependencies: ["51356454DB10752D"]
@@ -2591,6 +2621,27 @@
 					xp: 10
 				}
 			]
+		}
+		{
+			x: -9.0d
+			y: -6.5d
+			description: [
+				"The &bItem Vault&r is the &eCreate&r version of &dmass-storage&r. You &ccannot interact&r with it directly, only through funnels / chutes / etc. "
+				""
+				"You can track an &bItem Vault&r's inventory through a &aContent Observer&r linked to a &dDisplay Board&r."
+			]
+			dependencies: ["51356454DB10752D"]
+			id: "5C9A36E8F2773795"
+			tasks: [{
+				id: "7CFC7969C000EC98"
+				type: "item"
+				item: "create:item_vault"
+			}]
+			rewards: [{
+				id: "52A6A61C9BA9CD2B"
+				type: "xp"
+				xp: 10
+			}]
 		}
 	]
 	quest_links: [ ]
