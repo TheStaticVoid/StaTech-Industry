@@ -25,7 +25,6 @@ REIEvents.hide('item', e => {
         ae2('ender_dust'),
         ae2('sky_stone_tank'),
         'decorative_blocks:blockstate_copy_item',
-        'farmersdelight:wheat_dough',
         kibe('tank'),
         kibe('xp_shower'),
         kibe('xp_drain'),

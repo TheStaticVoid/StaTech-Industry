@@ -588,7 +588,7 @@
 			]
 		}
 		{
-			x: -4.0d
+			x: -3.5d
 			y: 2.5d
 			shape: "rsquare"
 			description: [
@@ -618,7 +618,7 @@
 			]
 		}
 		{
-			x: -2.0d
+			x: -2.5d
 			y: 2.5d
 			shape: "rsquare"
 			description: ["Why lug around a crafting table everywhere you go when you could instead make a &ePocket Crafting Table&r. Using this item, you will have access to a 3x3 crafting grid anywhere you go!"]
@@ -789,31 +789,6 @@
 				}
 				{
 					id: "37DF83DBBE8A1607"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: -3.0d
-			y: 2.5d
-			shape: "rsquare"
-			description: ["Stores exactly &a1 stack of items&r. Can be useful in some automations."]
-			dependencies: ["045C683BF6E216CB"]
-			id: "01AEE5C702B4D1CB"
-			tasks: [{
-				id: "6304E3A65BDD3BFC"
-				type: "item"
-				item: "ironchests:dirt_chest"
-			}]
-			rewards: [
-				{
-					id: "318EAEB184D5D025"
-					type: "random"
-					table_id: 1292583397374875582L
-				}
-				{
-					id: "77ED3EC194F9E339"
 					type: "xp"
 					xp: 10
 				}

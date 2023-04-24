@@ -3,7 +3,6 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let tr = (id) => `techreborn:${id}`;
-    let crate = (id) => `create:${id}`; // mispelled on purpose ;)
 
     let alloySmelter = (eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
@@ -77,11 +76,11 @@ ServerEvents.recipes(e => {
         16,
         300,
         [
-            { amount: 4, tag: 'c:copper_ingots' },
+            { amount: 3, tag: 'c:copper_ingots' },
             { amount: 1, tag: 'c:zinc_ingots' }
         ],
         [
-            { amount: 4, item: crate('brass_ingot') }
+            { amount: 4, item: tr('brass_ingot') }
         ]
     );
 
