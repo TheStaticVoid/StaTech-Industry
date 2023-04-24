@@ -188,11 +188,6 @@ ServerEvents.recipes(e => {
                 [ { amount: 2, tag: `c:${material}_ingots` } ],
                 [ { amount: 1, item: mi(`${material}_curved_plate`) } ]
             );
-            forgeHammer(
-                10,
-                [ { amount: 1, tag: `c:${material}_ingots` } ],
-                [ { amount: 1, item: mi(`${material}_curved_plate`) } ]
-            );
         }
 
         // -- PLATES -- // 
