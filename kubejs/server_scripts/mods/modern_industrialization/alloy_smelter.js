@@ -109,4 +109,17 @@ ServerEvents.recipes(e => {
             { amount: 2, item: mi('cupronickel_ingot') }
         ]
     ); 
+	
+	// -- BATTERY ALLOY -- //
+	alloySmelter(
+		8,
+		200,
+		[
+			{ amount: 1, tag: 'c:lead_ingots' },
+			{ amount: 1, tag: 'c:antimony_ingots' }
+		],
+		[
+			{ amount: 2, item: mi('battery_alloy_ingot') }
+		]
+	);
 });
