@@ -38,28 +38,27 @@ ServerEvents.recipes(e => {
         4,
         400,
         [
-            { amount: 4, item: mi('cupronickel_wire') }
+            { amount: 4, item: mi('cupronickel_wire') },
+            { amount: 1, item: mi('copper_ring') }
         ],
         [
             { amount: 1, item: tr('cupronickel_heating_coil') }
-        ],
-        null,
-        null
+        ]
     );
     
-    // -- KANTHAL HEATING COIL -- //
-    assembler(
-        48,
-        400,
-        [
-            { amount: 4, item: mi('kanthal_wire') }
-        ],
-        [
-            { amount: 1, item: tr('kanthal_heating_coil') }
-        ],
-        null,
-        null
-    );
+    // // -- KANTHAL HEATING COIL -- //
+    // assembler(
+    //     48,
+    //     400,
+    //     [
+    //         { amount: 4, item: mi('kanthal_wire') }
+    //     ],
+    //     [
+    //         { amount: 1, item: tr('kanthal_heating_coil') }
+    //     ],
+    //     null,
+    //     null
+    // );
 
     // -- AUTO CRAFTING TABLE -- //
     assembler(
@@ -73,9 +72,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: tr('auto_crafting_table') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- LITHIUM BATTERY -- //
@@ -91,8 +88,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 500, fluid: mi('lithium') }
-        ],
-        null
+        ]
     );
 
     // -- LITHIUM BATPACK -- //
@@ -113,8 +109,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1000, fluid: mi('acrylic_glue') }
-        ],
-        null
+        ]
     );
 
     // -- ENERGY CRYSTAL -- //
@@ -131,8 +126,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 500, fluid: mi('polyethylene') }
-        ],
-        null
+        ]
     );
 
     // -- LAPOTRON CRYSTAL -- //
@@ -150,8 +144,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 500, fluid: mi('polyethylene') }
-        ],
-        null
+        ]
     );
 
     // -- QBIT -- //
@@ -170,8 +163,7 @@ ServerEvents.recipes(e => {
         [
             { amount: 250, fluid: mi('cryofluid') },
             { amount: 50, fluid: mi('tritium') }
-        ],
-        null
+        ]
     );
 
     // -- TUNGSTENSTEEL TANK -- //
@@ -184,9 +176,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: mi('tungstensteel_tank') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- TUNGSTENSTEEL BARREL -- //
@@ -199,9 +189,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: mi('tungstensteel_barrel') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- ULTRADENSE METAL BALL -- //
@@ -218,8 +206,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1000, fluid: mi('neutronium') }
-        ],
-        null
+        ]
     );
 
     // -- CALORITE MACHINE CASING -- //
@@ -232,9 +219,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: mi('calorite_machine_casing') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- CALORITE MACHINE PIPE CASING -- //
@@ -247,9 +232,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: mi('calorite_machine_casing_pipe')}
-        ],
-        null,
-        null
+        ]
     );
 
     // -- INDUSTRIAL CIRCUIT -- //
@@ -262,9 +245,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item:  tr('industrial_circuit') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- DATA STORAGE CORE -- //
@@ -277,9 +258,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: tr('data_storage_core') }
-        ],
-        null,
-        null
+        ]
     );
     assembler(
         20,
@@ -290,9 +269,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: tr('data_storage_core') } 
-        ],
-        null,
-        null
+        ]
     )
 
     // -- SPACE HELMET -- //
@@ -306,9 +283,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: astra('space_helmet') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- SPACE SUIT -- // 
@@ -323,9 +298,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: astra('space_suit') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- SPACE PANTS -- //
@@ -338,9 +311,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: astra('space_pants') }
-        ],
-        null,
-        null
+        ]
     ) 
 
     // -- SPACE BOOTS -- //
@@ -381,8 +352,7 @@ ServerEvents.recipes(e => {
         [
             { amount: 16000, fluid: mi('uu_matter') },
             { amount: 16000, fluid: mi('neutronium') }
-        ],
-        null
+        ]
     );
 
     // -- CREATIVE BARREL -- //
@@ -406,8 +376,7 @@ ServerEvents.recipes(e => {
         [
             { amount: 16000, fluid: mi('uu_matter') },
             { amount: 16000, fluid: mi('neutronium') }
-        ],
-        null
+        ]
     );
 
     // -- CREATIVE TANK -- //
@@ -431,8 +400,7 @@ ServerEvents.recipes(e => {
         [
             { amount: 16000, fluid: mi('uu_matter') },
             { amount: 16000, fluid: mi('neutronium') }
-        ],
-        null
+        ]
     );
 
     // -- CREATIVE MOTOR -- //
@@ -456,8 +424,7 @@ ServerEvents.recipes(e => {
         [
             { amount: 16000, fluid: mi('uu_matter') },
             { amount: 16000, fluid: mi('neutronium') }
-        ],
-        null
+        ]
     );
 
     // -- CREATIVE WORLDSHAPER -- //
@@ -481,7 +448,6 @@ ServerEvents.recipes(e => {
         [
             { amount: 16000, fluid: mi('uu_matter') },
             { amount: 16000, fluid: mi('neutronium') }
-        ],
-        null
+        ]
     );
 });
