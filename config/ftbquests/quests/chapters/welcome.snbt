@@ -7,18 +7,35 @@
 	icon: "minecraft:diamond"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: 0.0d
-		y: -6.5d
-		width: 7.5d
-		height: 7.5d
-		rotation: 0.0d
-		image: "statech:textures/item/mm_logo.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: 0.0d
+			y: -6.5d
+			width: 7.5d
+			height: 7.5d
+			rotation: 0.0d
+			image: "statech:textures/item/mm_logo.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "statech:textures/item/discordlogo.png"
+			hover: [
+				"Find yourself stuck and need help? "
+				"Or if you just want to chat, come join the Discord!"
+			]
+			click: "https://discord.gg/RDaJEnN3uS"
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			title: "&aWelcome!"
