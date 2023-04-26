@@ -3449,14 +3449,8 @@
 			title: "Mercury"
 			x: -12.75d
 			y: 10.75d
-			shape: "square"
-			description: [
-				"&bMercury&r really is nothing more than a &chot rock&r. Compared to &aVenus&r, &bMercury&r doesn't have too much to offer other than lots of &4lava&r, &9basalt&r, and &cmagma cubes&r."
-				""
-				"While you're here, you should mainly look for &cCalorite&r, the final metal available (currently) through &eAd Astra!&r. You'll need it to make the &afinal tier rocket&r, the &bJet Suit&r, and if you get enough the &cSpace Probe Launcher&r. "
-				""
-				"Making the &cSpace Probe Launcher&r will allow you to farm infinite amounts of the &eAd Astra!&r metals&r."
-			]
+			shape: "rsquare"
+			description: ["&bMercury&r really is nothing more than a &chot rock&r. Compared to &aVenus&r, &bMercury&r doesn't have too much to offer other than lots of &4lava&r, &9basalt&r, and &cmagma cubes&r."]
 			dependencies: ["54D443AD7BBA040B"]
 			size: 1.5d
 			id: "234D4BC93E0C9108"
@@ -3486,10 +3480,7 @@
 			y: 9.5d
 			shape: "square"
 			description: ["&cCalorite&r is the final tier of metal in &eAd Astra!&r, and is needed to make the &bJet Suit&r, &aTier Four Rocket&r, and &eSpace Probe Launcher&r."]
-			dependencies: [
-				"234D4BC93E0C9108"
-				"199E258B212D744F"
-			]
+			dependencies: ["199E258B212D744F"]
 			id: "488543DD1EEAF483"
 			tasks: [{
 				id: "2CEA60D72656BF33"
