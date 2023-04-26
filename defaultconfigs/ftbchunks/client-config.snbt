@@ -165,7 +165,7 @@
 		
 		# Minimap will not rotate
 		# Default: true
-		locked_north: true
+		locked_north: false
 		
 		# Show player heads on minimap
 		# Default: true
@@ -203,7 +203,7 @@
 		
 		# Draw a square minimap instead of a circular one
 		# Default: false
-		square: true
+		square: false
 		
 		# Minimap visibility
 		# Default: 255
@@ -228,4 +228,5 @@
 		zoom: 1.0d
 	}
 }
+
 
