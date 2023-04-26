@@ -270,7 +270,53 @@ ServerEvents.recipes(e => {
         [
             { amount: 1, item: tr('data_storage_core') } 
         ]
-    )
+    );
+
+    // -- REDSTONE REPEATER -- //
+    assembler(
+        8,
+        100,
+        [
+            { amount: 3, tag: 'c:stone' }
+        ],
+        [
+            { amount: 1, item: mc('repeater') }
+        ],
+        [
+            { amount: 200, fluid: mi('molten_redstone') }
+        ]
+    );
+
+    // -- REDSTONE COMPARATOR -- //
+    assembler(
+        8,
+        100, 
+        [
+            { amount: 1, item: mc('quartz') },
+            { amount: 3, tag: 'c:stone' }
+        ],
+        [
+            { amount: 1, item: mc('comparator') }
+        ],
+        [
+            { amount: 200, fluid: mi('molten_redstone') }
+        ]
+    );
+
+    // -- REDSTONE TORCH -- //
+    assembler(
+        8,
+        100,
+        [
+            { amount: 1, tag: 'c:wood_sticks' }
+        ],
+        [
+            { amount: 1, item: mc('redstone_torch') }
+        ],
+        [
+            { amount: 50, fluid: mi('molten_redstone') }
+        ]
+    );
 
     // -- SPACE HELMET -- //
     assembler(
