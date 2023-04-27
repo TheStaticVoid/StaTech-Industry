@@ -2,12 +2,14 @@ ServerEvents.recipes(e => {
 
     let mc = (id) => `minecraft:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
+    let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
 
-    let chemicalReactor = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
+    let chemicalReactor = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('chemical_reactor'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -24,6 +26,7 @@ ServerEvents.recipes(e => {
 
     // -- EYE OF ENDER -- //
     chemicalReactor(
+        st('eye_of_ender'),
         8,
         600,
         [
@@ -32,13 +35,12 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 2, item: mc('ender_eye') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- PLASTIC BAR -- //
     chemicalReactor(
+        st('plastic_bar'),
         16,
         300,
         [
@@ -49,12 +51,12 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 500, fluid: mi('polyethylene') }
-        ],
-        null
+        ]
     );
 
     // -- SNYTHETIC REDSTONE CRYSTAL -- //
     chemicalReactor(
+        st('synthetic_redstone_crystal'),
         24,
         400,
         [
@@ -65,7 +67,6 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 3600, fluid: mi('molten_redstone') }
-        ],
-        null
+        ]
     );
 });

@@ -1,0 +1,22 @@
+{
+	"modId": "culturaldelights",
+	"group": {
+		"name": "Cultural Delights Seeds",
+		"enabledByDefault": true,
+		"defaultPayment": {
+			"item": "minecraft:emerald"
+		},
+		"defaultCategory": "farmingforblockheads:seeds"
+	},
+	"customEntries": [
+		{
+			"output": "culturaldelights:cucumber_seeds"
+		},
+		{
+			"output": "culturaldelights:eggplant_seeds"
+		},
+		{
+			"output": "culturaldelights:corn_kernels"
+		}
+	]
+}

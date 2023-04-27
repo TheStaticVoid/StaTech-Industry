@@ -689,7 +689,7 @@
 			y: 5.0d
 			shape: "rsquare"
 			subtitle: "Long awaited upgrade"
-			description: ["Finally with your &7Refined Iron&r, you can upgrade your Frayed Backpack to become a &ePlated Backpack&r. This backpack can hold 18 stacks of items and can be equipped on your back trinket slot."]
+			description: ["Finally with your &7Refined Iron&r, you can upgrade your Frayed Backpack to become a &ePlated Backpack&r. This backpack can hold &d36 stacks&r of items and can be equipped on your back trinket slot."]
 			dependencies: ["6012D781643367DA"]
 			id: "59141568014C03CB"
 			tasks: [{
@@ -1084,7 +1084,7 @@
 			shape: "rsquare"
 			subtitle: "Like having a chest on your back"
 			description: [
-				"The &6Gilded Backpack&r will allow you to carry 27 item stacks."
+				"The &6Gilded Backpack&r will allow you to carry &d54 item stacks&r."
 				""
 				"Note that it takes 4x Electrum and 4x Gold Plates. The textures look very similar."
 			]
@@ -3349,7 +3349,7 @@
 			x: -25.5d
 			y: 13.0d
 			shape: "rsquare"
-			description: ["With this new piece of bling, you will be able to carry 45 item stacks."]
+			description: ["With this new piece of bling, you will be able to carry &d 72 item stacks&r."]
 			dependencies: ["7DE1DE92C45C81BB"]
 			id: "1B19E2916336F297"
 			tasks: [{
@@ -5010,58 +5010,6 @@
 				}
 				{
 					id: "5025D3B257BE5B27"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: -2.0d
-			y: -4.0d
-			shape: "rsquare"
-			description: ["Prevents rain / snow particles in a 3x3 chunk radius when powered by redstone."]
-			dependencies: ["473C1DE557D3E9C0"]
-			id: "060A731AEBEA372B"
-			tasks: [{
-				id: "11601ECCFFA4A1DE"
-				type: "item"
-				item: "kibe:dehumidifier"
-			}]
-			rewards: [
-				{
-					id: "4AC7146CCF3DBEF8"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 238949117979752405L
-				}
-				{
-					id: "0FA8833B9A731A7B"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 2.0d
-			y: -4.0d
-			shape: "rsquare"
-			description: ["Melts ice and snow in a 3x3 chunk radius when powered by redstone."]
-			dependencies: ["473C1DE557D3E9C0"]
-			id: "291CD73E1846E514"
-			tasks: [{
-				id: "1EC01774F4CEEFDE"
-				type: "item"
-				item: "kibe:heater"
-			}]
-			rewards: [
-				{
-					id: "1C08C0FD85386BAD"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 238949117979752405L
-				}
-				{
-					id: "36380BB49751B649"
 					type: "xp"
 					xp: 10
 				}

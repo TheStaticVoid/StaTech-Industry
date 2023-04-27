@@ -2,6 +2,7 @@ ServerEvents.recipes(e => {
 
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let st = (id) => `statech:modern_industrialization/fusion_reactor/${id}`;
 
     // const REMOVED_RECIPES = [
     //     mi('fusion_reactor/deuterium_deuterium'),
@@ -9,11 +10,12 @@ ServerEvents.recipes(e => {
     // ];
     // REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
-    let fusion = (eu, duration, fluid_inputs, fluid_outputs) => {
+    let fusion = (id, eu, duration, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('fusion_reactor'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (fluid_inputs)
@@ -25,6 +27,7 @@ ServerEvents.recipes(e => {
     }
 
     fusion(
+        st('hydrogen_neutronium_from_helium_plasma_deuterium'),
         16000,
         2000,
         [

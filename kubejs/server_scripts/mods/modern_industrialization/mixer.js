@@ -4,12 +4,14 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let xps = (id) => `xps:${id}`;
     let ae = (id) => `ae2:${id}`;
+    let st = (id) => `statech:modern_industrialization/mixer/${id}`;
 
-    let mixer = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
+    let mixer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('mixer'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -26,6 +28,7 @@ ServerEvents.recipes(e => {
 
     // -- SOULCOPPER BLEND -- //
     mixer(
+        st('soul_copper_blend'),
         2,
         100,
         [
@@ -41,6 +44,7 @@ ServerEvents.recipes(e => {
 
     // -- CERTUS QUARTS CRYSTAL -- //
     mixer(
+        st('certus_quartz_crystal'),
         8,
         100,
         [
@@ -109,7 +113,8 @@ ServerEvents.recipes(e => {
 
         if (newFluidInput) {
             e.remove({ id: recipe.getId() });
-            mixer(eu, duration, item_inputs, item_outputs, newFluidInput, fluid_outputs);
+            let id = st(recipe.getId().split('mixer/')[1]);
+            mixer(id, eu, duration, item_inputs, item_outputs, newFluidInput, fluid_outputs);
         }
     });
 });

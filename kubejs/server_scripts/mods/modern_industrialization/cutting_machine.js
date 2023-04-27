@@ -1,11 +1,13 @@
 ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
+    let st = (id) => `statech:modern_industrialization/cutting_machine/${id}`;
 
-    let cuttingMachine = (eu, duration, item_inputs, item_outputs, fluid_inputs) => {
+    let cuttingMachine = (id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
         let newRecipe = {
             type: mi('cutting_machine'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs) 
@@ -20,6 +22,7 @@ ServerEvents.recipes(e => {
 
     // -- CALORITE ROD -- //
     cuttingMachine(
+        st('calorite_rod'),
         2,
         800,
         [ { amount: 1, tag: 'c:calorite_ingots' } ],
@@ -29,6 +32,7 @@ ServerEvents.recipes(e => {
 
     // -- TUNGSTENSTEEL ROD -- //
     cuttingMachine(
+        st('tungstensteel_rod'),
         2,
         800,
         [ { amount: 1, tag: 'c:tungstensteel_ingots' } ],

@@ -3,12 +3,14 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let st = (id) => `statech:modern_industrialization/alloy_smelter/${id}`;
 
-    let alloySmelter = (eu, duration, item_inputs, item_outputs) => {
+    let alloySmelter = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('alloy_smelter'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -21,6 +23,7 @@ ServerEvents.recipes(e => {
 
     // -- REFINED IRON INGOT -- //
     alloySmelter(
+        st('refined_iron_ingot'),
         16,
         300,
         [
@@ -34,6 +37,7 @@ ServerEvents.recipes(e => {
 
     // -- NETHERITE INGOT -- //
     alloySmelter(
+        st('netherite_ingot'),
         16,
         600,
         [
@@ -47,6 +51,7 @@ ServerEvents.recipes(e => {
 
     // -- INVAR INGOT -- //
     alloySmelter(
+        st('invar_ingot'),
         8,
         200,
         [
@@ -60,6 +65,7 @@ ServerEvents.recipes(e => {
 
     // -- BRONZE INGOT -- //
     alloySmelter(
+        st('bronze_ingot'),
         8,
         100,
         [
@@ -73,6 +79,7 @@ ServerEvents.recipes(e => {
 
     // -- BRASS INGOT -- //
     alloySmelter(
+        st('brass_ingot'),
         16,
         300,
         [
@@ -86,6 +93,7 @@ ServerEvents.recipes(e => {
 
     // -- ELECTRUM INGOT -- //
     alloySmelter(
+        st('electrum_ingot'),
         16,
         300,
         [
@@ -99,6 +107,7 @@ ServerEvents.recipes(e => {
 
     // -- CUPRONICKEL INGOT -- //
     alloySmelter(
+        st('cupronickel_ingot'),
         16,
         200,
         [
@@ -109,4 +118,18 @@ ServerEvents.recipes(e => {
             { amount: 2, item: mi('cupronickel_ingot') }
         ]
     ); 
+	
+	// -- BATTERY ALLOY -- //
+	alloySmelter(
+        st('battery_alloy'),
+		8,
+		200,
+		[
+			{ amount: 1, tag: 'c:lead_ingots' },
+			{ amount: 1, tag: 'c:antimony_ingots' }
+		],
+		[
+			{ amount: 2, item: mi('battery_alloy_ingot') }
+		]
+	);
 });

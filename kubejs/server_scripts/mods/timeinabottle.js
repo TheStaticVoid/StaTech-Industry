@@ -11,5 +11,6 @@ ServerEvents.recipes(e => {
         W: 'minecraft:clock',
         L: '#c:lapis',
         B: 'minecraft:glass_bottle'
-    });
+    })
+    .id('statech:timeinabottle');
 });

@@ -2,6 +2,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let qm = (id) => `quarrymod:${id}`;
+    let st = (id) => `statech:quarrymod/${id}`;
 
     const REMOVED = [
         qm('crafting_table/upgrades/fortune_lvl1_upgrade'),
@@ -21,7 +22,8 @@ ServerEvents.recipes(e => {
         L: '#c:lazurite_plates',
         A: mi('analog_circuit'),
         E: tr('extractor')
-    });
+    })
+    .id(st('fortune_lvl1_upgrade'));
 
     // -- RANGE EXTENDER UPGRADE LVL1 -- //
     e.shaped(qm('range_extender_lvl1_upgrade'), [
@@ -33,7 +35,8 @@ ServerEvents.recipes(e => {
         A: mi('analog_circuit'),
         T: qm('drill_tube'),
         P: '#c:advanced_alloy_plates'
-    });
+    })
+    .id(st('range_extender_lvl1_upgrade'));
 
     // -- SILKTOUCH UPGRADE -- //
     e.shaped(qm('silktouch_upgrade'), [
@@ -46,7 +49,8 @@ ServerEvents.recipes(e => {
         C: tr('advanced_circuit'),
         M: mi('electric_compressor'),
         I: '#c:stainless_steel_ingots'
-    });
+    })
+    .id(st('silktouch_upgrade'));
 
     // -- QUARRY -- //
     e.shaped(qm('quarry'), [
@@ -61,5 +65,6 @@ ServerEvents.recipes(e => {
         F: tr('advanced_machine_frame'),
         P: '#c:magnalium_plates',
         T: qm('drill_tube')
-    });
+    })
+    .id(st('quarry'));
 })

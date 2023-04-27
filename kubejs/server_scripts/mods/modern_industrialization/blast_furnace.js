@@ -1,6 +1,7 @@
 ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let st = (id) => `statech:modern_industrialization/blast_furnace/${id}`;
     
     const REMOVED_RECIPES = [
         mi('materials/blast_furnace/steel'),
@@ -11,11 +12,12 @@ ServerEvents.recipes(e => {
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
 
-    let blastFurnace = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
+    let blastFurnace = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('blast_furnace'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -32,6 +34,7 @@ ServerEvents.recipes(e => {
 
     // -- UNCOOKED STEEL DUST -> STEEL INGOT -- //
     blastFurnace(
+        st('steel_ingot_from_uncooked_steel'),
         2,
         1200,
         [
@@ -44,6 +47,7 @@ ServerEvents.recipes(e => {
 
     // -- REFINED IRON INGOT -> STEEL INGOT -- //
     blastFurnace(
+        st('steel_ingot_from_refined_iron'),
         16,
         40,
         [
@@ -57,6 +61,7 @@ ServerEvents.recipes(e => {
 
     // -- ALUMINUM EBF -- //
     blastFurnace(
+        st('aluminum_ingot'),
         32,
         600,
         [
@@ -69,6 +74,7 @@ ServerEvents.recipes(e => {
 
     // -- IRON INGOTS -> HARDENED IRON INGOT -- //
     blastFurnace(
+        st('hardend_iron_ingot'),
         16,
         300,
         [
@@ -81,6 +87,7 @@ ServerEvents.recipes(e => {
 
     // -- TUNGSTEN + STEEL -> HOT TUNGSTENSTEEL -- //
     blastFurnace(
+        st('hot_tungstensteel_ingot'),
         128,
         3600,
         [
@@ -94,6 +101,7 @@ ServerEvents.recipes(e => {
 
     // -- SUPERCONDUCTOR -- //
     blastFurnace(
+        st('superconductor_hot_ingot'),
         512,
         1200,
         [

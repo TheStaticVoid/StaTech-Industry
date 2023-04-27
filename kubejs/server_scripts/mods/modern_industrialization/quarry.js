@@ -4,6 +4,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let byg = (id) => `byg:${id}`;
     let crate = (id) => `create:${id}`; // mispelled on purpose ;)
+    let st = (id) => `statech:modern_industrialization/quarry/${id}`;
 
     const REMOVED_RECIPES = [
         mi('quarry/bronze'),
@@ -13,11 +14,12 @@ ServerEvents.recipes(e => {
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
-    let quarry = (eu, duration, item_inputs, item_outputs) => {
+    let quarry = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('quarry'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -30,6 +32,7 @@ ServerEvents.recipes(e => {
 
     // -- BRONZE DRILL -- //
     quarry(
+        st('bronze_drill'),
         4,
         600,
         [
@@ -52,6 +55,7 @@ ServerEvents.recipes(e => {
 
     // -- GOLD DRILL -- //
     quarry(
+        st('gold_drill'),
         16,
         600,
         [
@@ -79,6 +83,7 @@ ServerEvents.recipes(e => {
 
     // -- STEEL -- //
     quarry(
+        st('steel'),
         12,
         600,
         [
@@ -101,6 +106,7 @@ ServerEvents.recipes(e => {
 
     // -- STAINLESS STEEL -- //
     quarry(
+        st('stainless_steel'),
         64,
         600,
         [

@@ -1,0 +1,19 @@
+{
+    "modId": "ecologics",
+    "group": {
+        "name": "Ecologics Saplings",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "minecraft:emerald"
+        },
+        "defaultCategory": "farmingforblockheads:saplings"
+    },
+    "customEntries": [
+        {
+            "output": "ecologics:walnut_sapling"
+        },
+        {
+            "output": "ecologics:azalea_flower"
+        }
+    ]
+}

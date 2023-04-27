@@ -9,5 +9,6 @@ ServerEvents.recipes(e => {
         C: 'minecraft:cobweb',
         S: '#c:steel_ingots',
         O: 'minecraft:compass'
-    });
+    })
+    .id('statech:explorerscompass');
 });

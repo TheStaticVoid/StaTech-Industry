@@ -1,0 +1,19 @@
+{
+  "modId": "farmersdelight",
+  "group": {
+    "name": "Farmers Delight Compost",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald"
+    },
+    "defaultCategory": "farmingforblockheads:other"
+  },
+  "customEntries": [
+    {
+      "output": "farmersdelight:rich_soil"
+    },
+    {
+      "output": "farmersdelight:organic_compost"
+    }
+  ]
+}

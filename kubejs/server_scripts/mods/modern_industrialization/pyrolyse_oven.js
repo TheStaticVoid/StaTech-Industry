@@ -2,12 +2,14 @@ ServerEvents.recipes(e => {
 
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
+    let st = (id) => `statech:modern_industrialization/pyrolyse_oven/${id}`;
 
-    let pyrolyseOven = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
+    let pyrolyseOven = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('pyrolyse_oven'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -25,6 +27,7 @@ ServerEvents.recipes(e => {
 
     // -- LOGS TO CHARCOAL + CREOSOTE
     pyrolyseOven(
+        st('charcoal_cresote_from_logs'),
         16,
         600,
         [
@@ -45,6 +48,7 @@ ServerEvents.recipes(e => {
     // Was originally going to be Phenol, but Benzene is basically phenol without the hydroxide
     // Maybe I will add the distillation later
     pyrolyseOven(
+        st('coke_benzene_from_coal'),
         16,
         600,
         [
@@ -63,6 +67,7 @@ ServerEvents.recipes(e => {
 
     // -- COAL DUST TO COKE DUST + BENZENE -- //
     pyrolyseOven(
+        st('coke_dust_benzene_from_coal_dusts'),
         16,
         600,
         [

@@ -4,6 +4,7 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let astra = (id) => `ad_astra:${id}`;
+    let st = (id) => `statech:modern_industrialization/${id}`;
 
     // -- REMOVED RECIPES -- //
     const MI_DELETED_ITEMS = [
@@ -44,7 +45,8 @@ ServerEvents.recipes(e => {
         P: '#c:iron_plates',
         B: '#c:bronze_ingots',
         I: '#c:iron_ingots'
-    });
+    })
+    .id(st('forge_hammer'));
 
     // -- PYROLYSE OVEN -- //
     e.shaped(mi('pyrolyse_oven'), [
@@ -57,7 +59,8 @@ ServerEvents.recipes(e => {
         I: mi('inductor'),
         C: mi('basic_machine_hull'),
         A: mi('analog_circuit')
-    });
+    })
+    .id(st('pyrolyse_oven'));
 
     // -- ALLOY SMELTER -- //
     e.shaped(mi('alloy_smelter'), [
@@ -71,7 +74,8 @@ ServerEvents.recipes(e => {
         I: mi('inductor'),
         T: mi('tin_cable'),
         F: mi('electric_furnace')
-    });
+    })
+    .id(st('alloy_smelter'));
 
     // -- ROCKET PART ASSEMBLER -- //
     e.shaped(mi('rocket_part_assembler'), [
@@ -86,7 +90,8 @@ ServerEvents.recipes(e => {
         H: mi('turbo_machine_hull'),
         A: mi('aluminum_cable'),
         P: mi('advanced_pump')
-    });
+    })
+    .id(st('rocket_part_assembler'));
 
     // -- MEGA SMELTER -- //
     e.shaped(mi('mega_smelter'), [
@@ -99,7 +104,8 @@ ServerEvents.recipes(e => {
         C: mi('electronic_circuit'),
         F: mi('electric_furnace'),
         H: mi('advanced_machine_hull')
-    });
+    })
+    .id(st('mega_smelter'));
 
     // -- SPACE PROBE LAUNCHER -- //
     e.shaped(mi('space_probe_launcher'), [
@@ -114,7 +120,8 @@ ServerEvents.recipes(e => {
         H: mi('highly_advanced_machine_hull'),
         M: mi('large_advanced_motor'),
         C: mi('calorite_machine_casing')
-    });
+    })
+    .id(st('space_probe_launcher'));
 
     // -- TUNGSTENSTEEL TANK -- //
     e.shaped(mi('tungstensteel_tank'), [
@@ -125,7 +132,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:tungstensteel_plates',
         G: '#c:glass_blocks'
-    });
+    })
+    .id(st('tungstensteel_tank'));
 
     // -- TUNGSTENSTEEL BARREL -- //
     e.shaped(mi('tungstensteel_barrel'), [
@@ -136,7 +144,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:tungstensteel_plates',
         B: '#c:wooden_barrels'
-    });
+    })
+    .id(st('tungstensteel_barrel'));
 
     // -- CALORITE MACHINE CASING -- //
     e.shaped(mi('calorite_machine_casing'), [
@@ -147,7 +156,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:calorite_plates',
         G: '#c:calorite_gears'
-    });
+    })
+    .id(st('calorite_machine_casing'));
 
     // -- CALORITE MACHINE PIPE CASING -- // 
     e.shaped(mi('calorite_machine_casing_pipe'), [
@@ -158,7 +168,8 @@ ServerEvents.recipes(e => {
     {
         C: mi('calorite_curved_plate'),
         M: mi('calorite_machine_casing')
-    });
+    })
+    .id(st('calorite_machine_casing_pipe'));
 
     // -- CALORITE GEAR -- //
     e.shaped(mi('calorite_gear'), [
@@ -170,7 +181,8 @@ ServerEvents.recipes(e => {
         P: '#c:calorite_plates',
         B: mi('calorite_bolt'),
         R: mi('calorite_ring')
-    });
+    })
+    .id(st('calorite_gear'));
 
     // -- TUNGSTENSTEEL GEAR -- //
     e.shaped(mi('tungstensteel_gear'), [
@@ -182,7 +194,8 @@ ServerEvents.recipes(e => {
         P: '#c:tungstensteel_plates',
         B: mi('tungstensteel_bolt'),
         R: mi('tungstensteel_ring')
-    });
+    })
+    .id(st('tungstensteel_gear'));
 
     // -- DESH DRILL HEAD -- //
     e.shaped(mi('desh_drill_head'), [
@@ -196,7 +209,8 @@ ServerEvents.recipes(e => {
         G: mi('desh_gear'),
         P: astra('desh_plate'),
         R: mi('desh_rod')
-    });
+    })
+    .id(st('desh_drill_head'));
 
     // -- DESH DRILL -- //
     e.shaped(mi('desh_drill'), [
@@ -211,7 +225,8 @@ ServerEvents.recipes(e => {
         M: mi('large_advanced_motor'),
         U: mi('processing_unit'),
         C: mi('annealed_copper_wire')
-    });
+    })
+    .id(st('desh_drill'));
 
     // -- Gravichestplate -- //
     e.shaped(mi('gravichestplate'), [
@@ -225,38 +240,44 @@ ServerEvents.recipes(e => {
         J: astra('jet_suit'),
         C: mi('titanium_large_plate'),
         L: tr('lapotron_crystal')
-    });
+    })
+    .id(st('gravichestplate'));
 
     // -- Quantum Helmet -- //
     e.smithing(
         mi('quantum_helmet'),
         tr('quantum_helmet'),
         mi('quantum_upgrade')
-    );
+    )
+    .id(st('quantum_helmet'));
     // -- Quantum Chestplate -- //
     e.smithing(
         mi('quantum_chestplate'),
         tr('quantum_chestplate'),
         mi('quantum_upgrade')
-    );
+    )
+    .id(st('quantum_chestplate'));
     // -- Quantum Leggings -- //
     e.smithing(
         mi('quantum_leggings'),
         tr('quantum_leggings'),
         mi('quantum_upgrade')
-    );
+    )
+    .id(st('quantum_leggings'));
     // -- Quantum Boots -- //
     e.smithing(
         mi('quantum_boots'),
         tr('quantum_boots'),
         mi('quantum_upgrade')
-    );
+    )
+    .id(st('quantum_leggings'));
     // -- Quantum Sword -- //
     e.smithing(
         mi('quantum_sword'),
         tr('nanosaber'),
         mi('quantum_upgrade')
-    );
+    )
+    .id(st('quantum_sword'));
 });
 
 ServerEvents.tags('item', e => {

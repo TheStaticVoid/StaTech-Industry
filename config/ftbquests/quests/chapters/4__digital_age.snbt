@@ -49,7 +49,7 @@
 			corner: false
 		}
 		{
-			x: -13.75d
+			x: -12.75d
 			y: 7.0d
 			width: 1.0d
 			height: 1.0d
@@ -61,7 +61,7 @@
 			corner: false
 		}
 		{
-			x: -9.0d
+			x: -8.0d
 			y: 4.5d
 			width: 2.0d
 			height: 2.0d
@@ -73,7 +73,7 @@
 			corner: false
 		}
 		{
-			x: -13.75d
+			x: -12.75d
 			y: 12.25d
 			width: 1.0d
 			height: 1.0d
@@ -1996,7 +1996,11 @@
 			x: 11.0d
 			y: 2.0d
 			shape: "square"
-			description: ["You will need a &bMixed Tungsten Ingot&r to make &aBlastproof Alloy Platings&r."]
+			description: [
+				"You will need a &bMixed Tungsten Ingot&r to make &aBlastproof Alloy Platings&r."
+				""
+				"This is the point where if you have not completed &bRoute A&r you're going to need to go and do that. &dOstrum&r can be found on &4Mars&r!"
+			]
 			dependencies: [
 				"3132A7C27E732259"
 				"08362FF409BFC7CC"
@@ -3231,7 +3235,7 @@
 			title: "Space Station"
 			icon: "ad_astra:space_painting"
 			x: -17.5d
-			y: 2.0d
+			y: 1.0d
 			shape: "rsquare"
 			description: [
 				"With your newly acquired &eDesh&r, you can now create &bSpace Stations&r around celestial bodies. You can create them by launching your rocket, then selecting &bSpace Station&r when selecting destinations. To return to the station once it's created click Orbit instead."
@@ -3284,6 +3288,11 @@
 			x: -16.0d
 			y: 4.0d
 			shape: "square"
+			description: [
+				"The &bTier Two Rocket&r is very similar to the &aTier One Rocket&r, except the main components are replaced with &eDesh&r."
+				""
+				"I hope you got quite a bit while you were on the moon, as you're going to need a lot to make this rocket!"
+			]
 			dependencies: ["0D0CC636458E8446"]
 			size: 1.5d
 			id: "545476817EE9C941"
@@ -3313,16 +3322,20 @@
 			]
 		}
 		{
+			title: "Mars"
 			x: -16.0d
 			y: 6.25d
 			shape: "square"
+			description: ["Matt Damon is that you? Welcome to &cMars&r. This planet has some interesting structures and creatures (spoilers!), but you're mainly here for the &dOstrum&r that can be found within the planet."]
 			dependencies: ["545476817EE9C941"]
 			size: 1.5d
 			id: "299AA5584498D69A"
 			tasks: [{
-				id: "1081BAD90AF93A17"
-				type: "item"
-				item: "ad_astra:mars_globe"
+				id: "6A08BFD5B0B922A5"
+				type: "dimension"
+				title: "Visit Mars"
+				icon: "ad_astra:mars_globe"
+				dimension: "ad_astra:mars"
 			}]
 			rewards: [
 				{
@@ -3342,6 +3355,7 @@
 			x: -16.0d
 			y: 8.0d
 			shape: "square"
+			description: ["&dOstrum&r can be found within &cMars&r, and is a required material for the &aTier Three Rocket&r!"]
 			dependencies: ["299AA5584498D69A"]
 			id: "7633B2FDE567585E"
 			tasks: [{
@@ -3367,6 +3381,7 @@
 			x: -16.0d
 			y: 9.5d
 			shape: "square"
+			description: ["The &bTier Three Rocket&r will require a significant amount of &dOstrum&r to create, however once made it will allow you to travel to all the previous planets, with the addition of &aMercury&r and &cVenus&r!"]
 			dependencies: ["7633B2FDE567585E"]
 			id: "24993B650ABE820B"
 			tasks: [{
@@ -3395,16 +3410,26 @@
 			]
 		}
 		{
-			x: -13.75d
+			title: "Venus"
+			x: -12.75d
 			y: 8.5d
 			shape: "square"
-			dependencies: ["24993B650ABE820B"]
+			description: [
+				"Second from our &csun&r, &bVenus&r is an extremely &chot and volatile&r planet. "
+				""
+				"While you're here, you should mainly look for &cCalorite&r, the final metal available (currently) through &eAd Astra!&r. You'll need it to make the &afinal tier rocket&r, the &bJet Suit&r, and if you get enough the &cSpace Probe Launcher&r. "
+				""
+				"Making the &cSpace Probe Launcher&r will allow you to farm infinite amounts of the &eAd Astra!&r metals&r."
+			]
+			dependencies: ["54D443AD7BBA040B"]
 			size: 1.5d
 			id: "199E258B212D744F"
 			tasks: [{
-				id: "66F4E9888BA5A4DA"
-				type: "item"
-				item: "ad_astra:venus_globe"
+				id: "436B83975837E37B"
+				type: "dimension"
+				title: "Visit Venus"
+				icon: "ad_astra:venus_globe"
+				dimension: "ad_astra:venus"
 			}]
 			rewards: [
 				{
@@ -3421,16 +3446,20 @@
 			]
 		}
 		{
-			x: -13.75d
+			title: "Mercury"
+			x: -12.75d
 			y: 10.75d
-			shape: "square"
-			dependencies: ["24993B650ABE820B"]
+			shape: "rsquare"
+			description: ["&bMercury&r really is nothing more than a &chot rock&r. Compared to &aVenus&r, &bMercury&r doesn't have too much to offer other than lots of &4lava&r, &9basalt&r, and &cmagma cubes&r."]
+			dependencies: ["54D443AD7BBA040B"]
 			size: 1.5d
 			id: "234D4BC93E0C9108"
 			tasks: [{
-				id: "65742DC0ABF09BB6"
-				type: "item"
-				item: "ad_astra:mercury_globe"
+				id: "2737C86BBE3B40B6"
+				type: "dimension"
+				title: "Visit Mercury"
+				icon: "ad_astra:mercury_globe"
+				dimension: "ad_astra:mercury"
 			}]
 			rewards: [
 				{
@@ -3447,13 +3476,11 @@
 			]
 		}
 		{
-			x: -11.5d
+			x: -10.5d
 			y: 9.5d
 			shape: "square"
-			dependencies: [
-				"234D4BC93E0C9108"
-				"199E258B212D744F"
-			]
+			description: ["&cCalorite&r is the final tier of metal in &eAd Astra!&r, and is needed to make the &bJet Suit&r, &aTier Four Rocket&r, and &eSpace Probe Launcher&r."]
+			dependencies: ["199E258B212D744F"]
 			id: "488543DD1EEAF483"
 			tasks: [{
 				id: "2CEA60D72656BF33"
@@ -3476,9 +3503,17 @@
 		}
 		{
 			title: "The Jet Suit"
-			x: -11.5d
+			x: -10.5d
 			y: 7.5d
+			description: [
+				"The &bJet Suit&r is the ultimate &aspace suit&r. It allows for breathing in environments without an &aatmosphere&r, boasts good &darmor values&r, and includes a &bjetpack&r!"
+				""
+				"If you press left-control while in the air, you will enter a boosted flight mode, as if you were wearing an &eElytra&r being powered constantly by &drockets&r!"
+				""
+				"You can choose not to build the entire suit, but the chestplate will be required to make the &bGravichestplate&r."
+			]
 			dependencies: ["488543DD1EEAF483"]
+			size: 1.5d
 			id: "227FD6EF200D097F"
 			tasks: [
 				{
@@ -3545,9 +3580,14 @@
 			]
 		}
 		{
-			x: -9.0d
+			x: -8.0d
 			y: 9.5d
 			shape: "rsquare"
+			description: [
+				"The &bTier Four Rocket&r is the final tier of rocket in &eAd Astra!&r. It requires a lot of &cCalorite&r, but it's ready to take you to where no human has ever gone before, &l&ainterstellar&r!"
+				""
+				"Completion of this rocket is &cnot&r required to beat the pack, but it's fun so why not?"
+			]
 			dependencies: ["488543DD1EEAF483"]
 			id: "15342C97054EE216"
 			tasks: [{
@@ -3577,18 +3617,24 @@
 		}
 		{
 			title: "Glacio"
-			x: -9.0d
+			x: -8.0d
 			y: 6.5d
 			shape: "rsquare"
 			subtitle: "Interstellar"
-			description: ["While not required to beat the pack, why not be the first of the human race to make it to an interstellar body? "]
+			description: [
+				"While not required to beat the pack, why not be the first of the human race to make it to an interstellar body? "
+				""
+				"&bGlacio&r does have a naturally breathable atmosphere, so no suit is required to be on this planet. &oI wonder if there's life here&r?"
+			]
 			dependencies: ["15342C97054EE216"]
 			size: 2.0d
 			id: "52A5935A0A4740C3"
 			tasks: [{
-				id: "1A49C64C22097EE8"
-				type: "item"
-				item: "ad_astra:glacio_globe"
+				id: "56B22CE0BE3488DC"
+				type: "dimension"
+				title: "Visit Glacio"
+				icon: "ad_astra:glacio_globe"
+				dimension: "ad_astra:glacio"
 			}]
 			rewards: [
 				{
@@ -3606,7 +3652,7 @@
 		}
 		{
 			x: -17.5d
-			y: 8.0d
+			y: 7.5d
 			shape: "rsquare"
 			subtitle: "Fireproof!"
 			description: [
@@ -3614,7 +3660,7 @@
 				""
 				"The &bBlazing Backpack&r comes with the additional benefit of not burning in lava!"
 				""
-				"It can also store 54 item stacks."
+				"It can also store &d96 item stacks&r."
 			]
 			dependencies: [
 				"1B19E2916336F297"
@@ -4027,7 +4073,7 @@
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"After taking down the Wither, you can use the Nether Star alongside Blastproof Plates to upgrade your backpack to the &bWithered Backpack&r. This bad boy can hold 66 item stacks. "
+				"After taking down the Wither, you can use the Nether Star alongside Blastproof Plates to upgrade your backpack to the &bWithered Backpack&r. This bad boy can hold &d120 item stacks&r."
 				""
 				"It maintains the fireproof status of the previous backpack."
 			]
@@ -4060,7 +4106,7 @@
 			description: [
 				"With materials from the end and your newly acquired Iridium you can craft the final tier of backpack, the &bEndless Backpack&r."
 				""
-				"While not entirely \"endless,\" it does boast a whopping 90 item stacks. And yes, it still is fireproof."
+				"While not entirely \"endless,\" it does boast a whopping &d160 item stacks&r. And yes, it still is fireproof."
 			]
 			dependencies: [
 				"0A7B765B2AC2DD6D"
@@ -4281,6 +4327,203 @@
 				}
 				{
 					id: "72D56B337157C385"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -17.5d
+			y: 2.0d
+			description: [
+				"The &bTier 1 Rover&r is a vehicle you can use to traverse around the surface of other planets (or &aEarth&r if you want&r)."
+				""
+				"It takes the same &cFuel&r as your rockets, and has room for &d16 storage slots&r."
+				""
+				"You can punch it to pick it back up."
+			]
+			dependencies: ["0D0CC636458E8446"]
+			id: "3561DB1A83C123AC"
+			tasks: [{
+				id: "5A01575EB2B3F18E"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_1_rover"
+					Count: 1b
+					tag: {
+						BotariumData: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "110135181708AC41"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "12ABCE5FBD2CF5A1"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -17.5d
+			y: 3.0d
+			description: [
+				"Looking to build a base on a &ddistant planet&r or on a &dspace station&r? Well it might be a good idea to make it so you won't need to always be draining &bOxygen&r from your &aSpace Suit&r."
+				""
+				"The &bOxygen Distributor&r works similarly to the &aOxygen Loader&r. It can be provided with either &bOxygen&r or &9Water&r to start providing breathable air to the room around it."
+				""
+				"If the &bDistributor&r detects a leak, you will be notified of it in the &cGUI&r of the machine. The best way to start setting up your device is to provide it with some initial &9Water&r and power, then place a water source down and &dpump&r it into the &bOxygen Distributor&r. Don't place the water source down before having the &bDistributor&r start making an atmosphere, otherwise it will turn to &bIce&r!"
+			]
+			dependencies: ["0D0CC636458E8446"]
+			id: "4787C485776FD39D"
+			tasks: [{
+				id: "5A61E3B830378F63"
+				type: "item"
+				item: "ad_astra:oxygen_distributor"
+			}]
+			rewards: [
+				{
+					id: "3FDF4465984E0A4C"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "7488B19F70CAE5EB"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -17.5d
+			y: 8.5d
+			description: [
+				"The &bCryo Freezer&r is a little expensive to make, however it will allow you to produce &aCryo Fuel&r. This special fuel type can be used in &eAd Astra&r rockets to reduce to amount of fuel used for launches. Instead of the &d12 buckets&r of regular &cFuel&r you need for launch, &aCryo Fuel&r only requires &d3 buckets&r per launch!"
+				""
+				"The best ratio comes from the &bIce Shards&r, but if you can automate regular &bIce&r, you can make a lot of this stuff!"
+			]
+			dependencies: ["7633B2FDE567585E"]
+			id: "51B4C95FDAFAAC97"
+			tasks: [{
+				id: "188312A097B12E95"
+				type: "item"
+				item: "ad_astra:cryo_freezer"
+			}]
+			rewards: [
+				{
+					id: "6AA496E578EE2360"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "5AEEDE9D5F8B9724"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Netherite Space Suit"
+			x: -15.0d
+			y: 9.5d
+			description: [
+				"Before travelling to the planets closest to our &cstar&r you should definitely make the &bNetherite Space Suit&r. "
+				""
+				"This suit has the regular benefits of allowing for breathing in places &cwithout&r an &aatmosphere&r, as well as giving &cFire Resistance&r and higher &darmor values&r for your journey to those planets."
+			]
+			dependencies: ["24993B650ABE820B"]
+			id: "54D443AD7BBA040B"
+			tasks: [
+				{
+					id: "708C176A27FA6D8A"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "24EAC33BA8EB6FCB"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "7A6A93DB4E2441E9"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+				{
+					id: "360CBD1261CD699B"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							BotariumData: { }
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "2FF40833924E6707"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "468755C4BECBB352"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -14.5d
+			y: 8.0d
+			description: ["The &bOxygen Sensor&r can detect whether or not it's placed in an environment with a &dbreathable atmosphere&r. If it does, it will output a &credstone signal&r. Useful for safety!"]
+			dependencies: ["7633B2FDE567585E"]
+			id: "4E3FF039925E6C30"
+			tasks: [{
+				id: "232B52279F58ACF6"
+				type: "item"
+				item: "ad_astra:oxygen_sensor"
+			}]
+			rewards: [
+				{
+					id: "037889A455D9A7C7"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "65F7C4D819457D85"
 					type: "xp"
 					xp: 10
 				}

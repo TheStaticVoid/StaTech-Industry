@@ -8,6 +8,7 @@ ServerEvents.recipes(e => {
     let astra = (id) => `ad_astra:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
+    let st = (id) => `statech:ad_astra/${id}`;
 
     const AD_ASTRA_DELETED_ITEMS = [
         astra('recipes/steel_ingot_from_blasting_iron_ingot'),
@@ -60,6 +61,7 @@ ServerEvents.recipes(e => {
 
     // -- OXYGEN TO AD ASTRA OXYGEN -- //
     e.custom({
+        id: st('oxygen'),
         type: astra('oxygen_conversion'),
         input: mi('oxygen'),
         output: astra('oxygen'),
@@ -68,6 +70,7 @@ ServerEvents.recipes(e => {
 
     // -- BOOSTED DIESEL TO ROCKET FUEL -- //
     e.custom({
+        id: st('fuel'),
         type: astra('fuel_conversion'),
         input: mi('boosted_diesel'),
         output: astra('fuel'),
@@ -85,7 +88,8 @@ ServerEvents.recipes(e => {
         P: mi('advanced_pump'),
         H: mi('turbo_machine_hull'),
         C: mi('digital_circuit')
-    });
+    })
+    .id(st('fuel_refinery'));
 
     // -- OXYGEN TANK -- //
     e.shaped(astra('oxygen_tank'), [
@@ -96,7 +100,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:steel_plates',
         R: mi('steel_rod')
-    });
+    })
+    .id(st('oxygen_tank'));
 
     // -- OXYGEN LOADER -- //
     e.shaped(astra('oxygen_loader'), [
@@ -110,7 +115,8 @@ ServerEvents.recipes(e => {
         T: astra('oxygen_tank'),
         H: mi('turbo_machine_hull'),
         C: mi('digital_circuit')
-    });
+    })
+    .id(st('oxygen_loader'));
 
     // -- OXYGEN GEAR -- //
     e.shaped(astra('oxygen_gear'), [
@@ -121,7 +127,8 @@ ServerEvents.recipes(e => {
     {
         R: mi('steel_rod'),
         P: '#c:steel_plates'
-    });
+    })
+    .id(st('oxygen_gear'));
 
     // -- NASA WORKBENCH -- //
     e.shaped(astra('nasa_workbench'), [
@@ -135,7 +142,8 @@ ServerEvents.recipes(e => {
         H: mi('turbo_machine_hull'),
         C: mi('digital_circuit'),
         M: mi('advanced_motor')
-    });
+    })
+    .id(st('nasa_workbench'));
 
     // -- WHEEL -- // 
     e.shaped(astra('wheel'), [
@@ -146,7 +154,8 @@ ServerEvents.recipes(e => {
     {
         R: mi('rubber_sheet'),
         S: '#c:steel_plates'
-    });
+    })
+    .id(st('wheel'));
 
     // -- TIER 1 ROVER -- // 
     e.shaped(astra('tier_1_rover'), [
@@ -161,7 +170,8 @@ ServerEvents.recipes(e => {
         E: astra('desh_engine'),
         W: astra('wheel'),
         P: astra('desh_plate')
-    });
+    })
+    .id(st('tier_1_rover'));
 
     // -- JET SUIT -- //
     e.shaped(astra('jet_suit'), [
@@ -176,7 +186,8 @@ ServerEvents.recipes(e => {
         N: astra('netherite_space_suit'),
         B: '#c:calorite_blocks',
         G: astra('calorite_engine')
-    });
+    })
+    .id(st('jet_suit'));
 
     // -- LAUNCHPAD -- //
     e.shaped(astra('launch_pad'), [
@@ -187,5 +198,6 @@ ServerEvents.recipes(e => {
     {
         S: mi('steel_large_plate'),
         I: mi('iron_large_plate')
-    });
+    })
+    .id(st('launch_pad'));
 });

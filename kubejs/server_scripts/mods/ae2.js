@@ -15,6 +15,7 @@ ServerEvents.recipes(e => {
 
     let mi = (id) => `modern_industrialization:${id}`;
     let ae = (id) => `ae2:${id}`;
+    let st = (id) => `statech:ae2/${id}`;
 
     // -- REMOVE ALL ENDER DUST OUTPUTS -- //
     e.remove({output: ae('ender_dust')});
@@ -30,7 +31,8 @@ ServerEvents.recipes(e => {
         M: mi('advanced_motor'),
         H: mi('turbo_machine_hull'),
         C: mi('digital_circuit')
-    });
+    })
+    .id(st('inscriber'));
 
     // -- CONTROLLER -- //
     e.shaped(ae('controller'), [
@@ -45,7 +47,8 @@ ServerEvents.recipes(e => {
         H: mi('turbo_machine_hull'),
         L: ae('logic_processor'),
         P: ae('calculation_processor')
-    });
+    })
+    .id(st('controller'));
 
     // -- CHARGER -- //
     e.shaped(ae('charger'), [
@@ -57,7 +60,8 @@ ServerEvents.recipes(e => {
         S: mi('steel_large_plate'),
         C: mi('annealed_copper_wire'),
         B: 'techreborn:low_voltage_su'
-    });
+    })
+    .id(st('charger'));
 
     // Buff the Blank Pattern recipe
     e.shaped('4x ae2:blank_pattern', [
@@ -70,7 +74,8 @@ ServerEvents.recipes(e => {
         G: '#c:glowstone_dusts',
         C: '#c:certus_quartz',
         S: '#c:stainless_steel_ingots'
-    });
+    })
+    .id(st('blank_pattern'));
 
     // -- Replace the remaining iron ingots in recipes to be stainless steel -- //
     e.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', '#c:stainless_steel_plates');
