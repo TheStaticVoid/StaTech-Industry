@@ -1,4 +1,7 @@
 ServerEvents.recipes(e => {
+
+    let st = (id) => `statech:kibe/${id}`;
+
     // -- REMOVED RECIPES -- //
     const KIBE_DELETED_ITEMS = [
         'kibe:glider_left_wing',
@@ -41,7 +44,8 @@ ServerEvents.recipes(e => {
         S: '#c:strings',
         L: '#c:leather',
         R: '#c:iron_rods'
-    });
+    })
+    .id(st('glider_left_wing'));
 
     // -- GLIDER RIGHT WING -- //
     e.shaped('kibe:glider_right_wing', [
@@ -53,7 +57,8 @@ ServerEvents.recipes(e => {
         S: '#c:strings',
         L: '#c:leather',
         R: '#c:iron_rods'
-    });
+    })
+    .id(st('glider_right_wing'));
 
     // -- REGULAR CONVEYOR BELT -- //
     e.shaped('8x kibe:regular_conveyor_belt', [
@@ -65,7 +70,8 @@ ServerEvents.recipes(e => {
         Y: 'minecraft:yellow_dye',
         C: 'modern_industrialization:conveyor',
         I: '#c:iron_plates'
-    });
+    })
+    .id(st('regular_conveyor_belt'));
 
     // -- FAST CONVEYOR BELT -- //
     e.shaped('8x kibe:fast_conveyor_belt', [
@@ -78,7 +84,8 @@ ServerEvents.recipes(e => {
         C: 'modern_industrialization:conveyor',
         I: '#c:iron_plates',
         T: 'kibe:regular_conveyor_belt'
-    });
+    })
+    .id(st('fast_conveyor_belt'));
 
     // -- EXPRESS CONVEYOR BELT -- //
     e.shaped('8x kibe:express_conveyor_belt', [
@@ -91,7 +98,8 @@ ServerEvents.recipes(e => {
         C: 'modern_industrialization:conveyor',
         I: '#c:iron_plates',
         T: 'kibe:fast_conveyor_belt'
-    });
+    })
+    .id(st('express_conveyor_belt'));
 
     // -- MAGNET -- //
     e.shaped('kibe:magnet', [
@@ -102,7 +110,8 @@ ServerEvents.recipes(e => {
     {
         D: 'minecraft:red_dye',
         R: 'modern_industrialization:steel_rod_magnetic'
-    });
+    })
+    .id(st('magnet'));
 
     // -- ESCAPE ROPE -- //
     e.shaped('kibe:escape_rope', [
@@ -113,7 +122,8 @@ ServerEvents.recipes(e => {
     {
         S: '#c:strings',
         H: 'dustrial_decor:hook'
-    });
+    })
+    .id(st('escape_rope'));
 
     // -- COBBLESTONE GENERATOR MK2 -- //
     e.shaped('kibe:cobblestone_generator_mk2', [
@@ -125,7 +135,8 @@ ServerEvents.recipes(e => {
         G: '#c:gold_plates',
         C: 'kibe:cobblestone_generator_mk1',
         H: 'modern_industrialization:basic_machine_hull'
-    });
+    })
+    .id(st('cobblestone_generator_mk2'));
 
     // -- COBBLESTONE GENERATOR MK3 -- //
     e.shaped('kibe:cobblestone_generator_mk3', [
@@ -137,7 +148,8 @@ ServerEvents.recipes(e => {
         D: '#c:diamond_plates',
         C: 'kibe:cobblestone_generator_mk2',
         H: 'modern_industrialization:advanced_machine_hull'
-    });
+    })
+    .id(st('cobblestone_generator_mk3'));
 
     // -- COBBLESTONE GENERATOR MK4 -- //
     e.shaped('kibe:cobblestone_generator_mk4', [
@@ -149,7 +161,8 @@ ServerEvents.recipes(e => {
         E: '#c:emerald_plates',
         C: 'kibe:cobblestone_generator_mk3',
         H: 'modern_industrialization:turbo_machine_hull'
-    });
+    })
+    .id(st('cobblestone_generator_mk4'));
 
     // -- COBBLESTONE GENERATOR MK5 -- //
     e.shaped('kibe:cobblestone_generator_mk5', [
@@ -161,7 +174,8 @@ ServerEvents.recipes(e => {
         N: '#c:netherite_ingots',
         C: 'kibe:cobblestone_generator_mk4',
         H: 'modern_industrialization:highly_advanced_machine_hull'
-    });
+    })
+    .id(st('cobblestone_generator_mk5'));
 
     // -- BASALT GENERATOR MK2 -- //
     e.shaped('kibe:basalt_generator_mk2', [
@@ -173,7 +187,8 @@ ServerEvents.recipes(e => {
         G: '#c:gold_plates',
         C: 'kibe:basalt_generator_mk1',
         H: 'modern_industrialization:basic_machine_hull'
-    });
+    })
+    .id(st('basalt_generator_mk2'));
 
     // -- BASALT GENERATOR MK3 -- //
     e.shaped('kibe:basalt_generator_mk3', [
@@ -185,7 +200,8 @@ ServerEvents.recipes(e => {
         D: '#c:diamond_plates',
         C: 'kibe:basalt_generator_mk2',
         H: 'modern_industrialization:advanced_machine_hull'
-    });
+    })
+    .id(st('basalt_generator_mk3'));
 
     // -- BASALT GENERATOR MK4 -- //
     e.shaped('kibe:basalt_generator_mk4', [
@@ -197,7 +213,8 @@ ServerEvents.recipes(e => {
         E: '#c:emerald_plates',
         C: 'kibe:basalt_generator_mk3',
         H: 'modern_industrialization:turbo_machine_hull'
-    });
+    })
+    .id(st('basalt_generator_mk4'));
 
     // -- BASALT GENERATOR MK5 -- //
     e.shaped('kibe:basalt_generator_mk5', [
@@ -209,7 +226,8 @@ ServerEvents.recipes(e => {
         N: '#c:netherite_ingots',
         C: 'kibe:basalt_generator_mk4',
         H: 'modern_industrialization:highly_advanced_machine_hull'
-    });
+    })
+    .id(st('basalt_generator_mk5'));
 
     // -- DIAMOND RING -- //
     e.shaped('kibe:diamond_ring', [
@@ -221,7 +239,8 @@ ServerEvents.recipes(e => {
         D: 'minecraft:diamond',
         N: 'minecraft:gold_nugget',
         R: 'modern_industrialization:gold_ring'
-    });
+    })
+    .id(st('diamond_ring'));
 
     // -- MAGMA RING -- //
     e.shaped('kibe:magma_ring', [
@@ -234,7 +253,8 @@ ServerEvents.recipes(e => {
         R: 'kibe:diamond_ring',
         W: 'minecraft:nether_wart',
         O: 'minecraft:obsidian'
-    });
+    })
+    .id(st('magma_ring'));
 
     // -- WATER RING -- //
     e.shaped('kibe:water_ring', [
@@ -247,7 +267,8 @@ ServerEvents.recipes(e => {
         L: 'minecraft:lily_pad',
         P: 'minecraft:pufferfish',
         R: 'kibe:diamond_ring'
-    });
+    })
+    .id(st('water_ring'));
 });
 
 ServerEvents.tags('item', e => {

@@ -1,4 +1,7 @@
 ServerEvents.recipes(e => {
+
+    let st = (id) => `statech:modern_industrialization/mega_smelter/${id}`;
+
     let item_blacklist = [
         'minecraft:golden_pickaxe',
         'minecraft:golden_shovel',
@@ -57,11 +60,12 @@ ServerEvents.recipes(e => {
     // The amount at a time to process
     let amount = 16;
 
-    let megaSmelt = (input, output) => {
+    let megaSmelt = (id, input, output) => {
         e.custom({
             type: 'modern_industrialization:mega_smelter',
             eu: eu,
             duration: duration,
+            id: id,
             item_inputs: input,
             item_outputs: output
         });
@@ -81,7 +85,8 @@ ServerEvents.recipes(e => {
                 let newResult = { amount: amount }
                 newResult['item'] = recipeJson.result;
                 
-                megaSmelt(newIngredient, newResult);
+                let id = st(`${recipeJson.result.split(':')[1]}_from_${newIngredient[key].split(':')[1]}`);                
+                megaSmelt(id, newIngredient, newResult);
             }
         }
     });

@@ -12,5 +12,6 @@ ServerEvents.recipes(e => {
                 count: 2
             }
         ]
-    });
+    })
+    .id('statech:xps/soul_copper_blend');
 });

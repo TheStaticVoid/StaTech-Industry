@@ -10,15 +10,7 @@ LootJS.modifiers((event) => {
     const TR_ITEMS = [
         tr('electronic_circuit'),
         tr('tin_ingot'),
-        tr('lead_ingot'),
-        tr('steel_ingot'),
-        tr('refined_iron_ingot'),
-        tr('silver_ingot'),
-        tr('tungsten_ingot'),
-        tr('aluminum_ingot'),
-        tr('invar_ingot'),
-        tr('nickel_ingot'),
-		tr('electrum_ingot')
+        tr('lead_ingot')
     ];
     TR_ITEMS.forEach(id => event.addLootTableModifier(/.*/).removeLoot(id));
 

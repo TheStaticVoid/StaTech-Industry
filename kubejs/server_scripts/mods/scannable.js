@@ -11,5 +11,6 @@ ServerEvents.recipes(e => {
         R: '#c:redstone_dusts',
         G: '#c:gold_plates',
         A: 'modern_industrialization:analog_circuit'
-    });
+    })
+    .id('statech:scannable/scanner');
 })

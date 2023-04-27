@@ -3,12 +3,14 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let astra = (id) => `ad_astra:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let st = (id) => `statech:modern_industrialization/centrifuge/${id}`;
 
-    let centrifuge = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
+    let centrifuge = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('centrifuge'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -25,6 +27,7 @@ ServerEvents.recipes(e => {
 
     // -- CENTRIFUGE ICE SHARD -- //
     centrifuge(
+        st('ice_shard'),
         32,
         300,
         [
@@ -37,26 +40,13 @@ ServerEvents.recipes(e => {
         ]
     );
 
-    // -- CENTRIFUGE MOON SAND -- //
-    centrifuge(
-        32,
-        600,
-        [
-            { amount: 24, item: astra('moon_sand') }
-        ],
-        null,
-        null,
-        [
-            { amount: 5, fluid: mi('helium_3') }
-        ]
-    );
-
     // -- CENTRIFUGE GLOWSTONE -- //
     centrifuge(
+        st('glowstone'),
         32,
         1800,
         [
-            { amount: 16, item: mc('glowstone_dust') }
+            { amount: 16, item: mc('glowstone') }
         ],
         [
             { amount: 8, item: mc('glowstone_dust') },
@@ -70,6 +60,7 @@ ServerEvents.recipes(e => {
 
     // -- CENTRIFUGE REDSTONE -- //
     centrifuge(
+        st('moon_sand'),
         32,
         4000,
         [
@@ -88,6 +79,7 @@ ServerEvents.recipes(e => {
 
     // -- CENTRIFUGE LAPIS -- //
     centrifuge(
+        st('lapis_lazuli'),
         64,
         1500,
         [
@@ -103,6 +95,7 @@ ServerEvents.recipes(e => {
 
     // -- CENTRIFUGE DARK ASHES -- //
     centrifuge(
+        st('dark_ashes_dust'),
         8,
         1200,
         [
@@ -115,6 +108,7 @@ ServerEvents.recipes(e => {
 
     // -- CENTRIFUGE ASHES -- //
     centrifuge(
+        st('ashes_dust'),
         12,
         320,
         [
@@ -127,6 +121,7 @@ ServerEvents.recipes(e => {
 
     // -- TUFF -- //
     centrifuge(
+        st('tuff'),
         5,
         300,
         [
@@ -140,6 +135,7 @@ ServerEvents.recipes(e => {
 
     // -- GALENA DUST -- //
     centrifuge(
+        st('galena_dust'),
         32,
         400,
         [
@@ -153,6 +149,7 @@ ServerEvents.recipes(e => {
 
     // -- RED GARNET DUST -- //
     centrifuge(
+        st('red_garnet_dust'),
         8,
         400,
         [
@@ -167,6 +164,7 @@ ServerEvents.recipes(e => {
 
     // -- MARBLE DUST -- //
     centrifuge(
+        st('marble_dust'),
         16,
         200,
         [

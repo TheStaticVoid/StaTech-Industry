@@ -2,7 +2,7 @@ ServerEvents.recipes(e => {
 
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
- 
+    let st = (id) => `statech:modern_industrialization/forge_hammer/${id}`;
 
     const MATERIALS = [
         'bronze',
@@ -89,11 +89,12 @@ ServerEvents.recipes(e => {
     ];
     ORE_RECIPES.forEach(id => e.remove({id : id}));
 
-    let forgeHammer = (eu, item_inputs, item_outputs) => {
+    let forgeHammer = (id, eu, item_inputs, item_outputs) => {
         let newRecipe = {
             type: 'modern_industrialization:forge_hammer',
             eu: eu,
-            duration: 0
+            duration: 0,
+            id: id
         }
 
         if (item_inputs)
@@ -107,6 +108,7 @@ ServerEvents.recipes(e => {
     MATERIAL_CRUSHED_DUST.forEach(material => {
         // -- CRUSHED DUST FROM ORE -- //
         forgeHammer(
+            st(`${material}_crushed_dust`),
             10,
             [ { amount: 1, tag: `c:${material}_ores` } ],
             [ { amount: 2, item: mi(`${material}_crushed_dust`) } ]
@@ -114,6 +116,7 @@ ServerEvents.recipes(e => {
     
         // -- DUST FROM ORE -- //
         forgeHammer(
+            st(`${material}_dust`),
             25,
             [ { amount: 1, tag: `c:${material}_ores` } ],
             [ { amount: 4, item: mi(`${material}_dust`) } ]
@@ -121,6 +124,7 @@ ServerEvents.recipes(e => {
     
         // -- DUST FROM CRUSHED DUST -- //
         forgeHammer(
+            st(`${material}_dust_alt`),
             15,
             [ { amount: 1, item: mi(`${material}_crushed_dust`) } ],
             [ { amount: 2, item: mi(`${material}_dust`) } ]
@@ -131,12 +135,14 @@ ServerEvents.recipes(e => {
         // -- RAW FROM ORE -- //
         if (material != 'tin') {
             forgeHammer(
+                st(`raw_${material}_from_ore`),
                 20,
                 [ { amount: 1, tag: `c:${material}_ores` } ],
                 [ { amount: 4, item: mc(`raw_${material}`) } ]
             );
         } else {
             forgeHammer(
+                st(`raw_${material}_from_ore`),
                 20,
                 [ { amount: 1, tag: `c:${material}_ores` } ],
                 [ { amount: 4, item: mi(`raw_${material}`) } ]
@@ -145,6 +151,7 @@ ServerEvents.recipes(e => {
     
         // -- DUST FROM ORE -- //
         forgeHammer(
+            st(`${material}_dust_from_ore`),
             60,
             [ { amount: 1, tag: `c:${material}_ores` } ],
             [ { amount: 8, item: mi(`${material}_dust`) } ]
@@ -152,6 +159,7 @@ ServerEvents.recipes(e => {
     
         // -- DUST FROM RAW METAL -- //
         forgeHammer(
+            st(`${material}_dust_from_raw_metal`),
             15,
             [ { amount: 1, tag: `c:raw_${material}_ores` } ],
             [ { amount: 2, item: mi(`${material}_dust`) } ]
@@ -161,16 +169,19 @@ ServerEvents.recipes(e => {
     MATERIALS.forEach(material => {
         // -- BOLTS -- //
         forgeHammer(
+            st(`${material}_bolt_from_double_ingot`),
             50,
             [ { amount: 1, item: mi(`${material}_double_ingot`) } ],
             [ { amount: 4, item: mi(`${material}_bolt`) } ]
         );
         forgeHammer(
+            st(`${material}_bolt_from_ingot`),
             30,
             [ { amount: 1, tag: `c:${material}_ingots` } ],
             [ { amount: 2, item: mi(`${material}_bolt`) } ]
         );
         forgeHammer(
+            st(`${material}_bolt_from_rod`),
             10,
             [ { amount: 1, item: mi(`${material}_rod`) } ],
             [ { amount: 2, item: mi(`${material}_bolt`) } ]
@@ -179,11 +190,13 @@ ServerEvents.recipes(e => {
         if (material != 'iron') {
             // -- CURVED PLATES -- //
             forgeHammer(
+                st(`${material}_curved_plate_from_double_ingot`),
                 30,
                 [ { amount: 1, item: mi(`${material}_double_ingot`) } ],
                 [ { amount: 1, item: mi(`${material}_curved_plate`) } ]
             );
             forgeHammer(
+                st(`${material}_curved_plate_from_ingot`),
                 20,
                 [ { amount: 2, tag: `c:${material}_ingots` } ],
                 [ { amount: 1, item: mi(`${material}_curved_plate`) } ]
@@ -192,11 +205,13 @@ ServerEvents.recipes(e => {
 
         // -- PLATES -- // 
         forgeHammer(
+            st(`${material}_plate_from_double_ingot`),
             10,
             [ { amount: 1, item: mi(`${material}_double_ingot`) } ],
             [ { amount: 1, item: mi(`${material}_plate`) } ]
         );
         forgeHammer(
+            st(`${material}_plate_from_ingot`),
             10,
             [ { amount: 2, tag: `c:${material}_ingots` } ],
             [ { amount: 1, item: mi(`${material}_plate`) } ]
@@ -204,16 +219,19 @@ ServerEvents.recipes(e => {
 
         // -- RINGS -- //
         forgeHammer(
+            st(`${material}_ring_from_double_ingot`),
             50,
             [ { amount: 1, item: mi(`${material}_double_ingot`) } ],
             [ { amount: 2, item: mi(`${material}_ring`) } ]
         );
         forgeHammer(
+            st(`${material}_ring_from_ingot`),
             30,
             [ { amount: 1, tag: `c:${material}_ingots` } ],
             [ { amount: 1, item: mi(`${material}_ring`) } ]
         );
         forgeHammer(
+            st(`${material}_ring_from_rod`),
             10,
             [ { amount: 1, item: mi(`${material}_rod`) } ],
             [ { amount: 1, item: mi(`${material}_ring`) } ]
@@ -221,11 +239,13 @@ ServerEvents.recipes(e => {
 
         // -- RODS -- //
         forgeHammer(
+            st(`${material}_rod_from_double_ingot`),
             10,
             [ { amount: 1, item: mi(`${material}_double_ingot`) } ],
             [ { amount: 2, item: mi(`${material}_rod`) } ]
         );
         forgeHammer(
+            st(`${material}_rod_from_ingot`),
             10,
             [ { amount: 1, tag: `c:${material}_ingots` } ],
             [ { amount: 1, item: mi(`${material}_rod`) } ]
@@ -233,11 +253,13 @@ ServerEvents.recipes(e => {
 
         // -- DUSTS -- //
         forgeHammer(
+            st(`${material}_dust_from_ingot`),
             10,
             [ { amount: 1, tag: `c:${material}_ingots` } ],
             [ { amount: 1, item: mi(`${material}_dust`) } ]
         );
         forgeHammer(
+            st(`${material}_tiny_dust_from_nugget`),
             10,
             [ { amount: 1, tag: `c:${material}_nuggets` } ],
             [ { amount: 1, item: mi(`${material}_tiny_dust`) } ]
@@ -246,6 +268,7 @@ ServerEvents.recipes(e => {
 
     // -- BRICK DUST FROM BRICK -- //
     forgeHammer(
+        st('brick_tiny_dust'),
         20,
         [ { amount: 1, tag: 'c:brick_ingots' } ],
         [ { amount: 2, item: mi('brick_tiny_dust') } ]

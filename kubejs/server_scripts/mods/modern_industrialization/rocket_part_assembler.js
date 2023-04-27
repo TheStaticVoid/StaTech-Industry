@@ -2,13 +2,15 @@ ServerEvents.recipes(e => {
 
     let mi = (id) => `modern_industrialization:${id}`;
     let astra = (id) => `ad_astra:${id}`;
+    let st = (id) => `statech:modern_industrialization/rocket_part_assembler/${id}`;
 
     // helper function for assembler
-    let rocketAssembler = (eu, duration, item_inputs, item_outputs, fluid_inputs) => {
+    let rocketAssembler = (id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
         let newRecipe = {
             type: 'modern_industrialization:rocket_part_assembler',
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
         if (item_inputs != null)
             newRecipe['item_inputs'] = item_inputs;
@@ -22,6 +24,7 @@ ServerEvents.recipes(e => {
 
     // -- ENGINE FAN -- //
     rocketAssembler(
+        st('engine_fan'),
         128,
         900,
         [
@@ -39,6 +42,7 @@ ServerEvents.recipes(e => {
 
     // -- ENGINE FRAME -- //
     rocketAssembler(
+        st('engine_frame'),
         128,
         900,
         [
@@ -55,6 +59,7 @@ ServerEvents.recipes(e => {
 
     // -- ROCKET FIN -- //
     rocketAssembler(
+        st('rocket_fin'),
         128, 
         900, 
         [
@@ -71,6 +76,7 @@ ServerEvents.recipes(e => {
 
     // -- ROCKET NOSE CONE -- //
     rocketAssembler(
+        st('rocket_nose_cone'),
         128,
         900,
         [
@@ -87,6 +93,7 @@ ServerEvents.recipes(e => {
 
     // -- STEEL TANK -- //
     rocketAssembler(
+        st('steel_tank'),
         128,
         900,
         [
@@ -104,24 +111,7 @@ ServerEvents.recipes(e => {
 
     // -- DESH TANK -- //
     rocketAssembler(
-        192,
-        1200,
-        [
-            { amount: 4, item: mi('steel_ring') },
-            { amount: 2, item: mi('advanced_pump') },
-            { amount: 8, item: astra('desh_plate') },
-            { amount: 1, tag: 'c:glass_blocks' }
-        ],
-        [
-            { amount: 1, item: astra('desh_tank') }
-        ],
-        [
-            { amount: 100, fluid: mi('soldering_alloy') }
-        ]
-    );
-
-    // -- DESH TANK -- //
-    rocketAssembler(
+        st('desh_tank'),
         192,
         1200,
         [
@@ -140,6 +130,7 @@ ServerEvents.recipes(e => {
 
     // -- OSTRUM TANK -- //
     rocketAssembler(
+        st('ostrum_tank'),
         256,
         1600,
         [
@@ -158,6 +149,7 @@ ServerEvents.recipes(e => {
 
     // -- CALORITE TANK -- //
     rocketAssembler(
+        st('calorite_tank'),
         512,
         2400,
         [
@@ -176,6 +168,7 @@ ServerEvents.recipes(e => {
 
     // -- STEEL ENGINE -- //
     rocketAssembler(
+        st('steel_engine'),
         128, 
         900,
         [
@@ -193,6 +186,7 @@ ServerEvents.recipes(e => {
 
     // -- DESH ENGINE -- //
     rocketAssembler(
+        st('desh_engine'),
         192,
         1200,
         [
@@ -210,6 +204,7 @@ ServerEvents.recipes(e => {
 
     // -- OSTRUM ENGINE -- //
     rocketAssembler(
+        st('ostrum_engine'),
         256,
         1600,
         [
@@ -227,6 +222,7 @@ ServerEvents.recipes(e => {
 
     // -- CALORITE ENGINE -- //
     rocketAssembler(
+        st('calorite_engine'),
         512,
         2400,
         [

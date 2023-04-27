@@ -1,17 +1,19 @@
 ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let st = (id) => `statech:modern_industrialization/implosion_compressor/${id}`;
 
     const REMOVED_RECIPE = [
         mi('electric_age/component/implosion_compressor/singularity')
     ]
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
-    let implosionCompressor = (eu, duration, item_inputs, item_outputs) => {
+    let implosionCompressor = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('implosion_compressor'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -24,6 +26,7 @@ ServerEvents.recipes(e => {
 
     // -- IRIDIUM ALLOY PLATE -- //
     implosionCompressor(
+        st('iridum_alloy_plate'),
         64,
         2000,
         [
@@ -37,6 +40,7 @@ ServerEvents.recipes(e => {
 
     // -- SINGULARITY -- //
     implosionCompressor(
+        st('singularity'),
         128,
         4800,
         [
@@ -50,6 +54,7 @@ ServerEvents.recipes(e => {
 
     // -- PERIDOT GEM -- //
     implosionCompressor(
+        st('peridot_gem'),
         1,
         10,
         [
@@ -63,6 +68,7 @@ ServerEvents.recipes(e => {
 
     // -- RUBY GEM -- //
     implosionCompressor(
+        st('ruby_gem'),
         1,
         10,
         [
@@ -76,6 +82,7 @@ ServerEvents.recipes(e => {
 
     // -- SAPPHIRE GEM -- //
     implosionCompressor(
+        st('sapphire_gem'),
         1,
         10,
         [
@@ -89,6 +96,7 @@ ServerEvents.recipes(e => {
 
     // -- RED GARNET DUST -- //
     implosionCompressor(
+        st('red_garnet_dust'),
         1,
         10,
         [
@@ -102,6 +110,7 @@ ServerEvents.recipes(e => {
 
     // -- RED GARNET GEM -- //
     implosionCompressor(
+        st('red_garnet_gem'),
         1,
         10,
         [
