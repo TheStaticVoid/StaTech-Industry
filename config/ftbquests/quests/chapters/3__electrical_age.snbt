@@ -5016,58 +5016,6 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: -4.0d
-			shape: "rsquare"
-			description: ["Prevents rain / snow particles in a 3x3 chunk radius when powered by redstone."]
-			dependencies: ["473C1DE557D3E9C0"]
-			id: "060A731AEBEA372B"
-			tasks: [{
-				id: "11601ECCFFA4A1DE"
-				type: "item"
-				item: "kibe:dehumidifier"
-			}]
-			rewards: [
-				{
-					id: "4AC7146CCF3DBEF8"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 238949117979752405L
-				}
-				{
-					id: "0FA8833B9A731A7B"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 2.0d
-			y: -4.0d
-			shape: "rsquare"
-			description: ["Melts ice and snow in a 3x3 chunk radius when powered by redstone."]
-			dependencies: ["473C1DE557D3E9C0"]
-			id: "291CD73E1846E514"
-			tasks: [{
-				id: "1EC01774F4CEEFDE"
-				type: "item"
-				item: "kibe:heater"
-			}]
-			rewards: [
-				{
-					id: "1C08C0FD85386BAD"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 238949117979752405L
-				}
-				{
-					id: "36380BB49751B649"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
 			x: -8.0d
 			y: 4.5d
 			description: ["The &eTechReborn&r &bBasic Storage Unit&r is an upgrade to the &7Steel Tank&r. It can store up to 128 stacks of a single item and has &aconfigurable I/O&r and control through &credstone signals&r."]

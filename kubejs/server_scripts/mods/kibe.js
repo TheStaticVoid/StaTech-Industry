@@ -6,13 +6,7 @@ ServerEvents.recipes(e => {
         'kibe:regular_conveyor_belt',
         'kibe:fast_conveyor_belt',
         'kibe:express_conveyor_belt',
-        'kibe:drawbridge',
-        'kibe:placer',
-        'kibe:breaker',
-        'kibe:heater',
-        'kibe:dehumidifier',
         'kibe:magnet',
-        'kibe:igniter',
         'kibe:escape_rope',
         'kibe:cobblestone_generator_mk2',
         'kibe:cobblestone_generator_mk3',
@@ -99,76 +93,6 @@ ServerEvents.recipes(e => {
         T: 'kibe:fast_conveyor_belt'
     });
 
-    // -- DRAWBRIDGE -- //
-    e.shaped('2x kibe:drawbridge', [
-        'GPG',
-        'SMS',
-        'GKG'
-    ],
-    {
-        G: '#c:gold_plates',
-        P: 'kibe:placer',
-        S: 'minecraft:polished_basalt',
-        K: 'kibe:breaker',
-        M: 'modern_industrialization:piston'
-    });
-
-    // -- PLACER -- //
-    e.shaped('kibe:placer', [
-        'SAS',
-        'VDV',
-        'CBC'
-    ],
-    {
-        S: 'minecraft:smooth_stone',
-        A: 'modern_industrialization:robot_arm',
-        V: 'modern_industrialization:conveyor',
-        D: 'minecraft:dispenser',
-        C: 'minecraft:cobblestone',
-        B: '#c:chests'
-    });
-
-    // -- BREAKER -- //
-    e.shaped('kibe:breaker', [
-        'SPS',
-        'VDV',
-        'CBC'
-    ],
-    {
-        S: 'minecraft:smooth_stone',
-        P: 'minecraft:diamond_pickaxe',
-        V: 'modern_industrialization:conveyor',
-        D: 'minecraft:dispenser',
-        C: 'minecraft:cobblestone',
-        B: '#c:chests'
-    });
-
-    // -- HEATER -- //
-    e.shaped('kibe:heater', [
-        'PHP',
-        'HCH',
-        'PHP'
-    ],
-    {
-        P: '#c:iron_plates',
-        H: 'minecraft:diamond',
-        C: 'modern_industrialization:basic_machine_hull'
-    });
-
-    // -- DEHUMIDIFIER -- //
-    e.shaped('kibe:dehumidifier', [
-        'PSP',
-        'HCH',
-        'PBP'
-    ],
-    {
-        P: '#c:iron_plates',
-        S: 'minecraft:sponge',
-        H: 'minecraft:diamond',
-        C: 'modern_industrialization:basic_machine_hull',
-        B: 'minecraft:water_bucket'
-    });
-
     // -- MAGNET -- //
     e.shaped('kibe:magnet', [
         'DRR',
@@ -178,21 +102,6 @@ ServerEvents.recipes(e => {
     {
         D: 'minecraft:red_dye',
         R: 'modern_industrialization:steel_rod_magnetic'
-    });
-
-    // -- IGNITER -- //
-    e.shaped('kibe:igniter', [
-        'NFN',
-        'ADA',
-        'CRC'
-    ],
-    {
-        N: 'minecraft:netherrack',
-        F: 'minecraft:flint_and_steel',
-        A: 'modern_industrialization:robot_arm',
-        D: 'minecraft:dispenser',
-        C: 'minecraft:cobblestone',
-        R: 'minecraft:redstone'
     });
 
     // -- ESCAPE ROPE -- //
