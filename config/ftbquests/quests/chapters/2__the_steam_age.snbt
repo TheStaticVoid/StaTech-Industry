@@ -3,7 +3,7 @@
 	group: "592A9A0E9A131D28"
 	order_index: 1
 	filename: "2__the_steam_age"
-	title: "2 - Steam Age"
+	title: "&22 - Steam Age"
 	icon: "modern_industrialization:bronze_boiler"
 	subtitle: ["The Basis of Industry"]
 	default_quest_shape: ""
@@ -1649,7 +1649,7 @@
 			title: "Large Tank"
 			icon: "modern_industrialization:large_tank"
 			x: 19.0d
-			y: 9.5d
+			y: 10.0d
 			shape: "rsquare"
 			subtitle: "Mass Fluid Storage"
 			description: [
@@ -3191,7 +3191,7 @@
 		{
 			title: "Conveyor Belts"
 			x: 19.0d
-			y: 8.5d
+			y: 9.0d
 			shape: "rsquare"
 			description: ["Entities standing above it will be moved. Cursed Dirt can still spawn mobs when below it."]
 			dependencies: ["3505E9029F3CEAD0"]
@@ -3217,110 +3217,6 @@
 				}
 				{
 					id: "130B703A1FF2AA6D"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 20.0d
-			y: 8.5d
-			shape: "rsquare"
-			description: ["Placers are blocks that, when activated by a redstone signal, will place any block in its inventory in front of it, if possible."]
-			dependencies: ["3505E9029F3CEAD0"]
-			id: "1A915B3D1C8D5A46"
-			tasks: [{
-				id: "5D890C66DEFA9BE0"
-				type: "item"
-				item: "kibe:placer"
-			}]
-			rewards: [
-				{
-					id: "05E700926B19D287"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4870953612802399820L
-				}
-				{
-					id: "52EC494A1DB2350B"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 20.0d
-			y: 9.5d
-			shape: "rsquare"
-			description: ["Breakers are blocks that, when activated by a redstone signal, will break any block in front of it and store its drops in its inventory, if possible."]
-			dependencies: ["3505E9029F3CEAD0"]
-			id: "5E080BBBF5CF8CDE"
-			tasks: [{
-				id: "250DD5AB25707F7C"
-				type: "item"
-				item: "kibe:breaker"
-			}]
-			rewards: [
-				{
-					id: "2E882127CC68C12E"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4870953612802399820L
-				}
-				{
-					id: "595718A332437BB5"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 20.0d
-			y: 10.5d
-			shape: "rsquare"
-			description: ["Drawbridges will place the blocks in its inventory directly in front of it when powered by redstone."]
-			dependencies: ["3505E9029F3CEAD0"]
-			id: "7A956433C33A9C44"
-			tasks: [{
-				id: "6FC76F232B9F2BE6"
-				type: "item"
-				item: "kibe:drawbridge"
-			}]
-			rewards: [
-				{
-					id: "64180C7F777C1B8E"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4870953612802399820L
-				}
-				{
-					id: "1008579DBF29297C"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 19.0d
-			y: 10.5d
-			shape: "rsquare"
-			description: ["The Igniter will light the block in front of it on fire when provided a redstone signal."]
-			dependencies: ["3505E9029F3CEAD0"]
-			id: "09CADCF8F4364A49"
-			tasks: [{
-				id: "4E52121FB57B0BB7"
-				type: "item"
-				item: "kibe:igniter"
-			}]
-			rewards: [
-				{
-					id: "28074DB575F1BBF5"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4870953612802399820L
-				}
-				{
-					id: "5FEEED6B6B297309"
 					type: "xp"
 					xp: 10
 				}
