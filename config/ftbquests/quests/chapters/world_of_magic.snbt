@@ -1,0 +1,26 @@
+{
+	id: "4296CFFF158C9365"
+	group: "135E7B9D4273E5DD"
+	order_index: 1
+	filename: "world_of_magic"
+	title: "&aWorld of Magic&r"
+	icon: "spectrum:enchanter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "330CFCABB75098C8"
+		tasks: [{
+			id: "21D065C3333A9356"
+			type: "checkmark"
+			title: "Click to Acknowledge"
+		}]
+		rewards: [{
+			id: "0ECC6C31B2AF19B7"
+			type: "xp"
+			xp: 10
+		}]
+	}]
+	quest_links: [ ]
+}
