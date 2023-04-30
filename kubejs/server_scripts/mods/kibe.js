@@ -25,7 +25,8 @@ ServerEvents.recipes(e => {
         'kibe:tank',
         'kibe:xp_shower',
         'kibe:xp_drain',
-        'kibe:angel_ring'
+        'kibe:angel_ring',
+        'kibe:big_torch'
     ];
     KIBE_DELETED_ITEMS.forEach( id => e.remove( {id: id} ));
 
@@ -269,6 +270,19 @@ ServerEvents.recipes(e => {
         R: 'kibe:diamond_ring'
     })
     .id(st('water_ring'));
+
+    // -- BIG TORCH -- //
+    e.shaped('kibe:big_torch', [
+        'CCC',
+        'LSL',
+        'LSL'
+    ],
+    {
+        C: 'minecraft:coal_block',
+        L: '#minecraft:logs',
+        S: 'modern_industrialization:steel_large_plate'
+    })
+    .id(st('big_torch'));
 });
 
 ServerEvents.tags('item', e => {
