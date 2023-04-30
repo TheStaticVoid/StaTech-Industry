@@ -108,7 +108,8 @@ REIEvents.hide('item', e => {
         tr('insulated_copper_cable'),
         tr('insulated_gold_cable'),
         tr('insulated_hv_cable'),
-        tr('superconductor_cable')
+        tr('superconductor_cable'),
+        tr('steel_small_dust')
     ];
     REI_DELETED_ITEMS.forEach(id => e.hide(id));
 });
