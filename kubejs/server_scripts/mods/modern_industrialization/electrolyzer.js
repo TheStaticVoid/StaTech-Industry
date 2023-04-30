@@ -217,11 +217,11 @@ ServerEvents.recipes(e => {
 
     // -- ALAMANDINE DUST -- //
     electrolyzer(
-        st('alamandine_dust'),
+        st('almadine_dust'),
         32,
         400,
         [
-            { amount: 20, tag: 'c:alamandine_dusts' }
+            { amount: 20, tag: 'c:almandine_dusts' }
         ],
         [
             { amount: 3, item: mc('raw_iron') },
