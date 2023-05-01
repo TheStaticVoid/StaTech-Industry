@@ -108,6 +108,8 @@
 				"Does not get consumed when eaten, meaning it's an infinite food source."
 				""
 				"Make sure to eat it before cooking for it to count towards your Spice of Life extra health!"
+				""
+				"This is one of the few &aArtifacts&r that are craftable!"
 			]
 			id: "78DFD8815E2AE291"
 			tasks: [{
@@ -194,7 +196,11 @@
 			x: 4.5d
 			y: -4.0d
 			shape: "rsquare"
-			description: ["Provides an infinite night vision effect"]
+			description: [
+				"Provides an infinite night vision effect"
+				""
+				"These are one of the few &aArtifacts&r that are craftable!"
+			]
 			id: "419A16655447AA92"
 			tasks: [{
 				id: "1912A0752E6FADBF"
@@ -436,7 +442,11 @@
 			x: 0.0d
 			y: -1.0d
 			shape: "rsquare"
-			description: ["Attracts dropped items to the wearer"]
+			description: [
+				"Attracts dropped items to the wearer"
+				""
+				"If you prefer this over the &aKibe&r variant, there is a &d1:1 recipe&r for it."
+			]
 			id: "10CDACBCA03AEDF7"
 			tasks: [{
 				id: "1FEAD956C8A38974"

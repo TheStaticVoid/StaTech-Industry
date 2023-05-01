@@ -109,4 +109,31 @@ ServerEvents.recipes(e => {
             { amount: 4, item: tr('obsidian_dust') }
         ]
     );
+
+    // -- RAW ZINC -- //
+    macerator(
+        st('raw_zinc'),
+        2,
+        200,
+        [
+            { amount: 1, tag: 'c:zinc_ores' }
+        ],
+        [
+            { amount: 3, item: 'create:raw_zinc'}
+        ]
+    );
+
+    // -- ZINC DUST -- //
+    macerator(
+        st('zinc_dust'),
+        2,
+        200,
+        [
+            { amount: 1, tag: 'c:raw_zinc_ores' }
+        ],
+        [
+            { amount: 1, item: tr('zinc_dust') },
+            { amount: 1, item: tr('zinc_dust'), probability: 0.50 }
+        ]
+    );
 });
