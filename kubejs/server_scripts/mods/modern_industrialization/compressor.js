@@ -1,20 +1,23 @@
 ServerEvents.recipes(e => {
-    const DELETED_RECIPE = [
-        'modern_industrialization:materials/diamond/compressor/main',
-        'modern_industrialization:materials/emerald/compressor/main',
-        'modern_industrialization:vanilla_recipes/compressor/paper_with_sugarcane'
-    ];
-    DELETED_RECIPE.forEach(id => e.remove({id: id}));
 
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let st = (id) => `statech:modern_industrialization/compressor/${id}`;
 
-    let compressor = (eu, duration, item_inputs, item_outputs) => {
+    const DELETED_RECIPE = [
+        mi('materials/diamond/compressor/main'),
+        mi('materials/emerald/compressor/main'),
+        mi('vanilla_recipes/compressor/paper_with_sugarcane')
+    ];
+    DELETED_RECIPE.forEach(id => e.remove({id: id}));
+
+    let compressor = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('compressor'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs) 
@@ -27,6 +30,7 @@ ServerEvents.recipes(e => {
 
     // -- DIAMOND PLATE -- //
     compressor(
+        st('diamond_plate'),
         48,
         400,
         [
@@ -39,6 +43,7 @@ ServerEvents.recipes(e => {
 
     // -- EMERALD PLATE -- //
     compressor(
+        st('emerald_plate'),
         48,
         400,
         [
@@ -51,6 +56,7 @@ ServerEvents.recipes(e => {
 
     // -- BRICKS -- //
     compressor(
+        st('bricks'),
         2,
         300,
         [
@@ -63,6 +69,7 @@ ServerEvents.recipes(e => {
 
     // -- RUBBER SHEETS -- //
     compressor(
+        st('rubber_sheets'),
         2,
         200,
         [
@@ -75,6 +82,7 @@ ServerEvents.recipes(e => {
 
     // -- LAZURITE PLATE -- //
     compressor(
+        st('lazurite_plate'),
         10,
         300,
         [
@@ -87,6 +95,7 @@ ServerEvents.recipes(e => {
 
     // -- CALORITE CURVED PLATE -- //
     compressor(
+        st('calorite_curved_plate'),
         2,
         100,
         [ { amount: 1, tag: 'c:calorite_plates' } ],
@@ -95,9 +104,19 @@ ServerEvents.recipes(e => {
 
     // -- TUNGSTENSTEEL CURVED PLATE -- //
     compressor(
+        st('tungstensteel_curved_plate'),
         2,
         100,
         [ { amount: 1, tag: 'c:tungstensteel_plates' } ],
         [ { amount: 1, item: mi('tungstensteel_curved_plate') } ]
+    );
+
+    // -- PAPER -- //
+    compressor(
+        st('paper'),
+        2,
+        100,
+        [ { amount: 1, item: mc('sugar_cane') } ],
+        [ { amount: 1, item: mc('paper') } ]
     );
 })

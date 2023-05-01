@@ -1,18 +1,21 @@
 ServerEvents.recipes(e => {
-    const DELETED_RECIPE = [
-        'modern_industrialization:materials/electrolyzer/salt_electrolysis'
-    ];
-    DELETED_RECIPE.forEach(id => e.remove({id: id}));
     
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let mc = (id) => `minecraft:${id}`;
+    let st = (id) => `statech:modern_industrialization/electrolyzer/${id}`;
 
-    let electrolyzer = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
+    const DELETED_RECIPE = [
+        mi('materials/electrolyzer/salt_electrolysis')
+    ];
+    DELETED_RECIPE.forEach(id => e.remove({id: id}));
+
+    let electrolyzer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: 'modern_industrialization:electrolyzer',
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -29,6 +32,7 @@ ServerEvents.recipes(e => {
 
     // -- UU Matter -- //
     electrolyzer(
+        st('uu-matter'),
         40,
         2500,
         [
@@ -43,6 +47,7 @@ ServerEvents.recipes(e => {
 
     // -- ELECTROLYZING CLAY -- //
     electrolyzer(
+        st('clay_ball'),
         32,
         1200,
         [
@@ -61,6 +66,7 @@ ServerEvents.recipes(e => {
 
     // -- ELECTROLYZING SALT -- //
     electrolyzer(
+        st('salt_dust'),
         16,
         400,
         [
@@ -79,6 +85,7 @@ ServerEvents.recipes(e => {
 
     // -- ELECTROLYZING PYRITE DUST -- //
     electrolyzer(
+        st('pyrite_dust'),
         60,
         1200,
         [
@@ -94,6 +101,7 @@ ServerEvents.recipes(e => {
 
     // -- GALENA DUST -- //
     electrolyzer(
+        st('galena_dust'),
         16,
         1200,
         [
@@ -110,6 +118,7 @@ ServerEvents.recipes(e => {
 
     // -- CINNABAR DUST -- //
     electrolyzer(
+        st('cinnabar_dust'),
         32,
         800,
         [
@@ -124,6 +133,7 @@ ServerEvents.recipes(e => {
 
     // -- PERIDOT DUST -- //
     electrolyzer(
+        st('peridot_dust'),
         32,
         500,
         [
@@ -142,6 +152,7 @@ ServerEvents.recipes(e => {
 
     // -- SAPPHIRE DUST -- //
     electrolyzer(
+        st('sapphire_dust'),
         32,
         600,
         [
@@ -156,6 +167,7 @@ ServerEvents.recipes(e => {
 
     // -- SODALITE DUST -- //
     electrolyzer(
+        st('sodalite_dust'),
         32,
         500,
         [
@@ -172,6 +184,7 @@ ServerEvents.recipes(e => {
 
     // -- SPHALERITE DUST -- //
     electrolyzer(
+        st('sphalerite_dust'),
         32,
         400,
         [
@@ -187,6 +200,7 @@ ServerEvents.recipes(e => {
 
     // -- PYROPE DUST -- //
     electrolyzer(
+        st('pyrope_dust'),
         32,
         400,
         [
@@ -203,10 +217,11 @@ ServerEvents.recipes(e => {
 
     // -- ALAMANDINE DUST -- //
     electrolyzer(
+        st('almadine_dust'),
         32,
         400,
         [
-            { amount: 20, tag: 'c:alamandine_dusts' }
+            { amount: 20, tag: 'c:almandine_dusts' }
         ],
         [
             { amount: 3, item: mc('raw_iron') },
@@ -219,6 +234,7 @@ ServerEvents.recipes(e => {
 
     // -- SPESSARTINE DUST -- //
     electrolyzer(
+        st('spessartine_dust'),
         32,
         400,
         [

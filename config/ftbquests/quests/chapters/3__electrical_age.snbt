@@ -5462,6 +5462,31 @@
 				xp: 10
 			}]
 		}
+		{
+			x: 3.75d
+			y: 17.5d
+			description: ["The &bAluminum Drill&r have one purpose, and that's to produce &aCrude Oil&r. These are rather expensive, so I hope you're infrastructure is ready!"]
+			dependencies: ["5000D009D884FB99"]
+			id: "6B3CFE9AF2F5628B"
+			tasks: [{
+				id: "6FCC72842F6ABC49"
+				type: "item"
+				item: "modern_industrialization:aluminum_drill"
+			}]
+			rewards: [
+				{
+					id: "439F77F4B3DE15B2"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 3355045530268513601L
+				}
+				{
+					id: "488E192FDA3B8761"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }

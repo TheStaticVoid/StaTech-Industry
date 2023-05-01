@@ -9,5 +9,6 @@ ServerEvents.recipes(e => {
         G: 'minecraft:gray_wool',
         Y: 'minecraft:yellow_wool',
         I: '#c:iron_plates'
-    });
+    })
+    .id('statech:measurements/tape_measure');
 });

@@ -1,12 +1,14 @@
 ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let st = (id) => `statech:modern_industrialization/vacuum_freezer/${id}`;
 
-    let vacuumFreezer = (eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
+    let vacuumFreezer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('vacuum_freezer'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -23,6 +25,7 @@ ServerEvents.recipes(e => {
 
     // -- TUNGSTENSTEEL INGOT -- //
     vacuumFreezer(
+        st('tungstensteel_ingot'),
         60,
         600,
         [

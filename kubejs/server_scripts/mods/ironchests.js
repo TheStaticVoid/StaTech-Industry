@@ -1,4 +1,5 @@
 ServerEvents.recipes(e => {
+    let st = (id) => `statech:ironchests/${id}`;
     const REMOVED_RECIPES = [
         'ironchests:copper_chest',
         'ironchests:iron_chest',
@@ -22,7 +23,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:copper_plates',
         C: '#c:wooden_chests'
-    });
+    })
+    .id(st('copper_chest'));
 
     // -- COPPER CHEST UPGRADE -- //
     e.shaped('ironchests:copper_chest_upgrade', [
@@ -33,7 +35,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:copper_plates',
         U: 'ironchests:blank_chest_upgrade'
-    });
+    })
+    .id(st('copper_chest_upgrade'));
 
     // -- IRON CHEST -- // 
     e.shaped('ironchests:iron_chest', [
@@ -44,7 +47,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:iron_plates',
         C: 'ironchests:copper_chest'
-    });
+    })
+    .id(st('iron_chest'));
 
     // -- IRON CHEST UPGRADE -- //
     e.shaped('ironchests:iron_chest_upgrade', [
@@ -55,7 +59,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:iron_plates',
         U: 'ironchests:blank_chest_upgrade'
-    });
+    })
+    .id(st('iron_chest_upgrade'));
 
     // -- GOLD CHEST -- //
     e.shaped('ironchests:gold_chest', [
@@ -66,7 +71,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:gold_plates',
         C: 'ironchests:iron_chest'
-    });
+    })
+    .id(st('gold_chest'));
 
     // -- GOLD CHEST UPGRADE -- //
     e.shaped('ironchests:gold_chest_upgrade', [
@@ -77,7 +83,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:gold_plates',
         U: 'ironchests:blank_chest_upgrade'
-    });
+    })
+    .id(st('gold_chest_upgrade'));
 
     // -- DIAMOND CHEST -- //
     e.shaped('ironchests:diamond_chest', [
@@ -88,7 +95,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:diamond_plates',
         C: 'ironchests:gold_chest'
-    });
+    })
+    .id(st('diamond_chest'));
 
     // -- DIAMOND CHEST UPGRADE -- //
     e.shaped('ironchests:diamond_chest_upgrade', [
@@ -99,7 +107,8 @@ ServerEvents.recipes(e => {
     {
         P: '#c:diamond_plates',
         U: 'ironchests:blank_chest_upgrade'
-    });
+    })
+    .id(st('diamond_chest_upgrade'));
 
     // -- IRON DOLLY -- //
     e.shaped('ironchests:iron_dolly', [
@@ -111,7 +120,8 @@ ServerEvents.recipes(e => {
         R: '#c:iron_rods',
         C: 'create:cogwheel',
         P: '#c:iron_plates'
-    });
+    })
+    .id(st('iron_dolly'));
 
     // -- DIAMOND DOLLY -- //
     e.shaped('ironchests:diamond_dolly', [
@@ -122,7 +132,8 @@ ServerEvents.recipes(e => {
     {
         D: '#c:diamond_plates',
         W: 'ad_astra:wheel'
-    });
+    })
+    .id(st('diamond_dolly'));
 });
 
 ServerEvents.tags('item', e => {

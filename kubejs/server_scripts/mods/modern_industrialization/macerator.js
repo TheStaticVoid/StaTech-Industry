@@ -4,12 +4,14 @@ ServerEvents.recipes(e => {
     let crate = (id) => `create:${id}`; // mispelled on purpose ;)
     let ed = (id) => `expandeddelight:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let st = (id) => `statech:modern_industrialization/macerator/${id}`;
 
-    let macerator = (eu, duration, item_inputs, item_outputs) => {
+    let macerator = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('macerator'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -22,6 +24,7 @@ ServerEvents.recipes(e => {
 
     // -- WHEAT DOUGH -- //
     macerator(
+        st('wheat_flour'),
         2,
         200,
         [
@@ -34,6 +37,7 @@ ServerEvents.recipes(e => {
 
     // -- SALT DUST -- //
     macerator(
+        st('ground_salt'),
         2,
         100,
         [
@@ -46,6 +50,7 @@ ServerEvents.recipes(e => {
 
     // -- CALCITE DUST -- //
     macerator(
+        st('calcite_dust'),
         16,
         100,
         [
@@ -58,18 +63,21 @@ ServerEvents.recipes(e => {
 
     // -- DESH DUST -- //
     macerator(
+        st('desh_dust'),
         2,
         100,
         [ { amount: 1, tag: 'c:desh_ingots' } ],
         [ { amount: 1, item: mi('desh_dust') } ]
     );
     macerator(
+        st('desh_dust_alt'),
         2,
         100,
         [ { amount: 1, tag: 'c:desh_plates' } ],
         [ { amount: 1, item: mi('desh_dust') } ]
     );
     macerator(
+        st('desh_tiny_dust'),
         2,
         100,
         [ { amount: 1, tag: 'c:desh_nuggets' } ],
@@ -78,6 +86,7 @@ ServerEvents.recipes(e => {
 
     // -- RAW PLATINUM FROM SHELDONITE ORE -- //
     macerator(
+        st('raw_platinum'),
         2,
         200,
         [
@@ -90,6 +99,7 @@ ServerEvents.recipes(e => {
 
     // -- OBSIDIAN -- //
     macerator(
+        st('obsidian_dust'),
         8,
         1200,
         [
@@ -97,6 +107,33 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 4, item: tr('obsidian_dust') }
+        ]
+    );
+
+    // -- RAW ZINC -- //
+    macerator(
+        st('raw_zinc'),
+        2,
+        200,
+        [
+            { amount: 1, tag: 'c:zinc_ores' }
+        ],
+        [
+            { amount: 3, item: 'create:raw_zinc'}
+        ]
+    );
+
+    // -- ZINC DUST -- //
+    macerator(
+        st('zinc_dust'),
+        2,
+        200,
+        [
+            { amount: 1, tag: 'c:raw_zinc_ores' }
+        ],
+        [
+            { amount: 1, item: tr('zinc_dust') },
+            { amount: 1, item: tr('zinc_dust'), probability: 0.50 }
         ]
     );
 });

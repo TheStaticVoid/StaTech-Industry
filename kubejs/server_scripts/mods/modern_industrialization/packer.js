@@ -3,17 +3,19 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let astra = (id) => `ad_astra:${id}`;
+    let st = (id) => `statech:modern_industrialization/packer/${id}`;
 
     const REMOVED_RECIPE = [
         mi('materials/packer/mixed_ingot_blastproof')
     ];
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
-    let packer = (eu, duration, item_inputs, item_outputs) => {
+    let packer = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('packer'),
             eu: eu,
-            duration: duration
+            duration: duration,
+            id: id
         }
 
         if (item_inputs)
@@ -26,6 +28,7 @@ ServerEvents.recipes(e => {
 
     // -- CHAIN -- //
     packer(
+        st('chain'),
         2,
         100,
         [
@@ -38,6 +41,7 @@ ServerEvents.recipes(e => {
 
     // -- MIXED BLASTPROOF INGOT -- //
     packer(
+        st('mixed_blastproof_ingot'),
         64,
         600,
         [

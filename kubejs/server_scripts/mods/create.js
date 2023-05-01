@@ -1,6 +1,7 @@
 ServerEvents.recipes(e => {
     let cr = (id) => `create:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
+    let st = (id) => `statech:create/${id}`;
     // -- RECIPE REMOVAL -- //
     const CREATE_DELETED_ITEMS = [
         cr('crafting/kinetics/cogwheel'),
@@ -23,7 +24,8 @@ ServerEvents.recipes(e => {
     {
         W: '#minecraft:planks',
         C: cr('shaft')
-    });
+    })
+    .id(st('cogwheel'));
 
     // -- LARGE COGWHEEL -- //
     e.shaped(cr('large_cogwheel'), [
@@ -34,7 +36,8 @@ ServerEvents.recipes(e => {
     {
         W: '#minecraft:planks',
         C: cr('shaft')
-    });
+    })
+    .id(st('large_cogwheel'));
     // Upgrade from little cogwheel
     e.shaped(cr('large_cogwheel'), [
         ' W ',
@@ -44,10 +47,12 @@ ServerEvents.recipes(e => {
     {
         W: '#minecraft:planks',
         C: cr('cogwheel')
-    });
+    })
+    .id(st('large_cogwheel_upgrade'));
 
     // -- BRONZE DUST -- //
     e.custom({
+        id: st('bronze_dust'),
         type: cr('mixing'),
         heatRequirement: 'heated',
         ingredients: [
@@ -66,6 +71,7 @@ ServerEvents.recipes(e => {
 
     // -- FIRE CLAY DUST -- //
     e.custom({
+        id: st('fire_clay_dust'),
         type: cr('mixing'),
         ingredients: [
             { item: 'minecraft:clay_ball' },

@@ -16,5 +16,6 @@ ServerEvents.recipes(e => {
         F: astra('rocket_fin'),
         E: astra('desh_engine'),
         C: mi('aluminum_gear')
-    });
+    })
+    .id('statech:kubejs/space_probe');
 });

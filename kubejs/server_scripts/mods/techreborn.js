@@ -4,6 +4,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let ae = (id) => `ae2:${id}`;
     let mc = (id) => `minecraft:${id}`;
+    let st = (id) => `statech:tech_reborn/${id}`;
 
     const DELETED_RECIPES = [
         tr('smelting/refined_iron_ingot_from_iron_ingot'),
@@ -111,7 +112,8 @@ ServerEvents.recipes(e => {
         M: mi('advanced_motor'),
         P: mi('advanced_pump'),
         L: tr('lapotron_crystal')
-    });
+    })
+    .id(st('industrial_drill'));
 
     // -- INDUSTRIAL CHAINSAW -- //
     e.shaped(tr('industrial_chainsaw'), [
@@ -125,7 +127,8 @@ ServerEvents.recipes(e => {
         M: mi('advanced_motor'),
         S: mi('rubber_sheet'),
         L: tr('lapotron_crystal')
-    });
+    })
+    .id(st('industrial_chainsaw'));
 
     // -- INDUSTRIAL JACKHAMMER -- //
     e.shaped(tr('industrial_jackhammer'), [
@@ -140,7 +143,8 @@ ServerEvents.recipes(e => {
         B: mi('stainless_steel_rod'),
         C: mi('digital_circuit'),
         S: mi('rubber_sheet')
-    });
+    })
+    .id(st('industrial_jackhammer'));
 
     // -- CHARGE O MAT -- //
     e.shaped(tr('charge_o_mat'), [
@@ -154,7 +158,8 @@ ServerEvents.recipes(e => {
         A: ae('charger'),
         C: mi('digital_circuit'),
         H: mi('turbo_machine_hull')
-    });
+    })
+    .id(st('charge_o_mat'));
 
     // -- NANOSABER -- //
     e.shaped(tr('nanosaber'), [
@@ -167,7 +172,8 @@ ServerEvents.recipes(e => {
         B: mi('stainless_steel_blade'),
         C: mi('digital_circuit'),
         L: tr('lapotron_crystal')
-    });
+    })
+    .id(st('nanosaber'));
 
     // -- RECYCLER -- //
     e.shaped(tr('recycler'), [
@@ -180,7 +186,8 @@ ServerEvents.recipes(e => {
         C: mi('electronic_circuit'),
         M: mi('large_motor'),
         A: '#c:aluminum_plates'
-    });
+    })
+    .id(st('recycler'));
 
     // -- SCRAPBOXINATOR -- //
     e.shaped(tr('scrapboxinator'), [
@@ -194,7 +201,8 @@ ServerEvents.recipes(e => {
         M: mi('large_motor'),
         B: mc('chest'),
         W: mi('cupronickel_cable')
-    });
+    })
+    .id(st('scrapboxinator'));
 
     // -- URANIUM ORE FROM UU -- //
     e.shaped(mi('uranium_ore'), [
@@ -205,7 +213,8 @@ ServerEvents.recipes(e => {
     {
         U: tr('uu_matter'),
         S: '#c:stones'
-    });
+    })
+    .id(st('uranium_ore'));
 
     // -- NUKE CONVERSION -- //
     e.shapeless(tr('nuke'), [mi('nuke')]);
@@ -222,7 +231,8 @@ ServerEvents.recipes(e => {
         Z: '#c:zinc_ingots',
         A: mi('analog_circuit'),
         H: mi('basic_machine_hull')
-    });
+    })
+    .id(st('basic_solar_panel'));
 
     // -- ADVANCED SOLAR PANEL -- //
     e.shaped(tr('advanced_solar_panel'), [
@@ -235,7 +245,8 @@ ServerEvents.recipes(e => {
         S: '#c:silver_ingots',
         E: mi('electronic_circuit'),
         H: mi('advanced_machine_hull')
-    });
+    })
+    .id(st('advanced_solar_panel'));
 
     // -- INDUSTRIAL SOLAR PANEL -- //
     e.shaped(tr('industrial_solar_panel'), [
@@ -248,7 +259,8 @@ ServerEvents.recipes(e => {
         A: '#c:annealed_copper_ingots',
         D: mi('digital_circuit'),
         H: mi('turbo_machine_hull')
-    });
+    })
+    .id(st('industrial_solar_panel'));
 
     // -- ULTIMATE SOLAR PANEL -- //
     e.shaped(tr('ultimate_solar_panel'), [
@@ -262,7 +274,8 @@ ServerEvents.recipes(e => {
         P: mi('processing_unit'),
         H: mi('highly_advanced_machine_hull'),
         C: mi('small_heat_exchanger')
-    });
+    })
+    .id(st('ultimate_solar_panel'));
 
     // -- QUANTUM SOLAR PANEL -- //
     e.shaped(tr('quantum_solar_panel'), [
@@ -276,7 +289,8 @@ ServerEvents.recipes(e => {
         Q: mi('quantum_circuit'),
         H: mi('quantum_machine_hull'),
         C: mi('large_heat_exchanger')
-    });
+    })
+    .id(st('quantum_solar_panel'));
 
     // -- BATTERY BOX -- //
     e.shaped(tr('low_voltage_su'), [
@@ -288,7 +302,8 @@ ServerEvents.recipes(e => {
         P: tr('wood_plate'),
         B: mi('redstone_battery'),
         C: mi('copper_cable')
-    });
+    })
+    .id(st('low_voltage_su'));
 
     // -- EXTRACTOR -- //
     e.shaped(tr('extractor'), [
@@ -299,7 +314,8 @@ ServerEvents.recipes(e => {
         T: tr('treetap'),
         C: mi('analog_circuit'),
         H: mi('basic_machine_hull')
-    });
+    })
+    .id(st('extractor'));
 
     // -- RED CELL BATTERY -- //
     e.shaped(tr('red_cell_battery'), [
@@ -311,7 +327,8 @@ ServerEvents.recipes(e => {
         C: mi('copper_cable'),
         L: '#c:lead_plates',
         B: mi('redstone_battery')
-    });
+    })
+    .id(st('red_cell_battery'));
 
     // -- ELECTRIC TREETAP -- //
     e.shaped(tr('electric_treetap'), [
@@ -324,7 +341,8 @@ ServerEvents.recipes(e => {
         C: mi('analog_circuit'),
         S: '#c:wood_sticks',
         B: tr('red_cell_battery')
-    });
+    })
+    .id(st('electric_treetap'));
 
     // -- DRAGON EGG SIPHON -- //
     e.shaped(tr('dragon_egg_syphon'), [
@@ -338,7 +356,8 @@ ServerEvents.recipes(e => {
         U: mi('hv_storage_unit'),
         O: tr('lapotronic_orb'),
         P: '#c:iridium_alloy_plates'
-    });
+    })
+    .id(st('dragon_egg_syphon'));
 
     // -- LAPOTRONIC ENERGY ORB -- //
     e.shaped(tr('lapotronic_orb'), [
@@ -349,7 +368,8 @@ ServerEvents.recipes(e => {
     { 
         C: tr('lapotron_crystal'),
         H: mi('highly_advanced_machine_hull')
-    });
+    })
+    .id(st('lapotronic_orb'));
 
     // -- LAPOTRONIC ORBPACK -- //
     e.shaped(tr('lapotronic_orbpack'), [
@@ -363,7 +383,8 @@ ServerEvents.recipes(e => {
         B: tr('lithium_ion_batpack'),
         I: '#c:iridium_plates',
         O: tr('lapotronic_orb')
-    });
+    })
+    .id(st('lapotronic_orbpack'));
 
     // -- CRUDE STORAGE UNIT -- //
     e.shaped(tr('crude_storage_unit'), [
@@ -375,7 +396,8 @@ ServerEvents.recipes(e => {
         P: '#minecraft:planks',
         B: mi('bronze_barrel'),
         A: mc('paper')
-    });
+    })
+    .id(st('crude_storage_unit'));
 
     // -- BASIC DISPLAY -- //
     e.shaped(tr('basic_display'), [
@@ -388,7 +410,8 @@ ServerEvents.recipes(e => {
         I: '#c:black_dyes',
         C: mi('analog_circuit'),
         G: '#c:colorless_glass_panes'
-    });
+    })
+    .id(st('basic_display'));
 
     // -- BASIC STORAGE UNIT -- //
     e.shaped(tr('basic_storage_unit'), [
@@ -402,7 +425,8 @@ ServerEvents.recipes(e => {
         M: tr('basic_machine_frame'),
         C: mi('analog_circuit'),
         D: tr('basic_display')
-    });
+    })
+    .id(st('basic_storage_unit'));
 
     // -- CRUDE UNIT UPGRADER -- //
     e.shaped(tr('crude_unit_upgrader'), [
@@ -416,7 +440,8 @@ ServerEvents.recipes(e => {
         M: tr('basic_machine_frame'),
         C: mi('analog_circuit'),
         D: tr('basic_display')
-    });
+    })
+    .id(st('crude_unit_upgrader'));
 
     // -- ADVANCED CIRCUIT -- //
     e.shaped(tr('advanced_circuit'), [
@@ -429,7 +454,8 @@ ServerEvents.recipes(e => {
         G: '#c:glowstone_dusts',
         L: '#c:lapis',
         C: mi('analog_circuit')
-    });
+    })
+    .id(st('advanced_circuit'));
 
     // -- ADVANCED STORAGE UNIT -- //
     e.shaped(tr('advanced_storage_unit'), [
@@ -443,7 +469,8 @@ ServerEvents.recipes(e => {
         F: tr('advanced_machine_frame'),
         C: tr('advanced_circuit'),
         D: tr('digital_display')
-    });
+    })
+    .id(st('advanced_storage_unit'));
 
     // -- BASIC UNIT UPGRADER -- //
     e.shaped(tr('basic_unit_upgrader'), [
@@ -457,7 +484,8 @@ ServerEvents.recipes(e => {
         F: tr('advanced_machine_frame'),
         C: tr('advanced_circuit'),
         D: tr('digital_display')
-    });
+    })
+    .id(st('basic_unit_upgrader'));
 
     // -- INDUSTRIAL STORAGE UNIT -- //
     e.shaped(tr('industrial_storage_unit'), [
@@ -471,7 +499,8 @@ ServerEvents.recipes(e => {
         F: tr('advanced_machine_frame'),
         C: tr('advanced_circuit'),
         D: tr('digital_display')
-    });
+    })
+    .id(st('industrial_storage_unit'));
 
     // -- ADVANCED UNIT UPGRADER -- //
     e.shaped(tr('advanced_unit_upgrader'), [
@@ -485,7 +514,8 @@ ServerEvents.recipes(e => {
         F: tr('advanced_machine_frame'),
         C: tr('advanced_circuit'),
         D: tr('digital_display')
-    });
+    })
+    .id(st('advanced_unit_upgrader'));
 
     // -- QUANTUM STORAGE UNIT -- //
     e.shaped(tr('quantum_storage_unit'), [
@@ -499,7 +529,8 @@ ServerEvents.recipes(e => {
         F: tr('industrial_machine_frame'),
         C: tr('data_storage_chip'),
         D: tr('digital_display')
-    });
+    })
+    .id(st('quantum_storage_unit'));
 
     // -- INDUSTRIAL UNIT UPGRADER -- //
     e.shaped(tr('industrial_unit_upgrader'), [
@@ -513,7 +544,8 @@ ServerEvents.recipes(e => {
         F: tr('industrial_machine_frame'),
         C: tr('data_storage_chip'),
         D: tr('digital_display')
-    });
+    })
+    .id(st('industrial_unit_upgrader'));
 
     // -- DATA STORAGE CHIPS -- //
     e.shaped(tr('data_storage_core'), [
@@ -527,7 +559,8 @@ ServerEvents.recipes(e => {
         L: '#c:lapis',
         C: tr('advanced_circuit'),
         P: '#c:peridot_plates'
-    });
+    })
+    .id(st('data_storage_core'));
 
     // -- RESIN BASIN -- //
     e.shaped(tr('resin_basin'), [
@@ -539,7 +572,8 @@ ServerEvents.recipes(e => {
         W: tr('rubber_planks'),
         T: tr('treetap'),
         D: tr('rubber_trapdoor')
-    });
+    })
+    .id(st('resin_basin'));
 
     // -- ROLLING MACHINE -- //
     e.shaped(tr('rolling_machine'), [
@@ -552,7 +586,8 @@ ServerEvents.recipes(e => {
         C: tr('advanced_circuit'),
         R: '#c:refined_iron_plates',
         F: tr('basic_machine_frame')
-    });
+    })
+    .id(st('rolling_machine'));
 
     // -- STANDARD MACHINE CASING -- //
     e.shaped(tr('basic_machine_casing'), [
@@ -564,7 +599,8 @@ ServerEvents.recipes(e => {
         I: '#c:iron_plates',
         A: mi('analog_circuit'),
         C: tr('basic_machine_frame')
-    });
+    })
+    .id(st('basic_machine_casing'));
 
     // -- THERMAL GENERATOR -- //
     e.shaped(tr('thermal_generator'), [
@@ -577,7 +613,8 @@ ServerEvents.recipes(e => {
         G: tr('reinforced_glass'),
         C: mi('electronic_circuit'),
         H: mi('advanced_machine_hull')
-    });
+    })
+    .id(st('thermal_generator'));
 
     // -- WATER MILL -- //
     e.shaped(tr('water_mill'), [
@@ -592,7 +629,8 @@ ServerEvents.recipes(e => {
         H: mi('basic_machine_hull'),
         P: mi('pump'),
         C: mi('analog_circuit')
-    });
+    })
+    .id(st('water_mill'));
 
     // -- WIND MILL -- //
     e.shaped(tr('wind_mill'), [
@@ -601,7 +639,8 @@ ServerEvents.recipes(e => {
     {
         M: '#c:magnalium_plates',
         H: mi('basic_machine_hull')
-    });
+    })
+    .id(st('wind_mill'));
 
     // -- ALARM -- //
     e.shaped(tr('alarm'), [
@@ -614,7 +653,8 @@ ServerEvents.recipes(e => {
         W: mi('copper_wire'),
         C: mi('copper_cable'),
         B: mc('redstone_block')
-    });
+    })
+    .id(st('alarm'));
 
     // -- INCANDESCENT LAMP -- //
     e.shaped(tr('lamp_incandescent'), [
@@ -626,7 +666,8 @@ ServerEvents.recipes(e => {
         G: '#c:colorless_glass_panes',
         W: mi('copper_wire'),
         C: tr('carbon_fiber')
-    });
+    })
+    .id(st('lamp_incandescent'));
 
     // -- LED LAMP -- //
     e.shaped(tr('lamp_led'), [
@@ -638,12 +679,14 @@ ServerEvents.recipes(e => {
         G: '#c:colorless_glass_panes',
         W: mi('tin_wire'),
         O: mc('glowstone_dust')
-    });
+    })
+    .id(st('lamp_led'));
 
     // -- FREQUENCY TRANSMITTER -- //
     e.shapeless(tr('frequency_transmitter'), [
         mi('analog_circuit'), mi('electrum_wire')
-    ]);
+    ])
+    .id(st('frequency_transmitter'));
 
     // -- ENERGY STORAGE UPGRADE -- //
     e.shaped(tr('energy_storage_upgrade'), [
@@ -656,7 +699,8 @@ ServerEvents.recipes(e => {
         C: mi('copper_cable'),
         B: tr('red_cell_battery'),
         A: mi('analog_circuit')
-    });
+    })
+    .id(st('energy_storage_upgrade'));
 
     // -- MUFFLER UPGRADE -- //
     e.shaped(tr('muffler_upgrade'), [
@@ -667,7 +711,8 @@ ServerEvents.recipes(e => {
     {
         W: '#minecraft:wool',
         A: mi('analog_circuit')
-    });
+    })
+    .id(st('muffler_upgrade'));
 
     // -- OVERCLOCKER UPGRADE -- //
     e.shaped(tr('overclocker_upgrade'), [
@@ -678,7 +723,8 @@ ServerEvents.recipes(e => {
         C: tr('water_coolant_cell_10k'),
         W: mi('copper_cable'),
         A: mi('analog_circuit')
-    });
+    })
+    .id(st('overclocker_upgrade'));
 
     // -- 60k HELIUM COOLANT CELL -- //
     e.shaped(tr('helium_coolant_cell_60k'), [
@@ -689,7 +735,8 @@ ServerEvents.recipes(e => {
     {
         T: '#c:tin_ingots',
         H: mi('helium_bucket')
-    });
+    })
+    .id(st('helium_coolant_cell_60k'));
 
     // -- SUPERCONDUCTOR -- //
     e.shaped('4x ' + tr('superconductor'), [
@@ -702,7 +749,8 @@ ServerEvents.recipes(e => {
         T: '#c:tungsten_ingots',
         C: mi('quantum_circuit'),
         F: tr('energy_flow_chip')
-    });
+    })
+    .id(st('superconductor'));
 
     // -- SUPERCONDUCTOR UPGRADE -- //
     e.shaped(tr('superconductor_upgrade'), [
@@ -714,7 +762,8 @@ ServerEvents.recipes(e => {
         S: tr('superconductor'),
         C: tr('data_storage_chip'),
         F: tr('industrial_machine_frame')
-    });
+    })
+    .id(st('superconductor_upgrade'));
 
     // -- THICK NEUTRON DEFLECTOR -- //
     e.shaped(tr('thick_neutron_reflector'), [
@@ -725,5 +774,6 @@ ServerEvents.recipes(e => {
     {
         R: tr('neutron_reflector'),
         B: mi('beryllium_dust')
-    });
+    })
+    .id(st('thick_neutron_reflector'));
 });

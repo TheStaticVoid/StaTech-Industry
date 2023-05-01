@@ -22,7 +22,7 @@
 	
 	# Enables creation of death waypoints
 	# Default: true
-	death_waypoints: true
+	death_waypoints: false
 	
 	# Enables debug info
 	# Default: false
@@ -149,7 +149,7 @@
 		
 		# Enable minimap
 		# Default: true
-		enabled: true
+		enabled: false
 		
 		# Show entities on minimap
 		# Default: true
@@ -165,7 +165,7 @@
 		
 		# Minimap will not rotate
 		# Default: true
-		locked_north: false
+		locked_north: true
 		
 		# Show player heads on minimap
 		# Default: true
@@ -203,7 +203,7 @@
 		
 		# Draw a square minimap instead of a circular one
 		# Default: false
-		square: false
+		square: true
 		
 		# Minimap visibility
 		# Default: 255
@@ -228,5 +228,3 @@
 		zoom: 1.0d
 	}
 }
-
-
