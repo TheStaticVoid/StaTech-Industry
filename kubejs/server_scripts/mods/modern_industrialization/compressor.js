@@ -110,4 +110,13 @@ ServerEvents.recipes(e => {
         [ { amount: 1, tag: 'c:tungstensteel_plates' } ],
         [ { amount: 1, item: mi('tungstensteel_curved_plate') } ]
     );
+
+    // -- PAPER -- //
+    compressor(
+        st('paper'),
+        2,
+        100,
+        [ { amount: 1, item: mc('sugar_cane') } ],
+        [ { amount: 1, item: mc('paper') } ]
+    );
 })
