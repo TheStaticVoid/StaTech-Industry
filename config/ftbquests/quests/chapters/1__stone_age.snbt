@@ -588,7 +588,7 @@
 			]
 		}
 		{
-			x: -3.5d
+			x: -2.0d
 			y: 2.5d
 			shape: "rsquare"
 			description: [
@@ -618,7 +618,7 @@
 			]
 		}
 		{
-			x: -2.5d
+			x: -1.0d
 			y: 2.5d
 			shape: "rsquare"
 			description: ["Why lug around a crafting table everywhere you go when you could instead make a &ePocket Crafting Table&r. Using this item, you will have access to a 3x3 crafting grid anywhere you go!"]
@@ -687,7 +687,7 @@
 			]
 		}
 		{
-			x: -2.5d
+			x: -1.0d
 			y: 1.5d
 			shape: "rsquare"
 			description: ["&bWooden Buckets&r act just like normal buckets with the only downside being they cannot pick up hot liquids such as lava."]
@@ -713,7 +713,7 @@
 			]
 		}
 		{
-			x: -3.5d
+			x: -2.0d
 			y: 1.5d
 			shape: "rsquare"
 			description: ["The &bTorch Sling&r uses torches from your inventory as ammo. Torches are placed where they land."]
@@ -795,14 +795,11 @@
 			]
 		}
 		{
-			x: 11.5d
-			y: 5.5d
+			x: 12.0d
+			y: 4.5d
 			shape: "rsquare"
 			description: ["The &bXP Storage&r block is the core block that stores &aExperience&r."]
-			dependencies: [
-				"1C23C4B16844849F"
-				"1BE89CC00209CD24"
-			]
+			dependencies: ["1C23C4B16844849F"]
 			size: 1.25d
 			id: "48566D7F1724EB6B"
 			tasks: [{
@@ -825,8 +822,8 @@
 			]
 		}
 		{
-			x: 11.0d
-			y: 3.5d
+			x: 10.5d
+			y: 3.0d
 			shape: "rsquare"
 			description: ["Smelting up your &aSoulcopper Blend&r will yield a &bSoulcopper Ingot&r"]
 			dependencies: ["11B147A60B77ED4A"]
@@ -851,15 +848,15 @@
 			]
 		}
 		{
-			x: 10.0d
-			y: 5.5d
+			x: 10.5d
+			y: 4.5d
 			shape: "rsquare"
 			description: [
 				"The &aXP Transfer&r is used to transfer experience to the &eXP Storage&r. To swap between push and pull, &esneak right-click&r with the item in your hand."
 				""
 				"Crafting the &eXP Storage&r consumes an &aXP Transfer&r, so this quest gives you an extra!"
 			]
-			dependencies: ["5CFF5EB2DF342268"]
+			dependencies: ["1BE89CC00209CD24"]
 			id: "1C23C4B16844849F"
 			tasks: [{
 				id: "3C318C6F1B2AEC5B"
@@ -886,133 +883,8 @@
 			]
 		}
 		{
-			x: 10.0d
-			y: 3.5d
-			shape: "rsquare"
-			description: ["By melting down any &aEnchanted Book&r, you can create &bXP Dust&r."]
-			dependencies: ["11B147A60B77ED4A"]
-			id: "5CFF5EB2DF342268"
-			tasks: [{
-				id: "7FEA47FB35EE13E6"
-				type: "item"
-				item: "xps:xp_dust"
-			}]
-			rewards: [
-				{
-					id: "173599C48B20C79E"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1292583397374875582L
-				}
-				{
-					id: "1F97C1B0081F20BE"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 9.0d
-			y: 5.5d
-			shape: "rsquare"
-			description: ["Combining &aBlaze Rods&r with &bXP Dust&r will create an &eXP Rod&r."]
-			dependencies: ["5CFF5EB2DF342268"]
-			id: "7B5620C673B4A11C"
-			tasks: [{
-				id: "058E3B21C55EFE89"
-				type: "item"
-				item: "xps:xp_rod"
-			}]
-			rewards: [
-				{
-					id: "148442689A1788AE"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1292583397374875582L
-				}
-				{
-					id: "1E04015251128A35"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 11.0d
-			y: 7.5d
-			shape: "rsquare"
-			description: [
-				"The &bXP Storage Inspector&r inspects &eXP Storage&r blocks. &eRight-clicking&r the &eXP Storage&r it will show you:"
-				"- Owner"
-				"- Stored XP"
-				"- Fill level"
-				"- Player XP"
-			]
-			dependencies: [
-				"7B5620C673B4A11C"
-				"48566D7F1724EB6B"
-			]
-			id: "7EA0E0394E00D73F"
-			tasks: [{
-				id: "695B186C1C6E74CD"
-				type: "item"
-				item: "xps:inspector"
-			}]
-			rewards: [
-				{
-					id: "35D8EEAB3F46DFF5"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1292583397374875582L
-				}
-				{
-					id: "67CDAD14088F7E0B"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			title: "Lock \\& Key"
-			x: 9.0d
-			y: 7.5d
-			shape: "rsquare"
-			description: [
-				"The &bLock&r is used to lock the &eXP Storage&r. While locked, fluid extraction is disabled."
-				""
-				"The &aKey&r is used to unlcok the &eXP Storage&r."
-			]
-			dependencies: ["7B5620C673B4A11C"]
-			id: "09F4687F1FD4C914"
-			tasks: [
-				{
-					id: "748FE42CD3287D08"
-					type: "item"
-					item: "xps:lock"
-				}
-				{
-					id: "50F70D8245C5C204"
-					type: "item"
-					item: "xps:key"
-				}
-			]
-			rewards: [
-				{
-					id: "10467E747CEFE24F"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1292583397374875582L
-				}
-				{
-					id: "02C46C7A438A562E"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 14.0d
-			y: 3.5d
+			x: 13.0d
+			y: 3.0d
 			shape: "rsquare"
 			description: [
 				"&aXP Berries&r can be used on &eXP Storage&r to insert some &aExperience&r."
@@ -1041,8 +913,8 @@
 			]
 		}
 		{
-			x: 12.5d
-			y: 3.5d
+			x: 12.0d
+			y: 3.0d
 			shape: "rsquare"
 			description: ["&aXP Berries&r can be used to generate passive experience. Can be planted on &bSoul Soil&r."]
 			dependencies: ["1BE89CC00209CD24"]
@@ -1067,8 +939,8 @@
 			]
 		}
 		{
-			x: 12.0d
-			y: 7.5d
+			x: 13.5d
+			y: 4.5d
 			shape: "rsquare"
 			description: ["Use an &aEmpty Bucket&b on the &eXP Storage&r to fill it. You can right click with a full bucket to empty it into the &eXP Storage&r."]
 			dependencies: ["48566D7F1724EB6B"]
@@ -1354,8 +1226,8 @@
 		}
 		{
 			title: "Tom's Simple Storage Mod"
-			x: 0.0d
-			y: 2.5d
+			x: 1.5d
+			y: 2.0d
 			shape: "rsquare"
 			description: [
 				"&aTom's Simple Storage Mod&r is going to be a godsend for the early game, as you won't have access to a full &eApplied Energistics 2&r network until Digital Circuits."
@@ -1385,8 +1257,8 @@
 			]
 		}
 		{
-			x: 0.5d
-			y: 5.0d
+			x: 2.0d
+			y: 4.5d
 			shape: "rsquare"
 			description: ["The &aStorage Terminal&r can be connected to the &bInventory Connector&r to display all the linked inventories and access all the items."]
 			dependencies: ["6BBBD642A60FDFB5"]
@@ -1411,8 +1283,8 @@
 			]
 		}
 		{
-			x: 2.0d
-			y: 5.0d
+			x: 3.5d
+			y: 4.5d
 			shape: "rsquare"
 			description: ["The &aCrafting Terminal&r is an upgraded terminal that allows you to craft while accessing your inventory network. Pretty much similar to the &cAE2 Crafting Terminal&r."]
 			dependencies: ["3ED795611B49EB0E"]
@@ -1437,8 +1309,8 @@
 			]
 		}
 		{
-			x: -0.5d
-			y: 5.0d
+			x: 1.0d
+			y: 4.5d
 			shape: "rsquare"
 			description: ["The &bWireless Terminal&r is an item that can be used to remotely access your &aInventory Terminals&r. To use, hold the &bWireless Terminal&r and aim at an terminal on your network, you'll need to be within 16 blocks to do so."]
 			dependencies: ["6BBBD642A60FDFB5"]
@@ -1464,8 +1336,8 @@
 		}
 		{
 			title: "Inventory Cables"
-			x: -1.5d
-			y: 4.0d
+			x: 0.0d
+			y: 3.5d
 			shape: "rsquare"
 			subtitle: "Connect all the things!"
 			description: ["&bInventory Cables&r can extend the range of your inventory connection. Use an &bInventory Cable Connector&r to link the inventory to the cable."]
@@ -1498,8 +1370,8 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: 5.0d
+			x: -0.5d
+			y: 4.5d
 			shape: "rsquare"
 			description: [
 				"The &aAdvanced Wireless Terminal&r allows you to access your network without having to be nearby and looking at the terminal. &eShift-right click&r a terminal to bind to it."
@@ -1531,8 +1403,8 @@
 			]
 		}
 		{
-			x: 0.5d
-			y: 4.0d
+			x: 2.0d
+			y: 3.5d
 			shape: "rsquare"
 			description: ["The &aInventory Trim&r can extend your &bInventory Connector&r's connection."]
 			dependencies: ["6BBBD642A60FDFB5"]
@@ -1557,8 +1429,8 @@
 			]
 		}
 		{
-			x: -0.5d
-			y: 4.0d
+			x: 1.0d
+			y: 3.5d
 			shape: "rsquare"
 			description: [
 				"The &aBasic Inventory Hopper&r can import or export from your inventory network."
@@ -1587,8 +1459,8 @@
 			]
 		}
 		{
-			x: 1.5d
-			y: 4.0d
+			x: 3.0d
+			y: 3.5d
 			shape: "rsquare"
 			description: ["Emits redstone signals based on your inventory storage. Similar to the &eAE2 Level Emitter&r."]
 			dependencies: ["6BBBD642A60FDFB5"]

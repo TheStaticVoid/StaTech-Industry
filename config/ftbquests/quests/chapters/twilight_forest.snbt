@@ -1,0 +1,41 @@
+{
+	id: "4040DB2AE139AC91"
+	group: "135E7B9D4273E5DD"
+	order_index: 2
+	filename: "twilight_forest"
+	title: "&eThe Twilight Forest"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	subtitle: ["The OG"]
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			dependencies: [
+				"03FBCDDEF854A0E3"
+				"50CB097911D2B369"
+			]
+			id: "44FFCBCF6580B923"
+			tasks: [{
+				id: "0CEE72C9BA710C4A"
+				type: "item"
+				item: "kubejs:magic_diamond"
+			}]
+		}
+		{
+			title: "Where is everything?!"
+			x: 0.0d
+			y: -1.5d
+			description: ["The entry to &eThe Twilight Forest&r is gated behind progression in the &aWorld of Magic&r chapter. Progress there until you get an item to access &eThe Twilight Forest&r"]
+			id: "0341A9A620243028"
+			tasks: [{
+				id: "5D21527AE31D9D95"
+				type: "checkmark"
+				title: "Click to Acknowledge"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
