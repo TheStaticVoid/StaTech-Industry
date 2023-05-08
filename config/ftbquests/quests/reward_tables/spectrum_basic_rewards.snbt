@@ -1,0 +1,127 @@
+{
+	id: "51E4C44F603E1117"
+	order_index: 13
+	title: "Spectrum Basic Rewards"
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{ item: "minecraft:amethyst_shard", count: 16 }
+		{ item: "spectrum:topaz_shard", count: 16 }
+		{ item: "spectrum:citrine_shard", count: 16 }
+		{ item: "spectrum:amethyst_powder", count: 16 }
+		{ item: "spectrum:topaz_powder", count: 16 }
+		{ item: "spectrum:citrine_powder", count: 16 }
+		{ item: "runes:arcane_stone", count: 16 }
+		{ item: "runes:fire_stone", count: 16 }
+		{ item: "runes:frost_stone", count: 16 }
+		{ item: "minecraft:glow_ink_sac", count: 8 }
+		{
+			item: {
+				id: "spectrum:razor_falchion"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:looting"
+						lvl: 3s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				id: "spectrum:multitool"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:efficiency"
+						lvl: 1s
+					}]
+				}
+			}
+		}
+		{ item: "spectrum:block_placer", count: 4 }
+		{ item: "spectrum:redstone_sand", count: 8 }
+		{ item: "waystones:warp_dust", count: 8 }
+		{ item: "magehand:hand_essence_item", count: 8 }
+		{
+			item: {
+				id: "spectrum:oblivion_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "spectrum:voiding"
+						lvl: 1s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				id: "spectrum:bottomless_bundle"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{ item: "spectrum:vegetal", count: 4 }
+		{ item: "spectrum:radiance_staff" }
+		{
+			item: {
+				id: "spectrum:lucky_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:fortune"
+						lvl: 3s
+					}]
+				}
+			}
+		}
+		{ item: "spectrum:enchantment_canvas" }
+		{ item: "spectrum:polished_calcite", count: 32 }
+		{ item: "spectrum:polished_basalt", count: 32 }
+		{
+			item: {
+				id: "wizards:wand_arcane"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "wizards:wand_fire"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "wizards:wand_frost"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "spectrum:topaz_basalt_lamp", count: 4 }
+		{ item: "spectrum:amethyst_basalt_lamp", count: 4 }
+		{ item: "spectrum:citrine_basalt_lamp", count: 4 }
+		{ item: "spectrum:topaz_block", count: 3 }
+		{ item: "spectrum:citrine_block", count: 3 }
+		{ item: "minecraft:amethyst_block", count: 3 }
+		{ item: "spectrum:topaz_ore", count: 8 }
+		{ item: "spectrum:amethyst_ore", count: 8 }
+		{ item: "spectrum:citrine_ore", count: 8 }
+		{ item: "spectrum:private_chest" }
+		{ item: "spectrum:compacting_chest" }
+		{ item: "spectrum:titration_barrel" }
+		{ item: "spectrum:glowing_glass", count: 16 }
+	]
+}

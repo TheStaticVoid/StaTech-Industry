@@ -148,4 +148,15 @@ ServerEvents.recipes(e => {
         O: mi('iron_ring')
     })
     .id(st('chain'));
-})
+});
+
+ServerEvents.tags('item', e => {
+    let mc = (id) => `minecraft:${id}`;
+    const HORSE_ARMORS = [
+        mc('leather_horse_armor'),
+        mc('iron_horse_armor'),
+        mc('golden_horse_armor'),
+        mc('diamond_horse_armor')
+    ];
+    HORSE_ARMORS.forEach(id => { e.add('kubejs:horse_armors', id) } );
+});

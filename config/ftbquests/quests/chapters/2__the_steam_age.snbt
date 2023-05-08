@@ -431,8 +431,8 @@
 			]
 		}
 		{
-			x: 4.0d
-			y: 2.0d
+			x: 3.5d
+			y: 4.0d
 			shape: "square"
 			subtitle: "More bang for your buck"
 			description: ["The &6Bronze Macerator&r is a helpful machine to help you get more value out of the &aores&r you mine. Processing &aores&r will grant you additional &ddusts&r which can be smelted into ingots."]
@@ -2525,45 +2525,12 @@
 			]
 		}
 		{
-			x: -1.0d
-			y: -3.0d
-			shape: "rsquare"
-			subtitle: "Time is money"
-			description: ["Time in a Bottle offers a way to passively store the time spent playing so that you can spend it to speed up any process, such as a furnace smelting or machine operating."]
-			dependencies: ["5EDE88BDA0182BD7"]
-			id: "765220E44F7D027E"
-			tasks: [{
-				id: "54554F78AA9BB8E1"
-				type: "item"
-				item: {
-					id: "timeinabottle:time_in_a_bottle"
-					Count: 1b
-					tag: {
-						timeData: { }
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "5389A56D0CF4CD22"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 8055223505892499306L
-				}
-				{
-					id: "3500893ACC1B10D0"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
 			title: "Take to the Skies"
-			x: 0.0d
+			x: -0.5d
 			y: -3.0d
 			shape: "rsquare"
 			description: [
-				"A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally."
+				"A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally. Hold crouch to go faster."
 				""
 				"&cNote&r that only the &aWhite&r version of the &bGlider&r will be accepted for this quest due to &dFTB Quests&r limitations with &eKibe&r."
 			]
@@ -2708,145 +2675,6 @@
 				}
 				{
 					id: "54F53E49A33CB6B6"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 2.5d
-			y: 4.0d
-			shape: "rsquare"
-			description: [
-				"&aEnder Pearl Dust&r is produced by sending &bEnder Pearls&r through a &6Macerator&r."
-				""
-				"&aEnder Pearl Dust&r is used in a variety of recipes, but for now it's useful in making &dWarp Dust&r."
-			]
-			dependencies: ["73AF6917A7A85244"]
-			id: "6F88FC11E59E8E80"
-			tasks: [{
-				id: "4537933397F0E443"
-				type: "item"
-				item: "techreborn:ender_pearl_dust"
-			}]
-			rewards: [
-				{
-					id: "266179E78D3BD262"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 8055223505892499306L
-				}
-				{
-					id: "7DA8CFEBE5E5BEE3"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 0.5d
-			y: 4.0d
-			shape: "rsquare"
-			description: ["&dWarp Dust&r is an important crafting component in &dWarp Scrolls&r and other &eWaystone&r related items."]
-			dependencies: ["6F88FC11E59E8E80"]
-			id: "5B1A75C2F76C6D8A"
-			tasks: [{
-				id: "630A87404EF3617E"
-				type: "item"
-				item: "waystones:warp_dust"
-			}]
-			rewards: [
-				{
-					id: "3315F8613E8AD337"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 8055223505892499306L
-				}
-				{
-					id: "21ED813411C60015"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			title: "Scrolls"
-			x: 0.0d
-			y: 5.5d
-			shape: "rsquare"
-			subtitle: "Don't sue me Bethesda"
-			description: [
-				"Before you fully unlock the &dWarp Stone&r, you can use Warp Scrolls as temporary teleportation devices."
-				""
-				"The &dBound Scroll&r is used on existing &eWaystones&rto bind itself to that location. Using the scroll will teleport the user back to that Waystone, consuming the Scroll in the process."
-				""
-				"The &dReturn Scroll&r will teleport the user back to where they just teleported from. Useful in conjunction with the &dBound Scroll&r. Consumed on use."
-				""
-				"&dWarp Scrolls&r act as temporary &dWarp Stones&r, allowing you to select any &eWaystone&r you have previously visited, but taking a use off the Scroll each time it's used. "
-			]
-			dependencies: ["5B1A75C2F76C6D8A"]
-			id: "0730D6CF32E895DB"
-			tasks: [
-				{
-					id: "59EF3BF5517866C7"
-					type: "item"
-					item: "waystones:return_scroll"
-				}
-				{
-					id: "66069FAE8406F937"
-					type: "item"
-					item: "waystones:bound_scroll"
-				}
-				{
-					id: "3CD52E3D9C00172E"
-					type: "item"
-					item: "waystones:warp_scroll"
-				}
-			]
-			rewards: [
-				{
-					id: "4040774C4CFFB98E"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 8055223505892499306L
-				}
-				{
-					id: "7737064AE681229D"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 1.0d
-			y: 5.5d
-			shape: "rsquare"
-			description: [
-				"&dWarp Plates&r aren't very useful until you have two of them. When you place the &dWarp Plate&r, it will code an &aAttuned Shard&r to it's location. If you place another Warp Plate and place the &aAttuned Shard&r from the previous, that new &dWarp Plate&r will teleport you to the previous location."
-				""
-				"If you lose your &aAttuned Shard&r, or want multiple &dWarp Plates&r to reach a single destination, then you can place &dWarp Dust&r in the destination &dWarp Plate&r to create a new &aAttuned Shard&r for wherever you want to create a new &dWarp Plate&r."
-			]
-			dependencies: ["5B1A75C2F76C6D8A"]
-			id: "1CC8F1192E2178EB"
-			tasks: [{
-				id: "51BA7D3FE7438D53"
-				type: "item"
-				item: "waystones:warp_plate"
-			}]
-			rewards: [
-				{
-					id: "3007ED33F2354F2F"
-					type: "item"
-					item: "waystones:warp_plate"
-				}
-				{
-					id: "3B52BFD9C7731EFA"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 8055223505892499306L
-				}
-				{
-					id: "74955F0FED9AADF2"
 					type: "xp"
 					xp: 10
 				}
@@ -3131,7 +2959,7 @@
 			]
 		}
 		{
-			x: 1.0d
+			x: 0.5d
 			y: -3.0d
 			shape: "rsquare"
 			description: [

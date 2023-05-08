@@ -4,6 +4,7 @@ REIEvents.hide('item', e => {
     let ae2 = (id) => `ae2:${id}`;
     let kibe = (id) => `kibe:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let tf = (id) => `twilightforest:${id}`;
 
 
     const REI_DELETED_ITEMS = [
@@ -32,6 +33,7 @@ REIEvents.hide('item', e => {
         'kubejs:statech_logo',
         'modern_industrialization:guidebook',
         'spirit:soul_pedestal',
+        tf('uncrafting_table'),
         tr('nichrome_heating_coil'),
         tr('lithium'),
         tr('heliumplasma'),
@@ -116,8 +118,10 @@ REIEvents.hide('item', e => {
 
 REIEvents.removeCategories(e => {
     let tr = (id) => `techreborn:${id}`;
+    let tf = (id) => `twilightforest:${id}`;
     const REMOVED_CAT = [
         'minecraft:plugins/tag',
+        tf('uncrafting'),
         tr('alloy_smelter'),
         tr('assembling_machine'),
         tr('chemical_reactor'),

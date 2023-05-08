@@ -1372,145 +1372,6 @@
 			]
 		}
 		{
-			x: 14.5d
-			y: 7.0d
-			shape: "rsquare"
-			subtitle: "Science and magic combine!"
-			description: [
-				"While you might have collected some Waystones on your adventures, crafting them had been out of your reach until now. Holding right-click with the Warp Stone will allow you to pick any visited Waystone to teleport to. "
-				""
-				"With the &dWarp Stone&r you can create new &5Waystones&r and &5Sharestones&r."
-				""
-				"These could prove useful once you head to space..."
-			]
-			dependencies: ["302958D57C6A10C7"]
-			id: "1A3215B013A56DF3"
-			tasks: [{
-				id: "6C0E4D7A74A0984D"
-				type: "item"
-				item: {
-					id: "waystones:warp_stone"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "752CFDB22C80049E"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 3355045530268513601L
-				}
-				{
-					id: "5DC008544803441C"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 15.5d
-			y: 6.0d
-			shape: "rsquare"
-			description: [
-				"Using your &dWarp Stone&r, or just grabbing a &5Waystone&r you broke earlier, you can now get &5Waystones&r!"
-				""
-				"These allow you to set locations you can warp between, even dimensions! These aren't as practical for traveling within your base as &eTravel Anchors&r are, but they are great if you find a cool place, useful resources, or land on another planet and want to travel back there again."
-			]
-			dependencies: ["1A3215B013A56DF3"]
-			id: "5122831846581262"
-			tasks: [{
-				id: "77C5AE25073B7AE1"
-				type: "item"
-				title: "Any Waystone"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "structory_towers:waystones_1"
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "4FD50ED4C90FDC4E"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 3355045530268513601L
-				}
-				{
-					id: "6492125190C181BB"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 14.5d
-			y: 6.0d
-			shape: "rsquare"
-			description: [
-				"If you find your &dWaystone&r bookmarks are getting clogged, you can consider using &5Sharestones&r."
-				""
-				"&5Sharestones&r allow you to warp between only other &5Sharestones&r of the same color, this is useful to organize the different locations you want to be warping to."
-			]
-			dependencies: ["1A3215B013A56DF3"]
-			id: "072C7BB315337A31"
-			tasks: [{
-				id: "4A44D9CF80920734"
-				type: "item"
-				title: "Any Sharestones"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "waystones:sharestone"
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "68B58EA0F46A7E8D"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 3355045530268513601L
-				}
-				{
-					id: "1AAA21C6575636D7"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: 13.5d
-			y: 6.0d
-			shape: "rsquare"
-			description: ["The &dPort Stone&r will allow you to select a destination from the list of &5Waystones&r you have previously visited, but you will not be able to warp back to the &dPortstone&r."]
-			dependencies: ["1A3215B013A56DF3"]
-			id: "5233BABEDED66C9C"
-			tasks: [{
-				id: "68176AD7692CEBBF"
-				type: "item"
-				item: "waystones:portstone"
-			}]
-			rewards: [
-				{
-					id: "2933792296971100"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 3355045530268513601L
-				}
-				{
-					id: "58B17EF541380E22"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
 			x: 7.5d
 			y: 16.5d
 			shape: "rsquare"
@@ -4624,7 +4485,7 @@
 			]
 		}
 		{
-			x: 17.5d
+			x: 17.0d
 			y: 0.0d
 			shape: "rsquare"
 			description: [
@@ -4954,7 +4815,7 @@
 			]
 		}
 		{
-			x: 18.5d
+			x: 18.0d
 			y: 0.0d
 			shape: "rsquare"
 			description: ["The &dVoid Bucket&r does not carry any liquids, instead it deletes any liquid you pick up with it. "]
@@ -4984,7 +4845,7 @@
 			]
 		}
 		{
-			x: 19.5d
+			x: 19.0d
 			y: 0.0d
 			shape: "rsquare"
 			description: [
