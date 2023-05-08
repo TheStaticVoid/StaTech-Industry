@@ -1,0 +1,108 @@
+{
+	id: "60BC5D10BF817F97"
+	order_index: 14
+	title: "Spectrum Rare Rewards"
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{ item: "spectrum:orange_pigment", count: 16 }
+		{ item: "spectrum:magenta_pigment", count: 16 }
+		{ item: "spectrum:light_blue_pigment", count: 16 }
+		{ item: "spectrum:yellow_pigment", count: 16 }
+		{ item: "spectrum:lime_pigment", count: 16 }
+		{ item: "spectrum:pink_pigment", count: 16 }
+		{ item: "spectrum:cyan_pigment", count: 16 }
+		{ item: "spectrum:purple_pigment", count: 16 }
+		{ item: "spectrum:blue_pigment", count: 16 }
+		{ item: "spectrum:green_pigment", count: 16 }
+		{ item: "spectrum:red_pigment", count: 16 }
+		{
+			item: {
+				id: "waystones:warp_stone"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "waystones:waystone" }
+		{
+			item: {
+				id: "wizards:staff_arcane"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "wizards:staff_fire"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "wizards:staff_frost"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "runes:arcane_stone", count: 64 }
+		{ item: "runes:fire_stone", count: 64 }
+		{ item: "runes:frost_stone", count: 64 }
+		{ item: "minecraft:amethyst_shard", count: 64 }
+		{ item: "spectrum:topaz_shard", count: 64 }
+		{ item: "spectrum:citrine_shard", count: 64 }
+		{ item: "spectrum:onyx_shard", count: 4 }
+		{ item: "spectrum:seven_league_boots" }
+		{ item: "spectrum:ink_flask" }
+		{ item: "spectrum:ink_assortment" }
+		{ item: "spectrum:stardust", count: 4 }
+		{ item: "spectrum:color_picker" }
+		{ item: "spectrum:amethyst_chime" }
+		{ item: "spectrum:upgrade_speed" }
+		{ item: "spectrum:glowing_semi_permeable_glass", count: 16 }
+		{ item: "spectrum:natures_staff" }
+		{ item: "spectrum:constructors_staff" }
+		{ item: "spectrum:restocking_chest" }
+		{ item: "spectrum:stratine_fragments", count: 3 }
+		{
+			item: {
+				id: "spectrum:tender_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:silk_touch"
+						lvl: 1s
+					}]
+				}
+			}
+		}
+		{
+			item: {
+				id: "spectrum:lagoon_rod"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						id: "minecraft:lure"
+						lvl: 3s
+					}]
+				}
+			}
+		}
+		{ item: "spectrum:redstone_wireless", count: 4 }
+		{ item: "spectrum:jeopardant" }
+		{ item: "spellbladenext:runeblazing_ingot", count: 16 }
+		{ item: "spellbladenext:runegleaming_ingot", count: 16 }
+		{ item: "spellbladenext:runefrosted_ingot", count: 16 }
+		{ item: "spectrum:knowledge_gem" }
+	]
+}

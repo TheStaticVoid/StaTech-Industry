@@ -13,6 +13,7 @@
 		{
 			x: 0.0d
 			y: 0.0d
+			description: ["With your progression with &eSpectrum&r you have unlocked the ability to enter the &aRealm of Twilight&r. Create a &d2x2&r infinite &9water&r source, surround it with &bflowers&r and drop the &dMagic Diamond&r in to create a portal."]
 			dependencies: [
 				"03FBCDDEF854A0E3"
 				"50CB097911D2B369"
@@ -23,18 +24,916 @@
 				type: "item"
 				item: "kubejs:magic_diamond"
 			}]
+			rewards: [
+				{
+					id: "70DAB3ED76F8F25F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "13207725355FA5F7"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
-			title: "Where is everything?!"
+			title: "The Twilight Zone"
 			x: 0.0d
-			y: -1.5d
-			description: ["The entry to &eThe Twilight Forest&r is gated behind progression in the &aWorld of Magic&r chapter. Progress there until you get an item to access &eThe Twilight Forest&r"]
-			id: "0341A9A620243028"
+			y: 1.5d
+			description: ["Welcome to &aThe Twilight Forest&r. For you modded veterans out there, you'll know what to expect, however for anyone new, you're in for a treat. &eFollow the quest progression&r and enjoy your stay! Hope you're well equipped for the &dunknown dangers&r that lurk here."]
+			dependencies: ["44FFCBCF6580B923"]
+			size: 1.5d
+			id: "5A0E7DEEA70E9667"
 			tasks: [{
-				id: "5D21527AE31D9D95"
-				type: "checkmark"
-				title: "Click to Acknowledge"
+				id: "40DEDD74A372CBAD"
+				type: "advancement"
+				advancement: "twilightforest:root"
+				criterion: ""
 			}]
+			rewards: [
+				{
+					id: "162EE9F09EBF64C0"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "63606217C05A718E"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			description: ["Your first &ctarget&r is the &aNaga&r, which lives in the &ecourtyard of the forest&r. You will need the &2Naga Scales&r to enter the &cLich's Tower&r."]
+			dependencies: ["5A0E7DEEA70E9667"]
+			hide: true
+			size: 1.5d
+			id: "5FE8FA7D9F5DF7CE"
+			tasks: [{
+				id: "54EDEEE6C1C9AE82"
+				type: "item"
+				item: "twilightforest:naga_trophy"
+			}]
+			rewards: [
+				{
+					id: "441FB11B67B7EB38"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "0A0A0D6C22FD909E"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			description: [
+				"Atop the &egrand tower&r is the &cLich&r. While shielded &ehe is unable to be damaged&r, however his &bown attacks may be lethal to him&r."
+				""
+				"You will need one of his &3Scepters&r to &aclear the mosquitos in the swamp&r, &bresist the cold of the Snowy Forest&r, and &dsee through the darkness of the Dark Forest&r."
+			]
+			dependencies: ["5FE8FA7D9F5DF7CE"]
+			size: 1.5d
+			id: "723C224E6D6E12E4"
+			tasks: [{
+				id: "2C69518DD254809A"
+				type: "item"
+				item: "twilightforest:lich_trophy"
+			}]
+			rewards: [
+				{
+					id: "2FD85C86012D805E"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "7E17534B88B671AB"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			description: ["&aNaga Scales&r are an exclusive boss-drop from the &bNaga&r that will allow you to make useful armor for the fights ahead."]
+			dependencies: ["5FE8FA7D9F5DF7CE"]
+			hide: true
+			id: "1322F7051A901669"
+			tasks: [{
+				id: "1D429E23AF7CB7E8"
+				type: "item"
+				item: "twilightforest:naga_scale"
+			}]
+			rewards: [
+				{
+					id: "5E103B9C754A118A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "0F7EE98BD60D16B8"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			description: ["The weapon of the &dLich&r. It &eshoots projectiles&r when you press right-click. Can be recharged with &aender pearls&r."]
+			dependencies: ["723C224E6D6E12E4"]
+			id: "4B85407F8A2D7EDC"
+			tasks: [{
+				id: "58F32F4FC42E80A6"
+				type: "item"
+				item: {
+					id: "twilightforest:twilight_scepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1206FA59E0DA5047"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "549DAD1930830E6E"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			description: [
+				"The &aScepter of Life Draining&r will do as it says. When you hold right-click anything you point out will have their &dhealth drained&r and will &erestore your own health and hunger&r."
+				""
+				"Recharge with &bFermented Spider Eyes&r."
+			]
+			dependencies: ["723C224E6D6E12E4"]
+			id: "190494279B1BFB32"
+			tasks: [{
+				id: "467DE04DF4F0A307"
+				type: "item"
+				item: {
+					id: "twilightforest:lifedrain_scepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7609214B44C69189"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "00408FEE26F6021A"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: ["Right-click to &esummon&r a &azombie&r to fight your enemies. Can be recharged with &czombie flesh&r."]
+			dependencies: ["723C224E6D6E12E4"]
+			id: "4D7E3DFFE5333041"
+			tasks: [{
+				id: "1F7BA3CD9ACCBF38"
+				type: "item"
+				item: {
+					id: "twilightforest:zombie_scepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "527B710A450582C8"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "504B93BD3AB9C337"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			description: [
+				"The &aScepter of Fortification&r will grant you &eadditional protection&r. Has a long cooldown."
+				""
+				"Recharge with &bGolden Apples&r."
+			]
+			dependencies: ["723C224E6D6E12E4"]
+			id: "66932BBDA030E6C6"
+			tasks: [{
+				id: "1C51508DB8FC9D70"
+				type: "item"
+				item: {
+					id: "twilightforest:fortification_scepter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0B8C4D3E90C247AF"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "3A8F18E5718C44D7"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 4.5d
+			description: ["Deep in the &bSnowy Forest&r you will find the &aLair of the Yeti&r. &aYetis&r can pick you up and throw you to deal significant damage, but the &eFur of the Alpha Yeti&r will be required to advanced into the &3glacial area&r of the &bSnowy Forest&r."]
+			dependencies: ["723C224E6D6E12E4"]
+			size: 1.5d
+			id: "003E0266AFBCD7E2"
+			tasks: [{
+				id: "7526389CD7A28388"
+				type: "item"
+				item: "twilightforest:alpha_yeti_trophy"
+			}]
+			rewards: [
+				{
+					id: "7CFC2BF4B99DE413"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "44B70BBB99958054"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Yeti Suit"
+			x: 7.0d
+			y: 6.0d
+			description: ["The &bYeti&r armor will &efreeze&r attackers as well as &abeing extremely comfy&r."]
+			dependencies: ["003E0266AFBCD7E2"]
+			id: "73C1C7843C4CE6D6"
+			tasks: [
+				{
+					id: "4C2C77C88A4CD89E"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 2s
+							}]
+						}
+					}
+				}
+				{
+					id: "2E15117DC899182B"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 2s
+							}]
+						}
+					}
+				}
+				{
+					id: "5A2E1199333C44B9"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 2s
+							}]
+						}
+					}
+				}
+				{
+					id: "0E58A6EA064F78AC"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:protection"
+									lvl: 2s
+								}
+								{
+									id: "minecraft:feather_falling"
+									lvl: 4s
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "24C894FA6556569F"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "3B78F0A489C69128"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 4.5d
+			description: [
+				"Ascend the &bGlacial Peaks&r to find the &aAurora Palace&r the lair of the &eSnow Queen&r. She awaits you at the &2highest point&r."
+				""
+				"Once you find her, she is &eheavily protected&r by the &bice of her throne&r. You will need to wait for her to lower herself into attack range to defeat her."
+			]
+			dependencies: ["003E0266AFBCD7E2"]
+			size: 1.5d
+			id: "64C1AFB646771B9B"
+			tasks: [{
+				id: "500CFE59A5230050"
+				type: "item"
+				item: "twilightforest:snow_queen_trophy"
+			}]
+			rewards: [
+				{
+					id: "57BBB0DBD09246BF"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "054C532BC5D071D6"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 6.0d
+			subtitle: "Aimbot?"
+			description: ["The &aSeeker Bow&r is an exclusive mob-drop from &bThe Snow Queen&r that will &eautomatically target&r enemies when you shoot at them."]
+			dependencies: ["64C1AFB646771B9B"]
+			id: "44F17997C9EFBEB6"
+			tasks: [{
+				id: "395A37D6DC4E2E68"
+				type: "item"
+				item: {
+					id: "twilightforest:seeker_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "243AAEF42AA7EBF8"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "15F7A82033727C8D"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: 6.0d
+			description: ["The &aTri-Bow&r is an exclusive mob-drop from &bThe Snow Queen&r that will &efire three shots&r instead of one when fired."]
+			dependencies: ["64C1AFB646771B9B"]
+			id: "5F9D53C4373D0626"
+			tasks: [{
+				id: "11916AEB8ABF7361"
+				type: "item"
+				item: {
+					id: "twilightforest:triple_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "04ED74C1725A6A44"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "4407DC66115DC3B6"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 1.5d
+			description: [
+				"The &cCarmintine&r contraptions of the &eUr-Ghast Tower&r will not obey you. You must &aearn the ability to control them&r. Travel into the &2Dark Forest&r and find a dungeon slightly exposed from the ground. Place a &3Trophy&r of a defeated boss on the pedestal to enter."
+				""
+				"Deep inside you will find the &dKnight Phantom&r. Defeating him will grant you access to control the &cCarmintine&r contraptions."
+			]
+			dependencies: ["723C224E6D6E12E4"]
+			size: 1.5d
+			id: "2233186BEAF7BA1A"
+			tasks: [{
+				id: "3C711949FE1234E1"
+				type: "item"
+				item: "twilightforest:knight_phantom_trophy"
+			}]
+			rewards: [
+				{
+					id: "1BEAB5F51DA675CC"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "4D4A9826826ACB25"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 1.5d
+			description: [
+				"Ascend the grand tower to confront the &cUr-Ghast&r. To aid in defeating it, use the &eGhast Traps&r to pull the &cUr-Ghast&r out of the sky allowing you to do &elots of damage to it&r. "
+				""
+				"Watch out for the &cUr-Ghast&r's tears, as they will do &dsignificant damage to you&r!"
+			]
+			dependencies: ["2233186BEAF7BA1A"]
+			size: 1.5d
+			id: "11D556921BC83168"
+			tasks: [{
+				id: "416A8594C2949538"
+				type: "item"
+				item: "twilightforest:ur_ghast_trophy"
+			}]
+			rewards: [
+				{
+					id: "7B3EE034428B68E9"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "57F9F0F557608314"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			description: ["&cFiery Tears&r are an exclusive item dropped from the &cUr-Ghast&r. You can use them to make &4Fiery Ingots&r, which can be used to make special sets of &aarmor and tools&r. The &2Fiery Pickaxe&r features auto-smelting, while the &3Fiery Sword&r has a built in &dFire Aspect&r. Lastly, the &bFiery Armors&r will light attackers &eon fire&r."]
+			dependencies: ["11D556921BC83168"]
+			id: "78427B969C4E2188"
+			tasks: [{
+				id: "1DD933B3BF7C52A3"
+				type: "item"
+				item: "twilightforest:fiery_tears"
+			}]
+			rewards: [
+				{
+					id: "44818FE67378A251"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "56F88067DFB50D70"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: 0.0d
+			description: ["&cCarmintine&r can be used to make the special blocks found in the &cUr-Ghast&r's tower. Check &dREI&r for everything you can make with them."]
+			dependencies: ["11D556921BC83168"]
+			id: "13A78B5F96DE93BA"
+			tasks: [{
+				id: "7C2C1F86AF2D47CD"
+				type: "item"
+				item: "twilightforest:carminite"
+			}]
+			rewards: [
+				{
+					id: "29335E012E3A9DE4"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "2390343B2EB73C17"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -1.5d
+			description: [
+				"In the &aswamp&r you will find a mound that will lead you down into a &blabyrinth&r. Traverse these dark corridors and &cslay&r the &eMinotaur&r for your reward."
+				""
+				"You're looking to get your hands on some &dMeef Stroganaff&r. Consuming this will allow you to traverse deeper into the hotter part of the swamp and fight the &6Hydra&r!"
+			]
+			dependencies: ["723C224E6D6E12E4"]
+			size: 1.5d
+			id: "4AEED1B1443EED17"
+			tasks: [{
+				id: "2FC008AE64861E41"
+				type: "item"
+				item: "twilightforest:minoshroom_trophy"
+			}]
+			rewards: [
+				{
+					id: "30F2A03BDA19FE8A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "64CB50593C33EAE7"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -3.5d
+			description: ["The &aDiamond Minotaur Axe&r will grant you the same &echarge attack&r as the &bMinotaur&r had. It does &2increased damage while charging&r!"]
+			dependencies: ["4AEED1B1443EED17"]
+			id: "41695E47A3567243"
+			tasks: [{
+				id: "1B9E8C2953A83BB0"
+				type: "item"
+				item: {
+					id: "twilightforest:diamond_minotaur_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "59EBB9C8F3C897E3"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "395DFDBA8E6FEEC3"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -1.5d
+			description: [
+				"With the &aBeef Stroganoff&r protecting you from the &cheat&r of the &4Fire Swamp&r, it's time to venture in and slay the next beast on your journey: &bThe Hydra&r."
+				""
+				"&bThe Hydra&r is very tanky and can deal a lot of damage, so it's best to be &every prepared for this fight&r. Perhaps &dthe defenses in its mouth are lower than the rest of its body&r?"
+			]
+			dependencies: ["4AEED1B1443EED17"]
+			size: 1.5d
+			id: "3EF9963D9B9B56CE"
+			tasks: [{
+				id: "1013F34B620AC959"
+				type: "item"
+				item: "twilightforest:hydra_trophy"
+			}]
+			rewards: [
+				{
+					id: "1DD896F489A8A16A"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "22E51AFF8449ABB9"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -3.5d
+			description: ["&cFiery Blood&r is an exclusive item dropped from the &aHydra&r. You can use them to make &4Fiery Ingots&r, which can be used to make special sets of &aarmor and tools&r. The &2Fiery Pickaxe&r features auto-smelting, while the &3Fiery Sword&r has a built in &dFire Aspect&r. Lastly, the &bFiery Armors&r will light attackers &eon fire&r."]
+			dependencies: ["3EF9963D9B9B56CE"]
+			id: "0D80D0796A7AA38E"
+			tasks: [{
+				id: "1B5238A5CCFD431A"
+				type: "item"
+				item: "twilightforest:fiery_blood"
+			}]
+			rewards: [
+				{
+					id: "6C45C78202DCA7F0"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "4512C4E3CD0EB9C1"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "Giant's Tools"
+			x: 15.5d
+			y: 1.5d
+			description: [
+				"Using the &abeanstalk&r to ascend to the heavens, you find a cloud populated by &bGiants&r. Slay these &bGiants&r for their oversized tools, in particular the &eGiant's Pickaxe&r."
+				""
+				"Once you have the &eGiant's Pickaxe&r in hand, descend back into the &2Troll Cave&r to &3break into the giant &dObsidian&3 vault&r."
+			]
+			dependencies: ["20A8D6406A462AB0"]
+			size: 1.5d
+			id: "107C37B812C06639"
+			tasks: [
+				{
+					id: "28273564F1EF0C32"
+					type: "item"
+					item: {
+						id: "twilightforest:giant_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6A33059D468D1536"
+					type: "item"
+					item: {
+						id: "twilightforest:giant_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "198070C1C4297B20"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "06EA093CB342C72D"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: 1.5d
+			description: [
+				"Once you have successfully slain &bThe Hydra&r, &cThe Ur-Ghast&r, and &aThe Snow Queen&r, the &eacid rains&r of the &dHighlands&r will cease, allowing you to finally enter. "
+				""
+				"Your first goal is to locate a &2cave full of trolls&r. &3Trolls&r hide their most valuable possessions in stashes made of &dobsidian&r. The large stash you will not be able to get into until later, but remember it's location as you will return soon. In the smaller stashes, you can find &aMagic Beans&r. These beans can be planted on &dUberous Soil&r on the surface to grow a &alarge beanstalk&r into the skies. "
+			]
+			dependencies: [
+				"3EF9963D9B9B56CE"
+				"11D556921BC83168"
+				"64C1AFB646771B9B"
+			]
+			size: 1.5d
+			id: "20A8D6406A462AB0"
+			tasks: [{
+				id: "4CD924B3E454234C"
+				type: "item"
+				item: "twilightforest:magic_beans"
+			}]
+			rewards: [
+				{
+					id: "0F48E14727666146"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "551AD8B1EF4525E4"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 17.5d
+			y: 1.5d
+			description: [
+				"Inside the &2Giant&r's &dObsidian&r vault you will find &eThe Lamp of Cinders&r, which has the power to burn away the pesky &cthorns&r in the &dHighlands&r."
+				""
+				"Use it to ascend to the &5Final Castle&r. You can hold right-click to spread the flame in an AoE around you, or apply directly to the &cthorns&r with right-click."
+			]
+			dependencies: ["107C37B812C06639"]
+			size: 1.5d
+			id: "606734E7FA4E7C48"
+			tasks: [{
+				id: "1354914D347C6564"
+				type: "item"
+				item: {
+					id: "twilightforest:lamp_of_cinders"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "76A7CC9FC28B1763"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "29100F9EFE99DA41"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			title: "The End?"
+			x: 19.5d
+			y: 1.5d
+			description: [
+				"And that's it! Sorry to disappoint, but this &emarks the end&r of progression in &dThe Twilight Forest&r at least for now. "
+				""
+				"I hope &2the quest rewards&r are worth it."
+			]
+			dependencies: ["606734E7FA4E7C48"]
+			size: 1.5d
+			id: "72F708C07843FDEE"
+			tasks: [{
+				id: "5E9B0B033C15F2D1"
+				type: "advancement"
+				advancement: "twilightforest:progress_thorns"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "463F26A66943B423"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "2C2AB01930E62A3E"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"The &aQuesting Ram&r can be found deep within the &bEnchanted Forest&r. Once you find it, it &ewants to be fed one of every color of wool&r. Once completed, you will complete the &aQuesting Ram&r's quest!"
+				""
+				"In addition to the &dother rewards&r, you gain a temporary &5magic shield&r that will block the next &ethree attacks&r from enemies. &oHonestly, this is probably just a bug, as it looks like the Staff of Fortification's ability&r."
+			]
+			dependencies: ["5A0E7DEEA70E9667"]
+			id: "5327BC2B76D7216D"
+			tasks: [{
+				id: "6B8E4E80B551696B"
+				type: "item"
+				item: "twilightforest:quest_ram_trophy"
+			}]
+			rewards: [
+				{
+					id: "50850599F6B6E446"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "4E7D09F87751BB94"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			description: [
+				"The &aCrumble Horn&r is one of the items rewarded by finishing the &bQuesting Ram&r's quest."
+				""
+				"When used, &eblocks around the user&r will begin to crumble and change into other blocks."
+				""
+				"For a full list of effects, consult the wiki:"
+				""
+				"http://www.benimatic.com/tfwiki/index.php?title=Crumble_Horn"
+			]
+			dependencies: ["5327BC2B76D7216D"]
+			id: "5260FB216B0D0E18"
+			tasks: [{
+				id: "25B0D57B07F4CC46"
+				type: "item"
+				item: {
+					id: "twilightforest:crumble_horn"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "301A996D15D0E232"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 2621385774600916095L
+				}
+				{
+					id: "4C65DFD79D54F861"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 	]
 	quest_links: [ ]

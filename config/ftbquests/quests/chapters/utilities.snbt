@@ -1,7 +1,7 @@
 {
 	id: "3E16F2F46B00419C"
 	group: "05A88037F88880CD"
-	order_index: 2
+	order_index: 1
 	filename: "utilities"
 	title: "&eUtilities"
 	icon: "ae2:nether_quartz_wrench"
@@ -228,10 +228,10 @@
 						Count: 1b
 						tag: {
 							state: {
+								data: { }
 								state: {
 									Name: "minecraft:air"
 								}
-								data: { }
 								serializer: "buildinggadgets:dummy_serializer"
 							}
 							energy: 500000.0d
@@ -246,10 +246,10 @@
 						Count: 1b
 						tag: {
 							state: {
+								data: { }
 								state: {
 									Name: "minecraft:air"
 								}
-								data: { }
 								serializer: "buildinggadgets:dummy_serializer"
 							}
 							energy: 500000.0d
@@ -263,7 +263,6 @@
 						id: "buildinggadgets:gadget_copy_paste"
 						Count: 1b
 						tag: {
-							energy: 500000.0d
 							"buildinggadgets:template_key": {
 								template_id: [I;
 									-1638511729
@@ -272,6 +271,7 @@
 									-1770359759
 								]
 							}
+							energy: 500000.0d
 						}
 					}
 				}
@@ -681,10 +681,10 @@
 					tag: {
 						BlockEntityTag: {
 							Items: [ ]
-							y: 64
+							x: -198
 							id: "kibe:cooler"
 							z: 126
-							x: -198
+							y: 64
 						}
 					}
 				}
@@ -1201,6 +1201,59 @@
 					id: "36380BB49751B649"
 					type: "xp"
 					xp: 10
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: 5.5d
+			description: ["Need to &efit into a tight space&r, or just want to change your &aplayer model&r's size for fun? Then the &bSize Shifting Potions&r are for you. Easily craftable as any other potion, they can even come in &ehandy when messing with cables / wires in tight spaces&r."]
+			id: "687C444440FF91F4"
+			tasks: [
+				{
+					id: "47F602F97B180A17"
+					type: "item"
+					title: "Size Shifting Potions"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "sizeshiftingpotions:growing"
+						}
+					}
+				}
+				{
+					id: "0A203E90BAFF4FB6"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "sizeshiftingpotions:shrinking"
+						}
+					}
+				}
+				{
+					id: "336EC872CA235C5E"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "sizeshiftingpotions:thinning"
+						}
+					}
+				}
+				{
+					id: "04AC5034EA396D5D"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "sizeshiftingpotions:widening"
+						}
+					}
 				}
 			]
 		}

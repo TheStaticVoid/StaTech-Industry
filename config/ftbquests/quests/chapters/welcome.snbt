@@ -272,13 +272,13 @@
 		{
 			title: "Optional Additions"
 			icon: "create:goggles"
-			x: 0.5d
+			x: 0.0d
 			y: 1.5d
 			shape: "rsquare"
 			description: [
 				"This pack includes &eComplimentaryReimagined&f. This is a highly customizable and performance friendly shader that you can enable through &aVideo Settings -> Shader Packs&f."
 				""
-				"Also included, and enabled by default is a &aSmooth Font&f resourcepack. If you'd rather have the default Minecraft font, you can disable the resource pack."
+				"Also included is a &aSmooth Font&f resourcepack. If you'd rather have the default Minecraft font, you can disable the resource pack."
 			]
 			dependencies: ["2174585D87F83C89"]
 			id: "6C661605F1DBEE4D"
@@ -296,7 +296,7 @@
 		{
 			title: "Chapters vs. Mods"
 			icon: "minecraft:bookshelf"
-			x: -0.5d
+			x: -1.0d
 			y: 1.5d
 			shape: "rsquare"
 			description: ["&aMain Progressions&f are in the &eChapters&f. The entries below the &bMods&f section are helpful mods added in the pack that aren't required to &ebeat the pack&r."]
@@ -316,7 +316,7 @@
 		{
 			title: "Find Nearby"
 			icon: "xps:inspector"
-			x: -1.5d
+			x: -2.0d
 			y: 1.5d
 			description: ["Trying to &afind&r an item in your sea of chests? Hovering over the item in your inventory or &dREI&r and pressing '&ey&r' will highlight nearby inventories with that item!"]
 			dependencies: ["2174585D87F83C89"]
@@ -335,7 +335,7 @@
 		{
 			title: "JourneyMap"
 			icon: "minecraft:filled_map"
-			x: 1.5d
+			x: 1.0d
 			y: 1.5d
 			description: [
 				"This pack includes &eJourneyMap&r. This mod allows for &dbookmarking&r locations and viewing the world around you!"
@@ -355,6 +355,20 @@
 				id: "1D1F88A59AB19D42"
 				type: "xp"
 				xp: 10
+			}]
+		}
+		{
+			title: "Sorting"
+			x: 2.0d
+			y: 1.5d
+			subtitle: "For all the chest monsters out there"
+			description: ["Do you find yourself dumping items into &echests&r without a care in the world? Well, at the very least you can organize them quickly by pressing '&2p&r' while hovering over their inventory. "]
+			dependencies: ["2174585D87F83C89"]
+			id: "6496D9E1ADE4B4DD"
+			tasks: [{
+				id: "6AB3267CA3F32DA3"
+				type: "checkmark"
+				title: "Click to Acknowledge"
 			}]
 		}
 	]
