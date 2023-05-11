@@ -165,11 +165,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "48E8E7BFEC73268F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5341C44956557380"
+					type: "item"
+					item: "minecraft:torch"
+					count: 16
+				}
+				{
+					id: "2ECE18F4AAD7F1F6"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Required Quests"
@@ -231,6 +239,7 @@
 			x: 2.0d
 			y: -1.5d
 			shape: "rsquare"
+			subtitle: "It's dangerous to go alone!"
 			description: ["This modpack includes &aSimply Swords&f and &eBetter Combat&f. Together these overhaul the combat of vanilla Minecraft completely and offer a broad variety of weapons to try out."]
 			dependencies: ["2174585D87F83C89"]
 			id: "1709043780838C78"
@@ -239,11 +248,19 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [{
-				id: "61B17DCAA9063D60"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5154D4BBD441EF8E"
+					type: "choice"
+					exclude_from_claim_all: true
+					table_id: 2190234234133751555L
+				}
+				{
+					id: "0B207279AC73FEF9"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			title: "Oh the Biomes You'll Go"
