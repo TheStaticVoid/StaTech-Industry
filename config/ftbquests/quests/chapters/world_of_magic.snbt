@@ -13,6 +13,7 @@
 			title: "A World of Magic"
 			x: 0.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"Welcome to the &dmagic&r chapter. This pack features multiple &dmagic&r mods. Some of the more notable ones are:"
 				"- &aSpectrum&r"
@@ -37,6 +38,7 @@
 			title: "Gemstone Shards"
 			x: 2.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"The beginning of your adventure will require you to find the &aprimary shards&r for &eSpectrum&r. Each gemstone represents an &delemental color&r and a different kind of &anatural force&r."
 				""
@@ -84,6 +86,7 @@
 			title: "The Pigment Pedestal"
 			x: 4.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"The &bPigment Pedestal&r is the block where you will craft most of the recipes in &eSpectrum&r and other magic mods."
 				""
@@ -164,6 +167,7 @@
 			title: "Gemstone Powders"
 			x: 6.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"Most recipes in your &aPedestal&r require &dGemstone Powders&r as a source of magical energy. "
 				""
@@ -289,6 +293,7 @@
 			title: "Your First Craft"
 			x: 8.0d
 			y: 0.0d
+			shape: "square"
 			description: ["To advance, you must get acquanted with the &acrafting process&r. Pick an item you can craft with the &bPedestal&r, input the required &eitems and powders&r and then right-click with a &dPaintbrush&r or apply a &credstone signal&r to start the craft."]
 			dependencies: ["352D2FF3E6003244"]
 			hide: true
@@ -317,6 +322,7 @@
 			title: "CMY Pedestal Variant"
 			x: 10.0d
 			y: 0.0d
+			shape: "square"
 			description: ["Now that you're familiar with the &dcrafting process&r, it's time to upgrade your basic &bPedestal&r into the &aCMY Variant&r. To upgrade the &bPedestal&r, place a &bTopaz&r, &5Amethyst&r, and &eCitrine&r (in that order) in your &bPedestal&r and then start the craft."]
 			dependencies: ["041556DA42FDC137"]
 			hide: true
@@ -346,6 +352,7 @@
 			icon: "spectrum:chiseled_polished_basalt"
 			x: 12.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"{image:statech:textures/item/spectrum_pedestal.png width:240 height:135 align:1}"
 				""
@@ -638,6 +645,7 @@
 			title: "A New Ore"
 			x: 13.5d
 			y: 2.5d
+			shape: "square"
 			description: ["You're next goal is to find a &aspecial new ore&r. It's a &eshiny yellow&r and can be found above &9sea-level&r."]
 			dependencies: ["2563B78CFC661CCB"]
 			hide: true
@@ -844,6 +852,7 @@
 		{
 			x: 13.5d
 			y: 5.0d
+			shape: "square"
 			subtitle: "Creating Life"
 			description: [
 				"It always has been the dream of people to create &aartifical life&r. Since you are now dealing with &dmagical gems&r yourself, which seem to have &dmagical powers&r, this should be a piece of cake."
@@ -1119,6 +1128,7 @@
 			title: "An Organic Material"
 			x: 15.0d
 			y: 5.0d
+			shape: "square"
 			description: ["Freeing your &dmicroorganisms&r near &aorganic&r matter will have them spread into those blocks. Breaking the block that was spread into will provide you a new resource!"]
 			dependencies: ["0F98D6E41DFECDB7"]
 			hide: true
@@ -1146,6 +1156,7 @@
 		{
 			x: 16.5d
 			y: 5.0d
+			shape: "square"
 			description: ["&aVegetal&r is a curious by-product of your &dmicroorganisms&r feasting on &2organic matter&r. It consists of the &2raw energy of nature&r."]
 			dependencies: ["6780A1BF19D7CEA3"]
 			hide: true
@@ -1172,6 +1183,7 @@
 		{
 			x: 12.0d
 			y: 3.75d
+			shape: "square"
 			description: [
 				"&dStrange whispers&r have mentioned another world wrapped in &eeternal twilight&r. The path to enter was &cblocked&r, but now is &aclear to you&r. "
 				""
@@ -1207,6 +1219,7 @@
 			title: "Colored Saplings"
 			x: 16.5d
 			y: 6.5d
+			shape: "square"
 			description: [
 				"You need something &aorganic&r to mix your &dpigments&r. In your experiments, you could see that the &aroots&r of saplings absorb the &bcolor&r of the &dpigments&r with ease and develop accordingly. The energy of the &dgems&r pulses through the stem and their first few leaves already."
 				""
@@ -1247,6 +1260,7 @@
 			title: "Pigments"
 			x: 16.5d
 			y: 8.5d
+			shape: "square"
 			description: [
 				"The &aleaves&r of colorful trees have a chance to drop a &bPure Pigment&r. You may notice that there are lots of &enew colors of trees that once looked the same&r. The &6world of color&r has opened up to you."
 				""
@@ -1287,6 +1301,7 @@
 			icon: "spectrum:fusion_shrine_basalt"
 			x: 16.5d
 			y: 10.5d
+			shape: "square"
 			description: [
 				"{image:statech:textures/item/fusion_shrine.png width:240 height:135 align:1}"
 				""
@@ -1796,6 +1811,7 @@
 		{
 			x: 13.0d
 			y: 10.5d
+			shape: "square"
 			description: [
 				"To create &cbrown pigment&r, you needed a way to darken an &6orange&r tone. And then it occured to you. It's so logical when you think about it! The &dthree gems&r you found correspond to the &5three basic colors&r of color theory. By mixing all three colors you can create a &dshard&r that is so dark it almost looks unreal."
 				""
@@ -1827,6 +1843,7 @@
 			icon: "spectrum:pedestal_onyx"
 			x: 9.5d
 			y: 10.5d
+			shape: "square"
 			description: [
 				"Your &aPigment Pedestal&r can be upgraded with your newly created &bOnyx Shards&r to further increase its magical powers."
 				""
@@ -2303,6 +2320,7 @@
 			title: "The New Hotness"
 			x: 7.0d
 			y: 10.5d
+			shape: "square"
 			description: ["Your &aprowess&r has unlocked more &bancient knowledge&r. You hear the cries of the &cNether&r reach out to you, \"&o&dThere's ore under the lava, tear it out&r\"."]
 			dependencies: ["79D0A62E07C283FF"]
 			hide: true
@@ -2330,6 +2348,7 @@
 		{
 			x: 5.0d
 			y: 10.5d
+			shape: "square"
 			description: ["&cStratine&r is a very &4heavy&r ore is scattered around the depths of the &cNether&r. It's probably &enot the best idea to carry &llarge&r&e amounts of it home at once."]
 			dependencies: ["241243142B547B6C"]
 			hide: true
@@ -2417,6 +2436,7 @@
 		{
 			x: 5.0d
 			y: 8.5d
+			shape: "square"
 			description: [
 				"Ambition has token hold of you, seriously, your first steps towards changing the world. &dEmpowered&r by the potent energy of your &aOnyx&r and &cStratine&r, this second &aorganism&r you created is clearly... more active than your last creation."
 				""
@@ -2499,6 +2519,7 @@
 			title: "Under the Sea"
 			x: 1.5d
 			y: 10.5d
+			shape: "square"
 			description: [
 				"The &aMermaids Brush&r is an inconspicuous plant that grows in the &9deepest&r depths of the oceans, forever untouched by human influence. They grow a &bsingle blossom&r, which slowly develops into a &efiligree shaped seed&r. They can only be harvested with &cshears&r."
 				""
@@ -2746,6 +2767,7 @@
 		{
 			x: -2.0d
 			y: 10.5d
+			shape: "square"
 			description: [
 				"The pure energy of &dgemstones&r in their liquid form. It is said to have a healing effect."
 				""
@@ -3348,6 +3370,7 @@
 			title: "A New Material"
 			x: 5.0d
 			y: 6.0d
+			shape: "square"
 			description: [
 				"You must be careful when freeing the &dmicroorganisms&r in the &aBottle of Failing&r as they are ravenous. They will spread to connecting blocks over time and consume the block entirely. "
 				""
@@ -3379,6 +3402,7 @@
 		{
 			x: 1.5d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"The &dObsidian&r was literally pulverized. This is what you call &cpower&r!"
 				""
@@ -3473,6 +3497,7 @@
 			title: "Unstable and Dangerous"
 			x: -2.0d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"The latest finding sfrom your last experiment make you strive for more and more. Squeeze every last ounce of energy out of your &dgemstones&r."
 				""
@@ -3508,6 +3533,7 @@
 		{
 			x: -4.0d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"This abomination of a &dGemstone&r radiates an eerie aura."
 				""
@@ -3541,6 +3567,7 @@
 			title: "It's not Oil"
 			x: -6.0d
 			y: 4.0d
+			shape: "square"
 			description: ["The liquid which was created during the creation of the &aMidnight Aberration&r... it &cdamages&r everything it touches. It seems to have varying effects depending on what lands in it. Enchanted items lose their &dmagical powers&r, and some items change altogether. However, most interesting is that &bcreatures killed by it&r drop a &emysterious fragment&r."]
 			dependencies: ["2F2CCBE02F25FA4A"]
 			hide: true
@@ -3568,6 +3595,7 @@
 		{
 			x: -8.0d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"Creatures that die in &aMidnight Solution&r drop &bMidnight Chips&r. These resemble the &eMidnight Aberration&r you failed to create before, just way, way smaller. "
 				""
@@ -3738,6 +3766,7 @@
 			title: "A New Ore"
 			x: 1.5d
 			y: 2.0d
+			shape: "square"
 			description: ["There is a new Ore to be found in the &aOverworld&r in all biomes. It's a rich &1blue ore&r that generates &cvery deep down&r under the surface, and is fairly rare. No, it is not &bDiamonds&r..."]
 			dependencies: ["7478E4BA8E84755E"]
 			hide: true
@@ -3765,6 +3794,7 @@
 		{
 			x: -2.5d
 			y: 2.0d
+			shape: "square"
 			description: [
 				"&bAzurite&r is a rich blue ore, which at a distance, can almost be mistaken for &bLapis&r. In its natural form, it contains many impurities, which must first be removed, before it can be used."
 				""
@@ -3897,6 +3927,7 @@
 		{
 			x: -6.0d
 			y: -0.5d
+			shape: "square"
 			description: [
 				"This is it: the &eperfection of your recipe&r. A little failure definitely couldn't stop you. This may be the one thing &caggressive enough&r to destroy even some materials previously deemed &6&ounbreakable&r. If you are not careful, you may &cruin the world&r. A necessary sacrifice really."
 				""
@@ -4637,6 +4668,7 @@
 			title: "Groundbreaking"
 			x: -8.0d
 			y: -0.5d
+			shape: "square"
 			description: ["Your new fancy, and &cdangerous&r, &dmicroorganisms&r are ready to feast. Able to tear through anything, where will &eyou set them free&r?"]
 			dependencies: ["0FFD788283204691"]
 			hide: true
@@ -4664,6 +4696,7 @@
 		{
 			x: -10.0d
 			y: -0.5d
+			shape: "square"
 			description: [
 				"Even &aBedrock&r was not strong enough to withstand your newly created \"&alife&r\". It broke through the &aBedrock&r like &edandelions&r through &7concrete&r."
 				""
@@ -5045,6 +5078,7 @@
 			title: "Bedrock Armor"
 			x: -13.5d
 			y: -0.5d
+			shape: "square"
 			subtitle: "The Ultimate Drip"
 			description: [
 				"The &astrongest material&r you could make so far was &bNetherite&r. However, reparing &bNetherite&r armor had the disadvantage that it was more expensive than making the armor itself. In addition, the protection decreased with every scratch. All this is less problematic when the armor &ocannot&r be damaged. "
@@ -5140,6 +5174,7 @@
 		{
 			x: -15.0d
 			y: 3.5d
+			shape: "square"
 			description: ["The &eBedrock Pickaxe&r comes &dpre-enchanted&r with &2Silk Touch&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5175,6 +5210,7 @@
 		{
 			x: -14.0d
 			y: 3.5d
+			shape: "square"
 			description: ["The &eBedrock Axe&r comes &dpre-enchanted&r with &2Efficiency VI&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5210,6 +5246,7 @@
 		{
 			x: -13.0d
 			y: 3.5d
+			shape: "square"
 			description: ["The &eBedrock Shovel&r comes &dpre-enchanted&r with &2Efficiency VI&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5245,6 +5282,7 @@
 		{
 			x: -14.5d
 			y: 4.5d
+			shape: "square"
 			description: ["The &eBedrock Sword&r comes &dpre-enchanted&r with &2Sharpness VI&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5280,6 +5318,7 @@
 		{
 			x: -12.0d
 			y: 3.5d
+			shape: "square"
 			description: ["The &eBedrock Hoe&r comes &dpre-enchanted&r with &2Fortune IV&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5315,6 +5354,7 @@
 		{
 			x: -13.5d
 			y: 4.5d
+			shape: "square"
 			description: ["The &eBedrock Bow&r comes &dpre-enchanted&r with &2Power VI&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5350,6 +5390,7 @@
 		{
 			x: -12.5d
 			y: 4.5d
+			shape: "square"
 			description: ["The &eBedrock Crossbow&r comes &dpre-enchanted&r with &2Quick Charge IV&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5385,6 +5426,7 @@
 		{
 			x: -13.0d
 			y: 5.5d
+			shape: "square"
 			description: ["The &eBedrock Shears&r comes &dpre-enchanted&r with &2Silk Touch&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5420,6 +5462,7 @@
 		{
 			x: -14.0d
 			y: 5.5d
+			shape: "square"
 			description: ["The &eBedrock Fishing Rod&r comes &dpre-enchanted&r with &2Luck of the Sea IV&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5456,6 +5499,7 @@
 			title: "Bedrock Tools"
 			x: -13.5d
 			y: 1.5d
+			shape: "square"
 			description: ["Whenever you enter a new world, you go about the mindless, days-long task of gathering &evillagers&r around you, turning them into &azombies&r, and healing them again, only for one of them to eventually hand you a book of &dMending&r. All this, just so you don't have to &bfix your tools&r. Now that you can process &2Bedrock&r, you have a much more convenient solution anyways."]
 			dependencies: ["7014D92425B9A412"]
 			hide: true
