@@ -359,6 +359,7 @@
 		}
 		{
 			title: "Sorting"
+			icon: "minecraft:chest"
 			x: 2.0d
 			y: 1.5d
 			subtitle: "For all the chest monsters out there"
@@ -369,6 +370,11 @@
 				id: "6AB3267CA3F32DA3"
 				type: "checkmark"
 				title: "Click to Acknowledge"
+			}]
+			rewards: [{
+				id: "3DA970B2C89C7494"
+				type: "xp"
+				xp: 10
 			}]
 		}
 	]
