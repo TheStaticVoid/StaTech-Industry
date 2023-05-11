@@ -49,13 +49,13 @@ ServerEvents.recipes(e => {
     blastFurnace(
         st('steel_ingot_from_refined_iron'),
         16,
-        40,
+        100,
         [
-            { amount: 1, tag: 'c:refined_iron_ingots' },
-            { amount: 4, tag: 'c:carbon_dusts' }
+            { amount: 3, tag: 'c:refined_iron_ingots' },
+            { amount: 1, tag: 'c:carbon_dusts' }
         ],
         [
-            { amount: 1, item: mi('steel_ingot') }
+            { amount: 4, item: mi('steel_ingot') }
         ]
     );
 
