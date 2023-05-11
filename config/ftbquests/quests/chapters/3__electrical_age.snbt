@@ -573,7 +573,7 @@
 		}
 		{
 			x: 18.0d
-			y: 13.0d
+			y: 11.0d
 			shape: "square"
 			subtitle: "You spin me right round"
 			description: [
@@ -3456,7 +3456,7 @@
 		}
 		{
 			x: 22.0d
-			y: 13.0d
+			y: 11.0d
 			shape: "square"
 			description: ["Mixing &aManganese Crushed Dust&r with 9000 mB of &eSulfuric Acid&r will create 9000 mB &bManganese Sulfuric Solution&r."]
 			dependencies: ["60E8A38E2CC05E1A"]
@@ -3482,7 +3482,7 @@
 		}
 		{
 			x: 20.0d
-			y: 13.0d
+			y: 11.0d
 			shape: "square"
 			description: [
 				"&aManganese Crushed Dust&r will be needed in the production of &bStainless Steel&r. "
@@ -3597,7 +3597,7 @@
 		}
 		{
 			x: 20.0d
-			y: 12.0d
+			y: 10.0d
 			shape: "square"
 			description: [
 				"You can &eMacerate&r &cRuby Ore&r or &eCentrifuge&r &4Redstone Dust&r to get &cRuby Dust&r. "
@@ -3627,7 +3627,7 @@
 		}
 		{
 			x: 22.0d
-			y: 12.0d
+			y: 10.0d
 			shape: "square"
 			description: ["Combining 9000 mB of &aHydrochloric Acid&r with &bChromium Crushed Dust&r will create 9000 mB of &dChromium Hydrochloric Solution&r."]
 			dependencies: [
@@ -3866,7 +3866,7 @@
 			title: "The Vacuum Freezer"
 			icon: "modern_industrialization:vacuum_freezer"
 			x: 18.0d
-			y: 11.0d
+			y: 13.0d
 			shape: "square"
 			subtitle: "It's getting cold in here"
 			description: [
@@ -3877,12 +3877,57 @@
 				"If you need help building the multiblock, remember you can hold \"W\" on the &aVacuum Freezer&r item in your inventory to view the &bPonder&b scene, or you can hold your wrench out to see where to place the blocks in the world with the &aVacuum Freezer&r block placed."
 			]
 			dependencies: ["36C698E0F31FDB20"]
+			size: 2.0d
 			id: "173001AFD7DFE49B"
-			tasks: [{
-				id: "6AEC705A52B557CE"
-				type: "item"
-				item: "modern_industrialization:vacuum_freezer"
-			}]
+			tasks: [
+				{
+					id: "6AEC705A52B557CE"
+					type: "item"
+					item: "modern_industrialization:vacuum_freezer"
+				}
+				{
+					id: "30EAF06503EF7B92"
+					type: "item"
+					item: "modern_industrialization:frostproof_machine_casing"
+					count: 30L
+				}
+				{
+					id: "30D220373ECC52C0"
+					type: "item"
+					title: "Any Item Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+				}
+				{
+					id: "2A11DD12CF0AAAED"
+					type: "item"
+					title: "Any Item Output Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+				}
+				{
+					id: "32D3586D9A81F481"
+					type: "item"
+					title: "Any Energy Input Hatch"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+				}
+			]
 			rewards: [
 				{
 					id: "71944F963A2C9940"
