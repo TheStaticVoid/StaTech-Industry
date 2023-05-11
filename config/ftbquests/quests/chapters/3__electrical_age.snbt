@@ -2180,6 +2180,7 @@
 			x: -2.0d
 			y: 13.0d
 			shape: "square"
+			description: ["&a1000mb&r of &eCrude Oil&r will distill into &b500mb&r of &6Sulfuric Light Fuel&r. The &cSulfur&r will need to be removed before the fuel can be used."]
 			dependencies: ["7DE19984A4DE57D4"]
 			id: "359CB19747F5A3F3"
 			tasks: [{
@@ -2205,6 +2206,7 @@
 			x: -2.0d
 			y: 15.0d
 			shape: "square"
+			description: ["&a1000mb&r of &eCrude Oil&r will distill into &b200mb&r of &6Sulfuric Heavy Fuel&r. The &cSulfur&r will need to be removed before the fuel can be used."]
 			dependencies: ["7DE19984A4DE57D4"]
 			id: "2AB5F5DBA6ACA80E"
 			tasks: [{
@@ -2230,6 +2232,7 @@
 			x: -2.0d
 			y: 17.0d
 			shape: "square"
+			description: ["&a1000mb&r of &eCrude Oil&r will distill into &b300mb&r of &6Sulfuric Naphtha&r. The &cSulfur&r will need to be removed before the fuel can be used."]
 			dependencies: ["7DE19984A4DE57D4"]
 			id: "30D48F97B508E120"
 			tasks: [{
@@ -2330,12 +2333,15 @@
 			]
 		}
 		{
-			x: -15.0d
-			y: 10.5d
+			x: -5.0d
+			y: 14.0d
 			shape: "square"
 			subtitle: "Good for the environment!"
 			description: ["&aDiesel&r can produce 400 EU per 1 mB used in a &bDiesel Generator&r. By combining Light and Heavy Fuel you can create &aDiesel&r. &aDiesel&r is a decent fuel source to use in &aDiesel Generators&r and Diesel tools."]
-			dependencies: ["7A4F605834E3AE7B"]
+			dependencies: [
+				"51A8CF3031F2765A"
+				"2CFB5F9C3B6EA234"
+			]
 			id: "6AA4B054D3E9959D"
 			tasks: [{
 				id: "58F76E8165E23620"
@@ -2360,6 +2366,7 @@
 			x: -6.0d
 			y: 13.0d
 			shape: "square"
+			description: ["Enhancing &6Light Fuel&r with &aSteam&r will make &eSteam-Cracked Light Fuel&r, which can be &2distilled into other byproducts&r."]
 			dependencies: ["2CFB5F9C3B6EA234"]
 			id: "11D42439BA0DAE33"
 			tasks: [{
@@ -2385,6 +2392,7 @@
 			x: -6.0d
 			y: 15.0d
 			shape: "square"
+			description: ["Enhancing &6Heavy Fuel&r with &aSteam&r will make &eSteam-Cracked Heavy Fuel&r, which can be &2distilled into other byproducts&r."]
 			dependencies: ["51A8CF3031F2765A"]
 			id: "740BFCE0D14F89D7"
 			tasks: [{
@@ -2410,6 +2418,7 @@
 			x: -6.0d
 			y: 17.0d
 			shape: "square"
+			description: ["Enhancing &6Naphtha&r with &aSteam&r will make &eSteam-Cracked Naphtha&r, which can be &2distilled into other byproducts&r."]
 			dependencies: ["34533B2E5B614E28"]
 			id: "0F866EE01E29B82D"
 			tasks: [{
@@ -3000,13 +3009,12 @@
 			]
 		}
 		{
-			x: -15.0d
+			x: -17.0d
 			y: 4.5d
 			shape: "square"
 			description: ["&aBoosted Diesel&r can make 800 EU per mB burned. It's the most efficient fuel to burn."]
 			dependencies: [
 				"6FC3B9DB61B11CB4"
-				"6AA4B054D3E9959D"
 				"546FA5CADF43F18A"
 			]
 			size: 1.5d
@@ -3072,6 +3080,7 @@
 				"11D42439BA0DAE33"
 				"740BFCE0D14F89D7"
 			]
+			dependency_requirement: "one_completed"
 			id: "7A4F605834E3AE7B"
 			tasks: [{
 				id: "693EA95A0ECB8813"
@@ -3365,8 +3374,8 @@
 			]
 		}
 		{
-			x: -6.0d
-			y: 19.0d
+			x: -5.0d
+			y: 16.0d
 			shape: "square"
 			description: ["&eSulfuric Acid&r is a useful byproduct of oil refinement. Make sure to keep a hold of a decent amount."]
 			dependencies: [
@@ -3374,6 +3383,7 @@
 				"34533B2E5B614E28"
 				"2CFB5F9C3B6EA234"
 			]
+			dependency_requirement: "one_completed"
 			id: "44F035B6B7E03D9A"
 			tasks: [{
 				id: "3E8B132DDCC755DA"
@@ -4101,6 +4111,7 @@
 				"68DDFA6E0465E81E"
 				"0CF36C4D19B0CE1A"
 			]
+			dependency_requirement: "one_completed"
 			id: "6C91896D4DF89A77"
 			tasks: [{
 				id: "656E0ADBC13E1167"
