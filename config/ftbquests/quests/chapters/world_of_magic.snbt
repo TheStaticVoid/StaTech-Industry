@@ -1092,6 +1092,7 @@
 			y: 4.5d
 			description: ["&cTNT&r can be produced using &dQuitoxic Dust&r, however any &cTNT&r produced this way is &6unstable&r. What does that mean exactly? Well, let's just say you're certain &awhere you want to place your &cTNT&r..."]
 			dependencies: ["03FBCDDEF854A0E3"]
+			hide: true
 			id: "16E8B253BE2B80BB"
 			tasks: [{
 				id: "433CB98E78875C3F"
@@ -1269,6 +1270,7 @@
 				"&o&eYou should aim to collect as many variants as you can. Some are not available to you at this time. You will need &call&e the ones you can make at this time to unlock the recipe for the next quest&r."
 			]
 			dependencies: ["2BD62007FC53BA59"]
+			hide: true
 			id: "36F19B05F3EF16DD"
 			tasks: [{
 				id: "05EE083C303D0E3D"
@@ -1818,6 +1820,7 @@
 				"The creation of this '&ablackest of blacks&r' in the &bFusion Shrine&r has to be performed in a way that absolutely &cno unregulated light can pollute the crystal&r. So midnight on a new moon it is. Best to bring a &eclock&r with you."
 			]
 			dependencies: ["279B9340FED331B8"]
+			hide: true
 			id: "69D153E6D7F2C335"
 			tasks: [{
 				id: "509287A195097A5E"
@@ -2071,6 +2074,7 @@
 				"&aSemi-permeable Glass&r comes in all gemstone colors, common, tinted, and glowing variants. It looks exactly like its &bmundane counterpart&r but has the special property that &eplayers can pass through it without problems&r, while all other creatures will bounce off it like a fly off a window."
 			]
 			dependencies: ["79D0A62E07C283FF"]
+			hide: true
 			id: "6E21A61FDCAC98CF"
 			tasks: [{
 				id: "45425DE150290CEB"
@@ -2381,6 +2385,7 @@
 				"Crouch click to get a &dselection&r of all available &eplacement modi&r."
 			]
 			dependencies: ["791C2898ADBEFEED"]
+			hide: true
 			id: "15615777888AF057"
 			tasks: [{
 				id: "5FDF87C22CC9A800"
@@ -2558,6 +2563,7 @@
 			description: ["Again, due to &eTerralith&r changing world generation so much, the next material is &cextremely difficult to find&r. So, once again, I offer a &atrade&r. A &bstack of kelp&r, &9stack of lapis&r, and some &bseagrass&r and I will grant you what you seek."]
 			hide_dependency_lines: true
 			dependencies: ["791C2898ADBEFEED"]
+			hide: true
 			id: "110608268753D48A"
 			tasks: [
 				{
@@ -2651,6 +2657,7 @@
 				"To fill the gaps it pulls matching blocks directly from your &cinventory&r. If you don't have any matching blocks it will fall back on &7cobblestone&r."
 			]
 			dependencies: ["0EB9D10AAC86F6A2"]
+			hide: true
 			id: "6422E4C08274C040"
 			tasks: [{
 				id: "045496E59E5C42FA"
@@ -3081,6 +3088,7 @@
 				"You may even be able &5to add other stuff than just plain &7Sugar&r."
 			]
 			dependencies: ["6D24FBE1A1BB0488"]
+			hide: true
 			id: "5869B2AB61FF7F64"
 			tasks: [
 				{
@@ -3409,6 +3417,7 @@
 				"The result was this sturdy &areagent&r. Very powerful!"
 			]
 			dependencies: ["1416BED5BCB49E7A"]
+			hide: true
 			id: "7478E4BA8E84755E"
 			tasks: [{
 				id: "2BACC5001294A3D6"
@@ -3710,6 +3719,7 @@
 			y: 13.5d
 			description: ["Crushing &bFrostbite Crystal&r with an anvil yields this ice cold powder, which almost makes your hand freeze just by holding it. Crushing &9Ice&r seems to work too, albeit with much less yield."]
 			dependencies: ["534FDA2A12212007"]
+			hide: true
 			id: "64227AF7157BBF43"
 			tasks: [{
 				id: "1D275B6DEAB137FB"
@@ -4245,6 +4255,7 @@
 			y: 15.5d
 			description: ["This collection of &esmall vials&r is able to store &ball kinds of Ink&r, albeit &cjust small amounts of it&r."]
 			dependencies: ["67FFABA54C58A939"]
+			hide: true
 			id: "1AC510ACD580FA67"
 			tasks: [{
 				id: "6B10DE11755EEDF5"
@@ -4482,6 +4493,7 @@
 				"While it is not as efficient as breaking the clusters with a &bPickaxe&r, the ease of use surely comes in handy!"
 			]
 			dependencies: ["4BBB975D039AFCC9"]
+			hide: true
 			id: "016C5422152ED3A2"
 			tasks: [{
 				id: "6325F9A0EE813AC9"
@@ -4791,6 +4803,7 @@
 				"&aBlack Hole Chests&r have a radius of 12 blocks. You can disable t hem by placing a block on top. It offers &efilters&r to specify which items it should accept&r."
 			]
 			dependencies: ["7014D92425B9A412"]
+			hide: true
 			id: "045A4D9B10FD6495"
 			tasks: [{
 				id: "449F46F9DEBFF167"
@@ -5027,6 +5040,7 @@
 				"&cNote&r: The Gray Spore Blossom is currently not solvable until a future update."
 			]
 			dependencies: ["352D2FF3E6003244"]
+			hide: true
 			id: "6B419998589E17A8"
 			tasks: [{
 				id: "4CCD7764C924714D"
@@ -5541,6 +5555,7 @@
 			y: 3.0d
 			description: ["The &cStratine Gem&r you set into this &aCirclet&r, itself a creation of the &cNether&r, can absorb high temepratures on you with ease. It even protects you from the &cblazing heat of lava&r - &bif only for a short time&r, until it has had a chance to cool down again. Pair it with something that grants you &dFire Resistance&r, you are able to swim in &clava&r almost as if it were &9water&r."]
 			dependencies: ["7478E4BA8E84755E"]
+			hide: true
 			id: "132AEA7C9C0A85F6"
 			tasks: [{
 				id: "6175730D5E94D440"
@@ -5573,6 +5588,7 @@
 				"To get teh most out of the effect getting one with long duration first and then stacking up on that seems to be most effective."
 			]
 			dependencies: ["04778F1077A6A8D1"]
+			hide: true
 			id: "2B6663972DD4C563"
 			tasks: [{
 				id: "3A96C4595E120F18"
@@ -5628,6 +5644,7 @@
 				"However, is it really worth emptying the &avial&r? Should you die against all odds, the price will &cbe immense&r."
 			]
 			dependencies: ["2B6663972DD4C563"]
+			hide: true
 			id: "0EE47705DA36E06C"
 			tasks: [{
 				id: "50D7E10973A7BD2A"
@@ -5924,6 +5941,7 @@
 			y: -7.5d
 			description: ["&aJade Petals&r can be collected from grown &bJade Vines&r"]
 			dependencies: ["67B26D6E4C9CA284"]
+			hide: true
 			id: "32504A5361DEC4C7"
 			tasks: [{
 				id: "08A8CD31A7D01837"
@@ -6122,6 +6140,7 @@
 				"There's a reason it took you this long to be able to make it..."
 			]
 			dependencies: ["7014D92425B9A412"]
+			hide: true
 			id: "1F65755BC2B7D5C2"
 			tasks: [{
 				id: "673C68C06DD2909F"
@@ -6151,6 +6170,7 @@
 				"Luckily for you, you've cobbled together the concept of &bThe Rune Crafting Table&r. With this, the &aRunes&r you craft will have their output &ddoubled&r! "
 			]
 			dependencies: ["2563B78CFC661CCB"]
+			hide: true
 			id: "1A8CB6F7460A098B"
 			tasks: [{
 				id: "658CC77BD5459920"
@@ -6180,6 +6200,7 @@
 				"The &aSpell Binding Table&r follows the same logic as the &evanilla Enchanting Table&r, where surrounding it in &2Bookshelves&r will increase the level of &5Spells&r that can be acquired."
 			]
 			dependencies: ["2563B78CFC661CCB"]
+			hide: true
 			id: "6AFC5E814DAF426A"
 			tasks: [{
 				id: "2586EA176E870F2A"
@@ -6210,6 +6231,7 @@
 				"These do &clow damage&r at the moment, and require &dRunes&r to cast their abilities, but you will soon unveil the true power as your journey continues."
 			]
 			dependencies: ["639C6C4B13203B5B"]
+			hide: true
 			id: "4534E07EEB286425"
 			tasks: [{
 				id: "15B392AE3B65481E"
@@ -6243,6 +6265,7 @@
 			y: -4.0d
 			description: ["The &cNetherite&r variant of your &dWand&r will do slightly more damage than before."]
 			dependencies: ["4534E07EEB286425"]
+			hide: true
 			id: "75354DA145259C2B"
 			tasks: [{
 				id: "6954407381BEDE79"
@@ -6277,6 +6300,7 @@
 			subtitle: "OSRS!"
 			description: ["To power your &dWand&r's abilities, you're going to need &aRunes&r. These can be crafted in a regular crafting table for now, but your &ereturn on investment&r is going to be bad until you discover the &bRunic Altar&r later..."]
 			dependencies: ["4534E07EEB286425"]
+			hide: true
 			id: "2BCB1524B5A3AFA3"
 			tasks: [{
 				id: "2EFE35A5F4181F40"
@@ -6311,6 +6335,7 @@
 			subtitle: "You're a wizard, Steve!"
 			description: ["The innate &dmagical&r power of your &5wands&r thus far has been quite poor. However, by creating a &eset of robes&r imbued with the natural powers found in &dgemstones&r, you can increase the capabilities of your &5wand&r."]
 			dependencies: ["2563B78CFC661CCB"]
+			hide: true
 			id: "30D18BC20D008AE2"
 			tasks: [
 				{
@@ -6378,6 +6403,7 @@
 			y: 9.5d
 			description: ["The &5Arcane Robes&r are and upgraded version of the &bWizard Robes&r that offer significant damage increases for &5Arcane&r &dmagic&r."]
 			dependencies: ["279B9340FED331B8"]
+			hide: true
 			id: "073B2A926EE446C7"
 			tasks: [
 				{
@@ -6445,6 +6471,7 @@
 			y: 10.5d
 			description: ["The &cFire Robes&r are and upgraded version of the &bWizard Robes&r that offer significant damage increases for &cFire&r &dmagic&r."]
 			dependencies: ["279B9340FED331B8"]
+			hide: true
 			id: "2D6D1CA454713119"
 			tasks: [
 				{
@@ -6512,6 +6539,7 @@
 			y: 11.5d
 			description: ["The &3Frost Robes&r are and upgraded version of the &bWizard Robes&r that offer significant damage increases for &3Frost&r &dmagic&r."]
 			dependencies: ["279B9340FED331B8"]
+			hide: true
 			id: "431AA8E77977167D"
 			tasks: [
 				{
@@ -6579,6 +6607,7 @@
 			y: 8.0d
 			description: ["With your improved abilities with your &bUpgraded Pigment Pedestal&r you can now better channel the powers of the &dgemstones&r into &apowerful Staffs&r to vanquish your foes with. They can be placed in a &eSpell Binding Table&r to apply &2new spells to them&r."]
 			dependencies: ["79D0A62E07C283FF"]
+			hide: true
 			id: "51E26EB4EBEE53D0"
 			tasks: [{
 				id: "615F3F51A2F3B534"
@@ -6612,6 +6641,7 @@
 			y: 7.0d
 			description: ["The &aNetherite Staffs&r offer an &bincrease to damage&r to their respective spell types."]
 			dependencies: ["51E26EB4EBEE53D0"]
+			hide: true
 			id: "361B361FA247EA88"
 			tasks: [{
 				id: "189BBEB3109D8EC5"
@@ -6648,6 +6678,7 @@
 				"These will allow you to create more powerful weapons to &cvanquish your foes&r."
 			]
 			dependencies: ["6D24FBE1A1BB0488"]
+			hide: true
 			id: "21BDD4D9662873A0"
 			tasks: [{
 				id: "1760536D483EA89E"
@@ -6685,6 +6716,7 @@
 				"You can &aadd additional spells&r at a &eSpell Binding Table&r."
 			]
 			dependencies: ["21BDD4D9662873A0"]
+			hide: true
 			id: "3422A8E9630A3063"
 			tasks: [{
 				id: "738DB52AC636ED24"
@@ -6718,6 +6750,7 @@
 			y: 15.5d
 			description: ["The &aRunic Armors&r offer a &edamage bonus&r to their respective spell type, while also offering &babsorption to magic proportional to the amount of &aRunic&b pieces you're wearing&r."]
 			dependencies: ["21BDD4D9662873A0"]
+			hide: true
 			id: "7551484360A7E823"
 			tasks: [
 				{
@@ -6795,6 +6828,7 @@
 				"Each one comes with a &espin attack of their respective element&r."
 			]
 			dependencies: ["3D298F4F967B58C9"]
+			hide: true
 			id: "68D2B0DF8060D9C7"
 			tasks: [{
 				id: "03501B1E1C263404"
@@ -6834,6 +6868,7 @@
 				"&eMix and match and find what's best for you!&r"
 			]
 			dependencies: ["3D298F4F967B58C9"]
+			hide: true
 			id: "6D7F12E254DFA7F8"
 			tasks: [
 				{
@@ -6905,6 +6940,7 @@
 			y: 4.0d
 			description: ["&aRunic Orbs&r deal no extra &cmelee&r damage, and have &dspells&r that don't &edeal a whole lot of damage&r, however the &dspells&r that are available have &2incredible area of effect and versatility&r."]
 			dependencies: ["3D298F4F967B58C9"]
+			hide: true
 			id: "3227C8A9F947E4AD"
 			tasks: [{
 				id: "096095D280DF4DA5"
@@ -6944,6 +6980,7 @@
 				"These tools come &denchanted&r with relevant abilities, such as &2Looting&r for swords and &3Fortune&r for pickaxes. The &5Summoned Bow&r fires &eSpectral Arrows&r."
 			]
 			dependencies: ["2563B78CFC661CCB"]
+			hide: true
 			id: "6974DE5FED1DE22D"
 			tasks: [{
 				id: "0BC3CD4A2A95594A"
@@ -6969,6 +7006,7 @@
 			y: 12.5d
 			description: ["This upgrade to the &aSummon Tool&r will allow for more powerful tools to be &5summoned&r. They have their existing &denchants&r improved from the previous tier, however &5summoning&r now will require &atwo full levels of experience&r."]
 			dependencies: ["279B9340FED331B8"]
+			hide: true
 			id: "3F20975321221E3F"
 			tasks: [{
 				id: "6C79E8DD3D928245"
@@ -6994,6 +7032,7 @@
 			y: 8.5d
 			description: ["The &aSummon Tool +2&r marks the final tier of the &aSummon Tools&r. With this, you can &5summon&r some pretty powerful &denchanted&r items when you need them, however you now need &athree levels of experience&r to do so."]
 			dependencies: ["6D24FBE1A1BB0488"]
+			hide: true
 			id: "6E6C4ACE6D973311"
 			tasks: [{
 				id: "6FC5CBE993AEC141"
@@ -7038,6 +7077,7 @@
 				"Complex item automation. It's similar to the &cCopper Mage Hand&r, but can have a filter applied by right-clicking for advanced item selection. "
 			]
 			dependencies: ["2563B78CFC661CCB"]
+			hide: true
 			id: "4F9A3B211E7AAA01"
 			tasks: [{
 				id: "0C7F7BB465EDC7B4"
