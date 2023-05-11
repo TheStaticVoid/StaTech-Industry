@@ -77,6 +77,23 @@ ServerEvents.recipes(e => {
     })
     .id(st('blank_pattern'));
 
+    // -- PRINTED SILICON FROM SILICON INGOT -- //
+    e.custom({
+        type: ae('inscriber'),
+        ingredients: {
+            middle: {
+                tag: 'c:silicon_ingots'
+            },
+            top: {
+                item: ae('silicon_press')
+            }
+        },
+        mode: 'inscribe',
+        result: {
+            item: ae('printed_silicon')
+        }
+    });
+
     // -- Replace the remaining iron ingots in recipes to be stainless steel -- //
     e.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', '#c:stainless_steel_plates');
 });
