@@ -1607,7 +1607,7 @@
 		{
 			title: "Colored Spore Blossoms"
 			x: 19.5d
-			y: 7.0d
+			y: 6.0d
 			description: [
 				"As you wandered through a &aleafy cave&r, you noticed the many petals sailing through the air. You were so enchanted by this sight that you set out to design your own, colorful, variations."
 				""
@@ -1645,7 +1645,7 @@
 		{
 			title: "Glowblocks"
 			x: 19.5d
-			y: 6.0d
+			y: 5.0d
 			subtitle: "They glow in the dark"
 			description: [
 				"You have &ecolor&r as pure as can be. So why not create blocks with color as &dpure& as can be!"
@@ -7100,6 +7100,38 @@
 				}
 				{
 					id: "49CAA44472A5D5C4"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 19.5d
+			y: 7.0d
+			description: ["The &aMolten Rod&r is a &bFishing Rod&r tough enough to withstand the &cheat of lava&r. Results may vary...."]
+			dependencies: ["36F19B05F3EF16DD"]
+			hide: true
+			id: "2A288CED3919A8F1"
+			tasks: [{
+				id: "50351C1C6F21CE90"
+				type: "item"
+				item: {
+					id: "spectrum:molten_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4332A67949283D5D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 5901057256958333207L
+				}
+				{
+					id: "70FAF07441CC6DA8"
 					type: "xp"
 					xp: 10
 				}
