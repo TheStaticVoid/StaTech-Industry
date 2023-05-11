@@ -290,12 +290,16 @@
 			}]
 		}
 		{
-			title: "Chapters vs. Mods"
+			title: "Chapter Progression"
 			icon: "minecraft:bookshelf"
 			x: -1.0d
 			y: 1.5d
 			shape: "rsquare"
-			description: ["&aMain Progressions&f are in the &eChapters&f. The entries below the &bMods&f section are helpful mods added in the pack that aren't required to &ebeat the pack&r."]
+			description: [
+				"&aMain Progression&f is provided in the &6Chapters&f section. The entries below the &6Side Chapters&r and &aMods&f sections are helpful mods added in the pack that aren't required to &ebeat the pack&r. "
+				""
+				"&eThey may not be required, but they can be &2VERY&e helpful&r!"
+			]
 			dependencies: ["2174585D87F83C89"]
 			id: "0480052F3F1EDAFC"
 			tasks: [{
