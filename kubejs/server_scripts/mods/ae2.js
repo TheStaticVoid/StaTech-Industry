@@ -95,7 +95,8 @@ ServerEvents.recipes(e => {
     });
 
     // -- Replace the remaining iron ingots in recipes to be stainless steel -- //
-    e.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', '#c:stainless_steel_plates');
+    e.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', '#c:stainless_steel_ingots');
+    e.replaceInput({mod: 'ae2'}, '#c:iron_ingots', '#c:stainless_steel_ingots')
 });
 
 ServerEvents.tags('item', e=> {
