@@ -425,9 +425,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -450,9 +448,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -475,9 +471,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -499,9 +493,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -523,9 +515,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -547,9 +537,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -571,9 +559,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -595,9 +581,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -619,9 +603,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -643,9 +625,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -667,9 +647,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -691,9 +669,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -715,9 +691,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -739,9 +713,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -763,9 +735,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -787,9 +757,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -811,9 +779,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -835,9 +801,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -859,9 +823,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -883,9 +845,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -907,9 +867,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('midgame/collect_midnight_chip'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_around_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 });

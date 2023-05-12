@@ -332,9 +332,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -356,9 +354,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -380,9 +376,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -404,9 +398,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -428,9 +420,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -452,9 +442,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -476,9 +464,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -500,9 +486,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -524,9 +508,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -548,9 +530,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -572,9 +552,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
@@ -596,9 +574,7 @@ ServerEvents.recipes(e => {
         required_advancement: sp('build_fusion_shrine'),
         world_conditions: [],
         start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'lightning_on_shrine'
-        ],
+        during_crafting_effects: ['nothing'],
         finish_crafting_effect: 'lightning_on_shrine'
     });
 
