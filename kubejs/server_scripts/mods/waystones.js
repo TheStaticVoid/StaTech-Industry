@@ -22,8 +22,7 @@ ServerEvents.recipes(e => {
         experience: 30.0,
         ingredients: [
             { item: ws('warp_dust'), count: 4 },
-            { item: mc('ender_pearl'), count: 4 },
-            { item: sp('onyx_shard') }
+            { item: mc('ender_pearl'), count: 4 }
         ],
         result: {
             item: ws('warp_stone')
