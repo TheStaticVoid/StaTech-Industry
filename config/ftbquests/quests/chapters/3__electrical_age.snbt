@@ -3815,6 +3815,7 @@
 			dependencies: [
 				"6375B17635AAC09D"
 				"78E5C68ED157A31B"
+				"64C6B2B282D4DF0B"
 			]
 			id: "74FD4A8145A0576F"
 			tasks: [
@@ -4278,11 +4279,12 @@
 		}
 		{
 			title: "Mozanite Byproducts"
-			x: 35.5d
+			x: 33.0d
 			y: 5.0d
 			shape: "square"
 			description: ["Mozanite on it's own is pretty useless, however running it through a Centrifuge will produce Neodymium, Yttrium, and Cadmium. These three materials will be important in components and processing in the late game."]
-			dependencies: ["3E13D3CD4173DBE2"]
+			hide_dependency_lines: true
+			dependencies: ["78E5C68ED157A31B"]
 			id: "64C6B2B282D4DF0B"
 			tasks: [
 				{
