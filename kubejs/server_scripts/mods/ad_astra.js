@@ -175,13 +175,13 @@ ServerEvents.recipes(e => {
 
     // -- JET SUIT -- //
     e.shaped(astra('jet_suit'), [
-        'PEP',
+        'PJP',
         'TNT',
         'BGB'
     ],
     {
         P: '#c:calorite_plates',
-        E: mc('elytra'),
+        J: mi('diesel_jetpack'),
         T: astra('calorite_tank'),
         N: astra('netherite_space_suit'),
         B: '#c:calorite_blocks',
