@@ -3987,7 +3987,11 @@
 			x: 26.0d
 			y: 9.0d
 			shape: "square"
-			description: ["Now, by combining Manganese Dust, Chromium Dust, Iron Dust, and Nickel Dust in a Mixer you will produce your first &aStainless Steel Dust&r."]
+			description: [
+				"Now, by combining Manganese Dust, Chromium Dust, Iron Dust, and Nickel Dust in a Mixer you will produce your first &aStainless Steel Dust&r."
+				""
+				"&cNOTE&r: If you haven't figured out &dslot-locking&r yet, you will need to for this dust. Otherwise you will be making &bInvar&r! You can lock slots by opening the &emachine GUI&r, then finding the item in &dREI&r and using the '&2+&r' button, or you can use the button in the top left othe machine."
+			]
 			dependencies: [
 				"68D24C2EE907B5DD"
 				"76D9C0C5A1025CC2"
