@@ -76,7 +76,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: tr('rubber') }
         ],
         [
-            { amount: 4, item: mi('rubber_sheet') }
+            { amount: 2, item: mi('rubber_sheet') }
         ]
     );
 
