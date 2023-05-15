@@ -1,12 +1,12 @@
 {
 	id: "464FB437D5DF7824"
-	group: "05A88037F88880CD"
+	group: "135E7B9D4273E5DD"
 	order_index: 0
 	filename: "artifacts"
 	title: "&aArtifacts"
 	icon: "artifacts:mimic_spawn_egg"
 	subtitle: ["Treasures from The Zone"]
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	default_hide_dependency_lines: false
 	images: [
 		{
@@ -86,7 +86,6 @@
 		{
 			x: -4.5d
 			y: 3.5d
-			shape: "rsquare"
 			description: ["Can be used to slowfall and as a shield in a pinch"]
 			id: "36FB336313E5E377"
 			tasks: [{
@@ -103,13 +102,10 @@
 		{
 			x: -3.0d
 			y: 3.5d
-			shape: "rsquare"
 			description: [
 				"Does not get consumed when eaten, meaning it's an infinite food source."
 				""
 				"Make sure to eat it before cooking for it to count towards your Spice of Life extra health!"
-				""
-				"This is one of the few &aArtifacts&r that are craftable!"
 			]
 			id: "78DFD8815E2AE291"
 			tasks: [{
@@ -126,7 +122,6 @@
 		{
 			x: -1.5d
 			y: 3.5d
-			shape: "rsquare"
 			description: ["An infinite steak"]
 			dependencies: ["78DFD8815E2AE291"]
 			id: "1ADACCB1A8BB9E7E"
@@ -144,7 +139,6 @@
 		{
 			x: -3.0d
 			y: -4.0d
-			shape: "rsquare"
 			description: ["Allows you to drink items faster"]
 			id: "14CB47511F2D0E01"
 			tasks: [{
@@ -161,7 +155,6 @@
 		{
 			x: -4.5d
 			y: -4.0d
-			shape: "rsquare"
 			description: ["Allows you to drink items faster, but now with style!"]
 			id: "0E0532BA6E3FFEF9"
 			tasks: [{
@@ -178,7 +171,6 @@
 		{
 			x: -1.5d
 			y: -4.0d
-			shape: "rsquare"
 			description: ["Provides infinite air underwater, very useful for those pesky underwater caves"]
 			id: "78E34F3F9A19F275"
 			tasks: [{
@@ -195,12 +187,7 @@
 		{
 			x: 4.5d
 			y: -4.0d
-			shape: "rsquare"
-			description: [
-				"Provides an infinite night vision effect"
-				""
-				"These are one of the few &aArtifacts&r that are craftable!"
-			]
+			description: ["Provides an infinite night vision effect"]
 			id: "419A16655447AA92"
 			tasks: [{
 				id: "1912A0752E6FADBF"
@@ -216,7 +203,6 @@
 		{
 			x: 3.0d
 			y: -4.0d
-			shape: "rsquare"
 			description: ["Allows you to trade with villagers for much cheaper"]
 			id: "016C498DFB704536"
 			tasks: [{
@@ -233,7 +219,6 @@
 		{
 			x: 0.0d
 			y: -4.0d
-			shape: "rsquare"
 			description: ["Adds a looting effect to killed mobs"]
 			id: "7F1AB8E8DA7BFD77"
 			tasks: [{
@@ -250,7 +235,6 @@
 		{
 			x: -4.5d
 			y: -2.5d
-			shape: "rsquare"
 			description: ["Applies fortune to mined blocks"]
 			id: "5A2F0B2712D9C667"
 			tasks: [{
@@ -267,7 +251,6 @@
 		{
 			x: -3.0d
 			y: -2.5d
-			shape: "rsquare"
 			description: ["Applies an infinite invisibility potion, making you less noticable to mobs"]
 			id: "3F0D2D8C1CFD1F2A"
 			tasks: [{
@@ -284,7 +267,6 @@
 		{
 			x: -1.5d
 			y: -2.5d
-			shape: "rsquare"
 			description: ["Increases the user's invulnerability frames after taking a hit"]
 			id: "39AD4C222874D63F"
 			tasks: [{
@@ -301,7 +283,6 @@
 		{
 			x: 0.0d
 			y: -2.5d
-			shape: "rsquare"
 			description: ["Gives a movement speed boost when taking damage"]
 			id: "2B619746DAF80A5E"
 			tasks: [{
@@ -318,7 +299,6 @@
 		{
 			x: 1.5d
 			y: -2.5d
-			shape: "rsquare"
 			description: ["Strikes your attackers with lightning (occassionally)"]
 			id: "66A8B9C4C4AC291A"
 			tasks: [{
@@ -335,7 +315,6 @@
 		{
 			x: 3.0d
 			y: -2.5d
-			shape: "rsquare"
 			description: ["Lights your attackers on fire"]
 			id: "042259C7B1BF773A"
 			tasks: [{
@@ -352,7 +331,6 @@
 		{
 			x: 4.5d
 			y: -2.5d
-			shape: "rsquare"
 			description: ["Damages attackers similar to the Thorns enchantment"]
 			id: "4D38017F83D30E13"
 			tasks: [{
@@ -369,7 +347,6 @@
 		{
 			x: 6.0d
 			y: -2.5d
-			shape: "rsquare"
 			description: [
 				"Allows the wearer to move unimpeded in water"
 				""
@@ -390,7 +367,6 @@
 		{
 			x: -4.5d
 			y: -1.0d
-			shape: "rsquare"
 			description: ["Allows you to double jump, similar to the Terraria item"]
 			id: "3121D591D3807584"
 			tasks: [{
@@ -407,7 +383,6 @@
 		{
 			x: -3.0d
 			y: -1.0d
-			shape: "rsquare"
 			description: ["Grants temporary fire resistance when touching lava/fire"]
 			id: "60B9F9AD8F49371D"
 			tasks: [{
@@ -424,7 +399,6 @@
 		{
 			x: -1.5d
 			y: -1.0d
-			shape: "rsquare"
 			description: ["Reduces the time of debuffs"]
 			id: "05A39ED901BC6569"
 			tasks: [{
@@ -441,12 +415,7 @@
 		{
 			x: 0.0d
 			y: -1.0d
-			shape: "rsquare"
-			description: [
-				"Attracts dropped items to the wearer"
-				""
-				"If you prefer this over the &aKibe&r variant, there is a &d1:1 recipe&r for it."
-			]
+			description: ["Attracts dropped items to the wearer"]
 			id: "10CDACBCA03AEDF7"
 			tasks: [{
 				id: "1FEAD956C8A38974"
@@ -462,7 +431,6 @@
 		{
 			x: 1.5d
 			y: -1.0d
-			shape: "rsquare"
 			description: ["Grants around 10 extra health (5 hearts)"]
 			id: "29491A4A65DEDCDC"
 			tasks: [{
@@ -479,7 +447,6 @@
 		{
 			x: 3.0d
 			y: -1.0d
-			shape: "rsquare"
 			description: ["Press CTRL while airborn to perform a short and slow glide"]
 			id: "4CCAD1EBB977DF2E"
 			tasks: [{
@@ -496,7 +463,6 @@
 		{
 			x: -4.5d
 			y: 0.5d
-			shape: "rsquare"
 			description: ["Increases the wearers mining speed and allows the wearer to break blocks like stone with their fist"]
 			id: "0424F3DCA7620F49"
 			tasks: [{
@@ -513,7 +479,6 @@
 		{
 			x: -3.0d
 			y: 0.5d
-			shape: "rsquare"
 			description: ["Increases the wearer's attack speed"]
 			id: "7940D8A4ECBD6541"
 			tasks: [{
@@ -530,7 +495,6 @@
 		{
 			x: -1.5d
 			y: 0.5d
-			shape: "rsquare"
 			description: ["Increases the damage dealt by the wearer"]
 			id: "72564111D0768098"
 			tasks: [{
@@ -547,7 +511,6 @@
 		{
 			x: 0.0d
 			y: 0.5d
-			shape: "rsquare"
 			description: ["Causes the wearer's attacks to set the target on fire"]
 			id: "13449219998C54E1"
 			tasks: [{
@@ -564,7 +527,6 @@
 		{
 			x: 1.5d
 			y: 0.5d
-			shape: "rsquare"
 			description: ["Increases knockback from attacks"]
 			id: "136F140D9A3ED036"
 			tasks: [{
@@ -581,7 +543,6 @@
 		{
 			x: 3.0d
 			y: 0.5d
-			shape: "rsquare"
 			description: ["The wearer slightly heals from attacks"]
 			id: "51A4E097156A6DC1"
 			tasks: [{
@@ -598,7 +559,6 @@
 		{
 			x: 4.5d
 			y: 0.5d
-			shape: "rsquare"
 			description: ["Increases experience dropped by mobs"]
 			id: "4FDAFBD64AA710A1"
 			tasks: [{
@@ -615,7 +575,6 @@
 		{
 			x: -4.5d
 			y: 2.0d
-			shape: "rsquare"
 			description: ["The wearer can sprint on water"]
 			id: "5ABC7CE1A9B9FB7C"
 			tasks: [{
@@ -632,7 +591,6 @@
 		{
 			x: -3.0d
 			y: 2.0d
-			shape: "rsquare"
 			description: ["Increases wearer's jump height and negates all fall damage"]
 			id: "2ED49410115A9FDC"
 			tasks: [{
@@ -649,7 +607,6 @@
 		{
 			x: -1.5d
 			y: 2.0d
-			shape: "rsquare"
 			description: ["Creepers will actively avoid the wearer"]
 			id: "632F1D52317286A8"
 			tasks: [{
@@ -666,7 +623,6 @@
 		{
 			x: 0.0d
 			y: 2.0d
-			shape: "rsquare"
 			description: ["Drastically increases the wearer's sprint speed and allows for auto-step"]
 			id: "7362AE3D474FF6E1"
 			tasks: [{
@@ -683,7 +639,6 @@
 		{
 			x: 1.5d
 			y: 2.0d
-			shape: "rsquare"
 			description: ["The wearer cannot be knocked back"]
 			id: "17C488042DB187A3"
 			tasks: [{
@@ -700,7 +655,6 @@
 		{
 			x: 3.0d
 			y: 2.0d
-			shape: "rsquare"
 			description: ["Increases the wearer's swim speed"]
 			id: "2F8EAC597AB7E760"
 			tasks: [{
@@ -717,7 +671,6 @@
 		{
 			x: 1.5d
 			y: -4.0d
-			shape: "rsquare"
 			description: ["Infinite comedy"]
 			id: "250E32D632A506B2"
 			tasks: [{
