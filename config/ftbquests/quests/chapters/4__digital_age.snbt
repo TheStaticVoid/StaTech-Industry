@@ -1314,18 +1314,6 @@
 			id: "528CD35EBF5D20F0"
 			tasks: [
 				{
-					id: "495520537A110001"
-					type: "item"
-					title: "Any AE2 Crafting Storage"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "kubejs:crafting_storage"
-						}
-					}
-				}
-				{
 					id: "2BDEB8659DA7243F"
 					type: "item"
 					item: "ae2:crafting_accelerator"
@@ -1334,6 +1322,20 @@
 					id: "2437CF8D5C1FEC51"
 					type: "item"
 					item: "ae2:crafting_monitor"
+				}
+				{
+					id: "1E850C66619521E9"
+					type: "item"
+					title: "Any #kubejs:crafting_storage"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "kubejs:crafting_storage"
+						}
+					}
+					match_nbt: false
+					weak_nbt_match: true
 				}
 			]
 			rewards: [
@@ -3797,7 +3799,7 @@
 			y: 2.5d
 			shape: "square"
 			description: [
-				"&dTungsten&r is an incredibly tough material that you will be needing moving forward. Due to its special characteristics, it can't be smelted in normal means and will need to be processed through an Implosion Chamber in order to get a decent amount."
+				"&dTungsten&r is an incredibly tough material that you will be needing moving forward. Due to its special characteristics, it can't be smelted in normal means and will need to be processed through an &2Implosion Compressor&r in order to get a decent amount."
 				""
 				"To get &dTungsten Dust&r, you will first need to &eMacerate&r &dTungsten Ore&r, which you get from the &eElectric Quarry&r or solid &dUU-Matter&r, and then &eMacerate&r the &dRaw Tungsten&r into dust."
 			]
