@@ -121,6 +121,7 @@ REIEvents.removeCategories(e => {
     let tf = (id) => `twilightforest:${id}`;
     const REMOVED_CAT = [
         'minecraft:plugins/tag',
+        astra('compressor'),
         tf('uncrafting'),
         tr('alloy_smelter'),
         tr('assembling_machine'),

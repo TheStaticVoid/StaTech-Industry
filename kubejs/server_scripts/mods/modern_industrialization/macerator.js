@@ -62,29 +62,6 @@ ServerEvents.recipes(e => {
         ]   
     );
 
-    // -- DESH DUST -- //
-    macerator(
-        st('desh_dust'),
-        2,
-        100,
-        [ { amount: 1, tag: 'c:desh_ingots' } ],
-        [ { amount: 1, item: mi('desh_dust') } ]
-    );
-    macerator(
-        st('desh_dust_alt'),
-        2,
-        100,
-        [ { amount: 1, tag: 'c:desh_plates' } ],
-        [ { amount: 1, item: mi('desh_dust') } ]
-    );
-    macerator(
-        st('desh_tiny_dust'),
-        2,
-        100,
-        [ { amount: 1, tag: 'c:desh_nuggets' } ],
-        [ { amount: 1, item: mi('desh_tiny_dust') } ]
-    );
-
     // -- RAW PLATINUM FROM SHELDONITE ORE -- //
     macerator(
         st('raw_platinum'),

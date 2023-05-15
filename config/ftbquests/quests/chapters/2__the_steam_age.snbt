@@ -3286,6 +3286,31 @@
 				}
 			]
 		}
+		{
+			x: 22.0d
+			y: 13.0d
+			description: ["Putting a &bZinc Drill&r in a &aSteam Quarry&r is a good way to get various types of blocks from the &eCreate&r mod. Most notably the &dstone variants&r, &aandesite&r, and &2zinc ores&r!"]
+			dependencies: ["1F5ACBB3A3D021B3"]
+			id: "6B1392D014BAED81"
+			tasks: [{
+				id: "7331905DCAAE5C11"
+				type: "item"
+				item: "modern_industrialization:zinc_drill"
+			}]
+			rewards: [
+				{
+					id: "5AEAD21C49A4326D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "6F00445E9C543BCD"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }

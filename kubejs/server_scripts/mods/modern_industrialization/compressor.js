@@ -8,6 +8,9 @@ ServerEvents.recipes(e => {
     const DELETED_RECIPE = [
         mi('materials/diamond/compressor/main'),
         mi('materials/emerald/compressor/main'),
+        mi('materials/tungstensteel/compressor/main'),
+        mi('compat/techreborn/compressor/_c_zinc_ingots_to_techreborn_zinc_plate'),
+        mi('compressor/calorite_ingot_to_plate'),
         mi('vanilla_recipes/compressor/paper_with_sugarcane')
     ];
     DELETED_RECIPE.forEach(id => e.remove({id: id}));
@@ -91,24 +94,6 @@ ServerEvents.recipes(e => {
         [
             { amount: 1, item: tr('lazurite_plate') }
         ]
-    );
-
-    // -- CALORITE CURVED PLATE -- //
-    compressor(
-        st('calorite_curved_plate'),
-        2,
-        100,
-        [ { amount: 1, tag: 'c:calorite_plates' } ],
-        [ { amount: 1, item: mi('calorite_curved_plate') } ]
-    );
-
-    // -- TUNGSTENSTEEL CURVED PLATE -- //
-    compressor(
-        st('tungstensteel_curved_plate'),
-        2,
-        100,
-        [ { amount: 1, tag: 'c:tungstensteel_plates' } ],
-        [ { amount: 1, item: mi('tungstensteel_curved_plate') } ]
     );
 
     // -- PAPER -- //
