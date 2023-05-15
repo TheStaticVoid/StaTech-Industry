@@ -4,7 +4,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
 
     // -- SPACE PROBE -- //
-    e.shaped(kjs('space_probe'), [
+    e.shaped('4x ' + kjs('space_probe'), [
         'FCD',
         'TMC',
         'ETF'
