@@ -282,30 +282,6 @@
 			]
 		}
 		{
-			x: 0.0d
-			y: -1.0d
-			dependencies: ["2FDA67B4920D335D"]
-			id: "18A5221397607F68"
-			tasks: [{
-				id: "003B87D6A0BE31DA"
-				type: "item"
-				item: "techreborn:quantum_solar_panel"
-			}]
-			rewards: [
-				{
-					id: "02A80DDD065131BB"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1415984687807285627L
-				}
-				{
-					id: "0DF39CACD174BD2A"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
 			x: 4.0d
 			y: 11.0d
 			shape: "square"

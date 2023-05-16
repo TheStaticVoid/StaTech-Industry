@@ -212,32 +212,6 @@
 			]
 		}
 		{
-			x: 0.5d
-			y: -3.0d
-			shape: "rsquare"
-			description: ["With &bTurbo Machine Hulls&r you can now create the next tier of solar. These will passively generate 48 EU/t during the day and 8 EU/t at night (due to &dmagic&r I suppose)."]
-			dependencies: ["3F4A396DD273A543"]
-			id: "760AEF21E6403F48"
-			tasks: [{
-				id: "19653F8AC2A51DA6"
-				type: "item"
-				item: "techreborn:industrial_solar_panel"
-			}]
-			rewards: [
-				{
-					id: "31DCD07FDC9DF744"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4654133894100259948L
-				}
-				{
-					id: "3DECA5569F034AC9"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
 			x: -5.0d
 			y: 0.0d
 			shape: "square"
@@ -382,19 +356,11 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [
-				{
-					id: "3E23E0FC36068280"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4654133894100259948L
-				}
-				{
-					id: "2B0AC3263E4C546A"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "2B0AC3263E4C546A"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Route B"
@@ -409,19 +375,11 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [
-				{
-					id: "7F2FEC63CBFB5EA6"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4654133894100259948L
-				}
-				{
-					id: "6DA5465AD0198CE3"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "6DA5465AD0198CE3"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "Route C"
@@ -436,19 +394,11 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [
-				{
-					id: "346F35F9AD6737BE"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4654133894100259948L
-				}
-				{
-					id: "78A66B941F2771AA"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "78A66B941F2771AA"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: -5.0d
@@ -900,19 +850,11 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [
-				{
-					id: "6B12FED24848CBB1"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4654133894100259948L
-				}
-				{
-					id: "19E18C4EA141A484"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "19E18C4EA141A484"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			title: "AE2 Processors"
@@ -2267,19 +2209,11 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [
-				{
-					id: "38157C5DC2BC02A7"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4654133894100259948L
-				}
-				{
-					id: "377F87BC5B3707A9"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "377F87BC5B3707A9"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: -2.0d
@@ -4519,6 +4453,63 @@
 				}
 				{
 					id: "65F7C4D819457D85"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			shape: "rsquare"
+			description: ["With the &bTurbo Machine Hulls&r you now have access to &aUltimate Solar Panels&r. This will generate 48 EU/t during the day, and 8 EU/t at night. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
+			dependencies: ["3F4A396DD273A543"]
+			id: "786ACF473177AA23"
+			tasks: [{
+				id: "6F8D42F55B4F5EF4"
+				type: "item"
+				item: "techreborn:ultimate_solar_panel"
+			}]
+			rewards: [
+				{
+					id: "1FBB592E1EF8FEE4"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "2EB8D3B2014AA1F6"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: 11.0d
+			description: [
+				"With your newly acquired &cCalorite&r, you can now craft the &eAd Astra&r &aSolar Panels&r. These panels generate power during the daytime, with their output &dvarying based on where it's placed&r. If placed in &bspace&r, it will generate more than if it was placed on a &2planet&r."
+				""
+				"For example, if placed on &2Earth&r it generates: &d120 EU/t&r"
+				""
+				"If placed in &cMercury Orbit&r it generates: &d168 EU/t&r"
+			]
+			dependencies: ["488543DD1EEAF483"]
+			id: "7FC9D0955828CDFC"
+			tasks: [{
+				id: "4BABEEA2630D62A4"
+				type: "item"
+				item: "ad_astra:solar_panel"
+			}]
+			rewards: [
+				{
+					id: "150BAED259A114BB"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4654133894100259948L
+				}
+				{
+					id: "4778C6C2ED931AE1"
 					type: "xp"
 					xp: 10
 				}

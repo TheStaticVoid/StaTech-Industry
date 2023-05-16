@@ -111,7 +111,7 @@
 			]
 		}
 		{
-			x: 0.5d
+			x: 0.0d
 			y: -2.0d
 			shape: "rsquare"
 			description: ["The &aEV Tier Storage Unit&r. It can store a little more than 45 million EU. "]
@@ -131,32 +131,6 @@
 				}
 				{
 					id: "6EDBAC5F33D8B779"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: -0.5d
-			y: -2.0d
-			shape: "rsquare"
-			description: ["With the &bHighly Advanced Machine Hulls&r you now have access to &aUltimate Solar Panels&r. This will generate 192 EU/t during the day, and 16 EU/t at night. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
-			dependencies: ["2F0042673C0E3910"]
-			id: "786ACF473177AA23"
-			tasks: [{
-				id: "6F8D42F55B4F5EF4"
-				type: "item"
-				item: "techreborn:ultimate_solar_panel"
-			}]
-			rewards: [
-				{
-					id: "1BF6E647E2C9DDEF"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1098950661447874341L
-				}
-				{
-					id: "14E351334FED97B9"
 					type: "xp"
 					xp: 10
 				}
@@ -443,7 +417,7 @@
 		}
 		{
 			title: "EV Cables"
-			x: 1.5d
+			x: 1.0d
 			y: -2.0d
 			shape: "square"
 			description: [
@@ -946,7 +920,7 @@
 			]
 		}
 		{
-			x: -2.5d
+			x: -2.0d
 			y: -4.0d
 			shape: "rsquare"
 			description: ["Running out of power? Well the &bDragon Egg Energy Siphon&r won't save you there, but it can be used to passively generate 4096 EU/t."]
@@ -972,7 +946,7 @@
 			]
 		}
 		{
-			x: -1.5d
+			x: -1.0d
 			y: -2.0d
 			shape: "rsquare"
 			description: ["The &bLapotronic Energy Orb&r is an upgrade to the &aLapotron Crystal&r. It has a 100M energy storage."]
@@ -998,7 +972,7 @@
 			]
 		}
 		{
-			x: -1.5d
+			x: -1.0d
 			y: -4.0d
 			shape: "rsquare"
 			description: ["The &bLapotronic Orbpack&r is the wearable version of the &aLapotronic Energy Orb&r."]
@@ -1024,7 +998,7 @@
 			]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: -5.5d
 			description: [
 				"The &bInterdimensional Storage Unit&r can be used to transfer energy between &ctwo points instantaneously&r."
@@ -1055,7 +1029,7 @@
 			]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: -4.0d
 			description: [
 				"The &bAdjustable SU&r can be used to fine tune the flow of power leading out of it. "
@@ -1117,7 +1091,7 @@
 		{
 			title: "The Quantum Suit"
 			x: 5.5d
-			y: 7.0d
+			y: 6.5d
 			description: [
 				"The &eTechReborn&r &bQuantum Suit&r is the second best armor in the entire game (and arguably better than the latter &aInfinity Suit&r)."
 				""
@@ -1156,6 +1130,31 @@
 				}
 				{
 					id: "11277526046491E6"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 7.5d
+			description: ["With the &aQuantum Circuit&r you now have access to the &2Quantum Solar Panel&r. This bad boy can generate &d512 EU/t&r during the day and &d32 EU/t&r at night. While not as much as you can generate elsewhere, it's still a decent amount!"]
+			dependencies: ["23D9328B5F627E65"]
+			id: "18A5221397607F68"
+			tasks: [{
+				id: "003B87D6A0BE31DA"
+				type: "item"
+				item: "techreborn:quantum_solar_panel"
+			}]
+			rewards: [
+				{
+					id: "2FA716AB1EE71E67"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4105254141913357569L
+				}
+				{
+					id: "0688454173589DA0"
 					type: "xp"
 					xp: 10
 				}

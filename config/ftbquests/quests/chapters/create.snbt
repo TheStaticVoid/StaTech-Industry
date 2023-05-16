@@ -1,7 +1,7 @@
 {
 	id: "0B7DC5CF240DF210"
 	group: "135E7B9D4273E5DD"
-	order_index: 0
+	order_index: 1
 	filename: "create"
 	title: "&3Create"
 	icon: "create:wrench"
@@ -12,6 +12,7 @@
 		{
 			x: 0.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"&bAndesite Alloy&r is the basis of the &eCreate&r mod. Don't make too much at the beginning, as you will unlock a more efficient recipe once you have a &aMechanical Mixer&r and &dBasin&r."
 				""
@@ -42,7 +43,7 @@
 			title: "Shafts"
 			x: 3.0d
 			y: 0.0d
-			shape: "rsquare"
+			shape: "square"
 			description: ["&bShafts&r are one of the most important components in &eCreate&r, they can transfer &arotational force&r over distance and are a key component in &ecogs&r and other &6machines&r."]
 			dependencies: ["632520CC26B43DD5"]
 			id: "3239CF4A9CF033B1"
@@ -69,7 +70,7 @@
 			title: "Cogs"
 			x: 5.0d
 			y: 0.0d
-			shape: "rsquare"
+			shape: "square"
 			description: [
 				"&bCogs&r make up the basis of how you will be delivering &drotational force&r to your &eCreate&r machines."
 				""
@@ -524,6 +525,7 @@
 			title: "Mixer \\& Basin"
 			x: -9.0d
 			y: -2.0d
+			shape: "square"
 			description: ["The &bMechanical Mixer&r and &aBasin&r will allow you to mix certain dusts and ingots. If you've followed normal &eChapter&r progression, you will have made this to access &eModern Industrialization&r."]
 			dependencies: ["51356454DB10752D"]
 			id: "27E1D6ADECEF5F5C"
@@ -616,6 +618,7 @@
 		{
 			x: -6.5d
 			y: 0.0d
+			shape: "square"
 			description: ["&bAndesite Casings&r are made by right-clicking a stripped log with an &aAndesite Alloy&r. These are the basis of a lot of machines in &eCreate&r."]
 			dependencies: ["632520CC26B43DD5"]
 			id: "4F4C5DEE88EABE32"
@@ -705,6 +708,7 @@
 		{
 			x: -6.5d
 			y: -2.0d
+			shape: "square"
 			description: [
 				"The &bMechanical Press&r when provided rotational force will transform &aingots&r into &cplates&r. "
 				""
@@ -815,6 +819,7 @@
 			title: "Create Mechanics"
 			x: 0.0d
 			y: -2.0d
+			shape: "square"
 			description: [
 				"While briefly explained in the first chapter, &eCreate&r has some important mechanics that need to be understood to get the most out of the mod."
 				""
@@ -846,11 +851,14 @@
 		{
 			x: -15.5d
 			y: 2.5d
+			shape: "square"
 			description: [
 				"While most of &eCreate&r is not gated by any other mod, paper is gated behind the &6Mixer&r from &eModern Industrialization&r. You will need that before you can make &bSand Paper&r and &dPolished Rose Quartz&r!"
 				""
 				"To use, have the &bSand Paper&r either in your main or offhand with a &dRose Quartz&r in the other and hold right-click. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["632520CC26B43DD5"]
 			id: "08C156EC82878D36"
 			tasks: [{
 				id: "5C8965F0A211F693"
@@ -880,6 +888,7 @@
 		{
 			x: -16.5d
 			y: 4.0d
+			shape: "square"
 			description: ["&dPolished Rose Quartz&r is an important material for making &bElectron Tubes&r, which are then used for more advanced &eCreate&r machines."]
 			dependencies: ["08C156EC82878D36"]
 			id: "2B1123DC479F00CB"
@@ -931,6 +940,7 @@
 			title: "Brass"
 			x: -13.0d
 			y: -2.0d
+			shape: "square"
 			subtitle: "Instruments not included"
 			description: [
 				"Mixing &aCopper&r and &bZinc&r in a heated &eMechanical Mixer&r will create &6Brass&r. "
@@ -961,6 +971,7 @@
 		{
 			x: -10.0d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"The &bPrecision Mechanism&r is an important crafting material for high-end &eCreate&r machines, most notably the &aSpeed Controller&r and &dRobot Arm&r."
 				""
@@ -990,6 +1001,7 @@
 		{
 			x: -13.0d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"&bDeployers&r can be used to automate placing, attacking, or using blocks, items, etc. "
 				""
@@ -1022,6 +1034,7 @@
 		{
 			x: -16.5d
 			y: -2.0d
+			shape: "square"
 			dependencies: ["029C56FD6F1A36F0"]
 			id: "38F45285404934C9"
 			tasks: [{
@@ -1216,6 +1229,7 @@
 		{
 			x: -16.5d
 			y: 0.75d
+			shape: "square"
 			description: [
 				"The &bMechanical Crafter&r allows for automating the crafting of items. Some items can only be crafted with the &bMechanical Crafter&r."
 				""
@@ -1656,6 +1670,7 @@
 			title: "Sequenced Crafting"
 			x: -11.5d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"Some materials in &eCreate&r need to be processed in a specific order. In &dREI&r you can see in which order an item needs to have machines interact with it to produce the desired outcome."
 				""
@@ -1723,6 +1738,8 @@
 			x: 0.0d
 			y: -7.0d
 			description: ["&bCopper Casings&r are a basic casing mainly used in &9fluid&r related items in &eCreate&r."]
+			hide_dependency_lines: true
+			dependencies: ["632520CC26B43DD5"]
 			id: "7D701BCCC5BD6418"
 			tasks: [{
 				id: "636E5C6033D98419"
@@ -2048,6 +2065,7 @@
 			title: "Blaze Burners"
 			x: -11.0d
 			y: -2.0d
+			shape: "square"
 			description: [
 				"The &bEmpty Blaze Burner&r can be used on &cBlazes&r in the &4Nether&r to capture them. Captured &cBlazes&r can be used to heat &aBasins&r for certain recipes."
 				""
@@ -2479,6 +2497,7 @@
 		{
 			x: 7.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"The &bWater Wheel&r is the simplest form of generating free &arotational force&r. The rotation of the &bWater Wheel&r can be changed by shift-clicking when placing instead."
 				""
