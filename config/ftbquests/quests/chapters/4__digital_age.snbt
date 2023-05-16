@@ -1298,6 +1298,8 @@
 			shape: "rsquare"
 			subtitle: "Deep Thought"
 			description: [
+				"&cNote&r: This quest requires a &21k Crafting Storage&r specifically. This is due to a limit with item tags for some reason, hopefully this will be fixed in the future!"
+				""
 				"The &dCrafting CPU&r manages a single auto crafting task from start to finsih, and is built out of various crafting units."
 				""
 				"To be a valid crafting CPU, two rules must be met:"
@@ -1324,18 +1326,9 @@
 					item: "ae2:crafting_monitor"
 				}
 				{
-					id: "1E850C66619521E9"
+					id: "3CB380ABF3396BE9"
 					type: "item"
-					title: "Any #kubejs:crafting_storage"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "kubejs:crafting_storage"
-						}
-					}
-					match_nbt: false
-					weak_nbt_match: true
+					item: "ae2:1k_crafting_storage"
 				}
 			]
 			rewards: [
@@ -3051,7 +3044,7 @@
 			]
 		}
 		{
-			x: 4.5d
+			x: 4.0d
 			y: 13.5d
 			shape: "rsquare"
 			description: [
