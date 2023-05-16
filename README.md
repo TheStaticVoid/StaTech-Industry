@@ -7,8 +7,6 @@ This modpack includes the following mods no longer available on CurseForge:
 
 - [Iris](https://github.com/IrisShaders/Iris) - Licensed under LGPL. No changes made from source repo.
 
-- [Hephaestus](https://github.com/Argent-Matter/TinkersConstruct) - Licensed under MIT, allowing for redistribution in this pack.
-
 
 This modpack also includes the following resources. Do not report any issues you might experience with these to their developers, but rather to this mod's Discord.
 
