@@ -42,6 +42,7 @@
 			title: "The Twilight Zone"
 			x: 0.0d
 			y: 1.5d
+			shape: "square"
 			description: ["Welcome to &aThe Twilight Forest&r. For you modded veterans out there, you'll know what to expect, however for anyone new, you're in for a treat. &eFollow the quest progression&r and enjoy your stay! Hope you're well equipped for the &dunknown dangers&r that lurk here."]
 			dependencies: ["44FFCBCF6580B923"]
 			hide: true
@@ -70,6 +71,7 @@
 		{
 			x: 2.0d
 			y: 1.5d
+			shape: "square"
 			description: ["Your first &ctarget&r is the &aNaga&r, which lives in the &ecourtyard of the forest&r. You will need the &2Naga Scales&r to enter the &cLich's Tower&r."]
 			dependencies: ["5A0E7DEEA70E9667"]
 			hide: true
@@ -97,6 +99,7 @@
 		{
 			x: 4.0d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"Atop the &egrand tower&r is the &cLich&r. While shielded &ehe is unable to be damaged&r, however his &bown attacks may be lethal to him&r."
 				""
@@ -290,6 +293,7 @@
 		{
 			x: 7.0d
 			y: 4.5d
+			shape: "square"
 			description: ["Deep in the &bSnowy Forest&r you will find the &aLair of the Yeti&r. &aYetis&r can pick you up and throw you to deal significant damage, but the &eFur of the Alpha Yeti&r will be required to advanced into the &3glacial area&r of the &bSnowy Forest&r."]
 			dependencies: ["723C224E6D6E12E4"]
 			hide: true
@@ -407,6 +411,7 @@
 		{
 			x: 10.0d
 			y: 4.5d
+			shape: "square"
 			description: [
 				"Ascend the &bGlacial Peaks&r to find the &aAurora Palace&r the lair of the &eSnow Queen&r. She awaits you at the &2highest point&r."
 				""
@@ -503,6 +508,7 @@
 		{
 			x: 7.0d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"The &cCarmintine&r contraptions of the &eUr-Ghast Tower&r will not obey you. You must &aearn the ability to control them&r. Travel into the &2Dark Forest&r and find a dungeon slightly exposed from the ground. Place a &3Trophy&r of a defeated boss on the pedestal to enter."
 				""
@@ -534,6 +540,7 @@
 		{
 			x: 10.0d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"Ascend the grand tower to confront the &cUr-Ghast&r. To aid in defeating it, use the &eGhast Traps&r to pull the &cUr-Ghast&r out of the sky allowing you to do &elots of damage to it&r. "
 				""
@@ -617,6 +624,7 @@
 		{
 			x: 7.0d
 			y: -1.5d
+			shape: "square"
 			description: [
 				"In the &aswamp&r you will find a mound that will lead you down into a &blabyrinth&r. Traverse these dark corridors and &cslay&r the &eMinotaur&r for your reward."
 				""
@@ -680,6 +688,7 @@
 		{
 			x: 10.0d
 			y: -1.5d
+			shape: "square"
 			description: [
 				"With the &aBeef Stroganoff&r protecting you from the &cheat&r of the &4Fire Swamp&r, it's time to venture in and slay the next beast on your journey: &bThe Hydra&r."
 				""
@@ -738,6 +747,7 @@
 			title: "Giant's Tools"
 			x: 15.5d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"Using the &abeanstalk&r to ascend to the heavens, you find a cloud populated by &bGiants&r. Slay these &bGiants&r for their oversized tools, in particular the &eGiant's Pickaxe&r."
 				""
@@ -788,6 +798,7 @@
 		{
 			x: 13.5d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"Once you have successfully slain &bThe Hydra&r, &cThe Ur-Ghast&r, and &aThe Snow Queen&r, the &eacid rains&r of the &dHighlands&r will cease, allowing you to finally enter. "
 				""
@@ -823,6 +834,7 @@
 		{
 			x: 17.5d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"Inside the &2Giant&r's &dObsidian&r vault you will find &eThe Lamp of Cinders&r, which has the power to burn away the pesky &cthorns&r in the &dHighlands&r."
 				""
@@ -861,6 +873,7 @@
 			title: "The End?"
 			x: 19.5d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"And that's it! Sorry to disappoint, but this &emarks the end&r of progression in &dThe Twilight Forest&r at least for now. "
 				""
