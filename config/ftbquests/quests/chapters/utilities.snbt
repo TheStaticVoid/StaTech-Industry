@@ -218,10 +218,10 @@
 						Count: 1b
 						tag: {
 							state: {
-								data: { }
 								state: {
 									Name: "minecraft:air"
 								}
+								data: { }
 								serializer: "buildinggadgets:dummy_serializer"
 							}
 							energy: 500000.0d
@@ -236,10 +236,10 @@
 						Count: 1b
 						tag: {
 							state: {
-								data: { }
 								state: {
 									Name: "minecraft:air"
 								}
+								data: { }
 								serializer: "buildinggadgets:dummy_serializer"
 							}
 							energy: 500000.0d
@@ -253,6 +253,7 @@
 						id: "buildinggadgets:gadget_copy_paste"
 						Count: 1b
 						tag: {
+							energy: 500000.0d
 							"buildinggadgets:template_key": {
 								template_id: [I;
 									-1638511729
@@ -261,7 +262,6 @@
 									-1770359759
 								]
 							}
-							energy: 500000.0d
 						}
 					}
 				}
@@ -651,10 +651,10 @@
 					tag: {
 						BlockEntityTag: {
 							Items: [ ]
-							x: -198
+							y: 64
 							id: "kibe:cooler"
 							z: 126
-							y: 64
+							x: -198
 						}
 					}
 				}

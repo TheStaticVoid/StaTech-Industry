@@ -46,23 +46,23 @@
 			description: [
 				"Hello and welcome to &aStaTech Industry&f!"
 				""
-				"This &aquest book&f will be your guide through the entirety of the pack. Progression is broken down into &achapters&f, you must complete all the required quests in one chapter to advance to the next."
+				"This &aquest book&f will be your guide through the entirety of the pack. &6Progression&r is broken down into &2chapters&f, you must complete all the &drequired quests&r in one chapter to advance to the next."
 				""
-				"Don't worry about losing the &bQuest Book&f. You can access the quests by clicking the &bQuest Book&f in your inventory or pressing &eF4"
+				"Don't worry about losing the &bQuest Book&f. You can access the quests by clicking the &bQuest Book&f in your inventory or pressing &eF4&r!"
 				""
 				"Completing quests will reward you with &bXP and items&f, so it's worth following through your journey."
 				""
-				"The main focus of this pack is the mod &aModern Industrialization&f, a &bGregTech&f-like mod that will have you building complex machine lines and lots of automation to complete."
+				"The main focus of this pack is the mod &aModern Industrialization&f, a &2GregTech&f-like mod that will have you building complex machine lines and lots of automation to complete."
 				""
-				"Don't be afraid of the mention of &bGregTech&f, as &aMI&f has a lot of changes to make playing through it much easier, such as:"
+				"Don't be afraid of the mention of &2GregTech&f, as &aMI&f has a lot of changes to make playing through it much easier, such as:"
 				""
-				"- Removal of individual tiered machines, you can choose to &aoverclock&f machine speeds as you progress"
+				"- Removal of &6individual tiered machines&r, you can choose to &aoverclock&f machine speeds as you progress"
 				""
-				"- Removal of the half-dozen tools required in early crafting"
+				"- Removal of the &chalf-dozen tedious tools&r in &aearly game crafting&r"
 				""
-				"- A powerful pipe-system that you get access to very early"
+				"- A powerful &bpipe-system&r that you get access to very early"
 				""
-				"- Ways of generating resources without having to continuously move miners"
+				"- Ways of &3generating resources&r without having to leave your base!"
 			]
 			size: 2.0d
 			id: "2174585D87F83C89"
@@ -84,9 +84,9 @@
 			y: -1.5d
 			shape: "rsquare"
 			description: [
-				"&eREI&f, or &eRoughlyEnoughItems&f, is the included item search mod in the pack. Knowing how to use &eREI&f will be key in the completion of the pack."
+				"&eREI&f, or &eRoughlyEnoughItems&f, is the included item search mod in the pack. Knowing how to use &eREI&f will be key in the completion of the pack. For those experienced with &dJEI&r or &dJustEnoughItems&r, you will find these two &2very familiar&r."
 				""
-				"You can use the bar at the bottom of your inventory to search &eREI&f. Additionally, hovering over an item in your inventory and pressing 'R' will display &bhow to craft&f said item. You can alternatively press 'U' to &bsee all the uses&f of an item in your inventory."
+				"You can use the bar at the bottom of your inventory to &asearch&r &eREI&f. Additionally, hovering over an item in your inventory and pressing '&6R&r' will display &2how to craft&f said item. You can alternatively press '&6U&r' to &3see all the uses&f of an item in your inventory."
 				"When hovering items in the &eREI&f pages to the right, you can use left-click to view recipes and right-click to view uses instead."
 				""
 				"Knowing how to do some more complex searches will also be helpful."
@@ -112,7 +112,11 @@
 			x: -2.0d
 			y: -0.5d
 			shape: "rsquare"
-			description: ["Every &eten&f unique foods eaten will grant you an additional &cheart&f!"]
+			description: [
+				"This pack includes the mod &eSpice of Fabric&r. Originally I was going to mimic &dGregTech: New Horizons&r' food system, requiring you to change up what you eat. &cBut that's just mean...&r. So instead the mod rewards you for &2trying different foods&r!"
+				""
+				"Every &eten unique foods&r eaten, you will be granted &3an additional heart&r!"
+			]
 			dependencies: ["2174585D87F83C89"]
 			id: "42DBEFEFCE44F5BB"
 			tasks: [{
@@ -133,7 +137,7 @@
 			y: -2.5d
 			shape: "rsquare"
 			description: [
-				"Early game may seem easy enough to brute force, but once you start getting to the electric and midgame chapters of this modpack you're going to run into a lot of problems if you didn't automate anything. "
+				"Early game may seem easy enough to &cbrute force&r, but once you start getting to the &eelectric and midgame chapters&r of this modpack you're going to run into a lot of &cproblems if you didn't automate anything&r. "
 				""
 				"In general, if you find a way to &aautomate producing something&f, you should do it."
 			]
@@ -157,7 +161,7 @@
 			y: -0.5d
 			shape: "rsquare"
 			subtitle: "It's dangerous to go alone"
-			description: ["The caves and night in this world aren't like you remember in vanilla. It gets dark, &cvery dark&f. You can circumvent the darkness by placing / holding a torch in your offhand. Just make sure to light up your base, you never know what creepy crawlies may lurk around."]
+			description: ["The caves and night in this world &caren't like you remember&r in vanilla. It gets dark, &c&overy dark&r&r. You can &6circumvent the darkness&r by placing / holding a torch in your &aoffhand&r. Just make sure to light up your base, you never know what &ccreepy crawlies&r may lurk around."]
 			dependencies: ["2174585D87F83C89"]
 			id: "525523B87D97A371"
 			tasks: [{
@@ -186,9 +190,9 @@
 			y: 0.5d
 			shape: "rsquare"
 			description: [
-				"Quests are separated between &bRequired&f and &eOptional&f. &eOptional&f quests have a &acircular border&f, like the other quests in this chapter, while &bRequired&f quests have a &asquare border&f."
+				"In the &eChapters&r, quests are separated between &bRequired&f and &eOptional&f. &eOptional&f quests have a &acircular border&f, while &bRequired&f quests have a &asquare border&f."
 				""
-				"While some quests may be &eOptional&f, it doesn't mean you should overlook them, as they could be important in helping you in your journey!"
+				"To progress, you &cmust&r complete the &bRequired Quests&r, however don't &coverlook&r the &eOptional Quests&r, as they may have important items that will &2help you in your journey&r!"
 			]
 			dependencies: ["2174585D87F83C89"]
 			id: "2A1B2E53413418E1"
@@ -210,7 +214,7 @@
 			y: 0.5d
 			shape: "rsquare"
 			description: [
-				"The mod &aAmplified Nether&f is included in this pack. This makes the &cNether&f extend up to &a192&f blocks instead of the default &a128&f. With this added height brings harder traversal and more dangers."
+				"The mod &aAmplified Nether&f is included in this pack. This makes the &cNether&f extend up to &a256&f blocks instead of the default &a128&f. With this added height brings &charder traversal and more dangers&r."
 				""
 				"Alongside &aAmplified Nether&f, this modpack also includes &cIncendium&f, a mod that adds new structures and biomes to the &cNether&f for you to find and explore."
 			]
@@ -240,7 +244,7 @@
 			y: -1.5d
 			shape: "rsquare"
 			subtitle: "It's dangerous to go alone!"
-			description: ["This modpack includes &aSimply Swords&f and &eBetter Combat&f. Together these overhaul the combat of vanilla Minecraft completely and offer a broad variety of weapons to try out."]
+			description: ["This modpack includes &aSimply Swords&f and &eBetter Combat&f. Together these &6overhaul the combat of vanilla Minecraft completely&r and offer a broad variety of &3weapons&r to try out."]
 			dependencies: ["2174585D87F83C89"]
 			id: "1709043780838C78"
 			tasks: [{
@@ -268,7 +272,7 @@
 			x: 2.0d
 			y: -2.5d
 			shape: "rsquare"
-			description: ["&aOh The Biomes You'll Go&f is included in this pack alongside &eTerralith&f. Together, these world generation mods will vastly improve the landscape as you adventure."]
+			description: ["&aOh The Biomes You'll Go&f is included in this pack alongside &eTerralith&f. Together, these world generation mods will &2vastly improve&r the landscape as you adventure."]
 			dependencies: ["2174585D87F83C89"]
 			id: "571425ED36DA521C"
 			tasks: [{
@@ -291,7 +295,7 @@
 			description: [
 				"This pack includes &eComplimentaryReimagined&f. This is a highly customizable and performance friendly shader that you can enable through &aVideo Settings -> Shader Packs&f."
 				""
-				"Also included is a &aSmooth Font&f resourcepack. If you'd rather have the default Minecraft font, you can disable the resource pack."
+				"Also included is a &aSmooth Font&f resourcepack. It can be enabled in the &6Resource Pack&r menu."
 			]
 			dependencies: ["2174585D87F83C89"]
 			id: "6C661605F1DBEE4D"
@@ -380,7 +384,7 @@
 			x: 2.0d
 			y: 1.5d
 			subtitle: "For all the chest monsters out there"
-			description: ["Do you find yourself dumping items into &echests&r without a care in the world? Well, at the very least you can organize them quickly by pressing '&2p&r' while hovering over their inventory. "]
+			description: ["Do you find yourself &2dumping items&r into &echests&r without a &ecare in the world&r? Well, at the very least you can &6organize&r them quickly by pressing '&2p&r' while hovering over their inventory. "]
 			dependencies: ["2174585D87F83C89"]
 			id: "6496D9E1ADE4B4DD"
 			tasks: [{
