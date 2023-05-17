@@ -256,9 +256,9 @@ ServerEvents.recipes(e => {
     ],
     {
         G: mc('blue_stained_glass_pane'),
-        A: '#c:annealed_copper_ingots',
-        D: mi('digital_circuit'),
-        H: mi('turbo_machine_hull')
+        A: '#c:stainless_steel_ingots',
+        D: mi('electronic_circuit'),
+        H: mi('advanced_machine_hull')
     })
     .id(st('industrial_solar_panel'));
 
@@ -266,14 +266,13 @@ ServerEvents.recipes(e => {
     e.shaped(tr('ultimate_solar_panel'), [
         'GGG',
         'TTT',
-        'PHC'
+        'PHP'
     ],
     {
         G: mc('blue_stained_glass_pane'),
-        T: '#c:titanium_ingots',
-        P: mi('processing_unit'),
-        H: mi('highly_advanced_machine_hull'),
-        C: mi('small_heat_exchanger')
+        T: '#c:annealed_copper_ingots',
+        P: mi('digital_circuit'),
+        H: mi('turbo_machine_hull')
     })
     .id(st('ultimate_solar_panel'));
 
@@ -287,7 +286,7 @@ ServerEvents.recipes(e => {
         G: mc('blue_stained_glass_pane'),
         I: '#c:iridium_ingots',
         Q: mi('quantum_circuit'),
-        H: mi('quantum_machine_hull'),
+        H: mi('highly_advanced_machine_hull'),
         C: mi('large_heat_exchanger')
     })
     .id(st('quantum_solar_panel'));

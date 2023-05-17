@@ -18,7 +18,6 @@ REIEvents.hide('item', e => {
         astra('oil_bucket'),
         astra('oil'),
         astra('water_pump'),
-        astra('solar_panel'),
         astra('astrodux'),
         astra('cable_duct'),
         astra('fluid_pipe_duct'),
@@ -121,7 +120,7 @@ REIEvents.removeCategories(e => {
     let tf = (id) => `twilightforest:${id}`;
     const REMOVED_CAT = [
         'minecraft:plugins/tag',
-        astra('compressor'),
+        'ad_astra:compressor',
         tf('uncrafting'),
         tr('alloy_smelter'),
         tr('assembling_machine'),

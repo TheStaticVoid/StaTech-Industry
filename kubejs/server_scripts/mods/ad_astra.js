@@ -200,4 +200,18 @@ ServerEvents.recipes(e => {
         I: mi('iron_large_plate')
     })
     .id(st('launch_pad'));
+
+    // -- SOLAR PANEL -- //
+    e.shaped(astra('solar_panel'), [
+        'BBB',
+        'CFC',
+        'PDP'
+    ],
+    {
+        B: '#c:blue_glass',
+        C: '#c:calorite_ingots',
+        F: mi('turbo_machine_hull'),
+        P: '#c:desh_plates',
+        D: mi('digital_circuit')
+    });
 });

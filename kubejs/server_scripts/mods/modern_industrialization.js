@@ -177,6 +177,12 @@ ServerEvents.recipes(e => {
     })
     .id(st('zinc_drill'));
 
+    // -- CLEAR FLUID FROM CREATIVE TANK -- //
+    e.shapeless(mi('creative_tank'), mi('creative_tank')).id(st('clear_fluids_from_creative_tank'));
+
+    // -- CLEAR ITEM FROM CREATIVE BARREL -- //
+    e.shapeless(mi('creative_barrel'), mi('creative_barrel')).id(st('clear_items_from_creative_barrel'));
+
     // -- Gravichestplate -- //
     e.shaped(mi('gravichestplate'), [
         'PUP',

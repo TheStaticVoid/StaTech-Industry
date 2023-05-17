@@ -108,7 +108,7 @@ ServerEvents.tags('item', e=> {
         'ae2:256k_crafting_storage'
     ];
 
-    CRAFTING_STORAGE.forEach(id => e.add('kubejs:crafting_storage', id));
+    CRAFTING_STORAGE.forEach(id => { e.add('kubejs:crafting_storage', id) });
 
     // -- REMOVE ENDER DUST -- //
     e.removeAllTagsFrom('ae2:ender_dust');
