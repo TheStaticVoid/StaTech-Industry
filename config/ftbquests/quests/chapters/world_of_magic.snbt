@@ -1,7 +1,7 @@
 {
 	id: "4296CFFF158C9365"
 	group: "135E7B9D4273E5DD"
-	order_index: 3
+	order_index: 4
 	filename: "world_of_magic"
 	title: "&aWorld of Magic&r"
 	icon: "spectrum:enchanter"
@@ -13,6 +13,7 @@
 			title: "A World of Magic"
 			x: 0.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"Welcome to the &dmagic&r chapter. This pack features multiple &dmagic&r mods. Some of the more notable ones are:"
 				"- &aSpectrum&r"
@@ -37,6 +38,7 @@
 			title: "Gemstone Shards"
 			x: 2.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"The beginning of your adventure will require you to find the &aprimary shards&r for &eSpectrum&r. Each gemstone represents an &delemental color&r and a different kind of &anatural force&r."
 				""
@@ -84,6 +86,7 @@
 			title: "The Pigment Pedestal"
 			x: 4.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"The &bPigment Pedestal&r is the block where you will craft most of the recipes in &eSpectrum&r and other magic mods."
 				""
@@ -164,6 +167,7 @@
 			title: "Gemstone Powders"
 			x: 6.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"Most recipes in your &aPedestal&r require &dGemstone Powders&r as a source of magical energy. "
 				""
@@ -289,6 +293,7 @@
 			title: "Your First Craft"
 			x: 8.0d
 			y: 0.0d
+			shape: "square"
 			description: ["To advance, you must get acquanted with the &acrafting process&r. Pick an item you can craft with the &bPedestal&r, input the required &eitems and powders&r and then right-click with a &dPaintbrush&r or apply a &credstone signal&r to start the craft."]
 			dependencies: ["352D2FF3E6003244"]
 			hide: true
@@ -317,6 +322,7 @@
 			title: "CMY Pedestal Variant"
 			x: 10.0d
 			y: 0.0d
+			shape: "square"
 			description: ["Now that you're familiar with the &dcrafting process&r, it's time to upgrade your basic &bPedestal&r into the &aCMY Variant&r. To upgrade the &bPedestal&r, place a &bTopaz&r, &5Amethyst&r, and &eCitrine&r (in that order) in your &bPedestal&r and then start the craft."]
 			dependencies: ["041556DA42FDC137"]
 			hide: true
@@ -346,6 +352,7 @@
 			icon: "spectrum:chiseled_polished_basalt"
 			x: 12.0d
 			y: 0.0d
+			shape: "square"
 			description: [
 				"{image:statech:textures/item/spectrum_pedestal.png width:240 height:135 align:1}"
 				""
@@ -638,6 +645,7 @@
 			title: "A New Ore"
 			x: 13.5d
 			y: 2.5d
+			shape: "square"
 			description: ["You're next goal is to find a &aspecial new ore&r. It's a &eshiny yellow&r and can be found above &9sea-level&r."]
 			dependencies: ["2563B78CFC661CCB"]
 			hide: true
@@ -844,6 +852,7 @@
 		{
 			x: 13.5d
 			y: 5.0d
+			shape: "square"
 			subtitle: "Creating Life"
 			description: [
 				"It always has been the dream of people to create &aartifical life&r. Since you are now dealing with &dmagical gems&r yourself, which seem to have &dmagical powers&r, this should be a piece of cake."
@@ -1083,6 +1092,7 @@
 			y: 4.5d
 			description: ["&cTNT&r can be produced using &dQuitoxic Dust&r, however any &cTNT&r produced this way is &6unstable&r. What does that mean exactly? Well, let's just say you're certain &awhere you want to place your &cTNT&r..."]
 			dependencies: ["03FBCDDEF854A0E3"]
+			hide: true
 			id: "16E8B253BE2B80BB"
 			tasks: [{
 				id: "433CB98E78875C3F"
@@ -1119,6 +1129,7 @@
 			title: "An Organic Material"
 			x: 15.0d
 			y: 5.0d
+			shape: "square"
 			description: ["Freeing your &dmicroorganisms&r near &aorganic&r matter will have them spread into those blocks. Breaking the block that was spread into will provide you a new resource!"]
 			dependencies: ["0F98D6E41DFECDB7"]
 			hide: true
@@ -1146,6 +1157,7 @@
 		{
 			x: 16.5d
 			y: 5.0d
+			shape: "square"
 			description: ["&aVegetal&r is a curious by-product of your &dmicroorganisms&r feasting on &2organic matter&r. It consists of the &2raw energy of nature&r."]
 			dependencies: ["6780A1BF19D7CEA3"]
 			hide: true
@@ -1172,6 +1184,7 @@
 		{
 			x: 12.0d
 			y: 3.75d
+			shape: "square"
 			description: [
 				"&dStrange whispers&r have mentioned another world wrapped in &eeternal twilight&r. The path to enter was &cblocked&r, but now is &aclear to you&r. "
 				""
@@ -1207,6 +1220,7 @@
 			title: "Colored Saplings"
 			x: 16.5d
 			y: 6.5d
+			shape: "square"
 			description: [
 				"You need something &aorganic&r to mix your &dpigments&r. In your experiments, you could see that the &aroots&r of saplings absorb the &bcolor&r of the &dpigments&r with ease and develop accordingly. The energy of the &dgems&r pulses through the stem and their first few leaves already."
 				""
@@ -1247,14 +1261,16 @@
 			title: "Pigments"
 			x: 16.5d
 			y: 8.5d
+			shape: "square"
 			description: [
 				"The &aleaves&r of colorful trees have a chance to drop a &bPure Pigment&r. You may notice that there are lots of &enew colors of trees that once looked the same&r. The &6world of color&r has opened up to you."
 				""
 				"The color of &bPigment&r you receive from breaking &aleaves&r depends on the color of the &2tree&r. The &aleaves&r must be broken by you to &creceive anything&r."
 				""
-				"&oYou should aim to collect as many variants as you can. Some are not available to you at this time&r."
+				"&o&eYou should aim to collect as many variants as you can. Some are not available to you at this time. You will need &call&e the ones you can make at this time to unlock the recipe for the next quest&r."
 			]
 			dependencies: ["2BD62007FC53BA59"]
+			hide: true
 			id: "36F19B05F3EF16DD"
 			tasks: [{
 				id: "05EE083C303D0E3D"
@@ -1287,6 +1303,7 @@
 			icon: "spectrum:fusion_shrine_basalt"
 			x: 16.5d
 			y: 10.5d
+			shape: "square"
 			description: [
 				"{image:statech:textures/item/fusion_shrine.png width:240 height:135 align:1}"
 				""
@@ -1590,7 +1607,7 @@
 		{
 			title: "Colored Spore Blossoms"
 			x: 19.5d
-			y: 7.0d
+			y: 6.0d
 			description: [
 				"As you wandered through a &aleafy cave&r, you noticed the many petals sailing through the air. You were so enchanted by this sight that you set out to design your own, colorful, variations."
 				""
@@ -1628,7 +1645,7 @@
 		{
 			title: "Glowblocks"
 			x: 19.5d
-			y: 6.0d
+			y: 5.0d
 			subtitle: "They glow in the dark"
 			description: [
 				"You have &ecolor&r as pure as can be. So why not create blocks with color as &dpure& as can be!"
@@ -1796,12 +1813,14 @@
 		{
 			x: 13.0d
 			y: 10.5d
+			shape: "square"
 			description: [
 				"To create &cbrown pigment&r, you needed a way to darken an &6orange&r tone. And then it occured to you. It's so logical when you think about it! The &dthree gems&r you found correspond to the &5three basic colors&r of color theory. By mixing all three colors you can create a &dshard&r that is so dark it almost looks unreal."
 				""
 				"The creation of this '&ablackest of blacks&r' in the &bFusion Shrine&r has to be performed in a way that absolutely &cno unregulated light can pollute the crystal&r. So midnight on a new moon it is. Best to bring a &eclock&r with you."
 			]
 			dependencies: ["279B9340FED331B8"]
+			hide: true
 			id: "69D153E6D7F2C335"
 			tasks: [{
 				id: "509287A195097A5E"
@@ -1827,6 +1846,7 @@
 			icon: "spectrum:pedestal_onyx"
 			x: 9.5d
 			y: 10.5d
+			shape: "square"
 			description: [
 				"Your &aPigment Pedestal&r can be upgraded with your newly created &bOnyx Shards&r to further increase its magical powers."
 				""
@@ -2054,6 +2074,7 @@
 				"&aSemi-permeable Glass&r comes in all gemstone colors, common, tinted, and glowing variants. It looks exactly like its &bmundane counterpart&r but has the special property that &eplayers can pass through it without problems&r, while all other creatures will bounce off it like a fly off a window."
 			]
 			dependencies: ["79D0A62E07C283FF"]
+			hide: true
 			id: "6E21A61FDCAC98CF"
 			tasks: [{
 				id: "45425DE150290CEB"
@@ -2303,6 +2324,7 @@
 			title: "The New Hotness"
 			x: 7.0d
 			y: 10.5d
+			shape: "square"
 			description: ["Your &aprowess&r has unlocked more &bancient knowledge&r. You hear the cries of the &cNether&r reach out to you, \"&o&dThere's ore under the lava, tear it out&r\"."]
 			dependencies: ["79D0A62E07C283FF"]
 			hide: true
@@ -2330,6 +2352,7 @@
 		{
 			x: 5.0d
 			y: 10.5d
+			shape: "square"
 			description: ["&cStratine&r is a very &4heavy&r ore is scattered around the depths of the &cNether&r. It's probably &enot the best idea to carry &llarge&r&e amounts of it home at once."]
 			dependencies: ["241243142B547B6C"]
 			hide: true
@@ -2362,6 +2385,7 @@
 				"Crouch click to get a &dselection&r of all available &eplacement modi&r."
 			]
 			dependencies: ["791C2898ADBEFEED"]
+			hide: true
 			id: "15615777888AF057"
 			tasks: [{
 				id: "5FDF87C22CC9A800"
@@ -2417,6 +2441,7 @@
 		{
 			x: 5.0d
 			y: 8.5d
+			shape: "square"
 			description: [
 				"Ambition has token hold of you, seriously, your first steps towards changing the world. &dEmpowered&r by the potent energy of your &aOnyx&r and &cStratine&r, this second &aorganism&r you created is clearly... more active than your last creation."
 				""
@@ -2499,6 +2524,7 @@
 			title: "Under the Sea"
 			x: 1.5d
 			y: 10.5d
+			shape: "square"
 			description: [
 				"The &aMermaids Brush&r is an inconspicuous plant that grows in the &9deepest&r depths of the oceans, forever untouched by human influence. They grow a &bsingle blossom&r, which slowly develops into a &efiligree shaped seed&r. They can only be harvested with &cshears&r."
 				""
@@ -2537,6 +2563,7 @@
 			description: ["Again, due to &eTerralith&r changing world generation so much, the next material is &cextremely difficult to find&r. So, once again, I offer a &atrade&r. A &bstack of kelp&r, &9stack of lapis&r, and some &bseagrass&r and I will grant you what you seek."]
 			hide_dependency_lines: true
 			dependencies: ["791C2898ADBEFEED"]
+			hide: true
 			id: "110608268753D48A"
 			tasks: [
 				{
@@ -2630,6 +2657,7 @@
 				"To fill the gaps it pulls matching blocks directly from your &cinventory&r. If you don't have any matching blocks it will fall back on &7cobblestone&r."
 			]
 			dependencies: ["0EB9D10AAC86F6A2"]
+			hide: true
 			id: "6422E4C08274C040"
 			tasks: [{
 				id: "045496E59E5C42FA"
@@ -2746,6 +2774,7 @@
 		{
 			x: -2.0d
 			y: 10.5d
+			shape: "square"
 			description: [
 				"The pure energy of &dgemstones&r in their liquid form. It is said to have a healing effect."
 				""
@@ -3059,6 +3088,7 @@
 				"You may even be able &5to add other stuff than just plain &7Sugar&r."
 			]
 			dependencies: ["6D24FBE1A1BB0488"]
+			hide: true
 			id: "5869B2AB61FF7F64"
 			tasks: [
 				{
@@ -3348,6 +3378,7 @@
 			title: "A New Material"
 			x: 5.0d
 			y: 6.0d
+			shape: "square"
 			description: [
 				"You must be careful when freeing the &dmicroorganisms&r in the &aBottle of Failing&r as they are ravenous. They will spread to connecting blocks over time and consume the block entirely. "
 				""
@@ -3379,12 +3410,14 @@
 		{
 			x: 1.5d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"The &dObsidian&r was literally pulverized. This is what you call &cpower&r!"
 				""
 				"The result was this sturdy &areagent&r. Very powerful!"
 			]
 			dependencies: ["1416BED5BCB49E7A"]
+			hide: true
 			id: "7478E4BA8E84755E"
 			tasks: [{
 				id: "2BACC5001294A3D6"
@@ -3473,6 +3506,7 @@
 			title: "Unstable and Dangerous"
 			x: -2.0d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"The latest finding sfrom your last experiment make you strive for more and more. Squeeze every last ounce of energy out of your &dgemstones&r."
 				""
@@ -3508,6 +3542,7 @@
 		{
 			x: -4.0d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"This abomination of a &dGemstone&r radiates an eerie aura."
 				""
@@ -3541,6 +3576,7 @@
 			title: "It's not Oil"
 			x: -6.0d
 			y: 4.0d
+			shape: "square"
 			description: ["The liquid which was created during the creation of the &aMidnight Aberration&r... it &cdamages&r everything it touches. It seems to have varying effects depending on what lands in it. Enchanted items lose their &dmagical powers&r, and some items change altogether. However, most interesting is that &bcreatures killed by it&r drop a &emysterious fragment&r."]
 			dependencies: ["2F2CCBE02F25FA4A"]
 			hide: true
@@ -3568,6 +3604,7 @@
 		{
 			x: -8.0d
 			y: 4.0d
+			shape: "square"
 			description: [
 				"Creatures that die in &aMidnight Solution&r drop &bMidnight Chips&r. These resemble the &eMidnight Aberration&r you failed to create before, just way, way smaller. "
 				""
@@ -3682,6 +3719,7 @@
 			y: 13.5d
 			description: ["Crushing &bFrostbite Crystal&r with an anvil yields this ice cold powder, which almost makes your hand freeze just by holding it. Crushing &9Ice&r seems to work too, albeit with much less yield."]
 			dependencies: ["534FDA2A12212007"]
+			hide: true
 			id: "64227AF7157BBF43"
 			tasks: [{
 				id: "1D275B6DEAB137FB"
@@ -3738,6 +3776,7 @@
 			title: "A New Ore"
 			x: 1.5d
 			y: 2.0d
+			shape: "square"
 			description: ["There is a new Ore to be found in the &aOverworld&r in all biomes. It's a rich &1blue ore&r that generates &cvery deep down&r under the surface, and is fairly rare. No, it is not &bDiamonds&r..."]
 			dependencies: ["7478E4BA8E84755E"]
 			hide: true
@@ -3765,6 +3804,7 @@
 		{
 			x: -2.5d
 			y: 2.0d
+			shape: "square"
 			description: [
 				"&bAzurite&r is a rich blue ore, which at a distance, can almost be mistaken for &bLapis&r. In its natural form, it contains many impurities, which must first be removed, before it can be used."
 				""
@@ -3897,6 +3937,7 @@
 		{
 			x: -6.0d
 			y: -0.5d
+			shape: "square"
 			description: [
 				"This is it: the &eperfection of your recipe&r. A little failure definitely couldn't stop you. This may be the one thing &caggressive enough&r to destroy even some materials previously deemed &6&ounbreakable&r. If you are not careful, you may &cruin the world&r. A necessary sacrifice really."
 				""
@@ -4214,6 +4255,7 @@
 			y: 15.5d
 			description: ["This collection of &esmall vials&r is able to store &ball kinds of Ink&r, albeit &cjust small amounts of it&r."]
 			dependencies: ["67FFABA54C58A939"]
+			hide: true
 			id: "1AC510ACD580FA67"
 			tasks: [{
 				id: "6B10DE11755EEDF5"
@@ -4451,6 +4493,7 @@
 				"While it is not as efficient as breaking the clusters with a &bPickaxe&r, the ease of use surely comes in handy!"
 			]
 			dependencies: ["4BBB975D039AFCC9"]
+			hide: true
 			id: "016C5422152ED3A2"
 			tasks: [{
 				id: "6325F9A0EE813AC9"
@@ -4637,6 +4680,7 @@
 			title: "Groundbreaking"
 			x: -8.0d
 			y: -0.5d
+			shape: "square"
 			description: ["Your new fancy, and &cdangerous&r, &dmicroorganisms&r are ready to feast. Able to tear through anything, where will &eyou set them free&r?"]
 			dependencies: ["0FFD788283204691"]
 			hide: true
@@ -4664,6 +4708,7 @@
 		{
 			x: -10.0d
 			y: -0.5d
+			shape: "square"
 			description: [
 				"Even &aBedrock&r was not strong enough to withstand your newly created \"&alife&r\". It broke through the &aBedrock&r like &edandelions&r through &7concrete&r."
 				""
@@ -4758,6 +4803,7 @@
 				"&aBlack Hole Chests&r have a radius of 12 blocks. You can disable t hem by placing a block on top. It offers &efilters&r to specify which items it should accept&r."
 			]
 			dependencies: ["7014D92425B9A412"]
+			hide: true
 			id: "045A4D9B10FD6495"
 			tasks: [{
 				id: "449F46F9DEBFF167"
@@ -4994,6 +5040,7 @@
 				"&cNote&r: The Gray Spore Blossom is currently not solvable until a future update."
 			]
 			dependencies: ["352D2FF3E6003244"]
+			hide: true
 			id: "6B419998589E17A8"
 			tasks: [{
 				id: "4CCD7764C924714D"
@@ -5045,6 +5092,7 @@
 			title: "Bedrock Armor"
 			x: -13.5d
 			y: -0.5d
+			shape: "square"
 			subtitle: "The Ultimate Drip"
 			description: [
 				"The &astrongest material&r you could make so far was &bNetherite&r. However, reparing &bNetherite&r armor had the disadvantage that it was more expensive than making the armor itself. In addition, the protection decreased with every scratch. All this is less problematic when the armor &ocannot&r be damaged. "
@@ -5140,6 +5188,7 @@
 		{
 			x: -15.0d
 			y: 3.5d
+			shape: "square"
 			description: ["The &eBedrock Pickaxe&r comes &dpre-enchanted&r with &2Silk Touch&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5175,6 +5224,7 @@
 		{
 			x: -14.0d
 			y: 3.5d
+			shape: "square"
 			description: ["The &eBedrock Axe&r comes &dpre-enchanted&r with &2Efficiency VI&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5210,6 +5260,7 @@
 		{
 			x: -13.0d
 			y: 3.5d
+			shape: "square"
 			description: ["The &eBedrock Shovel&r comes &dpre-enchanted&r with &2Efficiency VI&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5245,6 +5296,7 @@
 		{
 			x: -14.5d
 			y: 4.5d
+			shape: "square"
 			description: ["The &eBedrock Sword&r comes &dpre-enchanted&r with &2Sharpness VI&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5280,6 +5332,7 @@
 		{
 			x: -12.0d
 			y: 3.5d
+			shape: "square"
 			description: ["The &eBedrock Hoe&r comes &dpre-enchanted&r with &2Fortune IV&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5315,6 +5368,7 @@
 		{
 			x: -13.5d
 			y: 4.5d
+			shape: "square"
 			description: ["The &eBedrock Bow&r comes &dpre-enchanted&r with &2Power VI&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5350,6 +5404,7 @@
 		{
 			x: -12.5d
 			y: 4.5d
+			shape: "square"
 			description: ["The &eBedrock Crossbow&r comes &dpre-enchanted&r with &2Quick Charge IV&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5385,6 +5440,7 @@
 		{
 			x: -13.0d
 			y: 5.5d
+			shape: "square"
 			description: ["The &eBedrock Shears&r comes &dpre-enchanted&r with &2Silk Touch&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5420,6 +5476,7 @@
 		{
 			x: -14.0d
 			y: 5.5d
+			shape: "square"
 			description: ["The &eBedrock Fishing Rod&r comes &dpre-enchanted&r with &2Luck of the Sea IV&r."]
 			dependencies: ["33981AF71D789EF7"]
 			hide: true
@@ -5456,6 +5513,7 @@
 			title: "Bedrock Tools"
 			x: -13.5d
 			y: 1.5d
+			shape: "square"
 			description: ["Whenever you enter a new world, you go about the mindless, days-long task of gathering &evillagers&r around you, turning them into &azombies&r, and healing them again, only for one of them to eventually hand you a book of &dMending&r. All this, just so you don't have to &bfix your tools&r. Now that you can process &2Bedrock&r, you have a much more convenient solution anyways."]
 			dependencies: ["7014D92425B9A412"]
 			hide: true
@@ -5497,6 +5555,7 @@
 			y: 3.0d
 			description: ["The &cStratine Gem&r you set into this &aCirclet&r, itself a creation of the &cNether&r, can absorb high temepratures on you with ease. It even protects you from the &cblazing heat of lava&r - &bif only for a short time&r, until it has had a chance to cool down again. Pair it with something that grants you &dFire Resistance&r, you are able to swim in &clava&r almost as if it were &9water&r."]
 			dependencies: ["7478E4BA8E84755E"]
+			hide: true
 			id: "132AEA7C9C0A85F6"
 			tasks: [{
 				id: "6175730D5E94D440"
@@ -5529,6 +5588,7 @@
 				"To get teh most out of the effect getting one with long duration first and then stacking up on that seems to be most effective."
 			]
 			dependencies: ["04778F1077A6A8D1"]
+			hide: true
 			id: "2B6663972DD4C563"
 			tasks: [{
 				id: "3A96C4595E120F18"
@@ -5584,6 +5644,7 @@
 				"However, is it really worth emptying the &avial&r? Should you die against all odds, the price will &cbe immense&r."
 			]
 			dependencies: ["2B6663972DD4C563"]
+			hide: true
 			id: "0EE47705DA36E06C"
 			tasks: [{
 				id: "50D7E10973A7BD2A"
@@ -5880,6 +5941,7 @@
 			y: -7.5d
 			description: ["&aJade Petals&r can be collected from grown &bJade Vines&r"]
 			dependencies: ["67B26D6E4C9CA284"]
+			hide: true
 			id: "32504A5361DEC4C7"
 			tasks: [{
 				id: "08A8CD31A7D01837"
@@ -6078,6 +6140,7 @@
 				"There's a reason it took you this long to be able to make it..."
 			]
 			dependencies: ["7014D92425B9A412"]
+			hide: true
 			id: "1F65755BC2B7D5C2"
 			tasks: [{
 				id: "673C68C06DD2909F"
@@ -6107,6 +6170,7 @@
 				"Luckily for you, you've cobbled together the concept of &bThe Rune Crafting Table&r. With this, the &aRunes&r you craft will have their output &ddoubled&r! "
 			]
 			dependencies: ["2563B78CFC661CCB"]
+			hide: true
 			id: "1A8CB6F7460A098B"
 			tasks: [{
 				id: "658CC77BD5459920"
@@ -6136,6 +6200,7 @@
 				"The &aSpell Binding Table&r follows the same logic as the &evanilla Enchanting Table&r, where surrounding it in &2Bookshelves&r will increase the level of &5Spells&r that can be acquired."
 			]
 			dependencies: ["2563B78CFC661CCB"]
+			hide: true
 			id: "6AFC5E814DAF426A"
 			tasks: [{
 				id: "2586EA176E870F2A"
@@ -6166,6 +6231,7 @@
 				"These do &clow damage&r at the moment, and require &dRunes&r to cast their abilities, but you will soon unveil the true power as your journey continues."
 			]
 			dependencies: ["639C6C4B13203B5B"]
+			hide: true
 			id: "4534E07EEB286425"
 			tasks: [{
 				id: "15B392AE3B65481E"
@@ -6199,6 +6265,7 @@
 			y: -4.0d
 			description: ["The &cNetherite&r variant of your &dWand&r will do slightly more damage than before."]
 			dependencies: ["4534E07EEB286425"]
+			hide: true
 			id: "75354DA145259C2B"
 			tasks: [{
 				id: "6954407381BEDE79"
@@ -6233,6 +6300,7 @@
 			subtitle: "OSRS!"
 			description: ["To power your &dWand&r's abilities, you're going to need &aRunes&r. These can be crafted in a regular crafting table for now, but your &ereturn on investment&r is going to be bad until you discover the &bRunic Altar&r later..."]
 			dependencies: ["4534E07EEB286425"]
+			hide: true
 			id: "2BCB1524B5A3AFA3"
 			tasks: [{
 				id: "2EFE35A5F4181F40"
@@ -6267,6 +6335,7 @@
 			subtitle: "You're a wizard, Steve!"
 			description: ["The innate &dmagical&r power of your &5wands&r thus far has been quite poor. However, by creating a &eset of robes&r imbued with the natural powers found in &dgemstones&r, you can increase the capabilities of your &5wand&r."]
 			dependencies: ["2563B78CFC661CCB"]
+			hide: true
 			id: "30D18BC20D008AE2"
 			tasks: [
 				{
@@ -6334,6 +6403,7 @@
 			y: 9.5d
 			description: ["The &5Arcane Robes&r are and upgraded version of the &bWizard Robes&r that offer significant damage increases for &5Arcane&r &dmagic&r."]
 			dependencies: ["279B9340FED331B8"]
+			hide: true
 			id: "073B2A926EE446C7"
 			tasks: [
 				{
@@ -6401,6 +6471,7 @@
 			y: 10.5d
 			description: ["The &cFire Robes&r are and upgraded version of the &bWizard Robes&r that offer significant damage increases for &cFire&r &dmagic&r."]
 			dependencies: ["279B9340FED331B8"]
+			hide: true
 			id: "2D6D1CA454713119"
 			tasks: [
 				{
@@ -6468,6 +6539,7 @@
 			y: 11.5d
 			description: ["The &3Frost Robes&r are and upgraded version of the &bWizard Robes&r that offer significant damage increases for &3Frost&r &dmagic&r."]
 			dependencies: ["279B9340FED331B8"]
+			hide: true
 			id: "431AA8E77977167D"
 			tasks: [
 				{
@@ -6535,6 +6607,7 @@
 			y: 8.0d
 			description: ["With your improved abilities with your &bUpgraded Pigment Pedestal&r you can now better channel the powers of the &dgemstones&r into &apowerful Staffs&r to vanquish your foes with. They can be placed in a &eSpell Binding Table&r to apply &2new spells to them&r."]
 			dependencies: ["79D0A62E07C283FF"]
+			hide: true
 			id: "51E26EB4EBEE53D0"
 			tasks: [{
 				id: "615F3F51A2F3B534"
@@ -6568,6 +6641,7 @@
 			y: 7.0d
 			description: ["The &aNetherite Staffs&r offer an &bincrease to damage&r to their respective spell types."]
 			dependencies: ["51E26EB4EBEE53D0"]
+			hide: true
 			id: "361B361FA247EA88"
 			tasks: [{
 				id: "189BBEB3109D8EC5"
@@ -6604,6 +6678,7 @@
 				"These will allow you to create more powerful weapons to &cvanquish your foes&r."
 			]
 			dependencies: ["6D24FBE1A1BB0488"]
+			hide: true
 			id: "21BDD4D9662873A0"
 			tasks: [{
 				id: "1760536D483EA89E"
@@ -6641,6 +6716,7 @@
 				"You can &aadd additional spells&r at a &eSpell Binding Table&r."
 			]
 			dependencies: ["21BDD4D9662873A0"]
+			hide: true
 			id: "3422A8E9630A3063"
 			tasks: [{
 				id: "738DB52AC636ED24"
@@ -6674,6 +6750,7 @@
 			y: 15.5d
 			description: ["The &aRunic Armors&r offer a &edamage bonus&r to their respective spell type, while also offering &babsorption to magic proportional to the amount of &aRunic&b pieces you're wearing&r."]
 			dependencies: ["21BDD4D9662873A0"]
+			hide: true
 			id: "7551484360A7E823"
 			tasks: [
 				{
@@ -6751,6 +6828,7 @@
 				"Each one comes with a &espin attack of their respective element&r."
 			]
 			dependencies: ["3D298F4F967B58C9"]
+			hide: true
 			id: "68D2B0DF8060D9C7"
 			tasks: [{
 				id: "03501B1E1C263404"
@@ -6790,6 +6868,7 @@
 				"&eMix and match and find what's best for you!&r"
 			]
 			dependencies: ["3D298F4F967B58C9"]
+			hide: true
 			id: "6D7F12E254DFA7F8"
 			tasks: [
 				{
@@ -6861,6 +6940,7 @@
 			y: 4.0d
 			description: ["&aRunic Orbs&r deal no extra &cmelee&r damage, and have &dspells&r that don't &edeal a whole lot of damage&r, however the &dspells&r that are available have &2incredible area of effect and versatility&r."]
 			dependencies: ["3D298F4F967B58C9"]
+			hide: true
 			id: "3227C8A9F947E4AD"
 			tasks: [{
 				id: "096095D280DF4DA5"
@@ -6900,6 +6980,7 @@
 				"These tools come &denchanted&r with relevant abilities, such as &2Looting&r for swords and &3Fortune&r for pickaxes. The &5Summoned Bow&r fires &eSpectral Arrows&r."
 			]
 			dependencies: ["2563B78CFC661CCB"]
+			hide: true
 			id: "6974DE5FED1DE22D"
 			tasks: [{
 				id: "0BC3CD4A2A95594A"
@@ -6925,6 +7006,7 @@
 			y: 12.5d
 			description: ["This upgrade to the &aSummon Tool&r will allow for more powerful tools to be &5summoned&r. They have their existing &denchants&r improved from the previous tier, however &5summoning&r now will require &atwo full levels of experience&r."]
 			dependencies: ["279B9340FED331B8"]
+			hide: true
 			id: "3F20975321221E3F"
 			tasks: [{
 				id: "6C79E8DD3D928245"
@@ -6950,6 +7032,7 @@
 			y: 8.5d
 			description: ["The &aSummon Tool +2&r marks the final tier of the &aSummon Tools&r. With this, you can &5summon&r some pretty powerful &denchanted&r items when you need them, however you now need &athree levels of experience&r to do so."]
 			dependencies: ["6D24FBE1A1BB0488"]
+			hide: true
 			id: "6E6C4ACE6D973311"
 			tasks: [{
 				id: "6FC5CBE993AEC141"
@@ -6994,6 +7077,7 @@
 				"Complex item automation. It's similar to the &cCopper Mage Hand&r, but can have a filter applied by right-clicking for advanced item selection. "
 			]
 			dependencies: ["2563B78CFC661CCB"]
+			hide: true
 			id: "4F9A3B211E7AAA01"
 			tasks: [{
 				id: "0C7F7BB465EDC7B4"
@@ -7016,6 +7100,38 @@
 				}
 				{
 					id: "49CAA44472A5D5C4"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 19.5d
+			y: 7.0d
+			description: ["The &aMolten Rod&r is a &bFishing Rod&r tough enough to withstand the &cheat of lava&r. Results may vary...."]
+			dependencies: ["36F19B05F3EF16DD"]
+			hide: true
+			id: "2A288CED3919A8F1"
+			tasks: [{
+				id: "50351C1C6F21CE90"
+				type: "item"
+				item: {
+					id: "spectrum:molten_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "4332A67949283D5D"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 5901057256958333207L
+				}
+				{
+					id: "70FAF07441CC6DA8"
 					type: "xp"
 					xp: 10
 				}

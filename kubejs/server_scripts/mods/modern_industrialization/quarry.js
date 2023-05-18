@@ -47,9 +47,26 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('gold_ore'), probability: 0.15 },
             { amount: 1, item: mi('lead_ore'), probability: 0.15 },
             { amount: 1, item: mc('redstone_ore'), probability: 0.2 },
-            { amount: 1, item: crate('zinc_ore'), probability: 0.2 },
             { amount: 1, item: tr('silver_ore'), probability: 0.2 },
             { amount: 1, item: tr('galena_ore'), probability: 0.3 }
+        ]
+    );
+
+    // -- ZINC DRILL -- //
+    quarry(
+        st('zinc_drill'),
+        4,
+        600,
+        [ { amount: 1, item: mi('zinc_drill'), probability: 0.1 } ],
+        [ 
+            { amount: 1, item: crate('zinc_ore'), probability: 0.5 },
+            { amount: 16, item: mc('andesite'), probability: 0.7 },
+            { amount: 16, item: crate('asurine'), probability: 0.4 },
+            { amount: 16, item: crate('crimsite'), probability: 0.3 },
+            { amount: 16, item: crate('limestone'), probability: 0.6 },
+            { amount: 16, item: crate('ochrum'), probability: 0.6 },
+            { amount: 16, item: crate('scoria'), probability: 0.4 },
+            { amount: 16, item: crate('veridium'), probability: 0.3 }
         ]
     );
 

@@ -16,7 +16,7 @@
 			description: [
 				"Welcome to &eChapter 5&r"
 				""
-				"It's time to up the tech-level with these new machine hulls. &aNuclear Reactors&r and refining your processing chains will be needed to advanced through this chapter."
+				"It's time to up the &etech-level with these new machine hulls&r. &aNuclear Reactors&r and &3refining your processing chains&r will be needed to advanced through this chapter."
 			]
 			dependencies: ["4FDC0B405C330E4F"]
 			id: "2F0042673C0E3910"
@@ -46,9 +46,9 @@
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"A &bLarge Diesel Generator&r is able to burn fuel to generate up to 16384 EU/t. Check &dREI&r to view how much EU per mB each fuel can produce."
+				"A &bLarge Diesel Generator&r is able to burn fuel to generate up to &e16384 EU/t&r. Check &dREI&r to view how much EU per mB each fuel can produce."
 				""
-				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the &aLarge Diesel Generator&r block in your inventory or by holding your wrench out with the &bLarge Diesel Generator&r placed."
+				"If you need help building the multiblock you can view the &bPonder&r scene by holding 'W' on the &aLarge Diesel Generator&r block in your inventory or by holding your wrench out with the &bLarge Diesel Generator&r placed."
 			]
 			dependencies: ["2F0042673C0E3910"]
 			size: 1.5d
@@ -111,10 +111,10 @@
 			]
 		}
 		{
-			x: 0.5d
+			x: 0.0d
 			y: -2.0d
 			shape: "rsquare"
-			description: ["The &aEV Tier Storage Unit&r. It can store a little more than 45 million EU. "]
+			description: ["The &aEV Tier Storage Unit&r. It can store a little more than &e45 million EU&r. "]
 			dependencies: ["2F0042673C0E3910"]
 			id: "64D20685E4A57EED"
 			tasks: [{
@@ -131,32 +131,6 @@
 				}
 				{
 					id: "6EDBAC5F33D8B779"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
-			x: -0.5d
-			y: -2.0d
-			shape: "rsquare"
-			description: ["With the &bHighly Advanced Machine Hulls&r you now have access to &aUltimate Solar Panels&r. This will generate 192 EU/t during the day, and 16 EU/t at night. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
-			dependencies: ["2F0042673C0E3910"]
-			id: "786ACF473177AA23"
-			tasks: [{
-				id: "6F8D42F55B4F5EF4"
-				type: "item"
-				item: "techreborn:ultimate_solar_panel"
-			}]
-			rewards: [
-				{
-					id: "1BF6E647E2C9DDEF"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1098950661447874341L
-				}
-				{
-					id: "14E351334FED97B9"
 					type: "xp"
 					xp: 10
 				}
@@ -232,15 +206,15 @@
 			shape: "square"
 			subtitle: "With great power comes great responsibility"
 			description: [
-				"The &bNuclear Reactor&r is a large multiblock whose purpose is to generate massive amounts of energy by consuming nuclear fuel. It can produce 100s of times more EU/t than diesel. It comes in several sizes from small to large."
+				"The &bNuclear Reactor&r is a large multiblock whose purpose is to &egenerate massive amounts of energy by consuming nuclear fuel&r. It can produce &d100s of times more EU/t than diesel&r. It comes in &eseveral sizes&r from small to large."
 				""
-				"How it works under the hood can be a bit overwhelming, but you don't need to fully understand the details to be able to design a powerful reactor."
+				"How it works under the hood can be a &bbit overwhelming&r, but you don't need to fully understand the details to be able to design a powerful reactor."
 				""
-				"Its recommended that you experiment with various designs in creative mode until you find one that suits you."
+				"Its recommended that you&2 experiment with various designs &rin creative mode until you find one that suits you."
 				""
-				"The uppart part of the structure accepts Nuclear Item or Fluid Hatches. Those are the inputs and outputs of the reactor. Each hatch has one input (either item or fluid) and two outputs. The input slots will form a grid, displayed in the reactor GUI (accessible by right-clicking on the controller)."
+				"The upper part of the structure accepts &dNuclear Item&r or &dFluid Hatches&r. Those are the inputs and outputs of the reactor. Each hatch has one input (either item or fluid) and two outputs. &6The input slots will form a grid&r, displayed in the &areactor GUI&r (accessible by right-clicking on the controller)."
 				""
-				"&cNOTE&r: &bThe Nuclear Reactor&r CANNOT explode, emit radiation, or otherwise damage the map. The only thing that it can damage is the items you put in it if the &ctemperature&r gets too high (more on this later)."
+				"&cNOTE&r: &bThe Nuclear Reactor&r &cCANNOT&r explode, emit radiation, or otherwise damage the map. The only thing that it can damage is the items you put in it if the &ctemperature&r gets too high (more on this later)."
 			]
 			dependencies: ["3308E0ADE29A5A9E"]
 			size: 1.5d
@@ -419,7 +393,7 @@
 			x: 1.0d
 			y: 2.0d
 			shape: "square"
-			description: ["Combining 3x &aNeodymium&b, 3x &cAnnealed Copper&r, 3x &bYttrium&r, and 1x &dIridium Dust&r you can mix together &bSuperconductor Dust&r. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a &bTungstensteel EBF&r and then cool it in a vacuum freezer."]
+			description: ["Combining 3x &aNeodymium&b, 3x &cAnnealed Copper&r, 3x &bYttrium&r, and 1x &dIridium Dust&r you can mix together &bSuperconductor Dust&r. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a &bTungstensteel EBF&r and then cool it in a &evacuum freezer&r."]
 			dependencies: ["2F0042673C0E3910"]
 			id: "569821B175311340"
 			tasks: [{
@@ -443,15 +417,15 @@
 		}
 		{
 			title: "EV Cables"
-			x: 1.5d
+			x: 1.0d
 			y: -2.0d
 			shape: "square"
 			description: [
 				"The cables of the EV tier are:"
-				"- Annealed Copper"
-				"- Platinum"
+				"- &cAnnealed Copper&r"
+				"- &bPlatinum&r"
 				""
-				"These cables can transfer up to 65.54k EU/t and have an internal buffer of 65.54k EU."
+				"These cables can transfer up to &e65.54k EU/t&r and have an internal buffer of &665.54k EU&r."
 			]
 			dependencies: ["2F0042673C0E3910"]
 			id: "257CA8034EA7B1DB"
@@ -603,7 +577,7 @@
 			y: 4.0d
 			shape: "square"
 			subtitle: "Hazmat suit not required?"
-			description: ["There's a variety of &dNuclear Fuels&r available to you. The most basic is just regular &aUranium Rods&r, but you can make Lightly-Enriched (LE) or Highly-Enriched (HE) variants. Check &dJEI&r for more details on each fuel and find what works best for you."]
+			description: ["There's a variety of &dNuclear Fuels&r available to you. The most basic is just regular &aUranium Rods&r, but you can make &aLightly-Enriched&r (LE) or &aHighly-Enriched&r (HE) variants. Check &dJEI&r for more details on each fuel and find what works best for you."]
 			dependencies: [
 				"131D19CE92E22D58"
 				"4E4FF04917B2E624"
@@ -754,7 +728,7 @@
 			x: -3.0d
 			y: 3.5d
 			shape: "rsquare"
-			description: ["The &bTungstensteel Tank&r can store 256 buckets worth of any liquid inside of it! That means 16,384 buckets of a fluid for a full stack! Absolutely insane."]
+			description: ["The &bTungstensteel Tank&r can store &e256 buckets&r worth of any liquid inside of it! That means &d16,384 buckets of a fluid for a full stack&r! Absolutely insane."]
 			dependencies: ["5856A6281F140AEF"]
 			id: "7BB996EF1FB18B1D"
 			tasks: [{
@@ -781,9 +755,9 @@
 			y: 4.5d
 			shape: "rsquare"
 			description: [
-				"The &bTungstensteel Barrel&r can store 16,384 stacks of a single item. A full stack of full barrels is over 1 million stacks. "
+				"The &bTungstensteel Barrel&r can store &e16,384 stacks of a single item&r. A full stack of full barrels is over &d1 million stacks&r. "
 				""
-				"Quite an absurd amount to be sure."
+				"&oQuite an absurd amount to be sure.&r"
 			]
 			dependencies: ["5856A6281F140AEF"]
 			id: "5AE17FE1577DF9E2"
@@ -810,7 +784,7 @@
 			x: -3.0d
 			y: 6.0d
 			shape: "square"
-			description: ["The &eSpace Probe&r returns a good chunk of every space ore after some travel time. The multiblock must be built in &aorbit&r (any planet will work) to use this recipe."]
+			description: ["The &eSpace Probe&r returns a good chunk of every space ore after some travel time. &6The multiblock must be built&r in &aorbit&r (&oany planet will work&r) to use this recipe."]
 			dependencies: ["0F1DC239BBC3D60F"]
 			id: "3DD9AFAD287F29C2"
 			tasks: [{
@@ -862,6 +836,7 @@
 			x: 7.0d
 			y: 2.0d
 			shape: "square"
+			description: ["While you could make &aFuel Rods&r out of regular &aUranium&r, you would missing out on a lot of potential. If you want to make &dLE or HE Fuel Rods&r (Lightly-enriched and highly-enriched respectfully), you will need to &6Centrifuge&r &aUranium Dusts&r."]
 			dependencies: ["0C73D9DE1468EBB1"]
 			id: "131D19CE92E22D58"
 			tasks: [{
@@ -884,9 +859,11 @@
 			]
 		}
 		{
+			title: "Uranium Isotopes"
 			x: 8.5d
 			y: 2.0d
 			shape: "rsquare"
+			description: ["&6Centrifuging&r &aUranium Dusts&r will give you &aU-235&r and a very small amount of &aU-238&r. These small dust piles can be combined into regular dust piles, &eprocessed through a Blast Furnace&r, then &2crafted into rods&r to be crafted into &dFuel Rods&r."]
 			dependencies: ["131D19CE92E22D58"]
 			id: "4E4FF04917B2E624"
 			tasks: [
@@ -946,10 +923,10 @@
 			]
 		}
 		{
-			x: -2.5d
+			x: -2.0d
 			y: -4.0d
 			shape: "rsquare"
-			description: ["Running out of power? Well the &bDragon Egg Energy Siphon&r won't save you there, but it can be used to passively generate 4096 EU/t."]
+			description: ["Running out of power? Well the &bDragon Egg Energy Siphon&r won't save you there, but it can be used to passively generate &a4096 EU/t&r."]
 			dependencies: ["268F9C5384CD54EC"]
 			id: "545FBEB4D3A1C987"
 			tasks: [{
@@ -972,10 +949,10 @@
 			]
 		}
 		{
-			x: -1.5d
+			x: -1.0d
 			y: -2.0d
 			shape: "rsquare"
-			description: ["The &bLapotronic Energy Orb&r is an upgrade to the &aLapotron Crystal&r. It has a 100M energy storage."]
+			description: ["The &bLapotronic Energy Orb&r is an upgrade to the &aLapotron Crystal&r. It has a &e100M&r energy storage."]
 			dependencies: ["2F0042673C0E3910"]
 			id: "268F9C5384CD54EC"
 			tasks: [{
@@ -998,7 +975,7 @@
 			]
 		}
 		{
-			x: -1.5d
+			x: -1.0d
 			y: -4.0d
 			shape: "rsquare"
 			description: ["The &bLapotronic Orbpack&r is the wearable version of the &aLapotronic Energy Orb&r."]
@@ -1024,7 +1001,7 @@
 			]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: -5.5d
 			description: [
 				"The &bInterdimensional Storage Unit&r can be used to transfer energy between &ctwo points instantaneously&r."
@@ -1055,7 +1032,7 @@
 			]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: -4.0d
 			description: [
 				"The &bAdjustable SU&r can be used to fine tune the flow of power leading out of it. "
@@ -1117,7 +1094,7 @@
 		{
 			title: "The Quantum Suit"
 			x: 5.5d
-			y: 7.0d
+			y: 6.5d
 			description: [
 				"The &eTechReborn&r &bQuantum Suit&r is the second best armor in the entire game (and arguably better than the latter &aInfinity Suit&r)."
 				""
@@ -1156,6 +1133,31 @@
 				}
 				{
 					id: "11277526046491E6"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 7.5d
+			description: ["With the &aQuantum Circuit&r you now have access to the &2Quantum Solar Panel&r. This bad boy can generate &d512 EU/t&r during the day and &d32 EU/t&r at night. While not as much as you can generate elsewhere, it's still a decent amount!"]
+			dependencies: ["23D9328B5F627E65"]
+			id: "18A5221397607F68"
+			tasks: [{
+				id: "003B87D6A0BE31DA"
+				type: "item"
+				item: "techreborn:quantum_solar_panel"
+			}]
+			rewards: [
+				{
+					id: "2FA716AB1EE71E67"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4105254141913357569L
+				}
+				{
+					id: "0688454173589DA0"
 					type: "xp"
 					xp: 10
 				}

@@ -1,4 +1,5 @@
 ServerEvents.recipes(e => {
+    let st = (id) => `statech:extended_drawers/${id}`;
     let ed = (id) => `extended_drawers:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
@@ -16,10 +17,11 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        S: '#c:wooden_rods',
+        S: mi('iron_rod'),
         U: ed('t1_upgrade'),
         I: '#c:iron_ingots'
-    });
+    })
+    .id(st('t2_upgrade'));
 
     e.shaped(ed('t3_upgrade'), [
         'RRR',
@@ -30,7 +32,8 @@ ServerEvents.recipes(e => {
         R: mi('bronze_rod'),
         U: ed('t2_upgrade'),
         G: '#c:gold_ingots'
-    });
+    })
+    .id(st('t3_upgrade'));
 
     e.shaped(ed('t4_upgrade'), [
         'RRR',
@@ -41,5 +44,6 @@ ServerEvents.recipes(e => {
         R: mi('steel_rod'),
         U: ed('t3_upgrade'),
         D: '#c:diamonds'
-    });
+    })
+    .id(st('t4_upgrade'));
 });

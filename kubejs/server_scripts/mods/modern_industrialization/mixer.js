@@ -37,9 +37,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 4, item: xps('soul_copper_blend') }
-        ],
-        null,
-        null
+        ]
     );    
 
     // -- CERTUS QUARTS CRYSTAL -- //
@@ -56,8 +54,46 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1000, fluid: mc('water'), probability: 0 }
+        ]
+    );
+
+    // -- DAMAGED BUDDING CERTUS QUARTZ -- //
+    mixer(
+        st('damaged_budding_certus_quartz'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('charged_certus_quartz_crystal') },
+            { amount: 1, item: ae('quartz_block') }
         ],
-        null
+        [ { amount: 1, item: ae('damaged_budding_quartz') } ],
+        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
+    );
+
+    // -- CHIPPED BUDDING CERTUS QUARTZ -- //
+    mixer(
+        st('chipped_budding_certus_quartz'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('charged_certus_quartz_crystal') },
+            { amount: 1, item: ae('damaged_budding_quartz') }
+        ],
+        [ { amount: 1, item: ae('chipped_budding_quartz') } ],
+        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
+    );
+
+    // -- FLAWED BUDDING CERTUS QUARTZ -- //
+    mixer(
+        st('flawed_budding_certus_quartz'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('charged_certus_quartz_crystal') },
+            { amount: 1, item: ae('chipped_budding_quartz')}
+        ],
+        [ { amount: 1, item: ae('flawed_budding_quartz') } ],
+        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
     );
 
     let mixerConsumable = (fluid, amount) => {

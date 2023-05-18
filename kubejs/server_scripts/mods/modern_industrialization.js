@@ -123,30 +123,6 @@ ServerEvents.recipes(e => {
     })
     .id(st('space_probe_launcher'));
 
-    // -- TUNGSTENSTEEL TANK -- //
-    e.shaped(mi('tungstensteel_tank'), [
-        'PPP',
-        'PGP',
-        'PPP'
-    ],
-    {
-        P: '#c:tungstensteel_plates',
-        G: '#c:glass_blocks'
-    })
-    .id(st('tungstensteel_tank'));
-
-    // -- TUNGSTENSTEEL BARREL -- //
-    e.shaped(mi('tungstensteel_barrel'), [
-        'PPP',
-        'PBP',
-        'PPP'
-    ],
-    {
-        P: '#c:tungstensteel_plates',
-        B: '#c:wooden_barrels'
-    })
-    .id(st('tungstensteel_barrel'));
-
     // -- CALORITE MACHINE CASING -- //
     e.shaped(mi('calorite_machine_casing'), [
         'PPP',
@@ -171,49 +147,8 @@ ServerEvents.recipes(e => {
     })
     .id(st('calorite_machine_casing_pipe'));
 
-    // -- CALORITE GEAR -- //
-    e.shaped(mi('calorite_gear'), [
-        'PBP',
-        'BRB',
-        'PBP'
-    ],
-    {
-        P: '#c:calorite_plates',
-        B: mi('calorite_bolt'),
-        R: mi('calorite_ring')
-    })
-    .id(st('calorite_gear'));
-
-    // -- TUNGSTENSTEEL GEAR -- //
-    e.shaped(mi('tungstensteel_gear'), [
-        'PBP',
-        'BRB',
-        'PBP'
-    ],
-    {
-        P: '#c:tungstensteel_plates',
-        B: mi('tungstensteel_bolt'),
-        R: mi('tungstensteel_ring')
-    })
-    .id(st('tungstensteel_gear'));
-
-    // -- DESH DRILL HEAD -- //
-    e.shaped(mi('desh_drill_head'), [
-        'BCP',
-        'GRC',
-        'BGB'
-    ],
-    {
-        B: mi('desh_bolt'),
-        C: mi('desh_curved_plate'),
-        G: mi('desh_gear'),
-        P: astra('desh_plate'),
-        R: mi('desh_rod')
-    })
-    .id(st('desh_drill_head'));
-
     // -- DESH DRILL -- //
-    e.shaped(mi('desh_drill'), [
+    e.shaped('4x ' + mi('desh_drill'), [
         'GIH',
         'MUI',
         'CMG'
@@ -227,6 +162,26 @@ ServerEvents.recipes(e => {
         C: mi('annealed_copper_wire')
     })
     .id(st('desh_drill'));
+
+    // ZINC DRILL // 
+    e.shaped('4x ' + mi('zinc_drill'), [
+        '  H',
+        'GR ',
+        'BG '
+    ],
+    {
+        H: mi('zinc_drill_head'),
+        G: mi('iron_gear'),
+        R: 'create:electron_tube',
+        B: '#c:bronze_plates'
+    })
+    .id(st('zinc_drill'));
+
+    // -- CLEAR FLUID FROM CREATIVE TANK -- //
+    e.shapeless(mi('creative_tank'), mi('creative_tank')).id(st('clear_fluids_from_creative_tank'));
+
+    // -- CLEAR ITEM FROM CREATIVE BARREL -- //
+    e.shapeless(mi('creative_barrel'), mi('creative_barrel')).id(st('clear_items_from_creative_barrel'));
 
     // -- Gravichestplate -- //
     e.shaped(mi('gravichestplate'), [

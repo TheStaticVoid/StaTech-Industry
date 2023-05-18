@@ -14,7 +14,7 @@
 			x: 0.0d
 			y: 5.25d
 			shape: "square"
-			description: ["The &aPlasma Turbine&f can turn &eHelium Plasma&f into EU, at the rate of 100kEU per mB. Its maximum production rate is rougly 1M EU/t."]
+			description: ["The &aPlasma Turbine&f can turn &eHelium Plasma&f into EU, at the rate of &d100kEU per mB&r. Its maximum production rate is rougly &21M EU/t&r!"]
 			dependencies: [
 				"6CD8A3092DDAC055"
 				"598DBC20FB201711"
@@ -169,9 +169,9 @@
 			y: 7.5d
 			shape: "square"
 			description: [
-				"The &aQuantum Tank&f is the highest tier Tank offered by MI. It can store an absolutely absurd 2.14 billion buckets of fluid."
+				"The &aQuantum Tank&f is the highest tier tank offered by &eMI&r. It can store an absolutely absurd &62.14 billion buckets of fluid&r."
 				""
-				"Filling it would be an achievement."
+				"&oFilling it would be an achievement&r."
 			]
 			dependencies: ["10943911EAB7196F"]
 			id: "7F499A3A91F4AC6D"
@@ -198,7 +198,7 @@
 			x: 6.5d
 			y: 8.5d
 			shape: "square"
-			description: ["The &aQuantum Barrel&f is the biggest Barrel available in MI. It can store 2.14 billion stacks of a single item. "]
+			description: ["The &aQuantum Barrel&f is the biggest barrel available in &eMI&r. It can store &62.14 billion stacks of a single item&r. "]
 			dependencies: ["10943911EAB7196F"]
 			id: "7D17913DECB347F1"
 			tasks: [{
@@ -226,9 +226,9 @@
 			shape: "square"
 			subtitle: "Legal Duping"
 			description: [
-				"With 100 mB of liquid &dUU-Matter&f, the replicator can duplicate (almost) any item in the game."
+				"With &a100 mB&r of liquid &dUU-Matter&f, the &eReplicator&r can &dduplicate &o(almost)&r any item in the game."
 				""
-				"While this might seem like the end, it is not. With complete molecular rearrangement at your fingertips, it's time to make a ton of &dUU-Matter&f and get the materials needed to make the creative items."
+				"While this might seem like the end, &cit is not&r. With &3complete molecular rearrangement&r at your fingertips, it's time to make a ton of &dUU-Matter&f and get the materials needed to make the &dcreative items&r."
 			]
 			dependencies: [
 				"3E139335E6F04C69"
@@ -256,10 +256,10 @@
 			]
 		}
 		{
-			x: -2.0d
+			x: 2.0d
 			y: 1.0d
 			shape: "rsquare"
-			description: ["A single &aSuperconductor Storage Unit&f can hold an absolute insane 768 billion EU."]
+			description: ["A single &aSuperconductor Storage Unit&f can hold an absolute insane &e768 billion EU&r."]
 			dependencies: ["2FDA67B4920D335D"]
 			id: "0448EA623C79DA7B"
 			tasks: [{
@@ -282,34 +282,10 @@
 			]
 		}
 		{
-			x: 0.0d
-			y: -1.0d
-			dependencies: ["2FDA67B4920D335D"]
-			id: "18A5221397607F68"
-			tasks: [{
-				id: "003B87D6A0BE31DA"
-				type: "item"
-				item: "techreborn:quantum_solar_panel"
-			}]
-			rewards: [
-				{
-					id: "02A80DDD065131BB"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1415984687807285627L
-				}
-				{
-					id: "0DF39CACD174BD2A"
-					type: "xp"
-					xp: 10
-				}
-			]
-		}
-		{
 			x: 4.0d
 			y: 11.0d
 			shape: "square"
-			description: ["The &5Quantum Upgrade&f is the highest tier upgrade available in MI. It allows for a 1 Billion EU overclock on any machine it is in. Whether or not you can produce that much power is a better question..."]
+			description: ["The &5Quantum Upgrade&f is the &ehighest tier upgrade available in MI&r. It allows for a &a1 Billion EU overclock on any machine it is in&r. &oWhether or not you can produce that much power is a better question...&r"]
 			dependencies: [
 				"23D9328B5F627E65"
 				"10943911EAB7196F"
@@ -340,7 +316,7 @@
 			y: 8.0d
 			shape: "square"
 			subtitle: "Pocket-size blackhole "
-			description: ["By blasting an &aUltradense Metal Ball&f with more energy than several times our entire sun we can create a single &5Singularity&f, a black-hole you can somehow hold in your hands..."]
+			description: ["By blasting an &aUltradense Metal Ball&f with more energy than several times our &dentire sun&r we can create a single &5Singularity&f, a &3black-hole you can somehow hold in your hands...&r"]
 			dependencies: [
 				"50D18ACF6401C05D"
 				"4A2F6AA833C88B7C"
@@ -373,7 +349,7 @@
 			shape: "square"
 			subtitle: "A sword to end all swords"
 			description: [
-				"The &dInfinity Sword&f is the most powerful sword in the entire game. It will instantly kill anything you hit with it (this includes your friends)."
+				"The &dInfinity Sword&f is the most powerful sword in the entire game. It will &cinstantly kill&r anything you hit with it (this includes your friends)."
 				""
 				"Still not as cool as the &aSword of the Cosmos&f..."
 			]
@@ -405,9 +381,11 @@
 			shape: "square"
 			subtitle: "Basically creative mode"
 			description: [
-				"The &dInfinity Suit&f is an empowered suit of armor that's the most powerful armor in the game. You don't take damage while wearing the entire suit and you have creative-flight similar to the &dGravichestplate&f."
+				"The &dInfinity Suit&f is an empowered suit of armor that's the most powerful armor in the game. &cYou don't take damage while wearing the entire suit&r and you have &6creative-flight&r similar to the &dGravichestplate&f."
 				""
 				"Each piece &aindividually adds a 25% chance to not take damage&f, with full protection when wearing the entire set."
+				""
+				"&oHonestly, I liked the Quantum Suit more...&r (Hopefully this armor gets improved in a &6future MI update&r)"
 			]
 			dependencies: ["3E139335E6F04C69"]
 			id: "1E378F2F641048F1"
@@ -484,7 +462,7 @@
 			description: [
 				"Welcome to &eChapter 6&f."
 				""
-				"With the secrets of quantum computing realized, you can now work towards some extremely advanced machinery and sciences."
+				"With the secrets of &dquantum computing realized&r, you can now work towards &asome extremely advanced machinery and sciences&r."
 			]
 			dependencies: ["23D9328B5F627E65"]
 			id: "2FDA67B4920D335D"
@@ -511,7 +489,7 @@
 			x: 3.0d
 			y: 13.0d
 			shape: "square"
-			description: ["The &dCreative Motor&f can provide an unlimited and configurable amount of rotational force for &eCreate&f."]
+			description: ["The &dCreative Motor&f can &aprovide an unlimited and configurable amount&r of rotational force for &eCreate&f."]
 			dependencies: ["4FD7572FC6CC4140"]
 			id: "576E585F8DFC7073"
 			tasks: [{
@@ -570,9 +548,11 @@
 			y: 13.0d
 			shape: "square"
 			description: [
-				"The &dCreative Tank&f can store an infinite amount of any fluid placed inside."
+				"The &dCreative Tank&f can store an &ainfinite amount of any fluid placed inside&r."
 				""
 				"The &aQuantum Tank&f is blacklisted from the &bReplicator&f, so you'll need to make a bunch of them by replicating its components."
+				""
+				"&cNote&r: You can clear the fluid in the &dCreative Tank&r by placing it into an empty crafting grid."
 			]
 			dependencies: ["4FD7572FC6CC4140"]
 			id: "3DDD69F79F436684"
@@ -604,6 +584,10 @@
 				"The &dCreative Barrel&f stores infinite amounts of whatever item is placed inside."
 				""
 				"The &aQuantum Barrel&f is blacklisted from the &bReplicator&f, so you'll need to make a bunch of them by replicating its components."
+				""
+				"&cWarning&r: You cannot break the &dCreative Barrel&r with a pickaxe, use the &eModern Industrialization Wrench&r!"
+				""
+				"You can &dclear the item&r by placing the &dCreative Barrel&r into an empty crafting grid."
 			]
 			dependencies: ["4FD7572FC6CC4140"]
 			id: "1BE7697603B3C94F"
@@ -631,7 +615,7 @@
 			y: 13.0d
 			shape: "square"
 			subtitle: "UNLIMITED POWER"
-			description: ["The &dCreative Storage Unit&f is an infinite source of power."]
+			description: ["The &dCreative Storage Unit&f is an infinite source of power. Any tier of cable can be connected to it."]
 			dependencies: ["4FD7572FC6CC4140"]
 			id: "208D9031D68CE1AB"
 			tasks: [{
@@ -715,7 +699,7 @@
 			x: 4.0d
 			y: 5.0d
 			shape: "square"
-			description: ["By combining lead, tungstensteel, iridium, and neutronium you can crate &aUltradense Metal Balls*f."]
+			description: ["By combining &dlead&r, &5tungstensteel&r, &2iridium&r, and &0neutronium&r you can crate &aUltradense Metal Balls&r."]
 			dependencies: ["1E525921822F56AC"]
 			id: "4A2F6AA833C88B7C"
 			tasks: [{

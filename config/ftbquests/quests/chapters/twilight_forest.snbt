@@ -1,7 +1,7 @@
 {
 	id: "4040DB2AE139AC91"
 	group: "135E7B9D4273E5DD"
-	order_index: 2
+	order_index: 3
 	filename: "twilight_forest"
 	title: "&eThe Twilight Forest"
 	icon: "twilightforest:twilight_portal_miniature_structure"
@@ -42,8 +42,10 @@
 			title: "The Twilight Zone"
 			x: 0.0d
 			y: 1.5d
+			shape: "square"
 			description: ["Welcome to &aThe Twilight Forest&r. For you modded veterans out there, you'll know what to expect, however for anyone new, you're in for a treat. &eFollow the quest progression&r and enjoy your stay! Hope you're well equipped for the &dunknown dangers&r that lurk here."]
 			dependencies: ["44FFCBCF6580B923"]
+			hide: true
 			size: 1.5d
 			id: "5A0E7DEEA70E9667"
 			tasks: [{
@@ -69,6 +71,7 @@
 		{
 			x: 2.0d
 			y: 1.5d
+			shape: "square"
 			description: ["Your first &ctarget&r is the &aNaga&r, which lives in the &ecourtyard of the forest&r. You will need the &2Naga Scales&r to enter the &cLich's Tower&r."]
 			dependencies: ["5A0E7DEEA70E9667"]
 			hide: true
@@ -96,12 +99,14 @@
 		{
 			x: 4.0d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"Atop the &egrand tower&r is the &cLich&r. While shielded &ehe is unable to be damaged&r, however his &bown attacks may be lethal to him&r."
 				""
 				"You will need one of his &3Scepters&r to &aclear the mosquitos in the swamp&r, &bresist the cold of the Snowy Forest&r, and &dsee through the darkness of the Dark Forest&r."
 			]
 			dependencies: ["5FE8FA7D9F5DF7CE"]
+			hide: true
 			size: 1.5d
 			id: "723C224E6D6E12E4"
 			tasks: [{
@@ -154,6 +159,7 @@
 			y: -1.0d
 			description: ["The weapon of the &dLich&r. It &eshoots projectiles&r when you press right-click. Can be recharged with &aender pearls&r."]
 			dependencies: ["723C224E6D6E12E4"]
+			hide: true
 			id: "4B85407F8A2D7EDC"
 			tasks: [{
 				id: "58F32F4FC42E80A6"
@@ -189,6 +195,7 @@
 				"Recharge with &bFermented Spider Eyes&r."
 			]
 			dependencies: ["723C224E6D6E12E4"]
+			hide: true
 			id: "190494279B1BFB32"
 			tasks: [{
 				id: "467DE04DF4F0A307"
@@ -220,6 +227,7 @@
 			y: -1.0d
 			description: ["Right-click to &esummon&r a &azombie&r to fight your enemies. Can be recharged with &czombie flesh&r."]
 			dependencies: ["723C224E6D6E12E4"]
+			hide: true
 			id: "4D7E3DFFE5333041"
 			tasks: [{
 				id: "1F7BA3CD9ACCBF38"
@@ -255,6 +263,7 @@
 				"Recharge with &bGolden Apples&r."
 			]
 			dependencies: ["723C224E6D6E12E4"]
+			hide: true
 			id: "66932BBDA030E6C6"
 			tasks: [{
 				id: "1C51508DB8FC9D70"
@@ -284,8 +293,10 @@
 		{
 			x: 7.0d
 			y: 4.5d
+			shape: "square"
 			description: ["Deep in the &bSnowy Forest&r you will find the &aLair of the Yeti&r. &aYetis&r can pick you up and throw you to deal significant damage, but the &eFur of the Alpha Yeti&r will be required to advanced into the &3glacial area&r of the &bSnowy Forest&r."]
 			dependencies: ["723C224E6D6E12E4"]
+			hide: true
 			size: 1.5d
 			id: "003E0266AFBCD7E2"
 			tasks: [{
@@ -313,6 +324,7 @@
 			y: 6.0d
 			description: ["The &bYeti&r armor will &efreeze&r attackers as well as &abeing extremely comfy&r."]
 			dependencies: ["003E0266AFBCD7E2"]
+			hide: true
 			id: "73C1C7843C4CE6D6"
 			tasks: [
 				{
@@ -399,12 +411,14 @@
 		{
 			x: 10.0d
 			y: 4.5d
+			shape: "square"
 			description: [
 				"Ascend the &bGlacial Peaks&r to find the &aAurora Palace&r the lair of the &eSnow Queen&r. She awaits you at the &2highest point&r."
 				""
 				"Once you find her, she is &eheavily protected&r by the &bice of her throne&r. You will need to wait for her to lower herself into attack range to defeat her."
 			]
 			dependencies: ["003E0266AFBCD7E2"]
+			hide: true
 			size: 1.5d
 			id: "64C1AFB646771B9B"
 			tasks: [{
@@ -432,6 +446,7 @@
 			subtitle: "Aimbot?"
 			description: ["The &aSeeker Bow&r is an exclusive mob-drop from &bThe Snow Queen&r that will &eautomatically target&r enemies when you shoot at them."]
 			dependencies: ["64C1AFB646771B9B"]
+			hide: true
 			id: "44F17997C9EFBEB6"
 			tasks: [{
 				id: "395A37D6DC4E2E68"
@@ -463,6 +478,7 @@
 			y: 6.0d
 			description: ["The &aTri-Bow&r is an exclusive mob-drop from &bThe Snow Queen&r that will &efire three shots&r instead of one when fired."]
 			dependencies: ["64C1AFB646771B9B"]
+			hide: true
 			id: "5F9D53C4373D0626"
 			tasks: [{
 				id: "11916AEB8ABF7361"
@@ -492,12 +508,14 @@
 		{
 			x: 7.0d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"The &cCarmintine&r contraptions of the &eUr-Ghast Tower&r will not obey you. You must &aearn the ability to control them&r. Travel into the &2Dark Forest&r and find a dungeon slightly exposed from the ground. Place a &3Trophy&r of a defeated boss on the pedestal to enter."
 				""
 				"Deep inside you will find the &dKnight Phantom&r. Defeating him will grant you access to control the &cCarmintine&r contraptions."
 			]
 			dependencies: ["723C224E6D6E12E4"]
+			hide: true
 			size: 1.5d
 			id: "2233186BEAF7BA1A"
 			tasks: [{
@@ -522,12 +540,14 @@
 		{
 			x: 10.0d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"Ascend the grand tower to confront the &cUr-Ghast&r. To aid in defeating it, use the &eGhast Traps&r to pull the &cUr-Ghast&r out of the sky allowing you to do &elots of damage to it&r. "
 				""
 				"Watch out for the &cUr-Ghast&r's tears, as they will do &dsignificant damage to you&r!"
 			]
 			dependencies: ["2233186BEAF7BA1A"]
+			hide: true
 			size: 1.5d
 			id: "11D556921BC83168"
 			tasks: [{
@@ -554,6 +574,7 @@
 			y: 0.0d
 			description: ["&cFiery Tears&r are an exclusive item dropped from the &cUr-Ghast&r. You can use them to make &4Fiery Ingots&r, which can be used to make special sets of &aarmor and tools&r. The &2Fiery Pickaxe&r features auto-smelting, while the &3Fiery Sword&r has a built in &dFire Aspect&r. Lastly, the &bFiery Armors&r will light attackers &eon fire&r."]
 			dependencies: ["11D556921BC83168"]
+			hide: true
 			id: "78427B969C4E2188"
 			tasks: [{
 				id: "1DD933B3BF7C52A3"
@@ -579,6 +600,7 @@
 			y: 0.0d
 			description: ["&cCarmintine&r can be used to make the special blocks found in the &cUr-Ghast&r's tower. Check &dREI&r for everything you can make with them."]
 			dependencies: ["11D556921BC83168"]
+			hide: true
 			id: "13A78B5F96DE93BA"
 			tasks: [{
 				id: "7C2C1F86AF2D47CD"
@@ -602,12 +624,14 @@
 		{
 			x: 7.0d
 			y: -1.5d
+			shape: "square"
 			description: [
 				"In the &aswamp&r you will find a mound that will lead you down into a &blabyrinth&r. Traverse these dark corridors and &cslay&r the &eMinotaur&r for your reward."
 				""
 				"You're looking to get your hands on some &dMeef Stroganaff&r. Consuming this will allow you to traverse deeper into the hotter part of the swamp and fight the &6Hydra&r!"
 			]
 			dependencies: ["723C224E6D6E12E4"]
+			hide: true
 			size: 1.5d
 			id: "4AEED1B1443EED17"
 			tasks: [{
@@ -634,6 +658,7 @@
 			y: -3.5d
 			description: ["The &aDiamond Minotaur Axe&r will grant you the same &echarge attack&r as the &bMinotaur&r had. It does &2increased damage while charging&r!"]
 			dependencies: ["4AEED1B1443EED17"]
+			hide: true
 			id: "41695E47A3567243"
 			tasks: [{
 				id: "1B9E8C2953A83BB0"
@@ -663,12 +688,14 @@
 		{
 			x: 10.0d
 			y: -1.5d
+			shape: "square"
 			description: [
 				"With the &aBeef Stroganoff&r protecting you from the &cheat&r of the &4Fire Swamp&r, it's time to venture in and slay the next beast on your journey: &bThe Hydra&r."
 				""
 				"&bThe Hydra&r is very tanky and can deal a lot of damage, so it's best to be &every prepared for this fight&r. Perhaps &dthe defenses in its mouth are lower than the rest of its body&r?"
 			]
 			dependencies: ["4AEED1B1443EED17"]
+			hide: true
 			size: 1.5d
 			id: "3EF9963D9B9B56CE"
 			tasks: [{
@@ -695,6 +722,7 @@
 			y: -3.5d
 			description: ["&cFiery Blood&r is an exclusive item dropped from the &aHydra&r. You can use them to make &4Fiery Ingots&r, which can be used to make special sets of &aarmor and tools&r. The &2Fiery Pickaxe&r features auto-smelting, while the &3Fiery Sword&r has a built in &dFire Aspect&r. Lastly, the &bFiery Armors&r will light attackers &eon fire&r."]
 			dependencies: ["3EF9963D9B9B56CE"]
+			hide: true
 			id: "0D80D0796A7AA38E"
 			tasks: [{
 				id: "1B5238A5CCFD431A"
@@ -719,12 +747,14 @@
 			title: "Giant's Tools"
 			x: 15.5d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"Using the &abeanstalk&r to ascend to the heavens, you find a cloud populated by &bGiants&r. Slay these &bGiants&r for their oversized tools, in particular the &eGiant's Pickaxe&r."
 				""
 				"Once you have the &eGiant's Pickaxe&r in hand, descend back into the &2Troll Cave&r to &3break into the giant &dObsidian&3 vault&r."
 			]
 			dependencies: ["20A8D6406A462AB0"]
+			hide: true
 			size: 1.5d
 			id: "107C37B812C06639"
 			tasks: [
@@ -768,6 +798,7 @@
 		{
 			x: 13.5d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"Once you have successfully slain &bThe Hydra&r, &cThe Ur-Ghast&r, and &aThe Snow Queen&r, the &eacid rains&r of the &dHighlands&r will cease, allowing you to finally enter. "
 				""
@@ -778,6 +809,7 @@
 				"11D556921BC83168"
 				"64C1AFB646771B9B"
 			]
+			hide: true
 			size: 1.5d
 			id: "20A8D6406A462AB0"
 			tasks: [{
@@ -802,12 +834,14 @@
 		{
 			x: 17.5d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"Inside the &2Giant&r's &dObsidian&r vault you will find &eThe Lamp of Cinders&r, which has the power to burn away the pesky &cthorns&r in the &dHighlands&r."
 				""
 				"Use it to ascend to the &5Final Castle&r. You can hold right-click to spread the flame in an AoE around you, or apply directly to the &cthorns&r with right-click."
 			]
 			dependencies: ["107C37B812C06639"]
+			hide: true
 			size: 1.5d
 			id: "606734E7FA4E7C48"
 			tasks: [{
@@ -839,12 +873,14 @@
 			title: "The End?"
 			x: 19.5d
 			y: 1.5d
+			shape: "square"
 			description: [
 				"And that's it! Sorry to disappoint, but this &emarks the end&r of progression in &dThe Twilight Forest&r at least for now. "
 				""
 				"I hope &2the quest rewards&r are worth it."
 			]
 			dependencies: ["606734E7FA4E7C48"]
+			hide: true
 			size: 1.5d
 			id: "72F708C07843FDEE"
 			tasks: [{
@@ -876,6 +912,7 @@
 				"In addition to the &dother rewards&r, you gain a temporary &5magic shield&r that will block the next &ethree attacks&r from enemies. &oHonestly, this is probably just a bug, as it looks like the Staff of Fortification's ability&r."
 			]
 			dependencies: ["5A0E7DEEA70E9667"]
+			hide: true
 			id: "5327BC2B76D7216D"
 			tasks: [{
 				id: "6B8E4E80B551696B"
@@ -909,6 +946,7 @@
 				"http://www.benimatic.com/tfwiki/index.php?title=Crumble_Horn"
 			]
 			dependencies: ["5327BC2B76D7216D"]
+			hide: true
 			id: "5260FB216B0D0E18"
 			tasks: [{
 				id: "25B0D57B07F4CC46"

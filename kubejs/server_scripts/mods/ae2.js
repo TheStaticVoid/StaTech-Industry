@@ -77,8 +77,26 @@ ServerEvents.recipes(e => {
     })
     .id(st('blank_pattern'));
 
+    // -- PRINTED SILICON FROM SILICON INGOT -- //
+    e.custom({
+        type: ae('inscriber'),
+        ingredients: {
+            middle: {
+                tag: 'c:silicon_ingots'
+            },
+            top: {
+                item: ae('silicon_press')
+            }
+        },
+        mode: 'inscribe',
+        result: {
+            item: ae('printed_silicon')
+        }
+    });
+
     // -- Replace the remaining iron ingots in recipes to be stainless steel -- //
-    e.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', '#c:stainless_steel_plates');
+    e.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', '#c:stainless_steel_ingots');
+    e.replaceInput({mod: 'ae2'}, '#c:iron_ingots', '#c:stainless_steel_ingots')
 });
 
 ServerEvents.tags('item', e=> {
@@ -90,7 +108,7 @@ ServerEvents.tags('item', e=> {
         'ae2:256k_crafting_storage'
     ];
 
-    CRAFTING_STORAGE.forEach(id => e.add('kubejs:crafting_storage', id));
+    CRAFTING_STORAGE.forEach(id => { e.add('kubejs:crafting_storage', id) });
 
     // -- REMOVE ENDER DUST -- //
     e.removeAllTagsFrom('ae2:ender_dust');

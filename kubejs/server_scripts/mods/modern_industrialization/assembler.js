@@ -48,20 +48,36 @@ ServerEvents.recipes(e => {
             { amount: 1, item: tr('cupronickel_heating_coil') }
         ]
     );
-    
-    // // -- KANTHAL HEATING COIL -- //
-    // assembler(
-    //     48,
-    //     400,
-    //     [
-    //         { amount: 4, item: mi('kanthal_wire') }
-    //     ],
-    //     [
-    //         { amount: 1, item: tr('kanthal_heating_coil') }
-    //     ],
-    //     null,
-    //     null
-    // );
+
+    // -- ZINC DRILL -- //
+    assembler(
+        st('zinc_drill'),
+        8,
+        200,
+        [ 
+            { amount: 1, item: mi('zinc_drill_head') },
+            { amount: 2, item: mi('iron_gear') },
+            { amount: 1, item: 'create:electron_tube' },
+            { amount: 1, tag: 'c:bronze_plates' }
+        ],
+        [ { amount: 4, item: mi('zinc_drill') } ]
+    );
+
+    // -- DESH DRILL -- //
+    assembler(
+        st('desh_drill'),
+        16,
+        200,
+        [
+            { amount: 1, item: mi('desh_drill_head') },
+            { amount: 2, tag: 'modern_industrialization:item_pipes' },
+            { amount: 2, tag: 'c:iron_gears' },
+            { amount: 2, item: mi('large_advanced_motor') },
+            { amount: 1, item: mi('processing_unit') },
+            { amount: 1, item: mi('annealed_copper_wire') }
+        ],
+        [ { amount: 4, item: mi('desh_drill') } ]
+    );
 
     // -- AUTO CRAFTING TABLE -- //
     assembler(
@@ -172,34 +188,6 @@ ServerEvents.recipes(e => {
         [
             { amount: 250, fluid: mi('cryofluid') },
             { amount: 50, fluid: mi('tritium') }
-        ]
-    );
-
-    // -- TUNGSTENSTEEL TANK -- //
-    assembler(
-        st('tungstensteel_tank'),
-        16,
-        100,
-        [
-            { amount: 8, tag: 'c:tungstensteel_plates' },
-            { amount: 1, tag: 'c:glass_blocks' }
-        ],
-        [
-            { amount: 1, item: mi('tungstensteel_tank') }
-        ]
-    );
-
-    // -- TUNGSTENSTEEL BARREL -- //
-    assembler(
-        st('tungstensteel_barrel'),
-        16,
-        100,
-        [
-            { amount: 1, tag: 'c:wooden_barrels' },
-            { amount: 8, tag: 'c:tungstensteel_plates' }
-        ],
-        [
-            { amount: 1, item: mi('tungstensteel_barrel') }
         ]
     );
 

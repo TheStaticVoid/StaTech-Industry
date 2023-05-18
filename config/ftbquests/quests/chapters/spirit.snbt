@@ -1,12 +1,12 @@
 {
 	id: "6A0C8DAE8D3AFAB7"
 	group: "135E7B9D4273E5DD"
-	order_index: 1
+	order_index: 2
 	filename: "spirit"
-	title: "&aSpirit"
+	title: "&2Spirit"
 	icon: "spirit:soul_cage"
 	subtitle: ["Repurposed Souls"]
-	default_quest_shape: ""
+	default_quest_shape: "square"
 	default_hide_dependency_lines: false
 	quests: [
 		{
@@ -14,7 +14,6 @@
 			icon: "spirit:soul_cage"
 			x: 0.0d
 			y: 0.0d
-			shape: "rsquare"
 			description: [
 				"&eSpirit&f is a data driven sould magic mod. Utilizng the power of souls, player can summon mobs, create new ones, or channel their power to perform incredible new feats. "
 				""
@@ -35,7 +34,6 @@
 		{
 			x: 4.5d
 			y: 0.0d
-			shape: "rsquare"
 			description: ["Engulfing &aIron Ingots&f in a &bSoul Fire&f surrounded by &cSoul Powder Blocks&f will give you a &dSoul Ingot&f."]
 			dependencies: ["6E718515A6A76201"]
 			id: "6075A8D0F4DE541A"
@@ -61,7 +59,6 @@
 		{
 			x: 3.0d
 			y: 0.0d
-			shape: "rsquare"
 			description: ["&aSoul Powder Blocks&f will make up the basis of some of the basic recipes. These are consumed when the recipe completes, so plan to make a lot."]
 			dependencies: ["76894C28C75188A1"]
 			id: "6E718515A6A76201"
@@ -79,7 +76,6 @@
 		{
 			x: 1.5d
 			y: 0.0d
-			shape: "rsquare"
 			description: ["&aSoul Powder&f is an essential ingredient in the &eSpirit&f mod. You can drop &6Glowstone&f or &6Glowstone Dust&f in a &cSoul Fire&f to convert it into &2Soul Powder&f."]
 			dependencies: ["0D67C6698685A00A"]
 			id: "76894C28C75188A1"
@@ -106,7 +102,6 @@
 			title: "Soul Steel Tools"
 			x: 6.5d
 			y: -1.5d
-			shape: "rsquare"
 			description: [
 				"&aSoul Steel Tools&f all grant double souls in &bSoul Catalysts&f when you kill the bound mob and allow for repairing if you place them in a &cSoul Fire&f."
 				""
@@ -195,7 +190,6 @@
 		{
 			x: 4.5d
 			y: -1.5d
-			shape: "rsquare"
 			description: ["Converts the soul on a &aSoul Pedestal&f into a &bCrude Soul&f. Why? I'm not sure either..."]
 			dependencies: [
 				"6075A8D0F4DE541A"
@@ -216,7 +210,6 @@
 		{
 			x: 6.5d
 			y: 0.0d
-			shape: "rsquare"
 			description: ["This pedestal mainly is for clearing the souls stored in a &aSoul Crystal&f. Right-click with a &bCrude Soul Crystal&f on top to clear the souls."]
 			dependencies: ["6075A8D0F4DE541A"]
 			id: "77454A0FC596FD77"
@@ -234,7 +227,6 @@
 		{
 			x: -1.5d
 			y: 0.0d
-			shape: "rsquare"
 			description: ["&aSoul Slate&f can be made by engulfing &bDeepslate&f in a &cSoul Fire&f."]
 			dependencies: ["0D67C6698685A00A"]
 			id: "775B33F2477BED1A"
@@ -252,7 +244,6 @@
 		{
 			x: 1.5d
 			y: -2.5d
-			shape: "rsquare"
 			description: [
 				"&aSoul Crystals&f will be used to store the souls of slain mobs."
 				""
@@ -274,7 +265,6 @@
 		{
 			x: -1.5d
 			y: -2.5d
-			shape: "rsquare"
 			description: ["The &aCrude Soul Crystal&f is a key component to getting your first &bSoul Crystal&f."]
 			dependencies: [
 				"775B33F2477BED1A"
@@ -295,7 +285,6 @@
 		{
 			x: 0.0d
 			y: -1.5d
-			shape: "rsquare"
 			description: ["&aSoul Glass&f luckily doesn't break the blocks required to craft it like the other recipes. You will only need 4x &9Lapis Lazuli Blocks&f to get started."]
 			dependencies: ["0D67C6698685A00A"]
 			id: "74DE588065FB6421"
@@ -313,7 +302,6 @@
 		{
 			x: 0.0d
 			y: -4.0d
-			shape: "rsquare"
 			description: [
 				"&aSoul Crystals&f will store the souls of a single type of mob when you kill them. Once you kill 64 of the same mob, the crystal will rank up to tier 1. You can see your progress by hovering over the cyrstal in your inventory."
 				""
@@ -338,7 +326,6 @@
 		{
 			x: 4.5d
 			y: 1.5d
-			shape: "rsquare"
 			description: ["Obtained by breaking any &aSpawner&f in the world. The type doesn't tend to matter, so feel free to break spawners of mundane mobs (zombies)."]
 			id: "2EE894E341889350"
 			tasks: [{
@@ -355,7 +342,6 @@
 		{
 			x: 6.5d
 			y: 1.5d
-			shape: "rsquare"
 			description: [
 				"The &aSoul Cage&f is made by engulfing a &bBroken Spawner&f in a &cSoul Fire&f surrounded by &dSoul Steel Blocks&f."
 				""
@@ -382,7 +368,6 @@
 		{
 			x: -1.5d
 			y: 3.0d
-			shape: "rsquare"
 			subtitle: "Souls to feed the factory"
 			description: [
 				"The &eSoul Vitalizer&f is a key component in simulating mob drops. It's quite expensive to make, but it will be very worth it."
@@ -414,7 +399,6 @@
 			title: "Pylons"
 			x: 1.0d
 			y: 3.0d
-			shape: "rsquare"
 			subtitle: "You must construct additional pylons"
 			description: [
 				"&aPylons&f are support blocks and a needed structure for the &eSoul Vitalizer&f to work."

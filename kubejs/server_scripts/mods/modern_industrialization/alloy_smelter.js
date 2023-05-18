@@ -25,7 +25,7 @@ ServerEvents.recipes(e => {
     alloySmelter(
         st('refined_iron_ingot'),
         16,
-        300,
+        200,
         [
             { amount: 4, item: tr('calcite_dust') },
             { amount: 1, tag: 'c:iron_ingots' }
@@ -81,7 +81,7 @@ ServerEvents.recipes(e => {
     alloySmelter(
         st('brass_ingot'),
         16,
-        300,
+        200,
         [
             { amount: 3, tag: 'c:copper_ingots' },
             { amount: 1, tag: 'c:zinc_ingots' }
@@ -95,7 +95,7 @@ ServerEvents.recipes(e => {
     alloySmelter(
         st('electrum_ingot'),
         16,
-        300,
+        200,
         [
             { amount: 2, tag: 'c:gold_ingots' },
             { amount: 2, tag: 'c:silver_ingots' }

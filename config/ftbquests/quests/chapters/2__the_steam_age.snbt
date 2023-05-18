@@ -48,7 +48,7 @@
 				""
 				"The &aSteam Mining Drill&r can mine 3x3 blocks at the time, perfect for your early game mining needs. The &aSteam Mining Drill&r requires both &9water&r and solid fuel (for example coal)."
 				""
-				"Right-click a &9water&r source to fill it with water, and make sure to place some fuel in your drill by right-clicking the fuel items on it in your inventory. The &9water&r block is not consumed to fill the drill, but will be drained alongside the fuel when it is used to mine."
+				"Right-click a &9water&r source to fill it with water, and make sure to place some fuel in your drill by &2right-clicking the fuel items on it in your inventory&r. The &9water&r block is not consumed to fill the drill, but will be drained alongside the fuel when it is used to mine."
 			]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "0F56A61DD1E8BC5D"
@@ -76,9 +76,11 @@
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"&6Bronze Barrels&r can be used to store and move 32 stacks of one item. If you break a barrel it will keep its stored contents."
+				"&6Bronze Barrels&r can be used to store and move &a32 stacks of one item&r. &eIf you break a barrel it will keep its stored contents&r."
 				""
-				"Right-click on a barrel item with an item to insert it into the barrel. Left-click the barrel to extract some items from it."
+				"Right-click on a barrel item with an item to &3insert it into the barrel&r. Left-click the barrel to &6extract some items from it&r."
+				""
+				"You can &dlock the content&r by right-clicking with a &eModern Industrialization&r &6Wrench&r."
 			]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "60602FA8424D3937"
@@ -106,9 +108,9 @@
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"&6Bronze Tanks&r can store 4 buckets of fluid each, and you can use them to interact with machines or place them in the world."
+				"&6Bronze Tanks&r can store &a4 buckets of fluid each&r, and you can use them to interact with machines or place them in the world."
 				""
-				"When placed in the world, you can right-click them with a bucket or other tanks to transfer fluids. They maintain their contents when broken, and you can stack them if they have the same contents."
+				"When placed in the world, you can right-click them with a bucket or other tanks to &9transfer fluids&r. &eThey maintain their contents when broken&r, and you can stack them if they have the same contents."
 			]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "61F04B75BE5F5E17"
@@ -137,7 +139,7 @@
 			x: 4.0d
 			y: 0.0d
 			shape: "square"
-			description: ["Smelt up your newly created Fire Clay Dusts and then combine them into a crafting table to get Fire Clay Bricks."]
+			description: ["Smelt up your newly created &aFire Clay Dusts&r and then combine them into a crafting table to get &eFire Clay Bricks&r."]
 			dependencies: ["01E58DD70F1D9B15"]
 			id: "105E5F967328888F"
 			tasks: [{
@@ -166,11 +168,11 @@
 			y: 0.0d
 			shape: "square"
 			description: [
-				"Fire Clay Dust can be made by mixing two Clay Balls and two Brick Dusts in a &eCreate&r Mechanical Mixer."
+				"&aFire Clay Dust&r can be made by mixing two &6Clay Balls&r and two &eBrick Dusts&r in a &eCreate&r &dMechanical Mixer&r."
 				""
-				"You can get Brick Dust by smashing bricks in the Forge Hammer. Similar to Bronze, mixing these dusts in a &eCreate&r Mechanical Mixer has a worse output ratio than when you unlock the &6Bronze Mixer&r."
+				"You can get &eBrick Dust&r by smashing bricks in the &aForge Hammer&r. Similar to &6Bronze&r, mixing these dusts in a &eCreate&r &dMechanical Mixer&r has a worse output ratio than when you unlock the &6Bronze Mixer&r."
 				""
-				"You're going to need 12 dust for your first boiler, but it may be wise to make some extra."
+				"You're going to need &312 Fire Clay Dust&r for your first boiler, but it may be wise to &bmake some extra&r."
 			]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "01E58DD70F1D9B15"
@@ -200,13 +202,13 @@
 			shape: "square"
 			subtitle: "Steampunk!"
 			description: [
-				"The &7steam&r machines you will soon be crafting will require &7steam&r to function. To create &7steam&r, you will need to create the Bronze Boiler. "
+				"The &7steam&r machines you will soon be crafting will require &7steam&r to function. To create &7steam&r, you will need to create the &6Bronze Boiler&r. "
 				""
-				"It probably looks expensive to you right now, but don't forget that you can triple ores with the Forge Hammer. As you gain access to machines the recipes will become cheaper. "
+				"It probably looks expensive to you right now, but don't forget that you can &eincrease your ore processing&r through the &aForge Hammer&r. As you gain access to machines the recipes will become &3cheaper&r. "
 				""
-				"The boiler will slowly use fuel to heat itself up. When it's hot enough, it will start to produce &7steam&r."
+				"The &6Bronze Boiler&r will slowly use fuel to heat itself up. When it's hot enough, and has &9water&r, it will start to produce &7steam&r."
 				""
-				"Don't worry, the boiler will not void your fuel if the &7steam&r output is full. You can input &9water&r the boiler with a bucket or with pipes."
+				"Don't worry, the &6Bronze Boiler&r will &cnot void your fuel&r if the &7steam&r output is full. You can input &9water&r the boiler with a bucket or with &bpipes&r."
 			]
 			dependencies: ["105E5F967328888F"]
 			size: 1.5d
@@ -235,13 +237,15 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"You might be wondering if there's a way to automatically input &9water&r into the Bronze Boiler instead of by hand with buckets, and there is!"
+				"You might be wondering if there's a way to automatically input &9water&r into the &6Bronze Boiler&r instead of by hand with buckets, and there is!"
 				""
 				"Surrounding a &6Bronze Water Pump&r horizontally with &9water&r will have it start producing &9water&r for 1 EU/t."
 				""
-				"The pump will produce 1/8th of a bucket of &9water&r for every adjacent &9water&r source every 5 seconds, for a max output of 1 bucket / 5 seconds."
+				"The pump will produce 1/8th of a bucket of &9water&r for every adjacent &9water&r source every 5 seconds, for a max output of 1 bucket / 5 seconds. &dTLDR&r, place it like this:"
 				""
-				"You don't have access to pipes right now, so you can place your &7steam&r Boiler directly on top for now."
+				"{image:statech:textures/item/bronze_pump.png width:160 height:90 align:1}"
+				""
+				"If you haven't made any &aFluid Pipes&r yet, you can place the &6Bronze Boiler&r on top to pump the water directly into it."
 			]
 			dependencies: ["77EAB1D011541800"]
 			id: "4B5B04123C38AA37"
@@ -270,7 +274,7 @@
 			x: 7.0d
 			y: -2.0d
 			shape: "rsquare"
-			description: ["If you'd rather save on some materials, you can use the &eCreate&r mod's &aPump&r to pump &9water&r from an infinite pool and pipe it into the boiler directly."]
+			description: ["If you'd rather save on some materials, you can use the &eCreate&r mod's &aPump&r and &aPipes&r to pump &9water&r from an infinite pool and pipe it into the &6Bronze Boiler&r directly."]
 			dependencies: ["77EAB1D011541800"]
 			id: "4F22C9E20AB004D9"
 			tasks: [
@@ -307,17 +311,17 @@
 			y: 2.0d
 			shape: "square"
 			description: [
-				"Now that you have a boiler built, you can use it to power other &7steam&r machines. The boiler will automatically produce and send &7steam&r to adjacent machines, up to 8 millibuckets per tick. You will soon learn about pipes to extend the range of &7steam&r distribution."
+				"Now that you have a &6Bronze Boiler&r built, you can use it to power other &7steam&r machines. The &6boiler&r will automatically produce and send &7steam&r to &aadjacent machines&r, up to 8 millibuckets per tick. "
 				""
-				"&6Bronze machines&r can only process recipes up to 2 EU/t. 1mB of &7steam&r is equivalent to 1 EU, meaning a boiler at max temperature can power 4 machines simultaneously."
+				"&6Bronze machines&r can only process recipes up to 2 EU/t. 1mB of &7steam&r is equivalent to 1 EU, meaning a &6boiler&r at &cmax temperature&r can power &e4 machines simultaneously&r."
 				""
-				"&7Steam Machines&r will accept inputs from any side, be it items, &7steam&r or another fluid. You can lock their slots by clicking on the lock in the interface. Locked slots only accept one type of item or fluid."
+				"&7Steam Machines&r will &2accept inputs from any side&r, be it items, &7steam&r or another fluid. You can &6lock their slots by clicking on the lock in the interface&r. &2Locked slots only accept one type of item or fluid&r."
 				""
-				"Every machine has an output side, and you can enable auto-output from the interface. Hoppers, pipes, and other automation can extract output items from any side, of course. You can also reduce the maximum number of items in a slot by scrolling."
+				"Every machine has an &coutput side&r, and you can enable&e auto-output&r from the interface. Hoppers, pipes, and other automation can &2extract output items from any side&r, of course. You can also &breduce the maximum number of items in a slot by scrolling&r."
 				""
-				"Using a wrench, you can rotate any machine by right-clicking. You can rotate the output side by sneaking while you shift-click."
+				"Using a &ewrench&r, you can rotate any machine by right-clicking. You can &3rotate the output side&r by sneaking while you shift-click."
 				""
-				"&cNOTE&r: Breaking a machine with the wrench WILL NOT drop it. Use a pickaxe for that!"
+				"&cNOTE&r: Breaking a machine with the &ewrench&r &cWILL NOT drop it&r. &aUse a pickaxe for that&r!"
 			]
 			dependencies: ["77EAB1D011541800"]
 			id: "343C68866C58ADC3"
@@ -333,12 +337,6 @@
 					item: "modern_industrialization:wrench"
 				}
 				{
-					id: "105B96CB49F152EE"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 8055223505892499306L
-				}
-				{
 					id: "363600FDE0BDB6A8"
 					type: "xp"
 					xp: 10
@@ -352,15 +350,15 @@
 			shape: "square"
 			subtitle: "Let the spaghetti commence"
 			description: [
-				"Pipes are used in the recipes of some machines, but they can also be placed in the world. Up to 3 pipes can fit in a single block."
+				"&aPipes&r are used in the recipes of some machines, but they can also be &6placed in the world&r. &eUp to 3 different pipes / cables can fit in a single block&r."
 				""
-				"Pipes of different colors will not connect."
+				"&aPipes&r of different colors will &cnot&r connect."
 				""
-				"Right-clicking a pipe with a wrench will change the connection type, shift-right-clicking will drop the pipe."
+				"Right-clicking a &apipe&r with a &ewrench&r will change the connection type, shift-right-clicking will &6drop the pipe&r. You can also &aadjust the connection&r by right-clicking the connection with your hand."
 				""
-				"Fluid Pipes can only contain one type of fluid, and by default they won't connect to empty pipes or blocks. You can force a connection by right-clicking the center of the pipe with the wrench, or by right-clicking a block with a pipe in your hand: it will connect, but not consume the item in your hand."
+				"&aFluid Pipes&r can only contain &2one type of fluid&r, and by default they &3won't connect to empty pipes or blocks&r. You can force a connection by right-clicking the center of the pipe with the wrench, or by &2right-clicking a block with a pipe in your hand&r: it will connect, but &cnot consume&r the item in your hand."
 				""
-				"The different types of pipes don't work exactly the same way. Every tick, Fluid Pipes will try to evenly extract for all connected blocks, and then try to insert that evenly. "
+				"Every tick, &aFluid Pipes&r will try to evenly extract for all connected blocks, and then try to insert that evenly. "
 			]
 			dependencies: ["77EAB1D011541800"]
 			id: "396573B9EAE57B42"
@@ -403,11 +401,11 @@
 			y: 0.0d
 			shape: "rsquare"
 			description: [
-				"Each fluid pipe has an internal buffer of exactly one bucket (1000 millibuckets). When you connect multiple pipes directly, they become linked and share their internal storage. "
+				"Each &afluid pipe&r has an &einternal buffer&r of exactly one bucket (1000 millibuckets). When you connect multiple pipes directly, they become linked and &2share their internal storage&r. "
 				""
-				"How much fluid is transferred every tick is then bounded by the total capacity of the network. For example, 25 fluid pipes linked together can transfer up to 25000 mb/t of fluid - assuming you can produce that much fluid of course!"
+				"How much fluid is transferred every tick is then &6bounded by the total capacity of the network&r. For example, 25 fluid pipes linked together can transfer up to &d25000 mb/t of fluid&r - assuming you can produce that much fluid of course!"
 				""
-				"Note that you might be limited by the transfer rates of the tanks/machines the pipes are connected to."
+				"Note that you might be limited by the &etransfer rates of the tanks/machines&r the pipes are connected to."
 			]
 			dependencies: ["396573B9EAE57B42"]
 			id: "0AC4D9039788F1C6"
@@ -416,19 +414,11 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [
-				{
-					id: "1A6EADD1682777D6"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 8055223505892499306L
-				}
-				{
-					id: "0EA84D2F6279FF4B"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "0EA84D2F6279FF4B"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 3.5d
@@ -467,7 +457,7 @@
 				""
 				"&eCreate&r's &aMechanical Press&r is not powerful enough for some recipes, so you will want to craft one of these."
 				""
-				"I would recommend making this one first."
+				"&eI would recommend making this as soon as possible.&r"
 			]
 			dependencies: ["343C68866C58ADC3"]
 			id: "62474684DD7A1B7C"
@@ -495,7 +485,7 @@
 			y: 4.0d
 			shape: "square"
 			subtitle: "A more efficient furnace"
-			description: ["The &6Bronze Furnace&r is a furnace that accepts &7steam&r instead of traditional fuels. It is as slow as a normal furnace, but is 10 times more fuel efficient due to using &7Steam&r."]
+			description: ["The &6Bronze Furnace&r is a furnace that accepts &7steam&r instead of &atraditional fuels&r. It is as slow as a normal furnace, but is 10 times &3more fuel efficient&r due to using &7Steam&r."]
 			dependencies: ["343C68866C58ADC3"]
 			id: "112E7B1922E2CCC3"
 			tasks: [{
@@ -522,7 +512,7 @@
 			y: 4.0d
 			shape: "square"
 			subtitle: "Mixing it up!"
-			description: ["The &6Bronze Mixer&r will help you mix dusts, giving you a better ratio for Bronze, Fire Clay, and Uncooked &eSteel&r. It can also create Cobblestone and Clay."]
+			description: ["The &6Bronze Mixer&r will help you &amix dusts&r, giving you a better ratio for &6Bronze&r and &aFire Clay&r, as well as opening up a recipe for  &eUncooked Steel&r. It can also create &dCobblestone&r and &3Clay&r."]
 			dependencies: ["343C68866C58ADC3"]
 			id: "693368CF3E13AB7A"
 			tasks: [{
@@ -550,11 +540,11 @@
 			shape: "square"
 			subtitle: "Bzzzzz"
 			description: [
-				"The &6Bronze Cutting Machine&r will give you better ratios for bolts, gears, rings and rods. It uses a little bit of lubricant every time."
+				"The &6Bronze Cutting Machine&r will give you &ebetter ratios&r for bolts, gears, rings and rods. It uses a little bit of &6lubricant&r every time."
 				""
 				"The &6Cutting Machine&r is also useful for automatically chiseling blocks, getting better ratios for wood, and many other things. Check out the &dREI&r recipes for it, it's quite expansive!"
 				""
-				"Until you have a &aCoke Oven&r, you don't have any Lubricant, so maybe wait until you have access to Creosote before making this?"
+				"Until you have a &aCoke Oven&r, you don't have any &6Lubricant,&r so maybe wait until you have access to Creosote before making this?"
 			]
 			dependencies: ["343C68866C58ADC3"]
 			id: "3730B6FAEF7DAA37"
@@ -585,17 +575,17 @@
 			shape: "square"
 			subtitle: "Your first multiblock machine!"
 			description: [
-				"Once you have had enough of the bronze machines, you can start working toward making &eSteel&r. The ultimate goal is to be able to build the quarry, a multiblock that will dig ores for you."
+				"Once you have had enough of the &6bronze machines&r, you can start working toward making &eSteel&r. The ultimate goal is to be able to build the &2Steam Quarry&r, a &emultiblock that will dig ores for you&r."
 				""
-				"The first step in &eSteel&r production is to make Coke by heating coal without oxygen. To do this, you will need to make the &aCoke Oven&r multiblock. The requirements for building this match directly to the requirements of this quest."
+				"The first step in &eSteel&r production is to make &bCoke&r by heating coal without oxygen. To do this, you will need to make the &aCoke Oven&r multiblock. &eThe block requirements for building this match directly to the requirements of this quest&r."
 				""
-				"The &aCoke Oven&r block has the role of the controller. Every multiblock is managed by a controller, but you usually cannot I/O from the controller directly: all input and output goes through the hatches. We need a fluid input because the coke oven is powered by &7steam&r, we need an item input for the coal and output for the coke."
+				"The &aCoke Oven&r block has the role of the &2controller&r for the multiblock. &eEvery multiblock is managed by a controller&r, but you usually &ccannot I/O from the controller directly&r: all input and output goes through &ahatches&r. We need a &2Fluid Input Hatch&r because the &aCoke Oven&r is powered by &7steam&r, we need an item input for the coal and output for the coke."
 				""
-				"If you're having trouble forming the multiblock, hold W on the &aCoke Oven&r in your inventory to view the Ponder scene for the multiblock, additionally you can hold the Wrench to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
+				"If you're having trouble forming the multiblock, hold W on the &aCoke Oven&r in your inventory to view the &bPonder&r scene for the multiblock, additionally you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
 				""
-				"Once the &aCoke Oven&r says Shape Valid, fill the fluid input hatch with &7Steam&r, put Coal in the Item Input Hatch and you're good to go!"
+				"Once the &aCoke Oven&r says &dShape Valid&r, fill the fluid input hatch with &7Steam&r, put Coal in the &3Item Input Hatch&r and you're good to go!"
 				""
-				"Coke will be very useful for steel, but it also is a powerful fuel as it lasts four times as long as coal."
+				"Coke will be very useful for &eSteel&r, but it also is a powerful fuel as it lasts four times as long as coal."
 			]
 			dependencies: ["4AF847F8B403E6E3"]
 			dependency_requirement: "one_completed"
@@ -674,7 +664,7 @@
 			x: 7.5d
 			y: 5.5d
 			shape: "square"
-			description: ["Individually Bricks need to be packaged down into Brick blocks. You can do this for now with a Bronze Compressor, but it's rather slow and you'll want to use a &eSteel Packer&r once it's available for a quicker recipe."]
+			description: ["Individually &dBricks&r need to be packaged down into &2Brick blocks&r. You can do this for now with a &6Bronze Compressor&r, but it's rather slow and you'll want to use a &eSteel Packer&r once it's available for a quicker recipe."]
 			dependencies: ["62474684DD7A1B7C"]
 			id: "4AF847F8B403E6E3"
 			tasks: [{
@@ -701,9 +691,9 @@
 			y: 7.5d
 			shape: "square"
 			description: [
-				"You may have noticed in the recipe for Coke that you have a chance to get Creosote. By default, since we didn't attach a Fluid Output Hatch, this fluid is voided in the process in the &aCoke Oven&r."
+				"You may have noticed in the recipe for Coke that you have a chance to get &aCreosote&r. By default, since we didn't attach a &2Fluid Output Hatch&r, this fluid is &cvoided&r in the process in the &aCoke Oven&r."
 				""
-				"Creosote can prove to be very useful, such as being able to make Lubricant for your Cutting Machines. If you'd like to start storing Creosote, attach a Fluid Output Hatch to the &aCoke Oven&r and pipe the fluid into tanks."
+				"&aCreosote&r can prove to be very useful, such as being able to make &6Lubricant&r for your &6Cutting Machines&r. If you'd like to start storing &aCreosote&r, attach a &2Fluid Output Hatch&r to the &aCoke Oven&r and pipe the fluid into tanks."
 			]
 			dependencies: ["4AD151B1DCA26F4F"]
 			id: "7A6086319A01A16C"
@@ -730,7 +720,7 @@
 			x: 5.0d
 			y: 5.5d
 			shape: "square"
-			description: ["By combining Creosote with &cRedstone Dust&r in a mixer you can create Lubricant. This fluid will be very useful in use of a Cutting Machine."]
+			description: ["By combining &3Creosote&r with &cRedstone Dust&r in a mixer you can create &6Lubricant&r. This fluid will be very useful in use of a &6Cutting Machine&r."]
 			dependencies: [
 				"7A6086319A01A16C"
 				"693368CF3E13AB7A"
@@ -787,7 +777,7 @@
 			x: 7.5d
 			y: 10.75d
 			shape: "square"
-			description: ["Mixing your newly created Coke Dust with Iron Dust in a Mixer you can make &eUncooked Steel Dust&r. This is the precursor for &eSteel&r, now you will need another multiblock to smelt it!"]
+			description: ["Mixing your newly created &aCoke Dust&r with &3Iron Dust&r in a &6Mixer&r you can make &eUncooked Steel Dust&r. This is the precursor for &eSteel&r, now you will&2 need another multiblock to smelt it&r!"]
 			dependencies: ["738FE28369D3A550"]
 			id: "4A1086D69A76909D"
 			tasks: [{
@@ -822,9 +812,9 @@
 			shape: "square"
 			subtitle: "Not the soda"
 			description: [
-				"Coke is a heavily improved version of coal. It's 4x as powerful as regular coal, and is a key component in creating &eSteel&r."
+				"&aCoke&r is a heavily improved version of &ccoal&r. It's &24x as powerful&r as regular &ccoal,&r and is a key component in creating &eSteel&r."
 				""
-				"To make Coke Dust, you will need to pass regular Coke through a Macerator."
+				"To make &eCoke Dust&r, you will need to pass regular &aCoke&r through a &6Macerator&r."
 			]
 			dependencies: ["4AD151B1DCA26F4F"]
 			id: "738FE28369D3A550"
@@ -861,9 +851,9 @@
 			shape: "square"
 			subtitle: "Better than the vanilla version!"
 			description: [
-				"To turn your &eUncooked Steel&r Dust into &eSteel Ingots&r, you will need a Blast Furnace. For now your Blast Furnace will be powered off of &7steam&r. "
+				"To turn your &eUncooked Steel&r Dust into &eSteel Ingots&r, you will need a &2Blast Furnace&r. For now your &2Blast Furnace&r will be powered off of &7steam&r. "
 				""
-				"You will need the same amount of materials in the quest requirements to build the Blast Furnace. It's structure is very similar to the &aCoke Oven&r's with Bricks being replaced by Fire Clay Bricks and one extra hollow layer on top. Like before, if you forget how to build the multiblock, you can always hold your wrench to see it or hold 'W' on the &aSteam Blast Furnace&r item to view it's Ponder scene."
+				"You will need the same amount of materials in the quest requirements to build the &2Steam Blast Furnace&r. It's structure is very similar to the &aCoke Oven&r's with &cBricks&r being replaced by &eFire Clay Bricks&r and one extra hollow layer on top. Like before, if you forget how to build the multiblock, you can always hold your wrench to see it or hold 'W' on the &aSteam Blast Furnace&r item to view it's &bPonder&r scene."
 			]
 			dependencies: ["4A1086D69A76909D"]
 			size: 2.0d
@@ -938,15 +928,11 @@
 			shape: "square"
 			subtitle: "The beginning of industry"
 			description: [
-				"Now that you have &eSteel&r, you can upgrade your &6Bronze Machines&r if you want. &eSteel machines&r can process recipes up to 4 EU/t, and they will process recipes at twice the speed as long as the energy usage doesn't go above 4 EU/t. Basically they are twice as fast as &6Bronze Machines&r and they may also unlock new recipes."
+				"Now that you have &eSteel&r, you can upgrade your &6Bronze Machines&r if you want. &eSteel machines&r can process recipes up to &24 EU/t&r, and they will process recipes at twice the speed as long as the energy usage doesn't go above &24 EU/t&r. Basically they are twice as fast as &6Bronze Machines&r and they may also &3unlock new recipes&r."
 				""
-				"Additionally, &eSteel Hatches&r have more capacity than &6Bronze Hatches&r, and a multiblock with at least ONE steel hatch (regardless of item/fluid/etc.) will be upgraded to &eSteel&r tier. This means that it will go twice as fast if its energy usage wouldn't exceed 4 EU/t."
+				"Additionally, &eSteel Hatches&r have more capacity than &6Bronze Hatches&r, and a multiblock with at &aleast ONE steel hatch&r (regardless of item/fluid/etc.) will be upgraded to &eSteel&r tier. This means that it will go &etwice as fast&r if its energy usage wouldn't exceed &24 EU/t&r."
 				""
-				"A &eSteel Boiler&r will produce twice as much &7steam&r as a Bronze one, that means up to 16 EU/t, and a &eSteel Water Pump&r will produce twice as much &9water&r as its Bronze counterpart, so up to 2 buckets / 5 seconds."
-				""
-				"&eSteel Tanks&r store up to 8 buckets. &eSteel&r Pipes are equivalent to other kinds of pipes, but you can combine them with other types of pipes on the same block, so they may be useful if you really need another distinct pipe network."
-				""
-				"You can check all recipes in REI."
+				"A &eSteel Boiler&r will produce twice as much &7steam&r as a Bronze one, that means up to &e16 EU/t&r, and a &eSteel Water Pump&r will produce twice as much &9water&r as its &6Bronze&r counterpart, so up to &e2 buckets / 5 seconds&r."
 			]
 			dependencies: ["578C4D10471D6EC9"]
 			size: 1.25d
@@ -977,13 +963,13 @@
 			y: 13.0d
 			shape: "square"
 			description: [
-				"Item Pipes are very similar to the Fluid Pipe counterpart, except they transfer items instead of fluids. Alongside this, there are several other changes:"
+				"&aItem Pipes&r are very similar to the &eFluid Pipe&r counterpart, except they &btransfer items instead&r of fluids. Alongside this, there are several other changes:"
 				""
-				"Item Pipes will not connect to inventories by default, but again you can force a connection. Right-clicking a connection without holding a wrench will allow you to set a filter. By default, whitelist mode is enabled, so no items will be inserted or extracted directly. "
+				"&aItem Pipes&r will not connect to inventories by default, but again you can force a connection. Right-clicking a connection without holding a wrench will allow you to set a filter. By default, whitelist mode is enabled, so no items will be inserted or extracted directly. "
 				""
-				"Item Pipes will insert items into higher priorities first and they will transfer 16 items every few seconds. They can be upgraded with motors."
+				"&aItem Pipes&r will insert items into higher priorities first and they will transfer &e16 items every 3 seconds&r. &dThe amount of items transferred every 3 seconds can be upgraded with motors&r."
 				""
-				"Note: The item pipes are on whitelist by default (which mean only the items in the filter will be moved). You need to switch to blacklist (only the items NOT in the filter will be moved) or add the item you want to move to the filter. Be careful that you need to configure BOTH sides of the pipe, otherwise items will not move."
+				"&cNote&r: The &aitem pipes&r are on whitelist by default (which mean only the items in the filter will be moved). You need to switch to blacklist (only the items NOT in the filter will be moved) or add the item you want to move to the filter. &3Be careful that you need to configure BOTH sides of the pipe, otherwise items will not move&r."
 			]
 			dependencies: ["45CE5F461A159F66"]
 			id: "4D4B76A0251E4A45"
@@ -1025,7 +1011,7 @@
 			x: 16.0d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["Instead of crafting entirely new machines, you can use the &eSteel&r Upgrade with a &6Bronze Machine&r in a Smithing Table to upgrade it into its &eSteel&r version."]
+			description: ["Instead of crafting entirely new machines, you can use the &eSteel&r Upgrade with a &6Bronze Machine&r in a &3Smithing Table&r to upgrade it into its &eSteel&r version."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "577BA8EF0FB84BCE"
 			tasks: [{
@@ -1058,7 +1044,7 @@
 			x: 16.0d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["With a few steel plates, you can craft the &aAutomatic Trash Can&r. It will destroy any item or fluid that is piped into it."]
+			description: ["With a few steel plates, you can craft the &aAutomatic Trash Can&r. &dIt will destroy any item or fluid that is piped into it&r."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "5F56BBCF8B57F434"
 			tasks: [{
@@ -1137,7 +1123,7 @@
 			x: 18.0d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["For those of you who have played &bGregTech&r, these are similar to using circuit numbers in recipes. Similar to that sytem, using one of these items in a recipe will tell the Packer what recipe to use without consuming the item."]
+			description: ["For those of you who have played &bGregTech&r, these are similar to using &dcircuit numbers&r in recipes. Similar to that sytem, using one of these items in a recipe will tell the &ePacker&r what recipe to use &cwithout consuming the item&r."]
 			dependencies: ["759C375900C081FF"]
 			id: "28EEDBD2BE127F84"
 			tasks: [
@@ -1174,11 +1160,11 @@
 			shape: "square"
 			subtitle: "Ores Ad Nauseam"
 			description: [
-				"&aThe Steam Quarry&r is a &7steam&r multiblock machine that consumes drills to dig deeper than the bedrock and gives you back some ores. It's recommended that before you build this multiblock you create multiple Steam Blast Furnaces before you attempt to build it because it requires a lot of &eSteel&r."
+				"&aThe Steam Quarry&r is a &7steam&r multiblock machine that &cconsumes drills&r to dig deeper than the bedrock and gives you back some ores. It's recommended that before you build this multiblock you create multiple &eSteam Blast Furnaces&r before you attempt to build it because it requires a lot of &eSteel&r."
 				""
-				"To build this multiblock, you will need the material list from this quest. You can check the Ponder scene by holding 'W' on the &7steam&r Quarry block in your inventory. Alternatively, holding your wrench will show where blocks need to go."
+				"To build this multiblock, you will need the material list from this quest. You can check the &bPonder&r scene by holding 'W' on the &7steam&r Quarry block in your inventory. Alternatively, holding your wrench will show where blocks need to go."
 				""
-				"I'd recommend having multiple Item Output Hatches in the case you get lucky and get multiple ores from a single process."
+				"I'd recommend having multiple &6Item Output Hatches&r in the case you &dget lucky and get multiple ores from a single process&r."
 			]
 			dependencies: ["4D4B76A0251E4A45"]
 			size: 1.5d
@@ -1263,7 +1249,7 @@
 			x: 22.0d
 			y: 12.0d
 			shape: "rsquare"
-			description: ["Putting the &6Bronze Drill&r in the &aSteam Quarry&r will return ores in the item output. Make sure to pipe out the items immediately so you don't void any of the ores!"]
+			description: ["Putting the &6Bronze Drill&r in the &aSteam Quarry&r will return ores in the &6Item Output Hatches&r. Make sure to pipe out the items immediately so you &cdon't void any of the ores&r!"]
 			dependencies: ["1F5ACBB3A3D021B3"]
 			id: "1CBCB4D1ECFBDE9E"
 			tasks: [{
@@ -1327,7 +1313,7 @@
 			x: 15.5d
 			y: 11.0d
 			shape: "square"
-			description: ["The &bWiremill&r will be useful in the future for the creation of wires. Combine the wires with &8Rubber Sheets&r to get cables."]
+			description: ["The &aWiremill&r will be useful in the future for the &acreation of wires&r. Combine the wires with &8Rubber Sheets&r to get &ecables.&r"]
 			dependencies: ["45CE5F461A159F66"]
 			id: "3C093BB3F3D520D9"
 			tasks: [{
@@ -1404,7 +1390,7 @@
 			x: 12.5d
 			y: 9.5d
 			shape: "square"
-			description: ["Combining &aSynthetic Oil&r with Paper in a Mixer will grant you two Rubber Sheets. You will unlock a more efficient recipe with petrochemistry in the future."]
+			description: ["Combining &aSynthetic Oil&r with Paper in a &6Mixer&r will grant you two&2 Rubber Sheets&r. You will unlock a more efficient recipe with petrochemistry in the future."]
 			dependencies: ["4D3EDFA212A5B4F1"]
 			id: "38E38B24C0432327"
 			tasks: [{
@@ -1490,9 +1476,9 @@
 			y: 5.5d
 			shape: "square"
 			description: [
-				"Paper production has been &mgregified&r statified. Macerating logs into Wood Pulp, then mixing that Wood Pulp with &9Water&r will produce paper!"
+				"&aPaper&r production has been &3&mgregified&r&r &estatified&r. &6Macerating&r logs into &dWood Pulp&r, then mixing that &dWood Pulp&r with &9Water&r will produce &apaper&r!"
 				""
-				"I wouldn't put this off, as you will need it to make Rubber Sheets!"
+				"I wouldn't put this off, as you will need it to make &2Rubber Sheets&r!"
 			]
 			dependencies: ["693368CF3E13AB7A"]
 			id: "6BF59CA2D21361D1"
@@ -1524,6 +1510,8 @@
 				"The &bPipe Config Card&r can be used to camouflage pipes and to &dcopy&r the settings of the &aItem Pipes&r."
 				""
 				"Holding the card in your offhand will automatically apply its settings to any &aItem Pipe&r you place."
+				""
+				"&eHover over the item and press shift to see all the controls&r."
 			]
 			dependencies: ["5CAAB61AA7E9FC66"]
 			id: "1EE124C7111A27F0"
@@ -1602,11 +1590,11 @@
 			y: 9.5d
 			shape: "square"
 			description: [
-				"With your &aWiremill&r and &8Rubber Sheets&r you can now craft your first Cables. There are three variants in LV, Copper, Tin, and Silver Cables."
+				"With your &aWiremill&r and &8Rubber Sheets&r you can now craft your first &eCables.&r There are three variants in LV, &eCopper, Tin, and Silver Cables&r."
 				""
-				"There is not any EU loss per block as in GregTech, but there still is a max transfer rate. Hovering over the Cable in world will show you how much power is flowing through it."
+				"There is &cnot any EU loss per block&r as in &3GregTech,&r but there still is a &dmax transfer rate&r. Hovering over the Cable in world will show you how much &2power is flowing through it&r."
 				""
-				"Cables of different types do not connect to one another."
+				"&eCables&r of different colors and types do &cnot connect to one another&r."
 			]
 			dependencies: [
 				"38E38B24C0432327"
@@ -1655,11 +1643,11 @@
 			description: [
 				"The &aLarge Tank&r is a multiblock that allows you to store large amounts of some fluid, for example &7steam&r. It can store 64 buckets worth of fluid for every block in the structure (including sides). "
 				""
-				"The &aLarge Tank&r has many possible sizes depending on how much storage you need. You can open the size configuration panel by clicking on a button in the controller."
+				"The &aLarge Tank&r has many possible sizes depending on &bhow much storage you need&r. You can open the size configuration panel by clicking on a button in the controller."
 				""
-				"Only pipes may access the tank, and only through the controller. Don't break the controller or you will void all of the stored fluid!"
+				"Only &9pipes may access the tank&r, and &6only through the controller&r. &cDon't break the controller&r or you will void all of the stored fluid!"
 				""
-				"If you need help building the various sizes, make sure to hold out a wrench to see where all the blocks need to go. You can also check the Ponder scene by holding 'W' on the Large Tank block in your inventory."
+				"If you need help building the various sizes, make sure to hold out a wrench to see where all the blocks need to go. You can also check the &bPonder&r scene by holding 'W' on the Large Tank block in your inventory."
 			]
 			dependencies: ["3505E9029F3CEAD0"]
 			id: "1F61820447808CD1"
@@ -1701,7 +1689,11 @@
 			x: 17.5d
 			y: 9.5d
 			shape: "square"
-			description: ["Motors, Pumps, Robot Arms, Conveyors, and Pistons are key components moving forward for a lot of the machines you will be making."]
+			description: [
+				"&eMotors, Pumps, Robot Arms, Conveyors, and Pistons&r are key components moving forward for a lot of the machines you will be making."
+				""
+				"I'd recommend &dcrafting these in bulk&r, as it they are quite tedious to craft by hand. Once you unlock the &6Asssembler&r, it will be significantly easier to make these."
+			]
 			dependencies: ["004069E9EBF8D803"]
 			id: "3505E9029F3CEAD0"
 			tasks: [
@@ -1823,9 +1815,9 @@
 			shape: "square"
 			subtitle: "Your first circuits!"
 			description: [
-				"&lCongratulations&r, you've made your &2first circuits&r! With these you can finally start making Basic Machine Hulls, opening up electric machines."
+				"&lCongratulations&r, you've made your &2first circuits&r! With these you can finally start making &eBasic Machine Hulls&r, opening up &3electric machines.&r"
 				""
-				"You'll need a lot of these through progression, I'd recommend automating them or batching large quantities."
+				"You'll need a lot of these through progression, &dI'd recommend automating them or batching large quantities&r."
 			]
 			dependencies: ["5CAAB61AA7E9FC66"]
 			size: 2.0d
@@ -1887,17 +1879,17 @@
 			shape: "rsquare"
 			subtitle: "Goodbye fuel"
 			description: [
-				"The &aLarge Steam Boiler&r is an upgraded version of the smaller Bronze and &eSteel&r Boilers. It uses fuels 8 times faster than the Furnace, but it produces 256 mb/t of &7steam&r when fully heated."
+				"The &aLarge Steam Boiler&r is an upgraded version of the smaller &6Bronze&r and &eSteel&r Boilers. &cIt uses fuels 8 times faster than the Furnace&r, but it produces &3256 mb/t&r of &7steam&r when fully heated."
 				""
-				"Unlike its single block counterpart, in the Large Steam Boiler, 80% of any unconsumed heat will be lost. This means the ratio of energy produced by fuel consumed will be drastically decreased when the output decreases below maximum. This will happen when the Boiler is not used continuously at maximum output. It would be a good idea to put the &7steam&r produced into a buffer, such as a Large Tank multiblock structure."
+				"Unlike its single block counterpart, in the &aLarge Steam Boiler&r, &c80% of any unconsumed heat will be lost&r. This means the ratio of energy produced by fuel consumed will be drastically decreased when the &coutput decreases below maximum&r. This will happen when the B&aoiler&r is &enot used continuously at maximum output&r. It would be a good idea to put the &7steam&r produced into a buffer, such as a &2Large Tank&r multiblock structure. (or &eCreate Tanks&r)"
 				""
-				"The &aLarge Steam Boiler&r is comprised of one layer of Heatproof Machine Casings and three layers of Bronze Plated Bricks."
+				"The &aLarge Steam Boiler&r is comprised of one layer of &eHeatproof Machine Casings&r and three layers of &6Bronze Plated Bricks&r."
 				""
-				"The controller goes on the second layer (i.e. the first layer of Bronze Plated Bricks). The two middle blocks are Bronze Pipe Machine Casings."
+				"The &dcontroller&r goes on the second layer (i.e. the first layer of Bronze Plated Bricks). The two middle blocks are Bronze Pipe Machine Casings."
 				""
-				"Hatches must be placed on the bottom layer."
+				"&aHatches must be placed on the bottom layer&r."
 				""
-				"You can check the Ponder scene for this block by holding 'W' on the &aLarge Steam Boiler&r block in your inventory, or hold a wrench to see a diagram of where the blocks need to go."
+				"You can check the &bPonder&r scene for this block by holding 'W' on the &aLarge Steam Boiler&r block in your inventory, or hold a wrench to see a diagram of where the blocks need to go."
 			]
 			dependencies: ["72090D36C27DC4AF"]
 			size: 1.5d
@@ -1982,7 +1974,7 @@
 			x: 4.0d
 			y: 5.5d
 			shape: "square"
-			description: ["&dBattery Alloy&r is going to be required as you move forward towards your first &7steam&r Turbine. If you have found some Antimony, you can go ahead and mix it together with some Lead Dust to make Battery Alloy Dust."]
+			description: ["&dBattery Alloy&r is going to be required as you move forward towards your first &eSteam Turbine&r. If you have found some &3Antimony,&r you can go ahead and mix it together with some &dLead Dust&r to make &dBattery Alloy Dust&r."]
 			dependencies: ["693368CF3E13AB7A"]
 			id: "3820A443B373ADA0"
 			tasks: [{
@@ -2017,9 +2009,9 @@
 			shape: "square"
 			subtitle: "End of the Steam Age"
 			description: [
-				"With all the components you have available now, you can create a Basic Machine Hull. This is the basis for most electrical machines, so be prepared to make a lot of these."
+				"With all the components you have available now, you can create a &aBasic Machine Hull&r. This is the basis for most &eelectrical machines&r, so &dbe prepared to make a lot of these&r."
 				""
-				"This marks the end of &eChapter 2&r. &lCongratulations&r! Get ready, as LV brings a lot of new opportunities and challenges!"
+				"This marks the end of &eChapter 2&r. &lCongratulations&r! Get ready, as &2LV brings a lot of new opportunities and challenges&r!"
 			]
 			dependencies: [
 				"0390CA76F7045D0F"
@@ -2051,9 +2043,9 @@
 			y: 7.0d
 			shape: "square"
 			description: [
-				"Using the &dBattery Alloy&r you (hopefully) made earlier, you can make &aRedstone Batteries&r. Each tier of machine hull has their own tier of battery used to craft them, so expect to be making these often."
+				"Using the &dBattery Alloy&r you (hopefully) made earlier, you can make &aRedstone Batteries&r. &aEach tier of machine hull has their own tier of battery&r used to craft them, so expect to be &dmaking these often&r."
 				""
-				"These batteries on their own do not hold a charge, if you'd like a more traditional modded battery, you can follow the next quest to make a Red Cell Battery from Tech Reborn."
+				"These &abatteries&r on their own &cdo not hold&r a charge, if you'd like a more traditional modded battery, you can follow the next quest to make a &2Red Cell Battery&r from &eTech Reborn&r."
 			]
 			dependencies: ["004069E9EBF8D803"]
 			id: "0390CA76F7045D0F"
@@ -2080,7 +2072,7 @@
 			x: 15.0d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["The &eSteel Tank&r is an upgrade to the &6Bronze Tank&r from earlier. It now can store up to 8000 mB of any fluid and continues to retain it's inventory when broken."]
+			description: ["The &eSteel Tank&r is an upgrade to the &6Bronze Tank&r from earlier. It now can store up to &d8000 mB&r of any fluid and continues to retain it's inventory when broken."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "0A8E881B45C7FCFC"
 			tasks: [{
@@ -2133,11 +2125,11 @@
 			y: 6.5d
 			shape: "rsquare"
 			description: [
-				"The &aBattery Box&r from &eTech Reborn&r will allow you to store any excess power you will be generating. The Battery Box has a 40k E buffer and two slots to charge your items."
+				"The &aBattery Box&r from &eTech Reborn&r will allow you to store any excess power you will be generating. The&a Battery Box&r has a &c40k E&r buffer and two slots to charge your items."
 				""
-				"While 40k may seem impressive, you will soon be able to make LV Storage Units, which can store 192k EU. They're much better for storage, but don't have the ability to recharge items."
+				"While &c40k&r may seem impressive, you will soon be able to make &2LV Storage Units&r, which can store &3192k EU&r. They're much better for storage, but &cdon't have the ability to recharge items&r."
 				""
-				"&eTech Reborn&r's energy system is just called Energy (E). It's a 1:1 conversion between &eModern Industrializations&r EU and Tech Reborn E, so it makes it really easy to understand."
+				"&eTech Reborn&r's energy system is just called Energy (E). It's a &d1:1 conversion&r between &eModern Industrializations&r EU and Tech Reborn E, so it makes it really easy to understand."
 			]
 			dependencies: ["0390CA76F7045D0F"]
 			id: "2275EBB47166F9D2"
@@ -2164,7 +2156,7 @@
 			x: 17.0d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["Probably the least interesting thing you can make with your new &eSteel&r is armor. It's definitely an upgrade from Iron, but I wouldn't recommend making it unless you have a lot of extra &eSteel&r or are having trouble with mobs."]
+			description: ["Probably the least interesting thing you can make with your new &eSteel&r is armor. It's definitely an &aupgrade from Iron&r, but I wouldn't recommend making it unless you have a lot of extra &eSteel&r or are &chaving trouble with mobs&r."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "1C7E832A64CD1620"
 			tasks: [
@@ -2234,7 +2226,7 @@
 			description: [
 				"Once you have &eSteel&r, you can upgrade any one of your hatches on the &aSteam Blast Furnace&r to allow it to process 4 EU/t recipes."
 				""
-				"With that you can run &cRedstone Dust&r through the Blast Furnace to produce Molten Redstone. At this point you won't really have a reason to generate any, but know that you will need it in the future once you get to AE2."
+				"With that you can run &cRedstone Dust&r through the &eBlast Furnace&r to produce &cMolten Redstone&r. At this point you won't really have a reason to generate any, but it could be useful to cheapen &credstone components&r."
 			]
 			dependencies: ["578C4D10471D6EC9"]
 			id: "4FBE60D1D4995C8D"
@@ -2262,9 +2254,9 @@
 			y: 14.0d
 			shape: "rsquare"
 			description: [
-				"Once you have &eSteel&r, you can upgrade any one of your hatches on the &7steam&r Blast Furnace to allow it to process 4 EU/t recipes."
+				"Once you have &eSteel&r, you can upgrade any one of your hatches on the &aSteam Blast Furnace&r to &3allow it to process 4 EU/t recipes&r."
 				""
-				"Soldering Alloy is an important fluid to have on hand moving forward, as it can be used in assemblers to reduce the cost of crafting certain items by hand."
+				"&bSoldering Alloy&r is an important fluid to have on hand moving forward, as it can be used in &dassemblers&r to &3reduce the cost of crafting certain items by hand&r."
 			]
 			dependencies: ["578C4D10471D6EC9"]
 			id: "05FD1FD793252EF5"
@@ -2291,7 +2283,7 @@
 			x: 14.0d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["The &eSteel Boiler&r is an upgrade to your &6Bronze Boiler&r. It can produce up to 16 EU/t worth of &7Steam&r, double that of the Bronze."]
+			description: ["The &eSteel Boiler&r is an upgrade to your &6Bronze Boiler&r. It can produce up to &316 EU/t&r worth of &7Steam&r, double that of the Bronze."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "4DD579C699181982"
 			tasks: [{
@@ -2319,13 +2311,13 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"Now that you have a &aForge Hammer&r, you can make Iron Rods required for making pistons, which allow you to make Elevators."
+				"Now that you have a &aForge Hammer&r, you can make &bIron Rods&r required for making pistons, which allow you to make &dElevators&r."
 				""
-				"These are great tools to help you traverse your base vertically, especially if you're doing the boring strat of building entirely underground."
+				"These are great tools to help you &atraverse your base vertically&r, &oespecially if you're doing the boring strat of building entirely underground&r."
 				""
-				"Elevators will allow you to travel up and down between two points by pressing jump or crouch respectively."
+				"&dElevators&r will allow you to &3travel up and down&r between two &dElevators&r by pressing &2jump or crouch&r respectively."
 				""
-				"Elevators of different colors will not travel to each other."
+				"&dElevators&r of different colors will&c not travel to each other&r."
 			]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "486ADC13C8868424"
@@ -2360,7 +2352,7 @@
 			x: 14.0d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["Travel Anchors are pulled straight out of EnderIO. You can place them down, name them, and use the wand to warp between them. You can also stand on them to warp to others by looking at them and pressing right-click."]
+			description: ["&aTravel Anchors&r are pulled straight out of &eEnderIO.&r You can place them down, name them, and use the &bwand to warp between them&r. You can also stand on them to warp to others &eby looking at them and pressing right-click&r."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "4434AD65DF2DD224"
 			tasks: [
@@ -2395,9 +2387,9 @@
 			shape: "rsquare"
 			subtitle: "A factory staple"
 			description: [
-				"Catwalks are a decorative block that can be used to add a lot of aesthetic to your builds. The wrench can be used to edit how the handrails appear on the sides of the catwalks."
+				"&aCatwalks&r are a decorative block that can be used to &6add a lot of aesthetic&r to your builds. The &3wrench&r can be used to edit how the handrails appear on the sides of the catwalks."
 				""
-				"You can craft a Paint Roller to adjust the color of your catwalks."
+				"You can craft a &dPaint Roller&r to adjust the color of your &acatwalks&r."
 			]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "1EDCF314B9A08129"
@@ -2436,7 +2428,7 @@
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "Explore the world"
-			description: ["The Nature's Compass is a very helpful tool if you're looking for any specific biome. It provides both the direction and the distance to any biome in the pack."]
+			description: ["The &aNature's Compass&r is a very helpful tool if you're looking for &6any specific biome&r. It provides both the &ddirection&r and the &2distance&r to any biome in the pack."]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "5F1733B6400DD9BA"
 			tasks: [{
@@ -2467,7 +2459,7 @@
 			y: 11.0d
 			shape: "rsquare"
 			description: [
-				"Similar to the other machine upgrades you can make with steel, the &eSteel&r Pump works twice as fast as the Bronze variant. "
+				"Similar to the other &3machine upgrades&r you can make with &esteel&r, the &eSteel&r Pump works twice as fast as the &6Bronze&r variant. "
 				""
 				"That means a fully encircled &eSteel&r Pump will pump 2 buckets of &9water&r every 5 seconds. You will probably need this as your &7steam&r requirements increase as you progress."
 			]
@@ -2496,7 +2488,7 @@
 			x: 13.0d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["The Magnet, when activated, will attract nearby dropped items to the player."]
+			description: ["The &dMagnet&r, when activated, will attract &6nearby dropped items&r to the player."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "5ACF260F9E41D82C"
 			tasks: [{
@@ -2530,7 +2522,7 @@
 			y: -3.0d
 			shape: "rsquare"
 			description: [
-				"A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally. Hold crouch to go faster."
+				"A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally. &eHold crouch to go faster&r."
 				""
 				"&cNote&r that only the &aWhite&r version of the &bGlider&r will be accepted for this quest due to &dFTB Quests&r limitations with &eKibe&r."
 			]
@@ -2566,9 +2558,9 @@
 			y: 7.5d
 			shape: "rsquare"
 			description: [
-				"The Red Cell Battery can carry 10k E and can be activated by holding it and shift-right clicking. While active, it will charge any chargable electronic in your inventory."
+				"The &aRed Cell Battery&r can carry &c10k E&r and can be activated by holding it and shift-right clicking. &3While active&r, it will &dcharge any chargable electronic in your inventory&r."
 				""
-				"You will need the Battery Box to initially charge the battery itself though."
+				"You will need the &6Battery Box&r to initially charge the &abattery&r itself though."
 			]
 			dependencies: ["0390CA76F7045D0F"]
 			id: "5F7B86F96F250B3D"
@@ -2629,9 +2621,9 @@
 			y: 7.5d
 			shape: "rsquare"
 			description: [
-				"You might have noticed the tooltip for Overclocking on your &7steam&r Machines, but that only used Gunpowder. This won't work once you unlock Electrical Machines though, to overclock Electrical Machines, you can use Lubricant."
+				"You might have noticed the tooltip for &aOverclocking&r on your &7steam&r Machines, but that only used &dGunpowder&r. This won't work once you unlock &6Electrical Machines &rthough, to overclock &6Electrical Machines&r, you can use &6Lubricant&r."
 				""
-				"To Overclock a machine, right-click an Electrical Machine with a lubricant container, such as a lubricant bucket, to overclock it manually. Each 25 mb of lubricant will add 1 (overclocking) efficiency tick to the machine."
+				"To &6Overclock&r a machine, right-click an &6Electrical Machine&r with a &6lubricant&r container, such as a &6lubricant&r bucket, to overclock it manually. Each 25 mb of &6lubricant&r will add &a1 (overclocking) efficiency tick to the machine&r."
 			]
 			dependencies: ["2B3D7AC154932A16"]
 			id: "402F586B741ADE1B"
@@ -2640,19 +2632,11 @@
 				type: "checkmark"
 				title: "Click to Acknowledge"
 			}]
-			rewards: [
-				{
-					id: "1E8B17E31F09AAEC"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 8055223505892499306L
-				}
-				{
-					id: "538337781288B915"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "538337781288B915"
+				type: "xp"
+				xp: 10
+			}]
 		}
 		{
 			x: 13.5d
@@ -2686,11 +2670,11 @@
 			y: 1.5d
 			shape: "rsquare"
 			description: [
-				"Having trouble finding specific ores when you need them? The Scanner is the tool for you. Now that you have circuits you can go ahead and craft a Scanner to help in finding ores and other interesting things. "
+				"Having trouble finding &dspecific ores when you need them&r? The &aScanner&r is the tool for you. Now that you have &2circuits&r you can go ahead and craft a &aScanner&r to help in finding ores and other interesting things. "
 				""
-				"Modules can be installed by shift-right clicking while holding the Scanner."
+				"Modules can be installed by shift-right clicking while holding the &aScanner.&r"
 				""
-				"You'll need to have made the Battery Box to charge it at this point."
+				"You'll need to have made the &3Battery Box&r to charge it at this point."
 			]
 			dependencies: ["72090D36C27DC4AF"]
 			id: "408C2940A18F43BC"
@@ -2905,7 +2889,7 @@
 			x: 14.0d
 			y: -1.0d
 			shape: "rsquare"
-			description: ["This module can be used to detect &9water&r and lava."]
+			description: ["This module can be used to detect water and lava."]
 			dependencies: ["408C2940A18F43BC"]
 			id: "54DDB1F3D573A0CE"
 			tasks: [{
@@ -2932,7 +2916,7 @@
 			y: 16.5d
 			shape: "rsquare"
 			subtitle: "Dungeons, pyramids, and strongholds. Oh my!"
-			description: ["The Explorer's Compass is similar to the Nature's Compass in concept, except it will focus in on any structure in the game. "]
+			description: ["The &aExplorer's Compass&r is similar to the &2Nature's Compass&r in concept, except it will &efocus in on any structure in the game&r. This can be extremely useful if you want to find a nice place to &dloot&r or &aexplore&r."]
 			dependencies: ["45CE5F461A159F66"]
 			id: "2A34BE4E2ACB0B5B"
 			tasks: [{
@@ -2994,7 +2978,7 @@
 			x: 13.0d
 			y: 12.0d
 			shape: "rsquare"
-			description: ["The &bResin Basin&r can be used to semi-automate extracting &aSap&r from &dRubber Trees&r. When placed at the base of the tree, they will slowly extract &aSap&r from the tree. This &aSap&r can be collected by right-clicking the basin. "]
+			description: ["The &bResin Basin&r can be used to semi-automate extracting &aSap&r from &dRubber Trees&r. When placed at the base of the tree, they will slowly extract &aSap&r from the tree. This &aSap&r can be collected by right-clicking the basin, or extracting it with a &ehopper&r!"]
 			dependencies: ["68DF10A8AB2D074A"]
 			id: "476DDBFB1BC389C0"
 			tasks: [{
@@ -3021,7 +3005,7 @@
 			x: 19.0d
 			y: 9.0d
 			shape: "rsquare"
-			description: ["Entities standing above it will be moved. Cursed Dirt can still spawn mobs when below it."]
+			description: ["&eEntities&r standing above it will be &bmoved&r. When combined with &dCursed Dirt&r it will make a powerful &cmob farm&r. &dCursed Dirt&r can still spawn mobs when below it."]
 			dependencies: ["3505E9029F3CEAD0"]
 			id: "1EA36D56E6CCD3B4"
 			tasks: [{
@@ -3104,7 +3088,7 @@
 			x: -2.5d
 			y: 3.0d
 			shape: "rsquare"
-			description: ["The &eGold Chest&r stores 66 stacks of items. This is the highest tier you can make until you can process Diamond Plates."]
+			description: ["The &eGold Chest&r stores &266 stacks of items&r. This is the highest tier you can make until you can process &bDiamond Plates&r."]
 			dependencies: ["6B3BEC96CBAB7760"]
 			id: "37A8157AB01079F0"
 			tasks: [{
@@ -3130,7 +3114,7 @@
 			x: -2.5d
 			y: 1.5d
 			shape: "rsquare"
-			description: ["The &7Iron Chest&r can store 54 stacks of items."]
+			description: ["The &7Iron Chest&r can store &254 stacks of items&r."]
 			dependencies: ["181F0CD6428732B2"]
 			id: "6B3BEC96CBAB7760"
 			tasks: [{
@@ -3156,7 +3140,7 @@
 			x: -2.5d
 			y: 0.0d
 			shape: "rsquare"
-			description: ["With &cCopper Plates&r, you can upgrade your normal chests to hold more items. This one can store up to 36 stacks of items."]
+			description: ["With &cCopper Plates&r, you can upgrade your normal chests to &ehold more items&r. This one can store up to &236 stacks of items&r."]
 			dependencies: ["5EDE88BDA0182BD7"]
 			id: "181F0CD6428732B2"
 			tasks: [{
@@ -3183,7 +3167,7 @@
 			x: -4.5d
 			y: 0.0d
 			shape: "rsquare"
-			description: ["Chest Upgrades allow you to upgrade your chests without having to break them or move their contents into a new chest."]
+			description: ["&aChest Upgrades&r allow you to upgrade your chests &cwithout&r having to break them or move their contents into a new chest."]
 			dependencies: ["181F0CD6428732B2"]
 			id: "20FE11ACDC27CA84"
 			tasks: [{
@@ -3217,9 +3201,9 @@
 			y: -1.0d
 			shape: "rsquare"
 			description: [
-				"The &7Iron Dolly&r allows you to shift-right click pickup your chests and move them. Much better than breaking them and having their contents spill everywhere."
+				"The &7Iron Dolly&r allows you to shift-right click &epickup your chests&r and move them. Much better than breaking them and having their &ccontents spill everywhere&r."
 				""
-				"The iron version has durability, but the diamond upgrade doesn't."
+				"The iron version has durability, but the&6 diamond upgrade doesn't&r."
 			]
 			dependencies: ["181F0CD6428732B2"]
 			id: "3088E454104EA8C6"
@@ -3254,9 +3238,9 @@
 			y: 1.0d
 			shape: "rsquare"
 			description: [
-				"The &eIron Chest&r mod also includes a lock and key. You can apply a Lock to a chest by shift-right clicking it. You can then link a Key to that lock by shift-right clicking."
+				"The &eIron Chest&r mod also includes a lock and key. You can apply a &aLock&r to a chest by shift-right clicking it. You can then link a &aKey&r to that lock by shift-right clicking."
 				""
-				"Honestly it's a big risk to lock your chest, you'd be better off just chunk protecting them."
+				"Honestly it's a big risk to lock your chest in case you lose the key, you'd be better off just &echunk protecting&r them."
 			]
 			dependencies: ["181F0CD6428732B2"]
 			id: "018F1B1A8EF2C04E"
@@ -3281,6 +3265,37 @@
 				}
 				{
 					id: "53CC843CB0E80481"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: 22.0d
+			y: 13.0d
+			description: ["Putting a &bZinc Drill&r in a &aSteam Quarry&r is a good way to get various types of blocks from the &eCreate&r mod. Most notably the &dstone variants&r, &aandesite&r, and &2zinc ores&r!"]
+			dependencies: ["1F5ACBB3A3D021B3"]
+			id: "6B1392D014BAED81"
+			tasks: [{
+				id: "7331905DCAAE5C11"
+				type: "item"
+				item: "modern_industrialization:zinc_drill"
+			}]
+			rewards: [
+				{
+					id: "01A0A2149315C2EB"
+					type: "item"
+					item: "modern_industrialization:zinc_drill"
+					count: 3
+				}
+				{
+					id: "3FAF3A3AFC7EFA4B"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 4870953612802399820L
+				}
+				{
+					id: "6C83E24648D577B9"
 					type: "xp"
 					xp: 10
 				}
