@@ -97,7 +97,7 @@
 				""
 				"There's a &afew paths&r you can start down. If you'd like, you can start building parts for your &cfirst rocket and get to the moon&r, you could look to setup better automations with &dAE2&r, or you could continue progressing in &eModern Industrializations&r."
 				""
-				"A sane person would pick AE2, but it's ultimately your choice."
+				"&oA sane person would pick AE2, but it's ultimately your choice&r."
 			]
 			dependencies: ["575EE8E0720CE7DC"]
 			id: "3F4A396DD273A543"
@@ -124,7 +124,7 @@
 			x: 1.0d
 			y: -2.0d
 			shape: "rsquare"
-			description: ["&bHV Storage Units&r have an interal buffer of 6.144M EU. A single one of these will make an extremely valuable power buffer for any setup you currently have."]
+			description: ["&bHV Storage Units&r have an interal buffer of &e6.144M EU&r. A single one of these will make an extremely valuable power buffer for any setup you currently have."]
 			dependencies: ["3F4A396DD273A543"]
 			id: "1B0452A4C5B49AA7"
 			tasks: [{
@@ -152,13 +152,13 @@
 			shape: "rsquare"
 			subtitle: "Push it to the limit"
 			description: [
-				"The &bHV &7Steam&r Turbine&r can produce up to 512 EU/t. It consumes steam in a 1:1 ratio to generate power."
+				"The &bHV Steam Turbine&r can produce up to &e512 EU/t&r. It consumes steam in a 1:1 ratio to generate power."
 				""
-				"The &bHV &7Steam&r Turbine&r is the last single-block steam energy generator you will have access to. "
+				"The &bHV Steam Turbine&r is the last single-block steam energy generator you will have access to. "
 				""
-				"Remember that only HV Cables will connect to the &bHV &7Steam&r Turbine&r."
+				"Remember that only &3HV Cables&r will connect to the &bHV Steam Turbine&r."
 				""
-				"Note: This &7Steam&r Turbine will &cnot&r accept &7High Pressure Steam&r."
+				"Note: This &bSteam Turbine&r will &cnot&r accept &7High Pressure Steam&r."
 			]
 			dependencies: ["3F4A396DD273A543"]
 			id: "5AF44D0A39BA6091"
@@ -186,7 +186,7 @@
 			y: -2.0d
 			shape: "rsquare"
 			description: [
-				"The &bTurbo Diesel Generator&r can produce up to 1024 EU/t. You can &dREI&r for a list of fuels and how much EU per mB they produce."
+				"The &bTurbo Diesel Generator&r can produce up to &e1024 EU/t&r. You can &dREI&r for a list of fuels and how much &2EU per mB&r they produce."
 				""
 				"At this point you might have a decent backlog of &6Diesel&r / &eBoosted Diesel&r. It could be a good choice to use if you're struggling on &7Steam&r production."
 			]
@@ -249,7 +249,7 @@
 			description: [
 				"Now that you have &eDigital Circuits&r you can create the &bDistillation Tower&r. The single-block &aDistillery&r only gives you one oil processing output, but the tower gives you &cONE PER LAYER&r."
 				""
-				"By default the controller has a height value set to one. You will need to update this if you plan to add more layers. You can view the Ponder scene by holding 'W' on the &bDistillation Tower&r block in your inventory to view how to build it, or you can hold your wrench out with the controller placed to view where to place the blocks."
+				"By default the controller has a height value set to one. You will need to update this if you plan to add more layers. You can view the &bPonder&r scene by holding 'W' on the &bDistillation Tower&r block in your inventory to view how to build it, or you can hold your wrench out with the controller placed to view where to place the blocks."
 			]
 			dependencies: ["529FBE21C8B21DC1"]
 			size: 1.5d
@@ -318,9 +318,9 @@
 			shape: "square"
 			subtitle: "To the Stars"
 			description: [
-				"The &bRocket Part Assembler&r is a new singleblock machine you can create that will allow you to create rocket parts (shocker, I know)."
+				"The &bRocket Part Assembler&r is a new singleblock machine you can create that will allow you to &2create rocket parts&r (shocker, I know)."
 				""
-				"Along with the other important &eAd Astra&r machines you will need to make before your main launch, this one will be the most important, as it's where you make all the parts to your rocket!"
+				"Along with the other important &eAd Astra&r machines you will need to make &3before your main launch&r, this one will be the most important, as it's where you &emake all the parts to your rocket&r!"
 			]
 			dependencies: ["68CE43C175FB0826"]
 			id: "7839B0187F555DC9"
@@ -348,7 +348,7 @@
 			x: -2.5d
 			y: 0.0d
 			shape: "square"
-			description: ["This quest path will end up taking you to &bother planets in our solar system&r and even &aGlacio&r, a planet in another system!"]
+			description: ["This quest path will end up taking you to &bother planets in our solar system&r and even &aGlacio&r, a &dplanet in another system&r!"]
 			dependencies: ["3F4A396DD273A543"]
 			id: "68CE43C175FB0826"
 			tasks: [{
@@ -548,7 +548,7 @@
 			y: -2.0d
 			shape: "square"
 			subtitle: "Vehicle Assembly... Building?"
-			description: ["The &bNASA Workbench&r is the birthplace of your rockets. Check &dREI&r for the Tier 1 Rocket recipe and prepare crafting the Steel components needed to create it."]
+			description: ["The &bNASA Workbench&r is the birthplace of your rockets. Check &dREI&r for the &3Tier 1 Rocket recipe&r and prepare crafting the &eSteel&r components needed to create it."]
 			dependencies: ["7839B0187F555DC9"]
 			id: "565F8D6169BE21A4"
 			tasks: [{
@@ -574,7 +574,7 @@
 			x: -7.0d
 			y: 0.0d
 			shape: "square"
-			description: ["To make &aFuel&r for your rocket, place &6Boosted Diesel&r in the &bFuel Refinery&r to convert it in a 2:1 ratio. How is &6Diesel&r being converted into rocket fuel you might ask? &dMagic&r ! But seriously, there will probably be a more realistic process in the future."]
+			description: ["To make &aFuel&r for your rocket, place &6Boosted Diesel&r in the &bFuel Refinery&r to convert it in a &d2:1 ratio&r. How is &6Diesel&r being converted into rocket fuel you might ask? &dMagic&r ! &oBut seriously, there will probably be a more realistic process in the future&r."]
 			dependencies: ["6EE3455457F0E943"]
 			id: "05EBD7E7DF3DBF8A"
 			tasks: [{
@@ -651,7 +651,7 @@
 			description: [
 				"&aBattery Box&r too slow for you now? The &bCharge-O-Mat&r is the solution for you!"
 				""
-				"The &bCharge-o-Mat&r has an absolutely absurd 100M Energy buffer. Plugging this into your network may &cstart draining it entirely&r, so be careful, but it is needed to charge the &dIndustrial tools and Nanosaber&r in a timely manner."
+				"The &bCharge-o-Mat&r has an absolutely absurd &e100M Energy&r buffer. Plugging this into your network may &cstart draining it entirely&r, so be careful, but it is needed to charge the &dIndustrial tools and Nanosaber&r in a timely manner."
 			]
 			dependencies: ["3F4A396DD273A543"]
 			id: "1CC138DDB987411E"
@@ -1500,17 +1500,17 @@
 			]
 		}
 		{
-			title: "The Large &7Steam&r Turbine"
+			title: "The Large Steam Turbine"
 			icon: "modern_industrialization:large_steam_turbine"
 			x: 17.0d
 			y: -2.0d
 			shape: "square"
 			description: [
-				"The &bLarge Steam Turbine&r will accept both regular steam ( 1 mB = 1 EU ) and &7HP Steam&r ( 1 mB = 8 EU ) into EU, and will generate up to 16384 EU/t."
+				"The &bLarge Steam Turbine&r will accept both regular steam ( 1 mB = 1 EU ) and &7HP Steam&r ( 1 mB = 8 EU ) into EU, and will generate up to &e16384 EU/t&r."
 				""
-				"However it will not give you back give you back &9regular nor HP Water&r. If you'd like to recycle the &9HP Water, you will need to create the next multiblock, the &eHeat Exchanger&r."
+				"However it will not give you back &9regular nor HP Water&r. If you'd like to recycle the &9HP Water&r, you will need to create the next multiblock, the &eHeat Exchanger&r."
 				""
-				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the &bLarge Steam Turbine&r block in your inventory or by holding your wrench out with the &bLarge Steam Turbine&r placed."
+				"If you need help building the multiblock you can view the &bPonder&r scene by holding 'W' on the &bLarge Steam Turbine&r block in your inventory or by holding your wrench out with the &bLarge Steam Turbine&r placed."
 			]
 			dependencies: ["1C6856D2C944D9F2"]
 			id: "45E103B1646804FA"
@@ -1577,11 +1577,11 @@
 			shape: "rsquare"
 			subtitle: "GIGA DRILL BREAK"
 			description: [
-				"The &bIndustrial Drill&r is an upgraded, electric powered drill that features a powered mode that can mine 3x3."
+				"The &bIndustrial Drill&r is an upgraded, &3electric powered drill&r that features a powered mode that can &dmine 3x3&r."
 				""
 				"Shift-right click to activate and deactivate 3x3."
 				""
-				"You can charge it in the Charge-o-Mat"
+				"You can charge it in the &aCharge-o-Mat&r"
 			]
 			dependencies: ["779458EF9AEE3AC9"]
 			id: "52DD4EA5020B2637"
@@ -1620,7 +1620,7 @@
 				""
 				"Shift-right click to activate and deactivate."
 				""
-				"You can charge it in the Charge-o-Mat"
+				"You can charge it in the &aCharge-o-Mat&r"
 			]
 			dependencies: ["779458EF9AEE3AC9"]
 			id: "078D2A02F5F0755A"
@@ -1655,11 +1655,11 @@
 			shape: "rsquare"
 			subtitle: "Like a Protosaber!"
 			description: [
-				"The &bNanosaber&r is an upgraded, electric powered sword that features a powered mode that can deal insane damage at a fast rate."
+				"The &bNanosaber&r is an upgraded, electric powered sword that features a powered mode that can &ddeal insane damage&r at a fast rate."
 				""
 				"Shift-right click to activate and deactivate."
 				""
-				"You can charge it in the Charge-o-Mat"
+				"You can charge it in the &aCharge-o-Mat&r"
 			]
 			dependencies: ["779458EF9AEE3AC9"]
 			id: "53BA308E50B5070C"
@@ -1779,7 +1779,7 @@
 			x: 16.0d
 			y: 0.5d
 			shape: "square"
-			description: ["Combining Argon, Silicon, and a little bit of Iridium you will be able to produce your first Monocrystalline Silicon boule."]
+			description: ["Combining &dArgon&r, &aSilicon&r, and a little bit of &3Iridium&r you will be able to produce your first &2Monocrystalline Silicon boule&r."]
 			dependencies: ["0A7B765B2AC2DD6D"]
 			id: "11D19824B39407CC"
 			tasks: [{
@@ -1832,7 +1832,7 @@
 			x: 18.0d
 			y: -0.5d
 			shape: "square"
-			description: ["It's time to pull it all together. These components from all over the chapter, if you're unable to make something, make sure you didn't miss a quest!"]
+			description: ["It's time to pull it all together. These components from all over the chapter, if you're unable to make something, &amake sure you didn't miss a quest&r!"]
 			dependencies: [
 				"7111AA66B02C4877"
 				"76BD64AFCE37E528"
@@ -3069,6 +3069,7 @@
 			x: 8.5d
 			y: -2.0d
 			shape: "rsquare"
+			description: ["The &aLapotron Crystal&r is similar to the &bEnergy Crystal&r, but it has a much larger buffer, being able to store &d10 million E&r."]
 			dependencies: ["08362FF409BFC7CC"]
 			id: "779458EF9AEE3AC9"
 			tasks: [{
@@ -3129,7 +3130,7 @@
 			description: [
 				"The &bIndustrial Jackhammer&r is a lot like the &aIndustrial Drill&r, but with some drawbacks and benefits. "
 				""
-				"Using shift-right click you can toggle the area it will mine, however it will only efficiently mine stone. Great for clearing out large areas, but awful as an everyday pickaxe / tool."
+				"Using shift-right click you can toggle the area it will mine, however it will only efficiently mine stone. &eGreat for clearing out large areas&r, &cbut awful as an everyday pickaxe / tool&r."
 				""
 				"Making it is up to you."
 			]
@@ -3551,9 +3552,9 @@
 			shape: "rsquare"
 			subtitle: "Interstellar"
 			description: [
-				"While not required to beat the pack, why not be the first of the human race to make it to an interstellar body? "
+				"While &cnot required to beat the pack&r, why not be the &dfirst of the human race to make it to an interstellar body&r? "
 				""
-				"&bGlacio&r does have a naturally breathable atmosphere, so no suit is required to be on this planet. &oI wonder if there's life here&r?"
+				"&bGlacio&r does have a &2naturally breathable atmosphere&r, so &cno suit is required&r to be on this planet. &oI wonder if there's life here&r?"
 			]
 			dependencies: ["15342C97054EE216"]
 			size: 2.0d
@@ -3590,6 +3591,8 @@
 				"The &bBlazing Backpack&r comes with the additional benefit of not burning in lava!"
 				""
 				"It can also store &d96 item stacks&r."
+				""
+				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
 			]
 			dependencies: [
 				"1B19E2916336F297"
@@ -3616,7 +3619,7 @@
 			]
 		}
 		{
-			title: "High Pressure Large &7Steam&r Boiler"
+			title: "High Pressure Large Steam Boiler"
 			icon: "modern_industrialization:high_pressure_large_steam_boiler"
 			x: 13.0d
 			y: -2.0d
@@ -3624,7 +3627,7 @@
 			description: [
 				"The &bHigh Pressure Steam Boiler&r can produce up to 2048 EU/t worth of Steam. One mB of &7HP Steam&r is worth 8 mB of regular &7Steam&r. "
 				""
-				"Maximum efficiency is only reached under continuous operation. Only accepts &9High Pressure Water&r and &1High Pressure Heavy Water&r."
+				"Maximum efficiency is only reached under continuous operation. Only accepts &9High Pressure Water&r and &3High Pressure Heavy Water&r."
 				""
 				"It's not worth starting up the &bBoiler&r right now unless you have a significant enough &aLarge Tank&r to take the &7High Pressure Steam&r or have set up the next multiblock, the &bLarge Steam Turbine&r."
 				""
@@ -3700,6 +3703,13 @@
 			x: 15.0d
 			y: -2.0d
 			shape: "square"
+			description: [
+				"Pressurizing &bwater&r into &3HP water&r costs &ca lot of energy&r, but the &eLarge Steam Turbine&r will not give it back! You can use a &aHeat Exchanger&r to recover the &3HP water&r for another cycle. "
+				""
+				"Specifically, you should look to use the recipe that takes &2steam&r and &3HP water&r as an input, and outputs &bregular water&r and &aHP steam&r. "
+				""
+				"If you need help building the multiblock you can view the &bPonder&r scene by holding 'W' on the &bHeat Exchanger&r block in your inventory or by holding your wrench out with the &bHeat Exchanger&r placed."
+			]
 			dependencies: ["26EF4E75B844E3BD"]
 			id: "1C6856D2C944D9F2"
 			tasks: [{
@@ -3850,7 +3860,7 @@
 			x: 20.0d
 			y: 0.0d
 			shape: "rsquare"
-			description: ["The &bHighly Advanced Upgrade&r is the second to last upgrade available for your machines. It offers a 4x EU overclock as compared to the previous tier."]
+			description: ["The &bHighly Advanced Upgrade&r is the second to last upgrade available for your machines. It offers a &a4x EU overclock&r as compared to the previous tier."]
 			dependencies: ["78EE20BD0B4E84DE"]
 			id: "560374EE3ACBFFB5"
 			tasks: [{
@@ -3964,10 +3974,10 @@
 			shape: "square"
 			description: [
 				"The cables of HV are:"
-				"- Aluminum"
-				"- Kanthal"
+				"- &bAluminum&r"
+				"- &eKanthal&r"
 				""
-				"These cables can transfer up to 8192 EU/t and have an internal buffer of 8192 EU."
+				"These cables can transfer up to &e8192 EU/t&r and have an internal buffer of&6 8192 EU&r."
 			]
 			dependencies: ["3F4A396DD273A543"]
 			id: "7FD9582038C29150"
@@ -4002,9 +4012,11 @@
 			y: 2.0d
 			shape: "rsquare"
 			description: [
-				"After taking down the Wither, you can use the Nether Star alongside Blastproof Plates to upgrade your backpack to the &bWithered Backpack&r. This bad boy can hold &d120 item stacks&r."
+				"After taking down the &eWither&r, you can use the &3Nether Star&r alongside &dBlastproof Plates&r to upgrade your backpack to the &bWithered Backpack&r. This bad boy can hold &d120 item stacks&r."
 				""
-				"It maintains the fireproof status of the previous backpack."
+				"It maintains the &cfireproof status&r of the previous backpack."
+				""
+				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
 			]
 			dependencies: ["500668B023EA17CA"]
 			id: "2A0BC5CB56BB5BAD"
@@ -4036,6 +4048,8 @@
 				"With materials from the end and your newly acquired Iridium you can craft the final tier of backpack, the &bEndless Backpack&r."
 				""
 				"While not entirely \"endless,\" it does boast a whopping &d160 item stacks&r. And yes, it still is fireproof."
+				""
+				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
 			]
 			dependencies: [
 				"0A7B765B2AC2DD6D"
@@ -4065,6 +4079,7 @@
 			x: 7.5d
 			y: -2.0d
 			shape: "rsquare"
+			description: ["The &bTitanium Barrel&r is an upgrade to the &eStainless Steel Barrel&r. It can store &68192 stacks&r of a single item, and retains its inventory when broken."]
 			dependencies: ["08362FF409BFC7CC"]
 			id: "77DB7F098F57FA69"
 			tasks: [{
@@ -4090,6 +4105,7 @@
 			x: 9.5d
 			y: -2.0d
 			shape: "rsquare"
+			description: ["The &aTitanium Tank&r is the next tier of portable fluid tank you can create. It can store up to &e64 buckets&r of any kind of fluid and retains the contents when broken."]
 			dependencies: ["08362FF409BFC7CC"]
 			id: "696D98D3D7D8FDCD"
 			tasks: [{
@@ -4462,7 +4478,7 @@
 			x: 0.5d
 			y: -3.0d
 			shape: "rsquare"
-			description: ["With the &bTurbo Machine Hulls&r you now have access to &aUltimate Solar Panels&r. This will generate 48 EU/t during the day, and 8 EU/t at night. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
+			description: ["With the &bTurbo Machine Hulls&r you now have access to &aUltimate Solar Panels&r. This will generate &e48 EU/t&r during the day, and&6 8 EU/t at night&r. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
 			dependencies: ["3F4A396DD273A543"]
 			id: "786ACF473177AA23"
 			tasks: [{

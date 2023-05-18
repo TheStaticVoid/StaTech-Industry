@@ -16,7 +16,7 @@
 			description: [
 				"Welcome to &eChapter 3&r."
 				""
-				"This chapter of the modpack is focused on getting your first &aelectrical machines&r, aluminum, stainless steel, and oil processing! There's a lot to do, so get started!"
+				"This chapter of the modpack is focused on getting your first &aelectrical machines&r, &baluminum&r, &estainless steel&r, and &doil processing&r! There's a lot to do, so get started!"
 			]
 			dependencies: ["72090D36C27DC4AF"]
 			size: 1.5d
@@ -48,17 +48,17 @@
 			description: [
 				"The &aSteam Turbine&r uses &7Steam&r to produce electricity. It converts every mb of &7Steam&r to 1 EU, up to 32 mb converted every tick."
 				""
-				"The &aSteam Turbine&r will automatically send electricity to any machine connected directly to its output side. It will only connect to cables placed on its output side. It has the Low Voltage (LV) Tier."
+				"The &aSteam Turbine&r will automatically send electricity to any machine connected directly &dto its output side&r. &eIt will only connect to cables placed on its output side&r. It has the Low Voltage (LV) Tier."
 				""
-				"Every electric cable has a Tier which determines how many EU/t it can transfer and which machines it can connect to. Copper, Silver, and Tin are LV, Curponickel and Electrum are MV, and so on..."
+				"Every electric cable has a &6Tier&r which determines how many &eEU/t&r it can transfer and which machines it can connect to. &3Copper, Silver, and Tin are LV&r, &2Curponickel and Electrum are MV&r, and so on..."
 				""
-				"Cable networks have limitations on the amount of energy they will pull into the network: at most 256 EU/t for LV cables, 1024 EU/t for MV cables and 8192 EU/t for HV cables. Because there is no output limit for the network and because cables have a small internal storage, an LV network can provide more than 256 EU/t for a short amount of time."
+				"Cable networks have limitations on the amount of energy they will pull into the network: at most &3256 EU/t for LV cables&r, &21024 EU/t for MV cables&r and &d8192 EU/t for HV cables&r. Because there is no output limit for the network and because cables have a small internal storage, an LV network can provide more than 256 EU/t for a &oshort&r amount of time."
 				""
-				"Note however that single block electric machines will only connect to LV cables!"
+				"Note however that &6single block electric machines&r will &conly connect&r to LV cables (&ounless their hull is upgraded, more on that later&r)!"
 				""
-				"To transfer more energy, you need to either create multiple pipe networks or use Transformers."
+				"To transfer more energy, you need to either &acreate multiple pipe networks&r or &duse Transformers&r."
 				""
-				"A low tier to high tier Transformer (for example LV to MV) has 5 inputs and 1 output. A high tier to low tier (for example MV to LV) Transformer has 1 input and 5 outputs."
+				"A low tier to high tier &dTransformer&r (for example LV to MV) has 5 inputs and 1 output. A high tier to low tier (for example MV to LV) &dTransformer&r has 1 input and 5 outputs."
 			]
 			dependencies: ["473C1DE557D3E9C0"]
 			size: 2.0d
@@ -88,11 +88,11 @@
 			y: -2.5d
 			shape: "rsquare"
 			description: [
-				"For those of you who have played &aGregTech&r before, you will know that in that machines that connect to higher voltage tiers than themselves will explode. &lTHIS IS NOT THE CASE HERE&r."
+				"For those of you who have played &aGregTech&r before, you will know that in that machines that connect to higher voltage tiers than themselves &cwill explode&r. &l&bTHIS IS NOT THE CASE HERE&r&r."
 				""
-				"In &eModern Industrialization&r, your cables will not burn up if you connect higher tier generator to lower tier cable, and your machines will not explode if you connect a higher tier cable to a lower tier machine. Instead of all that, nothing happens. That's right, you don't have to worry about all of those negative effects. Machines will refuse to send / receive power if you don't connect the correct cabling."
+				"In &eModern Industrialization&r, your cables &cwill not burn up&r if you connect higher tier generator to lower tier cable, and your machines &cwill not explode&r if you connect a higher tier cable to a lower tier machine. Instead of all that, &onothing happens&r. That's right, you don't have to worry about all of those negative effects. Machines will &crefuse to send / receive power if you don't connect the correct cabling&r."
 				""
-				"Also, unlike &aGT:NH&r, your machines will not explode if they are exposed to rain."
+				"Also, unlike &aGT:NH&r, your machines &cwill not explode if they are exposed to rain&r."
 			]
 			dependencies: ["6765B4B8D870CDA0"]
 			id: "11C4254DF67951A9"
@@ -171,7 +171,7 @@
 			shape: "rsquare"
 			subtitle: "Good for the environment!"
 			description: [
-				"The &aStarter Diesel Generator&r is an alternative power generation method that will allow you to burn Creosote to generate up to 64 EU/t."
+				"The &aStarter Diesel Generator&r is an alternative power generation method that will allow you to burn Creosote to generate up to &e64 EU/t&r."
 				""
 				"I would not recommend making this your main power source and instead relying on &bSteam Turbines&r until you unlock the regular &aDiesel Generator&r."
 			]
@@ -200,7 +200,7 @@
 			x: 1.0d
 			y: -3.0d
 			shape: "square"
-			description: ["The &aElectric Cutting Machine&r is the electrical version of the &bSteam Cutting Machine&r. The only recipe it unlocks is to turn Monocrystalline Silicon into Silicon Wafers, which you won't need right now. Other than that, it processes existing recipes faster and more efficiently."]
+			description: ["The &aElectric Cutting Machine&r is the electrical version of the &6Steam Cutting Machine&r. The only recipe it unlocks is to turn &3Monocrystalline Silicon into Silicon Wafers&r, which you won't need right now. Other than that, it &dprocesses existing recipes faster and more efficiently&r."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "627C78680166E422"
 			tasks: [{
@@ -226,7 +226,7 @@
 			x: -5.0d
 			y: -0.5d
 			shape: "square"
-			description: ["The &aElectric Furnace&r is the electrical version of the &bSteam Furnace&r. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&r counterpart."]
+			description: ["The &aElectric Furnace&r is the electrical version of the &6Steam Furnace&r. It doesn't open up any new recipes, but it will process recipes &dmuch faster&r than its &7Steam&r counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "03D51B7E40C3A7CD"
 			tasks: [{
@@ -252,7 +252,7 @@
 			x: -6.5d
 			y: -1.5d
 			shape: "square"
-			description: ["The &aElectric Macerator&r is the electrical version of the &bSteam Macerator&r. It opens up the ability to make Calcite Dust, and it will process recipes much faster than its &7Steam&r counterpart."]
+			description: ["The &aElectric Macerator&r is the electrical version of the &6Steam Macerator&r. It opens up the ability to make &dCalcite&r and &dObsidian Dust&r, and it will process recipes&d much faster&r than its &7Steam&r counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "1EFA4209205571E3"
 			tasks: [{
@@ -278,7 +278,7 @@
 			x: 1.0d
 			y: -4.0d
 			shape: "square"
-			description: ["The &aElectric Wiremill&r is the electrical version of the &bSteam Wiremill&r. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&r counterpart."]
+			description: ["The &aElectric Wiremill&r is the electrical version of the &6Steam Wiremill&r. It doesn't open up any new recipes, but it will process recipes &dmuch faster&r than its &7Steam&r counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "2ACF26FC95B88B16"
 			tasks: [{
@@ -304,7 +304,7 @@
 			x: -2.0d
 			y: -3.0d
 			shape: "square"
-			description: ["The &aElectric Unpacker&r is the electrical version of the &bSteam Unpacker&r. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&r counterpart."]
+			description: ["The &aElectric Unpacker&r is the electrical version of the &6Steam Unpacker&r. It doesn't open up any new recipes, but it will process recipes &dmuch faster&r than its &7Steam&r counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "278BE1D13FE8E78E"
 			tasks: [{
@@ -332,10 +332,10 @@
 			shape: "square"
 			subtitle: "Factorio!"
 			description: [
-				"This is the first machine you will probably want to make a lot of! The &aAssembler&r allows you to automate almost all recipes, up to 3 per &aAssembler&r if you use slot locking."
+				"&d&lThis is the first machine you will probably want to make a lot of&r&r! The &aAssembler&r allows you to automate &oalmost&r all recipes, up to 3 per &aAssembler&r if you use slot locking."
 				""
-				"I strongly suggest that you automate Machine Hulls, Analog Circuits, Motors, Pistons, Robot Arms, and Conveyor Belts using Assemblers as soon as possible, that will make crafting &eElectrical Machines&r basically free*!"
-				"* Materials not included"
+				"I strongly suggest that you automate &2Machine Hulls, Analog Circuits, Motors, Pistons, Robot Arms, and Conveyor Belts&r using &aAssemblers&r as soon as possible, that will make crafting &eElectrical Machines&r basically free*!"
+				"&o* Materials not included&r"
 			]
 			dependencies: ["473C1DE557D3E9C0"]
 			size: 1.5d
@@ -364,9 +364,9 @@
 			y: 1.5d
 			shape: "rsquare"
 			description: [
-				"Calcite Dust can be made by crushing down Calcite blocks, which can be found around the world mainly in geodes."
+				"&aCalcite Dust&r can be made by crushing down &3Calcit&re blocks, which can be found around the world mainly in &dgeodes&r."
 				""
-				"Once you have a Calcite block, you can replicate it in a mixer using water and lava."
+				"Once you have a &3Calcite&r block, you can &ereplicate it in a mixer using water and lava&r."
 			]
 			dependencies: ["1EFA4209205571E3"]
 			id: "2AABAD74E8A63623"
@@ -394,9 +394,9 @@
 			y: 3.5d
 			shape: "rsquare"
 			description: [
-				"By combining Calcite Dust and Iron Ingots in an &aAlloy Smelter&r, you can create &3Refined Iron Ingots&r. "
+				"By combining &3Calcite Dust&r and Iron Ingots in an &aAlloy Smelter&r, you can create &3Refined Iron Ingots&r. "
 				""
-				"These serve two main purposes. The first, an upgrade to your backpack, a second, an alternative way for generating Steel once you have your Electric Blast Furnace."
+				"These serve two main purposes. The first, an upgrade to your backpack, a second, an alternative way for generating &eSteel&r once you have your &6Electric Blast Furnace&r."
 			]
 			dependencies: [
 				"2AABAD74E8A63623"
@@ -426,7 +426,7 @@
 			x: -1.0d
 			y: -3.0d
 			shape: "square"
-			description: ["The &aElectric Packer&r is the electrical version of the &bSteam Unpacker&r. It doesn't open up any new recipes, but it will process recipes much faster than its &7Steam&r counterpart."]
+			description: ["The &aElectric Packer&r is the electrical version of the &6Steam Unpacker&r. It doesn't open up any new recipes, but it will process recipes &dmuch faster&r than its &7Steam&r counterpart."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "3F0D5EA33B0F016B"
 			tasks: [{
@@ -452,7 +452,7 @@
 			x: 2.0d
 			y: -3.0d
 			shape: "square"
-			description: ["The &aPolarizer&r is a machine that will allow you to magnetically charge certain types of metals. This means you can stop using Redstone to magnetise Steel Rods, as well as you will be able to magnetise certain important metals in the future."]
+			description: ["The &aPolarizer&r is a machine that will allow you to &amagnetically charge certain types of metals&r. This means you can stop using &cRedstone&r to magnetise Steel Rods, as well as you will be able to &2magnetise certain important metals in the future&r."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "5D6D204EAB87BF4A"
 			tasks: [{
@@ -479,7 +479,7 @@
 			y: 7.0d
 			shape: "square"
 			subtitle: "Bring out the barrels!"
-			description: ["The &aDistillery&r will turn various fluids into their lighter parts. This will be very useful for Oil Processing!"]
+			description: ["The &aDistillery&r will turn various fluids into their lighter parts. This will be very useful for &eOil Processing&r!"]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "4E45A919AB388540"
 			tasks: [{
@@ -509,7 +509,7 @@
 			description: [
 				"The &aElectrolyzer&r can split materials into their different parts using strong electric currents."
 				""
-				"You can electrolyze Bauxite Dust to get Aluminum Dust, which you can then directly smelt into Aluminum Ingots in the EBF. Alternatively, you can electrolyze a bunch of clay to get some aluminum."
+				"You can electrolyze &3Bauxite Dust&r to get &bAluminum Dust&r, which you can then directly smelt into &bAluminum Ingots&r in the&e EBF&r. Alternatively, you can &delectrolyze&r a bunch of &3clay&r to get some &baluminum&r."
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "0E9876A8FEF7F7E9"
@@ -540,7 +540,7 @@
 			description: [
 				"The &aChemical Reactor&r is used to cause reactions between solid items and fluids."
 				""
-				"As you progress further, recipes using the &aChemical Reactor&r will become much more common. Plan to make a lot of these."
+				"As you progress further, recipes using the &aChemical Reactor&r will become much more common. &2Plan to make a lot of these&r."
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "517C3D6FBC5FEB2A"
@@ -569,9 +569,9 @@
 			shape: "square"
 			subtitle: "You spin me right round"
 			description: [
-				"The &aCentrifuge&r splits items by spinning them very fast. You can use it to make carbon dust and unlock better recipes for Steel and Silicon."
+				"The &aCentrifuge&r splits items by spinning them very fast. You can use it to make &3carbon dust&r and &eunlock better recipes&r for &eSteel&r and &2Silicon&r."
 				""
-				"There are about 5 real pages of recipes to look at with the &aCentrifuge&r, the rest are just different ways to make Plant Oil. Regardless, it's worth taking a look at those recipes as you will be using some of them shortly."
+				"There are about 5 real pages of recipes to look at with the &aCentrifuge&r, the rest are just different ways to make &aPlant Oil&r. Regardless, it's worth taking a look at those recipes as you will be using some of them shortly."
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "136292FF2B54C503"
@@ -601,7 +601,7 @@
 			description: [
 				"As your &7Steam&r needs increase, you will probably find that the &aSteel Pumps&r are not cutting it anymore. "
 				""
-				"The solution is an &bElectric Pump&r. Instead of a measly 2000 mB of water every 5 seconds, it can produce 16000 mB of water every 5 seconds. That's an 8x increase! Once it's internal buffer is full, it only requires 1 EU/t to operate, very efficient!"
+				"The solution is an &bElectric Pump&r. Instead of a measly &e2000 mB&r of water every 5 seconds, it can produce &316000 mB&r of water every 5 seconds. &dThat's an 8x increase&r! Once it's internal buffer is full, it only requires &21 EU/t&r to operate, very efficient!"
 			]
 			dependencies: ["6765B4B8D870CDA0"]
 			id: "67B29CAD95658175"
@@ -628,7 +628,7 @@
 			x: 0.0d
 			y: -3.0d
 			shape: "square"
-			description: ["On top of processing the Bronze/Steel recipes more efficiently, the &aMixer&r opens up new recipes that will be very important in the near future, such as mixing fuels."]
+			description: ["On top of processing the &6Bronze&r/&eSteel&r recipes&a more efficiently&r, the &aMixer&r opens up new recipes that will be very important in the near future, such as &2mixing fuels&r."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "0D3703BE9C1401C8"
 			tasks: [{
@@ -654,7 +654,7 @@
 			x: -1.0d
 			y: -4.0d
 			shape: "square"
-			description: ["The &bElectric Compressor&r is the &delectric&r upgrade for your compressing needs. It opens up some new recipes that will be needed to advanced later, as well as faster processing of existing recipes."]
+			description: ["The &aElectric Compressor&r is the &delectric&r upgrade for your compressing needs. It opens up some new recipes that will be &aneeded to advanced&r later, as well as &dfaster processing of existing recipes&r."]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "106620634F331F30"
 			tasks: [{
@@ -681,7 +681,11 @@
 			y: 5.0d
 			shape: "rsquare"
 			subtitle: "Long awaited upgrade"
-			description: ["Finally with your &7Refined Iron&r, you can upgrade your Frayed Backpack to become a &ePlated Backpack&r. This backpack can hold &d36 stacks&r of items and can be equipped on your back trinket slot."]
+			description: [
+				"Finally with your &7Refined Iron&r, you can upgrade your &dFrayed Backpack&r to become a &ePlated Backpack&r. This backpack can hold &d36 stacks&r of items and can be equipped on your back trinket slot."
+				""
+				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
+			]
 			dependencies: ["6012D781643367DA"]
 			id: "59141568014C03CB"
 			tasks: [{
@@ -707,7 +711,7 @@
 			x: -5.0d
 			y: 1.5d
 			shape: "square"
-			description: ["The &aAlloy Smelter&r is used to... smelt alloys. It's a key machine for progressing, as certain alloys are going to be required as you progress."]
+			description: ["The &aAlloy Smelter&r is used to... &3smelt alloys&r. It's a key machine for progressing, as certain &3alloys&r are going to be required as you progress."]
 			dependencies: ["03D51B7E40C3A7CD"]
 			id: "6A6C717EB97FD7B5"
 			tasks: [{
@@ -733,7 +737,7 @@
 			x: -5.5d
 			y: 3.5d
 			shape: "square"
-			description: ["&bElectrum&r is an alloy of &eGold&r and &7Silver&r. It's used in a variety of crafting recipes, as well as one of the cables that can support Medium Voltage."]
+			description: ["&eElectrum&r is an alloy of &eGold&r and &7Silver&r. It's used in a variety of crafting recipes, as well as one of the cables that can support &6Medium Voltage&r."]
 			dependencies: ["6A6C717EB97FD7B5"]
 			id: "06EA6256AF717DAC"
 			tasks: [{
@@ -760,7 +764,7 @@
 			y: 3.5d
 			shape: "square"
 			description: [
-				"&bInvar&r is an alloy of &cIron&r and &dNickel&r. It's used in several crafting recipes, as well as in &aHeatproof Machine Casings&r, which are essential for the &dPyrolyse Oven&r and the &eElectric Blast Furnace&r."
+				"&aInvar&r is an alloy of &cIron&r and &dNickel&r. It's used in several crafting recipes, as well as in &aHeatproof Machine Casings&r, which are essential for the &dPyrolyse Oven&r and the &eElectric Blast Furnace&r."
 				""
 				"You make this last chapter by mixing the dusts, but now you can make it directly in the &aAlloy Smelter&r."
 			]
@@ -792,9 +796,9 @@
 			y: 4.75d
 			shape: "rsquare"
 			description: [
-				"In the need of more Creosote? Or would you like to get a headstart on Benzene production? Either way, the Pyrolyse Oven is the perfect multiblock solution for you."
+				"In the need of more &dCreosote&r? Or would you like to get a headstart on &6Benzene&r production? Either way, the &aPyrolyse Oven&r is the perfect multiblock solution for you."
 				""
-				"You can Ponder the multiblock by holding 'W' on the &aPyrolyze Oven&r item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
+				"You can &bPonder&r the multiblock by holding 'W' on the &aPyrolyze Oven&r item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
 			]
 			dependencies: ["53CABAF5DA73AF92"]
 			size: 1.25d
@@ -899,7 +903,7 @@
 			description: [
 				"The &aExtractor&r is a &eTech Reborn&r machine that can, well... extract things from items. Check &dREI&r for the list of all the recipes it can process. "
 				""
-				"Most notably, it will give you a better ratio on Sap to Rubber, as well as some other Rubber production methods."
+				"Most notably, it will give you a better ratio on&d Sap to Rubber&r, as well as some other &bRubber production methods&r."
 			]
 			dependencies: ["473C1DE557D3E9C0"]
 			id: "318AAFF16CBD3C56"
@@ -929,13 +933,13 @@
 			shape: "square"
 			subtitle: "EBF for short!"
 			description: [
-				"The &aElectric Blast Furnace&r is the electric version of the &bSteam Blast Furnace&r. It unlocks new recipes and like other multiblock electric machines, its overclock is bounded to 128 EU/t by default."
+				"The &aElectric Blast Furnace&r, or &aEBF for short&r, is the electric version of the &bSteam Blast Furnace&r. It unlocks new recipes and like other multiblock electric machines, its overclock is bounded to &e128 EU/t&r by default."
 				""
-				"The EBF is made of one layer of Heatproof Machine Casings, two hollow layers of Cupronickel Coils and one other layer of Heatproof Machine Casings. The controller must go on the bottom layer, and hatches on the top or bottom layer."
+				"The &bEBF&r is made of one layer of &eHeatproof Machine Casings&r, two hollow layers of &cCupronickel Coils&r and one other layer of &eHeatproof Machine Casings&r. The &dcontroller&r must go on the bottom layer, and &2hatches on the top or bottom layer&r."
 				""
-				"Don't forget to add &cEnergy Input Hatch(es)&r or the EBF won't have energy! The LV Energy Input Hatch will only connect to LV cables. There are higher tiers of input hatches, the MV one is not craftable yet, but keep in mind that they still exist!"
+				"Don't forget to add &cEnergy Input Hatch(es)&r or the &aEBF&r won't have energy! The &6LV Energy Input Hatch&r will only connect to LV cables. There are higher tiers of input hatches, the MV one is not craftable yet, but keep in mind that they still exist!"
 				""
-				"Remember you can Ponder the multiblock by holding 'W' on the &aElectric Blast Furnace&r item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
+				"Remember you can &bPonder&r the multiblock by holding 'W' on the &aElectric Blast Furnace&r item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
 			]
 			dependencies: [
 				"071D9B8D5C16227B"
@@ -1018,9 +1022,9 @@
 			y: 3.0d
 			shape: "square"
 			description: [
-				"&aCupronickel Coils&r will allow your &bElectric Blast Furnace&r to handle recipes up to 32 EU/t. To process higher power recipes you will need to upgrade your coils, but we don't need to worry about that just yet."
+				"&aCupronickel Coils&r will allow your &bElectric Blast Furnace&r to handle recipes up to &e32 EU/t&r. To process higher power recipes you will need to upgrade your coils, &obut we don't need to worry about that just yet&r."
 				""
-				"You will have needed to make Cupronickel Ingots from the &eAlloy Smelter&r questline before you can make them. Go back and do that if you haven't already. While you're at it, make sure you've started producing Invar as well!"
+				"You will have needed to make &cCupronickel Ingots&r before you can make them. This can be done by &emixing dusts&r or using the &ealloy smelter&r. While you're at it, make sure you've started producing &bInvar&r as well!"
 			]
 			dependencies: ["4E0D57D45D09B1D4"]
 			id: "53CABAF5DA73AF92"
@@ -1078,7 +1082,9 @@
 			description: [
 				"The &6Gilded Backpack&r will allow you to carry &d54 item stacks&r."
 				""
-				"Note that it takes 4x Electrum and 4x Gold Plates. The textures look very similar."
+				"Note that it takes 4x &eElectrum&r and 4x &eGold Plates&r. The textures look very similar."
+				""
+				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
 			]
 			dependencies: ["59141568014C03CB"]
 			id: "7FD5999E03B4F989"
@@ -1108,7 +1114,7 @@
 			description: [
 				"For the recipes the &aAssembler&r doesn't cover, you can create a &eTech Reborn&r &bAuto Crafting Table&r."
 				""
-				"The &bAuto Crafting Table&r works by placing items in the grid that will complete the recipe, and then locking it with the button in the top right. Once done, you can connect it up to power and insert items into it through pipes, hoppers, etc. and it will automatically craft the item after sometime."
+				"The &bAuto Crafting Table&r works by placing items in the grid that will complete the recipe, and then &elocking it with the button in the top right&r. Once done, you can connect it up to &2power&r and &3insert items into it through pipes, hoppers, etc&r. and it will &aautomatically craft &rthe item after sometime."
 			]
 			dependencies: ["4E0D57D45D09B1D4"]
 			id: "5778899B530BDA93"
@@ -1137,9 +1143,9 @@
 			y: 4.75d
 			shape: "square"
 			description: [
-				"Silicon will be an important component in crafting electronic components. By combining Quartz and Coke Dusts in the EBF you can start producing Silicon Dust. Smelting Silicon Dust in a furnace will give you its ingot form. You can alternatively use Carbon Dust to get slightly more Silicon Dust."
+				"&aSilicon&r will be an important component in crafting &3electronic components&r. By combining &2Quartz&r and &eCoke Dusts&r in the &aEBF&r you can start producing &aSilicon Dust&r. Smelting &aSilicon Dust&r in a furnace will give you its &3ingot form&r. You can alternatively use &eCarbon Dust&r to get slightly more &aSilicon Dust&r."
 				""
-				"Alternatively, once you have an &aElectrolyzer&r you can electrolyze Clay Balls or Lapis Lazuli Dust to get Silicon as a byproduct."
+				"Alternatively, once you have an &aElectrolyzer&r you can electrolyze &6Clay Balls&r or &bLapis Lazuli Dust&r to get &aSilicon&r as a byproduct."
 			]
 			dependencies: ["34BCB27D3481EDF4"]
 			id: "45D0D6741E460128"
@@ -1169,11 +1175,11 @@
 			shape: "square"
 			subtitle: "Not Aluminium"
 			description: [
-				"Aluminum is a material used to make more advanced machines and will be required as we move towards electric circuits."
+				"&bAluminum&r is a material used to make more &eadvanced machines&r and will be required as you move towards &6Electronic Circuits&r."
 				""
-				"Put Bauxite Dust in an &aElectric Blast Furnace&r to get Aluminum. You can either put the dust in directly to get nuggets, or craft Bauxite Blocks to get Aluminum Ingots as the output."
+				"Put &dBauxite Dust&r in an &aElectric Blast Furnace&r to get &bAluminum&r. You can either put the dust in directly to get nuggets, or craft &dBauxite Blocks&r to get &bAluminum Ingots&r as the output."
 				""
-				"Alternatively, if you process the Aluminum into dust prior to the EBF it will save you some processing time."
+				"Alternatively, if you process the &bAluminum&r into dust prior to the &aEBF&r it will save you some processing time."
 			]
 			dependencies: ["34BCB27D3481EDF4"]
 			size: 2.0d
@@ -1208,7 +1214,7 @@
 			x: 9.5d
 			y: 6.0d
 			shape: "square"
-			description: ["Now that you can process Aluminum, you can now process &bAdvanced Machine Casings&r. These are the main component in making Advanced Machine Hulls."]
+			description: ["Now that you can process &bAluminum&r, you can now process &bAdvanced Machine Casings&r. These are the main component in making &2Advanced Machine Hulls&r."]
 			dependencies: ["5D1DD7B1C1BB8BEC"]
 			id: "43338129769822A8"
 			tasks: [{
@@ -1276,7 +1282,7 @@
 			y: 9.0d
 			shape: "square"
 			subtitle: "Did you remember the thermal paste?"
-			description: ["This is a big step for you, crafting your first &cElectronic Circuit&r is no small feat. This circuit makes up the basis of a lot of the recipes from here on out, so I'd recommend crafting these in bulk, and then setting up autocrafting once you have access to AE2 (which you can now make btw)"]
+			description: ["This is a big step for you, crafting your first &6Electronic Circuit&r is no small feat. This circuit makes up the &3basis of a lot of the recipes&r from here on out, so &dI'd recommend crafting these in bulk&r, and then setting up &2passive automation&r or &bautocrafting once you have access to AE2&r."]
 			dependencies: ["59F8FE8CBA6A4421"]
 			size: 2.0d
 			id: "302958D57C6A10C7"
@@ -1305,11 +1311,11 @@
 			shape: "square"
 			subtitle: "Welcome to MV"
 			description: [
-				"With your &aAdvanced Machine Casings&r, you can now create &bAdvanced Machine Hulls&r. These will be useful to access more advanced machines, as well as an essential part of the &eElectric Quarry&r."
+				"With your &aAdvanced Machine Casings&r, you can now create &bAdvanced Machine Hulls&r. These will be useful to access more advanced machines, as well as an essential part of the &eElectric Quarry&r and &6Oil Rig&r."
 				""
-				"You can place &bAdvanced Machine Hulls&r in existing machines to change their power tier. This does not make them process recipes faster, but does allow them to connect to higher tier cables."
+				"You can place &bAdvanced Machine Hulls&r in existing machines &2to change their power tier&r. This &cdoes not&r make them process recipes faster, but does allow them to &dconnect to higher tier cables&r."
 				""
-				"If you upgrade a machine's hull, make sure to upgrade the corresponding power connection! LV wires won't connect to MV machines!"
+				"If you upgrade a machine's hull, make sure to &eupgrade the corresponding power connection&r! &dLV wires won't connect to MV machines&r!"
 			]
 			dependencies: [
 				"302958D57C6A10C7"
@@ -1341,7 +1347,7 @@
 			x: 5.5d
 			y: 4.75d
 			shape: "square"
-			description: ["&dSilicon Batteries&r are made similarly to the Redstone Batteries, just with Silicon instead. These will be important in the construction of the &aAdvanced Machine Hull&r."]
+			description: ["&dSilicon Batteries&r are made similarly to the &cRedstone Batteries&r, just with &aSilicon&r instead. These will be important in the construction of the &aAdvanced Machine Hull&r."]
 			dependencies: ["45D0D6741E460128"]
 			id: "107DB1172932C668"
 			tasks: [{
@@ -1453,7 +1459,7 @@
 			x: 10.0d
 			y: 1.0d
 			shape: "rsquare"
-			description: ["The &bAluminum Tank&r is the next tier of portable tank. It can store up to 16 buckets of any fluid, and retain that fluid when broken."]
+			description: ["The &bAluminum Tank&r is the next tier of portable tank. It can store up to &616 buckets&r of any fluid, and retain that fluid when broken."]
 			dependencies: ["5D1DD7B1C1BB8BEC"]
 			id: "55809AA82CD22409"
 			tasks: [{
@@ -1479,7 +1485,7 @@
 			x: 11.5d
 			y: 1.0d
 			shape: "rsquare"
-			description: ["The &bAluminum Barrel&r is an upgrade to the Steel Barrel. It can store 512 stacks of a single item, and retains its inventory when broken."]
+			description: ["The &bAluminum Barrel&r is an upgrade to the &eSteel Barrel&r. It can store &6512 stacks&r of a single item, and retains its inventory when broken."]
 			dependencies: ["5D1DD7B1C1BB8BEC"]
 			id: "0DA3EBE865EE51FE"
 			tasks: [{
@@ -1634,7 +1640,7 @@
 			x: 11.5d
 			y: 15.5d
 			shape: "rsquare"
-			description: ["Putting &eGold Drills&r in the &aElectric Quarry will&r output Nether related items. This is a great way to get a recurring amount of Glowstone, Netherite, and Quartz."]
+			description: ["Putting &eGold Drills&r in the &aElectric Quarry will&r output &cNether&r related items. This is a great way to get a recurring amount of &2Glowstone&r, &3Netherite&r, and &eQuartz&r."]
 			dependencies: ["1AFBAD9537A32176"]
 			id: "1AC3D17D11B6CAD1"
 			tasks: [{
@@ -1662,7 +1668,7 @@
 			x: 11.5d
 			y: 14.5d
 			shape: "rsquare"
-			description: ["Putting &7Steel Drills&r in the &aElectric Quarry&r will output much rarer Overworld minerals, as well as some ores you will need in large quantities, such as Bauxite."]
+			description: ["Putting &7Steel Drills&r in the &aElectric Quarry&r will output much rarer Overworld minerals, as well as some ores you will need in large quantities, such as &aBauxite&r."]
 			dependencies: ["1AFBAD9537A32176"]
 			id: "2A76A7DC5A71E7FC"
 			tasks: [{
@@ -1690,9 +1696,9 @@
 			y: 9.0d
 			shape: "rsquare"
 			description: [
-				"The &aMV Steam Turbine&r is the next tier of steam turbines. It can produce up to 128 EU/t by using &7Steam&r."
+				"The &aMV Steam Turbine&r is the next tier of steam turbines. It can produce up to &e128 EU/t&r by using &7Steam&r."
 				""
-				"Remember that you can only connect MV wires to MV tier generators and machines. If you plan to continue using your old machines without upgrading their hulls, you will need to invest in the MV to LV Transformer."
+				"Remember that you can only connect &eMV wires to MV tier generators and machines&r. If you plan to continue using your old machines without upgrading their hulls, you will need to invest in the &2MV to LV Transformer&r."
 			]
 			dependencies: ["6C3EAE1F16E1048A"]
 			size: 1.5d
@@ -1720,7 +1726,7 @@
 			x: 3.5d
 			y: 11.5d
 			shape: "rsquare"
-			description: ["The &aMV Storage Unit&r is the next tier of energy storage. It can store up to 768k EU, quite sizable!"]
+			description: ["The &aMV Storage Unit&r is the next tier of energy storage. It can store up to &e768k EU&r, quite sizable!"]
 			dependencies: ["6C3EAE1F16E1048A"]
 			id: "4FF00ADC29EF8FE2"
 			tasks: [{
@@ -1746,7 +1752,7 @@
 			x: 3.5d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["The &aMV to LV Transformer&r will accept MV power and output LV power. You can use this to tier down your power to lower-tier machines and cables."]
+			description: ["The &aMV to LV Transformer&r will accept &eMV power and output LV power&r. You can use this to tier down your power to lower-tier machines and cables."]
 			dependencies: ["6C3EAE1F16E1048A"]
 			id: "6184782C3B7C4508"
 			tasks: [{
@@ -1773,9 +1779,9 @@
 			y: 6.5d
 			shape: "rsquare"
 			description: [
-				"This upgraded version of the &bSolar Panel&r. It produces 12 EU/t during the day and 0 EU/t during the night."
+				"This upgraded version of the &bSolar Panel&r. It produces &e12 EU/t&r during the day and &e0 EU/t&r during the night."
 				""
-				"In general, solar is only going to be good if you have a large quantity of panels. Or you could use it in small scale automations that dont need much power, up to you."
+				"In general, solar is only going to be good if you have a &blarge quantity of panels&r. Or you could use it in &dsmall scale automations&r that dont need much power, up to you."
 			]
 			dependencies: ["6C3EAE1F16E1048A"]
 			id: "51D23E71289780DE"
@@ -1805,7 +1811,7 @@
 			description: [
 				"The &aConfigurable Tank&r is a fluid equivalent of the &bConfigurable Chest&r."
 				""
-				"It has 9 configurable slots that can each hold 16 buckets and auto-extract functionality! Useful for automation with many different fluids!"
+				"It has &29 configurable slots&r that can each hold &616 buckets&r and auto-extract functionality! &dUseful for automation with many different fluids&r!"
 			]
 			dependencies: ["55809AA82CD22409"]
 			id: "5500D7E521DAA845"
@@ -1835,9 +1841,9 @@
 			shape: "rsquare"
 			subtitle: "Overdrive!"
 			description: [
-				"The &aAdvanced Large Steam Boiler&r is very similar to the original &bLarge Steam Boiler&r, but rather this version can produce up to 1024 mb/t of Steam!"
+				"The &aAdvanced Large Steam Boiler&r is very similar to the original &bLarge Steam Boiler&r, but rather this version can produce up to &e1024&r mb/t of Steam!"
 				""
-				"You will need to add an additional layer to the multiblock as compared to the original, but otherwise you can reuse a lot of the same structure. You can check the Ponder scene by holding 'W' on the &aAdvanced Large Steam Boiler&r in your inventory, or by holding a wrench to view a diagram of where blocks need to be placed."
+				"You will need to add an additional layer to the multiblock as compared to the original, but otherwise you can reuse a lot of the same structure. You can check the &bPonder&r scene by holding 'W' on the &aAdvanced Large Steam Boiler&r in your inventory, or by holding a wrench to view a diagram of where blocks need to be placed."
 			]
 			dependencies: ["302958D57C6A10C7"]
 			size: 1.5d
@@ -1908,7 +1914,7 @@
 			x: 14.5d
 			y: 11.5d
 			subtitle: "Deforestation"
-			description: ["The &aDiesel Chainsaw&r is a suped up axe that can chop down trees really quickly if you feed it more powerful fuels."]
+			description: ["The &aDiesel Chainsaw&r is a suped up axe that can chop down trees really quickly if you feed it &6more powerful fuels&r."]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "19F713DD5C1AED48"
 			tasks: [{
@@ -1938,6 +1944,8 @@
 				"The &aDiesel Mining Drill&r can finally replace your &bSteam Powered Drill&r and pickaxes. Fill it with more powerful fuel for increased speed."
 				""
 				"Toggle between &dSilk Touch&r and &cFortune III&r with shift-right click."
+				""
+				"It does &clack the 3x3&r you might be used to with the &3Steam Drill&r..."
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "0DCBF872F6BC9F84"
@@ -1965,9 +1973,9 @@
 			y: 11.5d
 			subtitle: "Fly me to the moon"
 			description: [
-				"The &aDiesel Jetpack&r allows you to have flight similar to that of the Elytra, but runs off of fuel rather than durability. The more powerful the fuel, the faster the jetpack! For really fast speeds, the &bRubber Helmet&r and &bRubber Boots&r are recommended."
+				"The &aDiesel Jetpack&r allows you to have flight similar to that of the &dElytra&r, but runs off of &efuel rather than durability&r. The &3more powerful&r the fuel, &3the faster&r the &ajetpack&r! For really fast speeds, the &bRubber Helmet&r and &bRubber Boots&r are recommended."
 				""
-				"Don't forget to activate it using the Toggle Flight keybinding (Check your controls, default is: x)"
+				"Don't forget to activate it using the &6Toggle Flight&r keybinding (Check your controls, default is: &dx&r)"
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			id: "2FD9CBCD413E05DF"
@@ -1997,11 +2005,11 @@
 			shape: "square"
 			subtitle: "You've caught the United States' attention"
 			description: [
-				"Now it's time to focus in on fluid processing. The first step on that list is to create the &aOil Drilling Rig&r. It's a huge multiblock that can dig for Crude Oil under the bedrock using fluid pipes. The Crude Oil will be extremely important as it can be processed into a lot of byproducs and can be used to produce energy."
+				"Now it's time to focus in on &3fluid processing&r. The first step on that list is to create the &aOil Drilling Rig&r. It's a huge multiblock that can dig for &0Crude Oil&r under the bedrock using drills. The &0Crude Oil&r will be extremely important as it can be &3processed into a lot of byproducs&r and can be used to &6produce energy&r."
 				""
-				"The structure of the multiblock is made of Steel Machine Casings, Steel Pipe Machine Casings, and Chains. Make sure to at least have an Item Input, Fluid Output, and Energy Input Hatch. If you need help building the multiblock, you can view its Ponder scene by holding 'W' on the Oil Drilling Rig item in your inventory, or by holding your wrench with the controller placed."
+				"The structure of the multiblock is made of &2Steel Machine Casings&r, &aSteel Pipe Machine Casings&r, and &3Chains&r. Make sure to at least have an &eItem Input&r, &6Fluid Output&r, and &dEnergy Input Hatch&r. If you need help building the multiblock, you can view its &bPonder&r scene by holding 'W' on the &aOil Drilling Rig&r item in your inventory, or by holding your &ewrench&r with the controller placed."
 				""
-				"Some of the first uses of your newly gathered Crude Oil will be to offer a much more efficient way of creating Rubber Sheets. Additionally, you can burn Crude Oil to produce power in &bDiesel Generators&r. Crude Oil itself is not very efficient, so we will be processing it into more useful products."
+				"Some of the first uses of your newly gathered &0Crude Oil&r will be to offer a much more efficient way of creating &aRubber Sheets&r. Additionally, you can burn &0Crude Oil&r to produce power in &bDiesel Generators&r. &0Crude Oil&r itself is not very efficient, so we will be processing it into more useful products."
 			]
 			dependencies: ["6C3EAE1F16E1048A"]
 			size: 2.5d
@@ -2086,7 +2094,7 @@
 			y: 15.0d
 			shape: "square"
 			subtitle: "Black Gold"
-			description: ["Crude Oil is produced from an &aOil Drilling Rig&r using an &7Aluminum Drill&r. The following quests follow processing down Crude Oil into other usable byproducts."]
+			description: ["&0Crude Oil&r is produced from an &aOil Drilling Rig&r using an &7Aluminum Drill&r. The following quests follow processing down &0Crude Oil&r into other &6usable byproducts&r."]
 			dependencies: ["5000D009D884FB99"]
 			id: "7DE19984A4DE57D4"
 			tasks: [{
@@ -2113,7 +2121,15 @@
 			x: 1.0d
 			y: 16.5d
 			shape: "rsquare"
-			description: ["Unlike &bGregTech&r, MI machines do not have programmable circuits. If you'd like to set the recipe you'd like a machine to run, click \"View Recipes for X\" and then click the + to set the recipe. This will be needed as you work through processing Crude Oil."]
+			description: [
+				"Unlike &bGregTech&r, &eMI&r machines &cdo not have programmable circuits&r. If you'd like to set the recipe you'd like a machine to run, &dthere are several ways&r. "
+				""
+				"1. Click &eView All Recipes&r in the middle of the machine GUI, and press the &d+&r button next to the recipe you want to set."
+				""
+				"2. Open the GUI, and use &dREI&r to pullup the recipe you're wanting to lock, then press the &d+&r button."
+				""
+				"3. Drag the &afluids&r from &dREI&r into the slots you'd like to lock."
+			]
 			dependencies: ["7DE19984A4DE57D4"]
 			id: "2704DC39313392E6"
 			tasks: [{
@@ -2133,11 +2149,11 @@
 			y: 13.5d
 			shape: "rsquare"
 			description: [
-				"Petrochemistry is the science of breaking Crude Oil into it's useful components. While looking at the quest tree may seem daunting, it's not as bad as you think. I highly recommend checking through &dREI&r to work through what process you will need to get your desired outcome."
+				"&dPetrochemistry&r is the science of breaking &0Crude Oil&r into it's useful components. While looking at the quest tree may seem daunting, it's not as bad as you think. I highly recommend checking through &dREI&r to work through what process you will need to get your desired outcome."
 				""
-				"NOTE: I don't recommend rushing to make dozens of single block Distilleries for all the outputs just yet, you will soon unlock the Distillation Tower, which will allow you to use a single multiblock to get multiple outputs at once."
+				"&cNOTE&r: I don't recommend rushing to make dozens of single block &6Distilleries&r for all the outputs just yet, you will soon unlock the &2Distillation Tower&r, which will allow you to use a &esingle multiblock to get multiple outputs at once&r."
 				""
-				"I'd recommend focusing on Polyethylene and Sulfuric Acid production for now."
+				"I'd recommend focusing on &3Polyethylene&r and &cSulfuric Acid&r production for now."
 			]
 			dependencies: ["7DE19984A4DE57D4"]
 			id: "460D8C9E5BF1E1BE"
@@ -2234,7 +2250,7 @@
 			x: -4.0d
 			y: 13.0d
 			shape: "square"
-			description: ["&aLight Fuel&r can produce 160 EU per 1 mB used in a &bDiesel Generator&r. It's better to either combine it into Diesel or continue with Steam-Cracking it."]
+			description: ["&aLight Fuel&r can produce &e160 EU per 1 mB&r used in a &bDiesel Generator&r. It's better to either combine it into &6Diesel&r or continue with &3Steam-Cracking&r it."]
 			dependencies: ["359CB19747F5A3F3"]
 			id: "2CFB5F9C3B6EA234"
 			tasks: [{
@@ -2260,7 +2276,7 @@
 			x: -4.0d
 			y: 15.0d
 			shape: "square"
-			description: ["&aHeavy Fuel&r can produce 240 EU per 1 mB used in a &bDiesel Generator&r. It's not as good as Diesel, so it's either better to make Diesel or continue to Steam-Cracking process."]
+			description: ["&aHeavy Fuel&r can produce &e240 EU per 1 mB&r used in a &bDiesel Generator&r. It's not as good as &6Diesel&r, so it's either better to make &6Diesel&r or continue to &3Steam-Cracking&r process."]
 			dependencies: ["2AB5F5DBA6ACA80E"]
 			id: "51A8CF3031F2765A"
 			tasks: [{
@@ -2286,7 +2302,7 @@
 			x: -4.0d
 			y: 17.0d
 			shape: "square"
-			description: ["&aNaphtha&r can produce 80 EU per 1 mB used in a &bDiesel Generator&r. It's an extremely awful fuel source for &bDiesel Generators&r. It can be produced into Lubricant or continued down the chain by Steam-Cracking."]
+			description: ["&aNaphtha&r can produce &e80 EU per 1 mB&r used in a &bDiesel Generator&r. It's an extremely &cawful fuel source&r for &bDiesel Generators&r. It can be produced into &eLubricant&r or continued down the chain by &3Steam-Cracking&r."]
 			dependencies: ["30D48F97B508E120"]
 			id: "34533B2E5B614E28"
 			tasks: [{
@@ -2313,7 +2329,7 @@
 			y: 14.0d
 			shape: "square"
 			subtitle: "Good for the environment!"
-			description: ["&aDiesel&r can produce 400 EU per 1 mB used in a &bDiesel Generator&r. By combining Light and Heavy Fuel you can create &aDiesel&r. &aDiesel&r is a decent fuel source to use in &aDiesel Generators&r and Diesel tools."]
+			description: ["&aDiesel&r can produce &e400 EU per 1 mB&r used in a &bDiesel Generator&r. By combining &6Light and Heavy Fuel&r you can create &aDiesel&r. &aDiesel&r is a decent fuel source to use in &aDiesel Generators&r and &aDiesel &rtools."]
 			dependencies: [
 				"51A8CF3031F2765A"
 				"2CFB5F9C3B6EA234"
@@ -2420,7 +2436,7 @@
 			x: -19.0d
 			y: 10.5d
 			shape: "square"
-			description: ["&aEthylene&r is used in the production of Ethylbenzene, Ethanol, and Polyethylene."]
+			description: ["&aEthylene&r is used in the production of &3Ethylbenzene&r, &2Ethanol&r, and &bPolyethylene&r."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "6762FCBA521FFF4B"
@@ -2447,7 +2463,7 @@
 			x: -13.0d
 			y: 10.5d
 			shape: "square"
-			description: ["&aToluene&r is used in the creation of Industrial TNT, which is necessary for the Nuke and usage in the Implosion Compressor."]
+			description: ["&aToluene&r is used in the creation of &2Industrial TNT&r, which is necessary for the &dNuke&r and usage in the &dImplosion Compressor&r."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "30A1AF7E38D6C40D"
@@ -2474,7 +2490,7 @@
 			x: -17.0d
 			y: 10.5d
 			shape: "square"
-			description: ["&aPropene&r is important for creating Acryllic Acid, which can be creates Diethyl Ether, an important component in Boosted Diesel. Acryllic Acid can also be reacted into Acryllic Glue, a form of creating infinite Slime."]
+			description: ["&aPropene&r is important for creating &3Acryllic Acid&r, which can be creates &eDiethyl Ether&r, an important component in &6Boosted Diesel&r. &3Acryllic Acid&r can also be reacted into &eAcryllic Glue&r, a form of creating infinite &aSlime.&r"]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "4BC45FE0A3D522C3"
@@ -2501,7 +2517,7 @@
 			x: -11.0d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["&aBenzene&r is important for creating Ethylbenzene, a component in the creation of Styrene-Butadiene Rubber. It can also be used to make Caprolactam which can make infinite String."]
+			description: ["&aBenzene&r is important for creating &dEthylbenzene&r, a component in the creation of &eStyrene-Butadiene Rubber&r. It can also be used to make &2Nylon&r which can make more &3String&r from &3String.&r"]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "12C2A8F5ED305E72"
@@ -2528,7 +2544,7 @@
 			x: -9.0d
 			y: 10.5d
 			shape: "square"
-			description: ["&aAcetylene&r is used in the production of Polyvinyl Chloride."]
+			description: ["&aAcetylene&r is used in the production of &bPolyvinyl Chloride&r."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "572CEB1A519C14E9"
@@ -2555,7 +2571,7 @@
 			x: -7.0d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["&aMethane&r can be converted into Acetylene, which is important for making Vinyl Chloride, which itself gets made into Polyvinyl Chloride. It doesn't have any more recipes other than turning into Acetylene, so might as well just do that."]
+			description: ["&aMethane&r can be converted into &dAcetylene&r, which is important for making &2Vinyl Chloride&r, which itself gets made into &bPolyvinyl Chloride&r. It doesn't have any more recipes other than turning into &dAcetylene&r, so might as well just do that."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "7B3CFD8EC0032C17"
@@ -2582,7 +2598,7 @@
 			x: -3.5d
 			y: 10.5d
 			shape: "square"
-			description: ["Important for the creation of Styrene-Butadiene Rubber."]
+			description: ["Important for the creation of &aStyrene-Butadiene Rubber&r."]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
 			id: "3765635D66BF2766"
@@ -2610,9 +2626,9 @@
 			y: 10.5d
 			shape: "square"
 			description: [
-				"&aEthylbenzene&r is an important component in the creation of Styrene, which is used to make Styrene-Butadiene Rubber."
+				"&aEthylbenzene&r is an important component in the creation of &3Styrene&r, which is used to make &2Styrene-Butadiene Rubber&r."
 				""
-				"For those of you who are observant, this is one process closer to Styrene-Butadiene Rubber than Benzene, making Naphtha a good source to produce Styrene-Butadiene Rubber."
+				"For those of you who are observant, this is one process closer to &2Styrene-Butadiene Rubber&r than &eBenzene&r, making &6Naphtha&r a good source to produce &2Styrene-Butadiene Rubber&r."
 			]
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
@@ -2695,7 +2711,7 @@
 			x: -3.5d
 			y: 6.5d
 			shape: "square"
-			description: ["A very versatile rubber-like chemical. Can be used to make cables, RAM, and the best ratio for Rubber Sheets."]
+			description: ["A very versatile &drubber-like chemical&r. Can be used to make &ecables&r, &2RAM&r, and the best ratio for &3Rubber Sheets&r."]
 			dependencies: ["12A157C15F6BEC4B"]
 			id: "68988600213DC7AE"
 			tasks: [{
@@ -2803,7 +2819,7 @@
 			x: -11.0d
 			y: 6.5d
 			shape: "rsquare"
-			description: ["Can be used to duplicate String."]
+			description: ["Can be used to &dduplicate&r &eString.&r"]
 			dependencies: ["39FEC909B97A7449"]
 			id: "1676F0CDF65CC8FC"
 			tasks: [{
@@ -2829,7 +2845,7 @@
 			x: -13.0d
 			y: 8.5d
 			shape: "square"
-			description: ["&aIndustrial TNT&r is a key component in the &eImplosion Compressor&r. Using Toulene and Nitrogen you can combine Sand and Flint to produce a controlled explosive."]
+			description: ["&aIndustrial TNT&r is a key component in the &eImplosion Compressor&r. Using &2Toulene&r and &3Nitrogen&r you can combine Sand and Flint to produce a controlled explosive."]
 			dependencies: ["30A1AF7E38D6C40D"]
 			id: "1643F0311C19D935"
 			tasks: [{
@@ -2855,7 +2871,7 @@
 			x: -17.0d
 			y: 8.5d
 			shape: "square"
-			description: ["&aAcrylic Acid&r can be used to create Acrylic Glue, which will create infinite slime, or it can be used to make Diethyl Ether, which is used in Boosted Diesel"]
+			description: ["&aAcrylic Acid&r can be used to create &aAcrylic Glue&r, which will create infinite &aslime&r, or it can be used to make &2Diethyl Ether&r, which is used in &6Boosted Diesel&r"]
 			dependencies: ["4BC45FE0A3D522C3"]
 			id: "476EB7CF83477089"
 			tasks: [{
@@ -2881,7 +2897,7 @@
 			x: -19.0d
 			y: 8.5d
 			shape: "square"
-			description: ["&aEthanol&r is an important component in Diethyl Ether, which will be used to make Boosted Diesel."]
+			description: ["&aEthanol&r is an important component in Diethyl Ether, which will be used to make &6Boosted Diesel&r."]
 			dependencies: ["6762FCBA521FFF4B"]
 			id: "7B318DADE7D4B28E"
 			tasks: [{
@@ -2907,7 +2923,7 @@
 			x: -17.0d
 			y: 6.5d
 			shape: "square"
-			description: ["Mix this with &aDiesel&r to make &bBoosted Diesel&r. The most efficient fuel to burn."]
+			description: ["Mix this with &aDiesel&r to make &6Boosted Diesel&r. &dThe most efficient fuel to burn&r."]
 			dependencies: [
 				"7B318DADE7D4B28E"
 				"476EB7CF83477089"
@@ -2988,7 +3004,7 @@
 			x: -17.0d
 			y: 4.5d
 			shape: "square"
-			description: ["&aBoosted Diesel&r can make 800 EU per mB burned. It's the most efficient fuel to burn."]
+			description: ["&aBoosted Diesel&r can make &e800 EU per mB&r burned. &dIt's the most efficient fuel to burn&r."]
 			dependencies: [
 				"6FC3B9DB61B11CB4"
 				"546FA5CADF43F18A"
@@ -3018,7 +3034,7 @@
 			x: -21.5d
 			y: 10.5d
 			shape: "square"
-			description: ["&aPolyethylene&r is an important chemical for the creation of circuit boards and upgrade."]
+			description: ["&aPolyethylene&r is an important chemical for the creation of &2circuit boards&r and &eupgrades&r."]
 			dependencies: ["6762FCBA521FFF4B"]
 			size: 1.5d
 			id: "735AA911E02186A4"
@@ -3047,9 +3063,9 @@
 			y: 15.0d
 			shape: "square"
 			description: [
-				"The following quests are all the useful fluids / gases you can make from distilling Steam-Cracked Fuels / Naphtha. "
+				"The following quests are all the useful fluids / gases you can make from distilling &3Steam-Cracked Fuels&r / &eNaphtha&r. "
 				""
-				"You don't need to make everything, but you will need to make &aPolyethylene&r for sure, and &bDiesel&r / &dNitro-Diesel&r are good for energy production."
+				"You don't need to make everything, but you will need to make &aPolyethylene&r for sure, and &bDiesel&r / &dNitro-Diesel&r are good for &2energy production&r."
 			]
 			dependencies: [
 				"0F866EE01E29B82D"
@@ -3085,9 +3101,9 @@
 			description: [
 				"Upgrades can be added to &aElectric Machines&r to increase their total EU/t overclock. "
 				""
-				"By default, &aElectric Machines&r have an overclock capped at 32 EU/t, and electric multiblocks have an overclock capped at 128 EU/t."
+				"By default, &aElectric Machines&r have an overclock capped at &632 EU/t&r, and electric multiblocks have an overclock capped at &6128 EU/t&r."
 				""
-				"In the Machine or Multiblocks menu, add upgrades in the top right slot to increase its maximum overclock. Check &dREI&r for exact amounts."
+				"In the Machine or Multiblocks GUI, add upgrades in the &etop right slot&r to increase its maximum overclock. Check &dREI&r for exact amounts."
 			]
 			dependencies: ["735AA911E02186A4"]
 			id: "7AD837EF6D37373B"
@@ -3159,7 +3175,7 @@
 			description: [
 				"One of the first things you can now access with these upgrades is the ability to compress &bDiamonds&r and &aEmeralds&r into plates."
 				""
-				"Finally, you can access that new tier of chest / backpack."
+				"Finally, you can access that &3new tier of chest / backpack&r."
 			]
 			dependencies: ["7AD837EF6D37373B"]
 			id: "7DE1DE92C45C81BB"
@@ -3195,7 +3211,11 @@
 			x: -25.5d
 			y: 13.0d
 			shape: "rsquare"
-			description: ["With this new piece of bling, you will be able to carry &d 72 item stacks&r."]
+			description: [
+				"With this new piece of bling, you will be able to carry &d 72 item stacks&r."
+				""
+				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
+			]
 			dependencies: ["7DE1DE92C45C81BB"]
 			id: "1B19E2916336F297"
 			tasks: [{
@@ -3223,7 +3243,7 @@
 			y: 11.5d
 			shape: "rsquare"
 			subtitle: "A long awaited storage upgrade"
-			description: ["The &bDiamond Chest&r is a long awaited upgrade to your storage chests. It allows you to store 72 stacks of items."]
+			description: ["The &bDiamond Chest&r is a long awaited upgrade to your storage chests. It allows you to store &e72 stacks of items&r."]
 			dependencies: ["7DE1DE92C45C81BB"]
 			id: "60B30C4A8471450A"
 			tasks: [{
@@ -3275,7 +3295,7 @@
 			x: -26.5d
 			y: 10.0d
 			shape: "rsquare"
-			description: ["The &dObsidian Chest&r has the same storage as the Diamond Chest."]
+			description: ["The &dObsidian Chest&r has the same storage as the &bDiamond Chest&r."]
 			dependencies: ["60B30C4A8471450A"]
 			id: "37A888209FE71492"
 			tasks: [{
@@ -3301,7 +3321,7 @@
 			x: -24.5d
 			y: 10.0d
 			shape: "rsquare"
-			description: ["The &cNetherite Chest&r is the ultimate upgrade for your chest, boasting a capacity of 91 item stacks."]
+			description: ["The &cNetherite Chest&r is the ultimate upgrade for your chest, boasting a capacity of &e91 item stacks&r."]
 			dependencies: ["60B30C4A8471450A"]
 			id: "58C2A1D3B3129D29"
 			tasks: [{
@@ -3327,7 +3347,7 @@
 			x: -23.5d
 			y: 10.0d
 			shape: "rsquare"
-			description: ["The &bDiamond Dolly&d is an upgrade to the &7Iron Dolly&r that has no durability. This means you can move your chests around whenever you need, without having to worry about breaking your tool."]
+			description: ["The &bDiamond Dolly&d is an upgrade to the &7Iron Dolly&r that has no durability. This means you can move your chests around whenever you need, without having to worry about &6breaking your tool&r."]
 			dependencies: ["7DE1DE92C45C81BB"]
 			id: "0982F8D1C5C4DBF9"
 			tasks: [{
@@ -3353,7 +3373,7 @@
 			x: -5.0d
 			y: 16.0d
 			shape: "square"
-			description: ["&eSulfuric Acid&r is a useful byproduct of oil refinement. Make sure to keep a hold of a decent amount."]
+			description: ["&eSulfuric Acid&r is a &3useful byproduct&r of oil refinement. &6Make sure to keep a hold of a decent amount&r."]
 			dependencies: [
 				"51A8CF3031F2765A"
 				"34533B2E5B614E28"
@@ -3741,7 +3761,7 @@
 			description: [
 				"With your newly created &aStainless Steel&r and &bPolyethylene&r, you can now create &eDigital Circuit Boards&r, an important precursor to the &eDigital Circuit&r."
 				""
-				"There is a lot of microcrafting for each of the AND, NOT, and OR Gates. I would recommend making these in large batches."
+				"There is a lot of microcrafting for each of the AND, NOT, and OR Gates. I would recommend making these in large batches or &dpassive crafting them&r."
 			]
 			dependencies: ["6375B17635AAC09D"]
 			id: "47B1F3B024E8F7CD"
@@ -3857,11 +3877,11 @@
 			shape: "square"
 			subtitle: "It's getting cold in here"
 			description: [
-				"The &aVacuum Freezer&r is the next important multiblock you are going to need. With some of the ingots you will be processing soon, they come out of the EBF still extremely hot, and you will need to cool them down prior to using them."
+				"The &aVacuum Freezer&r is the next important multiblock you are going to need. With some of the ingots you will be processing soon, they come out of the &aEBF&r still &cextremely hot&r, and you will need to cool them down prior to using them."
 				""
-				"Unlike &bGregTech&r, the hot ingots don't damage you, they just can't be used in recipes."
+				"Unlike &bGregTech&r, the &chot ingots don't damage you&r, they just &6can't be used in recipes&r."
 				""
-				"If you need help building the multiblock, remember you can hold \"W\" on the &aVacuum Freezer&r item in your inventory to view the &bPonder&b scene, or you can hold your wrench out to see where to place the blocks in the world with the &aVacuum Freezer&r block placed."
+				"If you need help building the multiblock, remember you can hold \"W\" on the &aVacuum Freezer&r item in your inventory to view the &bPonder&r scene, or you can hold your wrench out to see where to place the blocks in the world with the &aVacuum Freezer&r block placed."
 			]
 			dependencies: ["36C698E0F31FDB20"]
 			size: 2.0d
@@ -3997,7 +4017,7 @@
 			x: 26.0d
 			y: 7.0d
 			shape: "square"
-			description: ["Mixing Chromium, Stainless Steel, and Aluminum Dusts will make &aKanthal Dust&r. Kanthal is an important upgrade to your EBF coils allowing you to process higher tier recipes, such as &dTitanium&r."]
+			description: ["Mixing &cChromium&r, &3Stainless Steel&r, and &bAluminum Dusts&r will make &aKanthal Dust&r. Kanthal is an important upgrade to your &eEBF&r coils allowing you to process higher tier recipes, such as &dTitanium&r and &cAnnealed Copper&r."]
 			dependencies: ["10C6529CD6C26AEE"]
 			id: "7EB2342617A3ADDF"
 			tasks: [{
@@ -4026,9 +4046,9 @@
 			y: 6.0d
 			shape: "square"
 			description: [
-				"Similar to &aStainless Steel&r, using an EBF to process Kanthal will give you a &bKanthal Hot Ingot&r. You will need to cool the ingot down in a Vacuum Freezer before it will become usable."
+				"Similar to &aStainless Steel&r, using an &eEBF&r to process &6Kanthal&r will give you a &bKanthal Hot Ingot&r. You will need to cool the ingot down in a &3Vacuum Freezer&r before it will become usable."
 				""
-				"The only usage of &aKanthal&r is to make &bKanthal Cables&r, an HV tiered cable, and &bKanthal Coils&r for use in your EBFs."
+				"The only usage of &aKanthal&r is to make &bKanthal Cables&r, an &dHV tiered cable&r, and &bKanthal Coils&r for use in your &eEBF&rs."
 			]
 			dependencies: ["7EB2342617A3ADDF"]
 			id: "0A8EBA97C825EF06"
@@ -4055,7 +4075,7 @@
 			x: 26.0d
 			y: 5.0d
 			shape: "square"
-			description: ["&aKanthal Coils&r are your ticket to late game EBF recipes. With these you can now work towards producing &dTitanium&r, the next tier of material for usage in EV-tiered Machine Hulls and multiblocks."]
+			description: ["&aKanthal Coils&r are your ticket to late game &eEBF&r recipes. With these you can now work towards producing &dadvanced components&r, and eventually &dTitanium&r."]
 			dependencies: ["0A8EBA97C825EF06"]
 			id: "68DDFA6E0465E81E"
 			tasks: [{
@@ -4084,7 +4104,7 @@
 			y: 5.0d
 			shape: "square"
 			description: [
-				"&aAnnealed Copper&r is more malleable and easier to work with than regular Copper. Mixing Oxygen with Copper Ingots in a Kanthal EBF will produce Annealed Copper Hot Ingot."
+				"&aAnnealed Copper&r is more malleable and easier to work with than regular &cCopper&r. Mixing &bOxygen&r with &cCopper Ingots&r in a &eKanthal EBF&r will produce &cAnnealed Copper Hot Ingot&r."
 				""
 				"You will need to cool the ingot in a &eVacuum Freezer&r before you can use it."
 			]
@@ -4145,9 +4165,9 @@
 			shape: "square"
 			subtitle: "Welcome to High-Voltage"
 			description: [
-				"The &aTurbo Machine Hull&r is the machine hull of the HV tier. This hull can upgrade your machines to the HV tier or you can use them to craft the brand new multiblocks!"
+				"The &aTurbo Machine Hull&r is the machine hull of the &6HV tier&r. This hull can upgrade your machines to the &6HV tier&r or you can use them to craft the &dbrand new multiblocks&r!"
 				""
-				"With these hulls made you've completed this chapter and can now move on to the next chapter."
+				"With these hulls made you've &2completed this chapter&r and can now move on to the next chapter."
 			]
 			dependencies: ["575EE8E0720CE7DC"]
 			size: 2.5d
@@ -4178,7 +4198,7 @@
 			description: [
 				"With access to &eDigital Circuits&r you can now craft &bStainless Steel Drills&b. These can be used both in an &bElectric Quarry&r and an &aOil Drilling Rig&r."
 				""
-				"If used in the &bElectric Quarry&r, it will be your main source of Titanium, Tungsten, Mozanite, and Platinum Ore. When used in an &aOil Drilling Rig&r it will mine 4000 mB of Shale Oil. I'd highly recommend using these instead of your Aluminum Drill for oil processing as you get a lot more oil."
+				"If used in the &bElectric Quarry&r, it will be your main source of Titanium, Tungsten, Mozanite, and Platinum Ore. When used in an &aOil Drilling Rig&r it will mine &34000 mB of Shale Oil&r. I'd highly recommend using these instead of your &bAluminum Drill&r for &doil processing&r as you get a lot more oil."
 			]
 			dependencies: [
 				"575EE8E0720CE7DC"
@@ -4209,7 +4229,7 @@
 			x: 30.5d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["The &aStainless Steel Barrel&r can store an incredible 4096 stacks of a single item."]
+			description: ["The &aStainless Steel Barrel&r can store an incredible &e4096 stacks&r of a single item."]
 			dependencies: ["6375B17635AAC09D"]
 			id: "3DADE1F0A3BB9AB4"
 			tasks: [{
@@ -4235,7 +4255,7 @@
 			x: 31.5d
 			y: 10.5d
 			shape: "rsquare"
-			description: ["The &aStainless Steel Tank&r is the next tier of portable fluid tank you can create. It can store up to 32 buckets of any kind of fluid and retains the contents when broken."]
+			description: ["The &aStainless Steel Tank&r is the next tier of portable fluid tank you can create. It can store up to &e32 buckets&r of any kind of fluid and retains the contents when broken."]
 			dependencies: ["6375B17635AAC09D"]
 			id: "21D65F793422444B"
 			tasks: [{
@@ -4298,10 +4318,10 @@
 			]
 		}
 		{
-			x: 34.5d
+			x: 35.0d
 			y: 5.0d
 			shape: "square"
-			description: ["&aThe Stainless Steel Drill&r in an &bOil Drilling Rig&r will give you Shale Oil. Passing this through a &eDistillation Tower&r will give you a Sulfuric Crude Oil, Sulfuric Naphtha, and a little bit of Helium. The first two can be processed down in a similar manner as you were before, but the latter, Helium, is very important as you move into the lategame."]
+			description: ["&aThe Stainless Steel Drill&r in an &bOil Drilling Rig&r will give you Shale Oil. Passing this through a &eDistillation Tower&r will give you a &eSulfuric Crude Oil&r, &6Sulfuric Naphtha&r, and a little bit of &3Helium&r. The first two can be processed down in a similar manner as you were before, but the latter, &3Helium&r, is very important as you move into the lategame."]
 			dependencies: ["3E13D3CD4173DBE2"]
 			id: "2158E2092F54EFC4"
 			tasks: [{
@@ -4331,9 +4351,9 @@
 			description: [
 				"Find yourself waiting on your &aElectric Smelters&r, even with upgrades? Need to smelt up a ton of cobblestone? Then the &dMega Smelter&r is for you."
 				""
-				"The &dMega Smelter&r processes 16 items of the same type at a time at relatively quick speeds. You can upgrade it to go even faster."
+				"The &dMega Smelter&r processes &e16 items of the same type at a time&r at relatively quick speeds. You can upgrade it to go even faster."
 				""
-				"Upgrading the coils to Kanthal doesn't speed up the recipes, not yet at least..."
+				"Upgrading the coils to &eKanthal&r doesn't speed up the recipes, &onot yet at least&r..."
 			]
 			dependencies: ["6C3EAE1F16E1048A"]
 			id: "2E1BFF08F0365119"
@@ -4702,9 +4722,9 @@
 			y: 6.0d
 			shape: "square"
 			description: [
-				"Centrifuging 3000 mB of &aLiquid Air&r will produce, 650 mB Oxygen, 2315 mB of Nitrogen, and a measly 35 mB of Argon."
+				"Centrifuging &23000 mB&r of &aLiquid Air&r will produce, &b650 mB Oxygen&r, &32315 mB of Nitrogen&r, and a measly &d35 mB of Argon&r."
 				""
-				"Argon will be very useful in the future, you should start stockpiling it."
+				"&dArgon&r will be very useful in the future, you should start stockpiling it."
 			]
 			dependencies: ["354C87C444B34193"]
 			id: "0CF36C4D19B0CE1A"
@@ -4774,11 +4794,11 @@
 				"Now that you have power, how do you transfer it? Cables of course! "
 				""
 				"The cables of the LV tier are:"
-				"- Copper"
-				"- Tin"
-				"- Silver"
+				"- &cCopper&r"
+				"- &7Tin&r"
+				"- &bSilver&r"
 				""
-				"These cables can transfer up to 256 EU/t and have an internal buffer of 256 EU. The three cables are pretty much the same, just made out of different materials, no EU loss per block here!"
+				"These cables can transfer up to &a256 EU/t&r and have an internal buffer of &2256 EU&r. The three cables are pretty much the same, just made out of different materials, &cno EU loss per block here&r!"
 			]
 			dependencies: ["6765B4B8D870CDA0"]
 			id: "6057F77940F5356C"
@@ -4821,10 +4841,10 @@
 			shape: "square"
 			description: [
 				"The Cables of MV are:"
-				"- Cupronickel"
-				"- Electrum"
+				"- &cCupronickel&r"
+				"- &eElectrum&r"
 				""
-				"These cables can transfer up to 1024 EU/t and have an internal buffer of 1024 EU."
+				"These cables can transfer up to &e1024 EU/t&r and have an internal buffer of &61024 EU&r."
 			]
 			dependencies: ["6C3EAE1F16E1048A"]
 			id: "6E7B9D7C331203C4"
@@ -5366,7 +5386,7 @@
 		{
 			x: 3.75d
 			y: 17.5d
-			description: ["The &bAluminum Drill&r have one purpose, and that's to produce &aCrude Oil&r. These are rather expensive, so I hope you're infrastructure is ready!"]
+			description: ["The &bAluminum Drill&r have one purpose, and that's to produce &aCrude Oil&r. These are rather expensive, so I hope your &einfrastructure is ready&r!"]
 			dependencies: ["5000D009D884FB99"]
 			id: "6B3CFE9AF2F5628B"
 			tasks: [{
