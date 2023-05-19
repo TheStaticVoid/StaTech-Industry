@@ -5377,11 +5377,19 @@
 				type: "item"
 				item: "techreborn:greenhouse_controller"
 			}]
-			rewards: [{
-				id: "3A78FE9830AD6575"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "74A76D3B73C797CD"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 238949117979752405L
+				}
+				{
+					id: "5DD3B33C86CFBE44"
+					type: "xp"
+					xp: 10
+				}
+			]
 		}
 		{
 			x: 3.75d
@@ -5424,8 +5432,7 @@
 				{
 					id: "31DCD07FDC9DF744"
 					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4654133894100259948L
+					table_id: 2875761064117204871L
 				}
 				{
 					id: "3DECA5569F034AC9"
