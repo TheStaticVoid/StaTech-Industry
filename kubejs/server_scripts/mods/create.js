@@ -9,7 +9,8 @@ ServerEvents.recipes(e => {
         cr('crafting/kinetics/large_cogwheelfrom_little'),
         cr('smelting/platinum_ingot_compat_modern_industrialization'),
         cr('smelting/silver_ingot_compat_modern_industrialization'),
-        cr('blasting/silver_ingot_compat_modern_industrialization')
+        cr('blasting/silver_ingot_compat_modern_industrialization'),
+        cr('crafting/kinetics/fluid_tank')
     ];
     CREATE_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove( {type: cr('mixing'), output: 'ae2:fluix_crystal' });
@@ -86,4 +87,17 @@ ServerEvents.recipes(e => {
             }
         ]
     });
+
+    // -- TANK -- //
+    e.shaped(cr('fluid_tank'), [
+        'CGC',
+        'GSG',
+        'CGC'
+    ],
+    {
+        C: '#c:copper_plates',
+        S: '#c:steel_plates',
+        G: '#c:glass_blocks'
+    })
+    .id(st('fluid_tank'));
 });
