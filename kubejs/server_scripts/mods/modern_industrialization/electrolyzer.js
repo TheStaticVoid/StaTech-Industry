@@ -51,7 +51,7 @@ ServerEvents.recipes(e => {
         32,
         1200,
         [
-            { amount: 48, item: mc('clay_ball') }
+            { amount: 32, item: mc('clay_ball') }
         ],
         [
             { amount: 1, item: mi('aluminum_dust') },
