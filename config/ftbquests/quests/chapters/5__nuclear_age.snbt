@@ -206,13 +206,13 @@
 			shape: "square"
 			subtitle: "With great power comes great responsibility"
 			description: [
-				"The &bNuclear Reactor&r is a large multiblock whose purpose is to &egenerate massive amounts of energy by consuming nuclear fuel&r. It can produce &d100s of times more EU/t than diesel&r. It comes in &eseveral sizes&r from small to large."
-				""
-				"How it works under the hood can be a &bbit overwhelming&r, but you don't need to fully understand the details to be able to design a powerful reactor."
+				"The &bNuclear Reactor&r is a large multiblock whose purpose is to produce some materials such as &dPlutonium&r, materials for &2Nuclear Fusion&r, such as &bDeuterium&r and &dTritium&r, and lastly to generate power! It can produce &d100s of times more EU/t than diesel&r. It comes in &eseveral sizes&r from small to large. "
 				""
 				"Its recommended that you&2 experiment with various designs &rin creative mode until you find one that suits you."
 				""
 				"The upper part of the structure accepts &dNuclear Item&r or &dFluid Hatches&r. Those are the inputs and outputs of the reactor. Each hatch has one input (either item or fluid) and two outputs. &6The input slots will form a grid&r, displayed in the &areactor GUI&r (accessible by right-clicking on the controller)."
+				""
+				"To produce power using the &bNuclear Reactor&r, you need to place some form of &9Water&r in a &dFluid Hatch&r. It will turn into &7Steam&r that can then be used to produce power."
 				""
 				"&cNOTE&r: &bThe Nuclear Reactor&r &cCANNOT&r explode, emit radiation, or otherwise damage the map. The only thing that it can damage is the items you put in it if the &ctemperature&r gets too high (more on this later)."
 			]
