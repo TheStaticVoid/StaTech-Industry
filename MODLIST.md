@@ -264,5 +264,5 @@
 - [Trade Cycling (by henkelmax)](https://www.curseforge.com/minecraft/mc-mods/trade-cycling)
 - [Supplementaries (by MehVahdJukaar)](https://www.curseforge.com/minecraft/mc-mods/supplementaries)
 - [Cull Less Leaves (by XanderIsDev)](https://www.curseforge.com/minecraft/mc-mods/cull-less-leaves)
-- [Iris](https://modrinth.com/mod/iris)
-- [Mod Menu](https://modrinth.com/mod/iris)
+- [Iris (by coderbot)](https://modrinth.com/mod/iris)
+- [Mod Menu (by modmuss50)](https://modrinth.com/mod/iris)
