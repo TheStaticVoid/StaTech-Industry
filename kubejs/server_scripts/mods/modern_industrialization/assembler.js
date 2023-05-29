@@ -326,6 +326,68 @@ ServerEvents.recipes(e => {
         ]
     );
 
+    // -- STANDARD HANDGUN CARTRIDGE -- //
+    assembler(
+        st('standard_handgun_cartridge'),
+        8,
+        200,
+        [
+            { amount: 1, tag: 'c:lead_ingots' },
+            { amount: 1, item: mc('gunpowder') },
+            { amount: 2, tag: 'c:brass_ingots' }
+        ],
+        [ { amount: 8, item: 'anim_guns:standard_handgun_cartridge' } ]
+    );
+
+    assembler(
+        st('heavy_handgun_cartridge'),
+        8,
+        200,
+        [
+            { amount: 1, tag: 'c:lead_ingots' },
+            { amount: 1, item: mc('gunpowder') },
+            { amount: 2, item: 'anim_guns:hardened_iron_ingot' }
+        ],
+        [ { amount: 8, item: 'anim_guns:heavy_handgun_cartridge' } ]
+    );
+
+    assembler(
+        st('standard_rifle_cartridge'),
+        8, 
+        200,
+        [
+            { amount: 2, tag: 'c:lead_ingots' },
+            { amount: 2, item: mc('gunpowder') },
+            { amount: 4, tag: 'c:brass_ingots' }
+        ],
+        [ { amount: 8, item: 'anim_guns:standard_rifle_cartridge' } ]
+    );
+
+    assembler(
+        st('heavy_rifle_cartridge'),
+        8,
+        200,
+        [
+            { amount: 2, tag: 'c:lead_ingots' },
+            { amount: 2, item: mc('gunpowder') },
+            { amount: 4, item: 'anim_guns:hardened_iron_ingot' }
+        ], 
+        [ { amount: 8, item: 'anim_guns:heavy_rifle_cartridge' } ]
+    );
+
+    assembler(
+        st('shotgun_shell'),
+        8,
+        200,
+        [
+            { amount: 18, tag: 'c:iron_nuggets' },
+            { amount: 2, item: mc('gunpowder') },
+            { amount: 2, item: mc('paper') },
+            { amount: 1, item: 'anim_guns:plastic' }
+        ],
+        [ { amount: 8, item: 'anim_guns:shotgun_shell' } ]
+    );
+
     // -- SPACE HELMET -- //
     assembler(
         st('space_helmet'),
