@@ -349,7 +349,8 @@ ServerEvents.recipes(e => {
         [
             { amount: 4, tag: 'c:steel_ingots' }, 
             { amount: 1, item: astra('oxygen_gear') },
-            { amount: 2, item: astra('oxygen_tank') },
+            { amount: 1, item: astra('oxygen_tank') },
+            { amount: 1, item: astra('oxygen_tank') },
             { amount: 2, tag: mc('wool') }
         ],
         [
