@@ -115,6 +115,18 @@ ServerEvents.recipes(e => {
         ]
     );
 
+    // -- FLAX TO STRING -- //
+    macerator(
+        st('flax_to_string'),
+        2,
+        200,
+        [ { amount: 1, item: 'supplementaries:flax' } ],
+        [
+            { amount: 2, item: 'minecraft:string' },
+            { amount: 1, item: 'minecraft:string', probability: 0.25 }
+        ]
+    );
+
     // -- SPECTRUM POWDERS -- //
     macerator(
         st('topaz_powder_from_cluster'),
