@@ -2897,7 +2897,11 @@
 			x: -19.0d
 			y: 8.5d
 			shape: "square"
-			description: ["&aEthanol&r is an important component in Diethyl Ether, which will be used to make &6Boosted Diesel&r."]
+			description: [
+				"&aEthanol&r is an important component in Diethyl Ether, which will be used to make &6Boosted Diesel&r."
+				""
+				"It can be produced using &3Ethylene&r, &6Sulfuric Acid&r, and &9Water&r, or distilled slowly using &eSugar Solution&r."
+			]
 			dependencies: ["6762FCBA521FFF4B"]
 			id: "7B318DADE7D4B28E"
 			tasks: [{
@@ -3009,6 +3013,7 @@
 				"6FC3B9DB61B11CB4"
 				"546FA5CADF43F18A"
 			]
+			dependency_requirement: "one_completed"
 			size: 1.5d
 			id: "3F9D5D2011DA96F2"
 			tasks: [{
