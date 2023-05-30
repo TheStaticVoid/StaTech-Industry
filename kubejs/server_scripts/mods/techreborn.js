@@ -95,7 +95,8 @@ ServerEvents.recipes(e => {
         tr('crafting_table/upgrade/overclocker_upgrade'),
         tr('crafting_table/parts/helium_coolant_cell_60k'),
         tr('crafting_table/parts/superconductor'),
-        tr('crafting_table/parts/thick_neutron_reflector')
+        tr('crafting_table/parts/thick_neutron_reflector'),
+        tr('blasting/platinum_ingot_from_c_platinum_dusts')
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
