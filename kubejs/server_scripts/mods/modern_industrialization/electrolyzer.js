@@ -86,7 +86,7 @@ ServerEvents.recipes(e => {
     // -- ELECTROLYZING PYRITE DUST -- //
     electrolyzer(
         st('pyrite_dust'),
-        60,
+        16,
         1200,
         [
             { amount: 3, item: tr('pyrite_dust') },
@@ -94,9 +94,7 @@ ServerEvents.recipes(e => {
         [
             { amount: 1, item: mc('raw_iron') },
             { amount: 2, item: mi('sulfur_dust') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- GALENA DUST -- //
@@ -111,30 +109,26 @@ ServerEvents.recipes(e => {
             { amount: 6, item: mi('silver_nugget') },
             { amount: 6, item: mi('lead_nugget') },
             { amount: 1, item: tr('sulfur_dust') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- CINNABAR DUST -- //
     electrolyzer(
         st('cinnabar_dust'),
-        32,
+        16,
         800,
         [
             { amount: 2, tag: 'c:cinnabar_dusts' }
         ],
         [
             { amount: 1, item: mi('sulfur_dust') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- PERIDOT DUST -- //
     electrolyzer(
         st('peridot_dust'),
-        32,
+        16,
         500,
         [
             { amount: 9, tag: 'c:peridot_dusts' }
@@ -153,22 +147,20 @@ ServerEvents.recipes(e => {
     // -- SAPPHIRE DUST -- //
     electrolyzer(
         st('sapphire_dust'),
-        32,
+        16,
         600,
         [
             { amount: 8, tag: 'c:sapphire_dusts' }
         ],
         [
             { amount: 2, item: mi('aluminum_dust') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- SODALITE DUST -- //
     electrolyzer(
         st('sodalite_dust'),
-        32,
+        16,
         500,
         [
             { amount: 23, tag: 'c:sodalite_dusts' }
@@ -177,15 +169,13 @@ ServerEvents.recipes(e => {
             { amount: 3, item: mi('aluminum_dust') },
             { amount: 4, item: mi('sodium_dust') },
             { amount: 3, item: mi('silicon_dust') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- SPHALERITE DUST -- //
     electrolyzer(
         st('sphalerite_dust'),
-        32,
+        16,
         400,
         [
             { amount: 2, tag: 'c:sphalerite_dusts' }
@@ -193,15 +183,13 @@ ServerEvents.recipes(e => {
         [
             { amount: 1, item: tr('zinc_dust') },
             { amount: 1, item: mi('sulfur_dust') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- PYROPE DUST -- //
     electrolyzer(
         st('pyrope_dust'),
-        32,
+        16,
         400,
         [
             { amount: 20, tag: 'c:pyrope_dusts' }
@@ -210,15 +198,13 @@ ServerEvents.recipes(e => {
             { amount: 3, item: tr('magnesium_dust') },
             { amount: 2, item: mi('aluminum_dust') },
             { amount: 3, item: mi('silicon_dust') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- ALAMANDINE DUST -- //
     electrolyzer(
         st('almadine_dust'),
-        32,
+        16,
         400,
         [
             { amount: 20, tag: 'c:almandine_dusts' }
@@ -227,15 +213,13 @@ ServerEvents.recipes(e => {
             { amount: 3, item: mc('raw_iron') },
             { amount: 2, item: mi('aluminum_dust') },
             { amount: 3, item: mi('silicon_dust') }
-        ],
-        null,
-        null
+        ]
     );
 
     // -- SPESSARTINE DUST -- //
     electrolyzer(
         st('spessartine_dust'),
-        32,
+        16,
         400,
         [
             { amount: 20, tag: 'c:spessartine_dusts' }
@@ -244,8 +228,6 @@ ServerEvents.recipes(e => {
             { amount: 3, item: mi('manganese_dust') },
             { amount: 2, item: mi('aluminum_dust') },
             { amount: 3, item: mi('silicon_dust') }
-        ],
-        null,
-        null
+        ]
     );
 });

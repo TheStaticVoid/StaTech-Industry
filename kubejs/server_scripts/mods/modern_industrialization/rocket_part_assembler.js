@@ -112,7 +112,7 @@ ServerEvents.recipes(e => {
     // -- DESH TANK -- //
     rocketAssembler(
         st('desh_tank'),
-        40,
+        32,
         1200,
         [
             { amount: 4, item: mi('steel_ring') },
@@ -131,7 +131,7 @@ ServerEvents.recipes(e => {
     // -- OSTRUM TANK -- //
     rocketAssembler(
         st('ostrum_tank'),
-        48,
+        32,
         1600,
         [
             { amount: 4, item: mi('steel_ring') },
@@ -150,7 +150,7 @@ ServerEvents.recipes(e => {
     // -- CALORITE TANK -- //
     rocketAssembler(
         st('calorite_tank'),
-        52,
+        32,
         2400,
         [
             { amount: 4, item: mi('steel_ring') },
@@ -187,7 +187,7 @@ ServerEvents.recipes(e => {
     // -- DESH ENGINE -- //
     rocketAssembler(
         st('desh_engine'),
-        40,
+        32,
         1200,
         [
             { amount: 3, tag: 'c:desh_plates' },
@@ -205,7 +205,7 @@ ServerEvents.recipes(e => {
     // -- OSTRUM ENGINE -- //
     rocketAssembler(
         st('ostrum_engine'),
-        48,
+        32,
         1600,
         [
             { amount: 3, tag: 'c:ostrum_plates' },
@@ -223,7 +223,7 @@ ServerEvents.recipes(e => {
     // -- CALORITE ENGINE -- //
     rocketAssembler(
         st('calorite_engine'),
-        52,
+        32,
         2400,
         [
             { amount: 3, tag: 'c:calorite_plates' },

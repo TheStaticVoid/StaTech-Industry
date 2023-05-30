@@ -42,7 +42,7 @@ ServerEvents.recipes(e => {
     // -- MIXED BLASTPROOF INGOT -- //
     packer(
         st('mixed_blastproof_ingot'),
-        64,
+        32,
         600,
         [
             { amount: 1, item: mi('titanium_ingot') },

@@ -52,7 +52,7 @@ ServerEvents.recipes(e => {
     // -- CALCITE DUST -- //
     macerator(
         st('calcite_dust'),
-        16,
+        8,
         100,
         [
             { amount: 1, item: mc('calcite') }

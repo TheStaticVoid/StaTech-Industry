@@ -80,7 +80,7 @@ ServerEvents.recipes(e => {
     // -- CENTRIFUGE LAPIS -- //
     centrifuge(
         st('lapis_lazuli'),
-        64,
+        32,
         1500,
         [
             { amount: 4, item: mc('lapis_lazuli') }
@@ -122,7 +122,7 @@ ServerEvents.recipes(e => {
     // -- TUFF -- //
     centrifuge(
         st('tuff'),
-        5,
+        8,
         300,
         [
             { amount: 16, item: mc('tuff') }

@@ -26,7 +26,7 @@ ServerEvents.recipes(e => {
     // -- TUNGSTENSTEEL INGOT -- //
     vacuumFreezer(
         st('tungstensteel_ingot'),
-        60,
+        64,
         600,
         [
             { amount: 1, item: tr('hot_tungstensteel_ingot') }
