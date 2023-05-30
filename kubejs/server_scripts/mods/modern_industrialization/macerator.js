@@ -52,7 +52,7 @@ ServerEvents.recipes(e => {
     // -- CALCITE DUST -- //
     macerator(
         st('calcite_dust'),
-        16,
+        8,
         100,
         [
             { amount: 1, item: mc('calcite') }
@@ -112,6 +112,18 @@ ServerEvents.recipes(e => {
         [
             { amount: 1, item: tr('zinc_dust') },
             { amount: 1, item: tr('zinc_dust'), probability: 0.50 }
+        ]
+    );
+
+    // -- FLAX TO STRING -- //
+    macerator(
+        st('flax_to_string'),
+        2,
+        200,
+        [ { amount: 1, item: 'supplementaries:flax' } ],
+        [
+            { amount: 2, item: 'minecraft:string' },
+            { amount: 1, item: 'minecraft:string', probability: 0.25 }
         ]
     );
 

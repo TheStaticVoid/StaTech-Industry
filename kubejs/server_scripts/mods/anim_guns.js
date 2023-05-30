@@ -2,7 +2,12 @@ ServerEvents.recipes(e => {
     const REMOVED_RECIPES = [
         'anim_guns:hardened_iron_ingot_from_blasting',
         'anim_guns:plastic',
-        'anim_guns:plastic_exported_mi_furnace'
+        'anim_guns:plastic_exported_mi_furnace',
+        'anim_guns:standard_handgun_cartridge',
+        'anim_guns:heavy_handgun_cartridge',
+        'anim_guns:standard_rifle_cartridge',
+        'anim_guns:heavy_rifle_cartridge',
+        'anim_guns:shotgun_shell'
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 });

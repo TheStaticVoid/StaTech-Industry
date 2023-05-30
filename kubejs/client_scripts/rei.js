@@ -24,6 +24,7 @@ REIEvents.hide('item', e => {
         ae2('vibration_chamber'),
         ae2('ender_dust'),
         ae2('sky_stone_tank'),
+        'create:crushed_platinum_ore',
         'decorative_blocks:blockstate_copy_item',
         kibe('tank'),
         kibe('xp_shower'),
@@ -110,7 +111,9 @@ REIEvents.hide('item', e => {
         tr('insulated_gold_cable'),
         tr('insulated_hv_cable'),
         tr('superconductor_cable'),
-        tr('steel_small_dust')
+        tr('steel_small_dust'),
+        tr('wire_mill'),
+        tr('rock_cutter')
     ];
     REI_DELETED_ITEMS.forEach(id => e.hide(id));
 });

@@ -842,7 +842,7 @@
 			x: -2.5d
 			y: 2.0d
 			shape: "rsquare"
-			description: ["If you recall, back in the &eElectrical Age&r you unlocked the ability to create a &dWarp Stone&r. You could bring a &bWaystone&r with you to the moon and be able to warp back and forth freely without having to spend resources on multiple rocket launches."]
+			description: ["Instead of flying back home from your journeys, and needing to make more &6Rocket Fuel&r than necessary, you could potentially put those &dWaystones&r to good use. If you haven't progressed in the &aWorld of Magic&r chapter, you may have not unlocked the ability to create new &dWaystones&r, but you can find them throughout the world."]
 			dependencies: ["68CE43C175FB0826"]
 			id: "671F69640B982683"
 			tasks: [{
@@ -1727,6 +1727,8 @@
 				"&bIridium Tiny Dust&r will be needed in the production of &aMonocrystalline Silicon&r boules."
 				""
 				"The &bIridium&r production from processing &aPlatinum&r is extremely slow, but you will soon get access to &dTitanium Drills&r which will generate &bIridium Ores&r."
+				""
+				"Aside from being a byproduct in &aPlatinum&r processing, it can be found &cvery rarely&r in the &3overworld&r."
 			]
 			dependencies: ["73E92504C29F7181"]
 			id: "0A7B765B2AC2DD6D"
@@ -3043,7 +3045,11 @@
 			x: 5.25d
 			y: 0.0d
 			shape: "square"
-			description: ["Hopefully with your &bStainless Steel Drill&r in your &aElectric Quarry&r you have a decent amount of Titanium Ores to process. Using &7Manganese Sufluric Solution&r you can process the raw ore into an ingot in a &eKanthal EBF&r. Just like &bStainless Steel&r, the ingot you will get will be hot and will need to be cooled down before it can be used."]
+			description: [
+				"Hopefully with your &bStainless Steel Drill&r in your &aElectric Quarry&r you have a decent amount of Titanium Ores to process. Using &7Manganese Sufluric Solution&r you can process the raw ore into an ingot in a &eKanthal EBF&r. Just like &bStainless Steel&r, the ingot you will get will be hot and will need to be cooled down before it can be used."
+				""
+				"Alternatively, you can accumulate a lot of &dTitanium Dust&r by centrifuging &4Bauxite Dust&r."
+			]
 			dependencies: ["529FBE21C8B21DC1"]
 			id: "293DB25BD2827372"
 			tasks: [{
@@ -4526,6 +4532,38 @@
 				}
 				{
 					id: "4778C6C2ED931AE1"
+					type: "xp"
+					xp: 10
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 10.5d
+			description: ["Need to move channels in a &ccramped space&r filled with &eME Pipes&r / &eCables&r / &eetc&r? &3ME Wires&r are for you. They can carry &216 Channels&r like normal &dFluix Cables&r, but can also occupy the same space as &eME Pipes&r / &eCables&r / &eetc&r. "]
+			dependencies: ["0185C45DF71403A5"]
+			id: "50797DB31799B933"
+			tasks: [{
+				id: "4F4D97945F64C8C9"
+				type: "item"
+				title: "ME Wires"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "modern_industrialization:me_wires"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "104DC9ACF2A0C85B"
+					type: "random"
+					exclude_from_claim_all: true
+					table_id: 3355045530268513601L
+				}
+				{
+					id: "360FE729C52B1B19"
 					type: "xp"
 					xp: 10
 				}

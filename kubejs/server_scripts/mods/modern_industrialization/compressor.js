@@ -11,7 +11,8 @@ ServerEvents.recipes(e => {
         mi('materials/tungstensteel/compressor/main'),
         mi('compat/techreborn/compressor/_c_zinc_ingots_to_techreborn_zinc_plate'),
         mi('compressor/calorite_ingot_to_plate'),
-        mi('vanilla_recipes/compressor/paper_with_sugarcane')
+        mi('vanilla_recipes/compressor/paper_with_sugarcane'),
+        mi('compressor/desh_ingot_to_plate')
     ];
     DELETED_RECIPE.forEach(id => e.remove({id: id}));
 

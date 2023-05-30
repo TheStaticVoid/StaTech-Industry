@@ -61,7 +61,7 @@ ServerEvents.recipes(e => {
             { amount: 8000, fluid: mi('steam') }
         ],
         [
-            { amount: 2000, fluid: mi('benzene') }
+            { amount: 1000, fluid: mi('benzene') }
         ]
     );
 
@@ -80,7 +80,7 @@ ServerEvents.recipes(e => {
             { amount: 8000, fluid: mi('steam') }
         ],
         [
-            { amount: 2000, fluid: mi('benzene') }
+            { amount: 1000, fluid: mi('benzene') }
         ]
     );
 });
