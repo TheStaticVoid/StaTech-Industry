@@ -87,29 +87,23 @@
 			]
 		}
 		{
-			title: "Prepare for Create"
-			x: 1.5d
-			y: 0.0d
-			shape: "square"
+			dependencies: [
+				"300516B03C1580A2"
+				"7404F574F4307FB1"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"The early game of this pack is focused around the &eCreate&r mod. For this, you will need a lot of &aAndesite&r. Luckily, this quest rewards you with &esome extra&r."
 				""
 				"For those of you who don't like &eCreate&r, I've kept the &eCreate&r &crequirements low&r for the pack. You can &bchoose&r to pursue &eCreate&r further after you pass the parts where it is required, but &6fully progressing&r in &eCreate&r &cis not needed&r to beat the pack."
 			]
-			dependencies: ["300516B03C1580A2"]
 			id: "0548E4DEA1B29E91"
-			tasks: [{
-				id: "1DFDBFD89EC6C8D3"
-				type: "item"
-				item: "minecraft:andesite"
-				count: 32L
-			}]
 			rewards: [
 				{
-					id: "05A64FF589146729"
-					type: "item"
-					item: "minecraft:andesite"
 					count: 32
+					id: "05A64FF589146729"
+					item: "minecraft:andesite"
+					type: "item"
 				}
 				{
 					id: "7B5B586AAE607B0F"
@@ -117,6 +111,16 @@
 					xp: 10
 				}
 			]
+			shape: "square"
+			tasks: [{
+				count: 32L
+				id: "1DFDBFD89EC6C8D3"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "Prepare for Create"
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			title: "Andesite Alloy"
@@ -1469,6 +1473,27 @@
 					xp: 10
 				}
 			]
+		}
+		{
+			dependencies: ["300516B03C1580A2"]
+			description: ["It seems that some of the &eworld generation&r mods have &cnegatively affected&r the generation of &aAndesite&r in the world. If you're having particular troubles finding Andesite, then &2I offer a trade&r. 64x &3Cobblestone&r for 64x &aAndesite&r. Seems fair, no?"]
+			id: "7404F574F4307FB1"
+			rewards: [{
+				count: 64
+				id: "41D28426687E442D"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "429870B157B281C6"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "Can't Find Andesite?"
+			x: 0.75d
+			y: 1.5d
 		}
 	]
 	quest_links: [ ]
