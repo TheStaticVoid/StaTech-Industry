@@ -379,24 +379,28 @@
 			}]
 		}
 		{
-			title: "Sorting"
-			icon: "minecraft:chest"
-			x: 2.0d
-			y: 1.5d
-			subtitle: "For all the chest monsters out there"
-			description: ["Do you find yourself &2dumping items&r into &echests&r without a &ecare in the world&r? Well, at the very least you can &6organize&r them quickly by pressing '&2p&r' while hovering over their inventory. "]
 			dependencies: ["2174585D87F83C89"]
+			description: [
+				"This pack includes &eInventory Profiles Next&r, a mod that's &3slightly similar&r to the &6Forge counterpart&r of &bInventory Tweaks&r. It's &cdifferent in a lot of ways&r, and &dadds more features&r, such as &2slot locking&r, &asequential crafting&r, etc. "
+				""
+				"It will take some getting used to, you can configure the mod using the &3buttons in the top left&r of your inventory. &6Please let me know if there's anything wonky enabled by default&r."
+			]
+			icon: "minecraft:chest"
 			id: "6496D9E1ADE4B4DD"
-			tasks: [{
-				id: "6AB3267CA3F32DA3"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "3DA970B2C89C7494"
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "For all the chest monsters out there"
+			tasks: [{
+				id: "6AB3267CA3F32DA3"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Inventory Profiles Next"
+			x: 2.0d
+			y: 1.5d
 		}
 	]
 	quest_links: [ ]

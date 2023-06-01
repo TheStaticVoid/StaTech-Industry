@@ -7,5 +7,12 @@
     },
     "GuiSettings": {
         "continuous_crafting_saved_value": false
+    },
+    "AutoRefillSettings": {
+        "tool_damage_threshold": 5,
+        "audio_durability_notification": {
+            "value": false
+        },
+        "number_of_notifications": 2
     }
 }
