@@ -225,7 +225,7 @@ ServerEvents.recipes(e => {
         tr('quantum_boots'),
         mi('quantum_upgrade')
     )
-    .id(st('quantum_leggings'));
+    .id(st('quantum_boots'));
     // -- Quantum Sword -- //
     e.smithing(
         mi('quantum_sword'),
