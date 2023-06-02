@@ -22,3 +22,55 @@ I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling
 3. You will be prompted with a menu describing that some mods are blocked from download on third-party launchers. Add the folder you use as your downloads folder using `Add Download Folder` button, then click `Open Missing` to open the mod downloads. Save them to your downloads and they will be detected by the launcher.
 4. Click "Ok" and allow for the process to finish. 
 5. Click "Edit" under the StaTech Industry instance and ensure you have at least 4-6 GB or RAM dedicated to the pack, as well as your version of Java is Java 17.
+
+
+## Server setup using Docker-compose
+
+Pre-requisites:
+- Knowledge of Docker
+- Knowledge of Docker-compose
+
+In this repository is an example of how to use docker to host this server. Please refer to [docker-compose.yml](./docker-compose.yml) for it's definition.
+
+Copy the docker-compose file to an appropriate folder and follow the following guide on how to create a curseforge api key:
+
+
+### Curseforge key generation
+
+A CurseForge API key is required to use this feature. Go to their [developer console](https://console.curseforge.com/), generate an API key, and set the environment variable CF_API_KEY.
+
+When entering your API Key in a docker compose file you will need to escape any `$` character with a second `$`.
+
+Example if your key is `$11$22$33aaaaaaaaaaaaaaaaaaaaaaaaaa`:
+
+```
+environment:
+  CF_API_KEY: '$$11$$22$$33aaaaaaaaaaaaaaaaaaaaaaaaaa'
+```
+
+
+To avoid exposing the API key, it is highly recommended to use a .env file, which is loaded [automatically by docker compose](https://docs.docker.com/compose/environment-variables/set-environment-variables/#substitute-with-an-env-file). `$`s in the value still need to escaped with a second `$` and the variable needs to be referenced from the compose file, such as:
+
+environment:
+  CF_API_KEY: ${CF_API_KEY}
+
+
+Execute the following command to copy the `.env.example` to `.env`:
+
+``` 
+cp .env.example .env 
+```
+
+Place your API Key from the developer console inside the .env file whilst escaping the `$`s.
+
+After creating the .env containing the `CF_API_KEY` entry, run the following command to start the server:
+
+```
+docker compose up -d
+```
+
+Afterwards you can monitor the logs using:
+
+```
+docker compose logs -f
+```
