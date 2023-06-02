@@ -1159,59 +1159,6 @@
 				}
 			]
 		}
-		{
-			x: 10.5d
-			y: 5.5d
-			description: ["Need to &efit into a tight space&r, or just want to change your &aplayer model&r's size for fun? Then the &bSize Shifting Potions&r are for you. Easily craftable as any other potion, they can even come in &ehandy when messing with cables / wires in tight spaces&r."]
-			id: "687C444440FF91F4"
-			tasks: [
-				{
-					id: "47F602F97B180A17"
-					type: "item"
-					title: "Size Shifting Potions"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "sizeshiftingpotions:growing"
-						}
-					}
-				}
-				{
-					id: "0A203E90BAFF4FB6"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "sizeshiftingpotions:shrinking"
-						}
-					}
-				}
-				{
-					id: "336EC872CA235C5E"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "sizeshiftingpotions:thinning"
-						}
-					}
-				}
-				{
-					id: "04AC5034EA396D5D"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "sizeshiftingpotions:widening"
-						}
-					}
-				}
-			]
-		}
 	]
 	quest_links: [ ]
 }
