@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  minecraft:
+    image: itzg/minecraft-server:java17-graalvm-ce
+    container_name: minecraft
+    ports:
+      - "25565:25565"
+    volumes:
+      - "./mc:/data"
+      - ./modpacks:/modpacks:ro
+    environment:
+      - EULA=TRUE
+      - MEMORY=8G
+      - TYPE=AUTO_CURSEFORGE
+      - CF_PAGE_URL=https://www.curseforge.com/minecraft/modpacks/statech-industry
+      - CF_API_KEY=${CF_API_KEY}
+      - CF_EXCLUDE_MODS=627566 # Disabled Memoryleakfix mod, with this mod the server wouldnt boot. See https://github.com/TheStaticVoid/StaTech-Industry/issues/163
+    tty: true
+    stdin_open: true    
+    restart: always
