@@ -51,6 +51,23 @@ ServerEvents.recipes(e => {
     })
     .id(st('large_cogwheel_upgrade'));
 
+    // -- BRONZE PLATE -- //
+    e.custom({
+        id: st('bronze_plate'),
+        type: cr('pressing'),
+        ingredients: [
+            {
+                'tag': 'c:bronze_ingots'
+            }
+        ],
+        results: [
+            {
+                item: mi('bronze_plate'),
+                count: 1
+            }
+        ]
+    });
+
     // -- BRONZE DUST -- //
     e.custom({
         id: st('bronze_dust'),
