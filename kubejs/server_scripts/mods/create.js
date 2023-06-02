@@ -10,7 +10,8 @@ ServerEvents.recipes(e => {
         cr('smelting/platinum_ingot_compat_modern_industrialization'),
         cr('smelting/silver_ingot_compat_modern_industrialization'),
         cr('blasting/silver_ingot_compat_modern_industrialization'),
-        cr('crafting/kinetics/fluid_tank')
+        cr('crafting/kinetics/fluid_tank'),
+        cr('pressing/sugar_cane')
     ];
     CREATE_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove( {type: cr('mixing'), output: 'ae2:fluix_crystal' });
