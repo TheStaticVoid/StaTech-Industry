@@ -6,10 +6,7 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let st = (id) => `statech:modern_industrialization/assembler/${id}`;
 
-    const REMOVED_RECIPE = [
-        mi('compat/ae2/logic_processor'),
-        mi('compat/ae2/calculation_processor'),
-        mi('compat/ae2/engineering_processor'),        
+    const REMOVED_RECIPE = [    
         mi('electric_age/component/assembler/qbit'),
         mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball')
     ];
