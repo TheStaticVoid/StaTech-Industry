@@ -10,9 +10,12 @@ ServerEvents.recipes(e => {
     let legendary = 'kubejs:coin_legendary';
     let mythic = 'kubejs:coin_mythic';
 
-    e.shapeless(rare, [ '9x ' + common ]).id(st('coin_rare'));
-    e.shapeless(legendary, [ '9x ' + rare ]).id(st('coin_legendary'));
-    e.shapeless(mythic, [ '9x ' + legendary ]).id(st('coin_mythic'));
+    e.shapeless(rare, [ '9x ' + common ]).id(st('coin_rare_upgrade'));
+    e.shapeless(legendary, [ '9x ' + rare ]).id(st('coin_legendary_upgrade'));
+    e.shapeless(mythic, [ '9x ' + legendary ]).id(st('coin_mythic_upgrade'));
+    e.shapeless('9x ' + legendary, [ mythic ]).id(st('coin_legendary_downgrade'));
+    e.shapeless('9x ' + rare, [ legendary ]).id(st('coin_rare_downgrade'));
+    e.shapeless('9x ' + common, [ rare ]).id(st('coin_common_downgrade'));
 
     // -------------- //
     //    COMMON      //
