@@ -1175,7 +1175,11 @@
 		}
 		{
 			dependencies: ["6BBBD642A60FDFB5"]
-			description: ["&bInventory Cables&r can extend the range of your inventory connection. Use an &bInventory Cable Connector&r to link the inventory to the cable."]
+			description: [
+				"&2Inventory Cables&r can extend the range of your inventory connection. Use an &bInventory Cable Connector&r to link the inventory to the cable."
+				""
+				"It's much cheaper to use &aInventory Trims&r to connect to your &eInventory Connector&r, but the &bCable Connectors&r are great when something is far away!"
+			]
 			id: "202F9363708E9BA5"
 			rewards: [
 				{
@@ -1243,7 +1247,7 @@
 		}
 		{
 			dependencies: ["6BBBD642A60FDFB5"]
-			description: ["The &aInventory Trim&r can extend your &bInventory Connector&r's connection."]
+			description: ["The &aInventory Trim&r can be used to connect other inventories to your &eInventory Connector&r. Place a &aTrim&r connecting from the &eInventory Connector&r to chest/barrels/etc to &3link it all up&r!"]
 			id: "15266EC696E60BE3"
 			rewards: [
 				{
