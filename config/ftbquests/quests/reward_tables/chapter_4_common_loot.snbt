@@ -1,69 +1,67 @@
 {
 	id: "4096CE1E36F3946C"
-	order_index: 7
-	title: "Chapter 4 Rare Reward"
 	loot_size: 1
-	use_title: true
+	order_index: 7
 	rewards: [
-		{ item: "modern_industrialization:stainless_steel_ingot", count: 16 }
-		{ item: "modern_industrialization:digital_circuit", count: 4 }
-		{ item: "modern_industrialization:steel_block", count: 32 }
+		{ count: 16, item: "modern_industrialization:stainless_steel_ingot" }
+		{ count: 4, item: "modern_industrialization:digital_circuit" }
+		{ count: 32, item: "modern_industrialization:steel_block" }
 		{ item: "ae2:cell_component_16k" }
-		{ item: "ae2:logic_processor", count: 4 }
-		{ item: "ae2:calculation_processor", count: 4 }
-		{ item: "ae2:engineering_processor", count: 4 }
-		{ item: "ad_astra:desh_ingot", count: 8 }
+		{ count: 4, item: "ae2:logic_processor" }
+		{ count: 4, item: "ae2:calculation_processor" }
+		{ count: 4, item: "ae2:engineering_processor" }
+		{ count: 8, item: "ad_astra:desh_ingot" }
 		{ item: "ad_astra:calorite_ingot" }
-		{ item: "ad_astra:ostrum_ingot", count: 4 }
-		{ item: "modern_industrialization:hv_steam_turbine", count: 2 }
-		{ item: "modern_industrialization:hv_storage_unit", count: 2 }
-		{ item: "techreborn:industrial_solar_panel", count: 2 }
+		{ count: 4, item: "ad_astra:ostrum_ingot" }
+		{ count: 2, item: "modern_industrialization:hv_steam_turbine" }
+		{ count: 2, item: "modern_industrialization:hv_storage_unit" }
+		{ count: 2, item: "techreborn:industrial_solar_panel" }
 		{ item: "techreborn:charge_o_mat" }
-		{ item: "ae2:fluix_crystal", count: 32 }
+		{ count: 32, item: "ae2:fluix_crystal" }
 		{ item: "ae2:interface" }
-		{ item: "ae2:fluix_covered_cable", count: 32 }
-		{ item: "modern_industrialization:titanium_ingot", count: 8 }
-		{ item: "modern_industrialization:tungsten_ingot", count: 4 }
+		{ count: 32, item: "ae2:fluix_covered_cable" }
+		{ count: 8, item: "modern_industrialization:titanium_ingot" }
+		{ count: 4, item: "modern_industrialization:tungsten_ingot" }
 		{ item: "modern_industrialization:titanium_tank" }
 		{ item: "modern_industrialization:titanium_barrel" }
 		{ item: "modern_industrialization:turbo_machine_hull" }
-		{ item: "modern_industrialization:basic_machine_hull", count: 32 }
-		{ item: "modern_industrialization:analog_circuit", count: 64 }
-		{ item: "modern_industrialization:electronic_circuit", count: 32 }
-		{ item: "modern_industrialization:digital_circuit_board", count: 32 }
-		{ item: "modern_industrialization:mixed_ingot_blastproof", count: 4 }
-		{ item: "modern_industrialization:iridium_ingot", count: 8 }
+		{ count: 32, item: "modern_industrialization:basic_machine_hull" }
+		{ count: 64, item: "modern_industrialization:analog_circuit" }
+		{ count: 32, item: "modern_industrialization:electronic_circuit" }
+		{ count: 32, item: "modern_industrialization:digital_circuit_board" }
+		{ count: 4, item: "modern_industrialization:mixed_ingot_blastproof" }
+		{ count: 8, item: "modern_industrialization:iridium_ingot" }
 		{ item: "techreborn:lapotron_crystal" }
-		{ item: "modern_industrialization:platinum_ingot", count: 8 }
-		{ item: "modern_industrialization:or_gate", count: 16 }
-		{ item: "modern_industrialization:and_gate", count: 16 }
-		{ item: "modern_industrialization:not_gate", count: 16 }
-		{ item: "modern_industrialization:turbo_upgrade", count: 8 }
-		{ item: "modern_industrialization:monocrystalline_silicon", count: 8 }
-		{ item: "modern_industrialization:advanced_motor", count: 4 }
-		{ item: "modern_industrialization:advanced_pump", count: 4 }
-		{ item: "ae2:pattern_provider", count: 2 }
-		{ item: "ae2:blank_pattern", count: 8 }
-		{ item: "ae2:me_p2p_tunnel", count: 4 }
-		{ item: "modern_industrialization:sodium_battery", count: 16 }
+		{ count: 8, item: "modern_industrialization:platinum_ingot" }
+		{ count: 16, item: "modern_industrialization:or_gate" }
+		{ count: 16, item: "modern_industrialization:and_gate" }
+		{ count: 16, item: "modern_industrialization:not_gate" }
+		{ count: 8, item: "modern_industrialization:turbo_upgrade" }
+		{ count: 8, item: "modern_industrialization:monocrystalline_silicon" }
+		{ count: 4, item: "modern_industrialization:advanced_motor" }
+		{ count: 4, item: "modern_industrialization:advanced_pump" }
+		{ count: 2, item: "ae2:pattern_provider" }
+		{ count: 8, item: "ae2:blank_pattern" }
+		{ count: 4, item: "ae2:me_p2p_tunnel" }
+		{ count: 16, item: "modern_industrialization:sodium_battery" }
 		{ item: "vitalize:soul_revitalizer" }
-		{ item: "vitalize:pylon_base", count: 8 }
+		{ count: 8, item: "vitalize:pylon_base" }
 		{ item: "ae2:drive" }
 		{
 			item: {
-				id: "ad_astra:oxygen_tank"
 				Count: 1b
+				id: "ad_astra:oxygen_tank"
 				tag: {
 					BotariumData: { }
 				}
 			}
 		}
-		{ item: "minecraft:diamond_block", count: 32 }
-		{ item: "minecraft:netherite_block", count: 3 }
+		{ count: 32, item: "minecraft:diamond_block" }
+		{ count: 3, item: "minecraft:netherite_block" }
 		{
 			item: {
+				Count: 1b
 				id: "simplyswords:brimstone_claymore"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
@@ -71,8 +69,8 @@
 		}
 		{
 			item: {
+				Count: 1b
 				id: "simplyswords:watcher_claymore"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
@@ -80,45 +78,45 @@
 		}
 		{
 			item: {
+				Count: 1b
 				id: "simplyswords:stormbringer"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
 			}
 		}
-		{ item: "modern_industrialization:turbo_machine_casing", count: 4 }
-		{ item: "minecraft:shulker_shell", count: 32 }
-		{ item: "modern_industrialization:aluminum_drill", count: 16 }
-		{ item: "modern_industrialization:bronze_drill", count: 48 }
+		{ count: 4, item: "modern_industrialization:turbo_machine_casing" }
+		{ count: 32, item: "minecraft:shulker_shell" }
+		{ count: 16, item: "modern_industrialization:aluminum_drill" }
+		{ count: 48, item: "modern_industrialization:bronze_drill" }
 		{ item: "modern_industrialization:titanium_drill" }
-		{ item: "modern_industrialization:copper_drill", count: 32 }
-		{ item: "modern_industrialization:steel_drill", count: 16 }
-		{ item: "modern_industrialization:stainless_steel_drill", count: 8 }
-		{ item: "modern_industrialization:gold_drill", count: 16 }
+		{ count: 32, item: "modern_industrialization:copper_drill" }
+		{ count: 16, item: "modern_industrialization:steel_drill" }
+		{ count: 8, item: "modern_industrialization:stainless_steel_drill" }
+		{ count: 16, item: "modern_industrialization:gold_drill" }
 		{ item: "modern_industrialization:electric_quarry" }
-		{ item: "modern_industrialization:steel_machine_casing", count: 32 }
-		{ item: "modern_industrialization:clean_stainless_steel_machine_casing", count: 8 }
+		{ count: 32, item: "modern_industrialization:steel_machine_casing" }
+		{ count: 8, item: "modern_industrialization:clean_stainless_steel_machine_casing" }
 		{ item: "techreborn:lightning_rod" }
-		{ item: "modern_industrialization:aluminum_cable", count: 64 }
-		{ item: "modern_industrialization:kanthal_cable", count: 48 }
-		{ item: "ae2:item_cell_housing", count: 8 }
-		{ item: "ae2:fluid_cell_housing", count: 8 }
+		{ count: 64, item: "modern_industrialization:aluminum_cable" }
+		{ count: 48, item: "modern_industrialization:kanthal_cable" }
+		{ count: 8, item: "ae2:item_cell_housing" }
+		{ count: 8, item: "ae2:fluid_cell_housing" }
 		{
 			item: {
-				id: "minecraft:elytra"
 				Count: 1b
+				id: "minecraft:elytra"
 				tag: {
 					Damage: 0
 				}
 			}
 		}
 		{ item: "minecraft:nether_star" }
-		{ item: "ae2:fluix_smart_dense_cable", count: 32 }
+		{ count: 32, item: "ae2:fluix_smart_dense_cable" }
 		{
 			item: {
+				Count: 1b
 				id: "simplyswords:soulrender"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
@@ -126,8 +124,8 @@
 		}
 		{
 			item: {
+				Count: 1b
 				id: "anim_guns:assaultrifle_heavy"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
@@ -135,45 +133,47 @@
 		}
 		{
 			item: {
-				id: "anim_guns:shotgun_combat"
 				Count: 1b
+				id: "anim_guns:shotgun_combat"
 				tag: {
 					Damage: 0
 				}
 			}
 		}
 		{ item: "modern_industrialization:turbo_diesel_generator" }
-		{ item: "ae2:crafting_unit", count: 4 }
-		{ item: "ae2:4k_crafting_storage", count: 3 }
-		{ item: "ae2:crafting_accelerator", count: 6 }
+		{ count: 4, item: "ae2:crafting_unit" }
+		{ count: 3, item: "ae2:4k_crafting_storage" }
+		{ count: 6, item: "ae2:crafting_accelerator" }
 		{ item: "inmis:endless_backpack" }
-		{ item: "modern_industrialization:raw_tungsten", count: 64 }
-		{ item: "modern_industrialization:raw_titanium", count: 64 }
-		{ item: "ae2:wireless_access_point", count: 2 }
+		{ count: 64, item: "modern_industrialization:raw_tungsten" }
+		{ count: 64, item: "modern_industrialization:raw_titanium" }
+		{ count: 2, item: "ae2:wireless_access_point" }
 		{ item: "techreborn:industrial_storage_unit" }
 		{ item: "techreborn:basic_unit_upgrader" }
-		{ item: "modern_industrialization:industrial_tnt", count: 8 }
-		{ item: "ironchests:netherite_chest", count: 2 }
+		{ count: 8, item: "modern_industrialization:industrial_tnt" }
+		{ count: 2, item: "ironchests:netherite_chest" }
 		{ item: "modern_industrialization:pyrolyse_oven" }
-		{ item: "modern_industrialization:kanthal_coil", count: 8 }
-		{ item: "modern_industrialization:cupronickel_coil", count: 16 }
-		{ item: "minecraft:golden_carrot", count: 64 }
-		{ item: "minecraft:blaze_rod", count: 64 }
+		{ count: 8, item: "modern_industrialization:kanthal_coil" }
+		{ count: 16, item: "modern_industrialization:cupronickel_coil" }
+		{ count: 64, item: "minecraft:golden_carrot" }
+		{ count: 64, item: "minecraft:blaze_rod" }
 		{
 			item: {
-				id: "ad_astra:tier_1_rover"
 				Count: 1b
+				id: "ad_astra:tier_1_rover"
 				tag: {
 					BotariumData: { }
 				}
 			}
 		}
 		{ item: "ad_astra:launch_pad" }
-		{ item: "farmersdelight:cabbage_rolls", count: 8 }
-		{ item: "farmersdelight:salmon_roll", count: 8 }
-		{ item: "farmersdelight:cod_roll", count: 8 }
-		{ item: "farmersdelight:pasta_with_mutton_chop", count: 8 }
-		{ item: "farmersdelight:grilled_salmon", count: 8 }
-		{ item: "farmersdelight:dog_food", count: 8 }
+		{ count: 8, item: "farmersdelight:cabbage_rolls" }
+		{ count: 8, item: "farmersdelight:salmon_roll" }
+		{ count: 8, item: "farmersdelight:cod_roll" }
+		{ count: 8, item: "farmersdelight:pasta_with_mutton_chop" }
+		{ count: 8, item: "farmersdelight:grilled_salmon" }
+		{ count: 8, item: "farmersdelight:dog_food" }
 	]
+	title: "Chapter 4 Rare Reward"
+	use_title: true
 }

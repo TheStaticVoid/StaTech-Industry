@@ -1,22 +1,20 @@
 {
 	id: "40FCC69B94987C7D"
-	order_index: 1
-	title: "Create Rewards"
 	loot_size: 1
-	use_title: true
+	order_index: 1
 	rewards: [
 		{ item: "create:schematicannon" }
 		{ item: "create:schematic_table" }
-		{ item: "create:shaft", count: 8 }
-		{ item: "create:cogwheel", count: 12 }
-		{ item: "create:large_cogwheel", count: 8 }
-		{ item: "create:gearbox", count: 4 }
-		{ item: "create:vertical_gearbox", count: 4 }
+		{ count: 8, item: "create:shaft" }
+		{ count: 12, item: "create:cogwheel" }
+		{ count: 8, item: "create:large_cogwheel" }
+		{ count: 4, item: "create:gearbox" }
+		{ count: 4, item: "create:vertical_gearbox" }
 		{ item: "create:clutch" }
 		{ item: "create:gearshift" }
-		{ item: "create:encased_chain_drive", count: 8 }
-		{ item: "create:adjustable_chain_gearshift", count: 3 }
-		{ item: "create:water_wheel", count: 2 }
+		{ count: 8, item: "create:encased_chain_drive" }
+		{ count: 3, item: "create:adjustable_chain_gearshift" }
+		{ count: 2, item: "create:water_wheel" }
 		{ item: "create:encased_fan" }
 		{ item: "create:nozzle" }
 		{ item: "create:turntable" }
@@ -28,18 +26,18 @@
 		{ item: "create:blaze_burner" }
 		{ item: "create:depot" }
 		{ item: "create:weighted_ejector" }
-		{ item: "create:chute", count: 3 }
+		{ count: 3, item: "create:chute" }
 		{ item: "create:smart_chute" }
-		{ item: "create:fluid_pipe", count: 4 }
+		{ count: 4, item: "create:fluid_pipe" }
 		{ item: "create:mechanical_pump" }
 		{ item: "create:copper_valve_handle" }
 		{ item: "create:fluid_valve" }
 		{ item: "create:smart_fluid_pipe" }
-		{ item: "create:fluid_tank", count: 9 }
+		{ count: 9, item: "create:fluid_tank" }
 		{ item: "create:hose_pulley" }
 		{ item: "create:item_drain" }
 		{ item: "create:spout" }
-		{ item: "create:portable_fluid_interface", count: 2 }
+		{ count: 2, item: "create:portable_fluid_interface" }
 		{ item: "create:steam_engine" }
 		{ item: "create:steam_whistle" }
 		{ item: "create:mechanical_piston" }
@@ -51,45 +49,45 @@
 		{ item: "create:rope_pulley" }
 		{ item: "create:cart_assembler" }
 		{ item: "create:sticker" }
-		{ item: "create:mechanical_drill", count: 3 }
-		{ item: "create:mechanical_saw", count: 3 }
-		{ item: "create:deployer", count: 3 }
-		{ item: "create:portable_storage_interface", count: 2 }
+		{ count: 3, item: "create:mechanical_drill" }
+		{ count: 3, item: "create:mechanical_saw" }
+		{ count: 3, item: "create:deployer" }
+		{ count: 2, item: "create:portable_storage_interface" }
 		{ item: "create:redstone_contact" }
-		{ item: "create:mechanical_harvester", count: 2 }
-		{ item: "create:mechanical_plough", count: 2 }
+		{ count: 2, item: "create:mechanical_harvester" }
+		{ count: 2, item: "create:mechanical_plough" }
 		{ item: "create:white_seat" }
-		{ item: "create:andesite_casing", count: 8 }
+		{ count: 8, item: "create:andesite_casing" }
 		{ item: "create:rotation_speed_controller" }
-		{ item: "create:placard", count: 3 }
+		{ count: 3, item: "create:placard" }
 		{ item: "create:content_observer" }
 		{ item: "create:stockpile_switch" }
-		{ item: "create:item_vault", count: 4 }
-		{ item: "create:mechanical_crafter", count: 2 }
+		{ count: 4, item: "create:item_vault" }
+		{ count: 2, item: "create:mechanical_crafter" }
 		{ item: "create:track_station" }
 		{ item: "create:track_signal" }
 		{ item: "create:track_observer" }
 		{ item: "create:controls" }
-		{ item: "create:andesite_funnel", count: 3 }
+		{ count: 3, item: "create:andesite_funnel" }
 		{ item: "create:brass_funnel" }
-		{ item: "create:andesite_tunnel", count: 3 }
+		{ count: 3, item: "create:andesite_tunnel" }
 		{ item: "create:brass_tunnel" }
 		{ item: "create:display_link" }
-		{ item: "create:display_board", count: 6 }
-		{ item: "create:nixie_tube", count: 2 }
-		{ item: "create:redstone_link", count: 4 }
+		{ count: 6, item: "create:display_board" }
+		{ count: 2, item: "create:nixie_tube" }
+		{ count: 4, item: "create:redstone_link" }
 		{ item: "create:brown_toolbox" }
-		{ item: "create:polished_rose_quartz", count: 4 }
-		{ item: "create:precision_mechanism", count: 2 }
-		{ item: "create:blaze_cake", count: 8 }
-		{ item: "create:andesite_alloy", count: 16 }
-		{ item: "create:white_sail", count: 8 }
-		{ item: "create:belt_connector", count: 6 }
+		{ count: 4, item: "create:polished_rose_quartz" }
+		{ count: 2, item: "create:precision_mechanism" }
+		{ count: 8, item: "create:blaze_cake" }
+		{ count: 16, item: "create:andesite_alloy" }
+		{ count: 8, item: "create:white_sail" }
+		{ count: 6, item: "create:belt_connector" }
 		{ item: "create:linked_controller" }
 		{
 			item: {
-				id: "create:potato_cannon"
 				Count: 1b
+				id: "create:potato_cannon"
 				tag: {
 					Damage: 0
 				}
@@ -97,8 +95,8 @@
 		}
 		{
 			item: {
-				id: "create:extendo_grip"
 				Count: 1b
+				id: "create:extendo_grip"
 				tag: {
 					Damage: 0
 				}
@@ -107,8 +105,8 @@
 		{ item: "create:wand_of_symmetry" }
 		{
 			item: {
-				id: "create:copper_backtank"
 				Count: 1b
+				id: "create:copper_backtank"
 				tag: {
 					Air: 900
 				}
@@ -116,8 +114,8 @@
 		}
 		{
 			item: {
-				id: "create:diving_helmet"
 				Count: 1b
+				id: "create:diving_helmet"
 				tag: {
 					Damage: 0
 				}
@@ -125,12 +123,14 @@
 		}
 		{
 			item: {
-				id: "create:diving_boots"
 				Count: 1b
+				id: "create:diving_boots"
 				tag: {
 					Damage: 0
 				}
 			}
 		}
 	]
+	title: "Create Rewards"
+	use_title: true
 }

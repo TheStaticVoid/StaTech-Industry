@@ -1,18 +1,18 @@
 {
 	id: "38F8CAE439725D01"
-	order_index: 10
-	title: "Chapter 5 Legendary Rewards"
 	loot_size: 1
-	use_title: true
+	order_index: 10
 	rewards: [
-		{ item: "modern_industrialization:processing_unit", count: 16 }
-		{ item: "modern_industrialization:plutonium_dust", count: 8 }
-		{ item: "modern_industrialization:quantum_circuit", count: 2 }
-		{ item: "modern_industrialization:highly_advanced_machine_hull", count: 8 }
-		{ item: "modern_industrialization:cooling_cell", count: 8 }
-		{ item: "modern_industrialization:qbit", count: 8 }
-		{ item: "modern_industrialization:uranium_fuel_rod_depleted", count: 8 }
-		{ item: "modern_industrialization:nuclear_casing", count: 16 }
-		{ item: "modern_industrialization:nuclear_alloy_plate", count: 32 }
+		{ count: 16, item: "modern_industrialization:processing_unit" }
+		{ count: 8, item: "modern_industrialization:plutonium_dust" }
+		{ count: 2, item: "modern_industrialization:quantum_circuit" }
+		{ count: 8, item: "modern_industrialization:highly_advanced_machine_hull" }
+		{ count: 8, item: "modern_industrialization:cooling_cell" }
+		{ count: 8, item: "modern_industrialization:qbit" }
+		{ count: 8, item: "modern_industrialization:uranium_fuel_rod_depleted" }
+		{ count: 16, item: "modern_industrialization:nuclear_casing" }
+		{ count: 32, item: "modern_industrialization:nuclear_alloy_plate" }
 	]
+	title: "Chapter 5 Legendary Rewards"
+	use_title: true
 }
