@@ -301,4 +301,40 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: sp('amaranth_bushel') } ],
         [ { amount: 2, item: sp('amaranth_grains') } ]
     );
+
+    // -- COPPER FROM VERIDIUM -- //
+    macerator(
+        st('copper_dust_from_veridium'),
+        2,
+        200,
+        [ { amount: 1, item: crate('veridium') } ],
+        [ 
+            { amount: 1, item: mi('copper_dust') },
+            { amount: 1, item: mi('copper_dust'), probability: 0.5 }
+        ]
+    );
+
+    // -- ZINC DUST ROM ASURINE -- //
+    macerator(
+        st('zinc_dust_from_asurine'),
+        2,
+        200,
+        [ { amount: 1, item: crate('asurine') } ],
+        [ 
+            { amount: 1, item: tr('zinc_dust') },
+            { amount: 1, item: tr('zinc_dust'), probability: 0.5 }
+        ]
+    );
+
+    // -- GOLD DUST FROM OCHRUM -- //
+    macerator(
+        st('gold_dust_from_asurine'),
+        2,
+        200,
+        [ { amount: 1, item: crate('ochrum') } ],
+        [
+            { amount: 1, item: mi('gold_dust') },
+            { amount: 1, item: mi('gold_dust'), probability: 0.5 }
+        ]
+    );
 });
