@@ -985,7 +985,11 @@
 		}
 		{
 			dependencies: ["0E556AD31516BB03"]
-			description: ["By combining printed &bAE2 circuits&r and &7silicon&r in an &eInscriber&r you will create the basic components for all of &eAE2&r."]
+			description: [
+				"By combining printed &bAE2 circuits&r and &7silicon&r in an &eInscriber&r you will create the basic components for all of &eAE2&r."
+				""
+				"If you want a &efaster way to process them&r, you can use an &aAssembler&r with &cMolten Redstone&r to make the circuits as well."
+			]
 			id: "2BB495CFC3E6D6C8"
 			rewards: [
 				{
@@ -1034,7 +1038,7 @@
 				"5FDDE9153DE118DF"
 			]
 			description: [
-				"With your &aTurbo Machine Hulls&r you can now craft the &eAE2 Inscriber&r. The &eInscriber&r is a necessary machine to create the &bAE2 Processors&r. While you can make the &aPrinted Circuits&r in the &eMI Packer&r, you will ultimately need an &eInscriber&r to combine the circuit with Printed Silicon to create the &bprocessors&r."
+				"With your &aTurbo Machine Hulls&r you can now craft the &eAE2 Inscriber&r. The &eInscriber&r is a necessary machine to create the &bAE2 Processors&r and &bPrinted Silicon&r"
 				""
 				"The &eInscriber&r can be powered directly with &eModern Industrialization cables&r."
 			]
