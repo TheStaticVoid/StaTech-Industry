@@ -79,6 +79,7 @@ ServerEvents.recipes(e => {
 
     // -- PRINTED SILICON FROM SILICON INGOT -- //
     e.custom({
+        id: st('printed_silicon_from_ingot'),
         type: ae('inscriber'),
         ingredients: {
             middle: {

@@ -1,146 +1,160 @@
 {
-	id: "3FF2DEE0AA223A24"
-	group: "592A9A0E9A131D28"
-	order_index: 4
-	filename: "5__nuclear_age"
-	title: "&d5 - Nuclear Age"
-	icon: "modern_industrialization:nuclear_reactor"
-	subtitle: ["Build Your Own Reactor"]
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5__nuclear_age"
+	group: "592A9A0E9A131D28"
+	icon: "modern_industrialization:nuclear_reactor"
+	id: "3FF2DEE0AA223A24"
+	order_index: 4
+	quest_links: [ ]
 	quests: [
 		{
-			x: 0.0d
-			y: 0.0d
-			shape: "square"
+			dependencies: ["4FDC0B405C330E4F"]
 			description: [
 				"Welcome to &eChapter 5&r"
 				""
 				"It's time to up the &etech-level with these new machine hulls&r. &aNuclear Reactors&r and &3refining your processing chains&r will be needed to advanced through this chapter."
 			]
-			dependencies: ["4FDC0B405C330E4F"]
 			id: "2F0042673C0E3910"
-			tasks: [{
-				id: "38D70EE81C6963AE"
-				type: "item"
-				item: "modern_industrialization:highly_advanced_machine_hull"
-			}]
 			rewards: [
 				{
-					id: "4C69E706C9E59F47"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "637C2D372FC720B9"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "1F5586B0FB2C27F2"
+					count: 25
+					id: "0C5454264282F2D4"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "684D19B399B4F784"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			tasks: [{
+				id: "38D70EE81C6963AE"
+				item: "modern_industrialization:highly_advanced_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			title: "The Large Diesel Generator"
-			icon: "modern_industrialization:large_diesel_generator"
-			x: -2.25d
-			y: 0.0d
-			shape: "rsquare"
+			dependencies: ["2F0042673C0E3910"]
 			description: [
 				"A &bLarge Diesel Generator&r is able to burn fuel to generate up to &e16384 EU/t&r. Check &dREI&r to view how much EU per mB each fuel can produce."
 				""
 				"If you need help building the multiblock you can view the &bPonder&r scene by holding 'W' on the &aLarge Diesel Generator&r block in your inventory or by holding your wrench out with the &bLarge Diesel Generator&r placed."
 			]
-			dependencies: ["2F0042673C0E3910"]
-			size: 1.5d
+			icon: "modern_industrialization:large_diesel_generator"
 			id: "32DF938D1E6E89BB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "55B96C429128B869"
+					table_id: 1098950661447874341L
+					type: "random"
+				}
+				{
+					count: 25
+					id: "0A3CB480098F3429"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "223C775542DA91BD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
 			tasks: [
 				{
 					id: "32D2D39B4764F033"
-					type: "item"
 					item: "modern_industrialization:large_diesel_generator"
+					type: "item"
 				}
 				{
-					id: "2AB9D1D1DF71994C"
-					type: "item"
-					item: "modern_industrialization:solid_titanium_machine_casing"
 					count: 23L
+					id: "2AB9D1D1DF71994C"
+					item: "modern_industrialization:solid_titanium_machine_casing"
+					type: "item"
 				}
 				{
-					id: "789C6B4BCC05CEFA"
-					type: "item"
-					item: "modern_industrialization:titanium_machine_casing_pipe"
 					count: 10L
+					id: "789C6B4BCC05CEFA"
+					item: "modern_industrialization:titanium_machine_casing_pipe"
+					type: "item"
 				}
 				{
 					id: "040505F64CDF6F44"
-					type: "item"
-					title: "Any Energy Output Hatch"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "kubejs:energy_output_hatch"
 						}
 					}
+					title: "Any Energy Output Hatch"
+					type: "item"
 				}
 				{
 					id: "272B2E63DA426D88"
-					type: "item"
-					title: "Any Fluid Input Hatch"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "kubejs:fluid_input_hatch"
 						}
 					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
 				}
 			]
+			title: "The Large Diesel Generator"
+			x: -2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			description: ["The &aEV Tier Storage Unit&r. It can store a little more than &e45 million EU&r. "]
+			id: "64D20685E4A57EED"
 			rewards: [
 				{
-					id: "03B8FE601462AB99"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "3D9C510749E970CC"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "335345D7D0074D9D"
+					count: 25
+					id: "1E27E93B7062A493"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "2492BC33D782A3FB"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: 0.0d
-			y: -2.0d
 			shape: "rsquare"
-			description: ["The &aEV Tier Storage Unit&r. It can store a little more than &e45 million EU&r. "]
-			dependencies: ["2F0042673C0E3910"]
-			id: "64D20685E4A57EED"
 			tasks: [{
 				id: "3354DB1A9D9AE43E"
-				type: "item"
 				item: "modern_industrialization:ev_storage_unit"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "45DC70484E6269E0"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1098950661447874341L
-				}
-				{
-					id: "6EDBAC5F33D8B779"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: 0.0d
+			y: -2.0d
 		}
 		{
-			title: "Prepare for Nuclear Fission"
-			x: 2.0d
-			y: 0.0d
-			shape: "square"
+			dependencies: ["2F0042673C0E3910"]
 			description: [
 				"Before you can make a &eNuclear Reactor&r, you will need &bNuclear Alloy Plates&r. These are made with Blastproof, Beryllium, and Cadmium Ingots. "
 				""
@@ -148,63 +162,73 @@
 				""
 				"The &cBlastproof Ingots&r are going to dip heavily into your &5Ostrum supply&r. Consider going down the other questline first and building the &eSpace Probe Launcher&r to obtain more extraterrestrial materials."
 			]
-			dependencies: ["2F0042673C0E3910"]
 			id: "56A30502A268BB60"
-			tasks: [{
-				id: "13BA3670095FB899"
-				type: "item"
-				item: "modern_industrialization:mixed_plate_nuclear"
-			}]
 			rewards: [
 				{
-					id: "123F4FEE8862A5BC"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "6FB517BFC19A957C"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "514825E7466D56DE"
+					count: 25
+					id: "67FC817DF1CCC9B5"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "72780BA84473D92A"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			tasks: [{
+				id: "13BA3670095FB899"
+				item: "modern_industrialization:mixed_plate_nuclear"
+				type: "item"
+			}]
+			title: "Prepare for Nuclear Fission"
+			x: 2.0d
+			y: 0.0d
 		}
 		{
-			x: 4.0d
-			y: 0.0d
-			shape: "square"
-			description: ["Sending &bNuclear Mixed Plates&r through an &eImplosion Compressor&r will create &aNuclear Alloy Plates&r. You're going to need a lot of these for your reactors."]
 			dependencies: [
 				"56A30502A268BB60"
 				"0DF6FF0A1E872DC8"
 			]
+			description: ["Sending &bNuclear Mixed Plates&r through an &eImplosion Compressor&r will create &aNuclear Alloy Plates&r. You're going to need a lot of these for your reactors."]
 			id: "3308E0ADE29A5A9E"
-			tasks: [{
-				id: "324B98D1E3ECBA2F"
-				type: "item"
-				item: "modern_industrialization:nuclear_alloy_plate"
-			}]
 			rewards: [
 				{
-					id: "34167CE7A5718066"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "7350366D15F0E3F7"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "7F805AD705C2F42A"
+					count: 25
+					id: "5EAF7A800C5BB3A2"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "79C92713D63829FB"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			tasks: [{
+				id: "324B98D1E3ECBA2F"
+				item: "modern_industrialization:nuclear_alloy_plate"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
 		}
 		{
-			title: "The Nuclear Reactor"
-			icon: "modern_industrialization:nuclear_reactor"
-			x: 6.0d
-			y: 0.0d
-			shape: "square"
-			subtitle: "With great power comes great responsibility"
+			dependencies: ["3308E0ADE29A5A9E"]
 			description: [
 				"The &bNuclear Reactor&r is a large multiblock whose purpose is to produce some materials such as &dPlutonium&r, materials for &2Nuclear Fusion&r, such as &bDeuterium&r and &dTritium&r, and lastly to generate power! It can produce &d100s of times more EU/t than diesel&r. It comes in &eseveral sizes&r from small to large. "
 				""
@@ -216,61 +240,68 @@
 				""
 				"&cNOTE&r: &bThe Nuclear Reactor&r &cCANNOT&r explode, emit radiation, or otherwise damage the map. The only thing that it can damage is the items you put in it if the &ctemperature&r gets too high (more on this later)."
 			]
-			dependencies: ["3308E0ADE29A5A9E"]
-			size: 1.5d
+			icon: "modern_industrialization:nuclear_reactor"
 			id: "0C73D9DE1468EBB1"
-			tasks: [
-				{
-					id: "242F9ED14B6D3E97"
-					type: "item"
-					item: "modern_industrialization:nuclear_reactor"
-				}
-				{
-					id: "379C5752C36FA36F"
-					type: "item"
-					item: "modern_industrialization:nuclear_casing"
-					count: 68L
-				}
-				{
-					id: "0E6F553FAC7CF4C5"
-					type: "item"
-					item: "modern_industrialization:nuclear_alloy_machine_casing_pipe"
-					count: 27L
-				}
-				{
-					id: "1A34510253E24252"
-					type: "item"
-					title: "Any 9x Nuclear Hatches"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "kubejs:nuclear_hatch"
-						}
-					}
-					count: 9L
-				}
-			]
 			rewards: [
 				{
-					id: "38725B3FEB13FA8D"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "2B20C660C0A93B39"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "387D0BE947333564"
+					count: 25
+					id: "77CF4FC6216FE0D7"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "31C91347B49A5328"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			size: 1.5d
+			subtitle: "With great power comes great responsibility"
+			tasks: [
+				{
+					id: "242F9ED14B6D3E97"
+					item: "modern_industrialization:nuclear_reactor"
+					type: "item"
+				}
+				{
+					count: 68L
+					id: "379C5752C36FA36F"
+					item: "modern_industrialization:nuclear_casing"
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "0E6F553FAC7CF4C5"
+					item: "modern_industrialization:nuclear_alloy_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "1A34510253E24252"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:nuclear_hatch"
+						}
+					}
+					title: "Any 9x Nuclear Hatches"
+					type: "item"
+				}
+			]
+			title: "The Nuclear Reactor"
+			x: 6.0d
+			y: 0.0d
 		}
 		{
-			title: "Nuclear Science"
-			icon: "modern_industrialization:large_heat_exchanger"
-			x: 6.0d
-			y: -1.5d
-			subtitle: "Nerd Emoji"
+			dependencies: ["0C73D9DE1468EBB1"]
 			description: [
 				"Each hatch has a &ctemperature&r and stores heat which can be dissipated in several ways. The heat will naturally move to an adjacent hatch or to the outside if the hatch is on the edge (the heat is then lost). The speed of this process is equal to the hatches content's heat transfer coefficient (shown in REI) times the &ctemperature&r difference. The heat can also be extracted in a fluid hatch by producing &7steam&r. A &ctemperature&r above an item's maxmimum &ctemperature&r will destroy it."
 				""
@@ -288,138 +319,169 @@
 				""
 				"The same thing happens for fluids: a bit of fluid is transformed after each neutron absorption. This can be used to mass produce useful isotopes like Deuterium and Tritium. In both cases, the outcome is shown in REI."
 			]
-			dependencies: ["0C73D9DE1468EBB1"]
+			icon: "modern_industrialization:large_heat_exchanger"
 			id: "199D83C566FAF3F5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "547519B8F5701E8E"
+					table_id: 1098950661447874341L
+					type: "random"
+				}
+				{
+					count: 25
+					id: "6733CE04BD4470AD"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "1DBA033298431649"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Nerd Emoji"
 			tasks: [{
 				id: "491DF9EF198E39A7"
-				type: "checkmark"
 				title: "Click to Acknowledge"
+				type: "checkmark"
 			}]
+			title: "Nuclear Science"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["649FE8A688C74216"]
+			description: ["Getting to the &eQuantum Circuits&r in their own is an accomplishment. These are used for all the end game MI machines and materials."]
+			id: "23D9328B5F627E65"
 			rewards: [
 				{
-					id: "63BCDB282787EC6D"
-					type: "random"
 					exclude_from_claim_all: true
-					table_id: 1098950661447874341L
+					id: "74A50A47A51350B2"
+					table_id: 4105254141913357569L
+					type: "random"
 				}
 				{
-					id: "5E585E19DCC75742"
+					count: 5
+					id: "55D45BAA21657E76"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "407963468B605C6F"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: 3.0d
-			y: 7.0d
 			shape: "square"
-			subtitle: "The Final Circuit"
-			description: ["Getting to the &eQuantum Circuits&r in their own is an accomplishment. These are used for all the end game MI machines and materials."]
-			dependencies: ["649FE8A688C74216"]
 			size: 2.0d
-			id: "23D9328B5F627E65"
+			subtitle: "The Final Circuit"
 			tasks: [{
 				id: "2643A43FAAEAB989"
-				type: "item"
 				item: "modern_industrialization:quantum_circuit"
+				type: "item"
 			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			description: ["Combining &dTungsten&r and &aSteel&r in a &bKanthal&r &eEBF&r will slowly, but surely, produce a &eHot Tungstensteel Ingot&r. This will need to be cooled in a &3Vacuum Freezer&r before it can be used."]
+			id: "518D1E231A932ECB"
 			rewards: [
 				{
-					id: "6DE576CCAC26D9B3"
-					type: "random"
 					exclude_from_claim_all: true
-					table_id: 4105254141913357569L
+					id: "4F8AB77493ACF38E"
+					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "7E3A9EBFA09557A0"
+					count: 25
+					id: "1AB4B8895C6C022F"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "374E03A6844FB071"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: -1.0d
-			y: 2.0d
 			shape: "square"
-			description: ["Combining &dTungsten&r and &aSteel&r in a &bKanthal&r &eEBF&r will slowly, but surely, produce a &eHot Tungstensteel Ingot&r. This will need to be cooled in a &3Vacuum Freezer&r before it can be used."]
-			dependencies: ["2F0042673C0E3910"]
-			id: "518D1E231A932ECB"
 			tasks: [{
 				id: "67D00B26053270E3"
-				type: "item"
 				item: "techreborn:hot_tungstensteel_ingot"
+				type: "item"
 			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0C73D9DE1468EBB1"]
+			description: ["&dTritium&r can be produced in a multitude of ways. You can centrifuge &bHydrogen&r for a very small output or you can use Heavy Water in a &eNuclear Reactor&r which will be converted into &dTritium&r over time."]
+			id: "43D2E858079C12E0"
 			rewards: [
 				{
-					id: "1724C41EE1F99D2C"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "0534FAD684B4BF59"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "55883990009E21C4"
+					count: 25
+					id: "00A99B161F4BEAA9"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "288A8EBEF29A780C"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: 5.0d
-			y: 2.0d
 			shape: "square"
-			description: ["&dTritium&r can be produced in a multitude of ways. You can centrifuge &bHydrogen&r for a very small output or you can use Heavy Water in a &eNuclear Reactor&r which will be converted into &dTritium&r over time."]
-			dependencies: ["0C73D9DE1468EBB1"]
-			id: "43D2E858079C12E0"
 			tasks: [{
 				id: "7511D1E0AB15A451"
-				type: "item"
 				item: "modern_industrialization:tritium_bucket"
+				type: "item"
 			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			description: ["Combining 3x &aNeodymium&b, 3x &cAnnealed Copper&r, 3x &bYttrium&r, and 1x &dIridium Dust&r you can mix together &bSuperconductor Dust&r. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a &bTungstensteel EBF&r and then cool it in a &evacuum freezer&r."]
+			id: "569821B175311340"
 			rewards: [
 				{
-					id: "6E48C072A96625F3"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "1C25E14822035926"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "4C9D95C2D367014D"
+					count: 25
+					id: "6B62CEAAB068D718"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "7BDEC3595D14824D"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: 1.0d
-			y: 2.0d
 			shape: "square"
-			description: ["Combining 3x &aNeodymium&b, 3x &cAnnealed Copper&r, 3x &bYttrium&r, and 1x &dIridium Dust&r you can mix together &bSuperconductor Dust&r. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a &bTungstensteel EBF&r and then cool it in a &evacuum freezer&r."]
-			dependencies: ["2F0042673C0E3910"]
-			id: "569821B175311340"
 			tasks: [{
 				id: "7F7814394EC4D8DA"
-				type: "item"
 				item: "modern_industrialization:superconductor_dust"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "055B005AAAB584EC"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1098950661447874341L
-				}
-				{
-					id: "3A4D64DBB8A20504"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: 1.0d
+			y: 2.0d
 		}
 		{
-			title: "EV Cables"
-			x: 1.0d
-			y: -2.0d
-			shape: "square"
+			dependencies: ["2F0042673C0E3910"]
 			description: [
 				"The cables of the EV tier are:"
 				"- &cAnnealed Copper&r"
@@ -427,65 +489,77 @@
 				""
 				"These cables can transfer up to &e65.54k EU/t&r and have an internal buffer of &665.54k EU&r."
 			]
-			dependencies: ["2F0042673C0E3910"]
 			id: "257CA8034EA7B1DB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D7D3EC332F389BE"
+					table_id: 1098950661447874341L
+					type: "random"
+				}
+				{
+					count: 25
+					id: "063A55F60167A2B6"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "5FF428EC466EF2A1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
 			tasks: [{
 				id: "1A8CDC7641F6A71B"
-				type: "item"
-				title: "Any EV Cable"
 				item: {
-					id: "itemfilters:tag"
 					Count: 1b
+					id: "itemfilters:tag"
 					tag: {
 						value: "kubejs:ev_wire"
 					}
 				}
+				title: "Any EV Cable"
+				type: "item"
 			}]
+			title: "EV Cables"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["518D1E231A932ECB"]
+			description: ["&bTungstensteel&r is an improved version of Tungsten that is extremely durable and versatile. It's a key component in the &eSpace Probe Launcher&r and &eQuantum Circuit components&r"]
+			id: "5856A6281F140AEF"
 			rewards: [
 				{
-					id: "5343FEA90D2E1169"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "187E4955E6E79D6D"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "5602D978D0CFD34C"
+					count: 25
+					id: "1B0A764C7F5D3982"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "1A1684D21169C99C"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: -1.0d
-			y: 4.0d
 			shape: "square"
-			description: ["&bTungstensteel&r is an improved version of Tungsten that is extremely durable and versatile. It's a key component in the &eSpace Probe Launcher&r and &eQuantum Circuit components&r"]
-			dependencies: ["518D1E231A932ECB"]
-			id: "5856A6281F140AEF"
 			tasks: [{
 				id: "7063BFDD4E1CB8A2"
-				type: "item"
 				item: "techreborn:tungstensteel_ingot"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "2EE5B0174B24F7AC"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1098950661447874341L
-				}
-				{
-					id: "2E7467DCC5EA2C5A"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: -1.0d
+			y: 4.0d
 		}
 		{
-			icon: "modern_industrialization:space_probe_launcher"
-			x: -1.0d
-			y: 6.0d
-			shape: "square"
+			dependencies: ["229F2B56037A748B"]
 			description: [
 				"Running out of &dOstrum&r or other space materials? Fear not there's a solution! &eThe Space Probe Launcher&r launches small probes towards celestial bodies that fly back to the machine and deliver what they mine."
 				""
@@ -493,516 +567,608 @@
 				""
 				"If you need help building the multiblock you can view the Ponder scene by holding 'W' on the &eSpace Probe Launcher&r block in your inventory or by holding your wrench out with the &eSpace Probe Launcher&r placed."
 			]
-			dependencies: ["229F2B56037A748B"]
-			size: 1.5d
+			icon: "modern_industrialization:space_probe_launcher"
 			id: "0F1DC239BBC3D60F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "027FEEB8DABAD90C"
+					table_id: 1098950661447874341L
+					type: "random"
+				}
+				{
+					count: 25
+					id: "74DC65170F9C0A5C"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "7274BECA4BB1C723"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			size: 1.5d
 			tasks: [
 				{
 					id: "1C9C309ACA83F044"
-					type: "item"
 					item: "modern_industrialization:space_probe_launcher"
+					type: "item"
 				}
 				{
-					id: "3AFF48B36B7740D2"
-					type: "item"
-					item: "modern_industrialization:calorite_machine_casing"
 					count: 25L
+					id: "3AFF48B36B7740D2"
+					item: "modern_industrialization:calorite_machine_casing"
+					type: "item"
 				}
 				{
-					id: "40EFD964A68D1C47"
-					type: "item"
-					item: "modern_industrialization:calorite_machine_casing_pipe"
 					count: 10L
+					id: "40EFD964A68D1C47"
+					item: "modern_industrialization:calorite_machine_casing_pipe"
+					type: "item"
 				}
 				{
-					id: "67A277DDEA13A91B"
-					type: "item"
-					item: "modern_industrialization:tungstensteel_coil"
 					count: 20L
+					id: "67A277DDEA13A91B"
+					item: "modern_industrialization:tungstensteel_coil"
+					type: "item"
 				}
 				{
 					id: "682237114DDD4320"
-					type: "item"
-					title: "Any Item Input Hatch"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "kubejs:item_input_hatch"
 						}
 					}
+					title: "Any Item Input Hatch"
+					type: "item"
 				}
 				{
 					id: "52A9B0AD1FA5FF19"
-					type: "item"
-					title: "Any Item Output Hatch"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "kubejs:item_output_hatch"
 						}
 					}
+					title: "Any Item Output Hatch"
+					type: "item"
 				}
 				{
 					id: "5DBD8CB2A55293B5"
-					type: "item"
-					title: "Any Energy Input Hatch"
 					item: {
-						id: "itemfilters:tag"
 						Count: 1b
+						id: "itemfilters:tag"
 						tag: {
 							value: "kubejs:energy_input_hatch"
 						}
 					}
+					title: "Any Energy Input Hatch"
+					type: "item"
 				}
 			]
-			rewards: [
-				{
-					id: "5D2E898A5E9B3DE9"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1098950661447874341L
-				}
-				{
-					id: "4D01BC87C2FFA2B2"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: -1.0d
+			y: 6.0d
 		}
 		{
-			title: "Nuclear Fuel"
-			x: 8.5d
-			y: 4.0d
-			shape: "square"
-			subtitle: "Hazmat suit not required?"
-			description: ["There's a variety of &dNuclear Fuels&r available to you. The most basic is just regular &aUranium Rods&r, but you can make &aLightly-Enriched&r (LE) or &aHighly-Enriched&r (HE) variants. Check &dJEI&r for more details on each fuel and find what works best for you."]
 			dependencies: [
 				"131D19CE92E22D58"
 				"4E4FF04917B2E624"
 			]
+			description: ["There's a variety of &dNuclear Fuels&r available to you. The most basic is just regular &aUranium Rods&r, but you can make &aLightly-Enriched&r (LE) or &aHighly-Enriched&r (HE) variants. Check &dJEI&r for more details on each fuel and find what works best for you."]
 			id: "4A580712AAD72CFF"
-			tasks: [{
-				id: "052855B501BA4A98"
-				type: "item"
-				title: "Any Nuclear Fuel"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "kubejs:nuclear_fuel"
-					}
-				}
-			}]
 			rewards: [
 				{
-					id: "1ECAD93D1274347C"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "1FEAE0104033983F"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "4103FDCF8276D45D"
+					count: 25
+					id: "10B1AD41DE180E6E"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "6DF9BE434B8E5CB9"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			subtitle: "Hazmat suit not required?"
+			tasks: [{
+				id: "052855B501BA4A98"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:nuclear_fuel"
+					}
+				}
+				title: "Any Nuclear Fuel"
+				type: "item"
+			}]
+			title: "Nuclear Fuel"
+			x: 8.5d
+			y: 4.0d
 		}
 		{
-			title: "Depleted Nuclear Fuel"
-			x: 7.0d
-			y: 4.0d
-			shape: "square"
+			dependencies: ["4A580712AAD72CFF"]
 			description: [
 				"Once the &dNuclear Fuel&r is used up it turns into a &bDepleted&r variant. These depleted variants are still very useful, so don't throw them out!"
 				""
 				"You can centrifuge them to get various important resources as well as some of the original resources used to make it. The main output you're looking for is &5Plutonium&r, which is key as you move towards &eQuantum Circuits&r."
 			]
-			dependencies: ["4A580712AAD72CFF"]
 			id: "494104440623C825"
-			tasks: [{
-				id: "62A9365B03658408"
-				type: "item"
-				title: "Any Depleted Nuclear Fuel"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "kubejs:depleted_nuclear_fuel"
-					}
-				}
-			}]
 			rewards: [
 				{
-					id: "7BEBC8B1F6ED5AD0"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "023865BE022CACFD"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "0910E3B94B6AB25B"
+					count: 25
+					id: "0BA2F04F020CA838"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "4033E8D217237EC3"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			tasks: [{
+				id: "62A9365B03658408"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:depleted_nuclear_fuel"
+					}
+				}
+				title: "Any Depleted Nuclear Fuel"
+				type: "item"
+			}]
+			title: "Depleted Nuclear Fuel"
+			x: 7.0d
+			y: 4.0d
 		}
 		{
-			title: "Quantum Circuit Components"
-			x: 3.0d
-			y: 4.0d
-			shape: "square"
-			subtitle: "Bringing it all together"
-			description: ["It's time to start putting the puzzle together. &5Plutonium&r from your depleted fuel rods, various chemicals, and other materials you have processed this far."]
 			dependencies: [
 				"43D2E858079C12E0"
 				"5A0295C9C976F0E0"
 				"229F2B56037A748B"
 			]
+			description: ["It's time to start putting the puzzle together. &5Plutonium&r from your depleted fuel rods, various chemicals, and other materials you have processed this far."]
 			id: "649FE8A688C74216"
-			tasks: [
-				{
-					id: "3301EB094FCAA6F5"
-					type: "item"
-					item: "modern_industrialization:cooling_cell"
-					count: 2L
-				}
-				{
-					id: "16A1E516A9984598"
-					type: "item"
-					item: "modern_industrialization:qbit"
-					count: 2L
-				}
-				{
-					id: "0A2062E194D5AA55"
-					type: "item"
-					item: "modern_industrialization:quantum_circuit_board"
-				}
-			]
 			rewards: [
 				{
-					id: "358630E8BA8C74CC"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "2B50CAEDCE4BA4F3"
 					table_id: 4105254141913357569L
+					type: "random"
 				}
 				{
-					id: "3359F9CDF61733B9"
+					count: 5
+					id: "005DE0C0D1A07A84"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "145AF2B617D083AE"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			subtitle: "Bringing it all together"
+			tasks: [
+				{
+					count: 2L
+					id: "3301EB094FCAA6F5"
+					item: "modern_industrialization:cooling_cell"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "16A1E516A9984598"
+					item: "modern_industrialization:qbit"
+					type: "item"
+				}
+				{
+					id: "0A2062E194D5AA55"
+					item: "modern_industrialization:quantum_circuit_board"
+					type: "item"
+				}
+			]
+			title: "Quantum Circuit Components"
+			x: 3.0d
+			y: 4.0d
 		}
 		{
-			x: 7.0d
-			y: 5.5d
-			shape: "square"
-			subtitle: "Surprisingly Ineffective"
+			dependencies: ["494104440623C825"]
 			description: [
 				"With your &5Plutonium&r byproducts, you can now create &lNukes&r. These unfortunately do not explode like you would expect and are mainly used for crafting &aSingularities&r."
 				""
 				"If you want a version to explode, I've added a 1:1 conversion to the &eTechReborn&r &bNuke&r, which does explode when powered by &credstone&r!"
 			]
-			dependencies: ["494104440623C825"]
 			id: "50D18ACF6401C05D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "79D977DB76BE9A86"
+					table_id: 1098950661447874341L
+					type: "random"
+				}
+				{
+					count: 25
+					id: "43C0E9960E46933A"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "2D5B222899EE0921"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			subtitle: "Surprisingly Ineffective"
 			tasks: [{
 				id: "0E6A243ABE4F6954"
-				type: "item"
 				item: "modern_industrialization:nuke"
+				type: "item"
 			}]
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5856A6281F140AEF"]
+			description: ["The &bTungstensteel Tank&r can store &e256 buckets&r worth of any liquid inside of it! That means &d16,384 buckets of a fluid for a full stack&r! Absolutely insane."]
+			id: "7BB996EF1FB18B1D"
 			rewards: [
 				{
-					id: "4A7BB847AEC0F778"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "11DE185C23BA84EF"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "7788935F276B8B62"
+					count: 25
+					id: "4FE46A74C24F895D"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "190EDF42897CBD58"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: -3.0d
-			y: 3.5d
 			shape: "rsquare"
-			description: ["The &bTungstensteel Tank&r can store &e256 buckets&r worth of any liquid inside of it! That means &d16,384 buckets of a fluid for a full stack&r! Absolutely insane."]
-			dependencies: ["5856A6281F140AEF"]
-			id: "7BB996EF1FB18B1D"
 			tasks: [{
 				id: "362C11C9F3D2E501"
-				type: "item"
 				item: "modern_industrialization:tungstensteel_tank"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "0CCB8578EE9663E2"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1098950661447874341L
-				}
-				{
-					id: "5577D859E43EA5E4"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: -3.0d
+			y: 3.5d
 		}
 		{
-			x: -3.0d
-			y: 4.5d
-			shape: "rsquare"
+			dependencies: ["5856A6281F140AEF"]
 			description: [
 				"The &bTungstensteel Barrel&r can store &e16,384 stacks of a single item&r. A full stack of full barrels is over &d1 million stacks&r. "
 				""
 				"&oQuite an absurd amount to be sure.&r"
 			]
-			dependencies: ["5856A6281F140AEF"]
 			id: "5AE17FE1577DF9E2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "09A53EC0AE4235EA"
+					table_id: 1098950661447874341L
+					type: "random"
+				}
+				{
+					count: 25
+					id: "7716B6609A7CB6B4"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "7B622BD8F73AA9A3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
 			tasks: [{
 				id: "6560042462F49072"
-				type: "item"
 				item: "modern_industrialization:tungstensteel_barrel"
+				type: "item"
 			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0F1DC239BBC3D60F"]
+			description: ["The &eSpace Probe&r returns a good chunk of every space ore after some travel time. &6The multiblock must be built&r in &aorbit&r (&oany planet will work&r) to use this recipe."]
+			id: "3DD9AFAD287F29C2"
 			rewards: [
 				{
-					id: "21F0D5C8EFB5F08C"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "200D20F90BF84AF1"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "7854B0E9D6704AFF"
+					count: 25
+					id: "42ECD27AF083CBF3"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "11CA173FB9AF2C12"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: -3.0d
-			y: 6.0d
 			shape: "square"
-			description: ["The &eSpace Probe&r returns a good chunk of every space ore after some travel time. &6The multiblock must be built&r in &aorbit&r (&oany planet will work&r) to use this recipe."]
-			dependencies: ["0F1DC239BBC3D60F"]
-			id: "3DD9AFAD287F29C2"
 			tasks: [{
 				id: "49E741B4DFC6C21D"
-				type: "item"
 				item: "kubejs:space_probe"
+				type: "item"
 			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["494104440623C825"]
+			description: ["&5Plutonium&r can be obtained by &eCentrifuging&r depleted nuclear fuel rods. You're going to need a lot of this for &eQuantum Processors&r, so I recommend setting up multiple &cbreeder reactors&r (reactors made just to deplete fuel as fast as possible)."]
+			id: "5A0295C9C976F0E0"
 			rewards: [
 				{
-					id: "3F8C5FB6F04D61E4"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "3DCE20074D747948"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "51129A98D083A12E"
+					count: 25
+					id: "08E439FFF6BD3904"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "4E344C295CC09A9B"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: 5.5d
-			y: 4.0d
 			shape: "square"
-			description: ["&5Plutonium&r can be obtained by &eCentrifuging&r depleted nuclear fuel rods. You're going to need a lot of this for &eQuantum Processors&r, so I recommend setting up multiple &cbreeder reactors&r (reactors made just to deplete fuel as fast as possible)."]
-			dependencies: ["494104440623C825"]
-			id: "5A0295C9C976F0E0"
 			tasks: [{
 				id: "6EC869F12BC70C23"
-				type: "item"
 				item: "modern_industrialization:plutonium_dust"
+				type: "item"
 			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0C73D9DE1468EBB1"]
+			description: ["While you could make &aFuel Rods&r out of regular &aUranium&r, you would missing out on a lot of potential. If you want to make &dLE or HE Fuel Rods&r (Lightly-enriched and highly-enriched respectfully), you will need to &6Centrifuge&r &aUranium Dusts&r."]
+			id: "131D19CE92E22D58"
 			rewards: [
 				{
-					id: "3DEAB6FD0DB144EC"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "49CC916D25E0BBE9"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "2C9965FC2F7398CD"
+					count: 25
+					id: "3DB610B35A08D401"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "06BD71B4DEBFC8A0"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: 7.0d
-			y: 2.0d
 			shape: "square"
-			description: ["While you could make &aFuel Rods&r out of regular &aUranium&r, you would missing out on a lot of potential. If you want to make &dLE or HE Fuel Rods&r (Lightly-enriched and highly-enriched respectfully), you will need to &6Centrifuge&r &aUranium Dusts&r."]
-			dependencies: ["0C73D9DE1468EBB1"]
-			id: "131D19CE92E22D58"
 			tasks: [{
 				id: "34BC698AC3DDD393"
-				type: "item"
 				item: "modern_industrialization:uranium_dust"
+				type: "item"
 			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["131D19CE92E22D58"]
+			description: ["&6Centrifuging&r &aUranium Dusts&r will give you &aU-235&r and a very small amount of &aU-238&r. These small dust piles can be combined into regular dust piles, &eprocessed through a Blast Furnace&r, then &2crafted into rods&r to be crafted into &dFuel Rods&r."]
+			id: "4E4FF04917B2E624"
 			rewards: [
 				{
-					id: "46F722559FFFF5AC"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "4E213E8DC89301A8"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "46AFE97182885E89"
+					count: 25
+					id: "133A5C0A949C2840"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "14AD9990931E788E"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			title: "Uranium Isotopes"
-			x: 8.5d
-			y: 2.0d
 			shape: "rsquare"
-			description: ["&6Centrifuging&r &aUranium Dusts&r will give you &aU-235&r and a very small amount of &aU-238&r. These small dust piles can be combined into regular dust piles, &eprocessed through a Blast Furnace&r, then &2crafted into rods&r to be crafted into &dFuel Rods&r."]
-			dependencies: ["131D19CE92E22D58"]
-			id: "4E4FF04917B2E624"
 			tasks: [
 				{
 					id: "0C3BC21583C2EF92"
-					type: "item"
 					item: "modern_industrialization:uranium_235_dust"
+					type: "item"
 				}
 				{
 					id: "33028DAEF98A8564"
-					type: "item"
 					item: "modern_industrialization:uranium_238_dust"
+					type: "item"
 				}
 			]
-			rewards: [
-				{
-					id: "30D00B0E67AA573F"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1098950661447874341L
-				}
-				{
-					id: "05087040FAE2872B"
-					type: "xp"
-					xp: 10
-				}
-			]
+			title: "Uranium Isotopes"
+			x: 8.5d
+			y: 2.0d
 		}
 		{
-			x: 3.0d
-			y: 9.5d
-			shape: "square"
+			dependencies: ["23D9328B5F627E65"]
 			description: [
 				"The &eQuantum Machine Hull&r is the final tier of Machine Hull in MI. It allows you to upgrade your machines to the &eQuantum tier&r. It's also used in several lategame recipes."
 				""
 				"With your first &eQuantum Machine Hull&r made, you have completed this chapter. You are now ready to approach the endgame in &eChapter 6 - Quantum Age&r."
 			]
-			dependencies: ["23D9328B5F627E65"]
 			id: "286BD460010AA281"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7CAD5DD8117DFDCE"
+					table_id: 4105254141913357569L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1D0E5D91E5E27D4D"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "2FA35D0674738A12"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
 			tasks: [{
 				id: "323F561B1E2A8A07"
-				type: "item"
 				item: "modern_industrialization:quantum_machine_hull"
+				type: "item"
 			}]
+			x: 3.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["268F9C5384CD54EC"]
+			description: ["Running out of power? Well the &bDragon Egg Energy Siphon&r won't save you there, but it can be used to passively generate &a4096 EU/t&r."]
+			id: "545FBEB4D3A1C987"
 			rewards: [
 				{
-					id: "712834B1E2600C70"
-					type: "random"
 					exclude_from_claim_all: true
-					table_id: 4105254141913357569L
+					id: "602B65203A73B1AC"
+					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "51FEABF87D3025AF"
+					count: 25
+					id: "66167AE6308BCD75"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "31102EA3377FFE02"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: -2.0d
-			y: -4.0d
 			shape: "rsquare"
-			description: ["Running out of power? Well the &bDragon Egg Energy Siphon&r won't save you there, but it can be used to passively generate &a4096 EU/t&r."]
-			dependencies: ["268F9C5384CD54EC"]
-			id: "545FBEB4D3A1C987"
 			tasks: [{
 				id: "3FD5C33750729B21"
-				type: "item"
 				item: "techreborn:dragon_egg_syphon"
+				type: "item"
 			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			description: ["The &bLapotronic Energy Orb&r is an upgrade to the &aLapotron Crystal&r. It has a &e100M&r energy storage."]
+			id: "268F9C5384CD54EC"
 			rewards: [
 				{
-					id: "64D7AE381F9A923B"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "7D9520FE0690BFC5"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "67904434D8D7E1DC"
+					count: 25
+					id: "6529FE2B87407D86"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "636C108C78C34289"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: -1.0d
-			y: -2.0d
 			shape: "rsquare"
-			description: ["The &bLapotronic Energy Orb&r is an upgrade to the &aLapotron Crystal&r. It has a &e100M&r energy storage."]
-			dependencies: ["2F0042673C0E3910"]
-			id: "268F9C5384CD54EC"
 			tasks: [{
 				id: "176A7669B06753B5"
-				type: "item"
 				item: "techreborn:lapotronic_orb"
+				type: "item"
 			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["268F9C5384CD54EC"]
+			description: ["The &bLapotronic Orbpack&r is the wearable version of the &aLapotronic Energy Orb&r."]
+			id: "20174051C1847D01"
 			rewards: [
 				{
-					id: "281D8F389AE4C4FE"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "71769F1CE99EFEB3"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "6DEA3D0B84DA876B"
+					count: 25
+					id: "6FB548CDD73D9960"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "30E04A85FED0841B"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: -1.0d
-			y: -4.0d
 			shape: "rsquare"
-			description: ["The &bLapotronic Orbpack&r is the wearable version of the &aLapotronic Energy Orb&r."]
-			dependencies: ["268F9C5384CD54EC"]
-			id: "20174051C1847D01"
 			tasks: [{
 				id: "05359E9120194125"
-				type: "item"
 				item: "techreborn:lapotronic_orbpack"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "0D137DC7818D8AB3"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1098950661447874341L
-				}
-				{
-					id: "7249B4EC327111B2"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: -1.0d
+			y: -4.0d
 		}
 		{
-			x: 0.0d
-			y: -5.5d
+			dependencies: ["10A6D6AC0DD81C92"]
 			description: [
 				"The &bInterdimensional Storage Unit&r can be used to transfer energy between &ctwo points instantaneously&r."
 				""
@@ -1010,159 +1176,191 @@
 				""
 				"The energy storage is similar to an &dender chest&r and is locked to the player who placed it. &c(I think?)&r"
 			]
-			dependencies: ["10A6D6AC0DD81C92"]
 			id: "1B0477C42ED4EF77"
-			tasks: [{
-				id: "435363D8AC0C3E57"
-				type: "item"
-				item: "techreborn:interdimensional_su"
-			}]
 			rewards: [
 				{
-					id: "18A73252AF2A0385"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "3957C42333D2FAAB"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "35ACD74DDA2AACDE"
+					count: 25
+					id: "499DE6D9471FC1AF"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "619931C4E648ACD9"
 					type: "xp"
 					xp: 10
 				}
 			]
+			tasks: [{
+				id: "435363D8AC0C3E57"
+				item: "techreborn:interdimensional_su"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
 		}
 		{
-			x: 0.0d
-			y: -4.0d
+			dependencies: ["268F9C5384CD54EC"]
 			description: [
 				"The &bAdjustable SU&r can be used to fine tune the flow of power leading out of it. "
 				""
 				"The power &coutput&r can be adjusted in the &bSU&r's GUI."
 			]
-			dependencies: ["268F9C5384CD54EC"]
 			id: "10A6D6AC0DD81C92"
-			tasks: [{
-				id: "45590C0708ED59B0"
-				type: "item"
-				item: "techreborn:adjustable_su"
-			}]
 			rewards: [
 				{
-					id: "033F6EC157DCFBCF"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "1C16560DE4FA93B3"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "050A982EC5F2B7D0"
+					count: 25
+					id: "0F32C984125BDA49"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "053165389550F244"
 					type: "xp"
 					xp: 10
 				}
 			]
+			tasks: [{
+				id: "45590C0708ED59B0"
+				item: "techreborn:adjustable_su"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
 		}
 		{
-			title: "Tungstensteel Coils"
-			x: 1.0d
-			y: 4.0d
-			shape: "square"
-			description: ["&bTungstensteel Coils&r are the &ocurrent&r highest tier of coils available for your &aEBF&r. They are required to process &dSuperconductor Ingots&r."]
 			dependencies: [
 				"5856A6281F140AEF"
 				"569821B175311340"
 			]
+			description: ["&bTungstensteel Coils&r are the &ocurrent&r highest tier of coils available for your &aEBF&r. They are required to process &dSuperconductor Ingots&r."]
 			id: "229F2B56037A748B"
-			tasks: [{
-				id: "7E9B39EB3F949BA2"
-				type: "item"
-				item: "modern_industrialization:tungstensteel_coil"
-				count: 16L
-			}]
 			rewards: [
 				{
-					id: "080FE38AD7E61055"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "4C6F3EEFC765C207"
 					table_id: 1098950661447874341L
+					type: "random"
 				}
 				{
-					id: "793F153FBF451528"
+					count: 25
+					id: "600B82BFF1364302"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "19C05BA867FCCD25"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "7E9B39EB3F949BA2"
+				item: "modern_industrialization:tungstensteel_coil"
+				type: "item"
+			}]
+			title: "Tungstensteel Coils"
+			x: 1.0d
+			y: 4.0d
 		}
 		{
-			title: "The Quantum Suit"
-			x: 5.5d
-			y: 6.5d
+			dependencies: ["23D9328B5F627E65"]
 			description: [
 				"The &eTechReborn&r &bQuantum Suit&r is the second best armor in the entire game (and arguably better than the latter &aInfinity Suit&r)."
 				""
 				"With it, you get &dcreative flight&r, &cinsane speed&r, &ejumping while midair&r, and much more."
 			]
-			dependencies: ["23D9328B5F627E65"]
 			id: "5182858751A44A2B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1887DCE771AD2030"
+					table_id: 4105254141913357569L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "6AF14B8D2A42AE13"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "68F64ECF229FA888"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [
 				{
 					id: "239339AD0BC25D76"
-					type: "item"
 					item: "techreborn:quantum_helmet"
+					type: "item"
 				}
 				{
 					id: "6CB5F267A6B4FCD1"
-					type: "item"
 					item: "techreborn:quantum_chestplate"
+					type: "item"
 				}
 				{
 					id: "6C3D9C1E3AA0DB64"
-					type: "item"
 					item: "techreborn:quantum_leggings"
+					type: "item"
 				}
 				{
 					id: "3FBC8DAF2240590F"
-					type: "item"
 					item: "techreborn:quantum_boots"
+					type: "item"
 				}
 			]
-			rewards: [
-				{
-					id: "3EB6C23E6F40753D"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 4105254141913357569L
-				}
-				{
-					id: "11277526046491E6"
-					type: "xp"
-					xp: 10
-				}
-			]
+			title: "The Quantum Suit"
+			x: 5.5d
+			y: 6.5d
 		}
 		{
-			x: 5.5d
-			y: 7.5d
-			description: ["With the &aQuantum Circuit&r you now have access to the &2Quantum Solar Panel&r. This bad boy can generate &d512 EU/t&r during the day and &d32 EU/t&r at night. While not as much as you can generate elsewhere, it's still a decent amount!"]
 			dependencies: ["23D9328B5F627E65"]
+			description: ["With the &aQuantum Circuit&r you now have access to the &2Quantum Solar Panel&r. This bad boy can generate &d512 EU/t&r during the day and &d32 EU/t&r at night. While not as much as you can generate elsewhere, it's still a decent amount!"]
 			id: "18A5221397607F68"
-			tasks: [{
-				id: "003B87D6A0BE31DA"
-				type: "item"
-				item: "techreborn:quantum_solar_panel"
-			}]
 			rewards: [
 				{
-					id: "2FA716AB1EE71E67"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "790B54A5129D3744"
 					table_id: 4105254141913357569L
+					type: "random"
 				}
 				{
-					id: "0688454173589DA0"
+					count: 5
+					id: "66DF6601A1263A7C"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "6BB3E61D63C48455"
 					type: "xp"
 					xp: 10
 				}
 			]
+			tasks: [{
+				id: "003B87D6A0BE31DA"
+				item: "techreborn:quantum_solar_panel"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
 		}
 	]
-	quest_links: [ ]
+	subtitle: ["Build Your Own Reactor"]
+	title: "&d5 - Nuclear Age"
 }

@@ -6,7 +6,12 @@ ServerEvents.recipes(e => {
     let st = (id) => `statech:modern_industrialization/packer/${id}`;
 
     const REMOVED_RECIPE = [
-        mi('materials/packer/mixed_ingot_blastproof')
+        mi('materials/packer/mixed_ingot_blastproof'),
+        mi('compat/ae2/printed_calculation_processor'),
+        mi('compat/ae2/printed_engineering_processor'),
+        mi('compat/ae2/printed_logic_processor'),
+        mi('compat/ae2/printed_silicon'),
+        mi('compat/ae2/printed_silicon_from_ingot')
     ];
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 

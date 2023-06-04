@@ -20,7 +20,7 @@ key_key.smoothCamera:key.keyboard.unknown:NONE
 key_key.fullscreen:key.keyboard.f11:NONE
 key_key.spectatorOutlines:key.keyboard.unknown:NONE
 key_key.swapOffhand:key.keyboard.f:NONE
-key_key.saveToolbarActivator:key.keyboard.c:NONE
+key_key.saveToolbarActivator:key.keyboard.unknown:NONE
 key_key.loadToolbarActivator:key.keyboard.unknown:NONE
 key_key.advancements:key.keyboard.l:NONE
 key_key.hotbar.1:key.keyboard.1:NONE
@@ -48,7 +48,7 @@ key_key.anim_guns.aimtoggle:key.keyboard.v:NONE
 key_key.antighost.reveal:key.keyboard.unknown:NONE
 key_keybinds.bettercombat.feint:key.keyboard.unknown:NONE
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown:NONE
-key_key.buildinggadgets.settings_menu:key.keyboard.g:NONE
+key_key.buildinggadgets.settings_menu:key.keyboard.unknown:NONE
 key_key.buildinggadgets.range:key.keyboard.unknown:NONE
 key_key.buildinggadgets.undo:key.keyboard.unknown:NONE
 key_key.buildinggadgets.anchor:key.keyboard.h:NONE
@@ -89,7 +89,6 @@ key_key.inventoryhud.openconfig:key.keyboard.o:NONE
 key_key.inventoryhud.togglepot:key.keyboard.unknown:NONE
 key_key.inventoryhud.togglearm:key.keyboard.unknown:NONE
 key_key.inventoryhud.toggleall:key.keyboard.unknown:NONE
-key_key.inventorysorter.sort:key.keyboard.p:NONE
 key_key.journeymap.zoom_in:key.keyboard.unknown:NONE
 key_key.journeymap.zoom_out:key.keyboard.unknown:NONE
 key_key.journeymap.minimap_type:key.keyboard.right.bracket:NONE
@@ -97,7 +96,7 @@ key_key.journeymap.minimap_preset:key.keyboard.backslash:NONE
 key_key.journeymap.create_waypoint:key.keyboard.n:NONE
 key_key.journeymap.toggle_waypoints:key.keyboard.unknown:NONE
 key_key.journeymap.fullscreen_create_waypoint:key.keyboard.b:NONE
-key_key.journeymap.fullscreen_chat_position:key.keyboard.c:NONE
+key_key.journeymap.fullscreen_chat_position:key.keyboard.unknown:NONE
 key_key.journeymap.map_toggle_alt:key.keyboard.m:NONE
 key_key.journeymap.fullscreen_waypoints:key.keyboard.j:NONE
 key_key.journeymap.minimap_toggle_alt:key.keyboard.unknown:NONE
@@ -108,6 +107,7 @@ key_key.journeymap.fullscreen.east:key.keyboard.right:NONE
 key_key.journeymap.fullscreen.west:key.keyboard.left:NONE
 key_key.journeymap.fullscreen.disable_buttons:key.keyboard.h:NONE
 key_key.lightoverlay.enable_overlay:key.keyboard.f7:NONE
+key_key.logical_zoom.zoom:key.keyboard.c:NONE
 key_key.modern_industrialization.activate:key.keyboard.x:NONE
 key_key.modmenu.open_menu:key.keyboard.unknown:NONE
 key_key.polaroid_camera.take_picture:key.keyboard.c:NONE
@@ -122,10 +122,18 @@ key_key.shetiphiancore.tool.previous:key.keyboard.page.down:NONE
 key_keybindings.spell_engine.hotbar_modifier:key.keyboard.left.alt:NONE
 key_keybindings.spell_engine.hotbar_lock:key.keyboard.z:NONE
 key_key.spirit.toggle:key.keyboard.v:NONE
-key_key.tconstruct.helmet_interact:key.keyboard.z:NONE
-key_key.tconstruct.leggings_interact:key.keyboard.i:NONE
 key_key.toms_storage.open_terminal:key.mouse.4:NONE
-key_key.trade_cycling.cycle_trades:key.keyboard.c:NONE
+key_key.trade_cycling.cycle_trades:key.keyboard.unknown:NONE
+key_key.push_to_talk:key.keyboard.caps.lock:NONE
+key_key.whisper:key.keyboard.unknown:NONE
+key_key.mute_microphone:key.keyboard.m:NONE
+key_key.disable_voice_chat:key.keyboard.n:NONE
+key_key.hide_icons:key.keyboard.h:NONE
+key_key.voice_chat:key.keyboard.p:NONE
+key_key.voice_chat_settings:key.keyboard.unknown:NONE
+key_key.voice_chat_group:key.keyboard.g:NONE
+key_key.voice_chat_toggle_recording:key.keyboard.unknown:NONE
+key_key.voice_chat_adjust_volumes:key.keyboard.unknown:NONE
 key_key.weaponmaster.opengui:key.keyboard.left.bracket:NONE
 key_key.waila.config:key.keyboard.unknown:NONE
 key_key.waila.show_overlay:key.keyboard.unknown:NONE

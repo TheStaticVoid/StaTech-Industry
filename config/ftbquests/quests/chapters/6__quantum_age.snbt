@@ -1,385 +1,434 @@
 {
-	id: "0E3388F02406CCAF"
-	group: "592A9A0E9A131D28"
-	order_index: 5
-	filename: "6__quantum_age"
-	title: "&66 - Quantum Age"
-	icon: "modern_industrialization:quantum_circuit"
-	subtitle: ["PhD in Theoretical Physics!"]
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6__quantum_age"
+	group: "592A9A0E9A131D28"
+	icon: "modern_industrialization:quantum_circuit"
+	id: "0E3388F02406CCAF"
+	order_index: 5
+	quest_links: [ ]
 	quests: [
 		{
-			icon: "modern_industrialization:plasma_turbine"
-			x: 0.0d
-			y: 5.25d
-			shape: "square"
-			description: ["The &aPlasma Turbine&f can turn &eHelium Plasma&f into EU, at the rate of &d100kEU per mB&r. Its maximum production rate is rougly &21M EU/t&r!"]
 			dependencies: [
 				"6CD8A3092DDAC055"
 				"598DBC20FB201711"
 			]
-			size: 1.5d
+			description: ["The &aPlasma Turbine&f can turn &eHelium Plasma&f into EU, at the rate of &d100kEU per mB&r. Its maximum production rate is rougly &21M EU/t&r!"]
+			icon: "modern_industrialization:plasma_turbine"
 			id: "18765B0B6FE4E653"
-			tasks: [
-				{
-					id: "0C519A64F3D02DAF"
-					type: "item"
-					item: "modern_industrialization:plasma_turbine"
-				}
-				{
-					id: "6319C27B8BBCC8BE"
-					type: "item"
-					item: "modern_industrialization:plasma_handling_iridium_machine_casing"
-					count: 15L
-				}
-				{
-					id: "61FCCBFE765C0C9F"
-					type: "item"
-					item: "modern_industrialization:iridium_machine_casing_pipe"
-					count: 18L
-				}
-				{
-					id: "0DAF0F002AA82CA4"
-					type: "item"
-					title: "Any Energy Output Hatch"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "kubejs:energy_output_hatch"
-						}
-					}
-				}
-				{
-					id: "4A6B167539EAF884"
-					type: "item"
-					title: "Any Fluid Input Hatch"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "kubejs:fluid_input_hatch"
-						}
-					}
-				}
-			]
 			rewards: [
 				{
-					id: "55BDE30F71E0C039"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "1E7D3D510E4C4CDE"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "35AF936375A24CC6"
+					count: 5
+					id: "2E7BA5A66D30D996"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "6936591C48D5F069"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0C519A64F3D02DAF"
+					item: "modern_industrialization:plasma_turbine"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "6319C27B8BBCC8BE"
+					item: "modern_industrialization:plasma_handling_iridium_machine_casing"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "61FCCBFE765C0C9F"
+					item: "modern_industrialization:iridium_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					id: "0DAF0F002AA82CA4"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_output_hatch"
+						}
+					}
+					title: "Any Energy Output Hatch"
+					type: "item"
+				}
+				{
+					id: "4A6B167539EAF884"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 5.25d
 		}
 		{
-			title: "The Fusion Reactor"
-			icon: "modern_industrialization:fusion_reactor"
-			x: 0.0d
-			y: 3.0d
-			shape: "square"
-			subtitle: "The power of a star in the palm of your hand"
+			dependencies: ["2FDA67B4920D335D"]
 			description: [
 				"The &aFusion Reactor&f is the ultimate energy source! It can combine &bDeuterium&f, &cTritium&f ,and/or &aHelium-3&f into &eHelium Plasma&f, the most powerful fuel in the game! However, it requires a large amount of energy to ignite the reaction."
 				""
 				"The &aFusion Reactor&f is also the way you will be generating &0Neutronium&f."
 			]
-			dependencies: ["2FDA67B4920D335D"]
-			size: 1.5d
+			icon: "modern_industrialization:fusion_reactor"
 			id: "6CD8A3092DDAC055"
-			tasks: [
-				{
-					id: "3E34FF524BAF3AD0"
-					type: "item"
-					item: "modern_industrialization:fusion_reactor"
-				}
-				{
-					id: "7BD9A95E03081C2E"
-					type: "item"
-					item: "modern_industrialization:highly_advanced_machine_hull"
-					count: 198L
-				}
-				{
-					id: "5AB77EE9B0BBFAE7"
-					type: "item"
-					item: "modern_industrialization:fusion_chamber"
-					count: 40L
-				}
-				{
-					id: "2EE89DD03842BD06"
-					type: "item"
-					title: "Any 2x Fluid Input Hatch"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "kubejs:fluid_input_hatch"
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "747A45BE0603F600"
-					type: "item"
-					title: "Any 2x Fluid Output Hatch"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "kubejs:fluid_output_hatch"
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "227C74C617BC0803"
-					type: "item"
-					title: "Any Energy Input Hatch"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "kubejs:energy_input_hatch"
-						}
-					}
-				}
-			]
 			rewards: [
 				{
-					id: "7D6DC3507414891B"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "6EBA7D1D378F409C"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "71315175EF280BEC"
+					count: 5
+					id: "3DECF0F1B89C7108"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "3CA8CCC045C90BA1"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			size: 1.5d
+			subtitle: "The power of a star in the palm of your hand"
+			tasks: [
+				{
+					id: "3E34FF524BAF3AD0"
+					item: "modern_industrialization:fusion_reactor"
+					type: "item"
+				}
+				{
+					count: 198L
+					id: "7BD9A95E03081C2E"
+					item: "modern_industrialization:highly_advanced_machine_hull"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "5AB77EE9B0BBFAE7"
+					item: "modern_industrialization:fusion_chamber"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2EE89DD03842BD06"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any 2x Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "747A45BE0603F600"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					title: "Any 2x Fluid Output Hatch"
+					type: "item"
+				}
+				{
+					id: "227C74C617BC0803"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+					title: "Any Energy Input Hatch"
+					type: "item"
+				}
+			]
+			title: "The Fusion Reactor"
+			x: 0.0d
+			y: 3.0d
 		}
 		{
-			x: 6.5d
-			y: 7.5d
-			shape: "square"
+			dependencies: ["10943911EAB7196F"]
 			description: [
 				"The &aQuantum Tank&f is the highest tier tank offered by &eMI&r. It can store an absolutely absurd &62.14 billion buckets of fluid&r."
 				""
 				"&oFilling it would be an achievement&r."
 			]
-			dependencies: ["10943911EAB7196F"]
 			id: "7F499A3A91F4AC6D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "24B607F4E6D02E5B"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "452F1699382F1ED8"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "7B65014F25C70B2C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
 			tasks: [{
 				id: "1C2DEE6D23BE5CA1"
-				type: "item"
 				item: "modern_industrialization:quantum_tank"
+				type: "item"
 			}]
+			x: 6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["10943911EAB7196F"]
+			description: ["The &aQuantum Barrel&f is the biggest barrel available in &eMI&r. It can store &62.14 billion stacks of a single item&r. "]
+			id: "7D17913DECB347F1"
 			rewards: [
 				{
-					id: "73E4EF57B69E3DF3"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "4EA41DC666E3A3AD"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "29FA0F1BFA759227"
+					count: 5
+					id: "54983B92E10EE439"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "03B6711A87DD917D"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: 6.5d
-			y: 8.5d
 			shape: "square"
-			description: ["The &aQuantum Barrel&f is the biggest barrel available in &eMI&r. It can store &62.14 billion stacks of a single item&r. "]
-			dependencies: ["10943911EAB7196F"]
-			id: "7D17913DECB347F1"
 			tasks: [{
 				id: "1DE9A31A935B6B9C"
-				type: "item"
 				item: "modern_industrialization:quantum_barrel"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "7C1A7EF4C720BD33"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1415984687807285627L
-				}
-				{
-					id: "1EF06615DFE9C737"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: 6.5d
+			y: 8.5d
 		}
 		{
-			x: 0.0d
-			y: 11.0d
-			shape: "square"
-			subtitle: "Legal Duping"
+			dependencies: [
+				"3E139335E6F04C69"
+				"5E0967F2B54D6B34"
+			]
 			description: [
 				"With &a100 mB&r of liquid &dUU-Matter&f, the &eReplicator&r can &dduplicate &o(almost)&r any item in the game."
 				""
 				"While this might seem like the end, &cit is not&r. With &3complete molecular rearrangement&r at your fingertips, it's time to make a ton of &dUU-Matter&f and get the materials needed to make the &dcreative items&r."
 			]
-			dependencies: [
-				"3E139335E6F04C69"
-				"5E0967F2B54D6B34"
-			]
-			size: 2.0d
 			id: "4FD7572FC6CC4140"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "36DF2B35FBD47040"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "12919A54C37BC9FA"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "16A16F9FD0162921"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			subtitle: "Legal Duping"
 			tasks: [{
 				id: "3993E47E456846A3"
-				type: "item"
 				item: "modern_industrialization:replicator"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["2FDA67B4920D335D"]
+			description: ["A single &aSuperconductor Storage Unit&f can hold an absolute insane &e768 billion EU&r."]
+			id: "0448EA623C79DA7B"
 			rewards: [
 				{
-					id: "1481450EBAB95586"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "3183A0BFDDE8ABAB"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "6907F996BB56E3AC"
+					count: 5
+					id: "5362783891123BD4"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "4BC1F9A15264C8B7"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: 2.0d
-			y: 1.0d
 			shape: "rsquare"
-			description: ["A single &aSuperconductor Storage Unit&f can hold an absolute insane &e768 billion EU&r."]
-			dependencies: ["2FDA67B4920D335D"]
-			id: "0448EA623C79DA7B"
 			tasks: [{
 				id: "4445EC251C8C0248"
-				type: "item"
 				item: "modern_industrialization:superconductor_storage_unit"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "24820D26A3282C58"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1415984687807285627L
-				}
-				{
-					id: "365E5B7D6F319FAB"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: 2.0d
+			y: 1.0d
 		}
 		{
-			x: 4.0d
-			y: 11.0d
-			shape: "square"
-			description: ["The &5Quantum Upgrade&f is the &ehighest tier upgrade available in MI&r. It allows for a &a1 Billion EU overclock on any machine it is in&r. &oWhether or not you can produce that much power is a better question...&r"]
 			dependencies: [
 				"23D9328B5F627E65"
 				"10943911EAB7196F"
 			]
-			size: 2.0d
+			description: ["The &5Quantum Upgrade&f is the &ehighest tier upgrade available in MI&r. It allows for a &a1 Billion EU overclock on any machine it is in&r. &oWhether or not you can produce that much power is a better question...&r"]
 			id: "3E139335E6F04C69"
-			tasks: [{
-				id: "6DF16E37BD8E4BD3"
-				type: "item"
-				item: "modern_industrialization:quantum_upgrade"
-			}]
 			rewards: [
 				{
-					id: "3E27FBA6F54334E0"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "148180724BB7B421"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "6F4B187B90C3EF81"
+					count: 5
+					id: "78648EC108B53E12"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "2B55545D0BE189A9"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "6DF16E37BD8E4BD3"
+				item: "modern_industrialization:quantum_upgrade"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 11.0d
 		}
 		{
-			x: 4.0d
-			y: 8.0d
-			shape: "square"
-			subtitle: "Pocket-size blackhole "
-			description: ["By blasting an &aUltradense Metal Ball&f with more energy than several times our &dentire sun&r we can create a single &5Singularity&f, a &3black-hole you can somehow hold in your hands...&r"]
 			dependencies: [
 				"50D18ACF6401C05D"
 				"4A2F6AA833C88B7C"
 			]
-			size: 2.0d
+			description: ["By blasting an &aUltradense Metal Ball&f with more energy than several times our &dentire sun&r we can create a single &5Singularity&f, a &3black-hole you can somehow hold in your hands...&r"]
 			id: "10943911EAB7196F"
-			tasks: [{
-				id: "10057B6A9C68E33C"
-				type: "item"
-				item: "modern_industrialization:singularity"
-			}]
 			rewards: [
 				{
-					id: "2C10BC7AA527F03A"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "60B6C2A5A5244F48"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "4083234757F3A612"
+					count: 5
+					id: "70EFBD2C246F3988"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "1C4C2548A27E6A00"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			size: 2.0d
+			subtitle: "Pocket-size blackhole "
+			tasks: [{
+				id: "10057B6A9C68E33C"
+				item: "modern_industrialization:singularity"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
 		}
 		{
-			title: "Infinity Sword"
-			x: 5.0d
-			y: 13.0d
-			shape: "square"
-			subtitle: "A sword to end all swords"
+			dependencies: ["3E139335E6F04C69"]
 			description: [
 				"The &dInfinity Sword&f is the most powerful sword in the entire game. It will &cinstantly kill&r anything you hit with it (this includes your friends)."
 				""
 				"Still not as cool as the &aSword of the Cosmos&f..."
 			]
-			dependencies: ["3E139335E6F04C69"]
 			id: "152140F96FA2944E"
-			tasks: [{
-				id: "2984BF4A049BC986"
-				type: "item"
-				item: "modern_industrialization:quantum_sword"
-			}]
 			rewards: [
 				{
-					id: "0F8BB8F956585C96"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "3E0BB269364FEE36"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "38198C65FC9ADE30"
+					count: 5
+					id: "63E24B82FD038EC7"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "6727F2289F2D7F12"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			subtitle: "A sword to end all swords"
+			tasks: [{
+				id: "2984BF4A049BC986"
+				item: "modern_industrialization:quantum_sword"
+				type: "item"
+			}]
+			title: "Infinity Sword"
+			x: 5.0d
+			y: 13.0d
 		}
 		{
-			title: "The Infinity Suit"
-			x: 7.0d
-			y: 13.0d
-			shape: "square"
-			subtitle: "Basically creative mode"
+			dependencies: ["3E139335E6F04C69"]
 			description: [
 				"The &dInfinity Suit&f is an empowered suit of armor that's the most powerful armor in the game. &cYou don't take damage while wearing the entire suit&r and you have &6creative-flight&r similar to the &dGravichestplate&f."
 				""
@@ -387,141 +436,159 @@
 				""
 				"&oHonestly, I liked the Quantum Suit more...&r (Hopefully this armor gets improved in a &6future MI update&r)"
 			]
-			dependencies: ["3E139335E6F04C69"]
 			id: "1E378F2F641048F1"
-			tasks: [
-				{
-					id: "644C2DCB1D55C7E8"
-					type: "item"
-					item: "modern_industrialization:quantum_helmet"
-				}
-				{
-					id: "55E6C1C7A57FE87F"
-					type: "item"
-					item: "modern_industrialization:quantum_chestplate"
-				}
-				{
-					id: "45C3F6978CECD834"
-					type: "item"
-					item: "modern_industrialization:quantum_leggings"
-				}
-				{
-					id: "0CE944469E1D99E4"
-					type: "item"
-					item: "modern_industrialization:quantum_boots"
-				}
-			]
 			rewards: [
 				{
-					id: "064FBDAF14F9C21E"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "3D71CB1C461F3C07"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "04C7C12CEB30C76A"
+					count: 5
+					id: "4121796A6B2060AC"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "265288BADB0D7BBA"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			subtitle: "Basically creative mode"
+			tasks: [
+				{
+					id: "644C2DCB1D55C7E8"
+					item: "modern_industrialization:quantum_helmet"
+					type: "item"
+				}
+				{
+					id: "55E6C1C7A57FE87F"
+					item: "modern_industrialization:quantum_chestplate"
+					type: "item"
+				}
+				{
+					id: "45C3F6978CECD834"
+					item: "modern_industrialization:quantum_leggings"
+					type: "item"
+				}
+				{
+					id: "0CE944469E1D99E4"
+					item: "modern_industrialization:quantum_boots"
+					type: "item"
+				}
+			]
+			title: "The Infinity Suit"
+			x: 7.0d
+			y: 13.0d
 		}
 		{
-			x: 0.0d
-			y: 8.0d
-			shape: "square"
+			dependencies: ["10943911EAB7196F"]
 			description: [
 				"With a suitable &eElectrolyzer&f setup and a &5Singularity&f, large amounts of energy can be turned through Quantum Hawking Radiation, into a liquid form of &dUU Matter&f."
 				""
 				"For those of you looking ahead or digging deep into &dREI&f, you might have already realized you could accelerate the process of making this fluid by electrolyzing solid &dUU-Matter&f."
 			]
-			dependencies: ["10943911EAB7196F"]
 			id: "5E0967F2B54D6B34"
-			tasks: [{
-				id: "633737ED60FC7421"
-				type: "item"
-				item: "modern_industrialization:uu_matter_bucket"
-			}]
 			rewards: [
 				{
-					id: "52F0964737149D3E"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "3ADA74082BA930FD"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "24B0D5E379A6A82E"
+					count: 5
+					id: "2097275DD26230F6"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "31672B39836E757E"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			tasks: [{
+				id: "633737ED60FC7421"
+				item: "modern_industrialization:uu_matter_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
 		}
 		{
-			x: 0.0d
-			y: 1.0d
-			shape: "square"
+			dependencies: ["23D9328B5F627E65"]
 			description: [
 				"Welcome to &eChapter 6&f."
 				""
 				"With the secrets of &dquantum computing realized&r, you can now work towards &asome extremely advanced machinery and sciences&r."
 			]
-			dependencies: ["23D9328B5F627E65"]
 			id: "2FDA67B4920D335D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A17418A6F1942F3"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "597A872F109AFC74"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "6B85576DCF205C69"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
 			tasks: [{
 				id: "658A5CFBE21AA05A"
-				type: "item"
 				item: "modern_industrialization:quantum_machine_hull"
+				type: "item"
 			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4FD7572FC6CC4140"]
+			description: ["The &dCreative Motor&f can &aprovide an unlimited and configurable amount&r of rotational force for &eCreate&f."]
+			id: "576E585F8DFC7073"
 			rewards: [
 				{
-					id: "5A450941CC91DEEE"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "644CBDC5B062FD20"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "48D3B50CDC7AA774"
+					count: 5
+					id: "0AE562E70C416D7D"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "459A0CBFF1E32F46"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: 3.0d
-			y: 13.0d
 			shape: "square"
-			description: ["The &dCreative Motor&f can &aprovide an unlimited and configurable amount&r of rotational force for &eCreate&f."]
-			dependencies: ["4FD7572FC6CC4140"]
-			id: "576E585F8DFC7073"
 			tasks: [{
 				id: "13FF5B9632CF71F1"
-				type: "item"
 				item: "create:creative_motor"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "1F866B5E23A3D661"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1415984687807285627L
-				}
-				{
-					id: "20C5BA9E79D43D9E"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: 3.0d
+			y: 13.0d
 		}
 		{
-			title: "The Creative Worldshaper"
-			x: 2.0d
-			y: 16.0d
-			shape: "diamond"
-			subtitle: "The World is Yours"
-			description: [
-				"&lI believe a congratulations is in order. You've done it! You've reached the end of &bStaTech &eIndustry&f. With the &dCreative Worldshaper&f you can rearrange the world into whatever you see fit. "
-				""
-				"&l&nThanks for playing!"
-			]
 			dependencies: [
 				"208D9031D68CE1AB"
 				"3DDD69F79F436684"
@@ -530,23 +597,40 @@
 				"152140F96FA2944E"
 				"1E378F2F641048F1"
 			]
-			size: 4.0d
+			description: [
+				"&lI believe a congratulations is in order. You've done it! You've reached the end of &bStaTech &eIndustry&f. With the &dCreative Worldshaper&f you can rearrange the world into whatever you see fit. "
+				""
+				"&l&nThanks for playing!"
+				""
+				"It would be greatly appreciated if you join the Discord and provide feedback/suggestions to how to better improve the experience!"
+			]
 			id: "1EE269859E6DD37B"
+			rewards: [
+				{
+					id: "2F4543C2654FEBF5"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "7670DC8D65ACCF81"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "The World is Yours"
 			tasks: [{
 				id: "7A9A9CC7B61F520A"
-				type: "item"
 				item: "create:handheld_worldshaper"
+				type: "item"
 			}]
-			rewards: [{
-				id: "1610F634B8734F6A"
-				type: "xp"
-				xp: 100
-			}]
+			title: "The Creative Worldshaper"
+			x: 2.0d
+			y: 16.0d
 		}
 		{
-			x: 1.0d
-			y: 13.0d
-			shape: "square"
+			dependencies: ["4FD7572FC6CC4140"]
 			description: [
 				"The &dCreative Tank&f can store an &ainfinite amount of any fluid placed inside&r."
 				""
@@ -554,32 +638,37 @@
 				""
 				"&cNote&r: You can clear the fluid in the &dCreative Tank&r by placing it into an empty crafting grid."
 			]
-			dependencies: ["4FD7572FC6CC4140"]
 			id: "3DDD69F79F436684"
-			tasks: [{
-				id: "78F18B3BBAA3C573"
-				type: "item"
-				item: "modern_industrialization:creative_tank"
-			}]
 			rewards: [
 				{
-					id: "6DF7C96713D6CAE7"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "106D0FE824D246CC"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "14F78E66D5FF1004"
+					count: 5
+					id: "1B488D9C9EED1E73"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "1EF04ED71E7D3CE1"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			tasks: [{
+				id: "78F18B3BBAA3C573"
+				item: "modern_industrialization:creative_tank"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 13.0d
 		}
 		{
-			x: -1.0d
-			y: 13.0d
-			shape: "square"
-			subtitle: "Non-euclidian!"
+			dependencies: ["4FD7572FC6CC4140"]
 			description: [
 				"The &dCreative Barrel&f stores infinite amounts of whatever item is placed inside."
 				""
@@ -589,138 +678,172 @@
 				""
 				"You can &dclear the item&r by placing the &dCreative Barrel&r into an empty crafting grid."
 			]
-			dependencies: ["4FD7572FC6CC4140"]
 			id: "1BE7697603B3C94F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "037BD2A3FE09487A"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "0CFBC49887E468E4"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "755D9B056924F730"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			subtitle: "Non-euclidian!"
 			tasks: [{
 				id: "238DC19F04500FAA"
-				type: "item"
 				item: "modern_industrialization:creative_barrel"
+				type: "item"
 			}]
+			x: -1.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4FD7572FC6CC4140"]
+			description: ["The &dCreative Storage Unit&f is an infinite source of power. Any tier of cable can be connected to it."]
+			id: "208D9031D68CE1AB"
 			rewards: [
 				{
-					id: "7AD23061ED57BB4D"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "09EE1D106A47DA70"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "4AA4A81143636997"
+					count: 5
+					id: "10F673FCC34EB7ED"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "7387F9BCDE00EF9C"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: -3.0d
-			y: 13.0d
 			shape: "square"
 			subtitle: "UNLIMITED POWER"
-			description: ["The &dCreative Storage Unit&f is an infinite source of power. Any tier of cable can be connected to it."]
-			dependencies: ["4FD7572FC6CC4140"]
-			id: "208D9031D68CE1AB"
 			tasks: [{
 				id: "50A838B28E13936D"
-				type: "item"
 				item: "modern_industrialization:creative_storage_unit"
+				type: "item"
 			}]
+			x: -3.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["6CD8A3092DDAC055"]
+			description: ["&eHelium Plasma&f is a super heated state of &6Helium&f that can be used to power a &aPlasma Turbine&f or used in the production of &0Neutronium&f."]
+			id: "598DBC20FB201711"
 			rewards: [
 				{
-					id: "473DECF14DBB0419"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "529271774DAD785A"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "6D947C7DD7AB3317"
+					count: 5
+					id: "507B03942117A6E9"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "5D8C6BF3B7EBC44F"
 					type: "xp"
 					xp: 10
 				}
 			]
-		}
-		{
-			x: 2.0d
-			y: 3.0d
 			shape: "square"
-			description: ["&eHelium Plasma&f is a super heated state of &6Helium&f that can be used to power a &aPlasma Turbine&f or used in the production of &0Neutronium&f."]
-			dependencies: ["6CD8A3092DDAC055"]
-			id: "598DBC20FB201711"
 			tasks: [{
 				id: "2FB04878432C0350"
-				type: "item"
 				item: "modern_industrialization:helium_plasma_bucket"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "0391F2846FA69D1A"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1415984687807285627L
-				}
-				{
-					id: "450ED48483F41A57"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: 2.0d
+			y: 3.0d
 		}
 		{
-			x: 4.0d
-			y: 3.0d
-			shape: "square"
-			subtitle: "Theoretical Science!"
+			dependencies: ["598DBC20FB201711"]
 			description: [
 				"Combining super heated &eHelium Plasma&f with &aDeuterium&f in a &bFusion Reactor&f will cause some of the atoms to shred their neutrons into a &0Neutronium plasma&f. &o(I'm not a scientist, and I made this process up)&r"
 				""
 				"&0Neutronium&f takes a long time to process, but with it you can finally look to create endgame items!"
 			]
-			dependencies: ["598DBC20FB201711"]
-			size: 1.5d
 			id: "1E525921822F56AC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "16A7FE77056A0991"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "58310EC855C65876"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "049A8273744CBCBF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			subtitle: "Theoretical Science!"
 			tasks: [{
 				id: "409B2DD4E247D7BE"
-				type: "item"
 				item: "modern_industrialization:neutronium_bucket"
+				type: "item"
 			}]
-			rewards: [
-				{
-					id: "685E775AE45B2CDE"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 1415984687807285627L
-				}
-				{
-					id: "260472C504EFCD59"
-					type: "xp"
-					xp: 10
-				}
-			]
+			x: 4.0d
+			y: 3.0d
 		}
 		{
-			x: 4.0d
-			y: 5.0d
-			shape: "square"
-			description: ["By combining &dlead&r, &5tungstensteel&r, &2iridium&r, and &0neutronium&r you can crate &aUltradense Metal Balls&r."]
 			dependencies: ["1E525921822F56AC"]
+			description: ["By combining &dlead&r, &5tungstensteel&r, &2iridium&r, and &0neutronium&r you can crate &aUltradense Metal Balls&r."]
 			id: "4A2F6AA833C88B7C"
-			tasks: [{
-				id: "1D3EDD75EC203C8F"
-				type: "item"
-				item: "modern_industrialization:ultradense_metal_ball"
-			}]
 			rewards: [
 				{
-					id: "370D36D0B3FA7837"
-					type: "random"
 					exclude_from_claim_all: true
+					id: "4E810192B4DD9490"
 					table_id: 1415984687807285627L
+					type: "random"
 				}
 				{
-					id: "4DA00054EEAE2FE8"
+					count: 5
+					id: "2061377DEEB0B599"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "0FA9FFA69441EE82"
 					type: "xp"
 					xp: 10
 				}
 			]
+			shape: "square"
+			tasks: [{
+				id: "1D3EDD75EC203C8F"
+				item: "modern_industrialization:ultradense_metal_ball"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
 		}
 	]
-	quest_links: [ ]
+	subtitle: ["PhD in Theoretical Physics!"]
+	title: "&66 - Quantum Age"
 }

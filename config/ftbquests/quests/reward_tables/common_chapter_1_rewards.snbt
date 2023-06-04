@@ -1,84 +1,82 @@
 {
 	id: "11F02DC06318D7BE"
-	order_index: 0
-	title: "Chapter 1 Rewards"
 	loot_size: 1
-	use_title: true
+	order_index: 0
 	rewards: [
-		{ item: "minecraft:stone", count: 32 }
-		{ item: "minecraft:coal_ore", count: 32 }
-		{ item: "minecraft:iron_ore", count: 8 }
-		{ item: "minecraft:diamond_ore", count: 2 }
-		{ item: "minecraft:lapis_ore", count: 18 }
-		{ item: "minecraft:cobblestone", count: 48 }
-		{ item: "minecraft:copper_block", count: 8 }
-		{ item: "minecraft:oak_log", count: 16 }
+		{ count: 32, item: "minecraft:stone" }
+		{ count: 32, item: "minecraft:coal_ore" }
+		{ count: 8, item: "minecraft:iron_ore" }
+		{ count: 2, item: "minecraft:diamond_ore" }
+		{ count: 18, item: "minecraft:lapis_ore" }
+		{ count: 48, item: "minecraft:cobblestone" }
+		{ count: 8, item: "minecraft:copper_block" }
+		{ count: 16, item: "minecraft:oak_log" }
 		{ item: "minecraft:emerald_ore" }
-		{ item: "minecraft:white_wool", count: 8 }
-		{ item: "minecraft:sugar_cane", count: 16 }
-		{ item: "minecraft:torch", count: 16 }
-		{ item: "minecraft:cactus", count: 6 }
-		{ item: "minecraft:pumpkin", count: 5 }
+		{ count: 8, item: "minecraft:white_wool" }
+		{ count: 16, item: "minecraft:sugar_cane" }
+		{ count: 16, item: "minecraft:torch" }
+		{ count: 6, item: "minecraft:cactus" }
+		{ count: 5, item: "minecraft:pumpkin" }
 		{ item: "minecraft:anvil" }
 		{ item: "minecraft:enchanting_table" }
-		{ item: "minecraft:sand", count: 24 }
-		{ item: "minecraft:clay", count: 32 }
-		{ item: "minecraft:brick", count: 32 }
-		{ item: "minecraft:gravel", count: 16 }
-		{ item: "minecraft:glass", count: 8 }
+		{ count: 24, item: "minecraft:sand" }
+		{ count: 32, item: "minecraft:clay" }
+		{ count: 32, item: "minecraft:brick" }
+		{ count: 16, item: "minecraft:gravel" }
+		{ count: 8, item: "minecraft:glass" }
 		{
 			item: {
+				Count: 1b
 				id: "minecraft:iron_pickaxe"
-				Count: 1b
 				tag: {
 					Damage: 0
 				}
 			}
 		}
-		{ item: "minecraft:hopper", count: 3 }
+		{ count: 3, item: "minecraft:hopper" }
 		{ item: "minecraft:observer" }
-		{ item: "minecraft:redstone_block", count: 4 }
+		{ count: 4, item: "minecraft:redstone_block" }
 		{
 			item: {
-				id: "minecraft:iron_sword"
 				Count: 1b
+				id: "minecraft:iron_sword"
 				tag: {
 					Damage: 0
 				}
 			}
 		}
-		{ item: "minecraft:dried_kelp_block", count: 3 }
-		{ item: "minecraft:slime_ball", count: 4 }
-		{ item: "minecraft:porkchop", count: 8 }
-		{ item: "minecraft:bread", count: 16 }
-		{ item: "minecraft:gunpowder", count: 12 }
-		{ item: "minecraft:feather", count: 9 }
+		{ count: 3, item: "minecraft:dried_kelp_block" }
+		{ count: 4, item: "minecraft:slime_ball" }
+		{ count: 8, item: "minecraft:porkchop" }
+		{ count: 16, item: "minecraft:bread" }
+		{ count: 12, item: "minecraft:gunpowder" }
+		{ count: 9, item: "minecraft:feather" }
 		{ item: "minecraft:golden_apple" }
 		{ item: "minecraft:brewing_stand" }
-		{ item: "minecraft:cooked_beef", count: 9 }
-		{ item: "minecraft:ender_pearl", count: 3 }
-		{ item: "minecraft:baked_potato", count: 16 }
-		{ item: "minecraft:cooked_salmon", count: 12 }
-		{ item: "minecraft:pumpkin_pie", count: 8 }
+		{ count: 9, item: "minecraft:cooked_beef" }
+		{ count: 3, item: "minecraft:ender_pearl" }
+		{ count: 16, item: "minecraft:baked_potato" }
+		{ count: 12, item: "minecraft:cooked_salmon" }
+		{ count: 8, item: "minecraft:pumpkin_pie" }
 		{
 			item: {
-				id: "minecraft:trident"
 				Count: 1b
+				id: "minecraft:trident"
 				tag: {
 					Damage: 0
 				}
 			}
 		}
 		{ item: "minecraft:bundle" }
-		{ item: "minecraft:cooked_mutton", count: 12 }
-		{ item: "minecraft:nautilus_shell", count: 3 }
-		{ item: "extended_drawers:single_drawer", count: 2 }
+		{ count: 12, item: "minecraft:cooked_mutton" }
+		{ count: 3, item: "minecraft:nautilus_shell" }
+		{ count: 2, item: "extended_drawers:single_drawer" }
 		{ item: "extended_drawers:double_drawer" }
-		{ item: "extended_drawers:quad_drawer", count: 3 }
-		{ item: "extended_drawers:t1_upgrade", count: 2 }
-		{ item: "extended_drawers:t2_upgrade", count: 2 }
-		{ item: "extended_drawers:t3_upgrade", count: 2 }
-		{ item: "extended_drawers:t4_upgrade", count: 2 }
+		{ count: 3, item: "extended_drawers:quad_drawer" }
+		{ count: 2, item: "extended_drawers:t1_upgrade" }
+		{ count: 2, item: "extended_drawers:t2_upgrade" }
+		{ count: 2, item: "extended_drawers:t3_upgrade" }
+		{ count: 2, item: "extended_drawers:t4_upgrade" }
 		{ item: "extended_drawers:access_point" }
 		{ item: "kibe:torch_sling" }
 		{ item: "kibe:wooden_bucket" }
@@ -86,46 +84,46 @@
 		{ item: "kibe:pocket_crafting_table" }
 		{ item: "toms_storage:ts.inventory_connector" }
 		{ item: "toms_storage:ts.storage_terminal" }
-		{ item: "toms_storage:ts.inventory_cable", count: 8 }
-		{ item: "toms_storage:ts.inventory_cable_connector", count: 3 }
+		{ count: 8, item: "toms_storage:ts.inventory_cable" }
+		{ count: 3, item: "toms_storage:ts.inventory_cable_connector" }
 		{ item: "toms_storage:ts.crafting_terminal" }
 		{ item: "toms_storage:ts.wireless_terminal" }
 		{ item: "kibe:trash_can" }
 		{ item: "kibe:pocket_trash_can" }
-		{ item: "kibe:stone_spikes", count: 4 }
-		{ item: "kibe:iron_spikes", count: 2 }
-		{ item: "kibe:gold_spikes", count: 2 }
-		{ item: "kibe:diamond_spikes", count: 2 }
+		{ count: 4, item: "kibe:stone_spikes" }
+		{ count: 2, item: "kibe:iron_spikes" }
+		{ count: 2, item: "kibe:gold_spikes" }
+		{ count: 2, item: "kibe:diamond_spikes" }
 		{ item: "xps:xp_remover" }
-		{ item: "xps:xp_rod", count: 3 }
-		{ item: "xps:soul_copper_ingot", count: 8 }
-		{ item: "xps:soul_copper_blend", count: 12 }
+		{ count: 3, item: "xps:xp_rod" }
+		{ count: 8, item: "xps:soul_copper_ingot" }
+		{ count: 12, item: "xps:soul_copper_blend" }
 		{ item: "xps:xp_berries" }
-		{ item: "xps:xp_berries_seeds", count: 4 }
-		{ item: "xps:xp_dust", count: 6 }
-		{ item: "minecraft:quartz", count: 8 }
-		{ item: "minecraft:raw_iron_block", count: 2 }
-		{ item: "minecraft:raw_gold", count: 8 }
+		{ count: 4, item: "xps:xp_berries_seeds" }
+		{ count: 6, item: "xps:xp_dust" }
+		{ count: 8, item: "minecraft:quartz" }
+		{ count: 2, item: "minecraft:raw_iron_block" }
+		{ count: 8, item: "minecraft:raw_gold" }
 		{ item: "minecraft:jukebox" }
 		{ item: "kibe:cooler" }
 		{
 			item: {
+				Count: 1b
 				id: "kibe:golden_lasso"
-				Count: 1b
 				tag: { }
 			}
 		}
 		{
 			item: {
+				Count: 1b
 				id: "kibe:cursed_lasso"
-				Count: 1b
 				tag: { }
 			}
 		}
 		{
 			item: {
-				id: "kibe:diamond_lasso"
 				Count: 1b
+				id: "kibe:diamond_lasso"
 				tag: { }
 			}
 		}
@@ -137,8 +135,8 @@
 		{ item: "kibe:fluid_hopper" }
 		{
 			item: {
-				id: "kibe:escape_rope"
 				Count: 1b
+				id: "kibe:escape_rope"
 				tag: {
 					Damage: 0
 				}
@@ -149,8 +147,8 @@
 		{ item: "chisel:chisel" }
 		{
 			item: {
-				id: "hookshot:white_hookshot"
 				Count: 1b
+				id: "hookshot:white_hookshot"
 				tag: {
 					Damage: 0
 				}
@@ -160,8 +158,8 @@
 		{ item: "kibe:slime_sling" }
 		{
 			item: {
-				id: "kibe:slime_boots"
 				Count: 1b
+				id: "kibe:slime_boots"
 				tag: {
 					Damage: 0
 				}
@@ -179,4 +177,6 @@
 		{ item: "farmersdelight:shepherds_pie_block" }
 		{ item: "farmersdelight:rice_roll_medley_block" }
 	]
+	title: "Chapter 1 Rewards"
+	use_title: true
 }

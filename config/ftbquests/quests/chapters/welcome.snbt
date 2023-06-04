@@ -1,48 +1,43 @@
 {
-	id: "3EFF979EDF05961B"
-	group: ""
-	order_index: 0
-	filename: "welcome"
-	title: "&a&lWelcome"
-	icon: "minecraft:diamond"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: "minecraft:diamond"
+	id: "3EFF979EDF05961B"
 	images: [
 		{
+			click: ""
+			corner: false
+			dev: false
+			height: 6.0d
+			hover: [ ]
+			image: "statech:textures/item/mm_logo.png"
+			rotation: 0.0d
+			width: 6.0d
 			x: 0.0d
 			y: -6.5d
-			width: 7.5d
-			height: 7.5d
-			rotation: 0.0d
-			image: "statech:textures/item/mm_logo.png"
-			hover: [ ]
-			click: ""
-			dev: false
-			corner: false
 		}
 		{
-			x: 0.0d
-			y: 3.0d
-			width: 1.0d
-			height: 1.0d
-			rotation: 0.0d
-			image: "statech:textures/item/discordlogo.png"
+			click: "https://discord.gg/RDaJEnN3uS"
+			corner: false
+			dev: false
+			height: 1.5d
 			hover: [
 				"Find yourself stuck and need help? "
 				"Or if you just want to chat, come join the Discord!"
 			]
-			click: "https://discord.gg/RDaJEnN3uS"
-			dev: false
-			corner: false
+			image: "statech:textures/item/discordlogo.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 0.0d
+			y: 4.0d
 		}
 	]
+	order_index: 0
+	quest_links: [ ]
 	quests: [
 		{
-			title: "&aWelcome!"
-			icon: "kubejs:statech_logo"
-			x: 0.0d
-			y: -1.0d
-			shape: "square"
 			description: [
 				"Hello and welcome to &aStaTech Industry&f!"
 				""
@@ -64,25 +59,26 @@
 				""
 				"- Ways of &3generating resources&r without having to leave your base!"
 			]
-			size: 2.0d
+			icon: "kubejs:statech_logo"
 			id: "2174585D87F83C89"
-			tasks: [{
-				id: "3ABF0361BC517181"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "695C833217AB4D8C"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "3ABF0361BC517181"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "&aWelcome!"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			title: "REI Tips"
-			icon: "minecraft:writable_book"
-			x: -2.0d
-			y: -1.5d
-			shape: "rsquare"
+			dependencies: ["2174585D87F83C89"]
 			description: [
 				"&eREI&f, or &eRoughlyEnoughItems&f, is the included item search mod in the pack. Knowing how to use &eREI&f will be key in the completion of the pack. For those experienced with &dJEI&r or &dJustEnoughItems&r, you will find these two &2very familiar&r."
 				""
@@ -93,88 +89,82 @@
 				"&b@modname&f - This will search REI for all items provided by a specific mod"
 				"&e$tagname&f - This will search REI for all items in a specified tag, useful for searcing things such as $ingots"
 			]
-			dependencies: ["2174585D87F83C89"]
+			icon: "minecraft:writable_book"
 			id: "0563A16875FB0D51"
-			tasks: [{
-				id: "0BD438227CEDDA08"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "01D51893E26BCCAD"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "0BD438227CEDDA08"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "REI Tips"
+			x: -2.5d
+			y: -1.0d
 		}
 		{
-			title: "Spice of Life"
-			icon: "farmersdelight:hamburger"
-			x: -2.0d
-			y: -0.5d
-			shape: "rsquare"
+			dependencies: ["2174585D87F83C89"]
 			description: [
 				"This pack includes the mod &eSpice of Fabric&r. Originally I was going to mimic &dGregTech: New Horizons&r' food system, requiring you to change up what you eat. &cBut that's just mean...&r. So instead the mod rewards you for &2trying different foods&r!"
 				""
 				"Every &eten unique foods&r eaten, you will be granted &3an additional heart&r!"
 			]
-			dependencies: ["2174585D87F83C89"]
+			icon: "farmersdelight:hamburger"
 			id: "42DBEFEFCE44F5BB"
-			tasks: [{
-				id: "6467AAF803854F25"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "74C001081CBC46D1"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "6467AAF803854F25"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Spice of Life"
+			x: -2.5d
+			y: 0.0d
 		}
 		{
-			title: "Automate Everything"
-			icon: "modern_industrialization:gold_gear"
-			x: -2.0d
-			y: -2.5d
-			shape: "rsquare"
+			dependencies: ["2174585D87F83C89"]
 			description: [
 				"Early game may seem easy enough to &cbrute force&r, but once you start getting to the &eelectric and midgame chapters&r of this modpack you're going to run into a lot of &cproblems if you didn't automate anything&r. "
 				""
 				"In general, if you find a way to &aautomate producing something&f, you should do it."
 			]
-			dependencies: ["2174585D87F83C89"]
+			icon: "modern_industrialization:gold_gear"
 			id: "44CD2B9B89F9183C"
-			tasks: [{
-				id: "205CF878A2DFA3D1"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "76FE68EC0D66AB23"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "205CF878A2DFA3D1"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Automate Everything"
+			x: -2.0d
+			y: -2.0d
 		}
 		{
-			title: "True Darkness"
-			icon: "kibe:big_torch"
-			x: 2.0d
-			y: -0.5d
-			shape: "rsquare"
-			subtitle: "It's dangerous to go alone"
-			description: ["The caves and night in this world &caren't like you remember&r in vanilla. It gets dark, &c&overy dark&r&r. You can &6circumvent the darkness&r by placing / holding a torch in your &aoffhand&r. Just make sure to light up your base, you never know what &ccreepy crawlies&r may lurk around."]
 			dependencies: ["2174585D87F83C89"]
+			description: ["The caves and night in this world &caren't like you remember&r in vanilla. It gets dark, &c&overy dark&r&r. You can &6circumvent the darkness&r by placing / holding a torch in your &aoffhand&r. Just make sure to light up your base, you never know what &ccreepy crawlies&r may lurk around."]
+			icon: "kibe:big_torch"
 			id: "525523B87D97A371"
-			tasks: [{
-				id: "021B5A0269EAC365"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [
 				{
-					id: "5341C44956557380"
-					type: "item"
-					item: "minecraft:torch"
 					count: 16
+					id: "5341C44956557380"
+					item: "minecraft:torch"
+					type: "item"
 				}
 				{
 					id: "2ECE18F4AAD7F1F6"
@@ -182,82 +172,82 @@
 					xp: 10
 				}
 			]
+			shape: "rsquare"
+			subtitle: "It's dangerous to go alone"
+			tasks: [{
+				id: "021B5A0269EAC365"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "True Darkness"
+			x: 2.5d
+			y: 0.0d
 		}
 		{
-			title: "Required Quests"
-			icon: "minecraft:redstone_torch"
-			x: -2.0d
-			y: 0.5d
-			shape: "rsquare"
+			dependencies: ["2174585D87F83C89"]
 			description: [
 				"In the &eChapters&r, quests are separated between &bRequired&f and &eOptional&f. &eOptional&f quests have a &acircular border&f, while &bRequired&f quests have a &asquare border&f."
 				""
 				"To progress, you &cmust&r complete the &bRequired Quests&r, however don't &coverlook&r the &eOptional Quests&r, as they may have important items that will &2help you in your journey&r!"
 			]
-			dependencies: ["2174585D87F83C89"]
+			icon: "minecraft:redstone_torch"
 			id: "2A1B2E53413418E1"
-			tasks: [{
-				id: "37CF0AB273567327"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "45126F96E3D071C5"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "37CF0AB273567327"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Required Quests"
+			x: -2.5d
+			y: 1.0d
 		}
 		{
-			title: "A Scarier Nether"
-			icon: "minecraft:netherrack"
-			x: 2.0d
-			y: 0.5d
-			shape: "rsquare"
+			dependencies: ["2174585D87F83C89"]
 			description: [
 				"The mod &aAmplified Nether&f is included in this pack. This makes the &cNether&f extend up to &a256&f blocks instead of the default &a128&f. With this added height brings &charder traversal and more dangers&r."
 				""
 				"Alongside &aAmplified Nether&f, this modpack also includes &cIncendium&f, a mod that adds new structures and biomes to the &cNether&f for you to find and explore."
 			]
-			dependencies: ["2174585D87F83C89"]
+			icon: "minecraft:netherrack"
 			id: "08002F088B54D2AF"
-			tasks: [{
-				id: "7FF8D25441251661"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "6DE0632E61A71013"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "7FF8D25441251661"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "A Scarier Nether"
+			x: 2.5d
+			y: 1.0d
 		}
 		{
-			title: "Better Combat"
+			dependencies: ["2174585D87F83C89"]
+			description: ["This modpack includes &aSimply Swords&f and &eBetter Combat&f. Together these &6overhaul the combat of vanilla Minecraft completely&r and offer a broad variety of &3weapons&r to try out."]
 			icon: {
-				id: "simplyswords:shadowsting"
 				Count: 1b
+				id: "simplyswords:shadowsting"
 				tag: {
 					Damage: 0
 				}
 			}
-			x: 2.0d
-			y: -1.5d
-			shape: "rsquare"
-			subtitle: "It's dangerous to go alone!"
-			description: ["This modpack includes &aSimply Swords&f and &eBetter Combat&f. Together these &6overhaul the combat of vanilla Minecraft completely&r and offer a broad variety of &3weapons&r to try out."]
-			dependencies: ["2174585D87F83C89"]
 			id: "1709043780838C78"
-			tasks: [{
-				id: "094A44397AB8351C"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [
 				{
-					id: "5154D4BBD441EF8E"
-					type: "choice"
 					exclude_from_claim_all: true
+					id: "5154D4BBD441EF8E"
 					table_id: 2190234234133751555L
+					type: "choice"
 				}
 				{
 					id: "0B207279AC73FEF9"
@@ -265,99 +255,106 @@
 					xp: 10
 				}
 			]
+			shape: "rsquare"
+			subtitle: "It's dangerous to go alone!"
+			tasks: [{
+				id: "094A44397AB8351C"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Better Combat"
+			x: 2.5d
+			y: -1.0d
 		}
 		{
-			title: "Oh the Biomes You'll Go"
-			icon: "byg:byg_logo"
-			x: 2.0d
-			y: -2.5d
-			shape: "rsquare"
-			description: ["&aOh The Biomes You'll Go&f is included in this pack alongside &eTerralith&f. Together, these world generation mods will &2vastly improve&r the landscape as you adventure."]
 			dependencies: ["2174585D87F83C89"]
+			description: ["&aOh The Biomes You'll Go&f is included in this pack alongside &eTerralith&f. Together, these world generation mods will &2vastly improve&r the landscape as you adventure."]
+			icon: "byg:byg_logo"
 			id: "571425ED36DA521C"
-			tasks: [{
-				id: "6A3D3DA3D5DA4D06"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "450AC7A949C1BE02"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "6A3D3DA3D5DA4D06"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Oh the Biomes You'll Go"
+			x: 2.0d
+			y: -2.0d
 		}
 		{
-			title: "Optional Additions"
-			icon: "create:goggles"
-			x: 0.0d
-			y: 1.5d
-			shape: "rsquare"
+			dependencies: ["2174585D87F83C89"]
 			description: [
 				"This pack includes &eComplimentaryReimagined&f. This is a highly customizable and performance friendly shader that you can enable through &aVideo Settings -> Shader Packs&f."
 				""
 				"Also included is a &aSmooth Font&f resourcepack. It can be enabled in the &6Resource Pack&r menu."
 			]
-			dependencies: ["2174585D87F83C89"]
+			icon: "create:goggles"
 			id: "6C661605F1DBEE4D"
-			tasks: [{
-				id: "70B13DBDC276B4EA"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "5A35AE7006AA7D24"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "70B13DBDC276B4EA"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Optional Additions"
+			x: 0.0d
+			y: 2.5d
 		}
 		{
-			title: "Chapter Progression"
-			icon: "minecraft:bookshelf"
-			x: -1.0d
-			y: 1.5d
-			shape: "rsquare"
+			dependencies: ["2174585D87F83C89"]
 			description: [
 				"&aMain Progression&f is provided in the &6Chapters&f section. The entries below the &6Side Chapters&r and &aMods&f sections are helpful mods added in the pack that aren't required to &ebeat the pack&r. "
 				""
 				"&eThey may not be required, but they can be &2VERY&e helpful&r!"
 			]
-			dependencies: ["2174585D87F83C89"]
+			icon: "minecraft:bookshelf"
 			id: "0480052F3F1EDAFC"
-			tasks: [{
-				id: "030C38099F469C1F"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "32F27179EF571FEE"
 				type: "xp"
 				xp: 10
 			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "030C38099F469C1F"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Chapter Progression"
+			x: -1.0d
+			y: 2.5d
 		}
 		{
-			title: "Find Nearby"
-			icon: "xps:inspector"
-			x: -2.0d
-			y: 1.5d
-			description: ["Trying to &afind&r an item in your sea of chests? Hovering over the item in your inventory or &dREI&r and pressing '&ey&r' will highlight nearby inventories with that item!"]
 			dependencies: ["2174585D87F83C89"]
+			description: ["Trying to &afind&r an item in your sea of chests? Hovering over the item in your inventory or &dREI&r and pressing '&ey&r' will highlight nearby inventories with that item!"]
+			icon: "xps:inspector"
 			id: "285D484647B28F7C"
-			tasks: [{
-				id: "569515177B4B1050"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "79E8F21EB634874C"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "569515177B4B1050"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Find Nearby"
+			x: -2.0d
+			y: 2.0d
 		}
 		{
-			title: "JourneyMap"
-			icon: "minecraft:filled_map"
-			x: 1.0d
-			y: 1.5d
+			dependencies: ["2174585D87F83C89"]
 			description: [
 				"This pack includes &eJourneyMap&r. This mod allows for &dbookmarking&r locations and viewing the world around you!"
 				""
@@ -365,18 +362,21 @@
 				"Press '&ej&r' to display all your waypoints"
 				"Press '&em&r' to open the fullscreen map"
 			]
-			dependencies: ["2174585D87F83C89"]
+			icon: "minecraft:filled_map"
 			id: "30B0EA852EC4F5A3"
-			tasks: [{
-				id: "005451BD8D8A7C98"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "1D1F88A59AB19D42"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "005451BD8D8A7C98"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "JourneyMap"
+			x: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -400,8 +400,94 @@
 			}]
 			title: "Inventory Profiles Next"
 			x: 2.0d
-			y: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2174585D87F83C89"]
+			description: [
+				"Throughout your progression in this &3questbook&r you will earn &eStaTech Coins&r. These can be used to &acraft certain materials&r you may be needing in your adventure. "
+				""
+				"The coins are &2only rewarded for mainline quest progression&r for balance, and you will &dgradually earn more valuable coins&r as you progress!"
+				""
+				"Check &dREI&r for a list of what you can make with the &eCoins&r!"
+			]
+			icon: "kubejs:coin_rare"
+			id: "1C030F5D0DA882DC"
+			rewards: [
+				{
+					id: "465192FEB4B1BC33"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "2B6191C22764BB0D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "I've seen this before!"
+			tasks: [{
+				id: "34090824E7A87B60"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "StaTech Coins"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2174585D87F83C89"]
+			description: [
+				"A throwback to the classic &eOptifine&r feature without having to have that mod installed! (Trust me it &cbreaks everything&r!)"
+				""
+				"Press '&dC&r' to zoom in on what you're aiming at. You can stack this effect with a &aSpyglass&r for &2maximum zoomage&r."
+			]
+			icon: "minecraft:spyglass"
+			id: "3D5C1FD71120C918"
+			rewards: [{
+				id: "5FEEAC4234C0F3C3"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "I can see clearly now"
+			tasks: [{
+				id: "70399A65136F784E"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "LogicalZoom"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2174585D87F83C89"]
+			description: [
+				"Want to talk to your friends &einside the game itself&r? Included in the pack is the mod &aSimple Voice Chat&r. This does &crequire some setup from the server host &rto get working, but it is &3relatively simple&r to do so and is pretty much &2plug and play&r for any users connecting to your server. "
+				""
+				"If your friend is too loud, your microphone isn't being detected, or any other issue arises, press '&ep&r' to &dopen the config&r for the mod. By default the &9Push to Talk&r key is bound to '&3CAPS LOCK&r'. "
+			]
+			icon: {
+				Count: 1b
+				id: "twilightforest:lifedrain_scepter"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1F6617D47FD87D58"
+			rewards: [{
+				id: "736BEFEDA748EEF5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6FC30288BFE41B73"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Simple Voice Chat"
+			x: -1.0d
+			y: -2.5d
 		}
 	]
-	quest_links: [ ]
+	title: "&a&lWelcome"
 }

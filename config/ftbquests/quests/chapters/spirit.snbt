@@ -1,53 +1,45 @@
 {
-	id: "6A0C8DAE8D3AFAB7"
-	group: "135E7B9D4273E5DD"
-	order_index: 2
-	filename: "spirit"
-	title: "&2Spirit"
-	icon: "spirit:soul_cage"
-	subtitle: ["Repurposed Souls"]
-	default_quest_shape: "square"
 	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "spirit"
+	group: "135E7B9D4273E5DD"
+	icon: "spirit:soul_cage"
+	id: "6A0C8DAE8D3AFAB7"
+	order_index: 2
+	quest_links: [ ]
 	quests: [
 		{
-			title: "Welcome to Spirit"
-			icon: "spirit:soul_cage"
-			x: 0.0d
-			y: 0.0d
 			description: [
 				"&eSpirit&f is a data driven sould magic mod. Utilizng the power of souls, player can summon mobs, create new ones, or channel their power to perform incredible new feats. "
 				""
 				"To get started, you'll need a &aSoul Fire&f. This is made by lighting a fire ontop of &bSoul Sand&f or &cSoul Soil&f blocks."
 			]
+			icon: "spirit:soul_cage"
 			id: "0D67C6698685A00A"
-			tasks: [{
-				id: "7D9E53F848D75E9E"
-				type: "checkmark"
-				title: "Click to Acknowledge"
-			}]
 			rewards: [{
 				id: "421D11D4A5D9D91F"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "7D9E53F848D75E9E"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Welcome to Spirit"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			x: 4.5d
-			y: 0.0d
-			description: ["Engulfing &aIron Ingots&f in a &bSoul Fire&f surrounded by &cSoul Powder Blocks&f will give you a &dSoul Ingot&f."]
 			dependencies: ["6E718515A6A76201"]
+			description: ["Engulfing &aIron Ingots&f in a &bSoul Fire&f surrounded by &cSoul Powder Blocks&f will give you a &dSoul Ingot&f."]
 			id: "6075A8D0F4DE541A"
-			tasks: [{
-				id: "1568A142DEC946F2"
-				type: "item"
-				item: "spirit:soul_steel_ingot"
-			}]
 			rewards: [
 				{
-					id: "421397EF42F52804"
-					type: "item"
-					item: "spirit:soul_steel_ingot"
 					count: 10
+					id: "421397EF42F52804"
+					item: "spirit:soul_steel_ingot"
+					type: "item"
 				}
 				{
 					id: "2C63A5D585680C77"
@@ -55,41 +47,41 @@
 					xp: 10
 				}
 			]
+			tasks: [{
+				id: "1568A142DEC946F2"
+				item: "spirit:soul_steel_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
 		}
 		{
-			x: 3.0d
-			y: 0.0d
-			description: ["&aSoul Powder Blocks&f will make up the basis of some of the basic recipes. These are consumed when the recipe completes, so plan to make a lot."]
 			dependencies: ["76894C28C75188A1"]
+			description: ["&aSoul Powder Blocks&f will make up the basis of some of the basic recipes. These are consumed when the recipe completes, so plan to make a lot."]
 			id: "6E718515A6A76201"
-			tasks: [{
-				id: "641DB6B023AE4466"
-				type: "item"
-				item: "spirit:soul_powder_block"
-			}]
 			rewards: [{
 				id: "2B44EB9CBA82C530"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "641DB6B023AE4466"
+				item: "spirit:soul_powder_block"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
 		}
 		{
-			x: 1.5d
-			y: 0.0d
-			description: ["&aSoul Powder&f is an essential ingredient in the &eSpirit&f mod. You can drop &6Glowstone&f or &6Glowstone Dust&f in a &cSoul Fire&f to convert it into &2Soul Powder&f."]
 			dependencies: ["0D67C6698685A00A"]
+			description: ["&aSoul Powder&f is an essential ingredient in the &eSpirit&f mod. You can drop &6Glowstone&f or &6Glowstone Dust&f in a &cSoul Fire&f to convert it into &2Soul Powder&f."]
 			id: "76894C28C75188A1"
-			tasks: [{
-				id: "222CE265BCCC9D31"
-				type: "item"
-				item: "spirit:soul_powder"
-			}]
 			rewards: [
 				{
-					id: "5176A6A0824AFC17"
-					type: "item"
-					item: "spirit:soul_powder"
 					count: 12
+					id: "5176A6A0824AFC17"
+					item: "spirit:soul_powder"
+					type: "item"
 				}
 				{
 					id: "675CFBFA3B711B37"
@@ -97,11 +89,16 @@
 					xp: 10
 				}
 			]
+			tasks: [{
+				id: "222CE265BCCC9D31"
+				item: "spirit:soul_powder"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
 		}
 		{
-			title: "Soul Steel Tools"
-			x: 6.5d
-			y: -1.5d
+			dependencies: ["6075A8D0F4DE541A"]
 			description: [
 				"&aSoul Steel Tools&f all grant double souls in &bSoul Catalysts&f when you kill the bound mob and allow for repairing if you place them in a &cSoul Fire&f."
 				""
@@ -111,237 +108,241 @@
 				""
 				"&9Soul Steel Bows&f require souls to shoot rather than arrows."
 			]
-			dependencies: ["6075A8D0F4DE541A"]
 			id: "248EDBE399280D24"
-			tasks: [
-				{
-					id: "02696A9A97A87103"
-					type: "item"
-					item: {
-						id: "spirit:soul_steel_pickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "2054FC8AC5492920"
-					type: "item"
-					item: {
-						id: "spirit:soul_steel_shovel"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "0526BF49344288CA"
-					type: "item"
-					item: {
-						id: "spirit:soul_steel_sword"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "34D73C9517BAD4A8"
-					type: "item"
-					item: {
-						id: "spirit:soul_steel_axe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "17C3A9674A254EDA"
-					type: "item"
-					item: {
-						id: "spirit:soul_steel_hoe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "734EBD7E63A44269"
-					type: "item"
-					item: {
-						id: "spirit:soul_steel_bow"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
 			rewards: [{
 				id: "0C3C11B7FDD7384E"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [
+				{
+					id: "02696A9A97A87103"
+					item: {
+						Count: 1b
+						id: "spirit:soul_steel_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2054FC8AC5492920"
+					item: {
+						Count: 1b
+						id: "spirit:soul_steel_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0526BF49344288CA"
+					item: {
+						Count: 1b
+						id: "spirit:soul_steel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "34D73C9517BAD4A8"
+					item: {
+						Count: 1b
+						id: "spirit:soul_steel_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "17C3A9674A254EDA"
+					item: {
+						Count: 1b
+						id: "spirit:soul_steel_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "734EBD7E63A44269"
+					item: {
+						Count: 1b
+						id: "spirit:soul_steel_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Soul Steel Tools"
+			x: 6.5d
+			y: -1.5d
 		}
 		{
-			x: 4.5d
-			y: -1.5d
-			description: ["Converts the soul on a &aSoul Pedestal&f into a &bCrude Soul&f. Why? I'm not sure either..."]
 			dependencies: [
 				"6075A8D0F4DE541A"
 				"74DE588065FB6421"
 			]
+			description: ["Converts the soul on a &aSoul Pedestal&f into a &bCrude Soul&f. Why? I'm not sure either..."]
 			id: "3517F74596880D48"
-			tasks: [{
-				id: "18E4595BA9428941"
-				type: "item"
-				item: "spirit:soul_steel_wand"
-			}]
 			rewards: [{
 				id: "5B0101A74113734B"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "18E4595BA9428941"
+				item: "spirit:soul_steel_wand"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
 		}
 		{
-			x: 6.5d
-			y: 0.0d
-			description: ["This pedestal mainly is for clearing the souls stored in a &aSoul Crystal&f. Right-click with a &bCrude Soul Crystal&f on top to clear the souls."]
 			dependencies: ["6075A8D0F4DE541A"]
+			description: ["This pedestal mainly is for clearing the souls stored in a &aSoul Crystal&f. Right-click with a &bCrude Soul Crystal&f on top to clear the souls."]
 			id: "77454A0FC596FD77"
-			tasks: [{
-				id: "550AF746A9317861"
-				type: "item"
-				item: "spirit:crystal_pedestal"
-			}]
 			rewards: [{
 				id: "1AF57C9B556C35EE"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "550AF746A9317861"
+				item: "spirit:crystal_pedestal"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
 		}
 		{
-			x: -1.5d
-			y: 0.0d
-			description: ["&aSoul Slate&f can be made by engulfing &bDeepslate&f in a &cSoul Fire&f."]
 			dependencies: ["0D67C6698685A00A"]
+			description: ["&aSoul Slate&f can be made by engulfing &bDeepslate&f in a &cSoul Fire&f."]
 			id: "775B33F2477BED1A"
-			tasks: [{
-				id: "1ECA409181D28ACB"
-				type: "item"
-				item: "spirit:soul_slate"
-			}]
 			rewards: [{
 				id: "6E6D6D32321B9CA6"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "1ECA409181D28ACB"
+				item: "spirit:soul_slate"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
 		}
 		{
-			x: 1.5d
-			y: -2.5d
+			dependencies: ["76894C28C75188A1"]
 			description: [
 				"&aSoul Crystals&f will be used to store the souls of slain mobs."
 				""
 				"This process will consume the &eQuartz Blocks&f."
 			]
-			dependencies: ["76894C28C75188A1"]
 			id: "10FCC8343C29D893"
-			tasks: [{
-				id: "158A7AECD8951875"
-				type: "item"
-				item: "spirit:soul_crystal_shard"
-			}]
 			rewards: [{
 				id: "64D5BE2FC485FE6D"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "158A7AECD8951875"
+				item: "spirit:soul_crystal_shard"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
 		}
 		{
-			x: -1.5d
-			y: -2.5d
-			description: ["The &aCrude Soul Crystal&f is a key component to getting your first &bSoul Crystal&f."]
 			dependencies: [
 				"775B33F2477BED1A"
 				"10FCC8343C29D893"
 			]
+			description: ["The &aCrude Soul Crystal&f is a key component to getting your first &bSoul Crystal&f."]
 			id: "30D1F9DD071C8528"
-			tasks: [{
-				id: "105A8C739C0569C6"
-				type: "item"
-				item: "spirit:crude_soul_crystal"
-			}]
 			rewards: [{
 				id: "6EC29D035DD52579"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "105A8C739C0569C6"
+				item: "spirit:crude_soul_crystal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
 		}
 		{
-			x: 0.0d
-			y: -1.5d
-			description: ["&aSoul Glass&f luckily doesn't break the blocks required to craft it like the other recipes. You will only need 4x &9Lapis Lazuli Blocks&f to get started."]
 			dependencies: ["0D67C6698685A00A"]
+			description: ["&aSoul Glass&f luckily doesn't break the blocks required to craft it like the other recipes. You will only need 4x &9Lapis Lazuli Blocks&f to get started."]
 			id: "74DE588065FB6421"
-			tasks: [{
-				id: "794F67CA6ED00670"
-				type: "item"
-				item: "spirit:soul_glass"
-			}]
 			rewards: [{
 				id: "2920303431E50D64"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "794F67CA6ED00670"
+				item: "spirit:soul_glass"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
 		}
 		{
-			x: 0.0d
-			y: -4.0d
+			dependencies: [
+				"30D1F9DD071C8528"
+				"74DE588065FB6421"
+			]
 			description: [
 				"&aSoul Crystals&f will store the souls of a single type of mob when you kill them. Once you kill 64 of the same mob, the crystal will rank up to tier 1. You can see your progress by hovering over the cyrstal in your inventory."
 				""
 				"You will lose any souls in the &bCrude Soul Crystal&f during this process!"
 			]
-			dependencies: [
-				"30D1F9DD071C8528"
-				"74DE588065FB6421"
-			]
 			id: "1F17C0D390C24243"
-			tasks: [{
-				id: "69436D5AD6B26531"
-				type: "item"
-				item: "spirit:soul_crystal"
-			}]
 			rewards: [{
 				id: "19FADDF7996B0E25"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "69436D5AD6B26531"
+				item: "spirit:soul_crystal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
 		}
 		{
-			x: 4.5d
-			y: 1.5d
 			description: ["Obtained by breaking any &aSpawner&f in the world. The type doesn't tend to matter, so feel free to break spawners of mundane mobs (zombies)."]
 			id: "2EE894E341889350"
-			tasks: [{
-				id: "3A47BD4F118D09E3"
-				type: "item"
-				item: "spirit:broken_spawner"
-			}]
 			rewards: [{
 				id: "0E170F219A981D35"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "3A47BD4F118D09E3"
+				item: "spirit:broken_spawner"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
 		}
 		{
-			x: 6.5d
-			y: 1.5d
+			dependencies: [
+				"2EE894E341889350"
+				"6075A8D0F4DE541A"
+			]
 			description: [
 				"The &aSoul Cage&f is made by engulfing a &bBroken Spawner&f in a &cSoul Fire&f surrounded by &dSoul Steel Blocks&f."
 				""
@@ -349,26 +350,25 @@
 				""
 				"Right-click the &aSoul Cage&f with a &bSoul Crystal&d to activate the &aSoul Cage&f and it will spawn soul-bound mobs during the night. These mobs will drop the same loot and experience as normal mobs, and the higher the amount of souls used to activate the &aSoul Cage&f, the better it will perform."
 			]
-			dependencies: [
-				"2EE894E341889350"
-				"6075A8D0F4DE541A"
-			]
 			id: "3E7B47F377A4D739"
-			tasks: [{
-				id: "0AAC9CFF8B4280B8"
-				type: "item"
-				item: "spirit:soul_cage"
-			}]
 			rewards: [{
 				id: "007930003A88837B"
 				type: "xp"
 				xp: 10
 			}]
+			tasks: [{
+				id: "0AAC9CFF8B4280B8"
+				item: "spirit:soul_cage"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
 		}
 		{
-			x: -1.5d
-			y: 3.0d
-			subtitle: "Souls to feed the factory"
+			dependencies: [
+				"775B33F2477BED1A"
+				"6075A8D0F4DE541A"
+			]
 			description: [
 				"The &eSoul Vitalizer&f is a key component in simulating mob drops. It's quite expensive to make, but it will be very worth it."
 				""
@@ -378,47 +378,47 @@
 				""
 				"The effectiveness of the progress depends on the tier of the &bSoul Crystal&f in the machine."
 			]
-			dependencies: [
-				"775B33F2477BED1A"
-				"6075A8D0F4DE541A"
-			]
-			size: 1.5d
 			id: "634FCF8D69F2C9DA"
-			tasks: [{
-				id: "05652235BB65B578"
-				type: "item"
-				item: "vitalize:soul_revitalizer"
-			}]
 			rewards: [{
 				id: "69888479110A80F2"
 				type: "xp"
 				xp: 10
 			}]
+			size: 1.5d
+			subtitle: "Souls to feed the factory"
+			tasks: [{
+				id: "05652235BB65B578"
+				item: "vitalize:soul_revitalizer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
 		}
 		{
-			title: "Pylons"
-			x: 1.0d
-			y: 3.0d
-			subtitle: "You must construct additional pylons"
+			dependencies: ["634FCF8D69F2C9DA"]
 			description: [
 				"&aPylons&f are support blocks and a needed structure for the &eSoul Vitalizer&f to work."
 				""
 				"&aPylons&f can be upgraded to provide different effects."
 			]
-			dependencies: ["634FCF8D69F2C9DA"]
 			id: "222E172E0A9EB98E"
-			tasks: [{
-				id: "6628CD50AAE64D45"
-				type: "item"
-				item: "vitalize:pylon_base"
-				count: 8L
-			}]
 			rewards: [{
 				id: "72D601BAB406E3DF"
 				type: "xp"
 				xp: 10
 			}]
+			subtitle: "You must construct additional pylons"
+			tasks: [{
+				count: 8L
+				id: "6628CD50AAE64D45"
+				item: "vitalize:pylon_base"
+				type: "item"
+			}]
+			title: "Pylons"
+			x: 1.0d
+			y: 3.0d
 		}
 	]
-	quest_links: [ ]
+	subtitle: ["Repurposed Souls"]
+	title: "&2Spirit"
 }

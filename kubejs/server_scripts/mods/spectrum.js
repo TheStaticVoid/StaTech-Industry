@@ -216,4 +216,6 @@ ServerEvents.recipes(e => {
             sp('collect_shimmerstone')
         ]
     });
+
+    e.stonecutting(sp('amethyst_storage_block'), 'blockus:polished_amethyst');
 });

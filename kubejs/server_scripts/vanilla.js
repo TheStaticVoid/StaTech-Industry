@@ -74,6 +74,15 @@ ServerEvents.recipes(e => {
     })
     .id(st('bucket'));
 
+    e.shaped('16x ' + mc('stick'), [
+        'L',
+        'L'
+    ],
+    {
+        L: '#minecraft:logs'
+    })
+    .id(st('sticks_from_log'));
+
     // -- BUCKET ALT METALS -- //
     ALT_METALS.forEach(id => {
         e.shaped(mc('bucket'), [ 'P P', ' P '], { P: `#c:${id}_plates` }).id(st(`bucket_${id}`));
