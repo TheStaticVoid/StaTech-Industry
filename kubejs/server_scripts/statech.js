@@ -5,6 +5,54 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let sp = (id) => `spectrum:${id}`;
 
+    e.smelting('kubejs:clear_ingot', 'minecraft:glass', 0.2);
+    
+    // -- CLEAR HELMET -- //
+    e.shaped('kubejs:clear_helmet', [
+        'III',
+        'I I'
+    ],
+    {
+        I: 'kubejs:clear_ingot'
+    })
+    .id(st('clear_helmet'));
+
+    // -- CLEAR CHESTPLATE -- //
+    e.shaped('kubejs:clear_chestplate', [
+        'I I',
+        'III',
+        'III'
+    ],
+    {
+        I: 'kubejs:clear_ingot'
+    })
+    .id(st('clear_chestplate'));
+
+    // -- CLEAR LEGGINGS -- //
+    e.shaped('kubejs:clear_leggings', [
+        'III',
+        'I I',
+        'I I'
+    ],
+    {
+        I: 'kubejs:clear_ingot'
+    })
+    .id(st('clear_leggings'));
+
+    // -- CLEAR BOOTS -- //
+    e.shaped('kubejs:clear_boots', [
+        'I I',
+        'I I'
+    ],
+    {
+        I: 'kubejs:clear_ingot'
+    })
+    .id(st('clear_boots'));
+
+    // ------------------- //
+    // -- STATECH COINS -- //
+    // ------------------- //
+
     let common = 'kubejs:coin_common';
     let rare = 'kubejs:coin_rare';
     let legendary = 'kubejs:coin_legendary';
@@ -269,4 +317,12 @@ ServerEvents.tags('item', e => {
         'kubejs:coin_mythic'
     ];
     COINS.forEach(id => e.add('kubejs:statech_coins', id));
+
+    const CLEAR_ARMOR = [
+        'kubejs:clear_helmet',
+        'kubejs:clear_chestplate',
+        'kubejs:clear_leggings',
+        'kubejs:clear_boots'
+    ];
+    CLEAR_ARMOR.forEach(id => e.add('kubejs:clear_armor', id));
 })
