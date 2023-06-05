@@ -1158,6 +1158,37 @@
 			x: 7.5d
 			y: 4.0d
 		}
+		{
+			description: ["Want to &eshow off&r your skin rather than whatever armor you're currently wearing? You can create the &aClear Armor&r and put in the &3cosmetic armor slots&r to hide the armor you're wearing!"]
+			id: "3DFC107C97761ECB"
+			rewards: [{
+				id: "46BE203C71ABEE13"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "22EA67498B745150"
+					item: "kubejs:clear_ingot"
+					type: "item"
+				}
+				{
+					id: "04C5F0F18E9A3540"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:clear_armor"
+						}
+					}
+					title: "Any Clear Armor"
+					type: "item"
+				}
+			]
+			title: "Clear Armor"
+			x: 10.5d
+			y: 5.5d
+		}
 	]
 	subtitle: ["Small, but important additions"]
 	title: "&eUtilities"
