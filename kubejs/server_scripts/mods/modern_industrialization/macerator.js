@@ -337,4 +337,16 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('gold_dust'), probability: 0.5 }
         ]
     );
+
+    // -- IRON DUST FROM CRIMSITE -- //
+    macerator(
+        st('iron_dust_from_crimsite'),
+        2,
+        200,
+        [ { amount: 1, item: crate('crimsite') } ],
+        [
+            { amount: 1, item: mi('iron_dust') },
+            { amount: 1, item: mi('iron_dust'), probability: 0.5 }
+        ]
+    );
 });
