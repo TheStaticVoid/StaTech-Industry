@@ -5,7 +5,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let sp = (id) => `spectrum:${id}`;
 
-    e.smelting('kubejs:clear_ingot', 'minecraft:glass', 0.2);
+    e.smelting('kubejs:clear_ingot', 'minecraft:glass', 0.2).id(st('clear_ingot_from_glass'));
     
     // -- CLEAR HELMET -- //
     e.shaped('kubejs:clear_helmet', [
