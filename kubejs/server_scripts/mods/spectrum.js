@@ -131,7 +131,7 @@ ServerEvents.tags('item', e => {
     ];
     CREST_BLOCKS.forEach(id => { e.add('kubejs:polished_crest_blocks', id) } );
 
-    const GEMSTONE_RUNES = [
+    const GEMSTONE_CHISELED_BLOCKS = [
         sp('topaz_chiseled_basalt'),
         sp('topaz_chiseled_calcite'),
         sp('amethyst_chiseled_basalt'),
@@ -141,7 +141,7 @@ ServerEvents.tags('item', e => {
         sp('onyx_chiseled_basalt'),
         sp('onyx_chiseled_calcite')
     ];
-    GEMSTONE_RUNES.forEach(id => { e.add('kubejs:gemstone_runes', id) } );
+    GEMSTONE_CHISELED_BLOCKS.forEach(id => { e.add('kubejs:gemstone_chiseled_blocks', id) } );
 
     const GEMSTONE_CHIMES = [
         sp('topaz_chime'),
@@ -171,6 +171,7 @@ ServerEvents.tags('item', e => {
 ServerEvents.recipes(e => {
     let sp = (id) => `spectrum:${id}`;
     let st = (id) => `statech:spectrum/${id}`;
+
     e.custom({
         id: st('magic_diamond'),
         type: sp('pedestal'),
