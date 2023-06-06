@@ -743,4 +743,4 @@ ServerEvents.tags('item', e=> {
 
     // -- REMOVE ENDER DUST -- //
     e.removeAllTagsFrom('ae2:ender_dust');
-});
+})

@@ -2084,18 +2084,11 @@
 				}
 			]
 			shape: "square"
-			tasks: [
-				{
-					id: "016FB33909975584"
-					item: "create:empty_blaze_burner"
-					type: "item"
-				}
-				{
-					id: "64436485AEC26D59"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "64436485AEC26D59"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
 			title: "Blaze Burners"
 			x: -11.0d
 			y: -2.0d

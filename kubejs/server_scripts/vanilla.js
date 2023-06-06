@@ -168,4 +168,6 @@ ServerEvents.tags('item', e => {
         mc('diamond_horse_armor')
     ];
     HORSE_ARMORS.forEach(id => { e.add('kubejs:horse_armors', id) } );
+
+    e.remove('c:copper_blocks', mc('cut_copper'));
 });

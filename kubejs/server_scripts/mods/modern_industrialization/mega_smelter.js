@@ -52,7 +52,8 @@ ServerEvents.recipes(e => {
         'modern_industrialization:iridium_ore',
         'c:sheldonite_ores',
         'simplyswords:uniques',
-        'c:platinum_dusts'
+        'c:platinum_dusts',
+        'c:iron_blocks'
     ];
 
     // The cost of every recipe

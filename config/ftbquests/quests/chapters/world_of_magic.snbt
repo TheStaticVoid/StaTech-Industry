@@ -1901,19 +1901,6 @@
 				}
 				{
 					count: 16L
-					id: "1AE8139EE44A9B0F"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "spectrum:topaz_chiseled_base_blocks"
-						}
-					}
-					title: "Sixteen Gemstone Chiseled Blocks"
-					type: "item"
-				}
-				{
-					count: 16L
 					id: "02DB7121567D62D0"
 					item: "spectrum:polished_basalt_crest"
 					type: "item"
@@ -1942,6 +1929,19 @@
 						}
 					}
 					title: "92 Polished Blocks"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1A74776435036FFE"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:gemstone_chiseled_blocks"
+						}
+					}
+					title: "Any Sixteen Gemstone Chiseled Blocks"
 					type: "item"
 				}
 			]
