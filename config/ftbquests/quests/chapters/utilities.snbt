@@ -1189,6 +1189,28 @@
 			x: 10.5d
 			y: 5.5d
 		}
+		{
+			description: ["&eBuilding Wands&r return! They're &cslightly different&r than you might remember, press '&6y&r' to open their &aconfiguration menu&r while holding one!"]
+			id: "04D26675230550D4"
+			rewards: [{
+				id: "2DE108FBB625EEE0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3A7C9AC2EA64431B"
+				item: {
+					Count: 1b
+					id: "wands:stone_wand"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 7.0d
+		}
 	]
 	subtitle: ["Small, but important additions"]
 	title: "&eUtilities"
