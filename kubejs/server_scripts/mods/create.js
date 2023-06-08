@@ -52,6 +52,10 @@ ServerEvents.recipes(e => {
     })
     .id(st('large_cogwheel_upgrade'));
 
+    e.shapeless(cr('dough'), [ cr('wheat_flour'), 'kibe:water_wooden_bucket' ] )
+        .id(st('dough'))
+        .replaceIngredient('kibe:water_wooden_bucket', 'kibe:wooden_bucket');
+
     // -- BRONZE PLATE -- //
     e.custom({
         id: st('bronze_plate'),
