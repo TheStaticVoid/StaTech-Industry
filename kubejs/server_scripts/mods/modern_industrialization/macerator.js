@@ -349,4 +349,16 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('iron_dust'), probability: 0.5 }
         ]
     );
+
+    // -- QUARTZ DUST FROM RAW QUARTZ BLOCK -- //
+    macerator(
+        st('quartz_dust_from_quartz_block'),
+        2,
+        200,
+        [ { amount: 1, item: 'byg:raw_quartz_block' } ],
+        [
+            { amount: 1, item: mi('quartz_dust') },
+            { amount: 1, item: mi('quartz_dust'), probability: 0.5 }
+        ]
+    );
 });
