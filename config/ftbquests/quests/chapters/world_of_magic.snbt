@@ -5334,7 +5334,7 @@
 				}
 				type: "item"
 			}]
-			x: -14.5d
+			x: -15.0d
 			y: 4.5d
 		}
 		{
@@ -5406,43 +5406,7 @@
 				}
 				type: "item"
 			}]
-			x: -13.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["33981AF71D789EF7"]
-			description: ["The &eBedrock Crossbow&r comes &dpre-enchanted&r with &2Quick Charge IV&r."]
-			hide: true
-			id: "78BBEEAAD334EC20"
-			rewards: [
-				{
-					count: 2
-					id: "0DD70C119F52EA5F"
-					item: "spectrum:bedrock_dust"
-					type: "item"
-				}
-				{
-					id: "0253FCF6379C5D5E"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "1B3533E57B72C421"
-				item: {
-					Count: 1b
-					id: "spectrum:bedrock_crossbow"
-					tag: {
-						Enchantments: [{
-							id: "minecraft:quick_charge"
-							lvl: 4s
-						}]
-					}
-				}
-				type: "item"
-			}]
-			x: -12.5d
+			x: -14.0d
 			y: 4.5d
 		}
 		{
@@ -5479,7 +5443,7 @@
 				type: "item"
 			}]
 			x: -13.0d
-			y: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["33981AF71D789EF7"]
@@ -5514,8 +5478,8 @@
 				}
 				type: "item"
 			}]
-			x: -14.0d
-			y: 5.5d
+			x: -12.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7014D92425B9A412"]
