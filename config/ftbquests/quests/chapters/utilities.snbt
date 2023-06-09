@@ -1211,6 +1211,34 @@
 			x: 10.5d
 			y: 7.0d
 		}
+		{
+			description: [
+				"&aCalculators &rare a key to success. With the &dCrafting Calculator&r you can determine how many raw resources a recipe will cost, and how much materials you will need to craft the items in bulk. There is a bit of a &3learning curve&r to the calculator, but it has some helpful tips in it's own UI."
+				""
+				"The &2Math Calculator&r works as a general calculator for addition, subtraction, etc."
+			]
+			id: "3F032D56CC791DF2"
+			rewards: [{
+				id: "1C6D181BEB46F151"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "13C35A17FA8973D1"
+					item: "jecalculation:item_calculator_craft"
+					type: "item"
+				}
+				{
+					id: "7A6BCDA6A1B65929"
+					item: "jecalculation:item_calculator_math"
+					type: "item"
+				}
+			]
+			title: "Calculators"
+			x: 10.5d
+			y: 8.5d
+		}
 	]
 	subtitle: ["Small, but important additions"]
 	title: "&eUtilities"
