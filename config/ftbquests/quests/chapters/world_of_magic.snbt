@@ -1902,7 +1902,14 @@
 				{
 					count: 16L
 					id: "02DB7121567D62D0"
-					item: "spectrum:polished_basalt_crest"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:polished_crest_blocks"
+						}
+					}
+					title: "16 Polished Crest Blocks"
 					type: "item"
 				}
 				{
