@@ -5,26 +5,26 @@
 	rewards: [
 		{ count: 4, item: "modern_industrialization:analog_circuit" }
 		{ count: 2, item: "modern_industrialization:basic_machine_hull" }
-		{ count: 48, item: "modern_industrialization:steel_ingot" }
+		{ count: 16, item: "modern_industrialization:steel_ingot" }
 		{ count: 3, item: "techreborn:lamp_incandescent" }
 		{ count: 5, item: "techreborn:lamp_led" }
-		{ count: 32, item: "modern_industrialization:copper_cable" }
-		{ count: 48, item: "modern_industrialization:fluid_pipe" }
-		{ count: 32, item: "modern_industrialization:item_pipe" }
+		{ count: 16, item: "modern_industrialization:copper_cable" }
+		{ count: 16, item: "modern_industrialization:fluid_pipe" }
+		{ count: 16, item: "modern_industrialization:item_pipe" }
 		{ item: "techreborn:red_cell_battery" }
 		{ count: 4, item: "modern_industrialization:silicon_battery" }
-		{ count: 16, item: "techreborn:refined_iron_ingot" }
-		{ count: 16, item: "modern_industrialization:electrum_ingot" }
-		{ count: 16, item: "modern_industrialization:invar_ingot" }
-		{ count: 64, item: "minecraft:copper_ingot" }
+		{ count: 8, item: "techreborn:refined_iron_ingot" }
+		{ count: 8, item: "modern_industrialization:electrum_ingot" }
+		{ count: 8, item: "modern_industrialization:invar_ingot" }
+		{ count: 32, item: "minecraft:copper_ingot" }
 		{ count: 3, item: "techreborn:crude_unit_upgrader" }
 		{ count: 2, item: "techreborn:basic_storage_unit" }
 		{ item: "techreborn:alarm" }
 		{ count: 18, item: "techreborn:calcite_dust" }
-		{ count: 16, item: "modern_industrialization:cupronickel_ingot" }
+		{ count: 8, item: "modern_industrialization:cupronickel_ingot" }
 		{ item: "modern_industrialization:steel_water_pump" }
-		{ count: 32, item: "modern_industrialization:rubber_sheet" }
-		{ count: 48, item: "minecraft:redstone" }
+		{ count: 16, item: "modern_industrialization:rubber_sheet" }
+		{ count: 32, item: "minecraft:redstone" }
 		{ item: "modern_industrialization:lv_steam_turbine" }
 		{ item: "modern_industrialization:starter_diesel_generator" }
 		{ item: "techreborn:basic_solar_panel" }
@@ -32,11 +32,10 @@
 		{ item: "techreborn:wind_mill" }
 		{ count: 32, item: "quarrymod:drill_tube" }
 		{ count: 16, item: "techreborn:magnesium_dust" }
-		{ count: 48, item: "modern_industrialization:coke_dust" }
+		{ count: 32, item: "modern_industrialization:coke_dust" }
 		{ item: "modern_industrialization:electric_water_pump" }
-		{ count: 32, item: "modern_industrialization:tin_cable" }
-		{ count: 48, item: "modern_industrialization:bauxite_dust" }
-		{ count: 8, item: "libraryferret:fake_iron_block" }
+		{ count: 16, item: "modern_industrialization:tin_cable" }
+		{ count: 32, item: "modern_industrialization:bauxite_dust" }
 		{ count: 12, item: "modern_industrialization:silicon_dust" }
 		{ item: "modern_industrialization:lv_storage_unit" }
 		{ item: "modern_industrialization:electric_compressor" }
@@ -49,14 +48,14 @@
 		{ item: "modern_industrialization:electric_unpacker" }
 		{ item: "techreborn:electric_treetap" }
 		{ item: "modern_industrialization:steam_quarry" }
-		{ count: 16, item: "modern_industrialization:steel_machine_casing" }
-		{ count: 8, item: "modern_industrialization:steel_machine_casing_pipe" }
+		{ count: 6, item: "modern_industrialization:steel_machine_casing" }
+		{ count: 12, item: "modern_industrialization:steel_machine_casing_pipe" }
 		{ item: "inmis:frayed_backpack" }
 		{ item: "inmis:plated_backpack" }
 		{ item: "inmis:gilded_backpack" }
 		{ item: "modern_industrialization:assembler" }
 		{ item: "techreborn:auto_crafting_table" }
-		{ count: 4, item: "modern_industrialization:heatproof_machine_casing" }
+		{ count: 3, item: "modern_industrialization:heatproof_machine_casing" }
 		{ item: "techreborn:extractor" }
 		{ item: "kibe:dehumidifier" }
 		{ item: "kibe:heater" }
@@ -126,20 +125,20 @@
 		}
 		{ count: 16, item: "modern_industrialization:silver_ingot" }
 		{ count: 64, item: "minecraft:clay" }
-		{ count: 12, item: "modern_industrialization:aluminum_ingot" }
-		{ count: 32, item: "modern_industrialization:resistor" }
-		{ count: 32, item: "modern_industrialization:capacitor" }
-		{ count: 32, item: "modern_industrialization:inductor" }
-		{ count: 16, item: "modern_industrialization:redstone_battery" }
-		{ count: 32, item: "modern_industrialization:analog_circuit_board" }
+		{ count: 8, item: "modern_industrialization:aluminum_ingot" }
+		{ count: 16, item: "modern_industrialization:resistor" }
+		{ count: 16, item: "modern_industrialization:capacitor" }
+		{ count: 16, item: "modern_industrialization:inductor" }
+		{ count: 8, item: "modern_industrialization:redstone_battery" }
+		{ count: 16, item: "modern_industrialization:analog_circuit_board" }
 		{ count: 32, item: "minecraft:quartz" }
-		{ count: 64, item: "minecraft:coal_block" }
-		{ count: 16, item: "modern_industrialization:bronze_drill" }
-		{ count: 16, item: "modern_industrialization:copper_drill" }
-		{ count: 4, item: "modern_industrialization:motor" }
-		{ count: 4, item: "modern_industrialization:pump" }
-		{ count: 3, item: "modern_industrialization:robot_arm" }
-		{ count: 48, item: "modern_industrialization:bronze_ingot" }
+		{ count: 32, item: "minecraft:coal_block" }
+		{ count: 8, item: "modern_industrialization:bronze_drill" }
+		{ count: 8, item: "modern_industrialization:copper_drill" }
+		{ count: 2, item: "modern_industrialization:motor" }
+		{ count: 2, item: "modern_industrialization:pump" }
+		{ count: 1, item: "modern_industrialization:robot_arm" }
+		{ count: 32, item: "modern_industrialization:bronze_ingot" }
 	]
 	title: "Chapter 3 Common Rewards"
 	use_title: true
