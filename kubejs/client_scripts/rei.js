@@ -7,6 +7,8 @@ REIEvents.hide('item', e => {
     let tf = (id) => `twilightforest:${id}`;
     let cr = (id) => `create:${id}`;
     let ca = (id) => `createaddition:${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
+    let md = (id) => `moderndynamics:${id}`;
 
 
     const REI_DELETED_ITEMS = [
@@ -57,7 +59,8 @@ REIEvents.hide('item', e => {
         kibe('xp_drain'),
         kibe('angel_ring'),
         'kubejs:statech_logo',
-        'modern_industrialization:guidebook',
+        md('wrench'),
+        mi('guidebook'),
         'spirit:soul_pedestal',
         tf('uncrafting_table'),
         tr('nichrome_heating_coil'),

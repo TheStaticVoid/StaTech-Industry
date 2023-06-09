@@ -476,7 +476,7 @@
 			}]
 			title: "Fluid Pipe Speed"
 			x: 9.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["343C68866C58ADC3"]
@@ -1051,7 +1051,13 @@
 					type: "random"
 				}
 				{
-					id: "2D6F495AA7C34760"
+					count: 5
+					id: "3C34328751F7C705"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "66CE9D2C1637EAD4"
 					type: "xp"
 					xp: 10
 				}
@@ -1120,7 +1126,7 @@
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: 17.5d
+			x: 20.0d
 			y: 13.0d
 		}
 		{
@@ -1390,7 +1396,7 @@
 				}
 			]
 			title: "Steam Quarry"
-			x: 20.0d
+			x: 22.5d
 			y: 13.0d
 		}
 		{
@@ -1427,7 +1433,7 @@
 				item: "modern_industrialization:bronze_drill"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 24.5d
 			y: 12.0d
 		}
 		{
@@ -1464,7 +1470,7 @@
 				item: "modern_industrialization:copper_drill"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 24.5d
 			y: 14.0d
 		}
 		{
@@ -3759,7 +3765,7 @@
 				item: "modern_industrialization:zinc_drill"
 				type: "item"
 			}]
-			x: 22.0d
+			x: 24.5d
 			y: 13.0d
 		}
 		{
@@ -4002,6 +4008,189 @@
 			}]
 			x: -6.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["396573B9EAE57B42"]
+			description: [
+				"Prefer a more &6Thermal Dynamics&r style for your pipes? Unlike &eMI&r pipes, these &cdo not transfer fluids instantly&r, however their price makes them useful when you need a &dcheap solution to moving a fluid&r."
+				""
+				"&6Pipes&r won't move fluids unless you have an &battachment&r to the pipe or a machine is &3auto ejecting&r into it. "
+				""
+				"They can be interacted with using the &eModern Industrialization&r &6Wrench&r."
+			]
+			id: "375EC7F95730956F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "031337546885016E"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "11C94727004EB6D5"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "300CC2C2C7580B3F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2A046B7DF24E06D7"
+				item: "moderndynamics:fluid_pipe"
+				type: "item"
+			}]
+			title: "Modern Dynamics Fluid Pipes"
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["375EC7F95730956F"]
+			description: [
+				"&eAttachments&r can be right-clicked on &3pipe connections&r to configure the IO of the pipes."
+				""
+				"&6Extractor&r: Will extract from adjacent inventores"
+				""
+				"&3Attractor&r: Will allow the pipe to pull from connected inventories. Applying this on a pipe will increase the flow rate of the pipe. "
+				""
+				"&2Filter&r: Allows for configuration for the connected inventory."
+			]
+			id: "06BFE5F7FC4B384B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "597BC2DED4F9F241"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "68DFBFA7A9096F4F"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "12A4077F4EF2CC38"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "5B05BB0C862703D5"
+					item: "moderndynamics:extractor"
+					type: "item"
+				}
+				{
+					id: "2BD7BB54C1A7A99A"
+					item: "moderndynamics:filter"
+					type: "item"
+				}
+				{
+					id: "659416DC62FB441E"
+					item: "moderndynamics:attractor"
+					type: "item"
+				}
+			]
+			title: "Modern Dynamics Attachments"
+			x: 9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4D4B76A0251E4A45"]
+			description: [
+				"Similar to the &eFluid Pipe&r you unlocked earlier, the &aItem Pipe&r from &6Modern Dynamics&r allows for a more classic style of item transfer. "
+				""
+				"Items are &cnot transferred instantaneously&r and can be seen flowing from connections. The &3attachments&r for the &eFluid Pipe&r also work with the &aItem Pipe&r and will be needed to actually extract things. By default, items will path towards the &dnearest inventory&r in the pipe."
+			]
+			id: "2B364DC6ECC4FCF5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7BF0783CBE4C9D61"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					id: "02BE7F48CCE4A1C3"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "4B7179DE4D0BEABE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "75D1BB8DE2A46275"
+				item: "moderndynamics:item_pipe"
+				type: "item"
+			}]
+			title: "Modern Dynamics Item Pipe"
+			x: 20.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["2B364DC6ECC4FCF5"]
+			description: ["&aItem Pipes&r build a path to their connections based on the distance between them. Using an &6Inhibitor&r will increase the path distance calculation for that attachment by &31000&r. Great for making a connection that will be &cavoided&r."]
+			id: "1E4C654BFB863E9A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "37A862BEE3E365BB"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					id: "7B5E659182129049"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "18AAB9805CDAF793"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "3E8F2166382B09D5"
+				item: "moderndynamics:inhibitor"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["2B364DC6ECC4FCF5"]
+			description: ["If you plan to use &eModern Dynamic&r pipes with your &6Modern Industrialization&r machines, you will quickly notice you &crun out of faces&r to plug the pipes into. Luckily, the &2Machine Extender&r has your back. To explain it simply, it &dextends the connection&r to the machine into itself, allowing you to &bconnect pipes to it that will count as a connection to the machine&r."]
+			id: "0C1E8997E5C0BD36"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5F5D379F0418672B"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					id: "5061961964FDF21E"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2095F468F70F49EE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "04AB650F4027E4FD"
+				item: "moderndynamics:machine_extender"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 16.0d
 		}
 	]
 	subtitle: ["The Basis of Industry"]
