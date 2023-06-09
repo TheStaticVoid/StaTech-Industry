@@ -2654,6 +2654,83 @@
 			x: -9.0d
 			y: -6.5d
 		}
+		{
+			dependencies: ["08C156EC82878D36"]
+			description: [
+				"The &bDiamond Grit Sandpaper&r is an upgrade to regular &eSandpaper&r that has &3significantly more durability&r. No more having to craft new ones all the time!"
+				""
+				"Great for use in &6Deployers&r."
+			]
+			id: "6432582C92C412A0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "02B2CC326F08D8CD"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "79A686713874C8A0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "39AC3B4E683D0BBC"
+				item: {
+					Count: 1b
+					id: "createaddition:diamond_grit_sandpaper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["03B0AC7D643C8EC2"]
+			description: [
+				"The &eStraw&r is made by sending &aBamboo&r through a &eModern Industrialization&r &6Cutting Machine&r. &cIf you don't have that yet, you can come back to this later&r. "
+				""
+				"The &eStraw&r when applied to a &cBlaze Burner&r will convert the &cBlaze&r into a &3Liquid Blaze Burner&r. This is similar to a regular &cBlaze Burner&r, but it &2consumes liquids&r instead of solid fuels now! Liquids can be &bdirectly piped&r into the &3Liquid Blaze Burner&r for it to consume."
+				""
+				"Certain fluids from &eModern Industrialization&r can be used as fuel for your burner. There are &6three distinct duration tiers&r for the fluids, with &bbetter fluids meaning longer burn times&r."
+				""
+				"&e4 Minutes&r:"
+				"- Creosote"
+				""
+				"~&610 1/2 Minutes&r:"
+				"- Lava"
+				"- Crude Oil"
+				""
+				"~&c16 1/2 Minutes&r:"
+				"- Diesel"
+				"- Biodiesel"
+			]
+			id: "600556FC2B67BDDE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6AFC1F8EA4AAA91B"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "1D4EE193069D992E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "70C24D686BB1851A"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -0.5d
+		}
 	]
 	subtitle: ["Do as you will"]
 	title: "&3Create"

@@ -97,6 +97,24 @@ ServerEvents.recipes(e => {
     .id(st('alternator'));
 });
 
-ServerEvents.tags('item', e => {
+ServerEvents.tags('fluid', e => {
+    let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    let ca = (id) => `createaddition:${id}`;
+    const BURNABLE_FUEL_4800 = [
+        mi('creosote')
+    ];
+    BURNABLE_FUEL_4800.forEach(id => { e.add(ca('burnable_fuel_4800'), id) });
 
+    const BURNABLE_FUEL_12800 = [
+        mc('lava'),
+        mi('crude_oil')
+    ];
+    BURNABLE_FUEL_12800.forEach(id => { e.add(ca('burnable_fuel_12800'), id) });
+
+    const BURNABLE_FUEL_20000 = [
+        mi('diesel'),
+        mi('biodiesel'),
+    ];
+    BURNABLE_FUEL_20000.forEach(id => { e.add(ca('burnable_fuel_20000'), id) });
 });
