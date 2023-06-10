@@ -6941,6 +6941,93 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["2563B78CFC661CCB"]
+			description: [
+				"The &aSummon Tool&r is an item that will allow you to &dconjure&r up a temporary tool to aid you in your adventure."
+				""
+				"You can cycle through which tool will be &5summoned&r by shift-right clicking with the item in your hand. Hold right-click to &5summon&r, you will need at least &aone full level of experience&r to &5summon&r the tool."
+				""
+				"These tools come &denchanted&r with relevant abilities, such as &2Looting&r for swords and &3Fortune&r for pickaxes. The &5Summoned Bow&r fires &eSpectral Arrows&r."
+				""
+				"You can return the tool back to the summoning item by placing it in your crafting grid"
+			]
+			hide: true
+			id: "6974DE5FED1DE22D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4DD8B87A085FA51A"
+					table_id: 5901057256958333207L
+					type: "random"
+				}
+				{
+					id: "7AEAF213FEBAD4D7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "0BC3CD4A2A95594A"
+				item: "boundweapons:summon_spell_basic_item"
+				type: "item"
+			}]
+			title: "Bound Tools"
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["279B9340FED331B8"]
+			description: ["This upgrade to the &aSummon Tool&r will allow for more powerful tools to be &5summoned&r. They have their existing &denchants&r improved from the previous tier, however &5summoning&r now will require &atwo full levels of experience&r."]
+			hide: true
+			id: "3F20975321221E3F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7DFE6731F2D9455F"
+					table_id: 6970548649776480151L
+					type: "random"
+				}
+				{
+					id: "5218D0B60EF4A464"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6C79E8DD3D928245"
+				item: "boundweapons:summon_spell_advanced_item"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["6D24FBE1A1BB0488"]
+			description: ["The &aSummon Tool +2&r marks the final tier of the &aSummon Tools&r. With this, you can &5summon&r some pretty powerful &denchanted&r items when you need them, however you now need &athree levels of experience&r to do so."]
+			hide: true
+			id: "6E6C4ACE6D973311"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7394749909337AB8"
+					table_id: 6970548649776480151L
+					type: "random"
+				}
+				{
+					id: "6B7691F35DAF3C3D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6FC5CBE993AEC141"
+				item: "boundweapons:summon_spell_epic_item"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.5d
+		}
+		{
 			dependencies: ["36F19B05F3EF16DD"]
 			description: ["The &aMolten Rod&r is a &bFishing Rod&r tough enough to withstand the &cheat of lava&r. Results may vary...."]
 			hide: true

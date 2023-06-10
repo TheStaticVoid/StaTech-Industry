@@ -88,4 +88,46 @@ ServerEvents.recipes(e => {
         ],
         finish_crafting_effect: 'lightning_on_shrine'
     });
+
+    // -- RETURN SUMMON TOOL -- //
+    e.shapeless(bw('summon_spell_basic_item'), [ bw('bound_sword_basic_item') ])
+        .id(st('basic_spell_from_sword'));
+    e.shapeless(bw('summon_spell_basic_item'), [ bw('bound_axe_basic_item') ])
+        .id(st('basic_spell_from_axe'));
+    e.shapeless(bw('summon_spell_basic_item'), [ bw('bound_bow_basic_item') ])
+        .id(st('basic_spell_from_bow'));
+    e.shapeless(bw('summon_spell_basic_item'), [ bw('bound_hoe_basic_item') ])
+        .id(st('basic_spell_from_hoe'));
+    e.shapeless(bw('summon_spell_basic_item'), [ bw('bound_shovel_basic_item') ])
+        .id(st('basic_spell_from_shovel'));
+    e.shapeless(bw('summon_spell_basic_item'), [ bw('bound_pickaxe_basic_item') ])
+        .id(st('basic_spell_from_pickaxe'));
+
+    // -- RETURN SUMMON TOOL + 1 -- //
+    e.shapeless(bw('summon_spell_advanced_item'), [ bw('bound_sword_advanced_item') ])
+        .id(st('advanced_spell_from_sword'));
+    e.shapeless(bw('summon_spell_advanced_item'), [ bw('bound_axe_advanced_item') ])
+        .id(st('advanced_spell_from_axe'));
+    e.shapeless(bw('summon_spell_advanced_item'), [ bw('bound_bow_advanced_item') ])
+        .id(st('advanced_spell_from_bow'));
+    e.shapeless(bw('summon_spell_advanced_item'), [ bw('bound_hoe_advanced_item') ])
+        .id(st('advanced_spell_from_hoe'));
+    e.shapeless(bw('summon_spell_advanced_item'), [ bw('bound_shovel_advanced_item') ])
+        .id(st('advanced_spell_from_shovel'));
+    e.shapeless(bw('summon_spell_advanced_item'), [ bw('bound_pickaxe_advanced_item') ])
+        .id(st('advanced_spell_from_pickaxe'));
+
+    // -- RETURN SUMMON TOOL + 1 -- //
+    e.shapeless(bw('summon_spell_epic_item'), [ bw('bound_sword_epic_item') ])
+        .id(st('epic_spell_from_sword'));
+    e.shapeless(bw('summon_spell_epic_item'), [ bw('bound_axe_epic_item') ])
+        .id(st('epic_spell_from_axe'));
+    e.shapeless(bw('summon_spell_epic_item'), [ bw('bound_bow_epic_item') ])
+        .id(st('epic_spell_from_bow'));
+    e.shapeless(bw('summon_spell_epic_item'), [ bw('bound_hoe_epic_item') ])
+        .id(st('epic_spell_from_hoe'));
+    e.shapeless(bw('summon_spell_epic_item'), [ bw('bound_shovel_epic_item') ])
+        .id(st('epic_spell_from_shovel'));
+    e.shapeless(bw('summon_spell_epic_item'), [ bw('bound_pickaxe_epic_item') ])
+        .id(st('epic_spell_from_pickaxe'));
 });
