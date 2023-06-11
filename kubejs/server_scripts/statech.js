@@ -306,7 +306,7 @@ ServerEvents.recipes(e => {
     ],
     {
         C: mythic
-    }).id(st('soulboun_from_mythic'));
+    }).id(st('soulbound_from_mythic'));
 });
 
 ServerEvents.tags('item', e => {

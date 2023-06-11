@@ -141,4 +141,16 @@ ServerEvents.recipes(e => {
         G: '#c:glass_blocks'
     })
     .id(st('fluid_tank'));
+
+    // -- SPRINKLER FROM SLICE AND DICE -- //
+    e.shaped('sliceanddice:sprinkler', [
+        'SPS',
+        'SBS'
+    ], 
+    {
+        S: '#c:copper_plates',
+        P: cr('fluid_pipe'),
+        B: 'minecraft:iron_bars'
+    })
+    .id(st('sprinkler'));
 });
