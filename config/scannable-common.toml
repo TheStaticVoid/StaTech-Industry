@@ -33,7 +33,7 @@
 [general]
 	#How long the results from a scan should remain visible, in milliseconds.
 	#Range: 1000 ~ 300000
-	scanStayDuration = 10000
+	scanStayDuration = 30000
 	#The basic scan radius without range modules. Higher values mean more computational
 	#overhead and thus potentially worse performance while scanning.
 	#IMPORTANT: some modules such as the block and ore scanner modules will already use
