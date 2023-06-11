@@ -14,5 +14,5 @@ WorldgenEvents.remove(e => {
     ];
     e.removeOres(ores => {
         ores.blocks = ORES_TO_REMOVE;
-    })
-})
+    });
+});

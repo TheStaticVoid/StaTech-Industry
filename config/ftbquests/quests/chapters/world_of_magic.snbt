@@ -505,7 +505,7 @@
 				item: "spectrum:redstone_timer"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 12.0d
 			y: -2.0d
 		}
 		{
@@ -535,7 +535,7 @@
 				item: "blockus:redstone_sand"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 11.0d
 			y: -2.0d
 		}
 		{
@@ -1902,7 +1902,14 @@
 				{
 					count: 16L
 					id: "02DB7121567D62D0"
-					item: "spectrum:polished_basalt_crest"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:polished_crest_blocks"
+						}
+					}
+					title: "16 Polished Crest Blocks"
 					type: "item"
 				}
 				{
@@ -2162,7 +2169,7 @@
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "kubejs:gemstone_runes"
+						value: "kubejs:gemstone_chiseled_blocks"
 					}
 				}
 				title: "Any Gemstone Rune"
@@ -2476,6 +2483,8 @@
 				"Unfortunately, the inclusion of &eTerralith&r causes world generation to not generate a lot of the specific materials needed to progress here. "
 				""
 				"As an &aalternative method&r of obtaining the next material, I offer you a simple trade. A &bstack of sugarcane&r, &dhalf stack of ink sacs&r, and lots of &7clay&r, and I'll reward you with what you desire."
+				""
+				"If you &cmess up and lose this piece&r, &edon't worry&r, you can &3craft more&r using &dStaTech Coins&r."
 			]
 			hide: true
 			hide_dependency_lines: true
@@ -3508,7 +3517,7 @@
 				""
 				"&5Neolith&r is the key! Yes, it is must be! If you combine all the gems you have collected so far with it, something must be created that holds &eincredible power&r. Alone for you and ONLY for you, master of &dpigment&r!"
 				""
-				"Fusing those &dmagical energies&r must result in an incredible source of power - with a display to match. Best to make sure your &aShrine&r and everything around it is fortified. &o&lI'm not kidding, make sure nothing important is near your &aShrine&f, expect a &ccleanup&r."
+				"Fusing those &dmagical energies&r must result in an incredible source of power - with a display to match. Best to make sure your &aShrine&r and everything around it is fortified. &o&lI'm not kidding, make sure nothing important is near your &aShrine&f, expect a &ccleanup&r. You can use &3Polished Calcite&r / &ePolished Basalt&r to protect the area."
 				""
 				"&cRequires daytime and a clear sky&r."
 			]
@@ -4044,10 +4053,10 @@
 						Count: 1b
 						id: "itemfilters:tag"
 						tag: {
-							value: "kubejs:gemstone_runes"
+							value: "kubejs:gemstone_chiseled_blocks"
 						}
 					}
-					title: "2x Onyx Chiseled Blocks"
+					title: "2x Gemstone Chiseled Blocks"
 					type: "item"
 				}
 				{
@@ -4798,7 +4807,7 @@
 				""
 				"With a bit of application of blue pigment, all items in a large radius around the crate can easily be brought to safety."
 				""
-				"&aBlack Hole Chests&r have a radius of 12 blocks. You can disable t hem by placing a block on top. It offers &efilters&r to specify which items it should accept&r."
+				"&aBlack Hole Chests&r have a radius of 12 blocks. You can disable them by placing a block on top. It offers &efilters&r to specify which items it should accept&r."
 			]
 			hide: true
 			id: "045A4D9B10FD6495"
@@ -5325,7 +5334,7 @@
 				}
 				type: "item"
 			}]
-			x: -14.5d
+			x: -15.0d
 			y: 4.5d
 		}
 		{
@@ -5397,43 +5406,7 @@
 				}
 				type: "item"
 			}]
-			x: -13.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["33981AF71D789EF7"]
-			description: ["The &eBedrock Crossbow&r comes &dpre-enchanted&r with &2Quick Charge IV&r."]
-			hide: true
-			id: "78BBEEAAD334EC20"
-			rewards: [
-				{
-					count: 2
-					id: "0DD70C119F52EA5F"
-					item: "spectrum:bedrock_dust"
-					type: "item"
-				}
-				{
-					id: "0253FCF6379C5D5E"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "1B3533E57B72C421"
-				item: {
-					Count: 1b
-					id: "spectrum:bedrock_crossbow"
-					tag: {
-						Enchantments: [{
-							id: "minecraft:quick_charge"
-							lvl: 4s
-						}]
-					}
-				}
-				type: "item"
-			}]
-			x: -12.5d
+			x: -14.0d
 			y: 4.5d
 		}
 		{
@@ -5470,7 +5443,7 @@
 				type: "item"
 			}]
 			x: -13.0d
-			y: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["33981AF71D789EF7"]
@@ -5505,8 +5478,8 @@
 				}
 				type: "item"
 			}]
-			x: -14.0d
-			y: 5.5d
+			x: -12.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7014D92425B9A412"]
@@ -5747,7 +5720,7 @@
 						Count: 1b
 						id: "itemfilters:tag"
 						tag: {
-							value: "kubejs:gemstone_runes"
+							value: "kubejs:gemstone_chiseled_blocks"
 						}
 					}
 					title: "2x Chiseled Blocks"
@@ -6187,8 +6160,8 @@
 				item: "runes:crafting_altar"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -1.0d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2563B78CFC661CCB"]
@@ -6217,7 +6190,7 @@
 				item: "spell_engine:spell_binding"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -6393,8 +6366,8 @@
 				}
 			]
 			title: "Magical Robes"
-			x: 15.0d
-			y: -0.5d
+			x: 14.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["279B9340FED331B8"]
@@ -6461,8 +6434,8 @@
 				}
 			]
 			title: "Arcane Robes"
-			x: 19.0d
-			y: 9.5d
+			x: 18.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["279B9340FED331B8"]
@@ -6529,8 +6502,8 @@
 				}
 			]
 			title: "Fire Robes"
-			x: 19.0d
-			y: 10.5d
+			x: 18.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["279B9340FED331B8"]
@@ -6597,8 +6570,8 @@
 				}
 			]
 			title: "Frost Robes"
-			x: 19.0d
-			y: 11.5d
+			x: 19.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["79D0A62E07C283FF"]
@@ -6820,7 +6793,7 @@
 			description: [
 				"With the power of the &eMidnight Chip&r you can finally upgrade your &abasic Spellblades&r into the more powerful &dRunic Claymores&r. "
 				""
-				"These &etwo-handed&r weapons deal &2100% of your corresponding spell attribute&r as &cextra damage&r of that type with melee attacks. The &dspells&r that can be bound using the &eSpell Binding Table&r are similar to that of the &bSpellblades&r, but with &3larger area of effect and projectiles&r."
+				"These &etwo-handed&r weapons deal &2100% of your corresponding spell attribute&r as &cextra damage&r of that type with melee attacks. These blades &cdo not have their own spells&r added with the &eSpell Binding Table&r, but rather &3use the spells from whatever Tome you have equipped&r."
 				""
 				"Each one comes with a &espin attack of their respective element&r."
 			]
@@ -6935,7 +6908,11 @@
 		}
 		{
 			dependencies: ["3D298F4F967B58C9"]
-			description: ["&aRunic Orbs&r deal no extra &cmelee&r damage, and have &dspells&r that don't &edeal a whole lot of damage&r, however the &dspells&r that are available have &2incredible area of effect and versatility&r."]
+			description: [
+				"&aRunic Orbs&r deal no extra &cmelee&r damage, and have &dspells&r that don't &edeal a whole lot of damage&r, however the &dspells&r that are available have &2incredible area of effect and versatility&r."
+				""
+				"The &aOrb&r inherits spell from &3Source Tomes&r made in &eSpell Binding Tables&r."
+			]
 			hide: true
 			id: "3227C8A9F947E4AD"
 			rewards: [
@@ -6975,6 +6952,8 @@
 				"You can cycle through which tool will be &5summoned&r by shift-right clicking with the item in your hand. Hold right-click to &5summon&r, you will need at least &aone full level of experience&r to &5summon&r the tool."
 				""
 				"These tools come &denchanted&r with relevant abilities, such as &2Looting&r for swords and &3Fortune&r for pickaxes. The &5Summoned Bow&r fires &eSpectral Arrows&r."
+				""
+				"You can return the tool back to the summoning item by placing it in your crafting grid"
 			]
 			hide: true
 			id: "6974DE5FED1DE22D"
@@ -6997,8 +6976,8 @@
 				type: "item"
 			}]
 			title: "Bound Tools"
-			x: 15.0d
-			y: -1.5d
+			x: 13.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["279B9340FED331B8"]
@@ -7023,8 +7002,8 @@
 				item: "boundweapons:summon_spell_advanced_item"
 				type: "item"
 			}]
-			x: 19.0d
-			y: 12.5d
+			x: 19.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6D24FBE1A1BB0488"]
@@ -7051,58 +7030,6 @@
 			}]
 			x: -1.0d
 			y: 8.5d
-		}
-		{
-			dependencies: ["2563B78CFC661CCB"]
-			description: [
-				"Find yourself having to continously &erepeat tedious tasks&r around your base? Why not employ the help of &dMage Hands&r. To make these, you will need to find &5Mage Hand Essence&r which can be obtained from &cHostile Mage Hands&r in the &cNether&r. Take &dLooting&r to increase your chance at getting some!"
-				""
-				"Each &dMage Hand&r can accomplish a different task. "
-				""
-				"&c&lCopper&r"
-				"Simple item automation. Seeks &2items on the ground&r and takes them to its &3home inventory&r. It considers its &3home&r to be where you place it. So place it on a the &echest&r you wish it to return items to."
-				""
-				"&7&lIron&r"
-				"&cPermiter defense&r. Searches for &cHostile&r entities and attacks relentlessly. &aCan be given a sword&r."
-				""
-				"&e&lGold&r"
-				"&2Crop automation&r. It will harvest &bfully grown crops&r, and replant with &3seeds from it's home chest&r. Note, it does not collect the crops it harvests, combo it with a &cCopper Mage Hand&r to collect the crops!"
-				""
-				"&b&lDiamond&r"
-				"Can find ores for you. It will &epoint towards the nearest ore&r and then drop back into item form."
-				""
-				"&d&lAmethyst&r"
-				"Complex item automation. It's similar to the &cCopper Mage Hand&r, but can have a filter applied by right-clicking for advanced item selection. "
-			]
-			hide: true
-			id: "4F9A3B211E7AAA01"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "41D44AFEF77F62A2"
-					table_id: 5901057256958333207L
-					type: "random"
-				}
-				{
-					id: "49CAA44472A5D5C4"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "0C7F7BB465EDC7B4"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "kubejs:magehands"
-					}
-				}
-				title: "Mage Hands"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 0.5d
 		}
 		{
 			dependencies: ["36F19B05F3EF16DD"]
@@ -7135,6 +7062,45 @@
 			}]
 			x: 19.5d
 			y: 7.0d
+		}
+		{
+			dependencies: ["6AFC5E814DAF426A"]
+			description: [
+				"&aWar Tomes&r are acquired by placing a book in the &eSpell Binding Table&r. Different &aWar Tomes&r have different purposes, but in general, they add &2spell abilities&r to use when you have a weapon. This means you can add some fire spells to a regular &bDiamond Sword&r if you'd like. "
+				""
+				"Once you create the &aWar Tome&r, don't forget to add spells to it in the &eSpell Binding Table&r!"
+				""
+				"Some weapons require a &eWar Tome&r to work, such as most of the weapons added by the &6Spellblades and Such&r mod."
+			]
+			id: "6D964D5F1E2D667F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1E92BD6A0131D51E"
+					table_id: 5901057256958333207L
+					type: "random"
+				}
+				{
+					id: "6E0F2E3EFAA6A1E9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "56FFF0F4FCE94B9C"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:war_tomes"
+					}
+				}
+				title: "Any War Tome"
+				type: "item"
+			}]
+			title: "War Tomes"
+			x: 17.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Is that you Merasmus?"]

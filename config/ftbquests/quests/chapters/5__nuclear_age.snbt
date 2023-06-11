@@ -1360,6 +1360,79 @@
 			x: 5.5d
 			y: 7.5d
 		}
+		{
+			dependencies: ["257CA8034EA7B1DB"]
+			id: "630513B2758CEA60"
+			tasks: [{
+				id: "348E4E1326012CC2"
+				item: "moderndynamics:ev_cable"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["569821B175311340"]
+			description: ["The &bSuperconductor Cable&r is the ultimate tier of electric cable in &eModern Industrialization&r. They can transfer a little over &31 billion EU/t&r and can only connect to Quantum tiered machines/hatches."]
+			id: "741D66D89EE0C684"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59AA12D6DBDBE013"
+					table_id: 1098950661447874341L
+					type: "random"
+				}
+				{
+					count: 25
+					id: "41C7D4A6595C2418"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "23208E75D2BCDF61"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2C34DACCB49EF8BE"
+				item: "modern_industrialization:superconductor_cable"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["741D66D89EE0C684"]
+			description: ["This is the &eModern Dynamics&r version of the &bSuperconductor Cable&r. "]
+			id: "1999BF05F0242048"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2BC4582219E30672"
+					table_id: 1098950661447874341L
+					type: "random"
+				}
+				{
+					count: 25
+					id: "5A8D9F709D5539EB"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "1044A290D84BF9CE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "71EB2982C4BAE620"
+				item: "moderndynamics:superconductor_cable"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
 	]
 	subtitle: ["Build Your Own Reactor"]
 	title: "&d5 - Nuclear Age"

@@ -511,7 +511,7 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        G: ae('quartz_block'),
+        G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         Q: '#c:certus_quartz',
         S: '#c:stainless_steel_ingots'
@@ -525,7 +525,7 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        G: ae('quartz_block'),
+        G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_1k'),
         S: '#c:stainless_steel_ingots'
@@ -539,7 +539,7 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        G: ae('quartz_block'),
+        G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_4k'),
         S: '#c:stainless_steel_ingots'
@@ -553,7 +553,7 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        G: ae('quartz_block'),
+        G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_16k'),
         S: '#c:stainless_steel_ingots'
@@ -567,7 +567,7 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        G: ae('quartz_block'),
+        G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_64k'),
         S: '#c:stainless_steel_ingots'
@@ -581,7 +581,7 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        G: ae('quartz_block'),
+        G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_256k'),
         S: '#c:stainless_steel_ingots'
@@ -595,7 +595,7 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        G: ae('quartz_block'),
+        G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('spatial_cell_component_2'),
         S: '#c:stainless_steel_ingots'
@@ -609,7 +609,7 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        G: ae('quartz_block'),
+        G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('spatial_cell_component_16'),
         S: '#c:stainless_steel_ingots'
@@ -623,7 +623,7 @@ ServerEvents.recipes(e => {
         'SSS'
     ],
     {
-        G: ae('quartz_block'),
+        G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('spatial_cell_component_128'),
         S: '#c:stainless_steel_ingots'

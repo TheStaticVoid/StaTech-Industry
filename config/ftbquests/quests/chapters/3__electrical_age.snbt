@@ -120,7 +120,11 @@
 		}
 		{
 			dependencies: ["6765B4B8D870CDA0"]
-			description: ["Now that you're generating power, it's probably best to create a &dbuffer&r. This way while you're not fully stressing your power network you're creating a backlog for when you may be using it faster than you can produce. "]
+			description: [
+				"Now that you're generating power, it's probably best to create a &dbuffer&r. This way while you're not fully stressing your power network you're creating a backlog for when you may be using it faster than you can produce. "
+				""
+				"You can &aright click&r while holding &2chargeable items&r to instantly transfer the &dpower to that item&r"
+			]
 			id: "3AD3E65C11D8C2A5"
 			rewards: [
 				{
@@ -5674,6 +5678,12 @@
 					type: "random"
 				}
 				{
+					count: 5
+					id: "578184C025178D67"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
 					id: "254A57858432C604"
 					type: "xp"
 					xp: 10
@@ -6432,6 +6442,113 @@
 			}]
 			x: 30.0d
 			y: 11.5d
+		}
+		{
+			dependencies: ["473C1DE557D3E9C0"]
+			description: [
+				"The &aAlternator&r and &3Electric Motor&r from &6Create: Crafts \\& Additions&r can be used to integrate &6Create&r into your &bpower network&r."
+				""
+				"The &aAlternator&r will consume &cstress units&r to generate power. The &dhigher RPM the more it will generate, up to 5 EU/t&r. While this might seem incredibly low, it doesn't take much to setup a decent network for power with &6Create&r."
+				""
+				"The &3Electric Motor&r is the inverse, and will allow you to power a &6Create&r &2rotational network&r with electricity produced elsewhere. The &3Electric Motor&r only costs 8 EU/t to run at 256 RPM, definitely worth the investment! The &bhigher the RPM&r you set it to, the &ehigher the total stress units available&r as well."
+			]
+			id: "48317EF53F769C1B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E898A6CF377D7C2"
+					table_id: 238949117979752405L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "48603675987B2FDD"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "388EB27DB58446C1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "690BC65423A20F5F"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					id: "336D2AC191DC8553"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+			]
+			title: "Alternator \\& Motor"
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6E7B9D7C331203C4"]
+			description: ["This is the &eModern Dynamics&r version of the &aMV-tier Cables&r."]
+			id: "7A082EC55D240856"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0C2D7E2155501004"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1A592032323A10E7"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "4787E7BB45A2D55C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "21977D5233A45F1C"
+				item: "moderndynamics:mv_cable"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["6057F77940F5356C"]
+			description: ["&eModern Dynamics&r offers a variant to the &6Modern Industrialization&r electric cables. They &coffer no benefit&r to the MI ones other than &3aesthetics&r."]
+			id: "0FFDD9890470DC4C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "431B13AD5A3961E7"
+					table_id: 238949117979752405L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "313F38A2A37EC4CC"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "662BC054857F4659"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "05DA3E1916407C56"
+				item: "moderndynamics:lv_cable"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]

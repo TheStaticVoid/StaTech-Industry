@@ -52,6 +52,10 @@ ServerEvents.recipes(e => {
     })
     .id(st('large_cogwheel_upgrade'));
 
+    e.shapeless(cr('dough'), [ cr('wheat_flour'), 'kibe:water_wooden_bucket' ] )
+        .id(st('dough'))
+        .replaceIngredient('kibe:water_wooden_bucket', 'kibe:wooden_bucket');
+
     // -- BRONZE PLATE -- //
     e.custom({
         id: st('bronze_plate'),
@@ -69,9 +73,9 @@ ServerEvents.recipes(e => {
         ]
     });
 
-    // -- BRONZE DUST -- //
+    // -- BRONZE INGOT -- //
     e.custom({
-        id: st('bronze_dust'),
+        id: st('bronze_ingot'),
         type: cr('mixing'),
         heatRequirement: 'heated',
         ingredients: [
@@ -83,6 +87,25 @@ ServerEvents.recipes(e => {
         results: [
             {
                 item: mi('bronze_ingot'),
+                count: 2
+            }
+        ]
+    });
+
+    // -- BRONZE DUST -- //
+    e.custom({
+        id: st('bronze_dust'),
+        type: cr('mixing'),
+        heatRequirement: 'none',
+        ingredients: [
+            { tag: 'c:copper_dusts' },
+            { tag: 'c:copper_dusts' },
+            { tag: 'c:copper_dusts' },
+            { tag: 'c:tin_dusts' }
+        ],
+        results: [
+            { 
+                item: mi('bronze_dust'),
                 count: 2
             }
         ]
@@ -118,4 +141,16 @@ ServerEvents.recipes(e => {
         G: '#c:glass_blocks'
     })
     .id(st('fluid_tank'));
+
+    // -- SPRINKLER FROM SLICE AND DICE -- //
+    e.shaped('sliceanddice:sprinkler', [
+        'SPS',
+        'SBS'
+    ], 
+    {
+        S: '#c:copper_plates',
+        P: cr('fluid_pipe'),
+        B: 'minecraft:iron_bars'
+    })
+    .id(st('sprinkler'));
 });

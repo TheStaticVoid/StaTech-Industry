@@ -5,6 +5,18 @@
 	group: "135E7B9D4273E5DD"
 	icon: "create:wrench"
 	id: "0B7DC5CF240DF210"
+	images: [{
+		click: "https://github.com/tweaked-programs/cccbridge/wik"
+		corner: false
+		dev: false
+		height: 0.75d
+		hover: ["CC:C Bridge Wiki"]
+		image: "computercraft:block/computer_advanced_front_blink"
+		rotation: 0.0d
+		width: 0.75d
+		x: -18.5d
+		y: -3.0d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -522,7 +534,11 @@
 		}
 		{
 			dependencies: ["51356454DB10752D"]
-			description: ["The &bMechanical Mixer&r and &aBasin&r will allow you to mix certain dusts and ingots. If you've followed normal &eChapter&r progression, you will have made this to access &eModern Industrialization&r."]
+			description: [
+				"The &bMechanical Mixer&r and &aBasin&r will allow you to mix certain dusts and ingots. If you've followed normal &eChapter&r progression, you will have made this to access &eModern Industrialization&r."
+				""
+				"As of &aStaTech Industry 1.0.3&r all &eFarmer's Delight&r recipes can be processed in a &cHeated Basin&r with a &3Mixer&r. "
+			]
 			id: "27E1D6ADECEF5F5C"
 			rewards: [
 				{
@@ -811,7 +827,7 @@
 				item: "create:clutch"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: 3.0d
 		}
 		{
@@ -1166,7 +1182,7 @@
 				item: "create:track_signal"
 				type: "item"
 			}]
-			x: -17.0d
+			x: -17.5d
 			y: -6.5d
 		}
 		{
@@ -1547,7 +1563,7 @@
 				item: "create:controls"
 				type: "item"
 			}]
-			x: -17.0d
+			x: -18.0d
 			y: -8.0d
 		}
 		{
@@ -1576,7 +1592,7 @@
 				item: "create:track_observer"
 				type: "item"
 			}]
-			x: -15.0d
+			x: -15.5d
 			y: -6.5d
 		}
 		{
@@ -1605,7 +1621,7 @@
 				item: "create:track_station"
 				type: "item"
 			}]
-			x: -16.0d
+			x: -16.5d
 			y: -6.5d
 		}
 		{
@@ -1630,7 +1646,7 @@
 				item: "create:schedule"
 				type: "item"
 			}]
-			x: -15.0d
+			x: -16.0d
 			y: -8.0d
 		}
 		{
@@ -1662,7 +1678,7 @@
 				item: "create:track"
 				type: "item"
 			}]
-			x: -11.5d
+			x: -12.0d
 			y: 2.5d
 		}
 		{
@@ -1730,7 +1746,7 @@
 				}
 			]
 			title: "Moving Fluids"
-			x: -8.0d
+			x: -9.0d
 			y: -6.5d
 		}
 		{
@@ -1959,8 +1975,8 @@
 				type: "item"
 			}]
 			title: "Crushing Wheels"
-			x: -18.0d
-			y: 2.0d
+			x: -18.5d
+			y: 1.25d
 		}
 		{
 			dependencies: ["51356454DB10752D"]
@@ -2244,8 +2260,8 @@
 				item: "create:wand_of_symmetry"
 				type: "item"
 			}]
-			x: -18.0d
-			y: -1.0d
+			x: -19.5d
+			y: 0.25d
 		}
 		{
 			dependencies: ["1A75E897313419C8"]
@@ -2279,8 +2295,8 @@
 				}
 				type: "item"
 			}]
-			x: -18.0d
-			y: 0.0d
+			x: -18.5d
+			y: 0.25d
 		}
 		{
 			dependencies: ["1A75E897313419C8"]
@@ -2311,8 +2327,8 @@
 				}
 				type: "item"
 			}]
-			x: -18.0d
-			y: 1.0d
+			x: -19.5d
+			y: 1.25d
 		}
 		{
 			dependencies: ["64A77382B60421C1"]
@@ -2425,7 +2441,7 @@
 				item: "create:white_seat"
 				type: "item"
 			}]
-			x: -16.0d
+			x: -17.0d
 			y: -8.0d
 		}
 		{
@@ -2630,7 +2646,7 @@
 				item: "create:encased_chain_drive"
 				type: "item"
 			}]
-			x: -7.0d
+			x: -7.5d
 			y: 3.0d
 		}
 		{
@@ -2651,8 +2667,411 @@
 				item: "create:item_vault"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -8.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["08C156EC82878D36"]
+			description: [
+				"The &bDiamond Grit Sandpaper&r is an upgrade to regular &eSandpaper&r that has &3significantly more durability&r. No more having to craft new ones all the time!"
+				""
+				"Great for use in &6Deployers&r."
+			]
+			id: "6432582C92C412A0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "02B2CC326F08D8CD"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "79A686713874C8A0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "39AC3B4E683D0BBC"
+				item: {
+					Count: 1b
+					id: "createaddition:diamond_grit_sandpaper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -14.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["03B0AC7D643C8EC2"]
+			description: [
+				"The &eStraw&r is made by sending &aBamboo&r through a &eModern Industrialization&r &6Cutting Machine&r. &cIf you don't have that yet, you can come back to this later&r. "
+				""
+				"The &eStraw&r when applied to a &cBlaze Burner&r will convert the &cBlaze&r into a &3Liquid Blaze Burner&r. This is similar to a regular &cBlaze Burner&r, but it &2consumes liquids&r instead of solid fuels now! Liquids can be &bdirectly piped&r into the &3Liquid Blaze Burner&r for it to consume."
+				""
+				"Certain fluids from &eModern Industrialization&r can be used as fuel for your burner. There are &6three distinct duration tiers&r for the fluids, with &bbetter fluids meaning longer burn times&r."
+				""
+				"&e4 Minutes&r:"
+				"- Creosote"
+				""
+				"~&610 1/2 Minutes&r:"
+				"- Lava"
+				"- Crude Oil"
+				""
+				"~&c16 1/2 Minutes&r:"
+				"- Diesel"
+				"- Biodiesel"
+			]
+			id: "600556FC2B67BDDE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6AFC1F8EA4AAA91B"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "1D4EE193069D992E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "70C24D686BB1851A"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			title: "Liquid Blaze Burner"
+			x: -11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4F4C5DEE88EABE32"]
+			description: ["The &eSlicer&r is an addon to &6Create&r that allows for you to automate &aFarmer's Delight&r slicing recipes. You need to equip it with a &2valid knife tool&r, similar to a &3Deployer&r. Check &dPonder&r for more info."]
+			id: "08F7F586C25B705F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4DBBE1ED3B65DAB9"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "39D2BC9D55C2C7A0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "0D32A54232273BBF"
+				item: "sliceanddice:slicer"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["15C0B7A968E7CA42"]
+			description: [
+				"The &aSprinkler&r is a block which, when provided with a &3fluid using a pipe&r, will distribute it in a small area below. &bDifferent fluids can have different effects&r."
+				""
+				"&cLava&r - Applies a small amount of fire damage to entities below"
+				"&3Water&r - Makes the area below wet, making the world think it's raining there."
+				"&dPotions&r - Apply their effect for a short duration to entities below"
+				"&2Liquid Fertilizer&r - Applies a bonemeal effect to blocks below."
+				""
+				"Please note that &2Liquid Fertilizer&r is a new fluid also added by the &6Slice and Dice&r mod. "
+			]
+			id: "76F514BB04FDDF83"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6B995B180CE12EB0"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "446A98341958C887"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "391B3808ABE1BA84"
+				item: "sliceanddice:sprinkler"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7CADC21630F6223B"]
+			description: [
+				"The &eScroller Pane&r is a peripheral that acts as a &3HID&r. When a player is looking at it, they see the current selected number &2from -15 to 15&r and can select a different number by scrolling with the mouse wheel on it, if it is not locked. It can only be attached from behind and can be placed from any angle."
+				""
+				"&3Note&r: Holding shift while scrolling will scroll in 0.1 steps!"
+			]
+			id: "6CE3513D509FDBCE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "12EAD61AB004DFB9"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "5C2EC1BBF16ED951"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "68E5E39E8B2C43AB"
+				item: "cccbridge:scroller_block"
+				type: "item"
+			}]
+			x: -20.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["38F45285404934C9"]
+			description: [
+				"The following quests are for items added by the &eCC:C Bridge&r mod. This mod aims to add compatability between &6Create&r and &2ComputerCraft&r. I'm only adding the basic information here, however you should check out the wiki for the mod for all the methods they have for the blocks."
+				""
+				"Other than these blocks, the mod also adds more functionality for &6Create&r &3Train Stations&r to be handled with &2ComputerCraft&r."
+			]
+			id: "7CADC21630F6223B"
+			rewards: [{
+				id: "252C5912C4B18A37"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3252A3818E1B4B78"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "CC:C Bridge"
+			x: -18.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7CADC21630F6223B"]
+			description: [
+				"The &eSource Block&r acts a source of data for the &6Display Link&r. It transfers the stats of the display (i.e. the size) to the &eSource Block&r, which in turn transfers the cached content to the display. Data is only exchanged when the &3cyan lamp&r in the &6Display Link&r flashes!"
+				""
+				"The &aTarget Block&r pretents to be a display (aka target) for the &6Display Link&r. This way, the content of &eSource Blocks&r can be collected and then processed as desired. The principle here is the same as with the &eSource Block&r: Data is always transmitted when the lamp flashes. Both that of &eSource Blocks&r and the stats of the emulated screen, the &aTarget Block&r provides."
+				""
+				"An emulated screen has &224 lines&r, which could be divided into different sources. However, a source can also use several ones. To define on which line a &eSource Blocks&r starts, this can be configured in the related &6Display Link&r."
+			]
+			id: "2CAE593AF156CFA8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "141E47FFE2C0ABB0"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "0496613CEEF00F26"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "613F9A3BE8670C22"
+					item: "cccbridge:source_block"
+					type: "item"
+				}
+				{
+					id: "4D09E13036A906E0"
+					item: "cccbridge:target_block"
+					type: "item"
+				}
+			]
+			title: "Source \\& Target Block"
+			x: -20.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7CADC21630F6223B"]
+			description: ["The &eRedRouter Block&r is a peripheral with the same features as the &cRedstone API&r. By attaching it to a &3Computer&r, every side can be configured."]
+			id: "46DBEC5D497C64D1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4DE2A29E8BF8D022"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "4DBF66EF3A3D7BEF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2AC6296317EF290B"
+				item: "cccbridge:redrouter_block"
+				type: "item"
+			}]
+			x: -20.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["56719D1E4C517695"]
+			description: [
+				"The &aConductor&r is a new creature added by &6Create: Steam \\& Rails&r that can control &credstone&r, &3carry toolboxes&r, and &2drive trains&r! "
+				""
+				"Check the &dPonder&r scene!"
+			]
+			id: "02F285EC8347950F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "23828943A9467CCF"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "0BAC56FFB12754ED"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "7FAB8E6170C08BDD"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "railways:conductor_caps"
+					}
+				}
+				title: "Any Conductor Cap"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5280346E492CDFF6"]
+			description: ["The &eMonorail Train Track&r is an alternate to the regular &2Create Train Tracks&r. Instead of being placed on the ground, the train will hang from the rail. "]
+			id: "43F4FC5D451BA26C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1B3E8EE5DFB08AB7"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "1F182372FB05189F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Disney Approved"
+			tasks: [{
+				id: "5335B477C70B59D0"
+				item: "railways:track_monorail"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0AF1648BAD9A6BC2"]
+			description: [
+				"The&e Semaphore&r offers a more aesthetically pleasing way to display the state of &aTrain Observers&r. "
+				""
+				"It's kinda complicated, check the &dPonder&r scene."
+			]
+			id: "074DF5FA7BA8618D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "314215868311EB7F"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "43A4235BA314AE36"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2C33A55E055313A3"
+				item: "railways:semaphore"
+				type: "item"
+			}]
+			x: -19.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["45827521A02CAC95"]
+			description: ["The &aTrain Coupler&r allows you to control the connection of trains using &cRedstone&r. "]
+			id: "54A1EA4EC7367EE7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4E161595B3BC635D"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "2D0BAB320BBE9186"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "7F90BE85643B7726"
+				item: "railways:track_coupler"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["02F285EC8347950F"]
+			description: ["&aConductor Whistles&r can be used to summon a train being driven by a &3Conductor&r."]
+			id: "438C77B5157AFC32"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E14CB6FB7EE6CCC"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "63934B8B909B2CAD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "16AD622591E1245F"
+				item: "railways:conductor_whistle"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -9.5d
+		}
+		{
+			id: "2F4D17DC2FDC4521"
+			tasks: [{
+				id: "598865879BF93ABF"
+				item: "railways:white_conductor_cap"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -10.0d
 		}
 	]
 	subtitle: ["Do as you will"]

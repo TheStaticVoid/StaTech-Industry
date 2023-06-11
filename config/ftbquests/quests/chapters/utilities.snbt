@@ -951,26 +951,6 @@
 			y: 1.0d
 		}
 		{
-			description: ["Find a &acool item&r and want to &bshow it off&r to your friends? Then the &bDisplay Case&r is for you! You can place any item or block inside by right clicking."]
-			id: "67D30AFE3AFFB13C"
-			rewards: [{
-				id: "12D56DCB3793F474"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "367599900BC40592"
-				item: {
-					Count: 1b
-					id: "display_case:display_case"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: 1.0d
-		}
-		{
 			description: [
 				"Find something cool in your world, or just want to take a picture to remember the occasion? Take a picture with the &bCamera&r!"
 				""
@@ -1187,7 +1167,7 @@
 			]
 			title: "Clear Armor"
 			x: 10.5d
-			y: 5.5d
+			y: 1.0d
 		}
 		{
 			description: ["&eBuilding Wands&r return! They're &cslightly different&r than you might remember, press '&6y&r' to open their &aconfiguration menu&r while holding one!"]
@@ -1208,6 +1188,34 @@
 				}
 				type: "item"
 			}]
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			description: [
+				"&aCalculators &rare a key to success. With the &dCrafting Calculator&r you can determine how many raw resources a recipe will cost, and how much materials you will need to craft the items in bulk. There is a bit of a &3learning curve&r to the calculator, but it has some helpful tips in it's own UI."
+				""
+				"The &2Math Calculator&r works as a general calculator for addition, subtraction, etc."
+			]
+			id: "3F032D56CC791DF2"
+			rewards: [{
+				id: "1C6D181BEB46F151"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "13C35A17FA8973D1"
+					item: "jecalculation:item_calculator_craft"
+					type: "item"
+				}
+				{
+					id: "7A6BCDA6A1B65929"
+					item: "jecalculation:item_calculator_math"
+					type: "item"
+				}
+			]
+			title: "Calculators"
 			x: 10.5d
 			y: 7.0d
 		}

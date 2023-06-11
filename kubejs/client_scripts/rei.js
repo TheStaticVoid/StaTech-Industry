@@ -5,6 +5,10 @@ REIEvents.hide('item', e => {
     let kibe = (id) => `kibe:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let tf = (id) => `twilightforest:${id}`;
+    let cr = (id) => `create:${id}`;
+    let ca = (id) => `createaddition:${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
+    let md = (id) => `moderndynamics:${id}`;
 
 
     const REI_DELETED_ITEMS = [
@@ -24,14 +28,39 @@ REIEvents.hide('item', e => {
         ae2('vibration_chamber'),
         ae2('ender_dust'),
         ae2('sky_stone_tank'),
-        'create:crushed_platinum_ore',
+        cr('crushed_platinum_ore'),
+        ca('rolling_mill'),
+        ca('creative_energy'),
+        ca('biomass'),
+        ca('biomass_pellet'),
+        ca('spool'),
+        ca('copper_spool'),
+        ca('gold_spool'),
+        ca('copper_wire'),
+        ca('copper_rod'),
+        ca('iron_wire'),
+        ca('iron_rod'),
+        ca('gold_wire'),
+        ca('gold_rod'),
+        ca('brass_rod'),
+        ca('bioethanol'),
+        ca('bioethanol_bucket'),
+        ca('seed_oil'),
+        ca('seed_oil_bucket'),
+        ca('accumulator'),
+        ca('tesla_coil'),
+        ca('connector'),
+        ca('capacitor'),
+        ca('diamond_grit'),
+        ca('redstone_relay'),
         'decorative_blocks:blockstate_copy_item',
         kibe('tank'),
         kibe('xp_shower'),
         kibe('xp_drain'),
         kibe('angel_ring'),
         'kubejs:statech_logo',
-        'modern_industrialization:guidebook',
+        md('wrench'),
+        mi('guidebook'),
         'spirit:soul_pedestal',
         tf('uncrafting_table'),
         tr('nichrome_heating_coil'),

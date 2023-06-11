@@ -274,6 +274,13 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: sp('onyx_shard') } ],
         [ { amount: 2, item: sp('onyx_powder') } ]
     );
+    macerator(
+        st('onyx_powder_from_onyx_block'),
+        2,
+        200,
+        [ { amount: 1, item: sp('onyx_block') } ],
+        [ { amount: 4, item: sp('onyx_powder') } ]
+    );
 
     // -- FIERY POWDER -- //
     macerator(
@@ -347,6 +354,18 @@ ServerEvents.recipes(e => {
         [
             { amount: 1, item: mi('iron_dust') },
             { amount: 1, item: mi('iron_dust'), probability: 0.5 }
+        ]
+    );
+
+    // -- QUARTZ DUST FROM RAW QUARTZ BLOCK -- //
+    macerator(
+        st('quartz_dust_from_quartz_block'),
+        2,
+        200,
+        [ { amount: 1, item: 'byg:raw_quartz_block' } ],
+        [
+            { amount: 1, item: mi('quartz_dust') },
+            { amount: 1, item: mi('quartz_dust'), probability: 0.5 }
         ]
     );
 });

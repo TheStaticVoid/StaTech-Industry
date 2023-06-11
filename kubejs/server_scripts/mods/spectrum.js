@@ -218,5 +218,35 @@ ServerEvents.recipes(e => {
         ]
     });
 
+    e.custom({
+        id: st('quitoxic_reeds_from_coins'),
+        type: sp('pedestal'),
+        time: 200,
+        tier: 'simple',
+        cyan: 0,
+        magenta: 0,
+        yellow: 0,
+        white: 0,
+        black: 0,
+        experience: 10.0,
+        pattern: [
+            '   ',
+            ' C ',
+            '   '
+        ],
+        key: {
+            C: {
+                item: 'kubejs:coin_rare'
+            }
+        },
+        result: {
+            item: sp('quitoxic_reeds'),
+            count: 3
+        },
+        required_advancement: [
+            sp('collect_quitoxic_reeds')
+        ]
+    });
+
     e.stonecutting(sp('amethyst_storage_block'), 'blockus:polished_amethyst');
 });

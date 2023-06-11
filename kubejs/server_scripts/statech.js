@@ -70,7 +70,7 @@ ServerEvents.recipes(e => {
     // -------------- //
 
     // -- IRON ORE -- //
-    e.shaped('16x ' + mc('iron_ore'), [
+    e.shaped('8x ' + mc('iron_ore'), [
         'C C',
         '   ',
         'C C'
@@ -80,7 +80,7 @@ ServerEvents.recipes(e => {
     }).id(st('iron_ore_from_common'));
 
     // -- TIN ORE -- //
-    e.shaped('16x ' + mi('tin_ore'), [
+    e.shaped('8x ' + mi('tin_ore'), [
         'C C',
         ' C ',
         ' C '
@@ -99,7 +99,7 @@ ServerEvents.recipes(e => {
     }).id(st('rubber_sapling_from_common'));
 
     // -- ANDESITE -- //
-    e.shaped('32x ' + mc('andesite'), [
+    e.shaped('16x ' + mc('andesite'), [
         'C',
         ' ',
         'C'
@@ -109,7 +109,7 @@ ServerEvents.recipes(e => {
     }).id(st('andesite_from_common'));
 
     // -- AMETHYST SHARD -- //
-    e.shaped('16x ' + mc('amethyst_shard'), [
+    e.shaped('8x ' + mc('amethyst_shard'), [
         'C  ',
         ' C ',
         '  C'
@@ -119,7 +119,7 @@ ServerEvents.recipes(e => {
     }).id('amethyst_shard_from_common');
     
     // -- TOPAZ SHARD -- //
-    e.shaped('16x ' + sp('topaz_shard'), [
+    e.shaped('8x ' + sp('topaz_shard'), [
         '  C',
         ' C ',
         'C  '
@@ -129,7 +129,7 @@ ServerEvents.recipes(e => {
     }).id(st('topaz_shard_from_common'));
 
     // -- CITRINE SHARD -- //
-    e.shaped('16x ' + sp('citrine_shard'), [
+    e.shaped('8x ' + sp('citrine_shard'), [
         'C  ',
         'C  ',
         'C  '
@@ -138,7 +138,7 @@ ServerEvents.recipes(e => {
         C: common
     }).id(st('citrine_shard_from_common'));
 
-    e.shaped('32x ' + mc('coal_ore'), [
+    e.shaped('16x ' + mc('coal_ore'), [
         'C C',
         ' C ',
         'C C'
@@ -147,7 +147,7 @@ ServerEvents.recipes(e => {
         C: common
     }).id(st('coal_ore_from_common'));
 
-    e.shaped('64x ' + mc('copper_ore'), [
+    e.shaped('32x ' + mc('copper_ore'), [
         'CCC',
         'C  ',
         'CCC'
@@ -156,7 +156,7 @@ ServerEvents.recipes(e => {
         C: common
     }).id(st('copper_ore_from_common'));
 
-    e.shaped('16x create:zinc_ore', [
+    e.shaped('8x create:zinc_ore', [
         'CC',
         'CC'
     ],
@@ -165,7 +165,7 @@ ServerEvents.recipes(e => {
     }).id(st('zinc_ore_from_common'));
 
     // -- SALT ORE -- //
-    e.shaped('16x ' + mi('salt_ore'), [
+    e.shaped('8x ' + mi('salt_ore'), [
         ' CC',
         'CC '
     ],
@@ -178,7 +178,7 @@ ServerEvents.recipes(e => {
     // -------------- //
 
     // -- GOLD ORE -- //
-    e.shaped('32x ' + mc('gold_ore'), [
+    e.shaped('16x ' + mc('gold_ore'), [
         ' C ',
         'C C',
         ' C '
@@ -188,7 +188,7 @@ ServerEvents.recipes(e => {
     }).id(st('gold_ore_from_rare'));
 
     // -- ANTIMONY ORE -- //
-    e.shaped('16x ' + mi('antimony_ore'), [
+    e.shaped('8x ' + mi('antimony_ore'), [
         'C C',
         '   ',
         'C C'
@@ -207,7 +207,7 @@ ServerEvents.recipes(e => {
     }).id(st('diamond_ore_from_rare'));
 
     // -- REDSTONE ORE -- //
-    e.shaped('16x ' + mc('redstone_ore'), [
+    e.shaped('8x ' + mc('redstone_ore'), [
         'C C',
         ' C ',
         'C C'
@@ -217,7 +217,7 @@ ServerEvents.recipes(e => {
     }).id(st('redstone_ore_from_rare'));
 
     // -- LEAD ORE -- //
-    e.shaped('16x ' + mi('lead_ore'), [
+    e.shaped('8x ' + mi('lead_ore'), [
         'CC',
         'CC'
     ],
@@ -226,7 +226,7 @@ ServerEvents.recipes(e => {
     }).id(st('lead_ore_from_rare'));
 
     // -- NICKEL ORE -- //
-    e.shaped('16x ' + mi('nickel_ore'), [
+    e.shaped('8x ' + mi('nickel_ore'), [
         'CCC',
         ' C '
     ],
@@ -235,7 +235,7 @@ ServerEvents.recipes(e => {
     }).id(st('nickel_ore_from_rare'));
 
     // -- BAUXITE ORE -- //
-    e.shaped('16x ' + mi('bauxite_ore'), [
+    e.shaped('8x ' + mi('bauxite_ore'), [
         ' C ',
         'CCC'
     ],
@@ -248,7 +248,7 @@ ServerEvents.recipes(e => {
     // -------------- //
 
     // -- ANCIENT DEBRIS -- //
-    e.shaped('4x ' + mc('ancient_debris'), [
+    e.shaped('2x ' + mc('ancient_debris'), [
         'C C',
         '   ',
         'C C'
@@ -258,7 +258,7 @@ ServerEvents.recipes(e => {
     }).id(st('ancient_debris_from_legendary'));
 
     // -- TUNGSTEN ORE -- //
-    e.shaped('16x ' + mi('tungsten_ore'), [
+    e.shaped('8x ' + mi('tungsten_ore'), [
         ' C ',
         'C C',
         ' C '
@@ -268,7 +268,7 @@ ServerEvents.recipes(e => {
     }).id(st('tungsten_ore_from_legendary'));
 
     // -- MOZANITE ORE -- //
-    e.shaped('16x ' + mi('mozanite_ore'), [
+    e.shaped('8x ' + mi('mozanite_ore'), [
         'CCC',
         ' C '
     ],
@@ -306,7 +306,7 @@ ServerEvents.recipes(e => {
     ],
     {
         C: mythic
-    }).id(st('soulboun_from_mythic'));
+    }).id(st('soulbound_from_mythic'));
 });
 
 ServerEvents.tags('item', e => {

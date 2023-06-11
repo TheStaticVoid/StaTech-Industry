@@ -5326,6 +5326,37 @@
 			x: -2.5d
 			y: 10.5d
 		}
+		{
+			dependencies: ["7FD9582038C29150"]
+			description: ["This is the &eModern Dynamics&r version of the &aHV-tier Cables&r."]
+			id: "1185A36879732D6A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "73C6FB73EBF385E5"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "2DB17612BA7BE13A"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "31E447E4B62D3659"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2233959BCAB07E4E"
+				item: "moderndynamics:hv_cable"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
 	]
 	subtitle: ["High tech!"]
 	title: "&e4 - Digital Age"

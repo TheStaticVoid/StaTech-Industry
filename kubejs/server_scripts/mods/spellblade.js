@@ -39,7 +39,8 @@ ServerEvents.recipes(e => {
         sb('rimeblazefeet'),
         sb('rimeblazefeet2'),
         sb('deathchillfeet'),
-        sb('deathchillfeet2')
+        sb('deathchillfeet2'),
+        sb('mulberry')
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
@@ -958,4 +959,22 @@ ServerEvents.tags('item', e => {
         sb('orb_frost')
     ];
     RUNIC_ORBS.forEach(id => { e.add('kubejs:runic_orbs', id) } );
+
+    const WAR_TOMES = [
+        sb('acrobat_spell_book'),
+        sb('warriorone_spell_book'),
+        sb('warriortwo_spell_book'),
+        sb('warriorpolearm_spell_book'),
+        sb('duelist_spell_book'),
+        sb('juggone_spell_book'),
+        sb('juggtwo_spell_book'),
+        sb('assassin_spell_book'),
+        sb('orb_fire_spell_book'),
+        sb('orb_frost_spell_book'),
+        sb('orb_arcane_spell_book'),
+        sb('spellblade_arcane_spell_book'),
+        sb('spellblade_frost_spell_book'),
+        sb('spellblade_fire_spell_book')
+    ];
+    WAR_TOMES.forEach(id => { e.add('kubejs:war_tomes', id) } );
 });
