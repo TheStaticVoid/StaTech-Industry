@@ -120,7 +120,11 @@
 		}
 		{
 			dependencies: ["6765B4B8D870CDA0"]
-			description: ["Now that you're generating power, it's probably best to create a &dbuffer&r. This way while you're not fully stressing your power network you're creating a backlog for when you may be using it faster than you can produce. "]
+			description: [
+				"Now that you're generating power, it's probably best to create a &dbuffer&r. This way while you're not fully stressing your power network you're creating a backlog for when you may be using it faster than you can produce. "
+				""
+				"You can &aright click&r while holding &2chargeable items&r to instantly transfer the &dpower to that item&r"
+			]
 			id: "3AD3E65C11D8C2A5"
 			rewards: [
 				{
