@@ -505,7 +505,7 @@
 				item: "spectrum:redstone_timer"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 12.0d
 			y: -2.0d
 		}
 		{
@@ -535,7 +535,7 @@
 				item: "blockus:redstone_sand"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 11.0d
 			y: -2.0d
 		}
 		{
@@ -3135,7 +3135,7 @@
 				}
 			]
 			title: "Rock Candies"
-			x: -1.5d
+			x: -2.0d
 			y: 8.5d
 		}
 		{
@@ -3253,7 +3253,7 @@
 				item: "spectrum:whispy_circlet"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -3.0d
 			y: 8.5d
 		}
 		{
@@ -6160,8 +6160,8 @@
 				item: "runes:crafting_altar"
 				type: "item"
 			}]
-			x: 15.0d
-			y: -0.5d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2563B78CFC661CCB"]
@@ -6191,7 +6191,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["639C6C4B13203B5B"]
@@ -6367,7 +6367,7 @@
 			]
 			title: "Magical Robes"
 			x: 14.0d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["279B9340FED331B8"]
@@ -6434,8 +6434,8 @@
 				}
 			]
 			title: "Arcane Robes"
-			x: 19.0d
-			y: 9.5d
+			x: 18.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["279B9340FED331B8"]
@@ -6502,8 +6502,8 @@
 				}
 			]
 			title: "Fire Robes"
-			x: 19.0d
-			y: 10.5d
+			x: 18.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["279B9340FED331B8"]
@@ -6570,8 +6570,8 @@
 				}
 			]
 			title: "Frost Robes"
-			x: 19.0d
-			y: 11.5d
+			x: 19.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["79D0A62E07C283FF"]
@@ -6793,7 +6793,7 @@
 			description: [
 				"With the power of the &eMidnight Chip&r you can finally upgrade your &abasic Spellblades&r into the more powerful &dRunic Claymores&r. "
 				""
-				"These &etwo-handed&r weapons deal &2100% of your corresponding spell attribute&r as &cextra damage&r of that type with melee attacks. The &dspells&r that can be bound using the &eSpell Binding Table&r are similar to that of the &bSpellblades&r, but with &3larger area of effect and projectiles&r."
+				"These &etwo-handed&r weapons deal &2100% of your corresponding spell attribute&r as &cextra damage&r of that type with melee attacks. These blades &cdo not have their own spells&r added with the &eSpell Binding Table&r, but rather &3use the spells from whatever Tome you have equipped&r."
 				""
 				"Each one comes with a &espin attack of their respective element&r."
 			]
@@ -6908,7 +6908,11 @@
 		}
 		{
 			dependencies: ["3D298F4F967B58C9"]
-			description: ["&aRunic Orbs&r deal no extra &cmelee&r damage, and have &dspells&r that don't &edeal a whole lot of damage&r, however the &dspells&r that are available have &2incredible area of effect and versatility&r."]
+			description: [
+				"&aRunic Orbs&r deal no extra &cmelee&r damage, and have &dspells&r that don't &edeal a whole lot of damage&r, however the &dspells&r that are available have &2incredible area of effect and versatility&r."
+				""
+				"The &aOrb&r inherits spell from &3Source Tomes&r made in &eSpell Binding Tables&r."
+			]
 			hide: true
 			id: "3227C8A9F947E4AD"
 			rewards: [
@@ -6972,8 +6976,8 @@
 				type: "item"
 			}]
 			title: "Bound Tools"
-			x: 15.0d
-			y: -1.5d
+			x: 13.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["279B9340FED331B8"]
@@ -6998,8 +7002,8 @@
 				item: "boundweapons:summon_spell_advanced_item"
 				type: "item"
 			}]
-			x: 19.0d
-			y: 12.5d
+			x: 19.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6D24FBE1A1BB0488"]
@@ -7058,6 +7062,45 @@
 			}]
 			x: 19.5d
 			y: 7.0d
+		}
+		{
+			dependencies: ["6AFC5E814DAF426A"]
+			description: [
+				"&aWar Tomes&r are acquired by placing a book in the &eSpell Binding Table&r. Different &aWar Tomes&r have different purposes, but in general, they add &2spell abilities&r to use when you have a weapon. This means you can add some fire spells to a regular &bDiamond Sword&r if you'd like. "
+				""
+				"Once you create the &aWar Tome&r, don't forget to add spells to it in the &eSpell Binding Table&r!"
+				""
+				"Some weapons require a &eWar Tome&r to work, such as most of the weapons added by the &6Spellblades and Such&r mod."
+			]
+			id: "6D964D5F1E2D667F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1E92BD6A0131D51E"
+					table_id: 5901057256958333207L
+					type: "random"
+				}
+				{
+					id: "6E0F2E3EFAA6A1E9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "56FFF0F4FCE94B9C"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:war_tomes"
+					}
+				}
+				title: "Any War Tome"
+				type: "item"
+			}]
+			title: "War Tomes"
+			x: 17.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Is that you Merasmus?"]
