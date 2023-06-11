@@ -5,11 +5,39 @@
 blockColors = []
 #The colors for blocks used when rendering their result bounding box
 #by block tag. See `blockColors` for format entries have to be in.
-blockTagColors = ["c:diamond_ores=0x5cdbd5", "c:gold_ores=0xfaee4d", "c:iron_ores=0x664c33", "c:nickel_ores=0x6699d8", "c:tin_ores=0x4c7f99", "c:coal_ores=0x4c4c4c", "c:lead_ores=0x4c3e5c", "c:redstone_ores=0x993333", "c:copper_ores=0x9f5224", "c:platinum_ores=0xd1b1a1", "c:silver_ores=0x999999", "c:quartz_ores=0xfffcf5", "c:emerald_ores=0xd93a", "c:lapis_ores=0x4a80ff"]
+blockTagColors = [
+  "c:antimony_ores=0xc7c8c1",
+  "c:bauxite_ores=0xbd6858",
+  "c:coal_ores=0x4c4c4c",
+  "c:copper_ores=0x9f5224",
+  "c:diamond_ores=0x5cdbd5",
+  "c:emerald_ores=0x50c878",
+  "c:galena_ores=0x64776e",
+  "c:gold_ores=0xfaee4d",
+  "c:iridium_ores=0x3d3c3a",
+  "c:iron_ores=0x664c33",
+  "c:lapis_ores=0x4a80ff",
+  "c:lead_ores=0x4c3e5c",
+  "c:lignite_coal_ores=0x61605f",
+  "c:mozanite_ores=0xffffff",
+  "c:netherite_scrap_ores=0x552f2c",
+  "c:nickel_ores=0x6699d8",
+  "c:platinum_ores=0xd1b1a1",
+  "c:quartz_ores=0xfffcf5",
+  "c:redstone_ores=0x993333",
+  "c:ruby_ores=0x9b111e",
+  "c:salt_ores=0xadacb3",
+  "c:sapphire_ores=0x0f52ba",
+  "c:silver_ores=0x999999",
+  "c:tin_ores=0x4c7f99",
+  "c:titanium_ores=0x797982",
+  "c:tungsten_ores=0x61584d",
+  "c:uranium_ores=0x3cff49",
+  "c:zinc_ores=0xbac4c8",
+]
 #The colors for fluids used when rendering their result bounding box
 #by fluid name. See `blockColors` for format entries have to be in.
 fluidColors = []
 #The colors for fluids used when rendering their result bounding box
 #by fluid tag. See `blockColors` for format entries have to be in.
 fluidTagColors = ["minecraft:lava=0x9f5224", "minecraft:water=0x4040ff"]
-
