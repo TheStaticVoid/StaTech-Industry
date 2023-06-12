@@ -250,3 +250,13 @@ ServerEvents.recipes(e => {
 
     e.stonecutting(sp('amethyst_storage_block'), 'blockus:polished_amethyst');
 });
+
+ServerEvents.tags('block', e => {
+    e.add('c:lapis_ores', 'spectrum:blackslag_lapis_ore')
+    e.add('c:amethyst_ores', 'spectrum:amethyst_ore')
+    e.add('c:amethyst_ores', 'spectrum:deepslate_amethyst_ore')
+    e.add('c:citrine_ores', 'spectrum:citrine_ore')
+    e.add('c:citrine_ores', 'spectrum:deepslate_citrine_ore')
+    e.add('c:topaz_ores', 'spectrum:topaz_ore')
+    e.add('c:topaz_ores', 'spectrum:deepslate_topaz_ore')
+});

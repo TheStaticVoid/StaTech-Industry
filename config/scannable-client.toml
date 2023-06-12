@@ -6,9 +6,11 @@ blockColors = []
 #The colors for blocks used when rendering their result bounding box
 #by block tag. See `blockColors` for format entries have to be in.
 blockTagColors = [
+  "c:amethyst_ores=0x9966cc",
   "c:antimony_ores=0xc7c8c1",
   "c:bauxite_ores=0xbd6858",
-  "c:coal_ores=0x4c4c4c",
+  "c:citrine_ores=0xe4d00a",
+  "c:coal_ores=0x2c2c2c",
   "c:copper_ores=0x9f5224",
   "c:diamond_ores=0x5cdbd5",
   "c:emerald_ores=0x50c878",
@@ -30,14 +32,18 @@ blockTagColors = [
   "c:sapphire_ores=0x0f52ba",
   "c:silver_ores=0x999999",
   "c:tin_ores=0x4c7f99",
-  "c:titanium_ores=0x797982",
+  "c:titanium_ores=0xfea1fe",
+  "c:topaz_ores=0xffc87c",
   "c:tungsten_ores=0x61584d",
   "c:uranium_ores=0x3cff49",
   "c:zinc_ores=0xbac4c8",
+  "c:ores/ametrine=0xded1e0",
+  "c:ores/anthracite=0x353c40",
+  "c:ores/pendorite=0x673564",
 ]
 #The colors for fluids used when rendering their result bounding box
 #by fluid name. See `blockColors` for format entries have to be in.
 fluidColors = []
 #The colors for fluids used when rendering their result bounding box
 #by fluid tag. See `blockColors` for format entries have to be in.
-fluidTagColors = ["minecraft:lava=0x9f5224", "minecraft:water=0x4040ff", "c:tea=0xbc7b3b", "c:oil=373a36"]
+fluidTagColors = ["minecraft:lava=0x9f5224", "minecraft:water=0x4040ff", "c:tea=0xbc7b3b", "c:oil=0x373a36"]

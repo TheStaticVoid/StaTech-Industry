@@ -55,7 +55,7 @@
 
 [ores]
 	#Registry names of blocks considered 'common ores', requiring the common ore scanner module.
-	commonOreBlocks = ["minecraft:clay"]
+	commonOreBlocks = []
 	#Block tags of blocks considered 'rare ores', requiring the rare ore scanner module.
 	#Any block with the forge:ores tag is implicitly in this list, unless the block also
 	#matches an ignored or common ore block tag, or is an ignored or common block.
@@ -77,7 +77,7 @@
 		"c:zinc_ores",
 	]
 	#Registry names of blocks considered 'rare ores', requiring the rare ore scanner module.
-	rareOreBlocks = ["minecraft:glowstone"]
+	rareOreBlocks = []
 
 [fluids]
 	#Fluid tags of fluids that should be ignored.
