@@ -3,6 +3,8 @@ let PYROLYSE_OVEN;
 let ROCKET_PART_ASSEMBLER;
 let MEGA_SMELTER;
 let SPACE_PROBE_LAUNCHER;
+let CORE_DRILL;
+let GREENHOUSE;
 
 MIMachineEvents.registerRecipeTypes(e => {
     ALLOY_SMELTER = e.register('alloy_smelter')
@@ -22,6 +24,17 @@ MIMachineEvents.registerRecipeTypes(e => {
         .withItemOutputs();
     SPACE_PROBE_LAUNCHER = e.register('space_probe_launcher')
         .withItemInputs()
+        .withItemOutputs();
+    
+    CORE_DRILL = e.register('core_drill')
+        .withItemInputs()
+        .withFluidInputs()
+        .withItemOutputs()
+        .withFluidOutputs();
+
+    GREENHOUSE = e.register('greenhouse')
+        .withItemInputs()
+        .withFluidInputs()
         .withItemOutputs();
 });
 
@@ -238,7 +251,7 @@ MIMachineEvents.registerMachines(e => {
         e.progressBar(77, 33, 'arrow'),
         // REI Item inputs, item outputs, fluid inputs, fluid outputs
         itemInputs => itemInputs.addSlot(56, 35), itemOutputs => itemOutputs.addSlots(102, 35, 4, 4),
-        fluidInpouts => {}, fluidOutputs => {},
+        fluidInputs => {}, fluidOutputs => {},
 
         /* Model Configuration */ 
         'calorite_machine_casing', // casing of the controller
@@ -247,6 +260,116 @@ MIMachineEvents.registerMachines(e => {
         false, // top overlay
         false, // side overlay
     );
+
+    // -- CORE DRILL MULTIBLOCK -- //
+    const coreDrillHatch = e.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input', 'fluid_output');
+    const stainlessSteelCasing = e.memberOfBlock('modern_industrialization:clean_stainless_steel_machine_casing');
+    const deshBlock = e.memberOfBlock('ad_astra:desh_block');
+    const deshPillar = e.memberOfBlock('ad_astra:desh_pillar');
+    const glowingIronPillar = e.memberOfBlock('ad_astra:glowing_iron_pillar');
+    const glowingOstrumPillar = e.memberOfBlock('ad_astra:glowing_ostrum_pillar');
+    const quarryTube = e.memberOfBlock('quarrymod:drill_tube');
+    //          0                   1               2                  3                4               5                   6                   7               8                   9               10
+    const coreDrillShape = e.layeredShape('clean_stainless_steel_machine_casing', [
+        [ 'OS          SO', 'OS          SO', 'OS          SO', 'OS          SO', '              ', '              ', '              ', '              ', '              ', '              ', '              ' ],
+        [ 'SS          SS', 'SS          SS', 'SS          SS', 'SS          SS', ' OS        SO ', ' OS        SO ', ' OS        SO ', '    IIIIII    ', '              ', '              ', '              ' ],
+        [ '              ', '              ', '              ', '              ', ' SS        SS ', ' SS        SS ', ' SSS      SSS ', '  IIcCCCCcII  ', '              ', '              ', '              ' ],
+        [ '              ', '              ', '              ', '              ', '              ', '              ', '  S   PP   S  ', '  IcCC  CCcI  ', '     dddd     ', '              ', '              ' ],
+        [ '              ', '              ', '      PP      ', '      PP      ', '      PP      ', '      PP      ', '     P  P     ', ' IcCC    CCcI ', '    D    D    ', '     DDDD     ', '              ' ],
+        [ '      PP      ', '      PP      ', '     P  P     ', '     P  P     ', '     P  P     ', '     P  P     ', '    P    P    ', ' ICC      CCI ', '   d      d   ', '    DD  DD    ', '      DD      ' ],
+        [ '     PQQP     ', '     PQQP     ', '    P QQ P    ', '    P QQ P    ', '    P QQ P    ', '    P QQ P    ', '   P  QQ  P   ', ' IC   QQ   CI ', '   d  QQ  d   ', '    D QQ D    ', '     DDDD     ' ],
+        [ '     PQQP     ', '     PQQP     ', '    P QQ P    ', '    P QQ P    ', '    P QQ P    ', '    P QQ P    ', '   P  QQ  P   ', ' IC   QQ   CI ', '   d  QQ  d   ', '    D QQ D    ', '     DDDD     ' ],
+        [ '      PP      ', '      PP      ', '     P  P     ', '     P  P     ', '     P  P     ', '     P  P     ', '    P    P    ', ' ICC      CCI ', '   d      d   ', '    DD  DD    ', '      DD      ' ],
+        [ '              ', '              ', '      PP      ', '      PP      ', '      PP      ', '      PP      ', '     P  P     ', ' IcCC    CCcI ', '    D    D    ', '     DDDD     ', '              ' ],
+        [ '              ', '              ', '              ', '              ', '              ', '              ', '  S   PP   S  ', '  IcCC  CCcI  ', '     d#dd     ', '              ', '              ' ],
+        [ '              ', '              ', '              ', '              ', ' SS        SS ', ' SS        SS ', ' SSS      SSS ', '  IIcCCCCcII  ', '              ', '              ', '              ' ],
+        [ 'SS          SS', 'SS          SS', 'SS          SS', 'SS          SS', ' OS        SO ', ' OS        SO ', ' OS        SO ', '    IIIIII    ', '              ', '              ', '              ' ],
+        [ 'OS          SO', 'OS          SO', 'OS          SO', 'OS          SO', '              ', '              ', '              ', '              ', '              ', '              ', '              ' ]
+    ])
+        .key('O', glowingOstrumPillar, e.noHatch())
+        .key('S', stainlessSteelCasing, e.noHatch())
+        .key('P', deshPillar, e.noHatch())
+        .key('Q', quarryTube, e.noHatch())
+        .key('c', caloritePipeCasing, e.noHatch())
+        .key('C', caloriteMachineCasing, e.noHatch())
+        .key('I', glowingIronPillar, e.noHatch())
+        .key('d', deshBlock, coreDrillHatch)
+        .key('D', deshBlock, e.noHatch())
+        .build();
+
+    e.simpleElectricCraftingMultiBlock(
+        // General parameters
+        'Core Mining Drill', // English name
+        'core_drill', // internal name
+        CORE_DRILL, // recipe type
+        coreDrillShape, // multiblock shape
+
+        // REI Display configuration
+        e.progressBar(77, 33, 'triple_arrow'),
+        // REI Item Inputs, item, outputs, fluid inputs, fluid outputs
+        itemInputs => itemInputs.addSlot(56, 35), itemOutputs => itemOutputs.addSlot(102, 35),
+        fluidInputs => fluidInputs.addSlot(56, 53), fluidOutputs => fluidOutputs.addSlot(102, 53),
+
+        /* Model configuration */
+        'clean_stainless_steel_machine_casing', // casing of the controller
+        'core_drill', // overlay folder
+        true, // front overlay
+        false, // top overlay
+        false, // side overlay
+    );
+
+    // -- INDUSTRIAL GREENHOUSE -- //
+    const greenhouseHatch = e.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input');
+    const steelCasing = e.memberOfBlock('modern_industrialization:steel_machine_casing');
+    const glass = e.memberOfBlock('minecraft:glass');
+    const metalBox = e.memberOfBlock('factory_blocks:metalbox');
+    const rustyScaffold = e.memberOfBlock('factory_blocks:rusty_scaffold');
+    const glowstone = e.memberOfBlock('minecraft:glowstone');
+    const grass = e.memberOfBlock('minecraft:grass_block');
+    const log = e.memberOfBlock('minecraft:oak_log');
+    const leaves = e.memberOfBlock('minecraft:oak_leaves');
+    const dirt = e.memberOfBlock('minecraft:dirt')
+    //
+    const greenhouseShape = e.layeredShape('steel', [
+        [ '  SSS  ', '  GGG  ', '  GGG  ', '  GGG  ', '  RRR  ', '       ', '       ' ],
+        [ ' SAAAS ', ' M   M ', ' M   M ', ' M   M ', ' M   M ', '  GGG  ', '       ' ],
+        [ 'SAAAAAS', 'G     G', 'G  L  G', 'G  L  G', 'R     R', ' G   G ', '  GGG  ' ],
+        [ 'SAADAAS', 'G  W  G', 'G LWL G', 'G LWL G', 'R  L  R', ' G   G ', '  GOG  ' ],
+        [ 'SAAAAAS', 'G     G', 'G  L  G', 'G  L  G', 'R     R', ' G   G ', '  GGG  ' ],
+        [ ' SAAAS ', ' M   M ', ' M   M ', ' M   M ', ' M   M ', '  GGG  ', '       ' ],
+        [ '  S#S  ', '  GGG  ', '  GGG  ', '  GGG  ', '  RRR  ', '       ', '       ' ]
+    ])
+        .key('S', steelCasing, greenhouseHatch)
+        .key('A', grass, e.noHatch())
+        .key('M', metalBox, e.noHatch())
+        .key('W', log, e.noHatch())
+        .key('G', glass, e.noHatch())
+        .key('L', leaves, e.noHatch())
+        .key('R', rustyScaffold, e.noHatch())
+        .key('O', glowstone, e.noHatch())
+        .key('D', dirt, e.noHatch())
+        .build();
+    
+    e.simpleElectricCraftingMultiBlock(
+        // General parameters
+        'Industrial Greenhouse', // English name
+        'greenhouse', // internal name
+        GREENHOUSE, // recipe type
+        greenhouseShape, // multiblock shape
+
+        // REI Display configuration
+        e.progressBar(71, 33, 'extract'),
+        // REI Item Inputs, item outputs, fluid inputs, fluid outputs
+        itemInputs => itemInputs.addSlots(25, 35, 2, 1), itemOutputs => itemOutputs.addSlots(102, 35, 2, 2),
+        fluidInputs => fluidInputs.addSlot(25, 53), fluidOutputs => {},
+
+        /* Model configuration */
+        'steel',
+        'greenhouse',
+        true, // front overlay
+        false, // top overlay
+        false, // side overlay
+    )
 });
 
 MIRegistrationEvents.registerFluids(e => {
@@ -267,6 +390,25 @@ MIRegistrationEvents.registerFluids(e => {
         0x1a1a1a,
         "lava",
         true,
+        "full"
+    );
+
+    // -- DRILLING FLUID -- //
+    e.register(
+        "Drilling Fluid",
+        "drilling_fluid",
+        0xf4fc58,
+        "water",
+        false,
+        "medium"
+    );
+
+    e.register(
+        "Core Slurry",
+        "core_slurry",
+        0x211500,
+        "lava",
+        false,
         "full"
     );
 });
