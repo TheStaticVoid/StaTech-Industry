@@ -1,4 +1,4 @@
-ServerEvents.recipe(e => {
+ServerEvents.recipes(e => {
     let st = (id) => `statech:dustrial_decor/${id}`;
     let dd = (id) => `dustrial_decor:${id}`;
 
