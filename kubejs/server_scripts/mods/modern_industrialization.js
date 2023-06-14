@@ -30,7 +30,8 @@ ServerEvents.recipes(e => {
         mi('materials/superconductor/craft/coil'),
         mi('materials/tungstensteel/craft/coil'),
         mi('armor/gravichestplate'),
-        mi('electric_age/component/craft/ultradense_metal_ball_asbl')
+        mi('electric_age/component/craft/ultradense_metal_ball_asbl'),
+        mi('materials/fire_clay_bricks')
     ];
 
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));

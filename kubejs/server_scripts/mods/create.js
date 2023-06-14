@@ -56,6 +56,23 @@ ServerEvents.recipes(e => {
         .id(st('dough'))
         .replaceIngredient('kibe:water_wooden_bucket', 'kibe:wooden_bucket');
 
+    // -- FIRECLAY BRICKS -- //
+    e.custom({
+        id: st('fire_clay_bricks'),
+        type: cr('compacting'),
+        ingredients: [
+            { item: mi('fire_clay_brick') },
+            { item: mi('fire_clay_brick') },
+            { item: mi('fire_clay_brick') },
+            { item: mi('fire_clay_brick') }
+        ],
+        results: [
+            { 
+                item: mi('fire_clay_bricks')
+            }
+        ]
+    });
+
     // -- BRONZE PLATE -- //
     e.custom({
         id: st('bronze_plate'),

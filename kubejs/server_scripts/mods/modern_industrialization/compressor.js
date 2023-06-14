@@ -72,6 +72,15 @@ ServerEvents.recipes(e => {
         ]
     );
 
+    // -- FIRE CLAY BRICKS -- //
+    compressor(
+        st('fire_clay_bricks'),
+        2,
+        300,
+        [ { amount: 4, item: mi('fire_clay_brick') } ],
+        [ { amount: 1, item: mi('fire_clay_bricks') } ]
+    );
+
     // -- RUBBER SHEETS -- //
     compressor(
         st('rubber_sheets'),
