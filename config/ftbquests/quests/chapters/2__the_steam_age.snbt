@@ -1170,7 +1170,11 @@
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
-			description: ["With a few steel plates, you can craft the &aAutomatic Trash Can&r. &dIt will destroy any item or fluid that is piped into it&r."]
+			description: [
+				"With a few steel plates, you can craft the &aAutomatic Trash Can&r. &dIt will destroy any item or fluid that is piped into it&r."
+				""
+				"You can also use it to &cdelete fluids&r in your inputs of machines by &3right clicking&r while holding the &aAutomatic Trash Can&r over the fluid in the &2machine GUI&r."
+			]
 			id: "5F56BBCF8B57F434"
 			rewards: [
 				{
