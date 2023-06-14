@@ -4,48 +4,49 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let sp = (id) => `spectrum:${id}`;
+    let kjs = (id) => `kubejs:${id}`;
 
-    e.smelting('kubejs:clear_ingot', 'minecraft:glass', 0.2).id(st('clear_ingot_from_glass'));
+    e.smelting(kjs('clear_ingot'), 'minecraft:glass', 0.2).id(st('clear_ingot_from_glass'));
     
     // -- CLEAR HELMET -- //
-    e.shaped('kubejs:clear_helmet', [
+    e.shaped(kjs('clear_helmet'), [
         'III',
         'I I'
     ],
     {
-        I: 'kubejs:clear_ingot'
+        I: kjs('clear_ingot')
     })
     .id(st('clear_helmet'));
 
     // -- CLEAR CHESTPLATE -- //
-    e.shaped('kubejs:clear_chestplate', [
+    e.shaped(kjs('clear_chestplate'), [
         'I I',
         'III',
         'III'
     ],
     {
-        I: 'kubejs:clear_ingot'
+        I: kjs('clear_ingot')
     })
     .id(st('clear_chestplate'));
 
     // -- CLEAR LEGGINGS -- //
-    e.shaped('kubejs:clear_leggings', [
+    e.shaped(kjs('clear_leggings'), [
         'III',
         'I I',
         'I I'
     ],
     {
-        I: 'kubejs:clear_ingot'
+        I: kjs('clear_ingot')
     })
     .id(st('clear_leggings'));
 
     // -- CLEAR BOOTS -- //
-    e.shaped('kubejs:clear_boots', [
+    e.shaped(kjs('clear_boots'), [
         'I I',
         'I I'
     ],
     {
-        I: 'kubejs:clear_ingot'
+        I: kjs('clear_ingot')
     })
     .id(st('clear_boots'));
 
@@ -53,10 +54,10 @@ ServerEvents.recipes(e => {
     // -- STATECH COINS -- //
     // ------------------- //
 
-    let common = 'kubejs:coin_common';
-    let rare = 'kubejs:coin_rare';
-    let legendary = 'kubejs:coin_legendary';
-    let mythic = 'kubejs:coin_mythic';
+    let common = kjs('coin_common');
+    let rare = kjs('coin_rare');
+    let legendary = kjs('coin_legendary');
+    let mythic = kjs('coin_mythic');
 
     e.shapeless(rare, [ '9x ' + common ]).id(st('coin_rare_upgrade'));
     e.shapeless(legendary, [ '9x ' + rare ]).id(st('coin_legendary_upgrade'));
@@ -310,19 +311,75 @@ ServerEvents.recipes(e => {
 });
 
 ServerEvents.tags('item', e => {
+    let kjs = (id) => `kubejs:${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
+    let tr = (id) => `techreborn:${id}`;
+    let as = (id) => `ad_astra:${id}`;
+    let sp = (id) => `spellbladenext:${id}`;
+
     const COINS = [
-        'kubejs:coin_common',
-        'kubejs:coin_rare',
-        'kubejs:coin_legendary',
-        'kubejs:coin_mythic'
+        kjs('coin_common'),
+        kjs('coin_rare'),
+        kjs('coin_legendary'),
+        kjs('coin_mythic')
     ];
-    COINS.forEach(id => e.add('kubejs:statech_coins', id));
+    COINS.forEach(id => e.add(kjs('statech_coins'), id));
 
     const CLEAR_ARMOR = [
-        'kubejs:clear_helmet',
-        'kubejs:clear_chestplate',
-        'kubejs:clear_leggings',
-        'kubejs:clear_boots'
+        kjs('clear_helmet'),
+        kjs('clear_chestplate'),
+        kjs('clear_leggings'),
+        kjs('clear_boots')
     ];
-    CLEAR_ARMOR.forEach(id => e.add('kubejs:clear_armor', id));
+    CLEAR_ARMOR.forEach(id => e.add(kjs('clear_armor'), id));
+
+    const COMMON_INGOT_TAG = [
+        as('desh_ingot'),
+        as('ostrum_ingot'),
+        as('calorite_ingot'),
+        mi('aluminum_ingot'),
+        mi('annealed_copper_ingot'),
+        mi('antimony_ingot'),
+        mi('battery_alloy_ingot'), 
+        mi('beryllium_ingot'),
+        mi('blastproof_alloy_ingot'),
+        mi('bronze_ingot'),
+        mi('cadmium_ingot'),
+        mi('chromium_ingot'),
+        mi('cupronickel_ingot'),
+        mi('electrum_ingot'),
+        mi('he_mox_ingot'),
+        mi('he_uranium_ingot'),
+        mi('invar_ingot'),
+        mi('iridium_ingot'),
+        mi('kanthal_ingot'),
+        mi('le_mox_ingot'),
+        mi('le_uranium_ingot'),
+        mi('lead_ingot'),
+        mi('nickel_ingot'),
+        mi('platinum_ingot'),
+        mi('plutonium_ingot'),
+        mi('silicon_ingot'),
+        mi('silver_ingot'),
+        mi('stainless_steel_ingot'),
+        mi('steel_ingot'),
+        mi('superconductor_ingot'),
+        mi('tin_ingot'),
+        mi('titanium_ingot'),
+        mi('tungsten_ingot'),
+        mi('uranium_ingot'),
+        mi('uranium_235_ingot'),
+        mi('uranium_238_ingot'),
+        tr('advanced_alloy_ingot'),
+        tr('brass_ingot'),
+        tr('iridium_alloy_ingot'),
+        tr('mixed_metal_ingot'),
+        tr('refined_iron_ingot'),
+        tr('tungstensteel_ingot'),
+        tr('zinc_ingot'),
+        sp('runeblazing_ingot'),
+        sp('runegleaming_ingot'),
+        sp('runefrosted_ingot')
+    ];
+    COMMON_INGOT_TAG.forEach(id => { e.add('c:ingots', id) } );
 })
