@@ -4192,6 +4192,41 @@
 			x: 19.5d
 			y: 16.0d
 		}
+		{
+			dependencies: ["4D3EDFA212A5B4F1"]
+			description: [
+				"By adding some &6Sulfur Dust&r to the &aSynthetic Oil&r you can create &eSynthetic Rubber&r, which is &26x more efficient&r for making &dRubber Sheets&r."
+				""
+				"&6Sulfur Dust&r can be easily obtained by macerating &bLignite Coal Ore&r."
+			]
+			id: "131FF702BC2707FB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43195BBDEA2377F7"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "10F8A5794C241F05"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "4E781829E1B04F2C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "24FEA0ACC74FAE69"
+				item: "modern_industrialization:synthetic_rubber_bucket"
+				type: "item"
+			}]
+			title: "More Efficient Rubber"
+			x: 10.5d
+			y: 12.0d
+		}
 	]
 	subtitle: ["The Basis of Industry"]
 	title: "&22 - Steam Age"
