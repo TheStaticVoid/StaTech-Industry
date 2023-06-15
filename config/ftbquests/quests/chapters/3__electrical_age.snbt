@@ -6550,6 +6550,43 @@
 			x: 9.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["473C1DE557D3E9C0"]
+			description: [
+				"Tired of &cleaving your base&r to &acut down trees&r? Wish there was a more i&2ndustrial solution&r to your problem? Then wish no longer! The &6Industrial Greenhouse&r takes in a &3vanilla sapling&r, &bbone meal&r, and &9some water&r to produce &dnear infinite logs&r! "
+				""
+				"While the recipes are&c slow at first&r, once the multiblock reaches the &amax overclock&r it will be sending out&e tons of logs&r!"
+				""
+				"Remember you can &bPonder&r the multiblock by holding 'W' on the &aIndustrial Greenhouse&r item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
+			]
+			id: "759E7BFAA33DB285"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3AC21DE4048234F8"
+					table_id: 238949117979752405L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "3D25DA747C547203"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "396118158A964AFA"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4DD978F3A99F0117"
+				item: "modern_industrialization:greenhouse"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
 	]
 	subtitle: ["ZZZzzzapppp"]
 	title: "&33 - Electrical Age"

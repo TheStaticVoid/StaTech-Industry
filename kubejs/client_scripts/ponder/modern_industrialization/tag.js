@@ -23,6 +23,7 @@ Ponder.tags((event) => {
         'modern_industrialization:plasma_turbine',
         'modern_industrialization:pyrolyse_oven',
         'modern_industrialization:mega_smelter',
-        'modern_industrialization:space_probe_launcher'
+        'modern_industrialization:space_probe_launcher',
+        'modern_industrialization:greenhouse'
     ]);
 });

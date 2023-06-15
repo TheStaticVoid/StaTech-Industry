@@ -123,6 +123,21 @@ ServerEvents.recipes(e => {
     })
     .id(st('space_probe_launcher'));
 
+    // -- INDUSTRIAL GREENHOUSE -- //
+    e.shaped(mi('greenhouse'), [
+        'MCM',
+        'RHR',
+        'PCP'
+    ],
+    {
+        M: mi('motor'),
+        C: mi('analog_circuit'),
+        H: mi('basic_machine_hull'),
+        R: mi('tin_rotor'),
+        P: mi('pump')
+    })
+    .id(st('greenhouse'));
+
     // -- CALORITE MACHINE CASING -- //
     e.shaped(mi('calorite_machine_casing'), [
         'PPP',
