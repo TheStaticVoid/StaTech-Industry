@@ -6579,11 +6579,113 @@
 					xp: 10
 				}
 			]
-			tasks: [{
-				id: "4DD978F3A99F0117"
-				item: "modern_industrialization:greenhouse"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4DD978F3A99F0117"
+					item: "modern_industrialization:greenhouse"
+					type: "item"
+				}
+				{
+					count: 56L
+					id: "27B2FD42ADBFB147"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "20555A1452A4849B"
+					item: "minecraft:grass_block"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1354B628A3DB8C26"
+					item: "factory_blocks:metalbox"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0FE88D4A83EBD986"
+					item: "factory_blocks:rusty_scaffold"
+					type: "item"
+				}
+				{
+					count: 11L
+					id: "3E4D1597E6997EBC"
+					item: "modern_industrialization:steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "1C252427F2D1F5DC"
+					item: "minecraft:oak_leaves"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1CBB17E28B68A294"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "7A97885DEA131EC2"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "2B895C63C9C43800"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "0712B9AC02354602"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+					title: "Any Item Input Hatch"
+					type: "item"
+				}
+				{
+					id: "6F4590AC8D46673C"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					title: "Any Item Output Hatch"
+					type: "item"
+				}
+				{
+					id: "69C181E1BE9DF137"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					id: "6D55ADB8847443BE"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+					title: "Any Energy Input Hatch"
+					type: "item"
+				}
+			]
 			x: -1.5d
 			y: 1.0d
 		}
