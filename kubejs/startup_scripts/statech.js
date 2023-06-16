@@ -51,6 +51,9 @@ StartupEvents.registry('item', e => {
     e.create('core_fragment')
         .displayName('Core Fragment')
         .rarity('Rare');
+    
+    e.create('diamond_lens')
+        .displayName('Diamond Lens');
 });
 
 ItemEvents.armorTierRegistry(event => {
