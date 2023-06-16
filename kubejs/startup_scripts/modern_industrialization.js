@@ -62,14 +62,14 @@ MIMachineEvents.registerMachines(e => {
     // -- ALLOY SMELTER SINGLE BLOCK -- //
     e.craftingSingleBlock(
         // General parameters
-        "Alloy Smelter", // English Name
-        "alloy_smelter", // Internal Name
+        'Alloy Smelter', // English Name
+        'alloy_smelter', // Internal Name
         ALLOY_SMELTER, // recipe type
-        ["electric"], // list of tiers (can be bronze/steel/electric)
+        ['electric'], // list of tiers (can be bronze/steel/electric)
 
         // GUI Configuration
         170, // background height (or -1 for default value)
-        e.progressBar(85, 25, "arrow"), // progress bar
+        e.progressBar(85, 25, 'arrow'), // progress bar
         e.efficiencyBar(42, 60), // efficiency bar
         e.energyBar(14, 27), // energy bar
 
@@ -92,14 +92,14 @@ MIMachineEvents.registerMachines(e => {
     // -- ROCKET PART ASSEMBLER SINGLE BLOCK -- //
     e.craftingSingleBlock(
         // General parameters
-        "Rocket Part Assembler",
-        "rocket_part_assembler",
+        'Rocket Part Assembler',
+        'rocket_part_assembler',
         ROCKET_PART_ASSEMBLER,
-        ["electric"],
+        ['electric'],
 
         // GUI Configuration
         191, // background height (or -1 for default value)
-        e.progressBar(103, 39, "triple_arrow"), // progress bar
+        e.progressBar(103, 39, 'triple_arrow'), // progress bar
         e.efficiencyBar(43, 89), // efficiency bar 
         e.energyBar(14, 42), // energy bar 
 
@@ -152,10 +152,10 @@ MIMachineEvents.registerMachines(e => {
     )
 
     // -- PYROLYSE OVEN MULTIBLOCK -- //
-    const pyrolyseHatch = e.hatchOf("item_input", "item_output", "fluid_input", "fluid_output", "energy_input");
-    const heatproofMember = e.memberOfBlock("modern_industrialization:heatproof_machine_casing");
-    const cupronickelCoilMember = e.memberOfBlock("modern_industrialization:cupronickel_coil");
-    const pyrolyseShapeBuilder = e.startShape("heatproof_machine_casing");
+    const pyrolyseHatch = e.hatchOf('item_input', 'item_output', 'fluid_input', 'fluid_output', 'energy_input');
+    const heatproofMember = e.memberOfBlock('modern_industrialization:heatproof_machine_casing');
+    const cupronickelCoilMember = e.memberOfBlock('modern_industrialization:cupronickel_coil');
+    const pyrolyseShapeBuilder = e.startShape('heatproof_machine_casing');
     for (let x = -1; x <= 1; x++) {
         for (let y= -1; y <= 1; y++) {
             for (let z = 0; z <= 3; z++) {
@@ -173,28 +173,28 @@ MIMachineEvents.registerMachines(e => {
 
     e.simpleElectricCraftingMultiBlock(
         // General parameters
-        "Pyrolyse Oven", // English name
-        "pyrolyse_oven", // internal name
+        'Pyrolyse Oven', // English name
+        'pyrolyse_oven', // internal name
         PYROLYSE_OVEN, // recipe type
         pyrolyseShape, // multiblock shape
 
         // REI Display configuration
-        e.progressBar(77, 33, "triple_arrow"),
+        e.progressBar(77, 33, 'triple_arrow'),
         // REI item inputs, item outputs, fluid inputs, fluid outputs
         itemInputs => itemInputs.addSlots(56, 35, 1, 1), itemOutputs => itemOutputs.addSlot(102, 35),
         fluidInputs => fluidInputs.addSlot(36, 35), fluidOutputs => fluidOutputs.addSlot(122, 35),
         /* MODEL CONFIGUATION */
-        "heatproof_machine_casing", // casing of the controller
-        "pyrolyse_oven", // overlay folder
+        'heatproof_machine_casing', // casing of the controller
+        'pyrolyse_oven', // overlay folder
         true, // front overlay
         false, // top overlay
         false, // side overlay
     );
 
     // -- MEGA SMELTER MULTIBLOCK -- //
-    const smelterHatch = e.hatchOf("item_input", "item_output", "energy_input");
+    const smelterHatch = e.hatchOf('item_input', 'item_output', 'energy_input');
     // reuse cupronickel definition from earlier
-    const smelterShapeBuilder = e.startShape("heatproof_machine_casing");
+    const smelterShapeBuilder = e.startShape('heatproof_machine_casing');
 
     for (let y = 0; y <= 2; y++) {
         for (let x = -1; x <=1; x++) {
@@ -215,20 +215,20 @@ MIMachineEvents.registerMachines(e => {
 
     e.simpleElectricCraftingMultiBlock(
         // General parameters
-        "Mega Smelter", // English name
-        "mega_smelter", // internal name
+        'Mega Smelter', // English name
+        'mega_smelter', // internal name
         MEGA_SMELTER, // recipe type
         megaSmelter, // multiblock shape
 
         // REI Display configuration
-        e.progressBar(77, 33, "arrow"),
+        e.progressBar(77, 33, 'arrow'),
         // REI Item inputs, item outputs, fluid inputs, fluid outputs
         itemInputs => itemInputs.addSlots(56, 35, 1, 1), itemOutputs => itemOutputs.addSlot(102, 35),
         fluidInputs => {}, fluidOutputs => {},
         
         /* Model Configuration */
-        "heatproof_machine_casing", // casing of the controller
-        "mega_smelter", // ovleray folder
+        'heatproof_machine_casing', // casing of the controller
+        'mega_smelter', // ovleray folder
         true, // front overlay
         false, // top overlay
         false, // side overlay
@@ -476,42 +476,57 @@ MIMachineEvents.registerMachines(e => {
 MIRegistrationEvents.registerFluids(e => {
     // -- LITHIUM -- //
     e.register(
-        "Lithium",      // English name
-        "lithium",      // internal name
+        'Lithium',      // English name
+        'lithium',      // internal name
         0xb2b2b2,       // Hex color code
-        "water",        // Texture type
+        'water',        // Texture type
         true,           // is a gas?
-        "medium"        // opacity
+        'medium'        // opacity
     );
 
     // -- NEUTRONIUM -- //
     e.register(
-        "Neutronium",
-        "neutronium",
+        'Neutronium',
+        'neutronium',
         0x1a1a1a,
-        "lava",
+        'lava',
         true,
-        "full"
+        'full'
     );
 
     // -- DRILLING FLUID -- //
     e.register(
-        "Drilling Fluid",
-        "drilling_fluid",
+        'Drilling Fluid',
+        'drilling_fluid',
         0xf4fc58,
-        "water",
+        'water',
         false,
-        "medium"
+        'medium'
+    );
+    
+    // -- CORE SLURRY -- //
+    e.register(
+        'Core Slurry',
+        'core_slurry',
+        0x211500,
+        'lava',
+        false,
+        'full'
     );
 
+    // -- WOOD TAR -- //
     e.register(
-        "Core Slurry",
-        "core_slurry",
-        0x211500,
-        "lava",
+        'Wood Tar',
+        'wood_tar',
+        0x2a200e,
+        'lava',
         false,
-        "full"
+        'full'
     );
+});
+
+MIRegistrationEvents.registerFluidFuels(e => {
+    e.register('modern_industrialization:benzene', 100);
 });
 
 MIMaterialEvents.addMaterials(e => {
@@ -526,8 +541,8 @@ MIMaterialEvents.addMaterials(e => {
     e.createMaterial('Tungstensteel', 'tungstensteel', 0x677680,
         builder => {
             builder.addParts('rod', 'gear', 'ring', 'coil', 'bolt', 'large_plate', 'curved_plate', 'wire')
-            .barrel("Tungstensteel Barrel", "tungstensteel_barrel", 16384)
-            .tank("Tungstensteel Tank", "tungstensteel_tank", 256)
+            .barrel('Tungstensteel Barrel', 'tungstensteel_barrel', 16384)
+            .tank('Tungstensteel Tank', 'tungstensteel_tank', 256)
             .cable('ev')
             .defaultRecipes()
             .addExternalPart('ingot', 'techreborn:tungstensteel_ingot', '#c:tungstensteel_ingots')
