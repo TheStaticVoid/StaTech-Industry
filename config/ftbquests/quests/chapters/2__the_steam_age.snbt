@@ -1855,7 +1855,7 @@
 				""
 				"The &aLarge Tank&r has many possible sizes depending on &bhow much storage you need&r. You can open the size configuration panel by clicking on a button in the controller."
 				""
-				"Only &9pipes may access the tank&r, and &6only through the controller&r. &cDon't break the controller&r or you will void all of the stored fluid!"
+				"Only &9pipes may access the tank&r, and &6only through the controller or the &aLarge Tank Hatch&r. &cDon't break the controller&r or you will void all of the stored fluid!"
 				""
 				"If you need help building the various sizes, make sure to hold out a wrench to see where all the blocks need to go. You can also check the &bPonder&r scene by holding 'W' on the Large Tank block in your inventory."
 			]
@@ -1888,7 +1888,7 @@
 					type: "item"
 				}
 				{
-					count: 20L
+					count: 19L
 					id: "323B027726876C6A"
 					item: "modern_industrialization:steel_machine_casing"
 					type: "item"
@@ -1897,6 +1897,11 @@
 					count: 5L
 					id: "099E6D7CBED914DB"
 					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "23A16651C80F069E"
+					item: "modern_industrialization:large_tank_hatch"
 					type: "item"
 				}
 			]
