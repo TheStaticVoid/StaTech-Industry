@@ -150,7 +150,7 @@
 				item: "modern_industrialization:ev_storage_unit"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: -2.0d
 		}
 		{
@@ -479,52 +479,6 @@
 			}]
 			x: 1.0d
 			y: 2.0d
-		}
-		{
-			dependencies: ["2F0042673C0E3910"]
-			description: [
-				"The cables of the EV tier are:"
-				"- &cAnnealed Copper&r"
-				"- &bPlatinum&r"
-				""
-				"These cables can transfer up to &e65.54k EU/t&r and have an internal buffer of &665.54k EU&r."
-			]
-			id: "257CA8034EA7B1DB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2D7D3EC332F389BE"
-					table_id: 1098950661447874341L
-					type: "random"
-				}
-				{
-					count: 25
-					id: "063A55F60167A2B6"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "5FF428EC466EF2A1"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "1A8CDC7641F6A71B"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "kubejs:ev_wire"
-					}
-				}
-				title: "Any EV Cable"
-				type: "item"
-			}]
-			title: "EV Cables"
-			x: 1.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["518D1E231A932ECB"]
@@ -1100,7 +1054,7 @@
 				item: "techreborn:dragon_egg_syphon"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: -4.0d
 		}
 		{
@@ -1132,7 +1086,7 @@
 				item: "techreborn:lapotronic_orb"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: -2.0d
 		}
 		{
@@ -1164,7 +1118,7 @@
 				item: "techreborn:lapotronic_orbpack"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: -4.0d
 		}
 		{
@@ -1201,7 +1155,7 @@
 				item: "techreborn:interdimensional_su"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: -5.5d
 		}
 		{
@@ -1236,7 +1190,7 @@
 				item: "techreborn:adjustable_su"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: -4.0d
 		}
 		{
@@ -1359,17 +1313,6 @@
 			}]
 			x: 5.5d
 			y: 7.5d
-		}
-		{
-			dependencies: ["257CA8034EA7B1DB"]
-			id: "630513B2758CEA60"
-			tasks: [{
-				id: "348E4E1326012CC2"
-				item: "moderndynamics:ev_cable"
-				type: "item"
-			}]
-			x: 1.0d
-			y: -4.0d
 		}
 		{
 			dependencies: ["569821B175311340"]

@@ -523,6 +523,56 @@ MIRegistrationEvents.registerFluids(e => {
         false,
         'full'
     );
+
+    // -- POLYTETRAFLUROETHYLENE -- //
+    e.register(
+        'Polytetrafluoroethylene',
+        'polytetrafluoroethylene',
+        0x454545,
+        'lava',
+        false,
+        'full'
+    );
+
+    // -- TETRAFLUOROETHYLENE -- //
+    e.register(
+        'Tetrafluoroethylene',
+        'tetrafluoroethylene',
+        0x4c4c4c,
+        'water',
+        false,
+        'high'
+    )
+
+    // -- HYDROFLOURIC ACID -- //
+    e.register(
+        'Hydrofluoric Acid',
+        'hydrofluoric_acid',
+        0x419ad2,
+        'water',
+        false,
+        'medium'
+    );
+
+    // -- CHLOROFORM -- //
+    e.register(
+        'Chloroform',
+        'chloroform',
+        0xefefef,
+        'water',
+        false,
+        'low'
+    );
+
+    // -- FLUORINE -- // 
+    e.register(
+        'Fluorine',
+        'fluorine',
+        0xe8fb97,
+        'water',
+        true,
+        'low'
+    );
 });
 
 MIRegistrationEvents.registerFluidFuels(e => {
@@ -564,5 +614,19 @@ MIMaterialEvents.addMaterials(e => {
             builder.addParts('rod', 'ring', 'gear', 'curved_plate', 'plate', 'bolt', 'drill_head', 'drill')
             .defaultRecipes()
             .addExternalPart('ingot', 'techreborn:zinc_ingot', '#c:zinc_ingots')
+        });
+    
+    e.createMaterial('Fluorite', 'fluorite', 0xe4ed9b,
+        builder => {
+            builder.addParts('dust', 'tiny_dust')
+            .ore({
+                'generate': true,
+                'ore_set': 'nether_gold',
+                'vein_size': 4,
+                'veins_per_chunk': 5,
+                'max_y': 90
+            })
+            .rawMetal('copper', true).rawMetal('iridium', false)
+            .defaultRecipes()
         });
 });

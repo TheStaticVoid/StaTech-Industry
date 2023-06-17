@@ -31,6 +31,14 @@ ServerEvents.recipes(e => {
         mi('materials/tungstensteel/craft/coil'),
         mi('armor/gravichestplate'),
         mi('electric_age/component/craft/ultradense_metal_ball_asbl')
+        mi('electric_age/component/craft/ultradense_metal_ball_asbl'),
+        mi('materials/cupronickel/craft/cable'),
+        mi('materials/electrum/craft/cable'),
+        mi('materials/aluminum/craft/cable'),
+        mi('materials/kanthal/craft/cable'),
+        mi('materials/annealed_copper/craft/cable'),
+        mi('materials/platinum/craft/cable'),
+        mi('materials/tungstensteel/craft/cable')
     ];
 
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
