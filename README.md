@@ -24,3 +24,7 @@ I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling
 3. You will be prompted with a menu describing that some mods are blocked from download on third-party launchers. Add the folder you use as your downloads folder using `Add Download Folder` button, then click `Open Missing` to open the mod downloads. Save them to your downloads and they will be detected by the launcher.
 4. Click "Ok" and allow for the process to finish. 
 5. Click "Edit" under the StaTech Industry instance and ensure you have at least 4-6 GB or RAM dedicated to the pack, as well as your version of Java is Java 17.
+
+
+## Contributors
+- kevintok - Overhauled the Scanner module config to be more colorful and useful.

@@ -8,3 +8,20 @@ ServerEvents.tags('item', e => {
 
     BUILDER_WANDS.forEach(id => e.add('kubejs:builder_wands', id));
 });
+
+ServerEvents.recipes(e => {
+    let st = (id) => `statech:wands/${id}`;
+    let wa = (id) => `wands:${id}`;
+
+    e.remove({id: wa('iron_wand') });
+    e.shaped(wa('iron_wand'), [
+        '  I',
+        ' S ',
+        'S  '
+    ],
+    {
+        I: '#c:iron_plates',
+        S: '#c:wood_sticks'
+    })
+    .id(st('iron_wand'));
+})

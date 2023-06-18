@@ -93,4 +93,19 @@ ServerEvents.recipes(e => {
             }
         }
     });
+
+    // I think the load order of KJS scripts makes it so galena smelting doesn't get added to the function above
+    // -- GALENA ORE -- //
+    megaSmelt(
+        st('galena_ingot_from_galena_ore'),
+        [ { amount: 16, tag: 'c:galena_ores' } ],
+        [ { amount: 16, item: 'modern_industrialization:lead_ingot' } ]
+    );
+
+    // -- GALENA DUST -- //
+    megaSmelt(
+        st('galena_ingot_from_galena_dust'),
+        [ { amount: 16, item: 'techreborn:galena_dust' } ],
+        [ { amount: 16, item: 'modern_industrialization:lead_ingot' } ]
+    );
 });

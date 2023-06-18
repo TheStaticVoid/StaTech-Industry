@@ -150,7 +150,7 @@
 		}
 		{
 			dependencies: ["01E58DD70F1D9B15"]
-			description: ["Smelt up your newly created &aFire Clay Dusts&r and then combine them into a crafting table to get &eFire Clay Bricks&r."]
+			description: ["Smelt up your newly created &aFire Clay Dusts&r and then &6compact&r them in a &3Basin&r using a &2Mechanical Press&r to get &eFire Clay Bricks&r."]
 			icon: "modern_industrialization:fire_clay_bricks"
 			id: "105E5F967328888F"
 			rewards: [
@@ -396,7 +396,7 @@
 				""
 				"&aPipes&r of different colors will &cnot&r connect."
 				""
-				"Right-clicking a &apipe&r with a &ewrench&r will change the connection type, shift-right-clicking will &6drop the pipe&r. You can also &aadjust the connection&r by right-clicking the connection with your hand."
+				"Right-clicking a &apipe&r with a &ewrench&r will change the connection type, shift-right-clicking will &6drop the pipe&r. You can also &aadjust the connection&r by right-clicking the connection with your hand. You can also connect &apipes&r to machines by holding &6shift and right-clicking&r while holding a &apipe&r in your hand while &efacing the machine face&r you'd like to connect to."
 				""
 				"&aFluid Pipes&r can only contain &2one type of fluid&r, and by default they &3won't connect to empty pipes or blocks&r. You can force a connection by right-clicking the center of the pipe with the wrench, or by &2right-clicking a block with a pipe in your hand&r: it will connect, but &cnot consume&r the item in your hand."
 				""
@@ -1170,7 +1170,11 @@
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
-			description: ["With a few steel plates, you can craft the &aAutomatic Trash Can&r. &dIt will destroy any item or fluid that is piped into it&r."]
+			description: [
+				"With a few steel plates, you can craft the &aAutomatic Trash Can&r. &dIt will destroy any item or fluid that is piped into it&r."
+				""
+				"You can also use it to &cdelete fluids&r in your inputs of machines by &3right clicking&r while holding the &aAutomatic Trash Can&r over the fluid in the &2machine GUI&r."
+			]
 			id: "5F56BBCF8B57F434"
 			rewards: [
 				{
@@ -1851,7 +1855,7 @@
 				""
 				"The &aLarge Tank&r has many possible sizes depending on &bhow much storage you need&r. You can open the size configuration panel by clicking on a button in the controller."
 				""
-				"Only &9pipes may access the tank&r, and &6only through the controller&r. &cDon't break the controller&r or you will void all of the stored fluid!"
+				"Only &9pipes may access the tank&r, and &6only through the controller or the &aLarge Tank Hatch&r. &cDon't break the controller&r or you will void all of the stored fluid!"
 				""
 				"If you need help building the various sizes, make sure to hold out a wrench to see where all the blocks need to go. You can also check the &bPonder&r scene by holding 'W' on the Large Tank block in your inventory."
 			]
@@ -1884,7 +1888,7 @@
 					type: "item"
 				}
 				{
-					count: 20L
+					count: 19L
 					id: "323B027726876C6A"
 					item: "modern_industrialization:steel_machine_casing"
 					type: "item"
@@ -1893,6 +1897,11 @@
 					count: 5L
 					id: "099E6D7CBED914DB"
 					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "23A16651C80F069E"
+					item: "modern_industrialization:large_tank_hatch"
 					type: "item"
 				}
 			]
@@ -4191,6 +4200,41 @@
 			}]
 			x: 19.5d
 			y: 16.0d
+		}
+		{
+			dependencies: ["4D3EDFA212A5B4F1"]
+			description: [
+				"By adding some &6Sulfur Dust&r to the &aSynthetic Oil&r you can create &eSynthetic Rubber&r, which is &26x more efficient&r for making &dRubber Sheets&r."
+				""
+				"&6Sulfur Dust&r can be easily obtained by macerating &bLignite Coal Ore&r."
+			]
+			id: "131FF702BC2707FB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43195BBDEA2377F7"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "10F8A5794C241F05"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "4E781829E1B04F2C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "24FEA0ACC74FAE69"
+				item: "modern_industrialization:synthetic_rubber_bucket"
+				type: "item"
+			}]
+			title: "More Efficient Rubber"
+			x: 10.5d
+			y: 12.0d
 		}
 	]
 	subtitle: ["The Basis of Industry"]

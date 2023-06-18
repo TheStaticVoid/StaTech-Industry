@@ -250,3 +250,7 @@ ServerEvents.recipes(e => {
 
     e.stonecutting(sp('amethyst_storage_block'), 'blockus:polished_amethyst');
 });
+
+ServerEvents.tags('block', e => {
+    e.add('c:lapis_ores', 'spectrum:blackslag_lapis_ore')
+});
