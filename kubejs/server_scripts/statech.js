@@ -117,7 +117,7 @@ ServerEvents.recipes(e => {
     ],
     {
         C: common
-    }).id('amethyst_shard_from_common');
+    }).noMirror().id('amethyst_shard_from_common');
     
     // -- TOPAZ SHARD -- //
     e.shaped('8x ' + sp('topaz_shard'), [
@@ -127,7 +127,7 @@ ServerEvents.recipes(e => {
     ],
     {
         C: common
-    }).id(st('topaz_shard_from_common'));
+    }).noMirror().id(st('topaz_shard_from_common'));
 
     // -- CITRINE SHARD -- //
     e.shaped('8x ' + sp('citrine_shard'), [
