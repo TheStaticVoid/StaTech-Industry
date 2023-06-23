@@ -672,7 +672,7 @@
 			description: [
 				"It's time to put all the preparation to good use. Using a copious amounts of Steel, create the &bTier 1 Rocket&r."
 				""
-				"To put fuel in the rocket, shift-right to open its inventory. You can put buckets of fuel into the rocket. You'll need &a12000 mB of Fuel&r to fully fuel the rocket for launch. Unfortunately you'll have to load them with buckets, as &eMI Tanks don't seem to work&r, but placing an &eMI Tank&r and filling up several buckets and unloading them into the rocket will make quick work of this task."
+				"To put fuel in the rocket, shift-right to open its inventory. You can put buckets of fuel into the rocket. You'll need &a12000 mB of Fuel&r to fully fuel the rocket for launch. Unfortunately you'll have to load them with buckets, as &eMI Tanks don't seem to work&r, but placing an &eMI Tank&r and filling up several buckets and unloading them into the rocket will make quick work of this task. (Or you can make the &aFuel Loader&r from the &eGiselle Addon&r)"
 				""
 				"Here's a pre-launch checklist just so you're ready:"
 				"- Tools/Weapons"
@@ -3740,8 +3740,8 @@
 				}
 			]
 			title: "Space Station"
-			x: -17.5d
-			y: 1.0d
+			x: -18.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0D0CC636458E8446"]
@@ -5032,8 +5032,8 @@
 				}
 				type: "item"
 			}]
-			x: -17.5d
-			y: 2.0d
+			x: -18.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0D0CC636458E8446"]
@@ -5069,8 +5069,8 @@
 				item: "ad_astra:oxygen_distributor"
 				type: "item"
 			}]
-			x: -17.5d
-			y: 3.0d
+			x: -18.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7633B2FDE567585E"]
@@ -5285,7 +5285,7 @@
 				item: "ad_astra:solar_panel"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -11.0d
 			y: 11.0d
 		}
 		{
@@ -5356,6 +5356,269 @@
 			}]
 			x: 2.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["41EE82F6FDB2109C"]
+			description: ["Instead of loading fuel into your &eRocket&r &cby hand&r, wouldn't it be &3much easier&r to &bpipe the fluid into a machine&r to fuel it? Of course it would be! The &aFuel Loader&r takes in &6Fuel&r or &3Cryofuel&r and &dloads it into nearby Rockets or Rovers&r. "]
+			id: "7872342E2E86BA04"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "202E99C607ACF9C3"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "2C9BF8002FD85675"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "60B30A53975540B6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "184D780EEE5612D5"
+				item: "ad_astra_giselle_addon:fuel_loader"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0D0CC636458E8446"]
+			description: ["Want to enjoy your &enew space station&r or &2base on the moon&r without the &cannoying effects of gravity&r changing how you jump? Then the &aGravity Normalizer&r is for you. By using some &6power every 10 ticks&r, it can &dgenerate a field around it&r that will &bnormalize gravity&r to what you would expect back on &2Earth&r."]
+			id: "5B0156123CC6A19C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "44576B660A4E9E0F"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1F208BC5FA29D035"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "4F25F7653399F8ED"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2951FC77A6C80C26"
+				item: "ad_astra_giselle_addon:gravity_normalizer"
+				type: "item"
+			}]
+			x: -18.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["565F8D6169BE21A4"]
+			description: ["&cToo lazy to craft the rocket yourself&r? Once you have all the parts you can just dump the recipe into this handy &aAutomation NASA Workbench&r. &2It'll take care of the rest for you&r (with some power)!"]
+			id: "1E108EFC9ADBFE64"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "637B24C81C59B29F"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "20666913A2E9F3F7"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "415ED24652F567E5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "19EA6504A12B9B3A"
+				item: "ad_astra_giselle_addon:automation_nasa_workbench"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["54D443AD7BBA040B"]
+			description: [
+				"While that &aNetherite Suit&r is a fancy upgrade, wouldn't you like to wear your &eown armor&r into space? With the &2Space Breathing&r &denchantment&r, you can! "
+				""
+				"This &denchantment&r &cmust be applied to ALL pieces of armor&r, and you must have an &3Oxygen Can&r in your inventory in order for it to work."
+				""
+				"&eTip&r: Keep your &aNetherite Suit&r for now, but remember that you can come back and make this later..."
+			]
+			id: "4E88F901B02BF2E8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5ED1D6F9D69DA4F5"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "063F3F43B6BFC3EC"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "100D09D53C3A5C66"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4FFEF923D417EC3F"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "ad_astra_giselle_addon:space_breathing"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "Space Breathing"
+			x: -15.0d
+			y: 10.75d
+		}
+		{
+			dependencies: ["299AA5584498D69A"]
+			description: ["Annoyed by the &6different gravity&r on planets? You can &denchant&r your gear with &aGravity Normalizing&r to negate this effect."]
+			id: "1EBCB519969F0209"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5527DB60344348AE"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "72E6517B2AB6F681"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "2D4B1FE0B3E4169E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "40039CC065C7E65E"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "ad_astra_giselle_addon:gravity_normalizing"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "Gravity Normalizing"
+			x: -14.5d
+			y: 6.25d
+		}
+		{
+			dependencies: ["488543DD1EEAF483"]
+			description: ["&cAcid Rain&r on &6Venus&r got you down? Don't let it rain on your parade with the &aAcid Rain Proof&r &denchantment&r!"]
+			id: "07913F5C716CE148"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5688E57CE7A75AF9"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "3188CCBD8283353D"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "5AE6687B6D2FCCC4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "0EE66C5BA3E62110"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "ad_astra_giselle_addon:acid_rain_proof"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "Acid Rain Proof"
+			x: -10.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["234D4BC93E0C9108"]
+			description: ["Need to make sure you don't &cburn up&r in a hot atmosphere? The &eSpace Fire Proof&r will prevent the damage you take from hot planets."]
+			id: "27CD6298402490F1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "707E81D015698641"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "6BAA552992D55AF9"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "0E7966034E2868A6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "701F5B271E4ED89A"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "ad_astra_giselle_addon:space_fire_proof"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "Space Fire Proof"
+			x: -14.0d
+			y: 10.75d
 		}
 	]
 	subtitle: ["High tech!"]
