@@ -96,20 +96,6 @@ ServerEvents.recipes(e => {
         [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
     );
 
-    // -- DRILLING FLUID -- //
-    mixer(
-        st('drilling_fluid'),
-        8,
-        400,
-        [ { amount: 16, item: mc('clay_ball') } ],
-        null,
-        [
-            { amount: 700, fluid: mc('water') },
-            { amount: 100, fluid: mi('lubricant') }
-        ],
-        [ { amount: 1000, fluid: mi('drilling_fluid') } ]
-    );
-
     let mixerConsumable = (fluid, amount) => {
         if (amount < 100)
             amount = 1000;

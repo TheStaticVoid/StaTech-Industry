@@ -1456,10 +1456,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"5D1DD7B1C1BB8BEC"
-				"6E7B9D7C331203C4"
-			]
+			dependencies: ["5D1DD7B1C1BB8BEC"]
 			description: ["With the EBF created and all the new materials created, it's time to put it all together. You're so close to your first &cElectronic Circuit&r!"]
 			id: "59F8FE8CBA6A4421"
 			rewards: [
@@ -4924,7 +4921,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["7FD9582038C29150"]
+			dependencies: ["575EE8E0720CE7DC"]
 			description: [
 				"The &aTurbo Machine Hull&r is the machine hull of the &6HV tier&r. This hull can upgrade your machines to the &6HV tier&r or you can use them to craft the &dbrand new multiblocks&r!"
 				""
@@ -4958,7 +4955,7 @@
 				item: "modern_industrialization:turbo_machine_hull"
 				type: "item"
 			}]
-			x: 39.5d
+			x: 38.0d
 			y: 9.0d
 		}
 		{
@@ -5710,13 +5707,11 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["5D1DD7B1C1BB8BEC"]
+			dependencies: ["6C3EAE1F16E1048A"]
 			description: [
 				"The Cables of MV are:"
 				"- &cCupronickel&r"
 				"- &eElectrum&r"
-				""
-				"Haphazardly applying &aRubber Sheets&r to your wires is not &cgoing to cut it for these wires&r. You will have to create them in the &eAssembler&r using &3Synthetic Rubber&r and eventually &2Styrene-Butadiene Rubber&r."
 				""
 				"These cables can transfer up to &e1024 EU/t&r and have an internal buffer of &61024 EU&r."
 			]
@@ -5754,8 +5749,8 @@
 				type: "item"
 			}]
 			title: "MV Cables"
-			x: 13.5d
-			y: 3.0d
+			x: 10.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4E194F2BBB21F033"]
@@ -6521,8 +6516,8 @@
 				item: "moderndynamics:mv_cable"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 3.0d
+			x: 10.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["6057F77940F5356C"]
@@ -6554,225 +6549,6 @@
 			}]
 			x: 9.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["473C1DE557D3E9C0"]
-			description: [
-				"Tired of &cleaving your base&r to &acut down trees&r? Wish there was a more i&2ndustrial solution&r to your problem? Then wish no longer! The &6Industrial Greenhouse&r takes in a &3vanilla sapling&r, &bbone meal&r, and &9some water&r to produce &dnear infinite logs&r! "
-				""
-				"While the recipes are&c slow at first&r, once the multiblock reaches the &amax overclock&r it will be sending out&e tons of logs&r!"
-				""
-				"Remember you can &bPonder&r the multiblock by holding 'W' on the &aIndustrial Greenhouse&r item in your inventory. You can also hold your wrench out to see where blocks need to be placed."
-			]
-			id: "759E7BFAA33DB285"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3AC21DE4048234F8"
-					table_id: 238949117979752405L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "3D25DA747C547203"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "396118158A964AFA"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "4DD978F3A99F0117"
-					item: "modern_industrialization:greenhouse"
-					type: "item"
-				}
-				{
-					count: 56L
-					id: "27B2FD42ADBFB147"
-					item: "minecraft:glass"
-					type: "item"
-				}
-				{
-					count: 20L
-					id: "20555A1452A4849B"
-					item: "minecraft:grass_block"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "1354B628A3DB8C26"
-					item: "factory_blocks:metalbox"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "0FE88D4A83EBD986"
-					item: "factory_blocks:rusty_scaffold"
-					type: "item"
-				}
-				{
-					count: 11L
-					id: "3E4D1597E6997EBC"
-					item: "modern_industrialization:steel_machine_casing"
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "1C252427F2D1F5DC"
-					item: "minecraft:oak_leaves"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "1CBB17E28B68A294"
-					item: "minecraft:oak_log"
-					type: "item"
-				}
-				{
-					id: "7A97885DEA131EC2"
-					item: "minecraft:glowstone"
-					type: "item"
-				}
-				{
-					id: "2B895C63C9C43800"
-					item: "minecraft:dirt"
-					type: "item"
-				}
-				{
-					id: "0712B9AC02354602"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:item_input_hatch"
-						}
-					}
-					title: "Any Item Input Hatch"
-					type: "item"
-				}
-				{
-					id: "6F4590AC8D46673C"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:item_output_hatch"
-						}
-					}
-					title: "Any Item Output Hatch"
-					type: "item"
-				}
-				{
-					id: "69C181E1BE9DF137"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:fluid_input_hatch"
-						}
-					}
-					title: "Any Fluid Input Hatch"
-					type: "item"
-				}
-				{
-					id: "6D55ADB8847443BE"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:energy_input_hatch"
-						}
-					}
-					title: "Any Energy Input Hatch"
-					type: "item"
-				}
-			]
-			x: -1.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["575EE8E0720CE7DC"]
-			description: [
-				"The cables of HV are:"
-				"- &bAluminum&r"
-				"- &eKanthal&r"
-				""
-				"With a &anew tier&r, comes a &2new requirement for insulating the wires&r. &eSynthetic Rubber&r is &cno longer able to suffice for this voltage&r, you will need at least &6Styrene-Butadiene Rubber&r. A &3cheaper recipe&r is also available at this tier for &dPolytetrafluoroethylene&r, but you can skip that for now if you'd like!"
-				""
-				""
-				"These cables can transfer up to &e8192 EU/t&r and have an internal buffer of&6 8192 EU&r."
-			]
-			id: "7FD9582038C29150"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3930F57AD3346BDB"
-					table_id: 2875761064117204871L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4E12C21188E5B8E0"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "11B375BAAAC24C5F"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "71A8D60E51326666"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "kubejs:hv_wire"
-					}
-				}
-				title: "Any HV Cable"
-				type: "item"
-			}]
-			title: "HV Cables"
-			x: 37.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["7FD9582038C29150"]
-			description: ["This is the &eModern Dynamics&r version of the &aHV-tier Cables&r."]
-			id: "1185A36879732D6A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "73C6FB73EBF385E5"
-					table_id: 2875761064117204871L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "2DB17612BA7BE13A"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "31E447E4B62D3659"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "2233959BCAB07E4E"
-				item: "moderndynamics:hv_cable"
-				type: "item"
-			}]
-			x: 37.0d
-			y: 10.5d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]

@@ -111,15 +111,4 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('superconductor_hot_ingot') }
         ]
     );
-
-    // -- FLUORINE -- //
-    blastFurnace(
-        st('fluorine'),
-        16,
-        200,
-        [ { amount: 1, item: mi('fluorite_dust') } ],
-        null,
-        null,
-        [ { amount: 1000, fluid: mi('fluorine') } ]
-    );
 });

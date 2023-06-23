@@ -2478,6 +2478,57 @@
 			y: 8.5d
 		}
 		{
+			dependencies: ["2563B78CFC661CCB"]
+			description: [
+				"Unfortunately, the inclusion of &eTerralith&r causes world generation to not generate a lot of the specific materials needed to progress here. "
+				""
+				"As an &aalternative method&r of obtaining the next material, I offer you a simple trade. A &bstack of sugarcane&r, &dhalf stack of ink sacs&r, and lots of &7clay&r, and I'll reward you with what you desire."
+				""
+				"If you &cmess up and lose this piece&r, &edon't worry&r, you can &3craft more&r using &dStaTech Coins&r."
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "3656F4B14A8B29F9"
+			rewards: [
+				{
+					id: "43CE84A4E925311D"
+					item: "spectrum:quitoxic_reeds"
+					type: "item"
+				}
+				{
+					id: "539C844C826FEDF6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "4FBDB0B15F640FB2"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "132E767066B7DD68"
+					item: "minecraft:ink_sac"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "790FEB04E5F77681"
+					item: "minecraft:clay"
+					type: "item"
+				}
+			]
+			title: "A Terralith Skill Issue"
+			x: 9.0d
+			y: 2.5d
+		}
+		{
 			dependencies: [
 				"791C2898ADBEFEED"
 				"110608268753D48A"
@@ -2512,6 +2563,56 @@
 			title: "Under the Sea"
 			x: 1.5d
 			y: 10.5d
+		}
+		{
+			dependencies: ["791C2898ADBEFEED"]
+			description: ["Again, due to &eTerralith&r changing world generation so much, the next material is &cextremely difficult to find&r. So, once again, I offer a &atrade&r. A &bstack of kelp&r, &9stack of lapis&r, and some &bseagrass&r and I will grant you what you seek."]
+			hide: true
+			hide_dependency_lines: true
+			id: "110608268753D48A"
+			rewards: [
+				{
+					id: "74913ED611A04ADB"
+					item: "spectrum:mermaids_gem"
+					type: "item"
+				}
+				{
+					id: "6312F939888FD1BF"
+					item: "spectrum:mermaids_brush"
+					type: "item"
+				}
+				{
+					id: "2F3E92EB013A8EE9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 64L
+					id: "15175DD7FCE3884F"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "6BCC0F20C494228C"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "2657F978975CEEFB"
+					item: "minecraft:seagrass"
+					type: "item"
+				}
+			]
+			title: "Another Terralith Skill Issue"
+			x: 3.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["0EB9D10AAC86F6A2"]

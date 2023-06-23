@@ -25,7 +25,7 @@ ServerEvents.recipes(e => {
     }
 
 
-    // -- LOGS TO CHARCOAL + WOOD TAR
+    // -- LOGS TO CHARCOAL + CREOSOTE
     pyrolyseOven(
         st('charcoal_cresote_from_logs'),
         16,
@@ -34,17 +34,19 @@ ServerEvents.recipes(e => {
             { amount: 16, tag: mc('logs') }
         ],
         [
-            { amount: 24, item: mc('charcoal') }
+            { amount: 16, item: mc('charcoal') }
         ],
         [
             { amount: 8000, fluid: mi('steam') }
         ],
         [
-            { amount: 1000, fluid: mi('wood_tar') }
+            { amount: 2000, fluid: mi('creosote') }
         ]
     );
 
-    // -- COAL TO COKE + CREOSOTE -- //
+    // -- COAL TO COKE + BENZENE -- //
+    // Was originally going to be Phenol, but Benzene is basically phenol without the hydroxide
+    // Maybe I will add the distillation later
     pyrolyseOven(
         st('coke_benzene_from_coal'),
         16,
@@ -53,17 +55,17 @@ ServerEvents.recipes(e => {
             { amount: 16, item: mc('coal') }
         ],
         [
-            { amount: 20, item: mi('coke') }
+            { amount: 16, item: mi('coke') }
         ],
         [
             { amount: 8000, fluid: mi('steam') }
         ],
         [
-            { amount: 1000, fluid: mi('creosote') }
+            { amount: 1000, fluid: mi('benzene') }
         ]
     );
 
-    // -- COAL DUST TO COKE DUST + CREOSOTE -- //
+    // -- COAL DUST TO COKE DUST + BENZENE -- //
     pyrolyseOven(
         st('coke_dust_benzene_from_coal_dusts'),
         16,
@@ -72,13 +74,13 @@ ServerEvents.recipes(e => {
             { amount: 16, tag: 'c:coal_dusts' }
         ],
         [
-            { amount: 20, item: mi('coke_dust') }
+            { amount: 16, item: mi('coke_dust') }
         ],
         [
             { amount: 8000, fluid: mi('steam') }
         ],
         [
-            { amount: 1000, fluid: mi('creosote') }
+            { amount: 1000, fluid: mi('benzene') }
         ]
     );
 });

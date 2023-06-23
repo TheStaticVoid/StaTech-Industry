@@ -8,17 +8,7 @@ ServerEvents.recipes(e => {
 
     const REMOVED_RECIPE = [    
         mi('electric_age/component/assembler/qbit'),
-        mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball'),
-        mi('materials/aluminum/assembler/cable_synthetic_rubber'),
-        mi('materials/aluminum/assembler/cable_styrene_rubber'),
-        mi('materials/kanthal/assembler/cable_synthetic_rubber'),
-        mi('materials/kanthal/assembler/cable_styrene_rubber'),
-        mi('materials/annealed_copper/assembler/cable_synthetic_rubber'),
-        mi('materials/annealed_copper/assembler/cable_styrene_rubber'),
-        mi('materials/platinum/assembler/cable_synthetic_rubber'),
-        mi('materials/platinum/assembler/cable_styrene_rubber'),
-        mi('materials/tungstensteel/assembler/cable_synthetic_rubber'),
-        mi('materials/tungstensteel/assembler/cable_styrene_rubber')
+        mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball')
     ];
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
@@ -41,72 +31,6 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe);
     }
-
-    // -- ALUMINUM CABLE -- //
-    assembler(
-        st('aluminum_cable_styrene_rubber'),
-        2,
-        200, 
-        [ { amount: 3, item: mi('aluminum_wire') } ],
-        [ { amount: 3, item: mi('aluminum_cable') } ],
-        [ { amount: 30, fluid: mi('styrene_butadiene_rubber') } ] 
-    );
-    assembler(
-        st('aluminum_cable_ptfe'),
-        2,
-        200,
-        [ { amount: 3, item: mi('aluminum_wire') } ],
-        [ { amount: 3, item: mi('aluminum_cable') } ],
-        [ { amount: 6, fluid: mi('polytetrafluoroethylene') } ]
-    );
-
-    // -- KANTHAL CABLE -- //
-    assembler(
-        st('kanthal_cable_styrene_rubber'),
-        2,
-        200,
-        [ { amount: 3, item: mi('kanthal_wire') } ],
-        [ { amount: 3, item: mi('kanthal_cable') } ],
-        [ { amount: 30, fluid: mi('styrene_butadiene_rubber') } ]
-    );
-    assembler(
-        st('kanthal_cable_ptfe'),
-        2,
-        200,
-        [ { amount: 3, item: mi('kanthal_wire') } ],
-        [ { amount: 3, item: mi('kanthal_cable') } ],
-        [ { amount: 6, fluid: mi('polytetrafluoroethylene') } ]
-    );
-    
-    // -- ANNEALED COPPER CABLE -- //
-    assembler(
-        st('annealed_copper_cable_ptfe'),
-        2,
-        200,
-        [ { amount: 3, item: mi('annealed_copper_wire') } ],
-        [ { amount: 3, item: mi('annealed_copper_cable') } ],
-        [ { amount: 30, fluid: mi('polytetrafluoroethylene') } ]
-    );
-
-    // -- PLATINUM CABLE -- //
-    assembler(
-        st('platinum_cable_ptfe'),
-        2,
-        200,
-        [ { amount: 3, item: mi('platinum_wire') } ],
-        [ { amount: 3, item: mi('platinum_cable') } ],
-        [ { amount: 30, fluid: mi('polytetrafluoroethylene') } ]
-    );
-
-    // -- TUNGSTENSTEEL CABLE -- //
-    assembler(
-        st('tungstensteel_cable_ptfe'),
-        2,
-        200,
-        [ { amount: 3, item: mi('tungstensteel_wire') } ],
-        [ { amount: 3, item: mi('tungstensteel_cable') } ],
-        [ { amount: 30, fluid: mi('polytetrafluoroethylene') } ]
-    );
 
     // -- CUPRONICKEL HEATING COIL -- //
     assembler(
@@ -412,7 +336,6 @@ ServerEvents.recipes(e => {
         [ { amount: 8, item: 'anim_guns:standard_handgun_cartridge' } ]
     );
 
-    // -- HEAVY HANDGUN CARTRIDGE -- //
     assembler(
         st('heavy_handgun_cartridge'),
         8,
@@ -425,7 +348,6 @@ ServerEvents.recipes(e => {
         [ { amount: 8, item: 'anim_guns:heavy_handgun_cartridge' } ]
     );
 
-    // -- STANDARD RIFLE CARTRIDGE -- //
     assembler(
         st('standard_rifle_cartridge'),
         8, 
@@ -438,7 +360,6 @@ ServerEvents.recipes(e => {
         [ { amount: 8, item: 'anim_guns:standard_rifle_cartridge' } ]
     );
 
-    // -- HEAVY RIFLE CARTRIDGE -- //
     assembler(
         st('heavy_rifle_cartridge'),
         8,
@@ -451,7 +372,6 @@ ServerEvents.recipes(e => {
         [ { amount: 8, item: 'anim_guns:heavy_rifle_cartridge' } ]
     );
 
-    // -- SHOTGUN SHELL -- //
     assembler(
         st('shotgun_shell'),
         8,

@@ -11,14 +11,7 @@ ServerEvents.recipes(e => {
         mi('compat/ae2/printed_engineering_processor'),
         mi('compat/ae2/printed_logic_processor'),
         mi('compat/ae2/printed_silicon'),
-        mi('compat/ae2/printed_silicon_from_ingot'),
-        mi('materials/electrum/packer/cable'),
-        mi('materials/cupronickel/packer/cable'),
-        mi('materials/aluminum/packer/cable'),
-        mi('materials/kanthal/packer/cable'),
-        mi('materials/annealed_copper/packer/cable'),
-        mi('materials/platinum/packer/cable'),
-        mi('materials/tungstensteel/packer/cable')
+        mi('compat/ae2/printed_silicon_from_ingot')
     ];
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
