@@ -47,6 +47,13 @@ StartupEvents.registry('item', e => {
     e.create('clear_boots', 'boots')
         .tier('clear')
         .tooltip('§3Works great in cosmetic armor slots');
+    
+    e.create('core_fragment')
+        .displayName('Core Fragment')
+        .rarity('Rare');
+    
+    e.create('diamond_lens')
+        .displayName('Diamond Lens');
 });
 
 ItemEvents.armorTierRegistry(event => {

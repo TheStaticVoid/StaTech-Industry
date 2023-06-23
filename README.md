@@ -25,6 +25,9 @@ I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling
 4. Click "Ok" and allow for the process to finish. 
 5. Click "Edit" under the StaTech Industry instance and ensure you have at least 4-6 GB or RAM dedicated to the pack, as well as your version of Java is Java 17.
 
-
 ## Contributors
 - kevintok - Overhauled the Scanner module config to be more colorful and useful.
+- Deadeye Dutch - Some of the custom item textures
+
+## Credits
+Some machine overlay textures were taken from [GTCE](https://github.com/GregTechCE/GregTech)

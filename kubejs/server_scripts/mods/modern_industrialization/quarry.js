@@ -108,6 +108,7 @@ ServerEvents.recipes(e => {
         ],
         [
             { amount: 1, item: mi('antimony_ore'), probability: 0.2 },
+            { amount: 1, item: mi('fluorite_ore'), probability: 0.2 },
             { amount: 1, item: mc('diamond_ore'), probability: 0.12 },
             { amount: 1, item: mc('lapis_ore'), probability: 0.1 },
             { amount: 1, item: mi('lead_ore'), probability: 0.25 },

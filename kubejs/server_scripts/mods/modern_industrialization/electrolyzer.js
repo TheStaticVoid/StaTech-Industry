@@ -230,4 +230,31 @@ ServerEvents.recipes(e => {
             { amount: 3, item: mi('silicon_dust') }
         ]
     );
+
+    // -- HYDROCHLORIC ACID -- //
+    electrolyzer(
+        st('hydrochloric_acid'),
+        16,
+        400,
+        null,
+        null,
+        [ { amount: 1000, fluid: mi('hydrochloric_acid') } ],
+        [
+            { amount: 500, fluid: mi('hydrogen') },
+            { amount: 500, fluid: mi('chlorine') }
+        ]
+    );
+
+    // -- CHLOROFORM -- //
+    electrolyzer(
+        st('electrolyzer'),
+        16,
+        400,
+        null,
+        [ { amount: 1, item: mi('carbon_dust') } ],
+        [
+            { amount: 300, fluid: mi('hydrogen') },
+            { amount: 600, fluid: mi('chlorine') }
+        ]
+    );
 });
