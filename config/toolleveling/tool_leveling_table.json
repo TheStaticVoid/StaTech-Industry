@@ -1,0 +1,32 @@
+{
+  "general_options": {
+    "minimum_upgrade_cost": 1000,
+    "allow_leveling_of_useless_enchantments": true,
+    "allow_leveling_of_breaking_enchantments": true,
+    "free_upgrades_for_creative_players": true
+  },
+  "enchantment_options": {
+    "enchantment_whitelist": [],
+    "enchantment_blacklist": [
+      "minecraft:mending",
+      "minecraft:aqua_affinity",
+      "minecraft:channeling",
+      "minecraft:binding_curse",
+      "minecraft:vanishing_curse",
+      "minecraft:flame",
+      "minecraft:infinity",
+      "minecraft:multishot",
+      "minecraft:silk_touch"
+    ],
+    "global_enchantment_cap": 20,
+    "enchantment_caps": {
+      "minecraft:fire_protection": 100
+    },
+    "global_upgrade_cost_multiplier": 2.0,
+    "enchantment_upgrade_cost_modifier": {
+      "minecraft:looting": 1.5
+    },
+    "global_minimum_enchantment_level": 0,
+    "minimum_enchantment_levels": {}
+  }
+}

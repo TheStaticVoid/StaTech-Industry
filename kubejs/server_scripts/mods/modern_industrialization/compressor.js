@@ -12,7 +12,8 @@ ServerEvents.recipes(e => {
         mi('compat/techreborn/compressor/_c_zinc_ingots_to_techreborn_zinc_plate'),
         mi('compressor/calorite_ingot_to_plate'),
         mi('vanilla_recipes/compressor/paper_with_sugarcane'),
-        mi('compressor/desh_ingot_to_plate')
+        mi('compressor/desh_ingot_to_plate'),
+        mi('compat/techreborn/compressor/techreborn_lazurite_dust_to_techreborn_lazurite_plate')
     ];
     DELETED_RECIPE.forEach(id => e.remove({id: id}));
 
@@ -69,6 +70,15 @@ ServerEvents.recipes(e => {
         [
             { amount: 1, item: mc('bricks') }
         ]
+    );
+
+    // -- FIRE CLAY BRICKS -- //
+    compressor(
+        st('fire_clay_bricks'),
+        2,
+        300,
+        [ { amount: 4, item: mi('fire_clay_brick') } ],
+        [ { amount: 1, item: mi('fire_clay_bricks') } ]
     );
 
     // -- RUBBER SHEETS -- //

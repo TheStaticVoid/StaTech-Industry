@@ -56,6 +56,23 @@ ServerEvents.recipes(e => {
         .id(st('dough'))
         .replaceIngredient('kibe:water_wooden_bucket', 'kibe:wooden_bucket');
 
+    // -- FIRECLAY BRICKS -- //
+    e.custom({
+        id: st('fire_clay_bricks'),
+        type: cr('compacting'),
+        ingredients: [
+            { item: mi('fire_clay_brick') },
+            { item: mi('fire_clay_brick') },
+            { item: mi('fire_clay_brick') },
+            { item: mi('fire_clay_brick') }
+        ],
+        results: [
+            { 
+                item: mi('fire_clay_bricks')
+            }
+        ]
+    });
+
     // -- BRONZE PLATE -- //
     e.custom({
         id: st('bronze_plate'),
@@ -153,4 +170,68 @@ ServerEvents.recipes(e => {
         B: 'minecraft:iron_bars'
     })
     .id(st('sprinkler'));
+
+    // -- BULK WASHING MI FLUID PIPES -- //
+    e.custom({
+        type: cr('splashing'),
+        ingredients: [ { tag: mi('fluid_pipes') } ],
+        results: [ { item: mi('fluid_pipe') } ]
+    })
+    .id(st('fluid_pipe_cleaning'));
+
+    // -- BULK WASHING MI ITEM PIPES -- //
+    e.custom({
+        type: cr('splashing'),
+        ingredients: [ { tag: mi('item_pipes') } ],
+        results: [ { item: mi('item_pipe') } ]
+    })
+    .id(st('item_pipe_cleaning'));
+
+    // -- BULK WASHING MI ME WIRES -- //
+    e.custom({
+        type: cr('splashing'),
+        ingredients: [ { tag: mi('me_wires') } ],
+        results: [ { item: mi('me_wire')}]
+    })
+    .id(st('me_wire_cleaning'));
+
+    // -- BULK WASHING AE2 SMART CABLES -- //
+    e.custom({
+        type: cr('splashing'),
+        ingredients: [ { tag: 'ae2:smart_cable' } ],
+        results: [ { item: 'ae2:fluix_smart_cable' } ]
+    })
+    .id(st('smart_cable_cleaning'));
+
+    // -- BULK WASHING AE2 COVERED CABLES -- //
+    e.custom({
+        type: cr('splashing'),
+        ingredients: [ { tag: 'ae2:covered_cable' } ],
+        results: [ { item: 'ae2:fluix_covered_cable' } ]
+    })
+    .id(st('covered_cable_cleaning'));
+
+    // -- BULK WASHING AE2 GLASS CABLES -- //
+    e.custom({
+        type: cr('splashing'),
+        ingredients: [ { tag: 'ae2:glass_cable' } ],
+        results: [ { item: 'ae2:fluix_glass_cable' } ]
+    })
+    .id(st('glass_cable_cleaning'));
+
+    // -- BULK WASHING AE2 DENSE COVERED CABLES -- //
+    e.custom({
+        type: cr('splashing'),
+        ingredients: [ { tag: 'ae2:covered_dense_cable' } ],
+        results: [ { item: 'ae2:fluix_covered_dense_cable' } ]
+    })
+    .id(st('dense_cable_cleaning'));
+
+    // -- BULK WASHING AE2 DENSE SMART CABLES -- //
+    e.custom({
+        type: cr('splashing'),
+        ingredients: [ { tag: 'ae2:smart_dense_cable' } ],
+        results: [ { item: 'ae2:fluix_smart_dense_cable' } ]
+    })
+    .id(st('smart_dense_cable_cleaning'));
 });
