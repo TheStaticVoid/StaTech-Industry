@@ -1,0 +1,25 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -32,
+        "yMax": 32,
+        "size": 40,
+        "biomeTag": "#minecraft:is_overworld",
+        "spread": 15,
+        "generationWeight": 2,
+        "blocks": {
+            "default": [
+                {
+                    "block": "modern_industrialization:quartz_ore",
+                    "chance": 1.0
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:quartz_ore_sample",
+                "chance": 1.0
+            }
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "FORCE_DEEPSLATE_SAMPLE_CAVEGEN": false,
+  "DISABLE_IN_AREA_MESSAGE": false,
+  "REMOVE_VEINS": true,
+  "CHUNK_SKIP_CHANCE": 0.94,
+  "NUMBER_CLUSTERS_PER_CHUNK": 2,
+  "DEBUG_WORLD_GEN": false,
+  "MAX_SAMPLES_PER_CHUNK": 8,
+  "DEFAULT_REPLACEMENT_MATERIALS": [
+    "minecraft:stone",
+    "minecraft:andesite",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:netherrack",
+    "minecraft:sandstone",
+    "minecraft:deepslate",
+    "minecraft:tuff",
+    "minecraft:calcite",
+    "minecraft:dripstone_block"
+  ],
+  "PROSPECTORS_PICK_DETECTION_BLACKLIST": [],
+  "PROSPECTORS_PICK_RANGE": 10,
+  "PROSPECTORS_PICK_DIAMETER": 10,
+  "PROSPECTORS_POPUP_RIGHT": false
+}
