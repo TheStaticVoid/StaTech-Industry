@@ -103,7 +103,7 @@ ServerEvents.recipes(e => {
         100,
         [
             { amount: 1, item: mc('dirt') },
-            { amount: 1, tag: 'c:seeds' }
+            { amount: 1, item: mc('wheat_seeds') , probability: 0.0 }
         ],
         [ { amount: 1, item: mc('grass_block') } ],
         [ { amount: 1000, fluid: mc('water') } ]
