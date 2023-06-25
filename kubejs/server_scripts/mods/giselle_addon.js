@@ -53,7 +53,7 @@ ServerEvents.recipes(e => {
         H: mi('turbo_machine_hull'),
         C: mi('digital_circuit'),
         B: ad('space_boots'),
-        L: '#c:desh_blocks'
+        D: '#c:desh_blocks'
     })
     .id(st('gravity_normalizer'));
 
