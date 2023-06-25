@@ -27,4 +27,7 @@ I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling
 
 
 ## Contributors
+- DeadeyeDutch - Sprite work for custom items
+- inferno - Pack logo
 - kevintok - Overhauled the Scanner module config to be more colorful and useful.
+- TacoMonkey - Marking client-side mods for packwiz
