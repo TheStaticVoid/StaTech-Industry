@@ -96,6 +96,19 @@ ServerEvents.recipes(e => {
         [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
     );
 
+    // -- GRASS BLOCK RECIPE PARITY -- //
+    mixer(
+        st('grass_block'),
+        2,
+        100,
+        [
+            { amount: 1, item: mc('dirt') },
+            { amount: 1, tag: 'c:seeds' }
+        ],
+        [ { amount: 1, item: mc('grass_block') } ],
+        [ { amount: 1000, fluid: mc('water') } ]
+    );
+
     let mixerConsumable = (fluid, amount) => {
         if (amount < 100)
             amount = 1000;
