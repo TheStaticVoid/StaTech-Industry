@@ -117,7 +117,8 @@ ServerEvents.recipes(e => {
     ],
     {
         C: common
-    }).noMirror().id('amethyst_shard_from_common');
+    })
+    .noMirror().id('amethyst_shard_from_common');
     
     // -- TOPAZ SHARD -- //
     e.shaped('8x ' + sp('topaz_shard'), [
@@ -127,7 +128,8 @@ ServerEvents.recipes(e => {
     ],
     {
         C: common
-    }).noMirror().id(st('topaz_shard_from_common'));
+    })
+    .noMirror().id(st('topaz_shard_from_common'));
 
     // -- CITRINE SHARD -- //
     e.shaped('8x ' + sp('citrine_shard'), [
@@ -308,6 +310,15 @@ ServerEvents.recipes(e => {
     {
         C: mythic
     }).id(st('soulbound_from_mythic'));
+
+    e.shaped(Item.of('minecraft:enchanted_book').enchant('ad_astra_giselle_addon:space_breathing', 1), [
+        'C C',
+        ' C ',
+        'C C'
+    ],
+    {
+        C: mythic
+    }).id(st('space_breathing_from_mythic'));
 });
 
 ServerEvents.tags('item', e => {
