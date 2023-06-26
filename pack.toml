@@ -6,7 +6,11 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
+<<<<<<< Updated upstream
 hash = "63999f846a0e963e6fac18127bf6192b981d542c43f6464545334440ffc324f8"
+=======
+hash = "1c7da5ef73089810cdaca571a582f324ef657db2177409d9747dbd8687054263"
+>>>>>>> Stashed changes
 
 [versions]
 fabric = "0.14.21"
