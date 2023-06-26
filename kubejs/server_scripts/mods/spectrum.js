@@ -1,6 +1,10 @@
 ServerEvents.tags('item', e => {
     let sp = (id) => `spectrum:${id}`;
 
+    e.add('c:tools/pickaxes', sp('bedrock_pickaxe'));
+    e.add('c:tools/axes', sp('bedrock_axe'));
+    e.add('c:tools/shovels', sp('bedrock_shovel'));
+
     const POLISHED_GEMSTONE = [
         sp('topaz_storage_block'),
         sp('amethyst_storage_block'),

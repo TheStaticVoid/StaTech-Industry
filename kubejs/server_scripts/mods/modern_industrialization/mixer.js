@@ -96,18 +96,17 @@ ServerEvents.recipes(e => {
         [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
     );
 
-    // -- DRILLING FLUID -- //
+    // -- GRASS BLOCK RECIPE PARITY -- //
     mixer(
-        st('drilling_fluid'),
-        8,
-        400,
-        [ { amount: 16, item: mc('clay_ball') } ],
-        null,
+        st('grass_block'),
+        2,
+        100,
         [
-            { amount: 700, fluid: mc('water') },
-            { amount: 100, fluid: mi('lubricant') }
+            { amount: 1, item: mc('dirt') },
+            { amount: 1, item: mc('wheat_seeds') , probability: 0.0 }
         ],
-        [ { amount: 1000, fluid: mi('drilling_fluid') } ]
+        [ { amount: 1, item: mc('grass_block') } ],
+        [ { amount: 1000, fluid: mc('water') } ]
     );
 
     let mixerConsumable = (fluid, amount) => {

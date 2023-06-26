@@ -32,13 +32,6 @@ ServerEvents.recipes(e => {
         mi('armor/gravichestplate'),
         mi('electric_age/component/craft/ultradense_metal_ball_asbl'),
         mi('materials/fire_clay_bricks')
-        mi('materials/cupronickel/craft/cable'),
-        mi('materials/electrum/craft/cable'),
-        mi('materials/aluminum/craft/cable'),
-        mi('materials/kanthal/craft/cable'),
-        mi('materials/annealed_copper/craft/cable'),
-        mi('materials/platinum/craft/cable'),
-        mi('materials/tungstensteel/craft/cable')
     ];
 
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
@@ -130,21 +123,6 @@ ServerEvents.recipes(e => {
         C: mi('calorite_machine_casing')
     })
     .id(st('space_probe_launcher'));
-
-    // -- INDUSTRIAL GREENHOUSE -- //
-    e.shaped(mi('greenhouse'), [
-        'MCM',
-        'RHR',
-        'PCP'
-    ],
-    {
-        M: mi('motor'),
-        C: mi('analog_circuit'),
-        H: mi('basic_machine_hull'),
-        R: mi('tin_rotor'),
-        P: mi('pump')
-    })
-    .id(st('greenhouse'));
 
     // -- CALORITE MACHINE CASING -- //
     e.shaped(mi('calorite_machine_casing'), [

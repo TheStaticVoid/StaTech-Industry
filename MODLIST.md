@@ -235,6 +235,7 @@
 - [Supplementaries (by MehVahdJukaar)](https://www.curseforge.com/minecraft/mc-mods/supplementaries)
 - [Tech Reborn (by modmuss50)](https://www.curseforge.com/minecraft/mc-mods/techreborn)
 - [TerraBlender (Fabric) (by TheAdubbz)](https://www.curseforge.com/minecraft/mc-mods/terrablender-fabric)
+- [Terralith (by Starmute)](https://www.curseforge.com/minecraft/mc-mods/terralith)
 - [The Twilight Forest (by Benimatic)](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)
 - [Time in a Bottle (Fabric) (by alkyaLy)](https://www.curseforge.com/minecraft/mc-mods/time-in-a-bottle)
 - [TipTheScales (by Jaredlll08)](https://www.curseforge.com/minecraft/mc-mods/tipthescales)
