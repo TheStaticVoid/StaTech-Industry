@@ -962,11 +962,9 @@ ServerEvents.tags('item', e => {
 
     const WAR_TOMES = [
         sb('acrobat_spell_book'),
-        sb('warriorone_spell_book'),
         sb('warriortwo_spell_book'),
         sb('warriorpolearm_spell_book'),
         sb('duelist_spell_book'),
-        sb('juggone_spell_book'),
         sb('juggtwo_spell_book'),
         sb('assassin_spell_book'),
         sb('orb_fire_spell_book'),
