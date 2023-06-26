@@ -1,0 +1,43 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -48,
+        "yMax": 32,
+        "size": 40,
+        "biomeTag": "#minecraft:is_overworld",
+        "spread": 20,
+        "generationWeight": 1,
+        "blocks": {
+            "default": [
+                {
+                    "block": "modern_industrialization:bauxite_ore",
+                    "chance": 0.8
+                },
+                {
+                    "block": "iron_ore",
+                    "chance": 0.2
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "modern_industrialization:deepslate_bauxite_ore",
+                    "chance": 0.8
+                },
+                {
+                    "block": "deepslate_iron_ore",
+                    "chance": 0.2
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:aluminium_ore_sample",
+                "chance": 0.9
+            },
+            {
+                "block": "geocluster:iron_ore_sample",
+                "chance": 0.1
+            }
+        ]
+    }
+}

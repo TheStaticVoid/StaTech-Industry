@@ -9,6 +9,7 @@ REIEvents.hide('item', e => {
     let ca = (id) => `createaddition:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let md = (id) => `moderndynamics:${id}`;
+    let gc = (id) => `geocluster:${id}`;
 
 
     const REI_DELETED_ITEMS = [
@@ -54,6 +55,17 @@ REIEvents.hide('item', e => {
         ca('diamond_grit'),
         ca('redstone_relay'),
         'decorative_blocks:blockstate_copy_item',
+        gc('raw_aluminium'),
+        gc('aluminium_ingot'),
+        gc('aluminium_nugget'),
+        gc('raw_ancient_debris'),
+        gc('aluminium_ore'),
+        gc('deepslate_aluminium_ore'),
+        gc('deepslate_platinum_ore'),
+        gc('deepslate_titanium_ore'),
+        gc('quartz_ore'),
+        gc('deepslate_quartz_ore'),
+        gc('ancient_debris_ore'),
         kibe('tank'),
         kibe('xp_shower'),
         kibe('xp_drain'),
