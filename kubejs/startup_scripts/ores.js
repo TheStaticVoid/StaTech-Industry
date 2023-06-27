@@ -71,6 +71,23 @@ WorldgenEvents.remove(event => {
     );
 });
 
+// BYG 
+WorldgenEvents.remove(e => {
+    const ORES_TO_REMOVE = [
+        'byg:pendorite_ore',
+        'byg:emeraldite_ore',
+        'byg:anthracite_ore', 
+        'byg:blue_nether_gold_ore',
+        'byg:blue_nether_quartz_ore',
+        'byg:brimstone_nether_gold_ore',
+        'byg:brimstone_nether_quartz_ore',
+        'byg:cryptic_redstone_ore'
+    ];
+    e.removeOres(ores => {
+        ores.blocks = ORES_TO_REMOVE;
+    });
+});
+
 // // TECHREBORN
 // WorldgenEvents.remove(e => {
 //     let tr = (id) => `techreborn:${id}`;

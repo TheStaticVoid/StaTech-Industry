@@ -53,6 +53,8 @@ ServerEvents.recipes(e => {
         'c:sheldonite_ores',
         'simplyswords:uniques',
         'c:platinum_dusts',
+        'c:raw_platinum_ores',
+        'c:platinum_ores',
         'c:iron_blocks',
         'c:uranium_ores',
         'c:raw_uranium_ores',
