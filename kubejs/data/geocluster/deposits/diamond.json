@@ -6,7 +6,7 @@
         "size": 25,
         "biomeTag": "#minecraft:is_overworld",
         "spread": 10,
-        "generationWeight": 1,
+        "generationWeight": 2,
         "blocks": {
             "default": [
                 {
@@ -15,11 +15,15 @@
                 },
                 {
                     "block": "coal_ore",
-                    "chance": 0.2
+                    "chance": 0.15
                 },
                 {
                     "block": "modern_industrialization:lignite_coal_ore",
-                    "chance": 0.2
+                    "chance": 0.15
+                },
+                {
+                    "block": "techreborn:sapphire_ore",
+                    "chance": 0.1
                 }
             ],
             "minecraft:deepslate": [
@@ -29,11 +33,15 @@
                 },
                 {
                     "block": "deepslate_coal_ore",
-                    "chance": 0.2
+                    "chance": 0.15
                 },
                 {
                     "block": "modern_industrialization:lignite_coal_ore",
-                    "chance": 0.2
+                    "chance": 0.15
+                },
+                {
+                    "block": "techreborn:deepslate_sapphire_ore",
+                    "chance": 0.1
                 }
             ]
         },

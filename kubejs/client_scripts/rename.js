@@ -7,4 +7,4 @@ ClientEvents.highPriorityAssets(e => {
     rename(mi('quantum_leggings'), 'Infinity Leggings');
     rename(mi('quantum_boots'), 'Infinity Boots');
     rename(mi('quantum_sword'), 'Infinity Sword');
-})
+});

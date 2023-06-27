@@ -16,6 +16,7 @@ ServerEvents.recipes(e => {
     CREATE_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove( {type: cr('mixing'), output: 'ae2:fluix_crystal' });
     e.remove( {type: cr('crushing'), output: cr('crushed_platinum_ore')} );
+    e.remove( {mod: 'create', output: mi('uranium_ingot') });
 
     // -- COGWHEEL -- //
     e.shaped(cr('cogwheel'), [

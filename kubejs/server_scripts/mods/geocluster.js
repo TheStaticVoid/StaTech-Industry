@@ -20,3 +20,8 @@ ServerEvents.tags('item', e => {
         e.add(`c:${id}_ores`, gc(`deepslate_${id}_ore`));
     });
 });
+
+ServerEvents.recipes(e => {
+    e.remove({ type: 'minecraft:smelting', mod: 'geocluster' });
+    e.remove({ type: 'minecraft:blasting', mod: 'geocluster' });
+});

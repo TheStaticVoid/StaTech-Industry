@@ -53,7 +53,10 @@ ServerEvents.recipes(e => {
         'c:sheldonite_ores',
         'simplyswords:uniques',
         'c:platinum_dusts',
-        'c:iron_blocks'
+        'c:iron_blocks',
+        'c:uranium_ores',
+        'c:raw_uranium_ores',
+        'create:crushed_uranium_ore'
     ];
 
     // The cost of every recipe

@@ -827,3 +827,28 @@ ServerEvents.recipes(e => {
     e.smelting(mi('lead_ingot'), tr('galena_dust'), 0.7);
     e.blasting(mi('lead_ingot'), tr('galena_dust'), 0.7);
 });
+
+ServerEvents.tags('item', e => {
+    let tr = (id) => `techreborn:${id}`;
+
+    const ORES = [
+        tr('cinnabar_ore'),
+        tr('galena_ore'),
+        tr('peridot_ore'),
+        tr('pyrite_ore'),
+        tr('ruby_ore'),
+        tr('sapphire_ore'),
+        tr('sheldonite_ore'),
+        tr('silver_ore'),
+        tr('sodalite_ore'),
+        tr('sphalerite_ore'),
+        tr('deepslate_galena_ore'),
+        tr('deepslate_peridot_ore'),
+        tr('deepslate_ruby_ore'),
+        tr('deepslate_sapphire_ore'),
+        tr('deepslate_sheldonite_ore'),
+        tr('deepslate_silver_ore'),
+        tr('deepslate_sodalite_ore')
+    ];
+    ORES.forEach(id => e.add('c:ores', id));
+});

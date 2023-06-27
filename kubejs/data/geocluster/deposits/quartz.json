@@ -11,7 +11,21 @@
             "default": [
                 {
                     "block": "modern_industrialization:quartz_ore",
-                    "chance": 1.0
+                    "chance": 0.8
+                },
+                {
+                    "block": "modern_industrialization:antimony_ore",
+                    "chance": 0.2
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "modern_industrialization:quartz_ore",
+                    "chance": 0.8
+                },
+                {
+                    "block": "modern_industrialization:deepslate_antimony_ore",
+                    "chance": 0.2
                 }
             ]
         },

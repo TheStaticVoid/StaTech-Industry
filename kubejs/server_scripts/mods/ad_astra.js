@@ -215,3 +215,23 @@ ServerEvents.recipes(e => {
         D: mi('digital_circuit')
     });
 });
+
+ServerEvents.tags('item', e => {
+    let ad = (id) => `ad_astra:${id}`;
+
+    const ORES = [
+        ad('moon_cheese_ore'),
+        ad('moon_desh_ore'),
+        ad('deepslate_desh_ore'),
+        ad('moon_iron_ore'),
+        ad('moon_ice_shard_ore'),
+        ad('deepslate_ice_shard_ore'),
+        ad('mars_ostrum_ore'),
+        ad('deepslate_ostrum_ore'),
+        ad('mars_ice_shard_ore'),
+        ad('venus_calorite_ore'),
+        ad('deepslate_calorite_ore'),
+        ad('glacio_ice_shard_ore')
+    ];
+    ORES.forEach(id => e.add('c:ores', id));
+});

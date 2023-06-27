@@ -11,20 +11,28 @@
             "default": [
                 {
                     "block": "modern_industrialization:uranium_ore",
-                    "chance": 0.95
+                    "chance": 0.90
                 },
                 {
                     "block": "modern_industrialization:iridium_ore",
+                    "chance": 0.05
+                },
+                {
+                    "block": "modern_industrialization:mozanite_ore",
                     "chance": 0.05
                 }
             ],
             "minecraft:deepslate": [
                 {
                     "block": "modern_industrialization:deepslate_uranium_ore",
-                    "chance": 0.95
+                    "chance": 0.90
                 },
                 {
                     "block": "modern_industrialization:deepslate_iridium_ore",
+                    "chance": 0.05
+                },
+                {
+                    "block": "modern_industrialization:deepslate_mozanite_ore",
                     "chance": 0.05
                 }
             ]
