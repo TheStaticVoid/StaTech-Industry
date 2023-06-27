@@ -9,6 +9,7 @@ ServerEvents.tags('item', e => {
     let ic = (id) => `ironchests:${id}`;
     let cr = (id) => `create:${id}`;
     let sp = (id) => `spectrum:${id}`;
+    let ed = (id) => `extended_drawers:${id}`;
 
     const ITEMS = [
         'kibe:tank',
@@ -143,7 +144,13 @@ ServerEvents.tags('item', e => {
         tr('quantum_helmet'),
         tr('quantum_chestplate'),
         tr('quantum_leggings'),
-        tr('quantum_boots')
+        tr('quantum_boots'),
+	ed('single_drawer'),
+	ed('double_drawer'),
+	ed('quad_drawer'),
+	ed('shadow_drawer'),
+	ed('compacting_drawer'),
+	'quarrymod:quarry'
     ];
 
     ITEMS.forEach(id => e.add(mi('replicator_blacklist'), id));
