@@ -10,6 +10,7 @@ REIEvents.hide('item', e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let md = (id) => `moderndynamics:${id}`;
     let gc = (id) => `geocluster:${id}`;
+    let vh = (id) => `vanilla-hammers:${id}`;
 
 
     const REI_DELETED_ITEMS = [
@@ -162,7 +163,16 @@ REIEvents.hide('item', e => {
         tr('superconductor_cable'),
         tr('steel_small_dust'),
         tr('wire_mill'),
-        tr('rock_cutter')
+        tr('rock_cutter'),
+        vh('wooden_hammer'),
+        vh('stone_hammer'),
+        vh('ender_hammer'),
+        vh('fiery_hammer'),
+        vh('lapis_hammer'),
+        vh('obsidian_hammer'),
+        vh('prismarine_hammer'),
+        vh('quartz_hammer'),
+        vh('slime_hammer')
     ];
     REI_DELETED_ITEMS.forEach(id => e.hide(id));
 });

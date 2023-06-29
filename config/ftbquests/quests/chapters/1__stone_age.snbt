@@ -1428,7 +1428,45 @@
 				title: "Lumberaxes"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["63276C644789068A"]
+			description: ["While mining &cblock by block&r through a &2large ore deposit&r sure is fun (&oNOT!&r), it's much better mining in a &a3x3 area&r! Each tier of &eHammer&r increases its &3mining speed&r and &ddurability&r. These will be an essential tool moving forward!"]
+			id: "5C89097BA2979794"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "44850103A3065C11"
+					table_id: 1292583397374875582L
+					type: "random"
+				}
+				{
+					id: "19BF48AE122D1A19"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "62C3BCBFBE551ED0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "HAMMAH DOWN"
+			tasks: [{
+				id: "597EA825702B4535"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:hammers"
+					}
+				}
+				title: "Hammers"
+				type: "item"
+			}]
+			x: 9.5d
 			y: 1.5d
 		}
 	]
