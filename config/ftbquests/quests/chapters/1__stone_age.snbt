@@ -46,7 +46,7 @@
 				type: "item"
 			}]
 			title: "The Stone Age"
-			x: 0.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -92,13 +92,13 @@
 				type: "item"
 			}]
 			title: "Punch Trees"
-			x: -1.5d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: [
-				"300516B03C1580A2"
 				"7404F574F4307FB1"
+				"4B07D0F2469CC1A7"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -629,7 +629,7 @@
 				item: "inmis:frayed_backpack"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.0d
 			y: -2.0d
 		}
 		{
@@ -655,7 +655,7 @@
 				item: "kibe:pocket_crafting_table"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
@@ -698,7 +698,7 @@
 				type: "item"
 			}]
 			title: "Spikes"
-			x: 1.0d
+			x: -1.0d
 			y: -2.0d
 		}
 		{
@@ -724,7 +724,7 @@
 				item: "kibe:wooden_bucket"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
@@ -750,7 +750,7 @@
 				item: "kibe:torch_sling"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.0d
 			y: -3.0d
 		}
 		{
@@ -780,7 +780,7 @@
 				item: "kibe:trash_can"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: -2.0d
 		}
 		{
@@ -806,7 +806,7 @@
 				item: "kibe:pocket_trash_can"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: -3.5d
 		}
 		{
@@ -854,7 +854,7 @@
 				type: "item"
 			}]
 			title: "Drawers"
-			x: -2.0d
+			x: -4.0d
 			y: -2.0d
 		}
 		{
@@ -900,7 +900,7 @@
 				type: "item"
 			}]
 			title: "Drawer Upgrades"
-			x: -2.0d
+			x: -4.0d
 			y: -6.0d
 		}
 		{
@@ -936,7 +936,7 @@
 				item: "extended_drawers:connector"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -3.0d
 			y: -6.0d
 		}
 		{
@@ -959,7 +959,7 @@
 				type: "checkmark"
 			}]
 			title: "Drawer Networks"
-			x: -2.0d
+			x: -4.0d
 			y: -4.0d
 		}
 		{
@@ -991,7 +991,7 @@
 				item: "extended_drawers:access_point"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.0d
 			y: -6.0d
 		}
 		{
@@ -1025,7 +1025,7 @@
 				type: "item"
 			}]
 			title: "Voiding Mode"
-			x: 0.0d
+			x: -2.0d
 			y: -6.0d
 		}
 		{
@@ -1060,7 +1060,7 @@
 				type: "item"
 			}]
 			title: "Hidden Mode"
-			x: -4.0d
+			x: -6.0d
 			y: -6.0d
 		}
 		{
@@ -1092,7 +1092,7 @@
 				type: "item"
 			}]
 			title: "Tom's Simple Storage Mod"
-			x: -1.5d
+			x: -3.5d
 			y: 2.0d
 		}
 		{
@@ -1118,7 +1118,7 @@
 				item: "toms_storage:ts.storage_terminal"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -3.0d
 			y: 4.5d
 		}
 		{
@@ -1144,7 +1144,7 @@
 				item: "toms_storage:ts.crafting_terminal"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.5d
 			y: 4.5d
 		}
 		{
@@ -1170,7 +1170,7 @@
 				item: "toms_storage:ts.wireless_terminal"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: 4.5d
 		}
 		{
@@ -1209,7 +1209,7 @@
 				}
 			]
 			title: "Inventory Cables"
-			x: -3.0d
+			x: -5.0d
 			y: 3.5d
 		}
 		{
@@ -1242,7 +1242,7 @@
 				item: "toms_storage:ts.adv_wireless_terminal"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -5.5d
 			y: 4.5d
 		}
 		{
@@ -1268,7 +1268,7 @@
 				item: "toms_storage:ts.trim"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -3.0d
 			y: 3.5d
 		}
 		{
@@ -1298,7 +1298,7 @@
 				item: "toms_storage:ts.inventory_hopper_basic"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: 3.5d
 		}
 		{
@@ -1324,11 +1324,10 @@
 				item: "toms_storage:ts.level_emitter"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -2.0d
 			y: 3.5d
 		}
 		{
-			dependencies: ["300516B03C1580A2"]
 			description: ["It seems that some of the &eworld generation&r mods have &cnegatively affected&r the generation of &aAndesite&r in the world. If you're having particular troubles finding Andesite, then &2I offer a trade&r. 64x &3Cobblestone&r for 64x &aAndesite&r. Seems fair, no?"]
 			id: "7404F574F4307FB1"
 			rewards: [{
@@ -1346,6 +1345,90 @@
 			}]
 			title: "Can't Find Andesite?"
 			x: 0.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["300516B03C1580A2"]
+			icon: {
+				Count: 1b
+				id: "geocluster:prospectors_pick"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4B07D0F2469CC1A7"
+			rewards: [
+				{
+					id: "1308F809CDF06B62"
+					item: {
+						Count: 1b
+						id: "geocluster:prospectors_pick"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E447264F194380B"
+					table_id: 1292583397374875582L
+					type: "random"
+				}
+				{
+					id: "6AB9562F5568B609"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "769292BA522B15FD"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Time to Mine!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["63276C644789068A"]
+			description: [
+				"Tired of having to chop down trees &cblock by block&r? &eStress no longer&r, the &aLumberaxe&r is here to save the day. "
+				""
+				"These tools act similar to a &dvein miner&r effect, and will destroy &3any connected logs&r to the log you break with it. &cWARNING&r: This does include blocks &cplaced by hand&r!"
+			]
+			id: "5DE28B092DD37757"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5EBCA8EFB066EC65"
+					table_id: 1292583397374875582L
+					type: "random"
+				}
+				{
+					id: "590CD5D4163632B9"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "14280CB0780326DB"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "3EBD95483EE9E98F"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:lumberaxes"
+					}
+				}
+				title: "Lumberaxes"
+				type: "item"
+			}]
+			x: 9.0d
 			y: 1.5d
 		}
 	]

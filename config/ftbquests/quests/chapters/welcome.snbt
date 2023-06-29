@@ -156,35 +156,6 @@
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
-			description: ["The caves and night in this world &caren't like you remember&r in vanilla. It gets dark, &c&overy dark&r&r. You can &6circumvent the darkness&r by placing / holding a torch in your &aoffhand&r. Just make sure to light up your base, you never know what &ccreepy crawlies&r may lurk around."]
-			icon: "kibe:big_torch"
-			id: "525523B87D97A371"
-			rewards: [
-				{
-					count: 16
-					id: "5341C44956557380"
-					item: "minecraft:torch"
-					type: "item"
-				}
-				{
-					id: "2ECE18F4AAD7F1F6"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			subtitle: "It's dangerous to go alone"
-			tasks: [{
-				id: "021B5A0269EAC365"
-				title: "Click to Acknowledge"
-				type: "checkmark"
-			}]
-			title: "True Darkness"
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2174585D87F83C89"]
 			description: [
 				"In the &eChapters&r, quests are separated between &bRequired&f and &eOptional&f. &eOptional&f quests have a &acircular border&f, while &bRequired&f quests have a &asquare border&f."
 				""
@@ -205,30 +176,6 @@
 			}]
 			title: "Required Quests"
 			x: -2.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["2174585D87F83C89"]
-			description: [
-				"The mod &aAmplified Nether&f is included in this pack. This makes the &cNether&f extend up to &a256&f blocks instead of the default &a128&f. With this added height brings &charder traversal and more dangers&r."
-				""
-				"Alongside &aAmplified Nether&f, this modpack also includes &cIncendium&f, a mod that adds new structures and biomes to the &cNether&f for you to find and explore."
-			]
-			icon: "minecraft:netherrack"
-			id: "08002F088B54D2AF"
-			rewards: [{
-				id: "6DE0632E61A71013"
-				type: "xp"
-				xp: 10
-			}]
-			shape: "rsquare"
-			tasks: [{
-				id: "7FF8D25441251661"
-				title: "Click to Acknowledge"
-				type: "checkmark"
-			}]
-			title: "A Scarier Nether"
-			x: 2.5d
 			y: 1.0d
 		}
 		{
@@ -268,7 +215,7 @@
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
-			description: ["&aOh The Biomes You'll Go&f is included in this pack alongside &eTerralith&f. Together, these world generation mods will &2vastly improve&r the landscape as you adventure."]
+			description: ["&aOh The Biomes You'll Go&f is included in this pack alongside &eTectonic&f and &6Not Just Biomes&r. Together, these world generation mods will &2vastly improve&r the landscape as you adventure."]
 			icon: "byg:byg_logo"
 			id: "571425ED36DA521C"
 			rewards: [{
