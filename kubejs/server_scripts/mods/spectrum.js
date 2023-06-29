@@ -175,7 +175,43 @@ ServerEvents.tags('item', e => {
 ServerEvents.recipes(e => {
     let sp = (id) => `spectrum:${id}`;
     let st = (id) => `statech:spectrum/${id}`;
+    let mc = (id) => `minecraft:${id}`;
 
+    const REMOVED_RECIPES = [
+        sp('pedestal/tier3/bottle_of_failing')
+    ];
+    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+
+    // -- BOTTLE OF FAILING -- //
+    e.custom({
+        type: sp('pedestal'),
+        time: 800,
+        tier: 'advanced',
+        cyan: 1,
+        magenta: 1,
+        yellow: 1,
+        black: 1,
+        white: 0,
+        experience: 2.0,
+        pattern: [
+            'FSF',
+            'EBE',
+            'FSF'
+        ],
+        key: {
+            'S': { item: sp('stratine_fragments') },
+            'F': { item: mc('fermented_spider_eye') },
+            'E': { item: mc('ender_eye') },
+            'B': { item: mc('experience_bottle') }
+        },
+        result: {
+            item: sp('bottle_of_failing'),
+            count: 1
+        },
+        required_advancement: sp('progression/unlock_bottle_of_failing')
+    });
+
+    // -- MAGIC DIAMOND -- //
     e.custom({
         id: st('magic_diamond'),
         type: sp('pedestal'),
@@ -222,6 +258,7 @@ ServerEvents.recipes(e => {
         ]
     });
 
+    // -- QUITOXIC REEDS -- //
     e.custom({
         id: st('quitoxic_reeds_from_coins'),
         type: sp('pedestal'),
