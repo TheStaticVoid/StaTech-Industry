@@ -455,22 +455,22 @@ ServerEvents.recipes(e => {
         32000,
         2400,
         [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('superconductor_storage_unit') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('superconductor_storage_unit') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
         ],
         [
             { amount: 1, item: mi('creative_storage_unit') }
         ],
         [
-            { amount: 1000, fluid: mi('uu_matter') },
-            { amount: 1000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') }
         ]
     );
 
@@ -480,22 +480,22 @@ ServerEvents.recipes(e => {
         32000,
         2400,
         [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('quantum_barrel') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('quantum_barrel') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
         ],
         [
             { amount: 1, item: mi('creative_barrel') }
         ],
         [
-            { amount: 1000, fluid: mi('uu_matter') },
-            { amount: 1000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') }
         ]
     );
 
@@ -505,22 +505,22 @@ ServerEvents.recipes(e => {
         32000,
         2400,
         [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('quantum_tank') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('quantum_tank') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
         ],
         [
             { amount: 1, item: mi('creative_tank') }
         ],
         [
-            { amount: 1000, fluid: mi('uu_matter') },
-            { amount: 1000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') }
         ]
     );
 
@@ -530,22 +530,22 @@ ServerEvents.recipes(e => {
         32000,
         2400,
         [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('plasma_turbine') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('plasma_turbine') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
         ],
         [
             { amount: 1, item: 'create:creative_motor' }
         ],
         [
-            { amount: 1000, fluid: mi('uu_matter') },
-            { amount: 1000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') }
         ]
     );
 
@@ -556,13 +556,13 @@ ServerEvents.recipes(e => {
         2400,
         [
             { amount: 1, item: mi('quantum_helmet') },
-            { amount: 64, item: mi('creative_tank') },
+            { amount: 1, item: mi('creative_tank') },
             { amount: 1, item: mi('quantum_chestplate') },
-            { amount: 64, item: mi('creative_storage_unit') },
+            { amount: 1, item: mi('creative_storage_unit') },
             { amount: 1, item: mi('quantum_sword') },
-            { amount: 64, item: 'create:creative_motor' },
+            { amount: 1, item: 'create:creative_motor' },
             { amount: 1, item: mi('quantum_leggings') },
-            { amount: 64, item: mi('creative_barrel') },
+            { amount: 1, item: mi('creative_barrel') },
             { amount: 1, item: mi('quantum_boots') }
         ],
         [
