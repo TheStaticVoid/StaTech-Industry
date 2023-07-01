@@ -6,6 +6,11 @@ ServerEvents.recipes(e => {
     let ae = (id) => `ae2:${id}`;
     let st = (id) => `statech:modern_industrialization/mixer/${id}`;
 
+    const REMOVED_RECIPES = [
+        mi('materials/mixer/fire_clay_dust')
+    ];
+    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+
     let mixer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('mixer'),
@@ -107,6 +112,32 @@ ServerEvents.recipes(e => {
         ],
         [ { amount: 1, item: mc('grass_block') } ],
         [ { amount: 1000, fluid: mc('water') } ]
+    );
+
+    // -- FIRE CLAY DUST -- //
+    mixer(
+        st('fire_clay_dust'),
+        2,
+        100,
+        [
+            { amount: 2, item: mi('brick_dust') },
+            { amount: 2, item: mi('clay_dust') }
+        ],
+        [ { amount: 4, item: mi('fire_clay_dust') } ]
+    );
+
+    // -- LIQUID CONCRETE -- //
+    mixer(
+        st('liquid_concrete'),
+        8,
+        200,
+        [ 
+            { amount: 4, item: mi('clay_dust') },
+            { amount: 10, item: mi('stone_dust') }
+        ],
+        null,
+        [ { amount: 100, fluid: mc('water') } ],
+        [ { amount: 500, fluid: mi('concrete') } ]
     );
 
     let mixerConsumable = (fluid, amount) => {

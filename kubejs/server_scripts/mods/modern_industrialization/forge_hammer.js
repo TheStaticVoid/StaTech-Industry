@@ -273,4 +273,12 @@ ServerEvents.recipes(e => {
         [ { amount: 1, tag: 'c:brick_ingots' } ],
         [ { amount: 2, item: mi('brick_tiny_dust') } ]
     );
+
+    // -- CLAY DUST FROM CLAY BALL -- //
+    forgeHammer(
+        st('clay_dust'),
+        20,
+        [ { amount: 1, item: mc('clay_ball') } ],
+        [ { amount: 1, item: mi('clay_dust') } ]
+    )
 });

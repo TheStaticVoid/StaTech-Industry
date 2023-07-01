@@ -34,4 +34,18 @@ MIMaterialEvents.addMaterials(e => {
             .defaultRecipes()
             .addExternalPart('ingot', 'techreborn:zinc_ingot', '#c:zinc_ingots')
         });
+    
+    e.createMaterial('Clay', 'clay', 0xa3acc7,
+        builder => {
+            builder.addParts('dust', 'tiny_dust')
+                .addExternalPart('ingot', 'minecraft:clay_ball')
+                .defaultRecipes();
+            
+        });
+    
+    e.createMaterial('Stone', 'stone', 0x767676,
+        builder => {
+            builder.addParts('dust', 'tiny_dust')
+                .defaultRecipes();
+        });
 });

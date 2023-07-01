@@ -1,22 +1,22 @@
 MIRegistrationEvents.registerFluids(e => {
     // -- LITHIUM -- //
     e.register(
-        "Lithium",      // English name
-        "lithium",      // internal name
+        'Lithium',      // English name
+        'lithium',      // internal name
         0xb2b2b2,       // Hex color code
-        "water",        // Texture type
+        'water',        // Texture type
         true,           // is a gas?
-        "medium"        // opacity
+        'medium'        // opacity
     );
 
     // -- NEUTRONIUM -- //
     e.register(
-        "Neutronium",
-        "neutronium",
+        'Neutronium',
+        'neutronium',
         0x1a1a1a,
-        "lava",
+        'lava',
         true,
-        "full"
+        'full'
     );
     
     // -- BLOOD -- //
@@ -27,5 +27,15 @@ MIRegistrationEvents.registerFluids(e => {
         'plasma',       // Texture type
         false,          // is a gas?
         'high',         // opacity
+    );
+
+    // -- CONCRETE -- //
+    e.register(
+        'Concrete',     // English name
+        'concrete',     // internal name
+        0x505050,       // Hex color code
+        'lava',         // Texture type
+        false,          // is a gas?
+        'full'          // opacity
     );
 });

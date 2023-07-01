@@ -81,6 +81,15 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: mi('fire_clay_bricks') } ]
     );
 
+    // -- STONE -- //
+    compressor(
+        st('stone'),
+        2,
+        200,
+        [ { amount: 4, item: mi('stone_dust') } ],
+        [ { amount: 1, item: mc('stone') } ]
+    );
+
     // -- RUBBER SHEETS -- //
     compressor(
         st('rubber_sheets'),

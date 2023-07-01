@@ -47,11 +47,11 @@ ServerEvents.recipes(e => {
 
     // -- ELECTROLYZING CLAY -- //
     electrolyzer(
-        st('clay_ball'),
+        st('clay_dust'),
         32,
         1200,
         [
-            { amount: 32, item: mc('clay_ball') }
+            { amount: 32, item: mi('clay_dust') }
         ],
         [
             { amount: 1, item: mi('aluminum_dust') },

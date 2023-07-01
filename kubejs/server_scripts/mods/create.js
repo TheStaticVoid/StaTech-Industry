@@ -2,6 +2,7 @@ ServerEvents.recipes(e => {
     let cr = (id) => `create:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let st = (id) => `statech:create/${id}`;
+
     // -- RECIPE REMOVAL -- //
     const CREATE_DELETED_ITEMS = [
         cr('crafting/kinetics/cogwheel'),
@@ -134,8 +135,8 @@ ServerEvents.recipes(e => {
         id: st('fire_clay_dust'),
         type: cr('mixing'),
         ingredients: [
-            { item: 'minecraft:clay_ball' },
-            { item: 'minecraft:clay_ball' },
+            { item: mi('clay_dust') },
+            { item: mi('clay_dust') },
             { tag: 'c:brick_dusts' }, 
             { tag: 'c:brick_dusts' }           
         ],

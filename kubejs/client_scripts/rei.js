@@ -164,6 +164,8 @@ REIEvents.hide('item', e => {
         tr('steel_small_dust'),
         tr('wire_mill'),
         tr('rock_cutter'),
+        tr('clay_dust'),
+        tr('clay_small_dust'),
         vh('wooden_hammer'),
         vh('stone_hammer'),
         vh('ender_hammer'),

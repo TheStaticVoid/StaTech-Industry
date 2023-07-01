@@ -127,6 +127,15 @@ ServerEvents.recipes(e => {
         ]
     );
 
+    // -- STONE DUST -- //
+    macerator(
+        st('stone_dust'),
+        2,
+        200,
+        [ { amount: 1, item: mc('stone') } ],
+        [ { amount: 4, item: mi('stone_dust') } ]
+    );
+
     // -- SPECTRUM POWDERS -- //
     macerator(
         st('topaz_powder_from_cluster'),

@@ -8,7 +8,9 @@ ServerEvents.recipes(e => {
 
     const REMOVED_RECIPE = [    
         mi('electric_age/component/assembler/qbit'),
-        mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball')
+        mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball'),
+        mi('assembler_generated/steam_age/bronze/furnace'),
+        mi('assembler_generated/steam_age/bronze/boiler')
     ];
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
@@ -31,6 +33,33 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe);
     }
+
+    // -- BRONZE BOILER -- //
+    assembler(
+        st('bronze_boiler'),
+        8,
+        200,
+        [
+            { amount: 4, tag: 'c:bronze_plates' },
+            { amount: 1, item: mi('bronze_tank') },
+            { amount: 1, item: mi('bronze_machine_casing') },
+            { amount: 3, item: mi('fire_clay_bricks') }
+        ],
+        [ { amount: 1, item: mi('bronze_boiler') } ]
+    );
+
+    // -- BRONZE FURNACE -- /
+    assembler(
+        st('bronze_furnace'),
+        8,
+        200,
+        [
+            { amount: 7, tag: 'c:bronze_plates' },
+            { amount: 1, item: mi('bronze_machine_casing') },
+            { amount: 1, item: mc('furnace') }
+        ],
+        [ { amount: 1, item: mi('bronze_furnace') } ]
+    );
 
     // -- CUPRONICKEL HEATING COIL -- //
     assembler(

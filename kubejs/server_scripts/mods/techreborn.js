@@ -133,7 +133,9 @@ ServerEvents.recipes(e => {
         tr('crafting_table/machine/implosion_compressor'),
         tr('crafting_table/machine/high_voltage_su'),
         tr('crafting_table/machine/assembling_machine'),
-        tr('crafting_table/cable/superconductor_cable')
+        tr('crafting_table/cable/superconductor_cable'),
+        tr('crafting_table/small_dust/clay_small_dust_from_dust'),
+        tr('crafting_table/dust/clay_dust_from_small')
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 

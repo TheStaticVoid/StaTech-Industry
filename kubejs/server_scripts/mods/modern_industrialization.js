@@ -31,7 +31,10 @@ ServerEvents.recipes(e => {
         mi('materials/tungstensteel/craft/coil'),
         mi('armor/gravichestplate'),
         mi('electric_age/component/craft/ultradense_metal_ball_asbl'),
-        mi('materials/fire_clay_bricks')
+        mi('materials/fire_clay_bricks'),
+        mi('compat/techreborn/macerator/minecraft_clay_ball_to_techreborn_clay_dust'),
+        mi('steam_age/bronze/furnace_asbl'),
+        mi('steam_age/bronze/boiler_asbl')
     ];
 
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
@@ -177,6 +180,33 @@ ServerEvents.recipes(e => {
         B: '#c:bronze_plates'
     })
     .id(st('zinc_drill'));
+
+    // -- BRONZE FURNACE -- //
+    e.shaped(mi('bronze_furnace'), [
+        'PPP',
+        'PCP',
+        'PFP'
+    ],
+    {
+        P: '#c:bronze_plates',
+        F: mc('furnace'),
+        C: mi('bronze_machine_casing')
+    })
+    .id(st('bronze_furnace'));
+
+    // -- BRONZE BOILER -- //
+    e.shaped(mi('bronze_boiler'), [
+        'PTP',
+        'PCP',
+        'FFF'
+    ],
+    {
+        P: '#c:bronze_plates',
+        T: mi('bronze_tank'),
+        F: mi('fire_clay_bricks'),
+        C: mi('bronze_machine_casing')
+    })
+    .id(st('bronze_boiler'));
 
     // -- CLEAR FLUID FROM CREATIVE TANK -- //
     e.shapeless(mi('creative_tank'), mi('creative_tank')).id(st('clear_fluids_from_creative_tank'));
