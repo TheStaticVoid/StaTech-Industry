@@ -365,6 +365,7 @@ ServerEvents.recipes(e => {
         [ { amount: 8, item: 'anim_guns:standard_handgun_cartridge' } ]
     );
 
+    // -- HEAVY HANDGUN CARTRIDGE -- //
     assembler(
         st('heavy_handgun_cartridge'),
         8,
@@ -377,6 +378,7 @@ ServerEvents.recipes(e => {
         [ { amount: 8, item: 'anim_guns:heavy_handgun_cartridge' } ]
     );
 
+    // -- STANDARD RIFLE CARTRIDGE -- //
     assembler(
         st('standard_rifle_cartridge'),
         8, 
@@ -389,6 +391,7 @@ ServerEvents.recipes(e => {
         [ { amount: 8, item: 'anim_guns:standard_rifle_cartridge' } ]
     );
 
+    // -- HEAVY RIFLE CARTRIDGE -- //
     assembler(
         st('heavy_rifle_cartridge'),
         8,
@@ -401,6 +404,7 @@ ServerEvents.recipes(e => {
         [ { amount: 8, item: 'anim_guns:heavy_rifle_cartridge' } ]
     );
 
+    // -- SHOTGUN SHELL -- //
     assembler(
         st('shotgun_shell'),
         8,

@@ -127,6 +127,36 @@ ServerEvents.recipes(e => {
     })
     .id(st('space_probe_launcher'));
 
+    // -- INDUSTRIAL GREENHOUSE -- //
+    e.shaped(mi('greenhouse'), [
+        'MCM',
+        'RHR',
+        'PCP'
+    ],
+    {
+        M: mi('motor'),
+        C: mi('analog_circuit'),
+        H: mi('basic_machine_hull'),
+        R: mi('tin_rotor'),
+        P: mi('pump')
+    })
+    .id(st('greenhouse'));
+
+    // -- LASER ENGRAVER -- //
+    e.shaped(mi('laser_engraver'), [
+        'CGC',
+        'MHM',
+        'ECE'
+    ],
+    {
+        E: mi('electronic_circuit'),
+        C: mi('cupronickel_wire_magnetic'),
+        H: mi('basic_machine_hull'),
+        M: mi('large_motor'),
+        G: '#c:glass_blocks'
+    })
+    .id('laser_engraver');
+
     // -- CALORITE MACHINE CASING -- //
     e.shaped(mi('calorite_machine_casing'), [
         'PPP',

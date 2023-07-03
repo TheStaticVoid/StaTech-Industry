@@ -100,6 +100,20 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: ae('flawed_budding_quartz') } ],
         [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
     );
+    
+    // -- DRILLING FLUID -- //
+    mixer(
+        st('drilling_fluid'),
+        8,
+        400,
+        [ { amount: 16, item: mi('clay_dust') } ],
+        null,
+        [
+            { amount: 700, fluid: mc('water') },
+            { amount: 100, fluid: mi('lubricant') }
+        ],
+        [ { amount: 1000, fluid: mi('drilling_fluid') } ]
+    );
 
     // -- GRASS BLOCK RECIPE PARITY -- //
     mixer(

@@ -62,6 +62,9 @@ ServerEvents.recipes(e => {
 
     // -- REMOVE ALL ENDER DUST OUTPUTS -- //
     e.remove({output: ae('ender_dust')});
+
+    // -- REMOVE ALL INSCRIBER RECIPES -- // 
+    e.remove({type: 'ae2:inscriber' });
     
     // -- INSCRIBER -- //
     e.shaped(ae('inscriber'), [

@@ -38,4 +38,84 @@ MIRegistrationEvents.registerFluids(e => {
         false,          // is a gas?
         'full'          // opacity
     );
+
+    // -- DRILLING FLUID -- //
+    e.register(
+        'Drilling Fluid',
+        'drilling_fluid',
+        0xf4fc58,
+        'water',
+        false,
+        'medium'
+    );
+    
+    // -- CORE SLURRY -- //
+    e.register(
+        'Core Slurry',
+        'core_slurry',
+        0x211500,
+        'lava',
+        false,
+        'full'
+    );
+
+    // -- WOOD TAR -- //
+    e.register(
+        'Wood Tar',
+        'wood_tar',
+        0x2a200e,
+        'lava',
+        false,
+        'full'
+    );
+
+    // -- POLYTETRAFLUROETHYLENE -- //
+    e.register(
+        'Polytetrafluoroethylene',
+        'polytetrafluoroethylene',
+        0x454545,
+        'lava',
+        false,
+        'full'
+    );
+
+    // -- TETRAFLUOROETHYLENE -- //
+    e.register(
+        'Tetrafluoroethylene',
+        'tetrafluoroethylene',
+        0x4c4c4c,
+        'water',
+        false,
+        'high'
+    )
+
+    // -- HYDROFLOURIC ACID -- //
+    e.register(
+        'Hydrofluoric Acid',
+        'hydrofluoric_acid',
+        0x419ad2,
+        'water',
+        false,
+        'medium'
+    );
+
+    // -- CHLOROFORM -- //
+    e.register(
+        'Chloroform',
+        'chloroform',
+        0xefefef,
+        'water',
+        false,
+        'low'
+    );
+
+    // -- FLUORINE -- // 
+    e.register(
+        'Fluorine',
+        'fluorine',
+        0xe8fb97,
+        'water',
+        true,
+        'low'
+    );
 });

@@ -47,6 +47,24 @@ StartupEvents.registry('item', e => {
     e.create('clear_boots', 'boots')
         .tier('clear')
         .tooltip('§3Works great in cosmetic armor slots');
+            
+    e.create('core_fragment')
+        .displayName('Core Fragment')
+        .rarity('Rare');
+
+    e.create('diamond_lens')
+        .displayName('Diamond Lens');
+
+    e.create('concrete_bar')
+        .displayName('Yummy Concrete Bar')
+        .rarity('Rare')
+        .tooltip('§6A tasty snack for a hard working industrialist')
+        .food(f => {
+            f
+            .hunger(10)
+            .saturation(0.6)
+            .effect('regeneration', 200, 0, 1);
+        });
 });
 
 ItemEvents.armorTierRegistry(event => {
