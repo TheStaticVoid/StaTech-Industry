@@ -1,5 +1,6 @@
 ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
+    let kjs = (id) => `kubejs:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let st = (id) => `statech:modern_industrialization/vacuum_freezer/${id}`;
 
@@ -36,5 +37,15 @@ ServerEvents.recipes(e => {
         ],
         null,
         null
+    );
+
+    // -- CONCRETE BAR -- //
+    vacuumFreezer(
+        st('concrete_bar'),
+        16,
+        200,
+        null,
+        [ { amount: 1, item: kjs('concrete_bar') } ],
+        [ { amount: 100, fluid: mi('concrete') } ]
     );
 });

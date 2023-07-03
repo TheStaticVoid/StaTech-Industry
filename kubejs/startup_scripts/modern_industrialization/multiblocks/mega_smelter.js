@@ -40,7 +40,7 @@ MIMachineEvents.registerMachines(e => {
         
         /* Model Configuration */
         "heatproof_machine_casing", // casing of the controller
-        "mega_smelter", // ovleray folder
+        "mega_smelter", // overlay folder
         true, // front overlay
         false, // top overlay
         false, // side overlay

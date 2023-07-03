@@ -1,14 +1,14 @@
 Ponder.registry((event) => {
-    event.create('modern_industrialization:greenhouse').scene('greenhouse', 'The Industrial Greenhouse', 'kubejs:greenhouse', (scene, util) => {
+    event.create('modern_industrialization:greenhouse').scene('greenhouse', 'The Industrial Greenhouse', 'kubejs:industrial_greenhouse', (scene, util) => {
         scene.setSceneOffsetY(-2.0);
         scene.scaleSceneView(0.8);
         // Show base plate
-        scene.world.showSection([0, 0, 0, 7, 0, 7], Facing.DOWN);
+        scene.world.showSection([0, 0, 0, 8, 0, 8], Facing.DOWN);
         scene.idle(10);
 
         // Build the first layer
-        for (let x = 0; x < 8; x++) {
-            for (let z = 0; z < 8; z++) {
+        for (let x = 0; x < 9; x++) {
+            for (let z = 0; z < 9; z++) {
                 scene.world.showSection([x, 1, z], Facing.DOWN);
             }
             scene.idle(3);
@@ -30,8 +30,8 @@ Ponder.registry((event) => {
 
         // Build layer 2 - 5
         for (let y = 2; y < 6; y++) {
-            for (let x = 0; x < 8; x++) {
-                for (let z = 0; z < 8; z++) {
+            for (let x = 0; x < 9; x++) {
+                for (let z = 0; z < 9; z++) {
                     scene.world.showSection([x, y, z], Facing.DOWN);
                 }
                 scene.idle(3);
@@ -48,8 +48,8 @@ Ponder.registry((event) => {
         
         // Build the rest
         for (let y = 6; y < 9; y++) {
-            for (let z = 0; z < 8; z++) {
-                for (let x = 0; x < 8; x++) {
+            for (let z = 0; z < 9; z++) {
+                for (let x = 0; x < 9; x++) {
                     scene.world.showSection([x, y, z], Facing.DOWN);
                 }
                 scene.idle(3);

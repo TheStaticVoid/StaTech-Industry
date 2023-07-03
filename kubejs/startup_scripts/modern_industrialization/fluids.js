@@ -118,4 +118,14 @@ MIRegistrationEvents.registerFluids(e => {
         true,
         'low'
     );
+
+    // -- ENDERIUM -- //
+    e.register(
+        'Molten Enderium',
+        'molten_enderium',
+        0x105e51,
+        'plasma',
+        false,
+        'medium'
+    );
 });
