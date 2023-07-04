@@ -5,6 +5,11 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let st = (id) => `statech:modern_industrialization/centrifuge/${id}`;
 
+    const REMOVED_RECIPES = [
+        mi('vanilla_recipes/centrifuge/lava')
+    ];
+    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+
     let centrifuge = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('centrifuge'),
@@ -38,6 +43,21 @@ ServerEvents.recipes(e => {
         [
             { amount: 50, fluid: mi('helium_3') }
         ]
+    );
+
+    // -- CENTRIFUGE LAVA -- //
+    centrifuge(
+        st('lava'),
+        32,
+        600,
+        null,
+        [
+            { amount: 17, item: mi('sulfur_dust') },
+            { amount: 11, item: mi('copper_nugget') },
+            { amount: 4, item: mc('iron_nugget') },
+            { amount: 1, item: mc('gold_nugget') }
+        ],
+        [ { amount: 1000, fluid: mc('lava') } ]
     );
 
     // -- CENTRIFUGE GLOWSTONE -- //
