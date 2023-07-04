@@ -4,6 +4,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let astra = (id) => `ad_astra:${id}`;
     let mc = (id) => `minecraft:${id}`;
+    let kj = (id) => `kubejs:${id}`;
     let st = (id) => `statech:modern_industrialization/assembler/${id}`;
 
     const REMOVED_RECIPE = [    
@@ -31,6 +32,23 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe);
     }
+
+    // -- SPACE PROBE -- //
+    assembler(
+        st('space_probe'),
+        32,
+        200,
+        [
+            { amount: 2, item: astra('rocket_fin') },
+            { amount: 2, item: mi('aluminum_gear') },
+            { amount: 1, item: mi('desh_drill') },
+            { amount: 1, item: mi('processing_unit') },
+            { amount: 1, item: astra('desh_engine') },
+            { amount: 1, item: mi('titanium_tank') },
+            { amount: 1, item: mi('titanium_tank') }
+        ],
+        [ { amount: 4, item: kj('space_probe') } ]
+    );
 
     // -- CUPRONICKEL HEATING COIL -- //
     assembler(
