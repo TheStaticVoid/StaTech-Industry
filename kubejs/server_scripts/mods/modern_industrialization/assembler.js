@@ -4,6 +4,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let astra = (id) => `ad_astra:${id}`;
     let mc = (id) => `minecraft:${id}`;
+    let ae = (id) => `ae2:${id}`;
     let st = (id) => `statech:modern_industrialization/assembler/${id}`;
 
     const REMOVED_RECIPE = [    
@@ -33,6 +34,20 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe);
     }
+
+    // -- BASIC CARD -- //
+    assembler(
+        st('basic_card'),
+        8,
+        200,
+        [ 
+            { amount: 3, tag: 'c:stainless_steel_ingots' },
+            { amount: 2, tag: 'c:gold_ingots' },
+            { amount: 1, item: ae('calculation_processor') }
+        ],
+        [ { amount: 2, item: ae('basic_card') } ],
+        [ { amount: 100, fluid: mi('molten_redstone') } ]
+    );
 
     // -- BRONZE BOILER -- //
     assembler(

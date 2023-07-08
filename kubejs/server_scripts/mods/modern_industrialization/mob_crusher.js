@@ -290,4 +290,22 @@ ServerEvents.recipes(e => {
         [ { amount: 100, fluid: mi('blood') } ],
         [ { amount: 150, fluid: mi('blood') } ]
     );
+
+    // -- WITCH MODEL -- //
+    crusher(
+        st('witch'),
+        8,
+        600,
+        [ { amount: 1, item: kj('witch_model'), probability: 0.05 } ],
+        [
+            { amount: 1, item: mc('glass_bottle'), probability: 0.25 },
+            { amount: 1, item: mc('glowstone_dust'), probability: 0.25 },
+            { amount: 1, item: mc('redstone'), probability: 0.25 },
+            { amount: 1, item: mc('spider_eye'), probability: 0.25 },
+            { amount: 1, item: mc('gunpowder'), probability: 0.25 },
+            { amount: 1, item: mc('sugar'), probability: 0.25 }
+        ],
+        [ { amount: 100, fluid: mi('blood') } ],
+        [ { amount: 150, fluid: mi('blood') } ]
+    );
 });
