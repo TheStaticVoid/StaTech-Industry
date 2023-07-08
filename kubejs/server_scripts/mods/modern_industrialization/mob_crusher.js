@@ -27,26 +27,219 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe);
     }
 
-    // -- ZOMBIE -- //
-    crusher(
-        st('zombie'),
-        8,
-        600,
-        [ { amount: 1, item: kj('zombie_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('rotten_flesh') },
-            { amount: 1, item: mc('iron_ingot'), probability: 0.025 },
-            { amount: 1, item: mc('carrot'), probability: 0.025 },
-            { amount: 1, item: mc('potato'), probability: 0.025 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.5 },
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
+    const modelInputOutput = [
+        // 0 = model, 1 = outputs, 2 = fluid
 
-    // -- ENDERMAN -- //
+        // Zombie model
+        [ 
+            kj('zombie_model'),
+            [
+                { amount: 1, item: mc('rotten_flesh') },
+                { amount: 1, item: mc('iron_ingot'), probability: 0.025 },
+                { amount: 1, item: mc('carrot'), probability: 0.025 },
+                { amount: 1, item: mc('potato'), probability: 0.025 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+            ],
+            mi('blood')
+        ],
+
+        // Pig model
+        [
+            kj('pig_model'),
+            [
+                { amount: 1, item: mc('porkchop'), probability: 0.85 },
+                { amount: 1, item: mc('bone'), probability: 0.65 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+            ],
+            mi('blood')
+        ],
+
+        // Sheep model
+        [
+            kj('sheep_model'),
+            [
+                { amount: 1, item: mc('white_wool') },
+                { amount: 1, item: mc('white_wool'), probability: 0.5 },
+                { amount: 1, item: mc('mutton'), probability: 0.85 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+            ],
+            mi('blood')
+        ],
+
+        // Cow model
+        [
+            kj('cow_model'),
+            [
+                { amount: 1, item: mc('beef') },
+                { amount: 1, item: mc('beef'), probability: 0.5 },
+                { amount: 1, item: mc('leather'), probability: 0.65 },
+                { amount: 1, item: mc('bone'), probability: 0.5 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+            ],
+            mi('blood')
+        ],
+
+        // Chicken model
+        [
+            kj('chicken_model'),
+            [
+                { amount: 1, item: mc('chicken') },
+                { amount: 1, item: mc('feather') },
+                { amount: 1, item: mc('feather'), probability: 0.5 },
+                { amount: 1, item: mc('bone'), probability: 0.3 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.2 }
+            ],
+            mi('blood')
+        ],
+
+        // Squid model
+        [
+            kj('squid_model'),
+            [
+                { amount: 1, item: mc('ink_sac') },
+                { amount: 1, item: mc('ink_sac'), probability: 0.5 },
+                { amount: 1, item: cd('squid'), probability: 0.25 },
+                { amount: 1, item: mc('glow_ink_sac'), probability: 0.01 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.3 }
+            ],
+            mi('blood')
+        ],
+
+        // Spider model
+        [
+            kj('spider_model'),
+            [
+                { amount: 1, item: mc('string') },
+                { amount: 1, item: mc('string'), probability: 0.5 },
+                { amount: 1, item: mc('spider_eye'), probability: 0.5 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+            ],
+            mi('blood')
+        ],
+
+        // Creeper model
+        [
+            kj('creeper_model'),
+            [
+                { amount: 1, item: mc('gunpowder') },
+                { amount: 1, item: mc('gunpowder'), probability: 0.5 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+            ],
+            mi('blood')
+        ],
+
+        // Slime model
+        [
+            kj('slime_model'),
+            [
+                { amount: 1, item: mc('slime_ball') },
+                { amount: 1, item: mc('slime_ball'), probability: 0.5 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+            ],
+            mi('blood')
+        ],
+
+        // Ghast model
+        [
+            kj('ghast_model'),
+            [
+                { amount: 1, item: mc('ghast_tear'), probability: 0.5 },
+                { amount: 1, item: mc('gunpowder'), probability: 0.75 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+            ],
+            mi('blood')
+        ],
+        
+        // Zombie Piglin model
+        [
+            kj('zombie_piglin_model'),
+            [
+                { amount: 1, item: mc('rotten_flesh') },
+                { amount: 1, item: mc('rotten_flesh'), probability: 0.5 },
+                { amount: 1, item: mc('gold_nugget'), probability: 0.5 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.2 }
+            ],
+            mi('blood')
+        ],
+
+        // Magma Cube model
+        [
+            kj('magma_cube_model'),
+            [
+                { amount: 1, item: mc('magma_cream') },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+            ],
+        ],
+        
+        // Blaze model
+        [
+            kj('blaze_model'),
+            [
+                { amount: 1, item: mc('blaze_rod'), probability: 0.4 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.4 }
+            ],
+            mi('blood')
+        ],
+        
+        // Wither Skeleton model
+        [
+            kj('wither_skeleton_model'),
+            [
+                { amount: 1, item: mc('bone') },
+                { amount: 1, item: mc('coal'), probability: 0.333 },
+                { amount: 1, item: ap('withered_bone'), probability: 0.90 },
+                { amount: 1, item: mc('wither_skeleton_skull'), probability: 0.025 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+            ],
+            mc('lava')
+        ],
+
+        // Guardian model
+        [
+            kj('guardian_model'),
+            [
+                { amount: 1, item: mc('prismarine_shard') },
+                { amount: 1, item: mc('prismarine_crystals'), probability: 0.8 },
+                { amount: 1, item: mc('sponge'), probability: 0.01 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.8 }
+            ],
+            mi('blood')
+        ],
+
+        // Witch model
+        [
+            kj('witch_model'),
+            [
+                { amount: 1, item: mc('glass_bottle'), probability: 0.25 },
+                { amount: 1, item: mc('glowstone_dust'), probability: 0.25 },
+                { amount: 1, item: mc('redstone'), probability: 0.25 },
+                { amount: 1, item: mc('spider_eye'), probability: 0.25 },
+                { amount: 1, item: mc('gunpowder'), probability: 0.25 },
+                { amount: 1, item: mc('sugar'), probability: 0.25 }
+            ],
+            mi('blood')
+        ]
+    ];
+    modelInputOutput.forEach(modelInOut => {
+        let model = modelInOut[0];
+        let output = modelInOut[1];
+        let fluid = modelInOut[2];
+
+        crusher(
+            st(model.split(':')[1]),
+            8,
+            600,
+            [ { amount: 1, item: model, probability: 0.05 } ],
+            output,
+            [ { amount: 100, fluid: fluid } ],
+            [ { amount: 150, fluid: fluid } ]
+        );
+    });
+    
+    // These are defined separately due to non-conformant liquid requirements
+    // -- ENDERMAN MODEL -- //
     crusher(
-        st('enderman'),
+        st('enderman_model'),
         8,
         600,
         [ { amount: 1, item: kj('enderman_model'), probability: 0.05 } ],
@@ -57,9 +250,9 @@ ServerEvents.recipes(e => {
         [ { amount: 100, fluid: mi('liquid_ender') } ]
     );
 
-    // -- SKELETON -- //
+    // -- SKELETON MODEL -- //
     crusher(
-        st('skeleton'),
+        st('skeleton_model'),
         8,
         600,
         [ { amount: 1, item: kj('skeleton_model'), probability: 0.05 } ],
@@ -70,242 +263,5 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('bow'), probability: 0.1 },
             { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
         ]
-    );
-
-    // -- PIG -- //
-    crusher(
-        st('pig'),
-        8,
-        600,
-        [ { amount: 1, item: kj('pig_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('porkchop'), probability: 0.85 },
-            { amount: 1, item: mc('bone'), probability: 0.65 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- SHEEP -- //
-    crusher(
-        st('sheep'),
-        8,
-        600,
-        [ { amount: 1, item: kj('sheep_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('white_wool') },
-            { amount: 1, item: mc('white_wool'), probability: 0.5 },
-            { amount: 1, item: mc('mutton'), probability: 0.85 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- COW -- //
-    crusher(
-        st('cow'),
-        8,
-        600,
-        [ { amount: 1, item: kj('cow_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('beef') },
-            { amount: 1, item: mc('beef'), probability: 0.5 },
-            { amount: 1, item: mc('leather'), probability: 0.65 },
-            { amount: 1, item: mc('bone'), probability: 0.5 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- CHICKEN -- //
-    crusher(
-        st('chicken'),
-        8,
-        600,
-        [ { amount: 1, item: kj('chicken_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('chicken') },
-            { amount: 1, item: mc('feather') },
-            { amount: 1, item: mc('feather'), probability: 0.5 },
-            { amount: 1, item: mc('bone'), probability: 0.3 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.2 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- SQUID -- //
-    crusher(
-        st('squid'),
-        8,
-        600,
-        [ { amount: 1, item: kj('squid_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('ink_sac') },
-            { amount: 1, item: mc('ink_sac'), probability: 0.5 },
-            { amount: 1, item: cd('squid'), probability: 0.25 },
-            { amount: 1, item: mc('glow_ink_sac'), probability: 0.01 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.3 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- SPIDER -- //
-    crusher(
-        st('spider'),
-        8,
-        600,
-        [ { amount: 1, item: kj('spider_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('string') },
-            { amount: 1, item: mc('string'), probability: 0.5 },
-            { amount: 1, item: mc('spider_eye'), probability: 0.5 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- CREEPER -- //
-    crusher(
-        st('creeper'),
-        8,
-        600,
-        [ { amount: 1, item: kj('creeper_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('gunpowder') },
-            { amount: 1, item: mc('gunpowder'), probability: 0.5 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- SLIME -- //
-    crusher(
-        st('slime'),
-        8,
-        600,
-        [ { amount: 1, item: kj('slime_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('slime_ball') },
-            { amount: 1, item: mc('slime_ball'), probability: 0.5 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- GHAST -- //
-    crusher(
-        st('ghast'),
-        8,
-        600,
-        [ { amount: 1, item: kj('ghast_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('ghast_tear'), probability: 0.5 },
-            { amount: 1, item: mc('gunpowder'), probability: 0.75 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- ZOMBIE PIGLIN -- //
-    crusher(
-        st('piglin'),
-        8,
-        600,
-        [ { amount: 1, item: kj('zombie_piglin_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('rotten_flesh') },
-            { amount: 1, item: mc('rotten_flesh'), probability: 0.5 },
-            { amount: 1, item: mc('gold_nugget'), probability: 0.5 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.2 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- MAGMA CUBE -- // 
-    crusher(
-        st('magma_cube'),
-        8,
-        600,
-        [ { amount: 1, item: kj('magma_cube_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('magma_cream') },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- BLAZE MODEL -- //
-    crusher(
-        st('blaze'),
-        8,
-        600,
-        [ { amount: 1, item: kj('blaze_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('blaze_rod'), probability: 0.4 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.4 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- WITHER SKELETON -- //
-    crusher(
-        st('wither_skeleton'),
-        8,
-        600,
-        [ { amount: 1, item: kj('wither_skeleton_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('bone') },
-            { amount: 1, item: mc('coal'), probability: 0.333 },
-            { amount: 1, item: ap('withered_bone'), probability: 0.90 },
-            { amount: 1, item: mc('wither_skeleton_skull'), probability: 0.025 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
-        ],
-        [ { amount: 100, fluid: mc('lava') } ]
-    );
-
-    // -- GUARDIAN MODEL -- //
-    crusher(
-        st('guardian'),
-        8,
-        600,
-        [ { amount: 1, item: kj('guardian_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('prismarine_shard') },
-            { amount: 1, item: mc('prismarine_crystals'), probability: 0.8 },
-            { amount: 1, item: mc('sponge'), probability: 0.01 },
-            { amount: 1, item: cr('experience_nugget'), probability: 0.8 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
-    );
-
-    // -- WITCH MODEL -- //
-    crusher(
-        st('witch'),
-        8,
-        600,
-        [ { amount: 1, item: kj('witch_model'), probability: 0.05 } ],
-        [
-            { amount: 1, item: mc('glass_bottle'), probability: 0.25 },
-            { amount: 1, item: mc('glowstone_dust'), probability: 0.25 },
-            { amount: 1, item: mc('redstone'), probability: 0.25 },
-            { amount: 1, item: mc('spider_eye'), probability: 0.25 },
-            { amount: 1, item: mc('gunpowder'), probability: 0.25 },
-            { amount: 1, item: mc('sugar'), probability: 0.25 }
-        ],
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 150, fluid: mi('blood') } ]
     );
 });
