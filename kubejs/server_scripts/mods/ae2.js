@@ -124,22 +124,22 @@ ServerEvents.recipes(e => {
     .id(st('blank_pattern'));
 
     // -- PRINTED SILICON FROM SILICON INGOT -- //
-    e.custom({
-        id: st('printed_silicon_from_ingot'),
-        type: ae('inscriber'),
-        ingredients: {
-            middle: {
-                tag: 'c:silicon_ingots'
-            },
-            top: {
-                item: ae('silicon_press')
-            }
-        },
-        mode: 'inscribe',
-        result: {
-            item: ae('printed_silicon')
-        }
-    });
+    // e.custom({
+    //     id: st('printed_silicon_from_ingot'),
+    //     type: ae('inscriber'),
+    //     ingredients: {
+    //         middle: {
+    //             tag: 'c:silicon_ingots'
+    //         },
+    //         top: {
+    //             item: ae('silicon_press')
+    //         }
+    //     },
+    //     mode: 'inscribe',
+    //     result: {
+    //         item: ae('printed_silicon')
+    //     }
+    // });
 
     // -- Replace the remaining iron ingots in recipes to be stainless steel -- //
     // This shit doesn't work on servers?????

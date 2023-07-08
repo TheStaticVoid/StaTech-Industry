@@ -1,6 +1,7 @@
 ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let mc = (id) => `minecraft:${id}`;
     let st = (id) => `statech:modern_industrialization/blast_furnace/${id}`;
     
     const REMOVED_RECIPES = [
@@ -43,6 +44,27 @@ ServerEvents.recipes(e => {
         [ 
             { amount: 1, item: mi('steel_ingot') }
         ]
+    );
+
+    // -- MOLTEN ENDERIUM -- //
+    blastFurnace(
+        st('molten_enderium_from_ender_pearl'),
+        16,
+        300,
+        [ { amount: 1, item: mc('ender_pearl') } ],
+        null,
+        null,
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
+    );
+
+    // -- ENDERIUM HOT INGOT -- //
+    blastFurnace(
+        st('enderium_hot_ingot'),
+        128,
+        400,
+        [ { amount: 1, item: mi('stainless_steel_ingot') } ],
+        [ { amount: 1, item: mi('enderium_hot_ingot') } ],
+        [ { amount: 1000, fluid: mi('molten_enderium') } ]
     );
 
     // -- REFINED IRON INGOT -> STEEL INGOT -- //

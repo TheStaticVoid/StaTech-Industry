@@ -4,6 +4,7 @@ MIMachineEvents.registerRecipeTypes(e => {
     MOB_CRUSHER = e.register('mob_crusher')
         .withItemInputs()
         .withItemOutputs()
+        .withFluidInputs()
         .withFluidOutputs();
 });
 
@@ -42,8 +43,8 @@ MIMachineEvents.registerMachines(e => {
         // REI Item inputs, item outputs, fluid inputs, fluid outputs
         itemInputs => itemInputs.addSlot(56, 35), 
         itemOutputs => itemOutputs.addSlots(102, 35, 3, 2),
-        fluidInputs => {}, 
-        fluidOutputs => fluidOutputs.addSlot(102, 71),
+        fluidInputs => fluidInputs.addSlot(56, 53),
+        fluidOutputs => fluidOutputs.addSlot(120, 71),
 
         /* Model configuration */
         'steel',            // casing of the controller

@@ -52,23 +52,30 @@ MIMaterialEvents.addMaterials(e => {
     e.createMaterial('Fluorite', 'fluorite', 0xe4ed9b,
         builder => {
             builder.addParts('dust', 'tiny_dust')
-            .ore({
-                'generate': true,
-                'ore_set': 'nether_gold',
-                'vein_size': 4,
-                'veins_per_chunk': 5,
-                'max_y': 90
-            })
-            .rawMetal('copper', true).rawMetal('iridium', false)
-            .defaultRecipes()
+                .ore({
+                    'generate': true,
+                    'ore_set': 'nether_gold',
+                    'vein_size': 4,
+                    'veins_per_chunk': 5,
+                    'max_y': 90
+                })
+                .rawMetal('copper', true).rawMetal('iridium', false)
+                .defaultRecipes()
         });
     
     e.createMaterial('Polytetrafluoroethylene', 'polytetrafluoroethylene', 0x454545,
         builder => {
             builder.addParts('ingot', 'nugget', 'dust', 'tiny_dust', 'plate', 'curved_plate', 'gear', 'ring', 'rod', 'bolt')
-            .specialCasing('Chemically Inert PTFE Casing', 'chemically_inert_ptfe_casing', 8.0)
-            .pipeCasing(8.0)
-            .block('iron')
-            .defaultRecipes();
+                .specialCasing('Chemically Inert PTFE Casing', 'chemically_inert_ptfe_casing', 8.0)
+                .pipeCasing(8.0)
+                .block('iron')
+                .defaultRecipes();
+        });
+
+    e.createMaterial('Enderium', 'enderium', 0x105e51,
+        builder => {
+            builder.addParts('ingot', 'nugget', 'hot_ingot', 'plate', 'gear', 'ring', 'rod', 'bolt')
+                .block('iron')
+                .defaultRecipes();
         });
 });

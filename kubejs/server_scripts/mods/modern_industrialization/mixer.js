@@ -4,6 +4,7 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let xps = (id) => `xps:${id}`;
     let ae = (id) => `ae2:${id}`;
+    let tr = (id) => `techreborn:${id}`;
     let st = (id) => `statech:modern_industrialization/mixer/${id}`;
 
     const REMOVED_RECIPES = [
@@ -31,6 +32,17 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe);
     }
 
+    // -- LIQUID ENDER -- // 
+    mixer(
+        st('liquid_ender'),
+        8,
+        200,
+        [ { amount: 4, item: tr('ender_pearl_dust') } ],
+        null,
+        [ { amount: 500, fluid: mc('water') } ],
+        [ { amount: 1000, fluid: mi('liquid_ender') } ]
+    );
+    
     // -- SOULCOPPER BLEND -- //
     mixer(
         st('soul_copper_blend'),

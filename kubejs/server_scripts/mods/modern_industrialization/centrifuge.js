@@ -60,6 +60,17 @@ ServerEvents.recipes(e => {
         [ { amount: 1000, fluid: mc('lava') } ]
     );
 
+    // -- CENTRIFUGE ROTTEN FLESH -- //
+    centrifuge(
+        st('rotten_flesh'),
+        16,
+        200,
+        [ { amount: 8, item: mc('rotten_flesh') } ],
+        null,
+        null,
+        [ { amount: 1000, fluid: mi('blood') } ]
+    );
+
     // -- CENTRIFUGE GLOWSTONE -- //
     centrifuge(
         st('glowstone'),
