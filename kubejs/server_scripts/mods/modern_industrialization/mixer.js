@@ -37,9 +37,9 @@ ServerEvents.recipes(e => {
         st('liquid_ender'),
         8,
         200,
-        [ { amount: 4, item: tr('ender_pearl_dust') } ],
+        [ { amount: 2, item: tr('ender_pearl_dust') } ],
         null,
-        [ { amount: 500, fluid: mc('water') } ],
+        [ { amount: 800, fluid: mc('water') } ],
         [ { amount: 1000, fluid: mi('liquid_ender') } ]
     );
     

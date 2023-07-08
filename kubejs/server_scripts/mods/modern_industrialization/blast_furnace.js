@@ -48,21 +48,21 @@ ServerEvents.recipes(e => {
 
     // -- MOLTEN ENDERIUM -- //
     blastFurnace(
-        st('molten_enderium_from_ender_pearl'),
-        16,
-        300,
-        [ { amount: 1, item: mc('ender_pearl') } ],
+        st('molten_enderium'),
+        64,
+        400,
+        [ { amount: 1, item: mi('steel_dust') } ],
         null,
-        null,
-        [ { amount: 100, fluid: mi('molten_enderium') } ]
+        [ { amount: 1000, fluid: mi('liquid_ender') } ],
+        [ { amount: 1000, fluid: mi('molten_enderium') } ]
     );
 
-    // -- ENDERIUM HOT INGOT -- //
+    // -- ENDERIUM HOT INGOT -- // 
     blastFurnace(
         st('enderium_hot_ingot'),
         128,
         400,
-        [ { amount: 1, item: mi('stainless_steel_ingot') } ],
+        [ { amount: 1, item: mi('stainless_steel_dust') } ],
         [ { amount: 1, item: mi('enderium_hot_ingot') } ],
         [ { amount: 1000, fluid: mi('molten_enderium') } ]
     );
