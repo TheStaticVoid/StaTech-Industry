@@ -34,10 +34,26 @@ ServerEvents.recipes(e => {
         mi('materials/fire_clay_bricks'),
         mi('compat/techreborn/macerator/minecraft_clay_ball_to_techreborn_clay_dust'),
         mi('steam_age/bronze/furnace_asbl'),
-        mi('steam_age/bronze/boiler_asbl')
+        mi('steam_age/bronze/boiler_asbl'),
+        mi('tools/steam_mining_drill')
     ];
 
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
+
+    // -- STEAM MINING DRILL -- // 
+    e.shaped(mi('steam_mining_drill'), [
+        'FDD',
+        'PHD',
+        'BPF'
+    ],
+    {
+        F: mc('furnace'),
+        D: mc('diamond'),
+        P: mi('steel_large_plate'),
+        H: mi('copper_drill_head'),
+        B: mc('bucket')
+    })
+    .id(st('steam_mining_drill'));
     
     // -- FORGE HAMMER -- //
     e.shaped(mi('forge_hammer'), [
