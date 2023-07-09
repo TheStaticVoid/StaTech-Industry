@@ -150,6 +150,11 @@ StartupEvents.registry('item', e => {
         .displayName('Guardian Model')
         .rarity('Rare')
         .tooltip('§3Designates the output in the Mob Crusher');
+
+    e.create('witch_model')
+        .displayName('Witch Model')
+        .rarity('Rare')
+        .tooltip('§3Designates the output in the Mob Crusher');
 });
 
 ItemEvents.armorTierRegistry(event => {

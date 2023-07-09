@@ -25,6 +25,8 @@ Ponder.tags((event) => {
         'modern_industrialization:mega_smelter',
         'modern_industrialization:space_probe_launcher',
         'modern_industrialization:core_drill',
-        'modern_industrialization:singularity_forge'
+        'modern_industrialization:singularity_forge',
+        'modern_industrialization:greenhouse',
+        'modern_industrialization:mob_crusher'
     ]);
 });
