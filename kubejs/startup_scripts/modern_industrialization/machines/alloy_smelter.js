@@ -9,14 +9,14 @@ MIMachineEvents.registerRecipeTypes(e => {
 MIMachineEvents.registerMachines(e => {
     e.craftingSingleBlock(
         // General parameters
-        "Alloy Smelter", // English Name
-        "alloy_smelter", // Internal Name
+        'Alloy Smelter', // English Name
+        'alloy_smelter', // Internal Name
         ALLOY_SMELTER, // recipe type
-        ["electric"], // list of tiers (can be bronze/steel/electric)
+        ['electric'], // list of tiers (can be bronze/steel/electric)
 
         // GUI Configuration
         170, // background height (or -1 for default value)
-        e.progressBar(85, 25, "arrow"), // progress bar
+        e.progressBar(85, 25, 'arrow'), // progress bar
         e.efficiencyBar(42, 60), // efficiency bar
         e.energyBar(14, 27), // energy bar
 

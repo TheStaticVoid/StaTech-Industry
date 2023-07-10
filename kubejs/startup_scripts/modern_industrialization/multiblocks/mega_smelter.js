@@ -25,13 +25,13 @@ MIMachineEvents.registerMachines(e => {
 
     e.simpleElectricCraftingMultiBlock(
         // General parameters
-        "Mega Smelter", // English name
-        "mega_smelter", // internal name
+        'Mega Smelter', // English name
+        'mega_smelter', // internal name
         MEGA_SMELTER, // recipe type
         megaSmelterShape, // multiblock shape
 
         // REI Display configuration
-        e.progressBar(77, 33, "arrow"),
+        e.progressBar(77, 33, 'arrow'),
         // REI Item inputs, item outputs, fluid inputs, fluid outputs
         itemInputs => itemInputs.addSlots(56, 35, 1, 1), 
         itemOutputs => itemOutputs.addSlot(102, 35),
@@ -39,8 +39,8 @@ MIMachineEvents.registerMachines(e => {
         fluidOutputs => {},
         
         /* Model Configuration */
-        "heatproof_machine_casing", // casing of the controller
-        "mega_smelter", // overlay folder
+        'heatproof_machine_casing', // casing of the controller
+        'mega_smelter', // overlay folder
         true, // front overlay
         false, // top overlay
         false, // side overlay

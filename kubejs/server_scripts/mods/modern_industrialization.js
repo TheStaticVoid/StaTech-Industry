@@ -54,6 +54,20 @@ ServerEvents.recipes(e => {
         B: mc('bucket')
     })
     .id(st('steam_mining_drill'));
+
+    // -- MOB CRUSHER -- // 
+    e.shaped(mi('mob_crusher'), [
+        'MCM',
+        'PHP',
+        'MCM'
+    ],
+    {
+        H: mi('steel_machine_casing'),
+        C: mi('electronic_circuit'),
+        M: mi('large_motor'),
+        P: mi('piston')
+    })
+    .id(st('mob_crusher'));
     
     // -- FORGE HAMMER -- //
     e.shaped(mi('forge_hammer'), [

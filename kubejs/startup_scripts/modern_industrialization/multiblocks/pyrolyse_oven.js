@@ -27,13 +27,13 @@ MIMachineEvents.registerMachines(e => {
 
     e.simpleElectricCraftingMultiBlock(
         // General parameters
-        "Pyrolyse Oven", // English name
-        "pyrolyse_oven", // internal name
+        'Pyrolyse Oven', // English name
+        'pyrolyse_oven', // internal name
         PYROLYSE_OVEN, // recipe type
         pyrolyseShape, // multiblock shape
 
         // REI Display configuration
-        e.progressBar(77, 33, "triple_arrow"),
+        e.progressBar(77, 33, 'triple_arrow'),
         // REI item inputs, item outputs, fluid inputs, fluid outputs
         itemInputs => itemInputs.addSlots(56, 35, 1, 1), 
         itemOutputs => itemOutputs.addSlot(102, 35),
@@ -41,8 +41,8 @@ MIMachineEvents.registerMachines(e => {
         fluidOutputs => fluidOutputs.addSlot(122, 35),
 
         /* MODEL CONFIGUATION */
-        "heatproof_machine_casing", // casing of the controller
-        "pyrolyse_oven", // overlay folder
+        'heatproof_machine_casing', // casing of the controller
+        'pyrolyse_oven', // overlay folder
         true, // front overlay
         false, // top overlay
         false, // side overlay

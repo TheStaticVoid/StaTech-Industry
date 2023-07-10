@@ -15,7 +15,7 @@ MIMachineEvents.registerMachines(e => {
     const steelMachineCasing = e.memberOfBlock(mi('steel_machine_casing'));
     const glassBlock = e.memberOfBlock(mc('glass'));
     const cupronickelCoil = e.memberOfBlock(mi('cupronickel_coil'));
-    const crusherHatch = e.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_output');
+    const crusherHatch = e.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input', 'fluid_output');
 
     const mobCrusherShape = e.layeredShape('steel', [
         //y= 0        1        2        3
@@ -48,7 +48,7 @@ MIMachineEvents.registerMachines(e => {
 
         /* Model configuration */
         'steel',            // casing of the controller
-        'alloy_smelter',    // overlay folder
+        'mob_crusher',      // overlay folder
         true,               // front overlay
         false,              // top overlay
         false,              // side overlay
