@@ -40,6 +40,23 @@ ServerEvents.recipes(e => {
 
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
 
+    // -- PHOTOSYNTHETIC CHAMBER -- //
+    e.shaped(mi('photosynthetic_chamber'), [
+        'MGM',
+        'IHI',
+        'PDT',
+    ],
+    {
+        G: '#c:glass',
+        H: mi('basic_machine_hull'),
+        D: mc('dirt'),
+        P: mi('pump'),
+        T: mi('steel_tank'),
+        I: mi('inductor'),
+        M: mi('motor')
+    })
+    .id(st('photosynthetic_chamber'));
+
     // -- STEAM MINING DRILL -- // 
     e.shaped(mi('steam_mining_drill'), [
         'FDD',

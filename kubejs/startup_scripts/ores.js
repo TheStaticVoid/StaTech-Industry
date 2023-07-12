@@ -7,9 +7,7 @@ WorldgenEvents.remove(e => {
             '#c:ores_in_ground/deepslate'
         ];
     });
-});
 
-WorldgenEvents.remove(e => {
     e.removeFeatureById(
         'underground_ores',
         [
@@ -22,9 +20,7 @@ WorldgenEvents.remove(e => {
             'minecraft:ore_iron_small'
         ]
     );
-});
 
-WorldgenEvents.remove(e => {
     e.removeFeatureById(
         'underground_decoration',
         [
@@ -32,11 +28,9 @@ WorldgenEvents.remove(e => {
             'minecraft:ore_gold_deltas'
         ]
     );
-});
 
-// AD ASTRA
-WorldgenEvents.remove(event => {
-    event.removeFeatureById(
+    // AD ASTRA
+    e.removeFeatureById(
         'raw_generation', 
         [
             "ad_astra:glacio_ice_shard_ore", 
@@ -59,20 +53,16 @@ WorldgenEvents.remove(event => {
             "ad_astra:moon_ice_shard_ore",
         ]
     );
-});
 
-// CREATE
-WorldgenEvents.remove(event => {
-    event.removeFeatureById(
+    // CREATE
+    e.removeFeatureById(
         'underground_ores', 
         [  
             "create:zinc_ore"
         ]
     );
-});
 
-// BYG 
-WorldgenEvents.remove(e => {
+    // BYG 
     const ORES_TO_REMOVE = [
         'byg:pendorite_ore',
         'byg:emeraldite_ore',
@@ -81,7 +71,8 @@ WorldgenEvents.remove(e => {
         'byg:blue_nether_quartz_ore',
         'byg:brimstone_nether_gold_ore',
         'byg:brimstone_nether_quartz_ore',
-        'byg:cryptic_redstone_ore'
+        'byg:cryptic_redstone_ore',
+        'expandeddelight:salt_ore'
     ];
     e.removeOres(ores => {
         ores.blocks = ORES_TO_REMOVE;

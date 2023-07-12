@@ -258,7 +258,7 @@
 				item: "modern_industrialization:electric_cutting_machine"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: -3.0d
 		}
 		{
@@ -354,7 +354,7 @@
 				item: "modern_industrialization:electric_wiremill"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: -4.0d
 		}
 		{
@@ -386,7 +386,7 @@
 				item: "modern_industrialization:electric_unpacker"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.5d
 			y: -3.0d
 		}
 		{
@@ -532,7 +532,7 @@
 				item: "modern_industrialization:electric_packer"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: -3.0d
 		}
 		{
@@ -565,7 +565,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -776,7 +776,7 @@
 				item: "modern_industrialization:electric_mixer"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
 			y: -3.0d
 		}
 		{
@@ -808,7 +808,7 @@
 				item: "modern_industrialization:electric_compressor"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: -4.0d
 		}
 		{
@@ -1094,7 +1094,7 @@
 				item: "techreborn:extractor"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: -4.0d
 		}
 		{
@@ -2278,8 +2278,8 @@
 				item: "modern_industrialization:diesel_chainsaw"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 11.5d
+			x: 16.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -2316,8 +2316,8 @@
 				item: "modern_industrialization:diesel_mining_drill"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 11.5d
+			x: 16.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -2352,8 +2352,8 @@
 				item: "modern_industrialization:diesel_jetpack"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 11.5d
+			x: 13.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6C3EAE1F16E1048A"]
@@ -4670,8 +4670,8 @@
 				}
 			]
 			title: "The Vacuum Freezer"
-			x: 18.0d
-			y: 13.0d
+			x: 14.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["10C6529CD6C26AEE"]
@@ -6271,7 +6271,7 @@
 				item: "techreborn:lamp_incandescent"
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.5d
 			y: -5.5d
 		}
 		{
@@ -6302,7 +6302,7 @@
 				item: "techreborn:lamp_led"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: -5.5d
 		}
 		{
@@ -6549,6 +6549,1245 @@
 			}]
 			x: 9.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["2BB495CFC3E6D6C8"]
+			description: [
+				"If you've yet to find an &eAE2 meteorite&r, then you might want to make this compass. "
+				""
+				"Placing a vanilla compass in a &eCharger&r will charge it up to search for meteorites in your world. Once you find the meteorite mine to the center to find the Presses and even some &7Certus Quartz Buds&r."
+				""
+				"You can use MI cables directly on the Charger to plug it into your power network."
+			]
+			icon: "ae2:meteorite_compass"
+			id: "4589D54579864AE8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "12A3F26B969482E4"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1C7B898EA7157DFB"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "79161C01405A58F2"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "1FBF3E80421EF68D"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					id: "5D108F3DA879349D"
+					item: "ae2:meteorite_compass"
+					type: "item"
+				}
+			]
+			title: "Meteorite Compass"
+			x: 17.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["28495F29C110024D"]
+			description: [
+				"&dFluix Crystals&r can be created in a &aMixer&r. You will need &2Charged Certus Quartz&r, which can be created in an &eElectrolyzer&r."
+				""
+				"They are an key crafting component in &eAE2&r items."
+			]
+			id: "01D12D790B2DE5F5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "445E3BACA5920EFD"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "26C1C00EC52E810D"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2BE6134898EB413D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "49D14D2D43E385A1"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["28495F29C110024D"]
+			description: ["By combining printed &bAE2 circuits&r and &7silicon&r in an &eAssembler&r you will create the basic components for all of &eAE2&r. The &cMolten Redstone&r required for the recipe can be acquired using a &3Blast Furnace&r."]
+			id: "2BB495CFC3E6D6C8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2C5C29EEA92538FE"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "45F68AC04E912F6A"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "61DDB1C9203C1FD8"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "19EA7F8024BB407C"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "4E054A947A80397F"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "6A3C9A96F857A9AC"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			title: "AE2 Processors"
+			x: 15.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["2BB495CFC3E6D6C8"]
+			description: [
+				"The &bMemory Card&r can be used to store, copy, and paste settings. Shift right-click on a &dconfigurable object&r to save the settings on the memory card, then right click on any other block of the same type to paste the settings."
+				""
+				"They are most importantly used to &alink&r the &dinput&r &cME P2P Tunnel&r to the &eoutput&r."
+			]
+			id: "6CC25A557FED2562"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5371C8A096AB3498"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1159489253B4D61C"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "45FB93FF4A21FD1E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "596537EA9D162748"
+				item: {
+					Count: 1b
+					id: "ae2:memory_card"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 17.0d
+			y: 15.5d
+		}
+		{
+			dependencies: [
+				"01D12D790B2DE5F5"
+				"2BB495CFC3E6D6C8"
+			]
+			description: [
+				"While technically not required to setup your first &eAE2 network&r, you will really want to craft at least one of these for now. "
+				""
+				"Thanks to the glorious &eModern Industrialization&r's universal cables, you will not need to craft an &bEnergy Acceptor&r to hook up your network to power. You can plug it right in to your power generation!"
+				""
+				"&eApplied Energistics&r is a pretty expansive mod with a lot of mechanics, with &aP2P&r and &bchannels&r being the most complex part."
+				""
+				"&cNOTE&r: &eAE2&r uses it's own energy system, just know that EU is converted in a 1:2 power ratio, meaning that for every 1 EU put in you are actually generating 2 AE."
+			]
+			id: "47AC1C475DEE0FE4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "27825C46CEDC1AAF"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 10
+					id: "1829B8CBA68EDBA3"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "305C19A3A5B00F38"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "Heart of the Network"
+			tasks: [{
+				id: "6C4582D1D40B7A51"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 17.25d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"Many devices, but not all, require a &bchannel&r to function. If the device deals solely with power, or connectivity like cables, the device will not require a &bchannel&r. Anything that uses items, or moves them around, will."
+				""
+				"&bChannels&r limits are doubled from the standard, meaning that a &ccontrollerless&r network will be able to support up to &d16 channels&r. Once you break that limit, you will need to add an &eME Controller&r to your network."
+				""
+				"Each face of the &eME Controller&r will output &d64 channels&r. What these channels are connected to will determine what they get used for, for instance, if you place &aFluix ME Dense Covered Cable&r next to the controller you will be able to carry a full &d64 channels&r, however if you place an &aME Drive&r next to it, or non-dense cable, you will only get &d16 channels&r."
+			]
+			id: "34EC66DC503EE2AD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "27044D1CFD293C52"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "13BCF3C8E20093FE"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "78CBE688A00797BD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Tedious but rewarding!"
+			tasks: [{
+				id: "20B32213DF9AA2CE"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "CHANNELS!"
+			x: 12.5d
+			y: 16.75d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"The &bME Terminal&r gives you access to items stored in your &eME Network&r. This will also include items accessible through &eME Storage Bus&r."
+				""
+				"It has the ability to sort and search, as well as filter by using View Cell. It requires a channel to function."
+			]
+			id: "742FEDEA09A5FEA7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "022E7064941293BD"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "3DB25AB4D8337E03"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2E942244A7E20698"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "4EA6EEE45103709C"
+				item: "ae2:terminal"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 17.75d
+		}
+		{
+			dependencies: ["742FEDEA09A5FEA7"]
+			description: [
+				"Attaching an &bME Crafting Terminal&r to your &eAE2 network&r will grant you access to &lall&r the items stored within and and an included crafting grid you can use these stored items in. "
+				""
+				"It requires a channel to function."
+			]
+			id: "4372EB6B99CB383D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "396C1DE7A703F64F"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1394797BE6AEB94A"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "654AE4A6D95DE578"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			subtitle: "A MUCH better crafting table"
+			tasks: [{
+				id: "134DCCD1F1D35772"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 17.75d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"&bFluix ME Glass Cables&r are the simplest cable to make, transfers power and up to &d16 channels&r. It comes in 17 different colors, the default being Fluix, and can be dyed any color using any of the 16 dyes."
+				""
+				"To craft colored cables, surround a dye of any type with 8 cables of the same type (color of the cables don't matter, but they must be the same type). You can also paint cables with any forge compatible paint brush in world."
+				""
+				"You can craft any colored cable with a water bucket to remove the dye."
+				""
+				"You can cover the cable with wool to create &aFluix ME Covered Cable&r, and craft &eFluix ME Smart Cable&r to get better idea of what is going on with your channels."
+			]
+			id: "0185C45DF71403A5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "477F6D5125EC1F4D"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1D82C234B90FE837"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "62186F1B76C24E02"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "7C3BE9D5466690C5"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "ae2:glass_cable"
+					}
+				}
+				title: "Any Glass Cable"
+				type: "item"
+			}]
+			title: "Glass Cables"
+			x: 13.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["0185C45DF71403A5"]
+			description: [
+				"The &bCovered Cable&r variant offers no gameplay benewfits over its &aFluix ME Glass Cable&r counterpart. It can however be used as an alternate aesthetic choice if you prefer the covered look."
+				""
+				"Can be colored in the same manner as &aFluix ME Glass Cable&r. &bFour Fluix ME Covered Cable&r can be crafted with Redstone and Glowstone to make &dFluix ME Smart Cable&r."
+			]
+			id: "56A9ADF766CC038C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "72BBBF7BA8A3838D"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "6A4ECA3718AEAB87"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "1DC1F849D8ECDC50"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "69B5FA12A13886E6"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "ae2:covered_cable"
+					}
+				}
+				title: "Any Covered Cable"
+				type: "item"
+			}]
+			title: "Colored Cables"
+			x: 10.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["56A9ADF766CC038C"]
+			description: [
+				"While bearing some similarity to &aFluix ME Covered Cables&r in appearance, the &bFluix ME Smart Cable&r provides diagnostic function by visualizing the channel usage on the cables, the channels appear as lit colored lines that run along the black stripe on the cables giving you an understanding of how your channels are being used on your network. The first four channels show as lines matching the color of the cable, the next four show as white lines."
+				""
+				"These can be colored in the same manner as Fluix ME Glass Cable."
+			]
+			id: "7C0F5471E36D2678"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "74C7DDD128A11122"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "4D66F21D39418A7C"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "11EE50D8182AEAF5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "36DE906D5C60EBCF"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "ae2:smart_cable"
+					}
+				}
+				title: "Any Smart Cable"
+				type: "item"
+			}]
+			title: "Smart Cables"
+			x: 10.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["56A9ADF766CC038C"]
+			description: ["The &bFluix ME Dense Covered Cable&r can carry up to &d64 channels&r unlike standard cable which can only carry 16, however it doesn't support buses, so you must first step down from dense to smaller cable (such as &aFluix ME Glass Cable&r or &eFluix ME Smart Cable&r) before using buses or panels."]
+			id: "156DB9FCCDFE4C57"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5A1F886847D1D163"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "179CA89AA955A2D8"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "7C8BA461D4AE7F24"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "2671CFDA4FBDA8A4"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "ae2:covered_dense_cable"
+					}
+				}
+				title: "Any Dense Covered Cable"
+				type: "item"
+			}]
+			title: "Dense Covered Cables"
+			x: 11.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["7C0F5471E36D2678"]
+			description: ["Similar to the regular &aDense Covered Cables&r, the &bFluix ME Smart Dense Cables&r carry &d64 channels&r instead of the default 16. Shows load similarly to &eFluix ME Smart Cable&r with each line lit representing four channels in use."]
+			id: "0EA5A3091E3732A8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "643524889B7E73A3"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "64831F2F8DA78C91"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2166EB18FB8C084C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "118A781A1E239A22"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "ae2:smart_dense_cable"
+					}
+				}
+				title: "Any Smart Dense Cables"
+				type: "item"
+			}]
+			title: "Smart Dense Cables"
+			x: 10.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["0185C45DF71403A5"]
+			description: ["Need to move channels in a &ccramped space&r filled with &eME Pipes&r / &eCables&r / &eetc&r? &3ME Wires&r are for you. They can carry &216 Channels&r like normal &dFluix Cables&r, but can also occupy the same space as &eME Pipes&r / &eCables&r / &eetc&r. "]
+			id: "50797DB31799B933"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3B2866C3BC243C08"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "44E480033B935D44"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "3AFBBEBBCC8AA5B3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4F4D97945F64C8C9"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "modern_industrialization:me_wires"
+					}
+				}
+				title: "ME Wires"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"The &bToggle Bus&r is a bus which functions similarly to &aFluix ME Glass Cable&r or other cables, but it allows it connection state to be toggled via redstone. This allows you to cut off a section of a ME Network."
+				""
+				"When redstone signal supplied the part enables the connection, &bME Inverted Toggle Bus&r provides the reverse behavior by disabling the connection instead."
+				""
+				"There is also an inverted version of the toggle that disables the connection when a redstone signal is supplied."
+			]
+			id: "66B50C954D74B139"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "254B401A8BD496C3"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "521DE950926F43A9"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "02EC8106F1227C87"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "7A626F89D6A3E77D"
+				item: "ae2:toggle_bus"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"So when channels become a nusance, you can turn to &bME P2P Tunnels&r. When configured for ME, they allow you to move channels from point to point. This allows you to move up to 64 channels per pair of &bME P2P Tunnel&r."
+				""
+				"The &bP2P Tunnel&r can be configured to transfer other things, such as items, redstone, power, and fluids. Check &dREI&r on how to configure the P2P."
+				""
+				"&bTunnels&r are 1 input to N outputs. This means you can output as many points as you want, but only input at a single point per tunnel. Networks can support any number of tunnels, of any different t ypes, and they all function independently."
+				""
+				"&bME Tunnels&r can be used to carry channels from one location to another, and carry up to &d64 channels&r, same as &bFluix ME Dense Covered Cable&r, while only requiring a single channel per point, making tunnels a very powerful tool to expand ME Networks, especially over distance. "
+				""
+				"The channel required by a &bP2P Tunnel&r cannot be carried through another &bP2P Tunnel&r."
+			]
+			id: "1DBBA5E170B9B5D6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "57F93D6ED94CE600"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "4CB6F097994721AB"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "0CC0D07A961BF6E7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "337A787E6839F1D4"
+				item: "ae2:me_p2p_tunnel"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"The &bME Level Emitter&r can indicate either the level of a specified item or the &aME Network&r energy level. You can set the threshold and if the &bME Level Emitter&r will emit a redstone signal or turn it off."
+				""
+				"Requires a channel to function, if its power or channel is lost the emitter will switch to an off state."
+				""
+				"These can tap into the crafting system when a crafting grid is installed, allowing you to output redstone while an item is being crafted or even configure the system to output redstone to perform a crafting task, its important to note that you cannot mix level emitter craft via redstone with interface patterns."
+			]
+			id: "59B25EC6B8490E78"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "704A41F5BD9DA246"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "04647A2C885B02C0"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "1714F90EC9D90E86"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "78EB484BB1A1F0E3"
+				item: "ae2:level_emitter"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"&bCable Anchors&r are small decorative cable-mounted spikes that you can use to create ladders with cables, or make the cable appear connected to the walls around it."
+				""
+				"Most notably, &bCable Anchors&r prevent connections from forming on the side they're mounted on."
+			]
+			id: "3939773BB1720493"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7CB075156DC20FFF"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "0270746D8CF673D7"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2A5BAE213AAD57C2"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "1A21A6A0EBB132ED"
+				item: "ae2:cable_anchor"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"The &bME Storage Montior&r is a simple way to see the current level of a specified item. There are several interactions to modify it."
+				"- Right-click with item: Will display the current stored amount of that item if not locked"
+				"- Right-click with empty hand: Will reset the display if not locked."
+				"- Shift+right-click with empty hand: Will toggle the lock"
+				"- Right-click with wrench: Will rotate the monitor if its locked and on the ground or ceiling"
+			]
+			id: "7E211328EEB3CB9C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "46760DEA9B06263F"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "04A576F93ED817E4"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2D51A4D15CC21652"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "2AC295360D59CF76"
+				item: "ae2:storage_monitor"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 16.75d
+		}
+		{
+			dependencies: ["7E211328EEB3CB9C"]
+			description: [
+				"The &bME Conversion Monitor&r is the upgraded version of the &aME Storage Monitor&r. It adds the ability to withdraw from or store items into the &eME Network&r."
+				""
+				"In addition to the storage monitor's interactions, conversion monitors support the following actions:"
+				"- Left-click: Extracts a stack of the shown item into your inventory"
+				"- Right-click with item: Inserts the held item into the network"
+				"- Right-click with empty hand: Will insert all of the shown item from your inventory into the network."
+			]
+			id: "6A5AD2356F8AC735"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4CE9C13B94AA4A0F"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "421BE8637BA94561"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "35AB681918FBC43A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "4939C15297BA8D8D"
+				item: "ae2:conversion_monitor"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 16.75d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"The &bME Security Terminal&r allows you to configure which users, and what permissions those users have within your &eME System&r. By existing, it enforces permissions on the usage of the system."
+				""
+				"The &bSecurity Terminal&r does not prevent destructive tampering, removing cables / machines or breaking of drives. If you need to protect your system from physical vandalism, you will need to place it in &eFTB claimed chunks&r. This block only provides network security."
+				""
+				"The player who places the &bME Security Terminal&r has full control over the network and cannot exclude themself any rights. By adding a blank &aBiometric Card&r you define a default behavior for every player who has no own Biometric Card registered."
+				""
+				"Other than adding security to your &eAE network&r, you can link up your &bWireless Terminal&r with the network and access it wirelessly. You'll get access to a &bWireless Terminal&r in the next chapter."
+			]
+			id: "72F1B2987533A6F6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "64BBA34CDB21B468"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "4DE2A20A8C1E754F"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "021110653BCE3D20"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "587C0FB684830328"
+				item: "ae2:security_station"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 17.75d
+		}
+		{
+			dependencies: ["36C698E0F31FDB20"]
+			description: ["The &aLaser Engraver&r is a fancy &enew machine&r part of &31.1.0&r. It's main purpose is the creation of &2Printed AE2 Circuits&r. It can also be used to create &dMob Models&r for use in the &bMob Crusher&r."]
+			id: "28495F29C110024D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0FBC5C1142401D8F"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1139E13DE52BB213"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "5E45FB99CA655792"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "70694EAAB2ECBC6F"
+				item: "modern_industrialization:laser_engraver"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"36C698E0F31FDB20"
+				"28495F29C110024D"
+			]
+			description: [
+				"The &aMob Crusher&r is a &3server-friendly&r way of generating mob drops. Instead of &claggy farms&r that spawn hostile / passive mobs and then feed them into a kill chamber, this process is localized into this &emultiblock machine&r. "
+				""
+				"The &aMob Crusher&r runs on &cBlood&r for most recipe. It produces &cBlood&r after slaughtering the mob, so you'll &2always end up with extra&r. To get your starting amount of &cBlood&r you can &6Centrifuge&r &bRotten Flesh&r. "
+				""
+				"For &3Ender Pearls&r, you will need to make &bLiquid Ender&r, which can be made by combining &3Ender Pearl Dust&r and &9Water&r in a &eMixer&r."
+			]
+			icon: "modern_industrialization:mob_crusher"
+			id: "654F6F3798065F1A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2048EA330830E408"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "6D5487F43872C288"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "3FA88E44092D5CF0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6EA3D794E78EF82C"
+					item: "modern_industrialization:mob_crusher"
+					type: "item"
+				}
+				{
+					count: 37L
+					id: "0FA883820CB09184"
+					item: "modern_industrialization:steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "743AC906152FDA74"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "013D80C9BAC49F8C"
+					item: "modern_industrialization:cupronickel_coil"
+					type: "item"
+				}
+				{
+					id: "6541B1A9747C71A4"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+					title: "Any Item Input Hatch"
+					type: "item"
+				}
+				{
+					id: "484A1C5D60FC2309"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					title: "Any Item Output Hatch"
+					type: "item"
+				}
+				{
+					id: "34C0EBFE254884BF"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					id: "28501BF011F09DE0"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+					title: "Any Energy Input Hatch"
+					type: "item"
+				}
+			]
+			x: 16.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["473C1DE557D3E9C0"]
+			description: ["Lots of &ehard work&r is sure to leave the &cindustrialist very hungry&r. Want a solution that doesn't involve diving into &eCreate&r? If so, then the &aPhotosynthetic Chamber&r is for you. The &aChamber&r &3does not consume the seeds you input into it&r and only requires a steady input of &9water&r. You can use this to generate a &dlarge stockpile of food&r for yourself (or for future &aPlant Oil&r needs)."]
+			id: "38058656419F26A9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4723F5D105DF6876"
+					table_id: 238949117979752405L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "23B435DCE7CF1AA6"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "383CF5A693CFD6D6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Here comes the sun"
+			tasks: [{
+				id: "7AB97BE9350F44F2"
+				item: "modern_industrialization:photosynthetic_chamber"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["473C1DE557D3E9C0"]
+			description: [
+				"While tearing down entire forests definitely &emake the factory happy&r, it does not &cmake you happy&r. It's a lot of &ctedious work&r for such a &abasic material&r. While you could make a simple &eCreate contraption&r for a &3tree farm&r, it's not the most &clag-friendly&r method, and a lot of larger tree types &cdont get cut down properly&r by &eCreate&r's &6Mechanical Saws&r. Luckily, the &aIndustrial Greenhouse&r can solve all these issues. By feeding it &9Water&r and providing a &2Sapling&r, it will generate &dLogs&r and &2Saplings&r of that respective type after little bit of time. "
+				""
+				"If you provide &6Bone Meal&r with the recipe, it will &2double the output&r. Please note though that it's best to ensure you're &3only running one recipe&r for maximum overclock potential. If you can't supply a steady stream of &6Bone Meal&r to the machine, it's probably better to use the recipes without it."
+			]
+			icon: "modern_industrialization:greenhouse"
+			id: "12D1C1484AD1A11C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "043AA436AD4E3C53"
+					table_id: 238949117979752405L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "4128AB89B499DBB1"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "68E2150B0691BCFF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			subtitle: "An industrial green thumb"
+			tasks: [
+				{
+					id: "75DA3DA1AEDD6F74"
+					item: "modern_industrialization:greenhouse"
+					type: "item"
+				}
+				{
+					count: 56L
+					id: "1395BD1FB4B98B78"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "175DC557B26E6B19"
+					item: "factory_blocks:metalbox"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "697E625BA8184264"
+					item: "factory_blocks:rusty_scaffold"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "6A28593836CEC663"
+					item: "modern_industrialization:steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "76ED3B0B67D9C001"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "354B78E8A5630D64"
+					item: "minecraft:oak_leaves"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "5D786792A36A4548"
+					item: "minecraft:grass_block"
+					type: "item"
+				}
+				{
+					id: "1EA187B98E065C7A"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "42A02A3E7C2261E4"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "3C4BD1052C76D7B5"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+					title: "Any Item Input Hatch"
+					type: "item"
+				}
+				{
+					id: "298E0EDEB883EF35"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					title: "Any Item Output Hatch"
+					type: "item"
+				}
+				{
+					id: "0E475AC9DBBD0336"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					id: "1DFCA7F3A6BD9A30"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					title: "Any Fluid Output Hatch"
+					type: "item"
+				}
+				{
+					id: "18575EDF4982CDFE"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+					title: "Any Energy Input Hatch"
+					type: "item"
+				}
+			]
+			x: -2.25d
+			y: 1.0d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "180F13D0E8D7225F"
+			tasks: [{
+				id: "2A66C22C1102689F"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "5E70BF0F1F785320"
+			tasks: [{
+				id: "07B3F1405845C5A4"
+				item: "ae2:import_bus"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "6BA8EB5A6C53FE75"
+			tasks: [{
+				id: "2EF7A1DE52F1EAD9"
+				item: "ae2:export_bus"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			id: "2494B483CAD7FED1"
+			tasks: [{
+				id: "60B537DBBE590299"
+				item: "ae2:interface"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 21.0d
+		}
+		{
+			dependencies: ["01D12D790B2DE5F5"]
+			icon: "ae2:flawless_budding_quartz"
+			id: "32F963B0273A07E2"
+			rewards: [{
+				id: "571B2E576152F3DF"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "A different growth method from 1.12"
+			tasks: [{
+				id: "4A96B02DCAC866B3"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Renewable Certus"
+			x: 13.0d
+			y: 14.5d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]

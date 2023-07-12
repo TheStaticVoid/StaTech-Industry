@@ -66,19 +66,19 @@ ServerEvents.recipes(e => {
     // -- REMOVE ALL INSCRIBER RECIPES -- // 
     e.remove({type: 'ae2:inscriber' });
     
-    // -- INSCRIBER -- //
-    e.shaped(ae('inscriber'), [
-        'MPM',
-        'CHC',
-        'MPM'
-    ],
-    {
-        P: mi('piston'),
-        M: mi('advanced_motor'),
-        H: mi('turbo_machine_hull'),
-        C: mi('digital_circuit')
-    })
-    .id(st('inscriber'));
+    // // -- INSCRIBER -- //
+    // e.shaped(ae('inscriber'), [
+    //     'MPM',
+    //     'CHC',
+    //     'MPM'
+    // ],
+    // {
+    //     P: mi('piston'),
+    //     M: mi('advanced_motor'),
+    //     H: mi('turbo_machine_hull'),
+    //     C: mi('digital_circuit')
+    // })
+    // .id(st('inscriber'));
 
     // -- CONTROLLER -- //
     e.shaped(ae('controller'), [
@@ -89,8 +89,8 @@ ServerEvents.recipes(e => {
     {
         E: ae('engineering_processor'),
         F: ae('fluix_crystal'),
-        C: mi('digital_circuit'),
-        H: mi('turbo_machine_hull'),
+        C: mi('electronic_circuit'),
+        H: mi('advanced_machine_hull'),
         L: ae('logic_processor'),
         P: ae('calculation_processor')
     })
@@ -104,7 +104,7 @@ ServerEvents.recipes(e => {
     ],
     {
         S: mi('steel_large_plate'),
-        C: mi('annealed_copper_wire'),
+        C: mi('copper_wire'),
         B: 'techreborn:low_voltage_su'
     })
     .id(st('charger'));
@@ -153,7 +153,7 @@ ServerEvents.recipes(e => {
         'SES'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         C: ae('chest'),
         F: ae('fluix_glass_cable'),
         O: ae('cell_component_16k'),
@@ -214,8 +214,8 @@ ServerEvents.recipes(e => {
         G: '#c:glass',
         T: ae('terminal'),
         F: ae('fluix_glass_cable'),
-        S: '#c:stainless_steel_ingots',
-        C: '#c:copper_ingots'
+        S: '#c:aluminum_plates',
+        C: '#c:copper_plates'
     })
     .id(st('chest'));
 
@@ -226,7 +226,7 @@ ServerEvents.recipes(e => {
         'SGS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         G: '#c:glass',
         A: ae('annihilation_core'),
         F: ae('formation_core')
@@ -434,8 +434,8 @@ ServerEvents.recipes(e => {
     ],
     {
         C: ae('calculation_processor'),
-        S: '#c:stainless_steel_ingots',
-        G: '#c:gold_ingots',
+        S: '#c:aluminum_plates',
+        G: '#c:gold_plates',
         R: '#c:redstone_dusts'
     })
     .id(st('memory_card'));
@@ -642,7 +642,7 @@ ServerEvents.recipes(e => {
     {
         G: '#c:glowstone_dusts',
         Q: ae('quartz_glass'),
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         R: '#c:redstone_dusts'
     })
     .id(st('semi_dark_monitor'));
@@ -654,7 +654,7 @@ ServerEvents.recipes(e => {
     ],
     {
         A: ae('annihilation_core'),
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         P: 'minecraft:sticky_piston'
     })
     .id(st('import_bus'));
@@ -713,7 +713,7 @@ ServerEvents.recipes(e => {
         ' P '
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         F: ae('formation_core'),
         P: 'minecraft:piston'
     })
@@ -726,7 +726,7 @@ ServerEvents.recipes(e => {
         'FFF'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         E: ae('engineering_processor'),
         F: ae('fluix_crystal')
     })
@@ -741,8 +741,15 @@ ServerEvents.tags('item', e=> {
         'ae2:64k_crafting_storage',
         'ae2:256k_crafting_storage'
     ];
+    CRAFTING_STORAGE.forEach(id => e.add('kubejs:crafting_storage', id) );
 
-    CRAFTING_STORAGE.forEach(id => { e.add('kubejs:crafting_storage', id) });
+    const BUDDING_BLOCKS = [
+        'ae2:flawless_budding_quartz',
+        'ae2:flawed_budding_quartz',
+        'ae2:chipped_budding_quartz',
+        'ae2:damaged_budding_quartz'
+    ];
+    BUDDING_BLOCKS.forEach(id => e.add('kubejs:budding_certus', id) );
 
     // -- REMOVE ENDER DUST -- //
     e.removeAllTagsFrom('ae2:ender_dust');

@@ -133,7 +133,7 @@
 				type: "item"
 			}]
 			title: "Prepare for Create"
-			x: 1.5d
+			x: 1.0d
 			y: 0.0d
 		}
 		{
@@ -180,7 +180,7 @@
 				type: "item"
 			}]
 			title: "Andesite Alloy"
-			x: 3.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -213,7 +213,7 @@
 				type: "item"
 			}]
 			title: "Rotational Power"
-			x: 6.0d
+			x: 5.5d
 			y: 0.0d
 		}
 		{
@@ -250,7 +250,7 @@
 				}
 			]
 			title: "Windmill"
-			x: 6.5d
+			x: 6.0d
 			y: -1.5d
 		}
 		{
@@ -296,7 +296,7 @@
 				}
 			]
 			title: "Big and Little Cogs"
-			x: 4.5d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -322,7 +322,7 @@
 				type: "checkmark"
 			}]
 			title: "Stress Units and Rotational Force"
-			x: 4.5d
+			x: 4.0d
 			y: 1.5d
 		}
 		{
@@ -355,7 +355,7 @@
 				type: "checkmark"
 			}]
 			title: "Increase/Decrease Rotation Speed"
-			x: 4.5d
+			x: 4.0d
 			y: 3.0d
 		}
 		{
@@ -382,7 +382,7 @@
 				item: "create:hand_crank"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: -1.5d
 		}
 		{
@@ -420,7 +420,7 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -470,7 +470,7 @@
 				}
 			]
 			title: "Mechanical Mixer"
-			x: 10.5d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -516,7 +516,7 @@
 				type: "item"
 			}]
 			title: "Bronze"
-			x: 12.5d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -568,7 +568,7 @@
 				type: "item"
 			}]
 			title: "The Forge Hammer"
-			x: 15.0d
+			x: 14.5d
 			y: 0.0d
 		}
 		{
@@ -599,7 +599,7 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
@@ -1328,6 +1328,7 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["4B07D0F2469CC1A7"]
 			description: ["It seems that some of the &eworld generation&r mods have &cnegatively affected&r the generation of &aAndesite&r in the world. If you're having particular troubles finding Andesite, then &2I offer a trade&r. 64x &3Cobblestone&r for 64x &aAndesite&r. Seems fair, no?"]
 			id: "7404F574F4307FB1"
 			rewards: [{
@@ -1344,7 +1345,7 @@
 				type: "item"
 			}]
 			title: "Can't Find Andesite?"
-			x: 1.5d
+			x: 0.25d
 			y: 1.5d
 		}
 		{
@@ -1381,13 +1382,14 @@
 					xp: 10
 				}
 			]
+			shape: "square"
 			tasks: [{
 				id: "769292BA522B15FD"
 				title: "Click to Acknowledge"
 				type: "checkmark"
 			}]
 			title: "Time to Mine!"
-			x: 0.0d
+			x: -0.5d
 			y: 0.0d
 		}
 		{
@@ -1395,7 +1397,7 @@
 			description: [
 				"Tired of having to chop down trees &cblock by block&r? &eStress no longer&r, the &aLumberaxe&r is here to save the day. "
 				""
-				"These tools act similar to a &dvein miner&r effect, and will destroy &3any connected logs&r to the log you break with it. &cWARNING&r: This does include blocks &cplaced by hand&r!"
+				"These tools act similar to a &dvein miner&r effect, and will destroy &3any connected logs&r to the log you break with it. &cWARNING&r: This does include logs &cplaced by hand&r!"
 			]
 			id: "5DE28B092DD37757"
 			rewards: [
@@ -1428,7 +1430,7 @@
 				title: "Lumberaxes"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 8.0d
 			y: 1.5d
 		}
 		{
@@ -1466,7 +1468,7 @@
 				title: "Hammers"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 9.0d
 			y: 1.5d
 		}
 	]

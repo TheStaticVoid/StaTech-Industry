@@ -208,7 +208,8 @@ REIEvents.removeCategories(e => {
         tr('gas_turbine'),
         tr('plasma_generator'),
         tr('diesel_generator'),
-        tr('semi_fluid_generator')
+        tr('semi_fluid_generator'),
+        'create:charging'
     ];
     REMOVED_CAT.forEach(id => e.yeet(id));
 });

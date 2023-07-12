@@ -39,7 +39,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["45CE5F461A159F66"]
 			description: [
 				"Now you may want to consider creating a &aSteam Mining Drill&r to obtain the ores directly without needing a Silk Touch pickaxe."
 				""
@@ -68,13 +68,15 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.5d
+			subtitle: "3x3 with Silk Touch/Fortune"
 			tasks: [{
 				id: "36E79689C51B2EC4"
 				item: "modern_industrialization:steam_mining_drill"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 18.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["5EDE88BDA0182BD7"]
@@ -110,7 +112,7 @@
 				item: "modern_industrialization:bronze_barrel"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: 2.0d
 		}
 		{
@@ -145,7 +147,7 @@
 				item: "modern_industrialization:bronze_tank"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: 2.0d
 		}
 		{
@@ -1126,7 +1128,7 @@
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: 20.0d
+			x: 21.0d
 			y: 13.0d
 		}
 		{
@@ -1200,7 +1202,7 @@
 				item: "modern_industrialization:trash_can"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 16.5d
 			y: 15.5d
 		}
 		{
@@ -1231,7 +1233,7 @@
 				item: "modern_industrialization:steel_unpacker"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 17.5d
 			y: 15.5d
 		}
 		{
@@ -1262,7 +1264,7 @@
 				item: "modern_industrialization:steel_packer"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 18.5d
 			y: 15.5d
 		}
 		{
@@ -1400,7 +1402,7 @@
 				}
 			]
 			title: "Steam Quarry"
-			x: 22.5d
+			x: 23.5d
 			y: 13.0d
 		}
 		{
@@ -1437,7 +1439,7 @@
 				item: "modern_industrialization:bronze_drill"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 25.5d
 			y: 12.0d
 		}
 		{
@@ -1474,7 +1476,7 @@
 				item: "modern_industrialization:copper_drill"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 25.5d
 			y: 14.0d
 		}
 		{
@@ -2364,7 +2366,7 @@
 				item: "modern_industrialization:steel_tank"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 15.5d
 			y: 15.5d
 		}
 		{
@@ -2605,7 +2607,7 @@
 				item: "modern_industrialization:steel_boiler"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 14.5d
 			y: 15.5d
 		}
 		{
@@ -2809,8 +2811,8 @@
 				item: "modern_industrialization:steel_water_pump"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 11.0d
+			x: 12.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
@@ -2846,7 +2848,7 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
+			x: 13.5d
 			y: 15.5d
 		}
 		{
@@ -3774,7 +3776,7 @@
 				item: "modern_industrialization:zinc_drill"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 25.5d
 			y: 13.0d
 		}
 		{
@@ -4026,6 +4028,8 @@
 				"&6Pipes&r won't move fluids unless you have an &battachment&r to the pipe or a machine is &3auto ejecting&r into it. "
 				""
 				"They can be interacted with using the &eModern Industrialization&r &6Wrench&r."
+				""
+				"&cBe wary of using these extensively on a server&r, as they are significantly more laggy than MI pipes."
 			]
 			id: "375EC7F95730956F"
 			rewards: [
@@ -4138,7 +4142,7 @@
 				type: "item"
 			}]
 			title: "Modern Dynamics Item Pipe"
-			x: 20.0d
+			x: 21.0d
 			y: 14.5d
 		}
 		{
@@ -4168,7 +4172,7 @@
 				item: "moderndynamics:inhibitor"
 				type: "item"
 			}]
-			x: 20.5d
+			x: 21.5d
 			y: 16.0d
 		}
 		{
@@ -4198,7 +4202,7 @@
 				item: "moderndynamics:machine_extender"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 20.5d
 			y: 16.0d
 		}
 		{
