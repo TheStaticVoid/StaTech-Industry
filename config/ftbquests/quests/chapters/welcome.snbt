@@ -215,7 +215,7 @@
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
-			description: ["&aOh The Biomes You'll Go&f is included in this pack alongside &eTectonic&f and &6Not Just Biomes&r. Together, these world generation mods will &2vastly improve&r the landscape as you adventure."]
+			description: ["This pack includes &aOh The Biomes You'll Go&r as it's primary &eworld generation mod&r. This mod adds &6new biomes (duh), tools, ores, food, and blocks&r to enhance your world. "]
 			icon: "byg:byg_logo"
 			id: "571425ED36DA521C"
 			rewards: [{
@@ -264,7 +264,7 @@
 				""
 				"&eThey may not be required, but they can be &2VERY&e helpful&r!"
 			]
-			icon: "minecraft:bookshelf"
+			icon: "ftbquests:book"
 			id: "0480052F3F1EDAFC"
 			rewards: [{
 				id: "32F27179EF571FEE"
@@ -413,13 +413,7 @@
 				""
 				"If your friend is too loud, your microphone isn't being detected, or any other issue arises, press '&ep&r' to &dopen the config&r for the mod. By default the &9Push to Talk&r key is bound to '&3CAPS LOCK&r'. "
 			]
-			icon: {
-				Count: 1b
-				id: "twilightforest:lifedrain_scepter"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "kubejs:voice_chat"
 			id: "1F6617D47FD87D58"
 			rewards: [{
 				id: "736BEFEDA748EEF5"

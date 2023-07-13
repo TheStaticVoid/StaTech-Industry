@@ -7371,6 +7371,7 @@
 				""
 				"Other than adding security to your &eAE network&r, you can link up your &bWireless Terminal&r with the network and access it wirelessly. You'll get access to a &bWireless Terminal&r in the next chapter."
 			]
+			icon: "ae2:security_station"
 			id: "72F1B2987533A6F6"
 			rewards: [
 				{
@@ -7392,11 +7393,18 @@
 				}
 			]
 			shape: "rsquare"
-			tasks: [{
-				id: "587C0FB684830328"
-				item: "ae2:security_station"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "587C0FB684830328"
+					item: "ae2:security_station"
+					type: "item"
+				}
+				{
+					id: "071A96097C3017EC"
+					item: "ae2:biometric_card"
+					type: "item"
+				}
+			]
 			x: 12.5d
 			y: 17.75d
 		}

@@ -843,6 +843,268 @@
 			x: 4.0d
 			y: 5.0d
 		}
+		{
+			icon: "modern_industrialization:singularity_forge"
+			id: "78E1B9C83BB915D4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "17DD4D02BADB0B64"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "5E8BA448E3A1AE57"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "392492E8BC8A5BD0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			subtitle: "That's a mouthful"
+			tasks: [
+				{
+					id: "79A6BC385587A982"
+					item: "modern_industrialization:singularity_forge"
+					type: "item"
+				}
+				{
+					count: 361L
+					id: "39C5F46FEE1E0D5D"
+					item: "modern_industrialization:plasma_handling_iridium_machine_casing"
+					type: "item"
+				}
+				{
+					count: 42L
+					id: "14B51507DBA6CE85"
+					item: "ad_astra:glowing_calorite_pillar"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "76410D27E67E4546"
+					item: "modern_industrialization:calorite_machine_casing"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "1BC8CE204275D2EB"
+					item: "modern_industrialization:superconductor_coil"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "6DC451BC4AF4CB75"
+					item: "modern_industrialization:iridium_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "00D2FEEDE5A53675"
+					item: "chisel:llama/purple_wool"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "1AAA7DD826C8E2E0"
+					item: "byg:cryptic_end_rod"
+					type: "item"
+				}
+				{
+					id: "545E6D4D9A879F74"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+					title: "Any Item Input Hatch"
+					type: "item"
+				}
+				{
+					id: "3767DB05B2FC7424"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					title: "Any Item Output Hatch"
+					type: "item"
+				}
+				{
+					id: "26627FABA88E6E0F"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					id: "33874037A301C524"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+					title: "Any Energy Input Hatch"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			icon: "modern_industrialization:core_drill"
+			id: "500F9FE708EE8F1C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E9A5138041862A1"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1EFA48ACEADE2C7C"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "033CE2E0C03013F0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			subtitle: "To the center of the Earth"
+			tasks: [
+				{
+					id: "38E32704DF947DF7"
+					item: "modern_industrialization:core_drill"
+					type: "item"
+				}
+				{
+					count: 92L
+					id: "15C44D80F5C556C3"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 80L
+					id: "31D7891360DD61F8"
+					item: "ad_astra:desh_pillar"
+					type: "item"
+				}
+				{
+					count: 46L
+					id: "3A482B3C209235E0"
+					item: "ad_astra:desh_block"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "2EE1A499E8E3ABDE"
+					item: "quarrymod:drill_tube"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "25751857956305C4"
+					item: "ad_astra:glowing_iron_pillar"
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "615422D7B1B5CEA7"
+					item: "ad_astra:glowing_ostrum_pillar"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "68D73133867749ED"
+					item: "modern_industrialization:calorite_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					id: "779FFA73035080EF"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+					title: "Any Item Input Hatch"
+					type: "item"
+				}
+				{
+					id: "39E6FDBA5857B148"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					title: "Any Item Output Hatch"
+					type: "item"
+				}
+				{
+					id: "185F55556ABC98C4"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					id: "4F3BE0E97513F965"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					title: "Any Fluid Output Hatch"
+					type: "item"
+				}
+				{
+					id: "494ED9C78365AA3F"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+					title: "Any Energy Input Hatch"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 2.5d
+		}
 	]
 	subtitle: ["PhD in Theoretical Physics!"]
 	title: "&66 - Quantum Age"
