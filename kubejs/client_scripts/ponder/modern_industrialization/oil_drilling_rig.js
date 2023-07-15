@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:oil_drilling_rig').scene('oil_drilling_rig', 'The Oil Drilling Rig', 'kubejs:oil_drilling_rig', (scene, util) => {
         scene.setSceneOffsetY(-3.0);

@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:pyrolyse_oven').scene('pyrolyse_oven', 'The Pyrolyse Oven', 'kubejs:pyrolyse_oven', (scene, util) => {
         // Show base plate

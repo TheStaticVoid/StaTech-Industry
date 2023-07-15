@@ -1,17 +1,24 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let xps = (id) => `xps:${id}`;
+    let xp = (id) => `xps:${id}`;
     let ae = (id) => `ae2:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let st = (id) => `statech:modern_industrialization/mixer/${id}`;
 
+    // -- MIXER REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         mi('materials/mixer/fire_clay_dust')
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let mixer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('mixer'),
@@ -52,9 +59,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('raw_copper') },
             { amount: 1, item: mc('soul_sand') }
         ],
-        [
-            { amount: 4, item: xps('soul_copper_blend') }
-        ]
+        [ { amount: 4, item: xp('soul_copper_blend') } ]
     );    
 
     // -- CERTUS QUARTS CRYSTAL -- //
@@ -66,12 +71,8 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('charged_certus_quartz_crystal') },
             { amount: 1, item: ae('certus_quartz_dust') }
         ],
-        [
-            { amount: 2, item: ae('certus_quartz_crystal') }
-        ],
-        [
-            { amount: 1000, fluid: mc('water'), probability: 0 }
-        ]
+        [ { amount: 2, item: ae('certus_quartz_crystal') } ],
+        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
     );
 
     // -- DAMAGED BUDDING CERTUS QUARTZ -- //
@@ -166,6 +167,7 @@ ServerEvents.recipes(e => {
         [ { amount: 500, fluid: mi('concrete') } ]
     );
 
+    // -- UTILITY FUNCTION FOR THE FOLLOWING FOREACH -- //
     let mixerConsumable = (fluid, amount) => {
         if (amount < 100)
             amount = 1000;

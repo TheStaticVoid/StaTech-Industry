@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:heat_exchanger').scene('heat_exchanger', 'The Heat Exchanger', 'kubejs:heat_exchanger', (scene, util) => {
         // Show base

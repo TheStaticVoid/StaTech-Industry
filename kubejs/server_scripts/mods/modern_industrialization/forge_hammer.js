@@ -1,8 +1,13 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/forge_hammer/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let st = (id) => `statech:modern_industrialization/forge_hammer/${id}`;
 
     const MATERIALS = [
         'bronze',
@@ -18,7 +23,6 @@ ServerEvents.recipes(e => {
         'gold',
         'iron',
         'tin',
-
     ];
 
     const MATERIAL_CRUSHED_DUST = [
@@ -54,6 +58,7 @@ ServerEvents.recipes(e => {
         'rod_to_ring_with_tool',
     ];
 
+    // -- REMOVE ALL THE FORGE HAMMER RECIPES -- // 
     RECIPES.forEach(recipe => {
         MATERIALS.forEach(material => {
             let combined = 'modern_industrialization:materials/' + material + '/forge_hammer/' + recipe;
@@ -89,8 +94,10 @@ ServerEvents.recipes(e => {
         mi('materials/tin/forge_hammer/ore_to_raw_metal_with_tool'),
         mi('materials/tin/forge_hammer/raw_metal_to_dust_with_tool')
     ];
+    // -- REMOVE ALL THE ORE FORGE HAMMER RECIPES -- //
     ORE_RECIPES.forEach(id => e.remove({id : id}));
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let forgeHammer = (id, eu, item_inputs, item_outputs) => {
         let newRecipe = {
             type: 'modern_industrialization:forge_hammer',

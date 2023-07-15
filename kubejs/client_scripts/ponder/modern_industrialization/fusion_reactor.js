@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:fusion_reactor').scene('fusion_reactor', 'The Fusion Reactor', 'kubejs:fusion_reactor', (scene, util) => {
         scene.setSceneOffsetY(-2.0);

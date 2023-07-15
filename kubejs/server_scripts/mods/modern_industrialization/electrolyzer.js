@@ -1,15 +1,22 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
-    
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let st = (id) => `statech:modern_industrialization/electrolyzer/${id}`;
 
+    // -- ELECTROLYZER REMOVED RECIPES -- //
     const DELETED_RECIPE = [
         mi('materials/electrolyzer/salt_electrolysis')
     ];
     DELETED_RECIPE.forEach(id => e.remove({id: id}));
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let electrolyzer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: 'modern_industrialization:electrolyzer',
@@ -30,67 +37,49 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe);
     }
 
-    // -- UU Matter -- //
+    // -- UU MATTER -- //
     electrolyzer(
         st('uu-matter'),
         40,
         2500,
-        [
-            { amount: 1, item: tr('uu_matter') }
-        ],
+        [ { amount: 1, item: tr('uu_matter') } ],
         null,
         null,
-        [
-            { amount: 1, fluid: mi('uu_matter') }
-        ]
+        [ { amount: 1, fluid: mi('uu_matter') } ]
     );
 
-    // -- ELECTROLYZING CLAY -- //
+    // -- CLAY -- //
     electrolyzer(
         st('clay_dust'),
         32,
         1200,
-        [
-            { amount: 32, item: mi('clay_dust') }
-        ],
+        [ { amount: 32, item: mi('clay_dust') } ],
         [
             { amount: 1, item: mi('aluminum_dust') },
             { amount: 2, item: mi('sodium_dust') },
             { amount: 1, item: mi('silicon_dust') }
         ],
         null,
-        [
-            { amount: 50, fluid: mi('lithium') }
-        ]
+        [ { amount: 50, fluid: mi('lithium') } ]
     );
 
-    // -- ELECTROLYZING SALT -- //
+    // -- SALT -- //
     electrolyzer(
         st('salt_dust'),
         16,
         400,
-        [
-            { amount: 2, tag: 'c:salt_dusts' }
-        ],
-        [
-            { amount: 1, item: mi('sodium_dust') }
-        ],
-        [
-            { amount: 100, fluid: mc('water') }
-        ],
-        [
-            { amount: 125, fluid: mi('chlorine') }
-        ]
+        [ { amount: 2, tag: 'c:salt_dusts' } ],
+        [ { amount: 1, item: mi('sodium_dust') } ],
+        [ { amount: 100, fluid: mc('water') } ],
+        [ { amount: 125, fluid: mi('chlorine') } ]
     );
 
-    // -- ELECTROLYZING PYRITE DUST -- //
+    // -- PYRITE DUST -- //
     electrolyzer(
         st('pyrite_dust'),
         16,
         1200,
-        [
-            { amount: 3, item: tr('pyrite_dust') },
-        ],
+        [ { amount: 3, item: tr('pyrite_dust') } ],
         [
             { amount: 1, item: mc('raw_iron') },
             { amount: 2, item: mi('sulfur_dust') }
@@ -102,9 +91,7 @@ ServerEvents.recipes(e => {
         st('galena_dust'),
         16,
         1200,
-        [
-            { amount: 2, tag: 'c:galena_dusts' }
-        ],
+        [ { amount: 2, tag: 'c:galena_dusts' } ],
         [
             { amount: 6, item: mi('silver_nugget') },
             { amount: 6, item: mi('lead_nugget') },
@@ -117,12 +104,8 @@ ServerEvents.recipes(e => {
         st('cinnabar_dust'),
         16,
         800,
-        [
-            { amount: 2, tag: 'c:cinnabar_dusts' }
-        ],
-        [
-            { amount: 1, item: mi('sulfur_dust') }
-        ]
+        [ { amount: 2, tag: 'c:cinnabar_dusts' } ],
+        [ { amount: 1, item: mi('sulfur_dust') } ]
     );
 
     // -- PERIDOT DUST -- //
@@ -130,18 +113,14 @@ ServerEvents.recipes(e => {
         st('peridot_dust'),
         16,
         500,
-        [
-            { amount: 9, tag: 'c:peridot_dusts' }
-        ],
+        [ { amount: 9, tag: 'c:peridot_dusts' } ],
         [
             { amount: 2, item: tr('magnesium_dust') },
             { amount: 2, item: mc('raw_iron') },
             { amount: 1, item: mi('silicon_dust') }
         ],
         null,
-        [
-            { amount: 100, fluid: mi('oxygen') }
-        ]
+        [ { amount: 100, fluid: mi('oxygen') } ]
     );
 
     // -- SAPPHIRE DUST -- //
@@ -149,12 +128,8 @@ ServerEvents.recipes(e => {
         st('sapphire_dust'),
         16,
         600,
-        [
-            { amount: 8, tag: 'c:sapphire_dusts' }
-        ],
-        [
-            { amount: 2, item: mi('aluminum_dust') }
-        ]
+        [ { amount: 8, tag: 'c:sapphire_dusts' } ],
+        [ { amount: 2, item: mi('aluminum_dust') } ]
     );
 
     // -- SODALITE DUST -- //
@@ -162,9 +137,7 @@ ServerEvents.recipes(e => {
         st('sodalite_dust'),
         16,
         500,
-        [
-            { amount: 23, tag: 'c:sodalite_dusts' }
-        ],
+        [ { amount: 23, tag: 'c:sodalite_dusts' } ],
         [
             { amount: 3, item: mi('aluminum_dust') },
             { amount: 4, item: mi('sodium_dust') },
@@ -177,9 +150,7 @@ ServerEvents.recipes(e => {
         st('sphalerite_dust'),
         16,
         400,
-        [
-            { amount: 2, tag: 'c:sphalerite_dusts' }
-        ],
+        [ { amount: 2, tag: 'c:sphalerite_dusts' } ],
         [
             { amount: 1, item: tr('zinc_dust') },
             { amount: 1, item: mi('sulfur_dust') }
@@ -191,9 +162,7 @@ ServerEvents.recipes(e => {
         st('pyrope_dust'),
         16,
         400,
-        [
-            { amount: 20, tag: 'c:pyrope_dusts' }
-        ],
+        [ { amount: 20, tag: 'c:pyrope_dusts' } ],
         [
             { amount: 3, item: tr('magnesium_dust') },
             { amount: 2, item: mi('aluminum_dust') },
@@ -206,9 +175,7 @@ ServerEvents.recipes(e => {
         st('almadine_dust'),
         16,
         400,
-        [
-            { amount: 20, tag: 'c:almandine_dusts' }
-        ],
+        [ { amount: 20, tag: 'c:almandine_dusts' } ],
         [
             { amount: 3, item: mc('raw_iron') },
             { amount: 2, item: mi('aluminum_dust') },
@@ -221,9 +188,7 @@ ServerEvents.recipes(e => {
         st('spessartine_dust'),
         16,
         400,
-        [
-            { amount: 20, tag: 'c:spessartine_dusts' }
-        ],
+        [ { amount: 20, tag: 'c:spessartine_dusts' } ],
         [
             { amount: 3, item: mi('manganese_dust') },
             { amount: 2, item: mi('aluminum_dust') },

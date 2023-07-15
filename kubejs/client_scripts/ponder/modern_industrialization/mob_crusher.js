@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:mob_crusher').scene('mob_crusher', 'The Industrial Mob Crusher', 'kubejs:mob_crusher', (scene, util) => { 
         scene.scaleSceneView(0.9);

@@ -1,12 +1,18 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/assembler/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
-    let astra = (id) => `ad_astra:${id}`;
+    let ad = (id) => `ad_astra:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let ae = (id) => `ae2:${id}`;
-    let st = (id) => `statech:modern_industrialization/assembler/${id}`;
 
+    // -- ASSEMBLER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [    
         mi('electric_age/component/assembler/qbit'),
         mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball'),
@@ -15,6 +21,7 @@ ServerEvents.recipes(e => {
     ];
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let assembler = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('assembler'),
@@ -131,9 +138,7 @@ ServerEvents.recipes(e => {
             { amount: 2, item: mi('robot_arm') },
             { amount: 2, item: mi('motor') }
         ],
-        [
-            { amount: 1, item: tr('auto_crafting_table') }
-        ]
+        [ { amount: 1, item: tr('auto_crafting_table') } ]
     );
 
     // -- LITHIUM BATTERY -- //
@@ -145,12 +150,8 @@ ServerEvents.recipes(e => {
             { amount: 1, item: tr('red_cell_battery') },
             { amount: 4, tag: 'c:aluminum_plates' }
         ],
-        [
-            { amount: 1, item: tr('lithium_ion_battery') }
-        ],
-        [
-            { amount: 500, fluid: mi('lithium') }
-        ]
+        [ { amount: 1, item: tr('lithium_ion_battery') } ],
+        [ { amount: 500, fluid: mi('lithium') } ]
     );
 
     // -- LITHIUM BATPACK -- //
@@ -167,12 +168,8 @@ ServerEvents.recipes(e => {
             { amount: 1, item: tr('lithium_ion_battery') },
             { amount: 1, tag: 'c:aluminum_plates' }
         ],
-        [
-            { amount: 1, item: tr('lithium_ion_batpack') }
-        ],
-        [
-            { amount: 1000, fluid: mi('acrylic_glue') }
-        ]
+        [ { amount: 1, item: tr('lithium_ion_batpack') } ],
+        [ { amount: 1000, fluid: mi('acrylic_glue') } ]
     );
 
     // -- ENERGY CRYSTAL -- //
@@ -185,12 +182,8 @@ ServerEvents.recipes(e => {
             { amount: 2, item: tr('synthetic_redstone_crystal') },
             { amount: 2, item: mi('digital_circuit') }
         ],
-        [
-            { amount: 1, item: tr('energy_crystal') }
-        ],
-        [
-            { amount: 500, fluid: mi('polyethylene') }
-        ]
+        [ { amount: 1, item: tr('energy_crystal') } ],
+        [ { amount: 500, fluid: mi('polyethylene') } ]
     );
 
     // -- LAPOTRON CRYSTAL -- //
@@ -204,12 +197,8 @@ ServerEvents.recipes(e => {
             { amount: 2, item: mi('titanium_plate') },
             { amount: 1, item: tr('energy_crystal') }
         ],
-        [
-            { amount: 1, item: tr('lapotron_crystal') }
-        ],
-        [
-            { amount: 500, fluid: mi('polyethylene') }
-        ]
+        [ { amount: 1, item: tr('lapotron_crystal') } ],
+        [ { amount: 500, fluid: mi('polyethylene') } ]
     );
 
     // -- QBIT -- //
@@ -223,9 +212,7 @@ ServerEvents.recipes(e => {
             { amount: 2, tag: 'c:tungstensteel_plates' },
             { amount: 6, item: mi('superconductor_wire') }
         ],
-        [
-            { amount: 1, item: mi('qbit') }
-        ],
+        [ { amount: 1, item: mi('qbit') } ],
         [
             { amount: 250, fluid: mi('cryofluid') },
             { amount: 50, fluid: mi('tritium') }
@@ -242,12 +229,8 @@ ServerEvents.recipes(e => {
             { amount: 4, tag: 'c:lead_plates' },
             { amount: 1, tag: 'c:iridium_alloy_plates' }
         ],
-        [
-            { amount: 1, item: mi('ultradense_metal_ball') }
-        ],
-        [
-            { amount: 1000, fluid: mi('neutronium') }
-        ]
+        [ { amount: 1, item: mi('ultradense_metal_ball') } ],
+        [ { amount: 1000, fluid: mi('neutronium') } ]
     );
 
     // -- CALORITE MACHINE CASING -- //
@@ -259,9 +242,7 @@ ServerEvents.recipes(e => {
             { amount: 8, tag: 'c:calorite_plates' },
             { amount: 1, tag: 'c:calorite_gears' }
         ],
-        [
-            { amount: 1, item: mi('calorite_machine_casing') }
-        ]
+        [ { amount: 1, item: mi('calorite_machine_casing') } ]
     );
 
     // -- CALORITE MACHINE PIPE CASING -- //
@@ -273,9 +254,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('calorite_machine_casing') },
             { amount: 6, item: mi('calorite_curved_plate')}
         ],
-        [
-            { amount: 1, item: mi('calorite_machine_casing_pipe')}
-        ]
+        [ { amount: 1, item: mi('calorite_machine_casing_pipe')} ]
     );
 
     // -- INDUSTRIAL CIRCUIT -- //
@@ -287,9 +266,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: tr('advanced_circuit') },
             { amount: 2, tag: 'c:tungsten_plates' }
         ],
-        [
-            { amount: 1, item:  tr('industrial_circuit') }
-        ]
+        [ { amount: 1, item:  tr('industrial_circuit') } ]
     );
 
     // -- DATA STORAGE CORE -- //
@@ -301,9 +278,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: tr('advanced_circuit') },
             { amount: 1, tag: 'c:emerald_plates' }
         ],
-        [
-            { amount: 1, item: tr('data_storage_core') }
-        ]
+        [ { amount: 1, item: tr('data_storage_core') } ]
     );
     assembler(
         st('data_storage_core_alt'),
@@ -313,9 +288,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: tr('advanced_circuit') },
             { amount: 2, tag: 'c:peridot_plates' }
         ],
-        [
-            { amount: 1, item: tr('data_storage_core') } 
-        ]
+        [ { amount: 1, item: tr('data_storage_core') } ]
     );
 
     // -- REDSTONE REPEATER -- //
@@ -323,15 +296,9 @@ ServerEvents.recipes(e => {
         st('repeater'),
         8,
         100,
-        [
-            { amount: 3, tag: 'c:stone' }
-        ],
-        [
-            { amount: 1, item: mc('repeater') }
-        ],
-        [
-            { amount: 200, fluid: mi('molten_redstone') }
-        ]
+        [ { amount: 3, tag: 'c:stone' } ],
+        [ { amount: 1, item: mc('repeater') } ],
+        [ { amount: 200, fluid: mi('molten_redstone') } ]
     );
 
     // -- REDSTONE COMPARATOR -- //
@@ -343,12 +310,8 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('quartz') },
             { amount: 3, tag: 'c:stone' }
         ],
-        [
-            { amount: 1, item: mc('comparator') }
-        ],
-        [
-            { amount: 200, fluid: mi('molten_redstone') }
-        ]
+        [ { amount: 1, item: mc('comparator') } ],
+        [ { amount: 200, fluid: mi('molten_redstone') } ]
     );
 
     // -- REDSTONE TORCH -- //
@@ -356,15 +319,9 @@ ServerEvents.recipes(e => {
         st('redstone_torch'),
         8,
         100,
-        [
-            { amount: 1, tag: 'c:wood_sticks' }
-        ],
-        [
-            { amount: 1, item: mc('redstone_torch') }
-        ],
-        [
-            { amount: 50, fluid: mi('molten_redstone') }
-        ]
+        [ { amount: 1, tag: 'c:wood_sticks' } ],
+        [ { amount: 1, item: mc('redstone_torch') } ],
+        [ { amount: 50, fluid: mi('molten_redstone') } ]
     );
 
     // -- STANDARD HANDGUN CARTRIDGE -- //
@@ -443,9 +400,7 @@ ServerEvents.recipes(e => {
             { amount: 1, tag: mc('glass_panes') },
             { amount: 1, tag: mc('wool') }
         ],
-        [
-            { amount: 1, item: astra('space_helmet') }
-        ]
+        [ { amount: 1, item: ad('space_helmet') } ]
     );
 
     // -- SPACE SUIT -- // 
@@ -455,14 +410,12 @@ ServerEvents.recipes(e => {
         300,
         [
             { amount: 4, tag: 'c:steel_ingots' }, 
-            { amount: 1, item: astra('oxygen_gear') },
-            { amount: 1, item: astra('oxygen_tank') },
-            { amount: 1, item: astra('oxygen_tank') },
+            { amount: 1, item: ad('oxygen_gear') },
+            { amount: 1, item: ad('oxygen_tank') },
+            { amount: 1, item: ad('oxygen_tank') },
             { amount: 2, tag: mc('wool') }
         ],
-        [
-            { amount: 1, item: astra('space_suit') }
-        ]
+        [ { amount: 1, item: ad('space_suit') } ]
     );
 
     // -- SPACE PANTS -- //
@@ -474,9 +427,7 @@ ServerEvents.recipes(e => {
             { amount: 5, tag: 'c:steel_ingots' },
             { amount: 2, tag: mc('wool') }
         ],
-        [
-            { amount: 1, item: astra('space_pants') }
-        ]
+        [ { amount: 1, item: ad('space_pants') } ]
     ) 
 
     // -- SPACE BOOTS -- //
@@ -488,9 +439,7 @@ ServerEvents.recipes(e => {
             { amount: 2, tag: 'c:steel_ingots' },
             { amount: 2, tag: mc('wool') }
         ],
-        [
-            { amount: 1, item: astra('space_boots') }
-        ]
+        [ { amount: 1, item: ad('space_boots') } ]
     );
 
     // -------------------------
@@ -513,9 +462,7 @@ ServerEvents.recipes(e => {
             { amount: 32, item: mi('singularity') },
             { amount: 32, item: mi('singularity') }
         ],
-        [
-            { amount: 1, item: mi('creative_storage_unit') }
-        ],
+        [ { amount: 1, item: mi('creative_storage_unit') } ],
         [
             { amount: 1000, fluid: mi('uu_matter') },
             { amount: 1000, fluid: mi('neutronium') }
@@ -538,9 +485,7 @@ ServerEvents.recipes(e => {
             { amount: 32, item: mi('singularity') },
             { amount: 32, item: mi('singularity') }
         ],
-        [
-            { amount: 1, item: mi('creative_barrel') }
-        ],
+        [ { amount: 1, item: mi('creative_barrel') } ],
         [
             { amount: 1000, fluid: mi('uu_matter') },
             { amount: 1000, fluid: mi('neutronium') }
@@ -563,9 +508,7 @@ ServerEvents.recipes(e => {
             { amount: 32, item: mi('singularity') },
             { amount: 32, item: mi('singularity') }
         ],
-        [
-            { amount: 1, item: mi('creative_tank') }
-        ],
+        [ { amount: 1, item: mi('creative_tank') } ],
         [
             { amount: 1000, fluid: mi('uu_matter') },
             { amount: 1000, fluid: mi('neutronium') }
@@ -588,9 +531,7 @@ ServerEvents.recipes(e => {
             { amount: 32, item: mi('singularity') },
             { amount: 32, item: mi('singularity') }
         ],
-        [
-            { amount: 1, item: 'create:creative_motor' }
-        ],
+        [ { amount: 1, item: 'create:creative_motor' } ],
         [
             { amount: 1000, fluid: mi('uu_matter') },
             { amount: 1000, fluid: mi('neutronium') }
@@ -613,9 +554,7 @@ ServerEvents.recipes(e => {
             { amount: 64, item: mi('creative_barrel') },
             { amount: 1, item: mi('quantum_boots') }
         ],
-        [
-            { amount: 1, item: 'create:handheld_worldshaper' }
-        ],
+        [ { amount: 1, item: 'create:handheld_worldshaper' } ],
         [
             { amount: 16000, fluid: mi('uu_matter') },
             { amount: 16000, fluid: mi('neutronium') }

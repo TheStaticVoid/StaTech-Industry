@@ -1,15 +1,23 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/centrifuge/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let astra = (id) => `ad_astra:${id}`;
+    let ad = (id) => `ad_astra:${id}`;
     let tr = (id) => `techreborn:${id}`;
-    let st = (id) => `statech:modern_industrialization/centrifuge/${id}`;
 
+    // -- CENTRIFUGE REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         mi('vanilla_recipes/centrifuge/lava')
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let centrifuge = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('centrifuge'),
@@ -30,22 +38,33 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe);
     }
 
-    // -- CENTRIFUGE ICE SHARD -- //
+    // -- CORE SLURRY -- //
+    centrifuge(
+        st('core_slurry'),
+        32,
+        300,
+        null,
+        [
+            { amount: 49, item: mi('platinum_nugget') },
+            { amount: 23, item: mi('tungsten_nugget') },
+            { amount: 19, item: mi('titanium_nugget') },
+            { amount: 9, item: mi('iridium_nugget') },
+        ],
+        [ { amount: 1000, fluid: mi('core_slurry') } ]
+    );
+
+    // -- ICE SHARD -- //
     centrifuge(
         st('ice_shard'),
         32,
         300,
-        [
-            { amount: 16, item: astra('ice_shard') }
-        ],
+        [ { amount: 8, item: ad('ice_shard') } ],
         null,
         null,
-        [
-            { amount: 50, fluid: mi('helium_3') }
-        ]
+        [ { amount: 100, fluid: mi('helium_3') } ]
     );
 
-    // -- CENTRIFUGE LAVA -- //
+    // -- LAVA -- //
     centrifuge(
         st('lava'),
         32,
@@ -60,7 +79,7 @@ ServerEvents.recipes(e => {
         [ { amount: 1000, fluid: mc('lava') } ]
     );
 
-    // -- CENTRIFUGE ROTTEN FLESH -- //
+    // -- ROTTEN FLESH -- //
     centrifuge(
         st('rotten_flesh'),
         16,
@@ -71,32 +90,26 @@ ServerEvents.recipes(e => {
         [ { amount: 1000, fluid: mi('blood') } ]
     );
 
-    // -- CENTRIFUGE GLOWSTONE -- //
+    // -- GLOWSTONE -- //
     centrifuge(
         st('glowstone'),
         32,
         1800,
-        [
-            { amount: 16, item: mc('glowstone') }
-        ],
+        [ { amount: 16, item: mc('glowstone') } ],
         [
             { amount: 8, item: mc('glowstone_dust') },
             { amount: 1, item: mi('sulfur_dust') }
         ],
         null,
-        [
-            { amount: 100, fluid: mi('helium') }
-        ]
+        [ { amount: 100, fluid: mi('helium') } ]
     );
 
-    // -- CENTRIFUGE REDSTONE -- //
+    // -- REDSTONE -- //
     centrifuge(
         st('moon_sand'),
         32,
         4000,
-        [
-            { amount: 16, item: astra('moon_sand') }
-        ],
+        [ { amount: 16, item: ad('moon_sand') } ],
         [
             { amount: 12, item: mc('sand') },
             { amount: 1, item: mi('tungsten_tiny_dust') }
@@ -108,14 +121,12 @@ ServerEvents.recipes(e => {
         ]
     );
 
-    // -- CENTRIFUGE LAPIS -- //
+    // -- LAPIS -- //
     centrifuge(
         st('lapis_lazuli'),
         32,
         1500,
-        [
-            { amount: 4, item: mc('lapis_lazuli') }
-        ],
+        [ { amount: 4, item: mc('lapis_lazuli') } ],
         [
             { amount: 3, item: tr('lazurite_dust') },
             { amount: 1, item: tr('pyrite_small_dust') },
@@ -124,30 +135,22 @@ ServerEvents.recipes(e => {
         ]
     );
 
-    // -- CENTRIFUGE DARK ASHES -- //
+    // -- DARK ASHES -- //
     centrifuge(
         st('dark_ashes_dust'),
         8,
         1200,
-        [
-            { amount: 2, item: tr('dark_ashes_dust') }
-        ],
-        [
-            { amount: 1, item: tr('ashes_dust') }
-        ]
+        [ { amount: 2, item: tr('dark_ashes_dust') } ],
+        [ { amount: 1, item: tr('ashes_dust') } ]
     );
 
-    // -- CENTRIFUGE ASHES -- //
+    // -- ASHES -- //
     centrifuge(
         st('ashes_dust'),
         12,
         320,
-        [
-            { amount: 3, item: tr('ashes_dust') }
-        ],
-        [
-            { amount: 2, item: mi('carbon_dust') }
-        ]
+        [ { amount: 3, item: tr('ashes_dust') } ],
+        [ { amount: 2, item: mi('carbon_dust') } ]
     );
 
     // -- TUFF -- //
@@ -155,9 +158,7 @@ ServerEvents.recipes(e => {
         st('tuff'),
         8,
         300,
-        [
-            { amount: 16, item: mc('tuff') }
-        ],
+        [ { amount: 16, item: mc('tuff') } ],
         [
             { amount: 18, item: tr('dark_ashes_dust') },
             { amount: 12, item: tr('ashes_dust') }
@@ -169,9 +170,7 @@ ServerEvents.recipes(e => {
         st('galena_dust'),
         32,
         400,
-        [
-            { amount: 2, tag: 'c:galena_dusts' }
-        ],
+        [ { amount: 2, tag: 'c:galena_dusts' } ],
         [
             { amount: 1, item: mi('silver_dust') },
             { amount: 1, item: mi('lead_dust') }
@@ -183,9 +182,7 @@ ServerEvents.recipes(e => {
         st('red_garnet_dust'),
         8,
         400,
-        [
-            { amount: 16, tag: 'c:red_garnet_dusts' }
-        ],
+        [ { amount: 16, tag: 'c:red_garnet_dusts' } ],
         [
             { amount: 3, item: tr('pyrope_dust') },
             { amount: 5, item: tr('almandine_dust') },
@@ -198,9 +195,7 @@ ServerEvents.recipes(e => {
         st('marble_dust'),
         16,
         200,
-        [
-            { amount: 8, tag: 'c:marble_dusts' }
-        ],
+        [ { amount: 8, tag: 'c:marble_dusts' } ],
         [
             { amount: 7, item: tr('calcite_dust') },
             { amount: 1, item: tr('magnesium_dust') }

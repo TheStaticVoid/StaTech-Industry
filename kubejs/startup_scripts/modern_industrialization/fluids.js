@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 MIRegistrationEvents.registerFluids(e => {
     // -- LITHIUM -- //
     e.register(

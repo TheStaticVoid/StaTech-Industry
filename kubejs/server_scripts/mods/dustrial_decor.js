@@ -1,4 +1,10 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:dustrial_decor/${id}`;
     let dd = (id) => `dustrial_decor:${id}`;
 

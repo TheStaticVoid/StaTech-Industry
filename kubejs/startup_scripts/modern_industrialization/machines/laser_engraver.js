@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let LASER_ENGRAVER;
 
 MIMachineEvents.registerRecipeTypes(e => { 

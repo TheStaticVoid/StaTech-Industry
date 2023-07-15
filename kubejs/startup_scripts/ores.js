@@ -1,6 +1,17 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 // https://discord.com/channels/303440391124942858/1109650727380455484/1109719843340558376
 
 WorldgenEvents.remove(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let mc = (id) => `minecraft:${id}`;
+    let ad = (id) => `ad_astra:${id}`;
+    let cr = (id) => `create:${id}`;
+    let bg = (id) => `byg:${id}`;
+
     e.removeOres(ores => {
         ores.blocks = [
             '#c:ores_in_ground/stone',
@@ -11,21 +22,21 @@ WorldgenEvents.remove(e => {
     e.removeFeatureById(
         'underground_ores',
         [
-            'minecraft:ore_coal_upper',
-            'minecraft:ore_coal_lower',
-            'minecraft:ore_copper',
-            'minecraft:ore_copper_large',
-            'minecraft:ore_iron_upper',
-            'minecraft:ore_iron_middle',
-            'minecraft:ore_iron_small'
+            mc('ore_coal_upper'),
+            mc('ore_coal_lower'),
+            mc('ore_copper'),
+            mc('ore_copper_large'),
+            mc('ore_iron_upper'),
+            mc('ore_iron_middle'),
+            mc('ore_iron_small')
         ]
     );
 
     e.removeFeatureById(
         'underground_decoration',
         [
-            'minecraft:ore_gold_nether',
-            'minecraft:ore_gold_deltas'
+            mc('ore_gold_nether'),
+            mc('ore_gold_deltas')
         ]
     );
 
@@ -33,24 +44,24 @@ WorldgenEvents.remove(e => {
     e.removeFeatureById(
         'raw_generation', 
         [
-            'ad_astra:glacio_ice_shard_ore', 
-            'ad_astra:glacio_coal_ore', 
-            'ad_astra:glacio_copper_ore',
-            'ad_astra:glacio_iron_ore', 
-            'ad_astra:glacio_lapis_ore',
-            'ad_astra:venus_coal_ore', 
-            'ad_astra:venus_gold_ore',  
-            'ad_astra:venus_diamond_ore', 
-            'ad_astra:venus_calorite_ore',
-            'ad_astra:mercury_iron_ore',
-            'ad_astra:mars_iron_ore', 
-            'ad_astra:mars_diamond_ore', 
-            'ad_astra:mars_ostrum_ore',  
-            'ad_astra:mars_ice_shard_ore',
-            'ad_astra:moon_cheese_ore', 
-            'ad_astra:moon_desh_ore',  
-            'ad_astra:moon_iron_ore', 
-            'ad_astra:moon_ice_shard_ore',
+            ad('glacio_ice_shard_ore'), 
+            ad('glacio_coal_ore'), 
+            ad('glacio_copper_ore'),
+            ad('glacio_iron_ore'), 
+            ad('glacio_lapis_ore'),
+            ad('venus_coal_ore'), 
+            ad('venus_gold_ore'),  
+            ad('venus_diamond_ore'), 
+            ad('venus_calorite_ore'),
+            ad('mercury_iron_ore'),
+            ad('mars_iron_ore'), 
+            ad('mars_diamond_ore'), 
+            ad('mars_ostrum_ore'),  
+            ad('mars_ice_shard_ore'),
+            ad('moon_cheese_ore'), 
+            ad('moon_desh_ore'),  
+            ad('moon_iron_ore'), 
+            ad('moon_ice_shard_ore'),
         ]
     );
 
@@ -58,21 +69,20 @@ WorldgenEvents.remove(e => {
     e.removeFeatureById(
         'underground_ores', 
         [  
-            'create:zinc_ore'
+            cr('zinc_ore')
         ]
     );
     
     // BYG 
     const ORES_TO_REMOVE = [
-        'byg:pendorite_ore',
-        'byg:emeraldite_ore',
-        'byg:anthracite_ore', 
-        'byg:blue_nether_gold_ore',
-        'byg:blue_nether_quartz_ore',
-        'byg:brimstone_nether_gold_ore',
-        'byg:brimstone_nether_quartz_ore',
-        'byg:cryptic_redstone_ore',
-        'expandeddelight:salt_ore'
+        bg('pendorite_ore'),
+        bg('emeraldite_ore'),
+        bg('anthracite_ore'), 
+        bg('blue_nether_gold_ore'),
+        bg('blue_nether_quartz_ore'),
+        bg('brimstone_nether_gold_ore'),
+        bg('brimstone_nether_quartz_ore'),
+        bg('cryptic_redstone_ore')
     ];
     e.removeOres(ores => {
         ores.blocks = ORES_TO_REMOVE;

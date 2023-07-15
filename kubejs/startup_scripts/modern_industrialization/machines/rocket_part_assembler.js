@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let ROCKET_PART_ASSEMBLER;
 
 MIMachineEvents.registerRecipeTypes(e => {

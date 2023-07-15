@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:steam_blast_furnace').scene('steam_blast_furnace', 'The Steam Blast Furnace', 'kubejs:steam_blast_furnace', (scene, util) => {
         // Grass layer

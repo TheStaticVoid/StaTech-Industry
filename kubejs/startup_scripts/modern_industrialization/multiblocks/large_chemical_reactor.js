@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let LARGE_CHEMICAL_REACTOR;
 
 MIMachineEvents.registerRecipeTypes(e => {
@@ -9,9 +14,12 @@ MIMachineEvents.registerRecipeTypes(e => {
 });
 
 MIMachineEvents.registerMachines(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let mi = (id) => `modern_industrialization:${id}`;
+
     const lcrHatch = e.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input', 'fluid_output');
-    const ptfeCasing = e.memberOfBlock('modern_industrialization:chemically_inert_ptfe_casing');
-    const ptfePipeCasing = e.memberOfBlock('modern_industrialization:polytetrafluoroethylene_machine_casing_pipe');
+    const ptfeCasing = e.memberOfBlock(mi('chemically_inert_ptfe_casing'));
+    const ptfePipeCasing = e.memberOfBlock(mi('polytetrafluoroethylene_machine_casing_pipe'));
     const lcrShape = e.layeredShape('ptfe_machine_casing', [
         [ 'AAA', 'aaa', 'AAA' ],
         [ 'AAA', 'aPa', 'AAA' ],

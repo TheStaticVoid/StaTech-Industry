@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let CORE_DRILL;
 
 MIMachineEvents.registerRecipeTypes(e => {
@@ -9,6 +14,7 @@ MIMachineEvents.registerRecipeTypes(e => {
 });
 
 MIMachineEvents.registerMachines(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
     let ad = (id) => `ad_astra:${id}`;
     let qm = (id) => `quarrymod:${id}`;

@@ -1,8 +1,13 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:spellblade/${id}`;
     let sp = (id) => `spectrum:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let wz = (id) => `wizards:${id}`;
     let ru = (id) => `runes:${id}`;
     let sb = (id) => `spellbladenext:${id}`;
     
@@ -874,6 +879,7 @@ ServerEvents.recipes(e => {
 });
 
 ServerEvents.tags('item', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let sb = (id) => `spellbladenext:${id}`;
 
     const RUNE_INGOTS = [

@@ -5,18 +5,23 @@
 
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let st = (id) => `statech:modern_industrialization/distillation_tower/${id}`;
+    let st = (id) => `statech:modern_industrialization/large_chemical_reactor/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let distillationTower = (id, eu, duration, fluid_inputs, fluid_outputs) => {
+    let lcr = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
-            type: mi('distillation_tower'),
+            type: mi('large_chemical_reactor'),
             eu: eu,
             duration: duration,
             id: id
         }
 
+        if (item_inputs)
+            newRecipe['item_inputs'] = item_inputs;
+        if (item_outputs)
+            newRecipe['item_outputs'] = item_outputs;
         if (fluid_inputs)
             newRecipe['fluid_inputs'] = fluid_inputs;
         if (fluid_outputs)
@@ -25,17 +30,7 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe);
     }
 
-    // -- WOOD TAR -- //
-    distillationTower(
-        st('wood_tar'),
-        48, 
-        200,
-        [ { amount: 1000, fluid: mi('wood_tar') } ],
-        [
-            { amount: 400, fluid: mi('creosote') },
-            { amount: 400, fluid: mi('benzene') },
-            { amount: 100, fluid: mi('toluene') },
-            { amount: 100, fluid: mi('heavy_fuel') }
-        ]
-    );
+    e.forEachRecipe( { type: mi('chemical_reactor') }, recipe => {
+        const recipeJson = JSON.parse(recipe.json.toString());
+    });
 });

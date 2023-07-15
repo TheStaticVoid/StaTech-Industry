@@ -80,8 +80,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 5.25d
+			x: -2.25d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2FDA67B4920D335D"]
@@ -313,7 +313,7 @@
 				item: "modern_industrialization:superconductor_storage_unit"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -1.5d
 			y: 1.0d
 		}
 		{
@@ -356,6 +356,7 @@
 			dependencies: [
 				"50D18ACF6401C05D"
 				"4A2F6AA833C88B7C"
+				"78E1B9C83BB915D4"
 			]
 			description: ["By blasting an &aUltradense Metal Ball&f with more energy than several times our &dentire sun&r we can create a single &5Singularity&f, a &3black-hole you can somehow hold in your hands...&r"]
 			id: "10943911EAB7196F"
@@ -770,15 +771,15 @@
 				item: "modern_industrialization:helium_plasma_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["598DBC20FB201711"]
 			description: [
 				"Combining super heated &eHelium Plasma&f with &aDeuterium&f in a &bFusion Reactor&f will cause some of the atoms to shred their neutrons into a &0Neutronium plasma&f. &o(I'm not a scientist, and I made this process up)&r"
 				""
-				"&0Neutronium&f takes a long time to process, but with it you can finally look to create endgame items!"
+				"&0Neutronium&f takes a long time to process, but with it you can finally look to create endgame items! Perhaps it would be a &egood idea&r to setup the &anext multiblocks&r while you wait for it to process?"
 			]
 			id: "1E525921822F56AC"
 			rewards: [
@@ -808,8 +809,8 @@
 				item: "modern_industrialization:neutronium_bucket"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.0d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["1E525921822F56AC"]
@@ -844,6 +845,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["4A2F6AA833C88B7C"]
 			icon: "modern_industrialization:singularity_forge"
 			id: "78E1B9C83BB915D4"
 			rewards: [
@@ -969,6 +971,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["2FDA67B4920D335D"]
 			icon: "modern_industrialization:core_drill"
 			id: "500F9FE708EE8F1C"
 			rewards: [
@@ -1102,8 +1105,31 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 2.5d
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["500F9FE708EE8F1C"]
+			id: "3C38E4E38D595A8C"
+			shape: "square"
+			tasks: [{
+				id: "5E59379738E1AE81"
+				item: "kubejs:core_fragment"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["500F9FE708EE8F1C"]
+			id: "790924652E61D23D"
+			tasks: [{
+				id: "5104EE527A6A7853"
+				item: "modern_industrialization:core_slurry_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["PhD in Theoretical Physics!"]

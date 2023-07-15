@@ -1,8 +1,16 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:moderndynamics/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let md = (id) => `moderndynamics:${id}`;
+    let kj = (id) => `kubejs:${id}`;
 
+    // -- MODERN DYNAMICS REMOVED RECIPES -- //
     let REMOVED_RECIPES = [
         md('fluid_pipe'),
         md('item_pipe'),
@@ -21,7 +29,7 @@ ServerEvents.recipes(e => {
     ],
     {
         C: '#c:copper_plates',
-        P: '#modern_industrialization:fluid_pipes'
+        P: '#' + mi('fluid_pipes')
     })
     .id(st('fluid_pipe'));
 
@@ -31,7 +39,7 @@ ServerEvents.recipes(e => {
     ],
     {
         I: '#c:iron_plates',
-        P: '#modern_industrialization:item_pipes'
+        P: '#' + mi('item_pipes')
     })
     .id(st('item_pipe'));
 
@@ -41,7 +49,7 @@ ServerEvents.recipes(e => {
     ],
     {
         R: mi('rubber_sheet'),
-        C: '#kubejs:lv_wire'
+        C: '#' + kj('lv_wire')
     })
     .id(st('lv_from_mi'));
 
@@ -51,7 +59,7 @@ ServerEvents.recipes(e => {
     ],
     {
         R: mi('rubber_sheet'),
-        C: '#kubejs:mv_wire'
+        C: '#' + kj('mv_wire')
     })
     .id(st('mv_from_mi'));
 
@@ -61,7 +69,7 @@ ServerEvents.recipes(e => {
     ],
     {
         R: mi('rubber_sheet'),
-        C: '#kubejs:hv_wire'
+        C: '#' + kj('hv_wire')
     })
     .id(st('hv_from_mi'));
 
@@ -71,7 +79,7 @@ ServerEvents.recipes(e => {
     ],
     {
         R: mi('rubber_sheet'),
-        C: '#kubejs:ev_wire'
+        C: '#' + kj('ev_wire')
     })
     .id(st('ev_from_mi'));
 

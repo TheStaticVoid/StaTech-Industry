@@ -1,12 +1,19 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/mob_crusher/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let cr = (id) => `create:${id}`;
     let cd = (id) => `culturaldelights:${id}`;
     let ap = (id) => `architects_palette:${id}`;
     let kj = (id) => `kubejs:${id}`;
-    let st = (id) => `statech:modern_industrialization/mob_crusher/${id}`;
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let crusher = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('mob_crusher'),
@@ -27,6 +34,7 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe);
     }
 
+    // Idk why I did it like this, but w/e
     const modelInputOutput = [
         // 0 = model, 1 = outputs, 2 = fluid
 
@@ -220,6 +228,7 @@ ServerEvents.recipes(e => {
             mi('blood')
         ]
     ];
+    // Add all the recipes from the list
     modelInputOutput.forEach(modelInOut => {
         let model = modelInOut[0];
         let output = modelInOut[1];

@@ -1,10 +1,16 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
-    
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let st = (id) => `statech:modern_industrialization/alloy_smelter/${id}`;
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let alloySmelter = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('alloy_smelter'),
@@ -30,9 +36,7 @@ ServerEvents.recipes(e => {
             { amount: 4, item: tr('calcite_dust') },
             { amount: 1, tag: 'c:iron_ingots' }
         ],
-        [
-            { amount: 1, item: tr('refined_iron_ingot') }
-        ]
+        [ { amount: 1, item: tr('refined_iron_ingot') } ]
     );
 
     // -- NETHERITE INGOT -- //
@@ -44,9 +48,7 @@ ServerEvents.recipes(e => {
             { amount: 4, tag: 'c:gold_ingots' },
             { amount: 4, item: mc('netherite_scrap') }
         ],
-        [
-            { amount: 1, item: mc('netherite_ingot') }
-        ]
+        [ { amount: 1, item: mc('netherite_ingot') } ]
     );
 
     // -- INVAR INGOT -- //
@@ -58,9 +60,7 @@ ServerEvents.recipes(e => {
             { amount: 3, tag: 'c:iron_ingots' },
             { amount: 1, tag: 'c:nickel_ingots' }
         ],
-        [
-            { amount: 4, item: mi('invar_ingot') }
-        ]
+        [ { amount: 4, item: mi('invar_ingot') } ]
     );
 
     // -- BRONZE INGOT -- //
@@ -72,9 +72,7 @@ ServerEvents.recipes(e => {
             { amount: 3, tag: 'c:copper_ingots' },
             { amount: 1, tag: 'c:tin_ingots' }
         ],
-        [
-            { amount: 4, item: mi('bronze_ingot') }
-        ]
+        [ { amount: 4, item: mi('bronze_ingot') } ]
     );
 
     // -- BRASS INGOT -- //
@@ -86,9 +84,7 @@ ServerEvents.recipes(e => {
             { amount: 3, tag: 'c:copper_ingots' },
             { amount: 1, tag: 'c:zinc_ingots' }
         ],
-        [
-            { amount: 4, item: tr('brass_ingot') }
-        ]
+        [ { amount: 4, item: tr('brass_ingot') } ]
     );
 
     // -- ELECTRUM INGOT -- //
@@ -100,9 +96,7 @@ ServerEvents.recipes(e => {
             { amount: 2, tag: 'c:gold_ingots' },
             { amount: 2, tag: 'c:silver_ingots' }
         ],
-        [
-            { amount: 4, item: mi('electrum_ingot') }
-        ]
+        [ { amount: 4, item: mi('electrum_ingot') } ]
     );
 
     // -- CUPRONICKEL INGOT -- //
@@ -114,9 +108,7 @@ ServerEvents.recipes(e => {
             { amount: 1, tag: 'c:copper_ingots' },
             { amount: 1, tag: 'c:nickel_ingots' }
         ],
-        [
-            { amount: 2, item: mi('cupronickel_ingot') }
-        ]
+        [ { amount: 2, item: mi('cupronickel_ingot') } ]
     ); 
 	
 	// -- BATTERY ALLOY -- //
@@ -128,8 +120,6 @@ ServerEvents.recipes(e => {
 			{ amount: 1, tag: 'c:lead_ingots' },
 			{ amount: 1, tag: 'c:antimony_ingots' }
 		],
-		[
-			{ amount: 2, item: mi('battery_alloy_ingot') }
-		]
+		[ { amount: 2, item: mi('battery_alloy_ingot') } ]
 	);
 });

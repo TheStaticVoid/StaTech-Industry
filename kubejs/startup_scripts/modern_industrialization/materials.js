@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 MIMaterialEvents.addMaterials(e => {
     e.createMaterial('Desh', 'desh', 0xe9ba5d,
         builder => {

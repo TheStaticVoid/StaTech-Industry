@@ -1,78 +1,86 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
-    // -- REMOVE RECIPES -- //
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:ae2/${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
+    let ae = (id) => `ae2:${id}`;
+    let wt = (id) => `ae2wtlib:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+
+    // -- AE2 REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
-        'ae2:network/blocks/inscribers',
-        'ae2:transform/fluix_crystals',
-        'ae2:transform/fluix_crystal',
-        'ae2:transform/certus_quartz_crystals',
-        'ae2:network/blocks/controller',
-        'ae2:network/blocks/crystal_processing_charger',
-        'ae2:network/blocks/energy_vibration_chamber',
-        'ae2:network/crafting/patterns_blank',
-        'ae2:misc/tank_sky_stone',
-        'ae2:network/blocks/security_station',
-        'ae2:network/blocks/quantum_ring',
-        'ae2:network/blocks/spatial_io_port',
-        'ae2:network/blocks/storage_drive',
-        'ae2:network/blocks/storage_chest',
-        'ae2:network/blocks/interfaces_interface',
-        'ae2:network/blocks/cell_workbench',
-        'ae2:network/blocks/io_port',
-        'ae2:network/blocks/io_condenser',
-        'ae2:network/blocks/energy_energy_acceptor',
-        'ae2:network/blocks/crystal_processing_quartz_growth_accelerator',
-        'ae2:network/crafting/cpu_crafting_unit',
-        'ae2:network/blocks/pattern_providers_interface',
-        'ae2:network/crafting/molecular_assembler',
-        'ae2:network/blocks/spatial_anchor',
-        'ae2:tools/misctools_entropy_manipulator',
-        'ae2:tools/misctools_charged_staff',
-        'ae2:tools/network_color_applicator',
-        'ae2:tools/matter_cannon',
-        'ae2:tools/network_biometric_card',
-        'ae2:tools/network_memory_card',
-        'ae2:materials/basiccard',
-        'ae2:materials/advancedcard',
-        'ae2:network/cells/item_cell_housing',
-        'ae2:network/cells/fluid_cell_housing',
-        'ae2:network/wireless_part',
-        'ae2:network/wireless_booster',
-        'ae2:network/cells/view_cell',
-        'ae2:network/cells/item_storage_cell_1k',
-        'ae2:network/cells/item_storage_cell_4k',
-        'ae2:network/cells/item_storage_cell_16k',
-        'ae2:network/cells/item_storage_cell_64k',
-        'ae2:network/cells/item_storage_cell_256k',
-        'ae2:network/cells/fuid_cell_housing',
-        'ae2:network/cells/fluid_storage_cell_1k',
-        'ae2:network/cells/fluid_storage_cell_4k',
-        'ae2:network/cells/fluid_storage_cell_16k',
-        'ae2:network/cells/fluid_storage_cell_64k',
-        'ae2:network/cells/fluid_storage_cell_256k',
-        'ae2:network/cells/spatial_storage_cell_2_cubed',
-        'ae2:network/cells/spatial_storage_cell_16_cubed',
-        'ae2:network/cells/spatial_storage_cell_128_cubed',
-        'ae2:network/parts/panels_semi_dark_monitor',
-        'ae2:network/parts/import_bus',
-        'ae2:network/parts/annihilation_plane_alt2',
-        'ae2:network/parts/annihilation_plane_alt',
-        'ae2:network/parts/formation_plane_alt',
-        'ae2:network/parts/formation_plane',
-        'ae2:network/parts/tunnels_me',
-        'ae2:network/parts/export_bus',
-        'ae2wtlib:magnet_card'
+        ae('network/blocks/inscribers'),
+        ae('transform/fluix_crystals'),
+        ae('transform/fluix_crystal'),
+        ae('transform/certus_quartz_crystals'),
+        ae('network/blocks/controller'),
+        ae('network/blocks/crystal_processing_charger'),
+        ae('network/blocks/energy_vibration_chamber'),
+        ae('network/crafting/patterns_blank'),
+        ae('misc/tank_sky_stone'),
+        ae('network/blocks/security_station'),
+        ae('network/blocks/quantum_ring'),
+        ae('network/blocks/spatial_io_port'),
+        ae('network/blocks/storage_drive'),
+        ae('network/blocks/storage_chest'),
+        ae('network/blocks/interfaces_interface'),
+        ae('network/blocks/cell_workbench'),
+        ae('network/blocks/io_port'),
+        ae('network/blocks/io_condenser'),
+        ae('network/blocks/energy_energy_acceptor'),
+        ae('network/blocks/crystal_processing_quartz_growth_accelerator'),
+        ae('network/crafting/cpu_crafting_unit'),
+        ae('network/blocks/pattern_providers_interface'),
+        ae('network/crafting/molecular_assembler'),
+        ae('network/blocks/spatial_anchor'),
+        ae('tools/misctools_entropy_manipulator'),
+        ae('tools/misctools_charged_staff'),
+        ae('tools/network_color_applicator'),
+        ae('tools/matter_cannon'),
+        ae('tools/network_biometric_card'),
+        ae('tools/network_memory_card'),
+        ae('materials/basiccard'),
+        ae('materials/advancedcard'),
+        ae('network/cells/item_cell_housing'),
+        ae('network/cells/fluid_cell_housing'),
+        ae('network/wireless_part'),
+        ae('network/wireless_booster'),
+        ae('network/cells/view_cell'),
+        ae('network/cells/item_storage_cell_1k'),
+        ae('network/cells/item_storage_cell_4k'),
+        ae('network/cells/item_storage_cell_16k'),
+        ae('network/cells/item_storage_cell_64k'),
+        ae('network/cells/item_storage_cell_256k'),
+        ae('network/cells/fuid_cell_housing'),
+        ae('network/cells/fluid_storage_cell_1k'),
+        ae('network/cells/fluid_storage_cell_4k'),
+        ae('network/cells/fluid_storage_cell_16k'),
+        ae('network/cells/fluid_storage_cell_64k'),
+        ae('network/cells/fluid_storage_cell_256k'),
+        ae('network/cells/spatial_storage_cell_2_cubed'),
+        ae('network/cells/spatial_storage_cell_16_cubed'),
+        ae('network/cells/spatial_storage_cell_128_cubed'),
+        ae('network/parts/panels_semi_dark_monitor'),
+        ae('network/parts/import_bus'),
+        ae('network/parts/annihilation_plane_alt2'),
+        ae('network/parts/annihilation_plane_alt'),
+        ae('network/parts/formation_plane_alt'),
+        ae('network/parts/formation_plane'),
+        ae('network/parts/tunnels_me'),
+        ae('network/parts/export_bus'),
+        wt('magnet_card')
     ];
     REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
 
-    let mi = (id) => `modern_industrialization:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let st = (id) => `statech:ae2/${id}`;
-
     // -- REMOVE ALL ENDER DUST OUTPUTS -- //
-    e.remove({output: ae('ender_dust')});
+    e.remove({ output: ae('ender_dust') });
 
     // -- REMOVE ALL INSCRIBER RECIPES -- // 
-    e.remove({type: 'ae2:inscriber' });
+    e.remove({ type: ae('inscriber') });
 
     // -- CONTROLLER -- //
     e.shaped(ae('controller'), [
@@ -710,7 +718,7 @@ ServerEvents.recipes(e => {
     {
         A: ae('annihilation_core'),
         S: '#c:aluminum_plates',
-        P: 'minecraft:sticky_piston'
+        P: mc('sticky_piston')
     })
     .id(st('import_bus'));
 
@@ -770,7 +778,7 @@ ServerEvents.recipes(e => {
     {
         S: '#c:aluminum_plates',
         F: ae('formation_core'),
-        P: 'minecraft:piston'
+        P: mc('piston')
     })
     .id(st('export_bus'));
 
@@ -788,7 +796,7 @@ ServerEvents.recipes(e => {
     .id(st('me_p2p_tunnel'));
 
     // -- MAGNET CARD -- //
-    e.shaped('ae2wtlib:magnet_card', [
+    e.shaped(wt('magnet_card'), [
         'RAL',
         'ICI',
         'III'
@@ -804,23 +812,29 @@ ServerEvents.recipes(e => {
 });
 
 ServerEvents.tags('item', e=> {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let ae = (id) => `ae2:${id}`;
+
+    // Tag all the crafting storages
     const CRAFTING_STORAGE = [
-        'ae2:1k_crafting_storage',
-        'ae2:4k_crafting_storage',
-        'ae2:16k_crafting_storage',
-        'ae2:64k_crafting_storage',
-        'ae2:256k_crafting_storage'
+        ae('1k_crafting_storage'),
+        ae('4k_crafting_storage'),
+        ae('16k_crafting_storage'),
+        ae('64k_crafting_storage'),
+        ae('256k_crafting_storage')
     ];
     CRAFTING_STORAGE.forEach(id => e.add('kubejs:crafting_storage', id) );
 
+    // Tag all the budding blocks
+    // Doesn't work in KubeJS :l
     const BUDDING_BLOCKS = [
-        'ae2:flawless_budding_quartz',
-        'ae2:flawed_budding_quartz',
-        'ae2:chipped_budding_quartz',
-        'ae2:damaged_budding_quartz'
+        ae('flawless_budding_quartz'),
+        ae('flawed_budding_quartz'),
+        ae('chipped_budding_quartz'),
+        ae('damaged_budding_quartz')
     ];
     BUDDING_BLOCKS.forEach(id => e.add('kubejs:budding_certus', id) );
 
     // -- REMOVE ENDER DUST -- //
-    e.removeAllTagsFrom('ae2:ender_dust');
+    e.removeAllTagsFrom(ae('ender_dust'));
 })

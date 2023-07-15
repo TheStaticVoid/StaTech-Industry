@@ -1066,7 +1066,7 @@
 		{
 			dependencies: ["045C683BF6E216CB"]
 			description: [
-				"&aTom's Simple Storage Mod&r is going to be a godsend for the early game, as you won't have access to a full &eApplied Energistics 2&r network until Digital Circuits."
+				"&aTom's Simple Storage Mod&r is going to be a godsend for the early game, as you won't have access to an &eApplied Energistics 2&r network until &2Electronic Circuits&r."
 				""
 				"The &bInventory Connector&r acts similarly to the &cAE2 Controller&r. It's the heart of an inventory network. You can connect terminals to the &bInventory Connector&r to access all the linked inventories."
 			]
@@ -1350,6 +1350,27 @@
 		}
 		{
 			dependencies: ["300516B03C1580A2"]
+			description: [
+				"While traversing your world you might have noticed &3small pebbles&r placed around the surface called &dSamples&r. These &dSamples&r are indicative of a &elarger ore deposit&r below them. That's right, &2GregTech-like oregen&r is in this pack and you will need to find varying &eore deposits&r to gather the materials you will need to progress. Don't worry, once you find one it will last awhile. Also it is worth noting that &cthere aren't many types of ores for a single type of material&r. An &aIron Vein&r will have &aIron Ore&r, and no other &cIron Ore-like&r ores like &2GregTech&r."
+				""
+				"To make finding these &eore deposits&r easier, there is the &6Prospector Pick&r. Right clicking with this will show you a notification of what &aores can be found nearby or below you&r. "
+				""
+				"&cNeed to find a specific ore&r? You can click the block in &dREI&r and check the &binformation tab&r to see which &eore vein&r it spawns in. For example, this is what that tab looks like for &3Nickel Ore&r:"
+				""
+				"{image:statech:textures/item/nickel_ore.png width:125 height:200 align:1}"
+				""
+				"A complete breakdown of these values is as follows:"
+				"- &3Range&r: the &ay-level range&r the vein can generate"
+				"- &2Size&r: the &bsize of the vein&r, &cdoes not correlate to how many blocks are in the vein&r"
+				"- &dDimension&r: which &edimension&r the vein can be found"
+				"- &bBiome&r: which &6biome&r the vein can be found"
+				"- &9Weight&r: the generation &3weight&r of this sepcific vein"
+				"- &6Blocks&r: the &aores within the vein&r and their &3generation rate within the vein&r"
+				""
+				"&bPlease note you might have to scroll to see all ores in a vein&r."
+				""
+				"Also note that the tooltips on the &aore blocks&r are &cmisleading&r, only trust the &ainformation from the information panel&r."
+			]
 			icon: {
 				Count: 1b
 				id: "geocluster:prospectors_pick"
@@ -1383,6 +1404,7 @@
 				}
 			]
 			shape: "square"
+			subtitle: "Giant ore veins return!"
 			tasks: [{
 				id: "769292BA522B15FD"
 				title: "Click to Acknowledge"

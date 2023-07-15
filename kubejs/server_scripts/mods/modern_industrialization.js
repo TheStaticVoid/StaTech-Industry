@@ -1,12 +1,18 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let tr = (id) => `techreborn:${id}`;
-    let astra = (id) => `ad_astra:${id}`;
-    let st = (id) => `statech:modern_industrialization/${id}`;
+    let ad = (id) => `ad_astra:${id}`;
+    let cr = (id) => `create:${id}`;
 
-    // -- REMOVED RECIPES -- //
+    // -- MODERN INDUSTRIALIZATION REMOVED RECIPES -- //
     const MI_DELETED_ITEMS = [
         mi('forge_hammer'),
         mi('guidebook'),
@@ -37,8 +43,46 @@ ServerEvents.recipes(e => {
         mi('steam_age/bronze/boiler_asbl'),
         mi('tools/steam_mining_drill')
     ];
-
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
+
+    // -- CHEMICALLY INERT PTFE CASING -- //
+    e.shaped(mi('chemically_inert_ptfe_casing'), [
+        'PPP',
+        'PGP',
+        'PPP'
+    ],
+    {
+        P: '#c:polytetrafluoroethylene_plates',
+        G: '#c:polytetrafluoroethylene_gears'
+    })
+    .id(st('chemically_inert_ptfe_casing'));
+
+    // -- POLYTETRAFLUOROETHYLENE PIPE MACHINE CASING -- // 
+    e.shaped('2x ' + mi('polytetrafluoroethylene_machine_casing_pipe'), [
+        'C C',
+        'CMC',
+        'C C'
+    ],
+    {
+        C: mi('polytetrafluoroethylene_curved_plate'),
+        M: mi('chemically_inert_ptfe_casing')
+    })
+    .id(st('ptfe_machine_casing_pipe'));
+
+    // -- LARGE CHEMICAL REACTOR -- //
+    e.shaped(mi('large_chemical_reactor'), [
+        'PRP',
+        'UHU',
+        'PCP'
+    ],
+    {
+        P: '#c:polytetrafluoroethylene_plates',
+        R: mi('chemical_reactor'),
+        U: mi('advanced_motor'),
+        H: mi('turbo_machine_hull'),
+        C: mi('digital_circuit')
+    })
+    .id(st('large_chemical_reactor'));
 
     // -- PHOTOSYNTHETIC CHAMBER -- //
     e.shaped(mi('photosynthetic_chamber'), [
@@ -57,6 +101,34 @@ ServerEvents.recipes(e => {
     })
     .id(st('photosynthetic_chamber'));
 
+    // -- CORE MINING DRILL -- //
+    e.shaped(mi('core_drill'), [
+        'MSM',
+        'CHC',
+        'SDS'
+    ],
+    {
+        S: mi('clean_stainless_steel_machine_casing'),
+        C: mi('quantum_circuit'),
+        H: mi('quantum_machine_hull'),
+        M: mi('large_advanced_motor'),
+        D: mi('desh_drill_head')
+    })
+    .id(st('core_drill'));
+
+    // -- SINGULARITY FORGE -- //
+    e.shaped(mi('singularity_forge'), [
+        'PPP',
+        'CHC',
+        'PPP'
+    ],
+    {
+        P: mi('plasma_handling_iridium_machine_casing'),
+        C: mi('quantum_circuit'),
+        H: mi('quantum_machine_hull')
+    })
+    .id(st('singularity_forge'));
+
     // -- STEAM MINING DRILL -- // 
     e.shaped(mi('steam_mining_drill'), [
         'FDD',
@@ -74,7 +146,7 @@ ServerEvents.recipes(e => {
 
     // -- MOB CRUSHER -- // 
     e.shaped(mi('mob_crusher'), [
-        'MCM',
+        'RCR',
         'PHP',
         'MCM'
     ],
@@ -82,7 +154,8 @@ ServerEvents.recipes(e => {
         H: mi('steel_machine_casing'),
         C: mi('electronic_circuit'),
         M: mi('large_motor'),
-        P: mi('piston')
+        P: mi('piston'),
+        R: mi('invar_rotary_blade')
     })
     .id(st('mob_crusher'));
     
@@ -236,7 +309,7 @@ ServerEvents.recipes(e => {
     ],
     {
         G: '#c:iron_gears',
-        I: '#modern_industrialization:item_pipes',
+        I: '#' + mi('item_pipes'),
         H: mi('desh_drill_head'),
         M: mi('large_advanced_motor'),
         U: mi('processing_unit'),
@@ -253,7 +326,7 @@ ServerEvents.recipes(e => {
     {
         H: mi('zinc_drill_head'),
         G: mi('iron_gear'),
-        R: 'create:electron_tube',
+        R: cr('electron_tube'),
         B: '#c:bronze_plates'
     })
     .id(st('zinc_drill'));
@@ -300,7 +373,7 @@ ServerEvents.recipes(e => {
     {
         P: '#c:diamond_plates',
         U: mi('turbo_upgrade'),
-        J: astra('jet_suit'),
+        J: ad('jet_suit'),
         C: mi('titanium_large_plate'),
         L: tr('lapotron_crystal')
     })
@@ -344,7 +417,7 @@ ServerEvents.recipes(e => {
 });
 
 ServerEvents.tags('item', e => {
-
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
 
     const LV_WIRE = [
@@ -462,6 +535,7 @@ ServerEvents.tags('item', e => {
     DEPLETED_FUEL.forEach(id => { e.add('kubejs:depleted_nuclear_fuel', id) });
 });
 
+// Block tagging provided by kevintok
 ServerEvents.tags('block', e => {
     e.add('c:lignite_coal_ores', 'modern_industrialization:lignite_coal_ore')
     e.add('c:lignite_coal_ores', 'modern_industrialization:deepslate_lignite_coal_ore')

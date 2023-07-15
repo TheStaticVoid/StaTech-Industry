@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let ALLOY_SMELTER;
 
 MIMachineEvents.registerRecipeTypes(e => {

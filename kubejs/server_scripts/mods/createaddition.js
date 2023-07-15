@@ -1,10 +1,17 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:createaddition/${id}`;
     let ca = (id) => `createaddition:${id}`;
     let cr = (id) => `create:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
 
+    // -- CREATE CRAFTS & ADDITIONS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         ca('mixing/bioethanol'),
         ca('mixing/biomass_from_flowers'),
@@ -98,9 +105,11 @@ ServerEvents.recipes(e => {
 });
 
 ServerEvents.tags('fluid', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let ca = (id) => `createaddition:${id}`;
+    
     const BURNABLE_FUEL_4800 = [
         mi('creosote')
     ];

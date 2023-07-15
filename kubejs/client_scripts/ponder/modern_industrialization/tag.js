@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.tags((event) => {
     event.createTag('kubejs:modern_industrialization', 'modern_industrialization:forge_hammer', 'Modern Industrialization', 'Ponder Scenes for multiblock structures', [
         'modern_industrialization:coke_oven',

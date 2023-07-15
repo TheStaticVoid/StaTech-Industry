@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:core_drill').scene('core_mining_drill', 'The Core Mining Drill', 'kubejs:core_mining_drill', (scene, util) => {
         scene.setSceneOffsetY(-5.0);

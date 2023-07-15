@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:singularity_forge').scene('singularity_forge', 'The Quasi Quantum Singularity Forge', 'kubejs:singularity_forge', (scene, util) => {
         scene.setSceneOffsetY(-8.0);

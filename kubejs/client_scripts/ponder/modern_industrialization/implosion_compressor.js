@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:implosion_compressor').scene('implosion_compressor', 'The Implosion Compressor', 'kubejs:implosion_compressor', (scene, util) => {
         // Base plate

@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let SINGULARITY_FORGE;
 
 MIMachineEvents.registerRecipeTypes(e => {
@@ -8,6 +13,7 @@ MIMachineEvents.registerRecipeTypes(e => {
 });
 
 MIMachineEvents.registerMachines(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
     let ad = (id) => `ad_astra:${id}`;
     let ch = (id) => `chisel:${id}`;

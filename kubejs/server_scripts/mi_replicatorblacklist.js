@@ -1,7 +1,11 @@
-// TAKEN FROM AOF6
-// TY AK9
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+// This list is a modified version from the AOF6 modpack
 ServerEvents.tags('item', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let ae = (id) => `ae2:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
@@ -10,10 +14,16 @@ ServerEvents.tags('item', e => {
     let cr = (id) => `create:${id}`;
     let sp = (id) => `spectrum:${id}`;
     let ed = (id) => `extended_drawers:${id}`;
+    let kb = (id) => `kibe:${id}`;
+    let ar = (id) => `artifacts:${id}`;
+    let su = (id) => `supplementaries:${id}`;
+    let xp = (id) => `xps:${id}`;
+    let wa = (id) => `wands:${id}`;
+    let qm = (id) => `quarrymod:${id}`;
 
     const ITEMS = [
-        'kibe:tank',
-        'kibe:angel_ring',
+        kb('tank'),
+        kb('angel_ring'),
         ae('quantum_entangled_singularity'),
         ae('spatial_storage_cell_2'),
         ae('spatial_storage_cell_16'),
@@ -57,9 +67,9 @@ ServerEvents.tags('item', e => {
         tr('high_voltage_su'),
         tr('interdimensional_su'),
         tr('auto_crafting_table'),
-        'kibe:golden_lasso',
-        'kibe:cursed_lasso',
-        'kibe:diamond_lasso',
+        kb('golden_lasso'),
+        kb('cursed_lasso'),
+        kb('diamond_lasso'),
         mi('quantum_helmet'),
         mi('quantum_chestplate'),
         mi('quantum_leggings'),
@@ -67,8 +77,8 @@ ServerEvents.tags('item', e => {
         mi('quantum_sword'),
         mi('singularity'),
         tr('nuke'),
-        'artifacts:everlasting_beef',
-        'artifacts:eternal_steak',
+        ar('everlasting_beef'),
+        ar('eternal_steak'),
         tr('heliumplasma_bucket'),
         im('baby_backpack'),
         im('frayed_backpack'),
@@ -78,32 +88,28 @@ ServerEvents.tags('item', e => {
         im('blazing_backpack'),
         im('withered_backpack'),
         im('endless_backpack'),
-        '#create:toolboxes',
-        'supplementaries:sack',
+        su('sack'),
         sp('present'),
-        '#supplementaries:presents',
-	    '#supplementaries:trapped_presents',
-        'kibe:cooler',
-        'supplementaries:safe',
+        kb('cooler'),
+        su('safe'),
         cr('chest_minecart_contraption'),
         cr('furnace_minecart_contraption'),
         cr('minecart_contraption'),
         ae('wireless_crafting_terminal'),
-        'wands:stone_wand',
-        'wands:iron_wand',
-        'wands:diamond_wand',
-        'wands:netherite_wand',
-        'wands:palette',
+        wa('stone_wand'),
+        wa('iron_wand'),
+        wa('diamond_wand'),
+        wa('netherite_wand'),
+        wa('palette'),
         ic('iron_dolly'),
         ic('diamond_dolly'),
-        'xps:block_xp_obelisk',
-        'display_case:display_case',
+        xp('block_xp_obelisk'),
         sp('gloves_of_dawns_grasp'),
         sp('heartsingers_reward'),
         sp('shieldgrasp_amulet'),
-        'wands:magic_bag_1',
-        'wands:magic_bag_2',
-        'wands:magic_bag_3',
+        wa('magic_bag_1'),
+        wa('magic_bag_2'),
+        wa('magic_bag_3'),
         tr('storage_buffer'),
         tr('alloy_smelter'),
         tr('assembly_machine'),
@@ -145,12 +151,15 @@ ServerEvents.tags('item', e => {
         tr('quantum_chestplate'),
         tr('quantum_leggings'),
         tr('quantum_boots'),
-	ed('single_drawer'),
-	ed('double_drawer'),
-	ed('quad_drawer'),
-	ed('shadow_drawer'),
-	ed('compacting_drawer'),
-	'quarrymod:quarry'
+        ed('single_drawer'),
+        ed('double_drawer'),
+        ed('quad_drawer'),
+        ed('shadow_drawer'),
+        ed('compacting_drawer'),
+        qm('quarry'),
+        '#create:toolboxes',
+        '#supplementaries:presents',
+	    '#supplementaries:trapped_presents',
     ];
 
     ITEMS.forEach(id => e.add(mi('replicator_blacklist'), id));

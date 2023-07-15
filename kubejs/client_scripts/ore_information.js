@@ -1,9 +1,17 @@
-REIEvents.information(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+REIEvents.information(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mc = (id) => `minecraft:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let bg = (id) => `byg:${id}`;
+    let cr = (id) => `create:${id}`;
 
+    // -- CUSTOM INFO UTILITY FUNCTION -- //
     let depositBuilder = (vein, minY, maxY, size, dim, biome, weight, blocks) => {
         let arr = [
             `Found in ${vein} Veins`,
@@ -43,7 +51,7 @@ REIEvents.information(e => {
 
     // anthracite.json
     const ANTHRACITE_DEPOSIT = [
-        'byg:anthracite_ore'
+        bg('anthracite_ore')
     ];
     ANTHRACITE_DEPOSIT.forEach(id => {
         e.addItem(id, 'Anthracite Deposit', depositBuilder(
@@ -174,9 +182,9 @@ REIEvents.information(e => {
     });
 
     const BLUE_NETHER_GOLD_DEPOSIT = [
-        'byg:blue_nether_gold_ore',
+        bg('blue_nether_gold_ore'),
         mc('ancient_debris'),
-        'byg:pendorite_ore'
+        bg('pendorite_ore')
     ];
     BLUE_NETHER_GOLD_DEPOSIT.forEach(id => {
         e.addItem(id, 'Blue Nether Gold Deposit', depositBuilder(
@@ -196,9 +204,9 @@ REIEvents.information(e => {
     });
 
     const BRIMSTONE_NETHER_GOLD_DEPOSIT = [
-        'byg:brimstone_nether_gold_ore',
+        bg('brimstone_nether_gold_ore'),
         mc('ancient_debris'),
-        'byg:anthracite_ore'
+        bg('anthracite_ore')
     ];
     BRIMSTONE_NETHER_GOLD_DEPOSIT.forEach(id => {
         e.addItem(id, 'Brimstone Nether Gold Deposit', depositBuilder(
@@ -217,7 +225,7 @@ REIEvents.information(e => {
         ));
     });
     // This one is by itself
-    e.addItem('byg:emeraldite_ore', 'Scoria Nether Gold Deposit', depositBuilder(
+    e.addItem(bg('emeraldite_ore'), 'Scoria Nether Gold Deposit', depositBuilder(
         'Gold',
         '10',
         '60',
@@ -231,7 +239,7 @@ REIEvents.information(e => {
             '- Ancient Debris (0.1%)'
         ]
     ));
-    e.addItem('byg:emeraldite_ore', 'Scoria Nether Quartz Deposit', depositBuilder(
+    e.addItem(bg('emeraldite_ore'), 'Scoria Nether Quartz Deposit', depositBuilder(
         'Quartz',
         '10',
         '120',
@@ -382,9 +390,9 @@ REIEvents.information(e => {
     });
 
     const BLUE_NETHER_QUARTZ_DEPOSIT = [
-        'byg:blue_nether_quartz_ore',
+        bg('blue_nether_quartz_ore'),
         mc('ancient_debris'),
-        'byg:pendorite_ore'
+        bg('pendorite_ore')
     ];
     BLUE_NETHER_QUARTZ_DEPOSIT.forEach(id => {
         e.addItem(id, 'Blue Nether Quartz Deposit', depositBuilder(
@@ -404,9 +412,9 @@ REIEvents.information(e => {
     });
 
     const BRIMSTONE_NETHER_QUARTZ_DEPOSIT = [
-        'byg:brimstone_nether_quartz_ore',
+        bg('brimstone_nether_quartz_ore'),
         mc('ancient_debris'),
-        'byg:anthracite_ore'
+        bg('anthracite_ore')
     ];
     BRIMSTONE_NETHER_QUARTZ_DEPOSIT.forEach(id => {
         e.addItem(id, 'Blue Nether Quartz Deposit', depositBuilder(
@@ -451,7 +459,7 @@ REIEvents.information(e => {
     const REDSTONE_DEPOSIT = [
         mc('redstone_ore'),
         tr('ruby_ore'),
-        'byg:cryptic_redstone_ore',
+        bg('cryptic_redstone_ore'),
         mc('deepslate_redstone_ore'),
         tr('deepslate_ruby_ore')
     ];
@@ -608,8 +616,8 @@ REIEvents.information(e => {
 
     // zinc.json
     const ZINC_DEPOSIT = [
-        'create:zinc_ore',
-        'create:deepslate_zinc_ore'
+        cr('zinc_ore'),
+        cr('deepslate_zinc_ore')
     ];
     ZINC_DEPOSIT.forEach(id => {
         e.addItem(id, 'Zinc Deposit', depositBuilder(

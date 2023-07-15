@@ -1,6 +1,12 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
-    let la = (id) => `lumberaxe:${id}`;
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:lumberaxe/${id}`;
+    let la = (id) => `lumberaxe:${id}`;
 
     const REMOVED_RECIPES = [
         la('iron_lumberaxe'),

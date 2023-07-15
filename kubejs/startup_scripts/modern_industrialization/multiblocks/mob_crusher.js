@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let MOB_CRUSHER;
 
 MIMachineEvents.registerRecipeTypes(e => {
@@ -9,6 +14,7 @@ MIMachineEvents.registerRecipeTypes(e => {
 });
 
 MIMachineEvents.registerMachines(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
 

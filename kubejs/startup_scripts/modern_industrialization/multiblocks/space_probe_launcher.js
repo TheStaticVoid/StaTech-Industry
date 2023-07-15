@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let SPACE_PROBE_LAUNCHER;
 
 MIMachineEvents.registerRecipeTypes(e => {
@@ -7,6 +12,7 @@ MIMachineEvents.registerRecipeTypes(e => {
 });
 
 MIMachineEvents.registerMachines(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
 
     const caloriteCasing = e.memberOfBlock(mi('calorite_machine_casing'));

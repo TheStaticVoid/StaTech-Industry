@@ -1,7 +1,14 @@
-ServerEvents.recipes(e => {
-    let vh = (id) => `vanilla-hammers:${id}`;
-    let st = (id) => `statech:vanilla-hammers/${id}`;
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:vanilla-hammers/${id}`;
+    let vh = (id) => `vanilla-hammers:${id}`;
+
+    // -- VANILLA HAMMERS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         vh('wooden_hammer'),
         vh('stone_hammer'),
@@ -45,6 +52,7 @@ ServerEvents.recipes(e => {
 });
 
 ServerEvents.tags('item', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let vh = (id) => `vanilla-hammers:${id}`;
     const HAMMERS = [
         //vh('wooden_hammer'),

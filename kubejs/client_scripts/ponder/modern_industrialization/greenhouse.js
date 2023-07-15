@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:greenhouse').scene('greenhouse', 'The Industrial Greenhouse', 'kubejs:industrial_greenhouse', (scene, util) => {
         scene.setSceneOffsetY(-2.0);

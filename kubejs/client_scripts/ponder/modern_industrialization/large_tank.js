@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:large_tank').scene('large_tank', 'The Large Tank', 'kubejs:large_tank', (scene, util) => {
         // Small tank - base layer

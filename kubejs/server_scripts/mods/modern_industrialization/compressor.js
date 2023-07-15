@@ -1,10 +1,16 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let st = (id) => `statech:modern_industrialization/compressor/${id}`;
 
+    // -- COMPRESSOR REMOVED RECIPES -- //
     const DELETED_RECIPE = [
         mi('materials/diamond/compressor/main'),
         mi('materials/emerald/compressor/main'),
@@ -17,6 +23,7 @@ ServerEvents.recipes(e => {
     ];
     DELETED_RECIPE.forEach(id => e.remove({id: id}));
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let compressor = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('compressor'),
@@ -38,12 +45,8 @@ ServerEvents.recipes(e => {
         st('diamond_plate'),
         48,
         400,
-        [
-            { amount: 1, item: mc('diamond') }
-        ],
-        [
-            { amount: 1, item: mi('diamond_plate') }
-        ]
+        [ { amount: 1, item: mc('diamond') } ],
+        [ { amount: 1, item: mi('diamond_plate') } ]
     )
 
     // -- EMERALD PLATE -- //
@@ -51,12 +54,8 @@ ServerEvents.recipes(e => {
         st('emerald_plate'),
         48,
         400,
-        [
-            { amount: 1, item: mc('emerald') }
-        ],
-        [
-            { amount: 1, item: mi('emerald_plate') }
-        ]
+        [ { amount: 1, item: mc('emerald') } ],
+        [ { amount: 1, item: mi('emerald_plate') } ]
     );
 
     // -- BRICKS -- //
@@ -64,12 +63,8 @@ ServerEvents.recipes(e => {
         st('bricks'),
         2,
         300,
-        [
-            { amount: 4, item: mc('brick') }
-        ],
-        [
-            { amount: 1, item: mc('bricks') }
-        ]
+        [ { amount: 4, item: mc('brick') } ],
+        [ { amount: 1, item: mc('bricks') } ]
     );
 
     // -- FIRE CLAY BRICKS -- //
@@ -95,12 +90,8 @@ ServerEvents.recipes(e => {
         st('rubber_sheets'),
         2,
         200,
-        [
-            { amount: 1, item: tr('rubber') }
-        ],
-        [
-            { amount: 2, item: mi('rubber_sheet') }
-        ]
+        [ { amount: 1, item: tr('rubber') } ],
+        [ { amount: 2, item: mi('rubber_sheet') } ]
     );
 
     // -- LAZURITE PLATE -- //
@@ -108,12 +99,8 @@ ServerEvents.recipes(e => {
         st('lazurite_plate'),
         10,
         300,
-        [
-            { amount: 1, item: tr('lazurite_dust') }
-        ],
-        [
-            { amount: 1, item: tr('lazurite_plate') }
-        ]
+        [ { amount: 1, item: tr('lazurite_dust') } ],
+        [ { amount: 1, item: tr('lazurite_plate') } ]
     );
 
     // -- PAPER -- //

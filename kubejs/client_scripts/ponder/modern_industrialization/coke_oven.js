@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:coke_oven').scene('coke_oven', 'The Coke Oven', 'kubejs:coke_oven', (scene, util) => {
         // Grass Layer

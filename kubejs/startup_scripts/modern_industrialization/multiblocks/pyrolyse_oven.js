@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let PYROLYSE_OVEN;
 
 MIMachineEvents.registerRecipeTypes(e => {
@@ -9,7 +14,9 @@ MIMachineEvents.registerRecipeTypes(e => {
 });
 
 MIMachineEvents.registerMachines(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
+    
     const heatproofCasing = e.memberOfBlock(mi('heatproof_machine_casing'));
     const cupronickelCoil = e.memberOfBlock(mi('cupronickel_coil'));
     const pyrolyseHatch = e.hatchOf('item_input', 'item_output', 'fluid_input', 'fluid_output', 'energy_input');

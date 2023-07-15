@@ -1,8 +1,24 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:travelstaff/${id}`;
+    let ts = (id) => `travelstaff:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
+
+    // -- STAFF OF TRAVELING REMOVED RECIPES -- //
+    const REMOVED_RECIPES = [
+        ts('travel_anchor'),
+        ts('travel_staff')
+    ]
+    REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
+
     // -- TRAVEL ANCHOR -- //
-    e.remove( {id: 'travelstaff:travel_anchor'} );
-    e.shaped('travelstaff:travel_anchor', [
+    e.shaped(ts('travel_anchor'), [
         'BIB',
         'IPI',
         'BIB'
@@ -14,16 +30,16 @@ ServerEvents.recipes(e => {
     })
     .id(st('travel_anchor'));
 
-    e.remove( {id: 'travelstaff:travel_staff'} );
-    e.shaped('travelstaff:travel_staff', [
+    // -- TRAVEL STAFF -- //
+    e.shaped(ts('travel_staff'), [
         ' PE',
         ' RP',
         'R  '
     ],
     {
-        R: 'modern_industrialization:steel_rod',
-        E: 'minecraft:emerald',
-        P: 'minecraft:ender_pearl'
+        R: mi('steel_rod'),
+        E: mc('emerald'),
+        P: mc('ender_pearl')
     })
     .id(st('travel_staff'));
 });

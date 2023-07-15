@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:steam_quarry').scene('steam_quarry', 'The Steam Quarry', 'kubejs:steam_quarry', (scene, util) => {
         // Grass Layer

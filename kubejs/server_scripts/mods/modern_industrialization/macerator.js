@@ -1,12 +1,19 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/macerator/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let crate = (id) => `create:${id}`; // mispelled on purpose ;)
+    let cr = (id) => `create:${id}`;
     let ed = (id) => `expandeddelight:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let sp = (id) => `spectrum:${id}`;
-    let st = (id) => `statech:modern_industrialization/macerator/${id}`;
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let macerator = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('macerator'),
@@ -28,12 +35,8 @@ ServerEvents.recipes(e => {
         st('wheat_flour'),
         2,
         200,
-        [
-            { amount: 1, item: mc('wheat') }
-        ],
-        [
-            { amount: 2, item: crate('wheat_flour') }
-        ]
+        [ { amount: 1, item: mc('wheat') } ],
+        [ { amount: 2, item: cr('wheat_flour') } ]
     );
 
     // -- SALT DUST -- //
@@ -41,12 +44,8 @@ ServerEvents.recipes(e => {
         st('ground_salt'),
         2,
         100,
-        [
-            { amount: 1, item: ed('salt_rock') }
-        ],
-        [
-            { amount: 1, item: ed('ground_salt') }
-        ]
+        [ { amount: 1, item: ed('salt_rock') } ],
+        [ { amount: 1, item: ed('ground_salt') } ]
     );
 
     // -- CALCITE DUST -- //
@@ -54,12 +53,8 @@ ServerEvents.recipes(e => {
         st('calcite_dust'),
         8,
         100,
-        [
-            { amount: 1, item: mc('calcite') }
-        ],
-        [
-            { amount: 2, item: tr('calcite_dust') }
-        ]   
+        [ { amount: 1, item: mc('calcite') } ],
+        [ { amount: 2, item: tr('calcite_dust') } ]   
     );
 
     // -- RAW PLATINUM FROM SHELDONITE ORE -- //
@@ -67,12 +62,8 @@ ServerEvents.recipes(e => {
         st('raw_platinum'),
         2,
         200,
-        [
-            { amount: 1, tag: 'c:sheldonite_ores' }
-        ],
-        [
-            { amount: 3, item: mi('raw_platinum') }
-        ]
+        [ { amount: 1, tag: 'c:sheldonite_ores' } ],
+        [ { amount: 3, item: mi('raw_platinum') } ]
     );
 
     // -- OBSIDIAN -- //
@@ -80,12 +71,8 @@ ServerEvents.recipes(e => {
         st('obsidian_dust'),
         8,
         1200,
-        [
-            { amount: 1, item: mc('obsidian') }
-        ],
-        [
-            { amount: 4, item: tr('obsidian_dust') }
-        ]
+        [ { amount: 1, item: mc('obsidian') } ],
+        [ { amount: 4, item: tr('obsidian_dust') } ]
     );
 
     // -- RAW ZINC -- //
@@ -93,12 +80,8 @@ ServerEvents.recipes(e => {
         st('raw_zinc'),
         2,
         200,
-        [
-            { amount: 1, tag: 'c:zinc_ores' }
-        ],
-        [
-            { amount: 3, item: 'create:raw_zinc'}
-        ]
+        [ { amount: 1, tag: 'c:zinc_ores' } ],
+        [ { amount: 3, item: 'create:raw_zinc'} ]
     );
 
     // -- ZINC DUST -- //
@@ -106,9 +89,7 @@ ServerEvents.recipes(e => {
         st('zinc_dust'),
         2,
         200,
-        [
-            { amount: 1, tag: 'c:raw_zinc_ores' }
-        ],
+        [ { amount: 1, tag: 'c:raw_zinc_ores' } ],
         [
             { amount: 1, item: tr('zinc_dust') },
             { amount: 1, item: tr('zinc_dust'), probability: 0.50 }
@@ -323,7 +304,7 @@ ServerEvents.recipes(e => {
         st('copper_dust_from_veridium'),
         2,
         200,
-        [ { amount: 1, item: crate('veridium') } ],
+        [ { amount: 1, item: cr('veridium') } ],
         [ 
             { amount: 1, item: mi('copper_dust') },
             { amount: 1, item: mi('copper_dust'), probability: 0.5 }
@@ -335,7 +316,7 @@ ServerEvents.recipes(e => {
         st('zinc_dust_from_asurine'),
         2,
         200,
-        [ { amount: 1, item: crate('asurine') } ],
+        [ { amount: 1, item: cr('asurine') } ],
         [ 
             { amount: 1, item: tr('zinc_dust') },
             { amount: 1, item: tr('zinc_dust'), probability: 0.5 }
@@ -347,7 +328,7 @@ ServerEvents.recipes(e => {
         st('gold_dust_from_asurine'),
         2,
         200,
-        [ { amount: 1, item: crate('ochrum') } ],
+        [ { amount: 1, item: cr('ochrum') } ],
         [
             { amount: 1, item: mi('gold_dust') },
             { amount: 1, item: mi('gold_dust'), probability: 0.5 }
@@ -359,7 +340,7 @@ ServerEvents.recipes(e => {
         st('iron_dust_from_crimsite'),
         2,
         200,
-        [ { amount: 1, item: crate('crimsite') } ],
+        [ { amount: 1, item: cr('crimsite') } ],
         [
             { amount: 1, item: mi('iron_dust') },
             { amount: 1, item: mi('iron_dust'), probability: 0.5 }

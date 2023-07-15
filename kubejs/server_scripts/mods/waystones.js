@@ -1,9 +1,16 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:waystones/${id}`;
     let sp = (id) => `spectrum:${id}`;
-    let tr = (id) => `techreborn:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let ws = (id) => `waystones:${id}`;
+    
+    // -- WAYSTONES REMOVED RECIPES -- //
     const WAYSTONE_REMOVED_RECIPES = [
         ws('warp_stone'),
         ws('return_scroll'),
@@ -179,12 +186,8 @@ ServerEvents.recipes(e => {
             'EA'
         ],
         key: {
-            E: {
-                tag: 'c:ender_pearl_dusts'
-            },
-            A: {
-                item: sp('amethyst_powder')
-            }
+            E: { tag: 'c:ender_pearl_dusts' },
+            A: { item: sp('amethyst_powder') }
         },
         result: {
             item: ws('warp_dust'),

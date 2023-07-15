@@ -1,8 +1,13 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
     let st = (id) => `statech:modern_industrialization/distillery/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
-    let kjs = (id) => `kubejs:${id}`;
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let distillery = (id, eu, duration, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('distillery'),

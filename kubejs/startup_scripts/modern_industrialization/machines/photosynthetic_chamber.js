@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let PHOTOSYNTHETIC_CHAMBER;
 
 MIMachineEvents.registerRecipeTypes(e => {

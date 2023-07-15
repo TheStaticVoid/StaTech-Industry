@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:nuclear_reactor').scene('nuclear_reactor', 'The Nuclear Reactor', 'kubejs:nuclear_reactor', (scene, util) => {
         // Show base plate

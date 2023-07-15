@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 let MEGA_SMELTER;
 
 MIMachineEvents.registerRecipeTypes(e => {
@@ -7,6 +12,7 @@ MIMachineEvents.registerRecipeTypes(e => {
 });
 
 MIMachineEvents.registerMachines(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
 
     const heatproofCasing = e.memberOfBlock(mi('heatproof_machine_casing'));

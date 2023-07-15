@@ -1,10 +1,17 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/laser_engraver/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let ae = (id) => `ae2:${id}`;
     let kj = (id) => `kubejs:${id}`;
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let laserEngraver = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('laser_engraver'),
@@ -30,9 +37,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('silicon_press'), probability: 0.0 },
             { amount: 1, item: ae('silicon') }
         ],
-        [
-            { amount: 1, item: ae('printed_silicon') }
-        ]
+        [ { amount: 1, item: ae('printed_silicon') } ]
     );
     laserEngraver(
         st('silicon_press_alt'),
@@ -42,9 +47,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('silicon_press'), probability: 0.0 },
             { amount: 1, item: mi('silicon_ingot') }
         ],
-        [
-            { amount: 1, item: ae('printed_silicon') }
-        ]
+        [ { amount: 1, item: ae('printed_silicon') } ]
     );
 
     // -- PRINTED CALCULATION CIRCUIT -- //
@@ -56,9 +59,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('calculation_processor_press'), probability: 0.0 },
             { amount: 1, item: ae('certus_quartz_crystal') }
         ],
-        [ 
-            { amount: 1, item: ae('printed_calculation_processor') } 
-        ]
+        [ { amount: 1, item: ae('printed_calculation_processor') } ]
     );
 
     // -- PRINTED ENGINEERING CIRCUIT -- //
@@ -70,9 +71,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('engineering_processor_press'), probability: 0.0 },
             { amount: 1, item: mc('diamond') }
         ],
-        [
-            { amount: 1, item: ae('printed_engineering_processor') }
-        ]
+        [ { amount: 1, item: ae('printed_engineering_processor') } ]
     );
 
     // -- PRINTED LOGIC CIRCUIT -- //
@@ -84,9 +83,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('logic_processor_press'), probability: 0.0 },
             { amount: 1, item: mc('gold_ingot') }
         ],
-        [
-            { amount: 1, item: ae('printed_logic_processor') }
-        ]
+        [ { amount: 1, item: ae('printed_logic_processor') } ]
     );
 
     // -- SILICON PRESS -- //
@@ -98,9 +95,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('silicon_press'), probability: 0.0 },
             { amount: 1, item: mc('iron_block') }
         ],
-        [
-            { amount: 1, item: ae('silicon_press') }
-        ]
+        [ { amount: 1, item: ae('silicon_press') } ]
     );
 
     // -- CALCULATION PRESS -- //
@@ -112,9 +107,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('calculation_processor_press'), probability: 0.0 },
             { amount: 1, item: mc('iron_block') }
         ],
-        [
-            { amount: 1, item: ae('calculation_processor_press') }
-        ]
+        [ { amount: 1, item: ae('calculation_processor_press') } ]
     );
 
     // -- ENGINEERING PRESS -- //
@@ -126,9 +119,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('engineering_processor_press'), probability: 0.0 },
             { amount: 1, item: mc('iron_block') }
         ],
-        [
-            { amount: 1, item: ae('engineering_processor_press') }
-        ]
+        [ { amount: 1, item: ae('engineering_processor_press') } ]
     );
 
     // -- LOGIC PRESS -- //
@@ -140,9 +131,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('logic_processor_press'), probability: 0.0 },
             { amount: 1, item: mc('iron_block') }
         ],
-        [
-            { amount: 1, item: ae('logic_processor_press') } 
-        ]
+        [ { amount: 1, item: ae('logic_processor_press') } ]
     );
 
     // -- CRUSHER MODELS -- //

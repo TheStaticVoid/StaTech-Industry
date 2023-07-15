@@ -1,4 +1,10 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:wizards/${id}`;
     let sp = (id) => `spectrum:${id}`;
     let mc = (id) => `minecraft:${id}`;
@@ -7,6 +13,7 @@ ServerEvents.recipes(e => {
     let se = (id) => `spell_engine:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
 
+    // -- WIZARDS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         se('spell_binding_table'),
         ru('rune_crafting_altar'),
@@ -685,32 +692,35 @@ ServerEvents.recipes(e => {
 });
 
 ServerEvents.tags('item', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let wz = (id) => `wizards:${id}`;
+    let kj = (id) => `kubejs:${id}`;
+
     const BASIC_WANDS = [
         wz('wand_arcane'),
         wz('wand_fire'),
         wz('wand_frost')
     ];
-    BASIC_WANDS.forEach(id => { e.add('kubejs:basic_wands', id) } );
+    BASIC_WANDS.forEach(id => { e.add(kj('basic_wands'), id) } );
 
     const NETHERITE_BASIC_WANDS = [
         wz('wand_netherite_arcane'),
         wz('wand_netherite_fire'),
         wz('wand_netherite_frost')
     ];
-    NETHERITE_BASIC_WANDS.forEach(id => { e.add('kubejs:netherite_basic_wands', id) } );
+    NETHERITE_BASIC_WANDS.forEach(id => { e.add(kj('netherite_basic_wands'), id) } );
 
     const BASIC_STAFF = [
         wz('staff_arcane'),
         wz('staff_fire'),
         wz('staff_frost')
     ];
-    BASIC_STAFF.forEach(id => { e.add('kubejs:basic_staffs', id) } );
+    BASIC_STAFF.forEach(id => { e.add(kj('basic_staffs'), id) } );
 
     const NETHERITE_BASIC_STAFF = [
         wz('staff_netherite_arcane'),
         wz('staff_netherite_fire'),
         wz('staff_netherite_frost')
     ];
-    NETHERITE_BASIC_STAFF.forEach(id => { e.add('kubejs:basic_netherite_staffs', id) } );
+    NETHERITE_BASIC_STAFF.forEach(id => { e.add(kj('basic_netherite_staffs'), id) } );
 });

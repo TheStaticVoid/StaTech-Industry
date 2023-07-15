@@ -1,9 +1,15 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mc = (id) => `minecraft:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let chemicalReactor = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('chemical_reactor'),
@@ -33,9 +39,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('ender_pearl') },
             { amount: 1, item: mc('blaze_powder') }
         ],
-        [
-            { amount: 2, item: mc('ender_eye') }
-        ]
+        [ { amount: 2, item: mc('ender_eye') } ]
     );
 
     // -- PLASTIC BAR -- //
@@ -43,15 +47,9 @@ ServerEvents.recipes(e => {
         st('plastic_bar'),
         16,
         300,
-        [
-            { amount: 1, item: mc('paper') }
-        ],
-        [
-            { amount: 1, item: 'anim_guns:plastic' }
-        ],
-        [
-            { amount: 500, fluid: mi('polyethylene') }
-        ]
+        [ { amount: 1, item: mc('paper') } ],
+        [ { amount: 1, item: 'anim_guns:plastic' } ],
+        [ { amount: 500, fluid: mi('polyethylene') } ]
     );
 
     // -- SNYTHETIC REDSTONE CRYSTAL -- //
@@ -59,15 +57,9 @@ ServerEvents.recipes(e => {
         st('synthetic_redstone_crystal'),
         24,
         400,
-        [
-            { amount: 1, item: mc('diamond') }
-        ],
-        [
-            { amount: 1, item: 'techreborn:synthetic_redstone_crystal' }
-        ],
-        [
-            { amount: 3600, fluid: mi('molten_redstone') }
-        ]
+        [ { amount: 1, item: mc('diamond') } ],
+        [ { amount: 1, item: 'techreborn:synthetic_redstone_crystal' } ],
+        [ { amount: 3600, fluid: mi('molten_redstone') } ]
     );
 
     // -- POLYTETRAFLUOROETHYLENE -- //

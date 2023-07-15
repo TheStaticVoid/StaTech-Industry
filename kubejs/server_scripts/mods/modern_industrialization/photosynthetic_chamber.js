@@ -1,4 +1,10 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/photosynthetic_chamber/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
@@ -7,6 +13,7 @@ ServerEvents.recipes(e => {
     let ed = (id) => `expandeddelight:${id}`;
     let fd = (id) => `farmersdelight:${id}`;
     
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let photoChamber = (id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
         let newRecipe = {
             type: mi('photosynthetic_chamber'),
@@ -25,6 +32,7 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe);
     }
 
+    // This is all the seeds in the game with their respective outputs
     const recipeInOut = [
         // Wheat
         [
@@ -273,6 +281,7 @@ ServerEvents.recipes(e => {
 
 
     ];
+    // Create recipes for each of the items in the list
     recipeInOut.forEach(recipe => {
         let input = recipe[0];
         let output = recipe[1];
@@ -287,6 +296,7 @@ ServerEvents.recipes(e => {
         );
     });
 
+    // These use a different fluid and are omitted from the original list
     // -- NETHER WART -- // 
     photoChamber(
         st('nether_wart'),

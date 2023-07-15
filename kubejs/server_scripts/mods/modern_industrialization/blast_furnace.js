@@ -1,9 +1,15 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/blast_furnace/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let st = (id) => `statech:modern_industrialization/blast_furnace/${id}`;
     
+    // -- BLAST FURNACE REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         mi('materials/blast_furnace/steel'),
         mi('materials/aluminum/blast_furnace/dust'),
@@ -12,7 +18,7 @@ ServerEvents.recipes(e => {
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id: id}));
 
-
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let blastFurnace = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('blast_furnace'),
@@ -38,12 +44,8 @@ ServerEvents.recipes(e => {
         st('steel_ingot_from_uncooked_steel'),
         2,
         1200,
-        [
-            { amount: 1, item: mi('uncooked_steel_dust') }
-        ],
-        [ 
-            { amount: 1, item: mi('steel_ingot') }
-        ]
+        [ { amount: 1, item: mi('uncooked_steel_dust') } ],
+        [ { amount: 1, item: mi('steel_ingot') } ]
     );
 
     // -- MOLTEN ENDERIUM -- //
@@ -76,9 +78,7 @@ ServerEvents.recipes(e => {
             { amount: 3, tag: 'c:refined_iron_ingots' },
             { amount: 1, tag: 'c:carbon_dusts' }
         ],
-        [
-            { amount: 4, item: mi('steel_ingot') }
-        ]
+        [ { amount: 4, item: mi('steel_ingot') } ]
     );
 
     // -- ALUMINUM EBF -- //
@@ -86,12 +86,8 @@ ServerEvents.recipes(e => {
         st('aluminum_ingot'),
         32,
         600,
-        [
-            { amount: 1, item: mi('aluminum_dust') }
-        ],
-        [
-            { amount: 1, item: mi('aluminum_ingot') }
-        ]
+        [ { amount: 1, item: mi('aluminum_dust') } ],
+        [ { amount: 1, item: mi('aluminum_ingot') } ]
     );
 
     // -- IRON INGOTS -> HARDENED IRON INGOT -- //
@@ -99,12 +95,8 @@ ServerEvents.recipes(e => {
         st('hardend_iron_ingot'),
         16,
         300,
-        [
-            { amount: 1, tag: 'c:iron_ingots' },
-        ],
-        [
-            { amount: 1, item: 'anim_guns:hardened_iron_ingot' }
-        ]
+        [ { amount: 1, tag: 'c:iron_ingots' }, ],
+        [ { amount: 1, item: 'anim_guns:hardened_iron_ingot' } ]
     );
 
     // -- TUNGSTEN + STEEL -> HOT TUNGSTENSTEEL -- //
@@ -116,9 +108,7 @@ ServerEvents.recipes(e => {
             { amount: 1, tag: 'c:tungsten_ingots' },
             { amount: 1, tag: 'c:steel_ingots' }
         ],
-        [
-            { amount: 1, item: tr('hot_tungstensteel_ingot') }
-        ]
+        [ { amount: 1, item: tr('hot_tungstensteel_ingot') } ]
     );
 
     // -- SUPERCONDUCTOR -- //
@@ -126,12 +116,8 @@ ServerEvents.recipes(e => {
         st('superconductor_hot_ingot'),
         512,
         1200,
-        [
-            { amount: 1, tag: 'c:superconductor_dusts' }
-        ],
-        [
-            { amount: 1, item: mi('superconductor_hot_ingot') }
-        ]
+        [ { amount: 1, tag: 'c:superconductor_dusts' } ],
+        [ { amount: 1, item: mi('superconductor_hot_ingot') } ]
     );
 
     // -- FLUORINE -- //

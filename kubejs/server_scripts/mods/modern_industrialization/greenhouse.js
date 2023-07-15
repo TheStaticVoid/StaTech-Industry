@@ -1,4 +1,10 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/greenhouse/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
@@ -13,6 +19,7 @@ ServerEvents.recipes(e => {
     let sp = (id) => `spectrum:${id}`;
     let tf = (id) => `twilightforest:${id}`;
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let greenhouse = (id, eu, duration, item_inputs, fluid_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('greenhouse'),
@@ -30,7 +37,7 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe);
     }
-
+    // This is all the saplings in the game with their corresponding logs and leaves
     const saplingLogList = [    
         // Sapling                              Log                             Leaves                                  Fluid
         [ mc('oak_sapling'),                    mc('oak_log'),                  mc('oak_leaves'),                       mc('water') ],
@@ -137,6 +144,7 @@ ServerEvents.recipes(e => {
         [ tf('rainbow_oak_sapling'),            tf('twilight_oak_log'),         tf('rainbow_oak_leaves'),               mc('water') ]
     ];
 
+    // For every sapling, add a regular and bone meal variant of the recipe
     saplingLogList.forEach( woodType => {
         let sapling = woodType[0];
         let log = woodType[1];

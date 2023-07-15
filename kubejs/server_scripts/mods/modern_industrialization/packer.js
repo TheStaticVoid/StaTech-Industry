@@ -1,10 +1,16 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/packer/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let astra = (id) => `ad_astra:${id}`;
-    let st = (id) => `statech:modern_industrialization/packer/${id}`;
+    let ad = (id) => `ad_astra:${id}`;
 
+    // -- PACKER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
         mi('materials/packer/mixed_ingot_blastproof'),
         mi('compat/ae2/printed_calculation_processor'),
@@ -15,6 +21,7 @@ ServerEvents.recipes(e => {
     ];
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let packer = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('packer'),
@@ -36,12 +43,8 @@ ServerEvents.recipes(e => {
         st('chain'),
         2,
         100,
-        [
-            { amount: 3, item: mi('iron_ring') }
-        ],
-        [
-            { amount: 8, item: mc('chain') }
-        ]
+        [ { amount: 3, item: mi('iron_ring') } ],
+        [ { amount: 8, item: mc('chain') } ]
     );
 
     // -- MIXED BLASTPROOF INGOT -- //
@@ -52,10 +55,8 @@ ServerEvents.recipes(e => {
         [
             { amount: 1, item: mi('titanium_ingot') },
             { amount: 1, item: mi('tungsten_ingot') },
-            { amount: 1, item: astra('ostrum_ingot') }
+            { amount: 1, item: ad('ostrum_ingot') }
         ],
-        [
-            { amount: 1, item: mi('mixed_ingot_blastproof') }
-        ]
+        [ { amount: 1, item: mi('mixed_ingot_blastproof') } ]
     );
 })

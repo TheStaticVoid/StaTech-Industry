@@ -1,11 +1,17 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:tech_reborn/${id}`;
     let tr = (id) => `techreborn:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let ae = (id) => `ae2:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let st = (id) => `statech:tech_reborn/${id}`;
 
+    // -- TECHREBORN REMOVED RECIPES -- //
     const DELETED_RECIPES = [
         tr('smelting/refined_iron_ingot_from_iron_ingot'),
         tr('blasting/refined_iron_ingot_from_iron_ingot'),
@@ -831,6 +837,7 @@ ServerEvents.recipes(e => {
 });
 
 ServerEvents.tags('item', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let tr = (id) => `techreborn:${id}`;
 
     const ORES = [

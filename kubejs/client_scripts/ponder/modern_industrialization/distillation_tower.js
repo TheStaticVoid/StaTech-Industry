@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:distillation_tower').scene('distillation_tower', 'The Distillation Tower', 'kubejs:distillation_tower', (scene, util) => {
         scene.setSceneOffsetY(-3.0);

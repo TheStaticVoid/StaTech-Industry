@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
 
     let replaceBlocks = (scene, block, x1, y1, z1, x2, y2, z2) => {

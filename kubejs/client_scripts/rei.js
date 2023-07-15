@@ -1,8 +1,13 @@
-REIEvents.hide('item', e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
-    let astra = (id) => `ad_astra:${id}`;
-    let ae2 = (id) => `ae2:${id}`;
-    let kibe = (id) => `kibe:${id}`;
+REIEvents.hide('item', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let ad = (id) => `ad_astra:${id}`;
+    let ae = (id) => `ae2:${id}`;
+    let kb = (id) => `kibe:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let tf = (id) => `twilightforest:${id}`;
     let cr = (id) => `create:${id}`;
@@ -11,26 +16,27 @@ REIEvents.hide('item', e => {
     let md = (id) => `moderndynamics:${id}`;
     let gc = (id) => `geocluster:${id}`;
     let vh = (id) => `vanilla-hammers:${id}`;
-
+    let db = (id) => `decorative_blocks:${id}`;
+    let kj = (id) => `kubejs:${id}`;
 
     const REI_DELETED_ITEMS = [
-        astra('coal_generator'),
-        astra('steel_cable'),
-        astra('desh_cable'),
-        astra('desh_fluid_pipe'),
-        astra('ostrum_fluid_pipe'),
-        astra('hammer'),
-        astra('compressor'),
-        astra('oil_bucket'),
-        astra('oil'),
-        astra('water_pump'),
-        astra('astrodux'),
-        astra('cable_duct'),
-        astra('fluid_pipe_duct'),
-        ae2('vibration_chamber'),
-        ae2('ender_dust'),
-        ae2('sky_stone_tank'),
-        ae2('inscriber'),
+        ad('coal_generator'),
+        ad('steel_cable'),
+        ad('desh_cable'),
+        ad('desh_fluid_pipe'),
+        ad('ostrum_fluid_pipe'),
+        ad('hammer'),
+        ad('compressor'),
+        ad('oil_bucket'),
+        ad('oil'),
+        ad('water_pump'),
+        ad('astrodux'),
+        ad('cable_duct'),
+        ad('fluid_pipe_duct'),
+        ae('vibration_chamber'),
+        ae('ender_dust'),
+        ae('sky_stone_tank'),
+        ae('inscriber'),
         cr('crushed_platinum_ore'),
         ca('rolling_mill'),
         ca('creative_energy'),
@@ -56,7 +62,7 @@ REIEvents.hide('item', e => {
         ca('capacitor'),
         ca('diamond_grit'),
         ca('redstone_relay'),
-        'decorative_blocks:blockstate_copy_item',
+        db('blockstate_copy_item'),
         gc('raw_aluminium'),
         gc('aluminium_ingot'),
         gc('aluminium_nugget'),
@@ -76,15 +82,14 @@ REIEvents.hide('item', e => {
         gc('purpur_remnants_ore_sample'),
         gc('nebulite_ore_sample'),
         gc('shadow_quartz_ore_sample'),
-        kibe('tank'),
-        kibe('xp_shower'),
-        kibe('xp_drain'),
-        kibe('angel_ring'),
-        'kubejs:statech_logo',
-        'kubejs:voice_chat',
+        kb('tank'),
+        kb('xp_shower'),
+        kb('xp_drain'),
+        kb('angel_ring'),
+        kj('statech_logo'),
+        kj('voice_chat'),
         md('wrench'),
         mi('guidebook'),
-        'spirit:soul_pedestal',
         tf('uncrafting_table'),
         tr('nichrome_heating_coil'),
         tr('lithium'),
@@ -182,11 +187,16 @@ REIEvents.hide('item', e => {
 });
 
 REIEvents.removeCategories(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let tr = (id) => `techreborn:${id}`;
     let tf = (id) => `twilightforest:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    let ad = (id) => `ad_astra:${id}`;
+    let cr = (id) => `create:${id}`;
+
     const REMOVED_CAT = [
-        'minecraft:plugins/tag',
-        'ad_astra:compressor',
+        mc('plugins/tag'),
+        ad('compressor'),
         tf('uncrafting'),
         tr('alloy_smelter'),
         tr('assembling_machine'),
@@ -211,7 +221,7 @@ REIEvents.removeCategories(e => {
         tr('plasma_generator'),
         tr('diesel_generator'),
         tr('semi_fluid_generator'),
-        'create:charging'
+        cr('charging')
     ];
     REMOVED_CAT.forEach(id => e.yeet(id));
 });

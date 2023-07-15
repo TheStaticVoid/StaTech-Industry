@@ -1,52 +1,58 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let sp = (id) => `spectrum:${id}`;
-    let kjs = (id) => `kubejs:${id}`;
+    let kj = (id) => `kubejs:${id}`;
 
-    e.smelting(kjs('clear_ingot'), 'minecraft:glass', 0.2).id(st('clear_ingot_from_glass'));
+    e.smelting(kj('clear_ingot'), mc('glass'), 0.2).id(st('clear_ingot_from_glass'));
     
     // -- CLEAR HELMET -- //
-    e.shaped(kjs('clear_helmet'), [
+    e.shaped(kj('clear_helmet'), [
         'III',
         'I I'
     ],
     {
-        I: kjs('clear_ingot')
+        I: kj('clear_ingot')
     })
     .id(st('clear_helmet'));
 
     // -- CLEAR CHESTPLATE -- //
-    e.shaped(kjs('clear_chestplate'), [
+    e.shaped(kj('clear_chestplate'), [
         'I I',
         'III',
         'III'
     ],
     {
-        I: kjs('clear_ingot')
+        I: kj('clear_ingot')
     })
     .id(st('clear_chestplate'));
 
     // -- CLEAR LEGGINGS -- //
-    e.shaped(kjs('clear_leggings'), [
+    e.shaped(kj('clear_leggings'), [
         'III',
         'I I',
         'I I'
     ],
     {
-        I: kjs('clear_ingot')
+        I: kj('clear_ingot')
     })
     .id(st('clear_leggings'));
 
     // -- CLEAR BOOTS -- //
-    e.shaped(kjs('clear_boots'), [
+    e.shaped(kj('clear_boots'), [
         'I I',
         'I I'
     ],
     {
-        I: kjs('clear_ingot')
+        I: kj('clear_ingot')
     })
     .id(st('clear_boots'));
 
@@ -54,10 +60,10 @@ ServerEvents.recipes(e => {
     // -- STATECH COINS -- //
     // ------------------- //
 
-    let common = kjs('coin_common');
-    let rare = kjs('coin_rare');
-    let legendary = kjs('coin_legendary');
-    let mythic = kjs('coin_mythic');
+    let common = kj('coin_common');
+    let rare = kj('coin_rare');
+    let legendary = kj('coin_legendary');
+    let mythic = kj('coin_mythic');
 
     e.shapeless(rare, [ '9x ' + common ]).id(st('coin_rare_upgrade'));
     e.shapeless(legendary, [ '9x ' + rare ]).id(st('coin_legendary_upgrade'));
@@ -293,7 +299,7 @@ ServerEvents.recipes(e => {
     //     MYTHIC     //
     // -------------- //
 
-    e.shaped(Item.of('minecraft:enchanted_book').enchant('minecraft:mending', 1), [
+    e.shaped(Item.of(mc('enchanted_book')).enchant(mc('mending'), 1), [
         ' C ',
         'C C',
         ' C '
@@ -302,7 +308,7 @@ ServerEvents.recipes(e => {
         C: mythic
     }).id(st('mending_from_mythic'));
 
-    e.shaped(Item.of('minecraft:enchanted_book').enchant('yigd:soulbound', 1), [
+    e.shaped(Item.of(mc('enchanted_book')).enchant('yigd:soulbound', 1), [
         'C C',
         '   ',
         'C C'
@@ -311,7 +317,7 @@ ServerEvents.recipes(e => {
         C: mythic
     }).id(st('soulbound_from_mythic'));
 
-    e.shaped(Item.of('minecraft:enchanted_book').enchant('ad_astra_giselle_addon:space_breathing', 1), [
+    e.shaped(Item.of(mc('enchanted_book')).enchant('ad_astra_giselle_addon:space_breathing', 1), [
         'C C',
         ' C ',
         'C C'
@@ -322,27 +328,28 @@ ServerEvents.recipes(e => {
 });
 
 ServerEvents.tags('item', e => {
-    let kjs = (id) => `kubejs:${id}`;
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let kj = (id) => `kubejs:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let as = (id) => `ad_astra:${id}`;
     let sp = (id) => `spellbladenext:${id}`;
 
     const COINS = [
-        kjs('coin_common'),
-        kjs('coin_rare'),
-        kjs('coin_legendary'),
-        kjs('coin_mythic')
+        kj('coin_common'),
+        kj('coin_rare'),
+        kj('coin_legendary'),
+        kj('coin_mythic')
     ];
-    COINS.forEach(id => e.add(kjs('statech_coins'), id));
+    COINS.forEach(id => e.add(kj('statech_coins'), id));
 
     const CLEAR_ARMOR = [
-        kjs('clear_helmet'),
-        kjs('clear_chestplate'),
-        kjs('clear_leggings'),
-        kjs('clear_boots')
+        kj('clear_helmet'),
+        kj('clear_chestplate'),
+        kj('clear_leggings'),
+        kj('clear_boots')
     ];
-    CLEAR_ARMOR.forEach(id => e.add(kjs('clear_armor'), id));
+    CLEAR_ARMOR.forEach(id => e.add(kj('clear_armor'), id));
 
     const COMMON_INGOT_TAG = [
         as('desh_ingot'),
