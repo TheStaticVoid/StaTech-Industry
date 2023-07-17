@@ -2037,8 +2037,8 @@
 				item: "modern_industrialization:mv_steam_turbine"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 9.0d
+			x: 4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6C3EAE1F16E1048A"]
@@ -2138,7 +2138,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 6.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["55809AA82CD22409"]
@@ -6120,7 +6120,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 7.5d
+			y: 9.5d
 		}
 		{
 			dependencies: ["473C1DE557D3E9C0"]
@@ -7994,6 +7994,136 @@
 			title: "Nano Suit"
 			x: 35.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["6C3EAE1F16E1048A"]
+			description: [
+				"The &aBasic Wireless Block Charger&r will take in power and &2distribute it wirelessly&r to any &dpower-accepting block&r in a &e5x5x5&r around it. "
+				""
+				"It's transfer rate is &650 EU/t&r. "
+			]
+			id: "7814F3E84AEBBD9F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "19322FEF3453DA1D"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "2B74BA9F14DF7F89"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "53FCA3D37A34508F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "72C2E21B544BA1DE"
+				item: "wirelesschargers:basic_wireless_block_charger"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6C3EAE1F16E1048A"]
+			description: [
+				"The &aBasic Wireless Player Charger&r will take in power and &2distribute it wirelessly&r to any &dpower-accepting item&r in a players inventory in a &e9x9x9&r area around it. "
+				""
+				"It's transfer rate is &650 EU/t&r. "
+			]
+			id: "285C8C533CBF4A21"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2F6D7A0BFC9A88C3"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "284C2F04165C296A"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "34D2DDB22E1A7D44"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6E7CE81231F2F6C4"
+				item: "wirelesschargers:basic_wireless_player_charger"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["78E5C68ED157A31B"]
+			description: ["The &aAdvanced Wireless Block Charger&r is an upgrade to the basic one that increases its transfer rate to &6200 EU/t&r and the range to &e7x7x7&r around it."]
+			id: "46CAD11B98DF4E03"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "366066410F27AEF9"
+					table_id: 2875761064117204871L
+					type: "random"
+				}
+				{
+					id: "654614D6328AA15A"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "3C3F632039D6B29E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "79EC513594AA35DB"
+				item: "wirelesschargers:advanced_wireless_block_charger"
+				type: "item"
+			}]
+			x: 30.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0A8EBA97C825EF06"]
+			description: ["The &aAdvanced Wireless Player Charger&r is an upgrade to the basic one that increases its transfer rate to &6200 EU/t&r and the range to &e13x13x13&r around it."]
+			id: "6286FBAFF193A720"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6203515BEB399770"
+					table_id: 2875761064117204871L
+					type: "random"
+				}
+				{
+					id: "3CA23BCFB06B5226"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "41AE52AC13AAA1DE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "0F98D51C4D51EC17"
+				item: "wirelesschargers:advanced_wireless_player_charger"
+				type: "item"
+			}]
+			x: 24.5d
+			y: 6.0d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]
