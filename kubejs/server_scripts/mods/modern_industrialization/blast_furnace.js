@@ -51,7 +51,7 @@ ServerEvents.recipes(e => {
     // -- MOLTEN ENDERIUM -- //
     blastFurnace(
         st('molten_enderium'),
-        64,
+        48,
         400,
         [ { amount: 1, item: mi('steel_dust') } ],
         null,
@@ -62,7 +62,7 @@ ServerEvents.recipes(e => {
     // -- ENDERIUM HOT INGOT -- // 
     blastFurnace(
         st('enderium_hot_ingot'),
-        128,
+        64,
         400,
         [ { amount: 1, item: mi('stainless_steel_dust') } ],
         [ { amount: 1, item: mi('enderium_hot_ingot') } ],

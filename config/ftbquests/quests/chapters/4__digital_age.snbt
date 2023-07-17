@@ -338,6 +338,8 @@
 				"The &bRocket Part Assembler&r is a new singleblock machine you can create that will allow you to &2create rocket parts&r (shocker, I know)."
 				""
 				"Along with the other important &eAd Astra&r machines you will need to make &3before your main launch&r, this one will be the most important, as it's where you &emake all the parts to your rocket&r!"
+				""
+				"Note that all the recipes in this require &2Molten Enderium&r. The &bRocket Part Assembler&r binds the unique properties to the components for your rocket."
 			]
 			id: "7839B0187F555DC9"
 			rewards: [
@@ -652,9 +654,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["41EE82F6FDB2109C"]
+			dependencies: [
+				"41EE82F6FDB2109C"
+				"098B06EA3D9CDED3"
+			]
 			description: [
-				"It's time to put all the preparation to good use. Using a copious amounts of Steel, create the &bTier 1 Rocket&r."
+				"It's time to put all the preparation to good use. Using a copious amounts of &aEnderium&r, create the &bTier 1 Rocket&r."
 				""
 				"To put fuel in the rocket, shift-right to open its inventory. You can put buckets of fuel into the rocket. You'll need &a12000 mB of Fuel&r to fully fuel the rocket for launch. Unfortunately you'll have to load them with buckets, as &eMI Tanks don't seem to work&r, but placing an &eMI Tank&r and filling up several buckets and unloading them into the rocket will make quick work of this task. (Or you can make the &aFuel Loader&r from the &eGiselle Addon&r)"
 				""
@@ -1210,7 +1215,7 @@
 				item: "ae2:wireless_crafting_terminal"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -5.0d
 			y: 9.0d
 		}
 		{
@@ -4768,7 +4773,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 9.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["67071C306C1C3A42"]
@@ -4798,7 +4803,7 @@
 				item: "ae2wtlib:wireless_pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -4.0d
 			y: 9.0d
 		}
 		{
@@ -4829,7 +4834,7 @@
 				item: "ae2wtlib:wireless_pattern_access_terminal"
 				type: "item"
 			}]
-			x: -3.5d
+			x: -3.0d
 			y: 9.0d
 		}
 		{
@@ -4864,8 +4869,8 @@
 				item: "ae2wtlib:wireless_universal_terminal"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 11.0d
+			x: -4.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["5FDDE9153DE118DF"]
@@ -4977,14 +4982,104 @@
 		}
 		{
 			dependencies: ["68CE43C175FB0826"]
+			description: [
+				"With update &e1.1.0&r, I've adjusted a lot of the &eAd Astra&r recipes to utilize a new material called &2Enderium&r. It's an enhanced metal made from a process using &bEnder Pearls&r. If you lack a lot of &bEnder Pearls&r, I recommend making some &dEnderman Models&r and throwing them into a &6Mob Crusher&r."
+				""
+				"&3Liquid Ender&r is the first step into making &2Enderium&r. It's a mixture of &9Water&r and &dEnder Pearl Dust&r."
+			]
 			id: "4C03534585C1A910"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A6C5D73C98511FC"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "59AC6783DA7A7239"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "50BE67D297D970D7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
 			tasks: [{
 				id: "6C93640C3DC7182F"
 				item: "modern_industrialization:liquid_ender_bucket"
 				type: "item"
 			}]
 			x: -2.5d
-			y: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4C03534585C1A910"]
+			description: ["&2Molten Enderium&r is produced by processing &bSteel Dust&r in an &eBlast Furnace&r alongside &3Liquid Ender&r. While this material is hot, it needs something extra to bind to before it can solidify into something useful. For this purpose your next step will be combining this &2Molten Enderium&r with &aStainless Steel Dust&r to make a &6Hot Enderium Ingot&r."]
+			id: "451E9E2FA9DA33F7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2264555AAF6FA1C4"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "3E4C89E0F88CCB91"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "15B7B3F33F44720C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "3013B219FF56CB3D"
+				item: "modern_industrialization:molten_enderium_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["451E9E2FA9DA33F7"]
+			description: ["Finally, you have arrived at the &2Enderium Ingot&r. This metal is infused with the latent powers of &dEndermen&r and can be harnessed to aid in your journey into the stars. "]
+			id: "098B06EA3D9CDED3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6C43BD4979A8A9C5"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "473829FAE353AFAC"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "42DB49725D4F9C31"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			subtitle: "Somewhat Magic Ingot"
+			tasks: [{
+				id: "207DB4BEAC5F00CE"
+				item: "modern_industrialization:enderium_ingot"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["High tech!"]

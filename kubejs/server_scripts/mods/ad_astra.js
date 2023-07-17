@@ -59,7 +59,8 @@ ServerEvents.recipes(e => {
         ad('recipes/calorite_tank'),
         ad('recipes/calorite_engine'),
         ad('recipes/solar_panel'),
-        ad('recipes/launch_pad')
+        ad('recipes/launch_pad'),
+        ad('recipes/nasa_workbench/tier_1_rocket')
     ];
     AD_ASTRA_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove({ type: ad('fuel_conversion') });
@@ -81,6 +82,29 @@ ServerEvents.recipes(e => {
         output: ad('fuel'),
         conversion_ratio: 0.5
     });
+
+    // -- TIER 1 ROCKET -- //
+    e.custom({
+        type: 'ad_astra:nasa_workbench',
+        ingredients: [
+            { ingredient: { item: 'ad_astra:rocket_nose_cone' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { item: ad('rocket_fin') } },
+            { ingredient: { item: ad('steel_tank') } },
+            { ingredient: { item: ad('steel_tank') } },
+            { ingredient: { item: ad('rocket_fin') } },
+            { ingredient: { item: ad('rocket_fin') } },
+            { ingredient: { item: ad('steel_engine') } },
+            { ingredient: { item: ad('rocket_fin') } }
+        ],
+        output: ad('tier_1_rocket')
+    })
+    .id(st('tier_1_rocket'));
 
     // -- FUEL REFINERY -- //
     e.shaped(ad('fuel_refinery'), [

@@ -38,7 +38,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('advanced_motor') }
         ],
         [ { amount: 1, item: ad('engine_fan') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
     // -- ENGINE FRAME -- //
@@ -51,7 +51,7 @@ ServerEvents.recipes(e => {
             { amount: 2, item: mi('steel_large_plate') }
         ],
         [ { amount: 1, item: ad('engine_frame') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
     // -- ROCKET FIN -- //
@@ -64,7 +64,7 @@ ServerEvents.recipes(e => {
             { amount: 3, item: mi('steel_curved_plate') }
         ],
         [ { amount: 1, item: ad('rocket_fin') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
     // -- ROCKET NOSE CONE -- //
@@ -77,7 +77,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: 'techreborn:synthetic_redstone_crystal' }
         ],
         [ { amount: 1, item: ad('rocket_nose_cone') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
     // -- STEEL TANK -- //
@@ -91,7 +91,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('steel_tank') }
         ],
         [ { amount: 1, item: ad('steel_tank') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
     // -- DESH TANK -- //
@@ -106,7 +106,7 @@ ServerEvents.recipes(e => {
             { amount: 1, tag: 'c:glass_blocks' }
         ],
         [ { amount: 1, item: ad('desh_tank') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
     // -- OSTRUM TANK -- //
@@ -121,7 +121,7 @@ ServerEvents.recipes(e => {
             { amount: 1, tag: 'c:glass_blocks' }
         ],
         [ { amount: 1, item: ad('ostrum_tank') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
     // -- CALORITE TANK -- //
@@ -136,7 +136,7 @@ ServerEvents.recipes(e => {
             { amount: 1, tag: 'c:glass_blocks' }
         ],
         [ { amount: 1, item: ad('calorite_tank') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     )
 
     // -- STEEL ENGINE -- //
@@ -150,7 +150,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ad('engine_fan') }
         ],
         [ { amount: 1, item: ad('steel_engine') } ], 
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
     // -- DESH ENGINE -- //
@@ -164,7 +164,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ad('engine_fan') }
         ],
         [ { amount: 1, item: ad('desh_engine') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
     // -- OSTRUM ENGINE -- //
@@ -178,7 +178,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ad('engine_fan') }
         ],
         [ { amount: 1, item: ad('ostrum_engine') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
     // -- CALORITE ENGINE -- //
@@ -192,6 +192,6 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ad('engine_fan') }
         ],
         [ { amount: 1, item: ad('calorite_engine') } ],
-        [ { amount: 100, fluid: mi('soldering_alloy') } ]
+        [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 });
