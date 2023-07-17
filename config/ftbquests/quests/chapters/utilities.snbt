@@ -971,30 +971,6 @@
 			y: 2.5d
 		}
 		{
-			description: [
-				"This mod allows you to place blocks from your &dhotbar&r randomly."
-				""
-				"After you turn it on, every time you place a block, your hotbar will select a different (or possibly the same) slot randomly, so your next placement will be that different block."
-				""
-				"To start randomly placing, you can use a &dcommand&r. For example, you want to build a wall from cobblestone, stone, and bricks, and manually insert a lantern from time to time. Place a stack of those three blocks into each of three adjacent hotbar slots. Then tell the mod which slots you're using - the command for that is &e/rblock <slotno> <slotno>&r with slot numbers counting from 1 to 9. So if you're using the last 3 slots, the command is &e/rblock 7 9&r."
-			]
-			icon: "minecraft:mossy_cobblestone"
-			id: "4DD24A8447481ACF"
-			rewards: [{
-				id: "6DD3D1F4133CE8C3"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "28A1AD99166E0628"
-				title: "Click to Acknowledge"
-				type: "checkmark"
-			}]
-			title: "Block Placement Randomizer"
-			x: 9.0d
-			y: 1.0d
-		}
-		{
 			description: ["Placers are blocks that, when activated by a redstone signal, will place any block in its inventory in front of it, if possible."]
 			id: "1A915B3D1C8D5A46"
 			rewards: [
@@ -1218,6 +1194,22 @@
 			title: "Calculators"
 			x: 10.5d
 			y: 7.0d
+		}
+		{
+			description: ["This mod is a simple port of the &eQuark&r mods &aTrowel&r item. When right clicked it picks a &drandom block&r from your hotbar and places it down."]
+			id: "106CE98BB4795B96"
+			rewards: [{
+				id: "71A49C37316A80AF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "23660FB71B1C7476"
+				item: "trowel:trowel"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["Small, but important additions"]

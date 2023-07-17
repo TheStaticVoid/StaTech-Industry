@@ -1493,6 +1493,32 @@
 			x: 9.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["288AF08BF01DAADF"]
+			description: ["Need more &dstress units&r and don't care about speed? Rather than divulging a lot of resources into a &eWind Mill&r, you can instead create &aLarge Water Wheels&r. They will provide &d512 stress units&r, &cbut provide half the rotational speed&r of the smaller counterpart."]
+			id: "19E20AB1F69E2871"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "53E63F723DFE6C60"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
+					id: "7771D432A60036C1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Rise and Shine!"
+			tasks: [{
+				id: "52FFEC979307B9ED"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
 	]
 	subtitle: ["Gotta start somewhere"]
 	title: "&b1 - Getting Started"

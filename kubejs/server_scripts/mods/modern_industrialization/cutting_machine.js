@@ -30,12 +30,12 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe);
     }
 
-    // -- STRAW -- //
-    cuttingMachine(
-        st('straw'),
-        2,
-        100,
-        [ { amount: 1, item: mc('bamboo') } ],
-        [ { amount: 1, item: ca('straw') } ]
-    );
+    // // -- STRAW -- //
+    // cuttingMachine(
+    //     st('straw'),
+    //     2,
+    //     100,
+    //     [ { amount: 1, item: mc('bamboo') } ],
+    //     [ { amount: 1, item: ca('straw') } ]
+    // );
 });

@@ -5,6 +5,21 @@
 	group: "592A9A0E9A131D28"
 	icon: "modern_industrialization:electronic_circuit"
 	id: "76B50258D8A6EED7"
+	images: [{
+		click: "https://appliedenergistics.github.io/"
+		corner: false
+		dev: false
+		height: 1.0d
+		hover: [
+			"Applied Energistics 2 Wiki"
+			"&oIn case I missed anything"
+		]
+		image: "ae2:item/blank_pattern"
+		rotation: 0.0d
+		width: 1.0d
+		x: 16.0d
+		y: 13.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -6444,51 +6459,6 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["473C1DE557D3E9C0"]
-			description: [
-				"The &aAlternator&r and &3Electric Motor&r from &6Create: Crafts \\& Additions&r can be used to integrate &6Create&r into your &bpower network&r."
-				""
-				"The &aAlternator&r will consume &cstress units&r to generate power. The &dhigher RPM the more it will generate, up to 5 EU/t&r. While this might seem incredibly low, it doesn't take much to setup a decent network for power with &6Create&r."
-				""
-				"The &3Electric Motor&r is the inverse, and will allow you to power a &6Create&r &2rotational network&r with electricity produced elsewhere. The &3Electric Motor&r only costs 8 EU/t to run at 256 RPM, definitely worth the investment! The &bhigher the RPM&r you set it to, the &ehigher the total stress units available&r as well."
-			]
-			id: "48317EF53F769C1B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6E898A6CF377D7C2"
-					table_id: 238949117979752405L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "48603675987B2FDD"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "388EB27DB58446C1"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [
-				{
-					id: "690BC65423A20F5F"
-					item: "createaddition:alternator"
-					type: "item"
-				}
-				{
-					id: "336D2AC191DC8553"
-					item: "createaddition:electric_motor"
-					type: "item"
-				}
-			]
-			title: "Alternator \\& Motor"
-			x: 4.5d
-			y: -2.5d
-		}
-		{
 			dependencies: ["6E7B9D7C331203C4"]
 			description: ["This is the &eModern Dynamics&r version of the &aMV-tier Cables&r."]
 			id: "7A082EC55D240856"
@@ -7736,7 +7706,35 @@
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"The &aME Storage Bus&r, when attached to another inventory block in the world lets you access that inventory via networked functions. This allows you to use &bchests, barrels, or other types of item storage&r in your &dnetworks&r. "
+				""
+				"The storage via the &aME Storage Bus&r is &3bi-directional&r, it can both insert, or extract items from the inventory block it is attached to as long as the &aME Storage Bus&r has its required &6channel&r. "
+				""
+				"The UI allows you to control which items are selected as storable items, this selection has no effect on what items can be extracted once they are in the storage."
+				""
+				"If you place an &aME Storage Bus&r on an &eME Interface&r, the &aStorage Bus&r will be able to interact with the full contents of the target &dnetwork&r, &cunless&r that &eInterface&r is configured to store items inside itself, in which case it will see &2those stored items&r."
+			]
 			id: "180F13D0E8D7225F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0C899FD1EF3C2A62"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "36F416FADAC2E6CB"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "5E8B77F82E22956C"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "2A66C22C1102689F"
 				item: "ae2:storage_bus"
@@ -7747,7 +7745,31 @@
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"The &aME Import Bus&r pulls items from the inventory it is pointed at and places them into the &dME Network&r's storage. You can specify which items it will pull out via the UI, otherwise it tries to pull out any item in the adjacent inventory. "
+				""
+				"Requires a &dchannel&r to function"
+			]
 			id: "5E70BF0F1F785320"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3BA7DEA5F450F19F"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "7BD9B53C49968270"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "06227812E141F2B6"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "07B3F1405845C5A4"
 				item: "ae2:import_bus"
@@ -7758,7 +7780,31 @@
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"The ME Export Bus extracts items from the ME Network's storage and places them into the inventory it faces. You must configure which items it will insert, as leaving the configuration blank will result in nothing."
+				""
+				"Requires a &dchannel&r to function."
+			]
 			id: "6BA8EB5A6C53FE75"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6BBD13390DFA28AF"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "2A125ACBE9B9D603"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2396B4F8A374727E"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "2EF7A1DE52F1EAD9"
 				item: "ae2:export_bus"
@@ -7769,7 +7815,33 @@
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"The &aME Interface&r is the only component which can be used as a part, or as a block. Crafting an &aME Interface&r in either form by itself produces the other form. The thin form is useful if you want to provide &2several different interfaces&r in a &esingle block&r of physical space, but each will need its own &dchannel&r. The block form lets multiple other blocks connect to a single &aME interface&r, using only one &dchannel&r for the interface."
+				""
+				"The &aME Interface&r acts as an in between when working with pipes, tubes, networks, or machines from other mods."
+				""
+				"You can configure certain items to be exported from the &6ME Network&r into the &aME Interface&r for use with other mods. Or use other mods to insert into any &aME Interface&r. as long as it isn't full of exported materials it will add any added items into the &6ME Network&r."
+			]
 			id: "2494B483CAD7FED1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2A6A87F958DCD74D"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "51BFC10C10DC41CB"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "4A6BEAC766E2697A"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "60B537DBBE590299"
 				item: "ae2:interface"

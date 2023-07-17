@@ -34,7 +34,8 @@ ServerEvents.recipes(e => {
         kb('xp_shower'),
         kb('xp_drain'),
         kb('angel_ring'),
-        kb('big_torch')
+        kb('big_torch'),
+        kb('measuring_tape')
     ];
     KIBE_DELETED_ITEMS.forEach( id => e.remove( {id: id} ));
 
@@ -42,6 +43,19 @@ ServerEvents.recipes(e => {
     e.replaceOutput( {id: kb('slime_boots')}, 
                     kb('slime_boots'),
                     Item.of(kb('slime_boots'), '{Unbreakable: 1b}'));
+
+    // -- MEASURING TAPE -- //
+    e.shaped(kb('measuring_tape'), [
+        ' L ',
+        'LIL',
+        ' LY'
+    ],
+    {
+        L: mc('lapis_lazuli'),
+        Y: '#c:dye_yellow',
+        I: '#c:iron_plates'
+    })
+    .id(st('measuring_tape'));
 
     // -- GLIDER LEFT WING -- //
     e.shaped(kb('glider_left_wing'), [

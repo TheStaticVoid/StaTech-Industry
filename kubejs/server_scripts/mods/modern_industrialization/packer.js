@@ -9,6 +9,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let ad = (id) => `ad_astra:${id}`;
+    let tr = (id) => `techreborn:${id}`;
 
     // -- PACKER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
@@ -37,6 +38,19 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe);
     }
+
+    // -- IRIDIUM ALLOY INGOT -- //
+    packer(
+        st('iridium_alloy_ingot'),
+        24,
+        300,
+        [
+            { amount: 4, item: mi('iridium_plate') },
+            { amount: 1, item: mi('diamond_dust') },
+            { amount: 4, item: tr('advanced_alloy_plate') }
+        ],
+        [ { amount: 1, item: tr('iridium_alloy_ingot') } ]
+    );
 
     // -- CHAIN -- //
     packer(
