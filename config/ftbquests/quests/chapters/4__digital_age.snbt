@@ -4531,7 +4531,7 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:space_breathing"
-							lvl: 1s
+							lvl: 1
 						}]
 					}
 				}
@@ -4572,7 +4572,7 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:gravity_normalizing"
-							lvl: 1s
+							lvl: 1
 						}]
 					}
 				}
@@ -4613,7 +4613,7 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:acid_rain_proof"
-							lvl: 1s
+							lvl: 1
 						}]
 					}
 				}
@@ -4654,7 +4654,7 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:space_fire_proof"
-							lvl: 1s
+							lvl: 1
 						}]
 					}
 				}
@@ -4974,6 +4974,17 @@
 			]
 			x: 2.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["68CE43C175FB0826"]
+			id: "4C03534585C1A910"
+			tasks: [{
+				id: "6C93640C3DC7182F"
+				item: "modern_industrialization:liquid_ender_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
 		}
 	]
 	subtitle: ["High tech!"]

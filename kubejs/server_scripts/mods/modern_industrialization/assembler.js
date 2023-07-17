@@ -54,7 +54,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('diode') }
         ],
         [ { amount: 1, item: mi('op_amp') } ],
-        [ { amount: 25, fluid: mi('polytetrafluoroethylene') } ]
+        [ { amount: 50, fluid: mi('polytetrafluoroethylene') } ]
     );
 
     // -- BASIC CARD -- //
