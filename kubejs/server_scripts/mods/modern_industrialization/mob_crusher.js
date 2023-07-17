@@ -177,6 +177,7 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: mc('magma_cream') },
                 { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
             ],
+            mc('lava')
         ],
         
         // Blaze model

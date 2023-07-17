@@ -828,11 +828,7 @@
 		}
 		{
 			dependencies: ["6012D781643367DA"]
-			description: [
-				"Finally with your &7Refined Iron&r, you can upgrade your &dFrayed Backpack&r to become a &ePlated Backpack&r. This backpack can hold &d36 stacks&r of items and can be equipped on your back trinket slot."
-				""
-				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
-			]
+			description: ["Finally with your &7Refined Iron&r, you can upgrade your &dFrayed Backpack&r to become a &ePlated Backpack&r. This backpack can hold &d36 stacks&r of items and can be equipped on your back trinket slot."]
 			id: "59141568014C03CB"
 			rewards: [
 				{
@@ -1284,8 +1280,6 @@
 				"The &6Gilded Backpack&r will allow you to carry &d54 item stacks&r."
 				""
 				"Note that it takes 4x &eElectrum&r and 4x &eGold Plates&r. The textures look very similar."
-				""
-				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
 			]
 			id: "7FD5999E03B4F989"
 			rewards: [
@@ -8337,6 +8331,75 @@
 			title: "PTFE"
 			x: 26.0d
 			y: 11.0d
+		}
+		{
+			dependencies: ["5D1DD7B1C1BB8BEC"]
+			description: [
+				"With &bAluminum&r, you can now create the second tier of &aDank&r. This tier has &d18 slots&r with a max stack size of &61024&r. "
+				""
+				"It costs a lot of &bAluminum&r, might be better to upgrade once you have a decent surplus."
+			]
+			id: "7F682B5AF97774DA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3DBBF91802004FEF"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "6B0E940674BDAEC2"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "7FEE5AD593BCBF88"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "458559BE5B29757E"
+				item: "dankstorage:dank_2"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6375B17635AAC09D"]
+			description: [
+				"With &bStainless Steel&r, you can now create the third tier of &aDank&r. This tier has &d27 slots&r with a max stack size of &64096&r. "
+				""
+				"It costs a lot of &bStainless Steel&r, might be better to upgrade once you have a decent surplus."
+			]
+			id: "40CDA239B922E883"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0B7CA9633999E55C"
+					table_id: 2875761064117204871L
+					type: "random"
+				}
+				{
+					id: "263CE509122A2A39"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "67B3EA8CD3AB7D6A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "636558B6C1DD8093"
+				item: "dankstorage:dank_3"
+				type: "item"
+			}]
+			x: 30.0d
+			y: 7.5d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]

@@ -85,9 +85,9 @@ ServerEvents.recipes(e => {
 
     // -- TIER 1 ROCKET -- //
     e.custom({
-        type: 'ad_astra:nasa_workbench',
+        type: ad('nasa_workbench'),
         ingredients: [
-            { ingredient: { item: 'ad_astra:rocket_nose_cone' } },
+            { ingredient: { item: ad('rocket_nose_cone') } },
             { ingredient: { tag: 'c:enderium_blocks' } },
             { ingredient: { tag: 'c:enderium_blocks' } },
             { ingredient: { tag: 'c:enderium_blocks' } },

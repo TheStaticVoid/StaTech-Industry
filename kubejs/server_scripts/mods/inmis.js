@@ -17,7 +17,18 @@ ServerEvents.recipes(e => {
         im('endless_backpack'),
         im('blazing_backpack')
     ];
-    INMIS_DELETED_RECIPES.forEach(id => e.remove({id: id}));
+    INMIS_DELETED_RECIPES.forEach(id => e.remove({ id: id }));
+
+    // -- UTILITY FUNCTION FOR MODIFYING RESULTS IN RECIPE BUILDER -- // 
+    let keepNBT = (name, inventory, itemstack) => {
+        let backpack = inventory.find(Item.of(name));
+
+        if (backpack.nbt == null)
+            return itemstack;
+        
+        let nbt = backpack.nbt;
+        return itemstack.withNBT(nbt);
+    }
 
     // -- PLATED BACKPACK -- //
     e.shaped(im('plated_backpack'), [
@@ -30,6 +41,7 @@ ServerEvents.recipes(e => {
         R: '#c:refined_iron_plates',
         B: im('frayed_backpack')
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('frayed_backpack'), inventory, itemstack) })
     .id(st('plated_backpack'));
 
     // -- GILDED BACKPACK -- //
@@ -43,6 +55,7 @@ ServerEvents.recipes(e => {
         G: '#c:gold_plates',
         B: im('plated_backpack')
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('plated_backpack'), inventory, itemstack) })
     .id(st('gilded_backpack'));
 
     // -- BEJEWELED BACKPACK -- //
@@ -56,6 +69,7 @@ ServerEvents.recipes(e => {
         E: '#c:emerald_plates',
         B: im('gilded_backpack')
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('gilded_backpack'), inventory, itemstack) })
     .id(st('bejeweled_backpack'));
 
     // -- BLAZING BACKPACK -- //
@@ -69,6 +83,7 @@ ServerEvents.recipes(e => {
         O: '#c:ostrum_plates',
         B: im('bejeweled_backpack')
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('bejeweled_backpack'), inventory, itemstack) })
     .id(st('blazing_backpack'));
 
     // -- WITHERED BACKPACK -- // 
@@ -82,6 +97,7 @@ ServerEvents.recipes(e => {
         N: 'minecraft:nether_star',
         B: im('blazing_backpack')
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('blazing_backpack'), inventory, itemstack) })
     .id(st('withered_backpack'));
 
     // -- ENDLESS BACKPACK -- //
@@ -96,5 +112,6 @@ ServerEvents.recipes(e => {
         B: im('withered_backpack'),
         E: '#c:endstone_dusts'
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('withered_backpack'), inventory, itemstack) })
     .id(st('endless_backpack'));
 });

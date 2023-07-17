@@ -1167,7 +1167,7 @@
 				type: "item"
 			}]
 			title: "Steel Upgrades"
-			x: 16.0d
+			x: 16.5d
 			y: 16.5d
 		}
 		{
@@ -1303,7 +1303,7 @@
 				}
 			]
 			title: "Packer Templates"
-			x: 18.0d
+			x: 18.5d
 			y: 16.5d
 		}
 		{
@@ -2397,7 +2397,7 @@
 				item: "modern_industrialization:steel_barrel"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 15.5d
 			y: 16.5d
 		}
 		{
@@ -2506,7 +2506,7 @@
 					type: "item"
 				}
 			]
-			x: 17.0d
+			x: 17.5d
 			y: 16.5d
 		}
 		{
@@ -2693,7 +2693,7 @@
 				}
 			]
 			title: "Travel Anchors"
-			x: 14.0d
+			x: 14.5d
 			y: 16.5d
 		}
 		{
@@ -2812,7 +2812,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 15.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
@@ -3357,7 +3357,7 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
+			x: 13.5d
 			y: 16.5d
 		}
 		{
@@ -4239,6 +4239,43 @@
 			title: "More Efficient Rubber"
 			x: 10.5d
 			y: 12.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			description: [
+				"This tiny little thing is the &efirst tier&r of &aDanks&r you have access to. What is a &aDank&r you might ask? Think of it as an &2extremely powerful backpack&r. "
+				""
+				"This &aTier 1 Dank&r has &d9 slots&r and each can hold a stacksize of &6256 items&r."
+				""
+				"In addition to it's storage, it has options to &9automatically pickup blocks&r, &3pickup from a filter&r, or &dvoid blocks&r. Think of all that Cobblestone you no longer have to sort through in your inventory!"
+			]
+			id: "7D90B29796571A7E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "22BB2EF0D1603BB0"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					id: "596E219B06C2290A"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "3D1432F429B31877"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Dank Storage!"
+			tasks: [{
+				id: "2ACF0FB7B8B07798"
+				item: "dankstorage:dank_1"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 15.5d
 		}
 	]
 	subtitle: ["The Basis of Industry"]
