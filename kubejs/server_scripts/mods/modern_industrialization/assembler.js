@@ -17,7 +17,8 @@ ServerEvents.recipes(e => {
         mi('electric_age/component/assembler/qbit'),
         mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball'),
         mi('assembler_generated/steam_age/bronze/furnace'),
-        mi('assembler_generated/steam_age/bronze/boiler')
+        mi('assembler_generated/steam_age/bronze/boiler'),
+        mi('assembler_generated/electric_age/component/craft/op_amp')
     ];
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
@@ -41,6 +42,20 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe);
     }
+
+    // -- OP AMP -- //
+    assembler(
+        st('op_amp'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('resistor') },
+            { amount: 4, item: mi('transistor') },
+            { amount: 1, item: mi('diode') }
+        ],
+        [ { amount: 1, item: mi('op_amp') } ],
+        [ { amount: 25, fluid: mi('polytetrafluoroethylene') } ]
+    );
 
     // -- BASIC CARD -- //
     assembler(

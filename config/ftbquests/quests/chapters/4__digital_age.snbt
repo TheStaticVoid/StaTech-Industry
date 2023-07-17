@@ -77,9 +77,9 @@
 				""
 				"Quite the accomplishment to make it this far, but we're not done yet. There's still much to do, the &bfactory must grow&r."
 				""
-				"There's a &afew paths&r you can start down. If you'd like, you can start building parts for your &cfirst rocket and get to the moon&r, you could look to setup better automations with &dAE2&r, or you could continue progressing in &eModern Industrializations&r."
+				"There's a &afew paths&r you can start down. If you'd like, you can start building parts for your &cfirst rocket and get to the moon&r, you could look to advance your &dAE2&r setup, or you could continue progressing in &eModern Industrializations&r."
 				""
-				"&oA sane person would pick AE2, but it's ultimately your choice&r."
+				"Progressing further into &dAE2&r is &cnot required&r for overall progression, but the other two paths are required."
 			]
 			id: "3F4A396DD273A543"
 			rewards: [
@@ -330,7 +330,7 @@
 			]
 			title: "The Distillation Tower"
 			x: 5.25d
-			y: -2.25d
+			y: -3.0d
 		}
 		{
 			dependencies: ["68CE43C175FB0826"]
@@ -397,7 +397,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "square"
 			tasks: [{
 				id: "531D8A591837029A"
 				title: "Click to Acknowledge"
@@ -969,6 +968,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["62103F0E617EBA7C"]
 			description: [
 				"The &bPattern Access Terminal&r gives remote access to all pattern slots for the &aPattern Providers&r on your network separated by which type of machine they are on. It will show the type of machine in the terminal, however you can name the &aME Pattern Provider&r in the &eInscriber&r or &eAnvil&r to alter the name displayed in the &bME Pattern Access Terminal&r."
 				""
@@ -1001,8 +1001,8 @@
 				item: "ae2:pattern_access_terminal"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 8.0d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["19EAC8C0A6889843"]
@@ -1012,8 +1012,6 @@
 				"A &dCrafting Pattern&r is your typical 3x3 or 2x2 grid crafting recipe. These patterns usually go inside of &bMolecular Assemblers&r."
 				""
 				"&eProcessing Patterns&r are a bit more complicated, usually these are patterns designed to be used to automate outputs from machines. &eProcessing Patterns&r allow you to encode recipes where an input goes into a machine and you get an expected output. Do not encode recipes that are for chance outputs, otherwise you will clog up your network and prevent crafting!"
-				""
-				"I've doubled the normal output for the &bBlank Pattern&r recipe due to the amount of things you probably intend to automate crafting for. You're welcome!"
 			]
 			id: "1B4704766DF1A934"
 			rewards: [
@@ -1038,16 +1036,16 @@
 			shape: "rsquare"
 			subtitle: "Get ready to autocraft!"
 			tasks: [{
-				count: 4L
 				id: "47CFF4CBF0901ACF"
 				item: "ae2:blank_pattern"
 				type: "item"
 			}]
 			title: "Patterns"
-			x: 8.5d
-			y: 9.0d
+			x: 5.5d
+			y: 5.5d
 		}
 		{
+			dependencies: ["62103F0E617EBA7C"]
 			description: [
 				"The &bMolecular Assembler&r is a powered machine which crafts items. It can be upgraded by inserting &dAcceleration Cards&r into it; once upgraded it is very fast."
 				""
@@ -1085,9 +1083,10 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 11.5d
+			y: 8.0d
 		}
 		{
+			dependencies: ["62103F0E617EBA7C"]
 			description: ["The &bME Pattern Provider&r is the home of your encoded recipes. These need to be put on the same network as your &dCrafting CPU&r itself. When the &dCrafting CPU&e needs to craft the primary result of that pattern, it'll delegate this to the &bPattern Provider&r. Normally the &bPattern Provider&r will then push out the ingredients to an adjancent block (a &aMolecular Assembler&r for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the &bPattern Provider&r, an &cME Interface&r, or any other means that would import the crafting result into the network. &aMolecular Assemblers&r are smart enough to automatically return the crafting result to the same &bPattern Provider&r that provided the ingredients, leaving you to focus on ensuring the &eProcessing Recipes&r outputs are put into the network when they're done."]
 			id: "2C1964927A0F7BE3"
 			rewards: [
@@ -1116,9 +1115,10 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 11.5d
+			y: 8.0d
 		}
 		{
+			dependencies: ["62103F0E617EBA7C"]
 			description: [
 				"&cNote&r: This quest requires a &21k Crafting Storage&r specifically. This is due to a limit with item tags for some reason, hopefully this will be fixed in the future!"
 				""
@@ -1168,14 +1168,14 @@
 					type: "item"
 				}
 				{
-					id: "3CB380ABF3396BE9"
+					id: "47B16A896162BAB3"
 					item: "ae2:1k_crafting_storage"
 					type: "item"
 				}
 			]
 			title: "Crafting CPU"
 			x: 2.0d
-			y: 12.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["67071C306C1C3A42"]
@@ -1210,10 +1210,11 @@
 				item: "ae2:wireless_crafting_terminal"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 7.0d
+			x: -5.5d
+			y: 9.0d
 		}
 		{
+			dependencies: ["2E7F7728159E3823"]
 			description: [
 				"The &bME Wireless Access Point&r allows wireless access via a Wireless Terminal. Range and power usage are determined based on the number of &aWireless Booster&r installed into the ME Wireless Access Point."
 				""
@@ -1247,8 +1248,8 @@
 				item: "ae2:wireless_access_point"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.5d
+			x: -4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["293DB25BD2827372"]
@@ -2092,6 +2093,7 @@
 			y: 2.75d
 		}
 		{
+			dependencies: ["62103F0E617EBA7C"]
 			description: [
 				"The &bPattern Encoding Terminal&r is a specialized version of the &aME Crafting Terminal&r designed to encode &cBlank Patterns&r into &dCrafting Patterns&r or &eProcessing Patterns&r."
 				""
@@ -2129,10 +2131,11 @@
 				item: "ae2:pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 9.0d
+			x: 4.0d
+			y: 5.5d
 		}
 		{
+			dependencies: ["2E7F7728159E3823"]
 			description: [
 				"&bQuantum Network Bridges&r can connect two networks over &ainfinite distances and even between dimensions&r.  They can carry &d64 channels&r in total (regardless of how cables are connected to each face)."
 				""
@@ -2175,10 +2178,11 @@
 				}
 			]
 			title: "Quantum Ring"
-			x: 2.0d
-			y: 13.5d
+			x: -4.0d
+			y: 5.0d
 		}
 		{
+			dependencies: ["2D9D7FFDA18C95B5"]
 			description: [
 				"Lowest tier storage cell, which can contain &d1024 bytes of storage&r."
 				""
@@ -2219,9 +2223,10 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 11.5d
+			y: 8.0d
 		}
 		{
+			dependencies: ["2D9D7FFDA18C95B5"]
 			description: ["&bFluid Cells&r are similar to the item storage counterparts, except they hold fluids (duh!). &bFluid storage cells&r can hold up to 5 distinct types of fluids; the volume of fluid they can store depend in part on how many types they are holding, and their storage capacity."]
 			id: "5270F349E0B5F580"
 			rewards: [
@@ -2254,7 +2259,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 11.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2BA27AB43B03F656"]
@@ -2298,7 +2303,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 12.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5270F349E0B5F580"]
@@ -2334,7 +2339,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 12.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0F6CB1AEE71CFB16"]
@@ -2378,7 +2383,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 13.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["267CC8AF07E94284"]
@@ -2414,7 +2419,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 13.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0338A0F80C416F09"]
@@ -2458,7 +2463,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 14.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["195CA8E85827FF47"]
@@ -2494,7 +2499,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 14.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0C4AEF63DE034490"]
@@ -2538,7 +2543,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 15.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["63339BE5D6244E37"]
@@ -2574,7 +2579,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 15.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["13ADC5EC083B64D0"]
@@ -2611,10 +2616,11 @@
 				item: "ae2:quantum_entangled_singularity"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 13.5d
+			x: -5.5d
+			y: 5.0d
 		}
 		{
+			dependencies: ["62103F0E617EBA7C"]
 			description: [
 				"The &bMatter Condenser&r has two key functions, elimination of excess materials in a cheap manor and the production of &eSingularity&r and &aMatter Ball&r."
 				""
@@ -2647,7 +2653,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 12.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["529FBE21C8B21DC1"]
@@ -4659,6 +4665,7 @@
 			y: 10.75d
 		}
 		{
+			dependencies: ["25B33302FC41B67A"]
 			description: [
 				"The &bME Drive&r is a block designed to store &aStorage Cells&r. The &bME Drive&r can hold 10 Storage Cells."
 				""
@@ -4694,21 +4701,67 @@
 				item: "ae2:drive"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 8.0d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
+			dependencies: ["5370C2CEF127113C"]
+			description: ["The &aQuantum Bridge Card&r is an upgrade card that can be placed inside your &eAE2&r &2Wireless Terminals&r to connect it to a &3Quantum Bridge&r on your &dnetwork&r. Place one &bEntangled Singularity&r in the center of the &3Quantum Bridge&r and one in your &2Wireless Terminal&r to connect them with this upgrade card."]
 			id: "56F8299D915D92E1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43BFE09572847A03"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "14EE22C63650EBB2"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "405A200B63F720E6"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "276A4A6768CFC09E"
 				item: "ae2wtlib:quantum_bridge_card"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 9.0d
+			x: -5.5d
+			y: 6.5d
 		}
 		{
+			dependencies: ["67071C306C1C3A42"]
+			description: [
+				"The &aMagnet Card&r is supposedly able to act as a magnet and you can choose whether items picked up go into your inventory or directly into your &dME network&r."
+				""
+				"I couldn't figure it out, but there are filters and such when you add the card to a &2Wireless Terminal&r."
+			]
 			id: "2ADD02A2BE293FEB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B81A2F859FB0248"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "6009D4C8CF0CA5F5"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "5725F8AAFC838D3E"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "56D19B170E79AB52"
 				item: "ae2wtlib:magnet_card"
@@ -4718,44 +4771,209 @@
 			y: 9.0d
 		}
 		{
+			dependencies: ["67071C306C1C3A42"]
+			description: ["The &aWireless Pattern Encoding Table&r acts like the normal &2Pattern Encoding Table&r but wireless!"]
 			id: "5CD8EFDFD4FF9750"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "32CD51CBDFC908BA"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "7E579C3DAE470A27"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "4D7146D16E4D3655"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "2A4381DE9C37E1A0"
 				item: "ae2wtlib:wireless_pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 10.0d
+			x: -4.5d
+			y: 9.0d
 		}
 		{
+			dependencies: ["67071C306C1C3A42"]
+			description: ["The &aWireless Pattern Access Terminal&r acts like the normal &2Pattern Access Terminal&r but wireless!"]
 			id: "00C7C377D0C93D1B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5BFF8CEF23F25EDD"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "555368D266973113"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "7918A740C6C42EC5"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "618DC4F912236D62"
 				item: "ae2wtlib:wireless_pattern_access_terminal"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 10.0d
+			x: -3.5d
+			y: 9.0d
 		}
 		{
+			dependencies: [
+				"00C7C377D0C93D1B"
+				"5CD8EFDFD4FF9750"
+				"34E68D6337DE1792"
+			]
+			description: ["The &aWireless Universal Terminal&r is the ultimate &eAE2&r terminal. By &3combining it with others&r you can &2add their functionality&r to it, effectively allowing you to have all the &dWireless Terminal&r variants in one."]
 			id: "6720EFFF5C827F8F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "70E687D771F85FF1"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "340FF7DA5DB2E058"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "3A419D868C8DDC4D"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "4ED8D26C7BCB27F5"
 				item: "ae2wtlib:wireless_universal_terminal"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 10.0d
+			x: -4.5d
+			y: 11.0d
 		}
 		{
-			id: "5E17C1D365428925"
-			tasks: [{
-				id: "4FC42FEFD59BEA85"
-				item: "ae2:condenser"
-				type: "item"
+			dependencies: ["5FDDE9153DE118DF"]
+			description: ["The following quests are in relation to accessing your &dAE2 network&r on the fly, whether that be in your base away from the &aterminal&r, or on a far off planet!"]
+			id: "2E7F7728159E3823"
+			rewards: [{
+				id: "0BB96E8EBF1CFA81"
+				type: "xp"
+				xp: 10
 			}]
-			x: 5.0d
-			y: 10.0d
+			tasks: [{
+				id: "2D7DA35088255141"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Wireless Access"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5FDDE9153DE118DF"]
+			description: [
+				"The following quests are in relation to &eAE2&r's &ddigital storage&r solutions."
+				""
+				"Up to now you've probably been maintaining a &2drawer network&r for the items you are passiving (hopefully) in bulk. I'd recommend &3continuing&r to utilize drawers and &6Storage Buses&r to their fullest extent, but with the &ddigital storage&r you can now store all your other junk in your network! Yay!"
+			]
+			id: "25B33302FC41B67A"
+			rewards: [{
+				id: "4AA9743C8B967C9F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "367F8C3925763AB8"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Digital Storage"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5FDDE9153DE118DF"]
+			description: [
+				"The following quests are in relation to &eAE2&r's autocrafting functionality."
+				""
+				"I'm going to put this here, and I hope you take the time to read it, but please, &cDO NOT&r rely on &3autocrafting&r for your progression. The &2circuit / hull recipes&r in &eMI&r are &l&6tiered&r, meaning you will be making &na lot&r of lower tier materials to supplement later game recipes. If you have this setup with &3autocrafting&r it means you could be waiting &cHOURS&r for your &dME System&r to finish a craft."
+				""
+				"It's not worth it to rely on AE2 for MI progression, set up &2passive crafting&r! That being said, setting up &3autocrafting&r for the machines you'll need to do said &2passive crafting&r will be very beneficial!"
+			]
+			id: "62103F0E617EBA7C"
+			rewards: [{
+				id: "03EB36E6AC2A8C23"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7F08D344CEBF5EEA"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Autocrafting"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["529FBE21C8B21DC1"]
+			id: "51DF18229F479C78"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5A0825DF303BAC1B"
+					table_id: 1098950661447874341L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "787CB0E8BF6B7548"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "35CCDFAB10F87537"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "304947D73CD59EBF"
+					item: "modern_industrialization:large_chemical_reactor"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "19EF2EC1F0CC6E3F"
+					item: "modern_industrialization:chemically_inert_ptfe_casing"
+					type: "item"
+				}
+				{
+					id: "4BE8970A60D6891A"
+					item: "modern_industrialization:polytetrafluoroethylene_machine_casing_pipe"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -3.0d
 		}
 	]
 	subtitle: ["High tech!"]

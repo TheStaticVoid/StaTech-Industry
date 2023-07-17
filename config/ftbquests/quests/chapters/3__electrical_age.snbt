@@ -4469,12 +4469,15 @@
 			}]
 			title: "Turbo Upgrades"
 			x: 33.0d
-			y: 10.5d
+			y: 9.0d
 		}
 		{
-			dependencies: ["6375B17635AAC09D"]
+			dependencies: [
+				"6375B17635AAC09D"
+				"6AA9B770612C5BB1"
+			]
 			description: [
-				"With your newly created &aStainless Steel&r and &bPolyethylene&r, you can now create &eDigital Circuit Boards&r, an important precursor to the &eDigital Circuit&r."
+				"With your newly created &aStainless Steel&r, &bPolyethylene&r, and &aPolytetrafluoroethylene&r you can now create &eDigital Circuit Boards&r, an important precursor to the &eDigital Circuit&r."
 				""
 				"There is a lot of microcrafting for each of the AND, NOT, and OR Gates. I would recommend making these in large batches or &dpassive crafting them&r."
 			]
@@ -4523,7 +4526,7 @@
 			]
 			title: "Digital Circuit Components"
 			x: 33.0d
-			y: 9.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -5040,8 +5043,8 @@
 				item: "modern_industrialization:stainless_steel_barrel"
 				type: "item"
 			}]
-			x: 30.5d
-			y: 10.5d
+			x: 29.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6375B17635AAC09D"]
@@ -5071,8 +5074,8 @@
 				item: "modern_industrialization:stainless_steel_tank"
 				type: "item"
 			}]
-			x: 31.5d
-			y: 10.5d
+			x: 30.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["78E5C68ED157A31B"]
@@ -5765,7 +5768,7 @@
 			}]
 			title: "MV Cables"
 			x: 10.5d
-			y: 12.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["4E194F2BBB21F033"]
@@ -5930,7 +5933,7 @@
 				item: "techreborn:industrial_storage_unit"
 				type: "item"
 			}]
-			x: 28.5d
+			x: 29.0d
 			y: 10.5d
 		}
 		{
@@ -5960,7 +5963,7 @@
 				item: "techreborn:advanced_unit_upgrader"
 				type: "item"
 			}]
-			x: 29.5d
+			x: 30.0d
 			y: 10.5d
 		}
 		{
@@ -6455,8 +6458,8 @@
 				item: "techreborn:industrial_solar_panel"
 				type: "item"
 			}]
-			x: 30.0d
-			y: 11.5d
+			x: 31.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6E7B9D7C331203C4"]
@@ -6487,7 +6490,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 13.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6057F77940F5356C"]
@@ -6890,7 +6893,7 @@
 				type: "item"
 			}]
 			title: "Glass Cables"
-			x: 13.0d
+			x: 12.5d
 			y: 20.0d
 		}
 		{
@@ -7134,7 +7137,7 @@
 				item: "ae2:toggle_bus"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 13.5d
 			y: 20.0d
 		}
 		{
@@ -7176,7 +7179,7 @@
 				item: "ae2:me_p2p_tunnel"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 12.0d
 			y: 21.0d
 		}
 		{
@@ -7214,7 +7217,7 @@
 				item: "ae2:level_emitter"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 13.0d
 			y: 21.0d
 		}
 		{
@@ -7250,7 +7253,7 @@
 				item: "ae2:cable_anchor"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 14.0d
 			y: 21.0d
 		}
 		{
@@ -7444,6 +7447,7 @@
 			]
 			shape: "square"
 			size: 1.5d
+			subtitle: "Deus Ex Machina"
 			tasks: [
 				{
 					id: "6EA3D794E78EF82C"
@@ -7740,7 +7744,7 @@
 				item: "ae2:storage_bus"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 14.5d
 			y: 20.0d
 		}
 		{
@@ -7775,13 +7779,13 @@
 				item: "ae2:import_bus"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 15.0d
 			y: 21.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
 			description: [
-				"The ME Export Bus extracts items from the ME Network's storage and places them into the inventory it faces. You must configure which items it will insert, as leaving the configuration blank will result in nothing."
+				"The &aME Export Bus&r extracts items from the &dME Network&r's storage and places them into the inventory it faces. You must configure which items it will insert, as leaving the configuration blank will result in nothing."
 				""
 				"Requires a &dchannel&r to function."
 			]
@@ -7810,7 +7814,7 @@
 				item: "ae2:export_bus"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.5d
 			y: 20.0d
 		}
 		{
@@ -7847,7 +7851,7 @@
 				item: "ae2:interface"
 				type: "item"
 			}]
-			x: 16.5d
+			x: 16.0d
 			y: 21.0d
 		}
 		{
@@ -7870,53 +7874,166 @@
 			y: 14.5d
 		}
 		{
+			dependencies: ["55F8B05DF035DF54"]
+			description: ["And finally, &7300mB Tetrafluoroethylene&r and &b1000mB Oxygen&r combine in a &eChemical Reactor&r to provide &a400mb Polytetrafluoroethylene&r."]
 			id: "6AA9B770612C5BB1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7261349E08582124"
+					table_id: 2875761064117204871L
+					type: "random"
+				}
+				{
+					id: "3897F4F36EFCD7AB"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "067AE5D7D195846B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			subtitle: "Say that three times fast"
 			tasks: [{
 				id: "184FC60FC6C11973"
 				item: "modern_industrialization:polytetrafluoroethylene_bucket"
 				type: "item"
 			}]
-			x: 26.5d
+			x: 33.0d
 			y: 13.5d
 		}
 		{
+			dependencies: [
+				"516C46122E7303BD"
+				"56F78DA3CB207D3B"
+			]
+			description: ["&b2000mB Hydrofluoric Acid&r and &31000mB Chloroform&r combine in a &eChemical Reactor&r to provide you &22500mB Hydrochloric Acid&r and &7500mB Tetrafluoroethylene&r."]
 			id: "55F8B05DF035DF54"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3739832718886F89"
+					table_id: 2875761064117204871L
+					type: "random"
+				}
+				{
+					id: "019E3A2183EBCEA0"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "4AFBE23FEB40ADD0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
 			tasks: [{
 				id: "7185AF029A613126"
 				item: "modern_industrialization:tetrafluoroethylene_bucket"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 30.5d
 			y: 13.5d
 		}
 		{
+			dependencies: ["138B46F9DD86DEB6"]
+			description: ["&e1000mB Fluorine&r and &91000mB Hydrogen&r combine in a &eChemical Reactor&r to provide you &b2000mB of Hydrofluoric Acid&r."]
 			id: "56F78DA3CB207D3B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "33E6E83BAEFEDD17"
+					table_id: 2875761064117204871L
+					type: "random"
+				}
+				{
+					id: "33365CD18E0B1D71"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "6A9DA995DB4624A5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
 			tasks: [{
 				id: "0769BC06DD3BEA51"
 				item: "modern_industrialization:hydrofluoric_acid_bucket"
 				type: "item"
 			}]
-			x: 24.0d
-			y: 15.0d
+			x: 28.5d
+			y: 14.0d
 		}
 		{
+			dependencies: ["72066057C80E5E94"]
+			description: [
+				"&e2000mB Chlorine&r and &d500mB Methane&r combined in a &6Chemical Reactor&r will provide you &22000mB Hydrochloric&r Acid and &3500mb Chloroform&r. "
+				""
+				"While &3Chloroform&r is what you're looking for in this quest, the &2Hydrochloric Acid&r will be very useful for other chemical processes as well."
+			]
 			id: "516C46122E7303BD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "091281C5CD1A44A0"
+					table_id: 2875761064117204871L
+					type: "random"
+				}
+				{
+					id: "7CE50AC98D4C8589"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "62C1E960B2BC4959"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
 			tasks: [{
 				id: "1650F2D4B2D30185"
 				item: "modern_industrialization:chloroform_bucket"
 				type: "item"
 			}]
-			x: 25.5d
-			y: 15.0d
+			x: 28.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["72066057C80E5E94"]
+			description: ["&aFluorine&r can be created by smelting &eFluorite Dust&r in a &6Blast Furnace&r. &3Fluorite Ore&r can be found in the overworld in &bDiamond&r and &aEmerald&r ore veins."]
 			id: "138B46F9DD86DEB6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "164E3D3604E3256C"
+					table_id: 2875761064117204871L
+					type: "random"
+				}
+				{
+					id: "65A29AD3DFB59455"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "7ED7859A9A79C724"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
 			tasks: [{
 				id: "66C38150D0F942D0"
 				item: "modern_industrialization:fluorine_bucket"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 26.0d
 			y: 14.0d
 		}
 		{
@@ -8124,6 +8241,102 @@
 			}]
 			x: 24.5d
 			y: 6.0d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: [
+				"The &aME Annihilation Plane&r is a part designed to destroy any block put in front of it. It can buffer a single operation. Buffered items will automatically be stored in &dME Network&r's storage as space is made available. "
+				""
+				"The &aME Formation Plane&r is a part designed to place or drop any item put into the &dME Network&r. It functions as storage similar to how an &eME Storage Bus&r, so items that are added to the network are dropped or placed passively. You can configure the &aME Formation Plane&r to indicate specific items it should place. Items are placed instantly when they enter the network."
+				""
+				"Both require a &dchannel&r to function."
+			]
+			id: "7EF2D5F379436498"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "62D9C4ADC875353D"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "5790A9A5D5657A50"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "0F624806469F45CE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "3FF505070C66DE04"
+					item: "ae2:annihilation_plane"
+					type: "item"
+				}
+				{
+					id: "0ADDAA9EAADD76BA"
+					item: "ae2:formation_plane"
+					type: "item"
+				}
+			]
+			title: "Annihilation \\& Formation Planes"
+			x: 16.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["47AC1C475DEE0FE4"]
+			description: ["The &aCrystal Growth Accelerator&r is used to accelerate crystal growth. It can be placed facing into a &dBudding Crystal&r block to increase the growth rate. Consumes &e8 AE/t&r while connected to the &dnetwork&r."]
+			id: "59E308D80E5C764E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7BF6C6E37D2EE564"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "499DB44DDF04F93F"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "4D41027F8740D9F5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "5627E9F287D25C6E"
+				item: "ae2:quartz_growth_accelerator"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["10C6529CD6C26AEE"]
+			description: ["&aPolytetrafluoroethylene&r, also known as &aPTFE&r or &aTeflon&r, is an advanced polymer known for nonreactivity, low friction, and good insulating properties. It is a necesary material soon as you move to create components for the &2Digital Circuit&r. The following quests will guide you through the process of making it."]
+			id: "72066057C80E5E94"
+			rewards: [{
+				id: "0B68C125A3517D0D"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			subtitle: "Polytetrafluoroethylene"
+			tasks: [{
+				id: "14837EC8DB8B1E70"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "PTFE"
+			x: 26.0d
+			y: 11.0d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]

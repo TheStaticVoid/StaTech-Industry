@@ -72,7 +72,8 @@ ServerEvents.recipes(e => {
         ae('network/parts/formation_plane'),
         ae('network/parts/tunnels_me'),
         ae('network/parts/export_bus'),
-        wt('magnet_card')
+        wt('magnet_card'),
+        ae('network/blocks/energy_dense_energy_cell')
     ];
     REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
 
@@ -275,7 +276,7 @@ ServerEvents.recipes(e => {
         'SFS'
     ],
     {
-        S: '#c:stainless_steel_plates',
+        S: '#c:aluminum_plates',
         F: ae('fluix_glass_cable'),
         G: ae('quartz_glass'),
         B: ae('fluix_block')
@@ -320,7 +321,7 @@ ServerEvents.recipes(e => {
         S: '#c:stainless_steel_plates',
         G: ae('quartz_glass'),
         A: ae('annihilation_core'),
-        W: '#c:workbench',
+        W: mi('turbo_machine_hull'),
         F: ae('formation_core')
     })
     .id(st('molecular_assembler'));
@@ -729,7 +730,7 @@ ServerEvents.recipes(e => {
         'SF'
     ],
     {
-        S: '#c:stainless_steel_plates',
+        S: '#c:aluminum_plates',
         F: ae('fluix_crystal'),
         A: ae('annihilation_core'),
     })
@@ -740,7 +741,7 @@ ServerEvents.recipes(e => {
         'SAS'
     ],
     {
-        S: '#c:stainless_steel_plates',
+        S: '#c:aluminum_plates',
         F: ae('fluix_crystal'),
         A: ae('annihilation_core'),
     })
@@ -753,7 +754,7 @@ ServerEvents.recipes(e => {
         'SF'
     ],
     {
-        S: '#c:stainless_steel_plates',
+        S: '#c:aluminum_plates',
         F: ae('fluix_crystal'),
         A: ae('formation_core'),
     })
@@ -764,7 +765,7 @@ ServerEvents.recipes(e => {
         'SAS'
     ],
     {
-        S: '#c:stainless_steel_plates',
+        S: '#c:aluminum_plates',
         F: ae('fluix_crystal'),
         A: ae('formation_core'),
     })
@@ -809,6 +810,18 @@ ServerEvents.recipes(e => {
         I: '#c:stainless_steel_blocks'
     })
     .id(st('magnet_card'));
+
+    // -- DENSE ENERGY CELL -- //
+    e.shaped(ae('dense_energy_cell'), [
+        'EEE',
+        'EHE',
+        'EEE'
+    ],
+    {
+        E: ae('energy_cell'),
+        H: mi('turbo_machine_hull')
+    })
+    .id(st('dense_energy_cell'));
 });
 
 ServerEvents.tags('item', e=> {

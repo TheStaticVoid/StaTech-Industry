@@ -41,7 +41,8 @@ ServerEvents.recipes(e => {
         mi('compat/techreborn/macerator/minecraft_clay_ball_to_techreborn_clay_dust'),
         mi('steam_age/bronze/furnace_asbl'),
         mi('steam_age/bronze/boiler_asbl'),
-        mi('tools/steam_mining_drill')
+        mi('tools/steam_mining_drill'),
+        mi('electric_age/component/craft/op_amp_asbl')
     ];
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
 

@@ -143,26 +143,6 @@
 			x: -2.0d
 			y: -3.0d
 		}
-		{
-			description: ["It seems that some of the &eworld generation&r mods have &cnegatively affected&r the generation of &aAndesite&r in the world. If you're having particular troubles finding Andesite, then &2I offer a trade&r. 64x &3Cobblestone&r for 64x &aAndesite&r. Seems fair, no?"]
-			id: "7404F574F4307FB1"
-			rewards: [{
-				count: 64
-				id: "41D28426687E442D"
-				item: "minecraft:andesite"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 64L
-				id: "429870B157B281C6"
-				item: "minecraft:cobblestone"
-				type: "item"
-			}]
-			title: "Can't Find Andesite?"
-			x: -3.0d
-			y: -3.0d
-		}
 	]
 	title: "Temporarily Hidden"
 }

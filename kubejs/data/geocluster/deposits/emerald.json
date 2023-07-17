@@ -11,13 +11,21 @@
             "default": [
                 {
                     "block": "emerald_ore",
-                    "chance": 1.0
+                    "chance": 0.8
+                },
+                {
+                    "block": "modern_industrialization:fluorite_ore",
+                    "chance": 0.2
                 }
             ],
             "minecraft:deepslate": [
                 {
                     "block": "deepslate_emerald_ore",
-                    "chance": 1.0
+                    "chance": 0.8
+                },
+                {
+                    "block": "modern_industrialization:deepslate_fluorite_ore",
+                    "chance": 0.2
                 }
             ]
         },

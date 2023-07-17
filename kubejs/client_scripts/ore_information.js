@@ -117,10 +117,12 @@ REIEvents.information(e => {
         mc('coal_ore'),
         mi('lignite_coal_ore'),
         tr('sapphire_ore'),
+        mi('fluorite_ore'),
         mc('deepslate_diamond_ore'),
         mc('deepslate_coal_ore'),
         mi('deepslate_lignite_coal_ore'),
-        tr('deepslate_sapphire_ore')
+        tr('deepslate_sapphire_ore'),
+        mi('deepslate_fluorite_ore')
     ];
     DIAMOND_DEPOSIT.forEach(id => {
         e.addItem(id, 'Diamond Deposit', depositBuilder(
@@ -133,9 +135,10 @@ REIEvents.information(e => {
             '2',
             [
                 '- Diamond Ore (60%)',
-                '- Coal Ore (15%)',
-                '- Lignite Coal Ore (15%)',
-                '- Sapphire Ore (10%)'
+                '- Coal Ore (10%)',
+                '- Lignite Coal Ore (10%)',
+                '- Sapphire Ore (10%)',
+                '- Fluorite Ore (10%)'
             ]
         ));
     });
@@ -143,7 +146,9 @@ REIEvents.information(e => {
     // emerald.json
     const EMERALD_DEPOSIT = [
         mc('emerald_ore'),
-        mc('deepslate_emerald_ore')
+        mi('fluorite_ore'),
+        mc('deepslate_emerald_ore'),
+        mi('deepslate_fluorite_ore')
     ];
     EMERALD_DEPOSIT.forEach(id => {
         e.addItem(id, 'Emerald Deposit', depositBuilder(
@@ -155,7 +160,8 @@ REIEvents.information(e => {
             'All',
             '2',
             [
-                '- Emerald Ore (100%)'
+                '- Emerald Ore (80%)',
+                '- Fluorite Ore (20%)'
             ]
         ));
     });
