@@ -7919,6 +7919,82 @@
 			x: 22.5d
 			y: 14.0d
 		}
+		{
+			dependencies: ["39A53780808097E7"]
+			description: [
+				"Up until now you haven't had a valid &eelectric powered suit&r, &ounheard of in modded Minecraft&r. With the &aNano Suit&r, you can finally have a powerful piece of armor that you can recharge, effectively making it &2indestructable&r."
+				""
+				"The &6Nano Helmet&r also will provide you with &dNight Vision&r when underground."
+			]
+			id: "61EC57BD963B8D36"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2955F13CEA6D78B7"
+					table_id: 2875761064117204871L
+					type: "random"
+				}
+				{
+					id: "28BF50A2C665DDB4"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "7D1D6928D0EF470C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "7B5155506122AC9C"
+					item: {
+						Count: 1b
+						id: "tech_enhanced:nano_helmet"
+						tag: {
+							energy: 1000000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B171345F31D15A8"
+					item: {
+						Count: 1b
+						id: "tech_enhanced:nano_chestplate"
+						tag: {
+							energy: 1000000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0942823093E696ED"
+					item: {
+						Count: 1b
+						id: "tech_enhanced:nano_leggings"
+						tag: {
+							energy: 1000000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2BEC7AAB60422F3E"
+					item: {
+						Count: 1b
+						id: "tech_enhanced:nano_boots"
+						tag: {
+							energy: 1000000L
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Nano Suit"
+			x: 35.0d
+			y: 12.0d
+		}
 	]
 	subtitle: ["ZZZzzzapppp"]
 	title: "&33 - Electrical Age"

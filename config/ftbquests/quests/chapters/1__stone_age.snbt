@@ -96,10 +96,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"7404F574F4307FB1"
-				"4B07D0F2469CC1A7"
-			]
+			dependencies: ["4B07D0F2469CC1A7"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The early game of this pack is focused around the &eCreate&r mod. For this, you will need a lot of &aAndesite&r. Luckily, this quest rewards you with &esome extra&r. Once you have a &6Bronze Mixer&r you will unlock a recipe to make &aAndesite&r renewable!"
@@ -1326,27 +1323,6 @@
 			}]
 			x: -2.0d
 			y: 3.5d
-		}
-		{
-			dependencies: ["4B07D0F2469CC1A7"]
-			description: ["It seems that some of the &eworld generation&r mods have &cnegatively affected&r the generation of &aAndesite&r in the world. If you're having particular troubles finding Andesite, then &2I offer a trade&r. 64x &3Cobblestone&r for 64x &aAndesite&r. Seems fair, no?"]
-			id: "7404F574F4307FB1"
-			rewards: [{
-				count: 64
-				id: "41D28426687E442D"
-				item: "minecraft:andesite"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				count: 64L
-				id: "429870B157B281C6"
-				item: "minecraft:cobblestone"
-				type: "item"
-			}]
-			title: "Can't Find Andesite?"
-			x: 0.25d
-			y: 1.5d
 		}
 		{
 			dependencies: ["300516B03C1580A2"]

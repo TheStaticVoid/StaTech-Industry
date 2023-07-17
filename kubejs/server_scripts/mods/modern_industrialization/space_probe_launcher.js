@@ -33,7 +33,7 @@ ServerEvents.recipes(e => {
         st('space_probe'),
         128,
         6000,
-        [ { amount: 1, item: kj('space_probe') } ],
+        [ { amount: 1, item: kj('space_probe'), probability: 0.75 } ],
         [ 
             { amount: 64, item: ad('moon_desh_ore') },
             { amount: 64, item: ad('mars_ostrum_ore') },
