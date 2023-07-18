@@ -16,7 +16,7 @@
 			rotation: 0.0d
 			width: 6.0d
 			x: 0.0d
-			y: -6.5d
+			y: -6.0d
 		}
 		{
 			click: "https://discord.gg/RDaJEnN3uS"
@@ -103,8 +103,8 @@
 				type: "checkmark"
 			}]
 			title: "REI Tips"
-			x: -2.5d
-			y: -1.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -127,8 +127,8 @@
 				type: "checkmark"
 			}]
 			title: "Spice of Life"
-			x: -2.5d
-			y: 0.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -151,8 +151,8 @@
 				type: "checkmark"
 			}]
 			title: "Automate Everything"
-			x: -2.0d
-			y: -2.0d
+			x: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -175,8 +175,8 @@
 				type: "checkmark"
 			}]
 			title: "Required Quests"
-			x: -2.5d
-			y: 1.0d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -210,8 +210,8 @@
 				type: "checkmark"
 			}]
 			title: "Better Combat"
-			x: 2.5d
-			y: -1.0d
+			x: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -231,7 +231,7 @@
 			}]
 			title: "Oh the Biomes You'll Go"
 			x: 2.0d
-			y: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -254,8 +254,8 @@
 				type: "checkmark"
 			}]
 			title: "Optional Additions"
-			x: 0.0d
-			y: 2.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -278,8 +278,8 @@
 				type: "checkmark"
 			}]
 			title: "Chapter Progression"
-			x: -1.0d
-			y: 2.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -322,8 +322,8 @@
 				type: "checkmark"
 			}]
 			title: "JourneyMap"
-			x: 1.0d
-			y: 2.5d
+			x: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -346,8 +346,8 @@
 				type: "checkmark"
 			}]
 			title: "Inventory Profiles Next"
-			x: 2.0d
-			y: 2.0d
+			x: -1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -379,8 +379,8 @@
 				type: "checkmark"
 			}]
 			title: "StaTech Coins"
-			x: 0.0d
-			y: -2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -403,8 +403,8 @@
 				type: "checkmark"
 			}]
 			title: "LogicalZoom"
-			x: 1.0d
-			y: -2.5d
+			x: -3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
@@ -426,8 +426,31 @@
 				type: "checkmark"
 			}]
 			title: "Simple Voice Chat"
-			x: -1.0d
-			y: -2.5d
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2174585D87F83C89"]
+			description: [
+				"Want a peaceful place filled with nothing to build your factory? The &dVoid Portal&r block, when right-clicked, will teleport you to a &avoid dimension&r. Here you can build out a platform to construct all the processing lines and automation you'll need to progress."
+				""
+				"Note that you will be placed in the &avoid dimension&r at the &esame coordinates&r you use the &dportal&r. Best to move your &dportal&r if it's overlapping with someone elses base. "
+			]
+			icon: "javd:portal_block"
+			id: "0F270CF21E4D9F32"
+			rewards: [{
+				id: "4FE8EF9AAF8242FE"
+				item: "javd:portal_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6669413B45FFEE73"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Void Dimension"
+			x: 3.0d
+			y: 1.0d
 		}
 	]
 	title: "&a&lWelcome"

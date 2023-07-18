@@ -358,4 +358,45 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('quartz_dust'), probability: 0.5 }
         ]
     );
+
+    const COLORS = [
+        'orange',
+        'magenta',
+        'light_blue',
+        'yellow',
+        'lime',
+        'pink',
+        'cyan',
+        'purple',
+        'blue',
+        'brown',
+        'green',
+        'red',
+        'black'
+    ];
+    COLORS.forEach(color => {
+        // -- MACERATE SPECTRUM LOG -- //
+        macerator(
+            st(`${color}_log`),
+            8,
+            200,
+            [ { amount: 1, item: sp(`${color}_log`) } ],
+            [
+                { amount: 2, item: sp(`${color}_pigment`) },
+                { amount: 1, item: sp(`${color}_pigment`), probability: 0.5 }
+            ]
+        );
+
+        // -- MACERATE SPECTRUM LEAVES -- //
+        macerator(
+            st(`${color}_leaves`),
+            8,
+            200,
+            [ { amount: 1, item: sp(`${color}_leaves`) } ],
+            [
+                { amount: 2, item: sp(`${color}_pigment`) },
+                { amount: 1, item: sp(`${color}_sapling`) }
+            ]
+        );
+    });
 });

@@ -44,7 +44,6 @@ ServerEvents.recipes(e => {
         B: '#c:steel_blocks',
         D: mc('barrel')
     })
-    .modifyResult((inventory, itemstack) => { return keepNBT(mc('barrel'), inventory, itemstack) })
     .id(st('dank_1'));
 
     // -- DANK 2 -- //
