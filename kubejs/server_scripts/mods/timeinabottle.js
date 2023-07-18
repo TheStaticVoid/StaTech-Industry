@@ -16,7 +16,6 @@ ServerEvents.recipes(e => {
 
     // -- TIME IN A BOTTLE -- // 
     e.custom({
-        id: st('time_in_a_bottle'),
         type: sp('pedestal'),
         time: 400,
         tier: 'simple',
@@ -45,5 +44,6 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('time_in_a_bottle'));
 });

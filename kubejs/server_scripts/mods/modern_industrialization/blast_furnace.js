@@ -23,8 +23,7 @@ ServerEvents.recipes(e => {
         let newRecipe = {
             type: mi('blast_furnace'),
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
 
         if (item_inputs)
@@ -36,7 +35,7 @@ ServerEvents.recipes(e => {
         if (fluid_outputs)
             newRecipe['fluid_outputs'] = fluid_outputs;
         
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- UNCOOKED STEEL DUST -> STEEL INGOT -- //

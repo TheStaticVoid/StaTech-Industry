@@ -102,8 +102,7 @@ ServerEvents.recipes(e => {
         let newRecipe = {
             type: 'modern_industrialization:forge_hammer',
             eu: eu,
-            duration: 0,
-            id: id
+            duration: 0
         }
 
         if (item_inputs)
@@ -111,7 +110,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['item_outputs'] = item_outputs;
         
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     MATERIAL_CRUSHED_DUST.forEach(material => {

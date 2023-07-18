@@ -15,7 +15,6 @@ ServerEvents.recipes(e => {
 
     // -- TOOL LEVELING TABLE -- //
     e.custom({
-        id: st('tool_leveling_table'),
         type: sp('pedestal'),
         time: 1200,
         tier: 'advanced',
@@ -43,5 +42,6 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('midgame/break_decayed_bedrock')
         ]
-    });
+    })
+    .id(st('tool_leveling_table'));
 });

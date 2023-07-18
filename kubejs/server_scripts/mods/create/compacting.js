@@ -12,7 +12,6 @@ ServerEvents.recipes(e => {
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let compacting = (id, item_inputs, item_outputs) => {
         let newRecipe = {
-            id: id,
             type: cr('compacting'),
         }
 
@@ -21,7 +20,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['results'] = item_outputs;
 
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- FIRECLAY BRICKS -- // 

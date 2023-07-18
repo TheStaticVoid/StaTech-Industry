@@ -16,7 +16,6 @@ ServerEvents.recipes(e => {
             type: mi('cutting_machine'),
             eu: eu,
             duration: duration,
-            id: id,
             fluid_inputs: [
                 { amount: 1, fluid: mi('lubricant') }
             ]
@@ -27,7 +26,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['item_outputs'] = item_outputs;
         
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // // -- STRAW -- //

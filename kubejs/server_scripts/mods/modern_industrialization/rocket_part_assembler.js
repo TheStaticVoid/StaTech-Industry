@@ -14,8 +14,7 @@ ServerEvents.recipes(e => {
         let newRecipe = {
             type: 'modern_industrialization:rocket_part_assembler',
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
         if (item_inputs != null)
             newRecipe['item_inputs'] = item_inputs;
@@ -24,7 +23,7 @@ ServerEvents.recipes(e => {
         if (fluid_inputs != null) 
             newRecipe['fluid_inputs'] = fluid_inputs;
 
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- ENGINE FAN -- //

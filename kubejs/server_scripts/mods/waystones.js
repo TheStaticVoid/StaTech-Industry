@@ -23,7 +23,6 @@ ServerEvents.recipes(e => {
 
     // -- WARP STONE -- //
     e.custom({
-        id: st('warp_stone'),
         type: sp('fusion_shrine'),
         time: 400,
         experience: 30.0,
@@ -43,11 +42,11 @@ ServerEvents.recipes(e => {
             'visual_explosions_on_shrine'
         ],
         finish_crafting_effect: 'lightning_on_shrine'
-    });
+    })
+    .id(st('warp_stone'));
 
     // -- WARP PLATE -- //
     e.custom({
-        id: st('warp_plate'),
         type: sp('pedestal'),
         time: 400,
         tier: 'simple',
@@ -74,11 +73,11 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('warp_plate'));
 
     // -- RETURN SCROLL -- //
     e.custom({
-        id: st('return_scroll'),
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -104,11 +103,11 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('return_scroll'));
 
     // -- BOUND SCROLL -- //
     e.custom({
-        id: st('bound_scroll'),
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -136,11 +135,11 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('bound_scroll'));
 
     // -- WARP SCROLL -- //
     e.custom({
-        id: st('warp_scroll'),
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -168,11 +167,11 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('warp_scroll'));
 
     // -- WARP DUST -- //
     e.custom({
-        id: st('warp_dust'),
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -196,5 +195,6 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('warp_dust'));
 });

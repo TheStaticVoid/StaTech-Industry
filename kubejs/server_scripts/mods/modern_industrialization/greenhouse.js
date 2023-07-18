@@ -24,8 +24,7 @@ ServerEvents.recipes(e => {
         let newRecipe = {
             type: mi('greenhouse'),
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
 
         if (item_inputs)
@@ -35,7 +34,7 @@ ServerEvents.recipes(e => {
         if (fluid_inputs)
             newRecipe['fluid_inputs'] = fluid_inputs;
 
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
     // This is all the saplings in the game with their corresponding logs and leaves
     const saplingLogList = [    
@@ -151,6 +150,11 @@ ServerEvents.recipes(e => {
         let leaves = woodType[2];
         let fluid = woodType[3];
         let id = `${log.split(':')[1]}_from_${sapling.split(':')[1]}`;
+
+        // Fixes duplicate ID issue between the two palm logs
+        if (log.split(':')[1] == 'palm_log' && log.split(':')[0] == 'byg')
+            id += '_byg';
+            
         greenhouse(
             st(id),
             8,

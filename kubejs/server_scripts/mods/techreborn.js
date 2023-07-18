@@ -146,9 +146,7 @@ ServerEvents.recipes(e => {
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
     // DELETE ALL SMALL DUST RECIPES
-    e.forEachRecipe( {mod: 'techreborn', type: 'minecraft:crafting_shapeless', output: '#techreborn:small_dusts'}, recipe => {
-        e.remove( {id: recipe.getOrCreateId()} );
-    });
+    e.remove({mod: 'techreborn', type: 'minecraft:crafting_shapeless', output: '#techreborn:small_dusts' });
 
     // -- INDUSTRIAL DRILL -- //
     e.shaped(tr('industrial_drill'), [

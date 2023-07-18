@@ -23,8 +23,7 @@ ServerEvents.recipes(e => {
         let newRecipe = {
             type: mi('mixer'),
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
 
         if (item_inputs)
@@ -36,7 +35,7 @@ ServerEvents.recipes(e => {
         if (fluid_outputs)
             newRecipe['fluid_outputs'] = fluid_outputs;
         
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- LIQUID ENDER -- // 
@@ -181,6 +180,7 @@ ServerEvents.recipes(e => {
     }
     
     // -- CONVERT ALL NON-CONSUMABLE FLUID RECIPES IN MIXER TO CONSUME FLUID  -- //
+    let toRemove = [];
     e.forEachRecipe( { type: mi('mixer') }, recipe => {
         const DONT_REPLACE = [
             'modern_industrialization:vanilla_recipes/mixer/lava',
@@ -220,9 +220,10 @@ ServerEvents.recipes(e => {
         }
 
         if (newFluidInput) {
-            e.remove({ id: recipe.getId() });
+            toRemove.push(recipe.getId());
             let id = st(recipe.getId().split('mixer/')[1]);
             mixer(id, eu, duration, item_inputs, item_outputs, newFluidInput, fluid_outputs);
         }
     });
+    toRemove.forEach(id => e.remove({ id: id }));
 });

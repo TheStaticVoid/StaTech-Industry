@@ -3,6 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
+Platform.mods.kubejs.name = 'StaTech Industry';
+
 StartupEvents.registry('item', e => {
     e.create('space_probe').displayName('Space Probe');
     

@@ -13,8 +13,7 @@ ServerEvents.recipes(e => {
         let newRecipe = {
             type: mi('distillation_tower'),
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
 
         if (fluid_inputs)
@@ -22,7 +21,7 @@ ServerEvents.recipes(e => {
         if (fluid_outputs)
             newRecipe['fluid_outputs'] = fluid_outputs;
 
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- WOOD TAR -- //

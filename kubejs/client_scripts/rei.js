@@ -223,5 +223,5 @@ REIEvents.removeCategories(e => {
         tr('semi_fluid_generator'),
         cr('charging')
     ];
-    REMOVED_CAT.forEach(id => e.yeet(id));
+    REMOVED_CAT.forEach(id => e.remove(id));
 });

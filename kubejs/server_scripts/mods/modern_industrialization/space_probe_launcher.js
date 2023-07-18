@@ -16,7 +16,6 @@ ServerEvents.recipes(e => {
             type: mi('space_probe_launcher'),
             eu: eu,
             duration: duration,
-            id: id,
             process_conditions: [{'biome': 'ad_astra:orbit', 'id': 'modern_industrialization:biome'} ]
         }
 
@@ -25,7 +24,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['item_outputs'] = item_outputs;
         
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- SPACE PROBE -- //

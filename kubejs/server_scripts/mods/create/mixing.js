@@ -16,7 +16,6 @@ ServerEvents.recipes(e => {
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let mixing = (id, heat_requirement, item_inputs, item_outputs) => {
         let newRecipe = {
-            id: id,
             type: cr('mixing'),
             heatRequirement: heat_requirement,
         }
@@ -26,7 +25,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['results'] = item_outputs;
 
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- BRONZE INGOT -- //

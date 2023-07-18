@@ -18,7 +18,6 @@ ServerEvents.recipes(e => {
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let pressing = (id, item_inputs, item_outputs) => {
         let newRecipe = {
-            id: id, 
             type: cr('pressing'),
         }
 
@@ -27,7 +26,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['results'] = item_outputs;
 
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- BRONZE PLATE -- //

@@ -18,8 +18,7 @@ ServerEvents.recipes(e => {
         let newRecipe = {
             type: mi('mob_crusher'),
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
 
         if (item_inputs)
@@ -31,7 +30,7 @@ ServerEvents.recipes(e => {
         if (fluid_outputs)
             newRecipe['fluid_outputs'] = fluid_outputs;
 
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // Idk why I did it like this, but w/e

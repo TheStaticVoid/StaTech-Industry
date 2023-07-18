@@ -67,21 +67,21 @@ ServerEvents.recipes(e => {
 
     // -- OXYGEN TO AD ASTRA OXYGEN -- //
     e.custom({
-        id: st('oxygen'),
         type: ad('oxygen_conversion'),
         input: mi('oxygen'),
         output: ad('oxygen'),
         conversion_ratio: 1.0
-    });
+    })
+    .id(st('oxygen'));
 
     // -- BOOSTED DIESEL TO ROCKET FUEL -- //
     e.custom({
-        id: st('fuel'),
         type: ad('fuel_conversion'),
         input: mi('boosted_diesel'),
         output: ad('fuel'),
         conversion_ratio: 0.5
-    });
+    })
+    .id(st('fuel'));
 
     // -- TIER 1 ROCKET -- //
     e.custom({

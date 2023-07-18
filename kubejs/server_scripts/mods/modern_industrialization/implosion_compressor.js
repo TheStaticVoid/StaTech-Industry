@@ -20,8 +20,7 @@ ServerEvents.recipes(e => {
         let newRecipe = {
             type: mi('implosion_compressor'),
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
 
         if (item_inputs)
@@ -29,7 +28,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)   
             newRecipe['item_outputs'] = item_outputs;
     
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- IRIDIUM ALLOY PLATE -- //

@@ -14,8 +14,7 @@ ServerEvents.recipes(e => {
         let newRecipe = {
             type: mi('singularity_forge'),
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
 
         if (item_inputs)
@@ -25,7 +24,7 @@ ServerEvents.recipes(e => {
         if (fluid_inputs)
             newRecipe['fluid_inputs'] = fluid_inputs;
 
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- SINGULARITY -- //
