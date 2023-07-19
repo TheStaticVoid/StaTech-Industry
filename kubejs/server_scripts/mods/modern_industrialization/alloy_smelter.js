@@ -121,4 +121,88 @@ ServerEvents.recipes(e => {
 		],
 		[ { amount: 2, item: mi('battery_alloy_ingot') } ]
 	);
+
+    // -- BATTERY ALLOY BLOCK -- //
+    alloySmelter(
+        st('battery_alloy_block'),
+        8,
+        1800,
+        [
+            { amount: 1, tag: 'c:lead_blocks' },
+            { amount: 1, tag: 'c:antimony_blocks' }
+        ],
+        [ { amount: 2, item: mi('battery_alloy_block') } ]
+    );
+
+    // -- BRASS BLOCK -- //
+    alloySmelter(
+        st('brass_block'),
+        16,
+        1800,
+        [
+            { amount: 3, tag: 'c:copper_blocks' },
+            { amount: 1, tag: 'c:zinc_blocks' }
+        ],
+        [ { amount: 1, item: tr('brass_storage_block') } ]
+    );
+
+    // -- BRONZE BLOCK -- //
+    alloySmelter(
+        st('bronze_block'),
+        8,
+        1800,
+        [
+            { amount: 3, tag: 'c:copper_blocks' },
+            { amount: 1, tag: 'c:tin_blocks' }
+        ],
+        [ { amount: 1, item: mi('bronze_block') } ]
+    );
+
+    // -- CUPRONICKEL BLOCK -- //
+    alloySmelter(
+        st('cupronickel_block'),
+        16,
+        1800,
+        [ 
+            { amount: 1, tag: 'c:copper_blocks' },
+            { amount: 1, tag: 'c:nickel_blocks' }
+        ],
+        [ { amount: 1, item: mi('cupronickel_block') } ]
+    );
+
+    // -- ELECTRUM BLOCK -- //
+    alloySmelter(
+        st('electrum_block'),
+        16,
+        1800,
+        [
+            { amount: 2, tag: 'c:gold_blocks' },
+            { amount: 2, tag: 'c:silver_blocks' }
+        ],
+        [ { amount: 4, item: mi('electrum_block') } ]
+    );
+
+    // -- INVAR BLOCK -- //
+    alloySmelter(
+        st('invar_block'),
+        8,
+        1800,
+        [
+            { amount: 3, tag: 'c:iron_blocks' },
+            { amount: 1, tag: 'c:nickel_blocks' },
+        ],
+        [ { amount: 4, item: mi('nickel_block') } ]
+    );
+
+    // -- REFINED IRON BLOCK -- //
+    alloySmelter(
+        st('refined_iron_block'),
+        16,
+        1800,
+        [
+            { amount: 36, tag: 'c:calcite_dusts' },
+            { amount: 1, tag: 'c:iron_blocks' }
+        ],
+        [ { amount: 1, item: tr('refined_iron_storage_block') } ]
+    );
 });
