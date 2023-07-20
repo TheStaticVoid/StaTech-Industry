@@ -30,6 +30,16 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- POLYTETRAFLUOROETHYLENE INGOT -- //
+    vacuumFreezer(
+        st('ptfe_ingot'),
+        32,
+        200,
+        null,
+        [ { amount: 1, item: mi('polytetrafluoroethylene_ingot') } ],
+        [ { amount: 1000, fluid: mi('polytetrafluoroethylene')}]
+    );
+
     // -- TUNGSTENSTEEL INGOT -- //
     vacuumFreezer(
         st('tungstensteel_ingot'),
