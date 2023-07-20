@@ -100,7 +100,7 @@ ServerEvents.recipes(e => {
                 let newResult = { amount: amount }
                 newResult['item'] = recipeJson.result;
                 
-                let id = st(`${recipeJson.result.split(':')[1]}_from_${newIngredient[key].split(':')[1]}`);
+                let id = st(`${recipeJson.result.split(':')[0]}_${recipeJson.result.split(':')[1]}_from_${newIngredient[key].split(':')[0]}_${newIngredient[key].split(':')[1]}`);
                 megaSmelt(id, newIngredient, newResult);
             }
         }

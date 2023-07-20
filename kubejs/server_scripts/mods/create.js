@@ -20,6 +20,10 @@ ServerEvents.recipes(e => {
         cr('smelting/platinum_ingot_compat_modern_industrialization'),
         cr('smelting/silver_ingot_compat_modern_industrialization'),
         cr('blasting/silver_ingot_compat_modern_industrialization'),
+        cr('smelting/lead_ingot_compat_techreborn'),
+        cr('blasting/lead_ingot_compat_techreborn'),
+        cr('blasting/tin_ingot_compat_techreborn'),
+        cr('smelting/tin_ingot_compat_techreborn'),
     ];
     CREATE_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove( {type: cr('crushing'), output: cr('crushed_platinum_ore')} );
