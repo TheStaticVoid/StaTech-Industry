@@ -12,6 +12,7 @@ ServerEvents.recipes(e => {
     let ed = (id) => `expandeddelight:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let sp = (id) => `spectrum:${id}`;
+    let bl = (id) => `blockus:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let macerator = (id, eu, duration, item_inputs, item_outputs) => {
@@ -47,9 +48,27 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: ed('ground_salt') } ]
     );
 
-    // -- CALCITE DUST -- //
+    // -- CALCITE DUST FROM LIMESTONE -- //
     macerator(
-        st('calcite_dust'),
+        st('calcite_dust_from_limestone'),
+        8,
+        100,
+        [ { amount: 1, item: cr('limestone') } ],
+        [ { amount: 2, item: tr('calcite_dust') } ]
+    );
+
+    // -- CALCITE DUST FROM BLOCKUS LIMESTONE -- // 
+    macerator(
+        st('calcite_dust_from_blockus_limestone'),
+        8,
+        100,
+        [ { amount: 1, item: bl('limestone') } ],
+        [ { amount: 2, item: tr('calcite_dust') } ]
+    );
+
+    // -- CALCITE DUST FROM CALCITE -- //
+    macerator(
+        st('calcite_dust_from_calcite'),
         8,
         100,
         [ { amount: 1, item: mc('calcite') } ],

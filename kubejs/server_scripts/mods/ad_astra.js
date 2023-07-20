@@ -242,7 +242,8 @@ ServerEvents.recipes(e => {
         F: mi('turbo_machine_hull'),
         P: '#c:desh_plates',
         D: mi('digital_circuit')
-    });
+    })
+    .id(st('solar_panel'));
 });
 
 // Tag all ore items under the common ores tag
