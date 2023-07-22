@@ -11,13 +11,21 @@
             "default": [
                 {
                     "block": "lapis_ore",
-                    "chance": 1.0
+                    "chance": 0.9
+                },
+                {
+                    "block": "modern_industrialization:fluorite_ore",
+                    "chance": 0.1
                 }
             ],
             "minecraft:deepslate": [
                 {
                     "block": "deepslate_lapis_ore",
-                    "chance": 1.0
+                    "chance": 0.9
+                },
+                {
+                    "block": "modern_industrialization:deepslate_fluorite_ore",
+                    "chance": 0.1
                 }
             ]
         },

@@ -1,0 +1,19 @@
+{
+    "variants": {
+      "facing=east": {
+        "model": "kubejs:block/ice_ore_sample",
+        "y": 90
+      },
+      "facing=north": {
+        "model": "kubejs:block/ice_ore_sample"
+      },
+      "facing=south": {
+        "model": "kubejs:block/ice_ore_sample",
+        "y": 180
+      },
+      "facing=west": {
+        "model": "kubejs:block/ice_ore_sample",
+        "y": 270
+      }
+    }
+  }

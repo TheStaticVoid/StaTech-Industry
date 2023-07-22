@@ -327,6 +327,42 @@ ServerEvents.recipes(e => {
     }).id(st('space_breathing_from_mythic'));
 });
 
+ServerEvents.blockLootTables(e => {
+    e.addSimpleBlock('kubejs:desh_ore_sample', 'ad_astra:raw_desh');
+    e.addSimpleBlock('kubejs:ostrum_ore_sample', 'ad_astra:raw_ostrum');
+    e.addSimpleBlock('kubejs:calorite_ore_sample', 'ad_astra:raw_calorite');
+    e.addSimpleBlock('kubejs:ice_ore_sample', 'ad_astra:ice_shard'),
+    e.addSimpleBlock('kubejs:cheese_ore_sample', 'ad_astra:cheese');
+});
+
+ServerEvents.tags('worldgen/biome', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let ad = (id) => `ad_astra:${id}`;
+
+    e.add(ad('moon'), ad('lunar_wastelands'));
+
+    const MARS_BIOMES = [
+        ad('martian_canyon_creek'),
+        ad('martian_polar_caps'),
+        ad('martian_wastelands')
+    ];
+    MARS_BIOMES.forEach(id => e.add(ad('mars'), id));
+
+    const VENUS_BIOMES = [
+        ad('venus_wastelands'),
+        ad('infernal_venus_barrens')
+    ];
+    VENUS_BIOMES.forEach(id => e.add(ad('venus'), id));
+
+    e.add(ad('mercury'), ad('mercury_deltas'));
+
+    const GLACIO_BIOMES = [
+        ad('glacio_ice_peaks'),
+        ad('glacio_snowy_barrens')
+    ];
+    GLACIO_BIOMES.forEach(id => e.add(ad('glacio'), id));
+});
+
 ServerEvents.tags('item', e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let kj = (id) => `kubejs:${id}`;
