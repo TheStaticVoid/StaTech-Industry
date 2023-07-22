@@ -22,7 +22,7 @@ ServerEvents.recipes(e => {
         M: mi('processing_unit'),
         F: ad('rocket_fin'),
         E: ad('desh_engine'),
-        C: mi('aluminum_gear')
+        C: mi('enderium_gear')
     })
     .id(st('space_probe'));
 });
