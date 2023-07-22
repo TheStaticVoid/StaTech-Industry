@@ -1,0 +1,34 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -8,
+        "yMax": 64,
+        "size": 60,
+        "biomeTag": "#ad_astra:glacio",
+        "spread": 20,
+        "generationWeight": 7,
+        "blockStateMatchers": [
+            "ad_astra:glacio_stone"
+        ],
+        "blocks": {
+            "default": [
+                {
+                    "block": "ad_astra:glacio_copper_ore",
+                    "chance": 1.0
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "deepslate_copper_ore",
+                    "chance": 1.0
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:copper_ore_sample",
+                "chance": 1.0
+            }
+        ]
+    }
+}

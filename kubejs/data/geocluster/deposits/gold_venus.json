@@ -1,0 +1,28 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -48,
+        "yMax": 16,
+        "size": 80,
+        "biomeTag": "#ad_astra:venus",
+        "spread": 20,
+        "generationWeight": 6,
+        "blockStateMatchers": [
+            "ad_astra:venus_stone"
+        ],
+        "blocks": {
+            "default": [
+                {
+                    "block": "ad_astra:venus_gold_ore",
+                    "chance": 1.0
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:gold_ore_sample",
+                "chance": 1.0
+            }
+        ]
+    }
+}

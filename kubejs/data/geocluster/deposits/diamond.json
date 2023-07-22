@@ -11,14 +11,10 @@
             "default": [
                 {
                     "block": "diamond_ore",
-                    "chance": 0.6
+                    "chance": 0.7
                 },
                 {
                     "block": "coal_ore",
-                    "chance": 0.1
-                },
-                {
-                    "block": "modern_industrialization:lignite_coal_ore",
                     "chance": 0.1
                 },
                 {
@@ -33,14 +29,10 @@
             "minecraft:deepslate": [
                 {
                     "block": "deepslate_diamond_ore",
-                    "chance": 0.6
+                    "chance": 0.7
                 },
                 {
                     "block": "deepslate_coal_ore",
-                    "chance": 0.1
-                },
-                {
-                    "block": "modern_industrialization:lignite_coal_ore",
                     "chance": 0.1
                 },
                 {
@@ -56,11 +48,11 @@
         "samples": [
             {
                 "block": "geocluster:diamond_ore_sample",
-                "chance": 0.2
+                "chance": 0.4
             },
             {
                 "block": "geocluster:coal_ore_sample",
-                "chance": 0.8
+                "chance": 0.6
             }
         ]
     }

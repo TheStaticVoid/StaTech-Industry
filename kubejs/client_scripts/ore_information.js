@@ -53,6 +53,12 @@ REIEvents.information(e => {
         bg('anthracite_ore')
     ];
 
+    // -- CALORITE -- //
+    const CALORITE_ORES = [
+        ad('venus_calorite_ore'),
+        ad('deepslate_calorite_ore')
+    ];
+
     // -- CHEESE -- //
     const CHEESE_ORES = [
         ad('moon_cheese_ore')
@@ -66,12 +72,15 @@ REIEvents.information(e => {
     // -- COAL -- //
     const COAL_ORES = [
         mc('coal_ore'),
-        mc('deepslate_coal_ore')
+        mc('deepslate_coal_ore'),
+        ad('venus_coal_ore'),
+        ad('glacio_coal_ore')
     ];
 
     // -- COPPER -- //
     const COPPER_ORES = [
         mc('copper_ore'),
+        ad('glacio_copper_ore'),
         mc('deepslate_copper_ore')
     ];
 
@@ -85,7 +94,8 @@ REIEvents.information(e => {
     const DIAMOND_ORES = [
         mc('diamond_ore'),
         mc('deepslate_diamond_ore'),
-        ad('mars_diamond_ore')
+        ad('mars_diamond_ore'),
+        ad('venus_diamond_ore')
     ];
 
     // -- EMERALD -- //
@@ -117,13 +127,15 @@ REIEvents.information(e => {
         mc('deepslate_gold_ore'),
         mc('nether_gold_ore'),
         bg('blue_nether_gold_ore'),
-        bg('brimstone_nether_gold_ore')
+        bg('brimstone_nether_gold_ore'),
+        ad('venus_gold_ore')
     ];
 
     // -- ICE -- //
     const ICE_SHARD_ORES = [
         ad('moon_ice_shard_ore'),
-        ad('mars_ice_shard_ore'),
+        ad('mars_ice_shard_ore'),,
+        ad('glacio_ice_shard_ore'),
         ad('deepslate_ice_shard_ore')
     ];
 
@@ -139,12 +151,15 @@ REIEvents.information(e => {
         mc('deepslate_iron_ore'),
         ad('moon_iron_ore'),
         ad('mars_iron_ore'),
+        ad('mercury_iron_ore'),
+        ad('glacio_iron_ore'),
         ad('deepslate_iron_ore')
     ];
 
     // -- LAPIS -- //
     const LAPIS_ORES = [
         mc('lapis_ore'),
+        ad('glacio_lapis_ore'),
         mc('deepslate_lapis_ore')
     ];
 
@@ -316,6 +331,22 @@ REIEvents.information(e => {
     }
     depositBuilder(ANTHRACITE_ORES, ANTHRACITE_DEPOSIT_INFO);
 
+    // calorite.json
+    const CALORITE_DEPOSIT_INFO = {
+        internalId: 'Calorite Deposit Info',
+        veinName: 'Calorite',
+        minY: '-48',
+        maxY: '48',
+        size: '60',
+        dimension: 'Venus',
+        biome: 'All',
+        weight: '6',
+        blocks: [
+            '- Calorite Ore (100%)'
+        ]
+    }
+    depositBuilder(CALORITE_ORES, CALORITE_DEPOSIT_INFO);
+
     // cheese_moon.json
     const CHEESE_DEPOSIT_INFO = {
         internalId: 'Cheese Deposit',
@@ -350,6 +381,38 @@ REIEvents.information(e => {
     depositBuilder(COAL_ORES, COAL_DEPOSIT_INFO);
     depositBuilder(LIGNITE_COAL_ORES, COAL_DEPOSIT_INFO);
 
+    // coal_glacio.json
+    const GLACIO_COAL_DEPOSIT_INFO = {
+        internalId: 'Glacio Coal Deposit',
+        veinName: 'Coal',
+        minY: '16',
+        maxY: '70',
+        size: '60',
+        dimension: 'Glacio',
+        biome: 'All',
+        weight: '8',
+        blocks: [
+            '- Coal Ore (100%)'
+        ]
+    }
+    depositBuilder(COAL_ORES, GLACIO_COAL_DEPOSIT_INFO);
+
+    // coal_venus.json
+    const VENUS_COAL_DEPOSIT_INFO = {
+        internalId: 'Venus Coal Deposit',
+        veinName: 'Coal',
+        minY: '0',
+        maxY: '60',
+        size: '50',
+        dimension: 'Venus',
+        biome: 'All',
+        weight: '8',
+        blocks: [
+            '- Coal Ore (100%)'
+        ]
+    }
+    depositBuilder(COAL_ORES, VENUS_COAL_DEPOSIT_INFO);
+
     // copper.json
     const COPPER_DEPOSIT_INFO = {
         internalId: 'Copper Deposit',
@@ -365,6 +428,22 @@ REIEvents.information(e => {
         ]
     }
     depositBuilder(COPPER_ORES, COPPER_DEPOSIT_INFO);
+
+    // copper_glacio.json
+    const GLACIO_COPPER_DEPOSIT_INFO = {
+        internalId: 'Glacio Copper Deposit',
+        veinName: 'Copper',
+        minY: '-8',
+        maxY: '64',
+        size: '60',
+        dimension: 'Glacio',
+        biome: 'All',
+        weight: '7',
+        blocks: [
+            '- Copper Ore (100%)'
+        ]
+    }
+    depositBuilder(COPPER_ORES, GLACIO_COPPER_DEPOSIT_INFO);
 
     // desh.json
     const DESH_DEPOSIT_INFO = {
@@ -397,9 +476,8 @@ REIEvents.information(e => {
         biome: 'All',
         weight: '2',
         blocks: [
-            '- Diamond Ore (60%)',
+            '- Diamond Ore (70%)',
             '- Coal Ore (10%)',
-            '- Lignite Coal Ore (10%)',
             '- Sapphire Ore (10%)',
             '- Fluorite Ore (10%)'
         ]
@@ -427,6 +505,24 @@ REIEvents.information(e => {
     }
     depositBuilder(DIAMOND_ORES, MARS_DIAMOND_DEPOSIT_INFO);
     depositBuilder(ICE_SHARD_ORES, MARS_DIAMOND_DEPOSIT_INFO);
+
+    // diamond_venus.json
+    const VENUS_DIAMOND_DEPOSIT_INFO = {
+        internalId: 'Venus Diamond Deposit',
+        veinName: 'Diamond',
+        minY: '-64',
+        maxY: '0',
+        size: '25',
+        dimension: 'Venus',
+        biome: 'All',
+        weight: '2',
+        blocks: [
+            '- Diamond Ore (80%)',
+            '- Coal Ore (20%)'
+        ]
+    }
+    depositBuilder(DIAMOND_ORES, VENUS_DIAMOND_DEPOSIT_INFO);
+    depositBuilder(COAL_ORES, VENUS_DIAMOND_DEPOSIT_INFO);
 
     // emerald.json
     const EMERALD_DEPOSIT_INFO = {
@@ -539,6 +635,54 @@ REIEvents.information(e => {
     depositBuilder(EMERALDITE_ORES, SCORIA_NETHER_GOLD_DEPOSIT_INFO);
     depositBuilder(ANCIENT_DEBRIS_ORES, SCORIA_NETHER_GOLD_DEPOSIT_INFO);
 
+    // gold_venus.json
+    const VENUS_GOLD_DEPOSIT_INFO = {
+        internalId: 'Venus Gold Deposit',
+        veinName: 'Gold',
+        minY: '-48',
+        maxY: '16',
+        size: '80',
+        dimension: 'Venus',
+        biome: 'All',
+        weight: '6',
+        blocks: [
+            '- Gold Ore (100%)'
+        ]
+    }
+    depositBuilder(GOLD_ORES, VENUS_GOLD_DEPOSIT_INFO);
+
+    // ice_glacio.json
+    const GLACIO_ICE_DEPOSIT_INFO = {
+        internalId: 'Glacio Ice Deposit',
+        veinName: 'Ice Shard',
+        minY: '-32',
+        maxY: '52',
+        size: '120',
+        dimension: 'Glacio',
+        biome: 'All',
+        weight: '6',
+        blocks: [
+            '- Ice Shard Ore (100%)'
+        ]
+    }
+    depositBuilder(ICE_SHARD_ORES, GLACIO_ICE_DEPOSIT_INFO);
+
+    // ice_mars.json
+    const MARS_ICE_DEPOSIT_INFO = {
+        internalId: 'Mars Ice Deposit',
+        veinName: 'Ice Shard',
+        minY: '-32',
+        maxY: '52',
+        size: '40',
+        dimension: 'Mars',
+        biome: 'All',
+        weight: '4',
+        blocks: [
+            '- Ice Shard Ore (100%)'
+        ]
+    }
+    depositBuilder(ICE_SHARD_ORES, MARS_ICE_DEPOSIT_INFO);
+
     // ice_moon.json
     const MOON_ICE_DEPOSIT_INFO = {
         internalId: 'Ice Deposit',
@@ -575,6 +719,24 @@ REIEvents.information(e => {
     depositBuilder(IRON_ORES, IRON_DEPOSIT_INFO);
     depositBuilder(NICKEL_ORES, IRON_DEPOSIT_INFO);
 
+    // iron_glacio.json
+    const GLACIO_IRON_DEPOSIT_INFO = {
+        internalId: 'Glacio Iron Deposit',
+        veinName: 'Iron',
+        minY: '-32',
+        maxY: '52',
+        size: '70',
+        dimension: 'Glacio',
+        biome: 'All',
+        weight: '7',
+        blocks: [
+            '- Iron Ore (90%)',
+            '- Ice Shard Ore (10%)'
+        ]
+    }
+    depositBuilder(IRON_ORES, GLACIO_IRON_DEPOSIT_INFO);
+    depositBuilder(ICE_SHARD_ORES, GLACIO_IRON_DEPOSIT_INFO);
+
     // iron_mars.json
     const MARS_IRON_DEPOSIT_INFO = {
         internalId: 'Mars Iron Deposit',
@@ -592,6 +754,22 @@ REIEvents.information(e => {
     }
     depositBuilder(IRON_ORES, MARS_IRON_DEPOSIT_INFO);
     depositBuilder(ICE_SHARD_ORES, MARS_IRON_DEPOSIT_INFO);
+
+    // iron_mercury.json
+    const MERCURY_IRON_DEPOSIT_INFO = {
+        internalId: 'Mercury Iron Deposit',
+        veinName: 'Iron',
+        minY: '-64',
+        maxY: '64',
+        size: '120',
+        dimension: 'Mercury',
+        biome: 'Mercury Deltas',
+        weight: '10',
+        blocks: [
+            '- Iron Ore (100%)'
+        ]
+    }
+    depositBuilder(IRON_ORES, MERCURY_IRON_DEPOSIT_INFO);
 
     // iron_moon.json
     const MOON_IRON_DEPOSIT_INFO = {
@@ -628,6 +806,22 @@ REIEvents.information(e => {
     }
     depositBuilder(LAPIS_ORES, LAPIS_DEPOSIT_INFO);
     depositBuilder(FLUORITE_ORES, LAPIS_DEPOSIT_INFO);
+
+    // lapis_glacio.json
+    const GLACIO_LAPIS_DEPOSIT_INFO = {
+        internalId: 'Glacio Lapis Deposit',
+        veinName: 'Lapis',
+        minY: '-64',
+        maxY: '48',
+        size: '40',
+        dimension: 'Glacio',
+        biome: 'All',
+        weight: '4',
+        blocks: [
+            '- Lapis Ore (100%)'
+        ]
+    }
+    depositBuilder(LAPIS_ORES, GLACIO_LAPIS_DEPOSIT_INFO);
 
     // lead_silver.json
     const LEAD_DEPOSIT_INFO = {

@@ -62,6 +62,10 @@ WorldgenEvents.remove(e => {
             ad('moon_desh_ore'),  
             ad('moon_iron_ore'), 
             ad('moon_ice_shard_ore'),
+            mc('deepslate_coal_ore'),
+            mc('deepslate_copper_ore'),
+            mc('deepslate_iron_ore'),
+            mc('deepslate_diamond_ore')
         ]
     );
 
