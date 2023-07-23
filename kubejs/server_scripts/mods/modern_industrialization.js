@@ -309,7 +309,7 @@ ServerEvents.recipes(e => {
         'CMG'
     ],
     {
-        G: '#c:iron_gears',
+        G: '#c:enderium_gears',
         I: '#' + mi('item_pipes'),
         H: mi('desh_drill_head'),
         M: mi('large_advanced_motor'),

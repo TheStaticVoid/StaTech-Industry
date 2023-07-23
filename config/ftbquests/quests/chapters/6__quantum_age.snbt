@@ -208,7 +208,7 @@
 				item: "modern_industrialization:quantum_tank"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 9.0d
 			y: 7.5d
 		}
 		{
@@ -240,8 +240,8 @@
 				item: "modern_industrialization:quantum_barrel"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 8.5d
+			x: 8.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -281,8 +281,8 @@
 				item: "modern_industrialization:replicator"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 11.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2FDA67B4920D335D"]
@@ -349,13 +349,12 @@
 				item: "modern_industrialization:quantum_upgrade"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 11.0d
+			x: 12.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"50D18ACF6401C05D"
-				"4A2F6AA833C88B7C"
 				"78E1B9C83BB915D4"
 			]
 			description: ["By blasting an &aUltradense Metal Ball&f with more energy than several times our &dentire sun&r we can create a single &5Singularity&f, a &3black-hole you can somehow hold in your hands...&r"]
@@ -387,8 +386,8 @@
 				item: "modern_industrialization:singularity"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 8.0d
+			x: 8.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3E139335E6F04C69"]
@@ -425,8 +424,8 @@
 				type: "item"
 			}]
 			title: "Infinity Sword"
-			x: 5.0d
-			y: 13.0d
+			x: 16.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3E139335E6F04C69"]
@@ -482,8 +481,8 @@
 				}
 			]
 			title: "The Infinity Suit"
-			x: 7.0d
-			y: 13.0d
+			x: 16.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["10943911EAB7196F"]
@@ -518,8 +517,8 @@
 				item: "modern_industrialization:uu_matter_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 8.0d
+			x: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["23D9328B5F627E65"]
@@ -586,8 +585,8 @@
 				item: "create:creative_motor"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 13.0d
+			x: 16.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -627,8 +626,8 @@
 				type: "item"
 			}]
 			title: "The Creative Worldshaper"
-			x: 2.0d
-			y: 16.0d
+			x: 20.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4FD7572FC6CC4140"]
@@ -665,8 +664,8 @@
 				item: "modern_industrialization:creative_tank"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 13.0d
+			x: 16.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4FD7572FC6CC4140"]
@@ -706,8 +705,8 @@
 				item: "modern_industrialization:creative_barrel"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 13.0d
+			x: 16.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4FD7572FC6CC4140"]
@@ -739,8 +738,8 @@
 				item: "modern_industrialization:creative_storage_unit"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 13.0d
+			x: 16.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6CD8A3092DDAC055"]
@@ -813,8 +812,11 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["1E525921822F56AC"]
-			description: ["By combining &dlead&r, &5tungstensteel&r, &2iridium&r, and &0neutronium&r you can crate &aUltradense Metal Balls&r."]
+			dependencies: [
+				"1E525921822F56AC"
+				"3C38E4E38D595A8C"
+			]
+			description: ["Nuking the &aCore Fragments&r from your &eCore Mining Drill&r with &5Tungstensteel&r and &dEnderium&r will create an &aUltradense Metal Ball&r. These will be the catalyst for your &dSingularities&r."]
 			id: "4A2F6AA833C88B7C"
 			rewards: [
 				{
@@ -846,6 +848,11 @@
 		}
 		{
 			dependencies: ["4A2F6AA833C88B7C"]
+			description: [
+				"This &aimmense multiblock&r is the final key to unlocking the creation of &dSingularities&r. It's both &2extremely large&r and &3extremely expensive&r. Fully constructing this is a &atrue test of your factory's power&r. At this point you should be &5extensively overclocking machines&r and everything should be running smoothly to create all you will need for this."
+				""
+				"Also knowing the &amodded MC community&r, a lot of you will think to AFK and wait for materials to process, but rather you &dshould be focusing on increasing your production and ironing out bottlenecks&r."
+			]
 			icon: "modern_industrialization:singularity_forge"
 			id: "78E1B9C83BB915D4"
 			rewards: [
@@ -967,11 +974,16 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
-			y: 4.5d
+			x: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2FDA67B4920D335D"]
+			description: [
+				"This behemoth of a &dmultiblock&r is a drill that is able to &adig even further down&r into the planet than the regular quarries you've made up until now. The &2Core Mining Drill&r uses &3Desh Drills&r and &eDrilling Fluid&r to produce &6Core Fragments&r and &aCore Slurry&r. "
+				""
+				"You'll definitely want to use the &6MI Wrench&r multiblock preview feature for building this."
+			]
 			icon: "modern_industrialization:core_drill"
 			id: "500F9FE708EE8F1C"
 			rewards: [
@@ -1110,7 +1122,27 @@
 		}
 		{
 			dependencies: ["500F9FE708EE8F1C"]
+			description: ["&6Core Fragments&r are an extremely dense and hot material that are a key component to creating &dUltradense Metal Balls&r."]
 			id: "3C38E4E38D595A8C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6A8B55C5AEF9BF44"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "74E630547139F54A"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "4494E2C69AE9777F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "5E59379738E1AE81"
@@ -1122,7 +1154,27 @@
 		}
 		{
 			dependencies: ["500F9FE708EE8F1C"]
+			description: ["&aCore Slurry&r is a byproduct of the &eCore Mining Drill&r that can be &3centrifuged&r to obtain bits of &6platinum&r, &dtungsten&r, &5titanium&r, and &2iridium&r."]
 			id: "790924652E61D23D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "182DFD0630C0DB33"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "41AA409AB9A86BB9"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "28ABE207C3D10428"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "5104EE527A6A7853"
 				item: "modern_industrialization:core_slurry_bucket"

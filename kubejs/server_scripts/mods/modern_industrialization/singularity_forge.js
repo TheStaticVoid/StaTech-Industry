@@ -7,7 +7,6 @@ ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/singularity_forge/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
-    let kj = (id) => `kubejs:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let singularityForge = (id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
@@ -34,10 +33,9 @@ ServerEvents.recipes(e => {
         1200,
         [ 
             { amount: 64, item: mi('nuke') },
-            { amount: 1, item: mi('ultradense_metal_ball') },
-            { amount: 1, item: kj('core_fragment') }
+            { amount: 1, item: mi('ultradense_metal_ball') }
         ],
         [ { amount: 1, item: mi('singularity') } ],
-        [ { amount: 100, fluid: mi('neutronium') } ]
+        [ { amount: 1000, fluid: mi('neutronium') } ]
     );
 });

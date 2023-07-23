@@ -2972,7 +2972,11 @@
 		{
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
-			description: ["&aBenzene&r is important for creating &dEthylbenzene&r, a component in the creation of &eStyrene-Butadiene Rubber&r. It can also be used to make &2Nylon&r which can make more &3String&r from &3String.&r"]
+			description: [
+				"&aBenzene&r is important for creating &dEthylbenzene&r, a component in the creation of &eStyrene-Butadiene Rubber&r. It can also be used to make &2Nylon&r which can make more &3String&r from &3String.&r"
+				""
+				"As of &e1.1.0&r, &3Benzene&r can now be used as a burnable fuel in &6MI generators&r at &a100 EU/mb&r. It can be distilled from &2Wood Tar&r which is obtained from a &bPyrolyse Oven&r, making it an optimal power generation option."
+			]
 			id: "12C2A8F5ED305E72"
 			rewards: [
 				{
@@ -8400,6 +8404,77 @@
 			}]
 			x: 30.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["173001AFD7DFE49B"]
+			description: [
+				"Looking for a decent &afood solution&r? Why not solidfy some &eConcrete&r and take a bite."
+				""
+				"&cDon't worry about your teeth&r."
+			]
+			id: "05AA278DBAEEB2FE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3B4B5827C9E36329"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "4B006DC8A8B7ECBF"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "76F078D683FEFBBF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Need a snack?"
+			tasks: [{
+				id: "46215CD0BD55504D"
+				item: "kubejs:concrete_bar"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4365254BED40DF80"]
+			description: [
+				"&aWood Tar&r can be obtained by sending logs through the &ePyrolyse Oven&r. It can be distilled into more useful products."
+				""
+				"Two of those byproducts are &2Benzene&r and &6Creosote&r, both which can be used to burn power."
+			]
+			id: "13616021EA1467E8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D7B118F6F2D593E"
+					table_id: 238949117979752405L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "6E0B083C95C8ED9C"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "54F6B04C0D885411"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "7008A963616F9B01"
+				item: "modern_industrialization:wood_tar_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]

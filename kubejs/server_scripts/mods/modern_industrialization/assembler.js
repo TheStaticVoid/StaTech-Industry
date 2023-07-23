@@ -133,7 +133,7 @@ ServerEvents.recipes(e => {
         [
             { amount: 1, item: mi('desh_drill_head') },
             { amount: 2, tag: 'modern_industrialization:item_pipes' },
-            { amount: 2, tag: 'c:iron_gears' },
+            { amount: 2, tag: 'c:enderium_gears' },
             { amount: 2, item: mi('large_advanced_motor') },
             { amount: 1, item: mi('processing_unit') },
             { amount: 1, item: mi('annealed_copper_wire') }
@@ -233,19 +233,19 @@ ServerEvents.recipes(e => {
         ]
     );
 
-    // -- ULTRADENSE METAL BALL -- //
-    assembler(
-        st('ultradense_metal_ball'),
-        512,
-        600,
-        [
-            { amount: 4, item: mi('tungstensteel_large_plate') },
-            { amount: 4, tag: 'c:lead_plates' },
-            { amount: 1, tag: 'c:iridium_alloy_plates' }
-        ],
-        [ { amount: 1, item: mi('ultradense_metal_ball') } ],
-        [ { amount: 1000, fluid: mi('neutronium') } ]
-    );
+    // // -- ULTRADENSE METAL BALL -- //
+    // assembler(
+    //     st('ultradense_metal_ball'),
+    //     512,
+    //     600,
+    //     [
+    //         { amount: 4, item: mi('tungstensteel_large_plate') },
+    //         { amount: 4, tag: 'c:lead_plates' },
+    //         { amount: 1, tag: 'c:iridium_alloy_plates' }
+    //     ],
+    //     [ { amount: 1, item: mi('ultradense_metal_ball') } ],
+    //     [ { amount: 1000, fluid: mi('neutronium') } ]
+    // );
 
     // -- CALORITE MACHINE CASING -- //
     assembler(

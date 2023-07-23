@@ -452,6 +452,25 @@
 			x: 3.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["2174585D87F83C89"]
+			description: ["&aOre generation&r is altered in this pack as of &e1.1.0&r. It now mimics closer to oregen you would find in &aGregTech&r. There's a quest in the &6first chapter&r that goes into more detail on finding ore veins with the &2Prospector's Pick&r, but I figured it would be a good idea to point it out here before anyone got &bconfused as to why they couldn't find ores while caving&r."]
+			icon: "minecraft:iron_ore"
+			id: "390A2E3905298F9A"
+			rewards: [{
+				id: "50078ECC44655780"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "46DE763A26A3430F"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Altered Oregen"
+			x: 2.0d
+			y: -2.0d
+		}
 	]
 	title: "&a&lWelcome"
 }
