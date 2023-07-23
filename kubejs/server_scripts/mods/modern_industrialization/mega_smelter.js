@@ -120,4 +120,10 @@ ServerEvents.recipes(e => {
         [ { amount: 16, item: tr('galena_dust') } ],
         [ { amount: 16, item: mi('lead_ingot') } ]
     );
+
+    megaSmelt(
+        st('tin_ingot_from_raw_tin'),
+        [ { amount: 16, tag: 'c:raw_zinc_ores' } ],
+        [ { amount: 16, item: tr('zinc_ingot') } ]
+    );
 });

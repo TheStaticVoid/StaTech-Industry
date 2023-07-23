@@ -10,6 +10,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let sd = (id) => `sliceanddice:${id}`;
     let mc = (id) => `minecraft:${id}`;
+    let tr = (id) => `techreborn:${id}`;
 
     // -- CREATE REMOVED RECIPES -- //
     const CREATE_DELETED_ITEMS = [
@@ -28,6 +29,9 @@ ServerEvents.recipes(e => {
     CREATE_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove( {type: cr('crushing'), output: cr('crushed_platinum_ore')} );
     e.remove( {mod: 'create', output: mi('uranium_ingot') });
+
+    e.smelting(tr('zinc_ingot'), '#c:raw_zinc_ores', 1);
+    e.blasting(tr('zinc_ingot'), '#c:raw_zinc_ores', 1);
 
     // -- DOUGH FROM FLOUR AND KIBE WATER BUCKET -- // 
     e.shapeless(cr('dough'), [ cr('wheat_flour'), 'kibe:water_wooden_bucket' ] )
