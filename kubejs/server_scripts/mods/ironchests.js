@@ -145,6 +145,82 @@ ServerEvents.recipes(e => {
         W: ad('wheel')
     })
     .id(st('diamond_dolly'));
+
+    // -- COPPER BARREL -- //
+    e.shaped(ic('copper_barrel'), [
+        'CCC',
+        'CBC',
+        'CCC'
+    ],
+    {
+        C: '#c:copper_plates',
+        B: '#c:barrels'
+    })
+    .id(st('copper_barrel'));
+
+    // -- IRON BARREL -- //
+    e.shaped(ic('iron_barrel'), [
+        'III',
+        'IBI',
+        'III'
+    ],
+    {
+        I: '#c:iron_plates',
+        B: ic('copper_barrel')
+    })
+    .id(st('iron_barrel'));
+
+    // -- GOLD BARREL -- //
+    e.shaped(ic('gold_barrel'), [
+        'GGG',
+        'GBG',
+        'GGG'
+    ],
+    {
+        G: '#c:gold_plates',
+        B: ic('iron_barrel')
+    })
+    .id(st('gold_barrel'));
+
+    // -- DIAMOND BARREL -- //
+    e.shaped(ic('diamond_barrel'), [
+        'DDD',
+        'DBD',
+        'DDD'
+    ],
+    {
+        D: '#c:diamond_plates',
+        B: ic('gold_barrel')
+    })
+    .id(st('diamond_barrel'));
+
+    // -- OBSIDIAN BARREL -- //
+    e.shaped(ic('obsidian_barrel'), [
+        'OOO',
+        'OBO',
+        'OOO'
+    ],
+    {
+        O: '#c:obsidian',
+        B: ic('diamond_barrel')
+    })
+    .id(st('obsidian_barrel'));
+
+    // -- CRYSTAL BARREL -- //
+    e.shaped(ic('crystal_barrel'), [
+        'GGG',
+        'ABA',
+        'GGG'
+    ],
+    {
+        G: '#c:colorless_glass',
+        A: '#c:amethyst',
+        B: ic('diamond_barrel')
+    })
+    .id(st('crystal_barrel'));
+
+    // -- NETHERITE BARREL -- //
+    e.smithing(ic('netherite_barrel'), ic('diamond_barrel'), '#c:netherite_ingots').id(st('netherite_barrel'));
 });
 
 ServerEvents.tags('item', e => {

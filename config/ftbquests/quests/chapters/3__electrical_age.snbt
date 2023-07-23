@@ -3849,8 +3849,8 @@
 				item: "inmis:bejeweled_backpack"
 				type: "item"
 			}]
-			x: -25.5d
-			y: 13.0d
+			x: -23.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["7DE1DE92C45C81BB"]
@@ -8520,6 +8520,131 @@
 			title: "Alternator \\& Motor"
 			x: 4.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["7DE1DE92C45C81BB"]
+			description: ["The &bDiamond Barrel&r is a long awaited upgrade to your storage barrels. It allows you to store &e72 stacks of items&r."]
+			id: "4BFCCF11AC1E8126"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0A48775CB20F1E5A"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "61589B2E2FC65169"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2FF3C172F2DC016A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "A long awaited storage upgrade v2"
+			tasks: [{
+				id: "47C422ED21E96D51"
+				item: "ironchests:diamond_barrel"
+				type: "item"
+			}]
+			x: -25.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["4BFCCF11AC1E8126"]
+			description: ["The &dCrystal Barrel&r has the same storage as the &bDiamond Barrel&r, except it shows the contents inside of it."]
+			id: "310A10B1ADB099FB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3EA8FED52E7D1A00"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "7D3F357E2E0E8F99"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "6FFD641D42AB7244"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6A2A029F3C46C6B4"
+				item: "ironchests:crystal_barrel"
+				type: "item"
+			}]
+			x: -25.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["4BFCCF11AC1E8126"]
+			description: ["The &dObsidian Barrel&r has the same storage as the &bDiamond Barrel&r."]
+			id: "3D53CF98BD92C153"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4B58AB42106A5D8D"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "365674574DE5D25D"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "5B2F1528472937AD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "04652A1CBB51A017"
+				item: "ironchests:obsidian_barrel"
+				type: "item"
+			}]
+			x: -26.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["4BFCCF11AC1E8126"]
+			description: ["The &cNetherite Barrel&r is the ultimate upgrade for your barrel, boasting a capacity of &e91 item stacks&r."]
+			id: "540729B016A2B0FA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "04F5F46170F9E7B6"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "335A9A9AF8001E11"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "1FFD687AFAC1F6FD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "266776915F5DE18B"
+				item: "ironchests:netherite_barrel"
+				type: "item"
+			}]
+			x: -24.5d
+			y: 14.5d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]

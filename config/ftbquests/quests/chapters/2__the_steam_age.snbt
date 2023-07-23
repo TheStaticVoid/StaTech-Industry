@@ -3555,8 +3555,8 @@
 				item: "ironchests:gold_chest"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.0d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
@@ -3586,8 +3586,8 @@
 				item: "ironchests:iron_chest"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.5d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5EDE88BDA0182BD7"]
@@ -3617,12 +3617,16 @@
 				item: "ironchests:copper_chest"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
-			description: ["&aChest Upgrades&r allow you to upgrade your chests &cwithout&r having to break them or move their contents into a new chest."]
+			description: [
+				"&aChest Upgrades&r allow you to upgrade your chests &cwithout&r having to break them or move their contents into a new chest."
+				""
+				"Please note that &aChest Upgrades&r &cdo not work&r on &dBarrels&r from the &eIron Chests&r mod."
+			]
 			id: "20FE11ACDC27CA84"
 			rewards: [
 				{
@@ -3657,7 +3661,7 @@
 			}]
 			title: "Chest Upgrades"
 			x: -4.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
@@ -3697,8 +3701,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: -1.0d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
@@ -3740,8 +3744,8 @@
 				}
 			]
 			title: "Lock \\& Key"
-			x: -4.5d
-			y: 1.0d
+			x: -5.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1F5ACBB3A3D021B3"]
@@ -4276,6 +4280,96 @@
 			}]
 			x: 12.5d
 			y: 15.5d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			description: ["With &cCopper Plates&r, you can upgrade your normal barrels to &ehold more items&r. This one can store up to &236 stacks of items&r."]
+			id: "779A48D8FB91F32C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A08A4BCF2E6E8E4"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "463A5A9DEF49AE80"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "463F26741E795031"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "0A5049221D2C3F37"
+				item: "ironchests:copper_barrel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["779A48D8FB91F32C"]
+			description: ["The &7Iron Barrel&r can store &254 stacks of items&r."]
+			id: "7A00DD3D645AB09E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5C81611AC84764BB"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "3F7AFB64F169FBE1"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "491B6092EDE7B27B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "69BA029D1617FB01"
+				item: "ironchests:iron_barrel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A00DD3D645AB09E"]
+			description: ["The &eGold Barrel&r stores &266 stacks of items&r. This is the highest tier you can make until you can process &bDiamond Plates&r."]
+			id: "213881AB4757DAC8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A8B19E3C1EFBEEF"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "3D410D00E0833E4B"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "55C178711A66409C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6C7EECF6E5632148"
+				item: "ironchests:gold_barrel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
 		}
 	]
 	subtitle: ["The Basis of Industry"]
