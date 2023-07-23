@@ -20,6 +20,9 @@
         }
     },
     "AutoRefillSettings": {
+        "refill_before_tool_break": {
+            "value": false
+        },
         "tool_damage_threshold": 5,
         "audio_durability_notification": {
             "value": false
