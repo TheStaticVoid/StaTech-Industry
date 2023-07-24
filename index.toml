@@ -218,11 +218,11 @@ hash = "94e4797897fc5f8517527bd52f4effa0fb8f05ae3fd36da49f4f2777a8846199"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2__the_steam_age.snbt"
-hash = "1ee656a965dae9b854e6ada6bf8d4922098bcda6fb344a128dad7add60437f5c"
+hash = "6d7018485cdc6e4c5ba247bffdecd76012af532616e703e629673f9e83b826e8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3__electrical_age.snbt"
-hash = "c708b2d99af93374cab827fca2489661ab0f11d2ef1765e4648b3a2e44d6e986"
+hash = "6c01545661c89f633f9a422d806e1d72308fde35a3346f7d6fe5db43d55ff51c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4__digital_age.snbt"
@@ -242,11 +242,7 @@ hash = "ed37ce7c41a16c38784bd067e8013e16b4f35508ce9114553a92b1d4f8805aee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create.snbt"
-hash = "e9b6804469abccc2fd88b85e41dd3ff1d6ad417c8e387cbf0f559155f007048b"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/temporarily_hidden.snbt"
-hash = "a464194d9998c59710d0501fd06b9472c5451231c28f536b282bd1d701ca0dc6"
+hash = "534c082adb5083a1d992b2d74635613ad9c77f85270a1ee37e940d59f540e91c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/twilight_forest.snbt"
@@ -270,15 +266,15 @@ hash = "0e644c7b2ff625d73e90e78f254c49307fb36a13b85cf856bce33b3245b58177"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/chapter_2_late_rewards.snbt"
-hash = "e28b24b4b05a538779888bf624143439cc130f7285e66be91fc257d99aeee2b3"
+hash = "4a58904533f43fbd72362600881cf8642bac1308b794ae2891e32e61501c735f"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/chapter_2_rewards.snbt"
-hash = "4f01fddcd7e119d6ea55aa1ff7d1c2f5a6a7548d3f294f0beb182de410296d87"
+hash = "3d4a46af575bbc371d45bdcb5808427409db39d4ca43d66715215b5b8b206127"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/chapter_3_common_rewards.snbt"
-hash = "a236aa7c814dae1e3711930ede888771263aef11841a01aefd578575e1bd2e22"
+hash = "10eb5da515fa38e9781010c4ed1dcdda7890b781f97e65670f97e970e223c8f9"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/chapter_3_legendary_rewards.snbt"
@@ -286,7 +282,7 @@ hash = "cedd87ff9c4613099df8d4936e1272f59d2e7754c345373c12e4179f95a6d83f"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/chapter_3_rare_rewards.snbt"
-hash = "9746d331e348a461e738d9d8d03dea2bb192c4309aac98bd1aa12bdc629d74ae"
+hash = "e1b3a3735064ea15b89399dddabfa92f842d193972921a9524cdf41b9d4d49a0"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/chapter_4_common_loot.snbt"
@@ -366,7 +362,7 @@ hash = "df4c4599084a8216f4bd512739f93785f98ef7983e0a20d1ccc8de60135d63f4"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "dcfd1d909fb71d613b9f289a97d8f08571dbb0df71fabdfa8ff4224428da0006"
+hash = "e83b796a65b0e6eaaad8994d4d472ab828633e42a49c1baca64472bccf0d1971"
 
 [[files]]
 file = "config/legendarytooltips-common.toml"
@@ -1577,8 +1573,44 @@ file = "kubejs/data/geocluster/loot_tables/blocks/zinc_ore_sample.json"
 hash = "37dbb1ea0b9a922c148a1cad2e83695eb018e9c9b77746f61d2e93af9778def4"
 
 [[files]]
+file = "kubejs/data/ironchests/loot_tables/blocks/copper_barrel.json"
+hash = "3806076b923959b25e93313b61b41e7bb8240c280c2f190a6112182d42c37092"
+
+[[files]]
+file = "kubejs/data/ironchests/loot_tables/blocks/crystal_barrel.json"
+hash = "db87cd915f0cbea8704e51e9ab52daa558fd7753e20a9afbb55e756669e1a1a8"
+
+[[files]]
+file = "kubejs/data/ironchests/loot_tables/blocks/diamond_barrel.json"
+hash = "ddd1a35b9a9d63427eb6892afc4cdc502740eaf2da442397683cff6866119fb9"
+
+[[files]]
+file = "kubejs/data/ironchests/loot_tables/blocks/gold_barrel.json"
+hash = "a4ba64c06bb671616c8ba375e19680b880985368eaa9cb6cde98496510b85177"
+
+[[files]]
+file = "kubejs/data/ironchests/loot_tables/blocks/iron_barrel.json"
+hash = "2dbc680565e5631f502c3a6916ce7039ad6ea38e026f9aa26d32d79c106f6bfc"
+
+[[files]]
+file = "kubejs/data/ironchests/loot_tables/blocks/netherite_barrel.json"
+hash = "a605f3cfbd0906cc55133501ab00a63e879013e2274cc8fd4187bf38b09d0df6"
+
+[[files]]
+file = "kubejs/data/ironchests/loot_tables/blocks/obsidian_barrel.json"
+hash = "6319b71b53726e6d7f54d4f5e5c3f31909953e408d2d0d237c61e4c90d8cfabc"
+
+[[files]]
+file = "kubejs/data/ironchests/tags/blocks/barrels.json"
+hash = "22d92f747cc32cc2fd2bf4556425789509dc3d3571925979ce22410b5a54644b"
+
+[[files]]
 file = "kubejs/data/minecraft/configured_feature/salt_ore_feature.json"
 hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/blocks/mineable/pickaxe.json"
+hash = "49d33dc234c1142f0ea9067607412c1f100392abb15881d4437535890818ff9f"
 
 [[files]]
 file = "kubejs/data/statech/farmingforblockheads_compat/byg_saplings.json"
@@ -1706,7 +1738,7 @@ hash = "469fe372c9709b87a7f420ba48e360f1b55bcd3788ecd48bc8eefa7f16ff382c"
 
 [[files]]
 file = "kubejs/server_scripts/mods/create.js"
-hash = "1ce19df96923d654f9b0241c34f91862a21c74b0d7d7f6c92c9904a5829c8958"
+hash = "efe5e335afd3833647b3d3c67d650ab93b6cded91aaba1ba8c46ca39e8934530"
 
 [[files]]
 file = "kubejs/server_scripts/mods/create/compacting.js"
@@ -1726,7 +1758,7 @@ hash = "f7dfb90976f60eab3d36e7054c114de1c47d10b5b67a14ee57250026527a5554"
 
 [[files]]
 file = "kubejs/server_scripts/mods/createaddition.js"
-hash = "633af580591cec27613d0b5639d6259d9cac9c136a1de28d8c8e87c2dba2c942"
+hash = "371f1c104cf548c298e21b4b5ae983fcfe5e3df08b08e98a07261e7d4276b49d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/dankstorage.js"
@@ -1766,7 +1798,7 @@ hash = "97228652b19b031a4aef0ed91c4db1d65cf70db81148ac1d1b01aef749c23f21"
 
 [[files]]
 file = "kubejs/server_scripts/mods/ironchests.js"
-hash = "fc73505d54c87b54b4eff566c577882c11b3a1eefe9438b4d4777ddb41e9947b"
+hash = "93720636cdb964f0623b713ccbbacd851eb7ee299f36f2191ed7e9af178cd5a1"
 
 [[files]]
 file = "kubejs/server_scripts/mods/kibe.js"
@@ -1814,7 +1846,7 @@ hash = "01b8be83156d1c2d02602322d5081cffca8658ac3c9f3151d70f3141d0b42bb6"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/cutting_machine.js"
-hash = "68ef10979638b7e2a13003d046f81c3b8d14293239b7d93a587c85add8b21f3a"
+hash = "ec1c5db703f31a3083b369d4fe88ef77b1aefcd57945fdcef5da6178512097f3"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/distillation_tower.js"
@@ -1858,7 +1890,7 @@ hash = "b70deef85e48eacf0e442788ffe7cbe4d08bd5c1e8e2c581b774e3acc5a041b8"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/mega_smelter.js"
-hash = "14290cfcb6b3869020465fc729346ed34527c5df8a140d1ff286d9ea087cf5a2"
+hash = "7912680506d27a48fad1a2fb20cc80a6d0f49611470c7ef357f435a6abc2fec1"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/mixer.js"
@@ -2892,7 +2924,7 @@ metafile = true
 
 [[files]]
 file = "mods/naturalist.pw.toml"
-hash = "7986b1ce8ced0d10832953a1d61795ebfb8e95eb66845a4150973d3d4a5361b8"
+hash = "5dcc75c559fbd2d852bb2c5fa5627bfdf981e67e595f5a0c8e718312d2aac7ba"
 metafile = true
 
 [[files]]
@@ -3202,7 +3234,7 @@ metafile = true
 
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
-hash = "614a19f87a84603cca2465bc41c2dad6919b1ea068178d5b78584f3706c38ca1"
+hash = "ab898833eea5b0cb8fe918a85a81feec4cf1f9b6853fb8845e537fd299c222c5"
 metafile = true
 
 [[files]]

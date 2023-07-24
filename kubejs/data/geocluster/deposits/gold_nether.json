@@ -3,8 +3,8 @@
     "config": {
         "yMin": 10,
         "yMax": 60,
-        "size": 30,
-        "spread": 10,
+        "size": 50,
+        "spread": 15,
         "generationWeight": 8,
         "blockStateMatchers": [
             "minecraft:netherrack",
@@ -24,21 +24,21 @@
             "default": [
                 {
                     "block": "nether_gold_ore",
-                    "chance": 0.999
+                    "chance": 0.995
                 },
                 {
                     "block": "ancient_debris",
-                    "chance": 0.001
+                    "chance": 0.005
                 }
             ],
             "byg:blue_netherrack": [
                 {
                     "block": "byg:blue_nether_gold_ore",
-                    "chance": 0.994
+                    "chance": 0.990
                 },
                 {
                     "block": "ancient_debris",
-                    "chance": 0.001
+                    "chance": 0.005
                 },
                 {
                     "block": "byg:pendorite_ore",
@@ -48,11 +48,11 @@
             "byg:brimstone": [
                 {
                     "block": "byg:brimstone_nether_gold_ore",
-                    "chance": 0.994
+                    "chance": 0.990
                 },
                 {
                     "block": "ancient_debris",
-                    "chance": 0.001
+                    "chance": 0.005
                 },
                 {
                     "block": "byg:emeraldite_ore",
@@ -62,11 +62,11 @@
             "byg:scoria_stone": [
                 {
                     "block": "nether_gold_ore",
-                    "chance": 0.994
+                    "chance": 0.990
                 },
                 {
                     "block": "ancient_debris",
-                    "chance": 0.001
+                    "chance": 0.005
                 },
                 {
                     "block": "byg:emeraldite_ore",
