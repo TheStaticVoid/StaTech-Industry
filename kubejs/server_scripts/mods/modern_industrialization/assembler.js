@@ -10,6 +10,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let ad = (id) => `ad_astra:${id}`;
     let mc = (id) => `minecraft:${id}`;
+    let kj = (id) => `kubejs:${id}`;
     let ae = (id) => `ae2:${id}`;
 
     // -- ASSEMBLER REMOVED RECIPES -- //
@@ -95,6 +96,23 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('furnace') }
         ],
         [ { amount: 1, item: mi('bronze_furnace') } ]
+    );
+  
+    // -- SPACE PROBE -- //
+    assembler(
+        st('space_probe'),
+        32,
+        200,
+        [
+            { amount: 2, item: astra('rocket_fin') },
+            { amount: 2, item: mi('enderium_gear') },
+            { amount: 1, item: mi('desh_drill') },
+            { amount: 1, item: mi('processing_unit') },
+            { amount: 1, item: astra('desh_engine') },
+            { amount: 1, item: mi('titanium_tank') },
+            { amount: 1, item: mi('titanium_tank') }
+        ],
+        [ { amount: 4, item: kj('space_probe') } ]
     );
 
     // -- CUPRONICKEL HEATING COIL -- //
@@ -466,20 +484,20 @@ ServerEvents.recipes(e => {
         32000,
         2400,
         [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('superconductor_storage_unit') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('superconductor_storage_unit') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
         ],
         [ { amount: 1, item: mi('creative_storage_unit') } ],
         [
-            { amount: 1000, fluid: mi('uu_matter') },
-            { amount: 1000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') }
         ]
     );
 
@@ -489,20 +507,20 @@ ServerEvents.recipes(e => {
         32000,
         2400,
         [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('quantum_barrel') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('quantum_barrel') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
         ],
         [ { amount: 1, item: mi('creative_barrel') } ],
         [
-            { amount: 1000, fluid: mi('uu_matter') },
-            { amount: 1000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') }
         ]
     );
 
@@ -512,20 +530,20 @@ ServerEvents.recipes(e => {
         32000,
         2400,
         [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('quantum_tank') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('quantum_tank') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
         ],
         [ { amount: 1, item: mi('creative_tank') } ],
         [
-            { amount: 1000, fluid: mi('uu_matter') },
-            { amount: 1000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') }
         ]
     );
 
@@ -535,20 +553,20 @@ ServerEvents.recipes(e => {
         32000,
         2400,
         [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('plasma_turbine') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('plasma_turbine') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') }
         ],
         [ { amount: 1, item: 'create:creative_motor' } ],
         [
-            { amount: 1000, fluid: mi('uu_matter') },
-            { amount: 1000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') }
         ]
     );
 
@@ -559,13 +577,13 @@ ServerEvents.recipes(e => {
         2400,
         [
             { amount: 1, item: mi('quantum_helmet') },
-            { amount: 64, item: mi('creative_tank') },
+            { amount: 1, item: mi('creative_tank') },
             { amount: 1, item: mi('quantum_chestplate') },
-            { amount: 64, item: mi('creative_storage_unit') },
+            { amount: 1, item: mi('creative_storage_unit') },
             { amount: 1, item: mi('quantum_sword') },
-            { amount: 64, item: 'create:creative_motor' },
+            { amount: 1, item: 'create:creative_motor' },
             { amount: 1, item: mi('quantum_leggings') },
-            { amount: 64, item: mi('creative_barrel') },
+            { amount: 1, item: mi('creative_barrel') },
             { amount: 1, item: mi('quantum_boots') }
         ],
         [ { amount: 1, item: 'create:handheld_worldshaper' } ],

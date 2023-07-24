@@ -39,7 +39,8 @@ ServerEvents.tags('item', e => {
         ag('sniper_classic'),
         ag('sniper_cowboy'),
         ag('smg_heavy'),
-        ag('shotgun_riot')
+        ag('shotgun_riot'),
+        ag('lmg_m60')
     ];
     GUNS.forEach(id => e.add('kubejs:guns', id));
 });
