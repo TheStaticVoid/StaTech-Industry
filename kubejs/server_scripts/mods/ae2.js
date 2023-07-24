@@ -1,81 +1,87 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
-    // -- REMOVE RECIPES -- //
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:ae2/${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
+    let ae = (id) => `ae2:${id}`;
+    let wt = (id) => `ae2wtlib:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+
+    // -- AE2 REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
-        'ae2:network/blocks/inscribers',
-        'ae2:transform/fluix_crystals',
-        'ae2:transform/fluix_crystal',
-        'ae2:transform/certus_quartz_crystals',
-        'ae2:network/blocks/controller',
-        'ae2:network/blocks/crystal_processing_charger',
-        'ae2:network/blocks/energy_vibration_chamber',
-        'ae2:network/crafting/patterns_blank',
-        'ae2:misc/tank_sky_stone',
-        'ae2:network/blocks/security_station',
-        'ae2:network/blocks/quantum_ring',
-        'ae2:network/blocks/spatial_io_port',
-        'ae2:network/blocks/storage_drive',
-        'ae2:network/blocks/storage_chest',
-        'ae2:network/blocks/interfaces_interface',
-        'ae2:network/blocks/cell_workbench',
-        'ae2:network/blocks/io_port',
-        'ae2:network/blocks/io_condenser',
-        'ae2:network/blocks/energy_energy_acceptor',
-        'ae2:network/blocks/crystal_processing_quartz_growth_accelerator',
-        'ae2:network/crafting/cpu_crafting_unit',
-        'ae2:network/blocks/pattern_providers_interface',
-        'ae2:network/crafting/molecular_assembler',
-        'ae2:network/blocks/spatial_anchor',
-        'ae2:tools/misctools_entropy_manipulator',
-        'ae2:tools/misctools_charged_staff',
-        'ae2:tools/network_color_applicator',
-        'ae2:tools/matter_cannon',
-        'ae2:tools/network_biometric_card',
-        'ae2:tools/network_memory_card',
-        'ae2:materials/basiccard',
-        'ae2:materials/advancedcard',
-        'ae2:network/cells/item_cell_housing',
-        'ae2:network/wireless_part',
-        'ae2:network/wireless_booster',
-        'ae2:network/cells/view_cell',
-        'ae2:network/cells/item_storage_cell_1k',
-        'ae2:network/cells/item_storage_cell_4k',
-        'ae2:network/cells/item_storage_cell_16k',
-        'ae2:network/cells/item_storage_cell_64k',
-        'ae2:network/cells/item_storage_cell_256k',
-        'ae2:network/cells/spatial_storage_cell_2_cubed',
-        'ae2:network/cells/spatial_storage_cell_16_cubed',
-        'ae2:network/cells/spatial_storage_cell_128_cubed',
-        'ae2:network/parts/panels_semi_dark_monitor',
-        'ae2:network/parts/import_bus',
-        'ae2:network/parts/annihilation_plane_alt2',
-        'ae2:network/parts/annihilation_plane_alt',
-        'ae2:network/parts/formation_plane_alt',
-        'ae2:network/parts/formation_plane',
-        'ae2:network/parts/tunnels_me',
-        'ae2:network/parts/export_bus',
+        ae('network/blocks/inscribers'),
+        ae('transform/fluix_crystals'),
+        ae('transform/fluix_crystal'),
+        ae('transform/certus_quartz_crystals'),
+        ae('network/blocks/controller'),
+        ae('network/blocks/crystal_processing_charger'),
+        ae('network/blocks/energy_vibration_chamber'),
+        ae('network/crafting/patterns_blank'),
+        ae('misc/tank_sky_stone'),
+        ae('network/blocks/security_station'),
+        ae('network/blocks/quantum_ring'),
+        ae('network/blocks/spatial_io_port'),
+        ae('network/blocks/storage_drive'),
+        ae('network/blocks/storage_chest'),
+        ae('network/blocks/interfaces_interface'),
+        ae('network/blocks/cell_workbench'),
+        ae('network/blocks/io_port'),
+        ae('network/blocks/io_condenser'),
+        ae('network/blocks/energy_energy_acceptor'),
+        ae('network/blocks/crystal_processing_quartz_growth_accelerator'),
+        ae('network/crafting/cpu_crafting_unit'),
+        ae('network/blocks/pattern_providers_interface'),
+        ae('network/crafting/molecular_assembler'),
+        ae('network/blocks/spatial_anchor'),
+        ae('tools/misctools_entropy_manipulator'),
+        ae('tools/misctools_charged_staff'),
+        ae('tools/network_color_applicator'),
+        ae('tools/matter_cannon'),
+        ae('tools/network_biometric_card'),
+        ae('tools/network_memory_card'),
+        ae('materials/basiccard'),
+        ae('materials/advancedcard'),
+        ae('network/cells/item_cell_housing'),
+        ae('network/cells/fluid_cell_housing'),
+        ae('network/wireless_part'),
+        ae('network/wireless_booster'),
+        ae('network/cells/view_cell'),
+        ae('network/cells/item_storage_cell_1k'),
+        ae('network/cells/item_storage_cell_4k'),
+        ae('network/cells/item_storage_cell_16k'),
+        ae('network/cells/item_storage_cell_64k'),
+        ae('network/cells/item_storage_cell_256k'),
+        ae('network/cells/fuid_cell_housing'),
+        ae('network/cells/fluid_storage_cell_1k'),
+        ae('network/cells/fluid_storage_cell_4k'),
+        ae('network/cells/fluid_storage_cell_16k'),
+        ae('network/cells/fluid_storage_cell_64k'),
+        ae('network/cells/fluid_storage_cell_256k'),
+        ae('network/cells/spatial_storage_cell_2_cubed'),
+        ae('network/cells/spatial_storage_cell_16_cubed'),
+        ae('network/cells/spatial_storage_cell_128_cubed'),
+        ae('network/parts/panels_semi_dark_monitor'),
+        ae('network/parts/import_bus'),
+        ae('network/parts/annihilation_plane_alt2'),
+        ae('network/parts/annihilation_plane_alt'),
+        ae('network/parts/formation_plane_alt'),
+        ae('network/parts/formation_plane'),
+        ae('network/parts/tunnels_me'),
+        ae('network/parts/export_bus'),
+        wt('magnet_card'),
+        ae('network/blocks/energy_dense_energy_cell')
     ];
     REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
 
-    let mi = (id) => `modern_industrialization:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let st = (id) => `statech:ae2/${id}`;
-
     // -- REMOVE ALL ENDER DUST OUTPUTS -- //
-    e.remove({output: ae('ender_dust')});
-    
-    // -- INSCRIBER -- //
-    e.shaped(ae('inscriber'), [
-        'MPM',
-        'CHC',
-        'MPM'
-    ],
-    {
-        P: mi('piston'),
-        M: mi('advanced_motor'),
-        H: mi('turbo_machine_hull'),
-        C: mi('digital_circuit')
-    })
-    .id(st('inscriber'));
+    e.remove({ output: ae('ender_dust') });
+
+    // -- REMOVE ALL INSCRIBER RECIPES -- // 
+    e.remove({ type: ae('inscriber') });
 
     // -- CONTROLLER -- //
     e.shaped(ae('controller'), [
@@ -86,8 +92,8 @@ ServerEvents.recipes(e => {
     {
         E: ae('engineering_processor'),
         F: ae('fluix_crystal'),
-        C: mi('digital_circuit'),
-        H: mi('turbo_machine_hull'),
+        C: mi('electronic_circuit'),
+        H: mi('advanced_machine_hull'),
         L: ae('logic_processor'),
         P: ae('calculation_processor')
     })
@@ -101,13 +107,13 @@ ServerEvents.recipes(e => {
     ],
     {
         S: mi('steel_large_plate'),
-        C: mi('annealed_copper_wire'),
+        C: mi('copper_wire'),
         B: 'techreborn:low_voltage_su'
     })
     .id(st('charger'));
 
-    // Buff the Blank Pattern recipe
-    e.shaped('4x ae2:blank_pattern', [
+    // -- BLANK PATTERN -- //
+    e.shaped(ae('blank_pattern'), [
         'QGQ',
         'GCG',
         'SSS'
@@ -116,32 +122,9 @@ ServerEvents.recipes(e => {
         Q: ae('quartz_glass'),
         G: '#c:glowstone_dusts',
         C: '#c:certus_quartz',
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('blank_pattern'));
-
-    // -- PRINTED SILICON FROM SILICON INGOT -- //
-    e.custom({
-        id: st('printed_silicon_from_ingot'),
-        type: ae('inscriber'),
-        ingredients: {
-            middle: {
-                tag: 'c:silicon_ingots'
-            },
-            top: {
-                item: ae('silicon_press')
-            }
-        },
-        mode: 'inscribe',
-        result: {
-            item: ae('printed_silicon')
-        }
-    });
-
-    // -- Replace the remaining iron ingots in recipes to be stainless steel -- //
-    // This shit doesn't work on servers?????
-    // e.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', '#c:stainless_steel_ingots');
-    // e.replaceInput({mod: 'ae2'}, '#c:iron_ingots', '#c:stainless_steel_ingots')
 
     // -- ME SECURITY TERMINAL -- //
     e.shaped(ae('security_station'), [
@@ -150,7 +133,7 @@ ServerEvents.recipes(e => {
         'SES'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         C: ae('chest'),
         F: ae('fluix_glass_cable'),
         O: ae('cell_component_16k'),
@@ -165,7 +148,7 @@ ServerEvents.recipes(e => {
         'SLS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         L: ae('logic_processor'),
         E: ae('engineering_processor'),
         C: ae('energy_cell'),
@@ -180,7 +163,7 @@ ServerEvents.recipes(e => {
         'SES'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         G: '#c:glass',
         F: ae('fluix_glass_cable'),
         I: ae('io_port'),
@@ -191,11 +174,12 @@ ServerEvents.recipes(e => {
     // -- ME DRIVE -- // 
     e.shaped(ae('drive'), [
         'SES',
-        'F F',
+        'FHF',
         'SES'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
+        H: mi('turbo_machine_hull'),
         E: ae('engineering_processor'),
         F: ae('fluix_glass_cable')
     })
@@ -211,8 +195,8 @@ ServerEvents.recipes(e => {
         G: '#c:glass',
         T: ae('terminal'),
         F: ae('fluix_glass_cable'),
-        S: '#c:stainless_steel_ingots',
-        C: '#c:copper_ingots'
+        S: '#c:aluminum_plates',
+        C: '#c:copper_plates'
     })
     .id(st('chest'));
 
@@ -223,7 +207,7 @@ ServerEvents.recipes(e => {
         'SGS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         G: '#c:glass',
         A: ae('annihilation_core'),
         F: ae('formation_core')
@@ -239,7 +223,7 @@ ServerEvents.recipes(e => {
     {
         W: '#minecraft:wool',
         C: ae('calculation_processor'),
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         H: '#c:wooden_chests'
     })
     .id(st('cell_workbench'));
@@ -254,7 +238,7 @@ ServerEvents.recipes(e => {
         G: '#c:glass',
         D: ae('drive'),
         F: ae('fluix_glass_cable'),
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         L: ae('logic_processor')
     })
     .id(st('io_port'));
@@ -266,7 +250,7 @@ ServerEvents.recipes(e => {
         'SGS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         G: '#c:glass',
         F: ae('fluix_dust')
     })
@@ -279,9 +263,9 @@ ServerEvents.recipes(e => {
         'SGS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         G: ae('quartz_glass'),
-        C: '#c:copper_ingots'
+        C: '#c:copper_plates'
     })
     .id(st('energy_acceptor'));
 
@@ -292,7 +276,7 @@ ServerEvents.recipes(e => {
         'SFS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         F: ae('fluix_glass_cable'),
         G: ae('quartz_glass'),
         B: ae('fluix_block')
@@ -306,7 +290,7 @@ ServerEvents.recipes(e => {
         'SCS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         C: ae('calculation_processor'),
         F: ae('fluix_glass_cable'),
         L: ae('logic_processor')
@@ -320,7 +304,7 @@ ServerEvents.recipes(e => {
         'SCS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         C: '#c:workbench',
         A: ae('annihilation_core'),
         F: ae('formation_core')
@@ -334,10 +318,10 @@ ServerEvents.recipes(e => {
         'SGS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         G: ae('quartz_glass'),
         A: ae('annihilation_core'),
-        W: '#c:workbench',
+        W: mi('turbo_machine_hull'),
         F: ae('formation_core')
     })
     .id(st('molecular_assembler'));
@@ -352,7 +336,7 @@ ServerEvents.recipes(e => {
         P: ae('spatial_pylon'),
         F: ae('fluix_glass_cable'),
         C: ae('spatial_cell_component_128'),
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         E: ae('engineering_processor')
     })
     .id(st('spatial_anchor'));
@@ -367,7 +351,7 @@ ServerEvents.recipes(e => {
         F: ae('fluix_crystal'),
         C: ae('energy_cell'),
         E: ae('engineering_processor'),
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('entropy_manipulator'));
 
@@ -379,7 +363,7 @@ ServerEvents.recipes(e => {
     ],
     {
         C: ae('charged_certus_quartz_crystal'),
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('charged_staff'));
 
@@ -391,7 +375,7 @@ ServerEvents.recipes(e => {
     ],
     {
         F: ae('formation_core'),
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         C: ae('cell_component_4k'),
         E: ae('energy_cell')
     })
@@ -404,7 +388,7 @@ ServerEvents.recipes(e => {
         'S  '
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         F: ae('formation_core'),
         C: ae('cell_component_4k'),
         E: ae('energy_cell')
@@ -418,7 +402,7 @@ ServerEvents.recipes(e => {
     ],
     {
         E: ae('engineering_processor'),
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         G: '#c:gold_ingots',
         R: '#c:redstone_dusts'
     })
@@ -431,8 +415,8 @@ ServerEvents.recipes(e => {
     ],
     {
         C: ae('calculation_processor'),
-        S: '#c:stainless_steel_ingots',
-        G: '#c:gold_ingots',
+        S: '#c:aluminum_plates',
+        G: '#c:gold_plates',
         R: '#c:redstone_dusts'
     })
     .id(st('memory_card'));
@@ -445,7 +429,7 @@ ServerEvents.recipes(e => {
     ],
     {
         G: '#c:gold_ingots',
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         R: '#c:redstone_dusts',
         C: ae('calculation_processor')
     })
@@ -459,7 +443,7 @@ ServerEvents.recipes(e => {
     ],
     {
         D: '#c:diamonds',
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         R: '#c:redstone_dusts',
         C: ae('calculation_processor')
     })
@@ -474,7 +458,7 @@ ServerEvents.recipes(e => {
     {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('item_cell_housing'));
 
@@ -486,7 +470,7 @@ ServerEvents.recipes(e => {
     ],
     {
         F: ae('fluix_pearl'),
-        S: '#c:stainless_steel_ingots',
+        S: '#c:stainless_steel_plates',
         Q: ae('quartz_fiber')
     })
     .id(st('wireless_receiver'));
@@ -500,7 +484,7 @@ ServerEvents.recipes(e => {
         F: ae('fluix_dust'),
         Q: '#c:certus_quartz',
         E: '#c:ender_pearl_dusts',
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('wireless_booster'));
 
@@ -514,7 +498,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         Q: '#c:certus_quartz',
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('view_cell'));
 
@@ -528,7 +512,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_1k'),
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('item_storage_cell_1k'));
 
@@ -542,7 +526,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_4k'),
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('item_storage_cell_4k'));
 
@@ -556,7 +540,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_16k'),
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('item_storage_cell_16k'));
 
@@ -570,7 +554,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_64k'),
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('item_storage_cell_64k'));
 
@@ -584,9 +568,92 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_256k'),
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('item_storage_cell_256k'));
+
+    // -- ME FLUID CELL HOUSING -- //
+    e.shaped(ae('fluid_cell_housing'), [
+        'GRG',
+        'R R',
+        'SSS'
+    ],
+    {
+        G: ae('quartz_glass'),
+        R: '#c:redstone_dusts',
+        S: '#c:annealed_copper_plates'
+    })
+    .id(st('fluid_cell_housing'));
+
+    // -- 1K ME FLUID STORAGE CELL -- //
+    e.shaped(ae('fluid_storage_cell_1k'), [
+        'GRG',
+        'RCR',
+        'SSS'
+    ],
+    {
+        G: ae('quartz_glass'),
+        R: '#c:redstone_dusts',
+        C: ae('cell_component_1k'),
+        S: '#c:annealed_copper_plates'
+    })
+    .id(st('fluid_storage_cell_1k'));
+
+    // -- 4K ME FLUID STORAGE CELL -- //
+    e.shaped(ae('fluid_storage_cell_4k'), [
+        'GRG',
+        'RCR',
+        'SSS'
+    ],
+    {
+        G: ae('quartz_glass'),
+        R: '#c:redstone_dusts',
+        C: ae('cell_component_4k'),
+        S: '#c:annealed_copper_plates'
+    })
+    .id(st('fluid_storage_cell_4k'));
+
+    // -- 16K ME FLUID STORAGE CELL -- //
+    e.shaped(ae('fluid_storage_cell_16k'), [
+        'GRG',
+        'RCR',
+        'SSS'
+    ],
+    {
+        G: ae('quartz_glass'),
+        R: '#c:redstone_dusts',
+        C: ae('cell_component_16k'),
+        S: '#c:annealed_copper_plates'
+    })
+    .id(st('fluid_storage_cell_16k'));
+
+    // -- 64K ME FLUID STORAGE CELL -- //
+    e.shaped(ae('fluid_storage_cell_64k'), [
+        'GRG',
+        'RCR',
+        'SSS'
+    ],
+    {
+        G: ae('quartz_glass'),
+        R: '#c:redstone_dusts',
+        C: ae('cell_component_64k'),
+        S: '#c:annealed_copper_plates'
+    })
+    .id(st('fluid_storage_cell_64k'));
+
+    // -- 256K ME FLUID STORAGE CELL -- //
+    e.shaped(ae('fluid_storage_cell_256k'), [
+        'GRG',
+        'RCR',
+        'SSS'
+    ],
+    {
+        G: ae('quartz_glass'),
+        R: '#c:redstone_dusts',
+        C: ae('cell_component_256k'),
+        S: '#c:annealed_copper_plates'
+    })
+    .id(st('fluid_storage_cell_256k'));
 
     // -- 2^3 SPATIAL STORAGE CELL -- //
     e.shaped(ae('spatial_storage_cell_2'), [
@@ -598,7 +665,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('spatial_cell_component_2'),
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('spatial_storage_cell_2'));
 
@@ -612,7 +679,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('spatial_cell_component_16'),
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('spatial_storage_cell_16'));
 
@@ -626,7 +693,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('spatial_cell_component_128'),
-        S: '#c:stainless_steel_ingots'
+        S: '#c:stainless_steel_plates'
     })
     .id(st('spatial_storage_cell_128'));
 
@@ -639,7 +706,7 @@ ServerEvents.recipes(e => {
     {
         G: '#c:glowstone_dusts',
         Q: ae('quartz_glass'),
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         R: '#c:redstone_dusts'
     })
     .id(st('semi_dark_monitor'));
@@ -651,8 +718,8 @@ ServerEvents.recipes(e => {
     ],
     {
         A: ae('annihilation_core'),
-        S: '#c:stainless_steel_ingots',
-        P: 'minecraft:sticky_piston'
+        S: '#c:aluminum_plates',
+        P: mc('sticky_piston')
     })
     .id(st('import_bus'));
 
@@ -663,7 +730,7 @@ ServerEvents.recipes(e => {
         'SF'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         F: ae('fluix_crystal'),
         A: ae('annihilation_core'),
     })
@@ -674,7 +741,7 @@ ServerEvents.recipes(e => {
         'SAS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         F: ae('fluix_crystal'),
         A: ae('annihilation_core'),
     })
@@ -687,7 +754,7 @@ ServerEvents.recipes(e => {
         'SF'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         F: ae('fluix_crystal'),
         A: ae('formation_core'),
     })
@@ -698,7 +765,7 @@ ServerEvents.recipes(e => {
         'SAS'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         F: ae('fluix_crystal'),
         A: ae('formation_core'),
     })
@@ -710,9 +777,9 @@ ServerEvents.recipes(e => {
         ' P '
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         F: ae('formation_core'),
-        P: 'minecraft:piston'
+        P: mc('piston')
     })
     .id(st('export_bus'));
 
@@ -723,24 +790,64 @@ ServerEvents.recipes(e => {
         'FFF'
     ],
     {
-        S: '#c:stainless_steel_ingots',
+        S: '#c:aluminum_plates',
         E: ae('engineering_processor'),
         F: ae('fluix_crystal')
     })
     .id(st('me_p2p_tunnel'));
+
+    // -- MAGNET CARD -- //
+    e.shaped(wt('magnet_card'), [
+        'RAL',
+        'ICI',
+        'III'
+    ],
+    {
+        R: '#c:redstone_blocks',
+        L: '#c:lapis_blocks',
+        A: ae('annihilation_plane'),
+        C: ae('advanced_card'),
+        I: '#c:stainless_steel_blocks'
+    })
+    .id(st('magnet_card'));
+
+    // -- DENSE ENERGY CELL -- //
+    e.shaped(ae('dense_energy_cell'), [
+        'EEE',
+        'EHE',
+        'EEE'
+    ],
+    {
+        E: ae('energy_cell'),
+        H: mi('turbo_machine_hull')
+    })
+    .id(st('dense_energy_cell'));
 });
 
 ServerEvents.tags('item', e=> {
-    const CRAFTING_STORAGE = [
-        'ae2:1k_crafting_storage',
-        'ae2:4k_crafting_storage',
-        'ae2:16k_crafting_storage',
-        'ae2:64k_crafting_storage',
-        'ae2:256k_crafting_storage'
-    ];
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let ae = (id) => `ae2:${id}`;
 
-    CRAFTING_STORAGE.forEach(id => { e.add('kubejs:crafting_storage', id) });
+    // Tag all the crafting storages
+    const CRAFTING_STORAGE = [
+        ae('1k_crafting_storage'),
+        ae('4k_crafting_storage'),
+        ae('16k_crafting_storage'),
+        ae('64k_crafting_storage'),
+        ae('256k_crafting_storage')
+    ];
+    CRAFTING_STORAGE.forEach(id => e.add('kubejs:crafting_storage', id) );
+
+    // Tag all the budding blocks
+    // Doesn't work in KubeJS :l
+    const BUDDING_BLOCKS = [
+        ae('flawless_budding_quartz'),
+        ae('flawed_budding_quartz'),
+        ae('chipped_budding_quartz'),
+        ae('damaged_budding_quartz')
+    ];
+    BUDDING_BLOCKS.forEach(id => e.add('kubejs:budding_certus', id) );
 
     // -- REMOVE ENDER DUST -- //
-    e.removeAllTagsFrom('ae2:ender_dust');
+    e.removeAllTagsFrom(ae('ender_dust'));
 })

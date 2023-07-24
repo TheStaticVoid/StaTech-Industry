@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.tags((event) => {
     event.createTag('kubejs:spectrum', 'spectrum:paintbrush', 'Spectrum', 'Ponder scenes for multiblock structures', [
         'spectrum:pedestal_all_basic',

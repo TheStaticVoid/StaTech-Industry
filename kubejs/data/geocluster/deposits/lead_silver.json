@@ -1,0 +1,51 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -48,
+        "yMax": 32,
+        "size": 40,
+        "biomeTag": "#minecraft:is_overworld",
+        "spread": 15,
+        "generationWeight": 5,
+        "blocks": {
+            "default": [
+                {
+                    "block": "modern_industrialization:lead_ore",
+                    "chance": 0.5
+                },
+                {
+                    "block": "techreborn:silver_ore",
+                    "chance": 0.3
+                },
+                {
+                    "block": "techreborn:galena_ore",
+                    "chance": 0.2
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "modern_industrialization:deepslate_lead_ore",
+                    "chance": 0.5
+                },
+                {
+                    "block": "techreborn:deepslate_silver_ore",
+                    "chance": 0.3
+                },
+                {
+                    "block": "techreborn:deepslate_galena_ore",
+                    "chance": 0.2
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:lead_ore_sample",
+                "chance": 0.6
+            },
+            {
+                "block": "geocluster:silver_ore_sample",
+                "chance": 0.4
+            }
+        ]
+    }
+}

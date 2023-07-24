@@ -1,0 +1,28 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -48,
+        "yMax": 48,
+        "size": 60,
+        "biomeTag": "#ad_astra:venus",
+        "spread": 15,
+        "generationWeight": 6,
+        "blockStateMatchers": [
+            "ad_astra:venus_stone"
+        ],
+        "blocks": {
+            "default": [
+                {
+                    "block": "ad_astra:venus_calorite_ore",
+                    "chance": 1.0
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "kubejs:calorite_ore_sample",
+                "chance": 1.0
+            }
+        ]
+    }
+}

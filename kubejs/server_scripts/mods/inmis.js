@@ -1,17 +1,37 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:inmis/${id}`;
+    let im = (id) => `inmis:${id}`;
+    
+    // -- INMIS REMOVED RECIPES -- //
     const INMIS_DELETED_RECIPES = [
-        'inmis:withered_backpack',
-        'inmis:plated_backpack',
-        'inmis:gilded_backpack',
-        'inmis:bejeweled_backpack',
-        'inmis:endless_backpack',
-        'inmis:blazing_backpack'
+        im('withered_backpack'),
+        im('plated_backpack'),
+        im('gilded_backpack'),
+        im('bejeweled_backpack'),
+        im('endless_backpack'),
+        im('blazing_backpack')
     ];
-    INMIS_DELETED_RECIPES.forEach(id => e.remove({id: id}));
+    INMIS_DELETED_RECIPES.forEach(id => e.remove({ id: id }));
+
+    // -- UTILITY FUNCTION FOR MODIFYING RESULTS IN RECIPE BUILDER -- // 
+    let keepNBT = (name, inventory, itemstack) => {
+        let backpack = inventory.find(Item.of(name));
+
+        if (backpack.nbt == null)
+            return itemstack;
+        
+        let nbt = backpack.nbt;
+        return itemstack.withNBT(nbt);
+    }
 
     // -- PLATED BACKPACK -- //
-    e.shaped('inmis:plated_backpack', [
+    e.shaped(im('plated_backpack'), [
         'RIR',
         'IBI',
         'RIR'
@@ -19,12 +39,13 @@ ServerEvents.recipes(e => {
     {
         I: '#c:iron_plates',
         R: '#c:refined_iron_plates',
-        B: 'inmis:frayed_backpack'
+        B: im('frayed_backpack')
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('frayed_backpack'), inventory, itemstack) })
     .id(st('plated_backpack'));
 
     // -- GILDED BACKPACK -- //
-    e.shaped('inmis:gilded_backpack', [
+    e.shaped(im('gilded_backpack'), [
         'EGE',
         'GBG',
         'EGE'
@@ -32,12 +53,13 @@ ServerEvents.recipes(e => {
     {
         E: '#c:electrum_plates',
         G: '#c:gold_plates',
-        B: 'inmis:plated_backpack'
+        B: im('plated_backpack')
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('plated_backpack'), inventory, itemstack) })
     .id(st('gilded_backpack'));
 
     // -- BEJEWELED BACKPACK -- //
-    e.shaped('inmis:bejeweled_backpack', [
+    e.shaped(im('bejeweled_backpack'), [
         'DED',
         'EBE',
         'DED'
@@ -45,12 +67,13 @@ ServerEvents.recipes(e => {
     {
         D: '#c:diamond_plates',
         E: '#c:emerald_plates',
-        B: 'inmis:gilded_backpack'
+        B: im('gilded_backpack')
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('gilded_backpack'), inventory, itemstack) })
     .id(st('bejeweled_backpack'));
 
     // -- BLAZING BACKPACK -- //
-    e.shaped('inmis:blazing_backpack', [
+    e.shaped(im('blazing_backpack'), [
         'NON',
         'OBO',
         'NON'
@@ -58,12 +81,13 @@ ServerEvents.recipes(e => {
     {
         N: '#c:netherite_ingots',
         O: '#c:ostrum_plates',
-        B: 'inmis:bejeweled_backpack'
+        B: im('bejeweled_backpack')
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('bejeweled_backpack'), inventory, itemstack) })
     .id(st('blazing_backpack'));
 
     // -- WITHERED BACKPACK -- // 
-    e.shaped('inmis:withered_backpack', [
+    e.shaped(im('withered_backpack'), [
         'ANA',
         'NBN',
         'ANA'
@@ -71,12 +95,13 @@ ServerEvents.recipes(e => {
     {
         A: '#c:blastproof_alloy_plates',
         N: 'minecraft:nether_star',
-        B: 'inmis:blazing_backpack'
+        B: im('blazing_backpack')
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('blazing_backpack'), inventory, itemstack) })
     .id(st('withered_backpack'));
 
     // -- ENDLESS BACKPACK -- //
-    e.shaped('inmis:endless_backpack', [
+    e.shaped(im('endless_backpack'), [
         'IHI',
         'EBE',
         'IEI'
@@ -84,8 +109,9 @@ ServerEvents.recipes(e => {
     {
         I: '#c:iridium_plates',
         H: 'minecraft:dragon_head',
-        B: 'inmis:withered_backpack',
+        B: im('withered_backpack'),
         E: '#c:endstone_dusts'
     })
+    .modifyResult((inventory, itemstack) => { return keepNBT(im('withered_backpack'), inventory, itemstack) })
     .id(st('endless_backpack'));
 });

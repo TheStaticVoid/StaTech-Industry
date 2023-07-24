@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:large_steam_turbine').scene('large_steam_turbine', 'The Large Steam Turbine', 'kubejs:large_steam_turbine', (scene, util) => {
         // Base plate

@@ -1,12 +1,17 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:farmersdelight/${id}`;
     let fd = (id) => `farmersdelight:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let kb = (id) => `kibe:${id}`;
     let cd = (id) => `culturaldelights:${id}`;
 
-    // -- REMOVED RECIPES -- //
+    // -- FARMERS DELIGHT REMOVED RECIPES -- //
     const FARMERS_DELIGHT_DELETED_RECIPES = [
         fd('paper_from_tree_bark'),
         fd('wheat_dough')
@@ -28,6 +33,7 @@ ServerEvents.recipes(e => {
     .replaceIngredient('kibe:water_wooden_bucket', 'kibe:wooden_bucket')
     .id(st('cooking_pot'));
 
+    // Utility functions cannot be used in the replaceIngredient part
     // -- WHEAT DOUGH -- //
     e.shapeless('3x ' + fd('wheat_dough'), [ kb('water_wooden_bucket'), mc('wheat'), mc('wheat'), mc('wheat') ])
         .id(st('wheat_dough'))

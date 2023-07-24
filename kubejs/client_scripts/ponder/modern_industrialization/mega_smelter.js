@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:mega_smelter').scene('mega_smelter', 'The Mega Smelter', 'kubejs:mega_smelter', (scene, util) => {
         // Show base plate

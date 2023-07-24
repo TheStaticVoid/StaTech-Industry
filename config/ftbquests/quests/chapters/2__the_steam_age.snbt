@@ -39,7 +39,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["45CE5F461A159F66"]
 			description: [
 				"Now you may want to consider creating a &aSteam Mining Drill&r to obtain the ores directly without needing a Silk Touch pickaxe."
 				""
@@ -68,13 +68,15 @@
 				}
 			]
 			shape: "rsquare"
+			size: 1.5d
+			subtitle: "3x3 with Silk Touch/Fortune"
 			tasks: [{
 				id: "36E79689C51B2EC4"
 				item: "modern_industrialization:steam_mining_drill"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 18.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["5EDE88BDA0182BD7"]
@@ -110,7 +112,7 @@
 				item: "modern_industrialization:bronze_barrel"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: 2.0d
 		}
 		{
@@ -145,7 +147,7 @@
 				item: "modern_industrialization:bronze_tank"
 				type: "item"
 			}]
-			x: -1.0d
+			x: -0.5d
 			y: 2.0d
 		}
 		{
@@ -1126,7 +1128,7 @@
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: 20.0d
+			x: 21.0d
 			y: 13.0d
 		}
 		{
@@ -1165,7 +1167,7 @@
 				type: "item"
 			}]
 			title: "Steel Upgrades"
-			x: 16.0d
+			x: 16.5d
 			y: 16.5d
 		}
 		{
@@ -1200,7 +1202,7 @@
 				item: "modern_industrialization:trash_can"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 16.5d
 			y: 15.5d
 		}
 		{
@@ -1231,7 +1233,7 @@
 				item: "modern_industrialization:steel_unpacker"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 17.5d
 			y: 15.5d
 		}
 		{
@@ -1262,7 +1264,7 @@
 				item: "modern_industrialization:steel_packer"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 18.5d
 			y: 15.5d
 		}
 		{
@@ -1301,7 +1303,7 @@
 				}
 			]
 			title: "Packer Templates"
-			x: 18.0d
+			x: 18.5d
 			y: 16.5d
 		}
 		{
@@ -1400,7 +1402,7 @@
 				}
 			]
 			title: "Steam Quarry"
-			x: 22.5d
+			x: 23.5d
 			y: 13.0d
 		}
 		{
@@ -1437,7 +1439,7 @@
 				item: "modern_industrialization:bronze_drill"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 25.5d
 			y: 12.0d
 		}
 		{
@@ -1474,7 +1476,7 @@
 				item: "modern_industrialization:copper_drill"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 25.5d
 			y: 14.0d
 		}
 		{
@@ -2364,7 +2366,7 @@
 				item: "modern_industrialization:steel_tank"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 15.5d
 			y: 15.5d
 		}
 		{
@@ -2395,7 +2397,7 @@
 				item: "modern_industrialization:steel_barrel"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 15.5d
 			y: 16.5d
 		}
 		{
@@ -2432,7 +2434,7 @@
 				item: "techreborn:low_voltage_su"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 17.5d
 			y: 6.5d
 		}
 		{
@@ -2504,7 +2506,7 @@
 					type: "item"
 				}
 			]
-			x: 17.0d
+			x: 17.5d
 			y: 16.5d
 		}
 		{
@@ -2605,7 +2607,7 @@
 				item: "modern_industrialization:steel_boiler"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 14.5d
 			y: 15.5d
 		}
 		{
@@ -2691,7 +2693,7 @@
 				}
 			]
 			title: "Travel Anchors"
-			x: 14.0d
+			x: 14.5d
 			y: 16.5d
 		}
 		{
@@ -2809,8 +2811,8 @@
 				item: "modern_industrialization:steel_water_pump"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 11.0d
+			x: 12.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
@@ -2846,7 +2848,7 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
+			x: 13.5d
 			y: 15.5d
 		}
 		{
@@ -2923,7 +2925,7 @@
 				item: "techreborn:red_cell_battery"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 17.5d
 			y: 7.5d
 		}
 		{
@@ -3355,13 +3357,13 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
+			x: 13.5d
 			y: 16.5d
 		}
 		{
 			dependencies: ["5EDE88BDA0182BD7"]
 			description: [
-				"The &eTape Measure&r serves one purpose, to measure distance!"
+				"The &eMeasuring Tape&r serves one purpose, to measure distance!"
 				""
 				"&6Right-click&r to mark position one, and again to mark position two."
 				""
@@ -3389,7 +3391,7 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "6E0FD7B7CFD112EA"
-				item: "measurements:tape_measure"
+				item: "kibe:measuring_tape"
 				type: "item"
 			}]
 			x: 0.5d
@@ -3553,8 +3555,8 @@
 				item: "ironchests:gold_chest"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.0d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
@@ -3584,8 +3586,8 @@
 				item: "ironchests:iron_chest"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.5d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5EDE88BDA0182BD7"]
@@ -3615,12 +3617,16 @@
 				item: "ironchests:copper_chest"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
-			description: ["&aChest Upgrades&r allow you to upgrade your chests &cwithout&r having to break them or move their contents into a new chest."]
+			description: [
+				"&aChest Upgrades&r allow you to upgrade your chests &cwithout&r having to break them or move their contents into a new chest."
+				""
+				"Please note that &aChest Upgrades&r &cdo not work&r on &dBarrels&r from the &eIron Chests&r mod."
+			]
 			id: "20FE11ACDC27CA84"
 			rewards: [
 				{
@@ -3655,7 +3661,7 @@
 			}]
 			title: "Chest Upgrades"
 			x: -4.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
@@ -3695,8 +3701,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: -1.0d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
@@ -3738,8 +3744,8 @@
 				}
 			]
 			title: "Lock \\& Key"
-			x: -4.5d
-			y: 1.0d
+			x: -5.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1F5ACBB3A3D021B3"]
@@ -3774,7 +3780,7 @@
 				item: "modern_industrialization:zinc_drill"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 25.5d
 			y: 13.0d
 		}
 		{
@@ -4026,6 +4032,8 @@
 				"&6Pipes&r won't move fluids unless you have an &battachment&r to the pipe or a machine is &3auto ejecting&r into it. "
 				""
 				"They can be interacted with using the &eModern Industrialization&r &6Wrench&r."
+				""
+				"&cBe wary of using these extensively on a server&r, as they are significantly more laggy than MI pipes."
 			]
 			id: "375EC7F95730956F"
 			rewards: [
@@ -4138,7 +4146,7 @@
 				type: "item"
 			}]
 			title: "Modern Dynamics Item Pipe"
-			x: 20.0d
+			x: 21.0d
 			y: 14.5d
 		}
 		{
@@ -4168,7 +4176,7 @@
 				item: "moderndynamics:inhibitor"
 				type: "item"
 			}]
-			x: 20.5d
+			x: 21.5d
 			y: 16.0d
 		}
 		{
@@ -4198,7 +4206,7 @@
 				item: "moderndynamics:machine_extender"
 				type: "item"
 			}]
-			x: 19.5d
+			x: 20.5d
 			y: 16.0d
 		}
 		{
@@ -4235,6 +4243,133 @@
 			title: "More Efficient Rubber"
 			x: 10.5d
 			y: 12.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			description: [
+				"This tiny little thing is the &efirst tier&r of &aDanks&r you have access to. What is a &aDank&r you might ask? Think of it as an &2extremely powerful backpack&r. "
+				""
+				"This &aTier 1 Dank&r has &d9 slots&r and each can hold a stacksize of &6256 items&r."
+				""
+				"In addition to it's storage, it has options to &9automatically pickup blocks&r, &3pickup from a filter&r, or &dvoid blocks&r. Think of all that Cobblestone you no longer have to sort through in your inventory!"
+			]
+			id: "7D90B29796571A7E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "22BB2EF0D1603BB0"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					id: "596E219B06C2290A"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "3D1432F429B31877"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Dank Storage!"
+			tasks: [{
+				id: "2ACF0FB7B8B07798"
+				item: "dankstorage:dank_1"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			description: ["With &cCopper Plates&r, you can upgrade your normal barrels to &ehold more items&r. This one can store up to &236 stacks of items&r."]
+			id: "779A48D8FB91F32C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A08A4BCF2E6E8E4"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "463A5A9DEF49AE80"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "463F26741E795031"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "0A5049221D2C3F37"
+				item: "ironchests:copper_barrel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["779A48D8FB91F32C"]
+			description: ["The &7Iron Barrel&r can store &254 stacks of items&r."]
+			id: "7A00DD3D645AB09E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5C81611AC84764BB"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "3F7AFB64F169FBE1"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "491B6092EDE7B27B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "69BA029D1617FB01"
+				item: "ironchests:iron_barrel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A00DD3D645AB09E"]
+			description: ["The &eGold Barrel&r stores &266 stacks of items&r. This is the highest tier you can make until you can process &bDiamond Plates&r."]
+			id: "213881AB4757DAC8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A8B19E3C1EFBEEF"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "3D410D00E0833E4B"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "55C178711A66409C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6C7EECF6E5632148"
+				item: "ironchests:gold_barrel"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
 		}
 	]
 	subtitle: ["The Basis of Industry"]

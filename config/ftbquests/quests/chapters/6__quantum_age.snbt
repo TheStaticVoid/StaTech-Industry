@@ -80,8 +80,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 5.25d
+			x: -2.25d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2FDA67B4920D335D"]
@@ -208,7 +208,7 @@
 				item: "modern_industrialization:quantum_tank"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 9.0d
 			y: 7.5d
 		}
 		{
@@ -240,8 +240,8 @@
 				item: "modern_industrialization:quantum_barrel"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 8.5d
+			x: 8.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -281,8 +281,8 @@
 				item: "modern_industrialization:replicator"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 11.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2FDA67B4920D335D"]
@@ -313,7 +313,7 @@
 				item: "modern_industrialization:superconductor_storage_unit"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -1.5d
 			y: 1.0d
 		}
 		{
@@ -349,13 +349,13 @@
 				item: "modern_industrialization:quantum_upgrade"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 11.0d
+			x: 12.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"50D18ACF6401C05D"
-				"4A2F6AA833C88B7C"
+				"78E1B9C83BB915D4"
 			]
 			description: ["By blasting an &aUltradense Metal Ball&f with more energy than several times our &dentire sun&r we can create a single &5Singularity&f, a &3black-hole you can somehow hold in your hands...&r"]
 			id: "10943911EAB7196F"
@@ -386,8 +386,8 @@
 				item: "modern_industrialization:singularity"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 8.0d
+			x: 8.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3E139335E6F04C69"]
@@ -424,8 +424,8 @@
 				type: "item"
 			}]
 			title: "Infinity Sword"
-			x: 5.0d
-			y: 13.0d
+			x: 16.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3E139335E6F04C69"]
@@ -481,8 +481,8 @@
 				}
 			]
 			title: "The Infinity Suit"
-			x: 7.0d
-			y: 13.0d
+			x: 16.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["10943911EAB7196F"]
@@ -517,8 +517,8 @@
 				item: "modern_industrialization:uu_matter_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 8.0d
+			x: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["23D9328B5F627E65"]
@@ -585,8 +585,8 @@
 				item: "create:creative_motor"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 13.0d
+			x: 16.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -626,8 +626,8 @@
 				type: "item"
 			}]
 			title: "The Creative Worldshaper"
-			x: 2.0d
-			y: 16.0d
+			x: 20.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4FD7572FC6CC4140"]
@@ -664,8 +664,8 @@
 				item: "modern_industrialization:creative_tank"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 13.0d
+			x: 16.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4FD7572FC6CC4140"]
@@ -705,8 +705,8 @@
 				item: "modern_industrialization:creative_barrel"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 13.0d
+			x: 16.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4FD7572FC6CC4140"]
@@ -738,8 +738,8 @@
 				item: "modern_industrialization:creative_storage_unit"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 13.0d
+			x: 16.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6CD8A3092DDAC055"]
@@ -770,15 +770,15 @@
 				item: "modern_industrialization:helium_plasma_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["598DBC20FB201711"]
 			description: [
 				"Combining super heated &eHelium Plasma&f with &aDeuterium&f in a &bFusion Reactor&f will cause some of the atoms to shred their neutrons into a &0Neutronium plasma&f. &o(I'm not a scientist, and I made this process up)&r"
 				""
-				"&0Neutronium&f takes a long time to process, but with it you can finally look to create endgame items!"
+				"&0Neutronium&f takes a long time to process, but with it you can finally look to create endgame items! Perhaps it would be a &egood idea&r to setup the &anext multiblocks&r while you wait for it to process?"
 			]
 			id: "1E525921822F56AC"
 			rewards: [
@@ -808,12 +808,15 @@
 				item: "modern_industrialization:neutronium_bucket"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.0d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["1E525921822F56AC"]
-			description: ["By combining &dlead&r, &5tungstensteel&r, &2iridium&r, and &0neutronium&r you can crate &aUltradense Metal Balls&r."]
+			dependencies: [
+				"1E525921822F56AC"
+				"3C38E4E38D595A8C"
+			]
+			description: ["Nuking the &aCore Fragments&r from your &eCore Mining Drill&r with &5Tungstensteel&r and &dEnderium&r will create an &aUltradense Metal Ball&r. These will be the catalyst for your &dSingularities&r."]
 			id: "4A2F6AA833C88B7C"
 			rewards: [
 				{
@@ -842,6 +845,343 @@
 			}]
 			x: 4.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["4A2F6AA833C88B7C"]
+			description: [
+				"This &aimmense multiblock&r is the final key to unlocking the creation of &dSingularities&r. It's both &2extremely large&r and &3extremely expensive&r. Fully constructing this is a &atrue test of your factory's power&r. At this point you should be &5extensively overclocking machines&r and everything should be running smoothly to create all you will need for this."
+				""
+				"Also knowing the &amodded MC community&r, a lot of you will think to AFK and wait for materials to process, but rather you &dshould be focusing on increasing your production and ironing out bottlenecks&r."
+			]
+			icon: "modern_industrialization:singularity_forge"
+			id: "78E1B9C83BB915D4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "17DD4D02BADB0B64"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "5E8BA448E3A1AE57"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "392492E8BC8A5BD0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			subtitle: "That's a mouthful"
+			tasks: [
+				{
+					id: "79A6BC385587A982"
+					item: "modern_industrialization:singularity_forge"
+					type: "item"
+				}
+				{
+					count: 361L
+					id: "39C5F46FEE1E0D5D"
+					item: "modern_industrialization:plasma_handling_iridium_machine_casing"
+					type: "item"
+				}
+				{
+					count: 42L
+					id: "14B51507DBA6CE85"
+					item: "ad_astra:glowing_calorite_pillar"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "76410D27E67E4546"
+					item: "modern_industrialization:calorite_machine_casing"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "1BC8CE204275D2EB"
+					item: "modern_industrialization:superconductor_coil"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "6DC451BC4AF4CB75"
+					item: "modern_industrialization:iridium_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "00D2FEEDE5A53675"
+					item: "chisel:llama/purple_wool"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "1AAA7DD826C8E2E0"
+					item: "byg:cryptic_end_rod"
+					type: "item"
+				}
+				{
+					id: "545E6D4D9A879F74"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+					title: "Any Item Input Hatch"
+					type: "item"
+				}
+				{
+					id: "3767DB05B2FC7424"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					title: "Any Item Output Hatch"
+					type: "item"
+				}
+				{
+					id: "26627FABA88E6E0F"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					id: "33874037A301C524"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+					title: "Any Energy Input Hatch"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2FDA67B4920D335D"]
+			description: [
+				"This behemoth of a &dmultiblock&r is a drill that is able to &adig even further down&r into the planet than the regular quarries you've made up until now. The &2Core Mining Drill&r uses &3Desh Drills&r and &eDrilling Fluid&r to produce &6Core Fragments&r and &aCore Slurry&r. "
+				""
+				"You'll definitely want to use the &6MI Wrench&r multiblock preview feature for building this."
+			]
+			icon: "modern_industrialization:core_drill"
+			id: "500F9FE708EE8F1C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E9A5138041862A1"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1EFA48ACEADE2C7C"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "033CE2E0C03013F0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			subtitle: "To the center of the Earth"
+			tasks: [
+				{
+					id: "38E32704DF947DF7"
+					item: "modern_industrialization:core_drill"
+					type: "item"
+				}
+				{
+					count: 92L
+					id: "15C44D80F5C556C3"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 80L
+					id: "31D7891360DD61F8"
+					item: "ad_astra:desh_pillar"
+					type: "item"
+				}
+				{
+					count: 46L
+					id: "3A482B3C209235E0"
+					item: "ad_astra:desh_block"
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "2EE1A499E8E3ABDE"
+					item: "quarrymod:drill_tube"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "25751857956305C4"
+					item: "ad_astra:glowing_iron_pillar"
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "615422D7B1B5CEA7"
+					item: "ad_astra:glowing_ostrum_pillar"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "68D73133867749ED"
+					item: "modern_industrialization:calorite_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					id: "779FFA73035080EF"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+					title: "Any Item Input Hatch"
+					type: "item"
+				}
+				{
+					id: "39E6FDBA5857B148"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					title: "Any Item Output Hatch"
+					type: "item"
+				}
+				{
+					id: "185F55556ABC98C4"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					id: "4F3BE0E97513F965"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					title: "Any Fluid Output Hatch"
+					type: "item"
+				}
+				{
+					id: "494ED9C78365AA3F"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+					title: "Any Energy Input Hatch"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["500F9FE708EE8F1C"]
+			description: ["&6Core Fragments&r are an extremely dense and hot material that are a key component to creating &dUltradense Metal Balls&r."]
+			id: "3C38E4E38D595A8C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6A8B55C5AEF9BF44"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "74E630547139F54A"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "4494E2C69AE9777F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "5E59379738E1AE81"
+				item: "kubejs:core_fragment"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["500F9FE708EE8F1C"]
+			description: ["&aCore Slurry&r is a byproduct of the &eCore Mining Drill&r that can be &3centrifuged&r to obtain bits of &6platinum&r, &dtungsten&r, &5titanium&r, and &2iridium&r."]
+			id: "790924652E61D23D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "182DFD0630C0DB33"
+					table_id: 1415984687807285627L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "41AA409AB9A86BB9"
+					item: "kubejs:coin_mythic"
+					type: "item"
+				}
+				{
+					id: "28ABE207C3D10428"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "5104EE527A6A7853"
+				item: "modern_industrialization:core_slurry_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["PhD in Theoretical Physics!"]

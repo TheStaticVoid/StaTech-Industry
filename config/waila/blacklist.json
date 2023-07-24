@@ -1,4 +1,8 @@
 {
+  "_comment": [
+    "On the SERVER, changes will be applied after the server is restarted",
+    "On the CLIENT, changes will be applied after player quit and rejoin a world"
+  ],
   "blocks": [
     "minecraft:barrier",
     "minecraft:structure_void"

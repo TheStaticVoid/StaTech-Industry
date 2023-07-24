@@ -1,18 +1,25 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/macerator/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let crate = (id) => `create:${id}`; // mispelled on purpose ;)
+    let cr = (id) => `create:${id}`;
     let ed = (id) => `expandeddelight:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let sp = (id) => `spectrum:${id}`;
-    let st = (id) => `statech:modern_industrialization/macerator/${id}`;
+    let bl = (id) => `blockus:${id}`;
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let macerator = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('macerator'),
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
 
         if (item_inputs)
@@ -20,7 +27,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['item_outputs'] = item_outputs;
         
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- WHEAT DOUGH -- //
@@ -28,12 +35,8 @@ ServerEvents.recipes(e => {
         st('wheat_flour'),
         2,
         200,
-        [
-            { amount: 1, item: mc('wheat') }
-        ],
-        [
-            { amount: 2, item: crate('wheat_flour') }
-        ]
+        [ { amount: 1, item: mc('wheat') } ],
+        [ { amount: 2, item: cr('wheat_flour') } ]
     );
 
     // -- SALT DUST -- //
@@ -41,25 +44,35 @@ ServerEvents.recipes(e => {
         st('ground_salt'),
         2,
         100,
-        [
-            { amount: 1, item: ed('salt_rock') }
-        ],
-        [
-            { amount: 1, item: ed('ground_salt') }
-        ]
+        [ { amount: 1, item: ed('salt_rock') } ],
+        [ { amount: 1, item: ed('ground_salt') } ]
     );
 
-    // -- CALCITE DUST -- //
+    // -- CALCITE DUST FROM LIMESTONE -- //
     macerator(
-        st('calcite_dust'),
+        st('calcite_dust_from_limestone'),
         8,
         100,
-        [
-            { amount: 1, item: mc('calcite') }
-        ],
-        [
-            { amount: 2, item: tr('calcite_dust') }
-        ]   
+        [ { amount: 1, item: cr('limestone') } ],
+        [ { amount: 2, item: tr('calcite_dust') } ]
+    );
+
+    // -- CALCITE DUST FROM BLOCKUS LIMESTONE -- // 
+    macerator(
+        st('calcite_dust_from_blockus_limestone'),
+        8,
+        100,
+        [ { amount: 1, item: bl('limestone') } ],
+        [ { amount: 2, item: tr('calcite_dust') } ]
+    );
+
+    // -- CALCITE DUST FROM CALCITE -- //
+    macerator(
+        st('calcite_dust_from_calcite'),
+        8,
+        100,
+        [ { amount: 1, item: mc('calcite') } ],
+        [ { amount: 2, item: tr('calcite_dust') } ]   
     );
 
     // -- RAW PLATINUM FROM SHELDONITE ORE -- //
@@ -67,12 +80,8 @@ ServerEvents.recipes(e => {
         st('raw_platinum'),
         2,
         200,
-        [
-            { amount: 1, tag: 'c:sheldonite_ores' }
-        ],
-        [
-            { amount: 3, item: mi('raw_platinum') }
-        ]
+        [ { amount: 1, tag: 'c:sheldonite_ores' } ],
+        [ { amount: 3, item: mi('raw_platinum') } ]
     );
 
     // -- OBSIDIAN -- //
@@ -80,12 +89,8 @@ ServerEvents.recipes(e => {
         st('obsidian_dust'),
         8,
         1200,
-        [
-            { amount: 1, item: mc('obsidian') }
-        ],
-        [
-            { amount: 4, item: tr('obsidian_dust') }
-        ]
+        [ { amount: 1, item: mc('obsidian') } ],
+        [ { amount: 4, item: tr('obsidian_dust') } ]
     );
 
     // -- RAW ZINC -- //
@@ -93,12 +98,8 @@ ServerEvents.recipes(e => {
         st('raw_zinc'),
         2,
         200,
-        [
-            { amount: 1, tag: 'c:zinc_ores' }
-        ],
-        [
-            { amount: 3, item: 'create:raw_zinc'}
-        ]
+        [ { amount: 1, tag: 'c:zinc_ores' } ],
+        [ { amount: 3, item: 'create:raw_zinc'} ]
     );
 
     // -- ZINC DUST -- //
@@ -106,9 +107,7 @@ ServerEvents.recipes(e => {
         st('zinc_dust'),
         2,
         200,
-        [
-            { amount: 1, tag: 'c:raw_zinc_ores' }
-        ],
+        [ { amount: 1, tag: 'c:raw_zinc_ores' } ],
         [
             { amount: 1, item: tr('zinc_dust') },
             { amount: 1, item: tr('zinc_dust'), probability: 0.50 }
@@ -125,6 +124,15 @@ ServerEvents.recipes(e => {
             { amount: 2, item: 'minecraft:string' },
             { amount: 1, item: 'minecraft:string', probability: 0.25 }
         ]
+    );
+
+    // -- STONE DUST -- //
+    macerator(
+        st('stone_dust'),
+        2,
+        200,
+        [ { amount: 1, item: mc('stone') } ],
+        [ { amount: 4, item: mi('stone_dust') } ]
     );
 
     // -- SPECTRUM POWDERS -- //
@@ -293,7 +301,7 @@ ServerEvents.recipes(e => {
 
     // -- BLIZZARD POWDER -- //
     macerator(
-        st('fiery_powder'),
+        st('blizzard_powder'),
         2,
         200,
         [ { amount: 1, item: sp('frostbite_crystal') } ],
@@ -314,7 +322,7 @@ ServerEvents.recipes(e => {
         st('copper_dust_from_veridium'),
         2,
         200,
-        [ { amount: 1, item: crate('veridium') } ],
+        [ { amount: 1, item: cr('veridium') } ],
         [ 
             { amount: 1, item: mi('copper_dust') },
             { amount: 1, item: mi('copper_dust'), probability: 0.5 }
@@ -326,7 +334,7 @@ ServerEvents.recipes(e => {
         st('zinc_dust_from_asurine'),
         2,
         200,
-        [ { amount: 1, item: crate('asurine') } ],
+        [ { amount: 1, item: cr('asurine') } ],
         [ 
             { amount: 1, item: tr('zinc_dust') },
             { amount: 1, item: tr('zinc_dust'), probability: 0.5 }
@@ -338,7 +346,7 @@ ServerEvents.recipes(e => {
         st('gold_dust_from_asurine'),
         2,
         200,
-        [ { amount: 1, item: crate('ochrum') } ],
+        [ { amount: 1, item: cr('ochrum') } ],
         [
             { amount: 1, item: mi('gold_dust') },
             { amount: 1, item: mi('gold_dust'), probability: 0.5 }
@@ -350,7 +358,7 @@ ServerEvents.recipes(e => {
         st('iron_dust_from_crimsite'),
         2,
         200,
-        [ { amount: 1, item: crate('crimsite') } ],
+        [ { amount: 1, item: cr('crimsite') } ],
         [
             { amount: 1, item: mi('iron_dust') },
             { amount: 1, item: mi('iron_dust'), probability: 0.5 }
@@ -368,4 +376,45 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('quartz_dust'), probability: 0.5 }
         ]
     );
+
+    const COLORS = [
+        'orange',
+        'magenta',
+        'light_blue',
+        'yellow',
+        'lime',
+        'pink',
+        'cyan',
+        'purple',
+        'blue',
+        'brown',
+        'green',
+        'red',
+        'black'
+    ];
+    COLORS.forEach(color => {
+        // -- MACERATE SPECTRUM LOG -- //
+        macerator(
+            st(`${color}_log`),
+            8,
+            200,
+            [ { amount: 1, item: sp(`${color}_log`) } ],
+            [
+                { amount: 2, item: sp(`${color}_pigment`) },
+                { amount: 1, item: sp(`${color}_pigment`), probability: 0.5 }
+            ]
+        );
+
+        // -- MACERATE SPECTRUM LEAVES -- //
+        macerator(
+            st(`${color}_leaves`),
+            8,
+            200,
+            [ { amount: 1, item: sp(`${color}_leaves`) } ],
+            [
+                { amount: 2, item: sp(`${color}_pigment`) },
+                { amount: 1, item: sp(`${color}_sapling`) }
+            ]
+        );
+    });
 });

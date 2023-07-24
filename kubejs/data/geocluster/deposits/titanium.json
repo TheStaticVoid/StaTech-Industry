@@ -1,0 +1,39 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -64,
+        "yMax": 16,
+        "size": 20,
+        "biomeTag": "#minecraft:is_overworld",
+        "spread": 5,
+        "generationWeight": 1,
+        "blocks": {
+            "default": [
+                {
+                    "block": "modern_industrialization:titanium_ore",
+                    "chance": 0.8
+                },
+                {
+                    "block": "modern_industrialization:tungsten_ore",
+                    "chance": 0.2
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "modern_industrialization:deepslate_titanium_ore",
+                    "chance": 0.8
+                },
+                {
+                    "block": "modern_industrialization:deepslate_tungsten_ore",
+                    "chance": 0.2
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:titanium_ore_sample",
+                "chance": 1.0
+            }
+        ]
+    }
+}

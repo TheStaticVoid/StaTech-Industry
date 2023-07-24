@@ -1,12 +1,21 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
-    let st = (id) => `statech:${id}`;
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:timeinabottle/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let sp = (id) => `spectrum:${id}`;
+    let tb = (id) => `timeinabottle:${id}`;
 
-    e.remove({id: 'timeinabottle:time_in_a_bottle'});
+    // Remove the default Time in a Bottle recipe
+    e.remove({id: tb('time_in_a_bottle')});
+
+    // -- TIME IN A BOTTLE -- // 
     e.custom({
-        id: st('time_in_a_bottle'),
         type: sp('pedestal'),
         time: 400,
         tier: 'simple',
@@ -22,28 +31,19 @@ ServerEvents.recipes(e => {
             'ABA'
         ],
         key: {
-            G: {
-                item: mi('gold_curved_plate')
-            },
-            D: {
-                item: mc('diamond')
-            },
-            C: {
-                item: mc('clock')
-            },
-            A: {
-                item: sp('amethyst_powder')
-            },
-            B: {
-                item: mc('glass_bottle')
-            }
+            G: { item: mi('gold_curved_plate') },
+            D: { item: mc('diamond') },
+            C: { item: mc('clock') },
+            A: { item: sp('amethyst_powder') },
+            B: { item: mc('glass_bottle') }
         },
         result: {
-            item: 'timeinabottle:time_in_a_bottle',
+            item: tb('time_in_a_bottle'),
             count: 1
         },
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('time_in_a_bottle'));
 });

@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:high_pressure_advanced_large_steam_boiler').scene('high_pressure_advanced_large_steam_boiler', 'The High Pressure Advanced Large Steam Boiler', 'kubejs:high_pressure_advanced_large_steam_boiler', (scene, util) => {
         // Base plate

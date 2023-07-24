@@ -1,11 +1,20 @@
-ServerEvents.recipes(e => {
-    let sp = (id) => `spectrum:${id}`;
-    let st = (id) => `statech:${id}`;
-    let mc = (id) => `minecraft:${id}`;
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
-    e.remove({ id: 'toolleveling:tool_leveling_table' });
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:toolleveling/${id}`;
+    let sp = (id) => `spectrum:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    let tl = (id) => `toolleveling:${id}`;
+
+    // Remove the default Tool Leveing Table recipe
+    e.remove({ id: tl('tool_leveling_table') });
+
+    // -- TOOL LEVELING TABLE -- //
     e.custom({
-        id: st('tool_leveling_table'),
         type: sp('pedestal'),
         time: 1200,
         tier: 'advanced',
@@ -27,11 +36,12 @@ ServerEvents.recipes(e => {
             E: { item: mc('enchanting_table') }
         },
         result: {
-            item: 'toolleveling:tool_leveling_table',
+            item: tl('tool_leveling_table'),
             count: 1,
         },
         required_advancement: [
             sp('midgame/break_decayed_bedrock')
         ]
-    });
+    })
+    .id(st('tool_leveling_table'));
 });

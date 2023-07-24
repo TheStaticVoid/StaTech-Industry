@@ -1,4 +1,10 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.tags('item', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let sp = (id) => `spectrum:${id}`;
 
     e.add('c:tools/pickaxes', sp('bedrock_pickaxe'));
@@ -173,9 +179,49 @@ ServerEvents.tags('item', e => {
 });
 
 ServerEvents.recipes(e => {
-    let sp = (id) => `spectrum:${id}`;
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:spectrum/${id}`;
+    let sp = (id) => `spectrum:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    let kj = (id) => `kubejs:${id}`;
+    let bl = (id) => `blockus:${id}`;
 
+    // -- CENTRIFUGE REMOVED RECIPES -- //
+    const REMOVED_RECIPES = [
+        sp('pedestal/tier3/bottle_of_failing')
+    ];
+    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+
+    // -- BOTTLE OF FAILING -- //
+    e.custom({
+        type: sp('pedestal'),
+        time: 800,
+        tier: 'advanced',
+        cyan: 1,
+        magenta: 1,
+        yellow: 1,
+        black: 1,
+        white: 0,
+        experience: 2.0,
+        pattern: [
+            'FSF',
+            'EBE',
+            'FSF'
+        ],
+        key: {
+            S: { item: sp('stratine_fragments') },
+            F: { item: mc('fermented_spider_eye') },
+            E: { item: mc('ender_eye') },
+            B: { item: mc('experience_bottle') }
+        },
+        result: {
+            item: sp('bottle_of_failing'),
+            count: 1
+        },
+        required_advancement: sp('progression/unlock_bottle_of_failing')
+    });
+
+    // -- MAGIC DIAMOND -- //
     e.custom({
         id: st('magic_diamond'),
         type: sp('pedestal'),
@@ -193,24 +239,12 @@ ServerEvents.recipes(e => {
             'TSQ'
         ],
         key: {
-            Q: {
-                item: sp('quitoxic_powder')
-            },
-            S: {
-                item: sp('shimmerstone_gem')
-            },
-            A: {
-                item: sp('amethyst_powder')  
-            },
-            T: {
-                item: sp('topaz_powder')
-            },
-            C: {
-                item: sp('citrine_powder')
-            },
-            D: {
-                item: 'minecraft:diamond'
-            }
+            Q: { item: sp('quitoxic_powder') },
+            S: { item: sp('shimmerstone_gem') },
+            A: { item: sp('amethyst_powder') },
+            T: { item: sp('topaz_powder') },
+            C: { item: sp('citrine_powder') },
+            D: { item: 'minecraft:diamond' }
         },
         result: {
             item: 'kubejs:magic_diamond',
@@ -222,6 +256,7 @@ ServerEvents.recipes(e => {
         ]
     });
 
+    // -- QUITOXIC REEDS -- //
     e.custom({
         id: st('quitoxic_reeds_from_coins'),
         type: sp('pedestal'),
@@ -239,9 +274,7 @@ ServerEvents.recipes(e => {
             '   '
         ],
         key: {
-            C: {
-                item: 'kubejs:coin_rare'
-            }
+            C: { item: kj('coin_rare') }
         },
         result: {
             item: sp('quitoxic_reeds'),
@@ -252,9 +285,13 @@ ServerEvents.recipes(e => {
         ]
     });
 
-    e.stonecutting(sp('amethyst_storage_block'), 'blockus:polished_amethyst');
+    e.stonecutting(sp('amethyst_storage_block'), bl('polished_amethyst'));
 });
 
+// Block tagging provided by kevintok
 ServerEvents.tags('block', e => {
-    e.add('c:lapis_ores', 'spectrum:blackslag_lapis_ore')
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let sp = (id) => `spectrum:${id}`;
+
+    e.add('c:lapis_ores', sp('blackslag_lapis_ore'))
 });

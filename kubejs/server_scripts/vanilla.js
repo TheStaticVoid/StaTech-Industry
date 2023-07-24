@@ -1,9 +1,13 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:minecraft/${id}`;
     let mc = (id) => `minecraft:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let st = (id) => `statech:minecraft/${id}`;
 
     // -- REMOVED RECIPES -- //
     const VANILLA_DELETED = [
@@ -55,7 +59,7 @@ ServerEvents.recipes(e => {
     .id(st('piston'));
 
     // -- IRON BARS -- //
-    e.shaped('16x minecraft:iron_bars', [
+    e.shaped('16x ' + mc('iron_bars'), [
         'RRR',
         'RRR'
     ],
@@ -148,7 +152,7 @@ ServerEvents.recipes(e => {
     .id(st('compass'));
     
     // -- CHAINS -- //
-    e.shaped('8x minecraft:chain', [
+    e.shaped('8x ' + mc('chain'), [
         'O',
         'O',
         'O'
@@ -160,7 +164,9 @@ ServerEvents.recipes(e => {
 });
 
 ServerEvents.tags('item', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mc = (id) => `minecraft:${id}`;
+
     const HORSE_ARMORS = [
         mc('leather_horse_armor'),
         mc('iron_horse_armor'),
@@ -169,5 +175,6 @@ ServerEvents.tags('item', e => {
     ];
     HORSE_ARMORS.forEach(id => { e.add('kubejs:horse_armors', id) } );
 
+    // Removed to fix dupe
     e.remove('c:copper_blocks', mc('cut_copper'));
 });

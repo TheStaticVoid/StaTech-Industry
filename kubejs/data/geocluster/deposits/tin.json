@@ -1,0 +1,31 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": 18,
+        "yMax": 60,
+        "size": 70,
+        "biomeTag": "#minecraft:is_overworld",
+        "spread": 20,
+        "generationWeight": 8,
+        "blocks": {
+            "default": [
+                {
+                    "block": "modern_industrialization:tin_ore",
+                    "chance": 1.0
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "modern_industrialization:deepslate_tin_ore",
+                    "chance": 1.0
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:tin_ore_sample",
+                "chance": 1.0
+            }
+        ]
+    }
+}

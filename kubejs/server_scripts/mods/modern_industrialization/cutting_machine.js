@@ -1,15 +1,21 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/cutting_machine/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let ca = (id) => `createaddition:${id}`;
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let cuttingMachine = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: mi('cutting_machine'),
             eu: eu,
             duration: duration,
-            id: id,
             fluid_inputs: [
                 { amount: 1, fluid: mi('lubricant') }
             ]
@@ -20,7 +26,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['item_outputs'] = item_outputs;
         
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     // -- STRAW -- //

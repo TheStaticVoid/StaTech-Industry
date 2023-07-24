@@ -1,21 +1,19 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
-
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/fusion_reactor/${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
 
-    // const REMOVED_RECIPES = [
-    //     mi('fusion_reactor/deuterium_deuterium'),
-    //     mi('fusion_reactor/helium_helium'),
-    // ];
-    // REMOVED_RECIPES.forEach(id => e.remove({id: id}));
-
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let fusion = (id, eu, duration, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('fusion_reactor'),
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
 
         if (fluid_inputs)
@@ -23,9 +21,10 @@ ServerEvents.recipes(e => {
         if (fluid_outputs)
             newRecipe['fluid_outputs'] = fluid_outputs;
 
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
+    // HELIUM PLASMA + DEUTERIUM -> HYDROGEN + NEUTRONIUM 
     fusion(
         st('hydrogen_neutronium_from_helium_plasma_deuterium'),
         16000,

@@ -5,15 +5,15 @@
 	group: "135E7B9D4273E5DD"
 	icon: "twilightforest:twilight_portal_miniature_structure"
 	id: "4040DB2AE139AC91"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"03FBCDDEF854A0E3"
-				"50CB097911D2B369"
+			description: [
+				"The &dMagic Diamond&r is an item &ahidden behind progression&r in the &bWorld of Magic&r chapter. It is needed to open the &2Twilight Forest&r &3portal&r. The rest of the quests in this chapter are hidden for now and will be revealed once you have the &dMagic Diamond&r and start progressing. "
+				""
+				"To make the &3portal&r, it is an &9infinite 2x2 pool of water&r surrounded with &eflowers&r, then drop the &dMagic Diamond&r in."
 			]
-			description: ["With your progression with &eSpectrum&r you have unlocked the ability to enter the &aRealm of Twilight&r. Create a &d2x2&r infinite &9water&r source, surround it with &bflowers&r and drop the &dMagic Diamond&r in to create a portal."]
 			id: "44FFCBCF6580B923"
 			rewards: [
 				{
@@ -973,5 +973,5 @@
 		}
 	]
 	subtitle: ["The OG"]
-	title: "&eThe Twilight Forest"
+	title: "&dThe Twilight Forest"
 }

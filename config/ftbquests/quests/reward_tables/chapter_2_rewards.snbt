@@ -324,6 +324,39 @@
 				}
 			}
 		}
+		{
+			item: {
+				Count: 1b
+				id: "lumberaxe:diamond_lumberaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "vanilla-hammers:netherite_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1b
+				id: "vanilla-hammers:diamond_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ count: 8, item: "kubejs:concrete_bar" }
+		{ item: "ironchests:copper_barrel" }
+		{ item: "ironchests:crystal_barrel" }
+		{ item: "ironchests:obsidian_barrel" }
+		{ item: "ironchests:gold_barrel" }
+		{ item: "ironchests:diamond_barrel" }
 	]
 	title: "Chapter 2 Common Rewards"
 	use_title: true

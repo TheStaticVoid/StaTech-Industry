@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:plasma_turbine').scene('plasma_turbine', 'The Plasma Turbine', 'kubejs:plasma_turbine', (scene, util) => {
         // Show base plate

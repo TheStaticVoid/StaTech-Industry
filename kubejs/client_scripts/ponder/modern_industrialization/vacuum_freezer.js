@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:vacuum_freezer').scene('vacuum_freezer', 'The Vacuum Freezer', 'kubejs:vacuum_freezer', (scene, util) => {
         // Base plate

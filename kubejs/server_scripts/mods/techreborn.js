@@ -1,11 +1,17 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:tech_reborn/${id}`;
     let tr = (id) => `techreborn:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let ae = (id) => `ae2:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let st = (id) => `statech:tech_reborn/${id}`;
 
+    // -- TECHREBORN REMOVED RECIPES -- //
     const DELETED_RECIPES = [
         tr('smelting/refined_iron_ingot_from_iron_ingot'),
         tr('blasting/refined_iron_ingot_from_iron_ingot'),
@@ -133,14 +139,14 @@ ServerEvents.recipes(e => {
         tr('crafting_table/machine/implosion_compressor'),
         tr('crafting_table/machine/high_voltage_su'),
         tr('crafting_table/machine/assembling_machine'),
-        tr('crafting_table/cable/superconductor_cable')
+        tr('crafting_table/cable/superconductor_cable'),
+        tr('crafting_table/small_dust/clay_small_dust_from_dust'),
+        tr('crafting_table/dust/clay_dust_from_small')
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
     // DELETE ALL SMALL DUST RECIPES
-    e.forEachRecipe( {mod: 'techreborn', type: 'minecraft:crafting_shapeless', output: '#techreborn:small_dusts'}, recipe => {
-        e.remove( {id: recipe.getOrCreateId()} );
-    });
+    e.remove({mod: 'techreborn', type: 'minecraft:crafting_shapeless', output: '#techreborn:small_dusts' });
 
     // -- INDUSTRIAL DRILL -- //
     e.shaped(tr('industrial_drill'), [
@@ -826,4 +832,30 @@ ServerEvents.recipes(e => {
     // -- LEAD INGOT FROM GALENA DUST -- //
     e.smelting(mi('lead_ingot'), tr('galena_dust'), 0.7);
     e.blasting(mi('lead_ingot'), tr('galena_dust'), 0.7);
+});
+
+ServerEvents.tags('item', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let tr = (id) => `techreborn:${id}`;
+
+    const ORES = [
+        tr('cinnabar_ore'),
+        tr('galena_ore'),
+        tr('peridot_ore'),
+        tr('pyrite_ore'),
+        tr('ruby_ore'),
+        tr('sapphire_ore'),
+        tr('sheldonite_ore'),
+        tr('silver_ore'),
+        tr('sodalite_ore'),
+        tr('sphalerite_ore'),
+        tr('deepslate_galena_ore'),
+        tr('deepslate_peridot_ore'),
+        tr('deepslate_ruby_ore'),
+        tr('deepslate_sapphire_ore'),
+        tr('deepslate_sheldonite_ore'),
+        tr('deepslate_silver_ore'),
+        tr('deepslate_sodalite_ore')
+    ];
+    ORES.forEach(id => e.add('c:ores', id));
 });

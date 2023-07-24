@@ -1,0 +1,36 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -64,
+        "yMax": 0,
+        "size": 25,
+        "biomeTag": "#ad_astra:venus",
+        "spread": 10,
+        "generationWeight": 2,
+        "blockStateMatchers": [
+            "ad_astra:venus_stone"
+        ],
+        "blocks": {
+            "default": [
+                {
+                    "block": "ad_astra:venus_diamond_ore",
+                    "chance": 0.8
+                },
+                {
+                    "block": "ad_astra:venus_coal_ore",
+                    "chance": 0.2
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:diamond_ore_sample",
+                "chance": 0.5
+            },
+            {
+                "block": "geocluster:coal_ore_sample",
+                "chance": 0.5
+            }
+        ]
+    }
+}

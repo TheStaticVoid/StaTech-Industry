@@ -1,0 +1,36 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -32,
+        "yMax": 52,
+        "size": 70,
+        "biomeTag": "#ad_astra:moon",
+        "spread": 20,
+        "generationWeight": 7,
+        "blockStateMatchers": [
+            "ad_astra:moon_stone"
+        ],
+        "blocks": {
+            "default": [
+                {
+                    "block": "ad_astra:moon_iron_ore",
+                    "chance": 0.8
+                },
+                {
+                    "block": "ad_astra:cheese_ore",
+                    "chance": 0.2
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:iron_ore_sample",
+                "chance": 0.8
+            },
+            {
+                "block": "kubejs:cheese_ore_sample",
+                "chance": 0.2
+            }
+        ]
+    }
+}

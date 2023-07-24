@@ -115,7 +115,7 @@
 		{
 			item: {
 				Count: 1b
-				id: "create:diving_helmet"
+				id: "create:copper_diving_helmet"
 				tag: {
 					Damage: 0
 				}
@@ -124,7 +124,7 @@
 		{
 			item: {
 				Count: 1b
-				id: "create:diving_boots"
+				id: "create:copper_diving_boots"
 				tag: {
 					Damage: 0
 				}
@@ -133,6 +133,11 @@
 		{ item: "sliceanddice:slicer" }
 		{ item: "sliceanddice:sprinkler" }
 		{ count: 16, item: "railways:track_monorail" }
+		{ item: "create:large_water_wheel" }
+		{ item: "create:clipboard" }
+		{ item: "create:elevator_pulley" }
+		{ item: "create:contraption_controls" }
+		{ item: "create:mechanical_roller" }
 	]
 	title: "Create Rewards"
 	use_title: true

@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:large_steam_boiler').scene('large_steam_boiler', 'The Large Steam Boiler', 'kubejs:large_steam_boiler', (scene, util) => {
         // Bottom layer

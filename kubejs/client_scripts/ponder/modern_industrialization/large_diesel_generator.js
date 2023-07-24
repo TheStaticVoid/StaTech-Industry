@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:large_diesel_generator').scene('large_diesel_generator', 'The Large Diesel Generator', 'kubejs:large_diesel_generator', (scene, util) => {
         // Base plate

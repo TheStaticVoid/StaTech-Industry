@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:space_probe_launcher').scene('space_probe_launcher', 'The Space Probe Launcher', 'kubejs:space_probe_launcher', (scene, util) => {
         scene.setSceneOffsetY(-2.0);
@@ -37,9 +42,15 @@ Ponder.registry((event) => {
                 for (let z = 0; z < 7; z++) {
                     scene.world.showSection([x, y, z], Facing.DOWN);
                 }
-                scene.idle(3);
+                if (y > 3)
+                    scene.idle(1);
+                else
+                    scene.idle(3);
             }
-            scene.idle(5);
+            if (y > 3)
+                scene.idle(3);
+            else
+                scene.idle(5);
         }
 
         scene

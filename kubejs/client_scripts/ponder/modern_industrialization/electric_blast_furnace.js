@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:electric_blast_furnace').scene('electric_blast_furnace', 'The Electric Blast Furnace', 'kubejs:ebf_cupronickel', (scene, util) => {
         // Bottom layer

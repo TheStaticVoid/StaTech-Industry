@@ -1,0 +1,36 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -32,
+        "yMax": 52,
+        "size": 70,
+        "biomeTag": "#ad_astra:mars",
+        "spread": 20,
+        "generationWeight": 7,
+        "blockStateMatchers": [
+            "ad_astra:mars_stone"
+        ],
+        "blocks": {
+            "default": [
+                {
+                    "block": "ad_astra:mars_iron_ore",
+                    "chance": 0.9
+                },
+                {
+                    "block": "ad_astra:mars_ice_shard_ore",
+                    "chance": 0.1
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:iron_ore_sample",
+                "chance": 0.9
+            },
+            {
+                "block": "kubejs:ice_ore_sample",
+                "chance": 0.1
+            }
+        ]
+    }
+}

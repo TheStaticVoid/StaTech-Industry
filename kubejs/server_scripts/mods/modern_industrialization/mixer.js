@@ -1,17 +1,29 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let xps = (id) => `xps:${id}`;
+    let xp = (id) => `xps:${id}`;
     let ae = (id) => `ae2:${id}`;
+    let tr = (id) => `techreborn:${id}`;
     let st = (id) => `statech:modern_industrialization/mixer/${id}`;
 
+    // -- MIXER REMOVED RECIPES -- //
+    const REMOVED_RECIPES = [
+        mi('materials/mixer/fire_clay_dust')
+    ];
+    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let mixer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
             type: mi('mixer'),
             eu: eu,
-            duration: duration,
-            id: id
+            duration: duration
         }
 
         if (item_inputs)
@@ -23,9 +35,20 @@ ServerEvents.recipes(e => {
         if (fluid_outputs)
             newRecipe['fluid_outputs'] = fluid_outputs;
         
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
+    // -- LIQUID ENDER -- // 
+    mixer(
+        st('liquid_ender'),
+        8,
+        200,
+        [ { amount: 2, item: tr('ender_pearl_dust') } ],
+        null,
+        [ { amount: 800, fluid: mc('water') } ],
+        [ { amount: 1000, fluid: mi('liquid_ender') } ]
+    );
+    
     // -- SOULCOPPER BLEND -- //
     mixer(
         st('soul_copper_blend'),
@@ -35,9 +58,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('raw_copper') },
             { amount: 1, item: mc('soul_sand') }
         ],
-        [
-            { amount: 4, item: xps('soul_copper_blend') }
-        ]
+        [ { amount: 4, item: xp('soul_copper_blend') } ]
     );    
 
     // -- CERTUS QUARTS CRYSTAL -- //
@@ -49,12 +70,8 @@ ServerEvents.recipes(e => {
             { amount: 1, item: ae('charged_certus_quartz_crystal') },
             { amount: 1, item: ae('certus_quartz_dust') }
         ],
-        [
-            { amount: 2, item: ae('certus_quartz_crystal') }
-        ],
-        [
-            { amount: 1000, fluid: mc('water'), probability: 0 }
-        ]
+        [ { amount: 2, item: ae('certus_quartz_crystal') } ],
+        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
     );
 
     // -- DAMAGED BUDDING CERTUS QUARTZ -- //
@@ -95,6 +112,20 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: ae('flawed_budding_quartz') } ],
         [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
     );
+    
+    // -- DRILLING FLUID -- //
+    mixer(
+        st('drilling_fluid'),
+        8,
+        400,
+        [ { amount: 16, item: mi('clay_dust') } ],
+        null,
+        [
+            { amount: 700, fluid: mc('water') },
+            { amount: 100, fluid: mi('lubricant') }
+        ],
+        [ { amount: 1000, fluid: mi('drilling_fluid') } ]
+    );
 
     // -- GRASS BLOCK RECIPE PARITY -- //
     mixer(
@@ -109,6 +140,33 @@ ServerEvents.recipes(e => {
         [ { amount: 1000, fluid: mc('water') } ]
     );
 
+    // -- FIRE CLAY DUST -- //
+    mixer(
+        st('fire_clay_dust'),
+        2,
+        100,
+        [
+            { amount: 2, item: mi('brick_dust') },
+            { amount: 2, item: mi('clay_dust') }
+        ],
+        [ { amount: 4, item: mi('fire_clay_dust') } ]
+    );
+
+    // -- LIQUID CONCRETE -- //
+    mixer(
+        st('liquid_concrete'),
+        8,
+        200,
+        [ 
+            { amount: 4, item: mi('clay_dust') },
+            { amount: 10, item: mi('stone_dust') }
+        ],
+        null,
+        [ { amount: 100, fluid: mc('water') } ],
+        [ { amount: 500, fluid: mi('concrete') } ]
+    );
+
+    // -- UTILITY FUNCTION FOR THE FOLLOWING FOREACH -- //
     let mixerConsumable = (fluid, amount) => {
         if (amount < 100)
             amount = 1000;
@@ -122,6 +180,7 @@ ServerEvents.recipes(e => {
     }
     
     // -- CONVERT ALL NON-CONSUMABLE FLUID RECIPES IN MIXER TO CONSUME FLUID  -- //
+    let toRemove = [];
     e.forEachRecipe( { type: mi('mixer') }, recipe => {
         const DONT_REPLACE = [
             'modern_industrialization:vanilla_recipes/mixer/lava',
@@ -161,9 +220,10 @@ ServerEvents.recipes(e => {
         }
 
         if (newFluidInput) {
-            e.remove({ id: recipe.getId() });
+            toRemove.push(recipe.getId());
             let id = st(recipe.getId().split('mixer/')[1]);
             mixer(id, eu, duration, item_inputs, item_outputs, newFluidInput, fluid_outputs);
         }
     });
+    toRemove.forEach(id => e.remove({ id: id }));
 });

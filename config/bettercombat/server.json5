@@ -21,7 +21,26 @@
 		"alexsmobs:crocodile"
 	],
 	// Allows vanilla sweeping mechanic to work and Sweeping Edge enchantment
-	"allow_sweeping": true,
+	"allow_vanilla_sweeping": false,
+	// Allows new sweeping mechanic (by Better Combat) to work, including Sweeping Edge enchantment
+	"allow_reworked_sweeping": true,
+	/* The more additional targets a weapon swing hits, the weaker it will get.
+	   Entities struck (+1) in a swing more than this, won't get weakened any further.
+	*/
+	"reworked_sweeping_extra_target_count": 4,
+	/* Determines how weak the attack becomes when striking `reworked_sweeping_extra_target_count + 1` targets.
+	   Example values:
+	   - `0.5` -50% damage
+	*/
+	"reworked_sweeping_maximum_damage_penalty": 0.5,
+	/* The maximum level Sweeping Edge enchantment applied to the attackers weapon will restore this amount of penalty.
+	   Example values:
+	   - `0.5` restores 50% damage penalty when 3 levels are applied, so 16.66% when 1 level is applied
+	*/
+	"reworked_sweeping_enchant_restores": 0.5,
+	"reworked_sweeping_plays_sound": true,
+	"reworked_sweeping_emits_particles": true,
+	"reworked_sweeping_sound_and_particles_only_for_swords": true,
 	// Allows client-side target search to ignore obstacles. WARNING! Setting this to `false` significantly increases the load on clients.
 	"allow_attacking_thru_walls": false,
 	// Applies movement speed multiplier while attacking. (Min: 0, Max: 1). Use `0` for a full stop while attacking. Use `1` for no movement speed penalty

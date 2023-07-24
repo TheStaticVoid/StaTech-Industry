@@ -1,8 +1,13 @@
-ServerEvents.recipes(e => {
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
 
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/forge_hammer/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
-    let st = (id) => `statech:modern_industrialization/forge_hammer/${id}`;
 
     const MATERIALS = [
         'bronze',
@@ -18,7 +23,6 @@ ServerEvents.recipes(e => {
         'gold',
         'iron',
         'tin',
-
     ];
 
     const MATERIAL_CRUSHED_DUST = [
@@ -54,6 +58,7 @@ ServerEvents.recipes(e => {
         'rod_to_ring_with_tool',
     ];
 
+    // -- REMOVE ALL THE FORGE HAMMER RECIPES -- // 
     RECIPES.forEach(recipe => {
         MATERIALS.forEach(material => {
             let combined = 'modern_industrialization:materials/' + material + '/forge_hammer/' + recipe;
@@ -65,6 +70,7 @@ ServerEvents.recipes(e => {
         mi('materials/coal/forge_hammer/ore_to_crushed_dust'),
         mi('materials/coal/forge_hammer/ore_to_crushed_dust_with_tool'),
         mi('materials/coal/forge_hammer/ore_to_dust_with_tool'),
+        mi('materials/coal/forge_hammer/crushed_dust_to_dust_with_tool'),
         mi('materials/copper/forge_hammer/raw_metal_to_dust_with_tool'),
         mi('materials/forge_hammer/brick_dust'),
         mi('materials/forge_hammer/brick_dust_with_tool'),
@@ -82,19 +88,21 @@ ServerEvents.recipes(e => {
         mi('materials/lignite_coal/forge_hammer/ore_to_crushed_dust'),
         mi('materials/lignite_coal/forge_hammer/ore_to_crushed_dust_with_tool'),
         mi('materials/lignite_coal/forge_hammer/ore_to_dust_with_tool'),
+        mi('materials/lignite_coal/forge_hammer/crushed_dust_to_dust_with_tool'),
         mi('materials/tin/forge_hammer/ore_to_dust_with_tool'),
         mi('materials/tin/forge_hammer/ore_to_raw_metal'),
         mi('materials/tin/forge_hammer/ore_to_raw_metal_with_tool'),
         mi('materials/tin/forge_hammer/raw_metal_to_dust_with_tool')
     ];
+    // -- REMOVE ALL THE ORE FORGE HAMMER RECIPES -- //
     ORE_RECIPES.forEach(id => e.remove({id : id}));
 
+    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let forgeHammer = (id, eu, item_inputs, item_outputs) => {
         let newRecipe = {
             type: 'modern_industrialization:forge_hammer',
             eu: eu,
-            duration: 0,
-            id: id
+            duration: 0
         }
 
         if (item_inputs)
@@ -102,7 +110,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['item_outputs'] = item_outputs;
         
-        e.custom(newRecipe);
+        e.custom(newRecipe).id(id);
     }
 
     MATERIAL_CRUSHED_DUST.forEach(material => {
@@ -273,4 +281,12 @@ ServerEvents.recipes(e => {
         [ { amount: 1, tag: 'c:brick_ingots' } ],
         [ { amount: 2, item: mi('brick_tiny_dust') } ]
     );
+
+    // -- CLAY DUST FROM CLAY BALL -- //
+    forgeHammer(
+        st('clay_dust'),
+        20,
+        [ { amount: 1, item: mc('clay_ball') } ],
+        [ { amount: 1, item: mi('clay_dust') } ]
+    )
 });

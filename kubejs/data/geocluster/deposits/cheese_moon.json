@@ -1,0 +1,28 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": 0,
+        "yMax": 64,
+        "size": 50,
+        "biomeTag": "#minecraft:is_overworld",
+        "spread": 15,
+        "generationWeight": 8,
+        "blockStateMatchers": [
+            "ad_astra:moon_stone"
+        ],
+        "blocks": {
+            "default": [
+                {
+                    "block": "ad_astra:moon_cheese_ore",
+                    "chance": 1.0
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "kubejs:cheese_ore_sample",
+                "chance": 1.0
+            }
+        ]
+    }
+}

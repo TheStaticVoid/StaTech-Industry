@@ -1,9 +1,16 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:quarrymod/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let qm = (id) => `quarrymod:${id}`;
-    let st = (id) => `statech:quarrymod/${id}`;
 
+    // -- QUARRYMOD REMOVED RECIPES -- //
     const REMOVED = [
         qm('crafting_table/upgrades/fortune_lvl1_upgrade'),
         qm('crafting_table/upgrades/range_extender_lvl1_upgrade'),

@@ -1,0 +1,34 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -32,
+        "yMax": 52,
+        "size": 120,
+        "biomeTag": "#ad_astra:glacio",
+        "spread": 10,
+        "generationWeight": 6,
+        "blockStateMatchers": [
+            "ad_astra:glacio_stone"
+        ],
+        "blocks": {
+            "default": [
+                {
+                    "block": "ad_astra:glacio_ice_shard_ore",
+                    "chance": 1.0
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "ad_astra:deepslate_ice_shard_ore",
+                    "chance": 1.0
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "kubejs:ice_ore_sample",
+                "chance": 1.0
+            }
+        ]
+    }
+}

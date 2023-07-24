@@ -1,84 +1,113 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.tags('worldgen/biome', e => {
     // remove the naturally spawning oil wells from the world
     e.removeAll('ad_astra:has_structure/oil_well_biomes');
 });
 
 ServerEvents.recipes(e => {
-
-    let astra = (id) => `ad_astra:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:ad_astra/${id}`;
+    let ad = (id) => `ad_astra:${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
 
+    // -- AD ASTRA REMOVED RECIPES -- //
     const AD_ASTRA_DELETED_ITEMS = [
-        astra('recipes/steel_ingot_from_blasting_iron_ingot'),
-        astra('recipes/coal_generator'),
-        astra('recipes/astrodux'),
-        astra('hammering/steel_plate'),
-        astra('hammering/ostrum_plate'),
-        astra('hammering/iron_plate'),
-        astra('hammering/desh_plate'),
-        astra('hammering/calorite_plate'),
-        astra('recipes/steel_cable'),
-        astra('recipes/desh_cable'),
-        astra('recipes/desh_fluid_pipe'),
-        astra('recipes/ostrum_fluid_pipe'),
-        astra('recipes/compressor'),
-        astra('recipes/fuel_refinery'),
-        astra('recipes/cable_duct'),
-        astra('recipes/fluid_pipe_duct'),
-        astra('recipes/engine_fan'),
-        astra('recipes/oxygen_tank'),
-        astra('recipes/oxygen_gear'),
-        astra('recipes/oxygen_loader'),
-        astra('recipes/space_helmet'),
-        astra('recipes/space_suit'),
-        astra('recipes/space_pants'),
-        astra('recipes/space_boots'),
-        astra('recipes/nasa_workbench'),
-        astra('recipes/engine_frame'),
-        astra('recipes/steel_tank'),
-        astra('recipes/wrench'),
-        astra('recipes/water_pump'),
-        astra('recipes/wheel'),
-        astra('recipes/tier_1_rover'),
-        astra('recipes/desh_tank'),
-        astra('recipes/iron_rod'),
-        astra('recipes/rocket_fin'),
-        astra('recipes/rocket_nose_cone'),
-        astra('recipes/steel_engine'),
-        astra('recipes/jet_suit'),
-        astra('recipes/desh_engine'),
-        astra('recipes/ostrum_tank'),
-        astra('recipes/ostrum_engine'),
-        astra('recipes/calorite_tank'),
-        astra('recipes/calorite_engine'),
-        astra('recipes/solar_panel'),
-        astra('recipes/launch_pad')
+        ad('recipes/steel_ingot_from_blasting_iron_ingot'),
+        ad('recipes/coal_generator'),
+        ad('recipes/astrodux'),
+        ad('hammering/steel_plate'),
+        ad('hammering/ostrum_plate'),
+        ad('hammering/iron_plate'),
+        ad('hammering/desh_plate'),
+        ad('hammering/calorite_plate'),
+        ad('recipes/steel_cable'),
+        ad('recipes/desh_cable'),
+        ad('recipes/desh_fluid_pipe'),
+        ad('recipes/ostrum_fluid_pipe'),
+        ad('recipes/compressor'),
+        ad('recipes/fuel_refinery'),
+        ad('recipes/cable_duct'),
+        ad('recipes/fluid_pipe_duct'),
+        ad('recipes/engine_fan'),
+        ad('recipes/oxygen_tank'),
+        ad('recipes/oxygen_gear'),
+        ad('recipes/oxygen_loader'),
+        ad('recipes/space_helmet'),
+        ad('recipes/space_suit'),
+        ad('recipes/space_pants'),
+        ad('recipes/space_boots'),
+        ad('recipes/nasa_workbench'),
+        ad('recipes/engine_frame'),
+        ad('recipes/steel_tank'),
+        ad('recipes/wrench'),
+        ad('recipes/water_pump'),
+        ad('recipes/wheel'),
+        ad('recipes/tier_1_rover'),
+        ad('recipes/desh_tank'),
+        ad('recipes/iron_rod'),
+        ad('recipes/rocket_fin'),
+        ad('recipes/rocket_nose_cone'),
+        ad('recipes/steel_engine'),
+        ad('recipes/jet_suit'),
+        ad('recipes/desh_engine'),
+        ad('recipes/ostrum_tank'),
+        ad('recipes/ostrum_engine'),
+        ad('recipes/calorite_tank'),
+        ad('recipes/calorite_engine'),
+        ad('recipes/solar_panel'),
+        ad('recipes/launch_pad'),
+        ad('recipes/nasa_workbench/tier_1_rocket')
     ];
     AD_ASTRA_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
-    e.remove({ type: astra('fuel_conversion') });
+    e.remove({ type: ad('fuel_conversion') });
 
     // -- OXYGEN TO AD ASTRA OXYGEN -- //
     e.custom({
-        id: st('oxygen'),
-        type: astra('oxygen_conversion'),
+        type: ad('oxygen_conversion'),
         input: mi('oxygen'),
-        output: astra('oxygen'),
+        output: ad('oxygen'),
         conversion_ratio: 1.0
-    });
+    })
+    .id(st('oxygen'));
 
     // -- BOOSTED DIESEL TO ROCKET FUEL -- //
     e.custom({
-        id: st('fuel'),
-        type: astra('fuel_conversion'),
+        type: ad('fuel_conversion'),
         input: mi('boosted_diesel'),
-        output: astra('fuel'),
+        output: ad('fuel'),
         conversion_ratio: 0.5
-    });
+    })
+    .id(st('fuel'));
+
+    // -- TIER 1 ROCKET -- //
+    e.custom({
+        type: ad('nasa_workbench'),
+        ingredients: [
+            { ingredient: { item: ad('rocket_nose_cone') } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { tag: 'c:enderium_blocks' } },
+            { ingredient: { item: ad('rocket_fin') } },
+            { ingredient: { item: ad('steel_tank') } },
+            { ingredient: { item: ad('steel_tank') } },
+            { ingredient: { item: ad('rocket_fin') } },
+            { ingredient: { item: ad('rocket_fin') } },
+            { ingredient: { item: ad('steel_engine') } },
+            { ingredient: { item: ad('rocket_fin') } }
+        ],
+        output: ad('tier_1_rocket')
+    })
+    .id(st('tier_1_rocket'));
 
     // -- FUEL REFINERY -- //
-    e.shaped(astra('fuel_refinery'), [
+    e.shaped(ad('fuel_refinery'), [
         'SCS',
         'PHP',
         'SCS'
@@ -92,7 +121,7 @@ ServerEvents.recipes(e => {
     .id(st('fuel_refinery'));
 
     // -- OXYGEN TANK -- //
-    e.shaped(astra('oxygen_tank'), [
+    e.shaped(ad('oxygen_tank'), [
         'PR',
         'PP',
         'PP'
@@ -104,22 +133,22 @@ ServerEvents.recipes(e => {
     .id(st('oxygen_tank'));
 
     // -- OXYGEN LOADER -- //
-    e.shaped(astra('oxygen_loader'), [
+    e.shaped(ad('oxygen_loader'), [
         'PFP',
         'THT',
         'PCP'
     ],
     {
         P: mi('steel_large_plate'),
-        F: astra('engine_fan'),
-        T: astra('oxygen_tank'),
+        F: ad('engine_fan'),
+        T: ad('oxygen_tank'),
         H: mi('turbo_machine_hull'),
         C: mi('digital_circuit')
     })
     .id(st('oxygen_loader'));
 
     // -- OXYGEN GEAR -- //
-    e.shaped(astra('oxygen_gear'), [
+    e.shaped(ad('oxygen_gear'), [
         ' R ',
         'PRP',
         'PRP'
@@ -131,7 +160,7 @@ ServerEvents.recipes(e => {
     .id(st('oxygen_gear'));
 
     // -- NASA WORKBENCH -- //
-    e.shaped(astra('nasa_workbench'), [
+    e.shaped(ad('nasa_workbench'), [
         'AAA',
         'PHP',
         'CMC'
@@ -146,7 +175,7 @@ ServerEvents.recipes(e => {
     .id(st('nasa_workbench'));
 
     // -- WHEEL -- // 
-    e.shaped(astra('wheel'), [
+    e.shaped(ad('wheel'), [
         ' R ',
         'RSR',
         ' R '
@@ -158,23 +187,23 @@ ServerEvents.recipes(e => {
     .id(st('wheel'));
 
     // -- TIER 1 ROVER -- // 
-    e.shaped(astra('tier_1_rover'), [
+    e.shaped(ad('tier_1_rover'), [
         'D R',
         'SDE',
         'WPW'
     ],
     {
-        D: astra('desh_block'),
+        D: ad('desh_block'),
         R: mi('steel_rod'),
         S: '#c:steel_blocks',
-        E: astra('desh_engine'),
-        W: astra('wheel'),
-        P: astra('desh_plate')
+        E: ad('desh_engine'),
+        W: ad('wheel'),
+        P: ad('desh_plate')
     })
     .id(st('tier_1_rover'));
 
     // -- JET SUIT -- //
-    e.shaped(astra('jet_suit'), [
+    e.shaped(ad('jet_suit'), [
         'PJP',
         'TNT',
         'BGB'
@@ -182,15 +211,15 @@ ServerEvents.recipes(e => {
     {
         P: '#c:calorite_plates',
         J: mi('diesel_jetpack'),
-        T: astra('calorite_tank'),
-        N: astra('netherite_space_suit'),
+        T: ad('calorite_tank'),
+        N: ad('netherite_space_suit'),
         B: '#c:calorite_blocks',
-        G: astra('calorite_engine')
+        G: ad('calorite_engine')
     })
     .id(st('jet_suit'));
 
     // -- LAUNCHPAD -- //
-    e.shaped(astra('launch_pad'), [
+    e.shaped(ad('launch_pad'), [
         'SIS',
         'ISI',
         'SIS'
@@ -202,7 +231,7 @@ ServerEvents.recipes(e => {
     .id(st('launch_pad'));
 
     // -- SOLAR PANEL -- //
-    e.shaped(astra('solar_panel'), [
+    e.shaped(ad('solar_panel'), [
         'BBB',
         'CFC',
         'PDP'
@@ -213,5 +242,27 @@ ServerEvents.recipes(e => {
         F: mi('turbo_machine_hull'),
         P: '#c:desh_plates',
         D: mi('digital_circuit')
-    });
+    })
+    .id(st('solar_panel'));
+});
+
+// Tag all ore items under the common ores tag
+ServerEvents.tags('item', e => {
+    let ad = (id) => `ad_astra:${id}`;
+
+    const ORES = [
+        ad('moon_cheese_ore'),
+        ad('moon_desh_ore'),
+        ad('deepslate_desh_ore'),
+        ad('moon_iron_ore'),
+        ad('moon_ice_shard_ore'),
+        ad('deepslate_ice_shard_ore'),
+        ad('mars_ostrum_ore'),
+        ad('deepslate_ostrum_ore'),
+        ad('mars_ice_shard_ore'),
+        ad('venus_calorite_ore'),
+        ad('deepslate_calorite_ore'),
+        ad('glacio_ice_shard_ore')
+    ];
+    ORES.forEach(id => e.add('c:ores', id));
 });

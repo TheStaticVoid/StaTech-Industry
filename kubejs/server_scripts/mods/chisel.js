@@ -1,7 +1,18 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:${id}`;
-    e.remove({id: 'chisel:chisel'});
-    e.shaped('chisel:chisel', [
+    let ch = (id) => `chisel:${id}`;
+
+    // Remove and replace the default chisel recipe
+    e.remove({id: ch('chisel')});
+
+    // -- CHISEL -- // 
+    e.shaped(ch('chisel'), [
         ' P',
         'S '
     ],

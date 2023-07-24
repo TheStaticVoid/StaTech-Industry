@@ -1,9 +1,16 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:giselle_addon/${id}`;
     let ga = (id) => `ad_astra_giselle_addon:${id}`;
     let ad = (id) => `ad_astra:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
 
+    // -- GISELLE ADDON REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         ga('crafting/fuel_loader'),
         ga('crafting/automation_nasa_workbench'),
@@ -76,6 +83,8 @@ ServerEvents.tags('fluid', e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
 
+    // Remove the fuel tags added by the mod so the regular conversion of boosted
+    // diesel -> rocket fuel is kept
     const FUELS = [
         mi('biodiesel'),
         mi('diesel'),

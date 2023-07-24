@@ -1,8 +1,15 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // There was a weird recipe that had no input and had brown dye as an output
+    // Might have been a mistagged item
     e.remove({id: 'byg:brown_dye'})
 });
 
-
+// Block tagging provided by kevintok
 ServerEvents.tags('block', e => {
     e.add('c:quartz_ores', 'byg:blue_nether_quartz_ore')
     e.add('c:quartz_ores', 'byg:brimstone_nether_quartz_ore')

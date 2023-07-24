@@ -1,9 +1,16 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:waystones/${id}`;
     let sp = (id) => `spectrum:${id}`;
-    let tr = (id) => `techreborn:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let ws = (id) => `waystones:${id}`;
+    
+    // -- WAYSTONES REMOVED RECIPES -- //
     const WAYSTONE_REMOVED_RECIPES = [
         ws('warp_stone'),
         ws('return_scroll'),
@@ -16,7 +23,6 @@ ServerEvents.recipes(e => {
 
     // -- WARP STONE -- //
     e.custom({
-        id: st('warp_stone'),
         type: sp('fusion_shrine'),
         time: 400,
         experience: 30.0,
@@ -36,11 +42,11 @@ ServerEvents.recipes(e => {
             'visual_explosions_on_shrine'
         ],
         finish_crafting_effect: 'lightning_on_shrine'
-    });
+    })
+    .id(st('warp_stone'));
 
     // -- WARP PLATE -- //
     e.custom({
-        id: st('warp_plate'),
         type: sp('pedestal'),
         time: 400,
         tier: 'simple',
@@ -67,11 +73,11 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('warp_plate'));
 
     // -- RETURN SCROLL -- //
     e.custom({
-        id: st('return_scroll'),
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -97,11 +103,11 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('return_scroll'));
 
     // -- BOUND SCROLL -- //
     e.custom({
-        id: st('bound_scroll'),
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -129,11 +135,11 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('bound_scroll'));
 
     // -- WARP SCROLL -- //
     e.custom({
-        id: st('warp_scroll'),
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -161,11 +167,11 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('warp_scroll'));
 
     // -- WARP DUST -- //
     e.custom({
-        id: st('warp_dust'),
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -179,12 +185,8 @@ ServerEvents.recipes(e => {
             'EA'
         ],
         key: {
-            E: {
-                tag: 'c:ender_pearl_dusts'
-            },
-            A: {
-                item: sp('amethyst_powder')
-            }
+            E: { tag: 'c:ender_pearl_dusts' },
+            A: { item: sp('amethyst_powder') }
         },
         result: {
             item: ws('warp_dust'),
@@ -193,5 +195,6 @@ ServerEvents.recipes(e => {
         required_advancement: [
             sp('build_basic_pedestal_structure')
         ]
-    });
+    })
+    .id(st('warp_dust'));
 });

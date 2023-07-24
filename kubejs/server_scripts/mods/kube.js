@@ -1,10 +1,17 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
-    let kjs = (id) => `kubejs:${id}`;
-    let astra = (id) => `ad_astra:${id}`;
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:kubejs/${id}`;
+    let kj = (id) => `kubejs:${id}`;
+    let ad = (id) => `ad_astra:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
 
     // -- SPACE PROBE -- //
-    e.shaped('4x ' + kjs('space_probe'), [
+    e.shaped('4x ' + kj('space_probe'), [
         'FCD',
         'TMC',
         'ETF'
@@ -13,9 +20,9 @@ ServerEvents.recipes(e => {
         D: mi('desh_drill'),
         T: mi('titanium_tank'),
         M: mi('processing_unit'),
-        F: astra('rocket_fin'),
-        E: astra('desh_engine'),
-        C: mi('aluminum_gear')
+        F: ad('rocket_fin'),
+        E: ad('desh_engine'),
+        C: mi('enderium_gear')
     })
-    .id('statech:kubejs/space_probe');
+    .id(st('space_probe'));
 });

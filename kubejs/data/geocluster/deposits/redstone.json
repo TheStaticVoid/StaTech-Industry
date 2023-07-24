@@ -1,0 +1,51 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -64,
+        "yMax": 16,
+        "size": 60,
+        "biomeTag": "#minecraft:is_overworld",
+        "spread": 20,
+        "generationWeight": 4,
+        "blocks": {
+            "default": [
+                {
+                    "block": "redstone_ore",
+                    "chance": 0.75
+                },
+                {
+                    "block": "techreborn:ruby_ore",
+                    "chance": 0.2
+                },
+                {
+                    "block": "byg:cryptic_redstone_ore",
+                    "chance": 0.05
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "deepslate_redstone_ore",
+                    "chance": 0.75
+                },
+                {
+                    "block": "techreborn:deepslate_ruby_ore",
+                    "chance": 0.2
+                },
+                {
+                    "block": "byg:cryptic_redstone_ore",
+                    "chance": 0.05
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:redstone_ore_sample",
+                "chance": 0.9
+            },
+            {
+                "block": "geocluster:nether_ruby_ore_sample",
+                "chance": 0.1
+            }
+        ]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": 48,
+        "yMax": 80,
+        "size": 40,
+        "biomeTag": "#minecraft:is_overworld",
+        "spread": 10,
+        "generationWeight": 5,
+        "blocks": {
+            "default": [
+                {
+                    "block": "modern_industrialization:salt_ore",
+                    "chance": 1.0
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "modern_industrialization:deepslate_salt_ore",
+                    "chance": 1.0
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:salt_ore_sample",
+                "chance": 1.0
+            }
+        ]
+    }
+}

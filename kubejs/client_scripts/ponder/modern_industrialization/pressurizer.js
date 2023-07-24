@@ -1,3 +1,8 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 Ponder.registry((event) => {
     event.create('modern_industrialization:pressurizer').scene('pressurizer', 'The Pressurizer', 'kubejs:pressurizer', (scene, util) => {
         // Base plate

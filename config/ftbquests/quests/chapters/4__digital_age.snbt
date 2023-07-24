@@ -19,21 +19,6 @@
 			y: -1.5d
 		}
 		{
-			click: "https://appliedenergistics.github.io/"
-			corner: false
-			dev: false
-			height: 1.0d
-			hover: [
-				"I may have missed some crucial info"
-				"Click here to check the wiki"
-			]
-			image: "ae2:item/blank_pattern"
-			rotation: 0.0d
-			width: 1.0d
-			x: 2.0d
-			y: 4.5d
-		}
-		{
 			click: ""
 			corner: false
 			dev: false
@@ -92,9 +77,9 @@
 				""
 				"Quite the accomplishment to make it this far, but we're not done yet. There's still much to do, the &bfactory must grow&r."
 				""
-				"There's a &afew paths&r you can start down. If you'd like, you can start building parts for your &cfirst rocket and get to the moon&r, you could look to setup better automations with &dAE2&r, or you could continue progressing in &eModern Industrializations&r."
+				"There's a &afew paths&r you can start down. If you'd like, you can start building parts for your &cfirst rocket and get to the moon&r, you could look to advance your &dAE2&r setup, or you could continue progressing in &eModern Industrializations&r."
 				""
-				"&oA sane person would pick AE2, but it's ultimately your choice&r."
+				"Progressing further into &dAE2&r is &cnot required&r for overall progression, but the other two paths are required."
 			]
 			id: "3F4A396DD273A543"
 			rewards: [
@@ -345,7 +330,7 @@
 			]
 			title: "The Distillation Tower"
 			x: 5.25d
-			y: -2.25d
+			y: -3.0d
 		}
 		{
 			dependencies: ["68CE43C175FB0826"]
@@ -353,6 +338,8 @@
 				"The &bRocket Part Assembler&r is a new singleblock machine you can create that will allow you to &2create rocket parts&r (shocker, I know)."
 				""
 				"Along with the other important &eAd Astra&r machines you will need to make &3before your main launch&r, this one will be the most important, as it's where you &emake all the parts to your rocket&r!"
+				""
+				"Note that all the recipes in this require &2Molten Enderium&r. The &bRocket Part Assembler&r binds the unique properties to the components for your rocket."
 			]
 			id: "7839B0187F555DC9"
 			rewards: [
@@ -412,7 +399,6 @@
 				type: "xp"
 				xp: 10
 			}]
-			shape: "square"
 			tasks: [{
 				id: "531D8A591837029A"
 				title: "Click to Acknowledge"
@@ -668,9 +654,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["41EE82F6FDB2109C"]
+			dependencies: [
+				"41EE82F6FDB2109C"
+				"098B06EA3D9CDED3"
+			]
 			description: [
-				"It's time to put all the preparation to good use. Using a copious amounts of Steel, create the &bTier 1 Rocket&r."
+				"It's time to put all the preparation to good use. Using a copious amounts of &aEnderium&r, create the &bTier 1 Rocket&r."
 				""
 				"To put fuel in the rocket, shift-right to open its inventory. You can put buckets of fuel into the rocket. You'll need &a12000 mB of Fuel&r to fully fuel the rocket for launch. Unfortunately you'll have to load them with buckets, as &eMI Tanks don't seem to work&r, but placing an &eMI Tank&r and filling up several buckets and unloading them into the rocket will make quick work of this task. (Or you can make the &aFuel Loader&r from the &eGiselle Addon&r)"
 				""
@@ -984,301 +973,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["0E556AD31516BB03"]
-			description: [
-				"By combining printed &bAE2 circuits&r and &7silicon&r in an &eInscriber&r you will create the basic components for all of &eAE2&r."
-				""
-				"If you want a &efaster way to process them&r, you can use an &aAssembler&r with &cMolten Redstone&r to make the circuits as well."
-			]
-			id: "2BB495CFC3E6D6C8"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2C5C29EEA92538FE"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "45F68AC04E912F6A"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "61DDB1C9203C1FD8"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [
-				{
-					id: "19EA7F8024BB407C"
-					item: "ae2:logic_processor"
-					type: "item"
-				}
-				{
-					id: "4E054A947A80397F"
-					item: "ae2:calculation_processor"
-					type: "item"
-				}
-				{
-					id: "6A3C9A96F857A9AC"
-					item: "ae2:engineering_processor"
-					type: "item"
-				}
-			]
-			title: "AE2 Processors"
-			x: 1.0d
-			y: 6.5d
-		}
-		{
-			dependencies: [
-				"302958D57C6A10C7"
-				"5FDDE9153DE118DF"
-			]
-			description: [
-				"With your &aTurbo Machine Hulls&r you can now craft the &eAE2 Inscriber&r. The &eInscriber&r is a necessary machine to create the &bAE2 Processors&r and &bPrinted Silicon&r"
-				""
-				"The &eInscriber&r can be powered directly with &eModern Industrialization cables&r."
-			]
-			id: "0E556AD31516BB03"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "156FA4B875ACC0FE"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "2CF644952C43E361"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "2F8D58591C610B8C"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "55303A2F05494F75"
-				item: "ae2:inscriber"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["0E556AD31516BB03"]
-			description: [
-				"&dFluix Crystals&r have been craftable since you created your first &eElectrolyzer&r, but they have been unusable. "
-				""
-				"Finally, it's time to make some, as they are an important crafting component in &eAE2&r items."
-			]
-			id: "01D12D790B2DE5F5"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "445E3BACA5920EFD"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "26C1C00EC52E810D"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "2BE6134898EB413D"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "49D14D2D43E385A1"
-				item: "ae2:fluix_crystal"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 6.5d
-		}
-		{
-			dependencies: [
-				"01D12D790B2DE5F5"
-				"2BB495CFC3E6D6C8"
-			]
-			description: [
-				"While technically not required to setup your first &eAE2 network&r, you will really want to craft at least one of these for now. "
-				""
-				"Thanks to the glorious &eModern Industrialization&r's universal cables, you will not need to craft an &bEnergy Acceptor&r to hook up your network to power. You can plug it right in to your power generation!"
-				""
-				"&eApplied Energistics&r is a pretty expansive mod with a lot of mechanics, with &aP2P&r and &bchannels&r being the most complex part."
-				""
-				"&cNOTE&r: &eAE2&r uses it's own energy system, just know that EU is converted in a 1:2 power ratio, meaning that for every 1 EU put in you are actually generating 2 AE."
-			]
-			id: "47AC1C475DEE0FE4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "27825C46CEDC1AAF"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 10
-					id: "1829B8CBA68EDBA3"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "305C19A3A5B00F38"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			size: 1.5d
-			subtitle: "Heart of the Network"
-			tasks: [{
-				id: "6C4582D1D40B7A51"
-				item: "ae2:controller"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["47AC1C475DEE0FE4"]
-			description: [
-				"The &bME Drive&r is a block designed to store &aStorage Cells&r. The &bME Drive&r can hold 10 Storage Cells."
-				""
-				"The front of the drive will display the status of the drive in the corresponding spot with a color:"
-				"- Red: The cell is full"
-				"- Orange: The cell cannot hold any more types, but can store more items"
-				"- Green: The cell can hold more types or more items"
-				"- Black: There is no channel or power is offline"
-			]
-			id: "2D9D7FFDA18C95B5"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5BD59099B994BAED"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "302F5B5928C92C82"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "3BD2BA6502EA41F8"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			subtitle: "All your stuff in a single block"
-			tasks: [{
-				id: "3B78757D8EAD40DD"
-				item: "ae2:drive"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["0E556AD31516BB03"]
-			description: [
-				"If you've yet to find an &eAE2 meteorite&r, then you might want to make this compass. "
-				""
-				"Placing a vanilla compass in a &eCharger&r will charge it up to search for meteorites in your world. Once you find the meteorite mine to the center to find the Presses and even some &7Certus Quartz Buds&r."
-				""
-				"Like the &eInscriber&r, you can use MI cables directly on the Charger to plug it into your power network."
-			]
-			icon: "ae2:meteorite_compass"
-			id: "4589D54579864AE8"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "12A3F26B969482E4"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "1C7B898EA7157DFB"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "79161C01405A58F2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [
-				{
-					id: "1FBF3E80421EF68D"
-					item: "ae2:charger"
-					type: "item"
-				}
-				{
-					id: "5D108F3DA879349D"
-					item: "ae2:meteorite_compass"
-					type: "item"
-				}
-			]
-			title: "Meteorite Compass"
-			x: -2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["742FEDEA09A5FEA7"]
-			description: [
-				"Attaching an &bME Crafting Terminal&r to your &eAE2 network&r will grant you access to &lall&r the items stored within and and an included crafting grid you can use these stored items in. "
-				""
-				"It requires a channel to function."
-			]
-			id: "4372EB6B99CB383D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "396C1DE7A703F64F"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "1394797BE6AEB94A"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "654AE4A6D95DE578"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			subtitle: "A MUCH better crafting table"
-			tasks: [{
-				id: "134DCCD1F1D35772"
-				item: "ae2:crafting_terminal"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["742FEDEA09A5FEA7"]
+			dependencies: ["62103F0E617EBA7C"]
 			description: [
 				"The &bPattern Access Terminal&r gives remote access to all pattern slots for the &aPattern Providers&r on your network separated by which type of machine they are on. It will show the type of machine in the terminal, however you can name the &aME Pattern Provider&r in the &eInscriber&r or &eAnvil&r to alter the name displayed in the &bME Pattern Access Terminal&r."
 				""
@@ -1311,8 +1006,8 @@
 				item: "ae2:pattern_access_terminal"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 8.0d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["19EAC8C0A6889843"]
@@ -1322,8 +1017,6 @@
 				"A &dCrafting Pattern&r is your typical 3x3 or 2x2 grid crafting recipe. These patterns usually go inside of &bMolecular Assemblers&r."
 				""
 				"&eProcessing Patterns&r are a bit more complicated, usually these are patterns designed to be used to automate outputs from machines. &eProcessing Patterns&r allow you to encode recipes where an input goes into a machine and you get an expected output. Do not encode recipes that are for chance outputs, otherwise you will clog up your network and prevent crafting!"
-				""
-				"I've doubled the normal output for the &bBlank Pattern&r recipe due to the amount of things you probably intend to automate crafting for. You're welcome!"
 			]
 			id: "1B4704766DF1A934"
 			rewards: [
@@ -1346,19 +1039,18 @@
 				}
 			]
 			shape: "rsquare"
-			subtitle: "Get ready to autocraft!"
+			subtitle: "A dangerous rabbit hole"
 			tasks: [{
-				count: 4L
 				id: "47CFF4CBF0901ACF"
 				item: "ae2:blank_pattern"
 				type: "item"
 			}]
 			title: "Patterns"
-			x: 8.5d
-			y: 9.0d
+			x: 5.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["47AC1C475DEE0FE4"]
+			dependencies: ["62103F0E617EBA7C"]
 			description: [
 				"The &bMolecular Assembler&r is a powered machine which crafts items. It can be upgraded by inserting &dAcceleration Cards&r into it; once upgraded it is very fast."
 				""
@@ -1396,10 +1088,10 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 11.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["47AC1C475DEE0FE4"]
+			dependencies: ["62103F0E617EBA7C"]
 			description: ["The &bME Pattern Provider&r is the home of your encoded recipes. These need to be put on the same network as your &dCrafting CPU&r itself. When the &dCrafting CPU&e needs to craft the primary result of that pattern, it'll delegate this to the &bPattern Provider&r. Normally the &bPattern Provider&r will then push out the ingredients to an adjancent block (a &aMolecular Assembler&r for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the &bPattern Provider&r, an &cME Interface&r, or any other means that would import the crafting result into the network. &aMolecular Assemblers&r are smart enough to automatically return the crafting result to the same &bPattern Provider&r that provided the ingredients, leaving you to focus on ensuring the &eProcessing Recipes&r outputs are put into the network when they're done."]
 			id: "2C1964927A0F7BE3"
 			rewards: [
@@ -1428,10 +1120,10 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 11.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["47AC1C475DEE0FE4"]
+			dependencies: ["62103F0E617EBA7C"]
 			description: [
 				"&cNote&r: This quest requires a &21k Crafting Storage&r specifically. This is due to a limit with item tags for some reason, hopefully this will be fixed in the future!"
 				""
@@ -1481,20 +1173,17 @@
 					type: "item"
 				}
 				{
-					id: "3CB380ABF3396BE9"
+					id: "47B16A896162BAB3"
 					item: "ae2:1k_crafting_storage"
 					type: "item"
 				}
 			]
 			title: "Crafting CPU"
 			x: 2.0d
-			y: 12.5d
+			y: 9.0d
 		}
 		{
-			dependencies: [
-				"67071C306C1C3A42"
-				"72F1B2987533A6F6"
-			]
+			dependencies: ["67071C306C1C3A42"]
 			description: [
 				"Perhaps the most desired item in all of AE2 is the &bWireless Crafting Terminal&r. This grants you (while in range of an access point) full access to your ME network. You can craft items, start autocrafting processes, and view in-progress crafting process all from this little device. "
 				""
@@ -1526,51 +1215,11 @@
 				item: "ae2:wireless_crafting_terminal"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 7.0d
+			x: -5.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["47AC1C475DEE0FE4"]
-			description: [
-				"The &bME Security Terminal&r allows you to configure which users, and what permissions those users have within your &eME System&r. By existing, it enforces permissions on the usage of the system."
-				""
-				"The &bSecurity Terminal&r does not prevent destructive tampering, removing cables / machines or breaking of drives. If you need to protect your system from physical vandalism, you will need to place it in &eFTB claimed chunks&r. This block only provides network security."
-				""
-				"The player who places the &bME Security Terminal&r has full control over the network and cannot exclude themself any rights. By adding a blank &aBiometric Card&r you define a default behavior for every player who has no own Biometric Card registered."
-				""
-				"Other than adding security to your &eAE network&r, you can link up your &bWireless Terminal&r with the network and access it wirelessly."
-			]
-			id: "72F1B2987533A6F6"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "64BBA34CDB21B468"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4DE2A20A8C1E754F"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "021110653BCE3D20"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "587C0FB684830328"
-				item: "ae2:security_station"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["47AC1C475DEE0FE4"]
+			dependencies: ["2E7F7728159E3823"]
 			description: [
 				"The &bME Wireless Access Point&r allows wireless access via a Wireless Terminal. Range and power usage are determined based on the number of &aWireless Booster&r installed into the ME Wireless Access Point."
 				""
@@ -1604,8 +1253,8 @@
 				item: "ae2:wireless_access_point"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.5d
+			x: -4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["293DB25BD2827372"]
@@ -1729,8 +1378,8 @@
 				}
 			]
 			title: "The Pressurizer"
-			x: 11.0d
-			y: -2.0d
+			x: 12.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1C6856D2C944D9F2"]
@@ -1807,8 +1456,8 @@
 				}
 			]
 			title: "The Large Steam Turbine"
-			x: 17.0d
-			y: -2.0d
+			x: 16.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["779458EF9AEE3AC9"]
@@ -1852,7 +1501,7 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
+			x: 7.5d
 			y: -4.0d
 		}
 		{
@@ -1897,7 +1546,7 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
+			x: 9.5d
 			y: -4.0d
 		}
 		{
@@ -1943,7 +1592,7 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
+			x: 8.5d
 			y: -4.0d
 		}
 		{
@@ -1979,7 +1628,7 @@
 				item: "modern_industrialization:platinum_sulfuric_solution_bucket"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -2017,7 +1666,7 @@
 				item: "modern_industrialization:iridium_tiny_dust"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 14.0d
 			y: 0.5d
 		}
 		{
@@ -2049,7 +1698,7 @@
 				item: "modern_industrialization:platinum_dust"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 14.0d
 			y: -0.5d
 		}
 		{
@@ -2081,7 +1730,7 @@
 				item: "modern_industrialization:monocrystalline_silicon"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 17.0d
 			y: 0.5d
 		}
 		{
@@ -2113,7 +1762,7 @@
 				item: "modern_industrialization:silicon_wafer"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 17.0d
 			y: 2.0d
 		}
 		{
@@ -2167,7 +1816,7 @@
 				}
 			]
 			title: "Processing Unit Components"
-			x: 18.0d
+			x: 19.0d
 			y: -0.5d
 		}
 		{
@@ -2201,7 +1850,7 @@
 				item: "modern_industrialization:processing_unit"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 19.0d
 			y: 2.25d
 		}
 		{
@@ -2272,7 +1921,7 @@
 				item: "modern_industrialization:mixed_ingot_blastproof"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: 2.0d
 		}
 		{
@@ -2361,7 +2010,7 @@
 				}
 			]
 			title: "The Implosion Compressor"
-			x: 11.0d
+			x: 12.0d
 			y: 3.5d
 		}
 		{
@@ -2445,47 +2094,11 @@
 					type: "item"
 				}
 			]
-			x: 20.5d
+			x: 21.5d
 			y: 2.75d
 		}
 		{
-			dependencies: ["2D9D7FFDA18C95B5"]
-			description: [
-				"The &bME Terminal&r gives you access to items stored in your &eME Network&r. This will also include items accessible through &eME Storage Bus&r."
-				""
-				"It has the ability to sort and search, as well as filter by using View Cell. It requires a channel to function."
-			]
-			id: "742FEDEA09A5FEA7"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "022E7064941293BD"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "3DB25AB4D8337E03"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "2E942244A7E20698"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "4EA6EEE45103709C"
-				item: "ae2:terminal"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["4372EB6B99CB383D"]
+			dependencies: ["62103F0E617EBA7C"]
 			description: [
 				"The &bPattern Encoding Terminal&r is a specialized version of the &aME Crafting Terminal&r designed to encode &cBlank Patterns&r into &dCrafting Patterns&r or &eProcessing Patterns&r."
 				""
@@ -2523,129 +2136,11 @@
 				item: "ae2:pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 9.0d
+			x: 4.0d
+			y: 5.5d
 		}
 		{
-			dependencies: ["47AC1C475DEE0FE4"]
-			description: [
-				"Many devices, but not all, require a &bchannel&r to function. If the device deals solely with power, or connectivity like cables, the device will not require a &bchannel&r. Anything that uses items, or moves them around, will."
-				""
-				"&bChannels&r limits are doubled from the standard, meaning that a &ccontrollerless&r network will be able to support up to &d16 channels&r. Once you break that limit, you will need to add an &eME Controller&r to your network."
-				""
-				"Each face of the &eME Controller&r will output &d64 channels&r. What these channels are connected to will determine what they get used for, for instance, if you place &aFluix ME Dense Covered Cable&r next to the controller you will be able to carry a full &d64 channels&r, however if you place an &aME Drive&r next to it, or non-dense cable, you will only get &d16 channels&r."
-			]
-			id: "34EC66DC503EE2AD"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "27044D1CFD293C52"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "13BCF3C8E20093FE"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "78CBE688A00797BD"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			subtitle: "Tedious but rewarding!"
-			tasks: [{
-				id: "20B32213DF9AA2CE"
-				title: "Click to Acknowledge"
-				type: "checkmark"
-			}]
-			title: "CHANNELS!"
-			x: 2.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["47AC1C475DEE0FE4"]
-			description: [
-				"&bCable Anchors&r are small decorative cable-mounted spikes that you can use to create ladders with cables, or make the cable appear connected to the walls around it."
-				""
-				"Most notably, &bCable Anchors&r prevent connections from forming on the side they're mounted on."
-			]
-			id: "3939773BB1720493"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7CB075156DC20FFF"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "0270746D8CF673D7"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "2A5BAE213AAD57C2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "1A21A6A0EBB132ED"
-				item: "ae2:cable_anchor"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 12.5d
-		}
-		{
-			dependencies: ["47AC1C475DEE0FE4"]
-			description: [
-				"So when channels become a nusance, you can turn to &bME P2P Tunnels&r. When configured for ME, they allow you to move channels from point to point. This allows you to move up to 64 channels per pair of &bME P2P Tunnel&r."
-				""
-				"The &bP2P Tunnel&r can be configured to transfer other things, such as items, redstone, power, and fluids. Check &dREI&r on how to configure the P2P."
-				""
-				"&bTunnels&r are 1 input to N outputs. This means you can output as many points as you want, but only input at a single point per tunnel. Networks can support any number of tunnels, of any different t ypes, and they all function independently."
-				""
-				"&bME Tunnels&r can be used to carry channels from one location to another, and carry up to &d64 channels&r, same as &bFluix ME Dense Covered Cable&r, while only requiring a single channel per point, making tunnels a very powerful tool to expand ME Networks, especially over distance. "
-				""
-				"The channel required by a &bP2P Tunnel&r cannot be carried through another &bP2P Tunnel&r."
-			]
-			id: "1DBBA5E170B9B5D6"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "57F93D6ED94CE600"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4CB6F097994721AB"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "0CC0D07A961BF6E7"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "337A787E6839F1D4"
-				item: "ae2:me_p2p_tunnel"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 11.5d
-		}
-		{
-			dependencies: ["47AC1C475DEE0FE4"]
+			dependencies: ["2E7F7728159E3823"]
 			description: [
 				"&bQuantum Network Bridges&r can connect two networks over &ainfinite distances and even between dimensions&r.  They can carry &d64 channels&r in total (regardless of how cables are connected to each face)."
 				""
@@ -2688,265 +2183,11 @@
 				}
 			]
 			title: "Quantum Ring"
-			x: 2.0d
-			y: 13.5d
-		}
-		{
-			dependencies: ["47AC1C475DEE0FE4"]
-			description: [
-				"&bFluix ME Glass Cables&r are the simplest cable to make, transfers power and up to &d16 channels&r. It comes in 17 different colors, the default being Fluix, and can be dyed any color using any of the 16 dyes."
-				""
-				"To craft colored cables, surround a dye of any type with 8 cables of the same type (color of the cables don't matter, but they must be the same type). You can also paint cables with any forge compatible paint brush in world."
-				""
-				"You can craft any colored cable with a water bucket to remove the dye."
-				""
-				"You can cover the cable with wool to create &aFluix ME Covered Cable&r, and craft &eFluix ME Smart Cable&r to get better idea of what is going on with your channels."
-			]
-			id: "0185C45DF71403A5"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "477F6D5125EC1F4D"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "1D82C234B90FE837"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "62186F1B76C24E02"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "7C3BE9D5466690C5"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "ae2:glass_cable"
-					}
-				}
-				title: "Any Glass Cable"
-				type: "item"
-			}]
-			title: "Glass Cables"
-			x: -2.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["0185C45DF71403A5"]
-			description: [
-				"The &bCovered Cable&r variant offers no gameplay benewfits over its &aFluix ME Glass Cable&r counterpart. It can however be used as an alternate aesthetic choice if you prefer the covered look."
-				""
-				"Can be colored in the same manner as &aFluix ME Glass Cable&r. &bFour Fluix ME Covered Cable&r can be crafted with Redstone and Glowstone to make &dFluix ME Smart Cable&r."
-			]
-			id: "56A9ADF766CC038C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "72BBBF7BA8A3838D"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "6A4ECA3718AEAB87"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "1DC1F849D8ECDC50"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "69B5FA12A13886E6"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "ae2:covered_cable"
-					}
-				}
-				title: "Any Covered Cable"
-				type: "item"
-			}]
-			title: "Colored Cables"
-			x: -4.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["56A9ADF766CC038C"]
-			description: ["The &bFluix ME Dense Covered Cable&r can carry up to &d64 channels&r unlike standard cable which can only carry 16, however it doesn't support buses, so you must first step down from dense to smaller cable (such as &aFluix ME Glass Cable&r or &eFluix ME Smart Cable&r) before using buses or panels."]
-			id: "156DB9FCCDFE4C57"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5A1F886847D1D163"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "179CA89AA955A2D8"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "7C8BA461D4AE7F24"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "2671CFDA4FBDA8A4"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "ae2:covered_dense_cable"
-					}
-				}
-				title: "Any Dense Covered Cable"
-				type: "item"
-			}]
-			title: "Dense Covered Cables"
 			x: -4.0d
-			y: 10.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["56A9ADF766CC038C"]
-			description: [
-				"While bearing some similarity to &aFluix ME Covered Cables&r in appearance, the &bFluix ME Smart Cable&r provides diagnostic function by visualizing the channel usage on the cables, the channels appear as lit colored lines that run along the black stripe on the cables giving you an understanding of how your channels are being used on your network. The first four channels show as lines matching the color of the cable, the next four show as white lines."
-				""
-				"These can be colored in the same manner as Fluix ME Glass Cable."
-			]
-			id: "7C0F5471E36D2678"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "74C7DDD128A11122"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4D66F21D39418A7C"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "11EE50D8182AEAF5"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "36DE906D5C60EBCF"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "ae2:smart_cable"
-					}
-				}
-				title: "Any Smart Cable"
-				type: "item"
-			}]
-			title: "Smart Cables"
-			x: -5.0d
-			y: 10.5d
-		}
-		{
-			dependencies: ["7C0F5471E36D2678"]
-			description: ["Similar to the regular &aDense Covered Cables&r, the &bFluix ME Smart Dense Cables&r carry &d64 channels&r instead of the default 16. Shows load similarly to &eFluix ME Smart Cable&r with each line lit representing four channels in use."]
-			id: "0EA5A3091E3732A8"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "643524889B7E73A3"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "64831F2F8DA78C91"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "2166EB18FB8C084C"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "118A781A1E239A22"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "ae2:smart_dense_cable"
-					}
-				}
-				title: "Any Smart Dense Cables"
-				type: "item"
-			}]
-			title: "Smart Dense Cables"
-			x: -5.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["47AC1C475DEE0FE4"]
-			description: [
-				"The &bToggle Bus&r is a bus which functions similarly to &aFluix ME Glass Cable&r or other cables, but it allows it connection state to be toggled via redstone. This allows you to cut off a section of a ME Network."
-				""
-				"When redstone signal supplied the part enables the connection, &bME Inverted Toggle Bus&r provides the reverse behavior by disabling the connection instead."
-				""
-				"There is also an inverted version of the toggle that disables the connection when a redstone signal is supplied."
-			]
-			id: "66B50C954D74B139"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "254B401A8BD496C3"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "521DE950926F43A9"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "02EC8106F1227C87"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "7A626F89D6A3E77D"
-				item: "ae2:toggle_bus"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 11.5d
-		}
-		{
-			dependencies: ["47AC1C475DEE0FE4"]
+			dependencies: ["2D9D7FFDA18C95B5"]
 			description: [
 				"Lowest tier storage cell, which can contain &d1024 bytes of storage&r."
 				""
@@ -2987,10 +2228,10 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 11.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["47AC1C475DEE0FE4"]
+			dependencies: ["2D9D7FFDA18C95B5"]
 			description: ["&bFluid Cells&r are similar to the item storage counterparts, except they hold fluids (duh!). &bFluid storage cells&r can hold up to 5 distinct types of fluids; the volume of fluid they can store depend in part on how many types they are holding, and their storage capacity."]
 			id: "5270F349E0B5F580"
 			rewards: [
@@ -3023,7 +2264,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 11.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2BA27AB43B03F656"]
@@ -3067,7 +2308,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 12.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["5270F349E0B5F580"]
@@ -3103,7 +2344,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 12.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0F6CB1AEE71CFB16"]
@@ -3147,7 +2388,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 13.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["267CC8AF07E94284"]
@@ -3183,7 +2424,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 13.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0338A0F80C416F09"]
@@ -3227,7 +2468,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 14.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["195CA8E85827FF47"]
@@ -3263,7 +2504,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 14.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0C4AEF63DE034490"]
@@ -3307,7 +2548,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 15.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["63339BE5D6244E37"]
@@ -3343,122 +2584,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["47AC1C475DEE0FE4"]
-			description: [
-				"The &bME Storage Montior&r is a simple way to see the current level of a specified item. There are several interactions to modify it."
-				"- Right-click with item: Will display the current stored amount of that item if not locked"
-				"- Right-click with empty hand: Will reset the display if not locked."
-				"- Shift+right-click with empty hand: Will toggle the lock"
-				"- Right-click with wrench: Will rotate the monitor if its locked and on the ground or ceiling"
-			]
-			id: "7E211328EEB3CB9C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "46760DEA9B06263F"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "04A576F93ED817E4"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "2D51A4D15CC21652"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "2AC295360D59CF76"
-				item: "ae2:storage_monitor"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 13.5d
-		}
-		{
-			dependencies: ["47AC1C475DEE0FE4"]
-			description: [
-				"The &bME Level Emitter&r can indicate either the level of a specified item or the &aME Network&r energy level. You can set the threshold and if the &bME Level Emitter&r will emit a redstone signal or turn it off."
-				""
-				"Requires a channel to function, if its power or channel is lost the emitter will switch to an off state."
-				""
-				"These can tap into the crafting system when a crafting grid is installed, allowing you to output redstone while an item is being crafted or even configure the system to output redstone to perform a crafting task, its important to note that you cannot mix level emitter craft via redstone with interface patterns."
-			]
-			id: "59B25EC6B8490E78"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "704A41F5BD9DA246"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "04647A2C885B02C0"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "1714F90EC9D90E86"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "78EB484BB1A1F0E3"
-				item: "ae2:level_emitter"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 12.5d
-		}
-		{
-			dependencies: ["7E211328EEB3CB9C"]
-			description: [
-				"The &bME Conversion Monitor&r is the upgraded version of the &aME Storage Monitor&r. It adds the ability to withdraw from or store items into the &eME Network&r."
-				""
-				"In addition to the storage monitor's interactions, conversion monitors support the following actions:"
-				"- Left-click: Extracts a stack of the shown item into your inventory"
-				"- Right-click with item: Inserts the held item into the network"
-				"- Right-click with empty hand: Will insert all of the shown item from your inventory into the network."
-			]
-			id: "6A5AD2356F8AC735"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4CE9C13B94AA4A0F"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "421BE8637BA94561"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "35AB681918FBC43A"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "4939C15297BA8D8D"
-				item: "ae2:conversion_monitor"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["13ADC5EC083B64D0"]
@@ -3495,11 +2621,11 @@
 				item: "ae2:quantum_entangled_singularity"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 13.5d
+			x: -5.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["47AC1C475DEE0FE4"]
+			dependencies: ["62103F0E617EBA7C"]
 			description: [
 				"The &bMatter Condenser&r has two key functions, elimination of excess materials in a cheap manor and the production of &eSingularity&r and &aMatter Ball&r."
 				""
@@ -3532,7 +2658,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 12.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["529FBE21C8B21DC1"]
@@ -3599,7 +2725,7 @@
 				item: "techreborn:lapotron_crystal"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.0d
 			y: -2.0d
 		}
 		{
@@ -3681,7 +2807,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
+			x: 10.5d
 			y: -4.0d
 		}
 		{
@@ -4180,8 +3306,6 @@
 				"The &bBlazing Backpack&r comes with the additional benefit of not burning in lava!"
 				""
 				"It can also store &d96 item stacks&r."
-				""
-				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
 			]
 			id: "328DBF4E8E11FED7"
 			rewards: [
@@ -4297,8 +3421,8 @@
 				}
 			]
 			title: "High Pressure Large Steam Boiler"
-			x: 13.0d
-			y: -2.0d
+			x: 13.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["26EF4E75B844E3BD"]
@@ -4336,7 +3460,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["529FBE21C8B21DC1"]
@@ -4410,7 +3534,7 @@
 				item: "modern_industrialization:highly_advanced_machine_hull"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 19.0d
 			y: 5.0d
 		}
 		{
@@ -4444,7 +3568,7 @@
 				type: "item"
 			}]
 			title: "Titanium Drill"
-			x: 21.0d
+			x: 22.0d
 			y: 0.0d
 		}
 		{
@@ -4484,7 +3608,7 @@
 				}
 			]
 			title: "Large Advanced Components"
-			x: 20.5d
+			x: 21.5d
 			y: 1.75d
 		}
 		{
@@ -4516,7 +3640,7 @@
 				item: "modern_industrialization:highly_advanced_upgrade"
 				type: "item"
 			}]
-			x: 20.0d
+			x: 21.0d
 			y: 0.0d
 		}
 		{
@@ -4553,7 +3677,7 @@
 				item: "techreborn:matter_fabricator"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 23.5d
 			y: 1.75d
 		}
 		{
@@ -4587,7 +3711,7 @@
 				item: "techreborn:uu_matter"
 				type: "item"
 			}]
-			x: 22.5d
+			x: 23.5d
 			y: 3.75d
 		}
 		{
@@ -4619,7 +3743,7 @@
 				item: "modern_industrialization:industrial_tnt"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: 5.0d
 		}
 		{
@@ -4674,8 +3798,6 @@
 				"After taking down the &eWither&r, you can use the &3Nether Star&r alongside &dBlastproof Plates&r to upgrade your backpack to the &bWithered Backpack&r. This bad boy can hold &d120 item stacks&r."
 				""
 				"It maintains the &cfireproof status&r of the previous backpack."
-				""
-				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
 			]
 			id: "2A0BC5CB56BB5BAD"
 			rewards: [
@@ -4703,7 +3825,7 @@
 				item: "inmis:withered_backpack"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.0d
 			y: 2.0d
 		}
 		{
@@ -4715,8 +3837,6 @@
 				"With materials from the end and your newly acquired Iridium you can craft the final tier of backpack, the &bEndless Backpack&r."
 				""
 				"While not entirely \"endless,\" it does boast a whopping &d160 item stacks&r. And yes, it still is fireproof."
-				""
-				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
 			]
 			id: "6E832DECC59EA741"
 			rewards: [
@@ -4745,7 +3865,7 @@
 				item: "inmis:endless_backpack"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 14.0d
 			y: 2.0d
 		}
 		{
@@ -4777,7 +3897,7 @@
 				item: "modern_industrialization:titanium_barrel"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: -2.0d
 		}
 		{
@@ -4809,7 +3929,7 @@
 				item: "modern_industrialization:titanium_tank"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: -2.0d
 		}
 		{
@@ -4915,7 +4035,7 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
+			x: 14.0d
 			y: 3.5d
 		}
 		{
@@ -4950,47 +4070,8 @@
 				item: "techreborn:player_detector"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 14.0d
 			y: 4.5d
-		}
-		{
-			dependencies: ["2BB495CFC3E6D6C8"]
-			description: [
-				"The &bMemory Card&r can be used to store, copy, and paste settings. Shift right-click on a &dconfigurable object&r to save the settings on the memory card, then right click on any other block of the same type to paste the settings."
-				""
-				"They are most importantly used to &alink&r the &dinput&r &cME P2P Tunnel&r to the &eoutput&r."
-			]
-			id: "6CC25A557FED2562"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5371C8A096AB3498"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "1159489253B4D61C"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "45FB93FF4A21FD1E"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "596537EA9D162748"
-				item: {
-					Count: 1b
-					id: "ae2:memory_card"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 2.5d
-			y: 6.5d
 		}
 		{
 			dependencies: ["0D0CC636458E8446"]
@@ -5289,44 +4370,6 @@
 			y: 11.0d
 		}
 		{
-			dependencies: ["0185C45DF71403A5"]
-			description: ["Need to move channels in a &ccramped space&r filled with &eME Pipes&r / &eCables&r / &eetc&r? &3ME Wires&r are for you. They can carry &216 Channels&r like normal &dFluix Cables&r, but can also occupy the same space as &eME Pipes&r / &eCables&r / &eetc&r. "]
-			id: "50797DB31799B933"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3B2866C3BC243C08"
-					table_id: 4654133894100259948L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "44E480033B935D44"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "3AFBBEBBCC8AA5B3"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "4F4D97945F64C8C9"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "modern_industrialization:me_wires"
-					}
-				}
-				title: "ME Wires"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 10.5d
-		}
-		{
 			dependencies: ["7FD9582038C29150"]
 			description: ["This is the &eModern Dynamics&r version of the &aHV-tier Cables&r."]
 			id: "1185A36879732D6A"
@@ -5487,7 +4530,7 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:space_breathing"
-							lvl: 1s
+							lvl: 1
 						}]
 					}
 				}
@@ -5528,7 +4571,7 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:gravity_normalizing"
-							lvl: 1s
+							lvl: 1
 						}]
 					}
 				}
@@ -5569,7 +4612,7 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:acid_rain_proof"
-							lvl: 1s
+							lvl: 1
 						}]
 					}
 				}
@@ -5610,7 +4653,7 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:space_fire_proof"
-							lvl: 1s
+							lvl: 1
 						}]
 					}
 				}
@@ -5619,6 +4662,565 @@
 			title: "Space Fire Proof"
 			x: -14.0d
 			y: 10.75d
+		}
+		{
+			dependencies: ["25B33302FC41B67A"]
+			description: [
+				"The &bME Drive&r is a block designed to store &aStorage Cells&r. The &bME Drive&r can hold 10 Storage Cells."
+				""
+				"The front of the drive will display the status of the drive in the corresponding spot with a color:"
+				"- Red: The cell is full"
+				"- Orange: The cell cannot hold any more types, but can store more items"
+				"- Green: The cell can hold more types or more items"
+				"- Black: There is no channel or power is offline"
+			]
+			id: "2D9D7FFDA18C95B5"
+			rewards: [
+				{
+					id: "5BD59099B994BAED"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "302F5B5928C92C82"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "3BD2BA6502EA41F8"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			subtitle: "All your stuff in a single block"
+			tasks: [{
+				id: "3B78757D8EAD40DD"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5370C2CEF127113C"]
+			description: ["The &aQuantum Bridge Card&r is an upgrade card that can be placed inside your &eAE2&r &2Wireless Terminals&r to connect it to a &3Quantum Bridge&r on your &dnetwork&r. Place one &bEntangled Singularity&r in the center of the &3Quantum Bridge&r and one in your &2Wireless Terminal&r to connect them with this upgrade card."]
+			id: "56F8299D915D92E1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43BFE09572847A03"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "14EE22C63650EBB2"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "405A200B63F720E6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "276A4A6768CFC09E"
+				item: "ae2wtlib:quantum_bridge_card"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["67071C306C1C3A42"]
+			description: [
+				"The &aMagnet Card&r is supposedly able to act as a magnet and you can choose whether items picked up go into your inventory or directly into your &dME network&r."
+				""
+				"I couldn't figure it out, but there are filters and such when you add the card to a &2Wireless Terminal&r."
+			]
+			id: "2ADD02A2BE293FEB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B81A2F859FB0248"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "6009D4C8CF0CA5F5"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "5725F8AAFC838D3E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "56D19B170E79AB52"
+				item: "ae2wtlib:magnet_card"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["67071C306C1C3A42"]
+			description: ["The &aWireless Pattern Encoding Table&r acts like the normal &2Pattern Encoding Table&r but wireless!"]
+			id: "5CD8EFDFD4FF9750"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "32CD51CBDFC908BA"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "7E579C3DAE470A27"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "4D7146D16E4D3655"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2A4381DE9C37E1A0"
+				item: "ae2wtlib:wireless_pattern_encoding_terminal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["67071C306C1C3A42"]
+			description: ["The &aWireless Pattern Access Terminal&r acts like the normal &2Pattern Access Terminal&r but wireless!"]
+			id: "00C7C377D0C93D1B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5BFF8CEF23F25EDD"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "555368D266973113"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "7918A740C6C42EC5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "618DC4F912236D62"
+				item: "ae2wtlib:wireless_pattern_access_terminal"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"00C7C377D0C93D1B"
+				"5CD8EFDFD4FF9750"
+				"34E68D6337DE1792"
+			]
+			description: ["The &aWireless Universal Terminal&r is the ultimate &eAE2&r terminal. By &3combining it with others in a crafting grid&r you can &2add their functionality&r to it, effectively allowing you to have all the &dWireless Terminal&r variants in one."]
+			id: "6720EFFF5C827F8F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "70E687D771F85FF1"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "340FF7DA5DB2E058"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "3A419D868C8DDC4D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4ED8D26C7BCB27F5"
+				item: "ae2wtlib:wireless_universal_terminal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["5FDDE9153DE118DF"]
+			description: ["The following quests are in relation to accessing your &dAE2 network&r on the fly, whether that be in your base away from the &aterminal&r, or on a far off planet!"]
+			id: "2E7F7728159E3823"
+			rewards: [{
+				id: "0BB96E8EBF1CFA81"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2D7DA35088255141"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Wireless Access"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5FDDE9153DE118DF"]
+			description: [
+				"The following quests are in relation to &eAE2&r's &ddigital storage&r solutions."
+				""
+				"Up to now you've probably been maintaining a &2drawer network&r for the items you are passiving (hopefully) in bulk. I'd recommend &3continuing&r to utilize drawers and &6Storage Buses&r to their fullest extent, but with the &ddigital storage&r you can now store all your other junk in your network! Yay!"
+			]
+			id: "25B33302FC41B67A"
+			rewards: [{
+				id: "4AA9743C8B967C9F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "367F8C3925763AB8"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Digital Storage"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5FDDE9153DE118DF"]
+			description: [
+				"The following quests are in relation to &eAE2&r's autocrafting functionality."
+				""
+				"I'm going to put this here, and I hope you take the time to read it, but please, &cDO NOT&r rely on &3autocrafting&r for your progression. The &2circuit / hull recipes&r in &eMI&r are &l&6tiered&r, meaning you will be making &na lot&r of lower tier materials to supplement later game recipes. If you have this setup with &3autocrafting&r it means you could be waiting &cHOURS&r for your &dME System&r to finish a craft."
+				""
+				"It's not worth it to rely on AE2 for MI progression, set up &2passive crafting&r! That being said, setting up &3autocrafting&r for the machines you'll need to do said &2passive crafting&r will be very beneficial!"
+			]
+			id: "62103F0E617EBA7C"
+			rewards: [{
+				id: "03EB36E6AC2A8C23"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7F08D344CEBF5EEA"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Autocrafting"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["529FBE21C8B21DC1"]
+			description: [
+				"Is your regular &eChemical Reactor&r not keeping up? The &aLarge Chemical Reactor&r offers you a &dmultiblock solution&r. It inherits &6all recipes&r from the &eChemical Reactor&r and multiplies all inputs and outputs by &2four&r, while only multiplying the power consumption by &etwo&r. This means you get &3four times the processes&r at the same speed as you would get &6one&r, and at a cheaper power cost."
+				""
+				"&aPolytetrafluoroethylene Ingots&r can be obtained by &eVacuum Freezing&r &3Polytetrafluoroethylene&r"
+			]
+			icon: "modern_industrialization:large_chemical_reactor"
+			id: "51DF18229F479C78"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5A0825DF303BAC1B"
+					table_id: 1098950661447874341L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "787CB0E8BF6B7548"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "35CCDFAB10F87537"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "304947D73CD59EBF"
+					item: "modern_industrialization:large_chemical_reactor"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "19EF2EC1F0CC6E3F"
+					item: "modern_industrialization:chemically_inert_ptfe_casing"
+					type: "item"
+				}
+				{
+					id: "4BE8970A60D6891A"
+					item: "modern_industrialization:polytetrafluoroethylene_machine_casing_pipe"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["68CE43C175FB0826"]
+			description: [
+				"With update &e1.1.0&r, I've adjusted a lot of the &eAd Astra&r recipes to utilize a new material called &2Enderium&r. It's an enhanced metal made from a process using &bEnder Pearls&r. If you lack a lot of &bEnder Pearls&r, I recommend making some &dEnderman Models&r and throwing them into a &6Mob Crusher&r."
+				""
+				"&3Liquid Ender&r is the first step into making &2Enderium&r. It's a mixture of &9Water&r and &dEnder Pearl Dust&r."
+			]
+			id: "4C03534585C1A910"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A6C5D73C98511FC"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "59AC6783DA7A7239"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "50BE67D297D970D7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "6C93640C3DC7182F"
+				item: "modern_industrialization:liquid_ender_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4C03534585C1A910"]
+			description: ["&2Molten Enderium&r is produced by processing &bSteel Dust&r in an &eBlast Furnace&r alongside &3Liquid Ender&r. While this material is hot, it needs something extra to bind to before it can solidify into something useful. For this purpose your next step will be combining this &2Molten Enderium&r with &aStainless Steel Dust&r to make a &6Hot Enderium Ingot&r."]
+			id: "451E9E2FA9DA33F7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2264555AAF6FA1C4"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "3E4C89E0F88CCB91"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "15B7B3F33F44720C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "3013B219FF56CB3D"
+				item: "modern_industrialization:molten_enderium_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["451E9E2FA9DA33F7"]
+			description: ["Finally, you have arrived at the &2Enderium Ingot&r. This metal is infused with the latent powers of &dEndermen&r and can be harnessed to aid in your journey into the stars. "]
+			id: "098B06EA3D9CDED3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6C43BD4979A8A9C5"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "473829FAE353AFAC"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "42DB49725D4F9C31"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			subtitle: "Somewhat Magic Ingot"
+			tasks: [{
+				id: "207DB4BEAC5F00CE"
+				item: "modern_industrialization:enderium_ingot"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["098B06EA3D9CDED3"]
+			description: [
+				"With &bEnderium&r, you can now create the fourth tier of &aDank&r. This tier has &d36 slots&r with a max stack size of &616,384&r. "
+				""
+				"It costs a lot of &bEnderium&r, might be better to upgrade once you have a decent surplus."
+			]
+			id: "725265581E55DBFA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3E5FF00BE2823A87"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "7D95441A37CEE629"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "659E60C2A18D1D6B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "3859F08C1EBBF1B1"
+				item: "dankstorage:dank_4"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["08362FF409BFC7CC"]
+			description: [
+				"With &bTitanium&r, you can now create the fifth tier of &aDank&r. This tier has &d45 slots&r with a max stack size of &665,536&r. "
+				""
+				"It costs a lot of &bTitanium&r, might be better to upgrade once you have a decent surplus."
+			]
+			id: "4FDD64A986C20E8D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "619CBB16DF34A123"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "421BBF3FDB59F36B"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "4B93EE2E133AFE54"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "49DAE72D7C2AE53D"
+				item: "dankstorage:dank_5"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7111AA66B02C4877"]
+			description: [
+				"With &bPlatinum&r, you can now create the sixth tier of &aDank&r. This tier has &d54 slots&r with a max stack size of &6262,144&r. "
+				""
+				"It costs a lot of &bPlatinum&r, might be better to upgrade once you have a decent surplus."
+			]
+			id: "52A0DAAE651E217B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5AC387087E5F4750"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "18E8431C1C9FBCBB"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "21DDBBE20FABF741"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "7FAB50B6F5959D0C"
+				item: "dankstorage:dank_6"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["52A0DAAE651E217B"]
+			description: [
+				"With &bIridium&r, you can now create the seventh and final tier of &aDank&r. This tier has &d63 slots&r with a max stack size of &62,147,483,647&r. That is an &4&n&linsane&r amount of items."
+				""
+				"It costs a lot of &bIridium&r and &cNether Stars&r, might be better to upgrade once you have a decent surplus."
+			]
+			id: "2DE40EBB8FDA4612"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2624B36AA5973B06"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "67B7E5519B6D179E"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "3E23705FD83B112D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "The Final Tier"
+			tasks: [{
+				id: "7BDD92AEF4AC984B"
+				item: "dankstorage:dank_7"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -1.5d
 		}
 	]
 	subtitle: ["High tech!"]

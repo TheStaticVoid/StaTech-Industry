@@ -1,15 +1,26 @@
+// -----------------------------------------
+// CREATED BY STATIC FOR USE IN
+// STATECH INDUSTRY
+// -----------------------------------------
+
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:building_gadgets/${id}`;
+    let bg = (id) => `buildinggadgets:${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
+    
+    // -- BUILDING GADGETS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
-        'buildinggadgets:gadget_building',
-        'buildinggadgets:gadget_exchanging',
-        'buildinggadgets:gadget_copy_paste',
-        'buildinggadgets:gadget_destruction',
-        'buildinggadgets:template_manager'
+        bg('gadget_building'),
+        bg('gadget_exchanging'),
+        bg('gadget_copy_paste'),
+        bg('gadget_destruction'),
+        bg('template_manager')
     ]; 
     REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
 
-    e.shaped('buildinggadgets:gadget_building', [
+    // -- BUILDING GADGET -- //
+    e.shaped(bg('gadget_building'), [
         'IRI',
         'DCD',
         'ILI'
@@ -18,12 +29,13 @@ ServerEvents.recipes(e => {
         I: '#c:iron_plates',
         R: '#c:redstone_dusts',
         D: '#c:diamonds',
-        C: 'modern_industrialization:electronic_circuit',
+        C: mi('electronic_circuit'),
         L: '#c:lapis'
     })
     .id(st('gadget_building'));
 
-    e.shaped('buildinggadgets:gadget_exchanging', [
+    // -- EXCHANGING GADGET -- // 
+    e.shaped(bg('gadget_exchanging'), [
         'IRI',
         'DCD',
         'IRI'
@@ -32,11 +44,12 @@ ServerEvents.recipes(e => {
         I: '#c:iron_plates',
         R: '#c:redstone_dusts',
         D: '#c:diamonds',
-        C: 'modern_industrialization:electronic_circuit'
+        C: mi('electronic_circuit')
     })
     .id(st('gadget_exchanging'));
 
-    e.shaped('buildinggadgets:gadget_copy_paste', [
+    // -- COPY & PASTE GADGET -- //
+    e.shaped(bg('gadget_copy_paste'), [
         'IRI',
         'ECE',
         'ILI'
@@ -45,12 +58,13 @@ ServerEvents.recipes(e => {
         I: '#c:iron_plates',
         R: '#c:redstone_dusts',
         E: '#c:emeralds',
-        C: 'modern_industrialization:electronic_circuit',
+        C: mi('electronic_circuit'),
         L: '#c:lapis'
     })
     .id(st('gadget_copy_paste'));
 
-    e.shaped('buildinggadgets:gadget_destruction', [
+    // -- DESTRUCTION GADGET -- //
+    e.shaped(bg('gadget_destruction'), [
         'IRI',
         'ECE',
         'ILI'
@@ -59,12 +73,13 @@ ServerEvents.recipes(e => {
         I: '#c:iron_plates',
         R: '#c:redstone_dusts',
         E: '#c:ender_pearls',
-        C: 'modern_industrialization:electronic_circuit',
+        C: mi('electronic_circuit'),
         L: '#c:lapis'
     })
     .id(st('gadget_destruction'));
 
-    e.shaped('buildinggadgets:template_manager', [
+    // -- TEMPLATE MANAGER -- // 
+    e.shaped(bg('template_manager'), [
         'GRG',
         'EFE',
         'GCG'
@@ -73,8 +88,8 @@ ServerEvents.recipes(e => {
         G: '#c:gold_plates',
         R: '#c:redstone_dusts',
         E: '#c:ender_pearls',
-        C: 'modern_industrialization:electronic_circuit',
-        F: 'modern_industrialization:basic_machine_hull'
+        C: mi('electronic_circuit'),
+        F: mi('basic_machine_hull')
     })
     .id(st('template_manager'));
 });

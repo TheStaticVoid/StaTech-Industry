@@ -1,0 +1,39 @@
+{
+    "type": "geocluster:deposit_sparse",
+    "config": {
+        "yMin": -64,
+        "yMax": 16,
+        "size": 25,
+        "biomeTag": "#minecraft:is_overworld",
+        "spread": 15,
+        "generationWeight": 2,
+        "blocks": {
+            "default": [
+                {
+                    "block": "modern_industrialization:platinum_ore",
+                    "chance": 0.95
+                },
+                {
+                    "block": "modern_industrialization:iridium_ore",
+                    "chance": 0.05
+                }
+            ],
+            "minecraft:deepslate": [
+                {
+                    "block": "modern_industrialization:platinum_ore",
+                    "chance": 0.95
+                },
+                {
+                    "block": "modern_industrialization:deepslate_iridium_ore",
+                    "chance": 0.05
+                }
+            ]
+        },
+        "samples": [
+            {
+                "block": "geocluster:platinum_ore_sample",
+                "chance": 1.0
+            }
+        ]
+    }
+}
