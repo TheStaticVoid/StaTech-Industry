@@ -418,7 +418,7 @@ REIEvents.information(e => {
         internalId: 'Copper Deposit',
         veinName: 'Copper',
         minY: '-8',
-        maxY: '64',
+        maxY: '48',
         size: '40',
         dimension: 'Overworld',
         biome: 'All',
@@ -566,13 +566,13 @@ REIEvents.information(e => {
         veinName: 'Gold',
         minY: '10',
         maxY: '60',
-        size: '30',
+        size: '50',
         dimension: 'Nether',
         biome: 'All',
         weight: '8',
         blocks: [
-            '- Nether Gold Ore (99.9%)',
-            '- Ancient Debris (0.1%)'
+            '- Nether Gold Ore (99.5%)',
+            '- Ancient Debris (0.5%)'
         ]
     }
     depositBuilder(GOLD_ORES, NETHER_GOLD_DEPOSIT_INFO);
@@ -583,14 +583,14 @@ REIEvents.information(e => {
         veinName: 'Gold',
         minY: '10',
         maxY: '60',
-        size: '30',
+        size: '50',
         dimension: 'Nether',
         biome: 'Embur Bog',
         weight: '8',
         blocks: [
-            '- Blue Nether Gold Ore (99.4%)',
+            '- Blue Nether Gold Ore (99%)',
             '- Pendorite Ore (0.5%)',
-            '- Ancient Debris (0.1%)'
+            '- Ancient Debris (0.5%)'
         ]
     }
     depositBuilder(GOLD_ORES, BLUE_NETHER_GOLD_DEPOSIT_INFO);
@@ -602,14 +602,14 @@ REIEvents.information(e => {
         veinName: 'Gold',
         minY: '10',
         maxY: '60',
-        size: '30',
+        size: '50',
         dimension: 'Nether',
         biome: 'Brimstone Caverns',
         weight: '8',
         blocks: [
-            '- Brimstone Nether Gold Ore (99.4%)',
+            '- Brimstone Nether Gold Ore (99%)',
             '- Anthracite Ore (0.5%)',
-            '- Ancient Debris (0.1%)'
+            '- Ancient Debris (0.5%)'
         ]
     }
     depositBuilder(GOLD_ORES, BRIMSTONE_NETHER_GOLD_DEPOSIT_INFO);
@@ -621,14 +621,14 @@ REIEvents.information(e => {
         veinName: 'Gold',
         minY: '10',
         maxY: '60',
-        size: '30',
+        size: '50',
         dimension: 'Nether',
         biome: 'Wailing Garth',
         weight: '8',
         blocks: [
-            '- Nether Gold Ore (99.4%)',
+            '- Nether Gold Ore (99%)',
             '- Emeraldite Ore (0.5%)',
-            '- Ancient Debris (0.1%)'
+            '- Ancient Debris (0.5%)'
         ]
     }
     depositBuilder(GOLD_ORES, SCORIA_NETHER_GOLD_DEPOSIT_INFO);
@@ -706,7 +706,7 @@ REIEvents.information(e => {
         internalId: 'Iron Deposit',
         veinName: 'Iron',
         minY: '-16',
-        maxY: '64',
+        maxY: '52',
         size: '70',
         dimension: 'Overworld',
         biome: 'All',
@@ -885,13 +885,13 @@ REIEvents.information(e => {
         veinName: 'Quartz',
         minY: '10',
         maxY: '120',
-        size: '40',
+        size: '70',
         dimension: 'Nether',
         biome: 'All',
         weight: '10',
         blocks: [
-            '- Nether Quartz Ore (99.9%)',
-            '- Ancient Debris (0.1%)'
+            '- Nether Quartz Ore (99.5%)',
+            '- Ancient Debris (0.5%)'
         ]
     }
     depositBuilder(QUARTZ_ORES, NETHER_QUARTZ_DEPOSIT_INFO);
@@ -902,14 +902,14 @@ REIEvents.information(e => {
         veinName: 'Quartz',
         minY: '10',
         maxY: '120',
-        size: '40',
+        size: '70',
         dimension: 'Nether',
         biome: 'Embur Bog',
         weight: '10',
         blocks: [
-            '- Blue Nether Quartz Ore (99.4%)',
+            '- Blue Nether Quartz Ore (99%)',
             '- Pendorite Ore (0.5%)',
-            '- Ancient Debris (0.1%)'
+            '- Ancient Debris (0.5%)'
         ]
     }
     depositBuilder(QUARTZ_ORES, BLUE_NETHER_QUARTZ_DEPOSIT_INFO);
@@ -921,14 +921,14 @@ REIEvents.information(e => {
         veinName: 'Quartz',
         minY: '10',
         maxY: '120',
-        size: '40',
+        size: '70',
         dimension: 'Nether',
         biome: 'Brimstone Caverns',
         weight: '10',
         blocks: [
-            '- Brimstone Nether Quartz Ore (99.4%)',
+            '- Brimstone Nether Quartz Ore (99%)',
             '- Anthracite Ore (0.5%)',
-            '- Ancient Debris (0.1%)'
+            '- Ancient Debris (0.5%)'
         ]
     }
     depositBuilder(QUARTZ_ORES, BRIMSTONE_NETHER_QUARTZ_DEPOSIT_INFO);
@@ -940,14 +940,14 @@ REIEvents.information(e => {
         veinName: 'Quartz',
         minY: '10',
         maxY: '120',
-        size: '40',
+        size: '70',
         dimension: 'Nether',
         biome: 'Wailing Garth',
         weight: '10',
         blocks: [
-            '- Nether Quartz Ore (99.4%)',
+            '- Nether Quartz Ore (99%)',
             '- Emeraldite Ore (0.5%)',
-            '- Ancient Debris (0.1%)'
+            '- Ancient Debris (0.5%)'
         ]
     }
     depositBuilder(QUARTZ_ORES, SCORIA_NETHER_QUARTZ_DEPOSIT_INFO);
@@ -1051,8 +1051,8 @@ REIEvents.information(e => {
     const TIN_DEPOSIT_INFO = {
         internalId: 'Tin Deposit',
         veinName: 'Tin',
-        minY: '32',
-        maxY: '80',
+        minY: '18',
+        maxY: '60',
         size: '70',
         dimension: 'Overworld',
         biome: 'All',
