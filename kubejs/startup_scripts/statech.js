@@ -18,6 +18,7 @@ let OstrumSampleBlock;
 let CaloriteSampleBlock;
 let IceSampleBlock;
 let CheeseSampleBlock;
+let PyriteSampleBlock;
 
 StartupEvents.registry('block', e => {
     DeshSampleBlock = e.createCustom('desh_ore_sample', () => new $SampleBlock());
@@ -25,6 +26,7 @@ StartupEvents.registry('block', e => {
     CaloriteSampleBlock = e.createCustom('calorite_ore_sample', () => new $SampleBlock());
     IceSampleBlock = e.createCustom('ice_ore_sample', () => new $SampleBlock());
     CheeseSampleBlock = e.createCustom('cheese_ore_sample', () => new $SampleBlock());
+    PyriteSampleBlock = e.createCustom('pyrite_ore_sample', () => new $SampleBlock());
 });
 
 StartupEvents.registry('item', e => {
@@ -191,6 +193,7 @@ StartupEvents.registry('item', e => {
     e.createCustom('calorite_ore_sample', () => new $BlockItem(CaloriteSampleBlock.get(), new $IProperties().tab($Geocluster.GROUP)));
     e.createCustom('ice_ore_sample', () => new $BlockItem(IceSampleBlock.get(), new $IProperties().tab($Geocluster.GROUP)));
     e.createCustom('cheese_ore_sample', () => new $BlockItem(CheeseSampleBlock.get(), new $IProperties().tab($Geocluster.GROUP)));
+    e.createCustom('pyrite_ore_sample', () => new $BlockItem(PyriteSampleBlock.get(), new $IProperties().tab($Geocluster.GROUP)));
 });
 
 ItemEvents.armorTierRegistry(event => {
