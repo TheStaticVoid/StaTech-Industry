@@ -16,6 +16,7 @@ ServerEvents.recipes(e => {
     const CREATE_DELETED_ITEMS = [
         cr('crafting/kinetics/fluid_tank'),
         cr('smelting/platinum_ingot_compat_modern_industrialization'),
+        cr('blasting/platinum_ingot_compat_modern_industrialization'),
         cr('smelting/silver_ingot_compat_modern_industrialization'),
         cr('blasting/silver_ingot_compat_modern_industrialization'),
         cr('smelting/lead_ingot_compat_techreborn'),
