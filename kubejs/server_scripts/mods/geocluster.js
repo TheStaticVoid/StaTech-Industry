@@ -27,9 +27,3 @@ ServerEvents.tags('item', e => {
         e.add(`c:${id}_ores`, gc(`deepslate_${id}_ore`));
     });
 });
-
-ServerEvents.recipes(e => {
-    // Remove all the default smelting / blasting recipes
-    e.remove({ type: 'minecraft:smelting', mod: 'geocluster' });
-    e.remove({ type: 'minecraft:blasting', mod: 'geocluster' });
-});
