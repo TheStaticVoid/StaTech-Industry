@@ -104,11 +104,11 @@ ServerEvents.recipes(e => {
         32,
         200,
         [
-            { amount: 2, item: astra('rocket_fin') },
+            { amount: 2, item: ad('rocket_fin') },
             { amount: 2, item: mi('enderium_gear') },
             { amount: 1, item: mi('desh_drill') },
             { amount: 1, item: mi('processing_unit') },
-            { amount: 1, item: astra('desh_engine') },
+            { amount: 1, item: ad('desh_engine') },
             { amount: 1, item: mi('titanium_tank') },
             { amount: 1, item: mi('titanium_tank') }
         ],
