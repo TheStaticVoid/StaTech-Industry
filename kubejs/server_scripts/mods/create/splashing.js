@@ -10,6 +10,13 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let ae = (id) => `ae2:${id}`;
 
+    // -- CREATE SPLASHING REMOVED RECIPES -- //
+    const REMOVED_RECIPES = [
+        cr('splashing/modern_industrialization/crushed_raw_uranium'),
+        cr('splashing/modern_industrialization/crushed_raw_platinum')
+    ];
+    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let splashing = (id, item_inputs, item_outputs) => {
         let newRecipe = {

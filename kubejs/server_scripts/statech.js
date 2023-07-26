@@ -333,6 +333,7 @@ ServerEvents.blockLootTables(e => {
     e.addSimpleBlock('kubejs:calorite_ore_sample', 'ad_astra:raw_calorite');
     e.addSimpleBlock('kubejs:ice_ore_sample', 'ad_astra:ice_shard'),
     e.addSimpleBlock('kubejs:cheese_ore_sample', 'ad_astra:cheese');
+    e.addSimpleBlock('kubejs:pyrite_ore_sample', 'techreborn:pyrite_dust');
 });
 
 ServerEvents.tags('worldgen/biome', e => {

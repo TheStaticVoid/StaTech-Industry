@@ -15,7 +15,7 @@ reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:false
 touchscreen:false
-fullscreen:true
+fullscreen:false
 bobView:true
 toggleCrouch:false
 toggleSprint:false
@@ -38,8 +38,8 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","Fabric Mods","Supplementaries Generated Pack","continuity/default","file/Tom\u0027s+Simple+Storage+Revamped.zip"]
-incompatibleResourcePacks:["file/Tom\u0027s+Simple+Storage+Revamped.zip"]
+resourcePacks:["vanilla","Fabric Mods","Supplementaries Generated Pack","continuity/default","file/Tom\u0027s Simple Storage Revamped.zip"]
+incompatibleResourcePacks:["file/Tom\u0027s Simple Storage Revamped.zip"]
 lastServer:
 lang:en_us
 soundDevice:""
@@ -78,8 +78,8 @@ showAutosaveIndicator:true
 allowServerListing:true
 chatPreview:1
 onlyShowSecureChat:false
-soundCategory_master:0.20914605
-soundCategory_music:0.20960332
+soundCategory_master:1.0
+soundCategory_music:1.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

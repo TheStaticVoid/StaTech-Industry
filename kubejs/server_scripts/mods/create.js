@@ -14,11 +14,9 @@ ServerEvents.recipes(e => {
 
     // -- CREATE REMOVED RECIPES -- //
     const CREATE_DELETED_ITEMS = [
-        cr('crafting/kinetics/cogwheel'),
-        cr('crafting/kinetics/large_cogwheel'),
-        cr('crafting/kinetics/large_cogwheelfrom_little'),
         cr('crafting/kinetics/fluid_tank'),
         cr('smelting/platinum_ingot_compat_modern_industrialization'),
+        cr('blasting/platinum_ingot_compat_modern_industrialization'),
         cr('smelting/silver_ingot_compat_modern_industrialization'),
         cr('blasting/silver_ingot_compat_modern_industrialization'),
         cr('smelting/lead_ingot_compat_techreborn'),
@@ -37,41 +35,6 @@ ServerEvents.recipes(e => {
     e.shapeless(cr('dough'), [ cr('wheat_flour'), 'kibe:water_wooden_bucket' ] )
         .id(st('dough'))
         .replaceIngredient('kibe:water_wooden_bucket', 'kibe:wooden_bucket');
-
-    // -- COGWHEEL -- //
-    e.shaped(cr('cogwheel'), [
-        ' W ',
-        'WCW',
-        ' W '
-    ],
-    {
-        W: '#minecraft:planks',
-        C: cr('shaft')
-    })
-    .id(st('cogwheel'));
-
-    // -- LARGE COGWHEEL -- //
-    e.shaped(cr('large_cogwheel'), [
-        'WWW',
-        'WCW',
-        'WWW'
-    ],
-    {
-        W: '#minecraft:planks',
-        C: cr('shaft')
-    })
-    .id(st('large_cogwheel'));
-    // Upgrade from little cogwheel
-    e.shaped(cr('large_cogwheel'), [
-        ' W ',
-        'WCW',
-        ' W '
-    ],
-    {
-        W: '#minecraft:planks',
-        C: cr('cogwheel')
-    })
-    .id(st('large_cogwheel_upgrade'));
 
     // -- TANK -- //
     e.shaped(cr('fluid_tank'), [

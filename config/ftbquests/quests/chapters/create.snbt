@@ -2657,11 +2657,19 @@
 				"You can track an &bItem Vault&r's inventory through a &aContent Observer&r linked to a &dDisplay Board&r."
 			]
 			id: "5C9A36E8F2773795"
-			rewards: [{
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "467B2ECCE53F4D56"
+					table_id: 4682836084073725053L
+					type: "random"
+				}
+				{
 				id: "52A6A61C9BA9CD2B"
 				type: "xp"
 				xp: 10
-			}]
+				}
+			]
 			tasks: [{
 				id: "7CFC7969C000EC98"
 				item: "create:item_vault"
