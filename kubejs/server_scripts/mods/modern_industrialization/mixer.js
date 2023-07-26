@@ -5,12 +5,13 @@
 
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/mixer/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let xp = (id) => `xps:${id}`;
     let ae = (id) => `ae2:${id}`;
     let tr = (id) => `techreborn:${id}`;
-    let st = (id) => `statech:modern_industrialization/mixer/${id}`;
+    let cr = (id) => `create:${id}`;
 
     // -- MIXER REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -37,6 +38,16 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- DOUGH -- //
+    mixer(
+        st('dough'),
+        2,
+        100,
+        [ { amount: 1, item: cr('wheat_flour') } ],
+        [ { amount: 1, item: cr('dough') } ],
+        [ { amount: 1000, fluid: mc('water') } ]
+    );
 
     // -- LIQUID ENDER -- // 
     mixer(
