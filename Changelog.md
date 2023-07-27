@@ -17,3 +17,4 @@ Other changes:
 - [Updated Create config to allow amethyst/spawners to be moveable with contraptions](https://github.com/TheStaticVoid/StaTech-Industry/issues/294) - Only for new worlds. Update your config manually if you want this.
 - [Added recipe for Create crushing wheels for brick/clay dust](https://github.com/TheStaticVoid/StaTech-Industry/issues/288)
 - [Fixed Dank Storage upgrade recipes](https://github.com/TheStaticVoid/StaTech-Industry/issues/287)
+- [Added custom emojis from the Discord to Emojiful](https://github.com/TheStaticVoid/StaTech-Industry/issues/298)
