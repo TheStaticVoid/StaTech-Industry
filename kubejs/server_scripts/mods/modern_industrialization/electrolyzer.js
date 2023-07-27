@@ -216,7 +216,7 @@ ServerEvents.recipes(e => {
         400,
         null,
         null,
-        [ { amount: 1, fluid: mi('chloroform') } ],
+        [ { amount: 1000, fluid: mi('chloroform') } ],
         [
             { amount: 300, fluid: mi('hydrogen') },
             { amount: 600, fluid: mi('chlorine') }
