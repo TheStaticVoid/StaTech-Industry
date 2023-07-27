@@ -1,11 +1,7 @@
 # StaTech-Industry
 Minecraft 1.19.2 modpack focused on Modern Industrializations. Join us on [Discord](https://discord.gg/RDaJEnN3uS). Click [here](https://github.com/TheStaticVoid/StaTech-Industry/blob/main/MODLIST.md) for a full list of mods.
 
-This modpack includes the following mods no longer available on CurseForge: 
-
-- [ModMenu](https://github.com/TerraformersMC/ModMenu) - Licensed under MIT, allowing for redistribution in this pack.
-
-- [Iris](https://github.com/IrisShaders/Iris) - Licensed under LGPL. No changes made from source repo.
+This modpack includes the following mods no longer available on CurseForge:
 
 - [Sodium](https://github.com/CaffeineMC/sodium-fabric) - Licensed under LGPL. No changes made from source repo.
 
