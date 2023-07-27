@@ -19,7 +19,7 @@ ServerEvents.recipes(e => {
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let electrolyzer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
         let newRecipe = {
-            type: 'modern_industrialization:electrolyzer',
+            type: mi('electrolyzer'),
             eu: eu,
             duration: duration
         }
@@ -211,11 +211,12 @@ ServerEvents.recipes(e => {
 
     // -- CHLOROFORM -- //
     electrolyzer(
-        st('electrolyzer'),
+        st('chloroform'),
         16,
         400,
         null,
-        [ { amount: 1, item: mi('carbon_dust') } ],
+        null,
+        [ { amount: 1, fluid: mi('chloroform') } ],
         [
             { amount: 300, fluid: mi('hydrogen') },
             { amount: 600, fluid: mi('chlorine') }
