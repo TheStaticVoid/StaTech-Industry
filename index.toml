@@ -485,6 +485,10 @@ file = "config/wands.json"
 hash = "394f4bdf9aa178294a15b11e191213835f12d150103ff6e1f912634ed69f971e"
 
 [[files]]
+file = "defaultconfigs/create-server.toml"
+hash = "47fc3cfdbf148228c02a2e5001b854bac4207fab121d86e6b31ac2bb46e15d6c"
+
+[[files]]
 file = "defaultconfigs/ftbchunks/client-config.snbt"
 hash = "7704b63457205da771d9fd2ee306350f5c4ab68189f1bc384d3665128bb5ae54"
 
@@ -721,10 +725,6 @@ file = "kubejs/assets/kubejs/textures/item/AE2-TEXTURE-LICENSE.txt"
 hash = "187cd2057bef106d4fff6520e702297722e3ce62ba6098399d4405e599482a26"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/Space_Probe.png"
-hash = "b8fe50161501896bb5f17b29a83e62d8c3b2973e084a481b5d18cce7747501f8"
-
-[[files]]
 file = "kubejs/assets/kubejs/textures/item/bartman.png"
 hash = "ecbc97c00efc0ae141d18b9645d0ac5eefa8a00b258ede319b4b307cecaef057"
 
@@ -827,6 +827,10 @@ hash = "dd6647cbcd9340a4e1100e9d996ddde76f08889ca85951490c9eb896b22d6241"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/slime_model.png"
 hash = "28964dbfc9c5ab9d2da775693367c193e217201e968b7a6d27e0eb86b49291cb"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/space_probe.png"
+hash = "b8fe50161501896bb5f17b29a83e62d8c3b2973e084a481b5d18cce7747501f8"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/spider_model.png"
@@ -1874,7 +1878,7 @@ hash = "9311fafdcb30d9809fe6e410dba94e788cd7974b1ee4565083c85207a010ea4a"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/electrolyzer.js"
-hash = "347634de85b8f89498c99714fe71306163b6c25a90403b333dcb5d118fd42d59"
+hash = "edfbb52db0e0c0dd4bb4dd04544f65c5f4d0338d142b68ec7a4d75e702e3beed"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/forge_hammer.js"
@@ -2669,7 +2673,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-quests-fabric.pw.toml"
-hash = "66a8a8cd1c3729335d2a7a2f2cea040f39045f44d1d85912821cce73f488e3d2"
+hash = "0d1cda5a09f03777271c191144e4e1ab481fb81c1233d03e33b318f9c3881e6f"
 metafile = true
 
 [[files]]
@@ -2689,7 +2693,7 @@ metafile = true
 
 [[files]]
 file = "mods/geocluster.pw.toml"
-hash = "ff2dd5a0439e3ac27012e1640686b24657a62779cc03286a238f01f2fee50f8f"
+hash = "e58769dc52615afc6b70bd9e09b4cb18dd78f0f790732a70217ee3a84f9382b8"
 metafile = true
 
 [[files]]
@@ -2934,7 +2938,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "2c44ee1893397841804914ef86f30e66d7c7621c4d935131ad6054c10902d967"
+hash = "60d1e8e63a319a43f6e9f838de1ce4b5853887011dc67bb888712fc720270f7f"
 metafile = true
 
 [[files]]
@@ -2999,7 +3003,7 @@ metafile = true
 
 [[files]]
 file = "mods/peripheralium.pw.toml"
-hash = "397da05551a2568c1754ab0ce524fcadaf7abbdcb4d876fc1b31f231279ab24f"
+hash = "8ad45685a5ed590198027155a94b838e418467793ce4a688e7bb0ea77d7497dd"
 metafile = true
 
 [[files]]
@@ -3064,7 +3068,7 @@ metafile = true
 
 [[files]]
 file = "mods/reeses-sodium-options.pw.toml"
-hash = "a71c4ed70ba942704c528c41c30d19ebcf018a6e1ade25b19558566c0643d213"
+hash = "08a856d224517021f615be9567b69d7ece77d5c4c2210e35787cc29889bd2f86"
 metafile = true
 
 [[files]]
@@ -3339,7 +3343,7 @@ metafile = true
 
 [[files]]
 file = "mods/unlimitedperipheralworks.pw.toml"
-hash = "4a4bafab1458f337993954658853035e58ce10f781d0e8f47999c0747efa1403"
+hash = "83e885a5a25c0392a859ea470d62bb5163e4d1fe3338d6fced962e300415e09b"
 metafile = true
 
 [[files]]

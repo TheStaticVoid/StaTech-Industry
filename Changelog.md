@@ -1,13 +1,17 @@
-StaTech Industry 1.1.2 Changelog:
+StaTech Industry 1.1.3 Changelog:
 
-This is a hotfix for a critical issue related to Nether Geocluster deposits introduced in the last patch.
+Mods added:
+- [Async Locator](https://www.curseforge.com/minecraft/mc-mods/async-locator) - Prevents server hang when loading far away maps
 
 Mod updates:
-- [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric) - 1902.5.1-build.250 -> 1902.5.2-build.256
-- [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) - 1.2.0 -> 1.2.1
-- [Spellblades and such](https://www.curseforge.com/minecraft/mc-mods/spellblade-next) - 1.0.27.1.3 -> 1.0.27.1.4
-- [Reese's Sodium Options](https://www.curseforge.com/minecraft/mc-mods/reeses-sodium-options) - 1.4.9 -> 1.6.0
+- [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric) - 1902.5.2.build.256 -> 1902.5.3-build.258
+- [Geocluster](https://www.curseforge.com/minecraft/mc-mods/geocluster) - 1.2.2 -> 1.2.3
+- [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.3.2 -> 5.4.1
+- [Peripheralium](https://www.curseforge.com/minecraft/mc-mods/peripheralium) - 0.4.21 -> 0.4.22
+- [Reese's Sodium Options](https://www.curseforge.com/minecraft/mc-mods/reeses-sodium-options) - 1.6.0 > 1.6.4
+- [UnlimitedPeripheralWorks](https://www.curseforge.com/minecraft/mc-mods/unlimitedperipheralworks) - 0.2.8 -> 0.2.9
 
 Other changes:
-- [Fixed crash related to Nether geocluster deposits](https://github.com/TheStaticVoid/StaTech-Industry/issues/285)
-- [Fixed misleading subtitle on Steam Mining Drill quest](https://github.com/TheStaticVoid/StaTech-Industry/issues/284)
+- [Fixed broken Chloroform Electrolyzer recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/293)
+- [Fix missing texture for Space Probe](https://github.com/TheStaticVoid/StaTech-Industry/issues/291)
+- [Updated Create config to allow amethyst/spawners to be moveable with contraptions](https://github.com/TheStaticVoid/StaTech-Industry/issues/294) - Only for new worlds. Update your config manually if you want this.
