@@ -19,3 +19,7 @@ Other changes:
 - [Fixed Dank Storage upgrade recipes](https://github.com/TheStaticVoid/StaTech-Industry/issues/287)
 - [Added custom emojis from the Discord to Emojiful](https://github.com/TheStaticVoid/StaTech-Industry/issues/298)
 - [Added a Food chapter with various new custom foods](https://github.com/TheStaticVoid/StaTech-Industry/issues/290)
+- [Fix Ad Astra tier one rocket recipe not being removed](https://github.com/TheStaticVoid/StaTech-Industry/issues/299)
+- [Fix typo in Ostrum geocluster](https://github.com/TheStaticVoid/StaTech-Industry/issues/301)
+- [Remove blank YIGD recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/302)
+- [Added temp fix for ISE with KubeJS tags](https://github.com/TheStaticVoid/StaTech-Industry/issues/303)
