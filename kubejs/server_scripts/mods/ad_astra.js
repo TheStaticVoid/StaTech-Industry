@@ -60,7 +60,7 @@ ServerEvents.recipes(e => {
         ad('recipes/calorite_engine'),
         ad('recipes/solar_panel'),
         ad('recipes/launch_pad'),
-        ad('recipes/nasa_workbench/tier_1_rocket')
+        ad('nasa_workbench/tier_1_rocket')
     ];
     AD_ASTRA_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
     e.remove({ type: ad('fuel_conversion') });

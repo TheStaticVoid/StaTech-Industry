@@ -18,3 +18,4 @@ Other changes:
 - [Added recipe for Create crushing wheels for brick/clay dust](https://github.com/TheStaticVoid/StaTech-Industry/issues/288)
 - [Fixed Dank Storage upgrade recipes](https://github.com/TheStaticVoid/StaTech-Industry/issues/287)
 - [Added custom emojis from the Discord to Emojiful](https://github.com/TheStaticVoid/StaTech-Industry/issues/298)
+- [Added a Food chapter with various new custom foods](https://github.com/TheStaticVoid/StaTech-Industry/issues/290)
