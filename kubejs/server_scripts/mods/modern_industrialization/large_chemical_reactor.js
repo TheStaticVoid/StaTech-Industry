@@ -198,6 +198,16 @@ ServerEvents.recipes(e => {
 
     // There's technically a really convoluted way to get all recipes, even ones added,
     // but I couldn't be bothered to figure it out for 6.1
+    // -- ROSE QUARTZ -- //
+    lcr(
+        st('rose_quartz'),
+        32,
+        200,
+        [ { amount: 4, item: mc('quartz') } ],
+        [ { amount: 4, item: cr('polished_rose_quartz') } ],
+        [ { amount: 2000, fluid: mi('molten_redstone') } ]
+    );
+
     // -- EYE OF ENDER -- //
     lcr(
         st('eye_of_ender'),

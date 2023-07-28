@@ -23,3 +23,4 @@ Other changes:
 - [Fix typo in Ostrum geocluster](https://github.com/TheStaticVoid/StaTech-Industry/issues/301)
 - [Remove blank YIGD recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/302)
 - [Added temp fix for ISE with KubeJS tags](https://github.com/TheStaticVoid/StaTech-Industry/issues/303)
+- [Added Polished Rose Quartz recipe to the Chemical Reactor](https://github.com/TheStaticVoid/StaTech-Industry/issues/304)
