@@ -72,4 +72,13 @@ ServerEvents.recipes(e => {
         ],
         [ { amount: 1, item: mi('mixed_ingot_blastproof') } ]
     );
+
+    // -- CERTUS QUARTZ BLOCK -- //
+    packer(
+        st('quartz_block'),
+        8,
+        200,
+        [ { amount: 4, item: ae('certus_quartz_crysta') } ],
+        [ { amount: 1, item: ae('quartz_block') } ]
+    );
 })
