@@ -8,6 +8,7 @@ ServerEvents.recipes(e => {
     let st = (id) => `statech:modern_industrialization/lcr/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
+    let cr = (id) => `create:${id}`;
 
     // -- LCR VARIABLE CONSTANTS -- //
     const gsonJsonArray = Java.loadClass('com.google.gson.JsonArray');
