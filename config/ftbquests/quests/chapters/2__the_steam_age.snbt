@@ -4371,6 +4371,41 @@
 			x: -3.0d
 			y: 4.5d
 		}
+		{
+			dependencies: ["77EAB1D011541800"]
+			description: [
+				"Want something to move &afluids&r manually &ebetween machines&r a little easier? The &6TechReborn&r &3Fluid Cells&r act similar to &dIC2 Fluid Cells&r and allow you to pick up and move fluids between &bmachine GUIs&r. "
+				""
+				"Only certain fluids can be placed from cells."
+			]
+			id: "2D0E8B6809C329D3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "699161F7D400FF3F"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "687E2AAC67EF63C4"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2FFBBC494BD6367F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Manual Labor"
+			tasks: [{
+				id: "0FE3433D39E2083F"
+				item: "techreborn:cell"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
 	]
 	subtitle: ["The Basis of Industry"]
 	title: "&22 - Steam Age"

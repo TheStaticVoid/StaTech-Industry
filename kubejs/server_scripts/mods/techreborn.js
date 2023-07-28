@@ -141,12 +141,24 @@ ServerEvents.recipes(e => {
         tr('crafting_table/machine/assembling_machine'),
         tr('crafting_table/cable/superconductor_cable'),
         tr('crafting_table/small_dust/clay_small_dust_from_dust'),
-        tr('crafting_table/dust/clay_dust_from_small')
+        tr('crafting_table/dust/clay_dust_from_small'),
+        tr('crafting_table/cell')
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
     // DELETE ALL SMALL DUST RECIPES
     e.remove({mod: 'techreborn', type: 'minecraft:crafting_shapeless', output: '#techreborn:small_dusts' });
+
+    // -- CELL -- //
+    e.shaped(tr('cell'), [
+        ' T ',
+        'T T',
+        ' T '
+    ],
+    {
+        T: '#c:tin_plates'
+    })
+    .id(st('cell'));
 
     // -- INDUSTRIAL DRILL -- //
     e.shaped(tr('industrial_drill'), [
