@@ -1,0 +1,195 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "food"
+	group: "135E7B9D4273E5DD"
+	icon: "kubejs:concrete_bar"
+	id: "295AA291F22FB812"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "002B9485CE2AB2E5"
+			tasks: [{
+				id: "6BED6759FE6DAB93"
+				item: "kubejs:concrete_bar"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26742A8064D359B5"]
+			id: "49B7D142AC99744F"
+			tasks: [{
+				id: "5D2AFD1257D10C4C"
+				item: "kubejs:statech_energy"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "36726DD7BF86CEAD"
+			tasks: [{
+				id: "3D70966C4C97FAEC"
+				item: "kubejs:sulfuric_acid_bottle"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "65D7F9C7F3F4F6BE"
+			tasks: [{
+				id: "110AB8355A7B1F4A"
+				item: "kubejs:concrete_and_clay_steak"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "44623028AD0FB530"
+			tasks: [{
+				id: "566D018DDB6860DF"
+				item: "kubejs:uranium_cereal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			id: "6A21C4EAB90CC753"
+			tasks: [{
+				id: "4EEBD462005E1542"
+				item: "kubejs:pizza_dough"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17894DFBE89922A5"]
+			id: "5F1F657E304AECB0"
+			tasks: [{
+				id: "5AA9B9FD3F90600F"
+				item: "kubejs:pizza"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F1F657E304AECB0"]
+			id: "01F57E2BAF887061"
+			tasks: [{
+				id: "2A30DB0C06739BAD"
+				item: "kubejs:pizza_slice"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F1F657E304AECB0"]
+			id: "19A9675C42B6870A"
+			tasks: [{
+				id: "452531CECE5CD6C3"
+				item: "kubejs:concrete_pizza"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["19A9675C42B6870A"]
+			id: "0093A313FED0180A"
+			tasks: [{
+				id: "4DFB826926B70AEF"
+				item: "kubejs:concrete_pizza_slice"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["26742A8064D359B5"]
+			id: "1B4FEEBEAEB765EC"
+			tasks: [{
+				id: "1C8D8CCD0562AC9D"
+				item: "kubejs:bepsi"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["26742A8064D359B5"]
+			id: "74ED38514710CE76"
+			tasks: [{
+				id: "6581F6DD3555DEAD"
+				item: "kubejs:greg_cola"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["26742A8064D359B5"]
+			id: "1188C1F08EEA296C"
+			tasks: [{
+				id: "00BC5CE8B271D8F5"
+				item: "kubejs:coke_cola"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			id: "69D6F9E04B458E58"
+			tasks: [{
+				id: "7CEF29013E1438E6"
+				item: "kubejs:nuka_cola"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["69D6F9E04B458E58"]
+			id: "20C471C1E2F728A5"
+			tasks: [{
+				id: "7DEBA3F19EFC20FC"
+				item: "kubejs:bottle_cap"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			id: "26742A8064D359B5"
+			tasks: [{
+				id: "7E4C76EE214B67C8"
+				item: "kubejs:empty_can"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6A21C4EAB90CC753"]
+			id: "17894DFBE89922A5"
+			tasks: [{
+				id: "21804DF4D4BF06C1"
+				item: "kubejs:uncooked_pizza"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+	]
+	subtitle: ["Concrete so good"]
+	title: "&6Food"
+}

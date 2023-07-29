@@ -5,10 +5,12 @@
 
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/compressor/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let tr = (id) => `techreborn:${id}`;
-    let st = (id) => `statech:modern_industrialization/compressor/${id}`;
+    let cr = (id) => `create:${id}`;
+    let kj = (id) => `kubejs:${id}`;
 
     // -- COMPRESSOR REMOVED RECIPES -- //
     const DELETED_RECIPE = [
@@ -38,6 +40,15 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+    
+    // -- PIZZA DOUGH -- //
+    compressor(
+        st('pizza_dough'),
+        2,
+        200,
+        [ { amount: 1, tag: 'c:dough' } ],
+        [ { amount: 1, item: kj('pizza_dough') } ]
+    );
 
     // -- DIAMOND PLATE -- //
     compressor(

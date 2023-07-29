@@ -10,6 +10,7 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let ad = (id) => `ad_astra:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let ae = (id) => `ae2:${id}`;
 
     // -- PACKER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
@@ -78,7 +79,7 @@ ServerEvents.recipes(e => {
         st('quartz_block'),
         8,
         200,
-        [ { amount: 4, item: ae('certus_quartz_crysta') } ],
+        [ { amount: 4, item: ae('certus_quartz_crystal') } ],
         [ { amount: 1, item: ae('quartz_block') } ]
     );
 })
