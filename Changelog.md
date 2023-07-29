@@ -31,4 +31,4 @@ Other changes:
 - [Added Polished Rose Quartz recipe to the Chemical Reactor](https://github.com/TheStaticVoid/StaTech-Industry/issues/304)
 - [Added Packer recipe for Certus Quartz Blocks](https://github.com/TheStaticVoid/StaTech-Industry/issues/305)
 - [Add quest for TR Fluid Cells](https://github.com/TheStaticVoid/StaTech-Industry/issues/306)
-- Add Cursed Food
+- [Add Cursed Food](https://github.com/TheStaticVoid/StaTech-Industry/commit/af51e8d125726d7ff2ae3b66bb496c2a05d1b60c)
