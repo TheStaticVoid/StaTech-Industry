@@ -12,6 +12,7 @@ ServerEvents.recipes(e => {
     let ae = (id) => `ae2:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let cr = (id) => `create:${id}`;
+    let kj = (id) => `kubejs:${id}`;
 
     // -- MIXER REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -38,6 +39,115 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- STATECH ENERGY -- //
+    mixer(
+        st('statech_energy'),
+        8,
+        200,
+        [
+            { amount: 1, item: kj('empty_can') },
+            { amount: 2, item: mi('battery_alloy_dust') }
+        ],
+        [ { amount: 1, item: kj('statech_energy') } ],
+        [ { amount: 100, fluid: mc('water') } ]
+    );
+
+    // -- BEPSI -- //
+    mixer(
+        st('bepsi'),
+        8,
+        200,
+        [ { amount: 1, item: kj('empty_can') } ],
+        [ { amount: 1, item: kj('bepsi') } ],
+        [ { amount: 100, fluid: mi('polyethylene') } ]
+    );
+
+    // -- COKE COLA -- //
+    mixer(
+        st('coke_cola'),
+        8,
+        200,
+        [ 
+            { amount: 1, item: kj('empty_can') },
+            { amount: 2, tag: 'c:coke_dusts' }
+        ],
+        [ { amount: 1, item: kj('coke_cola') } ],
+        [ { amount: 100, fluid: mc('water') } ]
+    );
+
+    // -- GREG COLA -- //
+    mixer(
+        st('greg_cola'),
+        8,
+        200,
+        [
+            { amount: 1, item: kj('empty_can') },
+            { amount: 2, item: mc('clay_ball') }
+        ],
+        [ { amount: 1, item: kj('greg_cola') } ],
+        [ { amount: 100, fluid: mi('polytetrafluoroethylene') } ]
+    );
+
+    // -- SULFURIC ACID BOTTLE -- //
+    mixer(
+        st('sulfuric_acid_bottle'),
+        8,
+        200,
+        [ { amount: 1, item: mc('glass_bottle') } ],
+        [ { amount: 1, item: kj('sulfuric_acid_bottle') } ],
+        [ { amount: 100, fluid: mi('sulfuric_acid') } ]
+    );
+
+    // -- URANIUM CEREAL -- //
+    mixer(
+        st('uranium_cereal'),
+        8,
+        200,
+        [ 
+            { amount: 1, item: mc('bowl') },
+            { amount: 3, tag: 'c:uranium_nuggets' }
+        ],
+        [ { amount: 1, item: kj('uranium_cereal') } ],
+        [ { amount: 100, fluid: 'milk:still_milk' } ]
+    );
+
+    // -- NUKA COLA -- //
+    mixer(
+        st('nuka_cola'),
+        8,
+        200,
+        [ 
+            { amount: 1, item: mc('glass_bottle') },
+            { amount: 4, tag: 'c:uranium_dusts' },
+            { amount: 2, tag: 'c:coke_dusts' }
+        ],
+        [ { amount: 1, item: kj('nuka_cola') } ],
+        [ { amount: 100, fluid: mc('water') } ]
+    );
+
+    // -- CONCRETE PIZZA -- //
+    mixer(
+        st('concrete_pizza'),
+        8,
+        200,
+        [ { amount: 1, item: kj('pizza') } ],
+        [ { amount: 1, item: kj('concrete_pizza') } ],
+        [ { amount: 100, fluid: mi('concrete') } ]
+    );
+
+    // -- CONCRETE STEAK WITH CLAY SAUCE -- //
+    mixer(
+        st('concrete_steak_with_clay_sauce'),
+        8,
+        200,
+        [
+            { amount: 1, item: mc('cooked_beef') },
+            { amount: 1, item: mc('clay_ball') }
+        ],
+        [ { amount: 1, item: kj('concrete_and_clay_steak') } ],
+        [ { amount: 100, fluid: mi('concrete') } ]
+    );
 
     // -- DOUGH -- //
     mixer(

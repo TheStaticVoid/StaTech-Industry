@@ -12,6 +12,7 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let kj = (id) => `kubejs:${id}`;
     let ae = (id) => `ae2:${id}`;
+    let fd = (id) => `farmersdelight:${id}`;
 
     // -- ASSEMBLER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [    
@@ -42,6 +43,21 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe).id(id);
     }
+
+    // -- UNCOOKED PIZZA -- //
+    assembler(
+        st('uncooked_pizza'),
+        8,
+        200,
+        [
+            { amount: 1, item: kj('pizza_dough') },
+            { amount: 1, item: fd('tomato_sauce') },
+            { amount: 1, item: fd('onion') },
+            { amount: 1, item: ad('cheese') },
+            { amount: 1, item: fd('minced_beef') }
+        ],
+        [ { amount: 1, item: kj('uncooked_pizza') } ]
+    );
 
     // -- OP AMP -- //
     assembler(

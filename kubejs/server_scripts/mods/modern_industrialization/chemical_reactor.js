@@ -5,9 +5,10 @@
 
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
     let mc = (id) => `minecraft:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
-    let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
+    let cr = (id) => `create:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let chemicalReactor = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
@@ -28,6 +29,16 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe).id(id);
     }
+
+    // -- ROSE QUARTZ -- //
+    chemicalReactor(
+        st('rose_quartz'),
+        16,
+        200,
+        [ { amount: 1, item: mc('quartz') } ],
+        [ { amount: 1, item: cr('polished_rose_quartz') } ],
+        [ { amount: 500, fluid: mi('molten_redstone') } ]
+    );
 
     // -- EYE OF ENDER -- //
     chemicalReactor(

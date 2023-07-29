@@ -8,6 +8,7 @@ ServerEvents.recipes(e => {
     let st = (id) => `statech:modern_industrialization/blast_furnace/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let kj = (id) => `kubejs:${id}`;
     
     // -- BLAST FURNACE REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -37,6 +38,15 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- PIZZA -- //
+    blastFurnace(
+        st('pizza'),
+        2,
+        600,
+        [ { amount: 1, item: kj('uncooked_pizza') } ],
+        [ { amount: 1, item: kj('pizza') } ]
+    );
 
     // -- UNCOOKED STEEL DUST -> STEEL INGOT -- //
     blastFurnace(
