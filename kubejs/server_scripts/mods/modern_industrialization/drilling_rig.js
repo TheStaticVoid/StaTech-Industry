@@ -31,6 +31,6 @@ ServerEvents.recipes(e => {
         16,
         200,
         [ { amount: 1, item: mi('gold_drill'), probability: 0.05 } ],
-        [ { amount: 8000, fluid: mc('lava') } ]
+        [ { amount: 500, fluid: mc('lava') } ]
     );
 });

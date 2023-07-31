@@ -1,4 +1,6 @@
 # StaTech Industry 1.1.4 Changelog:
+Another general bugfix update. 
+This update also includes the update to Modern Industrialization that includes crash fixes for Nuclear Reactors, Tech Enhanced fixes for night vision on Nano Helmets, and Iron Chest duplication fixes.
 
 ## Mods added:
 - [Crafting Tweaks](https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks-fabric) - Dev fixed the exploits
