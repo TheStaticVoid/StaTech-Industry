@@ -24,3 +24,4 @@
 - [Fix Basic Card using wrong recipe in Assembler](https://github.com/TheStaticVoid/StaTech-Industry/issues/313)
 - [Add Gold Drill recipe in Drilling Rig for lava](https://github.com/TheStaticVoid/StaTech-Industry/issues/314)
 - [Add Minced Beef recipe to Cutting Machine](https://github.com/TheStaticVoid/StaTech-Industry/issues/319)
+- [Fix Spectrum Redstone Sand quest requiring wrong block](https://github.com/TheStaticVoid/StaTech-Industry/issues/320)
