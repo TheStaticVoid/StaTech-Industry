@@ -22,3 +22,4 @@
 - [Updated Iron Chests scripts to comply with new update](https://github.com/TheStaticVoid/StaTech-Industry/issues/310)
 - [Blacklist Chisel from IPN](https://github.com/TheStaticVoid/StaTech-Industry/issues/312)
 - [Fix Basic Card using wrong recipe in Assembler](https://github.com/TheStaticVoid/StaTech-Industry/issues/313)
+- [Add Gold Drill recipe in Drilling Rig for lava](https://github.com/TheStaticVoid/StaTech-Industry/issues/314)
