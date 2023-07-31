@@ -37,3 +37,4 @@ This update also includes the update to Modern Industrialization that includes c
 - [Add tip about threshold switch on large tank hatch](https://github.com/TheStaticVoid/StaTech-Industry/issues/318)
 - [Add Jon Bartman recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/317)
 - [Hide new Geocluster ore samples from REI (unused ores)](https://github.com/TheStaticVoid/StaTech-Industry/issues/326)
+- [Fixed Wither Skeleton mob crusher recipe being net negative](https://github.com/TheStaticVoid/StaTech-Industry/issues/329)
