@@ -28,3 +28,4 @@
 - [Add Localization for discord rich presence in Void world. Also updated rich presense app icon](https://github.com/TheStaticVoid/StaTech-Industry/issues/322)
 - [Disable fast climbing for Scaffolding](https://github.com/TheStaticVoid/StaTech-Industry/issues/323)
 - [Remove references to removed mod Spirit](https://github.com/TheStaticVoid/StaTech-Industry/issues/316)
+- [Add compat for BYG Nether Quartz and Redstone ores in MI Macerator](https://github.com/TheStaticVoid/StaTech-Industry/issues/324)
