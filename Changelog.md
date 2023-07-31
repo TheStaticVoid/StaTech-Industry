@@ -26,3 +26,4 @@
 - [Add Minced Beef recipe to Cutting Machine](https://github.com/TheStaticVoid/StaTech-Industry/issues/319)
 - [Fix Spectrum Redstone Sand quest requiring wrong block](https://github.com/TheStaticVoid/StaTech-Industry/issues/320)
 - [Add Localization for discord rich presence in Void world. Also updated rich presense app icon](https://github.com/TheStaticVoid/StaTech-Industry/issues/322)
+- [Disable fast climbing for Scaffolding](https://github.com/TheStaticVoid/StaTech-Industry/issues/323)
