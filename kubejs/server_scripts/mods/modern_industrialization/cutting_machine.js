@@ -10,6 +10,7 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let ca = (id) => `createaddition:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let fd = (id) => `farmersdelight:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let cuttingMachine = (id, eu, duration, item_inputs, item_outputs) => {
@@ -64,5 +65,14 @@ ServerEvents.recipes(e => {
         200,
         [ { amount: 1, item: kj('concrete_pizza') } ],
         [ { amount: 8, item: kj('concrete_pizza_slice') } ]
+    );
+
+    // -- MINCED BEEF -- //
+    cuttingMachine(
+        st('minced_beef'),
+        2,
+        200,
+        [ { amount: 1, item: mc('beef') } ],
+        [ { amount: 4, item: fd('minced_beef') } ]
     );
 });
