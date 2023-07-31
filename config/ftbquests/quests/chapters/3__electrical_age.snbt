@@ -7609,7 +7609,7 @@
 					type: "item"
 				}
 				{
-					count: 10L
+					count: 11L
 					id: "6A28593836CEC663"
 					item: "modern_industrialization:steel_machine_casing"
 					type: "item"
@@ -7676,18 +7676,6 @@
 						}
 					}
 					title: "Any Fluid Input Hatch"
-					type: "item"
-				}
-				{
-					id: "1DFCA7F3A6BD9A30"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:fluid_output_hatch"
-						}
-					}
-					title: "Any Fluid Output Hatch"
 					type: "item"
 				}
 				{
