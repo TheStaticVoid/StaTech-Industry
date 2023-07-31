@@ -33,3 +33,5 @@ This update also includes the update to Modern Industrialization that includes c
 - [Add compat for BYG Nether Quartz and Redstone ores in MI Macerator](https://github.com/TheStaticVoid/StaTech-Industry/issues/324)
 - [Added vanilla mushrooms to the Photosynthetic Chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/325)
 - [Add assembler recipes for custom machines](https://github.com/TheStaticVoid/StaTech-Industry/issues/315)
+- [Tin plates can now be made in a Mechanical Press](https://github.com/TheStaticVoid/StaTech-Industry/commit/3bb6f1d37b0784d9ec0b0f2d33975526ac6f6d6c)
+- [Add tip about threshold switch on large tank hatch](https://github.com/TheStaticVoid/StaTech-Industry/issues/318)
