@@ -17,3 +17,5 @@
 - [Modern Industrialization](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization) - 1.6.11 -> 1.6.12
 
 ## Other changes:
+- [Fix Industrial Greenhouse quest requiring fluid output hatch](https://github.com/TheStaticVoid/StaTech-Industry/issues/308)
+- [Fix Blockus Legacy Saplings in the Greenhouse having incorrect output](https://github.com/TheStaticVoid/StaTech-Industry/issues/309)
