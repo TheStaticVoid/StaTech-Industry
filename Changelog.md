@@ -30,3 +30,4 @@
 - [Remove references to removed mod Spirit](https://github.com/TheStaticVoid/StaTech-Industry/issues/316)
 - [Add compat for BYG Nether Quartz and Redstone ores in MI Macerator](https://github.com/TheStaticVoid/StaTech-Industry/issues/324)
 - [Added vanilla mushrooms to the Photosynthetic Chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/325)
+- [Add assembler recipes for custom machines](https://github.com/TheStaticVoid/StaTech-Industry/issues/315)
