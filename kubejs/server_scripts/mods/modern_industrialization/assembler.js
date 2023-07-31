@@ -79,7 +79,7 @@ ServerEvents.recipes(e => {
         8,
         200,
         [ 
-            { amount: 3, tag: 'c:stainless_steel_ingots' },
+            { amount: 3, tag: 'c:aluminum_plates' },
             { amount: 2, tag: 'c:gold_ingots' },
             { amount: 1, item: ae('calculation_processor') }
         ],
