@@ -278,7 +278,23 @@ ServerEvents.recipes(e => {
             ]
         ],
 
+        // Brown Mushrooom
+        [
+            mc('brown_mushroom'),
+            [
+                { amount: 1, item: mc('brown_mushroom') },
+                { amount: 1, item: mc('brown_mushroom'), probability: 0.5 }
+            ]
+        ],
 
+        // Red Mushroom
+        [
+            mc('red_mushroom'),
+            [
+                { amount: 1, item: mc('red_mushroom') },
+                { amount: 1, item: mc('red_mushroom'), probability: 0.5 }
+            ]
+        ]
     ];
     // Create recipes for each of the items in the list
     recipeInOut.forEach(recipe => {
