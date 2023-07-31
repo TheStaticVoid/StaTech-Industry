@@ -25,4 +25,19 @@ ServerEvents.recipes(e => {
         C: mi('enderium_gear')
     })
     .id(st('space_probe'));
+
+    // -- JON BARTMAN --//
+    e.shaped(kj('bartman'), [
+        'PCP',
+        'BWB',
+        'BEB'
+    ],
+    {
+        P: '#c:plutonium_dusts',
+        C: mc('brain_coral_block'),
+        B: mc('beef'),
+        W: mc('black_wool'),
+        E: mc('dragon_egg')
+    })
+    .id(st('bartman'));
 });
