@@ -20,3 +20,4 @@
 - [Fix Industrial Greenhouse quest requiring fluid output hatch](https://github.com/TheStaticVoid/StaTech-Industry/issues/308)
 - [Fix Blockus Legacy Saplings in the Greenhouse having incorrect output](https://github.com/TheStaticVoid/StaTech-Industry/issues/309)
 - [Updated Iron Chests scripts to comply with new update](https://github.com/TheStaticVoid/StaTech-Industry/issues/310)
+- [Blacklist Chisel from IPN](https://github.com/TheStaticVoid/StaTech-Industry/issues/312)
