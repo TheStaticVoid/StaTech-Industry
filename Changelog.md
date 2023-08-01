@@ -40,3 +40,4 @@ This update also includes the update to Modern Industrialization that includes c
 - [Fixed Wither Skeleton mob crusher recipe being net negative](https://github.com/TheStaticVoid/StaTech-Industry/issues/329)
 - [Add missing loot tables from Dungeons Arise](https://github.com/TheStaticVoid/StaTech-Industry/issues/330)
 - [Add conversion recipe for inscribers to laser engravers (for existing worlds)](https://github.com/TheStaticVoid/StaTech-Industry/issues/331)
+- [Fix Amethyst dupe bug](https://github.com/TheStaticVoid/StaTech-Industry/issues/332)
