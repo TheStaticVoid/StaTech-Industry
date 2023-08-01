@@ -11,6 +11,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let ad = (id) => `ad_astra:${id}`;
     let cr = (id) => `create:${id}`;
+    let ae = (id) => `ae2:${id}`;
 
     // -- MODERN INDUSTRIALIZATION REMOVED RECIPES -- //
     const MI_DELETED_ITEMS = [
@@ -45,6 +46,9 @@ ServerEvents.recipes(e => {
         mi('electric_age/component/craft/op_amp_asbl')
     ];
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
+    
+    // -- CONVERSION RECIPE FOR EXISTING WORLDS -- //
+    e.shapeless(mi('laser_engraver'), [ ae('inscriber') ]).id(st('laser_engraver_conversion'));
 
     // -- CHEMICALLY INERT PTFE CASING -- //
     e.shaped(mi('chemically_inert_ptfe_casing'), [
