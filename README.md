@@ -3,11 +3,7 @@ Minecraft 1.19.2 modpack focused on Modern Industrializations. Join us on [Disco
 
 This modpack includes the following mods no longer available on CurseForge: 
 
-- [ModMenu](https://github.com/TerraformersMC/ModMenu) - Licensed under MIT, allowing for redistribution in this pack.
-
 - [Iris](https://github.com/IrisShaders/Iris) - Licensed under LGPL. No changes made from source repo.
-
-- [Sodium](https://github.com/CaffeineMC/sodium-fabric) - Licensed under LGPL. No changes made from source repo.
 
 
 This modpack also includes the following resources. Do not report any issues you might experience with these to their developers, but rather to this mod's Discord.

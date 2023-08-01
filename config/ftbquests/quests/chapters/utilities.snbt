@@ -930,29 +930,6 @@
 		}
 		{
 			description: [
-				"This pack includes &eFarming for Blockheads&r, a helpful mod for those looking to get into farming."
-				""
-				"The &bMarket&r is a very useful block for &dbuying&r seeds for crops you might not have found in the wild."
-				""
-				"There is also &cfertilizer&r and other &autilities&r included with this mod. Check it out in &dJEI&r under &e@farming&r."
-			]
-			id: "7CA911BBA85464A1"
-			rewards: [{
-				id: "7F6B4D7927086FEC"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "77970F443BB24354"
-				item: "farmingforblockheads:market"
-				type: "item"
-			}]
-			title: "Farming for Blockheads"
-			x: 7.5d
-			y: 1.0d
-		}
-		{
-			description: [
 				"Find something cool in your world, or just want to take a picture to remember the occasion? Take a picture with the &bCamera&r!"
 				""
 				"To take a photo, you must have an &aEmpty Map&r in your inventory and press '&eC&r' while using the Camera."
@@ -1145,8 +1122,8 @@
 				}
 			]
 			title: "Calculators"
-			x: 10.5d
-			y: 7.0d
+			x: 7.5d
+			y: 1.0d
 		}
 		{
 			description: ["This mod is a simple port of the &eQuark&r mods &aTrowel&r item. When right clicked it picks a &drandom block&r from your hotbar and places it down."]
