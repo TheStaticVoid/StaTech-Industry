@@ -5,10 +5,8 @@ This update also includes the update to Modern Industrialization that includes c
 ## Mods added:
 - [Crafting Tweaks](https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks-fabric) - Dev fixed the exploits
 
-## Mods removed:
-
 ## Mod updates:
-- [Another Furniture](https://www.curseforge.com/minecraft/mc-mods/another-furniture) - 2.1.2 -> 2.1.3
+- [Another Furniture](https://www.curseforge.com/minecraft/mc-mods/another-furniture) - 2.1.2 -> 2.1.4
 - [Blockus](https://www.curseforge.com/minecraft/mc-mods/blockus) -2.5.10 -> 2.5.11
 - [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.18 -> 0.10.19
 - [Chimes](https://www.curseforge.com/minecraft/mc-mods/chimes) - 1.1.4 -> 2.0.1
@@ -16,6 +14,7 @@ This update also includes the update to Modern Industrialization that includes c
 - [Geocluster](https://www.curseforge.com/minecraft/mc-mods/geocluster) - 1.2.3 -> 1.2.4
 - [Iron Chests: Restocked](https://www.curseforge.com/minecraft/mc-mods/ironchests) 3.1.2 -> 3.1.3
 - [JourneyMap Integration](https://www.curseforge.com/minecraft/mc-mods/journeymap-integration) - 2.0.13-40 -> 2.0.13-44
+- [Tech Enhanced](https://www.curseforge.com/minecraft/mc-mods/tech-enhanced) - 1.0.4 -> 1.0.5
 - [Modern Industrialization](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization) - 1.6.11 -> 1.6.12
 
 ## Other changes:
@@ -42,3 +41,4 @@ This update also includes the update to Modern Industrialization that includes c
 - [Add conversion recipe for inscribers to laser engravers (for existing worlds)](https://github.com/TheStaticVoid/StaTech-Industry/issues/331)
 - [Fix Amethyst dupe bug](https://github.com/TheStaticVoid/StaTech-Industry/issues/332)
 - [Add Tungstensteel to EV cables quest description](https://github.com/TheStaticVoid/StaTech-Industry/issues/334)
+- [Added the Food chapter for real this time](https://github.com/TheStaticVoid/StaTech-Industry/issues/290)
