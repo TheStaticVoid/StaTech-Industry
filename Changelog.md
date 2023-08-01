@@ -5,6 +5,7 @@ Hotfix to fix crash when using CC, fix the KubeJS error on world join, and unhid
 ## Mods removed:
 - [UnlimitedPeripheralWorks](https://www.curseforge.com/minecraft/mc-mods/unlimitedperipheralworks) - Crash with latest version of MI
 - [Peripheralium](https://www.curseforge.com/minecraft/mc-mods/peripheralium) - Crash with latest version of MI
+- [Megane](https://www.curseforge.com/minecraft/mc-mods/megane) - No longer recommended by MI
 
 ## Other changes:
 - Fix KubeJS script error
