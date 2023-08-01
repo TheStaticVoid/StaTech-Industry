@@ -41,3 +41,4 @@ This update also includes the update to Modern Industrialization that includes c
 - [Add missing loot tables from Dungeons Arise](https://github.com/TheStaticVoid/StaTech-Industry/issues/330)
 - [Add conversion recipe for inscribers to laser engravers (for existing worlds)](https://github.com/TheStaticVoid/StaTech-Industry/issues/331)
 - [Fix Amethyst dupe bug](https://github.com/TheStaticVoid/StaTech-Industry/issues/332)
+- [Add Tungstensteel to EV cables quest description](https://github.com/TheStaticVoid/StaTech-Industry/issues/334)
