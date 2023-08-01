@@ -38,3 +38,4 @@ This update also includes the update to Modern Industrialization that includes c
 - [Add Jon Bartman recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/317)
 - [Hide new Geocluster ore samples from REI (unused ores)](https://github.com/TheStaticVoid/StaTech-Industry/issues/326)
 - [Fixed Wither Skeleton mob crusher recipe being net negative](https://github.com/TheStaticVoid/StaTech-Industry/issues/329)
+- [Add missing loot tables from Dungeons Arise](https://github.com/TheStaticVoid/StaTech-Industry/issues/330)
