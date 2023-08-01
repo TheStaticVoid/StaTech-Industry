@@ -21,7 +21,8 @@ ServerEvents.recipes(e => {
         mc('bricks'),
         mc('clock'),
         mc('compass'),
-        mc('chain')
+        mc('chain'),
+        mc('amethyst_block')
     ];
     VANILLA_DELETED.forEach(id => e.remove( {id : id} ));
 
@@ -161,6 +162,16 @@ ServerEvents.recipes(e => {
         O: mi('iron_ring')
     })
     .id(st('chain'));
+
+    e.shaped(mc('amethyst_block'), [
+        'AAA',
+        'AAA',
+        'AAA'
+    ],
+    {
+        A: mc('amethyst_shard')
+    })
+    .id(st('amethyst_block'));
 });
 
 ServerEvents.tags('item', e => {

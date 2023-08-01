@@ -50,7 +50,7 @@ ServerEvents.recipes(e => {
         [ mc('warped_fungus'),                  mc('warped_stem'),              mc('warped_wart_block'),                mi('blood') ],
         [ ap('twisted_sapling'),                ap('twisted_log'),              ap('twisted_leaves'),                   mi('blood') ],
         [ bl('white_oak_sapling'),              bl('white_oak_sapling'),        bl('white_oak_leaves'),                 mc('water') ],
-        [ bl('legacy_sapling'),                 bl('legacy_sapling'),           bl('legacy_leaves'),                    mc('water') ],
+        [ bl('legacy_sapling'),                 bl('legacy_log'),               bl('legacy_leaves'),                    mc('water') ],
         [ bg('aspen_sapling'),                  bg('aspen_log'),                bg('aspen_leaves'),                     mc('water') ],
         [ bg('baobab_sapling'),                 bg('baobab_log'),               bg('baobab_leaves'),                    mc('water') ],
         [ bg('blue_enchanted_sapling'),         bg('blue_enchanted_log'),       bg('blue_enchanted_leaves'),            mc('water') ],

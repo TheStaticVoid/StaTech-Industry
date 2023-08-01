@@ -195,7 +195,7 @@ ServerEvents.recipes(e => {
             [
                 { amount: 1, item: mc('bone') },
                 { amount: 1, item: mc('coal'), probability: 0.333 },
-                { amount: 1, item: ap('withered_bone'), probability: 0.90 },
+                { amount: 1, item: ap('withered_bone'), probability: 0.5 },
                 { amount: 1, item: mc('wither_skeleton_skull'), probability: 0.025 },
                 { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
             ],

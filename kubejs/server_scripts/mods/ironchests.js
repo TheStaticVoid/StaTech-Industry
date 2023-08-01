@@ -16,6 +16,10 @@ ServerEvents.recipes(e => {
         ic('iron_chest'),
         ic('gold_chest'),
         ic('diamond_chest'),
+        ic('copper_barrel'),
+        ic('iron_barrel'),
+        ic('gold_barrel'),
+        ic('diamond_barrel'),
         ic('iron_chest_upgrade'),
         ic('gold_chest_upgrade'),
         ic('diamond_chest_upgrade'),
@@ -193,34 +197,6 @@ ServerEvents.recipes(e => {
         B: ic('gold_barrel')
     })
     .id(st('diamond_barrel'));
-
-    // -- OBSIDIAN BARREL -- //
-    e.shaped(ic('obsidian_barrel'), [
-        'OOO',
-        'OBO',
-        'OOO'
-    ],
-    {
-        O: '#c:obsidian',
-        B: ic('diamond_barrel')
-    })
-    .id(st('obsidian_barrel'));
-
-    // -- CRYSTAL BARREL -- //
-    e.shaped(ic('crystal_barrel'), [
-        'GGG',
-        'ABA',
-        'GGG'
-    ],
-    {
-        G: '#c:colorless_glass',
-        A: '#c:amethyst',
-        B: ic('diamond_barrel')
-    })
-    .id(st('crystal_barrel'));
-
-    // -- NETHERITE BARREL -- //
-    e.smithing(ic('netherite_barrel'), ic('diamond_barrel'), '#c:netherite_ingots').id(st('netherite_barrel'));
 });
 
 ServerEvents.tags('item', e => {

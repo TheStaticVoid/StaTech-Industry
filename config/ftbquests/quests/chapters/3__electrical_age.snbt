@@ -3042,7 +3042,7 @@
 		{
 			dependencies: ["7A4F605834E3AE7B"]
 			dependency_requirement: "one_completed"
-			description: ["&aMethane&r can be converted into &dAcetylene&r, which is important for making &2Vinyl Chloride&r, which itself gets made into &bPolyvinyl Chloride&r. It doesn't have any more recipes other than turning into &dAcetylene&r, so might as well just do that."]
+			description: ["&aMethane&r can be converted into &dAcetylene&r, which is important for making &2Vinyl Chloride&r, which itself gets made into &bPolyvinyl Chloride&r. It is primarily used in the production of &2Polytetrafluoroethylene&r and making &dAcetylene&r."]
 			id: "7B3CFD8EC0032C17"
 			rewards: [
 				{
@@ -7609,7 +7609,7 @@
 					type: "item"
 				}
 				{
-					count: 10L
+					count: 11L
 					id: "6A28593836CEC663"
 					item: "modern_industrialization:steel_machine_casing"
 					type: "item"
@@ -7676,18 +7676,6 @@
 						}
 					}
 					title: "Any Fluid Input Hatch"
-					type: "item"
-				}
-				{
-					id: "1DFCA7F3A6BD9A30"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:fluid_output_hatch"
-						}
-					}
-					title: "Any Fluid Output Hatch"
 					type: "item"
 				}
 				{

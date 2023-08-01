@@ -12,6 +12,7 @@ ServerEvents.recipes(e => {
     let cd = (id) => `culturaldelights:${id}`;
     let ed = (id) => `expandeddelight:${id}`;
     let fd = (id) => `farmersdelight:${id}`;
+    let pr = (id) => `promenade:${id}`;
     
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let photoChamber = (id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
@@ -278,7 +279,41 @@ ServerEvents.recipes(e => {
             ]
         ],
 
+        // Brown Mushrooom
+        [
+            mc('brown_mushroom'),
+            [
+                { amount: 1, item: mc('brown_mushroom') },
+                { amount: 1, item: mc('brown_mushroom'), probability: 0.5 }
+            ]
+        ],
 
+        // Red Mushroom
+        [
+            mc('red_mushroom'),
+            [
+                { amount: 1, item: mc('red_mushroom') },
+                { amount: 1, item: mc('red_mushroom'), probability: 0.5 }
+            ]
+        ],
+
+        // Nightshade Berries
+        [
+            bg('nightshade_berries'),
+            [
+                { amount: 1, item: bg('nightshade_berries') },
+                { amount: 1, item: bg('nightshade_berries'), probability: 0.5 }
+            ]
+        ],
+
+        // Blueberries
+        [
+            pr('blueberries'),
+            [
+                { amount: 1, item: pr('blueberries') },
+                { amount: 1, item: pr('blueberries'), probability: 0.5 }
+            ]
+        ]
     ];
     // Create recipes for each of the items in the list
     recipeInOut.forEach(recipe => {
@@ -305,6 +340,19 @@ ServerEvents.recipes(e => {
         [ 
             { amount: 1, item: mc('nether_wart') },
             { amount: 1, item: mc('nether_wart'), probability: 0.5 }
+        ],
+        [ { amount: 100, fluid: mc('lava') } ]
+    );
+
+    // -- CRIMSON BERRIES -- //
+    photoChamber(
+        st('crimson_berries'),
+        8,
+        600,
+        [ { amount: 1, item: bg('crimson_berries') } ],
+        [
+            { amount: 1, item: bg('crimson_berries') },
+            { amount: 1, item: bg('crimson_berries'), probability: 0.5 }
         ],
         [ { amount: 100, fluid: mc('lava') } ]
     );

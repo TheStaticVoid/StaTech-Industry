@@ -44,6 +44,186 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- ALLOY SMELTER -- //
+    assembler(
+        st('alloy_smelter'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('analog_circuit') },
+            { amount: 2, item: mi('inductor') },
+            { amount: 2, item: mi('cupronickel_wire_magnetic') },
+            { amount: 2, item: mi('tin_cable') },
+            { amount: 1, item: mi('electric_furnace') }
+        ],
+        [ { amount: 1, item: mi('alloy_smelter') } ]
+    );
+
+    // -- LASER ENGRAVER -- //
+    assembler(
+        st('laser_engraver'),
+        8,
+        200,
+        [
+            { amount: 3, item: mi('cupronickel_wire_magnetic') },
+            { amount: 2, item: mi('electronic_circuit') },
+            { amount: 2, item: mi('large_motor') },
+            { amount: 1, tag: 'c:glass_blocks' },
+            { amount: 1, item: mi('basic_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('laser_engraver') } ]
+    );
+
+    // -- PHOTOSYNTHETIC CHAMBER -- //
+    assembler(
+        st('photosynthetic_chamber'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('inductor') },
+            { amount: 2, item: mi('motor') },
+            { amount: 1, item: mi('pump') },
+            { amount: 1, item: mi('steel_tank') },
+            { amount: 1, item: mc('dirt') },
+            { amount: 1, tag: 'c:glass_blocks' },
+            { amount: 1, item: mi('basic_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('photosynthetic_chamber') } ]
+    );
+
+    // -- ROCKET PART ASSEMBLER -- //
+    assembler(
+        st('rocket_part_assembler'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('robot_arm') },
+            { amount: 2, tag: 'c:stainless_steel_gears' },
+            { amount: 2, item: mi('aluminum_cable') },
+            { amount: 1, item: mi('advanced_motor') },
+            { amount: 1, item: mi('advanced_pump') },
+            { amount: 1, item: mi('turbo_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('rocket_part_assembler') } ]
+    );
+
+    // -- CORE MINING DRILL -- //
+    assembler(
+        st('core_drill'),
+        8,
+        200,
+        [
+            { amount: 3, item: mi('clean_stainless_steel_machine_casing') },
+            { amount: 2, item: mi('large_advanced_motor') },
+            { amount: 2, item: mi('quantum_circuit') },
+            { amount: 1, item: mi('desh_drill_head') },
+            { amount: 1, item: mi('quantum_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('core_drill') } ]
+    );
+
+    // -- INDUSTRIAL GREENHOUSE -- //
+    assembler(
+        st('industrial_greenhouse'),
+        8,
+        200,
+        [ 
+            { amount: 2, item: mi('motor') },
+            { amount: 2, item: mi('analog_circuit') },
+            { amount: 2, item: mi('pump') },
+            { amount: 2, item: mi('tin_rotor') },
+            { amount: 1, item: mi('basic_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('greenhouse') } ]
+    );
+
+    // -- LARGE CHEMICAL REACTOR -- //
+    assembler(
+        st('large_chemical_reactor'),
+        8,
+        200,
+        [ 
+            { amount: 4, item: mi('polytetrafluoroethylene_plate') },
+            { amount: 2, item: mi('advanced_motor') },
+            { amount: 1, item: mi('digital_circuit') },
+            { amount: 1, item: mi('chemical_reactor') },
+            { amount: 1, item: mi('turbo_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('large_chemical_reactor') } ]
+    );
+
+    // -- MEGA SMELTER -- //
+    assembler(
+        st('mega_smelter'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('cupronickel_wire_magnetic') },
+            { amount: 2, item: mi('electronic_circuit') },
+            { amount: 2, item: mi('electric_furnace') },
+            { amount: 1, item: mi('advanced_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('mega_smelter') } ]
+    );
+
+    // -- MOB CRUSHER -- //
+    assembler(
+        st('mob_crusher'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('invar_rotary_blade') },
+            { amount: 2, item: mi('piston') },
+            { amount: 2, item: mi('large_pump') },
+            { amount: 2, item: mi('electronic_circuit') },
+            { amount: 1, item: mi('steel_machine_casing') }
+        ],
+        [ { amount: 1, item: mi('mob_crusher') } ]
+    );
+
+    // -- PYROLYSE OVEN -- //
+    assembler(
+        st('pyrolyse_oven'),
+        8,
+        200,
+        [
+            { amount: 4, item: tr('cupronickel_heating_coil') },
+            { amount: 3, item: mi('inductor') },
+            { amount: 1, item: mi('analog_circuit') },
+            { amount: 1, item: mi('basic_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('pyrolyse_oven') } ]
+    );
+
+    // -- QUASI QUANTUM SINGULARITY FORGE -- //
+    assembler(
+        st('singularity_forge'),
+        8,
+        200,
+        [
+            { amount: 6, item: mi('plasma_handling_iridium_machine_casing') },
+            { amount: 2, item: mi('quantum_circuit') },
+            { amount: 1, item: mi('quantum_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('singularity_forge') } ]
+    );
+
+    // -- SPACE PROBE LAUNCHER -- //
+    assembler(
+        st('space_probe_launcher'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('calorite_gear') },
+            { amount: 2, item: mi('large_advanced_motor') },
+            { amount: 2, item: mi('calorite_machine_casing_pipe') },
+            { amount: 1, item: mi('processing_unit') },
+            { amount: 1, item: mi('calorite_machine_casing') },
+            { amount: 1, item: mi('highly_advanced_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('space_probe_launcher') } ]
+    );
+
     // -- UNCOOKED PIZZA -- //
     assembler(
         st('uncooked_pizza'),
@@ -79,7 +259,7 @@ ServerEvents.recipes(e => {
         8,
         200,
         [ 
-            { amount: 3, tag: 'c:stainless_steel_ingots' },
+            { amount: 3, tag: 'c:aluminum_plates' },
             { amount: 2, tag: 'c:gold_ingots' },
             { amount: 1, item: ae('calculation_processor') }
         ],

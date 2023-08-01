@@ -10,6 +10,7 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let ae = (id) => `ae2:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let ap = (id) => `architects_palette:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let laserEngraver = (id, eu, duration, item_inputs, item_outputs) => {
@@ -151,7 +152,7 @@ ServerEvents.recipes(e => {
         [ kj('zombie_piglin_model'),    mc('gold_nugget') ],
         [ kj('magma_cube_model'),       mc('magma_cream') ],
         [ kj('blaze_model'),            mc('blaze_rod') ],
-        [ kj('wither_skeleton_model'),  mc('wither_skeleton_skull') ],
+        [ kj('wither_skeleton_model'),  ap('withered_bone') ],
         [ kj('guardian_model'),         mc('prismarine_shard') ],
         [ kj('witch_model'),            mc('glass_bottle') ]
     ];
