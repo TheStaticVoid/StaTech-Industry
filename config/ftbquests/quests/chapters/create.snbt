@@ -1331,7 +1331,7 @@
 		}
 		{
 			dependencies: ["2B1123DC479F00CB"]
-			description: ["The &bAdjustable Chain Gearshift&r works simularly to a regular &aChain Drive&r, however when powered by a &credstone signal&r, the rest of the &bAdjustable Chain Gearshifts&r in the row will have their speed doubled."]
+			description: ["The &bAdjustable Chain Gearshift&r works similarly to a regular &aChain Drive&r, however when powered by a &credstone signal&r, the rest of the &bAdjustable Chain Gearshifts&r in the row will have their speed doubled."]
 			id: "0845ACA6AC5C6133"
 			rewards: [
 				{
@@ -1654,7 +1654,7 @@
 			description: [
 				"&bTrain Tracks&r are what your &dtrains&r will move along. "
 				""
-				"Right-clicking the ground to start the placment process. If you have multiple &bTracks&r in your inventory you can choose how you would like them to be placed."
+				"Right-clicking the ground to start the placement process. If you have multiple &bTracks&r in your inventory you can choose how you would like them to be placed."
 				""
 				"These are somewhat complex to interact with, make sure to check the &ePonder&r!"
 			]
@@ -2190,7 +2190,7 @@
 		}
 		{
 			dependencies: ["51356454DB10752D"]
-			description: ["The &bRope Pulley&r can be used to move blocks up and down. Attached blocks are convereted into &dcontraptions&r when moved. The direction and speed of the provided &arotational force&r will affect the direction and speed of the &bRope Pulley&r."]
+			description: ["The &bRope Pulley&r can be used to move blocks up and down. Attached blocks are converted into &dcontraptions&r when moved. The direction and speed of the provided &arotational force&r will affect the direction and speed of the &bRope Pulley&r."]
 			id: "0BFECFA644A74207"
 			rewards: [
 				{
@@ -2769,7 +2769,7 @@
 		{
 			dependencies: ["38F45285404934C9"]
 			description: [
-				"The following quests are for items added by the &eCC:C Bridge&r mod. This mod aims to add compatability between &6Create&r and &2ComputerCraft&r. I'm only adding the basic information here, however you should check out the wiki for the mod for all the methods they have for the blocks."
+				"The following quests are for items added by the &eCC:C Bridge&r mod. This mod aims to add compatibility between &6Create&r and &2ComputerCraft&r. I'm only adding the basic information here, however you should check out the wiki for the mod for all the methods they have for the blocks."
 				""
 				"Other than these blocks, the mod also adds more functionality for &6Create&r &3Train Stations&r to be handled with &2ComputerCraft&r."
 			]
@@ -2793,7 +2793,7 @@
 			description: [
 				"The &eSource Block&r acts a source of data for the &6Display Link&r. It transfers the stats of the display (i.e. the size) to the &eSource Block&r, which in turn transfers the cached content to the display. Data is only exchanged when the &3cyan lamp&r in the &6Display Link&r flashes!"
 				""
-				"The &aTarget Block&r pretents to be a display (aka target) for the &6Display Link&r. This way, the content of &eSource Blocks&r can be collected and then processed as desired. The principle here is the same as with the &eSource Block&r: Data is always transmitted when the lamp flashes. Both that of &eSource Blocks&r and the stats of the emulated screen, the &aTarget Block&r provides."
+				"The &aTarget Block&r pretends to be a display (aka target) for the &6Display Link&r. This way, the content of &eSource Blocks&r can be collected and then processed as desired. The principle here is the same as with the &eSource Block&r: Data is always transmitted when the lamp flashes. Both that of &eSource Blocks&r and the stats of the emulated screen, the &aTarget Block&r provides."
 				""
 				"An emulated screen has &224 lines&r, which could be divided into different sources. However, a source can also use several ones. To define on which line a &eSource Blocks&r starts, this can be configured in the related &6Display Link&r."
 			]
