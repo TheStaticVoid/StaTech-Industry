@@ -2777,7 +2777,14 @@
 				{
 					count: 8L
 					id: "18C2FE983DC6D996"
-					item: "spectrum:item_bowl_basalt"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:spectrum_item_bowls"
+						}
+					}
+					title: "8x Either Item Bowl"
 					type: "item"
 				}
 				{
@@ -5609,10 +5616,10 @@
 					count: 2L
 					id: "284F7FA0D9A22093"
 					item: {
-						Count: 1b
+						Count: 2b
 						id: "itemfilters:tag"
 						tag: {
-							value: "kubejs:gemstone_chiseled_blocks"
+							value: "kubejs:chiseled_polished_blocks"
 						}
 					}
 					title: "2x Chiseled Blocks"
