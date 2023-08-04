@@ -1,12 +1,10 @@
-# StaTech Industry 1.1.4hotfix Changelog:
+# StaTech Industry 1.1.5 Changelog:
 
-Hotfix to fix crash when using CC, fix the KubeJS error on world join, and unhide the food quest
+## Mods added:
+- [Megane](https://www.curseforge.com/minecraft/mc-mods/megane) - Needed for Kibe storage containers to not throw an error with WTHIT
 
-## Mods removed:
-- [UnlimitedPeripheralWorks](https://www.curseforge.com/minecraft/mc-mods/unlimitedperipheralworks) - Crash with latest version of MI
-- [Peripheralium](https://www.curseforge.com/minecraft/mc-mods/peripheralium) - Crash with latest version of MI
-- [Megane](https://www.curseforge.com/minecraft/mc-mods/megane) - No longer recommended by MI
+## Mods updated:
+- [Spice of Fabric](https://www.curseforge.com/minecraft/mc-mods/spice-of-fabric) - 1.6.0-beta -> 1.6.1
 
 ## Other changes:
-- Fix KubeJS script error
-- Unhide food chapter
+- Updated to Fabric 0.14.22
