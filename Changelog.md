@@ -20,6 +20,7 @@
 - [Add Marble macerator recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/344)
 - [Added quest description for obtaining Budding Certus](https://github.com/TheStaticVoid/StaTech-Industry/issues/336)
 - [Added quest description for Brass Casing](https://github.com/TheStaticVoid/StaTech-Industry/issues/338)
+- [Fix Calorite Machine Casing requirement for Core Mining Drill quest](https://github.com/TheStaticVoid/StaTech-Industry/issues/339)
 
 ## First-time Contributors
 - redcatone
