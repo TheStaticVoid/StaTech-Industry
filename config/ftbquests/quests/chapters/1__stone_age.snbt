@@ -1497,6 +1497,71 @@
 			x: 5.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["045C683BF6E216CB"]
+			description: ["Unfortunately, &eTinker's Construct&r is not in the pack, however it's &aCrafting Station&r has been added by &6Enhanced Workbenches&r mod. It doesn't appear that it currently can pull from adjacent inventories, &2but it might in the future&r! For now it just retains your items after you close it (&obut wait the default one does that too&r?)"]
+			id: "6E39043C6369B7A3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3642F92BA779396E"
+					table_id: 1292583397374875582L
+					type: "random"
+				}
+				{
+					id: "485E2CFC5B1842AB"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "58E0F1080D7C97C3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "3FE697DDD2E7FD26"
+				item: "enhancedworkbenches:crafting_station"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["63276C644789068A"]
+			description: [
+				"Now here's something more worth your time from the &eEnhanced Workbenches&r mod. The &aProject Table&r is based off of &6RedPower 2&r's implementation and features &2two rows of storage&r within the block itself. This is going to be very helpful as you move into &eModern Industrialization&r and have to deal with &dmicrocrafting&r."
+				""
+				"&oI've also asked the dev kindly to add the recipe history feature from things like the Forestry Workbench, so maybe someday!&r"
+			]
+			id: "0B97D95040E7FAE1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3B746C05BC063761"
+					table_id: 1292583397374875582L
+					type: "random"
+				}
+				{
+					id: "7C977CAEDF08955F"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "6F0CF297081F29D0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "An early game best friend"
+			tasks: [{
+				id: "2D4CE128E28953B4"
+				item: "enhancedworkbenches:project_table"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
 	]
 	subtitle: ["Gotta start somewhere"]
 	title: "&b1 - Getting Started"
