@@ -413,7 +413,7 @@ ServerEvents.recipes(e => {
             [ { amount: 1, item: sp(`${color}_leaves`) } ],
             [
                 { amount: 2, item: sp(`${color}_pigment`) },
-                { amount: 1, item: sp(`${color}_sapling`) }
+                { amount: 1, item: sp(`${color}_sapling`), probability: 0.1 }
             ]
         );
     });

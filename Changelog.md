@@ -15,6 +15,7 @@
 - Updated to Fabric 0.14.22
 - [Quest Typos fix by redcatone](https://github.com/TheStaticVoid/StaTech-Industry/pull/342)
 - [Fix invar block recipe in alloy smelter](https://github.com/TheStaticVoid/StaTech-Industry/issues/337)
+- [Fix spectrum saplings not being a chance output](https://github.com/TheStaticVoid/StaTech-Industry/issues/340)
 
 ## First-time Contributors
 - redcatone
