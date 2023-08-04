@@ -191,7 +191,7 @@ ServerEvents.recipes(e => {
             { amount: 3, tag: 'c:iron_blocks' },
             { amount: 1, tag: 'c:nickel_blocks' },
         ],
-        [ { amount: 4, item: mi('nickel_block') } ]
+        [ { amount: 4, item: mi('invar_block') } ]
     );
 
     // -- REFINED IRON BLOCK -- //
