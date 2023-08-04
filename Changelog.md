@@ -8,7 +8,9 @@
 - [Superflat World No Slimes](https://www.curseforge.com/minecraft/mc-mods/superflat-world-no-slimes) - Utility mod that removes slime spawning from super flat worlds. They're so annoying.
 
 ## Mods updated:
+- [Complementary Reimagined](https://modrinth.com/shader/complementary-reimagined) - 2.2.1 -> 2.3
 - [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options-fabric) - 15.0.1 -> 15.0.2
+- [Guard Villagers](https://www.curseforge.com/minecraft/mc-mods/guard-villagers-fabric) 1.1.2 -> 2.0.5
 - [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.1-build.337 -> 1902.6.1-build.352
 - [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.4.1 -> 5.5.1
 - [Spice of Fabric](https://www.curseforge.com/minecraft/mc-mods/spice-of-fabric) - 1.6.0-beta -> 1.6.1
@@ -28,6 +30,7 @@
 - [Update Liquid Crystal quest to detail you need to step in the fluid](https://github.com/TheStaticVoid/StaTech-Industry/issues/343)
 - [Fix quest requirements for Spectrum Enchanter and Cinderhearth](https://github.com/TheStaticVoid/StaTech-Industry/issues/345)
 - [Blacklist IPN from Kibe Cooler and Tom's Level Emitter](https://github.com/TheStaticVoid/StaTech-Industry/issues/349)
+- [Disabled Megane's modules for Create and MI](https://github.com/TheStaticVoid/StaTech-Industry/commit/f277e1f8e44bd875f64f83f5a7404d3a3154ce77)
 
 ## First-time Contributors
 - redcatone
