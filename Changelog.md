@@ -21,6 +21,7 @@
 - [Added quest description for obtaining Budding Certus](https://github.com/TheStaticVoid/StaTech-Industry/issues/336)
 - [Added quest description for Brass Casing](https://github.com/TheStaticVoid/StaTech-Industry/issues/338)
 - [Fix Calorite Machine Casing requirement for Core Mining Drill quest](https://github.com/TheStaticVoid/StaTech-Industry/issues/339)
+- [Update Liquid Crystal quest to detail you need to step in the fluid](https://github.com/TheStaticVoid/StaTech-Industry/issues/343)
 
 ## First-time Contributors
 - redcatone
