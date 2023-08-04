@@ -303,7 +303,7 @@
 		{
 			dependencies: ["0C73D9DE1468EBB1"]
 			description: [
-				"Each hatch has a &ctemperature&r and stores heat which can be dissipated in several ways. The heat will naturally move to an adjacent hatch or to the outside if the hatch is on the edge (the heat is then lost). The speed of this process is equal to the hatches content's heat transfer coefficient (shown in REI) times the &ctemperature&r difference. The heat can also be extracted in a fluid hatch by producing &7steam&r. A &ctemperature&r above an item's maxmimum &ctemperature&r will destroy it."
+				"Each hatch has a &ctemperature&r and stores heat which can be dissipated in several ways. The heat will naturally move to an adjacent hatch or to the outside if the hatch is on the edge (the heat is then lost). The speed of this process is equal to the hatches content's heat transfer coefficient (shown in REI) times the &ctemperature&r difference. The heat can also be extracted in a fluid hatch by producing &7steam&r. A &ctemperature&r above an item's maximum &ctemperature&r will destroy it."
 				""
 				"The core &eNuclear Reactor&r elements are &aneutrons&r. Those are produced by the nuclear fuel. There are two types of &aneutrons&r, fast and thermal: the fast carry energy while the thermal do not. Neutrons move in a straight line until they encounter an element or exit the reactor (for fast &aneutrons&r, their energy is then lost). The flow of &aneutrons&r is shown in the reactor GUI."
 				""
@@ -313,7 +313,7 @@
 				""
 				"When a neutron, either fast or thermal, is absorbed in nuclear fuel, more &aneutrons&r are generated. Those are always fast &aneutrons&r and have random direction. Their generation is accompanied by the direct release of energy in the form of additional heat in the hatch."
 				""
-				"Above a certain threshold, the number of generated &aneutrons&r will decrease with the &ctemperature&r until reaching zero. This process wastes some energy, but guarantees the stability of the reactor. The number of generated &aneutrons&r (and effective efficiency), the direct energy and the &ctemperature&r thresheold are in REI."
+				"Above a certain threshold, the number of generated &aneutrons&r will decrease with the &ctemperature&r until reaching zero. This process wastes some energy, but guarantees the stability of the reactor. The number of generated &aneutrons&r (and effective efficiency), the direct energy and the &ctemperature&r threshold are in REI."
 				""
 				"Each nuclear component has maximum number of absorptions. When reached, the item is either destroyed or transformed into a depleted version. This is particularly useful for nuclear fuel because some part of the U238 is transformed into Plutonium in the depleted version, meaning some of it can be transformed back into fuel."
 				""
@@ -1173,7 +1173,7 @@
 			description: [
 				"The &bInterdimensional Storage Unit&r can be used to transfer energy between &ctwo points instantaneously&r."
 				""
-				"With an internal buffer of &d1G E (1 billion)&r, this could be a worthwile replacement to your energy storage."
+				"With an internal buffer of &d1G E (1 billion)&r, this could be a worthwhile replacement to your energy storage."
 				""
 				"The energy storage is similar to an &dender chest&r and is locked to the player who placed it. &c(I think?)&r"
 			]
