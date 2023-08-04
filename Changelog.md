@@ -18,6 +18,7 @@
 - [Fix spectrum saplings not being a chance output](https://github.com/TheStaticVoid/StaTech-Industry/issues/340)
 - [Add TrollDespair to Emojiful](https://github.com/TheStaticVoid/StaTech-Industry/issues/347)
 - [Add Marble macerator recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/344)
+- [Added quest description for obtaining Budding Certus](https://github.com/TheStaticVoid/StaTech-Industry/issues/336)
 
 ## First-time Contributors
 - redcatone

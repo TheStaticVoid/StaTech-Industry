@@ -6522,7 +6522,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["2BB495CFC3E6D6C8"]
+			dependencies: ["28495F29C110024D"]
 			description: [
 				"If you've yet to find an &eAE2 meteorite&r, then you might want to make this compass. "
 				""
@@ -6530,6 +6530,7 @@
 				""
 				"You can use MI cables directly on the Charger to plug it into your power network."
 			]
+			hide_dependency_lines: true
 			icon: "ae2:meteorite_compass"
 			id: "4589D54579864AE8"
 			rewards: [
@@ -6605,7 +6606,11 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["28495F29C110024D"]
+			dependencies: [
+				"28495F29C110024D"
+				"4589D54579864AE8"
+			]
+			dependency_requirement: "one_completed"
 			description: ["By combining printed &bAE2 circuits&r and &7silicon&r in an &eAssembler&r you will create the basic components for all of &eAE2&r. The &cMolten Redstone&r required for the recipe can be acquired using a &3Blast Furnace&r."]
 			id: "2BB495CFC3E6D6C8"
 			rewards: [
@@ -7842,6 +7847,19 @@
 		}
 		{
 			dependencies: ["01D12D790B2DE5F5"]
+			description: [
+				"For returning players who are not familiar with the new &eAE2&r changes, you no longer will be growing &aCertus&r by tossing it in water."
+				""
+				"Instead, &2Budding Certus&r blocks can be found within the same &dmeteors&r you find the &3Inscriber Presses&r. It's a very fragile block, with even &dSilk Touch&r degrading it when broken. There are &6two ways&r to move the blocks back to your base &awithout&r breaking them."
+				""
+				"1 - &dSpatial Storage&r. This is a complex system that is not available until later in &eAE2&r. Using &dSpatial Storage&r to move the &2Budding Certus&r does not degrade it's status."
+				""
+				"2 - &eCreate&r &6Minecart Contraptions&r. You can connect the &2Budding Certus&r to a &6Minecart Contraption&r using &aSuperglue&r to move it back to your base. "
+				""
+				"Note: The only &2Budding Certus&r that never degrades is the &dFlawless&r variant. Anything below that &cwill degrade&r as it produces &aCertus Crystals&r."
+				""
+				"If you're not feeling like dealing with moving them, you can produce &2Budding Certus&r manually. You can mix &bCharged Certus&r with &3Certus Blocks&r in a &eMixer&r or in-world in water to produce &2Budding blocks&r. Doing this additional times will produce a &bhigher quality&r &2Budding Certus&r. This method &ccannot&r produce &dFlawless&r variants, so anything made this way will eventually degrade and need to be replaced."
+			]
 			icon: "ae2:flawless_budding_quartz"
 			id: "32F963B0273A07E2"
 			rewards: [{
