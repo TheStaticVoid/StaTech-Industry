@@ -30,6 +30,15 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- MARBLE DUST -- //
+    macerator(
+        st('marble_dust'),
+        4,
+        200,
+        [ { amount: 1, item: bl('marble') } ],
+        [ { amount: 2, item: tr('marble_dust') } ]
+    );
+
     // -- WHEAT DOUGH -- //
     macerator(
         st('wheat_flour'),
