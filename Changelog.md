@@ -1,5 +1,7 @@
 # StaTech Industry 1.1.5 Changelog:
 
+This is a QoL update to the pack, including some new mods to lessen some of the headaches from vanilla, reintroducing Megane to avoid errors being spammed in your chat, Redirectionor for increased memory performance, and Enhanced Workbenches which add some very useful early game crafting tables to the game. Additionally, redcatone went through and fixed my many spelling mistakes and I've fixed a couple quests that were missing description or had incorrect requirements.
+
 ## Mods added:
 - [Enhanced Workbenches](https://www.curseforge.com/minecraft/mc-mods/enhanced-workbenches) - Based developer backported to 1.19.2
 - [Low Fire](https://www.curseforge.com/minecraft/mc-mods/low-fire) - Lowers the view of fire in first person as to not block 50%+ of the screen
