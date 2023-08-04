@@ -4,6 +4,7 @@
 - [Enhanced Workbenches](https://www.curseforge.com/minecraft/mc-mods/enhanced-workbenches) - Based developer backported to 1.19.2
 - [Low Fire](https://www.curseforge.com/minecraft/mc-mods/low-fire) - Lowers the view of fire in first person as to not block 50%+ of the screen
 - [Megane](https://www.curseforge.com/minecraft/mc-mods/megane) - Needed for Kibe storage containers to not throw an error with WTHIT
+- [Redirectionor](https://www.curseforge.com/minecraft/mc-mods/redirectionor) - Reduces memory cost of the game by changing usages of enums
 - [Superflat World No Slimes](https://www.curseforge.com/minecraft/mc-mods/superflat-world-no-slimes) - Utility mod that removes slime spawning from super flat worlds. They're so annoying.
 
 ## Mods updated:
