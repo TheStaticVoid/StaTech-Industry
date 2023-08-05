@@ -37,6 +37,16 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- SPIDER EYE -- //
+    centrifuge(
+        st('spider_eye'),
+        16,
+        600,
+        null,
+        [ { amount: 1, item: mc('spider_eye') }],
+        [ { amount: 1000, fluid: mi('nylon') } ]
+    );    
+
     // -- CORE SLURRY -- //
     centrifuge(
         st('core_slurry'),

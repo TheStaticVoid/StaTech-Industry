@@ -39,6 +39,15 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- WITHERED BONE -- //
+    blastFurnace(
+        st('withered_bone'),
+        16,
+        600,
+        [ { amount: 16, item: 'minecraft:bone' } ],
+        [ { amount: 1, item: 'architects_palette:withered_bone' } ]
+    );
+
     // -- PIZZA -- //
     blastFurnace(
         st('pizza'),

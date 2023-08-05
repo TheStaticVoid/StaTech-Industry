@@ -267,6 +267,23 @@ ServerEvents.recipes(e => {
         [ { amount: 100, fluid: mi('molten_redstone') } ]
     );
 
+    // -- NETHER STAR -- //
+    assembler(
+        st('nether_star'),
+        32,
+        1200,
+        [ 
+            { amount: 3, item: mc('wither_skeleton_skull') },
+            { amount: 4, item: mc('soul_sand') },
+            { amount: 32, tag: 'c:enderium_blocks' },
+            { amount: 64, item: mc('quartz') },
+            { amount: 16, item: mi('industrial_tnt') }
+
+        ],
+        [ { amount: 1, item: mc('nether_star') } ],
+        [ { amount: 1000, fluid: 'xps:xp_fluid' } ]
+    );
+
     // -- BRONZE BOILER -- //
     assembler(
         st('bronze_boiler'),
