@@ -6,8 +6,13 @@ This is a QoL update to the pack, including some new mods to lessen some of the 
 - [Enhanced Workbenches](https://www.curseforge.com/minecraft/mc-mods/enhanced-workbenches) - Based developer backported to 1.19.2
 - [Low Fire](https://www.curseforge.com/minecraft/mc-mods/low-fire) - Lowers the view of fire in first person as to not block 50%+ of the screen
 - [Megane](https://www.curseforge.com/minecraft/mc-mods/megane) - Needed for Kibe storage containers to not throw an error with WTHIT
+- [No Recipe Book](https://www.curseforge.com/minecraft/mc-mods/norecipebook-fabric) - Removes the recipe book from showing in the crafting table and other UIs
 - [Redirectionor](https://www.curseforge.com/minecraft/mc-mods/redirectionor) - Reduces memory cost of the game by changing usages of enums
 - [Superflat World No Slimes](https://www.curseforge.com/minecraft/mc-mods/superflat-world-no-slimes) - Utility mod that removes slime spawning from super flat worlds. They're so annoying.
+- [Toast Manager](https://www.curseforge.com/minecraft/mc-mods/toast-manager) - Hides vanilla recipe book and tutorials toasts
+
+## Mods removed:
+- [I know what I'm doing](https://www.curseforge.com/minecraft/mc-mods/i-know-what-im-doing) - Replaced by Toast Manager
 
 ## Mods updated:
 - [Complementary Reimagined](https://modrinth.com/shader/complementary-reimagined) - 2.2.1 -> 2.3
@@ -21,7 +26,9 @@ This is a QoL update to the pack, including some new mods to lessen some of the 
 
 ## Other changes:
 - Updated to Fabric 0.14.22
+- REI settings should no longer reset with this update!
 - [Quest Typos fix by redcatone](https://github.com/TheStaticVoid/StaTech-Industry/pull/342)
+- [Allow for Lootr chests to be opened in claimed chunks by redcatone](https://github.com/TheStaticVoid/StaTech-Industry/pull/350)
 - [Fix invar block recipe in alloy smelter](https://github.com/TheStaticVoid/StaTech-Industry/issues/337)
 - [Fix spectrum saplings not being a chance output](https://github.com/TheStaticVoid/StaTech-Industry/issues/340)
 - [Add TrollDespair to Emojiful](https://github.com/TheStaticVoid/StaTech-Industry/issues/347)
@@ -34,6 +41,7 @@ This is a QoL update to the pack, including some new mods to lessen some of the 
 - [Blacklist IPN from Kibe Cooler and Tom's Level Emitter](https://github.com/TheStaticVoid/StaTech-Industry/issues/349)
 - [Disabled Megane's modules for Create and MI](https://github.com/TheStaticVoid/StaTech-Industry/commit/f277e1f8e44bd875f64f83f5a7404d3a3154ce77)
 - [Update Blaze Model to require lava](https://github.com/TheStaticVoid/StaTech-Industry/commit/2aec361e6f03ea4024d3fde7161fccfeb66e9db6)
+- [Update Ghast and Piglin models to also require lava](https://github.com/TheStaticVoid/StaTech-Industry/commit/e3e57d3946c2ade5c98b6cc16865e4d8bca30ec2)
 
 ## First-time Contributors
 - redcatone
