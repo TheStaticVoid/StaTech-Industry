@@ -186,7 +186,7 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: mc('blaze_rod'), probability: 0.4 },
                 { amount: 1, item: cr('experience_nugget'), probability: 0.4 }
             ],
-            mi('blood')
+            mi('lava')
         ],
         
         // Wither Skeleton model
