@@ -33,6 +33,7 @@ This is a QoL update to the pack, including some new mods to lessen some of the 
 - [Fix quest requirements for Spectrum Enchanter and Cinderhearth](https://github.com/TheStaticVoid/StaTech-Industry/issues/345)
 - [Blacklist IPN from Kibe Cooler and Tom's Level Emitter](https://github.com/TheStaticVoid/StaTech-Industry/issues/349)
 - [Disabled Megane's modules for Create and MI](https://github.com/TheStaticVoid/StaTech-Industry/commit/f277e1f8e44bd875f64f83f5a7404d3a3154ce77)
+- [Update Blaze Model to require lava](https://github.com/TheStaticVoid/StaTech-Industry/commit/2aec361e6f03ea4024d3fde7161fccfeb66e9db6)
 
 ## First-time Contributors
 - redcatone
