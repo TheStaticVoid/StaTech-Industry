@@ -72,7 +72,7 @@ ServerEvents.recipes(e => {
         16,
         200,
         [ 
-            { amount: 64, item: 'xps:soul_copper_ingot' },
+            { amount: 16, item: 'xps:soul_copper_ingot' },
             { amount: 4, item: 'xps:xp_dust' },
             { amount: 1, item: mc('spider_eye') },
         ],
