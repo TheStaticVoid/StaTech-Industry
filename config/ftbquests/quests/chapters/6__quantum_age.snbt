@@ -13,7 +13,7 @@
 				"6CD8A3092DDAC055"
 				"598DBC20FB201711"
 			]
-			description: ["The &aPlasma Turbine&f can turn &eHelium Plasma&f into EU, at the rate of &d100kEU per mB&r. Its maximum production rate is rougly &21M EU/t&r!"]
+			description: ["The &aPlasma Turbine&f can turn &eHelium Plasma&f into EU, at the rate of &d100kEU per mB&r. Its maximum production rate is roughly &21M EU/t&r!"]
 			icon: "modern_industrialization:plasma_turbine"
 			id: "18765B0B6FE4E653"
 			rewards: [
@@ -699,7 +699,7 @@
 				}
 			]
 			shape: "square"
-			subtitle: "Non-euclidian!"
+			subtitle: "Non-euclidean!"
 			tasks: [{
 				id: "238DC19F04500FAA"
 				item: "modern_industrialization:creative_barrel"
@@ -1036,6 +1036,12 @@
 					count: 40L
 					id: "2EE1A499E8E3ABDE"
 					item: "quarrymod:drill_tube"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "2DBE2FEE7EC1B878"
+					item: "modern_industrialization:calorite_machine_casing"
 					type: "item"
 				}
 				{

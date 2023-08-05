@@ -837,7 +837,7 @@
 				""
 				"&bRotational force&r is the basis of making any &eCreate&r machine work. It's split into two parts &aspeed&r and &dstress&r. &aSpeed&r is how fast the rotation is, and &dstress&r is how many machines at that &aspeed&r can be used."
 				""
-				"Additionally, &eCreate&r includes a mechanic known as &dcontraptions&r, which is any grouping of blocks that are moved with &aMechanical Bearings&r, &bCart Assemblers&r, &cRope Pulleys&r, etc. You cannot place blocks directly on &dcontraptions&r, the will need to be swapped back into their block form, however contraptions offer free rotation for blocks like &bMechanical Drills&r and &aMechanical Saws&r."
+				"Additionally, &eCreate&r includes a mechanic known as &dcontraptions&r, which is any grouping of blocks that are moved with &aMechanical Bearings&r, &bCart Assemblers&r, &cRope Pulleys&r, etc. You cannot place blocks directly on &dcontraptions&r, they will need to be swapped back into their block form, however contraptions offer free rotation for blocks like &bMechanical Drills&r and &aMechanical Saws&r."
 			]
 			id: "2688BECD1AE321D9"
 			rewards: [
@@ -1048,6 +1048,7 @@
 		}
 		{
 			dependencies: ["029C56FD6F1A36F0"]
+			description: ["&6Brass Casings&r are the key component to more advanced &eCreate&r machines and logistics. You can create them by applying a &6Brass Ingot&r to a &aStripped Log&r in world, or by using a &2Deployer&r."]
 			id: "38F45285404934C9"
 			rewards: [
 				{
@@ -1331,7 +1332,7 @@
 		}
 		{
 			dependencies: ["2B1123DC479F00CB"]
-			description: ["The &bAdjustable Chain Gearshift&r works simularly to a regular &aChain Drive&r, however when powered by a &credstone signal&r, the rest of the &bAdjustable Chain Gearshifts&r in the row will have their speed doubled."]
+			description: ["The &bAdjustable Chain Gearshift&r works similarly to a regular &aChain Drive&r, however when powered by a &credstone signal&r, the rest of the &bAdjustable Chain Gearshifts&r in the row will have their speed doubled."]
 			id: "0845ACA6AC5C6133"
 			rewards: [
 				{
@@ -1654,7 +1655,7 @@
 			description: [
 				"&bTrain Tracks&r are what your &dtrains&r will move along. "
 				""
-				"Right-clicking the ground to start the placment process. If you have multiple &bTracks&r in your inventory you can choose how you would like them to be placed."
+				"Right-clicking the ground to start the placement process. If you have multiple &bTracks&r in your inventory you can choose how you would like them to be placed."
 				""
 				"These are somewhat complex to interact with, make sure to check the &ePonder&r!"
 			]
@@ -2190,7 +2191,7 @@
 		}
 		{
 			dependencies: ["51356454DB10752D"]
-			description: ["The &bRope Pulley&r can be used to move blocks up and down. Attached blocks are convereted into &dcontraptions&r when moved. The direction and speed of the provided &arotational force&r will affect the direction and speed of the &bRope Pulley&r."]
+			description: ["The &bRope Pulley&r can be used to move blocks up and down. Attached blocks are converted into &dcontraptions&r when moved. The direction and speed of the provided &arotational force&r will affect the direction and speed of the &bRope Pulley&r."]
 			id: "0BFECFA644A74207"
 			rewards: [
 				{
@@ -2769,7 +2770,7 @@
 		{
 			dependencies: ["38F45285404934C9"]
 			description: [
-				"The following quests are for items added by the &eCC:C Bridge&r mod. This mod aims to add compatability between &6Create&r and &2ComputerCraft&r. I'm only adding the basic information here, however you should check out the wiki for the mod for all the methods they have for the blocks."
+				"The following quests are for items added by the &eCC:C Bridge&r mod. This mod aims to add compatibility between &6Create&r and &2ComputerCraft&r. I'm only adding the basic information here, however you should check out the wiki for the mod for all the methods they have for the blocks."
 				""
 				"Other than these blocks, the mod also adds more functionality for &6Create&r &3Train Stations&r to be handled with &2ComputerCraft&r."
 			]
@@ -2793,7 +2794,7 @@
 			description: [
 				"The &eSource Block&r acts a source of data for the &6Display Link&r. It transfers the stats of the display (i.e. the size) to the &eSource Block&r, which in turn transfers the cached content to the display. Data is only exchanged when the &3cyan lamp&r in the &6Display Link&r flashes!"
 				""
-				"The &aTarget Block&r pretents to be a display (aka target) for the &6Display Link&r. This way, the content of &eSource Blocks&r can be collected and then processed as desired. The principle here is the same as with the &eSource Block&r: Data is always transmitted when the lamp flashes. Both that of &eSource Blocks&r and the stats of the emulated screen, the &aTarget Block&r provides."
+				"The &aTarget Block&r pretends to be a display (aka target) for the &6Display Link&r. This way, the content of &eSource Blocks&r can be collected and then processed as desired. The principle here is the same as with the &eSource Block&r: Data is always transmitted when the lamp flashes. Both that of &eSource Blocks&r and the stats of the emulated screen, the &aTarget Block&r provides."
 				""
 				"An emulated screen has &224 lines&r, which could be divided into different sources. However, a source can also use several ones. To define on which line a &eSource Blocks&r starts, this can be configured in the related &6Display Link&r."
 			]

@@ -154,7 +154,7 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: mc('gunpowder'), probability: 0.75 },
                 { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
             ],
-            mi('blood')
+            mc('lava')
         ],
         
         // Zombie Piglin model
@@ -166,7 +166,7 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: mc('gold_nugget'), probability: 0.5 },
                 { amount: 1, item: cr('experience_nugget'), probability: 0.2 }
             ],
-            mi('blood')
+            mc('lava')
         ],
 
         // Magma Cube model
@@ -186,7 +186,7 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: mc('blaze_rod'), probability: 0.4 },
                 { amount: 1, item: cr('experience_nugget'), probability: 0.4 }
             ],
-            mi('blood')
+            mc('lava')
         ],
         
         // Wither Skeleton model

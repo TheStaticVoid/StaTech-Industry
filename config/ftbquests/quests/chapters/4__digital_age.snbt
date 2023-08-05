@@ -1127,7 +1127,7 @@
 			description: [
 				"&cNote&r: This quest requires a &21k Crafting Storage&r specifically. This is due to a limit with item tags for some reason, hopefully this will be fixed in the future!"
 				""
-				"The &dCrafting CPU&r manages a single auto crafting task from start to finsih, and is built out of various crafting units."
+				"The &dCrafting CPU&r manages a single auto crafting task from start to finish, and is built out of various crafting units."
 				""
 				"To be a valid crafting CPU, two rules must be met:"
 				"1. The CPU must be a cuboid, completely composed of the parts listed in the quest. Air and other blocks are not valid."
@@ -2106,7 +2106,7 @@
 				""
 				"For &dCrafting Patterns&r, you specify the input crafting materials on a standard 3x3 crafting grid, and the output materials are determined automatically."
 				""
-				"For &eProcessing Patterns&r, you specify the input materials and output materials, including quantity, by placing stacks of items in the interface. If a process operation is not gauranteed to succeed (such as secondary products from some machines), it will not work correctly as a &eProcessing Pattern&r."
+				"For &eProcessing Patterns&r, you specify the input materials and output materials, including quantity, by placing stacks of items in the interface. If a process operation is not guaranteed to succeed (such as secondary products from some machines), it will not work correctly as a &eProcessing Pattern&r."
 				""
 				"Requires a channel to be operational."
 			]
@@ -2191,7 +2191,7 @@
 			description: [
 				"Lowest tier storage cell, which can contain &d1024 bytes of storage&r."
 				""
-				"1024 bytes of storagne can hold 127 stacks of a single item, or 65 stacks, while holding 63 different items."
+				"1024 bytes of storage can hold 127 stacks of a single item, or 65 stacks, while holding 63 different items."
 				""
 				"The &b1k Storage Cell&r uses 8 bytes of data to store a single type. When placed inside a drive or chest, it will add an additional 0.5 AE/t to the power cost of the connection."
 				""
@@ -2663,7 +2663,7 @@
 		{
 			dependencies: ["529FBE21C8B21DC1"]
 			description: [
-				"Hopefully with your &bStainless Steel Drill&r in your &aElectric Quarry&r you have a decent amount of Titanium Ores to process. Using &7Manganese Sufluric Solution&r you can process the raw ore into an ingot in a &eKanthal EBF&r. Just like &bStainless Steel&r, the ingot you will get will be hot and will need to be cooled down before it can be used."
+				"Hopefully with your &bStainless Steel Drill&r in your &aElectric Quarry&r you have a decent amount of Titanium Ores to process. Using &7Manganese Sulfuric Solution&r you can process the raw ore into an ingot in a &eKanthal EBF&r. Just like &bStainless Steel&r, the ingot you will get will be hot and will need to be cooled down before it can be used."
 				""
 				"Alternatively, you can accumulate a lot of &dTitanium Dust&r by centrifuging &4Bauxite Dust&r."
 			]
@@ -4191,7 +4191,7 @@
 		{
 			dependencies: ["24993B650ABE820B"]
 			description: [
-				"Before travelling to the planets closest to our &cstar&r you should definitely make the &bNetherite Space Suit&r. "
+				"Before traveling to the planets closest to our &cstar&r you should definitely make the &bNetherite Space Suit&r. "
 				""
 				"This suit has the regular benefits of allowing for breathing in places &cwithout&r an &aatmosphere&r, as well as giving &cFire Resistance&r and higher &darmor values&r for your journey to those planets."
 			]

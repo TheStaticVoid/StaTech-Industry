@@ -2103,7 +2103,7 @@
 			description: [
 				"This upgraded version of the &bSolar Panel&r. It produces &e12 EU/t&r during the day and &e0 EU/t&r during the night."
 				""
-				"In general, solar is only going to be good if you have a &blarge quantity of panels&r. Or you could use it in &dsmall scale automations&r that dont need much power, up to you."
+				"In general, solar is only going to be good if you have a &blarge quantity of panels&r. Or you could use it in &dsmall scale automations&r that don't need much power, up to you."
 			]
 			id: "51D23E71289780DE"
 			rewards: [
@@ -2367,7 +2367,7 @@
 		{
 			dependencies: ["6C3EAE1F16E1048A"]
 			description: [
-				"Now it's time to focus in on &3fluid processing&r. The first step on that list is to create the &aOil Drilling Rig&r. It's a huge multiblock that can dig for &0Crude Oil&r under the bedrock using drills. The &0Crude Oil&r will be extremely important as it can be &3processed into a lot of byproducs&r and can be used to &6produce energy&r."
+				"Now it's time to focus in on &3fluid processing&r. The first step on that list is to create the &aOil Drilling Rig&r. It's a huge multiblock that can dig for &0Crude Oil&r under the bedrock using drills. The &0Crude Oil&r will be extremely important as it can be &3processed into a lot of byproducts&r and can be used to &6produce energy&r."
 				""
 				"The structure of the multiblock is made of &2Steel Machine Casings&r, &aSteel Pipe Machine Casings&r, and &3Chains&r. Make sure to at least have an &eItem Input&r, &6Fluid Output&r, and &dEnergy Input Hatch&r. If you need help building the multiblock, you can view its &bPonder&r scene by holding 'W' on the &aOil Drilling Rig&r item in your inventory, or by holding your &ewrench&r with the controller placed."
 				""
@@ -2501,7 +2501,7 @@
 				""
 				"1. Click &eView All Recipes&r in the middle of the machine GUI, and press the &d+&r button next to the recipe you want to set."
 				""
-				"2. Open the GUI, and use &dREI&r to pullup the recipe you're wanting to lock, then press the &d+&r button."
+				"2. Open the GUI, and use &dREI&r to pull up the recipe you're wanting to lock, then press the &d+&r button."
 				""
 				"3. Drag the &afluids&r from &dREI&r into the slots you'd like to lock."
 			]
@@ -3542,7 +3542,7 @@
 		}
 		{
 			dependencies: ["06BDC86D8AF2405F"]
-			description: ["Can be produced into &aBoosted Diesel&r at a better rate than reguarly processed &bDiesel&r."]
+			description: ["Can be produced into &aBoosted Diesel&r at a better rate than regularly processed &bDiesel&r."]
 			id: "546FA5CADF43F18A"
 			rewards: [
 				{
@@ -4394,7 +4394,7 @@
 		{
 			dependencies: ["47B1F3B024E8F7CD"]
 			description: [
-				"I hope you've setup some good automation before getting here. It's definitly a feat if you haven't."
+				"I hope you've setup some good automation before getting here. It's definitely a feat if you haven't."
 				""
 				"Creating a &eDigital Circuit&r marks the beginning of the &cHV tier&r. There are a lot of new opportunities available to you now, such as the &2Distillation Tower&r and &9Turbo Machine Casings/Hulls&r."
 				""
@@ -4733,7 +4733,7 @@
 			description: [
 				"Now, by combining Manganese Dust, Chromium Dust, Iron Dust, and Nickel Dust in a Mixer you will produce your first &aStainless Steel Dust&r."
 				""
-				"&cNOTE&r: If you haven't figured out &dslot-locking&r yet, you will need to for this dust. Otherwise you will be making &bInvar&r! You can lock slots by opening the &emachine GUI&r, then finding the item in &dREI&r and using the '&2+&r' button, or you can use the button in the top left othe machine."
+				"&cNOTE&r: If you haven't figured out &dslot-locking&r yet, you will need to for this dust. Otherwise you will be making &bInvar&r! You can lock slots by opening the &emachine GUI&r, then finding the item in &dREI&r and using the '&2+&r' button, or you can use the button in the top left of the machine."
 			]
 			id: "10C6529CD6C26AEE"
 			rewards: [
@@ -6522,7 +6522,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["2BB495CFC3E6D6C8"]
+			dependencies: ["28495F29C110024D"]
 			description: [
 				"If you've yet to find an &eAE2 meteorite&r, then you might want to make this compass. "
 				""
@@ -6530,6 +6530,7 @@
 				""
 				"You can use MI cables directly on the Charger to plug it into your power network."
 			]
+			hide_dependency_lines: true
 			icon: "ae2:meteorite_compass"
 			id: "4589D54579864AE8"
 			rewards: [
@@ -6605,7 +6606,11 @@
 			y: 14.5d
 		}
 		{
-			dependencies: ["28495F29C110024D"]
+			dependencies: [
+				"28495F29C110024D"
+				"4589D54579864AE8"
+			]
+			dependency_requirement: "one_completed"
 			description: ["By combining printed &bAE2 circuits&r and &7silicon&r in an &eAssembler&r you will create the basic components for all of &eAE2&r. The &cMolten Redstone&r required for the recipe can be acquired using a &3Blast Furnace&r."]
 			id: "2BB495CFC3E6D6C8"
 			rewards: [
@@ -6897,7 +6902,7 @@
 		{
 			dependencies: ["0185C45DF71403A5"]
 			description: [
-				"The &bCovered Cable&r variant offers no gameplay benewfits over its &aFluix ME Glass Cable&r counterpart. It can however be used as an alternate aesthetic choice if you prefer the covered look."
+				"The &bCovered Cable&r variant offers no gameplay benefits over its &aFluix ME Glass Cable&r counterpart. It can however be used as an alternate aesthetic choice if you prefer the covered look."
 				""
 				"Can be colored in the same manner as &aFluix ME Glass Cable&r. &bFour Fluix ME Covered Cable&r can be crafted with Redstone and Glowstone to make &dFluix ME Smart Cable&r."
 			]
@@ -7141,11 +7146,11 @@
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
 			description: [
-				"So when channels become a nusance, you can turn to &bME P2P Tunnels&r. When configured for ME, they allow you to move channels from point to point. This allows you to move up to 64 channels per pair of &bME P2P Tunnel&r."
+				"So when channels become a nuisance, you can turn to &bME P2P Tunnels&r. When configured for ME, they allow you to move channels from point to point. This allows you to move up to 64 channels per pair of &bME P2P Tunnel&r."
 				""
 				"The &bP2P Tunnel&r can be configured to transfer other things, such as items, redstone, power, and fluids. Check &dREI&r on how to configure the P2P."
 				""
-				"&bTunnels&r are 1 input to N outputs. This means you can output as many points as you want, but only input at a single point per tunnel. Networks can support any number of tunnels, of any different t ypes, and they all function independently."
+				"&bTunnels&r are 1 input to N outputs. This means you can output as many points as you want, but only input at a single point per tunnel. Networks can support any number of tunnels, of any different types, and they all function independently."
 				""
 				"&bME Tunnels&r can be used to carry channels from one location to another, and carry up to &d64 channels&r, same as &bFluix ME Dense Covered Cable&r, while only requiring a single channel per point, making tunnels a very powerful tool to expand ME Networks, especially over distance. "
 				""
@@ -7257,7 +7262,7 @@
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
 			description: [
-				"The &bME Storage Montior&r is a simple way to see the current level of a specified item. There are several interactions to modify it."
+				"The &bME Storage Monitor&r is a simple way to see the current level of a specified item. There are several interactions to modify it."
 				"- Right-click with item: Will display the current stored amount of that item if not locked"
 				"- Right-click with empty hand: Will reset the display if not locked."
 				"- Shift+right-click with empty hand: Will toggle the lock"
@@ -7842,6 +7847,19 @@
 		}
 		{
 			dependencies: ["01D12D790B2DE5F5"]
+			description: [
+				"For returning players who are not familiar with the new &eAE2&r changes, you no longer will be growing &aCertus&r by tossing it in water."
+				""
+				"Instead, &2Budding Certus&r blocks can be found within the same &dmeteors&r you find the &3Inscriber Presses&r. It's a very fragile block, with even &dSilk Touch&r degrading it when broken. There are &6two ways&r to move the blocks back to your base &awithout&r breaking them."
+				""
+				"1 - &dSpatial Storage&r. This is a complex system that is not available until later in &eAE2&r. Using &dSpatial Storage&r to move the &2Budding Certus&r does not degrade it's status."
+				""
+				"2 - &eCreate&r &6Minecart Contraptions&r. You can connect the &2Budding Certus&r to a &6Minecart Contraption&r using &aSuperglue&r to move it back to your base. "
+				""
+				"Note: The only &2Budding Certus&r that never degrades is the &dFlawless&r variant. Anything below that &cwill degrade&r as it produces &aCertus Crystals&r."
+				""
+				"If you're not feeling like dealing with moving them, you can produce &2Budding Certus&r manually. You can mix &bCharged Certus&r with &3Certus Blocks&r in a &eMixer&r or in-world in water to produce &2Budding blocks&r. Doing this additional times will produce a &bhigher quality&r &2Budding Certus&r. This method &ccannot&r produce &dFlawless&r variants, so anything made this way will eventually degrade and need to be replaced."
+			]
 			icon: "ae2:flawless_budding_quartz"
 			id: "32F963B0273A07E2"
 			rewards: [{
@@ -8306,7 +8324,7 @@
 		}
 		{
 			dependencies: ["10C6529CD6C26AEE"]
-			description: ["&aPolytetrafluoroethylene&r, also known as &aPTFE&r or &aTeflon&r, is an advanced polymer known for nonreactivity, low friction, and good insulating properties. It is a necesary material soon as you move to create components for the &2Digital Circuit&r. The following quests will guide you through the process of making it."]
+			description: ["&aPolytetrafluoroethylene&r, also known as &aPTFE&r or &aTeflon&r, is an advanced polymer known for nonreactivity, low friction, and good insulating properties. It is a necessary material soon as you move to create components for the &2Digital Circuit&r. The following quests will guide you through the process of making it."]
 			id: "72066057C80E5E94"
 			rewards: [{
 				id: "0B68C125A3517D0D"
@@ -8396,7 +8414,7 @@
 		{
 			dependencies: ["173001AFD7DFE49B"]
 			description: [
-				"Looking for a decent &afood solution&r? Why not solidfy some &eConcrete&r and take a bite."
+				"Looking for a decent &afood solution&r? Why not solidify some &eConcrete&r and take a bite."
 				""
 				"&cDon't worry about your teeth&r."
 			]
