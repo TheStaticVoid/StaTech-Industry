@@ -1,4 +1,4 @@
-onEvent('block.tags', (event) => {
-    const blocks = [/lootr:lootr_\w+/];
-    event.get('ftbchunks:interact_whitelist').add(blocks);
+ServerEvents.tags('block', (event) => {
+    const blocks = /lootr:lootr_\w+/;
+    event.add('ftbchunks:interact_whitelist', blocks);
 });
