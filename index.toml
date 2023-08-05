@@ -405,10 +405,6 @@ file = "config/rightclickharvest.json"
 hash = "0f813c3f339bfb9b8f75d500ebc2e60c29c9e65daeca304676aea399c8ef0ce6"
 
 [[files]]
-file = "config/roughlyenoughitems/config.json5"
-hash = "8e315ec42e951367df8a6f83fce38b18cd1a105b94ac79c31bae0902e6e99848"
-
-[[files]]
 file = "config/scannable-client.toml"
 hash = "50aed1713c3609f7a3eba11a13de19750fbaaf974b7ac227f9f017887b927c08"
 
@@ -443,6 +439,10 @@ hash = "f555438e4699156785e68cb33a9b35c96f2bbe5124fea606bea5eb4de35de816"
 [[files]]
 file = "config/techreborn/world.json"
 hash = "d9379e9c8f335a2593fb6042f58110f39a053f17ce0f195e6df50d4386d2aabb"
+
+[[files]]
+file = "config/toastmanager-client.toml"
+hash = "219902457a11c3adc0e3d257808e6b9f2f5e648dd96ba5ce563ba0e0f14c05de"
 
 [[files]]
 file = "config/toolleveling/README.txt"
@@ -1805,6 +1805,10 @@ file = "kubejs/data/trinkets/slots/legs/belt.json"
 hash = "ead8f8ef25a98cd4b4dfe5c3de823dc72ae6e2e1bcbfcb2c4f4759465467ceab"
 
 [[files]]
+file = "kubejs/server_scripts/claim_interact_whitelist.js"
+hash = "4c091c4a1ae1317cc383915c4d90922b652dd8ee917aac116617d21a6e43666c"
+
+[[files]]
 file = "kubejs/server_scripts/mi_replicatorblacklist.js"
 hash = "e20020269e2dd8a947c77979a76d11de9bace8dbfd359b5ba060d81d8186c794"
 
@@ -2014,7 +2018,7 @@ hash = "b981e82f6e5d2233731df2b8d3fa8f0370840613f561a68684defafa989d07a8"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/mob_crusher.js"
-hash = "4a4befc4eaa623a801b5d125eafd75973ee6d441324f2041a8541122c3c7f205"
+hash = "1e54e6c450ee8508cd62ad59fd05fa58cb55e5d14c6d0ea792aaa12f9e56b6ad"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/packer.js"
