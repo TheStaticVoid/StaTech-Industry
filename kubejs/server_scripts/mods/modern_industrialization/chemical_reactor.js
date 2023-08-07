@@ -49,7 +49,7 @@ ServerEvents.recipes(e => {
         16,
         200,
         [ 
-            { amount: 16, item: mi('industrial_tnt') },
+            { amount: 16, item: mc('tnt') },
             { amount: 16, item: mi('salt_dust') }
         ],
         [ { amount: 1, item: mc('ghast_tear') } ],
@@ -72,11 +72,11 @@ ServerEvents.recipes(e => {
         16,
         200,
         [ 
-            { amount: 16, item: 'xps:soul_copper_ingot' },
+            { amount: 1, item: mc('slime_ball') },
             { amount: 4, item: 'xps:xp_dust' },
             { amount: 1, item: mc('spider_eye') },
         ],
-        [ { amount: 1, item: mc('ender_pearl')} ],
+        [ { amount: 1, item: mc('ender_pearl') } ],
         [ { amount: 500, fluid: 'xps:xp_fluid'} ]
     );
 
