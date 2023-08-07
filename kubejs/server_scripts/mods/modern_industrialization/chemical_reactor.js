@@ -63,7 +63,7 @@ ServerEvents.recipes(e => {
         200,
         [ { amount: 4, item: mc('leather') } ],
         [ { amount: 1, item: mc('rotten_flesh') } ],
-        [ { amount: 500, fluid: mi('wood_tar')} ]
+        [ { amount: 500, fluid: mi('hydrofluoric_acid')} ]
     );
 
     // -- ENDER PEARL -- //
