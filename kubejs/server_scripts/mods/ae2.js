@@ -442,7 +442,7 @@ ServerEvents.recipes(e => {
         'DS '
     ],
     {
-        D: '#c:diamonds',
+        D: '#c:diamond_plates',
         S: '#c:aluminum_plates',
         R: '#c:redstone_dusts',
         C: ae('calculation_processor')

@@ -282,6 +282,20 @@ ServerEvents.recipes(e => {
         [ { amount: 100, fluid: mi('molten_redstone') } ]
     );
 
+    // -- ADVANCED CARD -- //
+    assembler(
+        st('advanced_card'),
+        8,
+        200,
+        [ 
+            { amount: 3, tag: 'c:aluminum_plates' },
+            { amount: 2, tag: 'c:diamond_plates' },
+            { amount: 1, item: ae('calculation_processor') }
+        ],
+        [ { amount: 2, item: ae('advanced_card') } ],
+        [ { amount: 100, fluid: mi('molten_redstone') } ]
+    );
+
     // -- NETHER STAR -- //
     assembler(
         st('withered_soc'),
