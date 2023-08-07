@@ -1,6 +1,8 @@
-# StaTech Industry 1.1.5hotfix Changelog:
+# StaTech Industry 1.1.6 Changelog:
 
-Hotfix patch downgrading the Guard Villagers version due to server crashes on startup.
+## Mods added:
+- [Peripheralium](https://www.curseforge.com/minecraft/mc-mods/peripheralium) - Library for UPW
+- [UnlimitedPeripheralWorks](https://www.curseforge.com/minecraft/mc-mods/unlimitedperipheralworks) - Compatability with MI has been restored
 
-## Mods downgraded:
-- [Guard Villagers](https://www.curseforge.com/minecraft/mc-mods/guard-villagers-fabric) 2.0.5 -> 1.1.2
+## Mods updated:
+- [NoRecipeBook](https://www.curseforge.com/minecraft/mc-mods/norecipebook-fabric) - 2.2 -> 2.3
