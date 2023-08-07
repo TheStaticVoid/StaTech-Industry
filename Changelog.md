@@ -13,3 +13,4 @@
 
 ## Other changes:
 - [Fixed duplicate blueberry recipe in the photosynthetic chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/357)
+- [Adjust ore generation to never be within the bedrock layer](https://github.com/TheStaticVoid/StaTech-Industry/issues/351)

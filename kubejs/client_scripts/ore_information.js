@@ -469,7 +469,7 @@ REIEvents.information(e => {
     const DIAMOND_DEPOSIT_INFO = {
         internalId: 'Diamond Deposit',
         veinName: 'Diamond',
-        minY: '-64',
+        minY: '-59',
         maxY: '0',
         size: '25',
         dimension: 'Overworld',
@@ -492,7 +492,7 @@ REIEvents.information(e => {
     const MARS_DIAMOND_DEPOSIT_INFO = {
         internalId: 'Mars Diamond Deposit',
         veinName: 'Diamond',
-        minY: '-64',
+        minY: '-59',
         maxY: '0',
         size: 25,
         dimension: 'Mars',
@@ -510,7 +510,7 @@ REIEvents.information(e => {
     const VENUS_DIAMOND_DEPOSIT_INFO = {
         internalId: 'Venus Diamond Deposit',
         veinName: 'Diamond',
-        minY: '-64',
+        minY: '-59',
         maxY: '0',
         size: '25',
         dimension: 'Venus',
@@ -759,7 +759,7 @@ REIEvents.information(e => {
     const MERCURY_IRON_DEPOSIT_INFO = {
         internalId: 'Mercury Iron Deposit',
         veinName: 'Iron',
-        minY: '-64',
+        minY: '-59',
         maxY: '64',
         size: '120',
         dimension: 'Mercury',
@@ -793,7 +793,7 @@ REIEvents.information(e => {
     const LAPIS_DEPOSIT_INFO = {
         internalId: 'Lapis Deposit',
         veinName: 'Lapis',
-        minY: '-64',
+        minY: '-59',
         maxY: '48',
         size: '40',
         dimension: 'Overworld',
@@ -811,7 +811,7 @@ REIEvents.information(e => {
     const GLACIO_LAPIS_DEPOSIT_INFO = {
         internalId: 'Glacio Lapis Deposit',
         veinName: 'Lapis',
-        minY: '-64',
+        minY: '-59',
         maxY: '48',
         size: '40',
         dimension: 'Glacio',
@@ -865,7 +865,7 @@ REIEvents.information(e => {
     const PLATINUM_DEPOSIT_INFO = {
         internalId: 'Platinum Deposit',
         veinName: 'Platinum',
-        minY: '-64',
+        minY: '-59',
         maxY: '16',
         size: '25',
         dimension: 'Overworld',
@@ -976,7 +976,7 @@ REIEvents.information(e => {
     const REDSTONE_DEPOSIT_INFO = {
         internalId: 'Redstone Deposit',
         veinName: 'Redstone',
-        minY: '-64',
+        minY: '-59',
         maxY: '16',
         size: '60',
         dimension: 'Overworld',
@@ -1067,7 +1067,7 @@ REIEvents.information(e => {
     const TITANIUM_DEPOSIT_INFO = {
         internalId: 'Titanium Deposit',
         veinName: 'Titanium',
-        minY: '-64',
+        minY: '-59',
         maxY: '16',
         size: '20',
         dimension: 'Overworld',
