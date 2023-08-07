@@ -44,6 +44,21 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- BOSS CRUSHER -- //
+    assembler(
+        st('boss_crusher'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('invar_rotary_blade') },
+            { amount: 2, item: mi('piston') },
+            { amount: 2, item: mi('large_pump') },
+            { amount: 2, item: kj('withered_soc') },
+            { amount: 1, item: mi('chemically_inert_ptfe_casing') }
+        ],
+        [ { amount: 1, item: mi('boss_crusher') } ]
+    );
+
     // -- ALLOY SMELTER -- //
     assembler(
         st('alloy_smelter'),
@@ -265,6 +280,23 @@ ServerEvents.recipes(e => {
         ],
         [ { amount: 2, item: ae('basic_card') } ],
         [ { amount: 100, fluid: mi('molten_redstone') } ]
+    );
+
+    // -- NETHER STAR -- //
+    assembler(
+        st('withered_soc'),
+        32,
+        1200,
+        [ 
+            { amount: 3, item: mc('wither_skeleton_skull') },
+            { amount: 4, item: mc('soul_sand') },
+            { amount: 2, item: mi('arithmetic_logic_unit') },
+            { amount: 1, item: mi('digital_circuit_board') },
+            { amount: 4, item: mi('industrial_tnt') }
+
+        ],
+        [ { amount: 1, item: kj('withered_soc') } ],
+        [ { amount: 100, fluid: mi('polytetrafluoroethylene') } ]
     );
 
     // -- BRONZE BOILER -- //

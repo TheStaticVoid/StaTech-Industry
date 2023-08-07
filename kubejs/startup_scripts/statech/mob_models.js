@@ -93,4 +93,9 @@ StartupEvents.registry('item', e => {
         .displayName('Witch Model')
         .rarity('Rare')
         .tooltip('§3Designates the output in the Mob Crusher');
+
+    e.create('wither_model')
+        .displayName('Wither Model')
+        .rarity('Epic')
+        .tooltip('§3Designates the output in the Boss Crusher');
 });

@@ -39,6 +39,17 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- IMPURRE LIQUID NETHER STAR -> MOLTEN NETHER STAR -- //
+    blastFurnace(
+        st('molten_nether_star'),
+        128,
+        900,
+        null,
+        null,
+        [ { amount: 1000, fluid: mi('impure_liquid_nether_star') } ],
+        [ { amount: 1000, fluid: mi('molten_nether_star') } ]
+    );
+
     // -- WITHERED BONE -- //
     blastFurnace(
         st('withered_bone'),
@@ -138,7 +149,8 @@ ServerEvents.recipes(e => {
         512,
         1200,
         [ { amount: 1, tag: 'c:superconductor_dusts' } ],
-        [ { amount: 1, item: mi('superconductor_hot_ingot') } ]
+        [ { amount: 1, item: mi('superconductor_hot_ingot') } ],
+        [ { amount: 250, fluid: mi('molten_nether_star') } ]
     );
 
     // -- FLUORINE -- //
