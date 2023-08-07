@@ -5,4 +5,8 @@
 - [UnlimitedPeripheralWorks](https://www.curseforge.com/minecraft/mc-mods/unlimitedperipheralworks) - Compatability with MI has been restored
 
 ## Mods updated:
+- [Guard Villagers](https://www.curseforge.com/minecraft/mc-mods/guard-villagers-fabric) - 1.1.2 -> 2.0.6
+- [Lumberaxe](https://www.curseforge.com/minecraft/mc-mods/lumberaxe) - 1.0.1 -> 1.0.2
+- [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.5.1 -> 5.6.0
 - [NoRecipeBook](https://www.curseforge.com/minecraft/mc-mods/norecipebook-fabric) - 2.2 -> 2.3
+- [Redirectionor](https://www.curseforge.com/minecraft/mc-mods/redirectionor) - 3.1.0 -> 3.2.3
