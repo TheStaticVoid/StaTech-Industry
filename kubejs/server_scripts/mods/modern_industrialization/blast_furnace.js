@@ -49,19 +49,7 @@ ServerEvents.recipes(e => {
         [ { amount: 1000, fluid: mi('impure_liquid_nether_star') } ],
         [ { amount: 1000, fluid: mi('molten_nether_star') } ]
     );
-
-    // -- WITHERED BONE -- //
-    blastFurnace(
-        st('withered_bone'),
-        16,
-        600,
-        [ 
-            { amount: 16, item: 'minecraft:bone' },
-            { amount: 1, item: 'minecraft:blaze_powder' }
-        ],
-        [ { amount: 1, item: 'architects_palette:withered_bone' } ]
-    );
-
+    
     // -- PIZZA -- //
     blastFurnace(
         st('pizza'),
