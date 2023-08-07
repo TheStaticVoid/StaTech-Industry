@@ -10,3 +10,6 @@
 - [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.5.1 -> 5.6.0
 - [NoRecipeBook](https://www.curseforge.com/minecraft/mc-mods/norecipebook-fabric) - 2.2 -> 2.3
 - [Redirectionor](https://www.curseforge.com/minecraft/mc-mods/redirectionor) - 3.1.0 -> 3.2.3
+
+## Other changes:
+- [Fixed duplicate blueberry recipe in the photosynthetic chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/357)
