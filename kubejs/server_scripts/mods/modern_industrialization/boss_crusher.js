@@ -40,7 +40,7 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: kj('wither_model') } ],
         [
             { amount: 1, item: mc('ender_pearl'), probability: 0.15 },
-            { amount: 4, item: cr('experience_nugget'), probability: 0.5 }
+            { amount: 16, item: cr('experience_nugget') }
         ],
         [ { amount: 500, fluid: mi('molten_enderium') } ],
         [ { amount: 500, fluid: mi('impure_liquid_nether_star') } ]
