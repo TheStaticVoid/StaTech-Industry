@@ -205,7 +205,7 @@ ServerEvents.recipes(e => {
         16,
         400,
         [ 
-            { amount: 4, item: mc('stick') },
+            { amount: 4, item: mi('steel_rod') },
             { amount: 64, item: mc('nether_wart') }
         ],
         [ { amount: 4, item: mc('blaze_rod') } ],
