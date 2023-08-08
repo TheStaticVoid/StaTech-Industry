@@ -57,7 +57,7 @@ ServerEvents.recipes(e => {
     {
         H: mi('turbo_machine_hull'),
         C: kj('withered_soc'),
-        M: mi('large_motor'),
+        M: mi('large_pump'),
         P: mi('piston'),
         R: mi('invar_rotary_blade')
     })
