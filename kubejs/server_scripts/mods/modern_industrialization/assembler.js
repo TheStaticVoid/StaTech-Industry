@@ -59,6 +59,48 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: mi('boss_crusher') } ]
         );
         
+    // -- ENERGY FLOW CHIP -- //
+    assembler(
+        st('energy_flow_chip'),
+        8,
+        200,
+        [
+            { amount: 4, item: tr('advanced_circuit') },
+            { amount: 2, tag: 'c:tungsten_ingots' },
+            { amount: 1, tag: 'c:iridium_alloy_plates' },
+            { amount: 1, item: tr('lapotron_crystal') },
+            { amount: 1, item: tr('lapotron_crystal') }
+        ],
+        [ { amount: 4, item: tr('energy_flow_chip') } ]
+    );
+
+    // -- DATA STORAGE CHIP -- //
+    assembler(
+        st('data_storage_chip'),
+        8,
+        200,
+        [
+            { amount: 4, item: tr('advanced_circuit') },
+            { amount: 4, item: tr('data_storage_core') },
+            { amount: 1, tag: 'c:iridium_ingots' }
+        ],
+        [ { amount: 1, item: tr('data_storage_chip') } ]
+    );
+
+    // -- ADVANCED CIRCUIT -- //
+    assembler(
+        st('advanced_circuit'),
+        8,
+        200,
+        [
+            { amount: 4, tag: 'c:redstone_dusts' },
+            { amount: 2, tag: 'c:glowstone_dusts' },
+            { amount: 2, tag: 'c:lapis_lazulis' },
+            { amount: 1, item: mi('analog_circuit') }
+        ],
+        [ { amount: 1, item: tr('advanced_circuit') } ]
+    );
+
     // -- PTFE MACHINE CASING -- //
     assembler(
         st('ptfe_machine_casing'),
