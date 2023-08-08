@@ -20,6 +20,7 @@ This quickly turned into a pretty decent sized update. Thanks to @GW-Dev for the
 - [Redirectionor](https://www.curseforge.com/minecraft/mc-mods/redirectionor) - 3.1.0 -> 3.2.3
 
 ## Other changes:
+- [Added Flyte-less' ZedTech resourcepack - by @Flyte-less](https://github.com/TheStaticVoid/StaTech-Industry/pull/376)
 - [Added recipes so the pack can be played entirely in peaceful - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/359)
 - [Added Mob Crusher multiblock and Nether Star requirement changes - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/366)
 - [Added the Large Steam Furnace multiblock](https://github.com/TheStaticVoid/StaTech-Industry/issues/361)
