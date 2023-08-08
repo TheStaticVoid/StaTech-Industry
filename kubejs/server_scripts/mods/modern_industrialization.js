@@ -55,7 +55,7 @@ ServerEvents.recipes(e => {
         'MCM'
     ],
     {
-        H: mi('chemically_inert_ptfe_casing'),
+        H: mi('turbo_machine_hull'),
         C: kj('withered_soc'),
         M: mi('large_motor'),
         P: mi('piston'),

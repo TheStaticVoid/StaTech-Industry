@@ -54,7 +54,7 @@ ServerEvents.recipes(e => {
             { amount: 2, item: mi('piston') },
             { amount: 2, item: mi('large_pump') },
             { amount: 2, item: kj('withered_soc') },
-            { amount: 1, item: mi('clean_stainless_steel_machine_casing') }
+            { amount: 1, item: mi('turbo_machine_hull') }
         ],
         [ { amount: 1, item: mi('boss_crusher') } ]
         );
