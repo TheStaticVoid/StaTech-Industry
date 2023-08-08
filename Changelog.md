@@ -24,6 +24,7 @@
 - [Added assembler recipes for PTFE machine / pipe casings](https://github.com/TheStaticVoid/StaTech-Industry/issues/367)
 - [Added assembler, packing, and macerator recipes for some TechReborn items](https://github.com/TheStaticVoid/StaTech-Industry/issues/362)
 - [Add Charcoal Block packer recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/371)
+- [Use ItemFilters for quests that break with tags](https://github.com/TheStaticVoid/StaTech-Industry/issues/372)
 
 ## First-time Contributors
 @GW-Dev

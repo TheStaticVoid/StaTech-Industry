@@ -2855,11 +2855,7 @@
 		}
 		{
 			dependencies: ["5EDE88BDA0182BD7"]
-			description: [
-				"A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally. &eHold crouch to go faster&r."
-				""
-				"&cNote&r that only the &aWhite&r version of the &bGlider&r will be accepted for this quest due to &dFTB Quests&r limitations with &eKibe&r."
-			]
+			description: ["A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally. &eHold crouch to go faster&r."]
 			id: "0B735B2265B363C8"
 			rewards: [
 				{
@@ -2881,14 +2877,128 @@
 			]
 			shape: "rsquare"
 			tasks: [{
-				id: "4E6AFDE227A4FB70"
+				id: "1C5D56BBF174CFCD"
 				item: {
 					Count: 1b
-					id: "kibe:white_glider"
+					id: "itemfilters:or"
 					tag: {
-						Damage: 0
+						items: [
+							{
+								Count: 1b
+								id: "kibe:white_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:orange_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:magenta_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:light_blue_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:yellow_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:lime_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:pink_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:gray_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:light_gray_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:cyan_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:blue_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:purple_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:green_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:brown_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:red_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kibe:black_glider"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
 					}
 				}
+				title: "Any Glider"
 				type: "item"
 			}]
 			title: "Take to the Skies"
