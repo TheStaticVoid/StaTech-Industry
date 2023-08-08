@@ -294,7 +294,7 @@ ServerEvents.recipes(e => {
         600,
         [ { amount: 1, item: kj('phantom_model'), probability: 0.05 } ],
         [
-            { amount: 1, item: mc('phantom_membrane'), probability: 0.3 },
+            { amount: 1, item: mc('phantom_membrane'), probability: 0.5 },
             { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
         ],
         [ { amount: 100, fluid: mi('liquid_ender') } ]
