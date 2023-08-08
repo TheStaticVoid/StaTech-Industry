@@ -9,8 +9,6 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let cr = (id) => `create:${id}`;
-    let cd = (id) => `culturaldelights:${id}`;
-    let ap = (id) => `architects_palette:${id}`;
     let kj = (id) => `kubejs:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
@@ -33,8 +31,7 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
-    
-    // These are defined separately due to non-conformant liquid requirements
+
     // -- WITHER MODEL -- //
     boss_crusher(
         st('wither_model'),

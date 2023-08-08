@@ -9,6 +9,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let mc = (id) => `minecraft:${id}`;
     
     // -- BLAST FURNACE REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -39,12 +40,23 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- NETHER STAR -> MOLTEN NETHER STAR -- //
+    blastFurnace(
+        st('nether_star'),
+        128,
+        300,
+        [ { amount: 1, item: mc('nether_star') } ],
+        null,
+        null,
+        [ { amount: 500, fluid: mi('molten_nether_star') } ]
+    );
+
     // -- IMPURRE LIQUID NETHER STAR -> MOLTEN NETHER STAR -- //
     blastFurnace(
         st('molten_nether_star'),
         128,
         900,
-        null,
+        [ { amount: 1, item: mi('platinum_dust'), probability: 0.05 } ],
         null,
         [ { amount: 1000, fluid: mi('impure_liquid_nether_star') } ],
         [ { amount: 1000, fluid: mi('molten_nether_star') } ]
@@ -138,7 +150,7 @@ ServerEvents.recipes(e => {
         1200,
         [ { amount: 1, tag: 'c:superconductor_dusts' } ],
         [ { amount: 1, item: mi('superconductor_hot_ingot') } ],
-        [ { amount: 250, fluid: mi('molten_nether_star') } ]
+        [ { amount: 50, fluid: mi('molten_nether_star') } ]
     );
 
     // -- FLUORINE -- //

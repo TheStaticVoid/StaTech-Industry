@@ -20,14 +20,14 @@ MIMachineEvents.registerMachines(e => {
     let ad = (id) => `ad_astra:${id}`;
     let mc = (id) => `minecraft:${id}`;
 
-    const ptfeCasing = e.memberOfBlock(mi('chemically_inert_ptfe_casing'));
+    const cleanStainlessSteelMachineCasing = e.memberOfBlock(mi('clean_stainless_steel_machine_casing'));
     const tintedGlassBlock = e.memberOfBlock(mc('tinted_glass'));
     const kanthalCoil = e.memberOfBlock(mi('kanthal_coil'));
     const witherProofBlock = e.memberOfBlock(ki('wither_proof_block'));
     const glowingSteelPillar = e.memberOfBlock(ad('glowing_steel_pillar'));
     const crusherHatch = e.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input', 'fluid_output');
 
-    const bossCrusherShape = e.layeredShape('ptfe_machine_casing', [
+    const bossCrusherShape = e.layeredShape('clean_stainless_steel_machine_casing', [
         //y= 0        1        2        3        4
         [ ' ppp ', ' GGG ', ' GGG ', ' GGG ', ' ppp ' ], 
         [ 'pPPPp', 'GKWKG', 'GWgWG', 'GKWKG', 'pPPPp' ],
@@ -35,8 +35,8 @@ MIMachineEvents.registerMachines(e => {
         [ 'pPPPp', 'GKWKG', 'GWgWG', 'GKWKG', 'pPPPp' ],
         [ ' p#p ', ' GGG ', ' GGG ', ' GGG ', ' ppp ' ]
     ])
-        .key('P', ptfeCasing, e.noHatch())
-        .key('p', ptfeCasing, crusherHatch)
+        .key('P', cleanStainlessSteelMachineCasing, e.noHatch())
+        .key('p', cleanStainlessSteelMachineCasing, crusherHatch)
         .key('G', tintedGlassBlock, e.noHatch())
         .key('K', kanthalCoil, e.noHatch())
         .key('W', witherProofBlock, e.noHatch())
@@ -59,7 +59,7 @@ MIMachineEvents.registerMachines(e => {
         fluidOutputs => fluidOutputs.addSlot(120, 71),
 
         /* Model configuration */
-        'ptfe_machine_casing',            // casing of the controller
+        'clean_stainless_steel_machine_casing',            // casing of the controller
         'mob_crusher',      // overlay folder
         true,               // front overlay
         false,              // top overlay
