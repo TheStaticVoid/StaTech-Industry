@@ -4408,6 +4408,93 @@
 			x: 8.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["738FE28369D3A550"]
+			description: [
+				"Tired on waiting for those &evanilla furnaces&r to take forever to smelt down your &6ores&r and &2dusts&r? The &aLarge Steam Furnace&r is the solution. This multiblock is capable of &dsmelting 8 items at once for the cost of one&r. This makes it &3extremely efficient&r and an very handy tool if you need to mass smelt stuff and don't want to dive into &eCreate&r!"
+				""
+				"If you're having trouble forming the multiblock, hold W on the &aLarge Steam Furnace&r in your inventory to view the &bPonder&r scene for the multiblock, additionally you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
+			]
+			icon: "modern_industrialization:large_steam_furnace"
+			id: "5D1AAACAA152ED68"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "78B07A7105B0A0A2"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "44FDD3B8D5E8129D"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "005E17B9F18DD83E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			subtitle: "Extremely efficient!"
+			tasks: [
+				{
+					id: "174128988A67FA53"
+					item: "modern_industrialization:large_steam_furnace"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0CD2261261EDDE86"
+					item: "minecraft:bricks"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "69903E2186396A78"
+					item: "minecraft:infested_stone_bricks"
+					type: "item"
+				}
+				{
+					id: "37566A8F9EB0C95D"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+					title: "Any Item Input Hatch"
+					type: "item"
+				}
+				{
+					id: "41BE3FCD8217EF7E"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					title: "Any Item Output Hatch"
+					type: "item"
+				}
+				{
+					id: "6368CF3D50CC4EF8"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 9.5d
+		}
 	]
 	subtitle: ["The Basis of Industry"]
 	title: "&22 - Steam Age"
