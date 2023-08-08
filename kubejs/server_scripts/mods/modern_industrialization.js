@@ -50,6 +50,19 @@ ServerEvents.recipes(e => {
     // -- CONVERSION RECIPE FOR EXISTING WORLDS -- //
     e.shapeless(mi('laser_engraver'), [ ae('inscriber') ]).id(st('laser_engraver_conversion'));
 
+    // -- LARGE STEAM FURNACE -- //
+    e.shaped(mi('large_steam_furnace'), [
+        'BBB',
+        'BFB',
+        'BCB'
+    ],
+    {
+        B: mc('bricks'),
+        F: mc('furnace'),
+        C: mi('coke')
+    })
+    .id(st('large_steam_furnace'));
+
     // -- CHEMICALLY INERT PTFE CASING -- //
     e.shaped(mi('chemically_inert_ptfe_casing'), [
         'PPP',
