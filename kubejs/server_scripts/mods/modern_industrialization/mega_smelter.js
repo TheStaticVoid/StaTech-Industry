@@ -1,10 +1,4 @@
-// -----------------------------------------
-// CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
-// -----------------------------------------
-
 ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/mega_smelter/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
@@ -79,9 +73,8 @@ ServerEvents.recipes(e => {
     // The duration (in ticks) of every recipe
     let duration = 200;
     // The amount at a time to process
-    let amount = 32;
+    let amount = 16;
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let megaSmelt = (id, input, output) => {
         e.custom({
             type: mi('mega_smelter'),
@@ -93,6 +86,7 @@ ServerEvents.recipes(e => {
         .id(id);
     }
     
+
     e.forEachRecipe( {type: mc('smelting'), not: { mod: 'catwalksinc' }}, recipe => {
         const recipeJson = JSON.parse(recipe.json.toString());
         for (let key in recipeJson.ingredient) {
@@ -116,20 +110,20 @@ ServerEvents.recipes(e => {
     // -- GALENA ORE -- //
     megaSmelt(
         st('galena_ingot_from_galena_ore'),
-        [ { amount: amount, tag: 'c:galena_ores' } ],
-        [ { amount: amount, item: mi('lead_ingot') } ]
+        [ { amount: 16, tag: 'c:galena_ores' } ],
+        [ { amount: 16, item: mi('lead_ingot') } ]
     );
 
     // -- GALENA DUST -- //
     megaSmelt(
         st('galena_ingot_from_galena_dust'),
-        [ { amount: amount, item: tr('galena_dust') } ],
-        [ { amount: amount, item: mi('lead_ingot') } ]
+        [ { amount: 16, item: tr('galena_dust') } ],
+        [ { amount: 16, item: mi('lead_ingot') } ]
     );
 
     megaSmelt(
         st('tin_ingot_from_raw_tin'),
-        [ { amount: amount, tag: 'c:raw_zinc_ores' } ],
-        [ { amount: amount, item: tr('zinc_ingot') } ]
+        [ { amount: 16, tag: 'c:raw_zinc_ores' } ],
+        [ { amount: 16, item: tr('zinc_ingot') } ]
     );
 });

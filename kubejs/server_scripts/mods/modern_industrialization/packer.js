@@ -39,19 +39,6 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
-    // -- LARGE STEAM FURNACE -- //
-    packer(
-        st('large_steam_furnace'),
-        4,
-        200,
-        [
-            { amount: 1, item: mc('furnace') },
-            { amount: 7, item: mc('bricks') },
-            { amount: 1, item: mi('coke') }
-        ],
-        [ { amount: 1, item: mi('large_steam_furnace') } ]
-    );
-
     // -- PYRITE DUST -- //
     packer(
         st('pyrite_dust'),
