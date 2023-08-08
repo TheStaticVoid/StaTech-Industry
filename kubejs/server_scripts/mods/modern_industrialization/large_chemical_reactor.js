@@ -199,6 +199,56 @@ ServerEvents.recipes(e => {
 
     // There's technically a really convoluted way to get all recipes, even ones added,
     // but I couldn't be bothered to figure it out for 6.1
+    // -- BLAZE ROD -- //
+    lcr(
+        st('blaze_rod'),
+        16,
+        400,
+        [ 
+            { amount: 4, item: mi('steel_rod') },
+            { amount: 64, item: mc('nether_wart') }
+        ],
+        [ { amount: 4, item: mc('blaze_rod') } ],
+        [ { amount: 4000, fluid: mc('lava')} ]
+    );
+
+    // -- GHAST TEAR -- //
+    lcr(
+        st('ghast_tear'),
+        16,
+        400,
+        [ 
+            { amount: 64, item: mc('tnt') },
+            { amount: 64, item: mi('salt_dust') }
+        ],
+        [ { amount: 4, item: mc('ghast_tear') } ],
+        [ { amount: 4000, fluid: mc('lava')} ]
+    );
+
+    // -- ROTTEN FLESH -- //
+    lcr(
+        st('rotten_flesh'),
+        16,
+        400,
+        [ { amount: 16, item: mc('leather') } ],
+        [ { amount: 4, item: mc('rotten_flesh') } ],
+        [ { amount: 2000, fluid: mi('hydrofluoric_acid')} ]
+    );
+
+    // -- ENDER PEARL -- //
+    lcr(
+        st('ender_pearl'),
+        16,
+        400,
+        [ 
+            { amount: 4, item: mc('slime_ball') },
+            { amount: 16, item: 'xps:xp_dust' },
+            { amount: 4, item: mc('spider_eye') },
+        ],
+        [ { amount: 4, item: mc('ender_pearl')} ],
+        [ { amount: 2000, fluid: 'xps:xp_fluid'} ]
+    );
+    
     // -- ROSE QUARTZ -- //
     lcr(
         st('rose_quartz'),

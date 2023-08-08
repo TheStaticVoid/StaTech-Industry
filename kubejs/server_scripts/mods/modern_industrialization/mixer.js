@@ -40,6 +40,17 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- LIQUID EXPERIENCE -- //
+    mixer(
+        st('xp_fluid'),
+        8,
+        200,
+        [ { amount: 3, item: cr('experience_nugget') } ],
+        null,
+        null,
+        [ { amount: 100, fluid: xp('xp_fluid') } ]
+    );
+
     // -- STATECH ENERGY -- //
     mixer(
         st('statech_energy'),
