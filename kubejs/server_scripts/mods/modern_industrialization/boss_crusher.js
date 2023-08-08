@@ -35,7 +35,7 @@ ServerEvents.recipes(e => {
     // -- WITHER MODEL -- //
     boss_crusher(
         st('wither_model'),
-        8,
+        128,
         600,
         [ { amount: 1, item: kj('wither_model') } ],
         [
