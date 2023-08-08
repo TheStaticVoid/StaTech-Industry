@@ -11,6 +11,7 @@ ServerEvents.recipes(e => {
     let ad = (id) => `ad_astra:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let ae = (id) => `ae2:${id}`;
+    let bl = (id) => `blockus:${id}`;
 
     // -- PACKER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
@@ -38,6 +39,18 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- CHARCOAL BLOCK -- //
+    packer(
+        st('charcoal_block'),
+        2,
+        200,
+        [ 
+            { amount: 9, item: mc('charcoal') },
+            { amount: 1, item: mi('packer_block_template'), probability: 0.0 }
+        ],
+        [ { amount: 1, item: bl('charcoal_block') } ]
+    );
 
     // -- LARGE STEAM FURNACE -- //
     packer(
