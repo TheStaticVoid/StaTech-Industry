@@ -12,6 +12,8 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let ae = (id) => `ae2:${id}`;
     let bl = (id) => `blockus:${id}`;
+    let pd = (id) => `pineapple_delight:${id}`;
+    let kj = (id) => `kubejs:${id}`;
 
     // -- PACKER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
@@ -39,6 +41,30 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- PINEAPPLE PIZZA SLICE -- //
+    packer(
+        st('pineapple_pizza_slice'),
+        4,
+        200,
+        [ 
+            { amount: 1, item: pd('pineapple_side') },
+            { amount: 1, item: kj('pizza_slice') }
+        ],
+        [ { amount: 1, item: kj('pineapple_pizza_slice') } ]
+    );
+
+    // -- CONCRETE PINEAPPLE PIZZA SLICE -- //
+    packer(
+        st('concrete_pineapple_pizza_slice'),
+        4,
+        200,
+        [
+            { amount: 1, item: pd('pineapple_side') },
+            { amount: 1, item: kj('concrete_pizza_slice') }
+        ],
+        [ { amount: 1, item: kj('concrete_pineapple_pizza_slice') } ]
+    );
 
     // -- CHARCOAL BLOCK -- //
     packer(

@@ -1,5 +1,7 @@
 # StaTech Industry 1.1.6 Changelog:
 
+This quickly turned into a pretty decent sized update. Thanks to @GW-Dev for the new Boss Crusher multiblock and Nether Star progression changes and @Flyte-less for helping in merging their amazing ZedTech resourcepack into the main pack. 
+
 ## New Multiblocks
 ### Boss Crusher
 ### Large Steam Furnace
@@ -7,6 +9,7 @@
 
 ## Mods added:
 - [Peripheralium](https://www.curseforge.com/minecraft/mc-mods/peripheralium) - Library for UPW
+- [Pineapple Delight](https://www.curseforge.com/minecraft/mc-mods/pineapple-delight) - For the pizza
 - [UnlimitedPeripheralWorks](https://www.curseforge.com/minecraft/mc-mods/unlimitedperipheralworks) - Compatability with MI has been restored
 
 ## Mods updated:
@@ -29,6 +32,8 @@
 - [Use ItemFilters for quests that break with tags](https://github.com/TheStaticVoid/StaTech-Industry/issues/372)
 - [Blacklist IPN from Formation Plane](https://github.com/TheStaticVoid/StaTech-Industry/issues/373)
 - [Fix Ad Astra Giselle Addon quests failing to complete](https://github.com/TheStaticVoid/StaTech-Industry/issues/368)
+- [Added Pineapple Pizza Slice and Concrete Pineapple Pizza Slice](https://github.com/TheStaticVoid/StaTech-Industry/issues/354)
+- [Added a Missing Texture Cookie](https://github.com/TheStaticVoid/StaTech-Industry/issues/377)
 
 ## First-time Contributors
 @GW-Dev

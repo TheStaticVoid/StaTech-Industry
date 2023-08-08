@@ -222,7 +222,7 @@ hash = "851226d5d7632c8f85cde7dd8ad70985bffb3307f6757f1ffb9163d309d5df38"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2__the_steam_age.snbt"
-hash = "d2975ae3ff248bac8e7c3e059d93b472d58f912bae0355f5b675d5eafe3df260"
+hash = "c5dd758223abb167c260722bf08b9d72c3bb9122433955e246049bcd157143d3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3__electrical_age.snbt"
@@ -230,7 +230,7 @@ hash = "ef1283daa3c8c95e6cb775e824380641089420026d91d5cc9be0a823bca1e037"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4__digital_age.snbt"
-hash = "d2433b8cb6a48d48d3408daf4ef2bb10867ec4feaae1f82c4b03836eeec07901"
+hash = "2991fa62503752bbce8920255cd9e95c70fb7f49ce9cab1f97719ead70acd443"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/5__nuclear_age.snbt"
@@ -250,7 +250,7 @@ hash = "9e8fae0abd1e2b6799fad719a87b30d0fbaa30ea8ccb17ad6b3882471f0c676e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/food.snbt"
-hash = "7cde26ca0c41a4a9f8613266aef2e3e0ba233f152f1f21662b42f4b4ac44e7f5"
+hash = "3350850e2c165148bfc1bd419a57e6de6f52616aa3b9f756a9eb1e029f4fde85"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/twilight_forest.snbt"
@@ -362,7 +362,7 @@ hash = "ca413dea02cce69c69dccdc525fb0ec013236876eff2d142772c68db3d772d3a"
 
 [[files]]
 file = "config/inventoryprofilesnext/integrationHints/player-defined.json"
-hash = "f31a1bdb52778426bc04d5a364e308b7786df1bfee7ca2420676413ebbe32a39"
+hash = "f879140cabe29c812cd17de903399d8febddad9ab40a97b7a79e15fab32ec4b3"
 
 [[files]]
 file = "config/inventoryprofilesnext/integrationHints/supplimenteries.json"
@@ -647,6 +647,10 @@ hash = "fc21619f176d68c991c6249e92668aa5d42658536611801eb1e3dcc1c052e117"
 [[files]]
 file = "kubejs/assets/kubejs/ponder/large_steam_furnace.nbt"
 hash = "96d069085d4f42064ca2028a453913d169d0f8ef151fd23fe19c92777aca2f50"
+
+[[files]]
+file = "kubejs/assets/kubejs/ponder/large_steam_macerator.nbt"
+hash = "88d3a84d0ffe17d383da3e182b54ec04d1f9f222df022a588e2e50bec6fb7f18"
 
 [[files]]
 file = "kubejs/assets/kubejs/ponder/large_steam_turbine.nbt"
@@ -977,6 +981,10 @@ file = "kubejs/assets/modern_industrialization/blockstates/large_steam_furnace.j
 hash = "7c96cc846337599c8bd1326349adbdf3a98d05b19aac80156a14eec465da1727"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/blockstates/large_steam_macerator.json"
+hash = "7bba360b0e7b2a409d8c05b58f132ecf05e1476d8d1fa8e100365b451ec81bf6"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/laser_engraver.json"
 hash = "5054611e2724badf41e0001001c0a8e6f28404289246f85cc609a497ec5dd060"
 
@@ -1010,7 +1018,7 @@ hash = "b9146a3824c5d9fbe75c421ddccc4538253ab0ace287fd208bcc7e210fa70b3a"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/lang/en_us.json"
-hash = "c5aea0a97c252e29fb61e4acee0595173cddd21ed51c8deff3765df2d808599a"
+hash = "403777567a3e0a395a5772134d32c04bd39006f9e8f781a4eaf0815af9db65f6"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/machine/alloy_smelter.json"
@@ -1027,6 +1035,10 @@ hash = "ffc5d4451c106d9b1103d056a376a060d527e329cbc05dbbb96500ae4699d1aa"
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/machine/large_steam_furnace.json"
 hash = "76b73aa61ff6e8e716fbd07bb6fb719830eb7387d73c073523a84e119969150c"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/models/machine/large_steam_macerator.json"
+hash = "3e7a3468c80dee075d50521977268fea958c8bf43ee89d3fd6af37f7a018514a"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/machine/laser_engraver.json"
@@ -1123,6 +1135,14 @@ hash = "410976a469d788436a662c0bae6d4276a46723a917d198b52ea0444d5924e629"
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/large_steam_furnace/overlay_front_active.png"
 hash = "d23806d3f7b4464bb20d9f084ac6eace721b4a5c1f56f3d8ba007d6a3f2f3aa9"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/large_steam_macerator/overlay_front.png"
+hash = "518ed284142838bb58ff0d16bbb556d3c138647d82d967f7e6736cd2d590254c"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/large_steam_macerator/overlay_front_active.png"
+hash = "7b38fac3eaa6631ead315086183c0108d59333c7d350adb801ea29a3afcac838"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/laser_engraver/overlay_front.png"
@@ -1222,7 +1242,7 @@ hash = "ddf38bd134c1eacba63812f203a0604f315fcd5bd06f027ac9244de284d6d431"
 
 [[files]]
 file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
-hash = "01d31b51f947ba99d65ec52cc53bb3096892b2284c519abaf7803ba449f2c134"
+hash = "7c40b68579edf40c4aea61a6cffbe2d4fb16e64da32ae4e09e7b56b93a687306"
 
 [[files]]
 file = "kubejs/assets/statech/textures/item/bronze_pump.png"
@@ -1333,6 +1353,10 @@ file = "kubejs/client_scripts/ponder/modern_industrialization/large_steam_furnac
 hash = "fc6c3bbc35c8401ce02d0dd0c445818d05950fabdf83bdcef225ab0525374ba5"
 
 [[files]]
+file = "kubejs/client_scripts/ponder/modern_industrialization/large_steam_macerator.js"
+hash = "a924257b4da14eac56eb15e58b618bd5dbb548294cb1d4e27915bd85ca0a0b5c"
+
+[[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/large_steam_turbine.js"
 hash = "bd1e68abc4c0cc732a89854cebaf006099127b6a6be007bec40ed122179b8892"
 
@@ -1386,7 +1410,7 @@ hash = "632c91eced8ba157d056d43da269fb36e39ac7b70d1f861c007cba76b8595458"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/tag.js"
-hash = "027b5278ffe39a4e2d66a279ed0f0cd0912fb8ea5cdd5cf1048a5624485a0ddb"
+hash = "3d342a6b52a3428f517bb87e3e359f9c7e6617302a1b1f203f6ff3ad4308787f"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/vacuum_freezer.js"
@@ -1438,7 +1462,7 @@ hash = "09b2c94f07a42ec317f7fb3af96937531d03b6cab27b7f9fca3ed7e81a6a3ff4"
 
 [[files]]
 file = "kubejs/config/common.properties"
-hash = "848d5d6bd674945793e4703e039045cc7c56570f9722d1181c5a175f43f7eb7a"
+hash = "bdb6992e51c4f1387ea8aac4c3a829ebfbd74a00ec260ee3416fc18369c9a077"
 
 [[files]]
 file = "kubejs/config/probejs.json"
@@ -2038,11 +2062,15 @@ hash = "bd89013980956ea04a751fbb7122b3d8b5246a749737478a9c024eeeb77696e2"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/large_chemical_reactor.js"
-hash = "862b24c23fa68cec5c4e496efa796c55f73b0625b15ffc853db1229dd486ef9d"
+hash = "2892f74ece8b0910a9dc0b163b93501966664998b6db2bde2509ad068f65c67a"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/large_steam_furnace.js"
 hash = "86f22e3fc6dd533855314d37b092842f2e9cc970f2df8444c4e9fae4806d6ec0"
+
+[[files]]
+file = "kubejs/server_scripts/mods/modern_industrialization/large_steam_macerator.js"
+hash = "5c7514c4a50f25ae4023b1dc1fe490fd10229981b2fc39ba4ba53cffbfced44f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/laser_engraver.js"
@@ -2050,7 +2078,7 @@ hash = "b488b0497d45b1dd2185df0784dc5de93e8075f8f0f713416a67095436470d55"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/macerator.js"
-hash = "928f95399dbf964ab1f1f32fa9522aaffffbca6fa340a5f1abde46c130a4faa6"
+hash = "21399987619a84e7edbd290cc852be1e1ed98645862b24bfcec96ad316e51208"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/mega_smelter.js"
@@ -2066,7 +2094,7 @@ hash = "1e54e6c450ee8508cd62ad59fd05fa58cb55e5d14c6d0ea792aaa12f9e56b6ad"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/packer.js"
-hash = "5da4628638735c7d7bb9b25e9cf8f8e3e948a2a8e97e2fa20fa56ae467d3a494"
+hash = "4b0f08669392e1670ec675ef3011ab0d4ee486e4ce391583943506728679e0b4"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/photosynthetic_chamber.js"
@@ -2251,6 +2279,10 @@ hash = "712b34b3ab24ddaed8555e1c189313874458ae4840c3d66cfdce0ab50c57195f"
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/multiblocks/large_steam_furnace.js"
 hash = "f1a97fa8b8201ae6b01982a35fb0554bc5b9bda0bea93ae97b6d9e1d9c67d8b8"
+
+[[files]]
+file = "kubejs/startup_scripts/modern_industrialization/multiblocks/large_steam_macerator.js"
+hash = "22f3d138dd8ca99253eaf71e66e6b6140d10c622d4227acc0c71872588519f70"
 
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/multiblocks/mega_smelter.js"
@@ -3202,6 +3234,11 @@ metafile = true
 [[files]]
 file = "mods/peripheralium.pw.toml"
 hash = "8ad45685a5ed590198027155a94b838e418467793ce4a688e7bb0ea77d7497dd"
+metafile = true
+
+[[files]]
+file = "mods/pineapple-delight.pw.toml"
+hash = "58f82228f181e19c2f6fc31ffeeed58f9e34b201589e1c6b691dfd9f415c42c5"
 metafile = true
 
 [[files]]
