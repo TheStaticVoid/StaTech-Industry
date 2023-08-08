@@ -42,6 +42,18 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- LARGE STEAM MACERATOR -- //
+    packer(
+        st('large_steam_macerator'),
+        4,
+        200,
+        [
+            { amount: 8, tag: 'c:bronze_plates' },
+            { amount: 1, item: mi('steel_macerator') }
+        ],
+        [ { amount: 1, item: mi('large_steam_macerator') } ]
+    );
+
     // -- PINEAPPLE PIZZA SLICE -- //
     packer(
         st('pineapple_pizza_slice'),

@@ -47,6 +47,21 @@ ServerEvents.recipes(e => {
         mi('electric_age/component/craft/op_amp_asbl')
     ];
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
+    
+    // -- CONVERSION RECIPE FOR EXISTING WORLDS -- //
+    e.shapeless(mi('laser_engraver'), [ ae('inscriber') ]).id(st('laser_engraver_conversion'));
+
+    // -- LARGE STEAM MACERATOR -- // 
+    e.shaped(mi('large_steam_macerator'), [
+        'BBB',
+        'BMB',
+        'BBB'
+    ],
+    {
+        B: '#c:bronze_plates',
+        M: mi('steel_macerator')
+    })
+    .id(st('large_steam_macerator'));
 
     // -- BOSS CRUSHER -- // 
     e.shaped(mi('boss_crusher'), [
@@ -62,9 +77,6 @@ ServerEvents.recipes(e => {
         R: mi('invar_rotary_blade')
     })
     .id(st('boss_crusher'));
-    
-    // -- CONVERSION RECIPE FOR EXISTING WORLDS -- //
-    e.shapeless(mi('laser_engraver'), [ ae('inscriber') ]).id(st('laser_engraver_conversion'));
 
     // -- LARGE STEAM FURNACE -- //
     e.shaped(mi('large_steam_furnace'), [
