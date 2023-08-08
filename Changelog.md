@@ -3,6 +3,7 @@
 ## New Multiblocks
 ### Boss Crusher
 ### Large Steam Furnace
+### Large Steam Macerator
 
 ## Mods added:
 - [Peripheralium](https://www.curseforge.com/minecraft/mc-mods/peripheralium) - Library for UPW
@@ -19,6 +20,7 @@
 - [Added recipes so the pack can be played entirely in peaceful - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/359)
 - [Added Mob Crusher multiblock and Nether Star requirement changes - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/366)
 - [Added the Large Steam Furnace multiblock](https://github.com/TheStaticVoid/StaTech-Industry/issues/361)
+- [Added the Large Steam Macerator multiblock](https://github.com/TheStaticVoid/StaTech-Industry/issues/361)
 - [Fixed duplicate blueberry recipe in the photosynthetic chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/357)
 - [Adjust ore generation to never be within the bedrock layer](https://github.com/TheStaticVoid/StaTech-Industry/issues/351)
 - [Added assembler recipes for PTFE machine / pipe casings](https://github.com/TheStaticVoid/StaTech-Industry/issues/367)

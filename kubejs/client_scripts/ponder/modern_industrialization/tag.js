@@ -33,6 +33,8 @@ Ponder.tags((event) => {
         'modern_industrialization:singularity_forge',
         'modern_industrialization:greenhouse',
         'modern_industrialization:mob_crusher',
-        'modern_industrialization:large_chemical_reactor'
+        'modern_industrialization:large_chemical_reactor',
+        'modern_industrialization:large_steam_furnace',
+        'modern_industrialization:large_steam_macerator'
     ]);
 });

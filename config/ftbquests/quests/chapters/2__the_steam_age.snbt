@@ -1167,7 +1167,7 @@
 				type: "item"
 			}]
 			title: "Steel Upgrades"
-			x: 16.5d
+			x: 17.0d
 			y: 16.5d
 		}
 		{
@@ -1202,7 +1202,7 @@
 				item: "modern_industrialization:trash_can"
 				type: "item"
 			}]
-			x: 16.5d
+			x: 17.0d
 			y: 15.5d
 		}
 		{
@@ -1233,7 +1233,7 @@
 				item: "modern_industrialization:steel_unpacker"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 18.0d
 			y: 15.5d
 		}
 		{
@@ -1264,7 +1264,7 @@
 				item: "modern_industrialization:steel_packer"
 				type: "item"
 			}]
-			x: 18.5d
+			x: 19.0d
 			y: 15.5d
 		}
 		{
@@ -1303,7 +1303,7 @@
 				}
 			]
 			title: "Packer Templates"
-			x: 18.5d
+			x: 19.0d
 			y: 16.5d
 		}
 		{
@@ -2368,7 +2368,7 @@
 				item: "modern_industrialization:steel_tank"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 16.0d
 			y: 15.5d
 		}
 		{
@@ -2399,7 +2399,7 @@
 				item: "modern_industrialization:steel_barrel"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 16.0d
 			y: 16.5d
 		}
 		{
@@ -2508,7 +2508,7 @@
 					type: "item"
 				}
 			]
-			x: 17.5d
+			x: 18.0d
 			y: 16.5d
 		}
 		{
@@ -2609,7 +2609,7 @@
 				item: "modern_industrialization:steel_boiler"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 15.0d
 			y: 15.5d
 		}
 		{
@@ -2695,7 +2695,7 @@
 				}
 			]
 			title: "Travel Anchors"
-			x: 14.5d
+			x: 15.0d
 			y: 16.5d
 		}
 		{
@@ -2813,7 +2813,7 @@
 				item: "modern_industrialization:steel_water_pump"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.0d
 			y: 16.5d
 		}
 		{
@@ -2850,7 +2850,7 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.0d
 			y: 15.5d
 		}
 		{
@@ -3469,7 +3469,7 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.0d
 			y: 16.5d
 		}
 		{
@@ -4390,7 +4390,7 @@
 				item: "dankstorage:dank_1"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.0d
 			y: 15.5d
 		}
 		{
@@ -4604,6 +4604,99 @@
 			]
 			x: 5.0d
 			y: 9.5d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			description: [
+				"The &aLarge Steam Macerator&r can &eprocess eight items&r in the&6 time it would take to process two&r, while only costing &d4 EU/t&r &o(4mb Steam/t)&r!"
+				""
+				"If you're having trouble forming the multiblock, hold W on the &aLarge Steam Macerator&r in your inventory to view the &bPonder&r scene for the multiblock, additionally you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
+			]
+			icon: "modern_industrialization:large_steam_macerator"
+			id: "73ECF1ACA6D93D56"
+			rewards: [
+				{
+					id: "2BD7CB0B01295024"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "72CAEB2173C5311F"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "5EE3AF693EDFF01F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			subtitle: "Even more efficient!"
+			tasks: [
+				{
+					id: "1396D187AB0DD95C"
+					item: "modern_industrialization:large_steam_macerator"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0D29F48A1BB1C850"
+					item: "modern_industrialization:bronze_plated_bricks"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6B6047A65EFD0FB3"
+					item: "modern_industrialization:bronze_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "7A2D664E2E7B6534"
+					item: "minecraft:bricks"
+					type: "item"
+				}
+				{
+					id: "42E6DA2AF5AD0A57"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+					title: "Any Item Input Hatch"
+					type: "item"
+				}
+				{
+					id: "3743459379994CA2"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					title: "Any Item Output Hatch"
+					type: "item"
+				}
+				{
+					id: "739D981F8D2C0406"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+			]
+			x: 11.75d
+			y: 16.0d
 		}
 	]
 	subtitle: ["The Basis of Industry"]

@@ -30,7 +30,7 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
-
+    
     // -- PYRITE DUST -- //
     macerator(
         st('pyrite_dust_from_pyrite_chunk'),
