@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "tag": "c:zinc_gears"
+    },
+    "R": {
+      "item": "modern_industrialization:zinc_rod"
+    },
+    "b": {
+      "item": "modern_industrialization:zinc_bolt"
+    },
+    "c": {
+      "item": "modern_industrialization:zinc_curved_plate"
+    },
+    "p": {
+      "tag": "c:zinc_plates"
+    }
+  },
+  "pattern": [
+    "bcp",
+    "GRc",
+    "bGb"
+  ],
+  "result": {
+    "count": 1,
+    "item": "modern_industrialization:zinc_drill_head"
+  }
+}
