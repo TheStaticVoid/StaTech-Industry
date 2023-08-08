@@ -56,7 +56,7 @@ ServerEvents.recipes(e => {
         st('molten_nether_star'),
         128,
         900,
-        [ { amount: 1, item: mi('platinum_dust') } ],
+        [ { amount: 1, item: mi('platinum_tiny_dust') } ],
         null,
         [ { amount: 1000, fluid: mi('impure_liquid_nether_star') } ],
         [ { amount: 1000, fluid: mi('molten_nether_star') } ]
