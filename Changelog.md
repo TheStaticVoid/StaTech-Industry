@@ -12,8 +12,12 @@
 - [Redirectionor](https://www.curseforge.com/minecraft/mc-mods/redirectionor) - 3.1.0 -> 3.2.3
 
 ## Other changes:
+- [Added recipes so the pack can be played entirely in peaceful - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/359)
 - [Fixed duplicate blueberry recipe in the photosynthetic chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/357)
 - [Adjust ore generation to never be within the bedrock layer](https://github.com/TheStaticVoid/StaTech-Industry/issues/351)
 - [Added assembler recipes for PTFE machine / pipe casings](https://github.com/TheStaticVoid/StaTech-Industry/issues/367)
 - [Added assembler, packing, and macerator recipes for some TechReborn items](https://github.com/TheStaticVoid/StaTech-Industry/issues/362)
 - [Added the Large Steam Furnace multiblock](https://github.com/TheStaticVoid/StaTech-Industry/issues/361)
+
+## First-time Contributors
+@GW-Dev
