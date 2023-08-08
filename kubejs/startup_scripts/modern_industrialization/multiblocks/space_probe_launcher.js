@@ -46,7 +46,7 @@ MIMachineEvents.registerMachines(e => {
         // REI Item inputs, item outputs, fluid inputs, fluid outputs
         itemInputs => itemInputs.addSlot(56, 35), 
         itemOutputs => itemOutputs.addSlots(102, 35, 4, 4),
-        fluidInpouts => {}, 
+        fluidInputs => {}, 
         fluidOutputs => {},
 
         /* Model Configuration */ 

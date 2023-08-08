@@ -11,6 +11,7 @@ ServerEvents.recipes(e => {
     let ad = (id) => `ad_astra:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let ae = (id) => `ae2:${id}`;
+    let bl = (id) => `blockus:${id}`;
 
     // -- PACKER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
@@ -38,6 +39,58 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- CHARCOAL BLOCK -- //
+    packer(
+        st('charcoal_block'),
+        2,
+        200,
+        [ 
+            { amount: 9, item: mc('charcoal') },
+            { amount: 1, item: mi('packer_block_template'), probability: 0.0 }
+        ],
+        [ { amount: 1, item: bl('charcoal_block') } ]
+    );
+
+    // -- LARGE STEAM FURNACE -- //
+    packer(
+        st('large_steam_furnace'),
+        4,
+        200,
+        [
+            { amount: 1, item: mc('furnace') },
+            { amount: 7, item: mc('bricks') },
+            { amount: 1, item: mi('coke') }
+        ],
+        [ { amount: 1, item: mi('large_steam_furnace') } ]
+    );
+
+    // -- PYRITE DUST -- //
+    packer(
+        st('pyrite_dust'),
+        8,
+        200,
+        [ { amount: 4, tag: 'c:pyrite_small_dusts' } ],
+        [ { amount: 1, item: tr('pyrite_dust') } ]
+    );
+
+    // -- CALCITE DUST -- //
+    packer(
+        st('calcite_dust'),
+        8,
+        200,
+        [ { amount: 4, tag: 'c:calcite_small_dusts' } ],
+        [ { amount: 1, item: tr('calcite_dust') } ]
+    );
+
+    // -- SODALITE DUST -- //
+    packer(
+        st('sodalite_dust'),
+        8,
+        200,
+        [ { amount: 4, tag: 'c:sodalite_small_dusts' } ],
+        [ { amount: 1, item: tr('sodalite_dust') } ]
+    );
 
     // -- IRIDIUM ALLOY INGOT -- //
     packer(

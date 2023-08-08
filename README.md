@@ -25,6 +25,7 @@ I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling
 ## Contributors
 - DeadeyeDutch - Sprite work for custom items
 - inferno - Pack logo
-- kevintok - Overhauled the Scanner module config to be more colorful and useful.
-- TacoMonkey - Marking client-side mods for packwiz
-- redcatone - Questbook spellcheck
+- @GW-Dev - Peaceful mode compat / Nether Star progression changes / Boss Crusher
+- @kevintok - Overhauled the Scanner module config to be more colorful and useful.
+- @redcatone - Questbook spellcheck
+- @TacoMonkey11 - Marking client-side mods for packwiz
