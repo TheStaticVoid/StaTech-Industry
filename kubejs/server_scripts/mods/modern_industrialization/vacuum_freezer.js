@@ -9,6 +9,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let kj = (id) => `kubejs:${id}`;
     let tr = (id) => `techreborn:${id}`;
+    let mc = (id) => `minecraft:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let vacuumFreezer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
@@ -59,5 +60,15 @@ ServerEvents.recipes(e => {
         null,
         [ { amount: 1, item: kj('concrete_bar') } ],
         [ { amount: 100, fluid: mi('concrete') } ]
+    );
+
+    // -- NETHER STAR -- //
+    vacuumFreezer(
+        st('nether_star'),
+        64,
+        100,
+        null,
+        [ { amount: 1, item: mc('nether_star') } ],
+        [ { amount: 500, fluid: mi('molten_nether_star') } ]
     );
 });

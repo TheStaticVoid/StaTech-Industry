@@ -44,6 +44,87 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- BOSS CRUSHER -- //
+    assembler(
+        st('boss_crusher'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('invar_rotary_blade') },
+            { amount: 2, item: mi('piston') },
+            { amount: 2, item: mi('large_pump') },
+            { amount: 2, item: kj('withered_soc') },
+            { amount: 1, item: mi('turbo_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('boss_crusher') } ]
+        );
+        
+    // -- ENERGY FLOW CHIP -- //
+    assembler(
+        st('energy_flow_chip'),
+        8,
+        200,
+        [
+            { amount: 4, item: tr('advanced_circuit') },
+            { amount: 2, tag: 'c:tungsten_ingots' },
+            { amount: 1, tag: 'c:iridium_alloy_plates' },
+            { amount: 1, item: tr('lapotron_crystal') },
+            { amount: 1, item: tr('lapotron_crystal') }
+        ],
+        [ { amount: 4, item: tr('energy_flow_chip') } ]
+    );
+
+    // -- DATA STORAGE CHIP -- //
+    assembler(
+        st('data_storage_chip'),
+        8,
+        200,
+        [
+            { amount: 4, item: tr('advanced_circuit') },
+            { amount: 4, item: tr('data_storage_core') },
+            { amount: 1, tag: 'c:iridium_ingots' }
+        ],
+        [ { amount: 1, item: tr('data_storage_chip') } ]
+    );
+
+    // -- ADVANCED CIRCUIT -- //
+    assembler(
+        st('advanced_circuit'),
+        8,
+        200,
+        [
+            { amount: 4, tag: 'c:redstone_dusts' },
+            { amount: 2, tag: 'c:glowstone_dusts' },
+            { amount: 2, tag: 'c:lapis_lazulis' },
+            { amount: 1, item: mi('analog_circuit') }
+        ],
+        [ { amount: 1, item: tr('advanced_circuit') } ]
+    );
+
+    // -- PTFE MACHINE CASING -- //
+    assembler(
+        st('ptfe_machine_casing'),
+        8,
+        200,
+        [
+            { amount: 8, tag: 'c:polytetrafluoroethylene_plates' },
+            { amount: 1, tag: 'c:polytetrafluoroethylene_gears' }
+        ],
+        [ { amount: 1, item: mi('chemically_inert_ptfe_casing') } ]
+    );
+
+    // -- PTFE PIPE CASING -- //
+    assembler(
+        st('ptfe_machine_casing_pipe'),
+        8,
+        200,
+        [
+            { amount: 1, item: mi('chemically_inert_ptfe_casing') },
+            { amount: 6, item: mi('polytetrafluoroethylene_curved_plate') }
+        ],
+        [ { amount: 2, item: mi('polytetrafluoroethylene_machine_casing_pipe') } ]
+    );
+    
     // -- ALLOY SMELTER -- //
     assembler(
         st('alloy_smelter'),
@@ -265,6 +346,38 @@ ServerEvents.recipes(e => {
         ],
         [ { amount: 2, item: ae('basic_card') } ],
         [ { amount: 100, fluid: mi('molten_redstone') } ]
+    );
+
+    // -- ADVANCED CARD -- //
+    assembler(
+        st('advanced_card'),
+        8,
+        200,
+        [ 
+            { amount: 3, tag: 'c:aluminum_plates' },
+            { amount: 2, tag: 'c:diamonds' },
+            { amount: 1, item: ae('calculation_processor') }
+        ],
+        [ { amount: 2, item: ae('advanced_card') } ],
+        [ { amount: 100, fluid: mi('molten_redstone') } ]
+    );
+
+    // -- WITHERED SOC -- //
+    assembler(
+        st('withered_soc'),
+        32,
+        1200,
+        [ 
+            { amount: 3, item: mc('wither_skeleton_skull') },
+            { amount: 4, item: mc('soul_sand') },
+            { amount: 2, item: mi('arithmetic_logic_unit') },
+            { amount: 4, item: mi('electronic_circuit') },
+            { amount: 1, item: mi('processing_unit_board') },
+            { amount: 4, item: mi('industrial_tnt') }
+
+        ],
+        [ { amount: 1, item: kj('withered_soc') } ],
+        [ { amount: 100, fluid: mi('polytetrafluoroethylene') } ]
     );
 
     // -- BRONZE BOILER -- //

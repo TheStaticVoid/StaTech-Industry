@@ -39,6 +39,46 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- LARGE STEAM FURNACE -- //
+    packer(
+        st('large_steam_furnace'),
+        4,
+        200,
+        [
+            { amount: 1, item: mc('furnace') },
+            { amount: 7, item: mc('bricks') },
+            { amount: 1, item: mi('coke') }
+        ],
+        [ { amount: 1, item: mi('large_steam_furnace') } ]
+    );
+
+    // -- PYRITE DUST -- //
+    packer(
+        st('pyrite_dust'),
+        8,
+        200,
+        [ { amount: 4, tag: 'c:pyrite_small_dusts' } ],
+        [ { amount: 1, item: tr('pyrite_dust') } ]
+    );
+
+    // -- CALCITE DUST -- //
+    packer(
+        st('calcite_dust'),
+        8,
+        200,
+        [ { amount: 4, tag: 'c:calcite_small_dusts' } ],
+        [ { amount: 1, item: tr('calcite_dust') } ]
+    );
+
+    // -- SODALITE DUST -- //
+    packer(
+        st('sodalite_dust'),
+        8,
+        200,
+        [ { amount: 4, tag: 'c:sodalite_small_dusts' } ],
+        [ { amount: 1, item: tr('sodalite_dust') } ]
+    );
+
     // -- IRIDIUM ALLOY INGOT -- //
     packer(
         st('iridium_alloy_ingot'),

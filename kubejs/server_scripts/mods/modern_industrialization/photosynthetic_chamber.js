@@ -319,9 +319,11 @@ ServerEvents.recipes(e => {
     recipeInOut.forEach(recipe => {
         let input = recipe[0];
         let output = recipe[1];
+        let namespace = input.split(':')[0];
+        let itemName = input.split(':')[1];
 
         photoChamber(
-            st(input.split(':')[1]),
+            st(`${namespace}_${itemName}`),
             8,
             600,
             [ { amount: 1, item: input, probability: 0.0 } ],
@@ -333,7 +335,7 @@ ServerEvents.recipes(e => {
     // These use a different fluid and are omitted from the original list
     // -- NETHER WART -- // 
     photoChamber(
-        st('nether_wart'),
+        st('minecraft_nether_wart'),
         8,
         600,
         [ { amount: 1, item: mc('nether_wart'), probability: 0.0 } ],
@@ -346,7 +348,7 @@ ServerEvents.recipes(e => {
 
     // -- CRIMSON BERRIES -- //
     photoChamber(
-        st('crimson_berries'),
+        st('byg_crimson_berries'),
         8,
         600,
         [ { amount: 1, item: bg('crimson_berries') } ],
@@ -359,7 +361,7 @@ ServerEvents.recipes(e => {
 
     // -- CHORUS FLOWER -- //
     photoChamber(
-        st('chorus_fruit'),
+        st('minecraft_chorus_fruit'),
         8,
         600,
         [ { amount: 1, item: mc('chorus_flower'), probability: 0.0 } ],

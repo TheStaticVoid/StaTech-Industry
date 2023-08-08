@@ -4,6 +4,26 @@
 // -----------------------------------------
 
 MIRegistrationEvents.registerFluids(e => {
+    // -- MOLTEN NETHER STAR -- //
+    e.register(
+        'Molten Nether Star',     // English name
+        'molten_nether_star',     // internal name
+        0xe9e9e9,       // Hex color code
+        'lava',         // Texture type
+        false,          // is a gas?
+        'medium'          // opacity
+    );
+    
+    // -- IMPURE LIQUID NETHER STAR -- //
+    e.register(
+        'Impure Liquid Nether Star',     // English name
+        'impure_liquid_nether_star',     // internal name
+        0xe6ded7,       // Hex color code
+        'lava',         // Texture type
+        false,          // is a gas?
+        'full'          // opacity
+    );
+    
     // -- LITHIUM -- //
     e.register(
         'Lithium',      // English name

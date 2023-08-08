@@ -12,6 +12,8 @@ StartupEvents.registry('item', e => {
 
     e.create('bartman').displayName('Jon Bartman');
 
+    e.create('withered_soc').displayName('Withered SoC');
+
     e.create('magic_diamond')
         .displayName('Magic Diamond')
         .rarity('Epic')
