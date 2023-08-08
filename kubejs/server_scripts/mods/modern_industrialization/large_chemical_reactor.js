@@ -45,7 +45,7 @@ ServerEvents.recipes(e => {
         let newAmount = amount * amountMultiplier;
 
         if (newAmount > itemMax) {
-            let fullStacks = Math.round(newAmount / itemMax);
+            let fullStacks = Math.floor(newAmount / itemMax);
             let leftOver = newAmount % itemMax;
             for (let i = 0; i < fullStacks; i++) {
                 newItemList.push(newItem(tag, itemMax, item));
@@ -70,7 +70,7 @@ ServerEvents.recipes(e => {
         let newAmount = amount * amountMultiplier;
 
         if (newAmount > fluidMax) {
-            let fullStacks = Math.round(newAmount / fluidMax);
+            let fullStacks = Math.floor(newAmount / fluidMax);
             let leftOver = newAmount % fluidMax;
             for (let i = 0; i < fullStacks; i++) {
                 newFluidList.push(newFluid(tag, fluidMax, fluid));
@@ -202,154 +202,154 @@ ServerEvents.recipes(e => {
     // -- BLAZE ROD -- //
     lcr(
         st('blaze_rod'),
-        16,
-        400,
+        8 * powerMultiplier,
+        200 * timeMultiplier,
         [ 
-            { amount: 4, item: mi('steel_rod') },
-            { amount: 64, item: mc('nether_wart') }
+            { amount: 1 * amountMultiplier, item: mi('steel_rod') },
+            { amount: 16 * amountMultiplier, item: mc('nether_wart') }
         ],
-        [ { amount: 4, item: mc('blaze_rod') } ],
-        [ { amount: 4000, fluid: mc('lava')} ]
+        [ { amount: 1 * amountMultiplier, item: mc('blaze_rod') } ],
+        [ { amount: 1000 * amountMultiplier, fluid: mc('lava')} ]
     );
 
     // -- GHAST TEAR -- //
     lcr(
         st('ghast_tear'),
-        16,
-        400,
+        8 * powerMultiplier,
+        200 * timeMultiplier,
         [ 
-            { amount: 64, item: mc('tnt') },
-            { amount: 64, item: mi('salt_dust') }
+            { amount: 16 * amountMultiplier, item: mc('tnt') },
+            { amount: 16 * amountMultiplier, item: mi('salt_dust') }
         ],
-        [ { amount: 4, item: mc('ghast_tear') } ],
-        [ { amount: 4000, fluid: mc('lava')} ]
+        [ { amount: 1 * amountMultiplier, item: mc('ghast_tear') } ],
+        [ { amount: 1000 * amountMultiplier, fluid: mc('lava')} ]
     );
 
     // -- ROTTEN FLESH -- //
     lcr(
         st('rotten_flesh'),
-        16,
-        400,
-        [ { amount: 16, item: mc('leather') } ],
-        [ { amount: 4, item: mc('rotten_flesh') } ],
-        [ { amount: 2000, fluid: mi('hydrofluoric_acid')} ]
+        8 * powerMultiplier,
+        200 * timeMultiplier,
+        [ { amount: 4 * amountMultiplier, item: mc('leather') } ],
+        [ { amount: 1 * amountMultiplier, item: mc('rotten_flesh') } ],
+        [ { amount: 500 * amountMultiplier, fluid: mi('hydrofluoric_acid')} ]
     );
 
     // -- ENDER PEARL -- //
     lcr(
         st('ender_pearl'),
-        16,
-        400,
+        8 * powerMultiplier,
+        200 * timeMultiplier,
         [ 
-            { amount: 4, item: mc('slime_ball') },
-            { amount: 16, item: 'xps:xp_dust' },
+            { amount: 1 * amountMultiplier, item: mc('slime_ball') },
+            { amount: 4 * amountMultiplier, item: 'xps:xp_dust' },
             { amount: 4, item: mc('spider_eye') },
         ],
-        [ { amount: 4, item: mc('ender_pearl')} ],
-        [ { amount: 2000, fluid: 'xps:xp_fluid'} ]
+        [ { amount: 1 * amountMultiplier, item: mc('ender_pearl')} ],
+        [ { amount: 500 * amountMultiplier, fluid: 'xps:xp_fluid'} ]
     );
     
     // -- ROSE QUARTZ -- //
     lcr(
         st('rose_quartz'),
-        32,
-        200,
-        [ { amount: 4, item: mc('quartz') } ],
-        [ { amount: 4, item: cr('polished_rose_quartz') } ],
-        [ { amount: 2000, fluid: mi('molten_redstone') } ]
+        16 * powerMultiplier,
+        200 * timeMultiplier,
+        [ { amount: 1 * amountMultiplier, item: mc('quartz') } ],
+        [ { amount: 1 * amountMultiplier, item: cr('polished_rose_quartz') } ],
+        [ { amount: 500 * amountMultiplier, fluid: mi('molten_redstone') } ]
     );
 
     // -- EYE OF ENDER -- //
     lcr(
         st('eye_of_ender'),
-        16,
-        600,
+        8 * powerMultiplier,
+        600 * timeMultiplier,
         [
-            { amount: 4, item: mc('ender_pearl') },
-            { amount: 4, item: mc('blaze_powder') }
+            { amount: 1 * amountMultiplier, item: mc('ender_pearl') },
+            { amount: 1 * amountMultiplier, item: mc('blaze_powder') }
         ],
-        [ { amount: 8, item: mc('ender_eye') } ]
+        [ { amount: 2 * amountMultiplier, item: mc('ender_eye') } ]
     );
 
     // -- PLASTIC BAR -- //
     lcr(
         st('plastic_bar'),
-        32,
-        300,
-        [ { amount: 4, item: mc('paper') } ],
-        [ { amount: 4, item: 'anim_guns:plastic' } ],
-        [ { amount: 2000, fluid: mi('polyethylene') } ]
+        16 * powerMultiplier,
+        300 * timeMultiplier,
+        [ { amount: 1 * amountMultiplier, item: mc('paper') } ],
+        [ { amount: 1 * amountMultiplier, item: 'anim_guns:plastic' } ],
+        [ { amount: 500 * amountMultiplier, fluid: mi('polyethylene') } ]
     );
 
     // -- SNYTHETIC REDSTONE CRYSTAL -- //
     lcr(
         st('synthetic_redstone_crystal'),
-        48,
-        400,
-        [ { amount: 4, item: mc('diamond') } ],
-        [ { amount: 4, item: 'techreborn:synthetic_redstone_crystal' } ],
-        [ { amount: 14400, fluid: mi('molten_redstone') } ]
+        24 * powerMultiplier,
+        400 * timeMultiplier,
+        [ { amount: 1 * amountMultiplier, item: mc('diamond') } ],
+        [ { amount: 1 * amountMultiplier, item: 'techreborn:synthetic_redstone_crystal' } ],
+        [ { amount: 3600 * amountMultiplier, fluid: mi('molten_redstone') } ]
     );
 
     // -- POLYTETRAFLUOROETHYLENE -- //
     lcr(
         st('polytetrafluoroethylene'),
-        40,
-        300,
+        20 * powerMultiplier,
+        300 * timeMultiplier,
         null,
         null,
         [ 
-            { amount: 1200, fluid: mi('tetrafluoroethylene') },
-            { amount: 4000, fluid: mi('oxygen') }
+            { amount: 300 * amountMultiplier, fluid: mi('tetrafluoroethylene') },
+            { amount: 1000 * amountMultiplier, fluid: mi('oxygen') }
         ],
-        [ { amount: 1600, fluid: mi('polytetrafluoroethylene') } ]
+        [ { amount: 400 * amountMultiplier, fluid: mi('polytetrafluoroethylene') } ]
     );
 
     // -- TETRAFLUOROETHYLENE -- //
     lcr(
         st('tetrafluoroethylene'),
-        48,
-        400,
+        24 * powerMultiplier,
+        400 * timeMultiplier,
         null,
         null,
         [
-            { amount: 8000, fluid: mi('hydrofluoric_acid') },
-            { amount: 4000, fluid: mi('chloroform') }
+            { amount: 2000 * amountMultiplier, fluid: mi('hydrofluoric_acid') },
+            { amount: 1000 * amountMultiplier, fluid: mi('chloroform') }
         ],
         [
-            { amount: 10000, fluid: mi('hydrochloric_acid') },
-            { amount: 2000, fluid: mi('tetrafluoroethylene') }
+            { amount: 2500 * amountMultiplier, fluid: mi('hydrochloric_acid') },
+            { amount: 500 * amountMultiplier, fluid: mi('tetrafluoroethylene') }
         ]
     );
 
     // -- CHLOROFORM -- //
     lcr(
         st('chloroform'),
-        36,
-        200, 
+        18 * powerMultiplier,
+        200 * timeMultiplier, 
         null,
         null,
         [
-            { amount: 8000, fluid: mi('chlorine') },
-            { amount: 2000, fluid: mi('methane') }
+            { amount: 2000 * amountMultiplier, fluid: mi('chlorine') },
+            { amount: 500 * amountMultiplier, fluid: mi('methane') }
         ],
         [
-            { amount: 8000, fluid: mi('hydrochloric_acid') },
-            { amount: 2000, fluid: mi('chloroform') }
+            { amount: 2000 * amountMultiplier, fluid: mi('hydrochloric_acid') },
+            { amount: 500 * amountMultiplier, fluid: mi('chloroform') }
         ]
     );
 
     // -- FLUORINE -- //
     lcr(
         st('fluorine'),
-        48,
-        300,
+        24 * powerMultiplier,
+        300 * timeMultiplier,
         null,
         null,
         [
-            { amount: 4000, fluid: mi('fluorine') },
-            { amount: 4000, fluid: mi('hydrogen') }
+            { amount: 1000 * amountMultiplier, fluid: mi('fluorine') },
+            { amount: 1000 * amountMultiplier, fluid: mi('hydrogen') }
         ],
-        [ { amount: 8000, fluid: mi('hydrofluoric_acid') } ]
+        [ { amount: 2000 * amountMultiplier, fluid: mi('hydrofluoric_acid') } ]
     );
 });

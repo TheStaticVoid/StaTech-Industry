@@ -1125,8 +1125,6 @@
 		{
 			dependencies: ["62103F0E617EBA7C"]
 			description: [
-				"&cNote&r: This quest requires a &21k Crafting Storage&r specifically. This is due to a limit with item tags for some reason, hopefully this will be fixed in the future!"
-				""
 				"The &dCrafting CPU&r manages a single auto crafting task from start to finish, and is built out of various crafting units."
 				""
 				"To be a valid crafting CPU, two rules must be met:"
@@ -1173,8 +1171,36 @@
 					type: "item"
 				}
 				{
-					id: "47B16A896162BAB3"
-					item: "ae2:1k_crafting_storage"
+					id: "6FA9FB6747BA68FC"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:1k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:4k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:16k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:64k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:256k_crafting_storage"
+								}
+							]
+						}
+					}
+					title: "Any Crafting CPU"
 					type: "item"
 				}
 			]
@@ -4530,11 +4556,12 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:space_breathing"
-							lvl: 1
+							lvl: 1s
 						}]
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Space Breathing"
 			x: -15.0d
@@ -4576,6 +4603,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Gravity Normalizing"
 			x: -14.5d
@@ -4617,6 +4645,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Acid Rain Proof"
 			x: -10.0d
@@ -4658,6 +4687,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Space Fire Proof"
 			x: -14.0d

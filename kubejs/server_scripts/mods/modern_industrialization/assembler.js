@@ -44,6 +44,19 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- MISSING TEXTURE COOKIE -- //
+    assembler(
+        st('missing_texture_cookie'),
+        8,
+        200,
+        [
+            { amount: 1, item: mi('plutonium_dust') },
+            { amount: 1, item: mc('cocoa_beans') }
+        ],
+        [ { amount: 3, item: kj('missing_texture_cookie') } ],
+        [ { amount: 100, fluid: mi('crude_oil') } ]
+    );
+
     // -- BOSS CRUSHER -- //
     assembler(
         st('boss_crusher'),
