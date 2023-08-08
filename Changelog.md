@@ -13,6 +13,7 @@
 
 ## Other changes:
 - [Added recipes so the pack can be played entirely in peaceful - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/359)
+- [Added Mob Crusher multiblock and Nether Star requirement changes - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/366)
 - [Fixed duplicate blueberry recipe in the photosynthetic chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/357)
 - [Adjust ore generation to never be within the bedrock layer](https://github.com/TheStaticVoid/StaTech-Industry/issues/351)
 - [Added assembler recipes for PTFE machine / pipe casings](https://github.com/TheStaticVoid/StaTech-Industry/issues/367)
