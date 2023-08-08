@@ -30,6 +30,16 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- PHANTOM MEMBRANE -- //
+    chemicalReactor(
+        st('phantom_membrane'),
+        16,
+        200,
+        [ { amount: 16, item: mc('leather') } ],
+        [ { amount: 1, item: mc('phantom_membrane') } ],
+        [ { amount: 1000, fluid: mi('liquid_ender')} ]
+    );
+
     // -- BLAZE ROD -- //
     chemicalReactor(
         st('blaze_rod'),

@@ -154,7 +154,9 @@ ServerEvents.recipes(e => {
         [ kj('blaze_model'),            mc('blaze_rod') ],
         [ kj('wither_skeleton_model'),  ap('withered_bone') ],
         [ kj('guardian_model'),         mc('prismarine_shard') ],
-        [ kj('witch_model'),            mc('glass_bottle') ]
+        [ kj('witch_model'),            mc('glass_bottle') ],
+        [ kj('rabbit_model'),            mc('rabbit') ],
+        [ kj('phantom_model'),            mc('phantom_membrane') ]
     ];
     modelItemList.forEach(modelItem => {
         let model = modelItem[0];

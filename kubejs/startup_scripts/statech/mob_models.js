@@ -94,6 +94,16 @@ StartupEvents.registry('item', e => {
         .rarity('Rare')
         .tooltip('§3Designates the output in the Mob Crusher');
 
+    e.create('rabbit_model')
+        .displayName('Rabbit Model')
+        .rarity('Rare')
+        .tooltip('§3Designates the output in the Mob Crusher');
+
+    e.create('phantom_model')
+        .displayName('Phantom Model')
+        .rarity('Rare')
+        .tooltip('§3Designates the output in the Mob Crusher');
+
     e.create('wither_model')
         .displayName('Wither Model')
         .rarity('Epic')
