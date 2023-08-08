@@ -4556,11 +4556,12 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:space_breathing"
-							lvl: 1
+							lvl: 1s
 						}]
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Space Breathing"
 			x: -15.0d
@@ -4602,6 +4603,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Gravity Normalizing"
 			x: -14.5d
@@ -4643,6 +4645,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Acid Rain Proof"
 			x: -10.0d
@@ -4684,6 +4687,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Space Fire Proof"
 			x: -14.0d

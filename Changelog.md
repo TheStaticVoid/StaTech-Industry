@@ -26,6 +26,7 @@
 - [Add Charcoal Block packer recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/371)
 - [Use ItemFilters for quests that break with tags](https://github.com/TheStaticVoid/StaTech-Industry/issues/372)
 - [Blacklist IPN from Formation Plane](https://github.com/TheStaticVoid/StaTech-Industry/issues/373)
+- [Fix Ad Astra Giselle Addon quests failing to complete](https://github.com/TheStaticVoid/StaTech-Industry/issues/368)
 
 ## First-time Contributors
 @GW-Dev
