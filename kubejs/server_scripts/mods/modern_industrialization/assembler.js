@@ -57,8 +57,32 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('clean_stainless_steel_machine_casing') }
         ],
         [ { amount: 1, item: mi('boss_crusher') } ]
+        );
+        
+    // -- PTFE MACHINE CASING -- //
+    assembler(
+        st('ptfe_machine_casing'),
+        8,
+        200,
+        [
+            { amount: 8, tag: 'c:polytetrafluoroethylene_plates' },
+            { amount: 1, tag: 'c:polytetrafluoroethylene_gears' }
+        ],
+        [ { amount: 1, item: mi('chemically_inert_ptfe_casing') } ]
     );
 
+    // -- PTFE PIPE CASING -- //
+    assembler(
+        st('ptfe_machine_casing_pipe'),
+        8,
+        200,
+        [
+            { amount: 1, item: mi('chemically_inert_ptfe_casing') },
+            { amount: 6, item: mi('polytetrafluoroethylene_curved_plate') }
+        ],
+        [ { amount: 2, item: mi('polytetrafluoroethylene_machine_casing_pipe') } ]
+    );
+    
     // -- ALLOY SMELTER -- //
     assembler(
         st('alloy_smelter'),
