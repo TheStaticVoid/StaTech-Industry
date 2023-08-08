@@ -25,6 +25,7 @@
 - [Added assembler, packing, and macerator recipes for some TechReborn items](https://github.com/TheStaticVoid/StaTech-Industry/issues/362)
 - [Add Charcoal Block packer recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/371)
 - [Use ItemFilters for quests that break with tags](https://github.com/TheStaticVoid/StaTech-Industry/issues/372)
+- [Blacklist IPN from Formation Plane](https://github.com/TheStaticVoid/StaTech-Industry/issues/373)
 
 ## First-time Contributors
 @GW-Dev
