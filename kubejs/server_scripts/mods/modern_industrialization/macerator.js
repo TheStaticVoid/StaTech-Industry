@@ -13,6 +13,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let sp = (id) => `spectrum:${id}`;
     let bl = (id) => `blockus:${id}`;
+    let ge = (id) => `geodes:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let macerator = (id, eu, duration, item_inputs, item_outputs) => {
@@ -29,6 +30,30 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- PYRITE DUST -- //
+    macerator(
+        st('pyrite_dust_from_pyrite_chunk'),
+        16,
+        200,
+        [ { amount: 1, item: ge('pyrite_chunk') } ],
+        [
+            { amount: 1, item: tr('pyrite_dust') },
+            { amount: 1, item: tr('pyrite_dust'), probability: 0.5 }
+        ],
+    );
+
+    // -- PYRITE DUST FROM BLOCK -- //
+    macerator(
+        st('pyrite_dust_from_pyrite_block'),
+        16,
+        200,
+        [ { amount: 1, item: ge('pyrite') } ],
+        [ 
+            { amount: 4, item: tr('pyrite_dust') },
+            { amount: 2, item: tr('pyrite_dust'), probability: 0.5 }
+        ]
+    );
 
     // -- MARBLE DUST -- //
     macerator(

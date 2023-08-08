@@ -15,3 +15,4 @@
 - [Fixed duplicate blueberry recipe in the photosynthetic chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/357)
 - [Adjust ore generation to never be within the bedrock layer](https://github.com/TheStaticVoid/StaTech-Industry/issues/351)
 - [Added assembler recipes for PTFE machine / pipe casings](https://github.com/TheStaticVoid/StaTech-Industry/issues/367)
+- [Added assembler, packing, and macerator recipes for some TechReborn items](https://github.com/TheStaticVoid/StaTech-Industry/issues/362)
