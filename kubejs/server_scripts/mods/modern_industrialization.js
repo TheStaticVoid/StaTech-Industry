@@ -12,6 +12,7 @@ ServerEvents.recipes(e => {
     let ad = (id) => `ad_astra:${id}`;
     let cr = (id) => `create:${id}`;
     let ae = (id) => `ae2:${id}`;
+    let kj = (id) => `kubejs:${id}`;
 
     // -- MODERN INDUSTRIALIZATION REMOVED RECIPES -- //
     const MI_DELETED_ITEMS = [
@@ -46,6 +47,21 @@ ServerEvents.recipes(e => {
         mi('electric_age/component/craft/op_amp_asbl')
     ];
     MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
+
+    // -- BOSS CRUSHER -- // 
+    e.shaped(mi('boss_crusher'), [
+        'RCR',
+        'PHP',
+        'MCM'
+    ],
+    {
+        H: mi('turbo_machine_hull'),
+        C: kj('withered_soc'),
+        M: mi('large_pump'),
+        P: mi('piston'),
+        R: mi('invar_rotary_blade')
+    })
+    .id(st('boss_crusher'));
     
     // -- CONVERSION RECIPE FOR EXISTING WORLDS -- //
     e.shapeless(mi('laser_engraver'), [ ae('inscriber') ]).id(st('laser_engraver_conversion'));

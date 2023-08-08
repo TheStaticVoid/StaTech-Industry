@@ -170,4 +170,24 @@ ServerEvents.recipes(e => {
             [ { amount: 1, item: model } ]
         );
     });
+
+    // -- BOSS CRUSHER MODELS -- //
+    const bossModelItemList = [
+        //  Model                           Item
+        [ kj('wither_model'),  kj('withered_soc') ]
+    ];
+    bossModelItemList.forEach(bossModelItem => {
+        let bossModel = bossModelItem[0];
+        let bossItem = bossModelItem[1];
+        laserEngraver(
+            st(bossModel.split(':')[1]),
+            32,
+            200,
+            [ 
+                { amount: 1, item: ae('advanced_card') },
+                { amount: 1, item: bossItem }
+            ],
+            [ { amount: 1, item: bossModel } ]
+        );
+    });
 });
