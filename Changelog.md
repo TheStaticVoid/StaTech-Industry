@@ -23,6 +23,10 @@ Along with the new furnace multiblock, the Large Steam Macerator aims to help sp
 - [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.5.1 -> 5.6.0
 - [NoRecipeBook](https://www.curseforge.com/minecraft/mc-mods/norecipebook-fabric) - 2.2 -> 2.3
 - [Redirectionor](https://www.curseforge.com/minecraft/mc-mods/redirectionor) - 3.1.0 -> 3.2.3
+- [Spellblades and such](https://www.curseforge.com/minecraft/mc-mods/spellblade-next/) - 1.0.27.1.4 -> 1.0.27.2.hotfix1
+- [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.632 -> 9.1.643
+- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.16 -> 2.4.18
+- [RightClickHarvest](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest) - 3.2.2 -> 3.2.3
 
 ## Other changes:
 - [Added Flyte-less' ZedTech resourcepack - by @Flyte-less](https://github.com/TheStaticVoid/StaTech-Industry/pull/376)
