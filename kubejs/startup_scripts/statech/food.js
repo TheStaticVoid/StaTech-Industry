@@ -81,6 +81,13 @@ StartupEvents.registry('item', e => {
             .hunger(8)
             .saturation(0.6);
         });
+    e.create('pineapple_pizza_slice')
+        .displayName('Pineapple Pizza Slice')
+        .food(f => {
+            f
+            .hunger(10)
+            .saturation(0.6);
+        });
     
     e.create('concrete_pizza').displayName('Concrete Pizza');
 
@@ -90,6 +97,13 @@ StartupEvents.registry('item', e => {
             f
             .hunger(12)
             .saturation(0.5);
+        });
+    e.create('concrete_pineapple_pizza_slice')
+        .displayName('Concrete Pineapple Pizza Slice')
+        .food(f => {
+            f
+            .hunger(16)
+            .saturation(0.6);
         });
     
     e.create('bepsi')
@@ -133,4 +147,12 @@ StartupEvents.registry('item', e => {
             .saturation(0.5)
         })
         .useAnimation('drink');
+
+    e.create('missing_texture_cookie')
+        .displayName('Missing Texture Cookie')
+        .food(f => {
+            f
+            .hunger(30)
+            .saturation(0.7)
+        });
 });

@@ -46,6 +46,7 @@ Along with the new furnace multiblock, the Large Steam Macerator aims to help sp
 - [Fix Ad Astra Giselle Addon quests failing to complete](https://github.com/TheStaticVoid/StaTech-Industry/issues/368)
 - [Added Pineapple Pizza Slice and Concrete Pineapple Pizza Slice](https://github.com/TheStaticVoid/StaTech-Industry/issues/354)
 - [Added a Missing Texture Cookie](https://github.com/TheStaticVoid/StaTech-Industry/issues/377)
+- [Disable EBE for Chests to fix zfighting](https://github.com/TheStaticVoid/StaTech-Industry/commit/acd8da015be76cb4072948aa5b6cc482d06e9424)
 
 ## First-time Contributors
 @GW-Dev

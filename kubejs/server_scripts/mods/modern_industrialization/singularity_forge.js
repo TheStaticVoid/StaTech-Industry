@@ -29,7 +29,7 @@ ServerEvents.recipes(e => {
     // -- SINGULARITY -- //
     singularityForge(
         st('singularity'),
-        1024,
+        8192,
         1200,
         [ 
             { amount: 64, item: mi('nuke') },
