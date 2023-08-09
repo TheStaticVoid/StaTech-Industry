@@ -392,7 +392,7 @@
 		}
 		{
 			dependencies: ["3F4A396DD273A543"]
-			description: ["This route will have you creating your first &eMattery-Energy System&r with &eApplied Energistics&r. "]
+			description: ["This route will have you gaining access to advanced features from &eApplied Energistics&r. "]
 			id: "5FDDE9153DE118DF"
 			rewards: [{
 				id: "6DA5465AD0198CE3"
@@ -1125,8 +1125,6 @@
 		{
 			dependencies: ["62103F0E617EBA7C"]
 			description: [
-				"&cNote&r: This quest requires a &21k Crafting Storage&r specifically. This is due to a limit with item tags for some reason, hopefully this will be fixed in the future!"
-				""
 				"The &dCrafting CPU&r manages a single auto crafting task from start to finish, and is built out of various crafting units."
 				""
 				"To be a valid crafting CPU, two rules must be met:"
@@ -1173,8 +1171,36 @@
 					type: "item"
 				}
 				{
-					id: "47B16A896162BAB3"
-					item: "ae2:1k_crafting_storage"
+					id: "6FA9FB6747BA68FC"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:1k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:4k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:16k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:64k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:256k_crafting_storage"
+								}
+							]
+						}
+					}
+					title: "Any Crafting CPU"
 					type: "item"
 				}
 			]
@@ -4530,11 +4556,12 @@
 					tag: {
 						StoredEnchantments: [{
 							id: "ad_astra_giselle_addon:space_breathing"
-							lvl: 1
+							lvl: 1s
 						}]
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Space Breathing"
 			x: -15.0d
@@ -4576,6 +4603,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Gravity Normalizing"
 			x: -14.5d
@@ -4617,6 +4645,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Acid Rain Proof"
 			x: -10.0d
@@ -4658,6 +4687,7 @@
 					}
 				}
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Space Fire Proof"
 			x: -14.0d
@@ -5187,9 +5217,9 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["52A0DAAE651E217B"]
+			dependencies: ["15BCEEEB82A0F249"]
 			description: [
-				"With &bIridium&r, you can now create the seventh and final tier of &aDank&r. This tier has &d63 slots&r with a max stack size of &62,147,483,647&r. That is an &4&n&linsane&r amount of items."
+				"With &bIridium&r and &dNether Stars&r, you can now create the seventh and final tier of &aDank&r. This tier has &d63 slots&r with a max stack size of &62,147,483,647&r. That is an &4&n&linsane&r amount of items."
 				""
 				"It costs a lot of &bIridium&r and &cNether Stars&r, might be better to upgrade once you have a decent surplus."
 			]
@@ -5219,8 +5249,277 @@
 				item: "dankstorage:dank_7"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -1.5d
+			x: 25.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["545FBBF5D4131019"]
+			description: [
+				"The &aBoss Crusher&r is a &dnew multiblock&r part of &61.1.6&r of &eStaTech Industry&r. Currently, it only supports the &2Wither Model&r, allowing for it to simulate the &cWither&r in a safe environment and &3produce the drops from killing it&r from that model."
+				""
+				"Unlike the &3Mob Crusher&r, &2Models&r in the &aBoss Crusher&r are &csingle-use&r, so you'll need to stockpile them if you plan to get a lot of&d Boss rewards&r."
+			]
+			icon: "modern_industrialization:boss_crusher"
+			id: "759E99871B529567"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6F9EFBECFC295C08"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 10
+					id: "05BBCCCB86B97CF1"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "7586EEE07D8CE7F5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			subtitle: "Victory Achieved"
+			tasks: [
+				{
+					id: "3F6F1E4B3726304B"
+					item: "modern_industrialization:boss_crusher"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "38EBD8FD25366DB3"
+					item: "modern_industrialization:clean_stainless_steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "5145AD06E25FD8E8"
+					item: "minecraft:tinted_glass"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "6854FBD89455D968"
+					item: "kibe:wither_proof_block"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "74FEBCDB17187F07"
+					item: "modern_industrialization:kanthal_coil"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "438F76B889BA9AC5"
+					item: "ad_astra:glowing_steel_pillar"
+					type: "item"
+				}
+				{
+					id: "2ED4EAE0C63EBE96"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_input_hatch"
+						}
+					}
+					title: "Any Item Input Hatch"
+					type: "item"
+				}
+				{
+					id: "39D4A8D91ED9BED0"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:item_output_hatch"
+						}
+					}
+					title: "Any Item Output Hatch"
+					type: "item"
+				}
+				{
+					id: "7BE03F3F47D47B64"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					id: "4DCEAE3C3B708D12"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					title: "Any Fluid Output Hatch"
+					type: "item"
+				}
+				{
+					id: "6481A5F599F6B459"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_input_hatch"
+						}
+					}
+					title: "Any Energy Input Hatch"
+					type: "item"
+				}
+			]
+			x: 19.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3FEB290E25DD6BFD"]
+			description: [
+				"The Withered SoC (System on a Chip) contains the complex data of the Wither. It is the primary component in creating Wither Data Models."
+				""
+				"Don't have Wither Skeleton Skulls? I'd recommend getting a Wither Skeleton Model going in a Mob Crusher, as you're going to need them!"
+			]
+			id: "545FBBF5D4131019"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2708862C8C35161E"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "578C6DD562A4651C"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "528A1558D2713EA3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "548C92E99FBF8BA8"
+					item: "kubejs:withered_soc"
+					type: "item"
+				}
+				{
+					id: "71C44D06A79A9D0F"
+					item: "kubejs:wither_model"
+					type: "item"
+				}
+			]
+			title: "Withered SoC \\& Wither Model"
+			x: 19.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["759E99871B529567"]
+			description: ["While powerful, the &aBoss Crusher&r isn't perfect. Killing the &cWither&r doesn't produce a pristine &dNether Star&r as if you killed it normally. Instead you only will receive &2500mB&r of &2Impure Liquid Nether Star&r per &dWither model&r. This will need to be purified before it can be used."]
+			id: "181D80626F6D57FB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2BD2BD749EA02998"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "5244E2D6BD0F77B6"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "5FDEA06F5F9C4B21"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "7B20E32E59EA7402"
+				item: "modern_industrialization:impure_liquid_nether_star_bucket"
+				type: "item"
+			}]
+			x: 21.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["181D80626F6D57FB"]
+			description: ["Using a little bit of &6platinum&r, you can refine &21000mB&r of &2Impure Liquid Nether Star&r to &a1000mB&r of &aMolten Nether Star&r. In this form, you can solidify it in a &6Vacuum Freezer&r into &dNether Stars&r, or &bstockpile it in this liquid form&r, as it will be important in the production of &3Superconductors&r."]
+			id: "0AB5468E9C358CA3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "32097BCC701103F2"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "2FEBB3DE8A1D65A2"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "3997BE80ACE771F5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "5696D3A9FD17F9AF"
+				item: "modern_industrialization:molten_nether_star_bucket"
+				type: "item"
+			}]
+			x: 23.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0AB5468E9C358CA3"]
+			description: ["While not required for finishing the pack, you'll need some &aNether Stars&r to produce the final tiers of the &6Dank Nulls&r, or you can make some &dbeacons&r with it."]
+			id: "15BCEEEB82A0F249"
+			rewards: [
+				{
+					id: "523194A740CE14B8"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "118E03FC953021BA"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "478B13FD813CC726"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "35C8E1562EB1A4E1"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: 25.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["High tech!"]

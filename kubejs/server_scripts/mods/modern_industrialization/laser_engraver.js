@@ -154,7 +154,9 @@ ServerEvents.recipes(e => {
         [ kj('blaze_model'),            mc('blaze_rod') ],
         [ kj('wither_skeleton_model'),  ap('withered_bone') ],
         [ kj('guardian_model'),         mc('prismarine_shard') ],
-        [ kj('witch_model'),            mc('glass_bottle') ]
+        [ kj('witch_model'),            mc('glass_bottle') ],
+        [ kj('rabbit_model'),            mc('rabbit') ],
+        [ kj('phantom_model'),            mc('phantom_membrane') ]
     ];
     modelItemList.forEach(modelItem => {
         let model = modelItem[0];
@@ -168,6 +170,26 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: item }
             ],
             [ { amount: 1, item: model } ]
+        );
+    });
+
+    // -- BOSS CRUSHER MODELS -- //
+    const bossModelItemList = [
+        //  Model                           Item
+        [ kj('wither_model'),  kj('withered_soc') ]
+    ];
+    bossModelItemList.forEach(bossModelItem => {
+        let bossModel = bossModelItem[0];
+        let bossItem = bossModelItem[1];
+        laserEngraver(
+            st(bossModel.split(':')[1]),
+            32,
+            200,
+            [ 
+                { amount: 1, item: ae('advanced_card') },
+                { amount: 1, item: bossItem }
+            ],
+            [ { amount: 1, item: bossModel } ]
         );
     });
 });

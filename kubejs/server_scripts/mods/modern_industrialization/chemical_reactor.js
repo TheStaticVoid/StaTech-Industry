@@ -9,6 +9,7 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let cr = (id) => `create:${id}`;
+    let tr = (id) => `techreborn:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let chemicalReactor = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
@@ -29,6 +30,69 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe).id(id);
     }
+
+    // -- PHANTOM MEMBRANE -- //
+    chemicalReactor(
+        st('phantom_membrane'),
+        16,
+        200,
+        [
+            { amount: 16, item: mc('leather') }, 
+            { amount: 2, item: tr('calcite_dust') },
+        ],
+        [ { amount: 1, item: mc('phantom_membrane') } ],
+        [ { amount: 2000, fluid: mi('liquid_ender')} ]
+    );
+
+    // -- BLAZE ROD -- //
+    chemicalReactor(
+        st('blaze_rod'),
+        16,
+        200,
+        [ 
+            { amount: 1, item: mi('steel_rod') },
+            { amount: 16, item: mc('nether_wart') }
+        ],
+        [ { amount: 1, item: mc('blaze_rod') } ],
+        [ { amount: 1000, fluid: mc('lava')} ]
+    );
+
+    // -- GHAST TEAR -- //
+    chemicalReactor(
+        st('ghast_tear'),
+        16,
+        200,
+        [ 
+            { amount: 16, item: mc('tnt') },
+            { amount: 16, item: mi('salt_dust') }
+        ],
+        [ { amount: 1, item: mc('ghast_tear') } ],
+        [ { amount: 1000, fluid: mc('lava')} ]
+    );
+
+    // -- ROTTEN FLESH -- //
+    chemicalReactor(
+        st('rotten_flesh'),
+        16,
+        200,
+        [ { amount: 4, item: mc('leather') } ],
+        [ { amount: 1, item: mc('rotten_flesh') } ],
+        [ { amount: 500, fluid: mi('hydrofluoric_acid')} ]
+    );
+
+    // -- ENDER PEARL -- //
+    chemicalReactor(
+        st('ender_pearl'),
+        16,
+        200,
+        [ 
+            { amount: 1, item: mc('slime_ball') },
+            { amount: 4, item: 'xps:xp_dust' },
+            { amount: 1, item: mc('spider_eye') },
+        ],
+        [ { amount: 1, item: mc('ender_pearl') } ],
+        [ { amount: 500, fluid: 'xps:xp_fluid'} ]
+    );
 
     // -- ROSE QUARTZ -- //
     chemicalReactor(

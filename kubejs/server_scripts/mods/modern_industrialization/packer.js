@@ -11,6 +11,9 @@ ServerEvents.recipes(e => {
     let ad = (id) => `ad_astra:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let ae = (id) => `ae2:${id}`;
+    let bl = (id) => `blockus:${id}`;
+    let pd = (id) => `pineapple_delight:${id}`;
+    let kj = (id) => `kubejs:${id}`;
 
     // -- PACKER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
@@ -38,6 +41,94 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- LARGE STEAM MACERATOR -- //
+    packer(
+        st('large_steam_macerator'),
+        4,
+        200,
+        [
+            { amount: 8, tag: 'c:bronze_plates' },
+            { amount: 1, item: mi('steel_macerator') }
+        ],
+        [ { amount: 1, item: mi('large_steam_macerator') } ]
+    );
+
+    // -- PINEAPPLE PIZZA SLICE -- //
+    packer(
+        st('pineapple_pizza_slice'),
+        4,
+        200,
+        [ 
+            { amount: 1, item: pd('pineapple_side') },
+            { amount: 1, item: kj('pizza_slice') }
+        ],
+        [ { amount: 1, item: kj('pineapple_pizza_slice') } ]
+    );
+
+    // -- CONCRETE PINEAPPLE PIZZA SLICE -- //
+    packer(
+        st('concrete_pineapple_pizza_slice'),
+        4,
+        200,
+        [
+            { amount: 1, item: pd('pineapple_side') },
+            { amount: 1, item: kj('concrete_pizza_slice') }
+        ],
+        [ { amount: 1, item: kj('concrete_pineapple_pizza_slice') } ]
+    );
+
+    // -- CHARCOAL BLOCK -- //
+    packer(
+        st('charcoal_block'),
+        2,
+        200,
+        [ 
+            { amount: 9, item: mc('charcoal') },
+            { amount: 1, item: mi('packer_block_template'), probability: 0.0 }
+        ],
+        [ { amount: 1, item: bl('charcoal_block') } ]
+    );
+
+    // -- LARGE STEAM FURNACE -- //
+    packer(
+        st('large_steam_furnace'),
+        4,
+        200,
+        [
+            { amount: 1, item: mc('furnace') },
+            { amount: 7, item: mc('bricks') },
+            { amount: 1, item: mi('coke') }
+        ],
+        [ { amount: 1, item: mi('large_steam_furnace') } ]
+    );
+
+    // -- PYRITE DUST -- //
+    packer(
+        st('pyrite_dust'),
+        8,
+        200,
+        [ { amount: 4, tag: 'c:pyrite_small_dusts' } ],
+        [ { amount: 1, item: tr('pyrite_dust') } ]
+    );
+
+    // -- CALCITE DUST -- //
+    packer(
+        st('calcite_dust'),
+        8,
+        200,
+        [ { amount: 4, tag: 'c:calcite_small_dusts' } ],
+        [ { amount: 1, item: tr('calcite_dust') } ]
+    );
+
+    // -- SODALITE DUST -- //
+    packer(
+        st('sodalite_dust'),
+        8,
+        200,
+        [ { amount: 4, tag: 'c:sodalite_small_dusts' } ],
+        [ { amount: 1, item: tr('sodalite_dust') } ]
+    );
 
     // -- IRIDIUM ALLOY INGOT -- //
     packer(

@@ -9,6 +9,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let mc = (id) => `minecraft:${id}`;
     
     // -- BLAST FURNACE REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -38,6 +39,40 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- NETHER STAR -> MOLTEN NETHER STAR -- //
+    blastFurnace(
+        st('nether_star'),
+        128,
+        300,
+        [ { amount: 1, item: mc('nether_star') } ],
+        null,
+        null,
+        [ { amount: 500, fluid: mi('molten_nether_star') } ]
+    );
+
+    // -- IMPURRE LIQUID NETHER STAR -> MOLTEN NETHER STAR -- //
+    blastFurnace(
+        st('molten_nether_star'),
+        128,
+        900,
+        [ { amount: 1, item: mi('platinum_tiny_dust') } ],
+        null,
+        [ { amount: 1000, fluid: mi('impure_liquid_nether_star') } ],
+        [ { amount: 1000, fluid: mi('molten_nether_star') } ]
+    );
+    
+    // -- WITHERED BONE -- //
+    blastFurnace(
+        st('withered_bone'),
+        16,
+        600,
+        [ 
+            { amount: 16, item: 'minecraft:bone' },
+            { amount: 1, item: 'minecraft:blaze_powder' }
+        ],
+        [ { amount: 1, item: 'architects_palette:withered_bone' } ]
+    );
 
     // -- PIZZA -- //
     blastFurnace(
@@ -126,7 +161,8 @@ ServerEvents.recipes(e => {
         512,
         1200,
         [ { amount: 1, tag: 'c:superconductor_dusts' } ],
-        [ { amount: 1, item: mi('superconductor_hot_ingot') } ]
+        [ { amount: 1, item: mi('superconductor_hot_ingot') } ],
+        [ { amount: 50, fluid: mi('molten_nether_star') } ]
     );
 
     // -- FLUORINE -- //
