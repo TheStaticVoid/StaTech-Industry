@@ -29,8 +29,8 @@ Along with the new furnace multiblock, the Large Steam Macerator aims to help sp
 - [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.16 -> 2.4.18
 - [RightClickHarvest](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest) - 3.2.2 -> 3.2.3
 
-## Mods downgraded:
-- [Iris](https://legacy.curseforge.com/minecraft/mc-mods/irisshaders) 1.6.4 -> 1.6.1 - Had to do this because CurseForge is now flagging this mod as not allowed despite being on their preapproved list. Gotta love it! If you plan to use shaders, I suggest manually updating to the latest version (1.6.5)
+## Mods removed:
+- [Iris](https://legacy.curseforge.com/minecraft/mc-mods/irisshaders) - Had to do this because CurseForge is now flagging this mod as not allowed despite being on their preapproved list. Gotta love it! If you plan to use shaders, I suggest manually installing the latest version (1.6.5)
 
 ## Other changes:
 - [Added Flyte-less' ZedTech resourcepack - by @Flyte-less](https://github.com/TheStaticVoid/StaTech-Industry/pull/376)
