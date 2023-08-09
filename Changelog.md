@@ -4,8 +4,13 @@ This quickly turned into a pretty decent sized update. Thanks to @GW-Dev for the
 
 ## New Multiblocks
 ### Boss Crusher
+This is an advanced version of the Mob Crusher specializing specifically on the slaughter of bosses. Currently only the Wither Model is implemented, but plans for the Warden and Ender Dragon are in the works. With this Wither Model comes some changes to progression. You will receive Liquid Nether Star, which needs to be purified before its new use in creating Superconductors.
+
 ### Large Steam Furnace
+Instead of heavily relying on Create bulk blasting to smelt your ores, why not use this new MI steam multiblock? It smelts 8 items in the same time a normal furnace would smelt one. All for only 2 EU/t!
+
 ### Large Steam Macerator
+Along with the new furnace multiblock, the Large Steam Macerator aims to help speed up your ore processing. With the new oregen, you'll be coming back to your base with loads of more ore than you would have before 1.1.0. To remedy this, the Steam Macerator is able to process 8 items in the time it would take to process two.
 
 ## Mods added:
 - [Peripheralium](https://www.curseforge.com/minecraft/mc-mods/peripheralium) - Library for UPW
@@ -23,6 +28,7 @@ This quickly turned into a pretty decent sized update. Thanks to @GW-Dev for the
 - [Added Flyte-less' ZedTech resourcepack - by @Flyte-less](https://github.com/TheStaticVoid/StaTech-Industry/pull/376)
 - [Added recipes so the pack can be played entirely in peaceful - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/359)
 - [Added Mob Crusher multiblock and Nether Star requirement changes - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/366)
+- [Added Phantom and Rabbit models to mob crusher - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/378)
 - [Added the Large Steam Furnace multiblock](https://github.com/TheStaticVoid/StaTech-Industry/issues/361)
 - [Added the Large Steam Macerator multiblock](https://github.com/TheStaticVoid/StaTech-Industry/issues/361)
 - [Added quests for the new Boss Crusher multiblock](https://github.com/TheStaticVoid/StaTech-Industry/issues/370)
