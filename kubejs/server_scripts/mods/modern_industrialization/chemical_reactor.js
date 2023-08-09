@@ -37,7 +37,7 @@ ServerEvents.recipes(e => {
         200,
         [ { amount: 16, item: mc('leather') } ],
         [ { amount: 1, item: mc('phantom_membrane') } ],
-        [ { amount: 1000, fluid: mi('liquid_ender')} ]
+        [ { amount: 2000, fluid: mi('liquid_ender')} ]
     );
 
     // -- BLAZE ROD -- //

@@ -206,7 +206,7 @@ ServerEvents.recipes(e => {
         200 * timeMultiplier,
         [ { amount: 16 * amountMultiplier, item: mc('leather') } ],
         [ { amount: 1 * amountMultiplier, item: mc('phantom_membrane') } ],
-        [ { amount: 1000 * amountMultiplier, fluid: mi('liquid_ender')} ]
+        [ { amount: 2000 * amountMultiplier, fluid: mi('liquid_ender')} ]
     );
     
     // -- BLAZE ROD -- //
