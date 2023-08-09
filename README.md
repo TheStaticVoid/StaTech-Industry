@@ -1,11 +1,6 @@
 # StaTech-Industry
 Minecraft 1.19.2 modpack focused on Modern Industrializations. Join us on [Discord](https://discord.gg/RDaJEnN3uS). Click [here](https://github.com/TheStaticVoid/StaTech-Industry/blob/main/MODLIST.md) for a full list of mods.
 
-This modpack includes the following mods no longer available on CurseForge: 
-
-- [Iris](https://github.com/IrisShaders/Iris) - Licensed under LGPL. No changes made from source repo.
-
-
 This modpack also includes the following resources. Do not report any issues you might experience with these to their developers, but rather to this mod's Discord.
 
 - [Complimentary Reimagined](https://github.com/ComplementaryDevelopment/ComplementaryReimagined)
