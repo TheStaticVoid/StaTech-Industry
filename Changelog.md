@@ -13,6 +13,7 @@ Instead of heavily relying on Create bulk blasting to smelt your ores, why not u
 Along with the new furnace multiblock, the Large Steam Macerator aims to help speed up your ore processing. With the new oregen, you'll be coming back to your base with loads of more ore than you would have before 1.1.0. To remedy this, the Steam Macerator is able to process 8 items in the time it would take to process two.
 
 ## Mods added:
+- [ServerCore](https://www.curseforge.com/minecraft/mc-mods/servercore) - Have been using this on the public server, but never added it to the client. Offers performance increases for both servers and clients
 - [Peripheralium](https://www.curseforge.com/minecraft/mc-mods/peripheralium) - Library for UPW
 - [Pineapple Delight](https://www.curseforge.com/minecraft/mc-mods/pineapple-delight) - For the pizza
 - [UnlimitedPeripheralWorks](https://www.curseforge.com/minecraft/mc-mods/unlimitedperipheralworks) - Compatability with MI has been restored
