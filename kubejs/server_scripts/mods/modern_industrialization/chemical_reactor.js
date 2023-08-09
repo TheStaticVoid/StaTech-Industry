@@ -9,6 +9,7 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let cr = (id) => `create:${id}`;
+    let tr = (id) => `techreborn:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let chemicalReactor = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
@@ -29,6 +30,19 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe).id(id);
     }
+
+    // -- PHANTOM MEMBRANE -- //
+    chemicalReactor(
+        st('phantom_membrane'),
+        16,
+        200,
+        [
+            { amount: 16, item: mc('leather') }, 
+            { amount: 2, item: tr('calcite_dust') },
+        ],
+        [ { amount: 1, item: mc('phantom_membrane') } ],
+        [ { amount: 2000, fluid: mi('liquid_ender')} ]
+    );
 
     // -- BLAZE ROD -- //
     chemicalReactor(

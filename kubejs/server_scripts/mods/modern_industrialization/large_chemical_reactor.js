@@ -9,6 +9,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let cr = (id) => `create:${id}`;
+    let tr = (id) => `techreborn:${id}`;
 
     // -- LCR VARIABLE CONSTANTS -- //
     const gsonJsonArray = Java.loadClass('com.google.gson.JsonArray');
@@ -199,6 +200,19 @@ ServerEvents.recipes(e => {
 
     // There's technically a really convoluted way to get all recipes, even ones added,
     // but I couldn't be bothered to figure it out for 6.1
+    // -- PHANTOM MEMBRANE -- //
+    lcr(
+        st('phantom_membrane'),
+        8 * powerMultiplier,
+        200 * timeMultiplier,
+        [
+            { amount: 16 * amountMultiplier, item: mc('leather') }, 
+            { amount: 2 *amountMultiplier, item: tr('calcite_dust') },
+        ],
+        [ { amount: 1 * amountMultiplier, item: mc('phantom_membrane') } ],
+        [ { amount: 2000 * amountMultiplier, fluid: mi('liquid_ender')} ]
+    );
+    
     // -- BLAZE ROD -- //
     lcr(
         st('blaze_rod'),

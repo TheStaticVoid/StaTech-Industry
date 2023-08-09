@@ -226,6 +226,19 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: mc('sugar'), probability: 0.25 }
             ],
             mi('blood')
+        ],
+
+        // Rabbit model
+        [
+            kj('rabbit_model'),
+            [
+                { amount: 1, item: mc('rabbit') },
+                { amount: 1, item: mc('rabbit_hide'), probability: 0.25 },
+                { amount: 1, item: mc('rabbit_foot'), probability: 0.1 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.3 }
+
+            ],
+            mi('blood')
         ]
     ];
     // Add all the recipes from the list
@@ -273,4 +286,19 @@ ServerEvents.recipes(e => {
             { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
         ]
     );
+
+    // -- PHANTOM MODEL -- //
+    crusher(
+        st('phantom_model'),
+        8,
+        600,
+        [ { amount: 1, item: kj('phantom_model'), probability: 0.05 } ],
+        [
+            { amount: 1, item: mc('phantom_membrane'), probability: 0.5 },
+            { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
+        ],
+        [ { amount: 100, fluid: mi('liquid_ender') } ],
+        [ { amount: 75, fluid: mi('liquid_ender') } ]
+    );
+    
 });
