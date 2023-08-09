@@ -97,6 +97,10 @@ file = "config/defaultoptions/options.txt"
 hash = "c261877f3272b5e8d9e5baedf2be2172112f228a6507288359fe131a258553ac"
 
 [[files]]
+file = "config/enhanced_bes.properties"
+hash = "682078cb83129db8b4120b3d0f5470fec1839088791aa5bb49d3a3a0c1b55f1d"
+
+[[files]]
 file = "config/extended_drawers/client.properties"
 hash = "fc2d4199da1768bf5c87da40d49a45515041c9b3b18e70231a6a51d61c15e8a6"
 
@@ -689,6 +693,10 @@ file = "kubejs/assets/kubejs/ponder/advanced_large_steam_boiler.nbt"
 hash = "ea3567b99f9938da7371e0b8873f6f31fe885b135df6e98e3458404f5181876b"
 
 [[files]]
+file = "kubejs/assets/kubejs/ponder/boss_crusher.nbt"
+hash = "85af437e1017e0d80c3f98ee66018f77962b235f02659011cfaf06aacefea1b0"
+
+[[files]]
 file = "kubejs/assets/kubejs/ponder/coke_oven.nbt"
 hash = "1be4aef035f2ea7afb54ce0b19c72e84d9cb940e5d75797e29eac59061470995"
 
@@ -937,6 +945,10 @@ file = "kubejs/assets/kubejs/textures/item/concrete_bar.png"
 hash = "59446e6c51777529d74651b2a6e24d6ed372e669823d3256e60a6877a5f65c8a"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/concrete_pineapple_pizza_slice.png"
+hash = "a7fa0215773f037f23aa930c9c579192f6ab4b14e1f387c03abdc4718d6a350a"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/concrete_pizza.png"
 hash = "8b39eba117ccf8ea5ddc63059c706cc544228b820208f7f2d1a19cab5ddcc73e"
 
@@ -989,6 +1001,10 @@ file = "kubejs/assets/kubejs/textures/item/magma_cube_model.png"
 hash = "a6d58cf3c7709162e59d003141f050ea119dddbe37b113587da43d4149f67dd7"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/missing_texture_cookie.png"
+hash = "66f0d984060286f274a6eb48cb77200e772319b9f714239a9b9cac5f3adb873a"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/nuka_cola.png"
 hash = "683122388c7b5583e0514fc24d10b26828824d69164b61b9954f0a7c9aa20d49"
 
@@ -999,6 +1015,10 @@ hash = "6693e33389530ca36792abc195bbcb3b54ce606fa05b684d03615f4c194f3634"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/pig_model.png"
 hash = "b5ef38da210e4b6097735b070cad6dd93c653986831453700a040de424c3cdb2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/pineapple_pizza_slice.png"
+hash = "80c28c3548e6a1c84e481f32fbd5049e854c8a10b0b9925659703494d76142f7"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/pizza.png"
@@ -11786,7 +11806,7 @@ hash = "263f822b7725cabcb0038538fb5b7e530cca1ce664880a227186a4f4f2938ca4"
 
 [[files]]
 file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
-hash = "7c40b68579edf40c4aea61a6cffbe2d4fb16e64da32ae4e09e7b56b93a687306"
+hash = "4b37150dd0f9e697e5432c976178d376028486bf0163f5e49bc003bc16f56e8b"
 
 [[files]]
 file = "kubejs/assets/statech/textures/item/bronze_pump.png"
@@ -11835,6 +11855,10 @@ hash = "9f17656a33ab3e59fb461db853457ce12db310f4fa02dc6bdd48da89a2a8914b"
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/advanced_large_steam_boiler.js"
 hash = "4fbd0484ae70072a53f18cbd58330a987dcc85256421e7a87b49f8f4cc51d9dc"
+
+[[files]]
+file = "kubejs/client_scripts/ponder/modern_industrialization/boss_crusher.js"
+hash = "0218ab3a09088d906e963f46c1e208e8abde12e890fd84d0d248c545667ff73d"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/coke_oven.js"
@@ -11954,7 +11978,7 @@ hash = "632c91eced8ba157d056d43da269fb36e39ac7b70d1f861c007cba76b8595458"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/tag.js"
-hash = "3d342a6b52a3428f517bb87e3e359f9c7e6617302a1b1f203f6ff3ad4308787f"
+hash = "a63257fcd3ccb1042d8c84005e705779d48e9185be8446c7a4d7872d73d46257"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/vacuum_freezer.js"
@@ -25370,7 +25394,7 @@ hash = "b4df033acb882e2d6726c6b0352ea0cb0eab5468f9a6c2930f70fec5b86ae9d9"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/macerator.js"
-hash = "640ebc6994d523315a66f78ccd18e1c1456f603226bb42a3ad9a1c782441ba20"
+hash = "928f95399dbf964ab1f1f32fa9522aaffffbca6fa340a5f1abde46c130a4faa6"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/mega_smelter.js"
@@ -25406,7 +25430,7 @@ hash = "573c7c3978bef2ba6f93fd0d1f8ca2c1f96fe2ebf0f183150794cf8ef6d661ad"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/singularity_forge.js"
-hash = "82b7893d062b7e41f5ed225bceff341785b6b6438b9b6945230f9ee10562c5da"
+hash = "5e5e18ce56469c19bbe7d61a00abfb0275f6fa8f1e5abcb94e571c31cf8ac069"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/space_probe_launcher.js"
@@ -25614,7 +25638,7 @@ hash = "005e76b39c31e9e512703ed83c6400aec4f5d9ab9d67982bb097d2dbb0485a79"
 
 [[files]]
 file = "kubejs/startup_scripts/statech/food.js"
-hash = "1e86e0b6d7740a45d58bec0d7cc5f936639e9efdf4b207c6d9cb4088a45902e0"
+hash = "563dfffb59ea67c7a477445950641e453b2531c0353d25656764e18277d9b6d3"
 
 [[files]]
 file = "kubejs/startup_scripts/statech/geocluster_sample.js"
