@@ -226,7 +226,7 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: mc('sugar'), probability: 0.25 }
             ],
             mi('blood')
-        ]
+        ],
 
         // Rabbit model
         [
@@ -297,7 +297,8 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('phantom_membrane'), probability: 0.5 },
             { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
         ],
-        [ { amount: 100, fluid: mi('liquid_ender') } ]
+        [ { amount: 100, fluid: mi('liquid_ender') } ],
+        [ { amount: 75, fluid: mi('liquid_ender') } ]
     );
     
 });
