@@ -48,7 +48,7 @@ ServerEvents.recipes(e => {
         [ { amount: 3, item: cr('experience_nugget') } ],
         null,
         null,
-        [ { amount: 100, fluid: xp('xp_fluid') } ]
+        [ { amount: 90, fluid: xp('xp_fluid') } ]
     );
 
     // -- STATECH ENERGY -- //
