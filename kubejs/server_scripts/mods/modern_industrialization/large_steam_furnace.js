@@ -82,7 +82,7 @@ ServerEvents.recipes(e => {
     let amount = 8;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let megaSmelt = (id, input, output) => {
+    let lsf = (id, input, output) => {
         e.custom({
             type: mi('large_steam_furnace'),
             eu: eu,
@@ -108,27 +108,27 @@ ServerEvents.recipes(e => {
                 newResult['item'] = recipeJson.result;
                 
                 let id = st(`${recipeJson.result.split(':')[0]}_${recipeJson.result.split(':')[1]}_from_${newIngredient[key].split(':')[0]}_${newIngredient[key].split(':')[1]}`);
-                megaSmelt(id, newIngredient, newResult);
+                lsf(id, newIngredient, newResult);
             }
         }
     });
 
     // I think the load order of KJS scripts makes it so galena smelting doesn't get added to the function above
     // -- GALENA ORE -- //
-    megaSmelt(
+    lsf(
         st('galena_ingot_from_galena_ore'),
         [ { amount: amount, tag: 'c:galena_ores' } ],
         [ { amount: amount, item: mi('lead_ingot') } ]
     );
 
     // -- GALENA DUST -- //
-    megaSmelt(
+    lsf(
         st('galena_ingot_from_galena_dust'),
         [ { amount: amount, item: tr('galena_dust') } ],
         [ { amount: amount, item: mi('lead_ingot') } ]
     );
 
-    megaSmelt(
+    lsf(
         st('tin_ingot_from_raw_tin'),
         [ { amount: amount, tag: 'c:raw_zinc_ores' } ],
         [ { amount: amount, item: tr('zinc_ingot') } ]

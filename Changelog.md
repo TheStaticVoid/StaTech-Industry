@@ -25,6 +25,7 @@ This quickly turned into a pretty decent sized update. Thanks to @GW-Dev for the
 - [Added Mob Crusher multiblock and Nether Star requirement changes - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/366)
 - [Added the Large Steam Furnace multiblock](https://github.com/TheStaticVoid/StaTech-Industry/issues/361)
 - [Added the Large Steam Macerator multiblock](https://github.com/TheStaticVoid/StaTech-Industry/issues/361)
+- [Added quests for the new Boss Crusher multiblock](https://github.com/TheStaticVoid/StaTech-Industry/issues/370)
 - [Fixed duplicate blueberry recipe in the photosynthetic chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/357)
 - [Adjust ore generation to never be within the bedrock layer](https://github.com/TheStaticVoid/StaTech-Industry/issues/351)
 - [Added assembler recipes for PTFE machine / pipe casings](https://github.com/TheStaticVoid/StaTech-Industry/issues/367)
@@ -38,3 +39,4 @@ This quickly turned into a pretty decent sized update. Thanks to @GW-Dev for the
 
 ## First-time Contributors
 @GW-Dev
+@Flyte-less
