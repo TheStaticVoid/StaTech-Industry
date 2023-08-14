@@ -45,6 +45,20 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- MACHINE EXTENDER -- //
+    assembler(
+        st('machine_extender'),
+        8,
+        200,
+        [
+            { amount: 7, item: mc('iron_bars') },
+            { amount: 1, item: md('item_pipe') },
+            { amount: 1, item: md('fluid_pipe') }
+
+        ],
+        [ { amount: 4, item: md('machine_extender') } ],
+    );
+
     // -- ATTRACTOR -- //
     assembler(
         st('attractor'),
