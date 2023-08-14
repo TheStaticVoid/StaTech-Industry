@@ -8,8 +8,9 @@ General bugfix update. Please note this update also includes the fixes for the M
 - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) - 0.76.0 -> 0.76.1
 - [Geocluster](https://www.curseforge.com/minecraft/mc-mods/geocluster) - 1.2.4 -> 1.2.5
 - [megane](https://www.curseforge.com/minecraft/mc-mods/megane) - 8.5.0 -> 8.5.1
-- [Modern Industrialization](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization) - 1.6.12 -> 1.6.13
+- [Modern Industrialization](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization) - 1.6.12 -> 1.6.14
 - [Moonlight Lib](https://www.curseforge.com/minecraft/mc-mods/selene) - 2.2.43 -> 2.2.44
+- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.18 -> 2.4.19
 - [Smooth Chunk Save](https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save) 3.0 -> 3.1
 - [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.18.0 -> 5.18.1
 
