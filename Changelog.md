@@ -1,5 +1,5 @@
 # StaTech Industry 1.1.7 Changelog:
-General bugfix update. Please note this update also includes the fixes for the MI Nuclear Reactor crashes that were address in its latest update. Rejoice!
+General bugfix update. Please note this update also includes the fixes for the MI Nuclear Reactor crashes that were addressed in its latest update. Rejoice!
 
 ## Mods updated:
 - [Almost Unified](https://www.curseforge.com/minecraft/mc-mods/almost-unified) 0.5.0 -> 0.6.0
