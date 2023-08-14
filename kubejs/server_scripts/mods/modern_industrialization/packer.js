@@ -14,6 +14,7 @@ ServerEvents.recipes(e => {
     let bl = (id) => `blockus:${id}`;
     let pd = (id) => `pineapple_delight:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let md = (id) => `moderndynamics:${id}`;
 
     // -- PACKER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
@@ -41,6 +42,90 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- FLUID PIPE -- //
+    packer(
+        st('fluid_pipe'),
+        4,
+        200,
+        [
+            { amount: 1, tag: 'modern_industrialization:fluid_pipes' },
+            { amount: 2, item: mi('copper_plate') }
+        ],
+        [ { amount: 8, item: md('fluid_pipe') } ]
+    );
+
+    // -- ITEM PIPE -- //
+    packer(
+        st('item_pipe'),
+        4,
+        200,
+        [
+            { amount: 1, tag: 'modern_industrialization:item_pipes' },
+            { amount: 2, item: mi('iron_plate') }
+        ],
+        [ { amount: 8, item: md('item_pipe') } ]
+    );
+
+    // -- SUPERCONDUCTOR EU CABLE -- //
+    packer(
+        st('superconductor_eu_cable'),
+        4,
+        200,
+        [
+            { amount: 1, item: mi('superconductor_cable') },
+            { amount: 2, item: mi('rubber_sheet') }
+        ],
+        [ { amount: 4, item: md('superconductor_cable') } ]
+        );
+
+    // -- EV EU CABLE -- //
+    packer(
+        st('ev_eu_cable'),
+        4,
+        200,
+        [
+            { amount: 1, tag: 'kubejs:ev_wire' },
+            { amount: 2, item: mi('rubber_sheet') }
+        ],
+        [ { amount: 4, item: md('ev_cable') } ]
+    );
+
+    // -- HV EU CABLE -- //
+    packer(
+        st('hv_eu_cable'),
+        4,
+        200,
+        [
+            { amount: 1, tag: 'kubejs:hv_wire' },
+            { amount: 2, item: mi('rubber_sheet') }
+        ],
+        [ { amount: 4, item: md('hv_cable') } ]
+    ); 
+
+    // -- MV EU CABLE -- //
+    packer(
+        st('mv_eu_cable'),
+        4,
+        200,
+        [
+            { amount: 1, tag: 'kubejs:mv_wire' },
+            { amount: 2, item: mi('rubber_sheet') }
+        ],
+        [ { amount: 4, item: md('mv_cable') } ]
+    ); 
+
+    // -- LV EU CABLE -- //
+    packer(
+        st('lv_eu_cable'),
+        4,
+        200,
+        [
+            { amount: 1, tag: 'kubejs:lv_wire' },
+            { amount: 2, item: mi('rubber_sheet') }
+        ],
+        [ { amount: 4, item: md('lv_cable') } ]
+    );    
 
     // -- LARGE STEAM MACERATOR -- //
     packer(

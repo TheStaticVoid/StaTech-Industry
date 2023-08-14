@@ -13,6 +13,7 @@ ServerEvents.recipes(e => {
     let kj = (id) => `kubejs:${id}`;
     let ae = (id) => `ae2:${id}`;
     let fd = (id) => `farmersdelight:${id}`;
+    let md = (id) => `moderndynamics:${id}`;
 
     // -- ASSEMBLER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [    
@@ -43,6 +44,60 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe).id(id);
     }
+
+    // -- ATTRACTOR -- //
+    assembler(
+        st('attractor'),
+        8,
+        200,
+        [
+            { amount: 2, item: mc('iron_ingot') },
+            { amount: 1, item: mc('redstone') },
+            { amount: 1, item: mc('ender_pearl') },
+            { amount: 1, item: mc('paper') }
+        ],
+        [ { amount: 1, item: md('attractor') } ],
+    );
+
+    // -- EXTREACTOR -- //
+    assembler(
+        st('extractor'),
+        8,
+        200,
+        [
+            { amount: 2, item: mc('iron_ingot') },
+            { amount: 1, item: mc('redstone') },
+            { amount: 1, item: mc('hopper') },
+            { amount: 1, item: mc('paper') }
+        ],
+        [ { amount: 1, item: md('extractor') } ],
+    );
+
+    // -- FILTER -- //
+    assembler(
+        st('filter'),
+        8,
+        200,
+        [
+            { amount: 2, item: mc('iron_ingot') },
+            { amount: 1, item: mc('redstone') },
+            { amount: 1, item: mc('lapis_lazuli') },
+            { amount: 1, item: mc('paper') }
+        ],
+        [ { amount: 1, item: md('filter') } ],
+    );
+
+    // -- INHIBITOR -- //
+    assembler(
+        st('inhibitor'),
+        8,
+        200,
+        [
+            { amount: 2, item: mc('iron_ingot') },
+            { amount: 1, item: mc('iron_nugget') }
+        ],
+        [ { amount: 4, item: md('inhibitor') } ],
+    );
 
     // -- MISSING TEXTURE COOKIE -- //
     assembler(
