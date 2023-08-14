@@ -49,7 +49,7 @@ ServerEvents.recipes(e => {
         4,
         200,
         [
-            { amount: 1, tag: 'modern_industrialization:fluid_pipes' },
+            { amount: 1, tag: mi('fluid_pipes') },
             { amount: 2, item: mi('copper_plate') }
         ],
         [ { amount: 8, item: md('fluid_pipe') } ]
@@ -61,7 +61,7 @@ ServerEvents.recipes(e => {
         4,
         200,
         [
-            { amount: 1, tag: 'modern_industrialization:item_pipes' },
+            { amount: 1, tag: mi('item_pipes') },
             { amount: 2, item: mi('iron_plate') }
         ],
         [ { amount: 8, item: md('item_pipe') } ]
@@ -77,7 +77,7 @@ ServerEvents.recipes(e => {
             { amount: 2, item: mi('rubber_sheet') }
         ],
         [ { amount: 4, item: md('superconductor_cable') } ]
-        );
+    );
 
     // -- EV EU CABLE -- //
     packer(
@@ -85,7 +85,7 @@ ServerEvents.recipes(e => {
         4,
         200,
         [
-            { amount: 1, tag: 'kubejs:ev_wire' },
+            { amount: 1, tag: kj('ev_wire') },
             { amount: 2, item: mi('rubber_sheet') }
         ],
         [ { amount: 4, item: md('ev_cable') } ]
@@ -97,7 +97,7 @@ ServerEvents.recipes(e => {
         4,
         200,
         [
-            { amount: 1, tag: 'kubejs:hv_wire' },
+            { amount: 1, tag: kj('hv_wire') },
             { amount: 2, item: mi('rubber_sheet') }
         ],
         [ { amount: 4, item: md('hv_cable') } ]
@@ -109,7 +109,7 @@ ServerEvents.recipes(e => {
         4,
         200,
         [
-            { amount: 1, tag: 'kubejs:mv_wire' },
+            { amount: 1, tag: kj('mv_wire') },
             { amount: 2, item: mi('rubber_sheet') }
         ],
         [ { amount: 4, item: md('mv_cable') } ]
@@ -121,7 +121,7 @@ ServerEvents.recipes(e => {
         4,
         200,
         [
-            { amount: 1, tag: 'kubejs:lv_wire' },
+            { amount: 1, tag: kj('lv_wire') },
             { amount: 2, item: mi('rubber_sheet') }
         ],
         [ { amount: 4, item: md('lv_cable') } ]

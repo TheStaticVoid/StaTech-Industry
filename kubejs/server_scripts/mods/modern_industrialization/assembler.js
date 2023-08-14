@@ -73,7 +73,7 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: md('attractor') } ],
     );
 
-    // -- EXTREACTOR -- //
+    // -- EXTRACTOR -- //
     assembler(
         st('extractor'),
         8,
