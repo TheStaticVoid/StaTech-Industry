@@ -15,7 +15,7 @@ ServerEvents.recipes(e => {
         wc('basic_wireless_block_charger'),
         wc('advanced_wireless_block_charger'),
         wc('basic_wireless_player_charger'),
-        wc('advanced_wireless_block_charger')
+        wc('advanced_wireless_player_charger')
     ];
     REMOVED_RECIPES.forEach(id => e.remove({ id: id }));
 
@@ -50,18 +50,14 @@ ServerEvents.recipes(e => {
     .id(st('basic_wireless_player_charger'));
 
     // -- ADVANCED WIRELESS BLOCK CHARGER -- //
-    e.smithing(
-        wc('advanced_wireless_block_charger'), 
+    e.shapeless(wc('advanced_wireless_block_charger'), [
         wc('basic_wireless_block_charger'),
-        '3x ' + mi('annealed_copper_cable')   
-    )
-    .id(st('advanced_wireless_block_charger'));
+        '3x ' + mi('annealed_copper_cable')
+    ]).id(st('advanced_wireless_block_charger'));
 
     // -- ADVANCED WIRELESS PLAYER CHARGER -- //
-    e.smithing(
-        wc('advanced_wireless_player_charger'),
+    e.shapeless(wc('advanced_wireless_player_charger'), [
         wc('basic_wireless_player_charger'),
         '3x ' + mi('kanthal_cable')
-    )
-    .id(st('advanced_wireless_player_charger'));
+    ]).id(st('advanced_wireless_player_charger'));
 });
