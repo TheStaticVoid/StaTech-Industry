@@ -18,3 +18,4 @@ General bugfix update. Please note this update also includes the fixes for the M
 - [Fixed infested stone bricks being used as the requirement for the Large Steam Furnace](https://github.com/TheStaticVoid/StaTech-Industry/issues/383)
 - [Questbook typo fixes](https://github.com/TheStaticVoid/StaTech-Industry/issues/386)
 - [Fixed wireless charger recipes](https://github.com/TheStaticVoid/StaTech-Industry/issues/384)
+- [Added Nether Delight's loot table for Striders](https://github.com/TheStaticVoid/StaTech-Industry/issues/385)
