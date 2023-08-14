@@ -14,6 +14,7 @@ General bugfix update. Please note this update also includes the fixes for the M
 - [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.18.0 -> 5.18.1
 
 ## Other changes:
+- [Add packer/assembler recipes for Modern Dynamics items - by @GW-Dev](https://github.com/TheStaticVoid/StaTech-Industry/pull/387)
 - [Fixed fake iron block being a quest reward](https://github.com/TheStaticVoid/StaTech-Industry/issues/381)
 - [Fixed infested stone bricks being used as the requirement for the Large Steam Furnace](https://github.com/TheStaticVoid/StaTech-Industry/issues/383)
 - [Questbook typo fixes](https://github.com/TheStaticVoid/StaTech-Industry/issues/386)
