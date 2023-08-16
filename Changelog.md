@@ -6,20 +6,25 @@ General bugfix update. Please note this update also includes the fixes for the M
 Finally a use for all that excess blood from the Mob Crusher multiblock! Unlocked at the HV-tier, it (hopefully) is a powerful alternate power generation method. This large multiblock generator is made possible by the continued continued support of the MI devs!
 
 ## Mods added:
+- [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) - New dependency for Smooth Chunk Save
 - [Shear Cows](https://www.curseforge.com/minecraft/mc-mods/shear-cows) - Lets you get leather from cows without having to kill them
 
 ## Mods updated:
 - [Almost Unified](https://www.curseforge.com/minecraft/mc-mods/almost-unified) 0.5.0 -> 0.6.0
 - [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) 0.10.19 -> 0.10.20
-- [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice) - 2.2.1 -> 2.3.0
+- [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice) - 2.2.1 -> 2.3.1
 - [Extreme Sound Muffler](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler-fabric-official) - 3.37 -> 3.38
 - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) - 0.76.0 -> 0.76.1
+- [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric) - 1902.5.3-build.258 -> 1902.5.3-build.268
 - [Geocluster](https://www.curseforge.com/minecraft/mc-mods/geocluster) - 1.2.4 -> 1.2.5
+- [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.1-build.352 -> 1902.6.1-build.362
 - [megane](https://www.curseforge.com/minecraft/mc-mods/megane) - 8.5.0 -> 8.5.1
 - [Modern Industrialization](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization) - 1.6.12 -> 1.6.14
+- [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.6.0 -> 5.6.1
 - [Moonlight Lib](https://www.curseforge.com/minecraft/mc-mods/selene) - 2.2.43 -> 2.2.44
-- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.18 -> 2.4.19
+- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.18 -> 2.4.20
 - [Smooth Chunk Save](https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save) 3.0 -> 3.1
+- [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) - 2.3.20 -> 2.3.22
 - [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.18.0 -> 5.18.1
 
 ## Other changes:
