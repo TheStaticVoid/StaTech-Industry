@@ -4524,7 +4524,7 @@
 			description: [
 				"While that &aNetherite Suit&r is a fancy upgrade, wouldn't you like to wear your &eown armor&r into space? With the &2Space Breathing&r &denchantment&r, you can! "
 				""
-				"This &denchantment&r &cmust be applied to ALL pieces of armor&r, and you must have an &3Oxygen Can&r in your inventory in order for it to work."
+				"This &denchantment&r &cmust be applied to your helmet&r, and you must have an &3Oxygen Can&r in your inventory in order for it to work."
 				""
 				"&eTip&r: Keep your &aNetherite Suit&r for now, but remember that you can come back and make this later..."
 			]
@@ -4569,7 +4569,11 @@
 		}
 		{
 			dependencies: ["299AA5584498D69A"]
-			description: ["Annoyed by the &6different gravity&r on planets? You can &denchant&r your gear with &aGravity Normalizing&r to negate this effect."]
+			description: [
+				"Annoyed by the &6different gravity&r on planets? You can &denchant&r your gear with &aGravity Normalizing&r to negate this effect."
+				""
+				"It only needs to be applied to your boots."
+			]
 			id: "1EBCB519969F0209"
 			rewards: [
 				{
@@ -4611,7 +4615,11 @@
 		}
 		{
 			dependencies: ["488543DD1EEAF483"]
-			description: ["&cAcid Rain&r on &6Venus&r got you down? Don't let it rain on your parade with the &aAcid Rain Proof&r &denchantment&r!"]
+			description: [
+				"&cAcid Rain&r on &6Venus&r got you down? Don't let it rain on your parade with the &aAcid Rain Proof&r &denchantment&r!"
+				""
+				"It only needs to be applied to your chest piece."
+			]
 			id: "07913F5C716CE148"
 			rewards: [
 				{
@@ -4653,7 +4661,11 @@
 		}
 		{
 			dependencies: ["234D4BC93E0C9108"]
-			description: ["Need to make sure you don't &cburn up&r in a hot atmosphere? The &eSpace Fire Proof&r will prevent the damage you take from hot planets."]
+			description: [
+				"Need to make sure you don't &cburn up&r in a hot atmosphere? The &eSpace Fire Proof&r will prevent the damage you take from hot planets."
+				""
+				"It only needs to be applied to your chest piece. From testing, this doesn't appear to work on chestplates that are rechargeable (Gravichestplate, Nano Chestplate, etc.)"
+			]
 			id: "27CD6298402490F1"
 			rewards: [
 				{
