@@ -51,6 +51,21 @@ ServerEvents.recipes(e => {
     // -- CONVERSION RECIPE FOR EXISTING WORLDS -- //
     e.shapeless(mi('laser_engraver'), [ ae('inscriber') ]).id(st('laser_engraver_conversion'));
 
+    // -- BLOOD GENERATOR -- //
+    e.shaped(mi('blood_generator'), [
+        'RCR',
+        'THT',
+        'PCP'
+    ],
+    {
+        H: mi('turbo_machine_hull'),
+        T: mi('hv_steam_turbine'),
+        C: mi('digital_circuit'),
+        R: mi('stainless_steel_rotor'),
+        P: mi('advanced_pump')
+    })
+    .id(st('blood_generator'));
+
     // -- LARGE STEAM MACERATOR -- // 
     e.shaped(mi('large_steam_macerator'), [
         'BBB',

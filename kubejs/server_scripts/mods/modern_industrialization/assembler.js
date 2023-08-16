@@ -45,6 +45,21 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- BLOOD GENERATOR -- //
+    assembler(
+        st('blood_generator'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('advanced_pump') },
+            { amount: 2, item: mi('digital_circuit') },
+            { amount: 2, item: mi('hv_steam_turbine') },
+            { amount: 2, item: mi('stainless_steel_rotor') },
+            { amount: 1, item: mi('turbo_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('blood_generator') } ]
+    );
+
     // -- MACHINE EXTENDER -- //
     assembler(
         st('machine_extender'),

@@ -329,8 +329,8 @@
 				}
 			]
 			title: "The Distillation Tower"
-			x: 5.25d
-			y: -3.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["68CE43C175FB0826"]
@@ -5008,7 +5008,7 @@
 				}
 			]
 			x: 2.5d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["68CE43C175FB0826"]
@@ -5520,6 +5520,146 @@
 			}]
 			x: 25.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["529FBE21C8B21DC1"]
+			description: [
+				"Do you want to turn that excess &cBlood&r from the &aMob Crusher&r into something useful? Why not use it to &2power your ever expanding factory&r. By providing the &dentity&r within the machine (definitely not &dLilith&r) bountiful amounts of &cBlood&r it will provide you with &ecopious amounts of power&r."
+				""
+				"The &aBlood Generator&r multiblock can output up to &68192 EU/t&r, the &dmaximum cable transfer speed&r of the &eHV tier&r. Blood is consumed at &6512 EU/mB&r within the multiblock."
+				""
+				"It's also&c rather large&r, I would recommend using the preview feature with the &6MI Wrench&r. Place the &aBlood Generator&r block and put the &6wrench&r in your offhand to easily build this one."
+				""
+				""
+				"&oTwo niche references in a single quest, heh&r"
+			]
+			icon: "modern_industrialization:blood_generator"
+			id: "446E637986CA7147"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "41BA6C157E7B41D3"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 10
+					id: "39ADEF89221DD6F8"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "285A345E222CABA1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			subtitle: "Blood for the blood god"
+			tasks: [
+				{
+					id: "730CF27984349195"
+					item: "modern_industrialization:blood_generator"
+					type: "item"
+				}
+				{
+					count: 80L
+					id: "060AB051112BFA4D"
+					item: "ad_astra:steel_pillar"
+					type: "item"
+				}
+				{
+					count: 78L
+					id: "3DA04DA8B09FAEC6"
+					item: "minecraft:tinted_glass"
+					type: "item"
+				}
+				{
+					count: 72L
+					id: "784CDD2F912F7ED3"
+					item: "modern_industrialization:steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "6BA94DD41E7BCDF8"
+					item: "modern_industrialization:steel_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "72E009EEF808564F"
+					item: "blockus:red_glazed_terracotta_pillar"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "2D60E0AB052FA06F"
+					item: "create:experience_block"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "3CE3AE9BF190B180"
+					item: "factory_blocks:fan_on"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "71D3DC2123A01DC7"
+					item: "factory_blocks:vent"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "695FB8E13A47218B"
+					item: "architects_palette:osseous_brick_wall"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "721A9CE685314116"
+					item: "architects_palette:osseous_pillar"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "42178A6447B91E6D"
+					item: "factory_blocks:megacell"
+					type: "item"
+				}
+				{
+					id: "48069976E139811D"
+					item: "architects_palette:lit_osseous_skull"
+					type: "item"
+				}
+				{
+					id: "13C595303C0282EB"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					id: "52688B36789B309E"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_output_hatch"
+						}
+					}
+					title: "Any Energy Output Hatch"
+					type: "item"
+				}
+			]
+			x: 4.25d
+			y: -4.0d
 		}
 	]
 	subtitle: ["High tech!"]

@@ -36,6 +36,7 @@ Ponder.tags((event) => {
         'modern_industrialization:large_chemical_reactor',
         'modern_industrialization:large_steam_furnace',
         'modern_industrialization:large_steam_macerator',
-        'modern_industrialization:boss_crusher'
+        'modern_industrialization:boss_crusher',
+        'modern_industrialization:blood_generator'
     ]);
 });
