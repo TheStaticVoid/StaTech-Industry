@@ -2441,7 +2441,7 @@
 		{
 			dependencies: ["791C2898ADBEFEED"]
 			description: [
-				"Ambition has token hold of you, seriously, your first steps towards changing the world. &dEmpowered&r by the potent energy of your &aOnyx&r and &cStratine&r, this second &aorganism&r you created is clearly... more active than your last creation."
+				"Ambition has taken hold of you. This is your first steps towards changing the world. &dEmpowered&r by the potent energy of your &aOnyx&r and &cStratine&r, this second &aorganism&r you created is clearly... more active than your last creation."
 				""
 				"&l&cAnd DEFINITELY hungrier. WAY hungrier.&r"
 				""
@@ -6528,11 +6528,12 @@
 				id: "189BBEB3109D8EC5"
 				item: {
 					Count: 1b
-					id: "wizards:staff_netherite_frost"
+					id: "itemfilters:tag"
 					tag: {
-						Damage: 0
+						value: "kubejs:basic_netherite_staffs"
 					}
 				}
+				title: "Any Basic Netherite Staff"
 				type: "item"
 			}]
 			title: "Netherite Staffs"

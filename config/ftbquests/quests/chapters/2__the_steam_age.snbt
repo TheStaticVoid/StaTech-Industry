@@ -3074,7 +3074,7 @@
 				item: "techreborn:electric_treetap"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 11.0d
 			y: 1.5d
 		}
 		{
@@ -3141,7 +3141,7 @@
 				item: "modern_industrialization:configurable_chest"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 13.0d
 			y: 1.5d
 		}
 		{
@@ -3185,7 +3185,7 @@
 				type: "item"
 			}]
 			title: "Scannable"
-			x: 12.5d
+			x: 14.0d
 			y: 1.5d
 		}
 		{
@@ -3216,7 +3216,7 @@
 				item: "scannable:range_module"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: 0.0d
 		}
 		{
@@ -3247,7 +3247,7 @@
 				item: "scannable:entity_module"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -3278,7 +3278,7 @@
 				item: "scannable:friendly_entity_module"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 14.5d
 			y: 0.0d
 		}
 		{
@@ -3309,7 +3309,7 @@
 				item: "scannable:hostile_entity_module"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.5d
 			y: 0.0d
 		}
 		{
@@ -3340,7 +3340,7 @@
 				item: "scannable:block_module"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.5d
 			y: -1.0d
 		}
 		{
@@ -3371,7 +3371,7 @@
 				item: "scannable:common_ores_module"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.5d
 			y: -1.0d
 		}
 		{
@@ -3402,7 +3402,7 @@
 				item: "scannable:rare_ores_module"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 14.5d
 			y: -1.0d
 		}
 		{
@@ -3433,7 +3433,7 @@
 				item: "scannable:fluid_module"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.5d
 			y: -1.0d
 		}
 		{
@@ -4562,7 +4562,7 @@
 				{
 					count: 9L
 					id: "69903E2186396A78"
-					item: "minecraft:infested_stone_bricks"
+					item: "minecraft:stone_bricks"
 					type: "item"
 				}
 				{
@@ -4697,6 +4697,45 @@
 			]
 			x: 11.75d
 			y: 16.0d
+		}
+		{
+			dependencies: ["72090D36C27DC4AF"]
+			description: [
+				"The &aPortable Storage Unit&r can be crafted to transport energy in your inventory. It can be charged and discharged by right-clicking on &2any tier of storage unit&r."
+				""
+				"By default, &cit has no energy storage capacity&r. To &3add capacity&r, you need to fill it with &dbatteries&r by either right-clicking on the &aPSU&r with &dbatteries&r or by right-clicking on a &dbattery&r while holding the &aPSU&r. "
+				""
+				"The &bhigher level the batteries&r are, the &3more capacity&r they will add to the storage. You can get the &dbattery&r back by right-clicking on an empty slot with the &aPSU&r, but be warned, &cany excess energy will be lost&r!"
+				""
+				"&cNo, it cannot be used to charge things in your inventory&r. If you want/need that make the Red Cell Battery from &eTechReborn&r."
+			]
+			id: "14609EFBE2CFB9D5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "18B388085012FEDC"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "768E0E5651FFC3AD"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "49A9DE46EC320667"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "39FBD9EAD695E37F"
+				item: "modern_industrialization:portable_storage_unit"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["The Basis of Industry"]

@@ -329,8 +329,8 @@
 				}
 			]
 			title: "The Distillation Tower"
-			x: 5.25d
-			y: -3.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["68CE43C175FB0826"]
@@ -510,7 +510,7 @@
 				""
 				"To load &bOxygen&r directly into your suit, place the chest piece in the &aOxygen Loader&r. No other parts of the suit will need to have &bOxygen&r loaded to them. You can refill &bOxygen&r while you're still wearing the suit by right-clicking with &dOxygen Tanks&r while holding them."
 				""
-				"Be careful, as this suit is &cfairly weak&r, and if it breaks while you're not in an &bOyxgen&r rich-atmosphere you're going to be in big trouble!"
+				"Be careful, as this suit is &cfairly weak&r, and if it breaks while you're not in an &bOxygen-rich&r atmosphere you're going to be in big trouble!"
 			]
 			id: "240A32C6B7DD0DD5"
 			rewards: [
@@ -1247,9 +1247,9 @@
 		{
 			dependencies: ["2E7F7728159E3823"]
 			description: [
-				"The &bME Wireless Access Point&r allows wireless access via a Wireless Terminal. Range and power usage are determined based on the number of &aWireless Booster&r installed into the ME Wireless Access Point."
+				"The &bME Wireless Access Point&r allows wireless access via a Wireless Terminal. Range and power usage are determined based on the number of &aWireless Boosters&r installed into the ME Wireless Access Point."
 				""
-				"A network can have any number of &bME Wireless Access Point&r with any number of &aWireless Booster&r in each one, allowing you to optimize power usage and range by altering your setup."
+				"A network can have any number of &bME Wireless Access Points&r with any number of &aWireless Boosters&r in each one, allowing you to optimize power usage and range by altering your setup."
 				""
 				"Requires a channel to be operational."
 			]
@@ -3458,7 +3458,10 @@
 				"Specifically, you should look to use the recipe that takes &2steam&r and &3HP water&r as an input, and outputs &bregular water&r and &aHP steam&r. "
 				""
 				"If you need help building the multiblock you can view the &bPonder&r scene by holding 'W' on the &bHeat Exchanger&r block in your inventory or by holding your wrench out with the &bHeat Exchanger&r placed."
+				""
+				"&cNote:&r Be wary of the recipe amounts, as you &6might need higher tiers of hatches&r to satisfy the recipe."
 			]
+			icon: "modern_industrialization:heat_exchanger"
 			id: "1C6856D2C944D9F2"
 			rewards: [
 				{
@@ -3480,11 +3483,57 @@
 				}
 			]
 			shape: "square"
-			tasks: [{
-				id: "4FBBFE944FDE8A3C"
-				item: "modern_industrialization:heat_exchanger"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4FBBFE944FDE8A3C"
+					item: "modern_industrialization:heat_exchanger"
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "17CADB4F298A781C"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7875DAD6DA6FB1FD"
+					item: "modern_industrialization:frostproof_machine_casing"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "2F08C7ED2E8CF75A"
+					item: "modern_industrialization:heatproof_machine_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00C89A778225D268"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Two Fluid Input Hatches"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "38FCB7687EEE2664"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					title: "Any Two Fluid Output Hatches"
+					type: "item"
+				}
+			]
 			x: 15.0d
 			y: -2.5d
 		}
@@ -4524,7 +4573,7 @@
 			description: [
 				"While that &aNetherite Suit&r is a fancy upgrade, wouldn't you like to wear your &eown armor&r into space? With the &2Space Breathing&r &denchantment&r, you can! "
 				""
-				"This &denchantment&r &cmust be applied to ALL pieces of armor&r, and you must have an &3Oxygen Can&r in your inventory in order for it to work."
+				"This &denchantment&r &cmust be applied to your helmet&r, and you must have an &3Oxygen Can&r in your inventory in order for it to work."
 				""
 				"&eTip&r: Keep your &aNetherite Suit&r for now, but remember that you can come back and make this later..."
 			]
@@ -4569,7 +4618,11 @@
 		}
 		{
 			dependencies: ["299AA5584498D69A"]
-			description: ["Annoyed by the &6different gravity&r on planets? You can &denchant&r your gear with &aGravity Normalizing&r to negate this effect."]
+			description: [
+				"Annoyed by the &6different gravity&r on planets? You can &denchant&r your gear with &aGravity Normalizing&r to negate this effect."
+				""
+				"It only needs to be applied to your boots."
+			]
 			id: "1EBCB519969F0209"
 			rewards: [
 				{
@@ -4611,7 +4664,11 @@
 		}
 		{
 			dependencies: ["488543DD1EEAF483"]
-			description: ["&cAcid Rain&r on &6Venus&r got you down? Don't let it rain on your parade with the &aAcid Rain Proof&r &denchantment&r!"]
+			description: [
+				"&cAcid Rain&r on &6Venus&r got you down? Don't let it rain on your parade with the &aAcid Rain Proof&r &denchantment&r!"
+				""
+				"It only needs to be applied to your chest piece."
+			]
 			id: "07913F5C716CE148"
 			rewards: [
 				{
@@ -4653,7 +4710,11 @@
 		}
 		{
 			dependencies: ["234D4BC93E0C9108"]
-			description: ["Need to make sure you don't &cburn up&r in a hot atmosphere? The &eSpace Fire Proof&r will prevent the damage you take from hot planets."]
+			description: [
+				"Need to make sure you don't &cburn up&r in a hot atmosphere? The &eSpace Fire Proof&r will prevent the damage you take from hot planets."
+				""
+				"It only needs to be applied to your chest piece. From testing, this doesn't appear to work on chestplates that are rechargeable (Gravichestplate, Nano Chestplate, etc.)"
+			]
 			id: "27CD6298402490F1"
 			rewards: [
 				{
@@ -5008,7 +5069,7 @@
 				}
 			]
 			x: 2.5d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["68CE43C175FB0826"]
@@ -5520,6 +5581,146 @@
 			}]
 			x: 25.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["529FBE21C8B21DC1"]
+			description: [
+				"Do you want to turn that excess &cBlood&r from the &aMob Crusher&r into something useful? Why not use it to &2power your ever expanding factory&r. By providing the &dentity&r within the machine (definitely not &dLilith&r) bountiful amounts of &cBlood&r it will provide you with &ecopious amounts of power&r."
+				""
+				"The &aBlood Generator&r multiblock can output up to &68192 EU/t&r, the &dmaximum cable transfer speed&r of the &eHV tier&r. Blood is consumed at &6512 EU/mB&r within the multiblock."
+				""
+				"It's also&c rather large&r, I would recommend using the preview feature with the &6MI Wrench&r. Place the &aBlood Generator&r block and put the &6wrench&r in your offhand to easily build this one."
+				""
+				""
+				"&oTwo niche references in a single quest, heh&r"
+			]
+			icon: "modern_industrialization:blood_generator"
+			id: "446E637986CA7147"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "41BA6C157E7B41D3"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 10
+					id: "39ADEF89221DD6F8"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "285A345E222CABA1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			subtitle: "Blood for the blood god"
+			tasks: [
+				{
+					id: "730CF27984349195"
+					item: "modern_industrialization:blood_generator"
+					type: "item"
+				}
+				{
+					count: 80L
+					id: "060AB051112BFA4D"
+					item: "ad_astra:steel_pillar"
+					type: "item"
+				}
+				{
+					count: 78L
+					id: "3DA04DA8B09FAEC6"
+					item: "minecraft:tinted_glass"
+					type: "item"
+				}
+				{
+					count: 72L
+					id: "784CDD2F912F7ED3"
+					item: "modern_industrialization:steel_machine_casing"
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "6BA94DD41E7BCDF8"
+					item: "modern_industrialization:steel_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "72E009EEF808564F"
+					item: "blockus:red_glazed_terracotta_pillar"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "2D60E0AB052FA06F"
+					item: "create:experience_block"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "3CE3AE9BF190B180"
+					item: "factory_blocks:fan_on"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "71D3DC2123A01DC7"
+					item: "factory_blocks:vent"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "695FB8E13A47218B"
+					item: "architects_palette:osseous_brick_wall"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "721A9CE685314116"
+					item: "architects_palette:osseous_pillar"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "42178A6447B91E6D"
+					item: "factory_blocks:megacell"
+					type: "item"
+				}
+				{
+					id: "48069976E139811D"
+					item: "architects_palette:lit_osseous_skull"
+					type: "item"
+				}
+				{
+					id: "13C595303C0282EB"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Fluid Input Hatch"
+					type: "item"
+				}
+				{
+					id: "52688B36789B309E"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:energy_output_hatch"
+						}
+					}
+					title: "Any Energy Output Hatch"
+					type: "item"
+				}
+			]
+			x: 4.25d
+			y: -4.0d
 		}
 	]
 	subtitle: ["High tech!"]

@@ -195,7 +195,7 @@ ServerEvents.recipes(e => {
         st('raw_platinum'),
         powerConstant,
         200 * timeMultiplier,
-        [ { amount: 1, tag: 'c:sheldonite_ores' } ],
+        [ { amount: 1 * amountMultiplier, tag: 'c:sheldonite_ores' } ],
         [ { amount: 3 * amountMultiplier, item: mi('raw_platinum') } ]
     );
 
@@ -204,7 +204,7 @@ ServerEvents.recipes(e => {
         st('raw_zinc'),
         powerConstant,
         200 * timeMultiplier,
-        [ { amount: 1, tag: 'c:zinc_ores' } ],
+        [ { amount: 1 * amountMultiplier, tag: 'c:zinc_ores' } ],
         [ { amount: 3 * amountMultiplier, item: 'create:raw_zinc'} ]
     );
 
