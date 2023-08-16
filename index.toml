@@ -226,7 +226,7 @@ hash = "851226d5d7632c8f85cde7dd8ad70985bffb3307f6757f1ffb9163d309d5df38"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2__the_steam_age.snbt"
-hash = "3bf4c469c14864348e96e4bff0d2a18f3190e942cdd850babec18bfcac0fe274"
+hash = "2e6ba5126087328612aef8597fe0c88622fd91bdccbeb5d33b3cfe91f2ba4ebd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3__electrical_age.snbt"
@@ -234,7 +234,7 @@ hash = "ef1283daa3c8c95e6cb775e824380641089420026d91d5cc9be0a823bca1e037"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4__digital_age.snbt"
-hash = "914bcdb8b6bb7a10b0d0351480fb0f7d4cfb779329be213ba43dc5cf652c4d99"
+hash = "9b4fb1ef120362afe59e2082404100f945c984a931d5f53635844fe61a590c3a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/5__nuclear_age.snbt"
@@ -366,7 +366,7 @@ hash = "ca413dea02cce69c69dccdc525fb0ec013236876eff2d142772c68db3d772d3a"
 
 [[files]]
 file = "config/inventoryprofilesnext/integrationHints/player-defined.json"
-hash = "f879140cabe29c812cd17de903399d8febddad9ab40a97b7a79e15fab32ec4b3"
+hash = "9c426de8ec97a730e875a15713a58bc2673931d0aa73f33a89d6cbb1d4581515"
 
 [[files]]
 file = "config/inventoryprofilesnext/integrationHints/supplimenteries.json"
@@ -691,6 +691,10 @@ hash = "78526859e08618f8f0db280b70ce7bf1fc8371acbdb1bac8519609bef31de535"
 [[files]]
 file = "kubejs/assets/kubejs/ponder/advanced_large_steam_boiler.nbt"
 hash = "ea3567b99f9938da7371e0b8873f6f31fe885b135df6e98e3458404f5181876b"
+
+[[files]]
+file = "kubejs/assets/kubejs/ponder/blood_generator.nbt"
+hash = "82de082633a15fbb86fd2ac4a0a4e2623e384d616614b0b56d952a14f7a8134c"
 
 [[files]]
 file = "kubejs/assets/kubejs/ponder/boss_crusher.nbt"
@@ -1227,6 +1231,10 @@ hash = "2dc42e04eb4f0fde131e191fa771352f308e73c0b3fd0f9c3b4483c194423603"
 [[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/blood.json"
 hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/blockstates/blood_generator.json"
+hash = "4a7faff41a4cadfcbe23126499b0434d1977583a4a73f7f8fe3d16e01143b820"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/boosted_diesel.json"
@@ -2510,7 +2518,7 @@ hash = "1c085405833b5e1a6bb60f4feb2a9bb2fda4d27b8953c5f94d64731e2e30da8f"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/lang/en_us.json"
-hash = "753e16f3bc7e722ab39e9fb78e7e441c825d5e60a990ff39bf59482fb7d22ef5"
+hash = "57552d932dc56fdcc9af74b9afbf8c3d7d1351eeaeb41c834b152ab0ad3fbd44"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/block/advanced_machine_casing.json"
@@ -6609,6 +6617,10 @@ file = "kubejs/assets/modern_industrialization/models/machine/assembler.json"
 hash = "0baf6672e8a65402a81a7b2980bce91641927e2da8de4f0313ee12a9371d4514"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/models/machine/blood_generator.json"
+hash = "10f5e7180813aa07c1fab1f941effa779dbfc074497946d550994e1f03bfffa9"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/models/machine/boss_crusher.json"
 hash = "fd4d724fa62182d0ccb71ee93b1eabaf3ba2e6f5a068571d3cda56ad2297176c"
 
@@ -7835,6 +7847,18 @@ hash = "7e0c073afa999bd7be4fc93d9564c3994b21126523efdd889e4f86a0f2fe462f"
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/assembler/overlay_top_active.png"
 hash = "d9e30071a3a18487b32c3271eb61244ef0939e9b9e8aaadb0a6706be9005780f"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/blood_generator/overlay_front.png"
+hash = "2ec148da4496196ede182397731b62d18b2230a6ce3d270cada9c99faab0e27b"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/blood_generator/overlay_front_active.png"
+hash = "64582f9f40d14aa59adec127e0a459d6e47018488ebc370130b6ec563a570421"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/block/machines/blood_generator/overlay_front_active.png.mcmeta"
+hash = "f2e6dc80196c6dc10b50b367ffd6adea745a9fcfcc36c43bc57e55644ed8be2c"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/block/machines/boiler/overlay_front.png"
@@ -11806,7 +11830,7 @@ hash = "263f822b7725cabcb0038538fb5b7e530cca1ce664880a227186a4f4f2938ca4"
 
 [[files]]
 file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
-hash = "4b37150dd0f9e697e5432c976178d376028486bf0163f5e49bc003bc16f56e8b"
+hash = "19ce2ac2df73176c1fd0110e421d9f9d1fdab2436e24bae59f4743a40608af90"
 
 [[files]]
 file = "kubejs/assets/statech/textures/item/bronze_pump.png"
@@ -11855,6 +11879,10 @@ hash = "9f17656a33ab3e59fb461db853457ce12db310f4fa02dc6bdd48da89a2a8914b"
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/advanced_large_steam_boiler.js"
 hash = "4fbd0484ae70072a53f18cbd58330a987dcc85256421e7a87b49f8f4cc51d9dc"
+
+[[files]]
+file = "kubejs/client_scripts/ponder/modern_industrialization/blood_generator.js"
+hash = "6fb26e7590769699d8cee622681feae0f17318e6f8e1b662da084e7752a8c544"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/boss_crusher.js"
@@ -11978,7 +12006,7 @@ hash = "632c91eced8ba157d056d43da269fb36e39ac7b70d1f861c007cba76b8595458"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/tag.js"
-hash = "a63257fcd3ccb1042d8c84005e705779d48e9185be8446c7a4d7872d73d46257"
+hash = "b8d399fd1db8cd5fdde8079bfab9eeae1b7fa1ec1dba1e61eb43663aee8cb715"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/vacuum_freezer.js"
@@ -13714,11 +13742,11 @@ hash = "d81b8bebd08ef4007e759418ba82fb3602e59bc69bb8e3bf268a51d2f9dd0baf"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/blocks/mineable/pickaxe.json"
-hash = "3ff4f1aeafca9a20056c37c221ce91a4909402e9c2391e67c51a1f9a733d3b3f"
+hash = "c3b1a2d58f5001c8cd9a660e385a86d4e667fc86522e1bac71b6e7f0289c2e75"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/blocks/needs_stone_tool.json"
-hash = "5406a24d4b03b98c0f2ac73804eba03085df5d62eea4a2d0f717f508b87ce2c9"
+hash = "2ebd2e4e8d56b03b5504f3b60727663f4d055c1a5f68db718bbf443d0d178c61"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/items/piglin_loved.json"
@@ -14083,6 +14111,10 @@ hash = "ad324915a2d7a7e9c3d9a4c20bceae56fedcd6ef2107266cdeec5591aca484c2"
 [[files]]
 file = "kubejs/data/modern_industrialization/loot_tables/blocks/blastproof_casing.json"
 hash = "584ab976a975922e172ec377fe0ce62950ba271367ca7f416f690ab0d1bf2b58"
+
+[[files]]
+file = "kubejs/data/modern_industrialization/loot_tables/blocks/blood_generator.json"
+hash = "c80f1f82d8979d2111695d60305dde909bd218beda8b74634b28f8f183b84ec6"
 
 [[files]]
 file = "kubejs/data/modern_industrialization/loot_tables/blocks/boss_crusher.json"
@@ -25310,7 +25342,7 @@ hash = "3e62bd63b333a2ff3222f58fe10e3f959c9969ecb7f1856ff7591296d7ba6012"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization.js"
-hash = "2f5c438fcc8176c90f1d7d0f62ea9eeab6382ffd8a00d8ac7c25f6e50c198643"
+hash = "7e1a616d058ffb372d5b7aeba3d31eadeda05e97a512893a09cc8d6a094d268e"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/alloy_smelter.js"
@@ -25318,7 +25350,7 @@ hash = "8085c982b9d733f00f2d76031a9e466f9698b9dc9be960e50fd1969634876cc5"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/assembler.js"
-hash = "de700db1a5030bc3c347dfa094032dded5554e923005dffa7da1fd7278a24fe9"
+hash = "077b9b9934f458e6f7d1fb1d13e5b6adc13d80fac5ee499b125dcfa55b226f14"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/blast_furnace.js"
@@ -25390,7 +25422,7 @@ hash = "1124203c1143d5efdd535f4239fbdc38cf9cde1b43680e34090ea3dcb04f0060"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/large_steam_macerator.js"
-hash = "5c7514c4a50f25ae4023b1dc1fe490fd10229981b2fc39ba4ba53cffbfced44f"
+hash = "c8e18bdf954d722c1c8002c1a0acb3cc52aac7f7c9f743ff67b3e1518bb70c88"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/laser_engraver.js"
@@ -25583,6 +25615,10 @@ hash = "ad3abae34f5e2f95b283432eaf76a4471d08aeda17379d6b908c3b029827691f"
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/materials.js"
 hash = "ec6aaf56ca5327f4f690b978df7e8244c076161a21dc3e812d32a484ed5f359a"
+
+[[files]]
+file = "kubejs/startup_scripts/modern_industrialization/multiblocks/blood_generator.js"
+hash = "81706baecee9f590b16c2d22cc6b96df5fb0398e0b3abba951887b7c01020df7"
 
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/multiblocks/boss_crusher.js"
