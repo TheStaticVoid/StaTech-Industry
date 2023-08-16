@@ -32,3 +32,4 @@ Finally a use for all that excess blood from the Mob Crusher multiblock! Unlocke
 - [Added Nether Delight's loot table for Striders](https://github.com/TheStaticVoid/StaTech-Industry/issues/385)
 - [Adjusted the Ad Astra Giselle Addition's quest descriptions to be more clear](https://github.com/TheStaticVoid/StaTech-Industry/issues/392)
 - [Add missing quest requirements for the Heat Exchanger quest](https://github.com/TheStaticVoid/StaTech-Industry/issues/394)
+- [Fixed certain Large Steam Macerator input amounts](https://github.com/TheStaticVoid/StaTech-Industry/issues/391)
