@@ -31,3 +31,4 @@ Finally a use for all that excess blood from the Mob Crusher multiblock! Unlocke
 - [Fixed wireless charger recipes](https://github.com/TheStaticVoid/StaTech-Industry/issues/384)
 - [Added Nether Delight's loot table for Striders](https://github.com/TheStaticVoid/StaTech-Industry/issues/385)
 - [Adjusted the Ad Astra Giselle Addition's quest descriptions to be more clear](https://github.com/TheStaticVoid/StaTech-Industry/issues/392)
+- [Add missing quest requirements for the Heat Exchanger quest](https://github.com/TheStaticVoid/StaTech-Industry/issues/394)

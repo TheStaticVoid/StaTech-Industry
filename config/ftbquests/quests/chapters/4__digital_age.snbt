@@ -3458,7 +3458,10 @@
 				"Specifically, you should look to use the recipe that takes &2steam&r and &3HP water&r as an input, and outputs &bregular water&r and &aHP steam&r. "
 				""
 				"If you need help building the multiblock you can view the &bPonder&r scene by holding 'W' on the &bHeat Exchanger&r block in your inventory or by holding your wrench out with the &bHeat Exchanger&r placed."
+				""
+				"&cNote:&r Be wary of the recipe amounts, as you &6might need higher tiers of hatches&r to satisfy the recipe."
 			]
+			icon: "modern_industrialization:heat_exchanger"
 			id: "1C6856D2C944D9F2"
 			rewards: [
 				{
@@ -3480,11 +3483,57 @@
 				}
 			]
 			shape: "square"
-			tasks: [{
-				id: "4FBBFE944FDE8A3C"
-				item: "modern_industrialization:heat_exchanger"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4FBBFE944FDE8A3C"
+					item: "modern_industrialization:heat_exchanger"
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "17CADB4F298A781C"
+					item: "modern_industrialization:stainless_steel_machine_casing_pipe"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7875DAD6DA6FB1FD"
+					item: "modern_industrialization:frostproof_machine_casing"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "2F08C7ED2E8CF75A"
+					item: "modern_industrialization:heatproof_machine_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00C89A778225D268"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_input_hatch"
+						}
+					}
+					title: "Any Two Fluid Input Hatches"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "38FCB7687EEE2664"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					title: "Any Two Fluid Output Hatches"
+					type: "item"
+				}
+			]
 			x: 15.0d
 			y: -2.5d
 		}
