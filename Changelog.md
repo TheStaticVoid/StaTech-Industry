@@ -25,3 +25,4 @@
 - [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) - 2.3.22 -> 2.3.24
 
 ## Other changes:
+- [Add GregSchizo to Emojiful](https://github.com/TheStaticVoid/StaTech-Industry/issues/396)
