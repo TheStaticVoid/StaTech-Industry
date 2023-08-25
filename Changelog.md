@@ -26,3 +26,5 @@
 
 ## Other changes:
 - [Add GregSchizo to Emojiful](https://github.com/TheStaticVoid/StaTech-Industry/issues/396)
+- [Fixed Crimson Berries being consumed in Photosynthetic Chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/396)
+- []

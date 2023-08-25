@@ -351,7 +351,7 @@ ServerEvents.recipes(e => {
         st('byg_crimson_berries'),
         8,
         600,
-        [ { amount: 1, item: bg('crimson_berries') } ],
+        [ { amount: 1, item: bg('crimson_berries'), probability: 0.0 } ],
         [
             { amount: 1, item: bg('crimson_berries') },
             { amount: 1, item: bg('crimson_berries'), probability: 0.5 }
