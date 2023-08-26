@@ -270,7 +270,7 @@ hash = "215c3d4f92c65d31ad794d890530a69c13cc8447e5432c7686b0da7f46a5bcce"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/world_of_magic.snbt"
-hash = "b92e373a0d405aaf373f3abc04db0544183b9e65385fa37c4d02596d9a86574e"
+hash = "f7cad9911025e031f3d2270e7944a047d53efd7353b878ceebfc667705909702"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -383,6 +383,10 @@ hash = "b99c3dfc21b0f47a13c94b56adffc29608a8e83578fc4869c3a6f4ae7bd65ccd"
 [[files]]
 file = "config/modern_industrialization.toml"
 hash = "069db7da7c09c6b51368ecf158adbfd06971e568ffb18c772e083a3cba9b2bc4"
+
+[[files]]
+file = "config/modernfix-mixins.properties"
+hash = "c92aa545056cc4b94f2bf478945c1818b0a1f513f7284b29b39b74123f8c4496"
 
 [[files]]
 file = "config/notenoughanimations.json"
@@ -13465,6 +13469,10 @@ file = "kubejs/data/emojiful/recipes/gregachad.json"
 hash = "95608cb0c500e408ea921998187173db8be9e75db12b712d5a19b8f6f1ca6d32"
 
 [[files]]
+file = "kubejs/data/emojiful/recipes/gregschizo.json"
+hash = "11f1fadc98bbdb4b5af2e4fc74bbb6273e9f8e5b5047819bc84f8a41ac00e08e"
+
+[[files]]
 file = "kubejs/data/emojiful/recipes/gregtroll.json"
 hash = "7fdf4c408756a765e7bc562175481a17d64147cab95a6429ec8b2e6719c4b985"
 
@@ -25450,7 +25458,7 @@ hash = "ee28c9d983eb2362eaa51d373cb92cabd3670b2b77481a6db0010755ba1ea497"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/photosynthetic_chamber.js"
-hash = "c5e9b8eb25fb8045e74e3a8c87ab12afed228253e1f4841b28a621ce7d2881d8"
+hash = "08a691706e2cbad3cd7989e3af1b91dc0764fb5c7e5668ccf118e0cbdc76a47e"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/pyrolyse_oven.js"
@@ -26214,6 +26222,11 @@ metafile = true
 [[files]]
 file = "mods/fast-furnace-for-fabric.pw.toml"
 hash = "76ae7b18d65669df2facfd2790e7136f53b35d8b121a7be8ff0f66f774ac4b16"
+metafile = true
+
+[[files]]
+file = "mods/fastbench-for-fabric.pw.toml"
+hash = "dbfff2dfdda7c753ba66269eb2488f8004fc16890f24e728dffd26145a1abbc8"
 metafile = true
 
 [[files]]
