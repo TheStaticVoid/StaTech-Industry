@@ -269,7 +269,8 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('ender_pearl'), probability: 0.3 },
             { amount: 1, item: cr('experience_nugget'), probability: 0.5 }
         ],
-        [ { amount: 100, fluid: mi('liquid_ender') } ]
+        [ { amount: 100, fluid: mi('liquid_ender') } ],
+        [ { amount: 75, fluid: mi('liquid_ender') } ]
     );
 
     // -- SKELETON MODEL -- //

@@ -38,3 +38,4 @@
 - [Adjusted the recipe for the Rocket Part Assembler](https://github.com/TheStaticVoid/StaTech-Industry/issues/406)
 - [TechReborn Quantum Suit now requires the Tech Enhanced Nano Suit](https://github.com/TheStaticVoid/StaTech-Industry/issues/407)
 - [Updated Doped silicon plate textures](https://github.com/TheStaticVoid/StaTech-Industry/issues/409)
+- [Buffed the Enderman mob crusher model](https://github.com/TheStaticVoid/StaTech-Industry/issues/414)
