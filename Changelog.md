@@ -3,6 +3,7 @@
 
 ## Mods added:
 - [BugJump](https://www.curseforge.com/minecraft/mc-mods/bugjump) - Fix for fastutil crashes
+- [Couplings](https://www.curseforge.com/minecraft/mc-mods/couplings) - Replaces the Double Door mod. Plays well with Create.
 
 ## Mods updated:
 - [Ad Astra: Giselle Addon](https://www.curseforge.com/minecraft/mc-mods/ad-astra-giselle-addon) - 2.1.16 -> 2.1.18
@@ -23,6 +24,9 @@
 - [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.20 -> 2.4.22
 - [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) - 1.1.7 -> 1.1.8
 - [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) - 2.3.22 -> 2.3.24
+
+## Mods removed:
+- [Double Doors](https://www.curseforge.com/minecraft/mc-mods/double-doors) - Replaced by Couplings, didn't play well with Create double doors.
 
 ## Other changes:
 - [Add GregSchizo to Emojiful](https://github.com/TheStaticVoid/StaTech-Industry/issues/396)
