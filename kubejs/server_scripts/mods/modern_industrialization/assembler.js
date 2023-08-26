@@ -277,10 +277,10 @@ ServerEvents.recipes(e => {
         [
             { amount: 2, item: mi('robot_arm') },
             { amount: 2, tag: 'c:stainless_steel_gears' },
-            { amount: 2, item: mi('aluminum_cable') },
+            { amount: 2, item: mi('digital_circuit') },
             { amount: 1, item: mi('advanced_motor') },
             { amount: 1, item: mi('advanced_pump') },
-            { amount: 1, item: mi('turbo_machine_hull') }
+            { amount: 1, item: mi('basic_machine_hull') }
         ],
         [ { amount: 1, item: mi('rocket_part_assembler') } ]
     );

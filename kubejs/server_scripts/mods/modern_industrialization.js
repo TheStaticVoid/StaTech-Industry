@@ -272,8 +272,8 @@ ServerEvents.recipes(e => {
         R: mi('robot_arm'),
         M: mi('advanced_motor'),
         G: mi('stainless_steel_gear'),
-        H: mi('turbo_machine_hull'),
-        A: mi('aluminum_cable'),
+        H: mi('basic_machine_hull'),
+        A: mi('digital_circuit'),
         P: mi('advanced_pump')
     })
     .id(st('rocket_part_assembler'));
