@@ -40,3 +40,4 @@
 - [Updated Doped silicon plate textures](https://github.com/TheStaticVoid/StaTech-Industry/issues/409)
 - [Buffed the Enderman mob crusher model](https://github.com/TheStaticVoid/StaTech-Industry/issues/414)
 - [Add mixer recipe for Cultural Delights' pickle](https://github.com/TheStaticVoid/StaTech-Industry/issues/410)
+- [Fixed typo in electric packer quest]()
