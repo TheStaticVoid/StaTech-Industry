@@ -2,7 +2,6 @@
 # StaTech Industry 1.1.8 Changelog:
 
 ## Mods added:
-- [BugJump](https://www.curseforge.com/minecraft/mc-mods/bugjump) - Fix for fastutil crashes
 - [Couplings](https://www.curseforge.com/minecraft/mc-mods/couplings) - Replaces the Double Door mod. Plays well with Create.
 - [FastBench for Fabric](https://www.curseforge.com/minecraft/mc-mods/fastbench-for-fabric) - An older mod but might help fix some of the lag with crafting benches users have reported
 
