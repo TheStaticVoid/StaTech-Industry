@@ -4,6 +4,36 @@
 // -----------------------------------------
 
 MIRegistrationEvents.registerFluids(e => {
+    // -- NUTRIENT RICH WATER -- //
+    e.register(
+        'Nutrient Rich Water',      // English name
+        'nutrient_rich_water',      // internal name
+        0xdaffdb,                   // Hex color code
+        'water',                    // Texture type
+        false,                      // is a gas?
+        'medium'                    // opacity
+    );
+
+    // -- NUTRIENT RICH LIQUID ENDER -- //
+    e.register(
+        'Nutrient Rich Liquid Ender', // English name
+        'nutrient_rich_liquid_ender', // internal name
+        0x218b7a,                     // Hex color code
+        'water',                      // Texture type
+        false,                        // Is a gas?
+        'medium'                      // opacity
+    );
+
+    //-- NUTRIENT RICH BLOOD -- //
+    e.register(
+        'Nutrient Rich Blood',        // English name
+        'nutrient_rich_blood',        // internal name
+        0xe53246,                     // Hex color code
+        'plasma',                     // Texture type
+        false,                        // is a gas?
+        'high',                       // opacity
+    );
+
     // -- MOLTEN NETHER STAR -- //
     e.register(
         'Molten Nether Star',     // English name

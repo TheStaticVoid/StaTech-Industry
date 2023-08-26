@@ -168,14 +168,12 @@ ServerEvents.recipes(e => {
             ]
         );
 
+        fluid = mi(`nutrient_rich_${fluid.split(':')[1]}`);
         greenhouse(
             st(`${id}_bonemeal`),
             8,
             1200,
-            [ 
-                { amount: 1, item: sapling, probability: 0.0 },
-                { amount: 1, item: mc('bone_meal'), probability: 0.5 }
-            ],
+            [ { amount: 1, item: sapling, probability: 0.0 } ],
             [ { amount: 100, fluid: fluid } ],
             [
                 { amount: 16, item: log },
