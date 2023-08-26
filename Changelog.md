@@ -27,4 +27,4 @@
 ## Other changes:
 - [Add GregSchizo to Emojiful](https://github.com/TheStaticVoid/StaTech-Industry/issues/396)
 - [Fixed Crimson Berries being consumed in Photosynthetic Chamber](https://github.com/TheStaticVoid/StaTech-Industry/issues/396)
-- []
+- [Set Faster Texture Stitching to false](https://github.com/TheStaticVoid/StaTech-Industry/issues/398) - Addresses the weird texture bugs when Iris is not installed
