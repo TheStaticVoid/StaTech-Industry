@@ -36,3 +36,4 @@
 - [Added three new nutrient rich fluid variants for boosted greenhouse recipes](https://github.com/TheStaticVoid/StaTech-Industry/issues/403) - Currently the fluids are only used here, but I have ideas for using them elsewhere in the future. This was mainly to fix the issue with recipes not being run with bonemeal.
 - [Added override to the Sodalite loot table so it drops MI Aluminum Dust instead](https://github.com/TheStaticVoid/StaTech-Industry/issues/405)
 - [Adjusted the recipe for the Rocket Part Assembler](https://github.com/TheStaticVoid/StaTech-Industry/issues/406)
+- [TechReborn Quantum Suit now requires the Tech Enhanced Nano Suit](https://github.com/TheStaticVoid/StaTech-Industry/issues/407)
