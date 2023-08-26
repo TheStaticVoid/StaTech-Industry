@@ -40,6 +40,19 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- PICKLE -- //
+    mixer(
+        st('pickle'),
+        2,
+        600,
+        [
+            { amount: 1, item: cd('cucumber') },
+            { amount: 2, item: mi('salt_dust') }
+        ],
+        [ { amount: 1, item: cd('pickle') } ],
+        [ { amount: 100, fluid: mc('water') } ]
+    );
+
     // -- NUTRIENT RICH WATER -- //
     mixer(
         st('nutrient_rich_water'),
