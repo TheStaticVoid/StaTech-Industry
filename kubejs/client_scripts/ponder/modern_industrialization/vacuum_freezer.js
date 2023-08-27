@@ -5,37 +5,14 @@
 
 Ponder.registry((event) => {
     event.create('modern_industrialization:vacuum_freezer').scene('vacuum_freezer', 'The Vacuum Freezer', 'kubejs:vacuum_freezer', (scene, util) => {
-        // Base plate
-        scene.world.showSection([0, 0, 0, 4, 0, 4], Facing.DOWN);
+        let size = structureSize(5, 6, 5);
+        showBasePlate(scene, size.width, size.depth);
 
         // First two layers
-        for (let y = 1; y < 3; y++) {
-            for (let x = 0; x < 5; x++) {
-                for (let z = 0; z < 5; z++) {
-                    scene.world.showSection([x, y, z], Facing.DOWN);
-                }
-                scene.idle(3);
-            }
-            scene.idle(5);
-        }
-
-        scene
-            .text(60, 'The center is hollow', [2.0, 4.0, 2.0])
-            .colored(PonderPalette.WHITE)
-            .placeNearTarget()
-            .attachKeyFrame()
-        scene.idle(60);
+        buildUpToYRegular(scene, size.width, size.depth, 3);
+        addText(scene, 60, 'The center is hollow', PonderPalette.WHITE, [2.0, 4.0, 2.0]);
 
         // Last layers
-        for (let y = 3; y < 5; y++) {
-            for (let x = 0; x < 5; x++) {
-                for (let z = 0; z < 5; z++) {
-                    scene.world.showSection([x, y, z], Facing.DOWN);
-                }
-                scene.idle(3);
-            }
-            scene.idle(5);
-        }
-        scene.idle(60);
+        buildUpSlice(scene, size.width, size.depth, 3, 5, 3);
     });
 });

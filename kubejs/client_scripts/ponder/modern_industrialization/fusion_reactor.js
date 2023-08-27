@@ -7,41 +7,15 @@ Ponder.registry((event) => {
     event.create('modern_industrialization:fusion_reactor').scene('fusion_reactor', 'The Fusion Reactor', 'kubejs:fusion_reactor', (scene, util) => {
         scene.setSceneOffsetY(-2.0);
         scene.scaleSceneView(0.6);
-        // Show base plate
-        scene.world.showSection([0, 0, 0, 16, 0, 16], Facing.DOWN);
-        scene.idle(10);
+        let size = structureSize(17, 6, 17);
+        showBasePlate(scene, size.width, size.depth);
 
         // First two layers
-        for (let y = 1; y < 3; y++) {
-            for (let x = 0; x < 17; x++) {
-                for (let z = 0; z < 17; z++) {
-                    scene.world.showSection([x, y, z], Facing.DOWN);
-                }
-                scene.idle(3);
-            }
-            scene.idle(5);
-        }
-
-        scene
-            .text(60, 'The internals of the rings are made of Fusion Chamber blocks', [6.0, 3.0, 4.0])
-            .colored(PonderPalette.WHITE)
-            .placeNearTarget()
-            .attachKeyFrame();
-        scene.idle(80);
+        buildUpToYRegular(scene, size.width, size.depth, 3);
+        addText(scene, 60, 'The internals of the rings are made of Fusion Chamber blocks', PonderPalette.WHITE, [6.0, 3.0, 4.0]);
 
         // Final layer
-        for (let x = 0; x < 17; x++) {
-            for (let z = 0; z < 17; z++) {
-                scene.world.showSection([x, 3, z], Facing.DOWN);
-            }
-            scene.idle(3);
-        }
-        
-        scene
-            .text(120, 'Hatches can only go on the center block on each side of the ring', [8.0, 4.0, 1.0])
-            .colored(PonderPalette.WHITE)
-            .placeNearTarget()
-            .attachKeyFrame();
-        scene.idle(140);
+        buildUpSlice(scene, size.width, size.depth, 3, 3, 3);
+        addText(scene, 120, 'Hatches can only go on the center block on each side of the ring', PonderPalette.WHITE, [8.0, 4.0, 1.0]);
     });
 });
