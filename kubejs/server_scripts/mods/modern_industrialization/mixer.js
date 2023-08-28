@@ -13,6 +13,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let cr = (id) => `create:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let cd = (id) => `culturaldelights:${id}`;
 
     // -- MIXER REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
