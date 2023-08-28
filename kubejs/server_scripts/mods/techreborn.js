@@ -147,7 +147,9 @@ ServerEvents.recipes(e => {
         tr('crafting_table/armor/quantum_helmet'),
         tr('crafting_table/armor/quantum_chestplate'),
         tr('crafting_table/armor/quantum_leggings'),
-        tr('crafting_table/armor/quantum_boots')
+        tr('crafting_table/armor/quantum_boots'),
+        tr('crafting_table/uu_matter/ore/iridium_ore'),
+        tr('crafting_table/uu_matter/ore/deepslate_iridium_ore')
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
@@ -327,18 +329,6 @@ ServerEvents.recipes(e => {
         W: mi('cupronickel_cable')
     })
     .id(st('scrapboxinator'));
-
-    // -- URANIUM ORE FROM UU -- //
-    e.shaped(mi('uranium_ore'), [
-        'UUU',
-        'UUU',
-        'USU'
-    ], 
-    {
-        U: tr('uu_matter'),
-        S: '#c:stones'
-    })
-    .id(st('uranium_ore'));
 
     // -- NUKE CONVERSION -- //
     e.shapeless(tr('nuke'), [mi('nuke')]);
