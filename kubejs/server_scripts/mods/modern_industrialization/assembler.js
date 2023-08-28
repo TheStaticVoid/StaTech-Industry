@@ -45,6 +45,32 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- URANIUM ORE FROM UU -- //
+    assembler(
+        st('uranium_ore'),
+        32,
+        600,
+        [ 
+            { amount: 6, item: tr('uu_matter') },
+            { amount: 1, item: mc('moss_block') }
+        ],
+        [ { amount: 1, item: mi('uranium_ore') } ],
+        [ { amount: 15, fluid: mi('molten_nether_star') } ]
+    );
+
+    // -- IRIDIUM ORE FROM UU -- //
+    assembler(
+        st('iridium_ore'),
+        32,
+        600,
+        [
+            { amount: 6, item: tr('uu_matter') },
+            { amount: 1, item: mc('stone') }
+        ],
+        [ { amount: 1, item: mi('iridium_ore') } ],
+        [ { amount: 15, fluid: mi('molten_nether_star') } ]
+    );
+
     // -- LV TO MV TRANSFORMER -- //
     assembler(
         st('lv_mv_transformer'),
