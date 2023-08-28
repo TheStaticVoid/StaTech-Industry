@@ -41,4 +41,5 @@
 - [Buffed the Enderman mob crusher model](https://github.com/TheStaticVoid/StaTech-Industry/issues/414)
 - [Add mixer recipe for Cultural Delights' pickle](https://github.com/TheStaticVoid/StaTech-Industry/issues/410)
 - [Fixed typo in electric packer quest](https://github.com/TheStaticVoid/StaTech-Industry/pull/416/commits/03f1b6742aa8f5bba9d2ee3edcdd254e5a40a1ee)
-- [Ponder script cleanup](https://github.com/TheStaticVoid/StaTech-Industry/issues/395)
+- [Ponder startup script cleanup](https://github.com/TheStaticVoid/StaTech-Industry/issues/395) - Purely behind the scenes stuff
+- [Updated some quest description to inform the player about charging items in storage units](https://github.com/TheStaticVoid/StaTech-Industry/issues/411)
