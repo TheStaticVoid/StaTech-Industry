@@ -45,6 +45,110 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- LV TO MV TRANSFORMER -- //
+    assembler(
+        st('lv_mv_transformer'),
+        8,
+        200,
+        [ { amount: 1, item: mi('lv_mv_transformer') } ],
+        [
+            { amount: 1, item: mi('basic_machine_hull') },
+            { amount: 4, item: mi('tin_cable') },
+            { amount: 1, item: mi('electrum_cable') }
+        ]
+    );
+
+    // -- MV TO LV TRANSFORMER -- //
+    assembler(
+        st('mv_lv_transformer'),
+        8,
+        200,
+        [ { amount: 1, item: mi('mv_lv_transformer') } ],
+        [
+            { amount: 1, item: mi('basic_machine_hull') },
+            { amount: 4, item: mi('tin_cable') },
+            { amount: 1, item: mi('electrum_cable') }
+        ]
+    );
+
+    // -- MV TO HV TRANSFORMER -- //
+    assembler(
+        st('mv_hv_transformer'),
+        8,
+        200,
+        [ { amount: 1, item: mi('mv_hv_transformer') } ],
+        [
+            { amount: 1, item: mi('advanced_machine_hull') },
+            { amount: 4, item: mi('electrum_cable') },
+            { amount: 1, item: mi('aluminum_cable') }
+        ]
+    );
+
+    // -- HV TO MV TRANSFORMER -- //
+    assembler(
+        st('hv_mv_transformer'),
+        8,
+        200,
+        [ { amount: 1, item: mi('hv_mv_transformer') } ],
+        [
+            { amount: 1, item: mi('advanced_machine_hull') },
+            { amount: 4, item: mi('electrum_cable') },
+            { amount: 1, item: mi('aluminum_cable') }
+        ]
+    );
+
+    // -- HV TO EV TRANSFORMER -- //
+    assembler(
+        st('hv_ev_transformer'),
+        8,
+        200,
+        [ { amount: 1, item: mi('hv_ev_transformer') } ],
+        [ 
+            { amount: 1, item: mi('turbo_machine_hull') },
+            { amount: 4, item: mi('aluminum_cable') },
+            { amount: 1, item: mi('annealed_copper_cable') }
+        ]
+    );
+
+    // -- EV TO HV TRANSFORMER -- //
+    assembler(
+        st('ev_hv_transformer'),
+        8,
+        200,
+        [ { amount: 1, item: mi('ev_hv_transformer') } ],
+        [
+            { amount: 1, item: mi('turbo_machine_hull') },
+            { amount: 4, item: mi('aluminum_cable') },
+            { amount: 1, item: mi('annealed_copper_cable') }
+        ]
+    );
+
+    // -- EV TO SUPERCONDUCTOR TRANSFORMER -- //
+    assembler(
+        st('ev_superconductor_transformer'),
+        8,
+        200,
+        [ { amount: 1, item: mi('ev_superconductor_transformer') } ],
+        [ 
+            { amount: 1, item: mi('highly_advanced_machine_hull') },
+            { amount: 4, item: mi('annealed_copper_cable') },
+            { amount: 1, item: mi('superconductor_cable') }
+        ]
+    );
+
+    // -- SUPERCONDUCTOR TO EV TRANSFORMER -- //
+    assembler(
+        st('superconductor_ev_transformer'),
+        8,
+        200,
+        [ { amount: 1, item: mi('superconductor_ev_transformer') } ],
+        [
+            { amount: 1, item: mi('highly_advanced_machine_hull') },
+            { amount: 4, item: mi('annealed_copper_cable') },
+            { amount: 1, item: mi('superconductor_cable') }
+        ]
+    );
+
     // -- BLOOD GENERATOR -- //
     assembler(
         st('blood_generator'),

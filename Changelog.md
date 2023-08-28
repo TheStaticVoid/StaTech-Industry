@@ -44,3 +44,4 @@
 - [Ponder startup script cleanup](https://github.com/TheStaticVoid/StaTech-Industry/issues/395) - Purely behind the scenes stuff
 - [Updated some quest description to inform the player about charging items in storage units](https://github.com/TheStaticVoid/StaTech-Industry/issues/411)
 - [Add compressor recipe for netherite nuggets -> netherite ingot](https://github.com/TheStaticVoid/StaTech-Industry/issues/418)
+- [Add assembler recipe for breaking down transformers](https://github.com/TheStaticVoid/StaTech-Industry/issues/419)
