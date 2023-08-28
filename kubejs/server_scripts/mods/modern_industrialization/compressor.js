@@ -40,6 +40,15 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- NETHERITE NUGGET -> NETHERITE INGOT -- //
+    compressor(
+        st('netherite_ingot'),
+        32,
+        200,
+        [ { amount: 9, item: tr('netherite_nugget') } ],
+        [ { amount: 1, item: mc('netherite_ingot') } ]
+    );
     
     // -- PIZZA DOUGH -- //
     compressor(
