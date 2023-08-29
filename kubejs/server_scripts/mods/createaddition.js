@@ -50,6 +50,18 @@ ServerEvents.recipes(e => {
     e.shapeless(ca('diamond_grit_sandpaper'), [ mc('paper'), mi('diamond_dust') ])
         .id(st('diamond_grit_sandpaper'));
 
+    // -- BARBED WIRE -- //
+    e.shaped(ca('barbed_wire'), [
+        ' W ',
+        'WIW',
+        ' W '
+    ],
+    {
+        W: mi('tin_wire'),
+        I: mi('iron_rod')
+    })
+    .id(st('barbed_wire'));
+
     // -- DIAMOND DUST CRUSHING -- //
     e.custom({
         type: cr('crushing'),

@@ -49,3 +49,5 @@
 - [Add compressor recipe for netherite nuggets -> netherite ingot](https://github.com/TheStaticVoid/StaTech-Industry/issues/418)
 - [Add assembler recipe for breaking down transformers](https://github.com/TheStaticVoid/StaTech-Industry/issues/419)
 - [Nerfed TechReborn UU-Matter recipes for Uranium and Iridium](https://github.com/TheStaticVoid/StaTech-Industry/issues/413)
+- [Added recipe for Barbed Wire and removed some unused Crafts & Additions items](https://github.com/TheStaticVoid/StaTech-Industry/issues/404)
+- [Updated Crafts & Additions Alternator config](https://github.com/TheStaticVoid/StaTech-Industry/issues/404)
