@@ -78,7 +78,7 @@ hash = "5277f5d20f0e89c4ec899ba2b906d43cd96a22e4ce37bcb416e8d7916869d4d6"
 
 [[files]]
 file = "config/createaddition-common.toml"
-hash = "85a1ad95e7571de366444a1b900b3e17a98269824dcc568ad350cebf62c47303"
+hash = "f284b094d33dc017f79ef5ee08b14639aad688cfc606ddb94ee60ad22bdfc984"
 
 [[files]]
 file = "config/defaultoptions.toml"
@@ -230,7 +230,7 @@ hash = "b72b3a7faf2f80789ac4920d2d0b3cb989805131dee708e00bd6024001df64bd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3__electrical_age.snbt"
-hash = "69d9091b3c85f9e5906dda1a28b6cf63294f623024aec458d29a417e7ed0b240"
+hash = "a0ccba7adf7780349cef5c8c37802399a9abcc80fc1f484286fcda01491340db"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/4__digital_age.snbt"
@@ -242,7 +242,7 @@ hash = "fdfea0674a4e81cf7c4f77c0b01f4a812069e4b0dcfba53b05ed48f7e826bd8d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6__quantum_age.snbt"
-hash = "007d9ece6e699e32ae014df4314691ce4ebae95ceec1649e39224d3512fc1d2a"
+hash = "32cc1520d4e9a2a0ebe639ff4e36ed57f689183e1de34b3e85936a90268bd710"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/artifacts.snbt"
@@ -1238,7 +1238,7 @@ hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/blood_generator.json"
-hash = "4a7faff41a4cadfcbe23126499b0434d1977583a4a73f7f8fe3d16e01143b820"
+hash = "169f01fd91cf91e80dabcc7ff0cd7dba6eb935bfc5c087b918520aece9d70a57"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/boosted_diesel.json"
@@ -1247,6 +1247,10 @@ hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
 [[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/boss_crusher.json"
 hash = "e96e5c0f8a14565806a8dafe84aa0123899c53abb3c0fe06911546626d70af5a"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/blockstates/brine.json"
+hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/bronze_barrel.json"
@@ -1989,6 +1993,18 @@ file = "kubejs/assets/modern_industrialization/blockstates/nuke.json"
 hash = "d298f7fc20932112226785794a3eed03abe784030411471e6af96387e7d4e27d"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/blockstates/nutrient_rich_blood.json"
+hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/blockstates/nutrient_rich_liquid_ender.json"
+hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/blockstates/nutrient_rich_water.json"
+hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/nylon.json"
 hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
 
@@ -2163,6 +2179,10 @@ hash = "a2fceaf0901afad1fe6624197aae05e9eb9c7237055dc782c3ef8b5e3d327665"
 [[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/salt_ore.json"
 hash = "fdfd841c483545dfa59cef01b43cf641e0072012a45cec2311964131f38f760b"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/blockstates/salt_water.json"
+hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/shale_oil.json"
@@ -2522,7 +2542,7 @@ hash = "1c085405833b5e1a6bb60f4feb2a9bb2fda4d27b8953c5f94d64731e2e30da8f"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/lang/en_us.json"
-hash = "57552d932dc56fdcc9af74b9afbf8c3d7d1351eeaeb41c834b152ab0ad3fbd44"
+hash = "a9a08c802dd42ac320048ade8ee7d5aebceece1b02382f1b5ddd4f0fb698f72e"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/block/advanced_machine_casing.json"
@@ -3405,6 +3425,10 @@ file = "kubejs/assets/modern_industrialization/models/item/blood_bucket.json"
 hash = "66242f098abc9005f4b9901f8f576e3e719f1793adcecf34850f7da3a2acb527"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/models/item/blood_generator.json"
+hash = "c5332d986323247e3f4fe0f40681af741be5fc9019f465a6295391802fae917e"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/models/item/boosted_diesel_bucket.json"
 hash = "d55ab3da7c2cb2ec611add4cc68b71196fb32734433412bd314ccfc305b64f97"
 
@@ -3419,6 +3443,10 @@ hash = "1f1de58d5c5428c85665c79e96aae6e3e03ca4d3bd99f852dca911a323693009"
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/item/brick_tiny_dust.json"
 hash = "36196ad3c24cba4d245da1035b0ae002ab1fd9d1064de0914d77772f68b056c0"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/models/item/brine_bucket.json"
+hash = "20ffd0b5f649c3d196e057e86e626f68aa4c33acf0b859d113fba6ab562baf38"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/item/bronze_barrel.json"
@@ -5181,6 +5209,18 @@ file = "kubejs/assets/modern_industrialization/models/item/nuke.json"
 hash = "64cf4bf9c4868318fac6afa2cc6c234dc2ca52a9400e09cc2e1ed7c4b0773bbc"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/models/item/nutrient_rich_blood_bucket.json"
+hash = "445e5dd164dfb1c63d57b9a4910576a287d11b9f132a6d08df79be95eaf4b941"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/models/item/nutrient_rich_liquid_ender_bucket.json"
+hash = "0cda45ad7658e25797ed3dc4d032c19176901564cb3e92b97e2e0ba2574840e4"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/models/item/nutrient_rich_water_bucket.json"
+hash = "3c8ccbb2e0c50961675185acbbcedf22d3c229ae8a1182a68ec71f9a3a7c38df"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/models/item/nylon_bucket.json"
 hash = "766259787b0330caca8c04bc72a084d650ee6f8163de85a8a1a40d9792a87fbe"
 
@@ -5363,6 +5403,10 @@ hash = "806ebb137d5520d29122256b2e1b3c4f2f6416c40ae3518488b85a05f13ce1c0"
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/item/polyvinyl_chloride_bucket.json"
 hash = "0d999e88df45bc5e35e8c87d68d76ef9d7e5820c561bdca10db4d06006a4ccb5"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/models/item/portable_storage_unit.json"
+hash = "82dbcdbe1d90acf87d69f75e2b84ad13d8ea37c29a4513fcf8b166336c426a01"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/item/pressurizer.json"
@@ -5627,6 +5671,10 @@ hash = "ac3db7c3d7e2913becdd95e6a47ed9dff5f7358e0f9cf0529b6bd87ddf115e65"
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/item/salt_tiny_dust.json"
 hash = "289a974cc17f12e49427ca30a58b1484e0880d041aeb536fe072c0de724a21d5"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/models/item/salt_water_bucket.json"
+hash = "06d8ac72c17a49a960ff4553e9ae07d44aaf5d5fa380247459df1f8bfc4f5af7"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/item/shale_oil_bucket.json"
@@ -6622,7 +6670,7 @@ hash = "0baf6672e8a65402a81a7b2980bce91641927e2da8de4f0313ee12a9371d4514"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/machine/blood_generator.json"
-hash = "10f5e7180813aa07c1fab1f941effa779dbfc074497946d550994e1f03bfffa9"
+hash = "f0687e24d8647b6ddd217bd61aa99cd2b6cb8cf1e041224b294569abc7a0d671"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/machine/boss_crusher.json"
@@ -8977,6 +9025,14 @@ file = "kubejs/assets/modern_industrialization/textures/fluid/boosted_diesel_sti
 hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/brine_still.png"
+hash = "f61f6c7c06f21d1025a4979304c4d66efc661562028ff77c839600d9e9d54dea"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/brine_still.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/textures/fluid/butadiene_still.png"
 hash = "ebde3b73c07c1dd7a471d250468909c9d117976c07e0ac615cb7cea4d3707e1f"
 
@@ -9337,6 +9393,30 @@ file = "kubejs/assets/modern_industrialization/textures/fluid/nitrogen_still.png
 hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/nutrient_rich_blood_still.png"
+hash = "595083c16bfe754963aad10620b08ea352c43c78fbd012ca98396bd60e1e5d3f"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/nutrient_rich_blood_still.png.mcmeta"
+hash = "c5c413f48519f09dd4a01d7b4d1ded298e90946f16c354b42c09a4feb371531e"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/nutrient_rich_liquid_ender_still.png"
+hash = "af0818031c21cb4cc549e210acdf03f96b292c9c74cc18981edaded71a6dc609"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/nutrient_rich_liquid_ender_still.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/nutrient_rich_water_still.png"
+hash = "bce8fb08f670e7187cddd4992959cac65c476d33bfaf41c749f7f834a17a3d28"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/nutrient_rich_water_still.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/textures/fluid/nylon_still.png"
 hash = "ccefcfa5fe97b957ae5dad563ef130890bddeeb06e4a16178b9ae6d846dab2fb"
 
@@ -9422,6 +9502,14 @@ hash = "edafa6a68b95991eff69eb7043f6f55aa1e1bda070c948d187f78a9bedf2e013"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/fluid/raw_synthetic_oil_still.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/salt_water_still.png"
+hash = "d21eb30f8abcf9eef656b8752fda75d22d1b39a497e1fcb64c278cd209f5b321"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/salt_water_still.png.mcmeta"
 hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
 
 [[files]]
@@ -9855,6 +9943,10 @@ hash = "d347a0f9866eac0f2435f1136fa0a1145eafa7b2ee511d6feb8e74bd382a4edf"
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/item/brick_tiny_dust.png"
 hash = "5285c5a9c2685afc232370997a0edd14f93955718cd0d4e8e9bb935fca8b0744"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/brine_bucket.png"
+hash = "ba8121273035ee5726dba1eecb4e9d6faf7404bfcb1ddb66c7c202d194bdc4ef"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/item/bronze_blade.png"
@@ -10937,6 +11029,18 @@ file = "kubejs/assets/modern_industrialization/textures/item/nuclear_alloy_plate
 hash = "2b9c2ba8fe3e9a903f5106e64e3005ca5c7b0adc36b3aeabaffe267d602e2e1c"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/nutrient_rich_blood_bucket.png"
+hash = "1d12f0d4ae4eeb5e59d46d989d776fc940e15dcc9ba5f03b90de4519211a9384"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/nutrient_rich_liquid_ender_bucket.png"
+hash = "7c9a604ca5e6433aaa596dab197621f6a8fb9a65280b423dc5ac37d3d4979477"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/nutrient_rich_water_bucket.png"
+hash = "700b81a232c7ed89c82508fd6b2ae1cd595f2a671bdc3032816d7544a74262bd"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/textures/item/nylon_bucket.png"
 hash = "b8c37aa480307cf8b1585cdab3171bfcde5124cbd50e661c1acca85179d29358"
 
@@ -11167,6 +11271,10 @@ hash = "b511263c1b16b3d4a60c55eef9dcc5bf1525aaa76decdb5a25d5e7aad1cb798d"
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/item/salt_tiny_dust.png"
 hash = "bff3de6897df7655c744f019d9e2bdb3d87e076893b9ac706dcb0d313ec5d072"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/salt_water_bucket.png"
+hash = "8ffbb4ff38fdd1336aeb59b876216784d5be83aa7269736ffeb5738601b8dd88"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/item/shale_oil_bucket.png"
@@ -12054,7 +12162,7 @@ hash = "2e4bf063197970d0c918ac2fd5a56d96f7313039e392eb3b8e4ecbc976759dfa"
 
 [[files]]
 file = "kubejs/client_scripts/rei.js"
-hash = "b1e6839fba8a56115e338752f5339caf1598bb6b14ce4b886abb90e2626acadd"
+hash = "dead0d2134783c885d338a6b0aeba4b297a839fff04c6496ee4eb86ed800dea5"
 
 [[files]]
 file = "kubejs/client_scripts/rename.js"
@@ -25310,7 +25418,7 @@ hash = "09f07f05ca1d4fa4d1b1a20dec7b507d3d4e8619e17c3bc0d47d846cdfd88c6f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/createaddition.js"
-hash = "371f1c104cf548c298e21b4b5ae983fcfe5e3df08b08e98a07261e7d4276b49d"
+hash = "36429f1cf64c145654715af0f0a17b66ffb8650d2310db27c03f5a467d30fe4c"
 
 [[files]]
 file = "kubejs/server_scripts/mods/dankstorage.js"
@@ -25410,19 +25518,19 @@ hash = "1a006391aff2cc4f52b176bb2c351d83235db69e9a2471759ca643cd400e6f00"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/distillation_tower.js"
-hash = "ab2f236604707a8d20fa87c160932e0bed6158dbad7db291c5b4530c4abbb3e9"
+hash = "08f9e2ac99976a6de32d6c1958b0f4bf6205a820d13a4964c1770056c7313e5f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/distillery.js"
-hash = "9311fafdcb30d9809fe6e410dba94e788cd7974b1ee4565083c85207a010ea4a"
+hash = "1ae61e8f45341a606a279d57f49ce41bec693a28a98889f136afd59394217af2"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/drilling_rig.js"
-hash = "bc6a62f5494b1c79fc1122e88fe4a4ea6305b336b4f38f36aac42e0f22db3b09"
+hash = "8cfc72f9f657f93219ddf340685b320b905d3f22626539482341863cd434d3ff"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/electrolyzer.js"
-hash = "edfbb52db0e0c0dd4bb4dd04544f65c5f4d0338d142b68ec7a4d75e702e3beed"
+hash = "74a0218c2d028c0c597c0a792499d655e3d3d622f26492f8bebcdc1db8699d65"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/forge_hammer.js"
@@ -25466,7 +25574,7 @@ hash = "82c35055c4f67ce9c1c22eb08ab7cb10cb00544f4debdfe65fe5a9b2dbc68c68"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/mixer.js"
-hash = "e33e4714bb566242a03972b171d74054b4269ef26bc55b64ba607488107b336e"
+hash = "4371e616b28defe65f42704d63bb4980b2559aad93b4cf06e86bbaf1dfaa9987"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/mob_crusher.js"
@@ -25614,7 +25722,7 @@ hash = "86eaa0bf3706ad8bc39999dbfdba906a2a42828483ba41b8449b1448c3823f7c"
 
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/fluids.js"
-hash = "8a679cd0deb3ec08aa7cf2e2fef5b3d140a0c974c553c63866d5417d41a474bc"
+hash = "22270d6e58554a54522c186570d8cc8aeaa4619e06c3429e8c3bbe3247b2f690"
 
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/fuels.js"
@@ -27051,7 +27159,7 @@ metafile = true
 
 [[files]]
 file = "mods/wthit.pw.toml"
-hash = "73f13f0d83d1dbc6ff70dc2aed6eb7cd44799a011fe17ae419bd939ff074a7fc"
+hash = "5415f59e16f3bdee930ff6d65dff9ce99bc7d5a799d6e6b3ae9094bd0de85f63"
 metafile = true
 
 [[files]]
