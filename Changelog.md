@@ -1,4 +1,5 @@
 # StaTech Industry 1.1.8 Changelog:
+I meant for this to be a small bugfix patch and it ended up being a bit larger than expected. Included with this patch are a new processing chain for creating Chlorine and Sodium Hydroxide from Salt Water, a new fluid you can obtain from the Oil Drilling Rig. I'm waiting for an update to Modern Industrialization that will allow this recipe to require the multiblock to be in any of the ocean biomes, so keep an eye out for that. Along with this, there are a lot of QoL changes and bugfixes.
 
 ## Mods added:
 - [Couplings](https://www.curseforge.com/minecraft/mc-mods/couplings) - Replaces the Double Door mod. Plays well with Create.
@@ -51,4 +52,4 @@
 - [Nerfed TechReborn UU-Matter recipes for Uranium and Iridium](https://github.com/TheStaticVoid/StaTech-Industry/issues/413)
 - [Added recipe for Barbed Wire and removed some unused Crafts & Additions items](https://github.com/TheStaticVoid/StaTech-Industry/issues/404)
 - [Updated Crafts & Additions Alternator config](https://github.com/TheStaticVoid/StaTech-Industry/issues/404)
-- [Updated chapter 6 progression to match proper recipe requirements]()
+- [Updated chapter 6 progression to match proper recipe requirements](https://github.com/TheStaticVoid/StaTech-Industry/commit/aaa1c5614d94e77f14b5a66cb8a124b037c26f2a)
