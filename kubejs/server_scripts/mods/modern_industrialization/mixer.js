@@ -41,6 +41,17 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- SALT WATER -- //
+    mixer(
+        st('salt_water'),
+        2,
+        200,
+        [ { amount: 1, item: mi('salt_dust') } ],
+        null,
+        [ { amount: 100, fluid: mc('water') } ],
+        [ { amount: 150, fluid: mi('salt_water') } ]
+    );
+
     // -- PICKLE -- //
     mixer(
         st('pickle'),

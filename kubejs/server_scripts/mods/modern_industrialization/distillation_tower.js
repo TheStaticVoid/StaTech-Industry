@@ -7,6 +7,7 @@ ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/distillation_tower/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let distillationTower = (id, eu, duration, fluid_inputs, fluid_outputs) => {
@@ -35,6 +36,18 @@ ServerEvents.recipes(e => {
             { amount: 400, fluid: mi('benzene') },
             { amount: 100, fluid: mi('toluene') },
             { amount: 100, fluid: mi('heavy_fuel') }
+        ]
+    );
+
+    // -- BRINE -- //
+    distillationTower(
+        st('brine'),
+        16,
+        300,
+        [ { amount: 4000, fluid: mi('salt_water') } ],
+        [
+            { amount: 1000, fluid: mc('water') },
+            { amount: 3000, fluid: mi('brine') }
         ]
     );
 });

@@ -6425,7 +6425,7 @@
 				item: "modern_industrialization:aluminum_drill"
 				type: "item"
 			}]
-			x: 3.75d
+			x: 3.25d
 			y: 17.5d
 		}
 		{
@@ -8652,6 +8652,37 @@
 			}]
 			x: -24.5d
 			y: 14.5d
+		}
+		{
+			dependencies: ["5000D009D884FB99"]
+			description: ["By using a &6Bronze Drill&r in the &eOil Drilling Rig&r will produce &aSalt Water&r. This can be further processed into &eBrine&r and then &delectrolyzed&r to produce useful byproducts such as &3Chlorine&r and &2Sodium Hydroxide&r."]
+			id: "1672575316A1B791"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1D9E553FBCA536A2"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "5553D996D18F8822"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "3723C72ACA7AFF34"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "57345F329B7AF3CC"
+				item: "modern_industrialization:salt_water_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 17.5d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]

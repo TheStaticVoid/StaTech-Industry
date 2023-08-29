@@ -36,6 +36,21 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- BRINE -- //
+    electrolyzer(
+        st('brine'),
+        32,
+        400,
+        null,
+        null,
+        [ { amount: 8000, fluid: mi('brine') } ],
+        [ 
+            { amount: 2000, fluid: mi('chlorine') },
+            { amount: 2000, fluid: mi('hydrogen') },
+            { amount: 4000, fluid: mi('sodium_hydroxide') }
+        ]
+    );
+
     // -- UU MATTER -- //
     electrolyzer(
         st('uu-matter'),

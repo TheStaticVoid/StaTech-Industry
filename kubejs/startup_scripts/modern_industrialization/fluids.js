@@ -4,6 +4,26 @@
 // -----------------------------------------
 
 MIRegistrationEvents.registerFluids(e => {
+    // -- SALT WATER -- //
+    e.register(
+        'Salt Water',               // English name
+        'salt_water',               // internal name
+        0x033a6b,                   // Hex color code
+        'water',                    // Texture type
+        false,                      // is a gas?
+        'low',                      // opacity
+    );
+
+    // -- BRINE -- //
+    e.register(
+        'Brine',                    // English name
+        'brine',                    // internal name
+        0xefec82,                   // Hex color code
+        'water',                    // Texture type
+        false,                      // is a gas?
+        'high'                      // opacity
+    )
+
     // -- NUTRIENT RICH WATER -- //
     e.register(
         'Nutrient Rich Water',      // English name
