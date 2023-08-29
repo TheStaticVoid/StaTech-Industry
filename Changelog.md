@@ -13,6 +13,7 @@ I meant for this to be a small bugfix patch and it ended up being a bit larger t
 - [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) - 1.6 -> 1.8
 - [Fabric Language Kotlin](https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin) - 1.10.8+kotlin1.9.0 -> 1.10.10+kotlin1.9.10
 - [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-fabric) - 1.3.10 -> 1.3.10.1
+- [FTB Chunks](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-fabric) - 1902.4.1-build.290 -> 1902.4.2-build.302
 - [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric) - 1902.5.3-build.268 -> 1902.5.4-build.275
 - [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) - 1.2.1 -> 1.2.2
 - [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next) - 1.10.6 -> 1.10.7
@@ -26,6 +27,7 @@ I meant for this to be a small bugfix patch and it ended up being a bit larger t
 - [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.20 -> 2.4.24
 - [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) - 1.1.7 -> 1.1.8
 - [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) - 2.3.22 -> 2.3.24
+- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.18.1 -> 5.19.0
 
 ## Mods removed:
 - [Double Doors](https://www.curseforge.com/minecraft/mc-mods/double-doors) - Replaced by Couplings, didn't play well with Create double doors.
