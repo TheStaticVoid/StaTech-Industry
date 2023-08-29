@@ -7,43 +7,15 @@ Ponder.registry((event) => {
     event.create('modern_industrialization:oil_drilling_rig').scene('oil_drilling_rig', 'The Oil Drilling Rig', 'kubejs:oil_drilling_rig', (scene, util) => {
         scene.setSceneOffsetY(-3.0);
         scene.scaleSceneView(0.65);
-        
-        // Base plate
-        scene.world.showSection([0, 0, 0, 6, 0, 6], Facing.DOWN);
+        let size = structureSize(7, 12, 7);
+        showBasePlate(scene, size.width, size.depth);
 
         // First three layers
-        for (let y = 1; y < 5; y++) {
-            for (let x = 0; x < 7; x++) {
-                for (let z = 0; z < 7; z++) {
-                    scene.world.showSection([x, y, z], Facing.DOWN);
-                }
-                scene.idle(3);
-            }
-            scene.idle(5);
-        }
-
-        scene
-            .text(60, 'This makes up the base of the Drilling Rig', [3.0, 5.0, 3.0])
-            .colored(PonderPalette.WHITE)
-            .attachKeyFrame();
-        scene.idle(60);
+        buildUpToYRegular(scene, size.width, size.depth, 5);
+        addText(scene, 60, 'This makes up the base of the Drilling Rig', PonderPalette.WHITE, [3.0, 5.0, 3.0]);
 
         // Last six layers
-        for (let y = 5; y < 12; y++) {
-            for (let x = 0; x < 7; x++) {
-                for (let z = 0; z < 7; z++) {
-                    scene.world.showSection([x, y, z], Facing.DOWN);
-                }
-                scene.idle(3);
-            }
-            scene.idle(2);
-        }
-
-        scene
-            .text(120, 'Hatches can only go on the same level as the controller', [2.0, 6.0, 2.0])
-            .colored(PonderPalette.WHITE)
-            .placeNearTarget()
-            .attachKeyFrame();
-        scene.idle(120);
+        buildUpSlice(scene, size.width, size.depth, 5, 12, 1);
+        addText(scene, 120, 'Hatches can only go on the same level as the controller', PonderPalette.BLUE, [2.0, 6.0, 2.0]);
     });
 })

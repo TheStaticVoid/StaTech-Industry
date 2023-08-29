@@ -5,48 +5,16 @@
 
 Ponder.registry((event) => {
     event.create('modern_industrialization:electric_blast_furnace').scene('electric_blast_furnace', 'The Electric Blast Furnace', 'kubejs:ebf_cupronickel', (scene, util) => {
-        // Bottom layer
-        for (let x = 0; x < 5; x++) {
-            for (let z = 0; z < 5; z++) {
-                scene.world.showSection([x, 0, z], Facing.DOWN);
-            }
-        }
+        let size = structureSize(5, 6, 5);
+        showBasePlate(scene, size.width, size.depth);
 
         // First and second layer
-        for (let y = 1; y < 3; y++) {
-            for (let x = 0; x < 5; x++) {
-                for (let z = 0; z < 5; z++) {
-                    scene.world.showSection([x, y, z], Facing.DOWN);
-                }
-                scene.idle(3);
-            }
-            scene.idle(5);
-        }
-
-        scene
-            .text(30, 'Center is hollow', [2.0, 3.0, 2.0])
-            .colored(PonderPalette.WHITE)
-            .placeNearTarget()
-            .attachKeyFrame();
-        scene.idle(30);
+        buildUpToYRegular(scene, size.width, size.depth, 3);
+        addText(scene, 30, 'The center is hollow', PonderPalette.WHITE, [2.0, 3.0, 2.0]);
 
         // Last layers
-        for (let y = 3; y < 5; y++) {
-            for (let x = 0; x < 5; x++) {
-                for (let z = 0; z < 5; z++) {
-                    scene.world.showSection([x, y, z], Facing.DOWN);
-                }
-                scene.idle(3);
-            }
-            scene.idle(5);
-        }
-
-        scene
-            .text(60, 'Hatches can go on the top or bottom rows', [2.0, 4.0, 2.0])
-            .colored(PonderPalette.WHITE)
-            .placeNearTarget()
-            .attachKeyFrame();
-        scene.idle(60);
+        buildUpSlice(scene, size.width, size.depth, 3, 5, 3);
+        addText(scene, 60, 'Hatches can go on the top or bottom rows', PonderPalette.WHITE, [2.0, 4.0, 2.0]);
 
         scene.world.hideSection([0, 2, 0, 5, 3, 5], Facing.EAST);
         scene.idle(20);
@@ -54,11 +22,6 @@ Ponder.registry((event) => {
         scene.idle(20);
         scene.world.showSection([0, 2, 0, 5, 3, 5], Facing.WEST);
 
-        scene
-            .text(60, 'Kanthal Coils will upgrade the maximum EU that can be used in the Electric Blast Furnace')
-            .colored(PonderPalette.WHITE)
-            .placeNearTarget()
-            .attachKeyFrame()
-        scene.idle(60);
+        addText(scene, 60, 'Kanthal Coils will upgrade the maximum EU that can be used in the Electric Blast Furnace', PonderPalette.WHITE, [2.0, 3.0, 2.0]);
     });
 });

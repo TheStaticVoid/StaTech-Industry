@@ -10,6 +10,7 @@ ServerEvents.recipes(e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let ae = (id) => `ae2:${id}`;
     let mc = (id) => `minecraft:${id}`;
+    let te = (id) => `tech_enhanced:${id}`;
 
     // -- TECHREBORN REMOVED RECIPES -- //
     const DELETED_RECIPES = [
@@ -142,12 +143,76 @@ ServerEvents.recipes(e => {
         tr('crafting_table/cable/superconductor_cable'),
         tr('crafting_table/small_dust/clay_small_dust_from_dust'),
         tr('crafting_table/dust/clay_dust_from_small'),
-        tr('crafting_table/cell')
+        tr('crafting_table/cell'),
+        tr('crafting_table/armor/quantum_helmet'),
+        tr('crafting_table/armor/quantum_chestplate'),
+        tr('crafting_table/armor/quantum_leggings'),
+        tr('crafting_table/armor/quantum_boots'),
+        tr('crafting_table/uu_matter/ore/iridium_ore'),
+        tr('crafting_table/uu_matter/ore/deepslate_iridium_ore')
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
     // DELETE ALL SMALL DUST RECIPES
     e.remove({mod: 'techreborn', type: 'minecraft:crafting_shapeless', output: '#techreborn:small_dusts' });
+
+    // -- QUANTUM HELMET -- //
+    e.shaped(tr('quantum_helmet'), [
+        'DLD',
+        'SHS'
+    ],
+    {
+        D: tr('data_storage_chip'),
+        L: tr('lapotron_crystal'),
+        S: tr('superconductor'),
+        H: te('nano_helmet')
+    })
+    .id(st('quantum_helmet'));
+
+    // -- QUANTUM CHESTPLATE -- //
+    e.shaped(tr('quantum_chestplate'), [
+        'TCT',
+        'SLS',
+        'DID'
+    ],
+    {
+        D: tr('data_storage_chip'),
+        L: tr('lapotron_crystal'),
+        S: tr('superconductor'),
+        C: te('nano_chestplate'),
+        T: tr('tungstensteel_plate'),
+        I: tr('iridium_neutron_reflector')
+    })
+    .id(st('quantum_chestplate'));
+
+    // -- QUANTUM LEGGINGS -- //
+    e.shaped(tr('quantum_leggings'), [
+        'DLD',
+        'SNS',
+        'T T'
+    ],
+    {
+        D: tr('data_storage_chip'),
+        L: tr('lapotron_crystal'),
+        S: tr('superconductor'),
+        N: te('nano_leggings'),
+        T: tr('tungstensteel_plate'),
+    })
+    .id(st('quantum_leggings'));
+
+    // -- QUANTUM BOOTS -- //
+    e.shaped(tr('quantum_boots'), [
+        'L L',
+        'D D',
+        'SBS'
+    ],
+    {
+        D: tr('data_storage_chip'),
+        L: tr('lapotron_crystal'),
+        S: tr('superconductor'),
+        B: te('nano_boots'),
+    })
+    .id(st('quantum_boots'));
 
     // -- CELL -- //
     e.shaped(tr('cell'), [
@@ -264,18 +329,6 @@ ServerEvents.recipes(e => {
         W: mi('cupronickel_cable')
     })
     .id(st('scrapboxinator'));
-
-    // -- URANIUM ORE FROM UU -- //
-    e.shaped(mi('uranium_ore'), [
-        'UUU',
-        'UUU',
-        'USU'
-    ], 
-    {
-        U: tr('uu_matter'),
-        S: '#c:stones'
-    })
-    .id(st('uranium_ore'));
 
     // -- NUKE CONVERSION -- //
     e.shapeless(tr('nuke'), [mi('nuke')]);

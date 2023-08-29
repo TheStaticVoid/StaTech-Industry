@@ -5,43 +5,15 @@
 
 Ponder.registry((event) => {
     event.create('modern_industrialization:high_pressure_advanced_large_steam_boiler').scene('high_pressure_advanced_large_steam_boiler', 'The High Pressure Advanced Large Steam Boiler', 'kubejs:high_pressure_advanced_large_steam_boiler', (scene, util) => {
-        // Base plate
-        scene.world.showSection([0, 0, 0, 4, 0, 4], Facing.DOWN);
+        let size = structureSize(5, 7, 5);
+        showBasePlate(scene, size.width, size.depth);
 
         // First two layers
-        for (let y = 1; y < 3; y++) {
-            for (let x = 0; x < 5; x++) {
-                for (let z = 0; z< 5; z++) {
-                    scene.world.showSection([x, y, z], Facing.DOWN);
-                }
-                scene.idle(3);
-            }
-            scene.idle(5);
-        }
-
-        scene
-            .text(60, 'The Hatches must go on the base plate', [2.0, 2.0, 1.0])
-            .colored(PonderPalette.WHITE)
-            .placeNearTarget()
-            .attachKeyFrame();
-        scene.idle(80);
-
-        scene   
-            .text(60, 'The center blocks are Stainless Steel Pipe Machine Casing', [2.0, 3.0, 2.0])
-            .colored(PonderPalette.WHITE)
-            .placeNearTarget()
-            .attachKeyFrame();
-        scene.idle(80);
+        buildUpToYRegular(scene, size.width, size.depth, 3);
+        addText(scene, 60, 'The Hatches must go on the base plate', PonderPalette.WHITE, [2.0, 2.0, 1.0]);
+        addText(scene, 60, 'The center blocks are Stainless Steel Pipe Machine Casing', PonderPalette.WHITE, [2.0, 3.0, 2.0]);
 
         // The rest of the layers
-        for (let y = 3; y < 6; y++) {
-            for (let x = 0; x < 5; x++) {
-                for (let z = 0; z < 5; z++) {
-                    scene.world.showSection([x, y, z], Facing.DOWN);
-                }
-                scene.idle(3);
-            }
-            scene.idle(5);
-        }
+        buildUpSlice(scene, size.width, size.depth, 3, 6, 3);
     });
 });

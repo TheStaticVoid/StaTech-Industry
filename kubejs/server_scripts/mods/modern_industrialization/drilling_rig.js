@@ -33,4 +33,12 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: mi('gold_drill'), probability: 0.05 } ],
         [ { amount: 500, fluid: mc('lava') } ]
     );
+
+    drillingRig(
+        st('salt_water'),
+        16,
+        200,
+        [ { amount: 1, item: mi('bronze_drill'), probability: 0.02 } ],
+        [ { amount: 16000, fluid: mi('salt_water') } ]
+    );
 });

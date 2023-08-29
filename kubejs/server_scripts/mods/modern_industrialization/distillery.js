@@ -6,6 +6,7 @@
 ServerEvents.recipes(e => {
     let st = (id) => `statech:modern_industrialization/distillery/${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let distillery = (id, eu, duration, fluid_inputs, fluid_outputs) => {
@@ -22,6 +23,24 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- BRINE FROM SALT WATER -- //
+    distillery(
+        st('brine_from_salt_water'),
+        16,
+        400,
+        [ { amount: 4000, fluid: mi('salt_water') } ],
+        [ { amount: 3000, fluid: mi('brine') } ]
+    );
+
+    // -- WATER FROM SALT WATER -- //
+    distillery(
+        st('water_from_salt_water'),
+        16,
+        400,
+        [ { amount: 4000, fluid: mi('salt_water') } ],
+        [ { amount: 3500, fluid: mc('water') } ]
+    );
 
     // -- CREOSOTE FROM WOOD TAR -- //
     distillery(

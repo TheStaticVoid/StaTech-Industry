@@ -4,12 +4,15 @@
 // -----------------------------------------
 
 Ponder.tags((event) => {
-    event.createTag('kubejs:spectrum', 'spectrum:paintbrush', 'Spectrum', 'Ponder scenes for multiblock structures', [
-        'spectrum:pedestal_all_basic',
-        'spectrum:fusion_shrine_basalt',
-        'spectrum:enchanter',
-        'spectrum:spirit_instiller',
-        'spectrum:cinderhearth',
-        'spectrum:pedestal_onyx'
+    let kj = (id) => `kubejs:${id}`;
+    let sp = (id) => `spectrum:${id}`;
+
+    event.createTag(kj('spectrum'), sp('paintbrush'), 'Spectrum', 'Ponder scenes for multiblock structures', [
+        sp('pedestal_all_basic'),
+        sp('fusion_shrine_basalt'),
+        sp('enchanter'),
+        sp('spirit_instiller'),
+        sp('cinderhearth'),
+        sp('pedestal_onyx')
     ]);
 });

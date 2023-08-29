@@ -4,6 +4,56 @@
 // -----------------------------------------
 
 MIRegistrationEvents.registerFluids(e => {
+    // -- SALT WATER -- //
+    e.register(
+        'Salt Water',               // English name
+        'salt_water',               // internal name
+        0x033a6b,                   // Hex color code
+        'water',                    // Texture type
+        false,                      // is a gas?
+        'low',                      // opacity
+    );
+
+    // -- BRINE -- //
+    e.register(
+        'Brine',                    // English name
+        'brine',                    // internal name
+        0xefec82,                   // Hex color code
+        'water',                    // Texture type
+        false,                      // is a gas?
+        'high'                      // opacity
+    )
+
+    // -- NUTRIENT RICH WATER -- //
+    e.register(
+        'Nutrient Rich Water',      // English name
+        'nutrient_rich_water',      // internal name
+        0xdaffdb,                   // Hex color code
+        'water',                    // Texture type
+        false,                      // is a gas?
+        'medium'                    // opacity
+    );
+
+    // -- NUTRIENT RICH LIQUID ENDER -- //
+    e.register(
+        'Nutrient Rich Liquid Ender', // English name
+        'nutrient_rich_liquid_ender', // internal name
+        0x218b7a,                     // Hex color code
+        'water',                      // Texture type
+        false,                        // Is a gas?
+        'medium'                      // opacity
+    );
+
+    //-- NUTRIENT RICH BLOOD -- //
+    e.register(
+        'Nutrient Rich Blood',        // English name
+        'nutrient_rich_blood',        // internal name
+        0xe53246,                     // Hex color code
+        'plasma',                     // Texture type
+        false,                        // is a gas?
+        'high',                       // opacity
+    );
+
     // -- MOLTEN NETHER STAR -- //
     e.register(
         'Molten Nether Star',     // English name

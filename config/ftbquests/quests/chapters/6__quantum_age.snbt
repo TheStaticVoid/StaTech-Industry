@@ -80,8 +80,8 @@
 					type: "item"
 				}
 			]
-			x: -2.25d
-			y: 4.0d
+			x: -4.25d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2FDA67B4920D335D"]
@@ -172,8 +172,8 @@
 				}
 			]
 			title: "The Fusion Reactor"
-			x: 0.0d
-			y: 3.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["10943911EAB7196F"]
@@ -313,8 +313,8 @@
 				item: "modern_industrialization:superconductor_storage_unit"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 1.0d
+			x: -3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -356,6 +356,7 @@
 			dependencies: [
 				"50D18ACF6401C05D"
 				"78E1B9C83BB915D4"
+				"1E525921822F56AC"
 			]
 			description: ["By blasting an &aUltradense Metal Ball&f with more energy than several times our &dentire sun&r we can create a single &5Singularity&f, a &3black-hole you can somehow hold in your hands...&r"]
 			id: "10943911EAB7196F"
@@ -553,8 +554,8 @@
 				item: "modern_industrialization:quantum_machine_hull"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4FD7572FC6CC4140"]
@@ -770,8 +771,8 @@
 				item: "modern_industrialization:helium_plasma_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: -2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["598DBC20FB201711"]
@@ -808,14 +809,11 @@
 				item: "modern_industrialization:neutronium_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
-			dependencies: [
-				"1E525921822F56AC"
-				"3C38E4E38D595A8C"
-			]
+			dependencies: ["3C38E4E38D595A8C"]
 			description: ["Nuking the &aCore Fragments&r from your &eCore Mining Drill&r with &5Tungstensteel&r and &dEnderium&r will create an &aUltradense Metal Ball&r. These will be the catalyst for your &dSingularities&r."]
 			id: "4A2F6AA833C88B7C"
 			rewards: [
@@ -844,7 +842,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4A2F6AA833C88B7C"]
@@ -975,7 +973,7 @@
 				}
 			]
 			x: 6.0d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2FDA67B4920D335D"]
@@ -1123,8 +1121,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 3.0d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["500F9FE708EE8F1C"]
@@ -1155,8 +1153,8 @@
 				item: "kubejs:core_fragment"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["500F9FE708EE8F1C"]
@@ -1186,8 +1184,8 @@
 				item: "modern_industrialization:core_slurry_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 	subtitle: ["PhD in Theoretical Physics!"]

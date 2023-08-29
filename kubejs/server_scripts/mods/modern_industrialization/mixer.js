@@ -13,6 +13,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let cr = (id) => `create:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let cd = (id) => `culturaldelights:${id}`;
 
     // -- MIXER REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -39,6 +40,63 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    // -- SALT WATER -- //
+    mixer(
+        st('salt_water'),
+        2,
+        200,
+        [ { amount: 1, item: mi('salt_dust') } ],
+        null,
+        [ { amount: 100, fluid: mc('water') } ],
+        [ { amount: 150, fluid: mi('salt_water') } ]
+    );
+
+    // -- PICKLE -- //
+    mixer(
+        st('pickle'),
+        2,
+        600,
+        [
+            { amount: 1, item: cd('cucumber') },
+            { amount: 2, item: mi('salt_dust') }
+        ],
+        [ { amount: 1, item: cd('pickle') } ],
+        [ { amount: 100, fluid: mc('water') } ]
+    );
+
+    // -- NUTRIENT RICH WATER -- //
+    mixer(
+        st('nutrient_rich_water'),
+        8,
+        200,
+        [ { amount: 1, item: mc('bone_meal') } ],
+        null,
+        [ { amount: 100, fluid: mc('water') } ],
+        [ { amount: 200, fluid: mi('nutrient_rich_water') } ]
+    );
+
+    // -- NUTRIENT RICH LIQUID ENDER -- //
+    mixer(
+        st('nutrient_rich_liquid_ender'),
+        8,
+        200,
+        [ { amount: 1, item: mc('bone_meal') } ],
+        null,
+        [ { amount: 100, fluid: mi('liquid_ender') } ],
+        [ { amount: 200, fluid: mi('nutrient_rich_liquid_ender') } ]
+    );
+
+    // -- NUTRIENT RICH BLOOD -- //
+    mixer(
+        st('nutrient_rich_blood'),
+        8,
+        200,
+        [ { amount: 1, item: mc('bone_meal') } ],
+        null,
+        [ { amount: 100, fluid: mi('blood') } ],
+        [ { amount: 200, fluid: mi('nutrient_rich_blood') } ]
+    );
 
     // -- XP BERRY SEEDS -- //
     mixer(

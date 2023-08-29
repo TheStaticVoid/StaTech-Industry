@@ -520,7 +520,7 @@
 		}
 		{
 			dependencies: ["473C1DE557D3E9C0"]
-			description: ["The &aElectric Packer&r is the electrical version of the &6Steam Unpacker&r. It doesn't open up any new recipes, but it will process recipes &dmuch faster&r than its &7Steam&r counterpart."]
+			description: ["The &aElectric Packer&r is the electrical version of the &6Steam Packer&r. It doesn't open up any new recipes, but it will process recipes &dmuch faster&r than its &7Steam&r counterpart."]
 			id: "3F0D5EA33B0F016B"
 			rewards: [
 				{
@@ -5579,7 +5579,7 @@
 					xp: 10
 				}
 			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "458F30860C8B7756"
 				item: "techreborn:energy_crystal"
@@ -6425,7 +6425,7 @@
 				item: "modern_industrialization:aluminum_drill"
 				type: "item"
 			}]
-			x: 3.75d
+			x: 3.25d
 			y: 17.5d
 		}
 		{
@@ -7564,7 +7564,7 @@
 			description: [
 				"While tearing down entire forests definitely &emake the factory happy&r, it does not &cmake you happy&r. It's a lot of &ctedious work&r for such a &abasic material&r. While you could make a simple &eCreate contraption&r for a &3tree farm&r, it's not the most &clag-friendly&r method, and a lot of larger tree types &cdont get cut down properly&r by &eCreate&r's &6Mechanical Saws&r. Luckily, the &aIndustrial Greenhouse&r can solve all these issues. By feeding it &9Water&r and providing a &2Sapling&r, it will generate &dLogs&r and &2Saplings&r of that respective type after little bit of time. "
 				""
-				"If you provide &6Bone Meal&r with the recipe, it will &2double the output&r. Please note though that it's best to ensure you're &3only running one recipe&r for maximum overclock potential. If you can't supply a steady stream of &6Bone Meal&r to the machine, it's probably better to use the recipes without it."
+				"If you provide the &6Nutrient Rich&r version of the fluid with the recipe, it will &2double the output&r. There are three variants for &6Nutrient Rich&r fluids, &9water&r, &cblood&r, and &dliquid ender&r. The &6Nutrient Rich&r versions are used in place of the regular fluid to boost the output. Please note though that it's best to ensure you're &3only running one recipe&r for maximum overclock potential. If you can't supply a steady stream of &6Nutrient Rich Solutions&r to the machine, it's probably better to use the recipes without it."
 			]
 			icon: "modern_industrialization:greenhouse"
 			id: "12D1C1484AD1A11C"
@@ -8066,6 +8066,7 @@
 					xp: 10
 				}
 			]
+			shape: "square"
 			tasks: [
 				{
 					id: "7B5155506122AC9C"
@@ -8487,9 +8488,9 @@
 			description: [
 				"The &aAlternator&r and &3Electric Motor&r from &6Create: Crafts \\& Additions&r can be used to integrate &6Create&r into your &bpower network&r."
 				""
-				"The &aAlternator&r will consume &cstress units&r to generate power. The &dhigher RPM the more it will generate, up to 5 EU/t&r. While this might seem incredibly low, it doesn't take much to setup a decent network for power with &6Create&r."
+				"The &aAlternator&r will consume &cstress units&r to generate power. The &dhigher RPM the more it will generate, up to 48 EU/t&r. While this might seem low, it doesn't take much to setup a decent network for power with &6Create&r."
 				""
-				"The &3Electric Motor&r is the inverse, and will allow you to power a &6Create&r &2rotational network&r with electricity produced elsewhere. The &3Electric Motor&r only costs 8 EU/t to run at 256 RPM, definitely worth the investment! The &bhigher the RPM&r you set it to, the &ehigher the total stress units available&r as well."
+				"The &3Electric Motor&r is the inverse, and will allow you to power a &6Create&r &2rotational network&r with electricity produced elsewhere. The &3Electric Motor&r only costs 64 EU/t to run at 256 RPM, definitely worth the investment! The &bhigher the RPM&r you set it to, the &ehigher the total stress units available&r as well."
 			]
 			id: "48317EF53F769C1B"
 			rewards: [
@@ -8651,6 +8652,37 @@
 			}]
 			x: -24.5d
 			y: 14.5d
+		}
+		{
+			dependencies: ["5000D009D884FB99"]
+			description: ["By using a &6Bronze Drill&r in the &eOil Drilling Rig&r will produce &aSalt Water&r. This can be further processed into &eBrine&r and then &delectrolyzed&r to produce useful byproducts such as &3Chlorine&r and &2Sodium Hydroxide&r."]
+			id: "1672575316A1B791"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1D9E553FBCA536A2"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "5553D996D18F8822"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "3723C72ACA7AFF34"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "57345F329B7AF3CC"
+				item: "modern_industrialization:salt_water_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 17.5d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]
