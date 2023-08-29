@@ -1,4 +1,3 @@
-# PRELIMINARY PATCHNOTES
 # StaTech Industry 1.1.8 Changelog:
 
 ## Mods added:
@@ -52,3 +51,4 @@
 - [Nerfed TechReborn UU-Matter recipes for Uranium and Iridium](https://github.com/TheStaticVoid/StaTech-Industry/issues/413)
 - [Added recipe for Barbed Wire and removed some unused Crafts & Additions items](https://github.com/TheStaticVoid/StaTech-Industry/issues/404)
 - [Updated Crafts & Additions Alternator config](https://github.com/TheStaticVoid/StaTech-Industry/issues/404)
+- [Updated chapter 6 progression to match proper recipe requirements]()
