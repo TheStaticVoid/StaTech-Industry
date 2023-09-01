@@ -3,6 +3,13 @@
 ## Mods added:
 
 ## Mods updated:
+- [Carry On](https://www.curseforge.com/minecraft/mc-mods/carry-on) - 2.1.0.20 -> 2.1.1.21
+- [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) - 2.1.8 -> 2.1.9
+- [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.7.1 -> 5.7.2
+- [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.643 -> 9.1.650
+- [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) - 1.1.12 -> 1.1.12a
+- [Trowel](https://www.curseforge.com/minecraft/mc-mods/trowel) - 1.1.0 -> 1.2.0
+- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.18.1 -> 5.19.0
 
 ## Mods removed:
 - [FastBench for Fabric](https://www.curseforge.com/minecraft/mc-mods/fastbench-for-fabric) - Causes graphical errors when crafting with Tom's storage and pocket crafting table
