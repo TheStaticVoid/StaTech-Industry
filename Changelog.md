@@ -9,3 +9,4 @@
 
 ## Other changes:
 - [Fix modernfix config](https://github.com/TheStaticVoid/StaTech-Industry/issues/420)
+- [Fix a recipe issue with ME Cables from MI datagen]()
