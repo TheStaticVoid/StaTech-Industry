@@ -43,6 +43,18 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- SCRAP BOX -- //
+    packer(
+        st('scrap_box'),
+        2,
+        200,
+        [
+            { amount: 9, item: tr('scrap') },
+            { amount: 1, item: mi('packer_block_template'), probability: 0.0 }
+        ],
+        [ { amount: 1, item: tr('scrap_box') } ]
+    );
+
     // -- FLUID PIPE -- //
     packer(
         st('fluid_pipe'),
