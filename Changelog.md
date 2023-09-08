@@ -1,5 +1,9 @@
 # StaTech Industry 1.1.9 Changelog:
 
+## Mods added:
+- [CapeJS](https://www.curseforge.com/minecraft/mc-mods/capejs) - Mod for adding capes using KubeJS. Will be rolling out custom capes to pack completionists, fellow mod devs, and GitHub contributors
+- [MI Sound Addon](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization-sound-addon) - Adds sounds to all the Modern Industrialization machines and the wrench.
+
 ## Mods updated:
 - [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) - 12.9.7 -> 12.9.8
 - [badpackets](https://www.curseforge.com/minecraft/mc-mods/badpackets) - 0.2.1 -> 0.2.2
