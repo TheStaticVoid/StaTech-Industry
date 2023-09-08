@@ -9,7 +9,7 @@ Ponder.registry((event) => {
         showBasePlate(scene, size.width, size.depth);
 
         // First two layers
-        buildUpToYRegular(scene, size.width, size.depth, 2);
+        buildUpToYRegular(scene, size.width, size.depth, 3);
         addText(scene, 60, 'The fluid pipes connect directly to the controller block', PonderPalette.WHITE, [3.0, 3.0, 2.0]);
 
         // Third layer
