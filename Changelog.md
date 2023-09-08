@@ -8,11 +8,14 @@
 - [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) - 12.9.7 -> 12.9.8
 - [badpackets](https://www.curseforge.com/minecraft/mc-mods/badpackets) - 0.2.1 -> 0.2.2
 - [Carry On](https://www.curseforge.com/minecraft/mc-mods/carry-on) - 2.1.0.20 -> 2.1.1.21
+- [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice) - 2.3.1 -> 2.3.2
 - [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) - 2.1.8 -> 2.1.9
-- [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.1-build.370 -> 1902.6.2-build.3
+- [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.1-build.370 -> 1902.6.2-build.10
+- [megane](https://www.curseforge.com/minecraft/mc-mods/megane) - 8.5.1 -> 8.6.0
 - [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.7.1 -> 5.7.2
 - [Modern Industrialization](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization) - 1.6.14 -> 1.6.15
 - [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.643 -> 9.1.650
+- [Spellblades and Such](https://www.curseforge.com/minecraft/mc-mods/spellblade-next) - 1.0.27.2.hotfix1 -> 1.0.27.4
 - [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) - 1.1.12 -> 1.1.12b
 - [Trowel](https://www.curseforge.com/minecraft/mc-mods/trowel) - 1.1.0 -> 1.2.1
 - [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.18.1 -> 5.19.0
