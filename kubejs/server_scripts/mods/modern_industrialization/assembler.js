@@ -45,6 +45,18 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- QUARTZ FIBER -- //
+    assembler(
+        st('quartz_fiber'),
+        8,
+        200,
+        [
+            { amount: 6, tag: 'c:glass' },
+            { amount: 3, item: ae('certus_quartz_dust') }
+        ],
+        [ { amount: 3, item: ae('quartz_fiber') } ]
+    );
+
     // -- END CRYSTAL -- //
     assembler(
         st('end_crystal'),
