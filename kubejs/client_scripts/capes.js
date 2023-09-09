@@ -7,7 +7,6 @@ CapeJS.addCapes(e => {
     // -- DISCORD ADMIN -- //
     e.register("29fd2f29-b4f9-46d0-a812-1de49f0d2b0c", "admin");                        // neerdowell (inferno)
     e.register("1da631a4-ace2-4f6f-ba71-6779d659b149", "admin");                        // Dutchynl
-    e.register("60e98aef-d72d-4521-b8dd-03ba1fbda805", "pack_completionist");                  // GSACommando (TESTING)
 
     // -- FLYTE-LESS -- //
     e.register("75f0a7a0-0773-4c17-a265-109125a83375", "flyteless");                    // Flyte_less
