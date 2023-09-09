@@ -26,6 +26,7 @@
 ## Other changes:
 - [Fix spelling of Cupronickel in LV Turbine quest - by @Flyte-less](https://github.com/TheStaticVoid/StaTech-Industry/pull/427)
 - [Add Warden and Dragon model to Boss Crusher](https://github.com/TheStaticVoid/StaTech-Industry/issues/422) - There's more planned for this in the future
+- [Assigned capes to github contributors, fellow mod devs, pack completionists, supporters, beta testers, and discord admins]()
 - [Added a tooltip to all custom MI machines](https://github.com/TheStaticVoid/StaTech-Industry/issues/426)
 - [Added packer recipe for TechReborn Scrap Box](https://github.com/TheStaticVoid/StaTech-Industry/issues/430)
 - [Added assembler and packer recipes for AE Fluix Cables](https://github.com/TheStaticVoid/StaTech-Industry/issues/431)
