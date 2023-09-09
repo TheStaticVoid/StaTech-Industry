@@ -1,4 +1,10 @@
+# Preliminary Patch Notes
 # StaTech Industry 1.1.9 Changelog:
+This was meant to come out much sooner to address the FastBench issue, however I got caught up with other projects. This update includes the MI Sound Addon I've been working on, meaning that all your machines will start buzzing and humming away. If you don't like this, you can disable it in the config (server-side) or make a Steel Mallet and start smacking your machines.
+
+Additionally, I've included CapeJS, the other mod I've been working on, and started distributing capes to github contributors, supporters, other mod developers, pack completionists, and beta testers. If you beat the pack and want a cape, make sure to join the Discord.
+
+Lastly for big changes, the Boss Crusher now supports warden and dragon models. These are pretty basic for now, and will probably be expanded upon later.
 
 ## Mods added:
 - [CapeJS](https://www.curseforge.com/minecraft/mc-mods/capejs) - Mod for adding capes using KubeJS. Will be rolling out custom capes to pack completionists, fellow mod devs, and GitHub contributors
@@ -26,9 +32,12 @@
 ## Other changes:
 - [Fix spelling of Cupronickel in LV Turbine quest - by @Flyte-less](https://github.com/TheStaticVoid/StaTech-Industry/pull/427)
 - [Add Warden and Dragon model to Boss Crusher](https://github.com/TheStaticVoid/StaTech-Industry/issues/422) - There's more planned for this in the future
-- [Assigned capes to github contributors, fellow mod devs, pack completionists, supporters, beta testers, and discord admins]()
+- [Assigned capes to github contributors, fellow mod devs, pack completionists, supporters, beta testers, and discord admins](https://github.com/TheStaticVoid/StaTech-Industry/commit/956d1df2c20236919a9943206fd28d86138c2fba)
 - [Added a tooltip to all custom MI machines](https://github.com/TheStaticVoid/StaTech-Industry/issues/426)
 - [Added packer recipe for TechReborn Scrap Box](https://github.com/TheStaticVoid/StaTech-Industry/issues/430)
 - [Added assembler and packer recipes for AE Fluix Cables](https://github.com/TheStaticVoid/StaTech-Industry/issues/431)
 - [Fix modernfix config](https://github.com/TheStaticVoid/StaTech-Industry/issues/420)
 - [Fix a recipe issue with ME Cables from MI datagen](https://github.com/TheStaticVoid/StaTech-Industry/commit/d18d1b6a0f2ad2f01b5763c1f61ea1d8e120c554)
+
+## Contributors
+@Flyte-less

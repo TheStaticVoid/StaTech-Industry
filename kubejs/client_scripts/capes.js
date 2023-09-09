@@ -29,7 +29,7 @@ CapeJS.addCapes(e => {
     e.register("a6807197-6631-4b8e-ad8a-bbedfb005764", "mod_developer");                // thepigcat76
     // dafuqs
     // roost_er
-    // mirinimi
+    e.register("7573dfca-56f5-49c4-b5e2-009718218b29", "mod_developer");                // 0xDAD (Mirinimi)
 
     // -- CONTENT CREATOR -- //
     e.register("350d11b9-1754-47b7-80a5-b8e01b760ec8", "content_creator");              // Zephyr, aka ApexPredaturr
@@ -59,6 +59,6 @@ CapeJS.addCapes(e => {
     // drprofmeister
     e.register("d9e1d77a-a03c-40df-838f-77f2ea317214", "pack_completionist");           // GThoro
     e.register("9d8cca5d-9e93-4616-9d85-5ee897e032c8", "pack_completionist");           // jOaSb
-    // thom
+    e.register("13ab8ce5-e43a-4167-bef0-09355149f591", "pack_completionist");           // ThomBern
     // zebo
 });
