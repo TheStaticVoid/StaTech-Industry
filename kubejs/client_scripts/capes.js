@@ -7,6 +7,7 @@ CapeJS.addCapes(e => {
     // -- DISCORD ADMIN -- //
     e.register("29fd2f29-b4f9-46d0-a812-1de49f0d2b0c", "admin");                        // neerdowell (inferno)
     e.register("1da631a4-ace2-4f6f-ba71-6779d659b149", "admin");                        // Dutchynl
+    e.register("60e98aef-d72d-4521-b8dd-03ba1fbda805", "pack_completionist");                  // GSACommando (TESTING)
 
     // -- FLYTE-LESS -- //
     e.register("75f0a7a0-0773-4c17-a265-109125a83375", "flyteless");                    // Flyte_less
@@ -19,8 +20,8 @@ CapeJS.addCapes(e => {
     e.register("1766fb04-3569-4099-b420-9e3006c206bb", "contributor");                  // EntityInArray (cyberplebian)
 
     // -- SUPPORTER -- //
-    // michiderechte
-    // qaptain
+    e.register("ce2ad8ee-6523-4fee-aa6b-8f724e21463a", "supporter");                    // Michi12332323 (michiderechte)
+    e.register("b895bee1-337c-42cf-acaa-9dc87698b6b1", "supporter");                    // QaptainGeebs (qaptain)
     // r4ndomhero
 
     // -- MOD DEV -- //
@@ -56,7 +57,7 @@ CapeJS.addCapes(e => {
     // 1804
     e.register("3dd5fbfa-e1df-4c6c-af67-ff5226495d14", "pack_completionist");           // Andrei Mudrov
     e.register("917c8dcd-ea2b-4709-83a0-3b9d5e8741a8", "pack_completionist");           // Diagnul
-    // drprofmeister
+    e.register("04422d92-8760-4277-bf8e-f5d42d2bb1a8", "pack_completionist");           // Syees (DrProfMeister)
     e.register("d9e1d77a-a03c-40df-838f-77f2ea317214", "pack_completionist");           // GThoro
     e.register("9d8cca5d-9e93-4616-9d85-5ee897e032c8", "pack_completionist");           // jOaSb
     e.register("13ab8ce5-e43a-4167-bef0-09355149f591", "pack_completionist");           // ThomBern
