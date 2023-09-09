@@ -1,4 +1,3 @@
-# Preliminary Patch Notes
 # StaTech Industry 1.1.9 Changelog:
 This was meant to come out much sooner to address the FastBench issue, however I got caught up with other projects. This update includes the MI Sound Addon I've been working on, meaning that all your machines will start buzzing and humming away. If you don't like this, you can disable it in the config (server-side) or make a Steel Mallet and start smacking your machines.
 

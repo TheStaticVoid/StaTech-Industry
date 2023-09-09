@@ -1573,6 +1573,10 @@ file = "kubejs/assets/modern_industrialization/blockstates/distillery.json"
 hash = "2b6672b4505732c8b72358d22489deb5f1a7671df769699bd72b9defcaf30f4d"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/blockstates/dragons_blood.json"
+hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/drilling_fluid.json"
 hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
 
@@ -1826,6 +1830,10 @@ hash = "77453bacc3c50db11ac9c224d188242396e0fd3245a48c8bf6c41ac34a9f8ed5"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/impure_liquid_nether_star.json"
+hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/blockstates/impure_resonating_fluid.json"
 hash = "f1120fb70661b0d59ba305e83319f8ceb9a3019b94ce0daf1c9fbebb92d8fd40"
 
 [[files]]
@@ -2614,7 +2622,7 @@ hash = "1c085405833b5e1a6bb60f4feb2a9bb2fda4d27b8953c5f94d64731e2e30da8f"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/lang/en_us.json"
-hash = "a9a08c802dd42ac320048ade8ee7d5aebceece1b02382f1b5ddd4f0fb698f72e"
+hash = "3a94ca48e860a8b4ee5d1424caf9f933ecfecfa2b790320a1441ac6e4329188d"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/block/advanced_machine_casing.json"
@@ -4161,6 +4169,10 @@ file = "kubejs/assets/modern_industrialization/models/item/distillery.json"
 hash = "dad1ff4eb275a64df6237a0d29d5facc7b6e66520cc8a838f85eefe531ccf73e"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/models/item/dragons_blood_bucket.json"
+hash = "85017e0313af7bf7b699e900cbff15e422ba5f6cd0e8c0cc06f58bd7fd60d84f"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/models/item/drilling_fluid_bucket.json"
 hash = "51b462b1999c18df47d29a176279d1e4767dda5397c7917ab08cc1d1c79c0727"
 
@@ -4651,6 +4663,10 @@ hash = "7b8a0ca7d17d7ff23e1124260f72c07274af758a856798567dd2ab7711f74821"
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/item/impure_liquid_nether_star_bucket.json"
 hash = "c18184f64f156ddb9a4cf05dbb9110169adf0a4c68b394d22f1e5565e66f56c4"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/models/item/impure_resonating_fluid_bucket.json"
+hash = "276d460d85ef946b1274e57f413bcc5eacbf2dc804fad6cf8249e47ec52f017b"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/models/item/inductor.json"
@@ -9209,6 +9225,14 @@ file = "kubejs/assets/modern_industrialization/textures/fluid/diethyl_ether_stil
 hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/dragons_blood_still.png"
+hash = "6841c4598ed79adf279ec19537ea2dd8ca1772d024bd5966a50bab002e388d23"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/dragons_blood_still.png.mcmeta"
+hash = "c5c413f48519f09dd4a01d7b4d1ded298e90946f16c354b42c09a4feb371531e"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/textures/fluid/drilling_fluid_still.png"
 hash = "a4042a41dc99832f01fa18834c75dded783d9a55fa7bc7c9619766b1e4193509"
 
@@ -9359,6 +9383,14 @@ hash = "bf41b2ffe33285b0ad24c741fee4d0c7ad528779b57d58de9fbfb70cca05b09d"
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/fluid/impure_liquid_nether_star_still.png.mcmeta"
 hash = "4e0b40c37c420d3aa6350220488d76dbe6c93ef8795e77ed85115ad00a540791"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/impure_resonating_fluid_still.png"
+hash = "c20dc43b9bbdd850d1eefca57510765b1638cde40703c7c2e041616b4bd7f508"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/fluid/impure_resonating_fluid_still.png.mcmeta"
+hash = "7dc16041541801a5bbfd3e98fc2e939ca860cc063a19393da16841eca4212b37"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/fluid/light_fuel_still.png"
@@ -10417,6 +10449,10 @@ file = "kubejs/assets/modern_industrialization/textures/item/diethyl_ether_bucke
 hash = "44e50f87b1e0e3ad73b8eae1f0b6bd9de4d87a01b642ca71dec5f4838c4c3028"
 
 [[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/dragons_blood_bucket.png"
+hash = "d7d12adc6908092f6d7b4385a68818389f8dbf1234be0ecfe8b5399901dcab03"
+
+[[files]]
 file = "kubejs/assets/modern_industrialization/textures/item/drilling_fluid_bucket.png"
 hash = "d507086065eaa53a2ec86ef4fcb82f90da30510cde2c507ab955d6c79d4981dc"
 
@@ -10703,6 +10739,10 @@ hash = "4f0779226f607101012652a9776c1fe45a6a94fe8fb2ca5d0965b8b5fa2025a3"
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/item/impure_liquid_nether_star_bucket.png"
 hash = "d8edd6fd9e55eb0edc8c51c06df9fc479982ed2b8cf0f1765382915a36d503af"
+
+[[files]]
+file = "kubejs/assets/modern_industrialization/textures/item/impure_resonating_fluid_bucket.png"
+hash = "330fdf526509334c9800a1f31e7d10be4ee09975456a5137ba9026df0f0a827d"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/textures/item/invar_bolt.png"
@@ -12058,7 +12098,7 @@ hash = "e54fb593feb7e308ffb190ff18512a371c3ddf9a061366e89d983a7a4cbd802f"
 
 [[files]]
 file = "kubejs/client_scripts/capes.js"
-hash = "16565c7f564098d8ea471556e4604be02110dcba9d2e12d7c496790daaf33e9e"
+hash = "f5f2798f2c62e86c8c1e97c2f0182f85aac8e3af2aad16900f0b4a7e201ee153"
 
 [[files]]
 file = "kubejs/client_scripts/ore_information.js"
