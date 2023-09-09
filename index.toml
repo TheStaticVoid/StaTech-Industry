@@ -517,6 +517,38 @@ file = "kubejs/README.txt"
 hash = "02d6feb3afe1d9c96e137f8baaa71de982f1af0a2b37fbcba73f34ee59ebbd4d"
 
 [[files]]
+file = "kubejs/assets/capejs/textures/capes/admin.png"
+hash = "20b3872bdd23ecb068632e0c1ec810b94cd272e119a2f716eb72f717f7561e9a"
+
+[[files]]
+file = "kubejs/assets/capejs/textures/capes/beta_tester.png"
+hash = "587c8b128eb2c51c939871ef34896c779a7595608eb4980d5bee8e4f0c5101b6"
+
+[[files]]
+file = "kubejs/assets/capejs/textures/capes/content_creator.png"
+hash = "f32f13719710702e15c4f2647d2f7f2e410ed4c4c492e0636b9c155436afc87b"
+
+[[files]]
+file = "kubejs/assets/capejs/textures/capes/contributor.png"
+hash = "df9f701f3272caec86464a9a2ae2f34285f8e560af7bffc9324f1c21ec1ef3cf"
+
+[[files]]
+file = "kubejs/assets/capejs/textures/capes/flyteless.png"
+hash = "7210f9ce2886751d999151ff606fb08d3bf1490717644a75b11055f39c51f206"
+
+[[files]]
+file = "kubejs/assets/capejs/textures/capes/mod_developer.png"
+hash = "72478921c78325fbab286a514599d72d8ad1f982aaee52d70421f56eb13be0f0"
+
+[[files]]
+file = "kubejs/assets/capejs/textures/capes/pack_completionist.png"
+hash = "cab4b05f1d7459e715e107d59bc729edf13525309f50b6535399e565eea9c116"
+
+[[files]]
+file = "kubejs/assets/capejs/textures/capes/supporter.png"
+hash = "8780bf05ef55ad9fa2c24b446301d04890a3c6754f71b4395f5a752c85b4459e"
+
+[[files]]
 file = "kubejs/assets/continuity/optifine/ctm/Zedtech MI/coils/cupronickel/0.png"
 hash = "668b102ac605baa56ac45fd9f8010a5fca30536b572ce1f84ffbbbfb5deb2aa1"
 
@@ -1131,6 +1163,38 @@ hash = "52f39cb053d3ac027e160bbc8b04f7fcd6c13dbb23fd877841ba8750b852f92a"
 [[files]]
 file = "kubejs/assets/kubejs/textures/models/armor/clear_layer_2.png"
 hash = "b0686b6dfc6c9c5226464b8eb69650d799582bcebcd536682616a01ec8a0a0b2"
+
+[[files]]
+file = "kubejs/assets/mi_sound_addon/sounds.json"
+hash = "89e647abaaddaf87445ef6c6b4bbee5a8f5ce091b542aa853b32d332222f02d8"
+
+[[files]]
+file = "kubejs/assets/mi_sound_addon/sounds/greenhouse.ogg"
+hash = "24866f64b6b5c6bb319cafab235af8c3117098896d3eb56a8f06927b9e54dad4"
+
+[[files]]
+file = "kubejs/assets/mi_sound_addon/sounds/laser_engraver.ogg"
+hash = "4fa97b5bb65edf7c8cac8f0fb758d5ae05fd8bf2ec511ef8275440d3ea874f1a"
+
+[[files]]
+file = "kubejs/assets/mi_sound_addon/sounds/mob_crusher.ogg"
+hash = "e455945287c650ebda5316ea1fad38dc1ac173379973aa2fd6911f2f26189cec"
+
+[[files]]
+file = "kubejs/assets/mi_sound_addon/sounds/photosynthetic_chamber.ogg"
+hash = "0ca758220dc20d41e8bf6d6b904e8739aa97cf578a10bc94e3173b901fef6789"
+
+[[files]]
+file = "kubejs/assets/mi_sound_addon/sounds/pyrolyse_oven.ogg"
+hash = "24e328d1edc3b47799c6f1b0a9d5dc92678f1bf8515b6c374415b27cc9dde3fc"
+
+[[files]]
+file = "kubejs/assets/mi_sound_addon/sounds/singularity_forge.ogg"
+hash = "2a233c14690a9ff8cda8ec712e205589e5ce50a5978faed54ce802dc898eb54f"
+
+[[files]]
+file = "kubejs/assets/mi_sound_addon/sounds/space_probe_launcher.ogg"
+hash = "554bb976fb010b8e1144c14954002cc76a0e9db599d82012b111dd3f6e3f12f0"
 
 [[files]]
 file = "kubejs/assets/modern_industrialization/blockstates/acetylene.json"
@@ -11993,6 +12057,10 @@ file = "kubejs/assets/statech/textures/item/spectrum_temple.png"
 hash = "e54fb593feb7e308ffb190ff18512a371c3ddf9a061366e89d983a7a4cbd802f"
 
 [[files]]
+file = "kubejs/client_scripts/capes.js"
+hash = "16565c7f564098d8ea471556e4604be02110dcba9d2e12d7c496790daaf33e9e"
+
+[[files]]
 file = "kubejs/client_scripts/ore_information.js"
 hash = "9f17656a33ab3e59fb461db853457ce12db310f4fa02dc6bdd48da89a2a8914b"
 
@@ -12078,7 +12146,7 @@ hash = "e97928241958f3806c75739b63aabac9472ca7a146804ff3c7fddbc359fbe614"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/large_tank.js"
-hash = "e5489b6af57e7f6d9204690a006911f17f1eea6a64f4dca827c79074f7a27d3f"
+hash = "8b1a31f00ff876dad09c464153c5b5a8b049e8e7aef067f3baa6ad6c5fa6f122"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/mega_smelter.js"
@@ -12175,6 +12243,10 @@ hash = "dead0d2134783c885d338a6b0aeba4b297a839fff04c6496ee4eb86ed800dea5"
 [[files]]
 file = "kubejs/client_scripts/rename.js"
 hash = "0b99ff6b2d8f52fb51890f2c05d00a99e528ead3a3a16f43fea9ddd427630df2"
+
+[[files]]
+file = "kubejs/client_scripts/tooltips.js"
+hash = "7d9ac802bd86efc90e3adb80f28082600ab020520f11d5944089739f1e13ade4"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -25494,7 +25566,7 @@ hash = "8085c982b9d733f00f2d76031a9e466f9698b9dc9be960e50fd1969634876cc5"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/assembler.js"
-hash = "44aa31c6df367e1a77740e0e8c4ac73fa349992c3013c795f8d0b95a45ac68c1"
+hash = "62c32eaeb1e541629305dd7cf9a0663679b63b45464c887f09d3f33f8e442154"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/blast_furnace.js"
@@ -25590,7 +25662,7 @@ hash = "188b020d62e365172acd0dbe0c4330dcc1362f36311559e5a60f75cdb7d9de4b"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/packer.js"
-hash = "ee28c9d983eb2362eaa51d373cb92cabd3670b2b77481a6db0010755ba1ea497"
+hash = "a044450e5f716f9e6adc5903d5f43096f171fbd4efdd7c2a031ea09ec53654b7"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/photosynthetic_chamber.js"
@@ -25807,6 +25879,10 @@ hash = "8bfa982c6d78d0e3fc85a23df8e94567d2f9b17963aaf9e5ba08d30bb59e9368"
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/multiblocks/space_probe_launcher.js"
 hash = "039305118d56679fa6aad118f132dc203cc4f0f817bcfb388340913fa3272d96"
+
+[[files]]
+file = "kubejs/startup_scripts/modern_industrialization/sounds.js"
+hash = "53d8da866e35ca45c202af6ae9976ba6f0571b4abacf45cd004362d060800eb4"
 
 [[files]]
 file = "kubejs/startup_scripts/ores.js"

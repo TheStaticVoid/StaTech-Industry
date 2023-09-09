@@ -14,9 +14,10 @@ Lastly for big changes, the Boss Crusher now supports warden and dragon models. 
 - [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) - 12.9.7 -> 12.9.8
 - [badpackets](https://www.curseforge.com/minecraft/mc-mods/badpackets) - 0.2.1 -> 0.2.2
 - [Carry On](https://www.curseforge.com/minecraft/mc-mods/carry-on) - 2.1.0.20 -> 2.1.1.21
+- [Complementary Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) - 2.3 -> 5.0
 - [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice) - 2.3.1 -> 2.3.2
 - [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) - 2.1.8 -> 2.1.9
-- [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.1-build.370 -> 1902.6.2-build.10
+- [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.1-build.370 -> 1902.6.2-build.15
 - [megane](https://www.curseforge.com/minecraft/mc-mods/megane) - 8.5.1 -> 8.6.0
 - [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.7.1 -> 5.7.2
 - [Modern Industrialization](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization) - 1.6.14 -> 1.6.15
