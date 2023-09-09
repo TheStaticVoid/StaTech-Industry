@@ -43,6 +43,86 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- FLUIX GLASS CABLE -- //
+    packer(
+        st('fluix_glass_cable'),
+        8,
+        200,
+        [
+            { amount: 2, item: ae('fluix_crystal') },
+            { amount: 1, item: ae('quartz_fiber') }
+        ],
+        [ { amount: 4, item: ae('fluix_glass_cable') } ]
+    );
+
+    // -- FLUIX ME COVERED CABLE -- //
+    packer(
+        st('fluix_me_covered_cable'),
+        8,
+        200,
+        [
+            { amount: 1, tag: mc('wool') },
+            { amount: 1, item: ae('fluix_glass_cable') }
+        ],
+        [ { amount: 1, item: ae('fluix_covered_cable') } ]
+    );
+
+    // -- FLUIX ME DENSE COVERED CABLE -- //
+    packer(
+        st('fluix_covered_dense_cable'),
+        8,
+        200,
+        [ { amount: 4, item: ae('fluix_covered_cable') } ],
+        [ { amount: 1, item: ae('fluix_covered_dense_cable') } ]
+    );
+
+    // -- FLUIX ME SMART CABLE -- //
+    packer(
+        st('fluix_smart_cable'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('fluix_covered_cable') },
+            { amount: 1, item: mc('redstone') },
+            { amount: 1, item: mc('glowstone_dust') }
+        ],
+        [ { amount: 1, item: ae('fluix_smart_cable') } ]
+    );
+
+    // -- FLUIX ME DENSE SMART CABLE -- //
+    packer(
+        st('fluix_smart_dense_cable_packed'),
+        8,
+        200,
+        [ { amount: 4, item: ae('fluix_smart_cable') } ],
+        [ { amount: 1, item: ae('fluix_smart_dense_cable') } ]
+    );
+
+    // -- FLUIX DENSE ME SMART CABLE -- //
+    packer(
+        st('fluix_smart_dense_cable'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('fluix_covered_dense_cable') },
+            { amount: 1, item: mc('redstone') },
+            { amount: 1, item: mc('glowstone_dust') }
+        ],
+        [ { amount: 1, item: ae('fluix_smart_dense_cable') } ]
+    );
+
+    // -- SCRAP BOX -- //
+    packer(
+        st('scrap_box'),
+        2,
+        200,
+        [
+            { amount: 9, item: tr('scrap') },
+            { amount: 1, item: mi('packer_block_template'), probability: 0.0 }
+        ],
+        [ { amount: 1, item: tr('scrap_box') } ]
+    );
+
     // -- FLUID PIPE -- //
     packer(
         st('fluid_pipe'),

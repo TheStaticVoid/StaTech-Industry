@@ -45,6 +45,31 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- QUARTZ FIBER -- //
+    assembler(
+        st('quartz_fiber'),
+        8,
+        200,
+        [
+            { amount: 6, tag: 'c:glass' },
+            { amount: 3, item: ae('certus_quartz_dust') }
+        ],
+        [ { amount: 3, item: ae('quartz_fiber') } ]
+    );
+
+    // -- END CRYSTAL -- //
+    assembler(
+        st('end_crystal'),
+        16,
+        200,
+        [
+            { amount: 7, item: mc('glass') },
+            { amount: 1, item: mc('ender_eye') },
+            { amount: 1, item: mc('ghast_tear') }
+        ],
+        [ { amount: 1, item: mc('end_crystal') } ]
+    );
+
     // -- URANIUM ORE FROM UU -- //
     assembler(
         st('uranium_ore'),

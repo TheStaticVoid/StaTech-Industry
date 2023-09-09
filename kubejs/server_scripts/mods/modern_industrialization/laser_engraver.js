@@ -175,19 +175,22 @@ ServerEvents.recipes(e => {
 
     // -- BOSS CRUSHER MODELS -- //
     const bossModelItemList = [
-        //  Model                           Item
-        [ kj('wither_model'),  kj('withered_soc') ]
+        //  Model                           Item        Amount
+        [ kj('wither_model'),  kj('withered_soc'),      1 ],
+        [ kj('dragon_model'),  mc('end_crystal'),       4 ],
+        [ kj('warden_model'),  mc('echo_shard'),        4 ]
     ];
     bossModelItemList.forEach(bossModelItem => {
         let bossModel = bossModelItem[0];
         let bossItem = bossModelItem[1];
+        let bossItemAmount = bossModelItem[2];
         laserEngraver(
             st(bossModel.split(':')[1]),
             32,
             200,
             [ 
                 { amount: 1, item: ae('advanced_card') },
-                { amount: 1, item: bossItem }
+                { amount: bossItemAmount, item: bossItem }
             ],
             [ { amount: 1, item: bossModel } ]
         );

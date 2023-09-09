@@ -108,4 +108,14 @@ StartupEvents.registry('item', e => {
         .displayName('Wither Model')
         .rarity('Epic')
         .tooltip('§3Designates the output in the Boss Crusher');
+
+    e.create('dragon_model')
+        .displayName('Dragon Model')
+        .rarity('Epic')
+        .tooltip('§3Designates the output in the Boss Crusher');
+
+    e.create('warden_model')
+        .displayName('Warden Model')
+        .rarity('Epic')
+        .tooltip('§3Designates the output in the Boss Crusher');
 });

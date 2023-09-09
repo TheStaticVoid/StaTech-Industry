@@ -4,6 +4,26 @@
 // -----------------------------------------
 
 MIRegistrationEvents.registerFluids(e => {
+    // -- DRAGON'S BLOOD -- //
+    e.register(
+        'Dragon\'s Blood',           // English name
+        'dragons_blood',             // internal name
+        0x910c95,                    // Hex color code
+        'plasma',                    // Texture type
+        false,                       // is a gas?
+        'high',                      // opacity
+    );
+
+    // -- IMPURE RESONATING FLUID -- //
+    e.register(
+        'Impure Resonating Fluid',   // English name
+        'impure_resonating_fluid',   // internal name
+        0x22d43b,                    // Hex color code
+        'water',                     // Texture type
+        false,                       // is a gas?
+        'high',                      // opacity
+    );
+
     // -- SALT WATER -- //
     e.register(
         'Salt Water',               // English name
