@@ -28,5 +28,5 @@ ItemEvents.tooltip(e => {
     ];
 
     // -- ADD TOOLTIP TO ALL MACHINES IN LIST -- //
-    e.add(CUSTOM_MACHINES, Text.of('This is a custom machine\nadded by StaTech Industry').gold());
+    e.add(CUSTOM_MACHINES, Text.of('Added by StaTech Industry').gold());
 });

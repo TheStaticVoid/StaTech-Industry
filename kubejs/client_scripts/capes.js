@@ -16,7 +16,7 @@ CapeJS.addCapes(e => {
     e.register("8b5b9fd4-85e1-41d1-8a0a-a456656f5340", "contributor");                  // TacoMonkey
     e.register("ec680660-4299-40b4-9c5f-8b18cdb42407", "contributor");                  // gronkDev
     e.register("f840de64-3445-4506-b75b-8fe61fd32e17", "contributor");                  // Sevudien (kevintok)
-    // cyberplebeian
+    e.register("1766fb04-3569-4099-b420-9e3006c206bb", "contributor");                  // EntityInArray (cyberplebian)
 
     // -- SUPPORTER -- //
     // michiderechte
@@ -54,11 +54,11 @@ CapeJS.addCapes(e => {
     e.register("a97914b6-75a2-43bc-b177-7d684e01c2b5", "pack_completionist");           // andrew_10_
     e.register("68b4f164-f793-4036-8a31-20ab74491e75", "pack_completionist");           // byzel
     // 1804
-    // andrei mudrov
+    e.register("3dd5fbfa-e1df-4c6c-af67-ff5226495d14", "pack_completionist");           // Andrei Mudrov
     e.register("917c8dcd-ea2b-4709-83a0-3b9d5e8741a8", "pack_completionist");           // Diagnul
     // drprofmeister
     e.register("d9e1d77a-a03c-40df-838f-77f2ea317214", "pack_completionist");           // GThoro
     e.register("9d8cca5d-9e93-4616-9d85-5ee897e032c8", "pack_completionist");           // jOaSb
     e.register("13ab8ce5-e43a-4167-bef0-09355149f591", "pack_completionist");           // ThomBern
-    // zebo
+    e.register("09048a34-dc24-4dec-8a25-c3ed92e9c962", "pack_completionist");           // Zebo
 });
