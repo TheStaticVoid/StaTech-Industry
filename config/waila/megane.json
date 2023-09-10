@@ -20,14 +20,10 @@
     "enabled": true,
     "expandWhenSneak": false,
     "colors": {
-      "megane": 7408640,
-      "modern_industrialization": 11993088,
-      "techreborn": 8390656
+      "megane": 7408640
     },
     "units": {
-      "megane": "E",
-      "modern_industrialization": "EU",
-      "techreborn": "E"
+      "megane": "E"
     },
     "blacklist": [
       "appliedenergistics2:energy_acceptor"
@@ -52,5 +48,7 @@
   },
   "catchServerErrors": true,
   "spawnEgg": true,
-  "playerHead": true
+  "playerHead": true,
+  "pluginConfigMigrated": true,
+  "migratedBlacklist": []
 }
