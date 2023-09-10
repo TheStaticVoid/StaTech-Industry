@@ -27,7 +27,7 @@ CapeJS.addCapes(e => {
     e.register("38592f92-5b6c-4911-813a-3aead5a64ebe", "mod_developer");                // Technici4n
     e.register("435d43db-0253-49d3-9d9f-81bfdd6c7997", "mod_developer");                // Azercoco
     e.register("a6807197-6631-4b8e-ad8a-bbedfb005764", "mod_developer");                // thepigcat76
-    // dafuqs
+    e.register("5010ad09-0229-4d70-8a2c-bc254821dcb3", "mod_developer");                // dafuqs
     // roost_er
     e.register("7573dfca-56f5-49c4-b5e2-009718218b29", "mod_developer");                // 0xDAD (Mirinimi)
 
