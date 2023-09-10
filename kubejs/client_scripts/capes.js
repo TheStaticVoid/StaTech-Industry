@@ -21,6 +21,7 @@ CapeJS.addCapes(e => {
     // -- SUPPORTER -- //
     e.register("ce2ad8ee-6523-4fee-aa6b-8f724e21463a", "supporter");                    // Michi12332323 (michiderechte)
     e.register("b895bee1-337c-42cf-acaa-9dc87698b6b1", "supporter");                    // QaptainGeebs (qaptain)
+    e.register("962fb54e-b8e3-426f-8910-18894881968f", "supporter");                    // Dopefull
     // r4ndomhero
 
     // -- MOD DEV -- //
