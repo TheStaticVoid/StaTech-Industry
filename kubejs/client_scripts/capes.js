@@ -64,4 +64,5 @@ CapeJS.addCapes(e => {
     e.register("09048a34-dc24-4dec-8a25-c3ed92e9c962", "pack_completionist");           // Zebo
     e.register("916ff53c-dceb-45c2-8833-e26d6ccaeb32", "pack_completionist");           // Duremudira
 e.register("b9e4d16f-3450-407b-b533-0cddcd459012", "pack_completionist"); // sverd
+e.register("688591d3-7de8-4869-b753-81e33b58e057", "pack_completionist"); // Dobry (Despacito6969)
 });
