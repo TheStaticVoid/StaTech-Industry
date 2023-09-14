@@ -14,4 +14,5 @@
 - [Non-stonecutting recipes in the Cutting Machine now cost at least 10mB of lubricant](https://github.com/TheStaticVoid/StaTech-Industry/issues/439)
 - [Fixed steam macerator zinc input](https://discord.com/channels/1080389179537637456/1151302328574562425/1151302328574562425)
 - [Fix typo in incandescent lamp quest](https://discord.com/channels/1080389179537637456/1151574466632097883/1151574466632097883)
+- [Fixed zinc materials not having a macerator recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/440)
 - [Hid Chrysocolla from food chapter as it's uncraftable](https://github.com/TheStaticVoid/StaTech-Industry/issues/436)
