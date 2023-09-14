@@ -12,4 +12,5 @@
 - [Regenerated the WAILA config to fix issues with the latest mod update](https://github.com/TheStaticVoid/StaTech-Industry/issues/434)
 - [Updated InventoryHUD config to use potion minmode](https://github.com/TheStaticVoid/StaTech-Industry/issues/437)
 - [Non-stonecutting recipes in the Cutting Machine now cost at least 10mB of lubricant](https://github.com/TheStaticVoid/StaTech-Industry/issues/439)
+- [Fixed steam macerator zinc input](https://discord.com/channels/1080389179537637456/1151302328574562425/1151302328574562425)
 - [Hid Chrysocolla from food chapter as it's uncraftable](https://github.com/TheStaticVoid/StaTech-Industry/issues/436)

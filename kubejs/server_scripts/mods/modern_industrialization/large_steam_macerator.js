@@ -213,7 +213,7 @@ ServerEvents.recipes(e => {
         st('zinc_dust'),
         powerConstant,
         200 * timeMultiplier,
-        [ { amount: 1, tag: 'c:raw_zinc_ores' } ],
+        [ { amount: 1 * amountMultiplier, tag: 'c:raw_zinc_ores' } ],
         [
             { amount: 1 * amountMultiplier, item: tr('zinc_dust') },
             { amount: 1 * amountMultiplier, item: tr('zinc_dust'), probability: 0.50 }
