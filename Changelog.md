@@ -1,6 +1,9 @@
 # PRELIMINARY PATCH NOTES
 # StaTech Industry 1.1.10 Changelog:
 
+## Mods added:
+- [Turtlematic](https://www.curseforge.com/minecraft/mc-mods/turtlematic) - Expands upon CC:R's turtle functionality
+
 ## Mods updated:
 - [Balm](https://www.curseforge.com/minecraft/mc-mods/balm-fabric) - 4.5.7 -> 4.6.0
 - [Complementary Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) 5.0 -> 5.0.1
