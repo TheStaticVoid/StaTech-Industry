@@ -6,6 +6,7 @@
 ItemEvents.tooltip(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let mi = (id) => `modern_industrialization:${id}`;
+    let kj = (id) => `kubejs:${id}`;
 
     // -- LIST OF ALL CUSTOM MACHINES -- //
     const CUSTOM_MACHINES = [
@@ -29,4 +30,6 @@ ItemEvents.tooltip(e => {
 
     // -- ADD TOOLTIP TO ALL MACHINES IN LIST -- //
     e.add(CUSTOM_MACHINES, Text.of('Added by StaTech Industry').gold());
+
+    e.add(kj('clear_glass'), Text.of('Completely see through when placed').yellow());
 });

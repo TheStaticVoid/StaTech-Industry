@@ -32,7 +32,6 @@ StartupEvents.registry('block', e => {
         .tagItem('c:glass_blocks')
         .tagItem('c:colorless_glass')
         .material('glass')
-        .tooltip('§eCompletely see through when placed')
         .defaultCutout();
 });
 
