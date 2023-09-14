@@ -25,6 +25,17 @@ StartupEvents.registry('item', e => {
         .tooltip('§3Works great in cosmetic armor slots');
 });
 
+StartupEvents.registry('block', e => {
+    e.create('clear_glass')
+        .displayName('Clear Glass')
+        .tagItem('c:glass')
+        .tagItem('c:glass_blocks')
+        .tagItem('c:colorless_glass')
+        .material('glass')
+        .tooltip('§eCompletely see through when placed')
+        .defaultCutout();
+});
+
 ItemEvents.armorTierRegistry(event => {
     event.add('clear', tier => {
         tier.durabilityMultiplier = 5;
