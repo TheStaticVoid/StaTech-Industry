@@ -34,3 +34,4 @@
 - [Added a completely clear glass block](https://discord.com/channels/1080389179537637456/1080389180296798291/1151926259543187506)
 - [Fix crash with ringing bells](https://github.com/TheStaticVoid/StaTech-Industry/issues/443)
 - [Fix food quest ordering](https://github.com/TheStaticVoid/StaTech-Industry/issues/445)
+- [Added mangos, pineapples, and apricots to the market](https://github.com/TheStaticVoid/StaTech-Industry/issues/446)
