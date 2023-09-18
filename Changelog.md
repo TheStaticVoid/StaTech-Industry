@@ -1,5 +1,7 @@
 # StaTech Industry 1.1.10 Changelog:
 
+Overall small patch with some bug fixes and mod updates.
+
 ## Mods added:
 - [Turtlematic](https://www.curseforge.com/minecraft/mc-mods/turtlematic) - Expands upon CC:R's turtle functionality
 
