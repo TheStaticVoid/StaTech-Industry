@@ -13,6 +13,9 @@
 - [MI Sound Addon](https://curseforge.com/minecraft/mc-mods/modern-industrialization-sound-addon) - 1.0.0 -> 1.0.1
 - [Smooth Chunk Save](https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save) - 3.1 -> 3.2
 
+## Mods downgraded:
+- [badpackets](https://www.curseforge.com/minecraft/mc-mods/badpackets) - 0.2.2 -> 0.2.1 - fixes issues with waila
+
 ## Other changes:
 - [Added Steel Mallet quest](https://github.com/TheStaticVoid/StaTech-Industry/issues/435)
 - [Moved MI datagen to zips. Should fix the issues with updating with Prism Launcher](https://github.com/TheStaticVoid/StaTech-Industry/issues/438)
