@@ -24,3 +24,5 @@
 - [Fixed zinc materials not having a macerator recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/440)
 - [Hid Chrysocolla from food chapter as it's uncraftable](https://github.com/TheStaticVoid/StaTech-Industry/issues/436)
 - [Added a completely clear glass block](https://discord.com/channels/1080389179537637456/1080389180296798291/1151926259543187506)
+- [Fix crash with ringing bells](https://github.com/TheStaticVoid/StaTech-Industry/issues/443)
+- [Fix food quest ordering](https://github.com/TheStaticVoid/StaTech-Industry/issues/445)
