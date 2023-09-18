@@ -1,4 +1,3 @@
-# PRELIMINARY PATCH NOTES
 # StaTech Industry 1.1.10 Changelog:
 
 ## Mods added:
