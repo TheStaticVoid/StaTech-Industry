@@ -35,7 +35,7 @@ MIMaterialEvents.addMaterials(e => {
     
     e.createMaterial('Zinc', 'zinc', 0xb9e9c1,
         builder => {
-            builder.addParts('rod', 'ring', 'gear', 'curved_plate', 'plate', 'bolt', 'drill_head', 'drill')
+            builder.addParts('rod', 'ring', 'gear', 'curved_plate', 'plate', 'bolt', 'drill_head', 'drill', 'tiny_dust')
             .defaultRecipes()
             .addExternalPart('ingot', 'techreborn:zinc_ingot', '#c:zinc_ingots')
         });

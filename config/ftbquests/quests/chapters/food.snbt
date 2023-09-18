@@ -459,7 +459,7 @@
 			y: -26.5d
 		}
 		{
-			dependencies: ["5B9D89DFADDABFF4"]
+			dependencies: ["50C39589C51AB2DA"]
 			id: "582A20D409799354"
 			rewards: [{
 				id: "334950285C244CD4"
@@ -471,11 +471,11 @@
 				item: "farmersdelight:roast_chicken_block"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -19.5d
+			x: -5.5d
+			y: -21.0d
 		}
 		{
-			dependencies: ["3B7782FE5C680A14"]
+			dependencies: ["50C39589C51AB2DA"]
 			id: "09D4E96CB587FDA7"
 			rewards: [{
 				id: "1159F8E2F1C82EAE"
@@ -487,8 +487,8 @@
 				item: "farmersdelight:stuffed_pumpkin_block"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -19.5d
+			x: -4.5d
+			y: -21.0d
 		}
 		{
 			dependencies: ["50C39589C51AB2DA"]
@@ -1579,7 +1579,7 @@
 			y: -20.0d
 		}
 		{
-			dependencies: ["50C39589C51AB2DA"]
+			dependencies: ["09D4E96CB587FDA7"]
 			id: "5B9D89DFADDABFF4"
 			rewards: [{
 				id: "6FBF3988BAD9C725"
@@ -1592,10 +1592,10 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -21.0d
+			y: -19.5d
 		}
 		{
-			dependencies: ["50C39589C51AB2DA"]
+			dependencies: ["582A20D409799354"]
 			id: "3B7782FE5C680A14"
 			rewards: [{
 				id: "42AAEE7688D369BE"
@@ -1608,7 +1608,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -21.0d
+			y: -19.5d
 		}
 		{
 			dependencies: ["6DBD88273CC032DD"]
@@ -4166,7 +4166,7 @@
 				weak_nbt_match: true
 			}]
 			x: -8.0d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5A46BA8060E18A44"]
@@ -4184,11 +4184,12 @@
 				weak_nbt_match: true
 			}]
 			x: -8.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5A46BA8060E18A44"]
 			id: "3F9F4784B1559A27"
+			invisible: true
 			rewards: [{
 				id: "199EAB4273696FDF"
 				type: "xp"
@@ -4209,8 +4210,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: -8.0d
-			y: -2.5d
+			x: -7.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5A46BA8060E18A44"]

@@ -1,0 +1,19 @@
+{
+	"modId": "promenade",
+	"group": {
+		"name": "Promenade",
+		"enabledByDefault": true,
+		"defaultPayment": {
+			"item": "minecraft:emerald"
+		},
+		"defaultCategory": "farmingforblockheads:seeds"
+	},
+	"customEntries": [
+		{
+			"output": "promenade:apricot"
+        },
+        {
+            "output": "promenade:mango"
+        }
+	]
+}

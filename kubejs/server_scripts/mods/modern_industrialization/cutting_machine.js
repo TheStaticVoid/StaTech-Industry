@@ -12,6 +12,10 @@ ServerEvents.recipes(e => {
     let kj = (id) => `kubejs:${id}`;
     let fd = (id) => `farmersdelight:${id}`;
 
+    // -- CUTTING MACHINE VARIABLE CONSTANTS -- //
+    const lubricantAmount = 10;
+    const gsonJsonArray = Java.loadClass('com.google.gson.JsonArray');
+
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let cuttingMachine = (id, eu, duration, item_inputs, item_outputs) => {
         let newRecipe = {
@@ -19,7 +23,7 @@ ServerEvents.recipes(e => {
             eu: eu,
             duration: duration,
             fluid_inputs: [
-                { amount: 1, fluid: mi('lubricant') }
+                { amount: lubricantAmount, fluid: mi('lubricant') }
             ]
         }
 
@@ -30,6 +34,29 @@ ServerEvents.recipes(e => {
         
         e.custom(newRecipe).id(id);
     }
+
+    let recipesToRemove = [];
+    e.forEachRecipe( { type: mi('cutting_machine') }, recipe => {
+        recipesToRemove.push(recipe.getId());
+
+        let recipeJson = recipe.json;
+        let inputs = recipeJson.get('fluid_inputs');
+        let amount;
+        if (inputs.getClass() === gsonJsonArray) {
+            amount = inputs.get(0).get('amount');
+            if (amount == 1) {
+                recipeJson.get('fluid_inputs').get(0).add('amount', lubricantAmount);
+            }
+        } else {
+            amount = inputs.get('amount');
+            if (amount == 1) {
+                recipeJson.get('fluid_inputs').add('amount', lubricantAmount);
+            }
+        }
+        e.custom(recipeJson).id(st(recipe.getPath()));
+    });
+
+    recipesToRemove.forEach(id => e.remove({id: id}));
 
     // -- STRAW -- //
     cuttingMachine(

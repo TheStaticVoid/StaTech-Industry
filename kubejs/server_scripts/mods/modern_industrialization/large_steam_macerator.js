@@ -110,7 +110,7 @@ ServerEvents.recipes(e => {
                 item.get('tag').getAsString().split(':')[1];
     }
 
-    e.forEachRecipe( { type: mi('macerator'), not: { id: mi('compat/techreborn/macerator/minecraft_clay_ball_to_techreborn_clay_dust')} }, recipe => {
+    e.forEachRecipe( { type: mi('macerator'), not: [{ id: mi('compat/techreborn/macerator/minecraft_clay_ball_to_techreborn_clay_dust')}, { id: mi('materials/zinc/macerator/drill_head') }]}, recipe => {
         const recipeJson = recipe.json;
         let eu = recipeJson.get('eu');
         let duration = recipeJson.get('duration');
@@ -163,6 +163,19 @@ ServerEvents.recipes(e => {
         }
     });
 
+    // -- ZINC DRILL HEAD -- //
+    lsm(
+        st('zinc_drill_head'),
+        powerConstant,
+        200 * timeMultiplier,
+        [ { amount: 1 * amountMultiplier, item: mi('zinc_drill_head') } ],
+        [ 
+            { amount: 56, item: tr('zinc_dust') },
+            { amount: 8, item: mi('zinc_tiny_dust') },
+            { amount: 24, item: mi('zinc_tiny_dust') }
+        ]
+    );
+
     // -- MARBLE DUST -- //
     lsm(
         st('marble_dust'),
@@ -213,7 +226,7 @@ ServerEvents.recipes(e => {
         st('zinc_dust'),
         powerConstant,
         200 * timeMultiplier,
-        [ { amount: 1, tag: 'c:raw_zinc_ores' } ],
+        [ { amount: 1 * amountMultiplier, tag: 'c:raw_zinc_ores' } ],
         [
             { amount: 1 * amountMultiplier, item: tr('zinc_dust') },
             { amount: 1 * amountMultiplier, item: tr('zinc_dust'), probability: 0.50 }

@@ -1,7 +1,15 @@
 {
   "_comment": [
     "On the SERVER, changes will be applied after the server is restarted",
-    "On the CLIENT, changes will be applied after player quit and rejoin a world"
+    "On the CLIENT, changes will be applied after player quit and rejoin a world",
+    "",
+    "Rule Operators:",
+    "@namespace - Filter objects based on their namespace location",
+    "#tag       - Filter objects based on data pack tags",
+    "/regex/    - Filter objects based on regular expression",
+    "default    - Filter objects with specific ID",
+    "",
+    "The #waila:blacklist tag rule can not be removed"
   ],
   "blocks": [
     "minecraft:barrier",
@@ -17,8 +25,8 @@
   ],
   "configVersion": 0,
   "pluginHash": [
-    1510828157,
+    -467861193,
     0,
-    1532117445
+    -400177805
   ]
 }

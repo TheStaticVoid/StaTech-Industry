@@ -1128,7 +1128,7 @@
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: 21.0d
+			x: 22.0d
 			y: 13.0d
 		}
 		{
@@ -1167,7 +1167,7 @@
 				type: "item"
 			}]
 			title: "Steel Upgrades"
-			x: 17.0d
+			x: 16.5d
 			y: 16.5d
 		}
 		{
@@ -1202,7 +1202,7 @@
 				item: "modern_industrialization:trash_can"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 16.5d
 			y: 15.5d
 		}
 		{
@@ -1233,7 +1233,7 @@
 				item: "modern_industrialization:steel_unpacker"
 				type: "item"
 			}]
-			x: 18.0d
+			x: 17.5d
 			y: 15.5d
 		}
 		{
@@ -1264,7 +1264,7 @@
 				item: "modern_industrialization:steel_packer"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 18.5d
 			y: 15.5d
 		}
 		{
@@ -1303,7 +1303,7 @@
 				}
 			]
 			title: "Packer Templates"
-			x: 19.0d
+			x: 18.5d
 			y: 16.5d
 		}
 		{
@@ -1402,7 +1402,7 @@
 				}
 			]
 			title: "Steam Quarry"
-			x: 23.5d
+			x: 24.5d
 			y: 13.0d
 		}
 		{
@@ -1439,7 +1439,7 @@
 				item: "modern_industrialization:bronze_drill"
 				type: "item"
 			}]
-			x: 25.5d
+			x: 26.5d
 			y: 12.0d
 		}
 		{
@@ -1476,7 +1476,7 @@
 				item: "modern_industrialization:copper_drill"
 				type: "item"
 			}]
-			x: 25.5d
+			x: 26.5d
 			y: 14.0d
 		}
 		{
@@ -2368,7 +2368,7 @@
 				item: "modern_industrialization:steel_tank"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.5d
 			y: 15.5d
 		}
 		{
@@ -2399,7 +2399,7 @@
 				item: "modern_industrialization:steel_barrel"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 15.5d
 			y: 16.5d
 		}
 		{
@@ -2508,7 +2508,7 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
+			x: 17.5d
 			y: 16.5d
 		}
 		{
@@ -2609,7 +2609,7 @@
 				item: "modern_industrialization:steel_boiler"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 14.5d
 			y: 15.5d
 		}
 		{
@@ -2695,7 +2695,7 @@
 				}
 			]
 			title: "Travel Anchors"
-			x: 15.0d
+			x: 14.5d
 			y: 16.5d
 		}
 		{
@@ -2813,7 +2813,7 @@
 				item: "modern_industrialization:steel_water_pump"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 12.5d
 			y: 16.5d
 		}
 		{
@@ -2850,7 +2850,7 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
+			x: 13.5d
 			y: 15.5d
 		}
 		{
@@ -3469,7 +3469,7 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
+			x: 13.5d
 			y: 16.5d
 		}
 		{
@@ -3892,7 +3892,7 @@
 				item: "modern_industrialization:zinc_drill"
 				type: "item"
 			}]
-			x: 25.5d
+			x: 26.5d
 			y: 13.0d
 		}
 		{
@@ -4258,7 +4258,7 @@
 				type: "item"
 			}]
 			title: "Modern Dynamics Item Pipe"
-			x: 21.0d
+			x: 22.0d
 			y: 14.5d
 		}
 		{
@@ -4288,7 +4288,7 @@
 				item: "moderndynamics:inhibitor"
 				type: "item"
 			}]
-			x: 21.5d
+			x: 22.5d
 			y: 16.0d
 		}
 		{
@@ -4318,7 +4318,7 @@
 				item: "moderndynamics:machine_extender"
 				type: "item"
 			}]
-			x: 20.5d
+			x: 21.5d
 			y: 16.0d
 		}
 		{
@@ -4390,7 +4390,7 @@
 				item: "dankstorage:dank_1"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 12.5d
 			y: 15.5d
 		}
 		{
@@ -4695,7 +4695,7 @@
 					type: "item"
 				}
 			]
-			x: 11.75d
+			x: 11.25d
 			y: 16.0d
 		}
 		{
@@ -4736,6 +4736,41 @@
 			}]
 			x: 12.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			description: [
+				"Your machines might be &ctoo noisy&r for your liking. If you want to &asilence&r them, you can craft a &6Steel Mallet&r and &3right click&r to &asilence/unsilence&r them. It has &dno durability&r, so feel free to use it however you like."
+				""
+				"If you'd rather &badjust sounds&r, you can always change them with the &2Extreme Sound Muffler&r GUI in your inventory."
+			]
+			id: "2D82BDEDFA442E68"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "71B113A5A895D858"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					id: "540E544D15D582A7"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "3D2B2047FEC6C3B7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "07CE4BF66B1DA6ED"
+				item: "mi_sound_addon:mallet"
+				type: "item"
+			}]
+			x: 19.75d
+			y: 16.0d
 		}
 	]
 	subtitle: ["The Basis of Industry"]

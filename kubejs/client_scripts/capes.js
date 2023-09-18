@@ -21,6 +21,7 @@ CapeJS.addCapes(e => {
     // -- SUPPORTER -- //
     e.register("ce2ad8ee-6523-4fee-aa6b-8f724e21463a", "supporter");                    // Michi12332323 (michiderechte)
     e.register("b895bee1-337c-42cf-acaa-9dc87698b6b1", "supporter");                    // QaptainGeebs (qaptain)
+    e.register("962fb54e-b8e3-426f-8910-18894881968f", "supporter");                    // Dopefull
     // r4ndomhero
 
     // -- MOD DEV -- //
@@ -62,4 +63,6 @@ CapeJS.addCapes(e => {
     e.register("13ab8ce5-e43a-4167-bef0-09355149f591", "pack_completionist");           // ThomBern
     e.register("09048a34-dc24-4dec-8a25-c3ed92e9c962", "pack_completionist");           // Zebo
     e.register("916ff53c-dceb-45c2-8833-e26d6ccaeb32", "pack_completionist");           // Duremudira
+    e.register("b9e4d16f-3450-407b-b533-0cddcd459012", "pack_completionist");           // sverd
+    e.register("688591d3-7de8-4869-b753-81e33b58e057", "pack_completionist");           // Dobry (Despacito6969)
 });

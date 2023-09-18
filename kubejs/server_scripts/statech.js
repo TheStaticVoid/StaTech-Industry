@@ -13,6 +13,17 @@ ServerEvents.recipes(e => {
     let kj = (id) => `kubejs:${id}`;
 
     e.smelting(kj('clear_ingot'), mc('glass'), 0.2).id(st('clear_ingot_from_glass'));
+
+    // -- CLEAR GLASS BLOCK - //
+    e.shaped('8x ' + kj('clear_glass'), [
+        'III',
+        'I I',
+        'III'
+    ],
+    {
+        I: kj('clear_ingot')
+    })
+    .id(st('clear_glass'));
     
     // -- CLEAR HELMET -- //
     e.shaped(kj('clear_helmet'), [
