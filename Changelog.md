@@ -9,9 +9,14 @@
 - [Complementary Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) 5.0 -> 5.0.1
 - [Create: Steam 'n' Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) - 1.5.0 -> 1.5.1
 - [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) - 2.1.9 -> 2.2.0
+- [Eldritch Mobs](https://www.curseforge.com/minecraft/mc-mods/eldritch-mobs) - 1.13.1 -> 1.13.2
 - [Farming for Blockheads](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads-fabric) - 11.3.1 -> 11.3.5
+- [Moonlight Lib](https://www.curseforge.com/minecraft/mc-mods/selene) - 2.2.44 -> 2.2.45
 - [MI Sound Addon](https://curseforge.com/minecraft/mc-mods/modern-industrialization-sound-addon) - 1.0.0 -> 1.0.1
+- [Redirectionor](https://www.curseforge.com/minecraft/mc-mods/redirectionor) - 3.3.2 -> 3.4.0
+- [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.650 -> 9.1.657
 - [Smooth Chunk Save](https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save) - 3.1 -> 3.2
+- [Spellblades and Such](https://www.curseforge.com/minecraft/mc-mods/spellblade-next) - 1.0.27.4 -> 1.0.27.5
 
 ## Mods downgraded:
 - [badpackets](https://www.curseforge.com/minecraft/mc-mods/badpackets) - 0.2.2 -> 0.2.1 - fixes issues with waila
