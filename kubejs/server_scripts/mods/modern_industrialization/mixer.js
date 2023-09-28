@@ -41,6 +41,16 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- NETHERRACK -- //
+    mixer(
+        st('netherrack'),
+        8,
+        200,
+        [ { amount: 1, item: mc('cobblestone') } ],
+        [ { amount: 1, item: mc('netherrack') } ],
+        [ { amount: 100, fluid: mi('blood') } ]
+    );
+
     // -- SALT WATER -- //
     mixer(
         st('salt_water'),
