@@ -28,3 +28,4 @@ Added back Sodium and Iris this patch since the zipping of the MI datagen files 
 - [Blacklisted Modern Dynamic Extractor screens from IPN](https://github.com/TheStaticVoid/StaTech-Industry/issues/457)
 - [Fix Alloy Smelter output amounts](https://github.com/TheStaticVoid/StaTech-Industry/issues/451)
 - [Fixed missing texture for zinc tiny dust](https://github.com/TheStaticVoid/StaTech-Industry/commit/690dfdd402bcc6712f70c08071ef7fbf414a6133)
+- [Buffed PTFE Ingot recipe]()

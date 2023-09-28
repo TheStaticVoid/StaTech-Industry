@@ -38,7 +38,7 @@ ServerEvents.recipes(e => {
         200,
         null,
         [ { amount: 1, item: mi('polytetrafluoroethylene_ingot') } ],
-        [ { amount: 1000, fluid: mi('polytetrafluoroethylene')}]
+        [ { amount: 100, fluid: mi('polytetrafluoroethylene')}]
     );
 
     // -- TUNGSTENSTEEL INGOT -- //
