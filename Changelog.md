@@ -26,3 +26,4 @@ Added back Sodium and Iris this patch since the zipping of the MI datagen files 
 - [Fixed the Blood Generator Ponder scene](https://github.com/TheStaticVoid/StaTech-Industry/commit/2f5d601b35e7004ecad4cf8c0738230d36fb7899)
 - [Blacklisted AE2 Wireless Terminal screens from IPN](https://github.com/TheStaticVoid/StaTech-Industry/issues/456)
 - [Blacklisted Modern Dynamic Extractor screens from IPN](https://github.com/TheStaticVoid/StaTech-Industry/issues/457)
+- [Fix Alloy Smelter output amounts](https://github.com/TheStaticVoid/StaTech-Industry/issues/451)

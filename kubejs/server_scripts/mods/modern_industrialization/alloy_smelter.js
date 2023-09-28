@@ -143,7 +143,7 @@ ServerEvents.recipes(e => {
             { amount: 3, tag: 'c:copper_blocks' },
             { amount: 1, tag: 'c:zinc_blocks' }
         ],
-        [ { amount: 1, item: tr('brass_storage_block') } ]
+        [ { amount: 4, item: tr('brass_storage_block') } ]
     );
 
     // -- BRONZE BLOCK -- //
@@ -155,7 +155,7 @@ ServerEvents.recipes(e => {
             { amount: 3, tag: 'c:copper_blocks' },
             { amount: 1, tag: 'c:tin_blocks' }
         ],
-        [ { amount: 1, item: mi('bronze_block') } ]
+        [ { amount: 4, item: mi('bronze_block') } ]
     );
 
     // -- CUPRONICKEL BLOCK -- //
@@ -167,7 +167,7 @@ ServerEvents.recipes(e => {
             { amount: 1, tag: 'c:copper_blocks' },
             { amount: 1, tag: 'c:nickel_blocks' }
         ],
-        [ { amount: 1, item: mi('cupronickel_block') } ]
+        [ { amount: 2, item: mi('cupronickel_block') } ]
     );
 
     // -- ELECTRUM BLOCK -- //
