@@ -5,7 +5,6 @@ Added back Sodium and Iris this patch since the zipping of the MI datagen files 
 ## Mods added:
 - [Sodium](https://modrinth.com/mod/sodium)
 - [Iris](https://modrinth.com/mod/iris)
-- [Open Simple Frames](https://modrinth.com/mod/open-simple-frames)
 
 ## Mods updated:
 - [Almost Unified](https://www.curseforge.com/minecraft/mc-mods/almost-unified) - 0.6.0 -> 0.7.0
