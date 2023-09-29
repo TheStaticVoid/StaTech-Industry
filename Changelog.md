@@ -1,6 +1,6 @@
 # StaTech Industry 1.1.11 Changelog:
 
-Added back Sodium and Iris this patch since the zipping of the MI datagen files last update forces a manual review on Curseforge anyway.
+Added back Sodium and Iris this patch since the zipping of the MI datagen files last update forces a manual review on Curseforge anyway. Discussion for the large 1.2.0 patch has started in the Discord. It will mainly focus on lategame progression and changes around the space age and components of that.
 
 ## Mods added:
 - [Sodium](https://modrinth.com/mod/sodium)
@@ -31,4 +31,4 @@ Added back Sodium and Iris this patch since the zipping of the MI datagen files 
 - [Buffed PTFE Ingot recipe](https://github.com/TheStaticVoid/StaTech-Industry/pull/458/commits/27b4e0475076ebea3bc8ca35efaa570e90746a04)
 - [Buffed wireless chargers](https://github.com/TheStaticVoid/StaTech-Industry/commit/16222dea4f26c87f2ca58f3bc5bbb9af3b8249e0)
 - [Nerfed Dragon Egg Siphon to 1024 EU/t](https://github.com/TheStaticVoid/StaTech-Industry/commit/320f915d6e61e19a7ead591b22a2ffd35ad707af)
-- [Added mineable tags to all the TR machines]() - TLDR you can mine them faster now
+- [Added mineable tags to all the TR machines](https://github.com/TheStaticVoid/StaTech-Industry/issues/459) - TLDR you can mine them faster now
