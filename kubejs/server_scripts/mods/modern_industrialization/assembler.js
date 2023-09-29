@@ -45,6 +45,19 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- RED CELL BATTERY -- //
+    assembler(
+        st('red_cell_battery'),
+        8,
+        200,
+        [
+            { amount: 2, tag: 'c:lead_plates' },
+            { amount: 2, item: mi('redstone_battery') },
+            { amount: 1, item: mi('copper_cable') }
+        ],
+        [ { amount: 1, item: tr('red_cell_battery') } ]
+    );
+
     // -- QUARTZ FIBER -- //
     assembler(
         st('quartz_fiber'),
