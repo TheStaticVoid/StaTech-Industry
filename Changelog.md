@@ -32,3 +32,4 @@ Added back Sodium and Iris this patch since the zipping of the MI datagen files 
 - [Buffed wireless chargers](https://github.com/TheStaticVoid/StaTech-Industry/commit/16222dea4f26c87f2ca58f3bc5bbb9af3b8249e0)
 - [Nerfed Dragon Egg Siphon to 1024 EU/t](https://github.com/TheStaticVoid/StaTech-Industry/commit/320f915d6e61e19a7ead591b22a2ffd35ad707af)
 - [Added mineable tags to all the TR machines](https://github.com/TheStaticVoid/StaTech-Industry/issues/459) - TLDR you can mine them faster now
+- [Added Heat Exchanger recipe for Tungstensteel Ingots](https://github.com/TheStaticVoid/StaTech-Industry/issues/461)
