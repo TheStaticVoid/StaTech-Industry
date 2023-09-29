@@ -47,7 +47,8 @@ ServerEvents.recipes(e => {
         [ 
             { amount: 2000, fluid: mi('chlorine') },
             { amount: 2000, fluid: mi('hydrogen') },
-            { amount: 4000, fluid: mi('sodium_hydroxide') }
+            { amount: 3000, fluid: mi('sodium_hydroxide') },
+            { amount: 1000, fluid: mi('lithium') }
         ]
     );
 
