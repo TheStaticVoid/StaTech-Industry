@@ -33,4 +33,5 @@ Added back Sodium and Iris this patch since the zipping of the MI datagen files 
 - [Nerfed Dragon Egg Siphon to 1024 EU/t](https://github.com/TheStaticVoid/StaTech-Industry/commit/320f915d6e61e19a7ead591b22a2ffd35ad707af)
 - [Added mineable tags to all the TR machines](https://github.com/TheStaticVoid/StaTech-Industry/issues/459) - TLDR you can mine them faster now
 - [Added Heat Exchanger recipe for Tungstensteel Ingots](https://github.com/TheStaticVoid/StaTech-Industry/issues/461)
-- [Added assembler recipe for TechReborn Red Cell Battery]()
+- [Added assembler recipe for TechReborn Red Cell Battery](https://github.com/TheStaticVoid/StaTech-Industry/commit/04eba7abb2aeba20fcd4edaba491b65a55940c2a)
+- [Higher tier battery assembler recipes now require Lithium but provide double the output](https://github.com/TheStaticVoid/StaTech-Industry/issues/462) - Lithium output from Clay electrolysis has been buffed to compensate as well

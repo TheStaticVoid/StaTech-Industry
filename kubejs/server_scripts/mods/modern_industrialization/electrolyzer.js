@@ -74,7 +74,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('silicon_dust') }
         ],
         null,
-        [ { amount: 50, fluid: mi('lithium') } ]
+        [ { amount: 1000, fluid: mi('lithium') } ]
     );
 
     // -- SALT -- //

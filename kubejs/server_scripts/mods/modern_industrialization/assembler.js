@@ -21,7 +21,10 @@ ServerEvents.recipes(e => {
         mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball'),
         mi('assembler_generated/steam_age/bronze/furnace'),
         mi('assembler_generated/steam_age/bronze/boiler'),
-        mi('assembler_generated/electric_age/component/craft/op_amp')
+        mi('assembler_generated/electric_age/component/craft/op_amp'),
+        mi('assembler_generated/electric_age/battery/sodium_battery'),
+        mi('assembler_generated/electric_age/battery/cadmium_battery'),
+        mi('assembler_generated/electric_age/battery/plutonium_battery')
     ];
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
@@ -44,6 +47,51 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe).id(id);
     }
+
+    // -- SODIUM BATTERY -- //
+    assembler(
+        st('sodium_battery'),
+        8,
+        200,
+        [
+            { amount: 1, tag: 'c:battery_alloy_plates' },
+            { amount: 2, item: mi('aluminum_cable') },
+            { amount: 4, item: mi('battery_alloy_curved_plate') },
+            { amount: 2, item: mi('sodium_dust') }
+        ],
+        [ { amount: 2, item: mi('sodium_battery') } ],
+        [ { amount: 100, fluid: mi('lithium') } ]
+    );
+
+    // -- CADMIUM BATTERY -- //
+    assembler(
+        st('cadmium_battery'),
+        8,
+        200,
+        [
+            { amount: 1, tag: 'c:battery_alloy_plates' },
+            { amount: 2, item: mi('annealed_copper_cable') },
+            { amount: 4, item: mi('battery_alloy_curved_plate') },
+            { amount: 2, item: mi('cadmium_dust') }
+        ],
+        [ { amount: 2, item: mi('cadmium_battery') } ],
+        [ { amount: 100, fluid: mi('lithium') } ]
+    );
+
+    // -- PLUTONIUM BATTERY -- //
+    assembler(
+        st('plutonium_battery'),
+        8,
+        200,
+        [
+            { amount: 1, tag: 'c:battery_alloy_plates' },
+            { amount: 2, item: mi('superconductor_cable') },
+            { amount: 4, item: mi('battery_alloy_curved_plate') },
+            { amount: 2, item: mi('plutonium_dust') }
+        ],
+        [ { amount: 2, item: mi('plutonium_battery') } ],
+        [ { amount: 100, fluid: mi('lithium') } ]
+    );
 
     // -- RED CELL BATTERY -- //
     assembler(
