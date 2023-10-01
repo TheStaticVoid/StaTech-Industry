@@ -14,7 +14,7 @@ Ponder.registry((event) => {
         buildUpToYFast(scene, size.width, size.depth, 3);
         addText(scene, 120, 'Hatches can replace any of the Steel Machine Casings in the structure', PonderPalette.WHITE, [4.0, 3.0, 1.0]);
         // Build the rest
-        buildUpToYFast(scene, size.width, size.depth, size.height);
+        buildUpSlice(scene, size.width, size.depth, 3, size.height, 1);
         addText(scene, 60, 'The completed structure. Remember to use the wrench preview when building it!', PonderPalette.WHITE, [5.0, 3.0, 1.0]);
     });
 });

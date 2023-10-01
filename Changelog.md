@@ -1,38 +1,37 @@
-# StaTech Industry 1.1.10 Changelog:
+# StaTech Industry 1.1.11 Changelog:
 
-Overall small patch with some bug fixes and mod updates.
+Added back Sodium and Iris this patch since the zipping of the MI datagen files last update forces a manual review on Curseforge anyway. Discussion for the large 1.2.0 patch has started in the Discord. It will mainly focus on lategame progression and changes around the space age and components of that.
 
 ## Mods added:
-- [Turtlematic](https://www.curseforge.com/minecraft/mc-mods/turtlematic) - Expands upon CC:R's turtle functionality
+- [Sodium](https://modrinth.com/mod/sodium)
+- [Iris](https://modrinth.com/mod/iris)
 
 ## Mods updated:
-- [Balm](https://www.curseforge.com/minecraft/mc-mods/balm-fabric) - 4.5.7 -> 4.6.0
-- [Complementary Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) 5.0 -> 5.0.1
-- [Create: Steam 'n' Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) - 1.5.0 -> 1.5.1
-- [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) - 2.1.9 -> 2.2.0
-- [Eldritch Mobs](https://www.curseforge.com/minecraft/mc-mods/eldritch-mobs) - 1.13.1 -> 1.13.2
-- [Farming for Blockheads](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads-fabric) - 11.3.1 -> 11.3.5
-- [Moonlight Lib](https://www.curseforge.com/minecraft/mc-mods/selene) - 2.2.44 -> 2.2.45
-- [MI Sound Addon](https://curseforge.com/minecraft/mc-mods/modern-industrialization-sound-addon) - 1.0.0 -> 1.0.1
-- [Redirectionor](https://www.curseforge.com/minecraft/mc-mods/redirectionor) - 3.3.2 -> 3.4.0
-- [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.650 -> 9.1.657
-- [Smooth Chunk Save](https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save) - 3.1 -> 3.2
-- [Spellblades and Such](https://www.curseforge.com/minecraft/mc-mods/spellblade-next) - 1.0.27.4 -> 1.0.27.5
-
-## Mods downgraded:
-- [badpackets](https://www.curseforge.com/minecraft/mc-mods/badpackets) - 0.2.2 -> 0.2.1 - fixes issues with waila
+- [Almost Unified](https://www.curseforge.com/minecraft/mc-mods/almost-unified) - 0.6.0 -> 0.7.0
+- [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.20 -> 0.10.22
+- [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) - 6.65 -> 6.66 
+- [FTB Backups](https://www.curseforge.com/minecraft/mc-mods/ftb-backups-2) - 1.0.19 -> 1.0.22
+- [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric) - 1902.5.4-build.275 -> 1902.5.5-build.297
+- [No Recipe Book](https://www.curseforge.com/minecraft/mc-mods/norecipebook-fabric) - 2.3 -> 2.4 
+- [Modernfix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.7.2 -> 5.7.4
+- [ShetiPhianCore](https://www.curseforge.com/minecraft/mc-mods/shetiphiancore-fabric) - 1.3.4b -> 1.3.11
+- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.24 -> 2.4.25
+- [YUNG's Better Ocean Monument](https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments) - 2.1.0 -> 2.1.1
 
 ## Other changes:
-- [Added Steel Mallet quest](https://github.com/TheStaticVoid/StaTech-Industry/issues/435)
-- [Moved MI datagen to zips. Should fix the issues with updating with Prism Launcher](https://github.com/TheStaticVoid/StaTech-Industry/issues/438)
-- [Regenerated the WAILA config to fix issues with the latest mod update](https://github.com/TheStaticVoid/StaTech-Industry/issues/434)
-- [Updated InventoryHUD config to use potion minmode](https://github.com/TheStaticVoid/StaTech-Industry/issues/437)
-- [Non-stonecutting recipes in the Cutting Machine now cost at least 10mB of lubricant](https://github.com/TheStaticVoid/StaTech-Industry/issues/439)
-- [Fixed steam macerator zinc input](https://discord.com/channels/1080389179537637456/1151302328574562425/1151302328574562425)
-- [Fix typo in incandescent lamp quest](https://discord.com/channels/1080389179537637456/1151574466632097883/1151574466632097883)
-- [Fixed zinc materials not having a macerator recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/440)
-- [Hid Chrysocolla from food chapter as it's uncraftable](https://github.com/TheStaticVoid/StaTech-Industry/issues/436)
-- [Added a completely clear glass block](https://discord.com/channels/1080389179537637456/1080389180296798291/1151926259543187506)
-- [Fix crash with ringing bells](https://github.com/TheStaticVoid/StaTech-Industry/issues/443)
-- [Fix food quest ordering](https://github.com/TheStaticVoid/StaTech-Industry/issues/445)
-- [Added mangos, pineapples, and apricots to the market](https://github.com/TheStaticVoid/StaTech-Industry/issues/446)
+- [Added the textures and models that were missing for clear glass](https://github.com/TheStaticVoid/StaTech-Industry/issues/449)
+- [Fix Structory and Structory Towers being the forge version](https://github.com/TheStaticVoid/StaTech-Industry/commit/2895a52951491c65db9ec5320468694c7e9cfeb7) - packwiz does a little trolling
+- [Added Dragons Blood to the Blood Generator](https://github.com/TheStaticVoid/StaTech-Industry/issues/452)
+- [Added recipe to make Netherrack from Cobblestone and Blood in a Mixer](https://github.com/TheStaticVoid/StaTech-Industry/issues/453)
+- [Fixed the Blood Generator Ponder scene](https://github.com/TheStaticVoid/StaTech-Industry/commit/2f5d601b35e7004ecad4cf8c0738230d36fb7899)
+- [Blacklisted AE2 Wireless Terminal screens from IPN](https://github.com/TheStaticVoid/StaTech-Industry/issues/456)
+- [Blacklisted Modern Dynamic Extractor screens from IPN](https://github.com/TheStaticVoid/StaTech-Industry/issues/457)
+- [Fix Alloy Smelter output amounts](https://github.com/TheStaticVoid/StaTech-Industry/issues/451)
+- [Fixed missing texture for zinc tiny dust](https://github.com/TheStaticVoid/StaTech-Industry/commit/690dfdd402bcc6712f70c08071ef7fbf414a6133)
+- [Buffed PTFE Ingot recipe](https://github.com/TheStaticVoid/StaTech-Industry/pull/458/commits/27b4e0475076ebea3bc8ca35efaa570e90746a04)
+- [Buffed wireless chargers](https://github.com/TheStaticVoid/StaTech-Industry/commit/16222dea4f26c87f2ca58f3bc5bbb9af3b8249e0)
+- [Nerfed Dragon Egg Siphon to 1024 EU/t](https://github.com/TheStaticVoid/StaTech-Industry/commit/320f915d6e61e19a7ead591b22a2ffd35ad707af)
+- [Added mineable tags to all the TR machines](https://github.com/TheStaticVoid/StaTech-Industry/issues/459) - TLDR you can mine them faster now
+- [Added Heat Exchanger recipe for Tungstensteel Ingots](https://github.com/TheStaticVoid/StaTech-Industry/issues/461)
+- [Added assembler recipe for TechReborn Red Cell Battery](https://github.com/TheStaticVoid/StaTech-Industry/commit/04eba7abb2aeba20fcd4edaba491b65a55940c2a)
+- [Higher tier battery assembler recipes now require Lithium but provide double the output](https://github.com/TheStaticVoid/StaTech-Industry/issues/462) - Lithium output from Clay electrolysis has been buffed to compensate as well

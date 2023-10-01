@@ -56,6 +56,7 @@ MIMachineEvents.registerMachines(e => {
         8192, // Maximum energy generation rate (eu/tick)
         builder => { // The builder (same as for a single block generator)
             builder.fluid(mi('blood'), 512);
+            builder.fluid(mi('dragons_blood'), 8192)
         },
 
         // -- Standard model configuration -- //

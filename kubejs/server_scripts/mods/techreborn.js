@@ -924,3 +924,55 @@ ServerEvents.tags('item', e => {
     ];
     ORES.forEach(id => e.add('c:ores', id));
 });
+
+ServerEvents.tags('block', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
+    let tr = (id) => `techreborn:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+
+    const BLOCKS = [
+        tr('basic_solar_panel'),
+        tr('advanced_solar_panel'),
+        tr('industrial_solar_panel'),
+        tr('ultimate_solar_panel'),
+        tr('quantum_solar_panel'),
+        tr('creative_solar_panel'),
+        tr('storage_buffer'),
+        tr('crude_storage_unit'),
+        tr('basic_storage_unit'),
+        tr('advanced_storage_unit'),
+        tr('industrial_storage_unit'),
+        tr('quantum_storage_unit'),
+        tr('creative_storage_unit'),
+        tr('auto_crafting_table'),
+        tr('extractor'),
+        tr('matter_fabricator'),
+        tr('recycler'),
+        tr('rolling_machine'),
+        tr('scrapboxinator'),
+        tr('greenhouse_controller'),
+        tr('launchpad'),
+        tr('dragon_egg_syphon'),
+        tr('lightning_rod'),
+        tr('thermal_generator'),
+        tr('water_mill'),
+        tr('wind_mill'),
+        tr('adjustable_su'),
+        tr('charge_o_mat'),
+        tr('interdimensional_su'),
+        tr('low_voltage_su'),
+        tr('alarm'),
+        tr('lamp_incandescent'),
+        tr('lamp_led'),
+        tr('player_detector'),
+        tr('computer_cube'),
+        tr('nuke'),
+        tr('refined_iron_fence'),
+        tr('reinforced_glass')
+    ];
+
+    BLOCKS.forEach(id => e.add(mc('mineable/pickaxe'), id));
+    BLOCKS.forEach(id => e.add(mc('needs_stone_tool'), id));
+
+    e.add(mc('mineable/axe'), tr('resin_basin'));
+});
