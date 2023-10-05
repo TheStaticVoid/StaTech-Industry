@@ -4,104 +4,154 @@
 // -----------------------------------------
 
 MIRegistrationEvents.registerFluids(e => {
+    // -- IODINE -- //
+    e.register(
+        'Iodine',
+        'iodine',
+        0x1d0c00,
+        'water',
+        false,
+        'high'
+    );
+
+    // -- XENON -- //
+    e.register(
+        'Xenon',
+        'xenon',
+        0x1a4dc6,
+        'water',
+        true,
+        'low'
+    );
+
+    // -- MERCURY -- //
+    e.register(
+        'Mercury',
+        'mercury',
+        0xc55757,
+        'plasma',
+        false,
+        'full'
+    );
+
+    // -- RADON -- //
+    e.register(
+        'Radon',
+        'radon',
+        0x97e276,
+        'plasma',
+        true,
+        'low'
+    );
+
+    // -- NEON -- //
+    e.register(
+        'Neon',
+        'neon',
+        0xfb862e,
+        'water',
+        true,
+        'low'
+    );
+
     // -- DRAGON'S BLOOD -- //
     e.register(
-        'Dragon\'s Blood',           // English name
-        'dragons_blood',             // internal name
-        0x910c95,                    // Hex color code
-        'plasma',                    // Texture type
-        false,                       // is a gas?
-        'high',                      // opacity
+        'Dragon\'s Blood',
+        'dragons_blood',
+        0x910c95,
+        'plasma',
+        false,
+        'high',
     );
 
     // -- IMPURE RESONATING FLUID -- //
     e.register(
-        'Impure Resonating Fluid',   // English name
-        'impure_resonating_fluid',   // internal name
-        0x22d43b,                    // Hex color code
-        'water',                     // Texture type
-        false,                       // is a gas?
-        'high',                      // opacity
+        'Impure Resonating Fluid',
+        'impure_resonating_fluid',
+        0x22d43b,
+        'water',
+        false,
+        'high',
     );
 
     // -- SALT WATER -- //
     e.register(
-        'Salt Water',               // English name
-        'salt_water',               // internal name
-        0x033a6b,                   // Hex color code
-        'water',                    // Texture type
-        false,                      // is a gas?
-        'low',                      // opacity
+        'Salt Water',
+        'salt_water',
+        0x033a6b,
+        'water',
+        false,
+        'low',
     );
 
     // -- BRINE -- //
     e.register(
-        'Brine',                    // English name
-        'brine',                    // internal name
-        0xefec82,                   // Hex color code
-        'water',                    // Texture type
-        false,                      // is a gas?
-        'high'                      // opacity
+        'Brine',
+        'brine',
+        0xefec82,
+        'water',
+        false,
+        'high'
     )
 
     // -- NUTRIENT RICH WATER -- //
     e.register(
-        'Nutrient Rich Water',      // English name
-        'nutrient_rich_water',      // internal name
-        0xdaffdb,                   // Hex color code
-        'water',                    // Texture type
-        false,                      // is a gas?
-        'medium'                    // opacity
+        'Nutrient Rich Water',
+        'nutrient_rich_water',
+        0xdaffdb,
+        'water',
+        false,
+        'medium'
     );
 
     // -- NUTRIENT RICH LIQUID ENDER -- //
     e.register(
-        'Nutrient Rich Liquid Ender', // English name
-        'nutrient_rich_liquid_ender', // internal name
-        0x218b7a,                     // Hex color code
-        'water',                      // Texture type
-        false,                        // Is a gas?
-        'medium'                      // opacity
+        'Nutrient Rich Liquid Ender',
+        'nutrient_rich_liquid_ender',
+        0x218b7a,
+        'water',
+        false,
+        'medium'
     );
 
     //-- NUTRIENT RICH BLOOD -- //
     e.register(
-        'Nutrient Rich Blood',        // English name
-        'nutrient_rich_blood',        // internal name
-        0xe53246,                     // Hex color code
-        'plasma',                     // Texture type
-        false,                        // is a gas?
-        'high',                       // opacity
+        'Nutrient Rich Blood',
+        'nutrient_rich_blood',
+        0xe53246,
+        'plasma',
+        false,
+        'high',
     );
 
     // -- MOLTEN NETHER STAR -- //
     e.register(
-        'Molten Nether Star',     // English name
-        'molten_nether_star',     // internal name
-        0xe9e9e9,       // Hex color code
-        'lava',         // Texture type
-        false,          // is a gas?
-        'medium'          // opacity
+        'Molten Nether Star',
+        'molten_nether_star',
+        0xe9e9e9,
+        'lava',
+        false,
+        'medium'
     );
     
     // -- IMPURE LIQUID NETHER STAR -- //
     e.register(
-        'Impure Liquid Nether Star',     // English name
-        'impure_liquid_nether_star',     // internal name
-        0xe6ded7,       // Hex color code
-        'lava',         // Texture type
-        false,          // is a gas?
-        'full'          // opacity
+        'Impure Liquid Nether Star',
+        'impure_liquid_nether_star',
+        0xe6ded7,
+        'lava',
+        false,
+        'full'
     );
     
     // -- LITHIUM -- //
     e.register(
-        'Lithium',      // English name
-        'lithium',      // internal name
-        0xb2b2b2,       // Hex color code
-        'water',        // Texture type
-        true,           // is a gas?
-        'medium'        // opacity
+        'Lithium',
+        'lithium',
+        0xb2b2b2,
+        'water',
+        true,
+        'medium'
     );
 
     // -- NEUTRONIUM -- //
@@ -116,22 +166,22 @@ MIRegistrationEvents.registerFluids(e => {
     
     // -- BLOOD -- //
     e.register(
-        'Blood',        // English name
-        'blood',        // internal name
-        0xc11326,       // Hex color code
-        'plasma',       // Texture type
-        false,          // is a gas?
-        'high',         // opacity
+        'Blood',
+        'blood',
+        0xc11326,
+        'plasma',
+        false,
+        'high',
     );
 
     // -- CONCRETE -- //
     e.register(
-        'Concrete',     // English name
-        'concrete',     // internal name
-        0x505050,       // Hex color code
-        'lava',         // Texture type
-        false,          // is a gas?
-        'full'          // opacity
+        'Concrete',
+        'concrete',
+        0x505050,
+        'lava',
+        false,
+        'full'
     );
 
     // -- DRILLING FLUID -- //

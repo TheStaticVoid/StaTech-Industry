@@ -1,7 +1,6 @@
 # StaTech Industry 1.2.0 Changelog:
 
 ## Mods added:
-- [BugJump](https://www.curseforge.com/minecraft/mc-mods/bugjump) - This just needs to work bro
 
 ## Mods removed:
 - [Structory](https://www.curseforge.com/minecraft/mc-mods/structory) - This and the towers addon I don't think have ever actually worked. They don't appear in the modlist so something is preventing them from loading I think. It's honestly not worth my time to figure it out.
