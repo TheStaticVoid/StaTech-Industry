@@ -1028,7 +1028,7 @@
 		{
 			dependencies: ["4F278EA5EC5E59E1"]
 			description: [
-				"&aHidden mode&r can be toggled with a &eblack dye&r. It makes it so that the drawer doesn't show it's item."
+				"&aHidden mode&r can be toggled with a &eblack dye&r. It makes it so that the drawer doesn't show its item."
 				""
 				"This is mostly useful when you have a big network of drawers and want to improve performance as rendering the item icons can be very expensive."
 				""
@@ -1338,8 +1338,8 @@
 				"A complete breakdown of these values is as follows:"
 				"- &3Range&r: the &ay-level range&r the vein can generate"
 				"- &2Size&r: the &bsize of the vein&r, &cdoes not correlate to how many blocks are in the vein&r"
-				"- &dDimension&r: which &edimension&r the vein can be found"
-				"- &bBiome&r: which &6biome&r the vein can be found"
+				"- &dDimension&r: which &edimension&r the vein can be found in"
+				"- &bBiome&r: which &6biome&r the vein can be found in"
 				"- &9Weight&r: the generation &3weight&r of this specific vein"
 				"- &6Blocks&r: the &aores within the vein&r and their &3generation rate within the vein&r"
 				""
@@ -1499,7 +1499,7 @@
 		}
 		{
 			dependencies: ["045C683BF6E216CB"]
-			description: ["Unfortunately, &eTinker's Construct&r is not in the pack, however it's &aCrafting Station&r has been added by &6Enhanced Workbenches&r mod. It doesn't appear that it currently can pull from adjacent inventories, &2but it might in the future&r! For now it just retains your items after you close it (&obut wait the default one does that too&r?)"]
+			description: ["Unfortunately, &eTinker's Construct&r is not in the pack, however its &aCrafting Station&r has been added by &6Enhanced Workbenches&r mod. It doesn't appear that it currently can pull from adjacent inventories, &2but it might in the future&r! For now it just retains your items after you close it (&obut wait the default one does that too&r?)"]
 			id: "6E39043C6369B7A3"
 			rewards: [
 				{
