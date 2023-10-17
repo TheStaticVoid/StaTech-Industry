@@ -13,7 +13,6 @@
 - [Iris Flywheel Compat](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat) - Helps address a lot of the lag Create creates(lol) when using shaders
 - [JEPP](https://www.curseforge.com/minecraft/mc-mods/jepp) - Preview all the possible paintings available
 - [Mining Gadgets](https://www.curseforge.com/minecraft/mc-mods/mining-gadgets-fabric) - Mining with lasers, who needs drills anyway?
-- [Modpack Update Checker](https://www.curseforge.com/minecraft/mc-mods/modpack-update-checker) - Allows for the pack to notify you when there is a new version available
 - [Mystical Oak Tree](https://www.curseforge.com/minecraft/mc-mods/mystical-oak-tree) - If you're 25 or older you MUST try this game!
 - [Nicer Skies](https://www.curseforge.com/minecraft/mc-mods/nicer-skies) - The night sky is much more colorful
 - [No Telemetry](https://www.curseforge.com/minecraft/mc-mods/no-telemetry) - No more Microsoft snooping!
