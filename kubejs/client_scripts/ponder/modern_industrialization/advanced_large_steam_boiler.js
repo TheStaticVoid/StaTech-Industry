@@ -8,6 +8,6 @@ Ponder.registry((event) => {
         let size = structureSize(5, 7, 5);
         showBasePlate(scene, size.width, size.depth);
         buildUpToYRegular(scene, size.width, size.depth, size.height);
-        addText(scene, 120, 'The only difference is the addition of one layer and the controller being moved up a block up a block', PonderPalette.BLUE, [2.0, 4.0, 2.0]);
+        addText(scene, 120, 'The only difference is the addition of one layer and the controller being moved up a block', PonderPalette.BLUE, [2.0, 4.0, 2.0]);
     });
 });

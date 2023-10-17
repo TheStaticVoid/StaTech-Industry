@@ -1,0 +1,34 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5__space_age"
+	group: "592A9A0E9A131D28"
+	icon: {
+		Count: 1b
+		id: "ad_astra:tier_2_rocket"
+		tag: {
+			BotariumData: { }
+		}
+	}
+	id: "3890F2A1F6663171"
+	order_index: 5
+	quest_links: [ ]
+	quests: [{
+		id: "2F9398F5E319361D"
+		tasks: [{
+			id: "4A8B9068AF4C7324"
+			item: {
+				Count: 1b
+				id: "ad_astra:tier_1_rocket"
+				tag: {
+					BotariumData: { }
+				}
+			}
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	subtitle: ["The (not so) final frontier..."]
+	title: "&a6 - Space Age"
+}
