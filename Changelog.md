@@ -24,7 +24,6 @@
 - [Server Country Flags](https://www.curseforge.com/minecraft/mc-mods/server-country-flags) - Shows you which country a server is from
 - [Show Me Your Skin](https://www.curseforge.com/minecraft/mc-mods/show-me-your-skin) - replaces cosmetic armor
 - [Styled Player List](https://www.curseforge.com/minecraft/mc-mods/styled-player-list) - Customizes the playerlist to include TPS and ping
-- [slotlink](https://www.curseforge.com/minecraft/mc-mods/slotlink) - Like Simple Storage Network from Forge
 - [Tips](https://www.curseforge.com/minecraft/mc-mods/tips) - Helpful tips in the pack
 - [TooltipFix](https://www.curseforge.com/minecraft/mc-mods/tooltipfix) - Replaced adaptive tooltips
 - [Trofers](https://www.curseforge.com/minecraft/mc-mods/trofers-fabric) - Trophy system for the pack
