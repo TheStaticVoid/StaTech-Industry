@@ -381,7 +381,6 @@ ServerEvents.tags('item', e => {
     let mi = (id) => `modern_industrialization:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let as = (id) => `ad_astra:${id}`;
-    let sp = (id) => `spellbladenext:${id}`;
 
     const COINS = [
         kj('coin_common'),
@@ -442,10 +441,7 @@ ServerEvents.tags('item', e => {
         tr('mixed_metal_ingot'),
         tr('refined_iron_ingot'),
         tr('tungstensteel_ingot'),
-        tr('zinc_ingot'),
-        sp('runeblazing_ingot'),
-        sp('runegleaming_ingot'),
-        sp('runefrosted_ingot')
+        tr('zinc_ingot')
     ];
     COMMON_INGOT_TAG.forEach(id => { e.add('c:ingots', id) } );
 })
