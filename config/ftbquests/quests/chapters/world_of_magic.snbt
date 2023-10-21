@@ -5,7 +5,7 @@
 	group: "135E7B9D4273E5DD"
 	icon: "spectrum:enchanter"
 	id: "4296CFFF158C9365"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -1173,41 +1173,6 @@
 			}]
 			x: 16.5d
 			y: 5.0d
-		}
-		{
-			dependencies: [
-				"03FBCDDEF854A0E3"
-				"50CB097911D2B369"
-			]
-			description: [
-				"&dStrange whispers&r have mentioned another world wrapped in &eeternal twilight&r. The path to enter was &cblocked&r, but now is &aclear to you&r. "
-				""
-				"Creating a pool of &9water&r, surrounding it with &6flowers&r, and then tossing in a &bmagically infused Diamond&r (the &dMagic Diamond&r) will cause a &cchain reaction&r that will open the &dgateway&r to the other world."
-			]
-			hide: true
-			id: "289AB5E8263AF733"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "30017C491A716AE2"
-					table_id: 5901057256958333207L
-					type: "random"
-				}
-				{
-					id: "6F285183A8529576"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			size: 1.5d
-			tasks: [{
-				id: "2E382F743F0810D7"
-				item: "kubejs:magic_diamond"
-				type: "item"
-			}]
-			x: 12.0d
-			y: 3.75d
 		}
 		{
 			dependencies: ["76C17AECFEBFA7E3"]

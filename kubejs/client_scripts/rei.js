@@ -9,7 +9,6 @@ REIEvents.hide('item', e => {
     let ae = (id) => `ae2:${id}`;
     let kb = (id) => `kibe:${id}`;
     let tr = (id) => `techreborn:${id}`;
-    let tf = (id) => `twilightforest:${id}`;
     let cr = (id) => `create:${id}`;
     let ca = (id) => `createaddition:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
@@ -118,7 +117,6 @@ REIEvents.hide('item', e => {
         kj('voice_chat'),
         md('wrench'),
         mi('guidebook'),
-        tf('uncrafting_table'),
         tr('nichrome_heating_coil'),
         tr('lithium'),
         tr('heliumplasma'),
@@ -217,7 +215,6 @@ REIEvents.hide('item', e => {
 REIEvents.removeCategories(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let tr = (id) => `techreborn:${id}`;
-    let tf = (id) => `twilightforest:${id}`;
     let mc = (id) => `minecraft:${id}`;
     let ad = (id) => `ad_astra:${id}`;
     let cr = (id) => `create:${id}`;
@@ -225,7 +222,6 @@ REIEvents.removeCategories(e => {
     const REMOVED_CAT = [
         mc('plugins/tag'),
         ad('compressor'),
-        tf('uncrafting'),
         tr('alloy_smelter'),
         tr('assembling_machine'),
         tr('chemical_reactor'),

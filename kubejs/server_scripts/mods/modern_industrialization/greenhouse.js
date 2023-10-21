@@ -17,7 +17,6 @@ ServerEvents.recipes(e => {
     let pr = (id) => `promenade:${id}`;
     let tr = (id) => `techreborn:${id}`;
     let sp = (id) => `spectrum:${id}`;
-    let tf = (id) => `twilightforest:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let greenhouse = (id, eu, duration, item_inputs, fluid_inputs, item_outputs) => {
@@ -130,17 +129,7 @@ ServerEvents.recipes(e => {
         [ sp('brown_sapling'),                  sp('brown_log'),                sp('brown_leaves'),                     mc('water') ],
         [ sp('green_sapling'),                  sp('green_log'),                sp('green_leaves'),                     mc('water') ],
         [ sp('red_sapling'),                    sp('red_log'),                  sp('red_leaves'),                       mc('water') ],
-        [ sp('black_sapling'),                  sp('black_log'),                sp('black_leaves'),                     mc('water') ],
-        [ tf('twilight_oak_sapling'),           tf('twilight_oak_log'),         tf('twilight_oak_leaves'),              mc('water') ],
-        [ tf('canopy_sapling'),                 tf('canopy_log'),               tf('canopy_leaves'),                    mc('water') ],
-        [ tf('mangrove_sapling'),               tf('mangrove_root'),            tf('mangrove_leaves'),                  mc('water') ],
-        [ tf('darkwood_sapling'),               tf('dark_log'),                 tf('dark_leaves'),                      mc('water') ],
-        [ tf('hollow_oak_sapling'),             tf('twilight_oak_log'),         tf('twilight_oak_leaves'),              mc('water') ],
-        [ tf('time_sapling'),                   tf('time_log'),                 tf('time_leaves'),                      mc('water') ],
-        [ tf('transformation_sapling'),         tf('transformation_log'),       tf('transformation_leaves'),            mc('water') ],
-        [ tf('mining_sapling'),                 tf('mining_log'),               tf('mining_leaves'),                    mc('water') ],
-        [ tf('sorting_sapling'),                tf('sorting_log'),              tf('sorting_leaves'),                   mc('water') ],
-        [ tf('rainbow_oak_sapling'),            tf('twilight_oak_log'),         tf('rainbow_oak_leaves'),               mc('water') ]
+        [ sp('black_sapling'),                  sp('black_log'),                sp('black_leaves'),                     mc('water') ]
     ];
 
     // For every sapling, add a regular and bone meal variant of the recipe

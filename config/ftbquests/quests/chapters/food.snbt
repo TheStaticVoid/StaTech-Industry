@@ -3759,107 +3759,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["77734E09AD1D9F04"]
-			description: ["&aExperiment 115&r can be found in the &dUr-Ghast's Tower&r."]
-			id: "46C790E5A68A4F00"
-			rewards: [{
-				id: "16A4440B927862F1"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1FEC511C9BF60758"
-				item: "twilightforest:experiment_115"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["77734E09AD1D9F04"]
-			description: ["&aMaze Wafers&r can be found in the &eMaze&r to the &dMinoshroom&r."]
-			id: "2047AA34A5A9AD6C"
-			rewards: [{
-				id: "539D532F74901704"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "58C9C2EF777F40EE"
-				item: "twilightforest:maze_wafer"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["77734E09AD1D9F04"]
-			description: ["&aMeef Stroganoff&r is dropped by the &dMinoshroom&r"]
-			id: "60CFC7C49DB06C6D"
-			rewards: [{
-				id: "13A9767BD0732FBD"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "2FECD1EBAA6C14F8"
-				item: "twilightforest:meef_stroganoff"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["0B272D35151A3DA0"]
-			id: "22C9C2718A5590C2"
-			rewards: [{
-				id: "28CC8C8562EC05E3"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "084FD6E05E9DB831"
-				item: "twilightforest:cooked_meef"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["77734E09AD1D9F04"]
-			description: ["&aMeef&r is dropped from the &dMinotaurs&r in the &eMaze&r"]
-			id: "0B272D35151A3DA0"
-			rewards: [{
-				id: "5CBD7D020F4D2B38"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "6CB13A14F730A90A"
-				item: "twilightforest:raw_meef"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["77734E09AD1D9F04"]
-			description: ["&aHydra Chops&r are dropped by the &dHydra&r"]
-			id: "4BD650914789713D"
-			rewards: [{
-				id: "159EE461CE30577C"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "728EC046F1C19901"
-				item: "twilightforest:hydra_chop"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -9.0d
-		}
-		{
 			dependencies: ["0AD5A07A7E0C38D2"]
 			id: "5ACEA06B8E8403E5"
 			rewards: [{
@@ -3874,39 +3773,6 @@
 			}]
 			x: 8.5d
 			y: -7.0d
-		}
-		{
-			dependencies: ["77734E09AD1D9F04"]
-			description: ["&aVenison&r is dropped from the &dDeer&r that roam the &eTwilight Forest&r"]
-			id: "1919DA76241A55D6"
-			rewards: [{
-				id: "0241ED4C3A84D95B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "443372B5AA3CD4E4"
-				item: "twilightforest:raw_venison"
-				type: "item"
-			}]
-			x: -13.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["1919DA76241A55D6"]
-			id: "38AF0F67A01C01F4"
-			rewards: [{
-				id: "21D9E1F645F5F00B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7503B29B28C92A72"
-				item: "twilightforest:cooked_venison"
-				type: "item"
-			}]
-			x: -13.0d
-			y: -8.0d
 		}
 		{
 			dependencies: ["48329A633E80E686"]
@@ -4780,18 +4646,6 @@
 			}]
 			x: 3.5d
 			y: -0.5d
-		}
-		{
-			description: ["All the foods in this section are found in the &eTwilight Forest&r."]
-			id: "77734E09AD1D9F04"
-			tasks: [{
-				id: "1425DEF913A9FEEF"
-				title: "Click to Acknowledge"
-				type: "checkmark"
-			}]
-			title: "Twilight Forest Foods"
-			x: -11.5d
-			y: -10.5d
 		}
 		{
 			dependencies: ["272A57DE3FA793D0"]
