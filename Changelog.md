@@ -5,6 +5,7 @@
 - [Basic AIOTs](https://www.curseforge.com/minecraft/mc-mods/basic-aiots) - Clean up your hotbar with these helpful all around tools
 - [Blahaj](https://www.curseforge.com/minecraft/mc-mods/blahaj-fabric) - Cute shark plush
 - [Biome Music](https://www.curseforge.com/minecraft/mc-mods/biome-music) - Fixes music not playing in certain biomes and adjusts which tracks play based on biome tags
+- [Bits and Chisels](https://www.curseforge.com/minecraft/mc-mods/bits-and-chisels) - Take your imagination to a new level
 - [Boat Item View](https://www.curseforge.com/minecraft/mc-mods/boat-item-view) - Makes it so you can see the item you are holding while in a boat
 - [Builtin Servers](https://www.curseforge.com/minecraft/mc-mods/builtin-servers) - Adds the public servers for quick access to the multiplayer screen
 - [CleanView](https://www.curseforge.com/minecraft/mc-mods/cleanview-fabric) - Removes potion effects on your player in first person
