@@ -5885,17 +5885,30 @@
 			]
 			shape: "rsquare"
 			tasks: [{
-				id: "77C5AE25073B7AE1"
+				id: "6E130F17682F6F25"
 				item: {
 					Count: 1b
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					tag: {
-						value: "structory_towers:waystones_1"
+						items: [
+							{
+								Count: 1b
+								id: "waystones:waystone"
+							}
+							{
+								Count: 1b
+								id: "waystones:mossy_waystone"
+							}
+							{
+								Count: 1b
+								id: "waystones:sandy_waystone"
+							}
+						]
 					}
 				}
-				title: "Any Waystone"
 				type: "item"
 			}]
+			title: "Waystones"
 			x: 17.5d
 			y: 14.0d
 		}
