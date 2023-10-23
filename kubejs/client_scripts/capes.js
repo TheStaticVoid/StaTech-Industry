@@ -65,4 +65,5 @@ CapeJS.addCapes(e => {
     e.register("916ff53c-dceb-45c2-8833-e26d6ccaeb32", "pack_completionist");           // Duremudira
     e.register("b9e4d16f-3450-407b-b533-0cddcd459012", "pack_completionist");           // sverd
     e.register("688591d3-7de8-4869-b753-81e33b58e057", "pack_completionist");           // Dobry (Despacito6969)
+    e.register("643f3590-1cd9-497d-954b-37e64170f3ca", "pack_completionist");           // Sansy182 (kailo)
 });
