@@ -13,6 +13,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;    
     let ed = (id) => `expandeddelight:${id}`;
     let sp = (id) => `spectrum:${id}`;
+    let bg = (id) => `byg:${id}`;
 
     // -- LSM VARIABLE CONSTANTS -- //
     const gsonJsonArray = Java.loadClass('com.google.gson.JsonArray');
@@ -510,4 +511,50 @@ ServerEvents.recipes(e => {
             { amount: 1 * amountMultiplier, item: mi('quartz_dust'), probability: 0.5 }
         ]
     );
+
+    // -- DYES FROM BYG FLOWERS --
+    const BYG_COLORS = [
+        'black',
+        'blue',
+        'cyan',
+        'green',
+        'light_blue',
+        'light_gray',
+        'lime',
+        'magenta',
+        'orange',
+        'pink',
+        'purple',
+        'red',
+        'white',
+        'white',
+        'yellow'
+    ];
+
+    const BYG_DOUBLE_COLORS = [
+        'blue',
+        'cyan',
+        'pink',
+        'purple'
+    ];
+
+    BYG_COLORS.forEach(color => {
+        lsm(
+            st(`byg_${color}_dye`),
+            powerConstant,
+            100 * timeMultiplier,
+            [ { amount: 1 * amountMultiplier, tag: bg(`${color}_dye`) } ],
+            [ { amount: 1 * amountMultiplier, item: mc(`${color}_dye`) } ]
+        );
+    })
+
+    BYG_DOUBLE_COLORS.forEach(color => {
+        lsm(
+            st(`byg_${color}_double_dye`),
+            powerConstant,
+            100 * timeMultiplier,
+            [ { amount: 1 * amountMultiplier, tag: bg(`double_${color}_dye`) } ],
+            [ { amount: 2 * amountMultiplier, item: mc(`${color}_dye`) } ]
+        );
+    });
 });

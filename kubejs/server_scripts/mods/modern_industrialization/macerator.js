@@ -14,6 +14,7 @@ ServerEvents.recipes(e => {
     let sp = (id) => `spectrum:${id}`;
     let bl = (id) => `blockus:${id}`;
     let ge = (id) => `geodes:${id}`;
+    let bg = (id) => `byg:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let macerator = (id, eu, duration, item_inputs, item_outputs) => {
@@ -449,6 +450,52 @@ ServerEvents.recipes(e => {
                 { amount: 2, item: sp(`${color}_pigment`) },
                 { amount: 1, item: sp(`${color}_sapling`), probability: 0.1 }
             ]
+        );
+    });
+
+    // -- DYES FROM BYG FLOWERS --
+    const BYG_COLORS = [
+        'black',
+        'blue',
+        'cyan',
+        'green',
+        'light_blue',
+        'light_gray',
+        'lime',
+        'magenta',
+        'orange',
+        'pink',
+        'purple',
+        'red',
+        'white',
+        'white',
+        'yellow'
+    ];
+
+    const BYG_DOUBLE_COLORS = [
+        'blue',
+        'cyan',
+        'pink',
+        'purple'
+    ];
+
+    BYG_COLORS.forEach(color => {
+        macerator(
+            st(`byg_${color}_dye`),
+            2,
+            100,
+            [ { amount: 1, tag: bg(`${color}_dye`) } ],
+            [ { amount: 1, item: mc(`${color}_dye`) } ]
+        );
+    })
+
+    BYG_DOUBLE_COLORS.forEach(color => {
+        macerator(
+            st(`byg_${color}_double_dye`),
+            2,
+            100,
+            [ { amount: 1, tag: bg(`double_${color}_dye`) } ],
+            [ { amount: 2, item: mc(`${color}_dye`) } ]
         );
     });
 });
