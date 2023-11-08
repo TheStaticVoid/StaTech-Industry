@@ -65,5 +65,9 @@ CapeJS.addCapes(e => {
     e.register("916ff53c-dceb-45c2-8833-e26d6ccaeb32", "pack_completionist");           // Duremudira
     e.register("b9e4d16f-3450-407b-b533-0cddcd459012", "pack_completionist");           // sverd
     e.register("688591d3-7de8-4869-b753-81e33b58e057", "pack_completionist");           // Dobry (Despacito6969)
+    e.register("98f92fb9-a4fc-4232-8420-4716d319e0b9", "pack_completionist");           // Johny709
     e.register("643f3590-1cd9-497d-954b-37e64170f3ca", "pack_completionist");           // Sansy182 (kailo)
+    e.register("5c161f82-f554-4a81-a626-9af17d608acf", "pack_completionist");           // Retaelous
+    e.register("5dc25de3-6ae7-4b62-a897-9e7d5aac1589", "pack_completionist");           // Troinen
+    e.register("9618faf4-9759-4ab6-ba84-efec7fee6fb5", "pack_completionist");           // kpvw (Water Face)
 });
