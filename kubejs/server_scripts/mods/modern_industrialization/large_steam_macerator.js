@@ -3,39 +3,14 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/lsm/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let cr = (id) => `create:${id}`;
-    let bl = (id) => `blockus:${id}`;
-    let tr = (id) => `techreborn:${id}`;    
-    let ed = (id) => `expandeddelight:${id}`;
-    let sp = (id) => `spectrum:${id}`;
-    let bg = (id) => `byg:${id}`;
 
     // -- LSM VARIABLE CONSTANTS -- //
     const gsonJsonArray = Java.loadClass('com.google.gson.JsonArray');
     const amountMultiplier = 8;
     const powerConstant = 4;
     const timeMultiplier = 2;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let lsm = (id, eu, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: mi('large_steam_macerator'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
 
     let multiplyItems = (input) => {
         let itemMax = 64;
@@ -111,7 +86,7 @@ ServerEvents.recipes(e => {
                 item.get('tag').getAsString().split(':')[1];
     }
 
-    e.forEachRecipe( { type: mi('macerator'), not: [{ id: mi('compat/techreborn/macerator/minecraft_clay_ball_to_techreborn_clay_dust')}, { id: mi('materials/zinc/macerator/drill_head') }]}, recipe => {
+    event.forEachRecipe( { type: mi('macerator'), not: [{ id: mi('compat/techreborn/macerator/minecraft_clay_ball_to_techreborn_clay_dust')}, { id: mi('materials/zinc/macerator/drill_head') }]}, recipe => {
         const recipeJson = recipe.json;
         let eu = recipeJson.get('eu');
         let duration = recipeJson.get('duration');
@@ -155,6 +130,7 @@ ServerEvents.recipes(e => {
             newId = allOutputNames.join('_and_') + '_from_' + allInputNames.join('_and_');
 
             lsm(
+                event,
                 st(newId),
                 newEu,
                 newDuration,
@@ -166,6 +142,7 @@ ServerEvents.recipes(e => {
 
     // -- ZINC DRILL HEAD -- //
     lsm(
+        event,
         st('zinc_drill_head'),
         powerConstant,
         200 * timeMultiplier,
@@ -179,6 +156,7 @@ ServerEvents.recipes(e => {
 
     // -- MARBLE DUST -- //
     lsm(
+        event,
         st('marble_dust'),
         powerConstant,
         200 * timeMultiplier,
@@ -188,6 +166,7 @@ ServerEvents.recipes(e => {
 
     // -- WHEAT DOUGH -- //
     lsm(
+        event,
         st('wheat_flour'),
         powerConstant,
         200 * timeMultiplier,
@@ -197,6 +176,7 @@ ServerEvents.recipes(e => {
 
     // -- SALT DUST -- //
     lsm(
+        event,
         st('ground_salt'),
         powerConstant,
         100 * timeMultiplier,
@@ -206,6 +186,7 @@ ServerEvents.recipes(e => {
 
     // -- RAW PLATINUM FROM SHELDONITE ORE -- //
     lsm(
+        event,
         st('raw_platinum'),
         powerConstant,
         200 * timeMultiplier,
@@ -215,6 +196,7 @@ ServerEvents.recipes(e => {
 
     // -- RAW ZINC -- //
     lsm(
+        event,
         st('raw_zinc'),
         powerConstant,
         200 * timeMultiplier,
@@ -224,6 +206,7 @@ ServerEvents.recipes(e => {
 
     // -- ZINC DUST -- //
     lsm(
+        event,
         st('zinc_dust'),
         powerConstant,
         200 * timeMultiplier,
@@ -236,6 +219,7 @@ ServerEvents.recipes(e => {
 
     // -- FLAX TO STRING -- //
     lsm(
+        event,
         st('flax_to_string'),
         powerConstant,
         200 * timeMultiplier,
@@ -248,6 +232,7 @@ ServerEvents.recipes(e => {
 
     // -- STONE DUST -- //
     lsm(
+        event,
         st('stone_dust'),
         powerConstant,
         200 * timeMultiplier,
@@ -257,6 +242,7 @@ ServerEvents.recipes(e => {
 
     // -- SPECTRUM POWDERS -- //
     lsm(
+        event,
         st('topaz_powder_from_cluster'),
         powerConstant,
         200 * timeMultiplier,
@@ -267,6 +253,7 @@ ServerEvents.recipes(e => {
         ]
     );
     lsm(
+        event,
         st('topaz_powder_from_block'),
         powerConstant,
         200 * timeMultiplier,
@@ -274,6 +261,7 @@ ServerEvents.recipes(e => {
         [ { amount: 4 * amountMultiplier, item: sp('topaz_powder') } ]
     );
     lsm(
+        event,
         st('topaz_powder_from_small_bud'),
         powerConstant,
         200 * timeMultiplier,
@@ -281,6 +269,7 @@ ServerEvents.recipes(e => {
         [ { amount: 4 * amountMultiplier, item: sp('topaz_powder') } ]
     );
     lsm(
+        event,
         st('topaz_powder_from_shard'),
         powerConstant,
         200 * timeMultiplier,
@@ -288,6 +277,7 @@ ServerEvents.recipes(e => {
         [ { amount: 2 * amountMultiplier, item: sp('topaz_powder') } ]
     );
     lsm(
+        event,
         st('topaz_powder_from_medium_bud'),
         powerConstant,
         200 * timeMultiplier,
@@ -295,6 +285,7 @@ ServerEvents.recipes(e => {
         [ { amount: 6 * amountMultiplier, item: sp('topaz_powder') } ]
     );
     lsm(
+        event,
         st('topaz_powder_from_large_bud'),
         powerConstant,
         200 * timeMultiplier,
@@ -303,6 +294,7 @@ ServerEvents.recipes(e => {
     );
 
     lsm(
+        event,
         st('amethyst_powder_from_cluster'),
         powerConstant,
         200 * timeMultiplier,
@@ -313,6 +305,7 @@ ServerEvents.recipes(e => {
         ]
     );
     lsm(
+        event,
         st('amethyst_powder_from_block'),
         powerConstant,
         200 * timeMultiplier,
@@ -320,6 +313,7 @@ ServerEvents.recipes(e => {
         [ { amount: 4 * amountMultiplier, item: sp('amethyst_powder') } ]
     );
     lsm(
+        event,
         st('amethyst_powder_from_small_bud'),
         powerConstant,
         200 * timeMultiplier,
@@ -327,6 +321,7 @@ ServerEvents.recipes(e => {
         [ { amount: 4 * amountMultiplier, item: sp('amethyst_powder') } ]
     );
     lsm(
+        event,
         st('amethyst_powder_from_shard'),
         powerConstant,
         200 * timeMultiplier,
@@ -334,6 +329,7 @@ ServerEvents.recipes(e => {
         [ { amount: 2 * amountMultiplier, item: sp('amethyst_powder') } ]
     );
     lsm(
+        event,
         st('amethyst_powder_from_medium_bud'),
         powerConstant,
         200 * timeMultiplier,
@@ -341,6 +337,7 @@ ServerEvents.recipes(e => {
         [ { amount: 6 * amountMultiplier, item: sp('amethyst_powder') } ]
     );
     lsm(
+        event,
         st('amethyst_powder_from_large_bud'),
         powerConstant,
         200 * timeMultiplier,
@@ -349,6 +346,7 @@ ServerEvents.recipes(e => {
     );
 
     lsm(
+        event,
         st('citrine_powder_from_cluster'),
         powerConstant,
         200 * timeMultiplier,
@@ -359,6 +357,7 @@ ServerEvents.recipes(e => {
         ]
     );
     lsm(
+        event,
         st('citrine_powder_from_block'),
         powerConstant,
         200 * timeMultiplier,
@@ -366,6 +365,7 @@ ServerEvents.recipes(e => {
         [ { amount: 4 * amountMultiplier, item: sp('citrine_powder') } ]
     );
     lsm(
+        event,
         st('citrine_powder_from_small_bud'),
         powerConstant,
         200 * timeMultiplier,
@@ -373,6 +373,7 @@ ServerEvents.recipes(e => {
         [ { amount: 4 * amountMultiplier, item: sp('citrine_powder') } ]
     );
     lsm(
+        event,
         st('citrine_powder_from_shard'),
         powerConstant,
         200 * timeMultiplier,
@@ -380,6 +381,7 @@ ServerEvents.recipes(e => {
         [ { amount: 2 * amountMultiplier, item: sp('citrine_powder') } ]
     );
     lsm(
+        event,
         st('citrine_powder_from_medium_bud'),
         powerConstant,
         200 * timeMultiplier,
@@ -387,6 +389,7 @@ ServerEvents.recipes(e => {
         [ { amount: 6 * amountMultiplier, item: sp('citrine_powder') } ]
     );
     lsm(
+        event,
         st('citrine_powder_from_large_bud'),
         powerConstant,
         200 * timeMultiplier,
@@ -396,6 +399,7 @@ ServerEvents.recipes(e => {
 
     // -- QUITOXIC POWDER -- //
     lsm(
+        event,
         st('quitoxic_powder'),
         powerConstant,
         200 * timeMultiplier,
@@ -405,6 +409,7 @@ ServerEvents.recipes(e => {
 
     // -- ONYX POWDER -- //
     lsm(
+        event,
         st('onyx_powder'),
         powerConstant,
         200 * timeMultiplier,
@@ -412,6 +417,7 @@ ServerEvents.recipes(e => {
         [ { amount: 2 * amountMultiplier, item: sp('onyx_powder') } ]
     );
     lsm(
+        event,
         st('onyx_powder_from_onyx_block'),
         powerConstant,
         200 * timeMultiplier,
@@ -421,6 +427,7 @@ ServerEvents.recipes(e => {
 
     // -- FIERY POWDER -- //
     lsm(
+        event,
         st('fiery_powder'),
         powerConstant,
         200 * timeMultiplier,
@@ -433,6 +440,7 @@ ServerEvents.recipes(e => {
 
     // -- BLIZZARD POWDER -- //
     lsm(
+        event,
         st('blizzard_powder'),
         powerConstant,
         200 * timeMultiplier,
@@ -445,6 +453,7 @@ ServerEvents.recipes(e => {
 
     // -- AMARANTH GRAINS -- //
     lsm(
+        event,
         st('amaranth_grains'),
         powerConstant,
         200 * timeMultiplier,
@@ -454,6 +463,7 @@ ServerEvents.recipes(e => {
 
     // -- COPPER FROM VERIDIUM -- //
     lsm(
+        event,
         st('copper_dust_from_veridium'),
         powerConstant,
         200 * timeMultiplier,
@@ -466,6 +476,7 @@ ServerEvents.recipes(e => {
 
     // -- ZINC DUST ROM ASURINE -- //
     lsm(
+        event,
         st('zinc_dust_from_asurine'),
         powerConstant,
         200 * timeMultiplier,
@@ -478,6 +489,7 @@ ServerEvents.recipes(e => {
 
     // -- GOLD DUST FROM OCHRUM -- //
     lsm(
+        event,
         st('gold_dust_from_asurine'),
         powerConstant,
         200 * timeMultiplier,
@@ -490,6 +502,7 @@ ServerEvents.recipes(e => {
 
     // -- IRON DUST FROM CRIMSITE -- //
     lsm(
+        event,
         st('iron_dust_from_crimsite'),
         powerConstant,
         200 * timeMultiplier,
@@ -502,6 +515,7 @@ ServerEvents.recipes(e => {
 
     // -- QUARTZ DUST FROM RAW QUARTZ BLOCK -- //
     lsm(
+        event,
         st('quartz_dust_from_quartz_block'),
         powerConstant,
         200 * timeMultiplier,
@@ -511,50 +525,4 @@ ServerEvents.recipes(e => {
             { amount: 1 * amountMultiplier, item: mi('quartz_dust'), probability: 0.5 }
         ]
     );
-
-    // -- DYES FROM BYG FLOWERS --
-    const BYG_COLORS = [
-        'black',
-        'blue',
-        'cyan',
-        'green',
-        'light_blue',
-        'light_gray',
-        'lime',
-        'magenta',
-        'orange',
-        'pink',
-        'purple',
-        'red',
-        'white',
-        'white',
-        'yellow'
-    ];
-
-    const BYG_DOUBLE_COLORS = [
-        'blue',
-        'cyan',
-        'pink',
-        'purple'
-    ];
-
-    BYG_COLORS.forEach(color => {
-        lsm(
-            st(`byg_${color}_dye`),
-            powerConstant,
-            100 * timeMultiplier,
-            [ { amount: 1 * amountMultiplier, tag: bg(`${color}_dye`) } ],
-            [ { amount: 1 * amountMultiplier, item: mc(`${color}_dye`) } ]
-        );
-    })
-
-    BYG_DOUBLE_COLORS.forEach(color => {
-        lsm(
-            st(`byg_${color}_double_dye`),
-            powerConstant,
-            100 * timeMultiplier,
-            [ { amount: 1 * amountMultiplier, tag: bg(`double_${color}_dye`) } ],
-            [ { amount: 2 * amountMultiplier, item: mc(`${color}_dye`) } ]
-        );
-    });
 });

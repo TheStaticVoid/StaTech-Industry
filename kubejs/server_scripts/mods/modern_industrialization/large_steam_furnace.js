@@ -3,17 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/large_steam_furnace/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let nd = (id) => `nethersdelight:${id}`;
-    let fd = (id) => `farmersdelight:${id}`;
-    let ag = (id) => `anim_guns:${id}`;
-    let ar = (id) => `artifacts:${id}`;
-    let cr = (id) => `create:${id}`;
-    let tr = (id) => `techreborn:${id}`;
 
     let item_blacklist = [
         mc('golden_pickaxe'),
@@ -80,21 +71,9 @@ ServerEvents.recipes(e => {
     let duration = 200;
     // The amount at a time to process
     let amount = 8;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let lsf = (id, input, output) => {
-        e.custom({
-            type: mi('large_steam_furnace'),
-            eu: eu,
-            duration: duration,
-            item_inputs: input,
-            item_outputs: output
-        })
-        .id(id);
-    }
     
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    e.forEachRecipe( {type: mc('smelting'), not: { mod: 'catwalksinc' }}, recipe => {
+    event.forEachRecipe( {type: mc('smelting'), not: { mod: 'catwalksinc' }}, recipe => {
         const recipeJson = JSON.parse(recipe.json.toString());
         for (let key in recipeJson.ingredient) {
             if (key == 'item' || key == 'tag') {
@@ -108,7 +87,7 @@ ServerEvents.recipes(e => {
                 newResult['item'] = recipeJson.result;
                 
                 let id = st(`${recipeJson.result.split(':')[0]}_${recipeJson.result.split(':')[1]}_from_${newIngredient[key].split(':')[0]}_${newIngredient[key].split(':')[1]}`);
-                lsf(id, newIngredient, newResult);
+                lsf(event, id, eu, duration, newIngredient, newResult);
             }
         }
     });
@@ -116,20 +95,29 @@ ServerEvents.recipes(e => {
     // I think the load order of KJS scripts makes it so galena smelting doesn't get added to the function above
     // -- GALENA ORE -- //
     lsf(
+        event,
         st('galena_ingot_from_galena_ore'),
+        eu,
+        duration,
         [ { amount: amount, tag: 'c:galena_ores' } ],
         [ { amount: amount, item: mi('lead_ingot') } ]
     );
 
     // -- GALENA DUST -- //
     lsf(
+        event,
         st('galena_ingot_from_galena_dust'),
+        eu,
+        duration,
         [ { amount: amount, item: tr('galena_dust') } ],
         [ { amount: amount, item: mi('lead_ingot') } ]
     );
 
     lsf(
+        event,
         st('tin_ingot_from_raw_tin'),
+        eu,
+        duration,
         [ { amount: amount, tag: 'c:raw_zinc_ores' } ],
         [ { amount: amount, item: tr('zinc_ingot') } ]
     );

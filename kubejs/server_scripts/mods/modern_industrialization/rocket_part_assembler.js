@@ -3,31 +3,12 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/rocket_part_assembler/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let ad = (id) => `ad_astra:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let rocketAssembler = (id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
-        let newRecipe = {
-            type: 'modern_industrialization:rocket_part_assembler',
-            eu: eu,
-            duration: duration
-        }
-        if (item_inputs != null)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs) 
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs != null) 
-            newRecipe['fluid_inputs'] = fluid_inputs;
-
-        e.custom(newRecipe).id(id);
-    }
 
     // -- ENGINE FAN -- //
     rocketAssembler(
+        event,
         st('engine_fan'),
         32,
         900,
@@ -42,6 +23,7 @@ ServerEvents.recipes(e => {
 
     // -- ENGINE FRAME -- //
     rocketAssembler(
+        event,
         st('engine_frame'),
         32,
         900,
@@ -55,6 +37,7 @@ ServerEvents.recipes(e => {
 
     // -- ROCKET FIN -- //
     rocketAssembler(
+        event,
         st('rocket_fin'),
         32, 
         900, 
@@ -68,6 +51,7 @@ ServerEvents.recipes(e => {
 
     // -- ROCKET NOSE CONE -- //
     rocketAssembler(
+        event,
         st('rocket_nose_cone'),
         32,
         900,
@@ -81,6 +65,7 @@ ServerEvents.recipes(e => {
 
     // -- STEEL TANK -- //
     rocketAssembler(
+        event,
         st('steel_tank'),
         32,
         900,
@@ -95,6 +80,7 @@ ServerEvents.recipes(e => {
 
     // -- DESH TANK -- //
     rocketAssembler(
+        event,
         st('desh_tank'),
         32,
         1200,
@@ -110,6 +96,7 @@ ServerEvents.recipes(e => {
 
     // -- OSTRUM TANK -- //
     rocketAssembler(
+        event,
         st('ostrum_tank'),
         32,
         1600,
@@ -125,6 +112,7 @@ ServerEvents.recipes(e => {
 
     // -- CALORITE TANK -- //
     rocketAssembler(
+        event,
         st('calorite_tank'),
         32,
         2400,
@@ -140,6 +128,7 @@ ServerEvents.recipes(e => {
 
     // -- STEEL ENGINE -- //
     rocketAssembler(
+        event,
         st('steel_engine'),
         32, 
         900,
@@ -154,6 +143,7 @@ ServerEvents.recipes(e => {
 
     // -- DESH ENGINE -- //
     rocketAssembler(
+        event,
         st('desh_engine'),
         32,
         1200,
@@ -168,6 +158,7 @@ ServerEvents.recipes(e => {
 
     // -- OSTRUM ENGINE -- //
     rocketAssembler(
+        event,
         st('ostrum_engine'),
         32,
         1600,
@@ -182,6 +173,7 @@ ServerEvents.recipes(e => {
 
     // -- CALORITE ENGINE -- //
     rocketAssembler(
+        event,
         st('calorite_engine'),
         32,
         2400,

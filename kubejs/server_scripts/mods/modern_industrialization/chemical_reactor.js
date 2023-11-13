@@ -3,36 +3,12 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let cr = (id) => `create:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let chemicalReactor = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('chemical_reactor'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
 
     // -- PHANTOM MEMBRANE -- //
     chemicalReactor(
+        event,
         st('phantom_membrane'),
         16,
         200,
@@ -46,6 +22,7 @@ ServerEvents.recipes(e => {
 
     // -- BLAZE ROD -- //
     chemicalReactor(
+        event,
         st('blaze_rod'),
         16,
         200,
@@ -59,6 +36,7 @@ ServerEvents.recipes(e => {
 
     // -- GHAST TEAR -- //
     chemicalReactor(
+        event,
         st('ghast_tear'),
         16,
         200,
@@ -72,6 +50,7 @@ ServerEvents.recipes(e => {
 
     // -- ROTTEN FLESH -- //
     chemicalReactor(
+        event,
         st('rotten_flesh'),
         16,
         200,
@@ -82,6 +61,7 @@ ServerEvents.recipes(e => {
 
     // -- ENDER PEARL -- //
     chemicalReactor(
+        event,
         st('ender_pearl'),
         16,
         200,
@@ -96,6 +76,7 @@ ServerEvents.recipes(e => {
 
     // -- ROSE QUARTZ -- //
     chemicalReactor(
+        event,
         st('rose_quartz'),
         16,
         200,
@@ -106,6 +87,7 @@ ServerEvents.recipes(e => {
 
     // -- EYE OF ENDER -- //
     chemicalReactor(
+        event,
         st('eye_of_ender'),
         8,
         600,
@@ -118,6 +100,7 @@ ServerEvents.recipes(e => {
 
     // -- PLASTIC BAR -- //
     chemicalReactor(
+        event,
         st('plastic_bar'),
         16,
         300,
@@ -128,6 +111,7 @@ ServerEvents.recipes(e => {
 
     // -- SNYTHETIC REDSTONE CRYSTAL -- //
     chemicalReactor(
+        event,
         st('synthetic_redstone_crystal'),
         24,
         400,
@@ -138,6 +122,7 @@ ServerEvents.recipes(e => {
 
     // -- POLYTETRAFLUOROETHYLENE -- //
     chemicalReactor(
+        event,
         st('polytetrafluoroethylene'),
         20,
         300,
@@ -152,6 +137,7 @@ ServerEvents.recipes(e => {
 
     // -- TETRAFLUOROETHYLENE -- //
     chemicalReactor(
+        event,
         st('tetrafluoroethylene'),
         24,
         400,
@@ -169,6 +155,7 @@ ServerEvents.recipes(e => {
 
     // -- CHLOROFORM -- //
     chemicalReactor(
+        event,
         st('chloroform'),
         18,
         200, 
@@ -186,6 +173,7 @@ ServerEvents.recipes(e => {
 
     // -- FLUORINE -- //
     chemicalReactor(
+        event,
         st('fluorine'),
         24,
         300,

@@ -3,29 +3,12 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/distillery/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let distillery = (id, eu, duration, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('distillery'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
 
     // -- BRINE FROM SALT WATER -- //
     distillery(
+        event,
         st('brine_from_salt_water'),
         16,
         400,
@@ -35,6 +18,7 @@ ServerEvents.recipes(e => {
 
     // -- WATER FROM SALT WATER -- //
     distillery(
+        event,
         st('water_from_salt_water'),
         16,
         400,
@@ -44,6 +28,7 @@ ServerEvents.recipes(e => {
 
     // -- CREOSOTE FROM WOOD TAR -- //
     distillery(
+        event,
         st('creosote_from_wood_tar'),
         12,
         200,
@@ -53,6 +38,7 @@ ServerEvents.recipes(e => {
 
     // -- BENZENE FROM WOOD TAR -- //
     distillery(
+        event,
         st('benzene_from_wood_tar'),
         12,
         200,
@@ -62,6 +48,7 @@ ServerEvents.recipes(e => {
 
     // -- TOLUENE FROM WOOD TAR -- //
     distillery(
+        event,
         st('toluene_from_wood_tar'),
         12,
         200,
@@ -71,6 +58,7 @@ ServerEvents.recipes(e => {
 
     // -- HEAVY FUEL FROM WOOD TAR -- //
     distillery(
+        event,
         st('heavy_fuel_from_wood_tar'),
         12,
         200,

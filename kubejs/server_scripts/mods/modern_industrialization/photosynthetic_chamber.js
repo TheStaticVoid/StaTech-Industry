@@ -3,34 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/photosynthetic_chamber/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let bg = (id) => `byg:${id}`;
-    let cd = (id) => `culturaldelights:${id}`;
-    let ed = (id) => `expandeddelight:${id}`;
-    let fd = (id) => `farmersdelight:${id}`;
-    let pr = (id) => `promenade:${id}`;
-    
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let photoChamber = (id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
-        let newRecipe = {
-            type: mi('photosynthetic_chamber'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)    
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-
-        e.custom(newRecipe).id(id);
-    }
 
     // This is all the seeds in the game with their respective outputs
     const recipeInOut = [
@@ -323,6 +297,7 @@ ServerEvents.recipes(e => {
         let itemName = input.split(':')[1];
 
         photoChamber(
+            event,
             st(`${namespace}_${itemName}`),
             8,
             600,
@@ -335,6 +310,7 @@ ServerEvents.recipes(e => {
     // These use a different fluid and are omitted from the original list
     // -- NETHER WART -- // 
     photoChamber(
+        event,
         st('minecraft_nether_wart'),
         8,
         600,
@@ -348,6 +324,7 @@ ServerEvents.recipes(e => {
 
     // -- CRIMSON BERRIES -- //
     photoChamber(
+        event,
         st('byg_crimson_berries'),
         8,
         600,
@@ -361,6 +338,7 @@ ServerEvents.recipes(e => {
 
     // -- CHORUS FLOWER -- //
     photoChamber(
+        event,
         st('minecraft_chorus_fruit'),
         8,
         600,

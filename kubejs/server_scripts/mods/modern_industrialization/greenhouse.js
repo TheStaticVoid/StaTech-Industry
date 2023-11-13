@@ -3,38 +3,9 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/greenhouse/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ap = (id) => `architects_palette:${id}`;
-    let bl = (id) => `blockus:${id}`;
-    let bg = (id) => `byg:${id}`;
-    let cd = (id) => `culturaldelights:${id}`;
-    let ec = (id) => `ecologics:${id}`;
-    let ed = (id) => `expandeddelight:${id}`;
-    let pr = (id) => `promenade:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let sp = (id) => `spectrum:${id}`;
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let greenhouse = (id, eu, duration, item_inputs, fluid_inputs, item_outputs) => {
-        let newRecipe = {
-            type: mi('greenhouse'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-
-        e.custom(newRecipe).id(id);
-    }
     // This is all the saplings in the game with their corresponding logs and leaves
     const saplingLogList = [    
         // Sapling                              Log                             Leaves                                  Fluid
@@ -145,30 +116,32 @@ ServerEvents.recipes(e => {
             id += '_byg';
             
         greenhouse(
+            event,
             st(id),
             8,
             1200,
             [ { amount: 1, item: sapling, probability: 0.0 } ],
-            [ { amount: 100, fluid: fluid } ],
             [
                 { amount: 8, item: log },
                 { amount: 16, item: leaves },
                 { amount: 1, item: sapling, probability: 0.5 },
-            ]
+            ],
+            [ { amount: 100, fluid: fluid } ]
         );
 
         fluid = mi(`nutrient_rich_${fluid.split(':')[1]}`);
         greenhouse(
+            event,
             st(`${id}_bonemeal`),
             8,
             1200,
             [ { amount: 1, item: sapling, probability: 0.0 } ],
-            [ { amount: 100, fluid: fluid } ],
             [
                 { amount: 16, item: log },
                 { amount: 32, item: leaves },
                 { amount: 1, item: sapling }
-            ]
+            ],
+            [ { amount: 100, fluid: fluid } ]
         );
     });
 });

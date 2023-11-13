@@ -3,37 +3,18 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/implosion_compressor/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let kj = (id) => `kubejs:${id}`;
 
     // -- IMPLOSION COMPRESSOR REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
         mi('electric_age/component/implosion_compressor/singularity')
     ]
-    REMOVED_RECIPE.forEach(id => e.remove({id: id}));
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let implosionCompressor = (id, eu, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: mi('implosion_compressor'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)   
-            newRecipe['item_outputs'] = item_outputs;
-    
-        e.custom(newRecipe).id(id);
-    }
+    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
 
     // -- ULTRADENSE METAL BALL -- //
     implosionCompressor(
+        event,
         st('ultradense_metal_ball'),
         512,
         600,
@@ -48,6 +29,7 @@ ServerEvents.recipes(e => {
 
     // -- IRIDIUM ALLOY PLATE -- //
     implosionCompressor(
+        event,
         st('iridum_alloy_plate'),
         64,
         10,
@@ -60,6 +42,7 @@ ServerEvents.recipes(e => {
 
     // -- PERIDOT GEM -- //
     implosionCompressor(
+        event,
         st('peridot_gem'),
         1,
         10,
@@ -72,6 +55,7 @@ ServerEvents.recipes(e => {
 
     // -- RUBY GEM -- //
     implosionCompressor(
+        event,
         st('ruby_gem'),
         1,
         10,
@@ -84,6 +68,7 @@ ServerEvents.recipes(e => {
 
     // -- SAPPHIRE GEM -- //
     implosionCompressor(
+        event,
         st('sapphire_gem'),
         1,
         10,
@@ -96,6 +81,7 @@ ServerEvents.recipes(e => {
 
     // -- RED GARNET DUST -- //
     implosionCompressor(
+        event,
         st('red_garnet_dust'),
         1,
         10,
@@ -108,6 +94,7 @@ ServerEvents.recipes(e => {
 
     // -- RED GARNET GEM -- //
     implosionCompressor(
+        event,
         st('red_garnet_gem'),
         1,
         10,

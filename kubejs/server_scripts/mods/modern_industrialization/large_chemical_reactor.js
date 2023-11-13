@@ -3,39 +3,14 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/lcr/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let cr = (id) => `create:${id}`;
-    let tr = (id) => `techreborn:${id}`;
 
     // -- LCR VARIABLE CONSTANTS -- //
     const gsonJsonArray = Java.loadClass('com.google.gson.JsonArray');
     const amountMultiplier = 4;
     const powerMultiplier = 2;
     const timeMultiplier = 1;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let lcr = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('large_chemical_reactor'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
     
     let multiplyItems = (input) => {
         let itemMax = 64;
@@ -107,7 +82,7 @@ ServerEvents.recipes(e => {
                 fluid.get('tag').getAsString().split(':')[1];
     }
 
-    e.forEachRecipe( { type: mi('chemical_reactor') }, recipe => {
+    event.forEachRecipe( { type: mi('chemical_reactor') }, recipe => {
         const recipeJson = recipe.json;
         
         let eu = recipeJson.get('eu')
@@ -187,6 +162,7 @@ ServerEvents.recipes(e => {
             newId += '_from_' + allInputs.join('_and_');
 
         lcr(
+            event,
             st(newId),
             newEu,
             newDuration,
@@ -202,6 +178,7 @@ ServerEvents.recipes(e => {
     // but I couldn't be bothered to figure it out for 6.1
     // -- PHANTOM MEMBRANE -- //
     lcr(
+        event,
         st('phantom_membrane'),
         8 * powerMultiplier,
         200 * timeMultiplier,
@@ -215,6 +192,7 @@ ServerEvents.recipes(e => {
     
     // -- BLAZE ROD -- //
     lcr(
+        event,
         st('blaze_rod'),
         8 * powerMultiplier,
         200 * timeMultiplier,
@@ -228,6 +206,7 @@ ServerEvents.recipes(e => {
 
     // -- GHAST TEAR -- //
     lcr(
+        event,
         st('ghast_tear'),
         8 * powerMultiplier,
         200 * timeMultiplier,
@@ -241,6 +220,7 @@ ServerEvents.recipes(e => {
 
     // -- ROTTEN FLESH -- //
     lcr(
+        event,
         st('rotten_flesh'),
         8 * powerMultiplier,
         200 * timeMultiplier,
@@ -251,6 +231,7 @@ ServerEvents.recipes(e => {
 
     // -- ENDER PEARL -- //
     lcr(
+        event,
         st('ender_pearl'),
         8 * powerMultiplier,
         200 * timeMultiplier,
@@ -265,6 +246,7 @@ ServerEvents.recipes(e => {
     
     // -- ROSE QUARTZ -- //
     lcr(
+        event,
         st('rose_quartz'),
         16 * powerMultiplier,
         200 * timeMultiplier,
@@ -275,6 +257,7 @@ ServerEvents.recipes(e => {
 
     // -- EYE OF ENDER -- //
     lcr(
+        event,
         st('eye_of_ender'),
         8 * powerMultiplier,
         600 * timeMultiplier,
@@ -287,6 +270,7 @@ ServerEvents.recipes(e => {
 
     // -- PLASTIC BAR -- //
     lcr(
+        event,
         st('plastic_bar'),
         16 * powerMultiplier,
         300 * timeMultiplier,
@@ -297,6 +281,7 @@ ServerEvents.recipes(e => {
 
     // -- SNYTHETIC REDSTONE CRYSTAL -- //
     lcr(
+        event,
         st('synthetic_redstone_crystal'),
         24 * powerMultiplier,
         400 * timeMultiplier,
@@ -307,6 +292,7 @@ ServerEvents.recipes(e => {
 
     // -- POLYTETRAFLUOROETHYLENE -- //
     lcr(
+        event,
         st('polytetrafluoroethylene'),
         20 * powerMultiplier,
         300 * timeMultiplier,
@@ -321,6 +307,7 @@ ServerEvents.recipes(e => {
 
     // -- TETRAFLUOROETHYLENE -- //
     lcr(
+        event,
         st('tetrafluoroethylene'),
         24 * powerMultiplier,
         400 * timeMultiplier,
@@ -338,6 +325,7 @@ ServerEvents.recipes(e => {
 
     // -- CHLOROFORM -- //
     lcr(
+        event,
         st('chloroform'),
         18 * powerMultiplier,
         200 * timeMultiplier, 
@@ -355,6 +343,7 @@ ServerEvents.recipes(e => {
 
     // -- FLUORINE -- //
     lcr(
+        event,
         st('fluorine'),
         24 * powerMultiplier,
         300 * timeMultiplier,

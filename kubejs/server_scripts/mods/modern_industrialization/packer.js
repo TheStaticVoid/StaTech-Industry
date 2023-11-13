@@ -3,18 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/packer/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ad = (id) => `ad_astra:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let bl = (id) => `blockus:${id}`;
-    let pd = (id) => `pineapple_delight:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let md = (id) => `moderndynamics:${id}`;
 
     // -- PACKER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
@@ -25,26 +15,11 @@ ServerEvents.recipes(e => {
         mi('compat/ae2/printed_silicon'),
         mi('compat/ae2/printed_silicon_from_ingot')
     ];
-    REMOVED_RECIPE.forEach(id => e.remove({id: id}));
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let packer = (id, eu, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: mi('packer'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
+    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
 
     // -- FLUIX GLASS CABLE -- //
     packer(
+        event,
         st('fluix_glass_cable'),
         8,
         200,
@@ -57,6 +32,7 @@ ServerEvents.recipes(e => {
 
     // -- FLUIX ME COVERED CABLE -- //
     packer(
+        event,
         st('fluix_me_covered_cable'),
         8,
         200,
@@ -69,6 +45,7 @@ ServerEvents.recipes(e => {
 
     // -- FLUIX ME DENSE COVERED CABLE -- //
     packer(
+        event,
         st('fluix_covered_dense_cable'),
         8,
         200,
@@ -78,6 +55,7 @@ ServerEvents.recipes(e => {
 
     // -- FLUIX ME SMART CABLE -- //
     packer(
+        event,
         st('fluix_smart_cable'),
         8,
         200,
@@ -91,6 +69,7 @@ ServerEvents.recipes(e => {
 
     // -- FLUIX ME DENSE SMART CABLE -- //
     packer(
+        event,
         st('fluix_smart_dense_cable_packed'),
         8,
         200,
@@ -100,6 +79,7 @@ ServerEvents.recipes(e => {
 
     // -- FLUIX DENSE ME SMART CABLE -- //
     packer(
+        event,
         st('fluix_smart_dense_cable'),
         8,
         200,
@@ -113,6 +93,7 @@ ServerEvents.recipes(e => {
 
     // -- SCRAP BOX -- //
     packer(
+        event,
         st('scrap_box'),
         2,
         200,
@@ -125,6 +106,7 @@ ServerEvents.recipes(e => {
 
     // -- FLUID PIPE -- //
     packer(
+        event,
         st('fluid_pipe'),
         4,
         200,
@@ -137,6 +119,7 @@ ServerEvents.recipes(e => {
 
     // -- ITEM PIPE -- //
     packer(
+        event,
         st('item_pipe'),
         4,
         200,
@@ -149,6 +132,7 @@ ServerEvents.recipes(e => {
 
     // -- SUPERCONDUCTOR EU CABLE -- //
     packer(
+        event,
         st('superconductor_eu_cable'),
         4,
         200,
@@ -161,6 +145,7 @@ ServerEvents.recipes(e => {
 
     // -- EV EU CABLE -- //
     packer(
+        event,
         st('ev_eu_cable'),
         4,
         200,
@@ -173,6 +158,7 @@ ServerEvents.recipes(e => {
 
     // -- HV EU CABLE -- //
     packer(
+        event,
         st('hv_eu_cable'),
         4,
         200,
@@ -185,6 +171,7 @@ ServerEvents.recipes(e => {
 
     // -- MV EU CABLE -- //
     packer(
+        event,
         st('mv_eu_cable'),
         4,
         200,
@@ -197,6 +184,7 @@ ServerEvents.recipes(e => {
 
     // -- LV EU CABLE -- //
     packer(
+        event,
         st('lv_eu_cable'),
         4,
         200,
@@ -209,6 +197,7 @@ ServerEvents.recipes(e => {
 
     // -- LARGE STEAM MACERATOR -- //
     packer(
+        event,
         st('large_steam_macerator'),
         4,
         200,
@@ -221,6 +210,7 @@ ServerEvents.recipes(e => {
 
     // -- PINEAPPLE PIZZA SLICE -- //
     packer(
+        event,
         st('pineapple_pizza_slice'),
         4,
         200,
@@ -233,6 +223,7 @@ ServerEvents.recipes(e => {
 
     // -- CONCRETE PINEAPPLE PIZZA SLICE -- //
     packer(
+        event,
         st('concrete_pineapple_pizza_slice'),
         4,
         200,
@@ -245,6 +236,7 @@ ServerEvents.recipes(e => {
 
     // -- CHARCOAL BLOCK -- //
     packer(
+        event,
         st('charcoal_block'),
         2,
         200,
@@ -257,6 +249,7 @@ ServerEvents.recipes(e => {
 
     // -- LARGE STEAM FURNACE -- //
     packer(
+        event,
         st('large_steam_furnace'),
         4,
         200,
@@ -270,6 +263,7 @@ ServerEvents.recipes(e => {
 
     // -- PYRITE DUST -- //
     packer(
+        event,
         st('pyrite_dust'),
         8,
         200,
@@ -279,6 +273,7 @@ ServerEvents.recipes(e => {
 
     // -- CALCITE DUST -- //
     packer(
+        event,
         st('calcite_dust'),
         8,
         200,
@@ -288,6 +283,7 @@ ServerEvents.recipes(e => {
 
     // -- SODALITE DUST -- //
     packer(
+        event,
         st('sodalite_dust'),
         8,
         200,
@@ -297,6 +293,7 @@ ServerEvents.recipes(e => {
 
     // -- IRIDIUM ALLOY INGOT -- //
     packer(
+        event,
         st('iridium_alloy_ingot'),
         24,
         300,
@@ -310,6 +307,7 @@ ServerEvents.recipes(e => {
 
     // -- CHAIN -- //
     packer(
+        event,
         st('chain'),
         2,
         100,
@@ -319,6 +317,7 @@ ServerEvents.recipes(e => {
 
     // -- MIXED BLASTPROOF INGOT -- //
     packer(
+        event,
         st('mixed_blastproof_ingot'),
         32,
         600,
@@ -332,6 +331,7 @@ ServerEvents.recipes(e => {
 
     // -- CERTUS QUARTZ BLOCK -- //
     packer(
+        event,
         st('quartz_block'),
         8,
         200,

@@ -3,36 +3,12 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/vacuum_freezer/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let vacuumFreezer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('vacuum_freezer'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
 
     // -- POLYTETRAFLUOROETHYLENE INGOT -- //
     vacuumFreezer(
+        event,
         st('ptfe_ingot'),
         32,
         200,
@@ -43,17 +19,17 @@ ServerEvents.recipes(e => {
 
     // -- TUNGSTENSTEEL INGOT -- //
     vacuumFreezer(
+        event,
         st('tungstensteel_ingot'),
         64,
         600,
         [ { amount: 1, item: tr('hot_tungstensteel_ingot') } ],
-        [ { amount: 1, item: tr('tungstensteel_ingot') } ],
-        null,
-        null
+        [ { amount: 1, item: tr('tungstensteel_ingot') } ]
     );
 
     // -- CONCRETE BAR -- //
     vacuumFreezer(
+        event,
         st('concrete_bar'),
         16,
         200,
@@ -64,6 +40,7 @@ ServerEvents.recipes(e => {
 
     // -- NETHER STAR -- //
     vacuumFreezer(
+        event,
         st('nether_star'),
         64,
         100,

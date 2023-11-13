@@ -3,17 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/assembler/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let ad = (id) => `ad_astra:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let fd = (id) => `farmersdelight:${id}`;
-    let md = (id) => `moderndynamics:${id}`;
 
     // -- ASSEMBLER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [    
@@ -26,30 +17,11 @@ ServerEvents.recipes(e => {
         mi('assembler_generated/electric_age/battery/cadmium_battery'),
         mi('assembler_generated/electric_age/battery/plutonium_battery')
     ];
-    REMOVED_RECIPE.forEach(id => e.remove({id: id}));
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let assembler = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('assembler'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
+    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
 
     // -- SODIUM BATTERY -- //
     assembler(
+        event,
         st('sodium_battery'),
         8,
         200,
@@ -65,6 +37,7 @@ ServerEvents.recipes(e => {
 
     // -- CADMIUM BATTERY -- //
     assembler(
+        event,
         st('cadmium_battery'),
         8,
         200,
@@ -80,6 +53,7 @@ ServerEvents.recipes(e => {
 
     // -- PLUTONIUM BATTERY -- //
     assembler(
+        event,
         st('plutonium_battery'),
         8,
         200,
@@ -95,6 +69,7 @@ ServerEvents.recipes(e => {
 
     // -- RED CELL BATTERY -- //
     assembler(
+        event,
         st('red_cell_battery'),
         8,
         200,
@@ -108,6 +83,7 @@ ServerEvents.recipes(e => {
 
     // -- QUARTZ FIBER -- //
     assembler(
+        event,
         st('quartz_fiber'),
         8,
         200,
@@ -120,6 +96,7 @@ ServerEvents.recipes(e => {
 
     // -- END CRYSTAL -- //
     assembler(
+        event,
         st('end_crystal'),
         16,
         200,
@@ -133,6 +110,7 @@ ServerEvents.recipes(e => {
 
     // -- URANIUM ORE FROM UU -- //
     assembler(
+        event,
         st('uranium_ore'),
         32,
         600,
@@ -146,6 +124,7 @@ ServerEvents.recipes(e => {
 
     // -- IRIDIUM ORE FROM UU -- //
     assembler(
+        event,
         st('iridium_ore'),
         32,
         600,
@@ -159,6 +138,7 @@ ServerEvents.recipes(e => {
 
     // -- LV TO MV TRANSFORMER -- //
     assembler(
+        event,
         st('lv_mv_transformer'),
         8,
         200,
@@ -172,6 +152,7 @@ ServerEvents.recipes(e => {
 
     // -- MV TO LV TRANSFORMER -- //
     assembler(
+        event,
         st('mv_lv_transformer'),
         8,
         200,
@@ -185,6 +166,7 @@ ServerEvents.recipes(e => {
 
     // -- MV TO HV TRANSFORMER -- //
     assembler(
+        event,
         st('mv_hv_transformer'),
         8,
         200,
@@ -198,6 +180,7 @@ ServerEvents.recipes(e => {
 
     // -- HV TO MV TRANSFORMER -- //
     assembler(
+        event,
         st('hv_mv_transformer'),
         8,
         200,
@@ -211,6 +194,7 @@ ServerEvents.recipes(e => {
 
     // -- HV TO EV TRANSFORMER -- //
     assembler(
+        event,
         st('hv_ev_transformer'),
         8,
         200,
@@ -224,6 +208,7 @@ ServerEvents.recipes(e => {
 
     // -- EV TO HV TRANSFORMER -- //
     assembler(
+        event,
         st('ev_hv_transformer'),
         8,
         200,
@@ -237,6 +222,7 @@ ServerEvents.recipes(e => {
 
     // -- EV TO SUPERCONDUCTOR TRANSFORMER -- //
     assembler(
+        event,
         st('ev_superconductor_transformer'),
         8,
         200,
@@ -250,6 +236,7 @@ ServerEvents.recipes(e => {
 
     // -- SUPERCONDUCTOR TO EV TRANSFORMER -- //
     assembler(
+        event,
         st('superconductor_ev_transformer'),
         8,
         200,
@@ -263,6 +250,7 @@ ServerEvents.recipes(e => {
 
     // -- BLOOD GENERATOR -- //
     assembler(
+        event,
         st('blood_generator'),
         8,
         200,
@@ -278,6 +266,7 @@ ServerEvents.recipes(e => {
 
     // -- MACHINE EXTENDER -- //
     assembler(
+        event,
         st('machine_extender'),
         8,
         200,
@@ -292,6 +281,7 @@ ServerEvents.recipes(e => {
 
     // -- ATTRACTOR -- //
     assembler(
+        event,
         st('attractor'),
         8,
         200,
@@ -306,6 +296,7 @@ ServerEvents.recipes(e => {
 
     // -- EXTRACTOR -- //
     assembler(
+        event,
         st('extractor'),
         8,
         200,
@@ -320,6 +311,7 @@ ServerEvents.recipes(e => {
 
     // -- FILTER -- //
     assembler(
+        event,
         st('filter'),
         8,
         200,
@@ -334,6 +326,7 @@ ServerEvents.recipes(e => {
 
     // -- INHIBITOR -- //
     assembler(
+        event,
         st('inhibitor'),
         8,
         200,
@@ -346,6 +339,7 @@ ServerEvents.recipes(e => {
 
     // -- MISSING TEXTURE COOKIE -- //
     assembler(
+        event,
         st('missing_texture_cookie'),
         8,
         200,
@@ -359,6 +353,7 @@ ServerEvents.recipes(e => {
 
     // -- BOSS CRUSHER -- //
     assembler(
+        event,
         st('boss_crusher'),
         8,
         200,
@@ -374,6 +369,7 @@ ServerEvents.recipes(e => {
         
     // -- ENERGY FLOW CHIP -- //
     assembler(
+        event,
         st('energy_flow_chip'),
         8,
         200,
@@ -389,6 +385,7 @@ ServerEvents.recipes(e => {
 
     // -- DATA STORAGE CHIP -- //
     assembler(
+        event,
         st('data_storage_chip'),
         8,
         200,
@@ -402,6 +399,7 @@ ServerEvents.recipes(e => {
 
     // -- ADVANCED CIRCUIT -- //
     assembler(
+        event,
         st('advanced_circuit'),
         8,
         200,
@@ -416,6 +414,7 @@ ServerEvents.recipes(e => {
 
     // -- PTFE MACHINE CASING -- //
     assembler(
+        event,
         st('ptfe_machine_casing'),
         8,
         200,
@@ -428,6 +427,7 @@ ServerEvents.recipes(e => {
 
     // -- PTFE PIPE CASING -- //
     assembler(
+        event,
         st('ptfe_machine_casing_pipe'),
         8,
         200,
@@ -440,6 +440,7 @@ ServerEvents.recipes(e => {
     
     // -- ALLOY SMELTER -- //
     assembler(
+        event,
         st('alloy_smelter'),
         8,
         200,
@@ -455,6 +456,7 @@ ServerEvents.recipes(e => {
 
     // -- LASER ENGRAVER -- //
     assembler(
+        event,
         st('laser_engraver'),
         8,
         200,
@@ -470,6 +472,7 @@ ServerEvents.recipes(e => {
 
     // -- PHOTOSYNTHETIC CHAMBER -- //
     assembler(
+        event,
         st('photosynthetic_chamber'),
         8,
         200,
@@ -487,6 +490,7 @@ ServerEvents.recipes(e => {
 
     // -- ROCKET PART ASSEMBLER -- //
     assembler(
+        event,
         st('rocket_part_assembler'),
         8,
         200,
@@ -503,6 +507,7 @@ ServerEvents.recipes(e => {
 
     // -- CORE MINING DRILL -- //
     assembler(
+        event,
         st('core_drill'),
         8,
         200,
@@ -518,6 +523,7 @@ ServerEvents.recipes(e => {
 
     // -- INDUSTRIAL GREENHOUSE -- //
     assembler(
+        event,
         st('industrial_greenhouse'),
         8,
         200,
@@ -533,6 +539,7 @@ ServerEvents.recipes(e => {
 
     // -- LARGE CHEMICAL REACTOR -- //
     assembler(
+        event,
         st('large_chemical_reactor'),
         8,
         200,
@@ -548,6 +555,7 @@ ServerEvents.recipes(e => {
 
     // -- MEGA SMELTER -- //
     assembler(
+        event,
         st('mega_smelter'),
         8,
         200,
@@ -562,6 +570,7 @@ ServerEvents.recipes(e => {
 
     // -- MOB CRUSHER -- //
     assembler(
+        event,
         st('mob_crusher'),
         8,
         200,
@@ -577,6 +586,7 @@ ServerEvents.recipes(e => {
 
     // -- PYROLYSE OVEN -- //
     assembler(
+        event,
         st('pyrolyse_oven'),
         8,
         200,
@@ -591,6 +601,7 @@ ServerEvents.recipes(e => {
 
     // -- QUASI QUANTUM SINGULARITY FORGE -- //
     assembler(
+        event,
         st('singularity_forge'),
         8,
         200,
@@ -604,6 +615,7 @@ ServerEvents.recipes(e => {
 
     // -- SPACE PROBE LAUNCHER -- //
     assembler(
+        event,
         st('space_probe_launcher'),
         8,
         200,
@@ -620,6 +632,7 @@ ServerEvents.recipes(e => {
 
     // -- UNCOOKED PIZZA -- //
     assembler(
+        event,
         st('uncooked_pizza'),
         8,
         200,
@@ -635,6 +648,7 @@ ServerEvents.recipes(e => {
 
     // -- OP AMP -- //
     assembler(
+        event,
         st('op_amp'),
         8,
         200,
@@ -649,6 +663,7 @@ ServerEvents.recipes(e => {
 
     // -- BASIC CARD -- //
     assembler(
+        event,
         st('basic_card'),
         8,
         200,
@@ -663,6 +678,7 @@ ServerEvents.recipes(e => {
 
     // -- ADVANCED CARD -- //
     assembler(
+        event,
         st('advanced_card'),
         8,
         200,
@@ -677,6 +693,7 @@ ServerEvents.recipes(e => {
 
     // -- WITHERED SOC -- //
     assembler(
+        event,
         st('withered_soc'),
         32,
         1200,
@@ -695,6 +712,7 @@ ServerEvents.recipes(e => {
 
     // -- BRONZE BOILER -- //
     assembler(
+        event,
         st('bronze_boiler'),
         8,
         200,
@@ -709,6 +727,7 @@ ServerEvents.recipes(e => {
 
     // -- BRONZE FURNACE -- /
     assembler(
+        event,
         st('bronze_furnace'),
         8,
         200,
@@ -722,6 +741,7 @@ ServerEvents.recipes(e => {
   
     // -- SPACE PROBE -- //
     assembler(
+        event,
         st('space_probe'),
         32,
         200,
@@ -739,6 +759,7 @@ ServerEvents.recipes(e => {
 
     // -- CUPRONICKEL HEATING COIL -- //
     assembler(
+        event,
         st('cupronickel_heating_coil'),
         4,
         400,
@@ -753,6 +774,7 @@ ServerEvents.recipes(e => {
 
     // -- ZINC DRILL -- //
     assembler(
+        event,
         st('zinc_drill'),
         8,
         200,
@@ -767,6 +789,7 @@ ServerEvents.recipes(e => {
 
     // -- DESH DRILL -- //
     assembler(
+        event,
         st('desh_drill'),
         16,
         200,
@@ -783,6 +806,7 @@ ServerEvents.recipes(e => {
 
     // -- AUTO CRAFTING TABLE -- //
     assembler(
+        event,
         st('auto_crafting_table'),
         16,
         600,
@@ -797,6 +821,7 @@ ServerEvents.recipes(e => {
 
     // -- LITHIUM BATTERY -- //
     assembler(
+        event,
         st('lithium_ion_battery'),
         16,
         300,
@@ -810,6 +835,7 @@ ServerEvents.recipes(e => {
 
     // -- LITHIUM BATPACK -- //
     assembler(
+        event,
         st('lithium_ion_batpack'),
         16,
         300,
@@ -828,6 +854,7 @@ ServerEvents.recipes(e => {
 
     // -- ENERGY CRYSTAL -- //
     assembler(
+        event,
         st('energy_crystal'),
         80,
         300,
@@ -842,6 +869,7 @@ ServerEvents.recipes(e => {
 
     // -- LAPOTRON CRYSTAL -- //
     assembler(
+        event,
         st('lapotron_crystal'),
         128,
         400,
@@ -857,6 +885,7 @@ ServerEvents.recipes(e => {
 
     // -- QBIT -- //
     assembler(
+        event,
         st('qbit'),
         20,
         200,
@@ -875,6 +904,7 @@ ServerEvents.recipes(e => {
 
     // // -- ULTRADENSE METAL BALL -- //
     // assembler(
+        event,
     //     st('ultradense_metal_ball'),
     //     512,
     //     600,
@@ -889,6 +919,7 @@ ServerEvents.recipes(e => {
 
     // -- CALORITE MACHINE CASING -- //
     assembler(
+        event,
         st('calorite_machine_casing'),
         16,
         200,
@@ -901,6 +932,7 @@ ServerEvents.recipes(e => {
 
     // -- CALORITE MACHINE PIPE CASING -- //
     assembler(
+        event,
         st('calorite_machine_casing_pipe'),
         16,
         200,
@@ -913,6 +945,7 @@ ServerEvents.recipes(e => {
 
     // -- INDUSTRIAL CIRCUIT -- //
     assembler(
+        event,
         st('industrial_circuit'),
         48,
         300,
@@ -925,6 +958,7 @@ ServerEvents.recipes(e => {
 
     // -- DATA STORAGE CORE -- //
     assembler(
+        event,
         st('data_storage_core'),
         20,
         200,
@@ -935,6 +969,7 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: tr('data_storage_core') } ]
     );
     assembler(
+        event,
         st('data_storage_core_alt'),
         20,
         200,
@@ -947,6 +982,7 @@ ServerEvents.recipes(e => {
 
     // -- REDSTONE REPEATER -- //
     assembler(
+        event,
         st('repeater'),
         8,
         100,
@@ -957,6 +993,7 @@ ServerEvents.recipes(e => {
 
     // -- REDSTONE COMPARATOR -- //
     assembler(
+        event,
         st('comparator'),
         8,
         100, 
@@ -970,6 +1007,7 @@ ServerEvents.recipes(e => {
 
     // -- REDSTONE TORCH -- //
     assembler(
+        event,
         st('redstone_torch'),
         8,
         100,
@@ -980,6 +1018,7 @@ ServerEvents.recipes(e => {
 
     // -- STANDARD HANDGUN CARTRIDGE -- //
     assembler(
+        event,
         st('standard_handgun_cartridge'),
         8,
         200,
@@ -993,6 +1032,7 @@ ServerEvents.recipes(e => {
 
     // -- HEAVY HANDGUN CARTRIDGE -- //
     assembler(
+        event,
         st('heavy_handgun_cartridge'),
         8,
         200,
@@ -1006,6 +1046,7 @@ ServerEvents.recipes(e => {
 
     // -- STANDARD RIFLE CARTRIDGE -- //
     assembler(
+        event,
         st('standard_rifle_cartridge'),
         8, 
         200,
@@ -1019,6 +1060,7 @@ ServerEvents.recipes(e => {
 
     // -- HEAVY RIFLE CARTRIDGE -- //
     assembler(
+        event,
         st('heavy_rifle_cartridge'),
         8,
         200,
@@ -1032,6 +1074,7 @@ ServerEvents.recipes(e => {
 
     // -- SHOTGUN SHELL -- //
     assembler(
+        event,
         st('shotgun_shell'),
         8,
         200,
@@ -1046,6 +1089,7 @@ ServerEvents.recipes(e => {
 
     // -- SPACE HELMET -- //
     assembler(
+        event,
         st('space_helmet'),
         16,
         300,
@@ -1059,6 +1103,7 @@ ServerEvents.recipes(e => {
 
     // -- SPACE SUIT -- // 
     assembler(
+        event,
         st('space_suit'),
         16,
         300,
@@ -1074,6 +1119,7 @@ ServerEvents.recipes(e => {
 
     // -- SPACE PANTS -- //
     assembler(
+        event,
         st('space_pants'),
         16,
         300,
@@ -1086,6 +1132,7 @@ ServerEvents.recipes(e => {
 
     // -- SPACE BOOTS -- //
     assembler(
+        event,
         st('space_boots'),
         16,
         300,
@@ -1102,6 +1149,7 @@ ServerEvents.recipes(e => {
 
     // -- CREATIVE STORAGE UNIT -- //
     assembler(
+        event,
         st('creative_storage_unit'),
         32000,
         2400,
@@ -1125,6 +1173,7 @@ ServerEvents.recipes(e => {
 
     // -- CREATIVE BARREL -- //
     assembler(
+        event,
         st('creative_barrel'),
         32000,
         2400,
@@ -1148,6 +1197,7 @@ ServerEvents.recipes(e => {
 
     // -- CREATIVE TANK -- //
     assembler(
+        event,
         st('creative_tank'),
         32000,
         2400,
@@ -1171,6 +1221,7 @@ ServerEvents.recipes(e => {
 
     // -- CREATIVE MOTOR -- //
     assembler(
+        event,
         st('creative_motor'),
         32000,
         2400,
@@ -1194,6 +1245,7 @@ ServerEvents.recipes(e => {
 
     // -- CREATIVE WORLDSHAPER -- //
     assembler(
+        event,
         st('handheld_worldshaper'),
         32000,
         2400,

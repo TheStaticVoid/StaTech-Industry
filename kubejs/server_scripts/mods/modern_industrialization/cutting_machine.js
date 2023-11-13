@@ -3,40 +3,16 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/cutting_machine/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ca = (id) => `createaddition:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let fd = (id) => `farmersdelight:${id}`;
 
     // -- CUTTING MACHINE VARIABLE CONSTANTS -- //
     const lubricantAmount = 10;
     const gsonJsonArray = Java.loadClass('com.google.gson.JsonArray');
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let cuttingMachine = (id, eu, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: mi('cutting_machine'),
-            eu: eu,
-            duration: duration,
-            fluid_inputs: [
-                { amount: lubricantAmount, fluid: mi('lubricant') }
-            ]
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
-
     let recipesToRemove = [];
-    e.forEachRecipe( { type: mi('cutting_machine') }, recipe => {
+    event.forEachRecipe( { type: mi('cutting_machine') }, recipe => {
         recipesToRemove.push(recipe.getId());
 
         let recipeJson = recipe.json;
@@ -53,13 +29,14 @@ ServerEvents.recipes(e => {
                 recipeJson.get('fluid_inputs').add('amount', lubricantAmount);
             }
         }
-        e.custom(recipeJson).id(st(recipe.getPath()));
+        event.custom(recipeJson).id(st(recipe.getPath()));
     });
 
-    recipesToRemove.forEach(id => e.remove({id: id}));
+    recipesToRemove.forEach(id => event.remove({id: id}));
 
     // -- STRAW -- //
     cuttingMachine(
+        event,
         st('straw'),
         2,
         100,
@@ -69,6 +46,7 @@ ServerEvents.recipes(e => {
 
     // -- EMPTY CAN -- //
     cuttingMachine(
+        event,
         st('empty_can'),
         2,
         200,
@@ -78,6 +56,7 @@ ServerEvents.recipes(e => {
 
     // -- PIZZA SLICE -- //
     cuttingMachine(
+        event,
         st('pizza_slice'),
         2,
         200,
@@ -87,6 +66,7 @@ ServerEvents.recipes(e => {
 
     // -- CONCRETE PIZZA SLICE -- //
     cuttingMachine(
+        event,
         st('concrete_pizza_slice'),
         8,
         200,
@@ -96,6 +76,7 @@ ServerEvents.recipes(e => {
 
     // -- MINCED BEEF -- //
     cuttingMachine(
+        event,
         st('minced_beef'),
         2,
         200,

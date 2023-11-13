@@ -3,35 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/mob_crusher/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let cr = (id) => `create:${id}`;
-    let cd = (id) => `culturaldelights:${id}`;
-    let ap = (id) => `architects_palette:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let crusher = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('mob_crusher'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
 
     // Idk why I did it like this, but w/e
     const modelInputOutput = [
@@ -248,6 +221,7 @@ ServerEvents.recipes(e => {
         let fluid = modelInOut[2];
 
         crusher(
+            event,
             st(model.split(':')[1]),
             8,
             600,
@@ -261,6 +235,7 @@ ServerEvents.recipes(e => {
     // These are defined separately due to non-conformant liquid requirements
     // -- ENDERMAN MODEL -- //
     crusher(
+        event,
         st('enderman_model'),
         8,
         600,
@@ -275,6 +250,7 @@ ServerEvents.recipes(e => {
 
     // -- SKELETON MODEL -- //
     crusher(
+        event,
         st('skeleton_model'),
         8,
         600,
@@ -290,6 +266,7 @@ ServerEvents.recipes(e => {
 
     // -- PHANTOM MODEL -- //
     crusher(
+        event,
         st('phantom_model'),
         8,
         600,

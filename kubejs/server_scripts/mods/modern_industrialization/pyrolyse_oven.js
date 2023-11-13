@@ -3,34 +3,12 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/pyrolyse_oven/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let pyrolyseOven = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('pyrolyse_oven'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
 
     // -- LOGS TO CHARCOAL + WOOD TAR -- //
     pyrolyseOven(
+        event,
         st('charcoal_cresote_from_logs'),
         16,
         600,
@@ -42,6 +20,7 @@ ServerEvents.recipes(e => {
 
     // -- COAL TO COKE + CREOSOTE -- //
     pyrolyseOven(
+        event,
         st('coke_benzene_from_coal'),
         16,
         600,
@@ -53,6 +32,7 @@ ServerEvents.recipes(e => {
 
     // -- COAL DUST TO COKE DUST + CREOSOTE -- //
     pyrolyseOven(
+        event,
         st('coke_dust_benzene_from_coal_dusts'),
         16,
         600,

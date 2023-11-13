@@ -3,33 +3,12 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/laser_engraver/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let ap = (id) => `architects_palette:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let laserEngraver = (id, eu, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: mi('laser_engraver'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)    
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
     
     // -- PRINTED SILICON -- //
     laserEngraver(
+        event,
         st('circuit_silicon'),
         32,
         200,
@@ -40,6 +19,7 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: ae('printed_silicon') } ]
     );
     laserEngraver(
+        event,
         st('silicon_press_alt'),
         32,
         200,
@@ -52,6 +32,7 @@ ServerEvents.recipes(e => {
 
     // -- PRINTED CALCULATION CIRCUIT -- //
     laserEngraver(
+        event,
         st('circuit_calculation'),
         32,
         200,
@@ -64,6 +45,7 @@ ServerEvents.recipes(e => {
 
     // -- PRINTED ENGINEERING CIRCUIT -- //
     laserEngraver(
+        event,
         st('circuit_engineering'),
         32,
         200,
@@ -76,6 +58,7 @@ ServerEvents.recipes(e => {
 
     // -- PRINTED LOGIC CIRCUIT -- //
     laserEngraver(
+        event,
         st('circuit_logic'),
         32,
         200,
@@ -88,6 +71,7 @@ ServerEvents.recipes(e => {
 
     // -- SILICON PRESS -- //
     laserEngraver(
+        event,
         st('dupe_silicon_press'),
         32,
         200,
@@ -100,6 +84,7 @@ ServerEvents.recipes(e => {
 
     // -- CALCULATION PRESS -- //
     laserEngraver(
+        event,
         st('dupe_calculation_press'),
         32,
         200,
@@ -112,6 +97,7 @@ ServerEvents.recipes(e => {
 
     // -- ENGINEERING PRESS -- //
     laserEngraver(
+        event,
         st('dupe_engineering_press'),
         32,
         200,
@@ -124,6 +110,7 @@ ServerEvents.recipes(e => {
 
     // -- LOGIC PRESS -- //
     laserEngraver(
+        event,
         st('dupe_logic_press'),
         32,
         200,
@@ -162,6 +149,7 @@ ServerEvents.recipes(e => {
         let model = modelItem[0];
         let item = modelItem[1];
         laserEngraver(
+            event,
             st(model.split(':')[1]),
             32,
             200,
@@ -185,6 +173,7 @@ ServerEvents.recipes(e => {
         let bossItem = bossModelItem[1];
         let bossItemAmount = bossModelItem[2];
         laserEngraver(
+            event,
             st(bossModel.split(':')[1]),
             32,
             200,

@@ -3,13 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/blast_furnace/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let mc = (id) => `minecraft:${id}`;
     
     // -- BLAST FURNACE REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -18,30 +13,11 @@ ServerEvents.recipes(e => {
         mi('materials/aluminum/blast_furnace/tiny_dust'),
         mi('materials/blast_furnace/superconductor')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let blastFurnace = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('blast_furnace'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs) 
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
     // -- NETHER STAR -> MOLTEN NETHER STAR -- //
     blastFurnace(
+        event,
         st('nether_star'),
         128,
         300,
@@ -53,6 +29,7 @@ ServerEvents.recipes(e => {
 
     // -- IMPURRE LIQUID NETHER STAR -> MOLTEN NETHER STAR -- //
     blastFurnace(
+        event,
         st('molten_nether_star'),
         128,
         900,
@@ -64,6 +41,7 @@ ServerEvents.recipes(e => {
     
     // -- WITHERED BONE -- //
     blastFurnace(
+        event,
         st('withered_bone'),
         16,
         600,
@@ -76,6 +54,7 @@ ServerEvents.recipes(e => {
 
     // -- PIZZA -- //
     blastFurnace(
+        event,
         st('pizza'),
         2,
         600,
@@ -85,6 +64,7 @@ ServerEvents.recipes(e => {
 
     // -- UNCOOKED STEEL DUST -> STEEL INGOT -- //
     blastFurnace(
+        event,
         st('steel_ingot_from_uncooked_steel'),
         2,
         1200,
@@ -94,6 +74,7 @@ ServerEvents.recipes(e => {
 
     // -- MOLTEN ENDERIUM -- //
     blastFurnace(
+        event,
         st('molten_enderium'),
         48,
         400,
@@ -105,6 +86,7 @@ ServerEvents.recipes(e => {
 
     // -- ENDERIUM HOT INGOT -- // 
     blastFurnace(
+        event,
         st('enderium_hot_ingot'),
         64,
         400,
@@ -115,6 +97,7 @@ ServerEvents.recipes(e => {
 
     // -- REFINED IRON INGOT -> STEEL INGOT -- //
     blastFurnace(
+        event,
         st('steel_ingot_from_refined_iron'),
         16,
         100,
@@ -127,6 +110,7 @@ ServerEvents.recipes(e => {
 
     // -- ALUMINUM EBF -- //
     blastFurnace(
+        event,
         st('aluminum_ingot'),
         32,
         600,
@@ -136,6 +120,7 @@ ServerEvents.recipes(e => {
 
     // -- IRON INGOTS -> HARDENED IRON INGOT -- //
     blastFurnace(
+        event,
         st('hardend_iron_ingot'),
         16,
         300,
@@ -145,6 +130,7 @@ ServerEvents.recipes(e => {
 
     // -- TUNGSTEN + STEEL -> HOT TUNGSTENSTEEL -- //
     blastFurnace(
+        event,
         st('hot_tungstensteel_ingot'),
         128,
         3600,
@@ -157,6 +143,7 @@ ServerEvents.recipes(e => {
 
     // -- SUPERCONDUCTOR -- //
     blastFurnace(
+        event,
         st('superconductor_hot_ingot'),
         512,
         1200,
@@ -167,6 +154,7 @@ ServerEvents.recipes(e => {
 
     // -- FLUORINE -- //
     blastFurnace(
+        event,
         st('fluorine'),
         16,
         200,

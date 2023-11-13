@@ -3,46 +3,18 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/mixer/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let xp = (id) => `xps:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let cr = (id) => `create:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let cd = (id) => `culturaldelights:${id}`;
 
     // -- MIXER REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         mi('materials/mixer/fire_clay_dust')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let mixer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('mixer'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
     // -- NETHERRACK -- //
     mixer(
+        event,
         st('netherrack'),
         8,
         200,
@@ -53,6 +25,7 @@ ServerEvents.recipes(e => {
 
     // -- SALT WATER -- //
     mixer(
+        event,
         st('salt_water'),
         2,
         200,
@@ -64,6 +37,7 @@ ServerEvents.recipes(e => {
 
     // -- PICKLE -- //
     mixer(
+        event,
         st('pickle'),
         2,
         600,
@@ -77,6 +51,7 @@ ServerEvents.recipes(e => {
 
     // -- NUTRIENT RICH WATER -- //
     mixer(
+        event,
         st('nutrient_rich_water'),
         8,
         200,
@@ -88,6 +63,7 @@ ServerEvents.recipes(e => {
 
     // -- NUTRIENT RICH LIQUID ENDER -- //
     mixer(
+        event,
         st('nutrient_rich_liquid_ender'),
         8,
         200,
@@ -99,6 +75,7 @@ ServerEvents.recipes(e => {
 
     // -- NUTRIENT RICH BLOOD -- //
     mixer(
+        event,
         st('nutrient_rich_blood'),
         8,
         200,
@@ -110,6 +87,7 @@ ServerEvents.recipes(e => {
 
     // -- XP BERRY SEEDS -- //
     mixer(
+        event,
         st('xp_berry_seeds'),
         8,
         200,
@@ -125,6 +103,7 @@ ServerEvents.recipes(e => {
 
     // -- LIQUID EXPERIENCE -- //
     mixer(
+        event,
         st('xp_fluid'),
         8,
         200,
@@ -136,6 +115,7 @@ ServerEvents.recipes(e => {
 
     // -- STATECH ENERGY -- //
     mixer(
+        event,
         st('statech_energy'),
         8,
         200,
@@ -149,6 +129,7 @@ ServerEvents.recipes(e => {
 
     // -- BEPSI -- //
     mixer(
+        event,
         st('bepsi'),
         8,
         200,
@@ -159,6 +140,7 @@ ServerEvents.recipes(e => {
 
     // -- COKE COLA -- //
     mixer(
+        event,
         st('coke_cola'),
         8,
         200,
@@ -172,6 +154,7 @@ ServerEvents.recipes(e => {
 
     // -- GREG COLA -- //
     mixer(
+        event,
         st('greg_cola'),
         8,
         200,
@@ -185,6 +168,7 @@ ServerEvents.recipes(e => {
 
     // -- SULFURIC ACID BOTTLE -- //
     mixer(
+        event,
         st('sulfuric_acid_bottle'),
         8,
         200,
@@ -195,6 +179,7 @@ ServerEvents.recipes(e => {
 
     // -- URANIUM CEREAL -- //
     mixer(
+        event,
         st('uranium_cereal'),
         8,
         200,
@@ -208,6 +193,7 @@ ServerEvents.recipes(e => {
 
     // -- NUKA COLA -- //
     mixer(
+        event,
         st('nuka_cola'),
         8,
         200,
@@ -222,6 +208,7 @@ ServerEvents.recipes(e => {
 
     // -- CONCRETE PIZZA -- //
     mixer(
+        event,
         st('concrete_pizza'),
         8,
         200,
@@ -232,6 +219,7 @@ ServerEvents.recipes(e => {
 
     // -- CONCRETE STEAK WITH CLAY SAUCE -- //
     mixer(
+        event,
         st('concrete_steak_with_clay_sauce'),
         8,
         200,
@@ -245,6 +233,7 @@ ServerEvents.recipes(e => {
 
     // -- DOUGH -- //
     mixer(
+        event,
         st('dough'),
         2,
         100,
@@ -255,6 +244,7 @@ ServerEvents.recipes(e => {
 
     // -- LIQUID ENDER -- // 
     mixer(
+        event,
         st('liquid_ender'),
         8,
         200,
@@ -266,6 +256,7 @@ ServerEvents.recipes(e => {
     
     // -- SOULCOPPER BLEND -- //
     mixer(
+        event,
         st('soul_copper_blend'),
         2,
         100,
@@ -278,6 +269,7 @@ ServerEvents.recipes(e => {
 
     // -- CERTUS QUARTS CRYSTAL -- //
     mixer(
+        event,
         st('certus_quartz_crystal'),
         8,
         100,
@@ -291,6 +283,7 @@ ServerEvents.recipes(e => {
 
     // -- DAMAGED BUDDING CERTUS QUARTZ -- //
     mixer(
+        event,
         st('damaged_budding_certus_quartz'),
         8,
         200,
@@ -304,6 +297,7 @@ ServerEvents.recipes(e => {
 
     // -- CHIPPED BUDDING CERTUS QUARTZ -- //
     mixer(
+        event,
         st('chipped_budding_certus_quartz'),
         8,
         200,
@@ -317,6 +311,7 @@ ServerEvents.recipes(e => {
 
     // -- FLAWED BUDDING CERTUS QUARTZ -- //
     mixer(
+        event,
         st('flawed_budding_certus_quartz'),
         8,
         200,
@@ -330,6 +325,7 @@ ServerEvents.recipes(e => {
     
     // -- DRILLING FLUID -- //
     mixer(
+        event,
         st('drilling_fluid'),
         8,
         400,
@@ -344,6 +340,7 @@ ServerEvents.recipes(e => {
 
     // -- GRASS BLOCK RECIPE PARITY -- //
     mixer(
+        event,
         st('grass_block'),
         2,
         100,
@@ -357,6 +354,7 @@ ServerEvents.recipes(e => {
 
     // -- FIRE CLAY DUST -- //
     mixer(
+        event,
         st('fire_clay_dust'),
         2,
         100,
@@ -369,6 +367,7 @@ ServerEvents.recipes(e => {
 
     // -- LIQUID CONCRETE -- //
     mixer(
+        event,
         st('liquid_concrete'),
         8,
         200,
@@ -396,7 +395,7 @@ ServerEvents.recipes(e => {
     
     // -- CONVERT ALL NON-CONSUMABLE FLUID RECIPES IN MIXER TO CONSUME FLUID  -- //
     let toRemove = [];
-    e.forEachRecipe( { type: mi('mixer') }, recipe => {
+    event.forEachRecipe( { type: mi('mixer') }, recipe => {
         const DONT_REPLACE = [
             'modern_industrialization:vanilla_recipes/mixer/lava',
             'modern_industrialization:compat/ae2/mixer/fluix'
@@ -437,8 +436,8 @@ ServerEvents.recipes(e => {
         if (newFluidInput) {
             toRemove.push(recipe.getId());
             let id = st(recipe.getId().split('mixer/')[1]);
-            mixer(id, eu, duration, item_inputs, item_outputs, newFluidInput, fluid_outputs);
+            mixer(event, id, eu, duration, item_inputs, item_outputs, newFluidInput, fluid_outputs);
         }
     });
-    toRemove.forEach(id => e.remove({ id: id }));
+    toRemove.forEach(id => event.remove({ id: id }));
 });

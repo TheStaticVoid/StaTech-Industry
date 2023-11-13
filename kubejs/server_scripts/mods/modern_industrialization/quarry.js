@@ -3,14 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/quarry/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let bg = (id) => `byg:${id}`;
-    let cr = (id) => `create:${id}`;
 
     // -- QUARRY REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -19,26 +13,11 @@ ServerEvents.recipes(e => {
         mi('quarry/steel'),
         mi('quarry/stainless_steel')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let quarry = (id, eu, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: mi('quarry'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
     // -- BRONZE DRILL -- //
     quarry(
+        event,
         st('bronze_drill'),
         4,
         600,
@@ -59,6 +38,7 @@ ServerEvents.recipes(e => {
 
     // -- ZINC DRILL -- //
     quarry(
+        event,
         st('zinc_drill'),
         4,
         600,
@@ -77,6 +57,7 @@ ServerEvents.recipes(e => {
 
     // -- GOLD DRILL -- //
     quarry(
+        event,
         st('gold_drill'),
         16,
         600,
@@ -103,6 +84,7 @@ ServerEvents.recipes(e => {
 
     // -- STEEL -- //
     quarry(
+        event,
         st('steel'),
         12,
         600,
@@ -125,6 +107,7 @@ ServerEvents.recipes(e => {
 
     // -- STAINLESS STEEL -- //
     quarry(
+        event,
         st('stainless_steel'),
         64,
         600,

@@ -3,41 +3,18 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let mc = (id) => `minecraft:${id}`;
+ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/electrolyzer/${id}`;
 
     // -- ELECTROLYZER REMOVED RECIPES -- //
     const DELETED_RECIPE = [
         mi('materials/electrolyzer/salt_electrolysis')
     ];
-    DELETED_RECIPE.forEach(id => e.remove({id: id}));
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let electrolyzer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('electrolyzer'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
+    DELETED_RECIPE.forEach(id => event.remove({id: id}));
 
     // -- BRINE -- //
     electrolyzer(
+        event,
         st('brine'),
         32,
         400,
@@ -54,6 +31,7 @@ ServerEvents.recipes(e => {
 
     // -- UU MATTER -- //
     electrolyzer(
+        event,
         st('uu-matter'),
         40,
         2500,
@@ -65,6 +43,7 @@ ServerEvents.recipes(e => {
 
     // -- CLAY -- //
     electrolyzer(
+        event,
         st('clay_dust'),
         32,
         1200,
@@ -80,6 +59,7 @@ ServerEvents.recipes(e => {
 
     // -- SALT -- //
     electrolyzer(
+        event,
         st('salt_dust'),
         16,
         400,
@@ -91,6 +71,7 @@ ServerEvents.recipes(e => {
 
     // -- PYRITE DUST -- //
     electrolyzer(
+        event,
         st('pyrite_dust'),
         16,
         1200,
@@ -103,6 +84,7 @@ ServerEvents.recipes(e => {
 
     // -- GALENA DUST -- //
     electrolyzer(
+        event,
         st('galena_dust'),
         16,
         1200,
@@ -116,6 +98,7 @@ ServerEvents.recipes(e => {
 
     // -- CINNABAR DUST -- //
     electrolyzer(
+        event,
         st('cinnabar_dust'),
         16,
         800,
@@ -125,6 +108,7 @@ ServerEvents.recipes(e => {
 
     // -- PERIDOT DUST -- //
     electrolyzer(
+        event,
         st('peridot_dust'),
         16,
         500,
@@ -140,6 +124,7 @@ ServerEvents.recipes(e => {
 
     // -- SAPPHIRE DUST -- //
     electrolyzer(
+        event,
         st('sapphire_dust'),
         16,
         600,
@@ -149,6 +134,7 @@ ServerEvents.recipes(e => {
 
     // -- SODALITE DUST -- //
     electrolyzer(
+        event,
         st('sodalite_dust'),
         16,
         500,
@@ -162,6 +148,7 @@ ServerEvents.recipes(e => {
 
     // -- SPHALERITE DUST -- //
     electrolyzer(
+        event,
         st('sphalerite_dust'),
         16,
         400,
@@ -174,6 +161,7 @@ ServerEvents.recipes(e => {
 
     // -- PYROPE DUST -- //
     electrolyzer(
+        event,
         st('pyrope_dust'),
         16,
         400,
@@ -187,6 +175,7 @@ ServerEvents.recipes(e => {
 
     // -- ALAMANDINE DUST -- //
     electrolyzer(
+        event,
         st('almadine_dust'),
         16,
         400,
@@ -200,6 +189,7 @@ ServerEvents.recipes(e => {
 
     // -- SPESSARTINE DUST -- //
     electrolyzer(
+        event,
         st('spessartine_dust'),
         16,
         400,
@@ -213,6 +203,7 @@ ServerEvents.recipes(e => {
 
     // -- HYDROCHLORIC ACID -- //
     electrolyzer(
+        event,
         st('hydrochloric_acid'),
         16,
         400,
@@ -227,6 +218,7 @@ ServerEvents.recipes(e => {
 
     // -- CHLOROFORM -- //
     electrolyzer(
+        event,
         st('chloroform'),
         16,
         400,
