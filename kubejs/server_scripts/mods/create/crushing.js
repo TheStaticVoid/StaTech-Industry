@@ -3,12 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //     
+ServerEvents.recipes(event => {  
     let st = (id) => `statech:create/crushing/${id}`;
-    let cr = (id) => `create:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
     // -- CREATE CRUSHING REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -19,25 +15,11 @@ ServerEvents.recipes(e => {
         cr('crushing/uranium_ore'),
         cr('crushing/platinum_ore'),
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let crushing = (id, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: cr('crushing'),
-            processingTime: duration
-        }
-
-        if (item_inputs)
-            newRecipe['ingredients'] = item_inputs;
-        if (item_outputs)
-            newRecipe['results'] = item_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
     // -- BRICK DUST FROM BRICKS -- //
-    crushing(
+    createCrushing(
+        event,
         st('brick_dust_from_bricks'),
         400,
         [ { item: mc('bricks') } ],
@@ -45,7 +27,8 @@ ServerEvents.recipes(e => {
     );
 
     // -- BRICK DUST FROM BRICK -- //
-    crushing(
+    createCrushing(
+        event,
         st('brick_dust_from_brick'),
         100,
         [ { item: mc('brick') } ],
@@ -53,7 +36,8 @@ ServerEvents.recipes(e => {
     );
 
     // -- CLAY DUST FROM CLAY -- //
-    crushing(
+    createCrushing(
+        event,
         st('clay_dust_from_clay'),
         400,
         [ { item: mc('clay') } ],
@@ -61,7 +45,8 @@ ServerEvents.recipes(e => {
     );
 
     // -- CLAY DUST FROM CLAY BALL -- // 
-    crushing(
+    createCrushing(
+        event,
         st('clay_dust_from_clay_ball'),
         100,
         [ { item: mc('clay_ball') } ],

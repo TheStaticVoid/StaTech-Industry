@@ -3,36 +3,16 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:create/mixing/${id}`;
-    let cr = (id) => `create:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let xp = (id) => `xps:${id}`;
-    let mc = (id) => `minecraft:${id}`
     
     // Remove the create compat recipe for ae2 mixing
-    e.remove( {type: cr('mixing'), output: ae('fluix_crystal') });
-    e.remove( {type: cr('mixing'), output: xp('xp_berries_seeds') });
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let mixing = (id, heat_requirement, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: cr('mixing'),
-            heatRequirement: heat_requirement,
-        }
-
-        if (item_inputs)
-            newRecipe['ingredients'] = item_inputs;
-        if (item_outputs)
-            newRecipe['results'] = item_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
+    event.remove( {type: cr('mixing'), output: ae('fluix_crystal') });
+    event.remove( {type: cr('mixing'), output: xp('xp_berries_seeds') });
 
     // -- XP BERRIES SEEDS FIX -- //
-    mixing(
+    createMixing(
+        event,
         st('xp_berries_seeds'),
         'none',
         [
@@ -51,7 +31,8 @@ ServerEvents.recipes(e => {
     );
 
     // -- BRONZE INGOT -- //
-    mixing(
+    createMixing(
+        event,
         st('bronze_ingot'),
         'heated',
         [
@@ -64,7 +45,8 @@ ServerEvents.recipes(e => {
     );
 
     // -- BRONZE DUST -- //
-    mixing(
+    createMixing(
+        event,
         st('bronze_dust'),
         'none',
         [
@@ -77,7 +59,8 @@ ServerEvents.recipes(e => {
     );
 
     // -- FIRE CLAY DUST -- //
-    mixing(
+    createMixing(
+        event,
         st('fire_clay_dust'),
         'none',
         [
