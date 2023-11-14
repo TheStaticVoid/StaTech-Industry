@@ -33,6 +33,7 @@
 - [TooltipFix](https://www.curseforge.com/minecraft/mc-mods/tooltipfix) - Replaced adaptive tooltips
 - [Trofers](https://www.curseforge.com/minecraft/mc-mods/trofers-fabric) - Trophy system for the pack
 - [Unsafe World Random Access Detector](https://www.curseforge.com/minecraft/mc-mods/uwrad) - Kinda a utility mod to help work through crash reports
+- [Why Am I on Fire?](https://www.curseforge.com/minecraft/mc-mods/why-am-i-on-fire) - Removes fire texture when it doesnt apply
 
 ## Mods removed:
 - [Adaptive Tooltips](https://www.curseforge.com/minecraft/mc-mods/adaptive-tooltips) - Replaced by tooltipfix
