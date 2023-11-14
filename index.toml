@@ -49,6 +49,10 @@ file = "config/blur.json"
 hash = "c142e94698edc6e6f976da54e35ef518ba7ac99b276052f5ebd319280bd07b00"
 
 [[files]]
+file = "config/builtinservers.json"
+hash = "8bdba526b8367b623782641b36502b9b33ab9f39ac80cd4a2a1c49b85be559c2"
+
+[[files]]
 file = "config/byg/biomepedia.json5"
 hash = "8fc519a8e6ca95a62903924e378efe098b3deeab6013b0fc6c84df71ff6a6866"
 
@@ -222,27 +226,35 @@ hash = "cd5dc10fac4aa98d87c2d38ffba75bb1c96cfd8d8c334d17594c128118c46f15"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1__stone_age.snbt"
-hash = "851226d5d7632c8f85cde7dd8ad70985bffb3307f6757f1ffb9163d309d5df38"
+hash = "81787bd3781cbd465348cf0305eb06f601c5cc1d14124037eabfdcf95e36bc0e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2__the_steam_age.snbt"
-hash = "6c383ae6af7c83359bcab9ed4a718434b7774547b56e7e473383820ad0166c6c"
+hash = "eba8186c5de87ca9e3194bc665c0d80457a2d0e616f8d29d53a8b8f95fd075f8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3__electrical_age.snbt"
-hash = "42a25e06ae0f9b41c134daefab7397acb5e3a5c836bcbbbb66c55e511d5e0fce"
+hash = "1b768f50119b0a8b6b80796ed2edae8364dcea535f527d8c7127b7b5bffca670"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/4__digital_age.snbt"
-hash = "c3768e206ae3154a66946fd04b4955eac7693c093c7096d88740ca7eeeef4dbe"
+file = "config/ftbquests/quests/chapters/4__advanced_electronics.snbt"
+hash = "9f6a598cf4a0cbef12187a3d1aa6a7e4b3dbb4dd6206809f57217f5c285213ed"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/5__nuclear_age.snbt"
-hash = "24c27739a6cc915f50248d0f1445ede1d89aa8ab22e12d0f99ed982c1eb7866c"
+file = "config/ftbquests/quests/chapters/5__digital_age.snbt"
+hash = "86881afba37f5b486f03974e1ed60b3a743be1b6690f8f021c4670772a1ada86"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/6__quantum_age.snbt"
-hash = "32cc1520d4e9a2a0ebe639ff4e36ed57f689183e1de34b3e85936a90268bd710"
+file = "config/ftbquests/quests/chapters/6__space_age.snbt"
+hash = "2bfb48c1550b8271b332def34cfb1c2d6b03069e214123428c05f058898835e8"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/7__nuclear_age.snbt"
+hash = "1c53bc82081dafcf1c8f5e4e46a95e340dececd6959976a3b0ec248aa4692e48"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/8__quantum_age.snbt"
+hash = "29b41b6cdca603c284dd4804d1978ea4f13d9381e759d65fba8a985958df2a7e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/artifacts.snbt"
@@ -250,27 +262,23 @@ hash = "30532c99a17a412c2ee80f8d86b4ce94b1233c2616117ff2dce3bd75524dc487"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create.snbt"
-hash = "9e8fae0abd1e2b6799fad719a87b30d0fbaa30ea8ccb17ad6b3882471f0c676e"
+hash = "caa418aa267b5b1543d1f392aea54f3d3027d353522a642f745985aecd41d8a3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/food.snbt"
-hash = "34b4c2dd705b7bc6c1b237a7ae34af127e55a7a5f219e8d687654cadaa5a9154"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/twilight_forest.snbt"
-hash = "b644b84757eb24928b08c8599dab54353ba4ef6c5e83d10a594e69114b02b6f3"
+hash = "aaf2f987f735f814a768e1b50e0f4d88690995e2ca5e943140b4a957b69be538"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/utilities.snbt"
-hash = "418ca34aee669e8e2c83adbb8c84795a087c66c5d80e6a1b91494a261575efcf"
+hash = "8d9c3c9ff02695f8f0ce46b8b65fd37ae32500583070ec819bacbf5a6d5a6558"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "215c3d4f92c65d31ad794d890530a69c13cc8447e5432c7686b0da7f46a5bcce"
+hash = "d0c1e30f7d50d339c7b08c851fdc7e5e5a3863558bad0b0723135f59955262b6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/world_of_magic.snbt"
-hash = "f7cad9911025e031f3d2270e7944a047d53efd7353b878ceebfc667705909702"
+hash = "9bca06ff999b1c05f6662c6d702a3de7ae3d5f20045b2c1c382443bf5a9a530f"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -318,7 +326,7 @@ hash = "bac75ee87cac439a77a673f2742756cafcaf56d19247f0d49c263489d07d397e"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/common_chapter_1_rewards.snbt"
-hash = "cd2d5748bfcfe3b926e70230a1642b8876b754ee7ca8e203dadcf175cfcebb73"
+hash = "31d78a51233842a11a5c232c086331d4d50a4973e0abfb912ec784fd1423f34e"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/create_chapter_1_rewards.snbt"
@@ -326,7 +334,7 @@ hash = "dd63f458b0c8b03e46e71f618fe32275333de15915559e11e0ddc99c2113ed9a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/spectrum_basic_rewards.snbt"
-hash = "74eb07bf7b242e3719f50465fa106203612c386fe53ff04cd6a1ee309c05c738"
+hash = "3d80039d34b0e60b4cb3000d1f8cc8e98ef8fdfac87319d4b0aacb9426d11e5b"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/spectrum_legendary_rewards.snbt"
@@ -341,12 +349,8 @@ file = "config/ftbquests/quests/reward_tables/sword_choice.snbt"
 hash = "bd21ba06e0fe19b773493123814a393a3449784ea31dbe4028b7646c183a4a6f"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/twilight_forest_rewards.snbt"
-hash = "6187743c50f9055476dfac393a4c8bb9f99cc1e34e452b5b4c67cb5ec839e1a5"
-
-[[files]]
 file = "config/geocluster.json"
-hash = "d8d0dcc4b4405ce727efa98bd424e94779db1b389a4648e97341448d8a10fd98"
+hash = "58997bbd290b7f41e10176fbd5affc68e3eb99d13fd6e874bf5f10c7ccec5235"
 
 [[files]]
 file = "config/inmis.json"
@@ -382,11 +386,15 @@ hash = "b99c3dfc21b0f47a13c94b56adffc29608a8e83578fc4869c3a6f4ae7bd65ccd"
 
 [[files]]
 file = "config/modern_industrialization.toml"
-hash = "069db7da7c09c6b51368ecf158adbfd06971e568ffb18c772e083a3cba9b2bc4"
+hash = "5b432687f00c18b5b9898fbdbb3f4fb1c0684bdfadc5918e43066ebaef2ebab4"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
 hash = "798aa5c902941acc9b67c172392bff34b26a206b86f95560a42ef5818cf3a37e"
+
+[[files]]
+file = "config/nicerskies.json"
+hash = "125a757b33a8f118ab7a4179e486976e2b866a33fcc04cd773c7553d0990d682"
 
 [[files]]
 file = "config/notenoughanimations.json"
@@ -449,6 +457,10 @@ file = "config/techreborn/world.json"
 hash = "49da8f1834a02c7e247f813de27f6d10eb153d712c42f7aac66efdc6ed9ca582"
 
 [[files]]
+file = "config/tips.json"
+hash = "4f84fd03aaca9b24de6f2c9815b8041804b154192690a4a26015af1e46205c89"
+
+[[files]]
 file = "config/toastmanager-client.toml"
 hash = "219902457a11c3adc0e3d257808e6b9f2f5e648dd96ba5ce563ba0e0f14c05de"
 
@@ -467,14 +479,6 @@ hash = "daa3b089aeb91ddfcbc02c3f326a50e374529ce7a7f115333594d8f94ef1474d"
 [[files]]
 file = "config/toolleveling/tool_leveling_table.json"
 hash = "1b4fd2efd24af3afe0c4d4d7b6e6d5deb25ace00b8c7ac89067e52a86b163175"
-
-[[files]]
-file = "config/twilightforest-client.toml"
-hash = "1137dd622c8013b54ab26f2262ae5d7f19f26564100aabf9bee0d1f48c3b8243"
-
-[[files]]
-file = "config/twilightforest-common.toml"
-hash = "c9edfb314fc432bb777c5a905359f2c3ec5115aa04f18acee6cae6f150cbccae"
 
 [[files]]
 file = "config/waila/blacklist.json"
@@ -594,7 +598,7 @@ hash = "5acc6ca96a4f28540047efb9bdeb294826d8e156f06edccd723989442087c78b"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "8f25cf0685d7a6a4d594166d2851cf342859529e6ac2c89145093d3cc796748e"
+hash = "467d80d67fa80bf2a10b58c04fe381126c91cfc66ee8e8e090da0bff3d2c072a"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/calorite_ore_sample.json"
@@ -939,10 +943,6 @@ hash = "7708fa47f12e814e73c5a057b394ba4f373b972e2d11b15e047f2e2a5360342e"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/guardian_model.png"
 hash = "361a4761f1deeb9ef64cc876e03acddd0ba1a697e447015173a64a4a6c4a83ac"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/item/magic_diamond.png"
-hash = "09b2e9f393fff4f46c5e5fa12dcbc587f7ee19904c2635ea7ae33dde50dce6a7"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/magma_cube_model.png"
@@ -2525,6 +2525,10 @@ file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
 hash = "19ce2ac2df73176c1fd0110e421d9f9d1fdab2436e24bae59f4743a40608af90"
 
 [[files]]
+file = "kubejs/assets/statech/lang/en_us.json"
+hash = "931b4be759c286b04326aacbe2f2b18307827b95557a5dbef28db0f8e971090f"
+
+[[files]]
 file = "kubejs/assets/statech/textures/item/bronze_pump.png"
 hash = "9759c9a73e443712f6a131c4b0e22a0919b799240c701a205476b720c4887a53"
 
@@ -2565,12 +2569,52 @@ file = "kubejs/assets/statech/textures/item/spectrum_temple.png"
 hash = "e54fb593feb7e308ffb190ff18512a371c3ddf9a061366e89d983a7a4cbd802f"
 
 [[files]]
+file = "kubejs/assets/statech/tips/ae2_fluid_substitute.json"
+hash = "fde23195abe634cb5c8bd3a21c8bb2ba5aa232b4edb123e5b39394357619143a"
+
+[[files]]
+file = "kubejs/assets/statech/tips/batch_craft.json"
+hash = "5f4d7dfe89e714ace148571ddc8e30f8ee710a0fbc6855dfef18a59fdfecfbf1"
+
+[[files]]
+file = "kubejs/assets/statech/tips/fluid_power.json"
+hash = "8f10c2a32c4de4f8e2b4c980c1cca1e4354927fa8eb9129f275f51718ca8b951"
+
+[[files]]
+file = "kubejs/assets/statech/tips/machine_volumes.json"
+hash = "8f6d8a109f95cdc958ed067e63e93c1972feac0e3b4b5d01b56522ba1055d4e0"
+
+[[files]]
+file = "kubejs/assets/statech/tips/oregen.json"
+hash = "55fefe811ea5543f848ceab50d15561f7a5c9f61d6f4c9fc06c651718b6bcad7"
+
+[[files]]
+file = "kubejs/assets/statech/tips/osha.json"
+hash = "a7e1fb83349d846dfc868db67db3ddd5b5a0f69adf1b9e9e5821a47302a35358"
+
+[[files]]
+file = "kubejs/assets/statech/tips/slime_sling_glider.json"
+hash = "6f900b40ddd271eb3cb3074134bbe079fffd46dd686ce836a0518398f43befdb"
+
+[[files]]
+file = "kubejs/assets/statech/tips/smart_chute.json"
+hash = "2a17795511775fb60dedafd074d15eaadac6ac9f956e72b2316c120b84cafd17"
+
+[[files]]
+file = "kubejs/assets/statech/tips/steam_drill.json"
+hash = "bf69b81b881571173f0e609a8a6dfcb4ae28da760fd8ce324f498a885e00bba8"
+
+[[files]]
+file = "kubejs/assets/statech/tips/tfmg.json"
+hash = "d94687ca019068348520931a838ce3a4361f44db0466fdfb97e824d7c82bab1c"
+
+[[files]]
 file = "kubejs/assets/zedtech.zip"
 hash = "01e63558e1c02cd7f3fcf0ea09672cbcd93c99ed2502c5b137f568c2b46baf1c"
 
 [[files]]
 file = "kubejs/client_scripts/capes.js"
-hash = "708a909f0b8c2832262fe9a8e9c4b6c70d941d7dffeb97b3dfdfdd2c061f645b"
+hash = "3a500e65e176400b1cf8e2dab699b2ee20fd32d64550e91f1aeb407d4a6a35c8"
 
 [[files]]
 file = "kubejs/client_scripts/ore_information.js"
@@ -2578,7 +2622,7 @@ hash = "9f17656a33ab3e59fb461db853457ce12db310f4fa02dc6bdd48da89a2a8914b"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/advanced_large_steam_boiler.js"
-hash = "5ae3a6140c8aa908d83c0747eb9fc2597cafdbff0ab712b78a15f392afe43487"
+hash = "d7686ad59836adbcaa4ac1cda347caad7204a9c0bd59c2259536979995a9803e"
 
 [[files]]
 file = "kubejs/client_scripts/ponder/modern_industrialization/blood_generator.js"
@@ -2750,7 +2794,7 @@ hash = "2e4bf063197970d0c918ac2fd5a56d96f7313039e392eb3b8e4ecbc976759dfa"
 
 [[files]]
 file = "kubejs/client_scripts/rei.js"
-hash = "dead0d2134783c885d338a6b0aeba4b297a839fff04c6496ee4eb86ed800dea5"
+hash = "21c8f964b6eb01dc709061f9c082cc000a79244ee6f5f291335189355db3e6ed"
 
 [[files]]
 file = "kubejs/client_scripts/rename.js"
@@ -3202,375 +3246,367 @@ hash = "ead8f8ef25a98cd4b4dfe5c3de823dc72ae6e2e1bcbfcb2c4f4759465467ceab"
 
 [[files]]
 file = "kubejs/server_scripts/claim_interact_whitelist.js"
-hash = "4c091c4a1ae1317cc383915c4d90922b652dd8ee917aac116617d21a6e43666c"
+hash = "3f856b1504c412f765206b72e4512000be3ea7f053202db2ef5d0074fad01a40"
 
 [[files]]
 file = "kubejs/server_scripts/mi_replicatorblacklist.js"
-hash = "e20020269e2dd8a947c77979a76d11de9bace8dbfd359b5ba060d81d8186c794"
+hash = "1530fad486c20d4da7f03d880558502c16e5f905e3287b7c7e38b206a4df78a3"
+
+[[files]]
+file = "kubejs/server_scripts/mod_namespaces.js"
+hash = "80db58b9615c14c9975271136344a40dd95181157eac475f272ea6e4a05086b0"
 
 [[files]]
 file = "kubejs/server_scripts/mods/ad_astra.js"
-hash = "dd7b8290256f98091e9145ad98da2be09363a54ada0e837c10a22968a07c7a9d"
+hash = "bf4d3b869a8cad090b5a331e599341601d1077d70b489868605f6f128d856039"
 
 [[files]]
 file = "kubejs/server_scripts/mods/ae2.js"
-hash = "7765906c752af0d280b4e579d2134056ad94956df41c28a23c26568434f553e3"
+hash = "1c7ce2dc9d32f744eac3acff44f837b50deda050ffe5a11fdc82b7656a7eaedf"
 
 [[files]]
 file = "kubejs/server_scripts/mods/anim_guns.js"
-hash = "79a5038b3197759e83a1a162427eeedbc97afb206a4f05bd815d0cc2082260fa"
+hash = "15586901bcb88e989c48a290e6d9e4b782a08ce3510ca881a8cbd5afd122dcc4"
 
 [[files]]
 file = "kubejs/server_scripts/mods/blockus.js"
-hash = "95a29a9cf8d0da8005fb5bad666e16402c8d44c512df84e6b9aed6ff9ac3411f"
+hash = "01e93a81eb3efc4129bf9591b95ca330279f52a502c0317d8711953d8cdca0c1"
 
 [[files]]
-file = "kubejs/server_scripts/mods/building_gadgets.js"
-hash = "9df63a2617e61c2720f22f5f9ae13575f3e7a7b5de4371546068ccc245736fe7"
+file = "kubejs/server_scripts/mods/buildinggadgets.js"
+hash = "b088471595c943028e6fa517bc55cde72b4f45ea8691675ba2f33ce420a4124c"
 
 [[files]]
 file = "kubejs/server_scripts/mods/byg.js"
-hash = "b90241596af1914deb1a1d77f35a1528c0388fc0d9e670c4a45fa01ebf934812"
+hash = "592cb7f64a3f8282f90f83161688137411a9e5192a78ae1b51631c5b0ca7edab"
 
 [[files]]
 file = "kubejs/server_scripts/mods/catwalks.js"
-hash = "8e3e69a1c77cb9edf34e64eefd1f027a31ee36fe7d6650e9e39201a227c9ed68"
+hash = "36cc52f602b6a10a393ff58be859c649e54ba6977cf3f6f5550623825281c4dd"
 
 [[files]]
 file = "kubejs/server_scripts/mods/chimes.js"
-hash = "c086fae9e335d18597902991d81c10e4c17707a6459422ad6e59d224663ee5f1"
+hash = "492c64abdf879b5f8bcc65d3e3986769cb78bbfc663920ea9ddfbf6a25b2f7af"
 
 [[files]]
 file = "kubejs/server_scripts/mods/chisel.js"
-hash = "d890d17baaf92c6de80fb4b4e633e7da040016093828d86a7a31f7feb05f9d34"
+hash = "836fb3e410fe5c53c7a8845ed0afc9d9a62fdd85a00709571376217e77e83758"
 
 [[files]]
 file = "kubejs/server_scripts/mods/create.js"
-hash = "b50e9e3d23aa7d233bff644da89e026c743e05e99ca9c2eaca9f51e1923e10c1"
+hash = "626486d33ef03af2e854aaef914638adf02bdd536f77605db3516c785f597afc"
 
 [[files]]
 file = "kubejs/server_scripts/mods/create/compacting.js"
-hash = "d76319207a9839b33a0f6799fad9ad4fe52bb8bd8250ec5235d82144d2a117ee"
+hash = "803ef42df6a2d9b3fe22069d8637a586e8999287b54f05cc998fcc07cfb56174"
 
 [[files]]
 file = "kubejs/server_scripts/mods/create/crushing.js"
-hash = "c887aa7382e5fbf7fb84374f05dceb467101d22723e61528d7e18cc49c3176eb"
+hash = "7f3848e7f57d22c49d0d6be1c448ebf3f44ee603eac784b62ba21dd42c25361f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/create/mixing.js"
-hash = "4bcf3d21af8d3d909372c4aac0474c4f2a87e1ceedfb03ada752a0fbfd9af43c"
+hash = "e672be1af94e0dd2bb6c56b036012ba4766c17ae0ba19c7232f73396ee2949bb"
 
 [[files]]
 file = "kubejs/server_scripts/mods/create/pressing.js"
-hash = "2e0192c7fac4b625a7d958a202dbbbd2687a1f199b3f29dd622886a1cbac5568"
+hash = "43930904486954346a73bd4ab0356831c9626dbf36d5d97fc822535118f70f34"
+
+[[files]]
+file = "kubejs/server_scripts/mods/create/recipe_helper.js"
+hash = "aab9740f579351ab0699825ebc8b9551cb4b27db9d29ab0a0b31937d13241fba"
 
 [[files]]
 file = "kubejs/server_scripts/mods/create/splashing.js"
-hash = "09f07f05ca1d4fa4d1b1a20dec7b507d3d4e8619e17c3bc0d47d846cdfd88c6f"
+hash = "e16b435b25ee63e64fbbe5b3ee13842b7e2194ac87164d3fde8db850e705e6d7"
 
 [[files]]
 file = "kubejs/server_scripts/mods/createaddition.js"
-hash = "36429f1cf64c145654715af0f0a17b66ffb8650d2310db27c03f5a467d30fe4c"
+hash = "8b0fea34f4a01edb8be34cda14d410f7db013d24492d3c1d96c02bca89e87605"
 
 [[files]]
 file = "kubejs/server_scripts/mods/dankstorage.js"
-hash = "c615af01b8cc35ea4f349913aaf50ac55842a2cca22d150255cefa5b575b48d4"
+hash = "801e0268497e5310fccd7bf9d43af75166780936d47dc769b7fb47cb4f91d1e8"
 
 [[files]]
 file = "kubejs/server_scripts/mods/dustrial_decor.js"
-hash = "87c46d2a73791d559303cdfb9734a1c8ec50840e14efee51613c8f14b2950920"
+hash = "5d0c5f43fdd7072aedb4f45e60346862904e6685650e7e37f750e95d38efd378"
 
 [[files]]
 file = "kubejs/server_scripts/mods/enhancedworkbenches.js"
-hash = "b1eeb8348779d6b194af99d4508dd1b30a68a1763efdcdaea0fa4576b83e2cc6"
+hash = "dd19c5a5b64dc9cf8225917b23e9fff97fe4be071ecfa4c180ee88e728faab3d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/expandeddelight.js"
-hash = "8724e1ca505e52ecb404aba52236077b45e232f860399b8194edd039ff0573dc"
+hash = "107cf065afc7424f26fb54100bb11f2d1c1069bf23caac48523a897c054d4d8e"
 
 [[files]]
 file = "kubejs/server_scripts/mods/explorerscompass.js"
-hash = "18267cd882c025b7fafb0deb0dc8cdbab0964ba041b79ab915d593b81485cea6"
+hash = "71a17a49f830d87073c58112a5e7e2aa7eea7e92957a63a15260ebe3570b8151"
 
 [[files]]
 file = "kubejs/server_scripts/mods/extended_drawers.js"
-hash = "4af2fe2920099115ae41e3c8a9b778a60f9c5117b45460da974251b6b16cd162"
+hash = "385b43392ac8b120e22d02f174b610a8c90edb73916219bc8c5bcde2d1f87960"
 
 [[files]]
 file = "kubejs/server_scripts/mods/farmersdelight.js"
-hash = "c2b2394bfba02bae900b4e6dc99e240fa619bdb74a456d267c232e5fee36d543"
+hash = "5e021e126ea9081112e489e2db141cf6bdc9a65338748a7a2f2573799a54960e"
 
 [[files]]
 file = "kubejs/server_scripts/mods/geocluster.js"
-hash = "8eda2309276061f0a891415f3c8785dbeb6d8cd5328a8230343b1c949e24e0a5"
+hash = "a1188ea631edd400956351509dde5d80d996a2d5ec78f124046c2563889a506d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/giselle_addon.js"
-hash = "3d4306ca74b4ed9aa47ec186123aad005f85e7b649de2699660cf667841fd98c"
+hash = "b1c8f7793099643a25892c503e075ff2a8876d7b4c30e2075360b09b1285a208"
 
 [[files]]
 file = "kubejs/server_scripts/mods/inmis.js"
-hash = "97228652b19b031a4aef0ed91c4db1d65cf70db81148ac1d1b01aef749c23f21"
+hash = "3a088e1d32d0885d14c6022bc4fc50d70348a4f3b6afb32b66aa19a33c040092"
 
 [[files]]
 file = "kubejs/server_scripts/mods/ironchests.js"
-hash = "fad36b2e13d31923f31c83ed23c35e883ab5e7afac27397b935a2ad21a3fc271"
+hash = "38cc1f40306d31d6b212bdded75fb02dbc057be1322990e0846936ff95f88d22"
 
 [[files]]
 file = "kubejs/server_scripts/mods/kibe.js"
-hash = "5df8956450eba876361399d80fa3adaa88e8f1d7863e475710a0de5967f7e988"
+hash = "4f0ad8cb9b831ccb2fe3f042d5930f08db1507850821fefada1b98d25d94abbe"
 
 [[files]]
 file = "kubejs/server_scripts/mods/kube.js"
-hash = "ef522dd9a390e3573d1b6edf338671ca2ace28befa0972cc8c51f767af317047"
+hash = "9c593f4745c8d5f1f689fb392197084516082043dd9d92e24596afb7fec92a8b"
 
 [[files]]
 file = "kubejs/server_scripts/mods/lumberaxe.js"
-hash = "3e62bd63b333a2ff3222f58fe10e3f959c9969ecb7f1856ff7591296d7ba6012"
+hash = "3bf33db6e277b5e616e2889be1f7207c402167f724ef59cdbd617a06ea59e383"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization.js"
-hash = "fab99563cd9420a5d6dc6f747420fe952567959747ccd6eba9028d7690037d87"
+hash = "30b038adcd6f29307cb8a31f001cf3b277cc34598c4cb7ea629e2a1a0b90b55f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/alloy_smelter.js"
-hash = "ef80de16ad859515956ee1685205c2074302e318ca5e10804648f1a272e8f5f3"
+hash = "6888b463950d1028c0370c9e1194245aca9a1c7e6720b2b2ffe5394fabcbedba"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/assembler.js"
-hash = "97a4a5fd3ae90700d9bdc40c6f5897f8547dd240b83acb844ae6f64b5887a105"
+hash = "5a92acdb5b7af5d5b475be3a840a6ee4a89a3ea96018ed1a88ee7b62fd552798"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/blast_furnace.js"
-hash = "5dacd7e755b3e9d6d506e99bfe75c0394521f8f759e5d957b3d4b22e4611dd1e"
+hash = "96d3d07e9d4f727bdbaa0ee5a17bb4fec14e775c0d544e55d657498fb40a680c"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/boss_crusher.js"
-hash = "3a3e6afb87c28f55e1eefacc8a57885186aad0a36aee89638a3da7085a5e2540"
+hash = "0466f2bab8eb822ccef8fb6da20e496526a202b1f5462b2f135cc4caee53e508"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/centrifuge.js"
-hash = "5d5dfd342f39c2cf1a912c88dba076820bec0b88699eff9346d9da61897d9093"
+hash = "00787623f3d33fbed9aaafbd3b1027069e240d97226d35ec5b293041cf86647d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/chemical_reactor.js"
-hash = "b0bdac1f0866ff5e609054a5259dd2df3de721ee7147340d815769404dfa3b07"
+hash = "a34f9e6d6874f803fa0f4f47050e9cd3d4a5f87d580e9f93d6a68785dc842603"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/compressor.js"
-hash = "52dfd6697234fd039f0fab1646019dc126360bd149543cd0079e637020fc0678"
+hash = "e20322599b7cc74668a1c4c16623a80356d44a4da8e7e58664051e91c21d4d8b"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/core_drill.js"
-hash = "a5bc40087f322e282b7b2daaa9bfa6296675f13cce295e12f2fb9b0796b22d3a"
+hash = "60e1df77b0e269ae9e11cdc642bf162e2e5d1eb8afda6ab4b1dc3470b5843fd3"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/cutting_machine.js"
-hash = "089e6e7fbb29de0ff8cc12709b1bd091006d6f4286244c48ce9a360dab513b36"
+hash = "aee01f25c3ad48f5036bf71af95218cef3b9013533c1686e1f3cf86c119a6745"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/distillation_tower.js"
-hash = "08f9e2ac99976a6de32d6c1958b0f4bf6205a820d13a4964c1770056c7313e5f"
+hash = "04f8bdf423d2f17d814224c46f0ca95a811b18e941d67809921f1b4feee5b5aa"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/distillery.js"
-hash = "1ae61e8f45341a606a279d57f49ce41bec693a28a98889f136afd59394217af2"
+hash = "4356602c462eb57af982f24780a1b8ffb25e2aa7bab11012dd087e3897e45bff"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/drilling_rig.js"
-hash = "8cfc72f9f657f93219ddf340685b320b905d3f22626539482341863cd434d3ff"
+hash = "0722c8efd5494f00b660dfae58a6f876a5e6c6fc20ef8a2974654b63534ae6d7"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/electrolyzer.js"
-hash = "32669664c31fab6cad87bec356b8e132fc0c7b1548e4b5df5aef02844f173366"
+hash = "4ab7ad9c73f07dd18d38deda22e46e3ac7f0573cb397187995d461da615b4bb4"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/forge_hammer.js"
-hash = "afd4d9e8e6292dae96fe8dde4054c0440d4f2807881ea8a15cc9a6f62df63153"
+hash = "4ce0710f9c5a63cfa17cfd1c0c8560923d0060ad65d8373d923ad73df39a0695"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/fusion_reactor.js"
-hash = "b0d182e7574b764592306becdf3625bf4f3327a240ee9b6c56b11e553c0c8de6"
+hash = "b6485780900162c48de04bad95a517b8ff9f314cac824d55ff2835ee5355f95d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/greenhouse.js"
-hash = "aeaa0090a801c4f3520ca1bbab40a55432a54ae05fb6d7532f83168980f3bc94"
+hash = "9aa511092069c315405f34e0834fa4196513249d288689d1536f270d4cd96e89"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/heat_exchanger.js"
-hash = "1e71c80bd60123e7c8b57d62d6bc76f5213ee6163024132fed7c4a68af468a32"
+hash = "5d2f099f36bd619b60f1db6330da86f23ae30d8f2e85325f932453374b1e929f"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/implosion_compressor.js"
-hash = "bd89013980956ea04a751fbb7122b3d8b5246a749737478a9c024eeeb77696e2"
+hash = "e7597129332e92233c7c7c7f102bafbace102c41b6892863304b279357b445e7"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/large_chemical_reactor.js"
-hash = "e65aea1ea162d7a18b2743a9955252490dd3a12bdeaf696eeb3b8905d3b08f2b"
+hash = "92953e5bef4ebe0ba397681012a6639002eccf74c72973e43c873f0c46092b70"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/large_steam_furnace.js"
-hash = "1124203c1143d5efdd535f4239fbdc38cf9cde1b43680e34090ea3dcb04f0060"
+hash = "d84610cf5e726265899434550383b4edb254a0cc2138b79f0604210e3db9e70b"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/large_steam_macerator.js"
-hash = "80888b2e1bfab3c26d14b6688da2cb47d7506ef2528b7534f6175befc63aab2e"
+hash = "98cd929ad8cb951db7fda0813973233b4d7fc5c8f1f3c7f39436c1673f53bff2"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/laser_engraver.js"
-hash = "2e6573fdd536b36f542ee2b95f9fdb8c0f65301428139857ba95620d29d015d8"
+hash = "892bd1d0d088af660396d1b971962b7e62bc545c4e12999e51a416ed300fab0b"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/macerator.js"
-hash = "928f95399dbf964ab1f1f32fa9522aaffffbca6fa340a5f1abde46c130a4faa6"
+hash = "d02ceb7e4347e1baa39a88b16d226e236e39457f365ed5de3626fd95d7b43e35"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/mega_smelter.js"
-hash = "82c35055c4f67ce9c1c22eb08ab7cb10cb00544f4debdfe65fe5a9b2dbc68c68"
+hash = "3d693d35bf97e40668892b9773424a4cc4d855d4f9957f81d223f2549f63ee98"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/mixer.js"
-hash = "baffae4e757ae72ffae24147b080e3b8118fd1ab9c17cccdf9b668de8a453049"
+hash = "ec81ef7aa44513de4a58d4dfdb7dc347c1b004588b54f5e38dd06b01aa8bc2b4"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/mob_crusher.js"
-hash = "188b020d62e365172acd0dbe0c4330dcc1362f36311559e5a60f75cdb7d9de4b"
+hash = "5e4adee89d474f47138304729855dd38629eaa8ccd5e27defdc23133ce23574b"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/packer.js"
-hash = "a044450e5f716f9e6adc5903d5f43096f171fbd4efdd7c2a031ea09ec53654b7"
+hash = "25019ac7c112076a0d09ec46109c87c2bab3973b57d7da8cc5382f6150cd544d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/photosynthetic_chamber.js"
-hash = "08a691706e2cbad3cd7989e3af1b91dc0764fb5c7e5668ccf118e0cbdc76a47e"
+hash = "2acaf4d4eb7684e783d6afc815ca2449963c78707fd92f69e656e9da1459634b"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/pyrolyse_oven.js"
-hash = "a55273ba22194e65a0927c1344414fbbf5f5d4efd82bb906f917852b1f21fec9"
+hash = "4ed3581f8ed3a9262ae985423a4fddb1d1ae2b9ead6b125fd6b69b76eaba39ca"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/quarry.js"
-hash = "e67d5fddfe83a5e1dfd93f8640d9970a2b84c0fa3318af0667687d6d0c19ee56"
+hash = "6a879a081b23a4987e406d259297806f57eeb22c0398aefc6242d43995fe033e"
+
+[[files]]
+file = "kubejs/server_scripts/mods/modern_industrialization/recipe_helper.js"
+hash = "4da1637918076e4f9ef7997334fe8cb3347b91b10684dc548a0df8066667205e"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/rocket_part_assembler.js"
-hash = "573c7c3978bef2ba6f93fd0d1f8ca2c1f96fe2ebf0f183150794cf8ef6d661ad"
+hash = "04fd7ff511befeb5da084d8c39e1e3197df8bb818c9b60eb9f2139f762da5551"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/singularity_forge.js"
-hash = "5e5e18ce56469c19bbe7d61a00abfb0275f6fa8f1e5abcb94e571c31cf8ac069"
+hash = "97f484af5f23787694dd7e57eeb9baf2c3f158be9970603165840b3128a15d59"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/space_probe_launcher.js"
-hash = "2a7c138ae6159e24753136e3b77cc26150d4f80d541e114ea437354c5cdbc03d"
+hash = "ac8ba81c21b25d02a3b6b3c21f5f9383214cea8fa7c8843931379cef874ca64d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/modern_industrialization/vacuum_freezer.js"
-hash = "81b4f57e9f370a7364a6cf3755ead60425bc98cf29c4864cb0d050cfd0453845"
+hash = "17f6f3d42a219c5278aae66f6f4c6431b303934febe0410b1aa455dd62d31a35"
 
 [[files]]
 file = "kubejs/server_scripts/mods/moderndynamics.js"
-hash = "dd75189c9c3178d9306fa133c393041e4e3a77e2862ef582d6a8fef94ad62a4d"
+hash = "184abc6df918f2e9e93ac8f9d1c37823b5f0dfd5bcc1f02b1660d44b7bc9c219"
 
 [[files]]
 file = "kubejs/server_scripts/mods/pineapple_delight.js"
-hash = "c8e1d14ba77b9863c857506bf7d1d5492e52834bdee9219c6ff400a40b6ac5a3"
+hash = "c12ee9450b1ed5d94f6e03a2a707098cfa52537b2eddebfaf092aeee9a75dee4"
 
 [[files]]
 file = "kubejs/server_scripts/mods/promenade.js"
-hash = "0e0235b81ad9d9a73f2eb976a42957f6f47348c143c5c1bc22ac7b33b9a7696f"
+hash = "fdab00d3ac88625d053ae9d95f71afe9801334e359cdd9e7fdcf107869269674"
 
 [[files]]
 file = "kubejs/server_scripts/mods/quarrymod.js"
-hash = "4ca4b5f3a2ac43ddb93c6a16759198d4f1b348c0620ff450a3d045db2e8e9006"
+hash = "3dbf3b5350a4c7abaf4d3ca21fcb062df9f6f071821d9f5a3570f27632fbb7a6"
 
 [[files]]
 file = "kubejs/server_scripts/mods/scannable.js"
-hash = "240b0e59eec1e799145a369524e174387bebc86eaaef0c9b161da7089499033a"
+hash = "571937b58502a89ef011af306b6408781eb2b8e95e2f9f2facc263690916c564"
 
 [[files]]
 file = "kubejs/server_scripts/mods/spectrum.js"
-hash = "e88b46204b965f26b956a86aeed17b7fc5df5145aac996c52ca2ce8f176a0d13"
-
-[[files]]
-file = "kubejs/server_scripts/mods/spellblade.js"
-hash = "7d9a72a41dda6206eb8b8f8b6fff9ea7910d2594920cefe000bb5d587cf89752"
+hash = "2a8a327ccb7d8681cfa84e29fde36dac36d0c8fbef4f4e6492ce7738dcf26790"
 
 [[files]]
 file = "kubejs/server_scripts/mods/spiceoflife.js"
-hash = "2d5b68fcdb0e86eb9fc8ba6bf4fb389e1b38a21be773962a5f314aefc1c50612"
+hash = "5fce0d73f696fc5b93e3f21b6663d1482cb72136a4afa869668e109ea08915a5"
 
 [[files]]
 file = "kubejs/server_scripts/mods/staff_of_traveling.js"
-hash = "26dc6eae4ba82e11d7277c3e0da347b83b8f97631e300619c94d29229a32f5c7"
+hash = "313370c0df08155782162bfa52b14fbd3e392ed73c8f6a98817309f9c5df0697"
 
 [[files]]
 file = "kubejs/server_scripts/mods/tech_enhanced.js"
-hash = "c0e7b49c1aa226dc1db304348efc5767bf5b4e938674fb44816d80a0d871ccec"
+hash = "a8880bab9bd80ad964bc32187fbb48953de8ec7414ce9ecad6259dde300e7ce3"
 
 [[files]]
 file = "kubejs/server_scripts/mods/techreborn.js"
-hash = "641b4b3cfee40731041809775b5e9ed08639f40385aecbabd43168e35373d041"
+hash = "055d7deb4c231f4f76b4583fc7ed57c7820618b33f1c00bde38b83999a5d6f44"
 
 [[files]]
 file = "kubejs/server_scripts/mods/timeinabottle.js"
-hash = "7e9f1715179092788452a1aa9290fa419e273e39ee28cd13e45163737f2e5e4b"
+hash = "ba44708dc5fa65d0a09c56c1929b548e9b0ca234f649d75e7aa49dd014a3fd1a"
 
 [[files]]
 file = "kubejs/server_scripts/mods/toolleveling.js"
-hash = "6d517a010ebc4c2d9a66fe52a7b75ffa3b23d52e011ce2fbead97822b296e663"
-
-[[files]]
-file = "kubejs/server_scripts/mods/twilight_forest.js"
-hash = "683f6bd786f0314c60e217c18ab95fa66bf9d57f502162b1daeca029b42577aa"
+hash = "4b0167559544df672d7916d809aa8383397f4bf5ff3d329af7349af7cd24ceaf"
 
 [[files]]
 file = "kubejs/server_scripts/mods/vanilla-hammers.js"
-hash = "c5e8b5959c910700c4eb9a607635d72d1243a515ccb52ff1eed5f7b4796bb460"
-
-[[files]]
-file = "kubejs/server_scripts/mods/wands.js"
-hash = "c4bdd8e882661c9be14932f74c3466b7a7fde330da5fdca0fea2748a19d39f98"
+hash = "6be5605377b8319ec931d3bd51d772596a242c8fe08e15b3ba562053992bcf02"
 
 [[files]]
 file = "kubejs/server_scripts/mods/waystones.js"
-hash = "7e8a9529bb66002033b85da8ecd89d6d4f89772fe17989060eb4ec382ca3ac23"
+hash = "b8b6302966cc3b18f23b64301d3cf84ebcc50727b4447eb80f5b7cb24a04d89d"
 
 [[files]]
 file = "kubejs/server_scripts/mods/wirelesschargers.js"
-hash = "7f5a53ca6edab9d337095bf9028023953fde18f8b12284cfa66d110512a6b562"
-
-[[files]]
-file = "kubejs/server_scripts/mods/wizards.js"
-hash = "c7b6de72e18e1835150785b811032a9fc74ae47796dd0694bde0df1ec23ebf3a"
+hash = "b3a3de172471e36d60d58ec52a1f0221e026d4bf68793bde098eecb210f0f474"
 
 [[files]]
 file = "kubejs/server_scripts/mods/xps.js"
-hash = "78e0cf8cb1b5ce367b30ebff27b3881ec7a6b27786a885209f59db60228df496"
+hash = "9650af4d4364697a5393274f7852beeba46b6fad954051801288505e7a73f79e"
 
 [[files]]
 file = "kubejs/server_scripts/mods/yigd.js"
-hash = "2a8040a1d4d57df40d14cd6ef6e2e5bbe46d54d41b13ef256d1a832f5de630d3"
-
-[[files]]
-file = "kubejs/server_scripts/silent_reload.js"
-hash = "b1491bf459ce1b208788b255611ea3cfa247b925940815e1a308192af26aac59"
+hash = "c0bb99f5faa82da2765eb01a50eca900575c6dc48b2a1824eee0f0c5a81d7dfb"
 
 [[files]]
 file = "kubejs/server_scripts/starting_items.js"
-hash = "7206b71c7bc4f709ed2540c1bc96f506f2d15ae803ec0eccea331c76e4e187ce"
+hash = "6653b29a2568a512d8d215c1a621f8551e1b54cb787a78f3b4817783a55aa042"
 
 [[files]]
 file = "kubejs/server_scripts/statech.js"
-hash = "49877c6e226e1b117da47a4a4a9c567b25d7aba68b14afd763f37dff4ff8c43d"
+hash = "17ad9c2be02bb40ea04c0b5b8b75fd6e5b1ad2d1bd92054528f1a8e8447e06a4"
 
 [[files]]
 file = "kubejs/server_scripts/statech_food.js"
-hash = "9ab74cfe2b2e84fbf66ed70e5d09a0f6d861c23f8f82ccd535687a08fdea1c5a"
+hash = "b704a457da5f67cf6098dfdce912a04e82636546f475643324d9e389c83e6b39"
 
 [[files]]
 file = "kubejs/server_scripts/vanilla.js"
-hash = "b5f1e7972141356f7505263bc67ae5d39cb0b04fba7243fcba4032ade1d89b33"
+hash = "d223be09b846b603142031b8bbb7d68917d4742f4908b5feeb50c28d6591b917"
 
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/ebf_tiers.js"
@@ -3578,7 +3614,7 @@ hash = "86eaa0bf3706ad8bc39999dbfdba906a2a42828483ba41b8449b1448c3823f7c"
 
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/fluids.js"
-hash = "67bb95b8bdf3ad04f3b26f2d2cb7e407c230f53375cfcb6284d0a40935ef6c80"
+hash = "dfd16be14f86082389b3b013926cf50200a4dd37d317d9e604ebb92984cf9a0c"
 
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/fuels.js"
@@ -3606,7 +3642,7 @@ hash = "ad3abae34f5e2f95b283432eaf76a4471d08aeda17379d6b908c3b029827691f"
 
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/materials.js"
-hash = "59ce412df97c1a741f81eb5039f63e99f6edf1123e2bf547a95e21c8746394f1"
+hash = "eaec6b5a36f9687ebc2a3544274ac541009e4daef524953653ddc0d2cdb8f1fe"
 
 [[files]]
 file = "kubejs/startup_scripts/modern_industrialization/multiblocks/blood_generator.js"
@@ -3682,7 +3718,7 @@ hash = "7e176f807da66268053a15400e9e926b6405e746ea93256b38dfcdff17ff8001"
 
 [[files]]
 file = "kubejs/startup_scripts/statech/misc.js"
-hash = "ee13baaa361bcbf4f2aeeace486dfce6395cf704a779188e63611f5ecc14b439"
+hash = "f90901993a50c77c9ae5ade43b7149e501024fd0c0499b754badc56d8a287c6a"
 
 [[files]]
 file = "kubejs/startup_scripts/statech/mob_models.js"
