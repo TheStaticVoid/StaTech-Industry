@@ -3,13 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:ae2/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let wt = (id) => `ae2wtlib:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
     // -- AE2 REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -75,16 +70,16 @@ ServerEvents.recipes(e => {
         wt('magnet_card'),
         ae('network/blocks/energy_dense_energy_cell')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
+    REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
 
     // -- REMOVE ALL ENDER DUST OUTPUTS -- //
-    e.remove({ output: ae('ender_dust') });
+    event.remove({ output: ae('ender_dust') });
 
     // -- REMOVE ALL INSCRIBER RECIPES -- // 
-    e.remove({ type: ae('inscriber') });
+    event.remove({ type: ae('inscriber') });
 
     // -- CONTROLLER -- //
-    e.shaped(ae('controller'), [
+    event.shaped(ae('controller'), [
         'EFE',
         'CHC',
         'LFP'
@@ -100,7 +95,7 @@ ServerEvents.recipes(e => {
     .id(st('controller'));
 
     // -- CHARGER -- //
-    e.shaped(ae('charger'), [
+    event.shaped(ae('charger'), [
         'SCS',
         'B  ',
         'SCS'
@@ -113,7 +108,7 @@ ServerEvents.recipes(e => {
     .id(st('charger'));
 
     // -- BLANK PATTERN -- //
-    e.shaped(ae('blank_pattern'), [
+    event.shaped(ae('blank_pattern'), [
         'QGQ',
         'GCG',
         'SSS'
@@ -127,7 +122,7 @@ ServerEvents.recipes(e => {
     .id(st('blank_pattern'));
 
     // -- ME SECURITY TERMINAL -- //
-    e.shaped(ae('security_station'), [
+    event.shaped(ae('security_station'), [
         'SCS',
         'FOF',
         'SES'
@@ -142,7 +137,7 @@ ServerEvents.recipes(e => {
     .id(st('security_station'));
 
     // -- ME QUANTUM RING -- //
-    e.shaped(ae('quantum_ring'), [
+    event.shaped(ae('quantum_ring'), [
         'SLS',
         'ECF',
         'SLS'
@@ -157,7 +152,7 @@ ServerEvents.recipes(e => {
     .id(st('quantum_ring'));
 
     // -- SPATIAL IO PORT -- //
-    e.shaped(ae('spatial_io_port'), [
+    event.shaped(ae('spatial_io_port'), [
         'GGG',
         'FIF',
         'SES'
@@ -172,7 +167,7 @@ ServerEvents.recipes(e => {
     .id(st('spatial_io_port'));
 
     // -- ME DRIVE -- // 
-    e.shaped(ae('drive'), [
+    event.shaped(ae('drive'), [
         'SES',
         'FHF',
         'SES'
@@ -186,7 +181,7 @@ ServerEvents.recipes(e => {
     .id(st('drive'));
     
     // -- ME CHEST -- //
-    e.shaped(ae('chest'), [
+    event.shaped(ae('chest'), [
         'GTG',
         'F F',
         'SCS'
@@ -201,7 +196,7 @@ ServerEvents.recipes(e => {
     .id(st('chest'));
 
     // -- ME INTERFACE -- //
-    e.shaped(ae('interface'), [
+    event.shaped(ae('interface'), [
         'SGS',
         'A F',
         'SGS'
@@ -215,7 +210,7 @@ ServerEvents.recipes(e => {
     .id(st('interface'));
 
     // -- CELL WORKBENCH -- //
-    e.shaped(ae('cell_workbench'), [
+    event.shaped(ae('cell_workbench'), [
         'WCW',
         'SHS',
         'SSS'
@@ -229,7 +224,7 @@ ServerEvents.recipes(e => {
     .id(st('cell_workbench'));
 
     // -- ME IO PORT -- //
-    e.shaped(ae('io_port'), [
+    event.shaped(ae('io_port'), [
         'GGG',
         'DFD',
         'SLS'
@@ -244,7 +239,7 @@ ServerEvents.recipes(e => {
     .id(st('io_port'));
 
     // -- MATTER CONDENSER -- //
-    e.shaped(ae('condenser'), [
+    event.shaped(ae('condenser'), [
         'SGS',
         'GFG',
         'SGS'
@@ -257,7 +252,7 @@ ServerEvents.recipes(e => {
     .id(st('condenser'));
 
     // -- ENERGY ACCEPTOR -- //
-    e.shaped(ae('energy_acceptor'), [
+    event.shaped(ae('energy_acceptor'), [
         'SGS',
         'GCG',
         'SGS'
@@ -270,7 +265,7 @@ ServerEvents.recipes(e => {
     .id(st('energy_acceptor'));
 
     // -- CRYSTAL GROWTH ACCELERATOR -- // 
-    e.shaped(ae('quartz_growth_accelerator'), [
+    event.shaped(ae('quartz_growth_accelerator'), [
         'SFS',
         'GBG',
         'SFS'
@@ -284,7 +279,7 @@ ServerEvents.recipes(e => {
     .id(st('quartz_growth_accelerator'));
 
     // -- CRAFTING UNIT -- //
-    e.shaped(ae('crafting_unit'), [
+    event.shaped(ae('crafting_unit'), [
         'SCS',
         'FLF',
         'SCS'
@@ -298,7 +293,7 @@ ServerEvents.recipes(e => {
     .id(st('crafting_unit'));
 
     // -- ME PATTERN PROVIDER -- //
-    e.shaped(ae('pattern_provider'), [
+    event.shaped(ae('pattern_provider'), [
         'SCS',
         'A F',
         'SCS'
@@ -312,7 +307,7 @@ ServerEvents.recipes(e => {
     .id(st('pattern_provider'));
 
     // -- MOLECULAR ASSEMBLER -- //
-    e.shaped(ae('molecular_assembler'), [
+    event.shaped(ae('molecular_assembler'), [
         'SGS',
         'AWF',
         'SGS'
@@ -327,7 +322,7 @@ ServerEvents.recipes(e => {
     .id(st('molecular_assembler'));
 
     // -- SPATIAL ANCHOR -- //
-    e.shaped(ae('spatial_anchor'), [
+    event.shaped(ae('spatial_anchor'), [
         'PPP',
         'FCF',
         'SES'
@@ -342,7 +337,7 @@ ServerEvents.recipes(e => {
     .id(st('spatial_anchor'));
 
     // -- ENTROPY MANIPULATOR -- //
-    e.shaped(ae('entropy_manipulator'), [
+    event.shaped(ae('entropy_manipulator'), [
         'FC ',
         'ES ',
         '  S'
@@ -356,7 +351,7 @@ ServerEvents.recipes(e => {
     .id(st('entropy_manipulator'));
 
     // -- CHARGED STAFF -- //
-    e.shaped(ae('charged_staff'), [
+    event.shaped(ae('charged_staff'), [
         'C  ',
         ' S ',
         '  S'
@@ -368,7 +363,7 @@ ServerEvents.recipes(e => {
     .id(st('charged_staff'));
 
     // -- COLOR APPLICATOR -- //
-    e.shaped(ae('color_applicator'), [
+    event.shaped(ae('color_applicator'), [
         'FS ',
         'SC ',
         '  E'
@@ -382,7 +377,7 @@ ServerEvents.recipes(e => {
     .id(st('color_applicator'));
 
     // -- MATTER CANNON -- //
-    e.shaped(ae('matter_cannon'), [
+    event.shaped(ae('matter_cannon'), [
         'SSF',
         'CE ',
         'S  '
@@ -396,7 +391,7 @@ ServerEvents.recipes(e => {
     .id(st('matter_cannon'));
 
     // -- BIOMETRIC CARD -- //
-    e.shaped(ae('biometric_card'), [
+    event.shaped(ae('biometric_card'), [
         'ESS',
         'GRG'
     ],
@@ -409,7 +404,7 @@ ServerEvents.recipes(e => {
     .id(st('biometric_card'));
 
     // -- MEMORY CARD -- // 
-    e.shaped(ae('memory_card'), [
+    event.shaped(ae('memory_card'), [
         'CSS',
         'GRG'
     ],
@@ -422,7 +417,7 @@ ServerEvents.recipes(e => {
     .id(st('memory_card'));
 
     // -- BASIC CARD -- //
-    e.shaped('2x ' + ae('basic_card'), [
+    event.shaped('2x ' + ae('basic_card'), [
         'GS ',
         'RCS',
         'GS '
@@ -436,7 +431,7 @@ ServerEvents.recipes(e => {
     .id(st('basic_card'));
 
     // -- ADVANCED CARD -- //
-    e.shaped('2x ' + ae('advanced_card'), [
+    event.shaped('2x ' + ae('advanced_card'), [
         'DS ',
         'RCS',
         'DS '
@@ -450,7 +445,7 @@ ServerEvents.recipes(e => {
     .id(st('advanced_card'));
 
     // -- ME ITEM CELL HOUSING -- //
-    e.shaped(ae('item_cell_housing'), [
+    event.shaped(ae('item_cell_housing'), [
         'GRG',
         'R R',
         'SSS'
@@ -463,7 +458,7 @@ ServerEvents.recipes(e => {
     .id(st('item_cell_housing'));
 
     // -- WIRELESS RECEIVER -- // 
-    e.shaped(ae('wireless_receiver'), [
+    event.shaped(ae('wireless_receiver'), [
         ' F ',
         'SQS',
         ' S '
@@ -476,7 +471,7 @@ ServerEvents.recipes(e => {
     .id(st('wireless_receiver'));
 
     // -- WIRELESS BOOSTER -- // 
-    e.shaped('2x ' + ae('wireless_booster'), [
+    event.shaped('2x ' + ae('wireless_booster'), [
         'FQE',
         'SSS'
     ],
@@ -489,7 +484,7 @@ ServerEvents.recipes(e => {
     .id(st('wireless_booster'));
 
     // -- VIEW CELL -- //
-    e.shaped(ae('view_cell'), [
+    event.shaped(ae('view_cell'), [
         'GRG',
         'RQR',
         'SSS'
@@ -503,7 +498,7 @@ ServerEvents.recipes(e => {
     .id(st('view_cell'));
 
     // -- 1K ME ITEM STORAGE CELL -- //
-    e.shaped(ae('item_storage_cell_1k'), [
+    event.shaped(ae('item_storage_cell_1k'), [
         'GRG',
         'RCR',
         'SSS'
@@ -517,7 +512,7 @@ ServerEvents.recipes(e => {
     .id(st('item_storage_cell_1k'));
 
     // -- 4K ME ITEM STORAGE CELL -- //
-    e.shaped(ae('item_storage_cell_4k'), [
+    event.shaped(ae('item_storage_cell_4k'), [
         'GRG',
         'RCR',
         'SSS'
@@ -531,7 +526,7 @@ ServerEvents.recipes(e => {
     .id(st('item_storage_cell_4k'));
 
     // -- 16K ME ITEM STORAGE CELL -- //
-    e.shaped(ae('item_storage_cell_16k'), [
+    event.shaped(ae('item_storage_cell_16k'), [
         'GRG',
         'RCR',
         'SSS'
@@ -545,7 +540,7 @@ ServerEvents.recipes(e => {
     .id(st('item_storage_cell_16k'));
 
     // -- 64K ME ITEM STORAGE CELL -- //
-    e.shaped(ae('item_storage_cell_64k'), [
+    event.shaped(ae('item_storage_cell_64k'), [
         'GRG',
         'RCR',
         'SSS'
@@ -559,7 +554,7 @@ ServerEvents.recipes(e => {
     .id(st('item_storage_cell_64k'));
 
     // -- 256K ME ITEM STORAGE CELL -- //
-    e.shaped(ae('item_storage_cell_256k'), [
+    event.shaped(ae('item_storage_cell_256k'), [
         'GRG',
         'RCR',
         'SSS'
@@ -573,7 +568,7 @@ ServerEvents.recipes(e => {
     .id(st('item_storage_cell_256k'));
 
     // -- ME FLUID CELL HOUSING -- //
-    e.shaped(ae('fluid_cell_housing'), [
+    event.shaped(ae('fluid_cell_housing'), [
         'GRG',
         'R R',
         'SSS'
@@ -586,7 +581,7 @@ ServerEvents.recipes(e => {
     .id(st('fluid_cell_housing'));
 
     // -- 1K ME FLUID STORAGE CELL -- //
-    e.shaped(ae('fluid_storage_cell_1k'), [
+    event.shaped(ae('fluid_storage_cell_1k'), [
         'GRG',
         'RCR',
         'SSS'
@@ -600,7 +595,7 @@ ServerEvents.recipes(e => {
     .id(st('fluid_storage_cell_1k'));
 
     // -- 4K ME FLUID STORAGE CELL -- //
-    e.shaped(ae('fluid_storage_cell_4k'), [
+    event.shaped(ae('fluid_storage_cell_4k'), [
         'GRG',
         'RCR',
         'SSS'
@@ -614,7 +609,7 @@ ServerEvents.recipes(e => {
     .id(st('fluid_storage_cell_4k'));
 
     // -- 16K ME FLUID STORAGE CELL -- //
-    e.shaped(ae('fluid_storage_cell_16k'), [
+    event.shaped(ae('fluid_storage_cell_16k'), [
         'GRG',
         'RCR',
         'SSS'
@@ -628,7 +623,7 @@ ServerEvents.recipes(e => {
     .id(st('fluid_storage_cell_16k'));
 
     // -- 64K ME FLUID STORAGE CELL -- //
-    e.shaped(ae('fluid_storage_cell_64k'), [
+    event.shaped(ae('fluid_storage_cell_64k'), [
         'GRG',
         'RCR',
         'SSS'
@@ -642,7 +637,7 @@ ServerEvents.recipes(e => {
     .id(st('fluid_storage_cell_64k'));
 
     // -- 256K ME FLUID STORAGE CELL -- //
-    e.shaped(ae('fluid_storage_cell_256k'), [
+    event.shaped(ae('fluid_storage_cell_256k'), [
         'GRG',
         'RCR',
         'SSS'
@@ -656,7 +651,7 @@ ServerEvents.recipes(e => {
     .id(st('fluid_storage_cell_256k'));
 
     // -- 2^3 SPATIAL STORAGE CELL -- //
-    e.shaped(ae('spatial_storage_cell_2'), [
+    event.shaped(ae('spatial_storage_cell_2'), [
         'GRG',
         'RCR',
         'SSS'
@@ -670,7 +665,7 @@ ServerEvents.recipes(e => {
     .id(st('spatial_storage_cell_2'));
 
     // -- 16^3 SPATIAL STORAGE CELL -- //
-    e.shaped(ae('spatial_storage_cell_16'), [
+    event.shaped(ae('spatial_storage_cell_16'), [
         'GRG',
         'RCR',
         'SSS'
@@ -684,7 +679,7 @@ ServerEvents.recipes(e => {
     .id(st('spatial_storage_cell_16'));
 
     // -- 128^3 SPATIAL STORAGE CELL -- //
-    e.shaped(ae('spatial_storage_cell_128'), [
+    event.shaped(ae('spatial_storage_cell_128'), [
         'GRG',
         'RCR',
         'SSS'
@@ -698,7 +693,7 @@ ServerEvents.recipes(e => {
     .id(st('spatial_storage_cell_128'));
 
     // -- ILLUMINATED PANEL -- //
-    e.shaped(ae('semi_dark_monitor'), [
+    event.shaped(ae('semi_dark_monitor'), [
         ' GQ',
         'SRQ',
         ' GQ'
@@ -712,7 +707,7 @@ ServerEvents.recipes(e => {
     .id(st('semi_dark_monitor'));
 
     // -- IMPORT BUS -- //
-    e.shaped(ae('import_bus'), [
+    event.shaped(ae('import_bus'), [
         ' A ',
         'SPS'
     ],
@@ -724,7 +719,7 @@ ServerEvents.recipes(e => {
     .id(st('import_bus'));
 
     // -- ANNIHILATION PLANE -- //
-    e.shaped(ae('annihilation_plane'), [
+    event.shaped(ae('annihilation_plane'), [
         'SF',
         'AF',
         'SF'
@@ -736,7 +731,7 @@ ServerEvents.recipes(e => {
     })
     .id(st('annihilation_plane'));
 
-    e.shaped(ae('annihilation_plane'), [
+    event.shaped(ae('annihilation_plane'), [
         'FFF',
         'SAS'
     ],
@@ -748,7 +743,7 @@ ServerEvents.recipes(e => {
     .id(st('annihilation_plane_alt'));
 
     // -- FORMATION PLANE -- //
-    e.shaped(ae('formation_plane'), [
+    event.shaped(ae('formation_plane'), [
         'SF',
         'AF',
         'SF'
@@ -760,7 +755,7 @@ ServerEvents.recipes(e => {
     })
     .id(st('formation_plane'));
 
-    e.shaped(ae('formation_plane'), [
+    event.shaped(ae('formation_plane'), [
         'FFF',
         'SAS'
     ],
@@ -772,7 +767,7 @@ ServerEvents.recipes(e => {
     .id(st('formation_plane_alt'));
 
     // -- EXPORT BUS -- //
-    e.shaped(ae('export_bus'), [
+    event.shaped(ae('export_bus'), [
         'SFS',
         ' P '
     ],
@@ -784,7 +779,7 @@ ServerEvents.recipes(e => {
     .id(st('export_bus'));
 
     // -- ME P2P TUNNEL -- //
-    e.shaped(ae('me_p2p_tunnel'), [
+    event.shaped(ae('me_p2p_tunnel'), [
         ' S ',
         'SES',
         'FFF'
@@ -797,7 +792,7 @@ ServerEvents.recipes(e => {
     .id(st('me_p2p_tunnel'));
 
     // -- MAGNET CARD -- //
-    e.shaped(wt('magnet_card'), [
+    event.shaped(wt('magnet_card'), [
         'RAL',
         'ICI',
         'III'
@@ -812,7 +807,7 @@ ServerEvents.recipes(e => {
     .id(st('magnet_card'));
 
     // -- DENSE ENERGY CELL -- //
-    e.shaped(ae('dense_energy_cell'), [
+    event.shaped(ae('dense_energy_cell'), [
         'EEE',
         'EHE',
         'EEE'
@@ -824,10 +819,7 @@ ServerEvents.recipes(e => {
     .id(st('dense_energy_cell'));
 });
 
-ServerEvents.tags('item', e=> {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let ae = (id) => `ae2:${id}`;
-
+ServerEvents.tags('item', event => {
     // Tag all the crafting storages
     const CRAFTING_STORAGE = [
         ae('1k_crafting_storage'),
@@ -836,7 +828,7 @@ ServerEvents.tags('item', e=> {
         ae('64k_crafting_storage'),
         ae('256k_crafting_storage')
     ];
-    CRAFTING_STORAGE.forEach(id => e.add('kubejs:crafting_storage', id) );
+    CRAFTING_STORAGE.forEach(id => event.add(kj('crafting_storage'), id) );
 
     // Tag all the budding blocks
     // Doesn't work in KubeJS :l
@@ -846,8 +838,8 @@ ServerEvents.tags('item', e=> {
         ae('chipped_budding_quartz'),
         ae('damaged_budding_quartz')
     ];
-    BUDDING_BLOCKS.forEach(id => e.add('kubejs:budding_certus', id) );
+    BUDDING_BLOCKS.forEach(id => event.add(kj('budding_certus'), id) );
 
     // -- REMOVE ENDER DUST -- //
-    e.removeAllTagsFrom(ae('ender_dust'));
+    event.removeAllTagsFrom(ae('ender_dust'));
 })

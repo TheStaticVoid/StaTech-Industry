@@ -3,19 +3,14 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:timeinabottle/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let sp = (id) => `spectrum:${id}`;
-    let tb = (id) => `timeinabottle:${id}`;
 
     // Remove the default Time in a Bottle recipe
-    e.remove({id: tb('time_in_a_bottle')});
+    event.remove({id: tb('time_in_a_bottle')});
 
     // -- TIME IN A BOTTLE -- // 
-    e.custom({
+    event.custom({
         type: sp('pedestal'),
         time: 400,
         tier: 'simple',

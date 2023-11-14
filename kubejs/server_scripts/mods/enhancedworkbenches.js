@@ -3,19 +3,17 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:enhancedworkbenches/${id}`;
-    let ew = (id) => `enhancedworkbenches:${id}`;
 
     // -- ENHANCED WORKBENCHES REMOVED RECIPES -- //
     const DELETED_RECIPES = [
         ew('project_table'),
     ];
-    DELETED_RECIPES.forEach(id => e.remove({ id: id }));
+    DELETED_RECIPES.forEach(id => event.remove({ id: id }));
 
     // -- PROJECT TABLE -- //
-    e.shaped(ew('project_table'), [
+    event.shaped(ew('project_table'), [
         'III',
         'PWP',
         'PCP',

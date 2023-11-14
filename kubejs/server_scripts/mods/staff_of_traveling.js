@@ -3,22 +3,18 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:travelstaff/${id}`;
-    let ts = (id) => `travelstaff:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
     // -- STAFF OF TRAVELING REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         ts('travel_anchor'),
         ts('travel_staff')
     ]
-    REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
+    REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
 
     // -- TRAVEL ANCHOR -- //
-    e.shaped(ts('travel_anchor'), [
+    event.shaped(ts('travel_anchor'), [
         'BIB',
         'IPI',
         'BIB'
@@ -31,7 +27,7 @@ ServerEvents.recipes(e => {
     .id(st('travel_anchor'));
 
     // -- TRAVEL STAFF -- //
-    e.shaped(ts('travel_staff'), [
+    event.shaped(ts('travel_staff'), [
         ' PE',
         ' RP',
         'R  '

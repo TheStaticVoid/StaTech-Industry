@@ -3,19 +3,17 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:lumberaxe/${id}`;
-    let la = (id) => `lumberaxe:${id}`;
 
     const REMOVED_RECIPES = [
         la('iron_lumberaxe'),
         la('gold_lumberaxe')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
     // -- IRON LUMBERAXE -- //
-    e.shaped(la('iron_lumberaxe'), [
+    event.shaped(la('iron_lumberaxe'), [
         'PB',
         'PS',
         ' S'
@@ -28,7 +26,7 @@ ServerEvents.recipes(e => {
     .id(st('iron_lumberaxe'));
 
     // -- GOLD LUMBERAXE -- //
-    e.shaped(la('gold_lumberaxe'), [
+    event.shaped(la('gold_lumberaxe'), [
         'PB',
         'PS',
         ' S'
@@ -41,15 +39,13 @@ ServerEvents.recipes(e => {
     .id(st('gold_lumberaxe'));
 });
 
-ServerEvents.tags('item', e => {
-    let la = (id) => `lumberaxe:${id}`;
-
+ServerEvents.tags('item', event => {
     const LUMBERAXES = [
         la('iron_lumberaxe'),
         la('gold_lumberaxe'),
         la('diamond_lumberaxe'),
         la('netherite_lumberaxe')
     ];
-    LUMBERAXES.forEach(id => e.add('kubejs:lumberaxes', id));
-    LUMBERAXES.forEach(id => e.add('c:tools/axes', id));
+    LUMBERAXES.forEach(id => event.add(kj('lumberaxes'), id));
+    LUMBERAXES.forEach(id => event.add('c:tools/axes', id));
 });

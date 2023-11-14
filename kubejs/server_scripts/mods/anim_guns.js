@@ -3,10 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let ag = (id) => `anim_guns:${id}`;
-    
+ServerEvents.recipes(event => {
     // -- ANIM GUNS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         ag('hardened_iron_ingot_from_blasting'),
@@ -18,12 +15,10 @@ ServerEvents.recipes(e => {
         ag('heavy_rifle_cartridge'),
         ag('shotgun_shell')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 });
 
-ServerEvents.tags('item', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let ag = (id) => `anim_guns:${id}`;
+ServerEvents.tags('item', event => {
     // Tag all guns for use in FTB Quests requirement
     const GUNS = [
         ag('pistol_light'),
@@ -42,5 +37,5 @@ ServerEvents.tags('item', e => {
         ag('shotgun_riot'),
         ag('lmg_m60')
     ];
-    GUNS.forEach(id => e.add('kubejs:guns', id));
+    GUNS.forEach(id => event.add(kj('guns'), id));
 });

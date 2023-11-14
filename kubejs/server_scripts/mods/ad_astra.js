@@ -3,16 +3,13 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.tags('worldgen/biome', e => {
+ServerEvents.tags('worldgen/biome', event => {
     // remove the naturally spawning oil wells from the world
-    e.removeAll('ad_astra:has_structure/oil_well_biomes');
+    event.removeAll('ad_astra:has_structure/oil_well_biomes');
 });
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
+ServerEvents.recipes(event => {
     let st = (id) => `statech:ad_astra/${id}`;
-    let ad = (id) => `ad_astra:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
     // -- AD ASTRA REMOVED RECIPES -- //
     const AD_ASTRA_DELETED_ITEMS = [
@@ -62,11 +59,11 @@ ServerEvents.recipes(e => {
         ad('recipes/launch_pad'),
         ad('nasa_workbench/tier_1_rocket')
     ];
-    AD_ASTRA_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
-    e.remove({ type: ad('fuel_conversion') });
+    AD_ASTRA_DELETED_ITEMS.forEach(id => event.remove( {id: id} ));
+    event.remove({ type: ad('fuel_conversion') });
 
     // -- OXYGEN TO AD ASTRA OXYGEN -- //
-    e.custom({
+    event.custom({
         type: ad('oxygen_conversion'),
         input: mi('oxygen'),
         output: ad('oxygen'),
@@ -75,7 +72,7 @@ ServerEvents.recipes(e => {
     .id(st('oxygen'));
 
     // -- BOOSTED DIESEL TO ROCKET FUEL -- //
-    e.custom({
+    event.custom({
         type: ad('fuel_conversion'),
         input: mi('boosted_diesel'),
         output: ad('fuel'),
@@ -84,7 +81,7 @@ ServerEvents.recipes(e => {
     .id(st('fuel'));
 
     // -- TIER 1 ROCKET -- //
-    e.custom({
+    event.custom({
         type: ad('nasa_workbench'),
         ingredients: [
             { ingredient: { item: ad('rocket_nose_cone') } },
@@ -107,7 +104,7 @@ ServerEvents.recipes(e => {
     .id(st('tier_1_rocket'));
 
     // -- FUEL REFINERY -- //
-    e.shaped(ad('fuel_refinery'), [
+    event.shaped(ad('fuel_refinery'), [
         'SCS',
         'PHP',
         'SCS'
@@ -121,7 +118,7 @@ ServerEvents.recipes(e => {
     .id(st('fuel_refinery'));
 
     // -- OXYGEN TANK -- //
-    e.shaped(ad('oxygen_tank'), [
+    event.shaped(ad('oxygen_tank'), [
         'PR',
         'PP',
         'PP'
@@ -133,7 +130,7 @@ ServerEvents.recipes(e => {
     .id(st('oxygen_tank'));
 
     // -- OXYGEN LOADER -- //
-    e.shaped(ad('oxygen_loader'), [
+    event.shaped(ad('oxygen_loader'), [
         'PFP',
         'THT',
         'PCP'
@@ -148,7 +145,7 @@ ServerEvents.recipes(e => {
     .id(st('oxygen_loader'));
 
     // -- OXYGEN GEAR -- //
-    e.shaped(ad('oxygen_gear'), [
+    event.shaped(ad('oxygen_gear'), [
         ' R ',
         'PRP',
         'PRP'
@@ -160,7 +157,7 @@ ServerEvents.recipes(e => {
     .id(st('oxygen_gear'));
 
     // -- NASA WORKBENCH -- //
-    e.shaped(ad('nasa_workbench'), [
+    event.shaped(ad('nasa_workbench'), [
         'AAA',
         'PHP',
         'CMC'
@@ -175,7 +172,7 @@ ServerEvents.recipes(e => {
     .id(st('nasa_workbench'));
 
     // -- WHEEL -- // 
-    e.shaped(ad('wheel'), [
+    event.shaped(ad('wheel'), [
         ' R ',
         'RSR',
         ' R '
@@ -187,7 +184,7 @@ ServerEvents.recipes(e => {
     .id(st('wheel'));
 
     // -- TIER 1 ROVER -- // 
-    e.shaped(ad('tier_1_rover'), [
+    event.shaped(ad('tier_1_rover'), [
         'D R',
         'SDE',
         'WPW'
@@ -203,7 +200,7 @@ ServerEvents.recipes(e => {
     .id(st('tier_1_rover'));
 
     // -- JET SUIT -- //
-    e.shaped(ad('jet_suit'), [
+    event.shaped(ad('jet_suit'), [
         'PJP',
         'TNT',
         'BGB'
@@ -219,7 +216,7 @@ ServerEvents.recipes(e => {
     .id(st('jet_suit'));
 
     // -- LAUNCHPAD -- //
-    e.shaped(ad('launch_pad'), [
+    event.shaped(ad('launch_pad'), [
         'SIS',
         'ISI',
         'SIS'
@@ -231,7 +228,7 @@ ServerEvents.recipes(e => {
     .id(st('launch_pad'));
 
     // -- SOLAR PANEL -- //
-    e.shaped(ad('solar_panel'), [
+    event.shaped(ad('solar_panel'), [
         'BBB',
         'CFC',
         'PDP'
@@ -247,9 +244,7 @@ ServerEvents.recipes(e => {
 });
 
 // Tag all ore items under the common ores tag
-ServerEvents.tags('item', e => {
-    let ad = (id) => `ad_astra:${id}`;
-
+ServerEvents.tags('item', event => {
     const ORES = [
         ad('moon_cheese_ore'),
         ad('moon_desh_ore'),
@@ -264,5 +259,5 @@ ServerEvents.tags('item', e => {
         ad('deepslate_calorite_ore'),
         ad('glacio_ice_shard_ore')
     ];
-    ORES.forEach(id => e.add('c:ores', id));
+    ORES.forEach(id => event.add('c:ores', id));
 });

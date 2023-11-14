@@ -3,21 +3,18 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:pineapple_delight/${id}`;
-    let pd = (id) => `pineapple_delight:${id}`;
-    let fd = (id) => `farmersdelight:${id}`;
 
     // -- PINEAPPLE DELIGHT REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         pd('cut/pineapple_pie_side'),
         pd('cut/pineapple_side')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
+    REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
 
     // -- PINEAPPLE PIE SIDE -- //
-    e.custom({
+    event.custom({
         type: fd('cutting'),
         ingredients: [
             {
@@ -38,7 +35,7 @@ ServerEvents.recipes(e => {
     .id(st('pineapple_pie_side'));
 
     // -- PINEAPPLE SIDE -- //
-    e.custom({
+    event.custom({
         type: fd('cutting'),
         ingredients: [
             {

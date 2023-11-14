@@ -3,12 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:ironchests/${id}`;
-    let ic = (id) => `ironchests:${id}`;
-    let ad = (id) => `ad_astra:${id}`;
-    let cr = (id) => `create:${id}`;
     
     // -- IRON CHESTS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -27,10 +23,10 @@ ServerEvents.recipes(e => {
         ic('iron_dolly'),
         ic('diamond_dolly')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
     // -- COPPER CHEST -- //
-    e.shaped(ic('copper_chest'), [
+    event.shaped(ic('copper_chest'), [
         'PPP',
         'PCP',
         'PPP'
@@ -42,7 +38,7 @@ ServerEvents.recipes(e => {
     .id(st('copper_chest'));
 
     // -- COPPER CHEST UPGRADE -- //
-    e.shaped(ic('copper_chest_upgrade'), [
+    event.shaped(ic('copper_chest_upgrade'), [
         'PPP',
         'PUP',
         'PPP'
@@ -54,7 +50,7 @@ ServerEvents.recipes(e => {
     .id(st('copper_chest_upgrade'));
 
     // -- IRON CHEST -- // 
-    e.shaped(ic('iron_chest'), [
+    event.shaped(ic('iron_chest'), [
         'PPP',
         'PCP',
         'PPP'
@@ -66,7 +62,7 @@ ServerEvents.recipes(e => {
     .id(st('iron_chest'));
 
     // -- IRON CHEST UPGRADE -- //
-    e.shaped(ic('iron_chest_upgrade'), [
+    event.shaped(ic('iron_chest_upgrade'), [
         'PPP',
         'PUP',
         'PPP'
@@ -78,7 +74,7 @@ ServerEvents.recipes(e => {
     .id(st('iron_chest_upgrade'));
 
     // -- GOLD CHEST -- //
-    e.shaped(ic('gold_chest'), [
+    event.shaped(ic('gold_chest'), [
         'PPP',
         'PCP',
         'PPP'
@@ -90,7 +86,7 @@ ServerEvents.recipes(e => {
     .id(st('gold_chest'));
 
     // -- GOLD CHEST UPGRADE -- //
-    e.shaped(ic('gold_chest_upgrade'), [
+    event.shaped(ic('gold_chest_upgrade'), [
         'PPP',
         'PUP',
         'PPP'
@@ -102,7 +98,7 @@ ServerEvents.recipes(e => {
     .id(st('gold_chest_upgrade'));
 
     // -- DIAMOND CHEST -- //
-    e.shaped(ic('diamond_chest'), [
+    event.shaped(ic('diamond_chest'), [
         'PPP',
         'PCP',
         'PPP'
@@ -114,7 +110,7 @@ ServerEvents.recipes(e => {
     .id(st('diamond_chest'));
 
     // -- DIAMOND CHEST UPGRADE -- //
-    e.shaped(ic('diamond_chest_upgrade'), [
+    event.shaped(ic('diamond_chest_upgrade'), [
         'PPP',
         'PUP',
         'PPP'
@@ -126,7 +122,7 @@ ServerEvents.recipes(e => {
     .id(st('diamond_chest_upgrade'));
 
     // -- IRON DOLLY -- //
-    e.shaped(ic('iron_dolly'), [
+    event.shaped(ic('iron_dolly'), [
         'R R',
         'R R',
         'CPC'
@@ -139,7 +135,7 @@ ServerEvents.recipes(e => {
     .id(st('iron_dolly'));
 
     // -- DIAMOND DOLLY -- //
-    e.shaped(ic('diamond_dolly'), [
+    event.shaped(ic('diamond_dolly'), [
         'D D',
         'D D',
         'WDW'
@@ -151,7 +147,7 @@ ServerEvents.recipes(e => {
     .id(st('diamond_dolly'));
 
     // -- COPPER BARREL -- //
-    e.shaped(ic('copper_barrel'), [
+    event.shaped(ic('copper_barrel'), [
         'CCC',
         'CBC',
         'CCC'
@@ -163,7 +159,7 @@ ServerEvents.recipes(e => {
     .id(st('copper_barrel'));
 
     // -- IRON BARREL -- //
-    e.shaped(ic('iron_barrel'), [
+    event.shaped(ic('iron_barrel'), [
         'III',
         'IBI',
         'III'
@@ -175,7 +171,7 @@ ServerEvents.recipes(e => {
     .id(st('iron_barrel'));
 
     // -- GOLD BARREL -- //
-    e.shaped(ic('gold_barrel'), [
+    event.shaped(ic('gold_barrel'), [
         'GGG',
         'GBG',
         'GGG'
@@ -187,7 +183,7 @@ ServerEvents.recipes(e => {
     .id(st('gold_barrel'));
 
     // -- DIAMOND BARREL -- //
-    e.shaped(ic('diamond_barrel'), [
+    event.shaped(ic('diamond_barrel'), [
         'DDD',
         'DBD',
         'DDD'
@@ -199,10 +195,7 @@ ServerEvents.recipes(e => {
     .id(st('diamond_barrel'));
 });
 
-ServerEvents.tags('item', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let ic = (id) => `ironchests:${id}`;
-    
+ServerEvents.tags('item', event => {    
     const CHEST_UPGRADES = [
         ic('obsidian_chest_upgrade'),
         ic('copper_chest_upgrade'),
@@ -212,5 +205,5 @@ ServerEvents.tags('item', e => {
         ic('diamond_chest_upgrade'),
         ic('iron_chest_upgrade')
     ];
-    CHEST_UPGRADES.forEach(id => e.add('kubejs:chest_upgrade', id));
+    CHEST_UPGRADES.forEach(id => event.add(kj('chest_upgrade'), id));
 });

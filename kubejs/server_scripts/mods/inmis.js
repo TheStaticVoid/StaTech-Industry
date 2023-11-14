@@ -3,10 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:inmis/${id}`;
-    let im = (id) => `inmis:${id}`;
     
     // -- INMIS REMOVED RECIPES -- //
     const INMIS_DELETED_RECIPES = [
@@ -17,7 +15,7 @@ ServerEvents.recipes(e => {
         im('endless_backpack'),
         im('blazing_backpack')
     ];
-    INMIS_DELETED_RECIPES.forEach(id => e.remove({ id: id }));
+    INMIS_DELETED_RECIPES.forEach(id => event.remove({ id: id }));
 
     // -- UTILITY FUNCTION FOR MODIFYING RESULTS IN RECIPE BUILDER -- // 
     let keepNBT = (name, inventory, itemstack) => {
@@ -31,7 +29,7 @@ ServerEvents.recipes(e => {
     }
 
     // -- PLATED BACKPACK -- //
-    e.shaped(im('plated_backpack'), [
+    event.shaped(im('plated_backpack'), [
         'RIR',
         'IBI',
         'RIR'
@@ -45,7 +43,7 @@ ServerEvents.recipes(e => {
     .id(st('plated_backpack'));
 
     // -- GILDED BACKPACK -- //
-    e.shaped(im('gilded_backpack'), [
+    event.shaped(im('gilded_backpack'), [
         'EGE',
         'GBG',
         'EGE'
@@ -59,7 +57,7 @@ ServerEvents.recipes(e => {
     .id(st('gilded_backpack'));
 
     // -- BEJEWELED BACKPACK -- //
-    e.shaped(im('bejeweled_backpack'), [
+    event.shaped(im('bejeweled_backpack'), [
         'DED',
         'EBE',
         'DED'
@@ -73,7 +71,7 @@ ServerEvents.recipes(e => {
     .id(st('bejeweled_backpack'));
 
     // -- BLAZING BACKPACK -- //
-    e.shaped(im('blazing_backpack'), [
+    event.shaped(im('blazing_backpack'), [
         'NON',
         'OBO',
         'NON'
@@ -87,7 +85,7 @@ ServerEvents.recipes(e => {
     .id(st('blazing_backpack'));
 
     // -- WITHERED BACKPACK -- // 
-    e.shaped(im('withered_backpack'), [
+    event.shaped(im('withered_backpack'), [
         'ANA',
         'NBN',
         'ANA'
@@ -101,7 +99,7 @@ ServerEvents.recipes(e => {
     .id(st('withered_backpack'));
 
     // -- ENDLESS BACKPACK -- //
-    e.shaped(im('endless_backpack'), [
+    event.shaped(im('endless_backpack'), [
         'IHI',
         'EBE',
         'IEI'

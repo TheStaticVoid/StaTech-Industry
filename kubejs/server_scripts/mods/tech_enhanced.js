@@ -3,15 +3,11 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let st = (id) => `statech:tech_enhanced/${id}`;
-    let te = (id) => `tech_enhanced:${id}`;
-
+ServerEvents.recipes(event => {
     // -- TECH ENHANCED REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         te('electric_wrench'),
         te('electric_hoe')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({ id: id }));
+    REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 });

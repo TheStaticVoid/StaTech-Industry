@@ -3,12 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:waystones/${id}`;
-    let sp = (id) => `spectrum:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ws = (id) => `waystones:${id}`;
     
     // -- WAYSTONES REMOVED RECIPES -- //
     const WAYSTONE_REMOVED_RECIPES = [
@@ -19,10 +15,10 @@ ServerEvents.recipes(e => {
         ws('warp_dust'),
         ws('warp_plate')
     ];
-    WAYSTONE_REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+    WAYSTONE_REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
     // -- WARP STONE -- //
-    e.custom({
+    event.custom({
         type: sp('fusion_shrine'),
         time: 400,
         experience: 30.0,
@@ -46,7 +42,7 @@ ServerEvents.recipes(e => {
     .id(st('warp_stone'));
 
     // -- WARP PLATE -- //
-    e.custom({
+    event.custom({
         type: sp('pedestal'),
         time: 400,
         tier: 'simple',
@@ -77,7 +73,7 @@ ServerEvents.recipes(e => {
     .id(st('warp_plate'));
 
     // -- RETURN SCROLL -- //
-    e.custom({
+    event.custom({
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -107,7 +103,7 @@ ServerEvents.recipes(e => {
     .id(st('return_scroll'));
 
     // -- BOUND SCROLL -- //
-    e.custom({
+    event.custom({
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -139,7 +135,7 @@ ServerEvents.recipes(e => {
     .id(st('bound_scroll'));
 
     // -- WARP SCROLL -- //
-    e.custom({
+    event.custom({
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',
@@ -171,7 +167,7 @@ ServerEvents.recipes(e => {
     .id(st('warp_scroll'));
 
     // -- WARP DUST -- //
-    e.custom({
+    event.custom({
         type: sp('pedestal'),
         time: 200,
         tier: 'simple',

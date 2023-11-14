@@ -3,8 +3,6 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let gc = (id) => `geocluster:${id}`;
-    e.remove({mod: 'geocluster', not: {id: gc('prospectors_pick') }});
+ServerEvents.recipes(event => {
+    event.remove({mod: 'geocluster', not: {id: gc('prospectors_pick') }});
 });

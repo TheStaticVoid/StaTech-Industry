@@ -3,13 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:createaddition/${id}`;
-    let ca = (id) => `createaddition:${id}`;
-    let cr = (id) => `create:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
     // -- CREATE CRAFTS & ADDITIONS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -44,14 +39,14 @@ ServerEvents.recipes(e => {
         ca('crafting/redstone_relay'),
         ca('pressing/zinc_ingot')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id : id}));
+    REMOVED_RECIPES.forEach(id => event.remove({id : id}));
 
     // -- DIAMOND GRIT SANDPAPER -- //
-    e.shapeless(ca('diamond_grit_sandpaper'), [ mc('paper'), mi('diamond_dust') ])
+    event.shapeless(ca('diamond_grit_sandpaper'), [ mc('paper'), mi('diamond_dust') ])
         .id(st('diamond_grit_sandpaper'));
 
     // -- BARBED WIRE -- //
-    e.shaped(ca('barbed_wire'), [
+    event.shaped(ca('barbed_wire'), [
         ' W ',
         'WIW',
         ' W '
@@ -63,7 +58,7 @@ ServerEvents.recipes(e => {
     .id(st('barbed_wire'));
 
     // -- DIAMOND DUST CRUSHING -- //
-    e.custom({
+    event.custom({
         type: cr('crushing'),
         ingredients: [
             { item: mc('diamond') }
@@ -76,7 +71,7 @@ ServerEvents.recipes(e => {
     .id(st('crushing_diamond'));
 
     // -- ELECTRIC MOTOR -- //
-    e.custom({
+    event.custom({
         type: cr('mechanical_crafting'),
         pattern: [
             '  A  ',
@@ -96,7 +91,7 @@ ServerEvents.recipes(e => {
     .id(st('electric_motor'));
 
     // -- ALTERNATOR -- //
-    e.custom({
+    event.custom({
         type: cr('mechanical_crafting'),
         pattern: [
             '  A  ',
@@ -116,26 +111,21 @@ ServerEvents.recipes(e => {
     .id(st('alternator'));
 });
 
-ServerEvents.tags('fluid', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ca = (id) => `createaddition:${id}`;
-    
+ServerEvents.tags('fluid', event => {    
     const BURNABLE_FUEL_4800 = [
         mi('creosote')
     ];
-    BURNABLE_FUEL_4800.forEach(id => { e.add(ca('burnable_fuel_4800'), id) });
+    BURNABLE_FUEL_4800.forEach(id => { event.add(ca('burnable_fuel_4800'), id) });
 
     const BURNABLE_FUEL_12800 = [
         mc('lava'),
         mi('crude_oil')
     ];
-    BURNABLE_FUEL_12800.forEach(id => { e.add(ca('burnable_fuel_12800'), id) });
+    BURNABLE_FUEL_12800.forEach(id => { event.add(ca('burnable_fuel_12800'), id) });
 
     const BURNABLE_FUEL_20000 = [
         mi('diesel'),
         mi('biodiesel'),
     ];
-    BURNABLE_FUEL_20000.forEach(id => { e.add(ca('burnable_fuel_20000'), id) });
+    BURNABLE_FUEL_20000.forEach(id => { event.add(ca('burnable_fuel_20000'), id) });
 });

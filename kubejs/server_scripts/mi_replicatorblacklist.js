@@ -4,23 +4,7 @@
 // -----------------------------------------
 
 // This list is a modified version from the AOF6 modpack
-ServerEvents.tags('item', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let ae = (id) => `ae2:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let im = (id) => `inmis:${id}`;
-    let ic = (id) => `ironchests:${id}`;
-    let cr = (id) => `create:${id}`;
-    let sp = (id) => `spectrum:${id}`;
-    let ed = (id) => `extended_drawers:${id}`;
-    let kb = (id) => `kibe:${id}`;
-    let ar = (id) => `artifacts:${id}`;
-    let su = (id) => `supplementaries:${id}`;
-    let xp = (id) => `xps:${id}`;
-    let wa = (id) => `wands:${id}`;
-    let qm = (id) => `quarrymod:${id}`;
-
+ServerEvents.tags('item', event => {
     const ITEMS = [
         kb('tank'),
         kb('angel_ring'),
@@ -90,20 +74,12 @@ ServerEvents.tags('item', e => {
         cr('furnace_minecart_contraption'),
         cr('minecart_contraption'),
         ae('wireless_crafting_terminal'),
-        wa('stone_wand'),
-        wa('iron_wand'),
-        wa('diamond_wand'),
-        wa('netherite_wand'),
-        wa('palette'),
         ic('iron_dolly'),
         ic('diamond_dolly'),
         xp('block_xp_obelisk'),
         sp('gloves_of_dawns_grasp'),
         sp('heartsingers_reward'),
         sp('shieldgrasp_amulet'),
-        wa('magic_bag_1'),
-        wa('magic_bag_2'),
-        wa('magic_bag_3'),
         tr('storage_buffer'),
         tr('alloy_smelter'),
         tr('assembly_machine'),
@@ -145,16 +121,16 @@ ServerEvents.tags('item', e => {
         tr('quantum_chestplate'),
         tr('quantum_leggings'),
         tr('quantum_boots'),
-        ed('single_drawer'),
-        ed('double_drawer'),
-        ed('quad_drawer'),
-        ed('shadow_drawer'),
-        ed('compacting_drawer'),
+        dr('single_drawer'),
+        dr('double_drawer'),
+        dr('quad_drawer'),
+        dr('shadow_drawer'),
+        dr('compacting_drawer'),
         qm('quarry'),
         '#create:toolboxes',
         '#supplementaries:presents',
 	    '#supplementaries:trapped_presents',
     ];
 
-    ITEMS.forEach(id => e.add(mi('replicator_blacklist'), id));
+    ITEMS.forEach(id => event.add(mi('replicator_blacklist'), id));
 });

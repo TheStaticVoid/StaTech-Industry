@@ -1,10 +1,9 @@
 // -----------------------------------------
-// CREATED BY STATIC FOR USE IN
+// CREATED BY KEVINTOK FOR USE IN
 // STATECH INDUSTRY
 // -----------------------------------------
 
-// Block tagging provided by kevintok 
-ServerEvents.tags('block', e => {
-    e.add('c:salt_ores', 'expandeddelight:salt_ore')
-    e.add('c:salt_ores', 'expandeddelight:deepslate_salt_ore')
+ServerEvents.tags('block', event => {
+    event.add('c:salt_ores', ed('salt_ore'));
+    event.add('c:salt_ores', ed('deepslate_salt_ore'));
 });

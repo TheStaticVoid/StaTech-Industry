@@ -3,10 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.tags('item', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let ch = (id) => `chimes:${id}`;
-
+ServerEvents.tags('item', event => {
     const chimes = [
         ch('carved_bamboo_chimes'),
         ch('bamboo_chimes'),
@@ -14,5 +11,5 @@ ServerEvents.tags('item', e => {
         ch('copper_chimes'),
         ch('amethyst_chimes')
     ];
-    chimes.forEach(id => e.add('kubejs:chimes', id));
+    chimes.forEach(id => event.add(kj('chimes'), id));
 });

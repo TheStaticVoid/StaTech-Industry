@@ -3,12 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:giselle_addon/${id}`;
-    let ga = (id) => `ad_astra_giselle_addon:${id}`;
-    let ad = (id) => `ad_astra:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
     // -- GISELLE ADDON REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -17,10 +13,10 @@ ServerEvents.recipes(e => {
         ga('crafting/gravity_normalizer'),
         ga('crafting/enchanted_book_space_breathing')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
     // -- FUEL LOADER -- //
-    e.shaped(ga('fuel_loader'), [
+    event.shaped(ga('fuel_loader'), [
         'FFF',
         'PHP',
         'SCS'
@@ -35,7 +31,7 @@ ServerEvents.recipes(e => {
     .id(st('fuel_loader'));
 
     // -- AUTOMATION NASA WORKBENCH -- //
-    e.shaped(ga('automation_nasa_workbench'), [
+    event.shaped(ga('automation_nasa_workbench'), [
         'SWS',
         'MHM',
         'SCS'
@@ -50,7 +46,7 @@ ServerEvents.recipes(e => {
     .id(st('automation_nasa_workbench'));
 
     // -- GRAVITY NORMALIZER -- //
-    e.shaped(ga('gravity_normalizer'), [
+    event.shaped(ga('gravity_normalizer'), [
         'SBS',
         'DHD',
         'SCS'
@@ -65,7 +61,7 @@ ServerEvents.recipes(e => {
     .id(st('gravity_normalizer'));
 
     // -- SPACE BREATHING BOOK -- //
-    e.shaped(Item.of('minecraft:enchanted_book').enchant('ad_astra_giselle_addon:space_breathing', 1), [
+    event.shaped(Item.of('minecraft:enchanted_book').enchant('ad_astra_giselle_addon:space_breathing', 1), [
         'MSM',
         'MBM',
         'MMM'
@@ -78,11 +74,7 @@ ServerEvents.recipes(e => {
     .id(st('space_breathing_book'));
 });
 
-ServerEvents.tags('fluid', e => {
-    let ad = (id) => `ad_astra:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-
+ServerEvents.tags('fluid', event => {
     // Remove the fuel tags added by the mod so the regular conversion of boosted
     // diesel -> rocket fuel is kept
     const FUELS = [
@@ -91,5 +83,5 @@ ServerEvents.tags('fluid', e => {
         tr('diesel'),
         tr('biofuel')
     ];
-    FUELS.forEach(id => e.remove(ad('fuel'), id));
+    FUELS.forEach(id => event.remove(ad('fuel'), id));
 });

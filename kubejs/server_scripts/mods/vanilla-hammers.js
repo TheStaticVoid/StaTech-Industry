@@ -3,10 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:vanilla-hammers/${id}`;
-    let vh = (id) => `vanilla-hammers:${id}`;
 
     // -- VANILLA HAMMERS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -22,10 +20,10 @@ ServerEvents.recipes(e => {
         vh('iron_hammer'),
         vh('golden_hammer')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
     // -- IRON HAMMER -- //
-    e.shaped(vh('iron_hammer'), [
+    event.shaped(vh('iron_hammer'), [
         'BPB',
         ' S ',
         ' S '
@@ -38,7 +36,7 @@ ServerEvents.recipes(e => {
     .id(st('iron_hammer'));
 
     // -- GOLD HAMMER -- //
-    e.shaped(vh('golden_hammer'), [
+    event.shaped(vh('golden_hammer'), [
         'BPB',
         ' S ',
         ' S '
@@ -51,24 +49,13 @@ ServerEvents.recipes(e => {
     .id(st('golden_hammer'));
 });
 
-ServerEvents.tags('item', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let vh = (id) => `vanilla-hammers:${id}`;
+ServerEvents.tags('item', event => {
     const HAMMERS = [
-        //vh('wooden_hammer'),
-        //vh('stone_hammer'),
         vh('iron_hammer'),
         vh('golden_hammer'),
         vh('diamond_hammer'),
         vh('emerald_hammer'),
-        //vh('ender_hammer'),
-        //vh('fiery_hammer'),
-        //vh('lapis_hammer'),
         vh('netherite_hammer'),
-        //vh('obsidian_hammer'),
-        //vh('prismarine_hammer'),
-        //vh('quartz_hammer'),
-        //vh('slime_hammer')
     ];
-    HAMMERS.forEach(id => e.add('kubejs:hammers', id));
+    HAMMERS.forEach(id => event.add(kj('hammers'), id));
 });

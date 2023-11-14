@@ -3,16 +3,14 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let st = (id) => `statech:${id}`;
-    let ch = (id) => `chisel:${id}`;
+ServerEvents.recipes(event => {
+    let st = (id) => `statech:chisel/${id}`;
 
     // Remove and replace the default chisel recipe
-    e.remove({id: ch('chisel')});
+    event.remove({id: cs('chisel')});
 
     // -- CHISEL -- // 
-    e.shaped(ch('chisel'), [
+    event.shaped(cs('chisel'), [
         ' P',
         'S '
     ],
@@ -31,13 +29,13 @@ ServerEvents.recipes(e => {
         if (material === 'purpur') {  // Use vanilla purpur block
             material = 'purpur_block';
         }
-        e.stonecutting(`1x ${item.id}`, `minecraft:${material}`);
+        event.stonecutting(`1x ${item.id}`, `minecraft:${material}`);
     });
 
     // -- FACTORY BLOCKS -- //
     const factory = Ingredient.of(`#factory_blocks:chiseled_blocks`).getStacks().toArray();
   
     factory.forEach(item => {
-        e.stonecutting(`1x ${item.id}`, 'factory_blocks:factory');
+        event.stonecutting(`1x ${item.id}`, 'factory_blocks:factory');
     });
 });

@@ -3,13 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:dankstorage/${id}`;
-    let ds = (id) => `dankstorage:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let bl = (id) => `blockus:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
     // -- INMIS REMOVED RECIPES -- //
     const DELETED_RECIPES = [
@@ -27,7 +22,7 @@ ServerEvents.recipes(e => {
         ds('5_to_6'),
         ds('6_to_7')
     ];
-    DELETED_RECIPES.forEach(id => e.remove({ id: id }));
+    DELETED_RECIPES.forEach(id => event.remove({ id: id }));
 
     // -- UTILITY FUNCTION FOR MODIFYING RESULTS IN RECIPE BUILDER -- // 
     let keepNBT = (name, inventory, itemstack) => {
@@ -41,7 +36,7 @@ ServerEvents.recipes(e => {
     }
 
     // -- DANK 1 -- //
-    e.shaped(ds('dank_1'), [
+    event.shaped(ds('dank_1'), [
         'BBB',
         'BDB',
         'BBB'
@@ -53,7 +48,7 @@ ServerEvents.recipes(e => {
     .id(st('dank_1'));
 
     // -- DANK 2 -- //
-    e.shaped(ds('dank_2'), [
+    event.shaped(ds('dank_2'), [
         'BBB',
         'BDB',
         'BBB'
@@ -66,7 +61,7 @@ ServerEvents.recipes(e => {
     .id(st('dank_2'));
 
     // -- DANK 3 -- //
-    e.shaped(ds('dank_3'), [
+    event.shaped(ds('dank_3'), [
         'BBB',
         'BDB',
         'BBB'
@@ -79,7 +74,7 @@ ServerEvents.recipes(e => {
     .id(st('dank_3'));
 
     // -- DANK 4 -- // 
-    e.shaped(ds('dank_4'), [
+    event.shaped(ds('dank_4'), [
         'BBB',
         'BDB',
         'BBB'
@@ -92,7 +87,7 @@ ServerEvents.recipes(e => {
     .id(st('dank_4'));
 
     // -- DANK 5 -- //
-    e.shaped(ds('dank_5'), [
+    event.shaped(ds('dank_5'), [
         'BBB',
         'BDB',
         'BBB'
@@ -105,7 +100,7 @@ ServerEvents.recipes(e => {
     .id(st('dank_5'));
 
     // -- DANK 6 -- //
-    e.shaped(ds('dank_6'), [
+    event.shaped(ds('dank_6'), [
         'BBB',
         'BDB',
         'BBB'
@@ -118,7 +113,7 @@ ServerEvents.recipes(e => {
     .id(st('dank_6'));
     
     // -- DANK 7 -- //
-    e.shaped(ds('dank_7'), [
+    event.shaped(ds('dank_7'), [
         'BNB',
         'NDN',
         'BNB'
@@ -132,7 +127,7 @@ ServerEvents.recipes(e => {
     .id(st('dank_7'));
 
     // -- DANK 1 TO 2 UPGRADE -- //
-    e.shaped(ds('1_to_2'), [
+    event.shaped(ds('1_to_2'), [
         'BBB',
         'BSB',
         'BBB'
@@ -144,7 +139,7 @@ ServerEvents.recipes(e => {
     .id(st('1_to_2'));
 
     // -- DANK 2 TO 3 UPGRADE -- //
-    e.shaped(ds('2_to_3'), [
+    event.shaped(ds('2_to_3'), [
         'BBB',
         'BSB',
         'BBB'
@@ -156,7 +151,7 @@ ServerEvents.recipes(e => {
     .id(st('2_to_3'));
 
     // -- DANK 3 TO 4 UPGRADE -- //
-    e.shaped(ds('3_to_4'), [
+    event.shaped(ds('3_to_4'), [
         'BBB',
         'BSB',
         'BBB'
@@ -168,7 +163,7 @@ ServerEvents.recipes(e => {
     .id(st('3_to_4'));
 
     // -- DANK 4 TO 5 UPGRADE -- //
-    e.shaped(ds('4_to_5'), [
+    event.shaped(ds('4_to_5'), [
         'BBB',
         'BSB',
         'BBB'
@@ -180,7 +175,7 @@ ServerEvents.recipes(e => {
     .id(st('4_to_5'));
 
     // -- DANK 5 TO 6 UPGRADE -- // 
-    e.shaped(ds('5_to_6'), [
+    event.shaped(ds('5_to_6'), [
         'BBB',
         'BSB',
         'BBB'
@@ -192,7 +187,7 @@ ServerEvents.recipes(e => {
     .id(st('5_to_6'));
 
     // -- DANK 6 TO 7 UPGRADE -- //
-    e.shaped(ds('6_to_7'), [
+    event.shaped(ds('6_to_7'), [
         'BNB',
         'NSN',
         'BNB'

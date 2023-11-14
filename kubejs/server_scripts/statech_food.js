@@ -3,11 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ItemEvents.foodEaten(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let kj = (id) => `kubejs:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-
+ItemEvents.foodEaten(event => {
     const EatenOutputs = [
         // Eaten food                   // Item to give back
         [ kj('statech_energy'),         kj('empty_can') ],
@@ -20,8 +16,8 @@ ItemEvents.foodEaten(e => {
     ];
 
     EatenOutputs.forEach(eatenOutput => {
-        if (e.getItem() == Item.of(eatenOutput[0])) {
-            e.getPlayer().addItem(Item.of(eatenOutput[1]));
+        if (event.getItem() == Item.of(eatenOutput[0])) {
+            event.getPlayer().addItem(Item.of(eatenOutput[1]));
         }
     });
 });

@@ -3,14 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:tech_reborn/${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let te = (id) => `tech_enhanced:${id}`;
 
     // -- TECHREBORN REMOVED RECIPES -- //
     const DELETED_RECIPES = [
@@ -151,13 +145,13 @@ ServerEvents.recipes(e => {
         tr('crafting_table/uu_matter/ore/iridium_ore'),
         tr('crafting_table/uu_matter/ore/deepslate_iridium_ore')
     ];
-    DELETED_RECIPES.forEach(id => e.remove({id: id}));
+    DELETED_RECIPES.forEach(id => event.remove({id: id}));
 
     // DELETE ALL SMALL DUST RECIPES
-    e.remove({mod: 'techreborn', type: 'minecraft:crafting_shapeless', output: '#techreborn:small_dusts' });
+    event.remove({mod: 'techreborn', type: mc('crafting_shapeless'), output: '#techreborn:small_dusts' });
 
     // -- QUANTUM HELMET -- //
-    e.shaped(tr('quantum_helmet'), [
+    event.shaped(tr('quantum_helmet'), [
         'DLD',
         'SHS'
     ],
@@ -170,7 +164,7 @@ ServerEvents.recipes(e => {
     .id(st('quantum_helmet'));
 
     // -- QUANTUM CHESTPLATE -- //
-    e.shaped(tr('quantum_chestplate'), [
+    event.shaped(tr('quantum_chestplate'), [
         'TCT',
         'SLS',
         'DID'
@@ -186,7 +180,7 @@ ServerEvents.recipes(e => {
     .id(st('quantum_chestplate'));
 
     // -- QUANTUM LEGGINGS -- //
-    e.shaped(tr('quantum_leggings'), [
+    event.shaped(tr('quantum_leggings'), [
         'DLD',
         'SNS',
         'T T'
@@ -201,7 +195,7 @@ ServerEvents.recipes(e => {
     .id(st('quantum_leggings'));
 
     // -- QUANTUM BOOTS -- //
-    e.shaped(tr('quantum_boots'), [
+    event.shaped(tr('quantum_boots'), [
         'L L',
         'D D',
         'SBS'
@@ -215,7 +209,7 @@ ServerEvents.recipes(e => {
     .id(st('quantum_boots'));
 
     // -- CELL -- //
-    e.shaped(tr('cell'), [
+    event.shaped(tr('cell'), [
         ' T ',
         'T T',
         ' T '
@@ -226,7 +220,7 @@ ServerEvents.recipes(e => {
     .id(st('cell'));
 
     // -- INDUSTRIAL DRILL -- //
-    e.shaped(tr('industrial_drill'), [
+    event.shaped(tr('industrial_drill'), [
         'CRD',
         'MPR',
         'LMC'
@@ -242,7 +236,7 @@ ServerEvents.recipes(e => {
     .id(st('industrial_drill'));
 
     // -- INDUSTRIAL CHAINSAW -- //
-    e.shaped(tr('industrial_chainsaw'), [
+    event.shaped(tr('industrial_chainsaw'), [
         'CSR',
         'MRS',
         'LMC'
@@ -257,7 +251,7 @@ ServerEvents.recipes(e => {
     .id(st('industrial_chainsaw'));
 
     // -- INDUSTRIAL JACKHAMMER -- //
-    e.shaped(tr('industrial_jackhammer'), [
+    event.shaped(tr('industrial_jackhammer'), [
         'CSR',
         'MBS',
         'LMC'
@@ -273,7 +267,7 @@ ServerEvents.recipes(e => {
     .id(st('industrial_jackhammer'));
 
     // -- CHARGE O MAT -- //
-    e.shaped(tr('charge_o_mat'), [
+    event.shaped(tr('charge_o_mat'), [
         'PPP',
         'KAK',
         'CHC'
@@ -288,7 +282,7 @@ ServerEvents.recipes(e => {
     .id(st('charge_o_mat'));
 
     // -- NANOSABER -- //
-    e.shaped(tr('nanosaber'), [
+    event.shaped(tr('nanosaber'), [
         '  B',
         'CB ',
         'NL '
@@ -302,7 +296,7 @@ ServerEvents.recipes(e => {
     .id(st('nanosaber'));
 
     // -- RECYCLER -- //
-    e.shaped(tr('recycler'), [
+    event.shaped(tr('recycler'), [
         'AMA',
         'CHC',
         'AMA'
@@ -316,7 +310,7 @@ ServerEvents.recipes(e => {
     .id(st('recycler'));
 
     // -- SCRAPBOXINATOR -- //
-    e.shaped(tr('scrapboxinator'), [
+    event.shaped(tr('scrapboxinator'), [
         'WBW',
         'CHC',
         'MBM'
@@ -331,11 +325,11 @@ ServerEvents.recipes(e => {
     .id(st('scrapboxinator'));
 
     // -- NUKE CONVERSION -- //
-    e.shapeless(tr('nuke'), [mi('nuke')]);
-    e.shapeless(mi('nuke'), [tr('nuke')]);
+    event.shapeless(tr('nuke'), [mi('nuke')]);
+    event.shapeless(mi('nuke'), [tr('nuke')]);
 
     // -- BASIC SOLAR PANEL -- //
-    e.shaped(tr('basic_solar_panel'), [
+    event.shaped(tr('basic_solar_panel'), [
         'GGG',
         'ZZZ',
         'AHA'
@@ -349,7 +343,7 @@ ServerEvents.recipes(e => {
     .id(st('basic_solar_panel'));
 
     // -- ADVANCED SOLAR PANEL -- //
-    e.shaped(tr('advanced_solar_panel'), [
+    event.shaped(tr('advanced_solar_panel'), [
         'GGG',
         'SSS',
         'EHE'
@@ -363,7 +357,7 @@ ServerEvents.recipes(e => {
     .id(st('advanced_solar_panel'));
 
     // -- INDUSTRIAL SOLAR PANEL -- //
-    e.shaped(tr('industrial_solar_panel'), [
+    event.shaped(tr('industrial_solar_panel'), [
         'GGG',
         'AAA',
         'DHD'
@@ -377,7 +371,7 @@ ServerEvents.recipes(e => {
     .id(st('industrial_solar_panel'));
 
     // -- ULTIMATE SOLAR PANEL -- //
-    e.shaped(tr('ultimate_solar_panel'), [
+    event.shaped(tr('ultimate_solar_panel'), [
         'GGG',
         'TTT',
         'PHP'
@@ -391,7 +385,7 @@ ServerEvents.recipes(e => {
     .id(st('ultimate_solar_panel'));
 
     // -- QUANTUM SOLAR PANEL -- //
-    e.shaped(tr('quantum_solar_panel'), [
+    event.shaped(tr('quantum_solar_panel'), [
         'GGG',
         'III',
         'QHC'
@@ -406,7 +400,7 @@ ServerEvents.recipes(e => {
     .id(st('quantum_solar_panel'));
 
     // -- BATTERY BOX -- //
-    e.shaped(tr('low_voltage_su'), [
+    event.shaped(tr('low_voltage_su'), [
         'PCP',
         'BBB',
         'PPP'
@@ -419,7 +413,7 @@ ServerEvents.recipes(e => {
     .id(st('low_voltage_su'));
 
     // -- EXTRACTOR -- //
-    e.shaped(tr('extractor'), [
+    event.shaped(tr('extractor'), [
         'THT',
         'TCT'
     ],
@@ -431,7 +425,7 @@ ServerEvents.recipes(e => {
     .id(st('extractor'));
 
     // -- RED CELL BATTERY -- //
-    e.shaped(tr('red_cell_battery'), [
+    event.shaped(tr('red_cell_battery'), [
         ' C ',
         'LBL',
         'LBL'
@@ -444,7 +438,7 @@ ServerEvents.recipes(e => {
     .id(st('red_cell_battery'));
 
     // -- ELECTRIC TREETAP -- //
-    e.shaped(tr('electric_treetap'), [
+    event.shaped(tr('electric_treetap'), [
         '  T',
         'CS ',
         'SB '
@@ -458,7 +452,7 @@ ServerEvents.recipes(e => {
     .id(st('electric_treetap'));
 
     // -- DRAGON EGG SIPHON -- //
-    e.shaped(tr('dragon_egg_syphon'), [
+    event.shaped(tr('dragon_egg_syphon'), [
         'PUP',
         'THT',
         'POP'
@@ -473,7 +467,7 @@ ServerEvents.recipes(e => {
     .id(st('dragon_egg_syphon'));
 
     // -- LAPOTRONIC ENERGY ORB -- //
-    e.shaped(tr('lapotronic_orb'), [
+    event.shaped(tr('lapotronic_orb'), [
         'CCC',
         'CHC',
         'CCC'
@@ -485,7 +479,7 @@ ServerEvents.recipes(e => {
     .id(st('lapotronic_orb'));
 
     // -- LAPOTRONIC ORBPACK -- //
-    e.shaped(tr('lapotronic_orbpack'), [
+    event.shaped(tr('lapotronic_orbpack'), [
         'PIP',
         'SBS',
         'POP'
@@ -500,7 +494,7 @@ ServerEvents.recipes(e => {
     .id(st('lapotronic_orbpack'));
 
     // -- CRUDE STORAGE UNIT -- //
-    e.shaped(tr('crude_storage_unit'), [
+    event.shaped(tr('crude_storage_unit'), [
         'PPP',
         'PBP',
         'PAP'
@@ -513,7 +507,7 @@ ServerEvents.recipes(e => {
     .id(st('crude_storage_unit'));
 
     // -- BASIC DISPLAY -- //
-    e.shaped(tr('basic_display'), [
+    event.shaped(tr('basic_display'), [
         'RIR',
         'ICI',
         'RGR'
@@ -527,7 +521,7 @@ ServerEvents.recipes(e => {
     .id(st('basic_display'));
 
     // -- BASIC STORAGE UNIT -- //
-    e.shaped(tr('basic_storage_unit'), [
+    event.shaped(tr('basic_storage_unit'), [
         'PPP',
         'BMB',
         'CDC'
@@ -542,7 +536,7 @@ ServerEvents.recipes(e => {
     .id(st('basic_storage_unit'));
 
     // -- CRUDE UNIT UPGRADER -- //
-    e.shaped(tr('crude_unit_upgrader'), [
+    event.shaped(tr('crude_unit_upgrader'), [
         'PPP',
         'BM ',
         'CDC'
@@ -557,7 +551,7 @@ ServerEvents.recipes(e => {
     .id(st('crude_unit_upgrader'));
 
     // -- ADVANCED CIRCUIT -- //
-    e.shaped(tr('advanced_circuit'), [
+    event.shaped(tr('advanced_circuit'), [
         'RGR',
         'LCL',
         'RGR'
@@ -571,7 +565,7 @@ ServerEvents.recipes(e => {
     .id(st('advanced_circuit'));
 
     // -- ADVANCED STORAGE UNIT -- //
-    e.shaped(tr('advanced_storage_unit'), [
+    event.shaped(tr('advanced_storage_unit'), [
         'EEE',
         'BFB',
         'CDC'
@@ -586,7 +580,7 @@ ServerEvents.recipes(e => {
     .id(st('advanced_storage_unit'));
 
     // -- BASIC UNIT UPGRADER -- //
-    e.shaped(tr('basic_unit_upgrader'), [
+    event.shaped(tr('basic_unit_upgrader'), [
         'EEE',
         'BF ',
         'CDC'
@@ -601,7 +595,7 @@ ServerEvents.recipes(e => {
     .id(st('basic_unit_upgrader'));
 
     // -- INDUSTRIAL STORAGE UNIT -- //
-    e.shaped(tr('industrial_storage_unit'), [
+    event.shaped(tr('industrial_storage_unit'), [
         'PPP',
         'GFG',
         'CDC'
@@ -616,7 +610,7 @@ ServerEvents.recipes(e => {
     .id(st('industrial_storage_unit'));
 
     // -- ADVANCED UNIT UPGRADER -- //
-    e.shaped(tr('advanced_unit_upgrader'), [
+    event.shaped(tr('advanced_unit_upgrader'), [
         'PPP',
         'GF ',
         'CDC'
@@ -631,7 +625,7 @@ ServerEvents.recipes(e => {
     .id(st('advanced_unit_upgrader'));
 
     // -- QUANTUM STORAGE UNIT -- //
-    e.shaped(tr('quantum_storage_unit'), [
+    event.shaped(tr('quantum_storage_unit'), [
         'PPP',
         'BFB',
         'CDC'
@@ -646,7 +640,7 @@ ServerEvents.recipes(e => {
     .id(st('quantum_storage_unit'));
 
     // -- INDUSTRIAL UNIT UPGRADER -- //
-    e.shaped(tr('industrial_unit_upgrader'), [
+    event.shaped(tr('industrial_unit_upgrader'), [
         'PPP',
         'BF ',
         'CDC'
@@ -661,7 +655,7 @@ ServerEvents.recipes(e => {
     .id(st('industrial_unit_upgrader'));
 
     // -- DATA STORAGE CHIPS -- //
-    e.shaped(tr('data_storage_core'), [
+    event.shaped(tr('data_storage_core'), [
         'RGR',
         'LCL',
         'PPP'
@@ -676,7 +670,7 @@ ServerEvents.recipes(e => {
     .id(st('data_storage_core'));
 
     // -- RESIN BASIN -- //
-    e.shaped(tr('resin_basin'), [
+    event.shaped(tr('resin_basin'), [
         'WTW',
         'W W',
         'WDW'
@@ -689,7 +683,7 @@ ServerEvents.recipes(e => {
     .id(st('resin_basin'));
 
     // -- ROLLING MACHINE -- //
-    e.shaped(tr('rolling_machine'), [
+    event.shaped(tr('rolling_machine'), [
         'PCP',
         'RFR',
         'PCP'
@@ -703,7 +697,7 @@ ServerEvents.recipes(e => {
     .id(st('rolling_machine'));
 
     // -- STANDARD MACHINE CASING -- //
-    e.shaped(tr('basic_machine_casing'), [
+    event.shaped(tr('basic_machine_casing'), [
         'III',
         'ACA',
         'III'
@@ -716,7 +710,7 @@ ServerEvents.recipes(e => {
     .id(st('basic_machine_casing'));
 
     // -- THERMAL GENERATOR -- //
-    e.shaped(tr('thermal_generator'), [
+    event.shaped(tr('thermal_generator'), [
         'III',
         'IGI',
         'CHC'
@@ -730,7 +724,7 @@ ServerEvents.recipes(e => {
     .id(st('thermal_generator'));
 
     // -- WATER MILL -- //
-    e.shaped(tr('water_mill'), [
+    event.shaped(tr('water_mill'), [
         'TGT',
         'IHI',
         'PCP'
@@ -746,7 +740,7 @@ ServerEvents.recipes(e => {
     .id(st('water_mill'));
 
     // -- WIND MILL -- //
-    e.shaped(tr('wind_mill'), [
+    event.shaped(tr('wind_mill'), [
         'MHM'
     ],
     {
@@ -756,7 +750,7 @@ ServerEvents.recipes(e => {
     .id(st('wind_mill'));
 
     // -- ALARM -- //
-    e.shaped(tr('alarm'), [
+    event.shaped(tr('alarm'), [
         'RWR',
         'CBC',
         'RWR'
@@ -770,7 +764,7 @@ ServerEvents.recipes(e => {
     .id(st('alarm'));
 
     // -- INCANDESCENT LAMP -- //
-    e.shaped(tr('lamp_incandescent'), [
+    event.shaped(tr('lamp_incandescent'), [
         'GGG',
         'WCW',
         'GGG'
@@ -783,7 +777,7 @@ ServerEvents.recipes(e => {
     .id(st('lamp_incandescent'));
 
     // -- LED LAMP -- //
-    e.shaped(tr('lamp_led'), [
+    event.shaped(tr('lamp_led'), [
         'GGG',
         'WOW',
         'GGG'
@@ -796,13 +790,13 @@ ServerEvents.recipes(e => {
     .id(st('lamp_led'));
 
     // -- FREQUENCY TRANSMITTER -- //
-    e.shapeless(tr('frequency_transmitter'), [
+    event.shapeless(tr('frequency_transmitter'), [
         mi('analog_circuit'), mi('electrum_wire')
     ])
     .id(st('frequency_transmitter'));
 
     // -- ENERGY STORAGE UPGRADE -- //
-    e.shaped(tr('energy_storage_upgrade'), [
+    event.shaped(tr('energy_storage_upgrade'), [
         'PPP',
         'CBC',
         'PAP'
@@ -816,7 +810,7 @@ ServerEvents.recipes(e => {
     .id(st('energy_storage_upgrade'));
 
     // -- MUFFLER UPGRADE -- //
-    e.shaped(tr('muffler_upgrade'), [
+    event.shaped(tr('muffler_upgrade'), [
         ' W ',
         'WAW',
         ' W '
@@ -828,7 +822,7 @@ ServerEvents.recipes(e => {
     .id(st('muffler_upgrade'));
 
     // -- OVERCLOCKER UPGRADE -- //
-    e.shaped(tr('overclocker_upgrade'), [
+    event.shaped(tr('overclocker_upgrade'), [
         'CCC',
         'WAW'
     ],
@@ -840,7 +834,7 @@ ServerEvents.recipes(e => {
     .id(st('overclocker_upgrade'));
 
     // -- 60k HELIUM COOLANT CELL -- //
-    e.shaped(tr('helium_coolant_cell_60k'), [
+    event.shaped(tr('helium_coolant_cell_60k'), [
         ' T ',
         'THT',
         ' T '
@@ -852,7 +846,7 @@ ServerEvents.recipes(e => {
     .id(st('helium_coolant_cell_60k'));
 
     // -- SUPERCONDUCTOR -- //
-    e.shaped('4x ' + tr('superconductor'), [
+    event.shaped('4x ' + tr('superconductor'), [
         'HHH',
         'TCT',
         'FFF'
@@ -866,7 +860,7 @@ ServerEvents.recipes(e => {
     .id(st('superconductor'));
 
     // -- SUPERCONDUCTOR UPGRADE -- //
-    e.shaped(tr('superconductor_upgrade'), [
+    event.shaped(tr('superconductor_upgrade'), [
         'SCS',
         'SFS',
         'SCS'
@@ -879,7 +873,7 @@ ServerEvents.recipes(e => {
     .id(st('superconductor_upgrade'));
 
     // -- THICK NEUTRON DEFLECTOR -- //
-    e.shaped(tr('thick_neutron_reflector'), [
+    event.shaped(tr('thick_neutron_reflector'), [
         ' R ',
         'RBR',
         ' R '
@@ -891,18 +885,15 @@ ServerEvents.recipes(e => {
     .id(st('thick_neutron_reflector'));
 
     // -- LEAD INGOT FROM GALENA ORE -- //
-    e.smelting(mi('lead_ingot'), '#c:galena_ores', 1);
-    e.blasting(mi('lead_ingot'), '#c:galena_ores', 1);
+    event.smelting(mi('lead_ingot'), '#c:galena_ores', 1);
+    event.blasting(mi('lead_ingot'), '#c:galena_ores', 1);
 
     // -- LEAD INGOT FROM GALENA DUST -- //
-    e.smelting(mi('lead_ingot'), tr('galena_dust'), 0.7);
-    e.blasting(mi('lead_ingot'), tr('galena_dust'), 0.7);
+    event.smelting(mi('lead_ingot'), tr('galena_dust'), 0.7);
+    event.blasting(mi('lead_ingot'), tr('galena_dust'), 0.7);
 });
 
-ServerEvents.tags('item', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let tr = (id) => `techreborn:${id}`;
-
+ServerEvents.tags('item', event => {
     const ORES = [
         tr('cinnabar_ore'),
         tr('galena_ore'),
@@ -922,14 +913,10 @@ ServerEvents.tags('item', e => {
         tr('deepslate_silver_ore'),
         tr('deepslate_sodalite_ore')
     ];
-    ORES.forEach(id => e.add('c:ores', id));
+    ORES.forEach(id => event.add('c:ores', id));
 });
 
-ServerEvents.tags('block', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
-    let tr = (id) => `techreborn:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-
+ServerEvents.tags('block', event => {
     const BLOCKS = [
         tr('basic_solar_panel'),
         tr('advanced_solar_panel'),
@@ -971,8 +958,8 @@ ServerEvents.tags('block', e => {
         tr('reinforced_glass')
     ];
 
-    BLOCKS.forEach(id => e.add(mc('mineable/pickaxe'), id));
-    BLOCKS.forEach(id => e.add(mc('needs_stone_tool'), id));
+    BLOCKS.forEach(id => event.add(mc('mineable/pickaxe'), id));
+    BLOCKS.forEach(id => event.add(mc('needs_stone_tool'), id));
 
-    e.add(mc('mineable/axe'), tr('resin_basin'));
+    event.add(mc('mineable/axe'), tr('resin_basin'));
 });

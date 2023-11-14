@@ -3,18 +3,14 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:toolleveling/${id}`;
-    let sp = (id) => `spectrum:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let tl = (id) => `toolleveling:${id}`;
 
     // Remove the default Tool Leveing Table recipe
-    e.remove({ id: tl('tool_leveling_table') });
+    event.remove({ id: tl('tool_leveling_table') });
 
     // -- TOOL LEVELING TABLE -- //
-    e.custom({
+    event.custom({
         type: sp('pedestal'),
         time: 1200,
         tier: 'advanced',

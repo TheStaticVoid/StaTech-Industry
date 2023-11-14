@@ -3,12 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:quarrymod/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let qm = (id) => `quarrymod:${id}`;
 
     // -- QUARRYMOD REMOVED RECIPES -- //
     const REMOVED = [
@@ -16,10 +12,10 @@ ServerEvents.recipes(e => {
         qm('crafting_table/upgrades/range_extender_lvl1_upgrade'),
         qm('crafting_table/upgrades/silktouch_upgrade')
     ];
-    REMOVED.forEach(id => e.remove({ id: id }));
+    REMOVED.forEach(id => event.remove({ id: id }));
 
     // -- FORTUNE UPGRADE LVL1 -- //
-    e.shaped(qm('fortune_lvl1_upgrade'), [
+    event.shaped(qm('fortune_lvl1_upgrade'), [
         'PLP',
         'AEA',
         ' P '
@@ -33,7 +29,7 @@ ServerEvents.recipes(e => {
     .id(st('fortune_lvl1_upgrade'));
 
     // -- RANGE EXTENDER UPGRADE LVL1 -- //
-    e.shaped(qm('range_extender_lvl1_upgrade'), [
+    event.shaped(qm('range_extender_lvl1_upgrade'), [
         'ATT',
         'TPT',
         'TTA'
@@ -46,7 +42,7 @@ ServerEvents.recipes(e => {
     .id(st('range_extender_lvl1_upgrade'));
 
     // -- SILKTOUCH UPGRADE -- //
-    e.shaped(qm('silktouch_upgrade'), [
+    event.shaped(qm('silktouch_upgrade'), [
         'PCP',
         'CMC',
         'PIP'
@@ -60,7 +56,7 @@ ServerEvents.recipes(e => {
     .id(st('silktouch_upgrade'));
 
     // -- QUARRY -- //
-    e.shaped(qm('quarry'), [
+    event.shaped(qm('quarry'), [
         'MDM',
         'CFC',
         'PTP'

@@ -3,12 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:kibe/${id}`;
-    let kb = (id) => `kibe:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
     // -- REMOVED RECIPES -- //
     const KIBE_DELETED_ITEMS = [
@@ -37,15 +33,15 @@ ServerEvents.recipes(e => {
         kb('big_torch'),
         kb('measuring_tape')
     ];
-    KIBE_DELETED_ITEMS.forEach( id => e.remove( {id: id} ));
+    KIBE_DELETED_ITEMS.forEach( id => event.remove( {id: id} ));
 
     // -- SLIME BOOTS -- // 
-    e.replaceOutput( {id: kb('slime_boots')}, 
+    event.replaceOutput( {id: kb('slime_boots')}, 
                     kb('slime_boots'),
                     Item.of(kb('slime_boots'), '{Unbreakable: 1b}'));
 
     // -- MEASURING TAPE -- //
-    e.shaped(kb('measuring_tape'), [
+    event.shaped(kb('measuring_tape'), [
         ' L ',
         'LIL',
         ' LY'
@@ -58,7 +54,7 @@ ServerEvents.recipes(e => {
     .id(st('measuring_tape'));
 
     // -- GLIDER LEFT WING -- //
-    e.shaped(kb('glider_left_wing'), [
+    event.shaped(kb('glider_left_wing'), [
         ' SL',
         'SLL',
         'LLR'
@@ -71,7 +67,7 @@ ServerEvents.recipes(e => {
     .id(st('glider_left_wing'));
 
     // -- GLIDER RIGHT WING -- //
-    e.shaped(kb('glider_right_wing'), [
+    event.shaped(kb('glider_right_wing'), [
         'LS ',
         'LLS',
         'RLL'
@@ -84,7 +80,7 @@ ServerEvents.recipes(e => {
     .id(st('glider_right_wing'));
 
     // -- REGULAR CONVEYOR BELT -- //
-    e.shaped('8x ' + kb('regular_conveyor_belt'), [
+    event.shaped('8x ' + kb('regular_conveyor_belt'), [
         'YYY',
         'CCC',
         'III'
@@ -97,7 +93,7 @@ ServerEvents.recipes(e => {
     .id(st('regular_conveyor_belt'));
 
     // -- FAST CONVEYOR BELT -- //
-    e.shaped('8x ' + kb('fast_conveyor_belt'), [
+    event.shaped('8x ' + kb('fast_conveyor_belt'), [
         'RRR',
         'CTC',
         'III'
@@ -111,7 +107,7 @@ ServerEvents.recipes(e => {
     .id(st('fast_conveyor_belt'));
 
     // -- EXPRESS CONVEYOR BELT -- //
-    e.shaped('8x ' + kb('express_conveyor_belt'), [
+    event.shaped('8x ' + kb('express_conveyor_belt'), [
         'UUU',
         'CTC',
         'III'
@@ -125,7 +121,7 @@ ServerEvents.recipes(e => {
     .id(st('express_conveyor_belt'));
 
     // -- MAGNET -- //
-    e.shaped(kb('magnet'), [
+    event.shaped(kb('magnet'), [
         'DRR',
         'R  ',
         'DRR'
@@ -137,7 +133,7 @@ ServerEvents.recipes(e => {
     .id(st('magnet'));
 
     // -- ESCAPE ROPE -- //
-    e.shaped(kb('escape_rope'), [
+    event.shaped(kb('escape_rope'), [
         'SS ',
         'SS ',
         'SSH'
@@ -149,7 +145,7 @@ ServerEvents.recipes(e => {
     .id(st('escape_rope'));
 
     // -- COBBLESTONE GENERATOR MK2 -- //
-    e.shaped(kb('cobblestone_generator_mk2'), [
+    event.shaped(kb('cobblestone_generator_mk2'), [
         'GCG',
         'CHC',
         'GCG'
@@ -162,7 +158,7 @@ ServerEvents.recipes(e => {
     .id(st('cobblestone_generator_mk2'));
 
     // -- COBBLESTONE GENERATOR MK3 -- //
-    e.shaped(kb('cobblestone_generator_mk3'), [
+    event.shaped(kb('cobblestone_generator_mk3'), [
         'DCD',
         'CHC',
         'DCD'
@@ -175,7 +171,7 @@ ServerEvents.recipes(e => {
     .id(st('cobblestone_generator_mk3'));
 
     // -- COBBLESTONE GENERATOR MK4 -- //
-    e.shaped(kb('cobblestone_generator_mk4'), [
+    event.shaped(kb('cobblestone_generator_mk4'), [
         'ECE',
         'CHC',
         'ECE'
@@ -188,7 +184,7 @@ ServerEvents.recipes(e => {
     .id(st('cobblestone_generator_mk4'));
 
     // -- COBBLESTONE GENERATOR MK5 -- //
-    e.shaped(kb('cobblestone_generator_mk5'), [
+    event.shaped(kb('cobblestone_generator_mk5'), [
         'NCN',
         'CHC',
         'NCN'
@@ -201,7 +197,7 @@ ServerEvents.recipes(e => {
     .id(st('cobblestone_generator_mk5'));
 
     // -- BASALT GENERATOR MK2 -- //
-    e.shaped(kb('basalt_generator_mk2'), [
+    event.shaped(kb('basalt_generator_mk2'), [
         'GCG',
         'CHC',
         'GCG'
@@ -214,7 +210,7 @@ ServerEvents.recipes(e => {
     .id(st('basalt_generator_mk2'));
 
     // -- BASALT GENERATOR MK3 -- //
-    e.shaped(kb('basalt_generator_mk3'), [
+    event.shaped(kb('basalt_generator_mk3'), [
         'DCD',
         'CHC',
         'DCD'
@@ -227,7 +223,7 @@ ServerEvents.recipes(e => {
     .id(st('basalt_generator_mk3'));
 
     // -- BASALT GENERATOR MK4 -- //
-    e.shaped(kb('basalt_generator_mk4'), [
+    event.shaped(kb('basalt_generator_mk4'), [
         'ECE',
         'CHC',
         'ECE'
@@ -240,7 +236,7 @@ ServerEvents.recipes(e => {
     .id(st('basalt_generator_mk4'));
 
     // -- BASALT GENERATOR MK5 -- //
-    e.shaped(kb('basalt_generator_mk5'), [
+    event.shaped(kb('basalt_generator_mk5'), [
         'NCN',
         'CHC',
         'NCN'
@@ -253,7 +249,7 @@ ServerEvents.recipes(e => {
     .id(st('basalt_generator_mk5'));
 
     // -- DIAMOND RING -- //
-    e.shaped(kb('diamond_ring'), [
+    event.shaped(kb('diamond_ring'), [
         'NDN',
         ' R ',
         'N N'
@@ -266,7 +262,7 @@ ServerEvents.recipes(e => {
     .id(st('diamond_ring'));
 
     // -- MAGMA RING -- //
-    e.shaped(kb('magma_ring'), [
+    event.shaped(kb('magma_ring'), [
         'WOW',
         'CRC',
         'WOW'
@@ -280,7 +276,7 @@ ServerEvents.recipes(e => {
     .id(st('magma_ring'));
 
     // -- WATER RING -- //
-    e.shaped(kb('water_ring'), [
+    event.shaped(kb('water_ring'), [
         'WLW',
         'PRP',
         'WLW'
@@ -294,7 +290,7 @@ ServerEvents.recipes(e => {
     .id(st('water_ring'));
 
     // -- BIG TORCH -- //
-    e.shaped(kb('big_torch'), [
+    event.shaped(kb('big_torch'), [
         'CCC',
         'LSL',
         'LSL'
@@ -307,36 +303,33 @@ ServerEvents.recipes(e => {
     .id(st('big_torch'));
 });
 
-ServerEvents.tags('item', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let kb = (id) => `kibe:${id}`;
-
+ServerEvents.tags('item', event => {
     const KIBE_SPIKES = [
         kb('stone_spikes'),
         kb('iron_spikes'),
         kb('gold_spikes'),
         kb('diamond_spikes')
     ];
-    KIBE_SPIKES.forEach( id => e.add('kubejs:kibe_spikes', id) );
+    KIBE_SPIKES.forEach( id => event.add(kj('kibe_spikes'), id) );
 
     const KIBE_BELTS = [
         kb('regular_conveyor_belt'),
         kb('fast_conveyor_belt'),
         kb('express_conveyor_belt')
     ];
-    KIBE_BELTS.forEach( id => e.add('kubejs:kibe_belts', id) );
+    KIBE_BELTS.forEach( id => event.add(kj('kibe_belts'), id) );
 
     const KIBE_LASSOS = [
         kb('cursed_lasso'),
         kb('golden_lasso'),
         kb('diamond_lasso')
     ];
-    KIBE_LASSOS.forEach( id => e.add('kubejs:kibe_lassos', id) );
+    KIBE_LASSOS.forEach( id => event.add(kj('kibe_lassos'), id) );
 
     const KIBE_WITHERPROOF = [
         kb('wither_proof_sand'),
         kb('wither_proof_block'),
         kb('wither_proof_glass')
     ];
-    KIBE_WITHERPROOF.forEach( id => e.add('kubejs:kibe_witherproof', id) );
+    KIBE_WITHERPROOF.forEach( id => event.add(kj('kibe_witherproof'), id) );
 });

@@ -3,18 +3,14 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:xps/${id}`;
-    let xp = (id) => `xps:${id}`;
-    let cr = (id) => `create:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
     // Remove the default Soul Copper Blend recipe
-    e.remove({ id: xp('soul_copper_blend') });
+    event.remove({ id: xp('soul_copper_blend') });
 
     // -- SOUL COPPER BLEND -- //
-    e.custom({
+    event.custom({
         type: cr('mixing'),
         ingredients: [
             { item: mc('raw_copper') },

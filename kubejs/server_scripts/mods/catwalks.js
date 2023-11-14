@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // Remove the iron rod from this mod
-    e.remove( {id: 'catwalksinc:iron_rod'} );
+    event.remove( {id: 'catwalksinc:iron_rod'} );
 });

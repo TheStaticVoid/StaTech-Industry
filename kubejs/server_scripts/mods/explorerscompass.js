@@ -3,17 +3,14 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:explorerscompass/${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ec = (id) => `explorerscompass:${id}`;
 
     // Remove the default compass recipe
-    e.remove( {id: ec('explorers_compass')} );
+    event.remove( {id: ex('explorers_compass')} );
     
     // -- EXPLORER'S COMPASS -- // 
-    e.shaped(ec('explorerscompass'), [
+    event.shaped(ex('explorerscompass'), [
         'CSC',
         'SOS',
         'CSC'

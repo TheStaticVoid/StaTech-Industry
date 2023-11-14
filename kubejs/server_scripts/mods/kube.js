@@ -3,16 +3,11 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:kubejs/${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let ad = (id) => `ad_astra:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
     // -- SPACE PROBE -- //
-    e.shaped('4x ' + kj('space_probe'), [
+    event.shaped('4x ' + kj('space_probe'), [
         'FCD',
         'TMC',
         'ETF'
@@ -28,7 +23,7 @@ ServerEvents.recipes(e => {
     .id(st('space_probe'));
 
     // -- JON BARTMAN --//
-    e.shaped(kj('bartman'), [
+    event.shaped(kj('bartman'), [
         'PCP',
         'BWB',
         'BEB'

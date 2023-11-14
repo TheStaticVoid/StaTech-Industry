@@ -3,12 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
     let st = (id) => `statech:wirelesschargers/${id}`;
-    let wc = (id) => `wirelesschargers:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
     // -- WIRELESS CHARGERS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -17,10 +13,10 @@ ServerEvents.recipes(e => {
         wc('basic_wireless_player_charger'),
         wc('advanced_wireless_player_charger')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({ id: id }));
+    REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
     // -- BASIC WIRELESS BLOCK CHARGER -- //
-    e.shaped(wc('basic_wireless_block_charger'), [
+    event.shaped(wc('basic_wireless_block_charger'), [
         'PCP',
         'CHC',
         'SES'
@@ -35,7 +31,7 @@ ServerEvents.recipes(e => {
     .id(st('basic_wireless_block_charger'));
 
     // -- BASIC WIRELESS PLAYER CHARGER -- //
-    e.shaped(wc('basic_wireless_player_charger'), [
+    event.shaped(wc('basic_wireless_player_charger'), [
         'PCP',
         'CHC',
         'SES'
@@ -50,13 +46,13 @@ ServerEvents.recipes(e => {
     .id(st('basic_wireless_player_charger'));
 
     // -- ADVANCED WIRELESS BLOCK CHARGER -- //
-    e.shapeless(wc('advanced_wireless_block_charger'), [
+    event.shapeless(wc('advanced_wireless_block_charger'), [
         wc('basic_wireless_block_charger'),
         '3x ' + mi('annealed_copper_cable')
     ]).id(st('advanced_wireless_block_charger'));
 
     // -- ADVANCED WIRELESS PLAYER CHARGER -- //
-    e.shapeless(wc('advanced_wireless_player_charger'), [
+    event.shapeless(wc('advanced_wireless_player_charger'), [
         wc('basic_wireless_player_charger'),
         '3x ' + mi('kanthal_cable')
     ]).id(st('advanced_wireless_player_charger'));
