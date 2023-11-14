@@ -1028,7 +1028,7 @@
 		{
 			dependencies: ["4F278EA5EC5E59E1"]
 			description: [
-				"&aHidden mode&r can be toggled with a &eblack dye&r. It makes it so that the drawer doesn't show its item."
+				"&aHidden mode&r can be toggled with a &eblack dye&r. It makes it so that the drawer doesn't show it's item."
 				""
 				"This is mostly useful when you have a big network of drawers and want to improve performance as rendering the item icons can be very expensive."
 				""
@@ -1061,270 +1061,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["045C683BF6E216CB"]
-			description: [
-				"&aTom's Simple Storage Mod&r is going to be a godsend for the early game, as you won't have access to an &eApplied Energistics 2&r network until &2Electronic Circuits&r."
-				""
-				"The &bInventory Connector&r acts similarly to the &cAE2 Controller&r. It's the heart of an inventory network. You can connect terminals to the &bInventory Connector&r to access all the linked inventories."
-			]
-			id: "6BBBD642A60FDFB5"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5C8ADCCBCBFABB4B"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "51DA2C135509998C"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			size: 1.5d
-			tasks: [{
-				id: "71B5C2E2CBC5F162"
-				item: "toms_storage:ts.inventory_connector"
-				type: "item"
-			}]
-			title: "Tom's Simple Storage Mod"
-			x: -3.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["6BBBD642A60FDFB5"]
-			description: ["The &aStorage Terminal&r can be connected to the &bInventory Connector&r to display all the linked inventories and access all the items."]
-			id: "3ED795611B49EB0E"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "145392B2B3DCAB43"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "52552E6F0CE3E4F4"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "674CFAB6B09EF995"
-				item: "toms_storage:ts.storage_terminal"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["3ED795611B49EB0E"]
-			description: ["The &aCrafting Terminal&r is an upgraded terminal that allows you to craft while accessing your inventory network. Pretty much similar to the &cAE2 Crafting Terminal&r."]
-			id: "5E15C005B58CC8D7"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "44EDDFE1B81D3442"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "21EB591E673DA7DF"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "4DCC84445F628AE7"
-				item: "toms_storage:ts.crafting_terminal"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["6BBBD642A60FDFB5"]
-			description: ["The &bWireless Terminal&r is an item that can be used to remotely access your &aInventory Terminals&r. To use, hold the &bWireless Terminal&r and aim at an terminal on your network, you'll need to be within 16 blocks to do so."]
-			id: "3B4AD85236538A6A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6544FD6BE1A0D113"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "71A3608402C9FC62"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "33D57845007A1A31"
-				item: "toms_storage:ts.wireless_terminal"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["6BBBD642A60FDFB5"]
-			description: [
-				"&2Inventory Cables&r can extend the range of your inventory connection. Use an &bInventory Cable Connector&r to link the inventory to the cable."
-				""
-				"It's much cheaper to use &aInventory Trims&r to connect to your &eInventory Connector&r, but the &bCable Connectors&r are great when something is far away!"
-			]
-			id: "202F9363708E9BA5"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "564FB1420B38A681"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "74690D37F795A663"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			subtitle: "Connect all the things!"
-			tasks: [
-				{
-					id: "682E301AF55B916D"
-					item: "toms_storage:ts.inventory_cable"
-					type: "item"
-				}
-				{
-					id: "547BB1BAED3335DE"
-					item: "toms_storage:ts.inventory_cable_connector"
-					type: "item"
-				}
-			]
-			title: "Inventory Cables"
-			x: -5.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["3B4AD85236538A6A"]
-			description: [
-				"The &aAdvanced Wireless Terminal&r allows you to access your network without having to be nearby and looking at the terminal. &eShift-right click&r a terminal to bind to it."
-				""
-				"Placing a &ctier 1 beacon&r near the bound terminal will allow you to access the inventory anywhere in the current dimension."
-				"Placing a full &ctier 4 beacon&r near the bound terminal will allow you to access the inventory anywhere, even across dimensions. "
-				""
-				"The &echunks&r the inventories are in will &eneed to be loaded&r to access them remotely."
-			]
-			id: "559DE4D9670C28F8"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "721196161B0B5A1D"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "20C8A4DF1DA57305"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "3953D363A8837FE6"
-				item: "toms_storage:ts.adv_wireless_terminal"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["6BBBD642A60FDFB5"]
-			description: ["The &aInventory Trim&r can be used to connect other inventories to your &eInventory Connector&r. Place a &aTrim&r connecting from the &eInventory Connector&r to chest/barrels/etc to &3link it all up&r!"]
-			id: "15266EC696E60BE3"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "13FF54C6B8CC7D2D"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "705994C523DA81A1"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "69C633BC22E5E9E5"
-				item: "toms_storage:ts.trim"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["6BBBD642A60FDFB5"]
-			description: [
-				"The &aBasic Inventory Hopper&r can import or export from your inventory network."
-				""
-				"&eRight click&r to set the filter, &eshift-right click&r with an empty hand to clear the filter."
-			]
-			id: "07F958D1B6C27546"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "42D98EE46B713984"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "0B374A15F23522D1"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "29938D65B3258B57"
-				item: "toms_storage:ts.inventory_hopper_basic"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["6BBBD642A60FDFB5"]
-			description: ["Emits redstone signals based on your inventory storage. Similar to the &eAE2 Level Emitter&r."]
-			id: "532263D258F71B9A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4303F82D002636E9"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "27EE0CBD43922B56"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "2D0F6AB857FDC64E"
-				item: "toms_storage:ts.level_emitter"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 3.5d
-		}
-		{
 			dependencies: ["300516B03C1580A2"]
 			description: [
 				"While traversing your world you might have noticed &3small pebbles&r placed around the surface called &dSamples&r. These &dSamples&r are indicative of a &elarger ore deposit&r below them. That's right, &2GregTech-like oregen&r is in this pack and you will need to find varying &eore deposits&r to gather the materials you will need to progress. Don't worry, once you find one it will last awhile. Also it is worth noting that &cthere aren't many types of ores for a single type of material&r. An &aIron Vein&r will have &aIron Ore&r, and no other &cIron Ore-like&r ores like &2GregTech&r."
@@ -1338,8 +1074,8 @@
 				"A complete breakdown of these values is as follows:"
 				"- &3Range&r: the &ay-level range&r the vein can generate"
 				"- &2Size&r: the &bsize of the vein&r, &cdoes not correlate to how many blocks are in the vein&r"
-				"- &dDimension&r: which &edimension&r the vein can be found in"
-				"- &bBiome&r: which &6biome&r the vein can be found in"
+				"- &dDimension&r: which &edimension&r the vein can be found"
+				"- &bBiome&r: which &6biome&r the vein can be found"
 				"- &9Weight&r: the generation &3weight&r of this specific vein"
 				"- &6Blocks&r: the &aores within the vein&r and their &3generation rate within the vein&r"
 				""
@@ -1499,7 +1235,7 @@
 		}
 		{
 			dependencies: ["045C683BF6E216CB"]
-			description: ["Unfortunately, &eTinker's Construct&r is not in the pack, however its &aCrafting Station&r has been added by &6Enhanced Workbenches&r mod. It doesn't appear that it currently can pull from adjacent inventories, &2but it might in the future&r! For now it just retains your items after you close it (&obut wait the default one does that too&r?)"]
+			description: ["Unfortunately, &eTinker's Construct&r is not in the pack, however it's &aCrafting Station&r has been added by &6Enhanced Workbenches&r mod. It doesn't appear that it currently can pull from adjacent inventories, &2but it might in the future&r! For now it just retains your items after you close it (&obut wait the default one does that too&r?)"]
 			id: "6E39043C6369B7A3"
 			rewards: [
 				{

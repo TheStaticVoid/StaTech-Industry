@@ -180,41 +180,6 @@
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
-			description: ["This modpack includes &aSimply Swords&f and &eBetter Combat&f. Together these &6overhaul the combat of vanilla Minecraft completely&r and offer a broad variety of &3weapons&r to try out."]
-			icon: {
-				Count: 1b
-				id: "simplyswords:shadowsting"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "1709043780838C78"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5154D4BBD441EF8E"
-					table_id: 2190234234133751555L
-					type: "choice"
-				}
-				{
-					id: "0B207279AC73FEF9"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			subtitle: "It's dangerous to go alone!"
-			tasks: [{
-				id: "094A44397AB8351C"
-				title: "Click to Acknowledge"
-				type: "checkmark"
-			}]
-			title: "Better Combat"
-			x: 1.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["2174585D87F83C89"]
 			description: ["This pack includes &aOh The Biomes You'll Go&r as it's primary &eworld generation mod&r. This mod adds &6new biomes (duh), tools, ores, food, and blocks&r to enhance your world. "]
 			icon: "byg:byg_logo"
 			id: "571425ED36DA521C"
@@ -454,7 +419,7 @@
 		}
 		{
 			dependencies: ["2174585D87F83C89"]
-			description: ["&aOre generation&r is altered in this pack as of &e1.1.0&r. It now mimics closer to oregen you would find in &aGregTech&r. There's a quest in the &6first chapter&r that goes into more detail on finding ore veins with the &2Prospector's Pick&r, but I figured it would be a good idea to point it out here before anyone got &bconfused as to why they couldn't find ores while caving&r."]
+			description: ["&aOre generation&r is altered in this pack and it now mimics closer to oregen you would find in &aGregTech&r. There's a quest in the &6first chapter&r that goes into more detail on finding ore veins with the &2Prospector's Pick&r, but I figured it would be a good idea to point it out here before anyone got &bconfused as to why they couldn't find ores while caving&r."]
 			icon: "minecraft:iron_ore"
 			id: "390A2E3905298F9A"
 			rewards: [{

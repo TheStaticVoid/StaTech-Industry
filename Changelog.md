@@ -10,8 +10,11 @@
 - [Builtin Servers](https://www.curseforge.com/minecraft/mc-mods/builtin-servers) - Adds the public servers for quick access to the multiplayer screen
 - [CleanView](https://www.curseforge.com/minecraft/mc-mods/cleanview-fabric) - Removes potion effects on your player in first person
 - [Columns](https://www.curseforge.com/minecraft/mc-mods/columns) - Adds a column building block
+- [Effortless Fabric](https://www.curseforge.com/minecraft/mc-mods/effortless-fabric) - A fabric port of Effortless Building
 - [Immersive Aircraft](https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft) - Adds some industrial forms of transportation
 - [Iris Flywheel Compat](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat) - Helps address a lot of the lag Create creates(lol) when using shaders
+- [Jade](https://www.curseforge.com/minecraft/mc-mods/jade) - Replaces WTHIT
+- [Jade: Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons-fabric) - Addon for Jade
 - [JEPP](https://www.curseforge.com/minecraft/mc-mods/jepp) - Preview all the possible paintings available
 - [Mining Gadgets](https://www.curseforge.com/minecraft/mc-mods/mining-gadgets-fabric) - Mining with lasers, who needs drills anyway?
 - [Mystical Oak Tree](https://www.curseforge.com/minecraft/mc-mods/mystical-oak-tree) - If you're 25 or older you MUST try this game!
@@ -24,6 +27,7 @@
 - [Seamless Loading Screen](https://www.curseforge.com/minecraft/mc-mods/seamless-loading-screen) - Takes a screenshot so you can see where you left off when you join your world
 - [Server Country Flags](https://www.curseforge.com/minecraft/mc-mods/server-country-flags) - Shows you which country a server is from
 - [Show Me Your Skin](https://www.curseforge.com/minecraft/mc-mods/show-me-your-skin) - replaces cosmetic armor
+- [Solar Panels](https://www.curseforge.com/minecraft/mc-mods/solar-panels) - Adds configurable solar panels to the pack
 - [Styled Player List](https://www.curseforge.com/minecraft/mc-mods/styled-player-list) - Customizes the playerlist to include TPS and ping
 - [Tips](https://www.curseforge.com/minecraft/mc-mods/tips) - Helpful tips in the pack
 - [TooltipFix](https://www.curseforge.com/minecraft/mc-mods/tooltipfix) - Replaced adaptive tooltips
@@ -32,9 +36,15 @@
 
 ## Mods removed:
 - [Adaptive Tooltips](https://www.curseforge.com/minecraft/mc-mods/adaptive-tooltips) - Replaced by tooltipfix
+- [badpackets](https://www.curseforge.com/minecraft/mc-mods/badpackets) - Depedency for megane
+- [Better Combat](https://www.curseforge.com/minecraft/mc-mods/better-combat-by-daedelus) - Neat, but doesn't fit in the pack
+- [Building Wands](https://www.curseforge.com/minecraft/mc-mods/building-wands) - Finally my love/hate relationship comes to an end
+- [Can I Mine This Block](https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block) - Removed alongside WTHIT
 - [Cosmetic Armor](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-fabric) - Replaced with Show Me Your Skin
 - [Hookshot](https://www.curseforge.com/minecraft/mc-mods/hookshot) - underutilized
 - [Runes](https://www.curseforge.com/minecraft/mc-mods/rune-crafting) - Part of the wizards package
+- [megane](https://www.curseforge.com/minecraft/mc-mods/megane) - Removed alongside WTHIT
+- [Simply Swords](https://www.curseforge.com/minecraft/mc-mods/simply-swords) - Removed alongside Better Combat
 - [Spellblades and Such](https://www.curseforge.com/minecraft/mc-mods/spellblade-next) - Underutilized and just didn't fit the pack well
 - [Spell Power](https://www.curseforge.com/minecraft/mc-mods/spell-power) - Part of the wizards package
 - [Spell Engine](https://www.curseforge.com/minecraft/mc-mods/spell-engine) - Part of the wizards package
@@ -43,15 +53,46 @@
 - [Tom's Simple Storage Mod](https://www.curseforge.com/minecraft/mc-mods/toms-storage-fabric) - Too many bugs to handle, replaced by slotlink
 - [Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) - A bit bloaty of a mod that isn't required for progression, one of the victims of streamlining the pack
 - [Wizards](https://www.curseforge.com/minecraft/mc-mods/wizards) - Removing because this magic mod was not really used and was very underpowered
+- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - Replaced by Jade. This is just a preference thing, but I like Jade more.
 
 ## Mods updated:
-- [ChoiceTheorem's Overhauled Village](https://www.curseforge.com/minecraft/mc-mods/choicetheorems-overhauled-village) - 3.2.5 -> 3.2.6b
-- [Extended Drawers](https://www.curseforge.com/minecraft/mc-mods/extended-drawers) - 1.4.3 -> 1.4.4
+- [Applied Energistics 2 Wireless Terminals](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2-wireless-terminals) - 12.9.5 -> 12.9.8
+- [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.22 -> 0.10.23
+- [ChoiceTheorem's Overhauled Village](https://www.curseforge.com/minecraft/mc-mods/choicetheorems-overhauled-village) - 3.2.5 -> 3.2.6c
+- [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) - 6.66 -> 7.7
+- [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) - 2.0 -> 2.1
+- [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful) - 4.0.4 -> 4.0.5
+- [Extended Drawers](https://www.curseforge.com/minecraft/mc-mods/extended-drawers) - 1.4.3 -> 1.4.5
+- [Extreme Sound Muffler](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler-fabric-official) - 3.38 -> 3.39
+- [Dank Storage](https://www.curseforge.com/minecraft/mc-mods/dank-storage-fabric) - dankstorage - 4.3 -> 4.4
+- [Fabric Language Kotlin](https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin) - 1.9.10 -> 1.9.20
+- [FTB Backups](https://www.curseforge.com/minecraft/mc-mods/ftb-backups-2) - 1.0.22 -> 1.0.23
 - [FTB Essentials](https://www.curseforge.com/minecraft/mc-mods/ftb-essentials-forge) - 1902.3.3-build.100 -> 1902.3.4-build.109
 - [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric) - 1902.5.5-build.297 -> 1902.5.6-build.304
-- [RoughlyEnoughItems](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.657 -> 9.1.663
-- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.25 -> 2.4.26
-- [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) - 1.1.12b -> 1.1.14
+- [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) - 1.2.2 -> 1.2.3
+- [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next) - 1.10.7 -> 1.10.9
+- [Iris](https://modrinth.com/mod/iris) - 1.6.9 -> 1.6.10
+- [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.1-build.370 -> 1902.6.2-build.39
+- [Macaw's Paintings](https://www.curseforge.com/minecraft/mc-mods/macaws-paintings) - 1.0.4 -> 1.0.5
+- [MI Sound Addon](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization-sound-addon) - 1.0.1 -> 1.0.2
+- [Modernfix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.7.4 -> 5.9.3
+- [Moonlight Lib](https://www.curseforge.com/minecraft/mc-mods/selene) - 2.2.45 -> 2.3.5
+- [Naturalist](https://www.curseforge.com/minecraft/mc-mods/naturalist) - 3.0.4 -> 4.0.3
+- [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) - 1.6.2 -> 1.6.4
+- [Oh the Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric) - 2.0.1.4 -> 2.0.1.6
+- [Passive Shield](https://www.curseforge.com/minecraft/mc-mods/passive-shield) - 3.2 -> 3.3
+- [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph) - 0.46.4 -> 0.46.5
+- [Raised](https://www.curseforge.com/minecraft/mc-mods/raised) - 3.0.0 -> 3.1.0
+- [Rhino](https://www.curseforge.com/minecraft/mc-mods/rhino) - 1902.2.2-build.272 -> 1902.2.2-build.280
+- [RoughlyEnoughItems](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.657 -> 9.1.668
+- [Server Country Flags](https://www.curseforge.com/minecraft/mc-mods/server-country-flags) - 1.8.1 -> 1.9.2
+- [ShetiPhianCore](https://www.curseforge.com/minecraft/mc-mods/shetiphiancore-fabric) - 1.3.11 -> 1.3.12
+- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.25 -> 2.4.28
+- [Spice of Fabric](https://www.curseforge.com/minecraft/mc-mods/spice-of-fabric) - 1.6.1 -> 1.6.2
+- [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) - 1.1.8 -> 1.1.8a
+- [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) - 1.1.12b -> 1.1.15
+- [Superflat World No Slimes](https://www.curseforge.com/minecraft/mc-mods/superflat-world-no-slimes) - 3.0 -> 3.1
+- [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) - 2.3.24 -> 2.4.10
 - [Tech-enhanced](https://www.curseforge.com/minecraft/mc-mods/tech-enhanced) - 1.0.6 -> 1.0.7
 
 ## Other changes:

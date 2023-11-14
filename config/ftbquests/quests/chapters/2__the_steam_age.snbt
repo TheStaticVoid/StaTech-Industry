@@ -232,7 +232,7 @@
 				""
 				"The &6Bronze Boiler&r will slowly use fuel to heat itself up. When it's hot enough, and has &9water&r, it will start to produce &7steam&r."
 				""
-				"Don't worry, the &6Bronze Boiler&r will &cnot void your fuel&r if the &7steam&r output is full. You can insert &9water&r into the boiler with a bucket or with &bpipes&r."
+				"Don't worry, the &6Bronze Boiler&r will &cnot void your fuel&r if the &7steam&r output is full. You can input &9water&r the boiler with a bucket or with &bpipes&r."
 			]
 			id: "77EAB1D011541800"
 			rewards: [
@@ -662,7 +662,7 @@
 				""
 				"The &aCoke Oven&r block has the role of the &2controller&r for the multiblock. &eEvery multiblock is managed by a controller&r, but you usually &ccannot I/O from the controller directly&r: all input and output goes through &ahatches&r. We need a &2Fluid Input Hatch&r because the &aCoke Oven&r is powered by &7steam&r, we need an item input for the coal and output for the coke."
 				""
-				"If you're having trouble forming the multiblock, hold W on the &aCoke Oven&r in your inventory to view the &bPonder&r scene for the multiblock. Additionally, you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
+				"If you're having trouble forming the multiblock, hold W on the &aCoke Oven&r in your inventory to view the &bPonder&r scene for the multiblock, additionally you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
 				""
 				"Once the &aCoke Oven&r says &dShape Valid&r, fill the fluid input hatch with &7Steam&r, put Coal in the &3Item Input Hatch&r and you're good to go!"
 				""
@@ -957,7 +957,7 @@
 			description: [
 				"To turn your &eUncooked Steel&r Dust into &eSteel Ingots&r, you will need a &2Blast Furnace&r. For now your &2Blast Furnace&r will be powered off of &7steam&r. "
 				""
-				"You will need the same amount of materials in the quest requirements to build the &2Steam Blast Furnace&r. Its structure is very similar to the &aCoke Oven&r's, with &cBricks&r being replaced by &eFire Clay Bricks&r and one extra hollow layer on top. Like before, if you forget how to build the multiblock, you can always hold your wrench to see it or hold 'W' on the &aSteam Blast Furnace&r item to view its &bPonder&r scene."
+				"You will need the same amount of materials in the quest requirements to build the &2Steam Blast Furnace&r. It's structure is very similar to the &aCoke Oven&r's with &cBricks&r being replaced by &eFire Clay Bricks&r and one extra hollow layer on top. Like before, if you forget how to build the multiblock, you can always hold your wrench to see it or hold 'W' on the &aSteam Blast Furnace&r item to view it's &bPonder&r scene."
 			]
 			icon: "modern_industrialization:steam_blast_furnace"
 			id: "578C4D10471D6EC9"
@@ -2342,7 +2342,7 @@
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
-			description: ["The &eSteel Tank&r is an upgrade to the &6Bronze Tank&r from earlier. It now can store up to &d8000 mB&r of any fluid and continues to retain its inventory when broken."]
+			description: ["The &eSteel Tank&r is an upgrade to the &6Bronze Tank&r from earlier. It now can store up to &d8000 mB&r of any fluid and continues to retain it's inventory when broken."]
 			id: "0A8E881B45C7FCFC"
 			rewards: [
 				{
@@ -4363,7 +4363,7 @@
 				""
 				"This &aTier 1 Dank&r has &d9 slots&r and each can hold a stacksize of &6256 items&r."
 				""
-				"In addition to its storage, it has options to &9automatically pickup blocks&r, &3pickup from a filter&r, or &dvoid blocks&r. Think of all that Cobblestone you no longer have to sort through in your inventory!"
+				"In addition to it's storage, it has options to &9automatically pickup blocks&r, &3pickup from a filter&r, or &dvoid blocks&r. Think of all that Cobblestone you no longer have to sort through in your inventory!"
 			]
 			id: "7D90B29796571A7E"
 			rewards: [
@@ -4521,7 +4521,7 @@
 		{
 			dependencies: ["738FE28369D3A550"]
 			description: [
-				"Tired on waiting for those &evanilla furnaces&r to take forever to smelt down your &6ores&r and &2dusts&r? The &aLarge Steam Furnace&r is the solution. This multiblock is capable of &dsmelting 8 items at once for the cost of one&r. This makes it &3extremely efficient&r and a very handy tool if you need to mass smelt stuff and don't want to dive into &eCreate&r!"
+				"Tired on waiting for those &evanilla furnaces&r to take forever to smelt down your &6ores&r and &2dusts&r? The &aLarge Steam Furnace&r is the solution. This multiblock is capable of &dsmelting 8 items at once for the cost of one&r. This makes it &3extremely efficient&r and an very handy tool if you need to mass smelt stuff and don't want to dive into &eCreate&r!"
 				""
 				"If you're having trouble forming the multiblock, hold W on the &aLarge Steam Furnace&r in your inventory to view the &bPonder&r scene for the multiblock, additionally you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
 			]
@@ -4610,7 +4610,7 @@
 			description: [
 				"The &aLarge Steam Macerator&r can &eprocess eight items&r in the&6 time it would take to process two&r, while only costing &d4 EU/t&r &o(4mb Steam/t)&r!"
 				""
-				"If you're having trouble forming the multiblock, hold W on the &aLarge Steam Macerator&r in your inventory to view the &bPonder&r scene for the multiblock. Additionally, you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
+				"If you're having trouble forming the multiblock, hold W on the &aLarge Steam Macerator&r in your inventory to view the &bPonder&r scene for the multiblock, additionally you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
 			]
 			icon: "modern_industrialization:large_steam_macerator"
 			id: "73ECF1ACA6D93D56"
@@ -4773,6 +4773,6 @@
 			y: 16.0d
 		}
 	]
-	subtitle: ["The Industrial Revolution and its consequences..."]
+	subtitle: ["Turning up the heat"]
 	title: "&22 - Steam Age"
 }

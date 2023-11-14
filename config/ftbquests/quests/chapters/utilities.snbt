@@ -17,7 +17,7 @@
 		x: 11.5d
 		y: 4.0d
 	}]
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -1076,30 +1076,8 @@
 			y: 1.0d
 		}
 		{
-			description: ["&eBuilding Wands&r return! They're &cslightly different&r than you might remember, press '&6y&r' to open their &aconfiguration menu&r while holding one!"]
-			id: "04D26675230550D4"
-			rewards: [{
-				id: "2DE108FBB625EEE0"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3A7C9AC2EA64431B"
-				item: {
-					Count: 1b
-					id: "wands:stone_wand"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: 5.5d
-		}
-		{
 			description: [
-				"&aCalculators &rare a key to success. With the &dCrafting Calculator&r you can determine how many raw resources a recipe will cost, and how much materials you will need to craft the items in bulk. There is a bit of a &3learning curve&r to the calculator, but it has some helpful tips in its own UI."
+				"&aCalculators &rare a key to success. With the &dCrafting Calculator&r you can determine how many raw resources a recipe will cost, and how much materials you will need to craft the items in bulk. There is a bit of a &3learning curve&r to the calculator, but it has some helpful tips in it's own UI."
 				""
 				"The &2Math Calculator&r works as a general calculator for addition, subtraction, etc."
 			]
