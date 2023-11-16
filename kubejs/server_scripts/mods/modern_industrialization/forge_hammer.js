@@ -279,10 +279,10 @@ ServerEvents.recipes(event => {
     // -- BRICK DUST FROM BRICK -- //
     forgeHammer(
         event,
-        st('brick_tiny_dust'),
+        st('brick_dust'),
         20,
         [ { amount: 1, tag: 'c:brick_ingots' } ],
-        [ { amount: 2, item: mi('brick_tiny_dust') } ]
+        [ { amount: 1, item: mi('brick_dust') } ]
     );
 
     // -- CLAY DUST FROM CLAY BALL -- //

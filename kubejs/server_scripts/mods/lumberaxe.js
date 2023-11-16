@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
     ],
     {
         P: '#c:iron_plates',
-        S: '#c:wood_sticks',
+        S: mc('stick'),
         B: '#c:iron_blocks'
     })
     .id(st('iron_lumberaxe'));
@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
     ],
     {
         P: '#c:gold_plates',
-        S: '#c:wood_sticks',
+        S: mc('stick'),
         B: '#c:gold_blocks'
     })
     .id(st('gold_lumberaxe'));
