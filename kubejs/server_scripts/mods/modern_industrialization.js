@@ -323,10 +323,10 @@ ServerEvents.recipes(event => {
         'ECE'
     ],
     {
-        E: mi('electronic_circuit'),
+        E: mi('analog_circuit'),
         C: mi('cupronickel_wire_magnetic'),
         H: mi('basic_machine_hull'),
-        M: mi('large_motor'),
+        M: mi('motor'),
         G: '#c:glass_blocks'
     })
     .id('laser_engraver');
