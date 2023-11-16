@@ -54,7 +54,7 @@ CapeJS.addCapes(e => {
     e.register("fc5b17ef-9054-4646-9c82-100e8b45478d", "pack_completionist");           // TheRoboticHydra
     e.register("a97914b6-75a2-43bc-b177-7d684e01c2b5", "pack_completionist");           // andrew_10_
     e.register("68b4f164-f793-4036-8a31-20ab74491e75", "pack_completionist");           // byzel
-    // 1804
+    e.register("31d8ce27-d826-4990-b36b-4dacc85b0820", "pack_completionist");           // 1804 (The1804)
     e.register("3dd5fbfa-e1df-4c6c-af67-ff5226495d14", "pack_completionist");           // Andrei Mudrov
     e.register("917c8dcd-ea2b-4709-83a0-3b9d5e8741a8", "pack_completionist");           // Diagnul
     e.register("04422d92-8760-4277-bf8e-f5d42d2bb1a8", "pack_completionist");           // Syees (DrProfMeister)

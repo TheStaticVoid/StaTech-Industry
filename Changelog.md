@@ -23,6 +23,7 @@
 - [Nyf's Spiders](https://www.curseforge.com/minecraft/mc-mods/nyfs-spiders) - Spiders should be able to climb on walls (arachnaphobes feel free to remove)
 - [Ocean's Delight](https://www.curseforge.com/minecraft/mc-mods/oceans-delight) - Adds more foods related to the ocean
 - [Raised](https://www.curseforge.com/minecraft/mc-mods/raised) - It works again!
+- [Rebind Narrator](https://www.curseforge.com/minecraft/mc-mods/rebind-narrator) - Let's your rebind the default narrator keybind
 - [Regions Unexplored](https://www.curseforge.com/minecraft/mc-mods/regions-unexplored) - More biomes!
 - [Seamless Loading Screen](https://www.curseforge.com/minecraft/mc-mods/seamless-loading-screen) - Takes a screenshot so you can see where you left off when you join your world
 - [Server Country Flags](https://www.curseforge.com/minecraft/mc-mods/server-country-flags) - Shows you which country a server is from
