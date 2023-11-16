@@ -44,6 +44,7 @@
 - [Can I Mine This Block](https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block) - Removed alongside WTHIT
 - [Cosmetic Armor](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-fabric) - Replaced with Show Me Your Skin
 - [Hookshot](https://www.curseforge.com/minecraft/mc-mods/hookshot) - underutilized
+- [Goblin Traders](https://www.curseforge.com/minecraft/mc-mods/goblintraders-fabric) - Cute, but extremely annoying!
 - [Runes](https://www.curseforge.com/minecraft/mc-mods/rune-crafting) - Part of the wizards package
 - [megane](https://www.curseforge.com/minecraft/mc-mods/megane) - Removed alongside WTHIT
 - [Simply Swords](https://www.curseforge.com/minecraft/mc-mods/simply-swords) - Removed alongside Better Combat
