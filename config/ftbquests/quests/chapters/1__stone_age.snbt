@@ -1,15 +1,17 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 250
 	default_quest_shape: ""
 	filename: "1__stone_age"
 	group: "592A9A0E9A131D28"
 	icon: "minecraft:stone"
 	id: "0D2887F1B436D1D7"
 	order_index: 0
+	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["045C683BF6E216CB"]
+			dependencies: ["304EDD3180E3CE82"]
 			description: ["Pretty much following &evanilla progression&r here for a bit. I'll even give you a bit extra to help build a &2simple shelter&r or some more &9tools&r."]
 			id: "300516B03C1580A2"
 			rewards: [
@@ -20,17 +22,18 @@
 					type: "item"
 				}
 				{
-					id: "7317066A06A324F7"
+					id: "24D5E802DF5D9405"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "59FA06E342F418A3"
+					id: "5A044FF226133453"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "You're now a caveman!"
 			tasks: [{
 				count: 16L
@@ -46,53 +49,7 @@
 				type: "item"
 			}]
 			title: "The Stone Age"
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			description: ["This is the start to &a99% of any playthrough&r. You can explore the world a bit, but eventually you will need to make some &ebasic tools&r."]
-			id: "045C683BF6E216CB"
-			rewards: [
-				{
-					count: 16
-					id: "511F947A825BC323"
-					item: "minecraft:oak_log"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "63B238BB617EDB85"
-					item: "minecraft:oak_sapling"
-					type: "item"
-				}
-				{
-					id: "4BA2CDA20B301C8C"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "1F1BCC9D5C07945D"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			subtitle: "The noble start of any playthrough"
-			tasks: [{
-				count: 16L
-				id: "229519744915FFDA"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:logs"
-					}
-				}
-				title: "Any Logs"
-				type: "item"
-			}]
-			title: "Punch Trees"
-			x: -3.5d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -106,23 +63,24 @@
 			id: "0548E4DEA1B29E91"
 			rewards: [
 				{
-					count: 32
-					id: "05A64FF589146729"
+					count: 64
+					id: "6D7C6EF09B162544"
 					item: "minecraft:andesite"
 					type: "item"
 				}
 				{
-					id: "28268F68FE9CD5D3"
+					id: "1FECEC760745214C"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "16B4DBB21E129A6D"
+					id: "2284F4EFBC5CB953"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				count: 32L
 				id: "1DFDBFD89EC6C8D3"
@@ -130,7 +88,7 @@
 				type: "item"
 			}]
 			title: "Prepare for Create"
-			x: 1.0d
+			x: 7.5d
 			y: 0.0d
 		}
 		{
@@ -143,33 +101,34 @@
 			id: "13D6BD373F034937"
 			rewards: [
 				{
-					id: "44ACA01BA7C36F50"
-					item: "create:wrench"
+					count: 8
+					id: "75A15ACCB1E8485A"
+					item: "create:andesite_alloy"
 					type: "item"
 				}
 				{
-					id: "7C0E187609F7E623"
+					id: "50B3C00143D03641"
 					item: "create:goggles"
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "2A52A606A38D910A"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "4B3A362E22505A8E"
+					item: "modern_industrialization:wrench"
+					type: "item"
 				}
 				{
-					id: "38DA7051F03D98C0"
+					id: "5765E8FE94C37DC1"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "20CDA32968881883"
+					id: "3E7A70A342C5CB5B"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				count: 8L
 				id: "4278485AD9706147"
@@ -177,7 +136,7 @@
 				type: "item"
 			}]
 			title: "Andesite Alloy"
-			x: 2.5d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -186,23 +145,23 @@
 			id: "288AF08BF01DAADF"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "652C9539A48BF0CF"
-					table_id: 4682836084073725053L
-					type: "random"
+					id: "7FA28B6A6FCB78EE"
+					item: "create:water_wheel"
+					type: "item"
 				}
 				{
-					id: "1F53371AD51B0A6E"
+					id: "5289ACC4A767E718"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "71440009316925DC"
+					id: "45D523BF7DF6DF5B"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "You spin me right round"
 			tasks: [{
 				id: "5C74BD16A7F70B45"
@@ -210,23 +169,22 @@
 				type: "item"
 			}]
 			title: "Rotational Power"
-			x: 5.5d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["288AF08BF01DAADF"]
+			dependencies: ["13D6BD373F034937"]
 			description: ["While the &arotational speed&r of the water wheel is decent, they don't provide a high &bstress unit&r capacity. If you're constantly &coverstressing&r your machines, perhaps you should invest in some &eWindmills&r. These fantastic rotational power generators offer some of the best in terms of &bstress unit&r capacity."]
 			icon: "create:windmill_bearing"
 			id: "2878CB8F8C4B8B91"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "39C878C0FC0B08D9"
-					table_id: 4682836084073725053L
-					type: "random"
+					id: "33D9461DDEF6B4BB"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "2CBFF4BD52BA592D"
+					id: "15F6173DFCA89EA4"
 					type: "xp"
 					xp: 10
 				}
@@ -247,36 +205,43 @@
 				}
 			]
 			title: "Windmill"
-			x: 6.0d
-			y: -1.5d
+			x: 10.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["13D6BD373F034937"]
 			description: [
 				"&aCogs&r are the basis of &erotational power&r in the &eCreate&r mod. You will need them to transfer &bkinetic forces&r from your generators to your &eCreate&r machines. "
 				""
-				"Don't worry, we'll make a generator to use soon enough."
+				"You'll be making a method for &egenerating stress&r in the next quest!"
 			]
 			id: "6CA102659DCBDB31"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "4B0C380F476474E5"
-					table_id: 4682836084073725053L
-					type: "random"
+					count: 4
+					id: "4974CDC499B18138"
+					item: "create:cogwheel"
+					type: "item"
 				}
 				{
-					id: "522DD6668E20A26D"
+					count: 4
+					id: "1844A60402D914E5"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "4E68270AEB061470"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "42A4BF8D1AB59B19"
+					id: "483877EDD430F851"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "CogChamp"
 			tasks: [
 				{
@@ -293,7 +258,7 @@
 				}
 			]
 			title: "Big and Little Cogs"
-			x: 4.0d
+			x: 12.5d
 			y: 0.0d
 		}
 		{
@@ -308,7 +273,7 @@
 			icon: "create:rotation_speed_controller"
 			id: "58577BDF79E67EA7"
 			rewards: [{
-				id: "47691955E58DCF3C"
+				id: "79CBF7FDF6702F3E"
 				type: "xp"
 				xp: 10
 			}]
@@ -319,8 +284,8 @@
 				type: "checkmark"
 			}]
 			title: "Stress Units and Rotational Force"
-			x: 4.0d
-			y: 1.5d
+			x: 12.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["58577BDF79E67EA7"]
@@ -333,18 +298,11 @@
 			]
 			icon: "create:speedometer"
 			id: "58FEBEF013463B80"
-			rewards: [
-				{
-					id: "6371539DE3C6DB56"
-					item: "create:speedometer"
-					type: "item"
-				}
-				{
-					id: "1CFB2B909D1D87E5"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "156275D40BA852A2"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "0FC2EC17F4A216F2"
@@ -352,72 +310,69 @@
 				type: "checkmark"
 			}]
 			title: "Increase/Decrease Rotation Speed"
-			x: 4.0d
-			y: 3.0d
+			x: 12.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["288AF08BF01DAADF"]
+			dependencies: ["13D6BD373F034937"]
 			description: ["The &eHand Crank&r is another alternative form of generating &arotational force&r. Extended use of this will leave the user very &chungry&r, so it's more optimal to have a &eWindmill&r / &eWater Wheel&r generate your power. Great if you just need to &equickly power something&r!"]
 			id: "654B073CCFC06D24"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "066C489C51141901"
-					table_id: 4682836084073725053L
-					type: "random"
+					id: "125D5FF4052DB145"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "3909C8B465CC9E83"
+					id: "3900BB776BF21762"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "rsquare"
-			subtitle: "Manual Labor"
+			subtitle: "Crank that Soulja Boy"
 			tasks: [{
 				id: "5BB4A00DD7989348"
 				item: "create:hand_crank"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.5d
+			x: 9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["31EA279E4F99BE53"]
-			description: ["&aMetal plates&r are going to be very important moving forward. To make them you're going to need a &eCreate&r &bMechanical Press&r. By placing certain &cingots&r below the press, and supplying the press &arotational force&r on the side, it will start pressing the ingots into &dplates&r!"]
+			description: [
+				"&aMetal plates&r are going to be very important moving forward. To make them you're going to need a &eCreate&r &bMechanical Press&r. By placing certain &cingots&r below the press, and supplying the press &arotational force&r on the side, it will start pressing the ingots into &dplates&r!"
+				""
+				"Placing a &2Depot&r two blocks below the &bMechanical Press&r will allow you to put up to a stack of ingots to turn into plates at a time without having to worry about the &citems despawning&r."
+			]
 			id: "63276C644789068A"
 			rewards: [
 				{
-					count: 4
-					id: "610E14DF0F5137AB"
-					item: "modern_industrialization:iron_plate"
+					id: "316111ABD45B88D0"
+					item: "create:depot"
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "6AD28818623A1425"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "16C1B93D16483A0C"
+					id: "20F621A565201A50"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "23239AF78C376A7E"
+					id: "42B51218C86BD834"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "Under Pressure"
 			tasks: [{
 				id: "3092F3C88A1F8196"
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 20.0d
 			y: 0.0d
 		}
 		{
@@ -431,28 +386,23 @@
 			id: "08A908B359D67DA6"
 			rewards: [
 				{
-					count: 16
-					id: "67EC919B3FF01EEE"
-					item: "create:andesite_alloy"
-					type: "item"
-				}
-				{
-					id: "50F5FF4F1608AFFA"
+					id: "68E16FFC9F4DAFDD"
 					item: "create:blaze_burner"
 					type: "item"
 				}
 				{
-					id: "13B30F237078F8EF"
+					id: "0A18ED592B2EFA72"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "6604056E4BA81806"
+					id: "3ADE12ED99E0526A"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "Mix, swirl, mix"
 			tasks: [
 				{
@@ -467,7 +417,7 @@
 				}
 			]
 			title: "Mechanical Mixer"
-			x: 10.0d
+			x: 22.5d
 			y: 0.0d
 		}
 		{
@@ -482,30 +432,24 @@
 			id: "2D6BC53B4C3E06F0"
 			rewards: [
 				{
-					count: 6
-					id: "477C345582417D81"
+					count: 3
+					id: "1E87F754B3E70193"
 					item: "modern_industrialization:bronze_ingot"
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "638562951A9BFE0C"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "06DC7F149023F9E5"
+					id: "5D4926C6D8FB8840"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "0FBEF166FADE7F53"
+					id: "545F5E5450C9122F"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "square"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "Your first real alloy"
 			tasks: [{
 				id: "56D00DC36CAED6E5"
@@ -513,7 +457,7 @@
 				type: "item"
 			}]
 			title: "Bronze"
-			x: 12.0d
+			x: 25.0d
 			y: 0.0d
 		}
 		{
@@ -528,7 +472,7 @@
 			id: "59442F8EBE6F9F06"
 			rewards: [
 				{
-					id: "370E333085F80CC7"
+					id: "43A1FD632B087508"
 					item: {
 						Count: 1b
 						id: "modern_industrialization:iron_hammer"
@@ -539,25 +483,19 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "214C4D61B5BF984A"
-					table_id: 8055223505892499306L
-					type: "random"
-				}
-				{
-					count: 5
-					id: "0C701C46C31AF1B4"
+					count: 3
+					id: "32E4F667A6489734"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "6AF19CD55D472166"
+					id: "1F580293C16BCBCE"
 					type: "xp"
 					xp: 10
 				}
 			]
-			shape: "square"
-			size: 2.0d
+			shape: "hexagon"
+			size: 3.0d
 			subtitle: "More like Fabric Hammer"
 			tasks: [{
 				id: "41F68D0F454BDC60"
@@ -565,7 +503,7 @@
 				type: "item"
 			}]
 			title: "The Forge Hammer"
-			x: 14.5d
+			x: 27.5d
 			y: 0.0d
 		}
 		{
@@ -574,33 +512,34 @@
 			id: "31EA279E4F99BE53"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "6B1BF3670F690425"
-					table_id: 4682836084073725053L
-					type: "random"
+					count: 3
+					id: "351AE1E5C4F74E18"
+					item: "create:andesite_casing"
+					type: "item"
 				}
 				{
-					id: "355678F87B340C52"
+					id: "0B94779EB284A0D2"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "2BC2F32600003EBE"
+					id: "0FEB8E8E71335077"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "01BEB06A15AF17AC"
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 17.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["045C683BF6E216CB"]
+			dependencies: ["304EDD3180E3CE82"]
 			description: [
 				"If you can find some cows near where you spawned you can kill them for their leather and make yourself a &eFrayed Backpack&r."
 				""
@@ -609,13 +548,12 @@
 			id: "52F75C5E2E606991"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "051062ED2733D561"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "62B820D4A1E14B84"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "38FD021E3405C014"
+					id: "2995C92E34E1270D"
 					type: "xp"
 					xp: 10
 				}
@@ -626,22 +564,21 @@
 				item: "inmis:frayed_backpack"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -2.5d
 			y: -2.0d
 		}
 		{
-			dependencies: ["045C683BF6E216CB"]
+			dependencies: ["304EDD3180E3CE82"]
 			description: ["Why lug around a crafting table everywhere you go when you could instead make a &ePocket Crafting Table&r. Using this item, you will have access to a 3x3 crafting grid anywhere you go!"]
 			id: "3FD7E4529B0A24EC"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "22A124C12EB3E8F5"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "0F01B8A1F3567C25"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "52B3C2CFFEB5128B"
+					id: "3DB54E7370F821F7"
 					type: "xp"
 					xp: 10
 				}
@@ -652,8 +589,8 @@
 				item: "kibe:pocket_crafting_table"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["300516B03C1580A2"]
@@ -670,13 +607,12 @@
 			id: "25291CED32101F14"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "633FED0587318940"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "172BB857FE742E62"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "17EC775EE21119F3"
+					id: "67EFA02BD03F37C3"
 					type: "xp"
 					xp: 10
 				}
@@ -695,22 +631,21 @@
 				type: "item"
 			}]
 			title: "Spikes"
-			x: -1.0d
-			y: -2.0d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["045C683BF6E216CB"]
+			dependencies: ["304EDD3180E3CE82"]
 			description: ["&bWooden Buckets&r act just like normal buckets with the only downside being they cannot pick up hot liquids such as &clava&r. Since &aregular buckets&r require &diron plates&r, these will be your friend for the early game!"]
 			id: "553FA47CB9256B2A"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "364FB74E530C8E2C"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "21BFCA1282F96BB5"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "608D9F29F37C3A17"
+					id: "6DB2CA0FAB65225C"
 					type: "xp"
 					xp: 10
 				}
@@ -721,22 +656,21 @@
 				item: "kibe:wooden_bucket"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -3.0d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["045C683BF6E216CB"]
-			description: ["The &bTorch Sling&r uses torches from your inventory as ammo. Torches are placed where they land."]
+			dependencies: ["304EDD3180E3CE82"]
+			description: ["The &aTorch Sling&r uses torches from your inventory as &6ammo&r. &eTorches&r are placed where they land."]
 			id: "6B73816AE3918455"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "49922511BFF3BFA3"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "32581D1CDB00B8C6"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "49D67708CB4FA791"
+					id: "57B5E51F53E75855"
 					type: "xp"
 					xp: 10
 				}
@@ -747,8 +681,8 @@
 				item: "kibe:torch_sling"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -3.0d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["300516B03C1580A2"]
@@ -760,13 +694,12 @@
 			id: "5F1AEEB670B6EE12"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "028BE3449AEA2B08"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "71EC7017E0A63C9B"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "72443867CCEE73BD"
+					id: "1F412146EDC0ABF8"
 					type: "xp"
 					xp: 10
 				}
@@ -777,8 +710,8 @@
 				item: "kibe:trash_can"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.0d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5F1AEEB670B6EE12"]
@@ -786,13 +719,12 @@
 			id: "0AF85D22E0491F02"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "784D76EEBAAFAFD5"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "15ED4DA3C8D0971E"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "37DF83DBBE8A1607"
+					id: "6581F0BAA6E10EB8"
 					type: "xp"
 					xp: 10
 				}
@@ -803,11 +735,11 @@
 				item: "kibe:pocket_trash_can"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -3.5d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["045C683BF6E216CB"]
+			dependencies: ["304EDD3180E3CE82"]
 			description: [
 				"&aDrawers&r are an extremely compact and easy way to &2store a lot of items in a single block&r. The &bbasic drawer&r comes in three different varieties, &dsingle, double, and quad&r. The &eShadow Drawer&r acts similar to a &aDrawer Access Point&r, but allows the player to interact with a single item directly. For example, if you had two separate side-by-side drawers storing 10 logs each, and a shadow drawer set to logs, it will show 20."
 				""
@@ -820,18 +752,18 @@
 			id: "4EB556BD36F09E16"
 			rewards: [
 				{
-					id: "6202D2478EEA5D09"
-					item: "extended_drawers:lock"
+					count: 3
+					id: "208D0CB9508E5A65"
+					item: "extended_drawers:single_drawer"
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "29AB99CE9AA1DA1F"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "1AD038E60E391A8F"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "5B3CE06444463A17"
+					id: "694336BA2EF721EB"
 					type: "xp"
 					xp: 10
 				}
@@ -851,8 +783,8 @@
 				type: "item"
 			}]
 			title: "Drawers"
-			x: -4.0d
-			y: -2.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4F278EA5EC5E59E1"]
@@ -869,19 +801,6 @@
 				"The &aDrawer Downgrade&r can be used to &climit&r the capacity of a drawer to a single stack. This can prove useful in automation scenarios."
 			]
 			id: "313C9B884B08EAF8"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "00F53472CC1613D2"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "6D893A0897763F91"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			subtitle: "MORE MORE MORE"
 			tasks: [{
@@ -897,8 +816,8 @@
 				type: "item"
 			}]
 			title: "Drawer Upgrades"
-			x: -4.0d
-			y: -6.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4F278EA5EC5E59E1"]
@@ -908,33 +827,14 @@
 				"They also produce &eless lag&r as they don't have to story any data."
 			]
 			id: "2EDE467B8EA737A7"
-			rewards: [
-				{
-					count: 4
-					id: "481C8F25F9F103E5"
-					item: "extended_drawers:single_drawer"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3118DB30AFD83271"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "5CC9DD7A4455B046"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "5A245ACCB0C914C6"
 				item: "extended_drawers:connector"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -6.0d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4EB556BD36F09E16"]
@@ -945,7 +845,7 @@
 			]
 			id: "4F278EA5EC5E59E1"
 			rewards: [{
-				id: "3AEA637F669EC209"
+				id: "34F2CD477C0C583C"
 				type: "xp"
 				xp: 10
 			}]
@@ -956,8 +856,8 @@
 				type: "checkmark"
 			}]
 			title: "Drawer Networks"
-			x: -4.0d
-			y: -4.0d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4F278EA5EC5E59E1"]
@@ -969,27 +869,14 @@
 				"You can lock/unlock your entire network by &eshift-right clicking&r with a lock on the access point"
 			]
 			id: "3604D1BBC61B844D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2A69E47A2E7A20DF"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "27902F93581F6B09"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "113EF6D198476847"
 				item: "extended_drawers:access_point"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -6.0d
+			x: -1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4F278EA5EC5E59E1"]
@@ -1003,13 +890,12 @@
 			id: "6A807C07969CA906"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "5CCC4C01D3006F2C"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "106B9E3974B2CDF6"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "3409C1E177C5CD21"
+					id: "7DC73977E4F423D1"
 					type: "xp"
 					xp: 10
 				}
@@ -1022,8 +908,8 @@
 				type: "item"
 			}]
 			title: "Voiding Mode"
-			x: -2.0d
-			y: -6.0d
+			x: 2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4F278EA5EC5E59E1"]
@@ -1037,19 +923,6 @@
 				"&aHiding&r can also be applied to &eshadow drawers&r. This is mostly useful if you want to use one in a contraption."
 			]
 			id: "2CA069F476518EB2"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6E4722E2F621B1D8"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "46B8061A77A568F1"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "055525E1721A0AA1"
@@ -1057,8 +930,8 @@
 				type: "item"
 			}]
 			title: "Hidden Mode"
-			x: -6.0d
-			y: -6.0d
+			x: -2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["300516B03C1580A2"]
@@ -1106,18 +979,18 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "1E447264F194380B"
-					table_id: 1292583397374875582L
-					type: "random"
+					id: "5A3FBD2440AE91E0"
+					item: "kubejs:coin_common"
+					type: "item"
 				}
 				{
-					id: "6AB9562F5568B609"
+					id: "7F769F870E5904C8"
 					type: "xp"
 					xp: 10
 				}
 			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "Giant ore veins return!"
 			tasks: [{
 				id: "769292BA522B15FD"
@@ -1125,7 +998,7 @@
 				type: "checkmark"
 			}]
 			title: "Time to Mine!"
-			x: -0.5d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -1138,22 +1011,17 @@
 			id: "5DE28B092DD37757"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "5EBCA8EFB066EC65"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "590CD5D4163632B9"
+					id: "53686BF4B83784F6"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "14280CB0780326DB"
+					id: "0583A4FFBB3878EC"
 					type: "xp"
 					xp: 10
 				}
 			]
+			subtitle: "Here's Johnny!"
 			tasks: [{
 				id: "3EBD95483EE9E98F"
 				item: {
@@ -1166,8 +1034,8 @@
 				title: "Lumberaxes"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.5d
+			x: 19.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["63276C644789068A"]
@@ -1175,18 +1043,12 @@
 			id: "5C89097BA2979794"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "44850103A3065C11"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "19BF48AE122D1A19"
+					id: "0DCDDB8A906E1CFB"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "62C3BCBFBE551ED0"
+					id: "105B0E6A75E58547"
 					type: "xp"
 					xp: 10
 				}
@@ -1204,8 +1066,8 @@
 				title: "Hammers"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 1.5d
+			x: 21.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["288AF08BF01DAADF"]
@@ -1213,13 +1075,17 @@
 			id: "19E20AB1F69E2871"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "53E63F723DFE6C60"
-					table_id: 4682836084073725053L
-					type: "random"
+					id: "7DFAEA7B2ABDE58F"
+					item: "create:large_water_wheel"
+					type: "item"
 				}
 				{
-					id: "7771D432A60036C1"
+					id: "7DDD851BE0C8D593"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "64B56546AA01A1AF"
 					type: "xp"
 					xp: 10
 				}
@@ -1230,27 +1096,21 @@
 				item: "create:large_water_wheel"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 1.5d
+			x: 15.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["045C683BF6E216CB"]
+			dependencies: ["304EDD3180E3CE82"]
 			description: ["Unfortunately, &eTinker's Construct&r is not in the pack, however it's &aCrafting Station&r has been added by &6Enhanced Workbenches&r mod. It doesn't appear that it currently can pull from adjacent inventories, &2but it might in the future&r! For now it just retains your items after you close it (&obut wait the default one does that too&r?)"]
 			id: "6E39043C6369B7A3"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "3642F92BA779396E"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "485E2CFC5B1842AB"
+					id: "5260936C928F3ACB"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "58E0F1080D7C97C3"
+					id: "6B1F7ECA6417FE2F"
 					type: "xp"
 					xp: 10
 				}
@@ -1260,7 +1120,7 @@
 				item: "enhancedworkbenches:crafting_station"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -2.5d
 			y: 1.0d
 		}
 		{
@@ -1273,18 +1133,12 @@
 			id: "0B97D95040E7FAE1"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "3B746C05BC063761"
-					table_id: 1292583397374875582L
-					type: "random"
-				}
-				{
-					id: "7C977CAEDF08955F"
+					id: "417E7B67B8D4F3E3"
 					item: "kubejs:coin_common"
 					type: "item"
 				}
 				{
-					id: "6F0CF297081F29D0"
+					id: "7BD60FB29BEBE59B"
 					type: "xp"
 					xp: 10
 				}
@@ -1295,8 +1149,48 @@
 				item: "enhancedworkbenches:project_table"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -1.5d
+			x: 20.0d
+			y: 2.0d
+		}
+		{
+			description: ["This is the start to &a99% of any playthrough&r. You can explore the world a bit, but eventually you will need to make some &ebasic tools&r."]
+			id: "304EDD3180E3CE82"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3141AABB0E35B335"
+					table_id: 4237667718026349632L
+					type: "choice"
+				}
+				{
+					id: "229D0D1868F43695"
+					item: "kubejs:coin_common"
+					type: "item"
+				}
+				{
+					id: "3D19EEAED56805D7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			size: 2.0d
+			subtitle: "The noble start of any playthrough"
+			tasks: [{
+				count: 16L
+				id: "2519C14991959834"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "16 Logs"
+				type: "item"
+			}]
+			title: "Punch Trees"
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["A humble start"]
