@@ -97,31 +97,6 @@
 			y: 4.0d
 		}
 		{
-			description: ["&aHookshots&f provides a fun new way to explore the world, just be cautious of fall damage!"]
-			id: "77C8C1E759C36CB9"
-			rewards: [{
-				id: "2EA27CD7FEB7EBA9"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "Everyone needs a grappling hook"
-			tasks: [{
-				id: "234C5EDFEE23E6A4"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "hookshot:hookshots"
-					}
-				}
-				title: "Any Hookshot"
-				type: "item"
-			}]
-			title: "Hookshots"
-			x: 3.0d
-			y: 4.0d
-		}
-		{
 			description: ["&aSpice of Fabric&f also adds several containers that can be used to &bcarry multiple types of food&f in one convenient place."]
 			id: "1976EABD4551F6C8"
 			rewards: [{
@@ -901,35 +876,6 @@
 		}
 		{
 			description: [
-				"The mod &eSimplySwords&r is included in this pack. In combination with the &bBetterCombat&r mod, it adds a lot of variety to fighting mobs in your world."
-				""
-				"&eSimplySwords&r also includes some extremely powerful weapons that can only be found by exploring."
-			]
-			id: "382262BF67437D6F"
-			rewards: [{
-				id: "251B4ACD4E4E81ED"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "It's dangerous to go alone!"
-			tasks: [{
-				id: "0B9E0DB06100A342"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "simplyswords:swords"
-					}
-				}
-				title: "Any SimplySwords Weapons"
-				type: "item"
-			}]
-			title: "SimplySwords"
-			x: 7.5d
-			y: 2.5d
-		}
-		{
-			description: [
 				"Find something cool in your world, or just want to take a picture to remember the occasion? Take a picture with the &bCamera&r!"
 				""
 				"To take a photo, you must have an &aEmpty Map&r in your inventory and press '&eC&r' while using the Camera."
@@ -945,8 +891,8 @@
 				item: "polaroidcamera:camera"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 2.5d
+			x: 3.0d
+			y: 4.0d
 		}
 		{
 			description: ["Placers are blocks that, when activated by a redstone signal, will place any block in its inventory in front of it, if possible."]
@@ -1072,8 +1018,8 @@
 				}
 			]
 			title: "Clear Armor"
-			x: 10.5d
-			y: 1.0d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			description: [

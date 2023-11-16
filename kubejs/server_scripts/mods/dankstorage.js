@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
     ],
     {
         B: '#c:aluminum_blocks',
-        S: '#c:wood_sticks'
+        S: '#c:wooden_rods'
     })
     .id(st('1_to_2'));
 
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
     ],
     {
         B: '#c:stainless_steel_blocks',
-        S: '#c:wood_sticks'
+        S: '#c:wooden_rods'
     })
     .id(st('2_to_3'));
 
@@ -158,7 +158,7 @@ ServerEvents.recipes(event => {
     ],
     {
         B: '#c:enderium_blocks',
-        S: '#c:wood_sticks'
+        S: '#c:wooden_rods'
     })
     .id(st('3_to_4'));
 
@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
     ],
     {
         B: '#c:titanium_blocks',
-        S: '#c:wood_sticks'
+        S: '#c:wooden_rods'
     })
     .id(st('4_to_5'));
 
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
     ],
     {
         B: '#c:platinum_blocks',
-        S: '#c:wood_sticks'
+        S: '#c:wooden_rods'
     })
     .id(st('5_to_6'));
 
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
     {
         B: '#c:iridium_blocks',
         N: bl('nether_stars_block'),
-        S: '#c:wood_sticks'
+        S: '#c:wooden_rods'
     })
     .id(st('6_to_7'));
 });

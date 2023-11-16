@@ -7,7 +7,6 @@
 	icon: "minecraft:stone"
 	id: "0D2887F1B436D1D7"
 	order_index: 0
-	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
@@ -113,7 +112,7 @@
 				}
 				{
 					id: "4B3A362E22505A8E"
-					item: "modern_industrialization:wrench"
+					item: "create:wrench"
 					type: "item"
 				}
 				{
@@ -1021,6 +1020,7 @@
 					xp: 10
 				}
 			]
+			shape: "rsquare"
 			subtitle: "Here's Johnny!"
 			tasks: [{
 				id: "3EBD95483EE9E98F"
@@ -1053,6 +1053,7 @@
 					xp: 10
 				}
 			]
+			shape: "rsquare"
 			subtitle: "HAMMAH DOWN"
 			tasks: [{
 				id: "597EA825702B4535"
@@ -1090,6 +1091,7 @@
 					xp: 10
 				}
 			]
+			shape: "rsquare"
 			subtitle: "Rise and Shine!"
 			tasks: [{
 				id: "52FFEC979307B9ED"
@@ -1143,6 +1145,7 @@
 					xp: 10
 				}
 			]
+			shape: "rsquare"
 			subtitle: "An early game best friend"
 			tasks: [{
 				id: "2D4CE128E28953B4"

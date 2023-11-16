@@ -15,7 +15,8 @@ ServerEvents.recipes(event => {
         mi('assembler_generated/electric_age/component/craft/op_amp'),
         mi('assembler_generated/electric_age/battery/sodium_battery'),
         mi('assembler_generated/electric_age/battery/cadmium_battery'),
-        mi('assembler_generated/electric_age/battery/plutonium_battery')
+        mi('assembler_generated/electric_age/battery/plutonium_battery'),
+        mi('assembler_generated/steam_age/steel/boiler')
     ];
     REMOVED_RECIPE.forEach(id => event.remove({id: id}));
 

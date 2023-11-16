@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     {
         B: '#c:iron_blocks',
         P: '#c:iron_plates',
-        S: '#c:wood_sticks'
+        S: '#c:wooden_rods'
     })
     .id(st('iron_hammer'));
 
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
     {
         B: '#c:gold_blocks',
         P: '#c:gold_plates',
-        S: '#c:wood_sticks'
+        S: '#c:wooden_rods'
     })
     .id(st('golden_hammer'));
 });

@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 250
 	default_quest_shape: ""
 	filename: "2__the_steam_age"
 	group: "592A9A0E9A131D28"
@@ -8,35 +9,6 @@
 	order_index: 1
 	quest_links: [ ]
 	quests: [
-		{
-			dependencies: ["59442F8EBE6F9F06"]
-			description: [
-				"Welcome to &eChapter 2&r."
-				""
-				"The majority of this chapter will be focused on getting your first &6Bronze Machines&r and &eSteel Ingots&r using &7steam&r as power."
-			]
-			id: "5EDE88BDA0182BD7"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7F8624B6747CE685"
-					type: "random"
-				}
-				{
-					id: "1EA5791A50142A66"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "0173357011F010FF"
-				item: "modern_industrialization:forge_hammer"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
 		{
 			dependencies: ["45CE5F461A159F66"]
 			description: [
@@ -47,37 +19,18 @@
 				"Right-click a &9water&r source to fill it with water, and make sure to place some fuel in your drill by &2right-clicking the fuel items on it in your inventory&r. The &9water&r block is not consumed to fill the drill, but will be drained alongside the fuel when it is used to mine."
 			]
 			id: "0F56A61DD1E8BC5D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "211FC11D4688B687"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "7BB839FFB4D4A992"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "759DAEF80D2BE094"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
-			size: 1.5d
 			subtitle: "3x3 with Silk Touch"
 			tasks: [{
 				id: "36E79689C51B2EC4"
 				item: "modern_industrialization:steam_mining_drill"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 11.5d
+			x: 35.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: [
 				"&6Bronze Barrels&r can be used to store and move &a32 stacks of one item&r. &eIf you break a barrel it will keep its stored contents&r."
 				""
@@ -86,23 +39,6 @@
 				"You can &dlock the content&r by right-clicking with a &eModern Industrialization&r &6Wrench&r."
 			]
 			id: "60602FA8424D3937"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7C8F61F2188BAA49"
-					type: "random"
-				}
-				{
-					id: "3AA014890AAB848E"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "5640F4626776586C"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "5AAB047D6E420E3C"
@@ -110,33 +46,16 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: [
 				"&6Bronze Tanks&r can store &a4 buckets of fluid each&r, and you can use them to interact with machines or place them in the world."
 				""
 				"When placed in the world, you can right-click them with a bucket or other tanks to &9transfer fluids&r. &eThey maintain their contents when broken&r, and you can stack them if they have the same contents."
 			]
 			id: "61F04B75BE5F5E17"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "40E4F0D9455B09BF"
-					type: "random"
-				}
-				{
-					id: "2D0BE8E253B1EBA0"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "5277937DD2A8D579"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "4E89E8F0CE2FF3C3"
@@ -144,31 +63,15 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["01E58DD70F1D9B15"]
 			description: ["Smelt up your newly created &aFire Clay Dusts&r and then &6compact&r them in a &3Basin&r using a &2Mechanical Press&r to get &eFire Clay Bricks&r."]
 			icon: "modern_industrialization:fire_clay_bricks"
 			id: "105E5F967328888F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6BC7ED36AE96C29D"
-					type: "random"
-				}
-				{
-					id: "0C4347E9A3786EEC"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "091B2A11F27E4AE4"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				count: 3L
 				id: "2FE274205C6F3A35"
@@ -176,11 +79,11 @@
 				type: "item"
 			}]
 			title: "Fire Clay Bricks"
-			x: 4.0d
+			x: 5.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: [
 				"&aFire Clay Dust&r can be made by mixing two &6Clay Balls&r and two &eBrick Dusts&r in a &eCreate&r &dMechanical Mixer&r."
 				""
@@ -189,24 +92,8 @@
 				"You're going to need &312 Fire Clay Dust&r for your first boiler, but it may be wise to &bmake some extra&r."
 			]
 			id: "01E58DD70F1D9B15"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4E19D0FD57CB0301"
-					type: "random"
-				}
-				{
-					id: "0BE3DD5FFDECA973"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "0ECF8544DF4D7820"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				count: 12L
 				id: "6CA49EAEA9276BEB"
@@ -214,7 +101,7 @@
 				type: "item"
 			}]
 			title: "Fire Clay Dust"
-			x: 2.0d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -229,32 +116,15 @@
 				"Don't worry, the &6Bronze Boiler&r will &cnot void your fuel&r if the &7steam&r output is full. You can input &9water&r the boiler with a bucket or with &bpipes&r."
 			]
 			id: "77EAB1D011541800"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "287F055DED9229DC"
-					type: "random"
-				}
-				{
-					id: "386DA5220E585D1C"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "7636E0E16B0AB2D9"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "Steampunk!"
 			tasks: [{
 				id: "02F23CAB7D46B36C"
 				item: "modern_industrialization:bronze_boiler"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -271,30 +141,13 @@
 				"If you haven't made any &aFluid Pipes&r yet, you can place the &6Bronze Boiler&r on top to pump the water directly into it. Make sure to &2adjust the output direction&r of the pump using the &6Wrench&r!"
 			]
 			id: "4B5B04123C38AA37"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7D79BA7BCB1F208A"
-					type: "random"
-				}
-				{
-					id: "1472EE31CF5367CA"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "1078F5EC073E26E9"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "44CDB79CFDED9A1C"
 				item: "modern_industrialization:bronze_water_pump"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 7.5d
 			y: -2.0d
 		}
 		{
@@ -302,23 +155,6 @@
 			description: ["If you'd rather save on some materials, you can use the &eCreate&r mod's &aPump&r and &aPipes&r to pump &9water&r from an infinite pool and pipe it into the &6Bronze Boiler&r directly."]
 			icon: "create:mechanical_pump"
 			id: "4F22C9E20AB004D9"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "51DA7BB913FC2983"
-					type: "random"
-				}
-				{
-					id: "14F93D933DF1B8F1"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "08631A320D2DCEE6"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -334,7 +170,7 @@
 				}
 			]
 			title: "Alternative Water Pump"
-			x: 7.0d
+			x: 8.5d
 			y: -2.0d
 		}
 		{
@@ -354,33 +190,16 @@
 			]
 			icon: "modern_industrialization:wrench"
 			id: "343C68866C58ADC3"
-			rewards: [
-				{
-					id: "2014045C4DB4C4D1"
-					item: "modern_industrialization:wrench"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "746B92B4E7FD28AA"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "0D27371352572BFC"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "239655E16B64B677"
 				title: "Click to Acknowledge"
 				type: "checkmark"
 			}]
 			title: "Interacting with Machines"
-			x: 6.0d
-			y: 2.0d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77EAB1D011541800"]
@@ -396,29 +215,6 @@
 				"Every tick, &aFluid Pipes&r will try to evenly extract for all connected blocks, and then try to insert that evenly. "
 			]
 			id: "396573B9EAE57B42"
-			rewards: [
-				{
-					count: 16
-					id: "119662EE60660195"
-					item: "modern_industrialization:fluid_pipe"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "777D4159715BD5AC"
-					type: "random"
-				}
-				{
-					id: "64E3AE8CC731F90B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "51DCDBF096316EC9"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			subtitle: "Let the spaghetti commence"
 			tasks: [{
@@ -435,8 +231,8 @@
 				type: "item"
 			}]
 			title: "Fluid Pipes"
-			x: 8.0d
-			y: 0.0d
+			x: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["396573B9EAE57B42"]
@@ -448,18 +244,6 @@
 				"Note that you might be limited by the &etransfer rates of the tanks/machines&r the pipes are connected to."
 			]
 			id: "0AC4D9039788F1C6"
-			rewards: [
-				{
-					id: "587F58C6AB1A2295"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "090009279038041E"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "777428835753C221"
@@ -467,39 +251,23 @@
 				type: "checkmark"
 			}]
 			title: "Fluid Pipe Speed"
-			x: 9.5d
-			y: -0.5d
+			x: 8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["343C68866C58ADC3"]
 			description: ["The &6Bronze Macerator&r is a helpful machine to help you get more value out of the &aores&r you mine. Processing &aores&r will grant you additional &ddusts&r which can be smelted into ingots."]
 			id: "73AF6917A7A85244"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5336902DC2FBD834"
-					type: "random"
-				}
-				{
-					id: "487F56395146FB9F"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "351D163B58B9DD21"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "More bang for your buck"
 			tasks: [{
 				id: "694AFF81EF1DB9B4"
 				item: "modern_industrialization:bronze_macerator"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 4.0d
+			x: 13.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["343C68866C58ADC3"]
@@ -511,97 +279,52 @@
 				"&eI would recommend making this as soon as possible.&r"
 			]
 			id: "62474684DD7A1B7C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "459EF88F1F59AA0E"
-					type: "random"
-				}
-				{
-					id: "72DBA1F1D195943A"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "28557C03261C05C6"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "Smoosh"
 			tasks: [{
 				id: "246E6C87628C9A93"
 				item: "modern_industrialization:bronze_compressor"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 4.0d
+			x: 13.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["343C68866C58ADC3"]
 			description: ["The &6Bronze Furnace&r is a furnace that accepts &7steam&r instead of &atraditional fuels&r. It is as slow as a normal furnace, but is 10 times &3more fuel efficient&r due to using &7Steam&r."]
 			id: "112E7B1922E2CCC3"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "33BB03522DA95D3B"
-					type: "random"
-				}
-				{
-					id: "03CFF7D3C814C4B6"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7BF0F124E8DD7707"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "A more efficient furnace"
 			tasks: [{
 				id: "4DADF925D4C73783"
 				item: "modern_industrialization:bronze_furnace"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 4.0d
+			x: 13.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["343C68866C58ADC3"]
 			description: ["The &6Bronze Mixer&r will help you &amix dusts&r, giving you a better ratio for &6Bronze&r and &aFire Clay&r, as well as opening up a recipe for  &eUncooked Steel&r. It can also create &dCobblestone&r and &3Clay&r."]
 			id: "693368CF3E13AB7A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7C97E9CDCADFACE7"
-					type: "random"
-				}
-				{
-					id: "594A041787DDE4F3"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3F672974480431F9"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "Mixing it up!"
 			tasks: [{
 				id: "7FBC0263B2E87A16"
 				item: "modern_industrialization:bronze_mixer"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.0d
+			x: 13.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["343C68866C58ADC3"]
+			dependencies: [
+				"343C68866C58ADC3"
+				"2B3D7AC154932A16"
+			]
 			description: [
 				"The &6Bronze Cutting Machine&r will give you &ebetter ratios&r for bolts, gears, rings and rods. It uses a little bit of &6lubricant&r every time."
 				""
@@ -610,32 +333,16 @@
 				"Until you have a &aCoke Oven&r, you don't have any &6Lubricant,&r so maybe wait until you have access to Creosote before making this?"
 			]
 			id: "3730B6FAEF7DAA37"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5F2B2095B7E421BE"
-					type: "random"
-				}
-				{
-					id: "121C4776401C3319"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "38719AFE857D082D"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "Bzzzzz"
 			tasks: [{
 				id: "1F17A3F1DD5F141B"
 				item: "modern_industrialization:bronze_cutting_machine"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 4.0d
+			x: 13.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4AF847F8B403E6E3"]
@@ -652,33 +359,11 @@
 				"Once the &aCoke Oven&r says &dShape Valid&r, fill the fluid input hatch with &7Steam&r, put Coal in the &3Item Input Hatch&r and you're good to go!"
 				""
 				"Coke will be very useful for &eSteel&r, but it also is a powerful fuel as it lasts four times as long as coal."
+				""
+				"The &aCoke recipe&r doesn't require you to have a &efluid output hatch&r on the &6multiblock&r, but I recommend adding one so you can get some extra &7Creosote&r, as it's important for early game &2rubber&r and &6lubricant&r."
 			]
 			icon: "modern_industrialization:coke_oven"
 			id: "4AD151B1DCA26F4F"
-			rewards: [
-				{
-					count: 64
-					id: "0F764BE368EF2638"
-					item: "minecraft:coal"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "60B7AFE7D4A55B68"
-					type: "random"
-				}
-				{
-					id: "3D957AE71DF0DF44"
-					type: "xp"
-					xp: 100
-				}
-				{
-					count: 5
-					id: "42BE7508B8599B40"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-			]
 			shape: "square"
 			size: 2.0d
 			subtitle: "Your first multiblock machine!"
@@ -689,7 +374,7 @@
 					type: "item"
 				}
 				{
-					count: 21L
+					count: 20L
 					id: "6538C7F3D5B94551"
 					item: "minecraft:bricks"
 					type: "item"
@@ -730,40 +415,36 @@
 					title: "Any Fluid Input Hatch"
 					type: "item"
 				}
+				{
+					id: "042737908AE6452E"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:fluid_output_hatch"
+						}
+					}
+					title: "Any Fluid Output Hatch"
+					type: "item"
+				}
 			]
 			title: "The Coke Oven"
-			x: 7.5d
-			y: 7.5d
+			x: 20.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["62474684DD7A1B7C"]
 			description: ["Individually &dBricks&r need to be packaged down into &2Brick blocks&r. You can do this for now with a &6Bronze Compressor&r, but it's rather slow and you'll want to use a &eSteel Packer&r once it's available for a quicker recipe."]
 			id: "4AF847F8B403E6E3"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "62B4437568E4369D"
-					type: "random"
-				}
-				{
-					id: "61158E39000D6721"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "43A7A4637628903D"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "56E0C35372B18CCB"
 				item: "minecraft:bricks"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.5d
+			x: 17.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4AD151B1DCA26F4F"]
@@ -773,64 +454,29 @@
 				"&aCreosote&r can prove to be very useful, such as being able to make &6Lubricant&r for your &6Cutting Machines&r. If you'd like to start storing &aCreosote&r, attach a &2Fluid Output Hatch&r to the &aCoke Oven&r and pipe the fluid into tanks."
 			]
 			id: "7A6086319A01A16C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2CE5884D2D204189"
-					type: "random"
-				}
-				{
-					id: "2B8E06AC0175C76C"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "3317D536155FD13C"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "065D07068212BE85"
 				item: "modern_industrialization:creosote_bucket"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 7.5d
+			x: 20.0d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"7A6086319A01A16C"
-				"693368CF3E13AB7A"
-			]
-			description: ["By combining &3Creosote&r with &cRedstone Dust&r in a mixer you can create &6Lubricant&r. This fluid will be very useful in use of a &6Cutting Machine&r."]
+			dependencies: ["7A6086319A01A16C"]
+			description: ["By combining &3Creosote&r with &cRedstone Dust&r in a mixer you can create &6Lubricant&r. This fluid is used in most of the recipes in the &6Cutting Machine&r and also to speed up your &6machine overclocking&r once you reach &aelectrical machines&r."]
 			id: "2B3D7AC154932A16"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3CDD86C8705D53A3"
-					type: "random"
-				}
-				{
-					id: "1DDE68AF709DA8C7"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "3393F2D25E2F1B38"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "7A43A42E57FDB155"
 				item: "modern_industrialization:lubricant_bucket"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 5.5d
+			x: 17.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4AD151B1DCA26F4F"]
@@ -848,37 +494,15 @@
 				type: "checkmark"
 			}]
 			title: "Wall Sharing"
-			x: 9.5d
-			y: 7.5d
+			x: 20.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["738FE28369D3A550"]
 			description: ["Mixing your newly created &aCoke Dust&r with &3Iron Dust&r in a &6Mixer&r you can make &eUncooked Steel Dust&r. This is the precursor for &eSteel&r, now you will&2 need another multiblock to smelt it&r!"]
 			id: "4A1086D69A76909D"
-			rewards: [
-				{
-					count: 9
-					id: "313D42FF2B3F73E4"
-					item: "modern_industrialization:uncooked_steel_dust"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "26F759C276364CC4"
-					type: "random"
-				}
-				{
-					id: "624A30C9DA06A4F4"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "519808FF926214A1"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				count: 9L
 				id: "7ADE537482D26B2B"
@@ -886,8 +510,8 @@
 				type: "item"
 			}]
 			title: "Uncooked Steel Dust"
-			x: 7.5d
-			y: 10.75d
+			x: 25.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4AD151B1DCA26F4F"]
@@ -897,24 +521,8 @@
 				"To make &eCoke Dust&r, you will need to pass regular &aCoke&r through a &6Macerator&r."
 			]
 			id: "738FE28369D3A550"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "699E2C6780BB86B6"
-					type: "random"
-				}
-				{
-					id: "0225CDE90BC8338A"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "24CEA00679E74503"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "Not the soda"
 			tasks: [
 				{
@@ -928,8 +536,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 9.5d
+			x: 22.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4A1086D69A76909D"]
@@ -940,24 +548,6 @@
 			]
 			icon: "modern_industrialization:steam_blast_furnace"
 			id: "578C4D10471D6EC9"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2B9B5E2822FC1561"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "5571BD1E5592BCB8"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "31DD9F81E6030FD1"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			size: 2.0d
 			subtitle: "Better than the vanilla version!"
@@ -1010,8 +600,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 13.0d
+			x: 27.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["578C4D10471D6EC9"]
@@ -1023,27 +613,9 @@
 				"A &eSteel Boiler&r will produce twice as much &7steam&r as a Bronze one, that means up to &e16 EU/t&r, and a &eSteel Water Pump&r will produce twice as much &9water&r as its &6Bronze&r counterpart, so up to &e2 buckets / 5 seconds&r."
 			]
 			id: "45CE5F461A159F66"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "23F4CFEE012D6563"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "3C34328751F7C705"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "66CE9D2C1637EAD4"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			size: 1.25d
-			subtitle: "The beginning of industry"
+			shape: "gear"
+			size: 2.5d
+			subtitle: "The foundation of industry"
 			tasks: [{
 				count: 18L
 				id: "72B36D278758508E"
@@ -1051,8 +623,8 @@
 				type: "item"
 			}]
 			title: "&eSteel Ingots&r"
-			x: 15.5d
-			y: 13.0d
+			x: 33.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
@@ -1066,30 +638,9 @@
 				"&cNote&r: The &aitem pipes&r are on whitelist by default (which mean only the items in the filter will be moved). You need to switch to blacklist (only the items NOT in the filter will be moved) or add the item you want to move to the filter. &3Be careful that you need to configure BOTH sides of the pipe, otherwise items will not move&r."
 			]
 			id: "4D4B76A0251E4A45"
-			rewards: [
-				{
-					count: 16
-					id: "40D6A76C5020BAFD"
-					item: "modern_industrialization:item_pipe"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "77EF3CEA888BB7DD"
-					type: "random"
-				}
-				{
-					id: "646F8915E416E342"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4A32E8E267A0DE56"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
+			subtitle: "Mom's Spaghetti"
 			tasks: [{
 				count: 16L
 				id: "0A61EC683D66F0E7"
@@ -1104,37 +655,15 @@
 				type: "item"
 			}]
 			title: "Item Pipes"
-			x: 22.0d
-			y: 13.0d
+			x: 37.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
 			description: ["Instead of crafting entirely new machines, you can use the &eSteel&r Upgrade with a &6Bronze Machine&r in a &3Smithing Table&r to upgrade it into its &eSteel&r version."]
 			id: "577BA8EF0FB84BCE"
-			rewards: [
-				{
-					count: 2
-					id: "27123463B04BC7D4"
-					item: "modern_industrialization:steel_upgrade"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7E11F5CD76C3ED77"
-					type: "random"
-				}
-				{
-					id: "30444593EA6C0E0D"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "0A753A1E42325B64"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
+			size: 2.0d
 			tasks: [{
 				count: 2L
 				id: "1B6BCD5209E4A2F7"
@@ -1142,8 +671,8 @@
 				type: "item"
 			}]
 			title: "Steel Upgrades"
-			x: 16.5d
-			y: 16.5d
+			x: 37.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
@@ -1153,129 +682,52 @@
 				"You can also use it to &cdelete fluids&r in your inputs of machines by &3right clicking&r while holding the &aAutomatic Trash Can&r over the fluid in the &2machine GUI&r."
 			]
 			id: "5F56BBCF8B57F434"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "29DED6FC7695983F"
-					type: "random"
-				}
-				{
-					id: "23A6941B0D6B885B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "19A49A8C3715DC52"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "1D4CF1C762EC4EC8"
 				item: "modern_industrialization:trash_can"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 15.5d
+			x: 34.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
-			description: ["The &eSteel Unpacker&r, a new machine only available in &eSteel&r. It acts to unpack items, check &dREI&r for recipes."]
+			description: [
+				"The &eSteel Packer&r, a new machine only available in &eSteel&r, can perform simple crafts for you. You can now automate double ingots and pipes. Check &dREI&r for all the recipes."
+				""
+				"The &eSteel Unpacker&r, a new machine only available in &eSteel&r. It acts to unpack items, check &dREI&r for recipes."
+				""
+				"For those of you who have played &bGregTech&r, the &aPacker Templates&r are similar to using &dcircuit numbers&r in recipes. Similar to that system, using one of these items in a recipe will tell the &ePacker&r what recipe to use &cwithout consuming the item&r."
+			]
 			id: "3B911268380F061D"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "0D400838B2274EF8"
-					type: "random"
-				}
-				{
-					id: "55F65F26CFC49EA0"
-					item: "kubejs:coin_rare"
+					id: "3BC120283CAF2D66"
+					item: "modern_industrialization:packer_double_ingot_template"
 					type: "item"
 				}
 				{
-					id: "1A40DF791A2F23D2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "742137C5ED3F53CE"
-				item: "modern_industrialization:steel_unpacker"
-				type: "item"
-			}]
-			x: 17.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["45CE5F461A159F66"]
-			description: ["The &eSteel Packer&r, a new machine only available in &eSteel&r, can perform simple crafts for you. You can now automate double ingots and pipes. Check &dREI&r for all the recipes."]
-			id: "759C375900C081FF"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "245FCA5D94D8BD9E"
-					type: "random"
-				}
-				{
-					id: "0715C9F4040A0604"
-					item: "kubejs:coin_rare"
+					id: "42E1E8B8FA7ADA6A"
+					item: "modern_industrialization:packer_block_template"
 					type: "item"
-				}
-				{
-					id: "45840E2811FB01F4"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "56CF510B4417E8DB"
-				item: "modern_industrialization:steel_packer"
-				type: "item"
-			}]
-			x: 18.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["759C375900C081FF"]
-			description: ["For those of you who have played &bGregTech&r, these are similar to using &dcircuit numbers&r in recipes. Similar to that system, using one of these items in a recipe will tell the &ePacker&r what recipe to use &cwithout consuming the item&r."]
-			id: "28EEDBD2BE127F84"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "31FE86418A57EDF0"
-					type: "random"
-				}
-				{
-					id: "5A89770823352EA6"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "07CDBAB61B82ABCF"
-					type: "xp"
-					xp: 10
 				}
 			]
 			shape: "rsquare"
 			tasks: [
 				{
-					id: "033602CDF480E9D1"
-					item: "modern_industrialization:packer_block_template"
+					id: "041627ABC65B72A5"
+					item: "modern_industrialization:steel_packer"
 					type: "item"
 				}
 				{
-					id: "79780F460C630AAB"
-					item: "modern_industrialization:packer_double_ingot_template"
+					id: "0535C1FD2C44E5F9"
+					item: "modern_industrialization:steel_unpacker"
 					type: "item"
 				}
 			]
-			title: "Packer Templates"
-			x: 18.5d
-			y: 16.5d
+			x: 30.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4D4B76A0251E4A45"]
@@ -1288,26 +740,8 @@
 			]
 			icon: "modern_industrialization:steam_quarry"
 			id: "1F5ACBB3A3D021B3"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4EFEB86EBD8ECE12"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "04D376522A39C8E2"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3DC1D56CCE47FEB4"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "Ores Ad Nauseam"
 			tasks: [
 				{
@@ -1372,137 +806,61 @@
 				}
 			]
 			title: "Steam Quarry"
-			x: 24.5d
-			y: 13.0d
+			x: 40.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1F5ACBB3A3D021B3"]
 			description: ["Putting the &6Bronze Drill&r in the &aSteam Quarry&r will return ores in the &6Item Output Hatches&r. Make sure to pipe out the items immediately so you &cdon't void any of the ores&r!"]
 			id: "1CBCB4D1ECFBDE9E"
-			rewards: [
-				{
-					count: 4
-					id: "61AA8AE6030D48DE"
-					item: "modern_industrialization:bronze_drill"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "0FF37A8A58A96C7E"
-					type: "random"
-				}
-				{
-					id: "0FD50029C18BD41B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "59D94FF70DF6F72C"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "44BB30C1E1C8A00B"
 				item: "modern_industrialization:bronze_drill"
 				type: "item"
 			}]
-			x: 26.5d
-			y: 12.0d
+			x: 42.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1F5ACBB3A3D021B3"]
 			description: ["Putting a &cCopper Drill&r in a &aSteam Quarry&r is a good way to get various types of stones. Make sure to pipe out the items immediately to avoid voiding any outputs!"]
 			id: "52D685C4965BE0EF"
-			rewards: [
-				{
-					count: 3
-					id: "28CC1882886066C1"
-					item: "modern_industrialization:copper_drill"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "771C677571B8C843"
-					type: "random"
-				}
-				{
-					id: "453E1DB34FFCD508"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "377D87D7E947677B"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "041F228E1BE8C19F"
 				item: "modern_industrialization:copper_drill"
 				type: "item"
 			}]
-			x: 26.5d
-			y: 14.0d
+			x: 42.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
 			description: ["The &aWiremill&r will be useful in the future for the &acreation of wires&r. Combine the wires with &8Rubber Sheets&r to get &ecables.&r"]
 			id: "3C093BB3F3D520D9"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "047C3B04B6C0EB33"
-					type: "random"
-				}
-				{
-					id: "7CC47C35781F2ADD"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "2FE8B77D69B3C89C"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "1EBE157581A176E9"
 				item: "modern_industrialization:steel_wiremill"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 11.0d
+			x: 37.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["38E38B24C0432327"]
+			dependencies: ["578C4D10471D6EC9"]
 			description: [
 				"If you find yourself lucky to find a &aRubber Tree&r, you can use a &bTree Tap&r to extract Sap and process it into Rubber. You can then use a Compressor to turn the Rubber into Rubber Sheets."
 				""
 				"A little bit more of a manual way, but you can get a lot of &8Rubber Sheets&r if you feel like putting in the effort."
+				""
+				"The &bResin Basin&r can be used to automate extracting &aSap&r from &dRubber Trees&r. When placed at the base of the tree, they will slowly extract &aSap&r from the tree. This &aSap&r can be collected by right-clicking the basin, or by placing a chest/barrel underneath it. It will &aauto-extract&r into inventories below it."
 			]
+			hide_dependency_lines: true
 			icon: "techreborn:rubber"
 			id: "68DF10A8AB2D074A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "73B2B66BA6B60853"
-					type: "random"
-				}
-				{
-					id: "56A545E62A99457A"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "79E00B89F2A3E715"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -1526,111 +884,77 @@
 					item: "techreborn:rubber"
 					type: "item"
 				}
-			]
-			title: "Alternative Rubber Source"
-			x: 13.0d
-			y: 11.0d
-		}
-		{
-			dependencies: ["4D3EDFA212A5B4F1"]
-			description: ["Combining &aSynthetic Oil&r with Paper in a &6Mixer&r will grant you two&2 Rubber Sheets&r. You will unlock a more efficient recipe with petrochemistry in the future."]
-			id: "38E38B24C0432327"
-			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "2D202800C3B875BB"
-					type: "random"
-				}
-				{
-					id: "5D29C4D9D1718387"
-					item: "kubejs:coin_rare"
+					id: "206A4D4344AAAE05"
+					item: "techreborn:resin_basin"
+					optional_task: true
 					type: "item"
 				}
-				{
-					id: "4CEA2048659FC1B4"
-					type: "xp"
-					xp: 10
-				}
 			]
+			title: "Alternative Rubber Source"
+			x: 30.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"131FF702BC2707FB"
+				"4D3EDFA212A5B4F1"
+				"68DF10A8AB2D074A"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Combining &aSynthetic Oil&r with Paper in a &6Mixer&r will grant you two&2 Rubber Sheets&r. You will unlock a more efficient recipe with petrochemistry in the future."]
+			id: "38E38B24C0432327"
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "230193C6FABE0299"
 				item: "modern_industrialization:rubber_sheet"
 				type: "item"
 			}]
 			title: "Rubber Sheets"
-			x: 12.5d
-			y: 9.5d
+			x: 30.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"4F060179B81581AB"
 				"578C4D10471D6EC9"
 			]
-			description: ["Burning Raw Synthetic Oil in a &aSteam Blast Furnace&r will get you Synthetic Oil."]
+			description: ["Burning &bRaw Synthetic Oil&r in a &aSteam Blast Furnace&r will get you &3Synthetic Oil&r."]
 			id: "4D3EDFA212A5B4F1"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "55CFB5F91D6DFC75"
-					type: "random"
-				}
-				{
-					id: "500257EC36D6476E"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "6D56035E11C52179"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "0F35D80A1E316106"
 				item: "modern_industrialization:synthetic_oil_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 11.0d
+			x: 27.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["738FE28369D3A550"]
 			description: [
-				"Mixing Coke Dust and &9Water&r in a Mixer will get you &bRaw Synthetic Oil&r, which you can burn in a &aSteam Blast Furnace&r to get &bSynthetic Oil&a. Mix it with paper and that gives you &8Rubber Sheets&r!"
+				"Mixing &eCoke Dust&r and &9Water&r in a &6Mixer&r will get you &bRaw Synthetic Oil&r, which you can burn in a &aSteam Blast Furnace&r to get &bSynthetic Oil&a. Mix it with paper and that gives you &8Rubber Sheets&r!"
 				""
-				"Automating this process is strongly recommended! Note that paper can be made from wood using wood pulp."
+				"Automating this process is &astrongly recommended&r! Note that paper can be made efficiently from wood using wood pulp."
 			]
 			id: "4F060179B81581AB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "77898728B05E1D4C"
-					type: "random"
-				}
-				{
-					id: "682D9BBAC410D62D"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "01E884A48A489E28"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "00A681C52DF406BB"
 				item: "modern_industrialization:raw_synthetic_oil_bucket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 9.5d
+			x: 22.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["693368CF3E13AB7A"]
+			dependencies: [
+				"62474684DD7A1B7C"
+				"693368CF3E13AB7A"
+			]
 			description: [
 				"&aPaper&r production has been &3&mgregified&r&r &estatified&r. &6Macerating&r logs into &dWood Pulp&r, then mixing that &dWood Pulp&r with &9Water&r will produce &apaper&r!"
 				""
@@ -1639,31 +963,15 @@
 				"You can also use the &6Compressor&r and &2Sugar Cane&r to make paper, but it's very inefficient!"
 			]
 			id: "6BF59CA2D21361D1"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0155B75DC2EB0CF6"
-					type: "random"
-				}
-				{
-					id: "6259BE82A076EC22"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "0CB6E33442739034"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "6D44B15036BCEE18"
 				item: "minecraft:paper"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.5d
+			x: 17.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5CAAB61AA7E9FC66"]
@@ -1675,23 +983,6 @@
 				"&eHover over the item and press shift to see all the controls&r."
 			]
 			id: "1EE124C7111A27F0"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "77D964CADF350510"
-					type: "random"
-				}
-				{
-					id: "195E1A363C47888E"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "1E00143DFC9139DD"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "48FC7AE4535CB088"
@@ -1699,8 +990,8 @@
 				type: "item"
 			}]
 			title: "Advanced Pipe Configuration"
-			x: 11.0d
-			y: 7.0d
+			x: 35.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["38E38B24C0432327"]
@@ -1710,23 +1001,6 @@
 				"At this point, they aren't that useful to you, however when you have a &aDiesel Jetpack&r, they will prevent you from taking damage while at &chigh speeds&r. For now, it's nothing more than a sad excuse for &darmor&r."
 			]
 			id: "5CF5CDD58DA92BDB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1A780CD8E2873CCA"
-					type: "random"
-				}
-				{
-					id: "0052BFF8F6999685"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "43618C09DA2D4F51"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -1753,14 +1027,11 @@
 				}
 			]
 			title: "Rubber Hat \\& Shoes"
-			x: 12.0d
-			y: 11.0d
+			x: 31.0d
+			y: 1.0d
 		}
 		{
-			dependencies: [
-				"38E38B24C0432327"
-				"3C093BB3F3D520D9"
-			]
+			dependencies: ["3C093BB3F3D520D9"]
 			description: [
 				"With your &aWiremill&r and &8Rubber Sheets&r you can now craft your first &eCables.&r There are three variants in LV, &eCopper, Tin, and Silver Cables&r."
 				""
@@ -1769,30 +1040,8 @@
 				"&eCables&r of different colors and types do &cnot connect to one another&r."
 			]
 			id: "004069E9EBF8D803"
-			rewards: [
-				{
-					count: 12
-					id: "2FEEC336AC9FCDE3"
-					item: "modern_industrialization:copper_cable"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "69A8B2A85B601895"
-					type: "random"
-				}
-				{
-					id: "3606ED6435DB652C"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "247C33B5B4AD9EA3"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "68056AAB07BEE307"
 				item: {
@@ -1806,8 +1055,8 @@
 				type: "item"
 			}]
 			title: "LV Cables"
-			x: 15.5d
-			y: 9.5d
+			x: 40.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3505E9029F3CEAD0"]
@@ -1824,24 +1073,8 @@
 			]
 			icon: "modern_industrialization:large_tank"
 			id: "1F61820447808CD1"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "505A127B912776E3"
-					type: "random"
-				}
-				{
-					id: "151AC60BDAD3F624"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "2519F22803BD7D0F"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
+			size: 2.0d
 			subtitle: "Mass Fluid Storage"
 			tasks: [
 				{
@@ -1868,8 +1101,8 @@
 				}
 			]
 			title: "Large Tank"
-			x: 19.0d
-			y: 10.0d
+			x: 45.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["004069E9EBF8D803"]
@@ -1879,24 +1112,8 @@
 				"I'd recommend &dcrafting these in bulk&r, as it they are quite tedious to craft by hand. Once you unlock the &6Asssembler&r, it will be significantly easier to make these."
 			]
 			id: "3505E9029F3CEAD0"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "441BE6E8C2CF96CD"
-					type: "random"
-				}
-				{
-					id: "1E30CE130C1F84A6"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4D13A08FC65FADFF"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [
 				{
 					id: "3FEA6C2C48642EF8"
@@ -1925,59 +1142,22 @@
 				}
 			]
 			title: "Basic Components"
-			x: 17.5d
-			y: 9.5d
+			x: 42.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["38E38B24C0432327"]
+			dependencies: [
+				"38E38B24C0432327"
+				"45CE5F461A159F66"
+			]
 			description: [
 				"Now with access to Rubber and Cables, you can now craft all the parts you will need for your first circuits."
 				""
 				"You will be crafting a lot of these over the course of the pack (hopefully automatically), so I'll go ahead and throw in a few more."
 			]
 			id: "5CAAB61AA7E9FC66"
-			rewards: [
-				{
-					count: 4
-					id: "0C0E035047B7B559"
-					item: "modern_industrialization:resistor"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "029C2BEF7E65E94A"
-					item: "modern_industrialization:inductor"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "3E03967838ACF73A"
-					item: "modern_industrialization:analog_circuit_board"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "1C5FBBE5D58A24DD"
-					item: "modern_industrialization:capacitor"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "0CA2D1C8336A3162"
-					type: "random"
-				}
-				{
-					id: "204019BA4D87175B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "164AC48DE07378E4"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [
 				{
 					id: "49EFE0B9CD036536"
@@ -2001,8 +1181,8 @@
 				}
 			]
 			title: "Circuit Components"
-			x: 12.5d
-			y: 7.0d
+			x: 33.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5CAAB61AA7E9FC66"]
@@ -2012,24 +1192,6 @@
 				"You'll need a lot of these through progression, &dI'd recommend automating them or batching large quantities&r."
 			]
 			id: "72090D36C27DC4AF"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0CCB6D28FFC628EF"
-					type: "random"
-				}
-				{
-					count: 10
-					id: "4FC964A5A33F6D71"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "1666352C5DDD0964"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			size: 2.0d
 			subtitle: "Your first circuits!"
@@ -2038,42 +1200,25 @@
 				item: "modern_industrialization:analog_circuit"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 4.0d
+			x: 33.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["693368CF3E13AB7A"]
 			description: [
-				"You will soon be needing to make &aHeatproof Machine Casings&r, which require Invar. Invar is made in a Mixer by combining 2 Iron Dusts with 1 Nickel Dust. "
+				"You will soon be needing to make &aHeatproof Machine Casings&r, which require &eInvar&r. Invar is made in a &6Mixer&r by combining &b2 Iron Dusts&r with &61 Nickel Dust&r. "
 				""
-				"I wouldn't put off making this until later, as you will need it for the Electric Blast Furnace very soon!"
+				"I wouldn't put off making this until later, as you will need it for the &aElectric Blast Furnace&r sooner than you think!"
 			]
 			id: "071D9B8D5C16227B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7816D4F4307B75C5"
-					type: "random"
-				}
-				{
-					id: "3CE2A183B9204517"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "6CA459659CD742BA"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "0F360811F97A1D47"
-				item: "modern_industrialization:invar_ingot"
+				item: "modern_industrialization:invar_dust"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 5.5d
+			x: 14.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["72090D36C27DC4AF"]
@@ -2092,26 +1237,8 @@
 			]
 			icon: "modern_industrialization:large_steam_boiler"
 			id: "4C40D7303E037FDC"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4DE29216543C5E62"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "62B32C73286BAA70"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "0100328FB15F29AA"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "Goodbye fuel"
 			tasks: [
 				{
@@ -2175,36 +1302,13 @@
 				}
 			]
 			title: "Large Steam Boiler"
-			x: 9.75d
-			y: 4.0d
+			x: 30.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["693368CF3E13AB7A"]
 			description: ["&dBattery Alloy&r is going to be required as you move forward towards your first &eSteam Turbine&r. If you have found some &3Antimony,&r you can go ahead and mix it together with some &dLead Dust&r to make &dBattery Alloy Dust&r."]
 			id: "3820A443B373ADA0"
-			rewards: [
-				{
-					count: 4
-					id: "2C79BEF3416E9F24"
-					item: "modern_industrialization:battery_alloy_dust"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "34CAEDFBA5860273"
-					type: "random"
-				}
-				{
-					id: "11C7631A31752508"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "526E43EAC6FB7D4C"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				count: 2L
@@ -2213,8 +1317,8 @@
 				type: "item"
 			}]
 			title: "Battery Alloy Dust"
-			x: 4.0d
-			y: 5.5d
+			x: 13.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -2227,34 +1331,16 @@
 				"This marks the end of &eChapter 2&r. &lCongratulations&r! Get ready, as &2LV brings a lot of new opportunities and challenges&r!"
 			]
 			id: "6EB26F44ECEEF81A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "702F581E11D01815"
-					type: "random"
-				}
-				{
-					count: 10
-					id: "4D62F865DE40DD31"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7238256BCB1AAAFF"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			size: 2.5d
+			shape: "gear"
+			size: 3.0d
 			subtitle: "End of the Steam Age"
 			tasks: [{
 				id: "46B1ADA5726A1B18"
 				item: "modern_industrialization:basic_machine_hull"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 4.0d
+			x: 40.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["004069E9EBF8D803"]
@@ -2264,91 +1350,41 @@
 				"These &abatteries&r on their own &cdo not hold&r a charge, if you'd like a more traditional modded battery, you can follow the next quest to make a &2Red Cell Battery&r from &eTech Reborn&r."
 			]
 			id: "0390CA76F7045D0F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "03DFC83034229886"
-					type: "random"
-				}
-				{
-					id: "7258343B9F246832"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3C1E134361EE57FA"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "51BB44EEBA22738A"
 				item: "modern_industrialization:redstone_battery"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 7.0d
+			x: 40.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
 			description: ["The &eSteel Tank&r is an upgrade to the &6Bronze Tank&r from earlier. It now can store up to &d8000 mB&r of any fluid and continues to retain it's inventory when broken."]
 			id: "0A8E881B45C7FCFC"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3AC6C1DE296A4DCC"
-					type: "random"
-				}
-				{
-					id: "055CC4C091FF2CDA"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "191B55A5F4201B99"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "36ED58C8C8DBB8EB"
 				item: "modern_industrialization:steel_tank"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 15.5d
+			x: 32.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
 			description: ["An upgrade to the &6Bronze Barrel&r. This barrel can hold up to 128 stacks of the same item. Probably really good for all the cobblestone you've been amassing."]
 			id: "39D48C79329C6E09"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "38481C63B73385AD"
-					type: "random"
-				}
-				{
-					id: "1E984D61AB429EF1"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5DAE5846582D1C94"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "27B34989D6BF4893"
 				item: "modern_industrialization:steel_barrel"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 16.5d
+			x: 33.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0390CA76F7045D0F"]
@@ -2360,53 +1396,19 @@
 				"&eTech Reborn&r's energy system is just called Energy (E). It's a &d1:1 conversion&r between &eModern Industrializations&r EU and Tech Reborn E, so it makes it really easy to understand."
 			]
 			id: "2275EBB47166F9D2"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0F97E9E3185F2D91"
-					type: "random"
-				}
-				{
-					id: "183E1199C3BDF10A"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "791B6CE00373D897"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "5E21AAA42909D693"
 				item: "techreborn:low_voltage_su"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 6.5d
+			x: 38.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
 			description: ["Probably the least interesting thing you can make with your new &eSteel&r is armor. It's definitely an &aupgrade from Iron&r, but I wouldn't recommend making it unless you have a lot of extra &eSteel&r or are &chaving trouble with mobs&r."]
 			id: "1C7E832A64CD1620"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "18DF9BCC31931C81"
-					type: "random"
-				}
-				{
-					id: "04FCF8E55BC74B07"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "04D9065875FF4FEF"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -2454,8 +1456,8 @@
 					type: "item"
 				}
 			]
-			x: 17.5d
-			y: 16.5d
+			x: 34.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["578C4D10471D6EC9"]
@@ -2465,31 +1467,14 @@
 				"With that you can run &cRedstone Dust&r through the &eBlast Furnace&r to produce &cMolten Redstone&r. At this point you won't really have a reason to generate any, but it could be useful to cheapen &credstone components&r."
 			]
 			id: "4FBE60D1D4995C8D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6765C56BE8E2B5AB"
-					type: "random"
-				}
-				{
-					id: "1F9BA369662898E0"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "11114EAFFA763D65"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "2E703C763E482D80"
 				item: "modern_industrialization:molten_redstone_bucket"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 12.5d
+			x: 27.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["578C4D10471D6EC9"]
@@ -2499,64 +1484,31 @@
 				"&bSoldering Alloy&r is an important fluid to have on hand moving forward, as it can be used in &dassemblers&r to &3reduce the cost of crafting certain items by hand&r."
 			]
 			id: "05FD1FD793252EF5"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "27547A3CBDA05E7E"
-					type: "random"
-				}
-				{
-					id: "0C01F78A6402F1A5"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7351A5EBD288A993"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "6937D80F4C61CD3B"
 				item: "modern_industrialization:soldering_alloy_bucket"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 14.0d
+			x: 28.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["45CE5F461A159F66"]
+			dependencies: ["577BA8EF0FB84BCE"]
 			description: ["The &eSteel Boiler&r is an upgrade to your &6Bronze Boiler&r. It can produce up to &316 EU/t&r worth of &7Steam&r, double that of the Bronze."]
 			id: "4DD579C699181982"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "091B1438AA3ED752"
-					type: "random"
-				}
-				{
-					id: "4A7F19C32A04B419"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "363029F9B6964B57"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
+			size: 2.0d
 			tasks: [{
 				id: "7FC015A7D52B67D1"
 				item: "modern_industrialization:steel_boiler"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 15.5d
+			x: 37.5d
+			y: 7.5d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: [
 				"Now that you have a &aForge Hammer&r, you can make &bIron Rods&r required for making pistons, which allow you to make &dElevators&r."
 				""
@@ -2567,23 +1519,6 @@
 				"&dElevators&r of different colors will&c not travel to each other&r."
 			]
 			id: "486ADC13C8868424"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5F2B142509DD38DF"
-					type: "random"
-				}
-				{
-					id: "2F718357E7C5E8D5"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "0ED1971CCA3710A3"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "6145677CF9FAAE1B"
@@ -2599,29 +1534,12 @@
 			}]
 			title: "Elevators"
 			x: 1.0d
-			y: -2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
 			description: ["&aTravel Anchors&r are pulled straight out of &eEnderIO.&r You can place them down, name them, and use the &bwand to warp between them&r. You can also stand on them to warp to others &eby looking at them and pressing right-click&r."]
 			id: "4434AD65DF2DD224"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "289B6B614B02F961"
-					type: "random"
-				}
-				{
-					id: "4F6331720391A047"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "1DE79272D3178EA8"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -2636,45 +1554,17 @@
 				}
 			]
 			title: "Travel Anchors"
-			x: 14.5d
-			y: 16.5d
+			x: 32.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: [
 				"&aCatwalks&r are a decorative block that can be used to &6add a lot of aesthetic&r to your builds. The &3wrench&r can be used to edit how the handrails appear on the sides of the catwalks."
 				""
 				"You can craft a &dPaint Roller&r to adjust the color of your &acatwalks&r."
 			]
 			id: "1EDCF314B9A08129"
-			rewards: [
-				{
-					id: "1EC211A9C06AB059"
-					item: {
-						Count: 1b
-						id: "catwalksinc:wrench"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "2C0AABECB1E66157"
-					type: "random"
-				}
-				{
-					id: "0DFC9F92B322DF9C"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "3870AA126ABFBFCF"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			subtitle: "A factory staple"
 			tasks: [{
@@ -2683,29 +1573,12 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: ["The &aNature's Compass&r is a very helpful tool if you're looking for &6any specific biome&r. It provides both the &ddirection&r and the &2distance&r to any biome in the pack."]
 			id: "5F1733B6400DD9BA"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3C0F649FE0938325"
-					type: "random"
-				}
-				{
-					id: "62711875C86B2590"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "697852B12ABBB8AA"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			subtitle: "Explore the world"
 			tasks: [{
@@ -2718,63 +1591,30 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -2.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["45CE5F461A159F66"]
+			dependencies: ["577BA8EF0FB84BCE"]
 			description: [
 				"Similar to the other &3machine upgrades&r you can make with &esteel&r, the &eSteel&r Pump works twice as fast as the &6Bronze&r variant. "
 				""
 				"That means a fully encircled &eSteel&r Pump will pump 2 buckets of &9water&r every 5 seconds. You will probably need this as your &7steam&r requirements increase as you progress."
 			]
 			id: "4DB42F0D980DA49F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "26187A816884A8D6"
-					type: "random"
-				}
-				{
-					id: "3F55EAF74B83D7F1"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5C8AF39BA73309CF"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
+			size: 2.0d
 			tasks: [{
 				id: "227F56E3A1F55CFE"
 				item: "modern_industrialization:steel_water_pump"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 16.5d
+			x: 35.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
 			description: ["The &dMagnet&r, when activated, will attract &6nearby dropped items&r to the player."]
 			id: "5ACF260F9E41D82C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "164C6438477CCCA4"
-					type: "random"
-				}
-				{
-					id: "52B035C046D32C16"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7F3E2D33B4501832"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "74043B260FABE0CA"
@@ -2787,30 +1627,13 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 15.5d
+			x: 31.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: ["A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally. &eHold crouch to go faster&r."]
 			id: "0B735B2265B363C8"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "16A24A265946A6D1"
-					type: "random"
-				}
-				{
-					id: "316E33E7F7B5231C"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "6F06365F49564A44"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "1C5D56BBF174CFCD"
@@ -2938,8 +1761,8 @@
 				type: "item"
 			}]
 			title: "Take to the Skies"
-			x: -0.5d
-			y: -3.0d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0390CA76F7045D0F"]
@@ -2949,31 +1772,14 @@
 				"You will need the &6Battery Box&r at this point to initially charge the &abattery&r itself though."
 			]
 			id: "5F7B86F96F250B3D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "719BE9EFD53A84C7"
-					type: "random"
-				}
-				{
-					id: "50E854CD4B6B78D6"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "2BD94EBE21BCC9A3"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "1E986E95C01D9924"
 				item: "techreborn:red_cell_battery"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 7.5d
+			x: 38.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["72090D36C27DC4AF"]
@@ -2985,31 +1791,14 @@
 				"You will need to make the Battery Box to charge it."
 			]
 			id: "1BF78FD92C018648"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2CF4F13C0686EA16"
-					type: "random"
-				}
-				{
-					id: "2D4B3487287B65A7"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4A6BFBCDD39E54EE"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "6365CFAB33A3C3DF"
 				item: "techreborn:electric_treetap"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.5d
+			x: 31.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["2B3D7AC154932A16"]
@@ -3019,23 +1808,6 @@
 				"To &6Overclock&r a machine, right-click an &6Electrical Machine&r with a &6lubricant&r container, such as a &6lubricant&r bucket, to overclock it manually. Each 25 mb of &6lubricant&r will add &a1 (overclocking) efficiency tick to the machine&r."
 			]
 			id: "402F586B741ADE1B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "615388D1676F1C78"
-					type: "random"
-				}
-				{
-					id: "266E853F1F7A05BE"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "6D84DB55417B57F2"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "436E872C2D8C8DE4"
@@ -3043,38 +1815,21 @@
 				type: "checkmark"
 			}]
 			title: "Overclocking"
-			x: 4.5d
-			y: 7.5d
+			x: 17.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["72090D36C27DC4AF"]
 			description: ["The Configurable Chest is not a machine, but once you have Analog Circuits, you can craft it. It has 27 configurable slots, and auto-extract functionality! Very useful for automation!"]
 			id: "45E0DB65DD53DC8E"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "227F002911A7A967"
-					type: "random"
-				}
-				{
-					id: "27D58A6C8A25DD9D"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "19A2AD42A491D2DC"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "1D37B2F675EE77B6"
 				item: "modern_industrialization:configurable_chest"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 1.5d
+			x: 33.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["72090D36C27DC4AF"]
@@ -3086,29 +1841,6 @@
 				"You'll need to have made the &3Battery Box&r to charge it at this point. Once you have the &6MI&r &aStorage Units&r you can right click them to charge it."
 			]
 			id: "408C2940A18F43BC"
-			rewards: [
-				{
-					count: 3
-					id: "466CAF732C2DA64C"
-					item: "scannable:blank_module"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "13FABC7EE0C13EB3"
-					type: "random"
-				}
-				{
-					id: "3BBFD47F19BD5B88"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "15C74DC7B61D3A24"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "57703C0E1ED3BE1C"
@@ -3116,270 +1848,117 @@
 				type: "item"
 			}]
 			title: "Scannable"
-			x: 14.0d
-			y: 1.5d
+			x: 34.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["408C2940A18F43BC"]
 			description: ["The scanner module can be used to increase the radius of your scans for the price of more power consumption. "]
 			id: "02DA362B49E4D749"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "007B14F8AF5E75B3"
-					type: "random"
-				}
-				{
-					id: "67F10A4C43FDEB0B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "66DC6719CB370997"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "559471DB58823FF6"
 				item: "scannable:range_module"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 0.0d
+			x: 33.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["408C2940A18F43BC"]
 			description: ["Right-click on a mob to add it to the list. Your scans will now specifically search for that entity."]
 			id: "2347443050780634"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "42374362B3DE6C2A"
-					type: "random"
-				}
-				{
-					id: "76E78BB06A3B9B90"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "36920F7D5934B662"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "2800F58098877465"
 				item: "scannable:entity_module"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: 34.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["408C2940A18F43BC"]
 			description: ["This module will find any nearby animals."]
 			id: "5E9CDEF56C78DEBE"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2E31E6764D2481E6"
-					type: "random"
-				}
-				{
-					id: "65684B440FDDB2E2"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "357CE0964C536101"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "6FE3E4BA2B1DE7FF"
 				item: "scannable:friendly_entity_module"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 0.0d
+			x: 35.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["408C2940A18F43BC"]
 			description: ["This module will find any nearby hostile mobs."]
 			id: "60AC43AD4B1815C6"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "65C38FC227FF2D42"
-					type: "random"
-				}
-				{
-					id: "0FCF06B67EA63D89"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3A0E0D660C99B0B0"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "687430EB92CE4BCD"
 				item: "scannable:hostile_entity_module"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 0.0d
+			x: 36.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["408C2940A18F43BC"]
 			description: ["Used to find specific configured blocks in your scans. Can be very useful if you're looking for something specific."]
 			id: "7CFA7141E7D3D4A1"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6898A68C63C40DB3"
-					type: "random"
-				}
-				{
-					id: "7892147430782E23"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5613A6EF40FC03EF"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "5ED4DE6E0755E699"
 				item: "scannable:block_module"
 				type: "item"
 			}]
-			x: 12.5d
-			y: -1.0d
+			x: 33.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["408C2940A18F43BC"]
 			description: ["This module finds and highlights common ores in the world, such as iron, coal, etc."]
 			id: "742A8939A0EF9A1F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "38D9680693FEEEE8"
-					type: "random"
-				}
-				{
-					id: "2F0DD44502B46C66"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "71EA915BB7AB821F"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "74EC9078C50FE2BE"
 				item: "scannable:common_ores_module"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -1.0d
+			x: 34.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["408C2940A18F43BC"]
 			description: ["This module scans for rare ores, such as diamonds and emeralds."]
 			id: "2AF412025C6565FC"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2005134670F29AFD"
-					type: "random"
-				}
-				{
-					id: "51986270589FC3EC"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5909F966988CC6DA"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "2A89F40D82CC6B52"
 				item: "scannable:rare_ores_module"
 				type: "item"
 			}]
-			x: 14.5d
-			y: -1.0d
+			x: 35.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["408C2940A18F43BC"]
 			description: ["This module can be used to detect water and lava."]
 			id: "54DDB1F3D573A0CE"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "64C263C9390BB162"
-					type: "random"
-				}
-				{
-					id: "1B4589732CB34973"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5BF7FABB18868A79"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "021AF263852B3FBB"
 				item: "scannable:fluid_module"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -1.0d
+			x: 36.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
 			description: ["The &aExplorer's Compass&r is similar to the &2Nature's Compass&r in concept, except it will &efocus in on any structure in the game&r. This can be extremely useful if you want to find a nice place to &dloot&r or &aexplore&r."]
 			id: "2A34BE4E2ACB0B5B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "32A44E1DE2C245CB"
-					type: "random"
-				}
-				{
-					id: "6B00B5C1BD0CF0D3"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7B45A125A7684090"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			subtitle: "Dungeons, pyramids, and strongholds. Oh my!"
 			tasks: [{
@@ -3391,11 +1970,11 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 16.5d
+			x: 33.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: [
 				"The &eMeasuring Tape&r serves one purpose, to measure distance!"
 				""
@@ -3404,83 +1983,19 @@
 				"&6Shift right-click&r to clear the measurement."
 			]
 			id: "29D1C9F53F1721BF"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2833CF5BA8E1C01D"
-					type: "random"
-				}
-				{
-					id: "57448993DC1730E7"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "67822430EEB7FC5F"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "6E0FD7B7CFD112EA"
 				item: "kibe:measuring_tape"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["68DF10A8AB2D074A"]
-			description: ["The &bResin Basin&r can be used to semi-automate extracting &aSap&r from &dRubber Trees&r. When placed at the base of the tree, they will slowly extract &aSap&r from the tree. This &aSap&r can be collected by right-clicking the basin, or by placing a chest/barrel underneath it. It will &aauto-extract&r into inventories below it."]
-			id: "476DDBFB1BC389C0"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4776E427BAC6FEEA"
-					type: "random"
-				}
-				{
-					id: "1EA3F07352BD1AAF"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "14996A5B8E35CF91"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "44EF1B5E8C94B2E0"
-				item: "techreborn:resin_basin"
-				type: "item"
-			}]
-			x: 13.0d
-			y: 12.0d
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3505E9029F3CEAD0"]
 			description: ["&eEntities&r standing above it will be &bmoved&r. When combined with &dCursed Dirt&r it will make a powerful &cmob farm&r. &dCursed Dirt&r can still spawn mobs when below it."]
 			id: "1EA36D56E6CCD3B4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1D67AAFE89CC3F53"
-					type: "random"
-				}
-				{
-					id: "133047082F3558B8"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "49E90A6DF84F154C"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "0BF3FCE07DB19715"
@@ -3495,156 +2010,50 @@
 				type: "item"
 			}]
 			title: "Conveyor Belts"
-			x: 19.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["6BF59CA2D21361D1"]
-			description: ["The &eTechReborn&r &bStorage Buffer&r can hold only one item, but can be used as a buffer between your machines. It has &aconfigurable I/O&r and can have functionality toggled with &credstone signals&r."]
-			id: "3EB9221E20B83944"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7B6F00C5264D4323"
-					type: "random"
-				}
-				{
-					id: "31CF16A240FAD06B"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "2E0B8840E6DBB49D"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "61B54B4C5E0465F5"
-				item: "techreborn:storage_buffer"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["6BF59CA2D21361D1"]
-			description: ["The &eTechReborn&r &bCrude Storage Unit&r is an alternative / upgrade to the &6Bronze Barrel&r. Similar to the &aStorage Buffer&r, the &bCrude Storage Unit&r allows for &aconfigurable I/O&r and toggles with &credstone signals&r."]
-			id: "632D55476B2A7FC6"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3A45A63099FC323D"
-					type: "random"
-				}
-				{
-					id: "4FD8E28F223CBC79"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "3CCD0B53D88BE096"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "0D91E628C709A330"
-				item: "techreborn:crude_storage_unit"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 7.5d
+			x: 42.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6B3BEC96CBAB7760"]
 			description: ["The &eGold Chest&r stores &266 stacks of items&r. This is the highest tier you can make until you can process &bDiamond Plates&r."]
 			id: "37A8157AB01079F0"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "79731122E46168F0"
-					type: "random"
-				}
-				{
-					id: "7190425D2CC6E535"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "37CA5AC5C9DD341B"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
+			size: 1.5d
 			tasks: [{
 				id: "2AF4856E062F0CC3"
 				item: "ironchests:gold_chest"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 4.5d
+			x: -8.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
 			description: ["The &7Iron Chest&r can store &254 stacks of items&r."]
 			id: "6B3BEC96CBAB7760"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6AEDE066AD556869"
-					type: "random"
-				}
-				{
-					id: "4D091B326637B186"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "7DCF70F1AA2A5325"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
+			size: 1.5d
 			tasks: [{
 				id: "5B31DECC1F4FB815"
 				item: "ironchests:iron_chest"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 3.0d
+			x: -6.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: ["With &cCopper Plates&r, you can upgrade your normal chests to &ehold more items&r. This one can store up to &236 stacks of items&r."]
 			id: "181F0CD6428732B2"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "524F934CDAAD652D"
-					type: "random"
-				}
-				{
-					id: "780E115B970EBAFC"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "0005B37BAC0B954C"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
+			size: 1.5d
 			tasks: [{
 				id: "16FEE1AAF2F26234"
 				item: "ironchests:copper_chest"
 				type: "item"
 			}]
 			x: -4.5d
-			y: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
@@ -3654,23 +2063,6 @@
 				"Please note that &aChest Upgrades&r &cdo not work&r on &dBarrels&r from the &eIron Chests&r mod."
 			]
 			id: "20FE11ACDC27CA84"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4D1040B081665505"
-					type: "random"
-				}
-				{
-					id: "1327EBD42380EA14"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "593B5317908817B8"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "40F4E4A27381D161"
@@ -3686,7 +2078,7 @@
 			}]
 			title: "Chest Upgrades"
 			x: -4.5d
-			y: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
@@ -3696,23 +2088,6 @@
 				"The iron version has durability, but the&6 diamond upgrade doesn't&r."
 			]
 			id: "3088E454104EA8C6"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "399E50CFF91149BE"
-					type: "random"
-				}
-				{
-					id: "4CF2E669A823275B"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "48C8567C3C1A3F0E"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "6359B09013F2D07C"
@@ -3726,7 +2101,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["181F0CD6428732B2"]
@@ -3736,23 +2111,6 @@
 				"Honestly it's a big risk to lock your chest in case you lose the key, you'd be better off just &echunk protecting&r them."
 			]
 			id: "018F1B1A8EF2C04E"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3B4017BE1917E218"
-					type: "random"
-				}
-				{
-					id: "34A297A0FE3BEE21"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "1D8FCAC102FA154F"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [
 				{
@@ -3768,45 +2126,22 @@
 			]
 			title: "Lock \\& Key"
 			x: -5.5d
-			y: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1F5ACBB3A3D021B3"]
 			description: ["Putting a &bZinc Drill&r in a &aSteam Quarry&r is a good way to get various types of blocks from the &eCreate&r mod. Most notably the &dstone variants&r, &aandesite&r, and &2zinc ores&r!"]
 			id: "6B1392D014BAED81"
-			rewards: [
-				{
-					count: 3
-					id: "01A0A2149315C2EB"
-					item: "modern_industrialization:zinc_drill"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3FAF3A3AFC7EFA4B"
-					type: "random"
-				}
-				{
-					id: "7BC57FEDD0BCAB88"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "66BAD27C91F1B05B"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "7331905DCAAE5C11"
 				item: "modern_industrialization:zinc_drill"
 				type: "item"
 			}]
-			x: 26.5d
-			y: 13.0d
+			x: 42.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: [
 				"The quest rewards are very generous with distributing &aexperience&r, and you might want to store that before you lose it in an &cuntimely manner&r."
 				""
@@ -3815,31 +2150,14 @@
 				"You can also wait until you have your first &bBronze Mixer&r, as it provides a better ratio for this dust, making any of the &eXP Storage&r options much cheaper."
 			]
 			id: "11B147A60B77ED4A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "050A34B1265352C5"
-					type: "random"
-				}
-				{
-					id: "4892FABB276EF724"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "076D8F9E629BBB10"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "59FC8E066DD82AE6"
 				item: "xps:soul_copper_blend"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.5d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1C23C4B16844849F"]
@@ -3849,62 +2167,27 @@
 				"To add &bXP&r to it, right click with a &aXP Transfer&r set to drain (the item will show a &eminus sign&r). To remove &bXP&r, shift-right click the air while holding the &aXP Transfer&r to change its mode (it will now show a &eplus sign&r). With your &aXP Transfer&r converted into the new mode, right click the &bXP Storage&r to withdraw &bXP&r from it."
 			]
 			id: "48566D7F1724EB6B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "10E9762CD13E289D"
-					type: "random"
-				}
-				{
-					id: "178FC0B76F9BBB5C"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "26714FF9713D6207"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
-			size: 1.25d
 			tasks: [{
 				id: "120A355F61514921"
 				item: "xps:block_xp_obelisk"
 				type: "item"
 			}]
-			x: -4.75d
-			y: -3.0d
+			x: -1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["11B147A60B77ED4A"]
 			description: ["Smelting up your &aSoulcopper Blend&r will yield a &bSoulcopper Ingot&r"]
 			id: "1BE89CC00209CD24"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1F13C46B2EF16BC9"
-					type: "random"
-				}
-				{
-					id: "05000F64B5A8A1C4"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "59AE8EB661D0D1AD"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "5E786A7E60747D07"
 				item: "xps:soul_copper_ingot"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.0d
+			x: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1BE89CC00209CD24"]
@@ -3914,36 +2197,14 @@
 				"Crafting the &eXP Storage&r consumes an &aXP Transfer&r, so this quest gives you an extra!"
 			]
 			id: "1C23C4B16844849F"
-			rewards: [
-				{
-					id: "634DB5A7FD339AF3"
-					item: "xps:xp_remover"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "2C88770C1F45DECC"
-					type: "random"
-				}
-				{
-					id: "25A1E1E14FDD4C55"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "6294D6FF485EDA70"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "3C318C6F1B2AEC5B"
 				item: "xps:xp_remover"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -3.0d
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["453B9CA792F2A521"]
@@ -3953,91 +2214,40 @@
 				"&aXP Berries&r can always be eaten. If you sneak while eating them they drop &eXP-Orbs&r to repair items with &dMending&r."
 			]
 			id: "2EA9DB5966BD8CCB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4ECF6AC543DC6AA0"
-					type: "random"
-				}
-				{
-					id: "61EE8A3FB2650302"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "3E35CE967AB7E202"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "7815C84AEACAD539"
 				item: "xps:xp_berries"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -3.0d
+			x: 1.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["418B2D30B385C75E"]
 			description: ["&aXP Berries&r can be used to generate passive experience. Can &conly&r be planted on &bSoul Soil&r."]
 			id: "453B9CA792F2A521"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0D34D223E7A49AFA"
-					type: "random"
-				}
-				{
-					id: "3A8CEC97EFF709A1"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "56973031AA532D76"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "314893B207C062D5"
 				item: "xps:xp_berries_seeds"
 				type: "item"
 			}]
-			x: -7.0d
-			y: -3.0d
+			x: -1.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["48566D7F1724EB6B"]
 			description: ["Use an &aEmpty Bucket&b on the &eXP Storage&r to fill it. You can right click with a full bucket to empty it into the &eXP Storage&r."]
 			id: "418B2D30B385C75E"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "15A15B51E4AB6077"
-					type: "random"
-				}
-				{
-					id: "025CB1EAC42E2506"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "0DBBE2E6E5C2B352"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				id: "4AEB59F5A94D4950"
 				item: "xps:xp_bucket"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -3.0d
+			x: 1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["396573B9EAE57B42"]
@@ -4051,31 +2261,15 @@
 				"&cBe wary of using these extensively on a server&r, as they are significantly more laggy than MI pipes."
 			]
 			id: "375EC7F95730956F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "031337546885016E"
-					type: "random"
-				}
-				{
-					id: "11C94727004EB6D5"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "300CC2C2C7580B3F"
-					type: "xp"
-					xp: 10
-				}
-			]
+			shape: "rsquare"
 			tasks: [{
 				id: "2A046B7DF24E06D7"
 				item: "moderndynamics:fluid_pipe"
 				type: "item"
 			}]
 			title: "Modern Dynamics Fluid Pipes"
-			x: 9.5d
-			y: 0.5d
+			x: 9.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["375EC7F95730956F"]
@@ -4089,23 +2283,7 @@
 				"&2Filter&r: Allows for configuration for the connected inventory."
 			]
 			id: "06BFE5F7FC4B384B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "597BC2DED4F9F241"
-					type: "random"
-				}
-				{
-					id: "68DFBFA7A9096F4F"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "12A4077F4EF2CC38"
-					type: "xp"
-					xp: 10
-				}
-			]
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "5B05BB0C862703D5"
@@ -4124,8 +2302,8 @@
 				}
 			]
 			title: "Modern Dynamics Attachments"
-			x: 9.5d
-			y: 2.0d
+			x: 9.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4D4B76A0251E4A45"]
@@ -4135,123 +2313,56 @@
 				"Items are &cnot transferred instantaneously&r and can be seen flowing from connections. The &3attachments&r for the &eFluid Pipe&r also work with the &aItem Pipe&r and will be needed to actually extract things. By default, items will path towards the &dnearest inventory&r in the pipe."
 			]
 			id: "2B364DC6ECC4FCF5"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7BF0783CBE4C9D61"
-					type: "random"
-				}
-				{
-					id: "02BE7F48CCE4A1C3"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4B7179DE4D0BEABE"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "75D1BB8DE2A46275"
 				item: "moderndynamics:item_pipe"
 				type: "item"
 			}]
 			title: "Modern Dynamics Item Pipe"
-			x: 22.0d
-			y: 14.5d
+			x: 40.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2B364DC6ECC4FCF5"]
 			description: ["&aItem Pipes&r build a path to their connections based on the distance between them. Using an &6Inhibitor&r will increase the path distance calculation for that attachment by &31000&r. Great for making a connection that will be &cavoided&r."]
 			id: "1E4C654BFB863E9A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "37A862BEE3E365BB"
-					type: "random"
-				}
-				{
-					id: "7B5E659182129049"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "18AAB9805CDAF793"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "3E8F2166382B09D5"
 				item: "moderndynamics:inhibitor"
 				type: "item"
 			}]
-			x: 22.5d
-			y: 16.0d
+			x: 40.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2B364DC6ECC4FCF5"]
 			description: ["If you plan to use &eModern Dynamic&r pipes with your &6Modern Industrialization&r machines, you will quickly notice you &crun out of faces&r to plug the pipes into. Luckily, the &2Machine Extender&r has your back. To explain it simply, it &dextends the connection&r to the machine into itself, allowing you to &bconnect pipes to it that will count as a connection to the machine&r."]
 			id: "0C1E8997E5C0BD36"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5F5D379F0418672B"
-					type: "random"
-				}
-				{
-					id: "5061961964FDF21E"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "2095F468F70F49EE"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "04AB650F4027E4FD"
 				item: "moderndynamics:machine_extender"
 				type: "item"
 			}]
-			x: 21.5d
-			y: 16.0d
+			x: 39.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["4D3EDFA212A5B4F1"]
 			description: [
 				"By adding some &6Sulfur Dust&r to the &aSynthetic Oil&r you can create &eSynthetic Rubber&r, which is &26x more efficient&r for making &dRubber Sheets&r."
 				""
-				"&6Sulfur Dust&r can be easily obtained by macerating &bLignite Coal Ore&r."
+				"&6Sulfur Dust&r can be easily obtained as a byproduct of macerating &bLignite Coal Ore&r."
 			]
 			id: "131FF702BC2707FB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "43195BBDEA2377F7"
-					type: "random"
-				}
-				{
-					id: "10F8A5794C241F05"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4E781829E1B04F2C"
-					type: "xp"
-					xp: 10
-				}
-			]
+			size: 2.0d
 			tasks: [{
 				id: "24FEA0ACC74FAE69"
 				item: "modern_industrialization:synthetic_rubber_bucket"
 				type: "item"
 			}]
 			title: "More Efficient Rubber"
-			x: 10.5d
-			y: 12.0d
+			x: 27.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
@@ -4263,118 +2374,57 @@
 				"In addition to it's storage, it has options to &9automatically pickup blocks&r, &3pickup from a filter&r, or &dvoid blocks&r. Think of all that Cobblestone you no longer have to sort through in your inventory!"
 			]
 			id: "7D90B29796571A7E"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "22BB2EF0D1603BB0"
-					type: "random"
-				}
-				{
-					id: "596E219B06C2290A"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3D1432F429B31877"
-					type: "xp"
-					xp: 10
-				}
-			]
+			shape: "rsquare"
 			subtitle: "Dank Storage!"
 			tasks: [{
 				id: "2ACF0FB7B8B07798"
 				item: "dankstorage:dank_1"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 15.5d
+			x: 31.5d
+			y: 6.0d
 		}
 		{
-			dependencies: ["5EDE88BDA0182BD7"]
+			dependencies: ["23C7BBD459B3AA47"]
 			description: ["With &cCopper Plates&r, you can upgrade your normal barrels to &ehold more items&r. This one can store up to &236 stacks of items&r."]
 			id: "779A48D8FB91F32C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7A08A4BCF2E6E8E4"
-					type: "random"
-				}
-				{
-					id: "463A5A9DEF49AE80"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "463F26741E795031"
-					type: "xp"
-					xp: 10
-				}
-			]
+			shape: "rsquare"
+			size: 1.5d
 			tasks: [{
 				id: "0A5049221D2C3F37"
 				item: "ironchests:copper_barrel"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 1.5d
+			x: -4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["779A48D8FB91F32C"]
 			description: ["The &7Iron Barrel&r can store &254 stacks of items&r."]
 			id: "7A00DD3D645AB09E"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5C81611AC84764BB"
-					type: "random"
-				}
-				{
-					id: "3F7AFB64F169FBE1"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "491B6092EDE7B27B"
-					type: "xp"
-					xp: 10
-				}
-			]
+			shape: "rsquare"
+			size: 1.5d
 			tasks: [{
 				id: "69BA029D1617FB01"
 				item: "ironchests:iron_barrel"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 3.0d
+			x: -6.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7A00DD3D645AB09E"]
 			description: ["The &eGold Barrel&r stores &266 stacks of items&r. This is the highest tier you can make until you can process &bDiamond Plates&r."]
 			id: "213881AB4757DAC8"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1A8B19E3C1EFBEEF"
-					type: "random"
-				}
-				{
-					id: "3D410D00E0833E4B"
-					item: "kubejs:coin_common"
-					type: "item"
-				}
-				{
-					id: "55C178711A66409C"
-					type: "xp"
-					xp: 10
-				}
-			]
+			shape: "rsquare"
+			size: 1.5d
 			tasks: [{
 				id: "6C7EECF6E5632148"
 				item: "ironchests:gold_barrel"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.5d
+			x: -8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["77EAB1D011541800"]
@@ -4384,31 +2434,15 @@
 				"Only certain fluids can be placed from cells."
 			]
 			id: "2D0E8B6809C329D3"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "699161F7D400FF3F"
-					type: "random"
-				}
-				{
-					id: "687E2AAC67EF63C4"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "2FFBBC494BD6367F"
-					type: "xp"
-					xp: 10
-				}
-			]
+			shape: "rsquare"
 			subtitle: "Manual Labor"
 			tasks: [{
 				id: "0FE3433D39E2083F"
 				item: "techreborn:cell"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.0d
+			x: 7.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["738FE28369D3A550"]
@@ -4419,24 +2453,8 @@
 			]
 			icon: "modern_industrialization:large_steam_furnace"
 			id: "5D1AAACAA152ED68"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "78B07A7105B0A0A2"
-					type: "random"
-				}
-				{
-					id: "44FDD3B8D5E8129D"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "005E17B9F18DD83E"
-					type: "xp"
-					xp: 10
-				}
-			]
-			size: 1.5d
+			shape: "rsquare"
+			size: 2.0d
 			subtitle: "Extremely efficient!"
 			tasks: [
 				{
@@ -4493,11 +2511,11 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: 9.5d
+			x: 22.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["45CE5F461A159F66"]
+			dependencies: ["577BA8EF0FB84BCE"]
 			description: [
 				"The &aLarge Steam Macerator&r can &eprocess eight items&r in the&6 time it would take to process two&r, while only costing &d4 EU/t&r &o(4mb Steam/t)&r!"
 				""
@@ -4505,24 +2523,8 @@
 			]
 			icon: "modern_industrialization:large_steam_macerator"
 			id: "73ECF1ACA6D93D56"
-			rewards: [
-				{
-					id: "2BD7CB0B01295024"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "72CAEB2173C5311F"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5EE3AF693EDFF01F"
-					type: "xp"
-					xp: 10
-				}
-			]
-			size: 1.5d
+			shape: "rsquare"
+			size: 2.0d
 			subtitle: "Even more efficient!"
 			tasks: [
 				{
@@ -4585,8 +2587,8 @@
 					type: "item"
 				}
 			]
-			x: 11.25d
-			y: 16.0d
+			x: 39.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["72090D36C27DC4AF"]
@@ -4600,31 +2602,13 @@
 				"&cNo, it cannot be used to charge things in your inventory&r. If you want/need that make the Red Cell Battery from &eTechReborn&r."
 			]
 			id: "14609EFBE2CFB9D5"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "18B388085012FEDC"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "768E0E5651FFC3AD"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "49A9DE46EC320667"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "39FBD9EAD695E37F"
 				item: "modern_industrialization:portable_storage_unit"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.5d
+			x: 32.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["45CE5F461A159F66"]
@@ -4634,31 +2618,31 @@
 				"If you'd rather &badjust sounds&r, you can always change them with the &2Extreme Sound Muffler&r GUI in your inventory."
 			]
 			id: "2D82BDEDFA442E68"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "71B113A5A895D858"
-					type: "random"
-				}
-				{
-					id: "540E544D15D582A7"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3D2B2047FEC6C3B7"
-					type: "xp"
-					xp: 10
-				}
-			]
-			size: 1.5d
+			shape: "rsquare"
 			tasks: [{
 				id: "07CE4BF66B1DA6ED"
 				item: "mi_sound_addon:mallet"
 				type: "item"
 			}]
-			x: 19.75d
-			y: 16.0d
+			x: 35.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Welcome to &2Chapter 2 - The Steam Age&r."
+				""
+				"This chapter is focused around getting access to your first &6steam powered machines&r, &7steel&r, and  eventually your &dfirst circuits&r!"
+			]
+			id: "23C7BBD459B3AA47"
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "5F63610F078C2076"
+				item: "modern_industrialization:forge_hammer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Turning up the heat"]

@@ -111,12 +111,12 @@ ServerEvents.recipes(event => {
 
     // -- ACTIVATOR RAIL ALT METALS -- //
     ALT_METALS.forEach(id => {
-        event.shaped('6x ' + mc('activator_rail'), ['ISI', 'IRI', 'ISI'], { I: `#c:${id}_ingots`, S: '#c:wood_sticks', R: mc('redstone_torch') }).id(st(`activator_rail_${id}`));
+        event.shaped('6x ' + mc('activator_rail'), ['ISI', 'IRI', 'ISI'], { I: `#c:${id}_ingots`, S: '#c:wooden_rods', R: mc('redstone_torch') }).id(st(`activator_rail_${id}`));
     });
 
     // -- RAIL ALT METALS -- //
     ALT_METALS.forEach(id => {
-        event.shaped('16x ' + mc('rail'), ['I I', 'ISI', 'I I'], { I: `#c:${id}_ingots`, S: '#c:wood_sticks' }).id(st(`rail_${id}`));
+        event.shaped('16x ' + mc('rail'), ['I I', 'ISI', 'I I'], { I: `#c:${id}_ingots`, S: '#c:wooden_rods' }).id(st(`rail_${id}`));
     });
 
     // -- CAULDRON ALT METALS -- //

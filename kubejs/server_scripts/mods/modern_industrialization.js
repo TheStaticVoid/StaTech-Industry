@@ -37,7 +37,8 @@ ServerEvents.recipes(event => {
         mi('steam_age/bronze/boiler_asbl'),
         mi('tools/steam_mining_drill'),
         mi('electric_age/component/craft/op_amp_asbl'),
-        mi('electric_age/machine/assembler/replicator')
+        mi('electric_age/machine/assembler/replicator'),
+        mi('steam_age/steel/boiler_asbl')
     ];
     MI_DELETED_ITEMS.forEach(id => event.remove( {id: id} ));
     

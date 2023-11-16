@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
     ],
     {
         P: '#c:iron_plates',
-        S: '#c:wood_sticks'
+        S: '#c:wooden_rods'
     })
     .id(st('chisel'));
 

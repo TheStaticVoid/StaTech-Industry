@@ -446,7 +446,7 @@ ServerEvents.recipes(event => {
     {
         T: tr('treetap'),
         C: mi('analog_circuit'),
-        S: '#c:wood_sticks',
+        S: '#c:wooden_rods',
         B: tr('red_cell_battery')
     })
     .id(st('electric_treetap'));
