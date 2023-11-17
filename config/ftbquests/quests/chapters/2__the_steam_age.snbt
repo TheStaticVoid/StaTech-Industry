@@ -1217,8 +1217,8 @@
 				item: "modern_industrialization:invar_dust"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 7.0d
+			x: 13.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["72090D36C27DC4AF"]
@@ -1311,14 +1311,13 @@
 			id: "3820A443B373ADA0"
 			shape: "square"
 			tasks: [{
-				count: 2L
 				id: "4853EC8C9EF922DE"
 				item: "modern_industrialization:battery_alloy_dust"
 				type: "item"
 			}]
 			title: "Battery Alloy Dust"
-			x: 13.0d
-			y: 7.0d
+			x: 12.0d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -2643,6 +2642,30 @@
 			}]
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["693368CF3E13AB7A"]
+			description: ["&bCupronickel&r is an alloy between &cCopper&r and &aNickel&r which will be very important as you aim to create your first electric machines, especially the &aElectric Blast Furnace&r."]
+			id: "021B672694FD2C0B"
+			tasks: [{
+				id: "36AA2E395994E16E"
+				item: "modern_industrialization:cupronickel_dust"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["693368CF3E13AB7A"]
+			description: ["&eElectrum&r is an alloy of &eGold&r and &7Silver&r. It's used in a variety of crafting recipes in the next chapter, as well as one of the cables that can support &6Medium Voltage&r."]
+			id: "5CA8D6F187734518"
+			tasks: [{
+				id: "500A9123AB52936E"
+				item: "modern_industrialization:electrum_dust"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 7.5d
 		}
 	]
 	subtitle: ["Turning up the heat"]

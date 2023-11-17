@@ -1195,6 +1195,34 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["63276C644789068A"]
+			description: ["Finally with your &7Iron Plates&r, you can upgrade your &dFrayed Backpack&r to become a &ePlated Backpack&r. This backpack can hold &d36 stacks&r of items and can be equipped on your back trinket slot."]
+			id: "59141568014C03CB"
+			shape: "rsquare"
+			subtitle: "A needed upgrade"
+			tasks: [{
+				id: "6B622BE622A9BF2D"
+				item: "inmis:plated_backpack"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["59141568014C03CB"]
+			description: ["The &6Gilded Backpack&r will allow you to carry &d54 item stacks&r."]
+			id: "7FD5999E03B4F989"
+			shape: "rsquare"
+			subtitle: "Like having a chest on your back"
+			tasks: [{
+				id: "50A2E3A40CE19BE5"
+				item: "inmis:gilded_backpack"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -3.5d
+		}
 	]
 	subtitle: ["A humble start"]
 	title: "&b1 - Getting Started"

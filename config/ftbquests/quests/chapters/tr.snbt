@@ -1,0 +1,208 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tr"
+	group: "592A9A0E9A131D28"
+	id: "3B6F62309A6467DA"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&aCalcite Dust&r can be made by crushing down &3Calcit&re blocks, which can be found around the world mainly in &dgeodes&r."
+				""
+				"Once you have a &3Calcite&r block, you can &ereplicate it in a mixer using water and lava&r."
+			]
+			id: "2AABAD74E8A63623"
+			shape: "rsquare"
+			tasks: [{
+				id: "40FABCF3F8CDC343"
+				item: "techreborn:calcite_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"By combining &3Calcite Dust&r and Iron Ingots in an &aAlloy Smelter&r, you can create &3Refined Iron Ingots&r. "
+				""
+				"These serve two main purposes. The first, an upgrade to your backpack, a second, an alternative way for generating &eSteel&r once you have your &6Electric Blast Furnace&r."
+			]
+			id: "6012D781643367DA"
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "1066062C183FA7FB"
+				item: "techreborn:refined_iron_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"For the recipes the &aAssembler&r doesn't cover, you can create a &eTech Reborn&r &bAuto Crafting Table&r."
+				""
+				"The &bAuto Crafting Table&r works by placing items in the grid that will complete the recipe, and then &elocking it with the button in the top right&r. Once done, you can connect it up to &2power&r and &3insert items into it through pipes, hoppers, etc&r. and it will &aautomatically craft &rthe item after sometime."
+			]
+			id: "5778899B530BDA93"
+			shape: "rsquare"
+			tasks: [{
+				id: "2B2DC109700BC532"
+				item: "techreborn:auto_crafting_table"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			description: ["The &eTechReborn&r &bBasic Storage Unit&r is an upgrade to the &7Steel Tank&r. It can store up to 128 stacks of a single item and has &aconfigurable I/O&r and control through &credstone signals&r."]
+			id: "4332AA07E2B665B3"
+			tasks: [{
+				id: "0EA4C44AA9379330"
+				item: "techreborn:basic_storage_unit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			description: ["The &eTechReborn&r &bAdvanced Storage Unit&r is an upgrade to the &bAluminum Barrel&r that allows for &aconfigurable I/O&r and control through &credstone signals&r."]
+			id: "3F71D86CD0AF220A"
+			tasks: [{
+				id: "62730CB69BE08932"
+				item: "techreborn:advanced_storage_unit"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			description: ["If you already have a &aBasic Storage Unit&r, you can craft this &bBasic Storage Upgrader&r to save a bit on resources and to upgrade your in place storage units."]
+			id: "328963DA271D7C4D"
+			tasks: [{
+				id: "3FDC8F5B67FDE928"
+				item: "techreborn:basic_unit_upgrader"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			description: ["The &bCrude Unit Upgrader&r can be used to upgrade your &aCrude Storage Unit&r into the &dBasic Storage Unit&r. You can apply the upgrade by shift-right clicking with the upgrade. "]
+			id: "1DC74D3B993B9147"
+			tasks: [{
+				id: "22A56E3395D3B193"
+				item: "techreborn:crude_unit_upgrader"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			description: ["The &bRolling Machine&r can be used to roll and bend materials into different shapes. Most notably, it makes &arails&r at a better ratio, &bQuarry Tubes&r, and &dMagnalium Plates&r."]
+			id: "667280790626DD37"
+			tasks: [{
+				id: "733FA5B2FFB2BBF2"
+				item: "techreborn:rolling_machine"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["046F01DB0758D7DD"]
+			description: ["The &bLaunchpad&r, when &apowered&r, will launch &dentities&r on top of it into the air."]
+			id: "489CB40DCB36235E"
+			tasks: [{
+				id: "4E48D324C16904A6"
+				item: "techreborn:launchpad"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["046F01DB0758D7DD"]
+			description: [
+				"The &eTechReborn&r &bWind Mill&r can be used to passively generate power from the wind. It generates &d2 E/t&r and an additional &d0.5 E/t&r during &athunderstorms&r."
+				""
+				"Must be placed &cabove&r y=64 to function."
+			]
+			id: "34678C097FD402DC"
+			tasks: [{
+				id: "6A68B8D53F1244B4"
+				item: "techreborn:wind_mill"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["667280790626DD37"]
+			description: ["With the &aRolling Machine&r, you can now make &bMagnalium Plates&r. To get the &bMagnesium&r required, you can centrifuge &dMarble Dust&r, which is made from &dTiny Obsidian Dust&r, and &aDiorite Dust&r."]
+			id: "046F01DB0758D7DD"
+			tasks: [{
+				id: "6B0BD5646D1747F4"
+				item: "techreborn:magnalium_plate"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"The &bAlarm&r will produce a very &cfun and enjoyable&r sound when powered by a &credstone signal&r."
+				""
+				"You can change the type of alarm by shift-right clicking the &bAlarm&r."
+			]
+			id: "0899132267495880"
+			tasks: [{
+				id: "6F293AA30A6CD0DB"
+				item: "techreborn:alarm"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["046F01DB0758D7DD"]
+			description: [
+				"The &bQuarry&r is an addon for &eTechReborn&r that adds a &bQuarry&r machine that will actually dig physical blocks around it. "
+				""
+				"It requires &aQuarry Tubes&r and &denergy&r to function. It has two modes, &eMine Ores&r and &bMine All&r. In &eMine Ores&r mode it will only look for ores and mine those, and in &bMine All&r mode it will start mining all the blocks in the radius."
+				""
+				"There are also &dupgrades&r specific to the &bQuarry&r that increase the &arange&r or add &bsilk touch&r or &cfortune&r to mined blocks."
+				""
+				"At &dmax overclocker upgrades&r the &bQuarry&r will nearly draw &a8,000 EU/t&r!"
+			]
+			id: "7718CB4089841CFA"
+			tasks: [{
+				id: "235AD90C01224F4A"
+				item: "quarrymod:quarry"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"The &eTechReborn&r &bGreenhouse Controller&r is a machine that will automatically farm crops for you. Place the &bGreenhouse Controller&r on the ground, provide it with energy, and put some crops behind it for it to start working. "
+				""
+				"&cStandard Minecraft requirements apply to the crops, such as lighting, water, etc.&r"
+				""
+				"&aPowered Lamps&r above the crops will speed up their growth. The &bGreenhouse Controller&r can also gather &eSap&r from &dRubber Trees&r."
+			]
+			id: "0E0B57C78E892965"
+			tasks: [{
+				id: "778EC6CCAE694BB2"
+				item: "techreborn:greenhouse_controller"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+	]
+	title: "TR"
+}
