@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     compressor(
         event,
         st('diamond_plate'),
-        48,
+        32,
         400,
         [ { amount: 1, item: mc('diamond') } ],
         [ { amount: 1, item: mi('diamond_plate') } ]
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
     compressor(
         event,
         st('emerald_plate'),
-        48,
+        32,
         400,
         [ { amount: 1, item: mc('emerald') } ],
         [ { amount: 1, item: mi('emerald_plate') } ]
