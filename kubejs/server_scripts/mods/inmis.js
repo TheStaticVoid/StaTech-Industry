@@ -30,13 +30,12 @@ ServerEvents.recipes(event => {
 
     // -- PLATED BACKPACK -- //
     event.shaped(im('plated_backpack'), [
-        'RIR',
+        'III',
         'IBI',
-        'RIR'
+        'III'
     ],
     {
         I: '#c:iron_plates',
-        R: '#c:refined_iron_plates',
         B: im('frayed_backpack')
     })
     .modifyResult((inventory, itemstack) => { return keepNBT(im('frayed_backpack'), inventory, itemstack) })
@@ -44,12 +43,11 @@ ServerEvents.recipes(event => {
 
     // -- GILDED BACKPACK -- //
     event.shaped(im('gilded_backpack'), [
-        'EGE',
+        'GGG',
         'GBG',
-        'EGE'
+        'GGG'
     ],
     {
-        E: '#c:electrum_plates',
         G: '#c:gold_plates',
         B: im('plated_backpack')
     })
