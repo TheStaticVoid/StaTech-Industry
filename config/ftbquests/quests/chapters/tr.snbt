@@ -203,6 +203,454 @@
 			x: -0.5d
 			y: -2.0d
 		}
+		{
+			description: [
+				"The &eTechReborn&r &bWater Mill&r is a passive generator that, when placed in water, will generate &d0.1 E/t&r per side exposed to water, up to &d0.4 E/t&r. "
+				""
+				"This is &cextremely slow&r, but &acompletely free&r power generation."
+			]
+			id: "56DA05EBA49BC57F"
+			size: 2.0d
+			tasks: [{
+				id: "786AD5A864AE19A0"
+				item: "techreborn:water_mill"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"The &eTechReborn&r &bThermal Generator&r can be used to generate power with &clava&r. Each bucket of &clava&r will generate a total of &a60k E&r at &d16 E/t&r."
+				""
+				"Not the best method, but if you can automate &clava&r, it can provide a useful energy generation."
+			]
+			id: "7051134E3D2E48BD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "648E7588B0967B44"
+					type: "random"
+				}
+				{
+					count: 5
+					id: "2AF2C38745361965"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "52319C6802594413"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "580E9644413BA9AC"
+				item: "techreborn:thermal_generator"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			description: [
+				"This upgraded version of the &bSolar Panel&r. It produces &e12 EU/t&r during the day and &e0 EU/t&r during the night."
+				""
+				"In general, solar is only going to be good if you have a &blarge quantity of panels&r. Or you could use it in &dsmall scale automations&r that don't need much power, up to you."
+			]
+			id: "51D23E71289780DE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "197A4F5F65D37838"
+					type: "random"
+				}
+				{
+					count: 5
+					id: "254551FC3F74E66C"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "1C7AE0675F769644"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "5C6E3372AE898E88"
+				item: "techreborn:advanced_solar_panel"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			description: [
+				"The &aRecyler&r is used to create Scrap from items you toss into it. Don't put anything in it you would miss!"
+				""
+				"Scrap can be used in the future to turn into solid &dUU-Matter&r, which can be used to craft rare materials. For now, it's only able to be put through a &bScrapboxinator&r for random outputs."
+			]
+			id: "3EA8163D99F7A61E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5F2A23E54E07C04E"
+					type: "random"
+				}
+				{
+					count: 5
+					id: "753CE2CEE9C17CD5"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "008F4E54C8800E60"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "2A2D9A1C3AD8976D"
+				item: "techreborn:recycler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3EA8163D99F7A61E"]
+			description: [
+				"Providing the &aRecycler&r materials will have it randomly spit out Scrap."
+				""
+				"Scrap can be used in a Matter Fabricator to create &dUU-Matter&r, or it can be converted into Scrapboxes and ran through a &bScrapbox-inator&r to produce random outputs."
+			]
+			id: "5EC488946BE8FF2F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7C35D858BFC8A1EA"
+					type: "random"
+				}
+				{
+					count: 5
+					id: "499C8C1DB2019904"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "21E055CB1666A0F4"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "1970BCA2D3FF7958"
+				item: "techreborn:scrap"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5EC488946BE8FF2F"]
+			description: ["The &aScrapbox-inator&r can turn &bScrapboxes&r into random outputs. It could be fun to have it run, or you can stockpile your scrap until you get a &cMatter Fabricator&r, up to you."]
+			id: "092B11065EE78062"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5C960A75073593B5"
+					type: "random"
+				}
+				{
+					count: 5
+					id: "7016F4424D5D04A6"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "67A6C7F1A84D5C3A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "783237CDF19B463A"
+				item: "techreborn:scrapboxinator"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			description: ["&aLight Fuel&r can produce &e160 EU per 1 mB&r used in a &bDiesel Generator&r. It's better to either combine it into &6Diesel&r or continue with &3Steam-Cracking&r it."]
+			id: "2CFB5F9C3B6EA234"
+			shape: "square"
+			tasks: [{
+				id: "076ED0F4854706A7"
+				item: "modern_industrialization:light_fuel_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			description: ["&aHeavy Fuel&r can produce &e240 EU per 1 mB&r used in a &bDiesel Generator&r. It's not as good as &6Diesel&r, so it's either better to make &6Diesel&r or continue to &3Steam-Cracking&r process."]
+			id: "51A8CF3031F2765A"
+			shape: "square"
+			tasks: [{
+				id: "2B0AEDF45DD8E71D"
+				item: "modern_industrialization:heavy_fuel_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 8.0d
+		}
+		{
+			description: ["&aNaphtha&r can produce &e80 EU per 1 mB&r used in a &bDiesel Generator&r. It's an extremely &cawful fuel source&r for &bDiesel Generators&r. It can be produced into &eLubricant&r or continued down the chain by &3Steam-Cracking&r."]
+			id: "34533B2E5B614E28"
+			shape: "square"
+			tasks: [{
+				id: "79973DB15E3C21A4"
+				item: "modern_industrialization:naphtha_bucket"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 10.0d
+		}
+		{
+			description: ["&aDiesel&r can produce &e400 EU per 1 mB&r used in a &bDiesel Generator&r. By combining &6Light and Heavy Fuel&r you can create &aDiesel&r. &aDiesel&r is a decent fuel source to use in &aDiesel Generators&r and &aDiesel &rtools."]
+			id: "6AA4B054D3E9959D"
+			shape: "square"
+			subtitle: "Good for the environment!"
+			tasks: [{
+				id: "58F76E8165E23620"
+				item: "modern_industrialization:diesel_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 6.5d
+		}
+		{
+			description: ["Enhancing &6Light Fuel&r with &aSteam&r will make &eSteam-Cracked Light Fuel&r, which can be &2distilled into other byproducts&r."]
+			id: "11D42439BA0DAE33"
+			shape: "square"
+			tasks: [{
+				id: "36EA8B31633A44F1"
+				item: "modern_industrialization:steam_cracked_light_fuel_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 5.5d
+		}
+		{
+			description: ["Enhancing &6Heavy Fuel&r with &aSteam&r will make &eSteam-Cracked Heavy Fuel&r, which can be &2distilled into other byproducts&r."]
+			id: "740BFCE0D14F89D7"
+			shape: "square"
+			tasks: [{
+				id: "75C2CC01AE8CC5F9"
+				item: "modern_industrialization:steam_cracked_heavy_fuel_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			description: ["Enhancing &6Naphtha&r with &aSteam&r will make &eSteam-Cracked Naphtha&r, which can be &2distilled into other byproducts&r."]
+			id: "0F866EE01E29B82D"
+			shape: "square"
+			tasks: [{
+				id: "7337B0E890B66442"
+				item: "modern_industrialization:steam_cracked_naphtha_bucket"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"0F866EE01E29B82D"
+				"11D42439BA0DAE33"
+				"740BFCE0D14F89D7"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The following quests are all the useful fluids / gases you can make from distilling &3Steam-Cracked Fuels&r / &eNaphtha&r. "
+				""
+				"You don't need to make everything, but you will need to make &aPolyethylene&r for sure, and &bDiesel&r / &dNitro-Diesel&r are good for &2energy production&r."
+			]
+			id: "7A4F605834E3AE7B"
+			shape: "square"
+			tasks: [{
+				id: "693EA95A0ECB8813"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Oil Byproducts"
+			x: -12.5d
+			y: 7.5d
+		}
+		{
+			dependency_requirement: "one_completed"
+			description: ["&eSulfuric Acid&r is a &3useful byproduct&r of oil refinement. &6Make sure to keep a hold of a decent amount&r."]
+			id: "44F035B6B7E03D9A"
+			shape: "square"
+			tasks: [{
+				id: "3E8B132DDCC755DA"
+				item: "modern_industrialization:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 8.5d
+		}
+		{
+			description: [
+				"By &eElectrolyzing&r clay, you can now get little bits of &bLithium gas&r. You can combine your old Red Cell Batteries with Aluminum Plates and some Lithium to make &aLithium Ion Batteries&r."
+				""
+				"These hold 100k and can distribute power to other items in your inventory, very useful!"
+			]
+			id: "42A6888AA162648D"
+			shape: "rsquare"
+			tasks: [{
+				id: "55D47A3F72D63B2E"
+				item: "techreborn:lithium_ion_battery"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["42A6888AA162648D"]
+			description: [
+				"With your advancements in science, you have found that you can glue six &aLithium Ion Batteries&r together and use as a single battery!"
+				""
+				"This has a 600k internal energy buffer, at this point I doubt you have anything that could possibly drain that much, but it will be useful as soon as you unlock the electric TechReborn tools!"
+				""
+				"It can also be equipped into your chest slot."
+			]
+			id: "6EA807A04401F8AE"
+			shape: "rsquare"
+			tasks: [{
+				id: "7DA97BD25EBB4C85"
+				item: "techreborn:lithium_ion_batpack"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["39A53780808097E7"]
+			description: [
+				"Up until now you haven't had a valid &eelectric powered suit&r, &ounheard of in modded Minecraft&r. With the &aNano Suit&r, you can finally have a powerful piece of armor that you can recharge, effectively making it &2indestructable&r."
+				""
+				"The &6Nano Helmet&r also will provide you with &dNight Vision&r when underground."
+			]
+			id: "61EC57BD963B8D36"
+			shape: "square"
+			tasks: [
+				{
+					id: "7B5155506122AC9C"
+					item: {
+						Count: 1b
+						id: "tech_enhanced:nano_helmet"
+						tag: {
+							energy: 1000000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B171345F31D15A8"
+					item: {
+						Count: 1b
+						id: "tech_enhanced:nano_chestplate"
+						tag: {
+							energy: 1000000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0942823093E696ED"
+					item: {
+						Count: 1b
+						id: "tech_enhanced:nano_leggings"
+						tag: {
+							energy: 1000000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2BEC7AAB60422F3E"
+					item: {
+						Count: 1b
+						id: "tech_enhanced:nano_boots"
+						tag: {
+							energy: 1000000L
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Nano Suit"
+			x: -7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["575EE8E0720CE7DC"]
+			description: ["The &aEnergy Crystal&r is similar to the &bLithium Ion Batteries&r, but it has a much larger buffer, being able to store &d1 million E&r."]
+			id: "39A53780808097E7"
+			shape: "square"
+			tasks: [{
+				id: "458F30860C8B7756"
+				item: "techreborn:energy_crystal"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6375B17635AAC09D"]
+			description: ["The &eTechReborn&r &bIndustrial Storage Unit&r isn't particularly a direct upgrade to the &aStainless Steel Barrel&r this time, so I've made it a little cheaper. It does still store &d1024 stacks&r of a single item, and still includes &aconfigurable I/O&r and control through &credstone signals&r."]
+			id: "1335AD822DD36A8A"
+			tasks: [{
+				id: "56E35A017ACF19BD"
+				item: "techreborn:industrial_storage_unit"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6375B17635AAC09D"]
+			description: ["If you already have an &aAdvanced Storage Unit&r, you can create this &bAdvanced Storage Upgrader&r to upgrade your existing storage units without having to break them."]
+			id: "5BA4E91BBA9B38F4"
+			tasks: [{
+				id: "36143F28117718A3"
+				item: "techreborn:advanced_unit_upgrader"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6375B17635AAC09D"]
+			description: ["These upgraded variants of &aSolar Panels&r will &epassively generate&r &d24 EU/t&r during the day and &d4 EU/t&r at night."]
+			id: "760AEF21E6403F48"
+			shape: "rsquare"
+			tasks: [{
+				id: "19653F8AC2A51DA6"
+				item: "techreborn:industrial_solar_panel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
 	]
 	title: "TR"
 }

@@ -13,33 +13,16 @@
 			dependencies: ["36C698E0F31FDB20"]
 			description: ["The &aDistillery&r will turn various fluids into their lighter parts. This will be very useful for &eOil Processing&r!"]
 			id: "4E45A919AB388540"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "295CDEB9F97E7F30"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4E39F57AD807BD1F"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "402A82284CDF027F"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "Bring out the barrels!"
 			tasks: [{
 				id: "4C7F8078B08986B1"
 				item: "modern_industrialization:distillery"
 				type: "item"
 			}]
-			x: 33.5d
-			y: -6.0d
+			x: 14.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -49,33 +32,16 @@
 				"You can electrolyze &3Bauxite Dust&r to get &bAluminum Dust&r, which you can then directly smelt into &bAluminum Ingots&r in the&e EBF&r. Alternatively, you can &delectrolyze&r a bunch of &3clay&r to get some &baluminum&r."
 			]
 			id: "0E9876A8FEF7F7E9"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4AF1459C67C74F1A"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "2ADD227AF4DA89CC"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "6C758A1053936CC1"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "Shocking"
 			tasks: [{
 				id: "593235A3E59A7B14"
 				item: "modern_industrialization:electrolyzer"
 				type: "item"
 			}]
-			x: 33.5d
-			y: -4.0d
+			x: 14.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -85,33 +51,16 @@
 				"As you progress further, recipes using the &aChemical Reactor&r will become much more common. &2Plan to make a lot of these&r."
 			]
 			id: "517C3D6FBC5FEB2A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "78DB5A1476722536"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "44B3CCFADA752669"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "31198020DF9C4371"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "No PHD required"
 			tasks: [{
 				id: "573FF83303509FBF"
 				item: "modern_industrialization:chemical_reactor"
 				type: "item"
 			}]
-			x: 33.5d
-			y: -8.0d
+			x: 14.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -121,64 +70,29 @@
 				"There are about 5 real pages of recipes to look at with the &aCentrifuge&r, the rest are just different ways to make &aPlant Oil&r. Regardless, it's worth taking a look at those recipes as you will be using some of them shortly."
 			]
 			id: "136292FF2B54C503"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1D2B40034F97C6D3"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "191043260D3F9776"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "054E46BF15E425D5"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "You spin me right round"
 			tasks: [{
 				id: "548C81467B76B0FD"
 				item: "modern_industrialization:centrifuge"
 				type: "item"
 			}]
-			x: 33.5d
-			y: -2.0d
+			x: 14.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["60E8A38E2CC05E1A"]
 			description: ["Mixing &aManganese Crushed Dust&r with 9000 mB of &eSulfuric Acid&r will create 9000 mB &bManganese Sulfuric Solution&r."]
 			id: "306F6F7600712637"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "209988697E775F9D"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "57D7CCAA67CA842B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "287922B01BC68002"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "4B6312FBFF83E8EE"
 				item: "modern_industrialization:manganese_sulfuric_solution_bucket"
 				type: "item"
 			}]
-			x: 37.5d
-			y: -2.0d
+			x: 18.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["136292FF2B54C503"]
@@ -188,63 +102,27 @@
 				"You can get &aManganese Crushed Dust&r from &eCentrifuging&r &7Raw Iron Ore&r."
 			]
 			id: "60E8A38E2CC05E1A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5334B4A4213CA6EC"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "062235ECF5FFC23C"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3EF692D910DD2309"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "7FB6FA9609D9B45A"
 				item: "modern_industrialization:manganese_crushed_dust"
 				type: "item"
 			}]
-			x: 35.5d
-			y: -2.0d
+			x: 16.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["306F6F7600712637"]
 			description: ["&eElectrolyzing&r 1000mB of &aManganese Sulfuric Solution&r will produce three &bTiny Manganese Dust&r and 900 mB of &eSulfuric Acid&r. That means you lose 100 mB of &eSulfuric Acid&r in the production loop."]
 			id: "68D24C2EE907B5DD"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "67DF5BE6779F77FE"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "44458A321D3F98E7"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "179E23E650A1F984"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "37D3D313413C37A4"
 				item: "modern_industrialization:manganese_tiny_dust"
 				type: "item"
 			}]
-			x: 39.5d
-			y: -2.0d
+			x: 20.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0E9876A8FEF7F7E9"]
@@ -254,66 +132,27 @@
 				"You also get &aSodium Dust&r as a byproduct. Keep a hold of this, as you will need it for &eHV tiered batteries&r in the future!"
 			]
 			id: "40D97D3EF42D4A88"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5BD438CB35E1C1EB"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "73C903BB099BAFBC"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "142C13E2AF622556"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "5629A5A77577E97A"
 				item: "modern_industrialization:chlorine_bucket"
 				type: "item"
 			}]
-			x: 35.5d
-			y: -6.0d
+			x: 16.5d
+			y: 1.5d
 		}
 		{
-			dependencies: [
-				"40D97D3EF42D4A88"
-				"517C3D6FBC5FEB2A"
-			]
+			dependencies: ["40D97D3EF42D4A88"]
 			description: ["Combining Hydrogen with Chlorine will produce &aHydrochloric Acid&r."]
 			id: "1734CB7253E53672"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0030B2C029EFB3B8"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "32599CFD3675F1A6"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "41CFDBBAEF327177"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "02FA9260B2EBD2D2"
 				item: "modern_industrialization:hydrochloric_acid_bucket"
 				type: "item"
 			}]
-			x: 37.5d
-			y: -8.0d
+			x: 18.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["136292FF2B54C503"]
@@ -323,32 +162,14 @@
 				"By &eCentrifuging&r the &cRuby Dust&r you will get &dChromium Crushed Dust&r and a little extra &bAluminum Dust&r."
 			]
 			id: "7D56FAE45EE0F29C"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "163BA39252370354"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "6FA3EAB144E0EC52"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "0538BE07BE0FB95F"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "4E92E645AC676C6E"
 				item: "modern_industrialization:chromium_crushed_dust"
 				type: "item"
 			}]
-			x: 35.5d
-			y: -3.0d
+			x: 16.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -357,63 +178,27 @@
 			]
 			description: ["Combining 9000 mB of &aHydrochloric Acid&r with &bChromium Crushed Dust&r will create 9000 mB of &dChromium Hydrochloric Solution&r."]
 			id: "49C4F2DED9D7043A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7B4BDCEC9C7BA51D"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "58095A4C56A43BC6"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7AFDD576E3B42864"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "780A5A658F1E4B0D"
 				item: "modern_industrialization:chromium_hydrochloric_solution_bucket"
 				type: "item"
 			}]
-			x: 37.5d
-			y: -3.0d
+			x: 18.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["49C4F2DED9D7043A"]
 			description: ["&eElectrolyzing&r 1000 mB of &aChromium Hydrochloric Solution&r will produce three &bTiny Chromium Dust&r, 450 mB of &9Hydrogen&r, and 450 mB of &2Chlorine&r. This means that there is a 100 mB loss of &aHydrochloric Acid&r for each process. Automating Salt Ore production through the Quarry is going to be essential."]
 			id: "76D9C0C5A1025CC2"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0076A26CE6371A29"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "206F3FAD547B78E1"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "14D017BF72A3F291"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "7BD9385DD0E78036"
 				item: "modern_industrialization:chromium_tiny_dust"
 				type: "item"
 			}]
-			x: 39.5d
-			y: -3.0d
+			x: 20.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["47B1F3B024E8F7CD"]
@@ -425,61 +210,20 @@
 				"You've worked hard to get to this point, so I'm throwing in a few freebies in the rewards."
 			]
 			id: "575EE8E0720CE7DC"
-			rewards: [
-				{
-					count: 3
-					id: "71FEAC927705AF48"
-					item: "modern_industrialization:digital_circuit"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "726CD4CE0348ED6C"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "0E7EC1363211EE66"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "0BB9F53B21D3FDAE"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
-			size: 1.5d
+			size: 2.0d
 			tasks: [{
 				id: "50163AA13FCDFAB4"
 				item: "modern_industrialization:digital_circuit"
 				type: "item"
 			}]
-			x: 50.5d
-			y: -4.0d
+			x: 33.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["47B1F3B024E8F7CD"]
 			description: ["With your &eDigital Circuit Boards&r you can now create the &9Advanced Upgrade&r. These will significantly increase the speed of your overclocks, and your power draw."]
 			id: "043E635A81CA9986"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5DA3DE8ED82D5D66"
-					type: "random"
-				}
-				{
-					id: "4CADCFF88D67E90C"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "2D7BA15ACCF5936B"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "rsquare"
 			tasks: [{
 				count: 4L
@@ -488,13 +232,14 @@
 				type: "item"
 			}]
 			title: "Turbo Upgrades"
-			x: 48.5d
-			y: -4.0d
+			x: 29.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"6375B17635AAC09D"
 				"6AA9B770612C5BB1"
+				"735AA911E02186A4"
 			]
 			description: [
 				"With your newly created &aStainless Steel&r, &bPolyethylene&r, and &aPolytetrafluoroethylene&r you can now create &eDigital Circuit Boards&r, an important precursor to the &eDigital Circuit&r."
@@ -502,24 +247,8 @@
 				"There is a lot of microcrafting for each of the AND, NOT, and OR Gates. I would recommend making these in large batches or &dpassive crafting them&r."
 			]
 			id: "47B1F3B024E8F7CD"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6205129740BD1036"
-					type: "random"
-				}
-				{
-					id: "6C47C00F04F7A062"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "7DA34B169EF7A2B9"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [
 				{
 					id: "39CE9D0F8C1EC3C2"
@@ -544,7 +273,7 @@
 				}
 			]
 			title: "Digital Circuit Components"
-			x: 48.5d
+			x: 28.5d
 			y: -2.0d
 		}
 		{
@@ -555,24 +284,8 @@
 			]
 			description: ["&aStainless Steel&r opens up the ability to create &bAdvanced Components&r. These will be needed for HV and EV tier crafting."]
 			id: "74FD4A8145A0576F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "444D6A318D7C5A95"
-					type: "random"
-				}
-				{
-					id: "2AE4628719515659"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "372580120A70050E"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [
 				{
 					id: "399FF30A4D3F0B07"
@@ -586,32 +299,15 @@
 				}
 			]
 			title: "Advanced Components"
-			x: 48.5d
-			y: -6.0d
+			x: 31.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1E65E1332C2E57A2"]
 			description: ["&aStainless Steel&r is a key component in all of the &dHigh-Voltage&r tier of machine hulls and multiblocks."]
 			id: "6375B17635AAC09D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3A3F63F5C54B724C"
-					type: "random"
-				}
-				{
-					id: "728B8C05452E5990"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "4754688F6C2E4E92"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "Oooh, shiny!"
 			tasks: [{
 				id: "2D38E4F2BF314CA0"
@@ -619,8 +315,8 @@
 				type: "item"
 			}]
 			title: "Stainless Steel"
-			x: 45.5d
-			y: -4.0d
+			x: 28.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["10C6529CD6C26AEE"]
@@ -630,32 +326,15 @@
 				"Unlike &bGregTech&r, these hot ingots will not damage you, but you shouldn't be manually putting items in and out of machines at this point..."
 			]
 			id: "1E65E1332C2E57A2"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "54B9134014457A1B"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "5DA30FE9F9E933F3"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "0C22178E5BA26C1F"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "17F632B2D27E9242"
 				item: "modern_industrialization:stainless_steel_hot_ingot"
 				type: "item"
 			}]
-			x: 43.5d
-			y: -4.0d
+			x: 26.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -668,55 +347,22 @@
 				"&cNOTE&r: If you haven't figured out &dslot-locking&r yet, you will need to for this dust. Otherwise you will be making &bInvar&r! You can lock slots by opening the &emachine GUI&r, then finding the item in &dREI&r and using the '&2+&r' button, or you can use the button in the top left of the machine."
 			]
 			id: "10C6529CD6C26AEE"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "72AB461D1F3416F6"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "27BADBA530BC54CF"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "44FE73C0A85AC7D0"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "12871AF0C5365B02"
 				item: "modern_industrialization:stainless_steel_dust"
 				type: "item"
 			}]
-			x: 41.5d
-			y: -4.0d
+			x: 23.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["10C6529CD6C26AEE"]
 			description: ["Mixing &cChromium&r, &3Stainless Steel&r, and &bAluminum Dusts&r will make &aKanthal Dust&r. Kanthal is an important upgrade to your &eEBF&r coils allowing you to process higher tier recipes, such as &dTitanium&r and &cAnnealed Copper&r."]
 			id: "7EB2342617A3ADDF"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0C3548E31F97D5A3"
-					type: "random"
-				}
-				{
-					id: "536D30AA399E40A0"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "0B3EE0374D5DCBE5"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				count: 3L
 				id: "3BC758AE7793E822"
@@ -724,8 +370,8 @@
 				type: "item"
 			}]
 			title: "Kanthal Dust"
-			x: 41.5d
-			y: -6.0d
+			x: 23.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7EB2342617A3ADDF"]
@@ -735,55 +381,23 @@
 				"The only usage of &aKanthal&r is to make &bKanthal Cables&r, an &dHV tiered cable&r, and &bKanthal Coils&r for use in your &eEBF&rs."
 			]
 			id: "0A8EBA97C825EF06"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "382E9B30EAB26204"
-					type: "random"
-				}
-				{
-					id: "08E67E7FB97D42E0"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "2AFC1BD91D4C87F9"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "5B4B22C48F5669B5"
 				item: "modern_industrialization:kanthal_ingot"
 				type: "item"
 			}]
 			title: "Kanthal"
-			x: 41.5d
-			y: -7.0d
+			x: 23.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0A8EBA97C825EF06"]
 			description: ["&aKanthal Coils&r are your ticket to late game &eEBF&r recipes. With these you can now work towards producing &dadvanced components&r, and eventually &dTitanium&r."]
 			id: "68DDFA6E0465E81E"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "41E96D7407E9ED3F"
-					type: "random"
-				}
-				{
-					id: "074211C7E207C3AB"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "3F1929B411746D98"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				count: 16L
 				id: "52BA772297AAB5E8"
@@ -791,8 +405,8 @@
 				title: "Kanthal Coils"
 				type: "item"
 			}]
-			x: 41.5d
-			y: -8.0d
+			x: 23.5d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -806,61 +420,29 @@
 				"You will need to cool the ingot in a &eVacuum Freezer&r before you can use it."
 			]
 			id: "6C91896D4DF89A77"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7D56B3DCC924C5B2"
-					type: "random"
-				}
-				{
-					id: "28286DB2B7965AFC"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "40F6A6753293D58B"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "656E0ADBC13E1167"
 				item: "modern_industrialization:annealed_copper_hot_ingot"
 				type: "item"
 			}]
-			x: 43.5d
-			y: -8.0d
+			x: 28.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6C91896D4DF89A77"]
 			description: ["The &bAnnealed Copper Ingot&r can be made by &eVacuum Freezing&r the &dhot&r variant. &bAnnealed Copper&r is important in &cadvanced components&r and &dHV Cables&r."]
 			id: "78E5C68ED157A31B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1A7615817496C159"
-					type: "random"
-				}
-				{
-					id: "46D4F70EE521919A"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "039069CFC2F137CA"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "486DF15BB7113D87"
 				item: "modern_industrialization:annealed_copper_ingot"
 				type: "item"
 			}]
-			x: 45.5d
-			y: -8.0d
+			x: 31.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["575EE8E0720CE7DC"]
@@ -870,34 +452,16 @@
 				"With these hulls made you've &2completed this chapter&r and can now move on to the next chapter."
 			]
 			id: "13156F21ECE373E3"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "193DEF250B99BF76"
-					type: "random"
-				}
-				{
-					count: 10
-					id: "39CD6CF75055F25E"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "355F8FC8CCEE6FA7"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			size: 2.5d
+			shape: "gear"
+			size: 3.0d
 			subtitle: "Welcome to High-Voltage"
 			tasks: [{
 				id: "4E33CDCAB3B89EF3"
 				item: "modern_industrialization:turbo_machine_hull"
 				type: "item"
 			}]
-			x: 53.5d
-			y: -4.0d
+			x: 36.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -910,116 +474,49 @@
 				"If used in the &bElectric Quarry&r, it will be your main source of Titanium, Tungsten, Mozanite, and Platinum Ore. When used in an &aOil Drilling Rig&r it will mine &34000 mB of Shale Oil&r. I'd highly recommend using these instead of your &bAluminum Drill&r for &doil processing&r as you get a lot more oil."
 			]
 			id: "3E13D3CD4173DBE2"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "773F923187BE38B9"
-					type: "random"
-				}
-				{
-					id: "4EE9BF12B5093891"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "46690044B897335D"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
-			size: 1.5d
+			size: 2.0d
 			tasks: [{
 				id: "41118F546F177CB1"
 				item: "modern_industrialization:stainless_steel_drill"
 				type: "item"
 			}]
-			x: 50.5d
-			y: -6.0d
+			x: 33.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6375B17635AAC09D"]
 			description: ["The &aStainless Steel Barrel&r can store an incredible &e4096 stacks&r of a single item."]
 			id: "3DADE1F0A3BB9AB4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0558043CECC6EF78"
-					type: "random"
-				}
-				{
-					id: "15B80F51BEA04960"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "4FCB45086049230E"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "0BF96EDA04EC3949"
 				item: "modern_industrialization:stainless_steel_barrel"
 				type: "item"
 			}]
-			x: 45.0d
-			y: -1.5d
+			x: 26.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6375B17635AAC09D"]
 			description: ["The &aStainless Steel Tank&r is the next tier of portable fluid tank you can create. It can store up to &e32 buckets&r of any kind of fluid and retains the contents when broken."]
 			id: "21D65F793422444B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0AAB7949F30EB500"
-					type: "random"
-				}
-				{
-					id: "1729D4D2F84BF98B"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "715CC59F6E6F733A"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "7D13565A3933437E"
 				item: "modern_industrialization:stainless_steel_tank"
 				type: "item"
 			}]
-			x: 46.0d
-			y: -1.5d
+			x: 26.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["78E5C68ED157A31B"]
 			description: ["Mozanite on it's own is pretty useless, however running it through a Centrifuge will produce Neodymium, Yttrium, and Cadmium. These three materials will be important in components and processing in the late game."]
 			hide_dependency_lines: true
 			id: "64C6B2B282D4DF0B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "41A8E951FAA675EB"
-					type: "random"
-				}
-				{
-					id: "6DF07E0379AA997C"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "7646FB109808CE9A"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [
 				{
 					id: "08F195A51BF8E52D"
@@ -1038,110 +535,22 @@
 				}
 			]
 			title: "Mozanite Byproducts"
-			x: 48.5d
-			y: -8.0d
+			x: 31.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3E13D3CD4173DBE2"]
 			description: ["&aThe Stainless Steel Drill&r in an &bOil Drilling Rig&r will give you Shale Oil. Passing this through a &eDistillation Tower&r will give you a &eSulfuric Crude Oil&r, &6Sulfuric Naphtha&r, and a little bit of &3Helium&r. The first two can be processed down in a similar manner as you were before, but the latter, &3Helium&r, is very important as you move into the lategame."]
 			id: "2158E2092F54EFC4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0BA6F4EBA7B305AB"
-					type: "random"
-				}
-				{
-					id: "20777D13A9EEA9AE"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "6B78532AB6817B02"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "6F9C80AD58495E6B"
 				item: "modern_industrialization:shale_oil_bucket"
 				type: "item"
 			}]
-			x: 50.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["0E9876A8FEF7F7E9"]
-			description: [
-				"By &eElectrolyzing&r clay, you can now get little bits of &bLithium gas&r. You can combine your old Red Cell Batteries with Aluminum Plates and some Lithium to make &aLithium Ion Batteries&r."
-				""
-				"These hold 100k and can distribute power to other items in your inventory, very useful!"
-			]
-			id: "42A6888AA162648D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0E01B4DBF723BBB1"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "35FE3F6D489E4796"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "2F38666087502CB7"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "55D47A3F72D63B2E"
-				item: "techreborn:lithium_ion_battery"
-				type: "item"
-			}]
-			x: 35.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["42A6888AA162648D"]
-			description: [
-				"With your advancements in science, you have found that you can glue six &aLithium Ion Batteries&r together and use as a single battery!"
-				""
-				"This has a 600k internal energy buffer, at this point I doubt you have anything that could possibly drain that much, but it will be useful as soon as you unlock the electric TechReborn tools!"
-				""
-				"It can also be equipped into your chest slot."
-			]
-			id: "6EA807A04401F8AE"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "326C7D58DB745591"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "0C030F3B5B089309"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4CD4EF80125142E8"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "7DA97BD25EBB4C85"
-				item: "techreborn:lithium_ion_batpack"
-				type: "item"
-			}]
-			x: 36.5d
-			y: -4.0d
+			x: 36.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["517C3D6FBC5FEB2A"]
@@ -1151,92 +560,28 @@
 				"Whether you want to go and fight the &aEnder Dragon&r now is up to you, but it could be useful to get access to the &eElytra&r and other rare items."
 			]
 			id: "4E194F2BBB21F033"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "58A1D8DB4C201176"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "46B3271917D8D359"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "355309E7D26EF1EE"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "7EC5928DEEEA17FF"
 				item: "minecraft:ender_eye"
 				type: "item"
 			}]
-			x: 33.5d
-			y: -10.0d
+			x: 14.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6375B17635AAC09D"]
 			description: ["The &aAir Intake&r will allow your &eVacuum Freezers&r and &ePressurizers&r to produce &dLiquid Air&r, which can be distilled into it's base components."]
 			id: "354C87C444B34193"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7EB7B5DE0624EB88"
-					type: "random"
-				}
-				{
-					id: "2007F47169F4963B"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "76411A91BCB44E6E"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "1EBA2DB47CD44873"
 				item: "modern_industrialization:air_intake"
 				type: "item"
 			}]
-			x: 43.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["575EE8E0720CE7DC"]
-			description: ["The &aEnergy Crystal&r is similar to the &bLithium Ion Batteries&r, but it has a much larger buffer, being able to store &d1 million E&r."]
-			id: "39A53780808097E7"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6759344329A902C1"
-					type: "random"
-				}
-				{
-					id: "1BFD45A11742A191"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "3384A09A20438A3C"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "458F30860C8B7756"
-				item: "techreborn:energy_crystal"
-				type: "item"
-			}]
-			x: 50.5d
-			y: -2.5d
+			x: 28.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["354C87C444B34193"]
@@ -1246,24 +591,8 @@
 				"&dArgon&r will be very useful in the future, you should start stockpiling it."
 			]
 			id: "0CF36C4D19B0CE1A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "07EF19E37EEB71D7"
-					type: "random"
-				}
-				{
-					id: "06349AE3B5F4A374"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "2868071E5000089A"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [
 				{
 					id: "3BFAF1365AE2422D"
@@ -1282,148 +611,26 @@
 				}
 			]
 			title: "Liquid Air Products"
-			x: 43.5d
-			y: -7.0d
+			x: 28.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0CF36C4D19B0CE1A"]
 			description: ["Combining Argon and Helium in a &eVacuum Freezer&r will give you &bCryofluid&r, an important fluid in quantum crafting."]
 			id: "5D79372CA3921A4D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "137D47C2681BDFCD"
-					type: "random"
-				}
-				{
-					id: "5DAA0C6300D573F3"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "5CFA3D038C279F71"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "044CD9E92387E138"
 				item: "modern_industrialization:cryofluid_bucket"
 				type: "item"
 			}]
-			x: 45.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["6375B17635AAC09D"]
-			description: ["The &eTechReborn&r &bIndustrial Storage Unit&r isn't particularly a direct upgrade to the &aStainless Steel Barrel&r this time, so I've made it a little cheaper. It does still store &d1024 stacks&r of a single item, and still includes &aconfigurable I/O&r and control through &credstone signals&r."]
-			id: "1335AD822DD36A8A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "63ACF0C588B88FD6"
-					type: "random"
-				}
-				{
-					id: "600FB9FFE5366A5B"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "315F96132792EBC1"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "56E35A017ACF19BD"
-				item: "techreborn:industrial_storage_unit"
-				type: "item"
-			}]
-			x: 44.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["6375B17635AAC09D"]
-			description: ["If you already have an &aAdvanced Storage Unit&r, you can create this &bAdvanced Storage Upgrader&r to upgrade your existing storage units without having to break them."]
-			id: "5BA4E91BBA9B38F4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5564351C2F01E019"
-					type: "random"
-				}
-				{
-					id: "513E721F5A2A1C42"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "7992342B3F69D762"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "36143F28117718A3"
-				item: "techreborn:advanced_unit_upgrader"
-				type: "item"
-			}]
-			x: 45.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["6375B17635AAC09D"]
-			description: ["These upgraded variants of &aSolar Panels&r will &epassively generate&r &d24 EU/t&r during the day and &d4 EU/t&r at night."]
-			id: "760AEF21E6403F48"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "015C9C4F7E98AEB4"
-					type: "random"
-				}
-				{
-					id: "00B684C3FEEA2603"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "545CB899795A5EF2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "19653F8AC2A51DA6"
-				item: "techreborn:industrial_solar_panel"
-				type: "item"
-			}]
-			x: 46.5d
-			y: -2.5d
+			x: 26.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["55F8B05DF035DF54"]
 			description: ["And finally, &7300mB Tetrafluoroethylene&r and &b1000mB Oxygen&r combine in a &eChemical Reactor&r to provide &a400mb Polytetrafluoroethylene&r."]
 			id: "6AA9B770612C5BB1"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7261349E08582124"
-					type: "random"
-				}
-				{
-					id: "3897F4F36EFCD7AB"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "067AE5D7D195846B"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			subtitle: "Say that three times fast"
 			tasks: [{
@@ -1431,8 +638,8 @@
 				item: "modern_industrialization:polytetrafluoroethylene_bucket"
 				type: "item"
 			}]
-			x: 48.5d
-			y: 0.5d
+			x: 25.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1441,61 +648,27 @@
 			]
 			description: ["&b2000mB Hydrofluoric Acid&r and &31000mB Chloroform&r combine in a &eChemical Reactor&r to provide you &22500mB Hydrochloric Acid&r and &7500mB Tetrafluoroethylene&r."]
 			id: "55F8B05DF035DF54"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3739832718886F89"
-					type: "random"
-				}
-				{
-					id: "019E3A2183EBCEA0"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "4AFBE23FEB40ADD0"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "7185AF029A613126"
 				item: "modern_industrialization:tetrafluoroethylene_bucket"
 				type: "item"
 			}]
-			x: 46.0d
-			y: 0.5d
+			x: 24.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["138B46F9DD86DEB6"]
 			description: ["&e1000mB Fluorine&r and &91000mB Hydrogen&r combine in a &eChemical Reactor&r to provide you &b2000mB of Hydrofluoric Acid&r."]
 			id: "56F78DA3CB207D3B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "33E6E83BAEFEDD17"
-					type: "random"
-				}
-				{
-					id: "33365CD18E0B1D71"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "6A9DA995DB4624A5"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "0769BC06DD3BEA51"
 				item: "modern_industrialization:hydrofluoric_acid_bucket"
 				type: "item"
 			}]
-			x: 44.0d
-			y: 1.0d
+			x: 23.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["72066057C80E5E94"]
@@ -1505,205 +678,56 @@
 				"While &3Chloroform&r is what you're looking for in this quest, the &2Hydrochloric Acid&r will be very useful for other chemical processes as well."
 			]
 			id: "516C46122E7303BD"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "091281C5CD1A44A0"
-					type: "random"
-				}
-				{
-					id: "7CE50AC98D4C8589"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "62C1E960B2BC4959"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "1650F2D4B2D30185"
 				item: "modern_industrialization:chloroform_bucket"
 				type: "item"
 			}]
-			x: 44.0d
-			y: 0.0d
+			x: 24.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["72066057C80E5E94"]
 			description: ["&aFluorine&r can be created by smelting &eFluorite Dust&r in a &6Blast Furnace&r. &3Fluorite Ore&r can be found in the overworld in &bDiamond&r and &aEmerald&r ore veins."]
 			id: "138B46F9DD86DEB6"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "164E3D3604E3256C"
-					type: "random"
-				}
-				{
-					id: "65A29AD3DFB59455"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "7ED7859A9A79C724"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				id: "66C38150D0F942D0"
 				item: "modern_industrialization:fluorine_bucket"
 				type: "item"
 			}]
-			x: 41.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["39A53780808097E7"]
-			description: [
-				"Up until now you haven't had a valid &eelectric powered suit&r, &ounheard of in modded Minecraft&r. With the &aNano Suit&r, you can finally have a powerful piece of armor that you can recharge, effectively making it &2indestructable&r."
-				""
-				"The &6Nano Helmet&r also will provide you with &dNight Vision&r when underground."
-			]
-			id: "61EC57BD963B8D36"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2955F13CEA6D78B7"
-					type: "random"
-				}
-				{
-					id: "28BF50A2C665DDB4"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "7D1D6928D0EF470C"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [
-				{
-					id: "7B5155506122AC9C"
-					item: {
-						Count: 1b
-						id: "tech_enhanced:nano_helmet"
-						tag: {
-							energy: 1000000L
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4B171345F31D15A8"
-					item: {
-						Count: 1b
-						id: "tech_enhanced:nano_chestplate"
-						tag: {
-							energy: 1000000L
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0942823093E696ED"
-					item: {
-						Count: 1b
-						id: "tech_enhanced:nano_leggings"
-						tag: {
-							energy: 1000000L
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "2BEC7AAB60422F3E"
-					item: {
-						Count: 1b
-						id: "tech_enhanced:nano_boots"
-						tag: {
-							energy: 1000000L
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Nano Suit"
-			x: 50.5d
-			y: -1.0d
+			x: 23.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["78E5C68ED157A31B"]
 			description: ["The &aAdvanced Wireless Block Charger&r is an upgrade to the basic one that increases its transfer rate to &6512 EU/t&r and the range to &e11x11x11&r around it."]
 			id: "46CAD11B98DF4E03"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "366066410F27AEF9"
-					type: "random"
-				}
-				{
-					id: "654614D6328AA15A"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "3C3F632039D6B29E"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "79EC513594AA35DB"
 				item: "wirelesschargers:advanced_wireless_block_charger"
 				type: "item"
 			}]
-			x: 45.5d
-			y: -9.5d
+			x: 31.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["0A8EBA97C825EF06"]
 			description: ["The &aAdvanced Wireless Player Charger&r is an upgrade to the basic one that increases its transfer rate to &61024 EU/t&r and the range to &e21x21x21&r around it."]
 			id: "6286FBAFF193A720"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6203515BEB399770"
-					type: "random"
-				}
-				{
-					id: "3CA23BCFB06B5226"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "41AE52AC13AAA1DE"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "0F98D51C4D51EC17"
 				item: "wirelesschargers:advanced_wireless_player_charger"
 				type: "item"
 			}]
-			x: 40.0d
-			y: -7.0d
+			x: 21.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["10C6529CD6C26AEE"]
 			description: ["&aPolytetrafluoroethylene&r, also known as &aPTFE&r or &aTeflon&r, is an advanced polymer known for nonreactivity, low friction, and good insulating properties. It is a necessary material soon as you move to create components for the &2Digital Circuit&r. The following quests will guide you through the process of making it."]
 			id: "72066057C80E5E94"
-			rewards: [{
-				id: "0B68C125A3517D0D"
-				type: "xp"
-				xp: 10
-			}]
 			shape: "square"
 			subtitle: "Polytetrafluoroethylene"
 			tasks: [{
@@ -1712,8 +736,8 @@
 				type: "checkmark"
 			}]
 			title: "PTFE"
-			x: 41.5d
-			y: -2.0d
+			x: 23.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6375B17635AAC09D"]
@@ -1723,30 +747,13 @@
 				"It costs a lot of &bStainless Steel&r, might be better to upgrade once you have a decent surplus."
 			]
 			id: "40CDA239B922E883"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0B7CA9633999E55C"
-					type: "random"
-				}
-				{
-					id: "263CE509122A2A39"
-					item: "kubejs:coin_legendary"
-					type: "item"
-				}
-				{
-					id: "67B3EA8CD3AB7D6A"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "636558B6C1DD8093"
 				item: "dankstorage:dank_3"
 				type: "item"
 			}]
-			x: 45.5d
-			y: -5.5d
+			x: 27.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["4E194F2BBB21F033"]
@@ -1756,32 +763,14 @@
 				"You can use runes to change the color-coding."
 			]
 			id: "152E753AE4B119C1"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1C2A70CF332332D9"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "365BF2C5B6D3BC58"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "026C249B2003B863"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "6C36FB2FA87E0680"
 				item: "kibe:entangled_tank"
 				type: "item"
 			}]
-			x: 32.0d
-			y: -12.0d
+			x: 12.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["4E194F2BBB21F033"]
@@ -1791,32 +780,14 @@
 				"Shift right-click an &aEntangled Tank&r with an &bEntangled Bucket&r to link them together."
 			]
 			id: "5E0F3A2885C0E0DD"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "02C0FA3B508BED6D"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "2265E6FD11C0F16C"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "468FDA07165F0885"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "4D6D096AB9AEAC06"
 				item: "kibe:entangled_bucket"
 				type: "item"
 			}]
-			x: 33.0d
-			y: -12.0d
+			x: 13.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["4E194F2BBB21F033"]
@@ -1826,56 +797,20 @@
 				"You can use runes to change the color-coding."
 			]
 			id: "616AB06164FF575F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1F4449B5F1D0557A"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "2A1762466B36DE3B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7AFF345680AC252E"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "4281D358BBE797BE"
 				item: "kibe:entangled_chest"
 				type: "item"
 			}]
-			x: 32.5d
-			y: -13.0d
+			x: 13.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4E194F2BBB21F033"]
 			description: ["The &dVoid Bucket&r does not carry any liquids, instead it deletes any liquid you pick up with it. "]
 			id: "493839A115C46F71"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3BA222F22E55FF7A"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "0DBEB739254200A3"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "50A008690200A889"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "41300F1E0FF7E2C6"
 				item: {
@@ -1885,39 +820,21 @@
 				}
 				type: "item"
 			}]
-			x: 33.5d
-			y: -13.0d
+			x: 14.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4E194F2BBB21F033"]
 			description: ["By some kind of ender magic, this backpack allows you to remotely access your own ender chest."]
 			id: "54589AAB3003F421"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7EF82B1C564EC671"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "0115A9D994ED3B7B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "6815CBFA4F69316B"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "408B2186174A852E"
 				item: "inmis:ender_pouch"
 				type: "item"
 			}]
-			x: 34.0d
-			y: -12.0d
+			x: 14.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["4E194F2BBB21F033"]
@@ -1929,32 +846,14 @@
 				"Stored XP can be used to craft Bottle o' Enchanting or Liquid XP buckets."
 			]
 			id: "3CECE50DB2609499"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0F0518F73EFE1B94"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "02FFA12DC56DB4B2"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "351B70C4DB2F5A70"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "08B382F348B643EA"
 				item: "kibe:vacuum_hopper"
 				type: "item"
 			}]
-			x: 34.5d
-			y: -13.0d
+			x: 15.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["4E194F2BBB21F033"]
@@ -1964,32 +863,14 @@
 				"Shift right-click an &bEntangled Chest&r with an &bEntangled Bag&r to link them together."
 			]
 			id: "1044FF1E86B2615A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7EC93143D136F316"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "77462ED8CDC1DAA9"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3590D04DFE438635"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "1178ABAC40FC7031"
 				item: "kibe:entangled_bag"
 				type: "item"
 			}]
-			x: 35.0d
-			y: -12.0d
+			x: 15.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["173001AFD7DFE49B"]
@@ -1999,32 +880,14 @@
 				"&cDon't worry about your teeth&r."
 			]
 			id: "05AA278DBAEEB2FE"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3B4B5827C9E36329"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4B006DC8A8B7ECBF"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "76F078D683FEFBBF"
-					type: "xp"
-					xp: 10
-				}
-			]
 			subtitle: "Need a snack?"
 			tasks: [{
 				id: "46215CD0BD55504D"
 				item: "kubejs:concrete_bar"
 				type: "item"
 			}]
-			x: 30.0d
-			y: -11.0d
+			x: 9.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -2037,24 +900,6 @@
 			]
 			icon: "modern_industrialization:vacuum_freezer"
 			id: "173001AFD7DFE49B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "44753B7DB077F5D8"
-					type: "random"
-				}
-				{
-					count: 15
-					id: "68B5F59907406847"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "60C3EB08735B097F"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			size: 2.0d
 			subtitle: "It's getting cold in here"
@@ -2108,8 +953,8 @@
 				}
 			]
 			title: "The Vacuum Freezer"
-			x: 30.0d
-			y: -8.5d
+			x: 9.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -2119,32 +964,14 @@
 				"Don't forget to activate it using the &6Toggle Flight&r keybinding (Check your controls, default is: &dx&r)"
 			]
 			id: "2FD9CBCD413E05DF"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7B6D8ED1662576CE"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "0EA33CD7D7BCB281"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "15CE410263D52506"
-					type: "xp"
-					xp: 10
-				}
-			]
 			subtitle: "Fly me to the moon"
 			tasks: [{
 				id: "743CE5A4C4B54A8B"
 				item: "modern_industrialization:diesel_jetpack"
 				type: "item"
 			}]
-			x: 28.5d
-			y: -8.5d
+			x: 7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -2156,88 +983,34 @@
 				"It does &clack the 3x3&r you might be used to with the &3Steam Drill&r..."
 			]
 			id: "0DCBF872F6BC9F84"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1C07D9AC9B62EB18"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4EEFA591452871AC"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "0DC7F9241A378FE3"
-					type: "xp"
-					xp: 10
-				}
-			]
 			subtitle: "The Drill That Will Pierce the Heavens"
 			tasks: [{
 				id: "7FE37DC7FB025BFF"
 				item: "modern_industrialization:diesel_mining_drill"
 				type: "item"
 			}]
-			x: 31.5d
-			y: -9.0d
+			x: 8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
 			description: ["The &aDiesel Chainsaw&r is a suped up axe that can chop down trees really quickly if you feed it &6more powerful fuels&r."]
 			id: "19F713DD5C1AED48"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5B514CD5C86E3203"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "313CD750396FE6B8"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "6E0C8AAB94C81BD8"
-					type: "xp"
-					xp: 10
-				}
-			]
 			subtitle: "Deforestation"
 			tasks: [{
 				id: "30F869CE6C2AA126"
 				item: "modern_industrialization:diesel_chainsaw"
 				type: "item"
 			}]
-			x: 31.5d
-			y: -8.0d
+			x: 9.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["302958D57C6A10C7"]
+			dependencies: ["240999FC6C4F7332"]
 			description: ["With your new fancy circuits you can now craft even more complicated components. "]
 			id: "36C698E0F31FDB20"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "336CE02656E174DD"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "361B3A3709DDB26B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "55C252FD0F20DB2D"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					id: "0536137AC05FD22C"
@@ -2251,11 +1024,11 @@
 				}
 			]
 			title: "Large Components"
-			x: 30.0d
-			y: -4.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["302958D57C6A10C7"]
+			dependencies: ["36C698E0F31FDB20"]
 			description: [
 				"The &aAdvanced Large Steam Boiler&r is very similar to the original &bLarge Steam Boiler&r, but rather this version can produce up to &e1024&r mb/t of Steam!"
 				""
@@ -2263,26 +1036,8 @@
 			]
 			icon: "modern_industrialization:advanced_large_steam_boiler"
 			id: "57C1BE11C74FDAB8"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1EC2CFB82697E646"
-					type: "random"
-				}
-				{
-					count: 10
-					id: "20D00C994985EA5F"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5034DD3F619F3E73"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			size: 1.5d
+			shape: "square"
+			size: 2.0d
 			subtitle: "Overdrive!"
 			tasks: [
 				{
@@ -2302,11 +1057,11 @@
 					type: "item"
 				}
 			]
-			x: 27.5d
-			y: -1.0d
+			x: 4.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["6C3EAE1F16E1048A"]
+			dependencies: ["1F81D2DD08A45493"]
 			description: [
 				"The Cables of MV are:"
 				"- &cCupronickel&r"
@@ -2315,25 +1070,8 @@
 				"These cables can transfer up to &e1024 EU/t&r and have an internal buffer of &61024 EU&r."
 			]
 			id: "6E7B9D7C331203C4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2AA3C2B520D27F2C"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "3FD8888B92F5F63A"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "19523378C29E4648"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "7C76F557D40DBDB9"
 				item: {
@@ -2347,38 +1085,21 @@
 				type: "item"
 			}]
 			title: "MV Cables"
-			x: 26.0d
-			y: -1.5d
+			x: -1.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6E7B9D7C331203C4"]
 			description: ["This is the &eModern Dynamics&r version of the &aMV-tier Cables&r."]
 			id: "7A082EC55D240856"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0C2D7E2155501004"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "1A592032323A10E7"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4787E7BB45A2D55C"
-					type: "xp"
-					xp: 10
-				}
-			]
+			size: 2.0d
 			tasks: [{
 				id: "21977D5233A45F1C"
 				item: "moderndynamics:mv_cable"
 				type: "item"
 			}]
-			x: 26.0d
-			y: -0.5d
+			x: -1.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -2391,26 +1112,8 @@
 			]
 			icon: "modern_industrialization:mob_crusher"
 			id: "654F6F3798065F1A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2048EA330830E408"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "6D5487F43872C288"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3FA88E44092D5CF0"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "Deus Ex Machina"
 			tasks: [
 				{
@@ -2485,32 +1188,14 @@
 					type: "item"
 				}
 			]
-			x: 32.0d
-			y: -1.0d
+			x: 11.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1AFBAD9537A32176"]
 			description: ["Putting &eGold Drills&r in the &aElectric Quarry will&r output &cNether&r related items. This is a great way to get a recurring amount of &2Glowstone&r, &3Netherite&r, and &eQuartz&r."]
 			id: "1AC3D17D11B6CAD1"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3C68FEFB0B26324A"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "397BB4B225AB4A1E"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "0CEEA401BD64C785"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				count: 4L
 				id: "6CECCF4B67366E27"
@@ -2518,32 +1203,14 @@
 				type: "item"
 			}]
 			title: "Gold Drills"
-			x: 27.0d
-			y: 2.5d
+			x: 7.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1AFBAD9537A32176"]
 			description: ["Putting &7Steel Drills&r in the &aElectric Quarry&r will output much rarer Overworld minerals, as well as some ores you will need in large quantities, such as &aBauxite&r."]
 			id: "2A76A7DC5A71E7FC"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6ACFE1CC98A226D3"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "48F6A5FAF51A3A5F"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7E9F71E7E1D7FCF1"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				count: 4L
 				id: "30816AFBA0D4361F"
@@ -2551,11 +1218,11 @@
 				type: "item"
 			}]
 			title: "Steel Drills"
-			x: 27.0d
-			y: 1.5d
+			x: 6.0d
+			y: -5.5d
 		}
 		{
-			dependencies: ["6C3EAE1F16E1048A"]
+			dependencies: ["36C698E0F31FDB20"]
 			description: [
 				"The &aElectric Quarry&r is very similar to it's &7Steam&r counterpart, except with the &eFluid Input Hatch&r being changed to the &eEnergy Input Hatch&r. "
 				""
@@ -2565,24 +1232,6 @@
 			]
 			icon: "modern_industrialization:electric_quarry"
 			id: "1AFBAD9537A32176"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "71B31F52852AFC11"
-					type: "random"
-				}
-				{
-					count: 10
-					id: "04BDF20236CAD9BD"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "04A660CBC5B77834"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			size: 2.0d
 			subtitle: "Ores Infinitum"
@@ -2649,112 +1298,11 @@
 				}
 			]
 			title: "The Electric Quarry"
-			x: 25.0d
-			y: 2.0d
+			x: 6.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["6C3EAE1F16E1048A"]
-			description: [
-				"The &aRecyler&r is used to create Scrap from items you toss into it. Don't put anything in it you would miss!"
-				""
-				"Scrap can be used in the future to turn into solid &dUU-Matter&r, which can be used to craft rare materials. For now, it's only able to be put through a &bScrapboxinator&r for random outputs."
-			]
-			id: "3EA8163D99F7A61E"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5F2A23E54E07C04E"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "753CE2CEE9C17CD5"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "008F4E54C8800E60"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "2A2D9A1C3AD8976D"
-				item: "techreborn:recycler"
-				type: "item"
-			}]
-			x: 23.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["3EA8163D99F7A61E"]
-			description: [
-				"Providing the &aRecycler&r materials will have it randomly spit out Scrap."
-				""
-				"Scrap can be used in a Matter Fabricator to create &dUU-Matter&r, or it can be converted into Scrapboxes and ran through a &bScrapbox-inator&r to produce random outputs."
-			]
-			id: "5EC488946BE8FF2F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7C35D858BFC8A1EA"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "499C8C1DB2019904"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "21E055CB1666A0F4"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "1970BCA2D3FF7958"
-				item: "techreborn:scrap"
-				type: "item"
-			}]
-			x: 23.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["5EC488946BE8FF2F"]
-			description: ["The &aScrapbox-inator&r can turn &bScrapboxes&r into random outputs. It could be fun to have it run, or you can stockpile your scrap until you get a &cMatter Fabricator&r, up to you."]
-			id: "092B11065EE78062"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5C960A75073593B5"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "7016F4424D5D04A6"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "67A6C7F1A84D5C3A"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "783237CDF19B463A"
-				item: "techreborn:scrapboxinator"
-				type: "item"
-			}]
-			x: 23.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["6C3EAE1F16E1048A"]
+			dependencies: ["240999FC6C4F7332"]
 			description: [
 				"Find yourself waiting on your &aElectric Smelters&r, even with upgrades? Need to smelt up a ton of cobblestone? Then the &dMega Smelter&r is for you."
 				""
@@ -2764,25 +1312,8 @@
 			]
 			icon: "modern_industrialization:mega_smelter"
 			id: "2E1BFF08F0365119"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "48D4643721621F22"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "370B8ED8F57DD2FF"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "001D574A309DF364"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
+			size: 2.0d
 			tasks: [
 				{
 					id: "73ACCBA989011793"
@@ -2838,11 +1369,11 @@
 					type: "item"
 				}
 			]
-			x: 22.0d
-			y: 0.5d
+			x: 1.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["6C3EAE1F16E1048A"]
+			dependencies: ["240999FC6C4F7332"]
 			description: [
 				"Now it's time to focus in on &3fluid processing&r. The first step on that list is to create the &aOil Drilling Rig&r. It's a huge multiblock that can dig for &0Crude Oil&r under the bedrock using drills. The &0Crude Oil&r will be extremely important as it can be &3processed into a lot of byproducts&r and can be used to &6produce energy&r."
 				""
@@ -2852,26 +1383,8 @@
 			]
 			icon: "modern_industrialization:oil_drilling_rig"
 			id: "5000D009D884FB99"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0FE08EEA42EA536B"
-					type: "random"
-				}
-				{
-					count: 15
-					id: "466794F83486794B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "103836B4B9D662CD"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
-			size: 2.5d
+			size: 2.0d
 			subtitle: "You've caught the United States' attention"
 			tasks: [
 				{
@@ -2934,163 +1447,76 @@
 					type: "item"
 				}
 			]
-			x: 19.25d
-			y: 2.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5000D009D884FB99"]
 			description: ["The &bAluminum Drill&r have one purpose, and that's to produce &aCrude Oil&r. These are rather expensive, so I hope your &einfrastructure is ready&r!"]
 			id: "6B3CFE9AF2F5628B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4B26129A91902B9C"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "0ED01B3830A364D3"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "65B7B671F55D0706"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "6FCC72842F6ABC49"
 				item: "modern_industrialization:aluminum_drill"
 				type: "item"
 			}]
-			x: 18.75d
-			y: 4.5d
+			x: 2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5000D009D884FB99"]
 			description: ["By using a &6Bronze Drill&r in the &eOil Drilling Rig&r will produce &aSalt Water&r. This can be further processed into &eBrine&r and then &delectrolyzed&r to produce useful byproducts such as &3Chlorine&r and &2Sodium Hydroxide&r."]
 			id: "1672575316A1B791"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1D9E553FBCA536A2"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "5553D996D18F8822"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3723C72ACA7AFF34"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "57345F329B7AF3CC"
 				item: "modern_industrialization:salt_water_bucket"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 4.5d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["7A4F605834E3AE7B"]
+			dependencies: ["5E3E02943E6ED7A4"]
 			dependency_requirement: "one_completed"
 			description: ["&aEthylene&r is used in the production of &3Ethylbenzene&r, &2Ethanol&r, and &bPolyethylene&r."]
 			id: "6762FCBA521FFF4B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4C9D10A068F1809F"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "7368CFC793A00286"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7D52D180881CAE38"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "3CA4A3A482BDA08E"
 				item: "modern_industrialization:ethylene_bucket"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.5d
+			x: -4.0d
+			y: -15.5d
 		}
 		{
-			dependencies: ["7A4F605834E3AE7B"]
+			dependencies: ["5E3E02943E6ED7A4"]
 			dependency_requirement: "one_completed"
 			description: ["&aPropene&r is important for creating &3Acryllic Acid&r, which can be creates &eDiethyl Ether&r, an important component in &6Boosted Diesel&r. &3Acryllic Acid&r can also be reacted into &eAcryllic Glue&r, a form of creating infinite &aSlime.&r"]
 			id: "4BC45FE0A3D522C3"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "39D1BE3B7F87212F"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "554CC698C06EDAB2"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "75AE7E5A35E1CAAC"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "01A53367472912E0"
 				item: "modern_industrialization:propene_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.5d
+			x: -4.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["4BC45FE0A3D522C3"]
 			description: ["&aAcrylic Acid&r can be used to create &aAcrylic Glue&r, which will create infinite &aslime&r, or it can be used to make &2Diethyl Ether&r, which is used in &6Boosted Diesel&r"]
 			id: "476EB7CF83477089"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "704E47CE6C6A3393"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "2F3244B96179FD9D"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "288378F54EAF8175"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "5F4B5A4B7DD197DD"
 				item: "modern_industrialization:acrylic_acid_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.5d
+			x: -6.5d
+			y: -18.0d
 		}
 		{
 			dependencies: ["6762FCBA521FFF4B"]
@@ -3100,32 +1526,15 @@
 				"It can be produced using &3Ethylene&r, &6Sulfuric Acid&r, and &9Water&r, or distilled slowly using &eSugar Solution&r."
 			]
 			id: "7B318DADE7D4B28E"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "632008A00F86122B"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "099E7B2A2FF1F508"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "6AA61DF89CE3247B"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "0D956B63FB9FF2B3"
 				item: "modern_industrialization:ethanol_bucket"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -4.5d
+			x: -6.5d
+			y: -15.5d
 		}
 		{
 			dependencies: [
@@ -3134,94 +1543,43 @@
 			]
 			description: ["Mix this with &aDiesel&r to make &6Boosted Diesel&r. &dThe most efficient fuel to burn&r."]
 			id: "6FC3B9DB61B11CB4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "68B18771B29F59A1"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4FE08850D3BEB561"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "19008ED2CE0EF76A"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "154F88C2ABBAFF17"
 				item: "modern_industrialization:diethyl_ether_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -6.5d
+			x: -9.0d
+			y: -18.0d
 		}
 		{
 			dependencies: ["7B318DADE7D4B28E"]
 			description: ["&aRaw Biodiesel&r can be processed into &bBiodiesel&r and then used as an alternative to &cDiesel&r or to supplement your &dBoosted Diesel&r."]
 			id: "06BDC86D8AF2405F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "05C13164D86D3606"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "7AEF4752917D0F54"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "6571FA206267D9C9"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "26A0C455E2F2FCE6"
 				item: "modern_industrialization:raw_biodiesel_bucket"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -6.5d
+			x: -9.0d
+			y: -15.5d
 		}
 		{
 			dependencies: ["06BDC86D8AF2405F"]
 			description: ["Can be produced into &aBoosted Diesel&r at a better rate than regularly processed &bDiesel&r."]
 			id: "546FA5CADF43F18A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "37ECC719AEF559CD"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "5D5B02B6C017EE4D"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "67AD31F4911E3911"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "25B0286B23F2FEC2"
 				item: "modern_industrialization:biodiesel_bucket"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -8.5d
+			x: -11.5d
+			y: -15.5d
 		}
 		{
 			dependencies: [
@@ -3231,65 +1589,29 @@
 			dependency_requirement: "one_completed"
 			description: ["&aBoosted Diesel&r can make &e800 EU per mB&r burned. &dIt's the most efficient fuel to burn&r."]
 			id: "3F9D5D2011DA96F2"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2F824AC0E3BF3F56"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4E646DA02C8FBEE8"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "6C5A1C2A2E17553F"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			size: 1.5d
+			shape: "gear"
+			size: 3.0d
 			tasks: [{
 				id: "3C5676D9D1B51A91"
 				item: "modern_industrialization:boosted_diesel_bucket"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -8.5d
+			x: -11.5d
+			y: -18.0d
 		}
 		{
-			dependencies: ["6762FCBA521FFF4B"]
+			dependencies: ["5E3E02943E6ED7A4"]
 			description: ["&aPolyethylene&r is an important chemical for the creation of &2circuit boards&r and &eupgrades&r."]
 			id: "735AA911E02186A4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "69A8A29974E98ADB"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "0EE7C2C70205AF3D"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "621FA4D0947E495B"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
-			size: 1.5d
+			size: 2.0d
 			tasks: [{
 				id: "111AB21195D29034"
 				item: "modern_industrialization:polyethylene_bucket"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.5d
+			x: 28.5d
+			y: -16.5d
 		}
 		{
 			dependencies: ["735AA911E02186A4"]
@@ -3301,30 +1623,6 @@
 				"In the Machine or Multiblocks GUI, add upgrades in the &etop right slot&r to increase its maximum overclock. Check &dREI&r for exact amounts."
 			]
 			id: "7AD837EF6D37373B"
-			rewards: [
-				{
-					count: 4
-					id: "128795E29D8CA27A"
-					item: "modern_industrialization:basic_upgrade"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "521183A3871694CD"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4E137735DA82A5B7"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "0405CD276AFA0BF4"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				count: 4L
@@ -3333,37 +1631,13 @@
 				type: "item"
 			}]
 			title: "Overclock Upgrades"
-			x: -6.0d
-			y: -0.5d
+			x: 29.5d
+			y: -19.0d
 		}
 		{
 			dependencies: ["7AD837EF6D37373B"]
 			description: ["With your &aElectronic Circuit&r Boards you can now create the &bAdvanced Upgrade&r. These will significantly increase the speed of your overclocks, and your power draw."]
 			id: "3AA8A664DD802851"
-			rewards: [
-				{
-					count: 4
-					id: "6B26756B4F4F7B35"
-					item: "modern_industrialization:advanced_upgrade"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "6623C3B2F6C00712"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "48535EC7D73CA131"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "344185CACCD30A2B"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
 			tasks: [{
 				count: 4L
@@ -3372,245 +1646,8 @@
 				type: "item"
 			}]
 			title: "Advanced Upgrades"
-			x: -6.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7AD837EF6D37373B"]
-			description: [
-				"One of the first things you can now access with these upgrades is the ability to compress &bDiamonds&r and &aEmeralds&r into plates."
-				""
-				"Finally, you can access that &3new tier of chest / backpack&r."
-			]
-			id: "7DE1DE92C45C81BB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7A700F699D4C73A1"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "3DBE53F527A494EB"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "574CC13B1B19B117"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [
-				{
-					count: 4L
-					id: "690F985C0A95E8FA"
-					item: "modern_industrialization:diamond_plate"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "6502CFA80273BB14"
-					item: "modern_industrialization:emerald_plate"
-					type: "item"
-				}
-			]
-			title: "Diamond \\& Emerald Plates"
-			x: -8.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["7DE1DE92C45C81BB"]
-			description: [
-				"With this new piece of bling, you will be able to carry &d 72 item stacks&r."
-				""
-				"&l&cREMOVE ITEMS BEFORE UPGRADING. IT WILL VOID ANYTHING INSIDE IF YOU DON'T!!!!&r"
-			]
-			id: "1B19E2916336F297"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6B246240EF584374"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4C51C9B40ECD9E6C"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "538334DF45929E0B"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "3217AE8712B2A04F"
-				item: "inmis:bejeweled_backpack"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7DE1DE92C45C81BB"]
-			description: ["The &bDiamond Chest&r is a long awaited upgrade to your storage chests. It allows you to store &e72 stacks of items&r."]
-			id: "60B30C4A8471450A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1D930B5070ABD234"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "01F7905251FFEBA2"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "60A8348E4F7CAAAE"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			subtitle: "A long awaited storage upgrade"
-			tasks: [{
-				id: "2B64C0D215DBA425"
-				item: "ironchests:diamond_chest"
-				type: "item"
-			}]
-			title: "Diamond Chest"
-			x: -10.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["60B30C4A8471450A"]
-			description: ["The &dCrystal Chest&r has the same storage as the &bDiamond Chest&r, just a little nicer looking and slightly transparent."]
-			id: "2849D0C7E2EE7246"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6DF7B19A6F379E98"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "211A6C2DA0A96786"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "70E52B9FA7970B59"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "2E8E116DE2E3160A"
-				item: "ironchests:crystal_chest"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["60B30C4A8471450A"]
-			description: ["The &dObsidian Chest&r has the same storage as the &bDiamond Chest&r."]
-			id: "37A888209FE71492"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "326F0FEBEDA2D6FF"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "196F2501F89CE7C5"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3DDB9CC62AC4834A"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "6C1770FAE9E1743C"
-				item: "ironchests:obsidian_chest"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["60B30C4A8471450A"]
-			description: ["The &cNetherite Chest&r is the ultimate upgrade for your chest, boasting a capacity of &e91 item stacks&r."]
-			id: "58C2A1D3B3129D29"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "08A66BF3C5E26F61"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "488617EAA271B393"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "448E54E673F5EF1E"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "6A144F07449BAF36"
-				item: "ironchests:netherite_chest"
-				type: "item"
-			}]
-			x: -9.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7DE1DE92C45C81BB"]
-			description: ["The &bDiamond Dolly&d is an upgrade to the &7Iron Dolly&r that has no durability. This means you can move your chests around whenever you need, without having to worry about &6breaking your tool&r."]
-			id: "0982F8D1C5C4DBF9"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "57AB12C720899E81"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "50757E2C02FD85DA"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5A71324417EF217F"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "09F8745DF65B28A4"
-				item: "ironchests:diamond_dolly"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -3.0d
+			x: 29.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["735AA911E02186A4"]
@@ -3624,26 +1661,7 @@
 				"Shoot with &aright click&r and aim down sights with &eleft-click&r and melee with &ev&r."
 			]
 			id: "15439E59E3AEF582"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "492C1C76D6151E67"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "691809FC17677174"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5EE3E4C5F209A7A6"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			size: 1.5d
+			shape: "square"
 			tasks: [
 				{
 					id: "51F3C690ADEC22A6"
@@ -3674,161 +1692,23 @@
 				}
 			]
 			title: "Ammu-Nation"
-			x: -6.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["7DE1DE92C45C81BB"]
-			description: ["The &bDiamond Barrel&r is a long awaited upgrade to your storage barrels. It allows you to store &e72 stacks of items&r."]
-			id: "4BFCCF11AC1E8126"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0A48775CB20F1E5A"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "61589B2E2FC65169"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "2FF3C172F2DC016A"
-					type: "xp"
-					xp: 10
-				}
-			]
-			subtitle: "A long awaited storage upgrade v2"
-			tasks: [{
-				id: "47C422ED21E96D51"
-				item: "ironchests:diamond_barrel"
-				type: "item"
-			}]
-			x: -10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4BFCCF11AC1E8126"]
-			description: ["The &dCrystal Barrel&r has the same storage as the &bDiamond Barrel&r, except it shows the contents inside of it."]
-			id: "310A10B1ADB099FB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3EA8FED52E7D1A00"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "7D3F357E2E0E8F99"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "6FFD641D42AB7244"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "6A2A029F3C46C6B4"
-				item: "ironchests:crystal_barrel"
-				type: "item"
-			}]
-			x: -10.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["4BFCCF11AC1E8126"]
-			description: ["The &dObsidian Barrel&r has the same storage as the &bDiamond Barrel&r."]
-			id: "3D53CF98BD92C153"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4B58AB42106A5D8D"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "365674574DE5D25D"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5B2F1528472937AD"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "04652A1CBB51A017"
-				item: "ironchests:obsidian_barrel"
-				type: "item"
-			}]
-			x: -11.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["4BFCCF11AC1E8126"]
-			description: ["The &cNetherite Barrel&r is the ultimate upgrade for your barrel, boasting a capacity of &e91 item stacks&r."]
-			id: "540729B016A2B0FA"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "04F5F46170F9E7B6"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "335A9A9AF8001E11"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "1FFD687AFAC1F6FD"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "266776915F5DE18B"
-				item: "ironchests:netherite_barrel"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 1.5d
+			x: 27.5d
+			y: -19.0d
 		}
 		{
 			dependencies: ["5000D009D884FB99"]
 			description: ["&0Crude Oil&r is produced from an &aOil Drilling Rig&r using an &7Aluminum Drill&r. The following quests follow processing down &0Crude Oil&r into other &6usable byproducts&r."]
 			id: "7DE19984A4DE57D4"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7BA43D7A930365B5"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "643EF1EA4500924E"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "15B53639A47EF4FC"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			subtitle: "Black Gold"
 			tasks: [{
 				id: "031F185843516416"
 				item: "modern_industrialization:crude_oil_bucket"
 				type: "item"
 			}]
-			x: 16.5d
-			y: 2.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7DE19984A4DE57D4"]
@@ -3842,11 +1722,6 @@
 				"3. Drag the &afluids&r from &dREI&r into the slots you'd like to lock."
 			]
 			id: "2704DC39313392E6"
-			rewards: [{
-				id: "6E610664B22EC3E8"
-				type: "xp"
-				xp: 10
-			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "0BE2D73B19E61C4E"
@@ -3854,8 +1729,8 @@
 				type: "checkmark"
 			}]
 			title: "Setting Distillery Recipes"
-			x: 16.5d
-			y: 3.5d
+			x: -2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7DE19984A4DE57D4"]
@@ -3867,11 +1742,6 @@
 				"I'd recommend focusing on &3Polyethylene&r and &cSulfuric Acid&r production for now."
 			]
 			id: "460D8C9E5BF1E1BE"
-			rewards: [{
-				id: "3DCB4D20D41B8782"
-				type: "xp"
-				xp: 10
-			}]
 			shape: "rsquare"
 			tasks: [{
 				id: "2251797FE307AA33"
@@ -3879,357 +1749,26 @@
 				type: "checkmark"
 			}]
 			title: "Petrochemistry"
-			x: 16.5d
-			y: 0.5d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
-			dependencies: ["7DE19984A4DE57D4"]
-			description: ["&a1000mb&r of &eCrude Oil&r will distill into &b500mb&r of &6Sulfuric Light Fuel&r. The &cSulfur&r will need to be removed before the fuel can be used."]
-			id: "359CB19747F5A3F3"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "02637E33E969599B"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "0A6D55912E691936"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "33FA9D54FE697131"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "037F95DD7000418A"
-				item: "modern_industrialization:sulfuric_light_fuel_bucket"
-				type: "item"
-			}]
-			x: 13.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7DE19984A4DE57D4"]
-			description: ["&a1000mb&r of &eCrude Oil&r will distill into &b200mb&r of &6Sulfuric Heavy Fuel&r. The &cSulfur&r will need to be removed before the fuel can be used."]
-			id: "2AB5F5DBA6ACA80E"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1422D3257F116ECE"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "263BA21437B5B252"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3BB1AD09364D6DE8"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "017B820258676358"
-				item: "modern_industrialization:sulfuric_heavy_fuel_bucket"
-				type: "item"
-			}]
-			x: 13.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["7DE19984A4DE57D4"]
-			description: ["&a1000mb&r of &eCrude Oil&r will distill into &b300mb&r of &6Sulfuric Naphtha&r. The &cSulfur&r will need to be removed before the fuel can be used."]
-			id: "30D48F97B508E120"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "3DA17EDDA6AE3DC0"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "2E6BA177E9FEF0F5"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7D98A44FDABADA7B"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "136BF6CFD7C4EBCB"
-				item: "modern_industrialization:sulfuric_naphtha_bucket"
-				type: "item"
-			}]
-			x: 13.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["359CB19747F5A3F3"]
-			description: ["&aLight Fuel&r can produce &e160 EU per 1 mB&r used in a &bDiesel Generator&r. It's better to either combine it into &6Diesel&r or continue with &3Steam-Cracking&r it."]
-			id: "2CFB5F9C3B6EA234"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "61EC298E390BF962"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "7D001CA1CCE4167D"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3002EA3C72B25458"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "076ED0F4854706A7"
-				item: "modern_industrialization:light_fuel_bucket"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2AB5F5DBA6ACA80E"]
-			description: ["&aHeavy Fuel&r can produce &e240 EU per 1 mB&r used in a &bDiesel Generator&r. It's not as good as &6Diesel&r, so it's either better to make &6Diesel&r or continue to &3Steam-Cracking&r process."]
-			id: "51A8CF3031F2765A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2623987EE5727F5A"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "359D5B9F16CFDE00"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "6938B419C3D1C4E9"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "2B0AEDF45DD8E71D"
-				item: "modern_industrialization:heavy_fuel_bucket"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["30D48F97B508E120"]
-			description: ["&aNaphtha&r can produce &e80 EU per 1 mB&r used in a &bDiesel Generator&r. It's an extremely &cawful fuel source&r for &bDiesel Generators&r. It can be produced into &eLubricant&r or continued down the chain by &3Steam-Cracking&r."]
-			id: "34533B2E5B614E28"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "017F0F7E19772C01"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "1C8FE398CF95708D"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "20445D0E0124BDE4"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "79973DB15E3C21A4"
-				item: "modern_industrialization:naphtha_bucket"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"51A8CF3031F2765A"
-				"2CFB5F9C3B6EA234"
-			]
-			description: ["&aDiesel&r can produce &e400 EU per 1 mB&r used in a &bDiesel Generator&r. By combining &6Light and Heavy Fuel&r you can create &aDiesel&r. &aDiesel&r is a decent fuel source to use in &aDiesel Generators&r and &aDiesel &rtools."]
-			id: "6AA4B054D3E9959D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6286C8FC09B535CC"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "498512DC1F83BAF5"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "639CD68F50473C72"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			subtitle: "Good for the environment!"
-			tasks: [{
-				id: "58F76E8165E23620"
-				item: "modern_industrialization:diesel_bucket"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["2CFB5F9C3B6EA234"]
-			description: ["Enhancing &6Light Fuel&r with &aSteam&r will make &eSteam-Cracked Light Fuel&r, which can be &2distilled into other byproducts&r."]
-			id: "11D42439BA0DAE33"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "333F17CD1B16B16A"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "40C8EE5017BC4444"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3EB04C00A4D3EA64"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "36EA8B31633A44F1"
-				item: "modern_industrialization:steam_cracked_light_fuel_bucket"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["51A8CF3031F2765A"]
-			description: ["Enhancing &6Heavy Fuel&r with &aSteam&r will make &eSteam-Cracked Heavy Fuel&r, which can be &2distilled into other byproducts&r."]
-			id: "740BFCE0D14F89D7"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6001C1B151578FE1"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "01992EB5056A9AC1"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "2903926411B10DCC"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "75C2CC01AE8CC5F9"
-				item: "modern_industrialization:steam_cracked_heavy_fuel_bucket"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["34533B2E5B614E28"]
-			description: ["Enhancing &6Naphtha&r with &aSteam&r will make &eSteam-Cracked Naphtha&r, which can be &2distilled into other byproducts&r."]
-			id: "0F866EE01E29B82D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1CAD79850B682EFA"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "1DE8ECDFE376B283"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4E2B9C669B5769FC"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "7337B0E890B66442"
-				item: "modern_industrialization:steam_cracked_naphtha_bucket"
-				type: "item"
-			}]
-			x: 9.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7A4F605834E3AE7B"]
+			dependencies: ["5E3E02943E6ED7A4"]
 			dependency_requirement: "one_completed"
 			description: ["&aToluene&r is used in the creation of &2Industrial TNT&r, which is necessary for the &dNuke&r and usage in the &dImplosion Compressor&r."]
 			id: "30A1AF7E38D6C40D"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4FF6C6E0F7233B65"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "53D52631C0FF8BDD"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5CC2163B7477EDF7"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "6968C43DC1D51BA5"
 				item: "modern_industrialization:toluene_bucket"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: -6.5d
+			y: -20.5d
 		}
 		{
-			dependencies: ["7A4F605834E3AE7B"]
+			dependencies: ["5E3E02943E6ED7A4"]
 			dependency_requirement: "one_completed"
 			description: [
 				"&aBenzene&r is important for creating &dEthylbenzene&r, a component in the creation of &eStyrene-Butadiene Rubber&r. It can also be used to make &2Nylon&r which can make more &3String&r from &3String.&r"
@@ -4237,131 +1776,63 @@
 				"As of &e1.1.0&r, &3Benzene&r can now be used as a burnable fuel in &6MI generators&r at &a100 EU/mb&r. It can be distilled from &2Wood Tar&r which is obtained from a &bPyrolyse Oven&r, making it an optimal power generation option."
 			]
 			id: "12C2A8F5ED305E72"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6F5C62BEF546DE18"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "60F08AEA75F18FF0"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "13E7C7F1647B96C6"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "42177B32BB92277D"
 				item: "modern_industrialization:benzene_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -2.5d
+			x: -4.0d
+			y: -20.5d
 		}
 		{
-			dependencies: ["7A4F605834E3AE7B"]
+			dependencies: ["5E3E02943E6ED7A4"]
 			dependency_requirement: "one_completed"
 			description: ["&aAcetylene&r is used in the production of &bPolyvinyl Chloride&r."]
 			id: "572CEB1A519C14E9"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "231B9866B068D28A"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "4EA2FE7F48E2E124"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "0B9ADCFF22DC918A"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "356001DC9314B486"
 				item: "modern_industrialization:acetylene_bucket"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.5d
+			x: -1.5d
+			y: -20.5d
 		}
 		{
-			dependencies: ["7A4F605834E3AE7B"]
+			dependencies: ["5E3E02943E6ED7A4"]
 			dependency_requirement: "one_completed"
 			description: ["&aMethane&r can be converted into &dAcetylene&r, which is important for making &2Vinyl Chloride&r, which itself gets made into &bPolyvinyl Chloride&r. It is primarily used in the production of &2Polytetrafluoroethylene&r and making &dAcetylene&r."]
 			id: "7B3CFD8EC0032C17"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0F488920B1377E6C"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "3E7DABF3BD01C34B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "239523A39006AE17"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "2F0731514A04C6D2"
 				item: "modern_industrialization:methane_bucket"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -2.5d
+			x: 1.0d
+			y: -20.5d
 		}
 		{
-			dependencies: ["7A4F605834E3AE7B"]
+			dependencies: ["5E3E02943E6ED7A4"]
 			dependency_requirement: "one_completed"
 			description: ["Important for the creation of &aStyrene-Butadiene Rubber&r."]
 			id: "3765635D66BF2766"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1D19E6508B8B476D"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "75698266885DB1B0"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "0BE9F8F13C7AD463"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "39CF2030A85649A1"
 				item: "modern_industrialization:butadiene_bucket"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -2.5d
+			x: 6.0d
+			y: -20.5d
 		}
 		{
-			dependencies: ["7A4F605834E3AE7B"]
+			dependencies: ["5E3E02943E6ED7A4"]
 			dependency_requirement: "one_completed"
 			description: [
 				"&aEthylbenzene&r is an important component in the creation of &3Styrene&r, which is used to make &2Styrene-Butadiene Rubber&r."
@@ -4369,32 +1840,15 @@
 				"For those of you who are observant, this is one process closer to &2Styrene-Butadiene Rubber&r than &eBenzene&r, making &6Naphtha&r a good source to produce &2Styrene-Butadiene Rubber&r."
 			]
 			id: "07D6884948E921AB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "055B8B372029E5BE"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "19B66F8FF2B71E32"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "7130A0697E9D94F3"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "123681550020687E"
 				item: "modern_industrialization:ethylbenzene_bucket"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -2.5d
+			x: 3.5d
+			y: -20.5d
 		}
 		{
 			dependencies: [
@@ -4403,264 +1857,85 @@
 			]
 			description: ["An important component in &aStyrene-Butadiene Rubber&r."]
 			id: "12A157C15F6BEC4B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6997491F5686A4D4"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "7B70F2509CEB72FF"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3359FE79C64ECCAF"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "5AD917FAA18AAE6D"
 				item: "modern_industrialization:styrene_butadiene_bucket"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -4.5d
+			x: 6.0d
+			y: -23.0d
 		}
 		{
 			dependencies: ["07D6884948E921AB"]
 			description: ["A component in &aStyrene-Butadiene&r."]
 			id: "239E90A6EAC47789"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "17473552408BF27B"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "43AD41A9BF1E5E80"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4EF72B3750760DEE"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "55ADF2E7A39EB197"
 				item: "modern_industrialization:styrene_bucket"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -4.5d
+			x: 3.5d
+			y: -23.0d
 		}
 		{
 			dependencies: ["572CEB1A519C14E9"]
 			description: ["An important component in &aPolyvinyl Chloride&r."]
 			id: "08161DE7D9265B43"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4F107B621C9544AB"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "21791773D3911E56"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "6EA0F76ACBC804DD"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "556523558BB4AA28"
 				item: "modern_industrialization:vinyl_chloride_bucket"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -4.5d
+			x: -1.5d
+			y: -23.0d
 		}
 		{
 			dependencies: ["12C2A8F5ED305E72"]
 			description: ["A component in &aNylon&r."]
 			id: "39FEC909B97A7449"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "31CD902824D2517C"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "18835949F050C107"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "000610D7250DA046"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "2D734E82C6EA7340"
 				item: "modern_industrialization:caprolactam_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -4.5d
+			x: -4.0d
+			y: -23.0d
 		}
 		{
 			dependencies: ["30A1AF7E38D6C40D"]
 			description: ["&aIndustrial TNT&r is a key component in the &eImplosion Compressor&r. Using &2Toulene&r and &3Nitrogen&r you can combine Sand and Flint to produce a controlled explosive."]
 			id: "1643F0311C19D935"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "596AFA01B75B20A1"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "6A11D52C2EF79508"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "311853B9CA25B945"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "3BA268B4F660CE7C"
 				item: "modern_industrialization:industrial_tnt"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -4.5d
-		}
-		{
-			dependencies: [
-				"0F866EE01E29B82D"
-				"11D42439BA0DAE33"
-				"740BFCE0D14F89D7"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"The following quests are all the useful fluids / gases you can make from distilling &3Steam-Cracked Fuels&r / &eNaphtha&r. "
-				""
-				"You don't need to make everything, but you will need to make &aPolyethylene&r for sure, and &bDiesel&r / &dNitro-Diesel&r are good for &2energy production&r."
-			]
-			id: "7A4F605834E3AE7B"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "412D96096C59A1B3"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "1A162F6605DC9C45"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4F42894D9EFE1B4D"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "693EA95A0ECB8813"
-				title: "Click to Acknowledge"
-				type: "checkmark"
-			}]
-			title: "Oil Byproducts"
-			x: 4.5d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"51A8CF3031F2765A"
-				"34533B2E5B614E28"
-				"2CFB5F9C3B6EA234"
-			]
-			dependency_requirement: "one_completed"
-			description: ["&eSulfuric Acid&r is a &3useful byproduct&r of oil refinement. &6Make sure to keep a hold of a decent amount&r."]
-			id: "44F035B6B7E03D9A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5CFFF4599090C2D6"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "407EAB66543E7105"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "1C11E26D932E69B2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "3E8B132DDCC755DA"
-				item: "modern_industrialization:sulfuric_acid_bucket"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 3.0d
+			x: -6.5d
+			y: -23.0d
 		}
 		{
 			dependencies: ["12A157C15F6BEC4B"]
 			description: ["A very versatile &drubber-like chemical&r. Can be used to make &ecables&r, &2RAM&r, and the best ratio for &3Rubber Sheets&r."]
 			id: "68988600213DC7AE"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "045B4A78C66BFADD"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "76F3E60C6F241461"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "3F95708E9FB8F6FD"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "539558B35C605C81"
 				item: "modern_industrialization:styrene_butadiene_rubber_bucket"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -6.5d
+			x: 6.0d
+			y: -25.5d
 		}
 		{
 			dependencies: ["08161DE7D9265B43"]
@@ -4670,376 +1945,251 @@
 				"You will need it particularly for &eProcessing Unit&r components."
 			]
 			id: "04672D52AF159537"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "463F677FA6D09BC3"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "205C696CFB87F180"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "14DF0ED9CD332463"
-					type: "xp"
-					xp: 10
-				}
-			]
 			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "4D51DC167559D466"
 				item: "modern_industrialization:polyvinyl_chloride_bucket"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -6.5d
+			x: -1.5d
+			y: -25.5d
 		}
 		{
 			dependencies: ["39FEC909B97A7449"]
 			description: ["Can be used to &dduplicate&r &eString.&r"]
 			id: "1676F0CDF65CC8FC"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5A5C19E1C4A1BACD"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "712BB988AB64E35F"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "33AC454458F7CA99"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "4DE70CB2B1798FE8"
 				item: "modern_industrialization:nylon_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -6.5d
+			x: -4.0d
+			y: -25.5d
 		}
 		{
-			dependencies: ["6C3EAE1F16E1048A"]
+			dependencies: ["240999FC6C4F7332"]
 			description: [
 				"The &aMV Steam Turbine&r is the next tier of steam turbines. It can produce up to &e128 EU/t&r by using &7Steam&r."
 				""
 				"Remember that you can only connect &eMV wires to MV tier generators and machines&r. If you plan to continue using your old machines without upgrading their hulls, you will need to invest in the &2MV to LV Transformer&r."
 			]
 			id: "1F81D2DD08A45493"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4BA8F3A811383243"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "06B8BACFD8FD4B0B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "65746A08B751C3D4"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			size: 1.5d
+			shape: "square"
+			size: 2.0d
 			tasks: [{
 				id: "28B7C7BB9C70E17F"
 				item: "modern_industrialization:mv_steam_turbine"
 				type: "item"
 			}]
-			x: 18.0d
-			y: -9.5d
+			x: -1.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["6C3EAE1F16E1048A"]
+			dependencies: ["240999FC6C4F7332"]
 			description: ["The &aMV Storage Unit&r is the next tier of energy storage. It can store up to &e768k EU&r, quite sizable!"]
 			id: "4FF00ADC29EF8FE2"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "1C0BB29A493DF2D7"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "27161DC4C9376365"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4A3D0D7B074B4FFC"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "54AB1CE274BEF537"
 				item: "modern_industrialization:mv_storage_unit"
 				type: "item"
 			}]
-			x: 17.5d
-			y: -5.0d
+			x: -3.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["6C3EAE1F16E1048A"]
+			dependencies: ["240999FC6C4F7332"]
 			description: ["The &aMV to LV Transformer&r will accept &eMV power and output LV power&r. You can use this to tier down your power to lower-tier machines and cables."]
 			id: "6184782C3B7C4508"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5895B496207C645A"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "2FC7D07E4DBB43F4"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "4620B12D486D3CFC"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "74FDAB6F5D5C8991"
 				item: "modern_industrialization:mv_lv_transformer"
 				type: "item"
 			}]
-			x: 17.5d
-			y: -6.0d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["6C3EAE1F16E1048A"]
-			description: [
-				"This upgraded version of the &bSolar Panel&r. It produces &e12 EU/t&r during the day and &e0 EU/t&r during the night."
-				""
-				"In general, solar is only going to be good if you have a &blarge quantity of panels&r. Or you could use it in &dsmall scale automations&r that don't need much power, up to you."
-			]
-			id: "51D23E71289780DE"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "197A4F5F65D37838"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "254551FC3F74E66C"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "1C7AE0675F769644"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
-			tasks: [{
-				id: "5C6E3372AE898E88"
-				item: "techreborn:advanced_solar_panel"
-				type: "item"
-			}]
-			x: 17.5d
-			y: -8.0d
-		}
-		{
-			dependencies: ["6C3EAE1F16E1048A"]
+			dependencies: ["240999FC6C4F7332"]
 			description: [
 				"The &aDiesel Generator&r can burn various kinds of fuel to generate EU. You can check &dREI&r for how much EU each fuel produces. The &aDiesel Generator&r will produce up to 256 EU/t and will only connect to MV cables."
 				""
 				"&aDiesel Generators&r will only use fuel when they need to, but if you need a constant supply of energy, you can put liquid fuels in the &bLarge Steam Boiler&r instead of items. A fully heated &bLarge Steam Boiler&r will roughly produce twice the amount of energy a &aDiesel Generator&r would produce using the same quantity of fuel."
 			]
 			id: "7910E966A571DFCC"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "691C23856C7B30F4"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "06C6B1D06353358B"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "57CC1FC27BA076B2"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "rsquare"
+			shape: "square"
 			tasks: [{
 				id: "37056D02DEB74FEA"
 				item: "modern_industrialization:diesel_generator"
 				type: "item"
 			}]
-			x: 18.5d
-			y: -5.5d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["6C3EAE1F16E1048A"]
-			description: [
-				"The &eTechReborn&r &bThermal Generator&r can be used to generate power with &clava&r. Each bucket of &clava&r will generate a total of &a60k E&r at &d16 E/t&r."
-				""
-				"Not the best method, but if you can automate &clava&r, it can provide a useful energy generation."
-			]
-			id: "7051134E3D2E48BD"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "648E7588B0967B44"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "2AF2C38745361965"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "52319C6802594413"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "580E9644413BA9AC"
-				item: "techreborn:thermal_generator"
-				type: "item"
-			}]
-			x: 17.5d
-			y: -7.0d
-		}
-		{
-			dependencies: ["6C3EAE1F16E1048A"]
+			dependencies: ["240999FC6C4F7332"]
 			description: [
 				"The &aBasic Wireless Block Charger&r will take in power and &2distribute it wirelessly&r to any &dpower-accepting block&r in a &e5x5x5&r around it. "
 				""
 				"It's transfer rate is &664 EU/t&r. "
 			]
 			id: "7814F3E84AEBBD9F"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "19322FEF3453DA1D"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "2B74BA9F14DF7F89"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "53FCA3D37A34508F"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "72C2E21B544BA1DE"
 				item: "wirelesschargers:basic_wireless_block_charger"
 				type: "item"
 			}]
-			x: 18.5d
-			y: -7.5d
+			x: -2.5d
+			y: 0.5d
 		}
 		{
-			dependencies: ["6C3EAE1F16E1048A"]
+			dependencies: ["240999FC6C4F7332"]
 			description: [
 				"The &aBasic Wireless Player Charger&r will take in power and &2distribute it wirelessly&r to any &dpower-accepting item&r in a players inventory in a &e11x11x11&r area around it. "
 				""
 				"It's transfer rate is &6256 EU/t&r. "
 			]
 			id: "285C8C533CBF4A21"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2F6D7A0BFC9A88C3"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "284C2F04165C296A"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "34D2DDB22E1A7D44"
-					type: "xp"
-					xp: 10
-				}
-			]
 			tasks: [{
 				id: "6E7CE81231F2F6C4"
 				item: "wirelesschargers:basic_wireless_player_charger"
 				type: "item"
 			}]
-			x: 18.5d
-			y: -6.5d
+			x: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
 				"302958D57C6A10C7"
 				"43338129769822A8"
-				"107DB1172932C668"
 			]
-			description: [
-				"With your &aAdvanced Machine Casings&r, you can now create &bAdvanced Machine Hulls&r. These will be useful to access more advanced machines, as well as an essential part of the &eElectric Quarry&r and &6Oil Rig&r."
-				""
-				"You can place &bAdvanced Machine Hulls&r in existing machines &2to change their power tier&r. This &cdoes not&r make them process recipes faster, but does allow them to &dconnect to higher tier cables&r."
-				""
-				"If you upgrade a machine's hull, make sure to &eupgrade the corresponding power connection&r! &dLV wires won't connect to MV machines&r!"
-			]
-			id: "6C3EAE1F16E1048A"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "44F783D6F07B956B"
-					type: "random"
-				}
-				{
-					count: 5
-					id: "70AB6B7CA5D46440"
-					item: "kubejs:coin_rare"
-					type: "item"
-				}
-				{
-					id: "5AF71B0E1E31C2BB"
-					type: "xp"
-					xp: 10
-				}
-			]
-			shape: "square"
-			size: 2.0d
+			id: "240999FC6C4F7332"
+			shape: "hexagon"
+			size: 3.0d
 			subtitle: "Welcome to MV"
 			tasks: [{
-				id: "29A86A47A2F2A4DF"
+				id: "15353D78429E56DB"
 				item: "modern_industrialization:advanced_machine_hull"
 				type: "item"
 			}]
-			x: 23.5d
-			y: -7.5d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DE19984A4DE57D4"]
+			id: "55F27526F33C02AB"
+			size: 2.0d
+			tasks: [
+				{
+					id: "2285DB956B159157"
+					item: "modern_industrialization:sulfuric_light_fuel_bucket"
+					type: "item"
+				}
+				{
+					id: "755E9CC51AD3E269"
+					item: "modern_industrialization:sulfuric_heavy_fuel_bucket"
+					type: "item"
+				}
+				{
+					id: "7D41FAF120F9015C"
+					item: "modern_industrialization:sulfuric_naphtha_bucket"
+					type: "item"
+				}
+			]
+			title: "Sulfuric Fuels"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["55F27526F33C02AB"]
+			id: "1F6B77CAB59C3C87"
+			size: 2.0d
+			tasks: [
+				{
+					id: "7B3B1DC12A0F1F9F"
+					item: "modern_industrialization:light_fuel_bucket"
+					type: "item"
+				}
+				{
+					id: "3FD68DBF4B86BD91"
+					item: "modern_industrialization:heavy_fuel_bucket"
+					type: "item"
+				}
+				{
+					id: "18EC65A699932309"
+					item: "modern_industrialization:naphtha_bucket"
+					type: "item"
+				}
+			]
+			title: "Raw Fuels"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1F6B77CAB59C3C87"]
+			id: "250CC052937CED51"
+			size: 2.0d
+			tasks: [{
+				id: "5B4C3670BA2E37D1"
+				item: "modern_industrialization:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1F6B77CAB59C3C87"]
+			id: "27FDC8C52784E0CD"
+			size: 2.0d
+			tasks: [
+				{
+					id: "39A83B65E3134E44"
+					item: "modern_industrialization:steam_cracked_light_fuel_bucket"
+					type: "item"
+				}
+				{
+					id: "43791C2BFA964765"
+					item: "modern_industrialization:steam_cracked_heavy_fuel_bucket"
+					type: "item"
+				}
+				{
+					id: "05516D18A0819B1C"
+					item: "modern_industrialization:steam_cracked_naphtha_bucket"
+					type: "item"
+				}
+			]
+			title: "Steam Cracking"
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["1F6B77CAB59C3C87"]
+			id: "36B078F61BE25A5D"
+			size: 2.0d
+			tasks: [{
+				id: "0215E5363E46362C"
+				item: "modern_industrialization:diesel_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["27FDC8C52784E0CD"]
+			id: "5E3E02943E6ED7A4"
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "191819F73AC97A45"
+				title: "Oil Byproducts"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -16.5d
 		}
 	]
 	subtitle: ["Moving on up"]

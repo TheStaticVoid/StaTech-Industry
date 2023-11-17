@@ -82,7 +82,7 @@
 				item: "modern_industrialization:lv_steam_turbine"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.0d
 			y: 6.0d
 		}
 		{
@@ -142,7 +142,7 @@
 				type: "item"
 			}]
 			title: "Diesel Power"
-			x: 0.0d
+			x: 1.0d
 			y: 6.0d
 		}
 		{
@@ -272,8 +272,8 @@
 				item: "modern_industrialization:electric_water_pump"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -2.5d
+			x: -3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["473C1DE557D3E9C0"]
@@ -298,8 +298,8 @@
 				item: "modern_industrialization:electric_compressor"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: -4.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["03D51B7E40C3A7CD"]
@@ -682,7 +682,6 @@
 		{
 			dependencies: [
 				"07BB464FF3F5EFF2"
-				"56DA05EBA49BC57F"
 				"48317EF53F769C1B"
 				"1DC734F9B44FDB9A"
 				"6765B4B8D870CDA0"
@@ -716,23 +715,6 @@
 			title: "LV Cables"
 			x: 0.0d
 			y: 9.0d
-		}
-		{
-			dependencies: ["11C4254DF67951A9"]
-			description: [
-				"The &eTechReborn&r &bWater Mill&r is a passive generator that, when placed in water, will generate &d0.1 E/t&r per side exposed to water, up to &d0.4 E/t&r. "
-				""
-				"This is &cextremely slow&r, but &acompletely free&r power generation."
-			]
-			id: "56DA05EBA49BC57F"
-			size: 2.0d
-			tasks: [{
-				id: "786AD5A864AE19A0"
-				item: "techreborn:water_mill"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 6.0d
 		}
 		{
 			dependencies: ["2ACF26FC95B88B16"]
@@ -966,7 +948,7 @@
 				}
 			]
 			title: "Alternator \\& Motor"
-			x: -4.0d
+			x: -3.0d
 			y: 6.0d
 		}
 		{
@@ -1036,6 +1018,7 @@
 			y: -9.5d
 		}
 		{
+			dependencies: ["47AC1C475DEE0FE4"]
 			description: [
 				"&dFluix Crystals&r can be created in a &aMixer&r. You will need &2Charged Certus Quartz&r, which can be created in an &eElectrolyzer&r."
 				""
@@ -1207,10 +1190,7 @@
 			y: -15.0d
 		}
 		{
-			dependencies: [
-				"01D12D790B2DE5F5"
-				"2BB495CFC3E6D6C8"
-			]
+			dependencies: ["2BB495CFC3E6D6C8"]
 			description: [
 				"While technically not required to setup your first &eAE2 network&r, you will really want to craft at least one of these for now. "
 				""
@@ -2204,8 +2184,164 @@
 				item: "solar_panels:tier_1_solar_panel"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 3.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["106620634F331F30"]
+			description: [
+				"One of the first things you can now access with the &6Electric Compressor&r is the ability to process &bDiamonds&r and &aEmeralds&r into plates."
+				""
+				"Finally, you can access that &3new tier of chest / backpack&r."
+			]
+			id: "7DE1DE92C45C81BB"
+			shape: "square"
+			tasks: [
+				{
+					count: 4L
+					id: "690F985C0A95E8FA"
+					item: "modern_industrialization:diamond_plate"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6502CFA80273BB14"
+					item: "modern_industrialization:emerald_plate"
+					type: "item"
+				}
+			]
+			title: "Diamond \\& Emerald Plates"
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7DE1DE92C45C81BB"]
+			description: ["With this new piece of bling, you will be able to carry &d 72 item stacks&r."]
+			id: "1B19E2916336F297"
+			shape: "square"
+			tasks: [{
+				id: "3217AE8712B2A04F"
+				item: "inmis:bejeweled_backpack"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7DE1DE92C45C81BB"]
+			description: ["The &bDiamond Chest&r is a long awaited upgrade to your storage chests. It allows you to store &e72 stacks of items&r."]
+			id: "60B30C4A8471450A"
+			shape: "square"
+			subtitle: "A long awaited storage upgrade"
+			tasks: [{
+				id: "2B64C0D215DBA425"
+				item: "ironchests:diamond_chest"
+				type: "item"
+			}]
+			title: "Diamond Chest"
+			x: -8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["60B30C4A8471450A"]
+			description: ["The &dCrystal Chest&r has the same storage as the &bDiamond Chest&r, just a little nicer looking and slightly transparent."]
+			id: "2849D0C7E2EE7246"
+			shape: "square"
+			tasks: [{
+				id: "2E8E116DE2E3160A"
+				item: "ironchests:crystal_chest"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["60B30C4A8471450A"]
+			description: ["The &dObsidian Chest&r has the same storage as the &bDiamond Chest&r."]
+			id: "37A888209FE71492"
+			shape: "square"
+			tasks: [{
+				id: "6C1770FAE9E1743C"
+				item: "ironchests:obsidian_chest"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["60B30C4A8471450A"]
+			description: ["The &cNetherite Chest&r is the ultimate upgrade for your chest, boasting a capacity of &e91 item stacks&r."]
+			id: "58C2A1D3B3129D29"
+			shape: "square"
+			tasks: [{
+				id: "6A144F07449BAF36"
+				item: "ironchests:netherite_chest"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7DE1DE92C45C81BB"]
+			description: ["The &bDiamond Dolly&d is an upgrade to the &7Iron Dolly&r that has no durability. This means you can move your chests around whenever you need, without having to worry about &6breaking your tool&r."]
+			id: "0982F8D1C5C4DBF9"
+			shape: "square"
+			tasks: [{
+				id: "09F8745DF65B28A4"
+				item: "ironchests:diamond_dolly"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7DE1DE92C45C81BB"]
+			description: ["The &bDiamond Barrel&r is a long awaited upgrade to your storage barrels. It allows you to store &e72 stacks of items&r."]
+			id: "4BFCCF11AC1E8126"
+			subtitle: "A long awaited storage upgrade v2"
+			tasks: [{
+				id: "47C422ED21E96D51"
+				item: "ironchests:diamond_barrel"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BFCCF11AC1E8126"]
+			description: ["The &dCrystal Barrel&r has the same storage as the &bDiamond Barrel&r, except it shows the contents inside of it."]
+			id: "310A10B1ADB099FB"
+			tasks: [{
+				id: "6A2A029F3C46C6B4"
+				item: "ironchests:crystal_barrel"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BFCCF11AC1E8126"]
+			description: ["The &dObsidian Barrel&r has the same storage as the &bDiamond Barrel&r."]
+			id: "3D53CF98BD92C153"
+			tasks: [{
+				id: "04652A1CBB51A017"
+				item: "ironchests:obsidian_barrel"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4BFCCF11AC1E8126"]
+			description: ["The &cNetherite Barrel&r is the ultimate upgrade for your barrel, boasting a capacity of &e91 item stacks&r."]
+			id: "540729B016A2B0FA"
+			tasks: [{
+				id: "266776915F5DE18B"
+				item: "ironchests:netherite_barrel"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 1.0d
 		}
 	]
 	subtitle: ["Cable Spaghetti"]
