@@ -6,6 +6,63 @@
 ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
 
+    // -- BERYLLIUM SULFATE -- //
+    chemicalReactor(
+        event,
+        st('beryllium_sulfate'),
+        16,
+        400,
+        [ { amount: 1, item: mi('beryl_dust') } ],
+        null,
+        [ { amount: 500, fluid: mi('sulfuric_acid') } ],
+        [ { amount: 750, fluid: mi('beryllium_sulfate') } ]
+    );
+
+    // -- BERYLLIUM HYDROXIDE -- //
+    chemicalReactor(
+        event,
+        st('beryllium_hydroxide'),
+        24,
+        300,
+        null,
+        null,
+        [
+            { amount: 500, fluid: mi('beryllium_sulfate') },
+            { amount: 250, fluid: mi('ammonia') }
+        ],
+        [ { amount: 750, fluid: mi('beryllium_hydroxide') } ]
+    );
+
+    // -- BERYLLIUM CHLORIDE -- //
+    chemicalReactor(
+        event,
+        st('beryllium_chloride'),
+        32,
+        200,
+        [ { amount: 2, item: mi('carbon_dust') } ],
+        null,
+        [
+            { amount: 500, fluid: mi('beryllium_hydroxide') },
+            { amount: 150, fluid: mi('chlorine') }
+        ],
+        [ { amount: 1000, fluid: mi('beryllium_chloride') } ]
+    );
+
+    // -- AMMONIA -- //
+    chemicalReactor(
+        event,
+        st('ammonia'),
+        8,
+        200,
+        null,
+        null,
+        [ 
+            { amount: 250, fluid: mi('nitrogen') },
+            { amount: 750, fluid: mi('hydrogen') }
+        ],
+        [ { amount: 1000, fluid: mi('ammonia') } ]
+    );
+
     // -- PHANTOM MEMBRANE -- //
     chemicalReactor(
         event,

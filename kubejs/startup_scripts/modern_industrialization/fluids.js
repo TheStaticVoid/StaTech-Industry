@@ -4,6 +4,46 @@
 // -----------------------------------------
 
 MIRegistrationEvents.registerFluids(e => {
+    // -- AMMONIA -- //
+    e.register(
+        'Ammonia',
+        'ammonia',
+        0xbadbd9,
+        'water',
+        true,
+        'low'
+    );
+
+    // -- BERYLLIUM SULFATE -- //
+    e.register(
+        'Beryllium Sulfate',
+        'beryllium_sulfate',
+        0x236e69,
+        'water',
+        false,
+        'medium'
+    );
+
+    // -- BERYLLIUM HYDROXIDE -- //
+    e.register(
+        'Beryllium Hydroxide',
+        'beryllium_hydroxide',
+        0x3fa4ca,
+        'water',
+        false,
+        'high'
+    );
+
+    // -- BERYLLIUM CHLORIDE -- //
+    e.register(
+        'Beryllium Chloride',
+        'beryllium_chloride',
+        0x375bc9,
+        'water',
+        false,
+        'medium'
+    );
+
     // -- IODINE -- //
     e.register(
         'Iodine',

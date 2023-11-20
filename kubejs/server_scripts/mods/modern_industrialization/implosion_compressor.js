@@ -8,7 +8,8 @@ ServerEvents.recipes(event => {
 
     // -- IMPLOSION COMPRESSOR REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
-        mi('electric_age/component/implosion_compressor/singularity')
+        mi('electric_age/component/implosion_compressor/singularity'),
+        mi('materials/implosion_compressor/beryllium')
     ]
     REMOVED_RECIPE.forEach(id => event.remove({id: id}));
 

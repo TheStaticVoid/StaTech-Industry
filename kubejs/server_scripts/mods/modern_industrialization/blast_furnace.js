@@ -15,6 +15,18 @@ ServerEvents.recipes(event => {
     ];
     REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
+    // -- BERYLLIUM HOT INGOT -- //
+    blastFurnace(
+        event,
+        st('beryllium_hot_ingot'),
+        96,
+        300,
+        [ { amount: 1, item: mi('beryllium_dust') } ], 
+        [ { amount: 1, item: mi('beryllium_hot_ingot') } ],
+        null,
+        [ { amount: 150, fluid: mi('oxygen') } ]
+    );
+
     // -- NETHER STAR -> MOLTEN NETHER STAR -- //
     blastFurnace(
         event,

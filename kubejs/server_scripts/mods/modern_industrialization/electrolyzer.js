@@ -8,9 +8,22 @@ ServerEvents.recipes(event => {
 
     // -- ELECTROLYZER REMOVED RECIPES -- //
     const DELETED_RECIPE = [
-        mi('materials/electrolyzer/salt_electrolysis')
+        mi('materials/electrolyzer/salt_electrolysis'),
+        mi('materials/electrolyzer/beryllium_dust')
     ];
     DELETED_RECIPE.forEach(id => event.remove({id: id}));
+
+    // -- BERYLLIUM DUST -- //
+    electrolyzer(
+        event,
+        st('beryllium_dust'),
+        32,
+        400,
+        null,
+        [ { amount: 4, item: mi('beryllium_dust') } ],
+        [ { amount: 500, fluid: mi('beryllium_chloride') } ],
+        [ { amount: 100, fluid: mi('chlorine') } ]
+    );
 
     // -- BRINE -- //
     electrolyzer(

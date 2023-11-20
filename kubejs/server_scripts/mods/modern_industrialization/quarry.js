@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
         ]
     );
 
-    // -- STEEL -- //
+    // -- STEEL DRILL -- //
     quarry(
         event,
         st('steel'),
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
         ]
     );
 
-    // -- STAINLESS STEEL -- //
+    // -- STAINLESS STEEL DRILL -- //
     quarry(
         event,
         st('stainless_steel'),
@@ -117,6 +117,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('tungsten_ore'), probability: 0.20 },
             { amount: 1, item: mi('mozanite_ore'), probability: 0.25 },
             { amount: 1, item: mi('platinum_ore'), probability: 0.12 },
+            { amount: 1, item: mi('beryl_ore'), probability: 0.12 },
             { amount: 1, item: tr('sheldonite_ore'), probability: 0.12 },
             { amount: 1, item: tr('peridot_ore'), probability: 0.25 },
             { amount: 1, item: tr('sodalite_ore'), probability: 0.25 }

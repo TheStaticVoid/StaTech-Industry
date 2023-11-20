@@ -4,6 +4,19 @@
 // -----------------------------------------
 
 MIMaterialEvents.addMaterials(e => {
+
+    e.createMaterial('Beryl', 'beryl', 0x0e635d,
+        builder => {
+            builder
+                .addParts('tiny_dust', 'dust')
+                .ore({
+                    'generate': false,
+                    'ore_set': 'iron'
+                })
+                .rawMetal('copper', true).rawMetal('iron', false)
+                .defaultRecipes();
+        });
+
     e.createMaterial('Phosphorous', 'phosphorous', 0x513408,
         builder => {
             builder
@@ -98,11 +111,6 @@ MIMaterialEvents.addMaterials(e => {
                 })
                 .rawMetal('copper', true).rawMetal('copper', false)
                 .defaultRecipes();
-        });
-
-        e.createMaterial('test', 'test', 0x270ed1,
-        builder => {
-            builder.addParts('dust')
         });
 
     e.createMaterial('Osmium', 'osmium', 0xcfcfb5,
@@ -244,4 +252,8 @@ MIMaterialEvents.addMaterials(e => {
                 .block('iron')
                 .defaultRecipes();
         });
+});
+
+MIMaterialEvents.modifyMaterial('beryllium', event => {
+    event.builder.addParts('hot_ingot')
 });
