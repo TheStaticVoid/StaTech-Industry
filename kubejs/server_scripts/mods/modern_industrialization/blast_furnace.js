@@ -15,6 +15,17 @@ ServerEvents.recipes(event => {
     ];
     REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
+    // -- BORON DUST -- //
+    blastFurnace(
+        event,
+        st('boron_dust'),
+        64,
+        400,
+        [ { amount: 1, item: mi('raw_boron') } ],
+        [ { amount: 1, item: mi('boron_dust') } ],
+        [ { amount: 100, fluid: mi('hydrogen') } ]
+    );
+
     // -- BERYLLIUM HOT INGOT -- //
     blastFurnace(
         event,

@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         24,
         300,
         null,
-        null,
+        [ { amount: 2, item: mi('sulfur_dust') } ],
         [
             { amount: 500, fluid: mi('beryllium_sulfate') },
             { amount: 250, fluid: mi('ammonia') }
@@ -45,7 +45,10 @@ ServerEvents.recipes(event => {
             { amount: 500, fluid: mi('beryllium_hydroxide') },
             { amount: 150, fluid: mi('chlorine') }
         ],
-        [ { amount: 1000, fluid: mi('beryllium_chloride') } ]
+        [ 
+            { amount: 1000, fluid: mi('beryllium_chloride') },
+            { amount: 100, fluid: mi('ammonia') }
+        ]
     );
 
     // -- AMMONIA -- //

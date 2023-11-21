@@ -140,6 +140,19 @@ ServerEvents.recipes(event => {
         }
     });
 
+    // -- RAW BORON -- //
+    macerator(
+        event,
+        st('raw_boron'),
+        powerConstant,
+        200 * timeMultiplier,
+        [ { amount: 1 * amountMultiplier, tag: 'c:boron_ores' } ],
+        [ 
+            { amount: 1 * amountMultiplier, item: mi('boron_dust') },
+            { amount: 1 * amountMultiplier, item: mi('boron_dust'), probability: 0.5 }
+        ]
+    );
+
     // -- ZINC DRILL HEAD -- //
     lsm(
         event,

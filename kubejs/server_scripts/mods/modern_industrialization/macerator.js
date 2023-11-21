@@ -6,6 +6,19 @@
 ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/macerator/${id}`;
 
+    // -- RAW BORON -- //
+    macerator(
+        event,
+        st('raw_boron'),
+        8,
+        200
+        [ { amount: 1, tag: 'c:boron_ores' } ],
+        [ 
+            { amount: 1, item: mi('boron_dust') },
+            { amount: 1, item: mi('boron_dust'), probability: 0.5 }
+        ]
+    );
+
     // -- PYRITE DUST -- //
     macerator(
         event,

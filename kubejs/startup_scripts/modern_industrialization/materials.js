@@ -154,13 +154,12 @@ MIMaterialEvents.addMaterials(e => {
     e.createMaterial('Boron', 'boron', 0xe6eef4,
         builder => {
             builder
-                .addParts('dust', 'tiny_dust', 'crushed_dust')
+                .addParts('dust')
                 .ore({
                     'generate': false,
                     'ore_set': 'iron'
                 })
-                .rawMetal('iron', true).rawMetal('copper', false)
-                .defaultRecipes();
+                .rawMetal('iron', true).rawMetal('copper', false);
         });
 
     e.createMaterial('Desh', 'desh', 0xe9ba5d,
