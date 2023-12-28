@@ -71,4 +71,5 @@ CapeJS.addCapes(e => {
     e.register("5dc25de3-6ae7-4b62-a897-9e7d5aac1589", "pack_completionist");           // Troinen
     e.register("9618faf4-9759-4ab6-ba84-efec7fee6fb5", "pack_completionist");           // kpvw (Water Face)
 	e.register("61b883c4-06d2-4e38-a926-e2c03e7fdea6", "pack_completionist");			// sreny1 (sreny)
+    e.register("192977a2-f397-458c-84d4-dcec835f7c50", "pack_completionist");		// Geckuss (Heinous)
 });
