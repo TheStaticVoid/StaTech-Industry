@@ -14,6 +14,7 @@ ServerEvents.recipes(e => {
     let ae = (id) => `ae2:${id}`;
     let fd = (id) => `farmersdelight:${id}`;
     let md = (id) => `moderndynamics:${id}`;
+    let kb = (id) => `kibe:${id}`;
 
     // -- ASSEMBLER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [    
@@ -47,6 +48,38 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe).id(id);
     }
+
+    // -- MK1 KIBE BASALT GENERATOR -- //
+    assembler(
+        kb('basalt_generator_mk1_assembler'),
+        8,
+        200,
+        [
+            { amount: 1, item: mc('chest') },
+            { amount: 1, item: mc('iron_block') },
+            { amount: 5, item: mc('soul_soil') },
+            { amount: 1, item: mc('blue_ice') }
+        ],
+        [ { amount: 1, item: kb('basalt_generator_mk1') } ],
+        [ { amount: 1000, fluid: mc('lava') } ]
+    );
+
+    // -- MK1 KIBE COBBLESETONE GENERATOR -- //
+    assembler(
+        kb('cobblestone_generator_mk1_assembler'),
+        8,
+        200,
+        [
+            { amount: 1, item: mc('chest') },
+            { amount: 1, item: mc('iron_block') },
+            { amount: 5, item: mc('cobblestone') }
+        ],
+        [ { amount: 1, item: kb('cobblestone_generator_mk1') } ],
+        [
+            { amount: 1000, fluid: mc('lava') },
+            { amount: 1000, fluid: mc('water') }
+        ]
+    );
 
     // -- SODIUM BATTERY -- //
     assembler(
