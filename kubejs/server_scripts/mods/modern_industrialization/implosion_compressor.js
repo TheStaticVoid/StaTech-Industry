@@ -12,7 +12,8 @@ ServerEvents.recipes(e => {
 
     // -- IMPLOSION COMPRESSOR REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
-        mi('electric_age/component/implosion_compressor/singularity')
+        mi('electric_age/component/implosion_compressor/singularity'),
+        mi('vanilla_recipes/implosion_compressor/nether_star')
     ]
     REMOVED_RECIPE.forEach(id => e.remove({id: id}));
 
