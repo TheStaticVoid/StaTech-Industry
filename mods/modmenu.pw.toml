@@ -1,13 +1,13 @@
 name = "Mod Menu"
-filename = "modmenu-4.2.0-beta.2.jar"
+filename = "modmenu-7.2.2.jar"
 side = "client"
 
 [download]
+url = "https://cdn.modrinth.com/data/mOgUt4GM/versions/lEkperf6/modmenu-7.2.2.jar"
 hash-format = "sha1"
-hash = "6e627ee1b31f5be89e14c85e888f47463d8da9c2"
-mode = "metadata:curseforge"
+hash = "099c68feeb74887cbbbd8ce9a27c6123804a2c5a"
 
 [update]
-[update.curseforge]
-file-id = 4401051
-project-id = 308702
+[update.modrinth]
+mod-id = "mOgUt4GM"
+version = "lEkperf6"
