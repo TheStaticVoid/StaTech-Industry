@@ -71,4 +71,8 @@ CapeJS.addCapes(e => {
     e.register("5dc25de3-6ae7-4b62-a897-9e7d5aac1589", "pack_completionist");           // Troinen
     e.register("9618faf4-9759-4ab6-ba84-efec7fee6fb5", "pack_completionist");           // kpvw (Water Face)
 	e.register("61b883c4-06d2-4e38-a926-e2c03e7fdea6", "pack_completionist");			// sreny1 (sreny)
+    e.register("b53f5bf3-dcd1-4ace-accf-5af46a14199e", "pack_completionist");           // niko (wizzahd)
+    e.register("fe61819a-2333-4611-ae43-c599ab46c290", "pack_completionist");           // LordTet
+    e.register("b5e220e6-175c-46bb-b9ae-33e4dfa5d3f4", "pack_completionist");           // Mokilicious (moki)
+    e.register("2bd6d8e1-bb7d-4ef6-8ca8-78b0a0c582b3", "pack_completionist");           // ZootronPrime (ZootronJustin)
 });
