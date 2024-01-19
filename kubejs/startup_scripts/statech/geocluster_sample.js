@@ -28,10 +28,10 @@ StartupEvents.registry('block', e => {
 });
 
 StartupEvents.registry('item', e => {
-    e.createCustom('desh_ore_sample', () => new $BlockItem(DeshSampleBlock.get(), new $IProperties().tab($Geocluster.GROUP)));
-    e.createCustom('ostrum_ore_sample', () => new $BlockItem(OstrumSampleBlock.get(), new $IProperties().tab($Geocluster.GROUP)));
-    e.createCustom('calorite_ore_sample', () => new $BlockItem(CaloriteSampleBlock.get(), new $IProperties().tab($Geocluster.GROUP)));
-    e.createCustom('ice_ore_sample', () => new $BlockItem(IceSampleBlock.get(), new $IProperties().tab($Geocluster.GROUP)));
-    e.createCustom('cheese_ore_sample', () => new $BlockItem(CheeseSampleBlock.get(), new $IProperties().tab($Geocluster.GROUP)));
-    e.createCustom('pyrite_ore_sample', () => new $BlockItem(PyriteSampleBlock.get(), new $IProperties().tab($Geocluster.GROUP)));
+    e.createCustom('desh_ore_sample', () => new $BlockItem(DeshSampleBlock.get(), new $IProperties()));
+    e.createCustom('ostrum_ore_sample', () => new $BlockItem(OstrumSampleBlock.get(), new $IProperties()));
+    e.createCustom('calorite_ore_sample', () => new $BlockItem(CaloriteSampleBlock.get(), new $IProperties()));
+    e.createCustom('ice_ore_sample', () => new $BlockItem(IceSampleBlock.get(), new $IProperties()));
+    e.createCustom('cheese_ore_sample', () => new $BlockItem(CheeseSampleBlock.get(), new $IProperties()));
+    e.createCustom('pyrite_ore_sample', () => new $BlockItem(PyriteSampleBlock.get(), new $IProperties()));
 });
