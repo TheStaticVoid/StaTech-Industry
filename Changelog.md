@@ -1,5 +1,8 @@
 # StaTech Industry 1.2.0 Changelog:
 
+Fabric version changed to 0.15.6
+Minecraft version changed to 1.20.1
+
 ## Mods added:
 - [AntiBlocksReChiseled](https://www.curseforge.com/minecraft/mc-mods/antiblocksrechiseled) - The antiblocks you remember
 - [Basic AIOTs](https://www.curseforge.com/minecraft/mc-mods/basic-aiots) - Clean up your hotbar with these helpful all around tools
