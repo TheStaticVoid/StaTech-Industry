@@ -68,7 +68,6 @@ This is primarily a maintenance patch as we wait for 1.21 and the NeoForge jump 
 - [Skin Layers 3D](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d) - 1.5.2 -> 1.6.2
 - [Structory](https://www.curseforge.com/minecraft/mc-mods/structory) - 1.3 -> 1.3.1a
 - [Structory: Towers](https://www.curseforge.com/minecraft/mc-mods/structory-towers) - 1.0.1 -> 1.0.2
-- [Spectrum](https://www.curseforge.com/minecraft/mc-mods/spectrum) - 1.6.12 -> 1.7.6
 - [Spell Engine](https://www.curseforge.com/minecraft/mc-mods/spell-engine) - 0.9.25 -> 0.9.26
 - [Spellblades and Such](https://www.curseforge.com/minecraft/mc-mods/spellblade-next) - 1.0.27.5 -> 1.0.27.6
 - [Spice of Fabric](https://www.curseforge.com/minecraft/mc-mods/spice-of-fabric) - 1.6.1 -> 1.6.2
