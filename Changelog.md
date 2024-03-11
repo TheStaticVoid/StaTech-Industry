@@ -86,5 +86,8 @@ This is primarily a maintenance patch as we wait for 1.21 and the NeoForge jump 
 - [YUNG's API](https://www.curseforge.com/minecraft/mc-mods/yungs-api-fabric) - 3.8.9 -> 3.8.10
 - [YUNG's Better Mineshafts](https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-fabric) - 3.2.0 -> 3.2.1
 
+# Mods removed
+- [Memoryleakfix](https://www.curseforge.com/minecraft/mc-mods/memoryleakfix) - No longer updated on CF and licensing restricts repacking
+
 ## Other changes:
 Fabric Loader version 0.14.22 -> 0.15.7
