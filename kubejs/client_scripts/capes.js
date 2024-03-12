@@ -75,5 +75,5 @@ CapeJS.addCapes(e => {
     e.register("fe61819a-2333-4611-ae43-c599ab46c290", "pack_completionist");           // LordTet
     e.register("b5e220e6-175c-46bb-b9ae-33e4dfa5d3f4", "pack_completionist");           // Mokilicious (moki)
     e.register("2bd6d8e1-bb7d-4ef6-8ca8-78b0a0c582b3", "pack_completionist");           // ZootronPrime (ZootronJustin)
-    e.register("192977a2-f397-458c-84d4-dcec835f7c50", "pack_completionist");		// Geckuss (Heinous)
+    e.register("192977a2-f397-458c-84d4-dcec835f7c50", "pack_completionist");		    // Geckuss (Heinous)
 });

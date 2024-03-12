@@ -43,7 +43,7 @@ ServerEvents.recipes(e => {
             { amount: 16, item: cr('experience_nugget') }
         ],
         [ { amount: 500, fluid: mi('molten_enderium') } ],
-        [ { amount: 500, fluid: mi('impure_liquid_nether_star') } ]
+        [ { amount: 1250, fluid: mi('impure_liquid_nether_star') } ]
     );
 
     // -- DRAGON MODEL -- //

@@ -48,6 +48,250 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- PISTON -- //
+    assembler(
+        st('piston'),
+        8,
+        200,
+        [
+            { amount: 4, tag: 'c:stones' },
+            { amount: 3, tag: mc('wooden_slabs') },
+            { amount: 1, tag: 'c:iron_rods' },
+            { amount: 1, item: mc('redstone') }
+        ],
+        [ { amount: 1, item: mc('piston') } ]
+    );
+
+    // -- STICKY PISTON -- //
+    assembler(
+        st('sticky_piston'),
+        8,
+        20,
+        [
+            { amount: 1, item: mc('piston') },
+            { amount: 1, item: mc('slime_ball') }
+        ],
+        [ { amount: 1, item: mc('sticky_piston') } ]
+    );
+
+    // -- STICKY PISTON ALT -- //
+    assembler(
+        st('sticky_piston_alt'),
+        8,
+        20,
+        [ { amount: 1, item: mc('piston') } ],
+        [ { amount: 1, item: mc('sticky_piston') } ],
+        [ { amount: 10, fluid: mi('acrylic_glue') } ]
+    );
+
+    // -- ANNIHILATION CORE -- //
+    assembler(
+        st('annihilation_core'),
+        8,
+        200,
+        [
+            { amount: 1, item: mc('quartz') },
+            { amount: 1, item: ae('fluix_dust') },
+            { amount: 1, item: ae('logic_processor') }
+        ],
+        [ { amount: 2, item: ae('annihilation_core') } ]
+    );
+
+    // -- FORMATION CORE -- // 
+    assembler(
+        st('formation_core'),
+        8,
+        200,
+        [
+            { amount: 1, tag: ae('all_certus_quartz') },
+            { amount: 1, item: ae('fluix_dust') },
+            { amount: 1, item: ae('logic_processor') }
+        ],
+        [ { amount: 2, item: ae('formation_core') } ]
+    );
+
+    // -- ME STORAGE BUS -- //
+    assembler(
+        st('storage_bus'),
+        8,
+        200,
+        [
+            { amount: 1, item: mc('sticky_piston') },
+            { amount: 1, tag: ae('interface') },
+            { amount: 1, item: mc('piston') }
+        ],
+        [ { amount: 1, item: ae('storage_bus') } ]
+    );
+
+    // -- ME IMPORT BUS -- //
+    assembler(
+        st('import_bus'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('aluminum_plate') },
+            { amount: 1, item: mc('sticky_piston') },
+            { amount: 1, item: ae('annihilation_core') }
+        ],
+        [ { amount: 1, item: ae('import_bus') } ]
+    );
+
+    // -- ME EXPORT BUS -- //
+    assembler(
+        st('export_bus'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('aluminum_plate') },
+            { amount: 1, item: mc('piston') },
+            { amount: 1, item: ae('formation_core') }
+        ],
+        [ { amount: 1, item: ae('export_bus') } ]
+    );
+
+    // -- SUPERCONDUCTOR -- //
+    assembler(
+        st('superconductor'),
+        8,
+        200,
+        [
+            { amount: 3, item: tr('helium_coolant_cell_60k') },
+            { amount: 3, item: tr('energy_flow_chip') },
+            { amount: 2, item: mi('tungsten_ingot') },
+            { amount: 1, item: mi('quantum_circuit') }
+        ],
+        [ { amount: 4, item: tr('superconductor') } ]
+    );
+
+    // -- HELIUM COOLANT CELL 60K -- //
+    assembler(
+        st('helium_coolant_cell_60k'),
+        8,
+        200,
+        [ { amount: 1, item: mi('tin_ingot') } ],
+        [ { amount: 1, item: tr('helium_coolant_cell_60k') } ],
+        [ { amount: 1000, fluid: mi('helium') } ]
+    );
+
+    // -- DIGITAL DISPLAY -- //
+    assembler(
+        st('digital_display'),
+        8,
+        200,
+        [ 
+            { amount: 4, item: mi('aluminum_plate') },
+            { amount: 3, item: mc('black_dye') },
+            { amount: 1, item: mc('glass_pane') },
+            { amount: 1, item: tr('advanced_circuit') }
+        ],
+        [ { amount: 1, item: tr('digital_display') } ]
+    );
+
+    // -- BASIC MACHINE FRAME -- // 
+    assembler(
+        st('basic_machine_frame'),
+        8,
+        200,
+        [ { amount: 8, item: tr('refined_iron_ingot') } ],
+        [ { amount: 1, item: tr('basic_machine_frame') } ]
+    );
+
+    // -- BASIC MACHINE FRAME ALT -- //
+    assembler(
+        st('basic_machine_frame_alt'),
+        8,
+        200,
+        [ { amount: 8, item: tr('refined_iron_storage_block') } ],
+        [ { amount: 9, item: tr('basic_machine_frame') } ]
+    );
+
+    // -- ADVANCED MACHINE FRAME -- //
+    assembler(
+        st('advanced_machine_frame'),
+        8,
+        200,
+        [
+            { amount: 2, item: tr('advanced_alloy_plate') },
+            { amount: 2, item: mi('carbon_plate') },
+            { amount: 1, item: tr('basic_machine_frame') }
+        ],
+        [ { amount: 1, item: tr('advanced_machine_frame') } ]
+    );
+
+    // -- INDUSTRIAL MACHINE FRAME -- //
+    assembler(
+        st('industrial_machine_frame'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('titanium_plate') },
+            { amount: 4, item: mi('chromium_plate') },
+            { amount: 1, item: tr('advanced_machine_frame') }
+        ],
+        [ { amount: 1, item: tr('industrial_machine_frame') } ]
+    );
+
+    // -- LAPOTRONIC ENERGY ORB -- //
+    assembler(
+        st('lapotronic_orb'),
+        8,
+        200, 
+        [
+            { amount: 1, item: tr('lapotron_crystal') },
+            { amount: 1, item: tr('lapotron_crystal') },
+            { amount: 1, item: tr('lapotron_crystal') },
+            { amount: 1, item: tr('lapotron_crystal') },
+            { amount: 1, item: mi('highly_advanced_machine_hull') },
+            { amount: 1, item: tr('lapotron_crystal') },
+            { amount: 1, item: tr('lapotron_crystal') },
+            { amount: 1, item: tr('lapotron_crystal') },
+            { amount: 1, item: tr('lapotron_crystal') }
+        ],
+        [ { amount: 1, item: tr('lapotronic_orb') } ]
+    );
+
+    // -- ADJUSTABLE SU -- //
+    assembler(
+        st('adjustable_su'),
+        8,
+        200,
+        [
+            { amount: 1, item: tr('lapotronic_orb') },
+            { amount: 1, item: tr('lapotronic_orb') },
+            { amount: 1, item: tr('lapotronic_orb') },
+            { amount: 1, item: tr('lapotronic_orb') },
+            { amount: 1, item: tr('energy_crystal') },
+            { amount: 1, item: tr('lapotronic_orb') },
+            { amount: 1, item: tr('lapotronic_orb') },
+            { amount: 1, item: tr('lapotronic_orb') },
+            { amount: 1, item: tr('lapotronic_orb') }
+        ],
+        [ { amount: 1, item: tr('adjustable_su') } ]
+    );
+
+    // -- 10K WATER COOLANT CELL -- //
+    assembler(
+        st('water_coolant_cell_10k'),
+        8,
+        200,
+        [ { amount: 4, item: mi('tin_ingot') } ],
+        [ { amount: 1, item: tr('water_coolant_cell_10k') } ],
+        [ { amount: 1000, fluid: mc('water') } ]
+    );
+
+    // -- OVERCLOCKER UPGRADE -- //
+    assembler(
+        st('overclocker_upgrade'),
+        8,
+        200,
+        [
+            { amount: 3, item: tr('water_coolant_cell_10k') },
+            { amount: 2, item: mi('copper_cable') },
+            { amount: 1, item: mi('analog_circuit') }
+        ],
+        [ { amount: 1, item: tr('overclocker_upgrade') } ]
+    );
+
     // -- SODIUM BATTERY -- //
     assembler(
         st('sodium_battery'),
