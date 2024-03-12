@@ -54,7 +54,7 @@ CapeJS.addCapes(e => {
     e.register("fc5b17ef-9054-4646-9c82-100e8b45478d", "pack_completionist");           // TheRoboticHydra
     e.register("a97914b6-75a2-43bc-b177-7d684e01c2b5", "pack_completionist");           // andrew_10_
     e.register("68b4f164-f793-4036-8a31-20ab74491e75", "pack_completionist");           // byzel
-    // 1804
+    e.register("31d8ce27-d826-4990-b36b-4dacc85b0820", "pack_completionist");           // 1804 (The1804)
     e.register("3dd5fbfa-e1df-4c6c-af67-ff5226495d14", "pack_completionist");           // Andrei Mudrov
     e.register("917c8dcd-ea2b-4709-83a0-3b9d5e8741a8", "pack_completionist");           // Diagnul
     e.register("04422d92-8760-4277-bf8e-f5d42d2bb1a8", "pack_completionist");           // Syees (DrProfMeister)
@@ -65,4 +65,15 @@ CapeJS.addCapes(e => {
     e.register("916ff53c-dceb-45c2-8833-e26d6ccaeb32", "pack_completionist");           // Duremudira
     e.register("b9e4d16f-3450-407b-b533-0cddcd459012", "pack_completionist");           // sverd
     e.register("688591d3-7de8-4869-b753-81e33b58e057", "pack_completionist");           // Dobry (Despacito6969)
+    e.register("98f92fb9-a4fc-4232-8420-4716d319e0b9", "pack_completionist");           // Johny709
+    e.register("643f3590-1cd9-497d-954b-37e64170f3ca", "pack_completionist");           // Sansy182 (kailo)
+    e.register("5c161f82-f554-4a81-a626-9af17d608acf", "pack_completionist");           // Retaelous
+    e.register("5dc25de3-6ae7-4b62-a897-9e7d5aac1589", "pack_completionist");           // Troinen
+    e.register("9618faf4-9759-4ab6-ba84-efec7fee6fb5", "pack_completionist");           // kpvw (Water Face)
+	e.register("61b883c4-06d2-4e38-a926-e2c03e7fdea6", "pack_completionist");			// sreny1 (sreny)
+    e.register("b53f5bf3-dcd1-4ace-accf-5af46a14199e", "pack_completionist");           // niko (wizzahd)
+    e.register("fe61819a-2333-4611-ae43-c599ab46c290", "pack_completionist");           // LordTet
+    e.register("b5e220e6-175c-46bb-b9ae-33e4dfa5d3f4", "pack_completionist");           // Mokilicious (moki)
+    e.register("2bd6d8e1-bb7d-4ef6-8ca8-78b0a0c582b3", "pack_completionist");           // ZootronPrime (ZootronJustin)
+    e.register("192977a2-f397-458c-84d4-dcec835f7c50", "pack_completionist");		    // Geckuss (Heinous)
 });

@@ -3,16 +3,13 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ClientEvents.highPriorityAssets(e => {
+ClientEvents.lang('en_us', e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
-    
-    // -- RENAME UTILITY FUNCTION -- //
-    let rename = (item, newName) => e.addLang(Item.of(item).item.getDescriptionId(), newName);
 
-    rename(mi('quantum_helmet'), 'Infinity Helmet');
-    rename(mi('quantum_chestplate'), 'Infinity Chestplate');
-    rename(mi('quantum_leggings'), 'Infinity Leggings');
-    rename(mi('quantum_boots'), 'Infinity Boots');
-    rename(mi('quantum_sword'), 'Infinity Sword');
+    e.add(mi('quantum_helmet'), 'Infinity Helmet');
+    e.add(mi('quantum_chestplate'), 'Infinity Chestplate');
+    e.add(mi('quantum_leggings'), 'Infinity Leggings');
+    e.add(mi('quantum_boots'), 'Infinity Boots');
+    e.add(mi('quantum_sword'), 'Infinity Sword');
 });
