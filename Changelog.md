@@ -89,4 +89,9 @@ This is primarily a maintenance patch as we wait for 1.21 and the NeoForge jump 
 - [Memoryleakfix](https://www.curseforge.com/minecraft/mc-mods/memoryleakfix) - No longer updated on CF and licensing restricts repacking
 
 ## Other changes:
-Fabric Loader version 0.14.22 -> 0.15.7
+- Fabric Loader version 0.14.22 -> 0.15.7
+- Updated the cape list for new completionist capes
+- Buffed Impure Nether Star production
+- [Added assembler recipes for AE2 components](https://github.com/TheStaticVoid/StaTech-Industry/issues/469)
+- [Added assembler recipes for TechReborn components](https://github.com/TheStaticVoid/StaTech-Industry/issues/465)
+- [Fixed broken Pineapple Delight recipes](https://github.com/TheStaticVoid/StaTech-Industry/issues/470)

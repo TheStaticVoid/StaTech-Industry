@@ -14,6 +14,7 @@ ServerEvents.recipes(e => {
     let ae = (id) => `ae2:${id}`;
     let fd = (id) => `farmersdelight:${id}`;
     let md = (id) => `moderndynamics:${id}`;
+    let kb = (id) => `kibe:${id}`;
 
     // -- ASSEMBLER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [    
@@ -47,6 +48,142 @@ ServerEvents.recipes(e => {
 
         e.custom(newRecipe).id(id);
     }
+
+    // -- COBBLESTONE GENERATOR MK1 -- //
+    assembler(
+        st('cobblestone_generator_mk1'),
+        8,
+        200,
+        [
+            { amount: 5, item: mc('cobblestone') },
+            { amount: 1, item: mc('iron_block') },
+            { amount: 1, item: mc('chest') }
+        ],
+        [ { amount: 1, item: kb('cobblestone_generator_mk1') } ],
+        [
+            { amount: 1000, fluid: mc('water') },
+            { amount: 1000, fluid: mc('lava') }
+        ]
+    );
+
+    // -- COBBLESTONE GENERATOR MK2 -- //
+    assembler(
+        st('cobblestone_generator_mk2'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('gold_plate') },
+            { amount: 4, item: kb('cobblestone_generator_mk1') },
+            { amount: 1, item: mi('basic_machine_hull') }
+        ],
+        [ { amount: 1, item: kb('cobblestone_generator_mk2') } ]
+    );
+
+    // -- COBBLESTONE GENERATOR MK3 -- //
+    assembler(
+        st('cobblestone_generator_mk3'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('diamond_plate') },
+            { amount: 4, item: kb('cobblestone_generator_mk2') },
+            { amount: 1, item: mi('advanced_machine_hull') }
+        ],
+        [ { amount: 1, item: kb('cobblestone_generator_mk3') } ]
+    );
+
+    // -- COBBLESTONE GENERATOR MK4 -- //
+    assembler(
+        st('cobblestone_generator_mk4'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('emerald_plate') },
+            { amount: 4, item: kb('cobblestone_generator_mk3') },
+            { amount: 1, item: mi('turbo_machine_hull') }
+        ],
+        [ { amount: 1, item: kb('cobblestone_generator_mk4') } ]
+    );
+
+    // -- COBBLESTONE GENERATOR MK5 -- //
+    assembler(
+        st('cobblestone_generator_mk5'),
+        8,
+        200,
+        [
+            { amount: 4, item: mc('netherite_ingot') },
+            { amount: 4, item: kb('cobblestone_generator_mk4') },
+            { amount: 1, item: mi('highly_advanced_machine_hull') }
+        ],
+        [ { amount: 1, item: kb('cobblestone_generator_mk5') } ]
+    );
+    
+    // -- BASALT GENERATOR MK1 -- //
+    assembler(
+        st('basalt_generator_mk1'),
+        8,
+        200,
+        [
+            { amount: 5, item: mc('soul_soil') },
+            { amount: 1, item: mc('blue_ice') },
+            { amount: 1, item: mc('iron_block') },
+            { amount: 1, item: mc('chest') }
+        ],
+        [ { amount: 1, item: kb('basalt_generator_mk1') } ],
+        [ { amount: 1000, fluid: mc('lava') } ]
+    );
+
+    // -- BASALT GENERATOR MK2 -- //
+    assembler(
+        st('basalt_generator_mk2'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('gold_plate') },
+            { amount: 4, item: kb('basalt_generator_mk1') },
+            { amount: 1, item: mi('basic_machine_hull') }
+        ],
+        [ { amount: 1, item: kb('basalt_generator_mk2') } ]
+    );
+
+    // -- BASALT GENERATOR MK3 -- //
+    assembler(
+        st('basalt_generator_mk3'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('diamond_plate') },
+            { amount: 4, item: kb('basalt_generator_mk2') },
+            { amount: 1, item: mi('advanced_machine_hull') }
+        ],
+        [ { amount: 1, item: kb('basalt_generator_mk3') } ]
+    );
+
+    // -- BASALT GENERATOR MK4 -- //
+    assembler(
+        st('basalt_generator_mk4'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('emerald_plate') },
+            { amount: 4, item: kb('basalt_generator_mk3') },
+            { amount: 1, item: mi('turbo_machine_hull') }
+        ],
+        [ { amount: 1, item: kb('basalt_generator_mk4') } ]
+    );
+
+    // -- BASALT GENERATOR MK5 -- //
+    assembler(
+        st('basalt_generator_mk5'),
+        8,
+        200,
+        [
+            { amount: 4, item: mc('netherite_ingot') },
+            { amount: 4, item: kb('basalt_generator_mk4') },
+            { amount: 1, item: mi('highly_advanced_machine_hull') }
+        ],
+        [ { amount: 1, item: kb('basalt_generator_mk5') } ]
+    );
 
     // -- PISTON -- //
     assembler(
