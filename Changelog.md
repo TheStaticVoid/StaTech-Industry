@@ -19,3 +19,4 @@ Another maintenance patch. Notably this brings the new Create update that fixes 
 ## Other changes:
 - Completionist cape list updates
 - [Fix missing netherite wand recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/478)
+- [Added quest for the Redstone Control Module](https://github.com/TheStaticVoid/StaTech-Industry/commit/6a82a48b3a1adc86e51b4776e5818ccdea5c2663)
