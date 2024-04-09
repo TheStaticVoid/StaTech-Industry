@@ -18,3 +18,4 @@ Another maintenance patch. Notably this brings the new Create update that fixes 
 
 ## Other changes:
 - Completionist cape list updates
+- [Fix missing netherite wand recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/478)
