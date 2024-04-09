@@ -4772,6 +4772,37 @@
 			x: 19.75d
 			y: 16.0d
 		}
+		{
+			dependencies: ["5CAAB61AA7E9FC66"]
+			description: ["The &aRedstone Control Module&r is an upgrade for your machines that allows you to control when they run using &credstone&r. By defualt, the module is operating with &6High Power&r. This means that the machine &bwill not run&r unless it's given a &cRedstone signal&r. You can invert this by &3shift+right clicking&r the &aRedstone Control Module&r in your hand. Doing so puts it in &6Low Power&r mode, which means the machine &bwill only run&r when not powered by a &cRedstone signal&r."]
+			id: "56FD9635F66C1D4A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "12DE9F4249426CDA"
+					table_id: 4870953612802399820L
+					type: "loot"
+				}
+				{
+					id: "0285300D4532E92E"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "158F12403AA59B41"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Fine tuned control"
+			tasks: [{
+				id: "5983C02F6002AF47"
+				item: "modern_industrialization:redstone_control_module"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 7.0d
+		}
 	]
 	subtitle: ["The Basis of Industry"]
 	title: "&22 - Steam Age"

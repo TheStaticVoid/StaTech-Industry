@@ -6,6 +6,7 @@
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:wands/${id}`;
+    let mc = (id) => `minecraft:${id}`;
     let wa = (id) => `wands:${id}`;
 
     // Remove the default Iron Wand recipe
@@ -22,6 +23,14 @@ ServerEvents.recipes(e => {
         S: '#c:wood_sticks'
     })
     .id(st('iron_wand'));
+
+    // -- NETHERITE WAND -- //
+    e.smithing(
+        wa('netherite_wand'),
+        wa('diamond_wand'),
+        mc('netherite_ingot')
+    )
+    .id(st('netherite_wand'));
 });
 
 ServerEvents.tags('item', e => {

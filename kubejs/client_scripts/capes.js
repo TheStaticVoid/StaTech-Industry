@@ -76,4 +76,8 @@ CapeJS.addCapes(e => {
     e.register("b5e220e6-175c-46bb-b9ae-33e4dfa5d3f4", "pack_completionist");           // Mokilicious (moki)
     e.register("2bd6d8e1-bb7d-4ef6-8ca8-78b0a0c582b3", "pack_completionist");           // ZootronPrime (ZootronJustin)
     e.register("192977a2-f397-458c-84d4-dcec835f7c50", "pack_completionist");		    // Geckuss (Heinous)
+    e.register("b576f774-9e3b-4d9c-977b-be899d902e27", "pack_completionist");           // Gear (greebo)
+    e.register("62a6f98e-fbe8-4d1d-8645-53ccdf6d910f", "pack_completionist");           // Hicaro
+    e.register("19bc6152-8bae-4fa3-8333-b5b42fdf17b1", "pack_completionist");           // WaffleBagel (WeeabooWill)
+    e.register("15a0ae95-4591-4262-b5c8-dda76d982a46", "pack_completionist");           // itsClaus
 });
