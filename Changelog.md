@@ -1,97 +1,20 @@
-# StaTech Industry 1.1.12 Changelog:
-This is primarily a maintenance patch as we wait for 1.21 and the NeoForge jump for version 1.2.0 (or 2.0, not sure on name yet). This patch will bring the update to Modern Industrialization that brings redstone control to your machines, as well as many other mod updates.
+# StaTech Industry 1.1.13 Changelog:
+Another maintenance patch. Notably this brings the new Create update that fixes the crash-to-desktop when viewing certain Create recipes.
 
 ## Mods updated:
-- [Almost Unified](https://www.curseforge.com/minecraft/mc-mods/almost-unified) - 0.7.0 -> 0.8.1
-- [AttributeFix](https://www.curseforge.com/minecraft/mc-mods/attributefix) - 17.2.7 -> 17.2.8
-- [AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin) - 2.4.1 -> 2.5.1
-- [Applied Energistics 2](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2) - 12.9.8 -> 12.9.9
-- [Applied Energistics 2 Wireless Terminals](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2-wireless-terminals) - 12.9.5 -> 12.9.8
-- [Architectury API](https://www.curseforge.com/minecraft/mc-mods/architectury-api) - 6.5.85 -> 6.6.92
-- [bad packets](https://www.curseforge.com/minecraft/mc-mods/badpackets) - 0.2.1 -> 0.2.3
-- [Better FPS](https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance) - 2.4 -> 4.2
-- [Botarium](https://www.curseforge.com/minecraft/mc-mods/botarium) - 1.8.2 -> 1.9.2
-- [Building Wands](https://www.curseforge.com/minecraft/mc-mods/building-wands) - 2.6.8 -> 2.6.9
-- [Carry On](https://www.curseforge.com/minecraft/mc-mods/carry-on) - 2.1.1.21 -> 2.1.2.23
-- [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.22 -> 0.10.31
-- [ChoiceTheorem's Overhauled Village](https://www.curseforge.com/minecraft/mc-mods/choicetheorems-overhauled-village) - 3.2.5 -> 3.2.6c
-- [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config) - 8.3.103 -> 8.3.115
-- [Complementary Reimagined](https://modrinth.com/shader/complementary-reimagined) - 5.0.1 -> 5.1.1
-- [Crafting Tweaks](https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks-fabric) - 15.1.8 -> 15.1.9
-- [Create](https://www.curseforge.com/minecraft/mc-mods/create-fabric) - 0.5.1-c-build.1160 -> 0.5.1-f-build.1334
-- [Create: Crafts & Additions](https://www.curseforge.com/minecraft/mc-mods/createaddition) - 20230723a -> 1.2.3
-- [Create: Steam 'n' Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) - 1.5.1 -> 1.5.3
-- [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) - 6.66 -> 7.39
-- [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard) - 2.0.0 -> 2.6.0
-- [Dank Storage](https://www.curseforge.com/minecraft/mc-mods/dank-storage-fabric) - 4.3.0 -> 4.4.0
-- [Emojiful](https://www.curseforge.com/minecraft/mc-mods/emojiful) - 4.0.4 -> 4.0.5
-- [Extended Drawers](https://www.curseforge.com/minecraft/mc-mods/extended-drawers) - 1.4.3 -> 1.4.5
-- [Extreme Sound Muffler](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler) - 3.38 -> 3.39
-- [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) - 0.76.1 -> 0.77.0
-- [Fabric Language Kotlin](https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin) - 1.9.10 -> 1.9.23
-- [FancyMenu](https://www.curseforge.com/minecraft/mc-mods/fancymenu) - 2.14.9 -> 2.14.14
-- [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) - 1.3.10.1 -> 1.3.10.2
-- [FTB Backups 2](https://www.curseforge.com/minecraft/mc-mods/ftb-backups-2) - 1.0.22 -> 1.0.23
-- [FTB Chunks](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-fabric) - 1902.4.2-build.302 -> 1902.4.4-build.326
-- [FTB Essentials](https://www.curseforge.com/minecraft/mc-mods/ftb-essentials-forge) - 1902.3.3-build.100 -> 1902.3.5-build.120
-- [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric) - 1902.5.5-build.297 -> 1902.5.8-build.345
-- [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) - 1.2.2 -> 1.2.3
-- [Guard Villagers](https://www.curseforge.com/minecraft/mc-mods/guard-villagers-fabric) - 2.0.6 -> 2.0.7
-- [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next) - 1.10.7 -> 1.10.9
-- [Iris](https://modrinth.com/mod/iris) - 1.6.9 -> 1.6.11
-- [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap) - 5.9.7 -> 5.9.7p1
-- [Just Enough Calculation](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation) - 4.0.3 -> 4.0.4
-- [Konkrete](https://www.curseforge.com/minecraft/mc-mods/konkrete-fabric) - 1.6.1 -> 1.8.0
-- [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.1-build.370 -> 1902.6.2-build.63
-- [LibIPN](https://www.curseforge.com/minecraft/mc-mods/libipn) - 4.0.0 -> 4.0.1
-- [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr-fabric) 0.4.27.67 -> 0.4.28.69
-- [Macaw's Paintings](https://www.curseforge.com/minecraft/mc-mods/macaws-paintings) - 1.0.4 -> 1.0.5
-- [megane](https://www.curseforge.com/minecraft/mc-mods/megane) - 8.6.0 -> 19.2.2
-- [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.7.4 -> 5.14.0
-- [Modern Industrialization](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization) - 1.6.16 -> 1.6.18
-- [Modern Industrialization Sound Addon](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization-sound-addon) - 1.0.1 -> 1.0.2
-- [Moonlight Lib](https://www.curseforge.com/minecraft/mc-mods/selene) - 2.2.45 -> 2.3.6
-- [Naturalist](https://www.curseforge.com/minecraft/mc-mods/naturalist) - 3.0.4 -> 4.0.3
-- [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) - 1.6.2 -> 1.7.1
-- [Oh the Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric) - 2.0.1.4 -> 2.0.1.6
-- [Passive Shield](https://www.curseforge.com/minecraft/mc-mods/passive-shield) - 3.2.0 -> 3.4.0
-- [Peripheralium](https://www.curseforge.com/minecraft/mc-mods/peripheralium) - 0.4.22 -> 0.4.23
-- [PolyLib](https://www.curseforge.com/minecraft/mc-mods/polylib) - 1900.0.2-build.73 -> 1900.0.3-build.100
-- [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph) - 0.46.4 -> 0.46.5
-- [Rhino](https://www.curseforge.com/minecraft/mc-mods/rhino) - 1902.2.2-build.272 -> 1902.2.3-build.284
-- [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.657 -> 9.1.682
-- [Satin API](https://www.curseforge.com/minecraft/mc-mods/satin-api) - 1.9.0 -> 1.9.1
-- [Server Performance - Smooth Chunk Save](https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save) - 3.2. -> 3.5
-- [ShetiPhianCore](https://www.curseforge.com/minecraft/mc-mods/shetiphiancore-fabric) - 1.3.11 -> 1.3.12
-- [Simple Discord Rich Presence](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rich-presence) - 3.0.4-build.27 -> 3.0.6-build.39
-- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.4.3 -> 2.4.4
-- [Skin Layers 3D](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d) - 1.5.2 -> 1.6.2
-- [Structory](https://www.curseforge.com/minecraft/mc-mods/structory) - 1.3 -> 1.3.1a
-- [Structory: Towers](https://www.curseforge.com/minecraft/mc-mods/structory-towers) - 1.0.1 -> 1.0.2
-- [Spell Engine](https://www.curseforge.com/minecraft/mc-mods/spell-engine) - 0.9.25 -> 0.9.26
-- [Spellblades and Such](https://www.curseforge.com/minecraft/mc-mods/spellblade-next) - 1.0.27.5 -> 1.0.27.6
-- [Spice of Fabric](https://www.curseforge.com/minecraft/mc-mods/spice-of-fabric) - 1.6.1 -> 1.6.2
-- [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib) - 1.1.8 -> 1.1.8a
-- [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) - 1.1.12b -> 1.1.17
-- [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) - 2.3.24 -> 2.4.20
-- [Superflat World No Slimes](https://www.curseforge.com/minecraft/mc-mods/superflat-world-no-slimes) - 3.0 -> 3.2
-- [Tech-enhanced](https://www.curseforge.com/minecraft/mc-mods/tech-enhanced) - 1.0.6 -> 1.0.7
-- [Tool Stats](https://www.curseforge.com/minecraft/mc-mods/tool-stats) - 12.1.4 -> 12.1.6
-- [Trade Cycling](https://www.curseforge.com/minecraft/mc-mods/trade-cycling) - 1.0.5 -> 1.0.10
-- [UnlimitedPeripheralWorks](https://www.curseforge.com/minecraft/mc-mods/unlimitedperipheralworks) - 0.2.10 -> 0.2.12
-- [Wavey Capes](https://www.curseforge.com/minecraft/mc-mods/waveycapes) - 1.3.2 -> 1.4.4
-- [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones) - 11.4.1 -> 11.4.2
-- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.19.0 -> 5.23.0
-- [YUNG's API](https://www.curseforge.com/minecraft/mc-mods/yungs-api-fabric) - 3.8.9 -> 3.8.10
-- [YUNG's Better Mineshafts](https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-fabric) - 3.2.0 -> 3.2.1
-
-# Mods removed
-- [Memoryleakfix](https://www.curseforge.com/minecraft/mc-mods/memoryleakfix) - No longer updated on CF and licensing restricts repacking
+- [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.31 -> 0.10.32
+- [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) - 7.39 -> 7.40
+- [Create](https://www.curseforge.com/minecraft/mc-mods/create-fabric) - 0.5.1-f-build.1334 -> 0.5.1-f-build.1416
+- [Create: Steam 'n' Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) - 1.5.3 -> 1.6.0
+- [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next) - 1.10.9 -> 1.10.10
+- [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap) - 5.9.7p1 -> 5.9.8
+- [LibIPN](https://www.curseforge.com/minecraft/mc-mods/libipn) - 4.0.1 -> 4.0.2
+- [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.14.0 -> 5.15.0
+- [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph) - 0.46.5 -> 0.46.6
+- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.5.8 -> 2.5.12
+- [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) - 2.4.20 -> 2.4.21
+- [Tom's Simple Storage](https://www.curseforge.com/minecraft/mc-mods/toms-storage-fabric) - 1.5.9 -> 0.5.10
+- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.23.0 -> 5.24.0
 
 ## Other changes:
-- Fabric Loader version 0.14.22 -> 0.15.7
-- Updated the cape list for new completionist capes
-- Buffed Impure Nether Star production
-- [Added assembler recipes for AE2 components](https://github.com/TheStaticVoid/StaTech-Industry/issues/469)
-- [Added assembler recipes for TechReborn components](https://github.com/TheStaticVoid/StaTech-Industry/issues/465)
-- [Fixed broken Pineapple Delight recipes](https://github.com/TheStaticVoid/StaTech-Industry/issues/470)
+- Completionist cape list updates
