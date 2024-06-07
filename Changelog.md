@@ -1,22 +1,26 @@
-# StaTech Industry 1.1.13 Changelog:
-Another maintenance patch. Notably this brings the new Create update that fixes the crash-to-desktop when viewing certain Create recipes.
+# StaTech Industry 1.1.14 Changelog:
+Another maintenance patch. Brings Spectrum up to date.
 
 ## Mods updated:
-- [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.31 -> 0.10.32
-- [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) - 7.39 -> 7.40
-- [Create](https://www.curseforge.com/minecraft/mc-mods/create-fabric) - 0.5.1-f-build.1334 -> 0.5.1-f-build.1416
-- [Create: Steam 'n' Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) - 1.5.3 -> 1.6.0
-- [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next) - 1.10.9 -> 1.10.10
-- [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap) - 5.9.7p1 -> 5.9.8
-- [LibIPN](https://www.curseforge.com/minecraft/mc-mods/libipn) - 4.0.1 -> 4.0.2
-- [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.14.0 -> 5.15.0
-- [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph) - 0.46.5 -> 0.46.6
-- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.5.8 -> 2.5.12
-- [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) - 2.4.20 -> 2.4.21
-- [Tom's Simple Storage](https://www.curseforge.com/minecraft/mc-mods/toms-storage-fabric) - 1.5.9 -> 0.5.10
-- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.23.0 -> 5.24.0
+- [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.33 -> 0.12.2
+- [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) - 7.40 -> 7.61
+- [Create: Steam 'n' Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) - 1.6.0 -> 1.6.4
+- [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.15.0 -> 5.18.0
+- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.5.12 -> 2.5.15
+- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.24.0 -> 5.27.0
+- [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.2-build -> 1902.6.2-build.69
+- [Wavey Capes](https://www.curseforge.com/minecraft/mc-mods/waveycapes) - 1.4.4 -> 1.4.7
+- [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.682 -> 9.2.724
+- [Ad Astra: Giselle Addon](https://www.curseforge.com/minecraft/mc-mods/ad-astra-giselle-addon) - 1.18 -> 1.21
+- [Spectrum](https://www.curseforge.com/minecraft/mc-mods/spectrum) - 1.6.12 -> 1.7.11
+- [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) - 1.7.1 -> 1.7.3
+- [Fabric Language Kotlin](https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin) - 1.10.19+kotlin.1.9.23 -> 1.11.0+kotlin.2.0.0
+- [Turtlematic](https://www.curseforge.com/minecraft/mc-mods/turtlematic) - 0.5.4 -> 0.6.0
+- [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr-fabric) - 0.4.28.69 -> 0.4.28.69
+- [Wireless Chargers](https://www.curseforge.com/minecraft/mc-mods/wireless-chargers) - 1.0.9 -> 1.0.9a
+- [Skin Layers 3D](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d) - 1.6.2 -> 1.6.5
+- [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) - 1.2.3 -> 1.2.4
+- [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders) - 1.3.1 -> 1.6.11
+- [Complementary Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) - 5.1.1 -> 5.2.1
 
 ## Other changes:
-- Completionist cape list updates
-- [Fix missing netherite wand recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/478)
-- [Added quest for the Redstone Control Module](https://github.com/TheStaticVoid/StaTech-Industry/commit/6a82a48b3a1adc86e51b4776e5818ccdea5c2663)
