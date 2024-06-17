@@ -68,7 +68,7 @@ MIMaterialEvents.addMaterials(e => {
                 .defaultRecipes()
         });
     
-    e.createMaterial('Polytetrafluoroethylene', 'polytetrafluoroethylene', 0x454545,
+    e.createMaterial('Polytetrafluoroethylene (PTFE)', 'polytetrafluoroethylene', 0x454545,
         builder => {
             builder.addParts('ingot', 'nugget', 'dust', 'tiny_dust', 'plate', 'curved_plate', 'gear', 'ring', 'rod', 'bolt')
                 .specialCasing('Chemically Inert PTFE Casing', 'chemically_inert_ptfe_casing', 8.0)
