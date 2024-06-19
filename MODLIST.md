@@ -265,6 +265,7 @@
 - [WMITAF (by ShaksterNano)](https://www.curseforge.com/minecraft/mc-mods/wmitaf)
 - [WTHIT (by badasintended)](https://www.curseforge.com/minecraft/mc-mods/wthit)
 - [XP Obelisk (by Meridanus)](https://www.curseforge.com/minecraft/mc-mods/xp-obelisk)
+- [XXL Packets (by Lazuline)](https://www.curseforge.com/minecraft/mc-mods/xxl-packets)
 - [YDM's Weapon Master (by YourDailyModderx)](https://www.curseforge.com/minecraft/mc-mods/ydms-weapon-master)
 - [YetAnotherConfigLib (by XanderIsDev)](https://www.curseforge.com/minecraft/mc-mods/yacl)
 - [You're in Grave Danger (by b1n_ry)](https://www.curseforge.com/minecraft/mc-mods/youre-in-grave-danger)
