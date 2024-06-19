@@ -1,5 +1,5 @@
 # StaTech Industry 1.1.14 Changelog:
-Another maintenance patch. Brings Spectrum up to date and resolves severl bugs.
+Another maintenance patch. Brings Spectrum up to date and resolves several bugs.
 
 ## Mods added:
 - [XXL Packets](https://www.curseforge.com/minecraft/mc-mods/xxl-packets)
@@ -34,6 +34,9 @@ Another maintenance patch. Brings Spectrum up to date and resolves severl bugs.
 - [Complementary Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) - 5.1.1 -> 5.2.1
 
 ## Other changes:
-Fix #494, #496, #490, #467
-
+- Expanded Spectrum questline to include updated Spectrum content
+- Spectrum update also fixed issues [#489](https://github.com/TheStaticVoid/StaTech-Industry/issues/489) and [#490](https://github.com/TheStaticVoid/StaTech-Industry/issues/490)
+- [Added chisel to replicator blacklist](https://github.com/TheStaticVoid/StaTech-Industry/issues/494)
+- [Added mod to handle large packets](https://github.com/TheStaticVoid/StaTech-Industry/issues/496)
+- [Changed the name of PTFE items so that there is a common search term](https://github.com/TheStaticVoid/StaTech-Industry/issues/467)
 
