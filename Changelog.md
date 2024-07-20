@@ -5,16 +5,16 @@ Another maintenance patch. Brings Spectrum up to date and resolves several bugs.
 - [XXL Packets](https://www.curseforge.com/minecraft/mc-mods/xxl-packets)
 
 ## Mods updated:
-- [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.33 -> 0.12.3
-- [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) - 7.40 -> 7.61
+- [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.33 -> 0.12.7
+- [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) - 7.40 -> 7.64
 - [Create: Steam 'n' Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) - 1.6.0 -> 1.6.4
 - [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.15.0 -> 5.18.0
-- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.5.12 -> 2.5.17
-- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.24.0 -> 5.28.0
+- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.5.12 -> 2.5.19
+- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.24.0 -> 5.28.2
 - [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.2-build -> 1902.6.2-build.73
-- [Wavey Capes](https://www.curseforge.com/minecraft/mc-mods/waveycapes) - 1.4.4 -> 1.4.7
+- [Wavey Capes](https://www.curseforge.com/minecraft/mc-mods/waveycapes) - 1.4.4 -> 1.4.8
 - [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.682 -> 9.2.724
-- [Ad Astra: Giselle Addon](https://www.curseforge.com/minecraft/mc-mods/ad-astra-giselle-addon) - 1.18 -> 1.21
+- [Ad Astra: Giselle Addon](https://www.curseforge.com/minecraft/mc-mods/ad-astra-giselle-addon) - 1.18 -> 1.22
 - [Spectrum](https://www.curseforge.com/minecraft/mc-mods/spectrum) - 1.6.12 -> 1.7.11
 - [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) - 1.7.1 -> 1.7.4
 - [Fabric Language Kotlin](https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin) - 1.10.19+kotlin.1.9.23 -> 1.11.0+kotlin.2.0.0
@@ -27,11 +27,12 @@ Another maintenance patch. Brings Spectrum up to date and resolves several bugs.
 - [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric) - 5.8.345 -> 5.9.399
 - [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders) - 1.3.1 -> 1.6.11
 - [Satin API](https://www.curseforge.com/minecraft/mc-mods/satin-api) - 1.9.1 -> 1.9.2
-- [Reacharound](https://www.curseforge.com/minecraft/mc-mods/reacharound) - 1.1.2 -> 1.2.0
+- [Reacharound](https://www.curseforge.com/minecraft/mc-mods/reacharound) - 1.1.2 -> 1.3.0
 - [PolyLib](https://www.curseforge.com/minecraft/mc-mods/polylib) - 0.3.100 -> 0.3.144
-- [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice) - 2.3.3 -> 2.3.4
+- [Create Slice & Dice](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice) - 2.3.3 -> 2.3.5
 - [Tom's Simple Storage](https://www.curseforge.com/minecraft/mc-mods/toms-storage-fabric) - 1.5.10 -> 1.5.11
-- [Complementary Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) - 5.1.1 -> 5.2.1
+- [Complementary Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) - 5.1.1 -> 5.2.2
+- [Inventory HUD+](https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge) - 3.4.7 -> 3.4.23
 
 ## Other changes:
 - Expanded Spectrum questline to include updated Spectrum content
