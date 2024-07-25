@@ -1,0 +1,152 @@
+- [3d-Skin-Layers](https://www.curseforge.com/projects/521480) [1.6.6] by tr7zw
+- [AE2 Network Analyser](https://www.curseforge.com/projects/961856) [5491820] by
+- [AE2WTLib](https://www.curseforge.com/projects/459929) [19.0.10-beta] by mari_023, Ridanisaurus
+- [AEInfinityBooster](https://www.curseforge.com/projects/559313) [1.21-1.0.1.38] by Hexeption
+- [AntiBlocksReChiseled](https://www.curseforge.com/projects/715567) [5424694] by
+- [AppleSkin](https://www.curseforge.com/projects/248787) [3.0.4+mc1.21] by squeek
+- [Applied Energistics 2](https://www.curseforge.com/projects/223794) [19.0.16-beta] by TeamAppliedEnergistics
+- [Architectury](https://www.curseforge.com/projects/419699) [13.0.6] by shedaniel
+- [Athena](https://www.curseforge.com/projects/841890) [4.0.0] by ThatGravyBoat
+- [Balm](https://www.curseforge.com/projects/531761) [21.0.14] by BlayTheNinth
+- [Better Advancements](https://www.curseforge.com/projects/272515) [0.4.2.16] by way2muchnoise
+- [Better Compatibility Checker](https://www.curseforge.com/projects/551894) [21.0.1] by Gaz
+- [betterchunkloading mod](https://www.curseforge.com/projects/899487) [4.4] by Someaddon
+- [betterfpsdist mod](https://www.curseforge.com/projects/551520) [4.5] by Someaddon
+- [Building Gadgets 2](https://www.curseforge.com/projects/298187) [1.3.3] by Direwolf20
+- [Caelus API](https://www.curseforge.com/projects/308989) [7.0.0+1.21] by Illusive Soulworks
+- [Camera Mod](https://www.curseforge.com/projects/289310) [1.21-1.0.12] by Max Henkel
+- [CapeJS](https://www.curseforge.com/projects/911145) [1.1.0-1.21] by staitc
+- [Carry On](https://www.curseforge.com/projects/274259) [2.2.1] by Tschipp, PurpliciousCow
+- [CC: Tweaked](https://www.curseforge.com/projects/282001) [1.111.1] by Daniel Ratcliffe, Aaron Mills, SquidDev
+- [Chat Heads](https://www.curseforge.com/projects/407206) [0.12.7] by dzwdz, Fourmisain
+- [Cherished Worlds](https://www.curseforge.com/projects/308240) [10.0.1+1.21] by Illusive Soulworks
+- [Chisel Reborn](https://www.curseforge.com/projects/551763) [1.8.1] by
+- [Chunky](https://www.curseforge.com/projects/485681) [1.4.16] by pop4959
+- [Clean Swing Through Grass](https://www.curseforge.com/projects/915308) [NONE] by Raycoms
+- [CleanView](https://www.curseforge.com/projects/226889) [1.21-v1-neoforge] by zlainsama
+- [Clickable Advancements mod](https://www.curseforge.com/projects/511733) [3.8] by Someaddon
+- [Cloth Config v15 API](https://www.curseforge.com/projects/348521) [15.0.128] by shedaniel
+- [Clumps](https://www.curseforge.com/projects/256717) [18.0.0.1] by Jared
+- [Collective](https://www.curseforge.com/projects/342584) [7.74] by Rick South
+- [Colorful Hearts](https://www.curseforge.com/projects/854213) [10.1.3] by Terrails
+- [Comforts](https://www.curseforge.com/projects/276951) [9.0.0+1.21] by Illusive Soulworks
+- [Common Network](https://www.curseforge.com/projects/806044) [5441543] by
+- [ConnectedTexturesMod](https://www.curseforge.com/projects/267602) [1.21-1.2.0+2] by tterrag, Drullkus, minecreatr
+- [Controlling](https://www.curseforge.com/projects/250398) [18.0.2] by Jaredlll08
+- [CosmeticArmorReworked](https://www.curseforge.com/projects/237307) [1.21-v1-neoforge] by zlainsama
+- [Crafting Tweaks](https://www.curseforge.com/projects/233071) [21.0.3] by BlayTheNinth
+- [CraftingStation](https://www.curseforge.com/projects/318551) [1] by Tfarcenim
+- [CreativeCore](https://www.curseforge.com/projects/257814) [5544276] by
+- [Cupboard mod](https://www.curseforge.com/projects/326652) [2.7] by Someaddon
+- [Curios API](https://www.curseforge.com/projects/1037991) [9.0.5+1.21] by C4
+- [Custom Window Title (Multiloader)](https://www.curseforge.com/projects/360673) [1.3.0] by chylex
+- [Default Options](https://www.curseforge.com/projects/232131) [21.0.5] by BlayTheNinth
+- [Durability Tooltip](https://www.curseforge.com/projects/511040) [1.1.5] by SuperMartijn642
+- [Dynamic Asset Generator](https://www.curseforge.com/projects/577096) [5471770] by
+- [Dynamic FPS](https://www.curseforge.com/projects/335493) [3.6.1] by juliand665 & LostLuma
+- [Elevator Mod](https://www.curseforge.com/projects/250832) [1.21-1.10.1] by VsnGamer
+- [Elytra Slot](https://www.curseforge.com/projects/317716) [9.0.0+1.21] by Illusive Soulworks
+- [Embeddium Extra](https://www.curseforge.com/projects/654373) [0.5.7d+mc1.21-build.128] by dima_dencep, FlashyReese
+- [Embeddium](https://www.curseforge.com/projects/908741) [1.0.7+mc1.21] by embeddedt
+- [EMI](https://www.curseforge.com/projects/580555) [1.1.10+1.21+neoforge] by Emi
+- [Emojiful](https://www.curseforge.com/projects/284324) [5.1.4] by HRZN
+- [EntityCulling](https://www.curseforge.com/projects/448233) [1.6.6] by tr7zw
+- [Excavated Variants](https://www.curseforge.com/projects/577411) [5503376] by
+- [Explorer's Compass](https://www.curseforge.com/projects/491794) [1.21-3.0.2-neoforge] by ChaosTheDude
+- [Factory Blocks [Forge/Fabric/NeoForge]](https://www.curseforge.com/projects/640001) [5442380] by
+- [Fallingleaves](https://www.curseforge.com/projects/463155) [2.4.0-beta.1] by Cheaterpaul, Fourmisain, BrekiTomasson and RandomMcSomethin
+- [Farming for Blockheads](https://www.curseforge.com/projects/261924) [21.0.4] by BlayTheNinth
+- [Fast Workbench](https://www.curseforge.com/projects/288885) [9.1.1] by Shadows_of_Fire
+- [Ferrite Core](https://www.curseforge.com/projects/429235) [7.0.0] by malte0811
+- [FindMe](https://www.curseforge.com/projects/291936) [3.3.1] by Buuz135
+- [Flat Bedrock](https://www.curseforge.com/projects/398623) [87.0.0] by
+- [FlickerFix](https://www.curseforge.com/projects/431430) [4.0.1] by
+- [Forge Config API Port](https://www.curseforge.com/projects/547434) [5535849] by
+- [ForgeEndertech](https://www.curseforge.com/projects/244844) [12.0.0.0] by EnderLanky
+- [Forgiving Void](https://www.curseforge.com/projects/271009) [21.0.2] by BlayTheNinth
+- [FramedBlocks](https://www.curseforge.com/projects/441647) [10.1.0] by XFactHD
+- [FTB Backups 2](https://www.curseforge.com/projects/622737) [1.0.28] by CreeperHost
+- [FTB Chunks](https://www.curseforge.com/projects/314906) [2100.1.0] by FTB Team
+- [FTB Essentials](https://www.curseforge.com/projects/410811) [2100.1.0] by FTB Team
+- [FTB Library](https://www.curseforge.com/projects/404465) [2100.1.3] by FTB Team
+- [FTB Quests](https://www.curseforge.com/projects/289412) [2100.1.4] by FTB Team
+- [FTB Teams](https://www.curseforge.com/projects/404468) [2100.1.0] by FTB Team
+- [FTB XMod Compat](https://www.curseforge.com/projects/889915) [3.2.1] by FTB Team
+- [Functional Storage](https://www.curseforge.com/projects/556861) [1.21.0-1.3.1] by Buuz135, Rid
+- [Glodium](https://www.curseforge.com/projects/957920) [5491696] by
+- [Gpu memory leak fix](https://www.curseforge.com/projects/882495) [1.8] by Someaddon
+- [Gravestone Mod](https://www.curseforge.com/projects/238551) [1.21-1.0.17] by Max Henkel
+- [HammerLib](https://www.curseforge.com/projects/247401) [21.0.13] by Zeitheron
+- [Hang Glider](https://www.curseforge.com/projects/852668) [21.0.0] by gr8pefish, Fuzs
+- [Inventory Profiles Next](https://www.curseforge.com/projects/495267) [2.0.2] by blackd/mirinimi
+- [Iron Chests](https://www.curseforge.com/projects/228756) [1.21-neoforge-16.0.7] by cpw, alexbegt, progwml6
+- [Jade](https://www.curseforge.com/projects/324717) [15.1.4+neoforge] by Snownee
+- [JamLib](https://www.curseforge.com/projects/623764) [5427400] by
+- [Journeymap](https://www.curseforge.com/projects/32274) [1.21-6.0.0-beta.18] by Techbrew, Mysticdrew
+- [Just Another Void Dimension](https://www.curseforge.com/projects/370890) [8.0.1] by UnRealDinnerbone
+- [Just Enough Items](https://www.curseforge.com/projects/238222) [19.5.0.59] by mezz
+- [Just Hammers](https://www.curseforge.com/projects/681606) [21.0.1] by ErrorMikey
+- [KleeSlabs](https://www.curseforge.com/projects/241895) [21.0.2] by BlayTheNinth
+- [Kotlin for Forge](https://www.curseforge.com/projects/351264) [5521840] by
+- [KubeJS](https://www.curseforge.com/projects/238086) [2100.7.0-build.113] by latvian.dev
+- [Large Ore Deposits](https://www.curseforge.com/projects/318833) [9.0.0.0] by EnderLanky
+- [libIPN](https://www.curseforge.com/projects/679177) [6.0.0] by blackd/mirinimi
+- [Load My F***ing Tags](https://www.curseforge.com/projects/656346) [1.0.4+1.21] by Blodhgarm
+- [LootJS](https://www.curseforge.com/projects/570630) [1.21-3.0.3] by AlmostReliable
+- [Measurements](https://www.curseforge.com/projects/478559) [3.0.0] by Mrbysco
+- [MEGA Cells](https://www.curseforge.com/projects/622112) [4.0.0-alpha] by 90
+- [MI Sound Addon](https://www.curseforge.com/projects/910125) [1.1.0-1.21] by staitc
+- [Mod Name Tooltip](https://www.curseforge.com/projects/238747) [2.2.0] by mezz
+- [Modern Dynamics](https://www.curseforge.com/projects/552758) [0.9.1-beta] by Technici4n
+- [Modern Industrialization](https://www.curseforge.com/projects/405388) [2.2.14-beta] by Azerococo,Technici4n
+- [ModernFix](https://www.curseforge.com/projects/790626) [5.18.8+mc1.21] by embeddedt
+- [Modpack Update Checker](https://www.curseforge.com/projects/847414) [0.13.0] by Jab125
+- [More Overlays Updated](https://www.curseforge.com/projects/391382) [1.23.1-neoforge] by feldim2425, RiDGo8
+- [Mouse Tweaks](https://www.curseforge.com/projects/60089) [2.26] by Ivan Molodetskikh (YaLTeR)
+- [Nature's Compass](https://www.curseforge.com/projects/252848) [1.21-3.0.2-neoforge] by ChaosTheDude
+- [NetherPortalFix](https://www.curseforge.com/projects/241160) [21.0.2] by BlayTheNinth
+- [No Chat Reports](https://www.curseforge.com/projects/634062) [1.21-v2.8.0] by Aizistral
+- [OkZoomer](https://www.curseforge.com/projects/631278) [4.0.1] by Matyrobbrt
+- [OverloadedArmorBar](https://www.curseforge.com/projects/314002) [2] by Jared
+- [Passive Shield](https://www.curseforge.com/projects/447359) [3.5] by Rick South
+- [Placebo](https://www.curseforge.com/projects/283644) [9.3.4] by Shadows_of_Fire
+- [PolyLib](https://www.curseforge.com/projects/576589) [2100.0.3-build.153] by CreeperHost
+- [Polymorph](https://www.curseforge.com/projects/388800) [1.0.5+1.21] by Illusive Soulworks
+- [Polymorphic Energistics](https://www.curseforge.com/projects/941096) [0.4.1] by 90
+- [ProbeJS](https://www.curseforge.com/projects/585406) [7.2.1] by Prunoideae
+- [Puzzles Lib](https://www.curseforge.com/projects/495476) [21.0.17] by Fuzs
+- [Rain Shield](https://www.curseforge.com/projects/573156) [5535828] by
+- [Rhino](https://www.curseforge.com/projects/416294) [2100.2.5-build.44] by latvian.dev, Mozilla
+- [Right Click Harvest](https://www.curseforge.com/projects/452834) [4.3.1+1.21] by Jamalam
+- [Searchables](https://www.curseforge.com/projects/858542) [1.0.1] by Jaredlll08
+- [Server Country Flags](https://www.curseforge.com/projects/841311) [5428463] by
+- [ServerCore](https://www.curseforge.com/projects/550579) [1.5.4+1.21] by Wesley1808
+- [ShulkerBoxTooltip](https://www.curseforge.com/projects/315811) [5.0.4+1.21] by MisterPeModder
+- [Simple Discord Rich Presence](https://www.curseforge.com/projects/334853) [87.0.0-build.48+mc1.21] by Sunekaer
+- [Simple Magnets](https://www.curseforge.com/projects/394140) [1.1.11+a] by SuperMartijn642
+- [Simple Voice Chat](https://www.curseforge.com/projects/416089) [1.21-2.5.19] by Max Henkel
+- [Simply Light](https://www.curseforge.com/projects/300331) [1.4.6+1.21-b53
+- [Snow Under Trees](https://www.curseforge.com/projects/353942) [1.4.4] by bl4ckscor3
+- [spark](https://www.curseforge.com/projects/361579) [1.10.73] by Luck
+- [Superflat World No Slimes](https://www.curseforge.com/projects/344185) [5425631] by
+- [SuperMartijn642's Config Library](https://www.curseforge.com/projects/438332) [1.1.8] by SuperMartijn642
+- [SuperMartijn642's Core Lib](https://www.curseforge.com/projects/454372) [1.1.17+c] by SuperMartijn642
+- [Tectonic](https://www.curseforge.com/projects/686836) [2.4.0] by Apollo
+- [Time In A Bottle](https://www.curseforge.com/projects/895919) [6.1.0] by RealMangoRage, MangoRage
+- [TinyCoal](https://www.curseforge.com/projects/395272) [1.0.2] by AzureDoom
+- [TipTheScales](https://www.curseforge.com/projects/282313) [15.0.0.1] by Jaredlll08
+- [Titanium](https://www.curseforge.com/projects/287342) [5507166] by
+- [Toast Control](https://www.curseforge.com/projects/271740) [9.0.0] by Shadows_of_Fire
+- [TrashSlot](https://www.curseforge.com/projects/235577) [21.0.2] by BlayTheNinth
+- [Tree Harvester](https://www.curseforge.com/projects/367178) [8.9] by Rick South
+- [Trenzalore](https://www.curseforge.com/projects/870210) [5541857] by
+- [Trofers](https://www.curseforge.com/projects/482265) [5444385] by
+- [Useful Slime (Forge/NeoForge/Fabric)](https://www.curseforge.com/projects/417702) [5555049] by
+- [Visual Workbench](https://www.curseforge.com/projects/500273) [21.0.1] by Fuzs
+- [WATERFrAMES: Media Displays](https://www.curseforge.com/projects/834607) [5548036] by
+- [WATERMeDIA: Multimedia API](https://www.curseforge.com/projects/869524) [5539538] by
+- [WaveyCapes](https://www.curseforge.com/projects/521594) [1.4.8] by tr7zw
+- [Waystones](https://www.curseforge.com/projects/245755) [21.0.8] by BlayTheNinth
+- [Wireless Chargers](https://www.curseforge.com/projects/510656) [1.0.9+a] by SuperMartijn642
+- [XP Tome](https://www.curseforge.com/projects/344787) [2.3.2] by bl4ckscor3
+- [Xtones Reworked](https://www.curseforge.com/projects/694231) [5558025] by] by Flanks255
