@@ -23,6 +23,7 @@ CapeJS.addCapes(e => {
     e.register("b895bee1-337c-42cf-acaa-9dc87698b6b1", "supporter");                    // QaptainGeebs (qaptain)
     e.register("962fb54e-b8e3-426f-8910-18894881968f", "supporter");                    // Dopefull
     // r4ndomhero
+    // jabartik
 
     // -- MOD DEV -- //
     e.register("38592f92-5b6c-4911-813a-3aead5a64ebe", "mod_developer");                // Technici4n
@@ -80,4 +81,20 @@ CapeJS.addCapes(e => {
     e.register("62a6f98e-fbe8-4d1d-8645-53ccdf6d910f", "pack_completionist");           // Hicaro
     e.register("19bc6152-8bae-4fa3-8333-b5b42fdf17b1", "pack_completionist");           // WaffleBagel (WeeabooWill)
     e.register("15a0ae95-4591-4262-b5c8-dda76d982a46", "pack_completionist");           // itsClaus
+    e.register("8a4dbf1a-8538-4435-9dce-7188a9ac18c2", "pack_completionist");           // VeeArr
+    e.register("e5c943ce-9209-4a6e-9bb8-f24e88ef1eff", "pack_completionist");           // Flokau (Shadda)
+    e.register("d6330821-e3a3-4a84-a50b-fa886506b162", "pack_completionist");           // PurpleDino_
+    e.register("7ebbee0e-29cf-40c7-9ee1-2d2b914fa73f", "pack_completionist");           // Alawon
+    e.register("918bded2-2df5-4516-b3eb-ac7a14ed0365", "pack_completionist");           // Trayus
+    e.register("705458b0-5021-4914-b993-1978a696be88", "pack_completionist");           // Masafi
+    e.register("2b9f5f2f-7797-4729-8a97-c2470d32d202", "pack_completionist");           // manymoney2
+    e.register("46edd6f1-3cd5-4c6e-86fb-5b2a84e23653", "pack_completionist");           // Louis9902
+    e.register("fce379a3-090d-4db9-8132-6b1819be999b", "pack_completionist");           // Grenland_38
+    e.register("bf3e8c39-5e84-43b6-9e7d-0aaf01dcb3d4", "pack_completionist");           // TimaB39
+    e.register("62efa14d-2610-4d22-9a60-4588d6736efd", "pack_completionist");           // Renchon
+    e.register("df4a69a7-62e4-4e24-8f1e-e068de769591", "pack_completionist");           // is_daniel (MiDaLew)
+    e.register("8c6f87ad-62c6-4905-a6a7-be7d28e19e7c", "pack_completionist");           // TecTech (AVG)
+    e.register("faff2979-b120-4da6-9fe8-ef8f57325ac6", "pack_completionist");           // Trevboar (trevor)
+    e.register("f200205f-7d80-4884-9030-47369b3d36fe", "pack_completionist");           // kerbek_02 (overheaven)
+    e.register("725ee19f-045f-4e38-9bbe-7bac71b4fe97", "pack_completionist");           // 3XNRNT
 });
