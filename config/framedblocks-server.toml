@@ -1,0 +1,30 @@
+[general]
+	#Whether blocks with block entities can be placed in framed blocks
+	allowBlockEntities = false
+	#Enables the intangbility feature. Disabling this also prevents moving through blocks that are already marked as intangible
+	enableIntangibleFeature = false
+	#The item to use for making Framed Blocks intangible. The value must be a valid item registry name
+	intangibleMarkerItem = "minecraft:phantom_membrane"
+	#If true, only the player who placed the Framed One-Way Window can modify the window direction
+	oneWayWindowOwnable = true
+	#If true, applying a camo will consume the item and removing the camo will drop it again
+	consumeCamoItem = true
+	#The light level to emit when glowstone dust is applied to a framed block
+	#Range: 0 ~ 15
+	glowstoneLightLevel = 15
+	#If true, framed blocks are completely fire proof
+	fireproofBlocks = false
+
+[powered_framing_saw]
+	#The amount of power the Powered Framing Saw can store
+	#Range: 100 ~ 32767
+	energyCapacity = 5000
+	#The amount of power the Powered Framing Saw can receive per tick
+	#Range: 10 ~ 32767
+	maxReceive = 250
+	#The amount of power the Powered Framing Saw consumes per tick while crafting
+	#Range: 1 ~ 32767
+	consumption = 50
+	#How many ticks the Powered Framing Saw takes per crafting operation
+	#Range: 5 ~ 200
+	craftingDuration = 30

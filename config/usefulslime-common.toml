@@ -1,0 +1,12 @@
+#Should the Slime Helmet be damaged by climbing on the ceiling
+hangClimbingDamagesSlimeHelmet = true
+#Should Slime Chestplates and Slime Leggings be damaged by wall climbing (not inculding including already climbable blocks)
+wallClimbingDamagesSlimeChestplateAndLeggings = true
+#Should Slime Boots be damaged by bouncing
+bouncingDamagesSlimeBoots = true
+#The maximum speed an entity on a Slippery Slime Block can go.
+#Setting this to a high value can cause lag due to entities being sent hundreds\thousands of blocks away
+#Range: 0 ~ 100
+maxSlipperySlimeBlockSpeed = 8
+#Allows the player to keep momentum and continue bouncing endlessly below 1.5 blocks of fall distance by holding the jump key
+slimeBootSurfing = false

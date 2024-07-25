@@ -84,7 +84,6 @@
 - [JamLib](https://www.curseforge.com/projects/623764) [5427400] by
 - [Journeymap](https://www.curseforge.com/projects/32274) [1.21-6.0.0-beta.18] by Techbrew, Mysticdrew
 - [Just Another Void Dimension](https://www.curseforge.com/projects/370890) [8.0.1] by UnRealDinnerbone
-- [Just Enough Items](https://www.curseforge.com/projects/238222) [19.5.0.59] by mezz
 - [Just Hammers](https://www.curseforge.com/projects/681606) [21.0.1] by ErrorMikey
 - [KleeSlabs](https://www.curseforge.com/projects/241895) [21.0.2] by BlayTheNinth
 - [Kotlin for Forge](https://www.curseforge.com/projects/351264) [5521840] by

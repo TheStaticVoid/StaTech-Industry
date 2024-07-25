@@ -1,0 +1,29 @@
+[Client]
+    # What should be the style of the tooltip? 'numbers' means 'Durability: 30 / 100', 'text' means 'Durability: pristine/slight damaged/nearly broken', 'bar' means 'Durability: [███▒▒▒▒▒▒▒]'
+    # Allowed values: BAR, NUMBERS, TEXT - Default: NUMBERS
+    tooltipStyle = "NUMBERS"
+
+    # Should the tooltip include the 'Durability:' hint?
+    # Allowed values: true, false - Default: true
+    showTooltipHint = true
+
+    # What colors should be used for the reactive part (numbers/text/bar characters) of the tooltip? 'base' means use the base color, 'gold' means always gold, 'varying' means green/orange/red depending on remaining durability.
+    # Allowed values: BASE, GOLD, VARYING - Default: VARYING
+    tooltipColorStyle = "VARYING"
+
+    # What should be the base text color of the tooltip?
+    # Allowed values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE, OBFUSCATED, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET - Default: GRAY
+    baseTooltipColor = "GRAY"
+
+    # Should the durability tooltip only be shown on vanilla tools?
+    # Allowed values: true, false - Default: false
+    onlyVanillaTools = false
+
+    # Should the durability tooltip be shown when a tool is not damaged?
+    # Allowed values: true, false - Default: true
+    showWhenFull = true
+
+    # Which mods should be blacklisted? Items from blacklisted mods won't show the durability tooltip.
+    # Allowed length: 0 ~ 100 - Default: 'tconstruct,supplementaries'
+    blackListedMods = "tconstruct,supplementaries"
+

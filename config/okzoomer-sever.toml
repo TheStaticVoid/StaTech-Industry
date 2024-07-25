@@ -1,0 +1,18 @@
+#If players should be allowed to zoom using OkZoomer.
+allow_zoom = true
+#If false, allows players to use the scroll key to adjust zoom.
+disable_zoom_scrolling = false
+#If true, players will be forced to use classic mode for zooming.
+force_classic_mode = false
+#The minimum value that players can scroll down.
+#Range: 0.0 ~ 1.7976931348623157E308
+minimum_zoom_divisor = 1.0
+#The maximum value that players can scroll down.
+#Range: 0.0 ~ 1.7976931348623157E308
+maximum_zoom_divisor = 50.0
+#Enforce a spyglass dependency for zoom.
+#Allowed Values: OFF, REQUIRE_ITEM, REPLACE_ZOOM, BOTH
+spyglass_dependency = "OFF"
+#Enforce a zoom overlay over the zoom.
+#Allowed Values: OFF, VIGNETTE, SPYGLASS
+zoom_overlay = "OFF"
