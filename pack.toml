@@ -1,16 +1,13 @@
 name = "StaTech Industry"
-author = "static"
-version = "1.1.13"
+author = "staitc"
+version = "2.0.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "5231cd2d9186e676dd4a0baa613c4d2f29a0cc621a429e935db07bbdc7271230"
+hash = "a7843cbd9bdeb4558ff3a5032723de5e4cadacd9780a625aefa4b14a7b764c8c"
 
 [versions]
-fabric = "0.15.7"
-minecraft = "1.19.2"
-
-[options]
-acceptable-game-versions = ["1.19.2"]
+minecraft = "1.21"
+neoforge = "21.0.133-beta"
