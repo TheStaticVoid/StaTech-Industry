@@ -4709,6 +4709,7 @@
 				"&aBlack Hole Chests&r have a radius of 12 blocks. You can disable them by placing a block on top. It offers &efilters&r to specify which items it should accept&r."
 			]
 			hide: true
+			icon: "spectrum:black_hole_chest"
 			id: "045A4D9B10FD6495"
 			rewards: [
 				{
@@ -4725,7 +4726,7 @@
 			]
 			tasks: [{
 				id: "449F46F9DEBFF167"
-				item: "spectrum:sucking_chest"
+				item: "spectrum:black_hole_chest"
 				type: "item"
 			}]
 			x: -9.0d
@@ -6914,6 +6915,55 @@
 			title: "War Tomes"
 			x: 17.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7014D92425B9A412"]
+			description: [
+				"And so you have broken through &abedrock itself&r, and discoverd what lies &4below&r."
+				""
+				"Your work is not yet done, for this is merely the end of the beginning. &b&lThe real work is yet to begin&r&r."
+			]
+			icon: "spectrum:moonstone_cluster"
+			id: "38FE7BB7A9B08424"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "29307B90F39C77A2"
+					table_id: 2662802482107568753L
+					type: "loot"
+				}
+				{
+					id: "10B574A4C67F51DA"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			shape: "square"
+			size: 2.5d
+			subtitle: "The End of the Beginning"
+			tasks: [
+				{
+					advancement: "spectrum:midgame/enter_dimension"
+					criterion: ""
+					id: "569A37803C3F6F48"
+					type: "advancement"
+				}
+				{
+					dimension: "spectrum:deeper_down"
+					icon: "spectrum:moonstone_cluster"
+					id: "222FDE10F207D63F"
+					type: "dimension"
+				}
+				{
+					advancement: "spectrum:midgame/open_deeper_down_portal"
+					criterion: ""
+					id: "5189AB2EDE6F2249"
+					type: "advancement"
+				}
+			]
+			title: "What Once Was Impenetrable"
+			x: -13.75d
+			y: -3.75d
 		}
 	]
 	subtitle: ["Is that you Merasmus?"]

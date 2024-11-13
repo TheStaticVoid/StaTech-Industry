@@ -1,0 +1,31 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "world_of_magic_the_deeper_down"
+	group: "135E7B9D4273E5DD"
+	hide_quest_until_deps_visible: true
+	icon: "spectrum:moonstone_cluster"
+	id: "03C0B0B2584C0222"
+	order_index: 5
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["38FE7BB7A9B08424"]
+		icon: "spectrum:moonstone_cluster"
+		id: "79021A59C661F6FE"
+		rewards: [{
+			id: "4A1BA5C034BB3D99"
+			type: "xp"
+			xp: 10
+		}]
+		shape: "square"
+		subtitle: "The Beginning of the End"
+		tasks: [{
+			id: "6401D25D2C4A4FE9"
+			title: "Visit the Deeper Down"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&aSpectrum: The Deeper Down&r"
+}
