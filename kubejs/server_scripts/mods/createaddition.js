@@ -30,18 +30,18 @@ ServerEvents.recipes(e => {
         ca('rolling/copper_plate'),
         ca('rolling/straw'),
         ca('crafting/rolling_mill'),
-        ca('crafting/spool'),
-        ca('crafting/copper_spool'),
-        ca('crafting/gold_spool'),
+        //ca('crafting/spool'),
+        //ca('crafting/copper_spool'),
+        //ca('crafting/gold_spool'),
         ca('compacting/seed_oil'),
         ca('mechanical_crafting/accumulator'),
         ca('mechanical_crafting/tesla_coil'),
-        ca('crafting/connector'),
+        //ca('crafting/connector'),
         ca('crafting/capacitor_1'),
         ca('crafting/capacitor_2'),
         ca('crafting/diamond_grit_sandpaper'),
         ca('crushing/diamond'),
-        ca('crafting/redstone_relay'),
+        //ca('crafting/redstone_relay'),
         ca('pressing/zinc_ingot')
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id : id}));
