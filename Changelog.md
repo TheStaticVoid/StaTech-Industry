@@ -3,25 +3,26 @@ Another maintenance patch. Brings Spectrum up to date and resolves several bugs.
 
 ## Mods added:
 - [XXL Packets](https://www.curseforge.com/minecraft/mc-mods/xxl-packets)
+- [Snowy Spirit](https://www.curseforge.com/minecraft/mc-mods/snowy-spirit)
 
 ## Mods updated:
-- [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.33 -> 0.13.4
+- [Chat Heads](https://www.curseforge.com/minecraft/mc-mods/chat-heads) - 0.10.33 -> 0.13.6
 - [Collective](https://www.curseforge.com/minecraft/mc-mods/collective) - 7.40 -> 7.64
 - [Create: Steam 'n' Rails](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails) - 1.6.0 -> 1.6.4
 - [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix) - 5.15.0 -> 5.18.1
-- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.5.12 -> 2.5.25
+- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) - 2.5.12 -> 2.5.26
 - [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.24.0 -> 5.28.7
 - [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) - 1902.6.2-build -> 1902.6.2-build.73
-- [Wavey Capes](https://www.curseforge.com/minecraft/mc-mods/waveycapes) - 1.4.4 -> 1.4.10
+- [Wavey Capes](https://www.curseforge.com/minecraft/mc-mods/waveycapes) - 1.4.4 -> 1.4.12
 - [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.1.682 -> 9.2.784
 - [Ad Astra: Giselle Addon](https://www.curseforge.com/minecraft/mc-mods/ad-astra-giselle-addon) - 1.18 -> 1.24
 - [Spectrum](https://www.curseforge.com/minecraft/mc-mods/spectrum) - 1.6.12 -> 1.7.12
-- [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) - 1.7.1 -> 1.7.6
+- [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations) - 1.7.1 -> 1.8.1
 - [Fabric Language Kotlin](https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin) - 1.10.19+kotlin.1.9.23 -> 1.12.3+kotlin.2.0.21
 - [Turtlematic](https://www.curseforge.com/minecraft/mc-mods/turtlematic) - 0.5.4 -> 0.6.0
 - [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr-fabric) - 0.4.28.69 -> 0.4.28.70
 - [Wireless Chargers](https://www.curseforge.com/minecraft/mc-mods/wireless-chargers) - 1.0.9 -> 1.0.9a
-- [Skin Layers 3D](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d) - 1.6.2 -> 1.7.1
+- [Skin Layers 3D](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d) - 1.6.2 -> 1.7.2
 - [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) - 1.2.3 -> 1.2.4
 - [FTB Chunks](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-fabric) - 4.4.326 -> 4.7.420
 - [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric) - 5.8.345 -> 5.9.399
@@ -50,4 +51,5 @@ Another maintenance patch. Brings Spectrum up to date and resolves several bugs.
 - [Added chisel to replicator blacklist](https://github.com/TheStaticVoid/StaTech-Industry/issues/494)
 - [Added mod to handle large packets](https://github.com/TheStaticVoid/StaTech-Industry/issues/496)
 - [Changed the name of PTFE items so that there is a common search term](https://github.com/TheStaticVoid/StaTech-Industry/issues/467)
+- Added back Create Crafts & Additions items for lighting
 
