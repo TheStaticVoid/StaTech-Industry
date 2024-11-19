@@ -51,5 +51,5 @@ Another maintenance patch. Brings Spectrum up to date and resolves several bugs.
 - [Added chisel to replicator blacklist](https://github.com/TheStaticVoid/StaTech-Industry/issues/494)
 - [Added mod to handle large packets](https://github.com/TheStaticVoid/StaTech-Industry/issues/496)
 - [Changed the name of PTFE items so that there is a common search term](https://github.com/TheStaticVoid/StaTech-Industry/issues/467)
-- Added back Create Crafts & Additions items for lighting
+- Added back Create Crafts & Additions items for lighting, holiday cheer
 
