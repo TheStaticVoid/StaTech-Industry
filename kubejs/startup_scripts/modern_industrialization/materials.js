@@ -83,4 +83,12 @@ MIMaterialEvents.addMaterials(e => {
                 .block('iron')
                 .defaultRecipes();
         });
+
 });
+
+MIMaterialEvents.modifyMaterial("gold",
+    e => {
+        e.builder
+            .addParts('wire')
+            .defaultRecipes();
+})
