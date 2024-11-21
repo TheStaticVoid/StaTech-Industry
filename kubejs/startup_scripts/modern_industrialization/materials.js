@@ -89,6 +89,5 @@ MIMaterialEvents.addMaterials(e => {
 MIMaterialEvents.modifyMaterial("gold",
     e => {
         e.builder
-            .addParts('wire')
-            .defaultRecipes();
+            .addParts('wire');
 })
