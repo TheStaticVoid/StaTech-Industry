@@ -218,7 +218,7 @@ ServerEvents.recipes(e => {
             item: sp('bottle_of_failing'),
             count: 1
         },
-        required_advancement: sp('progression/unlock_bottle_of_failing')
+        required_advancement: sp('unlocks/items/bottle_of_failing')
     });
 
     // -- MAGIC DIAMOND -- //
