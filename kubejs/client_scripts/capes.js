@@ -80,4 +80,13 @@ CapeJS.addCapes(e => {
     e.register("62a6f98e-fbe8-4d1d-8645-53ccdf6d910f", "pack_completionist");           // Hicaro
     e.register("19bc6152-8bae-4fa3-8333-b5b42fdf17b1", "pack_completionist");           // WaffleBagel (WeeabooWill)
     e.register("15a0ae95-4591-4262-b5c8-dda76d982a46", "pack_completionist");           // itsClaus
+    e.register("f6f608e9-cd46-4260-8feb-f2b741db69bc", "pack_completionist");           // Irisirl
+    e.register("dec8cf04-4596-4237-a296-253bb6fedfac", "pack_completionist");           // Skyecodes
+    e.register("96e516ec-dabb-46a5-a106-0de66035cd15", "pack_completionist");           // S4s4LU123
+    e.register("12bdf2de-ed57-45f9-985c-5fdddf57c6a6", "pack_completionist");           // KHthe8th
+    e.register("4f42dca4-05d2-4332-a8b7-74845109ad7a", "pack_completionist");           // velziee
+    e.register("199d1444-3884-4570-b7fc-9a8f38b7b918", "pack_completionist");           // PlayingAvecFire (Bailey)
+    e.register("27b2034e-dc97-4211-abde-8c286a73d742", "pack_completionist");           // xdg22 (Felin)
+    e.register("10729fb4-7a23-4bd7-8a5c-6e985506a730", "pack_completionist");           // brek768 (Breck)
+    e.register("896a4155-10da-40c0-a5d5-895142436488", "pack_completionist");           // EpicLemon99
 });
