@@ -1,0 +1,13 @@
+name = "Modpack Update Checker"
+filename = "modpack-update-checker-1.21.1-neoforge-0.15.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0fef988f8ac306a78f8711a4b2a9d431753d506f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5929936
+project-id = 847414
