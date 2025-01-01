@@ -1,0 +1,31 @@
+[server]
+	#Stack limit of first dank storage
+	# Default: 256
+	# Range: > 1
+	stacklimit1 = 256
+	#Stack limit of second dank storage
+	# Default: 1024
+	# Range: > 1
+	stacklimit2 = 1024
+	#Stack limit of third dank storage
+	# Default: 4096
+	# Range: > 1
+	stacklimit3 = 4096
+	#Stack limit of fourth dank storage
+	# Default: 16384
+	# Range: > 1
+	stacklimit4 = 16384
+	#Stack limit of fifth dank storage
+	# Default: 65536
+	# Range: > 1
+	stacklimit5 = 65536
+	#Stack limit of sixth dank storage
+	# Default: 262144
+	# Range: > 1
+	stacklimit6 = 262144
+	#Stack limit of seventh dank storage
+	# Default: 2147483647
+	# Range: > 1
+	stacklimit7 = 2147483647
+	#Tags that are eligible for conversion, input as a list of resourcelocation, eg 'c:ingots/iron'
+	"convertible tags" = ["c:ingots/iron", "c:ingots/gold", "c:ores/coal", "c:ores/diamond", "c:ores/emerald", "c:ores/gold", "c:ores/iron", "c:ores/lapis", "c:ores/redstone", "c:gems/amethyst", "c:gems/peridot", "c:gems/ruby", "c:ingots/copper", "c:ingots/lead", "c:ingots/nickel", "c:ingots/silver", "c:ingots/tin", "c:ores/copper", "c:ores/lead", "c:ores/ruby", "c:ores/silver", "c:ores/tin"]

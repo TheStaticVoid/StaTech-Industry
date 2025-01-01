@@ -1,0 +1,32 @@
+#List of default presets to disable.
+disabledDefaultPresets = []
+#List of optional presets to enable.
+enabledOptionalPresets = []
+#List of names the merchant can have.
+merchantNames = ["Swap-O-Matic", "Emerald Muncher", "Weathered Salesperson"]
+#The range within animals can be fed by the feeding trough.
+# Default: 8
+# Range: > -2147483648
+feedingTroughRange = 8
+#The maximum amount of animals (per type) until the feeding trough stops feeding.
+# Default: 24
+# Range: > -2147483648
+feedingTroughMaxAnimals = 24
+#The range at which the chicken nest picks up laid eggs.
+# Default: 8
+# Range: > -2147483648
+chickenNestRange = 8
+#The chance to get a bonus crop when using Green Fertilizer.
+# Default: 1.0
+# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+fertilizerBonusCropChance = 1.0
+#The chance to get a bonus growth when using Red Fertilizer.
+# Default: 1.0
+# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+fertilizerBonusGrowthChance = 1.0
+#The chance for Fertilized Farmland to turn back into regular Farmland (per provided bonus).
+# Default: 0.0
+# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+fertilizerRegressionChance = 0.0
+#If true, merchants will be considered babies (on a technical level only), which may resolve exploits based on merchant death loot (like blood)
+treatMerchantsLikeBabies = true

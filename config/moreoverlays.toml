@@ -1,0 +1,95 @@
+#Settings for the light / mobspawn overlay
+[lightoverlay]
+	#Range of the lightoverlay (positive Y)
+	# Default: 4
+	# Range: > 0
+	uprange = 4
+	#Range of the lightoverlay (negative Y)
+	# Default: 16
+	# Range: > 0
+	downrange = 16
+	#Range of the lightoverlay (Horizontal N,E,S,W)
+	# Default: 16
+	# Range: > 0
+	hrange = 16
+	#Ignore if there in no 2 Block space to spawn. (Less lag if true)
+	ignoreLayer = false
+	#Ignore if mobs can actually spawn according to other mods and biome spawn lists and just go by light value
+	ignoreSpawnList = false
+	#Blocks can allow/disallow spawns for different entity types. The check for this isn't very performat.
+	#Setting this to true will increase performance but decrease accuracy.
+	simpleCheck = false
+	#Minimum save light level where no mobs can spawn
+	# Default: 1
+	# Range: > 0
+	saveLevel = 1
+	#Finished 1.18 migration (don't change)
+	finishedMigration = false
+
+#Settings for the chunk bounds overlay
+[chunkbounds]
+	#Radius (in Chunks) to show the edges (red line)
+	# Default: 1
+	# Range: > 0
+	radius = 1
+	#Show the middle of the current Chunk (yellow line)
+	middle = true
+
+#General render settings.
+#Line thickness, Colors, ...
+[rendersettings]
+	#Color for the chunk edge
+	# Default: 16711680
+	# Range: 0 ~ 16777215
+	chunk_edge_color = 16711680
+	#Color for the chunk grid
+	# Default: 65280
+	# Range: 0 ~ 16777215
+	chunk_grid_color = 65280
+	#Color for the middle chunk line
+	# Default: 16776960
+	# Range: 0 ~ 16777215
+	chunk_mid_color = 16776960
+	#Line width for chunk boundaries
+	# Default: 1.5
+	# Range: 0.0 ~ 1.7976931348623157E308
+	chunk_line_width = 1.5
+	#Color the X that marks "Spawns always possible"
+	# Default: 16711680
+	# Range: 0 ~ 16777215
+	spawn_always_color = 16711680
+	#Color the X that marks "Spawns at night possible"
+	# Default: 16776960
+	# Range: 0 ~ 16777215
+	spawn_night_color = 16776960
+	#Line width for spawn indication
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	spawn_line_width = 2.0
+
+#Settings for the search overlay
+[searchoverlay]
+	#Setting this to false this will disable the functionality to double click the JEI search bar for item searching.
+	search_enabled = true
+	#Also searches for the custom name of an item in user inventory (for example items named in anvil)
+	#Setting this to false will increase performance.
+	custom_search = true
+	#Also searches the tooltip of items in the users inventory
+	#Setting this to false will increase performance.
+	search_tooltip = true
+	#Maximum amount of search results for the item searching to be active
+	# Default: 16384
+	# Range: > 256
+	search_max_results = 16384
+	#Color for the search box when double clicked
+	# Default: 16776960
+	# Range: 0 ~ 16777215
+	search_box_color = 16776960
+	#Color of the filtered out slots
+	# Default: 0
+	# Range: 0 ~ 16777215
+	search_slot_color = 0
+	#Transparancy for the filtered out slots
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	search_slot_alpha = 0.5

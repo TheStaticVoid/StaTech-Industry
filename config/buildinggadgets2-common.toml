@@ -1,0 +1,64 @@
+#General settings
+[general]
+	#Maximum distance you can build at
+	# Default: 32
+	# Range: 1 ~ 64
+	rayTraceRange = 32
+
+#Power settings
+[power]
+
+	#Building Gadget
+	[power.building_gadget]
+		#Maximum power for the Building Gadget
+		# Default: 500000
+		# Range: > 0
+		maxPower = 500000
+		#Base cost per block placed
+		# Default: 50
+		# Range: > 0
+		baseCost = 50
+
+	#Exchanging Gadget
+	[power.exchanging_gadget]
+		#Maximum power for the Exchanging Gadget
+		# Default: 500000
+		# Range: > 0
+		maxPower = 500000
+		#Base cost per block exchanged
+		# Default: 100
+		# Range: > 0
+		baseCost = 100
+
+	#Cut Paste Gadget
+	[power.cutpaste_gadget]
+		#Maximum power for the Cut and Paste Gadget
+		# Default: 5000000
+		# Range: > 0
+		maxPower = 5000000
+		#Base cost per block - Checked during CUT, Charged during PASTE
+		# Default: 50
+		# Range: > 0
+		baseCost = 50
+
+	#Copy Paste Gadget
+	[power.copypaste_gadget]
+		#Maximum power for the Copy and Paste Gadget
+		# Default: 1000000
+		# Range: > 0
+		maxPower = 1000000
+		#Base cost per block Paste (Copy is Free)
+		# Default: 50
+		# Range: > 0
+		baseCost = 50
+
+	#Destruction Gadget
+	[power.destruction_gadget]
+		#Maximum power for the Destruction Gadget
+		# Default: 2000000
+		# Range: > 0
+		maxPower = 2000000
+		#Base cost per block Destroyed
+		# Default: 50
+		# Range: > 0
+		baseCost = 50

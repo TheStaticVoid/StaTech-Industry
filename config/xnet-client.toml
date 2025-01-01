@@ -1,0 +1,8 @@
+#General settings
+[general]
+	#Maximum size of the packet used to send copy/pasted channels/connectors to the server. -1 means no maximum (packets are split)
+	# Default: -1
+	# Range: -1 ~ 1000000000
+	controllerMaxPaste = -1
+	#If true then cables are also shown when sneaking even if they are not in a facade
+	showNonFacadedCablesWhileSneaking = true

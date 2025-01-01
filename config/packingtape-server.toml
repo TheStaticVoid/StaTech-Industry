@@ -1,0 +1,11 @@
+[general]
+	#How many times the tape roll can be used before it breaks
+	# Default: 8
+	# Range: 0 ~ 2147483646
+	tape_roll_uses = 8
+	#Whether the tape roll consumes paper when used
+	consume_paper = true
+	#How much space (in bytes) the packaged block contents can take up.
+	# Default: 1000000
+	# Range: > 0
+	max_storage_size = 1000000

@@ -1,0 +1,87 @@
+#Can the admin tool be used?
+allowAdminTool = true
+#Should mines spawn fire after exploding?
+shouldSpawnFire = true
+#Should players be able to break a mine without it exploding?
+ableToBreakMines = true
+#Should mines' explosions be smaller than usual?
+smallerMineExplosion = false
+#Should mines explode if broken while in Creative mode?
+mineExplodesWhenInCreative = true
+#Set this to false if you want mines to not break blocks when they explode. If this is set to true, the blockExplosionDropDecay gamerule will be respected
+mineExplosionsBreakBlocks = true
+#At most from how many blocks away can a laser block connect to another laser block?
+# Default: 5
+# Range: > 0
+laserBlockRange = 5
+#At most from how many blocks away can an inventory scanner connect to another inventory scanner?
+# Default: 2
+# Range: > 0
+inventoryScannerRange = 2
+#What is the maximum value that can be set for an alarm's range option? Do note, that this may be limited by chunk loading distance. Higher values may also lead to the setting being less finetuneable.
+# Default: 100
+# Range: > 1
+maxAlarmRange = 100
+#Allows to claim blocks that do not have an owner by rightclicking them with the Universal Owner Changer.
+allowBlockClaim = false
+#Should reinforced blocks' textures be slightly darker than their vanilla counterparts? Servers can force this setting on clients if the server config "force_reinforced_block_tint" is set to true.
+reinforced_block_tint = true
+#Set this to true if you want to force the setting of reinforced_block_tint for players.
+force_reinforced_block_tint = false
+#Display owner face on retinal scanner?
+retinalScannerFace = true
+#Set this to true to enable every player on a scoreboard team (or FTB Teams party) to own the blocks of every other player on the same team.
+#This enables players on the same team to break each other's reinforced blocks, change options, add/remove modules, and have access to all other owner-restricted things.
+enable_team_ownership = false
+#This list defines in which order SecurityCraft checks teams of players to determine if they're on the same team, if "enable_team_ownership" is set to true. First in the list means it's checked first.
+#SecurityCraft will continue checking for teams down the list until it finds a case where the players are on the same team, or the list is over. E.g. Given the default config, if FTB Teams is installed but the players do not share a team, the mod checks if the same players are on the same vanilla team.
+#Removing an entry makes the mod ignore that kind of team. Valid values are "FTB_TEAMS" and "VANILLA".
+team_ownership_precedence = ["FTB_TEAMS", "VANILLA"]
+#Set this to true to disable sending the message that SecurityCraft shows when a player joins.
+#Note, that this stops showing the message for every player, even those that want to see them.
+disable_thanks_message = false
+#Set this to true if you want players wearing a different player's skull to be able to trick their retinal scanners and scanner doors into activating.
+trick_scanners_with_player_heads = false
+#Set this to true to prevent players from glitching through a floor made of reinforced blocks using a boat. This is achieved by not letting players exit a boat in a way that would place them inside reinforced blocks.
+prevent_reinforced_floor_glitching = false
+#Set the amount of damage the taser inflicts onto the mobs it hits. Default is half a heart.
+# Default: 1.0
+# Range: 0.0 ~ 1.7976931348623157E308
+taser_damage = 1.0
+#Set the amount of damage the powered taser inflicts onto the mobs it hits. Default is one heart.
+# Default: 2.0
+# Range: 0.0 ~ 1.7976931348623157E308
+powered_taser_damage = 2.0
+#Defines the damage inflicted to an entity if it passes through a laser with installed harming module. This is given in health points, meaning 2 health points = 1 heart
+# Default: 10.0
+# Range: 0.0 ~ 1.7976931348623157E308
+laser_damage = 10.0
+#Defines the damage that a block requiring a passcode deals to the player, if the player enters an incorrect code. This only works if a harming module is installed.
+#Default is two hearts of damage.
+# Default: 4
+# Range: > 1
+incorrectPasscodeDamage = 4
+#Set the amount of damage the default Sentry bullet inflicts onto the mobs it hits. This will not affect other projectiles the Sentry can use, like arrows. Default is one heart.
+# Default: 2
+# Range: > 0
+sentry_bullet_damage = 2
+#Set the amount of damage the player receives when they are suffocating in a reinforced block. The default is two and a half hearts. If the value is set to -1, vanilla suffocation damage will be used.
+# Default: 5
+# Range: > -1
+reinforced_suffocation_damage = 5
+#Set this to false to disallow players to activate night vision without having the potion effect when looking through cameras.
+allow_camera_night_vision = true
+#Defines the amount of time in milliseconds that needs to pass between two separate attempts from a player to enter a passcode.
+# Default: 250
+# Range: 0 ~ 2000
+passcode_check_cooldown = 250
+#Set this to false to disable the log warning that is sent whenever a player tries to enter a passcode while on passcode cooldown.
+passcode_spam_log_warning_enabled = true
+#The warning that is sent into the server log whenever a player tries to enter a passcode while on passcode cooldown. "%1$s" will be replaced with the player's name, "%2$s" with the passcode-protected object's name and "%3$s" with the object's position and dimension.
+passcode_spam_log_warning = "Player \"%1$s\" tried to enter a passcode into \"%2$s\" at position [%3$s] too quickly!"
+#Setting this to false disables the ability of the Universal Block Reinforcer to (un-)reinforce blocks that are placed in the world.
+in_world_un_reinforcing = true
+#Add entities to this list that the Sentry currently does not attack, but that you want the Sentry to attack. The denylist takes priority over the allowlist.
+sentry_attackable_entities_allowlist = []
+#Add entities to this list that the Sentry currently attacks, but that you want the Sentry to NOT attack. The denylist takes priority over the allowlist.
+sentry_attackable_entities_denylist = []

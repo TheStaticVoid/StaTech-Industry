@@ -1,0 +1,39 @@
+[camera]
+	#The time in milliseconds the camera will be on cooldown after taking an image
+	# Default: 5000
+	# Range: > 100
+	cooldown = 5000
+
+	[camera.consumed_item]
+		#The amount of the item that is consumed when taking an image
+		# Default: 1
+		# Range: 1 ~ 32767
+		amount = 1
+
+[image]
+	#The maximum size of an image in bytes when transferred to the server
+	#Higher values mean more delay/lag between taking an image and getting it into your inventory
+	# Default: 200000
+	# Range: 50000 ~ 1000000
+	max_size = 200000
+	#The amount of jpeg compression applied to the image
+	#If the image exceeds the 'max_image_size', it will get compressed anyways
+	# Default: 0.5
+	# Range: 0.1 ~ 1.0
+	compression = 0.5
+	#If it is allowed to upload custom images
+	allow_upload = true
+
+[image_frame]
+	#If only the owner can modify or break the image frame
+	only_owner_modify = false
+
+[advanced_data]
+	#If the image items should store additional data
+	#This isn't used by the mod itself
+	#Only enable this if you know what you are doing
+	enable = false
+	#The amount of entities that should be stored
+	# Default: 16
+	# Range: 1 ~ 128
+	max_entities = 16

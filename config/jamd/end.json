@@ -1,0 +1,44 @@
+{
+  "oreMultiplier": 1,
+  "ores": [
+    {
+      "ore_size": 6,
+      "discard_on_air_chance": 0.0,
+      "modifiers": [
+        {
+          "count": 8,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "min_inclusive": {
+              "absolute": 16
+            },
+            "max_inclusive": {
+              "absolute": 92
+            },
+            "type": "minecraft:uniform"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "tag": "c:end_stones",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "silentgear:azure_silver_ore"
+          }
+        }
+      ]
+    }
+  ]
+}
