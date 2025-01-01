@@ -1,5 +1,5 @@
 # StaTech-Industry
-Minecraft 1.19.2 modpack focused on Modern Industrializations. Join us on [Discord](https://discord.gg/RDaJEnN3uS). Click [here](https://github.com/TheStaticVoid/StaTech-Industry/blob/main/MODLIST.md) for a full list of mods.
+Minecraft 1.21 modpack focused on Modern Industrializations. Join us on [Discord](https://discord.gg/RDaJEnN3uS). Click [here](https://github.com/TheStaticVoid/StaTech-Industry/blob/main/MODLIST.md) for a full list of mods.
 
 This modpack also includes the following resources. Do not report any issues you might experience with these to their developers, but rather to this mod's Discord.
 
