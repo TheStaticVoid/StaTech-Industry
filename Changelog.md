@@ -1,6 +1,15 @@
 # StaTech Industry 1.1.14 Changelog:
 Maintenance patch + Spectrum update
 
+## Mods added:
+- [Jade](https://www.curseforge.com/minecraft/mc-mods/jade) - replaces wthit
+- [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons-fabric)
+
+## Mods removed:
+- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - megane lost support for WTHIT, going with Jade from here out
+- [megane](https://www.curseforge.com/minecraft/mc-mods/megane)o
+- [cAn i MiNe thIS bLOCk?](https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block)
+
 ## Mods updated:
 - Fabric loader version 0.15.7 -> 0.16.9
 - [Ad Astra](https://www.curseforge.com/minecraft/mc-mods/ad-astra) - 1.18 -> 1.24
@@ -41,7 +50,10 @@ Maintenance patch + Spectrum update
 - [Turtlematic](https://www.curseforge.com/minecraft/mc-mods/turtlematic) - 0.5.4 -> 0.6.0
 - [Wavey Capes](https://www.curseforge.com/minecraft/mc-mods/waveycapes) - 1.4.4 -> 1.4.13
 - [Wireless Chargers](https://www.curseforge.com/minecraft/mc-mods/wireless-chargers) - 1.0.9 -> 1.0.9a
-- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - 5.24.0 -> 5.30.5
 
 ## Other changes:
 - Completionist cape list updates
+- [Remove double space in bronze mixer description #514](https://github.com/TheStaticVoid/StaTech-Industry/pull/514) - by Quezler
+- [Fix incorrect modname in REI search term for Dustrial Decor on Utilities quest page. #515](https://github.com/TheStaticVoid/StaTech-Industry/pull/515) - by JustinMullin
+- [The crystal heart gives exactly 10 health / 5 hearts #516](https://github.com/TheStaticVoid/StaTech-Industry/pull/516) - by Quezler
+- [Add missing space between g and a #517](https://github.com/TheStaticVoid/StaTech-Industry/pull/517) - Quezler

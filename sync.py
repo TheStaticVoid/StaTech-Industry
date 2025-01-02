@@ -2,7 +2,7 @@
 
 import shutil, sys, os
 
-instance_folder = 'F:/PrismLauncher/instances/StaTech 2.0 2/minecraft'
+instance_folder = 'F:/PrismLauncher/instances/StaTech Industry-1.1.14/minecraft'
 current_dir = '.'
 packwiz = os.getcwd() + '/packwiz.exe cf detect'
 
@@ -42,10 +42,10 @@ shutil.copytree(instance_folder + data, current_dir + data)
 print('KubeJS sync end')
 
 # Config sync
-print('Copying mod config')
-config = '/config/'
-shutil.rmtree(current_dir + config)
-shutil.copytree(instance_folder + config, current_dir + config, dirs_exist_ok=True)
+# print('Copying mod config')
+# config = '/config/'
+# shutil.rmtree(current_dir + config)
+# shutil.copytree(instance_folder + config, current_dir + config, dirs_exist_ok=True)
 
 # Modlist sync - use -m argument
 if len(sys.argv) > 1:
