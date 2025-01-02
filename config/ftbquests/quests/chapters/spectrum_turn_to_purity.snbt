@@ -1,0 +1,140 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "spectrum_turn_to_purity"
+	group: "135E7B9D4273E5DD"
+	hide_quest_until_deps_visible: true
+	icon: "spectrum:moonstone_cluster"
+	id: "03C0B0B2584C0222"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["38FE7BB7A9B08424"]
+			description: [
+				"You have accomplished what you set out to do. You have broken free of the confines of the overworld."
+				""
+				"But your experiment has raised more questions than answers. You have found evidence of long-dead civilizations beneath the bedrock. "
+				""
+				"Who were they? "
+				"What killed them? "
+				"What did they have to do with your quest?"
+				""
+				"&oThe only way to answer these questions is to explore this new world.&r"
+				""
+				"&l&6&oThe plot thickens...&r&r&r"
+			]
+			icon: "spectrum:moonstone_cluster"
+			id: "79021A59C661F6FE"
+			rewards: [{
+				id: "4A1BA5C034BB3D99"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.5d
+			subtitle: "The Beginning of the End"
+			tasks: [{
+				id: "6401D25D2C4A4FE9"
+				title: "Visit the Deeper Down"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79021A59C661F6FE"]
+			id: "430434893D6A989C"
+			optional: true
+			tasks: [{
+				advancement: "spectrum:lategame/visit_all_deeper_down_biomes"
+				criterion: ""
+				id: "2670E4503776CFB0"
+				type: "advancement"
+			}]
+			title: "Biomes Below Bedrock"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79021A59C661F6FE"]
+			id: "3AAF1A0973D3EF34"
+			rewards: [
+				{
+					count: 3
+					id: "461A4C18A0FE2FD0"
+					item: "spectrum:moonstone_shard"
+					type: "item"
+				}
+				{
+					id: "3AD38FBE2C1A7EE6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					advancement: "spectrum:lategame/collect_moonstone_shard"
+					criterion: ""
+					id: "66A66F3F322E3F1A"
+					type: "advancement"
+				}
+				{
+					count: 3L
+					id: "125C65984FF4AAB7"
+					item: "spectrum:moonstone_shard"
+					type: "item"
+				}
+			]
+			title: "Moonstone Sonata"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3AAF1A0973D3EF34"]
+			id: "1E6E60798FA42890"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				advancement: "spectrum:lategame/craft_moonstone_pedestal"
+				criterion: ""
+				id: "57D7717754D2B37E"
+				type: "advancement"
+			}]
+			title: "Incandescence"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1E6E60798FA42890"]
+			id: "36B2F78C6D12E92F"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				advancement: "spectrum:lategame/build_complex_pedestal_structure"
+				criterion: ""
+				id: "3FFBD1CDFFA658D8"
+				type: "advancement"
+			}]
+			title: "One Last Time..."
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36B2F78C6D12E92F"]
+			id: "10B34C26488A4090"
+			shape: "square"
+			tasks: [{
+				advancement: "spectrum:lategame/build_complex_pedestal_structure_without_moonstone"
+				criterion: ""
+				id: "0725217167017CA9"
+				type: "advancement"
+			}]
+			title: "Sike"
+			x: -4.5d
+			y: -2.5d
+		}
+	]
+	title: "&aSpectrum: Turn to Purity&r"
+}
