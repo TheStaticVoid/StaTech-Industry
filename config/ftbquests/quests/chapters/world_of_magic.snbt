@@ -18,6 +18,8 @@
 				"Progression is locked behind &arevelations&r, finding / making certain items will unlock the recipe in &dREI&r. To complement this, most of the quests in this chapter are &bhidden&r. Most of the crafting will be done with &aSpectrum&r."
 				""
 				"Progressing through this chapter is &cnot required to beat the pack&r, but you might find some of the items unlocked to be useful in your &aindustrial adventure&r. &o&eIt's also a fun chapter if you need a break from the factory&r."
+				""
+				"While the main progression of &aSpectrum&r is covered in the quest book, recent additions to the mods may not be fully documented, and I highly recommend to keep your &dWorld of Color&r book on hand as you make &bnew discoveries&r, in case there is anything that is not specifically shown in the quest book."
 			]
 			id: "330CFCABB75098C8"
 			shape: "square"
@@ -6928,14 +6930,14 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "29307B90F39C77A2"
+					id: "5563DAE60C338493"
 					table_id: 2662802482107568753L
-					type: "loot"
+					type: "random"
 				}
 				{
-					id: "10B574A4C67F51DA"
-					type: "xp_levels"
-					xp_levels: 15
+					id: "4A60BAE761C3CA55"
+					type: "xp"
+					xp: 10
 				}
 			]
 			shape: "square"

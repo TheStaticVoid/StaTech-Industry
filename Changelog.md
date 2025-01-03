@@ -5,6 +5,7 @@ Maintenance patch + Spectrum update
 - [Jade](https://www.curseforge.com/minecraft/mc-mods/jade) - replaces wthit
 - [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons-fabric)
 - [Raised](https://www.curseforge.com/minecraft/mc-mods/raised) - removed awhile back, works again now
+- [XXL Packets](https://www.curseforge.com/minecraft/mc-mods/xxl-packets) - Fixes some mod issues
 
 ## Mods removed:
 - [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - megane lost support for WTHIT, going with Jade from here out
@@ -58,3 +59,4 @@ Maintenance patch + Spectrum update
 - [Fix incorrect modname in REI search term for Dustrial Decor on Utilities quest page. #515](https://github.com/TheStaticVoid/StaTech-Industry/pull/515) - by JustinMullin
 - [The crystal heart gives exactly 10 health / 5 hearts #516](https://github.com/TheStaticVoid/StaTech-Industry/pull/516) - by Quezler
 - [Add missing space between g and a #517](https://github.com/TheStaticVoid/StaTech-Industry/pull/517) - Quezler
+- [Typo: for most recipes](https://github.com/TheStaticVoid/StaTech-Industry/pull/519) - Quizler
