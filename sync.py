@@ -2,9 +2,14 @@
 
 import shutil, sys, os
 
+# Change to your prism instance folder
 instance_folder = 'F:/PrismLauncher/instances/StaTech Industry-1.1.14/minecraft'
 current_dir = '.'
 packwiz = os.getcwd() + '/packwiz.exe cf detect'
+
+def copyFiles(folder):
+    shutil.rmtree(current_dir + folder)
+    shutil.copytree(instance_folder + folder, current_dir + folder, dirs_exist_ok=True)
 
 # KubeJS sync
 print('KubeJS sync start')
@@ -16,46 +21,44 @@ data = '/kubejs/data/'
 
 # Copy startup scripts
 print('-- Copying startup scripts')
-shutil.rmtree(current_dir + startup)
-shutil.copytree(instance_folder + startup, current_dir + startup, dirs_exist_ok=True)
+copyFiles(startup)
 
 # Copy sever scripts
 print('-- Copying server scripts')
-shutil.rmtree(current_dir + server)
-shutil.copytree(instance_folder + server, current_dir + server, dirs_exist_ok=True)
+copyFiles(server)
 
 # Copy client scripts
 print('-- Copying client scripts')
-shutil.rmtree(current_dir + client)
-shutil.copytree(instance_folder + client, current_dir + client, dirs_exist_ok=True)
+copyFiles(client)
 
 # Copy assets
 print('-- Copying assets')
-shutil.rmtree(current_dir + assets)
-shutil.copytree(instance_folder + assets, current_dir + assets, dirs_exist_ok=True)
+copyFiles(assets)
 
 # Copy data
 print('-- Copying data')
-shutil.rmtree(current_dir + data)
-shutil.copytree(instance_folder + data, current_dir + data)
+copyFiles(data)
 
 print('KubeJS sync end')
 
 # Config sync
-# print('Copying mod config')
-# config = '/config/'
-# shutil.rmtree(current_dir + config)
-# shutil.copytree(instance_folder + config, current_dir + config, dirs_exist_ok=True)
+print('Copying mod config')
+config = '/config/'
+copyFiles(config)
 
-# Modlist sync - use -m argument
 if len(sys.argv) > 1:
+    # Modlist sync - use -m argument
     if sys.argv[1] == '-m':
         print('Syncing mods')
         mods = '/mods/'
-        shutil.rmtree(current_dir + mods)
-        shutil.copytree(instance_folder + mods, current_dir + mods, dirs_exist_ok=True)
+        copyFiles(mods)
         # delete the prism index folder
         shutil.rmtree(current_dir + mods + '.index')
         os.system(packwiz)
+    # Quest sync - use -q argument
+    elif sys.argv[1] == '-q':
+        print('Syncing quests')
+        quests = '/config/ftbquests/quests/'
+        copyFiles(quests)
 
 print('Done!')

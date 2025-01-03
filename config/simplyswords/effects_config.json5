@@ -1,0 +1,306 @@
+{
+// -- EFFECTS CONFIGURATION -- 
+
+//Chance range 0-100, where 100 = 100% chance to occur
+//Radius is measured in blocks
+//Duration in ticks, where 20 is equivalent to one second 
+
+// ---------------------------- 
+// -- Runic Power: Swiftness -- 
+// ---------------------------- 
+  "speed_chance": 15.0,
+  "speed_duration": 300.0,
+
+// ----------------------- 
+// -- Runic Power: Slow -- 
+// ----------------------- 
+  "slowness_chance": 50.0,
+  "slowness_duration": 50.0,
+
+// ------------------------- 
+// -- Runic Power: Poison -- 
+// ------------------------- 
+  "toxin_chance": 15.0,
+  "toxin_duration": 150.0,
+
+// ------------------------- 
+// -- Runic Power: Freeze -- 
+// ------------------------- 
+  "freeze_chance": 15.0,
+  "freeze_duration": 120.0,
+
+// --------------------------- 
+// -- Runic Power: Wildfire -- 
+// --------------------------- 
+  "wildfire_chance": 10.0,
+  "wildfire_duration": 180.0,
+  "wildfire_radius": 10.0,
+
+// ------------------------ 
+// -- Runic Power: Float -- 
+// ------------------------ 
+  "levitation_chance": 15.0,
+  "levitation_duration": 50.0,
+
+// ------------------------- 
+// -- Runic Power: Zephyr -- 
+// ------------------------- 
+  "zephyr_chance": 15.0,
+  "zephyr_duration": 180.0,
+
+// ---------------------------- 
+// -- Runic Power: Shielding -- 
+// ---------------------------- 
+  "shielding_chance": 15.0,
+  "shielding_duration": 60.0,
+
+// ---------------------------- 
+// -- Runic Power: Stoneskin -- 
+// ---------------------------- 
+  "stoneskin_chance": 15.0,
+  "stoneskin_duration": 120.0,
+
+// ----------------------------- 
+// -- Runic Power: Trailblaze -- 
+// ----------------------------- 
+  "trailblaze_chance": 15.0,
+  "trailblaze_duration": 120.0,
+
+// ------------------------- 
+// -- Runic Power: Weaken -- 
+// ------------------------- 
+  "weaken_chance": 15.0,
+  "weaken_duration": 120.0,
+
+// --------------------------- 
+// -- Runic Power: Unstable -- 
+// --------------------------- 
+  "unstable_frequency": 140.0,
+  "unstable_duration": 140.0,
+
+// --------------------------------- 
+// -- Runic Power: Active Defence -- 
+// --------------------------------- 
+  "active_defence_frequency": 20.0,
+  "active_defence_radius": 5.0,
+
+// ----------------------------- 
+// -- Runic Power: Frost Ward -- 
+// ----------------------------- 
+  "frostward_frequency": 20.0,
+  "frostward_radius": 5.0,
+  "frostward_slow_duration": 60.0,
+
+// --------------------------- 
+// -- Runic Power: Momentum -- 
+// --------------------------- 
+  "momentum_cooldown": 140.0,
+
+// ------------------------- 
+// -- Runic Power: Imbued -- 
+// ------------------------- 
+  "imbued_chance": 15.0,
+
+// ---------------------------- 
+// -- Unique Effect: Watcher -- 
+// -- Restore amount refers to health gained from each enemy in range -- 
+// ---------------------------- 
+  "watcher_chance": 5.0,
+  "watcher_restore_amount": 0.5,
+  "watcher_radius": 8.0,
+
+// ------------------------- 
+// -- Unique Effect: Omen -- 
+// -- Absorption amount refers to the tier of regeneration gained on proc -- 
+// -- Instantkill Threshold refers to the % of maxhealth an enemy must be UNDER in order for the effect to proc. Where 1 = 100% -- 
+// ------------------------- 
+  "omen_chance": 75.0,
+
+// ------------------------------- 
+// -- Unique Effect: Soul Steal -- 
+// Duration refers to the haste, slow, and glow effects 
+// ------------------------------- 
+  "omen_absorption_amount": 1.0,
+  "omen_instantkill_threshold": 0.25,
+  "steal_chance": 25.0,
+  "steal_duration": 400.0,
+  "steal_invis_duration": 120.0,
+  "steal_blind_duration": 200.0,
+  "steal_radius": 30.0,
+
+// ---------------------------- 
+// -- Unique Effect: Gravity -- 
+// NOT YET IMPLEMENTED 
+// ---------------------------- 
+  "gravity_chance": 35.0,
+  "gravity_duration": 250.0,
+  "gravity_radius": 10.0,
+
+// ------------------------------ 
+// -- Unique Effect: Soul Meld -- 
+// ------------------------------ 
+  "soulmeld_chance": 75.0,
+  "soulmeld_duration": 250.0,
+  "soulmeld_radius": 5.0,
+
+// ------------------------------ 
+// -- Unique Effect: Soul Rend -- 
+// ------------------------------ 
+  "soulrend_chance": 85.0,
+  "soulrend_duration": 500.0,
+  "soulrend_rend_damage_multiplier": 3.0,
+  "soulrend_rend_heal_multiplier": 0.5,
+  "soulrend_radius": 10.0,
+  "soulrend_max_stacks": 8.0,
+
+// ----------------------------- 
+// -- Unique Effect: Ferocity -- 
+// ----------------------------- 
+  "ferocity_chance": 75.0,
+  "ferocity_duration": 100.0,
+  "ferocity_max_stacks": 15.0,
+  "ferocity_strength_tier": 2.0,
+
+// ------------------------------ 
+// -- Unique Effect: Ember Ire -- 
+// ------------------------------ 
+  "ember_ire_chance": 30.0,
+  "ember_ire_duration": 150.0,
+
+// ---------------------------------- 
+// -- Unique Effect: Volcanic Fury -- 
+// ---------------------------------- 
+  "volcanic_fury_chance": 25.0,
+  "volcanic_fury_radius": 3.0,
+  "volcanic_fury_cooldown": 300.0,
+  "volcanic_fury_damage": 3.0,
+
+// -------------------------- 
+// -- Unique Effect: Storm -- 
+// -------------------------- 
+  "storm_chance": 15.0,
+  "storm_radius": 10.0,
+
+// --------------------------- 
+// -- Unique Effect: Plague -- 
+// --------------------------- 
+  "plague_chance": 55.0,
+
+// ------------------------------ 
+// -- Unique Effect: Brimstone -- 
+// ------------------------------ 
+  "brimstone_chance": 15.0,
+
+// ---------------------------- 
+// -- Unique Effect: Bramble -- 
+// ---------------------------- 
+  "bramble_chance": 45.0,
+  "bramble_radius": 10.0,
+
+// -------------------------------- 
+// -- Unique Effect: Soul Tether -- 
+// -------------------------------- 
+  "soultether_range": 32.0,
+  "soultether_radius": 8.0,
+  "soultether_duration": 120.0,
+  "soultether_ignite_duration": 120.0,
+  "soultether_resistance_duration": 60.0,
+
+// ------------------------------- 
+// -- Unique Effect: Frost Fury -- 
+// ------------------------------- 
+  "frostfury_cooldown": 380.0,
+  "frostfury_radius": 3.0,
+  "frostfury_damage": 18.0,
+  "frostfury_chance": 15.0,
+  "frostfury_duration": 80.0,
+
+// -------------------------------- 
+// -- Unique Effect: Molten Roar -- 
+// -------------------------------- 
+  "moltenroar_cooldown": 320.0,
+  "moltenroar_radius": 5.0,
+  "moltenroar_knockback_strength": 5.0,
+  "moltenroar_chance": 15.0,
+  "moltenroar_duration": 100.0,
+
+// ---------------------------------- 
+// -- Unique Effect: Frost Shatter -- 
+// ---------------------------------- 
+  "frostshatter_radius": 3.0,
+  "frostshatter_damage": 18.0,
+  "frostshatter_chance": 15.0,
+  "frostshatter_duration": 80.0,
+
+// ------------------------------- 
+// -- Unique Effect: Permafrost -- 
+// ------------------------------- 
+  "permafrost_radius": 4.0,
+  "permafrost_damage": 1.0,
+  "permafrost_cooldown": 600.0,
+  "permafrost_duration": 200.0,
+
+// ----------------------------------- 
+// -- Unique Effect: Arcane Assault -- 
+// ----------------------------------- 
+  "arcaneassault_radius": 6.0,
+  "arcaneassault_damage": 1.0,
+  "arcaneassault_cooldown": 220.0,
+  "arcaneassault_chance": 25.0,
+  "arcaneassault_duration": 120.0,
+
+// ---------------------------------- 
+// -- Unique Effect: Thunder Blitz -- 
+// ---------------------------------- 
+  "thunderblitz_radius": 2.0,
+  "thunderblitz_damage": 3.0,
+  "thunderblitz_cooldown": 250.0,
+  "thunderblitz_chance": 15.0,
+
+// ------------------------------- 
+// -- Unique Effect: Storm Jolt -- 
+// ------------------------------- 
+  "stormjolt_cooldown": 100.0,
+  "stormjolt_chance": 15.0,
+
+// --------------------------------- 
+// -- Unique Effect: Soul Anguish -- 
+// --------------------------------- 
+  "soulanguish_radius": 3.0,
+  "soulanguish_damage": 4.0,
+  "soulanguish_cooldown": 700.0,
+  "soulanguish_duration": 500.0,
+  "soulanguish_heal": 0.5,
+  "soulanguish_range": 22.0,
+
+// ---------------------------------- 
+// -- Unique Effect: Shock Deflect -- 
+// ---------------------------------- 
+  "shockdeflect_block_duration": 35.0,
+  "shockdeflect_damage": 12.0,
+  "shockdeflect_cooldown": 90.0,
+  "shockdeflect_parry_duration": 10.0,
+
+// ------------------------------- 
+// -- Unique Effect: Shadowmist -- 
+// ------------------------------- 
+  "shadowmist_cooldown": 200.0,
+  "shadowmist_chance": 25.0,
+  "shadowmist_damage_multiplier": 0.8,
+  "shadowmist_blind_duration": 60.0,
+  "shadowmist_radius": 4.0,
+
+// ------------------------------------- 
+// -- Unique Effect: Abyssal Standard -- 
+// ------------------------------------- 
+  "abyssalstandard_cooldown": 700.0,
+  "abyssalstandard_chance": 15.0,
+  "abyssalstandard_damage": 3.0,
+
+// --------------------------------------- 
+// -- Unique Effect: Righteous Standard -- 
+// --------------------------------------- 
+  "righteousstandard_cooldown": 700.0,
+  "righteousstandard_chance": 15.0,
+  "righteousstandard_damage": 3.0
+}

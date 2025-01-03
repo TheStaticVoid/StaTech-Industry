@@ -334,9 +334,9 @@
 			]
 			shape: "square"
 			tasks: [{
-				advancement: "spectrum:craft_colored_pedestal"
+				advancement: "spectrum:craft_cmy_pedestal"
 				criterion: ""
-				id: "12CDDF2278C0143A"
+				id: "521A54E1043A2C28"
 				type: "advancement"
 			}]
 			title: "CMY Pedestal Variant"
@@ -6941,31 +6941,17 @@
 			shape: "square"
 			size: 2.5d
 			subtitle: "The End of the Beginning"
-			tasks: [
-				{
-					advancement: "spectrum:midgame/enter_dimension"
-					criterion: ""
-					id: "569A37803C3F6F48"
-					type: "advancement"
-				}
-				{
-					dimension: "spectrum:deeper_down"
-					icon: "spectrum:moonstone_cluster"
-					id: "222FDE10F207D63F"
-					type: "dimension"
-				}
-				{
-					advancement: "spectrum:midgame/open_deeper_down_portal"
-					criterion: ""
-					id: "5189AB2EDE6F2249"
-					type: "advancement"
-				}
-			]
+			tasks: [{
+				advancement: "spectrum:midgame/enter_dimension"
+				criterion: ""
+				id: "569A37803C3F6F48"
+				type: "advancement"
+			}]
 			title: "What Once Was Impenetrable"
 			x: -13.75d
 			y: -3.75d
 		}
 	]
 	subtitle: ["Is that you Merasmus?"]
-	title: "&aWorld of Magic&r"
+	title: "&aSpectrum: World of Magic&r"
 }

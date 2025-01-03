@@ -4,10 +4,11 @@ Maintenance patch + Spectrum update
 ## Mods added:
 - [Jade](https://www.curseforge.com/minecraft/mc-mods/jade) - replaces wthit
 - [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons-fabric)
+- [Raised](https://www.curseforge.com/minecraft/mc-mods/raised) - removed awhile back, works again now
 
 ## Mods removed:
 - [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - megane lost support for WTHIT, going with Jade from here out
-- [megane](https://www.curseforge.com/minecraft/mc-mods/megane)o
+- [megane](https://www.curseforge.com/minecraft/mc-mods/megane)
 - [cAn i MiNe thIS bLOCk?](https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block)
 
 ## Mods updated:

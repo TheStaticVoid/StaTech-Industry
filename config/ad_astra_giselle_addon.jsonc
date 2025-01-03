@@ -1,0 +1,51 @@
+{
+    "items": {
+        "oxygen_can_fluid_capacity": 40500,
+        "oxygen_can_fluid_transfer": 10125,
+        "netherite_oxygen_can_fluid_capacity": 81000,
+        "netherite_oxygen_can_fluid_transfer": 20250
+    },
+    "machines": {
+        "fuel_loader_fluid_capacity": 648000,
+        "fuel_loader_fluid_transfer": 20250,
+        // Blocks from Fuel Loader to each direction
+        "fuel_loader_working_range": 2,
+        "automation_nasa_workbench_energy_capacity": 9600,
+        "automation_nasa_workbench_energy_usage": 24,
+        "automation_nasa_workbench_cook_time": 200,
+        "gravity_normalizer_energy_capacity": 9600,
+        // Blocks = x * y * z
+        "gravity_normalizer_energy_per_blocks": 0.5,
+        "gravity_normalizer_max_length": 31,
+        "gravity_normalizer_proof_duration": 10,
+        // Blocks from Rocket Sensor to each direction
+        "rocket_sensor_working_range": 2
+    },
+    "enchantments": {
+        // Show tooltip on this mod's enchanted book
+        "tooltip_enabled": true,
+        /*
+            Tooltip will don't show when 'Enchantment Descriptions' or 'Enchantment Lore' or 'CoFH Core' installed.
+            but, if this set 'true' show tooltip with ignore that mods.
+         */
+        "tooltip_ignore": false,
+        // Energy usage for proof [in every 10 ticks]
+        "space_fire_proof_energy_using": 10,
+        // Durability usage for proof
+        "space_fire_proof_durability_using": 1,
+        // Proof duration on using durability [ticks, be multiple of 10]
+        "space_fire_proof_durability_duration": 60,
+        // Energy usage for proof [in every 10 ticks]
+        "acid_rain_proof_energy_using": 10,
+        // Durability usage for proof
+        "acid_rain_proof_durability_using": 1,
+        // Proof duration on using durability [ticks, be multiple of 10]
+        "acid_rain_proof_durability_duration": 60,
+        // Energy usage for proof [in every 10 ticks]
+        "gravity_normalizing_energy_using": 10,
+        // Durability usage for proof
+        "gravity_normalizing_durability_using": 1,
+        // Proof duration on using durability [ticks, be multiple of 10]
+        "gravity_normalizing_durability_duration": 60
+    }
+}

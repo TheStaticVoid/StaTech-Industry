@@ -1,0 +1,28 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+Appearing on elevated flat terrain BELOW weirdness 0 or in unfilled("NULL(nothing)") spots in "plateau_biome_variants", here is the "plateau_biomes" layout:
+
+[ ARID-ICY, DRY-ICY, NEUTRAL-ICY, WET-ICY, HUMID-ICY ],
+[ ARID-COLD, DRY-COLD, NEUTRAL-COLD, WET-COLD, HUMID-COLD ],
+[ ARID-NEUTRAL, DRY-NEUTRAL, NEUTRAL-NEUTRAL, WET-NEUTRAL, HUMID-NEUTRAL ],
+[ ARID-WARM, DRY-WARM, NEUTRAL-WARM, WET-WARM, HUMID-WARM ],
+[ ARID-HOT, DRY-HOT, NEUTRAL-HOT, WET-HOT, HUMID-HOT ]
+
+All keys passed in must be valid in the biome registry!
+"minecraft:the_void" is invalid as it represents a value of "NULL(nothing)" internally.
+*/
+{
+	"value": [
+		[ "byg:cardinal_tundra", "byg:cardinal_tundra", "byg:frosted_coniferous_forest", "byg:frosted_taiga", "byg:coniferous_forest" ],
+		[ "byg:coconino_meadow", "byg:coconino_meadow", "byg:cika_woods", "byg:cika_woods", "byg:autumnal_taiga" ],
+		[ "byg:temperate_grove", "byg:temperate_grove", "byg:temperate_grove", "byg:rose_fields", "byg:weeping_witch_forest" ],
+		[ "byg:firecracker_shrubland", "byg:firecracker_shrubland", "byg:redwood_thicket", "byg:ebony_woods", "byg:forgotten_forest" ],
+		[ "byg:red_rock_valley", "byg:red_rock_valley", "byg:red_rock_valley", "byg:sierra_badlands", "byg:sierra_badlands" ]
+	]
+}

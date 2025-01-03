@@ -10,7 +10,9 @@
     "channels_comment": "Changes the channel capacity that cables provide in AE2.",
     "channels": "x2",
     "pathfindingStepsPerTick_comment": "The number of pathfinding steps that are taken per tick and per grid that is booting. Lower numbers will mean booting takes longer, but less work is done per tick.",
-    "pathfindingStepsPerTick": 4
+    "pathfindingStepsPerTick": 4,
+    "spatialAnchorEnableRandomTicks_comment": "Whether Spatial Anchors should force random chunk ticks and entity spawning.",
+    "spatialAnchorEnableRandomTicks": true
   },
   "automation": {
     "formationPlaneEntityLimit": 128

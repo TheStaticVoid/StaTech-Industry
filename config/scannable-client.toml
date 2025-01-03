@@ -5,49 +5,11 @@
 blockColors = []
 #The colors for blocks used when rendering their result bounding box
 #by block tag. See `blockColors` for format entries have to be in.
-blockTagColors = [
-  "c:antimony_ores=0xc7c8c1",
-  "c:bauxite_ores=0xbd6858",
-  "c:coal_ores=0x2c2c2c",
-  "c:copper_ores=0x9f5224",
-  "c:diamond_ores=0x5cdbd5",
-  "c:emerald_ores=0x50c878",
-  "c:galena_ores=0x64776e",
-  "c:gold_ores=0xfaee4d",
-  "c:iridium_ores=0x3d3c3a",
-  "c:iron_ores=0x664c33",
-  "c:lapis_ores=0x4a80ff",
-  "c:lead_ores=0x32375e",
-  "c:lignite_coal_ores=0x342425",
-  "c:mozanite_ores=0x561365",
-  "c:netherite_scrap_ores=0x552f2c",
-  "c:nickel_ores=0x808079",
-  "c:platinum_ores=0xbeada2",
-  "c:quartz_ores=0xfffcf5",
-  "c:redstone_ores=0x993333",
-  "c:ruby_ores=0x9b111e",
-  "c:salt_ores=0xadacb3",
-  "c:sapphire_ores=0x0f52ba",
-  "c:silver_ores=0x728eaa",
-  "c:tin_ores=0x676a8f",
-  "c:titanium_ores=0x90309c",
-  "c:tungsten_ores=0x272941",
-  "c:uranium_ores=0x3cff49",
-  "c:zinc_ores=0x7c979c",
-  "c:ores/ametrine=0x7b0045",
-  "c:ores/anthracite=0x353c40",
-  "c:ores/pendorite=0x673564",
-  "spectrum:amethyst_ores=0x462f75",
-  "spectrum:azurite_ores=0x302998",
-  "spectrum:citrine_ores=0x9d7418",
-  "spectrum:onyx_ores=0x1c1c1c",
-  "spectrum:shimmerstone_ores=0xc8bf36",
-  "spectrum:stratine_ore=0xb12f2d",
-  "spectrum:topaz_ores=0x104465",
-]
+blockTagColors = ["c:antimony_ores=0xc7c8c1", "c:bauxite_ores=0xbd6858", "c:coal_ores=0x2c2c2c", "c:copper_ores=0x9f5224", "c:diamond_ores=0x5cdbd5", "c:emerald_ores=0x50c878", "c:galena_ores=0x64776e", "c:gold_ores=0xfaee4d", "c:iridium_ores=0x3d3c3a", "c:iron_ores=0x664c33", "c:lapis_ores=0x4a80ff", "c:lead_ores=0x32375e", "c:lignite_coal_ores=0x342425", "c:mozanite_ores=0x561365", "c:netherite_scrap_ores=0x552f2c", "c:nickel_ores=0x808079", "c:platinum_ores=0xbeada2", "c:quartz_ores=0xfffcf5", "c:redstone_ores=0x993333", "c:ruby_ores=0x9b111e", "c:salt_ores=0xadacb3", "c:sapphire_ores=0x0f52ba", "c:silver_ores=0x728eaa", "c:tin_ores=0x676a8f", "c:titanium_ores=0x90309c", "c:tungsten_ores=0x272941", "c:uranium_ores=0x3cff49", "c:zinc_ores=0x7c979c", "c:ores/ametrine=0x7b0045", "c:ores/anthracite=0x353c40", "c:ores/pendorite=0x673564", "spectrum:amethyst_ores=0x462f75", "spectrum:azurite_ores=0x302998", "spectrum:citrine_ores=0x9d7418", "spectrum:onyx_ores=0x1c1c1c", "spectrum:shimmerstone_ores=0xc8bf36", "spectrum:stratine_ore=0xb12f2d", "spectrum:topaz_ores=0x104465"]
 #The colors for fluids used when rendering their result bounding box
 #by fluid name. See `blockColors` for format entries have to be in.
 fluidColors = []
 #The colors for fluids used when rendering their result bounding box
 #by fluid tag. See `blockColors` for format entries have to be in.
 fluidTagColors = ["minecraft:lava=0x9f5224", "minecraft:water=0x4040ff", "c:tea=0xbc7b3b", "c:oil=0x373a36"]
+

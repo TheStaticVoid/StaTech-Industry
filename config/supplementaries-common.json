@@ -1,0 +1,372 @@
+{
+  "redstone": {
+    "speaker_block": {
+      "enabled": true,
+      "narrator_enabled": true,
+      "range": 64
+    },
+    "bellows": {
+      "enabled": true,
+      "base_period": 78,
+      "power_scaling": 2.0,
+      "base_velocity_scaling": 5.0,
+      "velocity_changed_flag": true,
+      "range": 5
+    },
+    "spring_launcher": {
+      "enabled": true,
+      "velocity": 1.5,
+      "fall_height_required": 5
+    },
+    "enderman_head": {
+      "enabled": true,
+      "ticks_to_increase_power": 15,
+      "work_from_any_side": false
+    },
+    "turn_table": {
+      "enabled": true,
+      "shuffle_inventories": true,
+      "rotate_entities": true
+    },
+    "pulley_block": {
+      "enabled": true,
+      "mineshaft_elevator": 0.02
+    },
+    "crystal_display": {
+      "enabled": true,
+      "display_carry_over": true
+    },
+    "wind_vane": true,
+    "clock_block": true,
+    "redstone_illuminator": true,
+    "crank": true,
+    "faucet": true,
+    "cog_block": true,
+    "gold_door": true,
+    "gold_trapdoor": true,
+    "lock_block": true,
+    "dispenser_minecart": true,
+    "relayer": true
+  },
+  "functional": {
+    "rope": {
+      "enabled": true,
+      "block_side_attachment": true,
+      "slide_on_fall": true,
+      "rope_override": "supplementaries:rope"
+    },
+    "jar": {
+      "enabled": true,
+      "capacity": 12,
+      "drink_from_jar": false,
+      "drink_from_jar_item": false,
+      "jar_auto_detect": false,
+      "jar_capture": true,
+      "jar_cookies": true,
+      "jar_liquids": true
+    },
+    "cage": {
+      "enabled": true,
+      "allow_all_mobs": false,
+      "cage_allow_all_babies": false,
+      "cage_auto_detect": false,
+      "persistent_mobs": false,
+      "health_threshold": 100
+    },
+    "safe": {
+      "enabled": true,
+      "prevent_breaking": false,
+      "simple_safes": false
+    },
+    "sack": {
+      "enabled": true,
+      "sack_penalty": true,
+      "sack_increment": 2,
+      "slots": 9
+    },
+    "bamboo_spikes": {
+      "enabled": true,
+      "tipped_spikes": true,
+      "player_loot": false,
+      "only_allow_harmful_effects": true
+    },
+    "urn": {
+      "enabled": true,
+      "critter_spawn_chance": 0.009999999776482582,
+      "cave_urns": {
+        "enabled": true,
+        "attempts_per_patch": 4,
+        "spawn_attempts": 7
+      }
+    },
+    "soap": {
+      "enabled": true,
+      "clean_blacklist": [
+        "minecraft:glazed_terracotta"
+      ]
+    },
+    "flax": {
+      "enabled": true,
+      "wild_flax": {
+        "enabled": true,
+        "rarity": 6,
+        "attempts_per_patch": 35
+      }
+    },
+    "fodder": true,
+    "hourglass": true,
+    "present": {
+      "enabled": true,
+      "trapped_present": true
+    }
+  },
+  "building": {
+    "blackboard": {
+      "enabled": true,
+      "colored_blackboard": false,
+      "interaction_mode": "BOTH"
+    },
+    "timber_frame": {
+      "enabled": true,
+      "swap_on_shift": false,
+      "axes_strip": true,
+      "replace_daub": true
+    },
+    "iron_gate": {
+      "enabled": true,
+      "double_opening": true,
+      "door-like_gates": false
+    },
+    "item_shelf": {
+      "enabled": true,
+      "climbable_shelves": false
+    },
+    "sugar_cube": {
+      "enabled": true,
+      "horse_speed_duration": 10
+    },
+    "planter": {
+      "enabled": true,
+      "broken_by_sapling": true
+    },
+    "notice_board": {
+      "enabled": true,
+      "allow_any_item": false
+    },
+    "pedestal": {
+      "enabled": true,
+      "crystal_enchanting": 3
+    },
+    "ash": {
+      "enabled": true,
+      "ash_from_fire": true,
+      "rain_wash_ash": true,
+      "basalt_ash": {
+        "enabled": true,
+        "attempts_per_patch": 36,
+        "spawn_attempts": 15
+      }
+    },
+    "flag": {
+      "enabled": true,
+      "stick_pole": true,
+      "pole_length": 16
+    },
+    "goblet": {
+      "enabled": true,
+      "allow_drinking": true
+    },
+    "globe": {
+      "enabled": true,
+      "sepia_globe": true,
+      "chance": 2
+    },
+    "sign_post": {
+      "enabled": true,
+      "way_sign": {
+        "enabled": true,
+        "show_distance_text": true
+      }
+    },
+    "daub": true,
+    "ash_bricks": true,
+    "lapis_bricks": true,
+    "deepslate_lamp": true,
+    "end_stone_lamp": true,
+    "blackstone_lamp": true,
+    "stone_lamp": true,
+    "stone_tile": true,
+    "blackstone_tile": true,
+    "sconce": true,
+    "sconce_lever": true,
+    "sconce_green": false,
+    "altimeter": false,
+    "pancake": true,
+    "netherite_door": true,
+    "netherite_trapdoor": true,
+    "silver_door": true,
+    "silver_trapdoor": true,
+    "lead_door": true,
+    "lead_trapdoor": true,
+    "hanging_sign": true,
+    "crimson_lantern": true,
+    "copper_lantern": true,
+    "checker_block": true,
+    "raked_gravel": true,
+    "feather_block": true,
+    "statue": true,
+    "flower_box": true,
+    "doormat": true,
+    "flint_block": true,
+    "candle_holder": true
+  },
+  "tools": {
+    "quiver": {
+      "enabled": true,
+      "use_without_slow": true,
+      "slots": 6,
+      "quiver_skeleton_spawn_chance": 0.025,
+      "only_works_in_curio": false,
+      "quiver_pickup": true
+    },
+    "slice_map": {
+      "enabled": true,
+      "range_multiplier": 0.25
+    },
+    "altimeter": true,
+    "bubble_blower": {
+      "enabled": true,
+      "stasis_cost": 5,
+      "bubble_block": {
+        "lifetime": 1200,
+        "break_when_touched": true,
+        "feather_falling_prevents_breaking": true
+      }
+    },
+    "wrench": {
+      "enabled": true,
+      "bypass_when_on": "MAIN_HAND"
+    },
+    "rope_arrow": {
+      "enabled": true,
+      "capacity": 32,
+      "exclusive_to_crossbows": false
+    },
+    "flute": {
+      "enabled": true,
+      "unbound_radius": 64,
+      "bound_distance": 64
+    },
+    "bomb": {
+      "enabled": true,
+      "explosion_radius": 2.0,
+      "break_blocks": "WEAK",
+      "bomb_fuse": 0,
+      "blue_bomb": {
+        "explosion_radius": 5.15,
+        "break_blocks": "WEAK"
+      }
+    },
+    "slingshot": {
+      "enabled": true,
+      "range_multiplier": 1.0,
+      "charge_time": 20,
+      "stasis_deceleration": 0.9625,
+      "unrestricted_enderman_intercept": true
+    },
+    "antique_ink": true,
+    "candy": true,
+    "stasis": true
+  },
+  "general": {
+    "creative_tab": false,
+    "dispensers": true,
+    "jar_tab": false,
+    "debug_save_dynamic_pack": false,
+    "server_protection": false,
+    "red_merchant_spawn_multiplier": 1.0
+  },
+  "tweaks": {
+    "shulker_helmet": {
+      "enabled": true
+    },
+    "traders_open_doors": {
+      "enabled": true
+    },
+    "dispenser_tweaks": {
+      "axe_strip": true,
+      "shoot_ender_pearls": true
+    },
+    "dye_blocks": {
+      "enabled": false
+    },
+    "cake_tweaks": {
+      "double_cake": true,
+      "directional_cake": true
+    },
+    "mob_head_tweaks": {
+      "skull_piles": true,
+      "skull_candles": true,
+      "multiple_candles": true
+    },
+    "hanging_flower_pots": {
+      "enabled": true
+    },
+    "throwable_bricks": {
+      "enabled": true
+    },
+    "lantern_tweaks": {
+      "enabled": true,
+      "high_priority": true,
+      "mod_blacklist": [
+        "extlights",
+        "betterendforge",
+        "tconstruct",
+        "enigmaticlegacy"
+      ],
+      "fallin_lanterns": "ON"
+    },
+    "bells_tweaks": {
+      "chain_ringing": true,
+      "chain_length": 16
+    },
+    "placeable_sticks": {
+      "sticks": true,
+      "blaze_rods": true
+    },
+    "placeable_gunpowder": {
+      "enabled": true,
+      "speed": 2,
+      "spread_age": 2
+    },
+    "raked_gravel": {
+      "enabled": true
+    },
+    "bottle_xp": {
+      "enabled": false,
+      "cost": 2
+    },
+    "map_tweaks": {
+      "random_adventurer_maps": true,
+      "random_adventurer_maps_select_random_structure": true,
+      "block_map_markers": true,
+      "death_marker": "WITH_COMPASS",
+      "colored_map": true
+    },
+    "ceiling_banners": {
+      "enabled": true
+    },
+    "placeable_books": {
+      "enabled": true,
+      "book_power": 1.0,
+      "enchanted_book_power": 1.334,
+      "mixed_books": false
+    },
+    "zombie_horse": {
+      "zombie_horse_conversion": true,
+      "rotten_flesh": 64,
+      "rideable_underwater": true,
+      "zombie_horse_inverse_conversion": true
+    }
+  }
+}

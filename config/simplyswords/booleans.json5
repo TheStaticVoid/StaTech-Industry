@@ -1,0 +1,76 @@
+{
+  "display_config_outdated_warning": true,
+  "add_weapons_to_loot_tables": true,
+  "loot_can_be_found_in_villages": false,
+  "enable_weapon_impact_sounds": true,
+  "enable_weapon_footfalls": true,
+  "enable_passive_particles": true,
+  "compat_gobber_end_weapons_unbreakable": true,
+  "enable_unique_gem_sockets": true,
+
+// --------------------------------------------- LOOT BLACKLISTING ----------------------------------------------------------------- 
+// Setting any of the below values to false will prevent that item from generating in loot. 
+// The item will still exist in the creative menu, but will be unobtainable through ordinary survival gameplay.  
+// --------------------------------------------------------------------------------------------------------------------------------- 
+
+  "the_watcher": true,
+  "watching_warglaive": true,
+  "longsword_of_the_plague": true,
+  "sword_on_a_stick": true,
+  "bramblethorn": true,
+  "storms_edge": true,
+  "stormbringer": true,
+  "mjolnir": true,
+  "emberblade": true,
+  "hearthflame": true,
+  "twisted_blade": true,
+  "soulrender": true,
+  "soulpyre": true,
+  "soulkeeper": true,
+  "soulstealer": true,
+  "frostfall": true,
+  "molten_edge": true,
+  "livyatan": true,
+  "icewhisper": true,
+  "arcanethyst": true,
+  "thunderbrand": true,
+  "brimstone_claymore": true,
+  "slumbering_lichblade": true,
+  "shadowsting": true,
+  "dormant_relic": true,
+
+// --------------------------------------------- RUNIC BLACKLISTING ----------------------------------------------------------------- 
+// Setting any of the below values to false will prevent that runic power from being obtainable. 
+// The power will be completely removed from the pool of Runic powers, but will still be visible in the RUNIC GRIMOIRE if Patchouli is installed.  
+// ---------------------------------------------------------------------------------------------------------------------------------- 
+
+  "active_defence": true,
+  "float": true,
+  "greater_float": true,
+  "freeze": true,
+  "shielding": true,
+  "greater_shielding": true,
+  "slow": true,
+  "greater_slow": true,
+  "stoneskin": true,
+  "greater_stoneskin": true,
+  "swiftness": true,
+  "greater_swiftness": true,
+  "trailblaze": true,
+  "greater_trailblaze": true,
+  "weaken": true,
+  "greater_weaken": true,
+  "zephyr": true,
+  "greater_zephyr": true,
+  "frost_ward": true,
+  "wildfire": true,
+  "unstable": true,
+  "momentum": true,
+  "greater_momentum": true,
+  "imbued": true,
+  "greater_imbued": true,
+  "pincushion": true,
+  "greater_pincushion": true,
+  "ward": true,
+  "immolation": true
+}

@@ -1,0 +1,54 @@
+[xpCost]
+inverseXpCost = false
+blocksPerXpLevel = 1000
+minimumBaseXpCost = 0.0
+maximumBaseXpCost = 3.0
+xpCostPerLeashed = 1
+dimensionalWarpXpCost = 3
+globalWaystoneXpCostMultiplier = 1.0
+warpStoneXpCostMultiplier = 0.0
+waystoneXpCostMultiplier = 1.0
+sharestoneXpCostMultiplier = 1.0
+portstoneXpCostMultiplier = 0.0
+warpPlateXpCostMultiplier = 0.0
+inventoryButtonXpCostMultiplier = 0.0
+[restrictions]
+restrictToCreative = false
+restrictRenameToOwner = false
+generatedWaystonesUnbreakable = false
+transportLeashed = true
+transportLeashedDimensional = true
+leashedDenyList = ["minecraft:wither"]
+dimensionalWarp = "ALLOW"
+dimensionalWarpAllowList = []
+dimensionalWarpDenyList = []
+allowWaystoneToWaystoneTeleport = true
+globalWaystoneSetupRequiresCreativeMode = true
+[cooldowns]
+globalWaystoneCooldownMultiplier = 1.0
+warpStoneCooldown = 300
+warpStoneUseTime = 32
+warpPlateUseTime = 20
+scrollUseTime = 32
+inventoryButtonCooldown = 300
+[inventoryButton]
+inventoryButton = ""
+warpButtonX = 58
+warpButtonY = 60
+creativeWarpButtonX = 88
+creativeWarpButtonY = 33
+[worldGen]
+worldGenStyle = "BIOME"
+frequency = 25
+dimensionAllowList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
+dimensionDenyList = []
+nameGenerationMode = "PRESET_FIRST"
+customWaystoneNames = []
+spawnInVillages = true
+forceSpawnInVillages = false
+[client]
+disableTextGlow = false
+disableParticles = false
+[compatibility]
+displayWaystonesOnJourneyMap = true
+preferJourneyMapIntegration = true

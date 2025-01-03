@@ -1,0 +1,165 @@
+{
+  "item_groups": {
+    "spellblades": {
+      "ids": [
+        "spellbladenext:blade_fire",
+        "spellbladenext:blade_frost",
+        "spellbladenext:blade_arcane"
+      ],
+      "chance": 0.1,
+      "weight": 1,
+      "bonus_roll_chance": 1.2
+    },
+    "runedaggers": {
+      "ids": [
+        "spellbladenext:rune_dagger"
+      ],
+      "chance": 0.1,
+      "weight": 1,
+      "bonus_roll_chance": 1.2
+    },
+    "runic_armor": {
+      "ids": [
+        "spellbladenext:runeblazing_head",
+        "spellbladenext:runeblazing_chest",
+        "spellbladenext:runeblazing_legs",
+        "spellbladenext:runeblazing_feet",
+        "spellbladenext:runefrosted_head",
+        "spellbladenext:runefrosted_chest",
+        "spellbladenext:runefrosted_legs",
+        "spellbladenext:runefrosted_feet",
+        "spellbladenext:runegleaming_head",
+        "spellbladenext:runegleaming_chest",
+        "spellbladenext:runegleaming_legs",
+        "spellbladenext:runegleaming_feet"
+      ],
+      "chance": 0.1,
+      "weight": 1,
+      "bonus_roll_chance": 1.2
+    },
+    "claymores": {
+      "ids": [
+        "spellbladenext:claymore_arcane",
+        "spellbladenext:claymore_fire",
+        "spellbladenext:claymore_frost"
+      ],
+      "chance": 0.1,
+      "weight": 1,
+      "bonus_roll_chance": 1.2
+    },
+    "foci": {
+      "ids": [
+        "spellbladenext:orb_arcane",
+        "spellbladenext:orb_fire",
+        "spellbladenext:orb_frost"
+      ],
+      "chance": 0.1,
+      "weight": 1,
+      "bonus_roll_chance": 1.2
+    }
+  },
+  "loot_tables": {
+    "minecraft:chests/bastion_treasure": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor",
+      "runedaggers"
+    ],
+    "minecraft:chests/underwater_ruin_small": [
+      "spellblades"
+    ],
+    "minecraft:chests/woodland_mansion": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor",
+      "runedaggers"
+    ],
+    "minecraft:chests/end_city_treasure": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor",
+      "runedaggers"
+    ],
+    "minecraft:chests/abandoned_mineshaft": [
+      "spellblades"
+    ],
+    "minecraft:chests/shipwreck_supply": [
+      "spellblades"
+    ],
+    "minecraft:chests/nether_bridge": [
+      "spellblades"
+    ],
+    "minecraft:chests/underwater_ruin_big": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor",
+      "runedaggers"
+    ],
+    "minecraft:chests/pillager_outpost": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor"
+    ],
+    "minecraft:chests/simple_dungeon": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor"
+    ],
+    "minecraft:chests/ruined_portal": [
+      "spellblades"
+    ],
+    "minecraft:chests/desert_pyramid": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor"
+    ],
+    "minecraft:chests/bastion_bridge": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor"
+    ],
+    "minecraft:chests/shipwreck_treasure": [
+      "runic_armor"
+    ],
+    "minecraft:chests/jungle_temple": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor"
+    ],
+    "minecraft:chests/ancient_city": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor",
+      "runedaggers"
+    ],
+    "minecraft:chests/stronghold_crossing": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor"
+    ],
+    "minecraft:chests/igloo_chest": [
+      "spellblades"
+    ],
+    "minecraft:chests/bastion_other": [
+      "spellblades"
+    ],
+    "minecraft:chests/stronghold_library": [
+      "spellblades",
+      "claymores",
+      "foci",
+      "runic_armor",
+      "runedaggers"
+    ]
+  }
+}

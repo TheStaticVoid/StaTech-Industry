@@ -1,0 +1,49 @@
+{
+	/* Should the Hookshot use the "hold Right Click to
+	     keep the hook out" (New) or should it use the
+	     "press Right Click to fire the hook, and right click
+	     again to retract" (Classic) system. (Default: false)
+	*/
+	"useClassicHookshotLogic": false,
+	/* Should the Unhookable Tag act as a blacklist (true) or
+	     a whitelist (false)? (Default: true)
+	*/
+	"unhookableBlacklist": true,
+	/* Should the Hookshot cancel all fall damage if the
+	     Hook is active in the world and connected to
+	     something? (Default: false)
+	*/
+	"hookshotCancelsFallDamage": false,
+	/* Should the Quick upgrade affect the pulling speed
+	   of the Hookshot? (Default: false)
+	*/
+	"quickModAffectsPullSpeed": false,
+	/* The base maximum range of the Hookshot with no
+	     upgrades applied. (Default: 24 blocks)
+	*/
+	"defaultMaxRange": 24.0,
+	/* The base maximum speed of the Hookshot with no
+	     upgrade applied. (Default: 10 blocks/s)
+	*/
+	"defaultMaxSpeed": 10.0,
+	/* The multiplier the Range upgrade applies to the
+	     default range. (Default: x2)
+	*/
+	"rangeMultiplier": 2.0,
+	/* The multiplier the Quick upgrade applies to the
+	     default speed. (Default: x1.5)
+	*/
+	"quickMultiplier": 1.5,
+	/* The multipler the Durability upgrade applies to the
+	     default durability. (Default x2
+	*/
+	"durabilityMultiplier": 2.0,
+	/* The base maximum durability of the Hookshot. Set to 0
+	     to be unbreakable. (Default: 512)
+	*/
+	"defaultMaxDurability": 512,
+	/* The ID of the item used to repair the Hookshot.
+	     (Default: minecraft:iron_ingot)
+	*/
+	"hookshotRepairItem": "minecraft:iron_ingot"
+}
