@@ -14,6 +14,8 @@ ServerEvents.recipes(e => {
     let sp = (id) => `spectrum:${id}`;
     let bl = (id) => `blockus:${id}`;
     let ge = (id) => `geodes:${id}`;
+    let ae2 = (id) => `ae2:${id}`;
+    let byg = (id) => `byg:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let macerator = (id, eu, duration, item_inputs, item_outputs) => {
@@ -309,20 +311,24 @@ ServerEvents.recipes(e => {
     );
 
     // -- ONYX POWDER -- //
-    macerator(
-        st('onyx_powder'),
-        2,
-        200,
-        [ { amount: 1, item: sp('onyx_shard') } ],
-        [ { amount: 2, item: sp('onyx_powder') } ]
-    );
-    macerator(
-        st('onyx_powder_from_onyx_block'),
-        2,
-        200,
-        [ { amount: 1, item: sp('onyx_block') } ],
-        [ { amount: 4, item: sp('onyx_powder') } ]
-    );
+    const ONYX_POWDER_DATA = [
+        { inputName: "onyx_shard", outputAmount: 2 },
+        { inputName: "onyx_block", outputAmount: 4 },
+        { inputName: "small_onyx_bud", outputAmount: 4 },
+        { inputName: "medium_onyx_bud", outputAmount: 6 },
+        { inputName: "large_onyx_bud", outputAmount: 8 },
+        { inputName: "onyx_cluster", outputAmount: 16 }
+    ];
+
+    ONYX_POWDER_DATA.forEach(data => {
+        macerator(
+            st(`onyx_powder_from_${data.inputName}`),
+            2,
+            200,
+            [ { amount: 1, item: sp(data.inputName) } ],
+            [ { amount: data.outputAmount, item: sp('onyx_powder') } ]
+        );
+    });
 
     // -- FIERY POWDER -- //
     macerator(
@@ -449,6 +455,43 @@ ServerEvents.recipes(e => {
                 { amount: 2, item: sp(`${color}_pigment`) },
                 { amount: 1, item: sp(`${color}_sapling`), probability: 0.1 }
             ]
+        );
+    });
+    
+    // -- BYG SAND FROM SANDSTONE -- //
+    const BYG_SAND_COLORS = [
+        'blue',
+        'black',
+        'white',
+        'pink',
+        'purple'
+    ];
+    
+    BYG_SAND_COLORS.forEach(color => {
+        macerator(
+            st(`${color}_sand_from_sandstone`),
+            2,
+            100,
+            [ { amount: 1, item: byg(`${color}_sandstone`) } ],
+            [ { amount: 4, item: byg(`${color}_sand`) } ]
+        );
+    });
+    
+    // -- CERTUS QUARTZ FROM BUDS AND CLUSTER
+    const CERTUS_DUST_DATA = [
+        { inputName: "small_quartz_bud", outputAmount: 2 },
+        { inputName: "medium_quartz_bud", outputAmount: 2 },
+        { inputName: "large_quartz_bud", outputAmount: 2 },
+        { inputName: "quartz_cluster", outputAmount: 8 }
+    ];
+
+    CERTUS_DUST_DATA.forEach(data=>{
+        macerator(
+            st(`certus_quartz_dust_from_${data.inputName}`),
+            2,
+            200,
+            [ { amount: 1, item: ae2(data.inputName) } ],
+            [ { amount: data.outputAmount, item: ae2('certus_quartz_dust') } ]
         );
     });
 });
