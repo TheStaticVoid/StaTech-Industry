@@ -2,6 +2,7 @@
 Maintenance patch + Spectrum update
 
 ## Mods added:
+- [AE2Things](https://www.curseforge.com/minecraft/mc-mods/ae2-things-fabric-1-19-2) - Backported to fabric 1.19.2 by DmitryProskurin
 - [Jade](https://www.curseforge.com/minecraft/mc-mods/jade) - replaces wthit
 - [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons-fabric)
 - [Raised](https://www.curseforge.com/minecraft/mc-mods/raised) - removed awhile back, works again now
@@ -58,5 +59,7 @@ Maintenance patch + Spectrum update
 - [Remove double space in bronze mixer description #514](https://github.com/TheStaticVoid/StaTech-Industry/pull/514) - by Quezler
 - [Fix incorrect modname in REI search term for Dustrial Decor on Utilities quest page. #515](https://github.com/TheStaticVoid/StaTech-Industry/pull/515) - by JustinMullin
 - [The crystal heart gives exactly 10 health / 5 hearts #516](https://github.com/TheStaticVoid/StaTech-Industry/pull/516) - by Quezler
-- [Add missing space between g and a #517](https://github.com/TheStaticVoid/StaTech-Industry/pull/517) - Quezler
-- [Typo: for most recipes](https://github.com/TheStaticVoid/StaTech-Industry/pull/519) - Quizler
+- [Add missing space between g and a #517](https://github.com/TheStaticVoid/StaTech-Industry/pull/517) - by Quezler
+- [Typo: for most recipes #519](https://github.com/TheStaticVoid/StaTech-Industry/pull/519) - by Quizler
+- [Add missing macerator recipes #520](https://github.com/TheStaticVoid/StaTech-Industry/pull/520) - by DmitryProskurin
+- [Correct Assembler typo in Basic Components quest. #521](https://github.com/TheStaticVoid/StaTech-Industry/pull/521) - by JustinMullin
