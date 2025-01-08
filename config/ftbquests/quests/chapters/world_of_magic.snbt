@@ -1277,18 +1277,63 @@
 				}
 			]
 			shape: "square"
-			tasks: [{
-				id: "05EE083C303D0E3D"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "spectrum:pigments"
-					}
+			tasks: [
+				{
+					id: "549397333D528D11"
+					item: "spectrum:orange_pigment"
+					type: "item"
 				}
-				title: "Any Pure Pigment"
-				type: "item"
-			}]
+				{
+					id: "4D1A4144FC433892"
+					item: "spectrum:magenta_pigment"
+					type: "item"
+				}
+				{
+					id: "10CE945F24361A7A"
+					item: "spectrum:light_blue_pigment"
+					type: "item"
+				}
+				{
+					id: "3F88BF47B2F5E585"
+					item: "spectrum:yellow_pigment"
+					type: "item"
+				}
+				{
+					id: "2E8E55E8195A36C4"
+					item: "spectrum:lime_pigment"
+					type: "item"
+				}
+				{
+					id: "5171AF43B9D06AE4"
+					item: "spectrum:pink_pigment"
+					type: "item"
+				}
+				{
+					id: "477CCCEBAD09DBFA"
+					item: "spectrum:cyan_pigment"
+					type: "item"
+				}
+				{
+					id: "7D5F1D618410B951"
+					item: "spectrum:purple_pigment"
+					type: "item"
+				}
+				{
+					id: "29A2862B7449F1A9"
+					item: "spectrum:blue_pigment"
+					type: "item"
+				}
+				{
+					id: "7D936B5A87F3462F"
+					item: "spectrum:green_pigment"
+					type: "item"
+				}
+				{
+					id: "09D9D704D698956F"
+					item: "spectrum:red_pigment"
+					type: "item"
+				}
+			]
 			title: "Pigments"
 			x: 16.5d
 			y: 8.5d
@@ -2203,7 +2248,7 @@
 				type: "item"
 			}]
 			x: 13.0d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["79D0A62E07C283FF"]
@@ -3419,6 +3464,8 @@
 				"&5Neolith&r is the key! Yes, it is must be! If you combine all the gems you have collected so far with it, something must be created that holds &eincredible power&r. Alone for you and ONLY for you, master of &dpigment&r!"
 				""
 				"Fusing those &dmagical energies&r must result in an incredible source of power - with a display to match. Best to make sure your &aShrine&r and everything around it is fortified. &o&lI'm not kidding, make sure nothing important is near your &aShrine&f, expect a &ccleanup&r. You can use &3Polished Calcite&r / &ePolished Basalt&r to protect the area."
+				""
+				"When you're ready, put &dAmethyst&r, &eCitrine&r, &bTopaz&r, &dOnyx&r, and &5Neolith&r shards in a &aFusion Shrine&r alongside some &dLiquid Crystal&r during a clear day."
 				""
 				"&cRequires daytime and a clear sky&r."
 			]
@@ -4735,7 +4782,8 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["0FFD788283204691"]
+			dependencies: ["2D1439DDE82F3122"]
+			description: ["Finally that pesky ruin that taunted you with a Bedrock barrier is no longer an issue. Get in there and claim your prize."]
 			hide: true
 			id: "5D38CA7587283F41"
 			rewards: [
@@ -4752,14 +4800,14 @@
 				}
 			]
 			tasks: [{
-				advancement: "spectrum:enter_wireless_redstone_puzzle_structure"
+				advancement: "spectrum:solve_wireless_redstone_preservation_ruin"
 				criterion: ""
-				id: "7F24649F30649DC8"
+				id: "2D517F03F37D08DC"
 				type: "advancement"
 			}]
 			title: "The Bedrock Ruins"
-			x: -6.0d
-			y: -3.0d
+			x: -8.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["15712326AA2EB3F8"]
@@ -4818,11 +4866,12 @@
 				item: "spectrum:blood_orchid_petal"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.5d
+			x: -8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["72E6A9F7DBBC7DC9"]
+			description: ["Now with your Dike powered equipment, you can tackle the Dike ruins. These are structures found in the deepslate layer that are surrounded by Preservation Stone with a Dike Gate."]
 			hide: true
 			id: "05EC1F81947AEBC0"
 			rewards: [
@@ -4839,9 +4888,9 @@
 				}
 			]
 			tasks: [{
-				advancement: "spectrum:enter_ancient_ruins"
+				advancement: "spectrum:solve_dike_gate_preservation_ruin"
 				criterion: ""
-				id: "5F14418FCEE3E5BD"
+				id: "478F343BDCEFCAE9"
 				type: "advancement"
 			}]
 			title: "The Dike Ruins"
@@ -4904,99 +4953,6 @@
 			}]
 			x: -2.5d
 			y: -6.0d
-		}
-		{
-			dependencies: ["6B419998589E17A8"]
-			description: [
-				"You very much took a liking to the &arotating roundels&r in those &bancient structures&r. So much, that you copied their design yourself. Definitely a nice way to present your items, or keep them ready."
-				""
-				"The &eBasalt&r and &dCalcite&r version you cobbled together hold &esignificantly more items&r, up to 6 whole stacks!"
-			]
-			hide: true
-			id: "010E868EE13FAAEC"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2479D720693E058C"
-					table_id: 5901057256958333207L
-					type: "random"
-				}
-				{
-					id: "619AAA16A3368F39"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "6AC16195B8FFCDB4"
-				item: "spectrum:item_roundel"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["352D2FF3E6003244"]
-			description: [
-				"Deep underground you may find &eoutlandish structures&r, which seem to be built from &aimmensly sturdy stone&r. Whoever constructed them seemed to have knowledge way beyond your understanding. There has to be a way to get in there! If not now, then later... better keep the location in mind."
-				""
-				"The only &dRuin&r you can enter at this stage is the one that has two &bSpore Blossoms&r at the entrance. Heavily consult the &eColor Mixing&r section of the &eColorful World&r book. "
-				""
-				"&o&cHint&f: Use the &dGemstone Powders&f you just created!"
-				""
-				""
-				"&cNote&r: The Gray Spore Blossom is currently not solvable until a future update."
-			]
-			hide: true
-			id: "6B419998589E17A8"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "19228A4C81C1A920"
-					table_id: 5901057256958333207L
-					type: "random"
-				}
-				{
-					id: "4D21070E8AFA8A2D"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				advancement: "spectrum:enter_color_mixing_puzzle_structure"
-				criterion: ""
-				id: "4CCD7764C924714D"
-				type: "advancement"
-			}]
-			title: "The Mixing Ruins"
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6B419998589E17A8"]
-			description: ["Though seemingly left behind for quite some time now, these &aseeds&r still look very much &2alive&r. Once grown, they become &bAmaranth Bushels&r. These &bBushels&r can be used in various foods, and &eit's also the favorite food of a certain creature down the path of progression&r."]
-			hide: true
-			id: "71F0082A37B7A610"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7380C8C2CE342673"
-					table_id: 5901057256958333207L
-					type: "random"
-				}
-				{
-					id: "04B71A3AC501135A"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "2C9AA5DE33C30A56"
-				item: "spectrum:amaranth_bushel"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -4.0d
 		}
 		{
 			dependencies: ["7014D92425B9A412"]
@@ -5480,8 +5436,8 @@
 				item: "spectrum:bloodboil_syrup"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -6.0d
+			x: -8.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["160B8316AAD40B2E"]
@@ -5536,8 +5492,8 @@
 				item: "spectrum:freigeist"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -7.5d
+			x: -8.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["160B8316AAD40B2E"]
@@ -6952,6 +6908,98 @@
 			title: "What Once Was Impenetrable"
 			x: -13.75d
 			y: -3.75d
+		}
+		{
+			dependencies: ["6B419998589E17A8"]
+			description: [
+				"You very much took a liking to the &arotating roundels&r in those &bancient structures&r. So much, that you copied their design yourself. Definitely a nice way to present your items, or keep them ready."
+				""
+				"The &eBasalt&r and &dCalcite&r version you cobbled together hold &esignificantly more items&r, up to 6 whole stacks!"
+			]
+			hide: true
+			id: "010E868EE13FAAEC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2479D720693E058C"
+					table_id: 5901057256958333207L
+					type: "random"
+				}
+				{
+					id: "619AAA16A3368F39"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6AC16195B8FFCDB4"
+				item: "spectrum:item_roundel"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["352D2FF3E6003244"]
+			description: [
+				"Deep underground you may find &eoutlandish structures&r, which seem to be built from &aimmensly sturdy stone&r. Whoever constructed them seemed to have knowledge way beyond your understanding. There has to be a way to get in there! If not now, then later... better keep the location in mind."
+				""
+				"The only &dRuin&r you can enter at this stage is the one that has two &bSpore Blossoms&r at the entrance. Heavily consult the &eColor Mixing&r section of the &eColorful World&r book. "
+				""
+				"&o&cHint&f: Use the &dGem Dusts&f you just created!"
+				""
+				"&oThe gray blossom can not be solved until later in progression!&r"
+			]
+			hide: true
+			id: "6B419998589E17A8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "19228A4C81C1A920"
+					table_id: 5901057256958333207L
+					type: "random"
+				}
+				{
+					id: "4D21070E8AFA8A2D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				advancement: "spectrum:solve_color_mixing_preservation_ruin"
+				criterion: ""
+				id: "37B4EF4201895533"
+				type: "advancement"
+			}]
+			title: "The Mixing Ruins"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B419998589E17A8"]
+			description: ["Though seemingly left behind for quite some time now, these &aseeds&r still look very much &2alive&r. Once grown, they become &bAmaranth Bushels&r. These &bBushels&r can be used in various foods, and &eit's also the favorite food of a certain creature down the path of progression&r."]
+			hide: true
+			id: "71F0082A37B7A610"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7380C8C2CE342673"
+					table_id: 5901057256958333207L
+					type: "random"
+				}
+				{
+					id: "04B71A3AC501135A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2C9AA5DE33C30A56"
+				item: "spectrum:amaranth_bushel"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Is that you Merasmus?"]
