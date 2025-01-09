@@ -165,6 +165,7 @@
 			]
 			icon: "spectrum:moonstone_chiseled_basalt"
 			id: "5399D6C528EC2416"
+			shape: "square"
 			tasks: [{
 				advancement: "spectrum:lategame/find_forgotten_city"
 				criterion: ""
@@ -185,6 +186,7 @@
 				"But what happened to them? Surely you can find clues to their whereabouts, or demise."
 			]
 			id: "6AC35F561169FD4B"
+			shape: "square"
 			tasks: [{
 				count: 28L
 				id: "451724A473D89EB1"
@@ -210,6 +212,7 @@
 				"Right click the pedestal to finish the achievement."
 			]
 			id: "53C1377834A9B945"
+			shape: "square"
 			tasks: [{
 				advancement: "spectrum:lategame/build_complex_pedestal_structure"
 				criterion: ""
@@ -229,8 +232,8 @@
 				item: "spectrum:hummingstone"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["79021A59C661F6FE"]
@@ -245,8 +248,8 @@
 				item: "spectrum:dragonbone_chunk"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.0d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6967948DE668220D"]
@@ -257,8 +260,8 @@
 				item: "spectrum:resonance_shard"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.5d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2B18CB6752641F19"]
@@ -269,8 +272,8 @@
 				item: "spectrum:downstone_fragments"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["79021A59C661F6FE"]
@@ -289,8 +292,8 @@
 				type: "observation"
 			}]
 			title: "Downstone"
-			x: -1.0d
-			y: 2.0d
+			x: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["53C1377834A9B945"]
@@ -302,8 +305,8 @@
 				type: "advancement"
 			}]
 			title: "Is it \"kite\" or \"chite\"?"
-			x: 10.0d
-			y: 0.0d
+			x: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["53C1377834A9B945"]
@@ -316,8 +319,8 @@
 				type: "advancement"
 			}]
 			title: "Secrets of the End"
-			x: 8.5d
-			y: 2.5d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4CD66873CC70184F"]
@@ -332,20 +335,20 @@
 				item: "spectrum:paltaeria_fragments"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 4.0d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["077B3E26EEA7F65C"]
-			description: ["Malachite is a pristine material that sparkles in a deep green hue. It seems to have strong magical properties, almost like a Deeper Down analog of Azurite. In another simularity to Azurite, Malachite also needs to be refined. The small fragments you obtain must first grow into full usable crystals - though you're not sure you'll seem them finished in your lifetime."]
+			description: ["Malachite is a pristine material that sparkles in a deep green hue. It seems to have strong magical properties, almost like a Deeper Down analog of Azurite. In another simularity to Azurite, "]
 			id: "16339BF01528CC59"
 			tasks: [{
 				id: "7B9A2A17AAE9CF96"
 				item: "spectrum:raw_malachite"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 0.0d
+			x: 8.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["53C1377834A9B945"]
@@ -385,8 +388,8 @@
 				item: "spectrum:perturbed_eye"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 5.5d
+			x: 3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["79021A59C661F6FE"]
@@ -402,8 +405,8 @@
 				type: "item"
 			}]
 			title: "Dragonrot"
-			x: -2.5d
-			y: 2.0d
+			x: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5399D6C528EC2416"]
@@ -438,16 +441,6 @@
 			y: -1.5d
 		}
 		{
-			id: "403ABDC27A693AAA"
-			tasks: [{
-				id: "236047221D5B13C9"
-				item: "spectrum:crystallarieum"
-				type: "item"
-			}]
-			x: 12.5d
-			y: 2.0d
-		}
-		{
 			dependencies: ["79021A59C661F6FE"]
 			description: [
 				"A metal that shimmers in all the colors of the rainbow. The small seedlings you collected are far too small to be used for any meaningful purpose."
@@ -460,19 +453,309 @@
 				item: "spectrum:bismuth_flake"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["627A02991BC8B5A9"]
+			description: [
+				"Growing your first Bismuth Crystals requires placing a Bismuth Bud onto a cluster of Iron Blocks. "
+				""
+				"Luckily, you only have to do this once, and afterward you unlock recipes to make Crystals without sacficiing Iron Blocks."
+			]
 			id: "2A059C10C7652F2D"
 			tasks: [{
 				id: "0B6E9FE4A3A3101D"
 				item: "spectrum:bismuth_crystal"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5506288533F296C9"]
+			description: ["Be careful transporting a lot of Paltaeria, you might be in for a surprise!"]
+			id: "738BCE60946CF049"
+			tasks: [{
+				advancement: "spectrum:lategame/carry_too_many_low_gravity_blocks"
+				criterion: ""
+				id: "015921B9450A9F0B"
+				type: "advancement"
+			}]
+			title: "Taking Flight"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["738BCE60946CF049"]
+			description: ["From your previous experiences with Paltaeria, you can already guess that it would not be a good idea to place htis block in open sky - your future self will thank you."]
+			id: "108B943367B05AE7"
+			tasks: [{
+				id: "45E3B561DB54B566"
+				item: "spectrum:paltaeria_fragment_block"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4CD66873CC70184F"]
+			description: [
+				"Paltaeria Gems are incredibly rare drops from mining the ore. Unlike the fragments, the gems can be used in recipes where the fragments would be too small to suffice."
+				""
+				"Mining a single gem is required for unlocking the recipe to craft more gems."
+			]
+			id: "69CBC070B022290F"
+			tasks: [{
+				id: "29A9FE398DC764CF"
+				item: "spectrum:paltaeria_gem"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["69CBC070B022290F"]
+			description: ["The problem with Onyx Shards is that their creation is tied to very specific conditions. It is not every day that there is a new moon. Every time you look at the clock, the window of time seems to have just passed by for two minutes. Time to break out the big guns: Magenta's affinity for time..."]
+			id: "06150578C7538A63"
+			tasks: [{
+				id: "434E254228F9E299"
+				item: "spectrum:celestial_pocketwatch"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7659A1C8F1DC85E9"]
+			id: "5F14745E347FDDAA"
+			tasks: [{
+				id: "1C60CEC1DAF84597"
+				item: {
+					Count: 1b
+					id: "spectrum:resonant_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "spectrum:resonance"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2A059C10C7652F2D"]
+			description: [
+				"With budding blocks in mind you designed the Crystallarieum: an Ink-powered contraption that grows chunks of raw ore into sparkling crystals. Though your best efforst failed to grow actual gems, you quickly realized that icould grow all sorts of other resources instead."
+				""
+				"Throw raw ore on top to let it crystallize into a Bud, able to be grown."
+				""
+				"Growing resources requires:"
+				"- a Catalyst"
+				"- one color of Ink, supplied via Flask"
+				""
+				"Catalysts"
+				"Each catalyst has a different effect on bud growth: while one catalyst may reduce the required amount of ink, another may alter the duration of the process..."
+				""
+				"Metals vs. Crystals"
+				"Metallic resources require unrefined materials such as Raw Iron, resulting in a Small Iron Bud that will grow steadily until it can be safely harvested."
+				""
+				"For crystalline resources, an existing crystal can be used as a seed to grow identical copies of itself."
+			]
+			id: "6B2598366611E6A0"
+			tasks: [{
+				id: "796AF92998347A06"
+				item: "spectrum:crystallarieum"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["16339BF01528CC59"]
+			description: [
+				"Malachite also needs to be refined. The small fragments you obtain must first grow into full usable crystals - though you're not sure you'll seem them finished in your lifetime."
+				""
+				"Malachite as a material seems perfect for tools, best compared to Diamond, but much easier to combine with other materials. These combinations are where the fun begins, allowing for some uniquely intricate tools."
+				""
+				"&oIf you don't immediately know the solution, I recommend exploring the other quests in the Deeper Down.&r"
+			]
+			id: "60F0D0EFE4D04311"
+			tasks: [{
+				id: "01023F5C887DED38"
+				item: "spectrum:refined_malachite"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["60F0D0EFE4D04311"]
+			description: ["The Workstaff is the perfect Multitool: Left Shift + Right Click allows you to switch between Silk Touch and Fortune, mining large tunnels at once, and allows you to strip, till, and flatten."]
+			id: "3186BB365F5A2E19"
+			tasks: [{
+				id: "00B9391D33FC033A"
+				item: {
+					Count: 1b
+					id: "spectrum:malachite_workstaff"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:fortune"
+							lvl: 4s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["60F0D0EFE4D04311"]
+			description: ["The Ultra Greatsword's sheer size allows you to hit enemies from greater distance. If you hadn't included the Paltaeria, you probably wouldn't even be able to lift it."]
+			id: "5FB073161DF17A13"
+			tasks: [{
+				id: "2D6C8C01E80DE123"
+				item: {
+					Count: 1b
+					id: "spectrum:malachite_ultra_greatsword"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:sweeping"
+							lvl: 4s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["60F0D0EFE4D04311"]
+			description: [
+				"The Bident is a true powerhouse when dealing with aquatic creatures."
+				""
+				"It may have only two prongs compared to a Trident, but they are twice as pointy!"
+			]
+			id: "1D42A9FDD2C990AB"
+			tasks: [{
+				id: "7D64CB01EEBA4285"
+				item: {
+					Count: 1b
+					id: "spectrum:malachite_bident"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:impaling"
+							lvl: 6s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["60F0D0EFE4D04311"]
+			description: ["The Malachite Crossbow shoots projectiles at higher speed and precision compared to a mundane Crossbow"]
+			id: "1C901D4BD9D77AF8"
+			tasks: [{
+				id: "5BCA2D61F0E120A3"
+				item: {
+					Count: 1b
+					id: "spectrum:malachite_crossbow"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:piercing"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["69CBC070B022290F"]
+			id: "3EA1A45EF8297E67"
+			tasks: [{
+				id: "0794DEB1EF389982"
+				item: "spectrum:puff_circlet"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"450594E495BC0599"
+				"17FD99892BD82F5B"
+			]
+			description: [
+				"Right clicking a socketed Moonstone Locket will provide you with this compass."
+				""
+				"It looks to point towards something in the Deeper Down..."
+			]
+			id: "02EFA93D1525F456"
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "43C623D8E9F5C2FD"
+				item: "spectrum:mysterious_compass"
+				type: "item"
+			}]
+			x: 3.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["02EFA93D1525F456"]
+			description: [
+				"This marks the current end of Spectrum progression :("
+				""
+				"If you enjoyed your time playing through this mod, please support the devs on Ko-fi if you can."
+			]
+			id: "37C701CDEA359A70"
+			shape: "square"
+			subtitle: "A Journey's End"
+			tasks: [{
+				icon: "spectrum:music_disc_dimension_theme"
+				id: "6FFF7156C0D7E422"
+				structure: "spectrum:forsaken_cathedral"
+				title: "Find your goal"
+				type: "structure"
+			}]
+			x: 3.75d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2E338EC2698B4AA5"]
+			description: [
+				"For all those wo don't either live in a simple Cobblestone house or live without walls entirely - of course you don't feel addressed - you have thought up the Exchanging Staff."
+				""
+				"Enchanting an Exchanging Staff with Resonance by using the Enchanter will give it the power to harvest some special blocks as-is."
+			]
+			id: "0E35862B7F9081DE"
+			tasks: [{
+				id: "12388D38C7A34EDF"
+				item: {
+					Count: 1b
+					id: "spectrum:exchanging_staff"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.0d
 		}
 	]
 	title: "&aSpectrum: Turn to Purity&r"

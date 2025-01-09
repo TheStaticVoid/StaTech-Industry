@@ -41,11 +41,6 @@ copyFiles(data)
 
 print('KubeJS sync end')
 
-# Config sync
-print('Copying mod config')
-config = '/config/'
-copyFiles(config)
-
 if len(sys.argv) > 1:
     # Modlist sync - use -m argument
     if sys.argv[1] == '-m':
@@ -60,5 +55,10 @@ if len(sys.argv) > 1:
         print('Syncing quests')
         quests = '/config/ftbquests/quests/'
         copyFiles(quests)
+    # Config sync - use -c argument
+    elif sys.argv[1] == '-c':
+        print('Sycning mod configs')
+        config = '/config/'
+        copyFiles(config)
 
 print('Done!')
