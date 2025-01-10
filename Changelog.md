@@ -63,3 +63,4 @@ Maintenance patch + Spectrum update
 - [Typo: for most recipes #519](https://github.com/TheStaticVoid/StaTech-Industry/pull/519) - by Quizler
 - [Add missing macerator recipes #520](https://github.com/TheStaticVoid/StaTech-Industry/pull/520) - by DmitryProskurin
 - [Correct Assembler typo in Basic Components quest. #521](https://github.com/TheStaticVoid/StaTech-Industry/pull/521) - by JustinMullin
+- [AE2Things quests #522](https://github.com/TheStaticVoid/StaTech-Industry/pull/522) - by DmitryProskurin
