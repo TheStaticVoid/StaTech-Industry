@@ -3,6 +3,7 @@ Maintenance patch + Spectrum update
 
 ## Mods added:
 - [AE2Things](https://www.curseforge.com/minecraft/mc-mods/ae2-things-fabric-1-19-2) - Backported to fabric 1.19.2 by DmitryProskurin
+- [Create: Copycats+](https://www.curseforge.com/minecraft/mc-mods/copycats) - more build variety options
 - [Jade](https://www.curseforge.com/minecraft/mc-mods/jade) - replaces wthit
 - [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons-fabric)
 - [Raised](https://www.curseforge.com/minecraft/mc-mods/raised) - removed awhile back, works again now
