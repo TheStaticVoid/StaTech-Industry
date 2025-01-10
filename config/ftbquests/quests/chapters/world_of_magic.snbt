@@ -2652,7 +2652,7 @@
 				item: "spectrum:potion_workshop"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: 13.5d
 		}
 		{
@@ -2713,7 +2713,7 @@
 				item: "spectrum:mud_bucket"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: 13.5d
 		}
 		{
@@ -3178,7 +3178,7 @@
 		}
 		{
 			dependencies: ["6D24FBE1A1BB0488"]
-			description: ["Not just t he bags under your eyes that are evidence of your lack of sleep. There are those &dcreatures&r that come haunt you straight out of your missed nightmares when you don't regularly lie down to sleep - almost like they feel cheated. This here is the manifestation of &erelaxation&r, no sleep necessary. After just a few minutes of wear, you feel physically and mentally refreshed. You also recover from &cnegative effects&r more quickly."]
+			description: ["Not just the bags under your eyes that are evidence of your lack of sleep. There are those &dcreatures&r that come haunt you straight out of your missed nightmares when you don't regularly lie down to sleep - almost like they feel cheated. This here is the manifestation of &erelaxation&r, no sleep necessary. After just a few minutes of wear, you feel physically and mentally refreshed. You also recover from &cnegative effects&r more quickly."]
 			hide: true
 			id: "6B46181AB163E890"
 			rewards: [
@@ -4604,7 +4604,7 @@
 				"To remember the &bmemories&r about a creature, you need its &dHead&r, as well as its most beloved item and &aVegetal&r as a bonding agent. Using &dNeolith&r seems to completely overpower the &denergies&r of the creature, making the resulting &bmemory&r unrecognizable, until it manifests."
 				""
 				"&5&lManifesting&r"
-				"&dMemories&r need a certain &eamount of time&r to manifest, almost like an &begg&r. You have to place them down and wait. Depending on the creature, it may be &reasonably quick&r, or &ctake forever&r."
+				"&dMemories&r need a certain &eamount of time&r to manifest, almost like an &begg&r. You have to place them down and wait. Depending on the creature, it may be &areasonably quick&r, or &ctake forever&r."
 				""
 				"Placing them on top of &ecertain blocks&r seems to &aspeed up that process&r or &cstop it entirely&r."
 			]
@@ -7000,6 +7000,62 @@
 			}]
 			x: 6.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["0EB9D10AAC86F6A2"]
+			description: ["These hostile &cunderwater temples&r are hell to maneuver in. Luckily, in your search for treasure, you stumbled upon a &dHeart of the Sea&r. This circlet allows you to live and mine underwater as if it were the most natural thing ever. You &bswim and mine faster&r, &arequire no air&r, &eand are able to see better&r. It also &3heals&r your nearby &6Axolotl&r friends."]
+			id: "498CE428ED4058E6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "68D288BDE8E2DA2C"
+					table_id: 6970548649776480151L
+					type: "random"
+				}
+				{
+					id: "29DC853C7004A28E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "125B431D5A017C32"
+				item: "spectrum:weeping_circlet"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["3DCAFF0B0A60BFFD"]
+			description: [
+				"To be able to fly like the birds has always been the dream of many people, &bincluding you&r."
+				""
+				"Now you have these boots. The freedom is almost overwhelming. You didn't get it quite right without a catch, but what can you do."
+				""
+				"Small clouds form under your feet as soon as you start sprinting. Those clouds are too fuzzy to jump on, but &bsafely levitate you in the air&r. There's just one kicker: &oYou better not stop sprinting high in the air&r..."
+			]
+			id: "1969361A5D724C79"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2115DEF11E4F7673"
+					table_id: 6970548649776480151L
+					type: "random"
+				}
+				{
+					id: "3235D9597B5C12B9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4EB00B46B64995DB"
+				item: "spectrum:cotton_cloud_boots"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 15.5d
 		}
 	]
 	subtitle: ["Is that you Merasmus?"]

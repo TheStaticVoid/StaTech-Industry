@@ -23,14 +23,24 @@
 				"&oThe only way to answer these questions is to explore this new world.&r"
 				""
 				"&l&6&oThe plot thickens...&r&r&r"
+				""
+				"This section of &dSpectrum&r is heavily focused on exploring &oeverything&r in the &aDeeper Down&r. If you find you can't see the recipe for the next item in the quest book, &btry delving into other questlines&r."
 			]
 			icon: "spectrum:moonstone_cluster"
 			id: "79021A59C661F6FE"
-			rewards: [{
-				id: "4A1BA5C034BB3D99"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "60AD47A1C67C480A"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "31F323D2F078BFC7"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			subtitle: "The Beginning of the End"
@@ -64,6 +74,17 @@
 					type: "xp"
 					xp: 10
 				}
+				{
+					exclude_from_claim_all: true
+					id: "54EA6AEEA3285663"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "1AC26B0FD5866852"
+					type: "xp"
+					xp: 10
+				}
 			]
 			shape: "square"
 			tasks: [{
@@ -90,6 +111,19 @@
 			]
 			icon: "spectrum:pedestal_moonstone"
 			id: "1E6E60798FA42890"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1899AD445DC8CE2D"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "4863FDBF2B637B29"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			tasks: [
@@ -165,6 +199,19 @@
 			]
 			icon: "spectrum:moonstone_chiseled_basalt"
 			id: "5399D6C528EC2416"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7126A55ECE4DA2F2"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "36ACB4CF9575AFD7"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "square"
 			tasks: [{
 				advancement: "spectrum:lategame/find_forgotten_city"
@@ -186,6 +233,19 @@
 				"But what happened to them? Surely you can find clues to their whereabouts, or demise."
 			]
 			id: "6AC35F561169FD4B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0413A0AC31C20275"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "0F569B4FA455F290"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "square"
 			tasks: [{
 				count: 28L
@@ -212,6 +272,19 @@
 				"Right click the pedestal to finish the achievement."
 			]
 			id: "53C1377834A9B945"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "14CF91C0E66C4787"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "697187F1F1AAF199"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "square"
 			tasks: [{
 				advancement: "spectrum:lategame/build_complex_pedestal_structure"
@@ -227,13 +300,26 @@
 			dependencies: ["79021A59C661F6FE"]
 			description: ["&aHummingstones&r can be found near &2Liquid Crystal&r lakes. They tend to make a tune when &bactivated&r. &oYou wonder what it would a whole lot of them would sound like&r."]
 			id: "6967948DE668220D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "51649442C9BF3508"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "1D828CF2868C2384"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "39EF1EEA177C6A90"
 				item: "spectrum:hummingstone"
 				type: "item"
 			}]
 			x: -0.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["79021A59C661F6FE"]
@@ -243,37 +329,76 @@
 				"&oPerhaps a &estrong explosive&r &oyou discovered earlier could suffice?&r"
 			]
 			id: "05242C45EBB0A3A3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1937320FB05C7D24"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "1386CB3A3695150A"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "787F41D1A35B7304"
 				item: "spectrum:dragonbone_chunk"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -1.5d
+			x: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6967948DE668220D"]
 			description: [""]
 			id: "7659A1C8F1DC85E9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "633BAB6E698AF859"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "76668D7B8833AADB"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "6B27C6FC1A975367"
 				item: "spectrum:resonance_shard"
 				type: "item"
 			}]
 			x: -0.5d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2B18CB6752641F19"]
 			description: ["Exploring the &6Deeper Down&r at the lowest levels, you may come across ruins of a digsite of somesort. Maybe these will hold the secrets to destroying &aDownstone&r?"]
 			id: "322D6AB901914350"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E14F7E8FBE79542"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "48EF3F17741227C7"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "3AF52154B9A6F192"
 				item: "spectrum:downstone_fragments"
 				type: "item"
 			}]
 			x: 0.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["79021A59C661F6FE"]
@@ -283,6 +408,19 @@
 				"That never stopped you before, maybe there's a way to break through?"
 			]
 			id: "2B18CB6752641F19"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "352D24B3BAD5DDC6"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "6111BFB5E0D953A0"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				icon: "spectrum:downstone"
 				id: "08671C9272722B8E"
@@ -293,11 +431,24 @@
 			}]
 			title: "Downstone"
 			x: 0.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["53C1377834A9B945"]
 			id: "077B3E26EEA7F65C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7FB183F2E9E92DA8"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "50E1B7D1D7CF3F4F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				advancement: "spectrum:lategame/collect_malachite"
 				criterion: ""
@@ -312,6 +463,19 @@
 			dependencies: ["53C1377834A9B945"]
 			description: ["There's a new ore that can be found in the end. Make sure you're ready to catch it!"]
 			id: "4CD66873CC70184F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "034F5151E72C90EB"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "2682858FCEB6099B"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				advancement: "spectrum:lategame/collect_paltaeria"
 				criterion: ""
@@ -330,18 +494,44 @@
 				"Like the End itself, the curious properties of this material are not to be overlooked."
 			]
 			id: "5506288533F296C9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1FE334BE55B6DEB8"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "56E2575E6A3B57A9"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "48BACD2EEC922CA1"
 				item: "spectrum:paltaeria_fragments"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 7.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["077B3E26EEA7F65C"]
 			description: ["Malachite is a pristine material that sparkles in a deep green hue. It seems to have strong magical properties, almost like a Deeper Down analog of Azurite. In another simularity to Azurite, "]
 			id: "16339BF01528CC59"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "576252E0A8D1E55F"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "4F0E269174A7FFFC"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "7B9A2A17AAE9CF96"
 				item: "spectrum:raw_malachite"
@@ -354,6 +544,19 @@
 			dependencies: ["53C1377834A9B945"]
 			description: ["With your new Spectrum Palace, you can finally round out the last three pigments you have not been able to create up to this point."]
 			id: "2E338EC2698B4AA5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3A2D2B5A0413A761"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "67E6A4BC39BABC2E"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [
 				{
 					id: "48FAB9337092809B"
@@ -372,8 +575,8 @@
 				}
 			]
 			title: "Shades of Gray"
-			x: 8.5d
-			y: -1.5d
+			x: 10.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5506288533F296C9"]
@@ -383,12 +586,25 @@
 				"Due to how sturdy the portal frames are, you might want to take a step back after setting the Perturbed Eye, as it might get a bit rough."
 			]
 			id: "409923AD9652C23E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2A61BEE26DB8F7D7"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "1471DB80592E4D25"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "4272E59F7A10B3F3"
 				item: "spectrum:perturbed_eye"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 6.0d
 			y: 5.0d
 		}
 		{
@@ -399,14 +615,27 @@
 				"Throwing in some items seems to corrupt them up to the point they turn into something else entirely..."
 			]
 			id: "443222256086E390"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "590A2F955C043A14"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "6FE92203906B68B0"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "0FCE6521A643EF4A"
 				item: "spectrum:dragonrot_bucket"
 				type: "item"
 			}]
 			title: "Dragonrot"
-			x: -1.0d
-			y: -1.5d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5399D6C528EC2416"]
@@ -416,13 +645,26 @@
 				"The item to complete this quest are located deep within, or dropped from the turrets themselves."
 			]
 			id: "450594E495BC0599"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "425852F6FF7DB042"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "7CBA0BA0D544E67E"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "10BB9D6C3B8025FC"
 				item: "spectrum:moonstone_core"
 				type: "item"
 			}]
 			x: 5.5d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3AAF1A0973D3EF34"]
@@ -432,13 +674,26 @@
 				"With Moonstone Powder, you can now obtain this special locket."
 			]
 			id: "17FD99892BD82F5B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "39B7DD1E5D546AD6"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "6D71A4BA16734AFC"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "614937D3CCA10318"
 				item: "spectrum:mysterious_locket"
 				type: "item"
 			}]
 			x: 2.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["79021A59C661F6FE"]
@@ -448,13 +703,26 @@
 				"How do they grow without a budding block? One thing you noticed: it slightly grew in proximity of other metals."
 			]
 			id: "627A02991BC8B5A9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "15CC9C92E6A5E383"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "03E6597CAA501D12"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "0D61769D2684A771"
 				item: "spectrum:bismuth_flake"
 				type: "item"
 			}]
 			x: 0.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["627A02991BC8B5A9"]
@@ -464,18 +732,44 @@
 				"Luckily, you only have to do this once, and afterward you unlock recipes to make Crystals without sacficiing Iron Blocks."
 			]
 			id: "2A059C10C7652F2D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "77D20DD0E5EA0E31"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "488F61EBF1D4FD5D"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "0B6E9FE4A3A3101D"
 				item: "spectrum:bismuth_crystal"
 				type: "item"
 			}]
 			x: 0.5d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5506288533F296C9"]
 			description: ["Be careful transporting a lot of Paltaeria, you might be in for a surprise!"]
 			id: "738BCE60946CF049"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "152799AD078BE94F"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "1C0E5F7197903977"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				advancement: "spectrum:lategame/carry_too_many_low_gravity_blocks"
 				criterion: ""
@@ -483,20 +777,33 @@
 				type: "advancement"
 			}]
 			title: "Taking Flight"
-			x: 5.0d
+			x: 7.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["738BCE60946CF049"]
 			description: ["From your previous experiences with Paltaeria, you can already guess that it would not be a good idea to place htis block in open sky - your future self will thank you."]
 			id: "108B943367B05AE7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4D7DDD37705786F1"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "0EE81F871D261901"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "45E3B561DB54B566"
 				item: "spectrum:paltaeria_fragment_block"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 6.5d
+			x: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4CD66873CC70184F"]
@@ -506,29 +813,73 @@
 				"Mining a single gem is required for unlocking the recipe to craft more gems."
 			]
 			id: "69CBC070B022290F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "220A7E57CE7E11BD"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "0B37CC0B9AE512F0"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "29A9FE398DC764CF"
 				item: "spectrum:paltaeria_gem"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 5.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["69CBC070B022290F"]
 			description: ["The problem with Onyx Shards is that their creation is tied to very specific conditions. It is not every day that there is a new moon. Every time you look at the clock, the window of time seems to have just passed by for two minutes. Time to break out the big guns: Magenta's affinity for time..."]
 			id: "06150578C7538A63"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "06DD23BECF2341BB"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "288ECDC3D0FC11DD"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "434E254228F9E299"
 				item: "spectrum:celestial_pocketwatch"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 5.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7659A1C8F1DC85E9"]
+			description: [
+				"The Resonant Pickaxe match its own gentle vibrations to those of its surroundings. Allows you to keep blocks intact that would otherwise be irreparably destroyed."
+				""
+				"Try it out on budding blocks and spawners!"
+			]
 			id: "5F14745E347FDDAA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "681B511D0AB255C4"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "3E3DE31B8AD743AD"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "1C60CEC1DAF84597"
 				item: {
@@ -545,7 +896,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2A059C10C7652F2D"]
@@ -556,7 +907,7 @@
 				""
 				"Growing resources requires:"
 				"- a Catalyst"
-				"- one color of Ink, supplied via Flask"
+				"- one color of Ink, supplied via Flask. The color of ink is indicated when hovering over the Crystallarieum in REI or by the color the block turns once you place the initial bud material down."
 				""
 				"Catalysts"
 				"Each catalyst has a different effect on bud growth: while one catalyst may reduce the required amount of ink, another may alter the duration of the process..."
@@ -567,13 +918,26 @@
 				"For crystalline resources, an existing crystal can be used as a seed to grow identical copies of itself."
 			]
 			id: "6B2598366611E6A0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3509E4E3EDABE3E9"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "6006E5ED6D2F055B"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "796AF92998347A06"
 				item: "spectrum:crystallarieum"
 				type: "item"
 			}]
 			x: 0.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["16339BF01528CC59"]
@@ -585,6 +949,19 @@
 				"&oIf you don't immediately know the solution, I recommend exploring the other quests in the Deeper Down.&r"
 			]
 			id: "60F0D0EFE4D04311"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2765077119A775D5"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "20DDF2AF505A9D53"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "01023F5C887DED38"
 				item: "spectrum:refined_malachite"
@@ -597,6 +974,19 @@
 			dependencies: ["60F0D0EFE4D04311"]
 			description: ["The Workstaff is the perfect Multitool: Left Shift + Right Click allows you to switch between Silk Touch and Fortune, mining large tunnels at once, and allows you to strip, till, and flatten."]
 			id: "3186BB365F5A2E19"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "36148D6D9785A5DA"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "3EF9F68CFBB842F2"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "00B9391D33FC033A"
 				item: {
@@ -619,6 +1009,19 @@
 			dependencies: ["60F0D0EFE4D04311"]
 			description: ["The Ultra Greatsword's sheer size allows you to hit enemies from greater distance. If you hadn't included the Paltaeria, you probably wouldn't even be able to lift it."]
 			id: "5FB073161DF17A13"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "35C7FD59F60CA408"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "363B7C22A435FD5D"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "2D6C8C01E80DE123"
 				item: {
@@ -645,6 +1048,19 @@
 				"It may have only two prongs compared to a Trident, but they are twice as pointy!"
 			]
 			id: "1D42A9FDD2C990AB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6088491DAFEFD599"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "0289D9A9A346414F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "7D64CB01EEBA4285"
 				item: {
@@ -667,6 +1083,19 @@
 			dependencies: ["60F0D0EFE4D04311"]
 			description: ["The Malachite Crossbow shoots projectiles at higher speed and precision compared to a mundane Crossbow"]
 			id: "1C901D4BD9D77AF8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "02BA5AD2BE8A652D"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "4EEA755BC7FB356B"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "5BCA2D61F0E120A3"
 				item: {
@@ -688,12 +1117,25 @@
 		{
 			dependencies: ["69CBC070B022290F"]
 			id: "3EA1A45EF8297E67"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "17A0D79128E3706F"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "1F838AE4EA73B412"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "0794DEB1EF389982"
 				item: "spectrum:puff_circlet"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.0d
 			y: 5.0d
 		}
 		{
@@ -707,6 +1149,19 @@
 				"It looks to point towards something in the Deeper Down..."
 			]
 			id: "02EFA93D1525F456"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "49252EEA96CDB230"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "2556BBDE133DB358"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -715,7 +1170,7 @@
 				type: "item"
 			}]
 			x: 3.75d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["02EFA93D1525F456"]
@@ -725,6 +1180,19 @@
 				"If you enjoyed your time playing through this mod, please support the devs on Ko-fi if you can."
 			]
 			id: "37C701CDEA359A70"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0C056AF03C1A0FB2"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "7EF46B391E130EE6"
+					type: "xp"
+					xp: 10
+				}
+			]
 			shape: "square"
 			subtitle: "A Journey's End"
 			tasks: [{
@@ -735,7 +1203,7 @@
 				type: "structure"
 			}]
 			x: 3.75d
-			y: -5.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2E338EC2698B4AA5"]
@@ -745,6 +1213,19 @@
 				"Enchanting an Exchanging Staff with Resonance by using the Enchanter will give it the power to harvest some special blocks as-is."
 			]
 			id: "0E35862B7F9081DE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6BFADE2CA7C89407"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "76CF7C337489CCDB"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "12388D38C7A34EDF"
 				item: {
@@ -754,8 +1235,723 @@
 				}
 				type: "item"
 			}]
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["05242C45EBB0A3A3"]
+			description: [
+				"To make &aBone Ash&r, you'll need a &bCinderhearth&r as it's the only thing that can get hot enough to burn the bones into ash."
+				""
+				"&aBone Ash&r is used for decoration and potions."
+			]
+			id: "7F58E8BBED696822"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "76BF23A24DFEDB89"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "2839583AB94E2021"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "52487E3CAC9B75A9"
+				item: "spectrum:bone_ash"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["450594E495BC0599"]
+			id: "2F678C5F246CBFAB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "79AD92FAF7F947FF"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "405058C2A35C3715"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "16429464A58496DE"
+				item: {
+					Count: 1b
+					id: "spectrum:pipe_bomb"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["627E6415D8207E80"]
+			description: [
+				"So much for your plans for a personal jurassic park. Maybe a petting zoo would be more suitable? "
+				""
+				"The result definitely is not quite as... fierce... as you imagined. Usually you'd say you are used to faiulres by now, but with this result, who are you to complain?"
+				""
+				"Their down looks beyond soft. Maybe, if you sneak up to one with Shears, you'd be able to snip a feather or two? "
+			]
+			id: "7EEAE3E2C7790CFE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6BA11BB63089C6CA"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "6249D49DDC18DFE7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "57DD98407E52123E"
+				item: "spectrum:effulgent_feather"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7EEAE3E2C7790CFE"]
+			id: "14D72A06A59AFAC5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4D1863866FE357FC"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "24B6C311C4F395BF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "679C1507F0761B1B"
+				item: {
+					Count: 1b
+					id: "spectrum:dragonrending_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "spectrum:razing"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["79021A59C661F6FE"]
+			description: ["Hard, sharp and yet surprisingly brittle. These stones are found everywhere in the Razor Edge biome. Unless silk touched, Pyrite shatters into items, requiring you to combine them again."]
+			id: "2708B3088FEE8D63"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0287031AC389EE82"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "2E65386DE8F5292B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2C01090DAF866F8B"
+				item: "spectrum:pyrite_chunk"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2708B3088FEE8D63"]
+			description: [
+				"This small blade is too fine to inflict serious wounds, but has many sharp spikes that drill themselves into the flesh of your opponent."
+				""
+				"Infused in the Potion Workshop, all struck opponents are afflicted with the effect - provided you have enough Ink on you."
+			]
+			id: "54FDBF6270995B3F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "71810D5A745B46DE"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "69ECB20DFB6979E1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2FB6D6AC2353B62E"
+				item: {
+					Count: 1b
+					id: "spectrum:nightfalls_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2708B3088FEE8D63"]
+			description: [
+				"Mining is your game. It's almost a mircale that you're only now coming up with the idea of upgrading not only your tools, but your mining proficiency in general. This ring will grow with your abilities."
+				""
+				"Infuse it with Magenta Ink in a Color Picker to increase your mining speed."
+			]
+			id: "4D1376E69BD35212"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0B51A04C3E3AD3E7"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "113FBD0CBA686C17"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "419F42EBEE3A7C90"
+				item: "spectrum:ring_of_pursuit"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["450594E495BC0599"]
+			id: "35E69A49E6C956DA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3C2080102BCE4B51"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "5F9A0C443CCC62A3"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6F87D60E10A9A5AB"
+				item: "spectrum:staff_of_remembrance"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7A1A3A4E0086B8C6"]
+			id: "33A1CC9DFDAF2B13"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0739236D159BA100"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "1EFE7679FCACCB64"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2E65C6FBA2CD23FA"
+				item: {
+					Count: 1b
+					id: "spectrum:glass_crest_workstaff"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:fortune"
+							lvl: 4s
+						}]
+					}
+				}
+				type: "item"
+			}]
 			x: 8.5d
-			y: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7A1A3A4E0086B8C6"]
+			id: "4E28711A4FEDF124"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3272A552CD9ACC1A"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "5D6DA50094CC3D10"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "29BBC0964A123BB6"
+				item: {
+					Count: 1b
+					id: "spectrum:glass_crest_ultra_greatsword"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:sweeping"
+							lvl: 4s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7A1A3A4E0086B8C6"]
+			id: "2414DEE44DADFBE4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3B6E5D1C475E69EB"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "3E95BA983AA4DFD2"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4B145B43D03A6A5F"
+				item: {
+					Count: 1b
+					id: "spectrum:ferocious_glass_crest_bident"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:impaling"
+							lvl: 6s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7A1A3A4E0086B8C6"]
+			id: "6981018F19EDE963"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4B0349AC6D8E15E4"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "5D19D89AE8D13AAC"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "3990D998D38DFB0D"
+				item: {
+					Count: 1b
+					id: "spectrum:fractal_glass_crest_bident"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:impaling"
+							lvl: 6s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7A1A3A4E0086B8C6"]
+			id: "201E9A2D0D4B32E8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6B177BDED5CAC7FB"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "27F96CEB7A6501B2"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "289A69858D2E4009"
+				item: {
+					Count: 1b
+					id: "spectrum:glass_crest_crossbow"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:piercing"
+							lvl: 5s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["450594E495BC0599"]
+			id: "7A1A3A4E0086B8C6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0BD44208D9256EA0"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "3C9320706995413E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "5254BB6749220834"
+				title: "Glass Crest Tools"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["60F0D0EFE4D04311"]
+			description: [
+				"A ribbon, gifted to pets as an &beverlasting promise&r to watch out and care for them. Name it and attach it on a creature. Should it ever &cdie&r it will drop a &aBroken Promise&r. Basically if your pet dies you get it back as a &eMemory&r that can be manifested later."
+				""
+				"You can use a &bCrafting Table&r to add a &3Pigment&r to the &6Ribbon&r to give your pet a colored name."
+			]
+			id: "02BA01D13D68A992"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3B51CAEEE7C0AA16"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "7434C0B3D5705106"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6C4B4BC2CBE7E27E"
+				item: "spectrum:everpromise_ribbon"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7659A1C8F1DC85E9"]
+			description: [
+				"&eAmpuoules&r can be used as combat tools, which their effect varies based on the material to make them."
+				""
+				"&bAzurite Ampoules&r summons homing missiles that attack the nearest enemy."
+				"&cBloodstone Ampoules&r summon arrows that pierce through enemies."
+				"&aMalachite Ampoules&r create mines that you can put a potion effect on using a &6Potion Workshop&r."
+			]
+			id: "2DD336198AD11E13"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "22C1F32FB3A5B86B"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "6539B5D60476F021"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [
+				{
+					id: "44537BD8DB22FF49"
+					item: "spectrum:azurite_glass_ampoule"
+					type: "item"
+				}
+				{
+					id: "304E08133AE3FC72"
+					item: "spectrum:bloodstone_glass_ampoule"
+					type: "item"
+				}
+				{
+					id: "581F76E10B2CC41B"
+					item: "spectrum:malachite_glass_ampoule"
+					type: "item"
+				}
+			]
+			title: "Ampoules"
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["60F0D0EFE4D04311"]
+			description: ["The &aCirclet of Arrogance&r gives you the &4Ascension&r buff in wearable form. If your mere existence wasn't in danger every time you get hit too hard, you would not hesitate for a second to put it on. &o&bBut should you really...&r&r? &c&lOf course&r&r."]
+			id: "7937A68567C5A83E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "34AE0D809BDF89ED"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "048DFAE3DC4992E9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Test Your Hubris"
+			tasks: [{
+				id: "36A6D781BD45D611"
+				item: "spectrum:circlet_of_arrogance"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["05242C45EBB0A3A3"]
+			description: [
+				"Even in death, the grand skeletal remains of dragons that dot the depths bear so much might and life to them. There must be some way to recreate their splendor via those Dragonbone Chunks."
+				""
+				"Maybe you will be the one to restore the age of divine dragons?"
+				""
+				"Checking REI for this recipe is a bit difficult, so I'll include it here. In your Spirit Instiller, from left to right, use the following:"
+				"- 8x Dragonbone Chunk"
+				"- 4x Vegetal / 4x Neolith"
+				"- 1x Jade Petals / 1x Jadeite Petals"
+			]
+			id: "627E6415D8207E80"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "69711FF2812EE279"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "7336045CEF83224A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "How to Train Your Dragon"
+			tasks: [{
+				id: "69FEB048FF9A2045"
+				item: {
+					Count: 1b
+					id: "spectrum:memory"
+					tag: {
+						EntityTag: {
+							id: "spectrum:kindling"
+						}
+						TicksToManifest: 8
+					}
+				}
+				type: "item"
+			}]
+			title: "Memory of Kindling"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7EEAE3E2C7790CFE"]
+			description: ["The Effulgent Feathers of the Kindlings are notable, enough so to compel you to regularly give the little bumpkins coat trimmings. However, you've noticed that, sadly quite frequently, drops of blood will come along with the features. When dipped into Liquid Crystal, it leaves behind a sparkly crystalline residue."]
+			id: "5928172C2A45D5AB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "53C5113AD790B352"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "213364DD2EC50839"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4AC6FCB9E50C9473"
+				item: "spectrum:raw_bloodstone"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5928172C2A45D5AB"]
+			description: ["Set upon the Crystallarieum and given a precarious amount of Copper, the speck of dragonblood will grow and crystallize into a grand slab of glass, shining in stunning scarlet and bleeding with willful magic!"]
+			id: "0989F909C4BA5025"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E6314E18D8C3C08"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "5E2C6A6F1EBFC139"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6748A97992C51AA7"
+				item: "spectrum:refined_bloodstone"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7EEAE3E2C7790CFE"]
+			description: ["Using these feathers over regular chicken feathers you can imbue your arrows with even more power. These razor-sharp arrows deal increased damage, can be fired underwater and can pierce translucent blocks such as Glass. Different types of tips apply different effects as well."]
+			id: "4946C68317D5C4EF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4F4BAA05B7E053E8"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "29AC76D802CA1275"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "0A1D3487114272FD"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "spectrum:glass_arrows"
+					}
+				}
+				title: "Any Glass Arrows"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3AAF1A0973D3EF34"]
+			description: [
+				"It's pretty neat."
+				""
+				"&oPress F5 ;)&r"
+			]
+			id: "7F2BDC0286687919"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7EF238CC1FCAE948"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "1035F31263C59E45"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "22BF4E6CD2E786E5"
+				item: "spectrum:neat_ring"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["69CBC070B022290F"]
+			description: [
+				"Works very much like its little borther. However, this verison has three chambers, each of which can be filled with a different potion - which also means it can only support effects of level 1."
+				""
+				"Use the Potion Workshop to infuse it, by placing it where the Bottle would normally go."
+				""
+				"To clear its effect, put it in a crafting grid."
+			]
+			id: "3A478CF6077CCAF1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "404816A9DCDB55F7"
+					table_id: 3940915284443870126L
+					type: "random"
+				}
+				{
+					id: "7A08FA2D58480B69"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "44119EC988BE2ACA"
+				item: "spectrum:greater_potion_pendant"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
 		}
 	]
 	title: "&aSpectrum: Turn to Purity&r"

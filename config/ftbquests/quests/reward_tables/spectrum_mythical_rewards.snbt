@@ -1,0 +1,87 @@
+{
+	id: "36B0F192432F33AE"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{
+			item: {
+				Count: 1b
+				id: "spectrum:seven_league_boots"
+				tag: {
+					Enchantments: [{
+						id: "minecraft:power"
+						lvl: 5s
+					}]
+				}
+			}
+		}
+		{ count: 8, item: "spectrum:moonstone_shard" }
+		{ count: 4, item: "spectrum:blood_orchid_petal" }
+		{ count: 4, item: "spectrum:amaranth_bushel" }
+		{ count: 3, item: "spectrum:bedrock_dust" }
+		{ count: 4, item: "spectrum:upgrade_efficiency2" }
+		{ count: 4, item: "spectrum:upgrade_yield2" }
+		{ count: 4, item: "spectrum:upgrade_experience2" }
+		{ count: 4, item: "spectrum:upgrade_speed3" }
+		{ count: 4, item: "spectrum:crystal_apothecary" }
+		{ count: 64, item: "spectrum:orange_pigment" }
+		{ count: 64, item: "spectrum:magenta_pigment" }
+		{ count: 64, item: "spectrum:light_blue_pigment" }
+		{ count: 64, item: "spectrum:yellow_pigment" }
+		{ count: 64, item: "spectrum:lime_pigment" }
+		{ count: 64, item: "spectrum:pink_pigment" }
+		{ count: 64, item: "spectrum:cyan_pigment" }
+		{ count: 64, item: "spectrum:purple_pigment" }
+		{ count: 64, item: "spectrum:blue_pigment" }
+		{ count: 64, item: "spectrum:brown_pigment" }
+		{ count: 64, item: "spectrum:green_pigment" }
+		{ count: 64, item: "spectrum:red_pigment" }
+		{ count: 2, item: "spectrum:budding_topaz" }
+		{ count: 2, item: "spectrum:budding_citrine" }
+		{ count: 2, item: "spectrum:budding_onyx" }
+		{ count: 2, item: "minecraft:budding_amethyst" }
+		{ item: "spectrum:azure_dike_belt" }
+		{ item: "spectrum:azure_dike_ring" }
+		{ count: 64, item: "spectrum:refined_azurite" }
+		{ count: 64, item: "spectrum:neolith" }
+		{ count: 16, item: "spectrum:mermaids_gem" }
+		{ count: 64, item: "spectrum:stardust" }
+		{ count: 16, item: "spectrum:incandescent_amalgam" }
+		{ item: "spectrum:cotton_cloud_boots" }
+		{ count: 32, item: "spectrum:moonstone_powder" }
+		{ count: 16, item: "spectrum:storm_stone" }
+		{ count: 16, item: "spectrum:star_fragment" }
+		{ count: 16, item: "spectrum:stratine_fragments" }
+		{ item: "spectrum:bottle_of_ruin" }
+		{
+			item: {
+				Count: 1b
+				id: "spectrum:ink_assortment"
+				tag: {
+					EnergyStore: {
+						MaxEnergyPerColor: 6400L
+						black: 6400L
+						blue: 6400L
+						brown: 6400L
+						cyan: 6400L
+						gray: 6400L
+						green: 6400L
+						light_blue: 6400L
+						light_gray: 6400L
+						lime: 6400L
+						magenta: 6400L
+						orange: 6400L
+						pink: 6400L
+						purple: 6400L
+						red: 6400L
+						white: 6400L
+						yellow: 6400L
+					}
+				}
+			}
+		}
+		{ item: "spectrum:everpromise_ribbon" }
+		{ item: "spectrum:gilded_book" }
+	]
+	title: "Spectrum Mythical Rewards"
+}
