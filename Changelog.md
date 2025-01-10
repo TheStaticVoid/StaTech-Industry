@@ -13,6 +13,7 @@ Maintenance patch + Spectrum update
 - [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - megane lost support for WTHIT, going with Jade from here out
 - [megane](https://www.curseforge.com/minecraft/mc-mods/megane)
 - [cAn i MiNe thIS bLOCk?](https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block)
+- [Blur](https://www.curseforge.com/minecraft/mc-mods/blur) - Seems neat but causes lag
 
 ## Mods updated:
 - Fabric loader version 0.15.7 -> 0.16.9
