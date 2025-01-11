@@ -1646,19 +1646,11 @@
 		{
 			dependencies: ["450594E495BC0599"]
 			id: "7A1A3A4E0086B8C6"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "0BD44208D9256EA0"
-					table_id: 3940915284443870126L
-					type: "random"
-				}
-				{
-					id: "3C9320706995413E"
-					type: "xp"
-					xp: 10
-				}
-			]
+			rewards: [{
+				id: "3C9320706995413E"
+				type: "xp"
+				xp: 10
+			}]
 			tasks: [{
 				id: "5254BB6749220834"
 				title: "Glass Crest Tools"

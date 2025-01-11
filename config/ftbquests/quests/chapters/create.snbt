@@ -3340,6 +3340,24 @@
 			x: -14.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["77F5A66037C71A80"]
+			description: ["Need more shapes? &dCopycats+&r has you covered. Type &a@copycats&r in &5REI&r to see all that you can make!"]
+			id: "648909FA2AF5732D"
+			rewards: [{
+				id: "612C9D8C44742401"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7C3EBAED56DB41EE"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Copycats+"
+			x: -3.5d
+			y: 4.0d
+		}
 	]
 	subtitle: ["Do as you will"]
 	title: "&3Create"
