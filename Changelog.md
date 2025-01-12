@@ -6,6 +6,7 @@ Maintenance patch + Spectrum update
 - [Create: Copycats+](https://www.curseforge.com/minecraft/mc-mods/copycats) - more build variety options
 - [Jade](https://www.curseforge.com/minecraft/mc-mods/jade) - replaces wthit
 - [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons-fabric)
+- [Polymorphic Energistics](https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics) - Polymorph support for AE2
 - [Raised](https://www.curseforge.com/minecraft/mc-mods/raised) - removed awhile back, works again now
 - [XXL Packets](https://www.curseforge.com/minecraft/mc-mods/xxl-packets) - Fixes some mod issues
 
