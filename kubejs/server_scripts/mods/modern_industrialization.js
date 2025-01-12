@@ -101,7 +101,7 @@ ServerEvents.recipes(e => {
     ],
     {
         B: mc('bricks'),
-        F: mc('furnace'),
+        F: mi('bronze_furnace'),
         C: mi('coke')
     })
     .id(st('large_steam_furnace'));
