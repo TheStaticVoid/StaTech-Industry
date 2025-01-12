@@ -59,7 +59,7 @@
 			description: [
 				"You've dug deep to get here, but you must dig deeper."
 				""
-				"Nearing the bottom of this new world you find yourself in, a new precious stone sits. Find the shimmering stones in this pit of darkness. &oThey also generate in geodes.&r"
+				"Nearing the &bbottom of this new world&r you find yourself in, a &anew precious stone&r sits. Find the shimmering stones in this pit of darkness. &oThey also generate in geodes.&r"
 			]
 			id: "3AAF1A0973D3EF34"
 			rewards: [
@@ -100,11 +100,11 @@
 		{
 			dependencies: ["3AAF1A0973D3EF34"]
 			description: [
-				"These formerly unknown shards can be used to improve your Pigment Pedestal even further."
+				"These &bformerly unknown shards&r can be used to improve your &aPigment Pedestal&r even further."
 				""
-				"To harness their power fully, you will need to upgrade your Spectrum Temple to a Spectrum Palace. The quest requirements are the materials you will need to do this upgrade. You can use the World of Color book to plant a visualization of where the blocks will need to go."
+				"To harness their power fully, you will need to upgrade your &eSpectrum Temple&r to a &6Spectrum Palace&r. The quest requirements are the materials you will need to do this upgrade. You can use the &3World of Color book&r to plant a visualization of where the blocks will need to go."
 				""
-				"Place a single Moonstone Shard in the Pigment Table to start the conversion."
+				"Place a single &bMoonstone Shard&r in the &dPigment Table&r to start the conversion."
 				""
 				""
 				"{image:statech:textures/item/spectrum_palace.png width:240 height:135 align:1}"
@@ -193,9 +193,9 @@
 		{
 			dependencies: ["1E6E60798FA42890"]
 			description: [
-				"Your latest structure feels... somewhat lacking. And now you know why: There's simply not enough Moonstone. The tricky part is that creating the Moonstone Chiseled Blocks to build out your Spectrum Palace would require the Palace to be fully functional already. "
+				"Your latest structure feels... somewhat lacking. And now you know why: There's simply not enough &aMoonstone&r. The tricky part is that creating the &bMoonstone Chiseled Blocks&r to build out your &dSpectrum Palace&r would require the&d Palace &rto be fully functional already. "
 				""
-				"&oPerhaps there is a way to get around that? If you haven't already found the solution, you should continue exploring the Deeper Down for the trails left by those before you.&r"
+				"&oPerhaps there is a way to get around that? If you haven't already found the solution, you should continue exploring the &6Deeper Down&r for the trails left by those before you.&r"
 			]
 			icon: "spectrum:moonstone_chiseled_basalt"
 			id: "5399D6C528EC2416"
@@ -226,9 +226,9 @@
 		{
 			dependencies: ["5399D6C528EC2416"]
 			description: [
-				"There is no question that, despite the lack of light, there must once have been a highly advanced civilization down here. But all you found were ruins."
+				"There is no question that, despite the lack of light, there must once have been a highly &aadvanced civilization&r down here. But all you found were ruins."
 				""
-				"Thankfully, you can repurpose the Moonstone Chiseled Blocks found in their temple to further your own goals. "
+				"Thankfully, you can repurpose the &eMoonstone Chiseled Blocks&r found in their temple to further your own goals. "
 				""
 				"But what happened to them? Surely you can find clues to their whereabouts, or demise."
 			]
@@ -267,7 +267,7 @@
 		{
 			dependencies: ["6AC35F561169FD4B"]
 			description: [
-				"Adding the newly found Moonstone Chiseled Blocks to the base of your Spectrum Palace will finally allow you to fully utilize the power allotted to you by the Moonstone upgrade. I'd recommend checking the World of Color book to reference where to place these blocks."
+				"Adding the newly found &aMoonstone Chiseled Blocks&r to the base of your &dSpectrum Palace&r will finally allow you to fully utilize the power allotted to you by the Moonstone upgrade. I'd recommend checking the &6World of Color&r book to reference where to place these blocks."
 				""
 				"Right click the pedestal to finish the achievement."
 			]
@@ -352,7 +352,7 @@
 		}
 		{
 			dependencies: ["6967948DE668220D"]
-			description: [""]
+			description: ["The pretty sounds of the &bHummingstones&r can build each other up until the point in which they shatter in a final anthem. These &ashattered remains&r never seem to stop vibrating, as if they retain some form of &3inherent energy&r."]
 			id: "7659A1C8F1DC85E9"
 			rewards: [
 				{
@@ -461,7 +461,7 @@
 		}
 		{
 			dependencies: ["53C1377834A9B945"]
-			description: ["There's a new ore that can be found in the end. Make sure you're ready to catch it!"]
+			description: ["There's a new ore that can be found in the end. Make sure you're &aready to catch it&r!"]
 			id: "4CD66873CC70184F"
 			rewards: [
 				{
@@ -489,9 +489,9 @@
 		{
 			dependencies: ["4CD66873CC70184F"]
 			description: [
-				"The light blue color is the trademark of this ore. It is found exclusively in the End in small clusters."
+				"The &blight blue color&r is the trademark of this ore. It is found exclusively in &dThe End&r in small clusters."
 				""
-				"Like the End itself, the curious properties of this material are not to be overlooked."
+				"Like &dThe End&r itself, the curious properties of this material are not to be overlooked."
 			]
 			id: "5506288533F296C9"
 			rewards: [
@@ -517,7 +517,7 @@
 		}
 		{
 			dependencies: ["077B3E26EEA7F65C"]
-			description: ["Malachite is a pristine material that sparkles in a deep green hue. It seems to have strong magical properties, almost like a Deeper Down analog of Azurite. In another simularity to Azurite, "]
+			description: ["&aMalachite&r is a pristine material that sparkles in a deep green hue. It seems to have strong magical properties, almost like a &6Deeper Down&r analog of &9Azurite&r. "]
 			id: "16339BF01528CC59"
 			rewards: [
 				{
@@ -542,7 +542,7 @@
 		}
 		{
 			dependencies: ["53C1377834A9B945"]
-			description: ["With your new Spectrum Palace, you can finally round out the last three pigments you have not been able to create up to this point."]
+			description: ["With your new &dSpectrum Palace&r, you can finally round out the last three pigments you have not been able to create up to this point."]
 			id: "2E338EC2698B4AA5"
 			rewards: [
 				{
@@ -610,9 +610,9 @@
 		{
 			dependencies: ["79021A59C661F6FE"]
 			description: [
-				"It looks red-hot, as if it were on fire, burning like hell to the touch (you just had to satisfy your curiousity...) and yet radiates no heat at all. While Midnight Solution seems to be destructive for the sake of change, Dragonrot seems intent only on pure and total destruction. Certainly there is not much organic that can withstand its bloodlust."
+				"It looks &cred-hot&r, as if it were on fire, burning like hell to the touch (you just had to satisfy your curiousity...) and yet radiates no heat at all. While &dMidnight Solution&r seems to be destructive for the sake of change, &cDragonrot&r seems intent only on pure and total destruction. Certainly there is not much organic that can withstand its bloodlust."
 				""
-				"Throwing in some items seems to corrupt them up to the point they turn into something else entirely..."
+				"Throwing in some items seems to &3corrupt&r them up to the point they turn into something else entirely..."
 			]
 			id: "443222256086E390"
 			rewards: [
@@ -669,9 +669,9 @@
 		{
 			dependencies: ["3AAF1A0973D3EF34"]
 			description: [
-				"You may or may not have come across one of the Preservation Ruins up to this point, however there was a secret locked away due to your lack of ability to make grayscale colors. "
+				"You may or may not have come across one of the &dPreservation Ruins&r up to this point, however there was a secret locked away due to your lack of ability to make grayscale colors. "
 				""
-				"With Moonstone Powder, you can now obtain this special locket."
+				"With &aMoonstone Powder&r, you can now obtain this special locket."
 			]
 			id: "17FD99892BD82F5B"
 			rewards: [
@@ -698,9 +698,9 @@
 		{
 			dependencies: ["79021A59C661F6FE"]
 			description: [
-				"A metal that shimmers in all the colors of the rainbow. The small seedlings you collected are far too small to be used for any meaningful purpose."
+				"A metal that shimmers in all the colors of the rainbow. The small seedlings you collected are far &ctoo small&r to be used for any meaningful purpose."
 				""
-				"How do they grow without a budding block? One thing you noticed: it slightly grew in proximity of other metals."
+				"How do they grow without a &ebudding block&r? One thing you noticed: &ait slightly grew in proximity of other metals&r."
 			]
 			id: "627A02991BC8B5A9"
 			rewards: [
@@ -727,9 +727,9 @@
 		{
 			dependencies: ["627A02991BC8B5A9"]
 			description: [
-				"Growing your first Bismuth Crystals requires placing a Bismuth Bud onto a cluster of Iron Blocks. "
+				"Growing your first &aBismuth Crystals&r requires placing a &dBismuth Bud&r onto a cluster of &bIron Blocks&r. "
 				""
-				"Luckily, you only have to do this once, and afterward you unlock recipes to make Crystals without sacficiing Iron Blocks."
+				"Luckily, you only have to do this &eonce&r, and afterward you unlock recipes to make crystals without sacficiing &bIron Blocks&r."
 			]
 			id: "2A059C10C7652F2D"
 			rewards: [
@@ -755,7 +755,7 @@
 		}
 		{
 			dependencies: ["5506288533F296C9"]
-			description: ["Be careful transporting a lot of Paltaeria, you might be in for a surprise!"]
+			description: ["Be careful transporting a lot of &bPaltaeria&r, you might be in for a surprise!"]
 			id: "738BCE60946CF049"
 			rewards: [
 				{
@@ -782,7 +782,7 @@
 		}
 		{
 			dependencies: ["738BCE60946CF049"]
-			description: ["From your previous experiences with Paltaeria, you can already guess that it would not be a good idea to place htis block in open sky - your future self will thank you."]
+			description: ["From your previous experiences with &bPaltaeria&r, you can already guess that it would not be a good idea to place htis block in open sky - your future self will thank you."]
 			id: "108B943367B05AE7"
 			rewards: [
 				{
@@ -808,9 +808,9 @@
 		{
 			dependencies: ["4CD66873CC70184F"]
 			description: [
-				"Paltaeria Gems are incredibly rare drops from mining the ore. Unlike the fragments, the gems can be used in recipes where the fragments would be too small to suffice."
+				"&bPaltaeria Gems&r are incredibly rare drops from mining the ore. Unlike the fragments, the gems can be used in recipes where the fragments would be too small to suffice."
 				""
-				"Mining a single gem is required for unlocking the recipe to craft more gems."
+				"Mining a &esingle gem&r is required for unlocking the recipe to craft more gems."
 			]
 			id: "69CBC070B022290F"
 			rewards: [
@@ -836,7 +836,7 @@
 		}
 		{
 			dependencies: ["69CBC070B022290F"]
-			description: ["The problem with Onyx Shards is that their creation is tied to very specific conditions. It is not every day that there is a new moon. Every time you look at the clock, the window of time seems to have just passed by for two minutes. Time to break out the big guns: Magenta's affinity for time..."]
+			description: ["The problem with &dOnyx Shards&r is that their creation is tied to very specific conditions. It is not every day that there is a new moon. Every time you look at the clock, the window of time seems to have just passed by for two minutes. Time to break out the big guns: &dMagenta's affinity for time...&r"]
 			id: "06150578C7538A63"
 			rewards: [
 				{
@@ -862,9 +862,9 @@
 		{
 			dependencies: ["7659A1C8F1DC85E9"]
 			description: [
-				"The Resonant Pickaxe match its own gentle vibrations to those of its surroundings. Allows you to keep blocks intact that would otherwise be irreparably destroyed."
+				"The &aResonant Pickaxe&r matches its own gentle vibrations to those of its surroundings. It allows you to keep blocks intact that would otherwise be &eirreparably destroyed&r."
 				""
-				"Try it out on budding blocks and spawners!"
+				"Try it out on &bbudding blocks&r and &2spawners&r!"
 			]
 			id: "5F14745E347FDDAA"
 			rewards: [
@@ -901,18 +901,18 @@
 		{
 			dependencies: ["2A059C10C7652F2D"]
 			description: [
-				"With budding blocks in mind you designed the Crystallarieum: an Ink-powered contraption that grows chunks of raw ore into sparkling crystals. Though your best efforst failed to grow actual gems, you quickly realized that icould grow all sorts of other resources instead."
+				"With budding blocks in mind you designed the &dCrystallarieum&r: an &eInk-powered&r contraption that grows chunks of raw ore into sparkling crystals. Though your best efforst failed to grow actual gems, you quickly realized that it could grow all sorts of other resources instead."
 				""
-				"Throw raw ore on top to let it crystallize into a Bud, able to be grown."
+				"Throw &6raw ore&r on top to let it &bcrystallize into a Bud&r, able to be grown."
 				""
 				"Growing resources requires:"
-				"- a Catalyst"
-				"- one color of Ink, supplied via Flask. The color of ink is indicated when hovering over the Crystallarieum in REI or by the color the block turns once you place the initial bud material down."
+				"- a &aCatalyst&r"
+				"- one color of &bInk&r, supplied via &2Flask&r. The color of ink is indicated when hovering over the &dCrystallarieum&r in &5REI&r or by the color the block turns once you place the initial bud material down."
 				""
-				"Catalysts"
+				"&aCatalysts&r"
 				"Each catalyst has a different effect on bud growth: while one catalyst may reduce the required amount of ink, another may alter the duration of the process..."
 				""
-				"Metals vs. Crystals"
+				"&6Metals vs. Crystals&r"
 				"Metallic resources require unrefined materials such as Raw Iron, resulting in a Small Iron Bud that will grow steadily until it can be safely harvested."
 				""
 				"For crystalline resources, an existing crystal can be used as a seed to grow identical copies of itself."
@@ -942,9 +942,9 @@
 		{
 			dependencies: ["16339BF01528CC59"]
 			description: [
-				"Malachite also needs to be refined. The small fragments you obtain must first grow into full usable crystals - though you're not sure you'll seem them finished in your lifetime."
+				"&aMalachite&r also needs to be refined. The small fragments you obtain must first grow into full usable crystals - though you're not sure you'll seem them finished in your lifetime."
 				""
-				"Malachite as a material seems perfect for tools, best compared to Diamond, but much easier to combine with other materials. These combinations are where the fun begins, allowing for some uniquely intricate tools."
+				"&aMalachite&r as a material seems perfect for tools, best compared to &bDiamond&r, but much easier to combine with other materials. These combinations are where the fun begins, allowing for some uniquely intricate tools."
 				""
 				"&oIf you don't immediately know the solution, I recommend exploring the other quests in the Deeper Down.&r"
 			]
@@ -972,7 +972,7 @@
 		}
 		{
 			dependencies: ["60F0D0EFE4D04311"]
-			description: ["The Workstaff is the perfect Multitool: Left Shift + Right Click allows you to switch between Silk Touch and Fortune, mining large tunnels at once, and allows you to strip, till, and flatten."]
+			description: ["The &aWorkstaff&r is the perfect Multitool: Left Shift + Right Click allows you to switch between &dSilk Touch&r and &5Fortune&r, mining large tunnels at once, and allows you to strip, till, and flatten."]
 			id: "3186BB365F5A2E19"
 			rewards: [
 				{
@@ -1007,7 +1007,7 @@
 		}
 		{
 			dependencies: ["60F0D0EFE4D04311"]
-			description: ["The Ultra Greatsword's sheer size allows you to hit enemies from greater distance. If you hadn't included the Paltaeria, you probably wouldn't even be able to lift it."]
+			description: ["The &aUltra Greatsword&r's sheer size allows you to hit enemies from greater distance. If you hadn't included the &bPaltaeria&r, you probably wouldn't even be able to lift it."]
 			id: "5FB073161DF17A13"
 			rewards: [
 				{
@@ -1043,9 +1043,9 @@
 		{
 			dependencies: ["60F0D0EFE4D04311"]
 			description: [
-				"The Bident is a true powerhouse when dealing with aquatic creatures."
+				"The &aBident&r is a true powerhouse when dealing with aquatic creatures."
 				""
-				"It may have only two prongs compared to a Trident, but they are twice as pointy!"
+				"It may have only two prongs compared to a &bTrident&r, but they are twice as pointy!"
 			]
 			id: "1D42A9FDD2C990AB"
 			rewards: [
@@ -1081,7 +1081,7 @@
 		}
 		{
 			dependencies: ["60F0D0EFE4D04311"]
-			description: ["The Malachite Crossbow shoots projectiles at higher speed and precision compared to a mundane Crossbow"]
+			description: ["The &aMalachite Crossbow&r shoots projectiles at higher speed and precision compared to a mundane Crossbow"]
 			id: "1C901D4BD9D77AF8"
 			rewards: [
 				{
@@ -1116,6 +1116,11 @@
 		}
 		{
 			dependencies: ["69CBC070B022290F"]
+			description: [
+				"This glistening hoop creates a protective film of air around you."
+				""
+				"Grants you 4 points of &9Azure Dike&r. Using those charges, it not only protects you from enemy projectiles, but can even cushion a long fall. The &aPuff Circlet&r also prevents farmland from being trampled."
+			]
 			id: "3EA1A45EF8297E67"
 			rewards: [
 				{
@@ -1144,9 +1149,9 @@
 				"17FD99892BD82F5B"
 			]
 			description: [
-				"Right clicking a socketed Moonstone Locket will provide you with this compass."
+				"Right clicking a socketed &bMoonstone Locket&r will provide you with this compass."
 				""
-				"It looks to point towards something in the Deeper Down..."
+				"It looks to point towards something in the &dDeeper Down&r..."
 			]
 			id: "02EFA93D1525F456"
 			rewards: [
@@ -1175,7 +1180,7 @@
 		{
 			dependencies: ["02EFA93D1525F456"]
 			description: [
-				"This marks the current end of Spectrum progression :("
+				"This marks the current end of &dSpectrum&r progression :("
 				""
 				"If you enjoyed your time playing through this mod, please support the devs on Ko-fi if you can."
 			]
@@ -1208,9 +1213,9 @@
 		{
 			dependencies: ["2E338EC2698B4AA5"]
 			description: [
-				"For all those wo don't either live in a simple Cobblestone house or live without walls entirely - of course you don't feel addressed - you have thought up the Exchanging Staff."
+				"For all those wo don't either live in a simple &7Cobblestone&r house or live without walls entirely - of course you don't feel addressed - you have thought up the &aExchanging Staff&r."
 				""
-				"Enchanting an Exchanging Staff with Resonance by using the Enchanter will give it the power to harvest some special blocks as-is."
+				"Enchanting an &aExchanging Staff&r with &dResonance&r by using the &5Enchanter&r will give it the power to harvest some special blocks as-is."
 			]
 			id: "0E35862B7F9081DE"
 			rewards: [
@@ -1269,6 +1274,13 @@
 		}
 		{
 			dependencies: ["450594E495BC0599"]
+			description: [
+				"&bMoonstone Cores&r are bursting with energy. It sounds like a very bad idea to discharge on within milliseconds."
+				""
+				"&o...but sometimes the worst ideas are the best, aren't they?&r"
+				""
+				"Their explosion &cdoes not damage blocks&r, but causes &aimmensely aggressive fire&r."
+			]
 			id: "2F678C5F246CBFAB"
 			rewards: [
 				{
@@ -1298,11 +1310,11 @@
 		{
 			dependencies: ["627E6415D8207E80"]
 			description: [
-				"So much for your plans for a personal jurassic park. Maybe a petting zoo would be more suitable? "
+				"So much for your plans for a personal jurassic park. &oMaybe a petting zoo would be more suitable&r? "
 				""
-				"The result definitely is not quite as... fierce... as you imagined. Usually you'd say you are used to faiulres by now, but with this result, who are you to complain?"
+				"The result definitely is not quite as... &cfierce&r... as you imagined. Usually you'd say you are used to failures by now, but with this result, who are you to complain?"
 				""
-				"Their down looks beyond soft. Maybe, if you sneak up to one with Shears, you'd be able to snip a feather or two? "
+				"Their down looks beyond soft. Maybe, if you sneak up to one with &eshears&r, you'd be able to &bsnip a feather or two&r? "
 			]
 			id: "7EEAE3E2C7790CFE"
 			rewards: [
@@ -1328,6 +1340,7 @@
 		}
 		{
 			dependencies: ["7EEAE3E2C7790CFE"]
+			description: ["The &aDragonrending Pickaxe&r is a real powerhouse of a pick for when you want to break &chard blocks&r. It comes pre-enchanted with &dRazing&r, which &3increases&r your mining speed depending on the &2hardness&r of the block"]
 			id: "14D72A06A59AFAC5"
 			rewards: [
 				{
@@ -1362,7 +1375,7 @@
 		}
 		{
 			dependencies: ["79021A59C661F6FE"]
-			description: ["Hard, sharp and yet surprisingly brittle. These stones are found everywhere in the Razor Edge biome. Unless silk touched, Pyrite shatters into items, requiring you to combine them again."]
+			description: ["Hard, sharp and yet surprisingly brittle. These stones are found everywhere in the &eRazor Edge&r biome. Unless &dsilk touched&r, &6Pyrite&r shatters into items, requiring you to combine them again."]
 			id: "2708B3088FEE8D63"
 			rewards: [
 				{
@@ -1390,7 +1403,7 @@
 			description: [
 				"This small blade is too fine to inflict serious wounds, but has many sharp spikes that drill themselves into the flesh of your opponent."
 				""
-				"Infused in the Potion Workshop, all struck opponents are afflicted with the effect - provided you have enough Ink on you."
+				"Infused in the &6Potion Workshop&r, all struck opponents are afflicted with the effect - provided you have enough&b Ink &ron you."
 			]
 			id: "54FDBF6270995B3F"
 			rewards: [
@@ -1425,7 +1438,7 @@
 			description: [
 				"Mining is your game. It's almost a mircale that you're only now coming up with the idea of upgrading not only your tools, but your mining proficiency in general. This ring will grow with your abilities."
 				""
-				"Infuse it with Magenta Ink in a Color Picker to increase your mining speed."
+				"Infuse it with &dMagenta Ink&r in a &6Color Picker&r to increase your &amining speed&r."
 			]
 			id: "4D1376E69BD35212"
 			rewards: [
@@ -1451,6 +1464,11 @@
 		}
 		{
 			dependencies: ["450594E495BC0599"]
+			description: [
+				"The &aStaff of Remembrance&r allows you to move around your animals with ease, both short and long distance."
+				""
+				"Tap an animal to collect them as a &dMemory&r."
+			]
 			id: "35E69A49E6C956DA"
 			rewards: [
 				{
@@ -1475,6 +1493,7 @@
 		}
 		{
 			dependencies: ["7A1A3A4E0086B8C6"]
+			description: ["This upgrade to the &aWorkstaff&r allows you to&e Right Click&r to shoot out &fWhite Ink&r which will break blocks on impact. You can also choose from &dResonance&r when switching enchantments."]
 			id: "33A1CC9DFDAF2B13"
 			rewards: [
 				{
@@ -1509,6 +1528,7 @@
 		}
 		{
 			dependencies: ["7A1A3A4E0086B8C6"]
+			description: ["This upgrade to the &aUltra Greatsword&r deals a chunk of its damage via &dMagic&r, which pierces armor. Right Click to charge a &eground slam&r, knocking back everything around you. This ability scales with &6Sweeping Edge&r."]
 			id: "4E28711A4FEDF124"
 			rewards: [
 				{
@@ -1543,6 +1563,7 @@
 		}
 		{
 			dependencies: ["7A1A3A4E0086B8C6"]
+			description: ["The &aFerocious Bident&r is the result of combining a &bBident&r and a &3Pocket Thunderstorm&r. Hurl yourself into the air and damage everything in your path, even in the driest of deserts! Well, that is if you don't run out of &dink&r... The ability scales with the level of &5Riptide&r."]
 			id: "2414DEE44DADFBE4"
 			rewards: [
 				{
@@ -1577,6 +1598,7 @@
 		}
 		{
 			dependencies: ["7A1A3A4E0086B8C6"]
+			description: ["The &aFractal Bident&r is combined with &dEcho Shards&r to make it throw an echo version that shatters upon impact while the original will never leave your hand."]
 			id: "6981018F19EDE963"
 			rewards: [
 				{
@@ -1611,6 +1633,7 @@
 		}
 		{
 			dependencies: ["7A1A3A4E0086B8C6"]
+			description: ["If an arrow is loaded, you can &2overcharge&r the shot by holding Left Shift + Right Button to increase your shot's &baccuracy&r, &espeed&r, and &cdamage&r even further."]
 			id: "201E9A2D0D4B32E8"
 			rewards: [
 				{
@@ -1645,6 +1668,7 @@
 		}
 		{
 			dependencies: ["450594E495BC0599"]
+			description: ["Socketing &bMoonstone Cores&r into your &aMalachite Tools&r grants them powerful new abilities."]
 			id: "7A1A3A4E0086B8C6"
 			rewards: [{
 				id: "3C9320706995413E"
@@ -1761,14 +1785,14 @@
 		{
 			dependencies: ["05242C45EBB0A3A3"]
 			description: [
-				"Even in death, the grand skeletal remains of dragons that dot the depths bear so much might and life to them. There must be some way to recreate their splendor via those Dragonbone Chunks."
+				"Even in death, the grand skeletal remains of &bdragons&r that dot the depths bear so much might and life to them. There must be some way to recreate their splendor via those &7Dragonbone Chunks&r."
 				""
 				"Maybe you will be the one to restore the age of divine dragons?"
 				""
-				"Checking REI for this recipe is a bit difficult, so I'll include it here. In your Spirit Instiller, from left to right, use the following:"
-				"- 8x Dragonbone Chunk"
-				"- 4x Vegetal / 4x Neolith"
-				"- 1x Jade Petals / 1x Jadeite Petals"
+				"Checking &dREI&r for this recipe is a bit difficult, so I'll include it here. In your &6Spirit Instiller&r, from left to right, use the following:"
+				"- &78x Dragonbone Chunk&r"
+				"- &a4x Vegetal&r / &d4x Neolith&r"
+				"- &b1x Jade Petals&r / &31x Jadeite Petals&r"
 			]
 			id: "627E6415D8207E80"
 			rewards: [
@@ -1805,7 +1829,7 @@
 		}
 		{
 			dependencies: ["7EEAE3E2C7790CFE"]
-			description: ["The Effulgent Feathers of the Kindlings are notable, enough so to compel you to regularly give the little bumpkins coat trimmings. However, you've noticed that, sadly quite frequently, drops of blood will come along with the features. When dipped into Liquid Crystal, it leaves behind a sparkly crystalline residue."]
+			description: ["The &aEffulgent Feathers&r of the &eKindlings&r are notable, enough so to compel you to regularly give the little bumpkins coat trimmings. However, you've noticed that, sadly quite frequently, drops of blood will come along with the features. When dipped into &6Liquid Crystal&r, it leaves behind a sparkly crystalline residue."]
 			id: "5928172C2A45D5AB"
 			rewards: [
 				{
@@ -1830,7 +1854,7 @@
 		}
 		{
 			dependencies: ["5928172C2A45D5AB"]
-			description: ["Set upon the Crystallarieum and given a precarious amount of Copper, the speck of dragonblood will grow and crystallize into a grand slab of glass, shining in stunning scarlet and bleeding with willful magic!"]
+			description: ["Set upon the &dCrystallarieum&r and given a precarious amount of &cCopper&r, the speck of &4dragonblood&r will grow and crystallize into a grand slab of glass, shining in stunning scarlet and bleeding with willful magic!"]
 			id: "0989F909C4BA5025"
 			rewards: [
 				{
@@ -1855,7 +1879,7 @@
 		}
 		{
 			dependencies: ["7EEAE3E2C7790CFE"]
-			description: ["Using these feathers over regular chicken feathers you can imbue your arrows with even more power. These razor-sharp arrows deal increased damage, can be fired underwater and can pierce translucent blocks such as Glass. Different types of tips apply different effects as well."]
+			description: ["Using these feathers over regular chicken feathers you can imbue your arrows with &eeven more power&r. These razor-sharp arrows deal increased damage, can be fired underwater and can pierce translucent blocks such as Glass. Different types of tips apply &adifferent effects&r as well."]
 			id: "4946C68317D5C4EF"
 			rewards: [
 				{
@@ -1917,9 +1941,9 @@
 		{
 			dependencies: ["69CBC070B022290F"]
 			description: [
-				"Works very much like its little borther. However, this verison has three chambers, each of which can be filled with a different potion - which also means it can only support effects of level 1."
+				"Works very much like its little brother. However, this verison has three chambers, each of which can be filled with a different potion - which also means it can only support effects of level 1."
 				""
-				"Use the Potion Workshop to infuse it, by placing it where the Bottle would normally go."
+				"Use the &ePotion Workshop&r to infuse it, by placing it where the bottle would normally go."
 				""
 				"To clear its effect, put it in a crafting grid."
 			]
