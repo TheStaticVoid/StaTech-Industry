@@ -1,5 +1,5 @@
 # StaTech Industry 1.1.14 Changelog:
-Maintenance patch + Spectrum update
+This is primarily a maintenance patch for mod updates and to add some new stuff. Biggest portion of this version is the Spectrum update, which includes an all new dimension and gadgets to play with. 
 
 ## Mods added:
 - [AE2Things](https://www.curseforge.com/minecraft/mc-mods/ae2-things-fabric-1-19-2) - Backported to fabric 1.19.2 by DmitryProskurin
@@ -67,3 +67,11 @@ Maintenance patch + Spectrum update
 - [Add missing macerator recipes #520](https://github.com/TheStaticVoid/StaTech-Industry/pull/520) - by DmitryProskurin
 - [Correct Assembler typo in Basic Components quest. #521](https://github.com/TheStaticVoid/StaTech-Industry/pull/521) - by JustinMullin
 - [AE2Things quests #522](https://github.com/TheStaticVoid/StaTech-Industry/pull/522) - by DmitryProskurin
+- [Fixed error in food quest progression](https://github.com/TheStaticVoid/StaTech-Industry/pull/524) - by DmitryProskurin
+- [Fixed Annealed Copper Hot Ingot quest stating to use an ingot rather than dust](https://github.com/TheStaticVoid/StaTech-Industry/pull/524) - by DmitryProskurin
+- [Changed Large Steam Furnace to use Bronze Furnace to craft](https://github.com/TheStaticVoid/StaTech-Industry/pull/524) - by DmitryProskurin
+- [Added recipe for crafting Ad Astra ores with StaTech coins](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
+- [Added conversion recipe for BYG lush dirt and vanilla dirt](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
+- [Added more details about overclocking to LV quest](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
+- [Added centrifuge recipe for lignite coal dust](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
+- [Reverted Bottle of Failing back to vanilla recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
