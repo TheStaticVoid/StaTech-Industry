@@ -37,6 +37,15 @@ ServerEvents.recipes(e => {
         e.custom(newRecipe).id(id);
     }
 
+    // -- CARBON DUST FROM LIGNITE -- //
+    centrifuge(
+        st('carbon_dust_from_lignite'),
+        16,
+        400,
+        [ { amount: 8, item: mi('lignite_coal_dust') } ],
+        [ { amount: 1, item: mi('carbon_dust') } ]
+    );
+
     // -- CORE SLURRY -- //
     centrifuge(
         st('core_slurry'),
