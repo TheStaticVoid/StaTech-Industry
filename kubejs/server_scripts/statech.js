@@ -11,6 +11,7 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;
     let sp = (id) => `spectrum:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let ad = (id) => `ad_astra:${id}`;
 
     e.smelting(kj('clear_ingot'), mc('glass'), 0.2).id(st('clear_ingot_from_glass'));
 
@@ -306,6 +307,26 @@ ServerEvents.recipes(e => {
         C: legendary
     }).id(st('uranium_ore_from_legendary'));
 
+    // -- DESH ORE -- //
+    e.shaped('8x ' + ad('moon_desh_ore'), [
+        'CC ',
+        'C C',
+        'CC '
+    ], 
+    {
+        C: legendary
+    }).id(st('desh_ore_from_legendary'));
+
+    // -- OSTRUM ORE -- //
+    e.shaped('8x ' + ad('mars_ostrum_ore'), [
+        'CCC',
+        'C C',
+        'CCC'
+    ],
+    {
+        C: legendary
+    }).id('ostrum_ore_from_legendary');
+
     // -------------- //
     //     MYTHIC     //
     // -------------- //
@@ -336,6 +357,16 @@ ServerEvents.recipes(e => {
     {
         C: mythic
     }).id(st('space_breathing_from_mythic'));
+
+    // CALORITE ORE
+    e.shaped('8x ' + ad('venus_calorite_ore'), [
+        'CCC',
+        'C  ',
+        'CCC'
+    ],
+    {
+        C: mythic
+    }).id(st('calorite_ore_from_mythic'));
 });
 
 ServerEvents.blockLootTables(e => {

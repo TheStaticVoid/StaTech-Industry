@@ -25,3 +25,6 @@ I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling
 - @kevintok - Overhauled the Scanner module config to be more colorful and useful.
 - @redcatone - Questbook spellcheck
 - @TacoMonkey11 - Marking client-side mods for packwiz
+- @DmitryProskurin - Quest fixes and recipe modifications
+- @JustinMullin - Quest fixes
+- @Quezlar - Quest typo fixes

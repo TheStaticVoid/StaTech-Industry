@@ -261,7 +261,7 @@ ServerEvents.recipes(e => {
         4,
         200,
         [
-            { amount: 1, item: mc('furnace') },
+            { amount: 1, item: mi('bronze_furnace') },
             { amount: 7, item: mc('bricks') },
             { amount: 1, item: mi('coke') }
         ],

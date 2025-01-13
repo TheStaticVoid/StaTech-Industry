@@ -584,7 +584,7 @@
 		}
 		{
 			dependencies: ["343C68866C58ADC3"]
-			description: ["The &6Bronze Mixer&r will help you &amix dusts&r, giving you a better ratio for &6Bronze&r and &aFire Clay&r, as well as opening up a recipe for  &eUncooked Steel&r. It can also create &dCobblestone&r and &3Clay&r."]
+			description: ["The &6Bronze Mixer&r will help you &amix dusts&r, giving you a better ratio for &6Bronze&r and &aFire Clay&r, as well as opening up a recipe for &eUncooked Steel&r. It can also create &dCobblestone&r and &3Clay&r."]
 			id: "693368CF3E13AB7A"
 			rewards: [
 				{
@@ -1918,7 +1918,7 @@
 			description: [
 				"&eMotors, Pumps, Robot Arms, Conveyors, and Pistons&r are key components moving forward for a lot of the machines you will be making."
 				""
-				"I'd recommend &dcrafting these in bulk&r, as it they are quite tedious to craft by hand. Once you unlock the &6Asssembler&r, it will be significantly easier to make these."
+				"I'd recommend &dcrafting these in bulk&r, as it they are quite tedious to craft by hand. Once you unlock the &6Assembler&r, it will be significantly easier to make these."
 			]
 			id: "3505E9029F3CEAD0"
 			rewards: [
@@ -2843,10 +2843,8 @@
 				id: "74043B260FABE0CA"
 				item: {
 					Count: 1b
-					id: "kibe:magnet"
-					tag: {
-						enabled: 1b
-					}
+					id: "simplemagnets:basicmagnet"
+					tag: { }
 				}
 				type: "item"
 			}]
@@ -4802,6 +4800,41 @@
 			}]
 			x: 14.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["72090D36C27DC4AF"]
+			description: ["The &aAdvanced Magnet&r is an upgrade to the basic &bMagnet&r that allows &dgreater range&r and &3filtering&r"]
+			id: "55A975683AF62D1A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "445D12FD9EF0B7B4"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "3F212E9DDF78563A"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "52E99AD513288634"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4530E923BA050627"
+				item: {
+					Count: 1b
+					id: "simplemagnets:advancedmagnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.5d
 		}
 	]
 	subtitle: ["The Basis of Industry"]

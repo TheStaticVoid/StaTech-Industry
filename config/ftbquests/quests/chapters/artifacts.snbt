@@ -12,7 +12,7 @@
 			dev: false
 			height: 1.0d
 			hover: [ ]
-			image: "inventoryhud:textures/item/trinkets/hat.png"
+			image: "trinkets:textures/gui/slots/hat.png"
 			rotation: 0.0d
 			width: 1.0d
 			x: -6.0d
@@ -24,7 +24,7 @@
 			dev: false
 			height: 1.0d
 			hover: [ ]
-			image: "inventoryhud:textures/item/trinkets/necklace.png"
+			image: "trinkets:textures/gui/slots/necklace.png"
 			rotation: 0.0d
 			width: 1.0d
 			x: -6.0d
@@ -36,7 +36,7 @@
 			dev: false
 			height: 1.0d
 			hover: [ ]
-			image: "inventoryhud:textures/item/trinkets/belt.png"
+			image: "trinkets:textures/gui/slots/belt.png"
 			rotation: 0.0d
 			width: 1.0d
 			x: -6.0d
@@ -48,7 +48,7 @@
 			dev: false
 			height: 1.0d
 			hover: [ ]
-			image: "inventoryhud:textures/item/trinkets/glove.png"
+			image: "trinkets:textures/gui/slots/glove.png"
 			rotation: 0.0d
 			width: 1.0d
 			x: -6.0d
@@ -60,7 +60,7 @@
 			dev: false
 			height: 1.0d
 			hover: [ ]
-			image: "inventoryhud:textures/item/trinkets/shoes.png"
+			image: "trinkets:textures/gui/slots/shoes.png"
 			rotation: 0.0d
 			width: 1.0d
 			x: -6.0d
@@ -72,7 +72,7 @@
 			dev: false
 			height: 1.0d
 			hover: [ ]
-			image: "inventoryhud:textures/item/empty_main_hand_slot.png"
+			image: "trinkets:textures/gui/slots/glove_mirrored.png"
 			rotation: 0.0d
 			width: 1.0d
 			x: -6.0d
@@ -428,7 +428,7 @@
 			y: -1.0d
 		}
 		{
-			description: ["Grants around 10 extra health (5 hearts)"]
+			description: ["Grants 10 extra health (5 hearts)"]
 			id: "29491A4A65DEDCDC"
 			rewards: [{
 				id: "431EBEDFCC81C54B"

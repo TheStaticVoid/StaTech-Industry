@@ -1,0 +1,149 @@
+
+[turtlePeripherals]
+	enableTurtleChatter = true
+	enableCreativeChest = true
+	enablePistonTurtle = true
+	enableStickyPistonTurtle = true
+	enableLaaBucket = true
+	enableChunkVial = true
+	#Soft limit for chunk to be loaded until turtle register it again, in milliseconds
+	#Range: 1 ~ 9223372036854775807
+	chunkVialTimeLimit = 5000
+
+[operations]
+	#Range: > 1000
+	swingCooldown = 1000
+	#Range: > 0
+	swingCost = 1
+	#Range: > 1000
+	transformBlockCooldown = 1000
+	#Range: > 0
+	transformBlockCost = 1
+	#Range: > 1000
+	useCooldown = 1000
+	#Range: > 0
+	useCost = 1
+	#Range: > 1000
+	harvestCooldown = 1000
+	#Range: > 0
+	harvestCost = 1
+	#Range: > 1000
+	suckCooldown = 1000
+	#Range: > 0
+	suckCost = 1
+	#Range: > 1000
+	tradeCooldown = 1000
+	#Range: > 0
+	tradeCost = 5
+	#Range: > 1000
+	restockCooldown = 60000
+	#Range: > 0
+	restockCost = 500
+	#Range: > 1000
+	brewCooldown = 1000
+	#Range: > 0
+	brewCost = 5
+	#Range: > 1000
+	throwPotionCooldown = 1000
+	#Range: > 0
+	throwPotionCost = 10
+	#Range: > 1000
+	smithCooldown = 1000
+	#Range: > 0
+	smithCost = 1
+	#Range: > 1000
+	captureCooldown = 50000
+	#Range: > 0
+	captureCost = 100
+	#Range: > 1000
+	enchantmentCooldown = 5000
+	#Range: > 0
+	enchantmentCost = 10
+	#Range: > 1000
+	warpCooldown = 1000
+	#Range: > 0
+	warpCost = 1
+	#Range: > 1000
+	scanBlocksCooldown = 2000
+	#Range: 1 ~ 64
+	scanBlocksMaxFreeRadius = 8
+	#Range: 1 ~ 64
+	scanBlocksMaxCostRadius = 16
+	#Range: 0.1 ~ 1.7976931348623157E308
+	scanBlocksExtraBlockCost = 0.17
+	#Range: > 1000
+	scanEntitiesCooldown = 2000
+	#Range: 1 ~ 64
+	scanEntitiesMaxFreeRadius = 8
+	#Range: 1 ~ 64
+	scanEntitiesMaxCostRadius = 16
+	#Range: 0.1 ~ 1.7976931348623157E308
+	scanEntitiesExtraBlockCost = 0.17
+	#Range: > 1000
+	chatMessageCooldown = 1000
+	#Range: > 1000
+	smeltCooldown = 1000
+	#Range: > 0
+	smeltCost = 80
+	#Range: > 1000
+	chiselCooldown = 1000
+	#Range: > 0
+	chiselCost = 1
+
+[automataCores]
+	enableWeakAutomataCore = true
+	enableEndAutomataCore = true
+	enableHusbandryAutomataCore = true
+	enableMercantileAutomataCore = true
+	enableEnormousAutomata = true
+	enableBrewingAutomataCore = true
+	enableSmithingAutomataCore = true
+	enableEnchantingAutomataCore = true
+	enableMasonAutomataCore = true
+	#Defines max warp point stored in warp core. Mostly need to not allow NBT overflow error
+	#Range: > 1
+	endAutomataCoreWarpPointLimit = 64
+	#Defined chance to not loose item durability for netherite cores
+	#Range: 0.0 ~ 1.0
+	durabilityRestoreChance = 0.1
+	#Defines chance for starbound automata to regenerate fuel points
+	#Range: 0.0 ~ 1.0
+	starboundAutomataFuelGenerationChance = 0.15
+	#Defines amount for starbound automata that will be regenerated
+	#Range: > 0
+	starboundAutomataFuelGenerationAmount = 1
+	#Range: 0.0 ~ 64.0
+	brewingXPReward = 0.8
+	#Range: 0.1 ~ 1.0
+	enchantmentWipeChance = 0.1
+	#Range: 1 ~ 64
+	tier1AutomataCoreInteractionRadius = 2
+	#Range: 1 ~ 32
+	tier1AutomataCoreMaxFuelConsumptionRate = 2
+	#Range: 0.0 ~ 1.0
+	tier1AutomataCoreCooldownReduceFactor = 1.0
+	#Range: 1 ~ 64
+	tier2AutomataCoreInteractionRadius = 4
+	#Range: 1 ~ 32
+	tier2AutomataCoreMaxFuelConsumptionRate = 3
+	#Range: 0.0 ~ 1.0
+	tier2AutomataCoreCooldownReduceFactor = 1.0
+	#Range: 1 ~ 64
+	tier3AutomataCoreInteractionRadius = 8
+	#Range: 1 ~ 32
+	tier3AutomataCoreMaxFuelConsumptionRate = 4
+	#Range: 0.0 ~ 1.0
+	tier3AutomataCoreCooldownReduceFactor = 0.8
+	#Range: 1 ~ 64
+	tier4AutomataCoreInteractionRadius = 16
+	#Range: 1 ~ 32
+	tier4AutomataCoreMaxFuelConsumptionRate = 6
+	#Range: 0.0 ~ 1.0
+	tier4AutomataCoreCooldownReduceFactor = 0.5
+	#Range: 1 ~ 64
+	creativeAutomataCoreInteractionRadius = 64
+	#Range: 1 ~ 32
+	creativeAutomataCoreMaxFuelConsumptionRate = 32
+	#Range: 0.0 ~ 1.0
+	creativeAutomataCoreCooldownReduceFactor = 0.0
+

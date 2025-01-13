@@ -18,6 +18,8 @@
 				"Progression is locked behind &arevelations&r, finding / making certain items will unlock the recipe in &dREI&r. To complement this, most of the quests in this chapter are &bhidden&r. Most of the crafting will be done with &aSpectrum&r."
 				""
 				"Progressing through this chapter is &cnot required to beat the pack&r, but you might find some of the items unlocked to be useful in your &aindustrial adventure&r. &o&eIt's also a fun chapter if you need a break from the factory&r."
+				""
+				"While the main progression of &aSpectrum&r is covered in the quest book, recent additions to the mods may not be fully documented, and I highly recommend to keep your &dWorld of Color&r book on hand as you make &bnew discoveries&r, in case there is anything that is not specifically shown in the quest book."
 			]
 			id: "330CFCABB75098C8"
 			shape: "square"
@@ -334,9 +336,9 @@
 			]
 			shape: "square"
 			tasks: [{
-				advancement: "spectrum:craft_colored_pedestal"
+				advancement: "spectrum:craft_cmy_pedestal"
 				criterion: ""
-				id: "12CDDF2278C0143A"
+				id: "521A54E1043A2C28"
 				type: "advancement"
 			}]
 			title: "CMY Pedestal Variant"
@@ -1275,18 +1277,63 @@
 				}
 			]
 			shape: "square"
-			tasks: [{
-				id: "05EE083C303D0E3D"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "spectrum:pigments"
-					}
+			tasks: [
+				{
+					id: "549397333D528D11"
+					item: "spectrum:orange_pigment"
+					type: "item"
 				}
-				title: "Any Pure Pigment"
-				type: "item"
-			}]
+				{
+					id: "4D1A4144FC433892"
+					item: "spectrum:magenta_pigment"
+					type: "item"
+				}
+				{
+					id: "10CE945F24361A7A"
+					item: "spectrum:light_blue_pigment"
+					type: "item"
+				}
+				{
+					id: "3F88BF47B2F5E585"
+					item: "spectrum:yellow_pigment"
+					type: "item"
+				}
+				{
+					id: "2E8E55E8195A36C4"
+					item: "spectrum:lime_pigment"
+					type: "item"
+				}
+				{
+					id: "5171AF43B9D06AE4"
+					item: "spectrum:pink_pigment"
+					type: "item"
+				}
+				{
+					id: "477CCCEBAD09DBFA"
+					item: "spectrum:cyan_pigment"
+					type: "item"
+				}
+				{
+					id: "7D5F1D618410B951"
+					item: "spectrum:purple_pigment"
+					type: "item"
+				}
+				{
+					id: "29A2862B7449F1A9"
+					item: "spectrum:blue_pigment"
+					type: "item"
+				}
+				{
+					id: "7D936B5A87F3462F"
+					item: "spectrum:green_pigment"
+					type: "item"
+				}
+				{
+					id: "09D9D704D698956F"
+					item: "spectrum:red_pigment"
+					type: "item"
+				}
+			]
 			title: "Pigments"
 			x: 16.5d
 			y: 8.5d
@@ -2201,7 +2248,7 @@
 				type: "item"
 			}]
 			x: 13.0d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["79D0A62E07C283FF"]
@@ -2605,7 +2652,7 @@
 				item: "spectrum:potion_workshop"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: 13.5d
 		}
 		{
@@ -2666,7 +2713,7 @@
 				item: "spectrum:mud_bucket"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: 13.5d
 		}
 		{
@@ -2749,7 +2796,7 @@
 				""
 				"If you need help building the structure, remember you can &5Visualize&r it by placing the &aEnchanter&r block down then right clicking it!"
 				""
-				"Once you right-click the &aEnchanter&r with a fully built structure, you will unlock the recipes for books you can create. There's a lot you can do with this structure, make sure to check out the &dEnchantming&r section in the &eColorful World&r book."
+				"Once you right-click the &aEnchanter&r with a fully built structure, you will unlock the recipes for books you can create. There's a lot you can do with this structure, make sure to check out the &Enchanting&r section in the &eColorful World&r book."
 			]
 			hide: true
 			icon: "spectrum:enchanter"
@@ -3131,7 +3178,7 @@
 		}
 		{
 			dependencies: ["6D24FBE1A1BB0488"]
-			description: ["Not just t he bags under your eyes that are evidence of your lack of sleep. There are those &dcreatures&r that come haunt you straight out of your missed nightmares when you don't regularly lie down to sleep - almost like they feel cheated. This here is the manifestation of &erelaxation&r, no sleep necessary. After just a few minutes of wear, you feel physically and mentally refreshed. You also recover from &cnegative effects&r more quickly."]
+			description: ["Not just the bags under your eyes that are evidence of your lack of sleep. There are those &dcreatures&r that come haunt you straight out of your missed nightmares when you don't regularly lie down to sleep - almost like they feel cheated. This here is the manifestation of &erelaxation&r, no sleep necessary. After just a few minutes of wear, you feel physically and mentally refreshed. You also recover from &cnegative effects&r more quickly."]
 			hide: true
 			id: "6B46181AB163E890"
 			rewards: [
@@ -3417,6 +3464,8 @@
 				"&5Neolith&r is the key! Yes, it is must be! If you combine all the gems you have collected so far with it, something must be created that holds &eincredible power&r. Alone for you and ONLY for you, master of &dpigment&r!"
 				""
 				"Fusing those &dmagical energies&r must result in an incredible source of power - with a display to match. Best to make sure your &aShrine&r and everything around it is fortified. &o&lI'm not kidding, make sure nothing important is near your &aShrine&f, expect a &ccleanup&r. You can use &3Polished Calcite&r / &ePolished Basalt&r to protect the area."
+				""
+				"When you're ready, put &dAmethyst&r, &eCitrine&r, &bTopaz&r, &dOnyx&r, and &5Neolith&r shards in a &aFusion Shrine&r alongside some &dLiquid Crystal&r during a clear day."
 				""
 				"&cRequires daytime and a clear sky&r."
 			]
@@ -4555,7 +4604,7 @@
 				"To remember the &bmemories&r about a creature, you need its &dHead&r, as well as its most beloved item and &aVegetal&r as a bonding agent. Using &dNeolith&r seems to completely overpower the &denergies&r of the creature, making the resulting &bmemory&r unrecognizable, until it manifests."
 				""
 				"&5&lManifesting&r"
-				"&dMemories&r need a certain &eamount of time&r to manifest, almost like an &begg&r. You have to place them down and wait. Depending on the creature, it may be &reasonably quick&r, or &ctake forever&r."
+				"&dMemories&r need a certain &eamount of time&r to manifest, almost like an &begg&r. You have to place them down and wait. Depending on the creature, it may be &areasonably quick&r, or &ctake forever&r."
 				""
 				"Placing them on top of &ecertain blocks&r seems to &aspeed up that process&r or &cstop it entirely&r."
 			]
@@ -4709,6 +4758,7 @@
 				"&aBlack Hole Chests&r have a radius of 12 blocks. You can disable them by placing a block on top. It offers &efilters&r to specify which items it should accept&r."
 			]
 			hide: true
+			icon: "spectrum:black_hole_chest"
 			id: "045A4D9B10FD6495"
 			rewards: [
 				{
@@ -4725,14 +4775,15 @@
 			]
 			tasks: [{
 				id: "449F46F9DEBFF167"
-				item: "spectrum:sucking_chest"
+				item: "spectrum:black_hole_chest"
 				type: "item"
 			}]
 			x: -9.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["0FFD788283204691"]
+			dependencies: ["2D1439DDE82F3122"]
+			description: ["Finally that pesky ruin that taunted you with a Bedrock barrier is no longer an issue. Get in there and claim your prize."]
 			hide: true
 			id: "5D38CA7587283F41"
 			rewards: [
@@ -4749,14 +4800,14 @@
 				}
 			]
 			tasks: [{
-				advancement: "spectrum:enter_wireless_redstone_puzzle_structure"
+				advancement: "spectrum:solve_wireless_redstone_preservation_ruin"
 				criterion: ""
-				id: "7F24649F30649DC8"
+				id: "2D517F03F37D08DC"
 				type: "advancement"
 			}]
 			title: "The Bedrock Ruins"
-			x: -6.0d
-			y: -3.0d
+			x: -8.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["15712326AA2EB3F8"]
@@ -4815,11 +4866,12 @@
 				item: "spectrum:blood_orchid_petal"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -4.5d
+			x: -8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["72E6A9F7DBBC7DC9"]
+			description: ["Now with your Dike powered equipment, you can tackle the Dike ruins. These are structures found in the deepslate layer that are surrounded by Preservation Stone with a Dike Gate."]
 			hide: true
 			id: "05EC1F81947AEBC0"
 			rewards: [
@@ -4836,9 +4888,9 @@
 				}
 			]
 			tasks: [{
-				advancement: "spectrum:enter_ancient_ruins"
+				advancement: "spectrum:solve_dike_gate_preservation_ruin"
 				criterion: ""
-				id: "5F14418FCEE3E5BD"
+				id: "478F343BDCEFCAE9"
 				type: "advancement"
 			}]
 			title: "The Dike Ruins"
@@ -4901,99 +4953,6 @@
 			}]
 			x: -2.5d
 			y: -6.0d
-		}
-		{
-			dependencies: ["6B419998589E17A8"]
-			description: [
-				"You very much took a liking to the &arotating roundels&r in those &bancient structures&r. So much, that you copied their design yourself. Definitely a nice way to present your items, or keep them ready."
-				""
-				"The &eBasalt&r and &dCalcite&r version you cobbled together hold &esignificantly more items&r, up to 6 whole stacks!"
-			]
-			hide: true
-			id: "010E868EE13FAAEC"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2479D720693E058C"
-					table_id: 5901057256958333207L
-					type: "random"
-				}
-				{
-					id: "619AAA16A3368F39"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "6AC16195B8FFCDB4"
-				item: "spectrum:item_roundel"
-				type: "item"
-			}]
-			x: 7.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["352D2FF3E6003244"]
-			description: [
-				"Deep underground you may find &eoutlandish structures&r, which seem to be built from &aimmensly sturdy stone&r. Whoever constructed them seemed to have knowledge way beyond your understanding. There has to be a way to get in there! If not now, then later... better keep the location in mind."
-				""
-				"The only &dRuin&r you can enter at this stage is the one that has two &bSpore Blossoms&r at the entrance. Heavily consult the &eColor Mixing&r section of the &eColorful World&r book. "
-				""
-				"&o&cHint&f: Use the &dGemstone Powders&f you just created!"
-				""
-				""
-				"&cNote&r: The Gray Spore Blossom is currently not solvable until a future update."
-			]
-			hide: true
-			id: "6B419998589E17A8"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "19228A4C81C1A920"
-					table_id: 5901057256958333207L
-					type: "random"
-				}
-				{
-					id: "4D21070E8AFA8A2D"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				advancement: "spectrum:enter_color_mixing_puzzle_structure"
-				criterion: ""
-				id: "4CCD7764C924714D"
-				type: "advancement"
-			}]
-			title: "The Mixing Ruins"
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6B419998589E17A8"]
-			description: ["Though seemingly left behind for quite some time now, these &aseeds&r still look very much &2alive&r. Once grown, they become &bAmaranth Bushels&r. These &bBushels&r can be used in various foods, and &eit's also the favorite food of a certain creature down the path of progression&r."]
-			hide: true
-			id: "71F0082A37B7A610"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7380C8C2CE342673"
-					table_id: 5901057256958333207L
-					type: "random"
-				}
-				{
-					id: "04B71A3AC501135A"
-					type: "xp"
-					xp: 10
-				}
-			]
-			tasks: [{
-				id: "2C9AA5DE33C30A56"
-				item: "spectrum:amaranth_bushel"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -4.0d
 		}
 		{
 			dependencies: ["7014D92425B9A412"]
@@ -5477,8 +5436,8 @@
 				item: "spectrum:bloodboil_syrup"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -6.0d
+			x: -8.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["160B8316AAD40B2E"]
@@ -5533,8 +5492,8 @@
 				item: "spectrum:freigeist"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -7.5d
+			x: -8.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["160B8316AAD40B2E"]
@@ -6915,7 +6874,190 @@
 			x: 17.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["7014D92425B9A412"]
+			description: [
+				"And so you have broken through &abedrock itself&r, and discoverd what lies &4below&r."
+				""
+				"Your work is not yet done, for this is merely the end of the beginning. &b&lThe real work is yet to begin&r&r."
+			]
+			icon: "spectrum:moonstone_cluster"
+			id: "38FE7BB7A9B08424"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5563DAE60C338493"
+					table_id: 2662802482107568753L
+					type: "random"
+				}
+				{
+					id: "4A60BAE761C3CA55"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "square"
+			size: 2.5d
+			subtitle: "The End of the Beginning"
+			tasks: [{
+				advancement: "spectrum:midgame/enter_dimension"
+				criterion: ""
+				id: "569A37803C3F6F48"
+				type: "advancement"
+			}]
+			title: "What Once Was Impenetrable"
+			x: -13.75d
+			y: -3.75d
+		}
+		{
+			dependencies: ["6B419998589E17A8"]
+			description: [
+				"You very much took a liking to the &arotating roundels&r in those &bancient structures&r. So much, that you copied their design yourself. Definitely a nice way to present your items, or keep them ready."
+				""
+				"The &eBasalt&r and &dCalcite&r version you cobbled together hold &esignificantly more items&r, up to 6 whole stacks!"
+			]
+			hide: true
+			id: "010E868EE13FAAEC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2479D720693E058C"
+					table_id: 5901057256958333207L
+					type: "random"
+				}
+				{
+					id: "619AAA16A3368F39"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6AC16195B8FFCDB4"
+				item: "spectrum:item_roundel"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["352D2FF3E6003244"]
+			description: [
+				"Deep underground you may find &eoutlandish structures&r, which seem to be built from &aimmensly sturdy stone&r. Whoever constructed them seemed to have knowledge way beyond your understanding. There has to be a way to get in there! If not now, then later... better keep the location in mind."
+				""
+				"The only &dRuin&r you can enter at this stage is the one that has two &bSpore Blossoms&r at the entrance. Heavily consult the &eColor Mixing&r section of the &eColorful World&r book. "
+				""
+				"&o&cHint&f: Use the &dGem Dusts&f you just created!"
+				""
+				"&oThe gray blossom can not be solved until later in progression!&r"
+			]
+			hide: true
+			id: "6B419998589E17A8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "19228A4C81C1A920"
+					table_id: 5901057256958333207L
+					type: "random"
+				}
+				{
+					id: "4D21070E8AFA8A2D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				advancement: "spectrum:solve_color_mixing_preservation_ruin"
+				criterion: ""
+				id: "37B4EF4201895533"
+				type: "advancement"
+			}]
+			title: "The Mixing Ruins"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6B419998589E17A8"]
+			description: ["Though seemingly left behind for quite some time now, these &aseeds&r still look very much &2alive&r. Once grown, they become &bAmaranth Bushels&r. These &bBushels&r can be used in various foods, and &eit's also the favorite food of a certain creature down the path of progression&r."]
+			hide: true
+			id: "71F0082A37B7A610"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7380C8C2CE342673"
+					table_id: 5901057256958333207L
+					type: "random"
+				}
+				{
+					id: "04B71A3AC501135A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2C9AA5DE33C30A56"
+				item: "spectrum:amaranth_bushel"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0EB9D10AAC86F6A2"]
+			description: ["These hostile &cunderwater temples&r are hell to maneuver in. Luckily, in your search for treasure, you stumbled upon a &dHeart of the Sea&r. This circlet allows you to live and mine underwater as if it were the most natural thing ever. You &bswim and mine faster&r, &arequire no air&r, &eand are able to see better&r. It also &3heals&r your nearby &6Axolotl&r friends."]
+			id: "498CE428ED4058E6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "68D288BDE8E2DA2C"
+					table_id: 6970548649776480151L
+					type: "random"
+				}
+				{
+					id: "29DC853C7004A28E"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "125B431D5A017C32"
+				item: "spectrum:weeping_circlet"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["3DCAFF0B0A60BFFD"]
+			description: [
+				"To be able to fly like the birds has always been the dream of many people, &bincluding you&r."
+				""
+				"Now you have these boots. The freedom is almost overwhelming. You didn't get it quite right without a catch, but what can you do."
+				""
+				"Small clouds form under your feet as soon as you start sprinting. Those clouds are too fuzzy to jump on, but &bsafely levitate you in the air&r. There's just one kicker: &oYou better not stop sprinting high in the air&r..."
+			]
+			id: "1969361A5D724C79"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2115DEF11E4F7673"
+					table_id: 6970548649776480151L
+					type: "random"
+				}
+				{
+					id: "3235D9597B5C12B9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4EB00B46B64995DB"
+				item: "spectrum:cotton_cloud_boots"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 15.5d
+		}
 	]
 	subtitle: ["Is that you Merasmus?"]
-	title: "&aWorld of Magic&r"
+	title: "&aSpectrum: World of Magic&r"
 }

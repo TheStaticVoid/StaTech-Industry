@@ -20,6 +20,7 @@ ServerEvents.tags('item', e => {
     let xp = (id) => `xps:${id}`;
     let wa = (id) => `wands:${id}`;
     let qm = (id) => `quarrymod:${id}`;
+    let ch = (id) => `chisel:${id}`;
 
     const ITEMS = [
         kb('tank'),
@@ -151,9 +152,11 @@ ServerEvents.tags('item', e => {
         ed('shadow_drawer'),
         ed('compacting_drawer'),
         qm('quarry'),
+        ch('chisel'),
         '#create:toolboxes',
         '#supplementaries:presents',
 	    '#supplementaries:trapped_presents',
+
     ];
 
     ITEMS.forEach(id => e.add(mi('replicator_blacklist'), id));

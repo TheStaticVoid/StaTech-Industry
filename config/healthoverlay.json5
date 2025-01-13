@@ -1,0 +1,124 @@
+{
+	"health": {
+		// Show vanilla hearts
+		"health_vanilla": true,
+		/* Colors for every 10 hearts (not counting the default red)
+		   All values are written as hexadecimal RGB color in '#RRGGBB' format
+		*/
+		"health_colors": [
+			"#F06E14",
+			"#F5DC23",
+			"#2DB928",
+			"#1EAFBE",
+			"#7346E1",
+			"#FA7DEB",
+			"#EB375A",
+			"#FF8278",
+			"#AAFFFA",
+			"#EBEBFF"
+		],
+		/* Two alternating colors when poisoned
+		   There can be one color in case vanilla poisoned heart is wanted
+		*/
+		"health_poison_colors": [
+			"#739B00",
+			"#96CD00"
+		],
+		/* Two alternating colors when withered
+		   There can be one color in case vanilla withered heart is wanted
+		*/
+		"health_wither_colors": [
+			"#0F0F0F",
+			"#2D2D2D"
+		],
+		/* Two alternating colors when freezing
+		   There can be one color in case vanilla frozen heart is wanted
+		*/
+		"health_frozen_colors": [
+			"#3E70E6",
+			"#873EE6"
+		],
+		"gui": {
+			/* A point coordinates should be relative to.
+			   NOTE: moving towards left or top from a point always requires negative coordinates!
+			   Allowed Values: TOP_LEFT, TOP_MIDDLE, TOP_RIGHT, MIDDLE_LEFT, MIDDLE, MIDDLE_RIGHT, BOTTOM_LEFT, BOTTOM_MIDDLE, BOTTOM_RIGHT
+			*/
+			"relative_to": "BOTTOM_MIDDLE",
+			"x": -91,
+			"y": -39
+		}
+	},
+	"absorption": {
+		// Show vanilla hearts
+		"absorption_vanilla": true,
+		/* Colors for every 10 hearts (not counting the default yellow)
+		   All values are written as hexadecimal RGB color in '#RRGGBB' format
+		*/
+		"absorption_colors": [
+			"#E1FA9B",
+			"#A0FFAF",
+			"#AAFFFA",
+			"#AACDFF",
+			"#D7B4FF",
+			"#FAA5FF",
+			"#FFB4B4",
+			"#FFAA7D",
+			"#D7F0FF",
+			"#EBFFFA"
+		],
+		// Two alternating colors when poisoned
+		"absorption_poison_colors": [
+			"#BFF230",
+			"#7AA15A"
+		],
+		// Two alternating colors when withered
+		"absorption_wither_colors": [
+			"#787061",
+			"#73625C"
+		],
+		// Two alternating colors when freezing
+		"absorption_frozen_colors": [
+			"#90D136",
+			"#36D183"
+		],
+		"gui": {
+			/* A point coordinates should be relative to.
+			   NOTE: moving towards left or top from a point always requires negative coordinates!
+			   Allowed Values: TOP_LEFT, TOP_MIDDLE, TOP_RIGHT, MIDDLE_LEFT, MIDDLE, MIDDLE_RIGHT, BOTTOM_LEFT, BOTTOM_MIDDLE, BOTTOM_RIGHT
+			*/
+			"relative_to": "BOTTOM_MIDDLE",
+			"x": -91,
+			"y": -49
+		}
+	},
+	"qol": {
+		/* Display absorption in the same row as health
+		   Absorption hearts start directly after the last health heart.
+		*/
+		"absorption_over_health": false,
+		"counter": {
+			/* Visualizes health/absorption to left of the hearts.
+			   Allowed Values: OFF, ALWAYS, ON_CHANGE
+			*/
+			"display_mode": "OFF",
+			/* Text displayed next to health. Minecraft chat color codes are allowed.
+			   Available variables:
+			       "[HEALTH]": Current health.
+			       "[MAX]": Max health.
+			       "[HEARTS]": Current health in hearts.
+			       "[MAX_HEARTS]": Max health in hearts.
+			       "[ROW]": Current health row.
+			       "[MAX_ROW]": Max health row.
+			*/
+			"text_health": "\u00a74[HEALTH]\u00a77/\u00a72[MAX]",
+			/* Text displayed next to absorption. Minecraft chat color codes are allowed.
+			   In case 'absorption_over_health' is true, this text is displayed at the same position as or left of 'text_health'.
+			   Available variables:
+			      "[ABSORPTION]": Current absorption.
+			      "[HEARTS]": Current absorption in hearts.
+			      "[ROW]": Current absorption row.
+			*/
+			"text_absorption": "\u00a76[ABSORPTION]"
+		}
+	}
+}

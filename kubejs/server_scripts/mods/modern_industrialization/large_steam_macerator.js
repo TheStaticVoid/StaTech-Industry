@@ -13,6 +13,8 @@ ServerEvents.recipes(e => {
     let tr = (id) => `techreborn:${id}`;    
     let ed = (id) => `expandeddelight:${id}`;
     let sp = (id) => `spectrum:${id}`;
+    let ae2 = (id) => `ae2:${id}`;
+    let byg = (id) => `byg:${id}`;
 
     // -- LSM VARIABLE CONSTANTS -- //
     const gsonJsonArray = Java.loadClass('com.google.gson.JsonArray');
@@ -403,19 +405,33 @@ ServerEvents.recipes(e => {
     );
 
     // -- ONYX POWDER -- //
+    const ONYX_POWDER_DATA = [
+        { inputName: "onyx_shard", outputAmount: 2 },
+        { inputName: "onyx_block", outputAmount: 4 },
+        { inputName: "small_onyx_bud", outputAmount: 4 },
+        { inputName: "medium_onyx_bud", outputAmount: 6 },
+        { inputName: "large_onyx_bud", outputAmount: 8 }
+    ];
+    
+    ONYX_POWDER_DATA.forEach(data => {
+        lsm(
+            st(`onyx_powder_from_${data.inputName}`),
+            powerConstant,
+            200 * timeMultiplier,
+            [ { amount: 1 * amountMultiplier, item: sp(data.inputName) } ],
+            [ { amount: data.outputAmount * amountMultiplier, item: sp('onyx_powder') } ]
+        );
+    });
+    
     lsm(
-        st('onyx_powder'),
+        st('onyx_powder_from_onyx_cluster'),
         powerConstant,
         200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('onyx_shard') } ],
-        [ { amount: 2 * amountMultiplier, item: sp('onyx_powder') } ]
-    );
-    lsm(
-        st('onyx_powder_from_onyx_block'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('onyx_block') } ],
-        [ { amount: 4 * amountMultiplier, item: sp('onyx_powder') } ]
+        [ { amount: 1 * amountMultiplier, item: sp('onyx_cluster') } ],
+        [ 
+            { amount: 8 * amountMultiplier, item: sp('onyx_powder') },
+            { amount: 8 * amountMultiplier, item: sp('onyx_powder') }
+        ]
     );
 
     // -- FIERY POWDER -- //
@@ -510,4 +526,41 @@ ServerEvents.recipes(e => {
             { amount: 1 * amountMultiplier, item: mi('quartz_dust'), probability: 0.5 }
         ]
     );
+    
+    // -- CERTUS QUARTZ FROM BUDS AND CLUSTER
+    const CERTUS_DUST_DATA = [
+        { inputName: "small_quartz_bud", outputAmount: 2 },
+        { inputName: "medium_quartz_bud", outputAmount: 2 },
+        { inputName: "large_quartz_bud", outputAmount: 2 },
+        { inputName: "quartz_cluster", outputAmount: 8 }
+    ];
+    
+    CERTUS_DUST_DATA.forEach(data=>{
+        lsm(
+            st(`certus_quartz_dust_from_${data.inputName}`),
+            powerConstant,
+            200 * timeMultiplier,
+            [ { amount: 1 * amountMultiplier, item: ae2(data.inputName) } ],
+            [ { amount: data.outputAmount * amountMultiplier, item: ae2('certus_quartz_dust') } ]
+        );
+    });
+    
+    // -- BYG SAND FROM SANDSTONE -- //
+    const BYG_SAND_COLORS = [
+        'blue',
+        'black',
+        'white',
+        'pink',
+        'purple'
+    ];
+    
+    BYG_SAND_COLORS.forEach(color => {
+        lsm(
+            st(`${color}_sand_from_sandstone`),
+            powerConstant,
+            100 * timeMultiplier,
+            [ { amount: 1 * amountMultiplier, item: byg(`${color}_sandstone`) } ],
+            [ { amount: 4 * amountMultiplier, item: byg(`${color}_sand`) } ]
+        );
+    });
 });

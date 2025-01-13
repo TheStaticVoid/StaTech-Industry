@@ -1,280 +1,288 @@
-- ['Dustrial Decor [Fabric] (by slomax907)](https://www.curseforge.com/minecraft/mc-mods/dustrial-decor-fabric)
-- [[Fabric] Extended Armor Bars Forked (by Slugstur)](https://www.curseforge.com/minecraft/mc-mods/fabric-extended-armor-bars-forked)
-- [[FABRIC/QUILT] Disable Custom Worlds Advice (by Nara)](https://www.curseforge.com/minecraft/mc-mods/fabric-disable-custom-worlds-advice)
-- [Ad Astra (by AlexNijjar)](https://www.curseforge.com/minecraft/mc-mods/ad-astra)
-- [Ad Astra: Giselle Addon (by 지젤쟝다)](https://www.curseforge.com/minecraft/mc-mods/ad-astra-giselle-addon)
-- [Adaptive Tooltips (by XanderIsDev)](https://www.curseforge.com/minecraft/mc-mods/adaptive-tooltips)
-- [Advancements Debug (by thetechnici4n)](https://www.curseforge.com/minecraft/mc-mods/advancements-debug)
-- [Almost Unified (by AlmostReliable)](https://www.curseforge.com/minecraft/mc-mods/almost-unified)
-- [Alternate Current (by SpaceWalkerRS)](https://www.curseforge.com/minecraft/mc-mods/alternate-current)
-- [Another Furniture (by Starfish_Studios)](https://www.curseforge.com/minecraft/mc-mods/another-furniture)
-- [AntiGhost (by Giselbaer)](https://www.curseforge.com/minecraft/mc-mods/antighost)
-- [AppleSkin (by squeek502)](https://www.curseforge.com/minecraft/mc-mods/appleskin)
-- [Applied Energistics 2 (by thetechnici4n)](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2)
-- [Applied Energistics 2 Wireless Terminals (by Mari_023)](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2-wireless-terminals)
-- [Architect's Palette [FABRIC] (by slomax907)](https://www.curseforge.com/minecraft/mc-mods/architects-palette-fabric)
-- [Architectury API (Fabric/Forge) (by shedaniel)](https://www.curseforge.com/minecraft/mc-mods/architectury-api)
-- [Artifacts (Fabric) (by florensie)](https://www.curseforge.com/minecraft/mc-mods/artifacts-fabric)
-- [Async Locator (by bright_spark)](https://www.curseforge.com/minecraft/mc-mods/async-locator)
-- [AttributeFix (by DarkhaxDev)](https://www.curseforge.com/minecraft/mc-mods/attributefix)
-- [Auth Me (by Axieum)](https://www.curseforge.com/minecraft/mc-mods/auth-me)
-- [Auto Config Updated API (by shedaniel)](https://www.curseforge.com/minecraft/mc-mods/auto-config-updated-api)
-- [Awesome Dungeon - Fabric (by jtl_elisa)](https://www.curseforge.com/minecraft/mc-mods/awesome-dungeon-fabric)
-- [Axolotl Bucket Fix (by colderlavalamp)](https://www.curseforge.com/minecraft/mc-mods/axolotl-bucket-fix)
-- [bad packets (by badasintended)](https://www.curseforge.com/minecraft/mc-mods/badpackets)
-- [Bad Wither No Cookie - Reloaded (by Kreezxil)](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded)
-- [Balm (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/balm-fabric)
-- [Beacon Overhaul (by HeckinChloe)](https://www.curseforge.com/minecraft/mc-mods/beaconoverhaul)
-- [Beenfo (by Giselbaer)](https://www.curseforge.com/minecraft/mc-mods/beenfo)
-- [Better Advancements (by way2muchnoise)](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
-- [Better Combat [Fabric & Forge] (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/better-combat-by-daedelus)
-- [Better Fps - Render Distance[Fabric] (by someaddon)](https://www.curseforge.com/minecraft/mc-mods/better-fps-render-distance-fabric)
-- [Better Mount HUD (by Lortseam_)](https://www.curseforge.com/minecraft/mc-mods/better-mount-hud)
-- [Better Ping Display [Fabric] (by Quintinity)](https://www.curseforge.com/minecraft/mc-mods/better-ping-display-fabric)
-- [Better Statistics Screen (Fabric) (by Dev)](https://www.curseforge.com/minecraft/mc-mods/better-stats)
-- [Blockus (by Brandcraft_)](https://www.curseforge.com/minecraft/mc-mods/blockus)
-- [Blur (Fabric) (by Motschen)](https://www.curseforge.com/minecraft/mc-mods/blur-fabric)
-- [Bookshelf (by DarkhaxDev)](https://www.curseforge.com/minecraft/mc-mods/bookshelf)
-- [Botarium (by CodexAdrian)](https://www.curseforge.com/minecraft/mc-mods/botarium)
-- [Bow Infinity Fix (Forge/Fabric) (by Parker8283)](https://www.curseforge.com/minecraft/mc-mods/bow-infinity-fix)
-- [Building Wands (by nicguzzo)](https://www.curseforge.com/minecraft/mc-mods/building-wands)
-- [cAn i MiNe thIS bLOCk? (by shedaniel)](https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block)
-- [Cardinal Components (by UpcraftLP)](https://www.curseforge.com/minecraft/mc-mods/cardinal-components)
-- [Carry On (by Tschipp)](https://www.curseforge.com/minecraft/mc-mods/carry-on)
-- [Catwalks Inc. (by Reoseah)](https://www.curseforge.com/minecraft/mc-mods/catwalks-inc)
-- [CC: Restitched (by merithtk)](https://www.curseforge.com/minecraft/mc-mods/cc-restitched)
-- [CC:C Bridge (by Sammy_echt)](https://www.curseforge.com/minecraft/mc-mods/cccbridge)
-- [Charm of Undying (Fabric 1.16.1 - 1.19.2) (by TheIllusiveC4)](https://www.curseforge.com/minecraft/mc-mods/charm-of-undying-fabric)
-- [Chat Heads (by dzwdz)](https://www.curseforge.com/minecraft/mc-mods/chat-heads)
-- [Chef's Delight [Fabric] (by redstone3game)](https://www.curseforge.com/minecraft/mc-mods/chefs-delight-fabric)
-- [Cherished Worlds (Fabric 1.16.1 - 1.19.2) (by TheIllusiveC4)](https://www.curseforge.com/minecraft/mc-mods/cherished-worlds-fabric)
-- [Chimes (by BlewberryPie)](https://www.curseforge.com/minecraft/mc-mods/chimes)
-- [Chisel Refabricated (by Slaincow)](https://www.curseforge.com/minecraft/mc-mods/chisel-reborn)
-- [ChoiceTheorem's Overhauled Village (by ChoiceTheorem)](https://www.curseforge.com/minecraft/mc-mods/choicetheorems-overhauled-village)
-- [Chunky (Fabric) (by pop4959)](https://www.curseforge.com/minecraft/mc-mods/chunky-pregenerator)
-- [CleanCut (by Rongmario)](https://www.curseforge.com/minecraft/mc-mods/cleancut)
-- [Clickable advancements[Forge/Fabric] (by someaddon)](https://www.curseforge.com/minecraft/mc-mods/clickable-advancements)
-- [Climb Ladders Fast [Fabric/Forge] (by spoorn)](https://www.curseforge.com/minecraft/mc-mods/climb-ladders-fast)
-- [Cloth API (Fabric) (by shedaniel)](https://www.curseforge.com/minecraft/mc-mods/cloth-api)
-- [Cloth Config API (Fabric/Forge) (by shedaniel)](https://www.curseforge.com/minecraft/mc-mods/cloth-config)
-- [Clumps (by Jaredlll08)](https://www.curseforge.com/minecraft/mc-mods/clumps)
-- [Collective (by Serilum)](https://www.curseforge.com/minecraft/mc-mods/collective)
-- [Configured (Fabric) (by MrCrayfish)](https://www.curseforge.com/minecraft/mc-mods/configured-fabric)
-- [Continuity (by Pepper_Bell)](https://www.curseforge.com/minecraft/mc-mods/continuity)
-- [Controlling (by Jaredlll08)](https://www.curseforge.com/minecraft/mc-mods/controlling)
-- [CorgiLib (by Corgi_Taco)](https://www.curseforge.com/minecraft/mc-mods/corgilib)
-- [Cosmetic Armor [FABRIC] (by Apace)](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-fabric)
-- [Couplings (by HeckinChloe)](https://www.curseforge.com/minecraft/mc-mods/couplings)
-- [Crafting Tweaks (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks-fabric)
-- [Crawl (Fabric) (by fewizz_)](https://www.curseforge.com/minecraft/mc-mods/crawl)
-- [Create Crafts & Additions (by MRHminer)](https://www.curseforge.com/minecraft/mc-mods/createaddition)
-- [Create Fabric (by tropheusj)](https://www.curseforge.com/minecraft/mc-mods/create-fabric)
-- [Create Slice & Dice (by possible_triangle)](https://www.curseforge.com/minecraft/mc-mods/slice-and-dice)
-- [Create Style Tom's Simple Storage (by wedge1453)](https://www.curseforge.com/minecraft/texture-packs/toms-simple-storage-revamped)
-- [Create: Steam 'n' Rails (by mattentosh)](https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails)
-- [Cull Less Leaves (by XanderIsDev)](https://www.curseforge.com/minecraft/mc-mods/cull-less-leaves)
-- [Cultural Delights [Fabric] (by MrSterner_)](https://www.curseforge.com/minecraft/mc-mods/cultural-delights-fabric)
-- [Cupboard (by someaddon)](https://www.curseforge.com/minecraft/mc-mods/cupboard)
-- [Damage Tilt (by Charles445)](https://www.curseforge.com/minecraft/mc-mods/damage-tilt)
-- [Dank Storage Fabric (by tfarecnim)](https://www.curseforge.com/minecraft/mc-mods/dank-storage-fabric)
-- [Dark Loading Screen (by Neecko5b84)](https://www.curseforge.com/minecraft/mc-mods/dark-loading-screen)
-- [Dawn API (by Hugman_76)](https://www.curseforge.com/minecraft/mc-mods/dawn)
-- [Decorative Blocks (by stohun)](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks)
-- [Default Options (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/default-options-fabric)
-- [Easy Magic [Forge & Fabric] (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/easy-magic)
-- [Ecologics (by SameDifferent)](https://www.curseforge.com/minecraft/mc-mods/ecologics)
-- [Eldritch Mobs (by cyborg_pigeon)](https://www.curseforge.com/minecraft/mc-mods/eldritch-mobs)
-- [Emojiful (by Buuz135)](https://www.curseforge.com/minecraft/mc-mods/emojiful)
-- [Enhanced Block Entities (by FoundationGames)](https://www.curseforge.com/minecraft/mc-mods/enhanced-block-entities)
-- [Enhanced Workbenches (by Luligabi12)](https://www.curseforge.com/minecraft/mc-mods/enhanced-workbenches)
-- [Entity Culling Fabric/Forge (by tr7zw)](https://www.curseforge.com/minecraft/mc-mods/entityculling)
-- [Equipment Compare [Fabric] (by Grend_G)](https://www.curseforge.com/minecraft/mc-mods/equipment-compare-fabric)
-- [Expanded Delight [Fabric] (by ianm1647)](https://www.curseforge.com/minecraft/mc-mods/expanded-delight)
-- [Explorer's Compass (by Chaosyr)](https://www.curseforge.com/minecraft/mc-mods/explorers-compass)
-- [Extended Drawers (by MattiDragon)](https://www.curseforge.com/minecraft/mc-mods/extended-drawers)
-- [Extreme sound muffler (Fabric) Official (by LeoBeliik)](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler-fabric-official)
-- [Fabric API (by modmuss50)](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-- [Fabric Language Kotlin (by modmuss50)](https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin)
-- [Factory Blocks (by Slaincow)](https://www.curseforge.com/minecraft/mc-mods/factory-blocks)
-- [Falling Leaves (Fabric) (by RandomMcSomethin)](https://www.curseforge.com/minecraft/mc-mods/falling-leaves-fabric)
-- [FancyMenu [Fabric] (by Keksuccino)](https://www.curseforge.com/minecraft/mc-mods/fancymenu-fabric)
-- [Farmer's Delight [Fabric] (by NewHoryzon)](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-fabric)
-- [Farming for Blockheads (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads-fabric)
-- [Fast Furnace for Fabric (by tfarecnim)](https://www.curseforge.com/minecraft/mc-mods/fast-furnace-for-fabric)
-- [FastBench for Fabric (by tfarecnim)](https://www.curseforge.com/minecraft/mc-mods/fastbench-for-fabric)
-- [FerriteCore (Fabric) (by malte0811)](https://www.curseforge.com/minecraft/mc-mods/ferritecore-fabric)
-- [FindMe (by Buuz135)](https://www.curseforge.com/minecraft/mc-mods/findme)
-- [Fix Experience Bug (now with FABRIC and FORGE versions) (by MacTso)](https://www.curseforge.com/minecraft/mc-mods/fix-experience-bug)
-- [Forge Config API Port [Fabric] (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/forge-config-api-port-fabric)
-- [Forgiving Void (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/forgiving-void-fabric)
-- [FPS Reducer (by bre2el)](https://www.curseforge.com/minecraft/mc-mods/fps-reducer)
-- [FTB Backups 2 (by FTB)](https://www.curseforge.com/minecraft/mc-mods/ftb-backups-2)
-- [FTB Chunks (Fabric) (by FTB)](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-fabric)
-- [FTB Essentials (Forge & Fabric) (by FTB)](https://www.curseforge.com/minecraft/mc-mods/ftb-essentials-forge)
-- [FTB Library (Fabric) (by FTB)](https://www.curseforge.com/minecraft/mc-mods/ftb-library-fabric)
-- [FTB Quests (Fabric) (by FTB)](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric)
-- [FTB Teams (Fabric) (by FTB)](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-fabric)
-- [FTB XMod Compat (by FTB)](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat)
-- [GeckoLib (by Gecko)](https://www.curseforge.com/minecraft/mc-mods/geckolib)
-- [Geocluster (by MrSterner_)](https://www.curseforge.com/minecraft/mc-mods/geocluster)
-- [Goblin Traders [Fabric] (by MrCrayfish)](https://www.curseforge.com/minecraft/mc-mods/goblintraders-fabric)
-- [Guard Villagers (Fabric/Quilt) (by MrSterner_)](https://www.curseforge.com/minecraft/mc-mods/guard-villagers-fabric)
-- [Health Overlay (Fabric) (by Terrails)](https://www.curseforge.com/minecraft/mc-mods/health-overlay-fabric)
-- [Held Item Info (by Neecko5b84)](https://www.curseforge.com/minecraft/mc-mods/held-item-info)
-- [HerdsPanic (by Globox_Z)](https://www.curseforge.com/minecraft/mc-mods/herdspanic)
-- [Hookshot (by Cammie)](https://www.curseforge.com/minecraft/mc-mods/hookshot)
-- [Iceberg [Fabric] (by Grend_G)](https://www.curseforge.com/minecraft/mc-mods/iceberg-fabric)
-- [Idwtialsimmoedm (by gliscowo)](https://www.curseforge.com/minecraft/mc-mods/idwtialsimmoedm)
-- [Immersive structures (by ChoiceTheorem)](https://www.curseforge.com/minecraft/mc-mods/immersive-structures)
-- [Indium (by comp500)](https://www.curseforge.com/minecraft/mc-mods/indium)
-- [Inmis (by Draylar1)](https://www.curseforge.com/minecraft/mc-mods/inmis)
-- [InmisAddon (by Globox_Z)](https://www.curseforge.com/minecraft/mc-mods/inmisaddon)
-- [Inventory HUD+ (by dmitrylovin)](https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge)
-- [Inventory Profiles Next (by mirinimi)](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next)
-- [Iron Chests: Restocked (by ThatGravyBoat)](https://www.curseforge.com/minecraft/mc-mods/ironchests)
-- [Item Filters (by LatvianModder)](https://www.curseforge.com/minecraft/mc-mods/item-filters)
-- [Item Model Fix (Fabric) (by Pepper_Bell)](https://www.curseforge.com/minecraft/mc-mods/item-model-fix)
-- [JamLib (by jamalam360)](https://www.curseforge.com/minecraft/mc-mods/jamlib)
-- [JourneyMap (by techbrew)](https://www.curseforge.com/minecraft/mc-mods/journeymap)
-- [JourneyMap Integration (by frankv_)](https://www.curseforge.com/minecraft/mc-mods/journeymap-integration)
-- [Just Another Void Dimension (by UnRealDinnerbone)](https://www.curseforge.com/minecraft/mc-mods/javd)
-- [Just Enough Calculation (by towdium)](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation)
-- [Kibe Utilities (by D4rkness_King)](https://www.curseforge.com/minecraft/mc-mods/kibe)
-- [KleeSlabs (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/kleeslabs-fabric)
-- [Konkrete [Fabric] (by Keksuccino)](https://www.curseforge.com/minecraft/mc-mods/konkrete-fabric)
-- [Krypton (by tuxed)](https://www.curseforge.com/minecraft/mc-mods/krypton)
-- [KubeJS (by LatvianModder)](https://www.curseforge.com/minecraft/mc-mods/kubejs)
-- [LambDynamicLights (by LambdAurora)](https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights)
-- [LazyDFU (by tuxed)](https://www.curseforge.com/minecraft/mc-mods/lazydfu)
-- [Leaves Be Gone [Forge & Fabric] (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/leaves-be-gone)
-- [Let Me Despawn (by frikinjay)](https://www.curseforge.com/minecraft/mc-mods/let-me-despawn)
-- [libIPN (by mirinimi)](https://www.curseforge.com/minecraft/mc-mods/libipn)
-- [Library Ferret - Fabric (by jtl_elisa)](https://www.curseforge.com/minecraft/mc-mods/library-ferret-fabric)
-- [Light Overlay (Rift/Forge/Fabric) (by shedaniel)](https://www.curseforge.com/minecraft/mc-mods/light-overlay)
-- [Lithium (Fabric) (by jellysquid3_)](https://www.curseforge.com/minecraft/mc-mods/lithium)
-- [Logical Zoom (by LogicalGeekBoy)](https://www.curseforge.com/minecraft/mc-mods/logical-zoom)
-- [Lootr (Fabric) (by Noobanidus)](https://www.curseforge.com/minecraft/mc-mods/lootr-fabric)
-- [Low Fire (by UltimateBoomer)](https://www.curseforge.com/minecraft/mc-mods/low-fire)
-- [Lumberaxe (by TacoMonkeyMC)](https://www.curseforge.com/minecraft/mc-mods/lumberaxe)
-- [Macaw's Paintings (by sketch_macaw)](https://www.curseforge.com/minecraft/mc-mods/macaws-paintings)
-- [megane (by badasintended)](https://www.curseforge.com/minecraft/mc-mods/megane)
-- [MemoryLeakFix (by FX_PR0CESS)](https://www.curseforge.com/minecraft/mc-mods/memoryleakfix)
-- [MidnightLib (by TeamMidnightDust)](https://www.curseforge.com/minecraft/mc-mods/midnightlib)
-- [MixinTrace (by comp500)](https://www.curseforge.com/minecraft/mc-mods/mixintrace)
-- [MmmMmmMmmMmm (Target Dummy) (by MehVahdJukaar)](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm)
-- [Mod Menu (by Prospector)](https://www.curseforge.com/minecraft/mc-mods/modmenu)
-- [Modern Dynamics (by thetechnici4n)](https://www.curseforge.com/minecraft/mc-mods/modern-dynamics)
-- [Modern Industrialization (by thetechnici4n)](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization)
-- [ModernFix (by embeddedt)](https://www.curseforge.com/minecraft/mc-mods/modernfix)
-- [Moonlight Lib (by MehVahdJukaar)](https://www.curseforge.com/minecraft/mc-mods/selene)
-- [More Geodes (by TheDeathlyCow)](https://www.curseforge.com/minecraft/mc-mods/emerald-geodes)
-- [More Villagers [Fabric] (by SameDifferent)](https://www.curseforge.com/minecraft/mc-mods/more-villagers-fabric)
-- [Naturalist (by Starfish_Studios)](https://www.curseforge.com/minecraft/mc-mods/naturalist)
-- [Nature's Compass (by Chaosyr)](https://www.curseforge.com/minecraft/mc-mods/natures-compass)
-- [Nether's Delight (Fabric) (by StevePlayzz_)](https://www.curseforge.com/minecraft/mc-mods/nethers-delight-fabric)
-- [NetherPortalFix (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/netherportalfix-fabric)
-- [No Chat Reports (by Aizistral)](https://www.curseforge.com/minecraft/mc-mods/no-chat-reports)
-- [No Recipe Book (Fabric) (by Grayray75)](https://www.curseforge.com/minecraft/mc-mods/norecipebook-fabric)
-- [Not Enough Animations (by tr7zw)](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations)
-- [Oh The Biomes You'll Go Refabricated (by AOCAWOL)](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go-fabric)
-- [oωo (owo-lib) (by gliscowo)](https://www.curseforge.com/minecraft/mc-mods/owo-lib)
-- [Passive Shield (by Serilum)](https://www.curseforge.com/minecraft/mc-mods/passive-shield)
-- [Patchouli (Fabric/Quilt) (by williewillus)](https://www.curseforge.com/minecraft/mc-mods/patchouli-fabric)
-- [Peripheralium (by SirEdvin)](https://www.curseforge.com/minecraft/mc-mods/peripheralium)
-- [Pineapple Delight (by someoneice)](https://www.curseforge.com/minecraft/mc-mods/pineapple-delight)
-- [playerAnimator (by KosmX)](https://www.curseforge.com/minecraft/mc-mods/playeranimator)
-- [Pling (by haykam)](https://www.curseforge.com/minecraft/mc-mods/pling)
-- [Polaroid Camera (by cyborg_pigeon)](https://www.curseforge.com/minecraft/mc-mods/polaroid-camera)
-- [PolyLib (by Official_CreeperHost)](https://www.curseforge.com/minecraft/mc-mods/polylib)
-- [Polymorph (Fabric 1.16.1 - 1.19.2) (by TheIllusiveC4)](https://www.curseforge.com/minecraft/mc-mods/polymorph-fabric)
-- [Ponder for KubeJS (by Lytho)](https://www.curseforge.com/minecraft/mc-mods/ponder)
-- [Prism [Fabric] (by Grend_G)](https://www.curseforge.com/minecraft/mc-mods/prism-fabric)
-- [Promenade (by Hugman_76)](https://www.curseforge.com/minecraft/mc-mods/promenade)
-- [Puzzles Lib [Forge & Fabric] (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/puzzles-lib)
-- [Quarry Reborn (by TED_inc)](https://www.curseforge.com/minecraft/mc-mods/quarry-reborn)
-- [Quick Shulker (by Kyrptonaught)](https://www.curseforge.com/minecraft/mc-mods/quick-shulker)
-- [Reacharound (by spAnser)](https://www.curseforge.com/minecraft/mc-mods/reacharound)
-- [Redirectionor [Modern] (by pOtAto__bOy)](https://www.curseforge.com/minecraft/mc-mods/redirectionor)
-- [Reese's Sodium Options (by FlashyReese)](https://www.curseforge.com/minecraft/mc-mods/reeses-sodium-options)
-- [Resourceful Config (by ThatGravyBoat)](https://www.curseforge.com/minecraft/mc-mods/resourceful-config)
-- [Resourceful Lib (by ThatGravyBoat)](https://www.curseforge.com/minecraft/mc-mods/resourceful-lib)
-- [Revelationary (by DaFuqsy)](https://www.curseforge.com/minecraft/mc-mods/revelationary)
-- [Rhino (by LatvianModder)](https://www.curseforge.com/minecraft/mc-mods/rhino)
-- [RightClickHarvest (by jamalam360)](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest)
-- [River Redux (by Jasmine)](https://www.curseforge.com/minecraft/mc-mods/river-redux)
-- [Rotten Creatures (by fusionstudiomc)](https://www.curseforge.com/minecraft/mc-mods/rotten-creatures)
-- [Roughly Enough Items Fabric/Forge (REI) (by shedaniel)](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items)
-- [Roughly Enough Loot Tables (by GrigLog)](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-loot-tables)
-- [Roughly Enough Professions (REP) (by Mrbysco)](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-professions-rep)
-- [Roughly Enough Trades (by GrigLog)](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-trades)
-- [Runes [Fabric] (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/rune-crafting)
-- [Satin API (by PyrofabTheModsmith)](https://www.curseforge.com/minecraft/mc-mods/satin-api)
-- [Scannable (by Sangar_)](https://www.curseforge.com/minecraft/mc-mods/scannable)
-- [Server Performance - Smooth Chunk Save[Forge/Fabric] (by someaddon)](https://www.curseforge.com/minecraft/mc-mods/smooth-chunk-save)
-- [ServerCore (by Wesley8081)](https://www.curseforge.com/minecraft/mc-mods/servercore)
-- [Shear Cows (by static)](https://www.curseforge.com/minecraft/mc-mods/shear-cows)
-- [ShetiPhianCore [Fabric] (by ShetiPhian)](https://www.curseforge.com/minecraft/mc-mods/shetiphiancore-fabric)
-- [Simple Animated Guns (Fabric) (by ElidhanMC)](https://www.curseforge.com/minecraft/mc-mods/fabric-simple-animated-guns)
-- [Simple Discord Rich Presence (Forge / Fabric) (by Sunekaer)](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rich-presence)
-- [Simple Voice Chat (by henkelmax)](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat)
-- [Simply Swords [Fabric & Forge] (by sweenuss)](https://www.curseforge.com/minecraft/mc-mods/simply-swords)
-- [Skin Layers 3D (Fabric/Forge) (by tr7zw)](https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d)
-- [Smooth Boot (Fabric) (by UltimateBoomer)](https://www.curseforge.com/minecraft/mc-mods/smooth-boot)
-- [Snow Under Trees (Fabric)​ (by itsmineblock11)](https://www.curseforge.com/minecraft/mc-mods/snow-under-trees-remastered)
-- [Sodium (by jellysquid3_)](https://www.curseforge.com/minecraft/mc-mods/sodium)
-- [Sodium Extra (by FlashyReese)](https://www.curseforge.com/minecraft/mc-mods/sodium-extra)
-- [spark (by Iucko)](https://www.curseforge.com/minecraft/mc-mods/spark)
-- [Spectrum (by DaFuqsy)](https://www.curseforge.com/minecraft/mc-mods/spectrum)
-- [Spell Engine (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/spell-engine)
-- [Spell Power Attributes [Fabric] (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/spell-power)
-- [Spellblades and Such (by cleannrooster)](https://www.curseforge.com/minecraft/mc-mods/spellblade-next)
-- [Spice of Fabric (Fabric) (by Siphalor)](https://www.curseforge.com/minecraft/mc-mods/spice-of-fabric)
-- [St'ructure Tools (by ProjectET)](https://www.curseforge.com/minecraft/mc-mods/structure-tools)
-- [Staff of Traveling (by lukegrahamlandry)](https://www.curseforge.com/minecraft/mc-mods/staff-of-traveling)
-- [Starlight (Fabric) (by Spottedstar)](https://www.curseforge.com/minecraft/mc-mods/starlight)
-- [Structory (by botanydev)](https://www.curseforge.com/minecraft/mc-mods/structory)
-- [Structory: Towers (by botanydev)](https://www.curseforge.com/minecraft/mc-mods/structory-towers)
-- [Superflat World No Slimes (by Serilum)](https://www.curseforge.com/minecraft/mc-mods/superflat-world-no-slimes)
-- [SuperMartijn642's Config Lib (by SuperMartijn642)](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib)
-- [SuperMartijn642's Core Lib (by SuperMartijn642)](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)
-- [Supplementaries (by MehVahdJukaar)](https://www.curseforge.com/minecraft/mc-mods/supplementaries)
-- [Tech Reborn (by modmuss50)](https://www.curseforge.com/minecraft/mc-mods/techreborn)
-- [Tech-enhanced (by thepigcat76)](https://www.curseforge.com/minecraft/mc-mods/tech-enhanced)
-- [TerraBlender (Fabric) (by TheAdubbz)](https://www.curseforge.com/minecraft/mc-mods/terrablender-fabric)
-- [The Twilight Forest (by Benimatic)](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)
-- [Time in a Bottle (Fabric) (by alkyaLy)](https://www.curseforge.com/minecraft/mc-mods/time-in-a-bottle)
-- [TipTheScales (by Jaredlll08)](https://www.curseforge.com/minecraft/mc-mods/tipthescales)
-- [Toast Manager (by BanzettaDev)](https://www.curseforge.com/minecraft/mc-mods/toast-manager)
-- [Tom's Simple Storage Mod (Fabric) (by tom54541)](https://www.curseforge.com/minecraft/mc-mods/toms-storage-fabric)
-- [Tool Leveling+ [Fabric] (by Buecher_wurm)](https://www.curseforge.com/minecraft/mc-mods/tool-leveling-plus-fabric)
-- [Tool Stats (by DarkhaxDev)](https://www.curseforge.com/minecraft/mc-mods/tool-stats)
-- [Towns and Towers (by Biban_Auriu)](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers)
-- [Trade Cycling (by henkelmax)](https://www.curseforge.com/minecraft/mc-mods/trade-cycling)
-- [Trinkets (Fabric) (by EmilyPloszaj)](https://www.curseforge.com/minecraft/mc-mods/trinkets)
-- [Trowel (by TheEnderCore)](https://www.curseforge.com/minecraft/mc-mods/trowel)
-- [Universal Bone Meal [Forge & Fabric] (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/universal-bone-meal-forge)
-- [UnlimitedPeripheralWorks (by SirEdvin)](https://www.curseforge.com/minecraft/mc-mods/unlimitedperipheralworks)
-- [Vanilla Hammers (by Draylar1)](https://www.curseforge.com/minecraft/mc-mods/vanilla-hammers)
-- [Visual Workbench [Forge & Fabric] (by Fuzs)](https://www.curseforge.com/minecraft/mc-mods/visual-workbench)
-- [Visuality (by PinkGoosik)](https://www.curseforge.com/minecraft/mc-mods/visuality)
-- [Wavey Capes (by tr7zw)](https://www.curseforge.com/minecraft/mc-mods/waveycapes)
-- [Waystones (Fabric Edition) (by BlayTheNinth)](https://www.curseforge.com/minecraft/mc-mods/waystones-fabric)
-- [When Dungeons Arise - Fabric! (by Aureljz)](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-fabric)
-- [Wireless Chargers (by SuperMartijn642)](https://www.curseforge.com/minecraft/mc-mods/wireless-chargers)
-- [Wizards (RPG Series) (by daedelus_dev)](https://www.curseforge.com/minecraft/mc-mods/wizards)
-- [WMITAF (by ShaksterNano)](https://www.curseforge.com/minecraft/mc-mods/wmitaf)
-- [WTHIT (by badasintended)](https://www.curseforge.com/minecraft/mc-mods/wthit)
-- [XP Obelisk (by Meridanus)](https://www.curseforge.com/minecraft/mc-mods/xp-obelisk)
-- [YDM's Weapon Master (by YourDailyModderx)](https://www.curseforge.com/minecraft/mc-mods/ydms-weapon-master)
-- [YetAnotherConfigLib (by XanderIsDev)](https://www.curseforge.com/minecraft/mc-mods/yacl)
-- [You're in Grave Danger (by b1n_ry)](https://www.curseforge.com/minecraft/mc-mods/youre-in-grave-danger)
-- [YUNG's API (Fabric) (by YUNGNICKYOUNG)](https://www.curseforge.com/minecraft/mc-mods/yungs-api-fabric)
-- [YUNG's Better Desert Temples (Fabric) (by YUNGNICKYOUNG)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples-fabric)
-- [YUNG's Better Dungeons (Fabric) (by YUNGNICKYOUNG)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons-fabric)
-- [YUNG's Better Mineshafts (Fabric) (by YUNGNICKYOUNG)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-fabric)
-- [YUNG's Better Nether Fortresses (Fabric) (by YUNGNICKYOUNG)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses-fabric)
-- [YUNG's Better Ocean Monuments (Fabric) (by YUNGNICKYOUNG)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments-fabric)
-- [YUNG's Better Strongholds (Fabric) (by YUNGNICKYOUNG)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds-fabric)
-- [YUNG's Better Witch Huts (Fabric) (by YUNGNICKYOUNG)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts-fabric)
-- [YUNG's Bridges (Fabric) (by YUNGNICKYOUNG)](https://www.curseforge.com/minecraft/mc-mods/yungs-bridges-fabric)
-- [YUNG's Extras (Fabric) (by YUNGNICKYOUNG)](https://www.curseforge.com/minecraft/mc-mods/yungs-extras-fabric)
+- [3d\-Skin\-Layers](https://www.curseforge.com/projects/521480) by tr7zw
+- [AE2Things](https://www.curseforge.com/projects/1171490) by ProjectET
+- [AE2WTLib](https://www.curseforge.com/projects/459929) by mari\_023, Ridanisaurus, DomamaN202
+- [Ad Astra](https://www.curseforge.com/projects/635042) by Alex Nijjar
+- [Ad Astra: Giselle Addon](https://www.curseforge.com/projects/714958) by gisellevonbingen
+- [Adaptive Tooltips](https://www.curseforge.com/projects/704346) by isXander
+- [Advancements Debug](https://www.curseforge.com/projects/422316) by Technici4n
+- [AlmostUnified](https://www.curseforge.com/projects/633823) by Almost Reliable
+- [Alternate Current](https://www.curseforge.com/projects/548115) by Space Walker
+- [Another Furniture](https://www.curseforge.com/projects/610492) by Starfish Studios
+- [AntiGhost](https://www.curseforge.com/projects/273279) by Giselbaer
+- [AppleSkin](https://www.curseforge.com/projects/248787) by squeek502
+- [Applied Energistics 2](https://www.curseforge.com/projects/223794) by TeamAppliedEnergistics
+- [Architect's Palette Fabric](https://www.curseforge.com/projects/487364) by Jsburg & Slomaxonical
+- [Architectury](https://www.curseforge.com/projects/419699) by shedaniel
+- [Artifacts](https://www.curseforge.com/projects/401236) by ochotonida, Florens
+- [Async Locator](https://www.curseforge.com/projects/625069) by bright\_spark
+- [AttributeFix](https://www.curseforge.com/projects/280510) by Darkhax
+- [Auth Me](https://www.curseforge.com/projects/356643) by Axieum
+- [Auto Config v1 Updated](https://www.curseforge.com/projects/373261) by sargunv, shedaniel
+- [Awesome dungeon](https://www.curseforge.com/projects/530309) by JTorLeon Studios
+- [Axolotl Item Fix](https://www.curseforge.com/projects/495453) by ColdLavaLamp
+- [Bad Packets](https://www.curseforge.com/projects/615134) by deirn
+- [Bad Wither No Cookie Reloaded](https://www.curseforge.com/projects/261251) by Kreezxil, Eleksploded
+- [Balm](https://www.curseforge.com/projects/500525) by BlayTheNinth
+- [Beacon Overhaul](https://www.curseforge.com/projects/430382) by Chloe Dawn
+- [Beenfo](https://www.curseforge.com/projects/357256) by Giselbaer
+- [Better Advancements](https://www.curseforge.com/projects/272515) by way2muchnoise
+- [Better Combat](https://www.curseforge.com/projects/639842) by Daedelus
+- [Better Mount HUD](https://www.curseforge.com/projects/475358) by Lortseam
+- [Better Ping Display](https://www.curseforge.com/projects/406343) by Quintinity
+- [Better Statistics Screen](https://www.curseforge.com/projects/667464) by TheCSDev
+- [Blockus](https://www.curseforge.com/projects/312289) by Brandcraft
+- [Bookshelf](https://www.curseforge.com/projects/228525) by Darkhax
+- [Botarium](https://www.curseforge.com/projects/704113) by CodexAdrian
+- [Bow Infinity Fix](https://www.curseforge.com/projects/224713) by Parker8283
+- [Building Wands](https://www.curseforge.com/projects/363392) by nicguzzo
+- [CC: Restitched](https://www.curseforge.com/projects/462672) by Daniel Ratcliffe, Aaron Mills, SquidDev, parly, Merith\.TK, Jummit, Toad\-Dev, 3prm3, Patbox
+- [CC:C Bridge](https://www.curseforge.com/projects/656214) by Sammy L\. Koch, Luke A\. Hanssen
+- [CapeJS](https://www.curseforge.com/projects/911145) by static
+- [Cardinal Components API](https://www.curseforge.com/projects/318449) by UpcraftLP, Pyrofab
+- [Carry On](https://www.curseforge.com/projects/274259) by Tschipp, Purplicious\_Cow, cy4n
+- [Catwalks Inc\.](https://www.curseforge.com/projects/554340) by Reoseah
+- [Charm of Undying](https://www.curseforge.com/projects/395547) by Illusive Soulworks
+- [Chat Heads](https://www.curseforge.com/projects/407206) by dzwdz, Fourmisain
+- [Chef's Delight](https://www.curseforge.com/projects/736986) by Redstone Games
+- [Cherished Worlds](https://www.curseforge.com/projects/398502) by Illusive Soulworks
+- [Chimes](https://www.curseforge.com/projects/350464) by BlewberryPie
+- [Chisel Refabricated](https://www.curseforge.com/projects/551763) by Slaincow, KnowYourKnot, Original Creator: AUTOMATIC\_MAIDEN
+- [ChoiceTheorem's Overhauled Village](https://www.curseforge.com/projects/623908) by ChoiceTheorem
+- [Chunky](https://www.curseforge.com/projects/433175) by pop4959
+- [CleanCut](https://www.curseforge.com/projects/392805) by Rongmario
+- [ClimbLaddersFast](https://www.curseforge.com/projects/459522) by spoorn
+- [Cloth API](https://www.curseforge.com/projects/317121) by shedaniel
+- [Cloth Config v8](https://www.curseforge.com/projects/348521) by shedaniel
+- [Clumps](https://www.curseforge.com/projects/256717) by Jaredlll08
+- [Collective](https://www.curseforge.com/projects/342584) by Rick South
+- [Configured](https://www.curseforge.com/projects/667378) by MrCrayfish
+- [Continuity](https://www.curseforge.com/projects/531351) by Pepper\_Bell
+- [Controlling For Fabric](https://www.curseforge.com/projects/250398) by Jaredlll08
+- [CorgiLib](https://www.curseforge.com/projects/693313) by Corgi Taco
+- [Cosmetic Armor](https://www.curseforge.com/projects/436659) by Apace
+- [Couplings](https://www.curseforge.com/projects/311120) by Chloe Dawn
+- [Crafting Tweaks](https://www.curseforge.com/projects/502516) by BlayTheNinth
+- [Crawl](https://www.curseforge.com/projects/314579) by fewizz, McSkinnerOG, Chocohead
+- [Create](https://www.curseforge.com/projects/624165) by Fabricators of Create, Creators of Create
+- [Create Crafts & Additions](https://www.curseforge.com/projects/439890) by MRH0
+- [Create Slice & Dice](https://www.curseforge.com/projects/659674) by possible\_triangle
+- [Create: Copycats\+](https://www.curseforge.com/projects/968398) by Lysine, Bennyboy1695, Redcat\_XVIII
+- [Create: Steam 'n' Rails](https://www.curseforge.com/projects/688231) by The Railways Team
+- [Cull Less Leaves](https://www.curseforge.com/projects/619718) by isXander
+- [Cultural Delights Fabric](https://www.curseforge.com/projects/807107) by MrSterner
+- [Damage Tilt](https://www.curseforge.com/projects/411705) by Charles445
+- [Dank Storage](https://www.curseforge.com/projects/400619) by Tfarcenim
+- [Dark Loading Screen](https://www.curseforge.com/projects/365727) by Neecko5b84
+- [Dawn API](https://www.curseforge.com/projects/399309) by Hugman
+- [Decorative Blocks](https://www.curseforge.com/projects/362528) by Stohun, lilypuree
+- [Default Options](https://www.curseforge.com/projects/547694) by BlayTheNinth
+- [Disable Custom Worlds Advice](https://www.curseforge.com/projects/401978) by rdvdev2
+- [Dustrial Decor](https://www.curseforge.com/projects/592067) by BlueDuck & Slomaxonical
+- [Easy Magic](https://www.curseforge.com/projects/456239) by Fuzs
+- [Ecologics](https://www.curseforge.com/projects/570463) by SameButDifferent, Zero\_DSRS\_VX, Drigonis, Crispytwig, Irishjevil, Foquito Azul
+- [EldritchMobs](https://www.curseforge.com/projects/392015) by CyborgPigeon
+- [Emojiful](https://www.curseforge.com/projects/284324) by HorizonStudio
+- [Enhanced Block Entities](https://www.curseforge.com/projects/452046) by FoundationGames
+- [Enhanced Workbenches](https://www.curseforge.com/projects/857513) by Luligabi
+- [EntityCulling\-Fabric](https://www.curseforge.com/projects/448233) by tr7zw
+- [Equipment Compare](https://www.curseforge.com/projects/541329) by Grend
+- [Expanded Delight](https://www.curseforge.com/projects/620770) by ianm1647
+- [Experience Bug Fix](https://www.curseforge.com/projects/486778) by Mactso, Lupicus
+- [Explorer's Compass](https://www.curseforge.com/projects/491794) by ChaosTheDude
+- [Extended Armor Bars](https://www.curseforge.com/projects/567580) by RebelKeithy
+- [Extended Drawers](https://www.curseforge.com/projects/616602) by MattiDragon
+- [Extreme sound muffler](https://www.curseforge.com/projects/566140) by LeoBeliik
+- [FPS Reducer](https://www.curseforge.com/projects/280294) by bre2el
+- [FTB Backups 2](https://www.curseforge.com/projects/622737) by CreeperHost
+- [FTB Chunks](https://www.curseforge.com/projects/472657) by FTB Team
+- [FTB Essentials](https://www.curseforge.com/projects/410811) by FTB Team
+- [FTB Library](https://www.curseforge.com/projects/438495) by FTB, LatvianModder
+- [FTB Quests](https://www.curseforge.com/projects/438496) by FTB Team
+- [FTB Teams](https://www.curseforge.com/projects/438497) by LatvianModder
+- [FTB XMod Compat](https://www.curseforge.com/projects/889915) by FTB Team
+- [Fabric API](https://www.curseforge.com/projects/306612) by FabricMC
+- [Fabric Language Kotlin](https://www.curseforge.com/projects/308769) by FabricMC
+- [Factory Blocks Mod](https://www.curseforge.com/projects/640001) by slaincow
+- [Falling Leaves](https://www.curseforge.com/projects/417510) by Fourmisain, BrekiTomasson, RandomMcSomethin
+- [FancyMenu](https://www.curseforge.com/projects/416796) by Keksuccino
+- [Farmer's Delight](https://www.curseforge.com/projects/482834) by Zifiv, vectorwing, StevenPlayzz, dopadream, orlouge, BarchamMal, AwesomeDude091
+- [Farming for Blockheads](https://www.curseforge.com/projects/554586) by BlayTheNinth
+- [FastFurnace](https://www.curseforge.com/projects/364540) by Tfarecnim, ShadowsOfFire
+- [FerriteCore](https://www.curseforge.com/projects/459857) by malte0811
+- [FindMe](https://www.curseforge.com/projects/291936) by Buuz135
+- [Forge Config API Port](https://www.curseforge.com/projects/547434) by Fuzs
+- [Forgiving Void](https://www.curseforge.com/projects/547687) by BlayTheNinth
+- [Geckolib](https://www.curseforge.com/projects/388172) by Gecko, Eliot, AzureDoom, Hydos, DerToaster
+- [Geocluster](https://www.curseforge.com/projects/863819) by MrSterner
+- [Goblin Traders](https://www.curseforge.com/projects/667389) by MrCrayfish
+- [GuardVillagers](https://www.curseforge.com/projects/571503) by MrSterner
+- [Health Overlay](https://www.curseforge.com/projects/313219) by Terrails
+- [Held Item Info](https://www.curseforge.com/projects/365615) by Neecko5b84
+- [Herds Panic](https://www.curseforge.com/projects/429383) by Globox\_Z, Abbanon
+- [Hookshot](https://www.curseforge.com/projects/396512) by Cammie
+- [Iceberg](https://www.curseforge.com/projects/539382) by Grend
+- [Immersive Structure](https://www.curseforge.com/projects/637201) by ChoiceTheorem
+- [Indium](https://www.curseforge.com/projects/459496) by comp500
+- [Industrial Quarry Mod](https://www.curseforge.com/projects/511254) by TEDinc, DissiNL
+- [Inmis](https://www.curseforge.com/projects/369254) by Draylar
+- [InmisAddon](https://www.curseforge.com/projects/666672) by Globox\_Z, Pois1x
+- [Inventory HUD \+](https://www.curseforge.com/projects/357540) by DmitryLovin
+- [Inventory Profiles Next](https://www.curseforge.com/projects/495267) by mirinimi/blackd
+- [Iris](https://www.curseforge.com/projects/993524) by coderbot, IMS212, Justsnoopy30, FoundationGames
+- [Iris](https://github.com/IrisShaders/Iris) by coderbot, IMS212, Justsnoopy30, FoundationGames
+- [Iron Chests: Restocked](https://www.curseforge.com/projects/498794) by Dev and Upgrade Textures \- ThatGravyBoat, All Other Textures \- Kekie
+- [Item Filters](https://www.curseforge.com/projects/309674) by LatvianModder
+- [Item Model Fix](https://www.curseforge.com/projects/399798) by Pepper\_Bell
+- [Jade](https://www.curseforge.com/projects/324717) by Snownee
+- [Jade Addons](https://www.curseforge.com/projects/656665) by Snownee
+- [JamLib](https://www.curseforge.com/projects/623764) by Jamalam
+- [JourneyMapIntegration](https://www.curseforge.com/projects/525447) by frankV
+- [Journeymap](https://www.curseforge.com/projects/32274) by Mysticdrew, Techbrew
+- [Just Another Void Dimension](https://www.curseforge.com/projects/370890) by UnRealDinnerbone
+- [Just Enough Calculation](https://www.curseforge.com/projects/242223) by Towdium, MorningSage, 6LeoY
+- [Kibe](https://www.curseforge.com/projects/388832) by D4rkness\_King
+- [KleeSlabs](https://www.curseforge.com/projects/547695) by BlayTheNinth
+- [Konkrete](https://www.curseforge.com/projects/416797) by Keksuccino
+- [Krypton](https://www.curseforge.com/projects/428912) by tuxed
+- [KubeJS](https://www.curseforge.com/projects/238086) by LatvianModder
+- [LambDynamicLights](https://www.curseforge.com/projects/393442) by LambdAurora
+- [LazyDFU](https://www.curseforge.com/projects/433518) by tuxed
+- [Leaves Be Gone](https://www.curseforge.com/projects/686435) by Fuzs
+- [Let Me Despawn](https://www.curseforge.com/projects/663477) by frikinjay
+- [Library ferret](https://www.curseforge.com/projects/532730) by JTorLeon Studios
+- [Light Overlay](https://www.curseforge.com/projects/325492) by shedaniel
+- [Lithium](https://www.curseforge.com/projects/360438) by JellySquid, 2No2Name
+- [Logical Zoom](https://www.curseforge.com/projects/356461) by LogicalGeekBoy
+- [Lootr](https://www.curseforge.com/projects/615106) by ZestyBlaze, Noobanidus
+- [Low Fire](https://www.curseforge.com/projects/405532) by UltimateBoomer
+- [Lumberaxe](https://www.curseforge.com/projects/880289) by TacoMonkey, Deadeye Dutch
+- [MI Sound Addon](https://www.curseforge.com/projects/910125) by static
+- [Macaw's Paintings](https://www.curseforge.com/projects/438116) by Sketch Peachy and Sketch Macaw
+- [MidnightLib](https://www.curseforge.com/projects/488090) by Motschen, TeamMidnightDust
+- [MixinTrace](https://www.curseforge.com/projects/433447) by comp500
+- [MmmMmmMmmMmm](https://www.curseforge.com/projects/225738) by Mehvahdjukaar, Bonusboni, Gooigipunch, Plantkillable
+- [Mod Menu](https://www.curseforge.com/projects/308702) by Prospector, jackassmc, haykam821, TerraformersMC
+- [Modern Dynamics](https://www.curseforge.com/projects/552758) by Technici4n
+- [Modern Industrialization](https://www.curseforge.com/projects/405388) by Azercoco, Technici4n
+- [ModernFix](https://www.curseforge.com/projects/790626) by embeddedt
+- [Moonlight](https://www.curseforge.com/projects/499980) by MehVahdJukaar
+- [More Geodes](https://www.curseforge.com/projects/437712) by TheDeathlyCow, SalveMundiProd
+- [More Villagers](https://www.curseforge.com/projects/486080) by SameButDifferent, Zero\_DSRS\_VX
+- [Naturalist](https://www.curseforge.com/projects/627986) by Starfish Studios
+- [Nature's Compass](https://www.curseforge.com/projects/252848) by ChaosTheDude
+- [Nether's Delight](https://www.curseforge.com/projects/701831) by JustinPlayzz, StevenPlayzz, Umpaz, SoyTutta
+- [NetherPortalFix](https://www.curseforge.com/projects/547696) by BlayTheNinth
+- [No Chat Reports](https://www.curseforge.com/projects/634062) by Aizistral
+- [NoRecipeBook](https://www.curseforge.com/projects/491407) by Grayray75
+- [NotEnoughAnimations](https://www.curseforge.com/projects/433760) by tr7zw
+- [Oh The Biomes You'll Go](https://www.curseforge.com/projects/391378) by Corgi Taco, AOCAWOL, YaBoiChips, JT122406
+- [Passive Shield](https://www.curseforge.com/projects/447359) by Rick South
+- [Patchouli](https://www.curseforge.com/projects/393236) by Vazkii, williewillus
+- [Peripheralium](https://www.curseforge.com/projects/621088) by SirEdvin
+- [Pineapple Delight](https://www.curseforge.com/projects/687974) by Someoneice
+- [Player Animator](https://www.curseforge.com/projects/658587) by KosmX  
+- [Pling](https://www.curseforge.com/projects/365521) by haykam821
+- [PolaroidCamera](https://www.curseforge.com/projects/620906)
+- [PolyLib](https://www.curseforge.com/projects/576589) by CreeperHost
+- [Polymorph](https://www.curseforge.com/projects/397434) by Illusive Soulworks
+- [PonderJS](https://www.curseforge.com/projects/622888) by kotakotik22, AlmostReliable
+- [Prism](https://www.curseforge.com/projects/665526) by Grend
+- [Promenade](https://www.curseforge.com/projects/399648) by Hugman
+- [Puzzles Lib](https://www.curseforge.com/projects/495476) by Fuzs
+- [Quick Shulker](https://www.curseforge.com/projects/362669) by kyrptonaught
+- [Raised](https://www.curseforge.com/projects/570368) by yurisuika
+- [Reacharound](https://www.curseforge.com/projects/648781) by spAnser
+- [Redirector](https://www.curseforge.com/projects/877289) by TeamPotato
+- [Reese's Sodium Options](https://www.curseforge.com/projects/511319) by FlashyReese
+- [Resourceful Lib](https://www.curseforge.com/projects/570073) by ThatGravyBoat
+- [Resourcefulconfig](https://www.curseforge.com/projects/714059)
+- [Revelationary](https://www.curseforge.com/projects/656526) by DaFuqs
+- [Rhino](https://www.curseforge.com/projects/416294) by LatvianModder, Mozilla
+- [Right Click Harvest](https://www.curseforge.com/projects/452834) by Jamalam
+- [River Redux](https://www.curseforge.com/projects/380548) by SuperCoder79
+- [Rotten Creatures](https://www.curseforge.com/projects/371033) by RPorotos, Team Fusion
+- [Roughly Enough Items](https://www.curseforge.com/projects/310111) by shedaniel
+- [Roughly Enough Loot Tables](https://www.curseforge.com/projects/665532) by GrigLog
+- [Roughly Enough Professions](https://www.curseforge.com/projects/597988) by Mrbysco, ShyNieke
+- [Roughly Enough Trades](https://www.curseforge.com/projects/664356) by GrigLog
+- [Runes](https://www.curseforge.com/projects/775518) by Daedelus
+- [Satin](https://www.curseforge.com/projects/385463) by Pyrofab
+- [Scannable](https://www.curseforge.com/projects/266784) by Sangar, embeddedt
+- [ServerCore](https://www.curseforge.com/projects/550579) by Wesley1808
+- [Shear Cows](https://www.curseforge.com/projects/902680) by static
+- [ShetiPhianCore](https://www.curseforge.com/projects/536603) by ShetiPhian, Art: Fruzstrated
+- [Simple Animated Guns](https://www.curseforge.com/projects/664917) by Elidhan
+- [Simple Discord Rich Presence](https://www.curseforge.com/projects/334853) by Sunekaer
+- [Simple Magnets](https://modrinth.com/mod/YyNQVpOu) by SuperMartijn642
+- [Simple Voice Chat](https://www.curseforge.com/projects/416089) by Max Henkel
+- [Simply Light](https://www.curseforge.com/projects/300331) by Flanks255
+- [Simply Swords](https://www.curseforge.com/projects/659887) by Sweenus, Konsyliarz42 \(Art\)
+- [Smooth Boot](https://www.curseforge.com/projects/415758) by UltimateBoomer, fantahund
+- [Smoothchunk mod](https://www.curseforge.com/projects/582327) by Someaddons
+- [Snow Under Trees](https://www.curseforge.com/projects/693715) by DeadlyMC, bl4ckscor3, mineblock11
+- [Sodium](https://www.curseforge.com/projects/394468) by JellySquid
+- [Sodium Extra](https://www.curseforge.com/projects/447673) by FlashyReese
+- [Spectrum](https://www.curseforge.com/projects/556967) by DaFuqs, Azzyypaaras, Noaaan
+- [Spell Engine](https://www.curseforge.com/projects/807653) by Daedelus
+- [Spell Power Attribute](https://www.curseforge.com/projects/771265) by Daedelus
+- [Spellblades and Such](https://www.curseforge.com/projects/811662) by cleannrooster\!
+- [Spice of Fabric](https://www.curseforge.com/projects/318416) by Siphalor, CoolMineman, halotroop2288
+- [Staff of Traveling](https://www.curseforge.com/projects/603970) by LukeGrahamLandry\#6888, CastCrafter, MelanX, noeppinoeppi
+- [Starlight](https://www.curseforge.com/projects/521783) by Spottedleaf
+- [Structory](https://www.curseforge.com/projects/636540) by Stardust Labs
+- [Structory: Towers](https://www.curseforge.com/projects/783522) by Stardust Labs
+- [SuperMartijn642's Config Lib](https://www.curseforge.com/projects/438332) by SuperMartijn642
+- [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) by SuperMartijn642
+- [SuperMartijn642's Core Lib](https://modrinth.com/mod/rOUBggPv) by SuperMartijn642
+- [Superflat World No Slimes](https://www.curseforge.com/projects/344185) by Rick South
+- [Supplementaries](https://www.curseforge.com/projects/412082) by MehVahdJukaar, Plantkillable
+- [Tech Reborn](https://www.curseforge.com/projects/233564) by Team Reborn, modmuss50, drcrazy
+- [TerraBlender](https://www.curseforge.com/projects/565956) by Adubbz
+- [The Twilight Forest](https://www.curseforge.com/projects/227639) by Benimatic, AtomicBlom, Drullkus, Killer\_Demon, quadraxis, Tamaized, williewillus, Andromander, GizmoTheMoonPig, Jodlodi
+- [Time in a Bottle](https://www.curseforge.com/projects/440243) by alkyaLy
+- [Tip The Scales](https://www.curseforge.com/projects/282313) by Jaredlll08
+- [Toast Manager](https://www.curseforge.com/projects/662724) by Banzetta
+- [Tom's Simple Storage Mod](https://www.curseforge.com/projects/396826) by tom5454
+- [ToolLeveling\+](https://www.curseforge.com/projects/565322) by Buecher\_wurm
+- [ToolStats](https://www.curseforge.com/projects/377109) by Darkhax
+- [Towns and Towers](https://www.curseforge.com/projects/626761) by Kubek, Biban\_Auriu and Cristelknight999
+- [Trade Cycling](https://www.curseforge.com/projects/570431) by Max Henkel
+- [Trinkets](https://www.curseforge.com/projects/341284) by Emi, C4
+- [Trowel](https://www.curseforge.com/projects/868403) by enderCore
+- [Turtlematic](https://www.curseforge.com/projects/618288) by SirEdvin
+- [Universal Bone Meal](https://www.curseforge.com/projects/594013) by Fuzs
+- [Unlimited Peripheral Works](https://www.curseforge.com/projects/621851) by SirEdvin
+- [Vanilla Hammers](https://www.curseforge.com/projects/317756) by Draylar
+- [Very Many Players](https://www.curseforge.com/projects/552542) by ishland
+- [Visual Workbench](https://www.curseforge.com/projects/500273) by Fuzs
+- [Visuality](https://www.curseforge.com/projects/521126) by PinkGoosik
+- [WMITAF](https://www.curseforge.com/projects/547358) by ShaksterNano
+- [WaveyCapes](https://www.curseforge.com/projects/521594) by tr7zw
+- [Waystones](https://www.curseforge.com/projects/500087) by BlayTheNinth
+- [When Dungeons Arise](https://www.curseforge.com/projects/511812) by Aureljz, DiamondTown & Zephyrusj
+- [Wireless Chargers](https://www.curseforge.com/projects/510656) by SuperMartijn642
+- [Wizards](https://www.curseforge.com/projects/734325) by Daedelus
+- [XXLPackets](https://www.curseforge.com/projects/962921) by Tfarecnim \(Original Creator\), Lazul1ne
+- [Xp Obelisk](https://www.curseforge.com/projects/510262) by Meridanus
+- [YDM's Weapon Master](https://www.curseforge.com/projects/608235) by YourDailyModder
+- [YUNG's API](https://www.curseforge.com/projects/421649) by YUNGNICKYOUNG
+- [YUNG's Better Desert Temples](https://www.curseforge.com/projects/631020) by YUNGNICKYOUNG, Tera
+- [YUNG's Better Dungeons](https://www.curseforge.com/projects/525586) by YUNGNICKYOUNG, Acarii
+- [YUNG's Better Mineshafts](https://www.curseforge.com/projects/373591) by YUNGNICKYOUNG
+- [YUNG's Better Nether Fortresses](https://www.curseforge.com/projects/817666) by YUNGNICKYOUNG, Acarii
+- [YUNG's Better Ocean Monuments](https://www.curseforge.com/projects/689252) by YUNGNICKYOUNG, Tera
+- [YUNG's Better Strongholds](https://www.curseforge.com/projects/480684) by YUNGNICKYOUNG, Acarii
+- [YUNG's Better Witch Huts](https://www.curseforge.com/projects/631403) by YUNGNICKYOUNG, Acarii
+- [YUNG's Bridges](https://www.curseforge.com/projects/590988) by YUNGNICKYOUNG
+- [YUNG's Extras](https://www.curseforge.com/projects/590993) by YUNGNICKYOUNG, Acarii
+- [YetAnotherConfigLib](https://www.curseforge.com/projects/667299) by isXander
+- [You're in Grave Danger](https://www.curseforge.com/projects/544912) by b1n\_ry
+- [betterfpsdist mod](https://www.curseforge.com/projects/582640) by Love, Cheese and small house plants
+- [clickadv mod](https://www.curseforge.com/projects/511733) by Love, Cheese and small house plants
+- [cupboard](https://www.curseforge.com/projects/326652) by Someaddon
+- [idwtialsimmoedm](https://www.curseforge.com/projects/629373) by glisco
+- [libIPN](https://www.curseforge.com/projects/679177) by mirinimi/blackd
+- [oωo](https://www.curseforge.com/projects/532610) by glisco, Noaaan, BasiqueEvangelist
+- [spark](https://www.curseforge.com/projects/361579) by Luck
+- [st'ructure tools](https://www.curseforge.com/projects/536984) by ProjectET, ramidzkh, Direwolf20
+- [tech\-enhanced](https://www.curseforge.com/projects/873906) by Thepigcat76

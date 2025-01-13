@@ -124,18 +124,6 @@ ServerEvents.recipes(e => {
     })
     .id(st('express_conveyor_belt'));
 
-    // -- MAGNET -- //
-    e.shaped(kb('magnet'), [
-        'DRR',
-        'R  ',
-        'DRR'
-    ],
-    {
-        D: mc('red_dye'),
-        R: mi('steel_rod_magnetic')
-    })
-    .id(st('magnet'));
-
     // -- ESCAPE ROPE -- //
     e.shaped(kb('escape_rope'), [
         'SS ',

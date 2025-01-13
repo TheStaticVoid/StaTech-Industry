@@ -1,0 +1,23 @@
+{
+  "block_type": "barrel",
+  "shape": {
+    "type": "cube",
+    "min": [0, 0, 0],
+    "max": [1, 1, 1]
+  },
+  "length": 12,
+  "rows": 6,
+  "inventoryOffset": 35,
+  "menuOffset": 8,
+  "width": 232,
+  "height": 222,
+  "texture": "diamond",
+  "properties": {
+    "type": "builder",
+    "material": "metal",
+    "requiresCorrectToolForDrops": true,
+    "explosionResistance": 1200.0,
+    "destroyTime": 50.0,
+    "sound": "metal"
+  }
+}

@@ -1,0 +1,164 @@
+{
+// -- WEAPON ATTRIBUTES CONFIGURATION -- 
+// These values should be THE SAME ON BOTH CLIENT AND SERVER, otherwise damage tooltips will display incorrect on the client 
+// The damage values of weapons can be modified by adjusting their weights 
+// This is not the outputted damage value you see in game, but it affects it directly 
+// Calculation: vanilla tool material damage + base_modifier + positive_modifier - negative_modifier = actual modifier 
+
+// -- Positive Damage Modifiers -- 
+// Example use-case: Adding 3 to a value below will INCREASE the in-game damage of that weapon type by 3 
+// ------------------------------- 
+  "longsword_positive_damage_modifier": 0.0,
+  "twinblade_positive_damage_modifier": 0.0,
+  "rapier_positive_damage_modifier": 0.0,
+  "katana_positive_damage_modifier": 0.0,
+  "sai_positive_damage_modifier": 0.0,
+  "spear_positive_damage_modifier": 0.0,
+  "glaive_positive_damage_modifier": 0.0,
+  "warglaive_positive_damage_modifier": 0.0,
+  "cutlass_positive_damage_modifier": 0.0,
+  "claymore_positive_damage_modifier": 2.0,
+  "greataxe_positive_damage_modifier": 3.0,
+  "greathammer_positive_damage_modifier": 4.0,
+  "chakram_positive_damage_modifier": 0.0,
+  "scythe_positive_damage_modifier": 1.0,
+  "halberd_positive_damage_modifier": 3.0,
+
+// -- Negative Damage Modifiers -- 
+// Example use-case: Adding 3 to a value below will DECREASE the in-game damage of that weapon type by 3 
+// ------------------------------- 
+  "longsword_negative_damage_modifier": 0.0,
+  "twinblade_negative_damage_modifier": 0.0,
+  "rapier_negative_damage_modifier": 1.0,
+  "katana_negative_damage_modifier": 0.0,
+  "sai_negative_damage_modifier": 3.0,
+  "spear_negative_damage_modifier": 0.0,
+  "glaive_negative_damage_modifier": 0.0,
+  "warglaive_negative_damage_modifier": 0.0,
+  "cutlass_negative_damage_modifier": 0.0,
+  "claymore_negative_damage_modifier": 0.0,
+  "greataxe_negative_damage_modifier": 0.0,
+  "greathammer_negative_damage_modifier": 0.0,
+  "chakram_negative_damage_modifier": 1.0,
+  "scythe_negative_damage_modifier": 0.0,
+  "halberd_negative_damage_modifier": 0.0,
+
+// -- Base Damage Modifiers -- 
+// Positive & Negative damage modifiers scale off these base values 
+// --------------------------- 
+  "iron_damage_modifier": 3.0,
+  "gold_damage_modifier": 3.0,
+  "diamond_damage_modifier": 3.0,
+  "netherite_damage_modifier": 3.0,
+  "runic_damage_modifier": 3.0,
+  "adamantite_damage_modifier": 3.0,
+  "aquarium_damage_modifier": 3.0,
+  "banglum_damage_modifier": 3.0,
+  "carmot_damage_modifier": 3.0,
+  "kyber_damage_modifier": 3.0,
+  "mythril_damage_modifier": 3.0,
+  "orichalcum_damage_modifier": 3.0,
+  "durasteel_damage_modifier": 3.0,
+  "osmium_damage_modifier": 3.0,
+  "prometheum_damage_modifier": 3.0,
+  "quadrillum_damage_modifier": 3.0,
+  "runite_damage_modifier": 3.0,
+  "star_platinum_damage_modifier": 3.0,
+  "bronze_damage_modifier": 3.0,
+  "copper_damage_modifier": 3.0,
+  "steel_damage_modifier": 3.0,
+  "palladium_damage_modifier": 3.0,
+  "stormyx_damage_modifier": 3.0,
+  "celestium_damage_modifier": 3.0,
+  "metallurgium_damage_modifier": 3.0,
+  "gobber_damage_modifier": 1.0,
+  "gobber_nether_damage_modifier": 3.0,
+  "gobber_end_damage_modifier": 6.0,
+
+// -- Attack Speed Modifiers -- 
+// Recommended range: -1.0 to -3.7, with -1.0 being fast and -3.7 being slow 
+// ---------------------------- 
+  "longsword_attackspeed": -2.4,
+  "twinblade_attackspeed": -2.0,
+  "rapier_attackspeed": -1.8,
+  "katana_attackspeed": -2.0,
+  "sai_attackspeed": -1.5,
+  "spear_attackspeed": -2.7,
+  "glaive_attackspeed": -2.6,
+  "warglaive_attackspeed": -2.2,
+  "cutlass_attackspeed": -2.0,
+  "claymore_attackspeed": -2.8,
+  "greataxe_attackspeed": -3.1,
+  "greathammer_attackspeed": -3.2,
+  "chakram_attackspeed": -3.0,
+  "scythe_attackspeed": -2.7,
+  "halberd_attackspeed": -2.8,
+
+
+// -- UNIQUE ATTRIBUTES CONFIGURATION -- 
+// Uniques scale a little bit differently and only require one modifier 
+// This is not the outputted damage value you see in game, but it affects it directly 
+// Calculation: Vanilla netherite tool damage + damage_modifier = actual modifier 
+
+// -- Damage Modifiers -- 
+// Example use-case: Adding 3 to a value below will INCREASE the in-game damage of that weapon by 3 
+// ---------------------- 
+  "brimstone_damage_modifier": 6.0,
+  "thewatcher_damage_modifier": 6.0,
+  "stormsedge_damage_modifier": 3.0,
+  "stormbringer_damage_modifier": 3.0,
+  "swordonastick_damage_modifier": 5.0,
+  "bramblethorn_damage_modifier": 6.0,
+  "watchingwarglaive_damage_modifier": 3.0,
+  "longswordofplague_damage_modifier": 3.0,
+  "emberblade_damage_modifier": 3.0,
+  "hearthflame_damage_modifier": 8.0,
+  "soulkeeper_damage_modifier": 8.0,
+  "twistedblade_damage_modifier": 4.0,
+  "soulstealer_damage_modifier": 0.0,
+  "soulrender_damage_modifier": 4.0,
+  "mjolnir_damage_modifier": 3.0,
+  "thedispatcher_damage_modifier": 4.0,
+  "soulpyre_damage_modifier": 7.0,
+  "frostfall_damage_modifier": 5.0,
+  "moltenedge_damage_modifier": 4.0,
+  "livyatan_damage_modifier": 4.0,
+  "icewhisper_damage_modifier": 7.0,
+  "arcanethyst_damage_modifier": 7.0,
+  "thunderbrand_damage_modifier": 7.0,
+  "lichblade_damage_modifier": 7.0,
+  "shadowsting_damage_modifier": -2.0,
+  "sunfire_damage_modifier": 3.0,
+  "harbinger_damage_modifier": 3.0,
+
+// -- Attack Speed Modifiers -- 
+// Recommended range: -1.0 to -3.7, with -1.0 being fast and -3.7 being slow 
+// ---------------------------- 
+  "brimstone_attackspeed": -2.8,
+  "thewatcher_attackspeed": -2.8,
+  "stormsedge_attackspeed": -2.0,
+  "stormbringer_attackspeed": -2.4,
+  "swordonastick_attackspeed": -2.6,
+  "bramblethorn_attackspeed": -1.8,
+  "watchingwarglaive_attackspeed": -2.2,
+  "longswordofplague_attackspeed": -2.4,
+  "emberblade_attackspeed": -2.4,
+  "hearthflame_attackspeed": -3.2,
+  "soulkeeper_attackspeed": -2.9,
+  "twistedblade_attackspeed": -2.6,
+  "soulstealer_attackspeed": -1.5,
+  "soulrender_attackspeed": -2.4,
+  "mjolnir_attackspeed": -3.0,
+  "thedispatcher_attackspeed": -2.0,
+  "soulpyre_attackspeed": -3.0,
+  "frostfall_attackspeed": -2.5,
+  "moltenedge_attackspeed": -2.1,
+  "livyatan_attackspeed": -2.1,
+  "icewhisper_attackspeed": -2.7,
+  "arcanethyst_attackspeed": -2.7,
+  "thunderbrand_attackspeed": -2.7,
+  "lichblade_attackspeed": -3.1,
+  "shadowsting_attackspeed": -1.7,
+  "sunfire_attackspeed": -2.4,
+  "harbinger_attackspeed": -2.4
+}

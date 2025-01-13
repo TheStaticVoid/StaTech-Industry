@@ -4,9 +4,15 @@
 // -----------------------------------------
 
 ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let st = (id) => `statech:byg/${id}`;
+    let bg = (id) => `byg:${id}`;
+    let mc = (id) => `minecraft:${id}`;
     // There was a weird recipe that had no input and had brown dye as an output
     // Might have been a mistagged item
-    e.remove({id: 'byg:brown_dye'})
+    e.remove({id: bg('brown_dye')});
+
+    e.shapeless(mc('dirt'), [ bg('lush_dirt') ]).id(st('dirt_from_lush_dirt'));
 });
 
 ServerEvents.tags('item', e => {

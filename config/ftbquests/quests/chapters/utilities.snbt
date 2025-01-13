@@ -17,7 +17,7 @@
 		x: 11.5d
 		y: 4.0d
 	}]
-	order_index: 5
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -38,7 +38,7 @@
 			y: 2.5d
 		}
 		{
-			description: ["&aDustrial Decor&f is a decorative mod that aims to add an industrial look to your builds. You can view everything you can make with this mod by searching &e@dustrialdecor&f in &dREI&f."]
+			description: ["&aDustrial Decor&f is a decorative mod that aims to add an industrial look to your builds. You can view everything you can make with this mod by searching &e@dustrial_decor&f in &dREI&f."]
 			icon: "dustrial_decor:large_lantern"
 			id: "16FC72D878F9B6FB"
 			rewards: [{
@@ -617,7 +617,7 @@
 		}
 		{
 			dependencies: ["26A75B67D8248BFE"]
-			description: ["When activated, the &9Water Ring&fallows the holder to &abreath underwater indefinitely&f."]
+			description: ["When activated, the &9Water Ring&f allows the holder to &abreath underwater indefinitely&f."]
 			id: "314EA5A456B38508"
 			rewards: [{
 				id: "2FFEC6E73F2CFEA8"

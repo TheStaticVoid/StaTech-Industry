@@ -1,15 +1,15 @@
 name = "StaTech Industry"
 author = "static"
-version = "1.1.13"
+version = "1.1.14"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "5231cd2d9186e676dd4a0baa613c4d2f29a0cc621a429e935db07bbdc7271230"
+hash = "35a4d7c850cc5a952f901e627a764d7c27b073f4d2d40ff64cbe68e0f00b06f7"
 
 [versions]
-fabric = "0.15.7"
+fabric = "0.16.9"
 minecraft = "1.19.2"
 
 [options]

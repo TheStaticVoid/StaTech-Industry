@@ -1,0 +1,25 @@
+{
+// -- GENERAL CONFIGURATION -- 
+
+// -- Loot Table Weights -- 
+// The chances of loot appearing in chests. 
+// 1 = 100% chance 
+// Values are very sensitive - recommend keeping changes small 
+// Simply Swords loot has a chance to appear in any chest vanilla or modded, except villager chests 
+// ------------------------ 
+
+// Standard Loot: Iron > Gold Weapons. Default: 0.01 
+  "standard_loot_table_weight": 0.01,
+
+// Rare Loot: Diamond Weapons. Default: 0.008 
+  "rare_loot_table_weight": 0.008,
+
+// Runic Loot: Runic Tablets. Default: 0.008 
+  "runic_loot_table_weight": 0.008,
+
+// Unique Loot: Unique Weapons. Default: 0.002 
+  "unique_loot_table_weight": 0.002,
+
+// -- General Options -- 
+  "impact_sound_effect_volume": 0.3
+}

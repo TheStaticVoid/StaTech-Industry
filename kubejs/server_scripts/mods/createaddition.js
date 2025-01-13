@@ -20,6 +20,8 @@ ServerEvents.recipes(e => {
         ca('mixing/biomass_from_plant_foods'),
         ca('mixing/biomass_from_saplings'),
         ca('mixing/biomass_from_sticks'),
+        ca('rolling/electrum_ingot'),
+        ca('rolling/electrum_plate'),
         ca('rolling/iron_ingot'),
         ca('rolling/iron_plate'),
         ca('rolling/gold_ingot'),
@@ -30,18 +32,14 @@ ServerEvents.recipes(e => {
         ca('rolling/copper_plate'),
         ca('rolling/straw'),
         ca('crafting/rolling_mill'),
-        ca('crafting/spool'),
-        ca('crafting/copper_spool'),
-        ca('crafting/gold_spool'),
         ca('compacting/seed_oil'),
         ca('mechanical_crafting/accumulator'),
         ca('mechanical_crafting/tesla_coil'),
-        ca('crafting/connector'),
         ca('crafting/capacitor_1'),
         ca('crafting/capacitor_2'),
         ca('crafting/diamond_grit_sandpaper'),
+        ca('crafting/small_light_connector'),
         ca('crushing/diamond'),
-        ca('crafting/redstone_relay'),
         ca('pressing/zinc_ingot')
     ];
     REMOVED_RECIPES.forEach(id => e.remove({id : id}));
@@ -49,6 +47,10 @@ ServerEvents.recipes(e => {
     // -- DIAMOND GRIT SANDPAPER -- //
     e.shapeless(ca('diamond_grit_sandpaper'), [ mc('paper'), mi('diamond_dust') ])
         .id(st('diamond_grit_sandpaper'));
+
+    // -- SMALL LIGHT CONNECTOR -- //
+    e.shapeless(ca('small_light_connector'), [ ca('connector'), mi('copper_wire'), mc('glass') ])
+        .id(st('small_light_connector'));
 
     // -- BARBED WIRE -- //
     e.shaped(ca('barbed_wire'), [
@@ -61,6 +63,19 @@ ServerEvents.recipes(e => {
         I: mi('iron_rod')
     })
     .id(st('barbed_wire'));
+
+    // -- FESTIVE SPOOL -- //
+    e.shaped(ca('festive_spool'), [
+        ' W ',
+        'LIL',
+        ' W '
+    ],
+    {
+        W: mi('copper_wire'),
+        I: ca('spool'),
+        L: {tag: "snowyspirit:glow_lights"}
+    })
+    .id(st('festive_spool'));
 
     // -- DIAMOND DUST CRUSHING -- //
     e.custom({
@@ -138,4 +153,18 @@ ServerEvents.tags('fluid', e => {
         mi('biodiesel'),
     ];
     BURNABLE_FUEL_20000.forEach(id => { e.add(ca('burnable_fuel_20000'), id) });
+});
+
+ServerEvents.tags('item', e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    let ca = (id) => `createaddition:${id}`;
+    let c = (id) => `c:${id}`;
+    
+    e.add(c('wires/copper'), mi('copper_wire')),
+    e.add(c('copper_rods'), mi('copper_rod')),
+    e.add(c('wires/gold'), mi('gold_wire')),
+    e.add(c('electrum_wires'), mi('electrum_wire'))
+
 });

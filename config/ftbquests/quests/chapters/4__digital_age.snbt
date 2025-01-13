@@ -1006,8 +1006,8 @@
 				item: "ae2:pattern_access_terminal"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["19EAC8C0A6889843"]
@@ -1046,8 +1046,8 @@
 				type: "item"
 			}]
 			title: "Patterns"
-			x: 5.5d
-			y: 5.5d
+			x: 6.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -1087,8 +1087,8 @@
 				item: "ae2:molecular_assembler"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 8.0d
+			x: 2.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -1119,8 +1119,8 @@
 				item: "ae2:pattern_provider"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 8.0d
+			x: 3.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -1205,8 +1205,8 @@
 				}
 			]
 			title: "Crafting CPU"
-			x: 2.0d
-			y: 9.0d
+			x: 2.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["67071C306C1C3A42"]
@@ -1412,7 +1412,7 @@
 			description: [
 				"The &bLarge Steam Turbine&r will accept both regular steam ( 1 mB = 1 EU ) and &7HP Steam&r ( 1 mB = 8 EU ) into EU, and will generate up to &e16384 EU/t&r."
 				""
-				"However it will not give you back &9regular nor HP Water&r. If you'd like to recycle the &9HP Water&r, you will need to create the next multiblock, the &eHeat Exchanger&r."
+				"However it will not give you back &9regular nor HP Water&r. If you'd like to recycle the &9HP Water&r, you will need to use the &eHeat Exchanger&r."
 				""
 				"If you need help building the multiblock you can view the &bPonder&r scene by holding 'W' on the &bLarge Steam Turbine&r block in your inventory or by holding your wrench out with the &bLarge Steam Turbine&r placed."
 			]
@@ -2162,8 +2162,8 @@
 				item: "ae2:pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.5d
+			x: 5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2E7F7728159E3823"]
@@ -2253,7 +2253,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: 8.0d
 		}
 		{
@@ -2289,7 +2289,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 8.0d
 		}
 		{
@@ -2299,7 +2299,7 @@
 				""
 				"4096 bytes of storage can hold 508 stacks of a single item, or 260 stacks while holding 63 different items."
 				""
-				"The &b4k Storage Cell&r uses 32 bytes of data to store a single type. When placed inside a drive or chest it will consume an additional 1.0 AE/t of power for the connection."
+				"The &b4k Storage Cell&r uses 32 bytes of data to store a single type. When placed inside a drive or chest, it will consume an additional 1.0 AE/t of power for the connection."
 				""
 				"You can remove the &b4k ME Storage Component&r by fully emptying the storage cell, and sneak right-clicking it in your hand."
 			]
@@ -2333,7 +2333,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: 9.0d
 		}
 		{
@@ -2369,7 +2369,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 9.0d
 		}
 		{
@@ -2379,7 +2379,7 @@
 				""
 				"16,384 bytes of storage can hold 2032 Stacks of a single item, or 1040 Stacks, while holding 63 Different items."
 				""
-				"The &b16k Storage Cell&r uses 128 bytes of data to store a single type. When placed inside a drive or chest will consume 1.5 AE/t."
+				"The &b16k Storage Cell&r uses 128 bytes of data to store a single type. When placed inside a drive or chest, it will consume 1.5 AE/t."
 				""
 				"You can remove the &a16k ME Storage Component&r by fully emptying the storage cell, and sneak-right clicking it in your hand."
 			]
@@ -2413,7 +2413,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: 10.0d
 		}
 		{
@@ -2449,7 +2449,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 10.0d
 		}
 		{
@@ -2459,7 +2459,7 @@
 				""
 				"65,536 bytes of storage can hold 8128 Stacks of a single item. or 4160 Stacks,while holding 63 Different items."
 				""
-				"The &b64k Storage Cell&r uses 512 bytes of data to store a single type. When placed inside a drive or chest will consume 2.0 AE/t."
+				"The &b64k Storage Cell&r uses 512 bytes of data to store a single type. When placed inside a drive or chest, it will consume 2.0 AE/t."
 				""
 				"You can remove the &a64k ME Storage Component&r by fully emptying the storage cell, and sneak-right clicking it in your hand."
 			]
@@ -2493,7 +2493,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: 11.0d
 		}
 		{
@@ -2529,7 +2529,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 11.0d
 		}
 		{
@@ -2539,7 +2539,7 @@
 				""
 				"262144 bytes of storage can hold 32512 stacks of a single item, or 16256 stacks while holding 63 different items."
 				""
-				"The &b256k Storage Cell&r uses 1024 bytes of data to store a single type. When placed inside a drive, will consume 2.5 AE/t."
+				"The &b256k Storage Cell&r uses 1024 bytes of data to store a single type. When placed inside a drive, it will consume 2.5 AE/t."
 				""
 				"You can remove the &a256K ME Storage Component&r by fully emptying the storage cell and sneak clicking it in your hand."
 			]
@@ -2573,7 +2573,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: 12.0d
 		}
 		{
@@ -2609,7 +2609,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 12.0d
 		}
 		{
@@ -2683,8 +2683,8 @@
 				item: "ae2:condenser"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 9.0d
+			x: 3.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["529FBE21C8B21DC1"]
@@ -5018,7 +5018,7 @@
 				type: "checkmark"
 			}]
 			title: "Autocrafting"
-			x: 2.5d
+			x: 3.0d
 			y: 5.0d
 		}
 		{
@@ -5721,6 +5721,221 @@
 			]
 			x: 4.25d
 			y: -4.0d
+		}
+		{
+			dependencies: ["2D9D7FFDA18C95B5"]
+			description: [
+				"Lowest tier &bDISK&r, which contains &d1000 bytes&r of storage."
+				""
+				"&d1000 bytes&r of storage can hold &a1000 items&r without type limit."
+				""
+				"When placed inside a drive or chest, it will add an additional 0.5 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a1k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. Being made of Netherite, it is also &6Fireproof&r."
+			]
+			id: "7769CB237A146531"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "355A5C9611D01D63"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "25A6947E0FD38734"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "13BA4B3C96FFD55F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6592AFA79E838625"
+				item: {
+					Count: 1b
+					id: "ae2things:disk_drive_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7769CB237A146531"]
+			description: [
+				"A low tier &bDISK&r, which contains &d4000 bytes&r of storage."
+				""
+				"&d4000 bytes&r of storage can hold &a4000 items&r without type limit."
+				""
+				"When placed inside a drive or chest, it will add an additional 1.0 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a4k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. Being made of Netherite, it is also &6Fireproof&r."
+			]
+			id: "082E0DAFFBB47676"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "77580EF5E1074603"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "44EF6C4C669FC7AA"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "2B4A86BFBD8D434D"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "231ED73520005F08"
+				item: {
+					Count: 1b
+					id: "ae2things:disk_drive_4k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["082E0DAFFBB47676"]
+			description: [
+				"Middle tier &bDISK&r, which contains &d16000 bytes&r of storage."
+				""
+				"&d16000 bytes&r of storage can hold &a16000 items&r without type limit."
+				""
+				"When placed inside a drive or chest, it will add an additional 1.5 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a16k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. Being made of Netherite, it is also &6Fireproof&r."
+			]
+			id: "0CA5E09709661958"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7505E661B85A2D2A"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "07C79D2310ABA8AB"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "54E2EBB1001B2F2C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6B46828D3ABD4482"
+				item: {
+					Count: 1b
+					id: "ae2things:disk_drive_16k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0CA5E09709661958"]
+			description: [
+				"High tier &bDISK&r, which contains &d64000 bytes&r of storage."
+				""
+				"&d64000 bytes&r of storage can hold &a64000 items&r without type limit."
+				""
+				"When placed inside a drive or chest, it will add an additional 2.0 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a64k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. Being made of Netherite, it is also &6Fireproof&r."
+			]
+			id: "369D85E54351A70B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A2B7D90A19DBFE4"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "4103AFD70D9B5D1A"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "69692DCFC3265E74"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "1B1E96915C7450C8"
+				item: {
+					Count: 1b
+					id: "ae2things:disk_drive_64k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["369D85E54351A70B"]
+			description: [
+				"Highest tier &bDISK&r, which contains &d256000 bytes&r of storage."
+				""
+				"&d256000 bytes&r of storage can hold &a256000 items&r without type limit."
+				""
+				"When placed inside a drive or chest, it will add an additional 2.5 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a256k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. Being made of Netherite, it is also &6Fireproof&r."
+			]
+			id: "30E1E763742EDAA4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "41DA9B4B4893735F"
+					table_id: 4654133894100259948L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "60DE441F992945FC"
+					item: "kubejs:coin_legendary"
+					type: "item"
+				}
+				{
+					id: "546FF01DDF62CDC9"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "485D3D6D9A231F38"
+				item: {
+					Count: 1b
+					id: "ae2things:disk_drive_256k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.0d
 		}
 	]
 	subtitle: ["High tech!"]

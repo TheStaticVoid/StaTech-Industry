@@ -1,0 +1,17 @@
+{
+	/* Adjust the default way RGB16 handles dyes 
+	   RYB = blending is used to mix the colors 
+	    > Like mixing paint, the dye will be added to the existing color 
+	    > Sneak-Click to set to dye color 
+	    
+	   RGB = direct value manipulation 
+	    > Click to increase, Sneak-Click to decrease 
+	    
+	   RYB is easier to use but RGB is more precise
+	*/
+	"color_blend_mode": "RYB",
+	/* Choose the way items with modes/selections change 
+	   BOTH (default), KEYBINDING (presets: PgUp/PgDown), SNEAK_SCROLL
+	*/
+	"tool_mode_change": "BOTH"
+}
