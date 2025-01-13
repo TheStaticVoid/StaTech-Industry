@@ -1,5 +1,5 @@
 # StaTech Industry 1.1.14 Changelog:
-This is primarily a maintenance patch for mod updates and to add some new stuff. Biggest portion of this version is the Spectrum update, which includes an all new dimension and gadgets to play with. 
+This is primarily a maintenance patch for mod updates and to add some new stuff, primarily the Spectrum update that came out awhile ago now. This includes new quests to guide you through progression of the mod. Alongside that, there have been multiple community fixes for typos / mispellings in quests and several QoL updates to the pack. Changes to progression of the pack are not planned ATM for the 1.1 branch, and more details for 2.0 can be found in the Discord.
 
 ## Mods added:
 - [AE2Things](https://www.curseforge.com/minecraft/mc-mods/ae2-things-fabric-1-19-2) - Backported to fabric 1.19.2 by DmitryProskurin
