@@ -8,6 +8,7 @@ This is primarily a maintenance patch for mod updates and to add some new stuff.
 - [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons-fabric)
 - [Polymorphic Energistics](https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics) - Polymorph support for AE2
 - [Raised](https://www.curseforge.com/minecraft/mc-mods/raised) - removed awhile back, works again now
+- [Simple Magnets](https://www.curseforge.com/minecraft/mc-mods/simple-magnets) - More versatile magnet mod
 - [XXL Packets](https://www.curseforge.com/minecraft/mc-mods/xxl-packets) - Fixes some mod issues
 
 ## Mods removed:
@@ -75,3 +76,4 @@ This is primarily a maintenance patch for mod updates and to add some new stuff.
 - [Added more details about overclocking to LV quest](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
 - [Added centrifuge recipe for lignite coal dust](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
 - [Reverted Bottle of Failing back to vanilla recipe](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
+- Removed Kibe Magnet recipe and replaced it with Simple Magnets

@@ -2843,10 +2843,8 @@
 				id: "74043B260FABE0CA"
 				item: {
 					Count: 1b
-					id: "kibe:magnet"
-					tag: {
-						enabled: 1b
-					}
+					id: "simplemagnets:basicmagnet"
+					tag: { }
 				}
 				type: "item"
 			}]
@@ -4802,6 +4800,41 @@
 			}]
 			x: 14.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["72090D36C27DC4AF"]
+			description: ["The &aAdvanced Magnet&r is an upgrade to the basic &bMagnet&r that allows &dgreater range&r and &3filtering&r"]
+			id: "55A975683AF62D1A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "445D12FD9EF0B7B4"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "3F212E9DDF78563A"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "52E99AD513288634"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4530E923BA050627"
+				item: {
+					Count: 1b
+					id: "simplemagnets:advancedmagnet"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.5d
 		}
 	]
 	subtitle: ["The Basis of Industry"]

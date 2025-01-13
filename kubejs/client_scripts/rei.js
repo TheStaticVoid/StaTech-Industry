@@ -111,6 +111,7 @@ REIEvents.hide('item', e => {
         kb('xp_shower'),
         kb('xp_drain'),
         kb('angel_ring'),
+        kb('magnet'),
         kj('statech_logo'),
         kj('voice_chat'),
         md('wrench'),
