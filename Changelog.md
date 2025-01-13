@@ -71,6 +71,9 @@ This is primarily a maintenance patch for mod updates and to add some new stuff,
 - [Fixed error in food quest progression](https://github.com/TheStaticVoid/StaTech-Industry/pull/524) - by DmitryProskurin
 - [Fixed Annealed Copper Hot Ingot quest stating to use an ingot rather than dust](https://github.com/TheStaticVoid/StaTech-Industry/pull/524) - by DmitryProskurin
 - [Changed Large Steam Furnace to use Bronze Furnace to craft](https://github.com/TheStaticVoid/StaTech-Industry/pull/524) - by DmitryProskurin
+- [Add chisel to replicator blacklist](https://github.com/TheStaticVoid/StaTech-Industry/pull/495) - by GW-Dev
+- [Adjust name of PTFE casings](https://github.com/TheStaticVoid/StaTech-Industry/pull/495) - by GW-Dev
+- [Start of Spectrum update questline](https://github.com/TheStaticVoid/StaTech-Industry/pull/495) - by GW-Dev
 - [Added recipe for crafting Ad Astra ores with StaTech coins](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
 - [Added conversion recipe for BYG lush dirt and vanilla dirt](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
 - [Added more details about overclocking to LV quest](https://github.com/TheStaticVoid/StaTech-Industry/issues/523)
