@@ -824,3 +824,14 @@
 		# Default: 4
 		# Range: 1 ~ 64
 		maxTransferStackSize = 4
+
+	#Advanced Jukebox Upgrade Settings
+	[server.advancedJukeboxUpgrade]
+		#Number of slots for discs in jukebox upgrade
+		# Default: 12
+		# Range: 1 ~ 16
+		numberOfSlots = 12
+		#Number of lots displayed in a row
+		# Default: 4
+		# Range: 1 ~ 6
+		slotsInRow = 4

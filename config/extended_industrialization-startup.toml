@@ -1,44 +1,68 @@
-#The range for the local wireless charging station machine
-# Default: 32
-# Range: > 0
-local_wireless_charging_station_range = 32
 #The maximum amount of connections a machine chainer can have
+#Default: 64
 # Default: 64
 # Range: 1 ~ 128
 machine_chainer_max_connections = 64
 #Whether upgrades should be allowed in the Processing Array
+#Default: true
 allow_upgrades_in_processing_array = true
 #The maximum amount of random ticks the farmer can do on a crop block in a single use of fertilizer
+#Default: 80
 # Default: 80
 # Range: 1 ~ 1000
 farmer_fertilizer_max_random_ticks = 80
+#The range for the tesla coil to transmit energy within
+#Default: 32
+# Default: 32
+# Range: > 1
+tesla_coil_range = 32
 
 [batching_machines]
 	#The maximum batch size to use for the Large Steam Macerator
+	#Default: 8
 	# Default: 8
 	# Range: > 1
 	large_steam_macerator_size = 8
 	#The multiplier to use for the EU cost of the Large Steam Macerator
+	#Default: 0.75
 	# Default: 0.75
 	# Range: 0.1 ~ 1.7976931348623157E308
 	large_steam_macerator_eu = 0.75
 	#The maximum batch size to use for the Large Steam Furnace
+	#Default: 8
 	# Default: 8
 	# Range: > 1
 	large_steam_furnace_size = 8
 	#The multiplier to use for the EU cost of the Large Steam Furnace
+	#Default: 0.75
 	# Default: 0.75
 	# Range: 0.1 ~ 1.7976931348623157E308
 	large_steam_furnace_eu = 0.75
 	#The maximum batch size to use for the Large Electric Macerator
+	#Default: 16
 	# Default: 16
 	# Range: > 1
 	large_electric_macerator_size = 16
 	#The multiplier to use for the EU cost of the Large Electric Macerator
+	#Default: 0.75
 	# Default: 0.75
 	# Range: 0.1 ~ 1.7976931348623157E308
 	large_electric_macerator_eu = 0.75
 	#The multiplier to use for the EU cost of the Processing Array
+	#Default: 1.0
 	# Default: 1.0
 	# Range: 0.1 ~ 1.7976931348623157E308
 	processing_array_eu = 1.0
+
+[lethal_tesla_coil]
+	#The range for the lethal tesla coil to damage entities within
+	#Default: 2
+	# Default: 2
+	# Range: > 1
+	range = 2
+
+	#The amount of damage dealt by the lethal tesla coil for a cable tier
+	#If no value is specified for a cable tier, the cable tier's EU value is divided by 16 to determine the damage dealt
+	#Range: >= 0.1
+	[lethal_tesla_coil.damage]
+		superconductor = 2.147483647E9

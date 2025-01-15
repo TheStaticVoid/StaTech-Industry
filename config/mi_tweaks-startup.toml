@@ -1,31 +1,38 @@
 [tweaks]
 	#Whether water pumps require a water biome (river or ocean) to operate
+	#Default: false
 	require_water_biome_for_pump = false
 	#Whether the voltage of a machine should be displayed. This includes displaying voltage of hatches and hulls
+	#Default: false
 	display_machine_voltage = false
 	#Whether efficiency should be locked when a redstone module locks a machine, rather than just the crafting operation
+	#Default: false
 	lock_efficiency_with_redstone = false
 	#Whether wrenches should render multiblock shapes in world. If false, then only blueprints will be able to render multiblock shapes in world
+	#Default: true
 	wrenches_render_multiblock_shapes = true
 	#Whether the tooltip on the energy bar should display the current energy consumption of the machine
+	#Default: false
 	display_energy_consumption_on_energy_bar = false
 	#The duration in ticks of burn time to apply when holding an item tagged mi_tweaks:very_hot
+	#Default: 100
 	# Default: 100
 	# Range: > 1
 	very_hot_items_burn_time = 100
 
 [flux_transformer]
-	#The MI cable tier to require for inserting EU into the Flux Transformer
-	cable_tier = "hv"
 	#The EU capacity of the Flux Transformer
+	#Default: 204800
 	# Default: 204800
 	# Range: 1 ~ 9223372036854775807
 	capacity = 204800
 	#The max FE extractable at a time for the Flux Transformer
+	#Default: 9223372036854775807
 	# Default: 9223372036854775807
 	# Range: 1 ~ 9223372036854775807
 	max_extract = 9223372036854775807
 	#The multiplier to apply on the EU to get FE
+	#Default: 1.0
 	# Default: 1.0
 	# Range: 0.1 ~ 1.7976931348623157E308
 	conversion_rate = 1.0
@@ -36,13 +43,16 @@
 	#ALWAYS_BASE = The efficiency will always be the base machine eu (or recipe eu if it's greater) + upgrades
 	#ALWAYS_MAX = The efficiency will always be forced to max
 	#USE_VOLTAGE = The speed of machines will be determined by their voltage (WARNING! This is designed specifically for pack creators, and existing recipes may not be accessible by all voltages, most notably EBF recipes. Use at your own risk. It is recommended when using this mode to modify recipes with higher EU costs to use the voltage recipe condition or the ebf coil recipe condition)
+	#Default: DISABLED
 	#Allowed Values: DISABLED, ALWAYS_BASE, ALWAYS_MAX, USE_VOLTAGE
 	hack = "DISABLED"
 	#Whether efficiency bar and multiblock efficiency data should be hidden or not
+	#Default: false
 	hide = false
 
 [machine_blueprints]
 	#Whether the learning system for blueprints is enabled or not. If true, then blueprints can be right-clicked to become learned
+	#Default: false
 	learning = false
 	#The list of machine ids (accepts regex) that require blueprints to place
 	#This is only used if any type of machine blueprint requirement is enabled
@@ -55,11 +65,14 @@
 	#INVENTORY_OR_LEARN = The blueprint must be in the inventory of the player or it needs to have been learned
 	[machine_blueprints.required]
 		#The machine blueprint requirement mode to use for displaying the tooltip warning
+		#Default: DISABLED
 		#Allowed Values: DISABLED, INVENTORY, LEARN, INVENTORY_OR_LEARN
 		tooltip = "DISABLED"
 		#The machine blueprint requirement mode to use for placing machines
+		#Default: DISABLED
 		#Allowed Values: DISABLED, INVENTORY, LEARN, INVENTORY_OR_LEARN
 		placing = "DISABLED"
 		#The machine blueprint requirement mode to use for rendering hatch positions when holding hatches
+		#Default: DISABLED
 		#Allowed Values: DISABLED, INVENTORY, LEARN, INVENTORY_OR_LEARN
 		rendering_hatches = "DISABLED"

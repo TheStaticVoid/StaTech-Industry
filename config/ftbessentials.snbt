@@ -181,6 +181,18 @@
 			warmup: 0
 		}
 		
+		# Blacklists for all teleport commands
+		# Wildcarded dimensions (e.g. 'somemod:*') are supported
+		blacklists: {
+			# Dimensions players aren't permitted to run teleport commands in.
+			# Default: []
+			from: [ ]
+			
+			# Dimensions players aren't permitted to teleport into.
+			# Default: []
+			to: [ ]
+		}
+		
 		# Allows users to set 'homes', which they can then freely teleport to by using /home afterwards
 		home: {
 			# Cooldown between /home commands (in seconds)
@@ -214,6 +226,16 @@
 		# Allows players to teleport to a random point in the Wilderness
 		# Note: This currently does not respect Claimed Chunks yet!
 		rtp: {
+			# Allow player to specify (only) custom max distance in rtp command
+			# You can override this with FTB Ranks using ftbessentials.rtp.custom_max
+			# Default: false
+			allow_custom_max_distance: false
+			
+			# Allow player to specify custom min and max distance in rtp command
+			# You can override this with FTB Ranks using ftbessentials.rtp.custom_min_max
+			# Default: false
+			allow_custom_min_max_distance: false
+			
 			# Cooldown between /rtp commands (in seconds)
 			# You can override this with FTB Ranks using ftbessentials.rtp.cooldown
 			# Default: 600

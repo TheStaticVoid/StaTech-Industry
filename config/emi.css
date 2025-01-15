@@ -9,7 +9,7 @@
 	/**
 	 * Whether cheating in items is enabled.
 	 */
-	cheat-mode: false;
+	cheat-mode: true;
 
 	/**
 	 * How much EMI should use tooltips and popups to show controls and information.
@@ -20,6 +20,11 @@
 	 * Where EMI should pull stacks from to populate the index.
 	 */
 	index-source: creative;
+
+	/**
+	 * Which sidebar should be searched using the search bar.
+	 */
+	search-sidebar: right;
 
 	/**
 	 * Whether normal search queries should include the tooltip.
@@ -56,7 +61,7 @@
 	/**
 	 * Whether to add mod name to tooltips
 	 */
-	append-mod-id: true;
+	append-mod-id: false;
 
 	/**
 	 * Whether to add mod name to item tooltips, in case another mod provides behavior
