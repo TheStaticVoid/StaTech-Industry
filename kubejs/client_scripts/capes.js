@@ -88,6 +88,7 @@ CapeJS.addCapes(e => {
     e.register("199d1444-3884-4570-b7fc-9a8f38b7b918", "pack_completionist");           // PlayingAvecFire (Bailey)
     e.register("27b2034e-dc97-4211-abde-8c286a73d742", "pack_completionist");           // xdg22 (Felin)
     e.register("eb2caf79-3782-460e-ad1a-21791269f8d0", "pack_completionist");            // konto3 (RadziSzop)
+    e.register("8da83201-ec2f-4a20-83ea-5376bd0de477", "pack_completionist");           // Spaghettoo
     e.register("10729fb4-7a23-4bd7-8a5c-6e985506a730", "pack_completionist");           // brek768 (Breck)
     e.register("896a4155-10da-40c0-a5d5-895142436488", "pack_completionist");           // EpicLemon99
     e.register("a85ff96e-cba8-4737-aed9-2250c8e7a54d", "pack_completionist");		    // _d_aniel (dani)
