@@ -70,12 +70,12 @@ CapeJS.addCapes(e => {
     e.register("5c161f82-f554-4a81-a626-9af17d608acf", "pack_completionist");           // Retaelous
     e.register("5dc25de3-6ae7-4b62-a897-9e7d5aac1589", "pack_completionist");           // Troinen
     e.register("9618faf4-9759-4ab6-ba84-efec7fee6fb5", "pack_completionist");           // kpvw (Water Face)
-	e.register("61b883c4-06d2-4e38-a926-e2c03e7fdea6", "pack_completionist");			// sreny1 (sreny)
+    e.register("61b883c4-06d2-4e38-a926-e2c03e7fdea6", "pack_completionist");		// sreny1 (sreny)
     e.register("b53f5bf3-dcd1-4ace-accf-5af46a14199e", "pack_completionist");           // niko (wizzahd)
     e.register("fe61819a-2333-4611-ae43-c599ab46c290", "pack_completionist");           // LordTet
     e.register("b5e220e6-175c-46bb-b9ae-33e4dfa5d3f4", "pack_completionist");           // Mokilicious (moki)
     e.register("2bd6d8e1-bb7d-4ef6-8ca8-78b0a0c582b3", "pack_completionist");           // ZootronPrime (ZootronJustin)
-    e.register("192977a2-f397-458c-84d4-dcec835f7c50", "pack_completionist");		    // Geckuss (Heinous)
+    e.register("192977a2-f397-458c-84d4-dcec835f7c50", "pack_completionist");		// Geckuss (Heinous)
     e.register("b576f774-9e3b-4d9c-977b-be899d902e27", "pack_completionist");           // Gear (greebo)
     e.register("62a6f98e-fbe8-4d1d-8645-53ccdf6d910f", "pack_completionist");           // Hicaro
     e.register("19bc6152-8bae-4fa3-8333-b5b42fdf17b1", "pack_completionist");           // WaffleBagel (WeeabooWill)
@@ -89,4 +89,6 @@ CapeJS.addCapes(e => {
     e.register("27b2034e-dc97-4211-abde-8c286a73d742", "pack_completionist");           // xdg22 (Felin)
     e.register("10729fb4-7a23-4bd7-8a5c-6e985506a730", "pack_completionist");           // brek768 (Breck)
     e.register("896a4155-10da-40c0-a5d5-895142436488", "pack_completionist");           // EpicLemon99
+    e.register("a85ff96e-cba8-4737-aed9-2250c8e7a54d", "pack_completionist");		// _d_aniel (dani)
+    e.register("62efa14d-2610-4d22-9a60-4588d6736efd", "pack_completionist");		// Renchon
 });
