@@ -102,4 +102,5 @@ CapeJS.addCapes(e => {
     e.register("cffabf8a-9b8a-428d-92ef-97157f350922", "pack_completionist");            // ZcoperDK (Zcoper)
     e.register("cbfb459b-6ecd-4133-96c5-bef34d2582d4", "pack_completionist");            // 5pec (Zcoper)
     e.register("3da9a67d-3e3c-4b27-8144-d9de8ca86466", "pack_completionist");            // _bloxy (Zcoper)
+    e.register("f200205f-7d80-4884-9030-47369b3d36fe", "pack_completionist");            // Kerbek_02 (MiDaLew)
 });
