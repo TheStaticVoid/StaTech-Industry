@@ -99,4 +99,7 @@ CapeJS.addCapes(e => {
     e.register("6fa139e9-c2fd-4de0-a8dc-ba6cf76b4c01", "pack_completionist");            // Pairosox (px)
     e.register("362c62b0-ddd3-4c47-b659-96a560b37ef6", "pack_completionist");            // Ln_s1
     e.register("df4a69a7-62e4-4e24-8f1e-e068de769591", "pack_completionist");            // is_daniel (MiDaLew)
+    e.register("cffabf8a-9b8a-428d-92ef-97157f350922", "pack_completionist");            // ZcoperDK (Zcoper)
+    e.register("cbfb459b-6ecd-4133-96c5-bef34d2582d4", "pack_completionist");            // 5pec (Zcoper)
+    e.register("3da9a67d-3e3c-4b27-8144-d9de8ca86466", "pack_completionist");            // _bloxy (Zcoper)
 });
