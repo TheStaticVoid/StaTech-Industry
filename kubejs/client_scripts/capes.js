@@ -94,4 +94,7 @@ CapeJS.addCapes(e => {
     e.register("a85ff96e-cba8-4737-aed9-2250c8e7a54d", "pack_completionist");		    // _d_aniel (dani)
     e.register("62efa14d-2610-4d22-9a60-4588d6736efd", "pack_completionist");		    // Renchon
     e.register("d6330821-e3a3-4a84-a50b-fa886506b162", "pack_completionist");           // PurpleDino_
+    e.register("faff2979-b120-4da6-9fe8-ef8f57325ac6", "pack_completionist");            // Trevboar (Trevor)
+    e.register("b1e21e23-8ed1-4425-9d80-2fae43f6534f", "pack_completionist");            // Atrain_A (Atrain)
+    e.register("6fa139e9-c2fd-4de0-a8dc-ba6cf76b4c01", "pack_completionist");            // Pairosox (px)
 });
