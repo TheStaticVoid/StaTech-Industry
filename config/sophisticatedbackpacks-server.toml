@@ -9,7 +9,7 @@
 	#List of blocks that are not allowed to connect to backpacks - e.g. "refinedstorage:external_storage"
 	noConnectionBlocks = []
 	#Maximum number of upgrades of type per backpack in format of "UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
-	maxUpgradesPerStorage = ["stack_upgrades|3", "jukebox_upgrade|1", "furnace_upgrades|1"]
+	maxUpgradesPerStorage = ["stack_upgrades|3", "jukebox_upgrades|1", "furnace_upgrades|1"]
 	#Turns on/off item fluid handler of backpack in its item form. There are some dupe bugs caused by default fluid handling implementation that manifest when backpack is drained / filled in its item form in another mod's tank and the only way to prevent them is disallowing drain/fill in item form altogether
 	itemFluidHandlerEnabled = true
 	#Determines whether player can right click on backpack that another player is wearing to open it. If off will turn off that capability for everyone and remove related settings from backpack.
@@ -481,6 +481,17 @@
 		# Range: 1 ~ 20
 		maxXpPointsPerMending = 5
 
+	#Advanced Jukebox Upgrade Settings
+	[server.advancedJukeboxUpgrade]
+		#Number of slots for discs in jukebox upgrade
+		# Default: 12
+		# Range: 1 ~ 16
+		numberOfSlots = 12
+		#Number of lots displayed in a row
+		# Default: 4
+		# Range: 1 ~ 6
+		slotsInRow = 4
+
 	#Settings for Spawning Entities with Backpack
 	[server.entityBackpackAdditions]
 		#Chance of an entity spawning with Backpack
@@ -525,14 +536,3 @@
 		slownessLevelsPerAdditionalBackpack = 1.0
 		#Determines if active upgrades will only work in the backpack that's worn by the player. Active upgrades are for example magnet, pickup, cooking, feeding upgrades.
 		onlyWornBackpackTriggersUpgrades = false
-
-	#Advanced Jukebox Upgrade Settings
-	[server.advancedJukeboxUpgrade]
-		#Number of slots for discs in jukebox upgrade
-		# Default: 12
-		# Range: 1 ~ 16
-		numberOfSlots = 12
-		#Number of lots displayed in a row
-		# Default: 4
-		# Range: 1 ~ 6
-		slotsInRow = 4

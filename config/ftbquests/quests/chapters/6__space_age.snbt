@@ -1,0 +1,19 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6__space_age"
+	group: "0C181DF09185DA57"
+	id: "5C132A91B86C59B5"
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		id: "2DE9E34991852EA5"
+		tasks: [{
+			id: "75FE1266A9AA8614"
+			item: { components: { "relics:data": { abilities: { abilities: { dissection: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { distance: { initialValue: 30.18786d }, time: { initialValue: 8.76979d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:space_dissector" }
+			type: "item"
+		}]
+		x: 0.5d
+		y: 0.0d
+	}]
+}

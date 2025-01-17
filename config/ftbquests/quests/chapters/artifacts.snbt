@@ -1,0 +1,19 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "artifacts"
+	group: "109C2F5A861C0A8B"
+	id: "4AF4DF6E4752DD0A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "0D281E274E4426E7"
+		tasks: [{
+			id: "1DFE461822857690"
+			item: { components: { "relics:data": { abilities: { abilities: { vision: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 0.11397d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:night_vision_goggles" }
+			type: "item"
+		}]
+		x: -0.5d
+		y: -1.5d
+	}]
+}

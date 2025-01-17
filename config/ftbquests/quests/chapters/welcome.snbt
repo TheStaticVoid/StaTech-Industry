@@ -1,0 +1,118 @@
+{
+	autofocus_id: "58F52B959643FF34"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: {
+		id: "kubejs:bartman"
+	}
+	id: "1E4B3098D73D738C"
+	images: [{
+		height: 6.0d
+		image: "statech:item/mm_logo"
+		rotation: 0.0d
+		width: 6.0d
+		x: 0.0d
+		y: -6.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "kubejs:statech_logo"
+			}
+			id: "58F52B959643FF34"
+			rewards: [{
+				id: "35C78436F26EE481"
+				type: "xp"
+				xp: 10
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "77C22417E41C2538"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58F52B959643FF34"]
+			icon: {
+				id: "kubejs:coin_rare"
+			}
+			id: "4857CFD9BEC908EA"
+			rewards: [
+				{
+					id: "69B89931733D9A07"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "14CB2C97321AE63F"
+					type: "xp"
+					xp: 5
+				}
+			]
+			tasks: [{
+				id: "39C63B199AA904F9"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58F52B959643FF34"]
+			icon: {
+				id: "minecraft:map"
+			}
+			id: "3938FA0F25E9B17C"
+			rewards: [{
+				id: "34BFDC1F8238AC92"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "50932E4F50C38E5E"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58F52B959643FF34"]
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "0A260F1B9E13182D"
+			tasks: [{
+				id: "40F284523C7D1EE5"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["58F52B959643FF34"]
+			icon: {
+				id: "farmersdelight:hamburger"
+			}
+			id: "372FE691538408B9"
+			rewards: [{
+				id: "2735495C7C3ACD3A"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "5188560E06DDBDE2"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+}

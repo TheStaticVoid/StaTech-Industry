@@ -1,0 +1,19 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3__electrical_age"
+	group: "0C181DF09185DA57"
+	id: "21E9255A61D5A82D"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "2969BA6B88D1EC15"
+		tasks: [{
+			id: "0F55DEF464DB92DD"
+			item: { count: 1, id: "modern_industrialization:analog_circuit" }
+			type: "item"
+		}]
+		x: 1.5d
+		y: 0.5d
+	}]
+}

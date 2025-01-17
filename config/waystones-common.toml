@@ -64,7 +64,7 @@
 	# Range: > -2147483648
 	chunksBetweenWildWaystones = 25
 	#List of dimensions that wild waystones are allowed to spawn in. If left empty, all dimensions except those in wildWaystonesDimensionDenyList are used.
-	wildWaystonesDimensionAllowList = ["minecraft:overworld", "minecraft:the_end", "minecraft:the_nether"]
+	wildWaystonesDimensionAllowList = ["minecraft:the_end", "minecraft:the_nether", "minecraft:overworld"]
 	#List of dimensions that wild waystones are not allowed to spawn in. Only used if wildWaystonesDimensionAllowList is empty.
 	wildWaystonesDimensionDenyList = []
 	#Set to 'PRESET_FIRST' to first use names from the nameGenerationPresets. Set to 'PRESET_ONLY' to use only those custom names. Set to 'MIXED' to have some waystones use custom names, and others random names.
