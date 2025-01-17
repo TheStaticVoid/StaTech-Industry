@@ -103,4 +103,6 @@ CapeJS.addCapes(e => {
     e.register("cbfb459b-6ecd-4133-96c5-bef34d2582d4", "pack_completionist");            // 5pec (Zcoper)
     e.register("3da9a67d-3e3c-4b27-8144-d9de8ca86466", "pack_completionist");            // _bloxy (Zcoper)
     e.register("f200205f-7d80-4884-9030-47369b3d36fe", "pack_completionist");            // Kerbek_02 (MiDaLew)
+    e.register("e55c1334-d194-4eb5-9304-700000ac69e2", "pack_completionist");            // kil_lua (Malcom)
+    e.register("587f9071-4de8-4598-a6ee-7b3c47585904", "pack_completionist");            // kuchc1k (cube)
 });
