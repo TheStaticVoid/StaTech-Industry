@@ -1,5 +1,5 @@
 # StaTech Industry 1.1.15 Changelog:
-This is a follow up patch to the previous one that addresses some issues found with the patch.
+This is a follow up patch to the previous one that addresses some issues found with the patch as well as some QoL updates.
 
 ## Mods added:
 - [AOF: Emissive Ores](https://www.curseforge.com/minecraft/texture-packs/all-of-fabric-emissive-ores) - Emissive ore resource pack by PurpleDino
@@ -22,3 +22,8 @@ This is a follow up patch to the previous one that addresses some issues found w
 
 ## Other changes:
 - Completionist cape list updates
+- [Revert REI cheat mode being enabled by default](https://github.com/TheStaticVoid/StaTech-Industry/commit/0eb5a6b9e6392157b5fe4c9fe7128c952fe76db1)
+- [Blacklisted spectrum colored logs from Supplementaries soap](https://github.com/TheStaticVoid/StaTech-Industry/commit/223f6bb2d92ea9538116e55a7a7726ef76f6fce3)
+- [Added new Spectrum saplings to the Industrial Greenhouse](https://github.com/TheStaticVoid/StaTech-Industry/commit/c035e0fe520c194383f06b8a01131580997e3648)
+- [Added macerator recipes for new Spectrum logs](https://github.com/TheStaticVoid/StaTech-Industry/commit/6511e59365d958d2c2ecbc74e6a25ab0bf795a26)
+- [Added macerator recipes for new Spectrum gem](https://github.com/TheStaticVoid/StaTech-Industry/commit/5170a66430d8ffcef9d36e187e511af20771b5ac)
