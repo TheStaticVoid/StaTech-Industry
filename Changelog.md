@@ -14,9 +14,11 @@ This is a follow up patch to the previous one that addresses some issues found w
 
 ## Mods updated:
 - Fabric loader version 0.16.9 -> 0.16.10
-- [Create Fabric](https://www.curseforge.com/minecraft/mc-mods/create-fabric) - 0.5.1-f-build.1416 -> 0.5.1-i-build.1630
 - [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next) - 1.10.11 -> 1.10.12
 - [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) - 1.1.18 -> 1.1.18a
+
+## Mods downgraded:
+- [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.2.784 -> 9.1.695 - Fixes crash with looking at cutting board recipes
 
 ## Other changes:
 - Completionist cape list updates
