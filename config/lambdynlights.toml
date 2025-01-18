@@ -42,15 +42,25 @@ mode = "fancy"
 				ender_dragon = true
 				enderman = true
 				phantom = true
+				fox = true
+				wolf = true
+				spider = true
+				axolotl = true
+				squid = true
+				zombie_villager = true
+				sheep = true
 
 			[light_sources.settings.entities.naturalist]
 				snake = true
 				butterfly = true
 				robin = true
 				firefly = true
+				duck = true
+				bluejay = true
 
 			[light_sources.settings.entities.ecologics]
 				squirrel = true
+				penguin = true
 
 			[light_sources.settings.entities.goblintraders]
 				goblin_trader = true
@@ -63,4 +73,10 @@ mode = "fancy"
 
 			[light_sources.settings.entities.promenade]
 				lush_creeper = true
+
+			[light_sources.settings.entities.artifacts]
+				mimic = true
+
+			[light_sources.settings.entities.rottencreatures]
+				undead_miner = true
 

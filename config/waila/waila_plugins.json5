@@ -1,0 +1,307 @@
+{
+  waila: {
+    // Show Blocks
+    // Default value: [true]
+    show_blocks: true,
+    // Show Fluids
+    // Try to show fluids
+    // Default value: [false]
+    show_fluids: false,
+    // Show Entities
+    // Default value: [true]
+    show_entities: true,
+    // Show Icon
+    // Default value: [true]
+    show_icon: true,
+    // Icon Position
+    // Default value: [MIDDLE]
+    // Available values: [TOP, MIDDLE, BOTTOM]
+    icon_position: "MIDDLE",
+    // Show Mod Names
+    // Default value: [true]
+    show_mod_name: true,
+    // Show Item Mod Names
+    // Default value: [true]
+    show_item_mod_name: true,
+    // Show Registry Names
+    // Default value: [false]
+    show_registry: false
+  },
+  minecraft: {
+    // Show Block Position
+    // Default value: [false]
+    "block.position": false,
+    // Show Block State
+    // Default value: [false]
+    "block.state": false,
+    // Show Item Entity
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "entity.item_entity": true,
+    // Show Entity Position
+    // Default value: [false]
+    "entity.position": false,
+    // Show Health Points
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "entity.health": true,
+    // Show Absorption Health Points
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "entity.absorption": true,
+    // Show Armor Points
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "entity.armor": true,
+    // Compact Mode
+    // Show health and armor points in one line with a number instead of icon
+    // Default value: [false]
+    "entity.compact": false,
+    // Max Icon per Line
+    // The maximum count the health and armor icon before starting a new line
+    // Default value: [25]
+    "entity.icon_per_line": 25,
+    // Max Health Points to Draw
+    // The maximum health points that the icon will draw before forcing fraction view
+    // Default value: [100]
+    "entity.long_health_max": 100,
+    // Max Armor Points to Draw
+    // The maximum armor points that the icon will draw before forcing numeric view
+    // Default value: [100]
+    "entity.long_armor_max": 100,
+    // Show Pet Owner
+    // Only available for registered Minecraft accounts
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "pet.owner": true,
+    // Hide Unknown Owner
+    // Default value: [false]
+    "pet.hide_unknown_owner": false,
+    // Show Horse Jump Height
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "horse.jump_height": true,
+    // Show Horse Speed
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "horse.speed": true,
+    // Show Panda Genes
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "panda.genes": true,
+    // Show Beehive Position
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "bee.hive_pos": true,
+    // Show Beehive Honey Level
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "bee.hive_honey_level": true,
+    // Show Beehive Occupants
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "bee.hive_occupants": true,
+    // Show Beacon Effects
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "effect.beacon": true,
+    // Show Mob Effects
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "effect.mob": true,
+    // Show Hidden Mob Effects
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [false]
+    "effect.hidden_mob": false,
+    // Show Active Record
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "jukebox.record": true,
+    // Show Grow Up Timer
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "timer.grow": true,
+    // Show Breed Cooldown
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "timer.breed": true,
+    // Hide Invisible Entities
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "override.invisible_entity": true,
+    // Show Trapped Chest as Regular Chest
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "override.trapped_chest": true,
+    // Show Powder Snow as Regular Snow
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "override.powder_snow": true,
+    // Show Infested Block as Regular Block
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "override.infested": true,
+    // Hide Mounted Vehicle
+    // Hide minecart, horse, and other mountable entities when mounted by the player
+    // Default value: [true]
+    "override.vehicle": true,
+    // Show Breaking Progress
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "breaking_progress.enabled": true,
+    // Breaking Progress Color
+    // Default value: [-1426063361]
+    "breaking_progress.color": -1426063361,
+    // Bottom Only
+    // Default value: [false]
+    "breaking_progress.bottom_only": false,
+    // Show Spawner Type
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "spawner.type": true,
+    // Show Crop Progress
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "plant.crop_progress": true,
+    // Show Crop Growability
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "plant.crop_growable": true,
+    // Show Tree Growability
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "plant.tree_growable": true,
+    // Show Lever State
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "redstone.lever": true,
+    // Show Repeater Delay
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "redstone.repeater": true,
+    // Show Comparator Mode
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "redstone.comparator": true,
+    // Show Power Level
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "redstone.level": true,
+    // Show Player Name
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "player_head.name": true,
+    // Show Composter Level
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "level.composter": true,
+    // Show Instrument and Note
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    "note_block.type": true,
+    // Note Display Mode
+    // Default value: [SHARP]
+    // Available values: [SHARP, FLAT]
+    "note_block.note": "SHARP",
+    // Show Integer Level Value
+    // Default value: [false]
+    "note_block.int_value": false,
+    // Enchantment Display Mode
+    // Default value: [CYCLE]
+    // Available values: [SEPARATE, COMBINED, CYCLE, DISABLED]
+    "book.enchantment": "CYCLE",
+    // Enchantment Cycle Timing (Milliseconds)
+    // Default value: [500]
+    "book.enchantment_cycle_timing": 500,
+    // Show Written Book Author and Generation
+    // Default value: [true]
+    "book.written": true
+  },
+  harvest: {
+    // Show Harvestability
+    // This value will get merged with the value from the server
+    // Default value: [true]
+    enabled: true,
+    // Display Mode
+    // Default value: [MODERN]
+    // Available values: [MODERN, CLASSIC, CLASSIC_MINIMAL]
+    display_mode: "MODERN",
+    // Show on Creative
+    // Default value: [false]
+    creative: false
+  },
+  wailax: {
+    // Show Block Energy
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "energy.enabled_block": true,
+    // Show Entity Energy
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "energy.enabled_entity": true,
+    // Energy Blacklist
+    // Custom config, open the following file
+    // extra\energy_blacklist.json5
+    "energy.blacklist": null,
+    // Show Block Fluid Contents
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "fluid.enabled_block": true,
+    // Show Entity Fluid Contents
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "fluid.enabled_entity": true,
+    // Display Unit
+    // Default value: [MILLIBUCKETS]
+    // Available values: [MILLIBUCKETS, DROPLETS]
+    "fluid.display_unit": "MILLIBUCKETS",
+    // Fluid Contents Blacklist
+    // Custom config, open the following file
+    // extra\fluid_blacklist.json5
+    "fluid.blacklist": null,
+    // Show Block Crafting Progress
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "progress.enabled_block": true,
+    // Show Entity Crafting Progress
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "progress.enabled_entity": true,
+    // Crafting Progress Blacklist
+    // Custom config, open the following file
+    // extra\progress_blacklist.json5
+    "progress.blacklist": null,
+    // Show Block Item Contents
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "item.enabled_block": true,
+    // Show Entity Item Contents
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "item.enabled_entity": true,
+    // Sync NBT Data
+    // Require server to have WTHIT installed, if not, will be locked to [false]
+    // Default value: [true]
+    "item.nbt": true,
+    // Display Mode
+    // Grid: show as a grid, like how the inventory works
+    // List: show as a vertical list with inline name
+    // Dynamic: switch from list to grid when max height exceeded
+    // Default value: [DYNAMIC]
+    // Available values: [GRID, LIST, DYNAMIC]
+    "item.display_mode": "DYNAMIC",
+    // Max Height
+    // Default value: [3]
+    "item.max_height": 3,
+    // Sort by Count
+    // Default value: [true]
+    "item.sort_by_count": true,
+    // Grid Mode Scale
+    // Default value: [1.0]
+    "item.grid_mode_scale": 1.0,
+    // Item Contents Blacklist
+    // Custom config, open the following file
+    // extra\item_blacklist.json5
+    "item.blacklist": null
+  }
+}
