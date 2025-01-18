@@ -3,6 +3,7 @@ This is a follow up patch to the previous one that addresses some issues found w
 
 ## Mods added:
 - [AOF: Emissive Ores](https://www.curseforge.com/minecraft/texture-packs/all-of-fabric-emissive-ores) - Emissive ore resource pack by PurpleDino
+- [cAn i MiNe thIS bLOCk?](https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block) - WTHIT addon
 - [Emissive TXF](https://www.curseforge.com/minecraft/texture-packs/emissive-txf) - Emissive ore resource pack for vanilla ores
 - [Iris & Oculus Flywheel Compat](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat) - Removed for being broken awhile back, should be good now
 - [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - Replaces Jade
