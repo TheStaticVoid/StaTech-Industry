@@ -172,134 +172,39 @@ ServerEvents.recipes(e => {
     );
 
     // -- SPECTRUM POWDERS -- //
-    macerator(
-        st('topaz_powder_from_cluster'),
-        2,
-        200,
-        [ { amount: 1, item: sp('topaz_cluster') } ],
-        [ { amount: 16, item: sp('topaz_powder') } ]
-    );
-    macerator(
-        st('topaz_powder_from_block'),
-        2,
-        200,
-        [ { amount: 1, item: sp('topaz_block') } ],
-        [ { amount: 4, item: sp('topaz_powder') } ]
-    );
-    macerator(
-        st('topaz_powder_from_small_bud'),
-        2,
-        200,
-        [ { amount: 1, item: sp('small_topaz_bud') } ],
-        [ { amount: 4, item: sp('topaz_powder') } ]
-    );
-    macerator(
-        st('topaz_powder_from_shard'),
-        2,
-        200,
-        [ { amount: 1, item: sp('topaz_shard') } ],
-        [ { amount: 2, item: sp('topaz_powder') } ]
-    );
-    macerator(
-        st('topaz_powder_from_medium_bud'),
-        2,
-        200,
-        [ { amount: 1, item: sp('medium_topaz_bud') } ],
-        [ { amount: 6, item: sp('topaz_powder') } ]
-    );
-    macerator(
-        st('topaz_powder_from_large_bud'),
-        2,
-        200,
-        [ { amount: 1, item: sp('large_topaz_bud') } ],
-        [ { amount: 8, item: sp('topaz_powder') } ]
-    );
+    let gemRecipes = (gemName) => {
+        const DATA = [
+            { inputName: `${gemName}_shard`, outputAmount: 2 },
+            { inputName: `${gemName}_block`, outputAmount: 4 },
+            { inputName: `small_${gemName}_bud`, outputAmount: 4 },
+            { inputName: `medium_${gemName}_bud`, outputAmount: 6 },
+            { inputName: `large_${gemName}_bud`, outputAmount: 8 },
+            { inputName: `${gemName}_cluster`, outputAmount: 16 }
+        ];
 
-    macerator(
-        st('amethyst_powder_from_cluster'),
-        2,
-        200,
-        [ { amount: 1, item: mc('amethyst_cluster') } ],
-        [ { amount: 16, item: sp('amethyst_powder') } ]
-    );
-    macerator(
-        st('amethyst_powder_from_block'),
-        2,
-        200,
-        [ { amount: 1, item: mc('amethyst_block') } ],
-        [ { amount: 4, item: sp('amethyst_powder') } ]
-    );
-    macerator(
-        st('amethyst_powder_from_small_bud'),
-        2,
-        200,
-        [ { amount: 1, item: mc('small_amethyst_bud') } ],
-        [ { amount: 4, item: sp('amethyst_powder') } ]
-    );
-    macerator(
-        st('amethyst_powder_from_shard'),
-        2,
-        200,
-        [ { amount: 1, item: mc('amethyst_shard') } ],
-        [ { amount: 2, item: sp('amethyst_powder') } ]
-    );
-    macerator(
-        st('amethyst_powder_from_medium_bud'),
-        2,
-        200,
-        [ { amount: 1, item: mc('medium_amethyst_bud') } ],
-        [ { amount: 6, item: sp('amethyst_powder') } ]
-    );
-    macerator(
-        st('amethyst_powder_from_large_bud'),
-        2,
-        200,
-        [ { amount: 1, item: mc('large_amethyst_bud') } ],
-        [ { amount: 8, item: sp('amethyst_powder') } ]
-    );
+        DATA.forEach(data => {
+            let gemID = data.inputName.includes('amethyst') ? mc(data.inputName) : sp(data.inputName);
+            macerator(
+                st(`${gemName}_powder_from_${data.inputName}`),
+                2,
+                200,
+                [ { amount: 1, item: gemID } ],
+                [ { amount: data.outputAmount, item: sp(`${gemName}_powder`) } ]
+            );
+        });
+    }
 
-    macerator(
-        st('citrine_powder_from_cluster'),
-        2,
-        200,
-        [ { amount: 1, item: sp('citrine_cluster') } ],
-        [ { amount: 16, item: sp('citrine_powder') } ]
-    );
-    macerator(
-        st('citrine_powder_from_block'),
-        2,
-        200,
-        [ { amount: 1, item: sp('citrine_block') } ],
-        [ { amount: 4, item: sp('citrine_powder') } ]
-    );
-    macerator(
-        st('citrine_powder_from_small_bud'),
-        2,
-        200,
-        [ { amount: 1, item: sp('small_citrine_bud') } ],
-        [ { amount: 4, item: sp('citrine_powder') } ]
-    );
-    macerator(
-        st('citrine_powder_from_shard'),
-        2,
-        200,
-        [ { amount: 1, item: sp('citrine_shard') } ],
-        [ { amount: 2, item: sp('citrine_powder') } ]
-    );
-    macerator(
-        st('citrine_powder_from_medium_bud'),
-        2,
-        200,
-        [ { amount: 1, item: sp('medium_citrine_bud') } ],
-        [ { amount: 6, item: sp('citrine_powder') } ]
-    );
-    macerator(
-        st('citrine_powder_from_large_bud'),
-        2,
-        200,
-        [ { amount: 1, item: sp('large_citrine_bud') } ],
-        [ { amount: 8, item: sp('citrine_powder') } ]
-    );
+    const GEM_NAMES = [
+        'amethyst',
+        'citrine',
+        'topaz',
+        'moonstone',
+        'onyx'
+    ];
+
+    GEM_NAMES.forEach(name => {
+        gemRecipes(name);
+    });
 
     // -- QUITOXIC POWDER -- //
     macerator(
@@ -309,26 +214,6 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: sp('quitoxic_reeds') } ],
         [ { amount: 2, item: sp('quitoxic_powder') } ]
     );
-
-    // -- ONYX POWDER -- //
-    const ONYX_POWDER_DATA = [
-        { inputName: "onyx_shard", outputAmount: 2 },
-        { inputName: "onyx_block", outputAmount: 4 },
-        { inputName: "small_onyx_bud", outputAmount: 4 },
-        { inputName: "medium_onyx_bud", outputAmount: 6 },
-        { inputName: "large_onyx_bud", outputAmount: 8 },
-        { inputName: "onyx_cluster", outputAmount: 16 }
-    ];
-
-    ONYX_POWDER_DATA.forEach(data => {
-        macerator(
-            st(`onyx_powder_from_${data.inputName}`),
-            2,
-            200,
-            [ { amount: 1, item: sp(data.inputName) } ],
-            [ { amount: data.outputAmount, item: sp('onyx_powder') } ]
-        );
-    });
 
     // -- FIERY POWDER -- //
     macerator(

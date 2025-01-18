@@ -257,143 +257,46 @@ ServerEvents.recipes(e => {
     );
 
     // -- SPECTRUM POWDERS -- //
-    lsm(
-        st('topaz_powder_from_cluster'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('topaz_cluster') } ],
-        [ 
-            { amount: 8 * amountMultiplier, item: sp('topaz_powder') },
-            { amount: 8 * amountMultiplier, item: sp('topaz_powder') }
-        ]
-    );
-    lsm(
-        st('topaz_powder_from_block'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('topaz_block') } ],
-        [ { amount: 4 * amountMultiplier, item: sp('topaz_powder') } ]
-    );
-    lsm(
-        st('topaz_powder_from_small_bud'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('small_topaz_bud') } ],
-        [ { amount: 4 * amountMultiplier, item: sp('topaz_powder') } ]
-    );
-    lsm(
-        st('topaz_powder_from_shard'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('topaz_shard') } ],
-        [ { amount: 2 * amountMultiplier, item: sp('topaz_powder') } ]
-    );
-    lsm(
-        st('topaz_powder_from_medium_bud'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('medium_topaz_bud') } ],
-        [ { amount: 6 * amountMultiplier, item: sp('topaz_powder') } ]
-    );
-    lsm(
-        st('topaz_powder_from_large_bud'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('large_topaz_bud') } ],
-        [ { amount: 8 * amountMultiplier, item: sp('topaz_powder') } ]
-    );
+    let gemRecipes = (gemName) => {
+        const DATA = [
+            { inputName: `${gemName}_shard`, outputAmount: 2 },
+            { inputName: `${gemName}_block`, outputAmount: 4 },
+            { inputName: `small_${gemName}_bud`, outputAmount: 4 },
+            { inputName: `medium_${gemName}_bud`, outputAmount: 6 },
+            { inputName: `large_${gemName}_bud`, outputAmount: 8 },
+            { inputName: `${gemName}_cluster`, outputAmount: 16 }
+        ];
 
-    lsm(
-        st('amethyst_powder_from_cluster'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: mc('amethyst_cluster') } ],
-        [ 
-            { amount: 8 * amountMultiplier, item: sp('amethyst_powder') },
-            { amount: 8 * amountMultiplier, item: sp('amethyst_powder') } 
-        ]
-    );
-    lsm(
-        st('amethyst_powder_from_block'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: mc('amethyst_block') } ],
-        [ { amount: 4 * amountMultiplier, item: sp('amethyst_powder') } ]
-    );
-    lsm(
-        st('amethyst_powder_from_small_bud'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: mc('small_amethyst_bud') } ],
-        [ { amount: 4 * amountMultiplier, item: sp('amethyst_powder') } ]
-    );
-    lsm(
-        st('amethyst_powder_from_shard'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: mc('amethyst_shard') } ],
-        [ { amount: 2 * amountMultiplier, item: sp('amethyst_powder') } ]
-    );
-    lsm(
-        st('amethyst_powder_from_medium_bud'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: mc('medium_amethyst_bud') } ],
-        [ { amount: 6 * amountMultiplier, item: sp('amethyst_powder') } ]
-    );
-    lsm(
-        st('amethyst_powder_from_large_bud'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: mc('large_amethyst_bud') } ],
-        [ { amount: 8 * amountMultiplier, item: sp('amethyst_powder') } ]
-    );
+        DATA.forEach(data => {
+            let gemID = data.inputName.includes('amethyst') ? mc(data.inputName) : sp(data.inputName);
+            // this is hacky as fuck, but idc fix later :)
+            let outputs = data.outputAmount * amountMultiplier == 128 ?
+                [ 
+                    { amount: 64, item: sp(`${gemName}_powder`) },
+                    { amount: 64, item: sp(`${gemName}_powder`) }
+                ] : 
+                [ { amount: data.outputAmount * amountMultiplier, item: sp(`${gemName}_powder`) } ]; 
+            lsm(
+                st(`${gemName}_powder_from_${data.inputName}`),
+                powerConstant,
+                200 * timeMultiplier,
+                [ { amount: 1 * amountMultiplier, item: gemID } ],
+                outputs
+            );
+        });
+    }
+    
+    const GEM_NAMES = [
+        'amethyst',
+        'citrine',
+        'topaz',
+        'moonstone',
+        'onyx'
+    ];
 
-    lsm(
-        st('citrine_powder_from_cluster'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('citrine_cluster') } ],
-        [ 
-            { amount: 8 * amountMultiplier, item: sp('citrine_powder') },
-            { amount: 8 * amountMultiplier, item: sp('citrine_powder') } 
-        ]
-    );
-    lsm(
-        st('citrine_powder_from_block'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('citrine_block') } ],
-        [ { amount: 4 * amountMultiplier, item: sp('citrine_powder') } ]
-    );
-    lsm(
-        st('citrine_powder_from_small_bud'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('small_citrine_bud') } ],
-        [ { amount: 4 * amountMultiplier, item: sp('citrine_powder') } ]
-    );
-    lsm(
-        st('citrine_powder_from_shard'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('citrine_shard') } ],
-        [ { amount: 2 * amountMultiplier, item: sp('citrine_powder') } ]
-    );
-    lsm(
-        st('citrine_powder_from_medium_bud'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('medium_citrine_bud') } ],
-        [ { amount: 6 * amountMultiplier, item: sp('citrine_powder') } ]
-    );
-    lsm(
-        st('citrine_powder_from_large_bud'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('large_citrine_bud') } ],
-        [ { amount: 8 * amountMultiplier, item: sp('citrine_powder') } ]
-    );
+    GEM_NAMES.forEach(name => {
+        gemRecipes(name);
+    });
 
     // -- QUITOXIC POWDER -- //
     lsm(
@@ -402,36 +305,6 @@ ServerEvents.recipes(e => {
         200 * timeMultiplier,
         [ { amount: 1 * amountMultiplier, item: sp('quitoxic_reeds') } ],
         [ { amount: 2 * amountMultiplier, item: sp('quitoxic_powder') } ]
-    );
-
-    // -- ONYX POWDER -- //
-    const ONYX_POWDER_DATA = [
-        { inputName: "onyx_shard", outputAmount: 2 },
-        { inputName: "onyx_block", outputAmount: 4 },
-        { inputName: "small_onyx_bud", outputAmount: 4 },
-        { inputName: "medium_onyx_bud", outputAmount: 6 },
-        { inputName: "large_onyx_bud", outputAmount: 8 }
-    ];
-    
-    ONYX_POWDER_DATA.forEach(data => {
-        lsm(
-            st(`onyx_powder_from_${data.inputName}`),
-            powerConstant,
-            200 * timeMultiplier,
-            [ { amount: 1 * amountMultiplier, item: sp(data.inputName) } ],
-            [ { amount: data.outputAmount * amountMultiplier, item: sp('onyx_powder') } ]
-        );
-    });
-    
-    lsm(
-        st('onyx_powder_from_onyx_cluster'),
-        powerConstant,
-        200 * timeMultiplier,
-        [ { amount: 1 * amountMultiplier, item: sp('onyx_cluster') } ],
-        [ 
-            { amount: 8 * amountMultiplier, item: sp('onyx_powder') },
-            { amount: 8 * amountMultiplier, item: sp('onyx_powder') }
-        ]
     );
 
     // -- FIERY POWDER -- //
