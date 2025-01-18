@@ -3642,7 +3642,7 @@ hash = "01e63558e1c02cd7f3fcf0ea09672cbcd93c99ed2502c5b137f568c2b46baf1c"
 
 [[files]]
 file = "kubejs/client_scripts/capes.js"
-hash = "8665b4fcb3696d575451a870d870d52e6986f5a46782330f627a62cab4229fda"
+hash = "ff86d46c50d1ef7ac9a8e7a78ea58de518d4f79e900d2785b84381d808504cf8"
 
 [[files]]
 file = "kubejs/client_scripts/ore_information.js"
@@ -5109,7 +5109,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "5606edffcf895602516007fd8a8787487c144953a2fd44cb1a073bf91fcc5bbd"
+hash = "15bad3f04de5f794f7c2a66bc632ee2e3d30c0df3507d47320894a18258b9efc"
 metafile = true
 
 [[files]]
@@ -5439,12 +5439,17 @@ metafile = true
 
 [[files]]
 file = "mods/inventory-profiles-next.pw.toml"
-hash = "081dd2d1fb0dd50b3e42c323ced36bd5e037e22a7b53577017384e2f7836cc83"
+hash = "d58d89278cc0d56e84802a0131df753b6e133ef63ac79237c57ad181476c6e2e"
+metafile = true
+
+[[files]]
+file = "mods/iris-flywheel-compat.pw.toml"
+hash = "141a852d34d6bdf1665d2d23f01a8334afad1b2f6991c22eb43b45f1bbae86d2"
 metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "14e50c7cd16b4650d3a491f5f31bc00af6be0c290734db9552852ab1de9bc3bb"
+hash = "402ce406f23b8de2dd79d79ea42a7fa487e9ba6264bd59e9034da4e5cb548d7a"
 metafile = true
 
 [[files]]
@@ -5460,16 +5465,6 @@ metafile = true
 [[files]]
 file = "mods/item-model-fix.pw.toml"
 hash = "edd3aa80022ffad3ca2e5f7e2494ea6b7a21b0a6cc290cfe8d3d7ae49c04a868"
-metafile = true
-
-[[files]]
-file = "mods/jade-addons-fabric.pw.toml"
-hash = "333e6a8d8ead7a05a59f12953e0734525f28b8aa126e064d598a8f46ce7682ea"
-metafile = true
-
-[[files]]
-file = "mods/jade.pw.toml"
-hash = "67a24992a28236ac55b0cf5500b52d2370b006ed6116dcb1eaaad94f1bfcfd12"
 metafile = true
 
 [[files]]
@@ -5989,7 +5984,7 @@ metafile = true
 
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
-hash = "f86782e11003a76f66c876b6834a411a4c1a516eea49e01077bcbfb125dbac74"
+hash = "797dd1bceca7f58fc659bc4d5d5c23abcf21f9c7b49a272a76c80ab1454ed533"
 metafile = true
 
 [[files]]
@@ -6133,6 +6128,11 @@ hash = "2a16400b1c97dd7cbb525f1bacf75a95b9167f91395776dc6597dba76d634d46"
 metafile = true
 
 [[files]]
+file = "mods/wthit.pw.toml"
+hash = "4f5c3c84da9c60d656edded8457a65bab7fc8dbe4223c18027c1275c6628622a"
+metafile = true
+
+[[files]]
 file = "mods/xp-obelisk.pw.toml"
 hash = "1acd710965a497a7f1931e25ae171d3df5eb435d5851698811e2397ccf89d888"
 metafile = true
@@ -6210,6 +6210,16 @@ metafile = true
 [[files]]
 file = "resourcepacks/SmootherFont.zip"
 hash = "982c98a78528ab5d40765f4a86b8909c23ce01019afa910688a940b0f096d0d4"
+
+[[files]]
+file = "resourcepacks/all-of-fabric-emissive-ores.pw.toml"
+hash = "fdba385450e500ab07643d40f7224347f8d0920bfb6837e4f4698f8b4685ec03"
+metafile = true
+
+[[files]]
+file = "resourcepacks/emissive-txf.pw.toml"
+hash = "45025423c32f8924b308a0edfdf02515b65fc63a3bcd0cc765d015574580bc00"
+metafile = true
 
 [[files]]
 file = "resourcepacks/toms-simple-storage-revamped.pw.toml"
