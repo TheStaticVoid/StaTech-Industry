@@ -430,7 +430,10 @@ ServerEvents.recipes(e => {
         'brown',
         'green',
         'red',
-        'black'
+        'black',
+        'white',
+        'gray',
+        'light_gray'
     ];
     COLORS.forEach(color => {
         // -- MACERATE SPECTRUM LOG -- //
