@@ -383,16 +383,16 @@ ServerEvents.recipes(e => {
         );
     });
     
-        // -- SPECTRUM RESOURCE BUDS AND CLUSTERS
+    // -- SPECTRUM RESOURCE BUDS AND CLUSTERS
     const SPECTRUM_ONE = [
         { in: "coal", out: mc("coal") },
-        { in: "iron", out: mc("iron_ingot") },
-        { in: "gold", out: mc("gold_ingot") },
+        { in: "iron", out: mi("iron_dust") },
+        { in: "gold", out: mi("gold_dust") },
         { in: "diamond", out: mc("diamond") },
         { in: "emerald", out: mc("emerald") },
         { in: "redstone", out: mc("redstone") },
         { in: "lapis", out: mc("lapis_lazuli") },
-        { in: "copper", out: mc("copper_ingot") },
+        { in: "copper", out: mi("copper_dust") },
         { in: "quartz", out: mc("quartz") },
         { in: "netherite_scrap", out: mc("netherite_scrap") },
         { in: "echo", out: mc("echo_shard") },
@@ -400,30 +400,32 @@ ServerEvents.recipes(e => {
     ];
 
     const SPECTRUM_TWO = [
-        { in: "certus_quartz", out: ae2("certus_quartz_dust") },
-        { in: "fluix", out: ae2("fluix_dust")}
+        { in: "certus_quartz", out: ae2("certus_quartz_crystal") },
+        { in: "fluix", out: ae2("fluix_crystal")}
     ];
 
-    let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput) => {
+    let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput, operationTick) => {
+        operationTick = typeof operationTick !== "undefined" ? operationTick : 200.0;
         inputOutputNames.forEach(data => {
+            let outName = data.out.slice(data.out.indexOf(':') + 1, data.out.length);
             macerator(
-                st(`${data.in}_from_small_${data.in}_bud`),
+                st(`${outName}_from_small_${data.in}_bud`),
                 2,
-                200,
+                operationTick,
                 [ { amount: 1, item: sp(`small_${data.in}_bud`) } ],
                 [ { amount: numberOfOutput[0], item: data.out } ],
             );
             macerator(
-                st(`${data.in}_from_large_${data.in}_bud`),
+                st(`${outName}_from_large_${data.in}_bud`),
                 2,
-                200,
+                operationTick,
                 [ { amount: 1, item: sp(`large_${data.in}_bud`) } ],
                 [ { amount: numberOfOutput[1], item: data.out } ],
             );
             macerator(
-                st(`${data.in}_from_${data.in}_cluster`),
+                st(`${outName}_from_${data.in}_cluster`),
                 2,
-                200,
+                operationTick,
                 [ { amount: 1, item: sp(`${data.in}_cluster`) } ],
                 [ { amount: numberOfOutput[2], item: data.out } ],
             );
@@ -435,4 +437,11 @@ ServerEvents.recipes(e => {
     recipeForSpBudsAndClusters(SPECTRUM_TWO, [2,2,12]);
     recipeForSpBudsAndClusters([ {in: "bismuth", out: sp("bismuth_crystal") } ], [2,2,5]);
     recipeForSpBudsAndClusters([ {in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);
+    
+    //macerate to dust
+    const MACERATE_TO_DUST = [
+        { in: "certus_quartz", out: ae2("certus_quartz_dust") },
+        { in: "fluix", out: ae2("fluix_dust")}
+    ];
+    recipeForSpBudsAndClusters(MACERATE_TO_DUST, [2,2,12], 300.0);
 });

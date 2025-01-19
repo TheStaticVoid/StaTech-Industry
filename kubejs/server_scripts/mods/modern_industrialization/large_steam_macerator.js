@@ -112,7 +112,7 @@ ServerEvents.recipes(e => {
                 item.get('tag').getAsString().split(':')[1];
     }
     
-        //Multiplie output for lsm. Accept javascript object with fields(minimum): item - item name, output - number of output for common macerator. Return array of objects with multiplied output value.
+    //Multiplie output for lsm. Accept javascript object with fields(minimum): item - item name, output - number of output for common macerator. Return array of objects with multiplied output value.
     let multiplyItemsAcceptObject = (input) => {
         let itemMax = 64;
         let newItemList = [];
@@ -459,13 +459,13 @@ ServerEvents.recipes(e => {
     // -- SPECTRUM RESOURCE BUDS AND CLUSTERS
     const SPECTRUM_ONE = [
         { in: "coal", out: mc("coal") },
-        { in: "iron", out: mc("iron_ingot") },
-        { in: "gold", out: mc("gold_ingot") },
+        { in: "iron", out: mi("iron_dust") },
+        { in: "gold", out: mi("gold_dust") },
         { in: "diamond", out: mc("diamond") },
         { in: "emerald", out: mc("emerald") },
         { in: "redstone", out: mc("redstone") },
         { in: "lapis", out: mc("lapis_lazuli") },
-        { in: "copper", out: mc("copper_ingot") },
+        { in: "copper", out: mi("copper_dust") },
         { in: "quartz", out: mc("quartz") },
         { in: "netherite_scrap", out: mc("netherite_scrap") },
         { in: "echo", out: mc("echo_shard") },
@@ -473,30 +473,32 @@ ServerEvents.recipes(e => {
     ];
     
     const SPECTRUM_TWO = [
-        { in: "certus_quartz", out: ae2("certus_quartz_dust") },
-        { in: "fluix", out: ae2("fluix_dust")}
+        { in: "certus_quartz", out: ae2("certus_quartz_crystal") },
+        { in: "fluix", out: ae2("fluix_crystal") }
     ];
     
-    let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput) => {
+    let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput, operationTick) => {
+        operationTick = typeof operationTick !== "undefined" ? operationTick : 200.0;
         inputOutputNames.forEach(data => {
+            let outName = data.out.slice(data.out.indexOf(':') + 1, data.out.length);
             lsm(
-                st(`${data.in}_from_small_${data.in}_bud`),
+                st(`${outName}_from_small_${data.in}_bud`),
                 powerConstant,
-                200 * timeMultiplier,
+                operationTick * timeMultiplier,
                 [ { amount: 1 * amountMultiplier, item: sp(`small_${data.in}_bud`) } ],
                 multiplyItemsAcceptObject({ amount: numberOfOutput[0], item: data.out }),
             );
             lsm(
-                st(`${data.in}_from_large_${data.in}_bud`),
+                st(`${outName}_from_large_${data.in}_bud`),
                 powerConstant,
-                200 * timeMultiplier,
+                operationTick * timeMultiplier,
                 [ { amount: 1 * amountMultiplier, item: sp(`large_${data.in}_bud`) } ],
                 multiplyItemsAcceptObject({ amount: numberOfOutput[1], item: data.out }),
             );
             lsm(
-                st(`${data.in}_from_${data.in}_cluster`),
+                st(`${outName}_from_${data.in}_cluster`),
                 powerConstant,
-                200 * timeMultiplier,
+                operationTick * timeMultiplier,
                 [ { amount: 1 * amountMultiplier, item: sp(`${data.in}_cluster`) } ],
                 multiplyItemsAcceptObject({ amount: numberOfOutput[2], item: data.out }),
             );
@@ -507,5 +509,12 @@ ServerEvents.recipes(e => {
     recipeForSpBudsAndClusters(SPECTRUM_ONE, [1,1,6]);
     recipeForSpBudsAndClusters(SPECTRUM_TWO, [2,2,12]);
     recipeForSpBudsAndClusters([ { in: "bismuth", out: sp("bismuth_crystal") } ], [2,2,5]);
-    recipeForSpBudsAndClusters([ {in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);
+    recipeForSpBudsAndClusters([ { in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);
+    
+    //macerate to dust
+    const MACERATE_TO_DUST = [
+        { in: "certus_quartz", out: ae2("certus_quartz_dust") },
+        { in: "fluix", out: ae2("fluix_dust")}
+    ];
+    recipeForSpBudsAndClusters(MACERATE_TO_DUST, [2,2,12], 300.0);
 });
