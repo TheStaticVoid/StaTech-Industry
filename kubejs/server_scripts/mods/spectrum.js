@@ -260,3 +260,38 @@ ServerEvents.tags('block', e => {
 
     e.add('c:lapis_ores', sp('blackslag_lapis_ore'))
 });
+
+// Recipe modification
+ServerEvents.recipes(e => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    let sp = (id) => `spectrum:${id}`;
+    let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
+    
+    // -- SPECTRUM BUDS AND CLUSTER ANVIL CRUSHING WITHOUT INGOT OUTPUT
+    const CHANGE_INGOT_TO_DUST = [
+        'copper',
+        'gold',
+        'iron'
+    ];
+    
+    //buds
+    CHANGE_INGOT_TO_DUST.forEach(data => {
+        e.forEachRecipe( { type: sp('anvil_crushing'), input: sp(`small_${data}_bud`), mod: 'spectrum'}, recipe => {
+            var recipeId = sp(`anvil_crushing/crystallarieum_growables/${data}_from_buds`);
+            var recipeJson = JSON.parse(recipe.json);
+            recipeJson.result =  { item: mi(`${data}_dust`), count: 1.0 };
+            e.custom(recipeJson).id(recipeId);
+        });
+    });
+    
+    //clusters
+    CHANGE_INGOT_TO_DUST.forEach(data => {
+        e.forEachRecipe( { type: sp('anvil_crushing'), input: sp(`${data}_cluster`), mod: 'spectrum'}, recipe => {
+            var recipeId = sp(`anvil_crushing/crystallarieum_growables/${data}_from_cluster`);
+            var recipeJson = JSON.parse(recipe.json);
+            recipeJson.result =  { item: mi(`${data}_dust`), count: 6.0 };
+            e.custom(recipeJson).id(recipeId);
+        });
+    });
+});
