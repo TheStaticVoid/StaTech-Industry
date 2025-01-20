@@ -1,5 +1,5 @@
 # StaTech Industry 1.1.15 Changelog:
-This is a follow up patch to the previous one that addresses some issues found with the patch as well as some QoL updates.
+This is a follow up patch to the previous one that addresses some issues found with the patch as well as some QoL updates. If you're using an existing instance, you will have to enable the emissive texture packs manually. New installs should have them enabled by default.
 
 ## Mods added:
 - [AOF: Emissive Ores](https://www.curseforge.com/minecraft/texture-packs/all-of-fabric-emissive-ores) - Emissive ore resource pack by PurpleDino
@@ -27,4 +27,6 @@ This is a follow up patch to the previous one that addresses some issues found w
 - [Added new Spectrum saplings to the Industrial Greenhouse](https://github.com/TheStaticVoid/StaTech-Industry/commit/c035e0fe520c194383f06b8a01131580997e3648)
 - [Added macerator recipes for new Spectrum logs](https://github.com/TheStaticVoid/StaTech-Industry/commit/6511e59365d958d2c2ecbc74e6a25ab0bf795a26)
 - [Added macerator recipes for new Spectrum gem](https://github.com/TheStaticVoid/StaTech-Industry/commit/5170a66430d8ffcef9d36e187e511af20771b5ac)
+- [Added extra information for the moonstone unlock](https://github.com/TheStaticVoid/StaTech-Industry/pull/529/commits/532f5e9030643d723e681cb56b7ed526c2666ae2)
 - [Fixed double "Added by StaTech Industry" tooltips](https://github.com/TheStaticVoid/StaTech-Industry/pull/530) - by DmitryProskurin
+- [Added macerator recipes for new Spectrum bud blocks](https://github.com/TheStaticVoid/StaTech-Industry/pull/531) - by DmitryProskurin
