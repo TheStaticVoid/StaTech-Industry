@@ -400,32 +400,31 @@ ServerEvents.recipes(e => {
     ];
 
     const SPECTRUM_TWO = [
-        { in: "certus_quartz", out: ae2("certus_quartz_crystal") },
-        { in: "fluix", out: ae2("fluix_crystal")}
+        { in: "certus_quartz", out: ae2("certus_quartz_dust") },
+        { in: "fluix", out: ae2("fluix_dust")}
     ];
 
-    let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput, operationTick) => {
-        operationTick = typeof operationTick !== "undefined" ? operationTick : 200.0;
+    let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput) => {
         inputOutputNames.forEach(data => {
             let outName = data.out.slice(data.out.indexOf(':') + 1, data.out.length);
             macerator(
                 st(`${outName}_from_small_${data.in}_bud`),
                 2,
-                operationTick,
+                200,
                 [ { amount: 1, item: sp(`small_${data.in}_bud`) } ],
                 [ { amount: numberOfOutput[0], item: data.out } ],
             );
             macerator(
                 st(`${outName}_from_large_${data.in}_bud`),
                 2,
-                operationTick,
+                200,
                 [ { amount: 1, item: sp(`large_${data.in}_bud`) } ],
                 [ { amount: numberOfOutput[1], item: data.out } ],
             );
             macerator(
                 st(`${outName}_from_${data.in}_cluster`),
                 2,
-                operationTick,
+                200,
                 [ { amount: 1, item: sp(`${data.in}_cluster`) } ],
                 [ { amount: numberOfOutput[2], item: data.out } ],
             );
@@ -437,11 +436,4 @@ ServerEvents.recipes(e => {
     recipeForSpBudsAndClusters(SPECTRUM_TWO, [2,2,12]);
     recipeForSpBudsAndClusters([ {in: "bismuth", out: sp("bismuth_crystal") } ], [2,2,5]);
     recipeForSpBudsAndClusters([ {in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);
-    
-    //macerate to dust
-    const MACERATE_TO_DUST = [
-        { in: "certus_quartz", out: ae2("certus_quartz_dust") },
-        { in: "fluix", out: ae2("fluix_dust")}
-    ];
-    recipeForSpBudsAndClusters(MACERATE_TO_DUST, [2,2,12], 300.0);
 });
