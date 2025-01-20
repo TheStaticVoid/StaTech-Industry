@@ -382,4 +382,58 @@ ServerEvents.recipes(e => {
             [ { amount: data.outputAmount, item: ae2('certus_quartz_dust') } ]
         );
     });
+    
+    // -- SPECTRUM RESOURCE BUDS AND CLUSTERS
+    const SPECTRUM_ONE = [
+        { in: "coal", out: mc("coal") },
+        { in: "iron", out: mi("iron_dust") },
+        { in: "gold", out: mi("gold_dust") },
+        { in: "diamond", out: mc("diamond") },
+        { in: "emerald", out: mc("emerald") },
+        { in: "redstone", out: mc("redstone") },
+        { in: "lapis", out: mc("lapis_lazuli") },
+        { in: "copper", out: mi("copper_dust") },
+        { in: "quartz", out: mc("quartz") },
+        { in: "netherite_scrap", out: mc("netherite_scrap") },
+        { in: "echo", out: mc("echo_shard") },
+        { in: "prismarine", out: mc("prismarine_crystals") }
+    ];
+
+    const SPECTRUM_TWO = [
+        { in: "certus_quartz", out: ae2("certus_quartz_dust") },
+        { in: "fluix", out: ae2("fluix_dust")}
+    ];
+
+    let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput) => {
+        inputOutputNames.forEach(data => {
+            let outName = data.out.slice(data.out.indexOf(':') + 1, data.out.length);
+            macerator(
+                st(`${outName}_from_small_${data.in}_bud`),
+                2,
+                200,
+                [ { amount: 1, item: sp(`small_${data.in}_bud`) } ],
+                [ { amount: numberOfOutput[0], item: data.out } ],
+            );
+            macerator(
+                st(`${outName}_from_large_${data.in}_bud`),
+                2,
+                200,
+                [ { amount: 1, item: sp(`large_${data.in}_bud`) } ],
+                [ { amount: numberOfOutput[1], item: data.out } ],
+            );
+            macerator(
+                st(`${outName}_from_${data.in}_cluster`),
+                2,
+                200,
+                [ { amount: 1, item: sp(`${data.in}_cluster`) } ],
+                [ { amount: numberOfOutput[2], item: data.out } ],
+            );
+        });
+    };
+    
+    //output for [small bud, large bud, cluster]
+    recipeForSpBudsAndClusters(SPECTRUM_ONE, [1,1,6]);
+    recipeForSpBudsAndClusters(SPECTRUM_TWO, [2,2,12]);
+    recipeForSpBudsAndClusters([ {in: "bismuth", out: sp("bismuth_crystal") } ], [2,2,5]);
+    recipeForSpBudsAndClusters([ {in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);
 });

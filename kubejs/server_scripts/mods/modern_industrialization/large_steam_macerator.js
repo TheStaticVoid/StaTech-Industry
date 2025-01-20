@@ -111,6 +111,32 @@ ServerEvents.recipes(e => {
                 item.get('item').getAsString().split(':')[1] :
                 item.get('tag').getAsString().split(':')[1];
     }
+    
+    //Multiplie output for lsm. Accept javascript object with fields(minimum): item - item name, output - number of output for common macerator. Return array of objects with multiplied output value.
+    let multiplyItemsAcceptObject = (input) => {
+        let itemMax = 64;
+        let newItemList = [];
+        let tag = input["tag"] ? true : false;
+        let amount = input["amount"] * amountMultiplier;
+        let item = tag ? input["tag"] : input["item"];
+        let prob = input["probability"];
+
+        if (amount > itemMax) {
+            let fullStacks = Math.floor(amount / itemMax);
+            let leftOver = amount % itemMax;
+            for (let i = 0; i < fullStacks; i++) {
+                newItemList.push(newItem(tag, itemMax, item, prob));
+            }
+
+            if (leftOver > 0) {
+                newItemList.push(newItem(tag, leftOver, item, prob));
+            }
+        } else {
+            input["amount"] = amount;
+            newItemList.push(input);
+        }
+        return newItemList;
+    }
 
     e.forEachRecipe( { type: mi('macerator'), not: [{ id: mi('compat/techreborn/macerator/minecraft_clay_ball_to_techreborn_clay_dust')}, { id: mi('materials/zinc/macerator/drill_head') }]}, recipe => {
         const recipeJson = recipe.json;
@@ -269,19 +295,12 @@ ServerEvents.recipes(e => {
 
         DATA.forEach(data => {
             let gemID = data.inputName.includes('amethyst') ? mc(data.inputName) : sp(data.inputName);
-            // this is hacky as fuck, but idc fix later :)
-            let outputs = data.outputAmount * amountMultiplier == 128 ?
-                [ 
-                    { amount: 64, item: sp(`${gemName}_powder`) },
-                    { amount: 64, item: sp(`${gemName}_powder`) }
-                ] : 
-                [ { amount: data.outputAmount * amountMultiplier, item: sp(`${gemName}_powder`) } ]; 
             lsm(
                 st(`${gemName}_powder_from_${data.inputName}`),
                 powerConstant,
                 200 * timeMultiplier,
                 [ { amount: 1 * amountMultiplier, item: gemID } ],
-                outputs
+                multiplyItemsAcceptObject( { amount: data.outputAmount, item: sp(`${gemName}_powder`) })
             );
         });
     }
@@ -436,4 +455,58 @@ ServerEvents.recipes(e => {
             [ { amount: 4 * amountMultiplier, item: byg(`${color}_sand`) } ]
         );
     });
+    
+    // -- SPECTRUM RESOURCE BUDS AND CLUSTERS
+    const SPECTRUM_ONE = [
+        { in: "coal", out: mc("coal") },
+        { in: "iron", out: mi("iron_dust") },
+        { in: "gold", out: mi("gold_dust") },
+        { in: "diamond", out: mc("diamond") },
+        { in: "emerald", out: mc("emerald") },
+        { in: "redstone", out: mc("redstone") },
+        { in: "lapis", out: mc("lapis_lazuli") },
+        { in: "copper", out: mi("copper_dust") },
+        { in: "quartz", out: mc("quartz") },
+        { in: "netherite_scrap", out: mc("netherite_scrap") },
+        { in: "echo", out: mc("echo_shard") },
+        { in: "prismarine", out: mc("prismarine_crystals") }
+    ];
+    
+    const SPECTRUM_TWO = [
+        { in: "certus_quartz", out: ae2("certus_quartz_dust") },
+        { in: "fluix", out: ae2("fluix_dust") }
+    ];
+    
+    let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput) => {
+        inputOutputNames.forEach(data => {
+            let outName = data.out.slice(data.out.indexOf(':') + 1, data.out.length);
+            lsm(
+                st(`${outName}_from_small_${data.in}_bud`),
+                powerConstant,
+                200 * timeMultiplier,
+                [ { amount: 1 * amountMultiplier, item: sp(`small_${data.in}_bud`) } ],
+                multiplyItemsAcceptObject({ amount: numberOfOutput[0], item: data.out }),
+            );
+            lsm(
+                st(`${outName}_from_large_${data.in}_bud`),
+                powerConstant,
+                200 * timeMultiplier,
+                [ { amount: 1 * amountMultiplier, item: sp(`large_${data.in}_bud`) } ],
+                multiplyItemsAcceptObject({ amount: numberOfOutput[1], item: data.out }),
+            );
+            lsm(
+                st(`${outName}_from_${data.in}_cluster`),
+                powerConstant,
+                200 * timeMultiplier,
+                [ { amount: 1 * amountMultiplier, item: sp(`${data.in}_cluster`) } ],
+                multiplyItemsAcceptObject({ amount: numberOfOutput[2], item: data.out }),
+            );
+        });
+    };
+    
+    //output for [small bud, large bud, cluster]
+    recipeForSpBudsAndClusters(SPECTRUM_ONE, [1,1,6]);
+    recipeForSpBudsAndClusters(SPECTRUM_TWO, [2,2,12]);
+    recipeForSpBudsAndClusters([ { in: "bismuth", out: sp("bismuth_crystal") } ], [2,2,5]);
+    recipeForSpBudsAndClusters([ { in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);
 });
