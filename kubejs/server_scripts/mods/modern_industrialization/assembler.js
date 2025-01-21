@@ -840,9 +840,9 @@ ServerEvents.recipes(e => {
         8,
         200,
         [
-            { amount: 3, item: mi('cupronickel_wire_magnetic') },
-            { amount: 2, item: mi('electronic_circuit') },
-            { amount: 2, item: mi('large_motor') },
+            { amount: 3, item: mi('copper_wire') },
+            { amount: 2, item: mi('analog_circuit') },
+            { amount: 2, item: mi('motor') },
             { amount: 1, tag: 'c:glass_blocks' },
             { amount: 1, item: mi('basic_machine_hull') }
         ],

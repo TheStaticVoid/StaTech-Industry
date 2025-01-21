@@ -17,8 +17,8 @@
 		image: "ae2:item/blank_pattern"
 		rotation: 0.0d
 		width: 1.0d
-		x: 16.0d
-		y: 13.5d
+		x: -1.5d
+		y: -2.5d
 	}]
 	order_index: 2
 	quest_links: [ ]
@@ -280,8 +280,8 @@
 				item: "modern_industrialization:electric_cutting_machine"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["473C1DE557D3E9C0"]
@@ -376,8 +376,8 @@
 				item: "modern_industrialization:electric_wiremill"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: 0.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["473C1DE557D3E9C0"]
@@ -409,7 +409,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["473C1DE557D3E9C0"]
@@ -447,7 +447,7 @@
 				item: "modern_industrialization:assembler"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 4.5d
 			y: 3.0d
 		}
 		{
@@ -555,7 +555,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["473C1DE557D3E9C0"]
@@ -587,7 +587,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["36C698E0F31FDB20"]
@@ -798,8 +798,8 @@
 				item: "modern_industrialization:electric_mixer"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -3.0d
+			x: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["473C1DE557D3E9C0"]
@@ -831,7 +831,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6012D781643367DA"]
@@ -1076,7 +1076,7 @@
 				}
 			]
 			title: "Pyrolyse Oven"
-			x: 2.0d
+			x: 6.5d
 			y: 4.75d
 		}
 		{
@@ -1113,7 +1113,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1208,7 +1208,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 8.5d
 			y: 3.0d
 		}
 		{
@@ -1246,7 +1246,7 @@
 				type: "item"
 			}]
 			title: "Cupronickel Coils"
-			x: 2.0d
+			x: 6.5d
 			y: 3.0d
 		}
 		{
@@ -1351,8 +1351,8 @@
 				item: "techreborn:auto_crafting_table"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.0d
+			x: 4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["34BCB27D3481EDF4"]
@@ -1388,7 +1388,7 @@
 				type: "item"
 			}]
 			title: "Silicon"
-			x: 4.0d
+			x: 8.5d
 			y: 4.75d
 		}
 		{
@@ -1625,8 +1625,8 @@
 				item: "modern_industrialization:silicon_battery"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 4.75d
+			x: 8.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5EC488946BE8FF2F"]
@@ -1967,8 +1967,8 @@
 				type: "item"
 			}]
 			title: "Gold Drills"
-			x: 11.5d
-			y: 15.5d
+			x: 10.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["1AFBAD9537A32176"]
@@ -2001,8 +2001,8 @@
 				type: "item"
 			}]
 			title: "Steel Drills"
-			x: 11.5d
-			y: 14.5d
+			x: 9.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6C3EAE1F16E1048A"]
@@ -2907,7 +2907,7 @@
 				item: "modern_industrialization:ethylene_bucket"
 				type: "item"
 			}]
-			x: -19.0d
+			x: -17.0d
 			y: 10.5d
 		}
 		{
@@ -2973,7 +2973,7 @@
 				item: "modern_industrialization:propene_bucket"
 				type: "item"
 			}]
-			x: -17.0d
+			x: -15.0d
 			y: 10.5d
 		}
 		{
@@ -3441,7 +3441,7 @@
 				item: "modern_industrialization:acrylic_acid_bucket"
 				type: "item"
 			}]
-			x: -17.0d
+			x: -15.0d
 			y: 8.5d
 		}
 		{
@@ -3477,7 +3477,7 @@
 				item: "modern_industrialization:ethanol_bucket"
 				type: "item"
 			}]
-			x: -19.0d
+			x: -17.0d
 			y: 8.5d
 		}
 		{
@@ -3512,7 +3512,7 @@
 				item: "modern_industrialization:diethyl_ether_bucket"
 				type: "item"
 			}]
-			x: -17.0d
+			x: -15.0d
 			y: 6.5d
 		}
 		{
@@ -3544,7 +3544,7 @@
 				item: "modern_industrialization:raw_biodiesel_bucket"
 				type: "item"
 			}]
-			x: -19.0d
+			x: -17.0d
 			y: 6.5d
 		}
 		{
@@ -3576,7 +3576,7 @@
 				item: "modern_industrialization:biodiesel_bucket"
 				type: "item"
 			}]
-			x: -19.0d
+			x: -17.0d
 			y: 4.5d
 		}
 		{
@@ -3613,7 +3613,7 @@
 				item: "modern_industrialization:boosted_diesel_bucket"
 				type: "item"
 			}]
-			x: -17.0d
+			x: -15.0d
 			y: 4.5d
 		}
 		{
@@ -3646,7 +3646,7 @@
 				item: "modern_industrialization:polyethylene_bucket"
 				type: "item"
 			}]
-			x: -21.5d
+			x: -19.5d
 			y: 10.5d
 		}
 		{
@@ -3734,7 +3734,7 @@
 				type: "item"
 			}]
 			title: "Overclock Upgrades"
-			x: -21.5d
+			x: -19.5d
 			y: 12.5d
 		}
 		{
@@ -3774,7 +3774,7 @@
 				type: "item"
 			}]
 			title: "Advanced Upgrades"
-			x: -21.5d
+			x: -19.5d
 			y: 14.5d
 		}
 		{
@@ -3820,7 +3820,7 @@
 				}
 			]
 			title: "Diamond \\& Emerald Plates"
-			x: -23.5d
+			x: -21.5d
 			y: 12.5d
 		}
 		{
@@ -3856,7 +3856,7 @@
 				item: "inmis:bejeweled_backpack"
 				type: "item"
 			}]
-			x: -23.5d
+			x: -21.5d
 			y: 14.5d
 		}
 		{
@@ -3890,7 +3890,7 @@
 				type: "item"
 			}]
 			title: "Diamond Chest"
-			x: -25.5d
+			x: -23.5d
 			y: 11.5d
 		}
 		{
@@ -3922,7 +3922,7 @@
 				item: "ironchests:crystal_chest"
 				type: "item"
 			}]
-			x: -25.5d
+			x: -23.5d
 			y: 10.0d
 		}
 		{
@@ -3954,7 +3954,7 @@
 				item: "ironchests:obsidian_chest"
 				type: "item"
 			}]
-			x: -26.5d
+			x: -24.5d
 			y: 10.0d
 		}
 		{
@@ -3986,7 +3986,7 @@
 				item: "ironchests:netherite_chest"
 				type: "item"
 			}]
-			x: -24.5d
+			x: -22.5d
 			y: 10.0d
 		}
 		{
@@ -4018,7 +4018,7 @@
 				item: "ironchests:diamond_dolly"
 				type: "item"
 			}]
-			x: -23.5d
+			x: -21.5d
 			y: 10.0d
 		}
 		{
@@ -4121,7 +4121,7 @@
 				}
 			]
 			title: "Ammu-Nation"
-			x: -21.5d
+			x: -19.5d
 			y: 7.5d
 		}
 		{
@@ -5772,8 +5772,8 @@
 				type: "item"
 			}]
 			title: "MV Cables"
-			x: 10.5d
-			y: 11.5d
+			x: 4.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4E194F2BBB21F033"]
@@ -6294,8 +6294,8 @@
 				item: "techreborn:lamp_incandescent"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -5.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2ACF26FC95B88B16"]
@@ -6325,8 +6325,8 @@
 				item: "techreborn:lamp_led"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -5.5d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["046F01DB0758D7DD"]
@@ -6494,7 +6494,7 @@
 				item: "moderndynamics:mv_cable"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 3.5d
 			y: 12.5d
 		}
 		{
@@ -6543,18 +6543,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "12A3F26B969482E4"
-					table_id: 3355045530268513601L
+					id: "1182768601848FD8"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "1C7B898EA7157DFB"
+					id: "221250F633152B5D"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "79161C01405A58F2"
+					id: "48894B2F8A3CEB8D"
 					type: "xp"
 					xp: 10
 				}
@@ -6573,8 +6573,8 @@
 				}
 			]
 			title: "Meteorite Compass"
-			x: 17.0d
-			y: 14.5d
+			x: 1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["28495F29C110024D"]
@@ -6587,18 +6587,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "445E3BACA5920EFD"
-					table_id: 3355045530268513601L
+					id: "12A551D110F4996D"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "26C1C00EC52E810D"
+					id: "69FD79FFF8DAA597"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "2BE6134898EB413D"
+					id: "39BDF27375BABB87"
 					type: "xp"
 					xp: 10
 				}
@@ -6609,8 +6609,8 @@
 				item: "ae2:fluix_crystal"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 14.5d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -6623,18 +6623,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "2C5C29EEA92538FE"
-					table_id: 3355045530268513601L
+					id: "6C488E27A1FB97AB"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "45F68AC04E912F6A"
+					id: "4A48C13038AEE745"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "61DDB1C9203C1FD8"
+					id: "40A72C29D3A4F148"
 					type: "xp"
 					xp: 10
 				}
@@ -6658,8 +6658,8 @@
 				}
 			]
 			title: "AE2 Processors"
-			x: 15.0d
-			y: 14.5d
+			x: 0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2BB495CFC3E6D6C8"]
@@ -6672,18 +6672,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "5371C8A096AB3498"
-					table_id: 3355045530268513601L
+					id: "1B712AC8AC5617C4"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "1159489253B4D61C"
+					id: "5E6BA12BEE630C5F"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "45FB93FF4A21FD1E"
+					id: "4D7D2B8CBBDD2E43"
 					type: "xp"
 					xp: 10
 				}
@@ -6697,8 +6697,8 @@
 				}
 				type: "item"
 			}]
-			x: 17.0d
-			y: 15.5d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -6718,18 +6718,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "27825C46CEDC1AAF"
-					table_id: 3355045530268513601L
+					id: "2EDA069A1E7C8E87"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
-					count: 10
-					id: "1829B8CBA68EDBA3"
+					count: 5
+					id: "3659D2D4A42CD741"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "305C19A3A5B00F38"
+					id: "5E074D42A5ADE440"
 					type: "xp"
 					xp: 10
 				}
@@ -6742,8 +6742,8 @@
 				item: "ae2:controller"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 17.25d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -6758,18 +6758,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "27044D1CFD293C52"
-					table_id: 3355045530268513601L
+					id: "34BFCC54EE97288E"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "13BCF3C8E20093FE"
+					id: "3DFF9241F827CDE7"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "78CBE688A00797BD"
+					id: "3A92CBFD6F5E898D"
 					type: "xp"
 					xp: 10
 				}
@@ -6782,8 +6782,8 @@
 				type: "checkmark"
 			}]
 			title: "CHANNELS!"
-			x: 12.5d
-			y: 16.75d
+			x: -2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -6796,18 +6796,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "022E7064941293BD"
-					table_id: 3355045530268513601L
+					id: "18B073CA335E7FC8"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "3DB25AB4D8337E03"
+					id: "4104EDD0A6FABBD2"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "2E942244A7E20698"
+					id: "66F8DE03359B18B3"
 					type: "xp"
 					xp: 10
 				}
@@ -6818,8 +6818,8 @@
 				item: "ae2:terminal"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 17.75d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["742FEDEA09A5FEA7"]
@@ -6832,18 +6832,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "396C1DE7A703F64F"
-					table_id: 3355045530268513601L
+					id: "0C7B80CDC89227B7"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "1394797BE6AEB94A"
+					id: "2F9F7AAA8173EAD0"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "654AE4A6D95DE578"
+					id: "447AF0723D825292"
 					type: "xp"
 					xp: 10
 				}
@@ -6855,8 +6855,8 @@
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
-			x: 19.0d
-			y: 17.75d
+			x: 4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -6873,18 +6873,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "477F6D5125EC1F4D"
-					table_id: 3355045530268513601L
+					id: "493BD1BF9042E8BC"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "1D82C234B90FE837"
+					id: "2FA3FDF1D659F030"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "62186F1B76C24E02"
+					id: "5DE3835E93CB785B"
 					type: "xp"
 					xp: 10
 				}
@@ -6903,8 +6903,8 @@
 				type: "item"
 			}]
 			title: "Glass Cables"
-			x: 12.5d
-			y: 20.0d
+			x: -2.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["0185C45DF71403A5"]
@@ -6917,18 +6917,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "72BBBF7BA8A3838D"
-					table_id: 3355045530268513601L
+					id: "324D082976722835"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "6A4ECA3718AEAB87"
+					id: "7C1BDB4ECD8085DF"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "1DC1F849D8ECDC50"
+					id: "00106170C90A823E"
 					type: "xp"
 					xp: 10
 				}
@@ -6947,8 +6947,8 @@
 				type: "item"
 			}]
 			title: "Colored Cables"
-			x: 10.5d
-			y: 20.5d
+			x: -4.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["56A9ADF766CC038C"]
@@ -6961,18 +6961,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "74C7DDD128A11122"
-					table_id: 3355045530268513601L
+					id: "5D8FDCB944C763B1"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "4D66F21D39418A7C"
+					id: "5EB9CEAA12BE4B12"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "11EE50D8182AEAF5"
+					id: "190841457F31B566"
 					type: "xp"
 					xp: 10
 				}
@@ -6991,8 +6991,8 @@
 				type: "item"
 			}]
 			title: "Smart Cables"
-			x: 10.0d
-			y: 22.0d
+			x: -4.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["56A9ADF766CC038C"]
@@ -7001,18 +7001,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "5A1F886847D1D163"
-					table_id: 3355045530268513601L
+					id: "38185887BD1A3829"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "179CA89AA955A2D8"
+					id: "3FB78C3CFD857B37"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "7C8BA461D4AE7F24"
+					id: "0C4446F530E2ED2E"
 					type: "xp"
 					xp: 10
 				}
@@ -7031,8 +7031,8 @@
 				type: "item"
 			}]
 			title: "Dense Covered Cables"
-			x: 11.0d
-			y: 22.0d
+			x: -3.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["7C0F5471E36D2678"]
@@ -7041,18 +7041,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "643524889B7E73A3"
-					table_id: 3355045530268513601L
+					id: "269D84ACE15D5554"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "64831F2F8DA78C91"
+					id: "40C5358E4F89B747"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "2166EB18FB8C084C"
+					id: "4FB9BA04F53FD801"
 					type: "xp"
 					xp: 10
 				}
@@ -7071,8 +7071,8 @@
 				type: "item"
 			}]
 			title: "Smart Dense Cables"
-			x: 10.0d
-			y: 23.5d
+			x: -4.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["0185C45DF71403A5"]
@@ -7081,18 +7081,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "3B2866C3BC243C08"
-					table_id: 3355045530268513601L
+					id: "3755AD0AE29D85CA"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "44E480033B935D44"
+					id: "03723CBEABCF4B69"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "3AFBBEBBCC8AA5B3"
+					id: "79239B57B3F25EB3"
 					type: "xp"
 					xp: 10
 				}
@@ -7109,8 +7109,8 @@
 				title: "ME Wires"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 19.5d
+			x: -4.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -7125,18 +7125,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "254B401A8BD496C3"
-					table_id: 3355045530268513601L
+					id: "7C994894BFE185BB"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "521DE950926F43A9"
+					id: "131F32BDD1D646AE"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "02EC8106F1227C87"
+					id: "13C0176BB77748D7"
 					type: "xp"
 					xp: 10
 				}
@@ -7147,8 +7147,8 @@
 				item: "ae2:toggle_bus"
 				type: "item"
 			}]
-			x: 13.5d
-			y: 20.0d
+			x: -1.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -7167,18 +7167,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "57F93D6ED94CE600"
-					table_id: 3355045530268513601L
+					id: "665477A2217EFD46"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "4CB6F097994721AB"
+					id: "3C588BE42352DD9D"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "0CC0D07A961BF6E7"
+					id: "7AAA80CA3353DA8B"
 					type: "xp"
 					xp: 10
 				}
@@ -7189,8 +7189,8 @@
 				item: "ae2:me_p2p_tunnel"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 21.0d
+			x: -2.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -7205,18 +7205,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "704A41F5BD9DA246"
-					table_id: 3355045530268513601L
+					id: "5657FA700B19ED3D"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "04647A2C885B02C0"
+					id: "74439D2FE6AA9134"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "1714F90EC9D90E86"
+					id: "3621030435D4998D"
 					type: "xp"
 					xp: 10
 				}
@@ -7227,8 +7227,8 @@
 				item: "ae2:level_emitter"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 21.0d
+			x: -1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -7241,18 +7241,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "7CB075156DC20FFF"
-					table_id: 3355045530268513601L
+					id: "72588C6E16BA6C35"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "0270746D8CF673D7"
+					id: "138F80533D7DEC2B"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "2A5BAE213AAD57C2"
+					id: "713F8D1F93D130C7"
 					type: "xp"
 					xp: 10
 				}
@@ -7263,8 +7263,8 @@
 				item: "ae2:cable_anchor"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 21.0d
+			x: -0.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -7279,18 +7279,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "46760DEA9B06263F"
-					table_id: 3355045530268513601L
+					id: "7070603E3CBFA6C7"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "04A576F93ED817E4"
+					id: "7802C951A23FD83D"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "2D51A4D15CC21652"
+					id: "5670308C13B9BE7F"
 					type: "xp"
 					xp: 10
 				}
@@ -7301,8 +7301,8 @@
 				item: "ae2:storage_monitor"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 16.75d
+			x: 2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["7E211328EEB3CB9C"]
@@ -7318,18 +7318,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "4CE9C13B94AA4A0F"
-					table_id: 3355045530268513601L
+					id: "1A4FF023626B23F9"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "421BE8637BA94561"
+					id: "0725F90C72670ABA"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "35AB681918FBC43A"
+					id: "00DEC5850DB9160F"
 					type: "xp"
 					xp: 10
 				}
@@ -7340,8 +7340,8 @@
 				item: "ae2:conversion_monitor"
 				type: "item"
 			}]
-			x: 19.0d
-			y: 16.75d
+			x: 4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -7359,18 +7359,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "64BBA34CDB21B468"
-					table_id: 3355045530268513601L
+					id: "2490B1BD4127F69B"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "4DE2A20A8C1E754F"
+					id: "63305CE3539C578F"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "021110653BCE3D20"
+					id: "68D7439C8D650892"
 					type: "xp"
 					xp: 10
 				}
@@ -7388,28 +7388,28 @@
 					type: "item"
 				}
 			]
-			x: 12.5d
-			y: 17.75d
+			x: -2.0d
+			y: -5.5d
 		}
 		{
-			dependencies: ["36C698E0F31FDB20"]
+			dependencies: ["473C1DE557D3E9C0"]
 			description: ["The &aLaser Engraver&r is a fancy &enew machine&r part of &31.1.0&r. It's main purpose is the creation of &2Printed AE2 Circuits&r. It can also be used to create &dMob Models&r for use in the &bMob Crusher&r."]
 			id: "28495F29C110024D"
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "0FBC5C1142401D8F"
-					table_id: 3355045530268513601L
+					id: "701A23D03CD376DA"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "1139E13DE52BB213"
+					id: "72EF5BAF3070924D"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "5E45FB99CA655792"
+					id: "0D7F35215984B918"
 					type: "xp"
 					xp: 10
 				}
@@ -7419,14 +7419,11 @@
 				item: "modern_industrialization:laser_engraver"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 12.0d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
-			dependencies: [
-				"36C698E0F31FDB20"
-				"28495F29C110024D"
-			]
+			dependencies: ["36C698E0F31FDB20"]
 			description: [
 				"The &aMob Crusher&r is a &3server-friendly&r way of generating mob drops. Instead of &claggy farms&r that spawn hostile / passive mobs and then feed them into a kill chamber, this process is localized into this &emultiblock machine&r. "
 				""
@@ -7531,7 +7528,7 @@
 					type: "item"
 				}
 			]
-			x: 16.5d
+			x: 21.0d
 			y: 12.0d
 		}
 		{
@@ -7564,7 +7561,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["473C1DE557D3E9C0"]
@@ -7721,18 +7718,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "0C899FD1EF3C2A62"
-					table_id: 3355045530268513601L
+					id: "33920A2D3BA717E9"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "36F416FADAC2E6CB"
+					id: "1686857613EA072C"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "5E8B77F82E22956C"
+					id: "27B5A473122340D8"
 					type: "xp"
 					xp: 10
 				}
@@ -7742,8 +7739,8 @@
 				item: "ae2:storage_bus"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 20.0d
+			x: 0.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -7756,18 +7753,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "3BA7DEA5F450F19F"
-					table_id: 3355045530268513601L
+					id: "5F264E1F7549AF65"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "7BD9B53C49968270"
+					id: "32AEF65D7BE0A5B2"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "06227812E141F2B6"
+					id: "0F6B27517A9DE4F4"
 					type: "xp"
 					xp: 10
 				}
@@ -7777,8 +7774,8 @@
 				item: "ae2:import_bus"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 21.0d
+			x: 0.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -7791,18 +7788,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "6BBD13390DFA28AF"
-					table_id: 3355045530268513601L
+					id: "00E5395C861627B4"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "2A125ACBE9B9D603"
+					id: "5BB741B5502DD3E7"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "2396B4F8A374727E"
+					id: "40556CF3CDD6A4D0"
 					type: "xp"
 					xp: 10
 				}
@@ -7812,8 +7809,8 @@
 				item: "ae2:export_bus"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 20.0d
+			x: 1.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -7828,18 +7825,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "2A6A87F958DCD74D"
-					table_id: 3355045530268513601L
+					id: "23F7EF3044E6E48C"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "51BFC10C10DC41CB"
+					id: "5A1740A9400C5671"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "4A6BEAC766E2697A"
+					id: "773AE72D72CF6F45"
 					type: "xp"
 					xp: 10
 				}
@@ -7849,8 +7846,8 @@
 				item: "ae2:interface"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 21.0d
+			x: 1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["01D12D790B2DE5F5"]
@@ -7869,11 +7866,25 @@
 			]
 			icon: "ae2:flawless_budding_quartz"
 			id: "32F963B0273A07E2"
-			rewards: [{
-				id: "571B2E576152F3DF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1F63538953BBA84F"
+					table_id: 238949117979752405L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "7552EFCDB68331F6"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "1DFDC5DED52354CA"
+					type: "xp"
+					xp: 10
+				}
+			]
 			subtitle: "A different growth method from 1.12"
 			tasks: [{
 				id: "4A96B02DCAC866B3"
@@ -7881,8 +7892,8 @@
 				type: "checkmark"
 			}]
 			title: "Renewable Certus"
-			x: 13.0d
-			y: 14.5d
+			x: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["55F8B05DF035DF54"]
@@ -8267,18 +8278,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "62D9C4ADC875353D"
-					table_id: 3355045530268513601L
+					id: "4C0286B42CFF82BC"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "5790A9A5D5657A50"
+					id: "42B58ED5334D218A"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "0F624806469F45CE"
+					id: "3CA65A88F4C8FA7E"
 					type: "xp"
 					xp: 10
 				}
@@ -8296,8 +8307,8 @@
 				}
 			]
 			title: "Annihilation \\& Formation Planes"
-			x: 16.5d
-			y: 20.0d
+			x: 2.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["47AC1C475DEE0FE4"]
@@ -8306,18 +8317,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "7BF6C6E37D2EE564"
-					table_id: 3355045530268513601L
+					id: "3DE4338713340503"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "499DB44DDF04F93F"
+					id: "2D8728329DAF7191"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "4D41027F8740D9F5"
+					id: "3B3CBD9C42126A77"
 					type: "xp"
 					xp: 10
 				}
@@ -8327,8 +8338,8 @@
 				item: "ae2:quartz_growth_accelerator"
 				type: "item"
 			}]
-			x: 17.0d
-			y: 21.0d
+			x: 2.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["10C6529CD6C26AEE"]
@@ -8487,8 +8498,8 @@
 				item: "modern_industrialization:wood_tar_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 6.5d
+			x: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["473C1DE557D3E9C0"]
@@ -8564,7 +8575,7 @@
 				item: "ironchests:diamond_barrel"
 				type: "item"
 			}]
-			x: -25.5d
+			x: -23.5d
 			y: 13.0d
 		}
 		{
@@ -8595,7 +8606,7 @@
 				item: "ironchests:crystal_barrel"
 				type: "item"
 			}]
-			x: -25.5d
+			x: -23.5d
 			y: 14.5d
 		}
 		{
@@ -8626,7 +8637,7 @@
 				item: "ironchests:obsidian_barrel"
 				type: "item"
 			}]
-			x: -26.5d
+			x: -24.5d
 			y: 14.5d
 		}
 		{
@@ -8657,7 +8668,7 @@
 				item: "ironchests:netherite_barrel"
 				type: "item"
 			}]
-			x: -24.5d
+			x: -22.5d
 			y: 14.5d
 		}
 		{
@@ -8690,6 +8701,1362 @@
 			}]
 			x: 4.5d
 			y: 17.5d
+		}
+		{
+			dependencies: ["62103F0E617EBA7C"]
+			description: [
+				"The &bPattern Access Terminal&r gives remote access to all pattern slots for the &aPattern Providers&r on your network separated by which type of machine they are on. It will show the type of machine in the terminal, however you can name the &aME Pattern Provider&r in the &eInscriber&r or &eAnvil&r to alter the name displayed in the &bME Pattern Access Terminal&r."
+				""
+				"Requires a channel to be operational."
+			]
+			id: "4584D2A76B87D7F0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5A3E29841BE6C788"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "3DF99046EBC7FB72"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "5A99232BE981DDAB"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Managing your autocrafting!"
+			tasks: [{
+				id: "14FB1AD0D5E9CF9F"
+				item: "ae2:pattern_access_terminal"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["19EAC8C0A6889843"]
+			description: [
+				"&bBlank Patterns&r can be encoded in the &aME &bPattern Encoding Terminal&r&r. You can encode them either with a &dCrafting Pattern&r or a &eProcessing Pattern&r. The &aEncoded Pattern&r is then used to control crafting by inserting them into &bMolecular Assemblers&r or &aME Pattern Providers&r."
+				""
+				"A &dCrafting Pattern&r is your typical 3x3 or 2x2 grid crafting recipe. These patterns usually go inside of &bMolecular Assemblers&r."
+				""
+				"&eProcessing Patterns&r are a bit more complicated, usually these are patterns designed to be used to automate outputs from machines. &eProcessing Patterns&r allow you to encode recipes where an input goes into a machine and you get an expected output. Do not encode recipes that are for chance outputs, otherwise you will clog up your network and prevent crafting!"
+			]
+			id: "1B4704766DF1A934"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0F34ED4D02A9616D"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "72C9A0A77C5610D0"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "050A225ADEB82557"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			subtitle: "A dangerous rabbit hole"
+			tasks: [{
+				id: "47CFF4CBF0901ACF"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
+			title: "Patterns"
+			x: 20.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["62103F0E617EBA7C"]
+			description: [
+				"The &bMolecular Assembler&r is a powered machine which crafts items. It can be upgraded by inserting &dAcceleration Cards&r into it; once upgraded it is very fast."
+				""
+				"The assembler can function in one of two modes, single pattern mode or automatic crafting mode."
+				""
+				"In &aSingle Pattern Mode&r, it uses a single &cCrafting Pattern&r inserted into the assembler to craft an item without a crafting network. This makes it useful in stand alone setups or in configurations where it can be fed by other mods and even chained together to craft a final output. Items will be accepted from any side and exported into any available inventories."
+				""
+				"In &bAutomatic Crafting Mode&r the assembler will use the &cCrafting Pattern&r from an attached &eME Pattern Provider&r to craft items when they are requested by the Crafting CPU. &cNOTE&r: This mode requires that the assembler's pattern slot is empty."
+			]
+			id: "3C433173976A9CCC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3D735AFC5204004E"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1B5E79EC1DEEEEC3"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "71BE9100AAF9895F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			subtitle: "It's like magic!"
+			tasks: [{
+				id: "49A3C57F99A56F45"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["62103F0E617EBA7C"]
+			description: ["The &bME Pattern Provider&r is the home of your encoded recipes. These need to be put on the same network as your &dCrafting CPU&r itself. When the &dCrafting CPU&e needs to craft the primary result of that pattern, it'll delegate this to the &bPattern Provider&r. Normally the &bPattern Provider&r will then push out the ingredients to an adjancent block (a &aMolecular Assembler&r for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the &bPattern Provider&r, an &cME Interface&r, or any other means that would import the crafting result into the network. &aMolecular Assemblers&r are smart enough to automatically return the crafting result to the same &bPattern Provider&r that provided the ingredients, leaving you to focus on ensuring the &eProcessing Recipes&r outputs are put into the network when they're done."]
+			id: "2C1964927A0F7BE3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6695FF0A671F5F50"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "09AF8C0E12036923"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "724A6AFB0D15E2C8"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "0FEF672EBB5DBFC6"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["62103F0E617EBA7C"]
+			description: [
+				"The &dCrafting CPU&r manages a single auto crafting task from start to finish, and is built out of various crafting units."
+				""
+				"To be a valid crafting CPU, two rules must be met:"
+				"1. The CPU must be a cuboid, completely composed of the parts listed in the quest. Air and other blocks are not valid."
+				"2. The CPU must contain at least 1 Crafting Storage component."
+				""
+				"The &dCrafting CPU&r as a multi-block only requires a single channel for the entire structure. Crafting co-processors increase the number of tasks the crafting CPU can perform at once; with no co-processors, the crafting CPU can perform a single task at a time. Storage requirements are moderately complicated, and do not follow the usual ME storage math, but for a first approximation, you will need a little over one byte per input item, output item, or operation."
+				""
+				"You can name your &dCrafting CPUs&r by naming any of the &aCrafting Storage Units&r it is made up with an &eInscriber&r or &eAnvil&r."
+				""
+				"To provide patterns to the autocrafting CPUs you can use the &dME Interface&r or &eME Level Emitter&r."
+			]
+			id: "528CD35EBF5D20F0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "78A2A75FEE466E99"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "230200100E4D3F04"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2CC6DD908A3EC801"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			subtitle: "Deep Thought"
+			tasks: [
+				{
+					id: "2BDEB8659DA7243F"
+					item: "ae2:crafting_accelerator"
+					type: "item"
+				}
+				{
+					id: "2437CF8D5C1FEC51"
+					item: "ae2:crafting_monitor"
+					type: "item"
+				}
+				{
+					id: "6FA9FB6747BA68FC"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:1k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:4k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:16k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:64k_crafting_storage"
+								}
+								{
+									Count: 1b
+									id: "ae2:256k_crafting_storage"
+								}
+							]
+						}
+					}
+					title: "Any Crafting CPU"
+					type: "item"
+				}
+			]
+			title: "Crafting CPU"
+			x: 18.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["67071C306C1C3A42"]
+			description: [
+				"Perhaps the most desired item in all of AE2 is the &bWireless Crafting Terminal&r. This grants you (while in range of an access point) full access to your ME network. You can craft items, start autocrafting processes, and view in-progress crafting process all from this little device. "
+				""
+				"To link the &bWirelss Crafting Terminal&r to your network, you will need to put it in the top-right slot of your &aSecurity Terminal&r. Once linked, you will need to power it. You can do this by putting it in an &eAE2 Charger&r or &eCharge-o-Mat&r. It has a 1.6M AE internal energy storage, so you'll probably drain your entire power network charging it! "
+			]
+			id: "34E68D6337DE1792"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "531D026C1BC966C9"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "431FCAB0EAA058E7"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2A50C0943AB641F5"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6733A409F19937C9"
+				item: "ae2:wireless_crafting_terminal"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["2E7F7728159E3823"]
+			description: [
+				"The &bME Wireless Access Point&r allows wireless access via a Wireless Terminal. Range and power usage are determined based on the number of &aWireless Boosters&r installed into the ME Wireless Access Point."
+				""
+				"A network can have any number of &bME Wireless Access Points&r with any number of &aWireless Boosters&r in each one, allowing you to optimize power usage and range by altering your setup."
+				""
+				"Requires a channel to be operational."
+			]
+			id: "67071C306C1C3A42"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "06EDCD5CA8442B3C"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "2A89B859112C1A9A"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "0DAD5BE7DA0AAA9C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "15C730D8449D0539"
+				item: "ae2:wireless_access_point"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["62103F0E617EBA7C"]
+			description: [
+				"The &bPattern Encoding Terminal&r is a specialized version of the &aME Crafting Terminal&r designed to encode &cBlank Patterns&r into &dCrafting Patterns&r or &eProcessing Patterns&r."
+				""
+				"The &bPattern Encoding Terminal&r lets you browse the contents of your network like other terminals, but also contains an area for designing patterns. There are two modes for pattern encoding, crafting and processing. &eProcessing patterns&r are designed for use with machines that do not use standard crafting recipes; such as furnaces, MI machines, etc. To select between modes, click the button to the right of the interface; when it shows a standard crafting table, it will create &dCrafting Patterns&r, and when it shows a furnace, it will create &eProcessing Patterns&r."
+				""
+				"For &dCrafting Patterns&r, you specify the input crafting materials on a standard 3x3 crafting grid, and the output materials are determined automatically."
+				""
+				"For &eProcessing Patterns&r, you specify the input materials and output materials, including quantity, by placing stacks of items in the interface. If a process operation is not guaranteed to succeed (such as secondary products from some machines), it will not work correctly as a &eProcessing Pattern&r."
+				""
+				"Requires a channel to be operational."
+			]
+			id: "19EAC8C0A6889843"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1826E96F8D18D94D"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "0AF4BA2F21FDD511"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "728F8D343ACCAB99"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "3DC76830282291B2"
+				item: "ae2:pattern_encoding_terminal"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["2E7F7728159E3823"]
+			description: [
+				"&bQuantum Network Bridges&r can connect two networks over &ainfinite distances and even between dimensions&r.  They can carry &d64 channels&r in total (regardless of how cables are connected to each face)."
+				""
+				"&aEight Quantum Rings&r are placed around an &eME Quantum Link Chamber&r to create a &bQuantum Network Bridge&r. Only the &a4 ME Quantum Ring&r blocks adjacent to the &eME Quantum Link Chamber&r will accept network connections, the 4 corner blocks &ccannot&r connect to cables."
+				""
+				"The &bQuantum Link Chamber&r can accept one item in its inventory, the &6Quantum Entangled Singularity&r."
+			]
+			id: "13ADC5EC083B64D0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3428BE4B80AA2FE7"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "7A00BEB1879C2D76"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "6F53D3B836CC0654"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					count: 8L
+					id: "6C3D7A727C709366"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					id: "471A1AB08E4E2F21"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+			]
+			title: "Quantum Ring"
+			x: 12.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["2D9D7FFDA18C95B5"]
+			description: [
+				"Lowest tier storage cell, which can contain &d1024 bytes of storage&r."
+				""
+				"1024 bytes of storage can hold 127 stacks of a single item, or 65 stacks, while holding 63 different items."
+				""
+				"The &b1k Storage Cell&r uses 8 bytes of data to store a single type. When placed inside a drive or chest, it will add an additional 0.5 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a1k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. The settings can be changed in the Cell Workbench."
+			]
+			id: "2BA27AB43B03F656"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3403F1DB53BDA4EB"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "00A195F42F45BFE1"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "410A9B6E6D0AB0BF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "4279A4ECEAB86B7B"
+				item: {
+					Count: 1b
+					id: "ae2:item_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["2D9D7FFDA18C95B5"]
+			description: ["&bFluid Cells&r are similar to the item storage counterparts, except they hold fluids (duh!). &bFluid storage cells&r can hold up to 5 distinct types of fluids; the volume of fluid they can store depend in part on how many types they are holding, and their storage capacity."]
+			id: "5270F349E0B5F580"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0239C7F02C33D148"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "25D5B7808CCED9B7"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "297A52F2F2A81D88"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6C35800BBCD5C70D"
+				item: {
+					Count: 1b
+					id: "ae2:fluid_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["2BA27AB43B03F656"]
+			description: [
+				"A low tier storage cell, which can contain &d4096 bytes of storage&r."
+				""
+				"4096 bytes of storage can hold 508 stacks of a single item, or 260 stacks while holding 63 different items."
+				""
+				"The &b4k Storage Cell&r uses 32 bytes of data to store a single type. When placed inside a drive or chest, it will consume an additional 1.0 AE/t of power for the connection."
+				""
+				"You can remove the &b4k ME Storage Component&r by fully emptying the storage cell, and sneak right-clicking it in your hand."
+			]
+			id: "0F6CB1AEE71CFB16"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "296EEC7D92979F7A"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "39628316F6CF87E5"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "53075B0461E77FEB"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "225AABEB1973E3A7"
+				item: {
+					Count: 1b
+					id: "ae2:item_storage_cell_4k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["5270F349E0B5F580"]
+			description: ["A low tier fluid storage cell that can store 4096 bytes of information."]
+			id: "267CC8AF07E94284"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "084CE95BCE812F22"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "2E1DF1F73B8D8D31"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "3D9CB1842437E91B"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "797B1EE462546C57"
+				item: {
+					Count: 1b
+					id: "ae2:fluid_storage_cell_4k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["0F6CB1AEE71CFB16"]
+			description: [
+				"Middle Tier Storage Cell, which can contain &d16,384 bytes of storage&r."
+				""
+				"16,384 bytes of storage can hold 2032 Stacks of a single item, or 1040 Stacks, while holding 63 Different items."
+				""
+				"The &b16k Storage Cell&r uses 128 bytes of data to store a single type. When placed inside a drive or chest, it will consume 1.5 AE/t."
+				""
+				"You can remove the &a16k ME Storage Component&r by fully emptying the storage cell, and sneak-right clicking it in your hand."
+			]
+			id: "0338A0F80C416F09"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "10B036C4B8C32B60"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "3108A67D5F1CB59C"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "67201E12978DD2D7"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "73BD039352384790"
+				item: {
+					Count: 1b
+					id: "ae2:item_storage_cell_16k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["267CC8AF07E94284"]
+			description: ["A midtier fluid storage cell that can store 16384 bytes of information."]
+			id: "195CA8E85827FF47"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1EA32159521955CA"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "093C3E59AC2EDFB4"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "60EB8E9A68643185"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "5B5222E20ED643BA"
+				item: {
+					Count: 1b
+					id: "ae2:fluid_storage_cell_16k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["0338A0F80C416F09"]
+			description: [
+				"High Tier Storage Cell, which can contain &d65,536 bytes of storage&r."
+				""
+				"65,536 bytes of storage can hold 8128 Stacks of a single item. or 4160 Stacks,while holding 63 Different items."
+				""
+				"The &b64k Storage Cell&r uses 512 bytes of data to store a single type. When placed inside a drive or chest, it will consume 2.0 AE/t."
+				""
+				"You can remove the &a64k ME Storage Component&r by fully emptying the storage cell, and sneak-right clicking it in your hand."
+			]
+			id: "0C4AEF63DE034490"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D30C17213C7D931"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "35345F9D65702B7E"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "596EE1F3E3A12BCB"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "0634EB755972A894"
+				item: {
+					Count: 1b
+					id: "ae2:item_storage_cell_64k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["195CA8E85827FF47"]
+			description: ["A high tier fluid storage cell that can store up to 65536 bytes of information."]
+			id: "63339BE5D6244E37"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "54DA2D9A0010590D"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "31083FEC9AE8467B"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "321AC40BA2A9CFBD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "29B18C263C01CF25"
+				item: {
+					Count: 1b
+					id: "ae2:fluid_storage_cell_64k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["0C4AEF63DE034490"]
+			description: [
+				"Highest Tier Storage Cell, which can contain &d262,144 bytes of storage&r."
+				""
+				"262144 bytes of storage can hold 32512 stacks of a single item, or 16256 stacks while holding 63 different items."
+				""
+				"The &b256k Storage Cell&r uses 1024 bytes of data to store a single type. When placed inside a drive, it will consume 2.5 AE/t."
+				""
+				"You can remove the &a256K ME Storage Component&r by fully emptying the storage cell and sneak clicking it in your hand."
+			]
+			id: "0BF80E377CADB790"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5A05BC2376EE5B4F"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "3CBC7D9E4A6D01C2"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "7980C7C62C3B0E43"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "01881CB72B69C88C"
+				item: {
+					Count: 1b
+					id: "ae2:item_storage_cell_256k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["63339BE5D6244E37"]
+			description: ["The highest tier fluid storage cell that can store up to 262144 bytes of information."]
+			id: "502345F01035C536"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E65F93612701252"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "326F3608D4AB9D7D"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "4D33B06F8A5BD385"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "3F1F4B1CF6A614AF"
+				item: {
+					Count: 1b
+					id: "ae2:fluid_storage_cell_256k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["13ADC5EC083B64D0"]
+			description: [
+				"The &bQuantum Entangled Singularity&r is required to create a connection between two &aQuantum Network Bridges&r. They are always produced in matching pairs, to create a connection place 1 of the pair of &bQuantum Entangled Singularity&r into the &aME Quantum Link Chamber&r of the bridge on each side."
+				""
+				"They are crafted by causing a reaction between an &dEnder Pearl&r and a &eSingularity&r (FROM AE). Any explosive force should be enough to trigger the reaction. The two singularities produced are connected to one another, it's probably best to label these with names when you create them using an anvil."
+				""
+				"If the server you're playing on doesn't allow regular TNT detonations, AE2 includes Tiny TNT, which will still explode but not cause any explosive damage."
+			]
+			id: "5370C2CEF127113C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1AF2825651A62EA5"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "0425CF111CC513B1"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "72B6847ED79F0AC0"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "7FE866305A35771C"
+				item: "ae2:quantum_entangled_singularity"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["62103F0E617EBA7C"]
+			description: [
+				"The &bMatter Condenser&r has two key functions, elimination of excess materials in a cheap manor and the production of &eSingularity&r and &aMatter Ball&r."
+				""
+				"Can accept both fluids and items to be destroyed. Each item or fluid will count as one additional energy. This energy can be stored on &dME Storage Components&r. 256 Energy is required to generate a &aMatter Ball&r, and 256,000 energy will be required for the &eSingularity&r."
+			]
+			id: "511ACED1E299766B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5666DCFD88E84FB8"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "77AFFB888095A672"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "515602C922D57DC6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "24640E3E331DBC76"
+				item: "ae2:condenser"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 16.5d
+		}
+		{
+			dependencies: ["25B33302FC41B67A"]
+			description: [
+				"The &bME Drive&r is a block designed to store &aStorage Cells&r. The &bME Drive&r can hold 10 Storage Cells."
+				""
+				"The front of the drive will display the status of the drive in the corresponding spot with a color:"
+				"- Red: The cell is full"
+				"- Orange: The cell cannot hold any more types, but can store more items"
+				"- Green: The cell can hold more types or more items"
+				"- Black: There is no channel or power is offline"
+			]
+			id: "2D9D7FFDA18C95B5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "07E8ECEE5F069B40"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "633C7BA9615214F6"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "101152536A344FCF"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			subtitle: "All your stuff in a single block"
+			tasks: [{
+				id: "3B78757D8EAD40DD"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["5370C2CEF127113C"]
+			description: ["The &aQuantum Bridge Card&r is an upgrade card that can be placed inside your &eAE2&r &2Wireless Terminals&r to connect it to a &3Quantum Bridge&r on your &dnetwork&r. Place one &bEntangled Singularity&r in the center of the &3Quantum Bridge&r and one in your &2Wireless Terminal&r to connect them with this upgrade card."]
+			id: "56F8299D915D92E1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2E9D941E4C1697C8"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "09C6968E555FDACE"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "7E7B84B1981052EE"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "276A4A6768CFC09E"
+				item: "ae2wtlib:quantum_bridge_card"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["67071C306C1C3A42"]
+			description: [
+				"The &aMagnet Card&r is supposedly able to act as a magnet and you can choose whether items picked up go into your inventory or directly into your &dME network&r."
+				""
+				"I couldn't figure it out, but there are filters and such when you add the card to a &2Wireless Terminal&r."
+			]
+			id: "2ADD02A2BE293FEB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A9A7D1AF35B3040"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "6AD40E3A75D16EAF"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "4068F00B6C229B99"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "56D19B170E79AB52"
+				item: "ae2wtlib:magnet_card"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["67071C306C1C3A42"]
+			description: ["The &aWireless Pattern Encoding Table&r acts like the normal &2Pattern Encoding Table&r but wireless!"]
+			id: "5CD8EFDFD4FF9750"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5D467E42D5318CB4"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "24F3C7F9B677E719"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "24EB5C85893C4294"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "2A4381DE9C37E1A0"
+				item: "ae2wtlib:wireless_pattern_encoding_terminal"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["67071C306C1C3A42"]
+			description: ["The &aWireless Pattern Access Terminal&r acts like the normal &2Pattern Access Terminal&r but wireless!"]
+			id: "00C7C377D0C93D1B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4C5AA5C5043EDD1C"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "0EDE3CC37EBFB322"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "50DB9C43220A13BB"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "618DC4F912236D62"
+				item: "ae2wtlib:wireless_pattern_access_terminal"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 17.5d
+		}
+		{
+			dependencies: [
+				"00C7C377D0C93D1B"
+				"5CD8EFDFD4FF9750"
+				"34E68D6337DE1792"
+			]
+			description: ["The &aWireless Universal Terminal&r is the ultimate &eAE2&r terminal. By &3combining it with others in a crafting grid&r you can &2add their functionality&r to it, effectively allowing you to have all the &dWireless Terminal&r variants in one."]
+			id: "6720EFFF5C827F8F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "492B303A1FE7CEE3"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "2CD7253B59625196"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "1E630B562ED855AD"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "4ED8D26C7BCB27F5"
+				item: "ae2wtlib:wireless_universal_terminal"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["302958D57C6A10C7"]
+			description: ["The following quests are in relation to accessing your &dAE2 network&r on the fly, whether that be in your base away from the &aterminal&r, or on a far off planet!"]
+			id: "2E7F7728159E3823"
+			rewards: [{
+				id: "0BB96E8EBF1CFA81"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2D7DA35088255141"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Wireless Access"
+			x: 14.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["302958D57C6A10C7"]
+			description: [
+				"The following quests are in relation to &eAE2&r's &ddigital storage&r solutions."
+				""
+				"Up to now you've probably been maintaining a &2drawer network&r for the items you are passiving (hopefully) in bulk. I'd recommend &3continuing&r to utilize drawers and &6Storage Buses&r to their fullest extent, but with the &ddigital storage&r you can now store all your other junk in your network! Yay!"
+			]
+			id: "25B33302FC41B67A"
+			rewards: [{
+				id: "4AA9743C8B967C9F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "367F8C3925763AB8"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Digital Storage"
+			x: 15.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["302958D57C6A10C7"]
+			description: [
+				"The following quests are in relation to &eAE2&r's autocrafting functionality."
+				""
+				"I'm going to put this here, and I hope you take the time to read it, but please, &cDO NOT&r rely on &3autocrafting&r for your progression. The &2circuit / hull recipes&r in &eMI&r are &l&6tiered&r, meaning you will be making &na lot&r of lower tier materials to supplement later game recipes. If you have this setup with &3autocrafting&r it means you could be waiting &cHOURS&r for your &dME System&r to finish a craft."
+				""
+				"It's not worth it to rely on AE2 for MI progression, set up &2passive crafting&r! That being said, setting up &3autocrafting&r for the machines you'll need to do said &2passive crafting&r will be very beneficial!"
+			]
+			id: "62103F0E617EBA7C"
+			rewards: [{
+				id: "03EB36E6AC2A8C23"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7F08D344CEBF5EEA"
+				title: "Click to Acknowledge"
+				type: "checkmark"
+			}]
+			title: "Autocrafting"
+			x: 17.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["2D9D7FFDA18C95B5"]
+			description: [
+				"Lowest tier &bDISK&r, which contains &d1000 bytes&r of storage."
+				""
+				"&d1000 bytes&r of storage can hold &a1000 items&r without type limit."
+				""
+				"When placed inside a drive or chest, it will add an additional 0.5 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a1k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. Being made of Netherite, it is also &6Fireproof&r."
+			]
+			id: "7769CB237A146531"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "310E4224E98ADBC4"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "47ED9D877737F08E"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "43E7CF6229B2BB47"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6592AFA79E838625"
+				item: {
+					Count: 1b
+					id: "ae2things:disk_drive_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["7769CB237A146531"]
+			description: [
+				"A low tier &bDISK&r, which contains &d4000 bytes&r of storage."
+				""
+				"&d4000 bytes&r of storage can hold &a4000 items&r without type limit."
+				""
+				"When placed inside a drive or chest, it will add an additional 1.0 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a4k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. Being made of Netherite, it is also &6Fireproof&r."
+			]
+			id: "082E0DAFFBB47676"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "196C5767F0785998"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "77E05A6FE3075577"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "7F5C5FEC59D07D6C"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "231ED73520005F08"
+				item: {
+					Count: 1b
+					id: "ae2things:disk_drive_4k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["082E0DAFFBB47676"]
+			description: [
+				"Middle tier &bDISK&r, which contains &d16000 bytes&r of storage."
+				""
+				"&d16000 bytes&r of storage can hold &a16000 items&r without type limit."
+				""
+				"When placed inside a drive or chest, it will add an additional 1.5 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a16k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. Being made of Netherite, it is also &6Fireproof&r."
+			]
+			id: "0CA5E09709661958"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "05FCA8A61DA29052"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "1F4D12B7653AF5F4"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "2F1F51E2F7BD5BC1"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "6B46828D3ABD4482"
+				item: {
+					Count: 1b
+					id: "ae2things:disk_drive_16k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 18.5d
+		}
+		{
+			dependencies: ["0CA5E09709661958"]
+			description: [
+				"High tier &bDISK&r, which contains &d64000 bytes&r of storage."
+				""
+				"&d64000 bytes&r of storage can hold &a64000 items&r without type limit."
+				""
+				"When placed inside a drive or chest, it will add an additional 2.0 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a64k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. Being made of Netherite, it is also &6Fireproof&r."
+			]
+			id: "369D85E54351A70B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "32D3D06A03F79B9A"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "076991B6EFAC5086"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "7A241DFD2242F2A6"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "1B1E96915C7450C8"
+				item: {
+					Count: 1b
+					id: "ae2things:disk_drive_64k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["369D85E54351A70B"]
+			description: [
+				"Highest tier &bDISK&r, which contains &d256000 bytes&r of storage."
+				""
+				"&d256000 bytes&r of storage can hold &a256000 items&r without type limit."
+				""
+				"When placed inside a drive or chest, it will add an additional 2.5 AE/t to the power cost of the connection."
+				""
+				"You can remove the &a256k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. Being made of Netherite, it is also &6Fireproof&r."
+			]
+			id: "30E1E763742EDAA4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "42D582E4DCBA0742"
+					table_id: 3355045530268513601L
+					type: "random"
+				}
+				{
+					count: 5
+					id: "764C319064DD5100"
+					item: "kubejs:coin_rare"
+					type: "item"
+				}
+				{
+					id: "7F442EC76B7F2788"
+					type: "xp"
+					xp: 10
+				}
+			]
+			tasks: [{
+				id: "485D3D6D9A231F38"
+				item: {
+					Count: 1b
+					id: "ae2things:disk_drive_256k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 20.5d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]
