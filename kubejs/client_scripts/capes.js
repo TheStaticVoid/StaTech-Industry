@@ -106,4 +106,5 @@ CapeJS.addCapes(e => {
     e.register("f200205f-7d80-4884-9030-47369b3d36fe", "pack_completionist");            // Kerbek_02 (MiDaLew)
     e.register("e55c1334-d194-4eb5-9304-700000ac69e2", "pack_completionist");            // kil_lua (Malcom)
     e.register("587f9071-4de8-4598-a6ee-7b3c47585904", "pack_completionist");            // kuchc1k (cube)
+    e.register("3122cedc-6d89-4173-9554-e782901baf22", "pack_completionist");            // fiveman2 (bread)
 });
