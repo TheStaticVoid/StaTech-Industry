@@ -1,6 +1,8 @@
 # StaTech Industry 1.1.15 Changelog:
 This is a follow up patch to the previous one that addresses some issues found with the patch as well as some QoL updates. If you're using an existing instance, you will have to enable the emissive texture packs manually. New installs should have them enabled by default.
 
+I've tacked on a rather large change to this patch with downtiering the requirements for AE2 from MV and HV to LV and MV. This means as soon as you have electric machines, you can start using AE2 to automate item transfer rather than relying on Tom's Simple Storage Mod. Autocrafting is still gated to MV just because it should be separate to avoid players falling into the pitfalls of autocrafting early.
+
 ## Mods added:
 - [AOF: Emissive Ores](https://www.curseforge.com/minecraft/texture-packs/all-of-fabric-emissive-ores) - Emissive ore resource pack by PurpleDino
 - [cAn i MiNe thIS bLOCk?](https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block) - WTHIT addon
@@ -30,3 +32,5 @@ This is a follow up patch to the previous one that addresses some issues found w
 - [Added extra information for the moonstone unlock](https://github.com/TheStaticVoid/StaTech-Industry/pull/529/commits/532f5e9030643d723e681cb56b7ed526c2666ae2)
 - [Fixed double "Added by StaTech Industry" tooltips](https://github.com/TheStaticVoid/StaTech-Industry/pull/530) - by DmitryProskurin
 - [Added macerator recipes for new Spectrum bud blocks](https://github.com/TheStaticVoid/StaTech-Industry/pull/531) - by DmitryProskurin
+- [Downtier AE2 recipes and quests from MV&HV to LV&MV](https://github.com/TheStaticVoid/StaTech-Industry/pull/529/commits/67e684cbf60c15fc1b7732fd25f3d44476f01192)
+- [Remove incorrect information in the overclocking quest](https://github.com/TheStaticVoid/StaTech-Industry/pull/529/commits/198fdf2d0074c0d0291115a859aeb62f258c4df8)
