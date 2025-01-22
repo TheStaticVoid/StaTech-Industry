@@ -1,3 +1,4 @@
+- [Dustrial Decor](https://www.curseforge.com/projects/592067) by BlueDuck & Slomaxonical
 - [3d\-Skin\-Layers](https://www.curseforge.com/projects/521480) by tr7zw
 - [AE2Things](https://www.curseforge.com/projects/1171490) by ProjectET
 - [AE2WTLib](https://www.curseforge.com/projects/459929) by mari\_023, Ridanisaurus, DomamaN202
@@ -27,6 +28,7 @@
 - [Beenfo](https://www.curseforge.com/projects/357256) by Giselbaer
 - [Better Advancements](https://www.curseforge.com/projects/272515) by way2muchnoise
 - [Better Combat](https://www.curseforge.com/projects/639842) by Daedelus
+- [betterfpsdist mod](https://www.curseforge.com/projects/582640) by Love, Cheese and small house plants
 - [Better Mount HUD](https://www.curseforge.com/projects/475358) by Lortseam
 - [Better Ping Display](https://www.curseforge.com/projects/406343) by Quintinity
 - [Better Statistics Screen](https://www.curseforge.com/projects/667464) by TheCSDev
@@ -50,6 +52,7 @@
 - [ChoiceTheorem's Overhauled Village](https://www.curseforge.com/projects/623908) by ChoiceTheorem
 - [Chunky](https://www.curseforge.com/projects/433175) by pop4959
 - [CleanCut](https://www.curseforge.com/projects/392805) by Rongmario
+- [clickadv mod](https://www.curseforge.com/projects/511733) by Love, Cheese and small house plants
 - [ClimbLaddersFast](https://www.curseforge.com/projects/459522) by spoorn
 - [Cloth API](https://www.curseforge.com/projects/317121) by shedaniel
 - [Cloth Config v8](https://www.curseforge.com/projects/348521) by shedaniel
@@ -77,7 +80,6 @@
 - [Decorative Blocks](https://www.curseforge.com/projects/362528) by Stohun, lilypuree
 - [Default Options](https://www.curseforge.com/projects/547694) by BlayTheNinth
 - [Disable Custom Worlds Advice](https://www.curseforge.com/projects/401978) by rdvdev2
-- [Dustrial Decor](https://www.curseforge.com/projects/592067) by BlueDuck & Slomaxonical
 - [Easy Magic](https://www.curseforge.com/projects/456239) by Fuzs
 - [Ecologics](https://www.curseforge.com/projects/570463) by SameButDifferent, Zero\_DSRS\_VX, Drigonis, Crispytwig, Irishjevil, Foquito Azul
 - [EldritchMobs](https://www.curseforge.com/projects/392015) by CyborgPigeon
@@ -89,7 +91,6 @@
 - [Expanded Delight](https://www.curseforge.com/projects/620770) by ianm1647
 - [Experience Bug Fix](https://www.curseforge.com/projects/486778) by Mactso, Lupicus
 - [Explorer's Compass](https://www.curseforge.com/projects/491794) by ChaosTheDude
-- [Extended Armor Bars](https://www.curseforge.com/projects/567580) by RebelKeithy
 - [Extended Drawers](https://www.curseforge.com/projects/616602) by MattiDragon
 - [Extreme sound muffler](https://www.curseforge.com/projects/566140) by LeoBeliik
 - [FPS Reducer](https://www.curseforge.com/projects/280294) by bre2el
@@ -121,6 +122,7 @@
 - [Herds Panic](https://www.curseforge.com/projects/429383) by Globox\_Z, Abbanon
 - [Hookshot](https://www.curseforge.com/projects/396512) by Cammie
 - [Iceberg](https://www.curseforge.com/projects/539382) by Grend
+- [idwtialsimmoedm](https://www.curseforge.com/projects/629373) by glisco
 - [Immersive Structure](https://www.curseforge.com/projects/637201) by ChoiceTheorem
 - [Indium](https://www.curseforge.com/projects/459496) by comp500
 - [Industrial Quarry Mod](https://www.curseforge.com/projects/511254) by TEDinc, DissiNL
@@ -128,13 +130,11 @@
 - [InmisAddon](https://www.curseforge.com/projects/666672) by Globox\_Z, Pois1x
 - [Inventory HUD \+](https://www.curseforge.com/projects/357540) by DmitryLovin
 - [Inventory Profiles Next](https://www.curseforge.com/projects/495267) by mirinimi/blackd
-- [Iris](https://www.curseforge.com/projects/993524) by coderbot, IMS212, Justsnoopy30, FoundationGames
 - [Iris](https://github.com/IrisShaders/Iris) by coderbot, IMS212, Justsnoopy30, FoundationGames
+- [Iris Flywheel Compat](https://www.curseforge.com/projects/659897) by Leon
 - [Iron Chests: Restocked](https://www.curseforge.com/projects/498794) by Dev and Upgrade Textures \- ThatGravyBoat, All Other Textures \- Kekie
 - [Item Filters](https://www.curseforge.com/projects/309674) by LatvianModder
 - [Item Model Fix](https://www.curseforge.com/projects/399798) by Pepper\_Bell
-- [Jade](https://www.curseforge.com/projects/324717) by Snownee
-- [Jade Addons](https://www.curseforge.com/projects/656665) by Snownee
 - [JamLib](https://www.curseforge.com/projects/623764) by Jamalam
 - [JourneyMapIntegration](https://www.curseforge.com/projects/525447) by frankV
 - [Journeymap](https://www.curseforge.com/projects/32274) by Mysticdrew, Techbrew
@@ -156,7 +156,6 @@
 - [Lootr](https://www.curseforge.com/projects/615106) by ZestyBlaze, Noobanidus
 - [Low Fire](https://www.curseforge.com/projects/405532) by UltimateBoomer
 - [Lumberaxe](https://www.curseforge.com/projects/880289) by TacoMonkey, Deadeye Dutch
-- [MI Sound Addon](https://www.curseforge.com/projects/910125) by static
 - [Macaw's Paintings](https://www.curseforge.com/projects/438116) by Sketch Peachy and Sketch Macaw
 - [MidnightLib](https://www.curseforge.com/projects/488090) by Motschen, TeamMidnightDust
 - [MixinTrace](https://www.curseforge.com/projects/433447) by comp500
@@ -164,6 +163,7 @@
 - [Mod Menu](https://www.curseforge.com/projects/308702) by Prospector, jackassmc, haykam821, TerraformersMC
 - [Modern Dynamics](https://www.curseforge.com/projects/552758) by Technici4n
 - [Modern Industrialization](https://www.curseforge.com/projects/405388) by Azercoco, Technici4n
+- [MI Sound Addon](https://www.curseforge.com/projects/910125) by static
 - [ModernFix](https://www.curseforge.com/projects/790626) by embeddedt
 - [Moonlight](https://www.curseforge.com/projects/499980) by MehVahdJukaar
 - [More Geodes](https://www.curseforge.com/projects/437712) by TheDeathlyCow, SalveMundiProd
@@ -208,17 +208,17 @@
 - [Runes](https://www.curseforge.com/projects/775518) by Daedelus
 - [Satin](https://www.curseforge.com/projects/385463) by Pyrofab
 - [Scannable](https://www.curseforge.com/projects/266784) by Sangar, embeddedt
+- [Smoothchunk mod](https://www.curseforge.com/projects/582327) by Someaddons
 - [ServerCore](https://www.curseforge.com/projects/550579) by Wesley1808
 - [Shear Cows](https://www.curseforge.com/projects/902680) by static
 - [ShetiPhianCore](https://www.curseforge.com/projects/536603) by ShetiPhian, Art: Fruzstrated
 - [Simple Animated Guns](https://www.curseforge.com/projects/664917) by Elidhan
 - [Simple Discord Rich Presence](https://www.curseforge.com/projects/334853) by Sunekaer
-- [Simple Magnets](https://modrinth.com/mod/YyNQVpOu) by SuperMartijn642
+- [Simple Magnets](https://www.curseforge.com/projects/394140) by SuperMartijn642
 - [Simple Voice Chat](https://www.curseforge.com/projects/416089) by Max Henkel
 - [Simply Light](https://www.curseforge.com/projects/300331) by Flanks255
 - [Simply Swords](https://www.curseforge.com/projects/659887) by Sweenus, Konsyliarz42 \(Art\)
 - [Smooth Boot](https://www.curseforge.com/projects/415758) by UltimateBoomer, fantahund
-- [Smoothchunk mod](https://www.curseforge.com/projects/582327) by Someaddons
 - [Snow Under Trees](https://www.curseforge.com/projects/693715) by DeadlyMC, bl4ckscor3, mineblock11
 - [Sodium](https://www.curseforge.com/projects/394468) by JellySquid
 - [Sodium Extra](https://www.curseforge.com/projects/447673) by FlashyReese
@@ -232,8 +232,7 @@
 - [Structory](https://www.curseforge.com/projects/636540) by Stardust Labs
 - [Structory: Towers](https://www.curseforge.com/projects/783522) by Stardust Labs
 - [SuperMartijn642's Config Lib](https://www.curseforge.com/projects/438332) by SuperMartijn642
-- [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) by SuperMartijn642
-- [SuperMartijn642's Core Lib](https://modrinth.com/mod/rOUBggPv) by SuperMartijn642
+- [SuperMartijn642's Core Lib](https://www.curseforge.com/projects/454372) by SuperMartijn642
 - [Superflat World No Slimes](https://www.curseforge.com/projects/344185) by Rick South
 - [Supplementaries](https://www.curseforge.com/projects/412082) by MehVahdJukaar, Plantkillable
 - [Tech Reborn](https://www.curseforge.com/projects/233564) by Team Reborn, modmuss50, drcrazy
@@ -243,8 +242,8 @@
 - [Tip The Scales](https://www.curseforge.com/projects/282313) by Jaredlll08
 - [Toast Manager](https://www.curseforge.com/projects/662724) by Banzetta
 - [Tom's Simple Storage Mod](https://www.curseforge.com/projects/396826) by tom5454
-- [ToolLeveling\+](https://www.curseforge.com/projects/565322) by Buecher\_wurm
 - [ToolStats](https://www.curseforge.com/projects/377109) by Darkhax
+- [ToolLeveling\+](https://www.curseforge.com/projects/565322) by Buecher\_wurm
 - [Towns and Towers](https://www.curseforge.com/projects/626761) by Kubek, Biban\_Auriu and Cristelknight999
 - [Trade Cycling](https://www.curseforge.com/projects/570431) by Max Henkel
 - [Trinkets](https://www.curseforge.com/projects/341284) by Emi, C4
@@ -257,6 +256,7 @@
 - [Visual Workbench](https://www.curseforge.com/projects/500273) by Fuzs
 - [Visuality](https://www.curseforge.com/projects/521126) by PinkGoosik
 - [WMITAF](https://www.curseforge.com/projects/547358) by ShaksterNano
+- [wthit](https://www.curseforge.com/projects/440979) by deirn, Nicholas "TehNut" Ignoffo, ProfMobius
 - [WaveyCapes](https://www.curseforge.com/projects/521594) by tr7zw
 - [Waystones](https://www.curseforge.com/projects/500087) by BlayTheNinth
 - [When Dungeons Arise](https://www.curseforge.com/projects/511812) by Aureljz, DiamondTown & Zephyrusj
@@ -277,10 +277,9 @@
 - [YUNG's Extras](https://www.curseforge.com/projects/590993) by YUNGNICKYOUNG, Acarii
 - [YetAnotherConfigLib](https://www.curseforge.com/projects/667299) by isXander
 - [You're in Grave Danger](https://www.curseforge.com/projects/544912) by b1n\_ry
-- [betterfpsdist mod](https://www.curseforge.com/projects/582640) by Love, Cheese and small house plants
-- [clickadv mod](https://www.curseforge.com/projects/511733) by Love, Cheese and small house plants
+- [Extended Armor Bars](https://www.curseforge.com/projects/567580) by RebelKeithy
+- [cAn i MiNe thIS bLOCk?](https://www.curseforge.com/projects/400929) by shedaniel
 - [cupboard](https://www.curseforge.com/projects/326652) by Someaddon
-- [idwtialsimmoedm](https://www.curseforge.com/projects/629373) by glisco
 - [libIPN](https://www.curseforge.com/projects/679177) by mirinimi/blackd
 - [oωo](https://www.curseforge.com/projects/532610) by glisco, Noaaan, BasiqueEvangelist
 - [spark](https://www.curseforge.com/projects/361579) by Luck
