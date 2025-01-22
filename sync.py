@@ -3,7 +3,7 @@
 import shutil, sys, os
 
 # Change to your prism instance folder
-instance_folder = 'F:/PrismLauncher/instances/StaTech Industry-1.1.14/minecraft'
+instance_folder = 'F:/PrismLauncher/instances/StaTech Industry-1.1.15/minecraft'
 current_dir = '.'
 packwiz = os.getcwd() + '/packwiz.exe cf detect'
 

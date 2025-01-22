@@ -1,0 +1,111 @@
+{
+  general: {
+    // Display Tooltip
+    // Collect data and render the tooltip
+    // Default value: [true]
+    displayTooltip: true,
+    // Sneaky Details
+    // Body text is hidden unless sneaking
+    // Default value: [false]
+    shiftForDetails: false,
+    // Hide Sneak Text
+    // Hide "Sneak for details" text when sneaky details is enabled
+    // Default value: [false]
+    hideShiftText: false,
+    // Display Mode
+    // Tooltip display behavior
+    // Toggle: Display keybind will toggle it on and off
+    // Maintained: Display keybind must be held
+    // Default value: [TOGGLE]
+    // Available values: [HOLD_KEY, TOGGLE]
+    displayMode: "TOGGLE",
+    // Hide from Player List
+    // Hide tooltip while the player list is open
+    // Default value: [true]
+    hideFromPlayerList: true,
+    // Hide from Debug
+    // Hide the tooltip while the debug menu is open
+    // Default value: [true]
+    hideFromDebug: true,
+    // Enable TTS
+    // Read out block and entity names with the system's text to speech processor
+    // Default value: [false]
+    enableTextToSpeech: false,
+    // Rate Limit
+    // How many milliseconds the delay between each server request
+    // Must be at least 250ms
+    // Default value: [250]
+    rateLimit: 250
+  },
+  overlay: {
+    position: {
+      align: {
+        // Default value: [CENTER]
+        // Available values: [LEFT, CENTER, RIGHT]
+        x: "CENTER",
+        // Default value: [TOP]
+        // Available values: [TOP, MIDDLE, BOTTOM]
+        y: "TOP"
+      },
+      anchor: {
+        // Default value: [CENTER]
+        // Available values: [LEFT, CENTER, RIGHT]
+        x: "CENTER",
+        // Default value: [TOP]
+        // Available values: [TOP, MIDDLE, BOTTOM]
+        y: "TOP"
+      },
+      // X Offset
+      // X position relative from screen anchor
+      // Position is affected by scale
+      // Default value: [0]
+      x: 0,
+      // Y Offset
+      // Y position relative from screen anchor
+      // Position is affected by scale
+      // Default value: [0]
+      y: 1,
+      // Boss Bars Overlap
+      // If set to false, the tooltip will move down if there are boss bars visible
+      // Only affect top-center alignment
+      // Default value: [false]
+      bossBarsOverlap: false
+    },
+    color: {
+      // Background Alpha
+      // Default value: [204]
+      backgroundAlpha: 204,
+      // Custom Themes
+      themes: [],
+      // Theme
+      // Default value: [waila:vanilla]
+      activeTheme: "waila:vanilla"
+    },
+    // Scale
+    // How big the tooltip is
+    // 1.0 is the default
+    // Default value: [1.0]
+    scale: 1.0,
+    // Overlay FPS
+    // Lowering the overlay FPS might improve the overall game FPS
+    // Set to 0 to unlock
+    // Default value: [30]
+    fps: 30
+  },
+  // Text formatters
+  formatter: {
+    // Default value: [§9§o%s]
+    modName: "§9§o%s",
+    // Default value: [§f%s]
+    blockName: "§f%s",
+    // Default value: [§f%s]
+    fluidName: "§f%s",
+    // Default value: [§f%s]
+    entityName: "§f%s",
+    // Default value: [§8%s]
+    registryName: "§8%s"
+  },
+  // Internal value, DO NOT TOUCH!
+  // Default value: [0]
+  configVersion: 1
+}

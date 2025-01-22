@@ -327,13 +327,13 @@ ServerEvents.recipes(e => {
     e.shaped(mi('laser_engraver'), [
         'CGC',
         'MHM',
-        'ECE'
+        'ACA'
     ],
     {
-        E: mi('electronic_circuit'),
-        C: mi('cupronickel_wire_magnetic'),
+        A: mi('analog_circuit'),
+        C: mi('copper_wire'),
         H: mi('basic_machine_hull'),
-        M: mi('large_motor'),
+        M: mi('motor'),
         G: '#c:glass_blocks'
     })
     .id('laser_engraver');

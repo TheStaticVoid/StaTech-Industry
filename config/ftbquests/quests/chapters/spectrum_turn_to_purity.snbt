@@ -59,7 +59,9 @@
 			description: [
 				"You've dug deep to get here, but you must dig deeper."
 				""
-				"Nearing the &bbottom of this new world&r you find yourself in, a &anew precious stone&r sits. Find the shimmering stones in this pit of darkness. &oThey also generate in geodes.&r"
+				"Nearing the &bbottom of this new world&r you find yourself in, a &anew precious stone&r sits. Find the shimmering stones in this pit of darkness. "
+				""
+				"&oIf you found the ore, but haven't had the item revealed to you yet, try finding the geode for it!&r"
 			]
 			id: "3AAF1A0973D3EF34"
 			rewards: [
@@ -916,6 +918,8 @@
 				"Metallic resources require unrefined materials such as Raw Iron, resulting in a Small Iron Bud that will grow steadily until it can be safely harvested."
 				""
 				"For crystalline resources, an existing crystal can be used as a seed to grow identical copies of itself."
+				""
+				"&cWarning&r: There's a bit of a bug with the &dCrystallarieum&r at the moment where it will &ccontinue to consume resources&r past what it should. Try only leaving the ink in for a &afew seconds&r before taking it out, otherwise you might lose all your ink!"
 			]
 			id: "6B2598366611E6A0"
 			rewards: [
@@ -1970,5 +1974,6 @@
 			y: 5.0d
 		}
 	]
+	subtitle: ["Dig Down and Find Faith"]
 	title: "&aSpectrum: Turn to Purity&r"
 }
