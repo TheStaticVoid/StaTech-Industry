@@ -29,9 +29,11 @@ ItemEvents.tooltip(e => {
     ];
 
     // -- ADD TOOLTIP TO ALL MACHINES IN LIST -- //
-    e.addAdvanced(CUSTOM_MACHINES, (item, adv, text) => {
-        text.add(Text.gold('Added by StaTech Industry'));
-	});
+    CUSTOM_MACHINES.forEach(item => {
+        e.addAdvanced(item, (item, adv, text) => {
+            text.add(Text.gold('Added by StaTech Industry'));
+        });
+    });
     e.addAdvanced(kj('clear_glass'), (item, adv, text) => {
         text.add(Text.yellow('Completely see through when placed'));
     });
