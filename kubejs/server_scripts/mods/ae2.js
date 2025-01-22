@@ -163,7 +163,7 @@ ServerEvents.recipes(e => {
         'SES'
     ],
     {
-        S: '#c:aluminum_plates',
+        S: '#c:steel_plates',
         G: '#c:glass',
         F: ae('fluix_glass_cable'),
         I: ae('io_port'),
@@ -178,8 +178,8 @@ ServerEvents.recipes(e => {
         'SES'
     ],
     {
-        S: '#c:aluminum_plates',
-        H: mi('advanced_machine_hull'),
+        S: mi('steel_large_plate'),
+        H: mi('basic_machine_hull'),
         E: ae('engineering_processor'),
         F: ae('fluix_glass_cable')
     })
@@ -223,7 +223,7 @@ ServerEvents.recipes(e => {
     {
         W: '#minecraft:wool',
         C: ae('calculation_processor'),
-        S: '#c:aluminum_plates',
+        S: '#c:steel_plates',
         H: '#c:wooden_chests'
     })
     .id(st('cell_workbench'));
@@ -238,7 +238,7 @@ ServerEvents.recipes(e => {
         G: '#c:glass',
         D: ae('drive'),
         F: ae('fluix_glass_cable'),
-        S: '#c:aluminum_plates',
+        S: '#c:steel_plates',
         L: ae('logic_processor')
     })
     .id(st('io_port'));
@@ -336,7 +336,7 @@ ServerEvents.recipes(e => {
         P: ae('spatial_pylon'),
         F: ae('fluix_glass_cable'),
         C: ae('spatial_cell_component_128'),
-        S: '#c:aluminum_plates',
+        S: '#c:steel_plates',
         E: ae('engineering_processor')
     })
     .id(st('spatial_anchor'));
@@ -458,7 +458,7 @@ ServerEvents.recipes(e => {
     {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
-        S: '#c:aluminum_plates'
+        S: '#c:steel_plates'
     })
     .id(st('item_cell_housing'));
 
@@ -498,7 +498,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         Q: '#c:certus_quartz',
-        S: '#c:aluminum_plates'
+        S: '#c:steel_plates'
     })
     .id(st('view_cell'));
 
@@ -512,7 +512,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_1k'),
-        S: '#c:aluminum_plates'
+        S: '#c:steel_plates'
     })
     .id(st('item_storage_cell_1k'));
 
@@ -526,7 +526,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_4k'),
-        S: '#c:aluminum_plates'
+        S: '#c:steel_plates'
     })
     .id(st('item_storage_cell_4k'));
 
@@ -540,7 +540,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_16k'),
-        S: '#c:aluminum_plates'
+        S: '#c:steel_plates'
     })
     .id(st('item_storage_cell_16k'));
 
@@ -554,7 +554,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_64k'),
-        S: '#c:aluminum_plates'
+        S: '#c:steel_plates'
     })
     .id(st('item_storage_cell_64k'));
 
@@ -568,7 +568,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_256k'),
-        S: '#c:aluminum_plates'
+        S: '#c:steel_plates'
     })
     .id(st('item_storage_cell_256k'));
 
@@ -581,7 +581,7 @@ ServerEvents.recipes(e => {
     {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
-        S: '#c:annealed_copper_plates'
+        S: '#c:copper_plates'
     })
     .id(st('fluid_cell_housing'));
 
@@ -595,7 +595,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_1k'),
-        S: '#c:annealed_copper_plates'
+        S: '#c:copper_plates'
     })
     .id(st('fluid_storage_cell_1k'));
 
@@ -609,7 +609,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_4k'),
-        S: '#c:annealed_copper_plates'
+        S: '#c:copper_plates'
     })
     .id(st('fluid_storage_cell_4k'));
 
@@ -623,7 +623,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_16k'),
-        S: '#c:annealed_copper_plates'
+        S: '#c:copper_plates'
     })
     .id(st('fluid_storage_cell_16k'));
 
@@ -637,7 +637,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_64k'),
-        S: '#c:annealed_copper_plates'
+        S: '#c:copper_plates'
     })
     .id(st('fluid_storage_cell_64k'));
 
@@ -651,7 +651,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('cell_component_256k'),
-        S: '#c:annealed_copper_plates'
+        S: '#c:copper_plates'
     })
     .id(st('fluid_storage_cell_256k'));
 
@@ -665,7 +665,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('spatial_cell_component_2'),
-        S: '#c:aluminum_plates'
+        S: '#c:steel_plates'
     })
     .id(st('spatial_storage_cell_2'));
 
@@ -679,7 +679,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('spatial_cell_component_16'),
-        S: '#c:aluminum_plates'
+        S: '#c:steel_plates'
     })
     .id(st('spatial_storage_cell_16'));
 
@@ -693,7 +693,7 @@ ServerEvents.recipes(e => {
         G: ae('quartz_glass'),
         R: '#c:redstone_dusts',
         C: ae('spatial_cell_component_128'),
-        S: '#c:aluminum_plates'
+        S: '#c:steel_plates'
     })
     .id(st('spatial_storage_cell_128'));
 
@@ -807,7 +807,7 @@ ServerEvents.recipes(e => {
         L: '#c:lapis_blocks',
         A: ae('annihilation_plane'),
         C: ae('advanced_card'),
-        I: '#c:aluminum_blocks'
+        I: '#c:steel_blocks'
     })
     .id(st('magnet_card'));
 

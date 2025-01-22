@@ -17,8 +17,8 @@
 		image: "ae2:item/blank_pattern"
 		rotation: 0.0d
 		width: 1.0d
-		x: -1.5d
-		y: -2.5d
+		x: -2.5d
+		y: -2.0d
 	}]
 	order_index: 2
 	quest_links: [ ]
@@ -8818,7 +8818,7 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: 15.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -8850,7 +8850,7 @@
 				type: "item"
 			}]
 			x: 19.0d
-			y: 15.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -8935,8 +8935,8 @@
 				}
 			]
 			title: "Crafting CPU"
-			x: 18.0d
-			y: 16.5d
+			x: 16.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["67071C306C1C3A42"]
@@ -8971,7 +8971,7 @@
 				item: "ae2:wireless_crafting_terminal"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 12.5d
 			y: 17.5d
 		}
 		{
@@ -9009,7 +9009,7 @@
 				item: "ae2:wireless_access_point"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.5d
 			y: 15.0d
 		}
 		{
@@ -9098,7 +9098,7 @@
 				}
 			]
 			title: "Quantum Ring"
-			x: 12.5d
+			x: 13.5d
 			y: 13.5d
 		}
 		{
@@ -9116,18 +9116,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "3403F1DB53BDA4EB"
-					table_id: 3355045530268513601L
+					id: "773D42DBDA04636B"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "00A195F42F45BFE1"
+					id: "11E50E12AD88FDE7"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "410A9B6E6D0AB0BF"
+					id: "4FCCD0520D8D3788"
 					type: "xp"
 					xp: 10
 				}
@@ -9142,8 +9142,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: 16.5d
+			x: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["2D9D7FFDA18C95B5"]
@@ -9152,18 +9152,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "0239C7F02C33D148"
-					table_id: 3355045530268513601L
+					id: "49F09E6C1391A548"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "25D5B7808CCED9B7"
+					id: "27B1E3584B080256"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "297A52F2F2A81D88"
+					id: "3C6C65BFD03B8EBB"
 					type: "xp"
 					xp: 10
 				}
@@ -9178,8 +9178,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: 16.5d
+			x: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2BA27AB43B03F656"]
@@ -9196,18 +9196,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "296EEC7D92979F7A"
-					table_id: 3355045530268513601L
+					id: "6A56F454516F292B"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "39628316F6CF87E5"
+					id: "6A1909C3B85E3C22"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "53075B0461E77FEB"
+					id: "219A37A701D80B3C"
 					type: "xp"
 					xp: 10
 				}
@@ -9222,8 +9222,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: 17.5d
+			x: -5.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5270F349E0B5F580"]
@@ -9232,18 +9232,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "084CE95BCE812F22"
-					table_id: 3355045530268513601L
+					id: "148DE926CF1FCC39"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "2E1DF1F73B8D8D31"
+					id: "657EC3FA6CBBFCB3"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "3D9CB1842437E91B"
+					id: "549188A220915F18"
 					type: "xp"
 					xp: 10
 				}
@@ -9258,8 +9258,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: 17.5d
+			x: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0F6CB1AEE71CFB16"]
@@ -9276,18 +9276,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "10B036C4B8C32B60"
-					table_id: 3355045530268513601L
+					id: "3F8619A5379715F1"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "3108A67D5F1CB59C"
+					id: "69653B92E4C095BC"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "67201E12978DD2D7"
+					id: "727814E3F0E8D478"
 					type: "xp"
 					xp: 10
 				}
@@ -9302,8 +9302,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: 18.5d
+			x: -6.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["267CC8AF07E94284"]
@@ -9312,18 +9312,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "1EA32159521955CA"
-					table_id: 3355045530268513601L
+					id: "7C6F8948C87A7A3A"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "093C3E59AC2EDFB4"
+					id: "1D448F62719611EC"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "60EB8E9A68643185"
+					id: "7D488B57C57161F0"
 					type: "xp"
 					xp: 10
 				}
@@ -9338,8 +9338,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: 18.5d
+			x: -6.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0338A0F80C416F09"]
@@ -9356,18 +9356,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "2D30C17213C7D931"
-					table_id: 3355045530268513601L
+					id: "30EFB170DE7A9BC6"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "35345F9D65702B7E"
+					id: "244597E5E8E99C53"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "596EE1F3E3A12BCB"
+					id: "558FE59050BDA4FB"
 					type: "xp"
 					xp: 10
 				}
@@ -9382,8 +9382,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: 19.5d
+			x: -7.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["195CA8E85827FF47"]
@@ -9392,18 +9392,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "54DA2D9A0010590D"
-					table_id: 3355045530268513601L
+					id: "21ABEFD9990891A3"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "31083FEC9AE8467B"
+					id: "3068D8D458B62D18"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "321AC40BA2A9CFBD"
+					id: "71571460CC2926C3"
 					type: "xp"
 					xp: 10
 				}
@@ -9418,8 +9418,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: 19.5d
+			x: -7.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0C4AEF63DE034490"]
@@ -9436,18 +9436,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "5A05BC2376EE5B4F"
-					table_id: 3355045530268513601L
+					id: "068F37C598DA6BC8"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "3CBC7D9E4A6D01C2"
+					id: "65615C74E60B34C4"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "7980C7C62C3B0E43"
+					id: "18559899AB566E5D"
 					type: "xp"
 					xp: 10
 				}
@@ -9462,8 +9462,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.5d
-			y: 20.5d
+			x: -8.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["63339BE5D6244E37"]
@@ -9472,18 +9472,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "5E65F93612701252"
-					table_id: 3355045530268513601L
+					id: "6BBE16857C6AAFC3"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "326F3608D4AB9D7D"
+					id: "2FA2162A7F3EE229"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "4D33B06F8A5BD385"
+					id: "2CC2772F5FA44F37"
 					type: "xp"
 					xp: 10
 				}
@@ -9498,8 +9498,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: 20.5d
+			x: -8.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["13ADC5EC083B64D0"]
@@ -9536,7 +9536,7 @@
 				item: "ae2:quantum_entangled_singularity"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: 13.5d
 		}
 		{
@@ -9572,12 +9572,16 @@
 				item: "ae2:condenser"
 				type: "item"
 			}]
-			x: 19.0d
-			y: 16.5d
+			x: 17.0d
+			y: 15.0d
 		}
 		{
-			dependencies: ["25B33302FC41B67A"]
+			dependencies: ["473C1DE557D3E9C0"]
 			description: [
+				"The following quests are in relation to &eAE2&r's &ddigital storage&r solutions."
+				""
+				"Up to now you've probably been maintaining a &2drawer network&r for the items you are passiving (hopefully) in bulk. I'd recommend &3continuing&r to utilize drawers and &6Storage Buses&r to their fullest extent, but with the &ddigital storage&r you can now store all your other junk in your network! Yay!"
+				""
 				"The &bME Drive&r is a block designed to store &aStorage Cells&r. The &bME Drive&r can hold 10 Storage Cells."
 				""
 				"The front of the drive will display the status of the drive in the corresponding spot with a color:"
@@ -9590,18 +9594,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "07E8ECEE5F069B40"
-					table_id: 3355045530268513601L
+					id: "6E26455B156CB269"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "633C7BA9615214F6"
+					id: "7C123728D4EAAC4B"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "101152536A344FCF"
+					id: "0CB654EE6DEB90BE"
 					type: "xp"
 					xp: 10
 				}
@@ -9613,8 +9617,8 @@
 				item: "ae2:drive"
 				type: "item"
 			}]
-			x: 15.5d
-			y: 15.0d
+			x: -3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5370C2CEF127113C"]
@@ -9644,7 +9648,7 @@
 				item: "ae2wtlib:quantum_bridge_card"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: 15.0d
 		}
 		{
@@ -9679,7 +9683,7 @@
 				item: "ae2wtlib:magnet_card"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 15.0d
 			y: 15.0d
 		}
 		{
@@ -9710,7 +9714,7 @@
 				item: "ae2wtlib:wireless_pattern_encoding_terminal"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.5d
 			y: 17.5d
 		}
 		{
@@ -9741,7 +9745,7 @@
 				item: "ae2wtlib:wireless_pattern_access_terminal"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.5d
 			y: 17.5d
 		}
 		{
@@ -9776,7 +9780,7 @@
 				item: "ae2wtlib:wireless_universal_terminal"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.5d
 			y: 20.0d
 		}
 		{
@@ -9794,29 +9798,7 @@
 				type: "checkmark"
 			}]
 			title: "Wireless Access"
-			x: 14.0d
-			y: 13.5d
-		}
-		{
-			dependencies: ["302958D57C6A10C7"]
-			description: [
-				"The following quests are in relation to &eAE2&r's &ddigital storage&r solutions."
-				""
-				"Up to now you've probably been maintaining a &2drawer network&r for the items you are passiving (hopefully) in bulk. I'd recommend &3continuing&r to utilize drawers and &6Storage Buses&r to their fullest extent, but with the &ddigital storage&r you can now store all your other junk in your network! Yay!"
-			]
-			id: "25B33302FC41B67A"
-			rewards: [{
-				id: "4AA9743C8B967C9F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "367F8C3925763AB8"
-				title: "Click to Acknowledge"
-				type: "checkmark"
-			}]
-			title: "Digital Storage"
-			x: 15.5d
+			x: 15.0d
 			y: 13.5d
 		}
 		{
@@ -9840,7 +9822,7 @@
 				type: "checkmark"
 			}]
 			title: "Autocrafting"
-			x: 17.0d
+			x: 16.0d
 			y: 13.5d
 		}
 		{
@@ -9858,18 +9840,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "310E4224E98ADBC4"
-					table_id: 3355045530268513601L
+					id: "4E3C4FFBF6B36F0D"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "47ED9D877737F08E"
+					id: "4D86F102BDCBF9E5"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "43E7CF6229B2BB47"
+					id: "370402555E83F026"
 					type: "xp"
 					xp: 10
 				}
@@ -9883,8 +9865,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: 16.5d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7769CB237A146531"]
@@ -9901,18 +9883,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "196C5767F0785998"
-					table_id: 3355045530268513601L
+					id: "4F2C66B3726CEB91"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "77E05A6FE3075577"
+					id: "6F837C575A2362F0"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "7F5C5FEC59D07D6C"
+					id: "03CF4ED377C2B77C"
 					type: "xp"
 					xp: 10
 				}
@@ -9926,8 +9908,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: 17.5d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["082E0DAFFBB47676"]
@@ -9944,18 +9926,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "05FCA8A61DA29052"
-					table_id: 3355045530268513601L
+					id: "22D9CB61A461FB77"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "1F4D12B7653AF5F4"
+					id: "3CA4E7A9EA3F205E"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "2F1F51E2F7BD5BC1"
+					id: "08B09524F2326535"
 					type: "xp"
 					xp: 10
 				}
@@ -9969,8 +9951,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: 18.5d
+			x: -6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0CA5E09709661958"]
@@ -9987,18 +9969,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "32D3D06A03F79B9A"
-					table_id: 3355045530268513601L
+					id: "68AE0EFE416AA923"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "076991B6EFAC5086"
+					id: "743302BA0DBDDE75"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "7A241DFD2242F2A6"
+					id: "0010A0162DEAA1B3"
 					type: "xp"
 					xp: 10
 				}
@@ -10012,8 +9994,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: 19.5d
+			x: -7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["369D85E54351A70B"]
@@ -10030,18 +10012,18 @@
 			rewards: [
 				{
 					exclude_from_claim_all: true
-					id: "42D582E4DCBA0742"
-					table_id: 3355045530268513601L
+					id: "3974674B6D2B8FA0"
+					table_id: 238949117979752405L
 					type: "random"
 				}
 				{
 					count: 5
-					id: "764C319064DD5100"
+					id: "75B4532A5E09F1D9"
 					item: "kubejs:coin_rare"
 					type: "item"
 				}
 				{
-					id: "7F442EC76B7F2788"
+					id: "6FE321CAB3C57D98"
 					type: "xp"
 					xp: 10
 				}
@@ -10055,8 +10037,8 @@
 				}
 				type: "item"
 			}]
-			x: 16.5d
-			y: 20.5d
+			x: -8.5d
+			y: -3.0d
 		}
 	]
 	subtitle: ["ZZZzzzapppp"]
