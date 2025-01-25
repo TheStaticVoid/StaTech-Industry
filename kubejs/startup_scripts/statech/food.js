@@ -137,7 +137,8 @@ StartupEvents.registry('item', e => {
     e.create('bottle_cap')
         .displayName('Bottle Cap')
         .rarity('Epic')
-        .tooltip('§aSome far-off land might have\nused this as currency');
+        .tooltip('§aSome far-off land might have')
+        .tooltip('§aused this as currency');
 
     e.create('nuka_cola')
         .displayName('Nuka Cola')
