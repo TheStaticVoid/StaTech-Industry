@@ -1,22 +1,50 @@
 {
   "structurePlacementLogging": {
-    "desc:": "Enables debug logging of structure placement, does spam logs, only recommenced for debugging. Default: false",
+    "desc:": "Enables debug logging of structure placement. Warning: This will spam the logs and is only recommended for debugging purposes. Default: false",
     "structurePlacementLogging": false
   },
   "structureSearchTimeout": {
-    "desc:": "Maximum time in seconds a structure search is allowed to take: default 50",
+    "desc:": "The maximum time (in seconds) a structure search is allowed to take. Default: 50",
     "structureSearchTimeout": 50
   },
   "useFastStructureLookup": {
-    "desc:": "Whether the fast structure search is used, default: true",
+    "desc:": "Enables faster structure search. Default: true",
     "useFastStructureLookup": true
   },
+  "mapSearchRadius": {
+    "desc:": "Specifies the maximum radius map items can search for structures. Lowering this value reduces the time structure searches stall the server but decreases the range in which structures are found. Vanilla: 50, Default: 40",
+    "mapSearchRadius": 40
+  },
+  "locateSearchRadius": {
+    "desc:": "Sets the search radius for the locate structure command. Vanilla: 100, Default: 110",
+    "locateSearchRadius": 110
+  },
+  "globalSearchRadius": {
+    "desc:": "Sets the global maximum structure search radius. The vanilla locate command uses 100. Lowering this value reduces the time structure searches stall the server but decreases the range in which structures are found. Default: 70",
+    "globalSearchRadius": 70
+  },
+  "spacingSeparationModifier": {
+    "desc:": "Adjusts the structure spacing (average spawn distance) and separation (minimum spawn distance). Increasing the value makes structures spawn farther apart, while decreasing it makes them spawn closer together. Vanilla Default: 1.0",
+    "spacingSeparationModifier": 1.0
+  },
+  "autoBiomeCompat": {
+    "desc:": "Automatically analyzes present biomes and adjust structure spawning to include fitting ones. Default: true",
+    "autoBiomeCompat": true
+  },
+  "autoBiomeCompatLogging": {
+    "desc:": "Enables logging for the autoBiomeCompat feature. Default: false",
+    "autoBiomeCompatLogging": false
+  },
+  "autoBiomeCompatStrictness": {
+    "desc:": "Sets a modifier for how strict the autoBiomeCompat is, lower allows adding less similar biomes to be added. E.g. 0.5 decreases the similarity requirements by 50% . Default: 1.0",
+    "autoBiomeCompatStrictness": 1.0
+  },
   "warnMissingRegistryEntry": {
-    "desc:": "Prevents crashes for missing registry entries(e.g. a mod update structure ids) and turns them into a log error message instead, default: true",
+    "desc:": "Prevents crashes due to missing registry entries (e.g., changes in mod structure IDs) by converting them into log error messages instead. Default: true",
     "warnMissingRegistryEntry": true
   },
   "disableLegacyRandomCrashes": {
-    "desc:": "Prevents crashes for multithreaded access of thread specific randoms, default: true",
+    "desc:": "Prevents crashes caused by multithreaded access to thread-specific random number generators. Default: true",
     "disableLegacyRandomCrashes": true
   }
 }

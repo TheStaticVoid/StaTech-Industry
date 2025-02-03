@@ -11,6 +11,11 @@ ServerEvents.recipes(e => {
     let ae = (id) => `ae2:${id}`;
     let kj = (id) => `kubejs:${id}`;
 
+    // -- MODERN INDUSTRIALIZATION REMOVED RECIPES -- //
+    let MI_REMOVED_RECIPES = [
+        mi('vanilla_recipes/steel_forge_hammer')
+    ];
+    MI_REMOVED_RECIPES.forEach(id => { e.remove({id: id}) });
 });
 
 ServerEvents.tags('item', e => {

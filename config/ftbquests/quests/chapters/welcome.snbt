@@ -89,6 +89,11 @@
 				id: "minecraft:writable_book"
 			}
 			id: "0A260F1B9E13182D"
+			rewards: [{
+				id: "31B676DD765398BC"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
 				id: "40F284523C7D1EE5"
 				type: "checkmark"
@@ -113,6 +118,24 @@
 			}]
 			x: 0.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["58F52B959643FF34"]
+			icon: {
+				id: "ftbquests:book"
+			}
+			id: "3367CF1056CBCB36"
+			rewards: [{
+				id: "16D8DCC2DE85362D"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "23998E6F98104B1C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.5d
 		}
 	]
 }

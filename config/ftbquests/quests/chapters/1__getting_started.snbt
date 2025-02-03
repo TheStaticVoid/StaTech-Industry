@@ -3,17 +3,46 @@
 	default_quest_shape: ""
 	filename: "1__getting_started"
 	group: "0C181DF09185DA57"
+	icon: {
+		id: "modern_industrialization:forge_hammer"
+	}
 	id: "37521162FC1896A6"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "74C1F78B349FC947"
-		tasks: [{
-			id: "7EF2422AEF155FED"
-			item: { count: 1, id: "modern_industrialization:forge_hammer" }
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "74C1F78B349FC947"
+			shape: "hexagon"
+			tasks: [{
+				id: "7EF2422AEF155FED"
+				item: { count: 1, id: "modern_industrialization:forge_hammer" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			id: "1BD496A10E957F25"
+			tasks: [{
+				count: 16L
+				id: "4DBA932F3E17B7A7"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BD496A10E957F25"]
+			id: "339F676C828C790D"
+			tasks: [{
+				count: 32L
+				id: "6190BD009D789D58"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:cobblestones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+	]
 }

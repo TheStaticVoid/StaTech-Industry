@@ -13,6 +13,16 @@
 			# Default: 8
 			# Range: 1 ~ 12
 			space_region_render_distance = 8
+			#Makes the sky static (compatible with shaders)
+			static_sky = false
+			#False - Positions along orbits, supernovae and meteor effects are affected when /time set command is used | True - Only planetary rotation is affected, everything else is unaffected (good choice if you want to use /time set 0 command without the sky reverting back to how it looked at tick 0)
+			use_game_ticks = false
+			#Specifies the max distance at which a Space Region can render
+			# Default: 1
+			# Range: 1 ~ 1000
+			tick_multiplier = 1
+			#Enables gravitational lensing effects
+			gravitational_lensing = true
 
 		["Stellar View Client Config"."Overworld Config".client]
 			#Controls how much the Overworld sky rotates when moving along the Z-axis

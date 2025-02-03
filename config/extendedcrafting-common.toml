@@ -1,0 +1,131 @@
+#Settings for general things.
+[General]
+	#Should the Handheld Crafting Table be enabled?
+	handheldWorkbench = true
+
+#Settings for the Crafting Core.
+["Combination Crafting"]
+	#Should the Crafting Core be enabled?
+	enabled = true
+	#How much FE the Crafting Core should hold.
+	# Default: 5000000
+	# Range: > 0
+	powerCapacity = 5000000
+	#How much FE/t the Crafting Core should use when crafting by default.
+	# Default: 500
+	# Range: > 0
+	powerRate = 500
+
+#Settings for the Extended Crafting Tables.
+["Table Crafting"]
+	#Should the Extended Crafting Tables be enabled?
+	enabled = true
+	#Should the Auto Crafting Tables be enabled?
+	autoTablesEnabled = true
+	#Should the Basic Crafting Table inherit vanilla crafting recipes?
+	useVanillaRecipes = true
+	#How long a single auto crafting operation should take (in ticks) by default for the base tier.
+	#Higher tiers multiply this time with the formula <value> x tier.
+	#
+	# Default: 20
+	# Range: > 0
+	autoTableTimeRequired = 20
+	#How much FE the Auto Crafting Tables should hold. Higher tiers use double the previous tier.
+	# Default: 500000
+	# Range: > 0
+	autoTablePowerCapacity = 500000
+	#How much FE the Auto Crafting Tables should use when crafting.
+	# Default: 500
+	# Range: > 0
+	autoTablePowerRate = 500
+	#How much FE the Auto Crafting Tables should use when auto inserting items.
+	# Default: 100
+	# Range: > 0
+	autoTableInsertPowerRate = 100
+
+#Settings for the Quantum Compressor.
+["Quantum Compression"]
+	#Should the Quantum Compressor be enabled?
+	enabled = true
+	#How much FE the Quantum Compressor should hold.
+	# Default: 10000000
+	# Range: > 0
+	powerCapacity = 10000000
+	#How much FE/t the Quantum Compressor should use when crafting by default.
+	# Default: 5000
+	# Range: > 0
+	powerRate = 5000
+
+#Settings for the Ender Crafter.
+["Ender Crafting"]
+	#Should the Ender Crafter be enabled?
+	enabled = true
+	#Should the Auto Ender Crafter be enabled?
+	autoCrafterEnabled = true
+	#How long a single Ender Crafter crafting operation should take (in seconds) by default.
+	# Default: 60
+	# Range: > 1
+	defaultTimeRequired = 60
+	#How much a single Ender Alternator should speed up a craft. This is a percentage of the time required.
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	alternatorEffectiveness = 0.01
+	#How much FE the Auto Ender Crafter should hold.
+	# Default: 500000
+	# Range: > 0
+	autoCrafterPowerCapacity = 500000
+	#How much FE the Auto Ender Crafter should use when auto inserting items.
+	# Default: 100
+	# Range: > 0
+	autoCrafterInsertPowerRate = 100
+
+#Settings for the Flux Crafter.
+["Flux Crafting"]
+	#Should the Flux Crafter be enabled?
+	enabled = true
+	#Should the Auto Flux Crafter be enabled?
+	autoCrafterEnabled = true
+	#How much FE/t the Flux Crafter should pull from each Flux Alternator when crafting by default.
+	# Default: 400
+	# Range: > 0
+	defaultPowerRate = 400
+	#How much FE the Flux Alternator should hold.
+	# Default: 80000
+	# Range: > 0
+	powerCapacity = 80000
+	#How much FE the Auto Flux Crafter should hold.
+	# Default: 500000
+	# Range: > 0
+	autoCrafterPowerCapacity = 500000
+	#How much FE the Auto Flux Crafter should use when auto inserting items.
+	# Default: 100
+	# Range: > 0
+	autoCrafterInsertPowerRate = 100
+
+#Settings for Singularities.
+[Singularities]
+	#Should the Singularities be enabled?
+	enabled = true
+	#The default amount of items required to create a Singularity.
+	# Default: 10000
+	# Range: > 1
+	defaultMaterialsRequired = 10000
+	#The default amount of FE required to create a Singularity.
+	# Default: 5000000
+	# Range: > 0
+	defaultPowerRequired = 5000000
+	#Should default recipes be generated for Singularities?
+	defaultRecipes = true
+	#The item to use as the Catalyst in default Singularity recipes.
+	defaultCatalyst = "extendedcrafting:ultimate_catalyst"
+	#Should the default recipe for the Ultimate Singularity be generated?
+	ultimateSingularityRecipe = true
+
+#Settings for the Recipe Maker.
+["Recipe Maker"]
+	#Should the Recipe Maker be enabled?
+	enabled = true
+	#Should the recipe maker try to use tags when possible?
+	useTags = false
+	#Should the recipe maker add data components when possible?
+	useDataComponents = true

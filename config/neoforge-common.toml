@@ -4,3 +4,5 @@ logUntranslatedItemTagWarnings = "SILENCED"
 #A config option mainly for developers. Logs out modded tags that are using the 'forge' namespace when running on integrated server. Defaults to DEV_SHORT.
 #Allowed Values: SILENCED, DEV_SHORT, DEV_VERBOSE, PROD_SHORT, PROD_VERBOSE
 logLegacyTagWarnings = "DEV_SHORT"
+#Set this to true to enable showing debug information about attributes on an item when advanced tooltips is on.
+attributeAdvancedTooltipDebugInfo = true
