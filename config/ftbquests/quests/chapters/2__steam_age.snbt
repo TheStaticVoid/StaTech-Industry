@@ -3,17 +3,209 @@
 	default_quest_shape: ""
 	filename: "2__steam_age"
 	group: "0C181DF09185DA57"
+	icon: {
+		id: "modern_industrialization:bronze_boiler"
+	}
 	id: "70E1C9FCB66EEC7E"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		id: "412958496FE9150E"
-		tasks: [{
-			id: "1C6115AFBF99BA30"
-			item: { count: 1, id: "modern_industrialization:bronze_boiler" }
-			type: "item"
-		}]
-		x: -1.5d
-		y: -2.5d
-	}]
+	quests: [
+		{
+			dependencies: ["74C1F78B349FC947"]
+			id: "412958496FE9150E"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "1C6115AFBF99BA30"
+				item: { count: 1, id: "modern_industrialization:forge_hammer" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "1F8BAB70F2596659"
+			tasks: [
+				{
+					id: "16703410EDD40967"
+					item: { count: 1, id: "minecraft:iron_helmet" }
+					type: "item"
+				}
+				{
+					id: "52A6AAB0CCA75529"
+					item: { count: 1, id: "minecraft:iron_chestplate" }
+					type: "item"
+				}
+				{
+					id: "0A6726DCEEABC860"
+					item: { count: 1, id: "minecraft:iron_leggings" }
+					type: "item"
+				}
+				{
+					id: "62CF7B7BF626D57E"
+					item: { count: 1, id: "minecraft:iron_boots" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "3312E6F12A7585F2"
+			tasks: [
+				{
+					id: "42EC7D3E5E243709"
+					item: { count: 1, id: "minecraft:golden_helmet" }
+					type: "item"
+				}
+				{
+					id: "6EC81B042DFB5B58"
+					item: { count: 1, id: "minecraft:golden_chestplate" }
+					type: "item"
+				}
+				{
+					id: "444A642D4AFDCFC0"
+					item: { count: 1, id: "minecraft:golden_leggings" }
+					type: "item"
+				}
+				{
+					id: "39D4D5C2A4A23E46"
+					item: { count: 1, id: "minecraft:golden_boots" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "1C02850B615D4688"
+			tasks: [{
+				id: "277419910E4AD40C"
+				item: { count: 1, id: "minecraft:bucket" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "698A9330BC3E0F38"
+			tasks: [{
+				id: "071A1F410E8E979E"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "17392DB9C05AAA2C"
+			tasks: [{
+				id: "027EE48A086CCBFE"
+				item: { count: 1, id: "tiab:time_in_a_bottle" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["09BD2A9838CDFDA2"]
+			id: "0A9F35D7B4116B23"
+			tasks: [{
+				id: "6237BC850F9E7AAD"
+				item: { count: 1, id: "ironchest:iron_chest" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "09BD2A9838CDFDA2"
+			tasks: [{
+				id: "4C41A625073860D5"
+				item: { count: 1, id: "ironchest:copper_chest" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0A9F35D7B4116B23"]
+			id: "0ADC8FAED5365C56"
+			tasks: [{
+				id: "0BD2E8C05A4D4DCE"
+				item: { count: 1, id: "ironchest:gold_chest" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0ADC8FAED5365C56"]
+			id: "5F6730DEA1F9BF4A"
+			tasks: [{
+				id: "0A93460C8BEFFE16"
+				item: { count: 1, id: "ironchest:diamond_chest" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5F6730DEA1F9BF4A"]
+			id: "20D08B1855228C83"
+			tasks: [{
+				id: "26B1C2C662C247DE"
+				item: { count: 1, id: "ironchest:obsidian_chest" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F6730DEA1F9BF4A"]
+			id: "4311515E65C183F6"
+			tasks: [{
+				id: "7135050DA04A6742"
+				item: { count: 1, id: "ironchest:crystal_chest" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "445CFAFF2EC221A7"
+			tasks: [
+				{
+					id: "495E67CCB8DAB703"
+					item: { count: 1, id: "storagedrawers:compacting_drawers_2" }
+					type: "item"
+				}
+				{
+					id: "52AD25A18575BB72"
+					item: { count: 1, id: "storagedrawers:compacting_drawers_3" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "6C0000F5F41F4D69"
+			tasks: [{
+				id: "27D64A7862FCCCE4"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(elevatorid:elevators)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+	]
 }

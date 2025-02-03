@@ -78,5 +78,132 @@
 			x: 4.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["1BD496A10E957F25"]
+			id: "13FB4D096D94C939"
+			shape: "rsquare"
+			tasks: [{
+				id: "41C4B6BE72489D1B"
+				item: { count: 1, id: "torchmaster:megatorch" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1BD496A10E957F25"]
+			id: "35B6D5329AD5C0F9"
+			shape: "rsquare"
+			tasks: [{
+				id: "133ABB577737B679"
+				item: { count: 1, id: "farmingforblockheads:market" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1BD496A10E957F25"]
+			id: "2DA8C540DA9C30D7"
+			shape: "rsquare"
+			tasks: [{
+				id: "22A02FE049F04A43"
+				item: { count: 1, id: "farmersdelight:cutting_board" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1BD496A10E957F25"]
+			id: "0F6AA50379841563"
+			shape: "rsquare"
+			tasks: [{
+				id: "5ADB3BD3F95DD00E"
+				item: { count: 1, id: "farmingforblockheads:feeding_trough" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1BD496A10E957F25"]
+			id: "2BA611005741BE40"
+			shape: "rsquare"
+			tasks: [{
+				id: "652439700E399AF8"
+				item: { count: 1, id: "farmingforblockheads:chicken_nest" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1BD496A10E957F25"]
+			id: "250141B40163F07F"
+			shape: "rsquare"
+			tasks: [{
+				id: "08E9CCE92AD74778"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(storagedrawers:drawers)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["250141B40163F07F"]
+			id: "29681DF9CDBB91CB"
+			shape: "rsquare"
+			tasks: [{
+				id: "553255DE755DC4BC"
+				item: { count: 1, id: "storagedrawers:controller" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["250141B40163F07F"]
+			id: "0E00C082C48F2DF8"
+			shape: "rsquare"
+			tasks: [{
+				id: "285EB1138F0FFA3C"
+				item: { count: 1, id: "storagedrawers:controller_io" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["250141B40163F07F"]
+			id: "6B3459AEC70892F5"
+			shape: "rsquare"
+			tasks: [{
+				id: "3DFC6561F9D8A690"
+				item: { count: 1, id: "storagedrawers:drawer_key" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1BD496A10E957F25"]
+			id: "7464978AD0091E70"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "62B1BCE2CCCFA67A"
+					item: { count: 1, id: "usefulslime:slime_sling" }
+					type: "item"
+				}
+				{
+					id: "51A2A008153BC19B"
+					item: { count: 1, id: "usefulslime:slime_boots" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 1.5d
+		}
 	]
 }

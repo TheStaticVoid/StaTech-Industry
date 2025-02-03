@@ -8,6 +8,7 @@ ServerEvents.recipes(e => {
     let st = (id) => `statech:buildinggadgets2/${id}`;
     let bg = (id) => `buildinggadgets2:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
+    let mc = (id) => `minecraft:${id}`;
     
     // -- BUILDING GADGETS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -15,6 +16,7 @@ ServerEvents.recipes(e => {
         bg('gadget_exchanging'),
         bg('gadget_copy_paste'),
         bg('gadget_destruction'),
+        bg('gadget_cut_paste'),
         bg('template_manager')
     ]; 
     REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
@@ -29,7 +31,7 @@ ServerEvents.recipes(e => {
         I: '#c:plates/iron',
         R: '#c:dusts/redstone',
         D: '#c:gems/diamond',
-        C: mi('electronic_circuit'),
+        C: mi('analog_circuit'),
         L: '#c:gems/lapis'
     })
     .id(st('gadget_building'));
@@ -44,7 +46,7 @@ ServerEvents.recipes(e => {
         I: '#c:plates/iron',
         R: '#c:dusts/redstone',
         D: '#c:gems/diamond',
-        C: mi('electronic_circuit')
+        C: mi('analog_circuit')
     })
     .id(st('gadget_exchanging'));
 
@@ -58,10 +60,24 @@ ServerEvents.recipes(e => {
         I: '#c:plates/iron',
         R: '#c:dusts/redstone',
         E: '#c:gems/emerald',
-        C: mi('electronic_circuit'),
+        C: mi('analog_circuit'),
         L: '#c:gems/lapis'
     })
     .id(st('gadget_copy_paste'));
+
+    // -- CUT & PASTE GADGET -- //
+    e.shaped(bg('gadget_cut_paste'), [
+        'IRI',
+        'SCS',
+        'ILI'
+    ],
+    {
+        I: '#c:plates/iron',
+        R: '#c:dusts/redstone',
+        S: mc('shears'),
+        C: mi('analog_circuit'),
+        L: '#c:gems/lapis'
+    }).id(st('gadget_cut_paste'));
 
     // -- DESTRUCTION GADGET -- //
     e.shaped(bg('gadget_destruction'), [
@@ -88,7 +104,7 @@ ServerEvents.recipes(e => {
         G: '#c:plates/gold',
         R: '#c:dusts/redstone',
         E: '#c:ender_pearls',
-        C: mi('electronic_circuit'),
+        C: mi('analog_circuit'),
         F: mi('basic_machine_hull')
     })
     .id(st('template_manager'));
