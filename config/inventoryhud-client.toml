@@ -9,7 +9,7 @@
 	# Range: 0 ~ 100
 	invAlpha = 0
 	#Toggle on by default
-	byDefault = true
+	byDefault = false
 	#Animate recently picked up items
 	animatedInv = false
 	#Hide background if inventory is empty
@@ -91,7 +91,7 @@
 	invValign = "BOTTOM"
 	#Inventory HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	invHalign = "MIDDLE"
+	invHalign = "LEFT"
 	#Inventory HUD position (X)
 	# Default: 0
 	# Range: -9999 ~ 9999
@@ -99,17 +99,17 @@
 	#Inventory HUD position (Y)
 	# Default: 150
 	# Range: -9999 ~ 9999
-	yPos = 150
+	yPos = 52
 	#Armor HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
 	armValign = "BOTTOM"
 	#Armor HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	armHalign = "MIDDLE"
+	armHalign = "RIGHT"
 	#Armor HUD position (X)
 	# Default: 0
 	# Range: -9999 ~ 9999
-	xArmPos = 0
+	xArmPos = 90
 	#Armor HUD position (Y)
 	# Default: 70
 	# Range: -9999 ~ 9999
@@ -123,11 +123,11 @@
 	#Potion HUD position (X)
 	# Default: 20
 	# Range: -9999 ~ 9999
-	xPotionPos = 20
+	xPotionPos = 0
 	#Potion HUD position (Y)
 	# Default: 20
 	# Range: -9999 ~ 9999
-	yPotionPos = 20
+	yPotionPos = 0
 	#Helmet position (X)
 	# Default: 103
 	# Range: -9999 ~ 9999

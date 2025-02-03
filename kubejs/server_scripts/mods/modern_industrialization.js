@@ -10,12 +10,30 @@ ServerEvents.recipes(e => {
     let mc = (id) => `minecraft:${id}`;
     let ae = (id) => `ae2:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let jh = (id) => `justhammers:${id}`;
 
     // -- MODERN INDUSTRIALIZATION REMOVED RECIPES -- //
     let MI_REMOVED_RECIPES = [
-        mi('vanilla_recipes/steel_forge_hammer')
+        mi('forge_hammer'),
+        mi('vanilla_recipes/steel_forge_hammer_asbl')
     ];
     MI_REMOVED_RECIPES.forEach(id => { e.remove({id: id}) });
+
+
+    // -- LARGE IRON PLATE -- // 
+    e.shapeless(mi('iron_large_plate'), [ jh('iron_hammer'), mc('iron_block')]).damageIngredient(jh('iron_hammer')).id(st('iron_large_plate'));
+
+    // -- FORGE HAMMER -- //
+    e.shaped(mi('forge_hammer'), [
+        'PPP',
+        ' I ',
+        'BBB'
+    ], 
+    {
+        P: mi('iron_large_plate'),
+        I: '#c:ingots/iron',
+        B: '#c:storage_blocks/iron'
+    }).id(st('forge_hammer'));
 });
 
 ServerEvents.tags('item', e => {

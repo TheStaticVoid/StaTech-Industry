@@ -11,15 +11,27 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["4679B4825F85EBB5"]
+			icon: {
+				id: "modern_industrialization:forge_hammer"
+			}
 			id: "74C1F78B349FC947"
 			shape: "hexagon"
-			tasks: [{
-				id: "7EF2422AEF155FED"
-				item: { count: 1, id: "modern_industrialization:forge_hammer" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: -0.5d
+			size: 1.5d
+			tasks: [
+				{
+					id: "7EF2422AEF155FED"
+					item: { count: 1, id: "modern_industrialization:forge_hammer" }
+					type: "item"
+				}
+				{
+					id: "0F90752428944ECE"
+					item: { count: 1, id: "modern_industrialization:iron_hammer" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			id: "1BD496A10E957F25"
@@ -42,6 +54,28 @@
 				type: "item"
 			}]
 			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["339F676C828C790D"]
+			id: "0BD4ABE561F1F2F7"
+			tasks: [{
+				id: "1610BCD0D7539A2C"
+				item: { count: 1, id: "justhammers:iron_hammer" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0BD4ABE561F1F2F7"]
+			id: "4679B4825F85EBB5"
+			tasks: [{
+				id: "2B9E9E9C9E8AEF1F"
+				item: { count: 1, id: "modern_industrialization:iron_large_plate" }
+				type: "item"
+			}]
+			x: 4.5d
 			y: 0.0d
 		}
 	]
