@@ -149,7 +149,18 @@ ServerEvents.recipes(e => {
         tr('crafting_table/armor/quantum_leggings'),
         tr('crafting_table/armor/quantum_boots'),
         tr('crafting_table/uu_matter/ore/iridium_ore'),
-        tr('crafting_table/uu_matter/ore/deepslate_iridium_ore')
+        tr('crafting_table/uu_matter/ore/deepslate_iridium_ore'),
+        //unused small dusts
+        tr('scrapbox/auto/yellow_garnet_small_dust'),
+        tr('scrapbox/auto/uvarovite_small_dust'),
+        tr('scrapbox/auto/phosphorous_small_dust'),
+        tr('scrapbox/auto/olivine_small_dust'),
+        tr('scrapbox/auto/grossular_small_dust'),
+        tr('scrapbox/auto/flint_small_dust'),
+        tr('scrapbox/auto/ender_eye_small_dust'),
+        tr('scrapbox/auto/basalt_small_dust'),
+        tr('scrapbox/auto/andradite_small_dust'),
+        tr('scrapbox/auto/phosphorous_small_dust')
     ];
     DELETED_RECIPES.forEach(id => e.remove({id: id}));
 
@@ -897,6 +908,32 @@ ServerEvents.recipes(e => {
     // -- LEAD INGOT FROM GALENA DUST -- //
     e.smelting(mi('lead_ingot'), tr('galena_dust'), 0.7);
     e.blasting(mi('lead_ingot'), tr('galena_dust'), 0.7);
+    
+    // -- MISSING DUST FROM SMALL DUST -- //
+    e.shapeless(mi('tungsten_dust'), [
+        tr('tungsten_small_dust'),
+        tr('tungsten_small_dust'),
+        tr('tungsten_small_dust'),
+        tr('tungsten_small_dust')
+    ]);
+    e.shapeless(mi('electrum_dust'), [
+        tr('electrum_small_dust'),
+        tr('electrum_small_dust'),
+        tr('electrum_small_dust'),
+        tr('electrum_small_dust')
+    ]);
+    e.shapeless(mi('chromium_dust'), [
+        tr('chrome_small_dust'),
+        tr('chrome_small_dust'),
+        tr('chrome_small_dust'),
+        tr('chrome_small_dust')
+    ]);
+    e.shapeless(mi('invar_dust'), [
+        tr('invar_small_dust'),
+        tr('invar_small_dust'),
+        tr('invar_small_dust'),
+        tr('invar_small_dust')
+    ]);
 });
 
 ServerEvents.tags('item', e => {
