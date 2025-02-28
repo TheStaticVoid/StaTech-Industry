@@ -122,7 +122,6 @@ REIEvents.hide('item', e => {
         tr('heliumplasma'),
         tr('helium3'),
         tr('helium'),
-        tr('titanium_small_dust'),
         tr('alloy_smelter'),
         tr('iron_alloy_furnace'),
         tr('saw_dust'),
@@ -194,11 +193,13 @@ REIEvents.hide('item', e => {
         tr('insulated_gold_cable'),
         tr('insulated_hv_cable'),
         tr('superconductor_cable'),
-        tr('steel_small_dust'),
         tr('wire_mill'),
         tr('rock_cutter'),
-        tr('clay_dust'),
-        tr('clay_small_dust'),
+        tr('sapphire_plate'),
+        tr('yellow_garnet_plate'),
+        tr('ruby_plate'),
+        tr('redstone_plate'),
+        tr('red_garnet_plate'),
         vh('wooden_hammer'),
         vh('stone_hammer'),
         vh('ender_hammer'),
@@ -210,6 +211,26 @@ REIEvents.hide('item', e => {
         vh('slime_hammer')
     ];
     REI_DELETED_ITEMS.forEach(id => e.hide(id));
+    
+    // -- TR UNUSED (SMALL)DUST -- //
+    const DUST_NAMES = [
+        'yellow_garnet',
+        'uvarovite',
+        'phosphorous',
+        'olivine',
+        'grossular',
+        'olivine',
+        'flint',
+        'ender_eye',
+        'basalt',
+        'andradite',
+        'phosphorous',
+        'clay'
+    ];
+    DUST_NAMES.forEach(clayName => {
+        e.hide(tr(`${clayName}_dust`));
+        e.hide(tr(`${clayName}_small_dust`));
+    });
 });
 
 REIEvents.removeCategories(e => {
