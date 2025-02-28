@@ -14,6 +14,6 @@ Ponder.registry((event) => {
         addText(scene, 120, 'Hatches can only go on the same layer as the controller', PonderPalette.WHITE, [6.0, 3.0, 8.0]);
 
         buildUpSlice(scene, size.width, size.depth, 3, 19, 1);
-        addText(scene, 120, 'You\re going to want to use the wrench preview for this one...', PonderPalette.BLUE, [5.0, 3.0, 8.0]);
+        addText(scene, 120, 'You\'re going to want to use the wrench preview for this one...', PonderPalette.BLUE, [5.0, 3.0, 8.0]);
     });
 })
