@@ -200,6 +200,7 @@ REIEvents.hide('item', e => {
         tr('ruby_plate'),
         tr('redstone_plate'),
         tr('red_garnet_plate'),
+        tr('quartz_small_dust'),
         vh('wooden_hammer'),
         vh('stone_hammer'),
         vh('ender_hammer'),
