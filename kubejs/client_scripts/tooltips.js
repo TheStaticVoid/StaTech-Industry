@@ -36,8 +36,9 @@ ItemEvents.tooltip(e => {
             text.add(ADDED_BY_STATECH);
         });
     });
+    
+    const SEE_THROUGH = Text.yellow('Completely see through when placed');
     e.addAdvanced(kj('clear_glass'), (item, adv, text) => {
-        const SEE_THROUGH = Text.yellow('Completely see through when placed');
         text.remove(SEE_THROUGH);
         text.add(SEE_THROUGH);
     });

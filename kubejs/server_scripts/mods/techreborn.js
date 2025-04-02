@@ -910,30 +910,17 @@ ServerEvents.recipes(e => {
     e.blasting(mi('lead_ingot'), tr('galena_dust'), 0.7);
     
     // -- MISSING DUST FROM SMALL DUST -- //
-    e.shapeless(mi('tungsten_dust'), [
-        tr('tungsten_small_dust'),
-        tr('tungsten_small_dust'),
-        tr('tungsten_small_dust'),
-        tr('tungsten_small_dust')
-    ]);
-    e.shapeless(mi('electrum_dust'), [
-        tr('electrum_small_dust'),
-        tr('electrum_small_dust'),
-        tr('electrum_small_dust'),
-        tr('electrum_small_dust')
-    ]);
-    e.shapeless(mi('chromium_dust'), [
-        tr('chrome_small_dust'),
-        tr('chrome_small_dust'),
-        tr('chrome_small_dust'),
-        tr('chrome_small_dust')
-    ]);
-    e.shapeless(mi('invar_dust'), [
-        tr('invar_small_dust'),
-        tr('invar_small_dust'),
-        tr('invar_small_dust'),
-        tr('invar_small_dust')
-    ]);
+    const DUST_FROM_SMALL_DUST = [
+        { in: 'tungsten_small_dust', out: 'tungsten_dust'},
+        { in: 'electrum_small_dust', out: 'electrum_dust'},
+        { in: 'electrum_small_dust', out: 'electrum_dust'},
+        { in: 'chrome_small_dust', out: 'chromium_dust'},
+        { in: 'invar_small_dust', out: 'invar_dust'}
+    ]
+    
+    DUST_FROM_SMALL_DUST.forEach(data => {
+        e.shapeless(mi(data.out), ['4x ' + tr(data.in)]);
+    });
 });
 
 ServerEvents.tags('item', e => {
