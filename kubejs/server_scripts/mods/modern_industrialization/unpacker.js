@@ -87,4 +87,26 @@ ServerEvents.recipes(e => {
             { amount: 8, item: mi('bronze_plate') }
         ]
     );
+    
+    // --  NUCLEAR HATCHES -- //
+    unpacker(
+        st(`disassemble_nuclear_fluid_hatch`),
+        2,
+        200,
+        [ { amount: 1, item: mi('nuclear_fluid_hatch') } ],
+        [
+            { amount: 1, item: mi('highly_advanced_fluid_input_hatch') },
+            { amount: 8, item: mi('nuclear_alloy_plate') }
+        ]
+    );
+    unpacker(
+        st(`disassemble_nuclear_item_hatch`),
+        2,
+        200,
+        [ { amount: 1, item: mi('nuclear_item_hatch') } ],
+        [
+            { amount: 1, item: mi('highly_advanced_item_input_hatch') },
+            { amount: 8, item: mi('nuclear_alloy_plate') }
+        ]
+    );
 });
