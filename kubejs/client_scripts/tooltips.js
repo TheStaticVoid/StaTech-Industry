@@ -7,6 +7,7 @@ ItemEvents.tooltip(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let mi = (id) => `modern_industrialization:${id}`;
     let kj = (id) => `kubejs:${id}`;
+    let aa = (id) => `ad_astra:${id}`;
 
     // -- LIST OF ALL CUSTOM MACHINES -- //
     const CUSTOM_MACHINES = [
@@ -41,5 +42,13 @@ ItemEvents.tooltip(e => {
     e.addAdvanced(kj('clear_glass'), (item, adv, text) => {
         text.remove(SEE_THROUGH);
         text.add(SEE_THROUGH);
+    });
+    
+    const FUEL_REFINERY_TOOLTIP = Text.green('Converts boosted diesel into fuel.');
+    e.addAdvanced(aa('fuel_refinery'), (item, adv, text) => {
+        if (e.shift) {
+            text.remove(1);
+            text.add(1, [FUEL_REFINERY_TOOLTIP]);
+        }
     });
 });
