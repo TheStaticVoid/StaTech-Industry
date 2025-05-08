@@ -15,6 +15,35 @@
 	chapter_group.0C181DF09185DA57.title: "&e-- &6&lChapters &e--"
 	chapter_group.109C2F5A861C0A8B.title: "&e-- &6&lSide Chapters &e--"
 	file.0000000000000001.title: "&eStaTech Industry"
+	quest.023BA92436AFFCFD.quest_desc: [
+		"The &bPipe Config Card&r can be used to camouflage pipes and to &dcopy&r the settings of the &aItem Pipes&r."
+		""
+		"Holding the card in your offhand will automatically apply its settings to any &aItem Pipe&r you place."
+		""
+		"&eHover over the item and press shift to see all the controls&r."
+	]
+	quest.023BA92436AFFCFD.title: "Advanced Pipe Configuration"
+	quest.05CFEDFD3F943887.quest_desc: ["Putting the &6Bronze Drill&r in the &aSteam Quarry&r will return ores in the &6Item Output Hatches&r. Make sure to pipe out the items immediately so you &cdon't void any of the ores&r!"]
+	quest.0697DFDC4CFC970F.quest_desc: [
+		"// TODO TEST EI MULTI // "
+		""
+		"The &aLarge Steam Macerator&r can &eprocess eight items&r in the&6 time it would take to process two&r, while only costing &d4 EU/t&r &o(4mb Steam/t)&r!"
+		""
+		"If you're having trouble forming the multiblock, hold W on the &aLarge Steam Macerator&r in your inventory to view the &bPonder&r scene for the multiblock, additionally you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
+	]
+	quest.06AEE6B2E97A5CA8.quest_desc: [
+		"Similar to the &eFluid Pipe&r you unlocked earlier, the &aItem Pipe&r from &6Modern Dynamics&r allows for a more classic style of item transfer. "
+		""
+		"Items are &cnot transferred instantaneously&r and can be seen flowing from connections. The &3attachments&r for the &eFluid Pipe&r also work with the &aItem Pipe&r and will be needed to actually extract things. By default, items will path towards the &dnearest inventory&r in the pipe."
+	]
+	quest.06AEE6B2E97A5CA8.title: "Modern Dynamics Item Pipe"
+	quest.0799245700C72434.quest_desc: [
+		"&aPaper&r production has been made harder &cfor no reason&r other than being funny! To obtain paper, you must first macerate logs into &bWood Pulp&r. Then you need to mix that &bWood Pulp&r with water to produce paper!"
+		""
+		"You're going to need a lot of &apaper&r for upcoming recipes related to &8Rubber Sheets&r, so don't put off its production!"
+		""
+		"You can also make paper by compressing &2Sugarcane&r, but &cI wouldn't recommend it...&r"
+	]
 	quest.0A260F1B9E13182D.quest_desc: [
 		"&eEMI&f, short for, well, nothing... is the included item search mod in the pack. Knowing how to use &eEMI&f will be key in the completion of the pack. For those experienced with &dJEI&r or &dREI&r you will find this &2very familiar&r."
 		""
@@ -47,15 +76,110 @@
 		"The &aIron Hammer&r from &9Just Hammers&r has the ability to aid you in the &cprimitive plates&r in the next quest."
 	]
 	quest.0BD4ABE561F1F2F7.title: "Smashing!"
+	quest.0C677AFD6CBEE0BC.quest_desc: [
+		"&lCongratulations&r, you've made your &2first circuits&r! With these you can finally start making &eBasic Machine Hulls&r, opening up &3electric machines.&r"
+		""
+		"You'll need a lot of these through progression, &dI'd recommend automating them or batching large quantities&r."
+	]
+	quest.0C6FF5ECDBA86079.quest_desc: ["The &dMagnet&r, when activated, will attract &6nearby dropped items&r to the player."]
+	quest.0D0026F5BAD33588.quest_desc: [
+		"Your machines might be &ctoo noisy&r for your liking. If you want to &asilence&r them, you can craft a &6Steel Mallet&r and &3right click&r to &asilence/unsilence&r them. It has &dno durability&r, so feel free to use it however you like."
+		""
+		"If you'd rather &badjust sounds&r, you can always change them with the &2Extreme Sound Muffler&r GUI in your inventory."
+	]
+	quest.0D0C9043FAA9C215.quest_desc: [
+		"You may have noticed in the recipe for Coke that you have a chance to get &aCreosote&r. By default, since we didn't attach a &2Fluid Output Hatch&r, this fluid is &cvoided&r in the process in the &aCoke Oven&r."
+		""
+		"&aCreosote&r can prove to be very useful, such as being able to make &6Lubricant&r for your &6Cutting Machines&r. If you'd like to start storing &aCreosote&r, attach a &2Fluid Output Hatch&r to the &aCoke Oven&r and pipe the fluid into tanks."
+	]
+	quest.0D0C9043FAA9C215.title: "Creosote"
+	quest.0E1B1EBF81B2DA47.quest_desc: [
+		"You will soon be needing to make &aHeatproof Machine Casings&r, which require &eInvar&r. Invar is made in a &6Mixer&r by combining &b2 Iron Dusts&r with &61 Nickel Dust&r. "
+		""
+		"I wouldn't put off making this until later, as you will need it for the &aElectric Blast Furnace&r sooner than you think!"
+	]
 	quest.0EF2CBA4F28AC98C.quest_desc: ["A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally. &eHold crouch to go faster&r."]
 	quest.0EF2CBA4F28AC98C.quest_subtitle: "To the skies!"
+	quest.0F64D4DF944D4805.quest_desc: [
+		"Similar to the other &3machine upgrades&r you can make with &esteel&r, the &eSteel&r Pump works twice as fast as the &6Bronze&r variant. "
+		""
+		"That means a fully encircled &eSteel&r Pump will pump 2 buckets of &9water&r every 5 seconds. You will probably need this as your steam requirements increase as you progress."
+	]
+	quest.128B3995CB611A45.quest_desc: ["&dBattery Alloy&r is going to be required as you move forward towards your first &eSteam Turbine&r. If you have found some &3Antimony,&r you can go ahead and mix it together with some &dLead Dust&r to make &dBattery Alloy Dust&r."]
+	quest.1471CCC149353D56.quest_desc: ["Mixing your newly created &aCoke Dust&r with &3Iron Dust&r in a &6Mixer&r you can make &eUncooked Steel Dust&r. This is the precursor for &eSteel&r, now you will&2 need another multiblock to smelt it&r!"]
+	quest.1471CCC149353D56.title: "Uncooked Steel Dust"
+	quest.14D630FF21EC6D3F.quest_desc: [
+		"The &6Bronze Cutting Machine&r will give you &ebetter ratios&r for bolts, gears, rings and rods. It uses a little bit of &6lubricant&r every time."
+		""
+		"The &6Cutting Machine&r is also useful for automatically chiseling blocks, getting better ratios for wood, and many other things. Check out the &dEMI&r recipes for it, it's quite expansive!"
+		""
+		"Until you have a &aCoke Oven&r, you don't have any &6Lubricant,&r so maybe wait until you have access to Creosote before making this?"
+	]
+	quest.14D630FF21EC6D3F.quest_subtitle: "Watch your fingers..."
+	quest.165A09B8C42579B9.quest_desc: ["Putting a &cCopper Drill&r in a &aSteam Quarry&r is a good way to get various types of stones. Make sure to pipe out the items immediately to avoid voiding any outputs!"]
 	quest.171B6274F48C81EA.quest_desc: ["Did you &cforget to sleep&r for a bit and have to deal with the &amost annoying mob&r in the game? At least the &bPhantom Membranes&r allow you to upgrade your glider for enhanced speed!"]
 	quest.171B6274F48C81EA.title: "add after packer"
+	quest.199A02F18040CB8A.quest_desc: [
+		"With your &aWiremill&r and &8Rubber Sheets&r you can now craft your first &eCables.&r There are three variants in LV, &eCopper, Tin, and Silver Cables&r."
+		""
+		"There is &cnot any EU loss per block&r as in &3GregTech,&r but there still is a &dmax transfer rate&r. Hovering over the Cable in world will show you how much &2power is flowing through it&r."
+		""
+		"&eCables&r of different colors and types do &cnot connect to one another&r."
+	]
+	quest.199A02F18040CB8A.title: "LV Cables"
 	quest.1BD496A10E957F25.quest_subtitle: "A noble start to an epic journey"
 	quest.1BD496A10E957F25.title: "Punch Trees"
+	quest.1CB630CE60F8B860.quest_desc: [
+		"&aItem Pipes&r are very similar to the &eFluid Pipe&r counterpart, except they &btransfer items instead&r of fluids. Alongside this, there are several other changes:"
+		""
+		"&aItem Pipes&r will not connect to inventories by default, but again you can force a connection. Right-clicking a connection without holding a wrench will allow you to set a filter. By default, whitelist mode is enabled, so no items will be inserted or extracted directly. "
+		""
+		"&aItem Pipes&r will insert items into higher priorities first and they will transfer &e16 items every 3 seconds&r. &dThe amount of items transferred every 3 seconds can be upgraded with motors&r."
+		""
+		"&cNote&r: The &aitem pipes&r are on whitelist by default (which mean only the items in the filter will be moved). You need to switch to blacklist (only the items NOT in the filter will be moved) or add the item you want to move to the filter. &3Be careful that you need to configure BOTH sides of the pipe, otherwise items will not move&r."
+	]
+	quest.1CB630CE60F8B860.quest_subtitle: "EnderIO? Never heard of it."
+	quest.1CB630CE60F8B860.title: "Item Pipes"
+	quest.1D6BFD70720E391D.quest_desc: ["Mixing your newly created &aCoke Dust&r with &3Iron Dust&r in a &6Mixer&r you can make &eUncooked Steel Dust&r. This is the precursor for &eSteel&r, now you will&2 need another multiblock to smelt it&r!"]
+	quest.1D6BFD70720E391D.quest_subtitle: "Not the soda"
+	quest.1F4A0D43BADF0146.quest_desc: [
+		"&eMotors, Pumps, Robot Arms, Conveyors, and Pistons&r are key components moving forward for a lot of the machines you will be making."
+		""
+		"I'd recommend &dcrafting these in bulk&r, as it they are quite tedious to craft by hand. Once you unlock the &6Asssembler&r, it will be significantly easier to make these."
+	]
+	quest.1F4A0D43BADF0146.title: "Basic Components"
 	quest.1F8BAB70F2596659.quest_desc: ["With your Forge Hammer finally available, you can properly protect yourself from the creatures of the night "]
 	quest.1F8BAB70F2596659.title: "Armor Up"
+	quest.20468BAC6863ACE2.quest_desc: ["The &6Bronze Macerator&r is a helpful machine to help you get more value out of the &aores&r you mine. Processing &aores&r will grant you additional &ddusts&r which can be smelted into ingots."]
+	quest.20468BAC6863ACE2.quest_subtitle: "Snap, Crackle, Pop!"
+	quest.2249BA5F88B191ED.quest_desc: ["Individually &dBricks&r need to be packaged down into &2Brick blocks&r. You can do this for now with a &6Bronze Compressor&r, but it's rather slow and you'll want to use a &eSteel Packer&r once it's available for a quicker recipe."]
 	quest.250141B40163F07F.quest_desc: ["Do you have a lot of a single item clogging up your chests? Why not invest in some Storage Drawers. These allow you to store items in bulk and have easy access to them!"]
+	quest.26A89C51A7B9FFDE.title: "&eSteel Ingot"
+	quest.2ACEC02AD4EA03B7.quest_desc: ["The &6Bronze Furnace&r is a furnace that accepts steam instead of &atraditional fuels&r. It is as slow as a normal furnace, but is 10 times &3more fuel efficient&r due to using &7Steam&r."]
+	quest.2F4E5ADB4CB93AA8.quest_desc: [
+		"Using the &dBattery Alloy&r you (hopefully) made earlier, you can make &aRedstone Batteries&r. &aEach tier of machine hull has their own tier of battery&r used to craft them, so expect to be &dmaking these often&r."
+		""
+		"These &abatteries&r on their own &cdo not hold&r a charge, if you'd like a more traditional modded battery, you can follow the next quest to make a &2Red Cell Battery&r from &eTech Reborn&r."
+	]
+	quest.2F5AA3AA2794D431.quest_desc: ["The &aConfigurable Chest&r is not a machine, but once you have &dAnalog Circuits&r, you can craft it. It has &627 configurable slots&r, and auto-extract functionality! Very useful for automation!"]
+	quest.2F8297E50DEF0FC6.quest_desc: [
+		"Once you have &eSteel&r, you can upgrade any one of your hatches on the &aSteam Blast Furnace&r to allow it to process 4 EU/t recipes."
+		""
+		"With that you can run &cRedstone Dust&r through the &eBlast Furnace&r to produce &cMolten Redstone&r. At this point you won't really have a reason to generate any, but it could be useful to cheapen &credstone components&r."
+	]
+	quest.2F8297E50DEF0FC6.title: "Molten Redstone"
+	quest.318F85739D984C5F.quest_desc: ["An upgrade to the &6Bronze Barrel&r. This barrel can hold up to 128 stacks of the same item. Probably really good for all the cobblestone you've been amassing."]
+	quest.31B8B541EED9ADD1.quest_desc: [
+		"With all the components you have available now, you can create a &aBasic Machine Hull&r. This is the basis for most &eelectrical machines&r, so &dbe prepared to make a lot of these&r."
+		""
+		"This marks the end of &eChapter 2&r. &lCongratulations&r! Get ready, as &2LV brings a lot of new opportunities and challenges&r!"
+	]
+	quest.329F257DC1F01889.quest_desc: [
+		"By adding some &6Sulfur Dust&r to the &aSynthetic Oil&r you can create &eSynthetic Rubber&r, which is &26x more efficient&r for making &dRubber Sheets&r."
+		""
+		"&6Sulfur Dust&r can be easily obtained as a byproduct of macerating &bLignite Coal Ore&r."
+	]
+	quest.329F257DC1F01889.title: "More efficient rubber"
 	quest.3367CF1056CBCB36.quest_desc: [
 		"&aMain Progress&r of the pack is provided in each chapter under the &l&e-- &6Chapters &e--&r section. The entries below the &l&e-- &6Side Chapters &e--&r section are not required to progress, but may provide very useful items and tools to aid you in your journey."
 		""
@@ -65,8 +189,21 @@
 	quest.339F676C828C790D.quest_desc: ["You'll need to make some basic tools to get started. Stone seems to be good enough for the material."]
 	quest.339F676C828C790D.quest_subtitle: "Welcome to the Stone Age"
 	quest.339F676C828C790D.title: "Cave Man"
+	quest.343127A42BA0B83C.quest_desc: ["By combining &3Creosote&r with &cRedstone Dust&r in a mixer you can create &6Lubricant&r. This fluid is used in most of the recipes in the &6Cutting Machine&r and also to speed up your &6machine overclocking&r once you reach &aelectrical machines&r."]
+	quest.343127A42BA0B83C.title: "Lubricant"
 	quest.372FE691538408B9.quest_desc: ["This pack includes &aSpice of Life: Carrot Edition&r. This mod rewards you for &btrying different foods&r by increasing the number of &chearts&r you have with more food eaten!"]
 	quest.372FE691538408B9.title: "Spice of Life"
+	quest.38F5AD2112FF7017.quest_desc: [
+		"The &6Bronze Water Pump&r is capable of automatically refilling your &6Bronze Boiler&r instead of doing it by hand!"
+		""
+		"Surrounding a &6Bronze Water Pump&r horizontally with water will have it start producing water for 1 EU/t."
+		""
+		"The pump will produce 1/8th of a bucket of water for every adjacent water source every 5 seconds, for a max output of 1 bucket / 5 seconds. &dTLDR&r, place it like this:"
+		""
+		"{image:statech:textures/item/bronze_pump.png width:160 height:90 align:1}"
+		""
+		"If you haven't made any &aFluid Pipes&r yet, you can place the &6Bronze Boiler&r on top to pump the water directly into it. Make sure to &2adjust the output direction&r of the pump using the &6Wrench&r!"
+	]
 	quest.3938FA0F25E9B17C.quest_desc: [
 		"This pack includes &eJourneyMap&r. This mod allows for &dbookmarking&r locations and viewing the world around you!"
 		""
@@ -75,6 +212,37 @@
 		"Press '&eJ&r' to open the fullscreen map"
 	]
 	quest.3938FA0F25E9B17C.title: "JourneyMap"
+	quest.3AAC60DF5729CB7F.quest_desc: [
+		"Prefer a more &6Thermal Dynamics&r style for your pipes? Unlike &eMI&r pipes, these &cdo not transfer fluids instantly&r, however their price makes them useful when you need a &dcheap solution to moving a fluid&r."
+		""
+		"&6Pipes&r won't move fluids unless you have an &battachment&r to the pipe or a machine is &3auto ejecting&r into it. "
+		""
+		"They can be interacted with using the &eModern Industrialization&r &6Wrench&r."
+		""
+		"&cBe wary of using these extensively on a server&r, as they are significantly more laggy than MI pipes."
+	]
+	quest.3AAC60DF5729CB7F.title: "Modern Dynamics Fluid Pipe"
+	quest.3D96C9B7CE5C705B.quest_desc: ["The &aExplorer's Compass&r is similar to the &2Nature's Compass&r in concept, except it will &efocus in on any structure in the game&r. This can be extremely useful if you want to find a nice place to &dloot&r or &aexplore&r."]
+	quest.3DA3CFDA837FC891.quest_desc: [
+		"&eAttachments&r can be right-clicked on &3pipe connections&r to configure the IO of the pipes."
+		""
+		"&6Extractor&r: Will extract from adjacent inventories"
+		""
+		"&3Attractor&r: Will allow the pipe to pull from connected inventories. Applying this on a pipe will increase the flow rate of the pipe. "
+		""
+		"&2Filter&r: Allows for configuration for the connected inventory."
+	]
+	quest.3DA3CFDA837FC891.title: "Modern Dynamics Attachments"
+	quest.3DE517F923E1627D.quest_desc: ["The &aWiremill&r will be useful in the future for the &acreation of wires&r. Combine the wires with &8Rubber Sheets&r to get &ecables.&r"]
+	quest.3E15836FA16CA65E.quest_desc: [
+		"Each &afluid pipe&r has an &einternal buffer&r of exactly one bucket (1000 millibuckets). When you connect multiple pipes directly, they become linked and &2share their internal storage&r. "
+		""
+		"How much fluid is transferred every tick is then &6bounded by the total capacity of the network&r. For example, 25 fluid pipes linked together can transfer up to &d25000 mb/t of fluid&r - assuming you can produce that much fluid of course!"
+		""
+		"Note that you might be limited by the &etransfer rates of the tanks/machines&r the pipes are connected to."
+	]
+	quest.3E15836FA16CA65E.title: "Fluid Pipe Speed"
+	quest.3EAFA849053E3EF7.quest_desc: ["&eElectrum&r is an alloy of &eGold&r and &7Silver&r. It's used in a variety of crafting recipes in the next chapter, as well as one of the cables that can support &6Medium Voltage&r."]
 	quest.40F3373B8AFDE427.quest_desc: [
 		"&aFire Clay Dust&r can be made by mixing two &7Clay Balls&r and two &cBrick Dusts&r. This dust is used to create &bFire Clay Bricks&r, a sturdy foundation for your starter machinery."
 		""
@@ -86,8 +254,41 @@
 		""
 		"The Forge Hammer also has the added benefit of doubling your ore outputs! Utilizing this feature will be key to help with the cost of the upcoming recipes! "
 	]
+	quest.420CD966462CB7CD.quest_desc: [
+		"The &eSteel Packer&r, a new machine only available in &eSteel&r, can perform simple crafts for you. You can now automate double ingots and pipes. Check &dREI&r for all the recipes."
+		""
+		"The &eSteel Unpacker&r, a new machine only available in &eSteel&r. It acts to unpack items, check &dREI&r for recipes."
+		""
+		"For those of you who have played &bGregTech&r, the &aPacker Templates&r are similar to using &dcircuit numbers&r in recipes. Similar to that system, using one of these items in a recipe will tell the &ePacker&r what recipe to use &cwithout consuming the item&r."
+	]
+	quest.4410F770254B4F8F.quest_desc: ["Instead of crafting entirely new machines, you can use the &eSteel&r Upgrade with a &6Bronze Machine&r in a &3Smithing Table&r to upgrade it into its &eSteel&r version."]
+	quest.4410F770254B4F8F.quest_subtitle: "Upgrades people, upgrades!"
 	quest.445CFAFF2EC221A7.title: "Compacting Drawers"
 	quest.4518B0E50C0271EE.quest_desc: ["The &aNature's Compass&r is a very helpful tool if you're looking for &6any specific biome&r. It provides both the &ddirection&r and the &2distance&r to any biome in the pack."]
+	quest.452D070427B81877.quest_desc: [
+		"Once you have had enough of the &6bronze machines&r, you can start working toward making &eSteel&r. The ultimate goal is to be able to build the &2Steam Quarry&r, a &emultiblock that will dig ores for you&r."
+		""
+		"The first step in &eSteel&r production is to make &bCoke&r by heating coal without oxygen. To do this, you will need to make the &aCoke Oven&r multiblock. &eThe block requirements for building this match directly to the requirements of this quest&r."
+		""
+		"The &aCoke Oven&r block has the role of the &2controller&r for the multiblock. &eEvery multiblock is managed by a controller&r, but you usually &ccannot I/O from the controller directly&r: all input and output goes through &ahatches&r. We need a &2Fluid Input Hatch&r because the &aCoke Oven&r is powered by &7steam&r, we need an item input for the coal and output for the coke."
+		""
+		"If you're having trouble forming the multiblock, hold W on the &aCoke Oven&r in your inventory to view the &bPonder&r scene for the multiblock, additionally you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
+		""
+		"Once the &aCoke Oven&r says &dShape Valid&r, fill the fluid input hatch with &7Steam&r, put Coal in the &3Item Input Hatch&r and you're good to go!"
+		""
+		"Coke will be very useful for &eSteel&r, but it also is a powerful fuel as it lasts four times as long as coal."
+		""
+		"The &aCoke recipe&r doesn't require you to have a &efluid output hatch&r on the &6multiblock&r, but I recommend adding one so you can get some extra &7Creosote&r, as it's important for early game &2rubber&r and &6lubricant&r."
+	]
+	quest.452D070427B81877.quest_subtitle: "Your first multiblock machine!"
+	quest.4609310E0F2CBE02.quest_desc: [
+		"&aThe Steam Quarry&r is a &7steam&r multiblock machine that &cconsumes drills&r to dig deeper than the bedrock and gives you back some ores. It's recommended that before you build this multiblock you create multiple &eSteam Blast Furnaces&r before you attempt to build it because it requires a lot of &eSteel&r."
+		""
+		"To build this multiblock, you will need the material list from this quest. You can check the &bPonder&r scene by holding 'W' on the &aSteam Quarry&r block in your inventory. Alternatively, holding your wrench will show where blocks need to go."
+		""
+		"I'd recommend having multiple &6Item Output Hatches&r in the case you &dget lucky and get multiple ores from a single process&r."
+	]
+	quest.4609310E0F2CBE02.quest_subtitle: "Ores Ad Nauseam"
 	quest.4679B4825F85EBB5.quest_desc: ["You're going to struggle to properly form metals into the shapes you need to begin your factory. You'll need a &aproper workstation&r to achieve this goal. Using a &ehammer&r on an &biron block&r will form a &aLarge Iron Plate&r, which is flat enough to be the top of your &6Forge Hammer&r. "]
 	quest.4857CFD9BEC908EA.quest_desc: [
 		"Throughout your progression in this &3questbook&r you will earn &eStaTech Coins&r. These can be used to &acraft certain materials&r you may be needing in your adventure. "
@@ -98,6 +299,40 @@
 	]
 	quest.4857CFD9BEC908EA.quest_subtitle: "I've seen this before!"
 	quest.4857CFD9BEC908EA.title: "StaTech Coins"
+	quest.49A914FF5521A3CE.quest_desc: ["&bCupronickel&r is an alloy between &cCopper&r and &aNickel&r which will be very important as you aim to create your first electric machines, especially the &aElectric Blast Furnace&r."]
+	quest.4A6A9801A2DD923F.quest_desc: ["&aItem Pipes&r build a path to their connections based on the distance between them. Using an &6Inhibitor&r will increase the path distance calculation for that attachment by &31000&r. Great for making a connection that will be &cavoided&r."]
+	quest.4FB50C49AE5D30B2.quest_desc: [
+		"The &aLarge Steam Boiler&r is an upgraded version of the smaller &6Bronze&r and &eSteel&r Boilers. &cIt uses fuels 8 times faster than the Furnace&r, but it produces &3256 mb/t&r of &7steam&r when fully heated."
+		""
+		"Unlike its single block counterpart, in the &aLarge Steam Boiler&r, &c80% of any unconsumed heat will be lost&r. This means the ratio of energy produced by fuel consumed will be drastically decreased when the &coutput decreases below maximum&r. This will happen when the &aBoiler&r is &enot used continuously at maximum output&r. It would be a good idea to put the &7steam&r produced into a buffer, such as a &2Large Tank&r multiblock structure. (or &eCreate Tanks&r)"
+		""
+		"The &aLarge Steam Boiler&r is comprised of one layer of &eHeatproof Machine Casings&r and three layers of &6Bronze Plated Bricks&r."
+		""
+		"The &dcontroller&r goes on the second layer (i.e. the first layer of Bronze Plated Bricks). The two middle blocks are Bronze Pipe Machine Casings."
+		""
+		"&aHatches must be placed on the bottom layer&r."
+		""
+		"You can check the &bPonder&r scene for this block by holding 'W' on the &aLarge Steam Boiler&r block in your inventory, or hold a wrench to see a diagram of where the blocks need to go."
+	]
+	quest.4FB50C49AE5D30B2.quest_subtitle: "Goodbye fuel"
+	quest.509849FB875BE40D.quest_desc: [
+		"The &aPortable Storage Unit&r can be crafted to transport energy in your inventory. It can be charged and discharged by right-clicking on &2any tier of storage unit&r."
+		""
+		"By default, &cit has no energy storage capacity&r. To &3add capacity&r, you need to fill it with &dbatteries&r by either right-clicking on the &aPSU&r with &dbatteries&r or by right-clicking on a &dbattery&r while holding the &aPSU&r. "
+		""
+		"The &bhigher level the batteries&r are, the &3more capacity&r they will add to the storage. You can get the &dbattery&r back by right-clicking on an empty slot with the &aPSU&r, but be warned, &cany excess energy will be lost&r!"
+		""
+		"&cNo, it cannot be used to charge things in your inventory&r. If you want/need that make the Red Cell Battery from &eTechReborn&r."
+	]
+	quest.537D76EA2DFCE794.quest_desc: [
+		"// TODO TEST EI MULTI // "
+		""
+		"Tired on waiting for those &evanilla furnaces&r to take forever to smelt down your &6ores&r and &2dusts&r? The &aLarge Steam Furnace&r is the solution. This multiblock is capable of &dsmelting 8 items at once for the cost of one&r. This makes it &3extremely efficient&r and an very handy tool if you need to mass smelt stuff and don't want to dive into &eCreate&r!"
+		""
+		"If you're having trouble forming the multiblock, hold W on the &aLarge Steam Furnace&r in your inventory to view the &bPonder&r scene for the multiblock, additionally you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
+	]
+	quest.579C00BCFE5917B2.quest_desc: ["Burning &bRaw Synthetic Oil&r in a &aSteam Blast Furnace&r will get you &3Synthetic Oil&r."]
+	quest.579C00BCFE5917B2.title: "Synthetic Oil"
 	quest.587FF748139BA962.quest_desc: [
 		"The steam machines you will soon be crafting will require steam to function. To create steam, you will need to create the &6Bronze Boiler&r."
 		""
@@ -129,6 +364,36 @@
 	]
 	quest.58F52B959643FF34.quest_subtitle: "Start of A Journey"
 	quest.58F52B959643FF34.title: "Welcome!"
+	quest.591E854F1CE86E2E.quest_desc: [
+		"The &aLarge Tank&r is a multiblock that allows you to store large amounts of some fluid, for example &7steam&r. It can store 64 buckets worth of fluid for every block in the structure (including sides). "
+		""
+		"The &aLarge Tank&r has many possible sizes depending on &bhow much storage you need&r. You can open the size configuration panel by clicking on a button in the controller."
+		""
+		"Only &9pipes may access the tank&r, and &6only through the controller or the &aLarge Tank Hatch&r. &cDon't break the controller&r or you will void all of the stored fluid!"
+		""
+		"If you need to monitor the internals of the &aTank&r, the &eCreate&r &6Stockpile Switch&r is a great tool to do so!"
+		""
+		"If you need help building the various sizes, make sure to hold out a wrench to see where all the blocks need to go. You can also check the &bPonder&r scene by holding 'W' on the &aLarge Tank&r block in your inventory."
+	]
+	quest.593BDCEDCC91B98C.quest_desc: [
+		"With a few steel plates, you can craft the &aAutomatic Trash Can&r. &dIt will destroy any item or fluid that is piped into it&r."
+		""
+		"You can also use it to &cdelete fluids&r in your inputs of machines by &3right clicking&r while holding the &aAutomatic Trash Can&r over the fluid in the &2machine GUI&r."
+	]
+	quest.5B2F6D4ECFE51D74.quest_desc: [
+		"To turn your &eUncooked Steel&r Dust into &eSteel Ingots&r, you will need a &2Blast Furnace&r. For now your &2Blast Furnace&r will be powered off of &7steam&r. "
+		""
+		"You will need the same amount of materials in the quest requirements to build the &2Steam Blast Furnace&r. It's structure is very similar to the &aCoke Oven&r's with &cBricks&r being replaced by &eFire Clay Bricks&r and one extra hollow layer on top. Like before, if you forget how to build the multiblock, you can always hold your wrench to see it or hold 'W' on the &aSteam Blast Furnace&r item to view it's &bPonder&r scene."
+	]
+	quest.5E0A9E4DD75BB890.quest_desc: ["The &eSteel Boiler&r is an upgrade to your &6Bronze Boiler&r. It can produce up to &316 EU/t&r worth of steam, double that of the Bronze."]
+	quest.6248A0CF0932510F.quest_desc: [
+		"This tiny little thing is the &efirst tier&r of &aDanks&r you have access to. What is a &aDank&r you might ask? Think of it as an &2extremely powerful backpack&r. "
+		""
+		"This &aTier 1 Dank&r has &d9 slots&r and each can hold a stacksize of &6256 items&r."
+		""
+		"In addition to it's storage, it has options to &9automatically pickup blocks&r, &3pickup from a filter&r, or &dvoid blocks&r. Think of all that Cobblestone you no longer have to sort through in your inventory!"
+	]
+	quest.63243E96CFB7C972.quest_desc: ["The &eSteel Tank&r is an upgrade to the &6Bronze Tank&r from earlier. It now can store up to &d8000 mB&r of any fluid and continues to retain it's inventory when broken."]
 	quest.649575B205DA42DF.quest_desc: [
 		"The &eMeasuring Tape&r serves one purpose, to measure distance!"
 		""
@@ -136,8 +401,32 @@
 		""
 		"&6Shift right-click&r to clear the measurement."
 	]
+	quest.6758A5BC0D25974B.quest_desc: ["If you plan to use &eModern Dynamic&r pipes with your &6Modern Industrialization&r machines, you will quickly notice you &crun out of faces&r to plug the pipes into. Luckily, the &2Machine Extender&r has your back. To explain it simply, it &dextends the connection&r to the machine into itself, allowing you to &bconnect pipes to it that will count as a connection to the machine&r."]
 	quest.6C0000F5F41F4D69.quest_subtitle: "Going up?"
 	quest.6C0000F5F41F4D69.title: "Elevators"
+	quest.6FABE2927AFE1BF8.quest_desc: [
+		"Once you have &eSteel&r, you can upgrade any one of your hatches on the &aSteam Blast Furnace&r to &3allow it to process 4 EU/t recipes&r."
+		""
+		"&bSoldering Alloy&r is an important fluid to have on hand moving forward, as it can be used in &dassemblers&r to &3reduce the cost of crafting certain items by hand&r."
+	]
+	quest.6FABE2927AFE1BF8.title: "Soldering Alloy"
+	quest.6FEF9845584E6BFA.quest_desc: ["Combining &aSynthetic Oil&r with Paper in a &6Mixer&r will grant you two&2 Rubber Sheets&r. You will unlock a more efficient recipe with petrochemistry in the future."]
+	quest.71184B7B25919038.quest_desc: [
+		"Mixing &eCoke Dust&r and &9Water&r in a &6Mixer&r will get you &bRaw Synthetic Oil&r, which you can burn in a &aSteam Blast Furnace&r to get &bSynthetic Oil&a. Mix it with paper and that gives you &8Rubber Sheets&r!"
+		""
+		"Automating this process is &astrongly recommended&r! Note that paper can be made efficiently from wood using wood pulp."
+	]
+	quest.71184B7B25919038.title: "Raw Synthetic Oil"
+	quest.726994F1ADADFD28.quest_desc: [
+		"Now you may want to consider creating a &aSteam Mining Drill&r to obtain the ores directly without needing a Silk Touch pickaxe."
+		""
+		"The &aSteam Mining Drill&r can mine 3x3 blocks at the time, perfect for your early game mining needs. The &aSteam Mining Drill&r requires both &9water&r and solid fuel (for example coal)."
+		""
+		"Right-click a &9water&r source to fill it with water, and make sure to place some fuel in your drill by &2right-clicking the fuel items on it in your inventory&r. The &9water&r block is not consumed to fill the drill, but will be drained alongside the fuel when it is used to mine."
+	]
+	quest.726D25D4F1A88563.quest_desc: ["With multiblocks from &eModern Industrialization&r, you can share a wall between two separate multiblocks to save on some resources. You cannot place hatches on the shared wall, as it will not form the multiblock if you do so."]
+	quest.726D25D4F1A88563.quest_subtitle: "Save your resources!"
+	quest.726D25D4F1A88563.title: "Wall Sharing"
 	quest.7464978AD0091E70.quest_desc: [
 		"If you're able to find some early slime, the &aSlime Sling&r and &bSlime Boots&r combo cannot be beaten for early game traversal."
 		""
@@ -161,18 +450,56 @@
 	]
 	quest.74C1F78B349FC947.quest_subtitle: "Birthplace of Industry"
 	quest.74C1F78B349FC947.title: "Tools of the Trade"
+	quest.7758D929EC7EE49B.quest_desc: ["The &6Bronze Mixer&r will help you &amix dusts&r, giving you a better ratio for &6Bronze&r and &aFire Clay&r, as well as opening up a recipe for  &eUncooked Steel&r. It can also create &dCobblestone&r and &3Clay&r."]
+	quest.7758D929EC7EE49B.quest_subtitle: "Mix mix, swirl mix"
 	quest.78AB0A6DF24A608F.quest_subtitle: "The spaghetti appetizer"
 	quest.78AB0A6DF24A608F.title: "Fluid Pipes"
+	quest.78BB6FC9581DF35A.quest_desc: [
+		"You might have noticed the tooltip for &aOverclocking&r on your &7steam&r Machines, but that only used &dGunpowder&r. This won't work once you unlock &6Electrical Machines &rthough, to overclock &6Electrical Machines&r, you can use &6Lubricant&r."
+		""
+		"To &6Overclock&r a machine, right-click an &6Electrical Machine&r with a &6lubricant&r container, such as a &6lubricant&r bucket, to overclock it manually. Each 25 mb of &6lubricant&r will add &a1 (overclocking) efficiency tick to the machine&r."
+	]
+	quest.78BB6FC9581DF35A.quest_subtitle: "Useful in the future!"
+	quest.78BB6FC9581DF35A.title: "Overclocking"
+	quest.7AAF70094208A6E9.quest_desc: [
+		"The &6Bronze Compressor&r will turn ingots into plates at a 1:1 ratio. It can also turn each double ingot into 2 plates."
+		""
+		"&eI would recommend making this as soon as possible.&r The resources saved making the many plates will help your progression immensely!"
+	]
+	task.00C980F4D867390D.title: "Any Fluid Input Hatch"
 	task.08E9CCE92AD74778.title: "Any Storage Drawer"
 	task.0D4E7C3A65BB81D0.title: "Any Fluid Pipe"
+	task.15550F9F38F0C615.title: "Click to Acknowledge"
 	task.1A4D6519AAF99F50.title: "Click to Acknowledge"
+	task.1F0A2F22DEFCA291.title: "Any Fluid Input Hatch"
+	task.1FEE1621403E20F6.title: "Any Fluid Output Hatch"
+	task.2024A3B3CA873BFF.title: "Any Item Input Hatch"
 	task.23998E6F98104B1C.title: "Click to Acknowledge"
+	task.23C98B88322298BA.title: "Any LV Cable"
+	task.2592C37F835AB817.title: "Any Item Pipes"
+	task.263444CA8BBFE180.title: "Any Item Input Hatch"
 	task.27D64A7862FCCCE4.title: "Any Elevator"
 	task.39C63B199AA904F9.title: "Click to Acknowledge"
+	task.3A2ADE76DB297471.title: "Any Item Output Hatch"
+	task.3CE135A5298E5A62.title: "Any Fluid Input Hatch"
+	task.4003DF22E9F29CAF.title: "Any Fluid Input Hatch"
 	task.40F284523C7D1EE5.title: "Click to Acknowledge"
+	task.44C11EEF144B8D63.title: "Any Fluid Input Hatch"
+	task.47212208CD54413D.title: "Any Item Input Hatch"
+	task.48A99247A316F590.title: "Click to Acknowledge"
+	task.4B8D8848A930FAD0.title: "Any Item Input Hatch"
+	task.4D2579B878EE1D0D.title: "Any Item Output Hatch"
 	task.4DBA932F3E17B7A7.title: "Any 16x Logs"
 	task.50932E4F50C38E5E.title: "Click to Acknowledge"
 	task.5188560E06DDBDE2.title: "Click to Acknowledge"
+	task.549173CDF1544314.title: "Any Item Input Hatch"
+	task.589F426DE0D734E2.title: "Any Fluid Input Hatch"
+	task.5ACB2533FCDB3FAA.title: "Any Item Input Hatch"
+	task.603B7FEBD79D0F0D.title: "Any Item Output Hatch"
+	task.60C91BC029546E34.title: "Click to Acknowledge"
 	task.6190BD009D789D58.title: "Any 32x Cobblestone"
+	task.6BB46AB516F670EE.title: "Any Item Output Hatch"
 	task.77C22417E41C2538.title: "Click to Acknowledge"
+	task.7B5A9951D239D081.title: "Any Item Output Hatch"
+	task.7F2915A7CEE76E01.title: "Any Fluid Output Hatch"
 }
