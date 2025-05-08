@@ -84,4 +84,83 @@ ServerEvents.tags('item', e => {
         mi('superconductor_cable')
     ];
     SV_CABLES.forEach(id => { e.add(mi('cables/sv'), id) });
+
+    const ENERGY_OUTPUT_HATCH = [
+        mi('lv_energy_output_hatch'),
+        mi('mv_energy_output_hatch'),
+        mi('hv_energy_output_hatch'),
+        mi('ev_energy_output_hatch'),
+        mi('superconductor_energy_output_hatch')
+    ];
+    ENERGY_OUTPUT_HATCH.forEach(id => { e.add('kubejs:energy_output_hatch', id) });
+
+    const FLUID_INPUT_HATCH = [
+        mi('bronze_fluid_input_hatch'),
+        mi('steel_fluid_input_hatch'),
+        mi('advanced_fluid_input_hatch'),
+        mi('turbo_fluid_input_hatch'),
+        mi('highly_advanced_fluid_input_hatch'),
+    ];
+    FLUID_INPUT_HATCH.forEach(id => { e.add('kubejs:fluid_input_hatch', id) });
+
+    const FLUID_OUTPUT_HATCH = [
+        mi('bronze_fluid_output_hatch'),
+        mi('steel_fluid_output_hatch'),
+        mi('advanced_fluid_output_hatch'),
+        mi('turbo_fluid_output_hatch'),
+        mi('highly_advanced_fluid_output_hatch'),
+    ];
+    FLUID_OUTPUT_HATCH.forEach(id => { e.add('kubejs:fluid_output_hatch', id) });
+
+    const ITEM_INPUT_HATCH = [
+        mi('bronze_item_input_hatch'),
+        mi('steel_item_input_hatch'),
+        mi('advanced_item_input_hatch'),
+        mi('turbo_item_input_hatch'),
+        mi('highly_advanced_item_input_hatch'),
+    ];
+    ITEM_INPUT_HATCH.forEach(id => { e.add('kubejs:item_input_hatch', id) });
+
+    const ITEM_OUTPUT_HATCH = [
+        mi('bronze_item_output_hatch'),
+        mi('steel_item_output_hatch'),
+        mi('advanced_item_output_hatch'),
+        mi('turbo_item_output_hatch'),
+        mi('highly_advanced_item_output_hatch'),
+    ];
+    ITEM_OUTPUT_HATCH.forEach(id => { e.add('kubejs:item_output_hatch', id) });
+
+    const NUCLEAR_INPUT_HATCH = [
+        mi('nuclear_fluid_hatch'),
+        mi('nuclear_item_hatch')
+    ];
+    NUCLEAR_INPUT_HATCH.forEach(id => { e.add('kubejs:nuclear_hatch', id) });
+
+    const NUCLEAR_FUEL = [
+        mi('uranium_fuel_rod'),
+        mi('uranium_fuel_rod_double'),
+        mi('uranium_fuel_rod_quad'),
+        mi('le_uranium_fuel_rod'),
+        mi('le_uranium_fuel_rod_double'),
+        mi('le_uranium_fuel_rod_quad'),
+        mi('he_uranium_fuel_rod'),
+        mi('he_uranium_fuel_rod_double'),
+        mi('he_uranium_fuel_rod_quad'),
+        mi('le_mox_fuel_rod'),
+        mi('le_mox_fuel_rod_double'),
+        mi('le_mox_fuel_rod_quad'),
+        mi('he_mox_fuel_rod'),
+        mi('he_mox_fuel_rod_double'),
+        mi('he_mox_fuel_rod_quad')
+    ];
+    NUCLEAR_FUEL.forEach(id => { e.add('kubejs:nuclear_fuel', id) });
+
+    const DEPLETED_FUEL = [
+        mi('uranium_fuel_rod_depleted'),
+        mi('le_uranium_fuel_rod_depleted'),
+        mi('he_uranium_fuel_rod_depleted'),
+        mi('le_mox_fuel_rod_depleted'),
+        mi('he_mox_fuel_rod_depleted')
+    ];
+    DEPLETED_FUEL.forEach(id => { e.add('kubejs:depleted_nuclear_fuel', id) });
 });
