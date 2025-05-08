@@ -26,12 +26,31 @@
 		"&e#tagname&f - This will search &eEMI&r for all items in a specified tag, useful for searching things such as $ingots"
 	]
 	quest.0A260F1B9E13182D.title: "EMI Tips"
+	quest.0B22FBBA7374A2E5.quest_desc: [
+		"Now that you have a &6Bronze Boiler&r built, you can use it to power other &7steam&r machines. The &6boiler&r will automatically produce and send &7steam&r to &aadjacent machines&r, up to 8 millibuckets per tick. "
+		""
+		"&6Bronze machines&r can only process recipes up to 2 EU/t. 1mB of &7steam&r is equivalent to 1 EU, meaning a &6boiler&r at &cmax temperature&r can power &e4 machines simultaneously&r."
+		""
+		"&7Steam Machines&r will &2accept inputs from any side&r, be it items, &7steam&r or another fluid. You can &6lock their slots by clicking on the lock in the interface&r. &2Locked slots only accept one type of item or fluid&r."
+		""
+		"Every machine has an &coutput side&r, and you can enable&e auto-output&r from the interface. Hoppers, pipes, and other automation can &2extract output items from any side&r, of course. You can also &breduce the maximum number of items in a slot by scrolling&r."
+		""
+		"Using a &ewrench&r, you can rotate any machine by right-clicking. You can &3rotate the output side&r by sneaking while you shift-click."
+		""
+		"&cNOTE&r: Breaking a machine with the &ewrench&r &cWILL NOT drop it&r. &aUse a pickaxe for that&r!"
+	]
+	quest.0B22FBBA7374A2E5.quest_subtitle: "Take notes!"
+	quest.0B22FBBA7374A2E5.title: "Interacting with Machines"
 	quest.0BD4ABE561F1F2F7.quest_desc: [
 		"&aHammers&r from the &9Just Hammers&r mod aren't a great tool for properly forming &bplates and other factory materials&r, but they are a great tool for &csmashing things&r! "
 		""
 		"The &aIron Hammer&r from &9Just Hammers&r has the ability to aid you in the &cprimitive plates&r in the next quest."
 	]
 	quest.0BD4ABE561F1F2F7.title: "Smashing!"
+	quest.0EF2CBA4F28AC98C.quest_desc: ["A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally. &eHold crouch to go faster&r."]
+	quest.0EF2CBA4F28AC98C.quest_subtitle: "To the skies!"
+	quest.171B6274F48C81EA.quest_desc: ["Did you &cforget to sleep&r for a bit and have to deal with the &amost annoying mob&r in the game? At least the &bPhantom Membranes&r allow you to upgrade your glider for enhanced speed!"]
+	quest.171B6274F48C81EA.title: "add after packer"
 	quest.1BD496A10E957F25.quest_subtitle: "A noble start to an epic journey"
 	quest.1BD496A10E957F25.title: "Punch Trees"
 	quest.1F8BAB70F2596659.quest_desc: ["With your Forge Hammer finally available, you can properly protect yourself from the creatures of the night "]
@@ -56,7 +75,19 @@
 		"Press '&eJ&r' to open the fullscreen map"
 	]
 	quest.3938FA0F25E9B17C.title: "JourneyMap"
+	quest.40F3373B8AFDE427.quest_desc: [
+		"&aFire Clay Dust&r can be made by mixing two &7Clay Balls&r and two &cBrick Dusts&r. This dust is used to create &bFire Clay Bricks&r, a sturdy foundation for your starter machinery."
+		""
+		"You &close a lot&r of product mixing these dusts by hand, you'll want to prioritize getting a &abetter way&r to mix them.  "
+	]
+	quest.40F3373B8AFDE427.title: "Fire Clay Dust"
+	quest.412958496FE9150E.quest_desc: [
+		"The Forge Hammer is the key component to crafting all of your early game components for machines and other utilities."
+		""
+		"The Forge Hammer also has the added benefit of doubling your ore outputs! Utilizing this feature will be key to help with the cost of the upcoming recipes! "
+	]
 	quest.445CFAFF2EC221A7.title: "Compacting Drawers"
+	quest.4518B0E50C0271EE.quest_desc: ["The &aNature's Compass&r is a very helpful tool if you're looking for &6any specific biome&r. It provides both the &ddirection&r and the &2distance&r to any biome in the pack."]
 	quest.4679B4825F85EBB5.quest_desc: ["You're going to struggle to properly form metals into the shapes you need to begin your factory. You'll need a &aproper workstation&r to achieve this goal. Using a &ehammer&r on an &biron block&r will form a &aLarge Iron Plate&r, which is flat enough to be the top of your &6Forge Hammer&r. "]
 	quest.4857CFD9BEC908EA.quest_desc: [
 		"Throughout your progression in this &3questbook&r you will earn &eStaTech Coins&r. These can be used to &acraft certain materials&r you may be needing in your adventure. "
@@ -67,6 +98,16 @@
 	]
 	quest.4857CFD9BEC908EA.quest_subtitle: "I've seen this before!"
 	quest.4857CFD9BEC908EA.title: "StaTech Coins"
+	quest.587FF748139BA962.quest_desc: [
+		"The steam machines you will soon be crafting will require steam to function. To create steam, you will need to create the &6Bronze Boiler&r."
+		""
+		"The &6Bronze Boiler&r will slowly use fuel to heat itself up. When it's hot enough, and has water in it, &eit will start to produce steam&r."
+		""
+		"The &6Bronze Boiler&r &bwill not continue to consume your fuel&r once its internal steam buffer is full. You can input &3water&r into the boiler by hand with a bucket, or by using &aFluid Pipes&r."
+		""
+		"&cAdding water to an already heated boiler will NOT make it detonate.&r"
+	]
+	quest.587FF748139BA962.quest_subtitle: "Steampunk!"
 	quest.58F52B959643FF34.quest_desc: [
 		"Welcome to &aStaTech Industry&r &d2.0&r!"
 		""
@@ -88,6 +129,13 @@
 	]
 	quest.58F52B959643FF34.quest_subtitle: "Start of A Journey"
 	quest.58F52B959643FF34.title: "Welcome!"
+	quest.649575B205DA42DF.quest_desc: [
+		"The &eMeasuring Tape&r serves one purpose, to measure distance!"
+		""
+		"&6Right-click&r to mark position one, and again to mark position two."
+		""
+		"&6Shift right-click&r to clear the measurement."
+	]
 	quest.6C0000F5F41F4D69.quest_subtitle: "Going up?"
 	quest.6C0000F5F41F4D69.title: "Elevators"
 	quest.7464978AD0091E70.quest_desc: [
@@ -96,6 +144,14 @@
 		"I've taken the liberty of making both of these item's &dUnbreakable&r when you craft them. You're welcome :)"
 	]
 	quest.7464978AD0091E70.title: "Bouncing Around"
+	quest.74B14DB45316C4F8.quest_desc: [
+		"Your &afirst goal&r for progression with your new &bForge Hammer&r is to crush down &cCopper&r and &7Tin&r into dusts."
+		""
+		"With these dusts, you can combine them to create &6Bronze Dust&r, which can be smelted for its respective ingot form. "
+		""
+		"You &close a lot&r of product mixing these dusts by hand, you'll want to prioritize getting a &abetter way&r to mix them. "
+	]
+	quest.74B14DB45316C4F8.title: "Bronze Preparation"
 	quest.74C1F78B349FC947.quest_desc: [
 		"To get started in your industrial journey, you'll need a &aForge Hammer&r and a &eHammer&r from &6Modern Industrialization&r. &eHammers&r from any other mod will &cNOT WORK&r in the &aForge Hammer&r!"
 		""
@@ -105,7 +161,11 @@
 	]
 	quest.74C1F78B349FC947.quest_subtitle: "Birthplace of Industry"
 	quest.74C1F78B349FC947.title: "Tools of the Trade"
+	quest.78AB0A6DF24A608F.quest_subtitle: "The spaghetti appetizer"
+	quest.78AB0A6DF24A608F.title: "Fluid Pipes"
 	task.08E9CCE92AD74778.title: "Any Storage Drawer"
+	task.0D4E7C3A65BB81D0.title: "Any Fluid Pipe"
+	task.1A4D6519AAF99F50.title: "Click to Acknowledge"
 	task.23998E6F98104B1C.title: "Click to Acknowledge"
 	task.27D64A7862FCCCE4.title: "Any Elevator"
 	task.39C63B199AA904F9.title: "Click to Acknowledge"

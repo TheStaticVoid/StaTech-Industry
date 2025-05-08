@@ -26,6 +26,7 @@
 		{
 			dependencies: ["412958496FE9150E"]
 			id: "1F8BAB70F2596659"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "16703410EDD40967"
@@ -48,139 +49,109 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["412958496FE9150E"]
-			id: "3312E6F12A7585F2"
-			tasks: [
-				{
-					id: "42EC7D3E5E243709"
-					item: { count: 1, id: "minecraft:golden_helmet" }
-					type: "item"
-				}
-				{
-					id: "6EC81B042DFB5B58"
-					item: { count: 1, id: "minecraft:golden_chestplate" }
-					type: "item"
-				}
-				{
-					id: "444A642D4AFDCFC0"
-					item: { count: 1, id: "minecraft:golden_leggings" }
-					type: "item"
-				}
-				{
-					id: "39D4D5C2A4A23E46"
-					item: { count: 1, id: "minecraft:golden_boots" }
-					type: "item"
-				}
-			]
-			x: -0.5d
-			y: -1.0d
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["412958496FE9150E"]
 			id: "1C02850B615D4688"
+			shape: "rsquare"
 			tasks: [{
 				id: "277419910E4AD40C"
 				item: { count: 1, id: "minecraft:bucket" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["412958496FE9150E"]
-			id: "698A9330BC3E0F38"
-			tasks: [{
-				id: "071A1F410E8E979E"
-				item: { count: 1, id: "naturescompass:naturescompass" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: -4.0d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["412958496FE9150E"]
 			id: "17392DB9C05AAA2C"
+			shape: "rsquare"
 			tasks: [{
 				id: "027EE48A086CCBFE"
 				item: { count: 1, id: "tiab:time_in_a_bottle" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.0d
+			x: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["09BD2A9838CDFDA2"]
 			id: "0A9F35D7B4116B23"
+			shape: "rsquare"
 			tasks: [{
 				id: "6237BC850F9E7AAD"
 				item: { count: 1, id: "ironchest:iron_chest" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["412958496FE9150E"]
 			id: "09BD2A9838CDFDA2"
+			shape: "rsquare"
 			tasks: [{
 				id: "4C41A625073860D5"
 				item: { count: 1, id: "ironchest:copper_chest" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -1.0d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0A9F35D7B4116B23"]
 			id: "0ADC8FAED5365C56"
+			shape: "rsquare"
 			tasks: [{
 				id: "0BD2E8C05A4D4DCE"
 				item: { count: 1, id: "ironchest:gold_chest" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.0d
+			x: -5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0ADC8FAED5365C56"]
 			id: "5F6730DEA1F9BF4A"
+			shape: "rsquare"
 			tasks: [{
 				id: "0A93460C8BEFFE16"
 				item: { count: 1, id: "ironchest:diamond_chest" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.0d
+			x: -6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5F6730DEA1F9BF4A"]
 			id: "20D08B1855228C83"
+			shape: "rsquare"
 			tasks: [{
 				id: "26B1C2C662C247DE"
 				item: { count: 1, id: "ironchest:obsidian_chest" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 3.0d
+			x: -7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5F6730DEA1F9BF4A"]
 			id: "4311515E65C183F6"
+			shape: "rsquare"
 			tasks: [{
 				id: "7135050DA04A6742"
 				item: { count: 1, id: "ironchest:crystal_chest" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.0d
+			x: -7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["412958496FE9150E"]
 			id: "445CFAFF2EC221A7"
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "495E67CCB8DAB703"
@@ -194,18 +165,171 @@
 				}
 			]
 			x: -3.5d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["412958496FE9150E"]
 			id: "6C0000F5F41F4D69"
+			shape: "rsquare"
 			tasks: [{
 				id: "27D64A7862FCCCE4"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(elevatorid:elevators)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -1.5d
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "0EF2CBA4F28AC98C"
+			shape: "rsquare"
+			tasks: [{
+				id: "52655C43F0FB00D4"
+				item: { count: 1, id: "hangglider:hang_glider" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0EF2CBA4F28AC98C"]
+			id: "171B6274F48C81EA"
+			shape: "rsquare"
+			tasks: [{
+				id: "7EDDAC45EA4446E2"
+				item: { count: 1, id: "hangglider:reinforced_hang_glider" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "649575B205DA42DF"
+			shape: "rsquare"
+			tasks: [{
+				id: "1799EAD82A1018A4"
+				item: { count: 1, id: "measurements:tape_measure" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "4518B0E50C0271EE"
+			shape: "rsquare"
+			tasks: [{
+				id: "55F448AF6C54FB65"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["74B14DB45316C4F8"]
+			id: "15786F062E934BFF"
+			shape: "rsquare"
+			tasks: [{
+				id: "3C003BDAA2455E86"
+				item: { count: 1, id: "modern_industrialization:bronze_barrel" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["74B14DB45316C4F8"]
+			id: "7B0D4508DF6DE961"
+			shape: "rsquare"
+			tasks: [{
+				id: "2167FC5683E6B56E"
+				item: { count: 1, id: "modern_industrialization:bronze_tank" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "74B14DB45316C4F8"
+			tasks: [
+				{
+					count: 3L
+					id: "0DC65307365F2013"
+					item: { count: 1, id: "modern_industrialization:copper_dust" }
+					type: "item"
+				}
+				{
+					id: "14A3135A0EBE81B2"
+					item: { count: 1, id: "modern_industrialization:tin_dust" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "40F3373B8AFDE427"
+			tasks: [{
+				count: 12L
+				id: "21BD3162B2148E8F"
+				item: { count: 1, id: "modern_industrialization:fire_clay_dust" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"40F3373B8AFDE427"
+				"74B14DB45316C4F8"
+			]
+			id: "587FF748139BA962"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3C2960471EBC7DD8"
+				item: { count: 1, id: "modern_industrialization:bronze_boiler" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["74B14DB45316C4F8"]
+			id: "78AB0A6DF24A608F"
+			shape: "rsquare"
+			tasks: [{
+				id: "0D4E7C3A65BB81D0"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(modern_industrialization:fluid_pipes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["587FF748139BA962"]
+			icon: {
+				id: "modern_industrialization:wrench"
+			}
+			id: "0B22FBBA7374A2E5"
+			rewards: [{
+				id: "4622500A7CB94021"
+				item: {
+					count: 1
+					id: "modern_industrialization:wrench"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A4D6519AAF99F50"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -2.5d
 		}
 	]
 }
