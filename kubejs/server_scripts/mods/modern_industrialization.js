@@ -15,7 +15,9 @@ ServerEvents.recipes(e => {
     // -- MODERN INDUSTRIALIZATION REMOVED RECIPES -- //
     let MI_REMOVED_RECIPES = [
         mi('forge_hammer'),
-        mi('vanilla_recipes/steel_forge_hammer_asbl')
+        mi('vanilla_recipes/steel_forge_hammer_asbl'),
+        mi('materials/bronze_dust'),
+        mi('materials/fire_clay_dust')
     ];
     MI_REMOVED_RECIPES.forEach(id => { e.remove({id: id}) });
 
@@ -34,6 +36,18 @@ ServerEvents.recipes(e => {
         I: '#c:ingots/iron',
         B: '#c:storage_blocks/iron'
     }).id(st('forge_hammer'));
+
+    // -- BRONZE DUST -- //
+    e.shapeless('2x ' + mi('bronze_dust'), [ '3x ' + mi('copper_dust'), mi('tin_dust')]).id(st('bronze_dust'));
+
+    // -- FIRE CLAY DUST -- //
+    e.shaped(mi('fire_clay_dust'), [
+        'CB',
+        'CB'
+    ], {
+        C: mc('clay_ball'),
+        B: mi('brick_dust')
+    }).id(st('fire_clay_dust'));
 });
 
 ServerEvents.tags('item', e => {
