@@ -6,9 +6,6 @@
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:measurements/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ms = (id) => `measurements:${id}`;
 
     let MEASUREMENTS_REMOVED_RECIPES = [
         ms('tape_measure')

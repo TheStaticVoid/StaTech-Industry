@@ -6,9 +6,6 @@
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:hangglider/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let hg = (id) => `hangglider:${id}`;
 
     let HANGGLIDER_REMOVED_RECIPES = [
         hg('glider_wing'),

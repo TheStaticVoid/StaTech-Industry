@@ -4,10 +4,6 @@
 // -----------------------------------------
 
 ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let st = (id) => `statech:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-
     // ------------------- //
     // -- STATECH COINS -- //
     // ------------------- //

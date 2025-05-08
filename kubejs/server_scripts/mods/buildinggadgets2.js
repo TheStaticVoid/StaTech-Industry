@@ -6,9 +6,6 @@
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:buildinggadgets2/${id}`;
-    let bg = (id) => `buildinggadgets2:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
     
     // -- BUILDING GADGETS REMOVED RECIPES -- //
     const REMOVED_RECIPES = [

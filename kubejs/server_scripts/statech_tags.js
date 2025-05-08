@@ -4,10 +4,6 @@
 // -----------------------------------------
 
 ServerEvents.tags('item', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let kj = (id) => `kubejs:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-
     const COINS = [
         kj('coin_common'),
         kj('coin_rare'),

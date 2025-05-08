@@ -6,11 +6,6 @@
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let jh = (id) => `justhammers:${id}`;
 
     // -- MODERN INDUSTRIALIZATION REMOVED RECIPES -- //
     let MI_REMOVED_RECIPES = [

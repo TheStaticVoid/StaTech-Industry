@@ -5,8 +5,6 @@
 
 ServerEvents.recipes(e => {
     let st = (id) => `statech:modern_industrialization/forge_hammer/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
     const MATERIALS = [
         'bronze',

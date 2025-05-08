@@ -6,8 +6,6 @@
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
     let VANILLA_REMOVED_RECIPES = [
         mc('piston'),
@@ -16,7 +14,8 @@ ServerEvents.recipes(e => {
         mc('clock'),
         mc('compass'),
         mc('chains'),
-        mc('paper')
+        mc('paper'),
+        mc('bricks')
     ];
     VANILLA_REMOVED_RECIPES.forEach(id => e.remove({ id: id }) );
 

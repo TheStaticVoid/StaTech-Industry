@@ -6,8 +6,6 @@
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:elevatorid/${id}`;
-    let el = (id) => `elevatorid:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
     let COLORS = [
         'white',

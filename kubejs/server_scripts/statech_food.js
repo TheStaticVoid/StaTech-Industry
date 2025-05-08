@@ -4,10 +4,6 @@
 // -----------------------------------------
 
 ItemEvents.foodEaten(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let kj = (id) => `kubejs:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-
     const EatenOutputs = [
         // Eaten food                   // Item to give back
         [ kj('statech_energy'),         kj('empty_can') ],

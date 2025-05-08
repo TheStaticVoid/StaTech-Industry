@@ -6,9 +6,6 @@
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:ironchest/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ic = (id) => `ironchest:${id}`;
 
     let IRONCHEST_REMOVED_RECIPES = [
         ic('chests/vanilla_copper_chest'),

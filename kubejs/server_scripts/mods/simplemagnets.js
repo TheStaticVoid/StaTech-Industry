@@ -6,9 +6,6 @@
 ServerEvents.recipes(e => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:simplemagnets/${id}`;
-    let sm = (id) => `simplemagnets:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
     const SIMPLE_MAGNETS_REMOVED_RECIPES = [
         sm('basicmagnet'),
