@@ -41,7 +41,7 @@ ServerEvents.recipes(e => {
     e.shapeless('2x ' + mi('bronze_dust'), [ '3x ' + mi('copper_dust'), mi('tin_dust')]).id(st('bronze_dust'));
 
     // -- FIRE CLAY DUST -- //
-    e.shaped(mi('fire_clay_dust'), [
+    e.shaped('2x' + mi('fire_clay_dust'), [
         'CB',
         'CB'
     ], {
