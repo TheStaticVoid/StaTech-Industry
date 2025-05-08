@@ -15,7 +15,8 @@ ServerEvents.recipes(e => {
         mc('bucket'),
         mc('clock'),
         mc('compass'),
-        mc('chains')
+        mc('chains'),
+        mc('paper')
     ];
     VANILLA_REMOVED_RECIPES.forEach(id => e.remove({ id: id }) );
 
