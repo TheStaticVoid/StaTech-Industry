@@ -58,7 +58,7 @@ ServerEvents.tags('item', e => {
 
     const MV_CABLES = [
         mi('cupronickel_cable'),
-        mi('kanthal_cable')
+        mi('electrum_cable')
     ];
     MV_CABLES.forEach(id => { e.add(mi('cables/mv'), id) });
 
@@ -80,6 +80,15 @@ ServerEvents.tags('item', e => {
     ];
     SV_CABLES.forEach(id => { e.add(mi('cables/sv'), id) });
 
+    const ENERGY_INPUT_HATCH = [
+        mi('mv_energy_input_hatch'),
+        mi('hv_energy_input_hatch'),
+        mi('ev_energy_input_hatch'),
+        mi('lv_energy_input_hatch'),
+        mi('superconductor_energy_input_hatch')
+    ];
+    ENERGY_INPUT_HATCH.forEach(id => { e.add(mi('energy_input_hatch'), id) });
+
     const ENERGY_OUTPUT_HATCH = [
         mi('lv_energy_output_hatch'),
         mi('mv_energy_output_hatch'),
@@ -87,7 +96,7 @@ ServerEvents.tags('item', e => {
         mi('ev_energy_output_hatch'),
         mi('superconductor_energy_output_hatch')
     ];
-    ENERGY_OUTPUT_HATCH.forEach(id => { e.add('kubejs:energy_output_hatch', id) });
+    ENERGY_OUTPUT_HATCH.forEach(id => { e.add(mi('energy_output_hatch'), id) });
 
     const FLUID_INPUT_HATCH = [
         mi('bronze_fluid_input_hatch'),
@@ -96,7 +105,7 @@ ServerEvents.tags('item', e => {
         mi('turbo_fluid_input_hatch'),
         mi('highly_advanced_fluid_input_hatch'),
     ];
-    FLUID_INPUT_HATCH.forEach(id => { e.add('kubejs:fluid_input_hatch', id) });
+    FLUID_INPUT_HATCH.forEach(id => { e.add(mi('fluid_input_hatch'), id) });
 
     const FLUID_OUTPUT_HATCH = [
         mi('bronze_fluid_output_hatch'),
@@ -105,7 +114,7 @@ ServerEvents.tags('item', e => {
         mi('turbo_fluid_output_hatch'),
         mi('highly_advanced_fluid_output_hatch'),
     ];
-    FLUID_OUTPUT_HATCH.forEach(id => { e.add('kubejs:fluid_output_hatch', id) });
+    FLUID_OUTPUT_HATCH.forEach(id => { e.add(mi('fluid_output_hatch'), id) });
 
     const ITEM_INPUT_HATCH = [
         mi('bronze_item_input_hatch'),
@@ -114,7 +123,7 @@ ServerEvents.tags('item', e => {
         mi('turbo_item_input_hatch'),
         mi('highly_advanced_item_input_hatch'),
     ];
-    ITEM_INPUT_HATCH.forEach(id => { e.add('kubejs:item_input_hatch', id) });
+    ITEM_INPUT_HATCH.forEach(id => { e.add(mi('item_input_hatch'), id) });
 
     const ITEM_OUTPUT_HATCH = [
         mi('bronze_item_output_hatch'),
@@ -123,13 +132,13 @@ ServerEvents.tags('item', e => {
         mi('turbo_item_output_hatch'),
         mi('highly_advanced_item_output_hatch'),
     ];
-    ITEM_OUTPUT_HATCH.forEach(id => { e.add('kubejs:item_output_hatch', id) });
+    ITEM_OUTPUT_HATCH.forEach(id => { e.add(mi('item_output_hatch'), id) });
 
     const NUCLEAR_INPUT_HATCH = [
         mi('nuclear_fluid_hatch'),
         mi('nuclear_item_hatch')
     ];
-    NUCLEAR_INPUT_HATCH.forEach(id => { e.add('kubejs:nuclear_hatch', id) });
+    NUCLEAR_INPUT_HATCH.forEach(id => { e.add(mi('nuclear_hatch'), id) });
 
     const NUCLEAR_FUEL = [
         mi('uranium_fuel_rod'),
@@ -148,7 +157,7 @@ ServerEvents.tags('item', e => {
         mi('he_mox_fuel_rod_double'),
         mi('he_mox_fuel_rod_quad')
     ];
-    NUCLEAR_FUEL.forEach(id => { e.add('kubejs:nuclear_fuel', id) });
+    NUCLEAR_FUEL.forEach(id => { e.add(mi('nuclear_fuel'), id) });
 
     const DEPLETED_FUEL = [
         mi('uranium_fuel_rod_depleted'),
@@ -157,5 +166,5 @@ ServerEvents.tags('item', e => {
         mi('le_mox_fuel_rod_depleted'),
         mi('he_mox_fuel_rod_depleted')
     ];
-    DEPLETED_FUEL.forEach(id => { e.add('kubejs:depleted_nuclear_fuel', id) });
+    DEPLETED_FUEL.forEach(id => { e.add(mi('depleted_nuclear_fuel'), id) });
 });

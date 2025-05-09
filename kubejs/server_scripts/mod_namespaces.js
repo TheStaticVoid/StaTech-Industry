@@ -4,6 +4,7 @@
 // -----------------------------------------
 
 let mi = (id) => `modern_industrialization:${id}`;
+let ei = (id) => `extended_industrialization:${id}`;
 let mc = (id) => `minecraft:${id}`;
 let ae = (id) => `ae2:${id}`;
 let kj = (id) => `kubejs:${id}`;

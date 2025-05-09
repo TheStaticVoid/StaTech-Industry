@@ -17,7 +17,7 @@
 			}
 			id: "74C1F78B349FC947"
 			shape: "hexagon"
-			size: 1.5d
+			size: 2.0d
 			tasks: [
 				{
 					id: "7EF2422AEF155FED"
@@ -30,11 +30,13 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
 			id: "1BD496A10E957F25"
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				count: 16L
 				id: "4DBA932F3E17B7A7"
@@ -47,35 +49,38 @@
 		{
 			dependencies: ["1BD496A10E957F25"]
 			id: "339F676C828C790D"
+			size: 2.0d
 			tasks: [{
 				count: 32L
 				id: "6190BD009D789D58"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:cobblestones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["339F676C828C790D"]
 			id: "0BD4ABE561F1F2F7"
+			size: 2.0d
 			tasks: [{
 				id: "1610BCD0D7539A2C"
 				item: { count: 1, id: "justhammers:iron_hammer" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0BD4ABE561F1F2F7"]
 			id: "4679B4825F85EBB5"
+			size: 2.0d
 			tasks: [{
 				id: "2B9E9E9C9E8AEF1F"
 				item: { count: 1, id: "modern_industrialization:iron_large_plate" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 7.5d
 			y: 0.0d
 		}
 		{
@@ -88,7 +93,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1BD496A10E957F25"]
@@ -100,7 +105,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1BD496A10E957F25"]
@@ -112,7 +117,7 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1BD496A10E957F25"]
@@ -124,7 +129,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1BD496A10E957F25"]
@@ -136,7 +141,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1BD496A10E957F25"]
@@ -148,7 +153,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["250141B40163F07F"]
@@ -160,7 +165,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["250141B40163F07F"]
@@ -172,7 +177,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["250141B40163F07F"]
@@ -184,7 +189,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1BD496A10E957F25"]
@@ -203,7 +208,7 @@
 				}
 			]
 			x: -1.5d
-			y: 1.5d
+			y: 2.0d
 		}
 	]
 }
