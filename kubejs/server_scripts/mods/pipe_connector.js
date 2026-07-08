@@ -33,7 +33,8 @@ ServerEvents.tags('item', event => {
     const PC_PLACEABLE_ITEMS = [
         mi('gold_cable'),
         mi('enderium_cable'),
-        mi('tungstensteel_cable')
+        mi('tungstensteel_cable'),
+        '#modern_industrialization:me_wires'
     ];
     PC_PLACEABLE_ITEMS.forEach(id => { event.add(pc('placeable_items'), id) });
 });
