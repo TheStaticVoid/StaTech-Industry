@@ -3,31 +3,65 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let tr = (id) => `techreborn:${id}`;
     let st = (id) => `statech:modern_industrialization/alloy_smelter/${id}`;
+    
+    // -- RED ALLOY INGOT -- //
+    alloySmelter(
+        event,
+        st('red_alloy_ingot'),
+        4,
+        200,
+        [
+            { amount: 1, tag: 'morered:red_alloyable_ingots' },
+            { amount: 4, tag: 'c:dusts/redstone' }
+        ],
+        [ { amount: 1, item: mr('red_alloy_ingot') } ]
+    );
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let alloySmelter = (id, eu, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: mi('alloy_smelter'),
-            eu: eu,
-            duration: duration
-        }
+    // -- NETHERITE INGOT -- //
+    alloySmelter(
+        event,
+        st('netherite_ingot'),
+        16,
+        600,
+        [
+            { amount: 4, tag: 'c:ingots/gold' },
+            { amount: 4, item: mc('netherite_scrap') }
+        ],
+        [ { amount: 1, item: mc('netherite_ingot') } ]
+    );
 
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
+    // -- COGNITIVE ALLOY INGOT -- //
+    alloySmelter(
+        event,
+        st('cognitive_alloy'),
+        4,
+        200,
+        [
+            { amount: 1, tag: 'c:ingots/copper' },
+            { amount: 4, item: xp('cognitive_amalgam') }
+        ],
+        [ { amount: 1, item: xp('cognitive_alloy') } ]
+    );
 
-        e.custom(newRecipe).id(id);
-    }
-
+    // -- BRASS INGOT -- //
+    alloySmelter(
+    event,
+        st('brass_ingot'),
+        4,
+        200,
+        [
+            { amount: 1, tag: 'c:ingots/copper' },
+            { amount: 1, tag: 'c:ingots/zinc' }
+        ],
+        [ { amount: 2, item: cr('brass_ingot') } ]
+    );
+/* 
     // -- REFINED IRON INGOT -- //
     alloySmelter(
+    event,
         st('refined_iron_ingot'),
         16,
         200,
@@ -38,20 +72,11 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: tr('refined_iron_ingot') } ]
     );
 
-    // -- NETHERITE INGOT -- //
-    alloySmelter(
-        st('netherite_ingot'),
-        16,
-        600,
-        [
-            { amount: 4, tag: 'c:gold_ingots' },
-            { amount: 4, item: mc('netherite_scrap') }
-        ],
-        [ { amount: 1, item: mc('netherite_ingot') } ]
-    );
+
 
     // -- INVAR INGOT -- //
     alloySmelter(
+    event,
         st('invar_ingot'),
         8,
         200,
@@ -64,6 +89,7 @@ ServerEvents.recipes(e => {
 
     // -- BRONZE INGOT -- //
     alloySmelter(
+    event,
         st('bronze_ingot'),
         8,
         100,
@@ -74,20 +100,9 @@ ServerEvents.recipes(e => {
         [ { amount: 4, item: mi('bronze_ingot') } ]
     );
 
-    // -- BRASS INGOT -- //
-    alloySmelter(
-        st('brass_ingot'),
-        16,
-        200,
-        [
-            { amount: 3, tag: 'c:copper_ingots' },
-            { amount: 1, tag: 'c:zinc_ingots' }
-        ],
-        [ { amount: 4, item: tr('brass_ingot') } ]
-    );
-
     // -- ELECTRUM INGOT -- //
     alloySmelter(
+    event,
         st('electrum_ingot'),
         16,
         200,
@@ -100,6 +115,7 @@ ServerEvents.recipes(e => {
 
     // -- CUPRONICKEL INGOT -- //
     alloySmelter(
+    event,
         st('cupronickel_ingot'),
         16,
         200,
@@ -112,6 +128,7 @@ ServerEvents.recipes(e => {
 	
 	// -- BATTERY ALLOY -- //
 	alloySmelter(
+    event,
         st('battery_alloy'),
 		8,
 		200,
@@ -124,6 +141,7 @@ ServerEvents.recipes(e => {
 
     // -- BATTERY ALLOY BLOCK -- //
     alloySmelter(
+    event,
         st('battery_alloy_block'),
         8,
         1800,
@@ -136,6 +154,7 @@ ServerEvents.recipes(e => {
 
     // -- BRASS BLOCK -- //
     alloySmelter(
+    event,
         st('brass_block'),
         16,
         1800,
@@ -148,6 +167,7 @@ ServerEvents.recipes(e => {
 
     // -- BRONZE BLOCK -- //
     alloySmelter(
+    event,
         st('bronze_block'),
         8,
         1800,
@@ -160,6 +180,7 @@ ServerEvents.recipes(e => {
 
     // -- CUPRONICKEL BLOCK -- //
     alloySmelter(
+    event,
         st('cupronickel_block'),
         16,
         1800,
@@ -172,6 +193,7 @@ ServerEvents.recipes(e => {
 
     // -- ELECTRUM BLOCK -- //
     alloySmelter(
+    event,
         st('electrum_block'),
         16,
         1800,
@@ -184,6 +206,7 @@ ServerEvents.recipes(e => {
 
     // -- INVAR BLOCK -- //
     alloySmelter(
+    event,
         st('invar_block'),
         8,
         1800,
@@ -196,6 +219,7 @@ ServerEvents.recipes(e => {
 
     // -- REFINED IRON BLOCK -- //
     alloySmelter(
+    event,
         st('refined_iron_block'),
         16,
         1800,
@@ -204,5 +228,5 @@ ServerEvents.recipes(e => {
             { amount: 1, tag: 'c:iron_blocks' }
         ],
         [ { amount: 1, item: tr('refined_iron_storage_block') } ]
-    );
+    ); */
 });

@@ -1,0 +1,1997 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2__the_steam_age"
+	group: "592A9A0E9A131D28"
+	icon: {
+		id: "modern_industrialization:steam_bucket"
+	}
+	id: "713C181A74B14589"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["59442F8EBE6F9F06"]
+			id: "5EDE88BDA0182BD7"
+			rewards: [{
+				id: "1EA5791A50142A66"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "360C4596E35627FB"
+				item: { count: 1, id: "modern_industrialization:bronze_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "0F56A61DD1E8BC5D"
+			rewards: [{
+				id: "759DAEF80D2BE094"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "557C019AACE24CDA"
+				item: { count: 1, id: "modern_industrialization:steam_mining_drill" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "60602FA8424D3937"
+			rewards: [{
+				id: "5640F4626776586C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "506FBDD0E721A163"
+				item: { count: 1, id: "modern_industrialization:bronze_barrel" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "61F04B75BE5F5E17"
+			rewards: [{
+				id: "5277937DD2A8D579"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "1BFB5F5A7C50BA55"
+				item: { count: 1, id: "modern_industrialization:bronze_tank" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["01E58DD70F1D9B15"]
+			id: "105E5F967328888F"
+			rewards: [{
+				id: "091B2A11F27E4AE4"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				count: 3L
+				id: "05813AE531C7E787"
+				item: { count: 3, id: "modern_industrialization:fire_clay_bricks" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "01E58DD70F1D9B15"
+			rewards: [{
+				id: "0ECF8544DF4D7820"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				count: 12L
+				id: "433A8EF307BE955F"
+				item: { count: 12, id: "modern_industrialization:fire_clay_dust" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["105E5F967328888F"]
+			id: "77EAB1D011541800"
+			rewards: [{
+				id: "7636E0E16B0AB2D9"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "7C089ACAF461DE63"
+				item: { count: 1, id: "modern_industrialization:bronze_boiler" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77EAB1D011541800"]
+			id: "4B5B04123C38AA37"
+			rewards: [{
+				id: "1078F5EC073E26E9"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "6E314A5C68A27BBC"
+				item: { count: 1, id: "modern_industrialization:bronze_water_pump" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["77EAB1D011541800"]
+			id: "4F22C9E20AB004D9"
+			rewards: [{
+				id: "08631A320D2DCEE6"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "19D12777A2BFFB0B"
+					item: { count: 1, id: "create:mechanical_pump" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6AF1F86872AEC35A"
+					item: { count: 4, id: "create:fluid_pipe" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["77EAB1D011541800"]
+			id: "343C68866C58ADC3"
+			rewards: [{
+				id: "0D27371352572BFC"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "239655E16B64B677"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["77EAB1D011541800"]
+			id: "396573B9EAE57B42"
+			rewards: [{
+				id: "51DCDBF096316EC9"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "2A7AE2F2FC7FB699"
+				item: { count: 16, id: "modern_industrialization:fluid_pipe" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["396573B9EAE57B42"]
+			id: "0AC4D9039788F1C6"
+			rewards: [{
+				id: "090009279038041E"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "777428835753C221"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["343C68866C58ADC3"]
+			id: "73AF6917A7A85244"
+			rewards: [{
+				id: "351D163B58B9DD21"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "31ABD18AF56A6645"
+				item: { count: 1, id: "modern_industrialization:bronze_macerator" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["343C68866C58ADC3"]
+			id: "62474684DD7A1B7C"
+			rewards: [{
+				id: "28557C03261C05C6"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "2485F5F274742737"
+				item: { count: 1, id: "modern_industrialization:bronze_compressor" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["343C68866C58ADC3"]
+			id: "112E7B1922E2CCC3"
+			rewards: [{
+				id: "7BF0F124E8DD7707"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "00C0A2F0F2C16D87"
+				item: { count: 1, id: "modern_industrialization:bronze_furnace" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["343C68866C58ADC3"]
+			id: "693368CF3E13AB7A"
+			rewards: [{
+				id: "3F672974480431F9"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "52F5F4FC1160C252"
+				item: { count: 1, id: "modern_industrialization:bronze_mixer" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["343C68866C58ADC3"]
+			id: "3730B6FAEF7DAA37"
+			rewards: [{
+				id: "38719AFE857D082D"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "744AFCBF13E9821A"
+				item: { count: 1, id: "modern_industrialization:bronze_cutting_machine" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4AF847F8B403E6E3"]
+			dependency_requirement: "one_completed"
+			icon: {
+				id: "modern_industrialization:coke_oven"
+			}
+			id: "4AD151B1DCA26F4F"
+			rewards: [{
+				id: "3D957AE71DF0DF44"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					count: 21L
+					id: "6538C7F3D5B94551"
+					item: { count: 1, id: "minecraft:bricks" }
+					type: "item"
+				}
+				{
+					id: "35F85E834D18E22D"
+					item: { count: 1, id: "modern_industrialization:bronze_item_output_hatch" }
+					type: "item"
+				}
+				{
+					id: "0DCCE1C174ABF265"
+					item: { count: 1, id: "modern_industrialization:bronze_item_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "488A64C5E9EA5989"
+					item: { count: 1, id: "modern_industrialization:coke_oven" }
+					type: "item"
+				}
+				{
+					id: "25BA9BA1D2B432C0"
+					item: { count: 1, id: "modern_industrialization:bronze_fluid_input_hatch" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["62474684DD7A1B7C"]
+			id: "4AF847F8B403E6E3"
+			rewards: [{
+				id: "43A7A4637628903D"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "36EE28DDF87D4F81"
+				item: { count: 1, id: "minecraft:bricks" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4AD151B1DCA26F4F"]
+			id: "7A6086319A01A16C"
+			rewards: [{
+				id: "3317D536155FD13C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "4E90E065A35F1689"
+				item: { count: 1, id: "modern_industrialization:creosote_bucket" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"7A6086319A01A16C"
+				"693368CF3E13AB7A"
+			]
+			icon: {
+				id: "minecraft:redstone"
+			}
+			id: "2B3D7AC154932A16"
+			rewards: [{
+				id: "3393F2D25E2F1B38"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "005031BED138F6CD"
+					item: { count: 1, id: "minecraft:redstone" }
+					type: "item"
+				}
+				{
+					id: "0BDB60A7FBA1C45B"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4AD151B1DCA26F4F"]
+			id: "05EB37A2156293FE"
+			rewards: [{
+				id: "16B36AFE051DA44F"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "578E796E751C6439"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["738FE28369D3A550"]
+			id: "4A1086D69A76909D"
+			rewards: [{
+				id: "519808FF926214A1"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				count: 9L
+				id: "23FDFD6B588F366A"
+				item: { count: 9, id: "modern_industrialization:uncooked_steel_dust" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 10.75d
+		}
+		{
+			dependencies: ["4AD151B1DCA26F4F"]
+			id: "738FE28369D3A550"
+			rewards: [{
+				id: "24CEA00679E74503"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "637E17F33E88448B"
+				item: { count: 1, id: "modern_industrialization:coke_dust" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4A1086D69A76909D"]
+			icon: {
+				id: "modern_industrialization:steam_blast_furnace"
+			}
+			id: "578C4D10471D6EC9"
+			rewards: [{
+				id: "31DD9F81E6030FD1"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					id: "646B3D805B0DE2CC"
+					item: { count: 1, id: "modern_industrialization:steam_blast_furnace" }
+					type: "item"
+				}
+				{
+					count: 29L
+					id: "63BF02C360BA80CA"
+					item: { count: 29, id: "modern_industrialization:fire_clay_bricks" }
+					type: "item"
+				}
+				{
+					id: "6965365691959E85"
+					item: { count: 1, id: "modern_industrialization:bronze_fluid_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "630F403E5A91DA98"
+					item: { count: 1, id: "modern_industrialization:bronze_item_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "6B5F194389E22D14"
+					item: { count: 1, id: "modern_industrialization:bronze_item_output_hatch" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["578C4D10471D6EC9"]
+			id: "45CE5F461A159F66"
+			rewards: [{
+				id: "66CE9D2C1637EAD4"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.25d
+			tasks: [{
+				count: 12L
+				id: "1B3530F4A1D02D55"
+				item: { count: 12, id: "modern_industrialization:steel_ingot" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "4D4B76A0251E4A45"
+			rewards: [{
+				id: "4A32E8E267A0DE56"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "279D19CF88CD312C"
+				item: { count: 16, id: "modern_industrialization:item_pipe" }
+				type: "item"
+			}]
+			x: 22.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "577BA8EF0FB84BCE"
+			rewards: [{
+				id: "0A753A1E42325B64"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				count: 2L
+				id: "226A52C59E05AE17"
+				item: { count: 2, id: "modern_industrialization:steel_upgrade" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "5F56BBCF8B57F434"
+			rewards: [{
+				id: "19A49A8C3715DC52"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "5C386906D1D4B486"
+				item: { count: 1, id: "modern_industrialization:trash_can" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "3B911268380F061D"
+			rewards: [{
+				id: "1A40DF791A2F23D2"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "6D88FBF095607FCC"
+				item: { count: 1, id: "modern_industrialization:steel_unpacker" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "759C375900C081FF"
+			rewards: [{
+				id: "45840E2811FB01F4"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "0F333DE3714D5653"
+				item: { count: 1, id: "modern_industrialization:steel_packer" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["759C375900C081FF"]
+			id: "28EEDBD2BE127F84"
+			rewards: [{
+				id: "07CDBAB61B82ABCF"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "4CDCB69BA69C588B"
+					item: { count: 1, id: "modern_industrialization:packer_block_template" }
+					type: "item"
+				}
+				{
+					id: "0DD3A27DDE4AC8B3"
+					item: { count: 1, id: "modern_industrialization:packer_double_ingot_template" }
+					type: "item"
+				}
+			]
+			x: 18.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["4D4B76A0251E4A45"]
+			id: "1F5ACBB3A3D021B3"
+			rewards: [{
+				id: "3DC1D56CCE47FEB4"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [
+				{
+					id: "57FAA932263FB99F"
+					item: { count: 1, id: "modern_industrialization:steam_quarry" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "1D97C1C544BBDD4C"
+					item: { count: 12, id: "modern_industrialization:steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "44870AB548EEDBD2"
+					item: { count: 6, id: "modern_industrialization:steel_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "39C1BEE48F8DB212"
+					item: { count: 4, id: "minecraft:chain" }
+					type: "item"
+				}
+				{
+					id: "618C80767B45DAD0"
+					item: { count: 1, id: "modern_industrialization:bronze_fluid_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "2F3FECE150D7BBB0"
+					item: { count: 1, id: "modern_industrialization:bronze_item_input_hatch" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "74916991F7877050"
+					item: { count: 3, id: "modern_industrialization:steel_item_output_hatch" }
+					type: "item"
+				}
+			]
+			x: 24.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["1F5ACBB3A3D021B3"]
+			id: "1CBCB4D1ECFBDE9E"
+			rewards: [{
+				id: "59D94FF70DF6F72C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "0BD7D946B6283E85"
+				item: { count: 1, id: "modern_industrialization:bronze_drill" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1F5ACBB3A3D021B3"]
+			id: "52D685C4965BE0EF"
+			rewards: [{
+				id: "377D87D7E947677B"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "1C103BE92F374E4B"
+				item: { count: 1, id: "modern_industrialization:copper_drill" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "3C093BB3F3D520D9"
+			rewards: [{
+				id: "2FE8B77D69B3C89C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "182153FF3F8B52B9"
+				item: { count: 1, id: "modern_industrialization:steel_wiremill" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["4D3EDFA212A5B4F1"]
+			id: "38E38B24C0432327"
+			rewards: [{
+				id: "4CEA2048659FC1B4"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				count: 12L
+				id: "395C5D8AA894C22E"
+				item: { count: 12, id: "modern_industrialization:rubber_sheet" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"4F060179B81581AB"
+				"578C4D10471D6EC9"
+			]
+			icon: {
+				id: "modern_industrialization:synthetic_oil_bucket"
+			}
+			id: "4D3EDFA212A5B4F1"
+			rewards: [{
+				id: "6D56035E11C52179"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "3BE7D0087FCBB9D0"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["738FE28369D3A550"]
+			icon: {
+				id: "modern_industrialization:raw_synthetic_oil_bucket"
+			}
+			id: "4F060179B81581AB"
+			rewards: [{
+				id: "01E884A48A489E28"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "2840D2D9D32F8084"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["693368CF3E13AB7A"]
+			icon: {
+				id: "modern_industrialization:wood_pulp"
+			}
+			id: "6BF59CA2D21361D1"
+			rewards: [{
+				id: "0CB6E33442739034"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [
+				{
+					count: 12L
+					id: "6553A60C20C910DF"
+					item: { count: 12, id: "modern_industrialization:wood_pulp" }
+					type: "item"
+				}
+				{
+					id: "4F8905BFACABA2B1"
+					item: { count: 1, id: "minecraft:paper" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5CAAB61AA7E9FC66"]
+			id: "1EE124C7111A27F0"
+			rewards: [{
+				id: "1E00143DFC9139DD"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "03CD03D33CC00442"
+				item: { count: 1, id: "modern_industrialization:config_card" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["38E38B24C0432327"]
+			id: "5CF5CDD58DA92BDB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A780CD8E2873CCA"
+					table_id: 4870953612802399820L
+					type: "random"
+				}
+				{
+					id: "0052BFF8F6999685"
+					type: "item"
+				}
+				{
+					id: "43618C09DA2D4F51"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "11CFA4E109A6F9C2"
+					item: { count: 1, id: "modern_industrialization:rubber_helmet" }
+					type: "item"
+				}
+				{
+					id: "5A975D3A06186152"
+					item: { count: 1, id: "modern_industrialization:rubber_boots" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"38E38B24C0432327"
+				"3C093BB3F3D520D9"
+			]
+			id: "004069E9EBF8D803"
+			rewards: [{
+				id: "247C33B5B4AD9EA3"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				count: 3L
+				id: "50F5BEF084DF18F4"
+				item: { count: 3, id: "modern_industrialization:tin_cable" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3505E9029F3CEAD0"]
+			id: "1F61820447808CD1"
+			rewards: [{
+				id: "2519F22803BD7D0F"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "309855F434FF597E"
+					item: { count: 1, id: "modern_industrialization:large_tank" }
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "2B693FF0A74A12C6"
+					item: { count: 19, id: "modern_industrialization:steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3121E4BD12EA7FF4"
+					item: { count: 5, id: "minecraft:glass" }
+					type: "item"
+				}
+				{
+					id: "7E69F656CDE4432E"
+					item: { count: 1, id: "modern_industrialization:large_tank_hatch" }
+					type: "item"
+				}
+			]
+			x: 19.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["004069E9EBF8D803"]
+			id: "3505E9029F3CEAD0"
+			rewards: [{
+				id: "4D13A08FC65FADFF"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "22C56AD1EEDD8BA1"
+					item: { count: 1, id: "modern_industrialization:motor" }
+					type: "item"
+				}
+				{
+					id: "447FC8309A146474"
+					item: { count: 1, id: "modern_industrialization:pump" }
+					type: "item"
+				}
+				{
+					id: "4E8EC62F71A39312"
+					item: { count: 1, id: "modern_industrialization:robot_arm" }
+					type: "item"
+				}
+				{
+					id: "2794053BF599FC79"
+					item: { count: 1, id: "modern_industrialization:conveyor" }
+					type: "item"
+				}
+				{
+					id: "0252F2DA8A923BEB"
+					item: { count: 1, id: "modern_industrialization:piston" }
+					type: "item"
+				}
+			]
+			x: 17.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["38E38B24C0432327"]
+			id: "5CAAB61AA7E9FC66"
+			rewards: [{
+				id: "164AC48DE07378E4"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [
+				{
+					id: "1B91D2713257585D"
+					item: { count: 1, id: "modern_industrialization:capacitor" }
+					type: "item"
+				}
+				{
+					id: "4E738BF1FAD2C4CE"
+					item: { count: 1, id: "modern_industrialization:resistor" }
+					type: "item"
+				}
+				{
+					id: "037486B51031B45C"
+					item: { count: 1, id: "modern_industrialization:inductor" }
+					type: "item"
+				}
+				{
+					id: "5447570F082F54B3"
+					item: { count: 1, id: "modern_industrialization:analog_circuit_board" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5CAAB61AA7E9FC66"]
+			id: "72090D36C27DC4AF"
+			rewards: [{
+				id: "1666352C5DDD0964"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "2CBD971485AB5EA6"
+				item: { count: 1, id: "modern_industrialization:analog_circuit" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["693368CF3E13AB7A"]
+			id: "071D9B8D5C16227B"
+			rewards: [{
+				id: "6CA459659CD742BA"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "56562D35D54D8753"
+				item: { count: 1, id: "modern_industrialization:invar_dust" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["72090D36C27DC4AF"]
+			icon: {
+				id: "modern_industrialization:large_steam_boiler"
+			}
+			id: "4C40D7303E037FDC"
+			rewards: [{
+				id: "0100328FB15F29AA"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1FE4A6BBD785337B"
+					item: { count: 1, id: "modern_industrialization:large_steam_boiler" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "7A8E2451FD591F27"
+					item: { count: 24, id: "modern_industrialization:bronze_plated_bricks" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3FA155C2B3C47E9B"
+					item: { count: 2, id: "modern_industrialization:bronze_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6DFEF4DCDAB86F4C"
+					item: { count: 5, id: "modern_industrialization:fire_clay_bricks" }
+					type: "item"
+				}
+			]
+			x: 9.75d
+			y: 4.0d
+		}
+		{
+			dependencies: ["693368CF3E13AB7A"]
+			id: "3820A443B373ADA0"
+			rewards: [{
+				id: "526E43EAC6FB7D4C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				count: 2L
+				id: "07CF544BB0FD4B2E"
+				item: { count: 2, id: "modern_industrialization:battery_alloy_dust" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"0390CA76F7045D0F"
+				"72090D36C27DC4AF"
+			]
+			id: "6EB26F44ECEEF81A"
+			rewards: [{
+				id: "7238256BCB1AAAFF"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 2.5d
+			tasks: [{
+				id: "0FB5F49D6F418C74"
+				item: { count: 1, id: "modern_industrialization:basic_machine_hull" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["004069E9EBF8D803"]
+			id: "0390CA76F7045D0F"
+			rewards: [{
+				id: "3C1E134361EE57FA"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			tasks: [{
+				id: "038B807CC461B220"
+				item: { count: 1, id: "modern_industrialization:redstone_battery" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "0A8E881B45C7FCFC"
+			rewards: [{
+				id: "191B55A5F4201B99"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "723A6F22093EC681"
+				item: { count: 1, id: "modern_industrialization:steel_tank" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "39D48C79329C6E09"
+			rewards: [{
+				id: "5DAE5846582D1C94"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "5591593E5DDD4BB3"
+				item: { count: 1, id: "modern_industrialization:steel_barrel" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "1C7E832A64CD1620"
+			rewards: [{
+				id: "04D9065875FF4FEF"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "0F79AB0D2CEEFC6E"
+				item: { count: 1, id: "hangglider:reinforced_hang_glider" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["578C4D10471D6EC9"]
+			id: "4FBE60D1D4995C8D"
+			rewards: [{
+				id: "11114EAFFA763D65"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4F773447BB8BA241"
+				item: { count: 1, id: "modern_industrialization:molten_redstone_bucket" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["578C4D10471D6EC9"]
+			id: "05FD1FD793252EF5"
+			rewards: [{
+				id: "7351A5EBD288A993"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "7826BF9DBE4E9EE0"
+				item: { count: 1, id: "modern_industrialization:soldering_alloy_dust" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "4DD579C699181982"
+			rewards: [{
+				id: "363029F9B6964B57"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "532058D74C35A2BD"
+				item: { count: 1, id: "modern_industrialization:steel_boiler" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "486ADC13C8868424"
+			rewards: [{
+				id: "0ED1971CCA3710A3"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "51C5332756DE8792"
+				item: { count: 1, id: "elevatorid:elevator_white" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "4434AD65DF2DD224"
+			rewards: [{
+				id: "1DE79272D3178EA8"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "43BBEA57F2607949"
+					item: { count: 1, id: "travelanchors:travel_anchor" }
+					type: "item"
+				}
+				{
+					id: "26BB8EB0F9B9A614"
+					item: { count: 1, id: "travelanchors:travel_staff" }
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "1EDCF314B9A08129"
+			rewards: [{
+				id: "3870AA126ABFBFCF"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "60755BBAAB548059"
+				item: { count: 1, id: "bankstorage:bank_2" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "5F1733B6400DD9BA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3C0F649FE0938325"
+					table_id: 8055223505892499306L
+					type: "random"
+				}
+				{
+					id: "62711875C86B2590"
+					type: "item"
+				}
+				{
+					id: "697852B12ABBB8AA"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6F2740E8C8E62050"
+				item: { count: 1, id: "naturescompass:naturescompass" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "4DB42F0D980DA49F"
+			rewards: [{
+				id: "5C8AF39BA73309CF"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "7BCDFC7C14FFF9B7"
+				item: { count: 1, id: "modern_industrialization:steel_water_pump" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "5ACF260F9E41D82C"
+			rewards: [{
+				id: "7F3E2D33B4501832"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "7C4BB9680AEEA3B5"
+				item: { count: 1, id: "simplemagnets:basicmagnet" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "0B735B2265B363C8"
+			rewards: [{
+				id: "6F06365F49564A44"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "1AA0959654BA905C"
+				item: { count: 1, id: "hangglider:hang_glider" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["72090D36C27DC4AF"]
+			id: "1BF78FD92C018648"
+			rewards: [{
+				id: "4A6BFBCDD39E54EE"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "517D5E6F5CE5C3E7"
+				item: { count: 1, id: "extended_industrialization:robot_auto_feeder" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2B3D7AC154932A16"]
+			icon: {
+				id: "minecraft:gunpowder"
+			}
+			id: "402F586B741ADE1B"
+			rewards: [{
+				id: "6D84DB55417B57F2"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "436E872C2D8C8DE4"
+					type: "checkmark"
+				}
+				{
+					id: "4BB6C2A1F0DD3BDA"
+					item: { count: 1, id: "minecraft:gunpowder" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["72090D36C27DC4AF"]
+			id: "45E0DB65DD53DC8E"
+			rewards: [{
+				id: "19A2AD42A491D2DC"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				count: 4L
+				id: "1D050B88B8C1CD2E"
+				item: { count: 1, id: "modern_industrialization:configurable_chest" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["72090D36C27DC4AF"]
+			id: "408C2940A18F43BC"
+			rewards: [{
+				id: "15C74DC7B61D3A24"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "6E0CA349D50C0288"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "2A34BE4E2ACB0B5B"
+			rewards: [{
+				id: "7B45A125A7684090"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "776CAB473C2CB79B"
+				item: { count: 1, id: "explorerscompass:explorerscompass" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "29D1C9F53F1721BF"
+			rewards: [{
+				id: "67822430EEB7FC5F"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "166635912AF6CBCC"
+				item: { count: 1, id: "measurements:tape_measure" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3505E9029F3CEAD0"]
+			id: "1EA36D56E6CCD3B4"
+			rewards: [{
+				id: "49E90A6DF84F154C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "5621599A059FA28A"
+				type: "checkmark"
+			}]
+			x: 19.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6B3BEC96CBAB7760"]
+			id: "37A8157AB01079F0"
+			rewards: [{
+				id: "37CA5AC5C9DD341B"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "1A4C8B1128098C5E"
+				item: { count: 1, id: "sophisticatedstorage:iron_to_gold_tier_upgrade" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["181F0CD6428732B2"]
+			id: "6B3BEC96CBAB7760"
+			rewards: [{
+				id: "7DCF70F1AA2A5325"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4CDF68A9DFBD6961"
+				item: { count: 1, id: "sophisticatedstorage:copper_to_iron_tier_upgrade" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "181F0CD6428732B2"
+			rewards: [{
+				id: "0005B37BAC0B954C"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4FDB7FEDCF9F4563"
+				item: { count: 1, id: "sophisticatedstorage:basic_to_copper_tier_upgrade" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["181F0CD6428732B2"]
+			id: "20FE11ACDC27CA84"
+			rewards: [{
+				id: "593B5317908817B8"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4A540DB0B8A9BC8F"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["181F0CD6428732B2"]
+			id: "3088E454104EA8C6"
+			rewards: [{
+				id: "48C8567C3C1A3F0E"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "60A37E8070F46603"
+				item: { count: 1, id: "sophisticatedstorage:packing_tape" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["181F0CD6428732B2"]
+			id: "018F1B1A8EF2C04E"
+			rewards: [{
+				id: "1D8FCAC102FA154F"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "3687592ADCED97FC"
+				item: { count: 1, id: "functionalstorage:configuration_tool" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1F5ACBB3A3D021B3"]
+			id: "6B1392D014BAED81"
+			rewards: [{
+				id: "66BAD27C91F1B05B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "49F5B1A56516EEED"
+				item: { count: 1, id: "modern_industrialization:zinc_drill" }
+				type: "item"
+			}]
+			x: 26.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["5EDE88BDA0182BD7"]
+			id: "11B147A60B77ED4A"
+			rewards: [{
+				id: "076D8F9E629BBB10"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4BE1AB0350DF3986"
+				item: { count: 1, id: "cognition:cognitive_flux" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C23C4B16844849F"]
+			id: "48566D7F1724EB6B"
+			rewards: [{
+				id: "26714FF9713D6207"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [{
+				id: "2A36E2D7980742A4"
+				item: { count: 1, id: "cognition:experience_obelisk" }
+				type: "item"
+			}]
+			x: -4.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11B147A60B77ED4A"]
+			id: "1BE89CC00209CD24"
+			rewards: [{
+				id: "59AE8EB661D0D1AD"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "729444C45B47A638"
+				item: { count: 1, id: "cognition:cognitive_amalgam" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1BE89CC00209CD24"]
+			id: "1C23C4B16844849F"
+			rewards: [{
+				id: "6294D6FF485EDA70"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "6F3D44D580568570"
+				item: { count: 1, id: "cognition:cognitive_alloy" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["396573B9EAE57B42"]
+			id: "375EC7F95730956F"
+			rewards: [{
+				id: "300CC2C2C7580B3F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				count: 4L
+				id: "31017C17D9C205E9"
+				item: { count: 4, id: "moderndynamics:fluid_pipe" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["375EC7F95730956F"]
+			id: "06BFE5F7FC4B384B"
+			rewards: [{
+				id: "12A4077F4EF2CC38"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "1BC24A65C5F70FE9"
+					item: { count: 1, id: "moderndynamics:attractor" }
+					type: "item"
+				}
+				{
+					id: "2E5C527F552FCC46"
+					item: { count: 1, id: "moderndynamics:extractor" }
+					type: "item"
+				}
+				{
+					id: "5AEA3E21DDD5A6A2"
+					item: { count: 1, id: "moderndynamics:filter" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4D4B76A0251E4A45"]
+			id: "2B364DC6ECC4FCF5"
+			rewards: [{
+				id: "4B7179DE4D0BEABE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1121799C2F413F07"
+				item: { count: 1, id: "moderndynamics:item_pipe" }
+				type: "item"
+			}]
+			x: 22.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["2B364DC6ECC4FCF5"]
+			id: "1E4C654BFB863E9A"
+			rewards: [{
+				id: "18AAB9805CDAF793"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0BA05B938368911B"
+				item: { count: 1, id: "moderndynamics:inhibitor" }
+				type: "item"
+			}]
+			x: 22.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["2B364DC6ECC4FCF5"]
+			id: "0C1E8997E5C0BD36"
+			rewards: [{
+				id: "2095F468F70F49EE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "46F1A4D4A175A298"
+				item: { count: 1, id: "moderndynamics:machine_extender" }
+				type: "item"
+			}]
+			x: 21.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["4D3EDFA212A5B4F1"]
+			icon: {
+				id: "modern_industrialization:synthetic_rubber_bucket"
+			}
+			id: "131FF702BC2707FB"
+			rewards: [{
+				id: "4E781829E1B04F2C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "30780DF1BF93448C"
+				item: { count: 1, id: "modern_industrialization:sulfur_dust" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "7D90B29796571A7E"
+			rewards: [{
+				id: "3D1432F429B31877"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "15FB8D295B9D0814"
+				item: { count: 1, id: "bankstorage:bank_3" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["77EAB1D011541800"]
+			id: "2D0E8B6809C329D3"
+			rewards: [{
+				id: "2FFBBC494BD6367F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5F0899095C6EEBDE"
+				item: { count: 1, id: "modern_industrialization:bronze_tank" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4AD151B1DCA26F4F"]
+			icon: {
+				id: "extended_industrialization:large_steam_furnace"
+			}
+			id: "5D1AAACAA152ED68"
+			rewards: [{
+				id: "005E17B9F18DD83E"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "3DBD85B4B46396AD"
+					item: { count: 1, id: "extended_industrialization:large_steam_furnace" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "27C742A583EF8B3D"
+					item: { count: 21, id: "modern_industrialization:bronze_plated_bricks" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3253C85C1D77228A"
+					item: { count: 8, id: "modern_industrialization:fire_clay_bricks" }
+					type: "item"
+				}
+			]
+			x: 3.75d
+			y: 9.75d
+		}
+		{
+			dependencies: ["4AD151B1DCA26F4F"]
+			id: "73ECF1ACA6D93D56"
+			rewards: [{
+				id: "5EE3AF693EDFF01F"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "470471A984ECAFE3"
+					item: { count: 1, id: "extended_industrialization:large_steam_macerator" }
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "5688CF00D9BDC75A"
+					item: { count: 1, id: "modern_industrialization:bronze_plated_bricks" }
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: 9.75d
+		}
+		{
+			dependencies: ["72090D36C27DC4AF"]
+			id: "14609EFBE2CFB9D5"
+			rewards: [{
+				id: "49A9DE46EC320667"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "62635E2A9968A1B3"
+				item: { count: 1, id: "modern_industrialization:portable_storage_unit" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "2D82BDEDFA442E68"
+			rewards: [{
+				id: "3D2B2047FEC6C3B7"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "5A6D5FD129804DE5"
+				item: { count: 1, id: "mi_sound_addon:mallet" }
+				type: "item"
+			}]
+			x: 19.75d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5CAAB61AA7E9FC66"]
+			id: "56FD9635F66C1D4A"
+			rewards: [{
+				id: "158F12403AA59B41"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0985547AA6533E20"
+				item: { count: 1, id: "modern_industrialization:redstone_control_module" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["77EAB1D011541800"]
+			id: "7471230558C78C5D"
+			rewards: [{
+				id: "3EBFB416BD54CE90"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "483F65AFE17CB54A"
+				item: { count: 1, id: "extended_industrialization:bronze_solar_boiler" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["45CE5F461A159F66"]
+			id: "0EFD137D4D82478D"
+			size: 1.5d
+			tasks: [{
+				id: "4DC78D51A1F52909"
+				item: { count: 1, id: "extended_industrialization:steam_chainsaw" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 11.5d
+		}
+		{
+			id: "7E88C9813EDFF876"
+			tasks: [{
+				id: "7B4B4B5C198D54EB"
+				item: { count: 1, id: "extended_industrialization:steel_canning_machine" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 15.5d
+		}
+	]
+}

@@ -3,30 +3,13 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/drilling_rig/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let drillingRig = (id, eu, duration, item_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('oil_drilling_rig'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
 
     // -- LAVA FROM GOLD DRILL -- //
     drillingRig(
+        event,
         st('gold_drill'),
         16,
         200,
@@ -35,6 +18,7 @@ ServerEvents.recipes(e => {
     );
 
     drillingRig(
+        event,
         st('salt_water'),
         16,
         200,

@@ -1,170 +1,194 @@
 // -----------------------------------------
-// CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// CREATED BY STATIC, MODIFIED BY DINO FOR USE IN
+// STATECH INDUSTRY UNOFFICIAL
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.tags('item', event => {
+    event.remove('createaddition:large_connector_usable_rods', ca('electrum_rod'))
+})
+
+ServerEvents.tags('fluid', event => {
+    event.add('kubejs:pentaborane', mi('pentaborane')) 
+});
+
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:createaddition/${id}`;
-    let ca = (id) => `createaddition:${id}`;
-    let cr = (id) => `create:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
-    // -- CREATE CRAFTS & ADDITIONS REMOVED RECIPES -- //
-    const REMOVED_RECIPES = [
-        ca('mixing/bioethanol'),
+    event.remove({type: ca('rolling')})
+
+    event.replaceInput({ input: ca('capacitor') },
+        ca('capacitor'),
+        mi('capacitor')
+    )
+
+    // -- CREATE ADDITION REMOVED RECIPES -- //
+    const CREATEADDITION_DELETED_ITEMS = [
+        ca('crafting/biomass_pellet_from_biomass_pallet_block'),
+        ca('compacting/biomass_pellet'),
+        ca('crafting/biomass_pallet_block'),
+        ca('mixing/biomass_from_honeycomb'),
+        ca('mixing/biomass_from_stricks'),
+        ca('mixing/biomass_from_crops'),
         ca('mixing/biomass_from_flowers'),
-        ca('mixing/biomass_from_leaves'),
-        ca('mixing/biomass_from_plants'),
-        ca('mixing/biomass_from_plant_foods'),
         ca('mixing/biomass_from_saplings'),
-        ca('mixing/biomass_from_sticks'),
-        ca('rolling/electrum_ingot'),
-        ca('rolling/electrum_plate'),
-        ca('rolling/iron_ingot'),
-        ca('rolling/iron_plate'),
-        ca('rolling/gold_ingot'),
-        ca('rolling/gold_plate'),
-        ca('rolling/brass_ingot'),
-        ca('rolling/brass_plate'),
-        ca('rolling/copper_ingot'),
-        ca('rolling/copper_plate'),
-        ca('rolling/straw'),
-        ca('crafting/rolling_mill'),
+        ca('mixing/biomass_from_leaves'),
+        ca('mixing/biomass_from_plant_foods'),
+        ca('mixing/biomass_from_plants'),
+        ca('mixing/bioethanol'),
         ca('compacting/seed_oil'),
-        ca('mechanical_crafting/accumulator'),
-        ca('mechanical_crafting/tesla_coil'),
+        ca('charging/electrify_gold_nugget'),
+        ca('charging/electrify_gold_rod'),
+        ca('charging/electrify_gold_nugget'),
+        ca('charging/electrify_gold_sheet'),
+        ca('charging/electrify_gold_block'),
+        ca('charging/electrify_gold_ingot'),
+        ca('charging/electrify_gold_wire'),
         ca('crafting/capacitor_1'),
         ca('crafting/capacitor_2'),
-        ca('crafting/diamond_grit_sandpaper'),
-        ca('crafting/small_light_connector'),
-        ca('crushing/diamond'),
-        ca('pressing/zinc_ingot')
+        ca('crafting/rolling_mill'),
+        ca('mechanical_crafting/electric_motor'),
+        ca('mechanical_crafting/tesla_coil'),
+        ca('mechanical_crafting/alternator'),
+        ca('crafting/festive_spool'),
+        ca('liquid_burning/biofuel'),
+        ca('liquid_burning/plantoil'),
+        ca('liquid_burning/crude_oil'),
+        ca('liquid_burning/lava'),
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id : id}));
-
-    // -- DIAMOND GRIT SANDPAPER -- //
-    e.shapeless(ca('diamond_grit_sandpaper'), [ mc('paper'), mi('diamond_dust') ])
-        .id(st('diamond_grit_sandpaper'));
-
-    // -- SMALL LIGHT CONNECTOR -- //
-    e.shapeless(ca('small_light_connector'), [ ca('connector'), mi('copper_wire'), mc('glass') ])
-        .id(st('small_light_connector'));
-
-    // -- BARBED WIRE -- //
-    e.shaped(ca('barbed_wire'), [
-        ' W ',
-        'WIW',
-        ' W '
-    ],
-    {
-        W: mi('tin_wire'),
-        I: mi('iron_rod')
-    })
-    .id(st('barbed_wire'));
+    CREATEADDITION_DELETED_ITEMS.forEach(id => event.remove( {id: id} ));
 
     // -- FESTIVE SPOOL -- //
-    e.shaped(ca('festive_spool'), [
-        ' W ',
-        'LIL',
-        ' W '
-    ],
-    {
-        W: mi('copper_wire'),
-        I: ca('spool'),
-        L: {tag: "snowyspirit:glow_lights"}
-    })
-    .id(st('festive_spool'));
-
-    // -- DIAMOND DUST CRUSHING -- //
-    e.custom({
-        type: cr('crushing'),
-        ingredients: [
-            { item: mc('diamond') }
-       ],
-       results: [
-            { item: mi('diamond_dust') }
-       ],
-       processingTime: 900
-    })
-    .id(st('crushing_diamond'));
+    event.shapeless(Item.of(ca('festive_spool')),
+    [
+        ca('copper_spool'),
+        mc('glowstone_dust'),
+        mc('redstone')
+    ]).id(st('festive_spool'));
 
     // -- ELECTRIC MOTOR -- //
-    e.custom({
+    event.custom({
         type: cr('mechanical_crafting'),
+        accept_mirrored: true,
+        category: 'misc',
         pattern: [
             '  A  ',
             ' BSB ',
             'BSRSB',
-            ' BCB '
+            'WBCBW'
         ],
         key: {
             A: { item: cr('andesite_alloy') },
-            C: { item: mi('basic_machine_hull') },
-            B: { tag: 'c:brass_plates' },
+            B: { tag: 'c:plates/brass' },
+            C: { item: mi('capacitor') },
             R: { item: mi('steel_rod_magnetic') },
-            S: { item: mi('copper_wire') }
+            S: { item: ca('copper_spool') },
+            W: { item: mi('copper_cable') }
         },
-        result: { item: ca('electric_motor') }
-    })
-    .id(st('electric_motor'));
+        result: {
+            id: ca('electric_motor'),
+            count: 1
+        },
+    }).id('electric_motor');
 
     // -- ALTERNATOR -- //
-    e.custom({
+    event.custom({
         type: cr('mechanical_crafting'),
+        accept_mirrored: true,
+        category: 'misc',
         pattern: [
             '  A  ',
             ' ISI ',
             'ISRSI',
-            ' ICI '
+            ' ISI ',
+            '  A  '
         ],
         key: {
-            C: { item: mi('basic_machine_hull') },
-            I: { tag: 'c:steel_plates' },
+            A: { item: cr('andesite_alloy') },
+            I: { tag: 'c:plates/iron' },
             R: { item: mi('steel_rod_magnetic') },
-            S: { item: mi('copper_wire') },
-            A: { item: cr('andesite_alloy') }
+            S: { item: ca('copper_spool') },
         },
-        result: { item: ca('alternator') }
-    })
-    .id(st('alternator'));
-});
+        result: {
+            id: ca('alternator'),
+            count: 1
+        },
+    }).id('alternator');
 
-ServerEvents.tags('fluid', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ca = (id) => `createaddition:${id}`;
+    // -- TESLA COIL -- //
+    event.custom({
+        type: cr('mechanical_crafting'),
+        accept_mirrored: true,
+        category: 'misc',
+        pattern: [
+            'SSS',
+            'MAM',
+            'CBC',
+            'PEP'
+        ],
+        key: {
+            A: { item: cr('andesite_alloy') },
+            B: { item: cr('brass_casing') },
+            C: { item: mi('capacitor') },
+            E: { item: cr('electron_tube') },
+            S: { item: ca('copper_spool') },
+            P: { tag: 'c:plates/brass' },
+            M: { item: mi('steel_rod_magnetic') }
+        },
+        result: {
+            id: ca('tesla_coil'),
+            count: 1
+        },
+    }).id('tesla_coil');
+
+    // -- BOOSTED DIESEL LIQUID BURNING -- //
+    event.custom({
+        type: ca('liquid_burning'),
+        burn_time: 30000,
+        ingredients: [{
+            type: 'neoforge:tag',
+            amount: 1000,
+            tag: 'c:boosted_diesel'
+        }],
+        results: [],
+        superheated: true
+    }).id('boosted_diesel_liquid_burning');
+
+    // -- PENTABORANE LIQUID BURNING -- //
+    event.custom({
+        type: ca('liquid_burning'),
+        burn_time: 60000,
+        ingredients: [{
+            type: 'neoforge:tag',
+            amount: 1000,
+            tag: 'kubejs:pentaborane'
+        }],
+        results: [],
+        superheated: true
+    }).id('pentaborane_liquid_burning');
+
+    // -- LAVA LIQUID BURNING -- //
+    event.custom({
+        type: ca('liquid_burning'),
+        burn_time: 3600,
+        ingredients: [{
+            type: 'neoforge:tag',
+            amount: 1000,
+            tag: 'minecraft:lava'
+        }],
+        results: [],
+    }).id('lava_liquid_burning');
     
-    const BURNABLE_FUEL_4800 = [
-        mi('creosote')
-    ];
-    BURNABLE_FUEL_4800.forEach(id => { e.add(ca('burnable_fuel_4800'), id) });
-
-    const BURNABLE_FUEL_12800 = [
-        mc('lava'),
-        mi('crude_oil')
-    ];
-    BURNABLE_FUEL_12800.forEach(id => { e.add(ca('burnable_fuel_12800'), id) });
-
-    const BURNABLE_FUEL_20000 = [
-        mi('diesel'),
-        mi('biodiesel'),
-    ];
-    BURNABLE_FUEL_20000.forEach(id => { e.add(ca('burnable_fuel_20000'), id) });
-});
-
-ServerEvents.tags('item', e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let ca = (id) => `createaddition:${id}`;
-    let c = (id) => `c:${id}`;
-    
-    e.add(c('wires/copper'), mi('copper_wire')),
-    e.add(c('copper_rods'), mi('copper_rod')),
-    e.add(c('wires/gold'), mi('gold_wire')),
-    e.add(c('electrum_wires'), mi('electrum_wire'))
+    // -- BENZENE LIQUID BURNING -- //
+    event.custom({
+        type: ca('liquid_burning'),
+        burn_time: 8000,
+        ingredients: [{
+            type: 'neoforge:tag',
+            amount: 1000,
+            tag: 'c:benzene'
+        }],
+        results: [],
+    }).id('benzene_liquid_burning');
 
 });

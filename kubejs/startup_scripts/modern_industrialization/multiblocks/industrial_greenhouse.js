@@ -5,31 +5,26 @@
 
 let GREENHOUSE;
 
-MIMachineEvents.registerRecipeTypes(e => {
-    GREENHOUSE = e.register('greenhouse')
+MIMachineEvents.registerRecipeTypes(event => {
+    GREENHOUSE = event.register('greenhouse')
         .withItemInputs()
         .withFluidInputs()
         .withItemOutputs();
 });
 
-MIMachineEvents.registerMachines(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let fb = (id) => `factory_blocks:${id}`;
-
-    const greenhouseHatch = e.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input');
-    const steelCasing = e.memberOfBlock(mi('steel_machine_casing'));
-    const glass = e.memberOfBlock(mc('glass'));
-    const metalBox = e.memberOfBlock(fb('metalbox'));
-    const rustyScaffold = e.memberOfBlock(fb('rusty_scaffold'));
-    const glowstone = e.memberOfBlock(mc('glowstone'));
-    const grass = e.memberOfBlock(mc('grass_block'));
-    const log = e.memberOfBlock(mc('oak_log'));
-    const leaves = e.memberOfBlock(mc('oak_leaves'));
-    const dirt = e.memberOfBlock(mc('dirt'))
+MIMachineEvents.registerMachines(event => {
+    const greenhouseHatch = event.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input');
+    const steelCasing = event.memberOfBlock(mi('steel_machine_casing'));
+    const glass = event.memberOfBlock(mc('glass'));
+    const metalBox = event.memberOfBlock(fb('metalbox'));
+    const rustyScaffold = event.memberOfBlock(fb('rusty_scaffold'));
+    const glowstone = event.memberOfBlock(mc('glowstone'));
+    const grass = event.memberOfBlock(mc('grass_block'));
+    const log = event.memberOfBlock(mc('oak_log'));
+    const leaves = event.memberOfBlock(mc('oak_leaves'));
+    const dirt = event.memberOfBlock(mc('dirt'))
     //      0           1           2           3         4          5          6
-    const greenhouseShape = e.layeredShape('steel', [
+    const greenhouseShape = event.layeredShape('steel', [
         [ '  SSS  ', '  GGG  ', '  GGG  ', '  GGG  ', '  RRR  ', '       ', '       ' ],
         [ ' SAAAS ', ' M   M ', ' M   M ', ' M   M ', ' M   M ', '  GGG  ', '       ' ],
         [ 'SAAAAAS', 'G     G', 'G  L  G', 'G  L  G', 'R     R', ' G   G ', '  GGG  ' ],
@@ -39,17 +34,17 @@ MIMachineEvents.registerMachines(e => {
         [ '  S#S  ', '  GGG  ', '  GGG  ', '  GGG  ', '  RRR  ', '       ', '       ' ]
     ])
         .key('S', steelCasing, greenhouseHatch)
-        .key('A', grass, e.noHatch())
-        .key('M', metalBox, e.noHatch())
-        .key('W', log, e.noHatch())
-        .key('G', glass, e.noHatch())
-        .key('L', leaves, e.noHatch())
-        .key('R', rustyScaffold, e.noHatch())
-        .key('O', glowstone, e.noHatch())
-        .key('D', dirt, e.noHatch())
+        .key('A', grass, event.noHatch())
+        .key('M', metalBox, event.noHatch())
+        .key('W', log, event.noHatch())
+        .key('G', glass, event.noHatch())
+        .key('L', leaves, event.noHatch())
+        .key('R', rustyScaffold, event.noHatch())
+        .key('O', glowstone, event.noHatch())
+        .key('D', dirt, event.noHatch())
         .build();
     
-    e.simpleElectricCraftingMultiBlock(
+    event.simpleElectricCraftingMultiBlock(
         // General parameters
         'Industrial Greenhouse', // English name
         'greenhouse', // internal name
@@ -57,7 +52,7 @@ MIMachineEvents.registerMachines(e => {
         greenhouseShape, // multiblock shape
 
         // REI Display configuration
-        e.progressBar(71, 33, 'extract'),
+        event.progressBar(71, 33, 'extract'),
         // REI Item Inputs, item outputs, fluid inputs, fluid outputs
         itemInputs => itemInputs.addSlots(25, 35, 2, 1), itemOutputs => itemOutputs.addSlots(102, 35, 2, 2),
         fluidInputs => fluidInputs.addSlot(25, 53), fluidOutputs => {},

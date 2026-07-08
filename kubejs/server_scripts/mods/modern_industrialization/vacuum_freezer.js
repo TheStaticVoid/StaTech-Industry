@@ -3,36 +3,13 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/vacuum_freezer/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let vacuumFreezer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('vacuum_freezer'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
 
     // -- POLYTETRAFLUOROETHYLENE INGOT -- //
     vacuumFreezer(
+        event,
         st('ptfe_ingot'),
         32,
         200,
@@ -40,20 +17,33 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: mi('polytetrafluoroethylene_ingot') } ],
         [ { amount: 100, fluid: mi('polytetrafluoroethylene')}]
     );
+    
+    // -- ACRYLONITRILE BUTADIENE STYRENE INGOT -- //
+    vacuumFreezer(
+        event,
+        st('abs_ingot'),
+        32,
+        200,
+        null,
+        [ { amount: 1, item: mi('acrylonitrile_butadiene_styrene_ingot') } ],
+        [ { amount: 150, fluid: mi('acrylonitrile_butadiene_styrene')}]
+    );
 
     // -- TUNGSTENSTEEL INGOT -- //
     vacuumFreezer(
+        event,
         st('tungstensteel_ingot'),
         64,
         600,
-        [ { amount: 1, item: tr('hot_tungstensteel_ingot') } ],
-        [ { amount: 1, item: tr('tungstensteel_ingot') } ],
+        [ { amount: 1, item: mi('tungstensteel_hot_ingot') } ],
+        [ { amount: 1, item: mi('tungstensteel_ingot') } ],
         null,
         null
     );
 
     // -- CONCRETE BAR -- //
     vacuumFreezer(
+        event,
         st('concrete_bar'),
         16,
         200,
@@ -64,11 +54,23 @@ ServerEvents.recipes(e => {
 
     // -- NETHER STAR -- //
     vacuumFreezer(
+        event,
         st('nether_star'),
         64,
         100,
         null,
         [ { amount: 1, item: mc('nether_star') } ],
         [ { amount: 500, fluid: mi('molten_nether_star') } ]
+    );
+
+    // -- BOROSILICATE GLASS -- //
+    vacuumFreezer(
+        event,
+        st('borosilicate_glass'),
+        16,
+        400,
+        null,
+        [ { amount: 1, item: kj('borosilicate_glass') } ],
+        [ { amount: 1000, fluid: mi('molten_borosilicate_glass') } ]
     );
 });

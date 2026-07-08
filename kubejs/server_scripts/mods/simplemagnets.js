@@ -3,44 +3,41 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes(event => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:simplemagnets/${id}`;
-    let sm = (id) => `simplemagnets:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
-    const SIMPLE_MAGNETS_REMOVED_RECIPES = [
-        sm('basicmagnet'),
+    // -- SIMPLE MAGNETS REMOVED REICPES -- //
+    const SIMPLEMAGNETS_REMOVED_RECIPES = [
         sm('advancedmagnet'),
+        sm('basicmagnet')
     ];
-    SIMPLE_MAGNETS_REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
-
-    // SIMPLE MAGNET
-    e.shaped(sm('basicmagnet'), [
-        'RRL',
-        'RE ',
-        'RRD'
+    SIMPLEMAGNETS_REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
+    
+    // -- BASIC MAGNET -- //
+    event.shaped(sm('basicmagnet'), [
+        'IIL',
+        'I  ',
+        'IIR'
     ],
     {
-        R: mi('steel_rod_magnetic'),
-        L: mc('blue_dye'),
-        E: mc('ender_pearl'),
-        D: mc('red_dye')
-    }).id(st('basicmagnet'));
-
-    // ADVANCED MAGNET
-    e.shaped(sm('advancedmagnet'), [
-        'GGL',
-        'MEC',
-        'GGR'
+        I: mi('iron_plate'),
+        R: mc('redstone_block'),
+        L: mc('lapis_block')
+    })
+    .id(st('basicmagnet'));
+    
+    // -- ADVANCED MAGNET -- //
+    event.shaped(sm('advancedmagnet'), [
+        'SSL',
+        'SE ',
+        'SSR'
     ],
     {
-       G: mi('gold_plate'),
-       L: mc('blue_dye'),
-       M: sm('basicmagnet'),
-       E: mc('ender_eye'),
-       C: mi('analog_circuit'),
-       R: mc('red_dye')
-    }).id(st('advancedmagnet'));
+        S: mi('steel_plate'),
+        R: mc('redstone_block'),
+        L: mc('lapis_block'),
+        E: sm('basicmagnet')
+    })
+    .id(st('advancedmagnet'));
 });

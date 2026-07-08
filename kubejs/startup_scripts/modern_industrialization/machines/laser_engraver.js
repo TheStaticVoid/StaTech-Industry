@@ -5,15 +5,15 @@
 
 let LASER_ENGRAVER;
 
-MIMachineEvents.registerRecipeTypes(e => { 
-    LASER_ENGRAVER = e.register('laser_engraver')
+MIMachineEvents.registerRecipeTypes(event => { 
+    LASER_ENGRAVER = event.register('laser_engraver')
         .withItemInputs()
         .withItemOutputs();
 });
 
-MIMachineEvents.registerMachines(e => {
+MIMachineEvents.registerMachines(event => {
     // -- LASER ENGRAVER SINGLE BLOCK -- //
-    e.craftingSingleBlock(
+    event.craftingSingleBlock(
         // General parameters
         'Laser Engraver',
         'laser_engraver',
@@ -22,9 +22,9 @@ MIMachineEvents.registerMachines(e => {
 
         // GUI configuration
         -1, // background height (or -1 for default value)
-        e.progressBar(86, 32, 'arrow'), // progress bar
-        e.efficiencyBar(38, 60), // efficiency bar
-        e.energyBar(14, 35), // energy bar
+        event.progressBar(86, 32, 'arrow'), // progress bar
+        event.efficiencyBar(38, 60), // efficiency bar
+        event.energyBar(14, 35), // energy bar
 
         // Slot Configuration
         2, // Item input count

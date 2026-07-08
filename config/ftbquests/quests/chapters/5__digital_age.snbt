@@ -1,0 +1,3143 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5__digital_age"
+	group: "0C181DF09185DA57"
+	icon: {
+		id: "modern_industrialization:digital_circuit"
+	}
+	id: "443557BD1692EA37"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["11245D1341745D1F"]
+			id: "72FA131AAB66F1C1"
+			rewards: [
+				{
+					count: 7
+					id: "522AC39AE06811A2"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "1FECB64A1EAC2CB3"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "730EF99002B13817"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "10DC5B1912B85A5D"
+				item: { count: 1, id: "megacells:fluid_storage_cell_4m" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["72FA131AAB66F1C1"]
+			id: "2FA9CCCED8F29ACF"
+			rewards: [
+				{
+					count: 7
+					id: "137E4F7882463DBD"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "7F35343575DAF285"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66D9E718C4EBCA3A"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "14ACCA9C427197FF"
+				item: { count: 1, id: "megacells:fluid_storage_cell_16m" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["2FA9CCCED8F29ACF"]
+			id: "2D5E5C45FA70EC70"
+			rewards: [
+				{
+					count: 7
+					id: "099DD3F5DAD63703"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "5DAF19784E7D0EA7"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0DB10011A4BD4B40"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "12828C75F3223853"
+				item: { count: 1, id: "megacells:fluid_storage_cell_64m" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["2D5E5C45FA70EC70"]
+			id: "49533E157E964921"
+			rewards: [
+				{
+					count: 7
+					id: "394511CA80D47CA4"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "15E75C07460616BF"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3E0DDDDB4E7A603E"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "3D0410DE2A3FC158"
+				item: { count: 1, id: "megacells:fluid_storage_cell_256m" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["6322AAFBEA2EFE2C"]
+			id: "11245D1341745D1F"
+			rewards: [
+				{
+					count: 7
+					id: "11FE3AEB4F974A65"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "2122CF26C7990D91"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "336FD76B0CFC329E"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "3125DCFC1A19C21A"
+				item: { count: 1, id: "megacells:fluid_storage_cell_1m" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["187E3148FF00C4AE"]
+			icon: {
+				id: "mi_tweaks:large_chemical_reactor"
+			}
+			id: "7562FC7BC6220AF1"
+			rewards: [
+				{
+					id: "498FAC3180654CDA"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "6D786F94A6D1A9FD"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4644FACF5442D9EE"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4635B7611C36E7D4"
+					item: { count: 1, id: "mi_tweaks:large_chemical_reactor" }
+					type: "item"
+				}
+				{
+					id: "0432DAB1DD87D21D"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "1379DDEF2E577CE4"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "38392AE55D9761DA"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "60348782D06ED859"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "416A3F9D68C396BC"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: -1.75d
+		}
+		{
+			dependencies: ["38D1B360B947EB90"]
+			icon: {
+				id: "modern_industrialization:blood_generator"
+			}
+			id: "1588C024A87F1B21"
+			rewards: [
+				{
+					id: "51975C94CF8090CA"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "52683BFED586122A"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7E647F54CF2D400F"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "2DE22C9E94E162A9"
+					item: { count: 1, id: "modern_industrialization:blood_generator" }
+					type: "item"
+				}
+				{
+					id: "14054A240806A13F"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			icon: {
+				id: "modern_industrialization:distillation_tower"
+			}
+			id: "4F9372602593A2DB"
+			rewards: [
+				{
+					id: "724E500B2E72417A"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "79B96C13D6D98807"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "24A948D4797C77E0"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "72FE6C3B96F0EB90"
+					item: { count: 1, id: "modern_industrialization:distillation_tower" }
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "2E7FC98AA1AE5022"
+					item: { count: 1, id: "modern_industrialization:clean_stainless_steel_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "6DB6F821D25419C7"
+					item: { count: 1, id: "modern_industrialization:stainless_steel_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					id: "74740A3EBB5A39A8"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "2E03E6954C143BF7"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "5CCB8DFEA1221B32"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			icon: {
+				id: "modern_industrialization:aluminum_cable"
+			}
+			id: "55C954FA3EF76A6D"
+			rewards: [
+				{
+					id: "7E3786894B93AA7B"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "1C2B72876180EAFE"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6CFC07A66678214C"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "33BB11CF611F3871"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:hv_wire)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["55C954FA3EF76A6D"]
+			id: "7A1A04BBB9727F1A"
+			rewards: [{
+				id: "206F3E39CFB2476E"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			tasks: [{
+				count: 4L
+				id: "438555415CFF3C15"
+				item: { count: 1, id: "moderndynamics:hv_cable" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			id: "3C3B886AE682713C"
+			rewards: [{
+				id: "02F94044D87E1548"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6523114D026250DD"
+				item: { count: 1, id: "modern_industrialization:tungsten_dust" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			id: "5524086A6986E1C0"
+			rewards: [{
+				id: "5E91DD1CE186872A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "041E5014CB7C12E1"
+				item: { count: 1, id: "modern_industrialization:titanium_tiny_dust" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5524086A6986E1C0"]
+			id: "2216B63E764E0EBE"
+			rewards: [
+				{
+					id: "6E569E19E61F2FFA"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "294DAE7B868EA2C0"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "17E5F3E9985CEE71"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "17F5D9E7AD656557"
+				item: { count: 1, id: "modern_industrialization:titanium_ingot" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2216B63E764E0EBE"]
+			id: "1442CAA3FC79387D"
+			rewards: [
+				{
+					id: "0B338CFCCC330D3C"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "5183F57F153C8D9B"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F2DFAF16046E65F"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "043FABC47148F41C"
+				item: { count: 1, id: "modern_industrialization:titanium_barrel" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2216B63E764E0EBE"]
+			id: "6B794C5D0CAF35A1"
+			rewards: [
+				{
+					id: "03D6AF4E88E48624"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "2A93F46FC2DD7064"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1CD7494698D84FBB"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "402F2B95CC3EF35A"
+				item: { count: 1, id: "modern_industrialization:titanium_tank" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2216B63E764E0EBE"]
+			id: "630587BC35741E37"
+			rewards: [
+				{
+					id: "1E5A83CB70C89655"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "7C6E7BDF3893F958"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15316FC1321324E2"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "4468622AE9AAA6FD"
+				item: { count: 1, id: "modern_industrialization:gravichestplate" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2216B63E764E0EBE"]
+			icon: {
+				id: "modern_industrialization:pressurizer"
+			}
+			id: "530E646E005FEBE1"
+			rewards: [
+				{
+					id: "351377A2204A35DD"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "25C4655D647B592E"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0F259CACBDA5718F"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "0FC45A2A00C894E3"
+					item: { count: 1, id: "modern_industrialization:pressurizer" }
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "61E68F7DA3007053"
+					item: { count: 1, id: "modern_industrialization:solid_titanium_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "620B154E974A0F55"
+					item: { count: 1, id: "modern_industrialization:titanium_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					id: "4016A4AF6C146437"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "410F27E40E46053E"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "47EC9A39F745DC3F"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["530E646E005FEBE1"]
+			icon: {
+				id: "modern_industrialization:high_pressure_large_steam_boiler"
+			}
+			id: "2F1DCE7361114A4C"
+			rewards: [
+				{
+					id: "265EF7707D9DC84D"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "580B3A21980AEB09"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "647BEB0FFD6FA1E5"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [
+				{
+					id: "1EA192A01255245D"
+					item: { count: 1, id: "modern_industrialization:high_pressure_large_steam_boiler" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "2E32E60D0BCFBD6A"
+					item: { count: 1, id: "modern_industrialization:clean_stainless_steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "57B847DA6A80F69C"
+					item: { count: 1, id: "modern_industrialization:stainless_steel_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "74FA688B909F9DF5"
+					item: { count: 1, id: "modern_industrialization:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "208CFFD6D4B271D1"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "3BDA06A26C350CF6"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "41420F8E297CE369"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			icon: {
+				id: "modern_industrialization:heat_exchanger"
+			}
+			id: "5D43916C178DE73C"
+			rewards: [
+				{
+					id: "7B0C8CBF5538BDA1"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "2C958AB932538F8E"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1578CE8E375294F2"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "31FB0511B0F427E3"
+					item: { count: 1, id: "modern_industrialization:heat_exchanger" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "01989AD043147A48"
+					item: { count: 1, id: "modern_industrialization:stainless_steel_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "607F07221084BC15"
+					item: { count: 1, id: "modern_industrialization:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "6A7500C77850C91B"
+					item: { count: 1, id: "modern_industrialization:frostproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "51C62F2040DBA3F7"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4B4748570C27191D"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "7FEC80858FC7EF78"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: -5.25d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			id: "381D43AEFB99B390"
+			rewards: [{
+				id: "0A1FFD1D23DDAE88"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "1B1933F7A23E5B84"
+				item: { count: 1, id: "modern_industrialization:platinum_sulfuric_solution_bucket" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["381D43AEFB99B390"]
+			id: "2233CC18FE4BAEE3"
+			rewards: [{
+				id: "7332E5FB61D0ED94"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0DB568DB8294E4BA"
+				item: { count: 1, id: "modern_industrialization:platinum_tiny_dust" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["381D43AEFB99B390"]
+			id: "7FBD5ED1B6E06B6D"
+			rewards: [{
+				id: "4BDBB7B6883EC3D4"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "17D74B2F58E071D9"
+				item: { count: 1, id: "modern_industrialization:iridium_tiny_dust" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6209459F9CC634BA"]
+			id: "2F56D5FE486BA699"
+			rewards: [
+				{
+					id: "342F6866069C89C3"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "6ACCD218146BB432"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B823D246B60BFA3"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "5F99860A46E46901"
+				item: { count: 1, id: "bankstorage:bank_6" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7AD01A35E82AF238"
+				"2216B63E764E0EBE"
+			]
+			id: "7367354AA17AB139"
+			rewards: [
+				{
+					id: "2BE679887FF5A991"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "4535344B5521E769"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "316A71B294A28C10"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "67BCF2E5A88B9BD2"
+				item: { count: 1, id: "modern_industrialization:mixed_ingot_blastproof" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3C3B886AE682713C"]
+			id: "7AD01A35E82AF238"
+			rewards: [
+				{
+					id: "2B01CBCF8A9CBF5B"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "7C0175AA1666D957"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "186D829325C8AB73"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "25884FEB2E317CB1"
+				item: { count: 1, id: "modern_industrialization:tungsten_nugget" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A28C8307C136F5B"]
+			icon: {
+				id: "modern_industrialization:implosion_compressor"
+			}
+			id: "240E45CC4436DF82"
+			rewards: [
+				{
+					id: "086520FA3E326FCD"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "3A1EE7F70E162564"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A9DEF33E64CEDC1"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "7DF1E3E15B5263D9"
+					item: { count: 1, id: "modern_industrialization:implosion_compressor" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "5A7D8C501EA1842A"
+					item: { count: 1, id: "modern_industrialization:blastproof_casing" }
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "044FE6D9EA66389E"
+					item: { count: 1, id: "modern_industrialization:solid_titanium_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "309CDBFF95E3FD95"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "2E7DFAFC32C613CE"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "55525B288D7B8AAF"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			id: "38D1B360B947EB90"
+			rewards: [
+				{
+					id: "681E3595315434CB"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "4F0ABF49EC60A814"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07B33DEE9AEA5809"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "2E94D15268BB5E06"
+				item: { count: 1, id: "modern_industrialization:hv_steam_turbine" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			id: "767003181BB2CAC4"
+			rewards: [
+				{
+					id: "6A17D08D5C70848E"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "27DECD1396AA13C0"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7355C60D2CA1F92B"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "44AE82810EEE427B"
+				item: { count: 1, id: "modern_industrialization:hv_diesel_generator" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			id: "6A77C2A638005556"
+			rewards: [
+				{
+					id: "7F6D88F501835D68"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "2BA036F7E0430FE1"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "087E650DF705CE0B"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6D78C21A6B391DE4"
+				item: { count: 1, id: "modern_industrialization:hv_storage_unit" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			icon: {
+				id: "extended_industrialization:hv_solar_panel"
+			}
+			id: "5F9C885003E26E5E"
+			rewards: [
+				{
+					id: "11BC67D36443BB79"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "6EB0F9B723E8880B"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "529B4D97CF2A66ED"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "5DA5932F2BBCE0BB"
+					item: { count: 1, id: "extended_industrialization:hv_solar_panel" }
+					type: "item"
+				}
+				{
+					id: "5C0013DFF5C60E34"
+					item: { count: 1, id: "extended_industrialization:hv_photovoltaic_cell" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7FBD5ED1B6E06B6D"]
+			id: "019A9162A50C2E9B"
+			rewards: [
+				{
+					id: "1EF1CF648F898CF3"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "1069760C072EE0A8"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E046603C4FFF03C"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "31935B4AC8646DE3"
+				item: { count: 1, id: "modern_industrialization:monocrystalline_silicon" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6209459F9CC634BA"]
+			disable_recipe_mod: true
+			id: "67FB34ABC3B1A9D4"
+			rewards: [
+				{
+					id: "305767F7FE2F67DA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "66FA5B17493973A0"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "2CC09C436C043DC9"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4DE405F5AFA42CE0"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "44E9E841C3EFAA32"
+					item: { count: 1, id: "modern_industrialization:processing_unit_board" }
+					type: "item"
+				}
+				{
+					id: "3A8289768DDF8A13"
+					item: { count: 1, id: "modern_industrialization:arithmetic_logic_unit" }
+					type: "item"
+				}
+				{
+					id: "3F43EDF4689F178D"
+					item: { count: 1, id: "modern_industrialization:memory_management_unit" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0289B95CA8CE6B38"
+					item: { count: 1, id: "modern_industrialization:random_access_memory" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["67FB34ABC3B1A9D4"]
+			id: "0E0395254471CED0"
+			rewards: [
+				{
+					id: "1938E598506ADFE3"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "12951439B9E40C25"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F23381CBE556218"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "791B3984E15A394C"
+				item: { count: 1, id: "modern_industrialization:processing_unit" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0E0395254471CED0"]
+			id: "18CE795EB630611E"
+			rewards: [
+				{
+					count: 3
+					id: "410B67F63A42D41B"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "761D3206DC72C97A"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "030A3EB6E3D6DEA6"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "6071955316B4FE3F"
+				item: { count: 1, id: "modern_industrialization:highly_advanced_machine_hull" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["67FB34ABC3B1A9D4"]
+			id: "5DB4F0A67D4D33A4"
+			rewards: [
+				{
+					id: "020384F785F24418"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "2EE3660A3779FE89"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6F06D1AF4F071D62"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "39A089440006A45D"
+				item: { count: 1, id: "kubejs:withered_soc" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5DB4F0A67D4D33A4"]
+			icon: {
+				id: "modern_industrialization:boss_crusher"
+			}
+			id: "2F85AE19C04F241C"
+			rewards: [
+				{
+					id: "2D0C8163CAD3F5E7"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "61CDE676A1DBDAF9"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "118A4D2BAB19D593"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "06F9827B8490FB72"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			tasks: [
+				{
+					id: "465061A36F74B510"
+					item: { count: 1, id: "modern_industrialization:boss_crusher" }
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "78A4AE6A43E3220B"
+					item: { count: 1, id: "modern_industrialization:clean_stainless_steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6704436F492419E4"
+					item: { count: 1, id: "create:rose_quartz_lamp" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5182235EAE7B0EC2"
+					item: { count: 1, id: "modern_industrialization:kanthal_coil" }
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "6B4329201B90BCF1"
+					item: { count: 1, id: "minecraft:obsidian" }
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "07C37699698B3C0C"
+					item: { count: 1, id: "minecraft:tinted_glass" }
+					type: "item"
+				}
+				{
+					id: "7AC9071453F14364"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "22A630F4B6A91000"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "352FD3AB3B5B0202"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "34CAE9ACC28C69FB"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "53C2B544DFD81F09"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F85AE19C04F241C"]
+			id: "077C957AAB39CC0B"
+			rewards: [
+				{
+					id: "3786F66271DC2B2D"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "189B76C23DB5DEF2"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5F5F014DC2DBA10D"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "0337B51A4B07A665"
+				item: { count: 1, id: "modern_industrialization:impure_liquid_nether_star_bucket" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["077C957AAB39CC0B"]
+			id: "593F83B2598F21C2"
+			rewards: [
+				{
+					id: "4D41634D6798496A"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "73C23E7E6C64BE86"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "099C29E7E9C1C800"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "2AABFD9B4B36A94C"
+				item: { count: 1, id: "modern_industrialization:molten_nether_star_bucket" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["593F83B2598F21C2"]
+			id: "7F59229192C7E269"
+			rewards: [
+				{
+					id: "4B610D0F048EC4CA"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "553554C060461F0E"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08C586214122E7A9"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "73D2DE8A3D384FA2"
+				item: { count: 1, id: "minecraft:nether_star" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0E0395254471CED0"]
+			icon: {
+				id: "modern_industrialization:high_pressure_large_steam_boiler"
+			}
+			id: "11E7F580298B2843"
+			rewards: [
+				{
+					id: "220E5867120B2B5C"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "030BF0C38975A08B"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07867EF8463E2E1B"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					id: "77C347F1C2698C3C"
+					item: { count: 1, id: "modern_industrialization:high_pressure_advanced_large_steam_boiler" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "79E230373A67E564"
+					item: { count: 1, id: "modern_industrialization:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "58F2D08180C8365D"
+					item: { count: 1, id: "modern_industrialization:clean_stainless_steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1D08233481B041C7"
+					item: { count: 1, id: "modern_industrialization:stainless_steel_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					id: "4E347F375BF3D0FB"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "717FB8F4A7EECBB1"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "5C2758ED2BD6E4AD"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0E0395254471CED0"]
+			id: "1A4CF8FC20475A01"
+			rewards: [
+				{
+					id: "0B902E69610F779C"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "0412CDFB925A6CE0"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4539055B2D1721D5"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					id: "77FB74CD3A9D1966"
+					item: { count: 1, id: "modern_industrialization:large_advanced_motor" }
+					type: "item"
+				}
+				{
+					id: "14B5EC56152474D9"
+					item: { count: 1, id: "modern_industrialization:large_advanced_pump" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1A4CF8FC20475A01"]
+			id: "496935DA068E1739"
+			rewards: [
+				{
+					id: "2A0D212B625BF88E"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "2D695439437C17BA"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "74F0902C0D9BD574"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "54EBD820739A2A0C"
+				item: { count: 1, id: "modern_industrialization:highly_advanced_upgrade" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1A4CF8FC20475A01"]
+			id: "4249FD1A79996FBB"
+			rewards: [
+				{
+					id: "036E08FCAB1ED119"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "3245E35C383F63B7"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B2BE8971E143FDB"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "6D7295881BF74F85"
+				item: { count: 1, id: "modern_industrialization:titanium_drill" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6322AAFBEA2EFE2C"]
+			id: "72DB6F60EA35389A"
+			rewards: [
+				{
+					count: 7
+					id: "469885328FB6890B"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "515E1D22E697ACB5"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "78C2E425DDDDA75C"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "064C50931D57CC28"
+				item: { count: 1, id: "megacells:item_storage_cell_1m" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["72DB6F60EA35389A"]
+			id: "0858B7C4CC389198"
+			rewards: [
+				{
+					count: 7
+					id: "75FDC88582C1BFD7"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "63A728AD770F1EC5"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6B752A544F548B39"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "006247EECF0D4577"
+				item: { count: 1, id: "megacells:item_storage_cell_4m" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0858B7C4CC389198"]
+			id: "33E951F1FC9E5FBB"
+			rewards: [
+				{
+					count: 7
+					id: "70D4EDFFFEFB818D"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "1DDCC97A23968649"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "258A6F62B764A995"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6BFF9BCAF90192E0"
+				item: { count: 1, id: "megacells:item_storage_cell_16m" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["33E951F1FC9E5FBB"]
+			id: "1AC298419EBB7DA2"
+			rewards: [
+				{
+					count: 7
+					id: "2EB97F721657DD8C"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "5611EC3CF19C819B"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E0B8B1500603093"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "1486B069A9051B97"
+				item: { count: 1, id: "megacells:item_storage_cell_64m" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["1AC298419EBB7DA2"]
+			id: "779CFBC9AE792300"
+			rewards: [
+				{
+					count: 7
+					id: "1F690D391F191384"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "1620056352AC0070"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "51580CD4EFC93853"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "59F60006DC3CFE95"
+				item: { count: 1, id: "megacells:item_storage_cell_256m" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["4F5B1981C8FBE1D8"]
+			id: "03A48A124FB9AB5D"
+			rewards: [
+				{
+					count: 7
+					id: "4933F152E3CC8A1A"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "132338A499F1B66D"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "12F30B5B2C17CFF0"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "2E4A0E56C7569100"
+				item: { count: 1, id: "extendedae:crystal_assembler" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "3D0FC900DA2A116B"
+			rewards: [
+				{
+					count: 7
+					id: "7FD734EBCA091EC4"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "6943B6D24C65AF09"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5D7C8766E05E8261"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "1146BCC81FCA05A5"
+				item: { count: 1, id: "extendedae:ex_pattern_provider" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -12.25d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "784BFD67397D2D4E"
+			rewards: [
+				{
+					count: 7
+					id: "420609BC6B81ABB6"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "1ECD00920180713F"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "763E4014C1624AB9"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "275A7FE181A40E81"
+				item: { count: 1, id: "extendedae:ex_interface" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -12.25d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "51AC6E4C38AFEC7A"
+			rewards: [
+				{
+					count: 7
+					id: "4721A3A842F927D8"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "6B7C032F0666F12E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7E56218D81F4BDFD"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "65A1C6A2DD126975"
+				item: { count: 1, id: "extendedae:ex_drive" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5B497F5E8E946999"]
+			id: "4F5B1981C8FBE1D8"
+			rewards: [
+				{
+					count: 7
+					id: "3FA2DDB425A29EE2"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "55F340BE3234BA8D"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5AE9411F302098D1"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "14EBA059F2F487E8"
+				item: { count: 1, id: "extendedae:machine_frame" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -8.25d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "07276270AE3094FD"
+			rewards: [
+				{
+					count: 7
+					id: "5877FF163552B435"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "52A98D96DF8E6C39"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1EF357B94122FAC8"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "5B9B222D9088C84F"
+				item: { count: 1, id: "extendedae:ex_molecular_assembler" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.25d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "1F29C93DA3E7F2F3"
+			rewards: [
+				{
+					count: 7
+					id: "1552B097DBC2A7C7"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0F984BC5544B0F3D"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7495C6FA1BFD8ECF"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6D19512257757E7F"
+				item: { count: 1, id: "extendedae:ex_io_port" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "1E3B2DB51FDD6CAA"
+			rewards: [
+				{
+					count: 7
+					id: "27CF7FAED04D5843"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0EC6352464E966C7"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "20716D7499FDE702"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "518A2FCA2186B4B2"
+				item: { count: 1, id: "extendedae:ex_pattern_access_part" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["784BFD67397D2D4E"]
+			id: "75D45A5C2A744114"
+			rewards: [
+				{
+					count: 7
+					id: "251F480FD8231215"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "7115974BA736BC94"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E281498A7CD276F"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "193B6BC9CCFB715A"
+				item: { count: 1, id: "extendedae:oversize_interface" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -12.25d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "222AC3DC54F99010"
+			rewards: [
+				{
+					count: 7
+					id: "63742F1C47371E2C"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "5CDDD1CE29B104D3"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C9AF7AECB7C95E3"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "315118ECB261F257"
+					item: { count: 1, id: "extendedae:ex_export_bus_part" }
+					type: "item"
+				}
+				{
+					id: "6C98163F4CA5E4DF"
+					item: { count: 1, id: "extendedae:ex_import_bus_part" }
+					type: "item"
+				}
+				{
+					id: "1374E72334701723"
+					item: { count: 1, id: "extendedae:tag_export_bus" }
+					type: "item"
+				}
+				{
+					id: "356ECD657B3A4321"
+					item: { count: 1, id: "extendedae:mod_storage_bus" }
+					type: "item"
+				}
+				{
+					id: "35DF02636B69844C"
+					item: { count: 1, id: "extendedae:tag_storage_bus" }
+					type: "item"
+				}
+				{
+					id: "361F9037D5F7F4C4"
+					item: { count: 1, id: "extendedae:precise_export_bus" }
+					type: "item"
+				}
+				{
+					id: "4138CC9E172B2BCD"
+					item: { count: 1, id: "extendedae:threshold_export_bus" }
+					type: "item"
+				}
+				{
+					id: "01589482FA88D275"
+					item: { count: 1, id: "extendedae:precise_storage_bus" }
+					type: "item"
+				}
+				{
+					id: "255D1A4ED5D8513E"
+					item: { count: 1, id: "extendedae:mod_export_bus" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "0A9F180D2ECACEC7"
+			rewards: [
+				{
+					count: 7
+					id: "1825FA8D5BF8481D"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "257F07841ED60467"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1DCA60AB56C0E67A"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "294E63A63D99E92A"
+				item: { count: 1, id: "extendedae:threshold_level_emitter" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "3A9BAF7CE8E624A7"
+			rewards: [
+				{
+					count: 7
+					id: "7CD1F9BCEEAC9E8A"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "663E17D104E4117D"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "711374E5569DEC04"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "1AD84ED97DD4E5D2"
+				item: { count: 1, id: "extendedae:active_formation_plane" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["328C369BE0EE3940"]
+			id: "6322AAFBEA2EFE2C"
+			rewards: [
+				{
+					count: 7
+					id: "7A18B9E02E513082"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "25D7BBCC3F373FDE"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "41A7FE6C37CE7FDF"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "0C937E46BECF460D"
+				item: { count: 1, id: "megacells:accumulation_processor" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["42B1F8244347510A"]
+			id: "328C369BE0EE3940"
+			rewards: [
+				{
+					count: 7
+					id: "69A9FCB2E4F71044"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "46F1760ADE8BE97E"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "41DB333C88B50CFD"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "1F31D187EC67F8A7"
+					item: { count: 1, id: "megacells:sky_steel_ingot" }
+					type: "item"
+				}
+				{
+					id: "6D9C221B40C16B87"
+					item: { count: 1, id: "megacells:sky_bronze_ingot" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["42B1F8244347510A"]
+			id: "5B497F5E8E946999"
+			rewards: [
+				{
+					count: 7
+					id: "1E2E28D9A65E6FB6"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "4DD31C7FECDBFC43"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "604FAB88245DFD80"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "2FDB7D4D00EAD20B"
+				item: { count: 1, id: "extendedae:entro_ingot" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"784BFD67397D2D4E"
+				"3D0FC900DA2A116B"
+				"07276270AE3094FD"
+			]
+			id: "7D99CA8AE84C0904"
+			rewards: [
+				{
+					count: 7
+					id: "1EB88810130262EF"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "1911FF1ABDB4D0C1"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "225E258F8D42B8AB"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "15E593F121689222"
+					item: { count: 1, id: "extendedae:assembler_matrix_wall" }
+					type: "item"
+				}
+				{
+					id: "4E7F149F9DBA06BE"
+					item: { count: 1, id: "extendedae:assembler_matrix_frame" }
+					type: "item"
+				}
+				{
+					id: "0972953E2113A245"
+					item: { count: 1, id: "extendedae:assembler_matrix_glass" }
+					type: "item"
+				}
+				{
+					id: "56679619E3C0B2FC"
+					item: { count: 1, id: "extendedae:assembler_matrix_pattern" }
+					type: "item"
+				}
+				{
+					id: "26917417BD0A12A3"
+					item: { count: 1, id: "extendedae:assembler_matrix_crafter" }
+					type: "item"
+				}
+				{
+					id: "2B5D4588383095B8"
+					item: { count: 1, id: "extendedae:assembler_matrix_speed" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "342D1B694B43F25A"
+			rewards: [
+				{
+					count: 7
+					id: "634672A5690C56A0"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "7FEB63E7B2883B44"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "74C28199E659C449"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "43D768C85712E438"
+				item: { count: 1, id: "extendedae:crystal_fixer" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["7F36A76EB91E6AEB"]
+			id: "5AEA99914B15FF35"
+			rewards: [
+				{
+					count: 7
+					id: "089D4027AB3E772D"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "26AC83D214321AC8"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4EB154BE66BDFBA9"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "7681A15665016CEF"
+				item: { count: 1, id: "extendedae:wireless_tool" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "7F36A76EB91E6AEB"
+			rewards: [
+				{
+					count: 7
+					id: "1D00E1D1EF611D05"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "28C1F7AAF7CD7274"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08885BFECCF3AB17"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				count: 2L
+				id: "0623A950951267F5"
+				item: { count: 1, id: "extendedae:wireless_connect" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			icon: {
+				id: "extended_industrialization:tesla_tower"
+			}
+			id: "7923688DB9B9FDA3"
+			min_width: 300
+			rewards: [
+				{
+					id: "1EFA85FF952BACF6"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "21A7EDAAF8D1037D"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "50FBAB212C92945E"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "02D1FE663B42B9F7"
+					item: { count: 1, id: "extended_industrialization:tesla_tower" }
+					type: "item"
+				}
+				{
+					count: 129L
+					id: "116B283F521E7260"
+					item: { count: 1, id: "extended_industrialization:polished_silver_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "68D2C588FE9627B8"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:wired_energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 44L
+					id: "3096C32AC2C1F85E"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:tesla_winding)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "3598625CE2CFE263"
+					item: { count: 1, id: "modern_industrialization:clean_stainless_steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2B160FF29A98698F"
+					item: { count: 1, id: "modern_industrialization:stainless_steel_machine_casing_pipe" }
+					type: "item"
+				}
+			]
+			x: -2.25d
+			y: -5.25d
+		}
+		{
+			dependencies: ["2216B63E764E0EBE"]
+			id: "5BFA25F005A19B4B"
+			rewards: [
+				{
+					id: "6EF67075924BAEB4"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "4316F3724934FFAF"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C0A7E937765697A"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "36877D83B4CB9396"
+				item: { count: 1, id: "functionalstorage:diamond_upgrade" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4DEB3A5701AD3744"]
+			id: "51490042671E700C"
+			rewards: [{
+				id: "2F5C8A6A7C35734E"
+				type: "xp"
+				xp: 10
+			}]
+			size: 3.0d
+			tasks: [{
+				id: "77E371E6082D6320"
+				item: { count: 1, id: "modern_industrialization:turbo_machine_hull" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			id: "42B1F8244347510A"
+			rewards: [{
+				id: "0A4333EA7737654F"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "18838BB1D1134393"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7367354AA17AB139"]
+			id: "7A28C8307C136F5B"
+			rewards: [
+				{
+					id: "34F542CBCF453C68"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "25ECA902F3531B89"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E186623FAFC9CF2"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "6B222E15D0D9F0A5"
+				item: { count: 1, id: "modern_industrialization:blastproof_alloy_plate" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2233CC18FE4BAEE3"]
+			id: "6209459F9CC634BA"
+			rewards: [
+				{
+					id: "6207CD2779B38AD8"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "3C4B05EB626F4467"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "368C26B0B7CAB716"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "471302A66BB017E1"
+				item: { count: 1, id: "modern_industrialization:platinum_ingot" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6209459F9CC634BA"]
+			id: "52888D91683D9ED6"
+			rewards: [
+				{
+					id: "3361FE6764680282"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "43BAA5942594BC70"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D58E5ADB1B90C84"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "62AEB3308B5BF525"
+				item: { count: 1, id: "tankstorage:tank_6" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["630587BC35741E37"]
+			id: "4128E89534C77053"
+			rewards: [
+				{
+					id: "6F741979F334F4EE"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "7A046974D8A15AB8"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "74BC7E5EA5863D3F"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "62F5B7C560D408C9"
+				item: { count: 1, id: "extended_industrialization:nano_gravichestplate" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["187E3148FF00C4AE"]
+			icon: {
+				id: "mi_tweaks:bulk_compactor"
+			}
+			id: "0D683B81F758D7A6"
+			rewards: [
+				{
+					id: "262ED8EC75B4FEBB"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "28D0F5BA2E9A1B54"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "697C693CF828B082"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7EE36F4B6121E418"
+					item: { count: 1, id: "mi_tweaks:bulk_compactor" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6B2B3EC8B683A3C7"
+					item: { count: 1, id: "kubejs:borosilicate_glass" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "65820CDE42252772"
+					item: { count: 1, id: "modern_industrialization:desh_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2F3DCAED5D55A673"
+					item: { count: 1, id: "modern_industrialization:steel_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 11L
+					id: "16B9A9869BA1C70B"
+					item: { count: 1, id: "extended_industrialization:steel_plated_bricks" }
+					type: "item"
+				}
+				{
+					id: "30BD86916ECBA628"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "62AB0053CE949237"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "656A2F644BE89F31"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 5.25d
+			y: -0.25d
+		}
+		{
+			dependencies: ["51490042671E700C"]
+			id: "187E3148FF00C4AE"
+			rewards: [{
+				id: "6918F58653065DBD"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "7B2DB2338E8379DF"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4249FD1A79996FBB"]
+			id: "6A724374C3FADC93"
+			rewards: [
+				{
+					id: "53146275029B9410"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "6B69AEDDBABCDFC0"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "443609301F25A285"
+					table_id: 5762803210059023537L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "01496C563F283A02"
+				item: { count: 1, id: "modern_industrialization:mixed_ingot_iridium" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["767003181BB2CAC4"]
+			icon: {
+				id: "modern_industrialization:large_diesel_generator"
+			}
+			id: "32DF938D1E6E89BB"
+			rewards: [
+				{
+					id: "6BE51B8D5146133D"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "2F0FF28C40B3E625"
+					type: "xp"
+					xp: 75
+				}
+				{
+					id: "46C2DE8298E44195"
+					table_id: 5923260596511522936L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "60EFE879C5821568"
+					item: { count: 1, id: "modern_industrialization:large_diesel_generator" }
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "651BA0020DCBCBED"
+					item: { count: 1, id: "modern_industrialization:solid_titanium_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "3D0B69BD0DEE9531"
+					item: { count: 1, id: "modern_industrialization:titanium_machine_casing_pipe" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["530E646E005FEBE1"]
+			id: "34FA4CD2E900F5F2"
+			rewards: [
+				{
+					id: "154D508E5F0470F2"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "67859081AACDCD12"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D4B67FFABB41981"
+					table_id: 5923260596511522936L
+					type: "loot"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "0F5D0CFD81B4DF52"
+				item: { count: 1, id: "yet_another_industrialization:tempproof_air_intake" }
+				type: "item"
+			}]
+			x: -3.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["34FA4CD2E900F5F2"]
+			icon: {
+				id: "yet_another_industrialization:gelid_liquid_air_bucket"
+			}
+			id: "27FFD1F048B42305"
+			rewards: [
+				{
+					id: "589C459233C5991F"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "1508AD01AA52FEAB"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6EDEB56F80A01991"
+					table_id: 5923260596511522936L
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					id: "65DE747F38B66A04"
+					item: { count: 1, id: "yet_another_industrialization:gelid_liquid_air_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "557DCBD8B1BE5B75"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["34FA4CD2E900F5F2"]
+			icon: {
+				id: "yet_another_industrialization:scorching_liquid_air_bucket"
+			}
+			id: "4629EC25F16167DA"
+			rewards: [
+				{
+					id: "022D6278D90B9D84"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "6755371A373BA292"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6F2806E460D9138A"
+					table_id: 5923260596511522936L
+					type: "loot"
+				}
+			]
+			tasks: [
+				{
+					id: "4D52A615D0BF775B"
+					item: { count: 1, id: "yet_another_industrialization:scorching_liquid_air_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3C1DD9FE71C9AB70"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: 6.0d
+		}
+	]
+}

@@ -5,15 +5,15 @@
 
 let PHOTOSYNTHETIC_CHAMBER;
 
-MIMachineEvents.registerRecipeTypes(e => {
-    PHOTOSYNTHETIC_CHAMBER = e.register('photosynthetic_chamber')
+MIMachineEvents.registerRecipeTypes(event => {
+    PHOTOSYNTHETIC_CHAMBER = event.register('photosynthetic_chamber')
         .withItemInputs()
         .withItemOutputs()
         .withFluidInputs();
 });
 
-MIMachineEvents.registerMachines(e => {
-    e.craftingSingleBlock(
+MIMachineEvents.registerMachines(event => {
+    event.craftingSingleBlock(
         // General parameters
         'Photosynthetic Chamber',
         'photosynthetic_chamber',
@@ -22,9 +22,9 @@ MIMachineEvents.registerMachines(e => {
 
         // GUI configuration
         -1, // background height (or -1 for default value)
-        e.progressBar(86, 32, 'arrow'), // progress bar
-        e.efficiencyBar(38, 60), // efficiency bar
-        e.energyBar(14, 35), // energy bar
+        event.progressBar(86, 32, 'arrow'), // progress bar
+        event.efficiencyBar(38, 60), // efficiency bar
+        event.energyBar(14, 35), // energy bar
 
         // Slot configuration
         1, // Item input count

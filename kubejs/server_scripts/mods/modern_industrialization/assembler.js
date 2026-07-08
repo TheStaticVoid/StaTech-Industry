@@ -3,197 +3,167 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/assembler/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let ad = (id) => `ad_astra:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let fd = (id) => `farmersdelight:${id}`;
-    let md = (id) => `moderndynamics:${id}`;
-    let kb = (id) => `kibe:${id}`;
 
     // -- ASSEMBLER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [    
-        mi('electric_age/component/assembler/qbit'),
+        mi('electric_age/component/assembler/qubit'),
         mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball'),
         mi('assembler_generated/steam_age/bronze/furnace'),
         mi('assembler_generated/steam_age/bronze/boiler'),
         mi('assembler_generated/electric_age/component/craft/op_amp'),
+/*      mi('assembler_generated/electric_age/battery/lv_battery'),
+        mi('assembler_generated/electric_age/battery/silicon_battery'), */
         mi('assembler_generated/electric_age/battery/sodium_battery'),
         mi('assembler_generated/electric_age/battery/cadmium_battery'),
-        mi('assembler_generated/electric_age/battery/plutonium_battery')
+        mi('assembler_generated/electric_age/battery/plutonium_battery'),
+//        mi('assembler_generated/electric_age/component/craft/diode_doped'),
+        mi('materials/stainless_steel/assembler/tank'),
+        mi('materials/titanium/assembler/tank'),
+        mi('materials/tungstensteel/assembler/tank'),
+        mi('electric_age/component/craft/diode_doped_asbl'),
+        mi('machines/machine_chainer/assembler'),
+        io('machines/pyrolyse_oven/assembler'),
+        ei('tool/assembler/tesla_handheld_receiver'),
+        mi('assembler_generated/electric_age/machine/large_diesel_generator'),
+        mi('assembler_generated/electric_age/machine/large_steam_turbine')/* ,
+        mi('materials/uranium/assembler/fuel_rod'),
+        mi('materials/he_uranium/assembler/fuel_rod'),
+        mi('materials/le_uranium/assembler/fuel_rod'),
+        mi('materials/he_mox/assembler/fuel_rod'),
+        mi('materials/le_mox/assembler/fuel_rod') */
     ];
-    REMOVED_RECIPE.forEach(id => e.remove({id: id}));
+    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let assembler = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('assembler'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
-
-    // -- COBBLESTONE GENERATOR MK1 -- //
+    // -- LARGE STEAM MACERATOR -- //
     assembler(
-        st('cobblestone_generator_mk1'),
+        event,
+        st('large_steam_macerator'),
         8,
         200,
         [
-            { amount: 5, item: mc('cobblestone') },
-            { amount: 1, item: mc('iron_block') },
-            { amount: 1, item: mc('chest') }
+            { amount: 2, item: mi('bronze_macerator') },
+            { amount: 2, item: mi('bronze_plated_bricks') },
+            { amount: 4, item: mi('bronze_curved_plate') },
+            { amount: 1, item: mi('steel_machine_casing') }
         ],
-        [ { amount: 1, item: kb('cobblestone_generator_mk1') } ],
+        [ { amount: 1, item: ei('large_steam_macerator') } ]
+    );
+
+    // -- CORE MINING DRILL -- //
+    assembler(
+        event,
+        st('core_mining_drill'),
+        8,
+        200,
         [
-            { amount: 1000, fluid: mc('water') },
-            { amount: 1000, fluid: mc('lava') }
+            { amount: 3, item: mi('clean_stainless_steel_machine_casing') },
+            { amount: 2, item: mi('quantum_circuit') },
+            { amount: 2, item: mi('large_advanced_motor') },
+            { amount: 1, item: mi('quantum_machine_hull') },
+            { amount: 1, item: mi('desh_drill_head') }
+        ],
+        [ { amount: 1, item: mi('core_drill') } ]
+    );
+
+    // -- DOPED DIODE -- //
+    assembler(
+        event,
+        st('diode_doped'),
+        8,
+        200,
+        [
+            { amount: 1, item: mi('silicon_n_doped_plate') },
+            { amount: 3, item: mi('electrum_fine_wire') },
+            { amount: 2, item: mi('steel_plate') }
+        ],
+        [ { amount: 4, item: mi('diode') } ],
+        [ { amount: 125, fluid: mi('molten_borosilicate_glass') } ],
+    );
+
+    // -- STAINLESS STEEL TANK -- //
+    assembler(
+        event,
+        st('stainless_steel_tank'),
+        8,
+        200,
+        [
+            { amount: 8, item: mi('stainless_steel_plate') },
+            { amount: 1, item: kj('borosilicate_glass') }
+        ],
+        [ { amount: 1, item: mi('stainless_steel_tank') } ]
+    );
+
+    // -- TITANIUM TANK -- //
+    assembler(
+        event,
+        st('titanium_tank'),
+        8,
+        200,
+        [
+            { amount: 8, item: mi('titanium_plate') },
+            { amount: 1, item: kj('borosilicate_glass') }
+        ],
+        [ { amount: 1, item: mi('titanium_tank') } ]
+    );
+
+    // -- TUNGSTENSTEEL TANK -- //
+    assembler(
+        event,
+        st('tungstensteel_tank'),
+        8,
+        200,
+        [
+            { amount: 8, item: mi('tungstensteel_plate') },
+            { amount: 1, item: kj('borosilicate_glass') }
+        ],
+        [ { amount: 1, item: mi('tungstensteel_tank') } ]
+    );
+
+    // -- LENS MOLD -- //
+    assembler(
+        event,
+        st('lens_mold'),
+        32,
+        200,
+        [ { amount: 4, item: mi('stainless_steel_plate') } ],
+        [ { amount: 1, item: kj('lens_mold')} ],
+        [ { amount: 100, fluid: mi('polytetrafluoroethylene') } ]
+    );
+
+    // -- PERSONAL SPACE SHIELD -- //
+    assembler(
+        event,
+        st('personal_space_shield'),
+        32,
+        1200,
+        [
+            { amount: 4, item: mi('tungstensteel_tank') },
+            { amount: 8, item: mi('processing_unit') },
+            { amount: 12, item: mi('superconductor_cable') },
+            { amount: 8, item: mi('small_heat_exchanger') }, 
+            { amount: 2, item: mi('uranium_fuel_rod') },
+            { amount: 16, item: mi('nuclear_alloy_plate') }
+        ],
+        [ { amount: 1, item: kj('personal_space_shield') } ],
+        [ 
+            { amount: 16000, fluid: mi('oxygen') },
+            { amount: 4000, fluid: mi('cryofluid') }
         ]
-    );
-
-    // -- COBBLESTONE GENERATOR MK2 -- //
-    assembler(
-        st('cobblestone_generator_mk2'),
-        8,
-        200,
-        [
-            { amount: 4, item: mi('gold_plate') },
-            { amount: 4, item: kb('cobblestone_generator_mk1') },
-            { amount: 1, item: mi('basic_machine_hull') }
-        ],
-        [ { amount: 1, item: kb('cobblestone_generator_mk2') } ]
-    );
-
-    // -- COBBLESTONE GENERATOR MK3 -- //
-    assembler(
-        st('cobblestone_generator_mk3'),
-        8,
-        200,
-        [
-            { amount: 4, item: mi('diamond_plate') },
-            { amount: 4, item: kb('cobblestone_generator_mk2') },
-            { amount: 1, item: mi('advanced_machine_hull') }
-        ],
-        [ { amount: 1, item: kb('cobblestone_generator_mk3') } ]
-    );
-
-    // -- COBBLESTONE GENERATOR MK4 -- //
-    assembler(
-        st('cobblestone_generator_mk4'),
-        8,
-        200,
-        [
-            { amount: 4, item: mi('emerald_plate') },
-            { amount: 4, item: kb('cobblestone_generator_mk3') },
-            { amount: 1, item: mi('turbo_machine_hull') }
-        ],
-        [ { amount: 1, item: kb('cobblestone_generator_mk4') } ]
-    );
-
-    // -- COBBLESTONE GENERATOR MK5 -- //
-    assembler(
-        st('cobblestone_generator_mk5'),
-        8,
-        200,
-        [
-            { amount: 4, item: mc('netherite_ingot') },
-            { amount: 4, item: kb('cobblestone_generator_mk4') },
-            { amount: 1, item: mi('highly_advanced_machine_hull') }
-        ],
-        [ { amount: 1, item: kb('cobblestone_generator_mk5') } ]
-    );
-    
-    // -- BASALT GENERATOR MK1 -- //
-    assembler(
-        st('basalt_generator_mk1'),
-        8,
-        200,
-        [
-            { amount: 5, item: mc('soul_soil') },
-            { amount: 1, item: mc('blue_ice') },
-            { amount: 1, item: mc('iron_block') },
-            { amount: 1, item: mc('chest') }
-        ],
-        [ { amount: 1, item: kb('basalt_generator_mk1') } ],
-        [ { amount: 1000, fluid: mc('lava') } ]
-    );
-
-    // -- BASALT GENERATOR MK2 -- //
-    assembler(
-        st('basalt_generator_mk2'),
-        8,
-        200,
-        [
-            { amount: 4, item: mi('gold_plate') },
-            { amount: 4, item: kb('basalt_generator_mk1') },
-            { amount: 1, item: mi('basic_machine_hull') }
-        ],
-        [ { amount: 1, item: kb('basalt_generator_mk2') } ]
-    );
-
-    // -- BASALT GENERATOR MK3 -- //
-    assembler(
-        st('basalt_generator_mk3'),
-        8,
-        200,
-        [
-            { amount: 4, item: mi('diamond_plate') },
-            { amount: 4, item: kb('basalt_generator_mk2') },
-            { amount: 1, item: mi('advanced_machine_hull') }
-        ],
-        [ { amount: 1, item: kb('basalt_generator_mk3') } ]
-    );
-
-    // -- BASALT GENERATOR MK4 -- //
-    assembler(
-        st('basalt_generator_mk4'),
-        8,
-        200,
-        [
-            { amount: 4, item: mi('emerald_plate') },
-            { amount: 4, item: kb('basalt_generator_mk3') },
-            { amount: 1, item: mi('turbo_machine_hull') }
-        ],
-        [ { amount: 1, item: kb('basalt_generator_mk4') } ]
-    );
-
-    // -- BASALT GENERATOR MK5 -- //
-    assembler(
-        st('basalt_generator_mk5'),
-        8,
-        200,
-        [
-            { amount: 4, item: mc('netherite_ingot') },
-            { amount: 4, item: kb('basalt_generator_mk4') },
-            { amount: 1, item: mi('highly_advanced_machine_hull') }
-        ],
-        [ { amount: 1, item: kb('basalt_generator_mk5') } ]
     );
 
     // -- PISTON -- //
     assembler(
+        event,
         st('piston'),
         8,
         200,
         [
             { amount: 4, tag: 'c:stones' },
             { amount: 3, tag: mc('wooden_slabs') },
-            { amount: 1, tag: 'c:iron_rods' },
+            { amount: 1, tag: 'c:rods/iron' },
             { amount: 1, item: mc('redstone') }
         ],
         [ { amount: 1, item: mc('piston') } ]
@@ -201,6 +171,7 @@ ServerEvents.recipes(e => {
 
     // -- STICKY PISTON -- //
     assembler(
+        event,
         st('sticky_piston'),
         8,
         20,
@@ -213,6 +184,7 @@ ServerEvents.recipes(e => {
 
     // -- STICKY PISTON ALT -- //
     assembler(
+        event,
         st('sticky_piston_alt'),
         8,
         20,
@@ -223,6 +195,7 @@ ServerEvents.recipes(e => {
 
     // -- ANNIHILATION CORE -- //
     assembler(
+        event,
         st('annihilation_core'),
         8,
         200,
@@ -236,6 +209,7 @@ ServerEvents.recipes(e => {
 
     // -- FORMATION CORE -- // 
     assembler(
+        event,
         st('formation_core'),
         8,
         200,
@@ -249,6 +223,7 @@ ServerEvents.recipes(e => {
 
     // -- ME STORAGE BUS -- //
     assembler(
+        event,
         st('storage_bus'),
         8,
         200,
@@ -262,11 +237,12 @@ ServerEvents.recipes(e => {
 
     // -- ME IMPORT BUS -- //
     assembler(
+        event,
         st('import_bus'),
         8,
         200,
         [
-            { amount: 2, item: mi('aluminum_plate') },
+            { amount: 2, item: mi('steel_plate') },
             { amount: 1, item: mc('sticky_piston') },
             { amount: 1, item: ae('annihilation_core') }
         ],
@@ -275,167 +251,58 @@ ServerEvents.recipes(e => {
 
     // -- ME EXPORT BUS -- //
     assembler(
+        event,
         st('export_bus'),
         8,
         200,
         [
-            { amount: 2, item: mi('aluminum_plate') },
+            { amount: 2, item: mi('steel_plate') },
             { amount: 1, item: mc('piston') },
             { amount: 1, item: ae('formation_core') }
         ],
         [ { amount: 1, item: ae('export_bus') } ]
     );
 
-    // -- SUPERCONDUCTOR -- //
-    assembler(
-        st('superconductor'),
+    // -- REDSTONE BATTERY -- //
+/*     assembler(
+        event,
+        st('redstone_battery'),
         8,
         200,
         [
-            { amount: 3, item: tr('helium_coolant_cell_60k') },
-            { amount: 3, item: tr('energy_flow_chip') },
-            { amount: 2, item: mi('tungsten_ingot') },
-            { amount: 1, item: mi('quantum_circuit') }
+            { amount: 1, item: mi('battery_alloy_plate') },
+            { amount: 2, item: mi('tin_cable') },
+            { amount: 4, item: mi('battery_alloy_curved_plate') },
+            { amount: 2, item: mc('redstone') }
         ],
-        [ { amount: 4, item: tr('superconductor') } ]
-    );
+        [ { amount: 2, item: mi('redstone_battery') } ],
+        [ { amount: 100, fluid: mi('lithium') } ]
+    ); */
 
-    // -- HELIUM COOLANT CELL 60K -- //
-    assembler(
-        st('helium_coolant_cell_60k'),
-        8,
-        200,
-        [ { amount: 1, item: mi('tin_ingot') } ],
-        [ { amount: 1, item: tr('helium_coolant_cell_60k') } ],
-        [ { amount: 1000, fluid: mi('helium') } ]
-    );
-
-    // -- DIGITAL DISPLAY -- //
-    assembler(
-        st('digital_display'),
-        8,
-        200,
-        [ 
-            { amount: 4, item: mi('aluminum_plate') },
-            { amount: 3, item: mc('black_dye') },
-            { amount: 1, item: mc('glass_pane') },
-            { amount: 1, item: tr('advanced_circuit') }
-        ],
-        [ { amount: 1, item: tr('digital_display') } ]
-    );
-
-    // -- BASIC MACHINE FRAME -- // 
-    assembler(
-        st('basic_machine_frame'),
-        8,
-        200,
-        [ { amount: 8, item: tr('refined_iron_ingot') } ],
-        [ { amount: 1, item: tr('basic_machine_frame') } ]
-    );
-
-    // -- BASIC MACHINE FRAME ALT -- //
-    assembler(
-        st('basic_machine_frame_alt'),
-        8,
-        200,
-        [ { amount: 8, item: tr('refined_iron_storage_block') } ],
-        [ { amount: 9, item: tr('basic_machine_frame') } ]
-    );
-
-    // -- ADVANCED MACHINE FRAME -- //
-    assembler(
-        st('advanced_machine_frame'),
+    // -- SILICON BATTERY -- //
+/*     assembler(
+        event,
+        st('silicon_battery'),
         8,
         200,
         [
-            { amount: 2, item: tr('advanced_alloy_plate') },
-            { amount: 2, item: mi('carbon_plate') },
-            { amount: 1, item: tr('basic_machine_frame') }
+            { amount: 1, item: mi('battery_alloy_plate') },
+            { amount: 2, item: mi('electrum_cable') },
+            { amount: 4, item: mi('battery_alloy_curved_plate') },
+            { amount: 2, item: mi('silicon_dust') }
         ],
-        [ { amount: 1, item: tr('advanced_machine_frame') } ]
-    );
-
-    // -- INDUSTRIAL MACHINE FRAME -- //
-    assembler(
-        st('industrial_machine_frame'),
-        8,
-        200,
-        [
-            { amount: 4, item: mi('titanium_plate') },
-            { amount: 4, item: mi('chromium_plate') },
-            { amount: 1, item: tr('advanced_machine_frame') }
-        ],
-        [ { amount: 1, item: tr('industrial_machine_frame') } ]
-    );
-
-    // -- LAPOTRONIC ENERGY ORB -- //
-    assembler(
-        st('lapotronic_orb'),
-        8,
-        200, 
-        [
-            { amount: 1, item: tr('lapotron_crystal') },
-            { amount: 1, item: tr('lapotron_crystal') },
-            { amount: 1, item: tr('lapotron_crystal') },
-            { amount: 1, item: tr('lapotron_crystal') },
-            { amount: 1, item: mi('highly_advanced_machine_hull') },
-            { amount: 1, item: tr('lapotron_crystal') },
-            { amount: 1, item: tr('lapotron_crystal') },
-            { amount: 1, item: tr('lapotron_crystal') },
-            { amount: 1, item: tr('lapotron_crystal') }
-        ],
-        [ { amount: 1, item: tr('lapotronic_orb') } ]
-    );
-
-    // -- ADJUSTABLE SU -- //
-    assembler(
-        st('adjustable_su'),
-        8,
-        200,
-        [
-            { amount: 1, item: tr('lapotronic_orb') },
-            { amount: 1, item: tr('lapotronic_orb') },
-            { amount: 1, item: tr('lapotronic_orb') },
-            { amount: 1, item: tr('lapotronic_orb') },
-            { amount: 1, item: tr('energy_crystal') },
-            { amount: 1, item: tr('lapotronic_orb') },
-            { amount: 1, item: tr('lapotronic_orb') },
-            { amount: 1, item: tr('lapotronic_orb') },
-            { amount: 1, item: tr('lapotronic_orb') }
-        ],
-        [ { amount: 1, item: tr('adjustable_su') } ]
-    );
-
-    // -- 10K WATER COOLANT CELL -- //
-    assembler(
-        st('water_coolant_cell_10k'),
-        8,
-        200,
-        [ { amount: 4, item: mi('tin_ingot') } ],
-        [ { amount: 1, item: tr('water_coolant_cell_10k') } ],
-        [ { amount: 1000, fluid: mc('water') } ]
-    );
-
-    // -- OVERCLOCKER UPGRADE -- //
-    assembler(
-        st('overclocker_upgrade'),
-        8,
-        200,
-        [
-            { amount: 3, item: tr('water_coolant_cell_10k') },
-            { amount: 2, item: mi('copper_cable') },
-            { amount: 1, item: mi('analog_circuit') }
-        ],
-        [ { amount: 1, item: tr('overclocker_upgrade') } ]
-    );
+        [ { amount: 2, item: mi('silicon_battery') } ],
+        [ { amount: 100, fluid: mi('lithium') } ]
+    ); */
 
     // -- SODIUM BATTERY -- //
     assembler(
+        event,
         st('sodium_battery'),
         8,
         200,
         [
-            { amount: 1, tag: 'c:battery_alloy_plates' },
+            { amount: 1, item: mi('battery_alloy_plate') },
             { amount: 2, item: mi('aluminum_cable') },
             { amount: 4, item: mi('battery_alloy_curved_plate') },
             { amount: 2, item: mi('sodium_dust') }
@@ -446,11 +313,12 @@ ServerEvents.recipes(e => {
 
     // -- CADMIUM BATTERY -- //
     assembler(
+        event,
         st('cadmium_battery'),
-        8,
+        16,
         200,
         [
-            { amount: 1, tag: 'c:battery_alloy_plates' },
+            { amount: 1, item: mi('battery_alloy_plate') },
             { amount: 2, item: mi('annealed_copper_cable') },
             { amount: 4, item: mi('battery_alloy_curved_plate') },
             { amount: 2, item: mi('cadmium_dust') }
@@ -461,11 +329,12 @@ ServerEvents.recipes(e => {
 
     // -- PLUTONIUM BATTERY -- //
     assembler(
+        event,
         st('plutonium_battery'),
-        8,
+        32,
         200,
         [
-            { amount: 1, tag: 'c:battery_alloy_plates' },
+            { amount: 1, item: mi('battery_alloy_plate') },
             { amount: 2, item: mi('superconductor_cable') },
             { amount: 4, item: mi('battery_alloy_curved_plate') },
             { amount: 2, item: mi('plutonium_dust') }
@@ -474,26 +343,42 @@ ServerEvents.recipes(e => {
         [ { amount: 100, fluid: mi('lithium') } ]
     );
 
-    // -- RED CELL BATTERY -- //
+    // -- CONCURRENT PROCESSOR -- //
     assembler(
-        st('red_cell_battery'),
-        8,
+        event,
+        st('concurrent_processor'),
+        16,
         200,
         [
-            { amount: 2, tag: 'c:lead_plates' },
-            { amount: 2, item: mi('redstone_battery') },
-            { amount: 1, item: mi('copper_cable') }
+            { amount: 1, item: ea('concurrent_processor_print') },
+            { amount: 1, item: ae('printed_silicon') }
         ],
-        [ { amount: 1, item: tr('red_cell_battery') } ]
+        [ { amount: 1, item: ea('concurrent_processor') } ],
+        [ { amount: 90, fluid: mi('molten_redstone') } ]
+    );
+
+    // -- ACCUMULATION PROCESSOR -- //
+    assembler(
+        event,
+        st('accumulation_processor'),
+        16,
+        200,
+        [
+            { amount: 1, item: mg('printed_accumulation_processor') },
+            { amount: 1, item: ae('printed_silicon') }
+        ],
+        [ { amount: 1, item: mg('accumulation_processor') } ],
+        [ { amount: 90, fluid: mi('molten_redstone') } ]
     );
 
     // -- QUARTZ FIBER -- //
     assembler(
+        event,
         st('quartz_fiber'),
         8,
         200,
         [
-            { amount: 6, tag: 'c:glass' },
+            { amount: 6, tag: 'c:glass_blocks' },
             { amount: 3, item: ae('certus_quartz_dust') }
         ],
         [ { amount: 3, item: ae('quartz_fiber') } ]
@@ -501,6 +386,7 @@ ServerEvents.recipes(e => {
 
     // -- END CRYSTAL -- //
     assembler(
+        event,
         st('end_crystal'),
         16,
         200,
@@ -513,33 +399,34 @@ ServerEvents.recipes(e => {
     );
 
     // -- URANIUM ORE FROM UU -- //
-    assembler(
-        st('uranium_ore'),
-        32,
-        600,
-        [ 
-            { amount: 6, item: tr('uu_matter') },
-            { amount: 1, item: mc('moss_block') }
-        ],
-        [ { amount: 1, item: mi('uranium_ore') } ],
-        [ { amount: 15, fluid: mi('molten_nether_star') } ]
-    );
+    // assembler(
+        // st('uranium_ore'),
+        // 32,
+        // 600,
+        // [ 
+            // { amount: 6, item: tr('uu_matter') },
+            // { amount: 1, item: mc('moss_block') }
+        // ],
+        // [ { amount: 1, item: mi('uranium_ore') } ],
+        // [ { amount: 15, fluid: mi('molten_nether_star') } ]
+    // );
 
     // -- IRIDIUM ORE FROM UU -- //
-    assembler(
-        st('iridium_ore'),
-        32,
-        600,
-        [
-            { amount: 6, item: tr('uu_matter') },
-            { amount: 1, item: mc('stone') }
-        ],
-        [ { amount: 1, item: mi('iridium_ore') } ],
-        [ { amount: 15, fluid: mi('molten_nether_star') } ]
-    );
+    // assembler(
+        // st('iridium_ore'),
+        // 32,
+        // 600,
+        // [
+            // { amount: 6, item: tr('uu_matter') },
+            // { amount: 1, item: mc('stone') }
+        // ],
+        // [ { amount: 1, item: mi('iridium_ore') } ],
+        // [ { amount: 15, fluid: mi('molten_nether_star') } ]
+    // );
 
     // -- LV TO MV TRANSFORMER -- //
     assembler(
+        event,
         st('lv_mv_transformer'),
         8,
         200,
@@ -553,6 +440,7 @@ ServerEvents.recipes(e => {
 
     // -- MV TO LV TRANSFORMER -- //
     assembler(
+        event,
         st('mv_lv_transformer'),
         8,
         200,
@@ -566,6 +454,7 @@ ServerEvents.recipes(e => {
 
     // -- MV TO HV TRANSFORMER -- //
     assembler(
+        event,
         st('mv_hv_transformer'),
         8,
         200,
@@ -579,6 +468,7 @@ ServerEvents.recipes(e => {
 
     // -- HV TO MV TRANSFORMER -- //
     assembler(
+        event,
         st('hv_mv_transformer'),
         8,
         200,
@@ -592,6 +482,7 @@ ServerEvents.recipes(e => {
 
     // -- HV TO EV TRANSFORMER -- //
     assembler(
+        event,
         st('hv_ev_transformer'),
         8,
         200,
@@ -605,6 +496,7 @@ ServerEvents.recipes(e => {
 
     // -- EV TO HV TRANSFORMER -- //
     assembler(
+        event,
         st('ev_hv_transformer'),
         8,
         200,
@@ -618,6 +510,7 @@ ServerEvents.recipes(e => {
 
     // -- EV TO SUPERCONDUCTOR TRANSFORMER -- //
     assembler(
+        event,
         st('ev_superconductor_transformer'),
         8,
         200,
@@ -631,6 +524,7 @@ ServerEvents.recipes(e => {
 
     // -- SUPERCONDUCTOR TO EV TRANSFORMER -- //
     assembler(
+        event,
         st('superconductor_ev_transformer'),
         8,
         200,
@@ -644,6 +538,7 @@ ServerEvents.recipes(e => {
 
     // -- BLOOD GENERATOR -- //
     assembler(
+        event,
         st('blood_generator'),
         8,
         200,
@@ -659,6 +554,7 @@ ServerEvents.recipes(e => {
 
     // -- MACHINE EXTENDER -- //
     assembler(
+        event,
         st('machine_extender'),
         8,
         200,
@@ -673,6 +569,7 @@ ServerEvents.recipes(e => {
 
     // -- ATTRACTOR -- //
     assembler(
+        event,
         st('attractor'),
         8,
         200,
@@ -687,6 +584,7 @@ ServerEvents.recipes(e => {
 
     // -- EXTRACTOR -- //
     assembler(
+        event,
         st('extractor'),
         8,
         200,
@@ -701,6 +599,7 @@ ServerEvents.recipes(e => {
 
     // -- FILTER -- //
     assembler(
+        event,
         st('filter'),
         8,
         200,
@@ -715,6 +614,7 @@ ServerEvents.recipes(e => {
 
     // -- INHIBITOR -- //
     assembler(
+        event,
         st('inhibitor'),
         8,
         200,
@@ -727,6 +627,7 @@ ServerEvents.recipes(e => {
 
     // -- MISSING TEXTURE COOKIE -- //
     assembler(
+        event,
         st('missing_texture_cookie'),
         8,
         200,
@@ -735,11 +636,12 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mc('cocoa_beans') }
         ],
         [ { amount: 3, item: kj('missing_texture_cookie') } ],
-        [ { amount: 100, fluid: mi('crude_oil') } ]
-    );
+        [ { amount: 100, fluid: mi('crude_oil') } ],
+	);
 
     // -- BOSS CRUSHER -- //
     assembler(
+        event,
         st('boss_crusher'),
         8,
         200,
@@ -752,63 +654,23 @@ ServerEvents.recipes(e => {
         ],
         [ { amount: 1, item: mi('boss_crusher') } ]
         );
-        
-    // -- ENERGY FLOW CHIP -- //
-    assembler(
-        st('energy_flow_chip'),
-        8,
-        200,
-        [
-            { amount: 4, item: tr('advanced_circuit') },
-            { amount: 2, tag: 'c:tungsten_ingots' },
-            { amount: 1, tag: 'c:iridium_alloy_plates' },
-            { amount: 1, item: tr('lapotron_crystal') },
-            { amount: 1, item: tr('lapotron_crystal') }
-        ],
-        [ { amount: 4, item: tr('energy_flow_chip') } ]
-    );
-
-    // -- DATA STORAGE CHIP -- //
-    assembler(
-        st('data_storage_chip'),
-        8,
-        200,
-        [
-            { amount: 4, item: tr('advanced_circuit') },
-            { amount: 4, item: tr('data_storage_core') },
-            { amount: 1, tag: 'c:iridium_ingots' }
-        ],
-        [ { amount: 1, item: tr('data_storage_chip') } ]
-    );
-
-    // -- ADVANCED CIRCUIT -- //
-    assembler(
-        st('advanced_circuit'),
-        8,
-        200,
-        [
-            { amount: 4, tag: 'c:redstone_dusts' },
-            { amount: 2, tag: 'c:glowstone_dusts' },
-            { amount: 2, tag: 'c:lapis_lazulis' },
-            { amount: 1, item: mi('analog_circuit') }
-        ],
-        [ { amount: 1, item: tr('advanced_circuit') } ]
-    );
 
     // -- PTFE MACHINE CASING -- //
     assembler(
+        event,
         st('ptfe_machine_casing'),
         8,
         200,
         [
-            { amount: 8, tag: 'c:polytetrafluoroethylene_plates' },
-            { amount: 1, tag: 'c:polytetrafluoroethylene_gears' }
+            { amount: 8, item: mi('polytetrafluoroethylene_plate') },
+            { amount: 1, item: mi('polytetrafluoroethylene_gear') }
         ],
         [ { amount: 1, item: mi('chemically_inert_ptfe_casing') } ]
     );
 
     // -- PTFE PIPE CASING -- //
     assembler(
+        event,
         st('ptfe_machine_casing_pipe'),
         8,
         200,
@@ -818,9 +680,36 @@ ServerEvents.recipes(e => {
         ],
         [ { amount: 2, item: mi('polytetrafluoroethylene_machine_casing_pipe') } ]
     );
+
+    // -- TUNGSTENSTEEL MACHINE CASING -- //
+    assembler(
+        event,
+        st('tungstensteel_machine_casing'),
+        8,
+        200,
+        [
+            { amount: 8, item: mi('tungstensteel_plate') },
+            { amount: 1, item: mi('tungstensteel_gear') }
+        ],
+        [ { amount: 1, item: mi('tungstensteel_machine_casing') } ]
+    );
+
+    // -- TUNGSTENSTEEL PIPE CASING -- //
+    assembler(
+        event,
+        st('tungstensteel_machine_casing_pipe'),
+        8,
+        200,
+        [
+            { amount: 1, item: mi('tungstensteel_machine_casing') },
+            { amount: 6, item: mi('tungstensteel_curved_plate') }
+        ],
+        [ { amount: 2, item: mi('tungstensteel_machine_casing_pipe') } ]
+    );
     
     // -- ALLOY SMELTER -- //
     assembler(
+        event,
         st('alloy_smelter'),
         8,
         200,
@@ -831,11 +720,12 @@ ServerEvents.recipes(e => {
             { amount: 2, item: mi('tin_cable') },
             { amount: 1, item: mi('electric_furnace') }
         ],
-        [ { amount: 1, item: mi('alloy_smelter') } ]
+        [ { amount: 1, item: ei('electric_alloy_smelter') } ]
     );
 
     // -- LASER ENGRAVER -- //
     assembler(
+        event,
         st('laser_engraver'),
         8,
         200,
@@ -850,30 +740,31 @@ ServerEvents.recipes(e => {
     );
 
     // -- PHOTOSYNTHETIC CHAMBER -- //
-    assembler(
-        st('photosynthetic_chamber'),
-        8,
-        200,
-        [
-            { amount: 2, item: mi('inductor') },
-            { amount: 2, item: mi('motor') },
-            { amount: 1, item: mi('pump') },
-            { amount: 1, item: mi('steel_tank') },
-            { amount: 1, item: mc('dirt') },
-            { amount: 1, tag: 'c:glass_blocks' },
-            { amount: 1, item: mi('basic_machine_hull') }
-        ],
-        [ { amount: 1, item: mi('photosynthetic_chamber') } ]
-    );
+    // assembler(
+        // st('photosynthetic_chamber'),
+        // 8,
+        // 200,
+        // [
+            // { amount: 2, item: mi('inductor') },
+            // { amount: 2, item: mi('motor') },
+            // { amount: 1, item: mi('pump') },
+            // { amount: 1, item: mi('steel_tank') },
+            // { amount: 1, item: mc('dirt') },
+            // { amount: 1, tag: 'c:glass_blocks' },
+            // { amount: 1, item: mi('basic_machine_hull') }
+        // ],
+        // [ { amount: 1, item: mi('photosynthetic_chamber') } ]
+    // );
 
     // -- ROCKET PART ASSEMBLER -- //
     assembler(
+        event,
         st('rocket_part_assembler'),
         8,
         200,
         [
             { amount: 2, item: mi('robot_arm') },
-            { amount: 2, tag: 'c:stainless_steel_gears' },
+            { amount: 2, tag: 'c:gears/stainless_steel' },
             { amount: 2, item: mi('digital_circuit') },
             { amount: 1, item: mi('advanced_motor') },
             { amount: 1, item: mi('advanced_pump') },
@@ -883,22 +774,23 @@ ServerEvents.recipes(e => {
     );
 
     // -- CORE MINING DRILL -- //
-    assembler(
-        st('core_drill'),
-        8,
-        200,
-        [
-            { amount: 3, item: mi('clean_stainless_steel_machine_casing') },
-            { amount: 2, item: mi('large_advanced_motor') },
-            { amount: 2, item: mi('quantum_circuit') },
-            { amount: 1, item: mi('desh_drill_head') },
-            { amount: 1, item: mi('quantum_machine_hull') }
-        ],
-        [ { amount: 1, item: mi('core_drill') } ]
-    );
+    // assembler(
+        // st('core_drill'),
+        // 8,
+        // 200,
+        // [
+            // { amount: 3, item: mi('clean_stainless_steel_machine_casing') },
+            // { amount: 2, item: mi('large_advanced_motor') },
+            // { amount: 2, item: mi('quantum_circuit') },
+            // { amount: 1, item: mi('desh_drill_head') },
+            // { amount: 1, item: mi('quantum_machine_hull') }
+        // ],
+        // [ { amount: 1, item: mi('core_drill') } ]
+    // );
 
     // -- INDUSTRIAL GREENHOUSE -- //
     assembler(
+        event,
         st('industrial_greenhouse'),
         8,
         200,
@@ -914,6 +806,7 @@ ServerEvents.recipes(e => {
 
     // -- LARGE CHEMICAL REACTOR -- //
     assembler(
+        event,
         st('large_chemical_reactor'),
         8,
         200,
@@ -924,25 +817,124 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('chemical_reactor') },
             { amount: 1, item: mi('turbo_machine_hull') }
         ],
-        [ { amount: 1, item: mi('large_chemical_reactor') } ]
+        [ { amount: 1, item: mt('large_chemical_reactor') } ]
+    );
+
+     // -- BULK COMPACTOR -- //
+    assembler(
+        event,
+        st('bulk_compactor'),
+        8,
+        200,
+        [ 
+            { amount: 4, item: mi('steel_large_plate') },
+            { amount: 2, item: mi('advanced_motor') },
+            { amount: 1, item: mi('digital_circuit') },
+            { amount: 1, item: mi('electric_compressor') },
+            { amount: 1, item: mi('turbo_machine_hull') }
+        ],
+        [ { amount: 1, item: mt('bulk_compactor') } ]
+    );
+
+     // -- LARGE SCALE ASSEMBLER -- //
+    assembler(
+        event,
+        st('large_scale_assembler'),
+        8,
+        200,
+        [ 
+            { amount: 4, item: mi('tungstensteel_large_plate') },
+            { amount: 1, item: mi('advanced_motor') },
+            { amount: 1, item: mi('advanced_pump') },
+            { amount: 1, item: mi('processing_unit') },
+            { amount: 1, item: mi('assembler') },
+            { amount: 1, item: kj('borosilicate_glass') }
+        ],
+        [ { amount: 1, item: mt('large_scale_assembler') } ]
+    );
+
+     // -- INDUSTRIAL MIXING MACHINE -- //
+    assembler(
+        event,
+        st('industrial_mixing_machine'),
+        8,
+        200,
+        [ 
+            { amount: 4, item: mi('enderium_plate') },
+            { amount: 1, item: mi('large_advanced_pump') },
+            { amount: 1, item: mi('titanium_tank') },
+            { amount: 2, item: kj('borosilicate_glass') },
+            { amount: 1, item: mi('electric_mixer') }
+        ],
+        [ { amount: 1, item: mt('industrial_mixing_machine') } ]
+    );
+
+     // -- BLAST ALLOY SMELTER -- //
+    assembler(
+        event,
+        st('blast_alloy_smelter'),
+        8,
+        200,
+        [ 
+            { amount: 4, item: mi('cupronickel_wire_magnetic') },
+            { amount: 1, item: mi('tungstensteel_coil') },
+            { amount: 1, item: mi('processing_unit') },
+            { amount: 1, item: ei('electric_alloy_smelter') },
+            { amount: 2, item: 'xtonesreworked:korp_block_9' }
+        ],
+        [ { amount: 1, item: mt('blast_alloy_smelter') } ]
+    );
+
+     // -- OVERSIZED ELECTROLYSIS CHAMBER -- //
+    assembler(
+        event,
+        st('oversized_electrolysis_chamber'),
+        8,
+        200,
+        [ 
+            { amount: 2, item: mi('tungstensteel_large_plate') },
+            { amount: 1, item: mi('large_advanced_motor') },
+            { amount: 1, item: mi('large_advanced_pump') },
+            { amount: 1, item: mi('electrolyzer') },
+            { amount: 2, item: kj('borosilicate_glass') },
+            { amount: 2, item: 'factory_blocks:circuit' }
+        ],
+        [ { amount: 1, item: mt('oversized_electrolysis_chamber') } ]
+    );
+
+     // -- GRAND MASS CENTRIFUGE -- //
+    assembler(
+        event,
+        st('grand_mass_centrifuge'),
+        8,
+        200,
+        [ 
+            { amount: 2, item: mi('tungstensteel_cable') },
+            { amount: 4, item: mi('large_advanced_motor') },
+            { amount: 1, item: mi('large_advanced_pump') },
+            { amount: 1, item: mi('centrifuge') },
+            { amount: 1, item: mi('processing_unit') }
+        ],
+        [ { amount: 1, item: mt('grand_mass_centrifuge') } ]
     );
 
     // -- MEGA SMELTER -- //
-    assembler(
-        st('mega_smelter'),
-        8,
-        200,
-        [
-            { amount: 4, item: mi('cupronickel_wire_magnetic') },
-            { amount: 2, item: mi('electronic_circuit') },
-            { amount: 2, item: mi('electric_furnace') },
-            { amount: 1, item: mi('advanced_machine_hull') }
-        ],
-        [ { amount: 1, item: mi('mega_smelter') } ]
-    );
+    // assembler(
+        // st('mega_smelter'),
+        // 8,
+        // 200,
+        // [
+            // { amount: 4, item: mi('cupronickel_wire_magnetic') },
+            // { amount: 2, item: mi('electronic_circuit') },
+            // { amount: 2, item: mi('electric_furnace') },
+            // { amount: 1, item: mi('advanced_machine_hull') }
+        // ],
+        // [ { amount: 1, item: mi('mega_smelter') } ]
+    // );
 
     // -- MOB CRUSHER -- //
     assembler(
+        event,
         st('mob_crusher'),
         8,
         200,
@@ -956,22 +948,9 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: mi('mob_crusher') } ]
     );
 
-    // -- PYROLYSE OVEN -- //
-    assembler(
-        st('pyrolyse_oven'),
-        8,
-        200,
-        [
-            { amount: 4, item: tr('cupronickel_heating_coil') },
-            { amount: 3, item: mi('inductor') },
-            { amount: 1, item: mi('analog_circuit') },
-            { amount: 1, item: mi('basic_machine_hull') }
-        ],
-        [ { amount: 1, item: mi('pyrolyse_oven') } ]
-    );
-
     // -- QUASI QUANTUM SINGULARITY FORGE -- //
     assembler(
+        event,
         st('singularity_forge'),
         8,
         200,
@@ -985,7 +964,25 @@ ServerEvents.recipes(e => {
 
     // -- SPACE PROBE LAUNCHER -- //
     assembler(
+        event,
         st('space_probe_launcher'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('stainless_steel_gear') },
+            { amount: 2, item: mi('advanced_motor') },
+            { amount: 2, item: mi('stainless_steel_machine_casing_pipe') },
+            { amount: 1, item: mi('digital_circuit') },
+            { amount: 1, item: mi('clean_stainless_steel_machine_casing') },
+            { amount: 1, item: mi('turbo_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('space_probe_launcher') } ]
+    );
+
+    // -- QUANTUM SPACE PROBE LAUNCHER -- //
+    assembler(
+        event,
+        st('quantum_space_probe_launcher'),
         8,
         200,
         [
@@ -996,11 +993,12 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('calorite_machine_casing') },
             { amount: 1, item: mi('highly_advanced_machine_hull') }
         ],
-        [ { amount: 1, item: mi('space_probe_launcher') } ]
+        [ { amount: 1, item: mi('quantum_space_probe_launcher') } ]
     );
 
     // -- UNCOOKED PIZZA -- //
     assembler(
+        event,
         st('uncooked_pizza'),
         8,
         200,
@@ -1008,7 +1006,7 @@ ServerEvents.recipes(e => {
             { amount: 1, item: kj('pizza_dough') },
             { amount: 1, item: fd('tomato_sauce') },
             { amount: 1, item: fd('onion') },
-            { amount: 1, item: ad('cheese') },
+            { amount: 1, item: ed('cheese_slice') },
             { amount: 1, item: fd('minced_beef') }
         ],
         [ { amount: 1, item: kj('uncooked_pizza') } ]
@@ -1016,6 +1014,7 @@ ServerEvents.recipes(e => {
 
     // -- OP AMP -- //
     assembler(
+        event,
         st('op_amp'),
         8,
         200,
@@ -1030,12 +1029,13 @@ ServerEvents.recipes(e => {
 
     // -- BASIC CARD -- //
     assembler(
+        event,
         st('basic_card'),
         8,
         200,
         [ 
-            { amount: 3, tag: 'c:aluminum_plates' },
-            { amount: 2, tag: 'c:gold_ingots' },
+            { amount: 3, tag: 'c:plates/steel' },
+            { amount: 2, tag: 'c:ingots/gold' },
             { amount: 1, item: ae('calculation_processor') }
         ],
         [ { amount: 2, item: ae('basic_card') } ],
@@ -1044,12 +1044,13 @@ ServerEvents.recipes(e => {
 
     // -- ADVANCED CARD -- //
     assembler(
+        event,
         st('advanced_card'),
         8,
         200,
         [ 
-            { amount: 3, tag: 'c:aluminum_plates' },
-            { amount: 2, tag: 'c:diamonds' },
+            { amount: 3, tag: 'c:plates/steel' },
+            { amount: 2, tag: 'c:gems/diamond' },
             { amount: 1, item: ae('calculation_processor') }
         ],
         [ { amount: 2, item: ae('advanced_card') } ],
@@ -1058,6 +1059,7 @@ ServerEvents.recipes(e => {
 
     // -- WITHERED SOC -- //
     assembler(
+        event,
         st('withered_soc'),
         32,
         1200,
@@ -1076,11 +1078,12 @@ ServerEvents.recipes(e => {
 
     // -- BRONZE BOILER -- //
     assembler(
+        event,
         st('bronze_boiler'),
         8,
         200,
         [
-            { amount: 4, tag: 'c:bronze_plates' },
+            { amount: 4, tag: 'c:plates/bronze' },
             { amount: 1, item: mi('bronze_tank') },
             { amount: 1, item: mi('bronze_machine_casing') },
             { amount: 3, item: mi('fire_clay_bricks') }
@@ -1090,11 +1093,12 @@ ServerEvents.recipes(e => {
 
     // -- BRONZE FURNACE -- /
     assembler(
+        event,
         st('bronze_furnace'),
         8,
         200,
         [
-            { amount: 7, tag: 'c:bronze_plates' },
+            { amount: 7, tag: 'c:plates/bronze' },
             { amount: 1, item: mi('bronze_machine_casing') },
             { amount: 1, item: mc('furnace') }
         ],
@@ -1103,37 +1107,26 @@ ServerEvents.recipes(e => {
   
     // -- SPACE PROBE -- //
     assembler(
+        event,
         st('space_probe'),
         32,
         200,
         [
-            { amount: 2, item: ad('rocket_fin') },
+            { amount: 2, item: kj('rocket_fin') },
             { amount: 2, item: mi('enderium_gear') },
             { amount: 1, item: mi('desh_drill') },
+            { amount: 1, item: kj('calorite_fuel_tank') },
             { amount: 1, item: mi('processing_unit') },
-            { amount: 1, item: ad('desh_engine') },
+            { amount: 1, item: kj('calorite_engine') },
             { amount: 1, item: mi('titanium_tank') },
             { amount: 1, item: mi('titanium_tank') }
         ],
         [ { amount: 4, item: kj('space_probe') } ]
     );
 
-    // -- CUPRONICKEL HEATING COIL -- //
-    assembler(
-        st('cupronickel_heating_coil'),
-        4,
-        400,
-        [
-            { amount: 4, item: mi('cupronickel_wire') },
-            { amount: 1, item: mi('copper_ring') }
-        ],
-        [
-            { amount: 1, item: tr('cupronickel_heating_coil') }
-        ]
-    );
-
     // -- ZINC DRILL -- //
     assembler(
+        event,
         st('zinc_drill'),
         8,
         200,
@@ -1141,20 +1134,21 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('zinc_drill_head') },
             { amount: 2, item: mi('iron_gear') },
             { amount: 1, item: 'create:electron_tube' },
-            { amount: 1, tag: 'c:bronze_plates' }
+            { amount: 1, tag: 'c:plates/bronze' }
         ],
         [ { amount: 4, item: mi('zinc_drill') } ]
     );
 
     // -- DESH DRILL -- //
     assembler(
+        event,
         st('desh_drill'),
         16,
         200,
         [
             { amount: 1, item: mi('desh_drill_head') },
             { amount: 2, tag: 'modern_industrialization:item_pipes' },
-            { amount: 2, tag: 'c:enderium_gears' },
+            { amount: 2, item: mi('enderium_gear') },
             { amount: 2, item: mi('large_advanced_motor') },
             { amount: 1, item: mi('processing_unit') },
             { amount: 1, item: mi('annealed_copper_wire') }
@@ -1162,92 +1156,19 @@ ServerEvents.recipes(e => {
         [ { amount: 4, item: mi('desh_drill') } ]
     );
 
-    // -- AUTO CRAFTING TABLE -- //
-    assembler(
-        st('auto_crafting_table'),
-        16,
-        600,
-        [
-            { amount: 4, item: mi('analog_circuit') },
-            { amount: 2, tag: 'c:workbench' },
-            { amount: 2, item: mi('robot_arm') },
-            { amount: 2, item: mi('motor') }
-        ],
-        [ { amount: 1, item: tr('auto_crafting_table') } ]
-    );
-
-    // -- LITHIUM BATTERY -- //
-    assembler(
-        st('lithium_ion_battery'),
-        16,
-        300,
-        [
-            { amount: 1, item: tr('red_cell_battery') },
-            { amount: 4, tag: 'c:aluminum_plates' }
-        ],
-        [ { amount: 1, item: tr('lithium_ion_battery') } ],
-        [ { amount: 500, fluid: mi('lithium') } ]
-    );
-
-    // -- LITHIUM BATPACK -- //
-    assembler(
-        st('lithium_ion_batpack'),
-        16,
-        300,
-        [
-            { amount: 1, item: tr('lithium_ion_battery') },
-            { amount: 1, item: tr('lithium_ion_battery') },
-            { amount: 1, item: tr('lithium_ion_battery') },
-            { amount: 1, item: tr('lithium_ion_battery') },
-            { amount: 1, item: tr('lithium_ion_battery') },
-            { amount: 1, item: tr('lithium_ion_battery') },
-            { amount: 1, tag: 'c:aluminum_plates' }
-        ],
-        [ { amount: 1, item: tr('lithium_ion_batpack') } ],
-        [ { amount: 1000, fluid: mi('acrylic_glue') } ]
-    );
-
-    // -- ENERGY CRYSTAL -- //
-    assembler(
-        st('energy_crystal'),
-        80,
-        300,
-        [
-            { amount: 2, tag: 'c:stainless_steel_plates' },
-            { amount: 2, item: tr('synthetic_redstone_crystal') },
-            { amount: 2, item: mi('digital_circuit') }
-        ],
-        [ { amount: 1, item: tr('energy_crystal') } ],
-        [ { amount: 500, fluid: mi('polyethylene') } ]
-    );
-
-    // -- LAPOTRON CRYSTAL -- //
-    assembler(
-        st('lapotron_crystal'),
-        128,
-        400,
-        [
-            { amount: 4, item: tr('lazurite_plate') },
-            { amount: 2, item: mi('digital_circuit') },
-            { amount: 2, item: mi('titanium_plate') },
-            { amount: 1, item: tr('energy_crystal') }
-        ],
-        [ { amount: 1, item: tr('lapotron_crystal') } ],
-        [ { amount: 500, fluid: mi('polyethylene') } ]
-    );
-
     // -- QBIT -- //
     assembler(
-        st('qbit'),
+        event,
+        st('qubit'),
         20,
         200,
         [
             { amount: 2, item: mi('arithmetic_logic_unit') },
-            { amount: 2, tag: 'c:carbon_plates' },
-            { amount: 2, tag: 'c:tungstensteel_plates' },
+            { amount: 2, tag: 'c:plates/carbon' },
+            { amount: 2, item: mi('tungstensteel_plate') },
             { amount: 6, item: mi('superconductor_wire') }
         ],
-        [ { amount: 1, item: mi('qbit') } ],
+        [ { amount: 1, item: mi('qubit') } ],
         [
             { amount: 250, fluid: mi('cryofluid') },
             { amount: 50, fluid: mi('tritium') }
@@ -1261,8 +1182,8 @@ ServerEvents.recipes(e => {
     //     600,
     //     [
     //         { amount: 4, item: mi('tungstensteel_large_plate') },
-    //         { amount: 4, tag: 'c:lead_plates' },
-    //         { amount: 1, tag: 'c:iridium_alloy_plates' }
+    //         { amount: 4, tag: '#c:plates/lead' },
+    //         { amount: 1, tag: '#c:plates/iridium' }
     //     ],
     //     [ { amount: 1, item: mi('ultradense_metal_ball') } ],
     //     [ { amount: 1000, fluid: mi('neutronium') } ]
@@ -1270,18 +1191,20 @@ ServerEvents.recipes(e => {
 
     // -- CALORITE MACHINE CASING -- //
     assembler(
+        event,
         st('calorite_machine_casing'),
         16,
         200,
         [
-            { amount: 8, tag: 'c:calorite_plates' },
-            { amount: 1, tag: 'c:calorite_gears' }
+            { amount: 8, item: mi('calorite_plate') },
+            { amount: 1, item: mi('calorite_gear') }
         ],
         [ { amount: 1, item: mi('calorite_machine_casing') } ]
     );
 
     // -- CALORITE MACHINE PIPE CASING -- //
     assembler(
+        event,
         st('calorite_machine_casing_pipe'),
         16,
         200,
@@ -1289,61 +1212,107 @@ ServerEvents.recipes(e => {
             { amount: 1, item: mi('calorite_machine_casing') },
             { amount: 6, item: mi('calorite_curved_plate')}
         ],
-        [ { amount: 1, item: mi('calorite_machine_casing_pipe')} ]
+        [ { amount: 2, item: mi('calorite_machine_casing_pipe')} ]
     );
 
-    // -- INDUSTRIAL CIRCUIT -- //
+    // -- DESH MACHINE CASING -- //
     assembler(
-        st('industrial_circuit'),
-        48,
-        300,
+        event,
+        st('desh_machine_casing'),
+        16,
+        200,
         [
-            { amount: 1, item: tr('advanced_circuit') },
-            { amount: 2, tag: 'c:tungsten_plates' }
+            { amount: 8, item: mi('desh_plate') },
+            { amount: 1, item: mi('desh_gear') }
         ],
-        [ { amount: 1, item:  tr('industrial_circuit') } ]
+        [ { amount: 1, item: mi('desh_machine_casing') } ]
     );
 
-    // -- DATA STORAGE CORE -- //
+    // -- DESH MACHINE PIPE CASING -- //
     assembler(
-        st('data_storage_core'),
-        20,
+        event,
+        st('desh_machine_casing_pipe'),
+        16,
         200,
         [
-            { amount: 1, item: tr('advanced_circuit') },
-            { amount: 1, tag: 'c:emerald_plates' }
+            { amount: 1, item: mi('desh_machine_casing') },
+            { amount: 6, item: mi('desh_curved_plate')}
         ],
-        [ { amount: 1, item: tr('data_storage_core') } ]
+        [ { amount: 2, item: mi('desh_machine_casing_pipe')} ]
     );
+
+    // -- ENDERIUM MACHINE CASING -- //
     assembler(
-        st('data_storage_core_alt'),
-        20,
+        event,
+        st('enderium_machine_casing'),
+        16,
         200,
         [
-            { amount: 1, item: tr('advanced_circuit') },
-            { amount: 2, tag: 'c:peridot_plates' }
+            { amount: 8, item: mi('enderium_plate') },
+            { amount: 1, item: mi('enderium_gear') }
         ],
-        [ { amount: 1, item: tr('data_storage_core') } ]
+        [ { amount: 1, item: mi('enderium_machine_casing') } ]
+    );
+
+/*     // -- ENDERIUM MACHINE PIPE CASING -- //
+    assembler(
+        event,
+        st('enderium_machine_casing_pipe'),
+        16,
+        200,
+        [
+            { amount: 1, item: mi('enderium_machine_casing') },
+            { amount: 6, item: mi('enderium_curved_plate')}
+        ],
+        [ { amount: 1, item: mi('enderium_machine_casing_pipe')} ]
+    ); */
+
+    // -- OSTRUM MACHINE CASING -- //
+    assembler(
+        event,
+        st('ostrum_machine_casing'),
+        16,
+        200,
+        [
+            { amount: 8, item: mi('ostrum_plate') },
+            { amount: 1, item: mi('ostrum_gear') }
+        ],
+        [ { amount: 1, item: mi('ostrum_machine_casing') } ]
+    );
+
+    // -- OSTRUM MACHINE PIPE CASING -- //
+    assembler(
+        event,
+        st('ostrum_machine_casing_pipe'),
+        16,
+        200,
+        [
+            { amount: 1, item: mi('ostrum_machine_casing') },
+            { amount: 6, item: mi('ostrum_curved_plate')}
+        ],
+        [ { amount: 2, item: mi('ostrum_machine_casing_pipe')} ]
     );
 
     // -- REDSTONE REPEATER -- //
     assembler(
+        event,
         st('repeater'),
         8,
         100,
-        [ { amount: 3, tag: 'c:stone' } ],
+        [ { amount: 3, tag: 'c:stones' } ],
         [ { amount: 1, item: mc('repeater') } ],
         [ { amount: 200, fluid: mi('molten_redstone') } ]
     );
 
     // -- REDSTONE COMPARATOR -- //
     assembler(
+        event,
         st('comparator'),
         8,
         100, 
         [
             { amount: 1, item: mc('quartz') },
-            { amount: 3, tag: 'c:stone' }
+            { amount: 3, tag: 'c:stones' }
         ],
         [ { amount: 1, item: mc('comparator') } ],
         [ { amount: 200, fluid: mi('molten_redstone') } ]
@@ -1351,130 +1320,84 @@ ServerEvents.recipes(e => {
 
     // -- REDSTONE TORCH -- //
     assembler(
+        event,
         st('redstone_torch'),
         8,
         100,
-        [ { amount: 1, tag: 'c:wood_sticks' } ],
+        [ { amount: 1, tag: 'c:rods/wooden' } ],
         [ { amount: 1, item: mc('redstone_torch') } ],
         [ { amount: 50, fluid: mi('molten_redstone') } ]
     );
 
-    // -- STANDARD HANDGUN CARTRIDGE -- //
+    // -- FACTORY BLOCK -- //
     assembler(
-        st('standard_handgun_cartridge'),
+        event,
+        st('factory_block'),
+        8,
+        100,
+        [ 
+            { amount: 4, item: mc('iron_ingot') },
+            { amount: 4, item: mc('stone') } 
+        ],
+        [ { amount: 32, item: 'factory_blocks:factory' } ]
+    );
+
+    // -- IRON BARS -- //
+    assembler(
+        event,
+        st('iron_bars'),
+        8,
+        100,
+        [ { amount: 6, item: mi('iron_rod') } ],
+        [ { amount: 16, item: mc('iron_bars') } ]
+    );
+
+    // -- MACHINE CHAINER -- //
+    assembler(
+        event,
+        st('machine_chainer'),
         8,
         200,
-        [
-            { amount: 1, tag: 'c:lead_ingots' },
-            { amount: 1, item: mc('gunpowder') },
-            { amount: 2, tag: 'c:brass_ingots' }
+        [ 
+            { amount: 1, item: mi('advanced_machine_hull') },
+            { amount: 4, item: mi('large_motor') },
+            { amount: 4, item: mi('large_pump') },
+            { amount: 64, tag: 'modern_industrialization:item_pipes' },
+            { amount: 64, tag: 'modern_industrialization:fluid_pipes' },
+            { amount: 64, item: mi('electrum_cable') }
         ],
-        [ { amount: 8, item: 'anim_guns:standard_handgun_cartridge' } ]
+        [ { amount: 1, item: ei('machine_chainer') } ],
+        [ { amount: 50, fluid: mi('polyethylene') } ]
     );
 
-    // -- HEAVY HANDGUN CARTRIDGE -- //
+    // -- LARGE STEAM TURBINE -- //
     assembler(
-        st('heavy_handgun_cartridge'),
+        event,
+        st('large_steam_turbine'),
         8,
         200,
-        [
-            { amount: 1, tag: 'c:lead_ingots' },
-            { amount: 1, item: mc('gunpowder') },
-            { amount: 2, item: 'anim_guns:hardened_iron_ingot' }
+        [ 
+            { amount: 1, item: mi('highly_advanced_machine_hull') },
+            { amount: 4, item: mi('hv_steam_turbine') },
+            { amount: 2, item: mi('large_advanced_pump') },
+            { amount: 2, item: mi('stainless_steel_rotor') }
         ],
-        [ { amount: 8, item: 'anim_guns:heavy_handgun_cartridge' } ]
+        [ { amount: 1, item: mi('large_steam_turbine') } ]
     );
 
-    // -- STANDARD RIFLE CARTRIDGE -- //
+    // -- LARGE DIESEL GENERATOR -- //
     assembler(
-        st('standard_rifle_cartridge'),
-        8, 
-        200,
-        [
-            { amount: 2, tag: 'c:lead_ingots' },
-            { amount: 2, item: mc('gunpowder') },
-            { amount: 4, tag: 'c:brass_ingots' }
-        ],
-        [ { amount: 8, item: 'anim_guns:standard_rifle_cartridge' } ]
-    );
-
-    // -- HEAVY RIFLE CARTRIDGE -- //
-    assembler(
-        st('heavy_rifle_cartridge'),
+        event,
+        st('large_diesel_generator'),
         8,
         200,
-        [
-            { amount: 2, tag: 'c:lead_ingots' },
-            { amount: 2, item: mc('gunpowder') },
-            { amount: 4, item: 'anim_guns:hardened_iron_ingot' }
-        ], 
-        [ { amount: 8, item: 'anim_guns:heavy_rifle_cartridge' } ]
-    );
-
-    // -- SHOTGUN SHELL -- //
-    assembler(
-        st('shotgun_shell'),
-        8,
-        200,
-        [
-            { amount: 18, tag: 'c:iron_nuggets' },
-            { amount: 2, item: mc('gunpowder') },
-            { amount: 2, item: mc('paper') },
-            { amount: 1, item: 'anim_guns:plastic' }
+        [ 
+            { amount: 1, item: mi('turbo_machine_hull') },
+            { amount: 4, item: mi('hv_diesel_generator') },
+            { amount: 2, item: mi('advanced_motor') },
+            { amount: 2, item: mi('titanium_gear') }
         ],
-        [ { amount: 8, item: 'anim_guns:shotgun_shell' } ]
-    );
-
-    // -- SPACE HELMET -- //
-    assembler(
-        st('space_helmet'),
-        16,
-        300,
-        [
-            { amount: 4, tag: 'c:steel_ingots' },
-            { amount: 1, tag: mc('glass_panes') },
-            { amount: 1, tag: mc('wool') }
-        ],
-        [ { amount: 1, item: ad('space_helmet') } ]
-    );
-
-    // -- SPACE SUIT -- // 
-    assembler(
-        st('space_suit'),
-        16,
-        300,
-        [
-            { amount: 4, tag: 'c:steel_ingots' }, 
-            { amount: 1, item: ad('oxygen_gear') },
-            { amount: 1, item: ad('oxygen_tank') },
-            { amount: 1, item: ad('oxygen_tank') },
-            { amount: 2, tag: mc('wool') }
-        ],
-        [ { amount: 1, item: ad('space_suit') } ]
-    );
-
-    // -- SPACE PANTS -- //
-    assembler(
-        st('space_pants'),
-        16,
-        300,
-        [
-            { amount: 5, tag: 'c:steel_ingots' },
-            { amount: 2, tag: mc('wool') }
-        ],
-        [ { amount: 1, item: ad('space_pants') } ]
-    ) 
-
-    // -- SPACE BOOTS -- //
-    assembler(
-        st('space_boots'),
-        16,
-        300,
-        [
-            { amount: 2, tag: 'c:steel_ingots' },
-            { amount: 2, tag: mc('wool') }
-        ],
-        [ { amount: 1, item: ad('space_boots') } ]
+        [ { amount: 1, item: mi('large_diesel_generator') } ]
     );
 
     // -------------------------
@@ -1483,6 +1406,7 @@ ServerEvents.recipes(e => {
 
     // -- CREATIVE STORAGE UNIT -- //
     assembler(
+        event,
         st('creative_storage_unit'),
         32000,
         2400,
@@ -1506,6 +1430,7 @@ ServerEvents.recipes(e => {
 
     // -- CREATIVE BARREL -- //
     assembler(
+        event,
         st('creative_barrel'),
         32000,
         2400,
@@ -1529,6 +1454,7 @@ ServerEvents.recipes(e => {
 
     // -- CREATIVE TANK -- //
     assembler(
+        event,
         st('creative_tank'),
         32000,
         2400,
@@ -1552,6 +1478,7 @@ ServerEvents.recipes(e => {
 
     // -- CREATIVE MOTOR -- //
     assembler(
+        event,
         st('creative_motor'),
         32000,
         2400,
@@ -1575,6 +1502,7 @@ ServerEvents.recipes(e => {
 
     // -- CREATIVE WORLDSHAPER -- //
     assembler(
+        event,
         st('handheld_worldshaper'),
         32000,
         2400,
@@ -1595,4 +1523,279 @@ ServerEvents.recipes(e => {
             { amount: 16000, fluid: mi('neutronium') }
         ]
     );
+
+    //-----------------//
+    // -- SPACE AGE -- //
+    //-----------------//
+
+    // -- TIERED SPACE PROBE -- //
+    assembler(
+        event,
+        st('basic_space_probe'),
+        8,
+        200,
+        [
+            { amount: 2, tag: 'c:gears/steel' },
+            { amount: 2, item: mi('electrum_cable') },
+            { amount: 1, item: kj('steel_fuel_tank') },
+            { amount: 2, item: kj('rocket_fin') },
+            { amount: 1, item: mi('aluminum_drill') },
+            { amount: 1, tag: 'modern_industrialization:item_pipes' }
+        ],
+        [ { amount: 4, item: kj('basic_space_probe') } ],
+    );
+
+    assembler(
+        event,
+        st('advanced_space_probe'),
+        8,
+        200,
+        [
+            { amount: 2, tag: 'c:gears/desh' },
+            { amount: 2, item: mi('aluminum_cable') },
+            { amount: 1, item: kj('desh_fuel_tank') },
+            { amount: 2, item: kj('rocket_fin') },
+            { amount: 1, item: mi('stainless_steel_drill') },
+            { amount: 1, tag: 'modern_industrialization:item_pipes' }
+        ],
+        [ { amount: 4, item: kj('advanced_space_probe') } ],
+    );
+        
+    assembler(
+        event,
+        st('highly_advanced_space_probe'),
+        8,
+        200,
+        [
+            { amount: 2, tag: 'c:gears/ostrum' },
+            { amount: 2, item: mi('annealed_copper_cable') },
+            { amount: 1, item: kj('ostrum_fuel_tank') },
+            { amount: 2, item: kj('rocket_fin') },
+            { amount: 1, item: mi('titanium_drill') },
+            { amount: 1, tag: 'modern_industrialization:item_pipes' }
+        ],
+        [ { amount: 4, item: kj('highly_advanced_space_probe') } ],
+    );
+
+    //---------------------//
+    // -- NUCLEAR REMIX -- //
+    //---------------------//
+
+
+    // 4x fuel cost for all rods
+/*     assembler(
+        event,
+        st('uranium_fuel_rod'),
+        16,
+        200,
+        [
+            { amount: 2, item: mi('blastproof_alloy_curved_plate') },
+            { amount: 1, item: mi('large_motor') },
+            { amount: 2, item: mi('robot_arm') },
+            { amount: 64, item: mi('uranium_rod') },
+            { amount: 8, item: mi('uranium_rod') }
+        ],
+        [ { amount: 1, item: mi('uranium_fuel_rod') } ],
+    ); 
+
+    assembler(
+        event,
+        st('le_uranium_fuel_rod'),
+        16,
+        200,
+        [
+            { amount: 2, item: mi('blastproof_alloy_curved_plate') },
+            { amount: 1, item: mi('large_motor') },
+            { amount: 2, item: mi('robot_arm') },
+            { amount: 64, item: mi('le_uranium_rod') },
+            { amount: 8, item: mi('le_uranium_rod') }
+        ],
+        [ { amount: 1, item: mi('le_uranium_fuel_rod') } ],
+    );  
+        
+    assembler(
+        event,
+        st('he_uranium_fuel_rod'),
+        16,
+        200,
+        [
+            { amount: 2, item: mi('blastproof_alloy_curved_plate') },
+            { amount: 1, item: mi('large_motor') },
+            { amount: 2, item: mi('robot_arm') },
+            { amount: 64, item: mi('he_uranium_rod') },
+            { amount: 8, item: mi('he_uranium_rod') }
+        ],
+        [ { amount: 1, item: mi('he_uranium_fuel_rod') } ],
+    );  
+        
+    assembler(
+        event,
+        st('le_mox_fuel_rod'),
+        16,
+        200,
+        [
+            { amount: 2, item: mi('blastproof_alloy_curved_plate') },
+            { amount: 1, item: mi('large_motor') },
+            { amount: 2, item: mi('robot_arm') },
+            { amount: 64, item: mi('le_mox_rod') },
+            { amount: 8, item: mi('le_mox_rod') }
+        ],
+        [ { amount: 1, item: mi('le_mox_fuel_rod') } ],
+    ); 
+        
+    assembler(
+        event,
+        st('he_mox_fuel_rod'),
+        16,
+        200,
+        [
+            { amount: 2, item: mi('blastproof_alloy_curved_plate') },
+            { amount: 1, item: mi('large_motor') },
+            { amount: 2, item: mi('robot_arm') },
+            { amount: 64, item: mi('he_mox_rod') },
+            { amount: 8, item: mi('he_mox_rod') }
+        ],
+        [ { amount: 1, item: mi('he_mox_fuel_rod') } ],
+    );  */
+
+    //---------------------//
+    // -- CREATE COMPAT -- //
+    //---------------------//
+
+    // -- ELECTRON TUBE -- //
+    assembler(
+        event,
+        st('electron_tube'),
+        8,
+        100,
+        [
+            { amount: 1, item: mi('iron_plate') },
+            { amount: 1, item: cr('polished_rose_quartz') }
+        ],
+        [ { amount: 1, item: cr('electron_tube') } ],
+    );  
+
+    // -- TESLA RECEIVERS FROM ENERGY INPUT HATCH
+    const TIER_NAMES = ['lv', 'mv', 'hv', 'ev', 'superconductor'];
+    TIER_NAMES.forEach(tierName => {
+        assembler(
+            event,
+            st(`${tierName}_tesla_receiver_hatch_from_${tierName}_energy_input_hatch`),
+            8,
+            200,
+            [
+                { amount: 1, item: ei('tesla_receiver') },
+                { amount: 1, item: mi(`${tierName}_energy_input_hatch`) }  
+            ],
+            [ { amount: 1, item: ei(`${tierName}_tesla_receiver_hatch`) } ]
+        );
+    });
+    
+    //---------------------//
+    // -- XTONES COMPAT -- //
+    //---------------------//
+
+    const baseXtonesMaterials = [
+        ['agon', 'stone_slab', '0'],
+        ['azur', 'blue_dye', '0'],
+        ['bitt', 'coal', '0'],
+        ['cray', 'clay', '0'],
+        ['fort', 'brick', '0'],
+        ['glaxx', 'glass', '0'],
+        ['iszm', 'stone', '0'],
+        ['jelt', 'orange_dye', '0'],
+        ['korp', 'gravel', '0'],
+        ['kryp', 'dirt', '0'],
+        ['lair', 'netherrack', '0'],
+        ['lave', 'blue_dye', '0'],
+        ['mint', 'lime_dye', '0'],
+        ['myst', 'snow', '0'],
+        ['reds', 'red_dye', '0'],
+        ['reed', 'sugar_cane', '0'],
+        ['roen', 'sand', '0'],
+        ['sols', 'yellow_dye', '0'],
+        ['sync', 'green_dye', '0'],
+        ['tank', 'gray_dye', '0'],
+        ['vect', 'black_dye', '0'],
+        ['vena', 'cobbled_deepslate', '0'],
+        ['zane', 'clay_ball', '15'],
+        ['zech', 'iron_ingot', '15'],
+        ['zest', 'snowball', '15'],
+        ['zeta', 'string', '15'],
+        ['zion', 'torch', '15'],
+        ['zkul', 'bone', '15'],
+        ['zoea', 'andesite', '15'],
+        ['zome', 'cobblestone', '15'],
+        ['zone', 'smooth_stone_slab', '15'],
+        ['zorg', 'terracotta', '15'],
+        ['ztyl', 'light_gray_dye', '0'],
+        ['zyth', 'stick', '15'] 
+    ];
+
+    baseXtonesMaterials.forEach(material => {
+        assembler(
+            event,
+            st(`${material[0]}_in_assembler`),
+            2,
+            100,
+            [
+                { amount: 8, item: xt('xtone_tile') },
+                { amount: 1, item: mc(`${material[1]}`) }  
+            ],
+            [ { amount: 8, item: xt(`${material[0]}_block_${material[2]}`) } ]
+        );
+    });
+    
+    assembler(
+        event,
+        st('xtone_tile_in_assembler'),
+        2,
+        100,
+        [
+            { amount: 6, item: mc('stone_slab') },
+            { amount: 1, item: mc('stone') }  
+        ],
+        [ { amount: 8, item: xt('xtone_tile') } ]
+    );
+
+
+    // This code sucks, look away
+    const xtoneRecipes = event.findRecipes({ mod: 'xtonesreworked', input:'#c:dyes' });
+    xtoneRecipes.forEach(recipe => {
+        let recipeJson = recipe.json;
+        let recipeId = recipeJson.get('result').get('id').toString();
+        let inputs = recipeJson.get('key');
+
+        // Dye is either multiple keys. This is janky as shit and WILL break if
+        // the dev decides to use a different character as a key for the dye
+        let dye;
+        if (inputs.get('C')) {
+            dye = inputs.get('C');
+        } else if (inputs.get('D')) {
+            dye = inputs.get('D');
+        } else if (inputs.get('S')) {
+            dye = inputs.get('S');
+        } else if (inputs.get('G')) {
+            dye = inputs.get('G');
+        } else {
+            console.log('Did not match: ' + inputs);
+        }
+        dye = dye.toString();
+        let dyeColor = dye.substring(dye.lastIndexOf('/') + 1, dye.lastIndexOf('"'));
+
+        let blockName = recipeId.substring(recipeId.indexOf(':') + 1, recipeId.lastIndexOf('"'));
+        let blockType = blockName.substring(0, blockName.indexOf('_'));
+
+        assembler(
+            event,
+            st(`${blockName}_from_${dyeColor}_dye`),
+            2,
+            200,
+            [
+                { amount: 8, tag: xt(blockType) },
+                { amount: 1, item: mc(`${dyeColor}_dye`) }
+            ],
+            [ { amount: 8, item: xt(blockName) } ]
+        );
+    });
 });

@@ -3,29 +3,19 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/fusion_reactor/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let fusion = (id, eu, duration, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('fusion_reactor'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
+    // -- FUSION REACTOR REMOVED RECIPES -- //
+    const REMOVED_RECIPE = [
+        mi('fusion_reactor/helium_tritium')
+    ]
+    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
 
     // HELIUM PLASMA + DEUTERIUM -> HYDROGEN + NEUTRONIUM 
     fusion(
+        event,
         st('hydrogen_neutronium_from_helium_plasma_deuterium'),
         16000,
         2000,
@@ -36,6 +26,21 @@ ServerEvents.recipes(e => {
         [
             { amount: 975, fluid: mi('hydrogen') },
             { amount: 15, fluid: mi('neutronium') }
+        ]
+    );
+    
+    fusion(
+        event,
+        st('helium_plasma_from_helium_3_tritium'),
+        16000,
+        300,
+        [
+            { amount: 1000, fluid: mi('helium_3') },
+            { amount: 1000, fluid: mi('tritium') }
+        ],
+        [
+            { amount: 1000, fluid: mi('helium_plasma') },
+            { amount: 1000, fluid: mi('deuterium') }
         ]
     );
 });

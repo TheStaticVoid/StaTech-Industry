@@ -3,13 +3,9 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/blast_furnace/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let mc = (id) => `minecraft:${id}`;
     
     // -- BLAST FURNACE REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -18,30 +14,25 @@ ServerEvents.recipes(e => {
         mi('materials/aluminum/blast_furnace/tiny_dust'),
         mi('materials/blast_furnace/superconductor')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let blastFurnace = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('blast_furnace'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs) 
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
+    // -- SHORT RANGE LENS -- //
+    blastFurnace(
+        event,
+        st('short_range_lens'),
+        24,
+        200,
+        [
+            { amount: 1, item: kj('lens_mold'), probability: 0.0 },
+            { amount: 1, item: mi('silicon_dust') }
+        ],
+        [ { amount: 1, item: kj('short_range_lens'), probability: 0.3 } ],
+        [ { amount: 200, fluid: mi('oxygen') } ]
+    );
 
     // -- NETHER STAR -> MOLTEN NETHER STAR -- //
     blastFurnace(
+        event,
         st('nether_star'),
         128,
         300,
@@ -53,6 +44,7 @@ ServerEvents.recipes(e => {
 
     // -- IMPURRE LIQUID NETHER STAR -> MOLTEN NETHER STAR -- //
     blastFurnace(
+        event,
         st('molten_nether_star'),
         128,
         900,
@@ -64,18 +56,20 @@ ServerEvents.recipes(e => {
     
     // -- WITHERED BONE -- //
     blastFurnace(
-        st('withered_bone'),
+        event,
+        st('withered_fragment'),
         16,
         600,
         [ 
             { amount: 16, item: 'minecraft:bone' },
             { amount: 1, item: 'minecraft:blaze_powder' }
         ],
-        [ { amount: 1, item: 'architects_palette:withered_bone' } ]
+        [ { amount: 1, item: 'wstweaks:fragment' } ]
     );
 
     // -- PIZZA -- //
     blastFurnace(
+        event,
         st('pizza'),
         2,
         600,
@@ -85,6 +79,7 @@ ServerEvents.recipes(e => {
 
     // -- UNCOOKED STEEL DUST -> STEEL INGOT -- //
     blastFurnace(
+        event,
         st('steel_ingot_from_uncooked_steel'),
         2,
         1200,
@@ -94,6 +89,7 @@ ServerEvents.recipes(e => {
 
     // -- MOLTEN ENDERIUM -- //
     blastFurnace(
+        event,
         st('molten_enderium'),
         48,
         400,
@@ -105,6 +101,7 @@ ServerEvents.recipes(e => {
 
     // -- ENDERIUM HOT INGOT -- // 
     blastFurnace(
+        event,
         st('enderium_hot_ingot'),
         64,
         400,
@@ -113,20 +110,9 @@ ServerEvents.recipes(e => {
         [ { amount: 1000, fluid: mi('molten_enderium') } ]
     );
 
-    // -- REFINED IRON INGOT -> STEEL INGOT -- //
-    blastFurnace(
-        st('steel_ingot_from_refined_iron'),
-        16,
-        100,
-        [
-            { amount: 3, tag: 'c:refined_iron_ingots' },
-            { amount: 1, tag: 'c:carbon_dusts' }
-        ],
-        [ { amount: 4, item: mi('steel_ingot') } ]
-    );
-
     // -- ALUMINUM EBF -- //
     blastFurnace(
+        event,
         st('aluminum_ingot'),
         32,
         600,
@@ -134,39 +120,75 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: mi('aluminum_ingot') } ]
     );
 
-    // -- IRON INGOTS -> HARDENED IRON INGOT -- //
+    // -- DESH EBF -- //
     blastFurnace(
-        st('hardend_iron_ingot'),
+        event,
+        st('desh_ingot'),
         16,
-        300,
-        [ { amount: 1, tag: 'c:iron_ingots' }, ],
-        [ { amount: 1, item: 'anim_guns:hardened_iron_ingot' } ]
+        600,
+        [ { amount: 1, item: mi('desh_dust') } ],
+        [ { amount: 1, item: mi('desh_hot_ingot') } ]
+    );
+
+    // -- OSTRUM EBF -- //
+    blastFurnace(
+        event,
+        st('ostrum_ingot'),
+        24,
+        600,
+        [ { amount: 1, item: mi('ostrum_dust') } ],
+        [ { amount: 1, item: mi('ostrum_hot_ingot') } ]
+    );
+
+    // -- CALORITE EBF -- //
+    blastFurnace(
+        event,
+        st('calorite_ingot'),
+        32,
+        600,
+        [ { amount: 1, item: mi('calorite_dust') } ],
+        [ { amount: 1, item: mi('calorite_hot_ingot') } ]
     );
 
     // -- TUNGSTEN + STEEL -> HOT TUNGSTENSTEEL -- //
     blastFurnace(
-        st('hot_tungstensteel_ingot'),
+        event,
+        st('tungstensteel_hot_ingot'),
         128,
         3600,
         [
-            { amount: 1, tag: 'c:tungsten_ingots' },
-            { amount: 1, tag: 'c:steel_ingots' }
+            { amount: 1, tag: 'c:ingots/tungsten' },
+            { amount: 1, tag: 'c:ingots/steel' }
         ],
-        [ { amount: 1, item: tr('hot_tungstensteel_ingot') } ]
+        [ { amount: 1, item: mi('tungstensteel_hot_ingot') } ]
     );
 
     // -- SUPERCONDUCTOR -- //
     blastFurnace(
+        event,
         st('superconductor_hot_ingot'),
         512,
         1200,
-        [ { amount: 1, tag: 'c:superconductor_dusts' } ],
+        [ { amount: 1, tag: 'c:dusts/superconductor' } ],
         [ { amount: 1, item: mi('superconductor_hot_ingot') } ],
         [ { amount: 50, fluid: mi('molten_nether_star') } ]
     );
 
+    // -- IRIDIUM -- //
+    blastFurnace(
+        event,
+        st('iridium_ingot'),
+        512,
+        1200,
+        [ { amount: 1, tag: 'c:dusts/iridium' } ],
+        [ { amount: 1, item: mi('iridium_ingot') } ],
+        [ { amount: 1000, fluid: mi('argon') } ],
+        [ { amount: 750, fluid: mi('argon') } ]
+    );
+
     // -- FLUORINE -- //
     blastFurnace(
+        event,
         st('fluorine'),
         16,
         200,
@@ -174,5 +196,45 @@ ServerEvents.recipes(e => {
         null,
         null,
         [ { amount: 1000, fluid: mi('fluorine') } ]
+    );
+
+    // -- MOLTEN BOROSILICATE GLASS -- //
+    blastFurnace(
+        event,
+        st('molten_borosilicate_glass'),
+        16,
+        200,
+        [ 
+            { amount: 6, item: kj('boron_quartz_blend') },
+            { amount: 2, item: mc('sand') }
+
+        ],
+        null,
+        null,
+        [ { amount: 1000, fluid: mi('molten_borosilicate_glass') } ]
+    );
+
+    // -- BERYLLIUM HOT INGOT -- //
+    blastFurnace(
+        event,
+        st('beryllium_hot_ingot'),
+        96,
+        300,
+        [ { amount: 1, item: mi('beryllium_dust') } ], 
+        [ { amount: 1, item: mi('beryllium_hot_ingot') } ],
+        null,
+        [ { amount: 1000, fluid: mi('oxygen') } ]
+    );
+
+    // -- LITHIUM TETRAFLUOROBORATE DECOMPOSITION -- //
+    blastFurnace(
+        event,
+        st('lithium_tetrafluoroborate_decompose'),
+        16,
+        200,
+        [ { amount: 1, item: mi('lithium_tetrafluoroborate_dust') } ], 
+        [ { amount: 1, item: mi('lithium_fluoride_dust') } ],
+        null,
+        [ { amount: 1000, fluid: mi('boron_trifluoride') } ]
     );
 });

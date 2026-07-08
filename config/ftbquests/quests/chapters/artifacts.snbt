@@ -1,89 +1,71 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: "square"
+	default_quest_shape: ""
 	filename: "artifacts"
-	group: "135E7B9D4273E5DD"
-	icon: "artifacts:mimic_spawn_egg"
-	id: "464FB437D5DF7824"
+	group: "109C2F5A861C0A8B"
+	id: "4AF4DF6E4752DD0A"
 	images: [
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 1.0d
-			hover: [ ]
-			image: "trinkets:textures/gui/slots/hat.png"
+			image: "curios:slot/empty_head_slot"
 			rotation: 0.0d
 			width: 1.0d
-			x: -6.0d
+			x: -11.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "curios:slot/empty_necklace_slot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
 			y: -4.0d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 1.0d
-			hover: [ ]
-			image: "trinkets:textures/gui/slots/necklace.png"
+			image: "curios:slot/empty_belt_slot"
 			rotation: 0.0d
 			width: 1.0d
-			x: -6.0d
+			x: -11.5d
 			y: -2.5d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 1.0d
-			hover: [ ]
-			image: "trinkets:textures/gui/slots/belt.png"
+			image: "curios:slot/empty_hands_slot"
 			rotation: 0.0d
 			width: 1.0d
-			x: -6.0d
+			x: -11.5d
 			y: -1.0d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 1.0d
-			hover: [ ]
-			image: "trinkets:textures/gui/slots/glove.png"
+			image: "curios:slot/empty_curio_slot"
 			rotation: 0.0d
 			width: 1.0d
-			x: -6.0d
+			x: -11.5d
 			y: 0.5d
 		}
 		{
-			click: ""
-			corner: false
-			dev: false
 			height: 1.0d
-			hover: [ ]
-			image: "trinkets:textures/gui/slots/shoes.png"
+			image: "curios:slot/empty_charm_slot"
 			rotation: 0.0d
 			width: 1.0d
-			x: -6.0d
-			y: 2.0d
-		}
-		{
-			click: ""
-			corner: false
-			dev: false
-			height: 1.0d
-			hover: [ ]
-			image: "trinkets:textures/gui/slots/glove_mirrored.png"
-			rotation: 0.0d
-			width: 1.0d
-			x: -6.0d
+			x: -11.5d
 			y: 3.5d
 		}
+		{
+			height: 1.0d
+			image: "curios:slot/empty_ring_slot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -11.5d
+			y: 2.0d
+		}
 	]
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["Can be used to slowfall and as a shield in a pinch"]
 			id: "36FB336313E5E377"
 			rewards: [{
 				id: "7DDDDFBC3E47AB7E"
@@ -91,52 +73,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "5AC95B1F43548911"
-				item: "artifacts:umbrella"
+				id: "6B63F1C1447DC4E2"
+				item: { count: 1, id: "artifacts:umbrella" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -10.0d
 			y: 3.5d
 		}
 		{
-			description: [
-				"Does not get consumed when eaten, meaning it's an infinite food source."
-				""
-				"Make sure to eat it before cooking for it to count towards your Spice of Life extra health!"
-			]
-			id: "78DFD8815E2AE291"
-			rewards: [{
-				id: "69638EF091A8AFCE"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "3E2B6425881CF371"
-				item: "artifacts:everlasting_beef"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["78DFD8815E2AE291"]
-			description: ["An infinite steak"]
-			id: "1ADACCB1A8BB9E7E"
-			rewards: [{
-				id: "61D470564DCE1FA2"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "1E0F0BDFC63184EA"
-				item: "artifacts:eternal_steak"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.5d
-		}
-		{
-			description: ["Allows you to drink items faster"]
 			id: "14CB47511F2D0E01"
 			rewards: [{
 				id: "52D05FAD22C2A307"
@@ -144,15 +88,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "7EB9142E4FE6ADDA"
-				item: "artifacts:plastic_drinking_hat"
+				id: "3C197745D730E9F6"
+				item: { count: 1, id: "artifacts:plastic_drinking_hat" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -4.0d
+			x: -8.5d
+			y: -5.5d
 		}
 		{
-			description: ["Allows you to drink items faster, but now with style!"]
 			id: "0E0532BA6E3FFEF9"
 			rewards: [{
 				id: "4675019196E78EE3"
@@ -160,15 +103,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "2317C696DA5FD8A3"
-				item: "artifacts:novelty_drinking_hat"
+				id: "5C1C4416245E8EF5"
+				item: { count: 1, id: "artifacts:novelty_drinking_hat" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -4.0d
+			x: -10.0d
+			y: -5.5d
 		}
 		{
-			description: ["Provides infinite air underwater, very useful for those pesky underwater caves"]
 			id: "78E34F3F9A19F275"
 			rewards: [{
 				id: "62FDF58E332FB956"
@@ -176,15 +118,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "7BE008CE94B2C56D"
-				item: "artifacts:snorkel"
+				id: "217353B9139AC685"
+				item: { count: 1, id: "artifacts:snorkel" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.0d
+			x: -7.0d
+			y: -5.5d
 		}
 		{
-			description: ["Provides an infinite night vision effect"]
 			id: "419A16655447AA92"
 			rewards: [{
 				id: "2A2441C04F7B9212"
@@ -192,15 +133,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "1912A0752E6FADBF"
-				item: "artifacts:night_vision_goggles"
+				id: "48E5BDF96E10F5B4"
+				item: { count: 1, id: "artifacts:night_vision_goggles" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -4.0d
+			x: -1.0d
+			y: -5.5d
 		}
 		{
-			description: ["Allows you to trade with villagers for much cheaper"]
 			id: "016C498DFB704536"
 			rewards: [{
 				id: "7468D9D9707A6ACB"
@@ -208,15 +148,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "12F439628FB7CDCB"
-				item: "artifacts:villager_hat"
+				id: "79CFBCADD1819DA5"
+				item: { count: 1, id: "artifacts:villager_hat" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.0d
+			x: -2.5d
+			y: -5.5d
 		}
 		{
-			description: ["Adds a looting effect to killed mobs"]
 			id: "7F1AB8E8DA7BFD77"
 			rewards: [{
 				id: "5055597FC444777A"
@@ -224,15 +163,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "0C442789304872B6"
-				item: "artifacts:superstitious_hat"
+				id: "15100C7397F6C071"
+				item: { count: 1, id: "artifacts:superstitious_hat" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: -5.5d
+			y: -5.5d
 		}
 		{
-			description: ["Applies fortune to mined blocks"]
 			id: "5A2F0B2712D9C667"
 			rewards: [{
 				id: "5AE92A57FE5F770B"
@@ -240,15 +178,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "782DD0DFCE4325EB"
-				item: "artifacts:lucky_scarf"
+				id: "7C803E0948C17085"
+				item: { count: 1, id: "artifacts:lucky_scarf" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -2.5d
+			x: -10.0d
+			y: -4.0d
 		}
 		{
-			description: ["Applies an infinite invisibility potion, making you less noticeable to mobs"]
 			id: "3F0D2D8C1CFD1F2A"
 			rewards: [{
 				id: "313A6BAE5F8DC862"
@@ -256,15 +193,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "5DE8E457A9DCEF7C"
-				item: "artifacts:scarf_of_invisibility"
+				id: "548F0B8081D779CD"
+				item: { count: 1, id: "artifacts:scarf_of_invisibility" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.5d
+			x: -8.5d
+			y: -4.0d
 		}
 		{
-			description: ["Increases the user's invulnerability frames after taking a hit"]
 			id: "39AD4C222874D63F"
 			rewards: [{
 				id: "0EE7E063A05A77C9"
@@ -272,15 +208,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "502B6242B9078D87"
-				item: "artifacts:cross_necklace"
+				id: "177FC80C42FAEB2A"
+				item: { count: 1, id: "artifacts:cross_necklace" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.5d
+			x: -7.0d
+			y: -4.0d
 		}
 		{
-			description: ["Gives a movement speed boost when taking damage"]
 			id: "2B619746DAF80A5E"
 			rewards: [{
 				id: "3C68F588CA0DA58E"
@@ -288,15 +223,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "11116ADB3F4FC685"
-				item: "artifacts:panic_necklace"
+				id: "4E40ACC4232188BD"
+				item: { count: 1, id: "artifacts:panic_necklace" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.5d
+			x: -5.5d
+			y: -4.0d
 		}
 		{
-			description: ["Strikes your attackers with lightning (occasionally)"]
 			id: "66A8B9C4C4AC291A"
 			rewards: [{
 				id: "0DEB4D02840406B4"
@@ -304,15 +238,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "70A77066CB447D08"
-				item: "artifacts:shock_pendant"
+				id: "063790949AA587E6"
+				item: { count: 1, id: "artifacts:shock_pendant" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -2.5d
+			x: -4.0d
+			y: -4.0d
 		}
 		{
-			description: ["Lights your attackers on fire"]
 			id: "042259C7B1BF773A"
 			rewards: [{
 				id: "7C6C87A06C2D27B7"
@@ -320,15 +253,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "5BCCB7CCA6B46C3B"
-				item: "artifacts:flame_pendant"
+				id: "123DD815D9C5CE88"
+				item: { count: 1, id: "artifacts:flame_pendant" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -2.5d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
-			description: ["Damages attackers similar to the Thorns enchantment"]
 			id: "4D38017F83D30E13"
 			rewards: [{
 				id: "588000FB2DA481CB"
@@ -336,19 +268,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "74EEC207D510DBA4"
-				item: "artifacts:thorn_pendant"
+				id: "78C0B2FCB17C4B98"
+				item: { count: 1, id: "artifacts:thorn_pendant" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -2.5d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
-			description: [
-				"Allows the wearer to move unimpeded in water"
-				""
-				"Note: You will sink to the bottom and can take fall damage"
-			]
 			id: "6E98473128936047"
 			rewards: [{
 				id: "4CF0059B0324CFBF"
@@ -356,15 +283,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "7DA4EB63F0107E6C"
-				item: "artifacts:charm_of_sinking"
+				id: "1A3A3D61C8BD4782"
+				item: { count: 1, id: "artifacts:charm_of_sinking" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.5d
+			x: 0.5d
+			y: -4.0d
 		}
 		{
-			description: ["Allows you to double jump, similar to the Terraria item"]
 			id: "3121D591D3807584"
 			rewards: [{
 				id: "4D57DF36F048A686"
@@ -372,15 +298,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "7E7E73C398B3F243"
-				item: "artifacts:cloud_in_a_bottle"
+				id: "56321A85D1D826BF"
+				item: { count: 1, id: "artifacts:cloud_in_a_bottle" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -1.0d
+			x: -10.0d
+			y: -2.5d
 		}
 		{
-			description: ["Grants temporary fire resistance when touching lava/fire"]
 			id: "60B9F9AD8F49371D"
 			rewards: [{
 				id: "51576F46303C427B"
@@ -388,15 +313,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "3D559D5149F4FDA0"
-				item: "artifacts:obsidian_skull"
+				id: "4D776F08EF259629"
+				item: { count: 1, id: "artifacts:obsidian_skull" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.0d
+			x: -8.5d
+			y: -2.5d
 		}
 		{
-			description: ["Reduces the time of debuffs"]
 			id: "05A39ED901BC6569"
 			rewards: [{
 				id: "0DFC2511E4C4B51B"
@@ -404,15 +328,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "29DE9C6CED103B59"
-				item: "artifacts:antidote_vessel"
+				id: "36B0A0C4DB3DAAD7"
+				item: { count: 1, id: "artifacts:antidote_vessel" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.0d
+			x: -7.0d
+			y: -2.5d
 		}
 		{
-			description: ["Attracts dropped items to the wearer"]
 			id: "10CDACBCA03AEDF7"
 			rewards: [{
 				id: "5F62D402C5F0AF06"
@@ -420,15 +343,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "1FEAD956C8A38974"
-				item: "artifacts:universal_attractor"
+				id: "68FDE883FB3F785A"
+				item: { count: 1, id: "artifacts:universal_attractor" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.0d
+			x: -5.5d
+			y: -2.5d
 		}
 		{
-			description: ["Grants 10 extra health (5 hearts)"]
 			id: "29491A4A65DEDCDC"
 			rewards: [{
 				id: "431EBEDFCC81C54B"
@@ -436,15 +358,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "324F62127E57BC1A"
-				item: "artifacts:crystal_heart"
+				id: "1269620383467CA7"
+				item: { count: 1, id: "artifacts:crystal_heart" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.0d
+			x: -4.0d
+			y: -2.5d
 		}
 		{
-			description: ["Press CTRL while airborne to perform a short and slow glide"]
 			id: "4CCAD1EBB977DF2E"
 			rewards: [{
 				id: "655FC1746C6BB593"
@@ -452,15 +373,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "0AB4D6FE3AB4D9F5"
-				item: "artifacts:helium_flamingo"
+				id: "3FB8A176565401A4"
+				item: { count: 1, id: "artifacts:helium_flamingo" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.0d
+			x: -2.5d
+			y: -2.5d
 		}
 		{
-			description: ["Increases the wearers mining speed and allows the wearer to break blocks like stone with their fist"]
 			id: "0424F3DCA7620F49"
 			rewards: [{
 				id: "1C8C84752A6ED144"
@@ -468,15 +388,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "16E3E1B1926B22B2"
-				item: "artifacts:digging_claws"
+				id: "0F7931380A2C91DD"
+				item: { count: 1, id: "artifacts:digging_claws" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: -10.0d
+			y: -1.0d
 		}
 		{
-			description: ["Increases the wearer's attack speed"]
 			id: "7940D8A4ECBD6541"
 			rewards: [{
 				id: "70FF66D9DF7B8062"
@@ -484,15 +403,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "3CD6D96568CD66E5"
-				item: "artifacts:feral_claws"
+				id: "104E7DF9EE05BE70"
+				item: { count: 1, id: "artifacts:feral_claws" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.5d
+			x: -8.5d
+			y: -1.0d
 		}
 		{
-			description: ["Increases the damage dealt by the wearer"]
 			id: "72564111D0768098"
 			rewards: [{
 				id: "1E62CAB9C3DA36E2"
@@ -500,15 +418,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "140CF92060A56D91"
-				item: "artifacts:power_glove"
+				id: "4A7333C22465DF83"
+				item: { count: 1, id: "artifacts:power_glove" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 0.5d
+			x: -7.0d
+			y: -1.0d
 		}
 		{
-			description: ["Causes the wearer's attacks to set the target on fire"]
 			id: "13449219998C54E1"
 			rewards: [{
 				id: "5F081E2C8B7FA242"
@@ -516,15 +433,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "4D955A0AF058959D"
-				item: "artifacts:fire_gauntlet"
+				id: "5C8AE231FDE5FC82"
+				item: { count: 1, id: "artifacts:fire_gauntlet" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 0.5d
+			x: -5.5d
+			y: -1.0d
 		}
 		{
-			description: ["Increases knockback from attacks"]
 			id: "136F140D9A3ED036"
 			rewards: [{
 				id: "7D2DCDF736455542"
@@ -532,15 +448,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "59C81AFB80F49937"
-				item: "artifacts:pocket_piston"
+				id: "36D8CAEE41C33575"
+				item: { count: 1, id: "artifacts:pocket_piston" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.5d
+			x: -4.0d
+			y: -1.0d
 		}
 		{
-			description: ["The wearer slightly heals from attacks"]
 			id: "51A4E097156A6DC1"
 			rewards: [{
 				id: "0A76BAE453CB1478"
@@ -548,15 +463,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "18C5FE1CDE31AF99"
-				item: "artifacts:vampiric_glove"
+				id: "54D7E87FADD2437B"
+				item: { count: 1, id: "artifacts:vampiric_glove" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 0.5d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
-			description: ["Increases experience dropped by mobs"]
 			id: "4FDAFBD64AA710A1"
 			rewards: [{
 				id: "6B0B760CF6F1815F"
@@ -564,15 +478,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "7301B6DA08D2D14F"
-				item: "artifacts:golden_hook"
+				id: "61306158A8DFC028"
+				item: { count: 1, id: "artifacts:golden_hook" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.5d
+			x: -1.0d
+			y: -1.0d
 		}
 		{
-			description: ["The wearer can sprint on water"]
 			id: "5ABC7CE1A9B9FB7C"
 			rewards: [{
 				id: "60B8C37463A60DC6"
@@ -580,15 +493,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "36E5A04FB77769B8"
-				item: "artifacts:aqua_dashers"
+				id: "654EA98E251C1321"
+				item: { count: 1, id: "artifacts:aqua_dashers" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.0d
+			x: -10.0d
+			y: 0.5d
 		}
 		{
-			description: ["Increases wearer's jump height and negates all fall damage"]
 			id: "2ED49410115A9FDC"
 			rewards: [{
 				id: "1544EFDE70BA8A39"
@@ -596,15 +508,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "4518BD43BAE189E6"
-				item: "artifacts:bunny_hoppers"
+				id: "05A6492F8D09948D"
+				item: { count: 1, id: "artifacts:bunny_hoppers" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.0d
+			x: -8.5d
+			y: 0.5d
 		}
 		{
-			description: ["Creepers will actively avoid the wearer"]
 			id: "632F1D52317286A8"
 			rewards: [{
 				id: "0FF3A2261F24DA85"
@@ -612,15 +523,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "7A00BCA9914E1A38"
-				item: "artifacts:kitty_slippers"
+				id: "76C920C6FD174E00"
+				item: { count: 1, id: "artifacts:kitty_slippers" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 2.0d
+			x: -7.0d
+			y: 0.5d
 		}
 		{
-			description: ["Drastically increases the wearer's sprint speed and allows for auto-step"]
 			id: "7362AE3D474FF6E1"
 			rewards: [{
 				id: "3FA1248FF75509A7"
@@ -628,15 +538,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "03DC25753703FF8B"
-				item: "artifacts:running_shoes"
+				id: "122FDAB11887FF46"
+				item: { count: 1, id: "artifacts:running_shoes" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: -5.5d
+			y: 0.5d
 		}
 		{
-			description: ["The wearer cannot be knocked back"]
 			id: "17C488042DB187A3"
 			rewards: [{
 				id: "650934EDFED71B73"
@@ -644,15 +553,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "2EA3AE6B42E8DAC4"
-				item: "artifacts:steadfast_spikes"
+				id: "2F7A3087D48B7E8E"
+				item: { count: 1, id: "artifacts:steadfast_spikes" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.0d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
-			description: ["Increases the wearer's swim speed"]
 			id: "2F8EAC597AB7E760"
 			rewards: [{
 				id: "1A85329A4B2B05CE"
@@ -660,15 +568,14 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "4BAB959E80D724B1"
-				item: "artifacts:flippers"
+				id: "67791D2AC9B496EE"
+				item: { count: 1, id: "artifacts:flippers" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.0d
+			x: -2.5d
+			y: 0.5d
 		}
 		{
-			description: ["Infinite comedy"]
 			id: "250E32D632A506B2"
 			rewards: [{
 				id: "7811BF5CDFADFB6A"
@@ -676,14 +583,177 @@
 				xp: 10
 			}]
 			tasks: [{
-				id: "04BE5FA924E1D9A9"
-				item: "artifacts:whoopee_cushion"
+				id: "7DC5D79ACB096681"
+				item: { count: 1, id: "artifacts:whoopee_cushion" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			id: "16C7A2586255ADCA"
+			rewards: [{
+				id: "07FA422D9DA5F27A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7F0460310CBD7F60"
+				item: { count: 1, id: "artifacts:onion_ring" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			id: "710C5C3BAA0D5345"
+			rewards: [{
+				id: "0278D5935D34A4BB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "061B93FB0148598D"
+				item: { count: 1, id: "artifacts:withered_bracelet" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			id: "4AADAF11113E6FA9"
+			rewards: [{
+				id: "1F5792C24FB4FFF5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "31726E251C2D26AA"
+				item: { count: 1, id: "artifacts:warp_drive" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "6E347907DA022989"
+			rewards: [{
+				id: "1689CA80D3A00FF0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "54BA69FD54FA76C7"
+				item: { count: 1, id: "artifacts:charm_of_shrinking" }
+				type: "item"
+			}]
+			x: 2.0d
 			y: -4.0d
 		}
+		{
+			id: "7FC30BBADF5F24EE"
+			rewards: [{
+				id: "05003AF4EAF72746"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "16AD9C1E6DA198E2"
+				item: { count: 1, id: "artifacts:cowboy_hat" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			id: "71E9A3BD02745351"
+			rewards: [{
+				id: "16D3D3F7CA2FAF0F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "71DE0D9FB93FD083"
+				item: { count: 1, id: "artifacts:anglers_hat" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			id: "3A77BA6A5F916C50"
+			rewards: [{
+				id: "6AE2CB36286D20C8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "02837CAE044EB5BE"
+				item: { count: 1, id: "artifacts:snowshoes" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			id: "746F848C349B8563"
+			rewards: [{
+				id: "4C2667DC59985CAC"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "69E0F9685D65D860"
+				item: { count: 1, id: "artifacts:rooted_boots" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			id: "0D0371482A758CD3"
+			rewards: [{
+				id: "26C4A2AE06683035"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "767ACB040577B7FE"
+				item: { count: 1, id: "artifacts:strider_shoes" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			id: "3C3237FF36E1AFB0"
+			rewards: [{
+				id: "63F6F5BFBFEC22AF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2E5778DAEFDCB056"
+				item: { count: 1, id: "artifacts:chorus_totem" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			id: "73F6EF3440FCD176"
+			rewards: [{
+				id: "7FA1B6CBC8C81ADB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3EC01EBEDA5C1885"
+				item: { count: 1, id: "createaddition:electrum_amulet" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 3.5d
+		}
 	]
-	subtitle: ["Treasures from The Zone"]
-	title: "&aArtifacts"
 }

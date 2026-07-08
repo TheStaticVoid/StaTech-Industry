@@ -1,27 +1,17 @@
 // -----------------------------------------
-// CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// CREATED BY STATIC, MODIFIED BY DINO FOR USE IN
+// STATECH INDUSTRY UNOFFICIAL
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let ad = (id) => `ad_astra:${id}`;
-    let cr = (id) => `create:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let kj = (id) => `kubejs:${id}`;
 
     // -- MODERN INDUSTRIALIZATION REMOVED RECIPES -- //
     const MI_DELETED_ITEMS = [
         mi('forge_hammer'),
         mi('guidebook'),
         mi('vanilla_recipes/steel_forge_hammer_asbl'),
-        mi('materials/bronze_dust'),
-        mi('materials/bronze_tiny_dust'),
-        mi('materials/fire_clay_dust'),
         mi('vanilla_recipes/steam_bucket'),
         mi('vanilla_recipes/steam_bucket_exported_mi_furnace'),
         mi('materials/uncooked_steel_dust'),
@@ -39,47 +29,99 @@ ServerEvents.recipes(e => {
         mi('materials/tungstensteel/craft/coil'),
         mi('armor/gravichestplate'),
         mi('electric_age/component/craft/ultradense_metal_ball_asbl'),
-        mi('materials/fire_clay_bricks'),
-        mi('compat/techreborn/macerator/minecraft_clay_ball_to_techreborn_clay_dust'),
+        mi('electric_age/component/craft/transistor_doped_asbl'),
         mi('steam_age/bronze/furnace_asbl'),
         mi('steam_age/bronze/boiler_asbl'),
         mi('tools/steam_mining_drill'),
-        mi('electric_age/component/craft/op_amp_asbl')
+        mi('electric_age/component/craft/op_amp_asbl'),
+        mi('materials/iron/craft/hammer'),
+        mi('materials/steel/craft/hammer'),
+        mi('materials/diamond/craft/hammer'),
+        mi('materials/fire_clay_dust'),
+        mi('materials/stainless_steel/craft/tank'),
+        mi('materials/titanium/craft/tank'),
+        mi('materials/tungstensteel/craft/tank'),
+        mi('electric_age/machine/large_steam_turbine_asbl'),
+        mi('electric_age/machine/large_diesel_generator_asbl'),
+        mi('materials/iridium/smelting/ore_to_ingot_smelting'),
+        mi('materials/iridium/smelting/raw_metal_to_ingot_smelting'),
+        mi('materials/iridium/smelting/dust_to_ingot_smelting'),
+        mi('materials/iridium/smelting/ore_to_ingot_blasting'),
+        mi('materials/iridium/smelting/raw_metal_to_ingot_blasting'),
+        mi('materials/iridium/smelting/dust_to_ingot_blasting'),
     ];
-    MI_DELETED_ITEMS.forEach(id => e.remove( {id: id} ));
+    MI_DELETED_ITEMS.forEach(id => event.remove( {id: id} ));
+
+    event.shapeless(mi('iron_plate'), [
+        '4x ' + mc('iron_ingot'), '#' + mi('forge_hammer_tools') 
+    ])
+    .damageIngredient('#' + mi('forge_hammer_tools'), 50)
+    .id(mi('iron_plate_from_hammer'));
+
+    // -- FIRE CLAY DUST -- //
+    event.shaped('3x ' + mi('fire_clay_dust'), [
+        'BC ',
+        'CB '
+    ],
+    {
+        C: '#c:dusts/clay',
+        B: '#c:dusts/brick'
+    })
+    .id(mi('materials/fire_clay_dust'));
     
-    // -- CONVERSION RECIPE FOR EXISTING WORLDS -- //
-    e.shapeless(mi('laser_engraver'), [ ae('inscriber') ]).id(st('laser_engraver_conversion'));
+    // -- IRON HAMMER -- //
+    event.shaped(mi('iron_hammer'), [
+        'III',
+        'ISI',
+        ' S '
+    ],
+    {
+        I: '#c:ingots/iron',
+        S: '#c:rods/wooden'
+    })
+    .id(st('iron_hammer'));
+
+    // -- STEEL HAMMER -- //
+    event.shaped(mi('steel_hammer'), [
+        'III',
+        'ISI',
+        ' S '
+    ],
+    {
+        I: '#c:ingots/steel',
+        S: '#c:rods/wooden'
+    })
+    .id(st('steel_hammer'));
+
+    // -- DIAMOND HAMMER -- //
+    event.shaped(mi('diamond_hammer'), [
+        'DDD',
+        'DSD',
+        ' S '
+    ],
+    {
+        D: '#c:gems/diamond',
+        S: '#c:rods/wooden'
+    })
+    .id(st('diamond_hammer'));
 
     // -- BLOOD GENERATOR -- //
-    e.shaped(mi('blood_generator'), [
+    event.shaped(mi('blood_generator'), [
         'RCR',
         'THT',
         'PCP'
     ],
     {
-        H: mi('turbo_machine_hull'),
-        T: mi('hv_steam_turbine'),
-        C: mi('digital_circuit'),
-        R: mi('stainless_steel_rotor'),
-        P: mi('advanced_pump')
+        H: ('modern_industrialization:turbo_machine_hull'),
+        T: ('modern_industrialization:hv_steam_turbine'),
+        C: ('modern_industrialization:digital_circuit'),
+        R: ('modern_industrialization:stainless_steel_rotor'),
+        P: ('modern_industrialization:advanced_pump'),
     })
     .id(st('blood_generator'));
 
-    // -- LARGE STEAM MACERATOR -- // 
-    e.shaped(mi('large_steam_macerator'), [
-        'BBB',
-        'BMB',
-        'BBB'
-    ],
-    {
-        B: '#c:bronze_plates',
-        M: mi('steel_macerator')
-    })
-    .id(st('large_steam_macerator'));
-
     // -- BOSS CRUSHER -- // 
-    e.shaped(mi('boss_crusher'), [
+    event.shaped(mi('boss_crusher'), [
         'RCR',
         'PHP',
         'MCM'
@@ -93,33 +135,20 @@ ServerEvents.recipes(e => {
     })
     .id(st('boss_crusher'));
 
-    // -- LARGE STEAM FURNACE -- //
-    e.shaped(mi('large_steam_furnace'), [
-        'BBB',
-        'BFB',
-        'BCB'
-    ],
-    {
-        B: mc('bricks'),
-        F: mi('bronze_furnace'),
-        C: mi('coke')
-    })
-    .id(st('large_steam_furnace'));
-
     // -- CHEMICALLY INERT PTFE CASING -- //
-    e.shaped(mi('chemically_inert_ptfe_casing'), [
+    event.shaped(mi('chemically_inert_ptfe_casing'), [
         'PPP',
         'PGP',
         'PPP'
     ],
     {
-        P: '#c:polytetrafluoroethylene_plates',
-        G: '#c:polytetrafluoroethylene_gears'
+        P: mi('polytetrafluoroethylene_plate'),
+        G: mi('polytetrafluoroethylene_gear')
     })
     .id(st('chemically_inert_ptfe_casing'));
 
     // -- POLYTETRAFLUOROETHYLENE PIPE MACHINE CASING -- // 
-    e.shaped('2x ' + mi('polytetrafluoroethylene_machine_casing_pipe'), [
+    event.shaped('2x ' + mi('polytetrafluoroethylene_machine_casing_pipe'), [
         'C C',
         'CMC',
         'C C'
@@ -130,29 +159,38 @@ ServerEvents.recipes(e => {
     })
     .id(st('ptfe_machine_casing_pipe'));
 
-    // -- LARGE CHEMICAL REACTOR -- //
-    e.shaped(mi('large_chemical_reactor'), [
-        'PRP',
-        'UHU',
-        'PCP'
+    // -- TUNGSTENSTEEL MACHINE CASING -- // 
+    event.shaped(mi('tungstensteel_machine_casing'), [
+        'PPP',
+        'PGP',
+        'PPP'
     ],
     {
-        P: '#c:polytetrafluoroethylene_plates',
-        R: mi('chemical_reactor'),
-        U: mi('advanced_motor'),
-        H: mi('turbo_machine_hull'),
-        C: mi('digital_circuit')
+        P: mi('tungstensteel_plate'),
+        G: mi('tungstensteel_gear')
     })
-    .id(st('large_chemical_reactor'));
+    .id(st('tungstensteel_machine_casing'));
+
+    // -- TUNGSTENSTEEL PIPE MACHINE CASING -- // 
+    event.shaped('2x ' + mi('tungstensteel_machine_casing_pipe'), [
+        'C C',
+        'CMC',
+        'C C'
+    ],
+    {
+        C: mi('tungstensteel_curved_plate'),
+        M: mi('tungstensteel_machine_casing')
+    })
+    .id(st('tungstensteel_machine_casing_pipe'));
 
     // -- PHOTOSYNTHETIC CHAMBER -- //
-    e.shaped(mi('photosynthetic_chamber'), [
+    event.shaped(mi('photosynthetic_chamber'), [
         'MGM',
         'IHI',
         'PDT',
     ],
     {
-        G: '#c:glass',
+        G: '#c:glass_blocks',
         H: mi('basic_machine_hull'),
         D: mc('dirt'),
         P: mi('pump'),
@@ -163,7 +201,7 @@ ServerEvents.recipes(e => {
     .id(st('photosynthetic_chamber'));
 
     // -- CORE MINING DRILL -- //
-    e.shaped(mi('core_drill'), [
+    event.shaped(mi('core_drill'), [
         'MSM',
         'CHC',
         'SDS'
@@ -178,7 +216,7 @@ ServerEvents.recipes(e => {
     .id(st('core_drill'));
 
     // -- SINGULARITY FORGE -- //
-    e.shaped(mi('singularity_forge'), [
+    event.shaped(mi('singularity_forge'), [
         'PPP',
         'CHC',
         'PPP'
@@ -191,7 +229,7 @@ ServerEvents.recipes(e => {
     .id(st('singularity_forge'));
 
     // -- STEAM MINING DRILL -- // 
-    e.shaped(mi('steam_mining_drill'), [
+    event.shaped(mi('steam_mining_drill'), [
         'FDD',
         'PHD',
         'BPF'
@@ -203,10 +241,10 @@ ServerEvents.recipes(e => {
         H: mi('copper_drill_head'),
         B: mc('bucket')
     })
-    .id(st('steam_mining_drill'));
+    .id(mi('tools/steam_mining_drill'));
 
     // -- MOB CRUSHER -- // 
-    e.shaped(mi('mob_crusher'), [
+    event.shaped(mi('mob_crusher'), [
         'RCR',
         'PHP',
         'MCM'
@@ -221,34 +259,19 @@ ServerEvents.recipes(e => {
     .id(st('mob_crusher'));
     
     // -- FORGE HAMMER -- //
-    e.shaped(mi('forge_hammer'), [
+    event.shaped(mi('forge_hammer'), [
         'PPP',
-        ' B ',
-        'III'
-    ],
+        ' I ',
+        'BBB'
+    ], 
     {
-        P: '#c:iron_plates',
-        B: '#c:bronze_ingots',
-        I: '#c:iron_ingots'
-    })
-    .id(st('forge_hammer'));
-
-    // -- PYROLYSE OVEN -- //
-    e.shaped(mi('pyrolyse_oven'), [
-        'HIH',
-        'ICI',
-        'HAH'
-    ],
-    {
-        H: tr('cupronickel_heating_coil'),
-        I: mi('inductor'),
-        C: mi('basic_machine_hull'),
-        A: mi('analog_circuit')
-    })
-    .id(st('pyrolyse_oven'));
+        P: mi('iron_large_plate'),
+        I: '#c:ingots/iron',
+        B: '#c:storage_blocks/iron'
+    }).id(mi('forge_hammer'));
 
     // -- ALLOY SMELTER -- //
-    e.shaped(mi('alloy_smelter'), [
+    event.shaped(ei('electric_alloy_smelter'), [
         'MAM',
         'IFI',
         'TAT'
@@ -260,10 +283,10 @@ ServerEvents.recipes(e => {
         T: mi('tin_cable'),
         F: mi('electric_furnace')
     })
-    .id(st('alloy_smelter'));
+    .id(st('electric_alloy_smelter'));
 
     // -- ROCKET PART ASSEMBLER -- //
-    e.shaped(mi('rocket_part_assembler'), [
+    event.shaped(mi('rocket_part_assembler'), [
         'RMR',
         'GHG',
         'APA'
@@ -278,22 +301,24 @@ ServerEvents.recipes(e => {
     })
     .id(st('rocket_part_assembler'));
 
-    // -- MEGA SMELTER -- //
-    e.shaped(mi('mega_smelter'), [
-        'MCM',
-        'FHF',
+    // -- SPACE PROBE LAUNCHER -- //
+    event.shaped(mi('space_probe_launcher'), [
+        'PUP',
+        'GHG',
         'MCM'
     ],
     {
-        M: mi('cupronickel_wire_magnetic'),
-        C: mi('electronic_circuit'),
-        F: mi('electric_furnace'),
-        H: mi('advanced_machine_hull')
+        P: mi('stainless_steel_machine_casing_pipe'),
+        U: mi('digital_circuit'),
+        G: mi('stainless_steel_gear'),
+        H: mi('turbo_machine_hull'),
+        M: mi('advanced_motor'),
+        C: mi('clean_stainless_steel_machine_casing')
     })
-    .id(st('mega_smelter'));
+    .id(st('space_probe_launcher'));
 
-    // -- SPACE PROBE LAUNCHER -- //
-    e.shaped(mi('space_probe_launcher'), [
+    // -- QUANTUM SPACE PROBE LAUNCHER -- //
+    event.shaped(mi('quantum_space_probe_launcher'), [
         'PUP',
         'GHG',
         'MCM'
@@ -306,10 +331,10 @@ ServerEvents.recipes(e => {
         M: mi('large_advanced_motor'),
         C: mi('calorite_machine_casing')
     })
-    .id(st('space_probe_launcher'));
+    .id(st('quantum_space_probe_launcher'));
 
     // -- INDUSTRIAL GREENHOUSE -- //
-    e.shaped(mi('greenhouse'), [
+    event.shaped(mi('greenhouse'), [
         'MCM',
         'RHR',
         'PCP'
@@ -324,7 +349,7 @@ ServerEvents.recipes(e => {
     .id(st('greenhouse'));
 
     // -- LASER ENGRAVER -- //
-    e.shaped(mi('laser_engraver'), [
+    event.shaped(mi('laser_engraver'), [
         'CGC',
         'MHM',
         'ACA'
@@ -339,19 +364,19 @@ ServerEvents.recipes(e => {
     .id('laser_engraver');
 
     // -- CALORITE MACHINE CASING -- //
-    e.shaped(mi('calorite_machine_casing'), [
+    event.shaped(mi('calorite_machine_casing'), [
         'PPP',
         'PGP',
         'PPP'
     ],
     {
-        P: '#c:calorite_plates',
-        G: '#c:calorite_gears'
+        P: mi('calorite_plate'),
+        G: mi('calorite_gear')
     })
     .id(st('calorite_machine_casing'));
 
     // -- CALORITE MACHINE PIPE CASING -- // 
-    e.shaped(mi('calorite_machine_casing_pipe'), [
+    event.shaped('2x ' + mi('calorite_machine_casing_pipe'), [
         'C C',
         'CMC',
         'C C'
@@ -362,14 +387,86 @@ ServerEvents.recipes(e => {
     })
     .id(st('calorite_machine_casing_pipe'));
 
+    // -- DESH MACHINE CASING -- //
+    event.shaped(mi('desh_machine_casing'), [
+        'PPP',
+        'PGP',
+        'PPP'
+    ],
+    {
+        P: mi('desh_plate'),
+        G: mi('desh_gear')
+    })
+    .id(st('desh_machine_casing'));
+
+    // -- DESH MACHINE PIPE CASING -- // 
+    event.shaped('2x ' + mi('desh_machine_casing_pipe'), [
+        'C C',
+        'CMC',
+        'C C'
+    ],
+    {
+        C: mi('desh_curved_plate'),
+        M: mi('desh_machine_casing')
+    })
+    .id(st('desh_machine_casing_pipe'));
+
+    // -- ENDERIUM MACHINE CASING -- //
+    event.shaped(mi('enderium_machine_casing'), [
+        'PPP',
+        'PGP',
+        'PPP'
+    ],
+    {
+        P: mi('enderium_plate'),
+        G: mi('enderium_gear')
+    })
+    .id(st('enderium_machine_casing'));
+
+/*     // -- ENDERIUM MACHINE PIPE CASING -- // 
+    event.shaped(mi('enderium_machine_casing_pipe'), [
+        'C C',
+        'CMC',
+        'C C'
+    ],
+    {
+        C: mi('enderium_curved_plate'),
+        M: mi('enderium_machine_casing')
+    })
+    .id(st('enderium_machine_casing_pipe')); */
+
+    // -- OSTRUM MACHINE CASING -- //
+    event.shaped(mi('ostrum_machine_casing'), [
+        'PPP',
+        'PGP',
+        'PPP'
+    ],
+    {
+        P: mi('ostrum_plate'),
+        G: mi('ostrum_gear')
+    })
+    .id(st('ostrum_machine_casing'));
+
+    // -- OSTRUM MACHINE PIPE CASING -- // 
+    event.shaped('2x ' + mi('ostrum_machine_casing_pipe'), [
+        'C C',
+        'CMC',
+        'C C'
+    ],
+    {
+        C: mi('ostrum_curved_plate'),
+        M: mi('ostrum_machine_casing')
+    })
+    .id(st('ostrum_machine_casing_pipe'));
+
     // -- DESH DRILL -- //
-    e.shaped('4x ' + mi('desh_drill'), [
+    event.shaped('4x ' + mi('desh_drill'), [
         'GIH',
         'MUI',
         'CMG'
     ],
     {
-        G: '#c:enderium_gears',
+        G: mi('enderium_gear'),
         I: '#' + mi('item_pipes'),
         H: mi('desh_drill_head'),
         M: mi('large_advanced_motor'),
@@ -379,7 +476,7 @@ ServerEvents.recipes(e => {
     .id(st('desh_drill'));
 
     // ZINC DRILL // 
-    e.shaped('4x ' + mi('zinc_drill'), [
+    event.shaped('4x ' + mi('zinc_drill'), [
         '  H',
         'GR ',
         'BG '
@@ -388,96 +485,124 @@ ServerEvents.recipes(e => {
         H: mi('zinc_drill_head'),
         G: mi('iron_gear'),
         R: cr('electron_tube'),
-        B: '#c:bronze_plates'
+        B: '#c:plates/bronze'
     })
     .id(st('zinc_drill'));
 
     // -- BRONZE FURNACE -- //
-    e.shaped(mi('bronze_furnace'), [
+    event.shaped(mi('bronze_furnace'), [
         'PPP',
         'PCP',
         'PFP'
     ],
     {
-        P: '#c:bronze_plates',
+        P: '#c:plates/bronze',
         F: mc('furnace'),
         C: mi('bronze_machine_casing')
     })
-    .id(st('bronze_furnace'));
+    .id(mi('steam_age/bronze/furnace_asbl'));
 
     // -- BRONZE BOILER -- //
-    e.shaped(mi('bronze_boiler'), [
+    event.shaped(mi('bronze_boiler'), [
         'PTP',
         'PCP',
         'FFF'
     ],
     {
-        P: '#c:bronze_plates',
+        P: '#c:plates/bronze',
         T: mi('bronze_tank'),
         F: mi('fire_clay_bricks'),
         C: mi('bronze_machine_casing')
     })
-    .id(st('bronze_boiler'));
+    .id(mi('steam_age/bronze/boiler_asbl'));
 
     // -- CLEAR FLUID FROM CREATIVE TANK -- //
-    e.shapeless(mi('creative_tank'), mi('creative_tank')).id(st('clear_fluids_from_creative_tank'));
+    event.shapeless(mi('creative_tank'), mi('creative_tank')).id(st('clear_fluids_from_creative_tank'));
 
     // -- CLEAR ITEM FROM CREATIVE BARREL -- //
-    e.shapeless(mi('creative_barrel'), mi('creative_barrel')).id(st('clear_items_from_creative_barrel'));
+    event.shapeless(mi('creative_barrel'), mi('creative_barrel')).id(st('clear_items_from_creative_barrel'));
 
     // -- Gravichestplate -- //
-    e.shaped(mi('gravichestplate'), [
+    event.shaped(mi('gravichestplate'), [
         'PUP',
         'PJP',
         'CLC'
     ],
     {
-        P: '#c:diamond_plates',
+        P: '#c:plates/diamond',
         U: mi('turbo_upgrade'),
-        J: ad('jet_suit'),
+        J: mc('netherite_chestplate'),
         C: mi('titanium_large_plate'),
-        L: tr('lapotron_crystal')
+        L: mi('cadmium_battery')
     })
     .id(st('gravichestplate'));
 
-    // -- Quantum Helmet -- //
-    e.smithing(
-        mi('quantum_helmet'),
-        tr('quantum_helmet'),
-        mi('quantum_upgrade')
-    )
-    .id(st('quantum_helmet'));
-    // -- Quantum Chestplate -- //
-    e.smithing(
-        mi('quantum_chestplate'),
-        tr('quantum_chestplate'),
-        mi('quantum_upgrade')
-    )
-    .id(st('quantum_chestplate'));
-    // -- Quantum Leggings -- //
-    e.smithing(
-        mi('quantum_leggings'),
-        tr('quantum_leggings'),
-        mi('quantum_upgrade')
-    )
-    .id(st('quantum_leggings'));
-    // -- Quantum Boots -- //
-    e.smithing(
-        mi('quantum_boots'),
-        tr('quantum_boots'),
-        mi('quantum_upgrade')
-    )
-    .id(st('quantum_boots'));
-    // -- Quantum Sword -- //
-    e.smithing(
-        mi('quantum_sword'),
-        tr('nanosaber'),
-        mi('quantum_upgrade')
-    )
-    .id(st('quantum_sword'));
+    // -- STAINLESS STEEL TANK -- //
+    event.shaped(mi('stainless_steel_tank'), [
+        'PPP',
+        'PGP',
+        'PPP'
+    ],
+    {
+        P: mi('stainless_steel_plate'),
+        G: kj('borosilicate_glass')
+    })
+    .id(st('stainless_steel_tank'));
+
+    // -- TITANIUM TANK -- //
+    event.shaped(mi('titanium_tank'), [
+        'PPP',
+        'PGP',
+        'PPP'
+    ],
+    {
+        P: mi('titanium_plate'),
+        G: kj('borosilicate_glass')
+    })
+    .id(st('titanium_tank'));
+
+    // -- TUNGSTENSTEEL TANK -- //
+    event.shaped(mi('tungstensteel_tank'), [
+        'PPP',
+        'PGP',
+        'PPP'
+    ],
+    {
+        P: mi('tungstensteel_plate'),
+        G: kj('borosilicate_glass')
+    })
+    .id(st('tungstensteel_tank'));
+
+    // -- LARGE DIESEL GENERATOR -- //
+    event.shaped(mi('large_diesel_generator'), [
+        'GMG',
+        'THT',
+        'GMG'
+    ],
+    {
+        M: mi('advanced_motor'),
+        T: mi('titanium_gear'),
+        H: mi('turbo_machine_hull'),
+        G: mi('hv_diesel_generator')
+    })
+    .id(st('large_diesel_generator'));
+
+    // -- LARGE STEAM TURBINE -- //
+    event.shaped(mi('large_steam_turbine'), [
+        'GMG',
+        'RHR',
+        'GMG'
+    ],
+    {
+        M: mi('large_advanced_pump'),
+        R: mi('stainless_steel_rotor'),
+        H: mi('highly_advanced_machine_hull'),
+        G: mi('hv_steam_turbine')
+    })
+    .id(st('large_steam_turbine'));
 });
 
-ServerEvents.tags('item', e => {
+ServerEvents.tags('item', event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mi = (id) => `modern_industrialization:${id}`;
 
@@ -486,26 +611,26 @@ ServerEvents.tags('item', e => {
         mi('tin_cable'),
         mi('silver_cable')
     ];
-    LV_WIRE.forEach(id => { e.add('kubejs:lv_wire', id) });
+    LV_WIRE.forEach(id => { event.add('kubejs:lv_wire', id) });
 
     const MV_WIRE = [
         mi('cupronickel_cable'),
         mi('electrum_cable')
     ];
-    MV_WIRE.forEach(id => { e.add('kubejs:mv_wire', id) });
+    MV_WIRE.forEach(id => { event.add('kubejs:mv_wire', id) });
 
     const HV_WIRE = [
         mi('aluminum_cable'),
         mi('kanthal_cable')
     ]
-    HV_WIRE.forEach(id => { e.add('kubejs:hv_wire', id) });
+    HV_WIRE.forEach(id => { event.add('kubejs:hv_wire', id) });
 
     const EV_WIRE = [
         mi('annealed_copper_cable'),
         mi('platinum_cable'),
         mi('tungstensteel_cable')
     ]
-    EV_WIRE.forEach(id => { e.add('kubejs:ev_wire', id) });
+    EV_WIRE.forEach(id => { event.add('kubejs:ev_wire', id) });
 
     const ENERGY_INPUT_HATCH = [
         mi('lv_energy_input_hatch'),
@@ -514,7 +639,10 @@ ServerEvents.tags('item', e => {
         mi('ev_energy_input_hatch'),
         mi('superconductor_energy_input_hatch')
     ];
-    ENERGY_INPUT_HATCH.forEach(id => { e.add('kubejs:energy_input_hatch', id) });
+    ENERGY_INPUT_HATCH.forEach(id => {
+        event.add('kubejs:energy_input_hatch', id);
+        event.add('kubejs:wired_energy_input_hatch', id);
+    });
 
     const ENERGY_OUTPUT_HATCH = [
         mi('lv_energy_output_hatch'),
@@ -523,7 +651,7 @@ ServerEvents.tags('item', e => {
         mi('ev_energy_output_hatch'),
         mi('superconductor_energy_output_hatch')
     ];
-    ENERGY_OUTPUT_HATCH.forEach(id => { e.add('kubejs:energy_output_hatch', id) });
+    ENERGY_OUTPUT_HATCH.forEach(id => { event.add('kubejs:energy_output_hatch', id) });
 
     const FLUID_INPUT_HATCH = [
         mi('bronze_fluid_input_hatch'),
@@ -532,7 +660,7 @@ ServerEvents.tags('item', e => {
         mi('turbo_fluid_input_hatch'),
         mi('highly_advanced_fluid_input_hatch'),
     ];
-    FLUID_INPUT_HATCH.forEach(id => { e.add('kubejs:fluid_input_hatch', id) });
+    FLUID_INPUT_HATCH.forEach(id => { event.add('kubejs:fluid_input_hatch', id) });
 
     const FLUID_OUTPUT_HATCH = [
         mi('bronze_fluid_output_hatch'),
@@ -541,7 +669,7 @@ ServerEvents.tags('item', e => {
         mi('turbo_fluid_output_hatch'),
         mi('highly_advanced_fluid_output_hatch'),
     ];
-    FLUID_OUTPUT_HATCH.forEach(id => { e.add('kubejs:fluid_output_hatch', id) });
+    FLUID_OUTPUT_HATCH.forEach(id => { event.add('kubejs:fluid_output_hatch', id) });
 
     const ITEM_INPUT_HATCH = [
         mi('bronze_item_input_hatch'),
@@ -550,7 +678,7 @@ ServerEvents.tags('item', e => {
         mi('turbo_item_input_hatch'),
         mi('highly_advanced_item_input_hatch'),
     ];
-    ITEM_INPUT_HATCH.forEach(id => { e.add('kubejs:item_input_hatch', id) });
+    ITEM_INPUT_HATCH.forEach(id => { event.add('kubejs:item_input_hatch', id) });
 
     const ITEM_OUTPUT_HATCH = [
         mi('bronze_item_output_hatch'),
@@ -559,13 +687,13 @@ ServerEvents.tags('item', e => {
         mi('turbo_item_output_hatch'),
         mi('highly_advanced_item_output_hatch'),
     ];
-    ITEM_OUTPUT_HATCH.forEach(id => { e.add('kubejs:item_output_hatch', id) });
+    ITEM_OUTPUT_HATCH.forEach(id => { event.add('kubejs:item_output_hatch', id) });
 
     const NUCLEAR_INPUT_HATCH = [
         mi('nuclear_fluid_hatch'),
         mi('nuclear_item_hatch')
     ];
-    NUCLEAR_INPUT_HATCH.forEach(id => { e.add('kubejs:nuclear_hatch', id) });
+    NUCLEAR_INPUT_HATCH.forEach(id => { event.add('kubejs:nuclear_hatch', id) });
 
     const NUCLEAR_FUEL = [
         mi('uranium_fuel_rod'),
@@ -584,7 +712,7 @@ ServerEvents.tags('item', e => {
         mi('he_mox_fuel_rod_double'),
         mi('he_mox_fuel_rod_quad')
     ];
-    NUCLEAR_FUEL.forEach(id => { e.add('kubejs:nuclear_fuel', id) });
+    NUCLEAR_FUEL.forEach(id => { event.add('kubejs:nuclear_fuel', id) });
 
     const DEPLETED_FUEL = [
         mi('uranium_fuel_rod_depleted'),
@@ -593,33 +721,44 @@ ServerEvents.tags('item', e => {
         mi('le_mox_fuel_rod_depleted'),
         mi('he_mox_fuel_rod_depleted')
     ];
-    DEPLETED_FUEL.forEach(id => { e.add('kubejs:depleted_nuclear_fuel', id) });
+    DEPLETED_FUEL.forEach(id => { event.add('kubejs:depleted_nuclear_fuel', id) });
+
+    const CRUSHED_DUSTS = [
+        'bauxite',
+        'chromium',
+        'coal',
+        'cobalt',
+        'corundum',
+        'diamond',
+        'emerald',
+        'kernite',
+        'lapis',
+        'lignite_coal',
+        'manganese',
+        'monazite',
+        'peridot',
+        'quartz',
+        'redstone',
+        'salt',
+        'sapphire'
+    ];
+    CRUSHED_DUSTS.forEach(id => { 
+        event.add(`kubejs:crushed_dusts/${id}`, mi(`${id}_crushed_dust`))
+        event.add('kubejs:crushed_dusts', mi(`${id}_crushed_dust`)) 
+    });
 });
 
-// Block tagging provided by kevintok
-ServerEvents.tags('block', e => {
-    e.add('c:lignite_coal_ores', 'modern_industrialization:lignite_coal_ore')
-    e.add('c:lignite_coal_ores', 'modern_industrialization:deepslate_lignite_coal_ore')
-    e.add('c:antimony_ores', 'modern_industrialization:antimony_ore')
-    e.add('c:antimony_ores', 'modern_industrialization:deepslate_antimony_ore')
-    e.add('c:bauxite_ores', 'modern_industrialization:bauxite_ore')
-    e.add('c:bauxite_ores', 'modern_industrialization:deepslate_bauxite_ore')
-    e.add('c:iridium_ores', 'modern_industrialization:iridium_ore')
-    e.add('c:iridium_ores', 'modern_industrialization:deepslate_iridium_ore')
-    e.add('c:lead_ores', 'modern_industrialization:lead_ore')
-    e.add('c:lead_ores', 'modern_industrialization:deepslate_lead_ore')
-    e.add('c:mozanite_ores', 'modern_industrialization:mozanite_ore')
-    e.add('c:mozanite_ores', 'modern_industrialization:deepslate_mozanite_ore')
-    e.add('c:nickel_ores', 'modern_industrialization:nickel_ore')
-    e.add('c:nickel_ores', 'modern_industrialization:deepslate_nickel_ore')
-    e.add('c:platinum_ores', 'modern_industrialization:platinum_ore')
-    e.add('c:salt_ores', 'modern_industrialization:salt_ore')
-    e.add('c:salt_ores', 'modern_industrialization:deepslate_salt_ore')
-    e.add('c:tin_ores', 'modern_industrialization:tin_ore')
-    e.add('c:tin_ores', 'modern_industrialization:deepslate_tin_ore')
-    e.add('c:titanium_ores', 'modern_industrialization:titanium_ore')
-    e.add('c:tungsten_ores', 'modern_industrialization:tungsten_ore')
-    e.add('c:tungsten_ores', 'modern_industrialization:deepslate_tungsten_ore')
-    e.add('c:uranium_ores', 'modern_industrialization:uranium_ore')
-    e.add('c:uranium_ores', 'modern_industrialization:deepslate_uranium_ore')
-});
+LootJS.lootTables(event => {
+    event
+        .getLootTable(nm('chests/ancient_pot_cave'))
+        .firstPool()
+        .addEntry(LootEntry.of(mi('raw_silver')).withWeight(60).setCount([1, 3]))
+    event
+        .getLootTable('supplementaries:loot/urn_loot/urn_loot')
+        .firstPool()
+        .addEntry(LootEntry.of(mi('raw_silver')).withWeight(3).setCount([1, 3]))
+    event
+        .getLootTable('supplementaries:loot/urn_loot/uncommon')
+        .firstPool()
+        .addEntry(LootEntry.of(mi('raw_silver')).withWeight(1).setCount([1, 3]))
+})

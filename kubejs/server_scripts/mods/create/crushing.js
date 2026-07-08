@@ -3,12 +3,9 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //     
     let st = (id) => `statech:create/crushing/${id}`;
-    let cr = (id) => `create:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
     // -- CREATE CRUSHING REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -17,15 +14,29 @@ ServerEvents.recipes(e => {
         cr('crushing/raw_uranium_block'),
         cr('crushing/raw_platinum_block'),
         cr('crushing/uranium_ore'),
-        cr('crushing/platinum_ore'),
+        cr('crushing/platinum_ore')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
+
+    const REMOVED_CRUSHED = [
+        cr('crushed_raw_platinum'),
+        cr('crushed_raw_iron'),
+        cr('crushed_raw_gold'),
+        cr('crushed_raw_copper'),
+        cr('crushed_raw_zinc'),
+        cr('crushed_raw_tin'),
+        cr('crushed_raw_lead'),
+        cr('crushed_raw_nickel'),
+        cr('crushed_raw_silver'),
+        cr('crushed_raw_uranium')
+    ];
+    REMOVED_CRUSHED.forEach(output => event.remove({output: output}));
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let crushing = (id, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: cr('crushing'),
-            processingTime: duration
+            processing_time: duration
         }
 
         if (item_inputs)
@@ -33,7 +44,7 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['results'] = item_outputs;
 
-        e.custom(newRecipe).id(id);
+        event.custom(newRecipe).id(id);
     }
 
     // -- BRICK DUST FROM BRICKS -- //
@@ -41,7 +52,7 @@ ServerEvents.recipes(e => {
         st('brick_dust_from_bricks'),
         400,
         [ { item: mc('bricks') } ],
-        [ { count: 4, item: mi('brick_dust') } ]
+        [ { count: 4, id: mi('brick_dust') } ]
     );
 
     // -- BRICK DUST FROM BRICK -- //
@@ -49,7 +60,7 @@ ServerEvents.recipes(e => {
         st('brick_dust_from_brick'),
         100,
         [ { item: mc('brick') } ],
-        [ { item: mi('brick_dust') } ]
+        [ { id: mi('brick_dust') } ]
     );
 
     // -- CLAY DUST FROM CLAY -- //
@@ -57,7 +68,7 @@ ServerEvents.recipes(e => {
         st('clay_dust_from_clay'),
         400,
         [ { item: mc('clay') } ],
-        [ { count: 4, item: mi('clay_dust') } ]
+        [ { count: 4, id: mi('clay_dust') } ]
     );
 
     // -- CLAY DUST FROM CLAY BALL -- // 
@@ -65,6 +76,6 @@ ServerEvents.recipes(e => {
         st('clay_dust_from_clay_ball'),
         100,
         [ { item: mc('clay_ball') } ],
-        [ { item: mi('clay_dust') } ]
+        [ { id: mi('clay_dust') } ]
     );
 });

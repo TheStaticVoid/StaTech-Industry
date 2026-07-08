@@ -3,11 +3,9 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:minecraft/${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
     // -- REMOVED RECIPES -- //
     const VANILLA_DELETED = [
@@ -24,7 +22,24 @@ ServerEvents.recipes(e => {
         mc('chain'),
         mc('amethyst_block')
     ];
-    VANILLA_DELETED.forEach(id => e.remove( {id : id} ));
+    VANILLA_DELETED.forEach(id => event.remove( {id : id} ));
+
+    // -- CAKE -- //
+    
+/*     event.shaped(mc('cake'), [
+        'AAA',
+        'BEB',
+        'CCC'
+    ],
+    {
+        A: '#c:foods/milk',
+        B: mc('sugar'),
+        C: '#c:crops/wheat',
+        E: '#c:foods/egg'
+    })
+    .id(st('cake')); */
+
+
 
     const ALT_METALS = [
         'lead',
@@ -34,19 +49,19 @@ ServerEvents.recipes(e => {
     ];
 
     // -- BUNDLE -- //
-    e.shaped(mc('bundle'), [
+    event.shaped(mc('bundle'), [
         ' S ',
         'L L',
         ' L '
     ],
     {
         S: '#c:strings',
-        L: '#c:leather'
+        L: '#c:leathers'
     })
     .id(st('bundle'));
 
     // -- PISTON -- //
-    e.shaped(mc('piston'), [
+    event.shaped(mc('piston'), [
         'WWW',
         'CIC',
         'CRC'
@@ -54,32 +69,32 @@ ServerEvents.recipes(e => {
     {
         W: '#minecraft:wooden_slabs',
         C: '#minecraft:stone_tool_materials',
-        I: '#c:iron_rods',
-        R: '#c:redstone_dusts'
+        I: '#c:rods/iron',
+        R: '#c:dusts/redstone'
     })
     .id(st('piston'));
 
     // -- IRON BARS -- //
-    e.shaped('16x ' + mc('iron_bars'), [
+    event.shaped('16x ' + mc('iron_bars'), [
         'RRR',
         'RRR'
     ],
     {
-        R: '#c:iron_rods'
+        R: '#c:rods/iron'
     })
     .id(st('iron_bars'));
 
     // -- BUCKET -- //
-    e.shaped(mc('bucket'), [
+    event.shaped(mc('bucket'), [
         'P P',
         ' P '
     ],
     {
-        P: '#c:iron_plates'
+        P: '#c:plates/iron'
     })
     .id(st('bucket'));
 
-    e.shaped('16x ' + mc('stick'), [
+    event.shaped('16x ' + mc('stick'), [
         'L',
         'L'
     ],
@@ -87,49 +102,49 @@ ServerEvents.recipes(e => {
         L: '#minecraft:logs'
     })
     .id(st('sticks_from_log'));
-
+/* 
     // -- BUCKET ALT METALS -- //
     ALT_METALS.forEach(id => {
-        e.shaped(mc('bucket'), [ 'P P', ' P '], { P: `#c:${id}_plates` }).id(st(`bucket_${id}`));
+        event.shaped(mc('bucket'), [ 'P P', ' P '], { P: `#c:${id}_plates` }).id(st(`bucket_${id}`));
     });
 
     // -- HOPPER ALT METALS -- //
     ALT_METALS.forEach(id => {
-        e.shaped(mc('hopper'), [ 'I I', 'ICI', ' I '], { I: `#c:${id}_ingots`, C: '#c:wooden_chests' }).id(st(`hopper_${id}`));
+        event.shaped(mc('hopper'), [ 'I I', 'ICI', ' I '], { I: `#c:${id}_ingots`, C: '#c:wooden_chests' }).id(st(`hopper_${id}`));
     });
 
     // -- DETECTOR RAIL ALT METALS -- //
     ALT_METALS.forEach(id => {
-        e.shaped('6x ' + mc('detector_rail'), [ 'I I', 'IPI', 'IRI'], {I: `#c:${id}_ingots`, P: mc('stone_pressure_plate'), R: '#c:redstone_dusts' }).id(st(`detector_rail_${id}`));
+        event.shaped('6x ' + mc('detector_rail'), [ 'I I', 'IPI', 'IRI'], {I: `#c:${id}_ingots`, P: mc('stone_pressure_plate'), R: '#c:redstone_dusts' }).id(st(`detector_rail_${id}`));
     });
 
     // -- ACTIVATOR RAIL ALT METALS -- //
     ALT_METALS.forEach(id => {
-        e.shaped('6x ' + mc('activator_rail'), ['ISI', 'IRI', 'ISI'], { I: `#c:${id}_ingots`, S: '#c:wood_sticks', R: mc('redstone_torch') }).id(st(`activator_rail_${id}`));
+        event.shaped('6x ' + mc('activator_rail'), ['ISI', 'IRI', 'ISI'], { I: `#c:${id}_ingots`, S: '#c:wood_sticks', R: mc('redstone_torch') }).id(st(`activator_rail_${id}`));
     });
 
     // -- RAIL ALT METALS -- //
     ALT_METALS.forEach(id => {
-        e.shaped('16x ' + mc('rail'), ['I I', 'ISI', 'I I'], { I: `#c:${id}_ingots`, S: '#c:wood_sticks' }).id(st(`rail_${id}`));
+        event.shaped('16x ' + mc('rail'), ['I I', 'ISI', 'I I'], { I: `#c:${id}_ingots`, S: '#c:wood_sticks' }).id(st(`rail_${id}`));
     });
 
     // -- CAULDRON ALT METALS -- //
     ALT_METALS.forEach(id => {
-        e.shaped(mc('cauldron'), [ 'I I', 'I I', 'III'], { I: `#c:${id}_ingots`}).id(st(`cauldron_${id}`));
+        event.shaped(mc('cauldron'), [ 'I I', 'I I', 'III'], { I: `#c:${id}_ingots`}).id(st(`cauldron_${id}`));
     });
 
     // -- ANVIL ALT METALS -- //
     ALT_METALS.forEach(id => {
-        e.shaped(mc('anvil'), [ 'BBB', ' I ', 'III'], { B: `#c:${id}_blocks`, I: `#c:${id}_ingots` }).id(st(`anvil_${id}`));
+        event.shaped(mc('anvil'), [ 'BBB', ' I ', 'III'], { B: `#c:${id}_blocks`, I: `#c:${id}_ingots` }).id(st(`anvil_${id}`));
     });
 
     // -- MINECART ALT METALS -- //
     ALT_METALS.forEach(id => {
-        e.shaped(mc('minecart'), ['I I', 'III'], { I: `#c:${id}_ingots` }).id(st(`minecart_${id}`));
+        event.shaped(mc('minecart'), ['I I', 'III'], { I: `#c:${id}_ingots` }).id(st(`minecart_${id}`));
     });
-
+ */
     // -- CLOCK -- //
-    e.shaped(mc('clock'), [
+    event.shaped(mc('clock'), [
         ' R ',
         'RGR',
         ' R '
@@ -141,7 +156,7 @@ ServerEvents.recipes(e => {
     .id(st('clock'));
 
     // -- COMPASS -- //
-    e.shaped(mc('compass'), [
+    event.shaped(mc('compass'), [
         ' R ',
         'ROR',
         ' R '
@@ -153,7 +168,7 @@ ServerEvents.recipes(e => {
     .id(st('compass'));
     
     // -- CHAINS -- //
-    e.shaped('8x ' + mc('chain'), [
+    event.shaped('8x ' + mc('chain'), [
         'O',
         'O',
         'O'
@@ -163,7 +178,7 @@ ServerEvents.recipes(e => {
     })
     .id(st('chain'));
 
-    e.shaped(mc('amethyst_block'), [
+    event.shaped(mc('amethyst_block'), [
         'AAA',
         'AAA',
         'AAA'
@@ -174,7 +189,7 @@ ServerEvents.recipes(e => {
     .id(st('amethyst_block'));
 });
 
-ServerEvents.tags('item', e => {
+ServerEvents.tags('item', event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let mc = (id) => `minecraft:${id}`;
 
@@ -184,8 +199,8 @@ ServerEvents.tags('item', e => {
         mc('golden_horse_armor'),
         mc('diamond_horse_armor')
     ];
-    HORSE_ARMORS.forEach(id => { e.add('kubejs:horse_armors', id) } );
+    HORSE_ARMORS.forEach(id => { event.add('kubejs:horse_armors', id) } );
 
     // Removed to fix dupe
-    e.remove('c:copper_blocks', mc('cut_copper'));
+    event.remove('c:copper_blocks', mc('cut_copper'));
 });

@@ -3,45 +3,45 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.tags('item', e => {
+ServerEvents.tags('item', event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let sp = (id) => `spectrum:${id}`;
 
-    e.add('c:tools/pickaxes', sp('bedrock_pickaxe'));
-    e.add('c:tools/axes', sp('bedrock_axe'));
-    e.add('c:tools/shovels', sp('bedrock_shovel'));
+    event.add('c:tools/pickaxes', sp('bedrock_pickaxe'));
+    event.add('c:tools/axes', sp('bedrock_axe'));
+    event.add('c:tools/shovels', sp('bedrock_shovel'));
 
     const POLISHED_GEMSTONE = [
-        sp('topaz_storage_block'),
-        sp('amethyst_storage_block'),
-        sp('citrine_storage_block'),
-        sp('onyx_storage_block')
+        sp('polished_topaz'),
+        sp('polished_amethyst'),
+        sp('polished_citrine'),
+        sp('polished_onyx')
     ];
-    POLISHED_GEMSTONE.forEach(id => { e.add('kubejs:polished_gemstones', id) } );
+    POLISHED_GEMSTONE.forEach(id => { event.add('kubejs:polished_gemstones', id) } );
 
     const POLISHED_BLOCKS = [
         sp('polished_calcite'),
         sp('polished_basalt')
     ];
-    POLISHED_BLOCKS.forEach(id => { e.add('kubejs:polished_blocks', id) } );
+    POLISHED_BLOCKS.forEach(id => { event.add('kubejs:polished_blocks', id) } );
 
     const CHISELED_POLISHED_BLOCKS = [
         sp('chiseled_polished_calcite'),
         sp('chiseled_polished_basalt')
     ];
-    CHISELED_POLISHED_BLOCKS.forEach(id => { e.add('kubejs:chiseled_polished_blocks', id) } );
+    CHISELED_POLISHED_BLOCKS.forEach(id => { event.add('kubejs:chiseled_polished_blocks', id) } );
 
     const NOTCHED_POLISHED = [
         sp('notched_polished_calcite'),
         sp('notched_polished_basalt')
     ];
-    NOTCHED_POLISHED.forEach(id => { e.add('kubejs:notched_polished_blocks', id) } );
+    NOTCHED_POLISHED.forEach(id => { event.add('kubejs:notched_polished_blocks', id) } );
 
     const POLISHED_PILLARS = [
         sp('polished_calcite_pillar'),
         sp('polished_basalt_pillar')
     ];
-    POLISHED_PILLARS.forEach(id => { e.add('kubejs:polished_pillar_blocks', id) } );
+    POLISHED_PILLARS.forEach(id => { event.add('kubejs:polished_pillar_blocks', id) } );
 
     const SHIMMERSTONE_LIGHTS = [
         sp('basalt_shimmerstone_light'),
@@ -52,37 +52,37 @@ ServerEvents.tags('item', e => {
         sp('andesite_shimmerstone_light'),
         sp('deepslate_shimmerstone_light')
     ];
-    SHIMMERSTONE_LIGHTS.forEach(id => { e.add('kubejs:shimmerstone_lights', id) } );
+    SHIMMERSTONE_LIGHTS.forEach(id => { event.add('kubejs:shimmerstone_lights', id) } );
 
     const GEMSTONE_LAMPS = [
-        sp('topaz_calcite_lamp'),
-        sp('amethyst_calcite_lamp'),
-        sp('citrine_calcite_lamp'),
-        sp('onyx_calcite_lamp'),
-        sp('topaz_basalt_lamp'),
-        sp('amethyst_basalt_lamp'),
-        sp('citrine_basalt_lamp'),
-        sp('onyx_basalt_lamp')
+        sp('topaz_calcite_light'),
+        sp('amethyst_calcite_light'),
+        sp('citrine_calcite_light'),
+        sp('onyx_calcite_light'),
+        sp('topaz_basalt_light'),
+        sp('amethyst_basalt_light'),
+        sp('citrine_basalt_light'),
+        sp('onyx_basalt_light')
     ];
-    GEMSTONE_LAMPS.forEach(id => { e.add('kubejs:gemstone_lamps', id) } );
+    GEMSTONE_LAMPS.forEach(id => { event.add('kubejs:gemstone_lamps', id) } );
 
     const PHANTOM_FRAMES = [
         sp('phantom_frame'),
         sp('glow_phantom_frame')
     ];
-    PHANTOM_FRAMES.forEach(id => { e.add('kubejs:phantom_frames', id) } );
+    PHANTOM_FRAMES.forEach(id => { event.add('kubejs:phantom_frames', id) } );
 
     const FUSION_SHRINES = [
         sp('fusion_shrine_basalt'),
         sp('fusion_shrine_calcite')
     ];
-    FUSION_SHRINES.forEach(id => { e.add('kubejs:fusion_shrines', id) } );
+    FUSION_SHRINES.forEach(id => { event.add('kubejs:fusion_shrines', id) } );
 
     const POLISHED_SLABS = [
         sp('polished_calcite_slab'),
         sp('polished_basalt_slab')
     ];
-    POLISHED_SLABS.forEach(id => { e.add('kubejs:polished_slabs', id) } );
+    POLISHED_SLABS.forEach(id => { event.add('kubejs:polished_slabs', id) } );
 
     const PIGMENT_LAMPS = [
         sp('orange_lamp'),
@@ -97,9 +97,12 @@ ServerEvents.tags('item', e => {
         sp('brown_lamp'),
         sp('green_lamp'),
         sp('red_lamp'),
-        sp('black_lamp')
+        sp('black_lamp'),
+        sp('light_gray_lamp'),
+        sp('white_lamp'),
+        sp('gray_lamp')
     ];
-    PIGMENT_LAMPS.forEach(id => { e.add('kubejs:pigment_lamps', id) } );
+    PIGMENT_LAMPS.forEach(id => { event.add('kubejs:pigment_lamps', id) } );
 
     const PIGMENT_SPORE_BLOSSOMS = [
         sp('orange_spore_blossom'),
@@ -114,9 +117,12 @@ ServerEvents.tags('item', e => {
         sp('brown_spore_blossom'),
         sp('green_spore_blossom'),
         sp('red_spore_blossom'),
-        sp('black_spore_blossom')
+        sp('black_spore_blossom'),
+        sp('white_spore_blossom'),
+        sp('light_gray_spore_blossom'),
+        sp('gray_spore_blossom')
     ];
-    PIGMENT_SPORE_BLOSSOMS.forEach(id => { e.add('kubejs:pigment_spore_blossoms', id) } );
+    PIGMENT_SPORE_BLOSSOMS.forEach(id => { event.add('kubejs:pigment_spore_blossoms', id) } );
 
     const GLOWBLOCKS = [
         sp('orange_glowblock'),
@@ -131,15 +137,18 @@ ServerEvents.tags('item', e => {
         sp('brown_glowblock'),
         sp('green_glowblock'),
         sp('red_glowblock'),
-        sp('black_glowblock')
+        sp('black_glowblock'),
+        sp('white_glowblock'),
+        sp('light_gray_glowblock'),
+        sp('gray_glowblock')
     ];
-    GLOWBLOCKS.forEach(id => { e.add('kubejs:glowblocks', id) } );
+    GLOWBLOCKS.forEach(id => { event.add('kubejs:glowblocks', id) } );
 
     const CREST_BLOCKS = [
         sp('polished_calcite_crest'),
         sp('polished_basalt_crest')
     ];
-    CREST_BLOCKS.forEach(id => { e.add('kubejs:polished_crest_blocks', id) } );
+    CREST_BLOCKS.forEach(id => { event.add('kubejs:polished_crest_blocks', id) } );
 
     const GEMSTONE_CHISELED_BLOCKS = [
         sp('topaz_chiseled_basalt'),
@@ -151,7 +160,19 @@ ServerEvents.tags('item', e => {
         sp('onyx_chiseled_basalt'),
         sp('onyx_chiseled_calcite')
     ];
-    GEMSTONE_CHISELED_BLOCKS.forEach(id => { e.add('kubejs:gemstone_chiseled_blocks', id) } );
+    GEMSTONE_CHISELED_BLOCKS.forEach(id => { event.add('kubejs:gemstone_chiseled_blocks', id) } );
+
+    const ONYX_CHISELED_BLOCKS = [
+        sp('onyx_chiseled_basalt'),
+        sp('onyx_chiseled_calcite')
+    ];
+    ONYX_CHISELED_BLOCKS.forEach(id => { event.add('kubejs:onyx_chiseled_blocks', id) } );
+
+    const MOONSTONE_CHISELED_BLOCKS = [
+        sp('moonstone_chiseled_basalt'),
+        sp('moonstone_chiseled_calcite')
+    ];
+    MOONSTONE_CHISELED_BLOCKS.forEach(id => { event.add('kubejs:moonstone_chiseled_blocks', id) } );
 
     const GEMSTONE_CHIMES = [
         sp('topaz_chime'),
@@ -159,13 +180,13 @@ ServerEvents.tags('item', e => {
         sp('citrine_chime'),
         sp('onyx_chime')
     ];
-    GEMSTONE_CHIMES.forEach(id => { e.add('kubejs:gemstone_chimes', id) } );
+    GEMSTONE_CHIMES.forEach(id => { event.add('kubejs:gemstone_chimes', id) } );
 
     const ITEM_BOWLS = [
         sp('item_bowl_basalt'),
         sp('item_bowl_calcite')
     ];
-    ITEM_BOWLS.forEach(id => { e.add('kubejs:spectrum_item_bowls', id) } );
+    ITEM_BOWLS.forEach(id => { event.add('kubejs:spectrum_item_bowls', id) } );
 
     const SUGAR_STICK = [
         sp('sugar_stick'),
@@ -175,123 +196,168 @@ ServerEvents.tags('item', e => {
         sp('onyx_sugar_stick'),
         sp('moonstone_sugar_stick')
     ];
-    SUGAR_STICK.forEach(id => { e.add('kubejs:sugar_sticks', id) } );
+    SUGAR_STICK.forEach(id => { event.add('kubejs:sugar_sticks', id) } );
 });
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:spectrum/${id}`;
     let sp = (id) => `spectrum:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let bl = (id) => `blockus:${id}`;
 
-    // -- MAGIC DIAMOND -- //
-    e.custom({
-        id: st('magic_diamond'),
+    // -- spectrum REMOVED RECIPES -- //
+    const REMOVED_RECIPES = [
+        sp('pedestal/tier3/bottle_of_failing'),
+        ar('eternal_steak_furnace'),
+        ar('eternal_steak_smoker'),
+        ar('eternal_steak_campfire')
+    ];
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
+
+    // -- BOTTLE OF FAILING -- //
+    event.custom({
         type: sp('pedestal'),
-        time: 600,
-        tier: 'simple',
-        cyan: 8,
-        magenta: 8,
-        yellow: 8,
-        white: 0,
-        black: 0,
-        experience: 10.0,
+        time: 800,
+        tier: 'advanced',
+        colors: {
+            "spectrum:cyan": 1,
+            "spectrum:magenta": 1,
+            "spectrum:yellow": 1,
+            "spectrum:black": 1,
+            "spectrum:white": 0
+        },
+        experience: 2.0,
         pattern: [
-            'QSA',
-            'CDC',
-            'TSQ'
+            'FSF',
+            'EBE',
+            'FSF'
         ],
         key: {
-            Q: { item: sp('quitoxic_powder') },
-            S: { item: sp('shimmerstone_gem') },
-            A: { item: sp('amethyst_powder') },
-            T: { item: sp('topaz_powder') },
-            C: { item: sp('citrine_powder') },
-            D: { item: 'minecraft:diamond' }
+            S: { item: sp('stratine_fragments') },
+            F: { item: mc('fermented_spider_eye') },
+            E: { item: mc('ender_eye') },
+            B: { item: mc('experience_bottle') }
         },
         result: {
-            item: 'kubejs:magic_diamond',
-            count: 1,
+            id: sp('bottle_of_failing'),
+            count: 1
         },
-        required_advancement: [
-            sp('collect_quitoxic_reeds'),
-            sp('collect_shimmerstone')
-        ]
+        required_advancement: sp('unlocks/items/bottle_of_failing')
     });
 
-    // -- QUITOXIC REEDS -- //
-    e.custom({
-        id: st('quitoxic_reeds_from_coins'),
+    // -- ANGEL RING -- //
+    event.custom({
         type: sp('pedestal'),
-        time: 200,
-        tier: 'simple',
-        cyan: 0,
-        magenta: 0,
-        yellow: 0,
-        white: 0,
-        black: 0,
-        experience: 10.0,
+        time: 800,
+        tier: 'complex',
+        colors: {
+            "spectrum:cyan": 32,
+            "spectrum:magenta": 32,
+            "spectrum:yellow": 32,
+            "spectrum:black": 32,
+            "spectrum:white": 32
+        },
+        experience: 100.0,
         pattern: [
-            '   ',
-            ' C ',
-            '   '
+            'SAS',
+            'FRF',
+            'SMS'
         ],
         key: {
-            C: { item: kj('coin_rare') }
+            S: { item: sp('star_fragment') },
+            A: { item: sp('aether_vestiges') },
+            F: { item: sp('resplendent_feather') },
+            M: { item: sp('moonstone_core') },
+            R: { item: mi('gold_ring') }
         },
         result: {
-            item: sp('quitoxic_reeds'),
-            count: 3
+            id: kj('angel_ring'),
+            count: 1
         },
-        required_advancement: [
-            sp('collect_quitoxic_reeds')
-        ]
+        required_advancement: sp('endgame/finish_progression')
+    }).id(st('angel_ring'));
+
+    // -- FIREPROOF RING -- //
+    event.custom({
+        type: sp('pedestal'),
+        time: 800,
+        tier: 'advanced',
+        colors: {
+            "spectrum:cyan": 16,
+            "spectrum:magenta": 16,
+            "spectrum:yellow": 16,
+            "spectrum:black": 4
+        },
+        experience: 100.0,
+        pattern: [
+            'BOB',
+            'SAS',
+            'BOB'
+        ],
+        key: {
+            B: { item: sp('blazing_crystal') },
+            A: { item: mi('gold_ring') },
+            O: { item: sp('orange_block') },
+            S: { item: sp('bedrock_dust') }
+        },
+        result: {
+            id: kj('fireproof_ring'),
+            count: 1
+        },
+        required_advancement: sp('midgame/break_decayed_bedrock')
+    }).id(st('fireproof_ring'));
+
+    // -- ETERNAL STEAK -- //
+    event.custom({
+        type: sp('cinderhearth'),
+        ingredient: {item: ar('everlasting_beef')},
+        time: 800,
+        experience: 1.0,
+        results: [{
+            id: ar('eternal_steak'),
+            count: 1
+        }]
     });
 
-    e.stonecutting(sp('amethyst_storage_block'), bl('polished_amethyst'));
+    // -- EVERLASTING BEEF -- //
+    event.custom({
+        type: sp('fusion_shrine'),
+        time: 1200,
+        experience: 30.0,
+        fluid: { fluid: ei('blazing_essence') },
+        ingredients: [
+            { item: mc('beef'), count: 64 },
+            { item: mc('beef'), count: 64 },
+            { item: fd('shepherds_pie_block'), count: 1 },
+            { item: mc('golden_apple'), count: 4 },
+            { item: mc('golden_carrot'), count: 32 },
+            { item: sp('shimmerstone_block'), count: 8 },
+        ],
+        result: {
+            id: ar('everlasting_beef')
+        },
+        required_advancement: sp('build_fusion_shrine'),
+        world_conditions: [
+            {
+                type: 'time_of_day',
+                time: 'noon'
+            }
+        ],
+        start_crafting_effect: 'nothing',
+        during_crafting_effects: [
+            'visual_explosions_on_shrine',
+            'nothing',
+            'visual_explosions_on_shrine'
+        ],
+        finish_crafting_effect: 'legendary_tool_craft'
+    })
+    .id(st('everlasting_beef'));
+
 });
 
 // Block tagging provided by kevintok
-ServerEvents.tags('block', e => {
+ServerEvents.tags('block', event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let sp = (id) => `spectrum:${id}`;
 
-    e.add('c:lapis_ores', sp('blackslag_lapis_ore'))
-});
-
-// Recipe modification
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let sp = (id) => `spectrum:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    
-    // -- SPECTRUM BUDS AND CLUSTER ANVIL CRUSHING WITHOUT INGOT OUTPUT
-    const CHANGE_INGOT_TO_DUST = [
-        'copper',
-        'gold',
-        'iron'
-    ];
-    
-    //buds
-    CHANGE_INGOT_TO_DUST.forEach(data => {
-        e.forEachRecipe( { type: sp('anvil_crushing'), input: sp(`small_${data}_bud`), mod: 'spectrum'}, recipe => {
-            var recipeId = sp(`anvil_crushing/crystallarieum_growables/${data}_from_buds`);
-            var recipeJson = JSON.parse(recipe.json);
-            recipeJson.result =  { item: mi(`${data}_dust`), count: 1.0 };
-            e.custom(recipeJson).id(recipeId);
-        });
-    });
-    
-    //clusters
-    CHANGE_INGOT_TO_DUST.forEach(data => {
-        e.forEachRecipe( { type: sp('anvil_crushing'), input: sp(`${data}_cluster`), mod: 'spectrum'}, recipe => {
-            var recipeId = sp(`anvil_crushing/crystallarieum_growables/${data}_from_cluster`);
-            var recipeJson = JSON.parse(recipe.json);
-            recipeJson.result =  { item: mi(`${data}_dust`), count: 6.0 };
-            e.custom(recipeJson).id(recipeId);
-        });
-    });
+    event.add('c:lapis_ores', sp('blackslag_lapis_ore'))
 });

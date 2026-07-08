@@ -3,71 +3,46 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/macerator/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let cr = (id) => `create:${id}`;
-    let ed = (id) => `expandeddelight:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let sp = (id) => `spectrum:${id}`;
-    let bl = (id) => `blockus:${id}`;
-    let ge = (id) => `geodes:${id}`;
-    let ae2 = (id) => `ae2:${id}`;
-    let byg = (id) => `byg:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let macerator = (id, eu, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: mi('macerator'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
 
     // -- PYRITE DUST -- //
-    macerator(
-        st('pyrite_dust_from_pyrite_chunk'),
-        16,
-        200,
-        [ { amount: 1, item: ge('pyrite_chunk') } ],
-        [
-            { amount: 1, item: tr('pyrite_dust') },
-            { amount: 1, item: tr('pyrite_dust'), probability: 0.5 }
-        ],
-    );
+    // macerator(
+        // st('pyrite_dust_from_pyrite_chunk'),
+        // 16,
+        // 200,
+        // [ { amount: 1, item: ge('pyrite_chunk') } ],
+        // [
+            // { amount: 1, item: tr('pyrite_dust') },
+            // { amount: 1, item: tr('pyrite_dust'), probability: 0.5 }
+        // ],
+    // );
 
     // -- PYRITE DUST FROM BLOCK -- //
-    macerator(
-        st('pyrite_dust_from_pyrite_block'),
-        16,
-        200,
-        [ { amount: 1, item: ge('pyrite') } ],
-        [ 
-            { amount: 4, item: tr('pyrite_dust') },
-            { amount: 2, item: tr('pyrite_dust'), probability: 0.5 }
-        ]
-    );
+    // macerator(
+        // st('pyrite_dust_from_pyrite_block'),
+        // 16,
+        // 200,
+        // [ { amount: 1, item: ge('pyrite') } ],
+        // [ 
+            // { amount: 4, item: tr('pyrite_dust') },
+            // { amount: 2, item: tr('pyrite_dust'), probability: 0.5 }
+        // ]
+    // );
 
     // -- MARBLE DUST -- //
-    macerator(
-        st('marble_dust'),
-        4,
-        200,
-        [ { amount: 1, item: bl('marble') } ],
-        [ { amount: 2, item: tr('marble_dust') } ]
-    );
+    // macerator(
+        // st('marble_dust'),
+        // 4,
+        // 200,
+        // [ { amount: 1, item: bl('marble') } ],
+        // [ { amount: 2, item: tr('marble_dust') } ]
+    // );
 
     // -- WHEAT DOUGH -- //
     macerator(
+        event,
         st('wheat_flour'),
         2,
         200,
@@ -76,82 +51,88 @@ ServerEvents.recipes(e => {
     );
 
     // -- SALT DUST -- //
-    macerator(
-        st('ground_salt'),
-        2,
-        100,
-        [ { amount: 1, item: ed('salt_rock') } ],
-        [ { amount: 1, item: ed('ground_salt') } ]
-    );
+    // macerator(
+        // st('ground_salt'),
+        // 2,
+        // 100,
+        // [ { amount: 1, item: ed('salt_rock') } ],
+        // [ { amount: 1, item: ed('ground_salt') } ]
+    // );
 
     // -- CALCITE DUST FROM LIMESTONE -- //
     macerator(
+        event,
         st('calcite_dust_from_limestone'),
         8,
         100,
         [ { amount: 1, item: cr('limestone') } ],
-        [ { amount: 2, item: tr('calcite_dust') } ]
+        [ { amount: 2, item: mi('calcite_dust') } ]
     );
 
     // -- CALCITE DUST FROM BLOCKUS LIMESTONE -- // 
-    macerator(
-        st('calcite_dust_from_blockus_limestone'),
-        8,
-        100,
-        [ { amount: 1, item: bl('limestone') } ],
-        [ { amount: 2, item: tr('calcite_dust') } ]
-    );
+    // macerator(
+        // st('calcite_dust_from_blockus_limestone'),
+        // 8,
+        // 100,
+        // [ { amount: 1, item: bl('limestone') } ],
+        // [ { amount: 2, item: tr('calcite_dust') } ]
+    // );
 
     // -- CALCITE DUST FROM CALCITE -- //
     macerator(
+        event,
         st('calcite_dust_from_calcite'),
         8,
         100,
         [ { amount: 1, item: mc('calcite') } ],
-        [ { amount: 2, item: tr('calcite_dust') } ]   
+        [ { amount: 2, item: mi('calcite_dust') } ]   
     );
 
     // -- RAW PLATINUM FROM SHELDONITE ORE -- //
-    macerator(
-        st('raw_platinum'),
-        2,
-        200,
-        [ { amount: 1, tag: 'c:sheldonite_ores' } ],
-        [ { amount: 3, item: mi('raw_platinum') } ]
-    );
+    // macerator(
+        // st('raw_platinum'),
+        // 2,
+        // 200,
+        // [ { amount: 1, tag: 'c:sheldonite_ores' } ],
+        // [ { amount: 3, item: mi('raw_platinum') } ]
+    // );
 
     // -- OBSIDIAN -- //
     macerator(
+        event,
         st('obsidian_dust'),
         8,
         1200,
         [ { amount: 1, item: mc('obsidian') } ],
-        [ { amount: 4, item: tr('obsidian_dust') } ]
+        [ { amount: 4, item: cr('powdered_obsidian') } ]
     );
 
     // -- RAW ZINC -- //
     macerator(
+        event,
         st('raw_zinc'),
         2,
         200,
-        [ { amount: 1, tag: 'c:zinc_ores' } ],
+        [ { amount: 1, tag: 'c:ores/zinc' } ],
         [ { amount: 3, item: 'create:raw_zinc'} ]
     );
 
     // -- ZINC DUST -- //
     macerator(
+        event,
         st('zinc_dust'),
         2,
         200,
-        [ { amount: 1, tag: 'c:raw_zinc_ores' } ],
+        [ { amount: 1, tag: 'c:raw_materials/zinc' } ],
         [
-            { amount: 1, item: tr('zinc_dust') },
-            { amount: 1, item: tr('zinc_dust'), probability: 0.50 }
+            { amount: 1, item: mi('zinc_dust') },
+            { amount: 1, item: mi('zinc_dust'), probability: 0.50 }
         ]
     );
 
     // -- FLAX TO STRING -- //
     macerator(
+        event,
         st('flax_to_string'),
         2,
         200,
@@ -164,11 +145,22 @@ ServerEvents.recipes(e => {
 
     // -- STONE DUST -- //
     macerator(
+        event,
         st('stone_dust'),
         2,
         200,
         [ { amount: 1, item: mc('stone') } ],
         [ { amount: 4, item: mi('stone_dust') } ]
+    );
+
+       // -- TUFF DUST -- //
+    macerator(
+        event,
+        st('tuff_dust'),
+        2,
+        100,
+        [ { amount: 1, item: mc('tuff') } ],
+        [ { amount: 4, item: mi('tuff_dust') } ]
     );
 
     // -- SPECTRUM POWDERS -- //
@@ -185,6 +177,7 @@ ServerEvents.recipes(e => {
         DATA.forEach(data => {
             let gemID = data.inputName.includes('amethyst') ? mc(data.inputName) : sp(data.inputName);
             macerator(
+                event,
                 st(`${gemName}_powder_from_${data.inputName}`),
                 2,
                 200,
@@ -208,42 +201,44 @@ ServerEvents.recipes(e => {
 
     // -- QUITOXIC POWDER -- //
     macerator(
+        event,
         st('quitoxic_powder'),
         2,
         200,
         [ { amount: 1, item: sp('quitoxic_reeds') } ],
         [ { amount: 2, item: sp('quitoxic_powder') } ]
-    );
+    ); 
 
-    // -- FIERY POWDER -- //
-    macerator(
-        st('fiery_powder'),
-        2,
-        200,
-        [ { amount: 1, item: sp('blazing_crystal') } ],
-        [ { amount: 16, item: sp('fiery_powder') } ]
-    );
+    // -- INCANDESCENT ESSENCE -- //
+    // macerator(
+        // st('fiery_powder'),
+        // 2,
+        // 200,
+        // [ { amount: 1, item: sp('blazing_crystal') } ],
+        // [ { amount: 16, item: sp('fiery_powder') } ]
+    // );
 
     // -- BLIZZARD POWDER -- //
-    macerator(
-        st('blizzard_powder'),
-        2,
-        200,
-        [ { amount: 1, item: sp('frostbite_crystal') } ],
-        [ { amount: 16, item: sp('blizzard_powder') } ]
-    );
+    // macerator(
+        // st('blizzard_powder'),
+        // 2,
+        // 200,
+        // [ { amount: 1, item: sp('frostbite_crystal') } ],
+        // [ { amount: 16, item: sp('blizzard_powder') } ]
+    // );
 
     // -- AMARANTH GRAINS -- //
-    macerator(
-        st('amaranth_grains'),
-        2,
-        200,
-        [ { amount: 1, item: sp('amaranth_bushel') } ],
-        [ { amount: 2, item: sp('amaranth_grains') } ]
-    );
+    // macerator(
+        // st('amaranth_grains'),
+        // 2,
+        // 200,
+        // [ { amount: 1, item: sp('amaranth_bushel') } ],
+        // [ { amount: 2, item: sp('amaranth_grains') } ]
+    // );
 
     // -- COPPER FROM VERIDIUM -- //
     macerator(
+        event,
         st('copper_dust_from_veridium'),
         2,
         200,
@@ -256,19 +251,21 @@ ServerEvents.recipes(e => {
 
     // -- ZINC DUST ROM ASURINE -- //
     macerator(
+        event,
         st('zinc_dust_from_asurine'),
         2,
         200,
         [ { amount: 1, item: cr('asurine') } ],
         [ 
-            { amount: 1, item: tr('zinc_dust') },
-            { amount: 1, item: tr('zinc_dust'), probability: 0.5 }
+            { amount: 1, item: mi('zinc_dust') },
+            { amount: 1, item: mi('zinc_dust'), probability: 0.5 }
         ]
-    );
+    ); 
 
     // -- GOLD DUST FROM OCHRUM -- //
     macerator(
-        st('gold_dust_from_asurine'),
+        event,
+        st('gold_dust_from_ochrum'),
         2,
         200,
         [ { amount: 1, item: cr('ochrum') } ],
@@ -280,6 +277,7 @@ ServerEvents.recipes(e => {
 
     // -- IRON DUST FROM CRIMSITE -- //
     macerator(
+        event,
         st('iron_dust_from_crimsite'),
         2,
         200,
@@ -290,19 +288,30 @@ ServerEvents.recipes(e => {
         ]
     );
 
-    // -- QUARTZ DUST FROM RAW QUARTZ BLOCK -- //
+    // -- QUARTZ DUST FROM QUARTZITE -- //
     macerator(
-        st('quartz_dust_from_quartz_block'),
+        event,
+        st('quartz_dust_from_quartzite'),
         2,
-        200,
-        [ { amount: 1, item: 'byg:raw_quartz_block' } ],
+        400,
+        [ { amount: 3, item: 'nomansland:quartzite' } ],
         [
-            { amount: 1, item: mi('quartz_dust') },
-            { amount: 1, item: mi('quartz_dust'), probability: 0.5 }
+            { amount: 2, item: mi('quartz_dust') },
+            { amount: 4, item: mi('calcite_dust') }
         ]
     );
 
-    const COLORS = [
+    // -- ENTRO DUST FROM ENTRO CRYSTAL -- //
+    macerator(
+        event,
+        st('entro_dust_from_entro_crystal'),
+        2,
+        400,
+        [ { amount: 1, item: ea('entro_crystal') } ],
+        [ { amount: 1, item: ea('entro_dust') } ]
+    );
+
+     const COLORS = [
         'orange',
         'magenta',
         'light_blue',
@@ -323,6 +332,7 @@ ServerEvents.recipes(e => {
     COLORS.forEach(color => {
         // -- MACERATE SPECTRUM LOG -- //
         macerator(
+            event,
             st(`${color}_log`),
             8,
             200,
@@ -335,6 +345,7 @@ ServerEvents.recipes(e => {
 
         // -- MACERATE SPECTRUM LEAVES -- //
         macerator(
+            event,
             st(`${color}_leaves`),
             8,
             200,
@@ -344,29 +355,29 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: sp(`${color}_sapling`), probability: 0.1 }
             ]
         );
-    });
+    }); 
     
     // -- BYG SAND FROM SANDSTONE -- //
-    const BYG_SAND_COLORS = [
-        'blue',
-        'black',
-        'white',
-        'pink',
-        'purple'
-    ];
+    // const BYG_SAND_COLORS = [
+        // 'blue',
+        // 'black',
+        // 'white',
+        // 'pink',
+        // 'purple'
+    // ];
     
-    BYG_SAND_COLORS.forEach(color => {
-        macerator(
-            st(`${color}_sand_from_sandstone`),
-            2,
-            100,
-            [ { amount: 1, item: byg(`${color}_sandstone`) } ],
-            [ { amount: 4, item: byg(`${color}_sand`) } ]
-        );
-    });
+    // BYG_SAND_COLORS.forEach(color => {
+        // macerator(
+            // st(`${color}_sand_from_sandstone`),
+            // 2,
+            // 100,
+            // [ { amount: 1, item: byg(`${color}_sandstone`) } ],
+            // [ { amount: 4, item: byg(`${color}_sand`) } ]
+        // );
+    // });
     
     // -- CERTUS QUARTZ FROM BUDS AND CLUSTER
-    const CERTUS_DUST_DATA = [
+     const CERTUS_DUST_DATA = [
         { inputName: "small_quartz_bud", outputAmount: 2 },
         { inputName: "medium_quartz_bud", outputAmount: 2 },
         { inputName: "large_quartz_bud", outputAmount: 2 },
@@ -375,15 +386,16 @@ ServerEvents.recipes(e => {
 
     CERTUS_DUST_DATA.forEach(data=>{
         macerator(
+            event,
             st(`certus_quartz_dust_from_${data.inputName}`),
             2,
             200,
-            [ { amount: 1, item: ae2(data.inputName) } ],
-            [ { amount: data.outputAmount, item: ae2('certus_quartz_dust') } ]
+            [ { amount: 1, item: ae(data.inputName) } ],
+            [ { amount: data.outputAmount, item: ae('certus_quartz_dust') } ]
         );
     });
     
-    // -- SPECTRUM RESOURCE BUDS AND CLUSTERS
+     // -- SPECTRUM RESOURCE BUDS AND CLUSTERS
     const SPECTRUM_ONE = [
         { in: "coal", out: mc("coal") },
         { in: "iron", out: mi("iron_dust") },
@@ -397,17 +409,18 @@ ServerEvents.recipes(e => {
         { in: "netherite_scrap", out: mc("netherite_scrap") },
         { in: "echo", out: mc("echo_shard") },
         { in: "prismarine", out: mc("prismarine_crystals") }
-    ];
+    ]; 
 
-    const SPECTRUM_TWO = [
-        { in: "certus_quartz", out: ae2("certus_quartz_dust") },
-        { in: "fluix", out: ae2("fluix_dust")}
+/*     const SPECTRUM_TWO = [
+        { in: "certus_quartz", out: ae("certus_quartz_dust") },
+        { in: "fluix", out: ae("fluix_dust")}
     ];
-
-    let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput) => {
+ */
+     let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput) => {
         inputOutputNames.forEach(data => {
             let outName = data.out.slice(data.out.indexOf(':') + 1, data.out.length);
             macerator(
+                event,
                 st(`${outName}_from_small_${data.in}_bud`),
                 2,
                 200,
@@ -415,6 +428,7 @@ ServerEvents.recipes(e => {
                 [ { amount: numberOfOutput[0], item: data.out } ],
             );
             macerator(
+                event,
                 st(`${outName}_from_large_${data.in}_bud`),
                 2,
                 200,
@@ -422,6 +436,7 @@ ServerEvents.recipes(e => {
                 [ { amount: numberOfOutput[1], item: data.out } ],
             );
             macerator(
+                event,
                 st(`${outName}_from_${data.in}_cluster`),
                 2,
                 200,
@@ -431,9 +446,9 @@ ServerEvents.recipes(e => {
         });
     };
     
-    //output for [small bud, large bud, cluster]
+   //  output for [small bud, large bud, cluster]
+
     recipeForSpBudsAndClusters(SPECTRUM_ONE, [1,1,6]);
-    recipeForSpBudsAndClusters(SPECTRUM_TWO, [2,2,12]);
     recipeForSpBudsAndClusters([ {in: "bismuth", out: sp("bismuth_crystal") } ], [2,2,5]);
-    recipeForSpBudsAndClusters([ {in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);
+    recipeForSpBudsAndClusters([ {in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);  
 });

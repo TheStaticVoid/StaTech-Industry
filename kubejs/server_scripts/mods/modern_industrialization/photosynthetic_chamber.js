@@ -3,16 +3,9 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/photosynthetic_chamber/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let bg = (id) => `byg:${id}`;
-    let cd = (id) => `culturaldelights:${id}`;
-    let ed = (id) => `expandeddelight:${id}`;
-    let fd = (id) => `farmersdelight:${id}`;
-    let pr = (id) => `promenade:${id}`;
     
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let photoChamber = (id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
@@ -29,7 +22,7 @@ ServerEvents.recipes(e => {
         if (fluid_inputs)
             newRecipe['fluid_inputs'] = fluid_inputs;
 
-        e.custom(newRecipe).id(id);
+        event.custom(newRecipe).id(id);
     }
 
     // This is all the seeds in the game with their respective outputs
@@ -88,45 +81,6 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: mc('potato') },
                 { amount: 1, item: mc('potato'), probability: 0.5 },
                 { amount: 1, item: mc('poisonous_potato'), probability: 0.02 }
-            ]
-        ],
-
-        // Blueberries
-        [
-            bg('blueberries'),
-            [
-                { amount: 1, item: bg('blueberries') },
-                { amount: 1, item: bg('blueberries'), probability: 0.5 }
-            ]
-        ],
-
-        // Cucumber
-        [
-            cd('cucumber_seeds'),
-            [ 
-                { amount: 1, item: cd('cucumber') },
-                { amount: 1, item: cd('cucumber'), probability: 0.5 },
-                { amount: 1, item: cd('cucumber_seeds'), probability: 0.5 }
-            ]
-        ],
-
-        // Eggplant
-        [
-            cd('eggplant_seeds'),
-            [
-                { amount: 1, item: cd('eggplant') },
-                { amount: 1, item: cd('eggplant'), probability: 0.5 },
-                { amount: 1, item: cd('eggplant_seeds'), probability: 0.5 }
-            ]
-        ],
-
-        // Corn
-        [
-            cd('corn_kernels'),
-            [
-                { amount: 1, item: cd('corn_cob') },
-                { amount: 1, item: cd('corn_cob'), probability: 0.5 },
-                { amount: 1, item: cd('corn_kernels'), probability: 0.5 }
             ]
         ],
 
@@ -295,24 +249,6 @@ ServerEvents.recipes(e => {
                 { amount: 1, item: mc('red_mushroom') },
                 { amount: 1, item: mc('red_mushroom'), probability: 0.5 }
             ]
-        ],
-
-        // Nightshade Berries
-        [
-            bg('nightshade_berries'),
-            [
-                { amount: 1, item: bg('nightshade_berries') },
-                { amount: 1, item: bg('nightshade_berries'), probability: 0.5 }
-            ]
-        ],
-
-        // Blueberries
-        [
-            pr('blueberries'),
-            [
-                { amount: 1, item: pr('blueberries') },
-                { amount: 1, item: pr('blueberries'), probability: 0.5 }
-            ]
         ]
     ];
     // Create recipes for each of the items in the list
@@ -332,6 +268,23 @@ ServerEvents.recipes(e => {
         );
     });
 
+    const flowers = Ingredient.of('#minecraft:flowers').except(['#minecraft:leaves', '@spectrum', 'minecraft:chorus_flower', '#minecraft:saplings']).getStacks().toArray();
+    flowers.forEach(recipe => {
+        let namespace = recipe.id.split(':')[0];
+        let itemName = recipe.id.split(':')[1];
+        photoChamber(
+            st(`${namespace}_${itemName}`),
+            8,
+            600,
+            [ { amount: 1, item: recipe.id, probability: 0.0 } ],
+            [ 
+                { amount: 1, item: recipe.id },
+                { amount: 1, item: recipe.id, probability: 0.5 },
+            ],
+            [ { amount: 100, fluid: mc('water') } ]
+        );
+    });
+
     // These use a different fluid and are omitted from the original list
     // -- NETHER WART -- // 
     photoChamber(
@@ -342,19 +295,6 @@ ServerEvents.recipes(e => {
         [ 
             { amount: 1, item: mc('nether_wart') },
             { amount: 1, item: mc('nether_wart'), probability: 0.5 }
-        ],
-        [ { amount: 100, fluid: mc('lava') } ]
-    );
-
-    // -- CRIMSON BERRIES -- //
-    photoChamber(
-        st('byg_crimson_berries'),
-        8,
-        600,
-        [ { amount: 1, item: bg('crimson_berries'), probability: 0.0 } ],
-        [
-            { amount: 1, item: bg('crimson_berries') },
-            { amount: 1, item: bg('crimson_berries'), probability: 0.5 }
         ],
         [ { amount: 100, fluid: mc('lava') } ]
     );

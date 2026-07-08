@@ -3,62 +3,36 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/pyrolyse_oven/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let pyrolyseOven = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('pyrolyse_oven'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
+    const REMOVED_RECIPE = [    
+        io('pyrolyse_oven/charcoal_from_logs')
+    ];
+    REMOVED_RECIPE.forEach(id => event.remove({id: id}));    
 
     // -- LOGS TO CHARCOAL + WOOD TAR -- //
     pyrolyseOven(
+        event,
         st('charcoal_cresote_from_logs'),
-        16,
-        600,
-        [ { amount: 16, tag: mc('logs') } ],
-        [ { amount: 24, item: mc('charcoal') } ],
-        [ { amount: 8000, fluid: mi('steam') } ],
-        [ { amount: 1000, fluid: mi('wood_tar') } ]
+        8,
+        300,
+        [ { amount: 4, tag: mc('logs') } ],
+        [ { amount: 6, item: mc('charcoal') } ],
+        null,
+        [ { amount: 250, fluid: mi('wood_tar') } ]
     );
 
-    // -- COAL TO COKE + CREOSOTE -- //
+    // -- DIBORANE TO PENTABORANE -- //
     pyrolyseOven(
-        st('coke_benzene_from_coal'),
-        16,
-        600,
-        [ { amount: 16, item: mc('coal') } ],
-        [ { amount: 20, item: mi('coke') } ],
-        [ { amount: 8000, fluid: mi('steam') } ],
-        [ { amount: 1000, fluid: mi('creosote') } ]
-    );
-
-    // -- COAL DUST TO COKE DUST + CREOSOTE -- //
-    pyrolyseOven(
-        st('coke_dust_benzene_from_coal_dusts'),
-        16,
-        600,
-        [ { amount: 16, tag: 'c:coal_dusts' } ],
-        [ { amount: 20, item: mi('coke_dust') } ],
-        [ { amount: 8000, fluid: mi('steam') } ],
-        [ { amount: 1000, fluid: mi('creosote') } ]
+        event,
+        st('pentaborane'),
+        32,
+        800,
+        null,
+        null,
+        [ { amount: 2500, fluid: mi('diborane') } ],
+        [ { amount: 1000, fluid: mi('pentaborane') } ]
     );
 });
