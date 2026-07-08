@@ -168,8 +168,9 @@ MIMaterialEvents.addMaterials(event => {
         builder => {
             builder
                 .hardness('hard')
-                .addParts('ingot', 'nugget', 'hot_ingot', 'plate', 'gear', 'ring', 'rod', 'bolt')
+                .addParts('ingot', 'nugget', 'hot_ingot', 'plate', 'gear', 'ring', 'rod', 'bolt', 'wire')
                 .block('iron')
+                .cable('hv')
                 .machineCasing(12.0)
                 .pipeCasing(12.0)
                 .defaultRecipes();
@@ -324,8 +325,12 @@ MIMaterialEvents.modifyMaterial('beryllium', event => {
     event.builder.addParts('hot_ingot')
 });
 
+MIMaterialEvents.modifyMaterial('iridium', event => {
+    event.builder.addParts('hot_ingot')
+});
+
 MIMaterialEvents.modifyMaterial('gold', event => {
-    event.builder.addParts('wire')
+    event.builder.addParts('wire').cable('mv')
 });
 
 MIMaterialEvents.modifyMaterial('electrum', event => {

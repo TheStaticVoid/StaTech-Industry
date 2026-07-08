@@ -178,12 +178,12 @@ ServerEvents.recipes(event => {
     blastFurnace(
         event,
         st('iridium_ingot'),
-        512,
-        1200,
+        256,
+        600,
         [ { amount: 1, tag: 'c:dusts/iridium' } ],
-        [ { amount: 1, item: mi('iridium_ingot') } ],
+        [ { amount: 1, item: mi('iridium_hot_ingot') } ],
         [ { amount: 1000, fluid: mi('argon') } ],
-        [ { amount: 750, fluid: mi('argon') } ]
+        [ { amount: 900, fluid: mi('argon') } ]
     );
 
     // -- FLUORINE -- //

@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     ];
     PIPE_CONNECTOR_REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
 
-    // -- ANGEL RING -- //
+    // -- PIPE CONNECTOR -- //
     event.shaped(pc('pipe_connector'), [
         'SIS',
         'CFC',
@@ -26,4 +26,14 @@ ServerEvents.recipes(event => {
         T: mi('tin_cable'),
         C: mi('capacitor')
     }).id(st('pipe_connector'))
+});
+
+ServerEvents.tags('item', event => {
+
+    const PC_PLACEABLE_ITEMS = [
+        mi('gold_cable'),
+        mi('enderium_cable'),
+        mi('tungstensteel_cable')
+    ];
+    PC_PLACEABLE_ITEMS.forEach(id => { event.add(pc('placeable_items'), id) });
 });
