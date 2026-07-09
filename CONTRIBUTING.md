@@ -7,9 +7,11 @@ Scripts are split based on their purpose. For Server Scripts, they are split bas
 
 Modern Industrialization is an exception to this rule, due to the extent of which it has been modified. For regular shaped/shapeless recipes, they should be placed in the `mods/modern_industrialization.js` file, while any custom recipe type should go in the `modern_industrialization` subfolder. For example, a new Assembler recipe would be placed in the `mods/modern_industrialization/assembler.js` file.
 
+Newly added recipes should be put in mod-specific script files and ordered by recipe type (shaped, assembler, pedestal, etc.) with shaped in first, then types alphabetically.
+
 In addition to the file organization, the code should also match a certain formatting. Any utility function should be declared at the top of the function, for example this could be the string utilities or custom recipe utilities. For each new recipe there should be a title listing the English in-game name for the item. For example, a recipe for the `modern_industrialization:steel_gear` should be headed with: `// -- STEEL GEAR -- //`
 
-New materials, fluids, etc. for MI should be placed in the corresponding startup script in `modern_industrialization.js`. It is expected to match the formatting given within that file. Any new multiblocks should utilize the ShapeBuilder functionality recently added by Modern Industrialization.
+New materials, fluids, etc. for MI should be placed in the corresponding startup script in the `modern_industrialization` subfolder. It is expected to match the formatting given within that file. Any new multiblocks should utilize the ShapeBuilder functionality added by Modern Industrialization.
 
 ## Design Philosophy
 While changes are welcome, they should fall in line with how the pack is overall designed. I've spent the last three months modifying progression, recipes, and designing a questbook to best guide players through the pack. To ensure the best outcome, I adhered to the following principles:
