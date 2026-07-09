@@ -1,4 +1,5 @@
 {
+	autofocus_id: "54AA08D0869CB19B"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "4__adv_electronics"
@@ -4323,6 +4324,89 @@
 			}]
 			x: 2.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["74A64C3ED35AE436"]
+			icon: {
+				id: "mi_tweaks:multi_cutter"
+			}
+			id: "2BDFD12377DD5396"
+			rewards: [
+				{
+					count: 5
+					id: "4D7E64622B7D92DC"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0D37C517C6E1BE50"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "632AB8F40E9425DA"
+					table_id: 379087119399425756L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "555D629C2F760DB0"
+					item: { count: 1, id: "mi_tweaks:multi_cutter" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0CF4A8BE9D1B823A"
+					item: { count: 1, id: "modern_industrialization:steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 11L
+					id: "2D3EEB7B4ACA45C2"
+					item: { count: 1, id: "xtonesreworked:tank_block_0" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "2B14FD761BC0788B"
+					item: { count: 1, id: "iden_decor:caution_block_slab" }
+					type: "item"
+				}
+				{
+					id: "2C4672D46FAF242F"
+					item: { count: 1, id: "minecraft:stonecutter" }
+					type: "item"
+				}
+				{
+					id: "79DD44BABD0CFA76"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "0DBA42D932D77B00"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "376C0CF2BECA7215"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "5F9EF52316789DCF"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.5d
 		}
 	]
 }

@@ -16,7 +16,7 @@
 	chapter.5336FACFCB9D5E2E.chapter_subtitle: ["Build Your Own Reactor"]
 	chapter.5336FACFCB9D5E2E.title: "&56 - Nuclear Age"
 	chapter.5C132A91B86C59B5.chapter_subtitle: ["Awaiting for space mod..."]
-	chapter.5C132A91B86C59B5.title: "&6X - Space Age"
+	chapter.5C132A91B86C59B5.title: "&65.5 - Space Age"
 	chapter.62C223D50B408794.title: "&dSpectrum"
 	chapter.6A3B096018B7FAD6.title: "&3Create"
 	chapter.70E1C9FCB66EEC7E.chapter_subtitle: ["The Basis of Industry"]
@@ -2221,6 +2221,11 @@
 		""
 		"You will have needed to make &cCupronickel Ingots&r before you can make them. This can be done by &emixing dusts&r or using the &ealloy smelter&r. While you're at it, make sure you've started producing &bInvar&r as well!"
 	]
+	quest.2BDFD12377DD5396.quest_desc: [
+		"Are those &eElectric Cutting Machines&r &cslowing you down&r?"
+		""
+		"Hopefully the &bMulti-Cutter&r can keep up. It can do &6batches&r of &616&r at &e75%&r of the regular &eEU cost&r!"
+	]
 	quest.2C1964927A0F7BE3.quest_desc: ["The &bME Pattern Provider&r is the home of your encoded recipes. These need to be put on the same network as your &dCrafting CPU&r itself. When the &dCrafting CPU&e needs to craft the primary result of that pattern, it'll delegate this to the &bPattern Provider&r. Normally the &bPattern Provider&r will then push out the ingredients to an adjancent block (a &aMolecular Assembler&r for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the &bPattern Provider&r, an &cME Interface&r, or any other means that would import the crafting result into the network. &aMolecular Assemblers&r are smart enough to automatically return the crafting result to the same &bPattern Provider&r that provided the ingredients, leaving you to focus on ensuring the &eProcessing Recipes&r outputs are put into the network when they're done."]
 	quest.2C2F7F7F0213F118.quest_desc: ["Though seemingly left behind for quite some time now, these &aseeds&r still look very much &2alive&r. Once grown, they become &bAmaranth Bushels&r. These &bBushels&r can be used in various foods, and &eit's also the favorite food of a certain creature down the path of progression&r."]
 	quest.2C66E6E3B6E6FB56.quest_desc: [
@@ -2791,7 +2796,13 @@
 		""
 		"Once you right-click the &aEnchanter&r with a fully built structure, you will unlock the recipes for books you can create. There's a lot you can do with this structure, make sure to check out the &eEnchanting&r section in the &eColorful World&r book."
 	]
-	quest.37DEDD25DD478F0E.quest_desc: ["&oIt's free real estate!&r"]
+	quest.37DEDD25DD478F0E.quest_desc: [
+		"For your complex redstone control needs, &6StaTech 2.0&r has &4&lLittle Big Redstone&r&r!"
+		""
+		"Press \"&2G&r\" when &9&ohovering over&r&r the microchip reward to open the &6guidebook&r"
+	]
+	quest.37DEDD25DD478F0E.quest_subtitle: "Bachelor's in Electrical Engineering"
+	quest.37DEDD25DD478F0E.title: "Little Big Redstone"
 	quest.37E716F9D27998E9.quest_desc: [
 		"If you've yet to find an &eAE2 meteorite&r, then you might want to make this compass. "
 		""
@@ -2835,13 +2846,13 @@
 	]
 	quest.390A2E3905298F9A.title: "Altered Oregen"
 	quest.3938FA0F25E9B17C.quest_desc: [
-		"This pack includes &eJourneyMap&r. This mod allows for &dbookmarking&r locations and viewing the world around you!"
+		"This pack includes &eFTB Chunks&r. This mod allows for &dbookmarking + claiming&r locations and viewing the world around you!"
 		""
-		"Press '&eB&r' to create a new waypoint"
+		"Press '&eC&r' to view your claimed chunks"
 		"Press '&eN&r' to display all your waypoints"
-		"Press '&eJ&r' to open the fullscreen map"
+		"Press '&eM&r' to open the fullscreen map"
 	]
-	quest.3938FA0F25E9B17C.title: "JourneyMap"
+	quest.3938FA0F25E9B17C.title: "FTB Chunks"
 	quest.3939773BB1720493.quest_desc: [
 		"&bCable Anchors&r are small decorative cable-mounted spikes that you can use to create ladders with cables, or make the cable appear connected to the walls around it."
 		""
@@ -3440,6 +3451,13 @@
 		"You can use MI cables directly on the Charger to plug it into your power network."
 	]
 	quest.4589D54579864AE8.title: "Meteorite Compass"
+	quest.4593898A5871E8F4.quest_desc: [
+		"&6Create's&r &oClipboard&r and &4Little Big Redstone's&r &oSticky Notes&r are solutions to the age-old problem of keeping in-game to-do lists!"
+		""
+		"&oThey will prove useful as the factory expands...&r"
+	]
+	quest.4593898A5871E8F4.quest_subtitle: "let me write that down"
+	quest.4593898A5871E8F4.title: "Task Lists"
 	quest.45976F62A09069E6.quest_desc: [
 		"The &aElectric Blast Furnace&r, or &aEBF for short&r, is the electric version of the &bSteam Blast Furnace&r. It unlocks new recipes and like other multiblock electric machines, its overclock is bounded to &e128 EU/t&r by default."
 		""
@@ -3570,6 +3588,12 @@
 	quest.48317EF53F769C1B.title: "Alternator \\& Motor"
 	quest.48329A633E80E686.quest_desc: ["The following section is for foods added from the &aNaturalist&r mod."]
 	quest.48329A633E80E686.title: "Naturalist Foods"
+	quest.48360151E8BFCD9C.quest_desc: [
+		"Provides the wearer with a permanent &6fire resistance&r effect."
+		""
+		"&oPairs well with the &4Ashen Circlet&r...&o"
+	]
+	quest.48360151E8BFCD9C.quest_subtitle: "It burns!"
 	quest.4857CFD9BEC908EA.quest_desc: [
 		"Throughout your progression in this &3questbook&r you will earn &eStaTech Coins&r. These can be used to &acraft certain materials&r you may be needing in your adventure. "
 		""
@@ -4353,6 +4377,12 @@
 	quest.557F78A78992BC35.title: "Sweets"
 	quest.55809AA82CD22409.quest_desc: ["The &bAluminum Tank&r is the next tier of portable tank. It can store up to &664 buckets&r of any fluid, and retain that fluid when broken."]
 	quest.55A551DC9366416E.quest_desc: ["&dSilicon Batteries&r are made similarly to the &cRedstone Batteries&r, just with &aSilicon&r instead. These will be important in the construction of the &aAdvanced Machine Hull&r."]
+	quest.55B9A21B47728786.quest_desc: [
+		"Provides the wearer with a permanent &6fire resistance&r effect."
+		""
+		"&oPairs well with the &4Ashen Circlet&r...&o"
+	]
+	quest.55B9A21B47728786.quest_subtitle: "It burns!"
 	quest.55C954FA3EF76A6D.quest_desc: [
 		"The cables of HV are:"
 		"- &bAluminum&r"
@@ -6459,6 +6489,7 @@
 	task.0D4E7C3A65BB81D0.title: "Any Fluid Pipe"
 	task.0D6693504C8C86CE.title: "Any Fluid Input Hatch"
 	task.0DB892CAB4A72CFF.title: "Any Item Output Hatch"
+	task.0DBA42D932D77B00.title: "Any Item Input Hatch"
 	task.0DFA3401B922331A.title: "Click to Acknowledge"
 	task.0E273C559CE9E1F0.title: "Any Energy Input Hatch"
 	task.0E49F79E7E70D235.title: "4x Polished Gemstone Blocks"
@@ -6495,6 +6526,7 @@
 	task.158CCF12B2F597C4.title: "Click to Acknowledge"
 	task.15B392AE3B65481E.title: "Any Basic Wand"
 	task.15BB128ABE86F903.title: "NYI"
+	task.16155F2E83AC8FDC.title: "Any Sticky Note"
 	task.163D0AB93684C1A2.title: "Any Gemstone Shard"
 	task.1760536D483EA89E.title: "Any Rune Ingots"
 	task.1798316FBC33C7C4.title: "2x Gemstone Chiseled Blocks"
@@ -6639,6 +6671,7 @@
 	task.367F8C3925763AB8.title: "Click to Acknowledge"
 	task.3750401D20388C6C.title: "Any Fluid Output Hatch"
 	task.3759329D7AB3E02D.title: "Any Energy Input Hatch"
+	task.376C0CF2BECA7215.title: "Any Fluid Input Hatch"
 	task.37A29FCBDD477602.title: "NYI"
 	task.37CF0AB273567327.title: "Click to Acknowledge"
 	task.38392AE55D9761DA.title: "Any Item Output Hatch"
@@ -6826,6 +6859,7 @@
 	task.5EE0969F76B85808.title: "Any Waystone"
 	task.5F10F81308FEB934.title: "NYI"
 	task.5F7B9D69BCBD0FD2.title: "I've done this!"
+	task.5F9EF52316789DCF.title: "Any Item Output Hatch"
 	task.5FA747C5A7921729.title: "NYI"
 	task.5FB8D8B0C9F3F3EE.title: "NYI"
 	task.60348782D06ED859.title: "Any Fluid Input Hatch"
@@ -6938,6 +6972,7 @@
 	task.796B742993576F76.title: "NYI"
 	task.799173746D8D6ECB.title: "NYI"
 	task.79DC6555EA3D076E.title: "I've done this!"
+	task.79DD44BABD0CFA76.title: "Any Energy Input Hatch"
 	task.7AADB42E1295E814.title: "No Man's Land"
 	task.7AC9071453F14364.title: "Any Energy Input Hatch"
 	task.7B2DB2338E8379DF.title: "Even more Batching?"

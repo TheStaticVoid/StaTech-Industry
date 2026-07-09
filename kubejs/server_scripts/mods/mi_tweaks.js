@@ -114,4 +114,19 @@ ServerEvents.recipes(event => {
     })
     .id(st('grand_mass_centrifuge'));
 
+        // -- MULTI-CUTTER -- //
+    event.shaped(mt('multi_cutter'), [
+        'MBM',
+        'CHC',
+        'MUM'
+    ],
+    {
+        B: mi('invar_rotary_blade'),
+        M: mi('large_motor'),
+        U: mi('electronic_circuit'),
+        C: mi('electric_cutting_machine'),
+        H: mi('advanced_machine_hull')
+    })
+    .id(st('multi_cutter'));
+
 });

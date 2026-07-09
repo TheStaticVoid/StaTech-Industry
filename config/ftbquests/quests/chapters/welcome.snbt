@@ -295,7 +295,18 @@
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
+			icon: {
+				id: "little_big_redstone:redstone_circuit_board"
+			}
 			id: "37DEDD25DD478F0E"
+			rewards: [{
+				id: "5BBB27985575D2ED"
+				item: {
+					count: 1
+					id: "little_big_redstone:red_microchip"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "25E5126AF912D1DA"
 				type: "checkmark"

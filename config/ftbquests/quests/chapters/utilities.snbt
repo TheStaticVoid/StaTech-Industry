@@ -416,5 +416,47 @@
 			x: 6.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["7EFD1192E201F04A"]
+			id: "48360151E8BFCD9C"
+			rewards: [{
+				id: "12BE550F20ACCA87"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "479A6C9B3FFF3CA1"
+				item: { count: 1, id: "kubejs:fireproof_ring" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0799245700C72434"]
+			icon: {
+				id: "create:clipboard"
+			}
+			id: "4593898A5871E8F4"
+			rewards: [{
+				id: "2AD08E8C606A659F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "4114886E5E105823"
+					item: { count: 1, id: "create:clipboard" }
+					type: "item"
+				}
+				{
+					id: "16155F2E83AC8FDC"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(little_big_redstone:sticky_notes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: -3.0d
+		}
 	]
 }
