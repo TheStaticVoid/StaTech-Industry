@@ -1,5 +1,6 @@
 # StaTech-Industry 2.0 (1.21.1)
-StaTech-Industry 2.0 is a minecraft 1.21.1 modpack that is a neoforge port of the original [Statech Industry fabric modpack for 1.19.2](https://github.com/TheStaticVoid/StaTech-Industry/tree/1.19.2-1.1.15). Join us on [Discord](https://discord.gg/RDaJEnN3uS). 
+StaTech-Industry 2.0 is a minecraft 1.21.1 modpack that is a neoforge port of the original [Statech Industry fabric modpack for 1.19.2](https://github.com/TheStaticVoid/StaTech-Industry/tree/1.19.2-1.1.15). 
+Join us on [Discord](https://discord.gg/RDaJEnN3uS). Click [here](https://github.com/TheStaticVoid/StaTech-Industry/blob/main/MODLIST.md) for a full list of mods. 
 
 ## Installation
 I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling modded installs. The following instructions assume you have Prism installed with your Minecraft account signed in already. To install the latest version of StaTech Industry, follow these steps:
