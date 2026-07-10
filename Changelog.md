@@ -4,31 +4,42 @@ We're getting close to full version release! This beta release is the last major
 As always, please make sure to file all issues on GitHub. Feedback is also most welcome, though the Discord server is the best place for that.
 
 ## Mods added:
+- [Acedium Sodiumized](https://www.curseforge.com/minecraft/mc-mods/acedium-sodiumized) - Replaces the Sodium renderer with one optimized for NVidia GPUs if being run on one
+- [Chloride](https://www.curseforge.com/minecraft/mc-mods/chloride) - Sodium addon that allows more configurability
 - [Create Crafts & Additions](https://www.curseforge.com/minecraft/mc-mods/createaddition) - Add electric utilities and QoL items to the Create mod
 - [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco) - More Create-centric decorative blocks to spice up your factory!
 - [KubeJS Curios](https://www.curseforge.com/minecraft/mc-mods/kubejs-curios) - Add Curios with KubeJS, used to make a better Angel ring and add the Fireproof ring
 - [Lithium](https://www.curseforge.com/minecraft/mc-mods/lithium) - Server-side performance optimizations
+- [Reese's Sodium Options](https://www.curseforge.com/minecraft/mc-mods/reeses-sodium-options) - Better Sodium options menu
+- [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium) - Client-side rendering engine optimizations
+
+
 
 ## Mods removed:
 - [Angel Ring](https://www.curseforge.com/minecraft/mc-mods/angel-ring) - Removed due to using NeoForge data attributes and KubeJS Curios to make a better custom Angel Ring
+- [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium) - Replaced with Sodium for better render compatibility + maintainability
 - [Flight API](https://www.curseforge.com/minecraft/mc-mods/flight-api) - Angel Ring dependency
 - [HaydenAPI](https://www.curseforge.com/minecraft/mc-mods/haydenapi) - Angel Ring dependency
+- [Monocle](https://www.curseforge.com/minecraft/mc-mods/monocle) - Obsoleted Embeddium-Iris compatibility layer
+- [Nolijium](https://www.curseforge.com/minecraft/mc-mods/nolijium) - Replaced with Chloride due to the Sodium switch
 
 ## Mods updated:
 - NeoForge loader version 21.1.133 -> 21.1.135
-- [Balm](https://www.curseforge.com/projects/531761) - 21.0.56 -> 21.0.60
+- [Balm](https://www.curseforge.com/projects/531761) - 21.0.56 -> 21.0.62
 - [Biolith](https://www.curseforge.com/projects/852512) - 3.0.11 -> 3.0.12
 - [Certain Questing Additions](https://www.curseforge.com/projects/1372051) - 1.1.7 -> 1.2.0.3
 - [Chat Heads](https://www.curseforge.com/projects/407206) - 0.15.1 -> 0.15.2
 - [Chisel Reborn](https://www.curseforge.com/projects/551763) - 2.0.0+mc1.21.1 -> 2.0.1+mc1.21.1
 - [Client Tweaks](https://www.curseforge.com/projects/251407) - 21.1.11 -> 21.1.13
+- [Cognition](https://www.curseforge.com/minecraft/mc-mods/cognition-mod) - v2.4.12-1.21.1 -> v2.4.13-1.21.1
 - [Concurrent Chunk Management Engine](https://www.curseforge.com/projects/533097) - 0.3.0+alpha.0.93+1.21.1 -> 0.4.0-alpha.0.113+1.21.1
 - [Construction Sticks](https://www.curseforge.com/projects/1156098) - 1.3.0 -> 1.4.1
+- [Cooking for Blockheads](https://www.curseforge.com/minecraft/mc-mods/cooking-for-blockheads) - 1.21.1-21.1.23 -> 1.21.1-21.1.24
 - [Cupboard mod](https://www.curseforge.com/projects/326652) - 3.7 -> 3.8
 - [Default Options](https://www.curseforge.com/projects/232131) - 21.1.6 -> 21.1.7
 - [EMI Ores](https://www.curseforge.com/projects/974009) - 1.2+1.21.1+neoforge -> 1.3+1.21.1+neoforge
 - [EntityCulling](https://www.curseforge.com/projects/448233) - 1.10.2 -> 1.10.5
-- [Extended Industrialization](https://www.curseforge.com/projects/1068418) - 1.15.39-1.21.1 -> 1.15.44-1.21.1
+- [Extended Industrialization](https://www.curseforge.com/projects/1068418) - 1.15.39-1.21.1 -> 1.15.45-1.21.1
 - [ExtendedAE](https://www.curseforge.com/projects/892005) - 1.21-2.2.32-neoforge -> 1.21-2.2.33-neoforge
 - [FTB Chunks](https://www.curseforge.com/projects/314906) - 2101.1.17 -> 2101.1.20
 - [FTB Quests](https://www.curseforge.com/projects/289412) - 2101.1.26 -> 2101.1.27
@@ -39,6 +50,7 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - [GeckoLib 4](https://www.curseforge.com/projects/388172) - 4.8.4 -> 4.9.2
 - [ImmediatelyFast](https://www.curseforge.com/projects/686911) - 1.6.10+1.21.1 -> 1.6.11+1.21.1
 - [Inventory Essentials](https://www.curseforge.com/projects/368825) - 21.1.15 -> 21.1.17
+- [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders) - 1.8.12+mc1.21.1 -> 1.8.14-beta.1+mc1.21.1
 - [Kotlin for Forge](https://www.curseforge.com/projects/351264) - 7471280 -> 8335665
 - [LambDynamicLights](https://www.curseforge.com/projects/393442) - 4.8.8+1.21.1 -> 4.8.10+1.21.1
 - [Lithostitched](https://www.curseforge.com/projects/936015) - 1.7.9 -> 1.7.13
@@ -58,10 +70,10 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - [Sophisticated Item Actions](https://www.curseforge.com/projects/1419142) - 0.5.4 -> 0.5.8
 - [Sophisticated Storage](https://www.curseforge.com/projects/619320) - 1.5.57 -> 1.5.71
 - [Supplementaries](https://www.curseforge.com/projects/412082) - 1.21.1-3.6.7 -> 1.21.1-3.7.7
-- [Tesseract API](https://www.curseforge.com/projects/1067672) - 1.12.1-1.21.1 -> 1.12.6-1.21.1
+- [Tesseract API](https://www.curseforge.com/projects/1067672) - 1.12.1-1.21.1 -> 1.12.7-1.21.1
 - [TooManyRecipeViewers](https://www.curseforge.com/projects/1194921) - 0.8.1+mc.21.1 -> 0.9.0+mc.21.1
 - [WaveyCapes](https://www.curseforge.com/projects/521594) - 1.9.2 -> 1.10.2
-- [Waystones](https://www.curseforge.com/projects/245755) - 21.1.34 -> 21.1.35
+- [Waystones](https://www.curseforge.com/projects/245755) - 21.1.34 -> 21.1.36
 - [Yet Another Industrialization!](https://www.curseforge.com/projects/1358516) - 1.5.0-1.21.1 -> 1.5.1-1.21.1
 
 ## Other changes:
