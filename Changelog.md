@@ -65,30 +65,6 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - [Yet Another Industrialization!](https://www.curseforge.com/projects/1358516) - 1.5.0-1.21.1 -> 1.5.1-1.21.1
 
 ## Other changes:
-- Fix #truepurpledino:10 
-- Fix #truepurpledino:26 
-- Fix #truepurpledino:50 
-- Fix #truepurpledino:52 
-- Fix #truepurpledino:61 
-- Fix #truepurpledino:62 
-- Fix #truepurpledino:63 
-- Fix #truepurpledino:64 
-- Fix #truepurpledino:65 
-- Fix #truepurpledino:66 
-- Fix #truepurpledino:67 
-- Fix #truepurpledino:68 
-- Fix #truepurpledino:69 
-- Fix #truepurpledino:70 
-- Fix #truepurpledino:74 
-- Fix #truepurpledino:77
-- Fix #truepurpledino:76 
-- Fix #truepurpledino:78
-- Fix #truepurpledino:83
-- Fix #truepurpledino:48
-- Fix #truepurpledino:79 
-- Fix #truepurpledino:85 
-- Fix #truepurpledino:86 
-- Fix #truepurpledino:88 
 - [Rename PTFE fluid](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/pull/87/changes/9fda2b3fd13299f7994fbec1d34e5ef5a221a3b1)
 - [Add mob crusher model + dust tags](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/pull/87/changes/6ae968f2c0a9b5fbd3032fbaeb386d08343cf1b6)
 - [Add food tags to custom items](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/pull/87/changes/c31eaac06322fc2a2b65b9272ec2e237a2c6b138)
@@ -98,4 +74,35 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - [Add Enderium + Gold cables](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/8e856562df4d3c908fe84a909bffd935a9464cda)
 - [Fix Glaxx tagging](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/3e8c759c1e5975f49ec5268e6da9d8cecde22015)
 - [Readd iron drawer downgrade](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/359d80eec5f13f52b0028b1f529a6f4ebb303f4e)
-- Fix #553
+- Fix [#truepurpledino:10](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/10)
+- Fix [#truepurpledino:26](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/26)
+- Fix [#truepurpledino:48](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/48)
+- Fix [#truepurpledino:50](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/50)
+- Fix [#truepurpledino:52](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/52) 
+- Fix [#truepurpledino:61](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/61) 
+- Fix [#truepurpledino:62](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/62) 
+- Fix [#truepurpledino:63](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/63) 
+- Fix [#truepurpledino:64](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/64) 
+- Fix [#truepurpledino:65](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/65) 
+- Fix [#truepurpledino:66](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/66) 
+- Fix [#truepurpledino:67](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/67) 
+- Fix [#truepurpledino:68](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/68) 
+- Fix [#truepurpledino:69](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/69) 
+- Fix [#truepurpledino:70](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/70) 
+- Fix [#truepurpledino:74](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/74)
+- Fix [#truepurpledino:76](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/76) 
+- Fix [#truepurpledino:77](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/77)
+- Fix [#truepurpledino:78](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/78)
+- Fix [#truepurpledino:79](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/79)
+- Fix [#truepurpledino:83](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/83)
+- Fix [#truepurpledino:85](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/85) 
+- Fix [#truepurpledino:86](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/86) 
+- Fix [#truepurpledino:88](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/88)
+- Fix [#552](https://github.com/TheStaticVoid/StaTech-Industry/issues/552)
+- Fix [#553](https://github.com/TheStaticVoid/StaTech-Industry/issues/553)
+- Fix [#557](https://github.com/TheStaticVoid/StaTech-Industry/issues/557)
+- Fix [#558](https://github.com/TheStaticVoid/StaTech-Industry/issues/558)
+- Fix [#560](https://github.com/TheStaticVoid/StaTech-Industry/issues/560)
+- Fix [#562](https://github.com/TheStaticVoid/StaTech-Industry/issues/562)
+- Fix [#563](https://github.com/TheStaticVoid/StaTech-Industry/issues/563)
+- Fix [#564](https://github.com/TheStaticVoid/StaTech-Industry/issues/564)
