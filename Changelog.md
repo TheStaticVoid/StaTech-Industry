@@ -25,6 +25,7 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 
 ## Mods updated:
 - NeoForge loader version 21.1.133 -> 21.1.135
+- [AllTheLeaks](https://www.curseforge.com/minecraft/mc-mods/alltheleaks) - 1.1.9+1.21.1 -> 1.1.10+1.21.1
 - [Balm](https://www.curseforge.com/projects/531761) - 21.0.56 -> 21.0.62
 - [Biolith](https://www.curseforge.com/projects/852512) - 3.0.11 -> 3.0.12
 - [Certain Questing Additions](https://www.curseforge.com/projects/1372051) - 1.1.7 -> 1.2.0.3
@@ -49,6 +50,7 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - [Fusion](https://www.curseforge.com/projects/854949) - 1.2.12 -> 1.3.5
 - [GeckoLib 4](https://www.curseforge.com/projects/388172) - 4.8.4 -> 4.9.2
 - [ImmediatelyFast](https://www.curseforge.com/projects/686911) - 1.6.10+1.21.1 -> 1.6.11+1.21.1
+- [Industrialization Overdrive](https://www.curseforge.com/minecraft/mc-mods/industrialization-overdrive) - 1.11.2+1.21.1 -> 1.12.1+1.21.1
 - [Inventory Essentials](https://www.curseforge.com/projects/368825) - 21.1.15 -> 21.1.17
 - [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders) - 1.8.12+mc1.21.1 -> 1.8.14-beta.1+mc1.21.1
 - [Kotlin for Forge](https://www.curseforge.com/projects/351264) - 7471280 -> 8335665
@@ -64,6 +66,7 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - [Moonlight Lib](https://www.curseforge.com/projects/499980) - 1.21.1-3.0.17 -> 1.21.1-3.0.22
 - [No Man's Land](https://www.curseforge.com/projects/538493) - 1.5.7 -> 1.5.12
 - [NotEnoughAnimations](https://www.curseforge.com/projects/433760) - 1.12.3 -> 1.12.4
+- [Phantom's Utilities](https://www.curseforge.com/minecraft/mc-mods/phantoms-utilities) - 0.3.1 -> 0.3.2
 - [Puzzles Lib](https://www.curseforge.com/projects/495476) - 21.1.51 -> 21.1.52
 - [Sophisticated Backpacks](https://www.curseforge.com/projects/422301) - 3.25.55 -> 3.25.69
 - [Sophisticated Core](https://www.curseforge.com/projects/618298) - 1.4.51 -> 1.4.70
