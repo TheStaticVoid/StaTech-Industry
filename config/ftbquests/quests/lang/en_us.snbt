@@ -849,6 +849,12 @@
 	quest.108B943367B05AE7.quest_desc: ["From your previous experiences with &bPaltaeria&r, you can already guess that it would not be a good idea to place htis block in open sky - your future self will thank you."]
 	quest.10943911EAB7196F.quest_desc: ["By blasting an &aUltradense Metal Ball&f with more energy than several times our &dentire sun&r we can create a single &zSingularity&f, a &3black-hole you can somehow hold in your hands...&r"]
 	quest.10943911EAB7196F.quest_subtitle: "Pocket-size blackhole "
+	quest.1099D98FC13988AF.quest_desc: [
+		"The &aColossal Blast Furnace&r is a batching version of the venerable &bElectric Blast Furnace&r. It can do &6batches of 12&r at &680%&r the &eEU cost&r."
+		""
+		"It is expensive, but extremely useful for high-demand alloys like &4Steel&r, &3Aluminum&r, &5Stainless Steel&r, etc..."
+	]
+	quest.1099D98FC13988AF.quest_subtitle: "Blast away!"
 	quest.10B87446BD9C118D.quest_desc: ["&aStratine Gems&r can rarely be dropped from &bStratine Ores&r. Once you find one, you will &eunlock a recipe to make them&r."]
 	quest.10C6529CD6C26AEE.quest_desc: [
 		"Now, by combining Manganese Dust, Chromium Dust, Iron Dust, and Nickel Dust in a Mixer you will produce your first &aStainless Steel Dust&r."
@@ -1805,6 +1811,12 @@
 		""
 		"They are most importantly used to &alink&r the &dinput&r &cME P2P Tunnel&r to the &eoutput&r."
 	]
+	quest.22FD56F3802E6379.quest_desc: [
+		"Are those &eElectric Packers&r &cnot packing fast enough&r?"
+		""
+		"Hopefully the &bHigh Capacity Packer&r can keep up. It can do &6batches&r of &68&r at &e75%&r of the regular &eEU cost&r!"
+	]
+	quest.22FD56F3802E6379.quest_subtitle: "Packer? I hardly even know 'er"
 	quest.23115026C8C0FE1B.quest_desc: ["&bFluid Cells&r are similar to the item storage counterparts, except they hold fluids (duh!). &bFluid storage cells&r can hold up to 18 distinct types of fluids; the volume of fluid they can store depend in part on how many types they are holding, and their storage capacity."]
 	quest.234D4BC93E0C9108.quest_desc: ["&bMercury&r really is nothing more than a &chot rock&r. Compared to &aVenus&r, &bMercury&r doesn't have too much to offer other than lots of &4lava&r, &9basalt&r, and &cmagma cubes&r."]
 	quest.234D4BC93E0C9108.title: "Mercury"
@@ -1973,6 +1985,12 @@
 		"Additionally, &eSteel Hatches&r have more capacity than &6Bronze Hatches&r, and a multiblock with at &aleast ONE steel hatch&r (regardless of item/fluid/etc.) will be upgraded to &eSteel&r tier. This means that it will go &etwice as fast&r if its energy usage wouldn't exceed &24 EU/t&r."
 	]
 	quest.26A89C51A7B9FFDE.title: "&eSteel Ingot"
+	quest.26B1EB74BF49A341.quest_desc: [
+		"Are those &eElectric Unpackers&r &cnot unpacking fast enough&r?"
+		""
+		"Hopefully the &bHigh Capacity Unpacker&r can keep up. It can do &6batches&r of &68&r at &e75%&r of the regular &eEU cost&r!"
+	]
+	quest.26B1EB74BF49A341.quest_subtitle: "Unpacker? I hardly even.. nah that one sucks"
 	quest.26DD8B3CAA3D34B5.quest_desc: ["With your new &dSpectrum Palace&r, you can finally round out the last three pigments you have not been able to create up to this point."]
 	quest.26DD8F0FDE61AC95.quest_desc: ["The &bElectric Mining Drill&r is an upgraded &3electric-powered drill&r that features a powered mode for &dmining 3x3&r, adjustable mining speed, and the ability to switch between Silck Touch and Fortune modes."]
 	quest.26EF4E75B844E3BD.quest_desc: [
@@ -2190,6 +2208,11 @@
 	quest.2AE79CA076C2EA64.quest_desc: ["Forget to pack a snack? The moon's got you. &bMoon Cheese&r can be eaten in a pinch to keep you from starving."]
 	quest.2AEA76695F411DD9.quest_desc: ["The &aStainless Steel Tank&r is the next tier of portable fluid tank you can create. It can store up to &e256 buckets&r of any kind of fluid and retains the contents when broken."]
 	quest.2B1123DC479F00CB.quest_desc: ["&dPolished Rose Quartz&r is an important material for making &bElectron Tubes&r, which are then used for more advanced &eCreate&r machines."]
+	quest.2B2D9A8D9BCB18FE.quest_desc: [
+		"Are those &ePolarizers&r &cnot, uh, polarizing fast enough&r?"
+		""
+		"Hopefully the &bLarge Polarization Machines&r can keep up. It can do &6batches&r of &68&r at &e85%&r of the regular &eEU cost&r!"
+	]
 	quest.2B364DC6ECC4FCF5.quest_desc: [
 		"Similar to the &eFluid Pipe&r you unlocked earlier, the &aItem Pipe&r from &6Modern Dynamics&r allows for a more classic style of item transfer. "
 		""
@@ -2224,7 +2247,7 @@
 	quest.2BDFD12377DD5396.quest_desc: [
 		"Are those &eElectric Cutting Machines&r &cslowing you down&r?"
 		""
-		"Hopefully the &bMulti-Cutter&r can keep up. It can do &6batches&r of &616&r at &e75%&r of the regular &eEU cost&r!"
+		"Hopefully the &bMulti-Cutter&r can keep up. It can do &6batches&r of &68&r at &e60%&r of the regular &eEU cost&r!"
 	]
 	quest.2C1964927A0F7BE3.quest_desc: ["The &bME Pattern Provider&r is the home of your encoded recipes. These need to be put on the same network as your &dCrafting CPU&r itself. When the &dCrafting CPU&e needs to craft the primary result of that pattern, it'll delegate this to the &bPattern Provider&r. Normally the &bPattern Provider&r will then push out the ingredients to an adjancent block (a &aMolecular Assembler&r for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the &bPattern Provider&r, an &cME Interface&r, or any other means that would import the crafting result into the network. &aMolecular Assemblers&r are smart enough to automatically return the crafting result to the same &bPattern Provider&r that provided the ingredients, leaving you to focus on ensuring the &eProcessing Recipes&r outputs are put into the network when they're done."]
 	quest.2C2F7F7F0213F118.quest_desc: ["Though seemingly left behind for quite some time now, these &aseeds&r still look very much &2alive&r. Once grown, they become &bAmaranth Bushels&r. These &bBushels&r can be used in various foods, and &eit's also the favorite food of a certain creature down the path of progression&r."]
@@ -4817,6 +4840,11 @@
 		"Shift right-click an &aEntangled Tank&r with an &bEntangled Bucket&r to link them together."
 	]
 	quest.5E22844F7E6C8B34.quest_desc: ["&aIndustrial TNT&r is a key component in the &eImplosion Compressor&r. Using &2Toulene&r and &3Nitrogen&r you can combine Sand and Flint to produce a controlled explosive."]
+	quest.5E42E8487A626F62.quest_desc: [
+		"Are those &eElectric Wiremills&r &cconstantly underperforming&r?"
+		""
+		"Hopefully the &bArrayed Wiremill&r can keep up. It can do &6batches&r of &68&r at &e90%&r of the regular &eEU cost&r!"
+	]
 	quest.5E5EC0CDFA09CACF.quest_desc: [
 		"&dWarp Plates&r aren't very useful until you have two of them. When you place the &dWarp Plate&r, it will code an &aAttuned Shard&r to it's location. If you place another Warp Plate and place the &aAttuned Shard&r from the previous, that new &dWarp Plate&r will teleport you to the previous location."
 		""
