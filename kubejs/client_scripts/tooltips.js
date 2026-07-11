@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ItemEvents.modifyTooltips(e => {
+ItemEvents.modifyTooltips(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let mi = (id) => `modern_industrialization:${id}`;
     let mt = (id) => `mi_tweaks:${id}`;
@@ -42,6 +42,46 @@ ItemEvents.modifyTooltips(e => {
 
 
     // -- LIST OF ALL CUSTOM MACHINES AND ITEMS -- //
+
+    const CUSTOM_FLUIDS = [
+        mi('stellar_plasma'),
+        mi('dragons_blood'),
+        mi('impure_resonating_fluid'),
+        mi('salt_water'),
+        mi('brine'),
+        mi('nutrient_rich_water'),
+        mi('nutrient_rich_liquid_ender'),
+        mi('nutrient_rich_blood'),
+        mi('molten_nether_star'),
+        mi('impure_liquid_nether_star'),
+        mi('lithium'),
+        mi('neutronium'),
+        mi('blood'),
+        mi('concrete'),
+        mi('drilling_fluid'),
+        mi('core_slurry'),
+        mi('wood_tar'),
+        mi('polytetrafluoroethylene'),
+        mi('tetrafluoroethylene'),
+        mi('hydrofluoric_acid'),
+        mi('chloroform'),
+        mi('fluorine'),
+        mi('liquid_ender'),
+        mi('molten_enderium'),
+        mi('nitric_acid'),
+        mi('ammonia'),
+        mi('waste_beryl_ammonia_solution'),
+        mi('beryllium_sulfate'),
+        mi('beryllium_hydroxide'),
+        mi('beryllium_chloride'),
+        mi('acrylonitrile'),
+        mi('acrylonitrile_butadiene_styrene'),
+        mi('molten_borosilicate_glass'),
+        mi('boron_trifluoride'),
+        mi('diborane'),
+        mi('pentaborane')
+    ];
+
     const CUSTOM_MACHINES_AND_ITEMS = [
         mt('bulk_compactor'),
         mt('blast_alloy_smelter'),
@@ -50,6 +90,12 @@ ItemEvents.modifyTooltips(e => {
         mt('large_scale_assembler'),
         mt('oversized_electrolysis_chamber'),
         mt('grand_mass_centrifuge'),
+        mt('multi_cutter'),
+        mt('high_capacity_packer'),
+        mt('high_capacity_unpacker'),
+        mt('colossal_blast_furnace'),
+        mt('large_polarization_machine'),
+        mt('arrayed_wiremill'),
         mi('laser_engraver'),
         mi('photosynthetic_chamber'),
         mi('rocket_part_assembler'),
@@ -61,27 +107,34 @@ ItemEvents.modifyTooltips(e => {
         mi('singularity_forge'),
         mi('space_probe_launcher'),
         mi('quantum_space_probe_launcher'),
-        mi('raw_moon_ice'),
-        mi('moon_ice_dust'),
-        mi('desh_ingot'),
-        mi('ostrum_ingot'),
-        mi('calorite_ingot')
+        mi('stone_dust'),
+        /^modern_industrialization:.*(calorite|tungstensteel|desh|moon_ice|ostrum|polytetrafluoroethylene|cobalt|zinc|clay|dark_ashes|calcite|fluorite|acrylonitrile_butadiene_styrene|enderium|entro|sky_bronze|sky_steel|sapphire|peridot|corundum|boron_trioxide|kernite|lithium_hydride|lithium_tetrafluoroborate|lithium_fluoride).*/
     ];
 
     // -- ADD TOOLTIP -- //
     const ADDED_BY_STATECH = Text.gold('Added by StaTech Industry');
     CUSTOM_MACHINES_AND_ITEMS.forEach(item => {
-        e.modify(item, tooltip => {
+        event.modify(item, tooltip => {
             tooltip.removeExactText(ADDED_BY_STATECH);
             tooltip.add([ADDED_BY_STATECH]);
+        });
+    });
+    // Currently seems there is no way to add tooltip to fluids, at least not easily
+    CUSTOM_FLUIDS.forEach(fluid => {
+        [`${fluid}_bucket`].forEach(item => {
+            event.modify(item, tooltip => {
+                tooltip.removeExactText(ADDED_BY_STATECH);
+                tooltip.add([ADDED_BY_STATECH]);
+            });
         });
     });
 
     const CURRENTLY_DISABLED = Text.red('Not Yet Obtainable');
     DISABLED_MACHINES_AND_ITEMS.forEach(item => {
-        e.modify(item, tooltip => {
+        event.modify(item, tooltip => {
             tooltip.add([CURRENTLY_DISABLED]);
         });
     });
 
 });
+
