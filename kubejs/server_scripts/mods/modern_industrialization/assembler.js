@@ -26,7 +26,6 @@ ServerEvents.recipes(event => {
         mi('electric_age/component/craft/diode_doped_asbl'),
         mi('machines/machine_chainer/assembler'),
         io('machines/pyrolyse_oven/assembler'),
-        ei('tool/assembler/tesla_handheld_receiver'),
         mi('assembler_generated/electric_age/machine/large_diesel_generator'),
         mi('assembler_generated/electric_age/machine/large_steam_turbine')/* ,
         mi('materials/uranium/assembler/fuel_rod'),
@@ -36,21 +35,6 @@ ServerEvents.recipes(event => {
         mi('materials/le_mox/assembler/fuel_rod') */
     ];
     REMOVED_RECIPE.forEach(id => event.remove({id: id}));
-
-    // -- LARGE STEAM MACERATOR -- //
-    assembler(
-        event,
-        st('large_steam_macerator'),
-        8,
-        200,
-        [
-            { amount: 2, item: mi('bronze_macerator') },
-            { amount: 2, item: mi('bronze_plated_bricks') },
-            { amount: 4, item: mi('bronze_curved_plate') },
-            { amount: 1, item: mi('steel_machine_casing') }
-        ],
-        [ { amount: 1, item: ei('large_steam_macerator') } ]
-    );
 
     // -- CORE MINING DRILL -- //
     assembler(
@@ -706,22 +690,6 @@ ServerEvents.recipes(event => {
         ],
         [ { amount: 2, item: mi('tungstensteel_machine_casing_pipe') } ]
     );
-    
-    // -- ALLOY SMELTER -- //
-    assembler(
-        event,
-        st('alloy_smelter'),
-        8,
-        200,
-        [
-            { amount: 2, item: mi('analog_circuit') },
-            { amount: 2, item: mi('inductor') },
-            { amount: 2, item: mi('cupronickel_wire_magnetic') },
-            { amount: 2, item: mi('tin_cable') },
-            { amount: 1, item: mi('electric_furnace') }
-        ],
-        [ { amount: 1, item: ei('electric_alloy_smelter') } ]
-    );
 
     // -- LASER ENGRAVER -- //
     assembler(
@@ -802,120 +770,6 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('basic_machine_hull') }
         ],
         [ { amount: 1, item: mi('greenhouse') } ]
-    );
-
-    // -- LARGE CHEMICAL REACTOR -- //
-    assembler(
-        event,
-        st('large_chemical_reactor'),
-        8,
-        200,
-        [ 
-            { amount: 4, item: mi('polytetrafluoroethylene_plate') },
-            { amount: 2, item: mi('advanced_motor') },
-            { amount: 1, item: mi('digital_circuit') },
-            { amount: 1, item: mi('chemical_reactor') },
-            { amount: 1, item: mi('turbo_machine_hull') }
-        ],
-        [ { amount: 1, item: mt('large_chemical_reactor') } ]
-    );
-
-     // -- BULK COMPACTOR -- //
-    assembler(
-        event,
-        st('bulk_compactor'),
-        8,
-        200,
-        [ 
-            { amount: 4, item: mi('steel_large_plate') },
-            { amount: 2, item: mi('advanced_motor') },
-            { amount: 1, item: mi('digital_circuit') },
-            { amount: 1, item: mi('electric_compressor') },
-            { amount: 1, item: mi('turbo_machine_hull') }
-        ],
-        [ { amount: 1, item: mt('bulk_compactor') } ]
-    );
-
-     // -- LARGE SCALE ASSEMBLER -- //
-    assembler(
-        event,
-        st('large_scale_assembler'),
-        8,
-        200,
-        [ 
-            { amount: 4, item: mi('tungstensteel_large_plate') },
-            { amount: 1, item: mi('advanced_motor') },
-            { amount: 1, item: mi('advanced_pump') },
-            { amount: 1, item: mi('processing_unit') },
-            { amount: 1, item: mi('assembler') },
-            { amount: 1, item: kj('borosilicate_glass') }
-        ],
-        [ { amount: 1, item: mt('large_scale_assembler') } ]
-    );
-
-     // -- INDUSTRIAL MIXING MACHINE -- //
-    assembler(
-        event,
-        st('industrial_mixing_machine'),
-        8,
-        200,
-        [ 
-            { amount: 4, item: mi('enderium_plate') },
-            { amount: 1, item: mi('large_advanced_pump') },
-            { amount: 1, item: mi('titanium_tank') },
-            { amount: 2, item: kj('borosilicate_glass') },
-            { amount: 1, item: mi('electric_mixer') }
-        ],
-        [ { amount: 1, item: mt('industrial_mixing_machine') } ]
-    );
-
-     // -- BLAST ALLOY SMELTER -- //
-    assembler(
-        event,
-        st('blast_alloy_smelter'),
-        8,
-        200,
-        [ 
-            { amount: 4, item: mi('cupronickel_wire_magnetic') },
-            { amount: 1, item: mi('tungstensteel_coil') },
-            { amount: 1, item: mi('processing_unit') },
-            { amount: 1, item: ei('electric_alloy_smelter') },
-            { amount: 2, item: 'xtonesreworked:korp_block_9' }
-        ],
-        [ { amount: 1, item: mt('blast_alloy_smelter') } ]
-    );
-
-     // -- OVERSIZED ELECTROLYSIS CHAMBER -- //
-    assembler(
-        event,
-        st('oversized_electrolysis_chamber'),
-        8,
-        200,
-        [ 
-            { amount: 2, item: mi('tungstensteel_large_plate') },
-            { amount: 1, item: mi('large_advanced_motor') },
-            { amount: 1, item: mi('large_advanced_pump') },
-            { amount: 1, item: mi('electrolyzer') },
-            { amount: 2, item: kj('borosilicate_glass') },
-            { amount: 2, item: 'factory_blocks:circuit' }
-        ],
-        [ { amount: 1, item: mt('oversized_electrolysis_chamber') } ]
-    );
-
-     // -- GRAND MASS CENTRIFUGE -- //
-    assembler(
-        event,
-        st('grand_mass_centrifuge'),
-        8,
-        200,
-        [ 
-            { amount: 2, item: mi('tungstensteel_cable') },
-            { amount: 4, item: mi('large_advanced_motor') },
-            { amount: 1, item: mi('large_advanced_pump') },
-            { amount: 1, item: mi('centrifuge') },
-            { amount: 1, item: mi('processing_unit') }
-        ],
-        [ { amount: 1, item: mt('grand_mass_centrifuge') } ]
     );
 
     // -- MEGA SMELTER -- //
@@ -1352,24 +1206,6 @@ ServerEvents.recipes(event => {
         [ { amount: 16, item: mc('iron_bars') } ]
     );
 
-    // -- MACHINE CHAINER -- //
-    assembler(
-        event,
-        st('machine_chainer'),
-        8,
-        200,
-        [ 
-            { amount: 1, item: mi('advanced_machine_hull') },
-            { amount: 4, item: mi('large_motor') },
-            { amount: 4, item: mi('large_pump') },
-            { amount: 64, tag: 'modern_industrialization:item_pipes' },
-            { amount: 64, tag: 'modern_industrialization:fluid_pipes' },
-            { amount: 64, item: mi('electrum_cable') }
-        ],
-        [ { amount: 1, item: ei('machine_chainer') } ],
-        [ { amount: 50, fluid: mi('polyethylene') } ]
-    );
-
     // -- LARGE STEAM TURBINE -- //
     assembler(
         event,
@@ -1674,22 +1510,6 @@ ServerEvents.recipes(event => {
         ],
         [ { amount: 1, item: cr('electron_tube') } ],
     );  
-
-    // -- TESLA RECEIVERS FROM ENERGY INPUT HATCH
-    const TIER_NAMES = ['lv', 'mv', 'hv', 'ev', 'superconductor'];
-    TIER_NAMES.forEach(tierName => {
-        assembler(
-            event,
-            st(`${tierName}_tesla_receiver_hatch_from_${tierName}_energy_input_hatch`),
-            8,
-            200,
-            [
-                { amount: 1, item: ei('tesla_receiver') },
-                { amount: 1, item: mi(`${tierName}_energy_input_hatch`) }  
-            ],
-            [ { amount: 1, item: ei(`${tierName}_tesla_receiver_hatch`) } ]
-        );
-    });
     
     //---------------------//
     // -- XTONES COMPAT -- //

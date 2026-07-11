@@ -6,6 +6,7 @@
 ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:extended_industrialization/${id}`;
+    let sta = (id) => `statech:assembler/extended_industrialization/${id}`;
 
     // -- EXTENDED INDUSTRIALIZATION REMOVED RECIPES -- //
     const EI_DELETED_ITEMS = [
@@ -25,7 +26,8 @@ ServerEvents.recipes(event => {
         ei('tool/craft/steam_chainsaw'),
         ei('tool/craft/tesla_handheld_receiver'),
         ei('machines/large_steam_macerator/craft'),
-        ei('machines/large_steam_macerator/assembler')
+        ei('machines/large_steam_macerator/assembler'),
+        ei('tool/assembler/tesla_handheld_receiver')
     ];
     EI_DELETED_ITEMS.forEach(id => event.remove( {id: id} ));
 
@@ -147,7 +149,7 @@ ServerEvents.recipes(event => {
     // -- PROCESSING ARRAY -- //
     assembler(
         event,
-        st('assembler_processing_array'),
+        sta('processing_array'),
         8,
         200,
         [
@@ -162,7 +164,7 @@ ServerEvents.recipes(event => {
      // -- LARGE ELECTRIC FURNACE -- //
     assembler(
         event,
-        st('assembler_large_electric_furnace'),
+        sta('large_electric_furnace'),
         8,
         200,
         [
@@ -177,7 +179,7 @@ ServerEvents.recipes(event => {
      // -- ELECTRIC BENDING MACHINE -- //
     assembler(
         event,
-        st('assembler_electric_bending_machine'),
+        sta('electric_bending_machine'),
         8,
         200,
         [
@@ -189,6 +191,70 @@ ServerEvents.recipes(event => {
         ],
         [ { amount: 1, item: ei('electric_bending_machine') } ]
     );
+    
+    // -- ALLOY SMELTER -- //
+    assembler(
+        event,
+        sta('alloy_smelter'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('analog_circuit') },
+            { amount: 2, item: mi('inductor') },
+            { amount: 2, item: mi('cupronickel_wire_magnetic') },
+            { amount: 2, item: mi('tin_cable') },
+            { amount: 1, item: mi('electric_furnace') }
+        ],
+        [ { amount: 1, item: ei('electric_alloy_smelter') } ]
+    );
+
+    // -- LARGE STEAM MACERATOR -- //
+    assembler(
+        event,
+        sta('large_steam_macerator'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('bronze_macerator') },
+            { amount: 2, item: mi('bronze_plated_bricks') },
+            { amount: 4, item: mi('bronze_curved_plate') },
+            { amount: 1, item: mi('steel_machine_casing') }
+        ],
+        [ { amount: 1, item: ei('large_steam_macerator') } ]
+    );
+
+    // -- MACHINE CHAINER -- //
+    assembler(
+        event,
+        sta('machine_chainer'),
+        8,
+        200,
+        [ 
+            { amount: 1, item: mi('advanced_machine_hull') },
+            { amount: 4, item: mi('large_motor') },
+            { amount: 4, item: mi('large_pump') },
+            { amount: 64, tag: 'modern_industrialization:item_pipes' },
+            { amount: 64, tag: 'modern_industrialization:fluid_pipes' },
+            { amount: 64, item: mi('electrum_cable') }
+        ],
+        [ { amount: 1, item: ei('machine_chainer') } ],
+        [ { amount: 50, fluid: mi('polyethylene') } ]
+    );
+
+    // -- TESLA RECEIVERS FROM ENERGY INPUT HATCH -- //
+    TIER_NAMES.forEach(tierName => {
+        assembler(
+            event,
+            sta(`${tierName}_tesla_receiver_hatch_from_${tierName}_energy_input_hatch`),
+            8,
+            200,
+            [
+                { amount: 1, item: ei('tesla_receiver') },
+                { amount: 1, item: mi(`${tierName}_energy_input_hatch`) }  
+            ],
+            [ { amount: 1, item: ei(`${tierName}_tesla_receiver_hatch`) } ]
+        );
+    });
 
 });
 

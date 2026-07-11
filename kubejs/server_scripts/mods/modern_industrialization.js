@@ -270,21 +270,6 @@ ServerEvents.recipes(event => {
         B: '#c:storage_blocks/iron'
     }).id(mi('forge_hammer'));
 
-    // -- ALLOY SMELTER -- //
-    event.shaped(ei('electric_alloy_smelter'), [
-        'MAM',
-        'IFI',
-        'TAT'
-    ],
-    {
-        M: mi('cupronickel_wire_magnetic'),
-        A: mi('analog_circuit'),
-        I: mi('inductor'),
-        T: mi('tin_cable'),
-        F: mi('electric_furnace')
-    })
-    .id(st('electric_alloy_smelter'));
-
     // -- ROCKET PART ASSEMBLER -- //
     event.shaped(mi('rocket_part_assembler'), [
         'RMR',
