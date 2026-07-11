@@ -106,6 +106,30 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         ea('infinity_cobblestone_cell'),
     ]
     UNUSED_EA.forEach(id => event.remove(id));
+
+    const UNUSED_FUNCTIONNAL_STORAGE = [
+        fs('armory_cabinet'),
+        fs('fluid_1'),
+        fs('fluid_2'),
+        fs('fluid_4'),
+        fs('framed_fluid_1'),
+        fs('framed_fluid_2'),
+        fs('framed_fluid_4'),
+        fs('compacting_drawer'),
+        fs('compacting_framed_drawer'),
+        fs('simple_compacting_drawer'),
+        fs('framed_simple_compacting_drawer')
+    ]
+    UNUSED_FUNCTIONNAL_STORAGE.forEach(id => event.remove(id));
+
+    const UNUSED_MORE_FUNCTIONNAL_STORAGE = [
+        mfs('placer_upgrade'),
+        mfs('breaker_upgrade'),
+        mfs('refill_upgrade'),
+        mfs('dimensional_refill_upgrade'),
+        mfs('speed_upgrade_augment')
+    ]
+    UNUSED_MORE_FUNCTIONNAL_STORAGE.forEach(id => event.remove(id));
 });
 
 RecipeViewerEvents.removeEntriesCompletely('fluid', event => {
