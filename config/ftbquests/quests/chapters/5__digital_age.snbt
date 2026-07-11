@@ -241,8 +241,8 @@
 					type: "item"
 				}
 			]
-			x: 5.25d
-			y: -1.75d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["38D1B360B947EB90"]
@@ -348,8 +348,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 2.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["51490042671E700C"]
@@ -2921,8 +2921,8 @@
 					type: "item"
 				}
 			]
-			x: 5.25d
-			y: -0.25d
+			x: -4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["51490042671E700C"]
@@ -2937,8 +2937,8 @@
 				id: "7B2DB2338E8379DF"
 				type: "checkmark"
 			}]
-			x: 4.0d
-			y: -1.0d
+			x: -2.5d
+			y: 2.25d
 		}
 		{
 			dependencies: ["4249FD1A79996FBB"]
@@ -3046,6 +3046,7 @@
 					type: "loot"
 				}
 			]
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
 				id: "0F5D0CFD81B4DF52"
@@ -3053,7 +3054,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 4.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["34FA4CD2E900F5F2"]
@@ -3082,6 +3083,7 @@
 					type: "loot"
 				}
 			]
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "65DE747F38B66A04"
@@ -3095,7 +3097,7 @@
 				}
 			]
 			x: -3.0d
-			y: 6.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["34FA4CD2E900F5F2"]
@@ -3124,6 +3126,7 @@
 					type: "loot"
 				}
 			]
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "4D52A615D0BF775B"
@@ -3137,7 +3140,323 @@
 				}
 			]
 			x: -4.5d
-			y: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["187E3148FF00C4AE"]
+			icon: {
+				id: "mi_tweaks:high_capacity_packer"
+			}
+			id: "22FD56F3802E6379"
+			rewards: [
+				{
+					id: "6BF9AA8DB4CA78C3"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "52C8B1647A3AC88C"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08CBB7212ABF8C0F"
+					table_id: 5923260596511522936L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "09AE3C0CF7F21501"
+					item: { count: 1, id: "mi_tweaks:high_capacity_packer" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "60D0C5314B1C5B46"
+					item: { count: 1, id: "xtonesreworked:tank_block_0" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "5C4C15F98DB8179C"
+					item: { count: 1, id: "kubejs:borosilicate_glass" }
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "54626AB4A779E49F"
+					item: { count: 1, id: "iden_decor:iron_sheet_metal" }
+					type: "item"
+				}
+				{
+					id: "4300452980527E46"
+					item: { count: 1, id: "iden_decor:medium_box" }
+					type: "item"
+				}
+				{
+					id: "7BA8AE5FB7D8AC6E"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "70389E4EEDC0404A"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "304129E6AEC154C9"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["187E3148FF00C4AE"]
+			icon: {
+				id: "mi_tweaks:high_capacity_unpacker"
+			}
+			id: "26B1EB74BF49A341"
+			rewards: [
+				{
+					id: "062B9DB10CF3FE1A"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "3549DE47D0A5C5EE"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "513A66EE619A282E"
+					table_id: 5923260596511522936L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7064A1C831C0F3B3"
+					item: { count: 1, id: "mi_tweaks:high_capacity_unpacker" }
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "1591D094EA286D21"
+					item: { count: 1, id: "iden_decor:iron_sheet_metal" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3DBF3EFBF0CB72B3"
+					item: { count: 1, id: "xtonesreworked:tank_block_0" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "354FC2118A77A961"
+					item: { count: 1, id: "kubejs:borosilicate_glass" }
+					type: "item"
+				}
+				{
+					id: "3D96BB908E7FAE92"
+					item: { count: 1, id: "iden_decor:medium_box" }
+					type: "item"
+				}
+				{
+					id: "61A8538EA6EDEB76"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "331BA20CF8D60C72"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "4BB2C2DE694002E5"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["187E3148FF00C4AE"]
+			icon: {
+				id: "mi_tweaks:large_polarization_machine"
+			}
+			id: "2B2D9A8D9BCB18FE"
+			rewards: [
+				{
+					id: "089D03147FB01864"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "6A59CAC7D50183B7"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "653D5ACA7BD92F4F"
+					table_id: 5923260596511522936L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7483E4509DCA26B7"
+					item: { count: 1, id: "mi_tweaks:large_polarization_machine" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "2FE6E069325D443A"
+					item: { count: 1, id: "modern_industrialization:cupronickel_coil" }
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "299BAC06287AA129"
+					item: { count: 1, id: "xtonesreworked:vena_block_3" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6FDEF51D44BFC3CA"
+					item: { count: 1, id: "xtonesreworked:vena_block_4" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1643F42F8E413795"
+					item: { count: 1, id: "xtonesreworked:vena_block_6" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "16790B016B0692C7"
+					item: { count: 1, id: "iden_decor:iron_sheet_metal" }
+					type: "item"
+				}
+				{
+					id: "7F2650857801772C"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "0AC49015EF506147"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "7C63C3425202B108"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["1A4CF8FC20475A01"]
+			icon: {
+				id: "mi_tweaks:arrayed_wiremill"
+			}
+			id: "5E42E8487A626F62"
+			rewards: [
+				{
+					id: "004A3D6DB80F0DE1"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "6857B45FCFC0F341"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E77A5CD1B5B5944"
+					table_id: 5762803210059023537L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6447DBA0F50A1EE3"
+					item: { count: 1, id: "mi_tweaks:arrayed_wiremill" }
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "75BF1C0A51D03491"
+					item: { count: 1, id: "modern_industrialization:clean_stainless_steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "4AA1517CC195587D"
+					item: { count: 1, id: "modern_industrialization:stainless_steel_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "020462815FC981E5"
+					item: { count: 1, id: "kubejs:borosilicate_glass" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "324AA471A38F11DF"
+					item: { count: 1, id: "factory_blocks:gears" }
+					type: "item"
+				}
+				{
+					id: "4BFE4D105EC3C936"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "2A155D202633F4C3"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "6736419AE80306D5"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: -2.5d
 		}
 	]
 }
