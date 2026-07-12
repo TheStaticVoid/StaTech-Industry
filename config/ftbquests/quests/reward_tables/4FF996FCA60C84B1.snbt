@@ -1,0 +1,477 @@
+{
+	id: "4FF996FCA60C84B1"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{
+			count: 32
+			id: "6C254FA62279E063"
+			item: {
+				count: 1
+				id: "modern_industrialization:stainless_steel_ingot"
+			}
+		}
+		{
+			count: 8
+			id: "7A4D0FC794499F75"
+			item: {
+				count: 1
+				id: "modern_industrialization:clean_stainless_steel_machine_casing"
+			}
+		}
+		{
+			count: 16
+			id: "5E1FD5CE2342F0B7"
+			item: {
+				count: 1
+				id: "modern_industrialization:stainless_steel_rotor"
+			}
+		}
+		{
+			count: 16
+			id: "612B7D70F04BC245"
+			item: {
+				count: 1
+				id: "modern_industrialization:stainless_steel_gear"
+			}
+		}
+		{
+			count: 4
+			id: "156B6D1F9B04F8BD"
+			item: {
+				count: 1
+				id: "modern_industrialization:stainless_steel_tank"
+			}
+		}
+		{
+			count: 4
+			id: "564622BF3D3D9357"
+			item: {
+				count: 1
+				id: "modern_industrialization:stainless_steel_barrel"
+			}
+		}
+		{
+			count: 64
+			id: "717457FC28FC465B"
+			item: {
+				count: 1
+				id: "modern_industrialization:monazite_ore"
+			}
+		}
+		{
+			count: 6
+			id: "2ACAC65E3995D870"
+			item: {
+				count: 1
+				id: "modern_industrialization:digital_circuit"
+			}
+		}
+		{
+			count: 6
+			id: "4D97E4FD12EB111F"
+			item: {
+				count: 1
+				id: "modern_industrialization:turbo_machine_hull"
+			}
+		}
+		{
+			count: 12
+			id: "4E9670B257398C8A"
+			item: {
+				count: 1
+				id: "modern_industrialization:advanced_machine_hull"
+			}
+		}
+		{
+			count: 18
+			id: "73D00D5685AA34A6"
+			item: {
+				count: 1
+				id: "modern_industrialization:basic_machine_hull"
+			}
+		}
+		{
+			count: 24
+			id: "1E519B2DE90FB1AD"
+			item: {
+				count: 1
+				id: "modern_industrialization:titanium_ingot"
+			}
+		}
+		{
+			count: 48
+			id: "04082DA0883A8D24"
+			item: {
+				count: 1
+				id: "modern_industrialization:annealed_copper_ingot"
+			}
+		}
+		{
+			count: 48
+			id: "127FFEAF28823520"
+			item: {
+				count: 1
+				id: "modern_industrialization:kanthal_ingot"
+			}
+		}
+		{
+			count: 16
+			id: "2503B1F35AF40621"
+			item: {
+				count: 1
+				id: "modern_industrialization:kanthal_coil"
+			}
+		}
+		{
+			count: 48
+			id: "7F22985A511B0A9A"
+			item: {
+				count: 1
+				id: "modern_industrialization:annealed_copper_cable"
+			}
+		}
+		{
+			count: 64
+			id: "143E32C948E25FAA"
+			item: {
+				count: 1
+				id: "modern_industrialization:aluminum_cable"
+			}
+		}
+		{
+			count: 12
+			id: "37B058E82ABE7D94"
+			item: {
+				count: 1
+				id: "modern_industrialization:aluminum_block"
+			}
+		}
+		{
+			count: 8
+			id: "33CEB9E136C28133"
+			item: {
+				count: 1
+				id: "modern_industrialization:digital_circuit_board"
+			}
+		}
+		{
+			auto: "enabled"
+			count: 2
+			id: "32DEB0198BC91351"
+			item: {
+				count: 1
+				id: "modern_industrialization:hv_steam_turbine"
+			}
+		}
+		{
+			count: 2
+			id: "418A77B12DCF444B"
+			item: {
+				count: 1
+				id: "modern_industrialization:hv_diesel_generator"
+			}
+		}
+		{
+			count: 2
+			id: "40906EF3FA537309"
+			item: {
+				count: 1
+				id: "extended_industrialization:hv_solar_panel"
+			}
+		}
+		{
+			count: 6
+			id: "082BDED8C940B9A4"
+			item: {
+				count: 1
+				id: "extended_industrialization:hv_photovoltaic_cell"
+			}
+		}
+		{
+			count: 24
+			id: "5C03BB6B7F0D1AB3"
+			item: {
+				count: 1
+				id: "modern_industrialization:electronic_circuit"
+			}
+		}
+		{
+			count: 16
+			id: "043210980BD4338A"
+			item: {
+				count: 1
+				id: "modern_industrialization:and_gate"
+			}
+		}
+		{
+			count: 16
+			id: "46D9E99D806110A6"
+			item: {
+				count: 1
+				id: "modern_industrialization:or_gate"
+			}
+		}
+		{
+			count: 32
+			id: "6DE9CE26EF0E5D9F"
+			item: {
+				count: 1
+				id: "modern_industrialization:not_gate"
+			}
+		}
+		{
+			count: 8
+			id: "595FE862C005A3F6"
+			item: {
+				count: 1
+				id: "modern_industrialization:platinum_ingot"
+			}
+		}
+		{ id: "5C2FC67D4C50DAE2", item: { components: { "modern_industrialization:fluid_storage": { amount: 4000L, resource: { id: "modern_industrialization:polyethylene" } } }, count: 1, id: "modern_industrialization:bronze_tank" } }
+		{ id: "054D6E4A7C5FF380", item: { components: { "modern_industrialization:fluid_storage": { amount: 4000L, resource: { id: "modern_industrialization:polytetrafluoroethylene" } } }, count: 1, id: "modern_industrialization:bronze_tank" } }
+		{ id: "241CD905DC4FA549", item: { components: { "modern_industrialization:fluid_storage": { amount: 4000L, resource: { id: "modern_industrialization:polyvinyl_chloride" } } }, count: 1, id: "modern_industrialization:bronze_tank" } }
+		{
+			count: 16
+			id: "0033ED449D242141"
+			item: {
+				count: 1
+				id: "functionalstorage:gold_upgrade"
+			}
+		}
+		{
+			count: 8
+			id: "7DAF1F931433C2C3"
+			item: {
+				count: 1
+				id: "functionalstorage:diamond_upgrade"
+			}
+		}
+		{
+			count: 12
+			id: "1A1CD4DE65E8ED74"
+			item: {
+				count: 1
+				id: "modern_industrialization:turbo_upgrade"
+			}
+		}
+		{
+			count: 64
+			id: "6F5D27D64BC2630D"
+			item: {
+				count: 1
+				id: "modern_industrialization:advanced_upgrade"
+			}
+		}
+		{
+			count: 24
+			id: "456897AFA0BA01B0"
+			item: {
+				count: 1
+				id: "modern_industrialization:large_motor"
+			}
+		}
+		{
+			count: 16
+			id: "5C70190F2436A2E9"
+			item: {
+				count: 1
+				id: "modern_industrialization:large_pump"
+			}
+		}
+		{
+			count: 12
+			id: "41000FF0681BBB07"
+			item: {
+				count: 1
+				id: "modern_industrialization:advanced_motor"
+			}
+		}
+		{
+			count: 12
+			id: "36BED4A2FA43BFA1"
+			item: {
+				count: 1
+				id: "modern_industrialization:advanced_pump"
+			}
+		}
+		{
+			count: 4
+			id: "426876393C4EB6CC"
+			item: {
+				count: 1
+				id: "modern_industrialization:chemical_reactor"
+			}
+		}
+		{
+			count: 3
+			id: "26AA401C68DCA217"
+			item: {
+				count: 1
+				id: "modern_industrialization:centrifuge"
+			}
+		}
+		{
+			count: 4
+			id: "6B4F02C45431C5EB"
+			item: {
+				count: 1
+				id: "modern_industrialization:electrolyzer"
+			}
+		}
+		{
+			count: 16
+			id: "4C3B52E9E4D2B87A"
+			item: {
+				count: 1
+				id: "modern_industrialization:aluminum_block"
+			}
+		}
+		{
+			count: 16
+			id: "1B943CE55D89C7E8"
+			item: {
+				count: 1
+				id: "modern_industrialization:frostproof_machine_casing"
+			}
+		}
+		{
+			count: 6
+			id: "7E639B7945E98340"
+			item: {
+				count: 1
+				id: "modern_industrialization:turbo_item_input_hatch"
+			}
+		}
+		{
+			count: 6
+			id: "413A506AB21DDD73"
+			item: {
+				count: 1
+				id: "modern_industrialization:turbo_fluid_input_hatch"
+			}
+		}
+		{
+			count: 8
+			id: "492F843086311622"
+			item: {
+				count: 1
+				id: "modern_industrialization:solid_titanium_machine_casing"
+			}
+		}
+		{
+			count: 2
+			id: "62F9788AF442B09C"
+			item: {
+				count: 1
+				id: "modern_industrialization:titanium_tank"
+			}
+		}
+		{
+			count: 2
+			id: "2A6F9602E455D141"
+			item: {
+				count: 1
+				id: "modern_industrialization:titanium_barrel"
+			}
+		}
+		{
+			count: 2
+			id: "4466BC0B5C15CF78"
+			item: {
+				count: 1
+				id: "modern_industrialization:monocrystalline_silicon"
+			}
+		}
+		{
+			count: 4
+			id: "651DE16997A9EA95"
+			item: {
+				count: 1
+				id: "modern_industrialization:enderium_block"
+			}
+		}
+		{
+			count: 3
+			id: "15156B19BCB72FD4"
+			item: {
+				count: 1
+				id: "modern_industrialization:electric_quarry"
+			}
+		}
+		{
+			count: 3
+			id: "1D54E6321A2F7065"
+			item: {
+				count: 1
+				id: "extended_industrialization:large_electric_macerator"
+			}
+		}
+		{
+			count: 4
+			id: "66C99879012CB25C"
+			item: {
+				count: 1
+				id: "modern_industrialization:arithmetic_logic_unit"
+			}
+		}
+		{
+			count: 4
+			id: "29EE91947EBE3F31"
+			item: {
+				count: 1
+				id: "modern_industrialization:memory_management_unit"
+			}
+		}
+		{
+			count: 8
+			id: "654C02CDDC3C0650"
+			item: {
+				count: 1
+				id: "modern_industrialization:random_access_memory"
+			}
+		}
+		{ id: "245EA124B839E815", item: { count: 1, id: "modern_industrialization:styrene_butadiene_rubber_bucket" } }
+		{
+			count: 2
+			id: "6FAE1BB7DD3A4F73"
+			item: {
+				count: 1
+				id: "modern_industrialization:processing_unit_board"
+			}
+		}
+		{
+			count: 32
+			id: "3C36D598190F6301"
+			item: {
+				count: 1
+				id: "kubejs:basic_space_probe"
+			}
+		}
+		{
+			count: 8
+			id: "6F2889A0C8105A02"
+			item: {
+				count: 1
+				id: "kubejs:advanced_space_probe"
+			}
+		}
+		{
+			count: 16
+			id: "5B4E7602214B1404"
+			item: {
+				count: 1
+				id: "modern_industrialization:stainless_steel_drill"
+			}
+		}
+		{
+			count: 24
+			id: "3F3CB0C97A5CA374"
+			item: {
+				count: 1
+				id: "kubejs:borosilicate_glass"
+			}
+		}
+	]
+	use_title: true
+}

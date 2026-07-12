@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "conditions": [
+                {
+                    "condition": "minecraft:survives_explosion"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "mi_tweaks:large_chemical_reactor"
+                }
+            ],
+            "rolls": 1.0
+        }
+    ],
+    "random_sequence": "mi_tweaks:blocks/large_chemical_reactor"
+}

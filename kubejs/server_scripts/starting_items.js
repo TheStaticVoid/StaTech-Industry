@@ -3,9 +3,9 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-PlayerEvents.loggedIn(e => {
-    if (!e.player.stages.has('starting_items')) {
-        e.player.give(Item.of('ftbquests:book'));
-        e.player.stages.add('starting_items');
+PlayerEvents.loggedIn(event => {
+    if (!event.player.stages.has('starting_items')) {
+        event.player.give(Item.of('ftbquests:book'));
+        event.player.stages.add('starting_items');
     }
 })

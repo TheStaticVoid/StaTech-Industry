@@ -1,36 +1,125 @@
-# StaTech Industry 1.1.15 Changelog:
-This is a follow up patch to the previous one that addresses some issues found with the patch as well as some QoL updates. If you're using an existing instance, you will have to enable the emissive texture packs manually. New installs should have them enabled by default.
+# StaTech Industry 2.0 0.3.0 Beta Changelog:
+We're getting close to full version release! This beta release is the last major content update before the full release version of the pack. More batching machines have been added and a lot of polish and QoL has been worked on since the last beta.
 
-I've tacked on a rather large change to this patch with downtiering the requirements for AE2 from MV and HV to LV and MV. This means as soon as you have electric machines, you can start using AE2 to automate item transfer rather than relying on Tom's Simple Storage Mod. Autocrafting is still gated to MV just because it should be separate to avoid players falling into the pitfalls of autocrafting early.
+As always, please make sure to file all issues on GitHub. Feedback is also most welcome, though the Discord server is the best place for that.
 
 ## Mods added:
-- [AOF: Emissive Ores](https://www.curseforge.com/minecraft/texture-packs/all-of-fabric-emissive-ores) - Emissive ore resource pack by PurpleDino
-- [cAn i MiNe thIS bLOCk?](https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block) - WTHIT addon
-- [Emissive TXF](https://www.curseforge.com/minecraft/texture-packs/emissive-txf) - Emissive ore resource pack for vanilla ores
-- [Iris & Oculus Flywheel Compat](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat) - Removed for being broken awhile back, should be good now
-- [WTHIT](https://www.curseforge.com/minecraft/mc-mods/wthit) - Replaces Jade
+- [Acedium Sodiumized](https://www.curseforge.com/minecraft/mc-mods/acedium-sodiumized) - Replaces the Sodium renderer with one optimized for NVidia GPUs if being run on one
+- [Chloride](https://www.curseforge.com/minecraft/mc-mods/chloride) - Sodium addon that allows more configurability
+- [Create Crafts & Additions](https://www.curseforge.com/minecraft/mc-mods/createaddition) - Add electric utilities and QoL items to the Create mod
+- [Create Deco](https://www.curseforge.com/minecraft/mc-mods/create-deco) - More Create-centric decorative blocks to spice up your factory!
+- [KubeJS Curios](https://www.curseforge.com/minecraft/mc-mods/kubejs-curios) - Add Curios with KubeJS, used to make a better Angel ring and add the Fireproof ring
+- [Lithium](https://www.curseforge.com/minecraft/mc-mods/lithium) - Server-side performance optimizations
+- [Reese's Sodium Options](https://www.curseforge.com/minecraft/mc-mods/reeses-sodium-options) - Better Sodium options menu
+- [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium) - Client-side rendering engine optimizations
+
+
 
 ## Mods removed:
-- [Jade](https://www.curseforge.com/minecraft/mc-mods/jade) - Reverting back to WTHIT. This mod did not support viewing content of MI fluid pipes or energy cables
-- [Jade: Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons-fabric)
+- [Angel Ring](https://www.curseforge.com/minecraft/mc-mods/angel-ring) - Removed due to using NeoForge data attributes and KubeJS Curios to make a better custom Angel Ring
+- [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium) - Replaced with Sodium for better render compatibility + maintainability
+- [Flight API](https://www.curseforge.com/minecraft/mc-mods/flight-api) - Angel Ring dependency
+- [HaydenAPI](https://www.curseforge.com/minecraft/mc-mods/haydenapi) - Angel Ring dependency
+- [Monocle](https://www.curseforge.com/minecraft/mc-mods/monocle) - Obsoleted Embeddium-Iris compatibility layer
+- [Nolijium](https://www.curseforge.com/minecraft/mc-mods/nolijium) - Replaced with Chloride due to the Sodium switch
 
 ## Mods updated:
-- Fabric loader version 0.16.9 -> 0.16.10
-- [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next) - 1.10.11 -> 1.10.12
-- [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) - 1.1.18 -> 1.1.18a
-
-## Mods downgraded:
-- [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) - 9.2.784 -> 9.1.695 - Fixes crash with looking at cutting board recipes
+- NeoForge loader version 21.1.133 -> 21.1.135
+- [AllTheLeaks](https://www.curseforge.com/minecraft/mc-mods/alltheleaks) - 1.1.9+1.21.1 -> 1.1.10+1.21.1
+- [Balm](https://www.curseforge.com/projects/531761) - 21.0.56 -> 21.0.62
+- [Biolith](https://www.curseforge.com/projects/852512) - 3.0.11 -> 3.0.12
+- [Certain Questing Additions](https://www.curseforge.com/projects/1372051) - 1.1.7 -> 1.2.0.3
+- [Chat Heads](https://www.curseforge.com/projects/407206) - 0.15.1 -> 0.15.2
+- [Chisel Reborn](https://www.curseforge.com/projects/551763) - 2.0.0+mc1.21.1 -> 2.0.1+mc1.21.1
+- [Client Tweaks](https://www.curseforge.com/projects/251407) - 21.1.11 -> 21.1.13
+- [Cognition](https://www.curseforge.com/minecraft/mc-mods/cognition-mod) - v2.4.12-1.21.1 -> v2.4.13-1.21.1
+- [Concurrent Chunk Management Engine](https://www.curseforge.com/projects/533097) - 0.3.0+alpha.0.93+1.21.1 -> 0.4.0-alpha.0.113+1.21.1
+- [Construction Sticks](https://www.curseforge.com/projects/1156098) - 1.3.0 -> 1.4.1
+- [Cooking for Blockheads](https://www.curseforge.com/minecraft/mc-mods/cooking-for-blockheads) - 1.21.1-21.1.23 -> 1.21.1-21.1.24
+- [Cupboard mod](https://www.curseforge.com/projects/326652) - 3.7 -> 3.8
+- [Default Options](https://www.curseforge.com/projects/232131) - 21.1.6 -> 21.1.7
+- [EMI Ores](https://www.curseforge.com/projects/974009) - 1.2+1.21.1+neoforge -> 1.3+1.21.1+neoforge
+- [EntityCulling](https://www.curseforge.com/projects/448233) - 1.10.2 -> 1.10.5
+- [Extended Industrialization](https://www.curseforge.com/projects/1068418) - 1.15.39-1.21.1 -> 1.15.45-1.21.1
+- [ExtendedAE](https://www.curseforge.com/projects/892005) - 1.21-2.2.32-neoforge -> 1.21-2.2.33-neoforge
+- [FTB Chunks](https://www.curseforge.com/projects/314906) - 2101.1.17 -> 2101.1.20
+- [FTB Quests](https://www.curseforge.com/projects/289412) - 2101.1.26 -> 2101.1.27
+- [FTB Ultimine](https://www.curseforge.com/projects/386134) - 2101.1.14 -> 2101.1.15
+- [FancyMenu](https://www.curseforge.com/projects/367706) - 3.9.1 -> 3.9.6
+- [FramedBlocks](https://www.curseforge.com/projects/441647) - 10.6.0 -> 10.6.1
+- [Fusion](https://www.curseforge.com/projects/854949) - 1.2.12 -> 1.3.5
+- [GeckoLib 4](https://www.curseforge.com/projects/388172) - 4.8.4 -> 4.9.2
+- [ImmediatelyFast](https://www.curseforge.com/projects/686911) - 1.6.10+1.21.1 -> 1.6.11+1.21.1
+- [Industrialization Overdrive](https://www.curseforge.com/minecraft/mc-mods/industrialization-overdrive) - 1.11.2+1.21.1 -> 1.12.1+1.21.1
+- [Inventory Essentials](https://www.curseforge.com/projects/368825) - 21.1.15 -> 21.1.17
+- [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders) - 1.8.12+mc1.21.1 -> 1.8.14-beta.1+mc1.21.1
+- [Kotlin for Forge](https://www.curseforge.com/projects/351264) - 7471280 -> 8335665
+- [LambDynamicLights](https://www.curseforge.com/projects/393442) - 4.8.8+1.21.1 -> 4.8.10+1.21.1
+- [Lithostitched](https://www.curseforge.com/projects/936015) - 1.7.9 -> 1.7.13
+- [Little Big Redstone](https://www.curseforge.com/projects/1180560) - 1.9.0-1.21.1 -> 1.9.4-1.21.1
+- [Lootr](https://www.curseforge.com/projects/361276) - 1.21.1-1.11.37.120 -> 1.21.1-1.11.37.121
+- [ME Requester](https://www.curseforge.com/projects/688367) - 1.21.1-1.4.2 -> 1.21.1-1.4.3
+- [MI Tweaks](https://www.curseforge.com/projects/1068413) - 1.9.1-1.21.1 -> 1.9.2-1.21.1
+- [Mixed Litter](https://www.curseforge.com/projects/1221222) - 1.2.1 -> 1.2.2
+- [Modern Industrialization](https://www.curseforge.com/projects/405388) - 2.4.3 -> 2.5.2
+- [ModernFix](https://www.curseforge.com/projects/790626) - 5.27.12+mc1.21.1 -> 5.27.15+mc1.21.1
+- [Moonlight Lib](https://www.curseforge.com/projects/499980) - 1.21.1-3.0.17 -> 1.21.1-3.1.0
+- [No Man's Land](https://www.curseforge.com/projects/538493) - 1.5.7 -> 1.5.12
+- [NotEnoughAnimations](https://www.curseforge.com/projects/433760) - 1.12.3 -> 1.12.4
+- [Phantom's Utilities](https://www.curseforge.com/minecraft/mc-mods/phantoms-utilities) - 0.3.1 -> 0.3.2
+- [Puzzles Lib](https://www.curseforge.com/projects/495476) - 21.1.51 -> 21.1.52
+- [Sophisticated Backpacks](https://www.curseforge.com/projects/422301) - 3.25.55 -> 3.25.69
+- [Sophisticated Core](https://www.curseforge.com/projects/618298) - 1.4.51 -> 1.4.70
+- [Sophisticated Item Actions](https://www.curseforge.com/projects/1419142) - 0.5.4 -> 0.5.8
+- [Sophisticated Storage](https://www.curseforge.com/projects/619320) - 1.5.57 -> 1.5.73
+- [Supplementaries](https://www.curseforge.com/projects/412082) - 1.21.1-3.6.7 -> 1.21.1-3.8.0
+- [Tesseract API](https://www.curseforge.com/projects/1067672) - 1.12.1-1.21.1 -> 1.12.7-1.21.1
+- [TooManyRecipeViewers](https://www.curseforge.com/projects/1194921) - 0.8.1+mc.21.1 -> 0.9.0+mc.21.1
+- [WaveyCapes](https://www.curseforge.com/projects/521594) - 1.9.2 -> 1.10.2
+- [Waystones](https://www.curseforge.com/projects/245755) - 21.1.34 -> 21.1.36
+- [Yet Another Industrialization!](https://www.curseforge.com/projects/1358516) - 1.5.0-1.21.1 -> 1.5.1-1.21.1
 
 ## Other changes:
-- Completionist cape list updates
-- [Revert REI cheat mode being enabled by default](https://github.com/TheStaticVoid/StaTech-Industry/commit/0eb5a6b9e6392157b5fe4c9fe7128c952fe76db1)
-- [Blacklisted spectrum colored logs from Supplementaries soap](https://github.com/TheStaticVoid/StaTech-Industry/commit/223f6bb2d92ea9538116e55a7a7726ef76f6fce3)
-- [Added new Spectrum saplings to the Industrial Greenhouse](https://github.com/TheStaticVoid/StaTech-Industry/commit/c035e0fe520c194383f06b8a01131580997e3648)
-- [Added macerator recipes for new Spectrum logs](https://github.com/TheStaticVoid/StaTech-Industry/commit/6511e59365d958d2c2ecbc74e6a25ab0bf795a26)
-- [Added macerator recipes for new Spectrum gem](https://github.com/TheStaticVoid/StaTech-Industry/commit/5170a66430d8ffcef9d36e187e511af20771b5ac)
-- [Added extra information for the moonstone unlock](https://github.com/TheStaticVoid/StaTech-Industry/pull/529/commits/532f5e9030643d723e681cb56b7ed526c2666ae2)
-- [Fixed double "Added by StaTech Industry" tooltips](https://github.com/TheStaticVoid/StaTech-Industry/pull/530) - by DmitryProskurin
-- [Added macerator recipes for new Spectrum bud blocks](https://github.com/TheStaticVoid/StaTech-Industry/pull/531) - by DmitryProskurin
-- [Downtier AE2 recipes and quests from MV&HV to LV&MV](https://github.com/TheStaticVoid/StaTech-Industry/pull/529/commits/67e684cbf60c15fc1b7732fd25f3d44476f01192)
-- [Remove incorrect information in the overclocking quest](https://github.com/TheStaticVoid/StaTech-Industry/pull/529/commits/198fdf2d0074c0d0291115a859aeb62f258c4df8)
+- [Rename PTFE fluid](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/pull/87/changes/9fda2b3fd13299f7994fbec1d34e5ef5a221a3b1)
+- [Add mob crusher model + dust tags](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/pull/87/changes/6ae968f2c0a9b5fbd3032fbaeb386d08343cf1b6)
+- [Add food tags to custom items](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/pull/87/changes/c31eaac06322fc2a2b65b9272ec2e237a2c6b138)
+- [Add silver loot drop](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/53580ea350868097dbbc749aa4fcf7b8d5641736)
+- [Add silver + steel Create pressing, adjust silver loot drop rates](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/f4ed032d1d43ea0044024c248c33fa1679afa9b9)
+- [Add flowers to photosynthetic chamber](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/49182a574846368f142c372ab66b60a3f3db05c5)
+- [Add Enderium + Gold cables](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/8e856562df4d3c908fe84a909bffd935a9464cda)
+- [Fix Glaxx tagging](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/3e8c759c1e5975f49ec5268e6da9d8cecde22015)
+- [Readd iron drawer downgrade](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/359d80eec5f13f52b0028b1f529a6f4ebb303f4e)
+- Fix [#truepurpledino:10](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/10)
+- Fix [#truepurpledino:26](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/26)
+- Fix [#truepurpledino:48](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/48)
+- Fix [#truepurpledino:50](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/50)
+- Fix [#truepurpledino:52](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/52) 
+- Fix [#truepurpledino:61](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/61) 
+- Fix [#truepurpledino:62](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/62) 
+- Fix [#truepurpledino:63](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/63) 
+- Fix [#truepurpledino:64](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/64) 
+- Fix [#truepurpledino:65](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/65) 
+- Fix [#truepurpledino:66](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/66) 
+- Fix [#truepurpledino:67](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/67) 
+- Fix [#truepurpledino:68](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/68) 
+- Fix [#truepurpledino:69](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/69) 
+- Fix [#truepurpledino:70](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/70) 
+- Fix [#truepurpledino:74](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/74)
+- Fix [#truepurpledino:76](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/76) 
+- Fix [#truepurpledino:77](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/77)
+- Fix [#truepurpledino:78](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/78)
+- Fix [#truepurpledino:79](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/79)
+- Fix [#truepurpledino:83](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/83)
+- Fix [#truepurpledino:85](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/85) 
+- Fix [#truepurpledino:86](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/86) 
+- Fix [#truepurpledino:88](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/88)
+- Fix [#552](https://github.com/TheStaticVoid/StaTech-Industry/issues/552)
+- Fix [#553](https://github.com/TheStaticVoid/StaTech-Industry/issues/553)
+- Fix [#557](https://github.com/TheStaticVoid/StaTech-Industry/issues/557)
+- Fix [#558](https://github.com/TheStaticVoid/StaTech-Industry/issues/558)
+- Fix [#560](https://github.com/TheStaticVoid/StaTech-Industry/issues/560)
+- Fix [#562](https://github.com/TheStaticVoid/StaTech-Industry/issues/562)
+- Fix [#563](https://github.com/TheStaticVoid/StaTech-Industry/issues/563)
+- Fix [#564](https://github.com/TheStaticVoid/StaTech-Industry/issues/564)
+- Fix [#566](https://github.com/TheStaticVoid/StaTech-Industry/issues/566)
+- Fix [#567](https://github.com/TheStaticVoid/StaTech-Industry/issues/567)

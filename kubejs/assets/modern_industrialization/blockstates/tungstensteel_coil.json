@@ -3,5 +3,15 @@
     "": {
       "model": "modern_industrialization:block/tungstensteel_coil"
     }
+      },
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "default": {
+      "center": "modern_industrialization:block/casings/tungstensteel_coil/ctm/3",
+      "empty": "modern_industrialization:block/casings/tungstensteel_coil/ctm/0",
+      "horizontal": "modern_industrialization:block/casings/tungstensteel_coil/ctm/2",
+      "particle": "modern_industrialization:block/casings/tungstensteel_coil/ctm/4",
+      "vertical": "modern_industrialization:block/casings/tungstensteel_coil/ctm/1"
+    }
   }
 }

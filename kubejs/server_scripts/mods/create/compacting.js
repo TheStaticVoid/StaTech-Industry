@@ -3,11 +3,9 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:create/compacting/${id}`;
-    let cr = (id) => `create:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let compacting = (id, item_inputs, item_outputs) => {
@@ -20,18 +18,6 @@ ServerEvents.recipes(e => {
         if (item_outputs)
             newRecipe['results'] = item_outputs;
 
-        e.custom(newRecipe).id(id);
+        event.custom(newRecipe).id(id);
     }
-
-    // -- FIRECLAY BRICKS -- // 
-    compacting(
-        st('fire_clay_bricks'),
-        [
-            { item: mi('fire_clay_brick') },
-            { item: mi('fire_clay_brick') },
-            { item: mi('fire_clay_brick') },
-            { item: mi('fire_clay_brick') }
-        ],
-        [ { item: mi('fire_clay_bricks') } ]
-    );
 });

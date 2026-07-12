@@ -1,16 +1,13 @@
-name = "StaTech Industry"
-author = "static"
-version = "1.1.15"
+name = "StaTech Industry 2.0"
+author = "Static Void, Purple Dino, & GronkDev"
+version = "0.3.0b"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "48f7e8e5b5e4f77b1c88bb5493bc86e4e4063fef18e826951bc267a40577c09c"
+hash = "2e9ca3fda7c092c24b4aaa1a7d794596ac61284b15cae5ab27d21e7e66f47d42"
 
 [versions]
-fabric = "0.16.10"
-minecraft = "1.19.2"
-
-[options]
-acceptable-game-versions = ["1.19.2"]
+minecraft = "1.21.1"
+neoforge = "21.1.235"

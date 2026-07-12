@@ -1,0 +1,1874 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7__nuclear_age"
+	group: "0C181DF09185DA57"
+	icon: {
+		id: "modern_industrialization:nuclear_reactor"
+	}
+	id: "5336FACFCB9D5E2E"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["18CE795EB630611E"]
+			id: "2F0042673C0E3910"
+			rewards: [{
+				id: "468CFEA898364B46"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "6D01601A4DCE21EB"
+				item: { count: 1, id: "modern_industrialization:highly_advanced_machine_hull" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			id: "64D20685E4A57EED"
+			rewards: [
+				{
+					count: 3
+					id: "3C194CCA6051094A"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "431EF58CCAE881EA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A46FF0097F32C37"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "5DF0D789E9C3FB8A"
+				item: { count: 1, id: "modern_industrialization:ev_storage_unit" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["36521C02297A6BBD"]
+			id: "56A30502A268BB60"
+			rewards: [
+				{
+					count: 3
+					id: "2CE325C226A34825"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "6E94F79CCC22B56A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1C1ADE4590C57B0A"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "2CA24201C3DF4C2F"
+				item: { count: 1, id: "modern_industrialization:mixed_plate_nuclear" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["56A30502A268BB60"]
+			id: "3308E0ADE29A5A9E"
+			rewards: [
+				{
+					count: 3
+					id: "5FCC61BFF9681055"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "26F9FEE06FFBF619"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0AC9C6BCAC7504CF"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "745479B476475225"
+				item: { count: 1, id: "modern_industrialization:nuclear_alloy_plate" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3308E0ADE29A5A9E"]
+			icon: {
+				id: "modern_industrialization:nuclear_reactor"
+			}
+			id: "0C73D9DE1468EBB1"
+			min_width: 300
+			rewards: [
+				{
+					count: 3
+					id: "75C6A3CE13B639E1"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "1D2D16DA4E2D1C16"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "71C06FEBE253E5B7"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					id: "2D54C4144E8F70F7"
+					item: { count: 1, id: "modern_industrialization:nuclear_reactor" }
+					type: "item"
+				}
+				{
+					count: 68L
+					id: "473DE1799305D6C6"
+					item: { count: 1, id: "modern_industrialization:nuclear_casing" }
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "4631402EDE7252CA"
+					item: { count: 1, id: "modern_industrialization:nuclear_alloy_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					id: "5CBCC1067D85457B"
+					item: { count: 1, id: "modern_industrialization:nuclear_fluid_hatch" }
+					type: "item"
+				}
+				{
+					id: "767D23D8D80B381B"
+					item: { count: 1, id: "modern_industrialization:nuclear_item_hatch" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0C73D9DE1468EBB1"]
+			id: "199D83C566FAF3F5"
+			min_width: 250
+			rewards: [
+				{
+					id: "1DBA033298431649"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "7FF181FFD787555F"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "491DF9EF198E39A7"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["649FE8A688C74216"]
+			id: "23D9328B5F627E65"
+			rewards: [
+				{
+					count: 5
+					id: "6E06D2258071371B"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "455B33FFC7098C31"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "27B42C64501B275A"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				id: "6D727A1E4A73A2FB"
+				item: { count: 1, id: "modern_industrialization:quantum_circuit" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			id: "518D1E231A932ECB"
+			rewards: [
+				{
+					count: 5
+					id: "5EA45A0076F629A1"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "48C55E37CBEBF8AF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6A7C683A6D05C782"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "75552059BFCFE513"
+				item: { count: 1, id: "modern_industrialization:tungstensteel_hot_ingot" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C73D9DE1468EBB1"]
+			id: "43D2E858079C12E0"
+			rewards: [
+				{
+					count: 3
+					id: "21090439A5FD7701"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "2BDC8D3AF9E1C861"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6DD5E91E5729F300"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "3290AA151AC4CF6E"
+				item: { count: 1, id: "modern_industrialization:tritium_bucket" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			id: "569821B175311340"
+			rewards: [
+				{
+					count: 3
+					id: "2ED5353D8DF59C60"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "212AA4371A1CF2AB"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0A38F09068934E3E"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "128AB64187BB43D3"
+				item: { count: 1, id: "modern_industrialization:superconductor_dust" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			id: "257CA8034EA7B1DB"
+			rewards: [
+				{
+					count: 3
+					id: "7FDB647B1D5BFBFA"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "52A066CBE9FBD1D3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3832EFDF2113EEC3"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "3C751FA87E6333B2"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:ev_wire)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["518D1E231A932ECB"]
+			id: "5856A6281F140AEF"
+			rewards: [
+				{
+					count: 5
+					id: "572B270A8C6099F2"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "2A1DB2D6D18CA226"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0ADE7AD7597F0DF1"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "3FDAC7A5AECD35FC"
+				item: { count: 1, id: "modern_industrialization:tungstensteel_ingot" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["229F2B56037A748B"]
+			icon: {
+				id: "modern_industrialization:quantum_space_probe_launcher"
+			}
+			id: "0F1DC239BBC3D60F"
+			rewards: [
+				{
+					count: 5
+					id: "41BA22171D623605"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "39A3B26A2A1D6842"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "05F876640896D68D"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "63CEF38E23A9D486"
+					item: { count: 1, id: "modern_industrialization:quantum_space_probe_launcher" }
+					type: "item"
+				}
+				{
+					count: 33L
+					id: "6919B941716B9C9D"
+					item: { count: 1, id: "modern_industrialization:calorite_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "34ABDF2CF49BA5BE"
+					item: { count: 1, id: "modern_industrialization:calorite_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "6707D9A6E8656A96"
+					item: { count: 1, id: "modern_industrialization:tungstensteel_coil" }
+					type: "item"
+				}
+				{
+					id: "3C60ABCB2979A2E5"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "6BBB10733818825E"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "20D5069180BE4AED"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"131D19CE92E22D58"
+				"4E4FF04917B2E624"
+			]
+			id: "4A580712AAD72CFF"
+			min_required_dependencies: 1
+			rewards: [
+				{
+					count: 3
+					id: "240BE295401285E0"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "1F7B39E74E3A8B20"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6C4FDA7B5F05BEDE"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "5BD01F861DCFAE2E"
+				item: { count: 1, id: "modern_industrialization:uranium_fuel_rod" }
+				type: "item"
+			}]
+			x: 14.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4A580712AAD72CFF"]
+			id: "494104440623C825"
+			rewards: [
+				{
+					count: 3
+					id: "6E3A29FAF3F16358"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "5EF2F6C481779191"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CB2963A95BF241C"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "722465730C1D7FD9"
+				item: { count: 1, id: "modern_industrialization:uranium_fuel_rod_depleted" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"43D2E858079C12E0"
+				"5A0295C9C976F0E0"
+				"229F2B56037A748B"
+			]
+			id: "649FE8A688C74216"
+			rewards: [
+				{
+					count: 5
+					id: "265D4844E811DCF4"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "7CD28D7302FDA72E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "342E01075483FE3B"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "312E64A9AEE91181"
+					item: { count: 1, id: "modern_industrialization:quantum_circuit_board" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4B292507EA63E071"
+					item: { count: 1, id: "modern_industrialization:qubit" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "39AFBFF28E7BCC78"
+					item: { count: 1, id: "modern_industrialization:cooling_cell" }
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A0295C9C976F0E0"]
+			id: "50D18ACF6401C05D"
+			rewards: [
+				{
+					count: 3
+					id: "3BB17AED937BF0BF"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "386707AB7FAD8059"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5828332F8F4CBD21"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				id: "4F3C9CBE4A6F3D01"
+				item: { count: 1, id: "modern_industrialization:nuke" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5856A6281F140AEF"]
+			id: "7BB996EF1FB18B1D"
+			rewards: [
+				{
+					count: 5
+					id: "1296BD4B2EC0235A"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "621A6190B871EE39"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B7199F63C90F4C7"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "196F266A5AE6EF00"
+				item: { count: 1, id: "modern_industrialization:tungstensteel_tank" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5856A6281F140AEF"]
+			id: "5AE17FE1577DF9E2"
+			rewards: [
+				{
+					count: 5
+					id: "25682CBD3E166589"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "16A6AFCE131AF235"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4F23B8003AEAB44E"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "33D65AB6F351D0EB"
+				item: { count: 1, id: "modern_industrialization:tungstensteel_barrel" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F1DC239BBC3D60F"]
+			id: "3DD9AFAD287F29C2"
+			rewards: [
+				{
+					count: 5
+					id: "2651599505536659"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "265973E166C28C1E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "58B2AF59BF3654C1"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "5A3421ACBA93EF2C"
+				item: { count: 1, id: "kubejs:space_probe" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["494104440623C825"]
+			id: "5A0295C9C976F0E0"
+			rewards: [
+				{
+					count: 3
+					id: "276B3D1F2CAE14C7"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "4BE88F84EB6C3183"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3611F2A21CA3E977"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "08B62B11A69374A6"
+				item: { count: 1, id: "modern_industrialization:plutonium_dust" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0C73D9DE1468EBB1"]
+			id: "131D19CE92E22D58"
+			rewards: [
+				{
+					count: 3
+					id: "302FAC6C545FE27F"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "1AE617A1A84D78AD"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6508361C45D50342"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "5952C6953329D48A"
+				item: { count: 1, id: "modern_industrialization:uranium_dust" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["131D19CE92E22D58"]
+			id: "4E4FF04917B2E624"
+			rewards: [
+				{
+					count: 3
+					id: "5522D421DE7C1E55"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "73E696C3FB8F8231"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "235DBE6D97D467D5"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "107A7DFC9464D67F"
+					item: { count: 1, id: "modern_industrialization:uranium_235_dust" }
+					type: "item"
+				}
+				{
+					id: "7B380F15EA293F46"
+					item: { count: 1, id: "modern_industrialization:uranium_238_dust" }
+					type: "item"
+				}
+			]
+			x: 14.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["23D9328B5F627E65"]
+			id: "286BD460010AA281"
+			rewards: [
+				{
+					count: 5
+					id: "46259F892A56CBBC"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "4A2C7B731020F121"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "70EBAD96DCDFB542"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "square"
+			tasks: [{
+				id: "1EE4031D49D56740"
+				item: { count: 1, id: "modern_industrialization:quantum_machine_hull" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"5856A6281F140AEF"
+				"569821B175311340"
+			]
+			id: "229F2B56037A748B"
+			rewards: [
+				{
+					count: 5
+					id: "645EC23DDCB46158"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "7118E12ACAF936C3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "67F27EFF59AFF965"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "square"
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "09585A61634E37FD"
+				item: { count: 1, id: "modern_industrialization:tungstensteel_coil" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["257CA8034EA7B1DB"]
+			id: "630513B2758CEA60"
+			rewards: [{
+				id: "479EB5AFB1C774CB"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "59EE5CBC0B7063AA"
+				item: { count: 1, id: "moderndynamics:ev_cable" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["569821B175311340"]
+			id: "741D66D89EE0C684"
+			rewards: [
+				{
+					count: 3
+					id: "3591382B48AC36C4"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "2FC4E8C9B381C977"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7EFE0957EC953DA2"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "3FB7CBE347998B7C"
+				item: { count: 1, id: "modern_industrialization:superconductor_cable" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["741D66D89EE0C684"]
+			id: "1999BF05F0242048"
+			rewards: [{
+				id: "473F42204A2B9081"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "64D8A42998F65CAE"
+				item: { count: 1, id: "moderndynamics:superconductor_cable" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5856A6281F140AEF"]
+			id: "5D5E4B7B68987695"
+			rewards: [
+				{
+					count: 5
+					id: "64ADC0C19AE0ED12"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "360EDA4CFAEECF97"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "551B465074C1B4D2"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "2006115426F3A3C2"
+				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5856A6281F140AEF"]
+			id: "63FF1817F23A7C7A"
+			rewards: [
+				{
+					count: 5
+					id: "6B0740C1BFC264EB"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "4B0FBD4441F28C25"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4B3AC91512816915"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "768D61EBDFC2D240"
+				item: { count: 1, id: "bankstorage:bank_7" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5856A6281F140AEF"]
+			id: "53AEA0E74CE842B5"
+			rewards: [
+				{
+					count: 5
+					id: "060E5AC05481E9C8"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "1335F60DB5874EAA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2DC89DA29C0549B8"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "508B4707542BE6E6"
+				item: { count: 1, id: "functionalstorage:netherite_upgrade" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			id: "2296FC027EAF34E2"
+			rewards: [{
+				id: "233ED2C051420C72"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3AE4934C709D066D"
+				item: { count: 1, id: "modern_industrialization:beryllium_sulfate_bucket" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2296FC027EAF34E2"]
+			id: "4CFA1740855847FE"
+			rewards: [{
+				id: "336FC534F17301E1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "536B4B262E615A8C"
+				item: { count: 1, id: "modern_industrialization:beryllium_hydroxide_bucket" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4CFA1740855847FE"]
+			id: "3E7BA3A61D2C897C"
+			rewards: [{
+				id: "6AE6CED4900B5CEB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "24A81AB791249D81"
+				item: { count: 1, id: "modern_industrialization:beryllium_chloride_bucket" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E7BA3A61D2C897C"]
+			id: "1AA057FA136ECE2D"
+			rewards: [{
+				id: "7751B2BE6FFF2A0F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "599D47A555E96164"
+				item: { count: 1, id: "modern_industrialization:beryllium_dust" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1AA057FA136ECE2D"]
+			id: "36521C02297A6BBD"
+			rewards: [
+				{
+					count: 3
+					id: "69FA7C37E50C55A5"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "42F6D90CBDCFBEE1"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0A0E67BB89DDCBB2"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "633B0213114A4356"
+				item: { count: 1, id: "modern_industrialization:beryllium_ingot" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5856A6281F140AEF"]
+			id: "75A72BD99C4B7FFD"
+			rewards: [
+				{
+					count: 5
+					id: "4C6FF2524EE42CC0"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "5CB1BAF3E8DFC74F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "05334A8AAF0BA83F"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "548305532905AE75"
+				item: { count: 1, id: "tankstorage:tank_7" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"649FE8A688C74216"
+				"741D66D89EE0C684"
+			]
+			id: "6D6C2CCEA0CA1D26"
+			rewards: [
+				{
+					count: 3
+					id: "32F6ABE53F1C6CBB"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "340D070DDFBC79D9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "517BB5A0636FAB49"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			tasks: [{
+				id: "2CBDFB95BD4DD7EC"
+				item: { count: 1, id: "industrialization_overdrive:vajra" }
+				type: "item"
+			}]
+			x: 7.0204081632653015d
+			y: 1.7295918367346985d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			id: "7C3CA1F482268915"
+			rewards: [{
+				id: "2BD1F643ACF23AD5"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "535B8EF46904E004"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7C3CA1F482268915"]
+			icon: {
+				id: "mi_tweaks:oversized_electrolysis_chamber"
+			}
+			id: "33AFB99445AE9B9C"
+			rewards: [
+				{
+					count: 5
+					id: "469692BE2618AC6D"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "4E9782551CAE481B"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1D2D6417CD9ED8CA"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "05CA76487CF0F48B"
+					item: { count: 1, id: "mi_tweaks:oversized_electrolysis_chamber" }
+					type: "item"
+				}
+				{
+					count: 38L
+					id: "1B811786AEC3C866"
+					item: { count: 1, id: "factory_blocks:circuit" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6600DF335958F065"
+					item: { count: 1, id: "factory_blocks:sturdy" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "320B7A67EA9E9929"
+					item: { count: 1, id: "modern_industrialization:tungstensteel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "142F972716D01A9E"
+					item: { count: 1, id: "kubejs:borosilicate_glass" }
+					type: "item"
+				}
+				{
+					id: "4B6EE0C30047A016"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "658B537143219283"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "621BA1142B66F9B9"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "6E5BD7454363EB92"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0786A39A7E7FCE32"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7C3CA1F482268915"]
+			icon: {
+				id: "mi_tweaks:large_scale_assembler"
+			}
+			id: "7F65BF85A0A6D8F9"
+			rewards: [
+				{
+					count: 5
+					id: "3068C156F96057BC"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "7B0653A7780D208E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5548251B51907B6D"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "697B4F51F11CB519"
+					item: { count: 1, id: "mi_tweaks:large_scale_assembler" }
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "69A71906DF934B38"
+					item: { count: 1, id: "modern_industrialization:tungstensteel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "17AF0A84A407DACA"
+					item: { count: 1, id: "modern_industrialization:tungstensteel_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "57919647BA5B2036"
+					item: { count: 1, id: "modern_industrialization:turbo_machine_hull" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "4EDE2C04B65ADCC5"
+					item: { count: 1, id: "kubejs:borosilicate_glass" }
+					type: "item"
+				}
+				{
+					id: "0E273C559CE9E1F0"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "06BAC3CB56E065A1"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "0254837EBD446226"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "22F166D4A6ABEF35"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7C3CA1F482268915"]
+			icon: {
+				id: "mi_tweaks:industrial_mixing_machine"
+			}
+			id: "01E4CA464D65ED1C"
+			rewards: [
+				{
+					count: 3
+					id: "09E48718A31A1357"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "0F91763AB3C12558"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "440145B13BF84300"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "0F1A6127D07A5336"
+					item: { count: 1, id: "mi_tweaks:industrial_mixing_machine" }
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "36C2017C04659D29"
+					item: { count: 1, id: "modern_industrialization:enderium_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0475F8393C434927"
+					item: { count: 1, id: "factory_blocks:grate" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "0D17E2C9DBF5DA2C"
+					item: { count: 1, id: "kubejs:borosilicate_glass" }
+					type: "item"
+				}
+				{
+					id: "0C69E647AD7B0AF8"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "4B10F5BAEEA6707A"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "2333A33456FE38A5"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "12E1F98FD18C46B1"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "256C4B8C4420BDF3"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7C3CA1F482268915"]
+			icon: {
+				id: "mi_tweaks:grand_mass_centrifuge"
+			}
+			id: "7614268077A13015"
+			rewards: [
+				{
+					count: 5
+					id: "6DF0A0C81C531B38"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "6C2C4570974F4334"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "270883A6F15CAE0D"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "407BB3516233B9D8"
+					item: { count: 1, id: "mi_tweaks:grand_mass_centrifuge" }
+					type: "item"
+				}
+				{
+					count: 38L
+					id: "565B4C688ED6E455"
+					item: { count: 1, id: "modern_industrialization:desh_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "39D24A2F9784B587"
+					item: { count: 1, id: "modern_industrialization:desh_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					id: "246AFACD07303FED"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "722B3E150CE1F77A"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "586CBE0E04B8861D"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "5B49E7B1D857C2AC"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "62611ADCFA7515DE"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7C3CA1F482268915"]
+			icon: {
+				id: "mi_tweaks:blast_alloy_smelter"
+			}
+			id: "70658F7FAF3AB407"
+			rewards: [
+				{
+					count: 5
+					id: "3B515571B85F2DEE"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "7D9D756217ECFB4B"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2541ECDE028E6132"
+					table_id: 747934807067920818L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "400E489461A97940"
+					item: { count: 1, id: "mi_tweaks:blast_alloy_smelter" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "7FC615CB6D0DEF96"
+					item: { count: 1, id: "xtonesreworked:korp_block_4" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "1C9177965A3DFD8D"
+					item: { count: 1, id: "xtonesreworked:korp_block_9" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "207C5DDB99011167"
+					item: { count: 1, id: "modern_industrialization:tungstensteel_coil" }
+					type: "item"
+				}
+				{
+					id: "12469C71626332C7"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "5DDC4E77F58A2502"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "203F7CD723D1C9AC"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			id: "0F85F4ACA5A103E1"
+			rewards: [
+				{
+					count: 3
+					id: "6CD6E9EF76998383"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "6966860C8239B908"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7AE7EB03712BCE5B"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "18544EE9B96BD719"
+				item: { count: 1, id: "modern_industrialization:large_steam_turbine" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["494104440623C825"]
+			icon: {
+				id: "yet_another_industrialization:nuclear_rod_irradiator"
+			}
+			id: "216F13398546D8F6"
+			rewards: [
+				{
+					count: 3
+					id: "427DE3474A70578C"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "538E714FDC2CD65D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C9B9B4D240CEE6A"
+					table_id: 6543095682646008871L
+					type: "random"
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "55375DF9C9174501"
+					item: { count: 1, id: "yet_another_industrialization:nuclear_rod_irradiator" }
+					type: "item"
+				}
+				{
+					count: 80L
+					id: "751706475A4DE361"
+					item: { count: 1, id: "modern_industrialization:nuclear_casing" }
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "339112A5F2837326"
+					item: { count: 1, id: "modern_industrialization:nuclear_alloy_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "22A25C817228E8DD"
+					item: { count: 1, id: "modern_industrialization:nuclear_item_hatch" }
+					type: "item"
+				}
+				{
+					id: "7D18AFEA336B15D5"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2F0042673C0E3910"]
+			icon: {
+				id: "yet_another_industrialization:pulse_detonation_generator"
+			}
+			id: "481AEE82687B9630"
+			rewards: [
+				{
+					count: 3
+					id: "252F85CFFDD480F4"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "5403EB20422BBAED"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2F595E6FC51BCA9C"
+					table_id: 6543095682646008871L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "246CB36709B2D648"
+					item: { count: 1, id: "yet_another_industrialization:pulse_detonation_generator" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "09B89A8F0E0E0A1D"
+					item: { count: 1, id: "yet_another_industrialization:detonation_chamber_casing" }
+					type: "item"
+				}
+				{
+					count: 48L
+					id: "7046989C58EF1415"
+					item: { count: 1, id: "modern_industrialization:solid_titanium_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "4532B4F3632B0FC7"
+					item: { count: 1, id: "modern_industrialization:titanium_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					id: "0518376B59D54A78"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "7F977398859D1046"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "3750401D20388C6C"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "7152BA35FCEA6C75"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -3.5d
+		}
+	]
+}

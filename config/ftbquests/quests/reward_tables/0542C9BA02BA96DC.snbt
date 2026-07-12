@@ -1,0 +1,442 @@
+{
+	id: "0542C9BA02BA96DC"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ id: "446AC7048A142C56", item: { count: 1, id: "modern_industrialization:electric_blast_furnace" } }
+		{ id: "4B44F40BA4E519E0", item: { count: 1, id: "modern_industrialization:electric_compressor" } }
+		{ id: "3D3F2B6A1A05E456", item: { count: 1, id: "modern_industrialization:electric_cutting_machine" } }
+		{ id: "1AA37EB28895FA7A", item: { count: 1, id: "modern_industrialization:electric_furnace" } }
+		{ id: "5D593486D073ED2D", item: { count: 1, id: "modern_industrialization:electric_macerator" } }
+		{ id: "00AD51D0E37FC1CD", item: { count: 1, id: "modern_industrialization:electric_mixer" } }
+		{ id: "2E4C9535A9373D0F", item: { count: 1, id: "modern_industrialization:electric_packer" } }
+		{ id: "6D0A216654979801", item: { count: 1, id: "modern_industrialization:electric_unpacker" } }
+		{ id: "64E60DCAAF0E1823", item: { count: 1, id: "modern_industrialization:electric_water_pump" } }
+		{ id: "329D6F18B82CBCA5", item: { count: 1, id: "modern_industrialization:electric_wiremill" } }
+		{ id: "4A8006885F5BB6E3", item: { count: 1, id: "extended_industrialization:electric_alloy_smelter" } }
+		{ id: "0D2FB51272916559", item: { count: 1, id: "extended_industrialization:electric_bending_machine" } }
+		{ id: "257510765E16F66E", item: { count: 1, id: "modern_industrialization:assembler" } }
+		{
+			count: 2
+			id: "7FFF4B505CDD87C4"
+			item: {
+				count: 1
+				id: "modern_industrialization:lv_energy_input_hatch"
+			}
+		}
+		{
+			count: 4
+			id: "4DE32027228A7B18"
+			item: {
+				count: 1
+				id: "modern_industrialization:lv_steam_turbine"
+			}
+		}
+		{
+			count: 16
+			id: "43246486F662F288"
+			item: {
+				count: 1
+				id: "modern_industrialization:motor"
+			}
+		}
+		{
+			count: 16
+			id: "61CDD95421BC895B"
+			item: {
+				count: 1
+				id: "modern_industrialization:pump"
+			}
+		}
+		{
+			count: 16
+			id: "28C435FED5F69750"
+			item: {
+				count: 1
+				id: "modern_industrialization:robot_arm"
+			}
+		}
+		{
+			count: 12
+			id: "73B32EC2DDC161FF"
+			item: {
+				count: 1
+				id: "modern_industrialization:analog_circuit"
+			}
+		}
+		{
+			count: 12
+			id: "2448345A5B53C371"
+			item: {
+				count: 1
+				id: "modern_industrialization:transistor"
+			}
+		}
+		{
+			count: 12
+			id: "6FD88AB7923E7D45"
+			item: {
+				count: 1
+				id: "modern_industrialization:diode"
+			}
+		}
+		{
+			count: 12
+			id: "1C1D963F7E2873FA"
+			item: {
+				count: 1
+				id: "modern_industrialization:aluminum_ingot"
+			}
+		}
+		{
+			count: 12
+			id: "3125F75B8A04C815"
+			item: {
+				count: 1
+				id: "modern_industrialization:silicon_ingot"
+			}
+		}
+		{
+			count: 16
+			id: "1B447B5FBE44585B"
+			item: {
+				count: 1
+				id: "modern_industrialization:silicon_dust"
+			}
+		}
+		{
+			count: 24
+			id: "1D96CFC6B0C95163"
+			item: {
+				count: 1
+				id: "modern_industrialization:carbon_dust"
+			}
+		}
+		{
+			count: 32
+			id: "40BD12128E492E8E"
+			item: {
+				count: 1
+				id: "minecraft:iron_block"
+			}
+		}
+		{
+			count: 16
+			id: "3512C956DC60064C"
+			item: {
+				count: 1
+				id: "minecraft:gold_block"
+			}
+		}
+		{
+			count: 16
+			id: "4F09659F61E1598D"
+			item: {
+				count: 1
+				id: "modern_industrialization:bronze_machine_casing"
+			}
+		}
+		{
+			count: 16
+			id: "2E6C715A13693DAD"
+			item: {
+				count: 1
+				id: "modern_industrialization:bronze_block"
+			}
+		}
+		{
+			count: 4
+			id: "41CD8FA84145A6B8"
+			item: {
+				count: 1
+				id: "modern_industrialization:basic_machine_hull"
+			}
+		}
+		{ id: "04F85C583BA40824", item: { count: 1, id: "modern_industrialization:advanced_machine_hull" } }
+		{
+			count: 4
+			id: "5E9C3965826DAFB7"
+			item: {
+				count: 1
+				id: "modern_industrialization:electronic_circuit_board"
+			}
+		}
+		{
+			count: 2
+			id: "53E471DFA76F6A0A"
+			item: {
+				count: 1
+				id: "modern_industrialization:electronic_circuit"
+			}
+		}
+		{
+			count: 6
+			id: "790695193A90440B"
+			item: {
+				count: 1
+				id: "modern_industrialization:aluminum_rotor"
+			}
+		}
+		{
+			count: 16
+			id: "58706E069FE1A64B"
+			item: {
+				count: 1
+				id: "modern_industrialization:steel_block"
+			}
+		}
+		{
+			count: 2
+			id: "30441563A368A2F5"
+			item: {
+				count: 1
+				id: "enderstorage:ender_chest"
+			}
+		}
+		{
+			count: 2
+			id: "51F97E7F4F6A9359"
+			item: {
+				count: 1
+				id: "enderstorage:ender_tank"
+			}
+		}
+		{
+			count: 16
+			id: "3D694E170EA0CBB3"
+			item: {
+				count: 1
+				id: "modern_industrialization:cupronickel_coil"
+			}
+		}
+		{
+			count: 64
+			id: "13057E3F110F593C"
+			item: {
+				count: 1
+				id: "modern_industrialization:item_pipe"
+			}
+		}
+		{
+			count: 64
+			id: "0D55310DAE5408DA"
+			item: {
+				count: 1
+				id: "modern_industrialization:fluid_pipe"
+			}
+		}
+		{
+			count: 8
+			id: "71167AACA968D9B3"
+			item: {
+				count: 1
+				id: "modern_industrialization:conveyor"
+			}
+		}
+		{
+			count: 12
+			id: "5852EB6EC46C0E1B"
+			item: {
+				count: 1
+				id: "modern_industrialization:piston"
+			}
+		}
+		{
+			count: 8
+			id: "3BD9BC4655D990FB"
+			item: {
+				count: 1
+				id: "modern_industrialization:invar_rotary_blade"
+			}
+		}
+		{ id: "69E23B47FF7BE324", item: { components: { "minecraft:stored_enchantments": { levels: { "minecraft:fortune": 3 } } }, count: 1, id: "minecraft:enchanted_book" } }
+		{ id: "7C87E224F8FEF804", item: { count: 1, id: "sophisticatedstorage:basic_to_netherite_tier_upgrade" } }
+		{
+			count: 4
+			id: "03CF3C9C2CD1A484"
+			item: {
+				count: 1
+				id: "minecraft:netherite_ingot"
+			}
+		}
+		{
+			count: 16
+			id: "4075EBFFBF386C5C"
+			item: {
+				count: 1
+				id: "modern_industrialization:redstone_battery"
+			}
+		}
+		{
+			count: 6
+			id: "3F2123715A3F061E"
+			item: {
+				count: 1
+				id: "modern_industrialization:silicon_battery"
+			}
+		}
+		{
+			count: 48
+			id: "2D0E53ABBDBEDB42"
+			item: {
+				count: 1
+				id: "modern_industrialization:electrum_ingot"
+			}
+		}
+		{
+			count: 32
+			id: "5AFE0F6BD6B6A96A"
+			item: {
+				count: 1
+				id: "modern_industrialization:electrum_cable"
+			}
+		}
+		{
+			count: 48
+			id: "4183D1E1585736A0"
+			item: {
+				count: 1
+				id: "modern_industrialization:cupronickel_cable"
+			}
+		}
+		{
+			count: 6
+			id: "193E2ACE4FA4B41F"
+			item: {
+				count: 1
+				id: "modern_industrialization:configurable_chest"
+			}
+		}
+		{
+			count: 24
+			id: "1860B4589A81AFAD"
+			item: {
+				count: 1
+				id: "modern_industrialization:basic_upgrade"
+			}
+		}
+		{ id: "244F8A523DB84409", item: { count: 1, id: "minecraft:enchanted_golden_apple" } }
+		{
+			count: 16
+			id: "319560529E39483B"
+			item: {
+				count: 1
+				id: "kubejs:concrete_bar"
+			}
+		}
+		{
+			count: 24
+			id: "0F726ADA80877B61"
+			item: {
+				count: 1
+				id: "minecraft:diamond_ore"
+			}
+		}
+		{
+			count: 48
+			id: "1F625E84F3020BBE"
+			item: {
+				count: 1
+				id: "minecraft:gold_ore"
+			}
+		}
+		{
+			count: 48
+			id: "1F4BCF86F9A64D14"
+			item: {
+				count: 1
+				id: "modern_industrialization:antimony_ore"
+			}
+		}
+		{
+			count: 64
+			id: "760F6DCDCCC5B7DB"
+			item: {
+				count: 1
+				id: "minecraft:iron_ore"
+			}
+		}
+		{
+			count: 48
+			id: "206C7E05F0FFF0D5"
+			item: {
+				count: 1
+				id: "modern_industrialization:bauxite_ore"
+			}
+		}
+		{
+			count: 16
+			id: "512EF51F7221707C"
+			item: {
+				count: 1
+				id: "modern_industrialization:bronze_plated_bricks"
+			}
+		}
+		{
+			count: 16
+			id: "17E23E1414E06C10"
+			item: {
+				count: 1
+				id: "extended_industrialization:steel_plated_bricks"
+			}
+		}
+		{ id: "01C442B0D2A6500E", item: { count: 1, id: "extended_industrialization:manure_bucket" } }
+		{
+			count: 4
+			id: "7C5217573C79C87D"
+			item: {
+				count: 1
+				id: "minecraft:diamond_block"
+			}
+		}
+		{
+			count: 12
+			id: "08CC57A5CF81C5B4"
+			item: {
+				count: 1
+				id: "minecraft:ender_pearl"
+			}
+		}
+		{
+			count: 12
+			id: "22629A71B1F832AF"
+			item: {
+				count: 1
+				id: "modern_industrialization:bronze_fluid_input_hatch"
+			}
+		}
+		{
+			count: 12
+			id: "6178CC3DFFFEB257"
+			item: {
+				count: 1
+				id: "modern_industrialization:bronze_item_input_hatch"
+			}
+		}
+		{
+			count: 8
+			id: "6C7EAC9D367BD608"
+			item: {
+				count: 1
+				id: "modern_industrialization:steel_fluid_input_hatch"
+			}
+		}
+		{
+			count: 8
+			id: "261FCBB8F8EDDE07"
+			item: {
+				count: 1
+				id: "modern_industrialization:steel_item_input_hatch"
+			}
+		}
+		{
+			count: 8
+			id: "3CF52CB5FECAA646"
+			item: {
+				count: 1
+				id: "kubejs:borosilicate_glass"
+			}
+		}
+	]
+	use_title: true
+}

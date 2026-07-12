@@ -3,50 +3,78 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+/* MIRecipeEvents.customCondition(event => {
+    event.register('block_2back_2up', (ctx, recipe) => {
+        // Get machine block entity
+        const be = ctx.blockEntity;
+
+        // Compute target block position: 2 back from front face, then +1 Y
+        const targetPos = be.blockPos['relative(net.minecraft.core.Direction,int)'](
+            be.orientation.facingDirection.opposite,
+            2
+        ).above(2);
+
+        // Get the block state at that position
+        const state = ctx.level.getBlockState(targetPos);
+
+        // Compare with the block ID you want (replace with your desired block)
+        return state.id === 'minecraft:diamond_block'; // <- Your target block
+    },
+    Text.of('Requires Diamond Block 2 blocks behind and 2 block above'));
+}); */
+
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/space_probe_launcher/${id}`;
-    let ad = (id) => `ad_astra:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let kj = (id) => `kubejs:${id}`;
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let spl = (id, eu, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: mi('space_probe_launcher'),
-            eu: eu,
-            duration: duration,
-            process_conditions: [{'biome': 'ad_astra:orbit', 'id': 'modern_industrialization:biome'} ]
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
+    // not a fan of using the MI recipe format, but I could not get the full tank with nbt to work with traditional methods
+    // -- RESEARCH PROBE (STAR) -- //
+    event.recipes.modern_industrialization.space_probe_launcher(32, 600)
+        .itemIn(kj('research_probe'))
+        .itemIn(kj('star_location_telemetry'))
+        .itemOut(Item.of('modern_industrialization:aluminum_tank[modern_industrialization:fluid_storage={amount:64000L,resource:{id:"modern_industrialization:stellar_plasma"}}]'))
+        .dimension('statech:space')
+        .adjacentBlock(kj('mki_probe_computer'), 'below')
+        .id(st('research_probe_star'));
         
-        e.custom(newRecipe).id(id);
-    }
-
     // -- SPACE PROBE -- //
     spl(
-        st('space_probe'),
-        128,
-        6000,
-        [ { amount: 1, item: kj('space_probe'), probability: 0.75 } ],
+        event,
+        st('basic_space_probe'),
+        32,
+        600,
+        [ { amount: 1, item: kj('basic_space_probe'), probability: 0.10 } ],
         [ 
-            { amount: 64, item: ad('moon_desh_ore') },
-            { amount: 64, item: ad('mars_ostrum_ore') },
-            { amount: 64, item: ad('venus_calorite_ore') },
-            { amount: 64, item: ad('deepslate_ice_shard_ore') },
-            { amount: 64, item: ad('moon_cheese_ore') },
-            { amount: 64, item: ad('moon_sand') },
-            { amount: 64, item: ad('moon_stone') },
-            { amount: 64, item: ad('mars_sand') },
-            { amount: 64, item: ad('mars_stone') },
-            { amount: 64, item: ad('venus_sand') },
-            { amount: 64, item: ad('venus_stone') },
-            { amount: 64, item: ad('mercury_stone') },
-            { amount: 64, item: ad('infernal_spire_block') }
-        ]
-    );
+            { amount: 1, item: mi('desh_ore'), probability: 0.25  },
+            { amount: 1, item: mi('moon_ice_ore'), probability: 0.02 }
+        ],
+        kj('mki_probe_computer'),
+        'below'
+    ); 
+
+    spl(
+        event,
+        st('advanced_space_probe'),
+        48,
+        600,
+        [ { amount: 1, item: kj('advanced_space_probe'), probability: 0.10 } ],
+        [ 
+            { amount: 1, item: mi('ostrum_ore'), probability: 0.25  }
+        ],
+        kj('mkii_probe_computer'),
+        'below'
+    ); 
+    
+    spl(
+        event,
+        st('highly_advanced_space_probe'),
+        64,
+        600,
+        [ { amount: 1, item: kj('highly_advanced_space_probe'), probability: 0.10 } ],
+        [ 
+            { amount: 1, item: mi('calorite_ore'), probability: 0.25  }
+        ],
+        kj('mkiii_probe_computer'),
+        'below'
+    ); 
 });

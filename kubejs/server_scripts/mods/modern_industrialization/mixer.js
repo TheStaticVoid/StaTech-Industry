@@ -3,46 +3,19 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/mixer/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let xp = (id) => `xps:${id}`;
-    let ae = (id) => `ae2:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-    let cr = (id) => `create:${id}`;
-    let kj = (id) => `kubejs:${id}`;
-    let cd = (id) => `culturaldelights:${id}`;
 
     // -- MIXER REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         mi('materials/mixer/fire_clay_dust')
     ];
-    REMOVED_RECIPES.forEach(id => e.remove({id: id}));
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let mixer = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('mixer'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-        
-        e.custom(newRecipe).id(id);
-    }
+    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
 
     // -- NETHERRACK -- //
     mixer(
+        event,
         st('netherrack'),
         8,
         200,
@@ -53,6 +26,7 @@ ServerEvents.recipes(e => {
 
     // -- SALT WATER -- //
     mixer(
+        event,
         st('salt_water'),
         2,
         200,
@@ -62,80 +36,60 @@ ServerEvents.recipes(e => {
         [ { amount: 150, fluid: mi('salt_water') } ]
     );
 
-    // -- PICKLE -- //
+    // -- MOSSY COBBLESTONE -- //
     mixer(
-        st('pickle'),
+        event,
+        st('mossy_cobblestone'),
         2,
-        600,
-        [
-            { amount: 1, item: cd('cucumber') },
-            { amount: 2, item: mi('salt_dust') }
-        ],
-        [ { amount: 1, item: cd('pickle') } ],
-        [ { amount: 100, fluid: mc('water') } ]
-    );
-
-    // -- NUTRIENT RICH WATER -- //
-    mixer(
-        st('nutrient_rich_water'),
-        8,
-        200,
-        [ { amount: 1, item: mc('bone_meal') } ],
-        null,
-        [ { amount: 100, fluid: mc('water') } ],
-        [ { amount: 200, fluid: mi('nutrient_rich_water') } ]
-    );
-
-    // -- NUTRIENT RICH LIQUID ENDER -- //
-    mixer(
-        st('nutrient_rich_liquid_ender'),
-        8,
-        200,
-        [ { amount: 1, item: mc('bone_meal') } ],
-        null,
-        [ { amount: 100, fluid: mi('liquid_ender') } ],
-        [ { amount: 200, fluid: mi('nutrient_rich_liquid_ender') } ]
-    );
-
-    // -- NUTRIENT RICH BLOOD -- //
-    mixer(
-        st('nutrient_rich_blood'),
-        8,
-        200,
-        [ { amount: 1, item: mc('bone_meal') } ],
-        null,
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 200, fluid: mi('nutrient_rich_blood') } ]
-    );
-
-    // -- XP BERRY SEEDS -- //
-    mixer(
-        st('xp_berry_seeds'),
-        8,
         200,
         [ 
-            { amount: 1, item: xp('soul_copper_nugget') },
-            { amount: 1, item: mc('amethyst_shard') },
-            { amount: 4, tag: 'xps:seeds_list' },
-            { amount: 2, item: mc('nether_wart') }
+            { amount: 1, item: mc('cobblestone') },
+            { amount: 1, item: mc('moss_block') }
         ],
-        [ { amount: 6, item: xp('xp_berries_seeds') } ],
-        [ { amount: 1000, fluid: xp('xp_fluid') } ]
+        [ { amount: 1, item: mc('mossy_cobblestone') } ]
+    );
+
+    // -- MOSSY COBBLESTONE FROM VINE -- //
+    mixer(
+        event,
+        st('mossy_cobblestone_vine'),
+        2,
+        200,
+        [ 
+            { amount: 1, item: mc('cobblestone') },
+            { amount: 1, item: mc('vine') }
+        ],
+        [ { amount: 1, item: mc('mossy_cobblestone') } ]
+    );
+
+    // -- MOSSY COBBLESTONE FROM NML -- //
+    mixer(
+        event,
+        st('mossy_cobblestone_nml'),
+        2,
+        200,
+        [ 
+            { amount: 1, item: mc('cobblestone') },
+            { amount: 4, tag: 'nomansland:alternative_moss' }
+        ],
+        [ { amount: 1, item: mc('mossy_cobblestone') } ]
     );
 
     // -- LIQUID EXPERIENCE -- //
     mixer(
+        event,
         st('xp_fluid'),
         8,
-        200,
-        [ { amount: 3, item: cr('experience_nugget') } ],
+        50,
+        [ { amount: 4, item: cr('experience_nugget') } ],
         null,
         null,
-        [ { amount: 90, fluid: xp('xp_fluid') } ]
-    );
+        [ { amount: 120, fluid: xp('cognitium_source') } ]
+    ); 
 
     // -- STATECH ENERGY -- //
     mixer(
+        event,
         st('statech_energy'),
         8,
         200,
@@ -149,6 +103,7 @@ ServerEvents.recipes(e => {
 
     // -- BEPSI -- //
     mixer(
+        event,
         st('bepsi'),
         8,
         200,
@@ -159,12 +114,13 @@ ServerEvents.recipes(e => {
 
     // -- COKE COLA -- //
     mixer(
+        event,
         st('coke_cola'),
         8,
         200,
         [ 
             { amount: 1, item: kj('empty_can') },
-            { amount: 2, tag: 'c:coke_dusts' }
+            { amount: 2, tag: 'c:dusts/coke' }
         ],
         [ { amount: 1, item: kj('coke_cola') } ],
         [ { amount: 100, fluid: mc('water') } ]
@@ -172,6 +128,7 @@ ServerEvents.recipes(e => {
 
     // -- GREG COLA -- //
     mixer(
+        event,
         st('greg_cola'),
         8,
         200,
@@ -183,38 +140,30 @@ ServerEvents.recipes(e => {
         [ { amount: 100, fluid: mi('polytetrafluoroethylene') } ]
     );
 
-    // -- SULFURIC ACID BOTTLE -- //
-    mixer(
-        st('sulfuric_acid_bottle'),
-        8,
-        200,
-        [ { amount: 1, item: mc('glass_bottle') } ],
-        [ { amount: 1, item: kj('sulfuric_acid_bottle') } ],
-        [ { amount: 100, fluid: mi('sulfuric_acid') } ]
-    );
-
     // -- URANIUM CEREAL -- //
     mixer(
+        event,
         st('uranium_cereal'),
         8,
         200,
         [ 
             { amount: 1, item: mc('bowl') },
-            { amount: 3, tag: 'c:uranium_nuggets' }
+            { amount: 3, tag: 'c:nuggets/uranium' }
         ],
         [ { amount: 1, item: kj('uranium_cereal') } ],
-        [ { amount: 100, fluid: 'milk:still_milk' } ]
+        [ { amount: 100, fluid: mc('milk') } ]
     );
 
     // -- NUKA COLA -- //
     mixer(
+        event,
         st('nuka_cola'),
         8,
         200,
         [ 
             { amount: 1, item: mc('glass_bottle') },
-            { amount: 4, tag: 'c:uranium_dusts' },
-            { amount: 2, tag: 'c:coke_dusts' }
+            { amount: 4, tag: 'c:dusts/uranium' },
+            { amount: 2, tag: 'c:dusts/coke' }
         ],
         [ { amount: 1, item: kj('nuka_cola') } ],
         [ { amount: 100, fluid: mc('water') } ]
@@ -222,6 +171,7 @@ ServerEvents.recipes(e => {
 
     // -- CONCRETE PIZZA -- //
     mixer(
+        event,
         st('concrete_pizza'),
         8,
         200,
@@ -232,6 +182,7 @@ ServerEvents.recipes(e => {
 
     // -- CONCRETE STEAK WITH CLAY SAUCE -- //
     mixer(
+        event,
         st('concrete_steak_with_clay_sauce'),
         8,
         200,
@@ -245,6 +196,7 @@ ServerEvents.recipes(e => {
 
     // -- DOUGH -- //
     mixer(
+        event,
         st('dough'),
         2,
         100,
@@ -255,29 +207,47 @@ ServerEvents.recipes(e => {
 
     // -- LIQUID ENDER -- // 
     mixer(
+        event,
         st('liquid_ender'),
         8,
         200,
-        [ { amount: 2, item: tr('ender_pearl_dust') } ],
+        [ { amount: 2, item: ae('ender_dust') } ],
         null,
         [ { amount: 800, fluid: mc('water') } ],
         [ { amount: 1000, fluid: mi('liquid_ender') } ]
     );
     
-    // -- SOULCOPPER BLEND -- //
+    // -- COGNITIVE FLUX -- //
     mixer(
-        st('soul_copper_blend'),
+        event,
+        st('cognitive_flux'),
         2,
         100,
         [
-            { amount: 1, item: mc('raw_copper') },
-            { amount: 1, item: mc('soul_sand') }
+            { amount: 1, tag: 'c:dusts/lapis' },
+            { amount: 1, tag: 'c:dusts/quartz' },
+            { amount: 1, tag: 'minecraft:soul_fire_base_blocks' }
         ],
-        [ { amount: 4, item: xp('soul_copper_blend') } ]
-    );    
+        [ { amount: 4, item: xp('cognitive_flux') } ]
+    ); 
+    
+    // -- BORON-QUARTZ BLEND -- //
+    mixer(
+        event,
+        st('boron_quartz_blend'),
+        2,
+        100,
+        [
+            { amount: 4, tag: 'c:dusts/boron_trioxide' },
+            { amount: 8, tag: 'c:dusts/quartz' },
+            { amount: 1, tag: 'c:tiny_dusts/aluminum' }
+        ],
+        [ { amount: 12, item: kj('boron_quartz_blend') } ]
+    ); 
 
     // -- CERTUS QUARTS CRYSTAL -- //
     mixer(
+        event,
         st('certus_quartz_crystal'),
         8,
         100,
@@ -291,6 +261,7 @@ ServerEvents.recipes(e => {
 
     // -- DAMAGED BUDDING CERTUS QUARTZ -- //
     mixer(
+        event,
         st('damaged_budding_certus_quartz'),
         8,
         200,
@@ -304,6 +275,7 @@ ServerEvents.recipes(e => {
 
     // -- CHIPPED BUDDING CERTUS QUARTZ -- //
     mixer(
+        event,
         st('chipped_budding_certus_quartz'),
         8,
         200,
@@ -317,6 +289,7 @@ ServerEvents.recipes(e => {
 
     // -- FLAWED BUDDING CERTUS QUARTZ -- //
     mixer(
+        event,
         st('flawed_budding_certus_quartz'),
         8,
         200,
@@ -327,9 +300,69 @@ ServerEvents.recipes(e => {
         [ { amount: 1, item: ae('flawed_budding_quartz') } ],
         [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
     );
+
+    // -- ENTRO CRYSTAL -- //
+    mixer(
+        event,
+        st('entro_crystal'),
+        8,
+        100,
+        [
+            { amount: 1, item: ea('entro_dust') },
+            { amount: 1, tag: 'c:gems/fluix' }
+        ],
+        [ { amount: 2, item: ea('entro_crystal') } ],
+        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
+    );
+
+    // -- ENTRO INFUSED INGOT -- //
+    mixer(
+        event,
+        st('entro_ingot'),
+        8,
+        100,
+        [
+            { amount: 1, item: ea('entro_dust') },
+            { amount: 1, tag: 'c:ingots/aluminum' },
+            { amount: 1, tag: 'c:gems/lapis' }
+        ],
+        [ { amount: 2, item: ea('entro_ingot') } ],
+        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
+    );
+
+    // -- SKY BRONZE INGOT -- //
+    mixer(
+        event,
+        st('sky_bronze_ingot'),
+        8,
+        100,
+        [
+            { amount: 1, item: ae('charged_certus_quartz_crystal') },
+            { amount: 1, tag: 'c:ingots/annealed_copper' },
+            { amount: 1, item: ae('sky_stone_block') }
+        ],
+        [ { amount: 2, item: mg('sky_bronze_ingot') } ],
+        [ { amount: 1000, fluid: mc('lava'), probability: 0 } ]
+    );
+
+    // -- SKY STEEL INGOT -- //
+    mixer(
+        event,
+        st('sky_steel_ingot'),
+        8,
+        100,
+        [
+            { amount: 1, item: ae('charged_certus_quartz_crystal') },
+            { amount: 1, tag: 'c:ingots/stainless_steel' },
+            { amount: 1, item: ae('sky_stone_block') }
+        ],
+        [ { amount: 2, item: mg('sky_steel_ingot') } ],
+        [ { amount: 1000, fluid: mc('lava'), probability: 0 } ]
+    );
     
     // -- DRILLING FLUID -- //
     mixer(
+        event,
         st('drilling_fluid'),
         8,
         400,
@@ -344,6 +377,7 @@ ServerEvents.recipes(e => {
 
     // -- GRASS BLOCK RECIPE PARITY -- //
     mixer(
+        event,
         st('grass_block'),
         2,
         100,
@@ -357,6 +391,7 @@ ServerEvents.recipes(e => {
 
     // -- FIRE CLAY DUST -- //
     mixer(
+        event,
         st('fire_clay_dust'),
         2,
         100,
@@ -369,6 +404,7 @@ ServerEvents.recipes(e => {
 
     // -- LIQUID CONCRETE -- //
     mixer(
+        event,
         st('liquid_concrete'),
         8,
         200,
@@ -381,64 +417,223 @@ ServerEvents.recipes(e => {
         [ { amount: 500, fluid: mi('concrete') } ]
     );
 
+    // -- QUARTZ BLEND -- //
+    mixer(
+        event,
+        st('quartz_blend'),
+        8,
+        200,
+        [
+            { amount: 6, item: ae('certus_quartz_dust') },
+            { amount: 2, tag: 'c:sands' },
+            { amount: 1, item: mc('coal') }
+        ],
+        [ { amount: 2, item: ea('quartz_blend') } ]
+    );
+
+    // -- RESIN -- //
+    mixer(
+        event,
+        st('resin'),
+        4,
+        600,
+        [ { amount: 2, item: mi('sulfur_tiny_dust') } ],
+        [ { amount: 2, item: nm('resin') } ],
+        [ { amount: 125, fluid: mi('wood_tar') } ]
+    );
+
+    // -- SYNTHETIC RUBBER ALT -- //
+    mixer(
+        event,
+        st('synthetic_rubber_alt'),
+        4,
+        200,
+        [ { amount: 1, item: nm('resin') } ],
+        null,
+        null,
+        [ { amount: 125, fluid: mi('synthetic_rubber') } ]
+    );
+
+    //----------------------------//
+    // -- EI FERTILIZER COMPAT -- //
+    //----------------------------//
+
+        const fertilizerEff = [
+        ['manure', 300],
+        ['composted_manure', 150],
+        ['npk_fertilizer', 30]
+    ];
+
+    fertilizerEff.forEach(fertilizer => {
+
+        // -- NUTRIENT RICH WATER -- //
+        mixer(
+            event,
+            st(`nutrient_rich_water_from_${fertilizer[0]}`),
+            8,
+            200,
+            null,
+            null,
+            [ 
+                { amount: 100, fluid: mc('water') },
+                { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
+            ],
+            [ { amount: 200, fluid: mi('nutrient_rich_water') } ]
+        );
+
+        // -- NUTRIENT RICH BLOOD -- //
+        mixer(
+            event,
+            st(`nutrient_rich_blood_from_${fertilizer[0]}`),
+            8,
+            200,
+            null,
+            null,
+            [ 
+                { amount: 100, fluid: mi('blood') },
+                { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
+            ],
+            [ { amount: 200, fluid: mi('nutrient_rich_blood') } ]
+        );
+
+        // -- NUTRIENT RICH LAVA -- //
+        mixer(
+            event,
+            st(`nutrient_rich_lava_from_${fertilizer[0]}`),
+            8,
+            200,
+            null,
+            null,
+            [ 
+                { amount: 100, fluid: mc('lava') },
+                { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
+            ],
+            [ { amount: 200, fluid: yai('nutrient_rich_lava') } ]
+        );
+
+        // -- NUTRIENT RICH LIQUID ENDER -- //
+        mixer(
+            event,
+            st(`nutrient_rich_liquid_ender_from_${fertilizer[0]}`),
+            8,
+            200,
+            null,
+            null,
+            [ 
+                { amount: 100, fluid: mi('liquid_ender') },
+                { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
+            ],
+            [ { amount: 200, fluid: mi('nutrient_rich_liquid_ender') } ]
+        );
+
+    });
+
+    // -- NUTRIENT RICH WATER -- //
+    mixer(
+        event,
+        st('nutrient_rich_water_from_bonemeal'),
+        8,
+        200,
+        [ { amount: 1, item: mc('bone_meal') } ],
+        null,
+        [ { amount: 100, fluid: mc('water') } ],
+        [ { amount: 100, fluid: mi('nutrient_rich_water') } ]
+    );
+
+    // -- NUTRIENT RICH LIQUID ENDER -- //
+    mixer(
+        event,
+        st('nutrient_rich_liquid_ender_from_bonemeal'),
+        8,
+        200,
+        [ { amount: 1, item: mc('bone_meal') } ],
+        null,
+        [ { amount: 100, fluid: mi('liquid_ender') } ],
+        [ { amount: 100, fluid: mi('nutrient_rich_liquid_ender') } ]
+    );
+
+    // -- NUTRIENT RICH BLOOD -- //
+    mixer(
+        event,
+        st('nutrient_rich_blood_from_bonemeal'),
+        8,
+        200,
+        [ { amount: 1, item: mc('bone_meal') } ],
+        null,
+        [ { amount: 100, fluid: mi('blood') } ],
+        [ { amount: 100, fluid: mi('nutrient_rich_blood') } ]
+    );
+
+    // -- NUTRIENT RICH LAVA -- //
+    mixer(
+        event,
+        st('nutrient_rich_lava_from_bonemeal'),
+        8,
+        200,
+        [ { amount: 1, item: mc('bone_meal') } ],
+        null,
+        [ { amount: 100, fluid: mc('lava') } ],
+        [ { amount: 100, fluid: yai('nutrient_rich_lava') } ]
+    );
+
     // -- UTILITY FUNCTION FOR THE FOLLOWING FOREACH -- //
-    let mixerConsumable = (fluid, amount) => {
-        if (amount < 100)
-            amount = 1000;
+    // let mixerConsumable = (fluid, amount) => {
+        // if (amount < 100)
+            // amount = 1000;
 
-        let newFluidInput = {
-            fluid: fluid,
-            amount: amount
-        }
+        // let newFluidInput = {
+            // fluid: fluid,
+            // amount: amount
+        // }
 
-        return newFluidInput;
-    }
+        // return newFluidInput;
+    // }
     
     // -- CONVERT ALL NON-CONSUMABLE FLUID RECIPES IN MIXER TO CONSUME FLUID  -- //
-    let toRemove = [];
-    e.forEachRecipe( { type: mi('mixer') }, recipe => {
-        const DONT_REPLACE = [
-            'modern_industrialization:vanilla_recipes/mixer/lava',
-            'modern_industrialization:compat/ae2/mixer/fluix'
-        ];
-        const recipeJson = JSON.parse(recipe.json.toString());
-        let eu = recipeJson.eu;
-        let duration = recipeJson.duration;
-        let item_inputs = recipeJson.item_inputs;
-        let item_outputs = recipeJson.item_outputs;
-        let fluid_inputs = recipeJson.fluid_inputs;
-        let fluid_outputs = recipeJson.fluid_outputs;
-        let newFluidInput;
+    // let toRemove = [];
+    // e.forEachRecipe( { type: mi('mixer') }, recipe => {
+        // const DONT_REPLACE = [
+            // 'modern_industrialization:vanilla_recipes/mixer/lava',
+            // 'modern_industrialization:compat/ae2/mixer/fluix'
+        // ];
+        // const recipeJson = JSON.parse(recipe.json.toString());
+        // let eu = recipeJson.eu;
+        // let duration = recipeJson.duration;
+        // let item_inputs = recipeJson.item_inputs;
+        // let item_outputs = recipeJson.item_outputs;
+        // let fluid_inputs = recipeJson.fluid_inputs;
+        // let fluid_outputs = recipeJson.fluid_outputs;
+        // let newFluidInput;
 
-        if (fluid_inputs && !DONT_REPLACE.includes(recipe.getId())) {
-            if (Array.isArray(fluid_inputs)) {
-                let newFluidArr = [];
-                for (let key in fluid_inputs) {
-                    if (fluid_inputs[key].probability === 0) {
-                        newFluidInput = mixerConsumable(
-                            fluid_inputs[key].fluid,
-                            fluid_inputs[key].amount
-                        );
-                        newFluidArr.push(newFluidInput);
-                    }
-                }
-                if (newFluidArr.length > 0)
-                    newFluidInput = newFluidArr;
-            } else {
-                if (fluid_inputs.probability === 0) {
-                    newFluidInput = mixerConsumable(
-                        fluid_inputs.fluid,
-                        fluid_inputs.amount
-                    );
-                }
-            }
-        }
+        // if (fluid_inputs && !DONT_REPLACE.includes(recipe.getId())) {
+            // if (Array.isArray(fluid_inputs)) {
+                // let newFluidArr = [];
+                // for (let key in fluid_inputs) {
+                    // if (fluid_inputs[key].probability === 0) {
+                        // newFluidInput = mixerConsumable(
+                            // fluid_inputs[key].fluid,
+                            // fluid_inputs[key].amount
+                        // );
+                        // newFluidArr.push(newFluidInput);
+                    // }
+                // }
+                // if (newFluidArr.length > 0)
+                    // newFluidInput = newFluidArr;
+            // } else {
+                // if (fluid_inputs.probability === 0) {
+                    // newFluidInput = mixerConsumable(
+                        // fluid_inputs.fluid,
+                        // fluid_inputs.amount
+                    // );
+                // }
+            // }
+        // }
 
-        if (newFluidInput) {
-            toRemove.push(recipe.getId());
-            let id = st(recipe.getId().split('mixer/')[1]);
-            mixer(id, eu, duration, item_inputs, item_outputs, newFluidInput, fluid_outputs);
-        }
-    });
-    toRemove.forEach(id => e.remove({ id: id }));
+        // if (newFluidInput) {
+            // toRemove.push(recipe.getId());
+            // let id = st(recipe.getId().split('mixer/')[1]);
+            // mixer(id, eu, duration, item_inputs, item_outputs, newFluidInput, fluid_outputs);
+        // }
+    // });
+    // toRemove.forEach(id => e.remove({ id: id }));
 });

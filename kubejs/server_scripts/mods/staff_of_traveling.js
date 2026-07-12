@@ -3,43 +3,40 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let st = (id) => `statech:travelstaff/${id}`;
-    let ts = (id) => `travelstaff:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-
+    let st = (id) => `statech:travelanchors${id}`;
+ 
     // -- STAFF OF TRAVELING REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
-        ts('travel_anchor'),
-        ts('travel_staff')
+        ta('travel_anchor'),
+        ta('travel_staff')
     ]
-    REMOVED_RECIPES.forEach(id => e.remove( {id: id} ));
+    REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
 
     // -- TRAVEL ANCHOR -- //
-    e.shaped(ts('travel_anchor'), [
-        'BIB',
+    event.shaped(ta('travel_anchor'), [
+        'LIL',
         'IPI',
-        'BIB'
+        'LIL'
     ],
     {
-        B: '#c:steel_blocks',
-        I: '#c:steel_ingots',
+        L: '#c:large_plates/steel',
+        I: '#c:plates/steel',
         P: '#c:ender_pearls'
     })
     .id(st('travel_anchor'));
 
     // -- TRAVEL STAFF -- //
-    e.shaped(ts('travel_staff'), [
+    event.shaped(ta('travel_staff'), [
         ' PE',
         ' RP',
         'R  '
     ],
     {
-        R: mi('steel_rod'),
-        E: mc('emerald'),
-        P: mc('ender_pearl')
+        R: '#c:rods/steel',
+        E: '#c:gems/emerald',
+        P: '#c:ender_pearls'
     })
     .id(st('travel_staff'));
 });

@@ -3,9 +3,19 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-MIRegistrationEvents.registerFluids(e => {
+MIRegistrationEvents.registerFluids(event => {
+    // -- STELLAR PLASMA -- //
+    event.register(
+        'Stellar Plasma',           // English name
+        'stellar_plasma',           // internal name
+        0xF2D23A,                   // Hex color code
+        'plasma',                   // Texture type
+        false,                      // is a gas?
+        'high',                     // opacity
+    );
+
     // -- DRAGON'S BLOOD -- //
-    e.register(
+    event.register(
         'Dragon\'s Blood',           // English name
         'dragons_blood',             // internal name
         0x910c95,                    // Hex color code
@@ -15,7 +25,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- IMPURE RESONATING FLUID -- //
-    e.register(
+    event.register(
         'Impure Resonating Fluid',   // English name
         'impure_resonating_fluid',   // internal name
         0x22d43b,                    // Hex color code
@@ -25,7 +35,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- SALT WATER -- //
-    e.register(
+    event.register(
         'Salt Water',               // English name
         'salt_water',               // internal name
         0x033a6b,                   // Hex color code
@@ -35,7 +45,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- BRINE -- //
-    e.register(
+    event.register(
         'Brine',                    // English name
         'brine',                    // internal name
         0xefec82,                   // Hex color code
@@ -45,7 +55,7 @@ MIRegistrationEvents.registerFluids(e => {
     )
 
     // -- NUTRIENT RICH WATER -- //
-    e.register(
+    event.register(
         'Nutrient Rich Water',      // English name
         'nutrient_rich_water',      // internal name
         0xdaffdb,                   // Hex color code
@@ -55,7 +65,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- NUTRIENT RICH LIQUID ENDER -- //
-    e.register(
+    event.register(
         'Nutrient Rich Liquid Ender', // English name
         'nutrient_rich_liquid_ender', // internal name
         0x218b7a,                     // Hex color code
@@ -65,7 +75,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     //-- NUTRIENT RICH BLOOD -- //
-    e.register(
+    event.register(
         'Nutrient Rich Blood',        // English name
         'nutrient_rich_blood',        // internal name
         0xe53246,                     // Hex color code
@@ -75,7 +85,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- MOLTEN NETHER STAR -- //
-    e.register(
+    event.register(
         'Molten Nether Star',     // English name
         'molten_nether_star',     // internal name
         0xe9e9e9,       // Hex color code
@@ -85,7 +95,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
     
     // -- IMPURE LIQUID NETHER STAR -- //
-    e.register(
+    event.register(
         'Impure Liquid Nether Star',     // English name
         'impure_liquid_nether_star',     // internal name
         0xe6ded7,       // Hex color code
@@ -95,7 +105,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
     
     // -- LITHIUM -- //
-    e.register(
+    event.register(
         'Lithium',      // English name
         'lithium',      // internal name
         0xb2b2b2,       // Hex color code
@@ -105,7 +115,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- NEUTRONIUM -- //
-    e.register(
+    event.register(
         'Neutronium',
         'neutronium',
         0x1a1a1a,
@@ -115,7 +125,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
     
     // -- BLOOD -- //
-    e.register(
+    event.register(
         'Blood',        // English name
         'blood',        // internal name
         0xc11326,       // Hex color code
@@ -125,7 +135,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- CONCRETE -- //
-    e.register(
+    event.register(
         'Concrete',     // English name
         'concrete',     // internal name
         0x505050,       // Hex color code
@@ -135,7 +145,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- DRILLING FLUID -- //
-    e.register(
+    event.register(
         'Drilling Fluid',
         'drilling_fluid',
         0xf4fc58,
@@ -145,7 +155,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
     
     // -- CORE SLURRY -- //
-    e.register(
+    event.register(
         'Core Slurry',
         'core_slurry',
         0x211500,
@@ -155,7 +165,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- WOOD TAR -- //
-    e.register(
+    event.register(
         'Wood Tar',
         'wood_tar',
         0x2a200e,
@@ -165,17 +175,17 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- POLYTETRAFLUROETHYLENE -- //
-    e.register(
-        'Polytetrafluoroethylene',
+    event.register(
+        'Polytetrafluoroethylene (PTFE)',
         'polytetrafluoroethylene',
-        0x454545,
+        0x364768,
         'lava',
         false,
         'full'
     );
 
     // -- TETRAFLUOROETHYLENE -- //
-    e.register(
+    event.register(
         'Tetrafluoroethylene',
         'tetrafluoroethylene',
         0x4c4c4c,
@@ -185,7 +195,7 @@ MIRegistrationEvents.registerFluids(e => {
     )
 
     // -- HYDROFLOURIC ACID -- //
-    e.register(
+    event.register(
         'Hydrofluoric Acid',
         'hydrofluoric_acid',
         0x419ad2,
@@ -195,7 +205,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- CHLOROFORM -- //
-    e.register(
+    event.register(
         'Chloroform',
         'chloroform',
         0xefefef,
@@ -205,7 +215,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- FLUORINE -- // 
-    e.register(
+    event.register(
         'Fluorine',
         'fluorine',
         0xe8fb97,
@@ -215,7 +225,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- LIQUID ENDER -- //
-    e.register(
+    event.register(
         'Liquid Ender',
         'liquid_ender',
         0x105e51,
@@ -225,7 +235,7 @@ MIRegistrationEvents.registerFluids(e => {
     );
 
     // -- MOLTEN ENDERIUM -- //
-    e.register(
+    event.register(
         'Molten Enderium',
         'molten_enderium',
         0x105e51,
@@ -233,4 +243,125 @@ MIRegistrationEvents.registerFluids(e => {
         false,
         'high'
     );
+
+    // -- NITRIC ACID -- //
+    event.register(
+        'Nitric Acid',
+        'nitric_acid',
+        0xfcf8c9,
+        'water',
+        true,
+        'low'
+    );
+
+    // -- AMMONIA -- //
+    event.register(
+        'Ammonia',
+        'ammonia',
+        0xdee4e8,
+        'water',
+        true,
+        'low'
+    );
+
+    // -- WASTE BERYL AMMONIA SOLUTION -- //
+    event.register(
+        'Waste Beryl Ammonia Solution',
+        'waste_beryl_ammonia_solution',
+        0xbfbda0,
+        'water',
+        true,
+        'low'
+    );
+
+    // -- BERYLLIUM SULFATE -- //
+    event.register(
+        'Beryllium Sulfate',
+        'beryllium_sulfate',
+        0x236e69,
+        'water',
+        false,
+        'medium'
+    );
+
+    // -- BERYLLIUM HYDROXIDE -- //
+    event.register(
+        'Beryllium Hydroxide',
+        'beryllium_hydroxide',
+        0x3fa4ca,
+        'water',
+        false,
+        'high'
+    );
+
+    // -- BERYLLIUM CHLORIDE -- //
+    event.register(
+        'Impure Beryllium Chloride Solution',
+        'beryllium_chloride',
+        0x375bc9,
+        'water',
+        false,
+        'medium'
+    );
+
+    // -- ACRYLONITRILE -- //
+    event.register(
+        'Acrylonitrile',
+        'acrylonitrile',
+        0xc9976e,
+        'water',
+        false,
+        'medium'
+    );
+
+    // -- ACRYLONITRILE BUTADIENE STYRENE -- //
+    event.register(
+        'Acrylonitrile Butadiene Styrene (ABS)',
+        'acrylonitrile_butadiene_styrene',
+        0xfcefd6,
+        'water',
+        false,
+        'high'
+    );
+
+    // -- MOLTEN BOROSILICATE GLASS -- //
+    event.register(
+        'Molten Borosilicate Glass',     // English name
+        'molten_borosilicate_glass',     // internal name
+        0xb7e9eb,       // Hex color code
+        'lava',         // Texture type
+        false,          // is a gas?
+        'medium'          // opacity
+    );
+
+    // -- BORON TRIFLUORIDE -- //
+    event.register(
+        'Boron Trifluoride',
+        'boron_trifluoride',
+        0xe0ffe3,
+        'water',
+        true,
+        'full'
+    );
+
+    // -- DIBORANE -- //
+    event.register(
+        'Diborane',
+        'diborane',
+        0x88bf8e,
+        'water',
+        true,
+        'full'
+    );
+
+    // -- PENTABORANE -- //
+    event.register(
+        'Pentaborane',
+        'pentaborane',
+        0xafff5c,
+        'water',
+        false,
+        'medium'
+    );
+
 });

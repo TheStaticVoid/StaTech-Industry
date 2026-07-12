@@ -3,49 +3,26 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
-    let mc = (id) => `minecraft:${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let cr = (id) => `create:${id}`;
-    let tr = (id) => `techreborn:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let chemicalReactor = (id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('chemical_reactor'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (item_inputs)
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
 
     // -- PHANTOM MEMBRANE -- //
-    chemicalReactor(
-        st('phantom_membrane'),
-        16,
-        200,
-        [
-            { amount: 16, item: mc('leather') }, 
-            { amount: 2, item: tr('calcite_dust') },
-        ],
-        [ { amount: 1, item: mc('phantom_membrane') } ],
-        [ { amount: 2000, fluid: mi('liquid_ender')} ]
-    );
+    // chemicalReactor(
+        // st('phantom_membrane'),
+        // 16,
+        // 200,
+        // [
+            // { amount: 16, item: mc('leather') }, 
+            // { amount: 2, item: tr('calcite_dust') },
+        // ],
+        // [ { amount: 1, item: mc('phantom_membrane') } ],
+        // [ { amount: 2000, fluid: mi('liquid_ender')} ]
+    // );
 
     // -- BLAZE ROD -- //
     chemicalReactor(
+        event,
         st('blaze_rod'),
         16,
         200,
@@ -59,6 +36,7 @@ ServerEvents.recipes(e => {
 
     // -- GHAST TEAR -- //
     chemicalReactor(
+        event,
         st('ghast_tear'),
         16,
         200,
@@ -72,6 +50,7 @@ ServerEvents.recipes(e => {
 
     // -- ROTTEN FLESH -- //
     chemicalReactor(
+        event,
         st('rotten_flesh'),
         16,
         200,
@@ -81,21 +60,20 @@ ServerEvents.recipes(e => {
     );
 
     // -- ENDER PEARL -- //
-    chemicalReactor(
-        st('ender_pearl'),
-        16,
-        200,
-        [ 
-            { amount: 1, item: mc('slime_ball') },
-            { amount: 4, item: 'xps:xp_dust' },
-            { amount: 1, item: mc('spider_eye') },
-        ],
-        [ { amount: 1, item: mc('ender_pearl') } ],
-        [ { amount: 500, fluid: 'xps:xp_fluid'} ]
-    );
+    // chemicalReactor(
+        // st('ender_pearl'),
+        // 16,
+        // 200,
+        // [ 
+            // { amount: 1, item: mc('slime_ball') },
+            // { amount: 1, item: mc('spider_eye') },
+        // ],
+        // [ { amount: 1, item: mc('ender_pearl') } ]
+    // );
 
     // -- ROSE QUARTZ -- //
     chemicalReactor(
+        event,
         st('rose_quartz'),
         16,
         200,
@@ -106,6 +84,7 @@ ServerEvents.recipes(e => {
 
     // -- EYE OF ENDER -- //
     chemicalReactor(
+        event,
         st('eye_of_ender'),
         8,
         600,
@@ -117,27 +96,18 @@ ServerEvents.recipes(e => {
     );
 
     // -- PLASTIC BAR -- //
-    chemicalReactor(
-        st('plastic_bar'),
-        16,
-        300,
-        [ { amount: 1, item: mc('paper') } ],
-        [ { amount: 1, item: 'anim_guns:plastic' } ],
-        [ { amount: 500, fluid: mi('polyethylene') } ]
-    );
-
-    // -- SNYTHETIC REDSTONE CRYSTAL -- //
-    chemicalReactor(
-        st('synthetic_redstone_crystal'),
-        24,
-        400,
-        [ { amount: 1, item: mc('diamond') } ],
-        [ { amount: 1, item: 'techreborn:synthetic_redstone_crystal' } ],
-        [ { amount: 3600, fluid: mi('molten_redstone') } ]
-    );
+    // chemicalReactor(
+        // st('plastic_bar'),
+        // 16,
+        // 300,
+        // [ { amount: 1, item: mc('paper') } ],
+        // [ { amount: 1, item: 'anim_guns:plastic' } ],
+        // [ { amount: 500, fluid: mi('polyethylene') } ]
+    // );
 
     // -- POLYTETRAFLUOROETHYLENE -- //
     chemicalReactor(
+        event,
         st('polytetrafluoroethylene'),
         20,
         300,
@@ -152,6 +122,7 @@ ServerEvents.recipes(e => {
 
     // -- TETRAFLUOROETHYLENE -- //
     chemicalReactor(
+        event,
         st('tetrafluoroethylene'),
         24,
         400,
@@ -169,6 +140,7 @@ ServerEvents.recipes(e => {
 
     // -- CHLOROFORM -- //
     chemicalReactor(
+        event,
         st('chloroform'),
         18,
         200, 
@@ -186,6 +158,7 @@ ServerEvents.recipes(e => {
 
     // -- FLUORINE -- //
     chemicalReactor(
+        event,
         st('fluorine'),
         24,
         300,
@@ -197,4 +170,195 @@ ServerEvents.recipes(e => {
         ],
         [ { amount: 2000, fluid: mi('hydrofluoric_acid') } ]
     );
+    
+    // -- BERYLLIUM SULFATE -- //
+    chemicalReactor(
+        event,
+        st('beryllium_sulfate'),
+        16,
+        100,
+        [ { amount: 3, item: mi('emerald_crushed_dust') } ],
+        null,
+        [ { amount: 150, fluid: mi('sulfuric_acid') } ],
+        [ { amount: 300, fluid: mi('beryllium_sulfate') } ]
+    );
+    
+    // -- BERYLLIUM SULFATE ALTERNATIVE -- //
+    chemicalReactor(
+        event,
+        st('beryllium_sulfate_alt'),
+        16,
+        50,
+        [ { amount: 5, item: mi('emerald_dust') } ],
+        null,
+        [ { amount: 150, fluid: mi('sulfuric_acid') } ],
+        [ { amount: 300, fluid: mi('beryllium_sulfate') } ]
+    );
+
+    // -- BERYLLIUM HYDROXIDE -- //
+    chemicalReactor(
+        event,
+        st('beryllium_hydroxide'),
+        24,
+        300,
+        null,
+        null,
+        [
+            { amount: 2250, fluid: mi('beryllium_sulfate') },
+            { amount: 7000, fluid: mi('ammonia') }
+        ],
+        [ 
+            { amount: 1200, fluid: mi('beryllium_hydroxide') },
+            { amount: 8000, fluid: mi('waste_beryl_ammonia_solution') } 
+        ]
+    );
+
+    // -- BERYLLIUM CHLORIDE -- //
+    chemicalReactor(
+        event,
+        st('beryllium_chloride'),
+        16,
+        200,
+        [ { amount: 2, item: mi('carbon_dust') } ],
+        null,
+        [
+            { amount: 800, fluid: mi('beryllium_hydroxide') },
+            { amount: 300, fluid: mi('chlorine') }
+        ],
+        [ { amount: 1100, fluid: mi('beryllium_chloride') } ]
+    );
+
+    // -- AMMONIA -- //
+    chemicalReactor(
+        event,
+        st('ammonia'),
+        8,
+        400,
+        null,
+        null,
+        [ 
+            { amount: 250, fluid: mi('nitrogen') },
+            { amount: 750, fluid: mi('hydrogen') }
+        ],
+        [ { amount: 1000, fluid: mi('ammonia') } ]
+    );
+
+    // -- ACRYLONITRILE -- //
+    chemicalReactor(
+        event,
+        st('acrylonitrile'),
+        32,
+        200,
+        [ { amount: 1, item: mi('antimony_tiny_dust'), probability: 0.8 } ],
+        null,
+        [ 
+            { amount: 200, fluid: mi('propene') },
+            { amount: 200, fluid: mi('ammonia') },
+            { amount: 300, fluid: mi('oxygen') }
+        ],
+        [ 
+            { amount: 200, fluid: mi('acrylonitrile') },
+            { amount: 600, fluid: mc('water'), probability: 0.9 }
+         ]
+    );
+
+    // -- ACRYLONITRILE BUTADIENE STYRENE -- //
+    chemicalReactor(
+        event,
+        st('acrylonitrile_butadiene_styrene'),
+        8,
+        200,
+        [ { amount: 1, item: mi('chromium_tiny_dust')} ],
+        null,
+        [ 
+            { amount: 250, fluid: mi('acrylonitrile') },
+            { amount: 250, fluid: mi('styrene_butadiene') },
+            { amount: 50, fluid: mi('sulfuric_acid') }
+        ],
+        [ { amount: 700, fluid: mi('acrylonitrile_butadiene_styrene') } ]
+    );
+
+    // -- BORON TRIFLUORIDE -- //
+    chemicalReactor(
+        event,
+        st('boron_trifluoride'),
+        32,
+        400,
+        [ { amount: 1, item: mi('boron_trioxide_dust')} ],
+        null,
+        [ { amount: 6000, fluid: mi('hydrofluoric_acid') } ],
+        [ 
+            { amount: 2000, fluid: mi('boron_trifluoride') },
+            { amount: 3000, fluid: mc('water') }
+        ]
+    );
+
+    // -- DIBORANE -- //
+    chemicalReactor(
+        event,
+        st('diborane'),
+        32,
+        600,
+        [ { amount: 6, item: mi('lithium_hydride_dust')} ],
+        [ { amount: 6, item: mi('lithium_tetrafluoroborate_dust')} ],
+        [ { amount: 8000, fluid: mi('boron_trifluoride') } ],
+        [ { amount: 1000, fluid: mi('diborane') } ]
+    );
+
+    // -- LITHIUM HYDRIDE DUST -- //
+    chemicalReactor(
+        event,
+        st('lithium_hydride'),
+        8,
+        200,
+        null,
+        [ { amount: 1, item: mi('lithium_hydride_dust')} ],
+        [ 
+            { amount: 1000, fluid: mi('lithium') },
+            { amount: 1000, fluid: mi('hydrogen') },
+        ]
+    );
+
+    // -- LITHIUM HYDRIDE DECOMPOSITION -- //
+    chemicalReactor(
+        event,
+        st('lithium_hydride_decompose'),
+        8,
+        100,
+        [ { amount: 1, item: mi('lithium_hydride_dust') } ],
+        null,
+        [ { amount: 1500, fluid: mc('water') } ],
+        [ 
+            { amount: 1000, fluid: mi('lithium') },
+            { amount: 1500, fluid: mi('hydrogen') },
+            { amount: 500, fluid: mi('oxygen') }
+        ]
+    );
+
+    // -- LITHIUM FLUORIDE DUST -- //
+    chemicalReactor(
+        event,
+        st('lithium_fluoride'),
+        8,
+        200,
+        null,
+        [ { amount: 1, item: mi('lithium_fluoride_dust')} ],
+        [ 
+            { amount: 1000, fluid: mi('lithium') },
+            { amount: 1000, fluid: mi('fluorine') },
+        ]
+    );
+
+    // -- PROPENE -- //
+    chemicalReactor(
+        event,
+        st('propene'),
+        16,
+        800,
+        [ { amount: 3, item: mi('carbon_dust')} ],
+        null,
+        [ { amount: 6000, fluid: mi('hydrogen') } ],
+        [ { amount: 1000, fluid: mi('propene') } ]
+    );
+
 });

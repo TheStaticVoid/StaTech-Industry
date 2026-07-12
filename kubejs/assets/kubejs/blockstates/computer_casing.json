@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "":  {
+      "model": "kubejs:block/grinder"
+    }
+  },
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "kubejs:block/computer_casing/ctm/4",
+    "empty": "kubejs:block/computer_casing/ctm/1",
+    "horizontal": "kubejs:block/computer_casing/ctm/3",
+    "particle": "kubejs:block/computer_casing/ctm/0",
+    "vertical": "kubejs:block/computer_casing/ctm/2"
+  }
+}

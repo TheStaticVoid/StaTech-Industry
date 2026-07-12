@@ -14,10 +14,6 @@ MIMachineEvents.registerRecipeTypes(e => {
 });
 
 MIMachineEvents.registerMachines(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-
     const steelMachineCasing = e.memberOfBlock(mi('steel_machine_casing'));
     const glassBlock = e.memberOfBlock(mc('glass'));
     const cupronickelCoil = e.memberOfBlock(mi('cupronickel_coil'));

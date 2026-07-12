@@ -5,15 +5,15 @@
 
 let ROCKET_PART_ASSEMBLER;
 
-MIMachineEvents.registerRecipeTypes(e => {
-    ROCKET_PART_ASSEMBLER = e.register('rocket_part_assembler')
+MIMachineEvents.registerRecipeTypes(event => {
+    ROCKET_PART_ASSEMBLER = event.register('rocket_part_assembler')
         .withItemInputs()
         .withFluidInputs()
         .withItemOutputs();
 });
 
-MIMachineEvents.registerMachines(e => {
-    e.craftingSingleBlock(
+MIMachineEvents.registerMachines(event => {
+    event.craftingSingleBlock(
         // General parameters
         'Rocket Part Assembler',
         'rocket_part_assembler',
@@ -22,9 +22,9 @@ MIMachineEvents.registerMachines(e => {
 
         // GUI Configuration
         191, // background height (or -1 for default value)
-        e.progressBar(103, 39, 'triple_arrow'), // progress bar
-        e.efficiencyBar(43, 89), // efficiency bar 
-        e.energyBar(14, 42), // energy bar 
+        event.progressBar(103, 39, 'triple_arrow'), // progress bar
+        event.efficiencyBar(43, 89), // efficiency bar 
+        event.energyBar(14, 42), // energy bar 
 
         // Slot Configuration
         6, // Item input count
@@ -40,6 +40,6 @@ MIMachineEvents.registerMachines(e => {
         // Model configuration
         true, // front overlay?
         true, // top overlay?
-        false,
+        true,
     );
 });

@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create"
+	group: "109C2F5A861C0A8B"
+	icon: {
+		id: "create:wrench"
+	}
+	id: "6A3B096018B7FAD6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "74A5E0864532439F"
+		tasks: [{
+			id: "78E6CC8F33BEC8F9"
+			item: { count: 1, id: "create:millstone" }
+			type: "item"
+		}]
+		x: -1.5d
+		y: 0.5d
+	}]
+}

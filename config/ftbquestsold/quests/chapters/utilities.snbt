@@ -1,0 +1,773 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "utilities"
+	group: "135E7B9D4273E5DD"
+	icon: {
+		id: "gag:time_sand_pouch"
+	}
+	id: "3E16F2F46B00419C"
+	images: [{
+		click: "https://tweaked.cc/"
+		height: 1.0d
+		hover: ["Click to check out the CC:Restitched wiki!"]
+		image: "modern_industrialization:block/casings/steel_crate/top"
+		rotation: 0.0d
+		width: 1.0d
+		x: 11.5d
+		y: 4.0d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "73C2BC46B62799D4"
+			rewards: [{
+				id: "65873882A7F0AC7E"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "01FEDF412678560E"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			id: "16FC72D878F9B6FB"
+			rewards: [{
+				id: "6539825A94810A2D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7C9ABEB2F52198D7"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			id: "2CCE43B3304C016D"
+			rewards: [{
+				id: "246C1A49887A6097"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3BF6E544CCA8C9A5"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			id: "10CD749A39267942"
+			rewards: [{
+				id: "2723A47485A2CAA7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "43E5211A28223616"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			id: "77C8C1E759C36CB9"
+			rewards: [{
+				id: "2EA27CD7FEB7EBA9"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "08F6769569D78D66"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "1976EABD4551F6C8"
+			rewards: [{
+				id: "2B3FBE0574AB40B0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2FF45D67758DA810"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			id: "06170E4C91291CE2"
+			rewards: [{
+				id: "7357A762BFAE0987"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "15BB128ABE86F903"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			id: "7DF831878A6CF9FF"
+			rewards: [{
+				id: "68AE384C31596C70"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "018A1584B80B9B75"
+				item: { count: 1, id: "minecraft:totem_of_undying" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "447831F00F41AA6C"
+			rewards: [{
+				id: "6C4993A4634D3697"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5E3A8C815C0BB1E4"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			id: "2C84E1C3D7590A49"
+			rewards: [{
+				id: "5F35E74B33655831"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "177A7F6826D41CBE"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			id: "3CCE573B3AFB429D"
+			rewards: [{
+				id: "3D9FBA35B5DD3A8A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "65318DDF23C4A130"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			id: "2F133B5C4B1027C7"
+			rewards: [{
+				id: "4621A0A48D2B27A8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "799173746D8D6ECB"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			id: "375463DA61D3A69C"
+			rewards: [{
+				id: "74B7EFFEBC5B868C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "59BCFDB711AEDCD5"
+				item: { count: 1, id: "gag:escape_rope" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "4280BD3627ECC8A2"
+			rewards: [{
+				id: "2F4056E0171418AF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3ED0DAA59322205B"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			id: "7AE5106D5AF45BED"
+			rewards: [{
+				id: "253B0254C76B8AB0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7BEBC33792630266"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			id: "040EC8942C0CD7C1"
+			rewards: [{
+				id: "1B7A4D5A1A84253A"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "23AD6831034627BC"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["040EC8942C0CD7C1"]
+			id: "754B5248E5936550"
+			rewards: [{
+				id: "6B1B9F02FCD16BF7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "736FD69D3EB40E37"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["754B5248E5936550"]
+			id: "4CE4FA07D044D0C6"
+			rewards: [{
+				id: "2696405B7668FB04"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "705E160F1B0E9658"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4CE4FA07D044D0C6"]
+			id: "79F7D488E030ABCE"
+			rewards: [{
+				id: "31F688B292669BBD"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5FA747C5A7921729"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["79F7D488E030ABCE"]
+			id: "1896D76F5F8DE2F9"
+			rewards: [{
+				id: "3A4C4062CC3FF391"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "55CD90130C650A1E"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			id: "6674C6799552AFD5"
+			rewards: [{
+				id: "3705D1AE976EADB5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7EB2AD15ADC9AEAE"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6674C6799552AFD5"]
+			id: "1F11A6C3F6C91F61"
+			rewards: [{
+				id: "49EA0F1B2642E49B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0CB7D049DDC51B18"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1F11A6C3F6C91F61"]
+			id: "29E94ED87031FE30"
+			rewards: [{
+				id: "671AD7A233CEA51D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "45FAD8A489495A42"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["29E94ED87031FE30"]
+			id: "286E00B83AB335A9"
+			rewards: [{
+				id: "28910EF76B16E254"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1A1E0D3A66243C43"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["286E00B83AB335A9"]
+			id: "280E186D6E447C3A"
+			rewards: [{
+				id: "5405B48183256344"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "67627536ABAD1F15"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["59442F8EBE6F9F06"]
+			id: "26A75B67D8248BFE"
+			rewards: [{
+				id: "2B682E284C6643F7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "501949B8FAB68802"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["26A75B67D8248BFE"]
+			id: "652C0BC994B42E3D"
+			rewards: [{
+				id: "6BC50769DF8D58AC"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6880F97C58C5825D"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["26A75B67D8248BFE"]
+			id: "007F24724F7C4467"
+			rewards: [{
+				id: "3497DE8DB33EE560"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "56F3E3EA55DD0019"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["26A75B67D8248BFE"]
+			id: "314EA5A456B38508"
+			rewards: [{
+				id: "2FFEC6E73F2CFEA8"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1FC0C02A2E087B5C"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			id: "4901BE91F31B97A6"
+			rewards: [{
+				id: "58086095725027D4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "194F406D5F8C5736"
+				item: { count: 1, id: "sophisticatedbackpacks:feeding_upgrade" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			id: "35B355974563CA8B"
+			rewards: [{
+				id: "79A018EE436D057D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4AAE963F380FD67D"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "3214344C3D3EE907"
+			rewards: [{
+				id: "061F329C415B7E08"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "58743438BF42B7D3"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			id: "616AE4F76CF4B3E9"
+			rewards: [{
+				id: "2FCF9023CC09EB67"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "27E40C48A822583C"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			id: "38B71B456569296B"
+			rewards: [{
+				id: "74719C11F0C6AA36"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6FEF21DBB4D27D94"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["38B71B456569296B"]
+			id: "1CB50572194C932F"
+			rewards: [{
+				id: "11A152407B1B784D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "36502299AE18685A"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			id: "183ED29E27120099"
+			rewards: [{
+				id: "7222D26E7E4620F1"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2BD703F80B9EAA00"
+				item: { count: 1, id: "torchmaster:megatorch" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			id: "0E914B90AC68FD96"
+			rewards: [{
+				id: "1B584F1DAB867188"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "31991C5E2A07365B"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			id: "1853C266F78A8777"
+			rewards: [{
+				id: "29EC0300BFDF9512"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "32F908C707DAC5A4"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			id: "131DE00E5538A45C"
+			rewards: [{
+				id: "3AAD71A6C064636D"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "614939D6695E0BF0"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 5.5d
+		}
+		{
+			id: "787CC6E0C5E2D17A"
+			rewards: [{
+				id: "01B1D61DAE305199"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "46794468EA0EB7A2"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 4.0d
+		}
+		{
+			id: "6730EAFBD67277D8"
+			rewards: [{
+				id: "7BE5A4DD9C679C6C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5AE8458CBB7E2720"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			id: "1A915B3D1C8D5A46"
+			rewards: [{
+				id: "52EC494A1DB2350B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "640C892CFC379263"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			id: "5E080BBBF5CF8CDE"
+			rewards: [{
+				id: "595718A332437BB5"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7646BED11C7A1956"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 8.5d
+		}
+		{
+			id: "09CADCF8F4364A49"
+			rewards: [{
+				id: "5FEEED6B6B297309"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "10218C9EF1C4A469"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			id: "060A731AEBEA372B"
+			rewards: [{
+				id: "0FA8833B9A731A7B"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "74BDC6100C8CF111"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			id: "291CD73E1846E514"
+			rewards: [{
+				id: "36380BB49751B649"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7537C254398BD7AE"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			id: "3DFC107C97761ECB"
+			rewards: [{
+				id: "46BE203C71ABEE13"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "22C47303A731AC9E"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			id: "04D26675230550D4"
+			rewards: [{
+				id: "2DE108FBB625EEE0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "66635FA796FF3AD2"
+				item: { count: 1, id: "constructionstick:copper_stick" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			id: "106CE98BB4795B96"
+			rewards: [{
+				id: "71A49C37316A80AF"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2CF1603C6B2F47E3"
+				type: "checkmark"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			id: "23F80A11A2F9C821"
+			rewards: [{
+				id: "3BB54E37792291AE"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "3B9ACE9E9A250D68"
+				item: { count: 1, id: "gag:time_sand_pouch" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			id: "59FAC14685681DC8"
+			rewards: [{
+				id: "3F00B015BA6703B6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "777868E8C51FAC57"
+				item: { count: 1, id: "torchmaster:dreadlamp" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			id: "2CC0A9C9926FB030"
+			rewards: [{
+				id: "01E7883813E9FC90"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7016E329213FFBCF"
+				item: { count: 1, id: "torchmaster:feral_flare_lantern" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+	]
+}

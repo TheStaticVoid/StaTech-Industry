@@ -3,30 +3,13 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(e => {
+ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/distillation_tower/${id}`;
-    let mi = (id) => `modern_industrialization:${id}`;
-    let mc = (id) => `minecraft:${id}`;
-
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let distillationTower = (id, eu, duration, fluid_inputs, fluid_outputs) => {
-        let newRecipe = {
-            type: mi('distillation_tower'),
-            eu: eu,
-            duration: duration
-        }
-
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
-        if (fluid_outputs)
-            newRecipe['fluid_outputs'] = fluid_outputs;
-
-        e.custom(newRecipe).id(id);
-    }
 
     // -- WOOD TAR -- //
     distillationTower(
+        event,
         st('wood_tar'),
         48, 
         200,
@@ -41,6 +24,7 @@ ServerEvents.recipes(e => {
 
     // -- BRINE -- //
     distillationTower(
+        event,
         st('brine'),
         16,
         300,

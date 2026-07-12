@@ -1,43 +1,36 @@
 // -----------------------------------------
-// CREATED BY STATIC FOR USE IN
+// CREATED BY STATIC AND DINO FOR USE IN
 // STATECH INDUSTRY
 // -----------------------------------------
+const chisel = Ingredient.of('@chisel').except('chisel:chisel').getStacks().toArray();
+const factory = Ingredient.of(`@factory_blocks`).getStacks().toArray();
 
-ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let st = (id) => `statech:${id}`;
-    let ch = (id) => `chisel:${id}`;
+ServerEvents.tags('item', event => {
 
-    // Remove and replace the default chisel recipe
-    e.remove({id: ch('chisel')});
-
-    // -- CHISEL -- // 
-    e.shaped(ch('chisel'), [
-        ' P',
-        'S '
-    ],
-    {
-        P: '#c:iron_plates',
-        S: '#c:wood_sticks'
+    // -- TAGGING FOR RECIPES -- //
+    chisel.forEach(item => {
+        var blocks = item.id.split('/')[1];
+        event.add(`chisel:chiseled_${blocks}`, `${item.id}`)
+        event.add(`chisel:chiseled_${blocks}`, `minecraft:${blocks}`)
     })
-    .id(st('chisel'));
+
+    factory.forEach(item => {
+        event.add(`factory_blocks:factory_blocks`, `${item.id}`)
+    })
+}); 
+
+ServerEvents.recipes(event => {
 
     // Add stonecutting recipes for all chisel blocks
     // -- CHISEL BLOCKS -- //
-    const chisel = Ingredient.of('#chisel:chiseled_blocks').getStacks().toArray();
-
     chisel.forEach(item => {
         var material = item.id.split('/')[1];
-        if (material === 'purpur') {  // Use vanilla purpur block
-            material = 'purpur_block';
-        }
-        e.stonecutting(`1x ${item.id}`, `minecraft:${material}`);
+        var result = item.id.split('/')[0];
+        event.stonecutting(`1x ${result}/${material}`, `#chisel:chiseled_${material}`);
     });
 
-    // -- FACTORY BLOCKS -- //
-    const factory = Ingredient.of(`#factory_blocks:chiseled_blocks`).getStacks().toArray();
-  
+    // -- FACTORY BLOCKS -- //  
     factory.forEach(item => {
-        e.stonecutting(`1x ${item.id}`, 'factory_blocks:factory');
-    });
+        event.stonecutting(`1x ${item.id}`, '#factory_blocks:factory_blocks');
+    }); 
 });
