@@ -21,8 +21,8 @@
 				item: { count: 1, id: "sophisticatedbackpacks:feeding_upgrade" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.0d
+			x: 0.5d
+			y: -4.5d
 		}
 		{
 			id: "375463DA61D3A69C"
@@ -51,8 +51,8 @@
 				item: { count: 1, id: "minecraft:totem_of_undying" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: 5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["323919C5F7774E1B"]
@@ -136,8 +136,8 @@
 				item: { count: 1, id: "gag:time_sand_pouch" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			id: "2CC0A9C9926FB030"
@@ -170,6 +170,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["13FB4D096D94C939"]
 			id: "183ED29E27120099"
 			rewards: [{
 				id: "7222D26E7E4620F1"
@@ -212,8 +213,8 @@
 				item: { count: 1, id: "gag:hearthstone" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -3.0d
+			x: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["16FC60FF6E3A4517"]
@@ -228,8 +229,8 @@
 				item: { count: 1, id: "gag:energized_hearthstone" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -1.5d
+			x: -1.0d
+			y: 1.5d
 		}
 		{
 			id: "5BE4985239D91BCF"
@@ -275,7 +276,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7B47A1F9B622525C"]
@@ -291,7 +292,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -311,7 +312,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -329,8 +330,8 @@
 				item: { count: 1, id: "artifacts:eternal_steak" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["15417EE9AF265E49"]
@@ -345,8 +346,8 @@
 				item: { count: 1, id: "artifacts:everlasting_beef" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.0d
+			x: 5.0d
+			y: 1.5d
 		}
 		{
 			id: "793C06B4BEA61EA6"
@@ -380,7 +381,7 @@
 				}
 			]
 			x: 2.0d
-			y: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -399,7 +400,7 @@
 				item: { count: 1, id: "kubejs:angel_ring" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -414,8 +415,8 @@
 				item: { count: 1, id: "phantoms_utilities:spray_can" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7EFD1192E201F04A"]
@@ -430,8 +431,8 @@
 				item: { count: 1, id: "kubejs:fireproof_ring" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0799245700C72434"]
@@ -456,8 +457,54 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: -3.0d
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7D44CBA637915377"]
+			id: "10DAF619DFDED75F"
+			rewards: [{
+				id: "0B6097109F708554"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7E90878DA59D43D2"
+				item: { count: 1, id: "industrialization_overdrive:terminal" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			icon: {
+				id: "exposure:camera"
+			}
+			id: "717AC9D60B7E0AEA"
+			rewards: [{
+				id: "4A814E1B2C2285FA"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "488D7B6B81B5A711"
+					item: { count: 1, id: "exposure:camera" }
+					type: "item"
+				}
+				{
+					id: "60513251D8826814"
+					item: { count: 1, id: "exposure:lightroom" }
+					type: "item"
+				}
+				{
+					id: "250A151CC03453ED"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(exposure:film_rolls)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.5d
 		}
 	]
 }

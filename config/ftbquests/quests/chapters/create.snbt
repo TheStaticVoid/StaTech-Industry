@@ -12,11 +12,19 @@
 	quests: [
 		{
 			id: "632520CC26B43DD5"
-			rewards: [{
-				id: "12363685621C165D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "12363685621C165D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "758C2CA50DEE5FB3"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			size: 2.0d
 			tasks: [{
@@ -30,11 +38,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "3239CF4A9CF033B1"
-			rewards: [{
-				id: "5DE04B7C614054BF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5DE04B7C614054BF"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "394BE0B04F006DEB"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "66DCA8ED7934C5B1"
@@ -47,11 +63,19 @@
 		{
 			dependencies: ["3239CF4A9CF033B1"]
 			id: "51E52A2FF80C88B9"
-			rewards: [{
-				id: "679C323E56CA0589"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "679C323E56CA0589"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4197C7ACFF93D027"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [
 				{
@@ -71,11 +95,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "326FE40599BCBF5E"
-			rewards: [{
-				id: "0C2837CF9AC6E766"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0C2837CF9AC6E766"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "300F05EF1D6099F6"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "0BB7AD9C52C13616"
 				item: { count: 1, id: "create:andesite_tunnel" }
@@ -87,11 +119,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "3F8AE551391E2AAC"
-			rewards: [{
-				id: "74F3C03C0C6CF67C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "74F3C03C0C6CF67C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19075E8F5279533A"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "0F87C34DA76F237E"
 				item: { count: 1, id: "create:andesite_funnel" }
@@ -103,11 +143,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "53E8235B83062412"
-			rewards: [{
-				id: "7FB115CFE0111423"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7FB115CFE0111423"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1BEA135019098987"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "367A9013F94CFE4F"
 				item: { count: 1, id: "create:sticker" }
@@ -119,11 +167,19 @@
 		{
 			dependencies: ["029C56FD6F1A36F0"]
 			id: "193BF21914D516D4"
-			rewards: [{
-				id: "7B28B3BAAA0B52A7"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7B28B3BAAA0B52A7"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F2B69E20A36DDAD"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "27C06CB59DAC9EAE"
 				item: { count: 1, id: "create:steam_engine" }
@@ -135,11 +191,19 @@
 		{
 			dependencies: ["29D31374AED2C5CA"]
 			id: "3556AF68516726A7"
-			rewards: [{
-				id: "21FE037BEFB05668"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "21FE037BEFB05668"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "35DE11570BDFA6C8"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "29A4A8BA7780CB07"
 				item: { count: 1, id: "create:nozzle" }
@@ -151,11 +215,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "54C28E82A9D14BD6"
-			rewards: [{
-				id: "4C6FA90ACBDBE351"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4C6FA90ACBDBE351"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "672012EDBED712F9"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7C4CFFFF007CD399"
 				item: { count: 1, id: "create:mechanical_plough" }
@@ -167,11 +239,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "02F4E31DE3C32451"
-			rewards: [{
-				id: "329BB56CD3BA19CB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "329BB56CD3BA19CB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "513928C801C81ECB"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7014073C580926A5"
 				item: { count: 1, id: "create:mechanical_harvester" }
@@ -183,11 +263,19 @@
 		{
 			dependencies: ["4F4C5DEE88EABE32"]
 			id: "00E0C91FE5B41AAB"
-			rewards: [{
-				id: "0C5BE73D936342CB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0C5BE73D936342CB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "680CFDBE84257D3D"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "101F9FAC04242CFD"
 				item: { count: 1, id: "create:mechanical_drill" }
@@ -199,11 +287,19 @@
 		{
 			dependencies: ["533DF50DD1D042B2"]
 			id: "39A18229DA7BA475"
-			rewards: [{
-				id: "14081D0094AD562F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "14081D0094AD562F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "36AC1CC57A8B8C02"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "3BD4BF23D010EC6F"
 				item: { count: 1, id: "create:mechanical_arm" }
@@ -215,11 +311,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "4D50D8A56A41A02B"
-			rewards: [{
-				id: "2837F2B7DECB1A0C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2837F2B7DECB1A0C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "50C33B4585FBEDF0"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "0837BD0D43ABC22C"
@@ -238,11 +342,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "427BC6F222164EA4"
-			rewards: [{
-				id: "3EF718E21DE7BFBA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3EF718E21DE7BFBA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "297444A0FC43BFC9"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "405DF87F2F63065A"
 				item: { count: 1, id: "create:hand_crank" }
@@ -255,11 +367,19 @@
 			dependencies: ["2B1123DC479F00CB"]
 			hide_dependent_lines: true
 			id: "1267AB38FC5D1702"
-			rewards: [{
-				id: "2FC98339CE1BB316"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2FC98339CE1BB316"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6A3A8AB5EB9DD417"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "4783BF4097755EEC"
 				item: { count: 1, id: "create:display_board" }
@@ -271,11 +391,19 @@
 		{
 			dependencies: ["4F4C5DEE88EABE32"]
 			id: "4B648AE558C01675"
-			rewards: [{
-				id: "2BEE18C2A6BC96B8"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2BEE18C2A6BC96B8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0F26B0D2359D39C5"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "4D26E87E57127DDB"
 				item: { count: 1, id: "create:depot" }
@@ -287,11 +415,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "2ADF64052E72B660"
-			rewards: [{
-				id: "1CAE23801090DCCC"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1CAE23801090DCCC"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "667A57AE77F8D5D3"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "47017EE93BBC469D"
 				item: { count: 1, id: "create:copper_valve_handle" }
@@ -303,11 +439,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "78FE278994F8313E"
-			rewards: [{
-				id: "30FBEEE13218E61F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "30FBEEE13218E61F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "47E1E83BE6FD7EEC"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "37D75454BBD84C9B"
 				item: { count: 1, id: "create:cart_assembler" }
@@ -319,11 +463,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "27E1D6ADECEF5F5C"
-			rewards: [{
-				id: "13FB629E2EDE65F3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "13FB629E2EDE65F3"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2EB772ADED544868"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [
 				{
@@ -343,11 +495,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "10FBE866C3067840"
-			rewards: [{
-				id: "0886C3A1777C0D92"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0886C3A1777C0D92"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0BD6F8AC060B958B"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "3DE46249FA4AC75A"
@@ -371,11 +531,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "4F4C5DEE88EABE32"
-			rewards: [{
-				id: "4A915BA7FFF97E81"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4A915BA7FFF97E81"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5D900B5E96B5CE99"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "7D88CED0C91CE2C9"
@@ -388,11 +556,19 @@
 		{
 			dependencies: ["3239CF4A9CF033B1"]
 			id: "562334D89C7F25D7"
-			rewards: [{
-				id: "460EAF109FFA64CA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "460EAF109FFA64CA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "119EA19F431BFF64"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "7BFA7362C02B2DED"
@@ -411,11 +587,19 @@
 		{
 			dependencies: ["3239CF4A9CF033B1"]
 			id: "5CD3F629B0ED08A8"
-			rewards: [{
-				id: "3DA3247626A28E4D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3DA3247626A28E4D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E304412FADB1797"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "548E4BB296B475B8"
 				item: { count: 1, id: "supplementaries:turn_table" }
@@ -427,11 +611,19 @@
 		{
 			dependencies: ["4F4C5DEE88EABE32"]
 			id: "51356454DB10752D"
-			rewards: [{
-				id: "156234D36BF58FAE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "156234D36BF58FAE"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "069B6F4B0F680CE3"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -445,11 +637,19 @@
 		{
 			dependencies: ["3239CF4A9CF033B1"]
 			id: "61127720B0515A9F"
-			rewards: [{
-				id: "636FA19553142AB4"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "636FA19553142AB4"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D64733DBEC4D0AF"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "72549507F92433D8"
 				item: { count: 1, id: "create:mechanical_bearing" }
@@ -461,11 +661,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "29D31374AED2C5CA"
-			rewards: [{
-				id: "647BA52D7AADFA8A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "647BA52D7AADFA8A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3D2C4B66AC60252D"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "6597AC1AD436FF6F"
 				item: { count: 1, id: "create:encased_fan" }
@@ -477,11 +685,19 @@
 		{
 			dependencies: ["4F4C5DEE88EABE32"]
 			id: "45030D0575117544"
-			rewards: [{
-				id: "0354E3C9CC600BFB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0354E3C9CC600BFB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F8939E12DAD2828"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "58D003E4202D3222"
 				item: { count: 1, id: "create:clutch" }
@@ -510,11 +726,19 @@
 			dependencies: ["632520CC26B43DD5"]
 			hide_dependency_lines: true
 			id: "08C156EC82878D36"
-			rewards: [{
-				id: "77ADEB8B3D314F33"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "77ADEB8B3D314F33"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4C1E1D6B5B1441F3"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "3A7BEAFC8AF0C69B"
@@ -527,11 +751,19 @@
 		{
 			dependencies: ["08C156EC82878D36"]
 			id: "2B1123DC479F00CB"
-			rewards: [{
-				id: "459F0F58906D826A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "459F0F58906D826A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "59A0F05D20FCD0EE"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "03AC25E025C2AB8D"
@@ -547,11 +779,19 @@
 				"6A6064DA99456D70"
 			]
 			id: "4B5EFD81AA487CC0"
-			rewards: [{
-				id: "3F65D9720CD62126"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3F65D9720CD62126"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21E42A467CCF6292"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "4336B68A0C7DABFC"
 				item: { count: 1, id: "create:display_link" }
@@ -563,11 +803,19 @@
 		{
 			dependencies: ["03B0AC7D643C8EC2"]
 			id: "029C56FD6F1A36F0"
-			rewards: [{
-				id: "014C0B2F70C9719C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "014C0B2F70C9719C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CA9A15586C4C0A3"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "4AFB9998704F601E"
@@ -580,11 +828,19 @@
 		{
 			dependencies: ["5280346E492CDFF6"]
 			id: "533DF50DD1D042B2"
-			rewards: [{
-				id: "0CB96B0CB2206B3D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0CB96B0CB2206B3D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "222D926D5E3F3E2A"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "153A3C4EE3C29A4F"
@@ -600,11 +856,19 @@
 				"2B1123DC479F00CB"
 			]
 			id: "1FB2AB80E328D561"
-			rewards: [{
-				id: "7DE8613023C0B553"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7DE8613023C0B553"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "13342B722A26356A"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "76C09C3E3E5C3578"
@@ -617,11 +881,19 @@
 		{
 			dependencies: ["029C56FD6F1A36F0"]
 			id: "38F45285404934C9"
-			rewards: [{
-				id: "202236A4435B68D1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "202236A4435B68D1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3CB7D5E844D21A7C"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "1621FAC5860527D0"
@@ -634,11 +906,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "69BA71FCCE7AFA07"
-			rewards: [{
-				id: "2C3574152430556C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2C3574152430556C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "60696E301568204F"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "6E596328022F60DF"
 				item: { count: 1, id: "create:content_observer" }
@@ -650,11 +930,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "0D7D5019B3497608"
-			rewards: [{
-				id: "6765CE9264C0BD1D"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6765CE9264C0BD1D"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B02C421E0FA291A"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "1B506AECC11A4D11"
 				item: { count: 1, id: "create:brass_tunnel" }
@@ -666,11 +954,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "06DB051FC1D3AB47"
-			rewards: [{
-				id: "1B5DC52D67ECF050"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1B5DC52D67ECF050"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A83A4DD73BC7AB0"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7537E628A6053FD7"
 				item: { count: 1, id: "create:brass_funnel" }
@@ -682,11 +978,19 @@
 		{
 			dependencies: ["45827521A02CAC95"]
 			id: "0AF1648BAD9A6BC2"
-			rewards: [{
-				id: "1CC036076B5FDB6C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1CC036076B5FDB6C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19CE14C15D2A9EB5"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "05A34EB799E1B634"
 				item: { count: 1, id: "create:track_signal" }
@@ -698,11 +1002,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "5CAF0951F5C41801"
-			rewards: [{
-				id: "0C9831B0E710C757"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0C9831B0E710C757"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "78E537E0DED388F7"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "4E5A675A7CCE135D"
 				item: { count: 1, id: "create:sequenced_gearshift" }
@@ -714,11 +1026,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "70D5D91870A5D460"
-			rewards: [{
-				id: "52D99060C6AA86D3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "52D99060C6AA86D3"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A1169703F753271"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "0191547F21020E51"
 				item: { count: 1, id: "create:nixie_tube" }
@@ -733,11 +1053,19 @@
 				"2B1123DC479F00CB"
 			]
 			id: "1A75E897313419C8"
-			rewards: [{
-				id: "44AA7BA4B7BF53F0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "44AA7BA4B7BF53F0"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E98237DCC9C7235"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -751,11 +1079,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "55D37DDFCB09FDE5"
-			rewards: [{
-				id: "1EC6C82ABCDF6512"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1EC6C82ABCDF6512"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "67409518134E024F"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7A978C03141BECE6"
 				item: { count: 1, id: "create:controller_rail" }
@@ -767,11 +1103,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "11C9E678E8183077"
-			rewards: [{
-				id: "7AEBE51DCA865CC6"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7AEBE51DCA865CC6"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E20A17DE7ECEE55"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "01CDB8958E6E867A"
 				item: { count: 1, id: "create:clockwork_bearing" }
@@ -783,11 +1127,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "0845ACA6AC5C6133"
-			rewards: [{
-				id: "7827ED22DFEFC510"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7827ED22DFEFC510"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7DE6D67BFC885898"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "11AED45BB7687A17"
 				item: { count: 1, id: "create:adjustable_chain_gearshift" }
@@ -799,11 +1151,19 @@
 		{
 			dependencies: ["029C56FD6F1A36F0"]
 			id: "333E6F1B069BAD9B"
-			rewards: [{
-				id: "5EEE3867F1AC4227"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5EEE3867F1AC4227"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "35573530C91D0F71"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "671ABB3C9322C460"
 				item: { count: 1, id: "create:pulse_repeater" }
@@ -815,11 +1175,19 @@
 		{
 			dependencies: ["029C56FD6F1A36F0"]
 			id: "7EB86063FC203097"
-			rewards: [{
-				id: "14197064C1B45D54"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "14197064C1B45D54"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3BE857230E2B0F5A"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "51528A4E5B3CBCE9"
 				item: { count: 1, id: "create:pulse_extender" }
@@ -831,11 +1199,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "2B492DF28D6BA003"
-			rewards: [{
-				id: "2C18853CE909CC32"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2C18853CE909CC32"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6BF39D6CAB9D5C9C"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7B95F2DB4956FD23"
 				item: { count: 1, id: "create:smart_fluid_pipe" }
@@ -847,11 +1223,19 @@
 		{
 			dependencies: ["029C56FD6F1A36F0"]
 			id: "1BBC92A8192D3088"
-			rewards: [{
-				id: "76A599AE9273B820"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "76A599AE9273B820"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "11D6ED409B5A67BC"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "58FE0EBB4015CA8F"
 				item: { count: 1, id: "create:placard" }
@@ -863,11 +1247,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "5A04649F71C48F37"
-			rewards: [{
-				id: "2FAE4EE55E855CFA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2FAE4EE55E855CFA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3C51BE907027375E"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "2DBF6E23F2FBAD6F"
 				item: { count: 1, id: "create:smart_chute" }
@@ -879,11 +1271,19 @@
 		{
 			dependencies: ["38F45285404934C9"]
 			id: "45827521A02CAC95"
-			rewards: [{
-				id: "258B9F14065EF935"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "258B9F14065EF935"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0C924FEE5CEF9559"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "6C0679E2B4E01161"
 				item: { count: 1, id: "create:railway_casing" }
@@ -895,11 +1295,19 @@
 		{
 			dependencies: ["7D701BCCC5BD6418"]
 			id: "769CFB937D75A903"
-			rewards: [{
-				id: "6B4AEFDA8514183B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6B4AEFDA8514183B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08327FC1E4C99CDF"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7FDCF5E63A0CFAC6"
 				item: { count: 1, id: "create:spout" }
@@ -911,11 +1319,19 @@
 		{
 			dependencies: ["56719D1E4C517695"]
 			id: "64C5F12BE26D9E50"
-			rewards: [{
-				id: "1AA3D30384A3E077"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1AA3D30384A3E077"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7DD5683647986C85"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7BF06154CBC6FAD2"
 				item: { count: 1, id: "create:controls" }
@@ -927,11 +1343,19 @@
 		{
 			dependencies: ["45827521A02CAC95"]
 			id: "5D71201E0F538DA2"
-			rewards: [{
-				id: "21BBC5AB98201B42"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "21BBC5AB98201B42"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6DA6FBDF2B6B379B"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "4DA4D01F30F9B38F"
 				item: { count: 1, id: "create:track_observer" }
@@ -943,11 +1367,19 @@
 		{
 			dependencies: ["45827521A02CAC95"]
 			id: "56719D1E4C517695"
-			rewards: [{
-				id: "1471321ECA72E194"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1471321ECA72E194"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "63926D4CB3DE329E"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "362F8A34BD5E90D5"
 				item: { count: 1, id: "create:track_station" }
@@ -959,11 +1391,19 @@
 		{
 			dependencies: ["56719D1E4C517695"]
 			id: "7B2901618284D7E5"
-			rewards: [{
-				id: "0793965B1E156AF5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0793965B1E156AF5"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34B00CB79B457A72"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "3087C0722BCEAFE5"
 				item: { count: 1, id: "create:schedule" }
@@ -975,11 +1415,19 @@
 		{
 			dependencies: ["5280346E492CDFF6"]
 			id: "078843982FA6DF90"
-			rewards: [{
-				id: "6D339268BDDF3391"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6D339268BDDF3391"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0AE5DA58F641FEB9"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "60C0D8DD9C96B05B"
 				item: { count: 1, id: "create:track" }
@@ -1007,11 +1455,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "15C0B7A968E7CA42"
-			rewards: [{
-				id: "6EA86A0D2991B50A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6EA86A0D2991B50A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6BD3897EFB91C15C"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "67E7EF480698955B"
@@ -1031,11 +1487,19 @@
 			dependencies: ["632520CC26B43DD5"]
 			hide_dependency_lines: true
 			id: "7D701BCCC5BD6418"
-			rewards: [{
-				id: "234E6DBC00E83361"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "234E6DBC00E83361"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15365DB0C692D160"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "23193059C370C90A"
 				item: { count: 1, id: "create:copper_casing" }
@@ -1047,11 +1511,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "414B56DC1F435AC1"
-			rewards: [{
-				id: "30CE6CBC1C813D7A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "30CE6CBC1C813D7A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "565237FF7AC3E60D"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "23DA5835514DEEF5"
 				item: { count: 1, id: "create:chute" }
@@ -1063,11 +1535,19 @@
 		{
 			dependencies: ["7D701BCCC5BD6418"]
 			id: "0DDD6FE36906140E"
-			rewards: [{
-				id: "218B93E780BE4072"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "218B93E780BE4072"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1C17AB221D1E1384"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "07C2AE25A8097B9B"
 				item: { count: 1, id: "create:item_drain" }
@@ -1079,11 +1559,19 @@
 		{
 			dependencies: ["7D701BCCC5BD6418"]
 			id: "6F5B129B002EF12E"
-			rewards: [{
-				id: "674C46A36BF77D69"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "674C46A36BF77D69"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "311F29FAD0427FF3"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "634C431107901E15"
 				item: { count: 1, id: "create:portable_fluid_interface" }
@@ -1095,11 +1583,19 @@
 		{
 			dependencies: ["7D701BCCC5BD6418"]
 			id: "505CFF1BDC44772A"
-			rewards: [{
-				id: "06B5B09E07ED6A7B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "06B5B09E07ED6A7B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C2C824E5EB5E1E1"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "6A8C47E233604C97"
 				item: { count: 1, id: "create:hose_pulley" }
@@ -1111,11 +1607,19 @@
 		{
 			dependencies: ["3239CF4A9CF033B1"]
 			id: "0A13C4E6C760EE80"
-			rewards: [{
-				id: "4E40A65AB0C0FD00"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4E40A65AB0C0FD00"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1CE678FF3F36E717"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "6A391A8918742885"
 				item: { count: 1, id: "create:belt_connector" }
@@ -1127,11 +1631,19 @@
 		{
 			dependencies: ["4F4C5DEE88EABE32"]
 			id: "29F54D8CD8A2BEFB"
-			rewards: [{
-				id: "2E5D6B108AD2FBE3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2E5D6B108AD2FBE3"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "49DD0D412438FCF8"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "0B8C915E255396B7"
 				item: { count: 1, id: "create:millstone" }
@@ -1143,11 +1655,19 @@
 		{
 			dependencies: ["1A75E897313419C8"]
 			id: "0CC6804816350D62"
-			rewards: [{
-				id: "2C015E86A78D102E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2C015E86A78D102E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2AB94205C09E5C59"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				count: 2L
 				id: "4727CB0BE10CD8C6"
@@ -1160,11 +1680,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "1F3EC7D6BFE3E0A8"
-			rewards: [{
-				id: "6EE7D6D94E0A54A5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6EE7D6D94E0A54A5"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "321E135F67F8D056"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "74D006BF5113819B"
 				item: { count: 1, id: "create:wrench" }
@@ -1176,11 +1704,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "7EADACA2CBF87DD0"
-			rewards: [{
-				id: "467A83CDB54C837B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "467A83CDB54C837B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72227AA7F20982C5"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "7F9B3A8CD680EBA3"
@@ -1204,11 +1740,19 @@
 		{
 			dependencies: ["27E1D6ADECEF5F5C"]
 			id: "03B0AC7D643C8EC2"
-			rewards: [{
-				id: "77422F2F968F94DA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "77422F2F968F94DA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03B16FE8DF0BF555"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "47A507D63E81ECEB"
@@ -1221,11 +1765,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "7FB2C2856B76DB74"
-			rewards: [{
-				id: "09532B5E7B04819C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "09532B5E7B04819C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7AEE95605C7870A0"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "1217E9E780514617"
 				item: { count: 1, id: "create:fluid_valve" }
@@ -1237,11 +1789,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "1F865DC37FBB0043"
-			rewards: [{
-				id: "5B1BB20CA81D45BA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5B1BB20CA81D45BA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "65ABB400A440C45A"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "2931AA68410CDB38"
 				item: { count: 1, id: "create:fluid_tank" }
@@ -1253,11 +1813,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "5B9A86DA10D7F745"
-			rewards: [{
-				id: "6AB8BA2C7AFDBCE9"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6AB8BA2C7AFDBCE9"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1BC64EA7B6CBBA7D"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "75D2C1E9AD51EBD0"
 				item: { count: 1, id: "create:redstone_contact" }
@@ -1269,11 +1837,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "0BFECFA644A74207"
-			rewards: [{
-				id: "4351177D38202796"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4351177D38202796"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "57CBAB1D320A6626"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "1ED1C4F1620C62CF"
 				item: { count: 1, id: "create:rope_pulley" }
@@ -1285,11 +1861,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "3D3251680D5863BD"
-			rewards: [{
-				id: "26E2F8B63EC4B3B2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "26E2F8B63EC4B3B2"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "15440C44B72D6610"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "27F88135AFADE59D"
 				item: { count: 1, id: "create:white_toolbox" }
@@ -1301,11 +1885,19 @@
 		{
 			dependencies: ["1A75E897313419C8"]
 			id: "5659EE03A46576FC"
-			rewards: [{
-				id: "76EAEA894EC0B35E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "76EAEA894EC0B35E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4DF8E7838EB2AA4C"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7F82B1F41C945007"
 				item: { count: 1, id: "create:wand_of_symmetry" }
@@ -1317,11 +1909,19 @@
 		{
 			dependencies: ["1A75E897313419C8"]
 			id: "12F3C46F5D37860C"
-			rewards: [{
-				id: "5403E4CD08BE9DCB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5403E4CD08BE9DCB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6B76889C8697D05E"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7441C1D1C06F10BD"
 				item: { count: 1, id: "create:extendo_grip" }
@@ -1333,11 +1933,19 @@
 		{
 			dependencies: ["1A75E897313419C8"]
 			id: "5367CC5C90BBD3DC"
-			rewards: [{
-				id: "016842CD570E439B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "016842CD570E439B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1D6A124827D4C392"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "709783D64134C947"
 				item: { count: 1, id: "create:potato_cannon" }
@@ -1349,11 +1957,19 @@
 		{
 			dependencies: ["64A77382B60421C1"]
 			id: "24027FEAD3837B46"
-			rewards: [{
-				id: "4B7DC17A728CCEEE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "4B7DC17A728CCEEE"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A2CFD11E61C9D93"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "58824CD30F47D739"
 				item: { count: 1, id: "create:linked_controller" }
@@ -1365,11 +1981,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "7D34B7B67526BD03"
-			rewards: [{
-				id: "633A6F197EB486D6"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "633A6F197EB486D6"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "73F241BF35ECAEF6"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "4CA5F1E97E452BC2"
 				item: { count: 1, id: "create:goggles" }
@@ -1381,11 +2005,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "6673D6E07AABD478"
-			rewards: [{
-				id: "2E061C8F88DBEBCA"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2E061C8F88DBEBCA"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B34A4FF4991B8C7"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "22A5E7412480ED1D"
 				item: { count: 1, id: "create:super_glue" }
@@ -1397,11 +2029,19 @@
 		{
 			dependencies: ["56719D1E4C517695"]
 			id: "2533F5C184FB0D23"
-			rewards: [{
-				id: "6C88623E0402F99F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6C88623E0402F99F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "151664AC5F7C8B6D"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "07AC93CF45CF951D"
 				item: { count: 1, id: "create:yellow_seat" }
@@ -1413,11 +2053,19 @@
 		{
 			dependencies: ["533DF50DD1D042B2"]
 			id: "657605737FCB93FD"
-			rewards: [{
-				id: "5C4CF701DC875B4F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5C4CF701DC875B4F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "50D2E40840921C8B"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "5575EDAF3048D0F8"
 				item: { count: 1, id: "create:rotation_speed_controller" }
@@ -1429,11 +2077,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "6A9C3ED132B45EA3"
-			rewards: [{
-				id: "5953F38F9BE8B41A"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5953F38F9BE8B41A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C2B96D7966DDBCD"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "041ADA39A1D2CC86"
 				item: { count: 1, id: "create:mechanical_saw" }
@@ -1445,11 +2101,19 @@
 		{
 			dependencies: ["51E52A2FF80C88B9"]
 			id: "3FF27DBE79D8AC49"
-			rewards: [{
-				id: "61C123A5D04A3B01"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "61C123A5D04A3B01"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6EA26FA029DA37FA"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "5A4988FA281E394E"
@@ -1462,11 +2126,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "13DA8C85956D397F"
-			rewards: [{
-				id: "2C52B128F20CA6AB"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2C52B128F20CA6AB"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2DC960340DEEF0C8"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "15A515F96687456A"
@@ -1485,11 +2157,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "529E83275EA5533F"
-			rewards: [{
-				id: "76D6D33F207CC73C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "76D6D33F207CC73C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "10368651CB34558C"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "659ED25AF253E3DA"
@@ -1508,11 +2188,19 @@
 		{
 			dependencies: ["6A6064DA99456D70"]
 			id: "64A77382B60421C1"
-			rewards: [{
-				id: "3636400710803B7F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3636400710803B7F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A7F3B400015AC7D"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "3AF82799058A8D91"
 				item: { count: 1, id: "create:redstone_link" }
@@ -1524,11 +2212,19 @@
 		{
 			dependencies: ["4F4C5DEE88EABE32"]
 			id: "0BC17503972F9151"
-			rewards: [{
-				id: "72123736FD92EA1F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "72123736FD92EA1F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "71A4DB6D03E9E9EC"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "5DA3CC39F0FF8214"
 				item: { count: 1, id: "create:encased_chain_drive" }
@@ -1540,11 +2236,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "5C9A36E8F2773795"
-			rewards: [{
-				id: "52A6A61C9BA9CD2B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "52A6A61C9BA9CD2B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1407C0415C62AA7C"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "723786032542E5CB"
 				item: { count: 1, id: "create:item_vault" }
@@ -1560,11 +2264,19 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "438C77B5157AFC32"
-			rewards: [{
-				id: "63934B8B909B2CAD"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "63934B8B909B2CAD"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "087C02F607CABC4E"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7051CF7E97779BD7"
 				item: { count: 1, id: "create:steam_whistle" }
@@ -1576,11 +2288,19 @@
 		{
 			dependencies: ["10FBE866C3067840"]
 			id: "76DD52A1B64C760A"
-			rewards: [{
-				id: "0FEB4307C7321503"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0FEB4307C7321503"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6701C12C2238B142"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "4FAC1E167CC4B430"
@@ -1604,11 +2324,19 @@
 		{
 			dependencies: ["3FF27DBE79D8AC49"]
 			id: "595CC3677CC5D6A8"
-			rewards: [{
-				id: "0E417DF288690F1F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0E417DF288690F1F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7CC27095A3C39DE4"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "53F067FD48DFE132"
@@ -1621,11 +2349,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "31E0CF68D971374B"
-			rewards: [{
-				id: "335AC8023662BAC2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "335AC8023662BAC2"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "24B69E0DE420A5AE"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "553085A4EB4C3A39"
 				item: { count: 1, id: "create:clipboard" }
@@ -1637,11 +2373,19 @@
 		{
 			dependencies: ["38F45285404934C9"]
 			id: "73F73336D0140613"
-			rewards: [{
-				id: "6D79B0387972566F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6D79B0387972566F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "298155A0FEDD341A"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "69FF7D875F8E9B63"
 				item: { count: 1, id: "create:elevator_pulley" }
@@ -1653,11 +2397,19 @@
 		{
 			dependencies: ["2B1123DC479F00CB"]
 			id: "146B7D9C9B63FA67"
-			rewards: [{
-				id: "5B46E8DAB9BFA13B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5B46E8DAB9BFA13B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72DBAFB7F0F1A9AF"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "12CE994050FB139E"
 				item: { count: 1, id: "create:contraption_controls" }
@@ -1672,11 +2424,19 @@
 				"0CC6804816350D62"
 			]
 			id: "0C4D501EA435A5E3"
-			rewards: [{
-				id: "6956BC8FBAA28228"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6956BC8FBAA28228"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "68443CB8025DFC2B"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "395FE80D6B1B8C60"
 				item: { count: 1, id: "create:mechanical_roller" }
@@ -1688,11 +2448,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "77F5A66037C71A80"
-			rewards: [{
-				id: "5BE189C719273B49"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5BE189C719273B49"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "02E72FB5A47599E2"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "0A328C999A2520F3"
@@ -1748,11 +2516,19 @@
 		{
 			dependencies: ["51356454DB10752D"]
 			id: "6A6064DA99456D70"
-			rewards: [{
-				id: "2AE0E4B512132841"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2AE0E4B512132841"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6EC81730BA5A2B61"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -1766,11 +2542,19 @@
 		{
 			dependencies: ["6A6064DA99456D70"]
 			id: "6953A39403E68D65"
-			rewards: [{
-				id: "19FCD585181B6B82"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "19FCD585181B6B82"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "178F3920897BA462"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -1784,11 +2568,19 @@
 		{
 			dependencies: ["6953A39403E68D65"]
 			id: "5B65EDFC301E0930"
-			rewards: [{
-				id: "13D1867E54AEEFCE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "13D1867E54AEEFCE"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "31FA0D6D90A43C3F"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "54DDF0C16A99C82C"
 				item: { count: 1, id: "create:factory_gauge" }
@@ -1800,11 +2592,19 @@
 		{
 			dependencies: ["6953A39403E68D65"]
 			id: "3B1B6C53D25FE4F6"
-			rewards: [{
-				id: "180065E972AC7CE3"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "180065E972AC7CE3"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2FF5DF979E7AA693"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "020B82137F1E0985"
 				item: { count: 1, id: "create:redstone_requester" }
@@ -1816,11 +2616,19 @@
 		{
 			dependencies: ["6953A39403E68D65"]
 			id: "6C69DC11E4E44755"
-			rewards: [{
-				id: "2B9AE09A115BE633"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2B9AE09A115BE633"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "55EAF8D9461771AD"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7051F7702A6A71D3"
 				item: { count: 1, id: "create:stock_ticker" }
@@ -1832,11 +2640,19 @@
 		{
 			dependencies: ["27E1D6ADECEF5F5C"]
 			id: "1DE4D0BC31E15CCA"
-			rewards: [{
-				id: "2A208E299AF0D3DF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2A208E299AF0D3DF"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1164E25209429DFA"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "42E5695E9BD91730"
 				item: { count: 1, id: "create:pulp" }
@@ -1848,11 +2664,19 @@
 		{
 			dependencies: ["1DE4D0BC31E15CCA"]
 			id: "5B30B44F2CE66ACB"
-			rewards: [{
-				id: "6BFE8FC625245A97"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6BFE8FC625245A97"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "74F3E95AFA04DC98"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "64A8ACE4CF4EB7B0"
 				item: { count: 1, id: "create:cardboard" }
@@ -1867,11 +2691,19 @@
 				"78CB9BA46EAD5F03"
 			]
 			id: "3BF7AEB8A766652D"
-			rewards: [{
-				id: "50C9BA03D7AA9C09"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "50C9BA03D7AA9C09"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E02BEDC1F1AF53D"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "315354F4D612013D"
 				item: { count: 1, id: "createaddition:straw" }
@@ -1883,11 +2715,19 @@
 		{
 			dependencies: ["5B30B44F2CE66ACB"]
 			id: "622CDA226348441A"
-			rewards: [{
-				id: "7AFCB2024046689B"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "7AFCB2024046689B"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EC672AAB1450FBB"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "5CFCD8C506CDF9FF"
@@ -1906,11 +2746,19 @@
 		{
 			dependencies: ["6953A39403E68D65"]
 			id: "503C9B20C7968CFE"
-			rewards: [{
-				id: "5127FD414BD77AC0"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "5127FD414BD77AC0"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A4AE7C233B04D4E"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "17A083C9FCF89391"
@@ -1930,11 +2778,19 @@
 		{
 			dependencies: ["6953A39403E68D65"]
 			id: "1A26C03F083930CF"
-			rewards: [{
-				id: "56128964299A8D49"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "56128964299A8D49"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6E081BA66C62C216"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "2143776B12D90B47"
 				item: { count: 1, id: "create:package_frogport" }
@@ -1946,11 +2802,19 @@
 		{
 			dependencies: ["6953A39403E68D65"]
 			id: "7DB69820FE0E6FB4"
-			rewards: [{
-				id: "134A73F446266DB6"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "134A73F446266DB6"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B9685AD44620C55"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "4A5871C64738BDF0"
 				item: { count: 1, id: "create:item_hatch" }
@@ -1962,11 +2826,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "510208C885C73669"
-			rewards: [{
-				id: "2613D1060D9BAFCE"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2613D1060D9BAFCE"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2592425ECD5D9146"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "7BA56968A1489BC1"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:table_cloths)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -1978,11 +2850,19 @@
 		{
 			dependencies: ["632520CC26B43DD5"]
 			id: "4C21AE3DBA1206E0"
-			rewards: [{
-				id: "42A382AD79B92619"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "42A382AD79B92619"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2B249E5BD6200D2C"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "1243584B5C11D9E7"
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:postboxes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -2004,11 +2884,19 @@
 		{
 			dependencies: ["78CB9BA46EAD5F03"]
 			id: "35E405C527D324D3"
-			rewards: [{
-				id: "6B1BBBADF91A6320"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "6B1BBBADF91A6320"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4658D45AD5512835"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "2F98FB2CC17F2F9E"
 				item: { count: 1, id: "createaddition:spool" }
@@ -2023,11 +2911,19 @@
 				"3DE517F923E1627D"
 			]
 			id: "622F86A9A089B876"
-			rewards: [{
-				id: "1DACCA341D9400CF"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "1DACCA341D9400CF"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2AC14EE6B847ECA9"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "511E98A463E05A0E"
@@ -2049,11 +2945,19 @@
 				"3DE517F923E1627D"
 			]
 			id: "6BF9BE4F1F45FFB1"
-			rewards: [{
-				id: "46C494A30232D8C1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "46C494A30232D8C1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "438849F2BF622030"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "42273AABC3218AE5"
@@ -2082,11 +2986,19 @@
 				"622F86A9A089B876"
 			]
 			id: "1FF5B6C5AD002CD1"
-			rewards: [{
-				id: "0D0D5C67B3C64324"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "0D0D5C67B3C64324"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "283276F60C1D5243"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "697B07743368CEA3"
@@ -2105,11 +3017,19 @@
 		{
 			dependencies: ["622F86A9A089B876"]
 			id: "1FA357C92FA50ABF"
-			rewards: [{
-				id: "2F58495CF179B576"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "2F58495CF179B576"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E06CD97B87C566D"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "3EA3524EA018A421"
@@ -2132,11 +3052,19 @@
 				"3DE517F923E1627D"
 			]
 			id: "433ADE421F20540C"
-			rewards: [{
-				id: "60D1BFCE741197E4"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "60D1BFCE741197E4"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "32DB1EEEE8FC02D2"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "31643E54082AF193"
 				item: { count: 1, id: "createaddition:modular_accumulator" }
@@ -2148,11 +3076,19 @@
 		{
 			dependencies: ["622F86A9A089B876"]
 			id: "654CD55B5A4CAA25"
-			rewards: [{
-				id: "32DD4A65B04C5EF5"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "32DD4A65B04C5EF5"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4031C2952888B16B"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [
 				{
 					id: "1107E995901E2590"
@@ -2174,11 +3110,19 @@
 				"08C156EC82878D36"
 			]
 			id: "7B2BA36742050A0A"
-			rewards: [{
-				id: "47B19778097D456E"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "47B19778097D456E"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "426CE0CC5AF0D88E"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "6BC30E2120BD0300"
 				item: { count: 1, id: "createaddition:diamond_grit_sandpaper" }
@@ -2194,11 +3138,19 @@
 				"3DE517F923E1627D"
 			]
 			id: "053A0D5222D7BFCA"
-			rewards: [{
-				id: "3AFCB0F47326B75F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3AFCB0F47326B75F"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "312DDF582FA0222F"
+					table_id: 4682836084073725053L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "003D56BEBF2A13FA"
 				item: { count: 1, id: "createaddition:tesla_coil" }
