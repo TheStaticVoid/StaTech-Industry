@@ -63,7 +63,7 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - [Mixed Litter](https://www.curseforge.com/projects/1221222) - 1.2.1 -> 1.2.2
 - [Modern Industrialization](https://www.curseforge.com/projects/405388) - 2.4.3 -> 2.5.2
 - [ModernFix](https://www.curseforge.com/projects/790626) - 5.27.12+mc1.21.1 -> 5.27.15+mc1.21.1
-- [Moonlight Lib](https://www.curseforge.com/projects/499980) - 1.21.1-3.0.17 -> 1.21.1-3.0.22
+- [Moonlight Lib](https://www.curseforge.com/projects/499980) - 1.21.1-3.0.17 -> 1.21.1-3.1.0
 - [No Man's Land](https://www.curseforge.com/projects/538493) - 1.5.7 -> 1.5.12
 - [NotEnoughAnimations](https://www.curseforge.com/projects/433760) - 1.12.3 -> 1.12.4
 - [Phantom's Utilities](https://www.curseforge.com/minecraft/mc-mods/phantoms-utilities) - 0.3.1 -> 0.3.2
@@ -71,8 +71,8 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - [Sophisticated Backpacks](https://www.curseforge.com/projects/422301) - 3.25.55 -> 3.25.69
 - [Sophisticated Core](https://www.curseforge.com/projects/618298) - 1.4.51 -> 1.4.70
 - [Sophisticated Item Actions](https://www.curseforge.com/projects/1419142) - 0.5.4 -> 0.5.8
-- [Sophisticated Storage](https://www.curseforge.com/projects/619320) - 1.5.57 -> 1.5.71
-- [Supplementaries](https://www.curseforge.com/projects/412082) - 1.21.1-3.6.7 -> 1.21.1-3.7.7
+- [Sophisticated Storage](https://www.curseforge.com/projects/619320) - 1.5.57 -> 1.5.73
+- [Supplementaries](https://www.curseforge.com/projects/412082) - 1.21.1-3.6.7 -> 1.21.1-3.8.0
 - [Tesseract API](https://www.curseforge.com/projects/1067672) - 1.12.1-1.21.1 -> 1.12.7-1.21.1
 - [TooManyRecipeViewers](https://www.curseforge.com/projects/1194921) - 0.8.1+mc.21.1 -> 0.9.0+mc.21.1
 - [WaveyCapes](https://www.curseforge.com/projects/521594) - 1.9.2 -> 1.10.2
@@ -121,3 +121,5 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - Fix [#562](https://github.com/TheStaticVoid/StaTech-Industry/issues/562)
 - Fix [#563](https://github.com/TheStaticVoid/StaTech-Industry/issues/563)
 - Fix [#564](https://github.com/TheStaticVoid/StaTech-Industry/issues/564)
+- Fix [#566](https://github.com/TheStaticVoid/StaTech-Industry/issues/566)
+- Fix [#567](https://github.com/TheStaticVoid/StaTech-Industry/issues/567)

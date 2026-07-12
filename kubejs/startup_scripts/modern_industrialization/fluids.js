@@ -296,7 +296,7 @@ MIRegistrationEvents.registerFluids(event => {
 
     // -- BERYLLIUM CHLORIDE -- //
     event.register(
-        'Beryllium Chloride',
+        'Impure Beryllium Chloride Solution',
         'beryllium_chloride',
         0x375bc9,
         'water',
