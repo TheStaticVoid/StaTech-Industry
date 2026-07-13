@@ -1,7 +1,12 @@
-# StaTech Industry 2.0 0.3.0 Beta Changelog:
-We're getting close to full version release! This beta release is the last major content update before the full release version of the pack. More batching machines have been added and a lot of polish and QoL has been worked on since the last beta.
+# StaTech Industry 2.0 - 0.3.0 Beta Changelog:
+We're getting close to full version release! This beta release is the last major update before the full release version of the pack. More batching machines have been added and a lot of polish and QoL has been worked on since the last beta. There are too many changes to summarize up here, but the detailed changelog is below. In general, the 1.0.0 version is feature complete. 
 
-As always, please make sure to file all issues on GitHub. Feedback is also most welcome, though the Discord server is the best place for that.
+This update took a lot of effort by both myself (@GW-Dev) and by @truepurpledino. We don't have that much left for release! Practically just the GuideME pages for multiblocks + some wiki documentation. The next release (2.0-1.0.0rc1) will be the first release published to Curseforge. As for plans after 2.0-1.0.0rc1, we'll see how many bugs pop up, though we do have some ideas for the next two major content updates after the full release. We'll talk about that more after the full release drops.
+
+As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that. We'd really like to quash as many bugs as we can before 2.0-1.0.0rc1, so happy hunting!
+
+## Important note:
+If manually updating an old version, delete the existing KubeJS folder and copy over the new one. Some files have been removed.
 
 ## Mods added:
 - [Acedium Sodiumized](https://www.curseforge.com/minecraft/mc-mods/acedium-sodiumized) - Replaces the Sodium renderer with one optimized for NVidia GPUs if being run on one
@@ -83,12 +88,12 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - [Rename PTFE fluid](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/pull/87/changes/9fda2b3fd13299f7994fbec1d34e5ef5a221a3b1)
 - [Add mob crusher model + dust tags](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/pull/87/changes/6ae968f2c0a9b5fbd3032fbaeb386d08343cf1b6)
 - [Add food tags to custom items](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/pull/87/changes/c31eaac06322fc2a2b65b9272ec2e237a2c6b138)
-- [Add silver loot drop](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/53580ea350868097dbbc749aa4fcf7b8d5641736)
-- [Add silver + steel Create pressing, adjust silver loot drop rates](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/f4ed032d1d43ea0044024c248c33fa1679afa9b9)
-- [Add flowers to photosynthetic chamber](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/49182a574846368f142c372ab66b60a3f3db05c5)
-- [Add Enderium + Gold cables](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/8e856562df4d3c908fe84a909bffd935a9464cda)
-- [Fix Glaxx tagging](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/3e8c759c1e5975f49ec5268e6da9d8cecde22015)
-- [Readd iron drawer downgrade](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/359d80eec5f13f52b0028b1f529a6f4ebb303f4e)
+- [Add silver loot drop](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/53580ea350868097dbbc749aa4fcf7b8d5641736) - @truepurpledino 
+- [Add silver + steel Create pressing, adjust silver loot drop rates](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/f4ed032d1d43ea0044024c248c33fa1679afa9b9) - @truepurpledino
+- [Add flowers to photosynthetic chamber](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/49182a574846368f142c372ab66b60a3f3db05c5) - @truepurpledino
+- [Add Enderium + Gold cables](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/8e856562df4d3c908fe84a909bffd935a9464cda) - @truepurpledino
+- [Fix Glaxx tagging](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/3e8c759c1e5975f49ec5268e6da9d8cecde22015) - @truepurpledino
+- [Readd iron drawer downgrade](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/commit/359d80eec5f13f52b0028b1f529a6f4ebb303f4e) - @truepurpledino
 - Fix [#truepurpledino:10](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/10)
 - Fix [#truepurpledino:26](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/26)
 - Fix [#truepurpledino:48](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/48)
@@ -114,7 +119,7 @@ As always, please make sure to file all issues on GitHub. Feedback is also most 
 - Fix [#truepurpledino:86](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/86) 
 - Fix [#truepurpledino:88](https://github.com/truepurpledino/StaTech-Industry-1.21.1-Unofficial/issues/88)
 - Fix [#552](https://github.com/TheStaticVoid/StaTech-Industry/issues/552)
-- Fix [#553](https://github.com/TheStaticVoid/StaTech-Industry/issues/553)
+- Fix [#553](https://github.com/TheStaticVoid/StaTech-Industry/issues/553) - @truepurpledino
 - Fix [#557](https://github.com/TheStaticVoid/StaTech-Industry/issues/557)
 - Fix [#558](https://github.com/TheStaticVoid/StaTech-Industry/issues/558)
 - Fix [#560](https://github.com/TheStaticVoid/StaTech-Industry/issues/560)
