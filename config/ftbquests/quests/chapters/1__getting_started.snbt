@@ -239,7 +239,7 @@
 				item: { count: 1, id: "farmersdelight:cutting_board" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: 2.0d
 		}
 		{
@@ -272,7 +272,7 @@
 				item: { count: 1, id: "farmingforblockheads:feeding_trough" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: -2.0d
 		}
 		{
@@ -338,7 +338,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item_tag(functionalstorage:drawer))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -2.0d
 		}
 		{
@@ -378,7 +378,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: -0.5d
 			y: 2.0d
 		}
 		{
@@ -512,13 +512,14 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				id: "35BCE02C75FD5E87"
 				item: { count: 1, id: "craftingstation:crafting_station" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["35CA2712BC60C09E"]

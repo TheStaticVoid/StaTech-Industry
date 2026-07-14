@@ -1027,6 +1027,7 @@
 				"452D070427B81877"
 				"0D0C9043FAA9C215"
 			]
+			dependency_requirement: "one_completed"
 			id: "1D6BFD70720E391D"
 			min_required_dependencies: 1
 			rewards: [
@@ -1228,7 +1229,11 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["579C00BCFE5917B2"]
+			dependencies: [
+				"579C00BCFE5917B2"
+				"2FBFC99D4F1597E4"
+			]
+			dependency_requirement: "one_completed"
 			id: "329F257DC1F01889"
 			rewards: [
 				{
@@ -1266,6 +1271,7 @@
 				"579C00BCFE5917B2"
 				"329F257DC1F01889"
 			]
+			dependency_requirement: "one_completed"
 			id: "6FEF9845584E6BFA"
 			min_required_dependencies: 1
 			rewards: [
@@ -1516,8 +1522,8 @@
 				item: { count: 1, id: "modern_industrialization:config_card" }
 				type: "item"
 			}]
-			x: 34.5d
-			y: -3.0d
+			x: 35.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["26A89C51A7B9FFDE"]
@@ -2561,7 +2567,7 @@
 				type: "item"
 			}]
 			x: 32.0d
-			y: -10.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["0C677AFD6CBEE0BC"]
@@ -3113,7 +3119,7 @@
 				type: "item"
 			}]
 			x: 34.5d
-			y: -5.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["587FF748139BA962"]
@@ -3181,7 +3187,7 @@
 				type: "item"
 			}]
 			x: 34.5d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2F5AA3AA2794D431"]
@@ -3213,8 +3219,8 @@
 				item: { count: 1, id: "extended_industrialization:large_configurable_chest" }
 				type: "item"
 			}]
-			x: 33.0d
-			y: -11.5d
+			x: 34.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["412958496FE9150E"]
@@ -3617,7 +3623,7 @@
 				type: "item"
 			}]
 			x: 35.5d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0C677AFD6CBEE0BC"]
@@ -3650,7 +3656,7 @@
 				type: "item"
 			}]
 			x: 32.0d
-			y: -11.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["002E71F111942044"]
@@ -3682,8 +3688,8 @@
 				item: { count: 1, id: "functionalstorage:linking_tool" }
 				type: "item"
 			}]
-			x: 32.0d
-			y: -12.5d
+			x: 31.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["26A89C51A7B9FFDE"]
@@ -3790,8 +3796,54 @@
 				item: { count: 1, id: "yet_another_industrialization:numismatic_generator" }
 				type: "item"
 			}]
-			x: 34.0d
-			y: -11.0d
+			x: 33.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["0C677AFD6CBEE0BC"]
+			id: "3D7AE8EA3C6820D4"
+			tasks: [{
+				id: "38679CA9753036A6"
+				item: { count: 1, id: "extended_industrialization:steam_farmer" }
+				type: "item"
+			}]
+			x: 32.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["452D070427B81877"]
+			hide_dependent_lines: true
+			id: "2FBFC99D4F1597E4"
+			rewards: [
+				{
+					count: 3
+					id: "3FF281A2DA98E330"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "5E0BDD4859CC6428"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5D810F845D62B241"
+					table_id: 3409273157072801564L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "10F12CAF66B57529"
+				item: { count: 1, id: "nomansland:resin" }
+				type: "item"
+			}]
+			x: 21.5d
+			y: -4.5d
 		}
 	]
 }
