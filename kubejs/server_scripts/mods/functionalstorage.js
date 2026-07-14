@@ -88,4 +88,17 @@ ServerEvents.recipes(event => {
     })
     .id(st('iron_downgrade')); 
 
+    // -- STORAGE CONTROLLER -- //
+    event.replaceInput(
+        [{ output: fs('storage_controller') }, { output: fs('framed_storage_controller') }],
+        mc('comparator'),
+        mi('analog_circuit')
+    )
+
+    event.replaceInput(
+        [{ output: fs('controller_extension')}, {output: fs('framed_controller_extension') }],
+        mc('repeater'),
+        mc('ender_eye')
+    )
+
 });
