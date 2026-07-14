@@ -5,8 +5,8 @@
 
 ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let st = (id) => `statech:modern_industrialization/${id}`;
-    let sta = (id) => `statech:assembler/modern_industrialization/${id}`;
+    let st = (id) => `statech:mi_tweaks/${id}`;
+    let sta = (id) => `statech:assembler/mi_tweaks/${id}`;
 
     ///////////////////////
     // -- CRAFTING TABLE //
