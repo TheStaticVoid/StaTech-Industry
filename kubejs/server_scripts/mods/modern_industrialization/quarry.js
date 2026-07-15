@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
             { amount: 16, item: cr('asurine'), probability: 0.4 },
             { amount: 16, item: cr('crimsite'), probability: 0.3 },
             { amount: 16, item: cr('limestone'), probability: 0.6 },
-            { amount: 16, item: cr('ochrum'), probability: 0.6 },
+            { amount: 16, item: cr('ochrum'), probability: 0.15 },
             { amount: 16, item: cr('scoria'), probability: 0.4 },
             { amount: 16, item: cr('veridium'), probability: 0.3 }
         ]
@@ -90,17 +90,17 @@ ServerEvents.recipes(event => {
         600,
         [ { amount: 1, item: mi('steel_drill'), probability: 0.04 } ],
         [
-            { amount: 1, item: mi('antimony_ore'), probability: 0.2 },
-            { amount: 1, item: mi('fluorite_ore'), probability: 0.2 },
+            { amount: 1, item: mi('antimony_ore'), probability: 0.20 },
+            { amount: 1, item: mi('fluorite_ore'), probability: 0.15 },
             { amount: 1, item: mc('diamond_ore'), probability: 0.12 },
             { amount: 1, item: mc('lapis_ore'), probability: 0.1 },
             { amount: 1, item: mi('lead_ore'), probability: 0.25 },
             { amount: 1, item: mi('nickel_ore'), probability: 0.18 },
-            { amount: 1, item: mi('bauxite_ore'), probability: 0.4 },
+            { amount: 1, item: mi('bauxite_ore'), probability: 0.40 },
             { amount: 1, item: mi('salt_ore'), probability: 0.12 },
-            { amount: 1, item: mi('quartz_ore'), probability: 0.2 },
-            { amount: 1, item: mi('corundum_ore'), probability: 0.075 },
-            { amount: 1, item: mi('sapphire_ore'), probability: 0.10 },
+            { amount: 1, item: mi('quartz_ore'), probability: 0.20 },
+            { amount: 1, item: mi('corundum_ore'), probability: 0.04 },
+            { amount: 1, item: mi('sapphire_ore'), probability: 0.04 },
             { amount: 1, item: mi('kernite_ore'), probability: 0.10 }
         ]
     );
