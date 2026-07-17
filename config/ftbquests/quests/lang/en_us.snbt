@@ -756,6 +756,17 @@
 	quest.0EE203EEEA355636.quest_subtitle: "Straight up chaining it"
 	quest.0EF2CBA4F28AC98C.quest_desc: ["A &bGlider&r is an item that when active and being held by the player, will allow them to glide through the skies instead of falling normally. &eHold crouch to go faster&r."]
 	quest.0EF2CBA4F28AC98C.quest_subtitle: "To the skies!"
+	quest.0EFA60789B064DB4.quest_desc: [
+		"There are a few notable &4&onon-Vanilla&r&r &2UI elements&r that you may want to &9tweak&r or &6disable&r."
+		""
+		"- &4Paper Doll&r: Animated player in the top-left. Can be edited in the &4config menu&r."
+		""
+		"- &5Stellar Skies&r: New dynamic skybox. Can be edited in the &4config menu&r."
+		""
+		"- &2InventoryHUD+&r: Effects, Armor, etc. HUD elements. Can be edited in the &4config menu&r."
+		""
+		"- &6FPS Display&r: Can be edited in the &o&2Chloride/Interface tab&r&r in the &4Video Settings menu&r."
+	]
 	quest.0EFAF86EED54E0B3.quest_desc: ["Hard, sharp and yet surprisingly brittle. These stones are found everywhere in the &eRazor Edge&r biome. Unless &dsilk touched&r, &6Pyrite&r shatters into items, requiring you to combine them again."]
 	quest.0EFD137D4D82478D.quest_desc: [
 		"Much like the Steam Mining Drill, the Steam Chainsaw has integrated Silk Touch capabilities and is &9unbreakable&r."
@@ -2465,6 +2476,20 @@
 	quest.2F8EAC597AB7E760.quest_desc: ["Increases the wearer's swim speed"]
 	quest.2FA4E183EB7E1413.quest_desc: ["The &aElectric Cutting Machine&r is the electrical version of the &6Steam Cutting Machine&r. The only recipe it unlocks is to turn &3Monocrystalline Silicon into Silicon Wafers&r, which you won't need right now. Other than that, it &dprocesses existing recipes faster and more efficiently&r."]
 	quest.2FA9CCCED8F29ACF.quest_desc: ["This &6MEGA Cell&r can hold up to &d16777216 bytes&r of &9fluids&r!!!!"]
+	quest.2FBDFE8B010CE3C7.quest_desc: [
+		"You may have a machine that you use for a &9&ovariety of recipes&r&r throw the &4following error&r:"
+		""
+		"{image:statech:item/recipe_overlap2 width:168 height:100 align:center}"
+		""
+		"This is because the machine &e&ocould run&r&r &2a number of recipes&r with the &6&oingredients it has&r&r. If the input was, say, this:"
+		""
+		"{image:statech:item/recipe_overlap1 width:168 height:78 align:center}"
+		""
+		"Then the machine could &9macerate&r &o&2either&r&r the &6gold&r or the &eiron&r. The solution (at least early game) is to &5&nonly use one input slot&r&r. "
+		""
+		"&c&oAs you progress, you should have one machine per recipe, so this is not a long-term issue.&r&r"
+	]
+	quest.2FBDFE8B010CE3C7.title: "MI Recipe Locking"
 	quest.2FBFC99D4F1597E4.quest_desc: ["&aResin&r can be acquired by using a &bTree Tap&r on a many types of &etrees&r (Pine, Spruce) over a &bCauldron&r! It can be used as an &3alternative&r way to generate rubber!"]
 	quest.2FD9CBCD413E05DF.quest_desc: [
 		"The &aDiesel Jetpack&r allows you to have flight similar to that of the &dElytra&r, but runs off of &efuel rather than durability&r. The &3more powerful&r the fuel, &3the faster&r the &ajetpack&r! For really fast speeds, the &bRubber Helmet&r and &bRubber Boots&r are recommended."
@@ -2836,7 +2861,7 @@
 		""
 		"Press \"&2G&r\" when &9&ohovering over&r&r the microchip reward to open the &6guidebook&r."
 	]
-	quest.37DEDD25DD478F0E.quest_subtitle: "Bachelor's in Electrical Engineering"
+	quest.37DEDD25DD478F0E.quest_subtitle: "Bachelor's Degree in Electrical Engineering"
 	quest.37DEDD25DD478F0E.title: "Little Big Redstone"
 	quest.37E716F9D27998E9.quest_desc: [
 		"If you've yet to find an &eAE2 meteorite&r, then you might want to make this compass. "
@@ -2881,13 +2906,12 @@
 	]
 	quest.390A2E3905298F9A.title: "Altered Oregen"
 	quest.3938FA0F25E9B17C.quest_desc: [
-		"This pack includes &eFTB Chunks&r. This mod allows for &dbookmarking + claiming&r locations and viewing the world around you!"
+		"This pack includes &eJourneymap&r. This mod allows for &dbookmarking + claiming&r locations and viewing the world around you!"
 		""
-		"Press '&eC&r' to view your claimed chunks"
 		"Press '&eN&r' to display all your waypoints"
 		"Press '&eM&r' to open the fullscreen map"
 	]
-	quest.3938FA0F25E9B17C.title: "FTB Chunks"
+	quest.3938FA0F25E9B17C.title: "Journeymap"
 	quest.3939773BB1720493.quest_desc: [
 		"&bCable Anchors&r are small decorative cable-mounted spikes that you can use to create ladders with cables, or make the cable appear connected to the walls around it."
 		""
@@ -2982,7 +3006,11 @@
 	quest.3B1B6C53D25FE4F6.quest_subtitle: "Pretty self explanatory..."
 	quest.3B28AE165B04B6EB.quest_desc: ["Smelting up your &aCognitive flux&r will yield a &bCognitive Amalgam&r."]
 	quest.3B911268380F061D.quest_desc: ["The &eSteel Unpacker&r, a new machine only available in &eSteel&r. It acts to unpack items, check &dREI&r for recipes."]
-	quest.3BA24A4B45B26923.quest_desc: ["The &aElectric Farmer&r is an electric version of the earlier &bSteam Farmer&r. It is much &6faster&r and can support a larger&6 farm area&r."]
+	quest.3BA24A4B45B26923.quest_desc: [
+		"The &aElectric Farmer&r is an electric version of the earlier &bSteam Farmer&r. It is much &6faster&r and can support a larger&6 farm area&r."
+		""
+		"&4&oHatch locations on this multiblock are underground!&r&r"
+	]
 	quest.3BA6651BB7613719.quest_desc: [
 		"With these shards you have found, you have taken your first steps into a much larger world... A World of Magic. This is the start of the Spectrum chapter. A magic mod dedicated to uncovering the secrets of the world. As discoveries are key to the progression of the Spectrum mod, quests are hidden in this chapter until you have met the requirements to see them."
 		""
@@ -3065,7 +3093,11 @@
 	quest.3D5C1FD71120C918.quest_subtitle: "I can see clearly now"
 	quest.3D5C1FD71120C918.title: "LogicalZoom"
 	quest.3D5D5FE41A66780D.quest_desc: ["Continuing the tradition of upgrades, the &aSteel Backpack&r offers another &39 slots&r as well as &ban additonal upgrade slot to your backpack&r. This means you effectively have a &2double chest worth of items&r on your back, and can expand its functionality even further with 2 upgrade slots!"]
-	quest.3D7AE8EA3C6820D4.quest_desc: ["Very much like old &3Forestry&r farm multiblocks, the &aSteam Farmer&r is a &6new&r &emultiblock&r that will allow to &bfarm crops and trees&r in the world at the expanse of &7steam&r! It can be configured inside the &3GUI&r of the &acontroller&r and each &3setting&r is explained in the &etooltip&r when holding Shift!"]
+	quest.3D7AE8EA3C6820D4.quest_desc: [
+		"Very much like old &3Forestry&r farm multiblocks, the &aSteam Farmer&r is a &6new&r &emultiblock&r that will allow to &bfarm crops and trees&r in the world at the expanse of &7steam&r! It can be configured inside the &3GUI&r of the &acontroller&r and each &3setting&r is explained in the &etooltip&r when holding Shift!"
+		""
+		"&4&oHatch locations on this multiblock are underground!&r&r"
+	]
 	quest.3D96C9B7CE5C705B.quest_desc: ["The &aExplorer's Compass&r is similar to the &2Nature's Compass&r in concept, except it will &efocus in on any structure in the game&r. This can be extremely useful if you want to find a nice place to &dloot&r or &aexplore&r."]
 	quest.3D9FBCB1A33F11F4.quest_desc: [
 		"The &aME Interface&r is the only component which can be used as a part, or as a block. Crafting an &aME Interface&r in either form by itself produces the other form. The thin form is useful if you want to provide &2several different interfaces&r in a &esingle block&r of physical space, but each will need its own &dchannel&r. The block form lets multiple other blocks connect to a single &aME interface&r, using only one &dchannel&r for the interface."
@@ -6783,6 +6815,7 @@
 	task.4164D3C666318830.title: "NYI"
 	task.416A3F9D68C396BC.title: "Any Fluid Output Hatch"
 	task.422F909199EA0780.title: "NYI"
+	task.42348CA825714275.title: "UI Customization"
 	task.42A323867D3F1620.title: "4x Chiseled Polished Blocks"
 	task.42E7AEE28F9E337D.title: "68x Polished Blocks"
 	task.42ED9B8699959459.title: "Any Inquisitor Boots"

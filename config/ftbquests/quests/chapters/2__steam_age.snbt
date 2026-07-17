@@ -3802,6 +3802,27 @@
 		{
 			dependencies: ["0C677AFD6CBEE0BC"]
 			id: "3D7AE8EA3C6820D4"
+			rewards: [
+				{
+					id: "391EB3AFFB4FCD85"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "74E886114CF9D05A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "691EC9BB20EC3E0F"
+					table_id: 4928307245111940372L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "38679CA9753036A6"
 				item: { count: 1, id: "extended_industrialization:steam_farmer" }
