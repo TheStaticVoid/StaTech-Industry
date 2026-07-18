@@ -3,7 +3,7 @@ navigation:
   title: "Space Probes"
   icon: "kubejs:space_probe"
   position: 2
-  parent: statech:items.md
+  parent: stcm:items.md
 item_ids:
   - kubejs:basic_space_probe
   - kubejs:advanced_space_probe

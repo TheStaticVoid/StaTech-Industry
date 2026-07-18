@@ -3,7 +3,7 @@ navigation:
   title: "Cursed Foods"
   icon: "kubejs:greg_cola"
   position: 1
-  parent: statech:items.md
+  parent: stcm:items.md
 item_ids:
   - kubejs:concrete_bar
   - kubejs:statech_energy

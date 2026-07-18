@@ -3,7 +3,7 @@ navigation:
   title: "Boss Crusher"
   icon: "modern_industrialization:boss_crusher"
   position: 1
-  parent: statech:machines.md
+  parent: stcm:machines.md
 item_ids:
   - modern_industrialization:boss_crusher
 ---

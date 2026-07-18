@@ -3,7 +3,7 @@ navigation:
   title: "Industrial Greenhouse"
   icon: "modern_industrialization:greenhouse"
   position: 4
-  parent: statech:machines.md
+  parent: stcm:machines.md
 item_ids:
   - modern_industrialization:greenhouse
 ---

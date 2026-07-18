@@ -3,7 +3,7 @@ navigation:
   title: "Industrial Mixing Machine"
   icon: "mi_tweaks:industrial_mixing_machine"
   position: 7
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:industrial_mixing_machine
 ---

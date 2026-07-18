@@ -3,7 +3,7 @@ navigation:
   title: "High Capacity Unpacker"
   icon: "mi_tweaks:high_capacity_unpacker"
   position: 4
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:high_capacity_unpacker
 ---

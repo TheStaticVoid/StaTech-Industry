@@ -3,7 +3,7 @@ navigation:
   title: "Large Chemical Reactor"
   icon: "mi_tweaks:large_chemical_reactor"
   position: 1
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:large_chemical_reactor
 ---

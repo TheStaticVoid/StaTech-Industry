@@ -106,7 +106,7 @@
 		""
 		"All of the &3hotkeys&r for &aItem Actions&r can (and should) be &3rebinded&r according to your preferences!"
 		""
-		"{image:statech:item/findme width:100 height:64 align:center fit:true}"
+		"{image:stcm:item/findme width:100 height:64 align:center fit:true}"
 	]
 	quest.021CF7D7EC294561.quest_subtitle: "Sophisticated Highlighting!"
 	quest.0222E40516C59B1C.quest_desc: ["The pretty sounds of the &bHummingstones&r can build each other up until the point in which they shatter in a final anthem. These &ashattered remains&r never seem to stop vibrating, as if they retain some form of &3inherent energy&r."]
@@ -214,7 +214,7 @@
 		""
 		"MI's overclock is a &agradual process&r that starts at a given rate defined (shown below) by a &drecipe&r that gradually &bgains speed&r (ramps up) as a &dunique recipe&r is ran &9continuously&r, multiple times over, until it hits its max OC."
 		""
-		"{image:statech:item/oc1 width:200 height:50 align:center}"
+		"{image:stcm:item/oc1 width:200 height:50 align:center}"
 		""
 		"Single block machines have a base &emax OC&r of &932 EU/t&r."
 		""
@@ -1096,7 +1096,7 @@
 		"Completion of this rocket is &cnot&r required to beat the pack, but it's fun so why not?"
 	]
 	quest.15417EE9AF265E49.quest_desc: [
-		"{image:statech:textures/item/fusion_shrine.png width:240 height:135 align:1}"
+		"{image:stcm:item/fusion_shrine width:240 height:135 align:center}"
 		""
 		"The &aFusion Shrine&r is key in the process of producing &bBlack Shards&r. "
 		""
@@ -1303,7 +1303,7 @@
 		"Your &aPigment Pedestal&r can be upgraded with your newly created &bOnyx Shards&r to further increase its magical powers."
 		""
 		"Alongside the upgrade to the &aPedestal&r itself, you will need to upgrade your &eSpectrum Focus&r into a &5&lSpectrum Temple&r. The requirements for this quest are if you are upgrading your current setup into the &5Temple&r. If you plan to make a new setup, consult the &eColorful World&r book for the complete checklist. Additionally, you might find it useful to use the &dVisualize&r functionality to help you build this multiblock&r."
-		"{image:statech:textures/item/spectrum_temple.png width:240 height:135 align:1}"
+		"{image:stcm:item/spectrum_temple width:240 height:135 align:center}"
 	]
 	quest.1A7F6266F03AF41C.title: "The Spectrum Temple"
 	quest.1A915B3D1C8D5A46.quest_desc: ["Placers are blocks that, when activated by a redstone signal, will place any block in its inventory in front of it, if possible."]
@@ -1557,7 +1557,7 @@
 	quest.1EE269859E6DD37B.quest_subtitle: "The World is Yours"
 	quest.1EE269859E6DD37B.title: "The Creative Worldshaper"
 	quest.1EE490D2BEE9913E.quest_desc: [
-		"{image:statech:textures/item/spectrum_pedestal.png width:240 height:135 align:1}"
+		"{image:stcm:item/spectrum_pedestal width:240 height:135 align:center}"
 		""
 		"To make use of the &bPigment Pedestals&r' advanced abilities, you will need a structure to focus &dgemstone&r energy into it. It's known as the &l&2Spectrum Focus&r"
 		""
@@ -1678,7 +1678,7 @@
 		"Place a single &bMoonstone Shard&r in the &dPigment Table&r to start the conversion."
 		""
 		""
-		"{image:statech:textures/item/spectrum_palace.png width:240 height:135 align:1}"
+		"{image:stcm:item/spectrum_palace width:240 height:135 align:center}"
 	]
 	quest.2058AF5271726DA0.title: "Moonstone Pigment Pedestal"
 	quest.208D9031D68CE1AB.quest_desc: ["The &dCreative Storage Unit&f is an infinite source of power. Any tier of cable can be connected to it."]
@@ -2479,11 +2479,11 @@
 	quest.2FBDFE8B010CE3C7.quest_desc: [
 		"You may have a machine that you use for a &9&ovariety of recipes&r&r throw the &4following error&r:"
 		""
-		"{image:statech:item/recipe_overlap2 width:168 height:100 align:center}"
+		"{image:stcm:item/recipe_overlap2 width:168 height:100 align:center}"
 		""
 		"This is because the machine &e&ocould run&r&r &2a number of recipes&r with the &6&oingredients it has&r&r. If the input was, say, this:"
 		""
-		"{image:statech:item/recipe_overlap1 width:168 height:78 align:center}"
+		"{image:stcm:item/recipe_overlap1 width:168 height:78 align:center}"
 		""
 		"Then the machine could &9macerate&r &o&2either&r&r the &6gold&r or the &eiron&r. The solution (at least early game) is to &5&nonly use one input slot&r&r. "
 		""
@@ -2848,7 +2848,7 @@
 		"- enchant items &cwithout consuming&r &dEnchanted Books&r"
 		""
 		"&l&eThe &aEnchanter&e needs a &bFocus Structure&e to work.&r"
-		"{image:statech:textures/item/spectrum_enchanter.png width:240 height:135 align:1}"
+		"{image:stcm:item/spectrum_enchanter width:240 height:135 align:center}"
 		""
 		"The &aEnchanter&r's abilities can be enhanced via &eUpgrades&r. Place them on top of the four &dGemstone Blocks&r."
 		""
@@ -2895,7 +2895,7 @@
 		""
 		"The pump will produce 1/8th of a bucket of water for every adjacent water source every 5 seconds, for a max output of 1 bucket / 5 seconds. &dTLDR&r, place it like this:"
 		""
-		"{image:statech:textures/item/bronze_pump.png width:160 height:90 align:1}"
+		"{image:stcm:item/bronze_pump width:160 height:90 align:center}"
 		""
 		"If you haven't made any &aFluid Pipes&r yet, you can place the &6Bronze Boiler&r on top to pump the water directly into it. Make sure to &2adjust the output direction&r of the pump using the &6Wrench&r!"
 	]
@@ -3315,7 +3315,7 @@
 		"Created with all the knowledge you have gathered, you have created the &aSpirit Instiller&r. It serves to be able to connect the &eenergies&r of two items, with the help of a third object to &bbind&r them. An almost spiritual process."
 		""
 		"The &aSpirit Instiller&r needs a &5Focus Structure&r to work. To &5Visualize&r and rotate the structure hologram in the direction you want it to, click on the placed &aSpirit Instiller&r itself."
-		"{image:statech:textures/item/spectrum_spirit_instiller.png width:240 height:135 align:1}"
+		"{image:stcm:item/spectrum_spirit_instiller width:240 height:135 align:center}"
 		""
 		"The &aSpirit Instiller&r's abilities can be enhanced via &eUpgrades&r. Place them on the two &dOnyx Chiseled Blocks&r."
 	]
@@ -3936,28 +3936,28 @@
 		"{@pagebreak}"
 		"Firstly, EMI uses \"&adefault recipes&r\" to determine which recipes it will use in &3Crafting Trees&r. To add &adefault recipes&r, you can click on the &6heart icon&r like so:"
 		""
-		"{image:statech:item/emi1 width:200 height:74 align:center}"
+		"{image:stcm:item/emi1 width:200 height:74 align:center}"
 		""
 		"When viewing a &3crafting tree&r, you can also click on ingredients which have no recipe and add them to default recipes in a convenient way."
 		"{@pagebreak}"
 		"To view a &3crafting tree&r, you can press the &aRecipe tree button&r underneath the heart button in the recipe viewer like so:"
 		""
-		"{image:statech:item/emi2 width:200 height:84 align:center}"
+		"{image:stcm:item/emi2 width:200 height:84 align:center}"
 		""
 		"{@pagebreak}"
 		"Secondly, the &3Crafting tree&r will show a &ddiagram&r of the recipes you've selected as &adefault recipes&r all the way down to &2base materials&r like so: (you can scroll on this page)"
 		""
-		"{image:statech:item/emi3 width:200 height:322 align:center}"
+		"{image:stcm:item/emi3 width:200 height:322 align:center}"
 		""
 		"Clicking the &6magnifying glass icon&r will make the &3Crafting tree&r enter \"&6Crafting mode&r\""
 		"{@pagebreak}"
 		"In \"&6Crafting mode&r\", all the items required to craft the final item(s) will show up &ein your bookmarks&r, in order from &2most basic&r to &dmost complete&r from &2right and down&r to &dleft and up&r like so:"
 		""
-		"{image:statech:item/emi4 width:200 height:25 align:center}"
+		"{image:stcm:item/emi4 width:200 height:25 align:center}"
 		"{@pagebreak}"
 		"Finally, to fully use the potential of EMI's Crafting mode, you will need to set up some keybinds, located in the EMI options (the lower left corner of the inventory), specifically these:"
 		""
-		"{image:statech:item/emi5 width:200 height:82 align:center}"
+		"{image:stcm:item/emi5 width:200 height:82 align:center}"
 		""
 		"These keybinds allow you to &9instantly craft&r each ingredient in order when aiming at them &ein the bookmarks&r with the items in &6your inventory&r or within a &6visible storage's inventory&r (which includes Sophisticated Storage with a &bCrafting Upgrade&r OR the &bCrafting Station&r), whilst you are in a crafting window. &cBe wary of&r the usage of &3Craft All to Inventory&r when using Sophisticated Storage with a &bCrafting Upgrade&r, as it will craft &cmore than what you need&r. You can end up &covercrafting&r with it."
 	]
@@ -6206,7 +6206,7 @@
 		""
 		"In MI, machines go at a maximum of &aone recipe per tick&r. This is a &5&lhard limit&r&r; adding more upgrades to a machine that is tick-crafting is meaningless and &cwon't improve its speed&r. This max OC is equivalent to the &aTotal EU&r of a given &9recipe&r, which you can see by hovering over the recipe time in EMI (as shown below)."
 		""
-		"{image:statech:item/oc3 width:200 height:32 align:center}"
+		"{image:stcm:item/oc3 width:200 height:32 align:center}"
 	]
 	quest.7A082EC55D240856.quest_desc: ["This is the &eModern Dynamics&r version of the &aMV-tier Cables&r."]
 	quest.7A0E6729E0460E62.quest_desc: [
@@ -6323,7 +6323,7 @@
 		"- &bYield (Light Blue Ink)&r: Chance to multiply the output for most blocks"
 		"- &5Experience (Purple Ink)&r: Vastly increases experience gain"
 		"- &2Efficiency (Black Ink)&r: Greatly decreases &dInk Consumption&r of the other types, including &6Orange&r."
-		"{image:statech:textures/item/spectrum_cinderharth.png width:240 height:135 align:1}"
+		"{image:stcm:item/spectrum_cinderharth width:240 height:135 align:center}"
 	]
 	quest.7C70B4621C93F658.quest_desc: ["The &aElectric Macerator&r is the electrical version of the &6Steam Macerator&r. It will process recipes&d much faster&r than its &7Steam&r counterpart."]
 	quest.7CADC21630F6223B.quest_desc: [

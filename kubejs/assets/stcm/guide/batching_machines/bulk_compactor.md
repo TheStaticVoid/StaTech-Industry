@@ -3,7 +3,7 @@ navigation:
   title: "Bulk Compactor"
   icon: "mi_tweaks:bulk_compactor"
   position: 5
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:bulk_compactor
 ---

@@ -3,7 +3,7 @@ navigation:
   title: "High Capacity Packer"
   icon: "mi_tweaks:high_capacity_packer"
   position: 3
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:high_capacity_packer
 ---

@@ -3,7 +3,7 @@ navigation:
   title: "Singularity Forge"
   icon: "modern_industrialization:singularity_forge"
   position: 10
-  parent: statech:machines.md
+  parent: stcm:machines.md
 item_ids:
   - modern_industrialization:singularity_forge
 ---

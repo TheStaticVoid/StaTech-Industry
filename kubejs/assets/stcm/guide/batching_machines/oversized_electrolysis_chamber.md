@@ -3,7 +3,7 @@ navigation:
   title: "Oversized Electrolysis Chamber"
   icon: "mi_tweaks:oversized_electrolysis_chamber"
   position: 9
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:oversized_electrolysis_chamber
 ---

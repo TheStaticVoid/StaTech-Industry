@@ -3,7 +3,7 @@ navigation:
   title: "Arrayed Wiremill"
   icon: "mi_tweaks:arrayed_wiremill"
   position: 6
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:arrayed_wiremill
 ---

@@ -3,7 +3,7 @@ navigation:
   title: "Multi-Cutter"
   icon: "mi_tweaks:multi_cutter"
   position: 0
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:multi_cutter
 ---

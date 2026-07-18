@@ -3,7 +3,7 @@ navigation:
   title: "Blast Alloy Smelter"
   icon: "mi_tweaks:blast_alloy_smelter"
   position: 8
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:blast_alloy_smelter
 ---

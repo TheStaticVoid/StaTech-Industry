@@ -3,7 +3,7 @@ navigation:
   title: "Utilities"
   icon: "kubejs:angel_ring"
   position: 3
-  parent: statech:items.md
+  parent: stcm:items.md
 item_ids:
   - kubejs:angel_ring
   - kubejs:fireproof_ring

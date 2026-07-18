@@ -3,7 +3,7 @@ navigation:
   title: "Large Polarization Machine"
   icon: "mi_tweaks:large_polarization_machine"
   position: 2
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:large_polarization_machine
 ---

@@ -3,7 +3,7 @@ navigation:
   title: "Grand Mass Centrifuge"
   icon: "mi_tweaks:grand_mass_centrifuge"
   position: 10
-  parent: statech:batching_machines.md
+  parent: stcm:batching_machines.md
 item_ids:
   - mi_tweaks:grand_mass_centrifuge
 ---
