@@ -8,6 +8,7 @@ StartupEvents.registry('item', event => {
         .unstackable()
         .rarity('Rare')
         .displayName('Personal Space Shield')
+        .tag('curios:charm')
         .tooltip('§aProvides a personal bubble of safety\n§awhile in low-oxygen environments\n\n§bCan be equipped in a curio slot');
 
     event.create('angel_ring')
