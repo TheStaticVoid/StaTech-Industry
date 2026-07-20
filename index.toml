@@ -62,7 +62,7 @@ hash = "3c3e6d38456428b225da99e8800c55e4d52307b212d9cb08151e3b4b7b35c972"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "b99ad7a17050a99c062e1451597f1efb4885f5f4f834b52c0c20e5b950453d0f"
+hash = "2c209cb48fe9887792bf184aefb9ecd493da3c123c26afb4fa37e8acfb417fc4"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -242,7 +242,7 @@ hash = "5268c78d7ca7ba2508b861f50d01910a88dea2e5c12ef3159ea5d66a94a89e59"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/2__steam_age.snbt"
-hash = "db3687d7476f3e0813b985b08adb98a389c76cd7b7226172ca8a849b4b6dfa7d"
+hash = "cd09756ce4de6227113f706a41170532954ce063cd3b13208cf2f9f15808e108"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/3__electrical_age.snbt"
@@ -270,7 +270,7 @@ hash = "6e1687318682d0d5f6818ba0a8da1bdd2c4ade9e780ba898e79322fb26063d73"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/artifacts.snbt"
-hash = "dba678b6d7d5c5189bbb6fab6b8b9fa7e290adba23aabef688780a762f80f0c5"
+hash = "0a5b704f6a32df79d6d02cb9b4eb1a1ab9fbff2641f6f9457556eb9b7256a92d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create.snbt"
@@ -286,15 +286,15 @@ hash = "b54a3eb4b74fb6526f6eb44b03e1568f80071ffabd2d1613f11de142c97f8b09"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/utilities.snbt"
-hash = "48cf0c32487e0019a0e92d991586a25be78beaf41c897e270cb488531483ce27"
+hash = "c376ed1fa9b025e0028cbce0e727a0db3994e60c740b56f16d5abc9a4ae42830"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/welcome.snbt"
-hash = "361be08c2de5b9147ac6490092034784b0f2e3b3dfb7364e8663e55b5f032871"
+hash = "9ce4c4d0549c58026c0a0e9b1a6288254a25a832539406a7af6e0d2ca77f8624"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/world_of_food.snbt"
-hash = "25a36740141583c856250880bc066f8a5e473b328df029e1186f65827f796b37"
+hash = "8f111b5601ab39775dcca17c09ab4910c5b30a19b7d4cbcbc83b96d6c20c2d54"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -302,7 +302,7 @@ hash = "439ea344bc28f53049b128254377b0ea29ba791d0476d51c400918aaae76086a"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "fbecf14a500f14d5a180449310d3ddd1d277f6f8095ec8569bb8c77cd8b40560"
+hash = "1ad6f5e1fdf95c6ddd830009f351713373b2e6a99eaedc085ddb376679c471c9"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/0542C9BA02BA96DC.snbt"
@@ -723,6 +723,10 @@ hash = "cab4b05f1d7459e715e107d59bc729edf13525309f50b6535399e565eea9c116"
 [[files]]
 file = "kubejs/assets/capejs/textures/capes/supporter.png"
 hash = "8780bf05ef55ad9fa2c24b446301d04890a3c6754f71b4395f5a752c85b4459e"
+
+[[files]]
+file = "kubejs/assets/expandeddelight/lang/en_us.json"
+hash = "0f349338a195997a0f2a5b2a70c3c424f56ee0e9ec080d8227e35db845a8f6cf"
 
 [[files]]
 file = "kubejs/assets/extended_industrialization/lang/en_us.json"
@@ -5497,183 +5501,191 @@ file = "kubejs/assets/sophisticatedbackpacks/textures/block/netherite_clips.png"
 hash = "ef1e810e079884114bc18b080923372948d276ebfb11d82d6f32178df5f9ba58"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines.md"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines.md"
 hash = "0f4528dc1ebea7fce369d37a492cbe80e96958c63e9de40fc3dba4ba22347d81"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/arrayed_wiremill.md"
-hash = "0b10ae51fabb10b176d01fe8328077775ee3da4b3522f38d11af832e3b43fb04"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/arrayed_wiremill.md"
+hash = "c001252e57163694bbda0aedda55ae8b03792a10205ca6059e215958205e3f35"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/blast_alloy_smelter.md"
-hash = "686fe07e584725b74daadfc3d08e1151dbc2e57dea3fbbc59154141f58c18480"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/blast_alloy_smelter.md"
+hash = "47c1946588b00d530b28e7cc1e53c4b7b06fc1b716a4629a14899c28c84d3e6e"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/bulk_compactor.md"
-hash = "bec3c8e1d580b1d4b2f51f711a5d7bdb07244f871802e559385e4ec430146728"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/bulk_compactor.md"
+hash = "0fbe8c708af4fa4969f20935b597bc6eaef8d426556f4cb76aa681fc88785070"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/colossal_blast_furnace.md"
-hash = "1d7a75e1f798673e15cce45d0623ba5805eef9848e8f87522f3a3bf08518783b"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/colossal_blast_furnace.md"
+hash = "d446e8d35fb3a2eddb4ef442eea8449f3072bb2fecacf6052ee5d1cdf0c4883f"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/grand_mass_centrifuge.md"
-hash = "4452aeec1561934c267807d75f9d794a08fc09b45193c72eeb905787d510ed6b"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/grand_mass_centrifuge.md"
+hash = "0bdacff53ab5d5cae56b6eae319a323fd9f8b3ce2126a669ac8ad826e627e92f"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/high_capacity_packer.md"
-hash = "941fdfe6a16a8970ea30e8042f7b77f89c63115ba1a6d708edc5ab2f8319f8ee"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/high_capacity_packer.md"
+hash = "8575002ce9d755b15025c2ecdeb4d84a2993735094a1eb506430ecd980b6342a"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/high_capacity_unpacker.md"
-hash = "4c8088229149beb62dacf971ded74d1c67ef58147f4ad71742ec92be30901a4e"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/high_capacity_unpacker.md"
+hash = "30daf2f54b49cff08c9b369f795b130c016b97fc589a9e6ddd94c69244732c8b"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/industrial_mixing_machine.md"
-hash = "87f7d91b29f6dee2b4291c012653bd3b13e5aae024d685c4484293cf1d7ca3a3"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/industrial_mixing_machine.md"
+hash = "90853d28f01226d8b99d40f40600c3d0a10567430e26316bd0f972287c136bc4"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/large_chemical_reactor.md"
-hash = "45f063f7fb1dbc5d9260f8367008099c289291c96d04f709e2b0ae56cd37b8b9"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/large_chemical_reactor.md"
+hash = "4f2e6f4e7009f7e2b9545cbd3ce2144ad704f008206ba4b84282911d1abf5a55"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/large_polarization_machine.md"
-hash = "d5c6e9dff8d5eb6ab77bfa3a42cbff6231395d614812aeaede76db9990121a39"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/large_polarization_machine.md"
+hash = "6267f9e8ffcf2e3c39a176a9b0c2a08d8a7273e914eda425ca6fc2e425e50e10"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/multi_cutter.md"
-hash = "8bb2fcb9837badcaff423ba959899a33c9e3718c7514a1565c58cd5cc804f515"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/multi_cutter.md"
+hash = "b9be045c33555a1d8441a69f17fab7db14565d81a25802206279a8e29435fccf"
 
 [[files]]
-file = "kubejs/assets/statech/guide/batching_machines/oversized_electrolysis_chamber.md"
-hash = "295f062113f9bf72fed65fa2a4de64182f1825685b22f6ab258f0d75df2b8dd9"
+file = "kubejs/assets/stcm/guides/stcm/guide/batching_machines/oversized_electrolysis_chamber.md"
+hash = "1fb89e0ff44d9a473c4db4e4ae266a41dc3bc08daf44ef331ff3db7a08ea0566"
 
 [[files]]
-file = "kubejs/assets/statech/guide/index.md"
+file = "kubejs/assets/stcm/guides/stcm/guide/index.md"
 hash = "765bdb365cbc79d31e20c53bae095a30d04c01ad401f590f8dc03a38594895d1"
 
 [[files]]
-file = "kubejs/assets/statech/guide/items.md"
+file = "kubejs/assets/stcm/guides/stcm/guide/items.md"
 hash = "4baa6cceabaf6fa0552f325699ca6b33d1691a409f30323ce22809cd186a55aa"
 
 [[files]]
-file = "kubejs/assets/statech/guide/items/foods.md"
-hash = "273cac03fef6684f9701dd2acbb201797ca05f18b0dae42b2c15c09767ccccc3"
+file = "kubejs/assets/stcm/guides/stcm/guide/items/foods.md"
+hash = "5ad5e1d7e433ff8bc2aecac43de5e5e94a3c984a1896368ddcfcff3d7b5033d7"
 
 [[files]]
-file = "kubejs/assets/statech/guide/items/space_probes.md"
-hash = "53c291b4833b1d0508e7646a0ccbc7b5a4ef7ee7e2e60ca43452f664604f1320"
+file = "kubejs/assets/stcm/guides/stcm/guide/items/space_probes.md"
+hash = "fc1a680c04bc28175221ebd3bbc17f66a6a7767479840c8db4bdfdb8be84c728"
 
 [[files]]
-file = "kubejs/assets/statech/guide/items/utilities.md"
-hash = "16a9dd8da282f2e78beab5a32c1ea399ab4da20e96c5f3ad10c3783be31c983a"
+file = "kubejs/assets/stcm/guides/stcm/guide/items/utilities.md"
+hash = "d8ec89a48b8d184180cbbd6eb730b7286012cbc85038370946927c8fddf68dfd"
 
 [[files]]
-file = "kubejs/assets/statech/guide/machines.md"
+file = "kubejs/assets/stcm/guides/stcm/guide/machines.md"
 hash = "10697bacc867b8c96c793d838b98718e31e43e8c439e7c0dbcf18f3f86bbfd35"
 
 [[files]]
-file = "kubejs/assets/statech/guide/machines/boss_crusher.md"
-hash = "ef21a586b05eb476496def8e0ba81afd04dfc6fb107c22b2aec999b4666e2c54"
+file = "kubejs/assets/stcm/guides/stcm/guide/machines/boss_crusher.md"
+hash = "543dbdebe8b67db5f74c5d0c0aff0eeb2f8a2f102c7ee1aa2cb0c0f557f1e724"
 
 [[files]]
-file = "kubejs/assets/statech/guide/machines/core_drill.md"
-hash = "a7a324129f57b0120ac69b049387185e413062413ffc4606c0d40e60d9e46ed9"
+file = "kubejs/assets/stcm/guides/stcm/guide/machines/core_drill.md"
+hash = "ea2810daab6332a8aa4e86568481fc37ead75a68971a9f556293ac21446dfcc4"
 
 [[files]]
-file = "kubejs/assets/statech/guide/machines/industrial_greenhouse.md"
-hash = "c0098121dad882d5a75eb281b503702414e0b0067ddc1c3d28615478135148c0"
+file = "kubejs/assets/stcm/guides/stcm/guide/machines/industrial_greenhouse.md"
+hash = "2a4937b330ebb61f850ed972b4d9503869ce292eb8f89e20998414ab5b1573d1"
 
 [[files]]
-file = "kubejs/assets/statech/guide/machines/mob_crusher.md"
-hash = "841a0dd24f23b5323f040cee40b7dcfe88bef81857aa5bc8bdb5a3eb6e28c180"
+file = "kubejs/assets/stcm/guides/stcm/guide/machines/mob_crusher.md"
+hash = "a1762a32d642edd827595843c1667f41b46fb8fc58aab0df7b46a5ff076a90a6"
 
 [[files]]
-file = "kubejs/assets/statech/guide/machines/quantum_space_probe_launcher.md"
-hash = "941a9b8ef6bc43f5235584a4ef914363b084f149ec2c1b75ac00bc22edfb20d0"
+file = "kubejs/assets/stcm/guides/stcm/guide/machines/quantum_space_probe_launcher.md"
+hash = "859829e146e5fb41160b5d56e2ac8adf8107289468a98d8bf51951fa3965f0d4"
 
 [[files]]
-file = "kubejs/assets/statech/guide/machines/singularity_forge.md"
-hash = "91fac1f88e4acd3454221ac100678d570a6ff7318ed5e009853ca0c762d738a0"
+file = "kubejs/assets/stcm/guides/stcm/guide/machines/singularity_forge.md"
+hash = "97943c357c93c67283e12fbc885b0376425247ab2beba91ec6ab359a64517dba"
 
 [[files]]
-file = "kubejs/assets/statech/guide/machines/space_probe_launcher.md"
-hash = "12d86ddfba7f8751ec15c17691c20dc720d45841ae222792ece36e9959a8b51f"
+file = "kubejs/assets/stcm/guides/stcm/guide/machines/space_probe_launcher.md"
+hash = "aa607de573f8e604ba0e1f7d28262176795675761da9c6c0dc5bba5cc6873291"
 
 [[files]]
-file = "kubejs/assets/statech/lang/en_us.json"
-hash = "4e0163241f080f38c88ece46e429cf770d2138a734b6e663e297a8f752d73fdb"
+file = "kubejs/assets/stcm/lang/en_us.json"
+hash = "e91cde57cbd6afcc3a08833b2fae798d392f42728a5a94a76c30c3f3eb804cc9"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/bronze_pump.png"
+file = "kubejs/assets/stcm/textures/item/bronze_pump.png"
 hash = "9759c9a73e443712f6a131c4b0e22a0919b799240c701a205476b720c4887a53"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/discordlogo.png"
+file = "kubejs/assets/stcm/textures/item/discordlogo.png"
 hash = "6fde7ed2f97365cbaf500e492a4b66e56c4f0598cbd6018479f2bd7533ae7620"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/emi1.png"
+file = "kubejs/assets/stcm/textures/item/emi1.png"
 hash = "0a00e0428b779df753ad570eff8e3c6fb6548cbab9d4c51c0c55c27940f6e15e"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/emi2.png"
+file = "kubejs/assets/stcm/textures/item/emi2.png"
 hash = "88ce195f9a71742030ff80e937ee00fa2a873eb6ab15dc07423edcb5827bcdd8"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/emi3.png"
+file = "kubejs/assets/stcm/textures/item/emi3.png"
 hash = "c87128355d96c04d2b9e328d71085de3113c67888123d44544431616444aac32"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/emi4.png"
+file = "kubejs/assets/stcm/textures/item/emi4.png"
 hash = "ac4e93bb1ee9c3a9886c8456fbf885f2cd175f636157a48fd3e0812f5236c5c1"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/emi5.png"
+file = "kubejs/assets/stcm/textures/item/emi5.png"
 hash = "71622b6cf20143032b00180d35a4f32fa451769e6e14a94edeb6139dfbc9ea3f"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/findme.png"
+file = "kubejs/assets/stcm/textures/item/findme.png"
 hash = "5795a6f14105ab2fb6e6dae644e0388b8079ad512c17cedc861d4068122c7f2f"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/fusion_shrine.png"
+file = "kubejs/assets/stcm/textures/item/fusion_shrine.png"
 hash = "0ed35369dbc94c78b2d5862bda57818a3a40e28a28b39bbd60dce4defb812bc5"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/mm_logo.png"
+file = "kubejs/assets/stcm/textures/item/mm_logo.png"
 hash = "0f204550a99aabcafe213b02d22ff2dfb6724ad12354bbcc4f9c17e74188316f"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/oc1.png"
+file = "kubejs/assets/stcm/textures/item/oc1.png"
 hash = "b4afe4a3750042d8d6217747eec869c74328ec158e0c46dcf6894a94227e9a27"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/oc3.png"
+file = "kubejs/assets/stcm/textures/item/oc3.png"
 hash = "f0c87545c0f53da69be0e1e9c80261ed5c6d0270cd754e06887fa1bb9a224619"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/spectrum_cinderharth.png"
+file = "kubejs/assets/stcm/textures/item/recipe_overlap1.png"
+hash = "af4cb746cd3acfe7f8d40012d929e5fc245184ebfdb3336fd4881b915dbd12ce"
+
+[[files]]
+file = "kubejs/assets/stcm/textures/item/recipe_overlap2.png"
+hash = "c49d5611a27d47a4923959ae7ff58c619fca4febbbc27646d4e80cabbda2a859"
+
+[[files]]
+file = "kubejs/assets/stcm/textures/item/spectrum_cinderharth.png"
 hash = "f85a87f07ed7184f087d008a9d9d5d5c3b182b642aa12bafd0a9c401d0c77b3e"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/spectrum_enchanter.png"
+file = "kubejs/assets/stcm/textures/item/spectrum_enchanter.png"
 hash = "c1558c6193f38d7a40c19ddb222dfc646a32361d989de086b9d1da0d4b25568a"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/spectrum_palace.png"
+file = "kubejs/assets/stcm/textures/item/spectrum_palace.png"
 hash = "ec6a6ce200b5eeaff448b5ef6cb18a087bff1fbdb072809e331de2c8102be4fe"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/spectrum_pedestal.png"
+file = "kubejs/assets/stcm/textures/item/spectrum_pedestal.png"
 hash = "6b752956a91baadae63268af66c4dcfe1db486bdec1c7cd19cc51d27a80f67e9"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/spectrum_spirit_instiller.png"
+file = "kubejs/assets/stcm/textures/item/spectrum_spirit_instiller.png"
 hash = "4a0958be4db755e92be541b433f099b2c338e440a7d7e9e7c3a7681c2debf141"
 
 [[files]]
-file = "kubejs/assets/statech/textures/item/spectrum_temple.png"
+file = "kubejs/assets/stcm/textures/item/spectrum_temple.png"
 hash = "e54fb593feb7e308ffb190ff18512a371c3ddf9a061366e89d983a7a4cbd802f"
 
 [[files]]
@@ -5791,10 +5803,6 @@ hash = "513993809262871b33c7545caa7c587da8473b92bd371c2f20a629675be774c1"
 [[files]]
 file = "kubejs/data/c/tags/block/storage_blocks/ostrum.json"
 hash = "56a202f81f12617aff33abb71fcd5429070e3b07e798f19457d312a8d5fc5f9c"
-
-[[files]]
-file = "kubejs/data/curios/tags/item/charm.json"
-hash = "dabf2f7d7d4d9b9633a70824967fa364fad26edc47e5d42e7fc32e2407601e05"
 
 [[files]]
 file = "kubejs/data/expandeddelight/worldgen/configured_feature/salt_ore.json"
@@ -7930,7 +7938,7 @@ hash = "02340cca1fe09e63468fa525d1f506d4b472f11ea13e56ecfd4e2381e271761e"
 
 [[files]]
 file = "kubejs/server_scripts/mod_namespaces.js"
-hash = "09ab93bfde715eaa231880c6a248f7b039f7c485246631bd33722b21c9bfe8b2"
+hash = "827039873c1adeac580b8aad2f8877e066e98118fe06717ff27e388107c88093"
 
 [[files]]
 file = "kubejs/server_scripts/mods/ad_astra_replacement.js"
@@ -8442,7 +8450,7 @@ hash = "c0f5a8dcc1c5eccd87f18cc85ee9c14b114b8772287ed159936f85b2707e5550"
 
 [[files]]
 file = "kubejs/startup_scripts/statech/items.js"
-hash = "227d01b6b002bb41e955a0b74b5e50b9115e21f472018f0c95b68d87cc781c9f"
+hash = "bf33a39c66c298f7cbaf60dac210df8c21f1dea7b860a68c7a2e7a9eebf9176b"
 
 [[files]]
 file = "kubejs/startup_scripts/statech/mob_models.js"
@@ -8724,7 +8732,7 @@ metafile = true
 
 [[files]]
 file = "mods/chloride.pw.toml"
-hash = "d7a10baebeb304b3a0701d310e2c986fe45fadc7a876a0842ef5bbec18d89bae"
+hash = "37b25fadf799fc2178ead40ad04e04bb2b1e040b504ccb213e740d37b7c3960f"
 metafile = true
 
 [[files]]
@@ -9079,12 +9087,12 @@ metafile = true
 
 [[files]]
 file = "mods/functional-storage.pw.toml"
-hash = "3f9c68c9e357cd708e5e3436c026edc5a9d31354e43cba83c99af73ebcf56c59"
+hash = "55c21e0159f5509b84d1e1fa42c2e478a3600c43007ede829cad5839aaa1b8da"
 metafile = true
 
 [[files]]
 file = "mods/fusion-connected-textures.pw.toml"
-hash = "84d4b4880efc3b272dc8dd6b51402ae7172daab76427b0f3daa8a05437cd2979"
+hash = "89b5bb8253e0a8903d367d2b65d4f5cacf6df7307fc92b9f8f44ad7afec2519c"
 metafile = true
 
 [[files]]
@@ -9344,7 +9352,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "bca4d23861040d069b25d0e4bb0c2c763a4e4f54ac51b513c22462253e8cd340"
+hash = "b0364f6b95f6ed837239c232bad0e2d7317e58f0e4c040e66a4f533239d5775e"
 metafile = true
 
 [[files]]
@@ -9514,7 +9522,7 @@ metafile = true
 
 [[files]]
 file = "mods/rhino.pw.toml"
-hash = "27c19c6def0d9c626ad53b072b0a4f909f129837984f60649a8e25cae008438d"
+hash = "985a99f7465b68e43b98f3dbe1081b7113d957c7926a8caab163503528910f42"
 metafile = true
 
 [[files]]
@@ -9529,7 +9537,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "a4556f8b747aaec7ecc23076486df4dc44bdea6d6314db136e37f4737a14b989"
+hash = "2fe821faf9b627c75225d34d8c9637acdcb8cec987696280e592203e000a5c49"
 metafile = true
 
 [[files]]
@@ -9609,7 +9617,7 @@ metafile = true
 
 [[files]]
 file = "mods/statech-companion.pw.toml"
-hash = "aed50acacc79d7d34f9b044ada4f94916c4ba4517ef5233ead8ca7b8921d10cd"
+hash = "b86deea3584621255bc0f0b7ea16bf69fabd94d8167e115758f2ff735d116a47"
 metafile = true
 
 [[files]]
@@ -9639,7 +9647,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "daafacba438d96ad88d41f61e7fe46a417d3cf84ecb1f9c25a4ebf7ce69314bc"
+hash = "ebe8020be71828aea50723f882206bda0a39960855062e2575d7adfcbc9be4f5"
 metafile = true
 
 [[files]]
