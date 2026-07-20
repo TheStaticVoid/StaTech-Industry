@@ -4,6 +4,9 @@
 	default_quest_shape: ""
 	filename: "world_of_food"
 	group: "109C2F5A861C0A8B"
+	icon: {
+		id: "farmersdelight:cooking_pot"
+	}
 	id: "71219AED38AEBE21"
 	order_index: 4
 	quest_links: [ ]
@@ -355,6 +358,9 @@
 		}
 		{
 			dependencies: ["148AE3384F2C550B"]
+			icon: {
+				id: "farmersdelight:cutting_board"
+			}
 			id: "603EA2C9EB9D3963"
 			rewards: [{
 				id: "24C58DBB51361ABB"
