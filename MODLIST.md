@@ -129,6 +129,8 @@
 - [Jade](https://www.curseforge.com/projects/324717) by Snownee
 - [Jade Addons](https://www.curseforge.com/projects/583345) by Snownee
 - [JamLib](https://www.curseforge.com/projects/623764) by Jamalam
+- [JourneyMap Integration](https://www.curseforge.com/projects/525447) by frankV
+- [Journeymap\-NeoForge](https://www.curseforge.com/projects/32274) by Mysticdrew, Techbrew, MemeSapiens
 - [Jump Over Fences](https://www.curseforge.com/projects/423421) by kreezxil, Eleksploded
 - [Just Another Void Dimension](https://www.curseforge.com/projects/370890) by UnRealDinnerbone
 - [Just Enough Breeding](https://www.curseforge.com/projects/899386) by Christofmeg
@@ -211,6 +213,7 @@
 - [Spectrum](https://www.curseforge.com/projects/556967) by DaFuqs, Azzyypaaras, Noaaan, Electro\_593
 - [Spice of Life: Carrot Edition](https://www.curseforge.com/projects/277616) by Cazsius, Talonos, juliand665, Mrbysco
 - [Spiky Spikes](https://www.curseforge.com/projects/666944) by Fuzs
+- [StaTech Companion Mod](https://www.curseforge.com/projects/1610931) by staitc
 - [Stellar View](https://www.curseforge.com/projects/865273) by Povstalec
 - [Structory: Towers](https://www.curseforge.com/projects/783522) by Botany, Starmute, catter1
 - [Structure Layout Optimizer](https://www.curseforge.com/projects/1087831) by TelepathicGrunt
@@ -218,7 +221,6 @@
 - [SuperMartijn642's Core Lib](https://www.curseforge.com/projects/454372) by SuperMartijn642
 - [Supplementaries](https://www.curseforge.com/projects/412082) by MehVahdJukaar, Plantkillable
 - [Tank Storage](https://www.curseforge.com/projects/1032670) by Natte
-- [TerraBlender](https://www.curseforge.com/projects/940057) by Adubbz
 - [Tesseract API](https://www.curseforge.com/projects/1067672) by Swedz
 - [TipTheScales](https://www.curseforge.com/projects/282313) by Jaredlll08
 - [Tips](https://www.curseforge.com/projects/306549) by Darkhax

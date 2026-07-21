@@ -1,12 +1,10 @@
-# StaTech Industry 2.0 - 0.3.0 Beta Changelog:
+# StaTech Industry 2.0.0rc1 Changelog:
 We're getting close to full version release! This beta release is the last major update before the full release version of the pack. More batching machines have been added and a lot of polish and QoL has been worked on since the last beta. There are too many changes to summarize up here, but the detailed changelog is below. In general, the 1.0.0 version is feature complete. 
 
 This update took a lot of effort by both myself (@GW-Dev) and by @truepurpledino. We don't have that much left for release! Practically just the GuideME pages for multiblocks + some wiki documentation. The next release (2.0-1.0.0rc1) will be the first release published to Curseforge. As for plans after 2.0-1.0.0rc1, we'll see how many bugs pop up, though we do have some ideas for the next two major content updates after the full release. We'll talk about that more after the full release drops.
 
 As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that. We'd really like to quash as many bugs as we can before 2.0-1.0.0rc1, so happy hunting!
 
-## Important note:
-If manually updating an old version, delete the existing KubeJS folder and copy over the new one. Some files have been removed.
 
 ## Mods added:
 - [Acedium Sodiumized](https://www.curseforge.com/minecraft/mc-mods/acedium-sodiumized) - Replaces the Sodium renderer with one optimized for NVidia GPUs if being run on one
@@ -29,7 +27,7 @@ If manually updating an old version, delete the existing KubeJS folder and copy 
 - [Nolijium](https://www.curseforge.com/minecraft/mc-mods/nolijium) - Replaced with Chloride due to the Sodium switch
 
 ## Mods updated:
-- NeoForge loader version 21.1.133 -> 21.1.135
+- NeoForge loader version 21.1.135 -> 21.1.135
 - [AllTheLeaks](https://www.curseforge.com/minecraft/mc-mods/alltheleaks) - 1.1.9+1.21.1 -> 1.1.10+1.21.1
 - [Balm](https://www.curseforge.com/projects/531761) - 21.0.56 -> 21.0.62
 - [Biolith](https://www.curseforge.com/projects/852512) - 3.0.11 -> 3.0.12
