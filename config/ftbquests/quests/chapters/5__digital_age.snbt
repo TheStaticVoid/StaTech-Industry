@@ -279,8 +279,47 @@
 					type: "item"
 				}
 				{
-					id: "14054A240806A13F"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					count: 46L
+					id: "35312B4154C76BCB"
+					item: { count: 1, id: "modern_industrialization:steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "590C74E744D07459"
+					item: { count: 1, id: "minecraft:black_stained_glass" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7AF98BD968890ABD"
+					item: { count: 1, id: "architects_palette:osseous_pillar" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5682B42E3D08A0FF"
+					item: { count: 1, id: "architects_palette:redstone_ore_bricks" }
+					type: "item"
+				}
+				{
+					id: "1A170930071AD106"
+					item: { count: 1, id: "minecraft:redstone_torch" }
+					type: "item"
+				}
+				{
+					id: "550E86DCC67EE97C"
+					item: { count: 1, id: "architects_palette:lit_osseous_skull" }
+					type: "item"
+				}
+				{
+					id: "74203685F0E4E4C9"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "6CD638273A5AAC3F"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]
@@ -3016,6 +3055,16 @@
 					count: 10L
 					id: "3D0B69BD0DEE9531"
 					item: { count: 1, id: "modern_industrialization:titanium_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					id: "2498650ADF04C51D"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "01F4FDF4C13E2F9A"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]
