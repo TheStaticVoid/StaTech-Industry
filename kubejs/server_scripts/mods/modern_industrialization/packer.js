@@ -94,44 +94,47 @@ ServerEvents.recipes(event => {
 
 
     // -- FLUID PIPE -- //
-    // packer(
-        // st('fluid_pipe'),
-        // 4,
-        // 200,
-        // [
-            // { amount: 1, tag: mi('fluid_pipes') },
-            // { amount: 2, item: mi('copper_plate') }
-        // ],
-        // [ { amount: 8, item: md('fluid_pipe') } ]
-    // );
+    packer(
+        event,
+        st('fluid_pipe'),
+        4,
+        200,
+        [
+            { amount: 1, tag: mi('fluid_pipes') },
+            { amount: 2, item: mi('copper_plate') }
+        ],
+        [ { amount: 8, item: md('fluid_pipe') } ]
+    );
 
     // -- ITEM PIPE -- //
-    // packer(
-        // st('item_pipe'),
-        // 4,
-        // 200,
-        // [
-            // { amount: 1, tag: mi('item_pipes') },
-            // { amount: 2, item: mi('iron_plate') }
-        // ],
-        // [ { amount: 8, item: md('item_pipe') } ]
-    // );
+    packer(
+        event,
+        st('item_pipe'),
+        4,
+        200,
+        [
+            { amount: 1, tag: mi('item_pipes') },
+            { amount: 2, item: mi('iron_plate') }
+        ],
+        [ { amount: 8, item: md('item_pipe') } ]
+    );
 
     // -- SUPERCONDUCTOR EU CABLE -- //
-    // packer(
-        // st('superconductor_eu_cable'),
-        // 4,
-        // 200,
-        // [
-            // { amount: 1, item: mi('superconductor_cable') },
-            // { amount: 2, item: mi('rubber_sheet') }
-        // ],
-        // [ { amount: 4, item: md('superconductor_cable') } ]
-    // );
-/* 
+    packer(
+        event,
+        st('superconductor_eu_cable'),
+        4,
+        200,
+        [
+            { amount: 1, item: mi('superconductor_cable') },
+            { amount: 2, item: mi('rubber_sheet') }
+        ],
+        [ { amount: 4, item: md('superconductor_cable') } ]
+    );
+
     // -- EV EU CABLE -- //
     packer(
-    event,
+        event,
         st('ev_eu_cable'),
         4,
         200,
@@ -144,7 +147,7 @@ ServerEvents.recipes(event => {
 
     // -- HV EU CABLE -- //
     packer(
-    event,
+        event,
         st('hv_eu_cable'),
         4,
         200,
@@ -157,7 +160,7 @@ ServerEvents.recipes(event => {
 
     // -- MV EU CABLE -- //
     packer(
-    event,
+        event,
         st('mv_eu_cable'),
         4,
         200,
@@ -170,7 +173,7 @@ ServerEvents.recipes(event => {
 
     // -- LV EU CABLE -- //
     packer(
-    event,
+        event,
         st('lv_eu_cable'),
         4,
         200,
@@ -180,81 +183,6 @@ ServerEvents.recipes(event => {
         ],
         [ { amount: 4, item: md('lv_cable') } ]
     );    
-
-    // -- LARGE STEAM MACERATOR -- //
-    packer(
-    event,
-        st('large_steam_macerator'),
-        4,
-        200,
-        [
-            { amount: 8, tag: 'c:bronze_plates' },
-            { amount: 1, item: mi('steel_macerator') }
-        ],
-        [ { amount: 1, item: mi('large_steam_macerator') } ]
-    );
- */
-    // -- PINEAPPLE PIZZA SLICE -- //
-    // packer(
-        // st('pineapple_pizza_slice'),
-        // 4,
-        // 200,
-        // [ 
-            // { amount: 1, item: pd('pineapple_side') },
-            // { amount: 1, item: kj('pizza_slice') }
-        // ],
-        // [ { amount: 1, item: kj('pineapple_pizza_slice') } ]
-    // );
-
-    // -- CONCRETE PINEAPPLE PIZZA SLICE -- //
-    // packer(
-        // st('concrete_pineapple_pizza_slice'),
-        // 4,
-        // 200,
-        // [
-            // { amount: 1, item: pd('pineapple_side') },
-            // { amount: 1, item: kj('concrete_pizza_slice') }
-        // ],
-        // [ { amount: 1, item: kj('concrete_pineapple_pizza_slice') } ]
-    // );
-
-    // -- CHARCOAL BLOCK -- //
-    // packer(
-        // st('charcoal_block'),
-        // 2,
-        // 200,
-        // [ 
-            // { amount: 9, item: mc('charcoal') },
-            // { amount: 1, item: mi('packer_block_template'), probability: 0.0 }
-        // ],
-        // [ { amount: 1, item: bl('charcoal_block') } ]
-    // );
-
-    // -- LARGE STEAM FURNACE -- //
-    // packer(
-        // st('large_steam_furnace'),
-        // 4,
-        // 200,
-        // [
-            // { amount: 1, item: mi('bronze_furnace') },
-            // { amount: 7, item: mc('bricks') },
-            // { amount: 1, item: mi('coke') }
-        // ],
-        // [ { amount: 1, item: mi('large_steam_furnace') } ]
-    // );
-
-    // -- IRIDIUM ALLOY INGOT -- //
-    // packer(
-        // st('iridium_alloy_ingot'),
-        // 24,
-        // 300,
-        // [
-            // { amount: 4, item: mi('iridium_plate') },
-            // { amount: 1, item: mi('diamond_dust') },
-            // { amount: 4, item: tr('advanced_alloy_plate') }
-        // ],
-        // [ { amount: 1, item: tr('iridium_alloy_ingot') } ]
-    // );
 
     // -- CHAIN -- //
     packer(

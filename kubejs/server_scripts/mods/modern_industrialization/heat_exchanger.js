@@ -21,22 +21,9 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: mc('obsidian'), probability: 0.01 } ],
         [ 
             { amount: 10, fluid: mc('lava') },
-            { amount: 250, fluid: mc('water') }
+            { amount: 125, fluid: mc('water') }
          ],
-        [ { amount: 4000, fluid: mi('steam') } ]
+        [ { amount: 2000, fluid: mi('steam') } ]
     );
 
-    // -- TUNGSTENSTEEL INGOT -- //
-    // heatExchanger(
-        // st('tungstensteel_ingot'),
-        // 8,
-        // 10,
-        // [ { amount: 1, item: mi('tungstensteel_hot_ingot') } ],
-        // [ { amount: 1, item: mi('tungstensteel_ingot') } ],
-        // [ { amount: 100, fluid: mi('cryofluid') } ],
-        // [
-            // { amount: 65, fluid: mi('argon') },
-            // { amount: 25, fluid: mi('helium') }
-        // ]
-    // );
 });

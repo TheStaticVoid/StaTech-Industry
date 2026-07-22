@@ -7,14 +7,11 @@ ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:extended_industrialization/canning_machine/${id}`;
 
-    // -- CANNING MACHINE REMOVED RECIPES -- //
-    const lubricantAmount = 10;
-    
-    let recipesToRemove = [
-
+    // -- CANNING MACHINE REMOVED RECIPES -- // 
+    let REMOVED_RECIPE = [
+    //    ei(''),
     ]; 
-
-    recipesToRemove.forEach(id => event.remove({id: id}));  
+    REMOVED_RECIPE.forEach(id => event.remove({id: id}));  
 
     // -- SULFURIC ACID BOTTLE -- //
     canningMachine(

@@ -739,21 +739,6 @@ ServerEvents.recipes(event => {
     })
     .id(st('formation_plane_alt'));
 
-    // -- CRYSTAL RESONANCE GENERATOR -- //
-/*     event.shaped(ae('crystal_resonance_generator'), [
-        'BAB',
-        'BEB',
-        'DCD'
-    ],
-    {
-        A: ae('fluix_block'),
-        B: '#c:plates/steel',
-        C: ae('quartz_block'),
-        D: '#c:plates/copper',
-        E: mi('analog_circuit')
-    })
-    .id(st('crystal_resonance_generator'));
- */
     // -- IMPORT BUS -- //
     event.shaped(ae('import_bus'), [
         ' A ',

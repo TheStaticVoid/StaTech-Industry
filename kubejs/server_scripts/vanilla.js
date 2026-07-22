@@ -24,23 +24,6 @@ ServerEvents.recipes(event => {
     ];
     VANILLA_DELETED.forEach(id => event.remove( {id : id} ));
 
-    // -- CAKE -- //
-    
-/*     event.shaped(mc('cake'), [
-        'AAA',
-        'BEB',
-        'CCC'
-    ],
-    {
-        A: '#c:foods/milk',
-        B: mc('sugar'),
-        C: '#c:crops/wheat',
-        E: '#c:foods/egg'
-    })
-    .id(st('cake')); */
-
-
-
     const ALT_METALS = [
         'lead',
         'silver',

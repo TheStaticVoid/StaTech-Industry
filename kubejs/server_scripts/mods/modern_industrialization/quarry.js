@@ -31,8 +31,6 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('tin_ore'), probability: 0.3 },
             { amount: 1, item: mc('gold_ore'), probability: 0.15 },
             { amount: 1, item: mc('redstone_ore'), probability: 0.2 }
-            // { amount: 1, item: tr('silver_ore'), probability: 0.2 },
-            // { amount: 1, item: tr('galena_ore'), probability: 0.3 }
         ]
     );
 
@@ -73,12 +71,6 @@ ServerEvents.recipes(event => {
             { amount: 16, item: mc('glowstone'), probability: 0.15 },
             { amount: 8, item: mc('nether_quartz_ore'), probability: 0.15 },
             { amount: 1, item: mc('nether_gold_ore'), probability: 0.3 }
-            // { amount: 1, item: bg('emeraldite_ore'), probability: 0.1 },
-            // { amount: 1, item: bg('pendorite_ore'), probability: 0.1 },
-            // { amount: 1, item: bg('anthracite_ore'), probability: 0.15 },
-            // { amount: 1, item: tr('cinnabar_ore'), probability: 0.1 },
-            // { amount: 1, item: tr('pyrite_ore'), probability: 0.15 },
-            // { amount: 1, item: tr('sphalerite_ore'), probability: 0.15}
         ]
     );
 
@@ -118,9 +110,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('monazite_ore'), probability: 0.25 },
             { amount: 1, item: mi('platinum_ore'), probability: 0.12 },
             { amount: 1, item: mc('emerald_ore'), probability: 0.1 },
-            // { amount: 1, item: tr('sheldonite_ore'), probability: 0.12 },
             { amount: 1, item: mi('peridot_ore'), probability: 0.1 }
-            // { amount: 1, item: tr('sodalite_ore'), probability: 0.25 }
         ]
     );
 });

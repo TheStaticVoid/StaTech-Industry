@@ -130,6 +130,11 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         mfs('speed_upgrade_augment')
     ]
     UNUSED_MORE_FUNCTIONNAL_STORAGE.forEach(id => event.remove(id));
+    
+    const UNUSED_MD = [
+        md('wrench')
+    ];
+    UNUSED_MD.forEach(id => event.remove(id));
 });
 
 RecipeViewerEvents.removeEntriesCompletely('fluid', event => {

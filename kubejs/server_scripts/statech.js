@@ -66,59 +66,6 @@ ServerEvents.recipes(event => {
         D: '#c:dyes/orange' 
     }).id(st('glowing_calorite_pillar'));
 
-    // -- CLEAR GLASS BLOCK - //
-    // event.shaped('8x ' + kj('clear_glass'), [
-        // 'III',
-        // 'I I',
-        // 'III'
-    // ],
-    // {
-        // I: kj('clear_ingot')
-    // })
-    // .id(st('clear_glass'));
-    
-    // -- CLEAR HELMET -- //
-    // event.shaped(kj('clear_helmet'), [
-        // 'III',
-        // 'I I'
-    // ],
-    // {
-        // I: kj('clear_ingot')
-    // })
-    // .id(st('clear_helmet'));
-
-    // -- CLEAR CHESTPLATE -- //
-    // event.shaped(kj('clear_chestplate'), [
-        // 'I I',
-        // 'III',
-        // 'III'
-    // ],
-    // {
-        // I: kj('clear_ingot')
-    // })
-    // .id(st('clear_chestplate'));
-
-    // -- CLEAR LEGGINGS -- //
-    // event.shaped(kj('clear_leggings'), [
-        // 'III',
-        // 'I I',
-        // 'I I'
-    // ],
-    // {
-        // I: kj('clear_ingot')
-    // })
-    // .id(st('clear_leggings'));
-
-    // -- CLEAR BOOTS -- //
-    // event.shaped(kj('clear_boots'), [
-        // 'I I',
-        // 'I I'
-    // ],
-    // {
-        // I: kj('clear_ingot')
-    // })
-    // .id(st('clear_boots'));
-
     // ------------------- //
     // -- STATECH COINS -- //
     // ------------------- //
@@ -158,15 +105,6 @@ ServerEvents.recipes(event => {
     {
         C: common
     }).id(st('tin_ore_from_common'));
-
-    // -- RUBBER SAPLING -- //
-    // event.shaped(tr('rubber_sapling'), [
-        // 'C',
-        // 'C'
-    // ],
-    // {
-        // C: common
-    // }).id(st('rubber_sapling_from_common'));
 
     // -- ANDESITE -- //
     event.shaped('16x ' + mc('andesite'), [
