@@ -25,11 +25,11 @@ S:custom_game_intro_skip_text = '';
 
 ##[window]
 
-B:show_custom_window_icon = 'false';
-S:custom_window_icon_macos = '';
-S:custom_window_icon_32 = '';
-S:custom_window_title = '';
-S:custom_window_icon_16 = '';
+B:show_custom_window_icon = 'true';
+S:custom_window_icon_macos = '/config/fancymenu/assets/icons/icon32.icns';
+S:custom_window_icon_32 = '/config/fancymenu/assets/icons/icon32x32.png';
+S:custom_window_title = 'StaTech Industry 2';
+S:custom_window_icon_16 = '/config/fancymenu/assets/icons/icon16x16.png';
 
 
 ##[global_customizations]
