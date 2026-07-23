@@ -16,7 +16,7 @@ B:advanced_customization_mode = 'false';
 
 B:game_intro_fade_out = 'true';
 S:game_intro_sound_channel = 'master';
-S:preload_resources = '';
+S:preload_resources = '[cubic_panorama]statechpanorama_02%!source_end!%';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';
 F:game_intro_volume = '1.0';
