@@ -208,3 +208,7 @@ let cryogenicPrecipitator = (event, id, eu, duration, item_inputs, item_outputs,
 let dragonEggEnergySiphon = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs, process_conditions) => {
     event.custom(newMachineRecipe(yai('dragon_egg_energy_siphon'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs, process_conditions)).id(id);
 }
+
+let polarizer = (event, id, eu, duration, item_inputs, item_outputs) => {
+    event.custom(newMachineRecipe(mi('polarizer'), eu, duration, item_inputs, item_outputs)).id(id);
+}

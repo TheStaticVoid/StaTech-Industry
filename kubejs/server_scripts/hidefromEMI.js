@@ -122,14 +122,14 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
     ]
     UNUSED_FUNCTIONNAL_STORAGE.forEach(id => event.remove(id));
 
-    const UNUSED_MORE_FUNCTIONNAL_STORAGE = [
+/*     const UNUSED_MORE_FUNCTIONNAL_STORAGE = [
         mfs('placer_upgrade'),
         mfs('breaker_upgrade'),
         mfs('refill_upgrade'),
         mfs('dimensional_refill_upgrade'),
         mfs('speed_upgrade_augment')
     ]
-    UNUSED_MORE_FUNCTIONNAL_STORAGE.forEach(id => event.remove(id));
+    UNUSED_MORE_FUNCTIONNAL_STORAGE.forEach(id => event.remove(id)); */
     
     const UNUSED_MD = [
         md('wrench')
