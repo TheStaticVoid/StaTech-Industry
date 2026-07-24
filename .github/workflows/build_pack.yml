@@ -24,11 +24,11 @@ jobs:
       - name: Upload Pack
         uses: actions/upload-artifact@v4
         with:
-          name: StaTech_Industry-${{ steps.read_version.outputs.value }}
-          path: *.zip
+          name: StaTech_Industry-${{ steps.read_version.outputs.value }}.zip
+          path: /StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
 
       - name: Delete Build File
-        run: rm -rf *.zip
+        run: rm -rf /StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
 
       - name: Build server pack
         run: |
@@ -36,9 +36,9 @@ jobs:
       - name: Upload Server Pack
         uses: actions/upload-artifact@v7.0.1
         with:
-          name: StaTech_Industry_Server-${{ steps.read_version.outputs.value }}
-          path: *.zip
+          name: StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip
+          path: /StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
 
       - name: Delete Server Build File
-        run: rm -rf *.zip
+        run: rm -rf /StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
   
