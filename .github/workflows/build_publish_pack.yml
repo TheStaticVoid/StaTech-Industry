@@ -49,13 +49,13 @@ jobs:
         id: read_changelog
         uses: juliangruber/read-file-action@v1
         with:
-          path: CHANGELOG.md
+          path: Changelog.md
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.read_version.outputs.value }}
-          body_path: CHANGELOG.md
+          body_path: Changelog.md
           name: "${TAG} Release"
           make_latest: true
           files: |

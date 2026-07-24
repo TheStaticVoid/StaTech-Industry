@@ -1,11 +1,9 @@
 - [AE2 Import Export Card](https://www.curseforge.com/projects/982512) by Ultramega
-- [AE2 Tangible Bookmarks](https://www.curseforge.com/projects/1394275) by NJoyShadow
 - [AE2:Crafting Tree](https://www.curseforge.com/projects/1086241) by Neuvillette
 - [AE2NetworkAnalyzer](https://www.curseforge.com/projects/961856) by GlodBlock
 - [AE2WTLib](https://www.curseforge.com/projects/459929) by mari\_023, Ridanisaurus
 - [AI\-Improvements](https://www.curseforge.com/projects/233019) by BuiltBrokenModding
 - [Accelerated Decay](https://www.curseforge.com/projects/699872) by ErrorMikey
-- [Acedium Sodiumized](https://www.curseforge.com/projects/1577618) by Cortex, Ferri\_Arnus, viktorr245
 - [AdvancedLootInfo](https://www.curseforge.com/projects/1205426) by Yanny
 - [Advancement Plaques](https://www.curseforge.com/projects/499826) by Grend
 - [All The Leaks](https://www.curseforge.com/projects/1091339) by Uncandango
@@ -16,6 +14,7 @@
 - [Architects Palette](https://www.curseforge.com/projects/433862) by Snakeblock, THX, Smash Brothers, Orisghost, RENREN, Jsburg
 - [Architectury](https://www.curseforge.com/projects/419699) by shedaniel
 - [Artifacts](https://www.curseforge.com/projects/312353) by ochotonida
+- [Async Logger](https://www.curseforge.com/projects/1491426) by decce
 - [Athena](https://www.curseforge.com/projects/841890) by ThatGravyBoat
 - [AttributeFix](https://www.curseforge.com/projects/280510) by Darkhax
 - [Bad Wither No Cookie Reloaded](https://www.curseforge.com/projects/261251) by Kreezxil, Eleksploded
@@ -51,7 +50,6 @@
 - [ConnectedTexturesMod](https://www.curseforge.com/projects/267602) by tterrag, Drullkus, minecreatr
 - [Construction Sticks](https://www.curseforge.com/projects/1156098) by Mrbysco, ShyNieke
 - [Controlling](https://www.curseforge.com/projects/250398) by Jaredlll08
-- [Cooking for Blockheads](https://www.curseforge.com/projects/231484) by BlayTheNinth
 - [CoroUtil](https://www.curseforge.com/projects/237749) by Corosus
 - [Crafting Tweaks](https://www.curseforge.com/projects/233071) by BlayTheNinth
 - [CraftingStation](https://www.curseforge.com/projects/318551) by Tfarcenim
@@ -97,7 +95,6 @@
 - [FTB Ultimine](https://www.curseforge.com/projects/386134) by FTB Team
 - [FTB XMod Compat](https://www.curseforge.com/projects/889915) by FTB Team
 - [Factory Blocks](https://www.curseforge.com/projects/640001) by slaincow
-- [Fallingleaves](https://www.curseforge.com/projects/463155) by Cheaterpaul, Fourmisain, BrekiTomasson and RandomMcSomethin
 - [FancyMenu](https://www.curseforge.com/projects/367706) by Keksuccino
 - [Farmer's Delight](https://www.curseforge.com/projects/398521) by vectorwing
 - [Farming for Blockheads](https://www.curseforge.com/projects/261924) by BlayTheNinth
@@ -115,6 +112,7 @@
 - [Gadgets Against Grind](https://www.curseforge.com/projects/694962) by MaxNeedsSnacks
 - [GeckoLib 4](https://www.curseforge.com/projects/388172) by Gecko, Eliot, AzureDoom, DerToaster, Tslat, Witixin
 - [Glodium](https://www.curseforge.com/projects/957920) by GlodBlock
+- [Gnetum](https://www.curseforge.com/projects/1220460) by decce
 - [GuideME](https://www.curseforge.com/projects/1173950) by shartte
 - [Hang Glider](https://www.curseforge.com/projects/852668) by gr8pefish, Fuzs
 - [I'm Fast](https://www.curseforge.com/projects/1111501) by Bielhiss
@@ -126,6 +124,7 @@
 - [Inventory Essentials](https://www.curseforge.com/projects/368825) by BlayTheNinth
 - [Inventory HUD\+](https://www.curseforge.com/projects/357540) by DmitryLovin
 - [Iris](https://www.curseforge.com/projects/455508) by coderbot, IMS212
+- [Ixeris](https://www.curseforge.com/projects/1285307) by decce
 - [Jade](https://www.curseforge.com/projects/324717) by Snownee
 - [Jade Addons](https://www.curseforge.com/projects/583345) by Snownee
 - [JamLib](https://www.curseforge.com/projects/623764) by Jamalam
@@ -167,7 +166,6 @@
 - [Modonomicon](https://www.curseforge.com/projects/538392) by Kli Kli
 - [Moonlight Lib](https://www.curseforge.com/projects/499980) by MehVahdJukaar
 - [More Dragon Eggs](https://www.curseforge.com/projects/358700) by Darkere
-- [More Functional Storage](https://www.curseforge.com/projects/1166695) by Matyrobbrt
 - [More Red](https://www.curseforge.com/projects/387638) by Commoble
 - [MoreJS](https://www.curseforge.com/projects/666198) by AlmostReliable
 - [Mouse Tweaks](https://www.curseforge.com/projects/60089) by Ivan Molodetskikh \(YaLTeR\)
@@ -183,13 +181,11 @@
 - [OverloadedArmorBar](https://www.curseforge.com/projects/314002) by Jared
 - [PacketFixer](https://www.curseforge.com/projects/689467) by TonimatasDEV
 - [Paperdoll](https://www.curseforge.com/projects/537079) by tr7zw
-- [Paxi](https://www.curseforge.com/projects/1015157) by YUNGNICKYOUNG
 - [Phantom's Utilities](https://www.curseforge.com/projects/1181116) by White Phantom
 - [Pipe Connector](https://www.curseforge.com/projects/846168) by Heaser, PotatoPoweredWizard
 - [Player Animator](https://www.curseforge.com/projects/658587) by KosmX
 - [PrickleMC](https://www.curseforge.com/projects/1023259) by Darkhax
 - [Prism](https://www.curseforge.com/projects/638111) by Grend
-- [ProbeJS](https://www.curseforge.com/projects/585406) by Prunoideae
 - [Puzzles Lib](https://www.curseforge.com/projects/495476) by Fuzs
 - [Raised](https://www.curseforge.com/projects/570368) by yurisuika
 - [Reese's Sodium Options](https://www.curseforge.com/projects/511319) by FlashyReese
@@ -215,6 +211,7 @@
 - [Spiky Spikes](https://www.curseforge.com/projects/666944) by Fuzs
 - [StaTech Companion Mod](https://www.curseforge.com/projects/1610931) by staitc
 - [Stellar View](https://www.curseforge.com/projects/865273) by Povstalec
+- [Stony Cliffs Are Cool](https://www.curseforge.com/projects/939211) by bebebea\_loste
 - [Structory: Towers](https://www.curseforge.com/projects/783522) by Botany, Starmute, catter1
 - [Structure Layout Optimizer](https://www.curseforge.com/projects/1087831) by TelepathicGrunt
 - [SuperMartijn642's Config Library](https://www.curseforge.com/projects/438332) by SuperMartijn642
@@ -241,7 +238,6 @@
 - [Wither Skeleton Tweaks](https://www.curseforge.com/projects/255902) by Shadows\_of\_Fire
 - [Wits](https://www.curseforge.com/projects/909375) by TelepathicGrunt
 - [XTones Reworked](https://www.curseforge.com/projects/694231) by TobsenD
-- [YUNG's API](https://www.curseforge.com/projects/1015100) by YUNGNICKYOUNG
 - [Yeetus Experimentus](https://www.curseforge.com/projects/635427) by Sunekaer
 - [Yet Another Industrialization\!](https://www.curseforge.com/projects/1358516) by Luligabi1
 - [YetAnotherConfigLib](https://www.curseforge.com/projects/667299) by isXander
