@@ -1,0 +1,21 @@
+name: build_pack
+run-name: ${{ github.actor }} is building the modpack
+on:
+  workflow_dispatch:
+jobs:
+  execute-exe:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Build pack
+        run: |
+          .\packwiz.exe refresh
+          .\packwiz.exe curseforge export
+      - name: Upload pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: 
+          path: *.zip
