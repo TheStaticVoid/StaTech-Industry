@@ -22,11 +22,11 @@ jobs:
           .\packwiz.exe refresh
           .\packwiz.exe curseforge export -o 'StaTech_Industry-${{ steps.read_version.outputs.value }}.zip'
       - name: Upload Pack
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: StaTech_Industry-${{ steps.read_version.outputs.value }}.zip
           path: StaTech_Industry-${{ steps.read_version.outputs.value }}.zip
-          compression-level: 0
+          archive: false
 
       - name: Delete Build File
         uses: JesseTG/rm@v1.0.3
@@ -37,11 +37,11 @@ jobs:
         run: |
           .\packwiz.exe curseforge export -s 'both' -o 'StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip'
       - name: Upload Server Pack
-        uses: actions/upload-artifact@v7.0.1
+        uses: actions/upload-artifact@v7
         with:
           name: StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip
           path: StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip
-          compression-level: 0
+          archive: false
 
       - name: Delete Server Build File
         uses: JesseTG/rm@v1.0.3
