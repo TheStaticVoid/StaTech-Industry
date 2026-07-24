@@ -1,7 +1,7 @@
 name: build_pack
 run-name: ${{ github.actor }} is building the modpack
 on:
-  workflow_dispatch:
+  push
 jobs:
   execute-exe:
     runs-on: windows-latest
