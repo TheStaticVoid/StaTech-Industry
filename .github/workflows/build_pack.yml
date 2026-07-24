@@ -26,6 +26,7 @@ jobs:
         with:
           name: StaTech_Industry-${{ steps.read_version.outputs.value }}.zip
           path: StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
+          compression-level: 0
 
       - name: Delete Build File
         uses: JesseTG/rm@v1.0.3
@@ -40,6 +41,7 @@ jobs:
         with:
           name: StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip
           path: StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
+          compression-level: 0
 
       - name: Delete Server Build File
         uses: JesseTG/rm@v1.0.3
