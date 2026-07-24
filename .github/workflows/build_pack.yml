@@ -10,12 +10,35 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
 
+      - name: TOML Reader
+        uses: SebRollen/toml-action@v1.2.0
+        id: read_version
+        with:
+          file: 'pack.toml'
+          field: 'version'
+
       - name: Build pack
         run: |
           .\packwiz.exe refresh
           .\packwiz.exe curseforge export
-      - name: Upload pack
+      - name: Upload Pack
         uses: actions/upload-artifact@v4
         with:
-          name: 
+          name: StaTech_Industry-${{ steps.read_version.outputs.value }}
           path: *.zip
+
+      - name: Delete Build File
+        run: rm -rf *.zip
+
+      - name: Build server pack
+        run: |
+          .\packwiz.exe curseforge export -s 'both'
+      - name: Upload Server Pack
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: StaTech_Industry_Server-${{ steps.read_version.outputs.value }}
+          path: *.zip
+
+      - name: Delete Server Build File
+        run: rm -rf *.zip
+  
