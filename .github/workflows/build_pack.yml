@@ -28,7 +28,9 @@ jobs:
           path: /StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
 
       - name: Delete Build File
-        run: rm -rf /StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
+        uses: JesseTG/rm@v1.0.3
+        with:
+          path: 'StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip'
 
       - name: Build server pack
         run: |
@@ -40,5 +42,7 @@ jobs:
           path: /StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
 
       - name: Delete Server Build File
-        run: rm -rf /StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
+        uses: JesseTG/rm@v1.0.3
+        with:
+          path: 'StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip'
   
