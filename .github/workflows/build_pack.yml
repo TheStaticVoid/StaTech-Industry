@@ -1,7 +1,7 @@
 name: build_pack
 run-name: ${{ github.actor }} is building the modpack
 on:
-  push
+  workflow_dispatch:
 jobs:
   execute-exe:
     runs-on: windows-latest
@@ -35,7 +35,7 @@ jobs:
 
       - name: Build server pack
         run: |
-          .\packwiz.exe curseforge export -s 'both' -o 'StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip'
+          .\packwiz.exe curseforge export -o 'StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip' -s 'server'
       - name: Upload Server Pack
         uses: actions/upload-artifact@v7
         with:

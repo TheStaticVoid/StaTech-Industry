@@ -845,7 +845,6 @@ ServerEvents.tags('item', event => {
     CRAFTING_STORAGE.forEach(id => event.add('kubejs:crafting_storage', id) );
 
     // Tag all the budding blocks
-    // Doesn't work in KubeJS :l
     const BUDDING_BLOCKS = [
         ae('flawless_budding_quartz'),
         ae('flawed_budding_quartz'),
