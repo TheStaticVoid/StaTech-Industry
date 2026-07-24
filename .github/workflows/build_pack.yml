@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: StaTech_Industry-${{ steps.read_version.outputs.value }}.zip
-          path: /StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
+          path: StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
 
       - name: Delete Build File
         uses: JesseTG/rm@v1.0.3
@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v7.0.1
         with:
           name: StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip
-          path: /StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
+          path: StaTech Industry 2.0-${{ steps.read_version.outputs.value }}.zip
 
       - name: Delete Server Build File
         uses: JesseTG/rm@v1.0.3
