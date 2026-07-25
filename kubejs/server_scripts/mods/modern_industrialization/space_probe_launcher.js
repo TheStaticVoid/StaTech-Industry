@@ -3,26 +3,6 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-/* MIRecipeEvents.customCondition(event => {
-    event.register('block_2back_2up', (ctx, recipe) => {
-        // Get machine block entity
-        const be = ctx.blockEntity;
-
-        // Compute target block position: 2 back from front face, then +1 Y
-        const targetPos = be.blockPos['relative(net.minecraft.core.Direction,int)'](
-            be.orientation.facingDirection.opposite,
-            2
-        ).above(2);
-
-        // Get the block state at that position
-        const state = ctx.level.getBlockState(targetPos);
-
-        // Compare with the block ID you want (replace with your desired block)
-        return state.id === 'minecraft:diamond_block'; // <- Your target block
-    },
-    Text.of('Requires Diamond Block 2 blocks behind and 2 block above'));
-}); */
-
 ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/space_probe_launcher/${id}`;
@@ -33,7 +13,7 @@ ServerEvents.recipes(event => {
         .itemIn(kj('research_probe'))
         .itemIn(kj('star_location_telemetry'))
         .itemOut(Item.of('modern_industrialization:aluminum_tank[modern_industrialization:fluid_storage={amount:64000L,resource:{id:"modern_industrialization:stellar_plasma"}}]'))
-        .dimension('statech:space')
+//        .dimension('statech:space')
         .adjacentBlock(kj('mki_probe_computer'), 'below')
         .id(st('research_probe_star'));
         
@@ -46,7 +26,9 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: kj('basic_space_probe'), probability: 0.10 } ],
         [ 
             { amount: 1, item: mi('desh_ore'), probability: 0.25  },
-            { amount: 1, item: mi('moon_ice_ore'), probability: 0.02 }
+            { amount: 1, item: mi('moon_ice_ore'), probability: 0.02 },
+            { amount: 1, item: mi('bauxite_ore'), probability: 0.20 },
+            { amount: 1, item: mc('gold_ore'), probability: 0.25 }
         ],
         kj('mki_probe_computer'),
         'below'
@@ -59,7 +41,11 @@ ServerEvents.recipes(event => {
         600,
         [ { amount: 1, item: kj('advanced_space_probe'), probability: 0.10 } ],
         [ 
-            { amount: 1, item: mi('ostrum_ore'), probability: 0.25  }
+            { amount: 1, item: mi('ostrum_ore'), probability: 0.25  },
+            { amount: 1, item: mi('corundum_ore'), probability: 0.20 },
+            { amount: 1, item: mi('monazite_ore'), probability: 0.15 },
+            { amount: 1, item: mi('sapphire_ore'), probability: 0.15 },
+            { amount: 1, item: mc('emerald_ore'), probability: 0.10 }
         ],
         kj('mkii_probe_computer'),
         'below'
@@ -72,7 +58,10 @@ ServerEvents.recipes(event => {
         600,
         [ { amount: 1, item: kj('highly_advanced_space_probe'), probability: 0.10 } ],
         [ 
-            { amount: 1, item: mi('calorite_ore'), probability: 0.25  }
+            { amount: 1, item: mi('calorite_ore'), probability: 0.25  },
+            { amount: 1, item: mc('ancient_debris'), probability: 0.10 },
+            { amount: 1, item: mi('sapphire_ore'), probability: 0.30 },
+            { amount: 1, item: mc('iron_ore'), probability: 0.60 }
         ],
         kj('mkiii_probe_computer'),
         'below'

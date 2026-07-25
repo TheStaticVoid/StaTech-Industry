@@ -22,10 +22,6 @@ ServerEvents.recipes(event => {
         ea('assembler/sky_steel'),
         ea('assembler/entro_ingot_transformation'),
         ea('assembler/fluix_transformation'),
-/*      ea('cutter/logic_processor'),
-        ea('cutter/calculation_processor'),
-        ea('cutter/silicon_print'),
-        ea('cutter/silicon_print'), */
         ea('fixer/certus_flawed'), // Could be readded, needs balancing //
         ea('infinity_cobblestone_cell'),
         ea('machine_frame'),

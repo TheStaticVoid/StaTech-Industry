@@ -55,3 +55,6 @@ let sl = (id) => `simplylight:${id}`;
 let pc = (id) => `pipe_connector:${id}`;
 let yai = (id) => `yet_another_industrialization:${id}`;
 let ca = (id) => `createaddition:${id}`;
+let cd = (id) => `createdeco:${id}`;
+let cm = (id) => `stcm:${id}`;
+let ch = (id) => `chisel:${id}`;

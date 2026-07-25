@@ -52,7 +52,7 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
         true, // top overlay
 		false, // side overlay
 		// Batch size, EU cost multiplier
-		8, 
+		16, 
 		1
 		
 	);

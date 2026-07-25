@@ -111,20 +111,6 @@ ServerEvents.recipes(event => {
         // ]
     // );
 
-    // -- LAPIS -- //
-    // centrifuge(
-        // st('lapis_lazuli'),
-        // 32,
-        // 1500,
-        // [ { amount: 4, item: mc('lapis_lazuli') } ],
-        // [
-            // { amount: 3, item: tr('lazurite_dust') },
-            // { amount: 1, item: tr('pyrite_small_dust') },
-            // { amount: 1, item: tr('calcite_small_dust') },
-            // { amount: 2, item: tr('sodalite_small_dust') }
-        // ]
-    // );
-
     // -- DARK ASHES -- //
     centrifuge(
         event,
@@ -158,15 +144,4 @@ ServerEvents.recipes(event => {
         ]
     );
 
-    // -- GALENA DUST -- //
-    // centrifuge(
-        // st('galena_dust'),
-        // 32,
-        // 400,
-        // [ { amount: 2, tag: 'c:galena_dusts' } ],
-        // [
-            // { amount: 1, item: mi('silver_dust') },
-            // { amount: 1, item: mi('lead_dust') }
-        // ]
-    // );
 });

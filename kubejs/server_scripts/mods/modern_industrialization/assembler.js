@@ -19,7 +19,6 @@ ServerEvents.recipes(event => {
         mi('assembler_generated/electric_age/battery/sodium_battery'),
         mi('assembler_generated/electric_age/battery/cadmium_battery'),
         mi('assembler_generated/electric_age/battery/plutonium_battery'),
-//        mi('assembler_generated/electric_age/component/craft/diode_doped'),
         mi('materials/stainless_steel/assembler/tank'),
         mi('materials/titanium/assembler/tank'),
         mi('materials/tungstensteel/assembler/tank'),
@@ -27,30 +26,14 @@ ServerEvents.recipes(event => {
         mi('machines/machine_chainer/assembler'),
         io('machines/pyrolyse_oven/assembler'),
         mi('assembler_generated/electric_age/machine/large_diesel_generator'),
-        mi('assembler_generated/electric_age/machine/large_steam_turbine')/* ,
-        mi('materials/uranium/assembler/fuel_rod'),
+        mi('assembler_generated/electric_age/machine/large_steam_turbine'),
+/*      mi('materials/uranium/assembler/fuel_rod'),
         mi('materials/he_uranium/assembler/fuel_rod'),
         mi('materials/le_uranium/assembler/fuel_rod'),
         mi('materials/he_mox/assembler/fuel_rod'),
         mi('materials/le_mox/assembler/fuel_rod') */
     ];
     REMOVED_RECIPE.forEach(id => event.remove({id: id}));
-
-    // -- CORE MINING DRILL -- //
-    assembler(
-        event,
-        st('core_mining_drill'),
-        8,
-        200,
-        [
-            { amount: 3, item: mi('clean_stainless_steel_machine_casing') },
-            { amount: 2, item: mi('quantum_circuit') },
-            { amount: 2, item: mi('large_advanced_motor') },
-            { amount: 1, item: mi('quantum_machine_hull') },
-            { amount: 1, item: mi('desh_drill_head') }
-        ],
-        [ { amount: 1, item: mi('core_drill') } ]
-    );
 
     // -- DOPED DIODE -- //
     assembler(
@@ -708,21 +691,22 @@ ServerEvents.recipes(event => {
     );
 
     // -- PHOTOSYNTHETIC CHAMBER -- //
-    // assembler(
-        // st('photosynthetic_chamber'),
-        // 8,
-        // 200,
-        // [
-            // { amount: 2, item: mi('inductor') },
-            // { amount: 2, item: mi('motor') },
-            // { amount: 1, item: mi('pump') },
-            // { amount: 1, item: mi('steel_tank') },
-            // { amount: 1, item: mc('dirt') },
-            // { amount: 1, tag: 'c:glass_blocks' },
-            // { amount: 1, item: mi('basic_machine_hull') }
-        // ],
-        // [ { amount: 1, item: mi('photosynthetic_chamber') } ]
-    // );
+    assembler(
+        event,
+        st('photosynthetic_chamber'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('inductor') },
+            { amount: 2, item: mi('motor') },
+            { amount: 1, item: mi('pump') },
+            { amount: 1, item: mi('steel_tank') },
+            { amount: 1, item: mc('dirt') },
+            { amount: 1, tag: 'c:glass_blocks' },
+            { amount: 1, item: mi('basic_machine_hull') }
+        ],
+        [ { amount: 1, item: mi('photosynthetic_chamber') } ]
+    );
 
     // -- ROCKET PART ASSEMBLER -- //
     assembler(
@@ -742,19 +726,20 @@ ServerEvents.recipes(event => {
     );
 
     // -- CORE MINING DRILL -- //
-    // assembler(
-        // st('core_drill'),
-        // 8,
-        // 200,
-        // [
-            // { amount: 3, item: mi('clean_stainless_steel_machine_casing') },
-            // { amount: 2, item: mi('large_advanced_motor') },
-            // { amount: 2, item: mi('quantum_circuit') },
-            // { amount: 1, item: mi('desh_drill_head') },
-            // { amount: 1, item: mi('quantum_machine_hull') }
-        // ],
-        // [ { amount: 1, item: mi('core_drill') } ]
-    // );
+    assembler(
+        event,
+        st('core_mining_drill'),
+        8,
+        200,
+        [
+            { amount: 3, item: mi('clean_stainless_steel_machine_casing') },
+            { amount: 2, item: mi('quantum_circuit') },
+            { amount: 2, item: mi('large_advanced_motor') },
+            { amount: 1, item: mi('quantum_machine_hull') },
+            { amount: 1, item: mi('desh_drill_head') }
+        ],
+        [ { amount: 1, item: mi('core_drill') } ]
+    );
 
     // -- INDUSTRIAL GREENHOUSE -- //
     assembler(
@@ -771,20 +756,6 @@ ServerEvents.recipes(event => {
         ],
         [ { amount: 1, item: mi('greenhouse') } ]
     );
-
-    // -- MEGA SMELTER -- //
-    // assembler(
-        // st('mega_smelter'),
-        // 8,
-        // 200,
-        // [
-            // { amount: 4, item: mi('cupronickel_wire_magnetic') },
-            // { amount: 2, item: mi('electronic_circuit') },
-            // { amount: 2, item: mi('electric_furnace') },
-            // { amount: 1, item: mi('advanced_machine_hull') }
-        // ],
-        // [ { amount: 1, item: mi('mega_smelter') } ]
-    // );
 
     // -- MOB CRUSHER -- //
     assembler(
@@ -1412,87 +1383,6 @@ ServerEvents.recipes(event => {
         ],
         [ { amount: 4, item: kj('highly_advanced_space_probe') } ],
     );
-
-    //---------------------//
-    // -- NUCLEAR REMIX -- //
-    //---------------------//
-
-
-    // 4x fuel cost for all rods
-/*     assembler(
-        event,
-        st('uranium_fuel_rod'),
-        16,
-        200,
-        [
-            { amount: 2, item: mi('blastproof_alloy_curved_plate') },
-            { amount: 1, item: mi('large_motor') },
-            { amount: 2, item: mi('robot_arm') },
-            { amount: 64, item: mi('uranium_rod') },
-            { amount: 8, item: mi('uranium_rod') }
-        ],
-        [ { amount: 1, item: mi('uranium_fuel_rod') } ],
-    ); 
-
-    assembler(
-        event,
-        st('le_uranium_fuel_rod'),
-        16,
-        200,
-        [
-            { amount: 2, item: mi('blastproof_alloy_curved_plate') },
-            { amount: 1, item: mi('large_motor') },
-            { amount: 2, item: mi('robot_arm') },
-            { amount: 64, item: mi('le_uranium_rod') },
-            { amount: 8, item: mi('le_uranium_rod') }
-        ],
-        [ { amount: 1, item: mi('le_uranium_fuel_rod') } ],
-    );  
-        
-    assembler(
-        event,
-        st('he_uranium_fuel_rod'),
-        16,
-        200,
-        [
-            { amount: 2, item: mi('blastproof_alloy_curved_plate') },
-            { amount: 1, item: mi('large_motor') },
-            { amount: 2, item: mi('robot_arm') },
-            { amount: 64, item: mi('he_uranium_rod') },
-            { amount: 8, item: mi('he_uranium_rod') }
-        ],
-        [ { amount: 1, item: mi('he_uranium_fuel_rod') } ],
-    );  
-        
-    assembler(
-        event,
-        st('le_mox_fuel_rod'),
-        16,
-        200,
-        [
-            { amount: 2, item: mi('blastproof_alloy_curved_plate') },
-            { amount: 1, item: mi('large_motor') },
-            { amount: 2, item: mi('robot_arm') },
-            { amount: 64, item: mi('le_mox_rod') },
-            { amount: 8, item: mi('le_mox_rod') }
-        ],
-        [ { amount: 1, item: mi('le_mox_fuel_rod') } ],
-    ); 
-        
-    assembler(
-        event,
-        st('he_mox_fuel_rod'),
-        16,
-        200,
-        [
-            { amount: 2, item: mi('blastproof_alloy_curved_plate') },
-            { amount: 1, item: mi('large_motor') },
-            { amount: 2, item: mi('robot_arm') },
-            { amount: 64, item: mi('he_mox_rod') },
-            { amount: 8, item: mi('he_mox_rod') }
-        ],
-        [ { amount: 1, item: mi('he_mox_fuel_rod') } ],
-    );  */
 
     //---------------------//
     // -- CREATE COMPAT -- //

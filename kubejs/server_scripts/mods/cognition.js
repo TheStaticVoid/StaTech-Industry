@@ -14,18 +14,4 @@ ServerEvents.recipes(event => {
     ]; 
     REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
 
-    // --  -- // 
-/*     event.shaped(bg('template_manager'), [
-        'GRG',
-        'EFE',
-        'GCG'
-    ],
-    {
-        G: '#c:plates/gold',
-        R: '#c:dusts/redstone',
-        E: '#c:ender_pearls',
-        C: mi('electronic_circuit'),
-        F: mi('basic_machine_hull')
-    })
-    .id(st('template_manager')); */
 });

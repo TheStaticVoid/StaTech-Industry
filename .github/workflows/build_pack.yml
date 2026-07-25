@@ -1,0 +1,50 @@
+name: build_pack
+run-name: ${{ github.actor }} is building the modpack
+on:
+  workflow_dispatch:
+jobs:
+  execute-exe:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: TOML Reader
+        uses: SebRollen/toml-action@v1.2.0
+        id: read_version
+        with:
+          file: 'pack.toml'
+          field: 'version'
+
+      - name: Build pack
+        run: |
+          .\packwiz.exe refresh
+          .\packwiz.exe curseforge export -o 'StaTech_Industry-${{ steps.read_version.outputs.value }}.zip'
+      - name: Upload Pack
+        uses: actions/upload-artifact@v7
+        with:
+          name: StaTech_Industry-${{ steps.read_version.outputs.value }}.zip
+          path: StaTech_Industry-${{ steps.read_version.outputs.value }}.zip
+          archive: false
+
+      - name: Delete Build File
+        uses: JesseTG/rm@v1.0.3
+        with:
+          path: 'StaTech_Industry-${{ steps.read_version.outputs.value }}.zip'
+
+      - name: Build server pack
+        run: |
+          .\packwiz.exe curseforge export -o 'StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip' -s 'server'
+      - name: Upload Server Pack
+        uses: actions/upload-artifact@v7
+        with:
+          name: StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip
+          path: StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip
+          archive: false
+
+      - name: Delete Server Build File
+        uses: JesseTG/rm@v1.0.3
+        with:
+          path: 'StaTech_Industry_Server-${{ steps.read_version.outputs.value }}.zip'
+  

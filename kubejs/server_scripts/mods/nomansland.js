@@ -23,6 +23,34 @@ ServerEvents.tags('worldgen/biome', event => {
     ]);
 });
 
+ServerEvents.tags('block', event => {
+
+    event.add('c:buds', [
+        nm('small_quartzite_bud'),
+        nm('medium_quartzite_bud'),
+        nm('large_quartzite_bud'),
+    ]);
+
+    event.add('c:budding_blocks', nm('budding_quartzite'));
+
+    event.add('c:clusters', nm('quartzite_cluster'));
+
+    event.add('ae2:growth_acceleratable', nm('budding_quartzite'));
+});
+
+ServerEvents.tags('item', event => {
+
+    event.add('c:buds', [
+        nm('small_quartzite_bud'),
+        nm('medium_quartzite_bud'),
+        nm('large_quartzite_bud'),
+    ]);
+
+    event.add('c:budding_blocks', nm('budding_quartzite'));
+
+    event.add('c:clusters', nm('quartzite_cluster'));
+});
+
 ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:nomansland/${id}`;

@@ -739,21 +739,6 @@ ServerEvents.recipes(event => {
     })
     .id(st('formation_plane_alt'));
 
-    // -- CRYSTAL RESONANCE GENERATOR -- //
-/*     event.shaped(ae('crystal_resonance_generator'), [
-        'BAB',
-        'BEB',
-        'DCD'
-    ],
-    {
-        A: ae('fluix_block'),
-        B: '#c:plates/steel',
-        C: ae('quartz_block'),
-        D: '#c:plates/copper',
-        E: mi('analog_circuit')
-    })
-    .id(st('crystal_resonance_generator'));
- */
     // -- IMPORT BUS -- //
     event.shaped(ae('import_bus'), [
         ' A ',
@@ -860,7 +845,6 @@ ServerEvents.tags('item', event => {
     CRAFTING_STORAGE.forEach(id => event.add('kubejs:crafting_storage', id) );
 
     // Tag all the budding blocks
-    // Doesn't work in KubeJS :l
     const BUDDING_BLOCKS = [
         ae('flawless_budding_quartz'),
         ae('flawed_budding_quartz'),

@@ -11,22 +11,9 @@ ServerEvents.recipes(event => {
     const DELETED_RECIPE = [
         mi('materials/diamond/compressor/main'),
         mi('materials/emerald/compressor/main'),
-        // mi('compat/techreborn/compressor/_c_zinc_ingots_to_techreborn_zinc_plate'),
-        // mi('compressor/calorite_ingot_to_plate'),
         mi('vanilla_recipes/compressor/paper_with_sugarcane'),
-        // mi('compressor/desh_ingot_to_plate'),
-        // mi('compat/techreborn/compressor/techreborn_lazurite_dust_to_techreborn_lazurite_plate')
     ];
     DELETED_RECIPE.forEach(id => event.remove({id: id}));
-
-    // -- NETHERITE NUGGET -> NETHERITE INGOT -- //
-    // compressor(
-        // st('netherite_ingot'),
-        // 32,
-        // 200,
-        // [ { amount: 9, item: tr('netherite_nugget') } ],
-        // [ { amount: 1, item: mc('netherite_ingot') } ]
-    // );
     
     // -- PIZZA DOUGH -- //
     compressor(

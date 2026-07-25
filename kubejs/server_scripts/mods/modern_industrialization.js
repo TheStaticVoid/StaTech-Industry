@@ -735,6 +735,8 @@ ServerEvents.tags('item', event => {
     });
 });
 
+    // -- ADD SILVER DROPS TO CAVE LOOT FOR CLEAN ENERGY RUN -- // 
+
 LootJS.lootTables(event => {
     event
         .getLootTable(nm('chests/ancient_pot_cave'))

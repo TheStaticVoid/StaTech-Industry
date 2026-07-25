@@ -43,18 +43,5 @@ ServerEvents.recipes(event => {
          ],
         [ { amount: 1, item: kj('abs_building_brick') } ]
     );
-
-    // -- IRIDIUM ALLOY PLATE -- //
-    // implosionCompressor(
-        // st('iridum_alloy_plate'),
-        // 64,
-        // 10,
-        // [
-            // { amount: 1, item: tr('iridium_alloy_ingot') },
-            // { amount: 4, item: mi('industrial_tnt') }
-        // ],
-        // [ { amount: 1, item: tr('iridium_alloy_plate') } ]
-    // );
-
    
 });

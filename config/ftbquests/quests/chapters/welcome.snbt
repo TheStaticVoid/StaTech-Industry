@@ -11,7 +11,7 @@
 	images: [
 		{
 			height: 6.0d
-			image: "statech:item/mm_logo"
+			image: "stcm:item/mm_logo"
 			rotation: 0.0d
 			width: 6.0d
 			x: 0.0d
@@ -24,7 +24,7 @@
 				"Find yourself stuck and need help?"
 				"Or if you just want to chat, come join the Discord!"
 			]
-			image: "statech:item/discordlogo"
+			image: "stcm:item/discordlogo"
 			rotation: 0.0d
 			width: 1.5d
 			x: 0.0d
@@ -78,8 +78,8 @@
 				id: "39C63B199AA904F9"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: 0.0d
+			x: 3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -96,8 +96,8 @@
 				id: "50932E4F50C38E5E"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: 1.0d
+			x: -3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -114,8 +114,8 @@
 				id: "40F284523C7D1EE5"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: -1.0d
+			x: -3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -132,8 +132,8 @@
 				id: "5188560E06DDBDE2"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -1.0d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -151,7 +151,7 @@
 				type: "checkmark"
 			}]
 			x: 1.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -159,12 +159,17 @@
 				id: "minecraft:chest"
 			}
 			id: "021CF7D7EC294561"
+			rewards: [{
+				id: "1578A85C1895808F"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
 				id: "592E1A7F0C40CF45"
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -175,12 +180,17 @@
 				id: "ftbquests:custom_icon"
 			}
 			id: "4B29608E216D6B49"
+			rewards: [{
+				id: "7E424C10732A10B0"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
 				id: "5250AE637A56FC21"
 				type: "checkmark"
 			}]
 			x: -1.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -191,12 +201,17 @@
 				id: "ftbquests:custom_icon"
 			}
 			id: "4BCA536EA971A125"
+			rewards: [{
+				id: "4C0B8A236A9159A0"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
 				id: "4AEB44EB44EF90AF"
 				type: "checkmark"
 			}]
 			x: 1.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -204,12 +219,17 @@
 				id: "iden_decor:floodlight"
 			}
 			id: "3DF44D4208B1684A"
+			rewards: [{
+				id: "54D54624414DA2D4"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
 				id: "662AE3D37EC9216B"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: 1.0d
+			x: 3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -217,12 +237,17 @@
 				id: "nomansland:ancient_bronze_mask"
 			}
 			id: "685A5D2BD8809F31"
+			rewards: [{
+				id: "16165A3122CA2D6C"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
 				id: "7AADB42E1295E814"
 				type: "checkmark"
 			}]
 			x: -1.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -230,12 +255,17 @@
 				id: "create:clipboard"
 			}
 			id: "5607443B61E1896B"
+			rewards: [{
+				id: "65E6F173D13513C2"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
 				id: "770B81572B7DF69A"
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0A260F1B9E13182D"]
@@ -243,13 +273,18 @@
 				id: "minecraft:crafter"
 			}
 			id: "4E1516DE8CDFE5EE"
+			rewards: [{
+				id: "68A13E881C2F4171"
+				type: "xp"
+				xp: 5
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "3241A9B8029079C0"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -257,12 +292,17 @@
 				id: "artifacts:charm_of_shrinking"
 			}
 			id: "1E4A6A853DB50810"
+			rewards: [{
+				id: "1DFC71973E028953"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
 				id: "2E90BA4DED04110F"
 				type: "checkmark"
 			}]
 			x: -2.5d
-			y: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -270,12 +310,17 @@
 				id: "minecraft:diamond_pickaxe"
 			}
 			id: "71C405D3CB376A14"
+			rewards: [{
+				id: "3E15833EFAABA405"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
 				id: "1B91387FD6E802F3"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: 2.5d
+			x: -3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -286,12 +331,17 @@
 				id: "ftbquests:custom_icon"
 			}
 			id: "3C6324BDADB253DB"
+			rewards: [{
+				id: "5333260E383AD717"
+				type: "xp"
+				xp: 5
+			}]
 			tasks: [{
 				id: "5D75C96318B7DC69"
 				type: "checkmark"
 			}]
 			x: 2.5d
-			y: -2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["58F52B959643FF34"]
@@ -299,20 +349,63 @@
 				id: "little_big_redstone:redstone_circuit_board"
 			}
 			id: "37DEDD25DD478F0E"
-			rewards: [{
-				id: "5BBB27985575D2ED"
-				item: {
-					count: 1
-					id: "little_big_redstone:red_microchip"
+			rewards: [
+				{
+					id: "5BBB27985575D2ED"
+					item: {
+						count: 1
+						id: "little_big_redstone:red_microchip"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "652F709502D8B51B"
+					type: "xp"
+					xp: 5
+				}
+			]
 			tasks: [{
 				id: "25E5126AF912D1DA"
 				type: "checkmark"
 			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["58F52B959643FF34"]
+			icon: {
+				id: "modern_industrialization:forge_hammer"
+			}
+			id: "2FBDFE8B010CE3C7"
+			rewards: [{
+				id: "6774F10868B60691"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "652A504A854E89B1"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["58F52B959643FF34"]
+			icon: {
+				id: "iden_decor:computer"
+			}
+			id: "0EFA60789B064DB4"
+			rewards: [{
+				id: "0D195E5B89A0CE02"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "42348CA825714275"
+				type: "checkmark"
+			}]
 			x: 2.5d
-			y: 2.5d
+			y: -2.5d
 		}
 	]
 }

@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-let tickCounter = 0;
+/* let tickCounter = 0;
 
 PlayerEvents.tick(event => {
     if (!event.player.isCreative() && event.player.level.dimension == 'statech:space') {
@@ -25,4 +25,4 @@ PlayerEvents.tick(event => {
 
         tickCounter++;
     }
-});
+}); */

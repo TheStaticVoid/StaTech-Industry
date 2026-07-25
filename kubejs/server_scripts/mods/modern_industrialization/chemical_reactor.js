@@ -8,17 +8,18 @@ ServerEvents.recipes(event => {
     let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
 
     // -- PHANTOM MEMBRANE -- //
-    // chemicalReactor(
-        // st('phantom_membrane'),
-        // 16,
-        // 200,
-        // [
-            // { amount: 16, item: mc('leather') }, 
-            // { amount: 2, item: tr('calcite_dust') },
-        // ],
-        // [ { amount: 1, item: mc('phantom_membrane') } ],
-        // [ { amount: 2000, fluid: mi('liquid_ender')} ]
-    // );
+    chemicalReactor(
+        event,
+        st('phantom_membrane'),
+        16,
+        200,
+        [
+            { amount: 16, item: mc('leather') }, 
+            { amount: 2, item: mi('calcite_dust') },
+        ],
+        [ { amount: 1, item: mc('phantom_membrane') } ],
+        [ { amount: 2000, fluid: mi('liquid_ender')} ]
+    );
 
     // -- BLAZE ROD -- //
     chemicalReactor(
@@ -60,16 +61,17 @@ ServerEvents.recipes(event => {
     );
 
     // -- ENDER PEARL -- //
-    // chemicalReactor(
-        // st('ender_pearl'),
-        // 16,
-        // 200,
-        // [ 
-            // { amount: 1, item: mc('slime_ball') },
-            // { amount: 1, item: mc('spider_eye') },
-        // ],
-        // [ { amount: 1, item: mc('ender_pearl') } ]
-    // );
+    chemicalReactor(
+        event,
+        st('ender_pearl'),
+        16,
+        200,
+        [ 
+            { amount: 1, item: mc('slime_ball') },
+            { amount: 1, item: mc('spider_eye') },
+        ],
+        [ { amount: 1, item: mc('ender_pearl') } ]
+    );
 
     // -- ROSE QUARTZ -- //
     chemicalReactor(
@@ -94,16 +96,6 @@ ServerEvents.recipes(event => {
         ],
         [ { amount: 2, item: mc('ender_eye') } ]
     );
-
-    // -- PLASTIC BAR -- //
-    // chemicalReactor(
-        // st('plastic_bar'),
-        // 16,
-        // 300,
-        // [ { amount: 1, item: mc('paper') } ],
-        // [ { amount: 1, item: 'anim_guns:plastic' } ],
-        // [ { amount: 500, fluid: mi('polyethylene') } ]
-    // );
 
     // -- POLYTETRAFLUOROETHYLENE -- //
     chemicalReactor(

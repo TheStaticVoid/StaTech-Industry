@@ -7,39 +7,6 @@ ServerEvents.recipes(event => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
     let st = (id) => `statech:modern_industrialization/macerator/${id}`;
 
-    // -- PYRITE DUST -- //
-    // macerator(
-        // st('pyrite_dust_from_pyrite_chunk'),
-        // 16,
-        // 200,
-        // [ { amount: 1, item: ge('pyrite_chunk') } ],
-        // [
-            // { amount: 1, item: tr('pyrite_dust') },
-            // { amount: 1, item: tr('pyrite_dust'), probability: 0.5 }
-        // ],
-    // );
-
-    // -- PYRITE DUST FROM BLOCK -- //
-    // macerator(
-        // st('pyrite_dust_from_pyrite_block'),
-        // 16,
-        // 200,
-        // [ { amount: 1, item: ge('pyrite') } ],
-        // [ 
-            // { amount: 4, item: tr('pyrite_dust') },
-            // { amount: 2, item: tr('pyrite_dust'), probability: 0.5 }
-        // ]
-    // );
-
-    // -- MARBLE DUST -- //
-    // macerator(
-        // st('marble_dust'),
-        // 4,
-        // 200,
-        // [ { amount: 1, item: bl('marble') } ],
-        // [ { amount: 2, item: tr('marble_dust') } ]
-    // );
-
     // -- WHEAT DOUGH -- //
     macerator(
         event,
@@ -49,15 +16,6 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: mc('wheat') } ],
         [ { amount: 2, item: cr('wheat_flour') } ]
     );
-
-    // -- SALT DUST -- //
-    // macerator(
-        // st('ground_salt'),
-        // 2,
-        // 100,
-        // [ { amount: 1, item: ed('salt_rock') } ],
-        // [ { amount: 1, item: ed('ground_salt') } ]
-    // );
 
     // -- CALCITE DUST FROM LIMESTONE -- //
     macerator(
@@ -69,15 +27,6 @@ ServerEvents.recipes(event => {
         [ { amount: 2, item: mi('calcite_dust') } ]
     );
 
-    // -- CALCITE DUST FROM BLOCKUS LIMESTONE -- // 
-    // macerator(
-        // st('calcite_dust_from_blockus_limestone'),
-        // 8,
-        // 100,
-        // [ { amount: 1, item: bl('limestone') } ],
-        // [ { amount: 2, item: tr('calcite_dust') } ]
-    // );
-
     // -- CALCITE DUST FROM CALCITE -- //
     macerator(
         event,
@@ -87,15 +36,6 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: mc('calcite') } ],
         [ { amount: 2, item: mi('calcite_dust') } ]   
     );
-
-    // -- RAW PLATINUM FROM SHELDONITE ORE -- //
-    // macerator(
-        // st('raw_platinum'),
-        // 2,
-        // 200,
-        // [ { amount: 1, tag: 'c:sheldonite_ores' } ],
-        // [ { amount: 3, item: mi('raw_platinum') } ]
-    // );
 
     // -- OBSIDIAN -- //
     macerator(
@@ -210,31 +150,34 @@ ServerEvents.recipes(event => {
     ); 
 
     // -- INCANDESCENT ESSENCE -- //
-    // macerator(
-        // st('fiery_powder'),
-        // 2,
-        // 200,
-        // [ { amount: 1, item: sp('blazing_crystal') } ],
-        // [ { amount: 16, item: sp('fiery_powder') } ]
-    // );
+    macerator(
+        event,
+        st('incandescent_essence'),
+        2,
+        200,
+        [ { amount: 1, item: sp('blazing_crystal') } ],
+        [ { amount: 16, item: sp('incandescent_essence') } ]
+    );
 
-    // -- BLIZZARD POWDER -- //
-    // macerator(
-        // st('blizzard_powder'),
-        // 2,
-        // 200,
-        // [ { amount: 1, item: sp('frostbite_crystal') } ],
-        // [ { amount: 16, item: sp('blizzard_powder') } ]
-    // );
+    // -- FROSTBITE ESSENCE -- //
+    macerator(
+        event,
+        st('frostbite_essence'),
+        2,
+        200,
+        [ { amount: 1, item: sp('frostbite_crystal') } ],
+        [ { amount: 16, item: sp('frostbite_essence') } ]
+    );
 
     // -- AMARANTH GRAINS -- //
-    // macerator(
-        // st('amaranth_grains'),
-        // 2,
-        // 200,
-        // [ { amount: 1, item: sp('amaranth_bushel') } ],
-        // [ { amount: 2, item: sp('amaranth_grains') } ]
-    // );
+    macerator(
+        event,
+        st('amaranth_grains'),
+        2,
+        200,
+        [ { amount: 1, item: sp('amaranth_bushel') } ],
+        [ { amount: 2, item: sp('amaranth_grains') } ]
+    );
 
     // -- COPPER FROM VERIDIUM -- //
     macerator(
@@ -357,24 +300,6 @@ ServerEvents.recipes(event => {
         );
     }); 
     
-    // -- BYG SAND FROM SANDSTONE -- //
-    // const BYG_SAND_COLORS = [
-        // 'blue',
-        // 'black',
-        // 'white',
-        // 'pink',
-        // 'purple'
-    // ];
-    
-    // BYG_SAND_COLORS.forEach(color => {
-        // macerator(
-            // st(`${color}_sand_from_sandstone`),
-            // 2,
-            // 100,
-            // [ { amount: 1, item: byg(`${color}_sandstone`) } ],
-            // [ { amount: 4, item: byg(`${color}_sand`) } ]
-        // );
-    // });
     
     // -- CERTUS QUARTZ FROM BUDS AND CLUSTER
      const CERTUS_DUST_DATA = [

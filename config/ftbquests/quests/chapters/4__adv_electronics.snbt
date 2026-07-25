@@ -1304,6 +1304,7 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				id: "21D503855303D718"
 				item: { count: 1, id: "modern_industrialization:diesel_jetpack" }
@@ -1337,6 +1338,7 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				id: "52546CB1C74CED20"
 				item: { count: 1, id: "modern_industrialization:diesel_mining_drill" }
@@ -1370,6 +1372,7 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				id: "7606667FD69EC685"
 				item: { count: 1, id: "modern_industrialization:diesel_chainsaw" }
@@ -1632,6 +1635,7 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				id: "2A8DA7947F8DC029"
 				item: { count: 1, id: "kubejs:concrete_bar" }
@@ -3824,30 +3828,13 @@
 				xp: 25
 			}]
 			shape: "square"
+			size: 1.5d
 			tasks: [{
 				id: "2D8CB8348E0EFE30"
 				item: { count: 1, id: "modern_industrialization:enderium_ingot" }
 				type: "item"
 			}]
 			x: 19.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["39A4845AB2B8FC83"]
-			id: "114F2FC2E57172C8"
-			rewards: [{
-				id: "695A0085893C9844"
-				type: "xp"
-				xp: 25
-			}]
-			size: 2.0d
-			tasks: [{
-				count: 16L
-				id: "665DF3206C89DBC8"
-				item: { count: 1, id: "modern_industrialization:enderium_plate" }
-				type: "item"
-			}]
-			x: 17.0d
 			y: 8.0d
 		}
 		{
@@ -4146,6 +4133,7 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [
 				{
@@ -4242,6 +4230,7 @@
 					type: "loot"
 				}
 			]
+			shape: "rsquare"
 			size: 1.5d
 			tasks: [
 				{
@@ -4287,7 +4276,7 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
+			x: 9.25d
 			y: 5.25d
 		}
 		{
