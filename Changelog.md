@@ -9,6 +9,7 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 ## Mods added:
 - [Async Logger](https://www.curseforge.com/projects/1491426) - 2.2.0+1.21.1-neoforge
 - [Gnetum](https://www.curseforge.com/projects/1220460) - 3.3.6
+- [Invasive Optimizations](https://www.curseforge.com/projects/1528432) -1.0.21
 - [JourneyMap Integration](https://www.curseforge.com/projects/525447) - 1.21.1-1.9
 - [Journeymap-NeoForge](https://www.curseforge.com/projects/32274) - not a fabric mod
 - [StaTech Companion Mod](https://www.curseforge.com/projects/1610931) - 0.1.1b
