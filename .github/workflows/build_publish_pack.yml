@@ -56,7 +56,7 @@ jobs:
         with:
           tag_name: ${{ steps.read_version.outputs.value }}
           body_path: Changelog.md
-          name: "${TAG} Release"
+          name: "${{ steps.read_version.outputs.value }} Release"
           make_latest: true
           files: |
             StaTech_Industry-${{ steps.read_version.outputs.value }}.zip
