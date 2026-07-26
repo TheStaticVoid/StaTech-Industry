@@ -85,6 +85,17 @@ ServerEvents.recipes(event => {
     })
     .id(st('smoker'));
 
+    // -- ANDESITE FROM SILTSTONE -- //
+    event.shaped('4x ' + mc('andesite'), [
+        'CS',
+        'SC'
+    ],
+    {
+        C: mc('cobblestone'),
+        S: nm('siltstone')
+    })
+    .id(st('andesite_from_siltstone'));
+
 
     //----------------------------//
     // --- SHAPELESS CRAFTING --- //
