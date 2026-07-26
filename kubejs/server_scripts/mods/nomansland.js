@@ -65,12 +65,12 @@ ServerEvents.recipes(event => {
         su('integration/pancake_fd'),
         nm('food/salmon_and_pesto_gnocchi')
     ];
-    NOMANSLAND_REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
+    NOMANSLAND_REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
 
-    //-------------------------//
+    // -------------------------//
     // --- SHAPED CRAFTING --- //
-    //-------------------------//
+    // -------------------------//
 
 
     // -- SMOKER -- //
@@ -78,146 +78,144 @@ ServerEvents.recipes(event => {
         ' L ',
         'LFL',
         ' L '
-    ],
-    {
+    ], {
         F: mc('furnace'),
         L: '#minecraft:logs'
     })
-    .id(st('smoker'));
+        .id(st('smoker'));
 
     // -- ANDESITE FROM SILTSTONE -- //
     event.shaped('4x ' + mc('andesite'), [
         'CS',
         'SC'
-    ],
-    {
+    ], {
         C: mc('cobblestone'),
         S: nm('siltstone')
     })
-    .id(st('andesite_from_siltstone'));
+        .id(st('andesite_from_siltstone'));
 
 
-    //----------------------------//
+    // ----------------------------//
     // --- SHAPELESS CRAFTING --- //
-    //----------------------------//
+    // ----------------------------//
 
 
     // -- MUSHROOM STEW -- //
     event.shapeless(
-    Item.of(mc('mushroom_stew'), 1),
-    [
-        '2x #nomansland:edible_mushrooms',
-        mc('bowl')
-    ])
-    .id(st('mushroom_stew_shaped'));
+        Item.of(mc('mushroom_stew'), 1),
+        [
+            '2x #nomansland:edible_mushrooms',
+            mc('bowl')
+        ])
+        .id(st('mushroom_stew_shaped'));
 
     // -- PANCAKE -- //
     event.shapeless(
-    Item.of(su('pancake'), 2),
-    [
-        '#c:drinks/milk',
-        '#c:foods/dough',
-        mc('egg'),
-        '#supplementaries:pancake_syrup'
-    ])
-    .id(st('pancake'));
+        Item.of(su('pancake'), 2),
+        [
+            '#c:drinks/milk',
+            '#c:foods/dough',
+            mc('egg'),
+            '#supplementaries:pancake_syrup'
+        ])
+        .id(st('pancake'));
 
-    //---------------------//
+    // ---------------------//
     // ----- COOKING ----- //
-    //---------------------//
+    // ---------------------//
 
 
     // -- MUSHROOM RICE -- //
     event.custom({
-    "type": fd('cooking'),
-    "experience": 1.0,
-    "ingredients": [
-        {
-        "tag": "nomansland:edible_mushrooms"
-        },
-        {
-        "tag": "nomansland:edible_mushrooms"
-        },
-        {
-        "tag": "c:crops/rice"
-        },
-        {
-        "type": "neoforge:compound",
-        "children": [
+        "type": fd('cooking'),
+        "experience": 1.0,
+        "ingredients": [
             {
-            "item": mc('potato')
+                "tag": "nomansland:edible_mushrooms"
             },
             {
-            "item": mc('carrot')
+                "tag": "nomansland:edible_mushrooms"
+            },
+            {
+                "tag": "c:crops/rice"
+            },
+            {
+                "type": "neoforge:compound",
+                "children": [
+                    {
+                        "item": mc('potato')
+                    },
+                    {
+                        "item": mc('carrot')
+                    }
+                ]
             }
-        ]
+        ],
+        "recipe_book_tab": "meals",
+        "result": {
+            "count": 1,
+            "id": fd('mushroom_rice')
         }
-    ],
-    "recipe_book_tab": "meals",
-    "result": {
-        "count": 1,
-        "id": fd('mushroom_rice')
-    }
     })
-    .id(st('mushroom_rice'));
+        .id(st('mushroom_rice'));
 
     // -- MUSHROOM STEW ALT -- //
     event.custom({
-    "type": fd('cooking'),
-    "container": {
-        "count": 1,
-        "id": "minecraft:bowl"
-    },
-    "experience": 1.0,
-    "ingredients": [
-        {
-        "tag": "nomansland:edible_mushrooms"
+        "type": fd('cooking'),
+        "container": {
+            "count": 1,
+            "id": "minecraft:bowl"
         },
-        {
-        "tag": "nomansland:edible_mushrooms"
+        "experience": 1.0,
+        "ingredients": [
+            {
+                "tag": "nomansland:edible_mushrooms"
+            },
+            {
+                "tag": "nomansland:edible_mushrooms"
+            }
+        ],
+        "recipe_book_tab": "meals",
+        "result": {
+            "count": 1,
+            "id": mc('mushroom_stew')
         }
-    ],
-    "recipe_book_tab": "meals",
-    "result": {
-        "count": 1,
-        "id": mc('mushroom_stew')
-    }
     })
-    .id(st('mushroom_stew_alt'));
+        .id(st('mushroom_stew_alt'));
 
     // -- SALMON AND PESTO GNOCCHI -- //
     event.custom({
-    "type": fd('cooking'),
-    "container": {
-        "count": 1,
-        "id": "minecraft:bowl"
-    },
-    "experience": 1.0,
-    "ingredients": [
-        {
-        "item": nm('pesto_bottle')
+        "type": fd('cooking'),
+        "container": {
+            "count": 1,
+            "id": "minecraft:bowl"
         },
-        {
-        "item": mc('potato')
-        },
-        {
-        "tag": 'c:foods/dough'
-        },
-        {
-        "item": fd('salmon_slice')
+        "experience": 1.0,
+        "ingredients": [
+            {
+                "item": nm('pesto_bottle')
+            },
+            {
+                "item": mc('potato')
+            },
+            {
+                "tag": 'c:foods/dough'
+            },
+            {
+                "item": fd('salmon_slice')
+            }
+        ],
+        "recipe_book_tab": "meals",
+        "result": {
+            "count": 1,
+            "id": nm('salmon_and_pesto_gnocchi')
         }
-    ],
-    "recipe_book_tab": "meals",
-    "result": {
-        "count": 1,
-        "id": nm('salmon_and_pesto_gnocchi')
-    }
     })
-    .id(st('salmon_and_pesto_gnocchi'));
+        .id(st('salmon_and_pesto_gnocchi'));
 
-    //-----------------//
+    // -----------------//
     // ---- MIXER ---- //
-    //-----------------//
+    // -----------------//
 
     // -- MUNDANE TILES -- //
     mixer(
@@ -225,11 +223,11 @@ ServerEvents.recipes(event => {
         st('mundane_tiles'),
         2,
         200,
-        [ 
+        [
             { amount: 2, item: nm('cobblestone_bricks') },
             { amount: 2, item: mc('white_terracotta') }
         ],
-        [ { amount: 4, item: nm('mundane_tiles') } ]
+        [{ amount: 4, item: nm('mundane_tiles') }]
     );
 
     // -- SILTSTONE -- //
@@ -238,11 +236,11 @@ ServerEvents.recipes(event => {
         st('siltstone'),
         2,
         200,
-        [ 
+        [
             { amount: 2, item: nm('silt') },
             { amount: 2, item: mc('andesite') }
         ],
-        [ { amount: 3, item: nm('siltstone') } ]
+        [{ amount: 3, item: nm('siltstone') }]
     );
 
     // -- COARSE BRICKS -- //
@@ -251,11 +249,11 @@ ServerEvents.recipes(event => {
         st('coarse_bricks'),
         2,
         200,
-        [ 
+        [
             { amount: 2, item: mc('coarse_dirt') },
             { amount: 2, item: mc('brick') }
         ],
-        [ { amount: 2, item: nm('coarse_bricks') } ]
+        [{ amount: 2, item: nm('coarse_bricks') }]
     );
 
     // -- MOSSY COARSE BRICKS -- //
@@ -264,11 +262,11 @@ ServerEvents.recipes(event => {
         st('mossy_coarse_bricks'),
         2,
         200,
-        [ 
+        [
             { amount: 1, item: nm('coarse_bricks') },
             { amount: 1, item: mc('moss_block') }
         ],
-        [ { amount: 1, item: nm('mossy_coarse_bricks') } ]
+        [{ amount: 1, item: nm('mossy_coarse_bricks') }]
     );
 
     // -- MOSSY COARSE BRICKS FROM VINE -- //
@@ -277,11 +275,11 @@ ServerEvents.recipes(event => {
         st('mossy_coarse_bricks_vine'),
         2,
         200,
-        [ 
+        [
             { amount: 1, item: nm('coarse_bricks') },
             { amount: 1, item: mc('vine') }
         ],
-        [ { amount: 1, item: nm('mossy_coarse_bricks') } ]
+        [{ amount: 1, item: nm('mossy_coarse_bricks') }]
     );
 
     // -- MOSSY COARSE BRICKS FROM NML -- //
@@ -290,11 +288,11 @@ ServerEvents.recipes(event => {
         st('mossy_coarse_bricks_nml'),
         2,
         200,
-        [ 
+        [
             { amount: 1, item: nm('coarse_bricks') },
             { amount: 4, tag: 'nomansland:alternative_moss' }
         ],
-        [ { amount: 1, item: nm('mossy_coarse_bricks') } ]
+        [{ amount: 1, item: nm('mossy_coarse_bricks') }]
     );
 
     // -- EARTHEN TILES -- //
@@ -303,11 +301,11 @@ ServerEvents.recipes(event => {
         st('earthen_tiles'),
         2,
         200,
-        [ 
+        [
             { amount: 2, item: mc('packed_mud') },
             { amount: 2, item: mc('terracotta') }
         ],
-        [ { amount: 4, item: nm('earthen_tiles') } ]
+        [{ amount: 4, item: nm('earthen_tiles') }]
     );
 
     // -- DROSS TILES -- //
@@ -316,11 +314,11 @@ ServerEvents.recipes(event => {
         st('dross_tiles'),
         2,
         200,
-        [ 
+        [
             { amount: 2, item: mc('polished_tuff') },
             { amount: 2, item: nm('silt') }
         ],
-        [ { amount: 4, item: nm('dross_tiles') } ]
+        [{ amount: 4, item: nm('dross_tiles') }]
     );
 
     // -- SILT -- //
@@ -329,11 +327,11 @@ ServerEvents.recipes(event => {
         st('silt'),
         2,
         200,
-        [ 
+        [
             { amount: 2, item: mc('clay_ball') },
             { amount: 2, item: mc('mud') }
         ],
-        [ { amount: 3, item: nm('silt') } ]
+        [{ amount: 3, item: nm('silt') }]
     );
 
     // -- COARSE SILT -- //
@@ -342,16 +340,16 @@ ServerEvents.recipes(event => {
         st('coarse_silt'),
         2,
         200,
-        [ 
+        [
             { amount: 2, item: nm('silt') },
             { amount: 2, item: mc('gravel') }
         ],
-        [ { amount: 4, item: nm('coarse_silt') } ]
+        [{ amount: 4, item: nm('coarse_silt') }]
     );
 
-    //---------------------------//
+    // ---------------------------//
     // ---- CUTTING MACHINE ---- //
-    //---------------------------//
+    // ---------------------------//
 
     // -- CHISELED SILTSTONE -- //
     cuttingMachine(
@@ -359,13 +357,13 @@ ServerEvents.recipes(event => {
         st('chiseled_siltstone'),
         2,
         200,
-        [ { amount: 1, item: nm('polished_siltstone') } ],
-        [ { amount: 1, item: nm('chiseled_siltstone') } ]
+        [{ amount: 1, item: nm('polished_siltstone') }],
+        [{ amount: 1, item: nm('chiseled_siltstone') }]
     );
 
-    //------------------//
+    // ------------------//
     // ---- PACKER ---- //
-    //------------------//
+    // ------------------//
 
     // -- SILT BRICKS -- //
     packer(
@@ -373,8 +371,8 @@ ServerEvents.recipes(event => {
         st('silt_bricks'),
         2,
         100,
-        [ { amount: 4, item: nm('silt') } ],
-        [ { amount: 4, item: nm('silt_bricks') } ]
+        [{ amount: 4, item: nm('silt') }],
+        [{ amount: 4, item: nm('silt_bricks') }]
     );
 
     // -- THATCH -- //
@@ -383,8 +381,8 @@ ServerEvents.recipes(event => {
         st('thatch'),
         2,
         100,
-        [ { amount: 4, item: nm('dried_grass') } ],
-        [ { amount: 3, item: nm('thatch') } ]
+        [{ amount: 4, item: nm('dried_grass') }],
+        [{ amount: 3, item: nm('thatch') }]
     );
 
     // -- THATCH ALT -- //
@@ -393,8 +391,8 @@ ServerEvents.recipes(event => {
         st('thatch_alt'),
         2,
         100,
-        [ { amount: 4, item: mc('wheat') } ],
-        [ { amount: 2, item: nm('thatch') } ]
+        [{ amount: 4, item: mc('wheat') }],
+        [{ amount: 2, item: nm('thatch') }]
     );
 
 });

@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:gag/${id}`;
 
     // Remove the default Time in a Bottle recipe
@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         gag('pigment_jar_from_dye'),
         gag('pigment_jar_splitting')
     ];
-    GAG_REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
+    GAG_REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
     event.remove({ output: gag('pigment_jar') });
 
     // -- ENERGIZED HEARTHSTONE -- //
@@ -27,11 +27,11 @@ ServerEvents.recipes(event => {
         st('energized_hearthstone'),
         16,
         400,
-        [ { amount: 1, item: gag('hearthstone') } ],
-        [ { amount: 1, item: gag('energized_hearthstone') } ]
+        [{ amount: 1, item: gag('hearthstone') }],
+        [{ amount: 1, item: gag('energized_hearthstone') }]
     );
 
-    // -- HEARTHSTONE -- // 
+    // -- HEARTHSTONE -- //
     event.custom({
         type: sp('pedestal'),
         time: 400,
@@ -59,9 +59,9 @@ ServerEvents.recipes(event => {
             count: 1
         },
         required_advancement: sp('craft_using_pedestal')
-    }).id(st('hearthstone')); 
+    }).id(st('hearthstone'));
 
-    // -- TIME IN A BOTTLE -- // 
+    // -- TIME IN A BOTTLE -- //
     event.custom({
         type: sp('pedestal'),
         time: 400,
@@ -92,4 +92,4 @@ ServerEvents.recipes(event => {
         },
         required_advancement: sp('build_basic_pedestal_structure')
     }).id(st('time_sand_pouch'));
-}); 
+});

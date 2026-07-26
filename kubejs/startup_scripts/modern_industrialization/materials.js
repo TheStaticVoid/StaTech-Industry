@@ -23,7 +23,7 @@ MIMaterialEvents.addMaterials(event => {
         builder => {
             builder
                 .hardness('average')
-				.addParts('plate', 'hot_ingot', 'ingot', 'rod', 'gear', 'ring', 'bolt', 'curved_plate', 'drill', 'drill_head', 'dust')
+                .addParts('plate', 'hot_ingot', 'ingot', 'rod', 'gear', 'ring', 'bolt', 'curved_plate', 'drill', 'drill_head', 'dust')
                 .machineCasing(12.0)
                 .pipeCasing(12.0)
                 .ore({
@@ -39,7 +39,7 @@ MIMaterialEvents.addMaterials(event => {
         builder => {
             builder
                 .hardness('average')
-				.addParts('plate', 'hot_ingot', 'ingot', 'rod', 'gear', 'ring', 'bolt', 'curved_plate', 'drill', 'drill_head', 'dust')
+                .addParts('plate', 'hot_ingot', 'ingot', 'rod', 'gear', 'ring', 'bolt', 'curved_plate', 'drill', 'drill_head', 'dust')
                 .machineCasing(12.0)
                 .pipeCasing(12.0)
                 .ore({
@@ -51,11 +51,11 @@ MIMaterialEvents.addMaterials(event => {
                 .defaultRecipes()
         });
 
-        event.createMaterial('Tungstensteel', 'tungstensteel', 0x677680,
+    event.createMaterial('Tungstensteel', 'tungstensteel', 0x677680,
         builder => {
             builder
                 .hardness('very_hard')
-				.addParts('plate', 'hot_ingot', 'ingot', 'rod', 'gear', 'ring', 'coil', 'bolt', 'large_plate', 'curved_plate', 'wire')
+                .addParts('plate', 'hot_ingot', 'ingot', 'rod', 'gear', 'ring', 'coil', 'bolt', 'large_plate', 'curved_plate', 'wire')
                 .barrel('Tungstensteel Barrel', 'tungstensteel_barrel', 32768)
                 .tank('Tungstensteel Tank', 'tungstensteel_tank', 2048)
                 .cable('ev')
@@ -64,12 +64,12 @@ MIMaterialEvents.addMaterials(event => {
                 .pipeCasing(12.0)
                 .defaultRecipes()
         });
-    
+
     event.createMaterial('Calorite', 'calorite', 0xb63044,
         builder => {
             builder
                 .hardness('hard')
-				.addParts('plate', 'hot_ingot', 'ingot', 'rod', 'gear', 'ring', 'blade', 'bolt', 'curved_plate', 'dust')
+                .addParts('plate', 'hot_ingot', 'ingot', 'rod', 'gear', 'ring', 'blade', 'bolt', 'curved_plate', 'dust')
                 .machineCasing(12.0)
                 .pipeCasing(12.0)
                 .ore({
@@ -80,59 +80,59 @@ MIMaterialEvents.addMaterials(event => {
                 .rawMetal('copper', true).rawMetal('copper', false)
                 .defaultRecipes()
         });
-    
+
     event.createMaterial('Zinc', 'zinc', 0xb9e9c1,
         builder => {
             builder
                 .hardness('soft')
-				.addParts('rod', 'ring', 'gear', 'curved_plate', 'plate', 'bolt', 'drill_head', 'drill', 'tiny_dust', 'dust')
-				.defaultRecipes()
-				.addExternalPart('ingot', 'create:zinc_ingot')
+                .addParts('rod', 'ring', 'gear', 'curved_plate', 'plate', 'bolt', 'drill_head', 'drill', 'tiny_dust', 'dust')
+                .defaultRecipes()
+                .addExternalPart('ingot', 'create:zinc_ingot')
         });
-    
+
     event.createMaterial('Clay', 'clay', 0xa3acc7,
         builder => {
             builder
                 .hardness('soft')
-				.addParts('dust', 'tiny_dust')
+                .addParts('dust', 'tiny_dust')
                 .addExternalPart('ingot', 'minecraft:clay_ball')
                 .defaultRecipes();
-            
+
         });
-    
+
     event.createMaterial('Stone', 'stone', 0x767676,
         builder => {
             builder
                 .hardness('hard')
-				.addParts('dust', 'tiny_dust')
-        });    
+                .addParts('dust', 'tiny_dust')
+        });
 
     event.createMaterial('Dark Ashes', 'dark_ashes', 0x292828,
         builder => {
             builder
                 .hardness('hard')
-				.addParts('dust', 'tiny_dust')
-        });  
+                .addParts('dust', 'tiny_dust')
+        });
 
     event.createMaterial('Calcite', 'calcite', 0xefedf0,
         builder => {
             builder
                 .hardness('average')
-				.addParts('dust')
+                .addParts('dust')
         });
-    
+
     event.createMaterial('Tuff', 'tuff', 0x8a8774,
         builder => {
             builder
                 .hardness('average')
-				.addParts('dust')
+                .addParts('dust')
         });
 
     event.createMaterial('Fluorite', 'fluorite', 0xe4ed9b,
         builder => {
             builder
                 .hardness('average')
-				.addParts('dust', 'tiny_dust')
+                .addParts('dust', 'tiny_dust')
                 .ore({
                     'generate': true,
                     'ore_set': 'nether_gold',
@@ -143,26 +143,26 @@ MIMaterialEvents.addMaterials(event => {
                 .rawMetal('copper', true).rawMetal('iridium', false)
                 .defaultRecipes()
         });
-    
+
     event.createMaterial('Polytetrafluoroethylene (PTFE)', 'polytetrafluoroethylene', 0x364768,
         builder => {
             builder
                 .hardness('soft')
-				.addParts('ingot', 'nugget', 'dust', 'tiny_dust', 'plate', 'curved_plate', 'gear', 'ring', 'rod', 'bolt')
+                .addParts('ingot', 'nugget', 'dust', 'tiny_dust', 'plate', 'curved_plate', 'gear', 'ring', 'rod', 'bolt')
                 .specialCasing('Chemically Inert PTFE Casing', 'chemically_inert_ptfe_casing', 8.0)
                 .pipeCasing(8.0)
                 .block('iron')
                 .defaultRecipes();
-	    });
-    
+        });
+
     event.createMaterial('Acrylonitrile Butadiene Styrene (ABS)', 'acrylonitrile_butadiene_styrene', 0xfcefd6,
         builder => {
             builder
                 .hardness('soft')
-				.addParts('ingot', 'dust', 'plate', 'curved_plate')
+                .addParts('ingot', 'dust', 'plate', 'curved_plate')
                 .block('iron')
                 .defaultRecipes();
-	    });
+        });
 
     event.createMaterial('Enderium', 'enderium', 0x105e51,
         builder => {
@@ -187,7 +187,7 @@ MIMaterialEvents.addMaterials(event => {
                 })
                 .rawMetal('copper', true).rawMetal('iridium', false)
                 .defaultRecipes();
-        });    
+        });
 
     event.createMaterial('Entro', 'entro', 0x3ed19b,
         builder => {
@@ -232,9 +232,9 @@ MIMaterialEvents.addMaterials(event => {
                     'veins_per_chunk': 4,
                     'max_y': 24
                 })
-                .rawMetal('copper') 
+                .rawMetal('copper')
                 .defaultRecipes();
-        });    
+        });
 
     event.createMaterial('Peridot', 'peridot', 0x59f261,
         builder => {
@@ -249,9 +249,9 @@ MIMaterialEvents.addMaterials(event => {
                     'veins_per_chunk': 4,
                     'max_y': 24
                 })
-                .rawMetal('copper') 
+                .rawMetal('copper')
                 .defaultRecipes();
-        }); 
+        });
 
     event.createMaterial('Ruby', 'corundum', 0xfc3232, // Name is corundum because modifyMaterial doesn't allow for adding ores
         builder => {
@@ -268,9 +268,9 @@ MIMaterialEvents.addMaterials(event => {
                     'max_y': 24
                 })
                 .rawMetal('copper')
-                .defaultRecipes(); 
+                .defaultRecipes();
         });
-        
+
     event.createMaterial('Boron Trioxide', 'boron_trioxide', 0x878376,
         builder => {
             builder
@@ -279,7 +279,7 @@ MIMaterialEvents.addMaterials(event => {
                 .addParts('dust', 'tiny_dust')
                 .defaultRecipes();
         });
-        
+
     event.createMaterial('Kernite', 'kernite', 0xc2d7e8, // Ore for boron
         builder => {
             builder

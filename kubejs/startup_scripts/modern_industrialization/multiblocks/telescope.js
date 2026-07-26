@@ -46,7 +46,7 @@ MIMachineEvents.registerMachines(event => {
         .key('R', lightbulbRed, event.noHatch())
         .key('S', evSolarPanel, event.noHatch())
         .build();
-    
+
     event.simpleElectricCraftingMultiBlock(
         // General parameters
         'Space Telescope', // English name
@@ -60,7 +60,7 @@ MIMachineEvents.registerMachines(event => {
         itemInputs => itemInputs.addSlot(56, 35),
         itemOutputs => itemOutputs.addSlots(102, 35, 3, 1),
         fluidInputs => fluidInputs.addSlot(56, 53),
-        fluidOutputs => {},
+        fluidOutputs => { },
 
         /* Model Configuration */
         'tungstensteel_machine_casing', // casing of the controller

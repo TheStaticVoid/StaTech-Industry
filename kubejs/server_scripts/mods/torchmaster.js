@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:torchmaster/${id}`;
 
     // -- TORCHMASTER REMOVED RECIPES -- //
@@ -13,15 +13,14 @@ ServerEvents.recipes(event => {
         tm('feral_flare_lantern'),
         tm('dreadlamp')
     ];
-    TORCHMASTER_REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
+    TORCHMASTER_REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
     // -- MEGA TORCH -- //
     event.shaped(tm('megatorch'), [
         'TTT',
         'DLD',
         'SLS'
-    ],
-    {
+    ], {
         T: mc('torch'),
         D: mc('diamond'),
         L: '#minecraft:logs',
@@ -33,8 +32,7 @@ ServerEvents.recipes(event => {
         ' P ',
         'GDG',
         ' P '
-    ],
-    {
+    ], {
         P: '#c:plates/gold',
         G: '#c:glass_blocks',
         D: mc('glowstone_dust')
@@ -45,8 +43,7 @@ ServerEvents.recipes(event => {
         'OOO',
         'GSG',
         'OTO'
-    ],
-    {
+    ], {
         O: mc('obsidian'),
         G: '#c:glass_panes',
         S: mc('glowstone'),

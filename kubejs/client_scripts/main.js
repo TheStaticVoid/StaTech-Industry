@@ -5,7 +5,7 @@
 
 RecipeViewerEvents.removeEntries('item', event => {
 
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let ss = (id) => `sophisticatedstorage:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let cr = (id) => `create:${id}`;

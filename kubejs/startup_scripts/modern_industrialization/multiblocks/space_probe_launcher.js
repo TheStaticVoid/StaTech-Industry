@@ -18,12 +18,12 @@ MIMachineEvents.registerMachines(event => {
     const spaceProbeHatch = event.hatchOf('item_input', 'item_output', 'energy_input');
 
     const spaceProbeBuilder = event.layeredShape('clean_stainless_steel_machine_casing', [
-        //y=
-        [ '  c  ', '  c  ', '  c  ', '     ', '     ', '     ', '     '],
-        [ ' CCC ', ' CPC ', ' CPC ', '  K  ', '  K  ', '  K  ', '  K  '],
-        [ 'cCCCc', 'cPPPc', 'cPPPc', ' K K ', ' K K ', ' K K ', ' K K '],
-        [ ' CCC ', ' CPC ', ' CPC ', '  K  ', '  K  ', '  K  ', '  K  '],
-        [ '     ', '  #  ', '  c  ', '     ', '     ', '     ', '     ']
+        // y=
+        ['  c  ', '  c  ', '  c  ', '     ', '     ', '     ', '     '],
+        [' CCC ', ' CPC ', ' CPC ', '  K  ', '  K  ', '  K  ', '  K  '],
+        ['cCCCc', 'cPPPc', 'cPPPc', ' K K ', ' K K ', ' K K ', ' K K '],
+        [' CCC ', ' CPC ', ' CPC ', '  K  ', '  K  ', '  K  ', '  K  '],
+        ['     ', '  #  ', '  c  ', '     ', '     ', '     ', '     ']
     ])
         .key('C', stainlessCasing, event.noHatch())
         .key('c', stainlessCasing, spaceProbeHatch)
@@ -41,12 +41,12 @@ MIMachineEvents.registerMachines(event => {
         // REI Display configuration
         event.progressBar(77, 33, 'rocket'),
         // REI Item inputs, item outputs, fluid inputs, fluid outputs
-        itemInputs => itemInputs.addSlots(56, 35, 1, 2), 
+        itemInputs => itemInputs.addSlots(56, 35, 1, 2),
         itemOutputs => itemOutputs.addSlots(102, 35, 4, 4),
-        fluidInputs => {}, 
-        fluidOutputs => {},
+        fluidInputs => { },
+        fluidOutputs => { },
 
-        /* Model Configuration */ 
+        /* Model Configuration */
         'clean_stainless_steel_machine_casing', // casing of the controller
         'space_probe_launcher', // overlay folder
         true, // front overlay

@@ -1,5 +1,5 @@
 RecipeViewerEvents.removeEntriesCompletely('item', event => {
-    
+
     const CREATE_CRUSHED = [
         cr('crushed_raw_platinum'),
         cr('crushed_raw_iron'),
@@ -11,7 +11,7 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         cr('crushed_raw_nickel'),
         cr('crushed_raw_uranium')
     ];
-    CREATE_CRUSHED.forEach(id => event.remove(id)); 
+    CREATE_CRUSHED.forEach(id => event.remove(id));
 
     const LIMITED_BARRELS = [
         ss('limited_gold_barrel_1'),
@@ -35,8 +35,8 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         ss('limited_iron_barrel_3'),
         ss('limited_iron_barrel_4')
     ];
-    LIMITED_BARRELS.forEach(id => event.remove(id)); 
-    
+    LIMITED_BARRELS.forEach(id => event.remove(id));
+
     const FAKE_MATERIALS = [
         mi('raw_corundum'),
         mi('raw_corundum_block'),
@@ -48,7 +48,7 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         mi('raw_kernite_block')
     ];
     FAKE_MATERIALS.forEach(id => event.remove(id));
-    
+
     const UNUSED_EI = [
         ei('bronze_bending_machine'),
         ei('steel_bending_machine')
@@ -122,20 +122,20 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
     ]
     UNUSED_FUNCTIONNAL_STORAGE.forEach(id => event.remove(id));
 
-/*     const UNUSED_MORE_FUNCTIONNAL_STORAGE = [
-        mfs('placer_upgrade'),
-        mfs('breaker_upgrade'),
-        mfs('refill_upgrade'),
-        mfs('dimensional_refill_upgrade'),
-        mfs('speed_upgrade_augment')
-    ]
-    UNUSED_MORE_FUNCTIONNAL_STORAGE.forEach(id => event.remove(id)); */
-    
+    /*     const UNUSED_MORE_FUNCTIONNAL_STORAGE = [
+            mfs('placer_upgrade'),
+            mfs('breaker_upgrade'),
+            mfs('refill_upgrade'),
+            mfs('dimensional_refill_upgrade'),
+            mfs('speed_upgrade_augment')
+        ]
+        UNUSED_MORE_FUNCTIONNAL_STORAGE.forEach(id => event.remove(id)); */
+
     const UNUSED_MD = [
         md('wrench')
     ];
     UNUSED_MD.forEach(id => event.remove(id));
-    
+
     const UNUSED_DEV = [
         kj('computer_casing'),
         kj('personal_space_shield'),
@@ -174,13 +174,13 @@ RecipeViewerEvents.removeEntriesCompletely('fluid', event => {
         ca('seed_oil'),
         ca('bioethanol'),
         yai('nutrient_rich_water'),
-        mi('dragons_blood'), //might want to do something with this in the future
-        mi('impure_resonating_fluid') //might want to do something with this in the future
+        mi('dragons_blood'), // might want to do something with this in the future
+        mi('impure_resonating_fluid') // might want to do something with this in the future
     ]
     UNUSED_FLD.forEach(id => event.remove(id));
 });
 
-    // -- YET ANOTHER INDUSTRIALIZATION REMOVED MULTI -- //
+// -- YET ANOTHER INDUSTRIALIZATION REMOVED MULTI -- //
 
 RecipeViewerEvents.removeRecipes(event => {
     event.remove([

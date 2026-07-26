@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/${id}`;
 
     // -- EXTENDED INDUSTRIALIZATION REMOVED RECIPES -- //
@@ -14,11 +14,11 @@ ServerEvents.recipes(event => {
         io('shaped/craft/terminal/assembler'),
         io('assembler/vajra')
     ];
-    IO_DELETED_ITEMS.forEach(id => event.remove( {id: id} ));
-    
+    IO_DELETED_ITEMS.forEach(id => event.remove({ id: id }));
+
     const IO_ITEMS_MODIFICATION = [{
-        id : 'multi_processing_array',
-        recipe:[
+        id: 'multi_processing_array',
+        recipe: [
             'QQQ',
             'GAG',
             'QQQ'
@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
         guideBookId: 'machines/multi_processing_array/craft'
     },
     {
-        id : 'pyrolyse_oven',
+        id: 'pyrolyse_oven',
         recipe: [
             'MAM',
             'CHC',
@@ -46,33 +46,31 @@ ServerEvents.recipes(event => {
         },
         guideBookId: 'machines/pyrolyse_oven/craft'
     }];
-    
+
     IO_ITEMS_MODIFICATION.forEach(data => {
-        event.remove( {id: io(data.id)} );
-        //guide book
-        event.remove( {id: io(data.guideBookId)} );
+        event.remove({ id: io(data.id) });
+        // guide book
+        event.remove({ id: io(data.guideBookId) });
         event.shaped(io(data.id), data.recipe, data.recipeInfo).id(io(data.guideBookId));
     });
-    
+
     // -- MULTIBLOCK BUILDER (TERMINAL) -- //
     event.shaped(io('terminal'), [
         'AGA',
         'ACA'
-    ],
-    {
+    ], {
         A: '#c:plates/aluminum',
         G: '#c:glass_panes',
         C: mi('analog_circuit')
     })
-    .id(st('terminal'));
+        .id(st('terminal'));
 
     // -- VAJRA -- //
     event.shaped(io('vajra'), [
         'DRC',
         'OSO',
         'UPU'
-    ],
-    {
+    ], {
         D: ei('electric_mining_drill'),
         C: ei('electric_chainsaw'),
         R: ei('netherite_rotary_blade'),
@@ -81,11 +79,11 @@ ServerEvents.recipes(event => {
         P: mi('processing_unit'),
         U: mi('highly_advanced_upgrade')
     })
-    .id(st('vajra'));
+        .id(st('vajra'));
 
-    //-------------------------//
+    // -------------------------//
     // -- ASSEMBLER RECIPES -- //
-    //-------------------------//
+    // -------------------------//
 
     // -- PYROLYSE OVEN -- //
     assembler(
@@ -100,9 +98,9 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('basic_machine_hull') },
             { amount: 2, item: mi('coke_oven') }
         ],
-        [ { amount: 1, item: io('pyrolyse_oven') } ]
+        [{ amount: 1, item: io('pyrolyse_oven') }]
     );
-    
+
     // -- MULTI PROCESSING ARRAY -- //
     assembler(
         event,
@@ -114,7 +112,7 @@ ServerEvents.recipes(event => {
             { amount: 6, item: mi('quantum_upgrade') },
             { amount: 2, tag: 'c:glass_blocks' }
         ],
-        [ { amount: 1, item: io('multi_processing_array') } ]
+        [{ amount: 1, item: io('multi_processing_array') }]
     );
 
 });

@@ -19,7 +19,7 @@ CapeJS.addCapes(e => {
     e.register("1766fb04-3569-4099-b420-9e3006c206bb", "contributor");                  // EntityInArray (cyberplebian)
     e.register("a8a0ab05-5edb-42ef-bc3d-4db7b49d83da", "contributor");                  // dimikron (DmitryProskurin)
     e.register("d6330821-e3a3-4a84-a50b-fa886506b162", "contributor")					// PurpleDino_
-	
+
     // -- SUPPORTER -- //
     e.register("ce2ad8ee-6523-4fee-aa6b-8f724e21463a", "supporter");                    // Michi12332323 (michiderechte)
     e.register("b895bee1-337c-42cf-acaa-9dc87698b6b1", "supporter");                    // QaptainGeebs (qaptain)

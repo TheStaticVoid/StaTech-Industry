@@ -11,15 +11,14 @@ ServerEvents.recipes(event => {
     const PIPE_CONNECTOR_REMOVED_RECIPES = [
         pc('pipe_connector')
     ];
-    PIPE_CONNECTOR_REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
+    PIPE_CONNECTOR_REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
     // -- PIPE CONNECTOR -- //
     event.shaped(pc('pipe_connector'), [
         'SIS',
         'CFC',
         'STS'
-    ],
-    {
+    ], {
         I: mi('item_pipe'),
         S: mi('steel_plate'),
         F: mi('fluid_pipe'),

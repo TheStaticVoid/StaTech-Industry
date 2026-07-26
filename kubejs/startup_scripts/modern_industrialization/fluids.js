@@ -74,7 +74,7 @@ MIRegistrationEvents.registerFluids(event => {
         'medium'                      // opacity
     );
 
-    //-- NUTRIENT RICH BLOOD -- //
+    // -- NUTRIENT RICH BLOOD -- //
     event.register(
         'Nutrient Rich Blood',        // English name
         'nutrient_rich_blood',        // internal name
@@ -93,7 +93,7 @@ MIRegistrationEvents.registerFluids(event => {
         false,          // is a gas?
         'medium'          // opacity
     );
-    
+
     // -- IMPURE LIQUID NETHER STAR -- //
     event.register(
         'Impure Liquid Nether Star',     // English name
@@ -103,7 +103,7 @@ MIRegistrationEvents.registerFluids(event => {
         false,          // is a gas?
         'full'          // opacity
     );
-    
+
     // -- LITHIUM -- //
     event.register(
         'Lithium',      // English name
@@ -123,7 +123,7 @@ MIRegistrationEvents.registerFluids(event => {
         true,
         'full'
     );
-    
+
     // -- BLOOD -- //
     event.register(
         'Blood',        // English name
@@ -153,7 +153,7 @@ MIRegistrationEvents.registerFluids(event => {
         false,
         'medium'
     );
-    
+
     // -- CORE SLURRY -- //
     event.register(
         'Core Slurry',
@@ -214,7 +214,7 @@ MIRegistrationEvents.registerFluids(event => {
         'low'
     );
 
-    // -- FLUORINE -- // 
+    // -- FLUORINE -- //
     event.register(
         'Fluorine',
         'fluorine',

@@ -69,7 +69,7 @@ ServerEvents.tags('item', event => {
         '#create:postboxes',
         '#create:packages',
         '#supplementaries:presents',
-	    '#supplementaries:trapped_presents',
+        '#supplementaries:trapped_presents',
 
     ];
 

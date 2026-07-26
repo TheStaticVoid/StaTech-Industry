@@ -39,7 +39,7 @@ StartupEvents.registry('item', event => {
         .rarity('Rare')
         .tag('kubejs:mob_models')
         .tooltip('§3Designates the output in the Mob Crusher');
-    
+
     event.create('chicken_model')
         .displayName('Chicken Model')
         .rarity('Rare')
@@ -51,19 +51,19 @@ StartupEvents.registry('item', event => {
         .rarity('Rare')
         .tag('kubejs:mob_models')
         .tooltip('§3Designates the output in the Mob Crusher');
-    
+
     event.create('spider_model')
         .displayName('Spider Model')
         .rarity('Rare')
         .tag('kubejs:mob_models')
         .tooltip('§3Designates the output in the Mob Crusher');
-    
+
     event.create('creeper_model')
         .displayName('Creeper Model')
         .rarity('Rare')
         .tag('kubejs:mob_models')
         .tooltip('§3Designates the output in the Mob Crusher');
-    
+
     event.create('slime_model')
         .displayName('Slime Model')
         .rarity('Rare')
@@ -81,19 +81,19 @@ StartupEvents.registry('item', event => {
         .rarity('Rare')
         .tag('kubejs:mob_models')
         .tooltip('§3Designates the output in the Mob Crusher');
-    
+
     event.create('magma_cube_model')
         .displayName('Magma Cube Model')
         .rarity('Rare')
         .tag('kubejs:mob_models')
         .tooltip('§3Designates the output in the Mob Crusher');
-    
+
     event.create('blaze_model')
         .displayName('Blaze Model')
         .rarity('Rare')
         .tag('kubejs:mob_models')
         .tooltip('§3Designates the output in the Mob Crusher');
-    
+
     event.create('wither_skeleton_model')
         .displayName('Wither Skeleton Model')
         .rarity('Rare')
@@ -105,7 +105,7 @@ StartupEvents.registry('item', event => {
         .rarity('Rare')
         .tag('kubejs:mob_models')
         .tooltip('§3Designates the output in the Mob Crusher');
-        
+
     event.create('witch_model')
         .displayName('Witch Model')
         .rarity('Rare')

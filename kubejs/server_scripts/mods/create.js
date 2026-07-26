@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:create/${id}`;
 
     // -- CREATE REMOVED RECIPES -- //
@@ -16,17 +16,16 @@ ServerEvents.recipes(event => {
         cr('blasting/silver_ingot_compat_modern_industrialization'),
         cr('crafting/appliances/chain_from_zinc')
     ];
-    CREATE_DELETED_ITEMS.forEach(id => event.remove( {id: id} ));
+    CREATE_DELETED_ITEMS.forEach(id => event.remove({ id: id }));
     // event.remove( {type: cr('crushing'), output: cr('crushed_platinum_ore')} );
-    event.remove( {mod: 'create', output: mi('uranium_ingot') });
+    event.remove({ mod: 'create', output: mi('uranium_ingot') });
 
     // -- TANK -- //
     event.shaped(cr('fluid_tank'), [
         'CGC',
         'GSG',
         'CGC'
-    ],
-    {
+    ], {
         C: '#c:plates/copper',
         S: '#c:plates/steel',
         G: '#c:glass_blocks'

@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:ae2/${id}`;
 
     // -- AE2 REMOVED RECIPES -- //
@@ -71,9 +71,9 @@ ServerEvents.recipes(event => {
         ae('network/blocks/energy_dense_energy_cell'),
         'ae2netanalyser:analyser'
     ];
-    REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
+    REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
-    // -- REMOVE ALL INSCRIBER RECIPES -- // 
+    // -- REMOVE ALL INSCRIBER RECIPES -- //
     event.remove({ type: ae('inscriber') });
 
     // -- CONTROLLER -- //
@@ -81,8 +81,7 @@ ServerEvents.recipes(event => {
         'EFE',
         'CHC',
         'LFP'
-    ],
-    {
+    ], {
         E: ae('engineering_processor'),
         F: ae('fluix_crystal'),
         C: mi('analog_circuit'),
@@ -90,669 +89,621 @@ ServerEvents.recipes(event => {
         L: ae('logic_processor'),
         P: ae('calculation_processor')
     })
-    .id(st('controller'));
+        .id(st('controller'));
 
     // -- CHARGER -- //
-     event.shaped(ae('charger'), [
+    event.shaped(ae('charger'), [
         'SCS',
         'B  ',
         'SCS'
-    ],
-    {
+    ], {
         S: mi('steel_large_plate'),
         C: mi('copper_wire'),
         B: mi('redstone_battery')
     })
-    .id(st('charger')); 
+        .id(st('charger'));
 
     // -- BLANK PATTERN -- //
     event.shaped(ae('blank_pattern'), [
         'QGQ',
         'GCG',
         'SSS'
-    ],
-    {
+    ], {
         Q: ae('quartz_glass'),
         G: '#c:dusts/glowstone',
         C: '#c:gems/certus_quartz',
         S: '#c:plates/aluminum'
     })
-    .id(st('blank_pattern'));
+        .id(st('blank_pattern'));
 
-     // -- CRYSTAL RESONANCE GENERATOR -- //
+    // -- CRYSTAL RESONANCE GENERATOR -- //
     event.shaped(ae('crystal_resonance_generator'), [
         'ACA',
         'FHF',
         'AEA'
-    ],
-    {
+    ], {
         A: '#c:plates/aluminum',
         C: mi('cupronickel_coil'),
         F: ae('fluix_block'),
         H: mi('basic_machine_hull'),
         E: ae('engineering_processor')
     })
-    .id(st('crystal_resonance_generator'));
+        .id(st('crystal_resonance_generator'));
 
     // -- ME QUANTUM RING -- //
     event.shaped(ae('quantum_ring'), [
         'SLS',
         'ECF',
         'SLS'
-    ],
-    {
+    ], {
         S: '#c:plates/aluminum',
         L: ae('logic_processor'),
         E: ae('engineering_processor'),
         C: ae('energy_cell'),
         F: '#ae2:smart_dense_cable',
     })
-    .id(st('quantum_ring'));
+        .id(st('quantum_ring'));
 
     // -- SPATIAL IO PORT -- //
     event.shaped(ae('spatial_io_port'), [
         'GGG',
         'FIF',
         'SES'
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         G: '#c:glass_blocks',
         F: ae('fluix_glass_cable'),
         I: ae('io_port'),
         E: ae('engineering_processor')
     })
-    .id(st('spatial_io_port'));
+        .id(st('spatial_io_port'));
 
-    // -- ME DRIVE -- // 
+    // -- ME DRIVE -- //
     event.shaped(ae('drive'), [
         'SES',
         'FHF',
         'SES'
-    ],
-    {
+    ], {
         S: mi('steel_large_plate'),
         H: mi('basic_machine_hull'),
         E: ae('engineering_processor'),
         F: ae('fluix_glass_cable')
     })
-    .id(st('drive'));
-    
+        .id(st('drive'));
+
     // -- ME CHEST -- //
     event.shaped(ae('chest'), [
         'GTG',
         'F F',
         'SCS'
-    ],
-    {
+    ], {
         G: '#c:glass_blocks',
         T: ae('terminal'),
         F: ae('fluix_glass_cable'),
         S: '#c:plates/steel',
         C: '#c:plates/copper'
     })
-    .id(st('chest'));
+        .id(st('chest'));
 
     // -- ME INTERFACE -- //
     event.shaped(ae('interface'), [
         'SGS',
         'A F',
         'SGS'
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         G: '#c:glass_blocks',
         A: ae('annihilation_core'),
         F: ae('formation_core')
     })
-    .id(st('interface'));
+        .id(st('interface'));
 
     // -- CELL WORKBENCH -- //
     event.shaped(ae('cell_workbench'), [
         'WCW',
         'SHS',
         'SSS'
-    ],
-    {
+    ], {
         W: '#minecraft:wool',
         C: ae('calculation_processor'),
         S: '#c:plates/steel',
         H: '#c:chests/wooden'
     })
-    .id(st('cell_workbench'));
+        .id(st('cell_workbench'));
 
     // -- ME IO PORT -- //
     event.shaped(ae('io_port'), [
         'GGG',
         'DFD',
         'SLS'
-    ],
-    {
+    ], {
         G: '#c:glass_blocks',
         D: ae('drive'),
         F: ae('fluix_glass_cable'),
         S: '#c:plates/steel',
         L: ae('logic_processor')
     })
-    .id(st('io_port'));
+        .id(st('io_port'));
 
     // -- MATTER CONDENSER -- //
     event.shaped(ae('condenser'), [
         'SGS',
         'GFG',
         'SGS'
-    ],
-    {
+    ], {
         S: '#c:plates/aluminum',
         G: '#c:glass_blocks',
         F: ae('fluix_dust')
     })
-    .id(st('condenser'));
+        .id(st('condenser'));
 
     // -- ENERGY ACCEPTOR -- //
     event.shaped(ae('energy_acceptor'), [
         'SGS',
         'GCG',
         'SGS'
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         G: ae('quartz_glass'),
         C: '#c:plates/copper'
     })
-    .id(st('energy_acceptor'));
+        .id(st('energy_acceptor'));
 
-    // -- CRYSTAL GROWTH ACCELERATOR -- // 
+    // -- CRYSTAL GROWTH ACCELERATOR -- //
     event.shaped(ae('growth_accelerator'), [
         'SFS',
         'GBG',
         'SFS'
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         F: ae('fluix_glass_cable'),
         G: ae('quartz_glass'),
         B: ae('fluix_block')
     })
-    .id(st('growth_accelerator'));
+        .id(st('growth_accelerator'));
 
     // -- CRAFTING UNIT -- //
     event.shaped(ae('crafting_unit'), [
         'SCS',
         'FLF',
         'SCS'
-    ],
-    {
+    ], {
         S: '#c:plates/aluminum',
         C: ae('calculation_processor'),
         F: ae('fluix_glass_cable'),
         L: ae('logic_processor')
     })
-    .id(st('crafting_unit'));
+        .id(st('crafting_unit'));
 
     // -- ME PATTERN PROVIDER -- //
     event.shaped(ae('pattern_provider'), [
         'SCS',
         'A F',
         'SCS'
-    ],
-    {
+    ], {
         S: '#c:plates/aluminum',
         C: '#c:player_workstations/crafting_tables',
         A: ae('annihilation_core'),
         F: ae('formation_core')
     })
-    .id(st('pattern_provider'));
+        .id(st('pattern_provider'));
 
     // -- MOLECULAR ASSEMBLER -- //
     event.shaped(ae('molecular_assembler'), [
         'SGS',
         'AWF',
         'SGS'
-    ],
-    {
+    ], {
         S: '#c:plates/aluminum',
         G: ae('quartz_glass'),
         A: ae('annihilation_core'),
         W: mi('advanced_machine_hull'),
         F: ae('formation_core')
     })
-    .id(st('molecular_assembler'));
+        .id(st('molecular_assembler'));
 
     // -- SPATIAL ANCHOR -- //
     event.shaped(ae('spatial_anchor'), [
         'PPP',
         'FCF',
         'SES'
-    ],
-    {
+    ], {
         P: ae('spatial_pylon'),
         F: ae('fluix_glass_cable'),
         C: ae('spatial_cell_component_128'),
         S: '#c:plates/steel',
         E: ae('engineering_processor')
     })
-    .id(st('spatial_anchor'));
+        .id(st('spatial_anchor'));
 
     // -- ENTROPY MANIPULATOR -- //
     event.shaped(ae('entropy_manipulator'), [
         'FC ',
         'ES ',
         '  S'
-    ],
-    {
+    ], {
         F: ae('fluix_crystal'),
         C: ae('energy_cell'),
         E: ae('engineering_processor'),
         S: '#c:plates/aluminum'
     })
-    .id(st('entropy_manipulator'));
+        .id(st('entropy_manipulator'));
 
     // -- CHARGED STAFF -- //
     event.shaped(ae('charged_staff'), [
         'C  ',
         ' S ',
         '  S'
-    ],
-    {
+    ], {
         C: ae('charged_certus_quartz_crystal'),
         S: '#c:plates/aluminum'
     })
-    .id(st('charged_staff'));
+        .id(st('charged_staff'));
 
     // -- COLOR APPLICATOR -- //
     event.shaped(ae('color_applicator'), [
         'FS ',
         'SC ',
         '  E'
-    ],
-    {
+    ], {
         F: ae('formation_core'),
         S: '#c:plates/aluminum',
         C: ae('cell_component_4k'),
         E: ae('energy_cell')
     })
-    .id(st('color_applicator'));
+        .id(st('color_applicator'));
 
     // -- MATTER CANNON -- //
     event.shaped(ae('matter_cannon'), [
         'SSF',
         'CE ',
         'S  '
-    ],
-    {
+    ], {
         S: '#c:plates/aluminum',
         F: ae('formation_core'),
         C: ae('cell_component_4k'),
         E: ae('energy_cell')
     })
-    .id(st('matter_cannon'));
+        .id(st('matter_cannon'));
 
-    // -- MEMORY CARD -- // 
+    // -- MEMORY CARD -- //
     event.shaped(ae('memory_card'), [
         'CSS',
         'GRG'
-    ],
-    {
+    ], {
         C: ae('calculation_processor'),
         S: '#c:plates/iron',
         G: '#c:plates/gold',
         R: '#c:dusts/redstone'
     })
-    .id(st('memory_card'));
+        .id(st('memory_card'));
 
     // -- BASIC CARD -- //
     event.shaped('2x ' + ae('basic_card'), [
         'GS ',
         'RCS',
         'GS '
-    ],
-    {
+    ], {
         G: '#c:ingots/gold',
         S: '#c:plates/steel',
         R: '#c:dusts/redstone',
         C: ae('calculation_processor')
     })
-    .id(st('basic_card'));
+        .id(st('basic_card'));
 
     // -- ADVANCED CARD -- //
     event.shaped('2x ' + ae('advanced_card'), [
         'DS ',
         'RCS',
         'DS '
-    ],
-    {
+    ], {
         D: '#c:gems/diamond',
         S: '#c:plates/steel',
         R: '#c:dusts/redstone',
         C: ae('calculation_processor')
     })
-    .id(st('advanced_card'));
+        .id(st('advanced_card'));
 
     // -- ME ITEM CELL HOUSING -- //
     event.shaped(ae('item_cell_housing'), [
         'GRG',
         'R R',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         S: '#c:plates/steel'
     })
-    .id(st('item_cell_housing'));
+        .id(st('item_cell_housing'));
 
-    // -- WIRELESS RECEIVER -- // 
+    // -- WIRELESS RECEIVER -- //
     event.shaped(ae('wireless_receiver'), [
         ' F ',
         'SQS',
         ' S '
-    ],
-    {
+    ], {
         F: ae('fluix_pearl'),
         S: '#c:plates/aluminum',
         Q: ae('quartz_fiber')
     })
-    .id(st('wireless_receiver'));
+        .id(st('wireless_receiver'));
 
-    // -- WIRELESS BOOSTER -- // 
+    // -- WIRELESS BOOSTER -- //
     event.shaped('2x ' + ae('wireless_booster'), [
         'FQE',
         'SSS'
-    ],
-    {
+    ], {
         F: ae('fluix_dust'),
         Q: '#c:gems/certus_quartz',
         E: ae('ender_dust'),
         S: '#c:plates/aluminum'
     })
-    .id(st('wireless_booster'));
+        .id(st('wireless_booster'));
 
     // -- VIEW CELL -- //
     event.shaped(ae('view_cell'), [
         'GRG',
         'RQR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         Q: '#c:gems/certus_quartz',
         S: '#c:plates/steel'
     })
-    .id(ae('network/cells/view_cell'));
+        .id(ae('network/cells/view_cell'));
 
     // -- 1K ME ITEM STORAGE CELL -- //
     event.shaped(ae('item_storage_cell_1k'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('cell_component_1k'),
         S: '#c:plates/steel'
     })
-    .id(st('item_storage_cell_1k'));
+        .id(st('item_storage_cell_1k'));
 
     // -- 4K ME ITEM STORAGE CELL -- //
     event.shaped(ae('item_storage_cell_4k'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('cell_component_4k'),
         S: '#c:plates/steel'
     })
-    .id(st('item_storage_cell_4k'));
+        .id(st('item_storage_cell_4k'));
 
     // -- 16K ME ITEM STORAGE CELL -- //
     event.shaped(ae('item_storage_cell_16k'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('cell_component_16k'),
         S: '#c:plates/steel'
     })
-    .id(st('item_storage_cell_16k'));
+        .id(st('item_storage_cell_16k'));
 
     // -- 64K ME ITEM STORAGE CELL -- //
     event.shaped(ae('item_storage_cell_64k'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('cell_component_64k'),
         S: '#c:plates/steel'
     })
-    .id(st('item_storage_cell_64k'));
+        .id(st('item_storage_cell_64k'));
 
     // -- 256K ME ITEM STORAGE CELL -- //
     event.shaped(ae('item_storage_cell_256k'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('cell_component_256k'),
         S: '#c:plates/steel'
     })
-    .id(st('item_storage_cell_256k'));
+        .id(st('item_storage_cell_256k'));
 
     // -- ME FLUID CELL HOUSING -- //
     event.shaped(ae('fluid_cell_housing'), [
         'GRG',
         'R R',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         S: '#c:plates/copper'
     })
-    .id(st('fluid_cell_housing'));
+        .id(st('fluid_cell_housing'));
 
     // -- 1K ME FLUID STORAGE CELL -- //
     event.shaped(ae('fluid_storage_cell_1k'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('cell_component_1k'),
         S: '#c:plates/copper'
     })
-    .id(st('fluid_storage_cell_1k'));
+        .id(st('fluid_storage_cell_1k'));
 
     // -- 4K ME FLUID STORAGE CELL -- //
     event.shaped(ae('fluid_storage_cell_4k'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('cell_component_4k'),
         S: '#c:plates/copper'
     })
-    .id(st('fluid_storage_cell_4k'));
+        .id(st('fluid_storage_cell_4k'));
 
     // -- 16K ME FLUID STORAGE CELL -- //
     event.shaped(ae('fluid_storage_cell_16k'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('cell_component_16k'),
         S: '#c:plates/copper'
     })
-    .id(st('fluid_storage_cell_16k'));
+        .id(st('fluid_storage_cell_16k'));
 
     // -- 64K ME FLUID STORAGE CELL -- //
     event.shaped(ae('fluid_storage_cell_64k'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('cell_component_64k'),
         S: '#c:plates/copper'
     })
-    .id(st('fluid_storage_cell_64k'));
+        .id(st('fluid_storage_cell_64k'));
 
     // -- 256K ME FLUID STORAGE CELL -- //
     event.shaped(ae('fluid_storage_cell_256k'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('cell_component_256k'),
         S: '#c:plates/copper'
     })
-    .id(st('fluid_storage_cell_256k'));
+        .id(st('fluid_storage_cell_256k'));
 
     // -- 2^3 SPATIAL STORAGE CELL -- //
     event.shaped(ae('spatial_storage_cell_2'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('spatial_cell_component_2'),
         S: '#c:plates/steel'
     })
-    .id(st('spatial_storage_cell_2'));
+        .id(st('spatial_storage_cell_2'));
 
     // -- 16^3 SPATIAL STORAGE CELL -- //
     event.shaped(ae('spatial_storage_cell_16'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('spatial_cell_component_16'),
         S: '#c:plates/steel'
     })
-    .id(st('spatial_storage_cell_16'));
+        .id(st('spatial_storage_cell_16'));
 
     // -- 128^3 SPATIAL STORAGE CELL -- //
     event.shaped(ae('spatial_storage_cell_128'), [
         'GRG',
         'RCR',
         'SSS'
-    ],
-    {
+    ], {
         G: ae('quartz_glass'),
         R: '#c:dusts/redstone',
         C: ae('spatial_cell_component_128'),
         S: '#c:plates/steel'
     })
-    .id(st('spatial_storage_cell_128'));
+        .id(st('spatial_storage_cell_128'));
 
     // -- ILLUMINATED PANEL -- //
     event.shaped(ae('semi_dark_monitor'), [
         ' GQ',
         'SRQ',
         ' GQ'
-    ],
-    {
+    ], {
         G: '#c:dusts/glowstone',
         Q: ae('quartz_glass'),
         S: '#c:plates/steel',
         R: '#c:dusts/redstone'
     })
-    .id(st('semi_dark_monitor'));
+        .id(st('semi_dark_monitor'));
 
     // -- ANNIHILATION PLANE -- //
     event.shaped(ae('annihilation_plane'), [
         'SF',
         'AF',
         'SF'
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         F: ae('fluix_crystal'),
         A: ae('annihilation_core'),
     })
-    .id(st('annihilation_plane'));
+        .id(st('annihilation_plane'));
 
     event.shaped(ae('annihilation_plane'), [
         'FFF',
         'SAS'
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         F: ae('fluix_crystal'),
         A: ae('annihilation_core'),
     })
-    .id(st('annihilation_plane_alt'));
+        .id(st('annihilation_plane_alt'));
 
     // -- FORMATION PLANE -- //
     event.shaped(ae('formation_plane'), [
         'SF',
         'AF',
         'SF'
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         F: ae('fluix_crystal'),
         A: ae('formation_core'),
     })
-    .id(st('formation_plane'));
+        .id(st('formation_plane'));
 
     event.shaped(ae('formation_plane'), [
         'FFF',
         'SAS'
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         F: ae('fluix_crystal'),
         A: ae('formation_core'),
     })
-    .id(st('formation_plane_alt'));
+        .id(st('formation_plane_alt'));
 
     // -- IMPORT BUS -- //
     event.shaped(ae('import_bus'), [
         ' A ',
         'SPS'
-    ],
-    {
+    ], {
         A: ae('annihilation_core'),
         S: '#c:plates/steel',
         P: mc('sticky_piston')
     })
-    .id(st('import_bus'));
+        .id(st('import_bus'));
 
     // -- STORAGE BUS -- //
-/*     event.shaped(ae('storage_bus'), [
+    /*     event.shaped(ae('storage_bus'), [
         'ABC'
     ],
     {
@@ -766,72 +717,67 @@ ServerEvents.recipes(event => {
     event.shaped(ae('export_bus'), [
         'SFS',
         ' P '
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         F: ae('formation_core'),
         P: mc('piston')
     })
-    .id(st('export_bus'));
+        .id(st('export_bus'));
 
     // -- ME P2P TUNNEL -- //
     event.shaped(ae('me_p2p_tunnel'), [
         ' S ',
         'SES',
         'FFF'
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         E: ae('engineering_processor'),
         F: ae('fluix_crystal')
     })
-    .id(st('me_p2p_tunnel'));
+        .id(st('me_p2p_tunnel'));
 
     // -- MAGNET CARD -- //
     event.shaped(wt('magnet_card'), [
         'RAL',
         'ICI',
         'III'
-    ],
-    {
+    ], {
         R: '#c:storage_blocks/redstone',
         L: '#c:storage_blocks/lapis',
         A: ae('annihilation_plane'),
         C: ae('advanced_card'),
         I: '#c:storage_blocks/steel'
     })
-    .id(st('magnet_card'));
+        .id(st('magnet_card'));
 
     // -- DENSE ENERGY CELL -- //
     event.shaped(ae('dense_energy_cell'), [
         'EEE',
         'EHE',
         'EEE'
-    ],
-    {
+    ], {
         E: ae('energy_cell'),
         H: mi('advanced_machine_hull')
     })
-    .id(st('dense_energy_cell'));
+        .id(st('dense_energy_cell'));
 
-     // -- NETWORK ANALYZER -- //
+    // -- NETWORK ANALYZER -- //
     event.shaped('ae2netanalyser:network_analyser', [
         'BAB',
         'SHS',
         'DSD'
-    ],
-    {
+    ], {
         B: mi('bronze_plate'),
         A: mi('aluminum_plate'),
         S: mi('steel_plate'),
         H: ae('logic_processor'),
         D: ae('sky_dust')
     })
-    .id(st('network_analyzer'));
+        .id(st('network_analyzer'));
 });
 
 ServerEvents.tags('item', event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let ae = (id) => `ae2:${id}`;
 
     // Tag all the crafting storages
@@ -842,7 +788,7 @@ ServerEvents.tags('item', event => {
         ae('64k_crafting_storage'),
         ae('256k_crafting_storage')
     ];
-    CRAFTING_STORAGE.forEach(id => event.add('kubejs:crafting_storage', id) );
+    CRAFTING_STORAGE.forEach(id => event.add('kubejs:crafting_storage', id));
 
     // Tag all the budding blocks
     const BUDDING_BLOCKS = [
@@ -851,7 +797,7 @@ ServerEvents.tags('item', event => {
         ae('chipped_budding_quartz'),
         ae('damaged_budding_quartz')
     ];
-    BUDDING_BLOCKS.forEach(id => event.add('kubejs:budding_certus', id) );
+    BUDDING_BLOCKS.forEach(id => event.add('kubejs:budding_certus', id));
 
     // Remove quartz glasses from #c:glass_blocks tag
     event.remove('c:glass_blocks', ae('quartz_glass'))
@@ -860,7 +806,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('block', event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let ae = (id) => `ae2:${id}`;
 
     // Remove quartz glasses from #c:glass_blocks tag
@@ -869,12 +815,12 @@ ServerEvents.tags('block', event => {
 
 })
 
-    // -- ADD INFO ON HOW TO GENERATE SKYSTONE -- //
+// -- ADD INFO ON HOW TO GENERATE SKYSTONE -- //
 RecipeViewerEvents.addInformation('item', event => {
-	event.add('ae2:sky_stone_block', [
-		'Sky Stone Dust, which can be smelted into Sky Stone, can be obtained passively via an ME Annihilation Plane pointed upward at the world height limit.'
-	]);
-	event.add('ae2:sky_dust', [
-		'Sky Stone Dust can be obtained passively via an ME Annihilation Plane pointed upward at the world height limit.'
-	]);
+    event.add('ae2:sky_stone_block', [
+        'Sky Stone Dust, which can be smelted into Sky Stone, can be obtained passively via an ME Annihilation Plane pointed upward at the world height limit.'
+    ]);
+    event.add('ae2:sky_dust', [
+        'Sky Stone Dust can be obtained passively via an ME Annihilation Plane pointed upward at the world height limit.'
+    ]);
 })

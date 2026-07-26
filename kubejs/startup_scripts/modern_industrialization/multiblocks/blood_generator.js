@@ -14,17 +14,17 @@ MIMachineEvents.registerMachines(event => {
     const architectsPaletteOsseousPillar = event.memberOfBlock('architects_palette:osseous_pillar');
     const architectsPaletteLitOsseousSkull = event.memberOfBlock('architects_palette:lit_osseous_skull');
     const bloodGeneratorShape = event.layeredShape('steel', [
-        [' AAA ','AAAAA','AAAAA','AAAAA','AAAAA',' AAA '],
-        [' AAA ','ACCCA','BDEDB','BEEEB','A F A',' AAA '],
-        [' A#A ','ABBBA','ABBBA','ABBBA','ABB A',' AAA ']
+        [' AAA ', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', ' AAA '],
+        [' AAA ', 'ACCCA', 'BDEDB', 'BEEEB', 'A F A', ' AAA '],
+        [' A#A ', 'ABBBA', 'ABBBA', 'ABBBA', 'ABB A', ' AAA ']
     ])
-    .key('A', modernIndustrializationSteelMachineCasing, multiblockHatch)
-    .key('B', minecraftBlackStainedGlass, noHatch)
-    .key('C', architectsPaletteRedstoneOreBricks, noHatch)
-    .key('D', minecraftRedstoneTorch, noHatch)
-    .key('E', architectsPaletteOsseousPillar, noHatch)
-    .key('F', architectsPaletteLitOsseousSkull, noHatch)
-    .build();
+        .key('A', modernIndustrializationSteelMachineCasing, multiblockHatch)
+        .key('B', minecraftBlackStainedGlass, noHatch)
+        .key('C', architectsPaletteRedstoneOreBricks, noHatch)
+        .key('D', minecraftRedstoneTorch, noHatch)
+        .key('E', architectsPaletteOsseousPillar, noHatch)
+        .key('F', architectsPaletteLitOsseousSkull, noHatch)
+        .build();
 
     event.simpleGeneratorMultiBlock(
         "Blood Generator", // The english name

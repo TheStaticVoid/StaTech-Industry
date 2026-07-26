@@ -12,7 +12,6 @@ MIMachineEvents.registerRecipeTypes(e => {
 });
 
 
-
 MIMachineEvents.registerMachines(e => {
     const caloriteCasing = e.memberOfBlock(mi('calorite_machine_casing'));
     const caloritePipeCasing = e.memberOfBlock(mi('calorite_machine_casing_pipe'));
@@ -20,12 +19,12 @@ MIMachineEvents.registerMachines(e => {
     const spaceProbeHatch = e.hatchOf('item_input', 'item_output', 'energy_input');
 
     const quantumSpaceProbeBuilder = e.layeredShape('calorite_machine_casing', [
-        //y=
-        [ ' ccc ', '  c  ', '  c  ', '     ', '     ', '     ', '     ', '     ' ],
-        [ 'cCCCc', ' CPC ', ' CPC ', '  T  ', '  T  ', '  T  ', '  T  ', '  T  ' ],
-        [ 'cCCCc', 'cPPPc', 'cPPPc', ' T T ', ' T T ', ' T T ', ' T T ', ' T T ' ],
-        [ 'cCCCc', ' CPC ', ' CPC ', '  T  ', '  T  ', '  T  ', '  T  ', '  T  ' ],
-        [ ' ccc ', '  #  ', '  c  ', '     ', '     ', '     ', '     ', '     ' ]
+        // y=
+        [' ccc ', '  c  ', '  c  ', '     ', '     ', '     ', '     ', '     '],
+        ['cCCCc', ' CPC ', ' CPC ', '  T  ', '  T  ', '  T  ', '  T  ', '  T  '],
+        ['cCCCc', 'cPPPc', 'cPPPc', ' T T ', ' T T ', ' T T ', ' T T ', ' T T '],
+        ['cCCCc', ' CPC ', ' CPC ', '  T  ', '  T  ', '  T  ', '  T  ', '  T  '],
+        [' ccc ', '  #  ', '  c  ', '     ', '     ', '     ', '     ', '     ']
     ])
         .key('C', caloriteCasing, e.noHatch())
         .key('c', caloriteCasing, spaceProbeHatch)
@@ -43,12 +42,12 @@ MIMachineEvents.registerMachines(e => {
         // REI Display configuration
         e.progressBar(77, 33, 'rocket'),
         // REI Item inputs, item outputs, fluid inputs, fluid outputs
-        itemInputs => itemInputs.addSlot(56, 35), 
+        itemInputs => itemInputs.addSlot(56, 35),
         itemOutputs => itemOutputs.addSlots(102, 35, 4, 4),
-        fluidInputs => {}, 
-        fluidOutputs => {},
+        fluidInputs => { },
+        fluidOutputs => { },
 
-        /* Model Configuration */ 
+        /* Model Configuration */
         'calorite_machine_casing', // casing of the controller
         'space_probe_launcher', // overlay folder
         true, // front overlay

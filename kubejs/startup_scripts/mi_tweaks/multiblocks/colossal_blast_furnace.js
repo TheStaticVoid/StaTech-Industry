@@ -12,31 +12,31 @@ MIMachineEvents.registerRecipeTypes(event => {
 });
 
 MITweaksMachineEvents.registerBatchMultiblocks(event => {
-  // Hatches - define these based on your machine's needs
-  const noHatch = event.noHatch();
-  const multiblockHatch = event.hatchOf( 'item_input', 'item_output', 'fluid_input', 'fluid_output', 'energy_input' );
-  // Block Members
-  const modernIndustrializationOstrumMachineCasing = event.memberOfBlock('modern_industrialization:ostrum_machine_casing');
-  const modernIndustrializationCaloriteMachineCasingPipe = event.memberOfBlock('modern_industrialization:calorite_machine_casing_pipe');
-  const kubejsGlowingCaloritePillar = event.memberOfBlock('kubejs:glowing_calorite_pillar');
-  const modernIndustrializationTungstensteelCoil = event.memberOfBlock('modern_industrialization:tungstensteel_coil');
-  const modernIndustrializationCaloriteMachineCasing = event.memberOfBlock('modern_industrialization:calorite_machine_casing');
-  const colossalBlastFurnaceShape = event.layeredShape('modern_industrialization:calorite_machine_casing', [
-    [' eee ','     ','     ','     ',' AeA ','     ','     '],
-    ['AeBeA','C D C','C D C','C D C','AABAA',' C C ',' A A '],
-    ['ABEBA',' DDD ',' DDD ',' DDD ','ABBBA','  D  ',' AeA '],
-    ['BEEEB','DD DD','DD DD','DD DD','BB BB',' DDD ',' eee '],
-    ['ABEBA',' DDD ',' DDD ',' DDD ','ABBBA','  D  ',' AeA '],
-    ['AeBeA','C D C','C D C','C D C','AABAA',' C C ',' A A '],
-    [' e#e ','     ','     ','     ',' AeA ','     ','     ']
-  ])
-    .key('A', modernIndustrializationOstrumMachineCasing, noHatch)
-    .key('B', modernIndustrializationCaloriteMachineCasingPipe, noHatch)
-    .key('C', kubejsGlowingCaloritePillar, noHatch)
-    .key('D', modernIndustrializationTungstensteelCoil, noHatch)
-    .key('E', modernIndustrializationCaloriteMachineCasing, noHatch)
-    .key('e', modernIndustrializationCaloriteMachineCasing, multiblockHatch)
-    .build();
+    // Hatches - define these based on your machine's needs
+    const noHatch = event.noHatch();
+    const multiblockHatch = event.hatchOf('item_input', 'item_output', 'fluid_input', 'fluid_output', 'energy_input');
+    // Block Members
+    const modernIndustrializationOstrumMachineCasing = event.memberOfBlock('modern_industrialization:ostrum_machine_casing');
+    const modernIndustrializationCaloriteMachineCasingPipe = event.memberOfBlock('modern_industrialization:calorite_machine_casing_pipe');
+    const kubejsGlowingCaloritePillar = event.memberOfBlock('kubejs:glowing_calorite_pillar');
+    const modernIndustrializationTungstensteelCoil = event.memberOfBlock('modern_industrialization:tungstensteel_coil');
+    const modernIndustrializationCaloriteMachineCasing = event.memberOfBlock('modern_industrialization:calorite_machine_casing');
+    const colossalBlastFurnaceShape = event.layeredShape('modern_industrialization:calorite_machine_casing', [
+        [' eee ', '     ', '     ', '     ', ' AeA ', '     ', '     '],
+        ['AeBeA', 'C D C', 'C D C', 'C D C', 'AABAA', ' C C ', ' A A '],
+        ['ABEBA', ' DDD ', ' DDD ', ' DDD ', 'ABBBA', '  D  ', ' AeA '],
+        ['BEEEB', 'DD DD', 'DD DD', 'DD DD', 'BB BB', ' DDD ', ' eee '],
+        ['ABEBA', ' DDD ', ' DDD ', ' DDD ', 'ABBBA', '  D  ', ' AeA '],
+        ['AeBeA', 'C D C', 'C D C', 'C D C', 'AABAA', ' C C ', ' A A '],
+        [' e#e ', '     ', '     ', '     ', ' AeA ', '     ', '     ']
+    ])
+        .key('A', modernIndustrializationOstrumMachineCasing, noHatch)
+        .key('B', modernIndustrializationCaloriteMachineCasingPipe, noHatch)
+        .key('C', kubejsGlowingCaloritePillar, noHatch)
+        .key('D', modernIndustrializationTungstensteelCoil, noHatch)
+        .key('E', modernIndustrializationCaloriteMachineCasing, noHatch)
+        .key('e', modernIndustrializationCaloriteMachineCasing, multiblockHatch)
+        .build();
 
     event.electric(
         // General parameters
@@ -44,12 +44,12 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
         'colossal_blast_furnace', // internal name
         event.getRecipeType("modern_industrialization:blast_furnace"), // recipe type
         colossalBlastFurnaceShape, // multiblock shape
-		(workstations) => workstations.add([
-                "modern_industrialization:electric_blast_furnace_cupronickel_coil", 
-                "modern_industrialization:electric_blast_furnace_kanthal_coil", 
-                "modern_industrialization:electric_blast_furnace_tungstensteel_coil", 
-                "modern_industrialization:steam_blast_furnace"
-            ]),
+        (workstations) => workstations.add([
+            "modern_industrialization:electric_blast_furnace_cupronickel_coil",
+            "modern_industrialization:electric_blast_furnace_kanthal_coil",
+            "modern_industrialization:electric_blast_furnace_tungstensteel_coil",
+            "modern_industrialization:steam_blast_furnace"
+        ]),
         // REI Display configuration
         // e.progressBar(88, 35, 'triple_arrow'),
         // REI Item Inputs, item outputs, fluid inputs, fluid outputs
@@ -61,10 +61,10 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
         'electric_blast_furnace', // overlay folder
         true, // front overlay
         false, // top overlay
-		false, // side overlay
-		// Batch size, EU cost multiplier
-		12,
-		0.80
-		
-	);
+        false, // side overlay
+        // Batch size, EU cost multiplier
+        12,
+        0.80
+
+    );
 });
