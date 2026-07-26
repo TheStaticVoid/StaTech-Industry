@@ -4,9 +4,9 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/blast_furnace/${id}`;
-    
+
     // -- BLAST FURNACE REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         mi('materials/blast_furnace/steel'),
@@ -53,14 +53,14 @@ ServerEvents.recipes(event => {
         [ { amount: 1000, fluid: mi('impure_liquid_nether_star') } ],
         [ { amount: 1000, fluid: mi('molten_nether_star') } ]
     );
-    
+
     // -- WITHERED BONE -- //
     blastFurnace(
         event,
         st('withered_fragment'),
         16,
         600,
-        [ 
+        [
             { amount: 16, item: 'minecraft:bone' },
             { amount: 1, item: 'minecraft:blaze_powder' }
         ],
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
         [ { amount: 1000, fluid: mi('molten_enderium') } ]
     );
 
-    // -- ENDERIUM HOT INGOT -- // 
+    // -- ENDERIUM HOT INGOT -- //
     blastFurnace(
         event,
         st('enderium_hot_ingot'),
@@ -204,7 +204,7 @@ ServerEvents.recipes(event => {
         st('molten_borosilicate_glass'),
         16,
         200,
-        [ 
+        [
             { amount: 6, item: kj('boron_quartz_blend') },
             { amount: 2, item: mc('sand') }
 
@@ -220,7 +220,7 @@ ServerEvents.recipes(event => {
         st('beryllium_hot_ingot'),
         96,
         300,
-        [ { amount: 1, item: mi('beryllium_dust') } ], 
+        [ { amount: 1, item: mi('beryllium_dust') } ],
         [ { amount: 1, item: mi('beryllium_hot_ingot') } ],
         null,
         [ { amount: 1000, fluid: mi('oxygen') } ]
@@ -232,7 +232,7 @@ ServerEvents.recipes(event => {
         st('lithium_tetrafluoroborate_decompose'),
         16,
         200,
-        [ { amount: 1, item: mi('lithium_tetrafluoroborate_dust') } ], 
+        [ { amount: 1, item: mi('lithium_tetrafluoroborate_dust') } ],
         [ { amount: 1, item: mi('lithium_fluoride_dust') } ],
         null,
         [ { amount: 1000, fluid: mi('boron_trifluoride') } ]

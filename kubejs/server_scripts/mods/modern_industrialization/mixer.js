@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/mixer/${id}`;
 
     // -- MIXER REMOVED RECIPES -- //
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         st('mossy_cobblestone'),
         2,
         200,
-        [ 
+        [
             { amount: 1, item: mc('cobblestone') },
             { amount: 1, item: mc('moss_block') }
         ],
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         st('mossy_cobblestone_vine'),
         2,
         200,
-        [ 
+        [
             { amount: 1, item: mc('cobblestone') },
             { amount: 1, item: mc('vine') }
         ],
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
         st('mossy_cobblestone_nml'),
         2,
         200,
-        [ 
+        [
             { amount: 1, item: mc('cobblestone') },
             { amount: 4, tag: 'nomansland:alternative_moss' }
         ],
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
         null,
         null,
         [ { amount: 120, fluid: xp('cognitium_source') } ]
-    ); 
+    );
 
     // -- STATECH ENERGY -- //
     mixer(
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
         st('coke_cola'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: kj('empty_can') },
             { amount: 2, tag: 'c:dusts/coke' }
         ],
@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
         st('uranium_cereal'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mc('bowl') },
             { amount: 3, tag: 'c:nuggets/uranium' }
         ],
@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
         st('nuka_cola'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mc('glass_bottle') },
             { amount: 4, tag: 'c:dusts/uranium' },
             { amount: 2, tag: 'c:dusts/coke' }
@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
         [ { amount: 1000, fluid: mc('water') } ]
     );
 
-    // -- LIQUID ENDER -- // 
+    // -- LIQUID ENDER -- //
     mixer(
         event,
         st('liquid_ender'),
@@ -216,7 +216,7 @@ ServerEvents.recipes(event => {
         [ { amount: 800, fluid: mc('water') } ],
         [ { amount: 1000, fluid: mi('liquid_ender') } ]
     );
-    
+
     // -- COGNITIVE FLUX -- //
     mixer(
         event,
@@ -229,8 +229,8 @@ ServerEvents.recipes(event => {
             { amount: 1, tag: 'minecraft:soul_fire_base_blocks' }
         ],
         [ { amount: 4, item: xp('cognitive_flux') } ]
-    ); 
-    
+    );
+
     // -- BORON-QUARTZ BLEND -- //
     mixer(
         event,
@@ -243,7 +243,7 @@ ServerEvents.recipes(event => {
             { amount: 1, tag: 'c:tiny_dusts/aluminum' }
         ],
         [ { amount: 12, item: kj('boron_quartz_blend') } ]
-    ); 
+    );
 
     // -- CERTUS QUARTS CRYSTAL -- //
     mixer(
@@ -359,7 +359,7 @@ ServerEvents.recipes(event => {
         [ { amount: 2, item: mg('sky_steel_ingot') } ],
         [ { amount: 1000, fluid: mc('lava'), probability: 0 } ]
     );
-    
+
     // -- DRILLING FLUID -- //
     mixer(
         event,
@@ -408,7 +408,7 @@ ServerEvents.recipes(event => {
         st('liquid_concrete'),
         8,
         200,
-        [ 
+        [
             { amount: 4, item: mi('clay_dust') },
             { amount: 10, item: mi('stone_dust') }
         ],
@@ -454,11 +454,11 @@ ServerEvents.recipes(event => {
         [ { amount: 125, fluid: mi('synthetic_rubber') } ]
     );
 
-    //----------------------------//
+    // ----------------------------//
     // -- EI FERTILIZER COMPAT -- //
-    //----------------------------//
+    // ----------------------------//
 
-        const fertilizerEff = [
+    const fertilizerEff = [
         ['manure', 300],
         ['composted_manure', 150],
         ['npk_fertilizer', 30]
@@ -474,7 +474,7 @@ ServerEvents.recipes(event => {
             200,
             null,
             null,
-            [ 
+            [
                 { amount: 100, fluid: mc('water') },
                 { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
             ],
@@ -489,7 +489,7 @@ ServerEvents.recipes(event => {
             200,
             null,
             null,
-            [ 
+            [
                 { amount: 100, fluid: mi('blood') },
                 { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
             ],
@@ -504,7 +504,7 @@ ServerEvents.recipes(event => {
             200,
             null,
             null,
-            [ 
+            [
                 { amount: 100, fluid: mc('lava') },
                 { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
             ],
@@ -519,7 +519,7 @@ ServerEvents.recipes(event => {
             200,
             null,
             null,
-            [ 
+            [
                 { amount: 100, fluid: mi('liquid_ender') },
                 { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
             ],

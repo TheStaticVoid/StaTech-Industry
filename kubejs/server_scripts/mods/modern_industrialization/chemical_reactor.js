@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
 
     // -- PHANTOM MEMBRANE -- //
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         16,
         200,
         [
-            { amount: 16, item: mc('leather') }, 
+            { amount: 16, item: mc('leather') },
             { amount: 2, item: mi('calcite_dust') },
         ],
         [ { amount: 1, item: mc('phantom_membrane') } ],
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         st('blaze_rod'),
         16,
         200,
-        [ 
+        [
             { amount: 1, item: mi('steel_rod') },
             { amount: 16, item: mc('nether_wart') }
         ],
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         st('ghast_tear'),
         16,
         200,
-        [ 
+        [
             { amount: 16, item: mc('tnt') },
             { amount: 16, item: mi('salt_dust') }
         ],
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
         st('ender_pearl'),
         16,
         200,
-        [ 
+        [
             { amount: 1, item: mc('slime_ball') },
             { amount: 1, item: mc('spider_eye') },
         ],
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
         300,
         null,
         null,
-        [ 
+        [
             { amount: 300, fluid: mi('tetrafluoroethylene') },
             { amount: 1000, fluid: mi('oxygen') }
         ],
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
         event,
         st('chloroform'),
         18,
-        200, 
+        200,
         null,
         null,
         [
@@ -162,7 +162,7 @@ ServerEvents.recipes(event => {
         ],
         [ { amount: 2000, fluid: mi('hydrofluoric_acid') } ]
     );
-    
+
     // -- BERYLLIUM SULFATE -- //
     chemicalReactor(
         event,
@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
         [ { amount: 150, fluid: mi('sulfuric_acid') } ],
         [ { amount: 300, fluid: mi('beryllium_sulfate') } ]
     );
-    
+
     // -- BERYLLIUM SULFATE ALTERNATIVE -- //
     chemicalReactor(
         event,
@@ -199,9 +199,9 @@ ServerEvents.recipes(event => {
             { amount: 2250, fluid: mi('beryllium_sulfate') },
             { amount: 7000, fluid: mi('ammonia') }
         ],
-        [ 
+        [
             { amount: 1200, fluid: mi('beryllium_hydroxide') },
-            { amount: 8000, fluid: mi('waste_beryl_ammonia_solution') } 
+            { amount: 8000, fluid: mi('waste_beryl_ammonia_solution') }
         ]
     );
 
@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
         400,
         null,
         null,
-        [ 
+        [
             { amount: 250, fluid: mi('nitrogen') },
             { amount: 750, fluid: mi('hydrogen') }
         ],
@@ -243,15 +243,15 @@ ServerEvents.recipes(event => {
         200,
         [ { amount: 1, item: mi('antimony_tiny_dust'), probability: 0.8 } ],
         null,
-        [ 
+        [
             { amount: 200, fluid: mi('propene') },
             { amount: 200, fluid: mi('ammonia') },
             { amount: 300, fluid: mi('oxygen') }
         ],
-        [ 
+        [
             { amount: 200, fluid: mi('acrylonitrile') },
             { amount: 600, fluid: mc('water'), probability: 0.9 }
-         ]
+        ]
     );
 
     // -- ACRYLONITRILE BUTADIENE STYRENE -- //
@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
         200,
         [ { amount: 1, item: mi('chromium_tiny_dust')} ],
         null,
-        [ 
+        [
             { amount: 250, fluid: mi('acrylonitrile') },
             { amount: 250, fluid: mi('styrene_butadiene') },
             { amount: 50, fluid: mi('sulfuric_acid') }
@@ -279,7 +279,7 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: mi('boron_trioxide_dust')} ],
         null,
         [ { amount: 6000, fluid: mi('hydrofluoric_acid') } ],
-        [ 
+        [
             { amount: 2000, fluid: mi('boron_trifluoride') },
             { amount: 3000, fluid: mc('water') }
         ]
@@ -305,7 +305,7 @@ ServerEvents.recipes(event => {
         200,
         null,
         [ { amount: 1, item: mi('lithium_hydride_dust')} ],
-        [ 
+        [
             { amount: 1000, fluid: mi('lithium') },
             { amount: 1000, fluid: mi('hydrogen') },
         ]
@@ -320,7 +320,7 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: mi('lithium_hydride_dust') } ],
         null,
         [ { amount: 1500, fluid: mc('water') } ],
-        [ 
+        [
             { amount: 1000, fluid: mi('lithium') },
             { amount: 1500, fluid: mi('hydrogen') },
             { amount: 500, fluid: mi('oxygen') }
@@ -335,7 +335,7 @@ ServerEvents.recipes(event => {
         200,
         null,
         [ { amount: 1, item: mi('lithium_fluoride_dust')} ],
-        [ 
+        [
             { amount: 1000, fluid: mi('lithium') },
             { amount: 1000, fluid: mi('fluorine') },
         ]

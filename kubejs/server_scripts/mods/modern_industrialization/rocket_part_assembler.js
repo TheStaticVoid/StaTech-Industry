@@ -4,9 +4,9 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/rocket_part_assembler/${id}`;
- 
+
     // -- ENGINE FAN -- //
     rocketAssembler(
         event,
@@ -40,8 +40,8 @@ ServerEvents.recipes(event => {
     rocketAssembler(
         event,
         st('rocket_fin'),
-        16, 
-        600, 
+        16,
+        600,
         [
             { amount: 2, tag: 'c:plates/steel' },
             { amount: 3, item: mi('steel_curved_plate') }
@@ -132,14 +132,14 @@ ServerEvents.recipes(event => {
     rocketAssembler(
         event,
         st('steel_engine'),
-        32, 
+        32,
         900,
         [
             { amount: 3, tag: 'c:plates/steel' },
             { amount: 1, item: kj('engine_framebox') },
             { amount: 1, item: kj('rocket_propeller') }
         ],
-        [ { amount: 1, item: kj('steel_engine') } ], 
+        [ { amount: 1, item: kj('steel_engine') } ],
         [ { amount: 100, fluid: mi('molten_enderium') } ]
     );
 
@@ -186,5 +186,5 @@ ServerEvents.recipes(event => {
         ],
         [ { amount: 1, item: kj('calorite_engine') } ],
         [ { amount: 100, fluid: mi('molten_enderium') } ]
-    ); 
+    );
 });

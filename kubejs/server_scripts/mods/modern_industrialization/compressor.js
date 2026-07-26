@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/compressor/${id}`;
 
     // -- COMPRESSOR REMOVED RECIPES -- //
@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         mi('vanilla_recipes/compressor/paper_with_sugarcane'),
     ];
     DELETED_RECIPE.forEach(id => event.remove({id: id}));
-    
+
     // -- PIZZA DOUGH -- //
     compressor(
         event,

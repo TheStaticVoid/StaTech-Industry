@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
             { tag: `c:ores/${material}` },
             { count: 2, id: mi(`${material}_crushed_dust`) }
         );
-    
+
         // -- DUST FROM ORE -- //
         forgeHammer(
             st(`${material}_dust`),
@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
             { tag: `c:ores/${material}` },
             { count: 4, id: mi(`${material}_dust`) }
         );
-    
+
         // -- DUST FROM CRUSHED DUST -- //
         forgeHammer(
             st(`${material}_dust_alt`),
@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
                 { count: 4, id: mi(`raw_${material}`) }
             );
         }
-    
+
         // -- DUST FROM ORE -- //
         forgeHammer(
             st(`${material}_dust_from_ore`),
@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
             { tag: `c:ores/${material}` },
             { count: 8, id: mi(`${material}_dust`) }
         );
-    
+
         // -- DUST FROM RAW METAL -- //
         forgeHammer(
             st(`${material}_dust_from_raw_metal`),
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
             { tag: `c:raw_materials/${material}` },
             { count: 2, id: mi(`${material}_dust`) }
         );
-    }); 
+    });
 
     MATERIALS.forEach(material => {
         // -- BOLTS -- //
@@ -221,7 +221,7 @@ ServerEvents.recipes(event => {
             );
         }
 
-        // -- PLATES -- // 
+        // -- PLATES -- //
         forgeHammer(
             st(`${material}_plate_from_double_ingot`),
             10,

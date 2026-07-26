@@ -4,9 +4,9 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/alloy_smelter/${id}`;
-    
+
     // -- RED ALLOY INGOT -- //
     alloySmelter(
         event,
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
 
     // -- BRASS INGOT -- //
     alloySmelter(
-    event,
+        event,
         st('brass_ingot'),
         4,
         200,

@@ -4,14 +4,14 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:extended_industrialization/canning_machine/${id}`;
 
-    // -- CANNING MACHINE REMOVED RECIPES -- // 
+    // -- CANNING MACHINE REMOVED RECIPES -- //
     let REMOVED_RECIPE = [
     //    ei(''),
-    ]; 
-    REMOVED_RECIPE.forEach(id => event.remove({id: id}));  
+    ];
+    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
 
     // -- SULFURIC ACID BOTTLE -- //
     canningMachine(
@@ -23,5 +23,5 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: kj('sulfuric_acid_bottle') } ],
         [ { amount: 100, fluid: mi('sulfuric_acid') } ]
     );
-   
+
 });

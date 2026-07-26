@@ -4,12 +4,12 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/cutting_machine/${id}`;
 
     // -- CUTTING MACHINE VARIABLE CONSTANTS -- //
     const lubricantAmount = 10;
-    
+
     let recipesToRemove = [];
     event.forEachRecipe({ type: mi('cutting_machine') }, recipe => {
         recipesToRemove.push(recipe.getId());
@@ -30,9 +30,9 @@ ServerEvents.recipes(event => {
             }
         }
         event.custom(recipeJson).id(st(recipe.getPath()));
-    }); 
+    });
 
-    recipesToRemove.forEach(id => event.remove({id: id}));  
+    recipesToRemove.forEach(id => event.remove({id: id}));
 
     // -- EMPTY CAN -- //
     cuttingMachine(
