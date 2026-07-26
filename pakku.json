@@ -1,0 +1,99 @@
+{
+    "name": "StaTech Industry 2.0",
+    "version": "2.0.1",
+    "release_type": "release",
+    "description": "",
+    "author": "Static Void, Purple Dino, & GronkDev",
+    "overrides": [
+        "config",
+        "defaultconfigs",
+        "kubejs",
+        "!kubejs/probe/**"
+    ],
+    "server_overrides": [
+        "!kubejs/assets",
+        "forge-auto-install.txt",
+        "generate_auto_installation_file.bat",
+        "minecraft_server.jar",
+        "server.properties",
+        "server_starter.conf",
+        "server-icon.png",
+        "start_server.bat",
+        "README.md"
+    ],
+    "client_overrides": [
+        "resourcepacks"
+    ],
+    "projects": {
+        "advancement-plaques": {
+            "side": "CLIENT"
+        },
+        "better-advancements": {
+            "side": "CLIENT"
+        },
+        "better-modlist-neoforge": {
+            "side": "CLIENT"
+        },
+        "chloride": {
+            "side": "CLIENT"
+        },
+        "client-tweaks": {
+            "side": "CLIENT"
+        },
+        "controlling": {
+            "side": "CLIENT"
+        },
+        "ctm": {
+            "side": "CLIENT"
+        },
+        "default-options": {
+            "side": "CLIENT"
+        },
+        "equipment-compare": {
+            "side": "CLIENT"
+        },
+        "extreme-sound-muffler": {
+            "side": "CLIENT"
+        },
+        "faster-ladder-climbing": {
+            "side": "CLIENT"
+        },
+        "gnetum": {
+            "side": "CLIENT"
+        },
+        "legendary-tooltips": {
+            "side": "CLIENT"
+        },
+        "modlistmemory": {
+            "side": "CLIENT"
+        },
+        "overloaded-armor-bar": {
+            "side": "CLIENT"
+        },
+        "playeranimator": {
+            "side": "CLIENT"
+        },
+        "reeses-sodium-options": {
+            "side": "CLIENT"
+        },
+        "smithing-template-viewer": {
+            "side": "CLIENT"
+        },
+        "sodium": {
+            "side": "CLIENT"
+        },
+        "tipthescales": {
+            "side": "CLIENT"
+        },
+        "tmrv": {
+            "side": "CLIENT"
+        },
+        "zume": {
+            "side": "CLIENT"
+        },
+        "probejs": {
+            "side": "CLIENT",
+            "export": false
+        }
+    }
+}
