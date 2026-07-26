@@ -135,6 +135,38 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
         md('wrench')
     ];
     UNUSED_MD.forEach(id => event.remove(id));
+    
+    const UNUSED_DEV = [
+        kj('computer_casing'),
+        kj('personal_space_shield'),
+        kj('lens_mold'),
+        kj('short_range_lens'),
+        kj('deep_space_lens'),
+        kj('unrefined_simple_stellar_data'),
+        kj('unrefined_deep_space_stellar_data'),
+        kj('planetary_data'),
+        kj('star_data'),
+        kj('black_hole_data'),
+        kj('anomalous_stellar_data'),
+        kj('star_location_telemetry'),
+        kj('planetary_location_telemetry'),
+        kj('black_hole_location_telemetry'),
+        kj('anomaly_location_telemetry'),
+        kj('research_probe'),
+        kj('star_imploder'),
+        kj('dark_matter'),
+        kj('antimatter_housing'),
+        kj('antimatter'),
+        kj('contained_antimatter'),
+        kj('basic_space_circuit'),
+        kj('advanced_space_circuit'),
+        kj('anomalous_space_circuit'),
+        mi('supercomputer'),
+        mi('telescope'),
+        /^modern_industrialization:.*(cobalt).*/
+
+    ];
+    UNUSED_DEV.forEach(id => event.remove(id));
 });
 
 RecipeViewerEvents.removeEntriesCompletely('fluid', event => {

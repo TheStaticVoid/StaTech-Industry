@@ -33,6 +33,10 @@ CapeJS.addCapes(e => {
     e.register("5010ad09-0229-4d70-8a2c-bc254821dcb3", "mod_developer");                // dafuqs
     // roost_er
     e.register("7573dfca-56f5-49c4-b5e2-009718218b29", "mod_developer");                // 0xDAD (Mirinimi)
+    e.register("a2dca537-693e-4ded-ac4b-c4006dd4d382", "mod_developer");                // Swedz
+    e.register("f83bd929-fbf0-4186-becb-658d676fcc42", "mod_developer");                // White_Phant0m
+    e.register("97184eb6-cc38-4c23-8468-a618634d6ffa", "mod_developer");                // Natte
+    e.register("b179e7d7-8d0d-4aff-ad80-ed132952cb58", "mod_developer");                // Luligabi1
 
     // -- CONTENT CREATOR -- //
     e.register("350d11b9-1754-47b7-80a5-b8e01b760ec8", "content_creator");              // Zephyr, aka ApexPredaturr
