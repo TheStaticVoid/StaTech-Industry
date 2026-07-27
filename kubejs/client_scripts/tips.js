@@ -12,7 +12,7 @@ const tips = [
 */
     {
         id: 'food',
-        tiptext: 'Each 5 unique foods allows you to permanently gain a heart.'
+        tiptext: 'Each 5 unique foods eaten will permanently grant you an additional heart.'
     },
     {
         id: 'sleeping_bag_straw_bed',
@@ -204,7 +204,7 @@ const tips = [
     },
     {
         id: 'item_pipes_filters',
-        tiptext: 'Be sure to filter both the input and outputs of your item pipes for them to function.'
+        tiptext: 'Be sure to filter both the input and output sides of your item pipes for them to function.'
     },
     {
         id: 'aluminum_electrolyzer',
@@ -236,7 +236,7 @@ const tips = [
     },
     {
         id: 'spectrum_ruin',
-        tiptext: 'Leaving Spectrum Ruin unattended is a terrible idea.'
+        tiptext: 'Leaving Spectrum\'s Ruin unattended is a terrible idea.'
     },
     {
         id: 'locking_ender_storage',
@@ -276,7 +276,7 @@ const tips = [
     },
     {
         id: 'item_pipes_motors',
-        tiptext: 'Adding motors to extracting item pipes will make that pipe move more items.'
+        tiptext: 'Adding motors an item pipe extract point will make that pipe extract point move more items.'
     },
     {
         id: 'water_dupe',
