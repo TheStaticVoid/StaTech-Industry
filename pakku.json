@@ -1,6 +1,6 @@
 {
     "name": "StaTech Industry",
-    "version": "2.0.0",
+    "version": "2.0.0rc2",
     "release_type": "release",
     "description": "",
     "author": "Static Void, Purple Dino, & GronkDev",
@@ -169,6 +169,24 @@
         "probejs": {
             "side": "CLIENT",
             "export": false
+        },
+        "structory-towers": {
+            "update_strategy": "NONE"
+        },
+        "sophisticated-backpacks": {
+            "update_strategy": "NONE"
+        },
+        "sophisticated-storage": {
+            "update_strategy": "NONE"
+        },
+        "sophisticated-core": {
+            "update_strategy": "NONE"
+        },
+        "sophisticated-inventory-interactions": {
+            "update_strategy": "NONE"
+        },
+        "sophisticated-item-actions": {
+            "update_strategy": "NONE"
         }
     }
 }

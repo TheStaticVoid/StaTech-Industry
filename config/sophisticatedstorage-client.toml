@@ -1,6 +1,6 @@
 #Client-side Settings
 [client]
-	#Determines whether JEI and creative tab will show tinted storage items for iron and higher tiers. Can help with easily removing many of these items from there.
-	showHigherTierTintedVariants = false
-	#Determines whether JEI and creative tab will show only single wood variant of storage item per tier. Makes creative tab and .
+	#Determines whether JEI and creative tab will show only one wood variant of each storage item tier. Makes creative tab and JEI lists smaller.
 	showSingleWoodVariantOnly = true
+	#Determines whether JEI and creative tab will show generic wood variants for copper and higher tiers. Can help with keeping these lists smaller when many compatible wood types are loaded.
+	showHigherTierGenericWoodVariants = false

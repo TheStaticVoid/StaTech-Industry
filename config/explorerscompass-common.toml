@@ -7,9 +7,23 @@
 	# Default: 10000
 	# Range: 0 ~ 1000000
 	maxRadius = 10000
-	#A list of structures that the compass will not display in the GUI and will not be able to search for. Wildcard character * can be used to match any number of characters, and ? can be used to match one character. Ex: ["minecraft:stronghold", "minecraft:endcity", "minecraft:*village*"]
+	#A list of structures that the compass will not display in the GUI and will not be able to search for. Wildcard character * can be used to match any number of characters, and ? can be used to match one character. Ex: ["minecraft:buried_treasure", "minecraft:end*", "minecraft:*village*"]
 	structureBlacklist = ["pastel:undergrowth_manor", "pastel:forsaken_cathedral", "create_structures_arise:create_copper_statue", "create_structures_arise:create_dungeon_base", "create_structures_arise:create_ruined_castle", "create_structures_arise:createminiskyvillage", "create_structures_arise:createwindmill", "create_structures_arise:deadlordshouse", "create_structures_arise:obsidiantemple"]
 	#The maximum number of samples to be taken when searching for a structure.
 	# Default: 100000
 	# Range: 0 ~ 100000000
 	maxSamples = 100000
+	#The maximum number of times a player can search for the next instance of a located structure, excluding already-found locations. Set to 0 to disable searching for additional structure instances and make the compass always locate the nearest instance.
+	# Default: 100
+	# Range: 0 ~ 10000
+	maxNextSearches = 100
+	#The default number of XP levels consumed when searching for a structure. Individual structures can be configured via xpLevelOverrides.
+	# Default: 0
+	# Range: 0 ~ 3
+	defaultXpLevels = 0
+	#A list of structure-specific XP level costs that override defaultXpLevels, specified as comma-separated "structure_id,num_levels" pairs. Structures not listed here use defaultXpLevels. Max of 3 levels. The wildcard character * can be used to match any number of characters, and ? can be used to match one character. Ex: ["minecraft:buried_treasure,3", "minecraft:end*,2", "minecraft:*village*,1"]
+	xpLevelOverrides = []
+	#The number of successful structure searches before the compass breaks and must be repaired. Set to 0 to disable durability.
+	# Default: 0
+	# Range: 0 ~ 10000
+	compassDurability = 0

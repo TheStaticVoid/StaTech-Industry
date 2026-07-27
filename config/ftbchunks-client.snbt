@@ -127,7 +127,7 @@
 		compass: true
 		
 		# Enable minimap
-		# Default: true
+		# Default: false
 		enabled: false
 		
 		# Show entities on minimap
@@ -138,19 +138,19 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:sheep": true
-			"minecraft:polar_bear": true
-			"minecraft:bat": true
-			"minecraft:wolf": true
-			"minecraft:glow_squid": true
-			"nomansland:tortoise": true
-			"minecraft:chicken": true
 			"nomansland:goose": true
-			"nomansland:deer": true
-			"minecraft:rabbit": true
 			"minecraft:squid": true
 			"minecraft:fox": true
+			"minecraft:rabbit": true
 			"artifacts:mimic": true
+			"nomansland:tortoise": true
+			"minecraft:sheep": true
+			"minecraft:polar_bear": true
+			"minecraft:wolf": true
+			"minecraft:glow_squid": true
+			"minecraft:bat": true
+			"minecraft:chicken": true
+			"nomansland:deer": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
