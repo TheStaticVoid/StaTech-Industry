@@ -84,6 +84,16 @@ ServerEvents.recipes(event => {
             ]
         ],
 
+        // Flax
+        [
+            su('flax_seeds'),
+            [
+                { amount: 1, item: su('flax') },
+                { amount: 1, item: su('flax'), probability: 0.5 },
+                { amount: 1, item: su('flax_seeds'), probability: 0.02 }
+            ]
+        ],
+
         // Asparagus
         [
             ed('asparagus_seeds'),
