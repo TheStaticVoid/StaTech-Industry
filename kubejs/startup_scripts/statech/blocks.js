@@ -12,12 +12,12 @@ StartupEvents.registry('block', event => {
 
     decorativeCopper.forEach(([id, name]) => {
         event.create(`kubejs:${id}`)
-        .displayName(name)
-        .soundType('copper')
-        .requiresTool(true)
-        .hardness(3)
-        .tagBlock('minecraft:mineable/pickaxe') 
-        .tagBlock('minecraft:needs_iron_tool')
+            .displayName(name)
+            .soundType('copper')
+            .requiresTool(true)
+            .hardness(3)
+            .tagBlock('minecraft:mineable/pickaxe')
+            .tagBlock('minecraft:needs_iron_tool')
     });
 
     const glowingPillars = [
@@ -29,17 +29,17 @@ StartupEvents.registry('block', event => {
 
     glowingPillars.forEach(([id, name]) => {
         event.create(`kubejs:${id}`)
-        .displayName(name)
-        .soundType('stone')
-        .requiresTool(true)
-        .hardness(6)
-        .lightLevel(1.0)
-        .tagBlock('minecraft:mineable/pickaxe') 
-        .tagBlock('minecraft:needs_iron_tool')
-        .property(BlockProperties.AXIS)
-        .placementState((event) => event.set(BlockProperties.AXIS, event.clickedFace.axis))
+            .displayName(name)
+            .soundType('stone')
+            .requiresTool(true)
+            .hardness(6)
+            .lightLevel(1.0)
+            .tagBlock('minecraft:mineable/pickaxe')
+            .tagBlock('minecraft:needs_iron_tool')
+            .property(BlockProperties.AXIS)
+            .placementState((event) => event.set(BlockProperties.AXIS, event.clickedFace.axis))
     });
-    
+
     event.create(`kubejs:borosilicate_glass`)
         .displayName('Borosilicate Glass')
         .glassSoundType()
@@ -47,18 +47,18 @@ StartupEvents.registry('block', event => {
         .hardness(2)
         .defaultTranslucent()
         .transparent(true)
-        .tagBlock('minecraft:mineable/pickaxe') 
+        .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .tagBlock('c:glass_blocks');
-    
+
     event.create(`kubejs:computer_casing`)
         .displayName('Computer Casing')
         .soundType('copper')
         .requiresTool(true)
         .hardness(3)
-        .tagBlock('minecraft:mineable/pickaxe') 
+        .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool');
-    
+
     const tieredProbeComputers = [
         ['mki_probe_computer', 'Mk I Probe Computer'],
         ['mkii_probe_computer', 'Mk II Probe Computer'],
@@ -67,25 +67,25 @@ StartupEvents.registry('block', event => {
 
     tieredProbeComputers.forEach(([id, name]) => {
         event.create(`kubejs:${id}`)
-        .displayName(name)
-        .soundType('stone')
-        .requiresTool(true)
-        .hardness(6)
-        .tagBlock('minecraft:mineable/pickaxe') 
-        .tagBlock('minecraft:needs_iron_tool')
+            .displayName(name)
+            .soundType('stone')
+            .requiresTool(true)
+            .hardness(6)
+            .tagBlock('minecraft:mineable/pickaxe')
+            .tagBlock('minecraft:needs_iron_tool')
     });
 
-        
-/*     const oreSamples = [
-        ['iron_ore_sample', 'Iron Ore Sample']
-    ];
 
-    oreSamples.forEach(([id, name]) => {
-        event.create(`kubejs:${id}`)
-        .displayName(name)
-        .soundType('stone')
-        .requiresTool(false)
-        .hardness(1)
-        .tagBlock('minecraft:mineable/pickaxe') 
-    }); */
+    /*     const oreSamples = [
+            ['iron_ore_sample', 'Iron Ore Sample']
+        ];
+
+        oreSamples.forEach(([id, name]) => {
+            event.create(`kubejs:${id}`)
+            .displayName(name)
+            .soundType('stone')
+            .requiresTool(false)
+            .hardness(1)
+            .tagBlock('minecraft:mineable/pickaxe')
+        }); */
 });

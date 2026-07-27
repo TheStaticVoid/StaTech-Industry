@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/fusion_reactor/${id}`;
 
     // -- FUSION REACTOR REMOVED RECIPES -- //
@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
     ]
     REMOVED_RECIPE.forEach(id => event.remove({id: id}));
 
-    // HELIUM PLASMA + DEUTERIUM -> HYDROGEN + NEUTRONIUM 
+    // HELIUM PLASMA + DEUTERIUM -> HYDROGEN + NEUTRONIUM
     fusion(
         event,
         st('hydrogen_neutronium_from_helium_plasma_deuterium'),
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
             { amount: 15, fluid: mi('neutronium') }
         ]
     );
-    
+
     fusion(
         event,
         st('helium_plasma_from_helium_3_tritium'),

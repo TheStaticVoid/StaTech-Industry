@@ -23,8 +23,8 @@ MIMachineEvents.registerMachines(event => {
         // GUI Configuration
         191, // background height (or -1 for default value)
         event.progressBar(103, 39, 'triple_arrow'), // progress bar
-        event.efficiencyBar(43, 89), // efficiency bar 
-        event.energyBar(14, 42), // energy bar 
+        event.efficiencyBar(43, 89), // efficiency bar
+        event.energyBar(14, 42), // energy bar
 
         // Slot Configuration
         6, // Item input count

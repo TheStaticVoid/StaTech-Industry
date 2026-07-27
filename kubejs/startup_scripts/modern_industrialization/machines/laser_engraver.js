@@ -5,7 +5,7 @@
 
 let LASER_ENGRAVER;
 
-MIMachineEvents.registerRecipeTypes(event => { 
+MIMachineEvents.registerRecipeTypes(event => {
     LASER_ENGRAVER = event.register('laser_engraver')
         .withItemInputs()
         .withItemOutputs();
@@ -35,7 +35,7 @@ MIMachineEvents.registerMachines(event => {
         16,
         // Slot positions: item and fluids
         items => items.addSlots(41, 35, 2, 1).addSlots(117, 35, 1, 1),
-        fluids => {},
+        fluids => { },
 
         // Model configuration
         true, // front overlay

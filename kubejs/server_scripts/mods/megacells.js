@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:megacells/${id}`;
 
     const ingotsToPlates = [
@@ -31,8 +31,8 @@ ServerEvents.recipes(event => {
         mg('crafting/sky_osmium_block'),
         mg('crafting/bulk_cell_component')
     ];
-    REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
-    
+    REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
+
     event.custom({
         type: 'ae2:transform',
         circumstance: {
@@ -40,17 +40,17 @@ ServerEvents.recipes(event => {
             'tag': 'minecraft:lava'
         },
         ingredients: [
-            {'item': 'ae2:charged_certus_quartz_crystal'},
-            {'tag': 'c:ingots/annealed_copper'},
-            {'item': 'ae2:sky_stone_block'}
+            { 'item': 'ae2:charged_certus_quartz_crystal' },
+            { 'tag': 'c:ingots/annealed_copper' },
+            { 'item': 'ae2:sky_stone_block' }
         ],
         result: {
             'count': 2,
             'id': mg('sky_bronze_ingot')
         }
     })
-    .id(mg('transform/sky_bronze_ingot'));
-    
+        .id(mg('transform/sky_bronze_ingot'));
+
     event.custom({
         type: 'ae2:transform',
         circumstance: {
@@ -58,16 +58,16 @@ ServerEvents.recipes(event => {
             'tag': 'minecraft:lava'
         },
         ingredients: [
-            {'item': ae('charged_certus_quartz_crystal')},
-            {'tag': 'c:ingots/stainless_steel'},
-            {'item': ae('sky_stone_block')}
+            { 'item': ae('charged_certus_quartz_crystal') },
+            { 'tag': 'c:ingots/stainless_steel' },
+            { 'item': ae('sky_stone_block') }
         ],
         result: {
             'count': 2,
             'id': mg('sky_steel_ingot')
         }
     })
-    .id(mg('transform/sky_steel_ingot'));
+        .id(mg('transform/sky_steel_ingot'));
 
     event.custom({
         type: 'extendedae:crystal_assembler',
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
             count: 1
         }
     })
-    .id(st('accumulation_processor_press'));
+        .id(st('accumulation_processor_press'));
 });
 
 MoreJS.villagerTrades(event => {

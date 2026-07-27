@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:${id}`;
 
     // -- ANGEL RING -- //
@@ -12,8 +12,7 @@ ServerEvents.recipes(event => {
         'FGF',
         'TRT',
         'CTC'
-    ],
-    {
+    ], {
         F: mc('feather'),
         R: mi('gold_ring'),
         T: '#c:storage_blocks/titanium',
@@ -26,8 +25,7 @@ ServerEvents.recipes(event => {
         'SDS',
         'SGS',
         'SDS'
-    ],
-    {
+    ], {
         S: '#c:plates/steel',
         G: mc('glowstone'),
         D: '#c:dyes/purple'
@@ -37,8 +35,7 @@ ServerEvents.recipes(event => {
         'SDS',
         'SGS',
         'SDS'
-    ],
-    {
+    ], {
         S: '#c:plates/desh',
         G: mc('glowstone'),
         D: '#c:dyes/red'
@@ -48,8 +45,7 @@ ServerEvents.recipes(event => {
         'SDS',
         'SGS',
         'SDS'
-    ],
-    {
+    ], {
         S: '#c:plates/ostrum',
         G: mc('glowstone'),
         D: '#c:dyes/lime'
@@ -59,11 +55,10 @@ ServerEvents.recipes(event => {
         'SDS',
         'SGS',
         'SDS'
-    ],
-    {
+    ], {
         S: '#c:plates/calorite',
         G: mc('glowstone'),
-        D: '#c:dyes/orange' 
+        D: '#c:dyes/orange'
     }).id(st('glowing_calorite_pillar'));
 
     // ------------------- //
@@ -75,12 +70,12 @@ ServerEvents.recipes(event => {
     let legendary = kj('coin_legendary');
     let mythic = kj('coin_mythic');
 
-    event.shapeless(rare, [ '6x ' + common ]).id(st('coin_rare_upgrade'));
-    event.shapeless(legendary, [ '7x ' + rare ]).id(st('coin_legendary_upgrade'));
-    event.shapeless(mythic, [ '8x ' + legendary ]).id(st('coin_mythic_upgrade'));
-    event.shapeless('8x ' + legendary, [ mythic ]).id(st('coin_legendary_downgrade'));
-    event.shapeless('7x ' + rare, [ legendary ]).id(st('coin_rare_downgrade'));
-    event.shapeless('6x ' + common, [ rare ]).id(st('coin_common_downgrade'));
+    event.shapeless(rare, ['6x ' + common]).id(st('coin_rare_upgrade'));
+    event.shapeless(legendary, ['7x ' + rare]).id(st('coin_legendary_upgrade'));
+    event.shapeless(mythic, ['8x ' + legendary]).id(st('coin_mythic_upgrade'));
+    event.shapeless('8x ' + legendary, [mythic]).id(st('coin_legendary_downgrade'));
+    event.shapeless('7x ' + rare, [legendary]).id(st('coin_rare_downgrade'));
+    event.shapeless('6x ' + common, [rare]).id(st('coin_common_downgrade'));
 
     // -------------- //
     //    COMMON      //
@@ -91,8 +86,7 @@ ServerEvents.recipes(event => {
         'CCC',
         '   ',
         'CCC'
-    ],
-    {
+    ], {
         C: common
     }).id(st('iron_ore_from_common'));
 
@@ -101,8 +95,7 @@ ServerEvents.recipes(event => {
         'C C',
         'C C',
         'C C'
-    ],
-    {
+    ], {
         C: common
     }).id(st('tin_ore_from_common'));
 
@@ -111,8 +104,7 @@ ServerEvents.recipes(event => {
         'C',
         ' ',
         'C'
-    ],
-    {
+    ], {
         C: common
     }).id(st('andesite_from_common'));
 
@@ -121,30 +113,27 @@ ServerEvents.recipes(event => {
         'C  ',
         ' C ',
         '  C'
-    ],
-    {
+    ], {
         C: common
     })
-    .noMirror().id('amethyst_shard_from_common');
-    
+        .noMirror().id('amethyst_shard_from_common');
+
     // -- TOPAZ SHARD -- //
     event.shaped('8x ' + sp('topaz_shard'), [
         '  C',
         ' C ',
         'C  '
-    ],
-    {
+    ], {
         C: common
     })
-    .noMirror().id(st('topaz_shard_from_common'));
+        .noMirror().id(st('topaz_shard_from_common'));
 
     // -- CITRINE SHARD -- //
     event.shaped('8x ' + sp('citrine_shard'), [
         'C  ',
         'C  ',
         'C  '
-    ],
-    {
+    ], {
         C: common
     }).id(st('citrine_shard_from_common'));
 
@@ -152,8 +141,7 @@ ServerEvents.recipes(event => {
         'C C',
         ' C ',
         'C C'
-    ],
-    {
+    ], {
         C: common
     }).id(st('coal_ore_from_common'));
 
@@ -161,16 +149,14 @@ ServerEvents.recipes(event => {
         'CCC',
         'C  ',
         'CCC'
-    ],
-    {
+    ], {
         C: common
     }).id(st('copper_ore_from_common'));
 
     event.shaped('8x create:zinc_ore', [
         'CC',
         'CC'
-    ],
-    {
+    ], {
         C: common
     }).id(st('zinc_ore_from_common'));
 
@@ -178,8 +164,7 @@ ServerEvents.recipes(event => {
     event.shaped('8x ' + mi('salt_ore'), [
         ' CC',
         'CC '
-    ],
-    {
+    ], {
         C: common
     }).id(st('salt_ore_from_common'));
 
@@ -192,8 +177,7 @@ ServerEvents.recipes(event => {
         ' C ',
         'C C',
         ' C '
-    ],
-    {
+    ], {
         C: rare
     }).id(st('gold_ore_from_rare'));
 
@@ -202,8 +186,7 @@ ServerEvents.recipes(event => {
         '   ',
         'CCC',
         '   '
-    ],
-    {
+    ], {
         C: rare
     }).id(st('antimony_ore_from_rare'));
 
@@ -212,8 +195,7 @@ ServerEvents.recipes(event => {
         'C',
         'C',
         'C'
-    ],
-    {
+    ], {
         C: rare
     }).id(st('diamond_ore_from_rare'));
 
@@ -222,8 +204,7 @@ ServerEvents.recipes(event => {
         'C C',
         '   ',
         'C C'
-    ],
-    {
+    ], {
         C: rare
     }).id(st('redstone_ore_from_rare'));
 
@@ -231,8 +212,7 @@ ServerEvents.recipes(event => {
     event.shaped('8x ' + mi('lead_ore'), [
         'CC',
         'CC'
-    ],
-    {
+    ], {
         C: rare
     }).id(st('lead_ore_from_rare'));
 
@@ -240,8 +220,7 @@ ServerEvents.recipes(event => {
     event.shaped('8x ' + mi('nickel_ore'), [
         'CCC',
         ' C '
-    ],
-    {
+    ], {
         C: rare
     }).id(st('nickel_ore_from_rare'));
 
@@ -250,8 +229,7 @@ ServerEvents.recipes(event => {
         ' C ',
         'CCC',
         ' C '
-    ],
-    {
+    ], {
         C: rare
     }).id(st('bauxite_ore_from_rare'));
 
@@ -264,8 +242,7 @@ ServerEvents.recipes(event => {
         'C C',
         '   ',
         'C C'
-    ],
-    {
+    ], {
         C: legendary
     }).id(st('ancient_debris_from_legendary'));
 
@@ -274,8 +251,7 @@ ServerEvents.recipes(event => {
         ' C ',
         'C C',
         ' C '
-    ],
-    {
+    ], {
         C: legendary
     }).id(st('tungsten_ore_from_legendary'));
 
@@ -283,8 +259,7 @@ ServerEvents.recipes(event => {
     event.shaped('8x ' + mi('monazite_ore'), [
         'CCC',
         ' C '
-    ],
-    {
+    ], {
         C: legendary
     }).id(st('monazite_ore_from_legendary'));
 
@@ -293,8 +268,7 @@ ServerEvents.recipes(event => {
         'C C',
         'C C',
         'CCC'
-    ],
-    {
+    ], {
         C: legendary
     }).id(st('uranium_ore_from_legendary'));
 
@@ -303,8 +277,7 @@ ServerEvents.recipes(event => {
         'CC ',
         'C C',
         'CC '
-    ], 
-    {
+    ], {
         C: legendary
     }).id(st('desh_ore_from_legendary'));
 
@@ -313,8 +286,7 @@ ServerEvents.recipes(event => {
         'CCC',
         'CCC',
         'CCC'
-    ],
-    {
+    ], {
         C: legendary
     }).id('ostrum_ore_from_legendary');
 
@@ -326,8 +298,7 @@ ServerEvents.recipes(event => {
         ' C ',
         'C C',
         ' C '
-    ],
-    {
+    ], {
         C: mythic
     }).id(st('mending_from_mythic'));
 
@@ -335,18 +306,16 @@ ServerEvents.recipes(event => {
         'C C',
         '   ',
         'C C'
-    ],
-    {
+    ], {
         C: mythic
     }).id(st('soulbound_from_mythic'));
-    
+
     // CALORITE ORE
     event.shaped('8x ' + mi('calorite_ore'), [
         'CCC',
         'C  ',
         'CCC'
-    ],
-    {
+    ], {
         C: mythic
     }).id(st('calorite_ore_from_mythic'));
 });
@@ -369,40 +338,40 @@ ServerEvents.tags('item', event => {
     CLEAR_ARMOR.forEach(id => event.add(kj('clear_armor'), id));
 })
 
-    // -- BLOCK TAGGING -- //
+// -- BLOCK TAGGING -- //
 ServerEvents.tags('block', event => {
-    
+
     // -- PREFERRED TOOL FOR GLASS-LIKE BLOCKS -- //
     event.add('minecraft:mineable/pickaxe', ['#c:glass_blocks', 'minecraft:glowstone', '#chisel:chiseled_glowstone', /^xtonesreworked:glaxx_block_/]);
-    
+
 });
 
 
-    // -- ITEM TAGGING -- //
+// -- ITEM TAGGING -- //
 ServerEvents.tags('item', event => {
 
     // -- MI PARTS TAGGING -- //
     const MATERIALS = [
-        'copper', 
-        'iron', 
-        'steel', 
-        'bronze', 
-        'tin', 
-        'lead', 
-        'silver', 
+        'copper',
+        'iron',
+        'steel',
+        'bronze',
+        'tin',
+        'lead',
+        'silver',
         'gold',
-        'nickel', 
-        'zinc', 
-        'aluminum', 
-        'platinum', 
-        'tungsten', 
+        'nickel',
+        'zinc',
+        'aluminum',
+        'platinum',
+        'tungsten',
         'titanium',
-        'chromium', 
-        'manganese', 
+        'chromium',
+        'manganese',
         'electrum',
-        'invar', 
-        'enderium', 
-        'annealed_copper', 
+        'invar',
+        'enderium',
+        'annealed_copper',
         'stainless_steel',
         'battery_alloy',
         'cupronickel',
@@ -414,10 +383,10 @@ ServerEvents.tags('item', event => {
     ];
 
     const CUSTOMMATERIALS = [
-        'desh', 
-        'zinc', 
-        'tungstensteel', 
-        'ostrum', 
+        'desh',
+        'zinc',
+        'tungstensteel',
+        'ostrum',
         'calorite',
         'enderium',
         'polytetrafluoroethylene',
@@ -444,22 +413,22 @@ ServerEvents.tags('item', event => {
     ]
 
     const baseparts = [
-        '_rotor', 
-        '_curved_plate', 
-        '_blade', 
-        '_large_plate', 
-        '_bolt', 
-        '_ring', 
-        '_hot_ingot', 
+        '_rotor',
+        '_curved_plate',
+        '_blade',
+        '_large_plate',
+        '_bolt',
+        '_ring',
+        '_hot_ingot',
         '_double_ingot',
         '_drill_head'
     ];
     const supplparts = [
-        '_plate', 
-        '_gear', 
-        '_rod', 
-        '_tiny_dust', 
-        '_dust', 
+        '_plate',
+        '_gear',
+        '_rod',
+        '_tiny_dust',
+        '_dust',
         '_ingot',
         '_ore',
         '_nugget'
@@ -474,7 +443,7 @@ ServerEvents.tags('item', event => {
             const tagCategory = part.slice(1) + 's';
             const generictag = `c:${tagCategory}`;
             const specifictag = `c:${tagCategory}/${material}`;
-            
+
             if (Item.exists(itemId)) {
                 event.add(generictag, itemId);
                 event.add(specifictag, itemId);
@@ -488,7 +457,7 @@ ServerEvents.tags('item', event => {
             const tagCategory = 'wires';
             const generictag = `c:${tagCategory}`;
             const specifictag = `c:${tagCategory}/${material}`;
-            
+
             if (Item.exists(itemId)) {
                 event.add(generictag, itemId);
                 event.add(specifictag, itemId);
@@ -500,7 +469,7 @@ ServerEvents.tags('item', event => {
         const itemId = `modern_industrialization:deepslate_${material}_ore`;
         const generictag = `c:ores`;
         const specifictag = `c:ores/${material}`;
-        
+
         if (Item.exists(itemId)) {
             event.add(generictag, itemId);
             event.add(specifictag, itemId);
@@ -511,7 +480,7 @@ ServerEvents.tags('item', event => {
         const itemId = `modern_industrialization:raw_${material}`;
         const generictag = `c:raw_materials`;
         const specifictag = `c:raw_materials/${material}`;
-        
+
         if (Item.exists(itemId)) {
             event.add(generictag, itemId);
             event.add(specifictag, itemId);
@@ -522,7 +491,7 @@ ServerEvents.tags('item', event => {
         const itemId = `modern_industrialization:${material}_block`;
         const generictag = `c:storage_blocks`;
         const specifictag = `c:storage_blocks/${material}`;
-        
+
         if (Item.exists(itemId)) {
             event.add(generictag, itemId);
             event.add(specifictag, itemId);
@@ -533,7 +502,7 @@ ServerEvents.tags('item', event => {
         const itemId = `modern_industrialization:raw_${material}_block`;
         const generictag = `c:storage_blocks`;
         const specifictag = `c:storage_blocks/raw_${material}`;
-        
+
         if (Item.exists(itemId)) {
             event.add(generictag, itemId);
             event.add(specifictag, itemId);
@@ -550,7 +519,7 @@ ServerEvents.tags('item', event => {
         const itemId = `modern_industrialization:${gem}`;
         const generictag = `c:gems`;
         const specifictag = `c:gems/${gem}`;
-        
+
         if (Item.exists(itemId)) {
             event.add(generictag, itemId);
             event.add(specifictag, itemId);
@@ -563,7 +532,7 @@ ServerEvents.tags('item', event => {
             const tagCategory = part.slice(1) + 's';
             const generictag = `c:${tagCategory}`;
             const specifictag = `c:${tagCategory}/${material}`;
-            
+
             if (Item.exists(itemId)) {
                 event.add(generictag, itemId);
                 event.add(specifictag, itemId);
@@ -571,11 +540,11 @@ ServerEvents.tags('item', event => {
         });
     });
 
-    
+
 })
 
 EntityEvents.spawned('nomansland:goose', event => {
 
-    if(Math.random() > 0.02) return;
+    if (Math.random() > 0.02) return;
     event.entity.setCustomName('Neurotic Goose');
 });

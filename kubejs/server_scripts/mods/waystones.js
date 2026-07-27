@@ -4,9 +4,9 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:waystones/${id}`;
-    
+
     // -- WAYSTONES REMOVED RECIPES -- //
     const WAYSTONE_REMOVED_RECIPES = [
         wy('warp_stone'),
@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         wy('warp_dust'),
         wy('warp_plate')
     ];
-    WAYSTONE_REMOVED_RECIPES.forEach(id => event.remove({id: id}));
+    WAYSTONE_REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
     // -- WARP STONE -- //
     event.custom({
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         ],
         finish_crafting_effect: 'lightning_on_shrine'
     })
-    .id(st('warp_stone'));
+        .id(st('warp_stone'));
 
     // -- WARP PLATE -- //
     event.custom({
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         },
         required_advancement: sp('build_basic_pedestal_structure')
     })
-    .id(st('warp_plate'));
+        .id(st('warp_plate'));
 
     // -- RETURN SCROLL -- //
     event.custom({
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
         },
         required_advancement: sp('build_basic_pedestal_structure')
     })
-    .id(st('return_scroll'));
+        .id(st('return_scroll'));
 
     // -- BOUND SCROLL -- //
     event.custom({
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
         },
         required_advancement: sp('build_basic_pedestal_structure')
     })
-    .id(st('bound_scroll'));
+        .id(st('bound_scroll'));
 
     // -- WARP SCROLL -- //
     event.custom({
@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
         },
         required_advancement: sp('build_basic_pedestal_structure')
     })
-    .id(st('warp_scroll'));
+        .id(st('warp_scroll'));
 
     // -- WARP DUST -- //
     event.custom({
@@ -193,5 +193,5 @@ ServerEvents.recipes(event => {
         },
         required_advancement: sp('build_basic_pedestal_structure')
     })
-    .id(st('warp_dust')); 
+        .id(st('warp_dust'));
 });

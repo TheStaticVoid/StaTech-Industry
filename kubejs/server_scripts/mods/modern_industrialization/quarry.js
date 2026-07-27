@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/quarry/${id}`;
 
     // -- QUARRY REMOVED RECIPES -- //
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
         4,
         600,
         [ { amount: 1, item: mi('zinc_drill'), probability: 0.1 } ],
-        [ 
+        [
             { amount: 1, item: cr('zinc_ore'), probability: 0.5 },
             { amount: 16, item: mc('andesite'), probability: 0.7 },
             { amount: 16, item: cr('asurine'), probability: 0.4 },

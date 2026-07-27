@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/singularity_forge/${id}`;
 
     // -- SINGULARITY -- //
@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         st('singularity'),
         8192,
         1200,
-        [ 
+        [
             { amount: 64, item: mi('nuke') },
             { amount: 1, item: mi('ultradense_metal_ball') }
         ],

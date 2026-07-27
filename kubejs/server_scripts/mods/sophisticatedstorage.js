@@ -3,9 +3,9 @@
 // STATECH INDUSTRY UNOFFICIAL
 // -----------------------------------------
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:sophisticatedstorage${id}`;
- 
+
     const SOPH_DELETED = [
         ss('stack_upgrade_omega_tier'),
         ss('storage_stack_upgrade_omega_tier_from_backpack_stack_upgrade_omega_tier'),
@@ -26,50 +26,48 @@ ServerEvents.recipes(event => {
         ss('feeding_upgrade'),
         ss('backpack_feeding_upgrade_from_storage_feeding_upgrade')
     ];
-    SOPH_DELETED.forEach(id => event.remove({ id: id })); 
+    SOPH_DELETED.forEach(id => event.remove({ id: id }));
 
     // REPLACE ENDER PEARL WITH TRASH CAN //
     event.replaceInput(
         { output: ss('void_upgrade') },
-        'minecraft:ender_pearl', 
-        mi('trash_can')         
+        'minecraft:ender_pearl',
+        mi('trash_can')
     );
 
     // REPLACE IRON INGOT WITH IRON PLATE //
     event.replaceInput(
         { input: ss('upgrade_base') },
-        'minecraft:iron_ingot', 
-        mi('iron_plate')         
+        'minecraft:iron_ingot',
+        mi('iron_plate')
     );
 
     // -- MAGNET UPGRADE -- //
     event.shaped(ss('magnet_upgrade'), [
         'D',
         'M'
-    ],
-    {
+    ], {
         D: ss('pickup_upgrade'),
         M: sm('basicmagnet')
     })
-    .id(st('magnet_upgrade')); 
+        .id(st('magnet_upgrade'));
 
     // -- ADVANCED MAGNET UPGRADE -- //
     event.shaped(ss('advanced_magnet_upgrade'), [
         'D',
         'M'
-    ],
-    {
+    ], {
         D: ss('magnet_upgrade'),
         M: sm('advancedmagnet')
     })
-    .id(st('advanced_magnet_upgrade')); 
+        .id(st('advanced_magnet_upgrade'));
 
     // Adapted from Monifactory scripts, see https://github.com/ThePansmith/Monifactory/blob/main/kubejs/server_scripts/mods/Sophisticated_Storagevent.js
 
     // Remove Limited barrels
     event.remove({ id: /^sophisticatedstorage:.*limited.+barrel.+$/ })
     event.remove({ output: /^sophisticatedstorage:limited_barrel.+$/ })
-    
+
     const sophStorageMaterials = [
         ['', null, null],
         ['copper_', 'copper'],
@@ -142,7 +140,7 @@ ServerEvents.recipes(event => {
 
     containerUpgrades.forEach(upgradeId => {
         upgradeMaterials.forEach(material => {
-            const inputItem = material === 'diamond' 
+            const inputItem = material === 'diamond'
                 ? 'minecraft:diamond'
                 : mc(`${material}_ingot`)
 
@@ -156,5 +154,3 @@ ServerEvents.recipes(event => {
         });
     });
 })
-
-

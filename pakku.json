@@ -1,0 +1,174 @@
+{
+    "name": "StaTech Industry",
+    "version": "2.0.1",
+    "release_type": "release",
+    "description": "",
+    "author": "Static Void, Purple Dino, & GronkDev",
+    "overrides": [
+        "config",
+        "defaultconfigs",
+        "kubejs",
+        "!kubejs/probe/**"
+    ],
+    "server_overrides": [
+        "!kubejs/assets",
+        "forge-auto-install.txt",
+        "generate_auto_installation_file.bat",
+        "minecraft_server.jar",
+        "server.properties",
+        "server_starter.conf",
+        "server-icon.png",
+        "start_server.bat",
+        "README.md"
+    ],
+    "client_overrides": [
+        "resourcepacks"
+    ],
+    "projects": {
+        "advancement-plaques": {
+            "side": "CLIENT"
+        },
+        "athena": {
+            "side": "CLIENT"
+        },
+        "better-advancements": {
+            "side": "CLIENT"
+        },
+        "better-modlist-neoforge": {
+            "side": "CLIENT"
+        },
+        "certain-questing-additions": {
+            "side": "CLIENT"
+        },
+        "chat-heads": {
+            "side": "CLIENT"
+        },
+        "chloride": {
+            "side": "CLIENT"
+        },
+        "client-tweaks": {
+            "side": "CLIENT"
+        },
+        "colorful-hearts": {
+            "side": "CLIENT"
+        },
+        "controlling": {
+            "side": "CLIENT"
+        },
+        "ctm": {
+            "side": "CLIENT"
+        },
+        "drippy-loading-screen": {
+            "side": "CLIENT"
+        },
+        "default-options": {
+            "side": "CLIENT"
+        },
+        "entity-model-features": {
+            "side": "CLIENT"
+        },
+        "entity-texture-features-fabric": {
+            "side": "CLIENT"
+        },
+        "equipment-compare": {
+            "side": "CLIENT"
+        },
+        "euphoria-patches": {
+            "side": "CLIENT"
+        },
+        "eval": {
+            "side": "CLIENT"
+        },
+        "extreme-sound-muffler": {
+            "side": "CLIENT"
+        },
+        "fancymenu": {
+            "side": "CLIENT"
+        },
+        "faster-ladder-climbing": {
+            "side": "CLIENT"
+        },
+        "flickerfix": {
+            "side": "CLIENT"
+        },
+        "fps-reducer": {
+            "side": "CLIENT"
+        },
+        "fusion": {
+            "side": "CLIENT"
+        },
+        "gnetum": {
+            "side": "CLIENT"
+        },
+        "inventory-hud-forge": {
+            "side": "CLIENT"
+        },
+        "lambdynamiclights": {
+            "side": "CLIENT"
+        },
+        "legendary-tooltips": {
+            "side": "CLIENT"
+        },
+        "modernworldcreation": {
+            "side": "CLIENT"
+        },
+        "modlistmemory": {
+            "side": "CLIENT"
+        },
+        "not-enough-animations": {
+            "side": "CLIENT"
+        },
+        "notenoughrecipebook": {
+            "side": "CLIENT"
+        },
+        "overloaded-armor-bar": {
+            "side": "CLIENT"
+        },
+        "paperdoll": {
+            "side": "CLIENT"
+        },
+        "playeranimator": {
+            "side": "CLIENT"
+        },
+        "raised": {
+            "side": "CLIENT"
+        },
+        "reeses-sodium-options": {
+            "side": "CLIENT"
+        },
+        "searchables": {
+            "side": "CLIENT"
+        },
+        "stellarview": {
+            "side": "CLIENT"
+        },
+        "smithing-template-viewer": {
+            "side": "CLIENT"
+        },
+        "skin-layers-3d": {
+            "side": "CLIENT"
+        },
+        "sodium": {
+            "side": "CLIENT"
+        },
+        "tips": {
+            "side": "CLIENT"
+        },
+        "tipthescales": {
+            "side": "CLIENT"
+        },
+        "tmrv": {
+            "side": "CLIENT"
+        },
+        "waveycapes": {
+            "side": "CLIENT"
+        },
+        "zume": {
+            "side": "CLIENT"
+        },
+        "probejs": {
+            "side": "CLIENT",
+            "export": false
+        }
+    }
+}

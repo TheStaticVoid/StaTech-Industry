@@ -4,10 +4,11 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/greenhouse/${id}`;
 
     // This is all the saplings in the game with their corresponding logs and leaves
+    /* eslint-disable */
     const saplingLogList = [    
         // Sapling                              Log                             Leaves                                  Fluid
         [ mc('oak_sapling'),                    mc('oak_log'),                  mc('oak_leaves'),                       mc('water') ],
@@ -50,6 +51,7 @@ ServerEvents.recipes(event => {
         [ sp('gray_sapling'),                   sp('gray_log'),                 sp('gray_leaves'),                      mc('water') ],
         [ sp('light_gray_sapling'),             sp('light_gray_log'),           sp('light_gray_leaves'),                mc('water') ]
     ]
+     /* eslint-enable */
 
     // For every sapling, add a regular and bone meal variant of the recipe
     saplingLogList.forEach( woodType => {
@@ -61,8 +63,8 @@ ServerEvents.recipes(event => {
 
         // Fixes duplicate ID issue between the two palm logs
         // if (log.split(':')[1] == 'palm_log' && log.split(':')[0] == 'byg')
-            // id += '_byg';
-            
+        // id += '_byg';
+
         greenhouse(
             event,
             st(id),
@@ -115,8 +117,8 @@ ServerEvents.recipes(event => {
 
         // Fixes duplicate ID issue between the two palm logs
         // if (log.split(':')[1] == 'palm_log' && log.split(':')[0] == 'byg')
-            // id += '_byg';
-            
+        // id += '_byg';
+
         greenhouse(
             event,
             st(id),

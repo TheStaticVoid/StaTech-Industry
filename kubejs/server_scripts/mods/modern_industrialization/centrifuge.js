@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/centrifuge/${id}`;
 
     // -- CENTRIFUGE REMOVED RECIPES -- //
@@ -96,19 +96,19 @@ ServerEvents.recipes(event => {
 
     // -- REDSTONE -- //
     // centrifuge(
-        // st('moon_sand'),
-        // 32,
-        // 4000,
-        // [ { amount: 16, item: ad('moon_sand') } ],
-        // [
-            // { amount: 12, item: mc('sand') },
-            // { amount: 1, item: mi('tungsten_tiny_dust') }
-        // ],
-        // null,
-        // [
-            // { amount: 100, fluid: mi('helium') },
-            // { amount: 1, fluid: mi('helium_3') }
-        // ]
+    // st('moon_sand'),
+    // 32,
+    // 4000,
+    // [ { amount: 16, item: ad('moon_sand') } ],
+    // [
+    // { amount: 12, item: mc('sand') },
+    // { amount: 1, item: mi('tungsten_tiny_dust') }
+    // ],
+    // null,
+    // [
+    // { amount: 100, fluid: mi('helium') },
+    // { amount: 1, fluid: mi('helium_3') }
+    // ]
     // );
 
     // -- DARK ASHES -- //

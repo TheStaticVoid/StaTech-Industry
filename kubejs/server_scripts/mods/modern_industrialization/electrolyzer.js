@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/electrolyzer/${id}`;
 
     // -- ELECTROLYZER REMOVED RECIPES -- //
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         null,
         null,
         [ { amount: 8000, fluid: mi('brine') } ],
-        [ 
+        [
             { amount: 2000, fluid: mi('chlorine') },
             { amount: 2000, fluid: mi('hydrogen') },
             { amount: 3000, fluid: mi('sodium_hydroxide') },
@@ -139,12 +139,12 @@ ServerEvents.recipes(event => {
         16,
         600,
         [ { amount: 9, tag: 'c:dusts/kernite' } ],
-        [ 
+        [
             { amount: 2, item: mi('sodium_dust') },
             { amount: 4, item: mi('boron_trioxide_dust') }
         ],
         null,
-        [ 
+        [
             { amount: 200, fluid: mc('water') }
         ]
     );
@@ -156,10 +156,10 @@ ServerEvents.recipes(event => {
         16,
         400,
         null,
-        [ 
+        [
             { amount: 1, item: mi('sulfur_dust') },
             { amount: 1, item: mi('aluminum_dust') },
-            { amount: 3, item: mi('silicon_dust') } 
+            { amount: 3, item: mi('silicon_dust') }
         ],
         [ { amount: 4500, fluid: mi('waste_beryl_ammonia_solution') } ],
         [
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: mi('lithium_fluoride_dust') } ],
         null,
         null,
-        [ 
+        [
             { amount: 1000, fluid: mi('lithium') },
             { amount: 1000, fluid: mi('fluorine') },
         ]

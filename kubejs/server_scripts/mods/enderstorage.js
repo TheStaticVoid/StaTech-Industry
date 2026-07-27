@@ -13,15 +13,14 @@ ServerEvents.recipes(event => {
         es('ender_tank'),
         es('ender_pouch')
     ];
-    ENDERSTORAGE_REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
+    ENDERSTORAGE_REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
     // -- ENDER CHEST -- //
     event.shaped(es('ender_chest'), [
         'BWB',
         'OCO',
         'BEB'
-    ], 
-    {
+    ], {
         B: mc('blaze_rod'),
         W: '#c:wools/white',
         O: mc('obsidian'),
@@ -34,8 +33,7 @@ ServerEvents.recipes(event => {
         'BWB',
         'OTO',
         'BEB'
-    ],
-    {
+    ], {
         B: mc('blaze_rod'),
         W: '#c:wools/white',
         O: mc('obsidian'),
@@ -48,8 +46,7 @@ ServerEvents.recipes(event => {
         'BLB',
         'LEL',
         'BCB'
-    ],
-    {
+    ], {
         B: mc('blaze_powder'),
         L: mc('leather'),
         E: mc('ender_eye'),

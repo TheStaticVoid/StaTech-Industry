@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:minecraft/${id}`;
 
     // -- REMOVED RECIPES -- //
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         mc('chain'),
         mc('amethyst_block')
     ];
-    VANILLA_DELETED.forEach(id => event.remove( {id : id} ));
+    VANILLA_DELETED.forEach(id => event.remove({ id: id }));
 
     const ALT_METALS = [
         'lead',
@@ -36,56 +36,51 @@ ServerEvents.recipes(event => {
         ' S ',
         'L L',
         ' L '
-    ],
-    {
+    ], {
         S: '#c:strings',
         L: '#c:leathers'
     })
-    .id(st('bundle'));
+        .id(st('bundle'));
 
     // -- PISTON -- //
     event.shaped(mc('piston'), [
         'WWW',
         'CIC',
         'CRC'
-    ],
-    {
+    ], {
         W: '#minecraft:wooden_slabs',
         C: '#minecraft:stone_tool_materials',
         I: '#c:rods/iron',
         R: '#c:dusts/redstone'
     })
-    .id(st('piston'));
+        .id(st('piston'));
 
     // -- IRON BARS -- //
     event.shaped('16x ' + mc('iron_bars'), [
         'RRR',
         'RRR'
-    ],
-    {
+    ], {
         R: '#c:rods/iron'
     })
-    .id(st('iron_bars'));
+        .id(st('iron_bars'));
 
     // -- BUCKET -- //
     event.shaped(mc('bucket'), [
         'P P',
         ' P '
-    ],
-    {
+    ], {
         P: '#c:plates/iron'
     })
-    .id(st('bucket'));
+        .id(st('bucket'));
 
     event.shaped('16x ' + mc('stick'), [
         'L',
         'L'
-    ],
-    {
+    ], {
         L: '#minecraft:logs'
     })
-    .id(st('sticks_from_log'));
-/* 
+        .id(st('sticks_from_log'));
+    /*
     // -- BUCKET ALT METALS -- //
     ALT_METALS.forEach(id => {
         event.shaped(mc('bucket'), [ 'P P', ' P '], { P: `#c:${id}_plates` }).id(st(`bucket_${id}`));
@@ -131,49 +126,45 @@ ServerEvents.recipes(event => {
         ' R ',
         'RGR',
         ' R '
-    ],
-    {
+    ], {
         R: mc('redstone'),
         G: mi('gold_ring')
     })
-    .id(st('clock'));
+        .id(st('clock'));
 
     // -- COMPASS -- //
     event.shaped(mc('compass'), [
         ' R ',
         'ROR',
         ' R '
-    ],
-    {
+    ], {
         R: mc('redstone'),
         O: mi('iron_ring')
     })
-    .id(st('compass'));
-    
+        .id(st('compass'));
+
     // -- CHAINS -- //
     event.shaped('8x ' + mc('chain'), [
         'O',
         'O',
         'O'
-    ], 
-    {
+    ], {
         O: mi('iron_ring')
     })
-    .id(st('chain'));
+        .id(st('chain'));
 
     event.shaped(mc('amethyst_block'), [
         'AAA',
         'AAA',
         'AAA'
-    ],
-    {
+    ], {
         A: mc('amethyst_shard')
     })
-    .id(st('amethyst_block'));
+        .id(st('amethyst_block'));
 });
 
 ServerEvents.tags('item', event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let mc = (id) => `minecraft:${id}`;
 
     const HORSE_ARMORS = [
@@ -182,7 +173,7 @@ ServerEvents.tags('item', event => {
         mc('golden_horse_armor'),
         mc('diamond_horse_armor')
     ];
-    HORSE_ARMORS.forEach(id => { event.add('kubejs:horse_armors', id) } );
+    HORSE_ARMORS.forEach(id => { event.add('kubejs:horse_armors', id) });
 
     // Removed to fix dupe
     event.remove('c:copper_blocks', mc('cut_copper'));

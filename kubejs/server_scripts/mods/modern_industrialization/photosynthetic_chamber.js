@@ -4,9 +4,9 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/photosynthetic_chamber/${id}`;
-    
+
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let photoChamber = (id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
         let newRecipe = {
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
             duration: duration
         }
 
-        if (item_inputs)    
+        if (item_inputs)
             newRecipe['item_inputs'] = item_inputs;
         if (item_outputs)
             newRecipe['item_outputs'] = item_outputs;
@@ -287,7 +287,7 @@ ServerEvents.recipes(event => {
             8,
             600,
             [ { amount: 1, item: recipe.id, probability: 0.0 } ],
-            [ 
+            [
                 { amount: 1, item: recipe.id },
                 { amount: 1, item: recipe.id, probability: 0.5 },
             ],
@@ -296,13 +296,13 @@ ServerEvents.recipes(event => {
     });
 
     // These use a different fluid and are omitted from the original list
-    // -- NETHER WART -- // 
+    // -- NETHER WART -- //
     photoChamber(
         st('minecraft_nether_wart'),
         8,
         600,
         [ { amount: 1, item: mc('nether_wart'), probability: 0.0 } ],
-        [ 
+        [
             { amount: 1, item: mc('nether_wart') },
             { amount: 1, item: mc('nether_wart'), probability: 0.5 }
         ],
@@ -315,7 +315,7 @@ ServerEvents.recipes(event => {
         8,
         600,
         [ { amount: 1, item: mc('chorus_flower'), probability: 0.0 } ],
-        [ 
+        [
             { amount: 1, item: mc('chorus_fruit') },
             { amount: 1, item: mc('chorus_fruit'), probability: 0.5 },
             { amount: 1, item: mc('chorus_flower'), probability: 0.5 }

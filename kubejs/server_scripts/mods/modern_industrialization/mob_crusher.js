@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/mob_crusher/${id}`;
 
     // Idk why I did it like this, but w/e
@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         // 0 = model, 1 = outputs, 2 = fluid
 
         // Zombie model
-        [ 
+        [
             kj('zombie_model'),
             [
                 { amount: 1, item: mc('rotten_flesh') },
@@ -129,7 +129,7 @@ ServerEvents.recipes(event => {
             ],
             mc('lava')
         ],
-        
+
         // Zombie Piglin model
         [
             kj('zombie_piglin_model'),
@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
             ],
             mc('lava')
         ],
-        
+
         // Blaze model
         [
             kj('blaze_model'),
@@ -161,7 +161,7 @@ ServerEvents.recipes(event => {
             ],
             mc('lava')
         ],
-        
+
         // Wither Skeleton model
         [
             kj('wither_skeleton_model'),
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
             [ { amount: 150, fluid: fluid } ]
         );
     });
-    
+
     // These are defined separately due to non-conformant liquid requirements
     // -- ENDERMAN MODEL -- //
     crusher(
@@ -278,5 +278,5 @@ ServerEvents.recipes(event => {
         [ { amount: 100, fluid: mi('liquid_ender') } ],
         [ { amount: 75, fluid: mi('liquid_ender') } ]
     );
-    
+
 });

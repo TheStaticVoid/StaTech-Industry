@@ -24,12 +24,12 @@ MIMachineEvents.registerMachines(event => {
     const crusherHatch = event.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input', 'fluid_output');
 
     const bossCrusherShape = event.layeredShape('clean_stainless_steel_machine_casing', [
-        //y= 0        1        2        3        4
-        [ ' ppp ', ' GGG ', ' GGG ', ' GGG ', ' ppp ' ], 
-        [ 'pPPPp', 'GKWKG', 'GWgWG', 'GKWKG', 'pPPPp' ],
-        [ 'pPPPp', 'GWWWG', 'GgggG', 'GWWWG', 'pPPPp' ],
-        [ 'pPPPp', 'GKWKG', 'GWgWG', 'GKWKG', 'pPPPp' ],
-        [ ' p#p ', ' GGG ', ' GGG ', ' GGG ', ' ppp ' ]
+        // y= 0        1        2        3        4
+        [' ppp ', ' GGG ', ' GGG ', ' GGG ', ' ppp '],
+        ['pPPPp', 'GKWKG', 'GWgWG', 'GKWKG', 'pPPPp'],
+        ['pPPPp', 'GWWWG', 'GgggG', 'GWWWG', 'pPPPp'],
+        ['pPPPp', 'GKWKG', 'GWgWG', 'GKWKG', 'pPPPp'],
+        [' p#p ', ' GGG ', ' GGG ', ' GGG ', ' ppp ']
     ])
         .key('P', cleanStainlessSteelMachineCasing, event.noHatch())
         .key('p', cleanStainlessSteelMachineCasing, crusherHatch)
@@ -40,7 +40,7 @@ MIMachineEvents.registerMachines(event => {
         // .key('g', glowingSteelPillar, event.noHatch())
         .key('g', roseQuartzLamp, event.noHatch())
         .build();
-    
+
     event.simpleElectricCraftingMultiBlock(
         // General parameters
         'Boss Crusher',          // English name
@@ -51,7 +51,7 @@ MIMachineEvents.registerMachines(event => {
         // REI Display configuration
         event.progressBar(77, 33, 'macerate'),
         // REI Item inputs, item outputs, fluid inputs, fluid outputs
-        itemInputs => itemInputs.addSlot(56, 35), 
+        itemInputs => itemInputs.addSlot(56, 35),
         itemOutputs => itemOutputs.addSlots(102, 35, 3, 2),
         fluidInputs => fluidInputs.addSlot(56, 53),
         fluidOutputs => fluidOutputs.addSlot(120, 71),

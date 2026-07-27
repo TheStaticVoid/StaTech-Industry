@@ -4,13 +4,13 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/pyrolyse_oven/${id}`;
 
-    const REMOVED_RECIPE = [    
+    const REMOVED_RECIPE = [
         io('pyrolyse_oven/charcoal_from_logs')
     ];
-    REMOVED_RECIPE.forEach(id => event.remove({id: id}));    
+    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
 
     // -- LOGS TO CHARCOAL + WOOD TAR -- //
     pyrolyseOven(

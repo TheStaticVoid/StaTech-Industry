@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/packer/${id}`;
 
     // -- PACKER REMOVED RECIPES -- //
@@ -156,7 +156,7 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('rubber_sheet') }
         ],
         [ { amount: 4, item: md('hv_cable') } ]
-    ); 
+    );
 
     // -- MV EU CABLE -- //
     packer(
@@ -169,7 +169,7 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('rubber_sheet') }
         ],
         [ { amount: 4, item: md('mv_cable') } ]
-    ); 
+    );
 
     // -- LV EU CABLE -- //
     packer(
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('rubber_sheet') }
         ],
         [ { amount: 4, item: md('lv_cable') } ]
-    );    
+    );
 
     // -- CHAIN -- //
     packer(
@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
         st('brass_ingot_to_block'),
         2,
         200,
-        [ 
+        [
             { amount: 9, item: cr('brass_ingot') },
             { amount: 1, item: mi('packer_block_template'), probability: 0.0 }
         ],

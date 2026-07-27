@@ -8,14 +8,14 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('fluid', event => {
-    event.add('kubejs:pentaborane', mi('pentaborane')) 
+    event.add('kubejs:pentaborane', mi('pentaborane'))
 });
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:createaddition/${id}`;
 
-    event.remove({type: ca('rolling')})
+    event.remove({ type: ca('rolling') })
 
     event.replaceInput({ input: ca('capacitor') },
         ca('capacitor'),
@@ -56,15 +56,15 @@ ServerEvents.recipes(event => {
         ca('liquid_burning/crude_oil'),
         ca('liquid_burning/lava'),
     ];
-    CREATEADDITION_DELETED_ITEMS.forEach(id => event.remove( {id: id} ));
+    CREATEADDITION_DELETED_ITEMS.forEach(id => event.remove({ id: id }));
 
     // -- FESTIVE SPOOL -- //
     event.shapeless(Item.of(ca('festive_spool')),
-    [
-        ca('copper_spool'),
-        mc('glowstone_dust'),
-        mc('redstone')
-    ]).id(st('festive_spool'));
+        [
+            ca('copper_spool'),
+            mc('glowstone_dust'),
+            mc('redstone')
+        ]).id(st('festive_spool'));
 
     // -- ELECTRIC MOTOR -- //
     event.custom({
@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
         }],
         results: [],
     }).id('lava_liquid_burning');
-    
+
     // -- BENZENE LIQUID BURNING -- //
     event.custom({
         type: ca('liquid_burning'),

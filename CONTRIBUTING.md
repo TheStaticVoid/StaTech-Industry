@@ -1,6 +1,23 @@
 # Contribution Guidelines
 Hello. Thank you for taking an interest in making StaTech Industry a better modpack. As the pack grows, and others have shown interest in helping, I figured it would be best to lay down my design philosophies and what I look for in any addition to the pack.
 
+## Setting Up Your Dev Environment
+Clone your fork of the repository into an empty [`(instancename)\minecraft`](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) folder, and copy the contents of `(instancename)\minecraft\.pakku\prism-overrides` into your `(instancename)` folder to have a working Prism Instance. 
+Once your Prism Instance is in place, grab the [most recently released version of `pakku.jar`](https://github.com/juraj-hrivnak/Pakku/releases), and put it in the `(instancename)/minecraft` directory.
+From there, you can start your newly created instance and the mods will be downloaded for you.[^1]
+
+#### Modloader Sync
+   Those wanting to also automatically sync the modloader version should replace the [prelaunch command](https://github.com/user-attachments/assets/494a632d-1af4-453d-9329-5454ac3d22da) with one of the below commands instead.
+
+  Windows:
+  ```cmd
+  cmd /c "java -jar pakku.jar fetch && copy /Y "$INST_MC_DIR\.pakku\prism-overrides\mmc-pack.json" "$INST_DIR\mmc-pack.json"
+  ```
+  Linux and MacOS
+  ```bash
+  java -jar pakku.jar fetch && cp -f "$INST_MC_DIR/.pakku/prism-overrides/mmc-pack.json" "$INST_DIR/mmc-pack.json"
+  ```
+
 ## Code Consistency
 Any KubeJS added code must follow the existing formatting. Please note, that I may change how I format things in the future, but in general, it will look how it is currently.
 Scripts are split based on their purpose. For Server Scripts, they are split based on the origin mod that is being modified. For example, if you're adding a new shaped/shapeless recipe for an item from Create, you would do so in `create.js`. If you're adding a new custom recipe that uses a Create mechanical fan as the type, then it would also go in the `create.js` file.
@@ -28,3 +45,14 @@ Changes to existing configs should only be done to:
 1. Improve the pack by addressing any issues or adding missing features.
 2. Improve the balancing in the pack
 3. Improve the end-user experience
+
+## Making New Releases
+* To initate a release, update `CHANGELOG.MD` with a new version, [Unreleased] can be used as a staging ground for changes.
+   * [Unreleased] changes are included in the changelog for builds created from the dev branch.
+* Release type, overrides, and otherwise can be set in pakku.json
+* Give the workflow read/write permissions
+
+## Building a server pack locally
+Server packs rely on [Forge-Server-Starter](https://github.com/HellBz/Forge-Server-Starter/) which is not included in this repo. To include it when exporting serverpacks, place the [latest released jar](https://github.com/HellBz/Forge-Server-Starter/releases/latest/download/minecraft_server.jar) inside of `.pakku/server-overrides/`
+
+[^1]: Modrinth buildscripts are disabled by default, as most pack developers do not plan on releasing to modrinth due to important mods not being present, but can be easily uncommented if you do. If so, also add a `MODRINTH_TOKEN` and `MODRINTH_ID` secret and variable.

@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     // REPLACE ENDER PEARL WITH PISTON //
     event.replaceInput(
         { mod: 'elevatorid' },
-        'minecraft:ender_pearl', 
-        'minecraft:piston'         
+        'minecraft:ender_pearl',
+        'minecraft:piston'
     );
 })

@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/macerator/${id}`;
 
     // -- WHEAT DOUGH -- //
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
         8,
         100,
         [ { amount: 1, item: mc('calcite') } ],
-        [ { amount: 2, item: mi('calcite_dust') } ]   
+        [ { amount: 2, item: mi('calcite_dust') } ]
     );
 
     // -- OBSIDIAN -- //
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
         [ { amount: 4, item: mi('stone_dust') } ]
     );
 
-       // -- TUFF DUST -- //
+    // -- TUFF DUST -- //
     macerator(
         event,
         st('tuff_dust'),
@@ -147,7 +147,7 @@ ServerEvents.recipes(event => {
         200,
         [ { amount: 1, item: sp('quitoxic_reeds') } ],
         [ { amount: 2, item: sp('quitoxic_powder') } ]
-    ); 
+    );
 
     // -- INCANDESCENT ESSENCE -- //
     macerator(
@@ -186,7 +186,7 @@ ServerEvents.recipes(event => {
         2,
         200,
         [ { amount: 1, item: cr('veridium') } ],
-        [ 
+        [
             { amount: 1, item: mi('copper_dust') },
             { amount: 1, item: mi('copper_dust'), probability: 0.5 }
         ]
@@ -199,11 +199,11 @@ ServerEvents.recipes(event => {
         2,
         200,
         [ { amount: 1, item: cr('asurine') } ],
-        [ 
+        [
             { amount: 1, item: mi('zinc_dust') },
             { amount: 1, item: mi('zinc_dust'), probability: 0.5 }
         ]
-    ); 
+    );
 
     // -- GOLD DUST FROM OCHRUM -- //
     macerator(
@@ -254,7 +254,7 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: ea('entro_dust') } ]
     );
 
-     const COLORS = [
+    const COLORS = [
         'orange',
         'magenta',
         'light_blue',
@@ -298,11 +298,11 @@ ServerEvents.recipes(event => {
                 { amount: 1, item: sp(`${color}_sapling`), probability: 0.1 }
             ]
         );
-    }); 
-    
-    
+    });
+
+
     // -- CERTUS QUARTZ FROM BUDS AND CLUSTER
-     const CERTUS_DUST_DATA = [
+    const CERTUS_DUST_DATA = [
         { inputName: "small_quartz_bud", outputAmount: 2 },
         { inputName: "medium_quartz_bud", outputAmount: 2 },
         { inputName: "large_quartz_bud", outputAmount: 2 },
@@ -319,8 +319,8 @@ ServerEvents.recipes(event => {
             [ { amount: data.outputAmount, item: ae('certus_quartz_dust') } ]
         );
     });
-    
-     // -- SPECTRUM RESOURCE BUDS AND CLUSTERS
+
+    // -- SPECTRUM RESOURCE BUDS AND CLUSTERS
     const SPECTRUM_ONE = [
         { in: "coal", out: mc("coal") },
         { in: "iron", out: mi("iron_dust") },
@@ -334,14 +334,14 @@ ServerEvents.recipes(event => {
         { in: "netherite_scrap", out: mc("netherite_scrap") },
         { in: "echo", out: mc("echo_shard") },
         { in: "prismarine", out: mc("prismarine_crystals") }
-    ]; 
+    ];
 
-/*     const SPECTRUM_TWO = [
+    /*     const SPECTRUM_TWO = [
         { in: "certus_quartz", out: ae("certus_quartz_dust") },
         { in: "fluix", out: ae("fluix_dust")}
     ];
  */
-     let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput) => {
+    let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput) => {
         inputOutputNames.forEach(data => {
             let outName = data.out.slice(data.out.indexOf(':') + 1, data.out.length);
             macerator(
@@ -370,10 +370,10 @@ ServerEvents.recipes(event => {
             );
         });
     };
-    
-   //  output for [small bud, large bud, cluster]
+
+    //  output for [small bud, large bud, cluster]
 
     recipeForSpBudsAndClusters(SPECTRUM_ONE, [1,1,6]);
     recipeForSpBudsAndClusters([ {in: "bismuth", out: sp("bismuth_crystal") } ], [2,2,5]);
-    recipeForSpBudsAndClusters([ {in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);  
+    recipeForSpBudsAndClusters([ {in: "glowstone", out: mc("glowstone_dust") } ], [1,1,12]);
 });

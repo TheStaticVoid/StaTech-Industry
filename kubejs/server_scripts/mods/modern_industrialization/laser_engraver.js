@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/laser_engraver/${id}`;
 
     // -- STAR LOCATION TELEMETRY -- //
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         ],
         [ { amount: 1, item: kj('anomaly_location_telemetry') } ]
     );
-    
+
     // -- PRINTED SILICON -- //
     laserEngraver(
         event,
@@ -229,26 +229,26 @@ ServerEvents.recipes(event => {
     // -- CRUSHER MODELS -- //
     const modelItemList = [
         //  Model                           Item
-        [ kj('enderman_model'),         mc('ender_pearl') ],
-        [ kj('zombie_model'),           mc('rotten_flesh') ],
-        [ kj('skeleton_model'),         mc('bone') ],
-        [ kj('pig_model'),              mc('porkchop') ],
-        [ kj('sheep_model'),            mc('mutton') ],
-        [ kj('cow_model'),              mc('beef') ],
-        [ kj('chicken_model'),          mc('chicken') ],
-        [ kj('squid_model'),            mc('ink_sac') ],
-        [ kj('spider_model'),           mc('spider_eye') ],
-        [ kj('creeper_model'),          mc('gunpowder') ],
-        [ kj('slime_model'),            mc('slime_ball') ],
-        [ kj('ghast_model'),            mc('ghast_tear') ],
-        [ kj('zombie_piglin_model'),    mc('gold_nugget') ],
-        [ kj('magma_cube_model'),       mc('magma_cream') ],
-        [ kj('blaze_model'),            mc('blaze_rod') ],
-        [ kj('wither_skeleton_model'),  ws('fragment') ],
-        [ kj('guardian_model'),         mc('prismarine_shard') ],
-        [ kj('witch_model'),            mc('glass_bottle') ],
-        [ kj('rabbit_model'),           mc('rabbit') ],
-        [ kj('phantom_model'),          mc('phantom_membrane') ]
+        [ kj('enderman_model'), mc('ender_pearl') ],
+        [ kj('zombie_model'), mc('rotten_flesh') ],
+        [ kj('skeleton_model'), mc('bone') ],
+        [ kj('pig_model'), mc('porkchop') ],
+        [ kj('sheep_model'), mc('mutton') ],
+        [ kj('cow_model'), mc('beef') ],
+        [ kj('chicken_model'), mc('chicken') ],
+        [ kj('squid_model'), mc('ink_sac') ],
+        [ kj('spider_model'), mc('spider_eye') ],
+        [ kj('creeper_model'), mc('gunpowder') ],
+        [ kj('slime_model'), mc('slime_ball') ],
+        [ kj('ghast_model'), mc('ghast_tear') ],
+        [ kj('zombie_piglin_model'), mc('gold_nugget') ],
+        [ kj('magma_cube_model'), mc('magma_cream') ],
+        [ kj('blaze_model'), mc('blaze_rod') ],
+        [ kj('wither_skeleton_model'), ws('fragment') ],
+        [ kj('guardian_model'), mc('prismarine_shard') ],
+        [ kj('witch_model'), mc('glass_bottle') ],
+        [ kj('rabbit_model'), mc('rabbit') ],
+        [ kj('phantom_model'), mc('phantom_membrane') ]
     ];
     modelItemList.forEach(modelItem => {
         let model = modelItem[0];
@@ -258,7 +258,7 @@ ServerEvents.recipes(event => {
             st(model.split(':')[1]),
             32,
             200,
-            [ 
+            [
                 { amount: 1, item: ae('basic_card') },
                 { amount: 1, item: item }
             ],
@@ -269,9 +269,9 @@ ServerEvents.recipes(event => {
     // -- BOSS CRUSHER MODELS -- //
     const bossModelItemList = [
         //  Model                           Item        Amount
-        [ kj('wither_model'),  kj('withered_soc'),      1 ],
-        [ kj('dragon_model'),  yai('dragon_egg_siphon_catalyst'),       4 ],
-        [ kj('warden_model'),  mc('echo_shard'),        4 ]
+        [ kj('wither_model'), kj('withered_soc'), 1 ],
+        [ kj('dragon_model'), yai('dragon_egg_siphon_catalyst'), 4 ],
+        [ kj('warden_model'), mc('echo_shard'), 4 ]
     ];
     bossModelItemList.forEach(bossModelItem => {
         let bossModel = bossModelItem[0];
@@ -282,7 +282,7 @@ ServerEvents.recipes(event => {
             st(bossModel.split(':')[1]),
             32,
             200,
-            [ 
+            [
                 { amount: 1, item: ae('advanced_card') },
                 { amount: bossItemAmount, item: bossItem }
             ],

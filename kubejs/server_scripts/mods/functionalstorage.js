@@ -4,9 +4,9 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:functionalstorage/${id}`;
-    
+
     // -- FUNCTIONAL STORAGE REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         fs('copper_upgrade'),
@@ -35,58 +35,53 @@ ServerEvents.recipes(event => {
         fs('framed_fluid_1'),
         fs('framed_fluid_2'),
         fs('framed_fluid_4')
-    ]; 
-    REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
+    ];
+    REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
-    // -- ALUMINUM (COPPER) UPGRADE -- // 
+    // -- ALUMINUM (COPPER) UPGRADE -- //
     event.shaped(fs('copper_upgrade'), [
         'PDP'
-    ],
-    {
+    ], {
         D: '#functionalstorage:drawer',
         P: '#c:plates/aluminum'
     })
-    .id(st('aluminum_upgrade')); 
+        .id(st('aluminum_upgrade'));
 
-    // -- STAINLESS STEEL (GOLD) UPGRADE -- // 
+    // -- STAINLESS STEEL (GOLD) UPGRADE -- //
     event.shaped(fs('gold_upgrade'), [
         'PUP'
-    ],
-    {
+    ], {
         U: fs('copper_upgrade'),
         P: '#c:plates/stainless_steel'
     })
-    .id(st('stainless_steel_upgrade')); 
+        .id(st('stainless_steel_upgrade'));
 
-    // -- TITANIUM (DIAMOND) UPGRADE -- // 
+    // -- TITANIUM (DIAMOND) UPGRADE -- //
     event.shaped(fs('diamond_upgrade'), [
         'PUP'
-    ],
-    {
+    ], {
         U: fs('gold_upgrade'),
         P: '#c:plates/titanium'
     })
-    .id(st('titanium_upgrade')); 
+        .id(st('titanium_upgrade'));
 
-    // -- TUNGSTENSTEEL (NETHERITE) UPGRADE -- // 
+    // -- TUNGSTENSTEEL (NETHERITE) UPGRADE -- //
     event.shaped(fs('netherite_upgrade'), [
         'PUP'
-    ],
-    {
+    ], {
         U: fs('diamond_upgrade'),
         P: '#c:plates/tungstensteel'
     })
-    .id(st('tungstensteel_upgrade')); 
+        .id(st('tungstensteel_upgrade'));
 
-    // -- IRON DOWNGRADE -- // 
+    // -- IRON DOWNGRADE -- //
     event.shaped(fs('iron_downgrade'), [
         'PDP'
-    ],
-    {
+    ], {
         D: '#functionalstorage:drawer',
         P: '#c:plates/iron'
     })
-    .id(st('iron_downgrade')); 
+        .id(st('iron_downgrade'));
 
     // -- STORAGE CONTROLLER -- //
     event.replaceInput(
@@ -96,7 +91,7 @@ ServerEvents.recipes(event => {
     )
 
     event.replaceInput(
-        [{ output: fs('controller_extension')}, {output: fs('framed_controller_extension') }],
+        [{ output: fs('controller_extension') }, { output: fs('framed_controller_extension') }],
         mc('repeater'),
         mc('ender_eye')
     )

@@ -4,9 +4,9 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:sophisticatedbackpacks/${id}`;
-    
+
 
     const SOPH_DELETED = [
         sb('stack_upgrade_omega_tier'),
@@ -22,20 +22,20 @@ ServerEvents.recipes(event => {
         sb('tank_upgrade'),
         sb('upgrade_base')
     ];
-    SOPH_DELETED.forEach(id => event.remove({ id: id })); 
+    SOPH_DELETED.forEach(id => event.remove({ id: id }));
 
     // REPLACE ENDER PEARL WITH TRASH CAN //
     event.replaceInput(
         { output: sb('void_upgrade') },
-        'minecraft:ender_pearl', 
-        mi('trash_can')         
+        'minecraft:ender_pearl',
+        mi('trash_can')
     );
 
     // REPLACE IRON INGOT WITH IRON PLATE //
     event.replaceInput(
         { input: sb('upgrade_base') },
-        'minecraft:iron_ingot', 
-        mi('iron_plate')         
+        'minecraft:iron_ingot',
+        mi('iron_plate')
     );
 
     // -- UPGRADE BASE -- //
@@ -43,63 +43,58 @@ ServerEvents.recipes(event => {
         'SIS',
         'ILI',
         'SIS'
-    ],
-    {
+    ], {
         S: mc('string'),
         I: '#c:plates/bronze',
         L: mc('leather')
     })
-    .id(st('upgrade_base')); 
+        .id(st('upgrade_base'));
 
     // -- FEEDING UPGRADE -- //
     event.shaped(sb('feeding_upgrade'), [
         ' C ',
         'GDM',
         ' F '
-    ],
-    {
+    ], {
         C: mc('golden_carrot'),
         D: sb('upgrade_base'),
         M: mc('glistering_melon_slice'),
         G: mc('golden_apple'),
         F: ei('robot_auto_feeder')
     })
-    .id(st('feeding_upgrade')); 
+        .id(st('feeding_upgrade'));
 
     // -- MAGNET UPGRADE -- //
     event.shaped(sb('magnet_upgrade'), [
         'D',
         'M'
-    ],
-    {
+    ], {
         D: sb('pickup_upgrade'),
         M: sm('basicmagnet')
     })
-    .id(st('magnet_upgrade')); 
+        .id(st('magnet_upgrade'));
 
     // -- ADVANCED MAGNET UPGRADE -- //
     event.shaped(sb('advanced_magnet_upgrade'), [
         'D',
         'M'
-    ],
-    {
+    ], {
         D: sb('magnet_upgrade'),
         M: sm('advancedmagnet')
     })
-    .id(st('advanced_magnet_upgrade')); 
+        .id(st('advanced_magnet_upgrade'));
 
     // -- TANK UPGRADE -- //
     event.shaped(sb('tank_upgrade'), [
         ' T ',
         'RDR',
         ' R '
-    ],
-    {
+    ], {
         D: sb('upgrade_base'),
         T: mi('steel_tank'),
         R: mc('redstone')
     })
-    .id(st('tank_upgrade')); 
+        .id(st('tank_upgrade'));
 
     // Adapted from Monifactory scripts, see https://github.com/ThePansmith/Monifactory/blob/main/kubejs/server_scripts/mods/Sophisticated_Storagevent.js
 
@@ -142,4 +137,3 @@ ServerEvents.recipes(event => {
         }).id(st(`${material[0]}upgrade`));
     });
 })
-

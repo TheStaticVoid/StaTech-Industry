@@ -12,7 +12,7 @@ MIMachineEvents.registerRecipeTypes(event => {
 });
 
 MITweaksMachineEvents.registerBatchMultiblocks((event) => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
 
     const compactorHatch = event.hatchOf('item_input', 'item_output', 'energy_input');
     const steelPlatedBrick = event.memberOfBlock('extended_industrialization:steel_plated_bricks');
@@ -20,9 +20,9 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
     const borosilicateGlass = event.memberOfBlock('kubejs:borosilicate_glass');
     const Block = event.memberOfBlock('modern_industrialization:desh_block');
     const bulkcompactorShape = event.layeredShape('steel', [
-        [ 'bbb', ' B ', ' B ', ' b ' ],
-        [ 'bDb', 'P P', 'PDP', 'bbb' ],
-        [ 'b#b', ' G ', ' G ', ' b ' ]
+        ['bbb', ' B ', ' B ', ' b '],
+        ['bDb', 'P P', 'PDP', 'bbb'],
+        ['b#b', ' G ', ' G ', ' b ']
     ])
         .key('b', steelPlatedBrick, compactorHatch)
         .key('B', steelPlatedBrick, event.noHatch())
@@ -30,18 +30,18 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
         .key('G', borosilicateGlass, event.noHatch())
         .key('D', Block, event.noHatch())
         .build();
-    
+
     event.electric(
         // General parameters
         'Bulk Compactor', // English name
         'bulk_compactor', // internal name
         event.getRecipeType("modern_industrialization:compressor"), // recipe type
         bulkcompactorShape, // multiblock shape
-		(workstations) => workstations.add([
-                "modern_industrialization:bronze_compressor", 
-                "modern_industrialization:steel_compressor", 
-                "modern_industrialization:electric_compressor"
-            ]),
+        (workstations) => workstations.add([
+            "modern_industrialization:bronze_compressor",
+            "modern_industrialization:steel_compressor",
+            "modern_industrialization:electric_compressor"
+        ]),
         // REI Display configuration
         // e.progressBar(88, 35, 'triple_arrow'),
         // REI Item Inputs, item outputs, fluid inputs, fluid outputs
@@ -53,10 +53,10 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
         'compressor', // overlay folder
         true, // front overlay
         true, // top overlay
-		false, // side overlay
-		// Batch size, EU cost multiplier
-		8, 
-		0.9
-		
-	);
+        false, // side overlay
+        // Batch size, EU cost multiplier
+        8,
+        0.9
+
+    );
 });

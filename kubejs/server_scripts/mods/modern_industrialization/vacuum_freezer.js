@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/vacuum_freezer/${id}`;
 
     // -- POLYTETRAFLUOROETHYLENE INGOT -- //
@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: mi('polytetrafluoroethylene_ingot') } ],
         [ { amount: 100, fluid: mi('polytetrafluoroethylene')}]
     );
-    
+
     // -- ACRYLONITRILE BUTADIENE STYRENE INGOT -- //
     vacuumFreezer(
         event,

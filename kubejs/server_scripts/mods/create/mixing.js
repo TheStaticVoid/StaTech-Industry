@@ -4,11 +4,11 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:create/mixing/${id}`;
-    
+
     // Remove the create compat recipe for ae2 mixing
-    event.remove( {type: cr('mixing'), output: ae('fluix_crystal') });
+    event.remove({ type: cr('mixing'), output: ae('fluix_crystal') });
     // e.remove( {type: cr('mixing'), output: xp('xp_berries_seeds') });
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //

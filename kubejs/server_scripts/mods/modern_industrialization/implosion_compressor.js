@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/implosion_compressor/${id}`;
 
     // -- IMPLOSION COMPRESSOR REMOVED RECIPES -- //
@@ -36,12 +36,12 @@ ServerEvents.recipes(event => {
         st('abs_building_brick'),
         1,
         20,
-        [ 
+        [
             { amount: 2, item: mi('acrylonitrile_butadiene_styrene_dust') },
             { amount: 1, item: mc('red_dye') }
 
-         ],
+        ],
         [ { amount: 1, item: kj('abs_building_brick') } ]
     );
-   
+
 });

@@ -4,11 +4,11 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/wiremill/${id}`;
 
     // -- WIRE -- //
-/*     wiremill(
+    /*     wiremill(
         event,
         st('_wire'),
         2,

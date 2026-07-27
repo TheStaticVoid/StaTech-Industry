@@ -4,14 +4,14 @@
 // -----------------------------------------
 
 ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/distillation_tower/${id}`;
 
     // -- WOOD TAR -- //
     distillationTower(
         event,
         st('wood_tar'),
-        48, 
+        48,
         200,
         [ { amount: 1000, fluid: mi('wood_tar') } ],
         [
