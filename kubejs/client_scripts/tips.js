@@ -216,7 +216,7 @@ const tips = [
     },
     {
         id: 'jon_bartman',
-        tiptext: 'We don\'t who Jon Bartman is or how powerful he truly is.'
+        tiptext: 'We don\'t know who Jon Bartman is or how powerful he truly is.'
     },
     {
         id: 'lignite_sulfur',
