@@ -4,7 +4,7 @@ Hello. Thank you for taking an interest in making StaTech Industry a better modp
 ## Setting Up Your Dev Environment
 Clone your fork of the repository into an empty [`(instancename)\minecraft`](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) folder, and copy the contents of `(instancename)\minecraft\.pakku\prism-overrides` into your `(instancename)` folder to have a working Prism Instance. 
 Once your Prism Instance is in place, grab the [most recently released version of `pakku.jar`](https://github.com/juraj-hrivnak/Pakku/releases), and put it in the `(instancename)/minecraft` directory.
-From there, you can start your newly created instances and the mods will be downloaded for you.[^1]
+From there, you can start your newly created instance and the mods will be downloaded for you.[^1]
 
 #### Modloader Sync
    Those wanting to also automatically sync the modloader version should replace the [prelaunch command](https://github.com/user-attachments/assets/494a632d-1af4-453d-9329-5454ac3d22da) with one of the below commands instead.
@@ -17,7 +17,6 @@ From there, you can start your newly created instances and the mods will be down
   ```bash
   java -jar pakku.jar fetch && cp -f "$INST_MC_DIR/.pakku/prism-overrides/mmc-pack.json" "$INST_DIR/mmc-pack.json"
   ```
-
 
 ## Code Consistency
 Any KubeJS added code must follow the existing formatting. Please note, that I may change how I format things in the future, but in general, it will look how it is currently.
@@ -46,3 +45,12 @@ Changes to existing configs should only be done to:
 1. Improve the pack by addressing any issues or adding missing features.
 2. Improve the balancing in the pack
 3. Improve the end-user experience
+
+## Making New Releases
+* To initate a release, update `CHANGELOG.MD` with a new version, [Unreleased] can be used as a staging ground for changes.
+   * [Unreleased] changes are included in the changelog for builds created from the dev branch.
+* Release type, overrides, and otherwise can be set in pakku.json
+* Give the workflow read/write permissions
+
+
+[^1]: Modrinth buildscripts are disabled by default, as most pack developers do not plan on releasing to modrinth due to important mods not being present, but can be easily uncommented if you do. If so, also add a `MODRINTH_TOKEN` and `MODRINTH_ID` secret and variable.
