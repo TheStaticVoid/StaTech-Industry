@@ -25,6 +25,7 @@ XaeroWorldMap/
 XaeroWaypoints/
 icon.png
 options.txt
+!config/fancymenu/options.txt
 rhino.local.properties
 usercache.json
 usernamecache.json
@@ -64,7 +65,7 @@ pakku.jar
 !/config/create-client.toml
 
 # Configs (generaly ones that tend to edit the date on launch)
-config/fml.toml
+!config/fml.toml
 config/jei/world/local/*
 config/fabric/indigo-renderer.properties
 config/roughlyenoughitems/pinyin*.properties
