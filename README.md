@@ -25,3 +25,4 @@ To download the modpack from this repository, you can clone it and use [WhitePha
 - @JustinMullin - Quest fixes
 - @Quezlar - Quest typo fixes
 - @truepurpledino - Main 2.0 developer
+- @fmbellomy - Pakku/PanPack migration
