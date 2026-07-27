@@ -2,7 +2,9 @@
 Hello. Thank you for taking an interest in making StaTech Industry a better modpack. As the pack grows, and others have shown interest in helping, I figured it would be best to lay down my design philosophies and what I look for in any addition to the pack.
 
 ## Setting Up Your Dev Environment
-Clone your fork of the repository into an empty [`(instancename)\minecraft`](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) folder, and copy the contents of `(instancename)\minecraft\.pakku\prism-overrides` into your `(instancename)` folder to have a working Prism Instance. From there, you can start your newly created instances and the mods will be downloaded for you.[^1]
+Clone your fork of the repository into an empty [`(instancename)\minecraft`](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) folder, and copy the contents of `(instancename)\minecraft\.pakku\prism-overrides` into your `(instancename)` folder to have a working Prism Instance. 
+Once your Prism Instance is in place, grab the [most recently released version of `pakku.jar`](https://github.com/juraj-hrivnak/Pakku/releases), and put it in the `(instancename)/minecraft` directory.
+From there, you can start your newly created instances and the mods will be downloaded for you.[^1]
 
 #### Modloader Sync
    Those wanting to also automatically sync the modloader version should replace the [prelaunch command](https://github.com/user-attachments/assets/494a632d-1af4-453d-9329-5454ac3d22da) with one of the below commands instead.
