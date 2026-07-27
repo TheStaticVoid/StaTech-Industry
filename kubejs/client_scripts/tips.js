@@ -100,7 +100,7 @@ const tips = [
     },
     {
         id: 'ancestral_ruins',
-        tiptext: 'Ancestral Ruins contains a lot of surprises and loot.'
+        tiptext: 'Ancestral Ruins contain a lot of surprises and loot.'
     },
     {
         id: 'ancestral_ruins_bell',
