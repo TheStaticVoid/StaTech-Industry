@@ -60,7 +60,7 @@ const tips = [
     },
     {
         id: 'ae2_autocrafting',
-        tiptext: 'Applied Energistics 2 should not be used to autocraft base materials (ingots, plates, wires, components).'
+        tiptext: 'Applied Energistics 2 should not be used to autocraft basic materials (ingots, plates, wires, components).'
     },
     {
         id: 'passive_crafting',
@@ -68,7 +68,7 @@ const tips = [
     },
     {
         id: 'autocraft_singularities',
-        tiptext: 'Do not try to autocraft singularities.'
+        tiptext: 'Do not attempt to autocraft singularities.'
     },
     {
         id: 'goose',
@@ -156,7 +156,7 @@ const tips = [
     },
     {
         id: 'mimics',
-        tiptext: 'Small underground campsites can contain useful loot, but can hide some unexpected surprises.'
+        tiptext: 'Small underground campsites can contain useful loot, but can also hide some unexpected surprises.'
     },
     {
         id: 'pipe_config_card_off_hand',
