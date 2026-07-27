@@ -654,7 +654,7 @@ jobs:
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
         with:
           key: ${{ secrets.discord-webhook  }}
-          username: "StaTech Industries Updates" # Change this!
+          username: "StaTech Industry Updates" # Change this!
           avatar_url: "https://media.forgecdn.net/avatars/thumbnails/798/822/64/64/638160732420962168.png" # Change this! (and the below curseforge url)
           content_links_no_embed: .+
           content: |
