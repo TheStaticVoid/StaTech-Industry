@@ -272,7 +272,7 @@ const tips = [
     },
     {
         id: 'fluid_pipe_tank',
-        tiptext: 'Fluid pipes will inherits fluid transfer speed when connected to a tank on I/O mode equivalent to the tank\'s capacity.'
+        tiptext: 'Fluid pipes will inherit fluid transfer speed when connected to a tank on I/O mode equivalent to the tank\'s capacity.'
     },
     {
         id: 'item_pipes_motors',
