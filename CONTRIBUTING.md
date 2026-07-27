@@ -52,5 +52,7 @@ Changes to existing configs should only be done to:
 * Release type, overrides, and otherwise can be set in pakku.json
 * Give the workflow read/write permissions
 
+## Building a server pack locally
+Server packs rely on [Forge-Server-Starter](https://github.com/HellBz/Forge-Server-Starter/) which is not included in this repo. To include it when exporting serverpacks, place the [latest released jar](https://github.com/HellBz/Forge-Server-Starter/releases/latest/download/minecraft_server.jar) inside of `.pakku/server-overrides/`
 
 [^1]: Modrinth buildscripts are disabled by default, as most pack developers do not plan on releasing to modrinth due to important mods not being present, but can be easily uncommented if you do. If so, also add a `MODRINTH_TOKEN` and `MODRINTH_ID` secret and variable.

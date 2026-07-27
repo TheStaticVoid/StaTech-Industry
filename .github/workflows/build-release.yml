@@ -104,6 +104,14 @@ jobs:
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           echo "Downloaded pakku.jar "
+              - name: Download pakku.jar
+        
+      - name: Download Forge Server Starter
+        id: download_serverstarter
+        shell: bash
+        run: |
+          curl https://github.com/HellBz/Forge-Server-Starter/releases/latest/download/minecraft_server.jar -o .pakku/server-overrides/minecraft_server.jar -L -J
+          echo "Downloaded minecraft_server.jar"
 
       - name: Run pakku diff
         id: pakku_diff
