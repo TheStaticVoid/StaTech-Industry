@@ -52,11 +52,11 @@ const tips = [
     },
     {
         id: 'batching_machines',
-        tiptext: 'Batching Multiblock version of machines are incredibly faster than their single block variants.'
+        tiptext: 'Batching Multiblock versions of machines are significantly faster than their single block variants.'
     },
     {
         id: 'batching_machines_type',
-        tiptext: 'Batching Multiblock version of machines cannot run multiple types of recipes at once.'
+        tiptext: 'Batching Multiblock versions of machines cannot run multiple types of recipes at once.'
     },
     {
         id: 'ae2_autocrafting',
@@ -96,7 +96,7 @@ const tips = [
     },
     {
         id: 'hose_pulley',
-        tiptext: 'Using a hose pulley won\'t allow to infinitely generate lava.'
+        tiptext: 'Using a hose pulley won\'t allow you to infinitely generate lava.'
     },
     {
         id: 'ancestral_ruins',
@@ -124,11 +124,11 @@ const tips = [
     },
     {
         id: 'sky_stone',
-        tiptext: 'Sky Stone can be renewably obtained by point a powered Annilihation Plane at the sky limit.'
+        tiptext: 'Sky Stone can be obtained renewably by pointing a powered Annilihation Plane up at the build limit.'
     },
     {
         id: 'clay',
-        tiptext: 'Finding and digging out a Lush Cave is a great way to obtain a lot of clay in the early game.'
+        tiptext: 'Finding and digging out the contents of a Lush Cave is a great way to obtain a lot of clay in the early game.'
     },
     {
         id: 'exp_obelisk',
@@ -136,7 +136,7 @@ const tips = [
     },
     {
         id: 'tank_bucket_mod',
-        tiptext: 'Tanks (from Tank Storage) have a bucket mode allowing gathering a lot of fluid easily.'
+        tiptext: 'Tanks (from Tank Storage) have a bucket mode allowing them to gather a lot of fluid easily.'
     },
     {
         id: 'bank_build',
@@ -148,10 +148,10 @@ const tips = [
     },
     {
         id: 'bank_construction_stick',
-        tiptext: 'Construction Sticks can use blocks contained in Banks whilst building.'
+        tiptext: 'Construction Sticks can use blocks contained in Banks while building.'
     },
     {
-        id: 'nourrishment',
+        id: 'nourishment',
         tiptext: 'Cooking high quality foods allows you to get "Nourishment", which prevents you from losing hunger or saturation through exhausting actions.'
     },
     {
@@ -160,7 +160,7 @@ const tips = [
     },
     {
         id: 'pipe_config_card_off_hand',
-        tiptext: 'Holding a configured Pipe Config Card in your off-hand whilst placing pipes will automatically apply the settings to the pipes placed or connected.'
+        tiptext: 'Holding a configured Pipe Config Card in your off-hand while placing pipes will automatically apply the settings to the pipes placed or connected.'
     },
     {
         id: 'pipe_config_card_camouflage',
@@ -168,7 +168,7 @@ const tips = [
     },
     {
         id: 'machine_config_card_off_hand',
-        tiptext: 'Holding a configured Machine Config Card in your off-hand whilst placing machines will automatically apply the settings to the machines placed.'
+        tiptext: 'Holding a configured Machine Config Card in your off-hand while placing machines will automatically apply the settings to the machines placed.'
     },
     {
         id: 'andesite',
@@ -188,7 +188,7 @@ const tips = [
     },
     {
         id: 'trials_chamber_copper',
-        tiptext: 'The copper contained in trials chambers is sub-standard. One shouldn\'t try to trade it unless they want to receive a complaint.'
+        tiptext: 'The copper contained in trial chambers is sub-standard. One shouldn\'t try to trade it unless they want to receive a complaint.'
     },
     {
         id: 'wallsharing',
@@ -196,7 +196,7 @@ const tips = [
     },
     {
         id: 'moving_steam',
-        tiptext: 'Before you unlock fluid pipes, you can put your boiler directly next to your steam machines since it auto-outputs. '
+        tiptext: 'Before you unlock fluid pipes, you can put your boiler directly next to your steam machines since it auto-outputs.'
     },
     {
         id: 'large_boiler_efficiency',
@@ -204,11 +204,11 @@ const tips = [
     },
     {
         id: 'item_pipes_filters',
-        tiptext: 'Be sure to filter both the input and output sides of your item pipes for them to function.'
+        tiptext: 'Be sure to filter both the input and output sides of your item pipes.'
     },
     {
         id: 'aluminum_electrolyzer',
-        tiptext: 'Using an electrolyzer to process bauxite is way more efficient than directly smelting it in the Electric Blast Furnace.'
+        tiptext: 'Using an electrolyzer to process bauxite is way more efficient than smelting it in the Electric Blast Furnace.'
     },
     {
         id: 'quarry_hatches',
@@ -216,7 +216,7 @@ const tips = [
     },
     {
         id: 'jon_bartman',
-        tiptext: 'We don\'t know who Jon Bartman is or how powerful he truly is.'
+        tiptext: 'We don\'t know who Jon Bartman is or how powerful he may be.'
     },
     {
         id: 'lignite_sulfur',
@@ -224,15 +224,15 @@ const tips = [
     },
     {
         id: 'pick_block_ae2',
-        tiptext: 'A wireless terminal from Applied Energistics 2 allows you to "Pick Block" from your system when enabled (in the terminal settings).'
+        tiptext: 'A wireless terminal from Applied Energistics 2 allows you to use the "Pick Block" setting from your system when enabled (in the terminal settings).'
     },
     {
         id: 'create_optional',
-        tiptext: 'Create is completely optional.'
+        tiptext: 'Create is now completely optional.'
     },
     {
         id: 'cog_blocks',
-        tiptext: 'Cog Blocks allow to transmit redstone in a full block.'
+        tiptext: 'Cog Blocks allow you to transmit redstone in a full block.'
     },
     {
         id: 'spectrum_ruin',
@@ -244,7 +244,7 @@ const tips = [
     },
     {
         id: 'hammock',
-        tiptext: 'Hammocks allow you to sleep during the day and skip to the night.'
+        tiptext: 'Hammocks allow you to sleep through the day and skip to the night.'
     },
     {
         id: 'graves',
@@ -252,7 +252,7 @@ const tips = [
     },
     {
         id: 'pipe_connector',
-        tiptext: 'Pipe Connector allows to effortlessly place pipes underground.'
+        tiptext: 'Pipe Connector allows you to effortlessly place pipes underground.'
     },
     {
         id: 'fluid_pipe_speed',
@@ -276,7 +276,7 @@ const tips = [
     },
     {
         id: 'item_pipes_motors',
-        tiptext: 'Adding motors an item pipe extract point will make that pipe extract point move more items.'
+        tiptext: 'Adding motors to an item pipe\'s extract point will make that pipe move more items.'
     },
     {
         id: 'water_dupe',
@@ -289,6 +289,10 @@ const tips = [
     {
         id: 'electric_quarry_vs_steam',
         tiptext: 'The Electric Quarry can run all recipes from the Steam Quarry.'
+    },
+    {
+        id: 'added_herobrine',
+        tiptext: 'Jon Bartman may be Herobrine in a mask...'
     }
 ]
 
