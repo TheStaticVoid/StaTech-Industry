@@ -28,3 +28,6 @@ Changes to existing configs should only be done to:
 1. Improve the pack by addressing any issues or adding missing features.
 2. Improve the balancing in the pack
 3. Improve the end-user experience
+
+## AI Usage Policy
+Zero-tolerance policy for AI generated code, assets, and pull-requests. Take your slop elsewhere.
