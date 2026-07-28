@@ -1,8 +1,6 @@
 {
     "name": "StaTech Industry",
     "version": "2.0.0rc2",
-    "release_type": "release",
-    "description": "",
     "author": "Static Void, Purple Dino, & GronkDev",
     "overrides": [
         "config",
@@ -189,6 +187,9 @@
             "update_strategy": "NONE"
         },
         "ftb-quests-forge": {
+            "update_strategy": "NONE"
+        },
+        "ftb-xmod-compat": {
             "update_strategy": "NONE"
         }
     }
