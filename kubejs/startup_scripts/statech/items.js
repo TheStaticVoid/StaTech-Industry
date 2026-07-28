@@ -219,4 +219,11 @@ StartupEvents.registry('item', event => {
 
     event.create('voice_chat')
         .displayName('Voice Chat');
+    
+    event.create('scrap')
+        .displayName('Scrap')
+    
+    event.create('uu_matter')
+        .displayName('UU Matter')
+        .rarity('Epic')
 });

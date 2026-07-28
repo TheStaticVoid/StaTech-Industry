@@ -183,4 +183,15 @@ ServerEvents.recipes(event => {
         ]
     );
 
+    // -- UU MATTER -- //
+    electrolyzer(
+        event,
+        st('uu_liquid_from_matter'),
+        64,
+        400,
+        [ { amount: 1, item: kj('uu_matter') } ],
+        null,
+        null,
+        [ { amount: 10, fluid: mi('uu_matter') } ]
+    );
 });

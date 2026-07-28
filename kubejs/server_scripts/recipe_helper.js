@@ -199,6 +199,11 @@ let singularityForge = (event, id, eu, duration, item_inputs, item_outputs, flui
     event.custom(newMachineRecipe(mi('singularity_forge'), eu, duration, item_inputs, item_outputs, fluid_inputs)).id(id);
 }
 
+// -- RECYCLER -- //
+let recycler = (event, id, eu, duration, item_inputs, item_outputs) => {
+    event.custom(newMachineRecipe(mi('recycler'), eu, duration, item_inputs, item_outputs)).id(id);
+}
+
 // -- ROCKET PART ASSEMBLER -- //
 let rocketAssembler = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
     event.custom(newMachineRecipe(mi('rocket_part_assembler'), eu, duration, item_inputs, item_outputs, fluid_inputs)).id(id);
