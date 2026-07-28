@@ -677,7 +677,7 @@ ServerEvents.tags('item', event => {
         'chromium',
         'coal',
         'cobalt',
-        'corundum',
+        'ruby',
         'diamond',
         'emerald',
         'kernite',
