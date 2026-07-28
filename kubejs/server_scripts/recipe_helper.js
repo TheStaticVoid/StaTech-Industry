@@ -4,6 +4,25 @@
 // -----------------------------------------
 
 // Generic function for adding MI machine recipes
+
+/**
+ * @typedef {Object} newMachineRecipe
+ * @property {!string} type - Recipe Type
+ * @property {!number} eu - recipe eu/t
+ * @property {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
+ * @property {?{amount: number, item: string}[]} item_inputs - Array of item inputs
+ * @property {?{amount: number, item: string}[]} item_outputs - Array of item outputs
+ * @property {?{amount: number, fluid: string}[]} fluid_inputs - Array of fluid inputs
+ * @property {?{amount: number, fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @property {?{?dimension: string, ?biome: string, ?biomeTag: string, ?adjacentBlock: {block: string, position: string}}[]} process_conditions - MI process conditions
+ */
+
+/**
+ * Creates a newMachineRecipe
+ * @param {string} name - User's full name
+ * @param {number} age - User's age
+ * @returns {User} The created user object
+ */
 let newMachineRecipe = (type, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs, process_conditions) => {
     let newRecipe = {
         type: type,
