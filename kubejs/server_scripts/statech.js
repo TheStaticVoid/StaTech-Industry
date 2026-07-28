@@ -398,6 +398,7 @@ ServerEvents.tags('item', event => {
         'sky_steel',
         'sky_bronze',
         'entro',
+        'ruby',
         'sapphire',
         'peridot',
         'clay',

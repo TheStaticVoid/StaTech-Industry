@@ -224,7 +224,7 @@ MIMaterialEvents.addMaterials(event => {
             builder
                 .hardness('hard')
                 .materialSet('shiny')
-                .addParts('plate', 'dust', 'crushed_dust', 'gem')
+                .addParts('dust', 'crushed_dust', 'gem')
                 .ore({
                     'generate': true,
                     'ore_set': 'diamond',
@@ -243,7 +243,7 @@ MIMaterialEvents.addMaterials(event => {
             builder
                 .hardness('hard')
                 .materialSet('shiny')
-                .addParts('plate', 'dust', 'crushed_dust', 'gem')
+                .addParts('dust', 'crushed_dust', 'gem')
                 .ore({
                     'generate': true,
                     'ore_set': 'diamond',
@@ -322,7 +322,7 @@ MIMaterialEvents.modifyMaterial('ruby', event => {
     event.builder
         .hardness('hard')
         .materialSet('shiny')
-        .addParts('plate', 'crushed_dust', 'gem')
+        .addParts('crushed_dust', 'gem')
         .ore({
             'generate': true,
             'ore_set': 'diamond',
