@@ -197,8 +197,8 @@ let wiremill = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('wiremill'), eu, duration, item_inputs, item_outputs)).id(id);
 }
 
-let canningMachine = (event, id, eu, duration, item_inputs, item_outputs) => {
-    event.custom(newMachineRecipe(ei('canning_machine'), eu, duration, item_inputs, item_outputs)).id(id);
+let canningMachine = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs,) => {
+    event.custom(newMachineRecipe(ei('canning_machine'), eu, duration, item_inputs, item_outputs, fluid_inputs)).id(id);
 }
 
 let cryogenicPrecipitator = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
