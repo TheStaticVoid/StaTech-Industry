@@ -38,12 +38,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
     LIMITED_BARRELS.forEach(id => event.remove(id));
 
     const FAKE_MATERIALS = [
-        mi('raw_corundum'),
-        mi('raw_corundum_block'),
-        mi('raw_sapphire'),
-        mi('raw_sapphire_block'),
-        mi('raw_peridot'),
-        mi('raw_peridot_block'),
         mi('raw_kernite'),
         mi('raw_kernite_block')
     ];

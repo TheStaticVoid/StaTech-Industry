@@ -230,7 +230,9 @@ MIMaterialEvents.addMaterials(event => {
                     'ore_set': 'diamond',
                     'vein_size': 3,
                     'veins_per_chunk': 4,
-                    'max_y': 24
+                    'max_y': 24,
+                    'min_xp': 5,
+                    'max_xp': 10
                 })
                 .setMainPart('gem')
                 .defaultRecipes();
@@ -247,25 +249,9 @@ MIMaterialEvents.addMaterials(event => {
                     'ore_set': 'diamond',
                     'vein_size': 3,
                     'veins_per_chunk': 4,
-                    'max_y': 24
-                })
-                .setMainPart('gem')
-                .defaultRecipes();
-        });
-
-    event.createMaterial('Ruby', 'corundum', 0xfc3232, // Name is corundum because modifyMaterial doesn't allow for adding ores
-        builder => {
-            builder
-                .hardness('hard')
-                .materialSet('shiny')
-                .addParts('plate', 'crushed_dust', 'gem')
-                .addExternalPart('dust', 'modern_industrialization:ruby_dust')
-                .ore({
-                    'generate': true,
-                    'ore_set': 'diamond',
-                    'vein_size': 3,
-                    'veins_per_chunk': 4,
-                    'max_y': 24
+                    'max_y': 24,
+                    'min_xp': 5,
+                    'max_xp': 10
                 })
                 .setMainPart('gem')
                 .defaultRecipes();
@@ -331,6 +317,23 @@ MIMaterialEvents.modifyMaterial('iridium', event => {
 
 MIMaterialEvents.modifyMaterial('gold', event => {
     event.builder.addParts('wire').cable('mv')
+});
+MIMaterialEvents.modifyMaterial('ruby', event => {
+    event.builder
+        .hardness('hard')
+        .materialSet('shiny')
+        .addParts('plate', 'crushed_dust', 'gem')
+        .ore({
+            'generate': true,
+            'ore_set': 'diamond',
+            'vein_size': 3,
+            'veins_per_chunk': 4,
+            'max_y': 24,
+            'min_xp': 5,
+            'max_xp': 10
+        })
+        .setMainPart('gem')
+        .defaultRecipes();
 });
 
 MIMaterialEvents.modifyMaterial('electrum', event => {
