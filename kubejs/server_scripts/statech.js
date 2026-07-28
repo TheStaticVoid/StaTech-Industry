@@ -398,7 +398,7 @@ ServerEvents.tags('item', event => {
         'sky_steel',
         'sky_bronze',
         'entro',
-        'corundum',
+        'ruby',
         'sapphire',
         'peridot',
         'clay',
@@ -510,7 +510,7 @@ ServerEvents.tags('item', event => {
     });
 
     const GEMS = [
-        'corundum',
+        'ruby',
         'sapphire',
         'peridot'
     ];

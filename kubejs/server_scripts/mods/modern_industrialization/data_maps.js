@@ -88,7 +88,7 @@ ServerEvents.generateData('after_mods', event => {
             "extendedae:entro_crystal": {
                 "eu_per_item": 3072
             },
-            "modern_industrialization:corundum": {
+            "modern_industrialization:ruby": {
                 "eu_per_item": 4096
             },
             "modern_industrialization:sapphire": {

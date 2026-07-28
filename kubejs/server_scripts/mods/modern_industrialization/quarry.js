@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
         mi('quarry/steel'),
         mi('quarry/stainless_steel')
     ];
-    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
+    REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
     // -- BRONZE DRILL -- //
     quarry(
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         st('bronze_drill'),
         4,
         600,
-        [ { amount: 1, item: mi('bronze_drill'), probability: 0.04 } ],
+        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mc('iron_ore'), probability: 0.4 },
             { amount: 1, item: mc('coal_ore'), probability: 0.4 },
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         st('zinc_drill'),
         4,
         600,
-        [ { amount: 1, item: mi('zinc_drill'), probability: 0.1 } ],
+        [{ amount: 1, item: mi('zinc_drill'), probability: 0.1 }],
         [
             { amount: 1, item: cr('zinc_ore'), probability: 0.5 },
             { amount: 16, item: mc('andesite'), probability: 0.7 },
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         st('gold_drill'),
         16,
         600,
-        [ { amount: 1, item: mi('gold_drill'), probability: 0.1 } ],
+        [{ amount: 1, item: mi('gold_drill'), probability: 0.1 }],
         [
             { amount: 64, item: mc('netherrack'), probability: 0.95 },
             { amount: 16, item: mc('blackstone'), probability: 0.25 },
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
         st('steel'),
         12,
         600,
-        [ { amount: 1, item: mi('steel_drill'), probability: 0.04 } ],
+        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('antimony_ore'), probability: 0.20 },
             { amount: 1, item: mi('fluorite_ore'), probability: 0.15 },
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('bauxite_ore'), probability: 0.40 },
             { amount: 1, item: mi('salt_ore'), probability: 0.12 },
             { amount: 1, item: mi('quartz_ore'), probability: 0.20 },
-            { amount: 1, item: mi('corundum_ore'), probability: 0.04 },
+            { amount: 1, item: mi('ruby_ore'), probability: 0.04 },
             { amount: 1, item: mi('sapphire_ore'), probability: 0.04 },
             { amount: 1, item: mi('kernite_ore'), probability: 0.10 }
         ]
@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
         st('stainless_steel'),
         64,
         600,
-        [ { amount: 1, item: mi('stainless_steel_drill'), probability: 0.04 } ],
+        [{ amount: 1, item: mi('stainless_steel_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('titanium_ore'), probability: 0.15 },
             { amount: 1, item: mi('tungsten_ore'), probability: 0.20 },
