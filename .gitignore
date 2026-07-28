@@ -31,6 +31,7 @@ usercache.json
 usernamecache.json
 emi.json
 command_history.txt
+cache/c2me-dfc/*
 
 # Pakku
 build/
@@ -237,8 +238,38 @@ defaultconfigs/biolith/general.json
 defaultconfigs/certain_questing_additions/client-config.snbt
 defaultconfigs/ftbessentials-server.snbt
 /dynamic-resource-pack-cache
-config/moonlight-client-1.toml.bak
-config/myotus-client-1.toml.bak
+/dynamic-data-pack-cache
+config/moonlight-client*
+config/myotus-client*
+observable_announce
+config/tradingpost-server.toml
+config/ftbultimine-server.snbt
+config/InventoryHUD/curios.json
+config/journeymap-server.toml
+config/moredragoneggs-server.toml
+config/morered-server.toml
+config/neoforge-server.toml
+config/observable.json
+config/responsive-shields.toml
+config/sophisticatedbackpacks-server-1.toml.bak
+config/sophisticatedstorage-server-1.toml.bak
+config/spark/config.json
+config/spark/tmp-client/about.txt
+config/spikyspikes-server.toml
+config/tmrv_plugins.json5
+config/ftbteams-server.snbt
+config/ftbchunks-world.snbt
+config/framedblocks-server.toml
+config/exposure-server.toml
+config/elevatorid-server.toml
+config/curios-server.toml
+config/crashutilities-server.toml
+config/craftingstation-server.toml
+config/chunky/config.json
+config/almostunified/tags.json
+config/almostunified/placeholders.json
+config/almostunified/duplicates.json
+
 
 # Linux
 *~
@@ -264,4 +295,3 @@ servers.dat_old
 dynamic-resource-pack-cache/hash.txt
 config/drippyloadingscreen/early_window_reference.properties
 ftbbackups3/backups.json
-

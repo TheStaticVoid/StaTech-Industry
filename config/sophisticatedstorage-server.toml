@@ -2,7 +2,7 @@
 [server]
 	#Limit of maximum number of upgrades of type per storage in format of "StorageType|UpgradeRegistryName[or UpgradeGroup]|MaxNumber"
 	maxUpgradesPerStorage = ["shulker_box|stack_upgrades|1", "shulker_box|furnace_upgrades|1", "shulker_box|jukebox_upgrades|1", "chest|stack_upgrades|1", "chest|furnace_upgrades|1", "chest|jukebox_upgrades|1", "limited_barrel|jukebox_upgrades|1", "limited_barrel|furnace_upgrades|1", "barrel|stack_upgrades|1", "barrel|furnace_upgrades|1", "barrel|jukebox_upgrades|1"]
-	#Threshold of number of item entities dropped from chest / barrel above which break is canceled (unless shift key is pressed) and message is displayed explaining to player many drops and packing tape use
+	#Threshold of item entities dropped from chest / barrel above which breaking is canceled (unless shift is pressed) and a message explains there would be many drops and packing tape should be used
 	# Default: 200
 	# Range: 0 ~ 1000
 	tooManyItemEntityDrops = 200
@@ -476,7 +476,7 @@
 		upgradeSlotCount = 5
 
 	[server.shulkerBoxDisallowedItems]
-		#List of items that are not allowed to be put in shulkerboxes - e.g. "minecraft:bundle"
+		#List of items that are not allowed to be put in shulker boxes - e.g. "minecraft:bundle"
 		disallowedItems = []
 		#Determines if container items (those that override canFitInsideContainerItems to false) are able to fit in shulker boxes
 		containerItemsDisallowed = false
@@ -496,6 +496,10 @@
 		# Default: 3
 		# Range: 1 ~ 6
 		slotsInRow = 3
+		#List of additional crafting shapes compacting and compression upgrades will try when checking if items can be compacted. Shapes are expected as rows of 1s and 0s separated by / where 1 means the tested item is present and 0 means the slot is empty. Example: "111/101/111" checks a hollow 3x3 shape with 8 items.
+		additionalCompactingShapes = ["111/101/111"]
+		#List of item-specific additional crafting shapes compacting and compression upgrades will try when checking if items can be compacted. Entries are expected in format of "mod:item=shape", for example "some_mod:tiny_coal=111/101/111".
+		additionalCompactingShapeOverrides = []
 
 	#Advanced Compacting Upgrade Settings
 	[server.advancedCompactingUpgrade]
@@ -614,8 +618,8 @@
 		# Default: 3
 		# Range: 1 ~ 6
 		slotsInRow = 3
-		#Determines whether void upgrade allows voiding anything or it only has overflow option
-		voidAnythingEnabled = true
+		#Determines whether void upgrade allows voiding always or it only has overflow options
+		voidAlwaysEnabled = true
 
 	#Advanced Void Upgrade Settings
 	[server.advancedVoidUpgrade]
@@ -627,8 +631,8 @@
 		# Default: 4
 		# Range: 1 ~ 6
 		slotsInRow = 4
-		#Determines whether void upgrade allows voiding anything or it only has overflow option
-		voidAnythingEnabled = true
+		#Determines whether void upgrade allows voiding always or it only has overflow options
+		voidAlwaysEnabled = true
 
 	#Smelting Upgrade Settings
 	[server.smeltingUpgrade]
@@ -774,7 +778,7 @@
 		# Default: 5
 		# Range: 3 ~ 9
 		maxNumberOfSlots = 5
-		#List of items that can be decompressed by compression upgrade and their results. Item registry names are expected here in format of "mod:itemBeingDecompressed=Nxmod:itemDecompressResult
+		#List of items that can be decompressed by compression upgrade and their results. Item registry names are expected here in format of "mod:itemBeingDecompressed=Nxmod:itemDecompressResult"
 		additionalDecompressibleItems = ["minecraft:glowstone=4xminecraft:glowstone_dust", "minecraft:quartz_block=4xminecraft:quartz"]
 
 	#Hopper Upgrade Settings
