@@ -11,7 +11,7 @@ I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling
 4. Click "Ok" and allow for the process to finish. 
 5. Click "Edit" under the StaTech Industry instance and ensure you have at least 4-6 GB or RAM dedicated to the pack, as well as your version of Java is Java 21.
 
-To download the modpack from this repository, you can clone it and use [WhitePhantOm's fork of Packwiz](https://github.com/WhitePhant0m/packwiz) to make an instance file that you can use in Prism Launcher. You can learn how to use it from the [packwiz documentation](https://packwiz.infra.link/installation/).
+To download the modpack from this repository, you can clone it and use [Pakku](https://github.com/juraj-hrivnak/Pakku/releases/) to make an instance file that you can use in Prism Launcher. You can learn how to use it from the [pakku documentation](https://juraj-hrivnak.github.io/Pakku/installing-pakku.html#install-manually).
 
 ## Contributors
 - DeadeyeDutch - Sprite work for custom items
