@@ -677,7 +677,7 @@
 		#Allow placeable sticks
 		sticks = true
 		#Allow placeable blaze rods
-		blaze_rods = true
+		blaze_rods = false
 
 	[tweaks.placeable_gunpowder]
 		#Allow placeable gunpowder
@@ -774,7 +774,7 @@
 	[tweaks.slimed_effect]
 		enabled = true
 		#Allow slimeballs to be thrown
-		throwable_slimeballs = true
+		throwable_slimeballs = false
 		#Thrown slimeballs will shortly nerf the player jump height. Disable if you don't want this effect as it can be quite powerful
 		#Allowed Values: NEVER, ALWAYS, NORMAL_DIFFICULTY, HARD_DIFFICULTY
 		hinders_jump = "NORMAL_DIFFICULTY"
