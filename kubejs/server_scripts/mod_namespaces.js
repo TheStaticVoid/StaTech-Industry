@@ -58,3 +58,5 @@ let ca = (id) => `createaddition:${id}`;
 let cd = (id) => `createdeco:${id}`;
 let cm = (id) => `stcm:${id}`;
 let ch = (id) => `chisel:${id}`;
+let lbr = (id) => `little_big_redstone:${id}`;
+let cc = (id) => `computercraft:${id}`;
