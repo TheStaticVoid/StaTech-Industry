@@ -232,7 +232,7 @@ MIMaterialEvents.addMaterials(event => {
                     'veins_per_chunk': 4,
                     'max_y': 24
                 })
-                .rawMetal('copper')
+                .setMainPart('gem')
                 .defaultRecipes();
         });
 
@@ -249,7 +249,7 @@ MIMaterialEvents.addMaterials(event => {
                     'veins_per_chunk': 4,
                     'max_y': 24
                 })
-                .rawMetal('copper')
+                .setMainPart('gem')
                 .defaultRecipes();
         });
 
@@ -267,7 +267,7 @@ MIMaterialEvents.addMaterials(event => {
                     'veins_per_chunk': 4,
                     'max_y': 24
                 })
-                .rawMetal('copper')
+                .setMainPart('gem')
                 .defaultRecipes();
         });
 
