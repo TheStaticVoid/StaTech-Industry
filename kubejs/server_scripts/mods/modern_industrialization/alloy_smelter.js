@@ -33,19 +33,6 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: mc('netherite_ingot') } ]
     );
 
-    // -- COGNITIVE ALLOY INGOT -- //
-    alloySmelter(
-        event,
-        st('cognitive_alloy'),
-        4,
-        200,
-        [
-            { amount: 1, tag: 'c:ingots/copper' },
-            { amount: 4, item: xp('cognitive_amalgam') }
-        ],
-        [ { amount: 1, item: xp('cognitive_alloy') } ]
-    );
-
     // -- BRASS INGOT -- //
     alloySmelter(
         event,

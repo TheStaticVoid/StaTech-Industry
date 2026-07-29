@@ -68,9 +68,9 @@ ServerEvents.recipes(event => {
     NOMANSLAND_REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
 
-    // -------------------------//
+    // ------------------------//
     // --- SHAPED CRAFTING --- //
-    // -------------------------//
+    // ------------------------//
 
 
     // -- SMOKER -- //
@@ -95,9 +95,9 @@ ServerEvents.recipes(event => {
         .id(st('andesite_from_siltstone'));
 
 
-    // ----------------------------//
+    // ---------------------------//
     // --- SHAPELESS CRAFTING --- //
-    // ----------------------------//
+    // ---------------------------//
 
 
     // -- MUSHROOM STEW -- //
@@ -120,9 +120,10 @@ ServerEvents.recipes(event => {
         ])
         .id(st('pancake'));
 
-    // ---------------------//
+
+    // --------------------//
     // ----- COOKING ----- //
-    // ---------------------//
+    // --------------------//
 
 
     // -- MUSHROOM RICE -- //
@@ -213,9 +214,9 @@ ServerEvents.recipes(event => {
     })
         .id(st('salmon_and_pesto_gnocchi'));
 
-    // -----------------//
+    // ----------------//
     // ---- MIXER ---- //
-    // -----------------//
+    // ----------------//
 
     // -- MUNDANE TILES -- //
     mixer(
@@ -347,9 +348,9 @@ ServerEvents.recipes(event => {
         [{ amount: 4, item: nm('coarse_silt') }]
     );
 
-    // ---------------------------//
+    // --------------------------//
     // ---- CUTTING MACHINE ---- //
-    // ---------------------------//
+    // --------------------------//
 
     // -- CHISELED SILTSTONE -- //
     cuttingMachine(
@@ -361,9 +362,9 @@ ServerEvents.recipes(event => {
         [{ amount: 1, item: nm('chiseled_siltstone') }]
     );
 
-    // ------------------//
+    // -----------------//
     // ---- PACKER ---- //
-    // ------------------//
+    // -----------------//
 
     // -- SILT BRICKS -- //
     packer(
