@@ -9,7 +9,6 @@ ServerEvents.recipes(event => {
 
     // Remove the create compat recipe for ae2 mixing
     event.remove({ type: cr('mixing'), output: ae('fluix_crystal') });
-    // e.remove( {type: cr('mixing'), output: xp('xp_berries_seeds') });
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let mixing = (id, heat_requirement, item_inputs, item_outputs) => {

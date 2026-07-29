@@ -75,18 +75,6 @@ ServerEvents.recipes(event => {
         [ { amount: 1, item: mc('mossy_cobblestone') } ]
     );
 
-    // -- LIQUID EXPERIENCE -- //
-    mixer(
-        event,
-        st('xp_fluid'),
-        8,
-        50,
-        [ { amount: 4, item: cr('experience_nugget') } ],
-        null,
-        null,
-        [ { amount: 120, fluid: xp('cognitium_source') } ]
-    );
-
     // -- STATECH ENERGY -- //
     mixer(
         event,
@@ -215,20 +203,6 @@ ServerEvents.recipes(event => {
         null,
         [ { amount: 800, fluid: mc('water') } ],
         [ { amount: 1000, fluid: mi('liquid_ender') } ]
-    );
-
-    // -- COGNITIVE FLUX -- //
-    mixer(
-        event,
-        st('cognitive_flux'),
-        2,
-        100,
-        [
-            { amount: 1, tag: 'c:dusts/lapis' },
-            { amount: 1, tag: 'c:dusts/quartz' },
-            { amount: 1, tag: 'minecraft:soul_fire_base_blocks' }
-        ],
-        [ { amount: 4, item: xp('cognitive_flux') } ]
     );
 
     // -- BORON-QUARTZ BLEND -- //

@@ -3777,6 +3777,7 @@
             "id": {
                 "curseforge": "889915"
             },
+            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "curseforge",
@@ -5701,6 +5702,52 @@
                     "required_dependencies": [],
                     "size": 1262251,
                     "date_published": "2026-04-12T13:06:29.983Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "NTsEYekXQUvExAlM",
+            "pakku_links": [
+                "Jb13Ji6au0RNpzSB",
+                "AjYKRRphpjTNFZvW"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "light-overlay"
+            },
+            "name": {
+                "curseforge": "Light Overlay (Rift/Forge/Fabric)"
+            },
+            "id": {
+                "curseforge": "325492"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "light-overlay-12.0.0-neoforge.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1-Snapshot",
+                        "1.21-Snapshot",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5553/811/light-overlay-12.0.0-neoforge.jar",
+                    "id": "5553811",
+                    "parent_id": "325492",
+                    "hashes": {
+                        "sha1": "f15a3b88c926d2dc9d06c2b876cd89287791773c",
+                        "md5": "e3ab9cb9abfdd0b84ddc25595c6c071f"
+                    },
+                    "required_dependencies": [
+                        "348521",
+                        "419699"
+                    ],
+                    "size": 62920,
+                    "date_published": "2024-07-22T09:17:48.257Z"
                 }
             ]
         },

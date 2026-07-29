@@ -138,19 +138,19 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"minecraft:bat": true
 			"minecraft:sheep": true
 			"minecraft:rabbit": true
 			"minecraft:chicken": true
-			"nomansland:tortoise": true
 			"minecraft:squid": true
+			"nomansland:tortoise": true
+			"minecraft:fox": true
 			"minecraft:wolf": true
+			"nomansland:deer": true
+			"nomansland:goose": true
 			"minecraft:polar_bear": true
+			"minecraft:bat": true
 			"artifacts:mimic": true
 			"minecraft:glow_squid": true
-			"minecraft:fox": true
-			"nomansland:goose": true
-			"nomansland:deer": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)

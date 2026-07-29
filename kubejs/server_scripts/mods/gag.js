@@ -21,6 +21,12 @@ ServerEvents.recipes(event => {
     GAG_REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
     event.remove({ output: gag('pigment_jar') });
 
+
+    // -----------------------//
+    // ---- ELECTROLYZER ---- //
+    // -----------------------//
+
+
     // -- ENERGIZED HEARTHSTONE -- //
     electrolyzer(
         event,
@@ -30,6 +36,12 @@ ServerEvents.recipes(event => {
         [{ amount: 1, item: gag('hearthstone') }],
         [{ amount: 1, item: gag('energized_hearthstone') }]
     );
+
+
+    // -------------------//
+    // ---- PEDESTAL ---- //
+    // -------------------//
+
 
     // -- HEARTHSTONE -- //
     event.custom({
