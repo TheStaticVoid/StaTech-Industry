@@ -213,6 +213,70 @@ ServerEvents.recipes(event => {
     ];
     REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
+
+    // -----------------------//
+    // ---- CINDERHEARTH ---- //
+    // -----------------------//
+
+    
+    // -- ETERNAL STEAK -- //
+    event.custom({
+        type: sp('cinderhearth'),
+        ingredient: { item: ar('everlasting_beef') },
+        time: 800,
+        experience: 1.0,
+        results: [{
+            id: ar('eternal_steak'),
+            count: 1
+        }]
+    });
+
+
+    // ------------------------//
+    // ---- FUSION SHRINE ---- //
+    // ------------------------//
+
+    
+    // -- EVERLASTING BEEF -- //
+    event.custom({
+        type: sp('fusion_shrine'),
+        time: 1200,
+        experience: 30.0,
+        fluid: { fluid: ei('blazing_essence') },
+        ingredients: [
+            { item: mc('beef'), count: 64 },
+            { item: mc('beef'), count: 64 },
+            { item: fd('shepherds_pie_block'), count: 1 },
+            { item: mc('golden_apple'), count: 4 },
+            { item: mc('golden_carrot'), count: 32 },
+            { item: sp('shimmerstone_block'), count: 8 },
+        ],
+        result: {
+            id: ar('everlasting_beef')
+        },
+        required_advancement: sp('build_fusion_shrine'),
+        world_conditions: [
+            {
+                type: 'time_of_day',
+                time: 'noon'
+            }
+        ],
+        start_crafting_effect: 'nothing',
+        during_crafting_effects: [
+            'visual_explosions_on_shrine',
+            'nothing',
+            'visual_explosions_on_shrine'
+        ],
+        finish_crafting_effect: 'legendary_tool_craft'
+    })
+        .id(st('everlasting_beef'));
+
+        
+    // -------------------//
+    // ---- PEDESTAL ---- //
+    // -------------------//
+
+
     // -- BOTTLE OF FAILING -- //
     event.custom({
         type: sp('pedestal'),
@@ -305,53 +369,6 @@ ServerEvents.recipes(event => {
         },
         required_advancement: sp('midgame/break_decayed_bedrock')
     }).id(st('fireproof_ring'));
-
-    // -- ETERNAL STEAK -- //
-    event.custom({
-        type: sp('cinderhearth'),
-        ingredient: { item: ar('everlasting_beef') },
-        time: 800,
-        experience: 1.0,
-        results: [{
-            id: ar('eternal_steak'),
-            count: 1
-        }]
-    });
-
-    // -- EVERLASTING BEEF -- //
-    event.custom({
-        type: sp('fusion_shrine'),
-        time: 1200,
-        experience: 30.0,
-        fluid: { fluid: ei('blazing_essence') },
-        ingredients: [
-            { item: mc('beef'), count: 64 },
-            { item: mc('beef'), count: 64 },
-            { item: fd('shepherds_pie_block'), count: 1 },
-            { item: mc('golden_apple'), count: 4 },
-            { item: mc('golden_carrot'), count: 32 },
-            { item: sp('shimmerstone_block'), count: 8 },
-        ],
-        result: {
-            id: ar('everlasting_beef')
-        },
-        required_advancement: sp('build_fusion_shrine'),
-        world_conditions: [
-            {
-                type: 'time_of_day',
-                time: 'noon'
-            }
-        ],
-        start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'visual_explosions_on_shrine',
-            'nothing',
-            'visual_explosions_on_shrine'
-        ],
-        finish_crafting_effect: 'legendary_tool_craft'
-    })
-        .id(st('everlasting_beef'));
-
 });
 
 // Block tagging provided by kevintok

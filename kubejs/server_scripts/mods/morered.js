@@ -18,9 +18,9 @@ ServerEvents.recipes(event => {
     MORERED_REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
 
-    // ----------------------//
+    // ---------------------//
     // ----- WIREMILL ----- //
-    // ----------------------//
+    // ---------------------//
 
 
     // -- RED ALLOY WIRE -- //

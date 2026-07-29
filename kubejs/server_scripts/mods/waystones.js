@@ -18,6 +18,12 @@ ServerEvents.recipes(event => {
     ];
     WAYSTONE_REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
 
+
+    // ------------------------//
+    // ---- FUSION SHRINE ---- //
+    // ------------------------//
+
+
     // -- WARP STONE -- //
     event.custom({
         type: sp('fusion_shrine'),
@@ -42,6 +48,12 @@ ServerEvents.recipes(event => {
     })
         .id(st('warp_stone'));
 
+
+    // -------------------//
+    // ---- PEDESTAL ---- //
+    // -------------------//
+
+    
     // -- WARP PLATE -- //
     event.custom({
         type: sp('pedestal'),
