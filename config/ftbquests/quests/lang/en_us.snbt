@@ -115,6 +115,7 @@
 		""
 		"&eHover over the item and press shift to see all the controls&r."
 	]
+	quest.023BA92436AFFCFD.quest_subtitle: "It does more than just Copy and Paste"
 	quest.023BA92436AFFCFD.title: "Advanced Pipe Configuration"
 	quest.029C56FD6F1A36F0.quest_desc: [
 		"Mixing &aCopper&r and &bZinc&r in a heated &eMechanical Mixer&r will create &6Brass&r. "
@@ -2034,6 +2035,7 @@
 		"&oIt seems like you can program it somehow...&r"
 	]
 	quest.2ACEC02AD4EA03B7.quest_desc: ["The &6Bronze Furnace&r is a furnace that accepts steam instead of &atraditional fuels&r. It is as slow as a normal furnace, but is 10 times &3more fuel efficient&r due to using &7Steam&r."]
+	quest.2ACEC02AD4EA03B7.quest_subtitle: "High Efficiency Smelting"
 	quest.2ACF26FC95B88B16.quest_desc: ["The &aElectric Wiremill&r is the electrical version of the &6Steam Wiremill&r. It doesn't open up any new recipes, but it will process recipes &dmuch faster&r than its &7Steam&r counterpart."]
 	quest.2ADD02A2BE293FEB.quest_desc: [
 		"The &aMagnet Card&r is supposedly able to act as a magnet and you can choose whether items picked up go into your inventory or directly into your &dME network&r."
@@ -2280,10 +2282,11 @@
 	]
 	quest.2F8297E50DEF0FC6.title: "Molten Redstone"
 	quest.2F85AE19C04F241C.quest_desc: [
-		"The &aBoss Crusher&r is a &dnew multiblock&r part of &61.1.6&r of &eStaTech Industry&r. Currently, it only supports the &2Wither Model&r, allowing for it to simulate the &cWither&r in a safe environment and &3produce the drops from killing it&r from that model."
+		"The &aBoss Crusher&r is a multiblock capable of simulating &elarge and dangerous monsters&r. More importantly for industry, it also simulates their deaths and &dsubsequent drops&r."
 		""
 		"Unlike the &3Mob Crusher&r, &2Models&r in the &aBoss Crusher&r are &csingle-use&r, so you'll need to stockpile them if you plan to get a lot of&d Boss rewards&r."
 	]
+	quest.2F85AE19C04F241C.quest_subtitle: "Even Bigger Torment Nexus"
 	quest.2F8EAC597AB7E760.quest_desc: ["Increases the wearer's swim speed"]
 	quest.2FA4E183EB7E1413.quest_desc: ["The &aElectric Cutting Machine&r is the electrical version of the &6Steam Cutting Machine&r. The only recipe it unlocks is to turn &3Monocrystalline Silicon into Silicon Wafers&r, which you won't need right now. Other than that, it &dprocesses existing recipes faster and more efficiently&r."]
 	quest.2FA9CCCED8F29ACF.quest_desc: ["This &6MEGA Cell&r can hold up to &d16777216 bytes&r of &9fluids&r!!!!"]
@@ -2470,6 +2473,7 @@
 	quest.33E951F1FC9E5FBB.quest_desc: ["This &6MEGA Cell&r can hold up to &d16777216 bytes&r of &6items&r!!!!"]
 	quest.342D1B694B43F25A.quest_desc: ["The &bCrystal Fixer&r allows to easily keep &asome budding blocks&r &6repaired&r automatically. It uses &bitems&r which you have to insert into it to maintain its &6repairing&r capabilities. "]
 	quest.343127A42BA0B83C.quest_desc: ["By combining &3Creosote&r with &cRedstone Dust&r in a mixer you can create &6Lubricant&r. This fluid is used in most of the recipes in the &6Cutting Machine&r and also to speed up your &6machine overclocking&r once you reach &aelectrical machines&r."]
+	quest.343127A42BA0B83C.quest_subtitle: "Cutting Fluid"
 	quest.343127A42BA0B83C.title: "Lubricant"
 	quest.343C68866C58ADC3.quest_desc: [
 		"Now that you have a &6Bronze Boiler&r built, you can use it to power other &7steam&r machines. The &6boiler&r will automatically produce and send &7steam&r to &aadjacent machines&r, up to 8 millibuckets per tick. "
@@ -3060,7 +3064,10 @@
 		"The Forge Hammer is the key component to crafting all of your early game components for machines and other utilities."
 		""
 		"The Forge Hammer also has the added benefit of doubling your ore outputs! Utilizing this feature will be key to help with the cost of the upcoming recipes! "
+		""
+		"(If you have previous experience with Modern Industrialization, note that the &byield&r for several recipes in the forge hammer has &4changed&r.)"
 	]
+	quest.412958496FE9150E.quest_subtitle: "CLANG! CLANG! CLANG! CLANG!"
 	quest.414B56DC1F435AC1.quest_desc: [
 		"&bChutes&r can be used to transfer items from inventories vertically. You can right-click with a wrench to toggle viewing the &dglass&r on the side of the &bChute&r. "
 		""
@@ -3912,6 +3919,7 @@
 		""
 		"For &3Ender Pearls&r, you will need to make &bLiquid Ender&r, which can be made by combining &3Ender Pearl Dust&r and &9Water&r in a &eMixer&r."
 	]
+	quest.5247AA1D02690986.quest_subtitle: "The Torment Nexus"
 	quest.525AF93D54F512D6.quest_desc: [
 		"Your last experiment was not only &cdangerous&r, but also quite a pain to get rid of. Just in case anything ever gets out of hand again, you created this &emodified variant&r. This time, though, to heal instead of flooding your base. &oYeah that's probably better&r."
 		""
@@ -4019,6 +4027,7 @@
 		""
 		"If you're having trouble forming the multiblock, you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
 	]
+	quest.537D76EA2DFCE794.quest_subtitle: "High Throughput Smelting"
 	quest.53AEA0E74CE842B5.quest_desc: ["The &bTungstensteel Upgrade&r can allow Drawers' storage to be multiplied by 5, allowing them to hold a maximum of &61280000 items&r when fully upgraded."]
 	quest.53AEBDE8C4CA1429.quest_desc: [
 		"The &2Tesla Coil&r can't send power &edirectly to machines&r. You'll need the &aTesla Receiver&r to transfer power to them. The &aTesla Receiver&r has an output side where you can connect &bmachines&r or a &bcable.&r"
@@ -4462,6 +4471,7 @@
 		""
 		"Like before, if you forget how to build the multiblock, you can always hold your wrench to see its structure and hold hatches to see valid positions."
 	]
+	quest.5B2F6D4ECFE51D74.quest_subtitle: "You will want several of these."
 	quest.5B30B44F2CE66ACB.quest_desc: ["Used in &2&lCreate 6.0&r&r's new &9&oitem management&r&r systems and in other places."]
 	quest.5B30B44F2CE66ACB.quest_subtitle: "Amazon Delivery"
 	quest.5B497F5E8E946999.quest_desc: ["Although you can make this as soon as you obtain &bAluminum&r, it's &enot very useful&r before you get digital circuits for the &dCrystal Assembler&r."]
@@ -4911,6 +4921,7 @@
 		""
 		"You've worked hard to get to this point, so I'm throwing in a few freebies in the rewards."
 	]
+	quest.6674415101329CDE.quest_subtitle: "It can run DOOM."
 	quest.66932BBDA030E6C6.quest_desc: [
 		"The &aScepter of Fortification&r will grant you &eadditional protection&r. Has a long cooldown."
 		""
@@ -5837,6 +5848,7 @@
 		""
 		"&eI would recommend making this as soon as possible.&r The resources saved making the many plates will help your progression immensely!"
 	]
+	quest.7AAF70094208A6E9.quest_subtitle: "Steam-powered Clang"
 	quest.7AD01A35E82AF238.quest_desc: ["You can create &dTungsten Nuggets&r by compressing &dTungsten Tiny Dusts&r. This process is &cvery, very slow&r, so you'll want to get as much as you need to make an &eImplosion Chamber&r and then never use the compressing method again."]
 	quest.7AD01A35E82AF238.quest_subtitle: "The Infrastructure Test"
 	quest.7AD765F56A83337B.quest_desc: ["If you already have an &aIndustrial Storage Unit&r, you can create this &bIndustrial Storage Upgrader&r. This saves a bit on resources and allows you to not have to move your existing storage units."]
@@ -5850,6 +5862,7 @@
 	quest.7AD837EF6D37373B.title: "Overclock Upgrades"
 	quest.7B05B74F1D05F581.quest_desc: ["The &bRazor Falchion&r is a razor-sharp short blade with &clow durability&r that comes &dpre-enchanted&r with &5Looting III&r."]
 	quest.7B0D4508DF6DE961.quest_desc: ["The &eBronze Tank&r can store up to &d4000 mB&r of any fluid and continues to retain it's inventory when broken."]
+	quest.7B0D4508DF6DE961.quest_subtitle: "It's better than the Iron Tank"
 	quest.7B2901618284D7E5.quest_desc: ["With the &bTrain Schedule&r you can fully automate your trains. There's a lot to unpack here that the &ePonder&r scene would do a much better job of than this quest description."]
 	quest.7B2BA36742050A0A.quest_desc: [
 		"An &lupgrade&r for &eCreate Sand Paper&r."
