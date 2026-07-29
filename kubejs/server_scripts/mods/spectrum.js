@@ -218,7 +218,7 @@ ServerEvents.recipes(event => {
     // ---- CINDERHEARTH ---- //
     // -----------------------//
 
-    
+
     // -- ETERNAL STEAK -- //
     event.custom({
         type: sp('cinderhearth'),
@@ -236,7 +236,7 @@ ServerEvents.recipes(event => {
     // ---- FUSION SHRINE ---- //
     // ------------------------//
 
-    
+
     // -- EVERLASTING BEEF -- //
     event.custom({
         type: sp('fusion_shrine'),
@@ -271,7 +271,7 @@ ServerEvents.recipes(event => {
     })
         .id(st('everlasting_beef'));
 
-        
+
     // -------------------//
     // ---- PEDESTAL ---- //
     // -------------------//

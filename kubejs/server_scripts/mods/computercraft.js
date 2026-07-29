@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
         D: lbr('redstone_circuit_board')
     }).id(st('disk_drive'));
 
-     // -- ADVANCED COMPUTER -- //
+    // -- ADVANCED COMPUTER -- //
     event.shaped(cc('computer_advanced'), [
         'EEE',
         'ECE',
@@ -169,7 +169,7 @@ ServerEvents.recipes(event => {
         A: mi('aluminum_plate')
     }).id(st('computer_advanced'));
 
-     // -- ADVANCED TURTLE -- //
+    // -- ADVANCED TURTLE -- //
     event.shaped(cc('turtle_advanced'), [
         'EBE',
         'ECE',
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
         B: mi('electrum_block')
     }).id(st('turtle_advanced'));
 
-     // -- ADVANCED POCKET COMPUTER -- //
+    // -- ADVANCED POCKET COMPUTER -- //
     event.shaped(cc('pocket_computer_advanced'), [
         'ERE',
         'ECE',

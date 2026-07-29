@@ -3,15 +3,19 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-StartupEvents.registry('item', event => {
-    event.create('personal_space_shield')
+StartupEvents.registry('item', (event) => {
+    event
+        .create('personal_space_shield')
         .unstackable()
         .rarity('Rare')
         .displayName('Personal Space Shield')
         .tag('curios:charm')
-        .tooltip('§aProvides a personal bubble of safety\n§awhile in low-oxygen environments\n\n§bCan be equipped in a curio slot');
+        .tooltip(
+            '§aProvides a personal bubble of safety\n§awhile in low-oxygen environments\n\n§bCan be equipped in a curio slot'
+        );
 
-    event.create('angel_ring')
+    event
+        .create('angel_ring')
         .unstackable()
         .rarity('Epic')
         .glow(true)
@@ -21,10 +25,16 @@ StartupEvents.registry('item', event => {
             CuriosJSCapabilityBuilder.create()
                 .canEquip((slotContext, stack) => true)
                 .canUnequip((slotContext, stack) => true)
-                .addAttribute('neoforge:creative_flight', 'kubejs_flight_ring', 1.0, 'add_value')
+                .addAttribute(
+                    'neoforge:creative_flight',
+                    'kubejs_flight_ring',
+                    1.0,
+                    'add_value'
+                )
         );
 
-    event.create('fireproof_ring')
+    event
+        .create('fireproof_ring')
         .unstackable()
         .rarity('Epic')
         .glow(true)
@@ -39,191 +49,199 @@ StartupEvents.registry('item', event => {
                     let player = slotContext.entity();
                     if (player.level.isClientSide()) return;
                     if (!player.hasEffect('minecraft:fire_resistance')) {
-                        player.potionEffects.add('minecraft:fire_resistance', 400, 0, true, false)
+                        player.potionEffects.add(
+                            'minecraft:fire_resistance',
+                            400,
+                            0,
+                            true,
+                            false
+                        );
                     }
                     if (player.isOnFire()) {
-                        player.setRemainingFireTicks(0)
+                        player.setRemainingFireTicks(0);
                     }
                 })
-                .modifyAttributesTooltip((tooltips, stack) => ['', '§6When worn as ring:', '§9Provides a Fire Resistance effect'])
+                .modifyAttributesTooltip((tooltips, stack) => [
+                    '',
+                    '§6When worn as ring:',
+                    '§9Provides a Fire Resistance effect',
+                ])
         );
 
-    event.create('lens_mold')
-        .unstackable()
-        .displayName('Lens Mold');
+    event.create('lens_mold').unstackable().displayName('Lens Mold');
 
-    event.create('short_range_lens')
+    event
+        .create('short_range_lens')
         .maxStackSize(16)
         .rarity('Uncommon')
         .displayName('Short Range Lens')
         .tooltip('§bFor use in the Space Telescope');
 
-    event.create('deep_space_lens')
+    event
+        .create('deep_space_lens')
         .maxStackSize(16)
         .rarity('Uncommon')
         .displayName('Deep Space Lens')
         .tooltip('§bFor use in the Space Telescope');
 
-    event.create('unrefined_simple_stellar_data')
+    event
+        .create('unrefined_simple_stellar_data')
         .rarity('Uncommon')
         .displayName('Unrefined Simple Stellar Data')
         .tooltip('§aContains unrefined basic data');
 
-    event.create('unrefined_deep_space_stellar_data')
+    event
+        .create('unrefined_deep_space_stellar_data')
         .rarity('Rare')
         .displayName('Unrefined Deep Space Stellar Data')
-        .tooltip('§aContains unrefined deep space data')
+        .tooltip('§aContains unrefined deep space data');
 
-    event.create('planetary_data')
+    event
+        .create('planetary_data')
         .rarity('Uncommon')
         .displayName('Planetary Data')
         .tooltip('§aContains information about a stellar mass');
 
-    event.create('star_data')
+    event
+        .create('star_data')
         .rarity('Uncommon')
         .displayName('Star Data')
         .tooltip('§aContains information about a star');
 
-    event.create('black_hole_data')
+    event
+        .create('black_hole_data')
         .rarity('Rare')
         .displayName('Black Hole Data')
         .tooltip('§dContains information about a black hole');
 
-    event.create('anomalous_stellar_data')
+    event
+        .create('anomalous_stellar_data')
         .rarity('Rare')
         .displayName('Anomalous Stellar Data')
         .tooltip('§dVery rare data of a spatial anomaly');
 
-    event.create('star_location_telemetry')
+    event
+        .create('star_location_telemetry')
         .rarity('Rare')
         .displayName('Star Location Telemetry')
         .tooltip('§aContains coordinates to a star');
 
-    event.create('planetary_location_telemetry')
+    event
+        .create('planetary_location_telemetry')
         .rarity('Rare')
         .displayName('Planetary Location Telemetry')
         .tooltip('§aContains coordinates to a planet');
 
-    event.create('black_hole_location_telemetry')
+    event
+        .create('black_hole_location_telemetry')
         .rarity('Rare')
         .displayName('Black Hole Location Telemetry')
         .tooltip('§aContains coordinates to a black hole');
 
-    event.create('anomaly_location_telemetry')
+    event
+        .create('anomaly_location_telemetry')
         .rarity('Epic')
         .displayName('Anomaly Location Telemetry')
         .tooltip('§aContains coordinates to a deep space anomaly');
 
-    event.create('research_probe')
+    event
+        .create('research_probe')
         .displayName('Research Probe')
-        .tooltip('§bCan be launched in a Space Probe Launcher using telemetry data');
+        .tooltip(
+            '§bCan be launched in a Space Probe Launcher using telemetry data'
+        );
 
-    event.create('star_imploder')
+    event
+        .create('star_imploder')
         .rarity('Epic')
         .displayName('Star Imploder')
-        .tooltip('§aDeliver using a Research Probe\n§cCauses a star to enter supernova');
+        .tooltip(
+            '§aDeliver using a Research Probe\n§cCauses a star to enter supernova'
+        );
 
-    event.create('dark_matter')
-        .displayName('Dark Matter')
-        .rarity('Rare');
+    event.create('dark_matter').displayName('Dark Matter').rarity('Rare');
 
-    event.create('antimatter_housing')
+    event
+        .create('antimatter_housing')
         .displayName('Antimatter Housing')
         .tooltip('§aUsed to safely store antimatter');
 
-    event.create('antimatter')
+    event
+        .create('antimatter')
         .displayName('Antimatter')
         .rarity('Epic')
         .tooltip('§4What should not be');
 
-    event.create('contained_antimatter')
+    event
+        .create('contained_antimatter')
         .displayName('Contained Antimatter')
         .rarity('Epic');
 
-    event.create('basic_space_circuit')
+    event
+        .create('basic_space_circuit')
         .displayName('Basic Space Circuit')
         .rarity('Uncommon');
 
-    event.create('advanced_space_circuit')
+    event
+        .create('advanced_space_circuit')
         .displayName('Advanced Space Circuit')
         .rarity('Rare');
 
-    event.create('anomalous_space_circuit')
+    event
+        .create('anomalous_space_circuit')
         .displayName('Anomalous Space Circuit')
         .rarity('Epic');
 
-    event.create('core_fragment')
-        .displayName('Core Fragment')
-        .rarity('Rare');
+    event.create('core_fragment').displayName('Core Fragment').rarity('Rare');
 
-    event.create('steel_fuel_tank')
-        .displayName('Steel Fuel Tank')
+    event.create('steel_fuel_tank').displayName('Steel Fuel Tank');
 
-    event.create('desh_fuel_tank')
-        .displayName('Desh Fuel Tank')
+    event.create('desh_fuel_tank').displayName('Desh Fuel Tank');
 
-    event.create('ostrum_fuel_tank')
-        .displayName('Ostrum Fuel Tank')
+    event.create('ostrum_fuel_tank').displayName('Ostrum Fuel Tank');
 
-    event.create('calorite_fuel_tank')
-        .displayName('Calorite Fuel Tank')
+    event.create('calorite_fuel_tank').displayName('Calorite Fuel Tank');
 
-    event.create('engine_framebox')
-        .displayName('Engine Framebox')
+    event.create('engine_framebox').displayName('Engine Framebox');
 
-    event.create('rocket_propeller')
-        .displayName('Rocket Propeller')
+    event.create('rocket_propeller').displayName('Rocket Propeller');
 
-    event.create('rocket_cone')
-        .displayName('Rocket Cone')
+    event.create('rocket_cone').displayName('Rocket Cone');
 
-    event.create('rocket_fin')
-        .displayName('Rocket Fin')
+    event.create('rocket_fin').displayName('Rocket Fin');
 
-    event.create('steel_engine')
-        .displayName('Steel Engine')
+    event.create('steel_engine').displayName('Steel Engine');
 
-    event.create('desh_engine')
-        .displayName('Desh Engine')
+    event.create('desh_engine').displayName('Desh Engine');
 
-    event.create('ostrum_engine')
-        .displayName('Ostrum Engine')
+    event.create('ostrum_engine').displayName('Ostrum Engine');
 
-    event.create('calorite_engine')
-        .displayName('Calorite Engine')
+    event.create('calorite_engine').displayName('Calorite Engine');
 
-    event.create('basic_space_probe')
-        .displayName('Basic Space Probe')
+    event.create('basic_space_probe').displayName('Basic Space Probe');
 
-    event.create('advanced_space_probe')
-        .displayName('Advanced Space Probe')
+    event.create('advanced_space_probe').displayName('Advanced Space Probe');
 
-    event.create('highly_advanced_space_probe')
-        .displayName('Highly Advanced Space Probe')
+    event
+        .create('highly_advanced_space_probe')
+        .displayName('Highly Advanced Space Probe');
 
-    event.create('boron_quartz_blend')
+    event
+        .create('boron_quartz_blend')
         .displayName('Boron-Quartz Blend')
-        .tag('c:dusts')
+        .tag('c:dusts');
 
-    event.create('bartman')
-        .displayName('Jon Bartman');
+    event.create('bartman').displayName('Jon Bartman');
 
-    event.create('withered_soc')
-        .displayName('Withered SoC');
+    event.create('withered_soc').displayName('Withered SoC');
 
-    event.create('space_probe')
-        .displayName('Space Probe');
+    event.create('space_probe').displayName('Space Probe');
 
-    event.create('statech_logo')
-        .displayName('StaTech Logo');
+    event.create('statech_logo').displayName('StaTech Logo');
 
-    event.create('voice_chat')
-        .displayName('Voice Chat');
-    
-    event.create('scrap')
-        .displayName('Scrap')
-    
-    event.create('uu_matter')
-        .displayName('UU Matter')
-        .rarity('Epic')
+    event.create('voice_chat').displayName('Voice Chat');
+
+    event.create('scrap').displayName('Scrap');
+
+    event.create('uu_matter').displayName('UU Matter').rarity('Epic');
 });

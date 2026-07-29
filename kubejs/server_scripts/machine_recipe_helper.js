@@ -48,7 +48,7 @@ let newMachineRecipe = (type, eu, duration, item_inputs, item_outputs, fluid_inp
 // -- ALLOY SMELTER -- //
 /**
  * Alloy Smelter
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -62,7 +62,7 @@ let alloySmelter = (event, id, eu, duration, item_inputs, item_outputs) => {
 // -- ASSEMBLER -- //
 /**
  * Assembler
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -78,7 +78,7 @@ let assembler = (event, id, eu, duration, item_inputs, item_outputs, fluid_input
 // -- BLAST FURNACE -- //
 /**
  * Blast Furnace
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -94,7 +94,7 @@ let blastFurnace = (event, id, eu, duration, item_inputs, item_outputs, fluid_in
 // -- BOSS CRUSHER -- //
 /**
  * Boss Crusher
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -110,7 +110,7 @@ let boss_crusher = (event, id, eu, duration, item_inputs, item_outputs, fluid_in
 // -- CANNING MACHINE -- //
 /**
  * Canning Machine
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -126,7 +126,7 @@ let canningMachine = (event, id, eu, duration, item_inputs, item_outputs, fluid_
 // -- CENTRIFUGE -- //
 /**
  * Centrifuge
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -142,7 +142,7 @@ let centrifuge = (event, id, eu, duration, item_inputs, item_outputs, fluid_inpu
 // -- CHEMICAL REACTOR -- //
 /**
  * Chemical Reactor
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -158,7 +158,7 @@ let chemicalReactor = (event, id, eu, duration, item_inputs, item_outputs, fluid
 // -- COMPRESSOR -- //
 /**
  * Compressor
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -172,7 +172,7 @@ let compressor = (event, id, eu, duration, item_inputs, item_outputs) => {
 // -- CORE DRILL -- //
 /**
  * Core Drill
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -188,7 +188,7 @@ let coreDrill = (event, id, eu, duration, item_inputs, item_outputs, fluid_input
 // -- CRUSHER -- //
 /**
  * Mob Crusher
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -204,7 +204,7 @@ let crusher = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs,
 // -- CRYOGENIC PRECIPITATOR -- //
 /**
  * Cryogenic Precipitator
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -220,7 +220,7 @@ let cryogenicPrecipitator = (event, id, eu, duration, item_inputs, item_outputs,
 // -- CUTTING MACHINE -- //
 /**
  * Cutting Machine
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -235,7 +235,7 @@ let cuttingMachine = (event, id, eu, duration, item_inputs, item_outputs) => {
 // -- DISTILLATION TOWER -- //
 /**
  * Distillation Tower
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -249,7 +249,7 @@ let distillationTower = (event, id, eu, duration, fluid_inputs, fluid_outputs) =
 // -- DISTILLERY -- //
 /**
  * Distillery
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -263,7 +263,7 @@ let distillery = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
 // -- DRAGON EGG ENERGY SIPHON -- //
 /**
  * Dragon Egg Energy Siphon
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -280,7 +280,7 @@ let dragonEggEnergySiphon = (event, id, eu, duration, item_inputs, item_outputs,
 // -- DRILLING RIG -- //
 /**
  * Drilling Rig
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -294,7 +294,7 @@ let drillingRig = (event, id, eu, duration, item_inputs, fluid_outputs) => {
 // -- ELECTROLYZER -- //
 /**
  * Electrolyzer
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -310,7 +310,7 @@ let electrolyzer = (event, id, eu, duration, item_inputs, item_outputs, fluid_in
 // -- FUSION REACTOR -- //
 /**
  * Fusion Reactor
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -324,7 +324,7 @@ let fusion = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
 // -- GREEN HOUSE -- //
 /**
  * Greenhouse
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -350,7 +350,7 @@ let greenhouse = (event, id, eu, duration, item_inputs, item_outputs, fluid_inpu
 // -- HEAT EXCHANGER -- //
 /**
  * Heat Exchanger
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -366,7 +366,7 @@ let heatExchanger = (event, id, eu, duration, item_inputs, item_outputs, fluid_i
 // -- IMPLOSION COMPRESSOR -- //
 /**
  * Implosion Compressor
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -380,7 +380,7 @@ let implosionCompressor = (event, id, eu, duration, item_inputs, item_outputs) =
 // -- LASER ENGRAVER -- //
 /**
  * Laser Engraver
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -394,7 +394,7 @@ let laserEngraver = (event, id, eu, duration, item_inputs, item_outputs) => {
 // -- MACERATOR -- //
 /**
  * Macerator
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -408,7 +408,7 @@ let macerator = (event, id, eu, duration, item_inputs, item_outputs) => {
 // -- MIXER -- //
 /**
  * Mixer
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -424,7 +424,7 @@ let mixer = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, f
 // -- PACKER -- //
 /**
  * Packer
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -438,7 +438,7 @@ let packer = (event, id, eu, duration, item_inputs, item_outputs) => {
 // -- PHOTOSYNTHETIC CHAMBER -- //
 /**
  * Photosynthetic Chamber
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -453,7 +453,7 @@ let photoChamber = (event, id, eu, duration, item_inputs, item_outputs, fluid_in
 // -- POLARIZER -- //
 /**
  * Polarizer
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -467,7 +467,7 @@ let polarizer = (event, id, eu, duration, item_inputs, item_outputs) => {
 // -- PYROLYSE OVEN -- //
 /**
  * Pyrolyse Oven
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -483,7 +483,7 @@ let pyrolyseOven = (event, id, eu, duration, item_inputs, item_outputs, fluid_in
 // -- QUARRY -- //
 /**
  * Quarry
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -497,7 +497,7 @@ let quarry = (event, id, eu, duration, item_inputs, item_outputs) => {
 // -- QUASI QUANTUM SINGULARITY FORGE -- //
 /**
  * Singularity Forge
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -512,7 +512,7 @@ let singularityForge = (event, id, eu, duration, item_inputs, item_outputs, flui
 // -- RECYCLER -- //
 /**
  * Recycler
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -526,7 +526,7 @@ let recycler = (event, id, eu, duration, item_inputs, item_outputs) => {
 // -- ROCKET PART ASSEMBLER -- //
 /**
  * Rocket Part Assembler
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -541,7 +541,7 @@ let rocketAssembler = (event, id, eu, duration, item_inputs, item_outputs, fluid
 // -- SPACE PROBE LAUNCHER -- //
 /**
  * Space Probe Launcher
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -562,7 +562,7 @@ let spl = (event, id, eu, duration, item_inputs, item_outputs, adjacent_block, a
 // -- SUPERCOMPUTER -- //
 /**
  * Supercomputer
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -577,7 +577,7 @@ let supercomputer = (event, id, eu, duration, item_inputs, item_outputs, fluid_i
 // -- TELESCOPE -- //
 /**
  * Telescope
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -596,7 +596,7 @@ let telescope = (event, id, eu, duration, item_inputs, item_outputs, fluid_input
 // -- UNPACKER -- //
 /**
  * Unpacker
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -610,7 +610,7 @@ let unpacker = (event, id, eu, duration, item_inputs, item_outputs) => {
 // -- VACUUM FREEZER -- //
 /**
  * Vacuum Freezer
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
@@ -626,7 +626,7 @@ let vacuumFreezer = (event, id, eu, duration, item_inputs, item_outputs, fluid_i
 // -- WIREMILL -- //
 /**
  * Wiremill
- * @param {!string} event 
+ * @param {!string} event
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)

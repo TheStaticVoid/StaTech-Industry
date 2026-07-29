@@ -13,8 +13,8 @@ ServerEvents.recipes(event => {
         st('low_tier_scrap'),
         8,
         200,
-        [ { amount: 1, tag: 'statech:scrappable/low' } ],
-        [ { amount: 1, item: kj('scrap'), probability: 0.1 } ]
+        [{ amount: 1, tag: 'statech:scrappable/low' }],
+        [{ amount: 1, item: kj('scrap'), probability: 0.1 }]
     );
 
     // -- MID TIER SCRAP -- //
@@ -23,8 +23,8 @@ ServerEvents.recipes(event => {
         st('mid_tier_scrap'),
         8,
         200,
-        [ { amount: 1, tag: 'statech:scrappable/mid' } ],
-        [ { amount: 1, item: kj('scrap'), probability: 0.25 } ]
+        [{ amount: 1, tag: 'statech:scrappable/mid' }],
+        [{ amount: 1, item: kj('scrap'), probability: 0.25 }]
     );
 
     // -- HIGH TIER SCRAP -- //
@@ -33,8 +33,8 @@ ServerEvents.recipes(event => {
         st('high_tier_scrap'),
         8,
         200,
-        [ { amount: 1, tag: 'statech:scrappable/high' } ],
-        [ { amount: 1, item: kj('scrap'), probability: 0.75 } ]
+        [{ amount: 1, tag: 'statech:scrappable/high' }],
+        [{ amount: 1, item: kj('scrap'), probability: 0.75 }]
     );
 
 });

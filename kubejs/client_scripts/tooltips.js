@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ItemEvents.modifyTooltips(event => {
+ItemEvents.modifyTooltips((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let mi = (id) => `modern_industrialization:${id}`;
     let mt = (id) => `mi_tweaks:${id}`;
@@ -37,9 +37,8 @@ ItemEvents.modifyTooltips(event => {
         kj('advanced_space_circuit'),
         kj('anomalous_space_circuit'),
         mi('supercomputer'),
-        mi('telescope')
+        mi('telescope'),
     ];
-
 
     // -- LIST OF ALL CUSTOM MACHINES AND ITEMS -- //
 
@@ -79,7 +78,7 @@ ItemEvents.modifyTooltips(event => {
         mi('molten_borosilicate_glass'),
         mi('boron_trifluoride'),
         mi('diborane'),
-        mi('pentaborane')
+        mi('pentaborane'),
     ];
 
     const CUSTOM_MACHINES_AND_ITEMS = [
@@ -110,21 +109,21 @@ ItemEvents.modifyTooltips(event => {
         mi('stone_dust'),
         mi('clay_dust'),
         mi('clay_tiny_dust'),
-        /^modern_industrialization:.*(calorite|tungstensteel|desh|moon_ice|ostrum|polytetrafluoroethylene|cobalt|zinc|dark_ashes|calcite|fluorite|acrylonitrile_butadiene_styrene|enderium|entro|sky_bronze|sky_steel|sapphire|peridot|ruby|boron_trioxide|kernite|lithium_hydride|lithium_tetrafluoroborate|lithium_fluoride).*/
+        /^modern_industrialization:.*(calorite|tungstensteel|desh|moon_ice|ostrum|polytetrafluoroethylene|cobalt|zinc|dark_ashes|calcite|fluorite|acrylonitrile_butadiene_styrene|enderium|entro|sky_bronze|sky_steel|sapphire|peridot|ruby|boron_trioxide|kernite|lithium_hydride|lithium_tetrafluoroborate|lithium_fluoride).*/,
     ];
 
     // -- ADD TOOLTIP -- //
     const ADDED_BY_STATECH = Text.gold('Added by StaTech Industry');
-    CUSTOM_MACHINES_AND_ITEMS.forEach(item => {
-        event.modify(item, tooltip => {
+    CUSTOM_MACHINES_AND_ITEMS.forEach((item) => {
+        event.modify(item, (tooltip) => {
             tooltip.removeExactText(ADDED_BY_STATECH);
             tooltip.add([ADDED_BY_STATECH]);
         });
     });
     // Currently seems there is no way to add tooltip to fluids, at least not easily
-    CUSTOM_FLUIDS.forEach(fluid => {
-        [`${fluid}_bucket`].forEach(item => {
-            event.modify(item, tooltip => {
+    CUSTOM_FLUIDS.forEach((fluid) => {
+        [`${fluid}_bucket`].forEach((item) => {
+            event.modify(item, (tooltip) => {
                 tooltip.removeExactText(ADDED_BY_STATECH);
                 tooltip.add([ADDED_BY_STATECH]);
             });
@@ -132,10 +131,9 @@ ItemEvents.modifyTooltips(event => {
     });
 
     const CURRENTLY_DISABLED = Text.red('Not Yet Obtainable');
-    DISABLED_MACHINES_AND_ITEMS.forEach(item => {
-        event.modify(item, tooltip => {
+    DISABLED_MACHINES_AND_ITEMS.forEach((item) => {
+        event.modify(item, (tooltip) => {
             tooltip.add([CURRENTLY_DISABLED]);
         });
     });
-
 });
