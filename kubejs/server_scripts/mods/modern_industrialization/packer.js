@@ -10,13 +10,14 @@ ServerEvents.recipes(event => {
     // -- PACKER REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
         mi('materials/packer/mixed_ingot_blastproof'),
+        mi('vanilla_recipes/packer/chains'),
         mi('compat/ae2/printed_calculation_processor'),
         mi('compat/ae2/printed_engineering_processor'),
         mi('compat/ae2/printed_logic_processor'),
         mi('compat/ae2/printed_silicon'),
         mi('compat/ae2/printed_silicon_from_ingot')
     ];
-    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
+    REMOVED_RECIPE.forEach(id => event.remove({ id: id }));
 
     // -- FLUIX GLASS CABLE -- //
     packer(
@@ -28,7 +29,7 @@ ServerEvents.recipes(event => {
             { amount: 2, item: ae('fluix_crystal') },
             { amount: 1, item: ae('quartz_fiber') }
         ],
-        [ { amount: 4, item: ae('fluix_glass_cable') } ]
+        [{ amount: 4, item: ae('fluix_glass_cable') }]
     );
 
     // -- FLUIX ME COVERED CABLE -- //
@@ -41,7 +42,7 @@ ServerEvents.recipes(event => {
             { amount: 1, tag: mc('wool') },
             { amount: 1, item: ae('fluix_glass_cable') }
         ],
-        [ { amount: 1, item: ae('fluix_covered_cable') } ]
+        [{ amount: 1, item: ae('fluix_covered_cable') }]
     );
 
     // -- FLUIX ME DENSE COVERED CABLE -- //
@@ -50,8 +51,8 @@ ServerEvents.recipes(event => {
         st('fluix_covered_dense_cable'),
         8,
         200,
-        [ { amount: 4, item: ae('fluix_covered_cable') } ],
-        [ { amount: 1, item: ae('fluix_covered_dense_cable') } ]
+        [{ amount: 4, item: ae('fluix_covered_cable') }],
+        [{ amount: 1, item: ae('fluix_covered_dense_cable') }]
     );
 
     // -- FLUIX ME SMART CABLE -- //
@@ -65,7 +66,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mc('glowstone_dust') }
         ],
-        [ { amount: 1, item: ae('fluix_smart_cable') } ]
+        [{ amount: 1, item: ae('fluix_smart_cable') }]
     );
 
     // -- FLUIX ME DENSE SMART CABLE -- //
@@ -74,8 +75,8 @@ ServerEvents.recipes(event => {
         st('fluix_smart_dense_cable_packed'),
         8,
         200,
-        [ { amount: 4, item: ae('fluix_smart_cable') } ],
-        [ { amount: 1, item: ae('fluix_smart_dense_cable') } ]
+        [{ amount: 4, item: ae('fluix_smart_cable') }],
+        [{ amount: 1, item: ae('fluix_smart_dense_cable') }]
     );
 
     // -- FLUIX DENSE ME SMART CABLE -- //
@@ -89,7 +90,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mc('glowstone_dust') }
         ],
-        [ { amount: 1, item: ae('fluix_smart_dense_cable') } ]
+        [{ amount: 1, item: ae('fluix_smart_dense_cable') }]
     );
 
 
@@ -103,7 +104,7 @@ ServerEvents.recipes(event => {
             { amount: 1, tag: mi('fluid_pipes') },
             { amount: 2, item: mi('copper_plate') }
         ],
-        [ { amount: 8, item: md('fluid_pipe') } ]
+        [{ amount: 8, item: md('fluid_pipe') }]
     );
 
     // -- ITEM PIPE -- //
@@ -116,7 +117,7 @@ ServerEvents.recipes(event => {
             { amount: 1, tag: mi('item_pipes') },
             { amount: 2, item: mi('iron_plate') }
         ],
-        [ { amount: 8, item: md('item_pipe') } ]
+        [{ amount: 8, item: md('item_pipe') }]
     );
 
     // -- SUPERCONDUCTOR EU CABLE -- //
@@ -129,7 +130,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('superconductor_cable') },
             { amount: 2, item: mi('rubber_sheet') }
         ],
-        [ { amount: 4, item: md('superconductor_cable') } ]
+        [{ amount: 4, item: md('superconductor_cable') }]
     );
 
     // -- EV EU CABLE -- //
@@ -142,7 +143,7 @@ ServerEvents.recipes(event => {
             { amount: 1, tag: kj('ev_wire') },
             { amount: 2, item: mi('rubber_sheet') }
         ],
-        [ { amount: 4, item: md('ev_cable') } ]
+        [{ amount: 4, item: md('ev_cable') }]
     );
 
     // -- HV EU CABLE -- //
@@ -155,7 +156,7 @@ ServerEvents.recipes(event => {
             { amount: 1, tag: kj('hv_wire') },
             { amount: 2, item: mi('rubber_sheet') }
         ],
-        [ { amount: 4, item: md('hv_cable') } ]
+        [{ amount: 4, item: md('hv_cable') }]
     );
 
     // -- MV EU CABLE -- //
@@ -168,7 +169,7 @@ ServerEvents.recipes(event => {
             { amount: 1, tag: kj('mv_wire') },
             { amount: 2, item: mi('rubber_sheet') }
         ],
-        [ { amount: 4, item: md('mv_cable') } ]
+        [{ amount: 4, item: md('mv_cable') }]
     );
 
     // -- LV EU CABLE -- //
@@ -181,7 +182,7 @@ ServerEvents.recipes(event => {
             { amount: 1, tag: kj('lv_wire') },
             { amount: 2, item: mi('rubber_sheet') }
         ],
-        [ { amount: 4, item: md('lv_cable') } ]
+        [{ amount: 4, item: md('lv_cable') }]
     );
 
     // -- CHAIN -- //
@@ -190,8 +191,8 @@ ServerEvents.recipes(event => {
         st('chain'),
         2,
         100,
-        [ { amount: 3, item: mi('iron_ring') } ],
-        [ { amount: 8, item: mc('chain') } ]
+        [{ amount: 3, item: mi('iron_ring') }],
+        [{ amount: 8, item: mc('chain') }]
     );
 
     // -- MIXED BLASTPROOF INGOT -- //
@@ -205,7 +206,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('tungsten_ingot') },
             { amount: 1, item: mi('ostrum_ingot') }
         ],
-        [ { amount: 1, item: mi('mixed_ingot_blastproof') } ]
+        [{ amount: 1, item: mi('mixed_ingot_blastproof') }]
     );
 
     // -- CERTUS QUARTZ BLOCK -- //
@@ -214,8 +215,8 @@ ServerEvents.recipes(event => {
         st('quartz_block'),
         8,
         200,
-        [ { amount: 4, item: ae('certus_quartz_crystal') } ],
-        [ { amount: 1, item: ae('quartz_block') } ]
+        [{ amount: 4, item: ae('certus_quartz_crystal') }],
+        [{ amount: 1, item: ae('quartz_block') }]
     );
 
     // -- ROCKY DIRT -- //
@@ -224,8 +225,8 @@ ServerEvents.recipes(event => {
         st('rocky_dirt'),
         2,
         100,
-        [ { amount: 4, item: mc('dirt') } ],
-        [ { amount: 4, item: db('rocky_dirt') } ]
+        [{ amount: 4, item: mc('dirt') }],
+        [{ amount: 4, item: db('rocky_dirt') }]
     );
 
     // -- QUARTZ GLASS -- //
@@ -239,7 +240,7 @@ ServerEvents.recipes(event => {
             { amount: 4, tag: 'c:glass_blocks/cheap' }
 
         ],
-        [ { amount: 4, item: ae('quartz_glass') } ]
+        [{ amount: 4, item: ae('quartz_glass') }]
     );
 
     // -- VIBRANT QUARTZ GLASS -- //
@@ -253,7 +254,7 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mc('glowstone_dust') }
 
         ],
-        [ { amount: 1, item: ae('quartz_vibrant_glass') } ]
+        [{ amount: 1, item: ae('quartz_vibrant_glass') }]
     );
 
     // -- BRASS INGOT TO BLOCK -- //
@@ -266,7 +267,7 @@ ServerEvents.recipes(event => {
             { amount: 9, item: cr('brass_ingot') },
             { amount: 1, item: mi('packer_block_template'), probability: 0.0 }
         ],
-        [ { amount: 1, item: cr('brass_block') } ]
+        [{ amount: 1, item: cr('brass_block') }]
     );
 
     // -- BRASS NUGGET TO INGOT -- //
@@ -275,7 +276,7 @@ ServerEvents.recipes(event => {
         st('brass_nugget_to_ingot'),
         2,
         200,
-        [ { amount: 9, item: cr('brass_nugget') } ],
-        [ { amount: 1, item: cr('brass_ingot') } ]
+        [{ amount: 9, item: cr('brass_nugget') }],
+        [{ amount: 1, item: cr('brass_ingot') }]
     );
 })
