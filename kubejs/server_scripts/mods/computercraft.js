@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
         S: mi('electrum_plate'),
         A: mi('aluminum_plate'),
         M: cc('monitor_normal')
-    }).id(st('wired_modem'));
+    }).id(st('advanced_monitor'));
 
 
     // ---------------------//
