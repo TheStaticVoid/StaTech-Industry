@@ -10,10 +10,10 @@
  * @property {!string} type - Recipe Type
  * @property {!number} eu - recipe eu/t
  * @property {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @property {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @property {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @property {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @property {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @property {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @property {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @property {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @property {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  * @property {?{?dimension: string, ?biome: string, ?biomeTag: string, ?adjacentBlock: {block: string, position: string}}[]} process_conditions - MI process conditions
  */
 
@@ -22,10 +22,10 @@
  * @param {!string} type - Recipe Type
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  * @param {?{?dimension: string, ?biome: string, ?biomeTag: string, ?adjacentBlock: {block: string, position: string}}[]} process_conditions - MI process conditions
  * @returns {newMachineRecipe} The created newMachineRecipe object
  */
@@ -52,8 +52,8 @@ let newMachineRecipe = (type, eu, duration, item_inputs, item_outputs, fluid_inp
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let alloySmelter = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(ei('alloy_smelter'), eu, duration, item_inputs, item_outputs)).id(id);
@@ -66,10 +66,10 @@ let alloySmelter = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let assembler = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('assembler'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -82,10 +82,10 @@ let assembler = (event, id, eu, duration, item_inputs, item_outputs, fluid_input
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let blastFurnace = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('blast_furnace'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -98,10 +98,10 @@ let blastFurnace = (event, id, eu, duration, item_inputs, item_outputs, fluid_in
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let boss_crusher = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('boss_crusher'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -114,10 +114,10 @@ let boss_crusher = (event, id, eu, duration, item_inputs, item_outputs, fluid_in
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let canningMachine = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(ei('canning_machine'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -130,10 +130,10 @@ let canningMachine = (event, id, eu, duration, item_inputs, item_outputs, fluid_
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let centrifuge = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('centrifuge'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -146,10 +146,10 @@ let centrifuge = (event, id, eu, duration, item_inputs, item_outputs, fluid_inpu
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let chemicalReactor = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('chemical_reactor'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -162,8 +162,8 @@ let chemicalReactor = (event, id, eu, duration, item_inputs, item_outputs, fluid
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let compressor = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('compressor'), eu, duration, item_inputs, item_outputs)).id(id);
@@ -176,10 +176,10 @@ let compressor = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let coreDrill = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('core_drill'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -192,10 +192,10 @@ let coreDrill = (event, id, eu, duration, item_inputs, item_outputs, fluid_input
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let crusher = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('mob_crusher'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -208,10 +208,10 @@ let crusher = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs,
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let cryogenicPrecipitator = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(yai('cryogenic_precipitator'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -224,8 +224,8 @@ let cryogenicPrecipitator = (event, id, eu, duration, item_inputs, item_outputs,
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let cuttingMachine = (event, id, eu, duration, item_inputs, item_outputs) => {
     let lubricant = { amount: 10, fluid: mi('lubricant') };
@@ -239,8 +239,8 @@ let cuttingMachine = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {!{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {!{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {!{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let distillationTower = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('distillation_tower'), eu, duration, null, null, fluid_inputs, fluid_outputs)).id(id);
@@ -253,8 +253,8 @@ let distillationTower = (event, id, eu, duration, fluid_inputs, fluid_outputs) =
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {!{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {!{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {!{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let distillery = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('distillery'), eu, duration, null, null, fluid_inputs, fluid_outputs)).id(id);
@@ -267,10 +267,10 @@ let distillery = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  * @param {?{?dimension: string, ?biome: string, ?biomeTag: string, ?adjacentBlock: {block: string, position: string}}[]} process_conditions - MI process conditions
  */
 let dragonEggEnergySiphon = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs, process_conditions) => {
@@ -284,8 +284,8 @@ let dragonEggEnergySiphon = (event, id, eu, duration, item_inputs, item_outputs,
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let drillingRig = (event, id, eu, duration, item_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('oil_drilling_rig'), eu, duration, item_inputs, null, null, fluid_outputs)).id(id);
@@ -298,10 +298,10 @@ let drillingRig = (event, id, eu, duration, item_inputs, fluid_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let electrolyzer = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('electrolyzer'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -314,8 +314,8 @@ let electrolyzer = (event, id, eu, duration, item_inputs, item_outputs, fluid_in
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {!{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {!{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {!{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let fusion = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('fusion_reactor'), eu, duration, null, null, fluid_inputs, fluid_outputs)).id(id);
@@ -328,10 +328,10 @@ let fusion = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  * @param {?string} adjacent_block - Process condition - adjacent block ID
  * @param {?string} adjacent_block_pos - Process condition - adjacent block position
  */
@@ -354,10 +354,10 @@ let greenhouse = (event, id, eu, duration, item_inputs, item_outputs, fluid_inpu
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let heatExchanger = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('heat_exchanger'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -370,8 +370,8 @@ let heatExchanger = (event, id, eu, duration, item_inputs, item_outputs, fluid_i
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let implosionCompressor = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('implosion_compressor'), eu, duration, item_inputs, item_outputs)).id(id);
@@ -384,8 +384,8 @@ let implosionCompressor = (event, id, eu, duration, item_inputs, item_outputs) =
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let laserEngraver = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('laser_engraver'), eu, duration, item_inputs, item_outputs)).id(id);
@@ -398,8 +398,8 @@ let laserEngraver = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let macerator = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('macerator'), eu, duration, item_inputs, item_outputs)).id(id);
@@ -412,10 +412,10 @@ let macerator = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let mixer = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('mixer'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -428,8 +428,8 @@ let mixer = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, f
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let packer = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('packer'), eu, duration, item_inputs, item_outputs)).id(id);
@@ -442,9 +442,9 @@ let packer = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
  */
 let photoChamber = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
     event.custom(newMachineRecipe(mi('photosynthetic_chamber'), eu, duration, item_inputs, item_outputs, fluid_inputs)).id(id);
@@ -457,8 +457,8 @@ let photoChamber = (event, id, eu, duration, item_inputs, item_outputs, fluid_in
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let polarizer = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('polarizer'), eu, duration, item_inputs, item_outputs)).id(id);
@@ -471,10 +471,10 @@ let polarizer = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let pyrolyseOven = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(io('pyrolyse_oven'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -487,8 +487,8 @@ let pyrolyseOven = (event, id, eu, duration, item_inputs, item_outputs, fluid_in
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let quarry = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('quarry'), eu, duration, item_inputs, item_outputs)).id(id);
@@ -501,9 +501,9 @@ let quarry = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
  */
 let singularityForge = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
     event.custom(newMachineRecipe(mi('singularity_forge'), eu, duration, item_inputs, item_outputs, fluid_inputs)).id(id);
@@ -516,8 +516,8 @@ let singularityForge = (event, id, eu, duration, item_inputs, item_outputs, flui
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let recycler = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('recycler'), eu, duration, item_inputs, item_outputs)).id(id);
@@ -530,9 +530,9 @@ let recycler = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
  */
 let rocketAssembler = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
     event.custom(newMachineRecipe(mi('rocket_part_assembler'), eu, duration, item_inputs, item_outputs, fluid_inputs)).id(id);
@@ -545,8 +545,8 @@ let rocketAssembler = (event, id, eu, duration, item_inputs, item_outputs, fluid
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  * @param {?string} adjacent_block - Process condition - adjacent block ID
  * @param {?string} adjacent_block_pos - Process condition - adjacent block position
  */
@@ -566,9 +566,9 @@ let spl = (event, id, eu, duration, item_inputs, item_outputs, adjacent_block, a
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
  */
 let supercomputer = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
     event.custom(newMachineRecipe(mi('supercomputer'), eu, duration, item_inputs, item_outputs, fluid_inputs)).id(id);
@@ -581,9 +581,9 @@ let supercomputer = (event, id, eu, duration, item_inputs, item_outputs, fluid_i
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
  */
 let telescope = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
     let process_conditions = [{
@@ -600,8 +600,8 @@ let telescope = (event, id, eu, duration, item_inputs, item_outputs, fluid_input
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let unpacker = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('unpacker'), eu, duration, item_inputs, item_outputs)).id(id);
@@ -614,10 +614,10 @@ let unpacker = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, !item: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, !fluid: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
  */
 let vacuumFreezer = (event, id, eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs) => {
     event.custom(newMachineRecipe(mi('vacuum_freezer'), eu, duration, item_inputs, item_outputs, fluid_inputs, fluid_outputs)).id(id);
@@ -630,8 +630,8 @@ let vacuumFreezer = (event, id, eu, duration, item_inputs, item_outputs, fluid_i
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, !item: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, !item: string}[]} item_outputs - Array of item outputs
+ * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
+ * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
  */
 let wiremill = (event, id, eu, duration, item_inputs, item_outputs) => {
     event.custom(newMachineRecipe(mi('wiremill'), eu, duration, item_inputs, item_outputs)).id(id);
