@@ -2,21 +2,16 @@
  * ESLint configuration file.
  */
 import js from '@eslint/js';
-import json from '@eslint/json';
 import stylistic from '@stylistic/eslint-plugin-js';
-import { defineConfig } from 'eslint/config';
 import { PanPack } from './dx/eslint-plugin/custom-plugin.mjs';
 
 /** @type {import('eslint').Linter.Config[]} */
-export default defineConfig([
+export default [
+    js.configs.recommended,
     {
-        files: ['**/*.js'],
-
         plugins: {
             '@stylistic/js': stylistic,
-            js,
         },
-        extends: ['js/recommended'],
         rules: {
             'no-unused-vars': 'off',
             'no-undef': 'off',
@@ -38,4 +33,4 @@ export default defineConfig([
         },
     },
     PanPack,
-]);
+];
