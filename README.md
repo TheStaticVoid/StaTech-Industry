@@ -13,16 +13,21 @@ I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling
 
 To download the modpack from this repository, you can clone it and use [Pakku](https://github.com/juraj-hrivnak/Pakku/releases/) to make an instance file that you can use in Prism Launcher. You can learn how to use it from the [pakku documentation](https://juraj-hrivnak.github.io/Pakku/installing-pakku.html#install-manually).
 
-## Contributors
+## 2.0 Contributers
+- @truepurpledino - Lead 2.0 developer
+- @GW-Dev - 2.0 developer
+- @DmitryProskurin - Quest fixes and recipe modifications
+- @fmbellomy - Pakku + PanPack migration
+
+## 1.0 Contributors
 - DeadeyeDutch - Sprite work for custom items
 - inferno - Pack logo
 - @Flyte-less - ZedTech textures & other various fixes
-- @GW-Dev - Peaceful mode compat / Nether Star progression changes / Boss Crusher / Boron Rocket Fuel line / secondary 2.0 developer
+- @GW-Dev - Peaceful mode compat / Nether Star progression changes / Boss Crusher / 2.0 developer
 - @kevintok - Overhauled the Scanner module config to be more colorful and useful.
 - @redcatone - Questbook spellcheck
 - @TacoMonkey11 - Marking client-side mods for packwiz
 - @DmitryProskurin - Quest fixes and recipe modifications
 - @JustinMullin - Quest fixes
 - @Quezlar - Quest typo fixes
-- @truepurpledino - Main 2.0 developer
-- @fmbellomy - Pakku/PanPack migration / various fixes
+- @truepurpledino - Lead 2.0 developer
