@@ -3,6 +3,40 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
+ItemEvents.toolTierRegistry((event) => {
+    event.add('bronze', (tier) => {
+        tier.uses = 400;
+        tier.speed = 5;
+        tier.attackDamageBonus = 1.5;
+        tier.enchantmentValue = 18;
+        tier.repairIngredient = '#c:ingots/bronze';
+    });
+
+    event.add('steel', (tier) => {
+        tier.uses = 1561;
+        tier.speed = 8;
+        tier.attackDamageBonus = 3;
+        tier.enchantmentValue = 12;
+        tier.repairIngredient = '#c:ingots/steel';
+    });
+});
+
+StartupEvents.registry('armor_material', (event) => {
+    event
+        .create(`bronze`)
+        .defense({
+            helmet: 2,
+            chestplate: 4,
+            leggings: 5,
+            boots: 2,
+        })
+        .enchantmentValue(18)
+        .equipSound(`minecraft:item.armor.equip_iron`)
+        .repairIngredient(() => Ingredient.of('#c:ingots/bronze'))
+        .toughness(0)
+        .knockbackResistance(0);
+});
+
 StartupEvents.registry('item', (event) => {
     event
         .create('personal_space_shield')
@@ -244,6 +278,47 @@ StartupEvents.registry('item', (event) => {
     event.create('scrap').displayName('Scrap');
 
     event.create('uu_matter').displayName('UU Matter').rarity('Epic');
+
+    // -- BRONZE EQUIPMENT -- //
+
+    event.create('bronze_axe', 'axe').displayName('Bronze Axe').tier('bronze');
+
+    event
+        .create('bronze_boots', 'boots')
+        .displayName('Bronze Boots')
+        .material('kubejs:bronze');
+
+    event
+        .create('bronze_chestplate', 'chestplate')
+        .displayName('Bronze Chestplate')
+        .material('kubejs:bronze');
+
+    event
+        .create('bronze_leggings', 'leggings')
+        .displayName('Bronze Leggings')
+        .material('kubejs:bronze');
+
+    event
+        .create('bronze_helmet', 'helmet')
+        .displayName('Bronze Helmet')
+        .material('kubejs:bronze');
+
+    event.create('bronze_hoe', 'hoe').displayName('Bronze Hoe').tier('bronze');
+
+    event
+        .create('bronze_pickaxe', 'pickaxe')
+        .displayName('Bronze Pickaxe')
+        .tier('bronze');
+
+    event
+        .create('bronze_shovel', 'shovel')
+        .displayName('Bronze Shovel')
+        .tier('bronze');
+
+    event
+        .create('bronze_sword', 'sword')
+        .displayName('Bronze Sword')
+        .tier('bronze');
 });
 
 ItemEvents.modification((event) => {

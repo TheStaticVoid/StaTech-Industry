@@ -245,6 +245,7 @@ ServerEvents.recipes((event) => {
     //     MYTHIC     //
     // -------------- //
 
+    // -- MENDING BOOK -- //
     event
         .shaped(
             Item.of(mc('enchanted_book')).enchant(mc('mending'), 1),
@@ -255,6 +256,7 @@ ServerEvents.recipes((event) => {
         )
         .id(st('mending_from_mythic'));
 
+    // -- SOULBOUND BOOK -- //
     event
         .shaped(
             Item.of(mc('enchanted_book')).enchant('yigd:soulbound', 1),
@@ -265,12 +267,84 @@ ServerEvents.recipes((event) => {
         )
         .id(st('soulbound_from_mythic'));
 
-    // CALORITE ORE
+    // -- CALORITE ORE -- //
     event
         .shaped('8x ' + mi('calorite_ore'), ['CCC', 'C  ', 'CCC'], {
             C: mythic,
         })
         .id(st('calorite_ore_from_mythic'));
+
+    // ---------------------- //
+    // -- BRONZE EQUIPMENT -- //
+    // ---------------------- //
+
+    // -- BRONZE BOOTS -- //
+    event
+        .shaped(Item.of(kj('bronze_boots')), ['   ', 'A A', 'A A'], {
+            A: '#c:ingots/bronze',
+        })
+        .id(st('bronze_boots'));
+
+    // -- BRONZE CHESTPLATE -- //
+    event
+        .shaped(Item.of(kj('bronze_chestplate')), ['A A', 'AAA', 'AAA'], {
+            A: '#c:ingots/bronze',
+        })
+        .id(st('bronze_chestplate'));
+
+    // -- BRONZE LEGGINGS -- //
+    event
+        .shaped(Item.of(kj('bronze_leggings')), ['AAA', 'A A', 'A A'], {
+            A: '#c:ingots/bronze',
+        })
+        .id(st('bronze_leggings'));
+
+    // -- BRONZE HELMET -- //
+    event
+        .shaped(Item.of(kj('bronze_helmet')), ['AAA', 'A A', '   '], {
+            A: '#c:ingots/bronze',
+        })
+        .id(st('bronze_helmet'));
+
+    // -- BRONZE PICKAXE -- //
+    event
+        .shaped(Item.of(kj('bronze_pickaxe')), ['AAA', ' B ', ' B '], {
+            A: '#c:ingots/bronze',
+            B: '#c:rods/wooden',
+        })
+        .id(st('bronze_pickaxe'));
+
+    // -- BRONZE AXE -- //
+    event
+        .shaped(Item.of(kj('bronze_axe')), ['AA ', 'AB ', ' B '], {
+            A: '#c:ingots/bronze',
+            B: '#c:rods/wooden',
+        })
+        .id(st('bronze_axe'));
+
+    // -- BRONZE SHOVEL -- //
+    event
+        .shaped(Item.of(kj('bronze_shovel')), [' A ', ' B ', ' B '], {
+            A: '#c:ingots/bronze',
+            B: '#c:rods/wooden',
+        })
+        .id(st('bronze_shovel'));
+
+    // -- BRONZE SWORD -- //
+    event
+        .shaped(Item.of(kj('bronze_sword')), [' A ', ' A ', ' B '], {
+            A: '#c:ingots/bronze',
+            B: '#c:rods/wooden',
+        })
+        .id(st('bronze_sword'));
+
+    // -- BRONZE HOE -- //
+    event
+        .shaped(Item.of(kj('bronze_hoe')), ['AA ', ' B ', ' B '], {
+            A: '#c:ingots/bronze',
+            B: '#c:rods/wooden',
+        })
+        .id(st('bronze_hoe'));
 });
 
 ServerEvents.tags('item', (event) => {
