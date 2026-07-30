@@ -23,7 +23,7 @@ lint_check() {
 		exit 1
 	fi
 
-	if ! ESLINT_PROBLEMS=$(npx eslint); then
+	if ! ESLINT_PROBLEMS=$(npx eslint $CHANGED); then
 		echo Eslint has detected some problems. Fix them before committing.
 		echo "$ESLINT_PROBLEMS"
 		exit 1
