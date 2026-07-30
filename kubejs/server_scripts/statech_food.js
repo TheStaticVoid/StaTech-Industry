@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 ItemEvents.foodEaten((event) => {
-    /* eslint-disable */
+     
     // prettier-ignore
     const EatenOutputs = [
         // Eaten food                   // Item to give back
@@ -16,7 +16,7 @@ ItemEvents.foodEaten((event) => {
         [kj('uranium_cereal'),          mc('bowl')],
         [kj('nuka_cola'),               kj('bottle_cap')],
     ];
-    /* eslint-enable */
+     
 
     EatenOutputs.forEach((eatenOutput) => {
         if (event.getItem() == Item.of(eatenOutput[0])) {
