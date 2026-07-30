@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:farmersdelight/${id}`;
 
@@ -20,8 +20,7 @@ ServerEvents.recipes(event => {
         ed('deepslate_salt_rock_from_blasting'),
         fd('bread_from_smelting'),
         fd('bread_from_blasting'),
-        ei('/canning_machine/generated/canned_food/farmersdelight/wheat_dough')
+        ei('/canning_machine/generated/canned_food/farmersdelight/wheat_dough'),
     ];
-    FARMERSDELIGHT_REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
-
+    FARMERSDELIGHT_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 });

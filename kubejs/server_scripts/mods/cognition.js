@@ -3,22 +3,17 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:cognition/${id}`;
 
     // -- COGNITION REMOVED RECIPES -- //
-    const REMOVED_RECIPES = [
-        xp('cognitive_flux'),
-        xp('cognitive_alloy')
-    ];
-    REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
-
+    const REMOVED_RECIPES = [xp('cognitive_flux'), xp('cognitive_alloy')];
+    REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
     // ------------------------//
     // ---- ALLOY SMELTER ---- //
     // ------------------------//
-
 
     // -- COGNITIVE ALLOY INGOT -- //
     alloySmelter(
@@ -28,16 +23,14 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: 'c:ingots/copper' },
-            { amount: 4, item: xp('cognitive_amalgam') }
+            { amount: 4, item: xp('cognitive_amalgam') },
         ],
-        [ { amount: 1, item: xp('cognitive_alloy') } ]
+        [{ amount: 1, item: xp('cognitive_alloy') }]
     );
-
 
     // ----------------//
     // ---- MIXER ---- //
     // ----------------//
-
 
     // -- COGNITIVE FLUX -- //
     mixer(
@@ -48,9 +41,9 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, tag: 'c:dusts/lapis' },
             { amount: 1, tag: 'c:dusts/quartz' },
-            { amount: 1, tag: 'minecraft:soul_fire_base_blocks' }
+            { amount: 1, tag: 'minecraft:soul_fire_base_blocks' },
         ],
-        [ { amount: 4, item: xp('cognitive_flux') } ]
+        [{ amount: 4, item: xp('cognitive_flux') }]
     );
 
     // -- LIQUID EXPERIENCE -- //
@@ -59,9 +52,9 @@ ServerEvents.recipes(event => {
         st('xp_fluid'),
         8,
         50,
-        [ { amount: 4, item: cr('experience_nugget') } ],
+        [{ amount: 4, item: cr('experience_nugget') }],
         null,
         null,
-        [ { amount: 120, fluid: xp('cognitium_source') } ]
+        [{ amount: 120, fluid: xp('cognitium_source') }]
     );
 });

@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/compressor/${id}`;
 
@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         mi('materials/emerald/compressor/main'),
         mi('vanilla_recipes/compressor/paper_with_sugarcane'),
     ];
-    DELETED_RECIPE.forEach(id => event.remove({id: id}));
+    DELETED_RECIPE.forEach((id) => event.remove({ id: id }));
 
     // -- PIZZA DOUGH -- //
     compressor(
@@ -21,8 +21,8 @@ ServerEvents.recipes(event => {
         st('pizza_dough'),
         2,
         200,
-        [ { amount: 1, tag: 'c:foods/dough' } ],
-        [ { amount: 1, item: kj('pizza_dough') } ]
+        [{ amount: 1, tag: 'c:foods/dough' }],
+        [{ amount: 1, item: kj('pizza_dough') }]
     );
 
     // -- DIAMOND PLATE -- //
@@ -31,9 +31,9 @@ ServerEvents.recipes(event => {
         st('diamond_plate'),
         48,
         400,
-        [ { amount: 1, item: mc('diamond') } ],
-        [ { amount: 1, item: mi('diamond_plate') } ]
-    )
+        [{ amount: 1, item: mc('diamond') }],
+        [{ amount: 1, item: mi('diamond_plate') }]
+    );
 
     // -- EMERALD PLATE -- //
     compressor(
@@ -41,8 +41,8 @@ ServerEvents.recipes(event => {
         st('emerald_plate'),
         48,
         400,
-        [ { amount: 1, item: mc('emerald') } ],
-        [ { amount: 1, item: mi('emerald_plate') } ]
+        [{ amount: 1, item: mc('emerald') }],
+        [{ amount: 1, item: mi('emerald_plate') }]
     );
 
     // -- BRICKS -- //
@@ -51,8 +51,8 @@ ServerEvents.recipes(event => {
         st('bricks'),
         2,
         300,
-        [ { amount: 4, item: mc('brick') } ],
-        [ { amount: 1, item: mc('bricks') } ]
+        [{ amount: 4, item: mc('brick') }],
+        [{ amount: 1, item: mc('bricks') }]
     );
 
     // -- FIRE CLAY BRICKS -- //
@@ -61,8 +61,8 @@ ServerEvents.recipes(event => {
         st('fire_clay_bricks'),
         2,
         300,
-        [ { amount: 4, item: mi('fire_clay_brick') } ],
-        [ { amount: 1, item: mi('fire_clay_bricks') } ]
+        [{ amount: 4, item: mi('fire_clay_brick') }],
+        [{ amount: 1, item: mi('fire_clay_bricks') }]
     );
 
     // -- STONE -- //
@@ -71,8 +71,8 @@ ServerEvents.recipes(event => {
         st('stone'),
         2,
         200,
-        [ { amount: 4, item: mi('stone_dust') } ],
-        [ { amount: 1, item: mc('stone') } ]
+        [{ amount: 4, item: mi('stone_dust') }],
+        [{ amount: 1, item: mc('stone') }]
     );
 
     // -- BRASS SHEET -- //
@@ -81,8 +81,8 @@ ServerEvents.recipes(event => {
         st('brass_sheet'),
         2,
         100,
-        [ { amount: 1, item: cr('brass_ingot') } ],
-        [ { amount: 1, item: cr('brass_sheet') } ]
+        [{ amount: 1, item: cr('brass_ingot') }],
+        [{ amount: 1, item: cr('brass_sheet') }]
     );
 
     // -- PAPER -- //
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
         st('paper'),
         2,
         100,
-        [ { amount: 1, item: mc('sugar_cane') } ],
-        [ { amount: 1, item: mc('paper') } ]
+        [{ amount: 1, item: mc('sugar_cane') }],
+        [{ amount: 1, item: mc('paper') }]
     );
-})
+});

@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/${id}`;
 
@@ -12,73 +12,64 @@ ServerEvents.recipes(event => {
         io('machines/multi_processing_array/assembler'),
         io('shaped/craft/terminal'),
         io('shaped/craft/terminal/assembler'),
-        io('assembler/vajra')
+        io('assembler/vajra'),
     ];
-    IO_DELETED_ITEMS.forEach(id => event.remove({ id: id }));
+    IO_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
 
-    const IO_ITEMS_MODIFICATION = [{
-        id: 'multi_processing_array',
-        recipe: [
-            'QQQ',
-            'GAG',
-            'QQQ'
-        ],
-        recipeInfo: {
-            G: '#c:glass_blocks',
-            A: ei('processing_array'),
-            Q: mi('quantum_upgrade')
+    const IO_ITEMS_MODIFICATION = [
+        {
+            id: 'multi_processing_array',
+            recipe: ['QQQ', 'GAG', 'QQQ'],
+            recipeInfo: {
+                G: '#c:glass_blocks',
+                A: ei('processing_array'),
+                Q: mi('quantum_upgrade'),
+            },
+            guideBookId: 'machines/multi_processing_array/craft',
         },
-        guideBookId: 'machines/multi_processing_array/craft'
-    },
-    {
-        id: 'pyrolyse_oven',
-        recipe: [
-            'MAM',
-            'CHC',
-            'BAB'
-        ],
-        recipeInfo: {
-            M: mi('cupronickel_wire_magnetic'),
-            B: mi('bronze_plated_bricks'),
-            H: mi('basic_machine_hull'),
-            A: mi('analog_circuit'),
-            C: mi('coke_oven')
+        {
+            id: 'pyrolyse_oven',
+            recipe: ['MAM', 'CHC', 'BAB'],
+            recipeInfo: {
+                M: mi('cupronickel_wire_magnetic'),
+                B: mi('bronze_plated_bricks'),
+                H: mi('basic_machine_hull'),
+                A: mi('analog_circuit'),
+                C: mi('coke_oven'),
+            },
+            guideBookId: 'machines/pyrolyse_oven/craft',
         },
-        guideBookId: 'machines/pyrolyse_oven/craft'
-    }];
+    ];
 
-    IO_ITEMS_MODIFICATION.forEach(data => {
+    IO_ITEMS_MODIFICATION.forEach((data) => {
         event.remove({ id: io(data.id) });
         // guide book
         event.remove({ id: io(data.guideBookId) });
-        event.shaped(io(data.id), data.recipe, data.recipeInfo).id(io(data.guideBookId));
+        event
+            .shaped(io(data.id), data.recipe, data.recipeInfo)
+            .id(io(data.guideBookId));
     });
 
     // -- MULTIBLOCK BUILDER (TERMINAL) -- //
-    event.shaped(io('terminal'), [
-        'AGA',
-        'ACA'
-    ], {
-        A: '#c:plates/aluminum',
-        G: '#c:glass_panes',
-        C: mi('analog_circuit')
-    })
+    event
+        .shaped(io('terminal'), ['AGA', 'ACA'], {
+            A: '#c:plates/aluminum',
+            G: '#c:glass_panes',
+            C: mi('analog_circuit'),
+        })
         .id(st('terminal'));
 
     // -- VAJRA -- //
-    event.shaped(io('vajra'), [
-        'DRC',
-        'OSO',
-        'UPU'
-    ], {
-        D: ei('electric_mining_drill'),
-        C: ei('electric_chainsaw'),
-        R: ei('netherite_rotary_blade'),
-        O: mi('cooling_cell'),
-        S: mi('superconductor_coil'),
-        P: mi('processing_unit'),
-        U: mi('highly_advanced_upgrade')
-    })
+    event
+        .shaped(io('vajra'), ['DRC', 'OSO', 'UPU'], {
+            D: ei('electric_mining_drill'),
+            C: ei('electric_chainsaw'),
+            R: ei('netherite_rotary_blade'),
+            O: mi('cooling_cell'),
+            S: mi('superconductor_coil'),
+            P: mi('processing_unit'),
+            U: mi('highly_advanced_upgrade'),
+        })
         .id(st('vajra'));
 
     // -------------------------//
@@ -96,7 +87,7 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('analog_circuit') },
             { amount: 2, item: mi('bronze_plated_bricks') },
             { amount: 1, item: mi('basic_machine_hull') },
-            { amount: 2, item: mi('coke_oven') }
+            { amount: 2, item: mi('coke_oven') },
         ],
         [{ amount: 1, item: io('pyrolyse_oven') }]
     );
@@ -110,9 +101,8 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: ei('processing_array') },
             { amount: 6, item: mi('quantum_upgrade') },
-            { amount: 2, tag: 'c:glass_blocks' }
+            { amount: 2, tag: 'c:glass_blocks' },
         ],
         [{ amount: 1, item: io('multi_processing_array') }]
     );
-
 });

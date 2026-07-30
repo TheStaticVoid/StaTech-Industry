@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "R": {
-      "tag": "c:rods/calorite"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "R": {
+            "tag": "c:rods/calorite"
+        },
+        "b": {
+            "item": "modern_industrialization:calorite_bolt"
+        }
     },
-    "b": {
-      "item": "modern_industrialization:calorite_bolt"
+    "pattern": ["bRb", "R R", "bRb"],
+    "result": {
+        "count": 2,
+        "id": "modern_industrialization:calorite_ring"
     }
-  },
-  "pattern": [
-    "bRb",
-    "R R",
-    "bRb"
-  ],
-  "result": {
-    "count": 2,
-    "id": "modern_industrialization:calorite_ring"
-  }
 }

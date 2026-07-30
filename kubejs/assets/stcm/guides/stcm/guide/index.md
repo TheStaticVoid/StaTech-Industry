@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "StaTech Industry 2"
-  icon: "kubejs:statech_logo"
+    title: 'StaTech Industry 2'
+    icon: 'kubejs:statech_logo'
 ---
 
 # StaTech Industry

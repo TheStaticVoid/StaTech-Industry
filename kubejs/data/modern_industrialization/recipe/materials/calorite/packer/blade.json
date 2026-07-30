@@ -1,21 +1,21 @@
 {
-  "type": "modern_industrialization:packer",
-  "duration": 400,
-  "eu": 2,
-  "item_inputs": [
-    {
-      "amount": 2,
-      "item": "modern_industrialization:calorite_curved_plate"
-    },
-    {
-      "amount": 1,
-      "tag": "c:rods/calorite"
-    }
-  ],
-  "item_outputs": [
-    {
-      "amount": 4,
-      "item": "modern_industrialization:calorite_blade"
-    }
-  ]
+    "type": "modern_industrialization:packer",
+    "duration": 400,
+    "eu": 2,
+    "item_inputs": [
+        {
+            "amount": 2,
+            "item": "modern_industrialization:calorite_curved_plate"
+        },
+        {
+            "amount": 1,
+            "tag": "c:rods/calorite"
+        }
+    ],
+    "item_outputs": [
+        {
+            "amount": 4,
+            "item": "modern_industrialization:calorite_blade"
+        }
+    ]
 }

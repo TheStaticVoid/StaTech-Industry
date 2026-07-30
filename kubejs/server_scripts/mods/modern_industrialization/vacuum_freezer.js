@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/vacuum_freezer/${id}`;
 
@@ -14,8 +14,8 @@ ServerEvents.recipes(event => {
         32,
         200,
         null,
-        [ { amount: 1, item: mi('polytetrafluoroethylene_ingot') } ],
-        [ { amount: 100, fluid: mi('polytetrafluoroethylene')}]
+        [{ amount: 1, item: mi('polytetrafluoroethylene_ingot') }],
+        [{ amount: 100, fluid: mi('polytetrafluoroethylene') }]
     );
 
     // -- ACRYLONITRILE BUTADIENE STYRENE INGOT -- //
@@ -25,8 +25,8 @@ ServerEvents.recipes(event => {
         32,
         200,
         null,
-        [ { amount: 1, item: mi('acrylonitrile_butadiene_styrene_ingot') } ],
-        [ { amount: 150, fluid: mi('acrylonitrile_butadiene_styrene')}]
+        [{ amount: 1, item: mi('acrylonitrile_butadiene_styrene_ingot') }],
+        [{ amount: 150, fluid: mi('acrylonitrile_butadiene_styrene') }]
     );
 
     // -- TUNGSTENSTEEL INGOT -- //
@@ -35,8 +35,8 @@ ServerEvents.recipes(event => {
         st('tungstensteel_ingot'),
         64,
         600,
-        [ { amount: 1, item: mi('tungstensteel_hot_ingot') } ],
-        [ { amount: 1, item: mi('tungstensteel_ingot') } ],
+        [{ amount: 1, item: mi('tungstensteel_hot_ingot') }],
+        [{ amount: 1, item: mi('tungstensteel_ingot') }],
         null,
         null
     );
@@ -48,8 +48,8 @@ ServerEvents.recipes(event => {
         16,
         200,
         null,
-        [ { amount: 1, item: kj('concrete_bar') } ],
-        [ { amount: 100, fluid: mi('concrete') } ]
+        [{ amount: 1, item: kj('concrete_bar') }],
+        [{ amount: 100, fluid: mi('concrete') }]
     );
 
     // -- NETHER STAR -- //
@@ -59,8 +59,8 @@ ServerEvents.recipes(event => {
         64,
         100,
         null,
-        [ { amount: 1, item: mc('nether_star') } ],
-        [ { amount: 500, fluid: mi('molten_nether_star') } ]
+        [{ amount: 1, item: mc('nether_star') }],
+        [{ amount: 500, fluid: mi('molten_nether_star') }]
     );
 
     // -- BOROSILICATE GLASS -- //
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         16,
         400,
         null,
-        [ { amount: 1, item: kj('borosilicate_glass') } ],
-        [ { amount: 1000, fluid: mi('molten_borosilicate_glass') } ]
+        [{ amount: 1, item: kj('borosilicate_glass') }],
+        [{ amount: 1000, fluid: mi('molten_borosilicate_glass') }]
     );
 });

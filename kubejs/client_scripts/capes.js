@@ -3,6 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-CapeJS.addCapes(event => {
-    event.registerFromWeb('https://raw.githubusercontent.com/TheStaticVoid/StaTech-Industry/refs/heads/capes/capes.csv');
+CapeJS.addCapes((event) => {
+    event.registerFromWeb(
+        'https://raw.githubusercontent.com/TheStaticVoid/StaTech-Industry/refs/heads/capes/capes.csv'
+    );
 });

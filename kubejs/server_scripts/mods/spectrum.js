@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.tags('item', event => {
+ServerEvents.tags('item', (event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let sp = (id) => `spectrum:${id}`;
 
@@ -15,33 +15,40 @@ ServerEvents.tags('item', event => {
         sp('polished_topaz'),
         sp('polished_amethyst'),
         sp('polished_citrine'),
-        sp('polished_onyx')
+        sp('polished_onyx'),
     ];
-    POLISHED_GEMSTONE.forEach(id => { event.add('kubejs:polished_gemstones', id) });
+    POLISHED_GEMSTONE.forEach((id) => {
+        event.add('kubejs:polished_gemstones', id);
+    });
 
-    const POLISHED_BLOCKS = [
-        sp('polished_calcite'),
-        sp('polished_basalt')
-    ];
-    POLISHED_BLOCKS.forEach(id => { event.add('kubejs:polished_blocks', id) });
+    const POLISHED_BLOCKS = [sp('polished_calcite'), sp('polished_basalt')];
+    POLISHED_BLOCKS.forEach((id) => {
+        event.add('kubejs:polished_blocks', id);
+    });
 
     const CHISELED_POLISHED_BLOCKS = [
         sp('chiseled_polished_calcite'),
-        sp('chiseled_polished_basalt')
+        sp('chiseled_polished_basalt'),
     ];
-    CHISELED_POLISHED_BLOCKS.forEach(id => { event.add('kubejs:chiseled_polished_blocks', id) });
+    CHISELED_POLISHED_BLOCKS.forEach((id) => {
+        event.add('kubejs:chiseled_polished_blocks', id);
+    });
 
     const NOTCHED_POLISHED = [
         sp('notched_polished_calcite'),
-        sp('notched_polished_basalt')
+        sp('notched_polished_basalt'),
     ];
-    NOTCHED_POLISHED.forEach(id => { event.add('kubejs:notched_polished_blocks', id) });
+    NOTCHED_POLISHED.forEach((id) => {
+        event.add('kubejs:notched_polished_blocks', id);
+    });
 
     const POLISHED_PILLARS = [
         sp('polished_calcite_pillar'),
-        sp('polished_basalt_pillar')
+        sp('polished_basalt_pillar'),
     ];
-    POLISHED_PILLARS.forEach(id => { event.add('kubejs:polished_pillar_blocks', id) });
+    POLISHED_PILLARS.forEach((id) => {
+        event.add('kubejs:polished_pillar_blocks', id);
+    });
 
     const SHIMMERSTONE_LIGHTS = [
         sp('basalt_shimmerstone_light'),
@@ -50,9 +57,11 @@ ServerEvents.tags('item', event => {
         sp('granite_shimmerstone_light'),
         sp('diorite_shimmerstone_light'),
         sp('andesite_shimmerstone_light'),
-        sp('deepslate_shimmerstone_light')
+        sp('deepslate_shimmerstone_light'),
     ];
-    SHIMMERSTONE_LIGHTS.forEach(id => { event.add('kubejs:shimmerstone_lights', id) });
+    SHIMMERSTONE_LIGHTS.forEach((id) => {
+        event.add('kubejs:shimmerstone_lights', id);
+    });
 
     const GEMSTONE_LAMPS = [
         sp('topaz_calcite_light'),
@@ -62,27 +71,32 @@ ServerEvents.tags('item', event => {
         sp('topaz_basalt_light'),
         sp('amethyst_basalt_light'),
         sp('citrine_basalt_light'),
-        sp('onyx_basalt_light')
+        sp('onyx_basalt_light'),
     ];
-    GEMSTONE_LAMPS.forEach(id => { event.add('kubejs:gemstone_lamps', id) });
+    GEMSTONE_LAMPS.forEach((id) => {
+        event.add('kubejs:gemstone_lamps', id);
+    });
 
-    const PHANTOM_FRAMES = [
-        sp('phantom_frame'),
-        sp('glow_phantom_frame')
-    ];
-    PHANTOM_FRAMES.forEach(id => { event.add('kubejs:phantom_frames', id) });
+    const PHANTOM_FRAMES = [sp('phantom_frame'), sp('glow_phantom_frame')];
+    PHANTOM_FRAMES.forEach((id) => {
+        event.add('kubejs:phantom_frames', id);
+    });
 
     const FUSION_SHRINES = [
         sp('fusion_shrine_basalt'),
-        sp('fusion_shrine_calcite')
+        sp('fusion_shrine_calcite'),
     ];
-    FUSION_SHRINES.forEach(id => { event.add('kubejs:fusion_shrines', id) });
+    FUSION_SHRINES.forEach((id) => {
+        event.add('kubejs:fusion_shrines', id);
+    });
 
     const POLISHED_SLABS = [
         sp('polished_calcite_slab'),
-        sp('polished_basalt_slab')
+        sp('polished_basalt_slab'),
     ];
-    POLISHED_SLABS.forEach(id => { event.add('kubejs:polished_slabs', id) });
+    POLISHED_SLABS.forEach((id) => {
+        event.add('kubejs:polished_slabs', id);
+    });
 
     const PIGMENT_LAMPS = [
         sp('orange_lamp'),
@@ -100,9 +114,11 @@ ServerEvents.tags('item', event => {
         sp('black_lamp'),
         sp('light_gray_lamp'),
         sp('white_lamp'),
-        sp('gray_lamp')
+        sp('gray_lamp'),
     ];
-    PIGMENT_LAMPS.forEach(id => { event.add('kubejs:pigment_lamps', id) });
+    PIGMENT_LAMPS.forEach((id) => {
+        event.add('kubejs:pigment_lamps', id);
+    });
 
     const PIGMENT_SPORE_BLOSSOMS = [
         sp('orange_spore_blossom'),
@@ -120,9 +136,11 @@ ServerEvents.tags('item', event => {
         sp('black_spore_blossom'),
         sp('white_spore_blossom'),
         sp('light_gray_spore_blossom'),
-        sp('gray_spore_blossom')
+        sp('gray_spore_blossom'),
     ];
-    PIGMENT_SPORE_BLOSSOMS.forEach(id => { event.add('kubejs:pigment_spore_blossoms', id) });
+    PIGMENT_SPORE_BLOSSOMS.forEach((id) => {
+        event.add('kubejs:pigment_spore_blossoms', id);
+    });
 
     const GLOWBLOCKS = [
         sp('orange_glowblock'),
@@ -140,15 +158,19 @@ ServerEvents.tags('item', event => {
         sp('black_glowblock'),
         sp('white_glowblock'),
         sp('light_gray_glowblock'),
-        sp('gray_glowblock')
+        sp('gray_glowblock'),
     ];
-    GLOWBLOCKS.forEach(id => { event.add('kubejs:glowblocks', id) });
+    GLOWBLOCKS.forEach((id) => {
+        event.add('kubejs:glowblocks', id);
+    });
 
     const CREST_BLOCKS = [
         sp('polished_calcite_crest'),
-        sp('polished_basalt_crest')
+        sp('polished_basalt_crest'),
     ];
-    CREST_BLOCKS.forEach(id => { event.add('kubejs:polished_crest_blocks', id) });
+    CREST_BLOCKS.forEach((id) => {
+        event.add('kubejs:polished_crest_blocks', id);
+    });
 
     const GEMSTONE_CHISELED_BLOCKS = [
         sp('topaz_chiseled_basalt'),
@@ -158,35 +180,42 @@ ServerEvents.tags('item', event => {
         sp('citrine_chiseled_basalt'),
         sp('citrine_chiseled_calcite'),
         sp('onyx_chiseled_basalt'),
-        sp('onyx_chiseled_calcite')
+        sp('onyx_chiseled_calcite'),
     ];
-    GEMSTONE_CHISELED_BLOCKS.forEach(id => { event.add('kubejs:gemstone_chiseled_blocks', id) });
+    GEMSTONE_CHISELED_BLOCKS.forEach((id) => {
+        event.add('kubejs:gemstone_chiseled_blocks', id);
+    });
 
     const ONYX_CHISELED_BLOCKS = [
         sp('onyx_chiseled_basalt'),
-        sp('onyx_chiseled_calcite')
+        sp('onyx_chiseled_calcite'),
     ];
-    ONYX_CHISELED_BLOCKS.forEach(id => { event.add('kubejs:onyx_chiseled_blocks', id) });
+    ONYX_CHISELED_BLOCKS.forEach((id) => {
+        event.add('kubejs:onyx_chiseled_blocks', id);
+    });
 
     const MOONSTONE_CHISELED_BLOCKS = [
         sp('moonstone_chiseled_basalt'),
-        sp('moonstone_chiseled_calcite')
+        sp('moonstone_chiseled_calcite'),
     ];
-    MOONSTONE_CHISELED_BLOCKS.forEach(id => { event.add('kubejs:moonstone_chiseled_blocks', id) });
+    MOONSTONE_CHISELED_BLOCKS.forEach((id) => {
+        event.add('kubejs:moonstone_chiseled_blocks', id);
+    });
 
     const GEMSTONE_CHIMES = [
         sp('topaz_chime'),
         sp('amethyst_chime'),
         sp('citrine_chime'),
-        sp('onyx_chime')
+        sp('onyx_chime'),
     ];
-    GEMSTONE_CHIMES.forEach(id => { event.add('kubejs:gemstone_chimes', id) });
+    GEMSTONE_CHIMES.forEach((id) => {
+        event.add('kubejs:gemstone_chimes', id);
+    });
 
-    const ITEM_BOWLS = [
-        sp('item_bowl_basalt'),
-        sp('item_bowl_calcite')
-    ];
-    ITEM_BOWLS.forEach(id => { event.add('kubejs:spectrum_item_bowls', id) });
+    const ITEM_BOWLS = [sp('item_bowl_basalt'), sp('item_bowl_calcite')];
+    ITEM_BOWLS.forEach((id) => {
+        event.add('kubejs:spectrum_item_bowls', id);
+    });
 
     const SUGAR_STICK = [
         sp('sugar_stick'),
@@ -194,12 +223,14 @@ ServerEvents.tags('item', event => {
         sp('amethyst_sugar_stick'),
         sp('citrine_sugar_stick'),
         sp('onyx_sugar_stick'),
-        sp('moonstone_sugar_stick')
+        sp('moonstone_sugar_stick'),
     ];
-    SUGAR_STICK.forEach(id => { event.add('kubejs:sugar_sticks', id) });
+    SUGAR_STICK.forEach((id) => {
+        event.add('kubejs:sugar_sticks', id);
+    });
 });
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:spectrum/${id}`;
     let sp = (id) => `spectrum:${id}`;
@@ -209,73 +240,70 @@ ServerEvents.recipes(event => {
         sp('pedestal/tier3/bottle_of_failing'),
         ar('eternal_steak_furnace'),
         ar('eternal_steak_smoker'),
-        ar('eternal_steak_campfire')
+        ar('eternal_steak_campfire'),
     ];
-    REMOVED_RECIPES.forEach(id => event.remove({ id: id }));
-
+    REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
     // -----------------------//
     // ---- CINDERHEARTH ---- //
     // -----------------------//
 
-    
     // -- ETERNAL STEAK -- //
     event.custom({
         type: sp('cinderhearth'),
         ingredient: { item: ar('everlasting_beef') },
         time: 800,
         experience: 1.0,
-        results: [{
-            id: ar('eternal_steak'),
-            count: 1
-        }]
+        results: [
+            {
+                id: ar('eternal_steak'),
+                count: 1,
+            },
+        ],
     });
-
 
     // ------------------------//
     // ---- FUSION SHRINE ---- //
     // ------------------------//
 
-    
     // -- EVERLASTING BEEF -- //
-    event.custom({
-        type: sp('fusion_shrine'),
-        time: 1200,
-        experience: 30.0,
-        fluid: { fluid: ei('blazing_essence') },
-        ingredients: [
-            { item: mc('beef'), count: 64 },
-            { item: mc('beef'), count: 64 },
-            { item: fd('shepherds_pie_block'), count: 1 },
-            { item: mc('golden_apple'), count: 4 },
-            { item: mc('golden_carrot'), count: 32 },
-            { item: sp('shimmerstone_block'), count: 8 },
-        ],
-        result: {
-            id: ar('everlasting_beef')
-        },
-        required_advancement: sp('build_fusion_shrine'),
-        world_conditions: [
-            {
-                type: 'time_of_day',
-                time: 'noon'
-            }
-        ],
-        start_crafting_effect: 'nothing',
-        during_crafting_effects: [
-            'visual_explosions_on_shrine',
-            'nothing',
-            'visual_explosions_on_shrine'
-        ],
-        finish_crafting_effect: 'legendary_tool_craft'
-    })
+    event
+        .custom({
+            type: sp('fusion_shrine'),
+            time: 1200,
+            experience: 30.0,
+            fluid: { fluid: ei('blazing_essence') },
+            ingredients: [
+                { item: mc('beef'), count: 64 },
+                { item: mc('beef'), count: 64 },
+                { item: fd('shepherds_pie_block'), count: 1 },
+                { item: mc('golden_apple'), count: 4 },
+                { item: mc('golden_carrot'), count: 32 },
+                { item: sp('shimmerstone_block'), count: 8 },
+            ],
+            result: {
+                id: ar('everlasting_beef'),
+            },
+            required_advancement: sp('build_fusion_shrine'),
+            world_conditions: [
+                {
+                    type: 'time_of_day',
+                    time: 'noon',
+                },
+            ],
+            start_crafting_effect: 'nothing',
+            during_crafting_effects: [
+                'visual_explosions_on_shrine',
+                'nothing',
+                'visual_explosions_on_shrine',
+            ],
+            finish_crafting_effect: 'legendary_tool_craft',
+        })
         .id(st('everlasting_beef'));
 
-        
     // -------------------//
     // ---- PEDESTAL ---- //
     // -------------------//
-
 
     // -- BOTTLE OF FAILING -- //
     event.custom({
@@ -283,98 +311,90 @@ ServerEvents.recipes(event => {
         time: 800,
         tier: 'advanced',
         colors: {
-            "spectrum:cyan": 1,
-            "spectrum:magenta": 1,
-            "spectrum:yellow": 1,
-            "spectrum:black": 1,
-            "spectrum:white": 0
+            'spectrum:cyan': 1,
+            'spectrum:magenta': 1,
+            'spectrum:yellow': 1,
+            'spectrum:black': 1,
+            'spectrum:white': 0,
         },
         experience: 2.0,
-        pattern: [
-            'FSF',
-            'EBE',
-            'FSF'
-        ],
+        pattern: ['FSF', 'EBE', 'FSF'],
         key: {
             S: { item: sp('stratine_fragments') },
             F: { item: mc('fermented_spider_eye') },
             E: { item: mc('ender_eye') },
-            B: { item: mc('experience_bottle') }
+            B: { item: mc('experience_bottle') },
         },
         result: {
             id: sp('bottle_of_failing'),
-            count: 1
+            count: 1,
         },
-        required_advancement: sp('unlocks/items/bottle_of_failing')
+        required_advancement: sp('unlocks/items/bottle_of_failing'),
     });
 
     // -- ANGEL RING -- //
-    event.custom({
-        type: sp('pedestal'),
-        time: 800,
-        tier: 'complex',
-        colors: {
-            "spectrum:cyan": 32,
-            "spectrum:magenta": 32,
-            "spectrum:yellow": 32,
-            "spectrum:black": 32,
-            "spectrum:white": 32
-        },
-        experience: 100.0,
-        pattern: [
-            'SAS',
-            'FRF',
-            'SMS'
-        ],
-        key: {
-            S: { item: sp('star_fragment') },
-            A: { item: sp('aether_vestiges') },
-            F: { item: sp('resplendent_feather') },
-            M: { item: sp('moonstone_core') },
-            R: { item: mi('gold_ring') }
-        },
-        result: {
-            id: kj('angel_ring'),
-            count: 1
-        },
-        required_advancement: sp('endgame/finish_progression')
-    }).id(st('angel_ring'));
+    event
+        .custom({
+            type: sp('pedestal'),
+            time: 800,
+            tier: 'complex',
+            colors: {
+                'spectrum:cyan': 32,
+                'spectrum:magenta': 32,
+                'spectrum:yellow': 32,
+                'spectrum:black': 32,
+                'spectrum:white': 32,
+            },
+            experience: 100.0,
+            pattern: ['SAS', 'FRF', 'SMS'],
+            key: {
+                S: { item: sp('star_fragment') },
+                A: { item: sp('aether_vestiges') },
+                F: { item: sp('resplendent_feather') },
+                M: { item: sp('moonstone_core') },
+                R: { item: mi('gold_ring') },
+            },
+            result: {
+                id: kj('angel_ring'),
+                count: 1,
+            },
+            required_advancement: sp('endgame/finish_progression'),
+        })
+        .id(st('angel_ring'));
 
     // -- FIREPROOF RING -- //
-    event.custom({
-        type: sp('pedestal'),
-        time: 800,
-        tier: 'advanced',
-        colors: {
-            "spectrum:cyan": 16,
-            "spectrum:magenta": 16,
-            "spectrum:yellow": 16,
-            "spectrum:black": 4
-        },
-        experience: 100.0,
-        pattern: [
-            'BOB',
-            'SAS',
-            'BOB'
-        ],
-        key: {
-            B: { item: sp('blazing_crystal') },
-            A: { item: mi('gold_ring') },
-            O: { item: sp('orange_block') },
-            S: { item: sp('bedrock_dust') }
-        },
-        result: {
-            id: kj('fireproof_ring'),
-            count: 1
-        },
-        required_advancement: sp('midgame/break_decayed_bedrock')
-    }).id(st('fireproof_ring'));
+    event
+        .custom({
+            type: sp('pedestal'),
+            time: 800,
+            tier: 'advanced',
+            colors: {
+                'spectrum:cyan': 16,
+                'spectrum:magenta': 16,
+                'spectrum:yellow': 16,
+                'spectrum:black': 4,
+            },
+            experience: 100.0,
+            pattern: ['BOB', 'SAS', 'BOB'],
+            key: {
+                B: { item: sp('blazing_crystal') },
+                A: { item: mi('gold_ring') },
+                O: { item: sp('orange_block') },
+                S: { item: sp('bedrock_dust') },
+            },
+            result: {
+                id: kj('fireproof_ring'),
+                count: 1,
+            },
+            required_advancement: sp('midgame/break_decayed_bedrock'),
+        })
+        .id(st('fireproof_ring'));
 });
 
 // Block tagging provided by kevintok
-ServerEvents.tags('block', event => {
+ServerEvents.tags('block', (event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let sp = (id) => `spectrum:${id}`;
 
-    event.add('c:lapis_ores', sp('blackslag_lapis_ore'))
+    event.add('c:lapis_ores', sp('blackslag_lapis_ore'));
 });

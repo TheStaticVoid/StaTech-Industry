@@ -1,11 +1,11 @@
 ---
 navigation:
-  title: "Mob Crusher"
-  icon: "modern_industrialization:mob_crusher"
-  position: 0
-  parent: stcm:machines.md
+    title: 'Mob Crusher'
+    icon: 'modern_industrialization:mob_crusher'
+    position: 0
+    parent: stcm:machines.md
 item_ids:
-  - modern_industrialization:mob_crusher
+    - modern_industrialization:mob_crusher
 ---
 
 # Mob Crusher
@@ -17,6 +17,3 @@ item_ids:
 The Mob Crusher is a machine that allows to easily farm mob drops without having to worry about impacting performance.
 
 <Recipe id="statech:modern_industrialization/mob_crusher" />
-
-
-

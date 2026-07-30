@@ -1,11 +1,11 @@
 ---
 navigation:
-  title: "Colossal Blast Furnace"
-  icon: "mi_tweaks:colossal_blast_furnace"
-  position: 10
-  parent: stcm:batching_machines.md
+    title: 'Colossal Blast Furnace'
+    icon: 'mi_tweaks:colossal_blast_furnace'
+    position: 10
+    parent: stcm:batching_machines.md
 item_ids:
-  - mi_tweaks:colossal_blast_furnace
+    - mi_tweaks:colossal_blast_furnace
 ---
 
 # Colossal Blast Furnace
@@ -17,6 +17,3 @@ item_ids:
 The Colossal Blast Furnace is a batching version of the Blast Furnace. It can do batches of 12 at a 20% EU discount!
 
 <Recipe id="statech:mi_tweaks/colossal_blast_furnace" />
-
-
-

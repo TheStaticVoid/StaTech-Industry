@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/alloy_smelter/${id}`;
 
@@ -15,9 +15,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: 'morered:red_alloyable_ingots' },
-            { amount: 4, tag: 'c:dusts/redstone' }
+            { amount: 4, tag: 'c:dusts/redstone' },
         ],
-        [ { amount: 1, item: mr('red_alloy_ingot') } ]
+        [{ amount: 1, item: mr('red_alloy_ingot') }]
     );
 
     // -- NETHERITE INGOT -- //
@@ -28,9 +28,9 @@ ServerEvents.recipes(event => {
         600,
         [
             { amount: 4, tag: 'c:ingots/gold' },
-            { amount: 4, item: mc('netherite_scrap') }
+            { amount: 4, item: mc('netherite_scrap') },
         ],
-        [ { amount: 1, item: mc('netherite_ingot') } ]
+        [{ amount: 1, item: mc('netherite_ingot') }]
     );
 
     // -- BRASS INGOT -- //
@@ -41,9 +41,8 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: 'c:ingots/copper' },
-            { amount: 1, tag: 'c:ingots/zinc' }
+            { amount: 1, tag: 'c:ingots/zinc' },
         ],
-        [ { amount: 2, item: cr('brass_ingot') } ]
+        [{ amount: 2, item: cr('brass_ingot') }]
     );
-
 });
