@@ -24,7 +24,7 @@ Linux and MacOS
 java -jar pakku.jar fetch && cp -f "$INST_MC_DIR/.pakku/prism-overrides/mmc-pack.json" "$INST_DIR/mmc-pack.json"
 ```
 
-#### Code Editor Setup
+### Code Editor Setup
 
 The pack development environment has been created supporting [VSCode](https://code.visualstudio.com/Download?_exp_download=fb315fc982) and [ProbeJS](https://www.curseforge.com/minecraft/mc-mods/probejs/files/all?page=1&pageSize=20&showAlphaFiles=show). We make ample use of recipe helper functions (see `kubejs/server_scripts/machine_recipe_helper.js`) throughout the pack, and have gone to the effort of adding JSDoc type info for each recipe helper function for better code completion (keep in mind the code is NOT TypeScript).
 
@@ -32,7 +32,7 @@ Also, GitHub Actions are used to automate code format checks, pack builds, and a
 
 Finally, a VSCode workspace is packaged with the repository, this contains the appropriate settings and organization, in addition to the recommended extensions.
 
-### Using the pre-commit hook
+#### Using the pre-commit hook
 
 You can (and probably should!) configure your installation of `git` to use `.github/hooks/pre-commit` to check your changes for formatting errors before you make a new commit. If using git on windows, you will need to make sure the hook is executed using `git bash` and not some shell.
 
