@@ -5,15 +5,21 @@
 
 // Generic function for adding MI machine recipes
 
+// priority: 10000
+/**
+ * @typedef {[Special.Item, number, number?]} MIItem A tuple of [item, amount, probability?]
+ * @typedef {[Special.Fluid, number, number?]} MIFluid A tuple of [fluid, amount, probability?]
+ */
+
 /**
  * @typedef {Object} newMachineRecipe
  * @property {!string} type - Recipe Type
  * @property {!number} eu - recipe eu/t
  * @property {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @property {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @property {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @property {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @property {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @property {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @property {MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @property {MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @property {MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  * @property {?{?dimension: string, ?biome: string, ?biomeTag: string, ?adjacentBlock: {block: string, position: string}}[]} process_conditions - MI process conditions
  */
 
@@ -22,10 +28,10 @@
  * @param {!string} type - Recipe Type
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @property {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @property {MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @property {MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @property {MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  * @param {?{?dimension: string, ?biome: string, ?biomeTag: string, ?adjacentBlock: {block: string, position: string}}[]} process_conditions - MI process conditions
  * @returns {newMachineRecipe} The created newMachineRecipe object
  */
@@ -62,8 +68,8 @@ let newMachineRecipe = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let alloySmelter = (event, id, eu, duration, item_inputs, item_outputs) => {
     event
@@ -86,10 +92,10 @@ let alloySmelter = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let assembler = (
     event,
@@ -123,10 +129,10 @@ let assembler = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let blastFurnace = (
     event,
@@ -160,10 +166,10 @@ let blastFurnace = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let boss_crusher = (
     event,
@@ -197,10 +203,10 @@ let boss_crusher = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let canningMachine = (
     event,
@@ -234,10 +240,10 @@ let canningMachine = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let centrifuge = (
     event,
@@ -271,10 +277,10 @@ let centrifuge = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let chemicalReactor = (
     event,
@@ -308,8 +314,8 @@ let chemicalReactor = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let compressor = (event, id, eu, duration, item_inputs, item_outputs) => {
     event
@@ -332,10 +338,10 @@ let compressor = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let coreDrill = (
     event,
@@ -369,10 +375,10 @@ let coreDrill = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let crusher = (
     event,
@@ -406,10 +412,10 @@ let crusher = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let cryogenicPrecipitator = (
     event,
@@ -443,8 +449,8 @@ let cryogenicPrecipitator = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let cuttingMachine = (event, id, eu, duration, item_inputs, item_outputs) => {
     let lubricant = { amount: 10, fluid: mi('lubricant') };
@@ -469,8 +475,8 @@ let cuttingMachine = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {!{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {!MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {!MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let distillationTower = (
     event,
@@ -502,8 +508,8 @@ let distillationTower = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {!{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {!MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {!MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let distillery = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
     event
@@ -528,10 +534,10 @@ let distillery = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  * @param {?{?dimension: string, ?biome: string, ?biomeTag: string, ?adjacentBlock: {block: string, position: string}}[]} process_conditions - MI process conditions
  */
 let dragonEggEnergySiphon = (
@@ -568,8 +574,8 @@ let dragonEggEnergySiphon = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {!MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let drillingRig = (event, id, eu, duration, item_inputs, fluid_outputs) => {
     event
@@ -594,10 +600,10 @@ let drillingRig = (event, id, eu, duration, item_inputs, fluid_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let electrolyzer = (
     event,
@@ -631,8 +637,8 @@ let electrolyzer = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {!{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {!MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {!MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let fusion = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
     event
@@ -657,10 +663,10 @@ let fusion = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  * @param {?string} adjacent_block - Process condition - adjacent block ID
  * @param {?string} adjacent_block_pos - Process condition - adjacent block position
  */
@@ -708,10 +714,10 @@ let greenhouse = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let heatExchanger = (
     event,
@@ -745,8 +751,8 @@ let heatExchanger = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let implosionCompressor = (
     event,
@@ -776,8 +782,8 @@ let implosionCompressor = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let laserEngraver = (event, id, eu, duration, item_inputs, item_outputs) => {
     event
@@ -800,8 +806,8 @@ let laserEngraver = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let macerator = (event, id, eu, duration, item_inputs, item_outputs) => {
     event
@@ -824,10 +830,10 @@ let macerator = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let mixer = (
     event,
@@ -861,8 +867,8 @@ let mixer = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let packer = (event, id, eu, duration, item_inputs, item_outputs) => {
     event
@@ -885,9 +891,9 @@ let packer = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
  */
 let photoChamber = (
     event,
@@ -919,8 +925,8 @@ let photoChamber = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let polarizer = (event, id, eu, duration, item_inputs, item_outputs) => {
     event
@@ -943,10 +949,10 @@ let polarizer = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let pyrolyseOven = (
     event,
@@ -980,8 +986,8 @@ let pyrolyseOven = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let quarry = (event, id, eu, duration, item_inputs, item_outputs) => {
     event
@@ -1004,9 +1010,9 @@ let quarry = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
  */
 let singularityForge = (
     event,
@@ -1038,8 +1044,8 @@ let singularityForge = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let recycler = (event, id, eu, duration, item_inputs, item_outputs) => {
     event
@@ -1062,9 +1068,9 @@ let recycler = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
  */
 let rocketAssembler = (
     event,
@@ -1096,8 +1102,8 @@ let rocketAssembler = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  * @param {?string} adjacent_block - Process condition - adjacent block ID
  * @param {?string} adjacent_block_pos - Process condition - adjacent block position
  */
@@ -1141,9 +1147,9 @@ let spl = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
  */
 let supercomputer = (
     event,
@@ -1175,9 +1181,9 @@ let supercomputer = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
  */
 let telescope = (
     event,
@@ -1217,8 +1223,8 @@ let telescope = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let unpacker = (event, id, eu, duration, item_inputs, item_outputs) => {
     event
@@ -1241,10 +1247,10 @@ let unpacker = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {?{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {?{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_inputs - Array of fluid inputs
- * @param {?{!amount: number, fluid | tag: string}[]} fluid_outputs - Array of fluid outputs
+ * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {?MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?MIFluid[]|MIFluid} fluid_outputs - Array of fluid outputs
  */
 let vacuumFreezer = (
     event,
@@ -1278,8 +1284,8 @@ let vacuumFreezer = (
  * @param {!string} id - Recipe ID
  * @param {!number} eu - Recipe eu/t
  * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
- * @param {!{!amount: number, item | tag: string}[]} item_inputs - Array of item inputs
- * @param {!{!amount: number, item | tag: string}[]} item_outputs - Array of item outputs
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let wiremill = (event, id, eu, duration, item_inputs, item_outputs) => {
     event

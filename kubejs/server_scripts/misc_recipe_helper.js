@@ -3,16 +3,22 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
+// priority: 10000
+/**
+ * @typedef {{item?: Special.Item, tag?: string}} ShapelessInput An array of {item: id} or {tag: id}
+ * @typedef {[item: Special.Item, count: number, chance?: number?]} SPItems A tuple of [item, count, chance?]
+ */
+
 // -- FARMER'S DELIGHT COOKING -- //
 /**
  * Cooking Pot
- * @param {!string} event
- * @param {!string} id
- * @param {!number} xp
- * @param {?string} book_tab
- * @param {!{count: number, id: string}} container
- * @param {{(tag | item)}[] } item_inputs
- * @param {!{!count: number, !id: string}} item_outputs
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!number} xp - XP output
+ * @param {?string} book_tab - Recipe book tab
+ * @param {!{count: number, id: string}} container - Container that item can be removed from pot with
+ * @param {ShapelessInput} item_inputs - An array of {item: id} or {tag: id}
+ * @param {!{count: number, id: string}} item_outputs
  */
 let cooking = (
     event,
@@ -39,15 +45,15 @@ let cooking = (
 // -- SPECTRUM CINDERHEARTH -- //
 /**
  * Cinderhearth
- * @param {!string} event
- * @param {!string} id
- * @param {!number} time
- * @param {!number} xp
- * @param {!{item | tag: string}} item_input
- * @param {!{!item: string, !count: number, !chance: number}[]} item_outputs
- * @param {?string} advancement
- * @param {?string} group
- * @param {?boolean} secret
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!number} time - Recipe duration in ticks (1 second is 20 ticks)
+ * @param {!number} xp - XP output
+ * @param {Special.Item} item_input - Item ID
+ * @param {SPItems[]} item_outputs - An array of tuples of [item, count, chance?]
+ * @param {?string} advancement - advancement prerequisite ID
+ * @param {?string} group - Recipe group ID
+ * @param {?boolean} secret - hide recipe from recipe viewers
  */
 let cinderhearth = (
     event,
@@ -76,23 +82,23 @@ let cinderhearth = (
 // -- SPECTRUM FUSION SHRINE -- //
 /**
  * Fusion Shrine
- * @param {!string} event
- * @param {!string} id
- * @param {!number} time
- * @param {!number} xp
- * @param {!{item | tag: string}[]} item_inputs
- * @param {!{!item: string, ?count: number}} item_outputs
- * @param {?{fluid | tag: string}} fluid_input
- * @param {?*} world_conditions
- * @param {?string} start_effect
- * @param {*} during_effects
- * @param {?string} end_effect
- * @param {?string} advancement
- * @param {?string} group
- * @param {?boolean} secret
- * @param {?boolean} copy_nbt
- * @param {?boolean} disable_boosts
- * @param {?string} description
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!number} time - Recipe duration in ticks (1 second is 20 ticks)
+ * @param {!number} xp - XP output
+ * @param {!ShapelessInput[]} item_inputs - An array of {item: id} or {tag: id}
+ * @param {!SPItems} item_outputs - Output ItemStack {item: 'spectrum:onyx_shard', count: 2, chance: 0.5}
+ * @param {?{fluid: Special.Fluid}} fluid_input - Fluid ID for optional fluid input
+ * @param {?*} world_conditions - See https://github.com/DaFuqs/Spectrum/wiki/Custom-Fusion-Shrine-Recipes#worldconditions
+ * @param {?string} start_effect - See https://github.com/DaFuqs/Spectrum/wiki/Custom-Fusion-Shrine-Recipes#worldeffects
+ * @param {string[]?} during_effects - See start_effect
+ * @param {?string} end_effect - See start_effect
+ * @param {?string} advancement - advancement prerequisite ID
+ * @param {?string} group - Recipe group ID
+ * @param {?boolean} secret - hide recipe from recipe viewers
+ * @param {?boolean} copy_nbt - When true, copes the nbt custom name, enchants, ...) of the first item in the recipe
+ * @param {?boolean} disable_boosts - When true, yield upgrades does not affect the output of the recipe
+ * @param {?string} description - A localization string explaining the recipe (like the requirements). Is shown in recipe viewers
  */
 let fusion_shrine = (
     event,
@@ -137,20 +143,20 @@ let fusion_shrine = (
 // -- SPECTRUM PEDESTAL -- //
 /**
  * Pedestal
- * @param {!string} event
- * @param {!string} id
- * @param {!number} time
- * @param {!string} tier
- * @param {?Map<!string, !number>} colors
- * @param {!number} xp
- * @param {!string[]} pattern
- * @param {!Map<!string, {item | tag: string}>} item_inputs
- * @param {!{!amount: count, !item: string}} item_outputs
- * @param {?string} advancement
- * @param {?string} group
- * @param {?boolean} secret
- * @param {?boolean} skip_remainders
- * @param {?boolean} disable_boosts
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!number} time - Recipe duration in ticks (1 second is 20 ticks)
+ * @param {!string} tier - Pedestal tier
+ * @param {?Map<string!, number!>} colors - Map with required amount of Gemstone Powders, {'spectrum:white': 1}
+ * @param {!number} xp - XP output
+ * @param {!string[]} pattern - Shaped crafting pattern
+ * @param {{item: Special.Item}[]} item_inputs - Array of craftting pattern keys {A: 'minecraft:dirt', B: 'minecraft:cobblestone'}
+ * @param {!SPItems} item_outputs - Output ItemStack {item: 'spectrum:onyx_shard', count: 2, chance: 0.5}
+ * @param {?string} advancement - advancement prerequisite ID
+ * @param {?string} group - Recipe group ID
+ * @param {?boolean} secret - hide recipe from recipe viewers
+ * @param {?boolean} skip_remainders - If recipe remainders should not be given (like empty buckets by crafting with a water bucket)
+ * @param {?boolean} disable_boosts - When true, yield upgrades does not affect the output of the recipe
  */
 let pedestal = (
     event,
@@ -176,7 +182,7 @@ let pedestal = (
     };
     if (colors) newRecipe['colors'] = colors;
     if (pattern) newRecipe['pattern'] = pattern;
-    if (item_inputs) newRecipe['ingredients'] = item_inputs;
+    if (item_inputs) newRecipe['key'] = item_inputs;
     if (item_outputs) newRecipe['result'] = item_outputs;
     if (advancement) newRecipe.advancement = advancement;
     if (group) newRecipe.group = group;

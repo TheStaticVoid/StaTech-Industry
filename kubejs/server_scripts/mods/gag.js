@@ -40,60 +40,52 @@ ServerEvents.recipes((event) => {
     // -------------------//
 
     // -- HEARTHSTONE -- //
-    event
-        .custom({
-            type: sp('pedestal'),
-            time: 400,
-            tier: 'basic',
-            colors: {
-                'spectrum:cyan': 0,
-                'spectrum:magenta': 8,
-                'spectrum:yellow': 0,
-                'spectrum:black': 0,
-                'spectrum:white': 0,
-            },
-            experience: 5.0,
-            pattern: ['GGG', 'BEB', ' B '],
-            key: {
-                G: { tag: 'c:glass_panes' },
-                B: { item: mc('smooth_basalt') },
-                E: { item: mc('ender_pearl') },
-            },
-            result: {
-                id: gag('hearthstone'),
-                count: 1,
-            },
-            required_advancement: sp('craft_using_pedestal'),
-        })
-        .id(st('hearthstone'));
+    pedestal(
+        event,
+        st('hearthstone'),
+        400,
+        'basic',
+        {
+            'spectrum:cyan': 0,
+            'spectrum:magenta': 8,
+            'spectrum:yellow': 0,
+            'spectrum:black': 0,
+            'spectrum:white': 0,
+        },
+        5.0,
+        ['GGG', 'BEB', ' B '],
+        {
+            G: { tag: 'c:glass_panes' },
+            B: { item: mc('smooth_basalt') },
+            E: { item: mc('ender_pearl') },
+        },
+        { id: gag('hearthstone'), count: 1 },
+        sp('craft_using_pedestal')
+    );
 
     // -- TIME IN A BOTTLE -- //
-    event
-        .custom({
-            type: sp('pedestal'),
-            time: 400,
-            tier: 'simple',
-            colors: {
-                'spectrum:cyan': 0,
-                'spectrum:magenta': 4,
-                'spectrum:yellow': 0,
-                'spectrum:black': 0,
-                'spectrum:white': 0,
-            },
-            experience: 5.0,
-            pattern: ['GGG', 'DCD', 'ABA'],
-            key: {
-                G: { item: mi('gold_curved_plate') },
-                D: { item: mc('diamond') },
-                C: { item: mc('clock') },
-                A: { item: sp('amethyst_powder') },
-                B: { item: mc('glass_bottle') },
-            },
-            result: {
-                id: gag('time_sand_pouch'),
-                count: 1,
-            },
-            required_advancement: sp('build_basic_pedestal_structure'),
-        })
-        .id(st('time_sand_pouch'));
+    pedestal(
+        event,
+        st('time_sand_pouch'),
+        400,
+        'simple',
+        {
+            'spectrum:cyan': 0,
+            'spectrum:magenta': 4,
+            'spectrum:yellow': 0,
+            'spectrum:black': 0,
+            'spectrum:white': 0,
+        },
+        5.0,
+        ['GGG', 'DCD', 'ABA'],
+        {
+            G: { item: mi('gold_curved_plate') },
+            D: { item: mc('diamond') },
+            C: { item: mc('clock') },
+            A: { item: sp('amethyst_powder') },
+            B: { item: mc('glass_bottle') },
+        },
+        { id: gag('time_sand_pouch'), count: 1 },
+        sp('build_basic_pedestal_structure')
+    );
 });
