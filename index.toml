@@ -1,12 +1,24 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/build_pack.yml"
+hash = "78a62de45c6261ea9dbac853533b9e49678907eaf8ac52b128593339672b266d"
+
+[[files]]
+file = ".github/workflows/build_publish_pack.yml"
+hash = "eb03db3ec08d0fb022406b8d9e7f9d925cc0af16d212186291e595e3b80f7e0a"
+
+[[files]]
+file = "CODEOWNERS"
+hash = "7fa9a1a3e36605388a265d839075c0a93b1f6481a2e99a2955e75cfc0aed915a"
+
+[[files]]
 file = "CONTRIBUTING.md"
-hash = "807e3d978be9d548ad2c5dc2d994d404da92fcff51a18f53a67e102eba522003"
+hash = "c440cfa519337c7fe095592bca4d4dadd448b010f93a2c8056842db90c3986ed"
 
 [[files]]
 file = "Changelog.md"
-hash = "afeffb93c00a2496b237b18c3605f9f11af6ca44f329973c6540cb81035336d1"
+hash = "e49d61c1b38f2bfb075fab9fff664f7e8eb8d4cc44e1234863a90ce72f72dd4c"
 
 [[files]]
 file = "LICENSE"
@@ -18,7 +30,7 @@ hash = "26162c867a4e2fa11fd36a31a08f8ff76a62b1dbbd768ca48b3f3f139f121a58"
 
 [[files]]
 file = "README.md"
-hash = "6d980eac08b65efc8023eecb81404d380841f4e27564ada97e73b3cdc2f94194"
+hash = "5636b7673dc9b14c793cc2902a40ab4df43ff04625f2ef0f8465912c61ebd3f1"
 
 [[files]]
 file = "config/ae2-common.toml"
