@@ -21,10 +21,13 @@ lint_check() {
 		echo "$ESLINT_PROBLEMS"
 		exit 1
 	fi
+	if !PRETTIER_PROBLEMS=$(npx prettier $(git diff --name-only . | cut -d'/' -f2-) --list-different)
+		echo Prettier has detected some problems. Fix them before committing.
+		echo "$PRETTIER_PROBLEMS"
+		exit 1
+	fi
 }
 
 
 cd kubejs
-lint_check
-cd ../tools/build
 lint_check
