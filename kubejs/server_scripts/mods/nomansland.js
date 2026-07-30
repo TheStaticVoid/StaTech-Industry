@@ -203,7 +203,6 @@ ServerEvents.recipes((event) => {
 
     // cooking(event, st('salmon_and_pesto_gnocchi'), 1, 'meals', {
     //     count: 1,
-    //     id: mc('bowl'),
     // });
 
     // ----------------//
