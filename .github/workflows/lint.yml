@@ -2,6 +2,8 @@ name: Autolint
 
 on:
   workflow_call:
+  workflow_dispatch:
+  push:
 
 jobs:
   run-linters:
