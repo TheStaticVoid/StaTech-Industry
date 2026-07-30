@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-echo "=== DEBUG: Pre-commit hook is running! ==="
+
 # Check NPM
 if ! npm -v > /dev/null; then
 	echo NPM is not installed.
