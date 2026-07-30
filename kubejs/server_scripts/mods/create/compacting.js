@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:create/compacting/${id}`;
 
@@ -11,13 +11,11 @@ ServerEvents.recipes(event => {
     let compacting = (id, item_inputs, item_outputs) => {
         let newRecipe = {
             type: cr('compacting'),
-        }
+        };
 
-        if (item_inputs)
-            newRecipe['ingredients'] = item_inputs;
-        if (item_outputs)
-            newRecipe['results'] = item_outputs;
+        if (item_inputs) newRecipe['ingredients'] = item_inputs;
+        if (item_outputs) newRecipe['results'] = item_outputs;
 
         event.custom(newRecipe).id(id);
-    }
+    };
 });

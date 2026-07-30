@@ -3,15 +3,13 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/fusion_reactor/${id}`;
 
     // -- FUSION REACTOR REMOVED RECIPES -- //
-    const REMOVED_RECIPE = [
-        mi('fusion_reactor/helium_tritium')
-    ]
-    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
+    const REMOVED_RECIPE = [mi('fusion_reactor/helium_tritium')];
+    REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
     // HELIUM PLASMA + DEUTERIUM -> HYDROGEN + NEUTRONIUM
     fusion(
@@ -21,11 +19,11 @@ ServerEvents.recipes(event => {
         2000,
         [
             { amount: 1000, fluid: mi('helium_plasma') },
-            { amount: 1000, fluid: mi('deuterium') }
+            { amount: 1000, fluid: mi('deuterium') },
         ],
         [
             { amount: 975, fluid: mi('hydrogen') },
-            { amount: 15, fluid: mi('neutronium') }
+            { amount: 15, fluid: mi('neutronium') },
         ]
     );
 
@@ -36,11 +34,11 @@ ServerEvents.recipes(event => {
         300,
         [
             { amount: 1000, fluid: mi('helium_3') },
-            { amount: 1000, fluid: mi('tritium') }
+            { amount: 1000, fluid: mi('tritium') },
         ],
         [
             { amount: 1000, fluid: mi('helium_plasma') },
-            { amount: 1000, fluid: mi('deuterium') }
+            { amount: 1000, fluid: mi('deuterium') },
         ]
     );
 });

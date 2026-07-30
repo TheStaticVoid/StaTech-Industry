@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/drilling_rig/${id}`;
 
@@ -13,8 +13,8 @@ ServerEvents.recipes(event => {
         st('gold_drill'),
         16,
         200,
-        [ { amount: 1, item: mi('gold_drill'), probability: 0.05 } ],
-        [ { amount: 500, fluid: mc('lava') } ]
+        [{ amount: 1, item: mi('gold_drill'), probability: 0.05 }],
+        [{ amount: 500, fluid: mc('lava') }]
     );
 
     drillingRig(
@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
         st('salt_water'),
         16,
         200,
-        [ { amount: 1, item: mi('bronze_drill'), probability: 0.02 } ],
-        [ { amount: 16000, fluid: mi('salt_water') } ]
+        [{ amount: 1, item: mi('bronze_drill'), probability: 0.02 }],
+        [{ amount: 16000, fluid: mi('salt_water') }]
     );
 });

@@ -3,16 +3,11 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
-RecipeViewerEvents.removeEntries('item', event => {
-
+RecipeViewerEvents.removeEntries('item', (event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let ss = (id) => `sophisticatedstorage:${id}`;
     let mi = (id) => `modern_industrialization:${id}`;
     let cr = (id) => `create:${id}`;
 
-
-    event.remove([
-        "#sophisticatedstorage:all_storage"
-    ]);
-
-})
+    event.remove(['#sophisticatedstorage:all_storage']);
+});

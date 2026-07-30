@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "x": {
-      "tag": "c:ingots/tungstensteel"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "x": {
+            "tag": "c:ingots/tungstensteel"
+        },
+        "y": {
+            "item": "modern_industrialization:tungstensteel_ingot"
+        }
     },
-    "y": {
-      "item": "modern_industrialization:tungstensteel_ingot"
+    "pattern": ["xxx", "xyx", "xxx"],
+    "result": {
+        "count": 1,
+        "id": "modern_industrialization:tungstensteel_block"
     }
-  },
-  "pattern": [
-    "xxx",
-    "xyx",
-    "xxx"
-  ],
-  "result": {
-    "count": 1,
-    "id": "modern_industrialization:tungstensteel_block"
-  }
 }

@@ -24,7 +24,7 @@ Linux and MacOS
 java -jar pakku.jar fetch && cp -f "$INST_MC_DIR/.pakku/prism-overrides/mmc-pack.json" "$INST_DIR/mmc-pack.json"
 ```
 
-#### Code Editor Setup
+### Code Editor Setup
 
 The pack development environment has been created supporting [VSCode](https://code.visualstudio.com/Download?_exp_download=fb315fc982) and [ProbeJS](https://www.curseforge.com/minecraft/mc-mods/probejs/files/all?page=1&pageSize=20&showAlphaFiles=show). We make ample use of recipe helper functions (see `kubejs/server_scripts/machine_recipe_helper.js`) throughout the pack, and have gone to the effort of adding JSDoc type info for each recipe helper function for better code completion (keep in mind the code is NOT TypeScript).
 
@@ -32,9 +32,10 @@ Also, GitHub Actions are used to automate code format checks, pack builds, and a
 
 Finally, a VSCode workspace is packaged with the repository, this contains the appropriate settings and organization, in addition to the recommended extensions.
 
-## Code Consistency
+#### Using the pre-commit hook
 
-Any KubeJS added code must follow the existing formatting. Please note that we may change how we format things in the future, but in general, it will look how it is currently.
+You can (and probably should!) configure your installation of `git` to use `.github/hooks/pre-commit` to check your changes for formatting errors before you make a new commit. If using git on windows, you will need to make sure the hook is executed using `git bash` and not some shell.
+
 Scripts are split based on their purpose. For Server Scripts, they are split based on the origin mod that is being modified. For example, if you're adding a new shaped/shapeless recipe for an item from Create, you would do so in `create.js`. If you're adding a new custom recipe that uses a Create mechanical fan as the type, then it would also go in the `create.js` file.
 
 Modern Industrialization is an exception to this rule, due to the extent of which it has been modified. For regular shaped/shapeless recipes, they should be placed in the `mods/modern_industrialization.js` file, while any custom recipe type should go in the `modern_industrialization` subfolder. For example, a new Assembler recipe would be placed in the `mods/modern_industrialization/assembler.js` file.
@@ -86,7 +87,4 @@ Server packs rely on [Forge-Server-Starter](https://github.com/HellBz/Forge-Serv
 
 Zero-tolerance policy for AI generated code, assets, and pull-requests. Take your slop elsewhere.
 
-```
-
-```
 [^1]: Modrinth buildscripts are disabled by default, as most pack developers do not plan on releasing to modrinth due to important mods not being present, but can be easily uncommented if you do. If so, also add a `MODRINTH_TOKEN` and `MODRINTH_ID` secret and variable.

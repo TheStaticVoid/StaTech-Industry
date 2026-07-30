@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "r": {
-      "item": "modern_industrialization:rubber_sheet"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "r": {
+            "item": "modern_industrialization:rubber_sheet"
+        },
+        "w": {
+            "item": "modern_industrialization:gold_wire"
+        }
     },
-    "w": {
-      "item": "modern_industrialization:gold_wire"
+    "pattern": ["rrr", "www", "rrr"],
+    "result": {
+        "count": 3,
+        "id": "modern_industrialization:gold_cable"
     }
-  },
-  "pattern": [
-    "rrr",
-    "www",
-    "rrr"
-  ],
-  "result": {
-    "count": 3,
-    "id": "modern_industrialization:gold_cable"
-  }
 }

@@ -13,10 +13,17 @@ if ! npx -v > /dev/null; then
 	exit 1
 fi
 
-# ESLint
+# ESLint and Prettier
 lint_check() {
 	npm install --silent 2> /dev/null
-	if ! ESLINT_PROBLEMS=$(npx eslint); then
+	CHANGED=$(git diff --name-only . | cut -d'/' -f2-)
+	if ! PRETTIER_PROBLEMS=$(npx prettier $CHANGED --list-different 2>/dev/null); then
+		echo Prettier has detected some problems. Fix them before committing.
+		echo "$PRETTIER_PROBLEMS"
+		exit 1
+	fi
+
+	if ! ESLINT_PROBLEMS=$(npx eslint $CHANGED); then
 		echo Eslint has detected some problems. Fix them before committing.
 		echo "$ESLINT_PROBLEMS"
 		exit 1
@@ -25,6 +32,4 @@ lint_check() {
 
 
 cd kubejs
-lint_check
-cd ../tools/build
 lint_check

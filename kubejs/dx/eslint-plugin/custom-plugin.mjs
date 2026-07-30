@@ -2,7 +2,7 @@
  * Custom ESLint plugin for PanPack Template's KubeJS
  */
 
-import recipeSpacing from "./recipe-spacing.mjs"
+import recipeSpacing from './recipe-spacing.mjs';
 
 /**
  * Creates a custom ESLint plugin
@@ -12,16 +12,12 @@ import recipeSpacing from "./recipe-spacing.mjs"
 function customPluginWithAllRulesError(name, rules) {
     return {
         plugins: {
-            [name]: { rules }
+            [name]: { rules },
         },
         rules: Object.fromEntries(
-            Object.entries(rules).map(([rule]) =>
-                [`${name}/${rule}`, "error"]
-            )
-        )
-    }
+            Object.entries(rules).map(([rule]) => [`${name}/${rule}`, 'error'])
+        ),
+    };
 }
 
-export const PanPack = customPluginWithAllRulesError("PanPack", {
-    "recipe-spacing": recipeSpacing
-})
+export const PanPack = customPluginWithAllRulesError('PanPack', {});

@@ -4,7 +4,7 @@
 // -----------------------------------------
 
 // This list is a modified version from the AOF6 modpack
-ServerEvents.tags('item', event => {
+ServerEvents.tags('item', (event) => {
     const ITEMS = [
         kj('angel_ring'),
         ae('quantum_entangled_singularity'),
@@ -70,8 +70,7 @@ ServerEvents.tags('item', event => {
         '#create:packages',
         '#supplementaries:presents',
         '#supplementaries:trapped_presents',
-
     ];
 
-    ITEMS.forEach(id => event.add(mi('replicator_blacklist'), id));
+    ITEMS.forEach((id) => event.add(mi('replicator_blacklist'), id));
 });

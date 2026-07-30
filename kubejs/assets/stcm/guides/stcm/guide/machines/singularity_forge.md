@@ -1,11 +1,11 @@
 ---
 navigation:
-  title: "Singularity Forge"
-  icon: "modern_industrialization:singularity_forge"
-  position: 10
-  parent: stcm:machines.md
+    title: 'Singularity Forge'
+    icon: 'modern_industrialization:singularity_forge'
+    position: 10
+    parent: stcm:machines.md
 item_ids:
-  - modern_industrialization:singularity_forge
+    - modern_industrialization:singularity_forge
 ---
 
 # Singularity Forge
@@ -17,6 +17,3 @@ item_ids:
 The Singularity Forge is a multiblock machine that allows you create Singularities.
 
 <Recipe id="statech:modern_industrialization/singularity_forge" />
-
-
-
