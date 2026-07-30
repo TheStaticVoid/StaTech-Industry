@@ -201,6 +201,8 @@ ServerEvents.recipes((event) => {
         })
         .id(st('salmon_and_pesto_gnocchi'));
 
+    ('bruh.png');
+
     // ----------------//
     // ---- MIXER ---- //
     // ----------------//
