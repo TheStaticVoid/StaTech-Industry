@@ -67,6 +67,16 @@ StartupEvents.registry('block', (event) => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool');
 
+    event
+        .create(`kubejs:charcoal_block`)
+        .displayName('Charcoal Block')
+        .soundType('stone')
+        .requiresTool(true)
+        .hardness(5)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBoth('c:storage_blocks/charcoal')
+        .tagBoth('c:storage_blocks');
+
     const tieredProbeComputers = [
         ['mki_probe_computer', 'Mk I Probe Computer'],
         ['mkii_probe_computer', 'Mk II Probe Computer'],
@@ -83,17 +93,4 @@ StartupEvents.registry('block', (event) => {
             .tagBlock('minecraft:mineable/pickaxe')
             .tagBlock('minecraft:needs_iron_tool');
     });
-
-    /*     const oreSamples = [
-            ['iron_ore_sample', 'Iron Ore Sample']
-        ];
-
-        oreSamples.forEach(([id, name]) => {
-            event.create(`kubejs:${id}`)
-            .displayName(name)
-            .soundType('stone')
-            .requiresTool(false)
-            .hardness(1)
-            .tagBlock('minecraft:mineable/pickaxe')
-        }); */
 });

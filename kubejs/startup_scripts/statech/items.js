@@ -245,3 +245,9 @@ StartupEvents.registry('item', (event) => {
 
     event.create('uu_matter').displayName('UU Matter').rarity('Epic');
 });
+
+ItemEvents.modification((event) => {
+    event.modify('kubejs:charcoal_block', (item) => {
+        item.burnTime = 14400;
+    });
+});
