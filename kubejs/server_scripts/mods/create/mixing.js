@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:create/mixing/${id}`;
 
@@ -15,13 +15,11 @@ ServerEvents.recipes(event => {
         let newRecipe = {
             type: cr('mixing'),
             heatRequirement: heat_requirement,
-        }
+        };
 
-        if (item_inputs)
-            newRecipe['ingredients'] = item_inputs;
-        if (item_outputs)
-            newRecipe['results'] = item_outputs;
+        if (item_inputs) newRecipe['ingredients'] = item_inputs;
+        if (item_outputs) newRecipe['results'] = item_outputs;
 
         event.custom(newRecipe).id(id);
-    }
+    };
 });

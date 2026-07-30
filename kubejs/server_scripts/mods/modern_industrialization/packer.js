@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/packer/${id}`;
 
@@ -15,9 +15,9 @@ ServerEvents.recipes(event => {
         mi('compat/ae2/printed_engineering_processor'),
         mi('compat/ae2/printed_logic_processor'),
         mi('compat/ae2/printed_silicon'),
-        mi('compat/ae2/printed_silicon_from_ingot')
+        mi('compat/ae2/printed_silicon_from_ingot'),
     ];
-    REMOVED_RECIPE.forEach(id => event.remove({ id: id }));
+    REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
     // -- FLUIX GLASS CABLE -- //
     packer(
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 2, item: ae('fluix_crystal') },
-            { amount: 1, item: ae('quartz_fiber') }
+            { amount: 1, item: ae('quartz_fiber') },
         ],
         [{ amount: 4, item: ae('fluix_glass_cable') }]
     );
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: mc('wool') },
-            { amount: 1, item: ae('fluix_glass_cable') }
+            { amount: 1, item: ae('fluix_glass_cable') },
         ],
         [{ amount: 1, item: ae('fluix_covered_cable') }]
     );
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: ae('fluix_covered_cable') },
             { amount: 1, item: mc('redstone') },
-            { amount: 1, item: mc('glowstone_dust') }
+            { amount: 1, item: mc('glowstone_dust') },
         ],
         [{ amount: 1, item: ae('fluix_smart_cable') }]
     );
@@ -88,11 +88,10 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: ae('fluix_covered_dense_cable') },
             { amount: 1, item: mc('redstone') },
-            { amount: 1, item: mc('glowstone_dust') }
+            { amount: 1, item: mc('glowstone_dust') },
         ],
         [{ amount: 1, item: ae('fluix_smart_dense_cable') }]
     );
-
 
     // -- FLUID PIPE -- //
     packer(
@@ -102,7 +101,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: mi('fluid_pipes') },
-            { amount: 2, item: mi('copper_plate') }
+            { amount: 2, item: mi('copper_plate') },
         ],
         [{ amount: 8, item: md('fluid_pipe') }]
     );
@@ -115,7 +114,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: mi('item_pipes') },
-            { amount: 2, item: mi('iron_plate') }
+            { amount: 2, item: mi('iron_plate') },
         ],
         [{ amount: 8, item: md('item_pipe') }]
     );
@@ -128,7 +127,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mi('superconductor_cable') },
-            { amount: 2, item: mi('rubber_sheet') }
+            { amount: 2, item: mi('rubber_sheet') },
         ],
         [{ amount: 4, item: md('superconductor_cable') }]
     );
@@ -141,7 +140,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: kj('ev_wire') },
-            { amount: 2, item: mi('rubber_sheet') }
+            { amount: 2, item: mi('rubber_sheet') },
         ],
         [{ amount: 4, item: md('ev_cable') }]
     );
@@ -154,7 +153,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: kj('hv_wire') },
-            { amount: 2, item: mi('rubber_sheet') }
+            { amount: 2, item: mi('rubber_sheet') },
         ],
         [{ amount: 4, item: md('hv_cable') }]
     );
@@ -167,7 +166,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: kj('mv_wire') },
-            { amount: 2, item: mi('rubber_sheet') }
+            { amount: 2, item: mi('rubber_sheet') },
         ],
         [{ amount: 4, item: md('mv_cable') }]
     );
@@ -180,7 +179,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: kj('lv_wire') },
-            { amount: 2, item: mi('rubber_sheet') }
+            { amount: 2, item: mi('rubber_sheet') },
         ],
         [{ amount: 4, item: md('lv_cable') }]
     );
@@ -204,7 +203,7 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: mi('titanium_ingot') },
             { amount: 1, item: mi('tungsten_ingot') },
-            { amount: 1, item: mi('ostrum_ingot') }
+            { amount: 1, item: mi('ostrum_ingot') },
         ],
         [{ amount: 1, item: mi('mixed_ingot_blastproof') }]
     );
@@ -237,8 +236,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 5, item: ae('certus_quartz_dust') },
-            { amount: 4, tag: 'c:glass_blocks/cheap' }
-
+            { amount: 4, tag: 'c:glass_blocks/cheap' },
         ],
         [{ amount: 4, item: ae('quartz_glass') }]
     );
@@ -251,8 +249,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: ae('quartz_glass') },
-            { amount: 2, item: mc('glowstone_dust') }
-
+            { amount: 2, item: mc('glowstone_dust') },
         ],
         [{ amount: 1, item: ae('quartz_vibrant_glass') }]
     );
@@ -265,7 +262,7 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 9, item: cr('brass_ingot') },
-            { amount: 1, item: mi('packer_block_template'), probability: 0.0 }
+            { amount: 1, item: mi('packer_block_template'), probability: 0.0 },
         ],
         [{ amount: 1, item: cr('brass_block') }]
     );
@@ -279,4 +276,4 @@ ServerEvents.recipes(event => {
         [{ amount: 9, item: cr('brass_nugget') }],
         [{ amount: 1, item: cr('brass_ingot') }]
     );
-})
+});

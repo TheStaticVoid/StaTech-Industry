@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/laser_engraver/${id}`;
 
@@ -15,9 +15,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: kj('star_data') },
-            { amount: 1, item: mi('digital_circuit_board') }
+            { amount: 1, item: mi('digital_circuit_board') },
         ],
-        [ { amount: 1, item: kj('star_location_telemetry') } ]
+        [{ amount: 1, item: kj('star_location_telemetry') }]
     );
 
     // -- PLANETARY LOCATION TELEMETRY -- //
@@ -28,9 +28,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: kj('planetary_data') },
-            { amount: 1, item: mi('digital_circuit_board') }
+            { amount: 1, item: mi('digital_circuit_board') },
         ],
-        [ { amount: 1, item: kj('planetary_location_telemetry') } ]
+        [{ amount: 1, item: kj('planetary_location_telemetry') }]
     );
 
     // -- BLACK HOLE LOCATION TELEMETRY -- //
@@ -41,9 +41,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: kj('black_hole_data') },
-            { amount: 1, item: mi('digital_circuit_board') }
+            { amount: 1, item: mi('digital_circuit_board') },
         ],
-        [ { amount: 1, item: kj('black_hole_location_telemetry') } ]
+        [{ amount: 1, item: kj('black_hole_location_telemetry') }]
     );
 
     // -- ANOMALY LOCATION TELEMETRY -- //
@@ -54,9 +54,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: kj('anomalous_stellar_data') },
-            { amount: 1, item: mi('digital_circuit_board') }
+            { amount: 1, item: mi('digital_circuit_board') },
         ],
-        [ { amount: 1, item: kj('anomaly_location_telemetry') } ]
+        [{ amount: 1, item: kj('anomaly_location_telemetry') }]
     );
 
     // -- PRINTED SILICON -- //
@@ -67,9 +67,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: ae('silicon_press'), probability: 0.0 },
-            { amount: 1, item: ae('silicon') }
+            { amount: 1, item: ae('silicon') },
         ],
-        [ { amount: 1, item: ae('printed_silicon') } ]
+        [{ amount: 1, item: ae('printed_silicon') }]
     );
     laserEngraver(
         event,
@@ -78,9 +78,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: ae('silicon_press'), probability: 0.0 },
-            { amount: 1, item: mi('silicon_ingot') }
+            { amount: 1, item: mi('silicon_ingot') },
         ],
-        [ { amount: 1, item: ae('printed_silicon') } ]
+        [{ amount: 1, item: ae('printed_silicon') }]
     );
 
     // -- PRINTED CALCULATION CIRCUIT -- //
@@ -90,10 +90,14 @@ ServerEvents.recipes(event => {
         16,
         200,
         [
-            { amount: 1, item: ae('calculation_processor_press'), probability: 0.0 },
-            { amount: 1, item: ae('certus_quartz_crystal') }
+            {
+                amount: 1,
+                item: ae('calculation_processor_press'),
+                probability: 0.0,
+            },
+            { amount: 1, item: ae('certus_quartz_crystal') },
         ],
-        [ { amount: 1, item: ae('printed_calculation_processor') } ]
+        [{ amount: 1, item: ae('printed_calculation_processor') }]
     );
 
     // -- PRINTED ENGINEERING CIRCUIT -- //
@@ -103,10 +107,14 @@ ServerEvents.recipes(event => {
         32,
         200,
         [
-            { amount: 1, item: ae('engineering_processor_press'), probability: 0.0 },
-            { amount: 1, item: mc('diamond') }
+            {
+                amount: 1,
+                item: ae('engineering_processor_press'),
+                probability: 0.0,
+            },
+            { amount: 1, item: mc('diamond') },
         ],
-        [ { amount: 1, item: ae('printed_engineering_processor') } ]
+        [{ amount: 1, item: ae('printed_engineering_processor') }]
     );
 
     // -- PRINTED LOGIC CIRCUIT -- //
@@ -117,9 +125,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: ae('logic_processor_press'), probability: 0.0 },
-            { amount: 1, item: mc('gold_ingot') }
+            { amount: 1, item: mc('gold_ingot') },
         ],
-        [ { amount: 1, item: ae('printed_logic_processor') } ]
+        [{ amount: 1, item: ae('printed_logic_processor') }]
     );
 
     // -- PRINTED CONCURRENT CIRCUIT -- //
@@ -129,10 +137,14 @@ ServerEvents.recipes(event => {
         32,
         200,
         [
-            { amount: 1, item: ea('concurrent_processor_press'), probability: 0.0 },
-            { amount: 1, item: ea('entro_ingot') }
+            {
+                amount: 1,
+                item: ea('concurrent_processor_press'),
+                probability: 0.0,
+            },
+            { amount: 1, item: ea('entro_ingot') },
         ],
-        [ { amount: 1, item: ea('concurrent_processor_print') } ]
+        [{ amount: 1, item: ea('concurrent_processor_print') }]
     );
 
     // -- PRINTED ACCUMULATION CIRCUIT -- //
@@ -142,10 +154,14 @@ ServerEvents.recipes(event => {
         32,
         200,
         [
-            { amount: 1, item: mg('accumulation_processor_press'), probability: 0.0 },
-            { amount: 1, item: mg('sky_steel_ingot') }
+            {
+                amount: 1,
+                item: mg('accumulation_processor_press'),
+                probability: 0.0,
+            },
+            { amount: 1, item: mg('sky_steel_ingot') },
         ],
-        [ { amount: 1, item: mg('printed_accumulation_processor') } ]
+        [{ amount: 1, item: mg('printed_accumulation_processor') }]
     );
 
     // -- SILICON PRESS -- //
@@ -156,9 +172,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: ae('silicon_press'), probability: 0.0 },
-            { amount: 1, item: mc('iron_block') }
+            { amount: 1, item: mc('iron_block') },
         ],
-        [ { amount: 1, item: ae('silicon_press') } ]
+        [{ amount: 1, item: ae('silicon_press') }]
     );
 
     // -- CALCULATION PRESS -- //
@@ -168,10 +184,14 @@ ServerEvents.recipes(event => {
         32,
         200,
         [
-            { amount: 1, item: ae('calculation_processor_press'), probability: 0.0 },
-            { amount: 1, item: mc('iron_block') }
+            {
+                amount: 1,
+                item: ae('calculation_processor_press'),
+                probability: 0.0,
+            },
+            { amount: 1, item: mc('iron_block') },
         ],
-        [ { amount: 1, item: ae('calculation_processor_press') } ]
+        [{ amount: 1, item: ae('calculation_processor_press') }]
     );
 
     // -- ENGINEERING PRESS -- //
@@ -181,10 +201,14 @@ ServerEvents.recipes(event => {
         32,
         200,
         [
-            { amount: 1, item: ae('engineering_processor_press'), probability: 0.0 },
-            { amount: 1, item: mc('iron_block') }
+            {
+                amount: 1,
+                item: ae('engineering_processor_press'),
+                probability: 0.0,
+            },
+            { amount: 1, item: mc('iron_block') },
         ],
-        [ { amount: 1, item: ae('engineering_processor_press') } ]
+        [{ amount: 1, item: ae('engineering_processor_press') }]
     );
 
     // -- LOGIC PRESS -- //
@@ -195,9 +219,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: ae('logic_processor_press'), probability: 0.0 },
-            { amount: 1, item: mc('iron_block') }
+            { amount: 1, item: mc('iron_block') },
         ],
-        [ { amount: 1, item: ae('logic_processor_press') } ]
+        [{ amount: 1, item: ae('logic_processor_press') }]
     );
 
     // -- ACCUMULATION PRESS -- //
@@ -207,10 +231,14 @@ ServerEvents.recipes(event => {
         32,
         200,
         [
-            { amount: 1, item: mg('accumulation_processor_press'), probability: 0.0 },
-            { amount: 1, item: mc('iron_block') }
+            {
+                amount: 1,
+                item: mg('accumulation_processor_press'),
+                probability: 0.0,
+            },
+            { amount: 1, item: mc('iron_block') },
         ],
-        [ { amount: 1, item: mg('accumulation_processor_press') } ]
+        [{ amount: 1, item: mg('accumulation_processor_press') }]
     );
 
     // -- CONCURRENT PRESS -- //
@@ -220,37 +248,41 @@ ServerEvents.recipes(event => {
         32,
         200,
         [
-            { amount: 1, item: ea('concurrent_processor_press'), probability: 0.0 },
-            { amount: 1, item: mc('iron_block') }
+            {
+                amount: 1,
+                item: ea('concurrent_processor_press'),
+                probability: 0.0,
+            },
+            { amount: 1, item: mc('iron_block') },
         ],
-        [ { amount: 1, item: ea('concurrent_processor_press') } ]
+        [{ amount: 1, item: ea('concurrent_processor_press') }]
     );
 
     // -- CRUSHER MODELS -- //
     const modelItemList = [
         //  Model                           Item
-        [ kj('enderman_model'), mc('ender_pearl') ],
-        [ kj('zombie_model'), mc('rotten_flesh') ],
-        [ kj('skeleton_model'), mc('bone') ],
-        [ kj('pig_model'), mc('porkchop') ],
-        [ kj('sheep_model'), mc('mutton') ],
-        [ kj('cow_model'), mc('beef') ],
-        [ kj('chicken_model'), mc('chicken') ],
-        [ kj('squid_model'), mc('ink_sac') ],
-        [ kj('spider_model'), mc('spider_eye') ],
-        [ kj('creeper_model'), mc('gunpowder') ],
-        [ kj('slime_model'), mc('slime_ball') ],
-        [ kj('ghast_model'), mc('ghast_tear') ],
-        [ kj('zombie_piglin_model'), mc('gold_nugget') ],
-        [ kj('magma_cube_model'), mc('magma_cream') ],
-        [ kj('blaze_model'), mc('blaze_rod') ],
-        [ kj('wither_skeleton_model'), ws('fragment') ],
-        [ kj('guardian_model'), mc('prismarine_shard') ],
-        [ kj('witch_model'), mc('glass_bottle') ],
-        [ kj('rabbit_model'), mc('rabbit') ],
-        [ kj('phantom_model'), mc('phantom_membrane') ]
+        [kj('enderman_model'), mc('ender_pearl')],
+        [kj('zombie_model'), mc('rotten_flesh')],
+        [kj('skeleton_model'), mc('bone')],
+        [kj('pig_model'), mc('porkchop')],
+        [kj('sheep_model'), mc('mutton')],
+        [kj('cow_model'), mc('beef')],
+        [kj('chicken_model'), mc('chicken')],
+        [kj('squid_model'), mc('ink_sac')],
+        [kj('spider_model'), mc('spider_eye')],
+        [kj('creeper_model'), mc('gunpowder')],
+        [kj('slime_model'), mc('slime_ball')],
+        [kj('ghast_model'), mc('ghast_tear')],
+        [kj('zombie_piglin_model'), mc('gold_nugget')],
+        [kj('magma_cube_model'), mc('magma_cream')],
+        [kj('blaze_model'), mc('blaze_rod')],
+        [kj('wither_skeleton_model'), ws('fragment')],
+        [kj('guardian_model'), mc('prismarine_shard')],
+        [kj('witch_model'), mc('glass_bottle')],
+        [kj('rabbit_model'), mc('rabbit')],
+        [kj('phantom_model'), mc('phantom_membrane')],
     ];
-    modelItemList.forEach(modelItem => {
+    modelItemList.forEach((modelItem) => {
         let model = modelItem[0];
         let item = modelItem[1];
         laserEngraver(
@@ -260,20 +292,20 @@ ServerEvents.recipes(event => {
             200,
             [
                 { amount: 1, item: ae('basic_card') },
-                { amount: 1, item: item }
+                { amount: 1, item: item },
             ],
-            [ { amount: 1, item: model } ]
+            [{ amount: 1, item: model }]
         );
     });
 
     // -- BOSS CRUSHER MODELS -- //
     const bossModelItemList = [
         //  Model                           Item        Amount
-        [ kj('wither_model'), kj('withered_soc'), 1 ],
-        [ kj('dragon_model'), yai('dragon_egg_siphon_catalyst'), 4 ],
-        [ kj('warden_model'), mc('echo_shard'), 4 ]
+        [kj('wither_model'), kj('withered_soc'), 1],
+        [kj('dragon_model'), yai('dragon_egg_siphon_catalyst'), 4],
+        [kj('warden_model'), mc('echo_shard'), 4],
     ];
-    bossModelItemList.forEach(bossModelItem => {
+    bossModelItemList.forEach((bossModelItem) => {
         let bossModel = bossModelItem[0];
         let bossItem = bossModelItem[1];
         let bossItemAmount = bossModelItem[2];
@@ -284,9 +316,9 @@ ServerEvents.recipes(event => {
             200,
             [
                 { amount: 1, item: ae('advanced_card') },
-                { amount: bossItemAmount, item: bossItem }
+                { amount: bossItemAmount, item: bossItem },
             ],
-            [ { amount: 1, item: bossModel } ]
+            [{ amount: 1, item: bossModel }]
         );
     });
 });

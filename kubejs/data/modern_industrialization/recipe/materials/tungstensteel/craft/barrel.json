@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "#": {
-      "tag": "c:plates/tungstensteel"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": {
+            "tag": "c:plates/tungstensteel"
+        },
+        "b": {
+            "tag": "c:barrels/wooden"
+        }
     },
-    "b": {
-      "tag": "c:barrels/wooden"
+    "pattern": ["###", "#b#", "###"],
+    "result": {
+        "count": 1,
+        "id": "modern_industrialization:tungstensteel_barrel"
     }
-  },
-  "pattern": [
-    "###",
-    "#b#",
-    "###"
-  ],
-  "result": {
-    "count": 1,
-    "id": "modern_industrialization:tungstensteel_barrel"
-  }
 }

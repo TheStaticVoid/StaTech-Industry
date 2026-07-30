@@ -1,30 +1,26 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "G": {
-      "tag": "c:gears/desh"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "G": {
+            "tag": "c:gears/desh"
+        },
+        "R": {
+            "tag": "c:rods/desh"
+        },
+        "b": {
+            "item": "modern_industrialization:desh_bolt"
+        },
+        "c": {
+            "item": "modern_industrialization:desh_curved_plate"
+        },
+        "p": {
+            "tag": "c:plates/desh"
+        }
     },
-    "R": {
-      "tag": "c:rods/desh"
-    },
-    "b": {
-      "item": "modern_industrialization:desh_bolt"
-    },
-    "c": {
-      "item": "modern_industrialization:desh_curved_plate"
-    },
-    "p": {
-      "tag": "c:plates/desh"
+    "pattern": ["bcp", "GRc", "bGb"],
+    "result": {
+        "count": 1,
+        "id": "modern_industrialization:desh_drill_head"
     }
-  },
-  "pattern": [
-    "bcp",
-    "GRc",
-    "bGb"
-  ],
-  "result": {
-    "count": 1,
-    "id": "modern_industrialization:desh_drill_head"
-  }
 }

@@ -5,13 +5,11 @@
 
 let RECYCLER;
 
-MIMachineEvents.registerRecipeTypes(event => {
-    RECYCLER = event.register('recycler')
-        .withItemInputs()
-        .withItemOutputs();
+MIMachineEvents.registerRecipeTypes((event) => {
+    RECYCLER = event.register('recycler').withItemInputs().withItemOutputs();
 });
 
-MIMachineEvents.registerMachines(event => {
+MIMachineEvents.registerMachines((event) => {
     event.craftingSingleBlock(
         // General parameters
         'Recycler',
@@ -33,12 +31,12 @@ MIMachineEvents.registerMachines(event => {
         // Capacity of fluid slots
         16,
         // Slot positions: item and fluids
-        items => items.addSlots(41, 35, 1, 1).addSlots(117, 35, 1, 1),
-        fluids => { },
+        (items) => items.addSlots(41, 35, 1, 1).addSlots(117, 35, 1, 1),
+        (fluids) => {},
 
         // Model configuration
         true, // front overlay
         false, // top overlay
-        false, // side overlay
+        false // side overlay
     );
 });

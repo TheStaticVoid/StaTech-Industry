@@ -1,11 +1,11 @@
 ---
 navigation:
-  title: "High Capacity Packer"
-  icon: "mi_tweaks:high_capacity_packer"
-  position: 3
-  parent: stcm:batching_machines.md
+    title: 'High Capacity Packer'
+    icon: 'mi_tweaks:high_capacity_packer'
+    position: 3
+    parent: stcm:batching_machines.md
 item_ids:
-  - mi_tweaks:high_capacity_packer
+    - mi_tweaks:high_capacity_packer
 ---
 
 # High Capacity Packer
@@ -17,6 +17,3 @@ item_ids:
 The High Capacity Packer is a batching version of the Packer. It can do batches of 8 at a 25% EU discount!
 
 <Recipe id="statech:mi_tweaks/high_capacity_packer" />
-
-
-
