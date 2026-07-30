@@ -24,14 +24,13 @@ Linux and MacOS
 java -jar pakku.jar fetch && cp -f "$INST_MC_DIR/.pakku/prism-overrides/mmc-pack.json" "$INST_DIR/mmc-pack.json"
 ```
 
-## Code Consistency
+#### Code Editor Setup
 
-All JavaScript and JSON files in the `kubejs/` directory are formatted using Prettier and ESLint. Any code contributed should be formatted by these tools first.
+The pack development environment has been created supporting [VSCode](https://code.visualstudio.com/Download?_exp_download=fb315fc982) and [ProbeJS](https://www.curseforge.com/minecraft/mc-mods/probejs/files/all?page=1&pageSize=20&showAlphaFiles=show). We make ample use of recipe helper functions (see `kubejs/server_scripts/machine_recipe_helper.js`) throughout the pack, and have gone to the effort of adding JSDoc type info for each recipe helper function for better code completion (keep in mind the code is NOT TypeScript).
 
-### Using ESLint and Prettier
+Also, GitHub Actions are used to automate code format checks, pack builds, and also pack publication. To make this feasible, We use ESLint and Prettier, so you need to install [NodeJS/NPM](https://nodejs.org/en/download) for those two packages.
 
-- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) must be installed and available on your system.
-- Several "recommended extensions" have been added to the VSCode workspace. To get Prettier auto-format and ESLint error reporting, you will need their respective extensions installed and enabled. Additionally, the ProbeJS extension provides type information and autocomplete for KubeJS and Minecraft types and functions.
+Finally, a VSCode workspace is packaged with the repository, this contains the appropriate settings and organization, in addition to the recommended extensions.
 
 ### Using the pre-commit hook
 
@@ -41,7 +40,13 @@ Scripts are split based on their purpose. For Server Scripts, they are split bas
 
 Modern Industrialization is an exception to this rule, due to the extent of which it has been modified. For regular shaped/shapeless recipes, they should be placed in the `mods/modern_industrialization.js` file, while any custom recipe type should go in the `modern_industrialization` subfolder. For example, a new Assembler recipe would be placed in the `mods/modern_industrialization/assembler.js` file.
 
-Newly added recipes should be put in mod-specific script files and ordered by recipe type (shaped, assembler, pedestal, etc.) with shaped in first, then types alphabetically.
+Newly added recipes should be put in mod-specific script files and ordered by recipe type (shaped, shapeless, assembler, pedestal, etc.) with shaped and shapeless first, then organized by recipe type (not including the mod namespace) alphabetically. For example, if you had recipes using the `minecraft:shaped`, `minecraft:shapeless`, `modern_industrialization:macerator`, `yet_another_industrialization:dragon_egg_energy_siphon`, and `spectrum:fusion_shrine` types, you would organize them as as `shaped`, `shapeless`, `dragon_egg_energy_siphon`, `macerator`, and `fusion_shrine`. Recipe type sections hsould be headed by a block of the following format:
+
+```
+   // ---------------------//
+   // ------ SHAPED ------ //
+   // ---------------------//
+```
 
 In addition to the file organization, the code should also match a certain formatting. Any utility function should be declared at the top of the function, for example this could be the string utilities or custom recipe utilities. For each new recipe there should be a title listing the English in-game name for the item. For example, a recipe for the `modern_industrialization:steel_gear` should be headed with: `// -- STEEL GEAR -- //`
 
@@ -78,8 +83,8 @@ Changes to existing configs should only be done to:
 
 Server packs rely on [Forge-Server-Starter](https://github.com/HellBz/Forge-Server-Starter/) which is not included in this repo. To include it when exporting serverpacks, place the [latest released jar](https://github.com/HellBz/Forge-Server-Starter/releases/latest/download/minecraft_server.jar) inside of `.pakku/server-overrides/`
 
-[^1]: Modrinth buildscripts are disabled by default, as most pack developers do not plan on releasing to modrinth due to important mods not being present, but can be easily uncommented if you do. If so, also add a `MODRINTH_TOKEN` and `MODRINTH_ID` secret and variable.
-
 ## AI Usage Policy
 
 Zero-tolerance policy for AI generated code, assets, and pull-requests. Take your slop elsewhere.
+
+[^1]: Modrinth buildscripts are disabled by default, as most pack developers do not plan on releasing to modrinth due to important mods not being present, but can be easily uncommented if you do. If so, also add a `MODRINTH_TOKEN` and `MODRINTH_ID` secret and variable.
