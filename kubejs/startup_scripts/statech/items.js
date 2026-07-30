@@ -5,18 +5,18 @@
 
 ItemEvents.toolTierRegistry((event) => {
     event.add('bronze', (tier) => {
-        tier.uses = 400;
-        tier.speed = 5;
-        tier.attackDamageBonus = 1.5;
-        tier.enchantmentValue = 18;
+        tier.uses = 320;
+        tier.speed = 6;
+        tier.attackDamageBonus = 2;
+        tier.enchantmentValue = 20;
         tier.repairIngredient = '#c:ingots/bronze';
     });
 
     event.add('steel', (tier) => {
-        tier.uses = 1561;
-        tier.speed = 8;
-        tier.attackDamageBonus = 3;
-        tier.enchantmentValue = 12;
+        tier.uses = 1310;
+        tier.speed = 7.5;
+        tier.attackDamageBonus = 2.5;
+        tier.enchantmentValue = 15;
         tier.repairIngredient = '#c:ingots/steel';
     });
 });
@@ -26,7 +26,7 @@ StartupEvents.registry('armor_material', (event) => {
         .create(`bronze`)
         .defense({
             helmet: 2,
-            chestplate: 4,
+            chestplate: 6,
             leggings: 5,
             boots: 2,
         })
@@ -286,21 +286,25 @@ StartupEvents.registry('item', (event) => {
     event
         .create('bronze_boots', 'boots')
         .displayName('Bronze Boots')
+        .maxDamage(195)
         .material('kubejs:bronze');
 
     event
         .create('bronze_chestplate', 'chestplate')
         .displayName('Bronze Chestplate')
+        .maxDamage(240)
         .material('kubejs:bronze');
 
     event
         .create('bronze_leggings', 'leggings')
         .displayName('Bronze Leggings')
+        .maxDamage(225)
         .material('kubejs:bronze');
 
     event
         .create('bronze_helmet', 'helmet')
         .displayName('Bronze Helmet')
+        .maxDamage(165)
         .material('kubejs:bronze');
 
     event.create('bronze_hoe', 'hoe').displayName('Bronze Hoe').tier('bronze');
@@ -325,4 +329,41 @@ ItemEvents.modification((event) => {
     event.modify('kubejs:charcoal_block', (item) => {
         item.burnTime = 14400;
     });
+
+    event.modify('minecraft:iron_helmet', item => {
+        item.maxDamage = 148
+        // item.armorProtection = 2
+    });
+
+    event.modify('minecraft:iron_chestplate', item => {
+        item.maxDamage = 216
+        // item.armorProtection = 4
+    });
+
+    event.modify('minecraft:iron_leggings', item => {
+        item.maxDamage = 202
+        // item.armorProtection = 4
+    });
+
+    event.modify('minecraft:iron_boots', item => {
+        item.maxDamage = 175
+        // item.armorProtection = 2
+    });
+
+    const toolSet = [
+        'pickaxe',
+        'axe',
+        'hoe',
+        'sword',
+        'shovel'        
+    ];
+
+    toolSet.forEach((tool) => {
+        event.modify(`iron_${tool}`, item => {
+            item.maxDamage = 225;
+            // item.digSpeed = 5;
+            item.attackDamage = 1.5
+        })
+    })
+
 });
