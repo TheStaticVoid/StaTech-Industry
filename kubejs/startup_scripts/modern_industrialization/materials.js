@@ -231,8 +231,8 @@ MIMaterialEvents.addMaterials(event => {
                     'vein_size': 3,
                     'veins_per_chunk': 4,
                     'max_y': 24,
-                    'min_xp': 5,
-                    'max_xp': 10
+                    'min_xp': 25,
+                    'max_xp': 30
                 })
                 .setMainPart('gem')
                 .defaultRecipes();
@@ -250,8 +250,8 @@ MIMaterialEvents.addMaterials(event => {
                     'vein_size': 3,
                     'veins_per_chunk': 4,
                     'max_y': 24,
-                    'min_xp': 5,
-                    'max_xp': 10
+                    'min_xp': 25,
+                    'max_xp': 30
                 })
                 .setMainPart('gem')
                 .defaultRecipes();
@@ -329,8 +329,8 @@ MIMaterialEvents.modifyMaterial('ruby', event => {
             'vein_size': 3,
             'veins_per_chunk': 4,
             'max_y': 24,
-            'min_xp': 5,
-            'max_xp': 10
+            'min_xp': 25,
+            'max_xp': 30
         })
         .setMainPart('gem')
         .defaultRecipes();
