@@ -201,6 +201,11 @@ ServerEvents.recipes((event) => {
         })
         .id(st('salmon_and_pesto_gnocchi'));
 
+    // cooking(event, st('salmon_and_pesto_gnocchi'), 1, 'meals', {
+    //     count: 1,
+    //     id: mc('bowl'),
+    // });
+
     // ----------------//
     // ---- MIXER ---- //
     // ----------------//

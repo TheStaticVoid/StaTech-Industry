@@ -10,8 +10,8 @@
  * @param {!string} id
  * @param {!number} xp
  * @param {?string} book_tab
- * @param {!{!count: number, !id: string}} container
- * @param {!Map<!string, {tag | item: string}> } item_inputs
+ * @param {!{count: number, id: string}} container
+ * @param {{(tag | item)}[] } item_inputs
  * @param {!{!count: number, !id: string}} item_outputs
  */
 let cooking = (
