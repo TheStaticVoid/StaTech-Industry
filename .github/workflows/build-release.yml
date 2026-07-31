@@ -429,7 +429,7 @@ jobs:
         uses: actions/upload-artifact@v4.6.2
         with:
           name: ${{ needs.info.outputs.project_file_name }}-curseforge
-          path: ./build/curseforge/${{ needs.info.outputs.project_file_name }}-curseforge.zip
+          path: ./build/curseforge/${basename -s .zip *.zip}-curseforge.zip
           if-no-files-found: error
 
       - name: Preparing the server artifact
