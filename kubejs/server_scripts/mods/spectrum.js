@@ -249,146 +249,132 @@ ServerEvents.recipes((event) => {
     // -----------------------//
 
     // -- ETERNAL STEAK -- //
-    event.custom({
-        type: sp('cinderhearth'),
-        ingredient: { item: ar('everlasting_beef') },
-        time: 800,
-        experience: 1.0,
-        results: [
-            {
-                id: ar('eternal_steak'),
-                count: 1,
-            },
-        ],
-    });
+    cinderhearth(event, st('eternal_steak'), 800, 1.0, ar('everlasting_beef'), [
+        { id: ar('eternal_steak'), count: 1 },
+    ]);
 
     // ------------------------//
     // ---- FUSION SHRINE ---- //
     // ------------------------//
 
     // -- EVERLASTING BEEF -- //
-    event
-        .custom({
-            type: sp('fusion_shrine'),
-            time: 1200,
-            experience: 30.0,
-            fluid: { fluid: ei('blazing_essence') },
-            ingredients: [
-                { item: mc('beef'), count: 64 },
-                { item: mc('beef'), count: 64 },
-                { item: fd('shepherds_pie_block'), count: 1 },
-                { item: mc('golden_apple'), count: 4 },
-                { item: mc('golden_carrot'), count: 32 },
-                { item: sp('shimmerstone_block'), count: 8 },
-            ],
-            result: {
-                id: ar('everlasting_beef'),
+    fusion_shrine(
+        event,
+        st('everlasting_beef'),
+        1200,
+        30,
+        [
+            { item: mc('beef'), count: 64 },
+            { item: mc('beef'), count: 64 },
+            { item: fd('shepherds_pie_block'), count: 1 },
+            { item: mc('golden_apple'), count: 4 },
+            { item: mc('golden_carrot'), count: 32 },
+            { item: sp('shimmerstone_block'), count: 8 },
+        ],
+        {
+            id: ar('everlasting_beef'),
+        },
+        { fluid: ei('blazing_essence') },
+        [
+            {
+                type: 'time_of_day',
+                time: 'noon',
             },
-            required_advancement: sp('build_fusion_shrine'),
-            world_conditions: [
-                {
-                    type: 'time_of_day',
-                    time: 'noon',
-                },
-            ],
-            start_crafting_effect: 'nothing',
-            during_crafting_effects: [
-                'visual_explosions_on_shrine',
-                'nothing',
-                'visual_explosions_on_shrine',
-            ],
-            finish_crafting_effect: 'legendary_tool_craft',
-        })
-        .id(st('everlasting_beef'));
+        ],
+        'nothing',
+        [
+            'visual_explosions_on_shrine',
+            'nothing',
+            'visual_explosions_on_shrine',
+        ],
+        'legendary_tool_craft',
+        sp('build_fusion_shrine')
+    );
 
     // -------------------//
     // ---- PEDESTAL ---- //
     // -------------------//
 
     // -- BOTTLE OF FAILING -- //
-    event.custom({
-        type: sp('pedestal'),
-        time: 800,
-        tier: 'advanced',
-        colors: {
+    pedestal(
+        event,
+        st('bottle_of_failing'),
+        800,
+        'advanced',
+        {
             'spectrum:cyan': 1,
             'spectrum:magenta': 1,
             'spectrum:yellow': 1,
             'spectrum:black': 1,
             'spectrum:white': 0,
         },
-        experience: 2.0,
-        pattern: ['FSF', 'EBE', 'FSF'],
-        key: {
+        2.0,
+        ['FSF', 'EBE', 'FSF'],
+        {
             S: { item: sp('stratine_fragments') },
             F: { item: mc('fermented_spider_eye') },
             E: { item: mc('ender_eye') },
             B: { item: mc('experience_bottle') },
         },
-        result: {
-            id: sp('bottle_of_failing'),
-            count: 1,
-        },
-        required_advancement: sp('unlocks/items/bottle_of_failing'),
-    });
+        { id: sp('bottle_of_failing'), count: 1 },
+        sp('unlocks/items/bottle_of_failing')
+    );
 
     // -- ANGEL RING -- //
-    event
-        .custom({
-            type: sp('pedestal'),
-            time: 800,
-            tier: 'complex',
-            colors: {
-                'spectrum:cyan': 32,
-                'spectrum:magenta': 32,
-                'spectrum:yellow': 32,
-                'spectrum:black': 32,
-                'spectrum:white': 32,
-            },
-            experience: 100.0,
-            pattern: ['SAS', 'FRF', 'SMS'],
-            key: {
-                S: { item: sp('star_fragment') },
-                A: { item: sp('aether_vestiges') },
-                F: { item: sp('resplendent_feather') },
-                M: { item: sp('moonstone_core') },
-                R: { item: mi('gold_ring') },
-            },
-            result: {
-                id: kj('angel_ring'),
-                count: 1,
-            },
-            required_advancement: sp('endgame/finish_progression'),
-        })
-        .id(st('angel_ring'));
+    pedestal(
+        event,
+        st('angel_ring'),
+        800,
+        'complex',
+        {
+            'spectrum:cyan': 32,
+            'spectrum:magenta': 32,
+            'spectrum:yellow': 32,
+            'spectrum:black': 32,
+            'spectrum:white': 32,
+        },
+        100,
+        ['SAS', 'FRF', 'SMS'],
+        {
+            S: { item: sp('star_fragment') },
+            A: { item: sp('aether_vestiges') },
+            F: { item: sp('resplendent_feather') },
+            M: { item: sp('moonstone_core') },
+            R: { item: mi('gold_ring') },
+        },
+        {
+            id: kj('angel_ring'),
+            count: 1,
+        },
+        sp('endgame/finish_progression')
+    );
 
     // -- FIREPROOF RING -- //
-    event
-        .custom({
-            type: sp('pedestal'),
-            time: 800,
-            tier: 'advanced',
-            colors: {
-                'spectrum:cyan': 16,
-                'spectrum:magenta': 16,
-                'spectrum:yellow': 16,
-                'spectrum:black': 4,
-            },
-            experience: 100.0,
-            pattern: ['BOB', 'SAS', 'BOB'],
-            key: {
-                B: { item: sp('blazing_crystal') },
-                A: { item: mi('gold_ring') },
-                O: { item: sp('orange_block') },
-                S: { item: sp('bedrock_dust') },
-            },
-            result: {
-                id: kj('fireproof_ring'),
-                count: 1,
-            },
-            required_advancement: sp('midgame/break_decayed_bedrock'),
-        })
-        .id(st('fireproof_ring'));
+    pedestal(
+        event,
+        st('fireproof_ring'),
+        800,
+        'advanced',
+        {
+            'spectrum:cyan': 16,
+            'spectrum:magenta': 16,
+            'spectrum:yellow': 16,
+            'spectrum:black': 4,
+        },
+        100,
+        ['BOB', 'SAS', 'BOB'],
+        {
+            B: { item: sp('blazing_crystal') },
+            A: { item: mi('gold_ring') },
+            O: { item: sp('orange_block') },
+            S: { item: sp('bedrock_dust') },
+        },
+        {
+            id: kj('fireproof_ring'),
+            count: 1,
+        },
+        sp('midgame/break_decayed_bedrock')
+    );
 });
 
 // Block tagging provided by kevintok

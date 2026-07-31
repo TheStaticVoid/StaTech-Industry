@@ -36,6 +36,8 @@ Finally, a VSCode workspace is packaged with the repository, this contains the a
 
 You can (and probably should!) configure your installation of `git` to use `.github/hooks/pre-commit` to check your changes for formatting errors before you make a new commit. If using git on windows, you will need to make sure the hook is executed using `git bash` and not some shell.
 
+## Code Format
+
 Scripts are split based on their purpose. For Server Scripts, they are split based on the origin mod that is being modified. For example, if you're adding a new shaped/shapeless recipe for an item from Create, you would do so in `create.js`. If you're adding a new custom recipe that uses a Create mechanical fan as the type, then it would also go in the `create.js` file.
 
 Modern Industrialization is an exception to this rule, due to the extent of which it has been modified. For regular shaped/shapeless recipes, they should be placed in the `mods/modern_industrialization.js` file, while any custom recipe type should go in the `modern_industrialization` subfolder. For example, a new Assembler recipe would be placed in the `mods/modern_industrialization/assembler.js` file.

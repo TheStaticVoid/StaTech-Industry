@@ -111,95 +111,78 @@ ServerEvents.recipes((event) => {
     // --------------------//
 
     // -- MUSHROOM RICE -- //
-    event
-        .custom({
-            type: fd('cooking'),
-            experience: 1.0,
-            ingredients: [
-                {
-                    tag: 'nomansland:edible_mushrooms',
-                },
-                {
-                    tag: 'nomansland:edible_mushrooms',
-                },
-                {
-                    tag: 'c:crops/rice',
-                },
-                {
-                    type: 'neoforge:compound',
-                    children: [
-                        {
-                            item: mc('potato'),
-                        },
-                        {
-                            item: mc('carrot'),
-                        },
-                    ],
-                },
-            ],
-            recipe_book_tab: 'meals',
-            result: {
-                count: 1,
-                id: fd('mushroom_rice'),
+    cooking(
+        event,
+        st('mushroom_rice'),
+        1.0,
+        'meals',
+        { count: 1, id: mc('bowl') },
+        [
+            {
+                tag: 'nomansland:edible_mushrooms',
             },
-        })
-        .id(st('mushroom_rice'));
+            {
+                tag: 'nomansland:edible_mushrooms',
+            },
+            {
+                tag: 'c:crops/rice',
+            },
+            {
+                type: 'neoforge:compound',
+                children: [
+                    {
+                        item: mc('potato'),
+                    },
+                    {
+                        item: mc('carrot'),
+                    },
+                ],
+            },
+        ],
+        { count: 1, id: fd('mushroom_rice') }
+    );
 
     // -- MUSHROOM STEW ALT -- //
-    event
-        .custom({
-            type: fd('cooking'),
-            container: {
-                count: 1,
-                id: 'minecraft:bowl',
+    cooking(
+        event,
+        st('mushroom_stew_alt'),
+        1.0,
+        'meals',
+        { count: 1, id: mc('bowl') },
+        [
+            {
+                tag: 'nomansland:edible_mushrooms',
             },
-            experience: 1.0,
-            ingredients: [
-                {
-                    tag: 'nomansland:edible_mushrooms',
-                },
-                {
-                    tag: 'nomansland:edible_mushrooms',
-                },
-            ],
-            recipe_book_tab: 'meals',
-            result: {
-                count: 1,
-                id: mc('mushroom_stew'),
+            {
+                tag: 'nomansland:edible_mushrooms',
             },
-        })
-        .id(st('mushroom_stew_alt'));
+        ],
+        { count: 1, id: mc('mushroom_stew') }
+    );
 
     // -- SALMON AND PESTO GNOCCHI -- //
-    event
-        .custom({
-            type: fd('cooking'),
-            container: {
-                count: 1,
-                id: 'minecraft:bowl',
+    cooking(
+        event,
+        st('salmon_and_pesto_gnocchi'),
+        1.0,
+        'meals',
+        { count: 1, id: mc('bowl') },
+        [
+            {
+                item: nm('pesto_bottle'),
             },
-            experience: 1.0,
-            ingredients: [
-                {
-                    item: nm('pesto_bottle'),
-                },
-                {
-                    item: mc('potato'),
-                },
-                {
-                    tag: 'c:foods/dough',
-                },
-                {
-                    item: fd('salmon_slice'),
-                },
-            ],
-            recipe_book_tab: 'meals',
-            result: {
-                count: 1,
-                id: nm('salmon_and_pesto_gnocchi'),
+            {
+                item: mc('potato'),
             },
-        })
-        .id(st('salmon_and_pesto_gnocchi'));
+            {
+                tag: 'c:foods/dough',
+            },
+            {
+                item: fd('salmon_slice'),
+            },
+        ],
+        { count: 1, id: nm('salmon_and_pesto_gnocchi') }
+    );
 
     // ----------------//
     // ---- MIXER ---- //
