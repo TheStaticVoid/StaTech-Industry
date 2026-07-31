@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }} 
+  DEV_ENVIRONMENT: false
 
 jobs:    
   info:
