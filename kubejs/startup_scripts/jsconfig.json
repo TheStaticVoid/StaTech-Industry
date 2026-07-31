@@ -1,13 +1,44 @@
 {
     "compilerOptions": {
+        "plugins": [],
+        "checkJs": false,
+        // Fully TS-compatible typing generation is not possible,
+        // but turning off skipLibCheck can help debugging
+        "skipLibCheck": true,
+        "target": "ES2022",
+        "lib": [
+            "ES2022"
+        ],
         "module": "commonjs",
-        "target": "ES2015",
-        "lib": ["ES5", "ES2015"],
-        "rootDir": ".",
-        "typeRoots": ["../../.probe/startup/probe-types"],
-        "ignoreDeprecations": "6.0",
-        "baseUrl": "../../.probe/startup/probe-types",
-        "skipLibCheck": true
+        "paths": {
+            "@package": [
+                "../../.probe/@package"
+            ],
+            "@package/*": [
+                "../../.probe/@package/*"
+            ],
+            "@side-only/startup": [
+                "../../.probe/@side-only/startup"
+            ],
+            "@side-only/startup/*": [
+                "../../.probe/@side-only/startup/*"
+            ],
+            "@special": [
+                "../../.probe/@special"
+            ],
+            "@special/*": [
+                "../../.probe/@special/*"
+            ]
+        },
     },
-    "include": ["./**/*.js", "./**/*.ts", null]
+    "typeAcquisition": {
+        "enable": false
+    },
+    "include": [
+        "./**/*.js",
+        "./**/*.d.ts",
+        "../../.probe/@package/**/*.d.ts",
+        "../../.probe/@side-only/startup/**/*.d.ts",
+        "../../.probe/@special/**/*.d.ts"
+    ]
 }
