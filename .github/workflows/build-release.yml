@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  DEV_ENVIRONMENT: false
+  DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }} 
 
 jobs:    
   info:
@@ -423,19 +423,19 @@ jobs:
       - name: Preparing the curseforge artifact
         run: |
           cd ./build/curseforge/
-          mv *.zip "$(basename -s .zip *.zip)-curseforge.zip"
+          mv *.zip "${ needs.info.outputs.project_file_name }-curseforge.zip"
           
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.6.2
         with:
           name: ${{ needs.info.outputs.project_file_name }}-curseforge
-          path: ./build/curseforge/${basename -s .zip *.zip}-curseforge.zip
+          path: ./build/curseforge/${{ needs.info.outputs.project_file_name }}-curseforge.zip
           if-no-files-found: error
 
       - name: Preparing the server artifact
         run: |
           cd ./build/serverpack/
-          mv *.zip "$(basename -s .zip *.zip)-serverpack.zip"
+          mv *.zip "${ needs.info.outputs.project_file_name }-serverpack.zip"
 
       - name: Upload server artifact
         uses: actions/upload-artifact@v4.6.2
