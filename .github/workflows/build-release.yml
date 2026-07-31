@@ -421,9 +421,11 @@ jobs:
           mkdir -p .pakku/multimc-overrides/mods
 
       - name: Preparing the curseforge artifact
+        env:
+          FILE_NAME: ${{ needs.info.outputs.project_file_name }}
         run: |
           cd ./build/curseforge/
-          mv *.zip "${ needs.info.outputs.project_file_name }-curseforge.zip"
+          mv *.zip "${FILE_NAME}-curseforge.zip"
           
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.6.2
@@ -433,9 +435,11 @@ jobs:
           if-no-files-found: error
 
       - name: Preparing the server artifact
+        env:
+          FILE_NAME: ${{ needs.info.outputs.project_file_name }}
         run: |
           cd ./build/serverpack/
-          mv *.zip "${ needs.info.outputs.project_file_name }-serverpack.zip"
+          mv *.zip "${FILE_NAME}-serverpack.zip"
 
       - name: Upload server artifact
         uses: actions/upload-artifact@v4.6.2
