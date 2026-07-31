@@ -14,7 +14,7 @@ const toolSet = [
 
 const armorSet = [
         ['helmet', 'Helmet'],
-        ['chesplate', 'Cchesplate'],
+        ['chestplate', 'Chesplate'],
         ['leggings', 'Leggings'],
         ['boots', 'Boots'],
     ];
@@ -22,7 +22,7 @@ const armorSet = [
 ItemEvents.toolTierRegistry((event) => {
     event.add('bronze', (tier) => {
         tier.uses = 320;
-        tier.speed = 6;
+        tier.speed = 6.5;
         tier.attackDamageBonus = 2;
         tier.enchantmentValue = 20;
         tier.repairIngredient = '#c:ingots/bronze';
@@ -308,6 +308,9 @@ StartupEvents.registry('item', (event) => {
     event.create('scrap').displayName('Scrap');
 
     event.create('uu_matter').displayName('UU Matter').rarity('Epic');
+
+    event.create('diamond_upgrade_smithing_template').displayName('Diamond Smithing Template');
+
 
     // -- BRONZE EQUIPMENT -- //
 

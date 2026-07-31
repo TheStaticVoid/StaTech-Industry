@@ -9,6 +9,15 @@ ServerEvents.recipes((event) => {
 
     // -- REMOVED RECIPES -- //
     const VANILLA_DELETED = [
+        mc('diamond_helmet'),
+        mc('diamond_chestplate'),
+        mc('diamond_leggings'),
+        mc('diamond_boots'),
+        mc('diamond_pickaxe'),
+        mc('diamond_axe'),
+        mc('diamond_sword'),
+        mc('diamond_hoe'),
+        mc('diamond_shovel'),
         mc('piston'),
         mc('paper'),
         mc('iron_bars'),
@@ -132,6 +141,30 @@ ServerEvents.recipes((event) => {
             A: mc('amethyst_shard'),
         })
         .id(st('amethyst_block'));
+
+    // -- DIAMOND ARMOR AND TOOLS -- //
+
+    const diamondToolsArmorsSet = [
+        ['helmet', 'Helmet'],
+        ['chestplate', 'Chesplate'],
+        ['leggings', 'Leggings'],
+        ['boots', 'Boots'],
+        ['pickaxe', 'Pickaxe'],
+        ['axe', 'Axe'],
+        ['hoe', 'Hoe'],
+        ['sword', 'Sword'],
+        ['shovel', 'Shovel' ],
+    ]
+    
+    diamondToolsArmorsSet.forEach(item =>{
+        event.smithing(
+        `minecraft:diamond_${item[0]}`,
+        'kubejs:diamond_upgrade_smithing_template',
+        `kubejs:steel_${item[0]}`,
+        'minecraft:diamond'
+    )
+    })
+    
 });
 
 ServerEvents.tags('item', (event) => {

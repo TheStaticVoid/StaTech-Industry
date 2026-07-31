@@ -51,6 +51,13 @@ ServerEvents.recipes((event) => {
         })
         .id(st('glowing_calorite_pillar'));
 
+    event
+        .shaped(kj('diamond_upgrade_smithing_template'), [' D ', 'DPD', ' D '], {
+            D: mc('diamond'),
+            P: mi('steel_plate')
+        })
+        .id(st('diamond_upgrade_smithing_template'));
+
     // ------------------- //
     // -- STATECH COINS -- //
     // ------------------- //
@@ -345,6 +352,7 @@ ServerEvents.recipes((event) => {
             B: '#c:rods/wooden',
         })
         .id(st('bronze_hoe'));
+
     // ---------------------- //
     // -- STEEL EQUIPMENT -- //
     // ---------------------- //
