@@ -323,13 +323,6 @@ jobs:
             **Loader**: `${{ needs.info.outputs.loader_type }}-${{ needs.info.outputs.loader_version }}`
 
             ${{ needs.info.outputs.changelog }}
-
-  lint:
-    name: Lint KubeJS
-    needs: [info]
-    uses: ./.github/workflows/lint.yml
-    if: needs.info.outputs.kubejs_changed == 'true'
-    secrets: inherit
       
   update-mmc-pack:
     name: Update MMC-Pack 
@@ -438,40 +431,6 @@ jobs:
           name: ${{ needs.info.outputs.project_file_name }}-curseforge
           path: ./build/curseforge/${{ needs.info.outputs.project_file_name }}-curseforge.zip
           if-no-files-found: error
-
-      # - name: Preparing the modrinth artifact 
-      #   run: |
-      #     cd ./build/modrinth/
-      #     mv *.mrpack $(basename -s .mrpack *.mrpack)-modrinth.mrpack
-
-      # - name: Upload artifact to modrinth
-      #   uses: actions/upload-artifact@v4.6.2
-      #   with:
-      #     name: ${{ needs.info.outputs.project_file_name }}-modrinth
-      #     path: ./build/modrinth/${{ needs.info.outputs.project_file_name }}-modrinth.mrpack
-      #     if-no-files-found: warn
-
-      # - name: Preparing the multimc artifact
-      #   run: |
-      #     mkdir -p .pakku/multimc-overrides/flame
-      #     mkdir -p .pakku/multimc-overrides/mods
-
-      #     mv -vf .pakku/multimc-overrides ./build/multimc
-
-      #     cp -vf ./build/.cache/curseforge/manifest.json ./build/multimc/flame/manifest.json
-
-      #     cp -rf ./build/.cache/curseforge/overrides ./build/multimc/.minecraft
-      #     cp -rf ./mods ./build/multimc/.minecraft/
-
-      #     cd ./build/multimc/
-      #     zip -r ${{ needs.info.outputs.project_file_name }}-multimc.zip icon.png mmc-pack.json instance.cfg .minecraft/ flame/
-      
-      # - name: Upload the multimc artifact
-      #   uses: actions/upload-artifact@v4.6.2
-      #   with:
-      #     name: ${{ needs.info.outputs.project_file_name }}-multimc
-      #     path: ./build/multimc/${{ needs.info.outputs.project_file_name }}-multimc.zip
-      #     if-no-files-found: error
 
       - name: Preparing the server artifact
         run: |
@@ -594,50 +553,6 @@ jobs:
           changelog-format: markdown
           game-version: ${{ needs.info.outputs.mc_version }}
           release-type: ${{ needs.info.outputs.release_type }}
-
-  # release-modrinth:
-  #     name: Release to Modrinth
-  #     needs: [info, build-project, release-github]
-  #     runs-on: ubuntu-latest
-  #     if: ${{ needs.info.outputs.make_release == 'true' }}
-  #     outputs:
-  #       id: ${{ steps.release.outputs.id }}
-
-  #     steps:
-  #       - name: Check if MODRINTH_API_TOKEN exists
-  #         shell: bash
-  #         run: |
-  #           if [ "${{ secrets.MODRINTH_TOKEN }}" == '' ]; then
-  #             echo '::error::No value found for secret key `MODRINTH_TOKEN`. See https://docs.github.com/en/  actionssecurity-guides/  encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-  #           fi  
-    
-  #       - name: Download artifact
-  #         uses: actions/download-artifact@v5.0.0
-  #         with:
-  #           merge-multiple: true
-
-  #       - name: Check if artifact exist
-  #         id: check_artifact
-  #         shell: bash
-  #         run: |
-  #           if [ ! -f ${{ needs.info.outputs.project_file_name }}-modrinth.mrpack ]; then
-  #             echo '::error::No value found for artifact `modrinth.mrpack`.' && exit 1
-  #           fi
-  #           echo "All artifacts found"
-    
-        # - name: Upload Modrinth
-        #   id: release
-        #   uses: Xikaro/upload-curseforge-modpack-action@1.1.1
-        #   with:
-        #     api-token: ${{ secrets.MODRINTH_TOKEN }}
-        #     project-id: ${{ vars.MODRINTH_ID }}
-        #     modpack-path: ${{ needs.info.outputs.project_file_name }}-modrinth.mrpack
-        #     changelog: ${{ needs.info.outputs.changelog }}
-        #     changelog-format: markdown
-        #     game-version: ${{ needs.info.outputs.mc_version }}
-        #     display-name: ${{ needs.info.outputs.project_full_name }}
-
-        #     release-type: ${{ needs.info.outputs.release_type }}
 
   discord-message:
     name: Discord Message
