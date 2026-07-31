@@ -3,8 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes((event) => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/boss_crusher/${id}`;
 
     // -- WITHER MODEL -- //
@@ -13,13 +13,13 @@ ServerEvents.recipes(event => {
         st('wither_model'),
         128,
         600,
-        [ { amount: 1, item: kj('wither_model') } ],
+        [{ amount: 1, item: kj('wither_model') }],
         [
             { amount: 1, item: mc('ender_pearl'), probability: 0.15 },
-            { amount: 16, item: cr('experience_nugget') }
+            { amount: 16, item: cr('experience_nugget') },
         ],
-        [ { amount: 500, fluid: mi('molten_enderium') } ],
-        [ { amount: 500, fluid: mi('impure_liquid_nether_star') } ]
+        [{ amount: 500, fluid: mi('molten_enderium') }],
+        [{ amount: 500, fluid: mi('impure_liquid_nether_star') }]
     );
 
     // -- DRAGON MODEL -- //
@@ -28,15 +28,15 @@ ServerEvents.recipes(event => {
         st('dragon_model'),
         128,
         600,
-        [ { amount: 1, item: kj('dragon_model') } ],
+        [{ amount: 1, item: kj('dragon_model') }],
         [
             { amount: 32, item: mc('dragon_breath') },
             { amount: 64, item: cr('experience_nugget') },
             { amount: 1, item: mc('dragon_egg'), probability: 0.05 },
-            { amount: 1, item: mc('elytra'), probability: 0.05 }
+            { amount: 1, item: mc('elytra'), probability: 0.05 },
         ],
-        [ { amount: 500, fluid: mi('molten_enderium') } ],
-        [ { amount: 500, fluid: yai('dragon_breath') } ]
+        [{ amount: 500, fluid: mi('molten_enderium') }],
+        [{ amount: 500, fluid: yai('dragon_breath') }]
     );
 
     // -- WARDEN MODEL -- //
@@ -45,16 +45,16 @@ ServerEvents.recipes(event => {
         st('warden_model'),
         128,
         600,
-        [ { amount: 1, item: kj('warden_model') } ],
+        [{ amount: 1, item: kj('warden_model') }],
         [
             { amount: 8, item: mc('sculk_shrieker') },
             { amount: 64, item: mc('sculk') },
             { amount: 16, item: mc('echo_shard') },
             { amount: 16, item: mc('amethyst_shard') },
             { amount: 64, item: cr('experience_nugget') },
-            { amount: 64, item: cr('experience_nugget') }
+            { amount: 64, item: cr('experience_nugget') },
         ],
-        [ { amount: 500, fluid: mi('molten_enderium') } ],
-        [ { amount: 1000, fluid: mi('liquid_ender')}]
+        [{ amount: 500, fluid: mi('molten_enderium') }],
+        [{ amount: 1000, fluid: mi('liquid_ender') }]
     );
 });

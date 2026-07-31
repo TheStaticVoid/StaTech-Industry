@@ -5,8 +5,9 @@
 
 let INDUSTRIAL_MIXING_MACHINE;
 
-MIMachineEvents.registerRecipeTypes(event => {
-    INDUSTRIAL_MIXING_MACHINE = event.register('industrial_mixing_machine')
+MIMachineEvents.registerRecipeTypes((event) => {
+    INDUSTRIAL_MIXING_MACHINE = event
+        .register('industrial_mixing_machine')
         .withItemInputs()
         .withItemOutputs()
         .withFluidInputs()
@@ -14,32 +15,42 @@ MIMachineEvents.registerRecipeTypes(event => {
 });
 
 MITweaksMachineEvents.registerBatchMultiblocks((event) => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
 
-    const mixerHatch = event.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input', 'fluid_output');
+    const mixerHatch = event.hatchOf(
+        'item_input',
+        'item_output',
+        'energy_input',
+        'fluid_input',
+        'fluid_output'
+    );
     const grateBlock = event.memberOfBlock('factory_blocks:grate');
-    const enderiumCasing = event.memberOfBlock('modern_industrialization:enderium_machine_casing');
+    const enderiumCasing = event.memberOfBlock(
+        'modern_industrialization:enderium_machine_casing'
+    );
     const borosilicateGlass = event.memberOfBlock('kubejs:borosilicate_glass');
-    const industrialmixerShape = event.layeredShape('modern_industrialization:enderium_machine_casing', [
-        [ 'EEE', 'gbg', 'gbg', 'gbg', 'EEE' ],
-        [ 'EEE', 'b b', 'b b', 'b b', 'EEE' ],
-        [ 'E#E', 'gbg', 'gbg', 'gbg', 'EEE' ]
-    ])
+    const industrialmixerShape = event
+        .layeredShape('modern_industrialization:enderium_machine_casing', [
+            ['EEE', 'gbg', 'gbg', 'gbg', 'EEE'],
+            ['EEE', 'b b', 'b b', 'b b', 'EEE'],
+            ['E#E', 'gbg', 'gbg', 'gbg', 'EEE'],
+        ])
         .key('E', enderiumCasing, mixerHatch)
         .key('g', grateBlock, event.noHatch())
         .key('b', borosilicateGlass, event.noHatch())
         .build();
-    
+
     event.electric(
         // General parameters
         'Industrial Mixing Machine', // English name
         'industrial_mixing_machine', // internal name
-        event.getRecipeType("modern_industrialization:mixer"), // recipe type
+        event.getRecipeType('modern_industrialization:mixer'), // recipe type
         industrialmixerShape, // multiblock shape
-		(workstations) => workstations.add([
-                "modern_industrialization:bronze_mixer",
-                "modern_industrialization:steel_mixer",
-                "modern_industrialization:electric_mixer"
+        (workstations) =>
+            workstations.add([
+                'modern_industrialization:bronze_mixer',
+                'modern_industrialization:steel_mixer',
+                'modern_industrialization:electric_mixer',
             ]),
         // REI Display configuration
         // e.progressBar(88, 35, 'triple_arrow'),
@@ -52,10 +63,9 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
         'mixer', // overlay folder
         true, // front overlay
         true, // top overlay
-		true, // side overlay
-		// Batch size, EU cost multiplier
-		12, 
-		0.80
-		
-	);
+        true, // side overlay
+        // Batch size, EU cost multiplier
+        12,
+        0.8
+    );
 });

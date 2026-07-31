@@ -1,27 +1,27 @@
 {
-  "feature": "modern_industrialization:deepslate_ore_generator_fluorite",
-  "placement": [
-    {
-      "type": "minecraft:count",
-      "count": 4
-    },
-    {
-      "type": "minecraft:in_square"
-    },
-    {
-      "type": "minecraft:height_range",
-      "height": {
-        "type": "minecraft:uniform",
-        "max_inclusive": {
-          "absolute": 90
+    "feature": "modern_industrialization:deepslate_ore_generator_fluorite",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 4
         },
-        "min_inclusive": {
-          "above_bottom": 0
+        {
+            "type": "minecraft:in_square"
+        },
+        {
+            "type": "minecraft:height_range",
+            "height": {
+                "type": "minecraft:uniform",
+                "max_inclusive": {
+                    "absolute": 90
+                },
+                "min_inclusive": {
+                    "above_bottom": 0
+                }
+            }
+        },
+        {
+            "type": "minecraft:biome"
         }
-      }
-    },
-    {
-      "type": "minecraft:biome"
-    }
-  ]
+    ]
 }

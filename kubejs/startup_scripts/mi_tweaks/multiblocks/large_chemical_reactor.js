@@ -5,8 +5,9 @@
 
 let LARGE_CHEMICAL_REACTOR;
 
-MIMachineEvents.registerRecipeTypes(event => {
-    LARGE_CHEMICAL_REACTOR = event.register('large_chemical_reactor')
+MIMachineEvents.registerRecipeTypes((event) => {
+    LARGE_CHEMICAL_REACTOR = event
+        .register('large_chemical_reactor')
         .withItemInputs()
         .withItemOutputs()
         .withFluidInputs()
@@ -14,29 +15,43 @@ MIMachineEvents.registerRecipeTypes(event => {
 });
 
 MITweaksMachineEvents.registerBatchMultiblocks((event) => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
 
-console.log("loading MITweaksMachineEvents.registerBatchMultiblocks large_chemical_reactor.js in startup_scripts/mi_tweaks")
-    const lcrHatch = event.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input', 'fluid_output');
-    const ptfeCasing = event.memberOfBlock('modern_industrialization:chemically_inert_ptfe_casing');
-    const ptfePipeCasing = event.memberOfBlock('modern_industrialization:polytetrafluoroethylene_machine_casing_pipe');
-    const lcrShape = event.layeredShape('modern_industrialization:chemically_inert_ptfe_casing', [
-        [ 'AAA', 'aaa', 'AAA' ],
-        [ 'AAA', 'aPa', 'AAA' ],
-        [ 'AAA', 'a#a', 'AAA' ]
-    ])
+    console.log(
+        'loading MITweaksMachineEvents.registerBatchMultiblocks large_chemical_reactor.js in startup_scripts/mi_tweaks'
+    );
+    const lcrHatch = event.hatchOf(
+        'item_input',
+        'item_output',
+        'energy_input',
+        'fluid_input',
+        'fluid_output'
+    );
+    const ptfeCasing = event.memberOfBlock(
+        'modern_industrialization:chemically_inert_ptfe_casing'
+    );
+    const ptfePipeCasing = event.memberOfBlock(
+        'modern_industrialization:polytetrafluoroethylene_machine_casing_pipe'
+    );
+    const lcrShape = event
+        .layeredShape('modern_industrialization:chemically_inert_ptfe_casing', [
+            ['AAA', 'aaa', 'AAA'],
+            ['AAA', 'aPa', 'AAA'],
+            ['AAA', 'a#a', 'AAA'],
+        ])
         .key('A', ptfeCasing, lcrHatch)
         .key('a', ptfeCasing, event.noHatch())
         .key('P', ptfePipeCasing, event.noHatch())
         .build();
-    
+
     event.electric(
         // General parameters
         'Large Chemical Reactor', // English name
         'large_chemical_reactor', // internal name
-        event.getRecipeType("modern_industrialization:chemical_reactor"), // recipe type
+        event.getRecipeType('modern_industrialization:chemical_reactor'), // recipe type
         lcrShape, // multiblock shape
-		(workstations) => workstations.add("modern_industrialization:chemical_reactor"),
+        (workstations) =>
+            workstations.add('modern_industrialization:chemical_reactor'),
         // REI Display configuration
         // e.progressBar(88, 35, 'triple_arrow'),
         // REI Item Inputs, item outputs, fluid inputs, fluid outputs
@@ -48,10 +63,9 @@ console.log("loading MITweaksMachineEvents.registerBatchMultiblocks large_chemic
         'chemical_reactor', // overlay folder
         true, // front overlay
         false, // top overlay
-		false, // side overlay
-		// Batch size, EU cost multiplier
-		4, 
-		0.5
-		
-	);
+        false, // side overlay
+        // Batch size, EU cost multiplier
+        4,
+        0.5
+    );
 });

@@ -3,7 +3,7 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:yet_another_industrialization/${id}`;
 
@@ -24,12 +24,12 @@ ServerEvents.recipes(event => {
         yai('dragon_egg_energy_siphon/nutrient_dragon_breath'),
         yai('dragon_egg_energy_siphon/dragon_breath'),
         yai('assembler/dragon_egg_siphon_catalyst/nutrient_rich_dragon_breath'),
-        yai('assembler/dragon_egg_siphon_catalyst/dragon_breath')
+        yai('assembler/dragon_egg_siphon_catalyst/dragon_breath'),
     ];
-    YET_ANOTHER_INDUSTRIALIZATION.forEach(id => event.remove( {id: id} ));
+    YET_ANOTHER_INDUSTRIALIZATION.forEach((id) => event.remove({ id: id }));
 
     // -- ARBOREOUS GREENHOUSE REMOVAL -- //
-    event.remove({ type: yai('arboreous_greenhouse') })
+    event.remove({ type: yai('arboreous_greenhouse') });
 
     // -- BLUE ICE NUTRIENT -- //
     cryogenicPrecipitator(
@@ -38,14 +38,14 @@ ServerEvents.recipes(event => {
         8,
         30,
         null,
-        [ { amount: 2, item: mc('blue_ice') } ],
+        [{ amount: 2, item: mc('blue_ice') }],
         [
             { amount: 4000, fluid: mi('nutrient_rich_water') },
-            { amount: 64, fluid: mi('cryofluid') }
+            { amount: 64, fluid: mi('cryofluid') },
         ],
         [
             { amount: 41, fluid: mi('argon') },
-            { amount: 41, fluid: mi('helium') }
+            { amount: 41, fluid: mi('helium') },
         ]
     );
 
@@ -56,11 +56,11 @@ ServerEvents.recipes(event => {
         8,
         30,
         null,
-        [ { amount: 2, item: mc('ice') } ],
+        [{ amount: 2, item: mc('ice') }],
         [
             { amount: 1000, fluid: mi('nutrient_rich_water') },
-            { amount: 1, fluid: mi('cryofluid') }
-        ],
+            { amount: 1, fluid: mi('cryofluid') },
+        ]
     );
 
     // -- PACKED ICE NUTRIENT -- //
@@ -70,14 +70,14 @@ ServerEvents.recipes(event => {
         8,
         30,
         null,
-        [ { amount: 2, item: mc('packed_ice') } ],
+        [{ amount: 2, item: mc('packed_ice') }],
         [
             { amount: 4000, fluid: mi('nutrient_rich_water') },
-            { amount: 8, fluid: mi('cryofluid') }
+            { amount: 8, fluid: mi('cryofluid') },
         ],
         [
             { amount: 5, fluid: mi('argon') },
-            { amount: 5, fluid: mi('helium') }
+            { amount: 5, fluid: mi('helium') },
         ]
     );
 
@@ -87,16 +87,16 @@ ServerEvents.recipes(event => {
         st('powdered_snow_nutrient'),
         8,
         30,
-        [ { amount: 2, item: mc('bucket') } ],
-        [ 
+        [{ amount: 2, item: mc('bucket') }],
+        [
             { amount: 1, item: mc('powder_snow_bucket') },
-            { amount: 1, item: mc('powder_snow_bucket') }
+            { amount: 1, item: mc('powder_snow_bucket') },
         ],
         [
             { amount: 1000, fluid: mi('nutrient_rich_water') },
-            { amount: 4, fluid: mi('cryofluid') }
+            { amount: 4, fluid: mi('cryofluid') },
         ],
-        [ { amount: 2, fluid: mi('argon') } ]
+        [{ amount: 2, fluid: mi('argon') }]
     );
 
     // -- SNOW BLOCK NUTRIENT -- //
@@ -106,14 +106,14 @@ ServerEvents.recipes(event => {
         8,
         30,
         null,
-        [ { amount: 8, item: mc('snow_block') } ],
+        [{ amount: 8, item: mc('snow_block') }],
         [
             { amount: 1000, fluid: mi('nutrient_rich_water') },
-            { amount: 8, fluid: mi('cryofluid') }
+            { amount: 8, fluid: mi('cryofluid') },
         ],
         [
             { amount: 5, fluid: mi('argon') },
-            { amount: 5, fluid: mi('helium') }
+            { amount: 5, fluid: mi('helium') },
         ]
     );
 
@@ -124,14 +124,14 @@ ServerEvents.recipes(event => {
         8,
         30,
         null,
-        [ { amount: 12, item: mc('snow') } ],
+        [{ amount: 12, item: mc('snow') }],
         [
             { amount: 1000, fluid: mi('nutrient_rich_water') },
-            { amount: 2, fluid: mi('cryofluid') }
+            { amount: 2, fluid: mi('cryofluid') },
         ],
-        [ { amount: 1, fluid: mi('argon') } ]
+        [{ amount: 1, fluid: mi('argon') }]
     );
-    
+
     // -- SNOWBALL NUTRIENT -- //
     cryogenicPrecipitator(
         event,
@@ -139,12 +139,12 @@ ServerEvents.recipes(event => {
         8,
         30,
         null,
-        [ { amount: 8, item: mc('snowball') } ],
+        [{ amount: 8, item: mc('snowball') }],
         [
             { amount: 400, fluid: mi('nutrient_rich_water') },
-            { amount: 2, fluid: mi('cryofluid') }
+            { amount: 2, fluid: mi('cryofluid') },
         ],
-        [ { amount: 1, fluid: mi('argon') } ]
+        [{ amount: 1, fluid: mi('argon') }]
     );
 
     // -- DRAGON BREATH -- //
@@ -153,11 +153,11 @@ ServerEvents.recipes(event => {
         st('dragon_breath'),
         1,
         100,
-        [ { amount: 1, item: yai('dragon_egg_siphon_catalyst') } ],
+        [{ amount: 1, item: yai('dragon_egg_siphon_catalyst') }],
         null,
-        [ { amount: 1000, fluid: yai('dragon_breath') } ],
-        [ { amount: 1250, fluid: yai('impure_dragon_breath') } ],
-        [ { amount: 102400, type: yai('energy_generation') } ]
+        [{ amount: 1000, fluid: yai('dragon_breath') }],
+        [{ amount: 1250, fluid: yai('impure_dragon_breath') }],
+        [{ amount: 102400, type: yai('energy_generation') }]
     );
 
     // -- DRAGON BREATH NUTRIENT -- //
@@ -166,11 +166,11 @@ ServerEvents.recipes(event => {
         st('dragon_breath_nutrient'),
         1,
         100,
-        [ { amount: 1, item: yai('dragon_egg_siphon_catalyst') } ],
+        [{ amount: 1, item: yai('dragon_egg_siphon_catalyst') }],
         null,
-        [ { amount: 1000, fluid: yai('nutrient_rich_dragon_breath') } ],
-        [ { amount: 2500, fluid: yai('impure_dragon_breath') } ],
-        [ { amount: 204800, type: yai('energy_generation') } ]
+        [{ amount: 1000, fluid: yai('nutrient_rich_dragon_breath') }],
+        [{ amount: 2500, fluid: yai('impure_dragon_breath') }],
+        [{ amount: 204800, type: yai('energy_generation') }]
     );
 
     // -- DRAGON EGG SIPHON CATALYST -- //
@@ -183,8 +183,8 @@ ServerEvents.recipes(event => {
             { amount: 4, item: mi('steel_plate') },
             { amount: 1, item: mi('quartz_tiny_dust') },
         ],
-        [ { amount: 1, item: yai('dragon_egg_siphon_catalyst') } ],
-        [ { amount: 50, fluid: yai('dragon_breath') } ]
+        [{ amount: 1, item: yai('dragon_egg_siphon_catalyst') }],
+        [{ amount: 50, fluid: yai('dragon_breath') }]
     );
 
     // -- DRAGON EGG SIPHON CATALYST NUTRIENT -- //
@@ -197,8 +197,8 @@ ServerEvents.recipes(event => {
             { amount: 4, item: mi('steel_plate') },
             { amount: 1, item: mi('quartz_tiny_dust') },
         ],
-        [ { amount: 4, item: yai('dragon_egg_siphon_catalyst') } ],
-        [ { amount: 50, fluid: yai('nutrient_rich_dragon_breath') } ]
+        [{ amount: 4, item: yai('dragon_egg_siphon_catalyst') }],
+        [{ amount: 50, fluid: yai('nutrient_rich_dragon_breath') }]
     );
 
     // -- MIXED HATCH CRAFTING SWAPS -- //
@@ -207,26 +207,31 @@ ServerEvents.recipes(event => {
         'steel',
         'advanced',
         'turbo',
-        'highly_advanced'
+        'highly_advanced',
     ];
 
-    MIXED_HATCH_TIER.forEach(id => {
-        event.shapeless(yai(`${id}_mixed_output_hatch`), yai(`${id}_mixed_input_hatch`))
-        event.shapeless(yai(`${id}_mixed_input_hatch`), yai(`${id}_mixed_output_hatch`))
+    MIXED_HATCH_TIER.forEach((id) => {
+        event.shapeless(
+            yai(`${id}_mixed_output_hatch`),
+            yai(`${id}_mixed_input_hatch`)
+        );
+        event.shapeless(
+            yai(`${id}_mixed_input_hatch`),
+            yai(`${id}_mixed_output_hatch`)
+        );
     });
 });
 
-ServerEvents.tags('item', event => {
-
+ServerEvents.tags('item', (event) => {
     const MIXED_HATCH_TIER = [
         'bronze',
         'steel',
         'advanced',
         'turbo',
-        'highly_advanced'
+        'highly_advanced',
     ];
-    MIXED_HATCH_TIER.forEach(id => {
-        event.add('kubejs:mixed_input_hatch', yai(`${id}_mixed_input_hatch`))
-        event.add('kubejs:mixed_output_hatch', yai(`${id}_mixed_output_hatch`))
+    MIXED_HATCH_TIER.forEach((id) => {
+        event.add('kubejs:mixed_input_hatch', yai(`${id}_mixed_input_hatch`));
+        event.add('kubejs:mixed_output_hatch', yai(`${id}_mixed_output_hatch`));
     });
 });

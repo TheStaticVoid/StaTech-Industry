@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "x": {
-      "tag": "c:ingots/cobalt"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "x": {
+            "tag": "c:ingots/cobalt"
+        },
+        "y": {
+            "item": "modern_industrialization:cobalt_ingot"
+        }
     },
-    "y": {
-      "item": "modern_industrialization:cobalt_ingot"
+    "pattern": ["xxx", "xyx", "xxx"],
+    "result": {
+        "count": 1,
+        "id": "modern_industrialization:cobalt_block"
     }
-  },
-  "pattern": [
-    "xxx",
-    "xyx",
-    "xxx"
-  ],
-  "result": {
-    "count": 1,
-    "id": "modern_industrialization:cobalt_block"
-  }
 }

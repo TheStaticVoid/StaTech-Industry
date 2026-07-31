@@ -1,21 +1,21 @@
 {
-  "type": "minecraft:block",
-  "pools": [
-    {
-      "bonus_rolls": 0.0,
-      "conditions": [
+    "type": "minecraft:block",
+    "pools": [
         {
-          "condition": "minecraft:survives_explosion"
+            "bonus_rolls": 0.0,
+            "conditions": [
+                {
+                    "condition": "minecraft:survives_explosion"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "modern_industrialization:singularity_forge"
+                }
+            ],
+            "rolls": 1.0
         }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "modern_industrialization:singularity_forge"
-        }
-      ],
-      "rolls": 1.0
-    }
-  ],
-  "random_sequence": "modern_industrialization:blocks/singularity_forge"
+    ],
+    "random_sequence": "modern_industrialization:blocks/singularity_forge"
 }

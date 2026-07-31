@@ -1,24 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "P": {
-      "tag": "c:plates/tungstensteel"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "P": {
+            "tag": "c:plates/tungstensteel"
+        },
+        "R": {
+            "item": "modern_industrialization:tungstensteel_ring"
+        },
+        "b": {
+            "item": "modern_industrialization:tungstensteel_bolt"
+        }
     },
-    "R": {
-      "item": "modern_industrialization:tungstensteel_ring"
-    },
-    "b": {
-      "item": "modern_industrialization:tungstensteel_bolt"
+    "pattern": ["PbP", "bRb", "PbP"],
+    "result": {
+        "count": 1,
+        "id": "modern_industrialization:tungstensteel_gear"
     }
-  },
-  "pattern": [
-    "PbP",
-    "bRb",
-    "PbP"
-  ],
-  "result": {
-    "count": 1,
-    "id": "modern_industrialization:tungstensteel_gear"
-  }
 }

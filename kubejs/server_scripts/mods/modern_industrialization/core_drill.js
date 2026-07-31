@@ -3,8 +3,8 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes((event) => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/core_drill/${id}`;
 
     coreDrill(
@@ -12,9 +12,9 @@ ServerEvents.recipes(event => {
         st('core_fragment_mining'),
         256,
         600,
-        [ { amount: 1, item: mi('desh_drill'), probability: 0.1 } ],
-        [ { amount: 1, item: kj('core_fragment') } ],
-        [ { amount: 1000, fluid: mi('drilling_fluid') } ],
-        [ { amount: 500, fluid: mi('core_slurry') } ]
+        [{ amount: 1, item: mi('desh_drill'), probability: 0.1 }],
+        [{ amount: 1, item: kj('core_fragment') }],
+        [{ amount: 1000, fluid: mi('drilling_fluid') }],
+        [{ amount: 500, fluid: mi('core_slurry') }]
     );
 });

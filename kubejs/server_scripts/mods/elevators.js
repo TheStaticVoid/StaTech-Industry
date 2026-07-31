@@ -1,14 +1,13 @@
 // -----------------------------------------
 // CREATED BY DINO FOR USE IN
-// STATECH INDUSTRY UNOFFICIAL
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
-
+ServerEvents.recipes((event) => {
     // REPLACE ENDER PEARL WITH PISTON //
     event.replaceInput(
         { mod: 'elevatorid' },
-        'minecraft:ender_pearl', 
-        'minecraft:piston'         
+        'minecraft:ender_pearl',
+        'minecraft:piston'
     );
-})
+});

@@ -3,18 +3,20 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes((event) => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/assembler/${id}`;
 
     // -- ASSEMBLER REMOVED RECIPES -- //
-    const REMOVED_RECIPE = [    
+    const REMOVED_RECIPE = [
         mi('electric_age/component/assembler/qubit'),
-        mi('assembler_generated/electric_age/component/craft/ultradense_metal_ball'),
+        mi(
+            'assembler_generated/electric_age/component/craft/ultradense_metal_ball'
+        ),
         mi('assembler_generated/steam_age/bronze/furnace'),
         mi('assembler_generated/steam_age/bronze/boiler'),
         mi('assembler_generated/electric_age/component/craft/op_amp'),
-/*      mi('assembler_generated/electric_age/battery/lv_battery'),
+        /*      mi('assembler_generated/electric_age/battery/lv_battery'),
         mi('assembler_generated/electric_age/battery/silicon_battery'), */
         mi('assembler_generated/electric_age/battery/sodium_battery'),
         mi('assembler_generated/electric_age/battery/cadmium_battery'),
@@ -27,13 +29,13 @@ ServerEvents.recipes(event => {
         io('machines/pyrolyse_oven/assembler'),
         mi('assembler_generated/electric_age/machine/large_diesel_generator'),
         mi('assembler_generated/electric_age/machine/large_steam_turbine'),
-/*      mi('materials/uranium/assembler/fuel_rod'),
+        /*      mi('materials/uranium/assembler/fuel_rod'),
         mi('materials/he_uranium/assembler/fuel_rod'),
         mi('materials/le_uranium/assembler/fuel_rod'),
         mi('materials/he_mox/assembler/fuel_rod'),
         mi('materials/le_mox/assembler/fuel_rod') */
     ];
-    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
+    REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
     // -- DOPED DIODE -- //
     assembler(
@@ -44,10 +46,10 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: mi('silicon_n_doped_plate') },
             { amount: 3, item: mi('electrum_fine_wire') },
-            { amount: 2, item: mi('steel_plate') }
+            { amount: 2, item: mi('steel_plate') },
         ],
-        [ { amount: 4, item: mi('diode') } ],
-        [ { amount: 125, fluid: mi('molten_borosilicate_glass') } ],
+        [{ amount: 4, item: mi('diode') }],
+        [{ amount: 125, fluid: mi('molten_borosilicate_glass') }]
     );
 
     // -- STAINLESS STEEL TANK -- //
@@ -58,9 +60,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 8, item: mi('stainless_steel_plate') },
-            { amount: 1, item: kj('borosilicate_glass') }
+            { amount: 1, item: kj('borosilicate_glass') },
         ],
-        [ { amount: 1, item: mi('stainless_steel_tank') } ]
+        [{ amount: 1, item: mi('stainless_steel_tank') }]
     );
 
     // -- TITANIUM TANK -- //
@@ -71,9 +73,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 8, item: mi('titanium_plate') },
-            { amount: 1, item: kj('borosilicate_glass') }
+            { amount: 1, item: kj('borosilicate_glass') },
         ],
-        [ { amount: 1, item: mi('titanium_tank') } ]
+        [{ amount: 1, item: mi('titanium_tank') }]
     );
 
     // -- TUNGSTENSTEEL TANK -- //
@@ -84,9 +86,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 8, item: mi('tungstensteel_plate') },
-            { amount: 1, item: kj('borosilicate_glass') }
+            { amount: 1, item: kj('borosilicate_glass') },
         ],
-        [ { amount: 1, item: mi('tungstensteel_tank') } ]
+        [{ amount: 1, item: mi('tungstensteel_tank') }]
     );
 
     // -- LENS MOLD -- //
@@ -95,9 +97,9 @@ ServerEvents.recipes(event => {
         st('lens_mold'),
         32,
         200,
-        [ { amount: 4, item: mi('stainless_steel_plate') } ],
-        [ { amount: 1, item: kj('lens_mold')} ],
-        [ { amount: 100, fluid: mi('polytetrafluoroethylene') } ]
+        [{ amount: 4, item: mi('stainless_steel_plate') }],
+        [{ amount: 1, item: kj('lens_mold') }],
+        [{ amount: 100, fluid: mi('polytetrafluoroethylene') }]
     );
 
     // -- PERSONAL SPACE SHIELD -- //
@@ -110,14 +112,14 @@ ServerEvents.recipes(event => {
             { amount: 4, item: mi('tungstensteel_tank') },
             { amount: 8, item: mi('processing_unit') },
             { amount: 12, item: mi('superconductor_cable') },
-            { amount: 8, item: mi('small_heat_exchanger') }, 
+            { amount: 8, item: mi('small_heat_exchanger') },
             { amount: 2, item: mi('uranium_fuel_rod') },
-            { amount: 16, item: mi('nuclear_alloy_plate') }
+            { amount: 16, item: mi('nuclear_alloy_plate') },
         ],
-        [ { amount: 1, item: kj('personal_space_shield') } ],
-        [ 
+        [{ amount: 1, item: kj('personal_space_shield') }],
+        [
             { amount: 16000, fluid: mi('oxygen') },
-            { amount: 4000, fluid: mi('cryofluid') }
+            { amount: 4000, fluid: mi('cryofluid') },
         ]
     );
 
@@ -131,9 +133,9 @@ ServerEvents.recipes(event => {
             { amount: 4, tag: 'c:stones' },
             { amount: 3, tag: mc('wooden_slabs') },
             { amount: 1, tag: 'c:rods/iron' },
-            { amount: 1, item: mc('redstone') }
+            { amount: 1, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mc('piston') } ]
+        [{ amount: 1, item: mc('piston') }]
     );
 
     // -- STICKY PISTON -- //
@@ -144,9 +146,9 @@ ServerEvents.recipes(event => {
         20,
         [
             { amount: 1, item: mc('piston') },
-            { amount: 1, item: mc('slime_ball') }
+            { amount: 1, item: mc('slime_ball') },
         ],
-        [ { amount: 1, item: mc('sticky_piston') } ]
+        [{ amount: 1, item: mc('sticky_piston') }]
     );
 
     // -- STICKY PISTON ALT -- //
@@ -155,9 +157,9 @@ ServerEvents.recipes(event => {
         st('sticky_piston_alt'),
         8,
         20,
-        [ { amount: 1, item: mc('piston') } ],
-        [ { amount: 1, item: mc('sticky_piston') } ],
-        [ { amount: 10, fluid: mi('acrylic_glue') } ]
+        [{ amount: 1, item: mc('piston') }],
+        [{ amount: 1, item: mc('sticky_piston') }],
+        [{ amount: 10, fluid: mi('acrylic_glue') }]
     );
 
     // -- ANNIHILATION CORE -- //
@@ -169,12 +171,12 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: mc('quartz') },
             { amount: 1, item: ae('fluix_dust') },
-            { amount: 1, item: ae('logic_processor') }
+            { amount: 1, item: ae('logic_processor') },
         ],
-        [ { amount: 2, item: ae('annihilation_core') } ]
+        [{ amount: 2, item: ae('annihilation_core') }]
     );
 
-    // -- FORMATION CORE -- // 
+    // -- FORMATION CORE -- //
     assembler(
         event,
         st('formation_core'),
@@ -183,9 +185,9 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, tag: ae('all_certus_quartz') },
             { amount: 1, item: ae('fluix_dust') },
-            { amount: 1, item: ae('logic_processor') }
+            { amount: 1, item: ae('logic_processor') },
         ],
-        [ { amount: 2, item: ae('formation_core') } ]
+        [{ amount: 2, item: ae('formation_core') }]
     );
 
     // -- ME STORAGE BUS -- //
@@ -197,9 +199,9 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: mc('sticky_piston') },
             { amount: 1, tag: ae('interface') },
-            { amount: 1, item: mc('piston') }
+            { amount: 1, item: mc('piston') },
         ],
-        [ { amount: 1, item: ae('storage_bus') } ]
+        [{ amount: 1, item: ae('storage_bus') }]
     );
 
     // -- ME IMPORT BUS -- //
@@ -211,9 +213,9 @@ ServerEvents.recipes(event => {
         [
             { amount: 2, item: mi('steel_plate') },
             { amount: 1, item: mc('sticky_piston') },
-            { amount: 1, item: ae('annihilation_core') }
+            { amount: 1, item: ae('annihilation_core') },
         ],
-        [ { amount: 1, item: ae('import_bus') } ]
+        [{ amount: 1, item: ae('import_bus') }]
     );
 
     // -- ME EXPORT BUS -- //
@@ -225,13 +227,13 @@ ServerEvents.recipes(event => {
         [
             { amount: 2, item: mi('steel_plate') },
             { amount: 1, item: mc('piston') },
-            { amount: 1, item: ae('formation_core') }
+            { amount: 1, item: ae('formation_core') },
         ],
-        [ { amount: 1, item: ae('export_bus') } ]
+        [{ amount: 1, item: ae('export_bus') }]
     );
 
     // -- REDSTONE BATTERY -- //
-/*     assembler(
+    /*     assembler(
         event,
         st('redstone_battery'),
         8,
@@ -247,7 +249,7 @@ ServerEvents.recipes(event => {
     ); */
 
     // -- SILICON BATTERY -- //
-/*     assembler(
+    /*     assembler(
         event,
         st('silicon_battery'),
         8,
@@ -272,10 +274,10 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('battery_alloy_plate') },
             { amount: 2, item: mi('aluminum_cable') },
             { amount: 4, item: mi('battery_alloy_curved_plate') },
-            { amount: 2, item: mi('sodium_dust') }
+            { amount: 2, item: mi('sodium_dust') },
         ],
-        [ { amount: 2, item: mi('sodium_battery') } ],
-        [ { amount: 100, fluid: mi('lithium') } ]
+        [{ amount: 2, item: mi('sodium_battery') }],
+        [{ amount: 100, fluid: mi('lithium') }]
     );
 
     // -- CADMIUM BATTERY -- //
@@ -288,10 +290,10 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('battery_alloy_plate') },
             { amount: 2, item: mi('annealed_copper_cable') },
             { amount: 4, item: mi('battery_alloy_curved_plate') },
-            { amount: 2, item: mi('cadmium_dust') }
+            { amount: 2, item: mi('cadmium_dust') },
         ],
-        [ { amount: 2, item: mi('cadmium_battery') } ],
-        [ { amount: 100, fluid: mi('lithium') } ]
+        [{ amount: 2, item: mi('cadmium_battery') }],
+        [{ amount: 100, fluid: mi('lithium') }]
     );
 
     // -- PLUTONIUM BATTERY -- //
@@ -304,10 +306,10 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('battery_alloy_plate') },
             { amount: 2, item: mi('superconductor_cable') },
             { amount: 4, item: mi('battery_alloy_curved_plate') },
-            { amount: 2, item: mi('plutonium_dust') }
+            { amount: 2, item: mi('plutonium_dust') },
         ],
-        [ { amount: 2, item: mi('plutonium_battery') } ],
-        [ { amount: 100, fluid: mi('lithium') } ]
+        [{ amount: 2, item: mi('plutonium_battery') }],
+        [{ amount: 100, fluid: mi('lithium') }]
     );
 
     // -- CONCURRENT PROCESSOR -- //
@@ -318,10 +320,10 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: ea('concurrent_processor_print') },
-            { amount: 1, item: ae('printed_silicon') }
+            { amount: 1, item: ae('printed_silicon') },
         ],
-        [ { amount: 1, item: ea('concurrent_processor') } ],
-        [ { amount: 90, fluid: mi('molten_redstone') } ]
+        [{ amount: 1, item: ea('concurrent_processor') }],
+        [{ amount: 90, fluid: mi('molten_redstone') }]
     );
 
     // -- ACCUMULATION PROCESSOR -- //
@@ -332,10 +334,10 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mg('printed_accumulation_processor') },
-            { amount: 1, item: ae('printed_silicon') }
+            { amount: 1, item: ae('printed_silicon') },
         ],
-        [ { amount: 1, item: mg('accumulation_processor') } ],
-        [ { amount: 90, fluid: mi('molten_redstone') } ]
+        [{ amount: 1, item: mg('accumulation_processor') }],
+        [{ amount: 90, fluid: mi('molten_redstone') }]
     );
 
     // -- QUARTZ FIBER -- //
@@ -346,9 +348,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 6, tag: 'c:glass_blocks' },
-            { amount: 3, item: ae('certus_quartz_dust') }
+            { amount: 3, item: ae('certus_quartz_dust') },
         ],
-        [ { amount: 3, item: ae('quartz_fiber') } ]
+        [{ amount: 3, item: ae('quartz_fiber') }]
     );
 
     // -- END CRYSTAL -- //
@@ -360,35 +362,35 @@ ServerEvents.recipes(event => {
         [
             { amount: 7, item: mc('glass') },
             { amount: 1, item: mc('ender_eye') },
-            { amount: 1, item: mc('ghast_tear') }
+            { amount: 1, item: mc('ghast_tear') },
         ],
-        [ { amount: 1, item: mc('end_crystal') } ]
+        [{ amount: 1, item: mc('end_crystal') }]
     );
 
     // -- URANIUM ORE FROM UU -- //
     // assembler(
-        // st('uranium_ore'),
-        // 32,
-        // 600,
-        // [ 
-            // { amount: 6, item: tr('uu_matter') },
-            // { amount: 1, item: mc('moss_block') }
-        // ],
-        // [ { amount: 1, item: mi('uranium_ore') } ],
-        // [ { amount: 15, fluid: mi('molten_nether_star') } ]
+    // st('uranium_ore'),
+    // 32,
+    // 600,
+    // [
+    // { amount: 6, item: tr('uu_matter') },
+    // { amount: 1, item: mc('moss_block') }
+    // ],
+    // [ { amount: 1, item: mi('uranium_ore') } ],
+    // [ { amount: 15, fluid: mi('molten_nether_star') } ]
     // );
 
     // -- IRIDIUM ORE FROM UU -- //
     // assembler(
-        // st('iridium_ore'),
-        // 32,
-        // 600,
-        // [
-            // { amount: 6, item: tr('uu_matter') },
-            // { amount: 1, item: mc('stone') }
-        // ],
-        // [ { amount: 1, item: mi('iridium_ore') } ],
-        // [ { amount: 15, fluid: mi('molten_nether_star') } ]
+    // st('iridium_ore'),
+    // 32,
+    // 600,
+    // [
+    // { amount: 6, item: tr('uu_matter') },
+    // { amount: 1, item: mc('stone') }
+    // ],
+    // [ { amount: 1, item: mi('iridium_ore') } ],
+    // [ { amount: 15, fluid: mi('molten_nether_star') } ]
     // );
 
     // -- LV TO MV TRANSFORMER -- //
@@ -397,11 +399,11 @@ ServerEvents.recipes(event => {
         st('lv_mv_transformer'),
         8,
         200,
-        [ { amount: 1, item: mi('lv_mv_transformer') } ],
+        [{ amount: 1, item: mi('lv_mv_transformer') }],
         [
             { amount: 1, item: mi('basic_machine_hull') },
             { amount: 4, item: mi('tin_cable') },
-            { amount: 1, item: mi('electrum_cable') }
+            { amount: 1, item: mi('electrum_cable') },
         ]
     );
 
@@ -411,11 +413,11 @@ ServerEvents.recipes(event => {
         st('mv_lv_transformer'),
         8,
         200,
-        [ { amount: 1, item: mi('mv_lv_transformer') } ],
+        [{ amount: 1, item: mi('mv_lv_transformer') }],
         [
             { amount: 1, item: mi('basic_machine_hull') },
             { amount: 4, item: mi('tin_cable') },
-            { amount: 1, item: mi('electrum_cable') }
+            { amount: 1, item: mi('electrum_cable') },
         ]
     );
 
@@ -425,11 +427,11 @@ ServerEvents.recipes(event => {
         st('mv_hv_transformer'),
         8,
         200,
-        [ { amount: 1, item: mi('mv_hv_transformer') } ],
+        [{ amount: 1, item: mi('mv_hv_transformer') }],
         [
             { amount: 1, item: mi('advanced_machine_hull') },
             { amount: 4, item: mi('electrum_cable') },
-            { amount: 1, item: mi('aluminum_cable') }
+            { amount: 1, item: mi('aluminum_cable') },
         ]
     );
 
@@ -439,11 +441,11 @@ ServerEvents.recipes(event => {
         st('hv_mv_transformer'),
         8,
         200,
-        [ { amount: 1, item: mi('hv_mv_transformer') } ],
+        [{ amount: 1, item: mi('hv_mv_transformer') }],
         [
             { amount: 1, item: mi('advanced_machine_hull') },
             { amount: 4, item: mi('electrum_cable') },
-            { amount: 1, item: mi('aluminum_cable') }
+            { amount: 1, item: mi('aluminum_cable') },
         ]
     );
 
@@ -453,11 +455,11 @@ ServerEvents.recipes(event => {
         st('hv_ev_transformer'),
         8,
         200,
-        [ { amount: 1, item: mi('hv_ev_transformer') } ],
-        [ 
+        [{ amount: 1, item: mi('hv_ev_transformer') }],
+        [
             { amount: 1, item: mi('turbo_machine_hull') },
             { amount: 4, item: mi('aluminum_cable') },
-            { amount: 1, item: mi('annealed_copper_cable') }
+            { amount: 1, item: mi('annealed_copper_cable') },
         ]
     );
 
@@ -467,11 +469,11 @@ ServerEvents.recipes(event => {
         st('ev_hv_transformer'),
         8,
         200,
-        [ { amount: 1, item: mi('ev_hv_transformer') } ],
+        [{ amount: 1, item: mi('ev_hv_transformer') }],
         [
             { amount: 1, item: mi('turbo_machine_hull') },
             { amount: 4, item: mi('aluminum_cable') },
-            { amount: 1, item: mi('annealed_copper_cable') }
+            { amount: 1, item: mi('annealed_copper_cable') },
         ]
     );
 
@@ -481,11 +483,11 @@ ServerEvents.recipes(event => {
         st('ev_superconductor_transformer'),
         8,
         200,
-        [ { amount: 1, item: mi('ev_superconductor_transformer') } ],
-        [ 
+        [{ amount: 1, item: mi('ev_superconductor_transformer') }],
+        [
             { amount: 1, item: mi('highly_advanced_machine_hull') },
             { amount: 4, item: mi('annealed_copper_cable') },
-            { amount: 1, item: mi('superconductor_cable') }
+            { amount: 1, item: mi('superconductor_cable') },
         ]
     );
 
@@ -495,11 +497,11 @@ ServerEvents.recipes(event => {
         st('superconductor_ev_transformer'),
         8,
         200,
-        [ { amount: 1, item: mi('superconductor_ev_transformer') } ],
+        [{ amount: 1, item: mi('superconductor_ev_transformer') }],
         [
             { amount: 1, item: mi('highly_advanced_machine_hull') },
             { amount: 4, item: mi('annealed_copper_cable') },
-            { amount: 1, item: mi('superconductor_cable') }
+            { amount: 1, item: mi('superconductor_cable') },
         ]
     );
 
@@ -514,9 +516,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('digital_circuit') },
             { amount: 2, item: mi('hv_steam_turbine') },
             { amount: 2, item: mi('stainless_steel_rotor') },
-            { amount: 1, item: mi('turbo_machine_hull') }
+            { amount: 1, item: mi('turbo_machine_hull') },
         ],
-        [ { amount: 1, item: mi('blood_generator') } ]
+        [{ amount: 1, item: mi('blood_generator') }]
     );
 
     // -- MACHINE EXTENDER -- //
@@ -528,10 +530,9 @@ ServerEvents.recipes(event => {
         [
             { amount: 7, item: mc('iron_bars') },
             { amount: 1, item: md('item_pipe') },
-            { amount: 1, item: md('fluid_pipe') }
-
+            { amount: 1, item: md('fluid_pipe') },
         ],
-        [ { amount: 4, item: md('machine_extender') } ],
+        [{ amount: 4, item: md('machine_extender') }]
     );
 
     // -- ATTRACTOR -- //
@@ -544,9 +545,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mc('iron_ingot') },
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mc('ender_pearl') },
-            { amount: 1, item: mc('paper') }
+            { amount: 1, item: mc('paper') },
         ],
-        [ { amount: 1, item: md('attractor') } ],
+        [{ amount: 1, item: md('attractor') }]
     );
 
     // -- EXTRACTOR -- //
@@ -559,9 +560,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mc('iron_ingot') },
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mc('hopper') },
-            { amount: 1, item: mc('paper') }
+            { amount: 1, item: mc('paper') },
         ],
-        [ { amount: 1, item: md('extractor') } ],
+        [{ amount: 1, item: md('extractor') }]
     );
 
     // -- FILTER -- //
@@ -574,9 +575,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mc('iron_ingot') },
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mc('lapis_lazuli') },
-            { amount: 1, item: mc('paper') }
+            { amount: 1, item: mc('paper') },
         ],
-        [ { amount: 1, item: md('filter') } ],
+        [{ amount: 1, item: md('filter') }]
     );
 
     // -- INHIBITOR -- //
@@ -587,9 +588,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 2, item: mc('iron_ingot') },
-            { amount: 1, item: mc('iron_nugget') }
+            { amount: 1, item: mc('iron_nugget') },
         ],
-        [ { amount: 4, item: md('inhibitor') } ],
+        [{ amount: 4, item: md('inhibitor') }]
     );
 
     // -- MISSING TEXTURE COOKIE -- //
@@ -600,11 +601,11 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mi('plutonium_dust') },
-            { amount: 1, item: mc('cocoa_beans') }
+            { amount: 1, item: mc('cocoa_beans') },
         ],
-        [ { amount: 3, item: kj('missing_texture_cookie') } ],
-        [ { amount: 100, fluid: mi('crude_oil') } ],
-	);
+        [{ amount: 3, item: kj('missing_texture_cookie') }],
+        [{ amount: 100, fluid: mi('crude_oil') }]
+    );
 
     // -- BOSS CRUSHER -- //
     assembler(
@@ -617,10 +618,10 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('piston') },
             { amount: 2, item: mi('large_pump') },
             { amount: 2, item: kj('withered_soc') },
-            { amount: 1, item: mi('turbo_machine_hull') }
+            { amount: 1, item: mi('turbo_machine_hull') },
         ],
-        [ { amount: 1, item: mi('boss_crusher') } ]
-        );
+        [{ amount: 1, item: mi('boss_crusher') }]
+    );
 
     // -- PTFE MACHINE CASING -- //
     assembler(
@@ -630,9 +631,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 8, item: mi('polytetrafluoroethylene_plate') },
-            { amount: 1, item: mi('polytetrafluoroethylene_gear') }
+            { amount: 1, item: mi('polytetrafluoroethylene_gear') },
         ],
-        [ { amount: 1, item: mi('chemically_inert_ptfe_casing') } ]
+        [{ amount: 1, item: mi('chemically_inert_ptfe_casing') }]
     );
 
     // -- PTFE PIPE CASING -- //
@@ -643,9 +644,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mi('chemically_inert_ptfe_casing') },
-            { amount: 6, item: mi('polytetrafluoroethylene_curved_plate') }
+            { amount: 6, item: mi('polytetrafluoroethylene_curved_plate') },
         ],
-        [ { amount: 2, item: mi('polytetrafluoroethylene_machine_casing_pipe') } ]
+        [{ amount: 2, item: mi('polytetrafluoroethylene_machine_casing_pipe') }]
     );
 
     // -- TUNGSTENSTEEL MACHINE CASING -- //
@@ -656,9 +657,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 8, item: mi('tungstensteel_plate') },
-            { amount: 1, item: mi('tungstensteel_gear') }
+            { amount: 1, item: mi('tungstensteel_gear') },
         ],
-        [ { amount: 1, item: mi('tungstensteel_machine_casing') } ]
+        [{ amount: 1, item: mi('tungstensteel_machine_casing') }]
     );
 
     // -- TUNGSTENSTEEL PIPE CASING -- //
@@ -669,9 +670,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mi('tungstensteel_machine_casing') },
-            { amount: 6, item: mi('tungstensteel_curved_plate') }
+            { amount: 6, item: mi('tungstensteel_curved_plate') },
         ],
-        [ { amount: 2, item: mi('tungstensteel_machine_casing_pipe') } ]
+        [{ amount: 2, item: mi('tungstensteel_machine_casing_pipe') }]
     );
 
     // -- LASER ENGRAVER -- //
@@ -685,9 +686,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('analog_circuit') },
             { amount: 2, item: mi('motor') },
             { amount: 1, tag: 'c:glass_blocks' },
-            { amount: 1, item: mi('basic_machine_hull') }
+            { amount: 1, item: mi('basic_machine_hull') },
         ],
-        [ { amount: 1, item: mi('laser_engraver') } ]
+        [{ amount: 1, item: mi('laser_engraver') }]
     );
 
     // -- PHOTOSYNTHETIC CHAMBER -- //
@@ -703,9 +704,9 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('steel_tank') },
             { amount: 1, item: mc('dirt') },
             { amount: 1, tag: 'c:glass_blocks' },
-            { amount: 1, item: mi('basic_machine_hull') }
+            { amount: 1, item: mi('basic_machine_hull') },
         ],
-        [ { amount: 1, item: mi('photosynthetic_chamber') } ]
+        [{ amount: 1, item: mi('photosynthetic_chamber') }]
     );
 
     // -- ROCKET PART ASSEMBLER -- //
@@ -720,9 +721,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('digital_circuit') },
             { amount: 1, item: mi('advanced_motor') },
             { amount: 1, item: mi('advanced_pump') },
-            { amount: 1, item: mi('basic_machine_hull') }
+            { amount: 1, item: mi('basic_machine_hull') },
         ],
-        [ { amount: 1, item: mi('rocket_part_assembler') } ]
+        [{ amount: 1, item: mi('rocket_part_assembler') }]
     );
 
     // -- CORE MINING DRILL -- //
@@ -736,9 +737,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('quantum_circuit') },
             { amount: 2, item: mi('large_advanced_motor') },
             { amount: 1, item: mi('quantum_machine_hull') },
-            { amount: 1, item: mi('desh_drill_head') }
+            { amount: 1, item: mi('desh_drill_head') },
         ],
-        [ { amount: 1, item: mi('core_drill') } ]
+        [{ amount: 1, item: mi('core_drill') }]
     );
 
     // -- INDUSTRIAL GREENHOUSE -- //
@@ -747,14 +748,14 @@ ServerEvents.recipes(event => {
         st('industrial_greenhouse'),
         8,
         200,
-        [ 
+        [
             { amount: 2, item: mi('motor') },
             { amount: 2, item: mi('analog_circuit') },
             { amount: 2, item: mi('pump') },
             { amount: 2, item: mi('tin_rotor') },
-            { amount: 1, item: mi('basic_machine_hull') }
+            { amount: 1, item: mi('basic_machine_hull') },
         ],
-        [ { amount: 1, item: mi('greenhouse') } ]
+        [{ amount: 1, item: mi('greenhouse') }]
     );
 
     // -- MOB CRUSHER -- //
@@ -768,9 +769,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('piston') },
             { amount: 2, item: mi('large_pump') },
             { amount: 2, item: mi('electronic_circuit') },
-            { amount: 1, item: mi('steel_machine_casing') }
+            { amount: 1, item: mi('steel_machine_casing') },
         ],
-        [ { amount: 1, item: mi('mob_crusher') } ]
+        [{ amount: 1, item: mi('mob_crusher') }]
     );
 
     // -- QUASI QUANTUM SINGULARITY FORGE -- //
@@ -782,9 +783,9 @@ ServerEvents.recipes(event => {
         [
             { amount: 6, item: mi('plasma_handling_iridium_machine_casing') },
             { amount: 2, item: mi('quantum_circuit') },
-            { amount: 1, item: mi('quantum_machine_hull') }
+            { amount: 1, item: mi('quantum_machine_hull') },
         ],
-        [ { amount: 1, item: mi('singularity_forge') } ]
+        [{ amount: 1, item: mi('singularity_forge') }]
     );
 
     // -- SPACE PROBE LAUNCHER -- //
@@ -799,9 +800,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('stainless_steel_machine_casing_pipe') },
             { amount: 1, item: mi('digital_circuit') },
             { amount: 1, item: mi('clean_stainless_steel_machine_casing') },
-            { amount: 1, item: mi('turbo_machine_hull') }
+            { amount: 1, item: mi('turbo_machine_hull') },
         ],
-        [ { amount: 1, item: mi('space_probe_launcher') } ]
+        [{ amount: 1, item: mi('space_probe_launcher') }]
     );
 
     // -- QUANTUM SPACE PROBE LAUNCHER -- //
@@ -816,9 +817,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('calorite_machine_casing_pipe') },
             { amount: 1, item: mi('processing_unit') },
             { amount: 1, item: mi('calorite_machine_casing') },
-            { amount: 1, item: mi('highly_advanced_machine_hull') }
+            { amount: 1, item: mi('highly_advanced_machine_hull') },
         ],
-        [ { amount: 1, item: mi('quantum_space_probe_launcher') } ]
+        [{ amount: 1, item: mi('quantum_space_probe_launcher') }]
     );
 
     // -- UNCOOKED PIZZA -- //
@@ -832,9 +833,9 @@ ServerEvents.recipes(event => {
             { amount: 1, item: fd('tomato_sauce') },
             { amount: 1, item: fd('onion') },
             { amount: 1, item: ed('cheese_slice') },
-            { amount: 1, item: fd('minced_beef') }
+            { amount: 1, item: fd('minced_beef') },
         ],
-        [ { amount: 1, item: kj('uncooked_pizza') } ]
+        [{ amount: 1, item: kj('uncooked_pizza') }]
     );
 
     // -- OP AMP -- //
@@ -846,10 +847,10 @@ ServerEvents.recipes(event => {
         [
             { amount: 4, item: mi('resistor') },
             { amount: 4, item: mi('transistor') },
-            { amount: 1, item: mi('diode') }
+            { amount: 1, item: mi('diode') },
         ],
-        [ { amount: 1, item: mi('op_amp') } ],
-        [ { amount: 50, fluid: mi('polytetrafluoroethylene') } ]
+        [{ amount: 1, item: mi('op_amp') }],
+        [{ amount: 50, fluid: mi('polytetrafluoroethylene') }]
     );
 
     // -- BASIC CARD -- //
@@ -858,13 +859,13 @@ ServerEvents.recipes(event => {
         st('basic_card'),
         8,
         200,
-        [ 
+        [
             { amount: 3, tag: 'c:plates/steel' },
             { amount: 2, tag: 'c:ingots/gold' },
-            { amount: 1, item: ae('calculation_processor') }
+            { amount: 1, item: ae('calculation_processor') },
         ],
-        [ { amount: 2, item: ae('basic_card') } ],
-        [ { amount: 100, fluid: mi('molten_redstone') } ]
+        [{ amount: 2, item: ae('basic_card') }],
+        [{ amount: 100, fluid: mi('molten_redstone') }]
     );
 
     // -- ADVANCED CARD -- //
@@ -873,13 +874,13 @@ ServerEvents.recipes(event => {
         st('advanced_card'),
         8,
         200,
-        [ 
+        [
             { amount: 3, tag: 'c:plates/steel' },
             { amount: 2, tag: 'c:gems/diamond' },
-            { amount: 1, item: ae('calculation_processor') }
+            { amount: 1, item: ae('calculation_processor') },
         ],
-        [ { amount: 2, item: ae('advanced_card') } ],
-        [ { amount: 100, fluid: mi('molten_redstone') } ]
+        [{ amount: 2, item: ae('advanced_card') }],
+        [{ amount: 100, fluid: mi('molten_redstone') }]
     );
 
     // -- WITHERED SOC -- //
@@ -888,17 +889,16 @@ ServerEvents.recipes(event => {
         st('withered_soc'),
         32,
         1200,
-        [ 
+        [
             { amount: 3, item: mc('wither_skeleton_skull') },
             { amount: 4, item: mc('soul_sand') },
             { amount: 2, item: mi('arithmetic_logic_unit') },
             { amount: 4, item: mi('electronic_circuit') },
             { amount: 1, item: mi('processing_unit_board') },
-            { amount: 4, item: mi('industrial_tnt') }
-
+            { amount: 4, item: mi('industrial_tnt') },
         ],
-        [ { amount: 1, item: kj('withered_soc') } ],
-        [ { amount: 100, fluid: mi('polytetrafluoroethylene') } ]
+        [{ amount: 1, item: kj('withered_soc') }],
+        [{ amount: 100, fluid: mi('polytetrafluoroethylene') }]
     );
 
     // -- BRONZE BOILER -- //
@@ -911,9 +911,9 @@ ServerEvents.recipes(event => {
             { amount: 4, tag: 'c:plates/bronze' },
             { amount: 1, item: mi('bronze_tank') },
             { amount: 1, item: mi('bronze_machine_casing') },
-            { amount: 3, item: mi('fire_clay_bricks') }
+            { amount: 3, item: mi('fire_clay_bricks') },
         ],
-        [ { amount: 1, item: mi('bronze_boiler') } ]
+        [{ amount: 1, item: mi('bronze_boiler') }]
     );
 
     // -- BRONZE FURNACE -- /
@@ -925,11 +925,11 @@ ServerEvents.recipes(event => {
         [
             { amount: 7, tag: 'c:plates/bronze' },
             { amount: 1, item: mi('bronze_machine_casing') },
-            { amount: 1, item: mc('furnace') }
+            { amount: 1, item: mc('furnace') },
         ],
-        [ { amount: 1, item: mi('bronze_furnace') } ]
+        [{ amount: 1, item: mi('bronze_furnace') }]
     );
-  
+
     // -- SPACE PROBE -- //
     assembler(
         event,
@@ -944,9 +944,9 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mi('processing_unit') },
             { amount: 1, item: kj('calorite_engine') },
             { amount: 1, item: mi('titanium_tank') },
-            { amount: 1, item: mi('titanium_tank') }
+            { amount: 1, item: mi('titanium_tank') },
         ],
-        [ { amount: 4, item: kj('space_probe') } ]
+        [{ amount: 4, item: kj('space_probe') }]
     );
 
     // -- ZINC DRILL -- //
@@ -955,13 +955,13 @@ ServerEvents.recipes(event => {
         st('zinc_drill'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mi('zinc_drill_head') },
             { amount: 2, item: mi('iron_gear') },
             { amount: 1, item: 'create:electron_tube' },
-            { amount: 1, tag: 'c:plates/bronze' }
+            { amount: 1, tag: 'c:plates/bronze' },
         ],
-        [ { amount: 4, item: mi('zinc_drill') } ]
+        [{ amount: 4, item: mi('zinc_drill') }]
     );
 
     // -- DESH DRILL -- //
@@ -976,9 +976,9 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('enderium_gear') },
             { amount: 2, item: mi('large_advanced_motor') },
             { amount: 1, item: mi('processing_unit') },
-            { amount: 1, item: mi('annealed_copper_wire') }
+            { amount: 1, item: mi('annealed_copper_wire') },
         ],
-        [ { amount: 4, item: mi('desh_drill') } ]
+        [{ amount: 4, item: mi('desh_drill') }]
     );
 
     // -- QBIT -- //
@@ -991,12 +991,12 @@ ServerEvents.recipes(event => {
             { amount: 2, item: mi('arithmetic_logic_unit') },
             { amount: 2, tag: 'c:plates/carbon' },
             { amount: 2, item: mi('tungstensteel_plate') },
-            { amount: 6, item: mi('superconductor_wire') }
+            { amount: 6, item: mi('superconductor_wire') },
         ],
-        [ { amount: 1, item: mi('qubit') } ],
+        [{ amount: 1, item: mi('qubit') }],
         [
             { amount: 250, fluid: mi('cryofluid') },
-            { amount: 50, fluid: mi('tritium') }
+            { amount: 50, fluid: mi('tritium') },
         ]
     );
 
@@ -1022,9 +1022,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 8, item: mi('calorite_plate') },
-            { amount: 1, item: mi('calorite_gear') }
+            { amount: 1, item: mi('calorite_gear') },
         ],
-        [ { amount: 1, item: mi('calorite_machine_casing') } ]
+        [{ amount: 1, item: mi('calorite_machine_casing') }]
     );
 
     // -- CALORITE MACHINE PIPE CASING -- //
@@ -1035,9 +1035,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mi('calorite_machine_casing') },
-            { amount: 6, item: mi('calorite_curved_plate')}
+            { amount: 6, item: mi('calorite_curved_plate') },
         ],
-        [ { amount: 2, item: mi('calorite_machine_casing_pipe')} ]
+        [{ amount: 2, item: mi('calorite_machine_casing_pipe') }]
     );
 
     // -- DESH MACHINE CASING -- //
@@ -1048,9 +1048,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 8, item: mi('desh_plate') },
-            { amount: 1, item: mi('desh_gear') }
+            { amount: 1, item: mi('desh_gear') },
         ],
-        [ { amount: 1, item: mi('desh_machine_casing') } ]
+        [{ amount: 1, item: mi('desh_machine_casing') }]
     );
 
     // -- DESH MACHINE PIPE CASING -- //
@@ -1061,9 +1061,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mi('desh_machine_casing') },
-            { amount: 6, item: mi('desh_curved_plate')}
+            { amount: 6, item: mi('desh_curved_plate') },
         ],
-        [ { amount: 2, item: mi('desh_machine_casing_pipe')} ]
+        [{ amount: 2, item: mi('desh_machine_casing_pipe') }]
     );
 
     // -- ENDERIUM MACHINE CASING -- //
@@ -1074,12 +1074,12 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 8, item: mi('enderium_plate') },
-            { amount: 1, item: mi('enderium_gear') }
+            { amount: 1, item: mi('enderium_gear') },
         ],
-        [ { amount: 1, item: mi('enderium_machine_casing') } ]
+        [{ amount: 1, item: mi('enderium_machine_casing') }]
     );
 
-/*     // -- ENDERIUM MACHINE PIPE CASING -- //
+    /*     // -- ENDERIUM MACHINE PIPE CASING -- //
     assembler(
         event,
         st('enderium_machine_casing_pipe'),
@@ -1100,9 +1100,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 8, item: mi('ostrum_plate') },
-            { amount: 1, item: mi('ostrum_gear') }
+            { amount: 1, item: mi('ostrum_gear') },
         ],
-        [ { amount: 1, item: mi('ostrum_machine_casing') } ]
+        [{ amount: 1, item: mi('ostrum_machine_casing') }]
     );
 
     // -- OSTRUM MACHINE PIPE CASING -- //
@@ -1113,9 +1113,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mi('ostrum_machine_casing') },
-            { amount: 6, item: mi('ostrum_curved_plate')}
+            { amount: 6, item: mi('ostrum_curved_plate') },
         ],
-        [ { amount: 2, item: mi('ostrum_machine_casing_pipe')} ]
+        [{ amount: 2, item: mi('ostrum_machine_casing_pipe') }]
     );
 
     // -- REDSTONE REPEATER -- //
@@ -1124,9 +1124,9 @@ ServerEvents.recipes(event => {
         st('repeater'),
         8,
         100,
-        [ { amount: 3, tag: 'c:stones' } ],
-        [ { amount: 1, item: mc('repeater') } ],
-        [ { amount: 200, fluid: mi('molten_redstone') } ]
+        [{ amount: 3, tag: 'c:stones' }],
+        [{ amount: 1, item: mc('repeater') }],
+        [{ amount: 200, fluid: mi('molten_redstone') }]
     );
 
     // -- REDSTONE COMPARATOR -- //
@@ -1134,13 +1134,13 @@ ServerEvents.recipes(event => {
         event,
         st('comparator'),
         8,
-        100, 
+        100,
         [
             { amount: 1, item: mc('quartz') },
-            { amount: 3, tag: 'c:stones' }
+            { amount: 3, tag: 'c:stones' },
         ],
-        [ { amount: 1, item: mc('comparator') } ],
-        [ { amount: 200, fluid: mi('molten_redstone') } ]
+        [{ amount: 1, item: mc('comparator') }],
+        [{ amount: 200, fluid: mi('molten_redstone') }]
     );
 
     // -- REDSTONE TORCH -- //
@@ -1149,9 +1149,9 @@ ServerEvents.recipes(event => {
         st('redstone_torch'),
         8,
         100,
-        [ { amount: 1, tag: 'c:rods/wooden' } ],
-        [ { amount: 1, item: mc('redstone_torch') } ],
-        [ { amount: 50, fluid: mi('molten_redstone') } ]
+        [{ amount: 1, tag: 'c:rods/wooden' }],
+        [{ amount: 1, item: mc('redstone_torch') }],
+        [{ amount: 50, fluid: mi('molten_redstone') }]
     );
 
     // -- FACTORY BLOCK -- //
@@ -1160,11 +1160,11 @@ ServerEvents.recipes(event => {
         st('factory_block'),
         8,
         100,
-        [ 
+        [
             { amount: 4, item: mc('iron_ingot') },
-            { amount: 4, item: mc('stone') } 
+            { amount: 4, item: mc('stone') },
         ],
-        [ { amount: 32, item: 'factory_blocks:factory' } ]
+        [{ amount: 32, item: 'factory_blocks:factory' }]
     );
 
     // -- IRON BARS -- //
@@ -1173,8 +1173,8 @@ ServerEvents.recipes(event => {
         st('iron_bars'),
         8,
         100,
-        [ { amount: 6, item: mi('iron_rod') } ],
-        [ { amount: 16, item: mc('iron_bars') } ]
+        [{ amount: 6, item: mi('iron_rod') }],
+        [{ amount: 16, item: mc('iron_bars') }]
     );
 
     // -- LARGE STEAM TURBINE -- //
@@ -1183,13 +1183,13 @@ ServerEvents.recipes(event => {
         st('large_steam_turbine'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mi('highly_advanced_machine_hull') },
             { amount: 4, item: mi('hv_steam_turbine') },
             { amount: 2, item: mi('large_advanced_pump') },
-            { amount: 2, item: mi('stainless_steel_rotor') }
+            { amount: 2, item: mi('stainless_steel_rotor') },
         ],
-        [ { amount: 1, item: mi('large_steam_turbine') } ]
+        [{ amount: 1, item: mi('large_steam_turbine') }]
     );
 
     // -- LARGE DIESEL GENERATOR -- //
@@ -1198,13 +1198,13 @@ ServerEvents.recipes(event => {
         st('large_diesel_generator'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mi('turbo_machine_hull') },
             { amount: 4, item: mi('hv_diesel_generator') },
             { amount: 2, item: mi('advanced_motor') },
-            { amount: 2, item: mi('titanium_gear') }
+            { amount: 2, item: mi('titanium_gear') },
         ],
-        [ { amount: 1, item: mi('large_diesel_generator') } ]
+        [{ amount: 1, item: mi('large_diesel_generator') }]
     );
 
     // -------------------------
@@ -1226,12 +1226,12 @@ ServerEvents.recipes(event => {
             { amount: 64, item: mi('singularity') },
             { amount: 64, item: mi('singularity') },
             { amount: 64, item: mi('singularity') },
-            { amount: 64, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
         ],
-        [ { amount: 1, item: mi('creative_storage_unit') } ],
+        [{ amount: 1, item: mi('creative_storage_unit') }],
         [
             { amount: 8000, fluid: mi('uu_matter') },
-            { amount: 8000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('neutronium') },
         ]
     );
 
@@ -1250,12 +1250,12 @@ ServerEvents.recipes(event => {
             { amount: 64, item: mi('singularity') },
             { amount: 64, item: mi('singularity') },
             { amount: 64, item: mi('singularity') },
-            { amount: 64, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
         ],
-        [ { amount: 1, item: mi('creative_barrel') } ],
+        [{ amount: 1, item: mi('creative_barrel') }],
         [
             { amount: 8000, fluid: mi('uu_matter') },
-            { amount: 8000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('neutronium') },
         ]
     );
 
@@ -1274,12 +1274,12 @@ ServerEvents.recipes(event => {
             { amount: 64, item: mi('singularity') },
             { amount: 64, item: mi('singularity') },
             { amount: 64, item: mi('singularity') },
-            { amount: 64, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
         ],
-        [ { amount: 1, item: mi('creative_tank') } ],
+        [{ amount: 1, item: mi('creative_tank') }],
         [
             { amount: 8000, fluid: mi('uu_matter') },
-            { amount: 8000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('neutronium') },
         ]
     );
 
@@ -1298,12 +1298,12 @@ ServerEvents.recipes(event => {
             { amount: 64, item: mi('singularity') },
             { amount: 64, item: mi('singularity') },
             { amount: 64, item: mi('singularity') },
-            { amount: 64, item: mi('singularity') }
+            { amount: 64, item: mi('singularity') },
         ],
-        [ { amount: 1, item: 'create:creative_motor' } ],
+        [{ amount: 1, item: 'create:creative_motor' }],
         [
             { amount: 8000, fluid: mi('uu_matter') },
-            { amount: 8000, fluid: mi('neutronium') }
+            { amount: 8000, fluid: mi('neutronium') },
         ]
     );
 
@@ -1322,18 +1322,18 @@ ServerEvents.recipes(event => {
             { amount: 1, item: 'create:creative_motor' },
             { amount: 1, item: mi('quantum_leggings') },
             { amount: 1, item: mi('creative_barrel') },
-            { amount: 1, item: mi('quantum_boots') }
+            { amount: 1, item: mi('quantum_boots') },
         ],
-        [ { amount: 1, item: 'create:handheld_worldshaper' } ],
+        [{ amount: 1, item: 'create:handheld_worldshaper' }],
         [
             { amount: 16000, fluid: mi('uu_matter') },
-            { amount: 16000, fluid: mi('neutronium') }
+            { amount: 16000, fluid: mi('neutronium') },
         ]
     );
 
-    //-----------------//
+    // -----------------//
     // -- SPACE AGE -- //
-    //-----------------//
+    // -----------------//
 
     // -- TIERED SPACE PROBE -- //
     assembler(
@@ -1347,9 +1347,9 @@ ServerEvents.recipes(event => {
             { amount: 1, item: kj('steel_fuel_tank') },
             { amount: 2, item: kj('rocket_fin') },
             { amount: 1, item: mi('aluminum_drill') },
-            { amount: 1, tag: 'modern_industrialization:item_pipes' }
+            { amount: 1, tag: 'modern_industrialization:item_pipes' },
         ],
-        [ { amount: 4, item: kj('basic_space_probe') } ],
+        [{ amount: 4, item: kj('basic_space_probe') }]
     );
 
     assembler(
@@ -1363,11 +1363,11 @@ ServerEvents.recipes(event => {
             { amount: 1, item: kj('desh_fuel_tank') },
             { amount: 2, item: kj('rocket_fin') },
             { amount: 1, item: mi('stainless_steel_drill') },
-            { amount: 1, tag: 'modern_industrialization:item_pipes' }
+            { amount: 1, tag: 'modern_industrialization:item_pipes' },
         ],
-        [ { amount: 4, item: kj('advanced_space_probe') } ],
+        [{ amount: 4, item: kj('advanced_space_probe') }]
     );
-        
+
     assembler(
         event,
         st('highly_advanced_space_probe'),
@@ -1379,14 +1379,14 @@ ServerEvents.recipes(event => {
             { amount: 1, item: kj('ostrum_fuel_tank') },
             { amount: 2, item: kj('rocket_fin') },
             { amount: 1, item: mi('titanium_drill') },
-            { amount: 1, tag: 'modern_industrialization:item_pipes' }
+            { amount: 1, tag: 'modern_industrialization:item_pipes' },
         ],
-        [ { amount: 4, item: kj('highly_advanced_space_probe') } ],
+        [{ amount: 4, item: kj('highly_advanced_space_probe') }]
     );
 
-    //---------------------//
+    // ---------------------//
     // -- CREATE COMPAT -- //
-    //---------------------//
+    // ---------------------//
 
     // -- ELECTRON TUBE -- //
     assembler(
@@ -1396,14 +1396,14 @@ ServerEvents.recipes(event => {
         100,
         [
             { amount: 1, item: mi('iron_plate') },
-            { amount: 1, item: cr('polished_rose_quartz') }
+            { amount: 1, item: cr('polished_rose_quartz') },
         ],
-        [ { amount: 1, item: cr('electron_tube') } ],
-    );  
-    
-    //---------------------//
+        [{ amount: 1, item: cr('electron_tube') }]
+    );
+
+    // ---------------------//
     // -- XTONES COMPAT -- //
-    //---------------------//
+    // ---------------------//
 
     const baseXtonesMaterials = [
         ['agon', 'stone_slab', '0'],
@@ -1439,10 +1439,10 @@ ServerEvents.recipes(event => {
         ['zone', 'smooth_stone_slab', '15'],
         ['zorg', 'terracotta', '15'],
         ['ztyl', 'light_gray_dye', '0'],
-        ['zyth', 'stick', '15'] 
+        ['zyth', 'stick', '15'],
     ];
 
-    baseXtonesMaterials.forEach(material => {
+    baseXtonesMaterials.forEach((material) => {
         assembler(
             event,
             st(`${material[0]}_in_assembler`),
@@ -1450,12 +1450,12 @@ ServerEvents.recipes(event => {
             100,
             [
                 { amount: 8, item: xt('xtone_tile') },
-                { amount: 1, item: mc(`${material[1]}`) }  
+                { amount: 1, item: mc(`${material[1]}`) },
             ],
-            [ { amount: 8, item: xt(`${material[0]}_block_${material[2]}`) } ]
+            [{ amount: 8, item: xt(`${material[0]}_block_${material[2]}`) }]
         );
     });
-    
+
     assembler(
         event,
         st('xtone_tile_in_assembler'),
@@ -1463,15 +1463,17 @@ ServerEvents.recipes(event => {
         100,
         [
             { amount: 6, item: mc('stone_slab') },
-            { amount: 1, item: mc('stone') }  
+            { amount: 1, item: mc('stone') },
         ],
-        [ { amount: 8, item: xt('xtone_tile') } ]
+        [{ amount: 8, item: xt('xtone_tile') }]
     );
 
-
     // This code sucks, look away
-    const xtoneRecipes = event.findRecipes({ mod: 'xtonesreworked', input:'#c:dyes' });
-    xtoneRecipes.forEach(recipe => {
+    const xtoneRecipes = event.findRecipes({
+        mod: 'xtonesreworked',
+        input: '#c:dyes',
+    });
+    xtoneRecipes.forEach((recipe) => {
         let recipeJson = recipe.json;
         let recipeId = recipeJson.get('result').get('id').toString();
         let inputs = recipeJson.get('key');
@@ -1491,9 +1493,15 @@ ServerEvents.recipes(event => {
             console.log('Did not match: ' + inputs);
         }
         dye = dye.toString();
-        let dyeColor = dye.substring(dye.lastIndexOf('/') + 1, dye.lastIndexOf('"'));
+        let dyeColor = dye.substring(
+            dye.lastIndexOf('/') + 1,
+            dye.lastIndexOf('"')
+        );
 
-        let blockName = recipeId.substring(recipeId.indexOf(':') + 1, recipeId.lastIndexOf('"'));
+        let blockName = recipeId.substring(
+            recipeId.indexOf(':') + 1,
+            recipeId.lastIndexOf('"')
+        );
         let blockType = blockName.substring(0, blockName.indexOf('_'));
 
         assembler(
@@ -1503,9 +1511,9 @@ ServerEvents.recipes(event => {
             200,
             [
                 { amount: 8, tag: xt(blockType) },
-                { amount: 1, item: mc(`${dyeColor}_dye`) }
+                { amount: 1, item: mc(`${dyeColor}_dye`) },
             ],
-            [ { amount: 8, item: xt(blockName) } ]
+            [{ amount: 8, item: xt(blockName) }]
         );
     });
 });

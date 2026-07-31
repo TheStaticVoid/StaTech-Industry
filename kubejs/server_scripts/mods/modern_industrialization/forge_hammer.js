@@ -3,29 +3,14 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     let st = (id) => `statech:modern_industrialization/forge_hammer/${id}`;
 
-    const MATERIALS = [
-        'bronze',
-        'steel',
-        'tin',
-        'iron',
-        'copper',
-        'gold'
-    ];
+    const MATERIALS = ['bronze', 'steel', 'tin', 'iron', 'copper', 'gold'];
 
-    const MATERIAL_RAW_ORE = [
-        'copper',
-        'gold',
-        'iron',
-        'tin'
-    ];
+    const MATERIAL_RAW_ORE = ['copper', 'gold', 'iron', 'tin'];
 
-    const MATERIAL_CRUSHED_DUST = [
-        'coal',
-        'lignite_coal'
-    ];
+    const MATERIAL_CRUSHED_DUST = ['coal', 'lignite_coal'];
 
     const RECIPES = [
         'double_ingot_to_bolt',
@@ -56,8 +41,8 @@ ServerEvents.recipes(event => {
     ];
 
     // -- REMOVE ALL THE FORGE HAMMER RECIPES -- //
-    RECIPES.forEach(recipe => {
-        MATERIALS.forEach(material => {
+    RECIPES.forEach((recipe) => {
+        MATERIALS.forEach((material) => {
             let combined = `modern_industrialization:materials/${material}/forge_hammer/${recipe}`;
             event.remove({ id: combined });
         });
@@ -85,33 +70,32 @@ ServerEvents.recipes(event => {
         mi('materials/lignite_coal/forge_hammer/ore_to_crushed_dust'),
         mi('materials/lignite_coal/forge_hammer/ore_to_crushed_dust_with_tool'),
         mi('materials/lignite_coal/forge_hammer/ore_to_dust_with_tool'),
-        mi('materials/lignite_coal/forge_hammer/crushed_dust_to_dust_with_tool'),
+        mi(
+            'materials/lignite_coal/forge_hammer/crushed_dust_to_dust_with_tool'
+        ),
         mi('materials/tin/forge_hammer/ore_to_dust_with_tool'),
         mi('materials/tin/forge_hammer/ore_to_raw_metal'),
         mi('materials/tin/forge_hammer/ore_to_raw_metal_with_tool'),
-        mi('materials/tin/forge_hammer/raw_metal_to_dust_with_tool')
+        mi('materials/tin/forge_hammer/raw_metal_to_dust_with_tool'),
     ];
     // -- REMOVE ALL THE ORE FORGE HAMMER RECIPES -- //
-    ORE_RECIPES.forEach(id => event.remove({id : id}));
+    ORE_RECIPES.forEach((id) => event.remove({ id: id }));
 
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
     let forgeHammer = (id, damage, input_count, input_item, item_outputs) => {
         let newRecipe = {
             type: mi('forge_hammer'),
-            damage: damage
-        }
+            damage: damage,
+        };
 
-        if (input_count)
-            newRecipe['count'] = input_count;
-        if (input_item)
-            newRecipe['ingredient'] = input_item;
-        if (item_outputs)
-            newRecipe['result'] = item_outputs;
+        if (input_count) newRecipe['count'] = input_count;
+        if (input_item) newRecipe['ingredient'] = input_item;
+        if (item_outputs) newRecipe['result'] = item_outputs;
 
         event.custom(newRecipe).id(id);
-    }
+    };
 
-    MATERIAL_CRUSHED_DUST.forEach(material => {
+    MATERIAL_CRUSHED_DUST.forEach((material) => {
         // -- CRUSHED DUST FROM ORE -- //
         forgeHammer(
             st(`${material}_crushed_dust`),
@@ -120,7 +104,7 @@ ServerEvents.recipes(event => {
             { tag: `c:ores/${material}` },
             { count: 2, id: mi(`${material}_crushed_dust`) }
         );
-    
+
         // -- DUST FROM ORE -- //
         forgeHammer(
             st(`${material}_dust`),
@@ -129,7 +113,7 @@ ServerEvents.recipes(event => {
             { tag: `c:ores/${material}` },
             { count: 4, id: mi(`${material}_dust`) }
         );
-    
+
         // -- DUST FROM CRUSHED DUST -- //
         forgeHammer(
             st(`${material}_dust_alt`),
@@ -140,7 +124,7 @@ ServerEvents.recipes(event => {
         );
     });
 
-    MATERIAL_RAW_ORE.forEach(material => {
+    MATERIAL_RAW_ORE.forEach((material) => {
         // -- RAW FROM ORE -- //
         if (material != 'tin') {
             forgeHammer(
@@ -159,7 +143,7 @@ ServerEvents.recipes(event => {
                 { count: 4, id: mi(`raw_${material}`) }
             );
         }
-    
+
         // -- DUST FROM ORE -- //
         forgeHammer(
             st(`${material}_dust_from_ore`),
@@ -168,7 +152,7 @@ ServerEvents.recipes(event => {
             { tag: `c:ores/${material}` },
             { count: 8, id: mi(`${material}_dust`) }
         );
-    
+
         // -- DUST FROM RAW METAL -- //
         forgeHammer(
             st(`${material}_dust_from_raw_metal`),
@@ -177,9 +161,9 @@ ServerEvents.recipes(event => {
             { tag: `c:raw_materials/${material}` },
             { count: 2, id: mi(`${material}_dust`) }
         );
-    }); 
+    });
 
-    MATERIALS.forEach(material => {
+    MATERIALS.forEach((material) => {
         // -- BOLTS -- //
         forgeHammer(
             st(`${material}_bolt_from_double_ingot`),
@@ -221,7 +205,7 @@ ServerEvents.recipes(event => {
             );
         }
 
-        // -- PLATES -- // 
+        // -- PLATES -- //
         forgeHammer(
             st(`${material}_plate_from_double_ingot`),
             10,

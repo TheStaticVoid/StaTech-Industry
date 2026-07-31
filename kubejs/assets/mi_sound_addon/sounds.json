@@ -1,92 +1,110 @@
 {
-    "laser_engraver": {
+    "modern_industrialization/laser_engraver": {
+        "category": "block",
+        "sounds": ["mi_sound_addon:modern_industrialization/laser_engraver"]
+    },
+    "modern_industrialization/singularity_forge": {
+        "category": "block",
+        "sounds": ["mi_sound_addon:modern_industrialization/singularity_forge"]
+    },
+    "modern_industrialization/rocket_part_assembler": {
+        "category": "block",
+        "sounds": ["mi_sound_addon:modern_industrialization/assembler"]
+    },
+    "extended_industrialization/alloy_smelter": {
         "category": "block",
         "sounds": [
-            "mi_sound_addon:laser_engraver"
+            "mi_sound_addon:modern_industrialization/electric_blast_furnace"
         ]
     },
-    "singularity_forge": {
+    "modern_industrialization/core_drill": {
+        "category": "block",
+        "sounds": ["mi_sound_addon:modern_industrialization/fission_reactor"]
+    },
+    "modern_industrialization/space_probe_launcher": {
         "category": "block",
         "sounds": [
-            "mi_sound_addon:singularity_forge"
+            "mi_sound_addon:modern_industrialization/space_probe_launcher"
         ]
     },
-    "rocket_part_assembler": {
+    "modern_industrialization/quantum_space_probe_launcher": {
         "category": "block",
         "sounds": [
-            "mi_sound_addon:assembler"
+            "mi_sound_addon:modern_industrialization/space_probe_launcher"
         ]
     },
-    "alloy_smelter": {
+    "modern_industrialization/photosynthetic_chamber": {
         "category": "block",
         "sounds": [
-            "mi_sound_addon:electric_blast_furnace"
+            "mi_sound_addon:modern_industrialization/photosynthetic_chamber"
         ]
     },
-    "large_chemical_reactor": {
+    "modern_industrialization/greenhouse": {
+        "category": "block",
+        "sounds": ["mi_sound_addon:modern_industrialization/greenhouse"]
+    },
+    "modern_industrialization/mob_crusher": {
+        "category": "block",
+        "sounds": ["mi_sound_addon:modern_industrialization/mob_crusher"]
+    },
+    "modern_industrialization/boss_crusher": {
+        "category": "block",
+        "sounds": ["mi_sound_addon:modern_industrialization/mob_crusher"]
+    },
+    "modern_industrialization/arrayed_wiremill": {
+        "category": "block",
+        "sounds": ["mi_sound_addon:modern_industrialization/wiremill"]
+    },
+    "modern_industrialization/blast_alloy_smelter": {
         "category": "block",
         "sounds": [
-            "mi_sound_addon:chemical_reactor"
+            "mi_sound_addon:modern_industrialization/electric_blast_furnace"
         ]
     },
-    "mega_smelter": {
+    "modern_industrialization/bulk_compactor": {
+        "category": "block",
+        "sounds": ["mi_sound_addon:modern_industrialization/compressor"]
+    },
+    "modern_industrialization/colossal_blast_furnace": {
         "category": "block",
         "sounds": [
-            "mi_sound_addon:coke_oven"
+            "mi_sound_addon:modern_industrialization/electric_blast_furnace"
         ]
     },
-    "large_steam_furnace": {
+    "modern_industrialization/grand_mass_centrifuge": {
         "category": "block",
-        "sounds": [
-            "mi_sound_addon:blast_furnace"
-        ]
+        "sounds": ["mi_sound_addon:modern_industrialization/centrifuge"]
     },
-    "large_steam_macerator": {
+    "modern_industrialization/high_capacity_packer": {
         "category": "block",
-        "sounds": [
-            "mi_sound_addon:macerator"
-        ]
+        "sounds": ["mi_sound_addon:modern_industrialization/packer"]
     },
-    "core_drill": {
+    "modern_industrialization/high_capacity_unpacker": {
         "category": "block",
-        "sounds": [
-            "mi_sound_addon:fission_reactor"
-        ]
+        "sounds": ["mi_sound_addon:modern_industrialization/unpacker"]
     },
-    "space_probe_launcher": {
+    "modern_industrialization/industrial_mixing_machine": {
         "category": "block",
-        "sounds": [
-            "mi_sound_addon:space_probe_launcher"
-        ]
+        "sounds": ["mi_sound_addon:modern_industrialization/mixer"]
     },
-    "pyrolyse_oven": {
+    "modern_industrialization/large_chemical_reactor": {
         "category": "block",
-        "sounds": [
-            "mi_sound_addon:pyrolyse_oven"
-        ]
+        "sounds": ["mi_sound_addon:modern_industrialization/chemical_reactor"]
     },
-    "photosynthetic_chamber": {
+    "modern_industrialization/large_polarization_machine": {
         "category": "block",
-        "sounds": [
-            "mi_sound_addon:photosynthetic_chamber"
-        ]
+        "sounds": ["mi_sound_addon:modern_industrialization/polarizer"]
     },
-    "greenhouse": {
+    "modern_industrialization/large_scale_assembler": {
         "category": "block",
-        "sounds": [
-            "mi_sound_addon:greenhouse"
-        ]
+        "sounds": ["mi_sound_addon:modern_industrialization/assembler"]
     },
-    "mob_crusher": {
+    "modern_industrialization/multi_cutter": {
         "category": "block",
-        "sounds": [
-            "mi_sound_addon:mob_crusher"
-        ]
+        "sounds": ["mi_sound_addon:modern_industrialization/cutting_machine"]
     },
-    "boss_crusher": {
+    "modern_industrialization/oversized_electrolysis_chamber": {
         "category": "block",
-        "sounds": [
-            "mi_sound_addon:mob_crusher"
-        ]
+        "sounds": ["mi_sound_addon:modern_industrialization/electrolyzer"]
     }
 }

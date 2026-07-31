@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "x": {
-      "tag": "c:ingots/enderium"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "x": {
+            "tag": "c:ingots/enderium"
+        },
+        "y": {
+            "item": "modern_industrialization:enderium_ingot"
+        }
     },
-    "y": {
-      "item": "modern_industrialization:enderium_ingot"
+    "pattern": ["xxx", "xyx", "xxx"],
+    "result": {
+        "count": 1,
+        "id": "modern_industrialization:enderium_block"
     }
-  },
-  "pattern": [
-    "xxx",
-    "xyx",
-    "xxx"
-  ],
-  "result": {
-    "count": 1,
-    "id": "modern_industrialization:enderium_block"
-  }
 }

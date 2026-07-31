@@ -7,6 +7,9 @@ maxDistillationTowerHeight = 9
 #Enable the default trades from the Industrialist villager provided by MI.
 #Disable this to provide your own set of trades.
 defaultIndustrialistTrades = false
+#Enable to have transfer transactions include the name of the class that called it.
+#Note that this comes at the cost of performance. It is recommended to not use this outside of debugging.
+transactionCallerName = false
 
 [compat]
 	#Enable bidirectional energy compatibility with NeoForge's energy system.
@@ -21,6 +24,6 @@ defaultIndustrialistTrades = false
 
 [datagen]
 	#Run MI runtime datagen on startup.
-	datagenOnStartup = false 
+	datagenOnStartup = false
 	#Additionally load resources in modern_industrialization/generated_resources.
 	loadRuntimeGeneratedResources = false
