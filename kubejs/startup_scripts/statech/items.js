@@ -3,6 +3,22 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
+
+const toolSet = [
+        ['pickaxe', 'Pickaxe'],
+        ['axe', 'Axe'],
+        ['hoe', 'Hoe'],
+        ['sword', 'Sword'],
+        ['shovel', 'Shovel' ],
+    ];
+
+const armorSet = [
+        ['helmet', 'Helmet'],
+        ['chesplate', 'Cchesplate'],
+        ['leggings', 'Leggings'],
+        ['boots', 'Boots'],
+    ];
+
 ItemEvents.toolTierRegistry((event) => {
     event.add('bronze', (tier) => {
         tier.uses = 320;
@@ -34,6 +50,20 @@ StartupEvents.registry('armor_material', (event) => {
         .equipSound(`minecraft:item.armor.equip_iron`)
         .repairIngredient(() => Ingredient.of('#c:ingots/bronze'))
         .toughness(0)
+        .knockbackResistance(0);
+
+    event
+        .create(`steel`)
+        .defense({
+            helmet: 3,
+            chestplate: 7,
+            leggings: 5,
+            boots: 2,
+        })
+        .enchantmentValue(15)
+        .equipSound(`minecraft:item.armor.equip_iron`)
+        .repairIngredient(() => Ingredient.of('#c:ingots/steel'))
+        .toughness(1)
         .knockbackResistance(0);
 });
 
@@ -281,8 +311,6 @@ StartupEvents.registry('item', (event) => {
 
     // -- BRONZE EQUIPMENT -- //
 
-    event.create('bronze_axe', 'axe').displayName('Bronze Axe').tier('bronze');
-
     event
         .create('bronze_boots', 'boots')
         .displayName('Bronze Boots')
@@ -307,22 +335,43 @@ StartupEvents.registry('item', (event) => {
         .maxDamage(165)
         .material('kubejs:bronze');
 
-    event.create('bronze_hoe', 'hoe').displayName('Bronze Hoe').tier('bronze');
+    toolSet.forEach(tool => {
+        event
+            .create(`bronze_${tool[0]}`, `${tool[0]}`)
+            .displayName(`Bronze ${tool[1]}`)
+            .tier('bronze');
+        event
+            .create(`steel_${tool[0]}`, `${tool[0]}`)
+            .displayName(`Steel ${tool[1]}`)
+            .tier('steel');
+    })
+
+    // -- STEEL EQUIPMENT -- //
 
     event
-        .create('bronze_pickaxe', 'pickaxe')
-        .displayName('Bronze Pickaxe')
-        .tier('bronze');
+        .create('steel_boots', 'boots')
+        .displayName('Steel Boots')
+        .maxDamage(386)
+        .material('kubejs:steel');
 
     event
-        .create('bronze_shovel', 'shovel')
-        .displayName('Bronze Shovel')
-        .tier('bronze');
+        .create('steel_chestplate', 'chestplate')
+        .displayName('Steel Chestplate')
+        .maxDamage(475)
+        .material('kubejs:steel');
 
     event
-        .create('bronze_sword', 'sword')
-        .displayName('Bronze Sword')
-        .tier('bronze');
+        .create('steel_leggings', 'leggings')
+        .displayName('Steel Leggings')
+        .maxDamage(445)
+        .material('kubejs:steel');
+
+    event
+        .create('steel_helmet', 'helmet')
+        .displayName('Steel Helmet')
+        .maxDamage(326)
+        .material('kubejs:steel');
+
 });
 
 ItemEvents.modification((event) => {
@@ -350,16 +399,8 @@ ItemEvents.modification((event) => {
         // item.armorProtection = 2
     });
 
-    const toolSet = [
-        'pickaxe',
-        'axe',
-        'hoe',
-        'sword',
-        'shovel'        
-    ];
-
     toolSet.forEach((tool) => {
-        event.modify(`iron_${tool}`, item => {
+        event.modify(`iron_${tool[0]}`, item => {
             item.maxDamage = 225;
             // item.digSpeed = 5;
             item.attackDamage = 1.5

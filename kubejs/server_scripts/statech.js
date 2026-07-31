@@ -345,7 +345,79 @@ ServerEvents.recipes((event) => {
             B: '#c:rods/wooden',
         })
         .id(st('bronze_hoe'));
+    // ---------------------- //
+    // -- STEEL EQUIPMENT -- //
+    // ---------------------- //
+
+    // -- STEEL BOOTS -- //
+    event
+        .shaped(Item.of(kj('steel_boots')), ['   ', 'A A', 'A A'], {
+            A: '#c:ingots/steel',
+        })
+        .id(st('steel_boots'));
+
+    // -- STEEL CHESTPLATE -- //
+    event
+        .shaped(Item.of(kj('steel_chestplate')), ['A A', 'AAA', 'AAA'], {
+            A: '#c:ingots/steel',
+        })
+        .id(st('steel_chestplate'));
+
+    // -- STEEL LEGGINGS -- //
+    event
+        .shaped(Item.of(kj('steel_leggings')), ['AAA', 'A A', 'A A'], {
+            A: '#c:ingots/steel',
+        })
+        .id(st('steel_leggings'));
+
+    // -- STEEL HELMET -- //
+    event
+        .shaped(Item.of(kj('steel_helmet')), ['AAA', 'A A', '   '], {
+            A: '#c:ingots/steel',
+        })
+        .id(st('steel_helmet'));
+
+    // -- STEEL PICKAXE -- //
+    event
+        .shaped(Item.of(kj('steel_pickaxe')), ['AAA', ' B ', ' B '], {
+            A: '#c:ingots/steel',
+            B: '#c:rods/wooden',
+        })
+        .id(st('steel_pickaxe'));
+
+    // -- STEEL AXE -- //
+    event
+        .shaped(Item.of(kj('steel_axe')), ['AA ', 'AB ', ' B '], {
+            A: '#c:ingots/steel',
+            B: '#c:rods/wooden',
+        })
+        .id(st('steel_axe'));
+
+    // -- STEEL SHOVEL -- //
+    event
+        .shaped(Item.of(kj('steel_shovel')), [' A ', ' B ', ' B '], {
+            A: '#c:ingots/steel',
+            B: '#c:rods/wooden',
+        })
+        .id(st('steel_shovel'));
+
+    // -- STEEL SWORD -- //
+    event
+        .shaped(Item.of(kj('steel_sword')), [' A ', ' A ', ' B '], {
+            A: '#c:ingots/steel',
+            B: '#c:rods/wooden',
+        })
+        .id(st('steel_sword'));
+
+    // -- STEEL HOE -- //
+    event
+        .shaped(Item.of(kj('steel_hoe')), ['AA ', ' B ', ' B '], {
+            A: '#c:ingots/steel',
+            B: '#c:rods/wooden',
+        })
+        .id(st('steel_hoe'));
 });
+
 
 ServerEvents.tags('item', (event) => {
     const COINS = [
