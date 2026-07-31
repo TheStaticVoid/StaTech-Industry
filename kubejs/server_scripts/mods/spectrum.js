@@ -257,6 +257,37 @@ ServerEvents.recipes((event) => {
     // ---- FUSION SHRINE ---- //
     // ------------------------//
 
+    // -- ENDER EYE -- //
+    fusion_shrine(
+        event,
+        st('early_ender_eye'),
+        1200,
+        30,
+        [
+            { item: mc('ender_pearl'), count: 1 },
+            { item: sp('onyx_powder'), count: 32 },
+            { item: sp('purple_pigment'), count: 32 },
+        ],
+        {
+            id: mc('ender_eye'),
+        },
+        { fluid: ei('blazing_essence') },
+        [
+            {
+                type: 'time_of_day',
+                time: 'noon',
+            },
+        ],
+        'nothing',
+        [
+            'visual_explosions_on_shrine',
+            'nothing',
+            'visual_explosions_on_shrine',
+        ],
+        'legendary_tool_craft',
+        sp('create_onyx_shard')
+    );
+
     // -- EVERLASTING BEEF -- //
     fusion_shrine(
         event,
