@@ -2,6 +2,7 @@ name: Build Project
 run-name: "Project Build #${{ github.run_number }}"
 on:
   workflow_dispatch:
+  push:
   pull_request:
     branches:
       - main
@@ -106,7 +107,6 @@ jobs:
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           echo "Downloaded pakku.jar "
-              - name: Download pakku.jar
         
       - name: Download Forge Server Starter
         id: download_serverstarter
