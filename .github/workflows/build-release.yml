@@ -309,7 +309,7 @@ jobs:
         uses: devops-infra/action-pull-request@v0.6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_branch: dev
+          source_branch: ${{ github.head_ref }}
           target_branch: main
           #milestone: ${{ steps.changelog.outputs.version }} # Change this! (if you plan on using milestones)
           ignore_users: "dependabot"
