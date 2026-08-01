@@ -19,7 +19,7 @@ ItemEvents.foodEaten((event) => {
      
 
     EatenOutputs.forEach((eatenOutput) => {
-        if (event.getItem() == Item.of(eatenOutput[0])) {
+        if (event.getItem().id == eatenOutput[0]) {
             event.getPlayer().addItem(Item.of(eatenOutput[1]));
         }
     });

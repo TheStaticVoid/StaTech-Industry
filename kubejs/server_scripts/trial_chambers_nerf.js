@@ -2,25 +2,25 @@ MoreJS.structureLoad((event) => {
     if (event.id.includes('trial_chambers')) {
         event.forEachPalettes((palette) => {
             palette.forEach((blockInfo) => {
-                if (blockInfo.id == 'minecraft:jigsaw') {
+                if (blockInfo.id == 'minecraft:jigsaw' && blockInfo.getNbt() != null) {
                     if (
-                        blockInfo.getNbt().get('final_state') ==
+                        blockInfo.getNbt().getString('final_state') ==
                         'minecraft:waxed_oxidized_copper'
                     )
                         blockInfo
-                            .nbt()
+                            .getNbt()
                             .putString(
                                 'final_state',
                                 'kubejs:decorative_waxed_oxidized_copper'
                             );
                 }
-                if (blockInfo.id == 'minecraft:jigsaw') {
+                if (blockInfo.id == 'minecraft:jigsaw' && blockInfo.getNbt() != null) {
                     if (
-                        blockInfo.getNbt().get('final_state') ==
+                        blockInfo.getNbt().getString('final_state') ==
                         'minecraft:waxed_copper_block'
                     )
                         blockInfo
-                            .nbt()
+                            .getNbt()
                             .putString(
                                 'final_state',
                                 'kubejs:decorative_waxed_copper_block'
