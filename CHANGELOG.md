@@ -2,7 +2,7 @@
 
 ## [2.0.0-rc2]
 
-This update is just one last test before full release, and if no further breaking bugs are found, that should come in hte next couple of days. 
+This update is just one last test before full release, and if no further breaking bugs are found, that should come in the next couple of days. 
 
 It took a lot of effort by both myself (@GW-Dev) and by @truepurpledino (again), but @fmbellomy really helped out a lot with migrating to Pakku and cleaning up a lot of the technical debt. Most of the work has been on cleaning up the backend, though some bug fixes and tweaks were also done.
 
