@@ -26,58 +26,13 @@ MIMachineEvents.registerMachines((e) => {
 
     const quantumSpaceProbeBuilder = e
         .layeredShape('calorite_machine_casing', [
-            // y=
-            [
-                ' ccc ',
-                '  c  ',
-                '  c  ',
-                '     ',
-                '     ',
-                '     ',
-                '     ',
-                '     ',
-            ],
-            [
-                'cCCCc',
-                ' CPC ',
-                ' CPC ',
-                '  T  ',
-                '  T  ',
-                '  T  ',
-                '  T  ',
-                '  T  ',
-            ],
-            [
-                'cCCCc',
-                'cPPPc',
-                'cPPPc',
-                ' T T ',
-                ' T T ',
-                ' T T ',
-                ' T T ',
-                ' T T ',
-            ],
-            [
-                'cCCCc',
-                ' CPC ',
-                ' CPC ',
-                '  T  ',
-                '  T  ',
-                '  T  ',
-                '  T  ',
-                '  T  ',
-            ],
-            [
-                ' ccc ',
-                '  #  ',
-                '  c  ',
-                '     ',
-                '     ',
-                '     ',
-                '     ',
-                '     ',
-            ],
-        ])
+        //y=
+        [ ' ccc ', '  c  ', '  c  ', '     ', '     ', '     ', '     ', '     ' ],
+        [ 'cCCCc', ' CPC ', ' CPC ', '  T  ', '  T  ', '  T  ', '  T  ', '  T  ' ],
+        [ 'cCCCc', 'cPPPc', 'cPPPc', ' T T ', ' T T ', ' T T ', ' T T ', ' T T ' ],
+        [ 'cCCCc', ' CPC ', ' CPC ', '  T  ', '  T  ', '  T  ', '  T  ', '  T  ' ],
+        [ ' ccc ', '  #  ', '  c  ', '     ', '     ', '     ', '     ', '     ' ]
+    ])
         .key('C', caloriteCasing, e.noHatch())
         .key('c', caloriteCasing, spaceProbeHatch)
         .key('P', caloritePipeCasing, e.noHatch())
