@@ -22,8 +22,8 @@ MIMachineEvents.registerMachines((event) => {
     );
     const steelCasing = event.memberOfBlock(mi('steel_machine_casing'));
     const glass = event.memberOfBlock(mc('glass'));
-    const metalBox = event.memberOfBlock(fb('metalbox'));
-    const rustyScaffold = event.memberOfBlock(fb('rusty_scaffold'));
+    const metalBox = event.memberOfBlock('factory_blocks:metalbox');
+    const rustyScaffold = event.memberOfBlock('factory_blocks:rusty_scaffold');
     const glowstone = event.memberOfBlock(mc('glowstone'));
     const grass = event.memberOfBlock(mc('grass_block'));
     const log = event.memberOfBlock(mc('oak_log'));
