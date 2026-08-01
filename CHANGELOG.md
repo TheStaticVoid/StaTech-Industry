@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.0rc2]
+## [2.0.0-rc2]
 
 This update is just one last test before full release, and if no further breaking bugs are found, that should come in hte next couple of days. 
 
@@ -39,5 +39,5 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
  - [#604](https://github.com/TheStaticVoid/StaTech-Industry/issues/604)
  - [#605](https://github.com/TheStaticVoid/StaTech-Industry/issues/605)
 
-## [2.0.0rc1]
+## [2.0.0-rc1]
  - Initial release

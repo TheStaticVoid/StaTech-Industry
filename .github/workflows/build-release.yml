@@ -106,7 +106,6 @@ jobs:
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           echo "Downloaded pakku.jar "
-              - name: Download pakku.jar
         
       - name: Download Forge Server Starter
         id: download_serverstarter
@@ -309,7 +308,7 @@ jobs:
         uses: devops-infra/action-pull-request@v0.6.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_branch: dev
+          source_branch: ${{ github.head_ref }}
           target_branch: main
           #milestone: ${{ steps.changelog.outputs.version }} # Change this! (if you plan on using milestones)
           ignore_users: "dependabot"
@@ -421,9 +420,11 @@ jobs:
           mkdir -p .pakku/multimc-overrides/mods
 
       - name: Preparing the curseforge artifact
+        env:
+          FILE_NAME: ${{ needs.info.outputs.project_file_name }}
         run: |
           cd ./build/curseforge/
-          mv *.zip "$(basename -s .zip *.zip)-curseforge.zip"
+          mv *.zip "${FILE_NAME}-curseforge.zip"
           
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.6.2
@@ -433,9 +434,11 @@ jobs:
           if-no-files-found: error
 
       - name: Preparing the server artifact
+        env:
+          FILE_NAME: ${{ needs.info.outputs.project_file_name }}
         run: |
           cd ./build/serverpack/
-          mv *.zip "$(basename -s .zip *.zip)-serverpack.zip"
+          mv *.zip "${FILE_NAME}-serverpack.zip"
 
       - name: Upload server artifact
         uses: actions/upload-artifact@v4.6.2
