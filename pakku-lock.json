@@ -995,6 +995,47 @@
             ]
         },
         {
+            "pakku_id": "fy0QHXI3RFHypNRO",
+            "pakku_links": [
+                "Jb13Ji6au0RNpzSB"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "betterf3"
+            },
+            "name": {
+                "curseforge": "BetterF3"
+            },
+            "id": {
+                "curseforge": "401648"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "BetterF3-11.0.3-NeoForge-1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/5873/258/BetterF3-11.0.3-NeoForge-1.21.1.jar",
+                    "id": "5873258",
+                    "parent_id": "401648",
+                    "hashes": {
+                        "sha1": "8fa17df26d3650416bc124be7a264bc1566a3b26",
+                        "md5": "ece6a3a01373146d2f351ba721e0083d"
+                    },
+                    "required_dependencies": [
+                        "348521"
+                    ],
+                    "size": 481646,
+                    "date_published": "2024-11-04T00:45:07.780Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "02eKaJsCnv3KUlTC",
             "pakku_links": [
                 "fiWqQp9sNNAeedA3"
@@ -8053,6 +8094,7 @@
                 "dYe9klyJGQUqoOfw"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "sodium-extra"
             },

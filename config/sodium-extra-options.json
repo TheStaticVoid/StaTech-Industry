@@ -1,0 +1,83 @@
+{
+  "animation_settings": {
+    "animation": true,
+    "water": true,
+    "lava": true,
+    "fire": true,
+    "portal": true,
+    "block_animations": true,
+    "sculk_sensor": true
+  },
+  "particle_settings": {
+    "particles": true,
+    "rain_splash": true,
+    "block_break": true,
+    "block_breaking": true,
+    "other": {}
+  },
+  "detail_settings": {
+    "sky": true,
+    "sun": true,
+    "moon": true,
+    "stars": true,
+    "rain_snow": true,
+    "biome_colors": true,
+    "sky_colors": true
+  },
+  "render_settings": {
+    "fog_settings": {
+      "advanced": false,
+      "multi_dimension_fog_control": false,
+      "atmospheric": {
+        "distance_chunks": 0,
+        "start_percent": 100,
+        "shape_mode": "VANILLA",
+        "cloud_fog_percent": 100
+      },
+      "dimension_overrides": {},
+      "protected_gameplay": {
+        "enabled_when_allowed": false,
+        "blindness_distance_blocks": 0,
+        "darkness_distance_blocks": 0,
+        "lava_distance_blocks": 0,
+        "powder_snow_distance_blocks": 0,
+        "water_distance_blocks": 0
+      }
+    },
+    "light_updates": true,
+    "item_frame": true,
+    "armor_stand": true,
+    "painting": true,
+    "piston": true,
+    "beacon_beam": true,
+    "limit_beacon_beam_height": false,
+    "enchanting_table_book": true,
+    "item_frame_name_tag": true,
+    "player_name_tag": true
+  },
+  "extra_settings": {
+    "overlay_corner": "TOP_LEFT",
+    "text_contrast": "NONE",
+    "show_fps": false,
+    "show_f_p_s_extended": true,
+    "show_coords": false,
+    "reduce_resolution_on_mac": false,
+    "wayland_fullscreen_resolution": false,
+    "wayland_fullscreen_resolution_recovery_pending": false,
+    "use_adaptive_sync": false,
+    "cloud_height_override": false,
+    "cloud_height": 192,
+    "cloud_distance": 100,
+    "toasts": true,
+    "advancement_toast": true,
+    "recipe_toast": true,
+    "system_toast": true,
+    "tutorial_toast": true,
+    "instant_sneak": false,
+    "prevent_shaders": false,
+    "panini_projection": false,
+    "panini_projection_strength": 25,
+    "steady_debug_hud": true,
+    "steady_debug_hud_refresh_interval": 1
+  }
+}

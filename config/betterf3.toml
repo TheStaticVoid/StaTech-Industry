@@ -1,0 +1,122 @@
+general = {disable_mod = false, auto_start = false, space_modules = false, shadow_text = true, animations = true, animationSpeed = 1.0, fontScale = 1.0, background_color = 1867534416, hide_debug_crosshair = false, hide_sidebar = true, hide_bossbar = true, always_show_profiler = false, always_show_tps = false, always_show_ping = false}
+[[modules_left]]
+	name = "minecraft"
+	name_color = 10506797
+	value_color = 43520
+	enabled = true
+	lines = {minecraft = true}
+[[modules_left]]
+	name = "fps"
+	color_high = 5635925
+	color_med = 16777045
+	color_low = 16733525
+	enabled = true
+	lines = {fps = true}
+[[modules_left]]
+	name = "empty"
+	empty_lines = 1
+	enabled = true
+	lines = {nothing = true}
+[[modules_left]]
+	name = "graphics"
+	name_color = 16755200
+	value_color = 5636095
+	enabled = true
+	lines = {render_distance = true, graphics = false, clouds = false, biome_blend_radius = false, shader = true}
+[[modules_left]]
+	name = "server"
+	name_color = 11184810
+	value_color = 16777045
+	enabled = true
+	lines = {server_tick = true, packets_sent = true, packets_received = true, tick_manager_status = true}
+[[modules_left]]
+	name = "empty"
+	empty_lines = 1
+	enabled = true
+	lines = {nothing = true}
+[[modules_left]]
+	name = "coords"
+	name_color = 16733525
+	color_x = 16733525
+	color_y = 5635925
+	color_z = 5636095
+	enabled = true
+	lines = {player_coords = true, block_coords = true, chunk_relative_coords = false, chunk_coords = false, velocity = true, absolute_velocity = false, horizontal_velocity = false}
+[[modules_left]]
+	name = "empty"
+	empty_lines = 1
+	enabled = true
+	lines = {nothing = true}
+[[modules_left]]
+	name = "chunks"
+	name_color = 43775
+	value_color = 16777045
+	chunks_enabled_color = 5635925
+	chunks_disabled_color = 16733525
+	total_chunks_color = 16755200
+	enabled = true
+	lines = {chunk_sections = true, chunk_culling = true, pending_chunks = true, pending_uploads = true, available_buffers = true, client_chunk_cache = true, loaded_chunks = false, loaded_chunks_server = true, forceloaded_chunks = true, spawn_chunks = true, chunk_file = true}
+[[modules_left]]
+	name = "empty"
+	empty_lines = 1
+	enabled = true
+	lines = {nothing = true}
+[[modules_left]]
+	name = "location"
+	name_color = 43520
+	value_color = 5636095
+	enabled = true
+	lines = {dimension = true, facing = false, rotation = false, light = false, light_server = true, highest_block = false, highest_block_server = true, biome = true, local_difficulty = true, day_ticks = true, days_played = true, slime_chunk = true}
+[[modules_left]]
+	name = "empty"
+	empty_lines = 1
+	enabled = true
+	lines = {nothing = true}
+[[modules_left]]
+	name = "entity"
+	name_color = 16733525
+	value_color = 16777045
+	total_entities_color = 16755200
+	enabled = true
+	lines = {particles = true, entities = true, monster = false, creature = false, ambient = false, axolotls = false, underground_water_creature = false, water_creature = false, water_ambient = false, misc = false}
+[[modules_left]]
+	name = "empty"
+	empty_lines = 1
+	enabled = true
+	lines = {nothing = true}
+[[modules_left]]
+	name = "sound"
+	name_color = 16755200
+	value_color = 5636095
+	maximum_color = 43690
+	enabled = true
+	lines = {sounds = true, ambient_sounds = true, mood = true}
+
+[[modules_right]]
+	name = "system"
+	name_color = 16755200
+	value_color = 5636095
+	enabled = true
+	lines = {time = true, java_version = true, memory_usage = true, allocation_rate = true, allocated_memory = true, cpu = true, display = true, gpu = true, gpu_utilization = true, opengl_version = true, gpu_driver = true}
+[[modules_right]]
+	name = "empty"
+	empty_lines = 1
+	enabled = true
+	lines = {nothing = true}
+[[modules_right]]
+	name = "miscright"
+	name_color = 16645526
+	value_color = 5636095
+	enabled = true
+	lines = {misc_right = true}
+[[modules_right]]
+	name = "empty"
+	empty_lines = 1
+	enabled = true
+	lines = {nothing = true}
+[[modules_right]]
+	name = "target"
+	name_color = 43775
+	value_color = 16777045
+	enabled = true
+	lines = {targeted_block = true, id_block = true, block_states = true, block_tags = false, nothing = true, targeted_fluid = true, id_fluid = true, fluid_states = true, fluid_tags = false, nothing2 = false, targeted_entity = true}
