@@ -502,7 +502,6 @@ jobs:
             ${{ steps.format_diff.outputs.text }}
           files: |
             ${{ needs.info.outputs.project_file_name }}-curseforge.zip
-            ${{ needs.info.outputs.project_file_name }}-modrinth.mrpack
             ${{ needs.info.outputs.project_file_name }}-serverpack.zip
           prerelease: ${{ needs.info.outputs.release_type != 'release' }}
           generate_release_notes: true
@@ -553,7 +552,7 @@ jobs:
           modpack-server-path: ${{ needs.info.outputs.project_file_name }}-serverpack.zip
           changelog: |
             ${{ needs.info.outputs.changelog }}
-            ${{ needs.info.outputs.diff }}
+            ${{ steps.format_diff.outputs.text }}
           changelog-format: markdown
           game-version: ${{ needs.info.outputs.mc_version }}
           release-type: ${{ needs.info.outputs.release_type }}
