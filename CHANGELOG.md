@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.0.0-rc3]
+
+Fixes a couple breaking bugs.
+
 ## [2.0.0-rc2]
 
 This update is just one last test before full release, and if no further breaking bugs are found, that should come in the next couple of days. 

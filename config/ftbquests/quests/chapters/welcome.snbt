@@ -11,6 +11,7 @@
 	images: [
 		{
 			height: 6.0d
+			id: "7C9A7F0E3EA72FB1"
 			image: "stcm:item/mm_logo"
 			rotation: 0.0d
 			width: 6.0d
@@ -18,12 +19,9 @@
 			y: -7.0d
 		}
 		{
-			click: "https://discord.com/invite/RDaJEnN3uS"
+			click_action: "open_uri:https://discord.com/invite/RDaJEnN3uS"
 			height: 1.5d
-			hover: [
-				"Find yourself stuck and need help?"
-				"Or if you just want to chat, come join the Discord!"
-			]
+			id: "4D355C7A7B8FAA28"
 			image: "stcm:item/discordlogo"
 			rotation: 0.0d
 			width: 1.5d

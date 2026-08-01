@@ -22,80 +22,23 @@ MIMachineEvents.registerMachines((event) => {
     );
     const steelCasing = event.memberOfBlock(mi('steel_machine_casing'));
     const glass = event.memberOfBlock(mc('glass'));
-    const metalBox = event.memberOfBlock(fb('metalbox'));
-    const rustyScaffold = event.memberOfBlock(fb('rusty_scaffold'));
+    const metalBox = event.memberOfBlock('factory_blocks:metalbox');
+    const rustyScaffold = event.memberOfBlock('factory_blocks:rusty_scaffold');
     const glowstone = event.memberOfBlock(mc('glowstone'));
     const grass = event.memberOfBlock(mc('grass_block'));
     const log = event.memberOfBlock(mc('oak_log'));
     const leaves = event.memberOfBlock(mc('oak_leaves'));
     const dirt = event.memberOfBlock(mc('dirt'));
     //      0           1           2           3         4          5          6
-    const greenhouseShape = event
-        .layeredShape('steel', [
-            [
-                '  SSS  ',
-                '  GGG  ',
-                '  GGG  ',
-                '  GGG  ',
-                '  RRR  ',
-                '       ',
-                '       ',
-            ],
-            [
-                ' SAAAS ',
-                ' M   M ',
-                ' M   M ',
-                ' M   M ',
-                ' M   M ',
-                '  GGG  ',
-                '       ',
-            ],
-            [
-                'SAAAAAS',
-                'G     G',
-                'G  L  G',
-                'G  L  G',
-                'R     R',
-                ' G   G ',
-                '  GGG  ',
-            ],
-            [
-                'SAADAAS',
-                'G  W  G',
-                'G LWL G',
-                'G LWL G',
-                'R  L  R',
-                ' G   G ',
-                '  GOG  ',
-            ],
-            [
-                'SAAAAAS',
-                'G     G',
-                'G  L  G',
-                'G  L  G',
-                'R     R',
-                ' G   G ',
-                '  GGG  ',
-            ],
-            [
-                ' SAAAS ',
-                ' M   M ',
-                ' M   M ',
-                ' M   M ',
-                ' M   M ',
-                '  GGG  ',
-                '       ',
-            ],
-            [
-                '  S#S  ',
-                '  GGG  ',
-                '  GGG  ',
-                '  GGG  ',
-                '  RRR  ',
-                '       ',
-                '       ',
-            ],
-        ])
+    const greenhouseShape = event.layeredShape('steel', [
+        [ '  SSS  ', '  GGG  ', '  GGG  ', '  GGG  ', '  RRR  ', '       ', '       ' ],
+        [ ' SAAAS ', ' M   M ', ' M   M ', ' M   M ', ' M   M ', '  GGG  ', '       ' ],
+        [ 'SAAAAAS', 'G     G', 'G  L  G', 'G  L  G', 'R     R', ' G   G ', '  GGG  ' ],
+        [ 'SAADAAS', 'G  W  G', 'G LWL G', 'G LWL G', 'R  L  R', ' G   G ', '  GOG  ' ],
+        [ 'SAAAAAS', 'G     G', 'G  L  G', 'G  L  G', 'R     R', ' G   G ', '  GGG  ' ],
+        [ ' SAAAS ', ' M   M ', ' M   M ', ' M   M ', ' M   M ', '  GGG  ', '       ' ],
+        [ '  S#S  ', '  GGG  ', '  GGG  ', '  GGG  ', '  RRR  ', '       ', '       ' ]
+    ])
         .key('S', steelCasing, greenhouseHatch)
         .key('A', grass, event.noHatch())
         .key('M', metalBox, event.noHatch())

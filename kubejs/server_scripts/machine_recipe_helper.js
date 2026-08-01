@@ -453,7 +453,7 @@ let cryogenicPrecipitator = (
  * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
 let cuttingMachine = (event, id, eu, duration, item_inputs, item_outputs) => {
-    let lubricant = { amount: 10, fluid: mi('lubricant') };
+    let lubricant = [{ amount: 10, fluid: mi('lubricant') }];
     event
         .custom(
             newMachineRecipe(
