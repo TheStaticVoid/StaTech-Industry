@@ -13,13 +13,13 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }} 
+  DEV_ENVIRONMENT: ${{ github.ref_name != 'main' }}
 
-jobs:    
+jobs:
   info:
     name: Project Info
     runs-on: ubuntu-latest
-    if: ${{  github.repository_owner == 'TheStaticVoid' }} 
+    if: ${{  github.repository_owner == 'TheStaticVoid' }}
     outputs:
       project_version: ${{ steps.check.outputs.project_version }}
       project_name: ${{ steps.check.outputs.project_name }}
@@ -43,7 +43,7 @@ jobs:
         uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
-        
+
       - name: Check pakku-lock.json
         id: check_pakku_lock
         shell: bash
@@ -53,7 +53,7 @@ jobs:
           else
             echo "pakku-lock.json"
           fi
-        
+
       - name: Check pakku.json
         id: check_pakku
         shell: bash
@@ -63,7 +63,7 @@ jobs:
           else
             echo "pakku.json"
           fi
-        
+
       - name: Get latest tag
         id: latest_tag
         shell: bash
@@ -75,7 +75,7 @@ jobs:
             echo "Latest tag found: $tag"
             echo "tag=$tag" >> $GITHUB_OUTPUT
           fi
-        
+
       - name: Check pakku-lock.json in previous tag
         id: check_pakku_lock_prev
         shell: bash
@@ -99,7 +99,7 @@ jobs:
           else
             echo "Error: File pakku-lock-prev.json is empty or not created" && exit 1
           fi
-          
+
       - name: Download pakku.jar
         id: download_pakku
         if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
@@ -107,13 +107,6 @@ jobs:
         run: |
           curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
           echo "Downloaded pakku.jar "
-        
-      - name: Download Forge Server Starter
-        id: download_serverstarter
-        shell: bash
-        run: |
-          curl https://github.com/HellBz/Forge-Server-Starter/releases/latest/download/minecraft_server.jar -o .pakku/server-overrides/minecraft_server.jar -L -J
-          echo "Downloaded minecraft_server.jar"
 
       - name: Run pakku diff
         id: pakku_diff
@@ -126,7 +119,7 @@ jobs:
           else
             echo "Error: File PROJECTS_DIFF.md not created" && exit 1
           fi
-          
+
       - name: Read PROJECTS_DIFF.md to variable
         id: read_diff
         shell: bash
@@ -179,7 +172,7 @@ jobs:
           else
           echo "present=true" >> $GITHUB_OUTPUT
           fi
-          
+
       - name: Changelog Dev Parser
         id: changelog_dev
         if: ${{ env.DEV_ENVIRONMENT == 'true' }}
@@ -188,7 +181,7 @@ jobs:
           path: CHANGELOG.md
           version: "unreleased"
         continue-on-error: true
-        
+
       - name: Changelog Parser
         id: changelog
         uses: coditory/changelog-parser@v1.0.2
@@ -256,18 +249,17 @@ jobs:
             **Tag Exists**: `${{ steps.check.outputs.exists }}`
             **Make Pull Request**: `${{ steps.check.outputs.make_pr }}`
             **Make Release**: `${{ steps.check.outputs.make_release }}`
-            
+
 
             ${{ steps.changelog_dev.outputs.description }}
             ${{ steps.format_diff.outputs.text }}
-  
+
   create-pr:
     name: Create Release PR
     needs: [info]
     if: ${{ needs.info.outputs.make_pr == 'true' }}
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout
         uses: actions/checkout@v5.0.0
         with:
@@ -311,10 +303,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_branch: ${{ github.head_ref }}
           target_branch: main
-          #milestone: ${{ steps.changelog.outputs.version }} # Change this! (if you plan on using milestones)
           ignore_users: "dependabot"
           draft: true
-          title: 'Release: ${{ steps.changelog.outputs.version }}'
+          title: "Release: ${{ steps.changelog.outputs.version }}"
           body: |
             **This is an automated Pull Request from the dev branch.**
             **Name**: ${{ needs.info.outputs.project_name }}
@@ -323,9 +314,9 @@ jobs:
             **Loader**: `${{ needs.info.outputs.loader_type }}-${{ needs.info.outputs.loader_version }}`
 
             ${{ needs.info.outputs.changelog }}
-      
+
   update-mmc-pack:
-    name: Update MMC-Pack 
+    name: Update MMC-Pack
     needs: [info]
     runs-on: ubuntu-latest
     if: needs.info.outputs.pakku-lock_changed == 'true'
@@ -339,14 +330,14 @@ jobs:
       - name: Get formatted loader name and UID
         id: check-loader
         run: |
-            case "${{ needs.info.outputs.loader_type }}" in
-              "forge")
-                  echo "uid=net.minecraftforge" >> $GITHUB_OUTPUT
-                  ;;
-              "neoforge")
-                  echo "uid=net.neoforged" >> $GITHUB_OUTPUT
-                  ;;
-              esac
+          case "${{ needs.info.outputs.loader_type }}" in
+            "forge")
+                echo "uid=net.minecraftforge" >> $GITHUB_OUTPUT
+                ;;
+            "neoforge")
+                echo "uid=net.neoforged" >> $GITHUB_OUTPUT
+                ;;
+            esac
 
       - name: Update mmc-pack.json
         run: |
@@ -386,7 +377,7 @@ jobs:
 
       - name: Replace strings with version # Replaces the word "DEV" in the file with the version number, two examples of uses in a modpack are commented below, add as needed.
         shell: bash
-        run: | 
+        run: |
           set +e
 
           VERSION=${{ needs.info.outputs.project_version }}
@@ -395,7 +386,7 @@ jobs:
           MINECRAFT_VERSION=${{ needs.info.outputs.mc_version }}
 
           sed -i -e "s/DEV/${VERSION}/g" pakku.json
-          
+
           # sed -i -e "s/DEV/${VERSION}/g" config/mod-director/modpack.json
           # sed -i -e "s/DEV/${VERSION}/g" config/fancymenu/customization/gui_main_menu.txt
 
@@ -410,6 +401,13 @@ jobs:
           path: build/.cache
           key: pakku-cache-${{ hashFiles('pakku-lock.json') }}
           restore-keys: pakku-cache-
+
+      - name: Download Forge Server Starter
+        id: download_serverstarter
+        shell: bash
+        run: |
+          curl https://github.com/HellBz/Forge-Server-Starter/releases/latest/download/minecraft_server.jar -o .pakku/server-overrides/minecraft_server.jar -L -J
+          echo "Downloaded minecraft_server.jar"
 
       - name: Export modpack
         run: |
@@ -426,7 +424,7 @@ jobs:
         run: |
           cd ./build/curseforge/
           mv *.zip "${FILE_NAME}-curseforge.zip"
-          
+
       - name: Upload artifact CurseForge
         uses: actions/upload-artifact@v4.6.2
         with:
@@ -521,7 +519,7 @@ jobs:
         run: |
           if [ "${{ secrets.CURSEFORGE_TOKEN }}" == '' ]; then
             echo '::error::No value found for secret key `CURSEFORGE_TOKEN`. See https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository' && exit 1
-          fi  
+          fi
 
       - name: Download artifact
         uses: actions/download-artifact@v5.0.0
@@ -567,8 +565,8 @@ jobs:
         id: truncated
         uses: cisox/read-more-action@v1.0.2
         with:
-          text: '${{ needs.info.outputs.changelog }}'
-          max_chars: '1450'
+          text: "${{ needs.info.outputs.changelog }}"
+          max_chars: "1450"
 
       - name: Send Discord message
         uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
@@ -581,7 +579,7 @@ jobs:
             **Release**: `${{ needs.info.outputs.project_full_name }}`
             **Release Type**: `${{ needs.info.outputs.release_type }}`
             **Game Version**: `${{ needs.info.outputs.mc_version }}`
-          
+
             [CurseForge](https://www.curseforge.com/minecraft/modpacks/template-pack/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
             ```markdown
             ${{ steps.truncated.outputs.text  }}
