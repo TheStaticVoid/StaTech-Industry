@@ -15,20 +15,11 @@ ServerEvents.recipes((event) => {
         recipesToRemove.push(recipe.getId());
         let recipeJson = recipe.json;
         let inputs = recipeJson.get('fluid_inputs');
-        let amount;
 
-        if (inputs.get(0) != null) {
-            amount = inputs.get(0).get('amount');
-            if (amount == 1) {
-                recipeJson
-                    .get('fluid_inputs')
-                    .get(0)
-                    .add('amount', lubricantAmount);
-            }
-        } else {
-            amount = inputs.get('amount');
-            if (amount == 1) {
-                recipeJson.get('fluid_inputs').add('amount', lubricantAmount);
+        if (inputs != null && inputs.isJsonArray() && inputs.getAsJsonArray().size() > 0) {
+            let firstInput = inputs.getAsJsonArray().get(0).getAsJsonObject();
+            if (firstInput.has('amount') && firstInput.get('amount').getAsInt() == 1) {
+                firstInput.addProperty('amount', lubricantAmount);
             }
         }
         event.custom(recipeJson).id(st(recipe.getPath()));
