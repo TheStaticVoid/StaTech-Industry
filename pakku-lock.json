@@ -8,45 +8,6 @@
     },
     "projects": [
         {
-            "pakku_id": "8Vq2HYObkAR3qN9H",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "chloride"
-            },
-            "name": {
-                "curseforge": "(Sodium) Chloride"
-            },
-            "id": {
-                "curseforge": "931925"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "chloride-NEOFORGE-mc1.21.1-v1.8.1.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8462/29/chloride-NEOFORGE-mc1.21.1-v1.8.1.jar",
-                    "id": "8462029",
-                    "parent_id": "931925",
-                    "hashes": {
-                        "sha1": "50454011525e2862678b15d94484fd32a5a54dfb",
-                        "md5": "ed1cc4210fc6d0b992ec92aab2f309a2"
-                    },
-                    "required_dependencies": [
-                        "394468"
-                    ],
-                    "size": 527889,
-                    "date_published": "2026-07-19T02:25:07.413Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "hXQ60jNUw1AH8Xtp",
             "type": "RESOURCE_PACK",
             "slug": {
@@ -1294,51 +1255,6 @@
                     ],
                     "size": 57614,
                     "date_published": "2026-07-28T15:26:40.087Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "91kBEs54Mg9aLFfY",
-            "pakku_links": [
-                "AjYKRRphpjTNFZvW",
-                "azgcavgLkRtvBtBc",
-                "ogqTPcymy5fQQeO7"
-            ],
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "certain-questing-additions"
-            },
-            "name": {
-                "curseforge": "Certain Questing Additions"
-            },
-            "id": {
-                "curseforge": "1372051"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "certain_questing_additions-neoforge-1.2.0.3+mc1.21.1.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8385/714/certain_questing_additions-neoforge-1.2.0.3+mc1.21.1.jar",
-                    "id": "8385714",
-                    "parent_id": "1372051",
-                    "hashes": {
-                        "sha1": "1fb69b21cb2b56633514df5553f7f0d506b0d825",
-                        "md5": "87689a3c250a116e442a3acf1591309a"
-                    },
-                    "required_dependencies": [
-                        "419699",
-                        "289412"
-                    ],
-                    "size": 589428,
-                    "date_published": "2026-07-07T07:43:08.340Z"
                 }
             ]
         },
@@ -8128,6 +8044,90 @@
                     "required_dependencies": [],
                     "size": 1292065,
                     "date_published": "2026-07-30T00:45:13.967Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "8nhaNAZXM94G3QeV",
+            "pakku_links": [
+                "dYe9klyJGQUqoOfw"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "sodium-leaf-culling"
+            },
+            "name": {
+                "curseforge": "Sodium Leaf Culling"
+            },
+            "id": {
+                "curseforge": "1089479"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sodiumleafculling-neoforge-1.0.1-1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6394/121/sodiumleafculling-neoforge-1.0.1-1.21.1.jar",
+                    "id": "6394121",
+                    "parent_id": "1089479",
+                    "hashes": {
+                        "sha1": "88fa8f0042f9037a81bb500f5e950ffae1ab95f3",
+                        "md5": "2f1babbab7b9f3ccc307019c9f52313f"
+                    },
+                    "required_dependencies": [
+                        "394468"
+                    ],
+                    "size": 224869,
+                    "date_published": "2025-04-07T04:30:55.967Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "SidmUJziWTKQrEBi",
+            "pakku_links": [
+                "gKH1eHZux7LTOrRC",
+                "dYe9klyJGQUqoOfw"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "magnesium-extras"
+            },
+            "name": {
+                "curseforge": "Sodium/Embeddium Extras"
+            },
+            "id": {
+                "curseforge": "558905"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sodiumextras-neoforge-1.0.8-1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6394/141/sodiumextras-neoforge-1.0.8-1.21.1.jar",
+                    "id": "6394141",
+                    "parent_id": "558905",
+                    "hashes": {
+                        "sha1": "d678f6eb28fec11f3e99bc7f17f5e385703bc44a",
+                        "md5": "acbf3c92a89bcd595e7c0c668fc7309f"
+                    },
+                    "required_dependencies": [
+                        "1103431",
+                        "394468"
+                    ],
+                    "size": 276988,
+                    "date_published": "2025-04-07T04:44:42.343Z"
                 }
             ]
         },
