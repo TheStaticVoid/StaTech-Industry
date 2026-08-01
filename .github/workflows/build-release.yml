@@ -502,7 +502,6 @@ jobs:
             ${{ steps.format_diff.outputs.text }}
           files: |
             ${{ needs.info.outputs.project_file_name }}-curseforge.zip
-            ${{ needs.info.outputs.project_file_name }}-modrinth.mrpack
             ${{ needs.info.outputs.project_file_name }}-serverpack.zip
           prerelease: ${{ needs.info.outputs.release_type != 'release' }}
           generate_release_notes: true
