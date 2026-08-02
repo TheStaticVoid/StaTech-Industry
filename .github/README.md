@@ -3,12 +3,14 @@
 ## Contributors
 me
 
-# TODO:
+# Finished and Implemented:
 extensive early game create requirements\
-restore ae2 hv gating (:gregtroll:)\
+
+# Priority List:
 force non-peaceful difficulty (might be extreme) with intent of making food a required challenge \
   -take everlasting steak out back and shoot it\
   -heavily gate or outright disable the auto feeding backpack item because canned food is cool\
+  
 pre 1.1 worldshaper recipe (might make it worse)\
 current worldshaper needs\
   -one of each creative item\
@@ -22,44 +24,61 @@ old worldshaper needed\
   -one mi quantum set\
   -65536 singularities + quantum upgrades\
 i am fighting the urge to just double the singularity per creative item count so its worst of both worlds\
+will also require a stack of nano quantum armor, done by making "wraps" of them in an assembler\
+
 dumb gt small dust lathe recipe in cutting machine\
   -unsure yet if i can change the cutting machine gui to have two outputs or if i should just make a lathe machine\
-
-## general changes:
+restore ae2 hv gating (:gregtroll:)\
+  -all ae2 features will probably just be stainless/digital gated\
+  
+## General TODO:
 more fusion stuff\
+
 bullshittium processing\
-  i want to straight up include the process in this message but maybe you also get a bullshittium residue fluid at the end that does other stuff\
+  -i want to straight up include the process in this message but maybe you also get a bullshittium residue fluid at the end that does other stuff\
+  -not specifically sure yet on what this would be but maybe something to complicate endgame recipes, such as requiring it for quantum machine casings (like chromium for ev casings)
+  
 tiered armor/tools? generally just make tool progression more involved-current progression will be:\
-  -vanilla armor up to diamond or netherite\
-  -create armor sets\
-  -steel armor\
+  -bronze\
+  -steel\
+  -diamond\
+  -netherite\
+  -create armor sets (must combine with netherite *armor* for netherite set)
   -jetpack + rubber (jetpack requires elytra)\
-  -nano armor (requires create armor and rubber (reinforced rubber?))\
-  -gravichestplate nano armor (gravichestplate is useless on its own)\
+  -nano armor (requires netherite create armor and rubber helmet/boots (reinforced rubber?))\
+  -gravichestplate (requires jetpack)\
+  -gravichestplate nano armor\
   -quantum nano set\
-    -may need to adjust flight pylon recipes? or just shoot the gravichestplate and quantum set is the only free creative flight\
+    -remove elytra flight pylon recipe\
+    
 diversify power\
   -i like the gt thing where steam is strictly lv/early mv, might buff benzene and diesel or something idk\
   -removing the mid to late game multi boilers is probably stupid but thats the best fix i can think of\
-all ae2 features will probably just be stainless/digital gated\
+  
 some sort of factorio enemy raid system or something would be VERY cool but idk how feasible this is (ties together armor/food changes and adds base building requirements)\
   -prrrrobably shoot or heavily gate void dim\
+  
 if its possible to implement a location based alternative to the quarry the steam quarry can be removed\
 
 ## specific/conceptual changes:
 forced replicatorless\
   -creative items can be turned into tokens or something\
+  
 YAI fluid intake stuff if main doesn't do anything with it\
   -take inspiration from gt here?\
+  
 do something with singularity blocks\
   -using them in recipes is superfluous so probably a multiblock\
+  
 have a need for overlooked/unnecessary addon stuff (EI farmer/brewery/steam machines)\
   -will likely fit in with create changes\
+  
 gregify steam age ebfs\
   -i truly actually fucking hate the single bucket + 8 brick recipes so ill see what i feel like doing lmao\
+  
 iridium processing (also if main doesnt do anything with it)\
 
-## general changes 2:
+## circuit junk:
 analog circuits should def be majorly create but not so much so that it cant scale with endgame requirements\
 
 silicon doping should be expanded\
