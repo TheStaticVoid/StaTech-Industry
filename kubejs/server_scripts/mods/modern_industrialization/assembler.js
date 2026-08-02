@@ -45,21 +45,91 @@ ServerEvents.recipes((event) => {
         32000,
         2400,
         [
-            { amount: 1, item: mi('quantum_helmet') },
+            { amount: 16, item: kj('wrap_of_helmets') },
             { amount: 64, item: mi('creative_tank') },
-            { amount: 1, item: mi('quantum_chestplate') },
+            { amount: 16, item: kj('wrap_of_chestplates') },
             { amount: 64, item: mi('creative_storage_unit') },
-            { amount: 1, item: mi('quantum_sword') },
+            { amount: 16, item: kj('wrap_of_sabers') },
             { amount: 64, item: 'create:creative_motor' },
-            { amount: 1, item: mi('quantum_leggings') },
+            { amount: 16, item: kj('wrap_of_leggings') },
             { amount: 64, item: mi('creative_barrel') },
-            { amount: 1, item: mi('quantum_boots') },
+            { amount: 16, item: kj('wrap_of_boots') },
         ],
         [{ amount: 1, item: 'create:handheld_worldshaper' }],
         [
-            { amount: 16000, fluid: mi('uu_matter') },
-            { amount: 16000, fluid: mi('neutronium') },
+            { amount: 64000, fluid: mi('uu_matter') },
+            { amount: 64000, fluid: mi('neutronium') },
         ]
+    );
+
+    assembler(
+        event,
+        st('wrap_of_helmets'),
+        8,
+        200,
+        [
+            { amount: 1, item: 'extended_industrialization:nano_quantum_helmet' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_helmet' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_helmet' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_helmet' },
+        ],
+        [{ amount: 1, item: kj('wrap_of_helmets') }]
+    );
+
+    assembler(
+        event,
+        st('wrap_of_chestplates'),
+        8,
+        200,
+        [
+            { amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' },
+        ],
+        [{ amount: 1, item: kj('wrap_of_chestplates') }]
+    );
+
+    assembler(
+        event,
+        st('wrap_of_leggings'),
+        8,
+        200,
+        [
+            { amount: 1, item: 'extended_industrialization:nano_quantum_leggings' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_leggings' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_leggings' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_leggings' },
+        ],
+        [{ amount: 1, item: kj('wrap_of_leggings') }]
+    );
+
+    assembler(
+        event,
+        st('wrap_of_boots'),
+        8,
+        200,
+        [
+            { amount: 1, item: 'extended_industrialization:nano_quantum_boots' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_boots' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_boots' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_boots' },
+        ],
+        [{ amount: 1, item: kj('wrap_of_boots') }]
+    );
+
+    assembler(
+        event,
+        st('wrap_of_sabers'),
+        8,
+        200,
+        [
+            { amount: 1, item: 'extended_industrialization:nano_quantum_saber' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_saber' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_saber' },
+            { amount: 1, item: 'extended_industrialization:nano_quantum_saber' },
+        ],
+        [{ amount: 1, item: kj('wrap_of_sabers') }]
     );
 
     // -- CREATIVE STORAGE UNIT -- //
