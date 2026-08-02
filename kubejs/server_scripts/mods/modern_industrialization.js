@@ -54,8 +54,163 @@ ServerEvents.recipes((event) => {
 
     // -- BULLSHITTIUM MODE -- //
 
-    event.remove({ id: 'modern_industrialization:materials/bronze_dust' })
-    event.remove({ id: 'modern_industrialization:materials/fire_clay_bricks' })
+    event.remove({ id: cr('crafting/appliances/netherite_diving_helmet') })
+    event.remove({ id: cr('crafting/appliances/netherite_backtank') })
+    event.remove({ id: cr('crafting/appliances/netherite_diving_boots') })
+    event.remove({ id: mi('armor/diesel_jetpack') })
+    event.remove({ id: mi('materials/bronze_dust') })
+    event.remove({ id: mi('materials/fire_clay_bricks') })
+    event.remove({ id: 'extended_industrialization:tool/nano_suit_helmet'})
+    event.remove({ id: 'extended_industrialization:tool/nano_suit_chestplate' })
+    // event.remove({ id: 'extended_industrialization:tool/nano_suit_leggings' })
+    event.remove({ id: 'extended_industrialization:tool/nano_suit_boots' })
+    event.remove({ id: 'extended_industrialization:tool/nano_suit_chestplate_quantum_upgrade' })
+
+    // -- NANO ARMOR -- //
+
+    assembler(
+        event,
+        st('nano_suit_helmet'),
+        8,
+        200,
+        [
+            { amount: 1, item: cr('netherite_diving_helmet') },
+            { amount: 20, item: mi('carbon_plate') },
+            { amount: 4, item: mi('electronic_circuit') },
+            { amount: 2, item: mi('silicon_battery') },
+            { amount: 4, item: mi('large_motor') },
+            { amount: 4, tag: 'c:glass_panes' },
+            { amount: 1, item: mi('redstone_control_module') },
+            { amount: 1, item: mi('rubber_helmet') },
+        ],
+        [{ amount: 1, item: 'extended_industrialization:nano_helmet' }],
+        [
+            { amount: 4000, fluid: mi('polyethylene') },
+            { amount: 2000, fluid: mi('nylon') }
+        ],
+    );
+
+    assembler(
+        event,
+        st('nano_suit_chestplate'),
+        8,
+        200,
+        [
+            { amount: 1, item: cr('netherite_backtank') },
+            { amount: 32, item: mi('carbon_plate') },
+            { amount: 4, item: mi('electronic_circuit') },
+            { amount: 2, item: mi('silicon_battery') },
+            { amount: 4, item: mi('large_motor') },
+        ],
+        [{ amount: 1, item: 'extended_industrialization:nano_chestplate' }],
+        [
+            { amount: 4000, fluid: mi('polyethylene') },
+            { amount: 2000, fluid: mi('nylon') }
+        ],
+    );
+
+    // this would literally be the same lmao
+    // assembler(
+    //     event,
+    //     st('nano_suit_leggings'),
+    //     8,
+    //     200,
+    //     [
+    //         { amount: 1, item: mc('netherite_leggings') },
+    //         { amount: 28, item: mi('carbon_plate') },
+    //         { amount: 4, item: mi('electronic_circuit') },
+    //         { amount: 2, item: mi('silicon_battery') },
+    //         { amount: 4, item: mi('large_motor') },
+    //         { amount: 1, item: mi('redstone_control_module') },
+    //     ],
+    //     [{ amount: 1, item: 'extended_industrialization:nano_helmet' }],
+    //     [
+    //         { amount: 4000, fluid: mi('polyethylene') },
+    //         { amount: 2000, fluid: mi('nylon') }
+    //     ],
+    // );
+
+    assembler(
+        event,
+        st('nano_suit_boots'),
+        8,
+        200,
+        [
+            { amount: 1, item: cr('netherite_diving_boots') },
+            { amount: 16, item: mi('carbon_plate') },
+            { amount: 4, item: mi('electronic_circuit') },
+            { amount: 2, item: mi('silicon_battery') },
+            { amount: 4, item: mi('large_motor') },
+            { amount: 1, item: mi('redstone_control_module') },
+            { amount: 1, item: mi('rubber_boots') }
+        ],
+        [{ amount: 1, item: 'extended_industrialization:nano_boots' }],
+        [
+            { amount: 4000, fluid: mi('polyethylene') },
+            { amount: 2000, fluid: mi('nylon') }
+        ],
+    );
+
+    // -- JETPACK -- //
+
+    event
+        .shaped('1x ' + mi('diesel_jetpack'), ['PTP', 'MCM', 'RER'], {
+            P: mi('large_pump'),
+            T: mi('aluminum_tank'),
+            M: mi('large_motor'),
+            C: mi('electronic_circuit'),
+            R: mi('aluminum_rotor'),
+            E: mc('elytra')
+        })
+        .id(mi('armor/diesel_jetpack'));
+
+    // -- GRAVICHESTPLATE -- //
+
+    event
+        .shaped('1x ' + mi('gravichestplate'), ['DUD', 'DJD', 'TCT'], {
+            D: mi('diamond_plate'),
+            U: mi('turbo_upgrade'),
+            J: mi('diesel_jetpack'),
+            T: mi('titanium_large_plate'),
+            C: mi('cadmium_battery')
+        })
+        .id(st('gravichestplate'));
+
+    // -- QUANTUM NANO CHESTPLATE -- //
+
+    packer(
+        event,
+        st('nano_suit_chestplate_quantum_upgrade'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: 'extended_industrialization:nano_gravichestplate' },
+            { amount: 1, item: mi('quantum_upgrade') },
+        ],
+        [{ amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' }]
+    );
+
+    // -- FORGE HAMMER -- //
+
+    event
+        .custom({
+            type: cr('mechanical_crafting'),
+            accept_mirrored: true,
+            category: 'misc',
+            pattern: ['AAAAA', 'AAAAA', '  B  ', ' CCC ', 'CCCCC'],
+            key: {
+                A: { item: mi('iron_large_plate') },
+                B: { tag: 'c:ingots/bronze' },
+                C: { tag: 'c:storage_blocks/iron' },
+            },
+            result: {
+                id: mi('forge_hammer'),
+                count: 1,
+            },
+        })
+        .id('forge_hammer_mechcraft');
+
+    // -- FIRE CLAY BRICKS -- //
 
     event
         .shaped('1x ' + mi('fire_clay_bricks'), ['BDB', 'BCB', 'BDB'], {
@@ -64,6 +219,8 @@ ServerEvents.recipes((event) => {
             D: mi('calcite_dust'),
         })
         .id(mi('materials/fire_clay_bricks'));
+
+    // -- DOUBLE INGOTS -- //
 
     event.shapeless(mi('iron_double_ingot'), [
         '2x ' + mc('iron_ingot')
@@ -104,6 +261,8 @@ ServerEvents.recipes((event) => {
         '2x ' + mc('copper_ingot')
     ])
         .id(mi('copper_double_ingot_shapless'));
+
+
 
     event
         .shapeless(mi('iron_plate'), [
@@ -261,25 +420,6 @@ ServerEvents.recipes((event) => {
             R: mi('invar_rotary_blade'),
         })
         .id(st('mob_crusher'));
-
-    // -- FORGE HAMMER -- //
-    event
-        .custom({
-            type: cr('mechanical_crafting'),
-            accept_mirrored: true,
-            category: 'misc',
-            pattern: ['AAAAA', 'AAAAA', '  B  ', ' CCC ', 'CCCCC'],
-            key: {
-                A: { item: mi('iron_large_plate') },
-                B: { tag: 'c:ingots/bronze' },
-                C: { tag: 'c:storage_blocks/iron' },
-            },
-            result: {
-                id: mi('forge_hammer'),
-                count: 1,
-            },
-        })
-        .id('forge_hammer_mechcraft');
 
     // -- ROCKET PART ASSEMBLER -- //
     event
@@ -466,16 +606,16 @@ ServerEvents.recipes((event) => {
         .shapeless(mi('creative_barrel'), mi('creative_barrel'))
         .id(st('clear_items_from_creative_barrel'));
 
-    // -- Gravichestplate -- //
-    event
-        .shaped(mi('gravichestplate'), ['PUP', 'PJP', 'CLC'], {
-            P: '#c:plates/diamond',
-            U: mi('turbo_upgrade'),
-            J: mc('netherite_chestplate'),
-            C: mi('titanium_large_plate'),
-            L: mi('cadmium_battery'),
-        })
-        .id(st('gravichestplate'));
+    // -- Gravichestplate -- // commented out for bullshittium
+    // event
+    //     .shaped(mi('gravichestplate'), ['PUP', 'PJP', 'CLC'], {
+    //         P: '#c:plates/diamond',
+    //         U: mi('turbo_upgrade'),
+    //         J: mc('netherite_chestplate'),
+    //         C: mi('titanium_large_plate'),
+    //         L: mi('cadmium_battery'),
+    //     })
+    //     .id(st('gravichestplate'));
 
     // -- STAINLESS STEEL TANK -- //
     event
