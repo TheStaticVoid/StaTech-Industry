@@ -6,26 +6,12 @@ me
 # Finished and Implemented:
 extensive early game create requirements\
 tiered armor/tools\
+pre 1.1 worldshaper recipe
 
 # Priority List:
 force non-peaceful difficulty (might be extreme) with intent of making food a required challenge \
   -take everlasting steak out back and shoot it\
   -heavily gate or outright disable the auto feeding backpack item because canned food is cool\
-  
-pre 1.1 worldshaper recipe (might make it worse)\
-current worldshaper needs\
-  -one of each creative item\
-    -each creative item needs 512 singularities and one "catalyst" item (plasma turbine for creative energy etc)\
-  -one mi quantum set\
-  -this totals 2048 singularities + whatever you need for the quantum upgrades\
-old worldshaper needed\
-  -a stack of each creative item\
-    -256 singularities each\
-    -16 catalyst items\
-  -one mi quantum set\
-  -65536 singularities + quantum upgrades\
-i am fighting the urge to just double the singularity per creative item count so its worst of both worlds\
-will also require a stack of nano quantum armor, done by making "wraps" of them in an assembler\
 
 dumb gt small dust lathe recipe in cutting machine\
   -unsure yet if i can change the cutting machine gui to have two outputs or if i should just make a lathe machine\
