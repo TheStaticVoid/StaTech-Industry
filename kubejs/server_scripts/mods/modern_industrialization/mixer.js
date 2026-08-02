@@ -3,15 +3,13 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes((event) => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/mixer/${id}`;
 
     // -- MIXER REMOVED RECIPES -- //
-    const REMOVED_RECIPES = [
-        mi('materials/mixer/fire_clay_dust')
-    ];
-    REMOVED_RECIPES.forEach(id => event.remove({id: id}));
+    const REMOVED_RECIPES = [mi('materials/mixer/fire_clay_dust')];
+    REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
     // -- NETHERRACK -- //
     mixer(
@@ -19,9 +17,9 @@ ServerEvents.recipes(event => {
         st('netherrack'),
         8,
         200,
-        [ { amount: 1, item: mc('cobblestone') } ],
-        [ { amount: 1, item: mc('netherrack') } ],
-        [ { amount: 100, fluid: mi('blood') } ]
+        [{ amount: 1, item: mc('cobblestone') }],
+        [{ amount: 1, item: mc('netherrack') }],
+        [{ amount: 100, fluid: mi('blood') }]
     );
 
     // -- SALT WATER -- //
@@ -30,10 +28,10 @@ ServerEvents.recipes(event => {
         st('salt_water'),
         2,
         200,
-        [ { amount: 1, item: mi('salt_dust') } ],
+        [{ amount: 1, item: mi('salt_dust') }],
         null,
-        [ { amount: 100, fluid: mc('water') } ],
-        [ { amount: 150, fluid: mi('salt_water') } ]
+        [{ amount: 100, fluid: mc('water') }],
+        [{ amount: 150, fluid: mi('salt_water') }]
     );
 
     // -- MOSSY COBBLESTONE -- //
@@ -42,11 +40,11 @@ ServerEvents.recipes(event => {
         st('mossy_cobblestone'),
         2,
         200,
-        [ 
+        [
             { amount: 1, item: mc('cobblestone') },
-            { amount: 1, item: mc('moss_block') }
+            { amount: 1, item: mc('moss_block') },
         ],
-        [ { amount: 1, item: mc('mossy_cobblestone') } ]
+        [{ amount: 1, item: mc('mossy_cobblestone') }]
     );
 
     // -- MOSSY COBBLESTONE FROM VINE -- //
@@ -55,11 +53,11 @@ ServerEvents.recipes(event => {
         st('mossy_cobblestone_vine'),
         2,
         200,
-        [ 
+        [
             { amount: 1, item: mc('cobblestone') },
-            { amount: 1, item: mc('vine') }
+            { amount: 1, item: mc('vine') },
         ],
-        [ { amount: 1, item: mc('mossy_cobblestone') } ]
+        [{ amount: 1, item: mc('mossy_cobblestone') }]
     );
 
     // -- MOSSY COBBLESTONE FROM NML -- //
@@ -68,24 +66,12 @@ ServerEvents.recipes(event => {
         st('mossy_cobblestone_nml'),
         2,
         200,
-        [ 
+        [
             { amount: 1, item: mc('cobblestone') },
-            { amount: 4, tag: 'nomansland:alternative_moss' }
+            { amount: 4, tag: 'nomansland:alternative_moss' },
         ],
-        [ { amount: 1, item: mc('mossy_cobblestone') } ]
+        [{ amount: 1, item: mc('mossy_cobblestone') }]
     );
-
-    // -- LIQUID EXPERIENCE -- //
-    mixer(
-        event,
-        st('xp_fluid'),
-        8,
-        50,
-        [ { amount: 4, item: cr('experience_nugget') } ],
-        null,
-        null,
-        [ { amount: 120, fluid: xp('cognitium_source') } ]
-    ); 
 
     // -- STATECH ENERGY -- //
     mixer(
@@ -95,10 +81,10 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: kj('empty_can') },
-            { amount: 2, item: mi('battery_alloy_dust') }
+            { amount: 2, item: mi('battery_alloy_dust') },
         ],
-        [ { amount: 1, item: kj('statech_energy') } ],
-        [ { amount: 100, fluid: mc('water') } ]
+        [{ amount: 1, item: kj('statech_energy') }],
+        [{ amount: 100, fluid: mc('water') }]
     );
 
     // -- BEPSI -- //
@@ -107,9 +93,9 @@ ServerEvents.recipes(event => {
         st('bepsi'),
         8,
         200,
-        [ { amount: 1, item: kj('empty_can') } ],
-        [ { amount: 1, item: kj('bepsi') } ],
-        [ { amount: 100, fluid: mi('polyethylene') } ]
+        [{ amount: 1, item: kj('empty_can') }],
+        [{ amount: 1, item: kj('bepsi') }],
+        [{ amount: 100, fluid: mi('polyethylene') }]
     );
 
     // -- COKE COLA -- //
@@ -118,12 +104,12 @@ ServerEvents.recipes(event => {
         st('coke_cola'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: kj('empty_can') },
-            { amount: 2, tag: 'c:dusts/coke' }
+            { amount: 2, tag: 'c:dusts/coke' },
         ],
-        [ { amount: 1, item: kj('coke_cola') } ],
-        [ { amount: 100, fluid: mc('water') } ]
+        [{ amount: 1, item: kj('coke_cola') }],
+        [{ amount: 100, fluid: mc('water') }]
     );
 
     // -- GREG COLA -- //
@@ -134,10 +120,10 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: kj('empty_can') },
-            { amount: 2, item: mc('clay_ball') }
+            { amount: 2, item: mc('clay_ball') },
         ],
-        [ { amount: 1, item: kj('greg_cola') } ],
-        [ { amount: 100, fluid: mi('polytetrafluoroethylene') } ]
+        [{ amount: 1, item: kj('greg_cola') }],
+        [{ amount: 100, fluid: mi('polytetrafluoroethylene') }]
     );
 
     // -- URANIUM CEREAL -- //
@@ -146,12 +132,12 @@ ServerEvents.recipes(event => {
         st('uranium_cereal'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mc('bowl') },
-            { amount: 3, tag: 'c:nuggets/uranium' }
+            { amount: 3, tag: 'c:nuggets/uranium' },
         ],
-        [ { amount: 1, item: kj('uranium_cereal') } ],
-        [ { amount: 100, fluid: mc('milk') } ]
+        [{ amount: 1, item: kj('uranium_cereal') }],
+        [{ amount: 100, fluid: mc('milk') }]
     );
 
     // -- NUKA COLA -- //
@@ -160,13 +146,13 @@ ServerEvents.recipes(event => {
         st('nuka_cola'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mc('glass_bottle') },
             { amount: 4, tag: 'c:dusts/uranium' },
-            { amount: 2, tag: 'c:dusts/coke' }
+            { amount: 2, tag: 'c:dusts/coke' },
         ],
-        [ { amount: 1, item: kj('nuka_cola') } ],
-        [ { amount: 100, fluid: mc('water') } ]
+        [{ amount: 1, item: kj('nuka_cola') }],
+        [{ amount: 100, fluid: mc('water') }]
     );
 
     // -- CONCRETE PIZZA -- //
@@ -175,9 +161,9 @@ ServerEvents.recipes(event => {
         st('concrete_pizza'),
         8,
         200,
-        [ { amount: 1, item: kj('pizza') } ],
-        [ { amount: 1, item: kj('concrete_pizza') } ],
-        [ { amount: 100, fluid: mi('concrete') } ]
+        [{ amount: 1, item: kj('pizza') }],
+        [{ amount: 1, item: kj('concrete_pizza') }],
+        [{ amount: 100, fluid: mi('concrete') }]
     );
 
     // -- CONCRETE STEAK WITH CLAY SAUCE -- //
@@ -188,10 +174,10 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mc('cooked_beef') },
-            { amount: 1, item: mc('clay_ball') }
+            { amount: 1, item: mc('clay_ball') },
         ],
-        [ { amount: 1, item: kj('concrete_and_clay_steak') } ],
-        [ { amount: 100, fluid: mi('concrete') } ]
+        [{ amount: 1, item: kj('concrete_and_clay_steak') }],
+        [{ amount: 100, fluid: mi('concrete') }]
     );
 
     // -- DOUGH -- //
@@ -200,37 +186,23 @@ ServerEvents.recipes(event => {
         st('dough'),
         2,
         100,
-        [ { amount: 1, item: cr('wheat_flour') } ],
-        [ { amount: 1, item: cr('dough') } ],
-        [ { amount: 1000, fluid: mc('water') } ]
+        [{ amount: 1, item: cr('wheat_flour') }],
+        [{ amount: 1, item: cr('dough') }],
+        [{ amount: 1000, fluid: mc('water') }]
     );
 
-    // -- LIQUID ENDER -- // 
+    // -- LIQUID ENDER -- //
     mixer(
         event,
         st('liquid_ender'),
         8,
         200,
-        [ { amount: 2, item: ae('ender_dust') } ],
+        [{ amount: 2, item: ae('ender_dust') }],
         null,
-        [ { amount: 800, fluid: mc('water') } ],
-        [ { amount: 1000, fluid: mi('liquid_ender') } ]
+        [{ amount: 800, fluid: mc('water') }],
+        [{ amount: 1000, fluid: mi('liquid_ender') }]
     );
-    
-    // -- COGNITIVE FLUX -- //
-    mixer(
-        event,
-        st('cognitive_flux'),
-        2,
-        100,
-        [
-            { amount: 1, tag: 'c:dusts/lapis' },
-            { amount: 1, tag: 'c:dusts/quartz' },
-            { amount: 1, tag: 'minecraft:soul_fire_base_blocks' }
-        ],
-        [ { amount: 4, item: xp('cognitive_flux') } ]
-    ); 
-    
+
     // -- BORON-QUARTZ BLEND -- //
     mixer(
         event,
@@ -240,10 +212,10 @@ ServerEvents.recipes(event => {
         [
             { amount: 4, tag: 'c:dusts/boron_trioxide' },
             { amount: 8, tag: 'c:dusts/quartz' },
-            { amount: 1, tag: 'c:tiny_dusts/aluminum' }
+            { amount: 1, tag: 'c:tiny_dusts/aluminum' },
         ],
-        [ { amount: 12, item: kj('boron_quartz_blend') } ]
-    ); 
+        [{ amount: 12, item: kj('boron_quartz_blend') }]
+    );
 
     // -- CERTUS QUARTS CRYSTAL -- //
     mixer(
@@ -253,10 +225,10 @@ ServerEvents.recipes(event => {
         100,
         [
             { amount: 1, item: ae('charged_certus_quartz_crystal') },
-            { amount: 1, item: ae('certus_quartz_dust') }
+            { amount: 1, item: ae('certus_quartz_dust') },
         ],
-        [ { amount: 2, item: ae('certus_quartz_crystal') } ],
-        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
+        [{ amount: 2, item: ae('certus_quartz_crystal') }],
+        [{ amount: 1000, fluid: mc('water'), probability: 0 }]
     );
 
     // -- DAMAGED BUDDING CERTUS QUARTZ -- //
@@ -267,10 +239,10 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: ae('charged_certus_quartz_crystal') },
-            { amount: 1, item: ae('quartz_block') }
+            { amount: 1, item: ae('quartz_block') },
         ],
-        [ { amount: 1, item: ae('damaged_budding_quartz') } ],
-        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
+        [{ amount: 1, item: ae('damaged_budding_quartz') }],
+        [{ amount: 1000, fluid: mc('water'), probability: 0 }]
     );
 
     // -- CHIPPED BUDDING CERTUS QUARTZ -- //
@@ -281,10 +253,10 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: ae('charged_certus_quartz_crystal') },
-            { amount: 1, item: ae('damaged_budding_quartz') }
+            { amount: 1, item: ae('damaged_budding_quartz') },
         ],
-        [ { amount: 1, item: ae('chipped_budding_quartz') } ],
-        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
+        [{ amount: 1, item: ae('chipped_budding_quartz') }],
+        [{ amount: 1000, fluid: mc('water'), probability: 0 }]
     );
 
     // -- FLAWED BUDDING CERTUS QUARTZ -- //
@@ -295,10 +267,10 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: ae('charged_certus_quartz_crystal') },
-            { amount: 1, item: ae('chipped_budding_quartz')}
+            { amount: 1, item: ae('chipped_budding_quartz') },
         ],
-        [ { amount: 1, item: ae('flawed_budding_quartz') } ],
-        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
+        [{ amount: 1, item: ae('flawed_budding_quartz') }],
+        [{ amount: 1000, fluid: mc('water'), probability: 0 }]
     );
 
     // -- ENTRO CRYSTAL -- //
@@ -309,10 +281,10 @@ ServerEvents.recipes(event => {
         100,
         [
             { amount: 1, item: ea('entro_dust') },
-            { amount: 1, tag: 'c:gems/fluix' }
+            { amount: 1, tag: 'c:gems/fluix' },
         ],
-        [ { amount: 2, item: ea('entro_crystal') } ],
-        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
+        [{ amount: 2, item: ea('entro_crystal') }],
+        [{ amount: 1000, fluid: mc('water'), probability: 0 }]
     );
 
     // -- ENTRO INFUSED INGOT -- //
@@ -324,10 +296,10 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: ea('entro_dust') },
             { amount: 1, tag: 'c:ingots/aluminum' },
-            { amount: 1, tag: 'c:gems/lapis' }
+            { amount: 1, tag: 'c:gems/lapis' },
         ],
-        [ { amount: 2, item: ea('entro_ingot') } ],
-        [ { amount: 1000, fluid: mc('water'), probability: 0 } ]
+        [{ amount: 2, item: ea('entro_ingot') }],
+        [{ amount: 1000, fluid: mc('water'), probability: 0 }]
     );
 
     // -- SKY BRONZE INGOT -- //
@@ -339,10 +311,10 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: ae('charged_certus_quartz_crystal') },
             { amount: 1, tag: 'c:ingots/annealed_copper' },
-            { amount: 1, item: ae('sky_stone_block') }
+            { amount: 1, item: ae('sky_stone_block') },
         ],
-        [ { amount: 2, item: mg('sky_bronze_ingot') } ],
-        [ { amount: 1000, fluid: mc('lava'), probability: 0 } ]
+        [{ amount: 2, item: mg('sky_bronze_ingot') }],
+        [{ amount: 1000, fluid: mc('lava'), probability: 0 }]
     );
 
     // -- SKY STEEL INGOT -- //
@@ -354,25 +326,25 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: ae('charged_certus_quartz_crystal') },
             { amount: 1, tag: 'c:ingots/stainless_steel' },
-            { amount: 1, item: ae('sky_stone_block') }
+            { amount: 1, item: ae('sky_stone_block') },
         ],
-        [ { amount: 2, item: mg('sky_steel_ingot') } ],
-        [ { amount: 1000, fluid: mc('lava'), probability: 0 } ]
+        [{ amount: 2, item: mg('sky_steel_ingot') }],
+        [{ amount: 1000, fluid: mc('lava'), probability: 0 }]
     );
-    
+
     // -- DRILLING FLUID -- //
     mixer(
         event,
         st('drilling_fluid'),
         8,
         400,
-        [ { amount: 16, item: mi('clay_dust') } ],
+        [{ amount: 16, item: mi('clay_dust') }],
         null,
         [
             { amount: 700, fluid: mc('water') },
-            { amount: 100, fluid: mi('lubricant') }
+            { amount: 100, fluid: mi('lubricant') },
         ],
-        [ { amount: 1000, fluid: mi('drilling_fluid') } ]
+        [{ amount: 1000, fluid: mi('drilling_fluid') }]
     );
 
     // -- GRASS BLOCK RECIPE PARITY -- //
@@ -383,10 +355,10 @@ ServerEvents.recipes(event => {
         100,
         [
             { amount: 1, item: mc('dirt') },
-            { amount: 1, item: mc('wheat_seeds') , probability: 0.0 }
+            { amount: 1, item: mc('wheat_seeds'), probability: 0.0 },
         ],
-        [ { amount: 1, item: mc('grass_block') } ],
-        [ { amount: 1000, fluid: mc('water') } ]
+        [{ amount: 1, item: mc('grass_block') }],
+        [{ amount: 1000, fluid: mc('water') }]
     );
 
     // -- FIRE CLAY DUST -- //
@@ -397,9 +369,9 @@ ServerEvents.recipes(event => {
         100,
         [
             { amount: 2, item: mi('brick_dust') },
-            { amount: 2, item: mi('clay_dust') }
+            { amount: 2, item: mi('clay_dust') },
         ],
-        [ { amount: 4, item: mi('fire_clay_dust') } ]
+        [{ amount: 4, item: mi('fire_clay_dust') }]
     );
 
     // -- LIQUID CONCRETE -- //
@@ -408,13 +380,13 @@ ServerEvents.recipes(event => {
         st('liquid_concrete'),
         8,
         200,
-        [ 
+        [
             { amount: 4, item: mi('clay_dust') },
-            { amount: 10, item: mi('stone_dust') }
+            { amount: 10, item: mi('stone_dust') },
         ],
         null,
-        [ { amount: 100, fluid: mc('water') } ],
-        [ { amount: 500, fluid: mi('concrete') } ]
+        [{ amount: 100, fluid: mc('water') }],
+        [{ amount: 500, fluid: mi('concrete') }]
     );
 
     // -- QUARTZ BLEND -- //
@@ -426,9 +398,9 @@ ServerEvents.recipes(event => {
         [
             { amount: 6, item: ae('certus_quartz_dust') },
             { amount: 2, tag: 'c:sands' },
-            { amount: 1, item: mc('coal') }
+            { amount: 1, item: mc('coal') },
         ],
-        [ { amount: 2, item: ea('quartz_blend') } ]
+        [{ amount: 2, item: ea('quartz_blend') }]
     );
 
     // -- RESIN -- //
@@ -437,9 +409,9 @@ ServerEvents.recipes(event => {
         st('resin'),
         4,
         600,
-        [ { amount: 2, item: mi('sulfur_tiny_dust') } ],
-        [ { amount: 2, item: nm('resin') } ],
-        [ { amount: 125, fluid: mi('wood_tar') } ]
+        [{ amount: 2, item: mi('sulfur_tiny_dust') }],
+        [{ amount: 2, item: nm('resin') }],
+        [{ amount: 125, fluid: mi('wood_tar') }]
     );
 
     // -- SYNTHETIC RUBBER ALT -- //
@@ -448,24 +420,23 @@ ServerEvents.recipes(event => {
         st('synthetic_rubber_alt'),
         4,
         200,
-        [ { amount: 1, item: nm('resin') } ],
+        [{ amount: 1, item: nm('resin') }],
         null,
         null,
-        [ { amount: 125, fluid: mi('synthetic_rubber') } ]
+        [{ amount: 125, fluid: mi('synthetic_rubber') }]
     );
 
-    //----------------------------//
+    // ----------------------------//
     // -- EI FERTILIZER COMPAT -- //
-    //----------------------------//
+    // ----------------------------//
 
-        const fertilizerEff = [
+    const fertilizerEff = [
         ['manure', 300],
         ['composted_manure', 150],
-        ['npk_fertilizer', 30]
+        ['npk_fertilizer', 30],
     ];
 
-    fertilizerEff.forEach(fertilizer => {
-
+    fertilizerEff.forEach((fertilizer) => {
         // -- NUTRIENT RICH WATER -- //
         mixer(
             event,
@@ -474,11 +445,11 @@ ServerEvents.recipes(event => {
             200,
             null,
             null,
-            [ 
+            [
                 { amount: 100, fluid: mc('water') },
-                { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
+                { amount: fertilizer[1], fluid: ei(fertilizer[0]) },
             ],
-            [ { amount: 200, fluid: mi('nutrient_rich_water') } ]
+            [{ amount: 200, fluid: mi('nutrient_rich_water') }]
         );
 
         // -- NUTRIENT RICH BLOOD -- //
@@ -489,11 +460,11 @@ ServerEvents.recipes(event => {
             200,
             null,
             null,
-            [ 
+            [
                 { amount: 100, fluid: mi('blood') },
-                { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
+                { amount: fertilizer[1], fluid: ei(fertilizer[0]) },
             ],
-            [ { amount: 200, fluid: mi('nutrient_rich_blood') } ]
+            [{ amount: 200, fluid: mi('nutrient_rich_blood') }]
         );
 
         // -- NUTRIENT RICH LAVA -- //
@@ -504,11 +475,11 @@ ServerEvents.recipes(event => {
             200,
             null,
             null,
-            [ 
+            [
                 { amount: 100, fluid: mc('lava') },
-                { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
+                { amount: fertilizer[1], fluid: ei(fertilizer[0]) },
             ],
-            [ { amount: 200, fluid: yai('nutrient_rich_lava') } ]
+            [{ amount: 200, fluid: yai('nutrient_rich_lava') }]
         );
 
         // -- NUTRIENT RICH LIQUID ENDER -- //
@@ -519,13 +490,12 @@ ServerEvents.recipes(event => {
             200,
             null,
             null,
-            [ 
+            [
                 { amount: 100, fluid: mi('liquid_ender') },
-                { amount: fertilizer[1], fluid: ei(fertilizer[0]) }
+                { amount: fertilizer[1], fluid: ei(fertilizer[0]) },
             ],
-            [ { amount: 200, fluid: mi('nutrient_rich_liquid_ender') } ]
+            [{ amount: 200, fluid: mi('nutrient_rich_liquid_ender') }]
         );
-
     });
 
     // -- NUTRIENT RICH WATER -- //
@@ -534,10 +504,10 @@ ServerEvents.recipes(event => {
         st('nutrient_rich_water_from_bonemeal'),
         8,
         200,
-        [ { amount: 1, item: mc('bone_meal') } ],
+        [{ amount: 1, item: mc('bone_meal') }],
         null,
-        [ { amount: 100, fluid: mc('water') } ],
-        [ { amount: 100, fluid: mi('nutrient_rich_water') } ]
+        [{ amount: 100, fluid: mc('water') }],
+        [{ amount: 100, fluid: mi('nutrient_rich_water') }]
     );
 
     // -- NUTRIENT RICH LIQUID ENDER -- //
@@ -546,10 +516,10 @@ ServerEvents.recipes(event => {
         st('nutrient_rich_liquid_ender_from_bonemeal'),
         8,
         200,
-        [ { amount: 1, item: mc('bone_meal') } ],
+        [{ amount: 1, item: mc('bone_meal') }],
         null,
-        [ { amount: 100, fluid: mi('liquid_ender') } ],
-        [ { amount: 100, fluid: mi('nutrient_rich_liquid_ender') } ]
+        [{ amount: 100, fluid: mi('liquid_ender') }],
+        [{ amount: 100, fluid: mi('nutrient_rich_liquid_ender') }]
     );
 
     // -- NUTRIENT RICH BLOOD -- //
@@ -558,10 +528,10 @@ ServerEvents.recipes(event => {
         st('nutrient_rich_blood_from_bonemeal'),
         8,
         200,
-        [ { amount: 1, item: mc('bone_meal') } ],
+        [{ amount: 1, item: mc('bone_meal') }],
         null,
-        [ { amount: 100, fluid: mi('blood') } ],
-        [ { amount: 100, fluid: mi('nutrient_rich_blood') } ]
+        [{ amount: 100, fluid: mi('blood') }],
+        [{ amount: 100, fluid: mi('nutrient_rich_blood') }]
     );
 
     // -- NUTRIENT RICH LAVA -- //
@@ -570,10 +540,9 @@ ServerEvents.recipes(event => {
         st('nutrient_rich_lava_from_bonemeal'),
         8,
         200,
-        [ { amount: 1, item: mc('bone_meal') } ],
+        [{ amount: 1, item: mc('bone_meal') }],
         null,
-        [ { amount: 100, fluid: mc('lava') } ],
-        [ { amount: 100, fluid: yai('nutrient_rich_lava') } ]
+        [{ amount: 100, fluid: mc('lava') }],
+        [{ amount: 100, fluid: yai('nutrient_rich_lava') }]
     );
-
 });

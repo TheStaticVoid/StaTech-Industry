@@ -3,11 +3,11 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:morered/${id}`;
 
-    event.remove({type: mr('soldering')})
+    event.remove({ type: mr('soldering') });
 
     // -- MORE RED REMOVED RECIPES -- //
     const MORERED_REMOVED_RECIPES = [
@@ -15,13 +15,11 @@ ServerEvents.recipes(event => {
         mr('red_alloy_wire'),
         mr('soldering_table'),
     ];
-    MORERED_REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
+    MORERED_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
-
-    //----------------------//
+    // ---------------------//
     // ----- WIREMILL ----- //
-    //----------------------//
-
+    // ---------------------//
 
     // -- RED ALLOY WIRE -- //
     wiremill(
@@ -29,14 +27,13 @@ ServerEvents.recipes(event => {
         st('red_alloy_wire'),
         2,
         100,
-        [ { amount: 1, item: mr('red_alloy_ingot') } ],
-        [ { amount: 2, item: mr('red_alloy_wire') } ],
+        [{ amount: 1, item: mr('red_alloy_ingot') }],
+        [{ amount: 2, item: mr('red_alloy_wire') }]
     );
 
-
-    //----------------------//
+    // ---------------------//
     // ------ PACKER ------ //
-    //----------------------//
+    // ---------------------//
 
     const DYE_COLORS = [
         'white',
@@ -54,11 +51,11 @@ ServerEvents.recipes(event => {
         'brown',
         'green',
         'red',
-        'black'
-    ]
+        'black',
+    ];
 
-    DYE_COLORS.forEach(DYE_COLORS => {
-        event.remove( {id: mr(`${DYE_COLORS}_network_cable`)} ); 
+    DYE_COLORS.forEach((DYE_COLORS) => {
+        event.remove({ id: mr(`${DYE_COLORS}_network_cable`) });
         packer(
             event,
             st(`${DYE_COLORS}_red_alloy_cable`),
@@ -66,16 +63,15 @@ ServerEvents.recipes(event => {
             200,
             [
                 { amount: 8, item: mr('red_alloy_wire') },
-                { amount: 1, item: mc(`${DYE_COLORS}_wool`) }
+                { amount: 1, item: mc(`${DYE_COLORS}_wool`) },
             ],
-            [ { amount: 8, item: mr(`${DYE_COLORS}_network_cable`) } ]
+            [{ amount: 8, item: mr(`${DYE_COLORS}_network_cable`) }]
         );
-    })
+    });
 
-    //---------------------//
+    // ---------------------//
     // ---- ASSEMBLER ---- //
-    //---------------------//
-
+    // ---------------------//
 
     // -- HEXIDECRUBROMETER -- //
     assembler(
@@ -83,12 +79,12 @@ ServerEvents.recipes(event => {
         st('hexidecrubrometer'),
         8,
         200,
-        [ 
+        [
             { amount: 8, item: mr('stone_plate') },
             { amount: 9, item: mc('redstone') },
-            { amount: 4, item: mc('quartz') }
+            { amount: 4, item: mc('quartz') },
         ],
-        [ { amount: 1, item: mr('hexidecrubrometer') } ],
+        [{ amount: 1, item: mr('hexidecrubrometer') }]
     );
 
     // -- REDWIRE POST RELAY PLATE -- //
@@ -97,12 +93,12 @@ ServerEvents.recipes(event => {
         st('redwire_post_relay_plate'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mr('stone_plate') },
             { amount: 1, item: mc('redstone') },
-            { amount: 2, item: mr('red_alloy_ingot') }
+            { amount: 2, item: mr('red_alloy_ingot') },
         ],
-        [ { amount: 1, item: mr('redwire_post_relay_plate') } ],
+        [{ amount: 1, item: mr('redwire_post_relay_plate') }]
     );
 
     // -- LATCH -- //
@@ -111,11 +107,11 @@ ServerEvents.recipes(event => {
         st('latch'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 3, item: mc('redstone') }
+            { amount: 3, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('latch') } ],
+        [{ amount: 1, item: mr('latch') }]
     );
 
     // -- PULSE GATE -- //
@@ -124,12 +120,12 @@ ServerEvents.recipes(event => {
         st('pulse_gate'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mr('stone_plate') },
             { amount: 1, item: mc('redstone') },
-            { amount: 1, item: mr('red_alloy_ingot') }
+            { amount: 1, item: mr('red_alloy_ingot') },
         ],
-        [ { amount: 1, item: mr('pulse_gate') } ],
+        [{ amount: 1, item: mr('pulse_gate') }]
     );
 
     // -- REDWIRE POST -- //
@@ -138,10 +134,8 @@ ServerEvents.recipes(event => {
         st('redwire_post'),
         8,
         200,
-        [ 
-            { amount: 2, item: mr('red_alloy_ingot') }
-        ],
-        [ { amount: 1, item: mr('redwire_post') } ],
+        [{ amount: 2, item: mr('red_alloy_ingot') }],
+        [{ amount: 1, item: mr('redwire_post') }]
     );
 
     // -- REDWIRE POST PLATE -- //
@@ -150,11 +144,11 @@ ServerEvents.recipes(event => {
         st('redwire_post_plate'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 2, item: mr('red_alloy_ingot') }
+            { amount: 2, item: mr('red_alloy_ingot') },
         ],
-        [ { amount: 1, item: mr('redwire_post_plate') } ],
+        [{ amount: 1, item: mr('redwire_post_plate') }]
     );
 
     // -- BUNDLED CABLE POST -- //
@@ -163,11 +157,11 @@ ServerEvents.recipes(event => {
         st('bundled_cable_post'),
         8,
         200,
-        [ 
+        [
             { amount: 1, item: mr('bundled_network_cable') },
-            { amount: 1, item: mr('red_alloy_ingot') }
+            { amount: 1, item: mr('red_alloy_ingot') },
         ],
-        [ { amount: 1, item: mr('bundled_cable_post') } ],
+        [{ amount: 1, item: mr('bundled_cable_post') }]
     );
 
     // -- BUNDLED CABLE RELAY PLATE -- //
@@ -179,9 +173,9 @@ ServerEvents.recipes(event => {
         [
             { amount: 2, item: mr('stone_plate') },
             { amount: 1, item: mr('bundled_network_cable') },
-            { amount: 1, item: mr('red_alloy_ingot') }
+            { amount: 1, item: mr('red_alloy_ingot') },
         ],
-        [ { amount: 1, item: mr('bundled_cable_relay_plate') } ],
+        [{ amount: 1, item: mr('bundled_cable_relay_plate') }]
     );
 
     // -- BUNDLED CABLE -- //
@@ -190,10 +184,8 @@ ServerEvents.recipes(event => {
         st('bundled_network_cable'),
         8,
         200,
-        [
-            { amount: 3, tag: 'morered:network_cables' }
-        ],
-        [ { amount: 3, item: mr('bundled_network_cable') } ],
+        [{ amount: 3, tag: 'morered:network_cables' }],
+        [{ amount: 3, item: mr('bundled_network_cable') }]
     );
 
     // -- DIODE -- //
@@ -204,9 +196,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 3, item: mc('redstone') }
+            { amount: 3, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('diode') } ],
+        [{ amount: 1, item: mr('diode') }]
     );
 
     // -- NOT GATE -- //
@@ -217,9 +209,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 2, item: mc('redstone') }
+            { amount: 2, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('not_gate') } ],
+        [{ amount: 1, item: mr('not_gate') }]
     );
 
     // -- NOR GATE -- //
@@ -230,9 +222,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 2, item: mc('redstone') }
+            { amount: 2, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('nor_gate') } ],
+        [{ amount: 1, item: mr('nor_gate') }]
     );
 
     // -- NAND GATE -- //
@@ -243,9 +235,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 4, item: mc('redstone') }
+            { amount: 4, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('nand_gate') } ],
+        [{ amount: 1, item: mr('nand_gate') }]
     );
 
     // -- OR GATE -- //
@@ -256,9 +248,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 3, item: mc('redstone') }
+            { amount: 3, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('or_gate') } ],
+        [{ amount: 1, item: mr('or_gate') }]
     );
 
     // -- AND GATE -- //
@@ -269,9 +261,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 5, item: mc('redstone') }
+            { amount: 5, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('and_gate') } ],
+        [{ amount: 1, item: mr('and_gate') }]
     );
 
     // -- XOR GATE -- //
@@ -282,9 +274,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 4, item: mc('redstone') }
+            { amount: 4, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('xor_gate') } ],
+        [{ amount: 1, item: mr('xor_gate') }]
     );
 
     // -- XNOR GATE -- //
@@ -295,9 +287,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 4, item: mc('redstone') }
+            { amount: 4, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('xnor_gate') } ],
+        [{ amount: 1, item: mr('xnor_gate') }]
     );
 
     // -- MULTIPLEXER -- //
@@ -309,9 +301,9 @@ ServerEvents.recipes(event => {
         [
             { amount: 1, item: mr('stone_plate') },
             { amount: 1, item: mr('red_alloy_ingot') },
-            { amount: 1, item: mc('redstone') }
+            { amount: 1, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('multiplexer') } ],
+        [{ amount: 1, item: mr('multiplexer') }]
     );
 
     // -- 2 INPUT 1 OUTPUT GATE -- //
@@ -322,9 +314,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 4, item: mc('redstone') }
+            { amount: 4, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('and_2_gate') } ],
+        [{ amount: 1, item: mr('and_2_gate') }]
     );
 
     // -- 2 INPUT NAND GATE -- //
@@ -335,9 +327,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, item: mr('stone_plate') },
-            { amount: 3, item: mc('redstone') }
+            { amount: 3, item: mc('redstone') },
         ],
-        [ { amount: 1, item: mr('nand_2_gate') } ],
+        [{ amount: 1, item: mr('nand_2_gate') }]
     );
 
     // -- BITWISE DIODE -- //
@@ -352,7 +344,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mr('bundled_network_cable') },
         ],
-        [ { amount: 1, item: mr('bitwise_diode') } ],
+        [{ amount: 1, item: mr('bitwise_diode') }]
     );
 
     // -- BITWISE NOT GATE -- //
@@ -367,7 +359,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mr('bundled_network_cable') },
         ],
-        [ { amount: 1, item: mr('bitwise_not_gate') } ],
+        [{ amount: 1, item: mr('bitwise_not_gate') }]
     );
 
     // -- BITWISE OR GATE -- //
@@ -382,7 +374,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mr('bundled_network_cable') },
         ],
-        [ { amount: 1, item: mr('bitwise_or_gate') } ],
+        [{ amount: 1, item: mr('bitwise_or_gate') }]
     );
 
     // -- BITWISE AND GATE -- //
@@ -397,7 +389,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mr('bundled_network_cable') },
         ],
-        [ { amount: 1, item: mr('bitwise_and_gate') } ],
+        [{ amount: 1, item: mr('bitwise_and_gate') }]
     );
 
     // -- BITWISE XOR GATE -- //
@@ -412,7 +404,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mr('bundled_network_cable') },
         ],
-        [ { amount: 1, item: mr('bitwise_xor_gate') } ],
+        [{ amount: 1, item: mr('bitwise_xor_gate') }]
     );
 
     // -- BITWISE XNOR GATE -- //
@@ -427,7 +419,7 @@ ServerEvents.recipes(event => {
             { amount: 1, item: mc('redstone') },
             { amount: 1, item: mr('bundled_network_cable') },
         ],
-        [ { amount: 1, item: mr('bitwise_xnor_gate') } ],
+        [{ amount: 1, item: mr('bitwise_xnor_gate') }]
     );
 
     // -- REDWIRE SPOOL -- //
@@ -441,7 +433,7 @@ ServerEvents.recipes(event => {
             { amount: 4, item: mi('steel_plate') },
             { amount: 2, item: mc('stick') },
         ],
-        [ { amount: 2, item: mr('redwire_spool') } ],
+        [{ amount: 2, item: mr('redwire_spool') }]
     );
 
     // -- BUNDLED CABLE SPOOL -- //
@@ -455,6 +447,6 @@ ServerEvents.recipes(event => {
             { amount: 4, item: mi('steel_plate') },
             { amount: 2, item: mc('stick') },
         ],
-        [ { amount: 2, item: mr('bundled_cable_spool') } ],
+        [{ amount: 2, item: mr('bundled_cable_spool') }]
     );
 });

@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "x": {
-      "tag": "c:ingots/ostrum"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "x": {
+            "tag": "c:ingots/ostrum"
+        },
+        "y": {
+            "item": "modern_industrialization:ostrum_ingot"
+        }
     },
-    "y": {
-      "item": "modern_industrialization:ostrum_ingot"
+    "pattern": ["xxx", "xyx", "xxx"],
+    "result": {
+        "count": 1,
+        "id": "modern_industrialization:ostrum_block"
     }
-  },
-  "pattern": [
-    "xxx",
-    "xyx",
-    "xxx"
-  ],
-  "result": {
-    "count": 1,
-    "id": "modern_industrialization:ostrum_block"
-  }
 }

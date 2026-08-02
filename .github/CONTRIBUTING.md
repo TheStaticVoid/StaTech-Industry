@@ -1,0 +1,92 @@
+# Contribution Guidelines
+
+Hello. Thank you for taking an interest in making StaTech Industry a better modpack. As the pack grows, and others have shown interest in helping, I figured it would be best to lay down my design philosophies and what I look for in any addition to the pack.
+
+## Setting Up Your Dev Environment
+
+Clone your fork of the repository into an empty [`(instancename)\minecraft`](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) folder, and copy the contents of `(instancename)\minecraft\.pakku\prism-overrides` into your `(instancename)` folder to have a working Prism Instance.
+Once your Prism Instance is in place, grab the [most recently released version of `pakku.jar`](https://github.com/juraj-hrivnak/Pakku/releases), and put it in the `(instancename)/minecraft` directory.
+From there, you can start your newly created instance and the mods will be downloaded for you.[^1]
+
+#### Modloader Sync
+
+Those wanting to also automatically sync the modloader version should replace the [prelaunch command](https://github.com/user-attachments/assets/494a632d-1af4-453d-9329-5454ac3d22da) with one of the below commands instead.
+
+Windows:
+
+```cmd
+cmd /c "java -jar pakku.jar fetch && copy /Y "$INST_MC_DIR\.pakku\prism-overrides\mmc-pack.json" "$INST_DIR\mmc-pack.json"
+```
+
+Linux and MacOS
+
+```bash
+java -jar pakku.jar fetch && cp -f "$INST_MC_DIR/.pakku/prism-overrides/mmc-pack.json" "$INST_DIR/mmc-pack.json"
+```
+
+### Code Editor Setup
+
+The pack development environment has been created supporting [VSCode](https://code.visualstudio.com/Download?_exp_download=fb315fc982) and [ProbeJS](https://www.curseforge.com/minecraft/mc-mods/probejs/files/all?page=1&pageSize=20&showAlphaFiles=show). We make ample use of recipe helper functions (see `kubejs/server_scripts/machine_recipe_helper.js`) throughout the pack, and have gone to the effort of adding JSDoc type info for each recipe helper function for better code completion (keep in mind the code is NOT TypeScript).
+
+Also, GitHub Actions are used to automate code format checks, pack builds, and also pack publication. To make this feasible, We use ESLint and Prettier, so you need to install [NodeJS/NPM](https://nodejs.org/en/download) for those two packages.
+
+Finally, a VSCode workspace is packaged with the repository, this contains the appropriate settings and organization, in addition to the recommended extensions.
+
+#### Using the pre-commit hook
+
+You can (and probably should!) configure your installation of `git` to use `.github/hooks/pre-commit` to check your changes for formatting errors before you make a new commit. If using git on windows, you will need to make sure the hook is executed using `git bash` and not some shell.
+
+## Code Format
+
+Scripts are split based on their purpose. For Server Scripts, they are split based on the origin mod that is being modified. For example, if you're adding a new shaped/shapeless recipe for an item from Create, you would do so in `create.js`. If you're adding a new custom recipe that uses a Create mechanical fan as the type, then it would also go in the `create.js` file.
+
+Modern Industrialization is an exception to this rule, due to the extent of which it has been modified. For regular shaped/shapeless recipes, they should be placed in the `mods/modern_industrialization.js` file, while any custom recipe type should go in the `modern_industrialization` subfolder. For example, a new Assembler recipe would be placed in the `mods/modern_industrialization/assembler.js` file.
+
+Newly added recipes should be put in mod-specific script files and ordered by recipe type (shaped, shapeless, assembler, pedestal, etc.) with shaped and shapeless first, then organized by recipe type (not including the mod namespace) alphabetically. For example, if you had recipes using the `minecraft:shaped`, `minecraft:shapeless`, `modern_industrialization:macerator`, `yet_another_industrialization:dragon_egg_energy_siphon`, and `spectrum:fusion_shrine` types, you would organize them as as `shaped`, `shapeless`, `dragon_egg_energy_siphon`, `macerator`, and `fusion_shrine`. Recipe type sections hsould be headed by a block of the following format:
+
+```
+   // ---------------------//
+   // ------ SHAPED ------ //
+   // ---------------------//
+```
+
+In addition to the file organization, the code should also match a certain formatting. Any utility function should be declared at the top of the function, for example this could be the string utilities or custom recipe utilities. For each new recipe there should be a title listing the English in-game name for the item. For example, a recipe for the `modern_industrialization:steel_gear` should be headed with: `// -- STEEL GEAR -- //`
+
+New materials, fluids, etc. for MI should be placed in the corresponding startup script in the `modern_industrialization` subfolder. It is expected to match the formatting given within that file. Any new multiblocks should utilize the ShapeBuilder functionality added by Modern Industrialization.
+
+## Design Philosophy
+
+While changes are welcome, they should fall in line with how the pack is overall designed. I've spent the last three months modifying progression, recipes, and designing a questbook to best guide players through the pack. To ensure the best outcome, I adhered to the following principles:
+
+- The pack must be focused on the Modern Industrialization mod. While there are other big mods in the pack like Spectrum, TechReborn, and the Twilight Forest, the player should be expected to use Modern Industrialization to advance.
+- Recipes should complete in a reasonable amount of time. Extreme time-gating is not a fun feature, and waiting for a machine to finish a recipe should not be encouraged. The player should be constantly moving forward in progression, not moving a bit, waiting an hour, then moving a bit more. Additionally, this applies for recipe requirements, it should not take real life days to acquire the amount of materials to progress forward. I do not want an endgame that requires you to AFK while machines work.
+- Quest rewards _should_ be rewarding. As they may seem OP right now, they aren't in the grand scheme of things. The player will still need to setup automation for any material they might get as a reward, as they will need significantly more of it in the future. Rewards should be used to help the player progress and to activate the dopamine receptors when they complete something. That being said, rewards walk a thin line of what is too good and what is trash. Rewards should be acquirable in the players current stage of the game, and shouldn't be in a quantity that nullifies a significant part of progression.
+- No complex processing lines for a mediocre outcomes. Long processing lines to produce a single ingot to make a pickaxe are not welcome. If a processing line is to be added, it should actually add something to the game. The best processing lines are the ones added to flesh out progression. As an example, the need to create a chemical line to create polyethylene is rewarding and is a good gate of progression into the next tiers of machines.
+- Always moving forward. Anything added, whether recipe, machine, etc. should always be in a way to progress forward. This branches off from the previous point a bit, but users shouldn't have to build a complex processing line, that once complete, they will never use again.
+- Hard, but rewarding. The player should be expected to have to think and figure out things in the pack. The questbook already does a good idea showing what needs to be made to progress, and doesn't hold their hand for the entire process. A strong expectation of good usage of REI is expected for the player. If you lay out each machine part or subcomponent they need to make, it will add too much bloat to the questbook and take agency from the player.
+- Empower the player, but slowly. The player should be given new tools and items to help make their life easier as they progress, but they should not be given these tools either all at once or way too early in the pack. A good example of this is Creative Flight. While some packs unlock this sooner than later, where it is at now is a good spot, requiring a decent amount of work to get to for a great payoff.
+
+## Configuration Changes
+
+Changes to existing configs should only be done to:
+
+1. Improve the pack by addressing any issues or adding missing features.
+2. Improve the balancing in the pack
+3. Improve the end-user experience
+
+## Making New Releases
+
+- To initate a release, update `CHANGELOG.MD` with a new version, [Unreleased] can be used as a staging ground for changes.
+  - [Unreleased] changes are included in the changelog for builds created from the dev branch.
+- Release type, overrides, and otherwise can be set in pakku.json
+- Give the workflow read/write permissions
+
+## Building a server pack locally
+
+Server packs rely on [Forge-Server-Starter](https://github.com/HellBz/Forge-Server-Starter/) which is not included in this repo. To include it when exporting serverpacks, place the [latest released jar](https://github.com/HellBz/Forge-Server-Starter/releases/latest/download/minecraft_server.jar) inside of `.pakku/server-overrides/`
+
+## AI Usage Policy
+
+Zero-tolerance policy for AI generated code, assets, and pull-requests. Take your slop elsewhere.
+
+[^1]: Modrinth buildscripts are disabled by default, as most pack developers do not plan on releasing to modrinth due to important mods not being present, but can be easily uncommented if you do. If so, also add a `MODRINTH_TOKEN` and `MODRINTH_ID` secret and variable.

@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "R": {
-      "tag": "c:rods/ostrum"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "R": {
+            "tag": "c:rods/ostrum"
+        },
+        "b": {
+            "item": "modern_industrialization:ostrum_bolt"
+        }
     },
-    "b": {
-      "item": "modern_industrialization:ostrum_bolt"
+    "pattern": ["bRb", "R R", "bRb"],
+    "result": {
+        "count": 2,
+        "id": "modern_industrialization:ostrum_ring"
     }
-  },
-  "pattern": [
-    "bRb",
-    "R R",
-    "bRb"
-  ],
-  "result": {
-    "count": 2,
-    "id": "modern_industrialization:ostrum_ring"
-  }
 }

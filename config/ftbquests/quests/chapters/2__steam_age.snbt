@@ -8,6 +8,7 @@
 		id: "modern_industrialization:bronze_boiler"
 	}
 	id: "70E1C9FCB66EEC7E"
+	images: [ ]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -161,7 +162,7 @@
 				item: { count: 1, id: "hangglider:reinforced_hang_glider" }
 				type: "item"
 			}]
-			x: 33.5d
+			x: 34.0d
 			y: 4.5d
 		}
 		{
@@ -412,8 +413,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(modern_industrialization:fluid_pipes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["587FF748139BA962"]
@@ -1771,7 +1772,7 @@
 				id: "60C91BC029546E34"
 				type: "checkmark"
 			}]
-			x: 2.0d
+			x: 1.0d
 			y: -3.5d
 		}
 		{
@@ -1983,7 +1984,7 @@
 				item: { count: 1, id: "modern_industrialization:trash_can" }
 				type: "item"
 			}]
-			x: 32.5d
+			x: 33.0d
 			y: 4.5d
 		}
 		{
@@ -2121,7 +2122,7 @@
 				item: { count: 1, id: "mi_sound_addon:mallet" }
 				type: "item"
 			}]
-			x: 31.5d
+			x: 31.0d
 			y: 4.5d
 		}
 		{
@@ -3370,8 +3371,8 @@
 				id: "25215EADA043FD7E"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: -3.5d
+			x: 0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["26A89C51A7B9FFDE"]
@@ -3763,7 +3764,7 @@
 					type: "item"
 				}
 			]
-			x: 32.5d
+			x: 33.0d
 			y: 5.5d
 		}
 		{
@@ -3865,6 +3866,150 @@
 			}]
 			x: 21.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["26A89C51A7B9FFDE"]
+			id: "0F05F3F7EB78DAB5"
+			rewards: [
+				{
+					id: "37724F37996B14F9"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "10154DAA48624EB6"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "466DFEC21F8C7A56"
+					table_id: 4928307245111940372L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "48E66ADFA65979F0"
+					item: { count: 1, id: "kubejs:steel_helmet" }
+					type: "item"
+				}
+				{
+					id: "62A024A09AD28D30"
+					item: { count: 1, id: "kubejs:steel_chestplate" }
+					type: "item"
+				}
+				{
+					id: "461C595621CEBBF6"
+					item: { count: 1, id: "kubejs:steel_leggings" }
+					type: "item"
+				}
+				{
+					id: "2FD2CFD9FF612F99"
+					item: { count: 1, id: "kubejs:steel_boots" }
+					type: "item"
+				}
+				{
+					id: "11441BB5629F7B2B"
+					item: { count: 1, id: "kubejs:steel_pickaxe" }
+					type: "item"
+				}
+			]
+			x: 32.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["74B14DB45316C4F8"]
+			id: "2A5244DADFD63606"
+			rewards: [
+				{
+					count: 2
+					id: "2DE69048F85AA15F"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "39BBF8A06569EEC0"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C848BEAC2E83894"
+					table_id: 3409273157072801564L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "132A6E50E6FFAE77"
+					item: { count: 1, id: "kubejs:bronze_helmet" }
+					type: "item"
+				}
+				{
+					id: "79973E655935D7C2"
+					item: { count: 1, id: "kubejs:bronze_chestplate" }
+					type: "item"
+				}
+				{
+					id: "203311C49D0DB1DD"
+					item: { count: 1, id: "kubejs:bronze_leggings" }
+					type: "item"
+				}
+				{
+					id: "78E3F8E7A9D8CC51"
+					item: { count: 1, id: "kubejs:bronze_boots" }
+					type: "item"
+				}
+				{
+					id: "041CFA0CD3F2D4C0"
+					item: { count: 1, id: "kubejs:bronze_pickaxe" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0F05F3F7EB78DAB5"]
+			id: "7740CF1C863603C4"
+			rewards: [
+				{
+					id: "5FA1E5EA49EC498F"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "4CA9CA32FBFE89BF"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0E9450E4B9CAA946"
+					table_id: 4928307245111940372L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "7C7D6DD46246D099"
+				item: { count: 1, id: "kubejs:diamond_upgrade_smithing_template" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: 5.5d
 		}
 	]
 }

@@ -1,11 +1,11 @@
 ---
 navigation:
-  title: "Boss Crusher"
-  icon: "modern_industrialization:boss_crusher"
-  position: 1
-  parent: stcm:machines.md
+    title: 'Boss Crusher'
+    icon: 'modern_industrialization:boss_crusher'
+    position: 1
+    parent: stcm:machines.md
 item_ids:
-  - modern_industrialization:boss_crusher
+    - modern_industrialization:boss_crusher
 ---
 
 # Boss Crusher
@@ -17,6 +17,3 @@ item_ids:
 The Boss Crusher is a machine that allows to easily farm boss mob drops, which are useful for the creation of some materials.
 
 <Recipe id="statech:modern_industrialization/boss_crusher" />
-
-
-

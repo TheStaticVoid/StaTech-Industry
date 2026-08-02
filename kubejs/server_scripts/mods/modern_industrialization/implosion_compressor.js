@@ -3,17 +3,18 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let st = (id) => `statech:modern_industrialization/implosion_compressor/${id}`;
+ServerEvents.recipes((event) => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
+    let st = (id) =>
+        `statech:modern_industrialization/implosion_compressor/${id}`;
 
     // -- IMPLOSION COMPRESSOR REMOVED RECIPES -- //
     const REMOVED_RECIPE = [
         mi('electric_age/component/implosion_compressor/singularity'),
         mi('vanilla_recipes/implosion_compressor/nether_star'),
-        mi('materials/implosion_compressor/beryllium')
-    ]
-    REMOVED_RECIPE.forEach(id => event.remove({id: id}));
+        mi('materials/implosion_compressor/beryllium'),
+    ];
+    REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
     // -- ULTRADENSE METAL BALL -- //
     implosionCompressor(
@@ -25,9 +26,9 @@ ServerEvents.recipes(event => {
             { amount: 64, item: mi('tungstensteel_large_plate') },
             { amount: 64, item: mi('enderium_plate') },
             { amount: 64, item: kj('core_fragment') },
-            { amount: 8, item: mi('nuke') }
+            { amount: 8, item: mi('nuke') },
         ],
-        [ { amount: 1, item: mi('ultradense_metal_ball') } ]
+        [{ amount: 1, item: mi('ultradense_metal_ball') }]
     );
 
     // -- ULTRADENSE METAL BALL -- //
@@ -36,12 +37,23 @@ ServerEvents.recipes(event => {
         st('abs_building_brick'),
         1,
         20,
-        [ 
+        [
             { amount: 2, item: mi('acrylonitrile_butadiene_styrene_dust') },
-            { amount: 1, item: mc('red_dye') }
-
-         ],
-        [ { amount: 1, item: kj('abs_building_brick') } ]
+            { amount: 1, item: mc('red_dye') },
+        ],
+        [{ amount: 1, item: kj('abs_building_brick') }]
     );
-   
+
+    // -- UU MATTER -- //
+    implosionCompressor(
+        event,
+        st('uu_matter'),
+        1,
+        10,
+        [
+            { amount: 64, item: kj('scrap') },
+            { amount: 1, item: mi('industrial_tnt') },
+        ],
+        [{ amount: 1, item: kj('uu_matter') }]
+    );
 });

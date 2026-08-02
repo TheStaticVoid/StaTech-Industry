@@ -1,11 +1,11 @@
 ---
 navigation:
-  title: "Arrayed Wiremill"
-  icon: "mi_tweaks:arrayed_wiremill"
-  position: 6
-  parent: stcm:batching_machines.md
+    title: 'Arrayed Wiremill'
+    icon: 'mi_tweaks:arrayed_wiremill'
+    position: 6
+    parent: stcm:batching_machines.md
 item_ids:
-  - mi_tweaks:arrayed_wiremill
+    - mi_tweaks:arrayed_wiremill
 ---
 
 # Arrayed Wiremill
@@ -17,6 +17,3 @@ item_ids:
 The Arrayed Wiremill is a batching version of the Wiremill. It can do batches of 8 at a 10% EU discount!
 
 <Recipe id="statech:mi_tweaks/arrayed_wiremill" />
-
-
-

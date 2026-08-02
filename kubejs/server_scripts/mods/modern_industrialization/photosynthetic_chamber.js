@@ -3,27 +3,32 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
-    let st = (id) => `statech:modern_industrialization/photosynthetic_chamber/${id}`;
-    
+ServerEvents.recipes((event) => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
+    let st = (id) =>
+        `statech:modern_industrialization/photosynthetic_chamber/${id}`;
+
     // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let photoChamber = (id, eu, duration, item_inputs, item_outputs, fluid_inputs) => {
+    let photoChamber = (
+        id,
+        eu,
+        duration,
+        item_inputs,
+        item_outputs,
+        fluid_inputs
+    ) => {
         let newRecipe = {
             type: mi('photosynthetic_chamber'),
             eu: eu,
-            duration: duration
-        }
+            duration: duration,
+        };
 
-        if (item_inputs)    
-            newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs)
-            newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs)
-            newRecipe['fluid_inputs'] = fluid_inputs;
+        if (item_inputs) newRecipe['item_inputs'] = item_inputs;
+        if (item_outputs) newRecipe['item_outputs'] = item_outputs;
+        if (fluid_inputs) newRecipe['fluid_inputs'] = fluid_inputs;
 
         event.custom(newRecipe).id(id);
-    }
+    };
 
     // This is all the seeds in the game with their respective outputs
     const recipeInOut = [
@@ -33,8 +38,8 @@ ServerEvents.recipes(event => {
             [
                 { amount: 1, item: mc('wheat') },
                 { amount: 1, item: mc('wheat'), probability: 0.5 },
-                { amount: 1, item: mc('wheat_seeds'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('wheat_seeds'), probability: 0.5 },
+            ],
         ],
 
         // Pumpkin
@@ -42,8 +47,8 @@ ServerEvents.recipes(event => {
             mc('pumpkin_seeds'),
             [
                 { amount: 1, item: mc('pumpkin') },
-                { amount: 1, item: mc('pumpkin_seeds'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('pumpkin_seeds'), probability: 0.5 },
+            ],
         ],
 
         // Melon
@@ -51,8 +56,8 @@ ServerEvents.recipes(event => {
             mc('melon_seeds'),
             [
                 { amount: 1, item: mc('melon') },
-                { amount: 1, item: mc('melon_seeds'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('melon_seeds'), probability: 0.5 },
+            ],
         ],
 
         // Beetroot
@@ -61,8 +66,8 @@ ServerEvents.recipes(event => {
             [
                 { amount: 1, item: mc('beetroot') },
                 { amount: 1, item: mc('beetroot'), probability: 0.5 },
-                { amount: 1, item: mc('beetroot_seeds'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('beetroot_seeds'), probability: 0.5 },
+            ],
         ],
 
         // Carrot
@@ -70,8 +75,8 @@ ServerEvents.recipes(event => {
             mc('carrot'),
             [
                 { amount: 1, item: mc('carrot') },
-                { amount: 1, item: mc('carrot'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('carrot'), probability: 0.5 },
+            ],
         ],
 
         // Potato
@@ -80,8 +85,18 @@ ServerEvents.recipes(event => {
             [
                 { amount: 1, item: mc('potato') },
                 { amount: 1, item: mc('potato'), probability: 0.5 },
-                { amount: 1, item: mc('poisonous_potato'), probability: 0.02 }
-            ]
+                { amount: 1, item: mc('poisonous_potato'), probability: 0.02 },
+            ],
+        ],
+
+        // Flax
+        [
+            su('flax_seeds'),
+            [
+                { amount: 1, item: su('flax') },
+                { amount: 1, item: su('flax'), probability: 0.5 },
+                { amount: 1, item: su('flax_seeds'), probability: 0.02 },
+            ],
         ],
 
         // Asparagus
@@ -90,8 +105,8 @@ ServerEvents.recipes(event => {
             [
                 { amount: 1, item: ed('asparagus') },
                 { amount: 1, item: ed('asparagus'), probability: 0.5 },
-                { amount: 1, item: ed('asparagus_seeds'), probability: 0.5 }
-            ]
+                { amount: 1, item: ed('asparagus_seeds'), probability: 0.5 },
+            ],
         ],
 
         // Sweet Potato
@@ -99,8 +114,8 @@ ServerEvents.recipes(event => {
             ed('sweet_potato'),
             [
                 { amount: 1, item: ed('sweet_potato') },
-                { amount: 1, item: ed('sweet_potato'), probability: 0.5 }
-            ]
+                { amount: 1, item: ed('sweet_potato'), probability: 0.5 },
+            ],
         ],
 
         // Chili Pepper
@@ -109,8 +124,8 @@ ServerEvents.recipes(event => {
             [
                 { amount: 1, item: ed('chili_pepper') },
                 { amount: 1, item: ed('chili_pepper'), probability: 0.5 },
-                { amount: 1, item: ed('chili_pepper_seeds'), probability: 0.5 }
-            ]
+                { amount: 1, item: ed('chili_pepper_seeds'), probability: 0.5 },
+            ],
         ],
 
         // Peanut
@@ -118,8 +133,8 @@ ServerEvents.recipes(event => {
             ed('peanut'),
             [
                 { amount: 1, item: ed('peanut') },
-                { amount: 1, item: ed('peanut'), probability: 0.5 }
-            ]
+                { amount: 1, item: ed('peanut'), probability: 0.5 },
+            ],
         ],
 
         // Cabbage
@@ -128,8 +143,8 @@ ServerEvents.recipes(event => {
             [
                 { amount: 1, item: fd('cabbage') },
                 { amount: 1, item: fd('cabbage'), probability: 0.5 },
-                { amount: 1, item: fd('cabbage_seeds'), probability: 0.5 }
-            ]
+                { amount: 1, item: fd('cabbage_seeds'), probability: 0.5 },
+            ],
         ],
 
         // Tomato
@@ -138,8 +153,8 @@ ServerEvents.recipes(event => {
             [
                 { amount: 1, item: fd('tomato') },
                 { amount: 1, item: fd('rotten_tomato'), probability: 0.02 },
-                { amount: 1, item: fd('tomato_seeds'), probability: 0.5 }
-            ]
+                { amount: 1, item: fd('tomato_seeds'), probability: 0.5 },
+            ],
         ],
 
         // Onion
@@ -147,8 +162,8 @@ ServerEvents.recipes(event => {
             fd('onion'),
             [
                 { amount: 1, item: fd('onion') },
-                { amount: 1, item: fd('onion'), probability: 0.5 }
-            ]
+                { amount: 1, item: fd('onion'), probability: 0.5 },
+            ],
         ],
 
         // Rice
@@ -157,8 +172,8 @@ ServerEvents.recipes(event => {
             [
                 { amount: 1, item: fd('rice_panicle') },
                 { amount: 1, item: fd('rice_panicle'), probability: 0.5 },
-                { amount: 1, item: fd('rice'), probability: 0.5 }
-            ]
+                { amount: 1, item: fd('rice'), probability: 0.5 },
+            ],
         ],
 
         // Cactus
@@ -166,8 +181,8 @@ ServerEvents.recipes(event => {
             mc('cactus'),
             [
                 { amount: 2, item: mc('cactus') },
-                { amount: 1, item: mc('cactus'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('cactus'), probability: 0.5 },
+            ],
         ],
 
         // Sugar cane
@@ -175,8 +190,8 @@ ServerEvents.recipes(event => {
             mc('sugar_cane'),
             [
                 { amount: 2, item: mc('sugar_cane') },
-                { amount: 1, item: mc('sugar_cane'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('sugar_cane'), probability: 0.5 },
+            ],
         ],
 
         // Cocoa Beans
@@ -184,8 +199,8 @@ ServerEvents.recipes(event => {
             mc('cocoa_beans'),
             [
                 { amount: 2, item: mc('cocoa_beans') },
-                { amount: 2, item: mc('cocoa_beans'), probability: 0.5 }
-            ]
+                { amount: 2, item: mc('cocoa_beans'), probability: 0.5 },
+            ],
         ],
 
         // Kelp
@@ -193,8 +208,8 @@ ServerEvents.recipes(event => {
             mc('kelp'),
             [
                 { amount: 4, item: mc('kelp') },
-                { amount: 4, item: mc('kelp'), probability: 0.5 }
-            ]
+                { amount: 4, item: mc('kelp'), probability: 0.5 },
+            ],
         ],
 
         // Bamboo
@@ -202,8 +217,8 @@ ServerEvents.recipes(event => {
             mc('bamboo'),
             [
                 { amount: 4, item: mc('bamboo') },
-                { amount: 4, item: mc('bamboo'), probability: 0.5 }
-            ]
+                { amount: 4, item: mc('bamboo'), probability: 0.5 },
+            ],
         ],
 
         // Vine
@@ -211,8 +226,8 @@ ServerEvents.recipes(event => {
             mc('vine'),
             [
                 { amount: 1, item: mc('vine') },
-                { amount: 1, item: mc('vine'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('vine'), probability: 0.5 },
+            ],
         ],
 
         // Sweet Berries
@@ -220,8 +235,8 @@ ServerEvents.recipes(event => {
             mc('sweet_berries'),
             [
                 { amount: 1, item: mc('sweet_berries') },
-                { amount: 1, item: mc('sweet_berries'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('sweet_berries'), probability: 0.5 },
+            ],
         ],
 
         // Glow Berries
@@ -229,8 +244,8 @@ ServerEvents.recipes(event => {
             mc('glow_berries'),
             [
                 { amount: 1, item: mc('glow_berries') },
-                { amount: 1, item: mc('glow_berries'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('glow_berries'), probability: 0.5 },
+            ],
         ],
 
         // Brown Mushrooom
@@ -238,8 +253,8 @@ ServerEvents.recipes(event => {
             mc('brown_mushroom'),
             [
                 { amount: 1, item: mc('brown_mushroom') },
-                { amount: 1, item: mc('brown_mushroom'), probability: 0.5 }
-            ]
+                { amount: 1, item: mc('brown_mushroom'), probability: 0.5 },
+            ],
         ],
 
         // Red Mushroom
@@ -247,12 +262,12 @@ ServerEvents.recipes(event => {
             mc('red_mushroom'),
             [
                 { amount: 1, item: mc('red_mushroom') },
-                { amount: 1, item: mc('red_mushroom'), probability: 0.5 }
-            ]
-        ]
+                { amount: 1, item: mc('red_mushroom'), probability: 0.5 },
+            ],
+        ],
     ];
     // Create recipes for each of the items in the list
-    recipeInOut.forEach(recipe => {
+    recipeInOut.forEach((recipe) => {
         let input = recipe[0];
         let output = recipe[1];
         let namespace = input.split(':')[0];
@@ -262,41 +277,49 @@ ServerEvents.recipes(event => {
             st(`${namespace}_${itemName}`),
             8,
             600,
-            [ { amount: 1, item: input, probability: 0.0 } ],
+            [{ amount: 1, item: input, probability: 0.0 }],
             output,
-            [ { amount: 100, fluid: mc('water') } ]
+            [{ amount: 100, fluid: mc('water') }]
         );
     });
 
-    const flowers = Ingredient.of('#minecraft:flowers').except(['#minecraft:leaves', '@spectrum', 'minecraft:chorus_flower', '#minecraft:saplings']).getStacks().toArray();
-    flowers.forEach(recipe => {
+    const flowers = Ingredient.of('#minecraft:flowers')
+        .except([
+            '#minecraft:leaves',
+            '@spectrum',
+            'minecraft:chorus_flower',
+            '#minecraft:saplings',
+        ])
+        .getStacks()
+        .toArray();
+    flowers.forEach((recipe) => {
         let namespace = recipe.id.split(':')[0];
         let itemName = recipe.id.split(':')[1];
         photoChamber(
             st(`${namespace}_${itemName}`),
             8,
             600,
-            [ { amount: 1, item: recipe.id, probability: 0.0 } ],
-            [ 
+            [{ amount: 1, item: recipe.id, probability: 0.0 }],
+            [
                 { amount: 1, item: recipe.id },
                 { amount: 1, item: recipe.id, probability: 0.5 },
             ],
-            [ { amount: 100, fluid: mc('water') } ]
+            [{ amount: 100, fluid: mc('water') }]
         );
     });
 
     // These use a different fluid and are omitted from the original list
-    // -- NETHER WART -- // 
+    // -- NETHER WART -- //
     photoChamber(
         st('minecraft_nether_wart'),
         8,
         600,
-        [ { amount: 1, item: mc('nether_wart'), probability: 0.0 } ],
-        [ 
+        [{ amount: 1, item: mc('nether_wart'), probability: 0.0 }],
+        [
             { amount: 1, item: mc('nether_wart') },
-            { amount: 1, item: mc('nether_wart'), probability: 0.5 }
+            { amount: 1, item: mc('nether_wart'), probability: 0.5 },
         ],
-        [ { amount: 100, fluid: mc('lava') } ]
+        [{ amount: 100, fluid: mc('lava') }]
     );
 
     // -- CHORUS FLOWER -- //
@@ -304,12 +327,12 @@ ServerEvents.recipes(event => {
         st('minecraft_chorus_fruit'),
         8,
         600,
-        [ { amount: 1, item: mc('chorus_flower'), probability: 0.0 } ],
-        [ 
+        [{ amount: 1, item: mc('chorus_flower'), probability: 0.0 }],
+        [
             { amount: 1, item: mc('chorus_fruit') },
             { amount: 1, item: mc('chorus_fruit'), probability: 0.5 },
-            { amount: 1, item: mc('chorus_flower'), probability: 0.5 }
+            { amount: 1, item: mc('chorus_flower'), probability: 0.5 },
         ],
-        [ { amount: 100, fluid: mi('liquid_ender') } ]
+        [{ amount: 100, fluid: mi('liquid_ender') }]
     );
 });

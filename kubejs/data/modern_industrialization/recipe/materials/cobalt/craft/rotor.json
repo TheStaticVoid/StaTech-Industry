@@ -1,24 +1,20 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "B": {
-      "item": "modern_industrialization:cobalt_blade"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "B": {
+            "item": "modern_industrialization:cobalt_blade"
+        },
+        "R": {
+            "item": "modern_industrialization:cobalt_ring"
+        },
+        "b": {
+            "item": "modern_industrialization:cobalt_bolt"
+        }
     },
-    "R": {
-      "item": "modern_industrialization:cobalt_ring"
-    },
-    "b": {
-      "item": "modern_industrialization:cobalt_bolt"
+    "pattern": ["bBb", "BRB", "bBb"],
+    "result": {
+        "count": 1,
+        "id": "modern_industrialization:cobalt_rotor"
     }
-  },
-  "pattern": [
-    "bBb",
-    "BRB",
-    "bBb"
-  ],
-  "result": {
-    "count": 1,
-    "id": "modern_industrialization:cobalt_rotor"
-  }
 }

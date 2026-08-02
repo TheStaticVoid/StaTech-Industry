@@ -3,6 +3,6 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-MIMachineEvents.addEbfTiers(event => {
+MIMachineEvents.addEbfTiers((event) => {
     event.add(mi('tungstensteel_coil'), 1024, 'Tungstensteel');
 });

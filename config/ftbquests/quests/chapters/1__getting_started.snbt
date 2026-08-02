@@ -7,6 +7,7 @@
 		id: "modern_industrialization:forge_hammer"
 	}
 	id: "37521162FC1896A6"
+	images: [ ]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -108,40 +109,6 @@
 			}]
 			x: 2.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["35CA2712BC60C09E"]
-			id: "0BD4ABE561F1F2F7"
-			rewards: [
-				{
-					id: "137E9E978EB79232"
-					item: {
-						count: 1
-						id: "kubejs:coin_common"
-					}
-					type: "item"
-				}
-				{
-					id: "70A5BDBCE7108D5E"
-					type: "xp"
-					xp: 10
-				}
-				{
-					exclude_from_claim_all: true
-					id: "56BCAC6ACB04C00F"
-					table_id: 2474147679282294712L
-					type: "random"
-				}
-			]
-			shape: "rsquare"
-			size: 1.0d
-			tasks: [{
-				id: "1610BCD0D7539A2C"
-				item: { count: 1, id: "justhammers:iron_hammer" }
-				type: "item"
-			}]
-			x: 5.5d
-			y: -2.0d
 		}
 		{
 			dependencies: ["7A29CB04322D488B"]
@@ -480,7 +447,7 @@
 				item: { count: 1, id: "bankstorage:bank_dock" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.0d
 			y: -2.0d
 		}
 		{

@@ -1,12 +1,12 @@
 // -----------------------------------------
 // CREATED BY DINO FOR USE IN
-// STATECH INDUSTRY UNOFFICIAL
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes((event) => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:functionalstorage/${id}`;
-    
+
     // -- FUNCTIONAL STORAGE REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         fs('copper_upgrade'),
@@ -34,71 +34,66 @@ ServerEvents.recipes(event => {
         fs('fluid_4'),
         fs('framed_fluid_1'),
         fs('framed_fluid_2'),
-        fs('framed_fluid_4')
-    ]; 
-    REMOVED_RECIPES.forEach(id => event.remove( {id: id} ));
+        fs('framed_fluid_4'),
+    ];
+    REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
-    // -- ALUMINUM (COPPER) UPGRADE -- // 
-    event.shaped(fs('copper_upgrade'), [
-        'PDP'
-    ],
-    {
-        D: '#functionalstorage:drawer',
-        P: '#c:plates/aluminum'
-    })
-    .id(st('aluminum_upgrade')); 
+    // -- ALUMINUM (COPPER) UPGRADE -- //
+    event
+        .shaped(fs('copper_upgrade'), ['PDP'], {
+            D: '#functionalstorage:drawer',
+            P: '#c:plates/aluminum',
+        })
+        .id(st('aluminum_upgrade'));
 
-    // -- STAINLESS STEEL (GOLD) UPGRADE -- // 
-    event.shaped(fs('gold_upgrade'), [
-        'PUP'
-    ],
-    {
-        U: fs('copper_upgrade'),
-        P: '#c:plates/stainless_steel'
-    })
-    .id(st('stainless_steel_upgrade')); 
+    // -- STAINLESS STEEL (GOLD) UPGRADE -- //
+    event
+        .shaped(fs('gold_upgrade'), ['PUP'], {
+            U: fs('copper_upgrade'),
+            P: '#c:plates/stainless_steel',
+        })
+        .id(st('stainless_steel_upgrade'));
 
-    // -- TITANIUM (DIAMOND) UPGRADE -- // 
-    event.shaped(fs('diamond_upgrade'), [
-        'PUP'
-    ],
-    {
-        U: fs('gold_upgrade'),
-        P: '#c:plates/titanium'
-    })
-    .id(st('titanium_upgrade')); 
+    // -- TITANIUM (DIAMOND) UPGRADE -- //
+    event
+        .shaped(fs('diamond_upgrade'), ['PUP'], {
+            U: fs('gold_upgrade'),
+            P: '#c:plates/titanium',
+        })
+        .id(st('titanium_upgrade'));
 
-    // -- TUNGSTENSTEEL (NETHERITE) UPGRADE -- // 
-    event.shaped(fs('netherite_upgrade'), [
-        'PUP'
-    ],
-    {
-        U: fs('diamond_upgrade'),
-        P: '#c:plates/tungstensteel'
-    })
-    .id(st('tungstensteel_upgrade')); 
+    // -- TUNGSTENSTEEL (NETHERITE) UPGRADE -- //
+    event
+        .shaped(fs('netherite_upgrade'), ['PUP'], {
+            U: fs('diamond_upgrade'),
+            P: '#c:plates/tungstensteel',
+        })
+        .id(st('tungstensteel_upgrade'));
 
-    // -- IRON DOWNGRADE -- // 
-    event.shaped(fs('iron_downgrade'), [
-        'PDP'
-    ],
-    {
-        D: '#functionalstorage:drawer',
-        P: '#c:plates/iron'
-    })
-    .id(st('iron_downgrade')); 
+    // -- IRON DOWNGRADE -- //
+    event
+        .shaped(fs('iron_downgrade'), ['PDP'], {
+            D: '#functionalstorage:drawer',
+            P: '#c:plates/iron',
+        })
+        .id(st('iron_downgrade'));
 
     // -- STORAGE CONTROLLER -- //
     event.replaceInput(
-        [{ output: fs('storage_controller') }, { output: fs('framed_storage_controller') }],
+        [
+            { output: fs('storage_controller') },
+            { output: fs('framed_storage_controller') },
+        ],
         mc('comparator'),
         mi('analog_circuit')
-    )
+    );
 
     event.replaceInput(
-        [{ output: fs('controller_extension')}, {output: fs('framed_controller_extension') }],
+        [
+            { output: fs('controller_extension') },
+            { output: fs('framed_controller_extension') },
+        ],
         mc('repeater'),
         mc('ender_eye')
-    )
-
+    );
 });

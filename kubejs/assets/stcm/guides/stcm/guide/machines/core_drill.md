@@ -1,11 +1,11 @@
 ---
 navigation:
-  title: "Core Drill"
-  icon: "modern_industrialization:core_drill"
-  position: 3
-  parent: stcm:machines.md
+    title: 'Core Drill'
+    icon: 'modern_industrialization:core_drill'
+    position: 3
+    parent: stcm:machines.md
 item_ids:
-  - modern_industrialization:core_drill
+    - modern_industrialization:core_drill
 ---
 
 # Core Drill
@@ -17,6 +17,3 @@ item_ids:
 The Core Drill is a machine that can drill up Core Fragments from the deepest parts of the Overworld, using Desh Drills.
 
 <Recipe id="statech:modern_industrialization/core_drill" />
-
-
-

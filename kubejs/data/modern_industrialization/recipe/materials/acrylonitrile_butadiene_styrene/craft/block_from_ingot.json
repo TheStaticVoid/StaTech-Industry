@@ -1,21 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "x": {
-      "tag": "c:ingots/acrylonitrile_butadiene_styrene"
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "x": {
+            "tag": "c:ingots/acrylonitrile_butadiene_styrene"
+        },
+        "y": {
+            "item": "modern_industrialization:acrylonitrile_butadiene_styrene_ingot"
+        }
     },
-    "y": {
-      "item": "modern_industrialization:acrylonitrile_butadiene_styrene_ingot"
+    "pattern": ["xxx", "xyx", "xxx"],
+    "result": {
+        "count": 1,
+        "id": "modern_industrialization:acrylonitrile_butadiene_styrene_block"
     }
-  },
-  "pattern": [
-    "xxx",
-    "xyx",
-    "xxx"
-  ],
-  "result": {
-    "count": 1,
-    "id": "modern_industrialization:acrylonitrile_butadiene_styrene_block"
-  }
 }

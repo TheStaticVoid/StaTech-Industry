@@ -5,21 +5,27 @@
 
 let QUANTUM_SPACE_PROBE_LAUNCHER;
 
-MIMachineEvents.registerRecipeTypes(e => {
-    QUANTUM_SPACE_PROBE_LAUNCHER = e.register('quantum_space_probe_launcher')
+MIMachineEvents.registerRecipeTypes((e) => {
+    QUANTUM_SPACE_PROBE_LAUNCHER = e
+        .register('quantum_space_probe_launcher')
         .withItemInputs()
         .withItemOutputs();
 });
 
-
-
-MIMachineEvents.registerMachines(e => {
+MIMachineEvents.registerMachines((e) => {
     const caloriteCasing = e.memberOfBlock(mi('calorite_machine_casing'));
-    const caloritePipeCasing = e.memberOfBlock(mi('calorite_machine_casing_pipe'));
+    const caloritePipeCasing = e.memberOfBlock(
+        mi('calorite_machine_casing_pipe')
+    );
     const tungstensteelCoil = e.memberOfBlock(mi('tungstensteel_coil'));
-    const spaceProbeHatch = e.hatchOf('item_input', 'item_output', 'energy_input');
+    const spaceProbeHatch = e.hatchOf(
+        'item_input',
+        'item_output',
+        'energy_input'
+    );
 
-    const quantumSpaceProbeBuilder = e.layeredShape('calorite_machine_casing', [
+    const quantumSpaceProbeBuilder = e
+        .layeredShape('calorite_machine_casing', [
         //y=
         [ ' ccc ', '  c  ', '  c  ', '     ', '     ', '     ', '     ', '     ' ],
         [ 'cCCCc', ' CPC ', ' CPC ', '  T  ', '  T  ', '  T  ', '  T  ', '  T  ' ],
@@ -43,16 +49,16 @@ MIMachineEvents.registerMachines(e => {
         // REI Display configuration
         e.progressBar(77, 33, 'rocket'),
         // REI Item inputs, item outputs, fluid inputs, fluid outputs
-        itemInputs => itemInputs.addSlot(56, 35), 
-        itemOutputs => itemOutputs.addSlots(102, 35, 4, 4),
-        fluidInputs => {}, 
-        fluidOutputs => {},
+        (itemInputs) => itemInputs.addSlot(56, 35),
+        (itemOutputs) => itemOutputs.addSlots(102, 35, 4, 4),
+        (fluidInputs) => {},
+        (fluidOutputs) => {},
 
-        /* Model Configuration */ 
+        /* Model Configuration */
         'calorite_machine_casing', // casing of the controller
         'space_probe_launcher', // overlay folder
         true, // front overlay
         false, // top overlay
-        false, // side overlay
+        false // side overlay
     );
 });

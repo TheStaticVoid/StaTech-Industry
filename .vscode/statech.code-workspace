@@ -1,0 +1,46 @@
+{
+    "folders": [
+        {
+            "name": "Root",
+            "path": "../",
+        },
+        {
+            "name": "KubeJS",
+            "path": "../kubejs"
+        },
+        {
+            "name": "Configs",
+            "path": "../config"
+        },
+        {
+            "name": "Configs Default",
+            "path": "../defaultconfigs"
+        },
+        {
+            "name": "Quests",
+            "path": "../config/ftbquests/quests"
+        }
+    ],
+    "settings": {
+        "editor.formatOnType": false, // required
+        "editor.formatOnPaste": true, // optional
+        "editor.formatOnSave": true, // optional
+        "editor.formatOnSaveMode": "file", // required to format on save
+        "files.autoSave": "off", // optional but recommended
+        "vs-code-prettier-eslint.prettierLast": true,
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "dbaeumer.vscode-eslint",
+            "esbenp.prettier-vscode",
+            "editorconfig.editorconfig",
+            "prunoideae.probejs"
+        ]
+    }
+}

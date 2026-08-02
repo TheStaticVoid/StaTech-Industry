@@ -5,13 +5,14 @@
 
 let LASER_ENGRAVER;
 
-MIMachineEvents.registerRecipeTypes(event => { 
-    LASER_ENGRAVER = event.register('laser_engraver')
+MIMachineEvents.registerRecipeTypes((event) => {
+    LASER_ENGRAVER = event
+        .register('laser_engraver')
         .withItemInputs()
         .withItemOutputs();
 });
 
-MIMachineEvents.registerMachines(event => {
+MIMachineEvents.registerMachines((event) => {
     // -- LASER ENGRAVER SINGLE BLOCK -- //
     event.craftingSingleBlock(
         // General parameters
@@ -34,12 +35,12 @@ MIMachineEvents.registerMachines(event => {
         // Capacity of fluid slots
         16,
         // Slot positions: item and fluids
-        items => items.addSlots(41, 35, 2, 1).addSlots(117, 35, 1, 1),
-        fluids => {},
+        (items) => items.addSlots(41, 35, 2, 1).addSlots(117, 35, 1, 1),
+        (fluids) => {},
 
         // Model configuration
         true, // front overlay
         false, // top overlay
-        false, // side overlay
+        false // side overlay
     );
 });

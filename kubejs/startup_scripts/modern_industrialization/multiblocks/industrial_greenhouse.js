@@ -5,24 +5,30 @@
 
 let GREENHOUSE;
 
-MIMachineEvents.registerRecipeTypes(event => {
-    GREENHOUSE = event.register('greenhouse')
+MIMachineEvents.registerRecipeTypes((event) => {
+    GREENHOUSE = event
+        .register('greenhouse')
         .withItemInputs()
         .withFluidInputs()
         .withItemOutputs();
 });
 
-MIMachineEvents.registerMachines(event => {
-    const greenhouseHatch = event.hatchOf('item_input', 'item_output', 'energy_input', 'fluid_input');
+MIMachineEvents.registerMachines((event) => {
+    const greenhouseHatch = event.hatchOf(
+        'item_input',
+        'item_output',
+        'energy_input',
+        'fluid_input'
+    );
     const steelCasing = event.memberOfBlock(mi('steel_machine_casing'));
     const glass = event.memberOfBlock(mc('glass'));
-    const metalBox = event.memberOfBlock(fb('metalbox'));
-    const rustyScaffold = event.memberOfBlock(fb('rusty_scaffold'));
+    const metalBox = event.memberOfBlock('factory_blocks:metalbox');
+    const rustyScaffold = event.memberOfBlock('factory_blocks:rusty_scaffold');
     const glowstone = event.memberOfBlock(mc('glowstone'));
     const grass = event.memberOfBlock(mc('grass_block'));
     const log = event.memberOfBlock(mc('oak_log'));
     const leaves = event.memberOfBlock(mc('oak_leaves'));
-    const dirt = event.memberOfBlock(mc('dirt'))
+    const dirt = event.memberOfBlock(mc('dirt'));
     //      0           1           2           3         4          5          6
     const greenhouseShape = event.layeredShape('steel', [
         [ '  SSS  ', '  GGG  ', '  GGG  ', '  GGG  ', '  RRR  ', '       ', '       ' ],
@@ -43,7 +49,7 @@ MIMachineEvents.registerMachines(event => {
         .key('O', glowstone, event.noHatch())
         .key('D', dirt, event.noHatch())
         .build();
-    
+
     event.simpleElectricCraftingMultiBlock(
         // General parameters
         'Industrial Greenhouse', // English name
@@ -54,14 +60,16 @@ MIMachineEvents.registerMachines(event => {
         // REI Display configuration
         event.progressBar(71, 33, 'extract'),
         // REI Item Inputs, item outputs, fluid inputs, fluid outputs
-        itemInputs => itemInputs.addSlots(25, 35, 2, 1), itemOutputs => itemOutputs.addSlots(102, 35, 2, 2),
-        fluidInputs => fluidInputs.addSlot(25, 53), fluidOutputs => {},
+        (itemInputs) => itemInputs.addSlots(25, 35, 2, 1),
+        (itemOutputs) => itemOutputs.addSlots(102, 35, 2, 2),
+        (fluidInputs) => fluidInputs.addSlot(25, 53),
+        (fluidOutputs) => {},
 
         /* Model configuration */
         'steel', // casing of the controller
         'greenhouse', // overlay folder
         true, // front overlay
         false, // top overlay
-        false, // side overlay
+        false // side overlay
     );
 });

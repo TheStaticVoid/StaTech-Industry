@@ -3,10 +3,10 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-ServerEvents.recipes(event => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+ServerEvents.recipes((event) => {
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/alloy_smelter/${id}`;
-    
+
     // -- RED ALLOY INGOT -- //
     alloySmelter(
         event,
@@ -15,9 +15,9 @@ ServerEvents.recipes(event => {
         200,
         [
             { amount: 1, tag: 'morered:red_alloyable_ingots' },
-            { amount: 4, tag: 'c:dusts/redstone' }
+            { amount: 4, tag: 'c:dusts/redstone' },
         ],
-        [ { amount: 1, item: mr('red_alloy_ingot') } ]
+        [{ amount: 1, item: mr('red_alloy_ingot') }]
     );
 
     // -- NETHERITE INGOT -- //
@@ -28,35 +28,21 @@ ServerEvents.recipes(event => {
         600,
         [
             { amount: 4, tag: 'c:ingots/gold' },
-            { amount: 4, item: mc('netherite_scrap') }
+            { amount: 4, item: mc('netherite_scrap') },
         ],
-        [ { amount: 1, item: mc('netherite_ingot') } ]
-    );
-
-    // -- COGNITIVE ALLOY INGOT -- //
-    alloySmelter(
-        event,
-        st('cognitive_alloy'),
-        4,
-        200,
-        [
-            { amount: 1, tag: 'c:ingots/copper' },
-            { amount: 4, item: xp('cognitive_amalgam') }
-        ],
-        [ { amount: 1, item: xp('cognitive_alloy') } ]
+        [{ amount: 1, item: mc('netherite_ingot') }]
     );
 
     // -- BRASS INGOT -- //
     alloySmelter(
-    event,
+        event,
         st('brass_ingot'),
         4,
         200,
         [
             { amount: 1, tag: 'c:ingots/copper' },
-            { amount: 1, tag: 'c:ingots/zinc' }
+            { amount: 1, tag: 'c:ingots/zinc' },
         ],
-        [ { amount: 2, item: cr('brass_ingot') } ]
+        [{ amount: 2, item: cr('brass_ingot') }]
     );
-
 });
