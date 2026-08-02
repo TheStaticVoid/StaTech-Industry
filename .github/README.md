@@ -5,6 +5,7 @@ me
 
 # Finished and Implemented:
 extensive early game create requirements\
+tiered armor/tools\
 
 # Priority List:
 force non-peaceful difficulty (might be extreme) with intent of making food a required challenge \
@@ -37,19 +38,6 @@ more fusion stuff\
 bullshittium processing\
   -i want to straight up include the process in this message but maybe you also get a bullshittium residue fluid at the end that does other stuff\
   -not specifically sure yet on what this would be but maybe something to complicate endgame recipes, such as requiring it for quantum machine casings (like chromium for ev casings)
-  
-tiered armor/tools? generally just make tool progression more involved-current progression will be:\
-  -bronze\
-  -steel\
-  -diamond\
-  -netherite\
-  -create armor sets (must combine with netherite *armor* for netherite set)
-  -jetpack + rubber (jetpack requires elytra)\
-  -nano armor (requires netherite create armor and rubber helmet/boots (reinforced rubber?))\
-  -gravichestplate (requires jetpack)\
-  -gravichestplate nano armor\
-  -quantum nano set\
-    -remove elytra flight pylon recipe\
     
 diversify power\
   -i like the gt thing where steam is strictly lv/early mv, might buff benzene and diesel or something idk\
