@@ -315,58 +315,6 @@ jobs:
 
             ${{ needs.info.outputs.changelog }}
 
-  update-mmc-pack:
-    name: Update MMC-Pack
-    needs: [info]
-    runs-on: ubuntu-latest
-    if: needs.info.outputs.pakku-lock_changed == 'true'
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
-
-      - name: Get formatted loader name and UID
-        id: check-loader
-        run: |
-          case "${{ needs.info.outputs.loader_type }}" in
-            "forge")
-                echo "uid=net.minecraftforge" >> $GITHUB_OUTPUT
-                ;;
-            "neoforge")
-                echo "uid=net.neoforged" >> $GITHUB_OUTPUT
-                ;;
-            esac
-
-      - name: Update mmc-pack.json
-        run: |
-          jq --arg loader_uid "${{ steps.check-loader.outputs.uid }}" \
-            --arg loader_version "${{ needs.info.outputs.loader_version }}" \
-            --arg mc_version "${{ needs.info.outputs.mc_version }}" \
-            '.components |= (
-              map(
-                if .uid == $loader_uid then
-                  .cachedVersion = $loader_version | .version = $loader_version
-                elif .uid == "net.minecraft" then
-                  .cachedVersion = $mc_version | .version = $mc_version
-                else
-                  .
-                end
-              )
-            )' .pakku/prism-overrides/mmc-pack.json > temp.json
-          mv temp.json .pakku/prism-overrides/mmc-pack.json
-
-      - name: Commit changes (if any)
-        run: |
-          if ! git diff --quiet .pakku/prism-overrides/mmc-pack.json; then
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
-            git add .pakku/prism-overrides/mmc-pack.json
-            git commit -m "Updated mmc-pack.json to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }}"
-            git push
-          fi
-
   build-project:
     name: Build Project
     needs: [info]
