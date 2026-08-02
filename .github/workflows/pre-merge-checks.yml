@@ -1,0 +1,235 @@
+name: Pre-Merge Checks
+run-name: "Pre-Merge Check #${{ github.run_number }}"
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+permissions: write-all
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  info:
+    name: Project Info
+    runs-on: ubuntu-latest
+    if: ${{  github.repository_owner == 'TheStaticVoid' }}
+    outputs:
+      project_version: ${{ steps.check.outputs.project_version }}
+      project_name: ${{ steps.check.outputs.project_name }}
+      project_file_name: ${{ steps.check.outputs.project_name }}-${{ steps.check.outputs.project_version }}
+      project_full_name: ${{ steps.check.outputs.project_name }} ${{ steps.check.outputs.project_version }}
+      mc_version: ${{ steps.check.outputs.minecraft_version }}
+      loader_version: ${{ steps.check.outputs.loader_version }}
+      loader_type: ${{ steps.check.outputs.loader_type }}
+      release_type: ${{ steps.check.outputs.release_type }}
+      diff: ${{ steps.read_diff.outputs.diff }}
+      exists: ${{ steps.check.outputs.exists }}
+      make_release: ${{ steps.check.outputs.make_release }}
+      make_pr: ${{ steps.check.outputs.make_pr }}
+      pakku-lock_changed: ${{ steps.filter.outputs.pakku-lock }}
+      kubejs_changed: ${{ steps.filter.outputs.kubejs }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+        with:
+          fetch-depth: 0
+
+      - name: Check pakku-lock.json
+        id: check_pakku_lock
+        shell: bash
+        run: |
+          if [ ! -f pakku-lock.json ]; then
+            echo "Could not find pakku-lock.json" && exit 1
+          else
+            echo "pakku-lock.json"
+          fi
+
+      - name: Check pakku.json
+        id: check_pakku
+        shell: bash
+        run: |
+          if [ ! -f pakku.json ]; then
+            echo "Could not find pakku.json" && exit 1
+          else
+            echo "pakku.json"
+          fi
+
+      - name: Get latest tag
+        id: latest_tag
+        shell: bash
+        run: |
+          tag=$(git describe --tags --abbrev=0 origin/main)
+          if [ -z "$tag" ]; then
+            echo "Latest tag not found, likely the first time this script has been ran. " && exit 1
+          else
+            echo "Latest tag found: $tag"
+            echo "tag=$tag" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check pakku-lock.json in previous tag
+        id: check_pakku_lock_prev
+        shell: bash
+        run: |
+          if git cat-file -e ${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json 2>/dev/null; then
+            echo "File pakku-lock.json found in previous tag"
+            echo "file_found=true" >> $GITHUB_OUTPUT
+          else
+            echo "File pakku-lock.json not found in previous tag"
+            echo "file_found=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check and copy pakku-lock.json from previous tag
+        id: check_copy_lock
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        shell: bash
+        run: |
+          git show tags/${{ steps.latest_tag.outputs.tag }}:./pakku-lock.json > ./pakku-lock-prev.json
+          if [ -s ./pakku-lock-prev.json ]; then
+            echo "File pakku-lock-prev.json created"
+          else
+            echo "Error: File pakku-lock-prev.json is empty or not created" && exit 1
+          fi
+
+      - name: Download pakku.jar
+        id: download_pakku
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        shell: bash
+        run: |
+          curl https://github.com/juraj-hrivnak/pakku/releases/latest/download/pakku.jar -o pakku.jar -L -J
+          echo "Downloaded pakku.jar "
+
+      - name: Run pakku diff
+        id: pakku_diff
+        if: steps.check_pakku_lock_prev.outputs.file_found == 'true'
+        shell: bash
+        run: |
+          java -jar pakku.jar diff -v --markdown PROJECTS_DIFF.md ./pakku-lock-prev.json ./pakku-lock.json
+          if [ -f PROJECTS_DIFF.md ]; then
+            echo "Comparison completed"
+          else
+            echo "Error: File PROJECTS_DIFF.md not created" && exit 1
+          fi
+
+      - name: Read PROJECTS_DIFF.md to variable
+        id: read_diff
+        shell: bash
+        run: |
+          if [ "${{ steps.check_pakku_lock_prev.outputs.file_found }}" = "true" ]; then
+            echo "Reading PROJECTS_DIFF.md to variable..."
+            {
+              echo 'diff<<EOF'
+              cat -v PROJECTS_DIFF.md
+              echo EOF
+            } >> "$GITHUB_OUTPUT"
+            echo "Diff content read to variable"
+          else
+            {
+              echo 'diff<<EOF'
+              echo "No pakku-lock.json found in previous tag, unable to generate diff."
+              echo EOF
+            } >> "$GITHUB_OUTPUT"
+            echo "Debug message written to diff variable"
+          fi
+
+      - name: Get Pakku Info
+        id: pakku_info
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku.json"
+
+      - name: Get Pakku-lock Info
+        id: pakku_lock_info
+        uses: ActionsTools/read-json-action@v1.0.5
+        with:
+          file_path: "pakku-lock.json"
+
+      - name: Check for Pakku-lock and KubeJS changes
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            pakku-lock:
+              - 'pakku-lock.json'
+            kubejs:
+              - 'kubejs/**'
+
+      - name: Check
+        id: check
+        shell: bash
+        run: |
+          MC_VERSIONS_JSON='${{ steps.pakku_lock_info.outputs.mc_versions }}'
+          MINECRAFT_VERSION=$(echo "$MC_VERSIONS_JSON" | jq -r '.[0]' | tr -d '[]"')
+
+          LOADERS_JSON='${{ steps.pakku_lock_info.outputs.loaders }}'
+
+          LOADER_TYPE=$(echo "$LOADERS_JSON" | jq -r 'keys[0]')
+          LOADER_VERSION=$(echo "$LOADERS_JSON" | jq -r ".[keys[0]]")
+
+          echo "minecraft_version=$MINECRAFT_VERSION" >> $GITHUB_OUTPUT
+          echo "loader_version=$LOADER_VERSION" >> $GITHUB_OUTPUT
+          echo "loader_type=$LOADER_TYPE" >> $GITHUB_OUTPUT
+
+
+          echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
+
+          echo "project_name=${{ steps.pakku_info.outputs.name }}" >> $GITHUB_OUTPUT
+          echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
+          echo "make_release=false" >> $GITHUB_OUTPUT
+          echo "make_pr=false" >> $GITHUB_OUTPUT
+
+  update-mmc-pack:
+    name: Update MMC-Pack
+    needs: [info]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Get formatted loader name and UID
+        id: check-loader
+        run: |
+          case "${{ needs.info.outputs.loader_type }}" in
+            "forge")
+                echo "uid=net.minecraftforge" >> $GITHUB_OUTPUT
+                ;;
+            "neoforge")
+                echo "uid=net.neoforged" >> $GITHUB_OUTPUT
+                ;;
+            esac
+
+      - name: Update mmc-pack.json
+        run: |
+          jq --arg loader_uid "${{ steps.check-loader.outputs.uid }}" \
+            --arg loader_version "${{ needs.info.outputs.loader_version }}" \
+            --arg mc_version "${{ needs.info.outputs.mc_version }}" \
+            '.components |= (
+              map(
+                if .uid == $loader_uid then
+                  .cachedVersion = $loader_version | .version = $loader_version
+                elif .uid == "net.minecraft" then
+                  .cachedVersion = $mc_version | .version = $mc_version
+                else
+                  .
+                end
+              )
+            )' .pakku/prism-overrides/mmc-pack.json > temp.json
+          mv temp.json .pakku/prism-overrides/mmc-pack.json
+
+      - name: Commit changes (if any)
+        run: |
+          if ! git diff --quiet .pakku/prism-overrides/mmc-pack.json; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add .pakku/prism-overrides/mmc-pack.json
+            git commit -m "Updated mmc-pack.json to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }}"
+            git push origin HEAD:${{ github.head_ref || github.ref_name }}
+          fi
