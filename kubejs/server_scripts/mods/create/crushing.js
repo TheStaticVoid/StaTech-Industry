@@ -53,6 +53,13 @@ ServerEvents.recipes((event) => {
         [{ count: 2, id: mi('calcite_dust') }]
     );
 
+    crushing(
+        st('stone_dust_from_stone'),
+        400,
+        [{ item: mc('stone') }],
+        [{ count: 4, id: mi('stone_dust') }]
+    );
+
     // -- BRICK DUST FROM BRICKS -- //
     crushing(
         st('brick_dust_from_bricks'),
