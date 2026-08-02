@@ -54,6 +54,8 @@ ServerEvents.recipes((event) => {
 
     // -- BULLSHITTIUM MODE -- //
 
+    event.remove({ id: 'modern_industrialization:materials/bronze_dust' })
+
     event.shapeless(mi('iron_double_ingot'), [
         '2x ' + mc('iron_ingot')
     ])

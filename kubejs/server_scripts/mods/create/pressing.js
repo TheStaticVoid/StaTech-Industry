@@ -30,6 +30,8 @@ ServerEvents.recipes((event) => {
         event.custom(newRecipe).id(id);
     };
 
+    // -- BULLSHITTIUM MODE -- //
+
     // -- BRONZE PLATE -- //
     pressing(
         st('bronze_plate'),
@@ -57,8 +59,6 @@ ServerEvents.recipes((event) => {
         [{ tag: 'c:double_ingots/tin' }],
         [{ 'id': mi('tin_plate'), count: 1 }]
     );
-
-    // -- BULLSHITTIUM MODE -- //
 
     // -- IRON PLATE -- //
     pressing(

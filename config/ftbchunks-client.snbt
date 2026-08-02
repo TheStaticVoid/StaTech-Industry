@@ -138,17 +138,33 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
-			"nomansland:tortoise": true
+			"minecraft:enderman": true
 			"minecraft:chicken": true
 			"minecraft:polar_bear": true
 			"artifacts:mimic": true
 			"nomansland:goose": true
 			"minecraft:wolf": true
-			"minecraft:glow_squid": true
-			"minecraft:fox": true
+			"minecraft:pig": true
+			"minecraft:dolphin": true
+			"minecraft:cod": false
+			"minecraft:husk": true
+			"minecraft:villager": true
 			"minecraft:bat": true
 			"minecraft:squid": true
+			"minecraft:cat": true
 			"nomansland:deer": true
+			"nomansland:tortoise": true
+			"minecraft:iron_golem": true
+			"minecraft:zombie_villager": true
+			"minecraft:spider": true
+			"minecraft:cow": true
+			"minecraft:creeper": true
+			"minecraft:zombie": true
+			"minecraft:glow_squid": true
+			"minecraft:fox": true
+			"minecraft:horse": true
+			"minecraft:skeleton": true
+			"nomansland:frienderman": true
 			"minecraft:rabbit": true
 			"minecraft:sheep": true
 		}
@@ -270,11 +286,11 @@
 		
 		# Enables creation of death waypoints
 		# Default: true
-		death_waypoints: true
+		death_waypoints: false
 		
 		# Show waypoints in world
 		# Default: true
-		in_world_waypoints: true
+		in_world_waypoints: false
 		
 		# Minimum distance before waypoint dots start to fade
 		# Default: 1.0
