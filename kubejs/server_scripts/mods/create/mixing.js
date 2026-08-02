@@ -23,11 +23,40 @@ ServerEvents.recipes((event) => {
         event.custom(newRecipe).id(id);
     };
 
-    
+    // -- BULLSHITTIUM MODE -- //
+
+    // -- CONCRETE -- //
+
+    mixing(
+        st('concrete_create_mixer'),
+        'heated',
+        [
+            { item: mi('stone_dust') },
+            { item: mi('stone_dust') },
+            { item: mi('stone_dust') },
+            { item: mi('stone_dust') },
+            { item: mi('stone_dust') },
+            { item: mi('stone_dust') },
+            { item: mi('stone_dust') },
+            { item: mi('stone_dust') },
+            { item: mi('stone_dust') },
+            { item: mi('stone_dust') },
+            { item: mi('clay_dust') },
+            { item: mi('clay_dust') },
+            { item: mi('clay_dust') },
+            { item: mi('clay_dust') },
+            {
+                type: "fluid_stack",
+                fluid: "minecraft:water",
+                amount: 100
+            }
+        ],
+        [{ id: mi('concrete'), amount: 500 }],
+    );
 
     // -- BRONZE INGOT -- //
     mixing(
-        st('bronze_ingot'),
+        st('bronze_ingot_create_mixer'),
         'superheated',
         [
             { tag: 'c:raw_materials/copper' },

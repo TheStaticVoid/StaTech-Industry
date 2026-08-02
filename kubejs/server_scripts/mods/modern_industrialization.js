@@ -55,6 +55,15 @@ ServerEvents.recipes((event) => {
     // -- BULLSHITTIUM MODE -- //
 
     event.remove({ id: 'modern_industrialization:materials/bronze_dust' })
+    event.remove({ id: 'modern_industrialization:materials/fire_clay_bricks' })
+
+    event
+        .shaped('1x ' + mi('fire_clay_bricks'), ['BDB', 'BCB', 'BDB'], {
+            C: mi('concrete_bucket'),
+            B: mi('fire_clay_brick'),
+            D: mi('calcite_dust'),
+        })
+        .id(mi('materials/fire_clay_bricks'));
 
     event.shapeless(mi('iron_double_ingot'), [
         '2x ' + mc('iron_ingot')
