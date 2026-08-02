@@ -52,6 +52,48 @@ ServerEvents.recipes((event) => {
     ];
     MI_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
 
+    // -- BULLSHITTIUM MODE -- //
+
+    event.shapeless(mi('iron_double_ingot'), [
+        '2x ' + mc('iron_ingot')
+    ])
+        .id(mi('iron_double_ingot_shapless'));
+
+    event.shapeless(mi('electrum_double_ingot'), [
+        '2x ' + mi('electrum_ingot')
+    ])
+        .id(mi('electrum_double_ingot_shapless'));
+
+    event.shapeless(mi('gold_double_ingot'), [
+        '2x ' + mc('gold_ingot')
+    ])
+        .id(mi('gold_double_ingot_shapless'));
+
+    event.shapeless(mi('bronze_double_ingot'), [
+        '2x ' + mi('bronze_ingot')
+    ])
+        .id(mi('bronze_double_ingot_shapless'));
+
+    event.shapeless(mi('silver_double_ingot'), [
+        '2x ' + mi('silver_ingot')
+    ])
+        .id(mi('silver_double_ingot_shapless'));
+
+    event.shapeless(mi('steel_double_ingot'), [
+        '2x ' + mi('steel_ingot')
+    ])
+        .id(mi('steel_double_ingot_shapless'));
+
+    event.shapeless(mi('tin_double_ingot'), [
+        '2x ' + mi('tin_ingot')
+    ])
+        .id(mi('tin_double_ingot_shapless'));
+
+    event.shapeless(mi('copper_double_ingot'), [
+        '2x ' + mc('copper_ingot')
+    ])
+        .id(mi('copper_double_ingot_shapless'));
+
     event
         .shapeless(mi('iron_plate'), [
             '4x ' + mc('iron_ingot'),
@@ -211,12 +253,22 @@ ServerEvents.recipes((event) => {
 
     // -- FORGE HAMMER -- //
     event
-        .shaped(mi('forge_hammer'), ['PPP', ' I ', 'BBB'], {
-            P: mi('iron_large_plate'),
-            I: '#c:ingots/iron',
-            B: '#c:storage_blocks/iron',
+        .custom({
+            type: cr('mechanical_crafting'),
+            accept_mirrored: true,
+            category: 'misc',
+            pattern: ['AAAAA', 'AAAAA', '  B  ', ' CCC ', 'CCCCC'],
+            key: {
+                A: { item: mi('iron_large_plate') },
+                B: { tag: 'c:ingots/bronze' },
+                C: { tag: 'c:storage_blocks/iron' },
+            },
+            result: {
+                id: mi('forge_hammer'),
+                count: 1,
+            },
         })
-        .id(mi('forge_hammer'));
+        .id('forge_hammer_mechcraft');
 
     // -- ROCKET PART ASSEMBLER -- //
     event
