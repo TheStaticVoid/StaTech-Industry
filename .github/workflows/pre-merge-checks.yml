@@ -187,7 +187,6 @@ jobs:
     name: Update MMC-Pack
     needs: [info]
     runs-on: ubuntu-latest
-    if: needs.info.outputs.pakku-lock_changed == 'true'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5.0.0
