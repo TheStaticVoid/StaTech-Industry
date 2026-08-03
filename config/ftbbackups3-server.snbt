@@ -1,0 +1,96 @@
+# Server-specific configuration for FTB Backups 3
+# Modpack defaults should be defined in <instance>/config/ftbbackups3-server.snbt
+#   (may be overwritten on modpack update)
+# Server admins may locally override this by copying into <instance>/world/serverconfig/ftbbackups3-server.snbt
+#   (will NOT be overwritten on modpack update)
+
+{
+	# If true, the /backup command will be aliased to /ftbbackups3 backup
+	# Default: true
+	add_backup_command_alias: true
+	
+	# Method to use to create a backup archive.
+	# Builtin methods are "ftbbackups:zip" (create a ZIP file) and "ftbbackups:filecopy" (simple recursive copy of files with no compression)
+	# More archival plugins may be added by other mods.
+	# Default: ftbbackups3:zip
+	archival_plugin: "ftbbackups3:zip"
+	
+	# Enables backups to run automatically
+	# Default: true
+	auto: true
+	
+	# Backup frequency in minutes.
+	# 5 - backups every 5 minutes
+	# 60 - backups every hour
+	# 360 - backups every 6 hours
+	# 1440 - backups once every day
+	# Default: 120
+	# Range: 1 ~ 43800
+	backup_timer: 120
+	
+	# The number of backup files to keep.
+	# More backups = more space used
+	# 0 - Infinite
+	# Default: 12
+	# Range: 0 ~ 32000
+	backups_to_keep: 12
+	
+	# Compression level for archived files. Note that this is dependent on the particular plugin in use.
+	# Higher values typically mean backups take longer to do but take less space on disk.
+	# 0 - No compression
+	# 1 - Minimal compression
+	# 9 - Full compression
+	# Default: 5
+	# Range: 0 ~ 9
+	compression_level: 5
+	
+	# Broadcasts to all online players a "(current size | total size)" message when backup is done.
+	# Default: true
+	display_file_size: true
+	
+	# Default: ["glob:*.neoforge-tmp", "glob:session.lock"]
+	excluded_files: [
+		"glob:*.neoforge-tmp"
+		"glob:session.lock"
+	]
+	
+	# Add extra files/folders to be backed up, in addition to the world folder. These files *must* be within the game instance!
+	# Default: []
+	extra_files: [ ]
+	
+	# Absolute path to backups folder. Default of "" means to use "ftbackups3" within the game instance folder.
+	# Example valid paths:
+	# - Linux/Mac: "/home/user/mc-backups"
+	# - Windows: "C:\\Backups\\Minecraft"
+	#   (it may be necessary to use double backslashes here since the backslash is an escape character for Java strings
+	# Default: ""
+	folder: ""
+	
+	# Create a backup when server is stopped.
+	# Default: false
+	force_on_shutdown: false
+	
+	# Maximum total size that is allowed in backups folder. Older backups will be deleted to free space for newer ones.
+	# Default: "50 GB"
+	max_total_size: "50 GB"
+	
+	# If true, only player with permission level >= 2 (or SSP integrated server owners) will be notified on-screen about backup progress
+	# Default: false
+	notify_admins_only: false
+	
+	# Only create backups when at least one player is online, or has been online since the last backup was made.
+	# Default: true
+	only_if_players_online: true
+	
+	# If set to true, no messages will be displayed in chat/status bar
+	# Default: false
+	silent: false
+	
+	# Advanced features that shouldn't be changed unless you know what you are doing.
+	advanced: {
+		# Buffer size for reading/writing files.
+		# Default: 4096
+		# Range: 256 ~ 65536
+		buffer_size: 4096
+	}
+}

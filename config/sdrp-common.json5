@@ -1,0 +1,105 @@
+{
+	// Your Discord App ID
+	"clientId": 608012526537408579,
+	// If you wish to disable Discord Rich Presence, set this to false.
+	"enabled": true,
+	// When enabled, the mod will log the current state being sent to Discord
+	"logState": false,
+	/* Set custom buttons for the Discord Rich Presences. You can only have 2 buttons, each button has a label and a URL.
+	   
+	   Example:
+	   [
+	       {
+	           "label": "Join our Discord!",
+	           "url": "https://discord.gg/...
+	       },
+	       ...
+	   ]
+	*/
+	"buttons": [],
+	// If set to false, it disables the build-in clientJoinEvent, which is used to tell when the player joins a world and changing Dimension.
+	"enableUpdateDimensionPresence": true,
+	/* Dimensions can be setup to update the Rich Presence when the player is in them.
+	   
+	   Due to the complex nature of modded dimensions, we've added support for different matchers here with
+	   support for variable replacement in the various fields.
+	   
+	   Note: When comparing, the full dimension identifier is used (e.g. minecraft:overworld, modid:custom_dimension) meaning if you use
+	   a startsWith, regex, etc, you need to handle the namespace as well.
+	   
+	   Helper matchers are provided for doing blanket matches on just the namespace or path.
+	   
+	   Supported matchers:
+	   - exact@<string> : Exact match
+	   - contains@<string> : Contains substring
+	   - startsWith@<string> : Starts with substring
+	   - endsWith@<string> : Ends with substring
+	   - regex@<pattern> : Matches regex pattern (Java regex syntax)
+	   - namespace@<string> : Matches namespace
+	   - path@<string> : Matches path
+	   
+	   Variables:
+	   - {{dimension.name}}: The translated dimension name (e.g. dimension.minecraft.overworld = Overworld). This is NeoForge standards, not all mods follow this, nor will all have their own lang keys added.
+	   - {{dimension.path}}: The dimension identifier (e.g. overworld) excluding the namespace
+	   - {{dimension.namespace}}: The dimension namespace (e.g. minecraft, modid)
+	   - {{dimension.identifier}}: The full dimension identifier (e.g. minecraft:overworld)
+	   - {{player.uuid}}: The player's UUID
+	   - {{player.name}}: The player's in-game name
+	   - Please let us know if there are any other variables you'd like to see added!
+	*/
+	"dimensionsSupport": [
+		{
+			"matcher": "exact@minecraft:overworld",
+			"message": "{{dimension.name}}",
+			"imageName": "{{dimension.name}}",
+			"imageKey": "{{dimension.path}}",
+			"prefixWithIn": true
+		},
+		{
+			"matcher": "exact@minecraft:the_nether",
+			"message": "{{dimension.name}}",
+			"imageName": "{{dimension.name}}",
+			"imageKey": "{{dimension.path}}",
+			"prefixWithIn": true
+		},
+		{
+			"matcher": "exact@minecraft:the_end",
+			"message": "{{dimension.name}}",
+			"imageName": "{{dimension.name}}",
+			"imageKey": "{{dimension.path}}",
+			"prefixWithIn": true
+		}
+	],
+	// If set to false, it disables the build-in screenEvent, which is used to tell when we are on the main menu, or other enabled screens.
+	"enableUpdateScreenPresence": true,
+	/* Screens can be setup to update the Rich Presence when the player is on them. You can specify multiple screen classes for each entry.
+	   Each screen should have a message, imageName and imageKey.
+	   
+	   Example:
+	   [
+	       {
+	           "screenClass": [
+	               "net.minecraft.client.gui.screens.TitleScreen"
+	           ],
+	           "message": "sdrp.mainmenu",
+	           "imageName": "sdrp.mainmenu",
+	           "imageKey": "menu"
+	       },
+	       ...
+	   ]
+	   
+	   This would update the Rich Presence when on the Title Screen to have the message and images specified.
+	*/
+	"screens": [
+		{
+			"screenClass": [
+				"net.minecraft.client.gui.screens.TitleScreen",
+				"net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen",
+				"net.minecraft.client.gui.screens.worldselection.SelectWorldScreen"
+			],
+			"message": "sdrp.mainmenu",
+			"imageName": "sdrp.mainmenu",
+			"imageKey": "menu"
+		}
+	]
+}
