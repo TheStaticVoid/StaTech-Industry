@@ -33,7 +33,7 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
     const highCapacityUnpackerShape = event
         .layeredShape('modern_industrialization:iron_sheet_metal', [
             ['AAA', 'BCB', 'AAA'],
-            ['ABA', 'CDC', 'AAA'],
+            ['AAA', 'CDC', 'AAA'],
             ['A#A', 'BCB', 'AAA'],
         ])
         .key('A', idenDecorIronSheetMetal, multiblockHatch)

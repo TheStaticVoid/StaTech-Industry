@@ -502,34 +502,3 @@ jobs:
           changelog-format: markdown
           game-version: ${{ needs.info.outputs.mc_version }}
           release-type: ${{ needs.info.outputs.release_type }}
-
-  discord-message:
-    name: Discord Message
-    needs: [info, release-github, release-curseforge]
-    runs-on: ubuntu-latest
-    if: needs.info.outputs.webhook_present == 'true'
-    steps:
-      - name: Truncate Changelog
-        id: truncated
-        uses: cisox/read-more-action@v1.0.2
-        with:
-          text: "${{ needs.info.outputs.changelog }}"
-          max_chars: "1450"
-
-      - name: Send Discord message
-        uses: hugoalh/send-discord-webhook-ghaction@v7.0.5
-        with:
-          key: ${{ secrets.discord-webhook  }}
-          username: "StaTech Industry Updates" # Change this!
-          avatar_url: "https://media.forgecdn.net/avatars/thumbnails/798/822/64/64/638160732420962168.png" # Change this! (and the below curseforge url)
-          content_links_no_embed: .+
-          content: |
-            **Release**: `${{ needs.info.outputs.project_full_name }}`
-            **Release Type**: `${{ needs.info.outputs.release_type }}`
-            **Game Version**: `${{ needs.info.outputs.mc_version }}`
-
-            [CurseForge](https://www.curseforge.com/minecraft/modpacks/template-pack/files/${{ needs.release-curseforge.outputs.id }}) • [GitHub](${{ needs.release-github.outputs.url }}) • [Issues](https://github.com/${{ github.repository }}/issues)
-            ```markdown
-            ${{ steps.truncated.outputs.text  }}
-            - ...```
-            ** [Read more...](${{ needs.release-github.outputs.url }}) **

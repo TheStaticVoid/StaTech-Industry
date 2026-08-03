@@ -1,7 +1,7 @@
 {
   "name": "StaTech Industry",
-  "version": "2.0.0-rc3",
-  "author": "Static Void, Purple Dino, & GronkDev",
+  "version": "2.0.0-rc4",
+  "author": "staitc, Purple Dino, & GronkDev",
   "release_type": "release",
   "overrides": ["config", "defaultconfigs", "kubejs", "!kubejs/probe/**"],
   "server_overrides": [
@@ -86,6 +86,9 @@
     "fps-reducer": {
       "side": "CLIENT"
     },
+    "ftb-backups-3": {
+      "side": "SERVER"
+    },
     "fusion": {
       "side": "CLIENT"
     },
@@ -93,6 +96,9 @@
       "side": "CLIENT"
     },
     "inventory-hud-forge": {
+      "side": "CLIENT"
+    },
+    "jei": {
       "side": "CLIENT"
     },
     "lambdynamiclights": {
@@ -134,25 +140,25 @@
     "searchables": {
       "side": "CLIENT"
     },
-    "stellarview": {
-      "side": "CLIENT"
-    },
-    "smithing-template-viewer": {
+    "simple-discord-rich-presence": {
       "side": "CLIENT"
     },
     "skin-layers-3d": {
       "side": "CLIENT"
     },
+    "smithing-template-viewer": {
+      "side": "CLIENT"
+    },
     "sodium": {
+      "side": "CLIENT"
+    },
+    "stellarview": {
       "side": "CLIENT"
     },
     "tips": {
       "side": "CLIENT"
     },
     "tipthescales": {
-      "side": "CLIENT"
-    },
-    "tmrv": {
       "side": "CLIENT"
     },
     "waveycapes": {
@@ -166,24 +172,6 @@
       "export": false
     },
     "structory-towers": {
-      "update_strategy": "NONE"
-    },
-    "sophisticated-backpacks": {
-      "update_strategy": "NONE"
-    },
-    "sophisticated-storage": {
-      "update_strategy": "NONE"
-    },
-    "sophisticated-core": {
-      "update_strategy": "NONE"
-    },
-    "sophisticated-inventory-interactions": {
-      "update_strategy": "NONE"
-    },
-    "sophisticated-item-actions": {
-      "update_strategy": "NONE"
-    },
-    "ftb-xmod-compat": {
       "update_strategy": "NONE"
     }
   }

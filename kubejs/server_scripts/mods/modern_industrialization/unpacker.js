@@ -49,4 +49,14 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: cr('brass_ingot') }],
         [{ amount: 9, item: cr('brass_nugget') }]
     );
+
+    // -- DENSE ME CABLE TO ME CABLE -- //
+    unpacker(
+        event,
+        st('dense_cable_to_cable'),
+        8,
+        200,
+        [{ amount: 1, item: ae('fluix_covered_dense_cable') }],
+        [{ amount: 4, item: ae('fluix_covered_cable') }]
+    );
 });

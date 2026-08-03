@@ -1698,7 +1698,7 @@
 				item: { count: 1, id: "spectrum:heartsingers_reward" }
 				type: "item"
 			}]
-			x: 22.5d
+			x: 22.0d
 			y: 5.5d
 		}
 		{
@@ -1915,39 +1915,7 @@
 				item: { count: 1, id: "spectrum:potion_workshop" }
 				type: "item"
 			}]
-			x: 20.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["1D6B63A6C94253B5"]
-			id: "7490428A95F9B4EE"
-			rewards: [
-				{
-					id: "2A69CD9477E12239"
-					item: {
-						count: 1
-						id: "spectrum:sludge_bucket"
-					}
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "16831DF990F951F1"
-					table_id: 5982570301279542019L
-					type: "loot"
-				}
-				{
-					id: "0816D89290111359"
-					type: "xp"
-					xp: 5
-				}
-			]
-			tasks: [{
-				id: "6580DD5FF3941DFB"
-				item: { count: 1, id: "spectrum:sludge_bucket" }
-				type: "item"
-			}]
-			x: 21.5d
+			x: 21.0d
 			y: 5.5d
 		}
 		{

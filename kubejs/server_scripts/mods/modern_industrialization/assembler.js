@@ -367,31 +367,19 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mc('end_crystal') }]
     );
 
-    // -- URANIUM ORE FROM UU -- //
-    // assembler(
-    // st('uranium_ore'),
-    // 32,
-    // 600,
-    // [
-    // { amount: 6, item: tr('uu_matter') },
-    // { amount: 1, item: mc('moss_block') }
-    // ],
-    // [ { amount: 1, item: mi('uranium_ore') } ],
-    // [ { amount: 15, fluid: mi('molten_nether_star') } ]
-    // );
-
-    // -- IRIDIUM ORE FROM UU -- //
-    // assembler(
-    // st('iridium_ore'),
-    // 32,
-    // 600,
-    // [
-    // { amount: 6, item: tr('uu_matter') },
-    // { amount: 1, item: mc('stone') }
-    // ],
-    // [ { amount: 1, item: mi('iridium_ore') } ],
-    // [ { amount: 15, fluid: mi('molten_nether_star') } ]
-    // );
+    // -- BETTER COVERED CABLE -- //
+    assembler(
+        event,
+        st('covered_cable'),
+        8,
+        200,
+        [
+            { amount: 4, item: ae('fluix_glass_cable') },
+            { amount: 1, tag: 'c:wools' }
+        ],
+        [ { amount: 4, item: ae('fluix_covered_cable') } ],
+        [ { amount: 500, fluid: mi('synthetic_rubber') } ]
+    );
 
     // -- LV TO MV TRANSFORMER -- //
     assembler(
