@@ -23,6 +23,7 @@
 - [Better Advancements](https://www.curseforge.com/projects/272515) by way2muchnoise
 - [Better Compatibility Checker](https://www.curseforge.com/projects/551894) by Gaz\(Gaz492\)
 - [Better ModList](https://modrinth.com/mod/better-modlist) by foxy, Prospector, haykam821, TerraformersMC
+- [BetterF3](https://github.com/TreyRuffy/BetterF3/) by TreyRuffy and cominixo
 - [Bigger AE2](https://www.curseforge.com/projects/1013772) by DancingSnow
 - [Biolith](https://www.curseforge.com/projects/852512) by TerraformersMC, gniftygnome
 - [Bookshelf](https://www.curseforge.com/projects/228525) by Darkhax
@@ -30,12 +31,10 @@
 - [CC: Tweaked](https://tweaked.cc) by Daniel Ratcliffe, Aaron Mills, SquidDev
 - [Caelus API](https://www.curseforge.com/projects/308989) by Illusive Soulworks
 - [CapeJS](https://github.com/TheStaticVoid/CapeJS) by staitc
-- [Certain Questing Additions](https://www.curseforge.com/projects/1372051) by HollowHorizon
 - [Charm of Undying](https://www.curseforge.com/projects/316873) by Illusive Soulworks
 - [Chat Heads](https://www.curseforge.com/projects/407206) by dzwdz, Fourmisain
 - [Cherished Worlds](https://www.curseforge.com/projects/308240) by Illusive Soulworks
 - [Chisel Reborn](https://www.curseforge.com/projects/551763)
-- [Chloride](https://www.curseforge.com/projects/931925) by SrRapero720
 - [ChoiceTheorem's Overhauled Village](https://www.curseforge.com/projects/623908) by ChoiceTheorem
 - [Chunky](https://www.curseforge.com/projects/485681) by pop4959
 - [Clean Swing](https://www.curseforge.com/projects/915308) by Raycoms
@@ -136,6 +135,7 @@
 - [Just Another Void Dimension](https://www.curseforge.com/projects/370890) by UnRealDinnerbone
 - [Just Enough Breeding](https://github.com/Christofmeg/JustEnoughBreeding) by Christofmeg
 - [Just Enough Effects Descriptions](https://www.curseforge.com/projects/532286) by MehVahdJukaar
+- [Just Enough Items](https://www.curseforge.com/minecraft/mc-mods/jei) by mezz
 - [Konkrete](https://www.curseforge.com/projects/410295) by Keksuccino
 - [KubeJS](https://www.curseforge.com/projects/238086) by latvian\.dev
 - [KubeJSCurios](https://www.curseforge.com/projects/1255211) by zhaiji
@@ -223,7 +223,6 @@
 - [TipTheScales](https://www.curseforge.com/projects/282313) by Jaredlll08
 - [Tips](https://www.curseforge.com/projects/306549) by Darkhax
 - [Titanium](https://www.curseforge.com/projects/287342) by TheCodedOne, Buuz135
-- [TooManyRecipeViewers](https://www.curseforge.com/projects/1194921) by Nolij \(@xdMatthewbx\#1337\) & the Craftoria team
 - [Torchmaster](https://www.curseforge.com/projects/254268) by Xalcon
 - [Trade Cycling](https://www.curseforge.com/projects/570431) by Max Henkel
 - [Trading Post](https://www.curseforge.com/projects/539057) by Fuzs
