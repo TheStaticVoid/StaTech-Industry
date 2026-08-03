@@ -77,17 +77,17 @@
 		#Pulleys are automatically disabled if 'rope' feature is disabled
 		enabled = true
 		#If true, pulleys retract their rope chain over multiple ticks, animating each block via vanilla moving-piston entities. 
-		#Connected blocks become moving blocks (so they push entities, drop sand etc) and multiple pulleys can cooperate to pull a single heavy contraption, useful for elevators. 
+		#Connected blocks become moving blocks (so they push entities, drop sand etc) and multiple pulleys can cooperate to pull a single heavy contraption — useful for elevators. 
 		#If false, the original instant retraction behavior is used.
 		continuous_retraction = true
-		#If true, multiple pulleys firing on the same tick with the same period and push direction can pool their pull budget into one structure resolve, letting two ropes share a wide elevator platform. Only relevant when 'continuous_retraction' is enabled.
+		#If true, multiple pulleys firing on the same tick with the same period and push direction can pool their pull budget into one structure resolve — letting two ropes share a wide elevator platform. Only relevant when 'continuous_retraction' is enabled.
 		cooperative_pulleys = true
-		#Maximum number of NON-rope blocks a single pulley can drag (the anchor and anything sticky-attached to it). Rope segments don't count toward this. Cooperating pulleys pool their budgets: two pulleys can pull twice this many blocks together.
+		#Maximum number of NON-rope blocks a single pulley can drag (the anchor and anything sticky-attached to it). Rope segments don't count toward this. Cooperating pulleys pool their budgets — two pulleys can pull twice this many blocks together.
 		# Default: 8
 		# Range: 1 ~ 128
 		pull_limit = 8
 		#Ticks to wait between unit pulls when continuous_retraction is enabled. 
-		#Lower = faster pulley. Minimum 2 ticks because each animation takes that long to play out, going lower has no effect.
+		#Lower = faster pulley. Minimum 2 ticks because each animation takes that long to play out — going lower has no effect.
 		# Default: 4
 		# Range: 2 ~ 100
 		pull_interval = 4
@@ -644,22 +644,22 @@
 	# Range: 0.0 ~ 10.0
 	red_merchant_spawn_multiplier = 1.0
 
-[tweaks]
-	#Adds dragon banner pattern made from dragon head
-	dragon_banner_pattern = true
-	golden_apple_disenchant = true
-	#allow gravel to be raked with a hoe
-	raked_gravel = true
+	[tweaks.dragon_banner_pattern]
+		#Adds dragon banner pattern made from dragon head
+		enabled = true
 
 	[tweaks.ai_tweaks]
 		#Allows pillagers to use cannon boats. Add more entities to the 'supplementaries:can_use_cannon_boat' tag to allow them to use cannon boats as well
 		pillagers_use_cannon_boats = true
-		#Allows mobs (like raiders and endermen) to dismount from boats when on land. Add more entities to the 'supplementaries:can_dismount_boats' tag to allow them to dismount as well
-		smart_boat_dismount = true
+		#Allows mobs to dismount from boats when on land. Add more entities to the 'supplementaries:can_dismount_boats' tag to allow them to dismount as well
+		raiders_dismount_boats = true
+
+	[tweaks.golden_apple_disenchant]
+		enabled = true
+
+	[tweaks.traders_open_doors]
 		#Allows traders to open doors (because they couldn't apparently)
-		traders_open_doors = true
-		#Noteblocks with a zombie head will scare off villagers
-		noteblock_scare = true
+		enabled = true
 
 	[tweaks.dispenser_tweaks]
 		#Allows dispensers to use axes on blocks to strip logs and scrape off copper oxidation and wax
@@ -680,6 +680,7 @@
 		blaze_rods = false
 
 	[tweaks.placeable_gunpowder]
+		#Allow placeable gunpowder
 		enabled = true
 		#Number of ticks it takes for gunpowder to burn 1 stage (out of 8). Increase to slow it down
 		# Default: 2
@@ -689,6 +690,10 @@
 		# Default: 2
 		# Range: 0 ~ 8
 		spread_age = 2
+
+	[tweaks.raked_gravel]
+		#allow gravel to be raked with a hoe
+		enabled = true
 
 	[tweaks.bottle_xp]
 		#Allow bottling up xp by using a bottle on an enchanting table
@@ -748,11 +753,23 @@
 		#Convert a zombie horse back by feeding it a golden carrot
 		zombie_horse_inverse_conversion = true
 
+	[tweaks.noteblocks_scare]
+		#Noteblocks with a zombie head will scare off villagers
+		enabled = true
+
 	[tweaks.bad_luck_tweaks]
 		#Hit a void cat, get the unluck
 		cat_unluck = true
 		#If you have unluck you are more likely to get hit by a lighting. Holding a lightning rod also causes this
 		lightning_unluck = true
+
+	[tweaks.item_lore]
+		#Adds a recipe to add 'lore' strings to an item by combining it with a named nametag
+		enabled = true
+
+	[tweaks.sus_recipes]
+		#Adds recipes to craft suspicious gravel and suspicious sand
+		enabled = true
 
 	[tweaks.slimed_effect]
 		enabled = true
@@ -780,16 +797,8 @@
 
 	[tweaks.piston_tweaks]
 		#If true, pistons can push blocks that have a block entity (e.g. chests, furnaces). Blocks whose push reaction is BLOCK are still immovable regardless of this setting.
-		#Quark takes priority here: while its 'pistons move tile entities' module is enabled this option does nothing and Quark handles piston moves instead, since the two implementations would otherwise both rebuild the moved block entity and wipe its contents. Turn that module off to use this one, which supports more cases (pulleys, cauldron filling, cooperative pistons).
-		#Pulleys and ropes follow whichever implementation is active, so turning both off stops them from moving block entities too.
 		push_block_entities = true
 		#If true, adjacent pistons facing the same direction can pool their 12-block push budget to move structures larger than a single piston could handle alone (e.g. two side-by-side pistons pushing a 24-block slime contraption). Only triggers when a single piston's vanilla resolve would fail.
 		cooperative_pistons = true
 		#If true, pushing an empty cauldron into a water or lava source (with a piston or a pulley) fills it with that fluid, instead of leaving it empty. Also tops up cauldrons being moved.
 		moved_cauldron_filling = true
-
-	[tweaks.extra_crafting]
-		#Adds a recipe to add 'lore' strings to an item by combining it with a named nametag
-		item_lore = true
-		#Adds recipes to craft suspicious gravel and suspicious sand
-		sus_recipes = true
