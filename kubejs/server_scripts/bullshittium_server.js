@@ -4,6 +4,7 @@
 ServerEvents.recipes(event => { // this probably isnt destructive
     let st = (id) => `statech:modern_industrialization/${id}`;
 
+    // -- CREATE UTILITY FUNCTIONS -- //
     let pressing = (id, item_inputs, item_outputs) => {
         let newRecipe = {
             type: 'create:pressing',
@@ -14,7 +15,6 @@ ServerEvents.recipes(event => { // this probably isnt destructive
 
         event.custom(newRecipe).id(id);
     };
-
     let mixing = (id, heatRequirement, item_inputs, item_outputs) => {
         let newRecipe = {
             type: 'create:mixing',
@@ -25,7 +25,6 @@ ServerEvents.recipes(event => { // this probably isnt destructive
 
         event.custom(newRecipe).id(id);
     };
-
     let crushing = (id, duration, item_inputs, item_outputs) => {
         let newRecipe = {
             type: 'create:crushing',
@@ -38,20 +37,11 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         event.custom(newRecipe).id(id);
     };
 
-    event.remove({ id: 'create:pressing/iron_ingot' })
-    event.remove({ id: 'create:pressing/copper_ingot' })
-    event.remove({ id: 'create:pressing/gold_ingot' })
-    event.remove({ id: 'createaddition:pressing/electrum_ingot' })
+    // -- ARMOR REMOVALS -- //
+
     event.remove({ id: cr('crafting/appliances/netherite_diving_helmet') })
     event.remove({ id: cr('crafting/appliances/netherite_backtank') })
     event.remove({ id: cr('crafting/appliances/netherite_diving_boots') })
-    event.remove({ id: mi('materials/bronze_dust') })
-    event.remove({ id: mi('materials/fire_clay_bricks') })
-    event.remove({ id: 'extended_industrialization:tool/nano_suit_helmet' })
-    event.remove({ id: 'extended_industrialization:tool/nano_suit_chestplate' })
-    // event.remove({ id: 'extended_industrialization:tool/nano_suit_leggings' })
-    event.remove({ id: 'extended_industrialization:tool/nano_suit_boots' })
-    event.remove({ id: 'extended_industrialization:tool/nano_suit_chestplate_quantum_upgrade' })
 
     // -- BRONZE PLATE --
     pressing(
@@ -59,57 +49,56 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         [{ tag: 'c:double_ingots/bronze' }],
         [{ 'id': 'modern_industrialization:bronze_plate', count: 1 }]
     );
-
     // -- SILVER PLATE --
     pressing(
         'statech:create/pressing/silver_plate',
         [{ tag: 'c:double_ingots/silver' }],
         [{ 'id': mi('silver_plate'), count: 1 }]
     );
-
     // -- STEEL PLATE --
     pressing(
         'statech:create/pressing/steel_plate',
         [{ tag: 'c:double_ingots/steel' }],
         [{ 'id': mi('steel_plate'), count: 1 }]
     );
-
     // -- TIN PLATE --
     pressing(
         'statech:create/pressing/tin_plate',
         [{ tag: 'c:double_ingots/tin' }],
         [{ 'id': mi('tin_plate'), count: 1 }]
     );
-
-    // -- BULLSHITTIUM MODE --
-
     // -- IRON PLATE --
+    event.remove({ id: 'create:pressing/iron_ingot' })
     pressing(
         'statech:create/pressing/iron_plate',
         [{ tag: 'c:double_ingots/iron' }],
         [{ 'id': 'modern_industrialization:iron_plate', count: 1 }]
     );
-
     // -- ELECTRUM PLATE --
+    event.remove({ id: 'createaddition:pressing/electrum_ingot' })
     pressing(
         'statech:create/pressing/electrum_plate',
         [{ tag: 'c:double_ingots/electrum' }],
         [{ 'id': 'modern_industrialization:electrum_plate', count: 1 }]
     );
-
     // -- COPPER PLATE --
+    event.remove({ id: 'create:pressing/copper_ingot' })
     pressing(
         'statech:create/pressing/copper_plate',
         [{ tag: 'c:double_ingots/copper' }],
         [{ 'id': 'modern_industrialization:copper_plate', count: 1 }]
     );
-
     // -- GOLD PLATE --
+    event.remove({ id: 'create:pressing/gold_ingot' })
     pressing(
         'statech:create/pressing/gold_plate',
         [{ tag: 'c:double_ingots/gold' }],
         [{ 'id': 'modern_industrialization:gold_plate', count: 1 }]
     );
+
+    // -- MISC RECIPES -- //
+
+    // -- FORGE HAMMER -- //
 
     event
         .custom({
@@ -128,6 +117,8 @@ ServerEvents.recipes(event => { // this probably isnt destructive
             },
         })
         .id('modern_industrialization:forge_hammer');
+
+    // -- CONCRETE -- //
 
     mixing(
         'statech:modern_industrialization_concrete_create_mixer',
@@ -157,6 +148,8 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     );
 
     // -- BRONZE INGOT --
+
+    event.remove({ id: mi('materials/bronze_dust') })
     mixing(
         st('bronze_ingot_create_mixer'),
         'superheated',
@@ -169,6 +162,9 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         [{ id: mi('bronze_ingot'), count: 2 }]
     );
 
+    // -- FIRE CLAY BRICKS -- //
+
+    event.remove({ id: mi('materials/fire_clay_bricks') })
     event
         .shaped('1x ' + mi('fire_clay_bricks'), ['BDB', 'BCB', 'BDB'], {
             C: mi('concrete_bucket'),
@@ -176,6 +172,24 @@ ServerEvents.recipes(event => { // this probably isnt destructive
             D: mi('calcite_dust'),
         })
         .id(mi('materials/fire_clay_bricks'));
+
+    // -- CRUSHING RECIPES -- //
+
+    crushing(
+        st('calcite_dust_from_calcite'),
+        200,
+        [{ item: mc('calcite') }],
+        [{ count: 2, id: mi('calcite_dust') }]
+    );
+
+    crushing(
+        st('stone_dust_from_stone'),
+        400,
+        [{ item: mc('stone') }],
+        [{ count: 4, id: mi('stone_dust') }]
+    );
+
+    // -- DOUBLE INGOT SHAPELESS RECIPES -- //
 
     event.shapeless(mi('iron_double_ingot'), [
         '2x ' + mc('iron_ingot')
@@ -217,20 +231,9 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     ])
         .id(mi('copper_double_ingot_shapless'));
 
-    crushing(
-        st('calcite_dust_from_calcite'),
-        200,
-        [{ item: mc('calcite') }],
-        [{ count: 2, id: mi('calcite_dust') }]
-    );
 
-    crushing(
-        st('stone_dust_from_stone'),
-        400,
-        [{ item: mc('stone') }],
-        [{ count: 4, id: mi('stone_dust') }]
-    );
 
+    event.remove({ id: 'extended_industrialization:tool/nano_suit_helmet' })
     assembler(
         event,
         st('nano_suit_helmet'),
@@ -253,6 +256,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         ],
     );
 
+    event.remove({ id: 'extended_industrialization:tool/nano_suit_chestplate' })
     assembler(
         event,
         st('nano_suit_chestplate'),
@@ -272,7 +276,8 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         ],
     );
 
-    // this would literally be the same lmao
+    // this is commented out because theres literally nothing to change considering current armor progression
+    // event.remove({ id: 'extended_industrialization:tool/nano_suit_leggings' })
     // assembler(
     //     event,
     //     st('nano_suit_leggings'),
@@ -293,6 +298,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     //     ],
     // );
 
+    event.remove({ id: 'extended_industrialization:tool/nano_suit_boots' })
     assembler(
         event,
         st('nano_suit_boots'),
@@ -337,10 +343,11 @@ ServerEvents.recipes(event => { // this probably isnt destructive
             T: mi('titanium_large_plate'),
             C: mi('cadmium_battery')
         })
-        .id(st('gravichestplate'));
+        .id('statech:modern_industrialization/gravichestplate');
 
     // -- QUANTUM NANO CHESTPLATE --
 
+    event.remove({ id: 'extended_industrialization:tool/nano_suit_chestplate_quantum_upgrade' })
     packer(
         event,
         st('nano_suit_chestplate_quantum_upgrade'),
@@ -352,6 +359,10 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         ],
         [{ amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' }]
     );
+
+    // -- ENDGAME RECIPES -- //
+
+    // -- WORLDSHAPER -- //
 
     assembler(
         event,
@@ -375,6 +386,8 @@ ServerEvents.recipes(event => { // this probably isnt destructive
             { amount: 64000, fluid: mi('neutronium') },
         ]
     );
+
+    // -- ARMOR WRAPS -- //
 
     assembler(
         event,
@@ -447,6 +460,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     );
 
     // -- CREATIVE STORAGE UNIT --
+
     assembler(
         event,
         st('assembler/creative_storage_unit'),
@@ -471,6 +485,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     );
 
     // -- CREATIVE BARREL --
+
     assembler(
         event,
         st('assembler/creative_barrel'),
@@ -495,6 +510,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     );
 
     // -- CREATIVE TANK --
+
     assembler(
         event,
         st('assembler/creative_tank'),
@@ -519,6 +535,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     );
 
     // -- CREATIVE MOTOR --
+
     assembler(
         event,
         st('assembler/creative_motor'),
@@ -543,8 +560,8 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     );
 }) 
 
-// bullshittium stuff outside of this file (handled by mode switcher):
+// bullshittium stuff outside of this file:
 /*
-ui stuff
-
+ui stuff (handled by mode switcher)
+quantum armor wraps (handled by bullshittium_startup.js)
 */
