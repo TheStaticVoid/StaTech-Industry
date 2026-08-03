@@ -1000,6 +1000,7 @@
                 "Jb13Ji6au0RNpzSB"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "betterf3"
             },
@@ -3722,7 +3723,7 @@
             ]
         },
         {
-            "pakku_id": "R6MWKnGLs7xtWGDl",
+            "pakku_id": "pkPHAU4CDzaZOqon",
             "pakku_links": [
                 "PzYdjBZdqIxAO7q8"
             ],
@@ -3736,11 +3737,10 @@
             "id": {
                 "curseforge": "889915"
             },
-            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ftb-xmod-compat-neoforge-21.1.9.jar",
+                    "file_name": "ftb-xmod-compat-neoforge-21.1.10.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -3748,18 +3748,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8438/602/ftb-xmod-compat-neoforge-21.1.9.jar",
-                    "id": "8438602",
+                    "url": "https://edge.forgecdn.net/files/8520/191/ftb-xmod-compat-neoforge-21.1.10.jar",
+                    "id": "8520191",
                     "parent_id": "889915",
                     "hashes": {
-                        "sha1": "0c8caa1d5e6954d71aa114f377bbc79ba83e1faf",
-                        "md5": "b964c7938ee36bfddf57a61b387be2a8"
+                        "sha1": "ff362fe86acd5ec471eeac97651e2b8f2e9fdd8e",
+                        "md5": "3be3b11c40b8083b83e4334e8e1e6d36"
                     },
                     "required_dependencies": [
                         "404465"
                     ],
-                    "size": 150617,
-                    "date_published": "2026-07-15T16:19:39.393Z"
+                    "size": 152024,
+                    "date_published": "2026-07-27T13:33:08.347Z"
                 }
             ]
         },
@@ -4831,7 +4831,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "invasiveopts-1.0.22.jar",
+                    "file_name": "invasiveopts-1.0.23.jar",
                     "mc_versions": [
                         "1.21",
                         "1.21.1"
@@ -4840,16 +4840,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8505/75/invasiveopts-1.0.22.jar",
-                    "id": "8505075",
+                    "url": "https://edge.forgecdn.net/files/8559/327/invasiveopts-1.0.23.jar",
+                    "id": "8559327",
                     "parent_id": "1528432",
                     "hashes": {
-                        "sha1": "795d7264112e74d9dde5d784b9cab2f2dd11f052",
-                        "md5": "2b9556d7e91794ef944646182fe977e5"
+                        "sha1": "b513a315f8db2721a10977df732214c6044527dd",
+                        "md5": "d8558ecd167ae7aee338fb239cf0f6f9"
                     },
                     "required_dependencies": [],
-                    "size": 263266,
-                    "date_published": "2026-07-25T09:37:26.513Z"
+                    "size": 262530,
+                    "date_published": "2026-08-02T05:42:27.417Z"
                 }
             ]
         },
@@ -5341,6 +5341,43 @@
                     "required_dependencies": [],
                     "size": 164003,
                     "date_published": "2025-12-17T20:43:38.367Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ZYpB5fBsHMZOGPoW",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "jei"
+            },
+            "name": {
+                "curseforge": "Just Enough Items (JEI)"
+            },
+            "id": {
+                "curseforge": "238222"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "jei-1.21.1-neoforge-19.43.0.392.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8555/356/jei-1.21.1-neoforge-19.43.0.392.jar",
+                    "id": "8555356",
+                    "parent_id": "238222",
+                    "hashes": {
+                        "sha1": "5924c9b36345c95078269b6acebf1f5efa5c01f8",
+                        "md5": "7ba8e2ac01a35562bb51dba841f4702e"
+                    },
+                    "required_dependencies": [],
+                    "size": 1685019,
+                    "date_published": "2026-08-01T16:39:53.537Z"
                 }
             ]
         },
@@ -8131,7 +8168,11 @@
             ]
         },
         {
-            "pakku_id": "0RquomD8Qpy5aNMh",
+            "pakku_id": "6w3QlS7YlMbdSpOk",
+            "pakku_links": [
+                "MGWfSF1QTVXKpuNz",
+                "Q25BTDCPfah2HWJP"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "sophisticated-backpacks"
@@ -8142,11 +8183,10 @@
             "id": {
                 "curseforge": "422301"
             },
-            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedbackpacks-1.21.1-3.25.69.1979.jar",
+                    "file_name": "sophisticatedbackpacks-1.21.1-3.25.73.2020.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -8154,23 +8194,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8398/799/sophisticatedbackpacks-1.21.1-3.25.69.1979.jar",
-                    "id": "8398799",
+                    "url": "https://edge.forgecdn.net/files/8503/96/sophisticatedbackpacks-1.21.1-3.25.73.2020.jar",
+                    "id": "8503096",
                     "parent_id": "422301",
                     "hashes": {
-                        "sha1": "2120e57403c3a78e598f72e912d57e91339ad713",
-                        "md5": "0def9b9448253826bbea03499f5c3593"
+                        "sha1": "1c9a0f7d969332b1256ff82a8418cb0832aa644b",
+                        "md5": "1fdc465ca7543a35d6375c5eccef025d"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 1142226,
-                    "date_published": "2026-07-09T08:06:37.973Z"
+                    "size": 1144238,
+                    "date_published": "2026-07-24T23:28:53.180Z"
                 }
             ]
         },
         {
-            "pakku_id": "MGWfSF1QTVXKpuNz",
+            "pakku_id": "Q25BTDCPfah2HWJP",
             "type": "MOD",
             "slug": {
                 "curseforge": "sophisticated-core"
@@ -8181,11 +8221,10 @@
             "id": {
                 "curseforge": "618298"
             },
-            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedcore-1.21.1-1.4.70.2131.jar",
+                    "file_name": "sophisticatedcore-1.21.1-1.4.80.2194.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -8193,21 +8232,24 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8398/762/sophisticatedcore-1.21.1-1.4.70.2131.jar",
-                    "id": "8398762",
+                    "url": "https://edge.forgecdn.net/files/8503/41/sophisticatedcore-1.21.1-1.4.80.2194.jar",
+                    "id": "8503041",
                     "parent_id": "618298",
                     "hashes": {
-                        "sha1": "69ba73fd9d2fa071ecb5e05f71edfb63e1e39de9",
-                        "md5": "06dc1b59387b3101842ba503326056a3"
+                        "sha1": "bef1d5186feaed80b11bd1e6f2dc880e8bec0449",
+                        "md5": "9c3aea22bf8385e52f74b45c5cde6d69"
                     },
                     "required_dependencies": [],
-                    "size": 1654111,
-                    "date_published": "2026-07-09T07:57:51.657Z"
+                    "size": 1673669,
+                    "date_published": "2026-07-24T23:20:34.030Z"
                 }
             ]
         },
         {
-            "pakku_id": "peMGIpSBtj5EqqMZ",
+            "pakku_id": "4LOKzWKpdq4y6umk",
+            "pakku_links": [
+                "Q25BTDCPfah2HWJP"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "sophisticated-inventory-interactions"
@@ -8218,11 +8260,10 @@
             "id": {
                 "curseforge": "1491239"
             },
-            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedinventoryinteractions-1.21.1-0.1.10.173.jar",
+                    "file_name": "sophisticatedinventoryinteractions-1.21.1-0.1.12.191.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -8230,25 +8271,26 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8412/343/sophisticatedinventoryinteractions-1.21.1-0.1.10.173.jar",
-                    "id": "8412343",
+                    "url": "https://edge.forgecdn.net/files/8467/493/sophisticatedinventoryinteractions-1.21.1-0.1.12.191.jar",
+                    "id": "8467493",
                     "parent_id": "1491239",
                     "hashes": {
-                        "sha1": "9c36c785103479593efe2b3bb0916fdf5ee8b3a0",
-                        "md5": "b8b8c2337dca089f5f60a335db62f7c7"
+                        "sha1": "fe4842df3d7934eb9cfd40fa29ab17b215e4330c",
+                        "md5": "c8196e11fe8ffc58601a99b005dfc009"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 110181,
-                    "date_published": "2026-07-11T13:20:36.913Z"
+                    "size": 110327,
+                    "date_published": "2026-07-19T21:16:26.967Z"
                 }
             ]
         },
         {
             "pakku_id": "sJZrAuLD0xFvfiiZ",
             "pakku_links": [
-                "MGWfSF1QTVXKpuNz"
+                "MGWfSF1QTVXKpuNz",
+                "Q25BTDCPfah2HWJP"
             ],
             "type": "MOD",
             "slug": {
@@ -8288,7 +8330,11 @@
             ]
         },
         {
-            "pakku_id": "D0R8nKmnFrCnMkyF",
+            "pakku_id": "2A5wMo0W0L3zRsgW",
+            "pakku_links": [
+                "MGWfSF1QTVXKpuNz",
+                "Q25BTDCPfah2HWJP"
+            ],
             "type": "MOD",
             "slug": {
                 "curseforge": "sophisticated-storage"
@@ -8299,11 +8345,10 @@
             "id": {
                 "curseforge": "619320"
             },
-            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "sophisticatedstorage-1.21.1-1.5.73.1960.jar",
+                    "file_name": "sophisticatedstorage-1.21.1-1.5.83.2017.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -8311,18 +8356,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8419/517/sophisticatedstorage-1.21.1-1.5.73.1960.jar",
-                    "id": "8419517",
+                    "url": "https://edge.forgecdn.net/files/8503/122/sophisticatedstorage-1.21.1-1.5.83.2017.jar",
+                    "id": "8503122",
                     "parent_id": "619320",
                     "hashes": {
-                        "sha1": "8933c41dc068b09a40f99611380acc5ba8597554",
-                        "md5": "19228f1ab8a8887fbb47319c6704c8d1"
+                        "sha1": "b36fa724fe925e715d8b13929d5789125e97e81b",
+                        "md5": "d75cd3788ad260042ef607cc04851854"
                     },
                     "required_dependencies": [
                         "618298"
                     ],
-                    "size": 1808108,
-                    "date_published": "2026-07-12T15:28:08.840Z"
+                    "size": 1828640,
+                    "date_published": "2026-07-24T23:37:54.453Z"
                 }
             ]
         },
@@ -8347,7 +8392,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "spectrum-1.11.8-1.21.1-neo.jar",
+                    "file_name": "spectrum-1.12.0-1.21.1-neo.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -8355,23 +8400,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8037/133/spectrum-1.11.8-1.21.1-neo.jar",
-                    "id": "8037133",
+                    "url": "https://edge.forgecdn.net/files/8564/379/spectrum-1.12.0-1.21.1-neo.jar",
+                    "id": "8564379",
                     "parent_id": "556967",
                     "hashes": {
-                        "sha1": "589f92a09e616202305cc81b3681735a4e9bee85",
-                        "md5": "dc4404e66f3764fc404a32c4bb45f25d"
+                        "sha1": "621d81250e1f84c58af6cb6c6ad29f736e39be2b",
+                        "md5": "a3d1eaa5935f481999368aef08b07751"
                     },
                     "required_dependencies": [
-                        "348521",
-                        "341284",
-                        "306612",
-                        "309927",
                         "656526",
-                        "538392"
+                        "538392",
+                        "309927"
                     ],
-                    "size": 88237369,
-                    "date_published": "2026-05-04T10:07:52.950Z"
+                    "size": 88587094,
+                    "date_published": "2026-08-02T20:54:17.100Z"
                 }
             ]
         },
@@ -8970,45 +9012,6 @@
                     "required_dependencies": [],
                     "size": 606801,
                     "date_published": "2026-07-13T20:03:33.487Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "lJw7d5DvfA7fDIj6",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "tmrv"
-            },
-            "name": {
-                "curseforge": "TooManyRecipeViewers (TMRV)"
-            },
-            "id": {
-                "curseforge": "1194921"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "toomanyrecipeviewers-0.9.0+mc.21.1.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8336/857/toomanyrecipeviewers-0.9.0+mc.21.1.jar",
-                    "id": "8336857",
-                    "parent_id": "1194921",
-                    "hashes": {
-                        "sha1": "d82ca1db3f4323534b1ce5f43b94a5ae31f65edb",
-                        "md5": "43c678a25240ad380e308c4218c9b99a"
-                    },
-                    "required_dependencies": [
-                        "580555"
-                    ],
-                    "size": 1241625,
-                    "date_published": "2026-06-28T20:48:06.290Z"
                 }
             ]
         },
