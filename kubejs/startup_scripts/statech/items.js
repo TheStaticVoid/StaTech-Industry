@@ -3,21 +3,20 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-
 const toolSet = [
-        ['pickaxe', 'Pickaxe'],
-        ['axe', 'Axe'],
-        ['hoe', 'Hoe'],
-        ['sword', 'Sword'],
-        ['shovel', 'Shovel' ],
-    ];
+    ['pickaxe', 'Pickaxe'],
+    ['axe', 'Axe'],
+    ['hoe', 'Hoe'],
+    ['sword', 'Sword'],
+    ['shovel', 'Shovel'],
+];
 
 const armorSet = [
-        ['helmet', 'Helmet'],
-        ['chestplate', 'Chesplate'],
-        ['leggings', 'Leggings'],
-        ['boots', 'Boots'],
-    ];
+    ['helmet', 'Helmet'],
+    ['chestplate', 'Chestplate'],
+    ['leggings', 'Leggings'],
+    ['boots', 'Boots'],
+];
 
 ItemEvents.toolTierRegistry((event) => {
     event.add('bronze', (tier) => {
@@ -309,8 +308,9 @@ StartupEvents.registry('item', (event) => {
 
     event.create('uu_matter').displayName('UU Matter').rarity('Epic');
 
-    event.create('diamond_upgrade_smithing_template').displayName('Diamond Smithing Template');
-
+    event
+        .create('diamond_upgrade_smithing_template')
+        .displayName('Diamond Smithing Template');
 
     // -- BRONZE EQUIPMENT -- //
 
@@ -338,7 +338,7 @@ StartupEvents.registry('item', (event) => {
         .maxDamage(165)
         .material('kubejs:bronze');
 
-    toolSet.forEach(tool => {
+    toolSet.forEach((tool) => {
         event
             .create(`bronze_${tool[0]}`, `${tool[0]}`)
             .displayName(`Bronze ${tool[1]}`)
@@ -347,7 +347,7 @@ StartupEvents.registry('item', (event) => {
             .create(`steel_${tool[0]}`, `${tool[0]}`)
             .displayName(`Steel ${tool[1]}`)
             .tier('steel');
-    })
+    });
 
     // -- STEEL EQUIPMENT -- //
 
@@ -374,7 +374,6 @@ StartupEvents.registry('item', (event) => {
         .displayName('Steel Helmet')
         .maxDamage(326)
         .material('kubejs:steel');
-
 });
 
 ItemEvents.modification((event) => {
@@ -382,32 +381,31 @@ ItemEvents.modification((event) => {
         item.burnTime = 14400;
     });
 
-    event.modify('minecraft:iron_helmet', item => {
-        item.maxDamage = 148
+    event.modify('minecraft:iron_helmet', (item) => {
+        item.maxDamage = 148;
         // item.armorProtection = 2
     });
 
-    event.modify('minecraft:iron_chestplate', item => {
-        item.maxDamage = 216
+    event.modify('minecraft:iron_chestplate', (item) => {
+        item.maxDamage = 216;
         // item.armorProtection = 4
     });
 
-    event.modify('minecraft:iron_leggings', item => {
-        item.maxDamage = 202
+    event.modify('minecraft:iron_leggings', (item) => {
+        item.maxDamage = 202;
         // item.armorProtection = 4
     });
 
-    event.modify('minecraft:iron_boots', item => {
-        item.maxDamage = 175
+    event.modify('minecraft:iron_boots', (item) => {
+        item.maxDamage = 175;
         // item.armorProtection = 2
     });
 
     toolSet.forEach((tool) => {
-        event.modify(`iron_${tool[0]}`, item => {
+        event.modify(`iron_${tool[0]}`, (item) => {
             item.maxDamage = 225;
             // item.digSpeed = 5;
-            item.attackDamage = 1.5
-        })
-    })
-
+            item.attackDamage = 1.5;
+        });
+    });
 });
