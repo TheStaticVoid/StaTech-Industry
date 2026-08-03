@@ -36,11 +36,15 @@ ItemEvents.modifyTooltips((event) => {
         kj('basic_space_circuit'),
         kj('advanced_space_circuit'),
         kj('anomalous_space_circuit'),
+        kj('uu_matter'),
+        kj('scrap'),
+        mi('recycler'),
         mi('supercomputer'),
         mi('telescope'),
+        /^modern_industrialization:.*(cobalt).*/,
     ];
 
-    // -- LIST OF ALL CUSTOM MACHINES AND ITEMS -- //
+    // -- LIST OF ALL CUSTOM FLUIDS -- //
 
     const CUSTOM_FLUIDS = [
         mi('stellar_plasma'),
@@ -109,6 +113,7 @@ ItemEvents.modifyTooltips((event) => {
         mi('stone_dust'),
         mi('clay_dust'),
         mi('clay_tiny_dust'),
+        mi('recycler'),
         /^modern_industrialization:.*(calorite|tungstensteel|desh|moon_ice|ostrum|polytetrafluoroethylene|cobalt|zinc|dark_ashes|calcite|fluorite|acrylonitrile_butadiene_styrene|enderium|entro|sky_bronze|sky_steel|sapphire|peridot|ruby|boron_trioxide|kernite|lithium_hydride|lithium_tetrafluoroborate|lithium_fluoride).*/,
     ];
 

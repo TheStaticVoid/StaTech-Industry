@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.0-rc4]
+
+This bugfix update primarily addresses a JEI/FTB-XMod-Compat keybind interactions crash (#621) and updates Spectrum with many improvements and bugfixes. More work went into fixing the GitHub Action workflows for building and releasing the pack.
+
+A Discord Rich Presence is also now present. If no further major issues are discoverd, this version will become the full release version.
+
 ## [2.0.0-rc3]
 
 Fixes a couple breaking bugs.
