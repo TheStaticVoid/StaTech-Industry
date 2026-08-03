@@ -3393,6 +3393,47 @@
             ]
         },
         {
+            "pakku_id": "4TvWjcLEyGAVtIoa",
+            "pakku_links": [
+                "PzYdjBZdqIxAO7q8"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ftb-backups-3"
+            },
+            "name": {
+                "curseforge": "FTB Backups 3"
+            },
+            "id": {
+                "curseforge": "1294188"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ftb-backups-3-21.1.5.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8078/605/ftb-backups-3-21.1.5.jar",
+                    "id": "8078605",
+                    "parent_id": "1294188",
+                    "hashes": {
+                        "sha1": "c375dd0e4c673b39297c09211f4bf225bf1141ba",
+                        "md5": "db9c137b5db5f1bbf19d33a398996611"
+                    },
+                    "required_dependencies": [
+                        "404465"
+                    ],
+                    "size": 91354,
+                    "date_published": "2026-05-12T16:16:06.343Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "TGxLFelMkxg0xCxG",
             "pakku_links": [
                 "AjYKRRphpjTNFZvW",
@@ -7927,6 +7968,7 @@
                 "Jb13Ji6au0RNpzSB"
             ],
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "simple-discord-rich-presence"
             },
