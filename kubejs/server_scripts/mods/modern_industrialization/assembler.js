@@ -37,197 +37,6 @@ ServerEvents.recipes((event) => {
     ];
     REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
-    // -- BULLSHITTIUM MODE -- //
-
-    assembler(
-        event,
-        st('handheld_worldshaper'),
-        32000,
-        2400,
-        [
-            { amount: 16, item: kj('wrap_of_helmets') },
-            { amount: 64, item: mi('creative_tank') },
-            { amount: 16, item: kj('wrap_of_chestplates') },
-            { amount: 64, item: mi('creative_storage_unit') },
-            { amount: 16, item: kj('wrap_of_sabers') },
-            { amount: 64, item: 'create:creative_motor' },
-            { amount: 16, item: kj('wrap_of_leggings') },
-            { amount: 64, item: mi('creative_barrel') },
-            { amount: 16, item: kj('wrap_of_boots') },
-        ],
-        [{ amount: 1, item: 'create:handheld_worldshaper' }],
-        [
-            { amount: 64000, fluid: mi('uu_matter') },
-            { amount: 64000, fluid: mi('neutronium') },
-        ]
-    );
-
-    assembler(
-        event,
-        st('wrap_of_helmets'),
-        8,
-        200,
-        [
-            { amount: 1, item: 'extended_industrialization:nano_quantum_helmet' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_helmet' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_helmet' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_helmet' },
-        ],
-        [{ amount: 1, item: kj('wrap_of_helmets') }]
-    );
-
-    assembler(
-        event,
-        st('wrap_of_chestplates'),
-        8,
-        200,
-        [
-            { amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' },
-        ],
-        [{ amount: 1, item: kj('wrap_of_chestplates') }]
-    );
-
-    assembler(
-        event,
-        st('wrap_of_leggings'),
-        8,
-        200,
-        [
-            { amount: 1, item: 'extended_industrialization:nano_quantum_leggings' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_leggings' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_leggings' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_leggings' },
-        ],
-        [{ amount: 1, item: kj('wrap_of_leggings') }]
-    );
-
-    assembler(
-        event,
-        st('wrap_of_boots'),
-        8,
-        200,
-        [
-            { amount: 1, item: 'extended_industrialization:nano_quantum_boots' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_boots' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_boots' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_boots' },
-        ],
-        [{ amount: 1, item: kj('wrap_of_boots') }]
-    );
-
-    assembler(
-        event,
-        st('wrap_of_sabers'),
-        8,
-        200,
-        [
-            { amount: 1, item: 'extended_industrialization:nano_quantum_saber' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_saber' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_saber' },
-            { amount: 1, item: 'extended_industrialization:nano_quantum_saber' },
-        ],
-        [{ amount: 1, item: kj('wrap_of_sabers') }]
-    );
-
-    // -- CREATIVE STORAGE UNIT -- //
-    assembler(
-        event,
-        st('creative_storage_unit'),
-        32000,
-        2400,
-        [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('superconductor_storage_unit') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-        ],
-        [{ amount: 1, item: mi('creative_storage_unit') }],
-        [
-            { amount: 8000, fluid: mi('uu_matter') },
-            { amount: 8000, fluid: mi('neutronium') },
-        ]
-    );
-
-    // -- CREATIVE BARREL -- //
-    assembler(
-        event,
-        st('creative_barrel'),
-        32000,
-        2400,
-        [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('quantum_barrel') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-        ],
-        [{ amount: 1, item: mi('creative_barrel') }],
-        [
-            { amount: 8000, fluid: mi('uu_matter') },
-            { amount: 8000, fluid: mi('neutronium') },
-        ]
-    );
-
-    // -- CREATIVE TANK -- //
-    assembler(
-        event,
-        st('creative_tank'),
-        32000,
-        2400,
-        [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('quantum_tank') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-        ],
-        [{ amount: 1, item: mi('creative_tank') }],
-        [
-            { amount: 8000, fluid: mi('uu_matter') },
-            { amount: 8000, fluid: mi('neutronium') },
-        ]
-    );
-
-    // -- CREATIVE MOTOR -- //
-    assembler(
-        event,
-        st('creative_motor'),
-        32000,
-        2400,
-        [
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 16, item: mi('plasma_turbine') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-            { amount: 32, item: mi('singularity') },
-        ],
-        [{ amount: 1, item: 'create:creative_motor' }],
-        [
-            { amount: 8000, fluid: mi('uu_matter') },
-            { amount: 8000, fluid: mi('neutronium') },
-        ]
-    );
-
     // -- DOPED DIODE -- //
     assembler(
         event,
@@ -1398,129 +1207,129 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mi('large_diesel_generator') }]
     );
 
-    // ------------------------- bullshittium'd
+    // -------------------------
     // ENDGAME RECIPES
     // -------------------------
 
-    // -- CREATIVE STORAGE UNIT -- 
-    // assembler(
-    //     event,
-    //     st('creative_storage_unit'),
-    //     32000,
-    //     2400,
-    //     [
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 1, item: mi('superconductor_storage_unit') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //     ],
-    //     [{ amount: 1, item: mi('creative_storage_unit') }],
-    //     [
-    //         { amount: 8000, fluid: mi('uu_matter') },
-    //         { amount: 8000, fluid: mi('neutronium') },
-    //     ]
-    // );
+    // -- CREATIVE STORAGE UNIT -- //
+    assembler(
+        event,
+        st('creative_storage_unit'),
+        32000,
+        2400,
+        [
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('superconductor_storage_unit') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+        ],
+        [{ amount: 1, item: mi('creative_storage_unit') }],
+        [
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') },
+        ]
+    );
 
-    // -- CREATIVE BARREL -- 
-    // assembler(
-    //     event,
-    //     st('creative_barrel'),
-    //     32000,
-    //     2400,
-    //     [
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 1, item: mi('quantum_barrel') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //     ],
-    //     [{ amount: 1, item: mi('creative_barrel') }],
-    //     [
-    //         { amount: 8000, fluid: mi('uu_matter') },
-    //         { amount: 8000, fluid: mi('neutronium') },
-    //     ]
-    // );
+    // -- CREATIVE BARREL -- //
+    assembler(
+        event,
+        st('creative_barrel'),
+        32000,
+        2400,
+        [
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('quantum_barrel') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+        ],
+        [{ amount: 1, item: mi('creative_barrel') }],
+        [
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') },
+        ]
+    );
 
-    // -- CREATIVE TANK -- 
-    // assembler(
-    //     event,
-    //     st('creative_tank'),
-    //     32000,
-    //     2400,
-    //     [
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 1, item: mi('quantum_tank') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //     ],
-    //     [{ amount: 1, item: mi('creative_tank') }],
-    //     [
-    //         { amount: 8000, fluid: mi('uu_matter') },
-    //         { amount: 8000, fluid: mi('neutronium') },
-    //     ]
-    // );
+    // -- CREATIVE TANK -- //
+    assembler(
+        event,
+        st('creative_tank'),
+        32000,
+        2400,
+        [
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('quantum_tank') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+        ],
+        [{ amount: 1, item: mi('creative_tank') }],
+        [
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') },
+        ]
+    );
 
-    // -- CREATIVE MOTOR -- 
-    // assembler(
-    //     event,
-    //     st('creative_motor'),
-    //     32000,
-    //     2400,
-    //     [
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 1, item: mi('plasma_turbine') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //         { amount: 64, item: mi('singularity') },
-    //     ],
-    //     [{ amount: 1, item: 'create:creative_motor' }],
-    //     [
-    //         { amount: 8000, fluid: mi('uu_matter') },
-    //         { amount: 8000, fluid: mi('neutronium') },
-    //     ]
-    // );
+    // -- CREATIVE MOTOR -- //
+    assembler(
+        event,
+        st('creative_motor'),
+        32000,
+        2400,
+        [
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 1, item: mi('plasma_turbine') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+            { amount: 64, item: mi('singularity') },
+        ],
+        [{ amount: 1, item: 'create:creative_motor' }],
+        [
+            { amount: 8000, fluid: mi('uu_matter') },
+            { amount: 8000, fluid: mi('neutronium') },
+        ]
+    );
 
-    // -- CREATIVE WORLDSHAPER -- // 
-    // assembler(
-    //     event,
-    //     st('handheld_worldshaper'),
-    //     32000,
-    //     2400,
-    //     [
-    //         { amount: 1, item: mi('quantum_helmet') },
-    //         { amount: 1, item: mi('creative_tank') },
-    //         { amount: 1, item: mi('quantum_chestplate') },
-    //         { amount: 1, item: mi('creative_storage_unit') },
-    //         { amount: 1, item: mi('quantum_sword') },
-    //         { amount: 1, item: 'create:creative_motor' },
-    //         { amount: 1, item: mi('quantum_leggings') },
-    //         { amount: 1, item: mi('creative_barrel') },
-    //         { amount: 1, item: mi('quantum_boots') },
-    //     ],
-    //     [{ amount: 1, item: 'create:handheld_worldshaper' }],
-    //     [
-    //         { amount: 16000, fluid: mi('uu_matter') },
-    //         { amount: 16000, fluid: mi('neutronium') },
-    //     ]
-    // );
+    // -- CREATIVE WORLDSHAPER -- //
+    assembler(
+        event,
+        st('handheld_worldshaper'),
+        32000,
+        2400,
+        [
+            { amount: 1, item: mi('quantum_helmet') },
+            { amount: 1, item: mi('creative_tank') },
+            { amount: 1, item: mi('quantum_chestplate') },
+            { amount: 1, item: mi('creative_storage_unit') },
+            { amount: 1, item: mi('quantum_sword') },
+            { amount: 1, item: 'create:creative_motor' },
+            { amount: 1, item: mi('quantum_leggings') },
+            { amount: 1, item: mi('creative_barrel') },
+            { amount: 1, item: mi('quantum_boots') },
+        ],
+        [{ amount: 1, item: 'create:handheld_worldshaper' }],
+        [
+            { amount: 16000, fluid: mi('uu_matter') },
+            { amount: 16000, fluid: mi('neutronium') },
+        ]
+    );
 
     // -----------------//
     // -- SPACE AGE -- //
