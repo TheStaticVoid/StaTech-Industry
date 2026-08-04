@@ -1,0 +1,18 @@
+name: To-Do Item
+description: Keep track of intended additions/enhancements
+title: "[To-Do]: "
+labels: ["planned progression", "2.0", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before creating an issue, make sure to search the issue reports if you have the said issue before making a new one.
+        Please also make sure you are using the latest and/or check if the issue exists on the latest release. Also make sure the To-Do Item is in keeping with the guidelines laid out in CHANGELOG.md.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Suggestion
+      description: Briefly explain note the task to complete; Describe what it is, and how it can improve the pack. Feel free to include images.
+      placeholder: Need to add...
+    validations:
+      required: true
