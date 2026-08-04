@@ -392,11 +392,11 @@ ServerEvents.recipes((event) => {
     // -- CONCRETE BLOCK -- //
     mixer(
         event,
-        st('concrete'),
+        st('speedy_concrete'),
         8,
         100,
         [{ amount: 1, item: mi('packer_block_template'), probability: 0 }],
-        [{ amount: 1, item: kj('concrete') }],
+        [{ amount: 1, item: kj('speedy_concrete') }],
         [{ amount: 500, fluid: mi('concrete') }]
     );
 
