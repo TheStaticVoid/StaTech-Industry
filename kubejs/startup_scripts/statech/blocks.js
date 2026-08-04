@@ -58,8 +58,8 @@ StartupEvents.registry('block', (event) => {
         .tagBlock('minecraft:needs_iron_tool')
         .tagBlock('c:glass_blocks');
     event
-        .create('kubejs:concrete')
-        .displayName('Concrete')
+        .create('kubejs:speedy_concrete')
+        .displayName('Speedy Concrete')
         .soundType('stone')
         .requiresTool(true)
         .hardness(4)
