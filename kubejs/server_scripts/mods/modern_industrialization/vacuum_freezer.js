@@ -73,4 +73,14 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: kj('borosilicate_glass') }],
         [{ amount: 1000, fluid: mi('molten_borosilicate_glass') }]
     );
+
+    // -- NETHERITE INGOT -- //
+    vacuumFreezer(
+        event,
+        st('netherite_ingot'),
+        16,
+        200,
+        [{ amount: 1, item: mi('netherite_hot_ingot') }],
+        [{ amount: 1, item: mc('netherite_ingot') }]
+    );
 });

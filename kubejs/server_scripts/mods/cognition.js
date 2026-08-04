@@ -8,7 +8,11 @@ ServerEvents.recipes((event) => {
     let st = (id) => `statech:cognition/${id}`;
 
     // -- COGNITION REMOVED RECIPES -- //
-    const REMOVED_RECIPES = [xp('cognitive_flux'), xp('cognitive_alloy')];
+    const REMOVED_RECIPES = [
+        xp('cognitive_flux'), 
+        xp('cognitive_alloy'),
+        xp('metamorpher/transformation/netherite_ingot_metamorphosis')
+    ];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
     // ------------------------//
