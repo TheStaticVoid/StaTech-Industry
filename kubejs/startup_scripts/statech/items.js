@@ -380,32 +380,4 @@ ItemEvents.modification((event) => {
     event.modify('kubejs:charcoal_block', (item) => {
         item.burnTime = 14400;
     });
-
-    event.modify('minecraft:iron_helmet', (item) => {
-        item.maxDamage = 148;
-        // item.armorProtection = 2
-    });
-
-    event.modify('minecraft:iron_chestplate', (item) => {
-        item.maxDamage = 216;
-        // item.armorProtection = 4
-    });
-
-    event.modify('minecraft:iron_leggings', (item) => {
-        item.maxDamage = 202;
-        // item.armorProtection = 4
-    });
-
-    event.modify('minecraft:iron_boots', (item) => {
-        item.maxDamage = 175;
-        // item.armorProtection = 2
-    });
-
-    toolSet.forEach((tool) => {
-        event.modify(`iron_${tool[0]}`, (item) => {
-            item.maxDamage = 225;
-            // item.digSpeed = 5;
-            item.attackDamage = 1.5;
-        });
-    });
 });
