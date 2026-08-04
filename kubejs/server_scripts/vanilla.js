@@ -30,6 +30,10 @@ ServerEvents.recipes((event) => {
         mc('compass'),
         mc('chain'),
         mc('amethyst_block'),
+        mc('iron_helmet'),
+        mc('iron_chestplate'),
+        mc('iron_leggings'),
+        mc('iron_boots')
     ];
     VANILLA_DELETED.forEach((id) => event.remove({ id: id }));
 
@@ -141,6 +145,31 @@ ServerEvents.recipes((event) => {
             A: mc('amethyst_shard'),
         })
         .id(st('amethyst_block'));
+
+    // -- IRON ARMOR -- //
+    event
+        .shaped(mc('iron_helmet'), ['III', 'I I'], {
+            I: mi('iron_plate')
+        })
+        .id(st('iron_helmet'));
+    
+    event
+        .shaped(mc('iron_chestplate'), ['I I', 'III', 'III'], {
+            I: mi('iron_plate')
+        })
+        .id(st('iron_chestplate'));
+
+    event
+        .shaped(mc('iron_leggings'), ['III', 'I I', 'I I'], {
+            I: mi('iron_plate')
+        })
+        .id(st('iron_leggings'));
+
+    event
+        .shaped(mc('iron_boots'), ['I I', 'I I'], {
+            I: mi('iron_plate')
+        })
+        .id(st('iron_boots'));
 
     // -- DIAMOND ARMOR AND TOOLS -- //
 
