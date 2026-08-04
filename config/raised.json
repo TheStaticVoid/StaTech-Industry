@@ -88,6 +88,17 @@
       },
       "sync": "artifacts:helium_flamingo_charge"
     },
+    "craftconfig:singleplayer_tab": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "craftconfig:singleplayer_tab"
+    },
     "create:blueprint": {
       "displacement": {
         "x": 0,
@@ -571,6 +582,28 @@
         "y": "UP"
       },
       "sync": "spectrum:azure_dike"
+    },
+    "spectrum:paintbrush_info": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "spectrum:paintbrush_info"
+    },
+    "spectrum:staff_overlay": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "spectrum:staff_overlay"
     },
     "supplementaries:cannon_charge": {
       "displacement": {
