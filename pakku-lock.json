@@ -1114,6 +1114,47 @@
             ]
         },
         {
+            "pakku_id": "CEBhcMsS6lROaamF",
+            "pakku_links": [
+                "Qn1fafEh45grPctM"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "block-runner"
+            },
+            "name": {
+                "curseforge": "Block Runner"
+            },
+            "id": {
+                "curseforge": "442842"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "BlockRunner-v21.1.2-1.21.1-NeoForge.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6215/39/BlockRunner-v21.1.2-1.21.1-NeoForge.jar",
+                    "id": "6215039",
+                    "parent_id": "442842",
+                    "hashes": {
+                        "sha1": "ca0bef3916a20315f2444b4deeb976e5c7ae041d",
+                        "md5": "256856d85512339bb7c18a03f750a0f1"
+                    },
+                    "required_dependencies": [
+                        "495476"
+                    ],
+                    "size": 107012,
+                    "date_published": "2025-02-20T21:48:43.713Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "RTPtNUsYgXuxTbBT",
             "type": "MOD",
             "slug": {
@@ -10105,5 +10146,5 @@
             ]
         }
     ],
-    "lockfile_version": 1
+    "lockfile_version": 2
 }
