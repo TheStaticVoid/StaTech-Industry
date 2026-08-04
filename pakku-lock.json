@@ -995,6 +995,47 @@
             ]
         },
         {
+            "pakku_id": "f9WgwgLwjadkH13b",
+            "pakku_links": [
+                "H2eKsiYMvfvWkgA2"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "bettertabinfo"
+            },
+            "name": {
+                "curseforge": "Better Tab Info"
+            },
+            "id": {
+                "curseforge": "1420609"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "better_tab-2.2.1+1.21.1-neoforge.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8443/22/better_tab-2.2.1+1.21.1-neoforge.jar",
+                    "id": "8443022",
+                    "parent_id": "1420609",
+                    "hashes": {
+                        "sha1": "9c78e9f030054e9d9f423f92e0a7c09a976f63fa",
+                        "md5": "aa01b961ef7295817b1fae434727bad2"
+                    },
+                    "required_dependencies": [
+                        "1530219"
+                    ],
+                    "size": 27506,
+                    "date_published": "2026-07-16T08:47:26.777Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "fy0QHXI3RFHypNRO",
             "pakku_links": [
                 "Jb13Ji6au0RNpzSB"
@@ -2183,6 +2224,42 @@
                     "required_dependencies": [],
                     "size": 65716,
                     "date_published": "2026-03-22T18:53:05.607Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "H2eKsiYMvfvWkgA2",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "craft-config"
+            },
+            "name": {
+                "curseforge": "Craft Config Lib"
+            },
+            "id": {
+                "curseforge": "1530219"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "craft_config-1.1.12+1.21.1-neoforge.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8300/316/craft_config-1.1.12+1.21.1-neoforge.jar",
+                    "id": "8300316",
+                    "parent_id": "1530219",
+                    "hashes": {
+                        "sha1": "4321056263d5b5f29b57b5d4e99b66ae98eca72f",
+                        "md5": "3602bb7dd32b253fa4ca6bb79bfadc6e"
+                    },
+                    "required_dependencies": [],
+                    "size": 269297,
+                    "date_published": "2026-06-22T13:51:38.323Z"
                 }
             ]
         },
