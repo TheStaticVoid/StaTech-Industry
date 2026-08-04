@@ -72,47 +72,47 @@ ServerEvents.recipes((event) => {
             L: '#minecraft:logs',
         })
         .id(st('sticks_from_log'));
-    /*
+    
     // -- BUCKET ALT METALS -- //
     ALT_METALS.forEach(id => {
-        event.shaped(mc('bucket'), [ 'P P', ' P '], { P: `#c:${id}_plates` }).id(st(`bucket_${id}`));
+        event.shaped(mc('bucket'), [ 'P P', ' P '], { P: `#c:plates/${id}` }).id(st(`bucket_${id}`));
     });
 
     // -- HOPPER ALT METALS -- //
     ALT_METALS.forEach(id => {
-        event.shaped(mc('hopper'), [ 'I I', 'ICI', ' I '], { I: `#c:${id}_ingots`, C: '#c:wooden_chests' }).id(st(`hopper_${id}`));
+        event.shaped(mc('hopper'), [ 'I I', 'ICI', ' I '], { I: `#c:ingots/${id}`, C: '#c:chests/wooden' }).id(st(`hopper_${id}`));
     });
 
     // -- DETECTOR RAIL ALT METALS -- //
     ALT_METALS.forEach(id => {
-        event.shaped('6x ' + mc('detector_rail'), [ 'I I', 'IPI', 'IRI'], {I: `#c:${id}_ingots`, P: mc('stone_pressure_plate'), R: '#c:redstone_dusts' }).id(st(`detector_rail_${id}`));
+        event.shaped('6x ' + mc('detector_rail'), [ 'I I', 'IPI', 'IRI'], {I: `#c:ingots/${id}`, P: mc('stone_pressure_plate'), R: '#c:dusts/redstone' }).id(st(`detector_rail_${id}`));
     });
 
     // -- ACTIVATOR RAIL ALT METALS -- //
     ALT_METALS.forEach(id => {
-        event.shaped('6x ' + mc('activator_rail'), ['ISI', 'IRI', 'ISI'], { I: `#c:${id}_ingots`, S: '#c:wood_sticks', R: mc('redstone_torch') }).id(st(`activator_rail_${id}`));
+        event.shaped('6x ' + mc('activator_rail'), ['ISI', 'IRI', 'ISI'], { I: `#c:ingots/${id}`, S: '#c:rods/wooden', R: mc('redstone_torch') }).id(st(`activator_rail_${id}`));
     });
 
     // -- RAIL ALT METALS -- //
     ALT_METALS.forEach(id => {
-        event.shaped('16x ' + mc('rail'), ['I I', 'ISI', 'I I'], { I: `#c:${id}_ingots`, S: '#c:wood_sticks' }).id(st(`rail_${id}`));
+        event.shaped('16x ' + mc('rail'), ['I I', 'ISI', 'I I'], { I: `#c:ingots/${id}`, S: '#c:rods/wooden' }).id(st(`rail_${id}`));
     });
 
     // -- CAULDRON ALT METALS -- //
     ALT_METALS.forEach(id => {
-        event.shaped(mc('cauldron'), [ 'I I', 'I I', 'III'], { I: `#c:${id}_ingots`}).id(st(`cauldron_${id}`));
+        event.shaped(mc('cauldron'), [ 'I I', 'I I', 'III'], { I: `#c:ingots/${id}`}).id(st(`cauldron_${id}`));
     });
 
     // -- ANVIL ALT METALS -- //
     ALT_METALS.forEach(id => {
-        event.shaped(mc('anvil'), [ 'BBB', ' I ', 'III'], { B: `#c:${id}_blocks`, I: `#c:${id}_ingots` }).id(st(`anvil_${id}`));
+        event.shaped(mc('anvil'), [ 'BBB', ' I ', 'III'], { B: `#c:storage_blocks/${id}`, I: `#c:ingots/${id}` }).id(st(`anvil_${id}`));
     });
 
     // -- MINECART ALT METALS -- //
     ALT_METALS.forEach(id => {
-        event.shaped(mc('minecart'), ['I I', 'III'], { I: `#c:${id}_ingots` }).id(st(`minecart_${id}`));
+        event.shaped(mc('minecart'), ['I I', 'III'], { I: `#c:ingots/${id}` }).id(st(`minecart_${id}`));
     });
- */
+
     // -- CLOCK -- //
     event
         .shaped(mc('clock'), [' R ', 'RGR', ' R '], {
