@@ -416,6 +416,21 @@ MIMaterialEvents.addMaterials((event) => {
                 .defaultRecipes();
         }
     );
+
+    event.createMaterial(
+        'Netherite',
+        'netherite',
+        0x4c484c,
+        (builder) => {
+            builder
+                .hardness('very_hard')
+                .materialSet('dull')
+                .addParts('hot_ingot')
+                .addExternalPart('ingot', mc('netherite_ingot'))
+                .addExternalPart('block', mc('netherite_block'))
+                .addExternalPart('dust', ei('netherite_dust'))
+        }
+    )
 });
 
 MIMaterialEvents.modifyMaterial('beryllium', (event) => {

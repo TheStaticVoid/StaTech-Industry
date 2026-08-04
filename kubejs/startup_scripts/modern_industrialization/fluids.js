@@ -321,4 +321,14 @@ MIRegistrationEvents.registerFluids((event) => {
         false,
         'medium'
     );
+
+    // -- MOLTEN GOLD -- //
+    event.register(
+        'Molten Gold',
+        'molten_gold',
+        0xf7d349,
+        'lava',
+        false,
+        'full'
+    );
 });
