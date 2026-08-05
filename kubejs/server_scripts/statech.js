@@ -288,28 +288,28 @@ ServerEvents.recipes((event) => {
     // -- BRONZE BOOTS -- //
     event
         .shaped(Item.of(kj('bronze_boots')), ['   ', 'A A', 'A A'], {
-            A: '#c:ingots/bronze',
+            A: '#c:plates/bronze',
         })
         .id(st('bronze_boots'));
 
     // -- BRONZE CHESTPLATE -- //
     event
         .shaped(Item.of(kj('bronze_chestplate')), ['A A', 'AAA', 'AAA'], {
-            A: '#c:ingots/bronze',
+            A: '#c:plates/bronze',
         })
         .id(st('bronze_chestplate'));
 
     // -- BRONZE LEGGINGS -- //
     event
         .shaped(Item.of(kj('bronze_leggings')), ['AAA', 'A A', 'A A'], {
-            A: '#c:ingots/bronze',
+            A: '#c:plates/bronze',
         })
         .id(st('bronze_leggings'));
 
     // -- BRONZE HELMET -- //
     event
         .shaped(Item.of(kj('bronze_helmet')), ['AAA', 'A A', '   '], {
-            A: '#c:ingots/bronze',
+            A: '#c:plates/bronze',
         })
         .id(st('bronze_helmet'));
 
@@ -360,28 +360,28 @@ ServerEvents.recipes((event) => {
     // -- STEEL BOOTS -- //
     event
         .shaped(Item.of(kj('steel_boots')), ['   ', 'A A', 'A A'], {
-            A: '#c:ingots/steel',
+            A: '#c:plates/steel',
         })
         .id(st('steel_boots'));
 
     // -- STEEL CHESTPLATE -- //
     event
         .shaped(Item.of(kj('steel_chestplate')), ['A A', 'AAA', 'AAA'], {
-            A: '#c:ingots/steel',
+            A: '#c:plates/steel',
         })
         .id(st('steel_chestplate'));
 
     // -- STEEL LEGGINGS -- //
     event
         .shaped(Item.of(kj('steel_leggings')), ['AAA', 'A A', 'A A'], {
-            A: '#c:ingots/steel',
+            A: '#c:plates/steel',
         })
         .id(st('steel_leggings'));
 
     // -- STEEL HELMET -- //
     event
         .shaped(Item.of(kj('steel_helmet')), ['AAA', 'A A', '   '], {
-            A: '#c:ingots/steel',
+            A: '#c:plates/steel',
         })
         .id(st('steel_helmet'));
 
