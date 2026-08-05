@@ -60,3 +60,4 @@ let cm = (id) => `stcm:${id}`;
 let ch = (id) => `chisel:${id}`;
 let lbr = (id) => `little_big_redstone:${id}`;
 let cc = (id) => `computercraft:${id}`;
+let pb = (id) => `pointblank:${id}`;
