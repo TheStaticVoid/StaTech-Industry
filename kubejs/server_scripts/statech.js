@@ -51,12 +51,28 @@ ServerEvents.recipes((event) => {
         })
         .id(st('glowing_calorite_pillar'));
 
+    // -- DIAMOND UPGRADE SMITHING TEMPLATE -- //
     event
-        .shaped(kj('diamond_upgrade_smithing_template'), [' D ', 'DPD', ' D '], {
-            D: mc('diamond'),
-            P: mi('steel_plate')
-        })
+        .shaped(
+            kj('diamond_upgrade_smithing_template'),
+            [' D ', 'DPD', ' D '],
+            {
+                D: mc('diamond'),
+                P: mi('steel_plate'),
+            }
+        )
         .id(st('diamond_upgrade_smithing_template'));
+
+    // -- HIM -- //
+    event
+        .shaped(kj('bartman'), ['PCP', 'BWB', 'BEB'], {
+            P: mi('plutonium_dust'),
+            C: mc('brain_coral_block'),
+            B: mc('beef'),
+            W: mc('black_wool'),
+            E: mc('dragon_egg'),
+        })
+        .id(st('jon_bartman'));
 
     // ------------------- //
     // -- STATECH COINS -- //
@@ -425,7 +441,6 @@ ServerEvents.recipes((event) => {
         })
         .id(st('steel_hoe'));
 });
-
 
 ServerEvents.tags('item', (event) => {
     const COINS = [
