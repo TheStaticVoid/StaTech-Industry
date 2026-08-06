@@ -46,6 +46,8 @@ ServerEvents.tags('item', (event) => {
     event.add('c:budding_blocks', nm('budding_quartzite'));
 
     event.add('c:clusters', nm('quartzite_cluster'));
+
+    event.add('curios:face', nm('ancient_bronze_mask'));
 });
 
 ServerEvents.recipes((event) => {

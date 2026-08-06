@@ -70,6 +70,7 @@ pakku.jar
 !/config/**/darkmodeeverywhere-client.toml
 !/config/create-client.toml
 !/config/modern_industrialization-client.toml
+!/config/NoChatReports/NCR-Client.json
 
 # Configs (generaly ones that tend to edit the date on launch)
 config/fml.toml
@@ -176,7 +177,6 @@ config/iris-excluded.json
 config/ixeris.toml
 config/jade/hide-blocks.json
 config/jade/hide-entities.json
-config/jade/jade.json
 config/jade/plugins.json
 config/jamlib/known_suspicious_jars.txt
 config/justenoughbreeding-offsets.json
@@ -277,6 +277,8 @@ config/lightoverlay.properties
 config/ftbchunks-client.snbt
 config/sodium-extra.properties
 ftbbackups3/backups.json
+config/better_tab/*
+config/craft_config/*
 
 # Linux
 *~

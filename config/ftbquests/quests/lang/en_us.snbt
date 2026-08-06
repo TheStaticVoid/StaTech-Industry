@@ -1096,6 +1096,11 @@
 	quest.16D0778B17CB206A.quest_desc: ["A way to generate energy from &dDragon's Breath&r. Becomes more viable once you unlock the &3&lBoss Crusher&r&r in &9Chapter 5&r."]
 	quest.16D396BA471F042E.quest_desc: ["&aEthylene&r is used in the production of &3Ethylbenzene&r, &2Ethanol&r, and &bPolyethylene&r."]
 	quest.16D396BA471F042E.title: "Ethylene"
+	quest.16FC60FF6E3A4517.quest_desc: [
+		"&4Teleports&r players back to their &2spawn point&r."
+		""
+		"&9&oCan be enchanted&r&r"
+	]
 	quest.171B6274F48C81EA.quest_desc: ["Your Hang glider is &ctoo slow&r? Surely plating it with a dense metal such as &bsteel&r to it will &aenhance its speed&r!"]
 	quest.171B6274F48C81EA.quest_subtitle: "What's an Elytra?"
 	quest.171B6274F48C81EA.title: "Reinforced Hang Glider"
@@ -1227,7 +1232,7 @@
 	quest.1AC298419EBB7DA2.quest_desc: ["This &6MEGA Cell&r can hold up to &d67108864 bytes&r of &6items&r!!!!!!!!"]
 	quest.1AC3D17D11B6CAD1.quest_desc: ["Putting &eGold Drills&r in the &aElectric Quarry will&r output &cNether&r related items. This is a great way to get a recurring amount of &2Glowstone&r, &3Netherite&r, and &eQuartz&r."]
 	quest.1AC3D17D11B6CAD1.title: "Gold Drills"
-	quest.1ADACCB1A8BB9E7E.quest_desc: ["An infinite steak"]
+	quest.1ADACCB1A8BB9E7E.quest_desc: ["Upgraded Everlasting Beef!"]
 	quest.1AFBAD9537A32176.quest_desc: [
 		"The &aElectric Quarry&r is very similar to it's &7Steam&r counterpart, except with the &eFluid Input Hatch&r being changed to the &eEnergy Input Hatch&r. "
 		""
@@ -1460,6 +1465,7 @@
 	quest.1EE490D2BEE9913E.title: "The Spectrum Focus"
 	quest.1EFA4209205571E3.quest_desc: ["The &aElectric Macerator&r is the electrical version of the &6Steam Macerator&r. It opens up the ability to make &dCalcite&r and &dObsidian Dust&r, and it will process recipes&d much faster&r than its &7Steam&r counterpart."]
 	quest.1F29C93DA3E7F2F3.quest_desc: ["The &aME Extended IO Port&r is an advanced version of the regular &bME IO Port&r that is &da lot faster&r and has &dmore upgrade slots&r."]
+	quest.1F2B88F101C46C2C.quest_desc: ["An upgrade to the &4Sacred Salt&r..."]
 	quest.1F3EC7D6BFE3E0A8.quest_desc: ["The &bWrench&r is an essential tool in &eCreate&r. It allows you to &drotate&r blocks, break &eCreate&r blocks instantly by shift-right clicking, as well as several other important configurations."]
 	quest.1F46D51397CE34AC.quest_desc: ["With your new fancy circuits you can now craft even more complicated components. "]
 	quest.1F4A0D43BADF0146.quest_desc: [
@@ -2298,16 +2304,16 @@
 		""
 		"{image:stcm:item/recipe_overlap2 width:168 height:100 align:center}"
 		""
-		"This is because the machine &e&ocould run&r&r &2a number of recipes&r with the &6&oingredients it has&r&r. If the input was, say, this:"
+		"This is because the machine &e&ocould run&r&r &2a number of recipes&r with the &6&oingredients it has&r&r (since there is recipe overlap). If the input was, say, this:"
 		""
-		"{image:stcm:item/recipe_overlap1 width:168 height:78 align:center}"
+		"{image:stcm:item/recipe_overlap1 width:168 height:119 align:center click_action:none:}"
 		""
-		"Then the machine could &9macerate&r &o&2either&r&r the &6gold&r or the &eiron&r. The solution (at least early game) is to &5&nonly use one input slot&r&r. "
+		"Then the machine could &6cut&r the &9iron plate&r into &o&2either slot&r&r. The solution (at least early game) is to &5&nlock the output slots&r&r. "
 		""
 		"&c&oAs you progress, you should have one machine per recipe, so this is not a long-term issue.&r&r"
 	]
 	quest.2FBDFE8B010CE3C7.title: "MI Recipe Locking"
-	quest.2FBFC99D4F1597E4.quest_desc: ["&aResin&r can be acquired by using a &bTree Tap&r on a many types of &etrees&r (Pine, Spruce) over a &bCauldron&r! It can be used as an &3alternative&r way to generate rubber!"]
+	quest.2FBFC99D4F1597E4.quest_desc: ["&aResin&r can be acquired by using a &bTap&r on a many types of &etrees&r (Pine, Spruce) over a &bCauldron&r! It can be used as an &3alternative&r way to generate rubber!"]
 	quest.2FD9CBCD413E05DF.quest_desc: [
 		"The &aDiesel Jetpack&r allows you to have flight similar to that of the &dElytra&r, but runs off of &efuel rather than durability&r. The &3more powerful&r the fuel, &3the faster&r the &ajetpack&r! For really fast speeds, the &bRubber Helmet&r and &bRubber Boots&r are recommended."
 		""
@@ -2344,8 +2350,13 @@
 	quest.30A1AF7E38D6C40D.quest_desc: ["&aToluene&r is used in the creation of &2Industrial TNT&r, which is necessary for the &dNuke&r and usage in the &dImplosion Compressor&r."]
 	quest.30B29F155E57EA0A.quest_desc: ["This is the &eModern Dynamics&r version of the &aMV-tier Cables&r."]
 	quest.30D48F97B508E120.quest_desc: ["&a1000mb&r of &eCrude Oil&r will distill into &b300mb&r of &6Sulfuric Naphtha&r. The &cSulfur&r will need to be removed before the fuel can be used."]
-	quest.30E440F4A548198B.quest_desc: ["Allows you to dye &2&ovanilla&r&r and &9&omodded&r&r items!"]
+	quest.30E440F4A548198B.quest_desc: [
+		"Allows you to dye &2&ovanilla&r&r and &9&omodded&r&r items!"
+		""
+		"This can be used to change the color of &aModern Industrialization&r and &eAE2&r pipes."
+	]
 	quest.30E440F4A548198B.quest_subtitle: "Color Me Surprised!"
+	quest.30E440F4A548198B.title: "Spray Cans"
 	quest.30EE086370D4502B.quest_desc: ["The &dOblivion Pickaxe&r has a large amount of &edurability&r and &6mining speed&r. However, &call mined blocks are destroyed&r."]
 	quest.3106C607B626A857.quest_desc: [
 		"Gentle resonances are amplified by &aOnyx&r to such an extent that they can even be measured &bthrough walls&r, given a suitable receiver. Based on your previous experiments with &dgemstone shards&r it was easy for you to devise such transmitter and receiver systems. These relays do not react well to &cfast changing signals&r though."
@@ -3124,7 +3135,7 @@
 		"These hold 100k and can distribute power to other items in your inventory, very useful!"
 	]
 	quest.42B1F8244347510A.quest_desc: ["Your newly acquired &9Stainless Steel&r and &6Annealed Copper&r allows you to make Mega Cells!"]
-	quest.42F56852175EF2DC.quest_desc: ["It's an &e&oangel ring&r&r. You know what it does."]
+	quest.42F56852175EF2DC.quest_desc: ["The &o&eAngel Ring&r is an extremely powerful trinket that allows you to have &acreative flight&r at all times. Due to this &3incredible strength&r, it has quite the complex crafting recipe. There are two recipes to make it, one using &6Modern Industrialization&r and one using &dSpectrum&r progression, &owhich might prove a tad easier...&r"]
 	quest.42F56852175EF2DC.quest_subtitle: "Fly Me to the Moon!"
 	quest.4332AA07E2B665B3.quest_desc: ["The &eTechReborn&r &bBasic Storage Unit&r is an upgrade to the &7Steel Tank&r. It can store up to 128 stacks of a single item and has &aconfigurable I/O&r and control through &credstone signals&r."]
 	quest.4332AA07E2B665B3.title: "NYI (TR Storage Unit)"
@@ -3331,6 +3342,7 @@
 		""
 		"These &aplates&r are &cexpensive to do by hand&r, but the ratio gets much better in the &eForge Hammer&r!"
 	]
+	quest.469E0602F05C71AA.quest_desc: ["The &9Sacred Balm&r has a &2smaller AoE&r in preventing &4hostile mob spawns&r than the Salt or Salve, but lasts &9much longer&r."]
 	quest.46B810CC193254EA.quest_desc: [
 		"So when channels become a nuisance, you can turn to &bME P2P Tunnels&r. When configured for ME, they allow you to move channels from point to point. This allows you to move up to 64 channels per pair of &bME P2P Tunnel&r."
 		""
@@ -4709,6 +4721,11 @@
 	]
 	quest.61127720B0515A9F.quest_desc: ["The &bMechanical Bearing&r can be used to transform any block attached to it into a &dcontraption&r and rotates it based on the &arotational speed&r provided."]
 	quest.612936E49AAB14A1.quest_desc: ["Adding &aPineapple &rimproves your&e Pizza Slice&r"]
+	quest.61338F12FD704583.quest_desc: [
+		"The &5Energized Hearthstone&r can be bound to a &2specific location&r and teleport the player there."
+		""
+		"&9&oCan also be enchanted&r&r"
+	]
 	quest.615E2E96244F0787.quest_desc: ["The &bFluix ME Dense Covered Cable&r can carry up to &d64 channels&r unlike standard cable which can only carry 16, however it doesn't support buses, so you must first step down from dense to smaller cable (such as &aFluix ME Glass Cable&r or &eFluix ME Smart Cable&r) before using buses or panels."]
 	quest.616AB06164FF575F.quest_desc: [
 		"&aEnder Chests&r are universally linked chests that work across dimensions and store the same items as long as they are color-code the same."
@@ -5360,6 +5377,12 @@
 		"Automating this process is &astrongly recommended&r! Note that paper can be made efficiently from wood using wood pulp."
 	]
 	quest.71184B7B25919038.title: "Raw Synthetic Oil"
+	quest.712C81B29AF9D306.quest_desc: [
+		"Can make &4items&r look like &9other items&r and can make armor &2invisible&r"
+		""
+		"&zA kind of camouflage&r"
+	]
+	quest.712C81B29AF9D306.title: "Transmogrification"
 	quest.716069E7FC21AF70.quest_desc: ["&aDiesel&r can produce &e400 EU per 1 mB&r used in a &bDiesel Generator&r. By combining &6Light and Heavy Fuel&r you can create &aDiesel&r. &aDiesel&r is a decent fuel source to use in &aDiesel Generators&r and &aDiesel &rtools."]
 	quest.716069E7FC21AF70.quest_subtitle: "Good for the environment!"
 	quest.716069E7FC21AF70.title: "Diesel"
@@ -5874,6 +5897,7 @@
 	]
 	quest.7B318DADE7D4B28E.quest_subtitle: "No, you can't use it that way."
 	quest.7B3CFD8EC0032C17.quest_desc: ["&aMethane&r can be converted into &dAcetylene&r, which is important for making &2Vinyl Chloride&r, which itself gets made into &bPolyvinyl Chloride&r. However, it is primarily used in the production of &2Polytetrafluoroethylene&r, of which you will need a lot of."]
+	quest.7B47A1F9B622525C.quest_desc: ["&cSacred Salt&r stops &2hostile mob spawns&r in a radius surrounding the &9player&r who used it."]
 	quest.7BB996EF1FB18B1D.quest_desc: ["The &bTungstensteel Tank&r can store &e2048 buckets&r worth of any liquid inside of it! That means &d16,384 buckets of a fluid for a full stack&r! Absolutely insane."]
 	quest.7BED2B5A2DF937B6.quest_desc: [
 		"The &bME Storage Monitor&r is a simple way to see the current level of a specified item. There are several interactions to modify it."

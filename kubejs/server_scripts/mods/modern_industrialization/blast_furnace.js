@@ -236,4 +236,30 @@ ServerEvents.recipes((event) => {
         null,
         [{ amount: 1000, fluid: mi('boron_trifluoride') }]
     );
+
+    // -- MOLTEN GOLD -- //
+    blastFurnace(
+        event,
+        st('molten_gold'),
+        32,
+        200,
+        [{ amount: 1, item: mc('gold_ingot') }],
+        null,
+        null,
+        [{ amount: 1000, fluid: mi('molten_gold') }]
+    );
+
+    // -- HOT NETHERITE INGOT -- //
+    blastFurnace(
+        event,
+        st('hot_netherite_ingot'),
+        32,
+        600,
+        [
+            { amount: 4, item: mc('netherite_scrap') },
+            { amount: 16, item: mi('silicon_dust') }
+        ],
+        [{ amount: 1, item: mi('netherite_hot_ingot') }],
+        [{ amount: 4000, fluid: mi('molten_gold') }]
+    );
 });

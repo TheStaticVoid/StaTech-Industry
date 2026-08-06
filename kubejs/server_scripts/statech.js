@@ -51,12 +51,28 @@ ServerEvents.recipes((event) => {
         })
         .id(st('glowing_calorite_pillar'));
 
+    // -- DIAMOND UPGRADE SMITHING TEMPLATE -- //
     event
-        .shaped(kj('diamond_upgrade_smithing_template'), [' D ', 'DPD', ' D '], {
-            D: mc('diamond'),
-            P: mi('steel_plate')
-        })
+        .shaped(
+            kj('diamond_upgrade_smithing_template'),
+            [' D ', 'DPD', ' D '],
+            {
+                D: mc('diamond'),
+                P: mi('steel_plate'),
+            }
+        )
         .id(st('diamond_upgrade_smithing_template'));
+
+    // -- HIM -- //
+    event
+        .shaped(kj('bartman'), ['PCP', 'BWB', 'BEB'], {
+            P: mi('plutonium_dust'),
+            C: mc('brain_coral_block'),
+            B: mc('beef'),
+            W: mc('black_wool'),
+            E: mc('dragon_egg'),
+        })
+        .id(st('jon_bartman'));
 
     // ------------------- //
     // -- STATECH COINS -- //
@@ -288,28 +304,28 @@ ServerEvents.recipes((event) => {
     // -- BRONZE BOOTS -- //
     event
         .shaped(Item.of(kj('bronze_boots')), ['   ', 'A A', 'A A'], {
-            A: '#c:ingots/bronze',
+            A: '#c:plates/bronze',
         })
         .id(st('bronze_boots'));
 
     // -- BRONZE CHESTPLATE -- //
     event
         .shaped(Item.of(kj('bronze_chestplate')), ['A A', 'AAA', 'AAA'], {
-            A: '#c:ingots/bronze',
+            A: '#c:plates/bronze',
         })
         .id(st('bronze_chestplate'));
 
     // -- BRONZE LEGGINGS -- //
     event
         .shaped(Item.of(kj('bronze_leggings')), ['AAA', 'A A', 'A A'], {
-            A: '#c:ingots/bronze',
+            A: '#c:plates/bronze',
         })
         .id(st('bronze_leggings'));
 
     // -- BRONZE HELMET -- //
     event
         .shaped(Item.of(kj('bronze_helmet')), ['AAA', 'A A', '   '], {
-            A: '#c:ingots/bronze',
+            A: '#c:plates/bronze',
         })
         .id(st('bronze_helmet'));
 
@@ -360,28 +376,28 @@ ServerEvents.recipes((event) => {
     // -- STEEL BOOTS -- //
     event
         .shaped(Item.of(kj('steel_boots')), ['   ', 'A A', 'A A'], {
-            A: '#c:ingots/steel',
+            A: '#c:plates/steel',
         })
         .id(st('steel_boots'));
 
     // -- STEEL CHESTPLATE -- //
     event
         .shaped(Item.of(kj('steel_chestplate')), ['A A', 'AAA', 'AAA'], {
-            A: '#c:ingots/steel',
+            A: '#c:plates/steel',
         })
         .id(st('steel_chestplate'));
 
     // -- STEEL LEGGINGS -- //
     event
         .shaped(Item.of(kj('steel_leggings')), ['AAA', 'A A', 'A A'], {
-            A: '#c:ingots/steel',
+            A: '#c:plates/steel',
         })
         .id(st('steel_leggings'));
 
     // -- STEEL HELMET -- //
     event
         .shaped(Item.of(kj('steel_helmet')), ['AAA', 'A A', '   '], {
-            A: '#c:ingots/steel',
+            A: '#c:plates/steel',
         })
         .id(st('steel_helmet'));
 
@@ -425,7 +441,6 @@ ServerEvents.recipes((event) => {
         })
         .id(st('steel_hoe'));
 });
-
 
 ServerEvents.tags('item', (event) => {
     const COINS = [

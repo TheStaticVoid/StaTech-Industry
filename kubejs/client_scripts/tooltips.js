@@ -83,6 +83,7 @@ ItemEvents.modifyTooltips((event) => {
         mi('boron_trifluoride'),
         mi('diborane'),
         mi('pentaborane'),
+        mi('molten_gold'),
     ];
 
     const CUSTOM_MACHINES_AND_ITEMS = [
@@ -135,7 +136,7 @@ ItemEvents.modifyTooltips((event) => {
         });
     });
 
-    const CURRENTLY_DISABLED = Text.red('Not Yet Obtainable');
+    const CURRENTLY_DISABLED = Text.red('Dev Item [WIP]');
     DISABLED_MACHINES_AND_ITEMS.forEach((item) => {
         event.modify(item, (tooltip) => {
             tooltip.add([CURRENTLY_DISABLED]);

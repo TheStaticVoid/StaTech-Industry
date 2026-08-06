@@ -510,5 +510,27 @@
 			x: 2.0d
 			y: -4.5d
 		}
+		{
+			id: "712C81B29AF9D306"
+			rewards: [{
+				id: "4673C448C7783A80"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "4F0F7D6873043476"
+					item: { count: 1, id: "transmog:transmogrification_table" }
+					type: "item"
+				}
+				{
+					id: "63D7C489BBB4E62A"
+					item: { count: 1, id: "transmog:void_fragment" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -6.0d
+		}
 	]
 }

@@ -235,12 +235,13 @@ ServerEvents.recipes((event) => {
     let st = (id) => `statech:spectrum/${id}`;
     let sp = (id) => `spectrum:${id}`;
 
-    // -- spectrum REMOVED RECIPES -- //
+    // -- SPECTRUM REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         sp('pedestal/tier3/bottle_of_failing'),
         ar('eternal_steak_furnace'),
         ar('eternal_steak_smoker'),
         ar('eternal_steak_campfire'),
+        sp('fusion_shrine/vanilla/netherite_ingot')
     ];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 

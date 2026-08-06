@@ -1,0 +1,78 @@
+#Enables auto-reloading of guns
+#Allowed Values: CREATIVE, SURVIVAL, ENABLED, DISABLED
+autoReloadEnabled = "CREATIVE"
+#Adjusts mouse sensitivity when using scopes
+# Default: 0.4
+# Range: 0.01 ~ 0.9
+scopeAimingMouseSensitivity = 0.4
+#Toggle to reset player pitch to original after auto fire
+resetAutoFirePitchEnabled = true
+#Adjusts the knockback force applied to entities hit by gunfire, with higher values causing greater knockback distance.
+# Default: 1.0
+# Range: 0.1 ~ 2.0
+knockback = 1.0
+#Enables particle effects
+particleEffectsEnabled = true
+#Sets the likelihood of an 'Arms Dealer' house appearing in new villages, with higher values increasing frequency and lower values making it rarer.
+# Default: 10
+# Range: 0 ~ 20
+armsDealerHouse = 10
+#Set the exchange rate to determine how many in-game price units are equivalent to one emerald.
+# Default: 100.0
+# Range: 1.0 ~ 1000.0
+emeraldExchangeRate = 100.0
+#Controls whether the player's arm pose is permanently set to the aiming/firing position in third-person view, regardless of their current action with a gun.
+thirdPersonArmPoseAlwaysOn = true
+#Specifies how often the "picture-in-picture" scope updates, with 1 being every frame, 2 for every other frame, etc. A higher number may improve performance.
+# Default: 2
+# Range: 0 ~ 5
+pipScopeRefreshRate = 2
+#Enables pip scopes
+pipScopesEnabled = true
+#Sets pip scope red color balance. This options works for shaders only.
+# Default: 90
+# Range: 0 ~ 255
+pipScopeColorBalanceRed = 90
+#Sets pip scope green color balance. This options works for shaders only.
+# Default: 105
+# Range: 0 ~ 255
+pipScopeColorBalanceGreen = 105
+#Sets pip scope blue color balance. This options works for shaders only.
+# Default: 110
+# Range: 0 ~ 255
+pipScopeColorBalanceBlue = 110
+#Enables custom shaders
+customShadersEnabled = true
+#Enables explosions to destroy blocks
+explosionDestroyBlocksEnabled = true
+#Sets the probability of dropping some item(s) by monster mobs.
+# Default: 0.35
+# Range: 0.0 ~ 1.0
+itemDropChance = 0.35
+#Sets the max count of items to be dropped by a monster mob.
+# Default: 7
+# Range: 2 ~ 64
+maxItemDropCount = 7
+#Enables bullets breaking glass
+bulletsBreakGlassEnabled = true
+#Modifier to adjust damage dealt by hitscan weapons
+# Default: 1.0
+# Range: 0.1 ~ 10.0
+hitscanDamageModifier = 1.0
+#Sets the crosshair type.
+#Allowed Values: DEFAULT, VANILLA, DISABLED
+crosshair = "DEFAULT"
+#Modifier to adjust damage dealt by headshot.
+# Default: 3.0
+# Range: 1.0 ~ 10.0
+headshotDamageModifier = 3.0
+#Enables gore effects
+goreEnabled = true
+#Enables advanced integraiton with Iris shaders
+advancedIrisIntegrationEnabled = true
+#Enables advanced first person animations
+firstPersonAnimationsEnabled = true
+#Enables advanced third person animations
+thirdPersonAnimationsEnabled = true
+#URL to open when clicking the Browse button in the Extension Packs screen
+extensionPackBrowseUrl = "https://www.curseforge.com/minecraft/search?page=1&pageSize=20&sortBy=relevancy&class=customization&search=point+blank"

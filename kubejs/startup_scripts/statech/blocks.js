@@ -57,6 +57,14 @@ StartupEvents.registry('block', (event) => {
         .tagBlock('minecraft:mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .tagBlock('c:glass_blocks');
+    event
+        .create('kubejs:speedy_concrete')
+        .displayName('Speedy Concrete')
+        .soundType('stone')
+        .requiresTool(true)
+        .hardness(4)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool');
 
     event
         .create(`kubejs:computer_casing`)

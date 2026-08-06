@@ -29,6 +29,7 @@ ServerEvents.recipes((event) => {
         ei('machines/large_steam_macerator/craft'),
         ei('machines/large_steam_macerator/assembler'),
         ei('tool/assembler/tesla_handheld_receiver'),
+        ei('vanilla_recipes/blast_furnace/netherite_dust_to_ingot')
     ];
     EI_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
 

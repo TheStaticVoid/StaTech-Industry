@@ -12,6 +12,7 @@ ServerEvents.recipes((event) => {
         fd('wheat_dough_from_water'),
         fd('wheat_dough_from_eggs'),
         fd('/crafting/wheat_dough_from_water'),
+        fd('paper_from_tree_bark'),
         fd('wheat_dough_from_egg'),
         ed('cutting/salt_rock'),
         ed('salt_rock_from_smelting'),
