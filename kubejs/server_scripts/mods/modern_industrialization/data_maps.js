@@ -25,12 +25,21 @@ ServerEvents.generateData('after_mods', (event) => {
         {
             values: {
                 'modern_industrialization:tungstensteel_coil': {
-                    batch_size: 64,
+                    batch_size: 8,
                     eu_cost_multiplier: 0.75,
+                },
+                'modern_industrialization:cupronickel_coil': {
+                    batch_size: 1,
+                    eu_cost_multiplier: 0.9,
+                },
+                'modern_industrialization:kanthal_coil': {
+                    batch_size: 4,
+                    eu_cost_multiplier: 0.8,
                 },
             },
         }
     );
+
 
     // -- LIQUID FUELS -- //
     event.json('modern_industrialization:data_maps/fluid/fluid_fuels', {
