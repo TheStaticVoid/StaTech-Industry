@@ -396,7 +396,7 @@ ServerEvents.recipes((event) => {
         8,
         100,
         [{ amount: 1, item: mi('packer_block_template'), probability: 0 }],
-        [{ amount: 1, item: kj('speedy_concrete') }],
+        [{ amount: 2, item: kj('speedy_concrete') }],
         [{ amount: 500, fluid: mi('concrete') }]
     );
 
@@ -437,9 +437,9 @@ ServerEvents.recipes((event) => {
         [{ amount: 125, fluid: mi('synthetic_rubber') }]
     );
 
-    // ----------------------------//
+    // ---------------------------//
     // -- EI FERTILIZER COMPAT -- //
-    // ----------------------------//
+    // ---------------------------//
 
     const fertilizerEff = [
         ['manure', 300],
@@ -556,4 +556,44 @@ ServerEvents.recipes((event) => {
         [{ amount: 100, fluid: mc('lava') }],
         [{ amount: 100, fluid: yai('nutrient_rich_lava') }]
     );
+
+    // ------------------------------//
+    // -- VANILLA CONCRETE COMPAT -- //
+    // ------------------------------//
+
+    // -- VANILLA CONCRETES -- //
+    const DYE_COLORS = [
+        'white',
+        'orange',
+        'magenta',
+        'yellow',
+        'cyan',
+        'lime',
+        'pink',
+        'gray',
+        'light_blue',
+        'light_gray',
+        'purple',
+        'blue',
+        'brown',
+        'green',
+        'red',
+        'black',
+    ];
+
+    DYE_COLORS.forEach((DYE_COLORS) => {
+        mixer(
+            event,
+            st(`vanilla_compat/${DYE_COLORS}_concrete`),
+            8,
+            100,
+            [
+                { amount: 2, item: mc('sand') },
+                { amount: 2, item: mc('gravel') },
+                { amount: 1, item: mc(`${DYE_COLORS}_dye`) },
+            ],
+            [{ amount: 8, item: mc(`${DYE_COLORS}_concrete`) }],
+            [{ amount: 250, fluid: mi('concrete') }]
+        );
+    });
 });

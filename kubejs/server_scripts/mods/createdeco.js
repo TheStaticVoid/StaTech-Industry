@@ -14,6 +14,32 @@ ServerEvents.recipes((event) => {
     ];
     CREATEDECO_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
 
+    // ------------------------------------- //
+    // -- METAL STONECUTTING CONFLICT FIX -- //
+    // ------------------------------------- //
+
+    event.replaceInput(
+        { input: mc('copper_ingot'), type: mc('stonecutting') },
+        mc('copper_ingot'),
+        Ingredient.of(mi('copper_plate'))
+    );
+
+    event.replaceInput(
+        { input: mc('iron_ingot'), type: mc('stonecutting') },
+        mc('iron_ingot'),
+        Ingredient.of(mi('iron_plate'))
+    );
+
+    event.replaceInput(
+        { input: mc('gold_ingot'), type: mc('stonecutting') },
+        mc('gold_ingot'),
+        Ingredient.of(mi('gold_plate'))
+    );
+
+    // ---------------- //
+    // ---- SHAPED ---- //
+    // ---------------- //
+
     // -- IRON SHEET METAL -- //
     event
         .shaped('4x ' + cd('iron_sheet_metal'), [' P ', 'P P', ' P '], {
@@ -79,5 +105,4 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: cr('industrial_iron_block') }],
         [{ amount: 9, item: cd('industrial_iron_ingot') }]
     );
-
 });
