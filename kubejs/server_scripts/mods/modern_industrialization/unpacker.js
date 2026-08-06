@@ -59,4 +59,14 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: ae('fluix_covered_dense_cable') }],
         [{ amount: 4, item: ae('fluix_covered_cable') }]
     );
+
+    // -- SMART DENSE ME CABLE TO SMART ME CABLE -- //
+    unpacker(
+        event,
+        st('smart_dense_cable_to_smart_cable'),
+        8,
+        200,
+        [{ amount: 1, item: ae('fluix_smart_dense_cable') }],
+        [{ amount: 4, item: ae('fluix_smart_cable') }]
+    );
 });
