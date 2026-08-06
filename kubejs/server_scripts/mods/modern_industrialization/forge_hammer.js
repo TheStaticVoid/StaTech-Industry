@@ -150,7 +150,7 @@ ServerEvents.recipes((event) => {
             60,
             1,
             { tag: `c:ores/${material}` },
-            { count: 8, id: mi(`${material}_dust`) }
+            { count: 6, id: mi(`${material}_dust`) }
         );
 
         // -- DUST FROM RAW METAL -- //
@@ -158,8 +158,8 @@ ServerEvents.recipes((event) => {
             st(`${material}_dust_from_raw_metal`),
             15,
             1,
-            { tag: `c:raw_materials/${material}` },
-            { count: 2, id: mi(`${material}_dust`) }
+            { count: 2, tag: `c:raw_materials/${material}` },
+            { count: 3, id: mi(`${material}_dust`) }
         );
     });
 
@@ -247,7 +247,7 @@ ServerEvents.recipes((event) => {
         // -- RODS -- //
         forgeHammer(
             st(`${material}_rod_from_double_ingot`),
-            10,
+            20,
             1,
             { item: mi(`${material}_double_ingot`) },
             { count: 2, id: mi(`${material}_rod`) }
