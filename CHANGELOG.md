@@ -2,6 +2,9 @@
 
 ## [2.0.0-rc5]
 
+
+- Removed Jon Bartman due to public backlash
+
 ## [2.0.0-rc4]
 
 This bugfix update primarily addresses a JEI/FTB-XMod-Compat keybind interactions crash (#621) and updates Spectrum with many improvements and bugfixes. More work went into fixing the GitHub Action workflows for building and releasing the pack.
