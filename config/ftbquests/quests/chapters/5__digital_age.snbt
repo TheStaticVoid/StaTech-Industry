@@ -217,6 +217,17 @@
 					type: "item"
 				}
 				{
+					count: 20L
+					id: "74FFC8055BDC8022"
+					item: { count: 1, id: "modern_industrialization:chemically_inert_ptfe_casing" }
+					type: "item"
+				}
+				{
+					id: "2EBDA75264710963"
+					item: { count: 1, id: "modern_industrialization:polytetrafluoroethylene_machine_casing_pipe" }
+					type: "item"
+				}
+				{
 					id: "0432DAB1DD87D21D"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
@@ -462,17 +473,28 @@
 		}
 		{
 			dependencies: ["51490042671E700C"]
+			icon: {
+				id: "modern_industrialization:titanium_tiny_dust"
+			}
 			id: "5524086A6986E1C0"
 			rewards: [{
 				id: "5E91DD1CE186872A"
 				type: "xp"
 				xp: 50
 			}]
-			tasks: [{
-				id: "041E5014CB7C12E1"
-				item: { count: 1, id: "modern_industrialization:titanium_tiny_dust" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "041E5014CB7C12E1"
+					item: { count: 1, id: "modern_industrialization:titanium_tiny_dust" }
+					type: "item"
+				}
+				{
+					id: "26429EE1035E6649"
+					item: { count: 1, id: "modern_industrialization:raw_titanium" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 1.5d
 			y: 3.0d
 		}
@@ -813,17 +835,27 @@
 		}
 		{
 			dependencies: ["51490042671E700C"]
+			icon: {
+				id: "modern_industrialization:platinum_sulfuric_solution_bucket"
+			}
 			id: "381D43AEFB99B390"
 			rewards: [{
 				id: "0A1FFD1D23DDAE88"
 				type: "xp"
 				xp: 50
 			}]
-			tasks: [{
-				id: "1B1933F7A23E5B84"
-				item: { count: 1, id: "modern_industrialization:platinum_sulfuric_solution_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1B1933F7A23E5B84"
+					item: { count: 1, id: "modern_industrialization:platinum_sulfuric_solution_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3C38FB0B268A620D"
+					type: "checkmark"
+				}
+			]
 			x: 6.0d
 			y: -3.5d
 		}

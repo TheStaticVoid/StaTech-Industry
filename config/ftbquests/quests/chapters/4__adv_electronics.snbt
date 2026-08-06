@@ -282,7 +282,6 @@
 					xp: 40
 				}
 				{
-					exclude_from_claim_all: true
 					id: "61ADF94D0069D6A2"
 					table_id: 379087119399425756L
 					type: "random"
@@ -368,11 +367,28 @@
 		{
 			dependencies: ["216B300DF319ED1A"]
 			id: "3EBBB99A3FC5C7F3"
-			rewards: [{
-				id: "03E5BF992444ABB1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "19A31BDE4473C72D"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "03E5BF992444ABB1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "14A1962B0CE6571E"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "351BB0A5DA27051A"
@@ -514,11 +530,28 @@
 		{
 			dependencies: ["5556B0DC1C5779DD"]
 			id: "1636AAA1DD4ECC50"
-			rewards: [{
-				id: "0F699C1FE85AB487"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "0676D973632088DB"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0F699C1FE85AB487"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F78AA5A6D7E85A9"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "26EF1EEEF30C26B6"
@@ -531,11 +564,28 @@
 		{
 			dependencies: ["5556B0DC1C5779DD"]
 			id: "716069E7FC21AF70"
-			rewards: [{
-				id: "0284327343942E3C"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "4447C8043D8A3027"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0284327343942E3C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F2234E58823EF91"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "1598BA16F9F74B94"
@@ -1865,6 +1915,9 @@
 		}
 		{
 			dependencies: ["77CDEFA4CBDBEBBF"]
+			icon: {
+				id: "modern_industrialization:chlorine_bucket"
+			}
 			id: "69651A2E1A859FAC"
 			rewards: [{
 				id: "2FD9DE4F09160AE2"
@@ -1872,16 +1925,26 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "1635DB50CC10020F"
-				item: { count: 1, id: "modern_industrialization:chlorine_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1635DB50CC10020F"
+					item: { count: 1, id: "modern_industrialization:chlorine_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D5C086F875DCD77"
+					type: "checkmark"
+				}
+			]
 			x: 15.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["69651A2E1A859FAC"]
+			icon: {
+				id: "modern_industrialization:hydrochloric_acid_bucket"
+			}
 			id: "6E3D5A646FD3CD7A"
 			rewards: [{
 				id: "262557040C4CE6A6"
@@ -1889,11 +1952,18 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "18F76A87BBAC0FAA"
-				item: { count: 1, id: "modern_industrialization:hydrochloric_acid_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "18F76A87BBAC0FAA"
+					item: { count: 1, id: "modern_industrialization:hydrochloric_acid_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "22539EB97302793F"
+					type: "checkmark"
+				}
+			]
 			x: 18.0d
 			y: -4.0d
 		}
@@ -1903,11 +1973,22 @@
 				id: "modern_industrialization:chromium_crushed_dust"
 			}
 			id: "2DC8BCFBC2032D9E"
-			rewards: [{
-				id: "79EF5D0A466D7FA4"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "6386887380AE2D81"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "79EF5D0A466D7FA4"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			tasks: [
 				{
@@ -1927,11 +2008,22 @@
 		{
 			dependencies: ["427144C8EF7A57E5"]
 			id: "22A25288F315601E"
-			rewards: [{
-				id: "7C43CBC43CD887FC"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "6856EE3196D46EE0"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "7C43CBC43CD887FC"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "047CC03C22C3DDA0"
@@ -1946,6 +2038,9 @@
 				"6E3D5A646FD3CD7A"
 				"2DC8BCFBC2032D9E"
 			]
+			icon: {
+				id: "modern_industrialization:chromium_hydrochloric_solution_bucket"
+			}
 			id: "0949D2D8BD487E87"
 			rewards: [{
 				id: "6D869FFED91898D3"
@@ -1953,16 +2048,26 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "476EA5E794A8CBF2"
-				item: { count: 1, id: "modern_industrialization:chromium_hydrochloric_solution_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "476EA5E794A8CBF2"
+					item: { count: 1, id: "modern_industrialization:chromium_hydrochloric_solution_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "39C3A0A7A2781C20"
+					type: "checkmark"
+				}
+			]
 			x: 18.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["22A25288F315601E"]
+			icon: {
+				id: "modern_industrialization:manganese_sulfuric_solution_bucket"
+			}
 			id: "525F1B7E684F1B40"
 			rewards: [{
 				id: "7F992380F7395EE1"
@@ -1970,22 +2075,39 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "280CC058F661BE50"
-				item: { count: 1, id: "modern_industrialization:manganese_sulfuric_solution_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "280CC058F661BE50"
+					item: { count: 1, id: "modern_industrialization:manganese_sulfuric_solution_bucket" }
+					type: "item"
+				}
+				{
+					id: "75034EC6812B6626"
+					type: "checkmark"
+				}
+			]
 			x: 18.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["0949D2D8BD487E87"]
 			id: "3A8FFB7736EB8D34"
-			rewards: [{
-				id: "347E572F67C337D2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "77CA4DCB4B0666CD"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "347E572F67C337D2"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "53B44F1BFF591DEB"
@@ -1998,11 +2120,22 @@
 		{
 			dependencies: ["525F1B7E684F1B40"]
 			id: "13B6434C8DC787E5"
-			rewards: [{
-				id: "32BAD080A9A86060"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "32220B997420D128"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "32BAD080A9A86060"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "1404EAA9759D3A50"
@@ -2067,6 +2200,9 @@
 		}
 		{
 			dependencies: ["701BD496880B03CD"]
+			icon: {
+				id: "modern_industrialization:fluorine_bucket"
+			}
 			id: "0828469D61354400"
 			rewards: [{
 				id: "18578B65D54E832D"
@@ -2074,16 +2210,26 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "2618B5F7EF665D52"
-				item: { count: 1, id: "modern_industrialization:fluorine_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2618B5F7EF665D52"
+					item: { count: 1, id: "modern_industrialization:fluorine_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "17315B61C283C1F7"
+					type: "checkmark"
+				}
+			]
 			x: 23.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["701BD496880B03CD"]
+			icon: {
+				id: "modern_industrialization:chloroform_bucket"
+			}
 			id: "21534F69896E0C20"
 			rewards: [{
 				id: "3760D0BA62B69B04"
@@ -2091,16 +2237,26 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "5B9BA564F41DE664"
-				item: { count: 1, id: "modern_industrialization:chloroform_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5B9BA564F41DE664"
+					item: { count: 1, id: "modern_industrialization:chloroform_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6845EF5063DB6AB5"
+					type: "checkmark"
+				}
+			]
 			x: 25.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["0828469D61354400"]
+			icon: {
+				id: "modern_industrialization:hydrofluoric_acid_bucket"
+			}
 			id: "54BA6F783B61FE61"
 			rewards: [{
 				id: "225DD305F0BDF8C1"
@@ -2108,11 +2264,18 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "4015BB5FC9FCEABE"
-				item: { count: 1, id: "modern_industrialization:hydrofluoric_acid_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4015BB5FC9FCEABE"
+					item: { count: 1, id: "modern_industrialization:hydrofluoric_acid_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "644B548B265B393E"
+					type: "checkmark"
+				}
+			]
 			x: 23.0d
 			y: -10.0d
 		}
@@ -2121,6 +2284,9 @@
 				"54BA6F783B61FE61"
 				"21534F69896E0C20"
 			]
+			icon: {
+				id: "modern_industrialization:tetrafluoroethylene_bucket"
+			}
 			id: "59C5CC514CF9494D"
 			rewards: [{
 				id: "50592ACF49F7BCBC"
@@ -2128,11 +2294,18 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "535D3655939BD68D"
-				item: { count: 1, id: "modern_industrialization:tetrafluoroethylene_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "535D3655939BD68D"
+					item: { count: 1, id: "modern_industrialization:tetrafluoroethylene_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6BD8EF79CC1DCCA9"
+					type: "checkmark"
+				}
+			]
 			x: 25.0d
 			y: -10.0d
 		}
@@ -2950,11 +3123,6 @@
 			id: "61EA3C1E66FD5ADF"
 			rewards: [
 				{
-					id: "786F9E8FD4B737C6"
-					type: "xp"
-					xp: 10
-				}
-				{
 					count: 5
 					id: "32EC6EFB891536B5"
 					item: {
@@ -3218,11 +3386,28 @@
 		{
 			dependencies: ["427144C8EF7A57E5"]
 			id: "2E7BA735872B4B94"
-			rewards: [{
-				id: "664C7993717CEBB9"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "46E9D7C4AC83A4B0"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "664C7993717CEBB9"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "504A7C05B78C91BC"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			tasks: [{
 				id: "589706C973B83DD2"
@@ -4285,7 +4470,7 @@
 			id: "5AD00F71DB16C98F"
 			rewards: [
 				{
-					count: 3
+					count: 5
 					id: "56518CEFBF8985DD"
 					item: {
 						count: 1
@@ -4311,8 +4496,8 @@
 				item: { count: 1, id: "yet_another_industrialization:cryogenic_precipitator" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.0d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["74A64C3ED35AE436"]

@@ -283,7 +283,7 @@
 		""
 		"If you're having trouble forming the multiblock, you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
 		""
-		"&9&oNote: you need at least two output slots to get sulfur from macerating lignite coal...&r&r"
+		"&9Do note that you need at least &ltwo output slots&r &9to get sulfur from macerating lignite coal...&r"
 	]
 	quest.06AB394FC4DB1809.quest_desc: [
 		"While tearing down entire forests definitely &emakes the factory happy&r, it does not &cmake you happy&r. It's a lot of &ctedious work&r for such a &abasic material&r. While you could make a simple &eCreate contraption&r for a &3tree farm&r, it's not the most &clag-friendly&r method, and a lot of larger tree types &cdont get cut down properly&r by &eCreate&r's &6Mechanical Saws&r. Luckily, the &aIndustrial Greenhouse&r can solve all these issues. By feeding it &9Water&r and providing a &2Sapling&r, it will generate &dLogs&r and &2Saplings&r of that respective type after little bit of time. "
@@ -678,6 +678,13 @@
 		"You will soon be needing to make &aHeatproof Machine Casings&r, which require &eInvar&r. Invar is made in a &6Mixer&r by combining &b2 Iron Dusts&r with &61 Nickel Dust&r. "
 		""
 		"I wouldn't put off making this until later, as you will need it for the &aElectric Blast Furnace&r sooner than you think!"
+	]
+	quest.0E209B011256E0CF.quest_desc: [
+		"The &dLarge Storage Unit&r is a huge and &6upgradable&r multiblock version of the single-block &eStorage Unit&r. It can be used to store a &6very large amount of energy&r, which is very handy if you want to &acentralize your power infrastructure&r! "
+		""
+		"It works very similarly to the &bLarge Tank&r, in that it &adoes not lose&r any of its stored power if the structure is broken or modified, &cat the exception of the controller itself&r. As a result, you can easily upgrade it without losing any of its stored energy."
+		""
+		"To input and output energy, you will need to use the &9Large Storage Unit Input and Output Hatch&r, respectively. These hatches will &asend&r and &aaccept&r power of any tier &aequal or below&r the tier of the Large Storage Unit (which you can &6specify in the controller&r)."
 	]
 	quest.0E35862B7F9081DE.quest_desc: [
 		"For all those wo don't either live in a simple &7Cobblestone&r house or live without walls entirely - of course you don't feel addressed - you have thought up the &aExchanging Staff&r."
@@ -1346,8 +1353,8 @@
 		""
 		"The &bCharge-o-Mat&r has an absolutely absurd &e100M Energy&r buffer. Plugging this into your network may &cstart draining it entirely&r, so be careful, but it is needed to charge the &dIndustrial tools and Nanosaber&r in a timely manner."
 	]
-	quest.1CD59B728BC791B6.quest_desc: ["&5Mozanite&r on it's own is pretty useless, however running it through a Centrifuge will produce &2Neodymium&r, &2Yttrium&r, and &2Cadmium&r. These three materials will be important in components and processing in the late game."]
-	quest.1CD59B728BC791B6.title: "Mozanite Byproducts"
+	quest.1CD59B728BC791B6.quest_desc: ["&5Monazite&r on it's own is pretty useless, however running it through a Centrifuge will produce &2Neodymium&r, &2Yttrium&r, and &2Cadmium&r. These three materials will be important in components and processing in the late game."]
+	quest.1CD59B728BC791B6.title: "Monazite Byproducts"
 	quest.1CED76365E309FBD.quest_desc: [
 		"Highest Tier Storage Cell, which can contain &d262,144 bytes of storage&r."
 		""
@@ -1462,7 +1469,7 @@
 		""
 		"You can switch the &bBasalt Blocks&r with &aCalcite Blocks&r and choose the &dgemstone&r blocks as you like it best. Feel free to be creative! &cPlease note&r there is a difference between &aPolished Amethyst&r between the &dBlockus&r and &bSpectrum&r mods. Only the &bSpectrum&r amethyst-related blocks will work within the mod!"
 		""
-		"&oIf you need an in-world diagram of how to build this structure, check the page in your &eColorful World&f book!"
+		"&oIf you need an in-world diagram of how to build this structure, click the flashing &c(i)&r &oicon in the pedestal!"
 	]
 	quest.1EE490D2BEE9913E.title: "The Spectrum Focus"
 	quest.1EFA4209205571E3.quest_desc: ["The &aElectric Macerator&r is the electrical version of the &6Steam Macerator&r. It opens up the ability to make &dCalcite&r and &dObsidian Dust&r, and it will process recipes&d much faster&r than its &7Steam&r counterpart."]
@@ -2881,7 +2888,7 @@
 	quest.3D7AE8EA3C6820D4.quest_desc: [
 		"Very much like old &3Forestry&r farm multiblocks, the &aSteam Farmer&r is a &6new&r &emultiblock&r that will allow to &bfarm crops and trees&r in the world at the expanse of &7steam&r! It can be configured inside the &3GUI&r of the &acontroller&r and each &3setting&r is explained in the &etooltip&r when holding Shift!"
 		""
-		"&4&oHatch locations on this multiblock are underground!&r&r"
+		"&4Hatch locations on this multiblock are underground!&r"
 	]
 	quest.3D96C9B7CE5C705B.quest_desc: ["The &aExplorer's Compass&r is similar to the &2Nature's Compass&r in concept, except it will &efocus in on any structure in the game&r. This can be extremely useful if you want to find a nice place to &dloot&r or &aexplore&r."]
 	quest.3D9FBCB1A33F11F4.quest_desc: [
@@ -3835,7 +3842,7 @@
 	quest.505C6D834679BAFD.quest_desc: [
 		"With access to &eDigital Circuits&r you can now craft &bStainless Steel Drills&b. These can be used both in an &bElectric Quarry&r and an &aOil Drilling Rig&r."
 		""
-		"If used in the &bElectric Quarry&r, it will be your main source of Titanium, Tungsten, Mozanite, and Platinum Ore. When used in an &aOil Drilling Rig&r it will mine &34000 mB of Shale Oil&r. I'd highly recommend using these instead of your &bAluminum Drill&r for &doil processing&r as you get a lot more oil."
+		"If used in the &bElectric Quarry&r, it will be your main source of Titanium, Tungsten, Monazite, and Platinum Ore. When used in an &aOil Drilling Rig&r it will mine &34000 mB of Shale Oil&r. I'd highly recommend using these instead of your &bAluminum Drill&r for &doil processing&r as you get a lot more oil."
 	]
 	quest.505CFF1BDC44772A.quest_desc: [
 		"The &bHose Pulley&r can be used to fill or drain a body of fluid. Pumping into the &bHose Pulley&r will deposit that fluid at the level of the spout. Pumping out of the &bHose Pulley&r will begin pulling fluid from where the spout is. "
@@ -6216,6 +6223,7 @@
 	task.15B392AE3B65481E.title: "Any Basic Wand"
 	task.16155F2E83AC8FDC.title: "Any Sticky Note"
 	task.163D0AB93684C1A2.title: "Any Gemstone Shard"
+	task.17315B61C283C1F7.title: "I've done this!"
 	task.1760536D483EA89E.title: "Any Rune Ingots"
 	task.1798316FBC33C7C4.title: "2x Gemstone Chiseled Blocks"
 	task.17A001916D7A24ED.title: "28x Polished Pillars"
@@ -6257,6 +6265,7 @@
 	task.21FBBF8514DA6BD8.title: "Any Energy Output Hatch"
 	task.220375750110AF29.title: "Any Fluid Output Hatch"
 	task.2251797FE307AA33.title: "Click to Acknowledge"
+	task.22539EB97302793F.title: "I've done this!"
 	task.227C74C617BC0803.title: "Any Energy Input Hatch"
 	task.22A19D386B745494.title: "Any Colored Sapling"
 	task.22A630F4B6A91000.title: "Any Item Input Hatch"
@@ -6307,6 +6316,7 @@
 	task.2CC82C3F68C2B199.title: "12x Polished Blocks"
 	task.2D28565C24ACC2E1.title: "24x Polished Slabs"
 	task.2D3AF43538899939.title: "Any Fluid Output Hatch"
+	task.2D5C086F875DCD77.title: "I've done this!"
 	task.2D7DA35088255141.title: "Click to Acknowledge"
 	task.2D7E8779F3810B8C.title: "NYI"
 	task.2DEC4B84E5B092C8.title: "Any Runic Leggings"
@@ -6354,6 +6364,7 @@
 	task.385FEC16EF238B54.title: "Click to Acknowledge"
 	task.3951C2DD2B16293F.title: "NYI"
 	task.397C0706200BF8B5.title: "Any Glowblock"
+	task.39C3A0A7A2781C20.title: "I've done this!"
 	task.39C3BB4146230DE5.title: "Overclocking, part 2"
 	task.39C63B199AA904F9.title: "Click to Acknowledge"
 	task.39CC1984CE1589CB.title: "NYI"
@@ -6363,6 +6374,7 @@
 	task.3B19D63490967A0A.title: "Click to Acknowledge"
 	task.3BDA06A26C350CF6.title: "Any Fluid Input Hatch"
 	task.3C1DD9FE71C9AB70.title: "I've done this!"
+	task.3C38FB0B268A620D.title: "I've done this!"
 	task.3C60ABCB2979A2E5.title: "Any Energy Input Hatch"
 	task.3C751FA87E6333B2.title: "Any EV Cable"
 	task.3C7783942E2E2887.title: "12x Polished Slabs"
@@ -6517,6 +6529,7 @@
 	task.60D5ED6299C650F2.title: "NYI"
 	task.60F319306DFC6303.title: "Any Energy Input Hatch"
 	task.612027AC4A4A11C0.title: "Any Item Input Hatch"
+	task.612874314623987D.title: "I've done this!"
 	task.61472E61A4C3C115.title: "Any Gemstone Chime"
 	task.615F3F51A2F3B534.title: "Any Staff"
 	task.6190BD009D789D58.title: "Any 32x Cobblestone"
@@ -6530,6 +6543,7 @@
 	task.6394C527C2EC1EDC.title: "Any Fluid Input Hatch"
 	task.63D92F3F1AEF475C.title: "NYI"
 	task.63E8463932F73803.title: "4x Polished Gemstone Blocks"
+	task.644B548B265B393E.title: "I've done this!"
 	task.64A220722290404A.title: "Click to Acknowledge"
 	task.656A2F644BE89F31.title: "Any Item Output Hatch"
 	task.658B537143219283.title: "Any Item Input Hatch"
@@ -6540,6 +6554,7 @@
 	task.6715AFE8BFF11371.title: "4x Polished Gemstone Blocks"
 	task.6736419AE80306D5.title: "Any Item Output Hatch"
 	task.67A5FE89B8A70F2B.title: "NYI"
+	task.6845EF5063DB6AB5.title: "I've done this!"
 	task.68D2C588FE9627B8.title: "Any Wired Energy Input Hatch"
 	task.690A1A6E6F950BD1.title: "NYI"
 	task.690ABE8E14241CEE.title: "Tesla Receiver Hatch"
@@ -6553,6 +6568,7 @@
 	task.6BB46AB516F670EE.title: "Any Item Output Hatch"
 	task.6BBB10733818825E.title: "Any Item Input Hatch"
 	task.6BC8E61805B47B44.title: "Any Energy Input Hatch"
+	task.6BD8EF79CC1DCCA9.title: "I've done this!"
 	task.6CD638273A5AAC3F.title: "Any Energy Output Hatch"
 	task.6E0CA349D50C0288.title: "NYI"
 	task.6E5BD7454363EB92.title: "Any Fluid Input Hatch"
@@ -6585,10 +6601,13 @@
 	task.74A03D0F85036522.title: "NYI"
 	task.74A81B11060780C8.title: "Four Polished Gemstones"
 	task.74B9866A6DC2D2D6.title: "I've done this!"
+	task.75034EC6812B6626.title: "I've done this!"
 	task.7548B676CAD9CE65.title: "Any Gemstone Light"
 	task.75CEF70D8E9CFD8D.title: "Click to Acknowledge"
+	task.763F90CAC858E4A7.title: "I've done this!"
 	task.769292BA522B15FD.title: "Click to Acknowledge"
 	task.76AA7730C55FF32F.title: "Click to Acknowledge"
+	task.76D7A07548BC5426.title: "I've done this!"
 	task.76F2B65B0FAA16EE.title: "12x Polished Slabs"
 	task.770B81572B7DF69A.title: "1.21.1 Changes"
 	task.777428835753C221.title: "Click to Acknowledge"

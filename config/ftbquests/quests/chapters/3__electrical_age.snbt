@@ -635,7 +635,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -9.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -1510,14 +1510,6 @@
 			dependencies: ["5B6A20BD4C70BA52"]
 			id: "21C04730D77746DC"
 			rewards: [
-				{
-					id: "294E39EFFB68E9C0"
-					item: {
-						count: 1
-						id: "ae2:guide"
-					}
-					type: "item"
-				}
 				{
 					id: "5D26FE23F4497D33"
 					item: {
@@ -3253,6 +3245,12 @@
 					type: "xp"
 					xp: 10
 				}
+				{
+					exclude_from_claim_all: true
+					id: "0084DE86DBC51D31"
+					table_id: 5706018968149530875L
+					type: "random"
+				}
 			]
 			shape: "rsquare"
 			tasks: [{
@@ -3379,6 +3377,73 @@
 			}]
 			x: 9.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["2969BA6B88D1EC15"]
+			icon: {
+				id: "yet_another_industrialization:large_storage_unit"
+			}
+			id: "0E209B011256E0CF"
+			rewards: [
+				{
+					count: 3
+					id: "5B354EE7F1634015"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "24270611F0F3EDA9"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "772D93AEBC83485B"
+					table_id: 8811145634920634486L
+					type: "random"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "41C955E2810C15A3"
+					item: { count: 1, id: "yet_another_industrialization:large_storage_unit" }
+					type: "item"
+				}
+				{
+					count: 42L
+					id: "7848EB94A18F5AA2"
+					item: { count: 1, id: "yet_another_industrialization:battery_casing" }
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "563ADA8C0B7EC827"
+					item: { count: 1, id: "minecraft:redstone_block" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7FD8507C8E8A48CB"
+					item: { count: 1, id: "modern_industrialization:basic_machine_hull" }
+					type: "item"
+				}
+				{
+					id: "2AFA241D3D935B51"
+					item: { count: 1, id: "yet_another_industrialization:large_storage_unit_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "27682D85BBC998C3"
+					item: { count: 1, id: "yet_another_industrialization:large_storage_unit_output_hatch" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 0.0d
 		}
 	]
 }

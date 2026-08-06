@@ -1110,60 +1110,100 @@
 		}
 		{
 			dependencies: ["2F0042673C0E3910"]
+			icon: {
+				id: "modern_industrialization:beryllium_sulfate_bucket"
+			}
 			id: "2296FC027EAF34E2"
 			rewards: [{
 				id: "233ED2C051420C72"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "3AE4934C709D066D"
-				item: { count: 1, id: "modern_industrialization:beryllium_sulfate_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3AE4934C709D066D"
+					item: { count: 1, id: "modern_industrialization:beryllium_sulfate_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "763F90CAC858E4A7"
+					type: "checkmark"
+				}
+			]
 			x: 6.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["2296FC027EAF34E2"]
+			icon: {
+				id: "modern_industrialization:beryllium_hydroxide_bucket"
+			}
 			id: "4CFA1740855847FE"
 			rewards: [{
 				id: "336FC534F17301E1"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "536B4B262E615A8C"
-				item: { count: 1, id: "modern_industrialization:beryllium_hydroxide_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "536B4B262E615A8C"
+					item: { count: 1, id: "modern_industrialization:beryllium_hydroxide_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "612874314623987D"
+					type: "checkmark"
+				}
+			]
 			x: 6.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["4CFA1740855847FE"]
+			icon: {
+				id: "modern_industrialization:beryllium_chloride_bucket"
+			}
 			id: "3E7BA3A61D2C897C"
 			rewards: [{
 				id: "6AE6CED4900B5CEB"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "24A81AB791249D81"
-				item: { count: 1, id: "modern_industrialization:beryllium_chloride_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "24A81AB791249D81"
+					item: { count: 1, id: "modern_industrialization:beryllium_chloride_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "76D7A07548BC5426"
+					type: "checkmark"
+				}
+			]
 			x: 7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3E7BA3A61D2C897C"]
 			id: "1AA057FA136ECE2D"
-			rewards: [{
-				id: "7751B2BE6FFF2A0F"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					id: "3A95BEC48BF6A064"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "7751B2BE6FFF2A0F"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "599D47A555E96164"
 				item: { count: 1, id: "modern_industrialization:beryllium_dust" }
