@@ -853,7 +853,7 @@ ServerEvents.recipes((event) => {
             { amount: 1, item: ae('calculation_processor') },
         ],
         [{ amount: 2, item: ae('basic_card') }],
-        [{ amount: 100, fluid: mi('molten_redstone') }]
+        [{ amount: 90, fluid: mi('molten_redstone') }]
     );
 
     // -- ADVANCED CARD -- //
@@ -868,7 +868,7 @@ ServerEvents.recipes((event) => {
             { amount: 1, item: ae('calculation_processor') },
         ],
         [{ amount: 2, item: ae('advanced_card') }],
-        [{ amount: 100, fluid: mi('molten_redstone') }]
+        [{ amount: 90, fluid: mi('molten_redstone') }]
     );
 
     // -- WITHERED SOC -- //
@@ -1114,7 +1114,7 @@ ServerEvents.recipes((event) => {
         100,
         [{ amount: 3, tag: 'c:stones' }],
         [{ amount: 1, item: mc('repeater') }],
-        [{ amount: 200, fluid: mi('molten_redstone') }]
+        [{ amount: 180, fluid: mi('molten_redstone') }]
     );
 
     // -- REDSTONE COMPARATOR -- //
@@ -1128,7 +1128,7 @@ ServerEvents.recipes((event) => {
             { amount: 3, tag: 'c:stones' },
         ],
         [{ amount: 1, item: mc('comparator') }],
-        [{ amount: 200, fluid: mi('molten_redstone') }]
+        [{ amount: 180, fluid: mi('molten_redstone') }]
     );
 
     // -- REDSTONE TORCH -- //
@@ -1139,7 +1139,7 @@ ServerEvents.recipes((event) => {
         100,
         [{ amount: 1, tag: 'c:rods/wooden' }],
         [{ amount: 1, item: mc('redstone_torch') }],
-        [{ amount: 50, fluid: mi('molten_redstone') }]
+        [{ amount: 45, fluid: mi('molten_redstone') }]
     );
 
     // -- FACTORY BLOCK -- //

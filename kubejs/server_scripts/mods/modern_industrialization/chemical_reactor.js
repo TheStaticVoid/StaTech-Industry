@@ -81,7 +81,7 @@ ServerEvents.recipes((event) => {
         200,
         [{ amount: 1, item: mc('quartz') }],
         [{ amount: 1, item: cr('polished_rose_quartz') }],
-        [{ amount: 500, fluid: mi('molten_redstone') }]
+        [{ amount: 450, fluid: mi('molten_redstone') }]
     );
 
     // -- EYE OF ENDER -- //
