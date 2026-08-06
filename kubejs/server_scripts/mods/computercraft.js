@@ -103,7 +103,7 @@ ServerEvents.recipes((event) => {
     event
         .shaped(cc('monitor_normal'), ['SRS', 'SGS', 'SSS'], {
             S: mi('steel_plate'),
-            R: lbr('redstone_circuit_board'),
+            R: mc('glowstone_dust'),
             G: '#c:glass_panes',
         })
         .id(st('monitor_normal'));
@@ -160,7 +160,7 @@ ServerEvents.recipes((event) => {
     event
         .shaped(cc('pocket_computer_advanced'), ['ERE', 'ECE', 'A A'], {
             E: mi('electrum_plate'),
-            C: cc('computer_normal'),
+            C: cc('pocket_computer_normal'),
             R: mi('electronic_circuit'),
             A: mi('aluminum_plate'),
         })
@@ -177,10 +177,9 @@ ServerEvents.recipes((event) => {
 
     // -- ADVANCED MONITOR -- //
     event
-        .shaped(cc('monitor_advanced'), ['SSS', 'AAA', 'SMS'], {
+        .shaped(cc('monitor_advanced'), ['SSS', 'SMS'], {
             S: mi('electrum_plate'),
-            A: mi('aluminum_plate'),
-            M: cc('monitor_normal'),
+            M: cc('monitor_normal')
         })
         .id(st('advanced_monitor'));
 
