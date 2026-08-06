@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY DINO FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -27,4 +27,57 @@ ServerEvents.recipes((event) => {
             P: '#c:plates/copper',
         })
         .id(st('copper_sheet_metal'));
+
+    // -------------------- //
+    // ---- COMPRESSOR ---- //
+    // -------------------- //
+
+    // -- ANDESITE SHEET -- //
+    compressor(
+        event,
+        st('andesite_sheet'),
+        2,
+        100,
+        [{ amount: 1, item: cr('andesite_alloy') }],
+        [{ amount: 1, item: cd('andesite_sheet') }]
+    );
+
+    // -- INDUSTRIAL IRON SHEET -- //
+    compressor(
+        event,
+        st('industrial_iron_sheet'),
+        2,
+        100,
+        [{ amount: 1, item: cd('industrial_iron_ingot') }],
+        [{ amount: 1, item: cd('industrial_iron_sheet') }]
+    );
+
+    // ---------------- //
+    // ---- PACKER ---- //
+    // ---------------- //
+
+    // -- INDUSTRIAL IRON BLOCK -- //
+    packer(
+        event,
+        st('industrial_iron_ingot_block'),
+        2,
+        100,
+        [{ amount: 9, item: cd('industrial_iron_ingot') }],
+        [{ amount: 1, item: cr('industrial_iron_block') }]
+    );
+
+    // ------------------ //
+    // ---- UNPACKER ---- //
+    // ------------------ //
+
+    // -- INDUSTRIAL IRON INGOT -- //
+    unpacker(
+        event,
+        st('industrial_iron_ingot'),
+        2,
+        100,
+        [{ amount: 1, item: cr('industrial_iron_block') }],
+        [{ amount: 9, item: cd('industrial_iron_ingot') }]
+    );
+
 });
