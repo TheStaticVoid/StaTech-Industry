@@ -3,7 +3,7 @@
   "version": "2.0.0-rc5",
   "author": "staitc, Purple Dino, & GronkDev",
   "release_type": "release",
-  "overrides": ["config", "defaultconfigs", "kubejs", "!kubejs/probe/**"],
+  "overrides": ["config", "defaultconfigs", "kubejs", "!kubejs/probe/**", "shaderpacks"],
   "server_overrides": [
     "!kubejs/assets",
     "forge-auto-install.txt",
