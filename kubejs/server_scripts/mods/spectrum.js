@@ -241,7 +241,7 @@ ServerEvents.recipes((event) => {
         ar('eternal_steak_furnace'),
         ar('eternal_steak_smoker'),
         ar('eternal_steak_campfire'),
-        sp('fusion_shrine/vanilla/netherite_ingot')
+        sp('fusion_shrine/vanilla/netherite_ingot'),
     ];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
@@ -406,6 +406,31 @@ ServerEvents.recipes((event) => {
             count: 1,
         },
         sp('midgame/break_decayed_bedrock')
+    );
+
+    // -- SHRINKING CHARM -- //
+    pedestal(
+        event,
+        st('shrinking_charm'),
+        400,
+        'simple',
+        {
+            'spectrum:cyan': 0,
+            'spectrum:magenta': 8,
+            'spectrum:yellow': 0,
+            'spectrum:black': 0,
+            'spectrum:white': 0,
+        },
+        5.0,
+        [' LP', 'LAL', 'EL '],
+        {
+            L: { item: mi('lead_plate') },
+            P: { item: sp('fanciful_pendant') },
+            E: { item: sp('radiating_ender') },
+            A: { item: sp('polished_amethyst') },
+        },
+        { id: ar('charm_of_shrinking'), count: 1 },
+        sp('build_basic_pedestal_structure')
     );
 });
 
