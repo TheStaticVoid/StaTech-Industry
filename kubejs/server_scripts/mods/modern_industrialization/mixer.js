@@ -73,59 +73,6 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mc('mossy_cobblestone') }]
     );
 
-    // -- STATECH ENERGY -- //
-    mixer(
-        event,
-        st('statech_energy'),
-        8,
-        200,
-        [
-            { amount: 1, item: kj('empty_can') },
-            { amount: 2, item: mi('battery_alloy_dust') },
-        ],
-        [{ amount: 1, item: kj('statech_energy') }],
-        [{ amount: 100, fluid: mc('water') }]
-    );
-
-    // -- BEPSI -- //
-    mixer(
-        event,
-        st('bepsi'),
-        8,
-        200,
-        [{ amount: 1, item: kj('empty_can') }],
-        [{ amount: 1, item: kj('bepsi') }],
-        [{ amount: 100, fluid: mi('polyethylene') }]
-    );
-
-    // -- COKE COLA -- //
-    mixer(
-        event,
-        st('coke_cola'),
-        8,
-        200,
-        [
-            { amount: 1, item: kj('empty_can') },
-            { amount: 2, tag: 'c:dusts/coke' },
-        ],
-        [{ amount: 1, item: kj('coke_cola') }],
-        [{ amount: 100, fluid: mc('water') }]
-    );
-
-    // -- GREG COLA -- //
-    mixer(
-        event,
-        st('greg_cola'),
-        8,
-        200,
-        [
-            { amount: 1, item: kj('empty_can') },
-            { amount: 2, item: mc('clay_ball') },
-        ],
-        [{ amount: 1, item: kj('greg_cola') }],
-        [{ amount: 100, fluid: mi('polytetrafluoroethylene') }]
-    );
-
     // -- URANIUM CEREAL -- //
     mixer(
         event,

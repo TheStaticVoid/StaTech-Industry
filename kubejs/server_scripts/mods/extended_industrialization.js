@@ -29,7 +29,9 @@ ServerEvents.recipes((event) => {
         ei('machines/large_steam_macerator/craft'),
         ei('machines/large_steam_macerator/assembler'),
         ei('tool/assembler/tesla_handheld_receiver'),
-        ei('vanilla_recipes/blast_furnace/netherite_dust_to_ingot')
+        ei('vanilla_recipes/blast_furnace/netherite_dust_to_ingot'),
+        ei('component/craft/tin_can'),
+        ei('component/assembler/tin_can'),
     ];
     EI_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
 
@@ -253,6 +255,28 @@ ServerEvents.recipes((event) => {
             [{ amount: 1, item: ei(`${tierName}_tesla_receiver_hatch`) }]
         );
     });
+
+    // ------------------- //
+    // --    TIN CAN    -- //
+    // ------------------- //
+
+    event.shaped(`4x ${ei('tin_can')}`, ['C  ', 'C  ', '   '], {
+        C: mi('aluminum_curved_plate'),
+    });
+    assembler(
+        event,
+        sta('component/assembler/tin_can'),
+        8,
+        200,
+        {
+            amount: 2,
+            item: mi('aluminum_curved_plate'),
+        },
+        {
+            amount: 4,
+            item: ei('tin_can'),
+        }
+    );
 });
 
 ServerEvents.tags('item', (event) => {
