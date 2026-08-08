@@ -67,10 +67,10 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mi('recycler') }]
     );
 
-    // -- DOPED DIODE -- //
+    // -- BUFFED DOPED DIODE -- //
     assembler(
         event,
-        st('diode_doped'),
+        st('buffed_diode_doped'),
         8,
         200,
         [
@@ -80,6 +80,21 @@ ServerEvents.recipes((event) => {
         ],
         [{ amount: 4, item: mi('diode') }],
         [{ amount: 125, fluid: mi('molten_borosilicate_glass') }]
+    );
+
+    // -- BUFFED DOPED TRANSISTOR -- //
+    assembler(
+        event,
+        st('buffed_transistor_doped'),
+        16,
+        200,
+        [
+            { amount: 1, item: mi('silicon_n_doped_plate') },
+            { amount: 1, item: kj('silicon_extremely_p_doped_plate') },
+            { amount: 1, item: mi('electrum_fine_wire') },
+            { amount: 3, item: mi('steel_plate') },
+        ],
+        [{ amount: 6, item: mi('transistor') }]
     );
 
     // -- STAINLESS STEEL TANK -- //

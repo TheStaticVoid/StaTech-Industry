@@ -401,6 +401,10 @@ StartupEvents.registry('item', (event) => {
         .create('diamond_upgrade_smithing_template')
         .displayName('Diamond Smithing Template');
 
+    event
+        .create('silicon_extremely_p_doped_plate')
+        .displayName('Extremely P-Doped Silicon Plate');
+
     // -- BRONZE EQUIPMENT -- //
 
     event
