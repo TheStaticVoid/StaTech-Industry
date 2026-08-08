@@ -16,9 +16,16 @@ ServerEvents.recipes((event) => {
         let recipeJson = recipe.json;
         let inputs = recipeJson.get('fluid_inputs');
 
-        if (inputs != null && inputs.isJsonArray() && inputs.getAsJsonArray().size() > 0) {
+        if (
+            inputs != null &&
+            inputs.isJsonArray() &&
+            inputs.getAsJsonArray().size() > 0
+        ) {
             let firstInput = inputs.getAsJsonArray().get(0).getAsJsonObject();
-            if (firstInput.has('amount') && firstInput.get('amount').getAsInt() == 1) {
+            if (
+                firstInput.has('amount') &&
+                firstInput.get('amount').getAsInt() == 1
+            ) {
                 firstInput.addProperty('amount', lubricantAmount);
             }
         }
@@ -26,16 +33,6 @@ ServerEvents.recipes((event) => {
     });
 
     recipesToRemove.forEach((id) => event.remove({ id: id }));
-
-    // -- EMPTY CAN -- //
-    cuttingMachine(
-        event,
-        st('empty_can'),
-        2,
-        200,
-        [{ amount: 1, tag: 'c:plates/tin' }],
-        [{ amount: 4, item: kj('empty_can') }]
-    );
 
     // -- BRASS ROD -- //
     cuttingMachine(

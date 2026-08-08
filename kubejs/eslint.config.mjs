@@ -3,7 +3,6 @@
  */
 
 import js from '@eslint/js';
-import { PanPack } from './dx/eslint-plugin/custom-plugin.mjs';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -17,5 +16,4 @@ export default [
             'no-useless-escape': 'warn',
         },
     },
-    PanPack,
 ];
