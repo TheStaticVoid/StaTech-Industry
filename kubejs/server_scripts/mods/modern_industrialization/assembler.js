@@ -37,6 +37,21 @@ ServerEvents.recipes((event) => {
     ];
     REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
+    // -- RECYCLER -- //
+    assembler(
+        event,
+        st('recycler'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('electronic_circuit') },
+            { amount: 2, item: mi('large_pump') },
+            { amount: 2, item: mi('aluminum_rotor') },
+            { amount: 1, item: mi('advanced_machine_hull') },
+        ],
+        [{ amount: 1, item: mi('recycler') }]
+    );
+
     // -- DOPED DIODE -- //
     assembler(
         event,
@@ -375,10 +390,10 @@ ServerEvents.recipes((event) => {
         200,
         [
             { amount: 4, item: ae('fluix_glass_cable') },
-            { amount: 1, tag: 'c:wools' }
+            { amount: 1, tag: 'c:wools' },
         ],
-        [ { amount: 4, item: ae('fluix_covered_cable') } ],
-        [ { amount: 500, fluid: mi('synthetic_rubber') } ]
+        [{ amount: 4, item: ae('fluix_covered_cable') }],
+        [{ amount: 500, fluid: mi('synthetic_rubber') }]
     );
 
     // -- LV TO MV TRANSFORMER -- //

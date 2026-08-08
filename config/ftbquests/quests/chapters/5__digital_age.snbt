@@ -3636,5 +3636,52 @@
 			x: 14.5d
 			y: -2.5d
 		}
+		{
+			dependencies: ["240E45CC4436DF82"]
+			id: "4BDF575E8688D537"
+			rewards: [
+				{
+					id: "3DF4F151C4960B6D"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E4CDAC66FE26056"
+					table_id: 5762803210059023537L
+					type: "random"
+				}
+				{
+					id: "0138A9B0CD0E49F4"
+					type: "xp"
+					xp: 75
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "579E5FBC24A7F7B7"
+					item: { count: 1, id: "modern_industrialization:recycler" }
+					type: "item"
+				}
+				{
+					id: "7A1A9AC8422F0084"
+					item: { count: 1, id: "kubejs:scrap" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "70C472DBEF21D19D"
+					item: { count: 1, id: "kubejs:uu_matter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 4.5d
+		}
 	]
 }

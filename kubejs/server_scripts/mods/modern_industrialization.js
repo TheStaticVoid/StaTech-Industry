@@ -457,6 +457,16 @@ ServerEvents.recipes((event) => {
             G: mi('hv_steam_turbine'),
         })
         .id(st('large_steam_turbine'));
+
+    // -- RECYCLER -- //
+    event
+        .shaped(mi('recycler'), ['EPE', 'RHR', 'EPE'], {
+            P: mi('large_pump'),
+            R: mi('aluminum_rotor'),
+            H: mi('advanced_machine_hull'),
+            E: mi('electronic_circuit'),
+        })
+        .id(st('recycler'));
 });
 
 ServerEvents.tags('item', (event) => {
