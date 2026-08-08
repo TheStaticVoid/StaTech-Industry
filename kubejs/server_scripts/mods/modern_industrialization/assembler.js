@@ -835,7 +835,8 @@ ServerEvents.recipes((event) => {
             { amount: 1, item: kj('pizza_dough') },
             { amount: 1, item: fd('tomato_sauce') },
             { amount: 1, item: fd('onion') },
-            { amount: 1, item: ed('cheese_slice') },
+            { amount: 1, tag: 'c:mushrooms' },
+            { amount: 1, tag: bc('foods/cheese_wedge') },
             { amount: 1, item: fd('minced_beef') },
         ],
         [{ amount: 1, item: kj('uncooked_pizza') }]

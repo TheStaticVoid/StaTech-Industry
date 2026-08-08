@@ -94,16 +94,6 @@ ServerEvents.recipes((event) => {
         [{ amount: 6, item: ap('twisted_planks') }]
     );
 
-    // -- EXPANDED DELIGHT MISSING WOOD -- //
-    cuttingMachine(
-        event,
-        st('cinnamon_planks'),
-        2,
-        100,
-        [{ amount: 1, tag: ed('cinnamon_logs') }],
-        [{ amount: 6, item: ed('cinnamon_planks') }]
-    );
-
     // -- NO MANS LAND MISSING WOOD -- //
     const nmlMissingPlanks = ['pine', 'maple', 'walnut', 'willow'];
     nmlMissingPlanks.forEach((wood) => {

@@ -11,10 +11,14 @@
 	armorHudYPosition = 4
 	#Enable rendering of barrel content: item icon, item amount, and item name.
 	barrelContentRendering = true
-	#Show valid positions in multiblocks when holding a hatch.
+	#Show valid hatch positions in multiblocks when holding a hatch.
 	hatchPlacementOverlay = true
 	#Enable connected textures between machines that have the same casing. (Requires a suitable resource pack)
 	interMachineConnectedTextures = false
+	#Show valid positions in multiblocks when holding a hatch or wrench while within this many blocks. Set to 0 to disable.
+	# Default: 32
+	# Range: > 0
+	maxMultiblockHighlightOverlayRange = 32
 
 [tooltips]
 	#Add the total EU value of fuel items to their tooltips.

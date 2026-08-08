@@ -8,31 +8,9 @@ ServerEvents.recipes((event) => {
     let st = (id) =>
         `statech:modern_industrialization/photosynthetic_chamber/${id}`;
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let photoChamber = (
-        id,
-        eu,
-        duration,
-        item_inputs,
-        item_outputs,
-        fluid_inputs
-    ) => {
-        let newRecipe = {
-            type: mi('photosynthetic_chamber'),
-            eu: eu,
-            duration: duration,
-        };
-
-        if (item_inputs) newRecipe['item_inputs'] = item_inputs;
-        if (item_outputs) newRecipe['item_outputs'] = item_outputs;
-        if (fluid_inputs) newRecipe['fluid_inputs'] = fluid_inputs;
-
-        event.custom(newRecipe).id(id);
-    };
-
     // This is all the seeds in the game with their respective outputs
     const recipeInOut = [
-        // Wheat
+        // -- WHEAT -- //
         [
             mc('wheat_seeds'),
             [
@@ -42,7 +20,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Pumpkin
+        // -- PUMPKIN -- //
         [
             mc('pumpkin_seeds'),
             [
@@ -51,7 +29,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Melon
+        // -- MELON -- //
         [
             mc('melon_seeds'),
             [
@@ -60,7 +38,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Beetroot
+        // -- BEETROOT -- //
         [
             mc('beetroot_seeds'),
             [
@@ -70,7 +48,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Carrot
+        // -- CARROT -- //
         [
             mc('carrot'),
             [
@@ -79,7 +57,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Potato
+        // -- POTATO -- //
         [
             mc('potato'),
             [
@@ -89,7 +67,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Flax
+        // -- FLAX -- //
         [
             su('flax_seeds'),
             [
@@ -99,45 +77,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Asparagus
-        [
-            ed('asparagus_seeds'),
-            [
-                { amount: 1, item: ed('asparagus') },
-                { amount: 1, item: ed('asparagus'), probability: 0.5 },
-                { amount: 1, item: ed('asparagus_seeds'), probability: 0.5 },
-            ],
-        ],
-
-        // Sweet Potato
-        [
-            ed('sweet_potato'),
-            [
-                { amount: 1, item: ed('sweet_potato') },
-                { amount: 1, item: ed('sweet_potato'), probability: 0.5 },
-            ],
-        ],
-
-        // Chili Pepper
-        [
-            ed('chili_pepper_seeds'),
-            [
-                { amount: 1, item: ed('chili_pepper') },
-                { amount: 1, item: ed('chili_pepper'), probability: 0.5 },
-                { amount: 1, item: ed('chili_pepper_seeds'), probability: 0.5 },
-            ],
-        ],
-
-        // Peanut
-        [
-            ed('peanut'),
-            [
-                { amount: 1, item: ed('peanut') },
-                { amount: 1, item: ed('peanut'), probability: 0.5 },
-            ],
-        ],
-
-        // Cabbage
+        // -- CABBAGE -- //
         [
             fd('cabbage_seeds'),
             [
@@ -147,7 +87,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Tomato
+        // -- TOMATO -- //
         [
             fd('tomato_seeds'),
             [
@@ -157,7 +97,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Onion
+        // -- ONION -- //
         [
             fd('onion'),
             [
@@ -166,7 +106,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Rice
+        // -- RICE -- //
         [
             fd('rice'),
             [
@@ -176,7 +116,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Cactus
+        // -- CACTUS -- //
         [
             mc('cactus'),
             [
@@ -185,7 +125,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Sugar cane
+        // -- SUGAR CANE -- //
         [
             mc('sugar_cane'),
             [
@@ -194,7 +134,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Cocoa Beans
+        // -- COCOA BEANS -- //
         [
             mc('cocoa_beans'),
             [
@@ -203,7 +143,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Kelp
+        // -- KELP -- //
         [
             mc('kelp'),
             [
@@ -212,7 +152,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Bamboo
+        // -- BAMBOO -- //
         [
             mc('bamboo'),
             [
@@ -221,7 +161,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Vine
+        // -- VINE -- //
         [
             mc('vine'),
             [
@@ -230,7 +170,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Sweet Berries
+        // -- SWEET BERRIES -- //
         [
             mc('sweet_berries'),
             [
@@ -239,7 +179,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Glow Berries
+        // -- GLOW BERRIES -- //
         [
             mc('glow_berries'),
             [
@@ -248,7 +188,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Brown Mushrooom
+        // -- BROWN MUSHROOM -- //
         [
             mc('brown_mushroom'),
             [
@@ -257,7 +197,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
 
-        // Red Mushroom
+        // -- RED MUSHROOM -- //
         [
             mc('red_mushroom'),
             [
@@ -266,6 +206,7 @@ ServerEvents.recipes((event) => {
             ],
         ],
     ];
+
     // Create recipes for each of the items in the list
     recipeInOut.forEach((recipe) => {
         let input = recipe[0];
@@ -274,6 +215,7 @@ ServerEvents.recipes((event) => {
         let itemName = input.split(':')[1];
 
         photoChamber(
+            event,
             st(`${namespace}_${itemName}`),
             8,
             600,
@@ -296,6 +238,7 @@ ServerEvents.recipes((event) => {
         let namespace = recipe.id.split(':')[0];
         let itemName = recipe.id.split(':')[1];
         photoChamber(
+            event,
             st(`${namespace}_${itemName}`),
             8,
             600,
@@ -309,8 +252,10 @@ ServerEvents.recipes((event) => {
     });
 
     // These use a different fluid and are omitted from the original list
+
     // -- NETHER WART -- //
     photoChamber(
+        event,
         st('minecraft_nether_wart'),
         8,
         600,
@@ -324,6 +269,7 @@ ServerEvents.recipes((event) => {
 
     // -- CHORUS FLOWER -- //
     photoChamber(
+        event,
         st('minecraft_chorus_fruit'),
         8,
         600,

@@ -46,6 +46,8 @@ ServerEvents.tags('item', (event) => {
     event.add('c:budding_blocks', nm('budding_quartzite'));
 
     event.add('c:clusters', nm('quartzite_cluster'));
+
+    event.add('c:mushrooms', nm('shelf_mushroom'));
 });
 
 ServerEvents.recipes((event) => {
@@ -63,6 +65,13 @@ ServerEvents.recipes((event) => {
         nm('food/salmon_and_pesto_gnocchi'),
     ];
     NOMANSLAND_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
+
+    // -- MUSHROOM TAG UNIFICATION -- //
+    event.replaceInput(
+        { input: '#nomansland:edible_mushrooms' },
+        '#nomansland:edible_mushrooms',
+        Ingredient.of('#c:mushrooms')
+    );
 
     // ------------------------//
     // --- SHAPED CRAFTING --- //
@@ -91,7 +100,7 @@ ServerEvents.recipes((event) => {
     // -- MUSHROOM STEW -- //
     event
         .shapeless(Item.of(mc('mushroom_stew'), 1), [
-            '2x #nomansland:edible_mushrooms',
+            '2x #c:mushrooms',
             mc('bowl'),
         ])
         .id(st('mushroom_stew_shaped'));
@@ -119,10 +128,10 @@ ServerEvents.recipes((event) => {
         { count: 1, id: mc('bowl') },
         [
             {
-                tag: 'nomansland:edible_mushrooms',
+                tag: 'c:mushrooms',
             },
             {
-                tag: 'nomansland:edible_mushrooms',
+                tag: 'c:mushrooms',
             },
             {
                 tag: 'c:crops/rice',
@@ -151,10 +160,10 @@ ServerEvents.recipes((event) => {
         { count: 1, id: mc('bowl') },
         [
             {
-                tag: 'nomansland:edible_mushrooms',
+                tag: 'c:mushrooms',
             },
             {
-                tag: 'nomansland:edible_mushrooms',
+                tag: 'c:mushrooms',
             },
         ],
         { count: 1, id: mc('mushroom_stew') }

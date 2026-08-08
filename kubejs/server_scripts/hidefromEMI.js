@@ -51,13 +51,7 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
     const UNUSED_NML = [nm('pancake')];
     UNUSED_NML.forEach((id) => event.remove(id));
 
-    const UNUSED_FD = [
-        fd('wheat_dough'),
-        ed('salt'),
-        ed('salt_ore'),
-        ed('deepslate_salt_ore'),
-        ed('salt_rock'),
-    ];
+    const UNUSED_FD = [fd('wheat_dough'), bc('pizza'), bc('pizza_slice')];
     UNUSED_FD.forEach((id) => event.remove(id));
 
     const UNUSED_GAG = [gag('pigment_jar')];
@@ -105,15 +99,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         fs('framed_simple_compacting_drawer'),
     ];
     UNUSED_FUNCTIONNAL_STORAGE.forEach((id) => event.remove(id));
-
-    /*     const UNUSED_MORE_FUNCTIONNAL_STORAGE = [
-            mfs('placer_upgrade'),
-            mfs('breaker_upgrade'),
-            mfs('refill_upgrade'),
-            mfs('dimensional_refill_upgrade'),
-            mfs('speed_upgrade_augment')
-        ]
-        UNUSED_MORE_FUNCTIONNAL_STORAGE.forEach(id => event.remove(id)); */
 
     const UNUSED_MD = [md('wrench')];
     UNUSED_MD.forEach((id) => event.remove(id));

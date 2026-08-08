@@ -100,12 +100,6 @@ ServerEvents.recipes((event) => {
             mc('water'),
         ],
         [
-            ed('cinnamon_sapling'),
-            ed('cinnamon_log'),
-            ed('cinnamon_leaves'),
-            mc('water'),
-        ],
-        [
             ap('twisted_sapling'),
             ap('twisted_log'),
             ap('twisted_leaves'),
