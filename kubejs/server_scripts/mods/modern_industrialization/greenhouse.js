@@ -8,7 +8,7 @@
  *   @param {string} log Namespaced identifier of this tree's log
  *   @param {string} leaves Namespaced identifier of this tree's leaves
  *   @param {string} fluid Namespaced identifier of the fluid needed to grow this tree
- *   @param {extraDrop}
+ *   @param {MIItem} extraDrop MIItem object containing an item and probability for any extra drops a tree may have, like apples.
  *
  * @example
  * ```javascript
