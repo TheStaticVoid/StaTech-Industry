@@ -231,7 +231,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     ])
         .id(mi('copper_double_ingot_shapless'));
 
-
+    // -- ARMOR RECIPES -- //
 
     event.remove({ id: 'extended_industrialization:tool/nano_suit_helmet' })
     assembler(
@@ -358,6 +358,63 @@ ServerEvents.recipes(event => { // this probably isnt destructive
             { amount: 1, item: mi('quantum_upgrade') },
         ],
         [{ amount: 1, item: 'extended_industrialization:nano_quantum_chestplate' }]
+    );
+
+    // -- TOOL RECIPES -- //
+
+    event
+        .shaped('1x ' + mi('diesel_mining_drill'), ['CBD', 'MPB', 'TMC'], {
+            C: mi('electronic_circuit'),
+            B: mi('invar_rotary_blade'),
+            D: mi('steam_mining_drill'),
+            M: mi('large_motor'),
+            P: mi('large_pump'),
+            T: mi('aluminum_tank')
+        })
+        .id('modern_industrialization:tools/diesel_mining_drill');
+
+    event
+        .shaped('1x ' + mi('diesel_chainsaw'), [' RB', 'MCR', 'TM '], {
+            R: mi('rubber_sheet'),
+            B: mi('invar_rotary_blade'),
+            C: ei('steam_chainsaw'),
+            M: mi('large_motor'),
+            T: mi('aluminum_tank')
+        })
+        .id('modern_industrialization:tools/diesel_chainsaw');
+
+    event
+        .shaped('1x ' + ei('electric_mining_drill'), ['CBD', 'MPB', 'TMC'], {
+            C: mi('advanced_upgrade'),
+            B: ei('netherite_rotary_blade'),
+            D: mi('diesel_mining_drill'),
+            M: mi('advanced_motor'),
+            P: mi('large_motor'),
+            T: mi('aluminum_cable')
+        })
+        .id('extended_industrialization:tool/craft/electric_mining_drill');
+
+    event
+        .shaped('1x ' + ei('electric_chainsaw'), ['URB', 'MCR', 'TMU'], {
+            U: mi('advanced_upgrade'),
+            R: mi('rubber_sheet'),
+            B: ei('netherite_rotary_blade'),
+            C: mi('diesel_chainsaw'),
+            M: mi('advanced_motor'),
+            T: mi('aluminum_cable')
+        })
+        .id('extended_industrialization:tool/craft/electric_chainsaw');
+
+    packer(
+        event,
+        ei('tool/craft/ultimate_drill'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: 'industrialization_overdrive:vajra' },
+            { amount: 1, item: mi('quantum_upgrade') },
+        ],
+        [{ amount: 1, item: 'extended_industrialization:ultimate_laser_drill' }]
     );
 
     // -- ENDGAME RECIPES -- //
