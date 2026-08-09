@@ -3,7 +3,7 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
-MISoundAddons.modifySounds(event => {
+MISoundAddons.modifySounds((event) => {
     // -- MODIFY DURATIONS -- //
     event.modifyDuration('laser_engraver', 42);
     event.modifyDuration('singularity_forge', 40);
@@ -16,6 +16,7 @@ MISoundAddons.modifySounds(event => {
     event.modifyDuration('mob_crusher', 134);
     event.modifyDuration('boss_crusher', 134);
     event.modifyDuration('recycler', 39);
+    event.modifyDuration('weapons_factory', 39);
 
     // -- MODIFY VOLUMES -- //
 
