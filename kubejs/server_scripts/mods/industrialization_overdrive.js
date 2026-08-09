@@ -66,7 +66,7 @@ ServerEvents.recipes((event) => {
             C: ei('electric_chainsaw'),
             R: ei('netherite_rotary_blade'),
             O: mi('cooling_cell'),
-            S: mi('superconductor_coil'),
+            S: mi('tungstensteel_coil'),
             P: mi('processing_unit'),
             U: mi('highly_advanced_upgrade'),
         })

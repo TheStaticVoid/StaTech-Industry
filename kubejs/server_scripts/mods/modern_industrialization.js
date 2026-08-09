@@ -490,6 +490,7 @@ ServerEvents.tags('item', (event) => {
     const HV_WIRE = [
         mi('aluminum_cable'),
         mi('kanthal_cable'),
+        mi('enderium_cable'),
     ];
     HV_WIRE.forEach((id) => {
         event.add('kubejs:hv_wire', id);
@@ -498,7 +499,6 @@ ServerEvents.tags('item', (event) => {
     const EV_WIRE = [
         mi('annealed_copper_cable'),
         mi('platinum_cable'),
-        mi('enderium_cable'),
         mi('tungstensteel_cable'),
     ];
     EV_WIRE.forEach((id) => {

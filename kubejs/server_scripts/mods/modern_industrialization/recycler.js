@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: kj('scrap'), probability: 0.35 }]
     );
 
-    // -- MID TIER SCRAP -- //
+    // -- LOW-MID TIER SCRAP -- //
     recycler(
         event,
         st('mid_tier_scrap'),
@@ -25,6 +25,16 @@ ServerEvents.recipes((event) => {
         50,
         [{ amount: 1, tag: 'statech:scrappable/mid' }],
         [{ amount: 2, item: kj('scrap'), probability: 0.5 }]
+    );
+
+    // -- HIGH-MID TIER SCRAP -- //
+    recycler(
+        event,
+        st('high_mid_tier_scrap'),
+        48,
+        200,
+        [{ amount: 1, tag: 'statech:scrappable/high_mid' }],
+        [{ amount: 1, item: kj('scrap'), probability: 0.5 }]
     );
 
     // -- HIGH TIER SCRAP -- //
@@ -273,8 +283,8 @@ ServerEvents.tags('item', (event) => {
         '#c:ores/fluorite',
         '#c:ores/diamond',
     ];
-    MID_TIER_SCRAP.forEach((id) => {
-        event.add(st('mid'), id);
+    HIGH_MID_TIER_SCRAP.forEach((id) => {
+        event.add(st('high_mid'), id);
     });
 
     let HIGH_TIER_SCRAP = [
