@@ -132,6 +132,16 @@ ItemEvents.modifyTooltips((event) => {
             });
         });
     });
+    const SHIFTFORMOREDETAIL = Text.gray('Hold Shift for more details');
+    const KEYFORMOREDETAIL = [
+        '#decorative_blocks:seats',
+        '#decorative_blocks:supports',
+    ];
+    KEYFORMOREDETAIL.forEach((item) => {
+        event.modify(item, (tooltip) => {
+            tooltip.add([SHIFTFORMOREDETAIL]);
+        });
+    });
 
     const CURRENTLY_DISABLED = Text.red('Dev Item [WIP]');
     DISABLED_MACHINES_AND_ITEMS.forEach((item) => {
