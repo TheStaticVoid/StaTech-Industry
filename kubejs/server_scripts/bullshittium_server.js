@@ -363,6 +363,26 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     // -- TOOL RECIPES -- //
 
     event
+        .shaped('1x ' + mi('steam_mining_drill'), ['F P', 'SD ', 'BSF'], {
+            F: mc('furnace'),
+            P: mc('diamond_pickaxe'),
+            B: mc('bucket'),
+            D: mi('copper_drill_head'),
+            S: mi('steel_large_plate'),
+        })
+        .id('modern_industrialization:tools/steam_mining_drill');
+
+    event
+        .shaped('1x ' + ei('steam_chainsaw'), ['F P', 'SD ', 'BSF'], {
+            F: mc('furnace'),
+            P: mc('diamond_axe'),
+            B: mc('bucket'),
+            D: mi('copper_gear'),
+            S: mi('steel_large_plate'),
+        })
+        .id('statech:extended_industrialization/steam_chainsaw');
+
+    event
         .shaped('1x ' + mi('diesel_mining_drill'), ['CBD', 'MPB', 'TMC'], {
             C: mi('electronic_circuit'),
             B: mi('invar_rotary_blade'),
