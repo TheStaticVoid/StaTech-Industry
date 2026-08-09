@@ -205,6 +205,35 @@ ServerEvents.recipes((event) => {
                 { amount: 1, item: mc('red_mushroom'), probability: 0.5 },
             ],
         ],
+
+        // -- CORN -- //
+        [
+            cud('corn_kernels'),
+            [
+                { amount: 1, item: cud('corn_cob') },
+                { amount: 1, item: fd('straw') },
+            ],
+        ],
+
+        // -- CUCUMBER -- //
+        [
+            cud('cucumber_seeds'),
+            [
+                { amount: 1, item: cud('cucumber') },
+                { amount: 1, item: cud('cucumber'), probability: 0.5 },
+                { amount: 1, item: cud('cucumber_seeds'), probability: 0.5 },
+            ],
+        ],
+
+        // -- EGGPLANT -- //
+        [
+            cud('eggplant_seeds'),
+            [
+                { amount: 1, item: cud('eggplant') },
+                { amount: 1, item: cud('white_eggplant'), probability: 0.75 },
+                { amount: 1, item: cud('eggplant_seeds'), probability: 0.5 },
+            ],
+        ],
     ];
 
     // Create recipes for each of the items in the list

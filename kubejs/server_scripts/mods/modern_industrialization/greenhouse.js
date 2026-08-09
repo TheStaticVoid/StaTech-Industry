@@ -11,13 +11,6 @@ ServerEvents.recipes((event) => {
 
     const saplingLogList = [
         // Sapling                              Log                             Leaves                                  Fluid
-        [mc('oak_sapling'), mc('oak_log'), mc('oak_leaves'), mc('water')],
-        [
-            mc('dark_oak_sapling'),
-            mc('dark_oak_log'),
-            mc('dark_oak_leaves'),
-            mc('water'),
-        ],
         [
             mc('spruce_sapling'),
             mc('spruce_log'),
@@ -61,18 +54,11 @@ ServerEvents.recipes((event) => {
             mc('warped_wart_block'),
             mi('blood'),
         ],
-        [nm('pine_sapling'), nm('pine_log'), nm('pine_leaves'), mc('water')],
         [nm('maple_sapling'), nm('maple_log'), nm('maple_leaves'), mc('water')],
         [
             nm('red_maple_sapling'),
             nm('maple_log'),
             nm('red_maple_leaves'),
-            mc('water'),
-        ],
-        [
-            nm('walnut_sapling'),
-            nm('walnut_log'),
-            nm('walnut_leaves'),
             mc('water'),
         ],
         [
@@ -91,12 +77,6 @@ ServerEvents.recipes((event) => {
             nm('pale_cherry_sapling'),
             mc('cherry_log'),
             nm('pale_cherry_leaves'),
-            mc('water'),
-        ],
-        [
-            nm('autumnal_oak_sapling'),
-            mc('oak_log'),
-            nm('autumnal_oak_leaves'),
             mc('water'),
         ],
         [
@@ -153,6 +133,57 @@ ServerEvents.recipes((event) => {
             sp('light_gray_log'),
             sp('light_gray_leaves'),
             mc('water'),
+        ],
+    ];
+
+    const saplingWithExtraDrops = [
+        [
+            mc('oak_sapling'),
+            mc('oak_log'),
+            mc('oak_leaves'),
+            mc('water'),
+            mc('apple'),
+            0.75,
+        ],
+        [
+            mc('dark_oak_sapling'),
+            mc('dark_oak_log'),
+            mc('dark_oak_leaves'),
+            mc('water'),
+            mc('apple'),
+            0.5,
+        ],
+        [
+            nm('autumnal_oak_sapling'),
+            mc('oak_log'),
+            nm('autumnal_oak_leaves'),
+            mc('water'),
+            nm('pear'),
+            0.75,
+        ],
+        [
+            nm('walnut_sapling'),
+            nm('walnut_log'),
+            nm('walnut_leaves'),
+            mc('water'),
+            nm('walnuts'),
+            0.05,
+        ],
+        [
+            nm('pine_sapling'),
+            nm('pine_log'),
+            nm('pine_leaves'),
+            mc('water'),
+            nm('pine_nuts'),
+            0.1,
+        ],
+        [
+            cud('avocado_sapling'),
+            cud('avocado_log'),
+            cud('avocado_leaves'),
+            mc('water'),
+            cud('avocado'),
+            0.5,
         ],
     ];
 
@@ -269,6 +300,99 @@ ServerEvents.recipes((event) => {
             [{ amount: 100, fluid: ei('npk_fertilizer') }],
             'spectrum:polished_onyx',
             'below'
+        );
+    });
+
+    saplingWithExtraDrops.forEach((woodType) => {
+        let sapling = woodType[0];
+        let log = woodType[1];
+        let leaves = woodType[2];
+        let fluid = woodType[3];
+        let extraDrop = woodType[4];
+        let extraDropChance = woodType[5];
+        let id = `${log.split(':')[1]}_from_${sapling.split(':')[1]}`;
+
+        // Fixes duplicate ID issue between the two palm logs
+        // if (log.split(':')[1] == 'palm_log' && log.split(':')[0] == 'byg')
+        // id += '_byg';
+        let extraDropChanceRoll = 1;
+        if (woodType[5] * 8 < 1) extraDropChanceRoll = woodType[5] * 8;
+        if (woodType[5] * 8 > 1 && woodType[5] < 1) {
+            extraDropChanceRoll = null;
+            extraDropChance = Math.ceil(woodType[5] * 8);
+        } else {
+            extraDropChance = woodType[5] * 8;
+        }
+        greenhouse(
+            event,
+            st(id),
+            8,
+            1200,
+            [{ amount: 1, item: sapling, probability: 0.0 }],
+            [
+                { amount: 8, item: log },
+                { amount: 16, item: leaves },
+                { amount: 1, item: sapling, probability: 0.5 },
+                {
+                    amount: extraDropChance,
+                    item: extraDrop,
+                    probability: extraDropChanceRoll,
+                },
+            ],
+            [{ amount: 100, fluid: fluid }]
+        );
+
+        if (woodType[5] * 16 < 1) extraDropChanceRoll = woodType[5] * 16;
+        if (woodType[5] * 16 > 1 && woodType[5] * 8 < 1) {
+            extraDropChanceRoll = null;
+            extraDropChance = Math.ceil(woodType[5] * 16);
+        } else {
+            extraDropChance = woodType[5] * 16;
+        }
+        fluid = mi(`nutrient_rich_${fluid.split(':')[1]}`);
+        greenhouse(
+            event,
+            st(`${id}_bonemeal`),
+            8,
+            1200,
+            [{ amount: 1, item: sapling, probability: 0.0 }],
+            [
+                { amount: 16, item: log },
+                { amount: 32, item: leaves },
+                { amount: 1, item: sapling },
+                {
+                    amount: extraDropChance,
+                    item: extraDrop,
+                    probability: extraDropChanceRoll,
+                },
+            ],
+            [{ amount: 100, fluid: fluid }]
+        );
+
+        if (woodType[5] * 32 < 1) extraDropChanceRoll = woodType[5] * 32;
+        if (woodType[5] * 32 > 1 && woodType[5] * 16 < 1) {
+            extraDropChanceRoll = null;
+            extraDropChance = Math.ceil(woodType[5] * 32);
+        } else {
+            extraDropChance = woodType[5] * 32;
+        }
+        greenhouse(
+            event,
+            st(`${id}_npk`),
+            8,
+            1200,
+            [{ amount: 1, item: sapling, probability: 0.0 }],
+            [
+                { amount: 32, item: log },
+                { amount: 64, item: leaves },
+                { amount: 2, item: sapling },
+                {
+                    amount: extraDropChance,
+                    item: extraDrop,
+                    probability: extraDropChanceRoll,
+                },
+            ],
+            [{ amount: 100, fluid: ei('npk_fertilizer') }]
         );
     });
 });

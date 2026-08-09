@@ -26,3 +26,8 @@ ServerEvents.recipes((event) => {
     ];
     FARMERSDELIGHT_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 });
+
+// -- MILK TAG UNIFICATION -- //
+ServerEvents.tags('item', (event) => {
+    event.add('c:foods/milk', '#c:drinks/milk');
+});
