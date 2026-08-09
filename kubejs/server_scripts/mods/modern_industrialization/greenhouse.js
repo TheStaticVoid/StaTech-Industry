@@ -103,7 +103,7 @@ ServerEvents.recipes((event) => {
                 let extra = {
                     item: tree.extraDrop.item,
                     probability: tree.extraDrop.probability,
-                    amount: multiplier,
+                    amount: multiplier * 2,
                 };
                 treeOutputs.push(extra);
             }
