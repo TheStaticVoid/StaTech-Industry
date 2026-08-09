@@ -17,14 +17,24 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: kj('scrap'), probability: 0.1 }]
     );
 
-    // -- MID TIER SCRAP -- //
+    // -- LOW-MID TIER SCRAP -- //
     recycler(
         event,
-        st('mid_tier_scrap'),
+        st('low_mid_tier_scrap'),
         32,
         200,
-        [{ amount: 1, tag: 'statech:scrappable/mid' }],
+        [{ amount: 1, tag: 'statech:scrappable/low_mid' }],
         [{ amount: 1, item: kj('scrap'), probability: 0.25 }]
+    );
+
+    // -- HIGH-MID TIER SCRAP -- //
+    recycler(
+        event,
+        st('high_mid_tier_scrap'),
+        48,
+        200,
+        [{ amount: 1, tag: 'statech:scrappable/high_mid' }],
+        [{ amount: 1, item: kj('scrap'), probability: 0.5 }]
     );
 
     // -- HIGH TIER SCRAP -- //
@@ -47,22 +57,60 @@ ServerEvents.tags('item', (event) => {
         '#c:cobblestones',
         '#minecraft:logs',
         '#c:stones',
-        '#c:gems',
+        mc('netherrrack'),
+        mc('blackstone'),
+        mc('basalt'),
+        mc('soul_soil'),
+        mc('glowstone'),
+        mc('soul_sand'),
+        mc('magma_block'),
     ];
     LOW_TIER_SCRAP.forEach((id) => {
         event.add(st('low'), id);
     });
 
-    let MID_TIER_SCRAP = [
+    let LOW_MID_TIER_SCRAP = [
+        '#minecraft:coals',
+        '#c:ores/iron',
+        '#c:ores/coal',
+        '#c:ores/lignite_coal',
+        '#c:ores/copper',
+        '#c:ores/tin',
+        '#c:ores/gold',
+        '#c:ores/redstone',
+        '#c:ores/quartz',
+        '#c:ores/iron',
+        '#c:ores/zinc',
+        '#c:ores/salt',
+        '#c:ores/antimony',
+        '#c:ores/fluorite',
+        '#c:ores/lapis',
+        '#c:ores/lead',
+        '#c:ores/nickel',
+    ];
+    LOW_MID_TIER_SCRAP.forEach((id) => {
+        event.add(st('low_mid'), id);
+    });
+
+    let HIGH_MID_TIER_SCRAP = [
         mc('diamond'),
         mi('rubber_sheet'),
         mi('analog_circuit'),
         mi('electrum_double_ingot'),
         mi('aluminum_double_ingot'),
         '#c:potions',
+        '#c:ores/ruby',
+        '#c:ores/sapphire',
+        '#c:ores/kernite',
+        '#c:ores/bauxite',
+        '#c:ores/emerald',
+        '#c:ores/peridot',
+        '#c:ores/emerald',
+        '#c:ores/fluorite',
+        '#c:ores/diamond',
     ];
-    MID_TIER_SCRAP.forEach((id) => {
-        event.add(st('mid'), id);
+    HIGH_MID_TIER_SCRAP.forEach((id) => {
+        event.add(st('high_mid'), id);
     });
 
     let HIGH_TIER_SCRAP = [
@@ -75,6 +123,17 @@ ServerEvents.tags('item', (event) => {
         mi('calorite_ingot'),
         '#minecraft:trim_templates',
         '#c:music_discs',
+        '#c:ores/netherite_scrap',
+        '#c:ores/titanium',
+        '#c:ores/tungsten',
+        '#c:ores/monazite',
+        '#c:ores/platinum',
+        '#c:ores/iridium',
+        '#c:ores/uranium',
+        '#c:ores/desh',
+        '#c:ores/ostrum',
+        '#c:ores/calorite',
+        '#c:ores/moon_ice',
     ];
     HIGH_TIER_SCRAP.forEach((id) => {
         event.add(st('high'), id);
