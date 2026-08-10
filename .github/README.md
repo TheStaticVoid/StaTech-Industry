@@ -24,6 +24,7 @@ diversify power\
   -i like the gt thing where steam is strictly lv/early mv, might buff benzene and diesel or something idk\
   -removing the mid to late game multi boilers is probably stupid but thats the best fix i can think of\
 if its possible to implement a location based alternative to the quarry the steam quarry can be removed\
+  - gate item/fluid pipes a bit or make them more expensive if this happens (spooky)
 forced replicatorless\
   -creative items can be turned into tokens or something\
 have a need for overlooked/unnecessary addon stuff (EI farmer/brewery/steam machines)\
