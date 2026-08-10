@@ -647,10 +647,536 @@ ServerEvents.recipes(event => { // this probably isnt destructive
             { amount: 8000, fluid: mi('neutronium') },
         ]
     );
+
+    // -- AE2 HV -- // eventually swap some recipes that use glass to use borosilicate?
+
+    // -- CONTROLLER -- //
+    event
+        .shaped(ae('controller'), ['EFE', 'CHC', 'LFP'], {
+            E: ae('engineering_processor'),
+            F: ae('fluix_crystal'),
+            C: mi('digital_circuit'),
+            H: mi('turbo_machine_hull'),
+            L: ae('logic_processor'),
+            P: ae('calculation_processor'),
+        })
+        .id('statech:ae2/controller');
+
+    // -- CHARGER -- //
+    event
+        .shaped(ae('charger'), ['SCS', 'B  ', 'SCS'], {
+            S: mi('stainless_steel_large_plate'),
+            C: mi('kanthal_wire'),
+            B: mi('sodium_battery'),
+        })
+        .id('statech:ae2/charger');
+
+    // -- BLANK PATTERN -- //
+    event
+        .shaped(ae('blank_pattern'), ['QGQ', 'GCG', 'SSS'], { // change to PBI eventually
+            Q: ae('quartz_glass'),
+            G: '#c:dusts/glowstone',
+            C: '#c:gems/certus_quartz',
+            S: '#c:plates/polytetrafluoroethylene',
+        })
+        .id('statech:ae2/blank_pattern');
+
+    // -- CRYSTAL RESONANCE GENERATOR -- //
+    event
+        .shaped(ae('crystal_resonance_generator'), ['ACA', 'FHF', 'AEA'], { //default mv
+            A: '#c:plates/stainless_steel',
+            C: mi('cupronickel_coil'),
+            F: ae('fluix_block'),
+            H: mi('turbo_machine_hull'),
+            E: ae('engineering_processor'),
+        })
+        .id('statech:ae2/crystal_resonance_generator');
+
+    // -- ME QUANTUM RING -- //
+    event
+        .shaped(ae('quantum_ring'), ['SLS', 'ECF', 'SLS'], { //default mv
+            S: '#c:plates/stainless_steel',
+            L: ae('logic_processor'),
+            E: ae('engineering_processor'),
+            C: ae('energy_cell'),
+            F: '#ae2:smart_dense_cable',
+        })
+        .id('statech:ae2/quantum_ring');
+
+    // -- SPATIAL IO PORT -- //
+    event
+        .shaped(ae('spatial_io_port'), ['GGG', 'FIF', 'SES'], {
+            S: '#c:plates/stainless_steel',
+            G: '#c:glass_blocks',
+            F: ae('fluix_glass_cable'),
+            I: ae('io_port'),
+            E: ae('engineering_processor'),
+        })
+        .id('statech:ae2/spatial_io_port');
+
+    // -- ME DRIVE -- //
+    event
+        .shaped(ae('drive'), ['SES', 'FHF', 'SES'], {
+            S: mi('stainless_steel_large_plate'),
+            H: mi('turbo_machine_hull'),
+            E: ae('engineering_processor'),
+            F: ae('fluix_glass_cable'),
+        })
+        .id('statech:ae2/drive');
+
+    // -- ME CHEST -- //
+    event
+        .shaped(ae('chest'), ['GTG', 'F F', 'SCS'], {
+            G: '#c:glass_blocks',
+            T: ae('terminal'),
+            F: ae('fluix_glass_cable'),
+            S: '#c:plates/stainless_steel',
+            C: '#c:plates/annealed_copper',
+        })
+        .id('statech:ae2/chest');
+
+    // -- ME INTERFACE -- //
+    event
+        .shaped(ae('interface'), ['SGS', 'A F', 'SGS'], {
+            S: '#c:plates/stainless_steel',
+            G: '#c:glass_blocks',
+            A: ae('annihilation_core'),
+            F: ae('formation_core'),
+        })
+        .id('statech:ae2/interface');
+
+    // -- CELL WORKBENCH -- //
+    event
+        .shaped(ae('cell_workbench'), ['WCW', 'SHS', 'SSS'], {
+            W: '#minecraft:wool',
+            C: ae('calculation_processor'),
+            S: '#c:plates/stainless_steel',
+            H: '#c:chests/wooden',
+        })
+        .id('statech:ae2/cell_workbench');
+
+    // -- ME IO PORT -- //
+    event
+        .shaped(ae('io_port'), ['GGG', 'DFD', 'SLS'], {
+            G: '#c:glass_blocks',
+            D: ae('drive'),
+            F: ae('fluix_glass_cable'),
+            S: '#c:plates/stainless_steel',
+            L: ae('logic_processor'),
+        })
+        .id('statech:ae2/io_port');
+
+    // -- MATTER CONDENSER -- //
+    event
+        .shaped(ae('condenser'), ['SGS', 'GFG', 'SGS'], { //default mv
+            S: '#c:plates/stainless_steel',
+            G: '#c:glass_blocks',
+            F: ae('fluix_dust'),
+        })
+        .id('statech:ae2/condenser');
+
+    // -- ENERGY ACCEPTOR -- //
+    event
+        .shaped(ae('energy_acceptor'), ['SGS', 'GCG', 'SGS'], {
+            S: '#c:plates/stainless_steel',
+            G: ae('quartz_glass'),
+            C: '#c:plates/annealed_copper',
+        })
+        .id('statech:ae2/energy_acceptor');
+
+    // -- CRYSTAL GROWTH ACCELERATOR -- //
+    event
+        .shaped(ae('growth_accelerator'), ['SFS', 'GBG', 'SFS'], {
+            S: '#c:plates/stainless_steel',
+            F: ae('fluix_glass_cable'),
+            G: ae('quartz_glass'),
+            B: ae('fluix_block'),
+        })
+        .id('statech:ae2/growth_accelerator');
+
+    // -- CRAFTING UNIT -- //
+    event
+        .shaped(ae('crafting_unit'), ['SCS', 'FLF', 'SCS'], { // default mv
+            S: '#c:plates/stainless_steel',
+            C: ae('calculation_processor'),
+            F: ae('fluix_glass_cable'),
+            L: ae('logic_processor'),
+        })
+        .id('statech:ae2/crafting_unit');
+
+    // -- ME PATTERN PROVIDER -- //
+    event
+        .shaped(ae('pattern_provider'), ['SCS', 'A F', 'SCS'], {// default mv
+            S: '#c:plates/stainless_steel',
+            C: '#c:player_workstations/crafting_tables',
+            A: ae('annihilation_core'),
+            F: ae('formation_core'),
+        })
+        .id('statech:ae2/pattern_provider');
+
+    // -- MOLECULAR ASSEMBLER -- //
+    event
+        .shaped(ae('molecular_assembler'), ['SGS', 'AWF', 'SGS'], {// default mv
+            S: '#c:plates/stainless_steel',
+            G: ae('quartz_glass'),
+            A: ae('annihilation_core'),
+            W: mi('turbo_machine_hull'),
+            F: ae('formation_core'),
+        })
+        .id('statech:ae2/molecular_assembler');
+
+    // -- SPATIAL ANCHOR -- //
+    event
+        .shaped(ae('spatial_anchor'), ['PPP', 'FCF', 'SES'], {
+            P: ae('spatial_pylon'),
+            F: ae('fluix_glass_cable'),
+            C: ae('spatial_cell_component_128'),
+            S: '#c:plates/stainless_steel',
+            E: ae('engineering_processor'),
+        })
+        .id('statech:ae2/spatial_anchor');
+
+    // -- ENTROPY MANIPULATOR -- //
+    event
+        .shaped(ae('entropy_manipulator'), ['FC ', 'ES ', '  S'], { //default mv
+            F: ae('fluix_crystal'),
+            C: ae('energy_cell'),
+            E: ae('engineering_processor'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/entropy_manipulator');
+
+    // -- CHARGED STAFF -- //
+    event
+        .shaped(ae('charged_staff'), ['C  ', ' S ', '  S'], { //default mv
+            C: ae('charged_certus_quartz_crystal'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/charged_staff');
+
+    // -- COLOR APPLICATOR -- //
+    event
+        .shaped(ae('color_applicator'), ['FS ', 'SC ', '  E'], {//default mv
+            F: ae('formation_core'),
+            S: '#c:plates/stainless_steel',
+            C: ae('cell_component_4k'),
+            E: ae('energy_cell'),
+        })
+        .id('statech:ae2/color_applicator');
+
+    // -- MATTER CANNON -- //
+    event
+        .shaped(ae('matter_cannon'), ['SSF', 'CE ', 'S  '], {//default mv
+            S: '#c:plates/stainless_steel',
+            F: ae('formation_core'),
+            C: ae('cell_component_4k'),
+            E: ae('energy_cell'),
+        })
+        .id('statech:ae2/matter_cannon');
+
+    // -- BASIC CARD -- //
+    event
+        .shaped('2x ' + ae('basic_card'), ['GS ', 'RCS', 'GS '], {
+            G: '#c:ingots/gold',
+            S: '#c:plates/stainless_steel',
+            R: '#c:dusts/redstone',
+            C: ae('calculation_processor'),
+        })
+        .id('statech:ae2/basic_card');
+
+    // -- ADVANCED CARD -- //
+    event
+        .shaped('2x ' + ae('advanced_card'), ['DS ', 'RCS', 'DS '], {
+            D: '#c:gems/diamond',
+            S: '#c:plates/stainless_steel',
+            R: '#c:dusts/redstone',
+            C: ae('calculation_processor'),
+        })
+        .id('statech:ae2/advanced_card');
+
+    // -- ME ITEM CELL HOUSING -- //
+    event
+        .shaped(ae('item_cell_housing'), ['GRG', 'R R', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/item_cell_housing');
+
+    // -- WIRELESS RECEIVER -- //
+    event
+        .shaped(ae('wireless_receiver'), [' F ', 'SQS', ' S '], {//default mv
+            F: ae('fluix_pearl'),
+            S: '#c:plates/stainless_steel',
+            Q: ae('quartz_fiber'),
+        })
+        .id('statech:ae2/wireless_receiver');
+
+    // -- WIRELESS BOOSTER -- //
+    event
+        .shaped('2x ' + ae('wireless_booster'), ['FQE', 'SSS'], {//default mv
+            F: ae('fluix_dust'),
+            Q: '#c:gems/certus_quartz',
+            E: ae('ender_dust'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/wireless_booster');
+
+    // -- VIEW CELL -- //
+    event
+        .shaped(ae('view_cell'), ['GRG', 'RQR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            Q: '#c:gems/certus_quartz',
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/network/cells/view_cell');
+
+    // -- 1K ME ITEM STORAGE CELL -- //
+    event
+        .shaped(ae('item_storage_cell_1k'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('cell_component_1k'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/item_storage_cell_1k');
+
+    // -- 4K ME ITEM STORAGE CELL -- //
+    event
+        .shaped(ae('item_storage_cell_4k'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('cell_component_4k'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/item_storage_cell_4k');
+
+    // -- 16K ME ITEM STORAGE CELL -- //
+    event
+        .shaped(ae('item_storage_cell_16k'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('cell_component_16k'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/item_storage_cell_16k');
+
+    // -- 64K ME ITEM STORAGE CELL -- //
+    event
+        .shaped(ae('item_storage_cell_64k'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('cell_component_64k'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/item_storage_cell_64k');
+
+    // -- 256K ME ITEM STORAGE CELL -- //
+    event
+        .shaped(ae('item_storage_cell_256k'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('cell_component_256k'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/item_storage_cell_256k');
+
+    // -- ME FLUID CELL HOUSING -- //
+    event
+        .shaped(ae('fluid_cell_housing'), ['GRG', 'R R', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            S: '#c:plates/annealed_copper',
+        })
+        .id('statech:ae2/fluid_cell_housing');
+
+    // -- 1K ME FLUID STORAGE CELL -- //
+    event
+        .shaped(ae('fluid_storage_cell_1k'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('cell_component_1k'),
+            S: '#c:plates/annealed_copper',
+        })
+        .id('statech:ae2/fluid_storage_cell_1k');
+
+    // -- 4K ME FLUID STORAGE CELL -- //
+    event
+        .shaped(ae('fluid_storage_cell_4k'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('cell_component_4k'),
+            S: '#c:plates/annealed_copper',
+        })
+        .id('statech:ae2/fluid_storage_cell_4k');
+
+    // -- 16K ME FLUID STORAGE CELL -- //
+    event
+        .shaped(ae('fluid_storage_cell_16k'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('cell_component_16k'),
+            S: '#c:plates/annealed_copper',
+        })
+        .id('statech:ae2/fluid_storage_cell_16k');
+
+    // -- 64K ME FLUID STORAGE CELL -- //
+    event
+        .shaped(ae('fluid_storage_cell_64k'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('cell_component_64k'),
+            S: '#c:plates/annealed_copper',
+        })
+        .id('statech:ae2/fluid_storage_cell_64k');
+
+    // -- 256K ME FLUID STORAGE CELL -- //
+    event
+        .shaped(ae('fluid_storage_cell_256k'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('cell_component_256k'),
+            S: '#c:plates/annealed_copper',
+        })
+        .id('statech:ae2/fluid_storage_cell_256k');
+
+    // -- 2^3 SPATIAL STORAGE CELL -- //
+    event
+        .shaped(ae('spatial_storage_cell_2'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('spatial_cell_component_2'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/spatial_storage_cell_2');
+
+    // -- 16^3 SPATIAL STORAGE CELL -- //
+    event
+        .shaped(ae('spatial_storage_cell_16'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('spatial_cell_component_16'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/spatial_storage_cell_16');
+
+    // -- 128^3 SPATIAL STORAGE CELL -- //
+    event
+        .shaped(ae('spatial_storage_cell_128'), ['GRG', 'RCR', 'SSS'], {
+            G: ae('quartz_glass'),
+            R: '#c:dusts/redstone',
+            C: ae('spatial_cell_component_128'),
+            S: '#c:plates/stainless_steel',
+        })
+        .id('statech:ae2/spatial_storage_cell_128');
+
+    // -- ILLUMINATED PANEL -- //
+    event
+        .shaped(ae('semi_dark_monitor'), [' GQ', 'SRQ', ' GQ'], {
+            G: '#c:dusts/glowstone',
+            Q: ae('quartz_glass'),
+            S: '#c:platesstainless_steel',
+            R: '#c:dusts/redstone',
+        })
+        .id('statech:ae2/semi_dark_monitor');
+
+    // -- ANNIHILATION PLANE -- //
+    event
+        .shaped(ae('annihilation_plane'), ['SF', 'AF', 'SF'], {
+            S: '#c:plates/stainless_steel',
+            F: ae('fluix_crystal'),
+            A: ae('annihilation_core'),
+        })
+        .id('statech:ae2/annihilation_plane');
+
+    event
+        .shaped(ae('annihilation_plane'), ['FFF', 'SAS'], {
+            S: '#c:plates/stainless_steel',
+            F: ae('fluix_crystal'),
+            A: ae('annihilation_core'),
+        })
+        .id('statech:ae2/annihilation_plane_alt');
+
+    // -- FORMATION PLANE -- //
+    event
+        .shaped(ae('formation_plane'), ['SF', 'AF', 'SF'], {
+            S: '#c:plates/stainless_steel',
+            F: ae('fluix_crystal'),
+            A: ae('formation_core'),
+        })
+        .id('statech:ae2/formation_plane');
+
+    event
+        .shaped(ae('formation_plane'), ['FFF', 'SAS'], {
+            S: '#c:plates/stainless_steel',
+            F: ae('fluix_crystal'),
+            A: ae('formation_core'),
+        })
+        .id('statech:ae2/formation_plane_alt');
+
+    // -- IMPORT BUS -- //
+    event
+        .shaped(ae('import_bus'), [' A ', 'SPS'], {
+            A: ae('annihilation_core'),
+            S: '#c:plates/stainless_steel',
+            P: mc('sticky_piston'),
+        })
+        .id('statech:ae2/import_bus');
+
+    // -- EXPORT BUS -- //
+    event
+        .shaped(ae('export_bus'), ['SFS', ' P '], {
+            S: '#c:plates/stainless_steel',
+            F: ae('formation_core'),
+            P: mc('piston'),
+        })
+        .id('statech:ae2/export_bus');
+
+    // -- ME P2P TUNNEL -- //
+    event
+        .shaped(ae('me_p2p_tunnel'), [' S ', 'SES', 'FFF'], {
+            S: '#c:plates/stainless_steel',
+            E: ae('engineering_processor'),
+            F: ae('fluix_crystal'),
+        })
+        .id('statech:ae2/me_p2p_tunnel');
+
+    // -- MAGNET CARD -- //
+    event
+        .shaped(wt('magnet_card'), ['RAL', 'ICI', 'III'], {
+            R: '#c:storage_blocks/redstone',
+            L: '#c:storage_blocks/lapis',
+            A: ae('annihilation_plane'),
+            C: ae('advanced_card'),
+            I: '#c:storage_blocks/stainless_steel',
+        })
+        .id('statech:ae2/magnet_card');
+
+    // -- DENSE ENERGY CELL -- //
+    event
+        .shaped(ae('dense_energy_cell'), ['EEE', 'EHE', 'EEE'], {//default mv
+            E: ae('energy_cell'),
+            H: mi('turbo_machine_hull'),
+        })
+        .id('statech:ae2/dense_energy_cell');
+
+    // -- NETWORK ANALYZER -- //
+    event
+        .shaped('ae2netanalyser:network_analyser', ['BAB', 'SHS', 'DSD'], {//default mv
+            B: mi('aluminum_plate'),
+            A: mi('titanium_plate'),
+            S: mi('stainless_steel_plate'),
+            H: ae('logic_processor'),
+            D: ae('sky_dust'),
+        })
+        .id('statech:ae2/network_analyzer');
+
 }) 
 
 // bullshittium stuff outside of this file:
 /*
 ui stuff (handled by mode switcher)
 quantum armor wraps (handled by bullshittium_startup.js)
+everlasting beef/steak healing 0 hunger (also startup script)
 */
