@@ -7,12 +7,11 @@ me
 extensive early game create requirements\
 tiered armor/tools\
 pre 1.1 worldshaper recipe
+make food a required challenge \
+  -take everlasting steak out back and shoot it\
+  -outright disable the auto feeding backpack item because canned food is cool
 
 # Priority List:
-force non-peaceful difficulty (might be extreme) with intent of making food a required challenge \
-  -take everlasting steak out back and shoot it\
-  -heavily gate or outright disable the auto feeding backpack item because canned food is cool\
-
 dumb gt small dust lathe recipe in cutting machine\
   -unsure yet if i can change the cutting machine gui to have two outputs or if i should just make a lathe machine\
 restore ae2 hv gating (:gregtroll:)\
