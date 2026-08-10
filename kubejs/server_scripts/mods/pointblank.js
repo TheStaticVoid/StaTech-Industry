@@ -8,7 +8,16 @@ ServerEvents.recipes((event) => {
     let st = (id) => `statech:pointblank/${id}`;
 
     // -- POINT BLANK REMOVED REICPES -- //
-    event.remove({ mod: 'pointblank' });
+    const POINTBLANK_REMOVED_RECIPES = [
+        pb('gunmetal_mesh'),
+        pb('processor'),
+        pb('printer'),
+        pb('gunmetal_ingot_from_smelting_gunmetal_mesh'),
+        pb('gunmetal_ingot_from_blasting_gunmetal_mesh'),
+        pb('guninternals'),
+    ];
+    POINTBLANK_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
+    event.remove({ type: pb('printer') });
     // -------------------//
     // ----- SHAPED ----- //
     // -------------------//
@@ -41,6 +50,19 @@ ServerEvents.recipes((event) => {
     // --------------------//
     // ---- ASSEMBLER ---- //
     // --------------------//
+
+    // -- GUN INTERNALS -- //
+    assembler(
+        event,
+        st('gun_internals_assembler'),
+        8,
+        200,
+        [
+            { amount: 3, item: pb('gunmetal_ingot') },
+            { amount: 2, item: mi('steel_plate') },
+        ],
+        [{ amount: 1, item: pb('guninternals') }]
+    );
 
     // -- KAMICAT PROCESSOR -- //
     assembler(
