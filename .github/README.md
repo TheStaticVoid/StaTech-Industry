@@ -10,12 +10,12 @@ pre 1.1 worldshaper recipe
 make food a required challenge \
   -take everlasting steak out back and shoot it\
   -outright disable the auto feeding backpack item because canned food is cool
+restore ae2 hv gating (:gregtroll:)\
+  -all ae2 features will probably just be stainless/digital gated
 
 # Priority List:
 dumb gt small dust lathe recipe in cutting machine\
   -unsure yet if i can change the cutting machine gui to have two outputs or if i should just make a lathe machine\
-restore ae2 hv gating (:gregtroll:)\
-  -all ae2 features will probably just be stainless/digital gated\
   
 ## General TODO:
 more fusion stuff\
