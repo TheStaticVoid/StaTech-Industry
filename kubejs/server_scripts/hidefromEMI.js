@@ -133,9 +133,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         /^modern_industrialization:.*(cobalt).*/,
     ];
     UNUSED_DEV.forEach((id) => event.remove(id));
-
-    const UNUSED_PB = [pb('printer')];
-    UNUSED_PB.forEach((id) => event.remove(id));
 });
 
 RecipeViewerEvents.removeEntriesCompletely('fluid', (event) => {
