@@ -38,6 +38,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     };
 
     // -- ARMOR REMOVALS -- //
+    // this removes the netherite ingot + appropriate armor piece, must use full netherite armor pieces
 
     event.remove({ id: cr('crafting/appliances/netherite_diving_helmet') })
     event.remove({ id: cr('crafting/appliances/netherite_backtank') })
@@ -1172,6 +1173,25 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         })
         .id('statech:ae2/network_analyzer');
 
+    // -- BULLSHITTUM LINE -- //
+
+    electrolyzer(
+        event,
+        st('bullshittium_21'),
+        32,
+        800,
+        [{ amount: 23, item: kj('uu_matter') }],
+        [
+            { amount: 3, item: mi('aluminum_dust') },
+            { amount: 8, item: mi('iron_dust') },
+            { amount: 4, item: mi('copper_dust') },
+            { amount: 1, item: mi('tungsten_tiny_dust') }
+        ],
+        null,
+        [
+            { amount: 7889, fluid: mi('hydrogen') }
+        ]
+    );
 }) 
 
 // bullshittium stuff outside of this file:
