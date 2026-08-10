@@ -1277,6 +1277,40 @@ let vacuumFreezer = (
         .id(id);
 };
 
+// -- WEAPONS FACTORY -- //
+/**
+ * Weapons Factory
+ * @param {!string} event
+ * @param {!string} id - Recipe ID
+ * @param {!number} eu - Recipe eu/t
+ * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ */
+let weaponsFactory = (
+    event,
+    id,
+    eu,
+    duration,
+    item_inputs,
+    item_outputs,
+    fluid_inputs
+) => {
+    event
+        .custom(
+            newMachineRecipe(
+                mi('weapons_factory'),
+                eu,
+                duration,
+                item_inputs,
+                item_outputs,
+                fluid_inputs
+            )
+        )
+        .id(id);
+};
+
 // -- WIREMILL -- //
 /**
  * Wiremill

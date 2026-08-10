@@ -8,16 +8,7 @@ ServerEvents.recipes((event) => {
     let st = (id) => `statech:pointblank/${id}`;
 
     // -- POINT BLANK REMOVED REICPES -- //
-    const POINTBLANK_REMOVED_RECIPES = [
-        pb('gunmetal_mesh'),
-        pb('processor'),
-        pb('printer'),
-        pb('gunmetal_ingot_from_smelting_gunmetal_mesh'),
-        pb('gunmetal_ingot_from_blasting_gunmetal_mesh'),
-        pb('guninternals'),
-    ];
-    POINTBLANK_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
-
+    event.remove({ mod: 'pointblank' });
     // -------------------//
     // ----- SHAPED ----- //
     // -------------------//
@@ -29,15 +20,6 @@ ServerEvents.recipes((event) => {
             S: mi('steel_plate'),
         })
         .id(st('gun_internals'));
-
-    // -- WEAPON PRINTER -- //
-    event
-        .shaped(pb('printer'), ['GGG', 'PCP', 'GGG'], {
-            G: pb('gunmetal_ingot'),
-            P: '#c:glass_panes',
-            C: pb('processor'),
-        })
-        .id(st('weapon_printer'));
 
     // ----------------------//
     // --- ALLOY SMELTER --- //
