@@ -37,3 +37,19 @@ StartupEvents.registry('item', (event) => {
         //.maxStackSize = 16
         .tooltip('Four Sabers');
 });
+
+ItemEvents.modification(event => {
+    event.modify('artifacts:everlasting_beef', item => {
+        item.setFood({
+            saturation: 0,
+            nutrition: 0
+        });
+    })
+
+    event.modify('artifacts:eternal_steak', item => {
+        item.setFood({
+            saturation: 0,
+            nutrition: 0
+        });
+    })
+})

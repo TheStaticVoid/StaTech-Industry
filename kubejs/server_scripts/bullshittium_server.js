@@ -1,4 +1,4 @@
-// priority: -1000000
+// priority: -10000000
 // Hello, you have reached Script Hell
 
 ServerEvents.recipes(event => { // this probably isnt destructive
@@ -436,6 +436,18 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         ],
         [{ amount: 1, item: 'extended_industrialization:ultimate_laser_drill' }]
     );
+
+    // -- FOOD SCRIPTS -- //
+
+    event.remove({ output: 'sophisticatedstorage:feeding_upgrade' })
+    event.remove({ output: 'sophisticatedstorage:advanced_feeding_upgrade' })
+    event.remove({ output: 'sophisticatedbackpacks:advanced_feeding_upgrade' })
+    event.remove({ output: 'sophisticatedbackpacks:feeding_upgrade' })
+
+    event.shapeless(('sophisticatedbackpacks:feeding_upgrade'), [
+        '1x ' + kj('bartman')
+    ])
+    .id('statech:sophisticatedbackpacks/feeding_upgrade');
 
     // -- ENDGAME RECIPES -- //
 
