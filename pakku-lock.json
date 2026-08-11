@@ -5925,7 +5925,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "LibX-1.21.1-6.0.13.jar",
+                    "file_name": "LibX-1.21.1-6.0.14.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -5933,16 +5933,16 @@
                         "neoforge"
                     ],
                     "release_type": "alpha",
-                    "url": "https://edge.forgecdn.net/files/7915/532/LibX-1.21.1-6.0.13.jar",
-                    "id": "7915532",
+                    "url": "https://edge.forgecdn.net/files/8625/426/LibX-1.21.1-6.0.14.jar",
+                    "id": "8625426",
                     "parent_id": "412525",
                     "hashes": {
-                        "sha1": "ea439be8d359a4210f66e84f0457d8b3e93a2922",
-                        "md5": "591704087bfe89c8e5cd7ad6483201bc"
+                        "sha1": "7234f2428e742134f2948eacd9cd6f8a4b73eff0",
+                        "md5": "1f27f3072ea0056d69144ba19586821f"
                     },
                     "required_dependencies": [],
-                    "size": 1262251,
-                    "date_published": "2026-04-12T13:06:29.983Z"
+                    "size": 1262250,
+                    "date_published": "2026-08-11T17:06:04.883Z"
                 }
             ]
         },
@@ -8688,7 +8688,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "spectrum-1.12.1-1.21.1-neo.jar",
+                    "file_name": "spectrum-1.12.2-1.21.1-neo.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -8696,20 +8696,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8577/0/spectrum-1.12.1-1.21.1-neo.jar",
-                    "id": "8577000",
+                    "url": "https://edge.forgecdn.net/files/8625/493/spectrum-1.12.2-1.21.1-neo.jar",
+                    "id": "8625493",
                     "parent_id": "556967",
                     "hashes": {
-                        "sha1": "a1dd8006d158b6f1e55c5be0ac0bc9d3f175167c",
-                        "md5": "530ccd8851dfb25f9d6b8baf44dc02ea"
+                        "sha1": "39cef20f3a3727f9e5203b00766775fc29f53868",
+                        "md5": "930e3fcca60b0db1d45f271d95939f54"
                     },
                     "required_dependencies": [
                         "538392",
+                        "309927",
+                        "341284",
                         "656526",
-                        "309927"
+                        "348521",
+                        "306612"
                     ],
-                    "size": 88605192,
-                    "date_published": "2026-08-04T16:59:49.500Z"
+                    "size": 88598891,
+                    "date_published": "2026-08-11T17:14:15.100Z"
                 }
             ]
         },
