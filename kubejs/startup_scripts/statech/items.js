@@ -405,6 +405,10 @@ StartupEvents.registry('item', (event) => {
         .create('silicon_extremely_p_doped_plate')
         .displayName('Extremely P-Doped Silicon Plate');
 
+    event
+        .create('battery_casing')
+        .displayName('Battery Casing');
+
     // -- BRONZE EQUIPMENT -- //
 
     event
