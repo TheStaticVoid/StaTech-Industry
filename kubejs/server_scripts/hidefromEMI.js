@@ -133,6 +133,13 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         /^modern_industrialization:.*(cobalt).*/,
     ];
     UNUSED_DEV.forEach((id) => event.remove(id));
+
+    const UNUSED_ADVANCED_PERIPHERALS = [
+        adp('computer_tool'),
+        adp('colony_integrator'),
+        adp('rs_bridge'),
+    ];
+    UNUSED_ADVANCED_PERIPHERALS.forEach((id) => event.remove(id));
 });
 
 RecipeViewerEvents.removeEntriesCompletely('fluid', (event) => {
