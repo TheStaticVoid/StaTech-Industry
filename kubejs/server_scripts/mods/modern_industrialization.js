@@ -467,6 +467,16 @@ ServerEvents.recipes((event) => {
             E: mi('electronic_circuit'),
         })
         .id(st('recycler'));
+
+    // -- MATTER FABRICATOR -- //
+    event
+        .shaped(mi('matter_fabricator'), ['SDS', 'MHM', 'SDS'], {
+            M: mi('advanced_motor'),
+            S: kj('scrap'),
+            H: mi('turbo_machine_hull'),
+            D: mi('digital_circuit'),
+        })
+        .id(st('matter_fabricator'));
 });
 
 ServerEvents.tags('item', (event) => {

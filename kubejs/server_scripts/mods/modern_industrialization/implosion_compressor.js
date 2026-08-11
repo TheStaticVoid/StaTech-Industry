@@ -48,10 +48,10 @@ ServerEvents.recipes((event) => {
     implosionCompressor(
         event,
         st('uu_matter'),
-        64,
-        20,
+        32,
+        10,
         [
-            { amount: 64, item: kj('scrap') },
+            { amount: 24, item: kj('scrap') },
             { amount: 1, item: mi('industrial_tnt') },
         ],
         [{ amount: 1, item: kj('uu_matter') }]

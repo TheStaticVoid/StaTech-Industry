@@ -37,6 +37,21 @@ ServerEvents.recipes((event) => {
     ];
     REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
+    // -- MATTER FABRICATOR -- //
+    assembler(
+        event,
+        st('matter_fabricator'),
+        8,
+        200,
+        [
+            { amount: 4, item: kj('scrap') },
+            { amount: 2, item: mi('advanced_motor') },
+            { amount: 2, item: mi('digital_circuit') },
+            { amount: 1, item: mi('turbo_machine_hull') },
+        ],
+        [{ amount: 1, item: mi('matter_fabricator') }]
+    );
+
     // -- RECYCLER -- //
     assembler(
         event,
