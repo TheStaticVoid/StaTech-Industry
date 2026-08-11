@@ -34,6 +34,7 @@ command_history.txt
 TrashSlotSaveState.json
 cache/c2me-dfc/*
 ftbbackups3/
+tacz/
 
 modern_industrialization/runtime_datagen/
 
@@ -279,6 +280,11 @@ config/sodium-extra.properties
 ftbbackups3/backups.json
 config/better_tab/*
 config/craft_config/*
+config/drippyloadingscreen/early_window_reference.properties
+config/ftblibrary-client.snbt
+config/ftbchunks-client.snbt
+config/fml.toml
+config/tacz-pre.toml
 
 # Linux
 *~
@@ -302,8 +308,4 @@ servers.dat
 servers.dat_old
 .gitignore
 dynamic-resource-pack-cache/hash.txt
-config/drippyloadingscreen/early_window_reference.properties
 
-config/ftblibrary-client.snbt
-config/ftbchunks-client.snbt
-config/fml.toml

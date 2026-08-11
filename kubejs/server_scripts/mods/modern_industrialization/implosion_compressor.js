@@ -40,8 +40,9 @@ ServerEvents.recipes((event) => {
         [
             { amount: 2, item: mi('acrylonitrile_butadiene_styrene_dust') },
             { amount: 1, item: mc('red_dye') },
+            { amount: 1, item: mi('industrial_tnt') },
         ],
-        [{ amount: 1, item: kj('abs_building_brick') }]
+        [{ amount: 8, item: kj('abs_building_brick') }]
     );
 
     // -- UU MATTER -- //
