@@ -1,0 +1,115 @@
+[Misc]
+	#Whether zombies and drowned burn in sunlight.
+	zombiesBurn = false
+	#Whether skeletons and strays burn in sunlight.
+	skeletonsBurn = false
+	#Whether zombie villagers have vanilla curing mechanics or not
+	zombieVillagersCanBeCured = false
+	#Whether piglins and hoglins automatically convert to zombies in the overworld
+	piglinsHoglinsConvert = false
+	#Whether zombie horses are aggressive or not.
+	aggressiveZombieHorses = true
+	#Whether zombie horses burn in sunlight.
+	zombieHorsesBurn = false
+	#Whether skeleton horses burn in sunlight.
+	skeletonHorsesBurn = false
+	#Whether unmounted horses are scared of zombies.
+	zombiesScareHorses = true
+	#Whether zombie piglins are hostile by default
+	zombiePiglinsHostile = true
+	#Whether piglins kill zombie mobs
+	piglinsHuntZombies = true
+	#Whether piglins use cures they find and keep in their inventory to heal infection.
+	piglinsCureThemself = true
+	#Whether illagers kill zombie mobs
+	illagersHuntZombies = true
+	#Whether zoglins are agressive towards other undead mobs
+	zoglinsAttackUndead = false
+	#Whether zoglins are agressive towards non-undead monsters
+	zoglinsAttackMobs = true
+
+["Horde Event"]
+	#Set to false to completely disable the horde event and anything relating to it.
+	enableHordeEvent = true
+	#Set to true to disable natural horde spawns (hordes can only be spawned with commands).
+	hordesCommandOnly = false
+	#Amount of mobs to spawn per wave.
+	spawnAmount = 15
+	#Multiplier by which the spawn amount increases by each time the event naturally spawns. (Set to 1 to disable scaling.)
+	hordeSpawnMultiplier = 1.05
+	#Time in ticks the event lasts for
+	hordeSpawnDuration = 6000
+	#Time in ticks between spawns for the horde spawn event.
+	hordeSpawnInterval = 600
+	#What time of day does the horde event start? eg 18000 is midnight with default day length.
+	hordeStartTime = 13000
+	#Amount of days between horde spawns.
+	# Default: 10
+	# Range: > 1
+	hordeSpawnDays = 3
+	#Amount of days a horde event can be randomly delayed by
+	hordeSpawnVariation = 0
+	#Max cap for the number of entities that can exist from the horde at once.
+	hordeSpawnMax = 160
+	#Length of a day (use only if you have another day that changes the length of the day/night cycle) Default is 24000
+	dayLength = 24000
+	#How many ticks does the horde pathing ai take before recalculating? (Increase this if you are having server slowdown during horde events.)
+	hordePathingInterval = 25
+	#How fast do horde mobs move towards their tracked player?
+	hordeEntitySpeed = 1.0
+	#Set to true to enable the horde spawning on the first day. (Game day 0)
+	spawnFirstDay = false
+	#Set to false to disable the use of beds during a horde event.
+	canSleepDuringHorde = false
+	#Does a scheduled horde for an online player prevent other players sleeping?
+	hordePreventsOtherPlayersSleeping = true
+	#How much should the size of each horde scale down by when multiple players are near each other?
+	hordeMultiplayerScaling = 0.8
+	#Do the daylight cycle (and active horde events get paused while there are no players online.).
+	pauseEventServer = true
+	#Are horde events tracked by player play time instead of world time.
+	hordeEventByPlayerTime = true
+	#How many ticks after a hordes scheduled time can it start?
+	hordeStartBuffer = 1200
+	#How many attempts should horde events make to avoid spawning mobs in light areas or outside their spawn type.
+	hordeSpawnChecks = 25
+	#How far away should hordes attempt to spawn?
+	hordeSpawnDistance = 75.0
+
+[Infection]
+	#Set to false to completely disable mob infection and anything related to it.
+	enableMobInfection = true
+	#Can players be infected.
+	infectPlayers = true
+	#Whether later levels of infected should slightly slow movement speed? 
+	infectSlowness = true
+	#Whether later levels of infected should deplete hunger quicker? 
+	infectHunger = true
+	#Base infection resistance of players, corresponds to the percentage to not get infected.
+	playerInfectionResistance = 0.25
+	#How long do each of the 4 effect phases last for before the next phase is activated?
+	ticksForEffectStage = 6000
+	#Do players who die to infection spawn a zombie?
+	infectionSpawnsZombiePlayers = true
+	#Do entities on the infectionEntities list automatically target entities on the infectionConversionList
+	infectionEntitiesAggroConversions = true
+	#What factor should the infection potion effect timer be multiplied by for each cured infection? (Resets on death, set to 1 to disable scaling)
+	effectStageTickReduction = 0.95
+
+["Zombie Players"]
+	#Whether to use zombie players as graves all the time. (Even if infection is disabled)
+	zombieGraves = false
+	#Whether to spawn drowned players when a player dies underwater instead of a zombie player. (Whether the zombie is spawned from infection or zombieGraves being true)
+	drownedPlayers = true
+	#Whether to spawn husk players when a player dies in a desert biome instead of a zombie player. (Whether the zombie is spawned from infection or zombieGraves being true)
+	huskPlayers = true
+	#Whether zombie players, drowned players and husk players should be immune to fire damage
+	zombiePlayersFireImmune = false
+	#Whether zombie players and drowned players burn in sunlight.
+	zombiePlayersBurn = false
+	#Whether zombie players, drowned players and husk players are immune to all damage from non player sources.
+	zombiePlayersOnlyHurtByPlayers = false
+	#Whether zombie players, drowned players and husk players store items dropped by the player that spawned them.
+	zombiePlayersStoreItems = true
+	#Do zombie players despawn in peaceful mode?
+	zombiePlayersDespawnPeaceful = false

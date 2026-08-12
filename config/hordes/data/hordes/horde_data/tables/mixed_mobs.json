@@ -1,0 +1,62 @@
+[
+	"minecraft:zombie-20-0-20",
+	"minecraft:skeleton-10-20-30",
+	"minecraft:spider-15-20-30",
+	"minecraft:creeper-5-30-30",
+	"minecraft:husk-20-30-50",
+	"minecraft:stray-10-40-50",
+	"minecraft:bogged-5-40-50",
+	"minecraft:cave_spider-10-40-50",
+	"minecraft:witch-5-40-50",
+	"minecraft:pillager-10-40-50",
+	"minecraft:zombified_piglin-10-40-50",
+	{
+		"entity": "minecraft:zombie_horse",
+		"weight": 3,
+		"first_day": 40,
+		"last_day": 50,
+		"nbt": "{Passengers:[{id:creeper}]}"
+	},
+	"minecraft:wither_skeleton-10-50-0",
+	"minecraft:phantom-5-50-50",
+	"minecraft:vindicator-10-50-50",
+	"minecraft:zoglin-5-40-40",
+	"minecraft:ravager-5-50-50",
+	"minecraft:evoker-5-50-50",
+	"minecraft:piglin_brute-10-60-0",
+	{
+		"entity": "minecraft:skeleton_horse",
+		"weight": 10,
+		"first_day": 60,
+		"last_day": 0,
+		"nbt": "{Passengers:[{id:stray,HandItems:[{id:bow,Count:1b}]}]}"
+	},
+	{
+		"entity": "minecraft:cave_spider",
+		"weight": 10,
+		"first_day": 60,
+		"last_day": 0,
+		"nbt": "{Passengers:[{id:bogged,HandItems:[{id:bow,Count:1b}]}]}"
+	},
+	{
+		"entity": "minecraft:zombie_horse",
+		"weight": 5,
+		"first_day": 60,
+		"last_day": 0,
+		"nbt": "{Passengers:[{id:drowned,HandItems:[{id:trident,Count:1b}]}]}"
+	},
+	{
+		"entity": "minecraft:ravager",
+		"weight": 3,
+		"first_day": 60,
+		"last_day": 0,
+		"nbt": "{Passengers:[{id:evoker}]}"
+	},
+	{
+		"entity": "minecraft:phantom",
+		"weight": 3,
+		"first_day": 60,
+		"last_day": 0,
+		"nbt": "{Passengers:[{id:creeper,powered:1}]}"
+	}
+]

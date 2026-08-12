@@ -1,0 +1,64 @@
+[
+	{
+		"entity": "minecraft:villager",
+		"converts_to": "minecraft:zombie_villager",
+		"protection": 0.15
+	},
+	{
+		"entity": "minecraft:horse",
+		"converts_to": "minecraft:zombie_horse",
+		"protection": 0.35
+	},
+	{
+		"entity": "minecraft:piglin",
+		"converts_to": "minecraft:zombified_piglin",
+		"protection": 0.15
+	},
+	{
+		"entity": "minecraft:piglin_brute",
+		"converts_to": "minecraft:zombified_piglin",
+		"protection": 0.65,
+		"nbt": "{Attributes:[{Name:\"generic.max_health\",Base:50f}], texture:\"hordes:textures/entity/zombified_piglin_brute.png\", chat_name:\"entity.hordes.ZombifiedPiglinBrute.name\"}"
+	},
+	{
+		"entity": "minecraft:hoglin",
+		"converts_to": "minecraft:zoglin",
+		"protection": 0.85
+	},
+	{
+		"entity": "minecraft:wandering_trader",
+		"converts_to": "minecraft:zombie_villager",
+		"protection": 0.15,
+		"nbt": "{texture:\"hordes:textures/entity/zombie_wandering_trader.png\", chat_name:\"entity.hordes.ZombieWanderingTrader.name\", VillagerData:{type:none}}"
+	},
+	{
+		"entity": "minecraft:pillager",
+		"converts_to": "minecraft:zombie_villager",
+		"protection": 0.15,
+		"nbt": "{Attributes:[{Name:\"generic.max_health\",Base:24f}], texture:\"hordes:textures/entity/zombie_pillager.png\", chat_name:\"entity.hordes.ZombiePillager.name\", VillagerData:{type:none}}"
+	},
+	{
+		"entity": "minecraft:vindicator",
+		"converts_to": "minecraft:zombie_villager",
+		"protection": 0.65,
+		"nbt": "{Attributes:[{Name:\"generic.max_health\",Base:24f}], texture:\"hordes:textures/entity/zombie_vindicator.png\", chat_name:\"entity.hordes.ZombieVindicator.name\", VillagerData:{type:none}}"
+	},
+	{
+		"entity": "minecraft:evoker",
+		"converts_to": "minecraft:zombie_villager",
+		"protection": 0.5,
+		"nbt": "{Attributes:[{Name:\"generic.max_health\",Base:24f}], texture:\"hordes:textures/entity/zombie_evoker.png\", chat_name:\"entity.hordes.ZombieEvoker.name\", VillagerData:{type:none}}"
+	},
+	{
+		"entity": "minecraft:illusioner",
+		"converts_to": "minecraft:zombie_villager",
+		"protection": 0.6,
+		"nbt": "{Attributes:[{Name:\"generic.max_health\",Base:32f}], texture:\"hordes:textures/entity/zombie_illusioner.png\", chat_name:\"entity.hordes.ZombieIllusioner.name\", VillagerData:{type:none}}"
+	},
+	{
+		"entity": "minecraft:witch",
+		"converts_to": "minecraft:zombie_villager",
+		"protection": 0.7,
+		"nbt": "{Attributes:[{Name:\"generic.max_health\",Base:26f}], texture:\"hordes:textures/entity/zombie_witch.png\", chat_name:\"entity.hordes.ZombieWitch.name\", VillagerData:{type:none}}"
+	}
+]

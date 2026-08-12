@@ -1,0 +1,155 @@
+#Feature Toggles
+[features]
+	#Enable the 'Browse Online' button and createmod.com connectivity. Requires restart.
+	enableExternalBrowser = true
+
+#Mechanical Beehive Settings
+[beehive]
+	#Hard cap on active bees per hive, after RPM and upgrade scaling. Even with max RPM and upgrades, a hive will never exceed this.
+	# Default: 16
+	# Range: 1 ~ 64
+	maxBeesPerHive = 16
+	#Minimum active bees when the hive has any RPM. Ensures even slow shafts deploy at least this many bees.
+	# Default: 1
+	# Range: 0 ~ 64
+	minActiveBeesAtRpm = 1
+	#Base work range (blocks) of a beehive at minimum RPM, before RPM scaling is applied.
+	# Default: 1
+	# Range: 0 ~ 128
+	hiveBaseRange = 1
+	#Work range added per RPM. Formula: range = baseRange + RPM * this. Example: 64 RPM * 0.25 = 16 + 1 base = 17 blocks.
+	# Default: 0.25
+	# Range: 0.01 ~ 10.0
+	hiveRangePerRpm = 0.25
+	#RPM divisor for bee flight speed and spring efficiency. Formula: multiplier = 1 + RPM / this. Higher = slower scaling.
+	# Default: 256.0
+	# Range: 1.0 ~ 1024.0
+	hiveRpmSpeedDivisor = 256.0
+	#RPM divisor for max active bees. Formula: extra bees = RPM / this. Example: 64 RPM / 8 = 8 extra bees.
+	# Default: 8.0
+	# Range: 1.0 ~ 256.0
+	hiveRpmBeeDivisor = 8.0
+
+#Bee Behavior Settings
+[behavior]
+	#Whether bees pick up item drops when breaking blocks
+	beePickupItems = true
+	#Default max active bees before RPM and upgrade scaling. This is the base value that RPM bonuses are added to.
+	# Default: 4
+	# Range: 1 ~ 64
+	defaultMaxActiveBees = 4
+	#Default work range (blocks) for portable beehives and other non-hive bee sources.
+	# Default: 32.0
+	# Range: 1.0 ~ 256.0
+	defaultWorkRange = 32.0
+
+#Upgrade Effect Settings — controls how strong each upgrade is
+[upgrades]
+	#Speed multiplier bonus per Rapid Wings upgrade (default 0.25 = +25% per upgrade)
+	# Default: 0.25
+	# Range: 0.01 ~ 2.0
+	rapidWingsSpeedBonus = 0.25
+	#Extra concurrent bees per Swarm Intelligence upgrade
+	# Default: 8
+	# Range: 1 ~ 16
+	swarmIntelligenceBeeBonus = 8
+	#Break speed multiplier reduction per Honey Efficiency upgrade (0.25 = 25% faster)
+	# Default: 0.25
+	# Range: 0.01 ~ 1.0
+	honeyEfficiencyBreakSpeedReduction = 0.25
+	#Extra carry capacity per Honey Efficiency upgrade
+	# Default: 2
+	# Range: 1 ~ 16
+	honeyEfficiencyCarryBonus = 2
+	#Fuel consumption reduction per Honey Efficiency upgrade (0.15 = 15% less fuel)
+	# Default: 0.15
+	# Range: 0.01 ~ 1.0
+	honeyEfficiencyFuelReduction = 0.15
+	#Extra honey capacity per Honey Tank upgrade
+	# Default: 200
+	# Range: 50 ~ 5000
+	honeyTankCapacityBonus = 200
+
+#Drone View Settings — controls drone camera behavior
+[drone_view]
+	#Base range (blocks) the drone can move from the player without upgrades
+	# Default: 32.0
+	# Range: 8.0 ~ 256.0
+	droneBaseRange = 32.0
+	#Extra range (blocks) per Drone Range upgrade
+	# Default: 16.0
+	# Range: 4.0 ~ 128.0
+	droneRangeBonus = 16.0
+	#Drone movement speed in blocks per tick when controlled by WASD
+	# Default: 1.5
+	# Range: 0.1 ~ 5.0
+	droneMoveSpeed = 1.5
+
+#Clockwork Spring Settings — controls per-action energy drain on bees
+[spring]
+	#Spring tension drained per block placement (~50 placements per full spring)
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	springDrainPlace = 0.02
+	#Spring tension drained per block break (~66 breaks per full spring)
+	# Default: 0.015
+	# Range: 0.0 ~ 1.0
+	springDrainBreak = 0.015
+	#Spring tension drained per tick of flight (~10000 ticks per full spring)
+	# Default: 1.0E-4
+	# Range: 0.0 ~ 1.0
+	springDrainFlight = 1.0E-4
+	#Spring tension drained per item pickup from a logistics port (construction and transport bees).
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	springDrainPickup = 0.01
+	#Spring tension drained per item deposit to a logistics port (construction and transport bees).
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	springDrainDeposit = 0.01
+	#Base ticks to recharge a fully depleted spring at the hive (scales with RPM)
+	# Default: 200
+	# Range: 20 ~ 2000
+	springRechargeTicks = 200
+
+#Honey Fuel Settings — controls fuel consumption for portable beehive
+[honey_fuel]
+	#Honey consumed per full spring rewind in a portable beehive
+	# Default: 6
+	# Range: 1 ~ 1000
+	portableHoneyPerRewind = 6
+	#Maximum honey stored in a portable beehive
+	# Default: 400
+	# Range: 100 ~ 10000
+	portableMaxHoney = 400
+	#Honey fuel value per honey bottle
+	# Default: 100
+	# Range: 1 ~ 1000
+	honeyBottleFuelValue = 100
+	#Honey fuel value per honeycomb
+	# Default: 60
+	# Range: 1 ~ 1000
+	honeycombFuelValue = 60
+	#Honey fuel value per honey block
+	# Default: 400
+	# Range: 1 ~ 10000
+	honeyBlockFuelValue = 400
+
+#Performance Tuning
+[performance]
+	#Maximum number of block place/break operations all bees can perform per server tick. Lower values reduce TPS impact with many bees.
+	# Default: 20
+	# Range: 1 ~ 200
+	maxBlockOperationsPerTick = 20
+	#Maximum schematic blocks scanned per server tick when generating build/removal tasks. Lower values reduce server hitches on large schematics; higher values finish calculation faster.
+	# Default: 500
+	# Range: 50 ~ 10000
+	taskGenerationBlocksPerTick = 500
+	#Maximum bee checkpoint actions (block place/break arrivals) processed per server tick. Higher values let more bees work simultaneously but increase per-tick server load.
+	# Default: 30
+	# Range: 1 ~ 500
+	maxCheckpointsPerTick = 30
+	#How many GlobalJobPool tick cycles between redispatch attempts for pending batches. GlobalJobPool ticks every 10 server ticks, so interval of 4 = every 40 ticks (2 seconds). Lower = faster bee deployment but more server work.
+	# Default: 4
+	# Range: 1 ~ 20
+	redispatchInterval = 4

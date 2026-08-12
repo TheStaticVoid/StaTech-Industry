@@ -1,0 +1,20 @@
+[
+  {
+    "priority": 2,
+    "attacker": "#enhancedai:config/can_attack_villagers",
+    "target": "minecraft:villager",
+    "chance": 0.5
+  },
+  {
+    "priority": 2,
+    "attacker": "#enhancedai:config/can_attack_iron_golem",
+    "target": "minecraft:iron_golem",
+    "chance": 0.5
+  },
+  {
+    "priority": 1,
+    "attacker": "#enhancedai:config/hostile_horses",
+    "target": "minecraft:player",
+    "add_attack_goal": true
+  }
+]

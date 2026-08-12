@@ -1,0 +1,52 @@
+[
+	{
+		"entity": "minecraft:pillager",
+		"weight": 15,
+		"first_day": 0,
+		"last_day": 0
+	},
+	{
+		"entity": "minecraft:vindicator",
+		"weight": 10,
+		"first_day": 0,
+		"last_day": 0
+	},
+	{
+		"entity": "minecraft:witch",
+		"weight": 5,
+		"first_day": 20,
+		"last_day": 0
+	},
+	{
+		"entity": "minecraft:ravager",
+		"weight": 5,
+		"first_day": 30,
+		"last_day": 40
+	},
+	{
+		"entity": "minecraft:evoker",
+		"weight": 3,
+		"first_day": 40,
+		"last_day": 40
+	},
+	{
+		"entity": "minecraft:illusioner",
+		"weight": 5,
+		"first_day": 50,
+		"last_day": 0
+	},
+	{
+		"entity": "minecraft:ravager",
+		"weight": 3,
+		"first_day": 50,
+		"last_day": 0,
+		"nbt": "{Passengers:[{id:evoker}]}"
+	},
+	{
+		"entity": "minecraft:ravager",
+		"weight": 5,
+		"first_day": 50,
+		"last_day": 0,
+		"nbt": "{Passengers:[{id:pillager}]}"
+	}
+]

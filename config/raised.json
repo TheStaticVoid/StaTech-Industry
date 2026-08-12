@@ -88,6 +88,39 @@
       },
       "sync": "artifacts:helium_flamingo_charge"
     },
+    "cbbees:construction_planner_hud": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "cbbees:construction_planner_hud"
+    },
+    "cbbees:deconstruction_planner_hud": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "cbbees:deconstruction_planner_hud"
+    },
+    "cbbees:drone_view_hud": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "cbbees:drone_view_hud"
+    },
     "create:blueprint": {
       "displacement": {
         "x": 0,
@@ -263,6 +296,28 @@
         "y": "UP"
       },
       "sync": "framedblocks:block_interact"
+    },
+    "hordes:infection": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "hordes:infection"
+    },
+    "improvedmobs:difficulty_overlay": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "improvedmobs:difficulty_overlay"
     },
     "inventoryhud:armor": {
       "displacement": {

@@ -1,0 +1,42 @@
+[
+    {
+        "function": "hordes:set_spawntable",
+        "value": [
+            "hordes:default"
+        ],
+        "conditions": []
+    },
+    {
+        "function": "hordes:multiple",
+        "value": [
+            {
+                "function": "hordes:set_spawntable",
+                "value": [
+                    "hordes:drowned"
+                ],
+                "conditions": []
+            },
+            {
+                "function": "hordes:set_spawn_type",
+                "value": "prefer_water",
+                "conditions": []
+            }
+        ],
+        "conditions": [
+            {
+                "name": "hordes:biome",
+                "value": "#minecraft:is_ocean"
+            },
+            {
+                "name": "hordes:not",
+                "value": {
+                    "name": "hordes:biome",
+                    "value": [
+                        "minecraft:frozen_ocean",
+                        "minecraft:deep_frozen_ocean"
+                    ]
+                }
+            }
+        ]
+    }
+]

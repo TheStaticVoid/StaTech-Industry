@@ -1,0 +1,58 @@
+#Adds a new `insanelib:push_resistance` attribute to mobs, making them harder to be pushed (or not pushable with 1) (this is not knockback resistance, this is for the bounding boxes of mobs intersecting). Disabling this will prevent the attribute from working. This doesn't work on players.
+"Enable Push resistance" = true
+#If true, game time and day time, will not advance if no players are online. This can break anything that relies on game time so it's disabled by default.
+"Enable Time stop no player online" = false
+#Adds a new `insanelib:mob_detection_range` attribute to players (0~1), that reduces in percentage the range at which mobs can detect/see them. Hooks into LivingVisibilityEvent with LOWEST priority so it modifies the final visibility value.
+"Enable Mob detection range" = true
+#Apply attribute modifiers to players. Attributes can be added in the config folder of this feature's folder (requires a world to be opened at least once). Updating attribute modifiers of players them to rejoin
+"Enable Player attributes" = true
+#Various fixes and improvements
+"Enable Fixes" = true
+
+#Set and use some tags to get and set some mobs properties. E.g. cause fire explosion for mobs, or get current light level.
+["Nbt tags"]
+	"Apply no ammo consumption to pillagers" = false
+
+#Changes the behaviour of Falling Blocks to be smarter by preventing them from getting stuck when landing on a block but their center has air below, or try to stack or move them when inside a block.
+["Better falling blocks"]
+	#If true, falling blocks will break blocks that are instabreakable and place instead of dropping. If the falling block ends in a non-insta-break block, it will move to the side instead.
+	"Break instabreak blocks" = true
+	#Fix dupe exploit through dimensions.
+	"Fix dupe exploit" = true
+
+#Allows modifying item data components via data packs
+["Item components"]
+	#Vanilla limits max stack sizes to 99 for some reasons. This replaces that limit
+	# Default: 9999
+	# Range: > -2147483648
+	"Stack limit" = 9999
+	#Always render the item stack count at a smaller scale, even when it's 99 or below
+	"Always shrink stack count" = false
+
+#If true, game time and day time, will not advance if no players are online. This can break anything that relies on game time so it's disabled by default.
+["Time stop no player online"]
+	#If true, also prevents weather from advancing if no players are online. This needs to be disabled in order to allow to set the gamerule again.
+	"Also weather" = true
+	#If true, also prevents game time from advancing if no players are online with Time Control installed. This needs to be disabled in order to allow to set the gamerule again.
+	"Time control integration" = true
+	#If true, also prevents seasons from advancing if no players are online with Serene Seasons installed. This needs to be disabled in order to allow to set the gamerule again.
+	"Serene seasons integration" = true
+
+#Various fixes and improvements
+[Fixes]
+	#If true, mobs will have their follow range fixed. https://bugs.mojang.com/browse/MC-145656. Only affects entities in `insanelib:fix_follow_range` entity type tag (all vanilla mobs by default) and entities that use the NearestAttackableTargetGoal goal.
+	"Fix follow range" = true
+	#Makes drowned and fishes use the swim speed attribute (neoforge:swim_speed) instead of movement speed.
+	"Fix swimmers swimming attribute" = true
+	#Removes the random bonus health given to Leader Zombies. In vanilla it's useless since doesn't work. https://minecraft.wiki/Attribute#Vanilla_modifiers
+	"Remove zombies bonus health" = true
+	#If true, https://bugs.mojang.com/browse/MC/issues/MC-145114 will be fixed.
+	"Fix mob crossbow firework shooting" = true
+
+	[Fixes."Fix air speed"]
+		#When affected by slowness the player can still jump really far away. When true, jumps length will be calculated based off player's movement speed.
+		Enabled = true
+		#The fix for Air Speed is applied only when the player is slowed down. If false, the player will jump really farther when going faster.
+		"Slowdown only" = true
+		#If true, player's sprinting jump impulse will be reduced based off slowdown (basically, when you have 0 movement speed, if this is true, you can no longer jump forward while sprinting).
+		"Sprinting jump slowdown" = true
