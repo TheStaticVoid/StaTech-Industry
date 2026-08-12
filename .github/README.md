@@ -11,7 +11,7 @@ make food a required challenge \
 >-take everlasting steak out back and shoot it\
  -outright disable the auto feeding backpack item because canned food is cool
 restore ae2 hv gating (:gregtroll:)\
-  -all ae2 features will probably just be stainless/digital gated
+  >-all ae2 features will probably just be stainless/digital gated
   gregify steam age multis\
   -bricks already require steam machines to make so coke oven is unchanged\
   -sbf has gt recipe
