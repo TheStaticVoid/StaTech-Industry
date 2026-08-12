@@ -310,6 +310,13 @@
 	quest.06BFE5F7FC4B384B.title: "Modern Dynamics Attachments"
 	quest.06DB051FC1D3AB47.quest_desc: ["The &bBrass Funnel&r can insert or extract up to a stack of items at a time and can be filtered."]
 	quest.06EA6256AF717DAC.quest_desc: ["&eElectrum&r is an alloy of &eGold&r and &7Silver&r. It's used in a variety of crafting recipes, as well as one of the cables that can support &6Medium Voltage&r."]
+	quest.0715024FA6D67EB3.quest_desc: [
+		"You may have already noticed, or may soon notice, that many items require a&e bit more progression&r to make. "
+		""
+		"However, many items can be &aacquired early&r by &dexploring&r and &dlooting&r vanilla structures, if you want a bit of an &aearly advantage&r!"
+	]
+	quest.0715024FA6D67EB3.quest_subtitle: "Free Loot?"
+	quest.0715024FA6D67EB3.title: "Exploring"
 	quest.071D9B8D5C16227B.quest_desc: [
 		"You will soon be needing to make &aHeatproof Machine Casings&r, which require Invar. Invar is made in a Mixer by combining 2 Iron Dusts with 1 Nickel Dust. "
 		""
@@ -2092,6 +2099,7 @@
 		"You can remove the &a1k ME Storage Component&r by fully emptying the Storage Cell, and shift-right clicking while holding it. The settings can be changed in the Cell Workbench."
 	]
 	quest.2BA611005741BE40.quest_desc: ["&aChicken Nests&r can automatically collect eggs laid by chickens. Very useful for making all those &6different foods&r!"]
+	quest.2BA611005741BE40.quest_subtitle: "What's a hopper?"
 	quest.2BB495CFC3E6D6C8.quest_desc: ["By combining printed &bAE2 circuits&r and &7silicon&r in an &eAssembler&r you will create the basic components for all of &eAE2&r. The &cMolten Redstone&r required for the recipe can be acquired using a &3Blast Furnace&r."]
 	quest.2BB495CFC3E6D6C8.title: "AE2 Processors"
 	quest.2BC4721F4E3E87B5.quest_desc: ["Now that you're familiar with the &dcrafting process&r, it's time to upgrade your basic &bPedestal&r into the &aCMY Variant&r. To upgrade the &bPedestal&r, place a &bTopaz&r, &5Amethyst&r, and &eCitrine&r (in that order) in your &bPedestal&r and then start the craft."]
@@ -2488,7 +2496,11 @@
 		""
 		"&aRedstone Sand&r behaves like a solid block until it gets a &credstone signal&r. The &credstone&r trigger propagates through &eall connected blocks&r, destabilizing them and causing them to fall."
 	]
-	quest.339F676C828C790D.quest_desc: ["You'll need to make some basic tools to get started. Stone seems to be good enough for the material."]
+	quest.339F676C828C790D.quest_desc: [
+		"You'll need to make some &abasic tools&r to get started. Using &6Wood&r is a bit &climiting&r, but enough to acquire a &afurnace&r and &6copper&r to make your first &ametal tools&r."
+		""
+		"Stone &ccannot&r be made into &ereliable tools&r. &6Copper&r is needed to make &abetter tools&r."
+	]
 	quest.339F676C828C790D.quest_subtitle: "Welcome to the Stone Age"
 	quest.339F676C828C790D.title: "Cave Man"
 	quest.33A1CC9DFDAF2B13.quest_desc: ["This upgrade to the &aWorkstaff&r allows you to&e Right Click&r to shoot out &fWhite Ink&r which will break blocks on impact. You can also choose from &dResonance&r when switching enchantments."]
@@ -2561,7 +2573,11 @@
 	quest.35586140C9917179.quest_desc: ["This &aTier 3 Tank&r has &d9 slots&r, with each one able to hold &664 buckets&r."]
 	quest.359CB19747F5A3F3.quest_desc: ["&a1000mb&r of &eCrude Oil&r will distill into &b500mb&r of &6Sulfuric Light Fuel&r. The &cSulfur&r will need to be removed before the fuel can be used."]
 	quest.35B6D5329AD5C0F9.quest_desc: ["The Market allows you to trade Emeralds for some seeds and saplings. A great way to acquire those you haven't found in the wild yet!"]
-	quest.35CA2712BC60C09E.quest_desc: ["&cCopper&r and &bIron&r are basic vanilla materials that you should be familiar with, but as you will soon find &6Tin&r is very important for establishing your first machines."]
+	quest.35CA2712BC60C09E.quest_desc: [
+		"&bIron&r is a basic vanilla material that you should be familiar with, but as you will soon find out, &6Tin&r is also very important for establishing your first machines."
+		""
+		"You'll of course also need &bfuel&r to smelt those ores. &eCoal&r or &eLignite Coal&r are both materials you can find whilst mining and use for this purpose."
+	]
 	quest.35CA2712BC60C09E.quest_subtitle: "They're Minerals Marie!"
 	quest.35CA2712BC60C09E.title: "First Ores"
 	quest.35E405C527D324D3.quest_desc: ["Holds the wires. These are both used in crafting and to connect lines together."]
@@ -3897,6 +3913,12 @@
 	]
 	quest.510208C885C73669.quest_subtitle: "I am the Villager now!"
 	quest.510208C885C73669.title: "Table Cloths"
+	quest.5114DECB3214A07C.quest_desc: [
+		"&6Copper tools&r are flimsy, but &acheap&r. Unlike your &cwooden tools&r, they will allow you to obtain &eIron&r and make tools worthy of that name."
+		""
+		"Only the pickaxe is required for completing this quest."
+	]
+	quest.5114DECB3214A07C.title: "Copper Tools"
 	quest.511ACED1E299766B.quest_desc: [
 		"The &bMatter Condenser&r has two key functions, elimination of excess materials in a cheap manor and the production of &eSingularity&r and &aMatter Ball&r."
 		""
@@ -3909,6 +3931,15 @@
 	]
 	quest.51490042671E700C.quest_desc: ["Welcome to &eChapter 5&r."]
 	quest.51490042671E700C.title: "Start of HV"
+	quest.5153F5CF738EDDB3.quest_desc: [
+		"Some Sophisticated Storage &aupgrades&r require &eIron Plates&r to make, including the &dCrafting Upgrade&r."
+		""
+		"Just like the &eCrafting Station&r in chapter 1, this upgrade allows you to use &aitems&r in your crafting table &adirectly from an entire Sophisticated Storage container&r."
+		""
+		"I highly recommend using this and a &aupgraded&r double chest as a \"central crafting station\". Using this with &6EMI Crafting&r (linked below) to deal with &amicrocrafting&r in the early game."
+		""
+		"[ { \"text\": \"EMI Crafting\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4E1516DE8CDFE5EE\" } } ]"
+	]
 	quest.516C46122E7303BD.quest_desc: [
 		"&e2000mB Chlorine&r and &d500mB Methane&r combined in a &6Chemical Reactor&r will provide you &22000mB Hydrochloric&r Acid and &3500mb Chloroform&r. "
 		""

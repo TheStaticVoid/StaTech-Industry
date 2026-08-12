@@ -20,7 +20,7 @@ const armorSet = [
 
 ItemEvents.toolTierRegistry((event) => {
     event.add('bronze', (tier) => {
-        tier.uses = 320;
+        tier.uses = 365;
         tier.speed = 6.5;
         tier.attackDamageBonus = 2;
         tier.enchantmentValue = 20;
@@ -33,6 +33,93 @@ ItemEvents.toolTierRegistry((event) => {
         tier.attackDamageBonus = 2.5;
         tier.enchantmentValue = 15;
         tier.repairIngredient = '#c:ingots/steel';
+    });
+
+    event.add('copper', (tier) => {
+        tier.uses = 196;
+        tier.speed = 4;
+        tier.attackDamageBonus = 1;
+        tier.enchantmentValue = 10;
+        tier.repairIngredient = '#c:ingots/copper';
+    });
+});
+
+ItemEvents.modification(event => {
+    toolSet.forEach((tool) =>{
+            event.modify(`kubejs:copper_${tool[0]}`, (item) => {
+                item.maxDamage = 196;
+                item.tool = {
+                    defaultMiningSpeed: 1,
+                    damagePerBlock: 1,
+                    rules: [
+                        {
+                            blocks: '#minecraft:incorrect_for_stone_tool',
+                            correctForDrops: false,
+                        },
+                        {
+                            blocks: `#minecraft:mineable/${tool[0]}`,
+                            correctForDrops: true,
+                            speed: 4,
+                        }
+                    ]
+                };
+            event.modify(`kubejs:steel_${tool[0]}`, (item) => {
+                item.maxDamage = 1310;
+                item.tool = {
+                    defaultMiningSpeed: 1,
+                    damagePerBlock: 1,
+                    rules: [
+                        {
+                            blocks: '#minecraft:incorrect_for_diamond_tool',
+                            correctForDrops: false,
+                        },
+                        {
+                            blocks: `#minecraft:mineable/${tool[0]}`,
+                            correctForDrops: true,
+                            speed: 7.5,
+                        }
+                    ]
+                };
+            });
+            event.modify(`kubejs:bronze_${tool[0]}`, (item) => {
+                item.maxDamage = 365;
+                item.tool = {
+                    defaultMiningSpeed: 1,
+                    damagePerBlock: 1,
+                    rules: [
+                        {
+                            blocks: '#minecraft:incorrect_for_iron_tool',
+                            correctForDrops: false,
+                        },
+                        {
+                            blocks: `#minecraft:mineable/${tool[0]}`,
+                            correctForDrops: true,
+                            speed: 6.5,
+                        }
+                    ]
+                };
+            });
+        });
+    })
+
+    event.modify('minecraft:stone_sword', (item) => {
+        item.maxDamage = 59;
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_stone_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/sword',
+                    correctForDrops: true,
+                    speed: 2,
+                }
+            ]
+        };
+        item.attackDamage = 0;
     });
 });
 
@@ -347,6 +434,10 @@ StartupEvents.registry('item', (event) => {
             .create(`steel_${tool[0]}`, `${tool[0]}`)
             .displayName(`Steel ${tool[1]}`)
             .tier('steel');
+        event
+            .create(`copper_${tool[0]}`, `${tool[0]}`)
+            .displayName(`Copper ${tool[1]}`)
+            .tier('copper');
     });
 
     // -- STEEL EQUIPMENT -- //

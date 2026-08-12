@@ -1,4 +1,12 @@
 RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
+    const MINECRAFT_DISABLED = [
+        mc('stone_pickaxe'),
+        mc('stone_axe'),
+        mc('stone_hoe'),
+        mc('stone_shovel'),
+    ];
+    MINECRAFT_DISABLED.forEach((id) => event.remove(id));
+
     const CREATE_CRUSHED = [
         cr('crushed_raw_platinum'),
         cr('crushed_raw_iron'),

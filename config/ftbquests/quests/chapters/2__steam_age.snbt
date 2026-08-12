@@ -4049,5 +4049,39 @@
 			x: 32.0d
 			y: 5.5d
 		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "5153F5CF738EDDB3"
+			rewards: [
+				{
+					count: 2
+					id: "35C5A32A8103BF47"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "31C380C0143DF4FC"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5C1BEF28076810CC"
+					table_id: 3409273157072801564L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "2CCBE02CACEFBBDC"
+				item: { count: 1, id: "sophisticatedstorage:crafting_upgrade" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
 	]
 }

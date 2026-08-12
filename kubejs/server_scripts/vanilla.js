@@ -29,7 +29,6 @@ ServerEvents.recipes((event) => {
         mc('clock'),
         mc('compass'),
         mc('chain'),
-        mc('amethyst_block'),
         mc('iron_helmet'),
         mc('iron_chestplate'),
         mc('iron_leggings'),
@@ -76,7 +75,7 @@ ServerEvents.recipes((event) => {
             L: '#minecraft:logs',
         })
         .id(st('sticks_from_log'));
-    
+
     // -- BUCKET ALT METALS -- //
     ALT_METALS.forEach(id => {
         event.shaped(mc('bucket'), [ 'P P', ' P '], { P: `#c:plates/${id}` }).id(st(`bucket_${id}`));
@@ -140,19 +139,13 @@ ServerEvents.recipes((event) => {
         })
         .id(st('chain'));
 
-    event
-        .shaped(mc('amethyst_block'), ['AAA', 'AAA', 'AAA'], {
-            A: mc('amethyst_shard'),
-        })
-        .id(st('amethyst_block'));
-
     // -- IRON ARMOR -- //
     event
         .shaped(mc('iron_helmet'), ['III', 'I I'], {
             I: mi('iron_plate')
         })
         .id(st('iron_helmet'));
-    
+
     event
         .shaped(mc('iron_chestplate'), ['I I', 'III', 'III'], {
             I: mi('iron_plate')
@@ -184,16 +177,16 @@ ServerEvents.recipes((event) => {
         ['sword', 'Sword'],
         ['shovel', 'Shovel' ],
     ]
-    
+
     diamondToolsArmorsSet.forEach(item =>{
         event.smithing(
         `minecraft:diamond_${item[0]}`,
         'kubejs:diamond_upgrade_smithing_template',
         `kubejs:steel_${item[0]}`,
         'minecraft:diamond'
-    )
+        )
     })
-    
+
 });
 
 ServerEvents.tags('item', (event) => {

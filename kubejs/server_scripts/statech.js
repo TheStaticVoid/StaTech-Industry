@@ -297,150 +297,87 @@ ServerEvents.recipes((event) => {
         })
         .id(st('calorite_ore_from_mythic'));
 
-    // ---------------------- //
-    // -- BRONZE EQUIPMENT -- //
-    // ---------------------- //
+    // --------------- //
+    // -- TOOL SETS -- //
+    // --------------- //
 
-    // -- BRONZE BOOTS -- //
-    event
-        .shaped(Item.of(kj('bronze_boots')), ['   ', 'A A', 'A A'], {
-            A: '#c:plates/bronze',
-        })
-        .id(st('bronze_boots'));
+    const toolSetsMaterials = ['bronze', 'steel', 'copper']
+    const armorSetsMaterials = ['bronze', 'steel']
 
-    // -- BRONZE CHESTPLATE -- //
-    event
-        .shaped(Item.of(kj('bronze_chestplate')), ['A A', 'AAA', 'AAA'], {
-            A: '#c:plates/bronze',
-        })
-        .id(st('bronze_chestplate'));
+    // -- BOOTS -- //
+    armorSetsMaterials.forEach((material) => {
+        event
+            .shaped(Item.of(kj(`${material}_boots`)), ['   ', 'A A', 'A A'], {
+                A: `#c:plates/${material}`,
+            })
+            .id(st(`${material}_boots`));
 
-    // -- BRONZE LEGGINGS -- //
-    event
-        .shaped(Item.of(kj('bronze_leggings')), ['AAA', 'A A', 'A A'], {
-            A: '#c:plates/bronze',
-        })
-        .id(st('bronze_leggings'));
+        // -- CHESTPLATE -- //
+        event
+            .shaped(Item.of(kj(`${material}_chestplate`)), ['A A', 'AAA', 'AAA'], {
+                A: `#c:plates/${material}`,
+            })
+            .id(st(`${material}_chestplate`));
 
-    // -- BRONZE HELMET -- //
-    event
-        .shaped(Item.of(kj('bronze_helmet')), ['AAA', 'A A', '   '], {
-            A: '#c:plates/bronze',
-        })
-        .id(st('bronze_helmet'));
+        // -- LEGGINGS -- //
+        event
+            .shaped(Item.of(kj(`${material}_leggings`)), ['AAA', 'A A', 'A A'], {
+                A: `#c:plates/${material}`,
+            })
+            .id(st(`${material}_leggings`));
 
-    // -- BRONZE PICKAXE -- //
-    event
-        .shaped(Item.of(kj('bronze_pickaxe')), ['AAA', ' B ', ' B '], {
-            A: '#c:ingots/bronze',
-            B: '#c:rods/wooden',
-        })
-        .id(st('bronze_pickaxe'));
+        // -- HELMET -- //
+        event
+            .shaped(Item.of(kj(`${material}_helmet`)), ['AAA', 'A A', '   '], {
+                A: `#c:plates/${material}`,
+            })
+            .id(st(`${material}_helmet`));
+    })
 
-    // -- BRONZE AXE -- //
-    event
-        .shaped(Item.of(kj('bronze_axe')), ['AA ', 'AB ', ' B '], {
-            A: '#c:ingots/bronze',
-            B: '#c:rods/wooden',
-        })
-        .id(st('bronze_axe'));
+    toolSetsMaterials.forEach((material) => {
+        // -- PICKAXE -- //
+        event
+            .shaped(Item.of(kj(`${material}_pickaxe`)), ['AAA', ' B ', ' B '], {
+                A: `#c:ingots/${material}`,
+                B: '#c:rods/wooden',
+            })
+            .id(st(`${material}_pickaxe`));
 
-    // -- BRONZE SHOVEL -- //
-    event
-        .shaped(Item.of(kj('bronze_shovel')), [' A ', ' B ', ' B '], {
-            A: '#c:ingots/bronze',
-            B: '#c:rods/wooden',
-        })
-        .id(st('bronze_shovel'));
+        // -- AXE -- //
+        event
+            .shaped(Item.of(kj(`${material}_axe`)), ['AA ', 'AB ', ' B '], {
+                A: `#c:ingots/${material}`,
+                B: '#c:rods/wooden',
+            })
+            .id(st(`${material}_axe`));
 
-    // -- BRONZE SWORD -- //
-    event
-        .shaped(Item.of(kj('bronze_sword')), [' A ', ' A ', ' B '], {
-            A: '#c:ingots/bronze',
-            B: '#c:rods/wooden',
-        })
-        .id(st('bronze_sword'));
+        // -- SHOVEL -- //
+        event
+            .shaped(Item.of(kj(`${material}_shovel`)), [' A ', ' B ', ' B '], {
+                A: `#c:ingots/${material}`,
+                B: '#c:rods/wooden',
+            })
+            .id(st(`${material}_shovel`));
 
-    // -- BRONZE HOE -- //
-    event
-        .shaped(Item.of(kj('bronze_hoe')), ['AA ', ' B ', ' B '], {
-            A: '#c:ingots/bronze',
-            B: '#c:rods/wooden',
-        })
-        .id(st('bronze_hoe'));
+        // -- SWORD -- //
+        event
+            .shaped(Item.of(kj(`${material}_sword`)), [' A ', ' A ', ' B '], {
+                A: `#c:ingots/${material}`,
+                B: '#c:rods/wooden',
+            })
+            .id(st(`${material}_sword`));
 
-    // ---------------------- //
-    // -- STEEL EQUIPMENT -- //
-    // ---------------------- //
-
-    // -- STEEL BOOTS -- //
-    event
-        .shaped(Item.of(kj('steel_boots')), ['   ', 'A A', 'A A'], {
-            A: '#c:plates/steel',
-        })
-        .id(st('steel_boots'));
-
-    // -- STEEL CHESTPLATE -- //
-    event
-        .shaped(Item.of(kj('steel_chestplate')), ['A A', 'AAA', 'AAA'], {
-            A: '#c:plates/steel',
-        })
-        .id(st('steel_chestplate'));
-
-    // -- STEEL LEGGINGS -- //
-    event
-        .shaped(Item.of(kj('steel_leggings')), ['AAA', 'A A', 'A A'], {
-            A: '#c:plates/steel',
-        })
-        .id(st('steel_leggings'));
-
-    // -- STEEL HELMET -- //
-    event
-        .shaped(Item.of(kj('steel_helmet')), ['AAA', 'A A', '   '], {
-            A: '#c:plates/steel',
-        })
-        .id(st('steel_helmet'));
-
-    // -- STEEL PICKAXE -- //
-    event
-        .shaped(Item.of(kj('steel_pickaxe')), ['AAA', ' B ', ' B '], {
-            A: '#c:ingots/steel',
-            B: '#c:rods/wooden',
-        })
-        .id(st('steel_pickaxe'));
-
-    // -- STEEL AXE -- //
-    event
-        .shaped(Item.of(kj('steel_axe')), ['AA ', 'AB ', ' B '], {
-            A: '#c:ingots/steel',
-            B: '#c:rods/wooden',
-        })
-        .id(st('steel_axe'));
-
-    // -- STEEL SHOVEL -- //
-    event
-        .shaped(Item.of(kj('steel_shovel')), [' A ', ' B ', ' B '], {
-            A: '#c:ingots/steel',
-            B: '#c:rods/wooden',
-        })
-        .id(st('steel_shovel'));
-
-    // -- STEEL SWORD -- //
-    event
-        .shaped(Item.of(kj('steel_sword')), [' A ', ' A ', ' B '], {
-            A: '#c:ingots/steel',
-            B: '#c:rods/wooden',
-        })
-        .id(st('steel_sword'));
-
-    // -- STEEL HOE -- //
-    event
-        .shaped(Item.of(kj('steel_hoe')), ['AA ', ' B ', ' B '], {
-            A: '#c:ingots/steel',
-            B: '#c:rods/wooden',
-        })
-        .id(st('steel_hoe'));
+        // -- HOE -- //
+        event
+            .shaped(Item.of(kj(`${material}_hoe`)), ['AA ', ' B ', ' B '], {
+                A: `#c:ingots/${material}`,
+                B: '#c:rods/wooden',
+            })
+            .id(st(`${material}_hoe`));
+    });
 });
+
+
 
 ServerEvents.tags('item', (event) => {
     const COINS = [
