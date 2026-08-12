@@ -1300,3 +1300,48 @@ let wiremill = (event, id, eu, duration, item_inputs, item_outputs) => {
         )
         .id(id);
 };
+
+/**
+ * Bronze Quarry
+ * @param {!string} event
+ * @param {!string} id - Recipe ID
+ * @param {!number} eu - Recipe eu/t
+ * @param {!number} duration - Recipe duration in ticks (1 second is 20 ticks)
+ * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
+ * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
+ * @param {?string} adjacent_block - Process condition - adjacent block ID
+ * @param {?string} adjacent_block_pos - Process condition - adjacent block position
+ */
+
+let bronzeQuarry = (
+    event,
+    id,
+    eu,
+    duration,
+    item_inputs,
+    item_outputs,
+    adjacent_block,
+    adjacent_block_pos
+) => {
+    let process_conditions = [
+        {
+            type: mi('adjacent_block'),
+            block: adjacent_block,
+            position: adjacent_block_pos,
+        },
+    ];
+    event
+        .custom(
+            newMachineRecipe(
+                mi('bronze_quarry'),
+                eu,
+                duration,
+                item_inputs,
+                item_outputs,
+                null,
+                null,
+                process_conditions
+            )
+        )
+        .id(id);
+};

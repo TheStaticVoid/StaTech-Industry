@@ -1192,6 +1192,23 @@ ServerEvents.recipes(event => { // this probably isnt destructive
             { amount: 7889, fluid: mi('hydrogen') }
         ]
     );
+
+    // -- QUARRY RECIPES -- //
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/quarry/iron_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mc('iron_ore'), probability: 0.6 },
+            { amount: 1, item: mi('nickel_ore'), probability: 0.4 },
+        ],
+        mc('iron_ore'),
+        'below'
+    );
+
 }) 
 
 // bullshittium stuff outside of this file:

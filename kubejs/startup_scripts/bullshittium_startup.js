@@ -53,3 +53,65 @@ ItemEvents.modification(event => {
         });
     })
 })
+
+let BRONZE_QUARRY;
+
+MIMachineEvents.registerRecipeTypes((event) => {
+    BRONZE_QUARRY = event
+        .register('bronze_quarry')
+        .withItemInputs()
+        .withItemOutputs();
+});
+
+MIMachineEvents.registerMachines((event) => {
+    const bronzeCasing = event.memberOfBlock(
+        mi('bronze_machine_casing')
+    );
+    const bronzePipeCasing = event.memberOfBlock(
+        mi('bronze_machine_casing_pipe')
+    );
+    const chain = event.memberOfBlock(
+        mc('chain')
+    );
+    const bronzeQuarryHatch = event.hatchOf(
+        'item_input',
+        'item_output',
+        'fluid_input'
+    );
+
+    const bronzeQuarryBuilder = event
+        .layeredShape('clean_stainless_steel_machine_casing', [
+            // y=
+            ['ccc', 'ccc', '   ', '   ', '   '],
+            ['cRc', 'cRc', 'PRP', 'PRP', 'PCP'],
+            ['c#c', 'ccc', '   ', '   ', '   '],
+        ])
+        .key('C', bronzeCasing, event.noHatch())
+        .key('c', bronzeCasing, bronzeQuarryHatch)
+        .key('P', bronzePipeCasing, event.noHatch())
+        .key('R', chain, event.noHatch())
+        .build();
+
+    event.simpleSteamCraftingMultiBlock(
+        // General parameters
+        'Bronze Quarry', // English name
+        'bronze_quarry', // internal name
+        BRONZE_QUARRY, // recipe type
+        bronzeQuarryBuilder, // multiblock shape
+
+        // REI Display configuration
+        event.progressBar(77, 33, 'arrow'),
+        // REI Item inputs, item outputs, fluid inputs, fluid outputs
+        (itemInputs) => itemInputs.addSlots(56, 35, 1, 1),
+        (itemOutputs) => itemOutputs.addSlots(102, 35, 4, 4),
+        (fluidInputs) => { },
+        (fluidOutputs) => { },
+
+        /* Model Configuration */
+        'clean_stainless_steel_machine_casing', // casing of the controller
+        'bronze_quarry', // overlay folder
+        true, // front overlay
+        false, // top overlay
+        false // side overlay
+    );
+});
