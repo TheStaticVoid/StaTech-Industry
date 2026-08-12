@@ -1545,6 +1545,9 @@
 		}
 		{
 			dependencies: ["2F85AE19C04F241C"]
+			icon: {
+				id: "modern_industrialization:impure_liquid_nether_star_bucket"
+			}
 			id: "077C957AAB39CC0B"
 			rewards: [
 				{
@@ -1567,11 +1570,18 @@
 					type: "loot"
 				}
 			]
-			tasks: [{
-				id: "0337B51A4B07A665"
-				item: { count: 1, id: "modern_industrialization:impure_liquid_nether_star_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0337B51A4B07A665"
+					item: { count: 1, id: "modern_industrialization:impure_liquid_nether_star_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "05AD976EBF6A22EE"
+					type: "checkmark"
+				}
+			]
 			x: 11.0d
 			y: 2.0d
 		}

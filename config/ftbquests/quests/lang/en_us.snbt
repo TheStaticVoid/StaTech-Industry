@@ -4925,7 +4925,7 @@
 		""
 		"It's very useful for storing large amounts of ore from your quarries."
 	]
-	quest.641117E0F688F40A.quest_desc: ["First, &eBoron&r needs to be extracted from &3Kernite&r by being &eelectrolyzed&r."]
+	quest.641117E0F688F40A.quest_desc: ["First, &eBoron Trioxide&r needs to be extracted from &3Kernite&r by being &eelectrolyzed&r."]
 	quest.6432582C92C412A0.quest_desc: [
 		"The &bDiamond Grit Sandpaper&r is an upgrade to regular &eSandpaper&r that has &3significantly more durability&r. No more having to craft new ones all the time!"
 		""
@@ -4965,7 +4965,7 @@
 	quest.64D20685E4A57EED.quest_desc: ["The &aEV Tier Storage Unit&r. It can store a little more than &e45 million EU&r. "]
 	quest.64DFA6F08BE456FD.quest_desc: ["A component in &aNylon&r."]
 	quest.64DFA6F08BE456FD.title: "Caprolactam"
-	quest.6512025C0A70B6EB.quest_desc: ["&6Kernite&r is a &eBoron&r containing ore introduced in &a2.0&r! It's used in the process of making &dBorosilicate Glass&r."]
+	quest.6512025C0A70B6EB.quest_desc: ["&6Kernite&r is a &eBoron Trioxide&r containing ore introduced in &a2.0&r! It's used in the process of making &dBorosilicate Glass&r."]
 	quest.653BAA1694FC2820.quest_desc: ["Applies the &6&oFire Resistance&r&r effect when worn. Pairs well with the &4Ashen Circlet&r."]
 	quest.653BAA1694FC2820.quest_subtitle: "Lava Bath!"
 	quest.654B073CCFC06D24.quest_desc: ["The &eHand Crank&r is another alternative form of generating &arotational force&r. Extended use of this will leave the user very &chungry&r, so it's more optimal to have a &eWindmill&r / &eWater Wheel&r generate your power. Great if you just need to &equickly power something&r!"]
@@ -5815,7 +5815,7 @@
 	quest.78427B969C4E2188.quest_desc: ["&cFiery Tears&r are an exclusive item dropped from the &cUr-Ghast&r. You can use them to make &4Fiery Ingots&r, which can be used to make special sets of &aarmor and tools&r. The &2Fiery Pickaxe&r features auto-smelting, while the &3Fiery Sword&r has a built in &dFire Aspect&r. Lastly, the &bFiery Armors&r will light attackers &eon fire&r."]
 	quest.784BFD67397D2D4E.quest_desc: ["The &bExtended Interface&r is an advanced version of the Interface that has &a4 rows&r of &a9 slots&r (spread on two pages) to stock&r or receive&r &2items&r or &9fluids&r instead of the regular 9!"]
 	quest.786ACF473177AA23.quest_desc: ["With the &bTurbo Machine Hulls&r you now have access to &aUltimate Solar Panels&r. This will generate &e48 EU/t&r during the day, and&6 8 EU/t at night&r. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
-	quest.788B6EC0B441EEC8.quest_desc: ["&eBoron Dust&r then needs to be mixed with some &eQuartz Dust&r to prepare it for &bGlass&r production."]
+	quest.788B6EC0B441EEC8.quest_desc: ["&eBoron Trioxide Dust&r then needs to be mixed with some &eQuartz Dust&r and some &eAluminum Tiny Dust&r to prepare it for &bGlass&r production."]
 	quest.78AB0A6DF24A608F.quest_subtitle: "The spaghetti appetizer"
 	quest.78AB0A6DF24A608F.title: "Fluid Pipes"
 	quest.78B9AAD1C8BA75E6.quest_desc: [
@@ -6228,6 +6228,7 @@
 	task.0432DAB1DD87D21D.title: "Any Energy Input Hatch"
 	task.0472D36D743812BA.title: "Click to Acknowledge"
 	task.0518376B59D54A78.title: "Any Item Input Hatch"
+	task.05AD976EBF6A22EE.title: "I've done this!"
 	task.05EE083C303D0E3D.title: "Any Pure Pigment"
 	task.0678CC4CC5D8D28B.title: "Any Glowblock"
 	task.06B95AF21897C47B.title: "Any Item Input Hatch"
@@ -6317,11 +6318,13 @@
 	task.1D5255DBD11F05F6.title: "Large Meals"
 	task.1D9EA15A12A2932B.title: "8x Polished Pillars"
 	task.1E922BDF13C5E6DB.title: "36x Polished Crests"
+	task.1E966709B2AA219A.title: "I've done this!"
 	task.1F0A2F22DEFCA291.title: "Any Fluid Input Hatch"
 	task.1FEE1621403E20F6.title: "Any Fluid Output Hatch"
 	task.2024A3B3CA873BFF.title: "Any Item Input Hatch"
 	task.203F7CD723D1C9AC.title: "Any Item Output Hatch"
 	task.20411633D70068EE.title: "Any Fluid Input Hatch"
+	task.205076214D1DCE05.title: "I've done this!"
 	task.208CFFD6D4B271D1.title: "Any Item Input Hatch"
 	task.20B32213DF9AA2CE.title: "Click to Acknowledge"
 	task.20D5069180BE4AED.title: "Any Item Output Hatch"
@@ -6398,6 +6401,7 @@
 	task.2EFE35A5F4181F40.title: "Basic Runes"
 	task.2F68B6A8F5B091CC.title: "Any Sharestone"
 	task.2FD8CC6D12B11BE7.title: "I've done this!"
+	task.2FE510959A24DF9E.title: "I've done this!"
 	task.3036FB8C4E37E13C.title: "Batching?"
 	task.304129E6AEC154C9.title: "Any Item Output Hatch"
 	task.304C1B2C9138E963.title: "NYI"
@@ -6566,6 +6570,7 @@
 	task.586CBE0E04B8861D.title: "Any Item Output Hatch"
 	task.589F426DE0D734E2.title: "Any Fluid Input Hatch"
 	task.58C680B632D7BE1B.title: "Channels"
+	task.58CB12C1BA773ED7.title: "I've done this!"
 	task.590262024D9F3475.title: "Any Item Output Hatch"
 	task.5907F6C245DE6BF1.title: "NYI"
 	task.592E1A7F0C40CF45.title: "Find Me"
@@ -6589,6 +6594,7 @@
 	task.5F7B9D69BCBD0FD2.title: "I've done this!"
 	task.5F9EF52316789DCF.title: "Any Item Output Hatch"
 	task.5FB8D8B0C9F3F3EE.title: "NYI"
+	task.5FF5EFCF894FA685.title: "I've done this!"
 	task.60348782D06ED859.title: "Any Fluid Input Hatch"
 	task.603B7FEBD79D0F0D.title: "Any Item Output Hatch"
 	task.6046579788B293D6.title: "NYI"
@@ -6602,6 +6608,7 @@
 	task.612874314623987D.title: "I've done this!"
 	task.61472E61A4C3C115.title: "Any Gemstone Chime"
 	task.615F3F51A2F3B534.title: "Any Staff"
+	task.6174C0B8B3CA7D73.title: "I've done this!"
 	task.6190BD009D789D58.title: "Any 32x Cobblestone"
 	task.61A8538EA6EDEB76.title: "Any Energy Input Hatch"
 	task.61C366078D14E1EB.title: "NYI"
@@ -6671,6 +6678,7 @@
 	task.74A03D0F85036522.title: "NYI"
 	task.74A81B11060780C8.title: "Four Polished Gemstones"
 	task.74B9866A6DC2D2D6.title: "I've done this!"
+	task.74DBDF5AD4F95275.title: "I've done this!"
 	task.75034EC6812B6626.title: "I've done this!"
 	task.7548B676CAD9CE65.title: "Any Gemstone Light"
 	task.75CEF70D8E9CFD8D.title: "Click to Acknowledge"
@@ -6708,6 +6716,7 @@
 	task.7D481262BFED19FC.title: "Any Energy Input Hatch"
 	task.7D730639A33A83F0.title: "16x Polished Crests"
 	task.7E3ABCDA3F60091E.title: "Any #spectrum:rock_candy"
+	task.7E6A8618213C07BC.title: "I've done this!"
 	task.7F08D344CEBF5EEA.title: "Click to Acknowledge"
 	task.7F2650857801772C.title: "Any Energy Input Hatch"
 	task.7F2915A7CEE76E01.title: "Any Fluid Output Hatch"

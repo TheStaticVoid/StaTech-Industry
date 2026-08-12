@@ -1429,6 +1429,9 @@
 		}
 		{
 			dependencies: ["37D2B90173E5852A"]
+			icon: {
+				id: "modern_industrialization:wood_tar_bucket"
+			}
 			id: "0C79576CA134241A"
 			rewards: [
 				{
@@ -1453,11 +1456,18 @@
 				}
 			]
 			shape: "rsquare"
-			tasks: [{
-				id: "509B654B2F61D653"
-				item: { count: 1, id: "modern_industrialization:wood_tar_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "509B654B2F61D653"
+					item: { count: 1, id: "modern_industrialization:wood_tar_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "74DBDF5AD4F95275"
+					type: "checkmark"
+				}
+			]
 			x: 10.0d
 			y: -3.5d
 		}

@@ -934,6 +934,9 @@
 		}
 		{
 			dependencies: ["452D070427B81877"]
+			icon: {
+				id: "modern_industrialization:creosote_bucket"
+			}
 			id: "0D0C9043FAA9C215"
 			rewards: [
 				{
@@ -958,11 +961,18 @@
 				}
 			]
 			size: 2.0d
-			tasks: [{
-				id: "7C4D5BD897E1874F"
-				item: { count: 1, id: "modern_industrialization:creosote_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2946741B9733C4B3"
+					item: { count: 1, id: "modern_industrialization:creosote_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2FE510959A24DF9E"
+					type: "checkmark"
+				}
+			]
 			x: 18.5d
 			y: 0.0d
 		}
@@ -1109,6 +1119,9 @@
 		}
 		{
 			dependencies: ["1D6BFD70720E391D"]
+			icon: {
+				id: "modern_industrialization:raw_synthetic_oil_bucket"
+			}
 			id: "71184B7B25919038"
 			rewards: [
 				{
@@ -1133,11 +1146,18 @@
 				}
 			]
 			size: 2.0d
-			tasks: [{
-				id: "17678BB0B7804582"
-				item: { count: 1, id: "modern_industrialization:raw_synthetic_oil_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "17678BB0B7804582"
+					item: { count: 1, id: "modern_industrialization:raw_synthetic_oil_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "58CB12C1BA773ED7"
+					type: "checkmark"
+				}
+			]
 			x: 21.5d
 			y: -2.5d
 		}

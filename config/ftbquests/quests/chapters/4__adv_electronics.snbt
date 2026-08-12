@@ -2514,6 +2514,9 @@
 		}
 		{
 			dependencies: ["533C4266A8D1D029"]
+			icon: {
+				id: "modern_industrialization:stainless_steel_hot_ingot"
+			}
 			id: "52F9AD700340E96F"
 			rewards: [{
 				id: "221BED7DF6AE351B"
@@ -2521,11 +2524,18 @@
 				xp: 25
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "0831B94342CAF0E7"
-				item: { count: 1, id: "modern_industrialization:stainless_steel_hot_ingot" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0831B94342CAF0E7"
+					item: { count: 1, id: "modern_industrialization:stainless_steel_hot_ingot" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5FF5EFCF894FA685"
+					type: "checkmark"
+				}
+			]
 			x: 27.0d
 			y: 0.0d
 		}
@@ -2647,6 +2657,9 @@
 		}
 		{
 			dependencies: ["473A7E0E59815A89"]
+			icon: {
+				id: "modern_industrialization:argon_bucket"
+			}
 			id: "3FB5440AC80A5A4F"
 			rewards: [
 				{
@@ -2675,17 +2688,24 @@
 				{
 					id: "1B467522D6E60A9D"
 					item: { count: 1, id: "modern_industrialization:oxygen_bucket" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "29A6B1D2D040ABE8"
 					item: { count: 1, id: "modern_industrialization:nitrogen_bucket" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0AA6E53CEAA9BE12"
 					item: { count: 1, id: "modern_industrialization:argon_bucket" }
+					optional_task: true
 					type: "item"
+				}
+				{
+					id: "205076214D1DCE05"
+					type: "checkmark"
 				}
 			]
 			x: 30.0d
@@ -2697,6 +2717,9 @@
 				"75EB9B7B85F791B9"
 			]
 			dependency_requirement: "one_completed"
+			icon: {
+				id: "modern_industrialization:annealed_copper_hot_ingot"
+			}
 			id: "5F7779B00391063B"
 			rewards: [{
 				id: "4D9C47BDA29DD6B8"
@@ -2704,16 +2727,26 @@
 				xp: 25
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "1703FF205E972A81"
-				item: { count: 1, id: "modern_industrialization:annealed_copper_hot_ingot" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1703FF205E972A81"
+					item: { count: 1, id: "modern_industrialization:annealed_copper_hot_ingot" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7E6A8618213C07BC"
+					type: "checkmark"
+				}
+			]
 			x: 30.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["3FB5440AC80A5A4F"]
+			icon: {
+				id: "modern_industrialization:cryofluid_bucket"
+			}
 			id: "6EBE89C8B00F9AF9"
 			rewards: [
 				{
@@ -4064,6 +4097,9 @@
 				"75EB9B7B85F791B9"
 				"0A451970D23EF1FB"
 			]
+			icon: {
+				id: "modern_industrialization:molten_enderium_bucket"
+			}
 			id: "487CF916A0FF784D"
 			rewards: [
 				{
@@ -4087,11 +4123,18 @@
 					type: "random"
 				}
 			]
-			tasks: [{
-				id: "741370982E841664"
-				item: { count: 1, id: "modern_industrialization:molten_enderium_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "741370982E841664"
+					item: { count: 1, id: "modern_industrialization:molten_enderium_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6174C0B8B3CA7D73"
+					type: "checkmark"
+				}
+			]
 			x: 21.5d
 			y: 8.0d
 		}
@@ -4186,17 +4229,27 @@
 				"55425F53F0716479"
 				"404C230FBF97A648"
 			]
+			icon: {
+				id: "modern_industrialization:kanthal_hot_ingot"
+			}
 			id: "7A958D06D18685F0"
 			rewards: [{
 				id: "57DFD8A7016ACC79"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				id: "6239BD9E3CD7F2BA"
-				item: { count: 1, id: "modern_industrialization:kanthal_hot_ingot" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6239BD9E3CD7F2BA"
+					item: { count: 1, id: "modern_industrialization:kanthal_hot_ingot" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E966709B2AA219A"
+					type: "checkmark"
+				}
+			]
 			x: 24.0d
 			y: 4.0d
 		}
@@ -4466,6 +4519,9 @@
 		}
 		{
 			dependencies: ["788B6EC0B441EEC8"]
+			icon: {
+				id: "modern_industrialization:molten_borosilicate_glass_bucket"
+			}
 			id: "312052D981433E12"
 			rewards: [
 				{
