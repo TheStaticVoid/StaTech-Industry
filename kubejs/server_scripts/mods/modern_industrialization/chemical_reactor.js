@@ -361,6 +361,6 @@ ServerEvents.recipes((event) => {
         400,
         [{ amount: 1, item: mi('silicon_p_doped_plate') }],
         [{ amount: 1, item: kj('silicon_extremely_p_doped_plate') }],
-        [{ amount: 125, fluid: mi('diborane') }]
+        [{ amount: 50, fluid: mi('diborane') }]
     );
 });
