@@ -7,6 +7,17 @@ ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/matter_fabricator/${id}`;
 
+    // -- ARTIFACT SYNTHESIS -- //
+    matter_fabricator(
+        event,
+        st('artifact_synthesis'),
+        32,
+        600,
+        [{ amount: 1, item: kj('artifact_dust') }],
+        [{ amount: 1, item: ar('mimic_spawn_egg') }]
+    );
+
+
     const CHEAP_BLOCKS = Ingredient.of([
         '#minecraft:logs',
         '#c:stones',

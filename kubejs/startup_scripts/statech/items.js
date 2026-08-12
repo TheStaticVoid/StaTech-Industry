@@ -393,6 +393,8 @@ StartupEvents.registry('item', (event) => {
 
     event.create('scrap').displayName('Scrap');
 
+    event.create('artifact_dust').displayName('Artifact Dust').rarity('Epic');
+
     event.create('uu_matter').displayName('UU Matter').rarity('Epic');
 
     event
