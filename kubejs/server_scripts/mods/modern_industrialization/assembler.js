@@ -1019,20 +1019,6 @@ ServerEvents.recipes((event) => {
         ]
     );
 
-    // // -- ULTRADENSE METAL BALL -- //
-    // assembler(
-    //     st('ultradense_metal_ball'),
-    //     512,
-    //     600,
-    //     [
-    //         { amount: 4, item: mi('tungstensteel_large_plate') },
-    //         { amount: 4, tag: '#c:plates/lead' },
-    //         { amount: 1, tag: '#c:plates/iridium' }
-    //     ],
-    //     [ { amount: 1, item: mi('ultradense_metal_ball') } ],
-    //     [ { amount: 1000, fluid: mi('neutronium') } ]
-    // );
-
     // -- CALORITE MACHINE CASING -- //
     assembler(
         event,
@@ -1097,19 +1083,6 @@ ServerEvents.recipes((event) => {
         ],
         [{ amount: 1, item: mi('enderium_machine_casing') }]
     );
-
-    /*     // -- ENDERIUM MACHINE PIPE CASING -- //
-    assembler(
-        event,
-        st('enderium_machine_casing_pipe'),
-        16,
-        200,
-        [
-            { amount: 1, item: mi('enderium_machine_casing') },
-            { amount: 6, item: mi('enderium_curved_plate')}
-        ],
-        [ { amount: 1, item: mi('enderium_machine_casing_pipe')} ]
-    ); */
 
     // -- OSTRUM MACHINE CASING -- //
     assembler(
@@ -1226,9 +1199,9 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mi('large_diesel_generator') }]
     );
 
-    // -------------------------
-    // ENDGAME RECIPES
-    // -------------------------
+    // --------------------- //
+    // -- ENDGAME RECIPES -- //
+    // --------------------- //
 
     // -- CREATIVE STORAGE UNIT -- //
     assembler(
@@ -1350,9 +1323,9 @@ ServerEvents.recipes((event) => {
         ]
     );
 
-    // -----------------//
+    // --------------- //
     // -- SPACE AGE -- //
-    // -----------------//
+    // --------------- //
 
     // -- TIERED SPACE PROBE -- //
     assembler(
@@ -1403,9 +1376,9 @@ ServerEvents.recipes((event) => {
         [{ amount: 4, item: kj('highly_advanced_space_probe') }]
     );
 
-    // ---------------------//
+    // ------------------- //
     // -- CREATE COMPAT -- //
-    // ---------------------//
+    // ------------------- //
 
     // -- ELECTRON TUBE -- //
     assembler(
@@ -1420,9 +1393,9 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: cr('electron_tube') }]
     );
 
-    // ---------------------//
+    // ------------------- //
     // -- XTONES COMPAT -- //
-    // ---------------------//
+    // ------------------- //
 
     const baseXtonesMaterials = [
         ['agon', 'stone_slab', '0'],

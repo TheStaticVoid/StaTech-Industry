@@ -320,18 +320,6 @@ ServerEvents.recipes((event) => {
         })
         .id(st('enderium_machine_casing'));
 
-    /*     // -- ENDERIUM MACHINE PIPE CASING -- //
-    event.shaped(mi('enderium_machine_casing_pipe'), [
-        'C C',
-        'CMC',
-        'C C'
-    ],
-    {
-        C: mi('enderium_curved_plate'),
-        M: mi('enderium_machine_casing')
-    })
-    .id(st('enderium_machine_casing_pipe')); */
-
     // -- OSTRUM MACHINE CASING -- //
     event
         .shaped(mi('ostrum_machine_casing'), ['PPP', 'PGP', 'PPP'], {
@@ -403,7 +391,7 @@ ServerEvents.recipes((event) => {
         .shapeless(mi('creative_barrel'), mi('creative_barrel'))
         .id(st('clear_items_from_creative_barrel'));
 
-    // -- Gravichestplate -- //
+    // -- GRAVICHESTPLATE -- //
     event
         .shaped(mi('gravichestplate'), ['PUP', 'PJP', 'CLC'], {
             P: '#c:plates/diamond',

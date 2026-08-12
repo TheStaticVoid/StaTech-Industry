@@ -267,7 +267,6 @@ MIMaterialEvents.addMaterials((event) => {
             .block('iron')
             .cable('hv')
             .machineCasing(12.0)
-            .pipeCasing(12.0)
             .defaultRecipes();
     });
 
