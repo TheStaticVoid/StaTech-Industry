@@ -1444,6 +1444,164 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         cr('zinc_ore'),
         'below'
     );
+
+    // -- ITEM/FLUID LOGISTICS -- //
+
+    // -- MI PIPE REMOVALS -- //
+
+    event.remove({ id: mi('steam_age/item_pipe_asbl') })
+    event.remove({ id: mi('assembler_generated/steam_age/item_pipe') })
+    event.remove({ id: mi('steam_age/fluid_pipe_asbl') })
+    event.remove({ id: mi('assembler_generated/steam_age/fluid_pipe') })
+
+    // -- DYE RECIPE REMOVALS -- // this is stupid >:(
+
+    event.remove({ id: mi('dyes/white/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/white/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/white/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/white/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/light_gray/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/light_gray/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/light_gray/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/light_gray/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/gray/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/gray/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/gray/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/gray/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/black/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/black/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/black/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/black/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/brown/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/brown/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/brown/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/brown/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/red/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/red/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/red/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/red/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/redorange/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/redorange/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/redorange/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/redorange/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/yellow/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/yellow/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/yellow/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/yellow/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/lime/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/lime/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/lime/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/lime/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/green/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/green/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/green/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/green/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/cyan/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/cyan/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/cyan/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/cyan/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/light_blue/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/light_blue/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/light_blue/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/light_blue/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/blue/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/blue/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/blue/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/blue/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/purple/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/purple/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/purple/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/purple/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/magenta/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/magenta/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/magenta/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/magenta/assembler/fluid_pipe_stained_glass') })
+
+    event.remove({ id: mi('dyes/pink/craft/item_pipe_direct') })
+    event.remove({ id: mi('dyes/pink/assembler/item_pipe_direct') })
+    event.remove({ id: mi('dyes/pink/craft/fluid_pipe_stained_glass') })
+    event.remove({ id: mi('dyes/pink/assembler/fluid_pipe_stained_glass') })
+
+    // -- RECIPE CHANGES -- //
+
+    event
+        .shaped('16x ' + 'moderndynamics:item_pipe', ['PPP', 'G G', 'PPP'], {
+            P: mi('bronze_plate'),
+            G: mi('steel_gear'),
+        })
+        .id('statech:moderndynamics/item_pipe');
+
+    event
+        .shaped('16x ' + 'moderndynamics:fluid_pipe', ['PPP', 'RGR', 'PPP'], {
+            P: mi('bronze_curved_plate'),
+            G: '#c:glass_panes',
+            R: mi('copper_rotor'),
+        })
+        .id('statech:moderndynamics/fluid_pipe');
+
+    assembler(
+        event,
+        st('bullshittium/moderndynamics/item_pipe'),
+        8,
+        200,
+        [
+            { amount: 6, item: mi('bronze_plate') },
+            { amount: 2, item: mi('steel_gear') },
+        ],
+        [{ amount: 16, item: 'moderndynamics:item_pipe' }]
+    );
+
+    assembler(
+        event,
+        st('bullshittium/moderndynamics/fluid_pipe'),
+        8,
+        200,
+        [
+            { amount: 6, item: mi('bronze_curved_plate') },
+            { amount: 2, item: mi('copper_rotor') },
+            { amount: 1, tag: 'c:glass_panes' },
+        ],
+        [{ amount: 16, item: 'moderndynamics:fluid_pipe' }]
+    );
+
+    assembler(
+        event,
+        st('bullshittium/item_pipe'),
+        8,
+        200,
+        [
+            { amount: 16, item: 'moderndynamics:item_pipe' },
+            { amount: 1, item: mi('electronic_circuit') },
+        ],
+        [{ amount: 16, item: mi('item_pipe') }]
+    );
+
+    assembler(
+        event,
+        st('bullshittium/fluid_pipe'),
+        8,
+        200,
+        [
+            { amount: 16, item: 'moderndynamics:fluid_pipe' },
+            { amount: 1, item: mi('electronic_circuit') },
+        ],
+        [{ amount: 16, item: mi('fluid_pipe') }]
+    );
+
 }) 
 
 // bullshittium stuff outside of this file:
@@ -1451,4 +1609,5 @@ ServerEvents.recipes(event => { // this probably isnt destructive
 ui stuff (handled by mode switcher)
 quantum armor wraps (handled by bullshittium_startup.js)
 everlasting beef/steak healing 0 hunger (also startup script)
+bronze quarry init stuff (startup)
 */
