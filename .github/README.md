@@ -8,14 +8,25 @@ extensive early game create requirements\
 tiered armor/tools\
 pre 1.1 worldshaper recipe
 make food a required challenge \
-  -take everlasting steak out back and shoot it\
-  -outright disable the auto feeding backpack item because canned food is cool
-restore ae2 hv gating (:gregtroll:)\
-  -all ae2 features will probably just be stainless/digital gated
-  gregify steam age multis\
-  -bricks already require steam machines to make so coke oven is unchanged\
-  -sbf has gt recipe
+> take everlasting steak out back and shoot it\
+> outright disable the auto feeding backpack item because canned food is cool
 
+restore ae2 hv gating (:gregtroll:)
+> all ae2 features will probably just be stainless/digital gated
+
+gregify steam age multis
+> bricks already require steam machines to make so coke oven is unchanged\
+> sbf has gt recipe
+
+raid system is in the form of hordes that show up every 3 nights and are combined with improved mob ai (absolutely no idea how balanced or fun this is in either direction)
+
+# Playtest Priority list:
+if its possible to implement a location based alternative to the quarry the steam quarry can be removed
+> gate item/fluid pipes a bit or make them more expensive if this happens (spooky)\
+> 
+have a need for overlooked/unnecessary addon stuff (EI farmer/brewery/steam machines)
+> will likely fit in with create changes\
+  
 # Priority List:
 bullshittium processing\
   -i want to straight up include the process in this message but maybe you also get a bullshittium residue fluid at the end that does other stuff\
@@ -23,12 +34,8 @@ bullshittium processing\
 diversify power\
   -i like the gt thing where steam is strictly lv/early mv, might buff benzene and diesel or something idk\
   -removing the mid to late game multi boilers is probably stupid but thats the best fix i can think of\
-if its possible to implement a location based alternative to the quarry the steam quarry can be removed\
-  -gate item/fluid pipes a bit or make them more expensive if this happens (spooky)\
 forced replicatorless\
   -creative items can be turned into tokens or something\
-have a need for overlooked/unnecessary addon stuff (EI farmer/brewery/steam machines)\
-  -will likely fit in with create changes\
   
 ## Backburner:
 dumb gt small dust lathe recipe in cutting machine\
@@ -36,8 +43,7 @@ dumb gt small dust lathe recipe in cutting machine\
   
 ## General TODO:
 more fusion stuff\
-some sort of factorio enemy raid system or something would be VERY cool but idk how feasible this is (ties together armor/food changes and adds base building requirements)\
-  -prrrrobably shoot or heavily gate void dim\
+prrrrobably shoot or heavily gate void dim\
   
 ## specific/conceptual changes:
 YAI fluid intake stuff if main doesn't do anything with it\
