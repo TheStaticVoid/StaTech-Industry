@@ -11,6 +11,9 @@ make food a required challenge \
 > take everlasting steak out back and shoot it\
 > outright disable the auto feeding backpack item because canned food is cool
 
+location based earlygame quarry
+> needs world gen changes to accomodate
+
 restore ae2 hv gating (:gregtroll:)
 > all ae2 features will probably just be stainless/digital gated
 
@@ -21,9 +24,8 @@ gregify steam age multis
 raid system is in the form of hordes that show up every 3 nights and are combined with improved mob ai (absolutely no idea how balanced or fun this is in either direction)
 
 # Playtest Priority list:
-if its possible to implement a location based alternative to the quarry the steam quarry can be removed
-> gate item/fluid pipes a bit or make them more expensive if this happens (spooky)\
-> 
+gate mi pipes behind something and encourage MD pipes\
+iron drill for quarries\
 have a need for overlooked/unnecessary addon stuff (EI farmer/brewery/steam machines)
 > will likely fit in with create changes\
   
