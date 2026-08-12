@@ -17,6 +17,7 @@ MISoundAddons.modifySounds((event) => {
     event.modifyDuration('boss_crusher', 134);
     event.modifyDuration('recycler', 39);
     event.modifyDuration('weapons_factory', 39);
+    event.modifyDuration('matter_fabricator', 30);
 
     // -- MODIFY VOLUMES -- //
 
