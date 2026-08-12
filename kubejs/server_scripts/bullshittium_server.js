@@ -1193,22 +1193,257 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         ]
     );
 
-    // -- QUARRY RECIPES -- //
+    // -- BRONZE QUARRY RECIPES -- //
 
     bronzeQuarry(
         event,
-        'statech:bullshittium/quarry/iron_vein',
+        'statech:bullshittium/bronze_quarry/bauxite_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mi('bauxite_ore'), probability: 0.8 },
+            { amount: 1, item: mc('iron_ore'), probability: 0.2 },
+        ],
+        mi('bauxite_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/lignite_vein',
         4,
         1200,
         [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
         [
-            { amount: 1, item: mc('iron_ore'), probability: 0.6 },
-            { amount: 1, item: mi('nickel_ore'), probability: 0.4 },
+            { amount: 1, item: mi('lignite_coal_ore'), probability: 0.5 },
+            { amount: 1, item: mc('coal_ore'), probability: 0.5 },
+        ],
+        mi('lignite_coal_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/coal_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mc('coal_ore'), probability: 1 },
+        ],
+        mc('coal_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/copper_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mc('copper_ore'), probability: 1 },
+        ],
+        mc('copper_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/diamond_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mc('diamond_ore'), probability: 0.7 },
+            { amount: 1, item: mc('coal_ore'), probability: 0.1 },
+            { amount: 1, item: mi('sapphire_ore'), probability: 0.1 },
+            { amount: 1, item: mi('fluorite_ore'), probability: 0.1 },
+        ],
+        mc('diamond_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/emerald_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mc('emerald_ore'), probability: 0.8 },
+            { amount: 1, item: mi('fluorite_ore'), probability: 0.2 },
+        ],
+        mc('emerald_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/gold_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mc('gold_ore'), probability: 0.8 },
+            { amount: 3, item: mi('raw_silver'), probability: 0.2 },
+        ],
+        mc('gold_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/iron_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mc('iron_ore'), probability: 0.8 },
+            { amount: 1, item: mi('nickel_ore'), probability: 0.2 },
         ],
         mc('iron_ore'),
         'below'
     );
 
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/lapis_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mc('lapis_ore'), probability: 0.9 },
+            { amount: 1, item: mi('fluorite_ore'), probability: 0.1 },
+        ],
+        mc('lapis_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/lead_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mi('lead_ore'), probability: 0.65 },
+            { amount: 3, item: mi('raw_silver'), probability: 0.35 },
+        ],
+        mi('lead_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/platinum_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('stainless_steel_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mi('platinum_ore'), probability: 0.95 },
+            { amount: 1, item: mi('iridium_ore'), probability: 0.05 },
+        ],
+        mi('platinum_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/quartz_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mi('quartz_ore'), probability: 0.80 },
+            { amount: 1, item: mi('antimony_ore'), probability: 0.20 },
+        ],
+        mi('quartz_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/redstone_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mc('redstone_ore'), probability: 0.80 },
+            { amount: 1, item: mi('ruby_ore'), probability: 0.20 },
+        ],
+        mc('redstone_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/salt_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mi('salt_ore'), probability: 1 },
+        ],
+        mi('salt_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/tin_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mi('tin_ore'), probability: 1 },
+        ],
+        mi('tin_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/titanium_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('stainless_steel_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mi('titanium_ore'), probability: 0.80 },
+            { amount: 1, item: mi('tungsten_ore'), probability: 0.20 },
+        ],
+        mi('titanium_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/uranium_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('titanium_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: mi('uranium_ore'), probability: 0.90 },
+            { amount: 1, item: mi('iridium_ore'), probability: 0.05 },
+            { amount: 1, item: mi('monazite_ore'), probability: 0.05 },
+        ],
+        mi('uranium_ore'),
+        'below'
+    );
+
+    bronzeQuarry(
+        event,
+        'statech:bullshittium/bronze_quarry/zinc_vein',
+        4,
+        1200,
+        [{ amount: 1, item: mi('zinc_drill'), probability: 0.04 }],
+        [
+            { amount: 1, item: cr('zinc_ore'), probability: 1 },
+        ],
+        cr('zinc_ore'),
+        'below'
+    );
 }) 
 
 // bullshittium stuff outside of this file:

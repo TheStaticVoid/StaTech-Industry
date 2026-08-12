@@ -65,7 +65,7 @@ MIMachineEvents.registerRecipeTypes((event) => {
 
 MIMachineEvents.registerMachines((event) => {
     const bronzeCasing = event.memberOfBlock(
-        mi('bronze_machine_casing')
+        mi('bronze_plated_bricks')
     );
     const bronzePipeCasing = event.memberOfBlock(
         mi('bronze_machine_casing_pipe')
@@ -80,7 +80,7 @@ MIMachineEvents.registerMachines((event) => {
     );
 
     const bronzeQuarryBuilder = event
-        .layeredShape('clean_stainless_steel_machine_casing', [
+        .layeredShape('bronze_plated_bricks', [
             // y=
             ['ccc', 'ccc', '   ', '   ', '   '],
             ['cRc', 'cRc', 'PRP', 'PRP', 'PCP'],
@@ -108,8 +108,8 @@ MIMachineEvents.registerMachines((event) => {
         (fluidOutputs) => { },
 
         /* Model Configuration */
-        'clean_stainless_steel_machine_casing', // casing of the controller
-        'bronze_quarry', // overlay folder
+        'bronze_plated_bricks', // casing of the controller
+        'steam_quarry', // overlay folder
         true, // front overlay
         false, // top overlay
         false // side overlay
