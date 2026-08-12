@@ -16,11 +16,6 @@ ServerEvents.recipes((event) => {
         mi('assembler_generated/steam_age/bronze/furnace'),
         mi('assembler_generated/steam_age/bronze/boiler'),
         mi('assembler_generated/electric_age/component/craft/op_amp'),
-        /*      mi('assembler_generated/electric_age/battery/lv_battery'),
-        mi('assembler_generated/electric_age/battery/silicon_battery'), */
-        mi('assembler_generated/electric_age/battery/sodium_battery'),
-        mi('assembler_generated/electric_age/battery/cadmium_battery'),
-        mi('assembler_generated/electric_age/battery/plutonium_battery'),
         mi('materials/stainless_steel/assembler/tank'),
         mi('materials/titanium/assembler/tank'),
         mi('materials/tungstensteel/assembler/tank'),
@@ -275,86 +270,6 @@ ServerEvents.recipes((event) => {
             { amount: 1, item: ae('formation_core') },
         ],
         [{ amount: 1, item: ae('export_bus') }]
-    );
-
-    // -- REDSTONE BATTERY -- //
-    /*     assembler(
-        event,
-        st('redstone_battery'),
-        8,
-        200,
-        [
-            { amount: 1, item: mi('battery_alloy_plate') },
-            { amount: 2, item: mi('tin_cable') },
-            { amount: 4, item: mi('battery_alloy_curved_plate') },
-            { amount: 2, item: mc('redstone') }
-        ],
-        [ { amount: 2, item: mi('redstone_battery') } ],
-        [ { amount: 100, fluid: mi('lithium') } ]
-    ); */
-
-    // -- SILICON BATTERY -- //
-    /*     assembler(
-        event,
-        st('silicon_battery'),
-        8,
-        200,
-        [
-            { amount: 1, item: mi('battery_alloy_plate') },
-            { amount: 2, item: mi('electrum_cable') },
-            { amount: 4, item: mi('battery_alloy_curved_plate') },
-            { amount: 2, item: mi('silicon_dust') }
-        ],
-        [ { amount: 2, item: mi('silicon_battery') } ],
-        [ { amount: 100, fluid: mi('lithium') } ]
-    ); */
-
-    // -- SODIUM BATTERY -- //
-    assembler(
-        event,
-        st('sodium_battery'),
-        8,
-        200,
-        [
-            { amount: 1, item: mi('battery_alloy_plate') },
-            { amount: 2, item: mi('aluminum_cable') },
-            { amount: 4, item: mi('battery_alloy_curved_plate') },
-            { amount: 2, item: mi('sodium_dust') },
-        ],
-        [{ amount: 2, item: mi('sodium_battery') }],
-        [{ amount: 100, fluid: mi('lithium') }]
-    );
-
-    // -- CADMIUM BATTERY -- //
-    assembler(
-        event,
-        st('cadmium_battery'),
-        16,
-        200,
-        [
-            { amount: 1, item: mi('battery_alloy_plate') },
-            { amount: 2, item: mi('annealed_copper_cable') },
-            { amount: 4, item: mi('battery_alloy_curved_plate') },
-            { amount: 2, item: mi('cadmium_dust') },
-        ],
-        [{ amount: 2, item: mi('cadmium_battery') }],
-        [{ amount: 100, fluid: mi('lithium') }]
-    );
-
-    // -- PLUTONIUM BATTERY -- //
-    assembler(
-        event,
-        st('plutonium_battery'),
-        32,
-        200,
-        [
-            { amount: 1, item: mi('battery_alloy_plate') },
-            { amount: 2, item: mi('superconductor_cable') },
-            { amount: 4, item: mi('battery_alloy_curved_plate') },
-            { amount: 2, item: mi('plutonium_dust') },
-        ],
-        [{ amount: 2, item: mi('plutonium_battery') }],
-        [{ amount: 100, fluid: mi('lithium') }]
     );
 
     // -- CONCURRENT PROCESSOR -- //

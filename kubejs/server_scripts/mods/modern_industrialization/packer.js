@@ -276,4 +276,78 @@ ServerEvents.recipes((event) => {
         [{ amount: 9, item: cr('brass_nugget') }],
         [{ amount: 1, item: cr('brass_ingot') }]
     );
+
+    // ---------------------- //
+    // -- BUFFED BATTERIES -- //
+    // ---------------------- //
+
+    // -- REDSTONE BATTERY -- //
+    packer(
+        event,
+        st('batteries/redstone'),
+        8,
+        400,
+        [
+            { amount: 2, item: kj('battery_casing') },
+            { amount: 2, item: mc('redstone') },
+            { amount: 2, item: mi('tin_cable') },
+        ],
+        [{ amount: 2, item: mi('redstone_battery') }]
+    );
+
+    // -- SILICON BATTERY -- //
+    packer(
+        event,
+        st('batteries/silicon'),
+        8,
+        400,
+        [
+            { amount: 2, item: kj('battery_casing') },
+            { amount: 2, item: mi('silicon_dust') },
+            { amount: 2, item: mi('electrum_cable') },
+        ],
+        [{ amount: 2, item: mi('silicon_battery') }]
+    );
+
+    // -- SODIUM BATTERY -- //
+    packer(
+        event,
+        st('batteries/sodium'),
+        8,
+        400,
+        [
+            { amount: 2, item: kj('battery_casing') },
+            { amount: 2, item: mi('sodium_dust') },
+            { amount: 2, item: mi('aluminum_cable') },
+        ],
+        [{ amount: 2, item: mi('sodium_battery') }]
+    );
+
+    // -- CADMIUM BATTERY -- //
+    packer(
+        event,
+        st('batteries/cadmium'),
+        8,
+        400,
+        [
+            { amount: 2, item: kj('battery_casing') },
+            { amount: 2, item: mi('cadmium_dust') },
+            { amount: 2, item: mi('annealed_copper_cable') },
+        ],
+        [{ amount: 2, item: mi('cadmium_battery') }]
+    );
+
+    // -- PLUTONIUM BATTERY -- //
+    packer(
+        event,
+        st('batteries/plutonium'),
+        8,
+        400,
+        [
+            { amount: 2, item: kj('battery_casing') },
+            { amount: 2, item: mi('plutonium_dust') },
+            { amount: 2, item: mi('superconductor_cable') },
+        ],
+        [{ amount: 2, item: mi('plutonium_battery') }]
+    );
 });

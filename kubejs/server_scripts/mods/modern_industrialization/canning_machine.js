@@ -76,4 +76,18 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: kj('greg_cola') }],
         [{ amount: 100, fluid: mi('polytetrafluoroethylene') }]
     );
+
+    // -- BATTERY CASING -- //
+    canningMachine(
+        event,
+        st('battery_casing'),
+        8,
+        200,
+        [
+            { amount: 1, item: mi('battery_alloy_plate') },
+            { amount: 4, item: mi('battery_alloy_curved_plate') },
+        ],
+        [{ amount: 2, item: kj('battery_casing') }],
+        [{ amount: 100, fluid: mi('lithium') }]
+    );
 });
