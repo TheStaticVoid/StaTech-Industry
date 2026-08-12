@@ -10,7 +10,6 @@ ServerEvents.recipes((event) => {
 
     // -- EXTENDED INDUSTRIALIZATION REMOVED RECIPES -- //
     const EI_DELETED_ITEMS = [
-        ei('vanilla_recipes/blast_furnace/blazing_essence'),
         ei('machines/large_electric_furnace/assembler'),
         ei('machines/large_electric_furnace/craft'),
         ei('machines/bending_machine/assembler/bronze'),
@@ -221,22 +220,6 @@ ServerEvents.recipes((event) => {
         ],
         [{ amount: 1, item: ei('machine_chainer') }],
         [{ amount: 50, fluid: mi('polyethylene') }]
-    );
-
-    // ------------------- //
-    // -- BLAST FURNACE -- //
-    // ------------------- //
-
-    // -- BLAZING ESSENCE -- //
-    blastFurnace(
-        event,
-        st('blazing_essence'),
-        2,
-        200,
-        [{ amount: 5, item: mc('blaze_powder') }],
-        null,
-        null,
-        [{ amount: 100, fluid: ei('blazing_essence') }]
     );
 
     // -- TESLA RECEIVERS FROM ENERGY INPUT HATCH -- //

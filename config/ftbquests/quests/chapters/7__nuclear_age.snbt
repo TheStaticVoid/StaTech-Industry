@@ -254,40 +254,6 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["2F0042673C0E3910"]
-			id: "518D1E231A932ECB"
-			rewards: [
-				{
-					count: 5
-					id: "5EA45A0076F629A1"
-					item: {
-						count: 1
-						id: "kubejs:coin_legendary"
-					}
-					type: "item"
-				}
-				{
-					id: "48C55E37CBEBF8AF"
-					type: "xp"
-					xp: 100
-				}
-				{
-					exclude_from_claim_all: true
-					id: "6A7C683A6D05C782"
-					table_id: 747934807067920818L
-					type: "random"
-				}
-			]
-			shape: "square"
-			tasks: [{
-				id: "75552059BFCFE513"
-				item: { count: 1, id: "modern_industrialization:tungstensteel_hot_ingot" }
-				type: "item"
-			}]
-			x: 3.5d
-			y: 0.5d
-		}
-		{
 			dependencies: ["0C73D9DE1468EBB1"]
 			id: "43D2E858079C12E0"
 			rewards: [
@@ -390,7 +356,7 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["518D1E231A932ECB"]
+			dependencies: ["2F0042673C0E3910"]
 			id: "5856A6281F140AEF"
 			rewards: [
 				{
@@ -421,7 +387,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["229F2B56037A748B"]
@@ -452,7 +418,7 @@
 				}
 			]
 			shape: "rsquare"
-			size: 1.5d
+			size: 1.25d
 			tasks: [
 				{
 					id: "63CEF38E23A9D486"
@@ -499,7 +465,7 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
+			x: 5.25d
 			y: 4.5d
 		}
 		{
@@ -760,8 +726,8 @@
 				item: { count: 1, id: "kubejs:space_probe" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 4.5d
+			x: 5.25d
+			y: 6.0d
 		}
 		{
 			dependencies: ["494104440623C825"]
@@ -942,7 +908,7 @@
 				item: { count: 1, id: "modern_industrialization:tungstensteel_coil" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 4.5d
 			y: 2.5d
 		}
 		{
@@ -1044,7 +1010,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5856A6281F140AEF"]
@@ -1078,7 +1044,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5856A6281F140AEF"]
@@ -1111,8 +1077,8 @@
 				item: { count: 1, id: "functionalstorage:netherite_upgrade" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.0d
+			x: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2F0042673C0E3910"]
@@ -1282,14 +1248,11 @@
 				item: { count: 1, id: "tankstorage:tank_7" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.0d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
-			dependencies: [
-				"649FE8A688C74216"
-				"741D66D89EE0C684"
-			]
+			dependencies: ["229F2B56037A748B"]
 			id: "6D6C2CCEA0CA1D26"
 			rewards: [
 				{
@@ -1313,13 +1276,15 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
+			size: 1.25d
 			tasks: [{
 				id: "2CBDFB95BD4DD7EC"
 				item: { count: 1, id: "industrialization_overdrive:vajra" }
 				type: "item"
 			}]
-			x: 7.0204081632653015d
-			y: 1.7295918367346985d
+			x: 3.75d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2F0042673C0E3910"]

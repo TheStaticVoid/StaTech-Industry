@@ -1596,11 +1596,22 @@
 		{
 			dependencies: ["6B122F5D5B245180"]
 			id: "2A5B2CD92B0C2B12"
-			rewards: [{
-				id: "68AEFB5268D47B55"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "7DA4288C05ADEBC8"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "68AEFB5268D47B55"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "2BF403044646E54C"
 				item: { count: 1, id: "modern_industrialization:steel_drill" }
@@ -1612,11 +1623,22 @@
 		{
 			dependencies: ["6B122F5D5B245180"]
 			id: "74C1D42994FAB98C"
-			rewards: [{
-				id: "0D543B952CF4FF20"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "459375A098D813C1"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0D543B952CF4FF20"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "49CF934265663770"
 				item: { count: 1, id: "modern_industrialization:gold_drill" }
@@ -2119,6 +2141,7 @@
 				{
 					id: "280CC058F661BE50"
 					item: { count: 1, id: "modern_industrialization:manganese_sulfuric_solution_bucket" }
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2492,6 +2515,11 @@
 		{
 			dependencies: ["533C4266A8D1D029"]
 			id: "52F9AD700340E96F"
+			rewards: [{
+				id: "221BED7DF6AE351B"
+				type: "xp"
+				xp: 25
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "0831B94342CAF0E7"
@@ -2502,8 +2530,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["52F9AD700340E96F"]
+			dependencies: [
+				"52F9AD700340E96F"
+				"533C4266A8D1D029"
+			]
 			id: "1AA4844D1D10B834"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					count: 7
@@ -2715,8 +2747,12 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["5F7779B00391063B"]
+			dependencies: [
+				"5F7779B00391063B"
+				"75EB9B7B85F791B9"
+			]
 			id: "37D9B9D06AD67FDD"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					count: 7
@@ -4266,49 +4302,79 @@
 		}
 		{
 			dependencies: ["2A5B2CD92B0C2B12"]
+			icon: {
+				id: "modern_industrialization:kernite_dust"
+			}
 			id: "6512025C0A70B6EB"
 			rewards: [{
 				id: "4B01F36672201788"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "0B1A32D1FE7D48A4"
-				item: { count: 1, id: "modern_industrialization:kernite_dust" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0B1A32D1FE7D48A4"
+					item: { count: 1, id: "modern_industrialization:kernite_dust" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "28C8C241900CA267"
+					type: "checkmark"
+				}
+			]
 			x: 6.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["6512025C0A70B6EB"]
+			icon: {
+				id: "modern_industrialization:boron_trioxide_dust"
+			}
 			id: "641117E0F688F40A"
 			rewards: [{
 				id: "4B0A6FBFAE81692D"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "79AEBB3A0499FD8D"
-				item: { count: 1, id: "modern_industrialization:boron_trioxide_dust" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "79AEBB3A0499FD8D"
+					item: { count: 1, id: "modern_industrialization:boron_trioxide_dust" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7BE7236E4F7C1F2D"
+					type: "checkmark"
+				}
+			]
 			x: 5.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["641117E0F688F40A"]
+			icon: {
+				id: "kubejs:boron_quartz_blend"
+			}
 			id: "788B6EC0B441EEC8"
 			rewards: [{
 				id: "136AB44AD7ADB72E"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "27F11AD58BEB27BA"
-				item: { count: 1, id: "kubejs:boron_quartz_blend" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "27F11AD58BEB27BA"
+					item: { count: 1, id: "kubejs:boron_quartz_blend" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3A544D6C55C31BBF"
+					type: "checkmark"
+				}
+			]
 			x: 6.5d
 			y: -8.0d
 		}
@@ -4401,6 +4467,28 @@
 		{
 			dependencies: ["788B6EC0B441EEC8"]
 			id: "312052D981433E12"
+			rewards: [
+				{
+					count: 5
+					id: "0C587DCC1ABF593A"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "08574878D8AE301D"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2871020C3877A5CB"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
 			tasks: [{
 				id: "560687FFEE30F328"
 				item: { count: 1, id: "modern_industrialization:molten_borosilicate_glass_bucket" }

@@ -1481,7 +1481,7 @@
 	quest.1EE490D2BEE9913E.title: "The Spectrum Focus"
 	quest.1EFA4209205571E3.quest_desc: ["The &aElectric Macerator&r is the electrical version of the &6Steam Macerator&r. It opens up the ability to make &dCalcite&r and &dObsidian Dust&r, and it will process recipes&d much faster&r than its &7Steam&r counterpart."]
 	quest.1F29C93DA3E7F2F3.quest_desc: ["The &aME Extended IO Port&r is an advanced version of the regular &bME IO Port&r that is &da lot faster&r and has &dmore upgrade slots&r."]
-	quest.1F2B88F101C46C2C.quest_desc: ["An upgrade to the &4Sacred Salt&r..."]
+	quest.1F2B88F101C46C2C.quest_desc: ["An &aupgrade&r to the &cSacred Salt&r."]
 	quest.1F3EC7D6BFE3E0A8.quest_desc: ["The &bWrench&r is an essential tool in &eCreate&r. It allows you to &drotate&r blocks, break &eCreate&r blocks instantly by shift-right clicking, as well as several other important configurations."]
 	quest.1F46D51397CE34AC.quest_desc: ["With your new fancy circuits you can now craft even more complicated components. "]
 	quest.1F4A0D43BADF0146.quest_desc: [
@@ -1639,6 +1639,7 @@
 		""
 		"The specifications of the &9Neutron Source&r items can be found in EMI by pressing '&eu&r' on the &dNuclear Rod Irradiator&r. A &bGuideME&r entry can also be viewed by holding '&eG&r' whilst hovering over it in the inventory or in EMI."
 	]
+	quest.216F13398546D8F6.quest_subtitle: "Total Rod Oblitiration"
 	quest.21C04730D77746DC.quest_desc: ["By combining printed &bAE2 circuits&r and &7silicon&r in an &eAssembler&r you will create the basic components for all of &eAE2&r. The &cMolten Redstone&r required for the recipe can be acquired using a &3Blast Furnace&r."]
 	quest.21C04730D77746DC.title: "AE2 Processors"
 	quest.21CB72E94FBBBACC.quest_desc: ["This liquid enables you to create a compact setup for farming &3Ender Pearls&r."]
@@ -2285,7 +2286,7 @@
 		"These &abatteries&r on their own &cdo not hold&r a charge."
 	]
 	quest.2F56D5FE486BA699.quest_desc: [
-		"With &bPlatinum&r, you can now create the sixth tier of &aDank&r. This tier has &d54 slots&r with a max stack size of &6262,144&r. "
+		"With &bPlatinum&r, you can now create the sixth tier of &aBank&r. This tier has &d54 slots&r with a max stack size of &6262,144&r. "
 		""
 		"It costs a lot of &bPlatinum&r, might be better to upgrade once you have a decent surplus."
 		""
@@ -3378,7 +3379,7 @@
 		""
 		"These &aplates&r are &cexpensive to do by hand&r, but the ratio gets much better in the &eForge Hammer&r!"
 	]
-	quest.469E0602F05C71AA.quest_desc: ["The &9Sacred Balm&r has a &2smaller AoE&r in preventing &4hostile mob spawns&r than the Salt or Salve, but lasts &9much longer&r."]
+	quest.469E0602F05C71AA.quest_desc: ["The &9Sacred Balm&r has a &csmaller AoE&r in preventing &4hostile mob spawns&r than the Salt or Salve, but lasts &2much longer&r."]
 	quest.46B810CC193254EA.quest_desc: [
 		"So when channels become a nuisance, you can turn to &bME P2P Tunnels&r. When configured for ME, they allow you to move channels from point to point. This allows you to move up to 64 channels per pair of &bME P2P Tunnel&r."
 		""
@@ -3427,7 +3428,7 @@
 	quest.481AEE82687B9630.quest_desc: [
 		"The &d&lPulse Detonation Generator&r&r uses an &6&oexplosive&r&r and a &9&ofluid&r&r to generate power."
 		""
-		"&oHow viable is it?&r"
+		"&oThis way to generate power is largely untested. Dip your feet in the unexplored waters if you dare!&r"
 	]
 	quest.481AEE82687B9630.quest_subtitle: "Kaboom!"
 	quest.48317EF53F769C1B.quest_desc: [
@@ -3443,7 +3444,7 @@
 	quest.48360151E8BFCD9C.quest_desc: [
 		"Provides the wearer with a permanent &6fire resistance&r effect."
 		""
-		"&oPairs well with the &4Ashen Circlet&r...&o"
+		"Pairs well with the &4Ashen Circlet&r."
 	]
 	quest.48360151E8BFCD9C.quest_subtitle: "It burns!"
 	quest.4857CFD9BEC908EA.quest_desc: [
@@ -3616,11 +3617,11 @@
 	quest.4BCA536EA971A125.title: "Quick Restock"
 	quest.4BD650914789713D.quest_desc: ["&aHydra Chops&r are dropped by the &dHydra&r"]
 	quest.4BDF575E8688D537.quest_desc: [
-		"The &2Recycler&r is able to recycle various items into &9scrap&r. "
+		"The &aRecycler&r is able to recycle various items into &escrap&r. "
 		""
-		"The &o&zrarer&r&r the item, the &4higher the chance&r a piece of &9scrap&r is produced."
+		"Generally speaking, feeding it &o&brarer&r items will give you a &dhigher chance&r to obtain &escrap&r."
 		""
-		"&9Scrap&r can be turned into &5UU Matter&r (&onot the fluid&r) in the &2Implosion Compressor&r at a &664:1 ratio&r, and &5UU Matter&r (&o&estill&r&r &onot the fluid&r) can be turned into a &4Tier 1 Coin&r."
+		"&eScrap&r can be turned into &5UU Matter&r (not the fluid) in the &aImplosion Compressor&r at a &624:1 ratio&r, and &5UU Matter&r (&o&estill&r not the fluid&r) can be turned into &9Tier 1 Coins&r or different blocks and items in the &dMatter Fabricator&r."
 	]
 	quest.4BDF575E8688D537.quest_subtitle: "I hardly even know her!"
 	quest.4BFCCF11AC1E8126.quest_desc: ["The &bDiamond Barrel&r is a long awaited upgrade to your storage barrels. It allows you to store &e72 stacks of items&r."]
@@ -3628,7 +3629,7 @@
 	quest.4C21AE3DBA1206E0.quest_desc: ["&oIt's a mailbox&r."]
 	quest.4C21AE3DBA1206E0.quest_subtitle: "You've got mail!"
 	quest.4C21AE3DBA1206E0.title: "Postbox"
-	quest.4C36957653876C0B.quest_desc: ["Low on chlorine? You can use bronze drills in an Ocean biome to obtain &1Salt Water&r, which can be processed into &eBrine&r and &aChlorine&r."]
+	quest.4C36957653876C0B.quest_desc: ["Low on chlorine? You can use bronze drills in the Oil Rig to obtain &1Salt Water&r, which can be processed into &eBrine&r and &aChlorine&r."]
 	quest.4C40D7303E037FDC.quest_desc: [
 		"The &aLarge Steam Boiler&r is an upgraded version of the smaller &6Bronze&r and &eSteel&r Boilers. &cIt uses fuels 8 times faster than the Furnace&r, but it produces &3256 mb/t&r of &7steam&r when fully heated."
 		""
@@ -3951,7 +3952,6 @@
 		"As you progress further, recipes using the &aChemical Reactor&r will become much more common. &2Plan to make a lot of these&r."
 	]
 	quest.517C3D6FBC5FEB2A.quest_subtitle: "No PHD required"
-	quest.518D1E231A932ECB.quest_desc: ["Combining &dTungsten&r and &aSteel&r in a &bKanthal&r &eEBF&r will slowly, but surely, produce a &eHot Tungstensteel Ingot&r. This will need to be cooled in a &3Vacuum Freezer&r before it can be used."]
 	quest.51A4E097156A6DC1.quest_desc: ["The wearer slightly heals from attacks"]
 	quest.51A8CF3031F2765A.quest_desc: ["&aHeavy Fuel&r can produce &e240 EU per 1 mB&r used in a &bDiesel Generator&r. It's not as good as &6Diesel&r, so it's either better to make &6Diesel&r or continue to &3Steam-Cracking&r process."]
 	quest.51AC6E4C38AFEC7A.quest_desc: ["The &aME Extended Drive&r is an advanced version of the &bME Drive&r which can hold &atwice as many drives&r (&d20 drives&r) as its regular counterpart!"]
@@ -4010,6 +4010,12 @@
 		""
 		"http://www.benimatic.com/tfwiki/index.php?title=Crumble_Horn"
 	]
+	quest.52707EF495640F90.quest_desc: [
+		"The &dHeat Exchanger&r can use &6Lava&r as &efuel&r to create &7steam&r, as an alternate to using &eboilers&r with solid or liquid fuels."
+		""
+		"You can obtain a practically &ainfinite&r amount of &6lava&r by feeding &eGold Drills&r into a &bOil Drilling Rig&r."
+	]
+	quest.52707EF495640F90.title: "Lava Power"
 	quest.5270F349E0B5F580.quest_desc: ["&bFluid Cells&r are similar to the item storage counterparts, except they hold fluids (duh!). &bFluid storage cells&r can hold up to 18 distinct types of fluids; the volume of fluid they can store depend in part on how many types they are holding, and their storage capacity."]
 	quest.5280346E492CDFF6.quest_desc: [
 		"Some materials in &eCreate&r need to be processed in a specific order. In &dREI&r you can see in which order an item needs to have machines interact with it to produce the desired outcome."
@@ -4184,7 +4190,7 @@
 	]
 	quest.54E44D576AC03FED.quest_subtitle: "Don't sue me Bethesda"
 	quest.54EC9C18424951EC.quest_desc: [
-		"&dPetrochemistry&r is the science of breaking &0Crude Oil&r into it's useful components. While looking at the quest tree may seem daunting, it's not as bad as you think. I highly recommend checking through &dREI&r to work through what process you will need to get your desired outcome."
+		"&dPetrochemistry&r is the science of breaking &0Crude Oil&r into it's useful components. While looking at the quest tree may seem daunting, it's not as bad as you think. I highly recommend checking through &dEMI&r to work through what process you will need to get your desired outcome."
 		""
 		"&cNOTE&r: I don't recommend rushing to make dozens of single block &6Distilleries&r for all the outputs just yet, you will soon unlock the &2Distillation Tower&r, which will allow you to use a &esingle multiblock to get multiple outputs at once&r."
 		""
@@ -4369,7 +4375,11 @@
 	]
 	quest.57C1BE11C74FDAB8.quest_subtitle: "Overdrive!"
 	quest.5816233D061D77DB.quest_desc: [""]
-	quest.5856A6281F140AEF.quest_desc: ["&bTungstensteel&r is an improved version of Tungsten that is extremely durable and versatile. It's a key component in the &eQuantum Space Probe Launcher&r and &eQuantum Circuit components&r"]
+	quest.5856A6281F140AEF.quest_desc: [
+		"Combining &dTungsten&r and &aSteel&r in a &bKanthal&r &eEBF&r will slowly, but surely, produce a &eHot Tungstensteel Ingot&r. This will need to be cooled in a &3Vacuum Freezer&r before it can be used."
+		""
+		"&bTungstensteel&r is an improved version of Tungsten that is extremely durable and versatile. It's a key component in the &eQuantum Space Probe Launcher&r and &eQuantum Circuit components&r"
+	]
 	quest.58577BDF79E67EA7.quest_desc: [
 		"Before you continue, it's pivotal to know how the &arotation&r and &bstress&r units work in &eCreate&r."
 		""
@@ -4824,6 +4834,7 @@
 		""
 		"When placed in the world, you can right-click them with a bucket or other tanks to &9transfer fluids&r. &eThey maintain their contents when broken&r, and you can stack them if they have the same contents."
 	]
+	quest.6209459F9CC634BA.quest_desc: ["Smelted platinum needs &bvacuum freezing&r. It is mainly used in the creation of &dhigh tier circuit components&r, but can be also used as  a &9EV cable&r and to upgrade your backpack later on."]
 	quest.62103F0E617EBA7C.quest_desc: [
 		"The following quests are in relation to &eAE2&r's autocrafting functionality."
 		""
@@ -5421,6 +5432,8 @@
 		"Not the best method, but if you can automate &clava&r, it can provide a useful energy generation."
 	]
 	quest.70658F7FAF3AB407.quest_desc: ["The &aBlast Alloy Smelter&r is a batching multiblock version of the &bAlloy Smelter&r. It can do &6batches of 16&r and has a &625% EU discount&r!"]
+	quest.7085C50FC1308963.quest_desc: ["Ender eyes are &egated&r behind the &eChemical Reactor&r, which is available at the start of chapter 4. &oHowever&r, if you want to go to &dthe End&r or &dunlock&r items normally &egated&r by this item, you &acan make them early&r... at a greater cost."]
+	quest.7085C50FC1308963.quest_subtitle: "Earlier than MV?"
 	quest.708C8DB77161AC0B.quest_desc: [
 		"Having dealt with the &dgems&r long enough, you now find yourself able to shape these fragile resources in the finest ways."
 		""
@@ -5440,9 +5453,9 @@
 	]
 	quest.71184B7B25919038.title: "Raw Synthetic Oil"
 	quest.712C81B29AF9D306.quest_desc: [
-		"Can make &4items&r look like &9other items&r and can make armor &2invisible&r"
+		"Can make &aany items&r look like any &9other items&r. It can also make &aany item or armor&r &9invisible&r. "
 		""
-		"&zA kind of camouflage&r"
+		"Very useful if you want the &abenefit of armor&r, but if you also want to &dshow your skin&r!"
 	]
 	quest.712C81B29AF9D306.title: "Transmogrification"
 	quest.716069E7FC21AF70.quest_desc: ["&aDiesel&r can produce &e400 EU per 1 mB&r used in a &bDiesel Generator&r. By combining &6Light and Heavy Fuel&r you can create &aDiesel&r. &aDiesel&r is a decent fuel source to use in &aDiesel Generators&r and &aDiesel &rtools."]
@@ -5826,9 +5839,9 @@
 	]
 	quest.78CB9BA46EAD5F03.title: "Create Crafts \\& Additions"
 	quest.78DFD8815E2AE291.quest_desc: [
-		"Does not get consumed when eaten, meaning it's an infinite food source."
+		"Does &enot&r get &econsumed&r when eaten, meaning it's an &dinfinite food source&r."
 		""
-		"Make sure to eat it before cooking for it to count towards your Spice of Life extra health!"
+		"Make sure to eat it &cbefore&r cooking for it to count towards your &aSpice of Life extra health&r!"
 	]
 	quest.78E1B9C83BB915D4.quest_desc: [
 		"This &aimmense multiblock&r is the final key to unlocking the creation of &zSingularities&r. It's both &2extremely large&r and &3extremely expensive&r. Fully constructing this is a &atrue test of your factory's power&r. At this point you should be &5extensively overclocking machines&r and everything should be running smoothly to create all you will need for this."
@@ -6353,6 +6366,7 @@
 	task.27D64A7862FCCCE4.title: "Any Elevator"
 	task.284F7FA0D9A22093.title: "2x Chiseled Blocks"
 	task.289E89E0F9C1E221.title: "Any Gemstone Lamp"
+	task.28C8C241900CA267.title: "I've done this!"
 	task.28F2DD2BCE71EEB4.title: "NYI"
 	task.2925568E6FC1DD32.title: "Any Energy Input Hatch"
 	task.29516647E8323463.title: "NYI"
@@ -6422,6 +6436,7 @@
 	task.39C63B199AA904F9.title: "Click to Acknowledge"
 	task.39CC1984CE1589CB.title: "NYI"
 	task.3A2ADE76DB297471.title: "Any Item Output Hatch"
+	task.3A544D6C55C31BBF.title: "I've done this!"
 	task.3AA9F6C394B75906.title: "8x Polished Pillars"
 	task.3AB965878A5E3D2F.title: "NYI"
 	task.3B19D63490967A0A.title: "Click to Acknowledge"
@@ -6682,6 +6697,7 @@
 	task.7B87AAE715AED2FF.title: "Overclocking"
 	task.7BA56968A1489BC1.title: "Any #create:table_cloths"
 	task.7BA8AE5FB7D8AC6E.title: "Any Energy Input Hatch"
+	task.7BE7236E4F7C1F2D.title: "I've done this!"
 	task.7C0E9D75A384FF71.title: "16x Gemstone Chiseled Blocks"
 	task.7C63C3425202B108.title: "Any Item Output Hatch"
 	task.7CC386E05063A8DE.title: "Any Cheese Wedge"
