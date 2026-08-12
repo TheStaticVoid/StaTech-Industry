@@ -2251,6 +2251,16 @@
 			id: "37DD0F1D584C6A05"
 			rewards: [
 				{
+					auto: "enabled"
+					command: "/advancement grant @p only spectrum:milestones/unlock_overenchanting_with_enchanter"
+					disable_reward_screen_blur: true
+					icon: {
+						id: "spectrum:gilded_book"
+					}
+					id: "1D7A45772F4FCB6E"
+					type: "command"
+				}
+				{
 					exclude_from_claim_all: true
 					id: "55A65D24FB9E3A6F"
 					table_id: 8875738191125079778L
@@ -3257,11 +3267,23 @@
 		{
 			dependencies: ["7EFD1192E201F04A"]
 			id: "322AB92DB2E9EDB1"
-			rewards: [{
-				id: "605E81CA77A460FB"
-				type: "xp"
-				xp: 5
-			}]
+			rewards: [
+				{
+					auto: "enabled"
+					command: "/advancement grant @p only spectrum:milestones/unlock_conflicted_enchanting_with_enchanter"
+					disable_reward_screen_blur: true
+					icon: {
+						id: "spectrum:enchanter"
+					}
+					id: "4275DA182DE50F12"
+					type: "command"
+				}
+				{
+					id: "605E81CA77A460FB"
+					type: "xp"
+					xp: 5
+				}
+			]
 			size: 3.0d
 			tasks: [{
 				advancement: "spectrum:midgame/enter_dimension"
