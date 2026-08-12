@@ -373,7 +373,7 @@
 				item: { count: 1, id: "modern_industrialization:aluminum_drill" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: -2.5d
 			y: -3.0d
 		}
 		{
@@ -424,7 +424,7 @@
 				id: "27B1627F1682C4E1"
 				type: "checkmark"
 			}]
-			x: -2.0d
+			x: -2.5d
 			y: -5.5d
 		}
 		{
@@ -441,7 +441,7 @@
 				id: "75CEF70D8E9CFD8D"
 				type: "checkmark"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: -5.5d
 		}
 		{
@@ -3867,6 +3867,9 @@
 		}
 		{
 			dependencies: ["216B300DF319ED1A"]
+			icon: {
+				id: "modern_industrialization:salt_water_bucket"
+			}
 			id: "4C36957653876C0B"
 			rewards: [{
 				id: "618E90DADD8A5363"
@@ -3887,7 +3890,7 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
+			x: 2.5d
 			y: -3.0d
 		}
 		{
@@ -4376,7 +4379,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.5d
+			x: 5.5d
 			y: -7.0d
 		}
 		{
@@ -4402,7 +4405,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.5d
+			x: 6.5d
 			y: -7.5d
 		}
 		{
@@ -4428,7 +4431,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.5d
+			x: 5.5d
 			y: -8.0d
 		}
 		{
@@ -4461,7 +4464,7 @@
 				item: { count: 1, id: "kubejs:borosilicate_glass" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 5.5d
 			y: -9.0d
 		}
 		{
@@ -4550,7 +4553,7 @@
 				item: { count: 1, id: "modern_industrialization:molten_borosilicate_glass_bucket" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -8.5d
 		}
 		{
@@ -4797,6 +4800,155 @@
 			]
 			x: 4.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["641117E0F688F40A"]
+			id: "5F40ED455B249C29"
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "012E2EA7A45CCEFF"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["5F40ED455B249C29"]
+			icon: {
+				id: "modern_industrialization:boron_trifluoride_bucket"
+			}
+			id: "44888B628FA1A31A"
+			rewards: [{
+				id: "5F328F5DE14F1614"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "324091962DC52BCA"
+					item: { count: 1, id: "modern_industrialization:boron_trifluoride_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5E415DE6CEF9D799"
+					type: "checkmark"
+				}
+			]
+			x: 9.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"44888B628FA1A31A"
+				"12788247344BA3F1"
+			]
+			icon: {
+				id: "modern_industrialization:diborane_bucket"
+			}
+			id: "57277F7FCCD4A983"
+			rewards: [{
+				id: "2B3D2EB79BC4D999"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0136E82EF2F9E12D"
+					item: { count: 1, id: "modern_industrialization:diborane_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "00BDE78FB59EA2DD"
+					type: "checkmark"
+				}
+			]
+			x: 11.25d
+			y: -12.0d
+		}
+		{
+			dependencies: ["4C36957653876C0B"]
+			icon: {
+				id: "modern_industrialization:lithium_hydride_dust"
+			}
+			id: "12788247344BA3F1"
+			rewards: [{
+				id: "311D871822D6CFFE"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "73950E387207D1F4"
+					item: { count: 1, id: "modern_industrialization:lithium_hydride_dust" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "478C84E88FC040D7"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["57277F7FCCD4A983"]
+			id: "46E61205DE5130E8"
+			rewards: [
+				{
+					count: 6
+					id: "434D07AE54573651"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "226B36A1C2B6E8E0"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C11602F64389BBA"
+					table_id: 4745997815160102761L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7E581D0285854353"
+				item: { count: 1, id: "modern_industrialization:pentaborane_bucket" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["57277F7FCCD4A983"]
+			id: "521FAF6490E47F52"
+			rewards: [{
+				id: "4A3E42E2B547D1EA"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "27BEA43D60D94BB6"
+				type: "checkmark"
+			}]
+			x: 11.25d
+			y: -13.5d
 		}
 	]
 }
