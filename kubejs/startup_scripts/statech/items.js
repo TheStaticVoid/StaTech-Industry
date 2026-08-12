@@ -44,25 +44,25 @@ ItemEvents.toolTierRegistry((event) => {
     });
 });
 
-ItemEvents.modification(event => {
-    toolSet.forEach((tool) =>{
-            event.modify(`kubejs:copper_${tool[0]}`, (item) => {
-                item.maxDamage = 196;
-                item.tool = {
-                    defaultMiningSpeed: 1,
-                    damagePerBlock: 1,
-                    rules: [
-                        {
-                            blocks: '#minecraft:incorrect_for_stone_tool',
-                            correctForDrops: false,
-                        },
-                        {
-                            blocks: `#minecraft:mineable/${tool[0]}`,
-                            correctForDrops: true,
-                            speed: 4,
-                        }
-                    ]
-                };
+ItemEvents.modification((event) => {
+    toolSet.forEach((tool) => {
+        event.modify(`kubejs:copper_${tool[0]}`, (item) => {
+            item.maxDamage = 196;
+            item.tool = {
+                defaultMiningSpeed: 1,
+                damagePerBlock: 1,
+                rules: [
+                    {
+                        blocks: '#minecraft:incorrect_for_stone_tool',
+                        correctForDrops: false,
+                    },
+                    {
+                        blocks: `#minecraft:mineable/${tool[0]}`,
+                        correctForDrops: true,
+                        speed: 4,
+                    },
+                ],
+            };
             event.modify(`kubejs:steel_${tool[0]}`, (item) => {
                 item.maxDamage = 1310;
                 item.tool = {
@@ -77,8 +77,8 @@ ItemEvents.modification(event => {
                             blocks: `#minecraft:mineable/${tool[0]}`,
                             correctForDrops: true,
                             speed: 7.5,
-                        }
-                    ]
+                        },
+                    ],
                 };
             });
             event.modify(`kubejs:bronze_${tool[0]}`, (item) => {
@@ -95,8 +95,8 @@ ItemEvents.modification(event => {
                             blocks: `#minecraft:mineable/${tool[0]}`,
                             correctForDrops: true,
                             speed: 6.5,
-                        }
-                    ]
+                        },
+                    ],
                 };
             });
         });
@@ -407,7 +407,7 @@ StartupEvents.registry('item', (event) => {
 
     event
         .create('battery_casing')
-        .displayName('Battery Casing');
+        .displayName('Lithium-Enriched Battery Casing');
 
     // -- BRONZE EQUIPMENT -- //
 
