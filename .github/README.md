@@ -13,6 +13,7 @@ make food a required challenge \
 
 location based earlygame quarry
 > needs world gen changes to accomodate
+> uses iron drills
 
 restore ae2 hv gating (:gregtroll:)
 > all ae2 features will probably just be stainless/digital gated
@@ -26,7 +27,6 @@ raid system is in the form of hordes that show up every 3 nights and are combine
 gated mi pipes behind electronic circuits, md pipes now have normal recipes\
 
 # Playtest Priority list:
-iron drill for quarries\
 have a need for overlooked/unnecessary addon stuff (EI farmer/brewery/steam machines)
 > will likely fit in with create changes\
   
