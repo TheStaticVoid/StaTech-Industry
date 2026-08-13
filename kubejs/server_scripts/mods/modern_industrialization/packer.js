@@ -286,7 +286,7 @@ ServerEvents.recipes((event) => {
         event,
         st('batteries/redstone'),
         8,
-        400,
+        200,
         [
             { amount: 2, item: kj('battery_casing') },
             { amount: 2, item: mc('redstone') },
@@ -300,7 +300,7 @@ ServerEvents.recipes((event) => {
         event,
         st('batteries/silicon'),
         8,
-        400,
+        200,
         [
             { amount: 2, item: kj('battery_casing') },
             { amount: 2, item: mi('silicon_dust') },
@@ -313,8 +313,8 @@ ServerEvents.recipes((event) => {
     packer(
         event,
         st('batteries/sodium'),
-        8,
-        400,
+        16,
+        200,
         [
             { amount: 2, item: kj('battery_casing') },
             { amount: 2, item: mi('sodium_dust') },
@@ -327,8 +327,8 @@ ServerEvents.recipes((event) => {
     packer(
         event,
         st('batteries/cadmium'),
-        8,
-        400,
+        32,
+        200,
         [
             { amount: 2, item: kj('battery_casing') },
             { amount: 2, item: mi('cadmium_dust') },
@@ -341,8 +341,8 @@ ServerEvents.recipes((event) => {
     packer(
         event,
         st('batteries/plutonium'),
-        8,
-        400,
+        64,
+        200,
         [
             { amount: 2, item: kj('battery_casing') },
             { amount: 2, item: mi('plutonium_dust') },
