@@ -1,6 +1,152 @@
+StartupEvents.registry('block', event => {
+
+    event
+        .create('quarry_bauxite_ore')
+        .displayName('Quarry Bauxite Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_coal_ore')
+        .displayName('Quarry Coal Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_copper_ore')
+        .displayName('Quarry Copper Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_diamond_ore')
+        .displayName('Quarry Diamond Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_emerald_ore')
+        .displayName('Quarry Emerald Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_gold_ore')
+        .displayName('Quarry Gold Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_iron_ore')
+        .displayName('Quarry Iron Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_lapis_ore')
+        .displayName('Quarry Lapis Lazuli Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_lead_ore')
+        .displayName('Quarry Lead Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_lignite_ore')
+        .displayName('Quarry Lignite Coal Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_platinum_ore')
+        .displayName('Quarry Platinum Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_quartz_ore')
+        .displayName('Quarry Quartz Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_redstone_ore')
+        .displayName('Quarry Redstone Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_salt_ore')
+        .displayName('Quarry Salt Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_tin_ore')
+        .displayName('Quarry Tin Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_titanium_ore')
+        .displayName('Quarry Titanium Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_uranium_ore')
+        .displayName('Quarry Uranium Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+
+    event
+        .create('quarry_zinc_ore')
+        .displayName('Quarry Zinc Ore')
+        .soundType('stone')
+        .hardness(-1)
+        .resistance(3600000)
+        .requiresTool(true)
+})
+
 
 StartupEvents.registry('item', (event) => {
-    // -- BULLSHITTIUM MODE -- //
 
     event
         .create('wrap_of_helmets')
@@ -36,6 +182,8 @@ StartupEvents.registry('item', (event) => {
         .rarity('Epic')
         //.maxStackSize = 16
         .tooltip('Four Sabers');
+
+    // -- IRON DRILL -- //
 
     event
         .create('iron_drill')
