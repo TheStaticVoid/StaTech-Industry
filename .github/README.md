@@ -12,7 +12,6 @@ make food a required challenge \
 > outright disable the auto feeding backpack item because canned food is cool
 
 location based earlygame quarry
-> needs world gen changes to accomodate\
 > uses iron drills
 
 restore ae2 hv gating (:gregtroll:)
@@ -31,6 +30,7 @@ analog circuits now require precision mechanisms which themselves are more expen
 # Playtest Priority list:
 have a need for overlooked/unnecessary addon stuff (EI farmer/brewery/steam machines)
 > will likely fit in with create changes\
+world gen for bronze quarry
   
 # Priority List:
 bullshittium processing\
