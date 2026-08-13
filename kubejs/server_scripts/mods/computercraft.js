@@ -204,9 +204,9 @@ ServerEvents.recipes((event) => {
         })
         .id(st('advanced_monitor'));
 
-    // ---------------------//
+    // --------------------//
     // ---- ASSEMBLER ---- //
-    // ---------------------//
+    // --------------------//
 
     // -- NETWORK CABLE SYNTHETIC RUBBER -- //
     assembler(

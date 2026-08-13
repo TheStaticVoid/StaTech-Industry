@@ -4807,20 +4807,17 @@
 				id: "modern_industrialization:pentaborane_bucket"
 			}
 			id: "5F40ED455B249C29"
+			rewards: [{
+				id: "6E3B3455BB70ABE6"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "rsquare"
 			size: 1.0d
-			tasks: [
-				{
-					id: "576638F193A999CC"
-					item: { count: 1, id: "modern_industrialization:pentaborane_bucket" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "012E2EA7A45CCEFF"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "012E2EA7A45CCEFF"
+				type: "checkmark"
+			}]
 			x: 4.0d
 			y: -7.5d
 		}
@@ -4942,7 +4939,7 @@
 				item: { count: 1, id: "modern_industrialization:pentaborane_bucket" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 7.5d
 			y: -11.0d
 		}
 		{
@@ -4961,7 +4958,7 @@
 				id: "27BEA43D60D94BB6"
 				type: "checkmark"
 			}]
-			x: 5.5d
+			x: 5.75d
 			y: -11.0d
 		}
 		{
@@ -5002,6 +4999,28 @@
 		{
 			dependencies: ["57277F7FCCD4A983"]
 			id: "26C057394ED8B2D0"
+			rewards: [
+				{
+					count: 3
+					id: "6420D211145F3FE8"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "61732154792429FF"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "52345309C49250F5"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
