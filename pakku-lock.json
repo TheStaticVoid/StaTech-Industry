@@ -8811,27 +8811,29 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "stcm-0.1.1b.jar",
+                    "file_name": "stcm-1.0.0.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
                     "loaders": [
                         "neoforge"
                     ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8469/580/stcm-0.1.1b.jar",
-                    "id": "8469580",
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8637/780/stcm-1.0.0.jar",
+                    "id": "8637780",
                     "parent_id": "1610931",
                     "hashes": {
-                        "sha1": "5862fed7ec9c449ebbd2bb6d5c37d3b3c2b28f40",
-                        "md5": "b8e8164274eefd9692586229130f9362"
+                        "sha1": "4456eb7e2b9bdb70f22b8806dde6ad784788a500",
+                        "md5": "d7d04f89df2da5da37c578c31892a375"
                     },
                     "required_dependencies": [
-                        "1173950",
-                        "405388"
+                        "405388",
+                        "580555",
+                        "361276",
+                        "1173950"
                     ],
-                    "size": 321220,
-                    "date_published": "2026-07-20T04:57:25.947Z"
+                    "size": 380617,
+                    "date_published": "2026-08-13T04:43:15.793Z"
                 }
             ]
         },
