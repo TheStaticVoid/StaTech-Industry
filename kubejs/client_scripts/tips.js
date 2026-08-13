@@ -214,7 +214,7 @@ const tips = [
     {
         id: 'flawless',
         tiptext:
-            'Flawless Budding Certus Quartz can be moved using a Spectrum enchentment.',
+            'Flawless Budding Certus Quartz can be moved using a Spectrum enchantment.',
     },
     {
         id: 'resin',
