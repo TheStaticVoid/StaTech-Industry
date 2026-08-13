@@ -26,6 +26,8 @@ raid system is in the form of hordes that show up every 3 nights and are combine
 
 gated mi pipes behind electronic circuits, md pipes now have normal recipes\
 
+analog circuits now require precision mechanisms which themselves are more expensive
+
 # Playtest Priority list:
 have a need for overlooked/unnecessary addon stuff (EI farmer/brewery/steam machines)
 > will likely fit in with create changes\
