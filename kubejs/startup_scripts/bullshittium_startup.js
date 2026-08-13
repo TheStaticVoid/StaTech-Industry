@@ -36,6 +36,18 @@ StartupEvents.registry('item', (event) => {
         .rarity('Epic')
         //.maxStackSize = 16
         .tooltip('Four Sabers');
+
+    event
+        .create('iron_drill')
+        .displayName('Iron Drill')
+
+    event
+        .create('iron_drill_head')
+        .displayName('Iron Drill Head')
+
+    event
+        .create('iron_curved_plate')
+        .displayName('Iron Curved Plate')
 });
 
 ItemEvents.modification(event => {

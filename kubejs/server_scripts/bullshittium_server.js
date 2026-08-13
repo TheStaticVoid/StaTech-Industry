@@ -1193,6 +1193,58 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         ]
     );
 
+    // -- IRON DRILL -- //
+
+    event
+        .shaped('1x ' + kj('iron_drill_head'), ['BCP', 'GRC', 'BGB'], {
+            B: mi('iron_bolt'),
+            C: kj('iron_curved_plate'),
+            P: mi('iron_plate'),
+            G: mi('iron_gear'),
+            R: mi('iron_rod'),
+        })
+        .id(kj('iron_drill_head'));
+
+    assembler(
+        event,
+        'modern_industrialization:materials/iron/assembler/drill_head',
+        8,
+        200,
+        [
+            { amount: 1, item: mi('iron_plate') },
+            { amount: 2, item: kj('iron_curved_plate') },
+            { amount: 1, item: mi('iron_rod') },
+            { amount: 2, item: mi('iron_gear') },
+        ],
+        [{ amount: 1, item: kj('iron_drill_head') }],
+        [
+            { amount: 75, fluid: mi('soldering_alloy') },
+        ]
+    );
+
+    event
+        .shaped('4x ' + kj('iron_drill'), ['  D', 'GI ', 'FG '], {
+            D: kj('iron_drill_head'),
+            F: 'moderndynamics:item_pipe',
+            I: 'moderndynamics:fluid_pipe',
+            G: mi('iron_gear'),
+        })
+        .id(kj('iron_drill'));
+
+    assembler(
+        event,
+        'modern_industrialization:assembler_generated/quarry/drill/iron_drill',
+        8,
+        200,
+        [
+            { amount: 1, item: kj('iron_drill_head') },
+            { amount: 2, item: mi('iron_gear') },
+            { amount: 1, item: 'moderndynamics:item_pipe' },
+            { amount: 1, item: 'moderndynamics:fluid_pipe' },
+        ],
+        [{ amount: 4, item: kj('iron_drill') }],
+    );
+
     // -- BRONZE QUARRY RECIPES -- //
 
     bronzeQuarry(
@@ -1200,7 +1252,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/bauxite_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('bauxite_ore'), probability: 0.8 },
             { amount: 1, item: mc('iron_ore'), probability: 0.2 },
@@ -1214,7 +1266,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/lignite_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('lignite_coal_ore'), probability: 0.5 },
             { amount: 1, item: mc('coal_ore'), probability: 0.5 },
@@ -1228,7 +1280,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/coal_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mc('coal_ore'), probability: 1 },
         ],
@@ -1241,7 +1293,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/copper_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mc('copper_ore'), probability: 1 },
         ],
@@ -1254,7 +1306,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/diamond_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mc('diamond_ore'), probability: 0.7 },
             { amount: 1, item: mc('coal_ore'), probability: 0.1 },
@@ -1270,7 +1322,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/emerald_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mc('emerald_ore'), probability: 0.8 },
             { amount: 1, item: mi('fluorite_ore'), probability: 0.2 },
@@ -1284,7 +1336,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/gold_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mc('gold_ore'), probability: 0.8 },
             { amount: 3, item: mi('raw_silver'), probability: 0.2 },
@@ -1298,7 +1350,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/iron_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mc('iron_ore'), probability: 0.8 },
             { amount: 1, item: mi('nickel_ore'), probability: 0.2 },
@@ -1312,7 +1364,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/lapis_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mc('lapis_ore'), probability: 0.9 },
             { amount: 1, item: mi('fluorite_ore'), probability: 0.1 },
@@ -1326,7 +1378,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/lead_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('lead_ore'), probability: 0.65 },
             { amount: 3, item: mi('raw_silver'), probability: 0.35 },
@@ -1340,7 +1392,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/platinum_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('stainless_steel_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('platinum_ore'), probability: 0.95 },
             { amount: 1, item: mi('iridium_ore'), probability: 0.05 },
@@ -1354,7 +1406,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/quartz_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('quartz_ore'), probability: 0.80 },
             { amount: 1, item: mi('antimony_ore'), probability: 0.20 },
@@ -1368,7 +1420,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/redstone_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mc('redstone_ore'), probability: 0.80 },
             { amount: 1, item: mi('ruby_ore'), probability: 0.20 },
@@ -1382,7 +1434,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/salt_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('steel_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('salt_ore'), probability: 1 },
         ],
@@ -1395,7 +1447,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/tin_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('bronze_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('tin_ore'), probability: 1 },
         ],
@@ -1408,7 +1460,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/titanium_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('stainless_steel_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('titanium_ore'), probability: 0.80 },
             { amount: 1, item: mi('tungsten_ore'), probability: 0.20 },
@@ -1422,7 +1474,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/uranium_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('titanium_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: mi('uranium_ore'), probability: 0.90 },
             { amount: 1, item: mi('iridium_ore'), probability: 0.05 },
@@ -1437,7 +1489,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         'statech:bullshittium/bronze_quarry/zinc_vein',
         4,
         1200,
-        [{ amount: 1, item: mi('zinc_drill'), probability: 0.04 }],
+        [{ amount: 1, item: kj('iron_drill'), probability: 0.04 }],
         [
             { amount: 1, item: cr('zinc_ore'), probability: 1 },
         ],
@@ -1601,6 +1653,8 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         ],
         [{ amount: 16, item: mi('fluid_pipe') }]
     );
+
+
 
 }) 
 
