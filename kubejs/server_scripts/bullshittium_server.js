@@ -15,7 +15,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
 
         event.custom(newRecipe).id(id);
     };
-    let mixing = (id, heatRequirement, item_inputs, item_outputs) => {
+    let cr_mixing = (id, heatRequirement, item_inputs, item_outputs) => {
         let newRecipe = {
             type: 'create:mixing',
             heat_requirement: heatRequirement,
@@ -121,47 +121,66 @@ ServerEvents.recipes(event => { // this probably isnt destructive
 
     // -- CONCRETE -- //
 
-    mixing(
-        'statech:modern_industrialization_concrete_create_mixer',
-        'heated',
+    event.recipes.create.mixing(
+        [Fluid.of('modern_industrialization:concrete', 500)],
         [
-            { item: mi('stone_dust') },
-            { item: mi('stone_dust') },
-            { item: mi('stone_dust') },
-            { item: mi('stone_dust') },
-            { item: mi('stone_dust') },
-            { item: mi('stone_dust') },
-            { item: mi('stone_dust') },
-            { item: mi('stone_dust') },
-            { item: mi('stone_dust') },
-            { item: mi('stone_dust') },
-            { item: mi('clay_dust') },
-            { item: mi('clay_dust') },
-            { item: mi('clay_dust') },
-            { item: mi('clay_dust') },
-            {
-                type: "fluid_stack",
-                fluid: "minecraft:water",
-                amount: 100
-            }
-        ],
-        [{ id: mi('concrete'), amount: 500 }],
-    );
+            Item.of('modern_industrialization:stone_dust', 10),
+            Item.of('modern_industrialization:clay_dust', 4),
+            Fluid.of('minecraft:water', 100)
+        ]
+    ).heated() // Heat requirement
+
+    //without kubejs create
+    // mixing(
+    //     'statech:modern_industrialization_concrete_create_mixer',
+    //     'heated',
+    //     [
+    //         { item: mi('stone_dust') },
+    //         { item: mi('stone_dust') },
+    //         { item: mi('stone_dust') },
+    //         { item: mi('stone_dust') },
+    //         { item: mi('stone_dust') },
+    //         { item: mi('stone_dust') },
+    //         { item: mi('stone_dust') },
+    //         { item: mi('stone_dust') },
+    //         { item: mi('stone_dust') },
+    //         { item: mi('stone_dust') },
+    //         { item: mi('clay_dust') },
+    //         { item: mi('clay_dust') },
+    //         { item: mi('clay_dust') },
+    //         { item: mi('clay_dust') },
+    //         {
+    //             type: "fluid_stack",
+    //             fluid: "minecraft:water",
+    //             amount: 100
+    //         }
+    //     ],
+    //     [{ id: mi('concrete'), amount: 500 }],
+    // );
 
     // -- BRONZE INGOT --
 
     event.remove({ id: mi('materials/bronze_dust') })
-    mixing(
-        st('bronze_ingot_create_mixer'),
-        'superheated',
+    event.recipes.create.mixing(
+        ['2x modern_industrialization:bronze_ingot'],
         [
-            { tag: 'c:raw_materials/copper' },
-            { tag: 'c:raw_materials/copper' },
-            { tag: 'c:raw_materials/copper' },
-            { tag: 'c:raw_materials/tin' }
-        ],
-        [{ id: mi('bronze_ingot'), count: 2 }]
-    );
+            '3x minecraft:raw_copper',
+            mi('raw_tin')
+        ]
+    ).superheated()
+
+    //without kubejs create
+    // mixing(
+    //     st('bronze_ingot_create_mixer'),
+    //     'superheated',
+    //     [
+    //         { tag: 'c:raw_materials/copper' },
+    //         { tag: 'c:raw_materials/copper' },
+    //         { tag: 'c:raw_materials/copper' },
+    //         { tag: 'c:raw_materials/tin' }
+    //     ],
+    //     [{ id: mi('bronze_ingot'), count: 2 }]
+    // );
 
     // -- FIRE CLAY BRICKS -- //
 
@@ -448,7 +467,7 @@ ServerEvents.recipes(event => { // this probably isnt destructive
     event.shapeless(('sophisticatedbackpacks:feeding_upgrade'), [
         '1x ' + kj('bartman')
     ])
-    .id('statech:sophisticatedbackpacks/feeding_upgrade');
+        .id('statech:sophisticatedbackpacks/feeding_upgrade');
 
     // -- ENDGAME RECIPES -- //
 
@@ -1654,7 +1673,74 @@ ServerEvents.recipes(event => { // this probably isnt destructive
         [{ amount: 16, item: mi('fluid_pipe') }]
     );
 
+    // -- CIRCUIT CHANGES -- //
 
+    event
+        .shaped('1x ' + kj('bundle_of_analog_components'), ['RIR', 'C C', '   '], {
+            R: mi('resistor'),
+            I: mi('inductor'),
+            C: mi('capacitor'),
+        })
+        .id('statech:bundle_of_analog_components_shaped');
+
+    assembler(
+        event,
+        st('bundle_of_analog_components'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('resistor') },
+            { amount: 2, item: mi('capacitor') },
+            { amount: 1, item: mi('inductor') },
+        ],
+        [{ amount: 1, item: kj('bundle_of_analog_components') }]
+    );
+
+    event
+        .shaped('1x ' + mi('analog_circuit'), ['PAP', 'WBW', 'PWP'], {
+            P: cr('precision_mechanism'),
+            A: kj('bundle_of_analog_components'),
+            W: mi('copper_wire'),
+            B: mi('analog_circuit_board'),
+        })
+        .id('modern_industrialization:electric_age/circuit/craft/lv_circuit_asbl');
+
+    assembler(
+        event,
+        'modern_industrialization:assembler_generated/electric_age/circuit/craft/lv_circuit',
+        8,
+        200,
+        [
+            { amount: 4, item: cr('precision_mechanism') },
+            { amount: 1, item: kj('bundle_of_analog_components') },
+            { amount: 3, item: mi('copper_wire') },
+            { amount: 1, item: mi('analog_circuit_board') },
+        ],
+        [{ amount: 1, item: mi('analog_circuit') }]
+    );
+
+    event.recipes.create.sequenced_assembly(
+        [
+            CreateItem.of('create:precision_mechanism', .9),
+            CreateItem.of('create:cardboard', 0.02),
+            CreateItem.of('create:shaft', 0.02),
+            CreateItem.of('create:cogwheel', 0.02),
+            CreateItem.of('create:powdered_obsidian', 0.02),
+            CreateItem.of('create:rose_quartz', 0.01),
+            CreateItem.of('modern_industrialization:iron_dust', 0.01),
+        ],
+        'create:cardboard',
+        [
+            event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:brass_sheet',]),
+            event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:cogwheel',]),
+            event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:large_cogwheel',]),
+            event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:sturdy_sheet',]),
+            event.recipes.create.deploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'create:electron_tube',]),
+            event.recipes.create.pressing('create:incomplete_precision_mechanism', 'create:incomplete_precision_mechanism'),
+        ]
+    )
+    .transitionalItem('create:incomplete_precision_mechanism')
+    .loops(3)
 
 }) 
 

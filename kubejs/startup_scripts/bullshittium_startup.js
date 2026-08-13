@@ -183,6 +183,10 @@ StartupEvents.registry('item', (event) => {
         //.maxStackSize = 16
         .tooltip('Four Sabers');
 
+    event
+        .create('bundle_of_analog_components')
+        .displayName('Bundle of Analog Components')
+
     // -- IRON DRILL -- //
 
     event
