@@ -87,6 +87,21 @@ ServerEvents.recipes((event) => {
         [{ amount: 100, fluid: mc('milk') }]
     );
 
+    // -- FRUITY PEBBLES -- //
+    mixer(
+        event,
+        st('fruity_pebbles'),
+        8,
+        200,
+        [
+            { amount: 1, item: mc('bowl') },
+            { amount: 1, tag: 'c:foods/berry' },
+            { amount: 3, item: nm('pebbles') },
+        ],
+        [{ amount: 1, item: kj('fruity_pebbles') }],
+        [{ amount: 100, fluid: mc('milk') }]
+    );
+
     // -- NUKA COLA -- //
     mixer(
         event,

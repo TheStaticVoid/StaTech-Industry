@@ -228,6 +228,8 @@ ServerEvents.tags('item', (event) => {
     SUGAR_STICK.forEach((id) => {
         event.add('kubejs:sugar_sticks', id);
     });
+
+    event.add('c:foods/berry', sp('sawblade_holly_berry'))
 });
 
 ServerEvents.recipes((event) => {

@@ -4385,7 +4385,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["62F258EECCFC72ED"]
@@ -4400,8 +4400,8 @@
 				item: { count: 1, id: "yet_another_industrialization:ultradense_metal_ball_burger" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: -5.5d
+			x: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["62F258EECCFC72ED"]
@@ -4416,8 +4416,8 @@
 				item: { count: 1, id: "modern_industrialization:mixed_ingot_iridium" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.5d
+			x: -2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["62F258EECCFC72ED"]
@@ -4433,7 +4433,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["148AE3384F2C550B"]
@@ -5770,6 +5770,22 @@
 			}]
 			x: 20.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["62F258EECCFC72ED"]
+			id: "2296A8BA205E0229"
+			rewards: [{
+				id: "4164EAB1376BB8F2"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4BB30523A1694E57"
+				item: { count: 1, id: "kubejs:fruity_pebbles" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.5d
 		}
 	]
 }

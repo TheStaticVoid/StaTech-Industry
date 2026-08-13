@@ -12,6 +12,7 @@ ItemEvents.foodEaten((event) => {
         [kj('greg_cola'),               ei('tin_can')],
         [kj('sulfuric_acid_bottle'),    mc('glass_bottle')],
         [kj('uranium_cereal'),          mc('bowl')],
+        [kj('fruity_pebbles'),          mc('bowl')],
         [kj('nuka_cola'),               kj('bottle_cap')],
     ];
 

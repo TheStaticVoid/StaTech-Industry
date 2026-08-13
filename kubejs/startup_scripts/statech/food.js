@@ -169,4 +169,14 @@ StartupEvents.registry('item', (event) => {
         .food((f) => {
             f.nutrition(8).saturation(0.6);
         });
+
+    event
+        .create('fruity_pebbles')
+        .displayName('Fruity Pebbles')
+        .tag('c:foods')
+        .tooltip('§bTasty!')
+        .maxStackSize(1)
+        .food((f) => {
+            f.nutrition(8).saturation(0.5);
+        });
 });
