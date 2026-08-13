@@ -50,7 +50,7 @@
 [charm_of_shrinking]
 	#Whether this item can be found in structures or drop from entities
 	#Allowed Values: true, false
-	generateAsLoot = false
+	generateAsLoot = true
 	#How much the Charm of Shrinking decreases or increases the player's Scale
 	#Values between -1 and 0 reduce the player's scale
 	#Values above 0 increase the player's scale

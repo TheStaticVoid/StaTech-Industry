@@ -32,6 +32,21 @@ ServerEvents.recipes((event) => {
     ];
     REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
+    // -- WEAPONS FACTORY -- //
+    assembler(
+        event,
+        st('weapons_factory'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('heatproof_machine_casing') },
+            { amount: 2, item: mi('large_motor') },
+            { amount: 2, item: mi('cupronickel_coil') },
+            { amount: 1, item: mi('advanced_machine_hull') },
+        ],
+        [{ amount: 1, item: mi('weapons_factory') }]
+    );
+
     // -- MATTER FABRICATOR -- //
     assembler(
         event,
