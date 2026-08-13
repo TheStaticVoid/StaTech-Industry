@@ -28,8 +28,7 @@ gated mi pipes behind electronic circuits, md pipes now have normal recipes\
 analog circuits now require precision mechanisms which themselves are more expensive
 
 # Playtest Priority list:
-have a need for overlooked/unnecessary addon stuff (EI farmer/brewery/steam machines)
-> will likely fit in with create changes\
+justify needing potions for something\
 world gen for bronze quarry
   
 # Priority List:
