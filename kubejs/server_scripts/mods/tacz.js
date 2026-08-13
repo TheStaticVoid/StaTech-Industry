@@ -46,6 +46,15 @@ ServerEvents.recipes((event) => {
         };
     }
 
+    // prettier-ignore
+    /*     const ammoIngredientList = [
+        Ammo(
+            { item: Item.of(tz('ammo'), ), amount: 16 },
+            mi('lead_ingot'),
+            mi('copper_curved_plate')
+        ),
+    ]; */
+
     function makeAmmoRecipes(ammo) {
         const outputID = ammo.output.item;
 
@@ -77,5 +86,5 @@ ServerEvents.recipes((event) => {
         }
     }
 
-    ammoIngredientList.forEach((ammo) => makeAmmoRecipes(ammo));
+    //ammoIngredientList.forEach((ammo) => makeAmmoRecipes(ammo));
 });
