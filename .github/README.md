@@ -23,8 +23,9 @@ gregify steam age multis
 
 raid system is in the form of hordes that show up every 3 nights and are combined with improved mob ai (absolutely no idea how balanced or fun this is in either direction)
 
+gated mi pipes behind electronic circuits, md pipes now have normal recipes\
+
 # Playtest Priority list:
-gate mi pipes behind something and encourage MD pipes\
 iron drill for quarries\
 have a need for overlooked/unnecessary addon stuff (EI farmer/brewery/steam machines)
 > will likely fit in with create changes\
