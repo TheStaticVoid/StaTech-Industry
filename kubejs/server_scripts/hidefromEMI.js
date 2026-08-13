@@ -1,5 +1,4 @@
 RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
-
     const CREATE_CRUSHED = [
         cr('crushed_raw_platinum'),
         cr('crushed_raw_iron'),
@@ -141,6 +140,13 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         adp('rs_bridge'),
     ];
     UNUSED_ADVANCED_PERIPHERALS.forEach((id) => event.remove(id));
+
+    const UNUSED_TACZ = [
+        tz('gun_smith_table'),
+        tz('workbench_c'),
+        tz('workbench_a'),
+    ];
+    UNUSED_TACZ.forEach((id) => event.remove(id));
 });
 
 RecipeViewerEvents.removeEntriesCompletely('fluid', (event) => {
