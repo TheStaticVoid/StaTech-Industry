@@ -12,7 +12,7 @@ make food a required challenge \
 > outright disable the auto feeding backpack item because canned food is cool
 
 location based earlygame quarry
-> needs world gen changes to accomodate
+> needs world gen changes to accomodate\
 > uses iron drills
 
 restore ae2 hv gating (:gregtroll:)
