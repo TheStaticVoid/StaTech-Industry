@@ -4950,5 +4950,40 @@
 			x: 11.25d
 			y: -13.5d
 		}
+		{
+			dependencies: ["4C36957653876C0B"]
+			id: "1C68E96302EA0DBE"
+			rewards: [
+				{
+					count: 3
+					id: "68A22662750FFC56"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72A3380352A0A217"
+					table_id: 4745997815160102761L
+					type: "random"
+				}
+				{
+					id: "78CAB1B78A1EEA5A"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				count: 2L
+				id: "7EDFA8505F4A2BFD"
+				item: { count: 1, id: "kubejs:battery_casing" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
 	]
 }
