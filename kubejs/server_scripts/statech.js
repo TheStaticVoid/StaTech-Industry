@@ -406,10 +406,35 @@ ServerEvents.tags('block', (event) => {
         '#chisel:chiseled_glowstone',
         /^xtonesreworked:glaxx_block_/,
     ]);
+    const tagsToRemoveFromCopper = ['minecraft:incorrect_for_wooden_tool', 'minecraft:incorrect_for_gold_tool', 'minecraft:needs_stone_tool']
+    tagsToRemoveFromCopper.forEach((tag) => {
+        event.remove(`${tag}`, [
+            'minecraft:deepslate_copper_ore',
+            'minecraft:raw_copper_block',
+            'minecraft:copper_ore',
+        ]);
+    })
 });
 
 // -- ITEM TAGGING -- //
 ServerEvents.tags('item', (event) => {
+
+    const ultimineDisabledTools = [
+        mc('stone_pickaxe'),
+        mc('stone_axe'),
+        mc('stone_shovel'),
+        mc('stone_sword'),
+        mc('stone_hoe'),
+        mc('wooden_pickaxe'),
+        mc('wooden_axe'),
+        mc('wooden_shovel'),
+        mc('wooden_sword'),
+        mc('wooden_hoe')
+    ]
+    ultimineDisabledTools.forEach((tool) => {
+        event.add('ftbultimine:excluded_tools', `${tool}`);
+    });
+
     // -- MI PARTS TAGGING -- //
     const MATERIALS = [
         'copper',

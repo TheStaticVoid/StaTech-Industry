@@ -45,7 +45,7 @@
 				item: { count: 1, id: "modern_industrialization:forge_hammer" }
 				type: "item"
 			}]
-			x: 15.0d
+			x: 13.0d
 			y: 0.0d
 		}
 		{
@@ -101,26 +101,13 @@
 				}
 			]
 			size: 2.0d
-			tasks: [
-				{
-					count: 32L
-					id: "6190BD009D789D58"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:cobblestones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					id: "4F25BF028BC0D343"
-					item: { count: 1, id: "minecraft:furnace" }
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "11C261BF0F2BC600"
-					item: { count: 1, id: "minecraft:raw_copper" }
-					type: "item"
-				}
-			]
-			x: 2.5d
+			tasks: [{
+				count: 32L
+				id: "6190BD009D789D58"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:cobblestones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -153,7 +140,7 @@
 				item: { count: 1, id: "modern_industrialization:iron_large_plate" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -424,7 +411,7 @@
 				item: { count: 1, id: "bankstorage:bank_1" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 5.0d
 			y: -2.0d
 		}
 		{
@@ -457,7 +444,7 @@
 				item: { count: 1, id: "bankstorage:bank_dock" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 5.0d
 			y: -3.0d
 		}
 		{
@@ -523,7 +510,7 @@
 				item: { count: 1, id: "tankstorage:tank_1" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.0d
 			y: -2.0d
 		}
 		{
@@ -556,7 +543,7 @@
 				item: { count: 1, id: "tankstorage:tank_dock" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.0d
 			y: -3.0d
 		}
 		{
@@ -592,7 +579,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(modern_industrialization:forge_hammer_tools)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -635,6 +622,12 @@
 				}
 				{
 					count: 8L
+					id: "0689831EE03C1D8F"
+					item: { count: 1, id: "minecraft:raw_copper" }
+					type: "item"
+				}
+				{
+					count: 8L
 					id: "2570759CCAB39BC4"
 					item: { count: 1, id: "minecraft:coal" }
 					optional_task: true
@@ -648,7 +641,7 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
+			x: 5.5d
 			y: 0.0d
 		}
 		{
@@ -678,7 +671,8 @@
 					type: "random"
 				}
 			]
-			size: 2.0d
+			shape: "rsquare"
+			size: 1.25d
 			tasks: [
 				{
 					id: "00E3E2F15F8D2A67"
@@ -704,8 +698,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: 0.0d
+			x: 3.0d
+			y: -1.75d
 		}
 		{
 			dependencies: ["35CA2712BC60C09E"]
@@ -723,7 +717,7 @@
 				id: "104C071A4BB6DD9B"
 				type: "checkmark"
 			}]
-			x: 7.5d
+			x: 5.5d
 			y: 2.0d
 		}
 	]

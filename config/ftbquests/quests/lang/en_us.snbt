@@ -2502,7 +2502,7 @@
 	quest.339F676C828C790D.quest_desc: [
 		"You'll need to make some &abasic tools&r to get started. Using &6Wood&r is a bit &climiting&r, but enough to acquire a &afurnace&r and &6copper&r to make your first &ametal tools&r."
 		""
-		"Stone &ccannot&r be made into &ereliable tools&r. &6Copper&r is needed to make &abetter tools&r."
+		"Stone tools &ccannot&r be used with ultimine, so it's highly recommended to make &6copper tools&r."
 	]
 	quest.339F676C828C790D.quest_subtitle: "Welcome to the Stone Age"
 	quest.339F676C828C790D.title: "Cave Man"
@@ -2577,7 +2577,7 @@
 	quest.359CB19747F5A3F3.quest_desc: ["&a1000mb&r of &eCrude Oil&r will distill into &b500mb&r of &6Sulfuric Light Fuel&r. The &cSulfur&r will need to be removed before the fuel can be used."]
 	quest.35B6D5329AD5C0F9.quest_desc: ["The Market allows you to trade Emeralds for some seeds and saplings. A great way to acquire those you haven't found in the wild yet!"]
 	quest.35CA2712BC60C09E.quest_desc: [
-		"&bIron&r is a basic vanilla material that you should be familiar with, but as you will soon find out, &6Tin&r is also very important for establishing your first machines."
+		"&bIron&r and &6Copper&r are basic vanilla materials that you should be familiar with, but as you will soon find out, &6Tin&r is also very important for establishing your first machines."
 		""
 		"You'll of course also need &bfuel&r to smelt those ores. &eCoal&r or &eLignite Coal&r are both materials you can find whilst mining and use for this purpose."
 	]
@@ -5478,7 +5478,11 @@
 	quest.71636395F7946F8C.quest_subtitle: "Not for the faint of heart"
 	quest.717AC9D60B7E0AEA.quest_desc: ["The &6Exposure mod&r allows you to place &2&oimages&r&r you've taken &3in world&r &olike paintings&r, and also lets you put images from the &9internet&r &oin the world.&r"]
 	quest.717AC9D60B7E0AEA.title: "Exposure Items"
-	quest.71C405D3CB376A14.quest_desc: ["With the ore generation change, &aFTB Ultimine&r is making a return! You can hold the '&e~&r' key by default to enable veinmining and scroll whilst shifting and holding the veinmining key to change the shape of the area mined."]
+	quest.71C405D3CB376A14.quest_desc: [
+		"With the change to ore generation, &aFTB Ultimine&r is making a return! You can hold the '&e~&r' key by default to enable veinmining and scroll whilst shifting and holding the veinmining key to change the shape of the area mined."
+		""
+		"It can however &conly be used&r when using a &dtool&r made out of &6copper&r or &aany better material&r!"
+	]
 	quest.71E9A3BD02745351.quest_desc: ["Adds various benefits for fishing."]
 	quest.72066057C80E5E94.quest_desc: ["&aPolytetrafluoroethylene&r, also known as &aPTFE&r or &aTeflon&r, is an advanced polymer known for nonreactivity, low friction, and good insulating properties. It is a necessary material soon as you move to create components for the &2Digital Circuit&r. The following quests will guide you through the process of making it."]
 	quest.72066057C80E5E94.quest_subtitle: "Polytetrafluoroethylene"

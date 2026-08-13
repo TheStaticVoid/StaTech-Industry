@@ -37,9 +37,9 @@ ItemEvents.toolTierRegistry((event) => {
 
     event.add('copper', (tier) => {
         tier.uses = 196;
-        tier.speed = 4;
-        tier.attackDamageBonus = 1;
-        tier.enchantmentValue = 10;
+        tier.speed = 5;
+        tier.attackDamageBonus = 1.5;
+        tier.enchantmentValue = 15;
         tier.repairIngredient = '#c:ingots/copper';
     });
 });
@@ -59,7 +59,7 @@ ItemEvents.modification((event) => {
                     {
                         blocks: `#minecraft:mineable/${tool[0]}`,
                         correctForDrops: true,
-                        speed: 4,
+                        speed: 5,
                     },
                 ],
             };
@@ -101,26 +101,6 @@ ItemEvents.modification((event) => {
             });
         });
     })
-
-    event.modify('minecraft:stone_sword', (item) => {
-        item.maxDamage = 59;
-        item.tool = {
-            defaultMiningSpeed: 1,
-            damagePerBlock: 1,
-            rules: [
-                {
-                    blocks: '#minecraft:incorrect_for_stone_tool',
-                    correctForDrops: false,
-                },
-                {
-                    blocks: '#minecraft:mineable/sword',
-                    correctForDrops: true,
-                    speed: 2,
-                }
-            ]
-        };
-        item.attackDamage = 0;
-    });
 });
 
 StartupEvents.registry('armor_material', (event) => {
