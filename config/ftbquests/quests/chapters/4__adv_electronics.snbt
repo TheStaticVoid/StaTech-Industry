@@ -425,7 +425,7 @@
 				type: "checkmark"
 			}]
 			x: -2.5d
-			y: -5.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3EBBB99A3FC5C7F3"]
@@ -441,8 +441,8 @@
 				id: "75CEF70D8E9CFD8D"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: -5.5d
+			x: -2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["3EBBB99A3FC5C7F3"]
@@ -564,14 +564,14 @@
 					type: "random"
 				}
 			]
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "26EF1EEEF30C26B6"
 				item: { count: 1, id: "modern_industrialization:sulfuric_acid_bucket" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -10.5d
+			x: -2.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["5556B0DC1C5779DD"]
@@ -598,14 +598,14 @@
 					type: "random"
 				}
 			]
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "1598BA16F9F74B94"
 				item: { count: 1, id: "modern_industrialization:diesel_bucket" }
 				type: "item"
 			}]
 			x: -2.5d
-			y: -10.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["5556B0DC1C5779DD"]
@@ -4379,7 +4379,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.5d
+			x: 6.5d
 			y: -7.0d
 		}
 		{
@@ -4405,7 +4405,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.5d
+			x: 5.5d
 			y: -7.5d
 		}
 		{
@@ -4431,7 +4431,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.5d
+			x: 6.5d
 			y: -8.0d
 		}
 		{
@@ -4464,7 +4464,7 @@
 				item: { count: 1, id: "kubejs:borosilicate_glass" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.5d
 			y: -9.0d
 		}
 		{
@@ -4553,7 +4553,7 @@
 				item: { count: 1, id: "modern_industrialization:molten_borosilicate_glass_bucket" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 5.5d
 			y: -8.5d
 		}
 		{
@@ -4803,15 +4803,26 @@
 		}
 		{
 			dependencies: ["641117E0F688F40A"]
+			icon: {
+				id: "modern_industrialization:pentaborane_bucket"
+			}
 			id: "5F40ED455B249C29"
 			shape: "rsquare"
-			size: 2.0d
-			tasks: [{
-				id: "012E2EA7A45CCEFF"
-				type: "checkmark"
-			}]
-			x: 6.5d
-			y: -12.0d
+			size: 1.0d
+			tasks: [
+				{
+					id: "576638F193A999CC"
+					item: { count: 1, id: "modern_industrialization:pentaborane_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "012E2EA7A45CCEFF"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["5F40ED455B249C29"]
@@ -4825,7 +4836,7 @@
 				xp: 10
 			}]
 			shape: "rsquare"
-			size: 1.5d
+			size: 1.0d
 			tasks: [
 				{
 					id: "324091962DC52BCA"
@@ -4838,8 +4849,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 9.0d
-			y: -12.0d
+			x: 4.0d
+			y: -9.25d
 		}
 		{
 			dependencies: [
@@ -4869,8 +4880,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 11.25d
-			y: -12.0d
+			x: 4.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["4C36957653876C0B"]
@@ -4897,14 +4908,14 @@
 				}
 			]
 			x: 2.5d
-			y: -12.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["57277F7FCCD4A983"]
 			id: "46E61205DE5130E8"
 			rewards: [
 				{
-					count: 6
+					count: 5
 					id: "434D07AE54573651"
 					item: {
 						count: 1
@@ -4931,11 +4942,14 @@
 				item: { count: 1, id: "modern_industrialization:pentaborane_bucket" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -12.0d
+			x: 7.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["57277F7FCCD4A983"]
+			icon: {
+				id: "modern_industrialization:lithium_tetrafluoroborate_dust"
+			}
 			id: "521FAF6490E47F52"
 			rewards: [{
 				id: "4A3E42E2B547D1EA"
@@ -4947,8 +4961,8 @@
 				id: "27BEA43D60D94BB6"
 				type: "checkmark"
 			}]
-			x: 11.25d
-			y: -13.5d
+			x: 5.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["4C36957653876C0B"]
@@ -4964,15 +4978,15 @@
 					type: "item"
 				}
 				{
+					id: "78CAB1B78A1EEA5A"
+					type: "xp"
+					xp: 10
+				}
+				{
 					exclude_from_claim_all: true
 					id: "72A3380352A0A217"
 					table_id: 4745997815160102761L
 					type: "random"
-				}
-				{
-					id: "78CAB1B78A1EEA5A"
-					type: "xp"
-					xp: 10
 				}
 			]
 			shape: "rsquare"
@@ -4983,7 +4997,20 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["57277F7FCCD4A983"]
+			id: "26C057394ED8B2D0"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "1718386073D0364C"
+				item: { count: 1, id: "kubejs:silicon_extremely_p_doped_plate" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -13.0d
 		}
 	]
 }
