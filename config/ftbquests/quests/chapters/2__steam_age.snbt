@@ -4104,5 +4104,22 @@
 			x: 0.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "3D86BF2E19520795"
+			rewards: [{
+				id: "23B6790490E86249"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "739794AE0166D905"
+				item: { count: 1, id: "stcm:neoforge_hammer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
 	]
 }

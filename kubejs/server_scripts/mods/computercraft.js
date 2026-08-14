@@ -202,7 +202,7 @@ ServerEvents.recipes((event) => {
             S: mi('aluminum_plate'),
             M: lbr('redstone_circuit_board'),
         })
-        .id(st('advanced_monitor'));
+        .id(st('peripheral_casing'));
 
     // --------------------//
     // ---- ASSEMBLER ---- //

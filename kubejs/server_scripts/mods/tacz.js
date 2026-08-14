@@ -47,18 +47,23 @@ ServerEvents.recipes((event) => {
     }
 
     // prettier-ignore
-    /*     const ammoIngredientList = [
+    const ammoIngredientList = [
         Ammo(
-            { item: Item.of(tz('ammo'), ), amount: 16 },
+            { item: Item.of(tz('ammo')).set(mc('custom_data'), '{AmmoId:"tacz:9mm"}'), amount: 16 },
             mi('lead_ingot'),
             mi('copper_curved_plate')
         ),
-    ]; */
+    ];
 
     function makeAmmoRecipes(ammo) {
-        const outputID = ammo.output.item;
+        const outputID = ammo.output.item
+            .get(mc('custom_data'))
+            .copyTag()
+            .getString('AmmoId');
 
-        if (ammo.ptfe != null) {
+        //console.log(outputID);
+
+        if (ammo.ptfe !== null) {
             assembler(
                 event,
                 st(`assembler/ammo/${outputID.slice(5, outputID.length)}`),
