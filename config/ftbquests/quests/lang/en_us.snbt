@@ -1356,6 +1356,8 @@
 		"&aItem Pipes&r will insert items into higher priorities first and they will transfer &e16 items every 3 seconds&r. &dThe amount of items transferred every 3 seconds can be upgraded with motors&r."
 		""
 		"&cNote&r: The &aitem pipes&r are on whitelist by default (which mean only the items in the filter will be moved). You need to switch to blacklist (only the items NOT in the filter will be moved) or add the item you want to move to the filter. &3Be careful that you need to configure BOTH sides of the pipe, otherwise items will not move&r."
+		"{@pagebreak}"
+		"Just like fluid pipes, their connection can be enabled by right-cliking with a &ewrench&r on the \"center\" of a pipe block. Again, it's way more &aeasy&r to &3hold the pipe and shift right-click&r on the block you want to connect it to, may it be &emachines&r or &eother pipes of the same type&r."
 	]
 	quest.1CB630CE60F8B860.quest_subtitle: "EnderIO? Never heard of it."
 	quest.1CB630CE60F8B860.title: "Item Pipes"
@@ -5838,6 +5840,11 @@
 	quest.784BFD67397D2D4E.quest_desc: ["The &bExtended Interface&r is an advanced version of the Interface that has &a4 rows&r of &a9 slots&r (spread on two pages) to stock&r or receive&r &2items&r or &9fluids&r instead of the regular 9!"]
 	quest.786ACF473177AA23.quest_desc: ["With the &bTurbo Machine Hulls&r you now have access to &aUltimate Solar Panels&r. This will generate &e48 EU/t&r during the day, and&6 8 EU/t at night&r. By this point you probably have better power generation, but this is free and could be good for any automations you want to setup away from your base."]
 	quest.788B6EC0B441EEC8.quest_desc: ["&eBoron Trioxide Dust&r then needs to be mixed with some &eQuartz Dust&r and some &eAluminum Tiny Dust&r to prepare it for &bGlass&r production."]
+	quest.78AB0A6DF24A608F.quest_desc: [
+		"&bFluid Pipes&r, unsuprisingly, move &9fluids&r! They are one of the many other \"&dpipes&r\" (item pipes, ME wires, cables) from Modern Industrialization that can fit &dup to three types&r in &6one block space&r. "
+		""
+		"They can be configured with a &ewrench&r, but assuming a pipe has &3already been placed&r, it is &aeasier&r to make connections to &emachines&r and &eother fluid pipes&r by &9shift right-clicking&r on the &bface of the machine or pipe&r you wish to &econnect it to&r."
+	]
 	quest.78AB0A6DF24A608F.quest_subtitle: "The spaghetti appetizer"
 	quest.78AB0A6DF24A608F.title: "Fluid Pipes"
 	quest.78B9AAD1C8BA75E6.quest_desc: [
