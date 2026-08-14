@@ -3670,9 +3670,8 @@
 					xp: 75
 				}
 				{
-					exclude_from_claim_all: true
 					id: "1E4CDAC66FE26056"
-					table_id: 5762803210059023537L
+					table_id: 5923260596511522936L
 					type: "random"
 				}
 			]
@@ -3690,14 +3689,13 @@
 					type: "item"
 				}
 				{
-					id: "70C472DBEF21D19D"
+					id: "243D48CC192B627B"
 					item: { count: 1, id: "kubejs:uu_matter" }
-					optional_task: true
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: 4.5d
+			x: 8.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5D43916C178DE73C"]
@@ -3715,6 +3713,39 @@
 			}]
 			x: 6.5d
 			y: -5.25d
+		}
+		{
+			dependencies: ["4BDF575E8688D537"]
+			id: "5493DFD65096665C"
+			rewards: [
+				{
+					id: "5F4D0C3B4781138C"
+					item: {
+						count: 1
+						id: "kubejs:coin_legendary"
+					}
+					type: "item"
+				}
+				{
+					id: "1AF1F733274972F3"
+					type: "xp"
+					xp: 75
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21EBA4AE32FE6BBF"
+					table_id: 4745997815160102761L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "356F9278E79C9B45"
+				item: { count: 1, id: "modern_industrialization:matter_fabricator" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
 		}
 	]
 }

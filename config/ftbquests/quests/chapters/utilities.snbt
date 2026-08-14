@@ -41,7 +41,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			id: "7DF831878A6CF9FF"
@@ -415,7 +415,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			id: "48360151E8BFCD9C"
@@ -524,7 +524,7 @@
 				}
 			]
 			x: 6.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			id: "5C78D3264CBCEC91"
@@ -539,7 +539,34 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -2.5d
+			y: -3.0d
+		}
+		{
+			id: "0590FCBC3E4F6ABB"
+			tasks: [{
+				id: "33703D575D62EEBC"
+				item: { count: 1, id: "tradingpost:trading_post" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "10E972F44ECC66AB"
+			tasks: [
+				{
+					id: "754AB30372EA8589"
+					item: { components: { "ftbfiltersystem:filter": "or(item_tag(comforts:hammocks))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "74156EE7AACD876B"
+					item: { count: 1, id: "comforts:rope_and_nail" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.5d
 		}
 	]
 }
