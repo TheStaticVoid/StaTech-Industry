@@ -3,31 +3,32 @@ type = fancymenu_layout
 layout-meta {
   identifier = %fancymenu:universal_layout%
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1786603181133
+  last_edited_time = 1786669680380
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:7b72484f-3164-4469-a0e9-dac17156c6e6-1786603178951] = [groups:][instances:]
+  universal_layout_blacklist = pause_screen;
+  [loading_requirement_container_meta:6766ea7d-25e3-46b8-bc7c-9b5d006b0352-1786669674012] = [groups:][instances:]
 }
 
 menu_background {
-  instance_identifier = 426757e3-a12c-464f-a338-d00098985259-1786603094052
+  instance_identifier = e586e2b8-a16b-4c77-8fd7-f5a53bfae710-1786669334779
   background_type = color_fancymenu
   show_background = false
   color = #FFC800FF
 }
 
 menu_background {
-  instance_identifier = 4c8da2db-1710-44ae-add7-61ead4285087-1786603094052
+  instance_identifier = a8736b66-c1ca-4b17-ae1f-83997c78e80f-1786669334779
   background_type = panorama
   show_background = true
   panorama_name = statechpanorama_02
 }
 
 menu_background {
-  instance_identifier = 226c4a29-4208-41b3-8528-0fc94b19783b-1786603094052
+  instance_identifier = d00af67d-e4b6-4c22-8c0b-2ddc65303629-1786669334779
   background_type = image
   show_background = false
   slide = false
@@ -40,13 +41,13 @@ menu_background {
 }
 
 menu_background {
-  instance_identifier = ac9d7b0e-6193-49e3-8f00-88dc778a4a91-1786603094052
+  instance_identifier = 6463ffec-0c85-413a-b2ac-4dc40088745a-1786669334779
   background_type = slideshow
   show_background = false
 }
 
 menu_background {
-  instance_identifier = c4c1bcf2-24b4-4042-b82e-e0b0d023147e-1786603094052
+  instance_identifier = d8fc7b78-62fc-4807-8bd0-298bc96352e2-1786669334779
   background_type = video
   show_background = false
   loop = false
@@ -60,7 +61,7 @@ menu_background {
 }
 
 menu_background {
-  instance_identifier = b415ef1b-b3d5-4af5-865d-f14d17f14616-1786603094052
+  instance_identifier = c72d66c8-c104-49a5-b82c-54cc968eaf20-1786669334779
   background_type = video_rinku
   show_background = false
   loop = false
@@ -73,7 +74,7 @@ menu_background {
 }
 
 menu_background {
-  instance_identifier = 82486666-2ed2-4836-9e56-8f537be69a56-1786603094052
+  instance_identifier = 7fc15673-70bc-4d67-83d4-e73d6a692c29-1786669334779
   background_type = browser
   show_background = false
   url = https://docs.fancymenu.net
@@ -90,7 +91,7 @@ menu_background {
 }
 
 menu_background {
-  instance_identifier = 771b4401-cf28-44a3-91ff-7741a4bc3ebf-1786603094052
+  instance_identifier = ac01b385-e9bc-4f07-8eb2-0b4ef680f653-1786669334779
   background_type = glsl
   show_background = false
   inline_shader_source = 
@@ -131,7 +132,7 @@ menu_background {
 
 decoration_overlay {
   overlay_type = browser
-  instance_identifier = 645258de-c1d7-40a2-a45f-e3e00aecfb86-1786603094052
+  instance_identifier = a9465372-3657-4ca2-bc58-f565ddac20d6-1786669334779
   show_decoration_overlay = false
   url = https://docs.fancymenu.net
   consume_mouse_clicks = true
@@ -148,7 +149,7 @@ decoration_overlay {
 
 decoration_overlay {
   overlay_type = glsl
-  instance_identifier = 87f043c1-f277-41a5-b3f6-d26eb5cd2ed7-1786603094052
+  instance_identifier = ed208948-3928-4341-8fca-41b2a3419994-1786669334779
   show_decoration_overlay = false
   inline_shader_source = 
   buffer_a_inline_source = 
@@ -188,7 +189,7 @@ decoration_overlay {
 
 decoration_overlay {
   overlay_type = buddy
-  instance_identifier = 22a2e5a4-7066-4e06-bd7b-48979451d42a-1786603094052
+  instance_identifier = 53c2547a-b7ea-46b2-a9cf-966ae96c3920-1786669334779
   show_decoration_overlay = false
   buddy_hunger_decay_per_tick = 0.005
   buddy_happiness_decay_per_tick = 0.003
@@ -218,7 +219,7 @@ decoration_overlay {
 
 decoration_overlay {
   overlay_type = string_lights
-  instance_identifier = b9a577a4-abf5-4724-ba9f-e3fa3f44815e-1786603094052
+  instance_identifier = 213767c6-b3df-4a1b-8a91-6c0dbf01f8e2-1786669334779
   show_decoration_overlay = false
   string_lights_scale = 1.0
   string_lights_wind_strength = 1.0
@@ -251,7 +252,7 @@ decoration_overlay {
 
 decoration_overlay {
   overlay_type = fireworks
-  instance_identifier = 91a2192e-afc8-45ce-96b9-0be391980d84-1786603094052
+  instance_identifier = 2d7f7fb5-77f5-4657-80b3-95088b94e26f-1786669334779
   show_decoration_overlay = false
   fireworks_scale = 1.0
   fireworks_explosion_size = 1.0
@@ -261,7 +262,7 @@ decoration_overlay {
 
 decoration_overlay {
   overlay_type = snowfall
-  instance_identifier = 55149730-7923-405f-8a43-0513f72c7da4-1786603094052
+  instance_identifier = d6a0001c-8d91-491a-a459-b7f777cd46da-1786669334779
   show_decoration_overlay = false
   snow_intensity = 1.0
   snow_scale = 1.0
@@ -272,7 +273,7 @@ decoration_overlay {
 
 decoration_overlay {
   overlay_type = rainfall
-  instance_identifier = acb50189-ae69-4f43-bdcb-60cf61856b65-1786603094052
+  instance_identifier = 387fa1be-107e-494a-a715-2ea787bb34d9-1786669334779
   show_decoration_overlay = false
   rain_intensity = 1.0
   rain_scale = 1.0
@@ -285,7 +286,7 @@ decoration_overlay {
 
 decoration_overlay {
   overlay_type = fireflies
-  instance_identifier = d3e32724-7884-46cd-ae49-f2b1593dab28-1786603094052
+  instance_identifier = 960f0cf8-1637-4498-9180-28ae15f7ae4b-1786669334779
   show_decoration_overlay = false
   firefly_group_density = 1.0
   firefly_group_amount = 1.0
@@ -298,7 +299,7 @@ decoration_overlay {
 
 decoration_overlay {
   overlay_type = leaves
-  instance_identifier = 7a1d2f20-d509-4f2a-9132-7f1d64c5de26-1786603094052
+  instance_identifier = c2cdee92-ade4-4fae-a99e-308446b4a628-1786669334779
   show_decoration_overlay = false
   leaves_density = 1.0
   leaves_wind_intensity = 1.0
@@ -311,7 +312,7 @@ decoration_overlay {
 
 decoration_overlay {
   overlay_type = confetti
-  instance_identifier = 10556062-94a5-456b-9b1b-e461fc7aa0ff-1786603094052
+  instance_identifier = 7a6d7ba2-401d-48dd-a15c-d5e1b2e811e9-1786669334779
   show_decoration_overlay = false
   confetti_scale = 1.0
   confetti_fall_speed = 1.0

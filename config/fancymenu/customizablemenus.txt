@@ -1,8 +1,5 @@
 type = customizablemenus
 
-net.minecraft.client.gui.screens.PauseScreen {
-}
-
 de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
 }
 
@@ -13,5 +10,68 @@ com.blamejared.controlling.client.NewKeyBindsScreen {
 }
 
 net.minecraft.client.gui.screens.TitleScreen {
+}
+
+net.minecraft.client.gui.screens.options.OptionsScreen {
+}
+
+net.minecraft.client.gui.screens.options.SkinCustomizationScreen {
+}
+
+net.minecraft.client.gui.screens.options.SoundOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.options.OnlineOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.options.ChatOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.options.controls.ControlsScreen {
+}
+
+net.minecraft.client.gui.screens.options.AccessibilityOptionsScreen {
+}
+
+net.minecraft.client.gui.screens.options.LanguageSelectScreen {
+}
+
+net.minecraft.client.gui.screens.packs.PackSelectionScreen {
+}
+
+net.minecraft.client.gui.screens.CreditsAndAttributionScreen {
+}
+
+net.minecraft.client.gui.screens.WinScreen {
+}
+
+net.minecraft.client.gui.screens.ConfirmLinkScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.CreateWorldScreen {
+}
+
+net.minecraft.client.gui.screens.worldselection.EditGameRulesScreen {
+}
+
+net.neoforged.neoforge.client.gui.ScrollableExperimentsScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.SafetyScreen {
+}
+
+net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
+}
+
+net.minecraft.client.gui.screens.DirectJoinServerScreen {
+}
+
+net.minecraft.client.gui.screens.EditServerScreen {
+}
+
+net.minecraft.client.gui.screens.PauseScreen {
 }
 

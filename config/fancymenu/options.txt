@@ -8,7 +8,7 @@ B:play_vanilla_menu_music = 'true';
 ##[customization]
 
 B:modpack_mode = 'false';
-B:show_customization_overlay = 'false';
+B:show_customization_overlay = 'true';
 B:advanced_customization_mode = 'false';
 
 
@@ -72,7 +72,7 @@ B:seamless_world_loading = 'true';
 B:global_slider_background_transparent = 'false';
 S:global_slider_handle_normal = '';
 I:global_slider_background_nine_slice_border_right = '5';
-S:global_background_panorama = 'statechpanorama_02';
+S:global_background_panorama = '';
 I:global_slider_handle_nine_slice_border_left = '5';
 S:global_menu_background_texture = '';
 
