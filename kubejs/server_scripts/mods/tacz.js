@@ -63,7 +63,7 @@ ServerEvents.recipes((event) => {
 
         //console.log(outputID);
 
-        if (ammo.ptfe != null) {
+        if (ammo.ptfe !== null) {
             assembler(
                 event,
                 st(`assembler/ammo/${outputID.slice(5, outputID.length)}`),
