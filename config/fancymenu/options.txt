@@ -7,8 +7,8 @@ B:play_vanilla_menu_music = 'true';
 
 ##[customization]
 
-B:modpack_mode = 'false';
-B:show_customization_overlay = 'true';
+B:modpack_mode = 'true';
+B:show_customization_overlay = 'false';
 B:advanced_customization_mode = 'false';
 
 
@@ -34,12 +34,12 @@ S:custom_window_icon_16 = '/config/fancymenu/assets/icons/icon16x16.png';
 
 ##[global_customizations]
 
-B:global_slider_background_nine_slice = 'false';
-S:global_slider_handle_hover = '';
-S:global_button_background_normal = '';
+B:global_slider_background_nine_slice = 'true';
+S:global_slider_handle_hover = '[source:local]/config/fancymenu/assets/button_highlighted.png';
+S:global_button_background_normal = '[source:local]/config/fancymenu/assets/button.png';
 B:global_button_label_shadow = 'true';
-S:global_button_background_inactive = '';
-B:global_button_background_nine_slice = 'false';
+S:global_button_background_inactive = '[source:local]/config/fancymenu/assets/button_disabled.png';
+B:global_button_background_nine_slice = 'true';
 S:global_button_label_hover_color = '';
 F:global_slider_label_scale = '1.0';
 S:global_button_label_base_color = '';
@@ -52,7 +52,7 @@ I:global_slider_handle_nine_slice_border_top = '5';
 I:global_slider_handle_nine_slice_border_bottom = '5';
 F:global_button_label_scale = '1.0';
 S:global_slider_label_scale_raw = '';
-S:global_slider_handle_inactive = '';
+S:global_slider_handle_inactive = '[source:local]/config/fancymenu/assets/button_disabled.png';
 B:global_slider_label_shadow = 'true';
 S:global_button_label_scale_raw = '';
 I:global_slider_handle_nine_slice_border_right = '5';
@@ -60,17 +60,17 @@ S:global_slider_label_hover_color = '';
 I:global_slider_background_nine_slice_border_bottom = '5';
 S:global_menu_music_tracks = '';
 I:global_slider_background_nine_slice_border_left = '5';
-S:global_button_background_hover = '';
+S:global_button_background_hover = '[source:local]/config/fancymenu/assets/button_highlighted.png';
 I:global_button_background_nine_slice_border_top = '5';
-S:global_slider_background = '';
+S:global_slider_background = '[source:local]/config/fancymenu/assets/button_disabled.png';
 I:global_button_background_nine_slice_border_bottom = '5';
 B:global_slider_label_underline_on_hover = 'false';
-B:global_slider_handle_nine_slice = 'false';
+B:global_slider_handle_nine_slice = 'true';
 I:global_button_background_nine_slice_border_left = '5';
 B:global_button_background_transparent = 'false';
 B:seamless_world_loading = 'true';
 B:global_slider_background_transparent = 'false';
-S:global_slider_handle_normal = '';
+S:global_slider_handle_normal = '[source:local]/config/fancymenu/assets/button.png';
 I:global_slider_background_nine_slice_border_right = '5';
 S:global_background_panorama = '';
 I:global_slider_handle_nine_slice_border_left = '5';
