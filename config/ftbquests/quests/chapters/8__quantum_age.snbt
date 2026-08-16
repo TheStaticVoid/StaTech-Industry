@@ -1031,7 +1031,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["2FDA67B4920D335D"]
+			dependencies: ["0300F720004DD641"]
 			icon: {
 				id: "mi_tweaks:colossal_blast_furnace"
 			}
@@ -1133,7 +1133,158 @@
 				}
 			]
 			x: 2.25d
-			y: -3.75d
+			y: -5.25d
+		}
+		{
+			dependencies: ["2FDA67B4920D335D"]
+			id: "0300F720004DD641"
+			shape: "circle"
+			tasks: [{
+				id: "2904B369270B27EB"
+				type: "checkmark"
+			}]
+			x: 2.25d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0300F720004DD641"]
+			icon: {
+				id: "mi_tweaks:extreme_vacuum_cryofreezer"
+			}
+			id: "1F86FDA8B641EC55"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5C4972151AE6A91C"
+					item: { count: 1, id: "mi_tweaks:extreme_vacuum_cryofreezer" }
+					type: "item"
+				}
+				{
+					count: 91L
+					id: "1DD999A85FFD9621"
+					item: { count: 1, id: "modern_industrialization:frostproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "56732FA21F37DF72"
+					item: { count: 1, id: "modern_industrialization:stainless_steel_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "43D676503EB1A12F"
+					item: { count: 1, id: "modern_industrialization:clean_stainless_steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "604009B9F16FE238"
+					item: { count: 1, id: "modern_industrialization:plasma_handling_iridium_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 11L
+					id: "40D49B9A0F6A0A08"
+					item: { count: 1, id: "kubejs:borosilicate_glass" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "03668A5BAEC4C0A7"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "36E1D91650DDD7D4"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "2B2797753FC0C3EF"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.75d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0300F720004DD641"]
+			icon: {
+				id: "mi_tweaks:macrothermic_confluence_unit"
+			}
+			id: "5E8335E396D18094"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "70BE52543FD927B3"
+					item: { count: 1, id: "mi_tweaks:macrothermic_confluence_unit" }
+					type: "item"
+				}
+				{
+					count: 85L
+					id: "1BE640CF224388B1"
+					item: { count: 1, id: "modern_industrialization:ostrum_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 42L
+					id: "2880C2160BA24665"
+					item: { count: 1, id: "modern_industrialization:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 42L
+					id: "170313917E0B4744"
+					item: { count: 1, id: "modern_industrialization:frostproof_machine_casing" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "2CAE45FBD925E753"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "42669508B166C6E7"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "0ECA1F32FF71F125"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "629CE2543005AA93"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3B8D0EB3B44C40F6"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.75d
+			y: -4.5d
 		}
 	]
 }

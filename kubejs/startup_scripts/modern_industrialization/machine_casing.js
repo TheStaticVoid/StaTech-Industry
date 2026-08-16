@@ -12,6 +12,10 @@ MIMachineEvents.registerCasings((event) => {
         'calorite_machine_casing',
         'modern_industrialization:calorite_machine_casing'
     );
+    event.registerBlockImitation(
+        'ostrum_machine_casing_pipe',
+        'modern_industrialization:ostrum_machine_casing_pipe'
+    );
     event.registerNamed(
         'ptfe_machine_casing',
         'Polytetrafluoroethylene Machine Casing'

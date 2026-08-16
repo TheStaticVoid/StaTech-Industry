@@ -149,6 +149,11 @@
 		""
 		"Any connected inventory, such as chests, vaults, etc., will be filled with whatever the &bMechanical Harvester&r collects."
 	]
+	quest.0300F720004DD641.quest_desc: [
+		"Yes. There in fact is more."
+		""
+		"This is the last tier of batching multiblocks. They are getting quite expensive, but are accordingly pretty powerful!"
+	]
 	quest.031D9E012B03A962.quest_desc: ["The remaining &denergy&r of this plant form aeons ago is barely still perceptible. So light and vulnerable that you think &cany wrong move could breathe the last bit of life out of your fragile bulb&r."]
 	quest.0338A0F80C416F09.quest_desc: [
 		"Middle Tier Storage Cell, which can contain &d16,384 bytes of storage&r."
@@ -1535,6 +1540,12 @@
 		""
 		"Fluids cannot be inserted manually with a bucket, and will need to be pumped in/out using &aFluid Pumps&r."
 	]
+	quest.1F86FDA8B641EC55.quest_desc: [
+		"The &aExtreme Vacuum Cryofreezer&r is a batching version of the Vacuum Freezer. It can run &6batches of 12&r with a &630% EU discount&r!"
+		""
+		"It makes for a great companion to the &aColossal Blast Furnace&r!"
+	]
+	quest.1F86FDA8B641EC55.quest_subtitle: "Cool away!"
 	quest.1F9B18D9DD75E5FA.quest_desc: [
 		"High Tier Storage Cell, which can contain &d65,536 bytes of storage&r."
 		""
@@ -3934,7 +3945,7 @@
 	quest.510208C885C73669.quest_subtitle: "I am the Villager now!"
 	quest.510208C885C73669.title: "Table Cloths"
 	quest.5114DECB3214A07C.quest_desc: [
-		"&6Copper tools&r are flimsy, but &acheap&r. Unlike your &cwooden tools&r, they will allow you to obtain &eIron&r and make tools worthy of that name."
+		"&6Copper tools&r are flimsy, but &acheap&r. Unlike your &cwooden tools&r, they will allow you to obtain &eIron&r and make tools worthy of that name. This tool set is the &6first tools&r which allow using &dultimine&r."
 		""
 		"Only the pickaxe is required for completing this quest."
 	]
@@ -4284,7 +4295,7 @@
 		"- The addition of &dExtended Industrialization&r and &dMI Tweaks&r,"
 		"- The return of &dvanilla ore generation&r."
 		"{@pagebreak}"
-		"As such, most of the space exploration questline has be reworked into the progression as items."
+		"As such, most of the &6space exploration questline&r has been reworked into the progression with the new &bSpace Probe Launcher&r and &bProbe Computers&r progression gated by circuit progression. "
 	]
 	quest.5607443B61E1896B.quest_subtitle: "What's new?"
 	quest.562334D89C7F25D7.quest_desc: [
@@ -4703,6 +4714,14 @@
 		""
 		"Requires a &dchannel&r to function"
 	]
+	quest.5E8335E396D18094.quest_desc: [
+		"Annoyed at how many &eHeat Exchangers&r you need to run at &6Nuclear Reactor&r with &9High Pressure&r water or heavy water? Just want to use &clava&r for power all the way? "
+		""
+		"The &aMacrothermic Confluence Unit&r will allow you to run &eHeat Exchanger&r Recipes in &6batches of 16&r!"
+		""
+		"Since the fluid outputs of the &bHeat Exchanger&r can be &equite large&r, make sure you use Fluid Hatches that are &9big enough&r so that it can &9output it all at once&r!"
+	]
+	quest.5E8335E396D18094.quest_subtitle: "Exchange... away?"
 	quest.5EC488946BE8FF2F.quest_desc: [
 		"Providing the &aRecycler&r materials will have it randomly spit out Scrap."
 		""
@@ -5732,6 +5751,7 @@
 		""
 		"Note that higher tier of coils in &eModern Industrialization&r do &4not&r give &ca discount&r or &cspeed upgrade&r to Electric Blast Furnaces, unlike in GregTech."
 	]
+	quest.75F6C7CE29A61ED4.quest_desc: ["No more spamming Recyclers for that juicy &dUU-Matter&r production! The &aRecycling Factory&r can run up to &632 batches&r at once, majorly improving &6Scrap&r production!"]
 	quest.760AEF21E6403F48.quest_desc: ["These upgraded variants of &aSolar Panels&r will &epassively generate&r &e256 EU/t&r during the day and &d0 EU/t&r at night."]
 	quest.7614268077A13015.quest_desc: ["The &aGrand Mass Centrifuge&r is a batching multiblock version of the &bCentrifuge&r. It can do &6batches of 8&r and has a &625% EU discount&r!"]
 	quest.767003181BB2CAC4.quest_desc: [
@@ -6187,7 +6207,7 @@
 	]
 	quest.7F59229192C7E269.quest_desc: ["While not required for finishing the pack, you'll need some &aNether Stars&r to produce the final tiers of the &6Bank&r or &6Tank&r, or you can make some &dbeacons&r with it."]
 	quest.7F65BF85A0A6D8F9.quest_desc: [
-		"The &aLarge Scale Assembler&r is a batching multiblock version of the &bAssembler&r. It can do &6batches of 16&r and has no EU discount. (sorry!)"
+		"The &aLarge Scale Assembler&r is a batching multiblock version of the &bAssembler&r. It can do &6batches of 16&r and has a &615% EU discount&r."
 		""
 		"It costs quite a bit of &eTungstensteel&r, so it's recommend to try to &9wallshare&r it to save on &aresources&r!"
 	]
@@ -6261,6 +6281,7 @@
 	task.034E0FF0E42418C7.title: "I've done this!"
 	task.03501B1E1C263404.title: "Any Runic Claymore"
 	task.0365E6610A60A4DB.title: "Any Item Input Hatch"
+	task.03668A5BAEC4C0A7.title: "Any Energy Input Hatch"
 	task.0370BDE5CF6E361F.title: "NYI"
 	task.0386D6436310F041.title: "NYI"
 	task.03D44CD9E74F3497.title: "Any Energy Input Hatch"
@@ -6303,6 +6324,7 @@
 	task.0E273C559CE9E1F0.title: "Any Energy Input Hatch"
 	task.0E49F79E7E70D235.title: "4x Polished Gemstone Blocks"
 	task.0E8A5C744F2B7940.title: "Any Energy Input Hatch"
+	task.0ECA1F32FF71F125.title: "Any Item Output Hatch"
 	task.0F128E5E9CEF7374.title: "92x Polished Blocks"
 	task.0FC2EC17F4A216F2.title: "Click to Acknowledge"
 	task.10A20CF34D904B6E.title: "Any Colored Sapling"
@@ -6360,6 +6382,7 @@
 	task.1E966709B2AA219A.title: "I've done this!"
 	task.1F0A2F22DEFCA291.title: "Any Fluid Input Hatch"
 	task.1FEE1621403E20F6.title: "Any Fluid Output Hatch"
+	task.20124168FFD87EE9.title: "Any Energy Input Hatch"
 	task.2024A3B3CA873BFF.title: "Any Item Input Hatch"
 	task.203F7CD723D1C9AC.title: "Any Item Output Hatch"
 	task.20411633D70068EE.title: "Any Fluid Input Hatch"
@@ -6413,6 +6436,7 @@
 	task.289E89E0F9C1E221.title: "Any Gemstone Lamp"
 	task.28C8C241900CA267.title: "I've done this!"
 	task.28F2DD2BCE71EEB4.title: "NYI"
+	task.2904B369270B27EB.title: "There's more?"
 	task.2925568E6FC1DD32.title: "Any Energy Input Hatch"
 	task.29516647E8323463.title: "NYI"
 	task.29A61A753063745C.title: "Any Fluid Input Hatch"
@@ -6422,9 +6446,11 @@
 	task.2A3F5BE3F9B325B2.title: "NYI"
 	task.2A5B148EF77E20F7.title: "Any Item Output Hatch"
 	task.2AB8C71EC731863F.title: "Any Knife"
+	task.2B2797753FC0C3EF.title: "Any Item Output Hatch"
 	task.2BDC1045D04D624F.title: "Visit &dThe Deeper Down"
 	task.2BE57B36A4ED7A63.title: "Click to Acknowledge"
 	task.2C0CB2CC3F03574C.title: "Any Pigment Spore Blossom"
+	task.2CAE45FBD925E753.title: "Any Energy Input Hatch"
 	task.2CC82C3F68C2B199.title: "12x Polished Blocks"
 	task.2D28565C24ACC2E1.title: "24x Polished Slabs"
 	task.2D3AF43538899939.title: "Any Fluid Output Hatch"
@@ -6440,6 +6466,7 @@
 	task.2E90BA4DED04110F.title: "Crawl"
 	task.2EFE35A5F4181F40.title: "Basic Runes"
 	task.2F68B6A8F5B091CC.title: "Any Sharestone"
+	task.2FB58A17AE8EE45E.title: "Any Item Output Hatch"
 	task.2FD8CC6D12B11BE7.title: "I've done this!"
 	task.2FE510959A24DF9E.title: "I've done this!"
 	task.3036FB8C4E37E13C.title: "Batching?"
@@ -6469,6 +6496,7 @@
 	task.356C24BFAC444D8D.title: "NYI"
 	task.35A061877D5EE6C4.title: "NYI"
 	task.367F8C3925763AB8.title: "Click to Acknowledge"
+	task.36E1D91650DDD7D4.title: "Any Item Input Hatch"
 	task.3750401D20388C6C.title: "Any Fluid Output Hatch"
 	task.3759329D7AB3E02D.title: "Any Energy Input Hatch"
 	task.376C0CF2BECA7215.title: "Any Fluid Input Hatch"
@@ -6483,9 +6511,11 @@
 	task.39CC1984CE1589CB.title: "NYI"
 	task.3A2ADE76DB297471.title: "Any Item Output Hatch"
 	task.3A544D6C55C31BBF.title: "I've done this!"
+	task.3A7EC3D769168A8F.title: "Any Item Input Hatch"
 	task.3AA9F6C394B75906.title: "8x Polished Pillars"
 	task.3AB965878A5E3D2F.title: "NYI"
 	task.3B19D63490967A0A.title: "Click to Acknowledge"
+	task.3B8D0EB3B44C40F6.title: "Any Fluid Output Hatch"
 	task.3BDA06A26C350CF6.title: "Any Fluid Input Hatch"
 	task.3C1DD9FE71C9AB70.title: "I've done this!"
 	task.3C38FB0B268A620D.title: "I've done this!"
@@ -6512,6 +6542,7 @@
 	task.415377B0AC4EA77A.title: "NYI"
 	task.416A3F9D68C396BC.title: "Any Fluid Output Hatch"
 	task.42348CA825714275.title: "UI Customization"
+	task.42669508B166C6E7.title: "Any Item Input Hatch"
 	task.42A323867D3F1620.title: "4x Chiseled Polished Blocks"
 	task.42E7AEE28F9E337D.title: "68x Polished Blocks"
 	task.42ED9B8699959459.title: "Any Inquisitor Boots"
@@ -6656,6 +6687,7 @@
 	task.61C366078D14E1EB.title: "NYI"
 	task.621BA1142B66F9B9.title: "Any Item Output Hatch"
 	task.62611ADCFA7515DE.title: "Any Fluid Output Hatch"
+	task.629CE2543005AA93.title: "Any Fluid Input Hatch"
 	task.62AB0053CE949237.title: "Any Item Input Hatch"
 	task.6304982F30415E1A.title: "Click to Acknowledge"
 	task.638EF66FA82A6D27.title: "Any Blackslag"

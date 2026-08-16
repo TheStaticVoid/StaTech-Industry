@@ -1929,5 +1929,73 @@
 			x: 7.0d
 			y: -3.5d
 		}
+		{
+			dependencies: ["7C3CA1F482268915"]
+			icon: {
+				id: "mi_tweaks:recycling_factory"
+			}
+			id: "75F6C7CE29A61ED4"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "2967B1670A842223"
+					item: { count: 1, id: "mi_tweaks:recycling_factory" }
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "45D3393690E8D6E7"
+					item: { count: 1, id: "modern_industrialization:steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "3681B4EADD152221"
+					item: { count: 1, id: "modern_industrialization:steel_machine_casing_pipe" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "546CEC5D5EF66741"
+					item: { count: 1, id: "minecraft:hopper" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3BBA0E5A75541494"
+					item: { count: 1, id: "trashcans:item_trash_can" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "3166E16A9E0A6EF0"
+					item: { count: 1, id: "kubejs:borosilicate_glass" }
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "20124168FFD87EE9"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "3A7EC3D769168A8F"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "2FB58A17AE8EE45E"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -1.5d
+		}
 	]
 }

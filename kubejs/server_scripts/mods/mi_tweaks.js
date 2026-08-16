@@ -160,6 +160,39 @@ ServerEvents.recipes((event) => {
         })
         .id(st('arrayed_wiremill'));
 
+    // -- RECYCLING FACTORY -- //
+    event
+        .shaped(mt('recycling_factory'), ['SPS', 'UHU', 'SRS'], {
+            R: mi('recycler'),
+            P: mi('processing_unit'),
+            S: mi('steel_machine_casing'),
+            U: kj('uu_matter'),
+            H: mi('highly_advanced_machine_hull'),
+        })
+        .id(st('recycling_factory'));
+
+    // -- MACROTHERMIC CONFLUENCE UNIT -- //
+    event
+        .shaped(mt('macrothermic_confluence_unit'), ['OQO', 'LHL', 'EQE'], {
+            E: mi('heat_exchanger'),
+            Q: mi('quantum_circuit'),
+            L: mi('large_heat_exchanger'),
+            H: mi('quantum_machine_hull'),
+            O: mi('ostrum_machine_casing'),
+        })
+        .id(st('macrothermic_confluence_unit'));
+
+    // -- EXTREME VACUUM CRYOFREEZER -- //
+    event
+        .shaped(mt('extreme_vacuum_cryofreezer'), ['PPP', 'QHQ', 'AFA'], {
+            F: mi('vacuum_freezer'),
+            Q: mi('quantum_circuit'),
+            H: mi('quantum_machine_hull'),
+            P: mi('large_advanced_pump'),
+            A: mi('aluminum_large_plate'),
+        })
+        .id(st('extreme_vacuum_cryofreezer'));
+
     // -----------------//
     // -- ASSEMBLER -- //
     // -----------------//
@@ -375,5 +408,53 @@ ServerEvents.recipes((event) => {
             { amount: 1, item: mi('processing_unit') },
         ],
         [{ amount: 1, item: mt('grand_mass_centrifuge') }]
+    );
+
+    // -- RECYCLING FACTORY -- //
+    assembler(
+        event,
+        sta('recycling_factory'),
+        8,
+        200,
+        [
+            { amount: 2, item: kj('uu_matter') },
+            { amount: 4, item: mi('steel_machine_casing') },
+            { amount: 1, item: mi('highly_advanced_machine_hull') },
+            { amount: 1, item: mi('recycler') },
+            { amount: 1, item: mi('processing_unit') },
+        ],
+        [{ amount: 1, item: mt('recycling_factory') }]
+    );
+
+    // -- MACROTHERMIC CONFLUENCE UNIT -- //
+    assembler(
+        event,
+        sta('macrothermic_confluence_unit'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('heat_exchanger') },
+            { amount: 2, item: mi('large_heat_exchanger') },
+            { amount: 2, item: mi('ostrum_machine_casing') },
+            { amount: 1, item: mi('quantum_machine_hull') },
+            { amount: 2, item: mi('quantum_circuit') },
+        ],
+        [{ amount: 1, item: mt('macrothermic_confluence_unit') }]
+    );
+
+    // -- EXTREME VACUUM CRYOFREEZER -- //
+    assembler(
+        event,
+        sta('extreme_vacuum_cryofreezer'),
+        8,
+        200,
+        [
+            { amount: 3, item: mi('large_advanced_pump') },
+            { amount: 2, item: mi('aluminum_large_plate') },
+            { amount: 1, item: mi('quantum_machine_hull') },
+            { amount: 1, item: mi('vacuum_freezer') },
+            { amount: 2, item: mi('quantum_circuit') },
+        ],
+        [{ amount: 1, item: mt('extreme_vacuum_cryofreezer') }]
     );
 });
