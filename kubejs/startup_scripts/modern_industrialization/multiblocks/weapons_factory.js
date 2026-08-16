@@ -55,11 +55,11 @@ MIMachineEvents.registerMachines((event) => {
         weaponsFactoryShape, // multiblock shape
 
         // REI Display configuration
-        event.progressBar(77, 33, 'triple_arrow'),
+        event.progressBar(85, 24, 'triple_arrow'),
         // REI Item inputs, item outputs, fluid inputs, fluid outputs
-        (itemInputs) => itemInputs.addSlots(102, 35, 3, 2),
-        (itemOutputs) => itemOutputs.addSlot(56, 35),
-        (fluidInputs) => fluidInputs.addSlot(56, 53),
+        (itemInputs) => itemInputs.addSlots(28, 17, 3, 1).addSlots(28, 35, 2, 1),
+        (itemOutputs) => itemOutputs.addSlot(112, 24),
+        (fluidInputs) => fluidInputs.addSlot(64, 35),
         (fluidOutputs) => {},
 
         /* Model configuration */
