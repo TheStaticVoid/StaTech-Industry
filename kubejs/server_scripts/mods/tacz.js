@@ -321,7 +321,7 @@ ServerEvents.recipes((event) => {
 
         const outputString = String(outputID).slice(5);
 
-        if (ammo.ptfe !== undefined && ammo.explosive !== undefined) {
+        if (ammo.ptfe != null && ammo.explosive != null) {
             event.recipes.modern_industrialization
                 .assembler(8, 200)
                 .itemIn('4x ' + ammo.core)

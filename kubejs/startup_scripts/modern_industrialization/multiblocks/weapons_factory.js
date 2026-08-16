@@ -35,9 +35,9 @@ MIMachineEvents.registerMachines((event) => {
             // y= 0        1        2        3        4
             [' PpP ', ' GGG ', ' GGG ', ' GGG ', ' PPP '],
             ['PPPPP', 'P S P', 'P S P', 'P S P', 'PPCPP'],
-            ['PPPPP', 'GSWSG', 'GSWSG', 'GSWSG', 'PCCCP'],
+            ['pPPPp', 'GSWSG', 'GSWSG', 'GSWSG', 'pCCCp'],
             ['PPPPP', 'P S P', 'P S P', 'P S P', 'PPCPP'],
-            [' p#p ', ' GGG ', ' GGG ', ' GGG ', ' PpP '],
+            [' p#p ', ' GGG ', ' GGG ', ' GGG ', ' ppp '],
         ])
         .key('P', heatproofMachineCasing, event.noHatch())
         .key('p', heatproofMachineCasing, weaponsFactoryHatch)
