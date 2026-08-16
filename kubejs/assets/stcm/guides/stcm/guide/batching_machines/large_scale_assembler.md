@@ -14,6 +14,6 @@ item_ids:
     <MultiblockShape controller="mi_tweaks:large_scale_assembler" />
 </GameScene>
 
-The Large Chemical Reactor is a batching version of the Chemical Reactor. It can do batches of 16, but it has no EU discount. Sorry.
+The Large Scale Assembler is a batching version of the Assembler. It can do batches of 16 at a 15% EU discount!
 
 <Recipe id="statech:mi_tweaks/large_scale_assembler" />

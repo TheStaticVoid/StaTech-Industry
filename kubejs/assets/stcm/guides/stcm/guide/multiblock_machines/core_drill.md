@@ -3,7 +3,7 @@ navigation:
     title: 'Core Drill'
     icon: 'modern_industrialization:core_drill'
     position: 3
-    parent: stcm:machines.md
+    parent: stcm:multiblock_machines.md
 item_ids:
     - modern_industrialization:core_drill
 ---

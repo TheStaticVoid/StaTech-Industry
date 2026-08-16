@@ -3,7 +3,7 @@ navigation:
     title: 'Space Probe Launcher'
     icon: 'modern_industrialization:space_probe_launcher'
     position: 5
-    parent: stcm:machines.md
+    parent: stcm:multiblock_machines.md
 item_ids:
     - modern_industrialization:space_probe_launcher
 ---

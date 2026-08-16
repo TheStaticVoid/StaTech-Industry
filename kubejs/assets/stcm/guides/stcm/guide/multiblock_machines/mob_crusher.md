@@ -3,7 +3,7 @@ navigation:
     title: 'Mob Crusher'
     icon: 'modern_industrialization:mob_crusher'
     position: 0
-    parent: stcm:machines.md
+    parent: stcm:multiblock_machines.md
 item_ids:
     - modern_industrialization:mob_crusher
 ---

@@ -3,7 +3,7 @@ navigation:
     title: 'Weapons Factory'
     icon: 'modern_industrialization:weapons_factory'
     position: 7
-    parent: stcm:machines.md
+    parent: stcm:multiblock_machines.md
 item_ids:
     - modern_industrialization:weapons_factory
 ---

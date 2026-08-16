@@ -3,7 +3,7 @@ navigation:
     title: 'Blood Generator'
     icon: 'modern_industrialization:blood_generator'
     position: 2
-    parent: stcm:machines.md
+    parent: stcm:multiblock_machines.md
 item_ids:
     - modern_industrialization:blood_generator
 ---
