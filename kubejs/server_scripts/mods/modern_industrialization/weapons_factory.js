@@ -383,6 +383,210 @@ ServerEvents.recipes((event) => {
             '8x ' + mc('glowstone'),
             50
         ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_silencer_ptilopsis"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mc('redstone'),
+            '2x ' + mi('aluminum_plate')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_brake_mastiff_sg"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('copper_plate'),
+            '2x ' + mi('aluminum_plate')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_brake_timeless50"}'
+            ),
+            mi('steel_plate'),
+            '2x ' + mi('copper_plate'),
+            '4x ' + mi('aluminum_plate')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_brake_pioneer"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('copper_plate'),
+            '4x ' + mi('aluminum_plate')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_silencer_wraith"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mc('leather'),
+            '4x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_brake_cyclone_d2"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('copper_plate'),
+            '6x ' + mi('aluminum_plate')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_brake_trex"}'
+            ),
+            mi('steel_plate'),
+            '6x ' + mi('copper_plate'),
+            '6x ' + mi('aluminum_plate')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_silencer_mirage"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('aluminum_plate'),
+            '2x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:bayonet_6h3"}'
+            ),
+            mi('steel_plate'),
+            '1x ' + fd('diamond_knife'),
+            '2x ' + mc('string')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_compensator_trident"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('aluminum_plate'),
+            '3x ' + mi('steel_rod')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_silencer_knight_qd"}'
+            ),
+            mi('steel_plate'),
+            '6x ' + mi('aluminum_plate'),
+            '4x ' + mc('leather'),
+            '4x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_silencer_phantom_s1"}'
+            ),
+            mi('steel_plate'),
+            '6x ' + mi('aluminum_plate'),
+            '4x ' + mc('leather'),
+            '4x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_choke_sg"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('aluminum_ring'),
+            '6x ' + mi('steel_rod')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_silencer_sg"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('aluminum_ring'),
+            '6x ' + mi('steel_rod'),
+            '4x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_brake_cthulhu"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('aluminum_plate'),
+            '6x ' + mi('steel_ring')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:bayonet_m9"}'
+            ),
+            mi('steel_plate'),
+            '1x ' + fd('diamond_knife'),
+            '4x #minecraft:logs',
+            '1x ' + mc('string')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_silencer_vulture"}'
+            ),
+            mi('steel_plate'),
+            '8x ' + mi('aluminum_ring'),
+            '8x ' + mi('steel_rod'),
+            '16x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:deagle_golden_long_barrel"}'
+            ),
+            mi('gold_plate'),
+            '16x ' + mi('bronze_ring'),
+            '8x ' + mi('steel_plate')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:muzzle_silencer_ursus"}'
+            ),
+            mi('steel_plate'),
+            '12x ' + mi('steel_ring'),
+            '8x ' + mi('steel_rod'),
+            '6x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:oem_stock_tactical"}'
+            ),
+            mi('steel_plate'),
+            '10x ' + mi('steel_rod'),
+            '6x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:oem_stock_light"}'
+            ),
+            mi('steel_plate'),
+            '5x ' + mi('steel_rod'),
+            '3x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:oem_stock_heavy"}'
+            ),
+            mi('steel_plate'),
+            '15x ' + mi('steel_rod'),
+            '9x ' + mc('leather')
+        ),
     ];
 
     function makeAttachmentRecipes(attachment) {
