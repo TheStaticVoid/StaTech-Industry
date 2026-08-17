@@ -233,6 +233,17 @@ jobs:
           files: '.pakku/server-overrides/forge-auto-install.txt'
           search-text: 'loaderVersion=**.*.***'
           replacement-text: 'loaderVersion=${{ needs.info.outputs.loader_version }}'
+        
+      - name: Commit If Changed
+        run: |
+          if ! git diff --quiet .pakku/prism-overrides/mmc-pack.json; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add .pakku/prism-overrides/mmc-pack.json
+            git add config/bcc-common.toml
+            git commit -m "Updated mmc-pack.json and forge-auto-install.txt to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }}
+            git push origin HEAD:${{ github.head_ref || github.ref_name }}
+          fi
 
   update-bcc-config:
       name: Update BetterCompatibilityChecker Config
@@ -257,17 +268,6 @@ jobs:
           run: |
             cat "config/bcc-common.toml"
 
-  commit-changes:
-      name: Commit changes (if any)
-      needs: [info, update-mmc-pack, update-bcc-config]
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout repository
-          uses: actions/checkout@v5.0.0
-          with:
-            token: ${{ secrets.GITHUB_TOKEN }}
-            fetch-depth: 0
-
         - name: Commit If Changed
           run: |
             if ! git diff --quiet .pakku/prism-overrides/mmc-pack.json; then
@@ -275,6 +275,6 @@ jobs:
               git config --local user.name "GitHub Action"
               git add .pakku/prism-overrides/mmc-pack.json
               git add config/bcc-common.toml
-              git commit -m "Updated mmc-pack.json to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }} and updated BCC Version to "${{ needs.info.outputs.project_release_version }}
+              git commit -m "Updated BCC pack version to "${{ needs.info.outputs.project_release_version }}
               git push origin HEAD:${{ github.head_ref || github.ref_name }}
             fi
