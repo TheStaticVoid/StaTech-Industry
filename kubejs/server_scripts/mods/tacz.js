@@ -30,10 +30,6 @@ ServerEvents.recipes((event) => {
 
     //event.remove({ type: tz('gun_smith_table_crafting') });
 
-    // ---------------------//
-    // ------ SHAPED ------ //
-    // ---------------------//
-
     // --------------------//
     // ---- ASSEMBLER ---- //
     // --------------------//

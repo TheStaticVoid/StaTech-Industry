@@ -1,7 +1,6 @@
 # Changelog
 
-## [2.0.0-rc5]
-
+## [Unreleased]
 
 - Removed Jon Bartman due to public backlash
 
