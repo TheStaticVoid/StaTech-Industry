@@ -240,7 +240,7 @@ jobs:
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add .pakku/prism-overrides/mmc-pack.json
-            git add config/bcc-common.toml
+            git add .pakku/server-overrides/forge-auto-install.txt
             git commit -m "Updated mmc-pack.json and forge-auto-install.txt to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }}
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
@@ -270,10 +270,9 @@ jobs:
 
         - name: Commit If Changed
           run: |
-            if ! git diff --quiet .pakku/prism-overrides/mmc-pack.json; then
+            if ! git diff --quiet pakku.json; then
               git config --local user.email "action@github.com"
               git config --local user.name "GitHub Action"
-              git add .pakku/prism-overrides/mmc-pack.json
               git add config/bcc-common.toml
               git commit -m "Updated BCC pack version to "${{ needs.info.outputs.project_release_version }}
               git push origin HEAD:${{ github.head_ref || github.ref_name }}
