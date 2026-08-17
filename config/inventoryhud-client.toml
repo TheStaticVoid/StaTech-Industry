@@ -88,28 +88,28 @@
 [positions]
 	#Inventory HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
-	invValign = "BOTTOM"
+	invValign = "CENTER"
 	#Inventory HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	invHalign = "MIDDLE"
+	invHalign = "RIGHT"
 	#Inventory HUD position (X)
 	# Default: 0
 	# Range: -9999 ~ 9999
-	xPos = 0
+	xPos = 160
 	#Inventory HUD position (Y)
 	# Default: 150
 	# Range: -9999 ~ 9999
-	yPos = 150
+	yPos = -17
 	#Armor HUD vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
 	armValign = "BOTTOM"
 	#Armor HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	armHalign = "MIDDLE"
+	armHalign = "RIGHT"
 	#Armor HUD position (X)
 	# Default: 0
 	# Range: -9999 ~ 9999
-	xArmPos = 0
+	xArmPos = 90
 	#Armor HUD position (Y)
 	# Default: 70
 	# Range: -9999 ~ 9999
