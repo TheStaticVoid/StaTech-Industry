@@ -140,18 +140,21 @@ ServerEvents.recipes((event) => {
         })
         .id(st('citrine_shard_from_common'));
 
+    // -- COAL ORE -- //
     event
         .shaped('12x ' + mc('coal_ore'), ['C C', ' C ', 'C C'], {
             C: common,
         })
         .id(st('coal_ore_from_common'));
 
+    // -- COPPER ORE -- //
     event
         .shaped('12x ' + mc('copper_ore'), ['CCC', 'C  ', 'CCC'], {
             C: common,
         })
         .id(st('copper_ore_from_common'));
 
+    // -- ZINC ORE -- //
     event
         .shaped('8x create:zinc_ore', ['CC', 'CC'], {
             C: common,
@@ -164,6 +167,13 @@ ServerEvents.recipes((event) => {
             C: common,
         })
         .id(st('salt_ore_from_common'));
+
+    // -- LIGNITE COAL ORE -- //
+    event
+        .shaped('12x ' + mi('lignite_coal_ore'), ['CC ', ' C ', ' CC'], {
+            C: common,
+        })
+        .id(st('lignite_coal_ore_from_common'));
 
     // -------------- //
     //      RARE      //
@@ -218,6 +228,41 @@ ServerEvents.recipes((event) => {
         })
         .id(st('bauxite_ore_from_rare'));
 
+    // -- FLUORITE ORE -- //
+    event
+        .shaped('8x ' + mi('fluorite_ore'), ['C  ', 'CCC', '  C'], {
+            C: rare,
+        })
+        .id(st('fluorite_ore_from_rare'));
+
+    // -- QUARTZ ORE -- //
+    event
+        .shaped('8x ' + mi('quartz_ore'), ['C C', ' C ', 'C C'], {
+            C: rare,
+        })
+        .id(st('quartz_ore_from_rare'));
+
+    // -- KERNITE ORE -- //
+    event
+        .shaped('8x ' + mi('kernite_ore'), ['CCC', ' C ', 'CCC'], {
+            C: rare,
+        })
+        .id(st('kernite_ore_from_rare'));
+
+    // -- RUBY ORE -- //
+    event
+        .shaped('8x ' + mi('ruby_ore'), ['  C', 'CCC', 'C  '], {
+            C: rare,
+        })
+        .id(st('ruby_ore_from_rare'));
+
+    // -- SAPPHIRE ORE -- //
+    event
+        .shaped('8x ' + mi('sapphire_ore'), ['CCC', '   ', 'CCC'], {
+            C: rare,
+        })
+        .id(st('sapphire_ore_from_rare'));
+
     // -------------- //
     //   LEGENDARY    //
     // -------------- //
@@ -264,6 +309,41 @@ ServerEvents.recipes((event) => {
         })
         .id('ostrum_ore_from_legendary');
 
+    // -- MOON ICE ORE -- //
+    event
+        .shaped('8x ' + mi('moon_ice_ore'), [' CC', ' C ', 'CC '], {
+            C: legendary,
+        })
+        .id('moon_ice_ore_from_legendary');
+
+    // -- TITANIUM ORE -- //
+    event
+        .shaped('8x ' + mi('titanium_ore'), ['C C', 'CCC', 'C C'], {
+            C: legendary,
+        })
+        .id('titanium_ore_from_legendary');
+
+    // -- PLATINUM ORE -- //
+    event
+        .shaped('8x ' + mi('platinum_ore'), ['CCC', 'C C', 'C C'], {
+            C: legendary,
+        })
+        .id('platinum_ore_from_legendary');
+
+    // -- PERIDOT ORE -- //
+    event
+        .shaped('8x ' + mi('peridot_ore'), ['   ', 'C C', 'CCC'], {
+            C: legendary,
+        })
+        .id('peridot_ore_from_legendary');
+
+    // -- EMERALD ORE -- //
+    event
+        .shaped('8x ' + mc('emerald_ore'), [' C ', ' C ', 'CCC'], {
+            C: legendary,
+        })
+        .id('emerald_ore_from_legendary');
+
     // -------------- //
     //     MYTHIC     //
     // -------------- //
@@ -297,12 +377,19 @@ ServerEvents.recipes((event) => {
         })
         .id(st('calorite_ore_from_mythic'));
 
+    // -- IRIDIUM ORE -- //
+    event
+        .shaped('8x ' + mi('iridium_ore'), ['C C', 'C C', 'CCC'], {
+            C: mythic,
+        })
+        .id(st('iridium_ore_from_mythic'));
+
     // --------------- //
     // -- TOOL SETS -- //
     // --------------- //
 
-    const toolSetsMaterials = ['bronze', 'steel', 'copper']
-    const armorSetsMaterials = ['bronze', 'steel']
+    const toolSetsMaterials = ['bronze', 'steel', 'copper'];
+    const armorSetsMaterials = ['bronze', 'steel'];
 
     // -- BOOTS -- //
     armorSetsMaterials.forEach((material) => {
@@ -314,16 +401,24 @@ ServerEvents.recipes((event) => {
 
         // -- CHESTPLATE -- //
         event
-            .shaped(Item.of(kj(`${material}_chestplate`)), ['A A', 'AAA', 'AAA'], {
-                A: `#c:plates/${material}`,
-            })
+            .shaped(
+                Item.of(kj(`${material}_chestplate`)),
+                ['A A', 'AAA', 'AAA'],
+                {
+                    A: `#c:plates/${material}`,
+                }
+            )
             .id(st(`${material}_chestplate`));
 
         // -- LEGGINGS -- //
         event
-            .shaped(Item.of(kj(`${material}_leggings`)), ['AAA', 'A A', 'A A'], {
-                A: `#c:plates/${material}`,
-            })
+            .shaped(
+                Item.of(kj(`${material}_leggings`)),
+                ['AAA', 'A A', 'A A'],
+                {
+                    A: `#c:plates/${material}`,
+                }
+            )
             .id(st(`${material}_leggings`));
 
         // -- HELMET -- //
@@ -332,7 +427,7 @@ ServerEvents.recipes((event) => {
                 A: `#c:plates/${material}`,
             })
             .id(st(`${material}_helmet`));
-    })
+    });
 
     toolSetsMaterials.forEach((material) => {
         // -- PICKAXE -- //
@@ -377,8 +472,6 @@ ServerEvents.recipes((event) => {
     });
 });
 
-
-
 ServerEvents.tags('item', (event) => {
     const COINS = [
         kj('coin_common'),
@@ -406,19 +499,22 @@ ServerEvents.tags('block', (event) => {
         '#chisel:chiseled_glowstone',
         /^xtonesreworked:glaxx_block_/,
     ]);
-    const tagsToRemoveFromCopper = ['minecraft:incorrect_for_wooden_tool', 'minecraft:incorrect_for_gold_tool', 'minecraft:needs_stone_tool']
+    const tagsToRemoveFromCopper = [
+        'minecraft:incorrect_for_wooden_tool',
+        'minecraft:incorrect_for_gold_tool',
+        'minecraft:needs_stone_tool',
+    ];
     tagsToRemoveFromCopper.forEach((tag) => {
         event.remove(`${tag}`, [
             'minecraft:deepslate_copper_ore',
             'minecraft:raw_copper_block',
             'minecraft:copper_ore',
         ]);
-    })
+    });
 });
 
 // -- ITEM TAGGING -- //
 ServerEvents.tags('item', (event) => {
-
     const ultimineDisabledTools = [
         mc('stone_pickaxe'),
         mc('stone_axe'),
@@ -429,8 +525,8 @@ ServerEvents.tags('item', (event) => {
         mc('wooden_axe'),
         mc('wooden_shovel'),
         mc('wooden_sword'),
-        mc('wooden_hoe')
-    ]
+        mc('wooden_hoe'),
+    ];
     ultimineDisabledTools.forEach((tool) => {
         event.add('ftbultimine:excluded_tools', `${tool}`);
     });
