@@ -3,6 +3,7 @@
 ## [2.0.0-rc5]
 
 This update brings bucketloads more polish to GuideME, the questbook, and recipes. There are a ton of changes, so I'll just list the highlights here, breaking changes are bolded:
+
 - Fixed iron tool nerfs
 - Added speedy concrete block
 - HUD/UI tweaks
@@ -13,14 +14,14 @@ This update brings bucketloads more polish to GuideME, the questbook, and recipe
 - Fixed compatibility with the updated MI Sound Addon and add missing sounds
 - **Nerfed Pyrolyse Oven Batching**
 - **Fixed Forge Hammer Ore Processing Exploit**
-- Added custom CC:Tweaked, Little Big Redstone, and Advanced Peripherals recipes, with assembler oens as well.
+- Added custom CC:Tweaked, Little Big Redstone, and Advanced Peripherals recipes, with assembler ones as well.
 - **Fixed Molten Redstone Amounts Not Being Consistent**
 - **Made Hatches Optional in Quests**
 - **Fixed Cutting Machine Recipe Conflicts**
 - **Made Shrinking Charm Craftable**
 - **Added effects to sodas and made the EI Tin Can an Aluminum Can**
 - **Implemented the Recycler + Matter Fabricator scrap mechanic more**
-- Overhauled greenhouse recipes to allow for better chanced batching
+- Overhauled greenhouse recipes to allow for better handling of chanced outputs with batching
 - **Added Weapons Factory Multiblock for Gun Crafting**
 - **Add custom Assembler recipes for gun ammunition**
 - **Added buffed transistor + battery recipes**
@@ -29,9 +30,10 @@ This update brings bucketloads more polish to GuideME, the questbook, and recipe
 - Replaced vanilla splash text for pack-specific splashes
 - Overhauled Chapter 4 questbook format
 - **Added NeoForge Hammer (Upgraded Forge Hammer that keeps the hammer inside)**
-- Fixed the legally-nondescript-plastic-building brick recipe to use ITNT
-- Added missing ores from coins recipes
+- Fixed the "Legally Nondescript ABS Building Brick" recipe to use ITNT
+- Added missing ore-from-coins recipes
 - **Added Batching Vacuum Freezer, Heat Exchanger, and Recycler**
+- Added literal fruity pebbles
 - Removed Jon Bartman due to public backlash
 
 Those are the most significant changes, but there were more. This was a very big update and we hope it's pretty close to the final one before the full release.

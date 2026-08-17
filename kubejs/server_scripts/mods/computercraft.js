@@ -41,6 +41,16 @@ ServerEvents.recipes((event) => {
         adp('chat_box'),
         adp('player_detector'),
         adp('energy_detector'),
+        adp('me_bridge'),
+        adp('distance_detector'),
+        adp('fluid_detector'),
+        adp('smart_rail'),
+        adp('keyboard'),
+        adp('smart_glasses'),
+        adp('smart_glasses_interface'),
+        adp('hotkey_module'),
+        adp('overlay_module'),
+        adp('nightvision_module'),
     ];
     COMPUTERCRAFT_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
@@ -457,6 +467,91 @@ ServerEvents.recipes((event) => {
         [{ amount: 3240, fluid: mi('molten_redstone') }]
     );
 
+    // -- DISTANCE DETECTOR ASSEMBLER -- //
+    assembler(
+        event,
+        st('assembler/distance_detector'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('aluminum_plate') },
+            { amount: 2, item: lbr('comparator') },
+            { amount: 4, item: mc('observer') },
+            { amount: 1, item: adp('peripheral_casing') },
+        ],
+        [{ amount: 1, item: adp('distance_detector') }],
+        [{ amount: 3240, fluid: mi('molten_redstone') }]
+    );
+
+    // -- FLUID DETECTOR ASSEMBLER -- //
+    assembler(
+        event,
+        st('assembler/fluid_detector'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('aluminum_plate') },
+            { amount: 2, item: lbr('comparator') },
+            { amount: 4, tag: mi('tanks') },
+            { amount: 2, item: mc('piston') },
+            { amount: 1, item: adp('peripheral_casing') },
+        ],
+        [{ amount: 1, item: adp('fluid_detector') }],
+        [{ amount: 3240, fluid: mi('molten_redstone') }]
+    );
+
+    // -- ME BRIDGE ASSEMBLER -- //
+    assembler(
+        event,
+        st('assembler/me_bridge'),
+        8,
+        200,
+        [
+            { amount: 4, item: mg('sky_steel_block') },
+            { amount: 2, item: lbr('comparator') },
+            { amount: 4, item: ea('assembler_matrix_wall') },
+            { amount: 2, item: mc('piston') },
+            { amount: 1, item: adp('peripheral_casing') },
+        ],
+        [{ amount: 1, item: adp('me_bridge') }],
+        [{ amount: 3240, fluid: mi('molten_redstone') }]
+    );
+
+    // -- SMART RAIL ASSEMBLER -- //
+    assembler(
+        event,
+        st('assembler/smart_rail'),
+        8,
+        200,
+        [
+            { amount: 5, item: mi('aluminum_plate') },
+            { amount: 2, item: lbr('comparator') },
+            { amount: 1, tag: cc('wired_modem') },
+            { amount: 1, item: mc('detector_rail') },
+            { amount: 1, item: mc('powered_rail') },
+            { amount: 1, item: mc('activator_rail') },
+        ],
+        [{ amount: 4, item: adp('smart_rail') }],
+        [{ amount: 360, fluid: mi('molten_redstone') }]
+    );
+
+    // -- SMART GLASSES ASSEMBLER -- //
+    assembler(
+        event,
+        st('assembler/smart_glasses'),
+        8,
+        200,
+        [
+            { amount: 5, item: mi('aluminum_plate') },
+            { amount: 2, item: cc('pocket_computer_advanced') },
+            { amount: 2, item: kj('borosilicate_glass') },
+            { amount: 2, item: mi('silicon_battery') },
+            { amount: 1, item: cc('wireless_modem_advanced') },
+        ],
+        [{ amount: 1, item: adp('smart_glasses') }],
+        [{ amount: 3240, fluid: mi('molten_redstone') }]
+    );
+
     // ---------------------//
     // ------ PACKER ------ //
     // ---------------------//
@@ -486,6 +581,114 @@ ServerEvents.recipes((event) => {
         ],
         [{ amount: 1, item: cc('monitor_advanced') }]
     );
+
+    // -- KEYBOARD PACKER -- //
+    packer(
+        event,
+        st('packer/keyboard'),
+        16,
+        100,
+        [
+            { amount: 7, tag: mc('buttons') },
+            { amount: 1, item: cc('pocket_computer_advanced') },
+            { amount: 1, item: adp('peripheral_casing') },
+        ],
+        [{ amount: 1, item: adp('keyboard') }]
+    );
+
+    // -- SMART GLASSES INTERFACE PACKER -- //
+    packer(
+        event,
+        st('packer/smart_glasses_interface'),
+        16,
+        100,
+        [
+            { amount: 1, item: cc('wireless_modem_advanced') },
+            { amount: 2, item: mr('red_alloy_wire') },
+            { amount: 1, item: adp('peripheral_casing') },
+        ],
+        [{ amount: 1, item: adp('smart_glasses_interface') }]
+    );
+
+    // -- HOTKEY MODULE PACKER -- //
+    packer(
+        event,
+        st('packer/hotkey_module'),
+        16,
+        100,
+        [
+            { amount: 1, tag: mc('buttons') },
+            { amount: 1, item: mr('red_alloy_wire') },
+            { amount: 1, item: adp('peripheral_casing') },
+        ],
+        [{ amount: 1, item: adp('hotkey_module') }]
+    );
+
+    // -- OVERLAY MODULE PACKER -- //
+    packer(
+        event,
+        st('packer/overlay_module'),
+        16,
+        100,
+        [
+            { amount: 2, item: cc('monitor_advanced') },
+            { amount: 1, item: mr('red_alloy_wire') },
+            { amount: 1, item: adp('peripheral_casing') },
+        ],
+        [{ amount: 1, item: adp('overlay_module') }]
+    );
+
+    // -- NIGHT VISION MODULE PACKER -- //
+    packer(
+        event,
+        st('packer/night_vision_module'),
+        16,
+        100,
+        [
+            { amount: 1, item: ar('night_vision_goggles') },
+            { amount: 1, item: mr('red_alloy_wire') },
+            { amount: 1, item: adp('peripheral_casing') },
+        ],
+        [{ amount: 1, item: adp('nightvision_module') }]
+    );
+
+    // -- NIGHT VISION MODULE PACKER ALT 1 -- //
+    packer(
+        event,
+        st('packer/night_vision_module_alt_1'),
+        16,
+        100,
+        [
+            { amount: 1, item: sp('glow_vision_goggles') },
+            { amount: 1, item: mr('red_alloy_wire') },
+            { amount: 1, item: adp('peripheral_casing') },
+        ],
+        [{ amount: 1, item: adp('nightvision_module') }]
+    );
+
+    // -- NIGHT VISION MODULE PACKER ALT 2 -- //
+    packer(
+        event,
+        st('packer/night_vision_module_alt_2'),
+        16,
+        100,
+        [
+            { amount: 1, item: ei('nano_helmet') },
+            { amount: 1, item: mr('red_alloy_wire') },
+            { amount: 1, item: adp('peripheral_casing') },
+        ],
+        [{ amount: 1, item: adp('nightvision_module') }]
+    );
+});
+
+// -- ADD INFO ON HOW TO MAKE THE SPECIALIZED AUTOMATA CORES -- //
+RecipeViewerEvents.addInformation('item', (event) => {
+    event.add('advancedperipherals:husbandry_automata_core', [
+        '1. Create a weak automata turtle (A normal turtle with a weak automata core as upgrade).\n\n2. Place another weak automata core in the current active slot of the turtle.\n\n3. Run weakAutomata#feedSoul() for every animal while the animal is in front of the turtle.\n\nYou must do this to 3 different types of animals, running it on 3 of each type (cont. on next page)\nie: 3 chickens, 3 pigs, and 3 cows.',
+    ]);
+    event.add('advancedperipherals:end_automata_core', [
+        '1. Create a weak automata turtle (A normal turtle with a weak automata core as upgrade).\n\n2. Place another weak automata core in the current active slot of the turtle.\n\n3. Run weakAutomata#feedSoul() for every enderman while the enderman is in front of the turtle.\n\nYou must do this to 10 enderman.',
+    ]);
 });
 
 MoreJS.villagerTrades((event) => {

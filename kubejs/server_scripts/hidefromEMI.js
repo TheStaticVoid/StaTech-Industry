@@ -138,6 +138,8 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         adp('computer_tool'),
         adp('colony_integrator'),
         adp('rs_bridge'),
+        adp('gas_detector'),
+        /^advancedperipherals:ae_disk_cell_.*/,
     ];
     UNUSED_ADVANCED_PERIPHERALS.forEach((id) => event.remove(id));
 

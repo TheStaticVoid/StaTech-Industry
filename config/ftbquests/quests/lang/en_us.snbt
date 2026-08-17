@@ -442,10 +442,14 @@
 		""
 		"You can use the bar at the bottom of your inventory to &asearch&r &eEMI&f. Additionally, hovering over an item in your inventory and pressing '&6R&r' will display &2how to craft&f said item. You can alternatively press '&6U&r' to &3see all the uses&f of an item in your inventory."
 		"When hovering items in the &eEMI&f pages to the right, you can use left-click to view recipes and right-click to view uses instead."
-		""
+		"{@pagebreak}"
 		"Knowing how to do some more complex searches will also be helpful."
 		"&b@modname&f - This will search &eEMI&r for all items provided by a specific mod"
 		"&e#tagname&f - This will search &eEMI&r for all items in a specified tag, useful for searching things such as $ingots"
+		""
+		"&l&cNOTE:&r&r To enable &eEMI recipe population&r in &6AE2 Crafting Terminals&r, you must set &9&oprovideNetworkInventoryToEmi&r&r in the &6AE2 Client Config&r to &a&otrue&r&r."
+		""
+		"&oIt is disabled by default because it can be unreasonably performance intensive.&r"
 	]
 	quest.0A260F1B9E13182D.title: "EMI Tips"
 	quest.0A2D4107082105A5.quest_desc: [
@@ -6126,6 +6130,7 @@
 	]
 	quest.7D9968AB0012B623.quest_subtitle: "Gun go Brrrrrrrrrr"
 	quest.7D99CA8AE84C0904.quest_desc: ["The &dAssembler Matrix&r is a &amultiblock&r structure from Extended AE that allows to &9fuse&r all your crafting processes into one &abig machine&r instead of having individual &bMolecular Assemblers&r and &bPattern Providers&r."]
+	quest.7D99CA8AE84C0904.title: "Assembler Matrix"
 	quest.7DB69820FE0E6FB4.quest_desc: ["Allows for &2&omanual input&r&r to &l&9Item Vaults&r&r."]
 	quest.7DE19984A4DE57D4.quest_desc: ["&0Crude Oil&r is produced from an &aOil Drilling Rig&r using an &7Aluminum Drill&r. The following quests follow processing down &0Crude Oil&r into other &6usable byproducts&r."]
 	quest.7DE19984A4DE57D4.quest_subtitle: "Black Gold"
