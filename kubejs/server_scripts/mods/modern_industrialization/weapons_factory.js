@@ -587,6 +587,219 @@ ServerEvents.recipes((event) => {
             '15x ' + mi('steel_rod'),
             '9x ' + mc('leather')
         ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_ak12"}'
+            ),
+            mi('steel_plate'),
+            '10x ' + mi('steel_rod'),
+            '5x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_moe"}'
+            ),
+            mi('steel_plate'),
+            '10x ' + mi('steel_rod'),
+            '3x ' + mc('leather'),
+            '2x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_m4ss"}'
+            ),
+            mi('steel_plate'),
+            '8x ' + mi('steel_rod'),
+            '2x ' + mc('leather'),
+            '4x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_carbon_bone_c5"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('steel_rod'),
+            '2x ' + mc('leather'),
+            '2x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_sba3"}'
+            ),
+            mi('steel_plate'),
+            '6x ' + mi('steel_rod'),
+            '2x ' + mc('leather'),
+            '2x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_tactical_ar"}'
+            ),
+            mi('steel_plate'),
+            '8x ' + mi('steel_rod'),
+            '2x ' + mc('leather'),
+            '2x #c:wools',
+            150
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_hk_slim_line"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('steel_rod'),
+            '4x ' + mc('leather'),
+            '2x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_militech_b5"}'
+            ),
+            mi('steel_plate'),
+            '8x ' + mi('steel_rod'),
+            '8x ' + mc('leather'),
+            '4x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_ripstock"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('steel_rod'),
+            '8x ' + mc('leather'),
+            '4x #c:wools'
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_heavy_spas_12"}'
+            ),
+            mi('steel_plate'),
+            '16x ' + mi('steel_rod'),
+            '8x ' + mc('leather'),
+            '4x #c:wools',
+            150
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:stock_tactical_spas_12"}'
+            ),
+            mi('steel_plate'),
+            '12x ' + mi('steel_rod'),
+            '8x ' + mc('leather'),
+            '4x #c:wools',
+            75
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_magpul_afg_2"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('steel_rod'),
+            '2x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_cobra"}'
+            ),
+            mi('steel_plate'),
+            '6x ' + mi('steel_rod'),
+            '4x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_rk6"}'
+            ),
+            mi('steel_plate'),
+            '4x ' + mi('steel_rod'),
+            '1x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_osovets_black"}'
+            ),
+            mi('steel_plate'),
+            '12x ' + mi('steel_rod'),
+            '4x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_vertical_talon"}'
+            ),
+            mi('steel_plate'),
+            '11x ' + mi('steel_rod'),
+            '4x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_vertical_military"}'
+            ),
+            mi('steel_plate'),
+            '14x ' + mi('steel_rod'),
+            '5x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_vertical_ranger"}'
+            ),
+            mi('steel_plate'),
+            '16x ' + mi('steel_rod'),
+            '6x ' + mc('leather'),
+            '4x ' + mc('redstone'),
+            75
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_se_5"}'
+            ),
+            mi('steel_plate'),
+            '10x ' + mi('steel_rod'),
+            '3x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_rk0"}'
+            ),
+            mi('steel_plate'),
+            '11x ' + mi('steel_rod'),
+            '4x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_rk1_b25u"}'
+            ),
+            mi('steel_plate'),
+            '16x ' + mi('steel_rod'),
+            '5x ' + mc('leather')
+        ),
+        Attachment(
+            Item.of(tz('attachment'), 1).set(
+                mc('custom_data'),
+                '{AttachmentId:"tacz:grip_td"}'
+            ),
+            mi('steel_plate'),
+            '10x ' + mi('steel_rod'),
+            '4x ' + mc('leather')
+        ),
     ];
 
     function makeAttachmentRecipes(attachment) {

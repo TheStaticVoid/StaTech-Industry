@@ -354,6 +354,20 @@ const tips = [
         id: 'added_herobrine',
         tiptext: 'Jon Bartman may be Herobrine in a mask...',
     },
+    {
+        id: 'removed_jon_bartman',
+        tiptext: 'We removed Jon Bartman this update. Check the changelog.',
+    },
+    {
+        id: 'little_big_redstone',
+        tiptext:
+            'The Little Big Redstone mod is a powerful way of doing complex logic in one block. It is useful for things like Steam Boiler On/Off Logic™.',
+    },
+    {
+        id: 'guns',
+        tiptext:
+            'Guns from TACZ are an effective way to defend your factory. They are also fun!',
+    },
 ];
 
 ClientEvents.generateAssets('after_mods', (event) => {
