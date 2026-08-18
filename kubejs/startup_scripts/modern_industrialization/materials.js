@@ -459,6 +459,19 @@ MIMaterialEvents.modifyMaterial('ruby', (event) => {
 MIMaterialEvents.modifyMaterial('electrum', (event) => {
     event.builder.addParts('rod');
 });
+
 MIMaterialEvents.modifyMaterial('iron', (event) => {
     event.builder.addParts('wire');
+});
+
+MIMaterialEvents.modifyMaterial('silver', (event) => {
+    event.builder.ore({
+        generate: false,
+        ore_set: 'gold',
+        vein_size: 3,
+        veins_per_chunk: 4,
+        max_y: 24,
+        min_xp: 0,
+        max_xp: 0
+    });
 });
