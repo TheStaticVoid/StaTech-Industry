@@ -9,7 +9,7 @@ RecipeViewerEvents.removeEntries('item', (event) => {
     let mi = (id) => `modern_industrialization:${id}`;
     let cr = (id) => `create:${id}`;
 
-    event.remove(['#sophisticatedstorage:all_storage']);
+    //    event.remove(['#sophisticatedstorage:all_storage']);
 });
 
 const armorsParts = ['helmet', 'chestplate', 'leggings', 'boots'];
@@ -60,22 +60,5 @@ ClientEvents.generateAssets('after_mods', (event) => {
                 },
             });
         });
-    });
-
-    event.json('emi:recipe/filters/hide_bloat.json', {
-        filters: [
-            {
-                id: '/emi:/crafting/repairing/',
-                category: 'minecraft:crafting',
-            },
-            {
-                id: '/emi:/grindstone/repairing/',
-                category: 'emi:grinding',
-            },
-            {
-                id: '/emi:/anvil/repairing/tool/',
-                category: 'emi:grinding',
-            },
-        ],
     });
 });
