@@ -5,6 +5,7 @@
 StartupEvents.registry('block', (event) => {
     createSample(event, 'titanium_ore_sample', 'Titanium Ore Sample');
     createSample(event, 'uranium_ore_sample', 'Uranium Ore Sample');
+    createSample(event, 'salt_ore_sample', 'Salt Ore Sample');
 });
 
 
