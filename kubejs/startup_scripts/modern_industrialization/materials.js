@@ -452,8 +452,7 @@ MIMaterialEvents.modifyMaterial('ruby', (event) => {
             min_xp: 15,
             max_xp: 20,
         })
-        .setMainPart('gem')
-        .defaultRecipes();
+        .setMainPart('gem');
 });
 
 MIMaterialEvents.modifyMaterial('electrum', (event) => {
