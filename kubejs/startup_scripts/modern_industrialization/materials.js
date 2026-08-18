@@ -432,7 +432,9 @@ MIMaterialEvents.modifyMaterial('beryllium', (event) => {
 });
 
 MIMaterialEvents.modifyMaterial('iridium', (event) => {
-    event.builder.addParts('hot_ingot');
+    event.builder
+        .addParts('hot_ingot')
+        .ore({ generate: false, ore_set: 'diamond' }, 'minecraft:deepslate');
 });
 
 MIMaterialEvents.modifyMaterial('gold', (event) => {
@@ -473,4 +475,12 @@ MIMaterialEvents.modifyMaterial('silver', (event) => {
         min_xp: 0,
         max_xp: 0
     });
+});
+
+MIMaterialEvents.modifyMaterial('quartz', (event) => {
+    event.builder.ore({ generate: false, ore_set: 'quartz', min_xp: 2, max_xp: 5  }, 'minecraft:deepslate');
+});
+
+MIMaterialEvents.modifyMaterial('platinum', (event) => {
+    event.builder.ore({ generate: false, ore_set: 'gold' }, 'minecraft:deepslate');
 });

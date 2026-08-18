@@ -251,17 +251,23 @@ ItemEvents.modifyTooltips(event => {
     );
 
     // -- QUARTZ -- //
-    createStandardTooltip(
-        event,
+    const REGULAR_QUARTZ = [
         'modern_industrialization:quartz_ore',
-        'Quartz',
-        '-32',
-        '32',
-        'Overworld',
-        '50',
-        '300-500',
-        'Antimony (30%), Glowquartz (10%)'
-    );
+        'modern_industrialization:deepslate_quartz_ore'
+    ];
+    REGULAR_QUARTZ.forEach(id => {
+        createStandardTooltip(
+            event,
+            id,
+            'Quartz',
+            '-32',
+            '32',
+            'Overworld',
+            '50',
+            '300-500',
+            'Antimony (30%), Glowquartz (10%)'
+        );
+    });
 
     // -- REDSTONE -- //
     const REGULAR_REDSTONE = [
