@@ -4145,7 +4145,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "FarmersDelight-1.21.1-1.3.2.jar",
+                    "file_name": "FarmersDelight-1.21.1-1.3.3.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -4153,16 +4153,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8083/481/FarmersDelight-1.21.1-1.3.2.jar",
-                    "id": "8083481",
+                    "url": "https://edge.forgecdn.net/files/8672/744/FarmersDelight-1.21.1-1.3.3.jar",
+                    "id": "8672744",
                     "parent_id": "398521",
                     "hashes": {
-                        "sha1": "bf7e7dede99e832de20e191b1f6c11f7a9b9a622",
-                        "md5": "60186e1b39385ecae70ff2f194ef7c32"
+                        "sha1": "55ea87dec84a632690a748857db08a35941980b6",
+                        "md5": "f6194ef306c3991de220ee2cdffdac98"
                     },
                     "required_dependencies": [],
-                    "size": 3163042,
-                    "date_published": "2026-05-13T16:39:55.940Z"
+                    "size": 3160883,
+                    "date_published": "2026-08-17T21:01:42.170Z"
                 }
             ]
         },
@@ -4548,7 +4548,7 @@
                     "loaders": [
                         "neoforge"
                     ],
-                    "release_type": "beta",
+                    "release_type": "release",
                     "url": "https://edge.forgecdn.net/files/8459/97/functionalstorage-1.21.1-1.5.8.jar",
                     "id": "8459097",
                     "parent_id": "556861",
@@ -8688,7 +8688,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "spectrum-1.12.4-1.21.1-neo.jar",
+                    "file_name": "spectrum-1.12.3-1.21.1-neo.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -8696,20 +8696,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8668/114/spectrum-1.12.4-1.21.1-neo.jar",
-                    "id": "8668114",
+                    "url": "https://edge.forgecdn.net/files/8664/985/spectrum-1.12.3-1.21.1-neo.jar",
+                    "id": "8664985",
                     "parent_id": "556967",
                     "hashes": {
-                        "sha1": "b6e5fefefedfe549c71410f8969b0d9d6b3900ed",
-                        "md5": "236ac6dd19aa25191e92e124703a2102"
+                        "sha1": "f6f54cd618dec4f747e4baa2be6ab27efef451a3",
+                        "md5": "b986f18eb4000940ef383c57a03a233b"
                     },
                     "required_dependencies": [
-                        "656526",
+                        "348521",
+                        "341284",
                         "538392",
-                        "309927"
+                        "656526",
+                        "309927",
+                        "306612"
                     ],
-                    "size": 91187225,
-                    "date_published": "2026-08-17T07:01:14.427Z"
+                    "size": 91187143,
+                    "date_published": "2026-08-16T19:43:16.900Z"
                 }
             ]
         },
