@@ -136,11 +136,11 @@ const tips = [
         tiptext:
             "Artifacts have higher chances to spawn in specific locations. As such, it's a good idea to loot a variety of structures to find them.",
     },
-    {
-        id: 'silver_clean_energy',
-        tiptext:
-            'You can obtain Raw Silver by randomly breaking pots and vases underground to make Solar Boilers before burning any fuel.',
-    },
+    // {
+    //     id: 'silver_clean_energy',
+    //     tiptext:
+    //         'You can obtain Raw Silver by randomly breaking pots and vases underground to make Solar Boilers before burning any fuel.',
+    // },
     {
         id: 'waystones_in_wilderness',
         tiptext:
