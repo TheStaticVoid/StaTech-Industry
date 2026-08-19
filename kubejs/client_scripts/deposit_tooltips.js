@@ -112,7 +112,7 @@ ItemEvents.modifyTooltips(event => {
         '-32',
         '64',
         'Overworld',
-        '8',
+        '15',
         '900-1500',
     );
 
@@ -169,7 +169,7 @@ ItemEvents.modifyTooltips(event => {
         '16',
         '256',
         'Overworld',
-        '10',
+        '15',
         '800-1500',
         'Nickel (20%)'
     );
