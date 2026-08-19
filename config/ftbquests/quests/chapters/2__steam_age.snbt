@@ -4118,7 +4118,53 @@
 				item: { count: 1, id: "stcm:neoforge_hammer" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "5E720D2F4DA2937E"
+			rewards: [
+				{
+					count: 2
+					id: "060C6AA424385C81"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "2CEC815AE1C142F1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3FF0950F70F734E7"
+					table_id: 3409273157072801564L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "314CADFCB8CE7AB1"
+					item: { count: 1, id: "adfinders:gem_finder" }
+					type: "item"
+				}
+				{
+					id: "5DAF7F606FEA7E43"
+					item: { count: 1, id: "adfinders:metal_finder" }
+					type: "item"
+				}
+				{
+					id: "0DD5ACEDF0B894C1"
+					item: { count: 1, id: "adfinders:mineral_finder" }
+					type: "item"
+				}
+			]
+			x: -0.5d
 			y: -1.5d
 		}
 	]
