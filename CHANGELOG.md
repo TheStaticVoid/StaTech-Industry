@@ -4,6 +4,8 @@
 
 This update brings bucketloads more polish to GuideME, the questbook, and recipes. There are a ton of changes, so I'll just list the highlights here, breaking changes are bolded:
 
+- **Brought back large ore veins in favor of vanilla-style ore generation**
+- **Fixed strange worldgen bug where some waterlogged flora were not waterlogged**
 - Fixed iron tool nerfs
 - Added speedy concrete block
 - HUD/UI tweaks
