@@ -62,7 +62,9 @@ ItemEvents.modifyTooltips(event => {
     });
 
     const NON_MODIFIED_ORES = [
-        '#spectrum:ores'
+        '#spectrum:ores',
+        'spectrum:blackslag_coal_ore',
+        'spectrum:blackslag_redstone_ore'
     ];
     NON_MODIFIED_ORES.forEach(id => {
         event.modify(id, (tooltip) => {
