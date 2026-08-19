@@ -484,3 +484,7 @@ MIMaterialEvents.modifyMaterial('quartz', (event) => {
 MIMaterialEvents.modifyMaterial('platinum', (event) => {
     event.builder.ore({ generate: false, ore_set: 'gold' }, 'minecraft:deepslate');
 });
+
+MIMaterialEvents.modifyMaterial('titanium', (event) => {
+    event.builder.ore({ generate: false, ore_set: 'copper' }, 'minecraft:deepslate');
+});

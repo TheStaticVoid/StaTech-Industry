@@ -98,7 +98,7 @@ ItemEvents.modifyTooltips(event => {
             '0',
             '80',
             'Overworld',
-            '15',
+            '10',
             '900-1800',
             'Lignite Coal (40%)'
         );
@@ -109,11 +109,11 @@ ItemEvents.modifyTooltips(event => {
         event,
         '#c:ores/copper',
         'Copper',
-        '-16',
+        '-32',
         '64',
         'Overworld',
-        '20',
-        '700-1400',
+        '8',
+        '900-1500',
     );
 
     // -- DIAMOND -- //
@@ -134,12 +134,12 @@ ItemEvents.modifyTooltips(event => {
         event,
         '#c:ores/emerald',
         'Emerald',
-        '24',
-        '128',
+        '48',
+        '256',
         'Overworld',
         '100',
-        '300-600',
-        'Fluorite (20%)'
+        '200-400',
+        'Fluorite (10%), Peridot (10%)'
     );
 
     // -- GOLD -- //
@@ -152,10 +152,10 @@ ItemEvents.modifyTooltips(event => {
             event,
             id,
             'Gold',
-            '-24',
+            '-64',
             '16',
             'Overworld',
-            '50',
+            '25',
             '500-1000',
             'Silver (30%)'
         );
@@ -166,11 +166,11 @@ ItemEvents.modifyTooltips(event => {
         event,
         '#c:ores/iron',
         'Iron',
-        '-64',
-        '64',
+        '16',
+        '256',
         'Overworld',
-        '20',
-        '700-1400',
+        '10',
+        '800-1500',
         'Nickel (20%)'
     );
 
@@ -182,8 +182,8 @@ ItemEvents.modifyTooltips(event => {
         '-32',
         '8',
         'Overworld',
-        '75',
-        '300-600',
+        '50',
+        '400-600',
         'Ruby (10%), Sapphire (10%), Perdiot (10%), Fluorite (10%)'
     );
 
@@ -210,7 +210,7 @@ ItemEvents.modifyTooltips(event => {
         'Nether',
         '15',
         '500-1000',
-        'Ancient Debris (1%)'
+        'Glowstone (5%), Ancient Debris (1%)'
     );
 
     // -- NETHER QUARTZ -- //
@@ -223,7 +223,7 @@ ItemEvents.modifyTooltips(event => {
         'Nether',
         '10',
         '700-1400',
-        'Ancient Debris (1%)'
+        'Glowstone (5%), Glowquartz (5%), Ancient Debris (1%)'
     );
 
     // -- NICKEL -- //
@@ -231,7 +231,7 @@ ItemEvents.modifyTooltips(event => {
         event,
         '#c:ores/nickel',
         'Nickel',
-        '16',
+        '-64',
         '64',
         'Overworld',
         '50',
@@ -244,11 +244,11 @@ ItemEvents.modifyTooltips(event => {
         event,
         '#c:ores/platinum',
         'Platinum',
-        '-24',
-        '32',
+        '-64',
+        '0',
         'Overworld',
         '100',
-        '200-400',
+        '300-400',
         'Iridium (10%), Monazite (20%)'
     );
 
@@ -296,7 +296,7 @@ ItemEvents.modifyTooltips(event => {
         '#c:ores/salt',
         'Salt',
         '48',
-        '80',
+        '128',
         'Overworld',
         '40',
         '400-700'
@@ -372,7 +372,6 @@ ItemEvents.modifyTooltips(event => {
         ['Quartz']
     );
 
-    // todo fix
     // -- FLUORITE -- //
     createPartOfTooltip(
         event,
@@ -443,6 +442,22 @@ ItemEvents.modifyTooltips(event => {
         '#c:ores/tungsten',
         'Tungsten',
         ['Titanium']
+    );
+
+    // -- GLOWQUARTZ BLOCK -- //
+    createPartOfTooltip(
+        event,
+        'surfacesamples:glowquartz_block',
+        'Glowquartz',
+        ['Nether Quartz', 'Quartz']
+    );
+
+    // -- CRYSTALLISED REDSTONE BLOCK -- //
+    createPartOfTooltip(
+        event,
+        'surfacesamples:crystallised_redstone_block',
+        'Crystallised Redstone',
+        ['Redstone']
     );
 });
 
