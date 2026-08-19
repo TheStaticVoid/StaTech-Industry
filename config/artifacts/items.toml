@@ -153,6 +153,9 @@
 	#Whether the Eternal Steak can be eaten
 	#Allowed Values: true, false
 	enabled = true
+	#Whether this item can be found in structures or drop from entities
+	#Allowed Values: true, false
+	generateAsLoot = false
 
 [everlasting_beef]
 	#The duration in seconds the Everlasting Beef goes on cooldown for after being eaten
@@ -378,6 +381,9 @@
 	#Whether the Scarf of Invisibility is hidden when the wearer is invisible
 	#Allowed Values: true, false
 	hideWhenInvisible = false
+	#Whether the Scarf of Invisibility should prevent all status effects from spawning particles
+	#Allowed Values: true, false
+	hidesEffectParticles = false
 
 [shock_pendant]
 	#Whether the Shock Pendant cancels damage from lightning
