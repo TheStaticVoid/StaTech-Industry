@@ -159,6 +159,10 @@
 	configs_button_y_offset = 0
 	#unfunny
 	"I am very boring and I don't want any Easter Egg" = false
+	#Make the config button open Moonlight's mod list, where every installed mod's config can be reached, instead of going straight to Supplementaries' own config
+	configs_button_opens_mod_list = true
+	#Outline the config button with a rainbow when hovered
+	configs_button_rainbow_outline = true
 
 [tweaks]
 	#Adds an overlay to projectile weapons in gui displaying currently selected ammo
