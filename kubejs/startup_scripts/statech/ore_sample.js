@@ -3,16 +3,21 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 StartupEvents.registry('block', (event) => {
-    createSample(event, 'titanium_ore_sample', 'Titanium Ore Sample');
-    createSample(event, 'uranium_ore_sample', 'Uranium Ore Sample');
-    createSample(event, 'salt_ore_sample', 'Salt Ore Sample');
-    createSample(event, 'bauxite_ore_sample', 'Bauxite Ore Sample');
+    createSample(event, 'Titanium');
+    createSample(event, 'Uranium');
+    createSample(event, 'Salt');
+    createSample(event, 'Bauxite');
+    createSample(event, 'Lead');
+    createSample(event, 'Nickel');
+    createSample(event, 'Platinum');
+    createSample(event, 'Tin');
 });
 
 
-let createSample = (event, id, name) => {
-    event.create(id)
-        .displayName(name)
+let createSample = (event, name) => {
+    let id = name.toLowerCase();
+    event.create(id + '_ore_sample')
+        .displayName(name + ' Ore Sample')
         .soundType('tuff')
         .hardness(0.1)
         .fullBlock(false)
