@@ -11,11 +11,23 @@ StartupEvents.registry('block', (event) => {
     createSample(event, 'Nickel');
     createSample(event, 'Platinum');
     createSample(event, 'Tin');
+    createSample(event, 'Coal');
+    createSample(event, 'Copper');
+    createSample(event, 'Diamond');
+    createSample(event, 'Emerald');
+    createSample(event, 'Gold');
+    createSample(event, 'Iron');
+    createSample(event, 'Lapis');
+    createSample(event, 'Nether Gold');
+    createSample(event, 'Nether Quartz');
+    createSample(event, 'Quartz');
+    createSample(event, 'Redstone');
+    createSample(event, 'Zinc');
 });
 
 
 let createSample = (event, name) => {
-    let id = name.toLowerCase();
+    let id = name.toLowerCase().replace(' ', '_');
     event.create(id + '_ore_sample')
         .displayName(name + ' Ore Sample')
         .soundType('tuff')

@@ -43,9 +43,7 @@ ItemEvents.modifyTooltips(event => {
         '#c:ores/peridot',
         '#c:ores/sapphire',
         '#c:ores/antimony',
-        'minecraft:ancient_debris',
-        'surfacesamples:crystallised_redstone_block',
-        'surfacesamples:glowquartz_block',
+        'minecraft:ancient_debris'
     ];
 
     const NON_NATURAL_ORES = [
@@ -223,7 +221,7 @@ ItemEvents.modifyTooltips(event => {
         'Nether',
         '10',
         '700-1400',
-        'Glowstone (5%), Glowquartz (5%), Ancient Debris (1%)'
+        'Glowstone (5%), Ancient Debris (1%)'
     );
 
     // -- NICKEL -- //
@@ -267,7 +265,7 @@ ItemEvents.modifyTooltips(event => {
             'Overworld',
             '50',
             '300-500',
-            'Antimony (30%), Glowquartz (10%)'
+            'Antimony (30%)'
         );
     });
 
@@ -286,7 +284,7 @@ ItemEvents.modifyTooltips(event => {
             'Overworld',
             '60',
             '300-600',
-            'Ruby (10%), Crystallised Redstone (10%)'
+            'Ruby (10%)'
         );
     });
 
@@ -442,22 +440,6 @@ ItemEvents.modifyTooltips(event => {
         '#c:ores/tungsten',
         'Tungsten',
         ['Titanium']
-    );
-
-    // -- GLOWQUARTZ BLOCK -- //
-    createPartOfTooltip(
-        event,
-        'surfacesamples:glowquartz_block',
-        'Glowquartz',
-        ['Nether Quartz', 'Quartz']
-    );
-
-    // -- CRYSTALLISED REDSTONE BLOCK -- //
-    createPartOfTooltip(
-        event,
-        'surfacesamples:crystallised_redstone_block',
-        'Crystallised Redstone',
-        ['Redstone']
     );
 });
 
