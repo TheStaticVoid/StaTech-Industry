@@ -121,7 +121,7 @@ ItemEvents.modifyTooltips((event) => {
     ];
 
     // -- ADD TOOLTIP -- //
-    const ADDED_BY_STATECH = Text.gold('Added by StaTech Industry');
+    const ADDED_BY_STATECH = Text.gold('Added by StaTech Industry 2');
     CUSTOM_MACHINES_AND_ITEMS.forEach((item) => {
         event.modify(item, (tooltip) => {
             tooltip.removeExactText(ADDED_BY_STATECH);

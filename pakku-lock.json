@@ -244,6 +244,47 @@
             ]
         },
         {
+            "pakku_id": "uwYefD0eOrjJEjTp",
+            "pakku_links": [
+                "INicezhX768KquSl"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "advanced-finders"
+            },
+            "name": {
+                "curseforge": "Advanced Finders"
+            },
+            "id": {
+                "curseforge": "260925"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "AdFinders-1.21.1-10.1.3.0-NeoForge-build.1080.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8595/438/AdFinders-1.21.1-10.1.3.0-NeoForge-build.1080.jar",
+                    "id": "8595438",
+                    "parent_id": "260925",
+                    "hashes": {
+                        "sha1": "a2b32b634b450c2faec0560bc81511acc0c4af26",
+                        "md5": "aab3f0948e814442645c6f2b81de9271"
+                    },
+                    "required_dependencies": [
+                        "244844"
+                    ],
+                    "size": 194396,
+                    "date_published": "2026-08-07T14:57:23.433Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "hVC2WTaCeBYvqtZi",
             "type": "MOD",
             "slug": {
@@ -4449,6 +4490,42 @@
             ]
         },
         {
+            "pakku_id": "INicezhX768KquSl",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "forgeendertech"
+            },
+            "name": {
+                "curseforge": "ForgeEndertech"
+            },
+            "id": {
+                "curseforge": "244844"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ForgeEndertech-1.21.1-12.1.2.2-NeoForge-build.0879.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8205/930/ForgeEndertech-1.21.1-12.1.2.2-NeoForge-build.0879.jar",
+                    "id": "8205930",
+                    "parent_id": "244844",
+                    "hashes": {
+                        "sha1": "71267bbe37cc2bf78fedb06b0f16643c9b22d16c",
+                        "md5": "91333b1e9c8c7dfb5afbf62fc0aa780e"
+                    },
+                    "required_dependencies": [],
+                    "size": 535552,
+                    "date_published": "2026-06-06T14:27:28.693Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "EJzBetdiexr3xNnh",
             "pakku_links": [
                 "Yk5Fy9qEHpM6taMd"
@@ -5864,6 +5941,47 @@
                     ],
                     "size": 2022585,
                     "date_published": "2026-06-20T12:19:30.980Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "bjBA7jOuV4eyEJZf",
+            "pakku_links": [
+                "INicezhX768KquSl"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "large-ore-deposits"
+            },
+            "name": {
+                "curseforge": "Large Ore Deposits"
+            },
+            "id": {
+                "curseforge": "318833"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "AdLods-1.21.1-9.1.7.0-NeoForge-build.1080.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8595/420/AdLods-1.21.1-9.1.7.0-NeoForge-build.1080.jar",
+                    "id": "8595420",
+                    "parent_id": "318833",
+                    "hashes": {
+                        "sha1": "f23829f81589a13d66c12a0fa03f377d62733d41",
+                        "md5": "013151f70fa55cfbb5c91aef9c73c613"
+                    },
+                    "required_dependencies": [
+                        "244844"
+                    ],
+                    "size": 235830,
+                    "date_published": "2026-08-07T14:55:44.967Z"
                 }
             ]
         },
@@ -9120,6 +9238,43 @@
                     ],
                     "size": 13531881,
                     "date_published": "2026-08-19T07:19:18.150Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ljjorEAvAZVWcWJL",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "surface-samples"
+            },
+            "name": {
+                "curseforge": "Surface Samples"
+            },
+            "id": {
+                "curseforge": "1584119"
+            },
+            "redistributable": false,
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "surfacesamples-1.21.1-0.1.2.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8298/987/surfacesamples-1.21.1-0.1.2.jar",
+                    "id": "8298987",
+                    "parent_id": "1584119",
+                    "hashes": {
+                        "sha1": "00902f862f27503a96296f8545a1fedd69ecf8e7",
+                        "md5": "4c5415f2fee28ec8dd6781039b25c7e4"
+                    },
+                    "required_dependencies": [],
+                    "size": 170539,
+                    "date_published": "2026-06-22T09:10:19.437Z"
                 }
             ]
         },

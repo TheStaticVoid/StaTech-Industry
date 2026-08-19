@@ -432,7 +432,9 @@ MIMaterialEvents.modifyMaterial('beryllium', (event) => {
 });
 
 MIMaterialEvents.modifyMaterial('iridium', (event) => {
-    event.builder.addParts('hot_ingot');
+    event.builder
+        .addParts('hot_ingot')
+        .ore({ generate: false, ore_set: 'diamond' }, 'minecraft:deepslate');
 });
 
 MIMaterialEvents.modifyMaterial('gold', (event) => {
@@ -452,12 +454,37 @@ MIMaterialEvents.modifyMaterial('ruby', (event) => {
             min_xp: 15,
             max_xp: 20,
         })
-        .setMainPart('gem')
+        .setMainPart('gem');
 });
 
 MIMaterialEvents.modifyMaterial('electrum', (event) => {
     event.builder.addParts('rod');
 });
+
 MIMaterialEvents.modifyMaterial('iron', (event) => {
     event.builder.addParts('wire');
+});
+
+MIMaterialEvents.modifyMaterial('silver', (event) => {
+    event.builder.ore({
+        generate: false,
+        ore_set: 'gold',
+        vein_size: 3,
+        veins_per_chunk: 4,
+        max_y: 24,
+        min_xp: 0,
+        max_xp: 0
+    });
+});
+
+MIMaterialEvents.modifyMaterial('quartz', (event) => {
+    event.builder.ore({ generate: false, ore_set: 'quartz', min_xp: 2, max_xp: 5  }, 'minecraft:deepslate');
+});
+
+MIMaterialEvents.modifyMaterial('platinum', (event) => {
+    event.builder.ore({ generate: false, ore_set: 'gold' }, 'minecraft:deepslate');
+});
+
+MIMaterialEvents.modifyMaterial('titanium', (event) => {
+    event.builder.ore({ generate: false, ore_set: 'copper' }, 'minecraft:deepslate');
 });
