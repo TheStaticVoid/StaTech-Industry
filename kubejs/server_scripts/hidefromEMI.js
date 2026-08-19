@@ -1,4 +1,24 @@
+// -----------------------------------------
+// CREATED BY DINO FOR USE IN
+// STATECH INDUSTRY 2
+// -----------------------------------------
+
 RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
+    const VARIOUS_UNOBTAINABLE = [
+        'modonomicon:modonomicon_blue',
+        'modonomicon:modonomicon_green',
+        'modonomicon:modonomicon_purple',
+        'modonomicon:leaflet',
+        'modonomicon:modonomicon_red',
+        'modonomicon:modonomicon',
+        'ftbquests:barrier',
+        'ftbquests:stage_barrier',
+        'ftbquests:detector',
+        'moonlight:spawn_box',
+        'nomansland:monster_anchor',
+    ];
+    VARIOUS_UNOBTAINABLE.forEach((id) => event.remove(id));
+
     const CREATE_CRUSHED = [
         cr('crushed_raw_platinum'),
         cr('crushed_raw_iron'),
@@ -33,6 +53,20 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         ss('limited_iron_barrel_2'),
         ss('limited_iron_barrel_3'),
         ss('limited_iron_barrel_4'),
+        ss('pump_upgrade'),
+        ss('stack_upgrade_omega_tier'),
+        sb('stack_upgrade_omega_tier'),
+        sb('battery_upgrade'),
+        sb('pump_upgrade'),
+        sb('advanced_pump_upgrade'),
+        sb('infinity_upgrade'),
+        sb('survival_infinity_upgrade'),
+        ss('advanced_pump_upgrade'),
+        ss('xp_pump_upgrade'),
+        ss('compression_upgrade'),
+        ss('infinity_upgrade'),
+        ss('survival_infinity_upgrade'),
+        ss('debug_tool'),
     ];
     LIMITED_BARRELS.forEach((id) => event.remove(id));
 
@@ -84,6 +118,60 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         ea('infinity_cobblestone_cell'),
     ];
     UNUSED_EA.forEach((id) => event.remove(id));
+
+    const UNUSED_SUPPLEMENTARIES = [
+        /supplementaries:spectrum\/way_sign.*/,
+        'supplementaries:architects_palette/way_sign_twisted',
+    ];
+    UNUSED_SUPPLEMENTARIES.forEach((id) => event.remove(id));
+
+    const UNUSED_SPECTRUM = [
+        sp('pedestal_tier_1_structure_placer'),
+        sp('pedestal_tier_2_structure_placer'),
+        sp('pedestal_tier_3_structure_placer'),
+        sp('fusion_shrine_structure_placer'),
+        sp('spirit_instiller_structure_placer'),
+        sp('enchanter_structure_placer'),
+        sp('cinderhearth_structure_placer'),
+        sp('deep_light_chiseled_preservation_stone'),
+        sp('preservation_item_bowl'),
+        sp('preservation_glass'),
+        sp('tinted_preservation_glass'),
+        sp('preservation_roundel'),
+        sp('preservation_block_detector'),
+        sp('preservation_controller'),
+        sp('black_chiseled_preservation_stone'),
+        sp('blue_chiseled_preservation_stone'),
+        sp('brown_chiseled_preservation_stone'),
+        sp('cyan_chiseled_preservation_stone'),
+        sp('gray_chiseled_preservation_stone'),
+        sp('green_chiseled_preservation_stone'),
+        sp('light_blue_chiseled_preservation_stone'),
+        sp('light_gray_chiseled_preservation_stone'),
+        sp('preservation_stone'),
+        sp('preservation_stairs'),
+        sp('preservation_slab'),
+        sp('preservation_wall'),
+        sp('preservation_bricks'),
+        sp('shimmering_preservation_bricks'),
+        sp('powder_chiseled_preservation_stone'),
+        sp('dike_chiseled_preservation_stone'),
+        sp('dream_chiseled_preservation_stone'),
+        sp('lime_chiseled_preservation_stone'),
+        sp('magenta_chiseled_preservation_stone'),
+        sp('orange_chiseled_preservation_stone'),
+        sp('pink_chiseled_preservation_stone'),
+        sp('purple_chiseled_preservation_stone'),
+        sp('red_chiseled_preservation_stone'),
+        sp('white_chiseled_preservation_stone'),
+        sp('yellow_chiseled_preservation_stone'),
+        sp('preservation_chest'),
+        sp('dream_gate'),
+        sp('dike_gate'),
+        sp('dike_gate_fountain'),
+        sp('invisible_wall'),
+    ];
+    UNUSED_SPECTRUM.forEach((id) => event.remove(id));
 
     const UNUSED_FUNCTIONNAL_STORAGE = [
         fs('armory_cabinet'),
@@ -172,5 +260,18 @@ RecipeViewerEvents.removeRecipes((event) => {
         yai('/arboreous_greenhouse/4/3'),
         yai('/arboreous_greenhouse/4/4'),
         ca('/rolling/'),
+    ]);
+});
+
+RecipeViewerEvents.removeCategories((event) => {
+    event.remove([
+        // 'tacz:gun_smith_table/tacz_ammo_workbench',
+        // 'tacz:gun_smith_table/tacz_attachment_workbench',
+        // 'tacz:gun_smith_table/tacz_gun_smith_workbench',
+        'functionalstorage:dissolution',
+        'emi:anvil_repairing',
+        'emi:grinding',
+        'modern_industrialization:supercomputer',
+        'modern_industrialization:telescope',
     ]);
 });

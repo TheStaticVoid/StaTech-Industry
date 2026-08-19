@@ -18,3 +18,7 @@ showTooltips = true
 #Whether mimics can use textures from Lootr or Quark
 #Allowed Values: true, false
 useModdedMimicTextures = true
+#Whether worn artifacts should be displayed on players
+#This config option is purely client-side, it does not change what other players see
+#Allowed Values: true, false
+showArtifactsOnPlayers = true

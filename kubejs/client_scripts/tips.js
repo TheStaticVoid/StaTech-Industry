@@ -281,7 +281,7 @@ const tips = [
     },
     {
         id: 'cog_blocks',
-        tiptext: 'Cog Blocks allow you to transmit redstone in a full block.',
+        tiptext: 'Cog blocks allow you to transmit redstone in a full block.',
     },
     {
         id: 'spectrum_ruin',

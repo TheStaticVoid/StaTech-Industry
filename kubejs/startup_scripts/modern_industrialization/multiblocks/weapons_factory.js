@@ -33,10 +33,10 @@ MIMachineEvents.registerMachines((event) => {
     const weaponsFactoryShape = event
         .layeredShape('heatproof_machine_casing', [
             // y= 0        1        2        3        4
-            [' PpP ', ' GGG ', ' GGG ', ' GGG ', ' PPP '],
-            ['PPPPP', 'P S P', 'P S P', 'P S P', 'PPCPP'],
+            [' ppp ', ' GGG ', ' GGG ', ' GGG ', ' ppp '],
+            ['pPPPp', 'P S P', 'P S P', 'P S P', 'pPCPp'],
             ['pPPPp', 'GSWSG', 'GSWSG', 'GSWSG', 'pCCCp'],
-            ['PPPPP', 'P S P', 'P S P', 'P S P', 'PPCPP'],
+            ['pPPPp', 'P S P', 'P S P', 'P S P', 'pPCPp'],
             [' p#p ', ' GGG ', ' GGG ', ' GGG ', ' ppp '],
         ])
         .key('P', heatproofMachineCasing, event.noHatch())
