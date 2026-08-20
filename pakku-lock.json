@@ -5739,6 +5739,42 @@
             ]
         },
         {
+            "pakku_id": "WMKkhhUKKNpJvqTO",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "justhammers"
+            },
+            "name": {
+                "curseforge": "JustHammers"
+            },
+            "id": {
+                "curseforge": "681606"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "just-hammers-neoforge-21.1.4.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/7435/250/just-hammers-neoforge-21.1.4.jar",
+                    "id": "7435250",
+                    "parent_id": "681606",
+                    "hashes": {
+                        "sha1": "9db9f80eeb27ab968b989f4b9b0f4ab88af6ec01",
+                        "md5": "dd300d99cc7c643c89055593e29e2fa8"
+                    },
+                    "required_dependencies": [],
+                    "size": 102133,
+                    "date_published": "2026-01-08T22:56:02.100Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "NFYAXn1ZCiOdVPvZ",
             "type": "MOD",
             "slug": {
@@ -8122,6 +8158,47 @@
                     ],
                     "size": 287634,
                     "date_published": "2026-01-22T20:46:05.973Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "G6bgcQiwO0AFBdWL",
+            "pakku_links": [
+                "AjYKRRphpjTNFZvW"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "scannable"
+            },
+            "name": {
+                "curseforge": "Scannable"
+            },
+            "id": {
+                "curseforge": "266784"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "scannable-MC1.21.1-neoforge-1.7.13+a15a3b2.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8599/473/scannable-MC1.21.1-neoforge-1.7.13+a15a3b2.jar",
+                    "id": "8599473",
+                    "parent_id": "266784",
+                    "hashes": {
+                        "sha1": "5e38a10863c0824a728c07619aa261bebbc5dc20",
+                        "md5": "5ef408108fb21dd7ee40866b2273239a"
+                    },
+                    "required_dependencies": [
+                        "419699"
+                    ],
+                    "size": 384931,
+                    "date_published": "2026-08-08T04:15:43.303Z"
                 }
             ]
         },
