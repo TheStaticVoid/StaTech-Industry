@@ -1276,7 +1276,7 @@
 				item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 11.5d
 			y: -4.0d
 		}
 		{
@@ -1344,7 +1344,7 @@
 				item: { count: 1, id: "functionalstorage:copper_upgrade" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 12.5d
 			y: -4.0d
 		}
 		{
@@ -3476,6 +3476,40 @@
 			]
 			x: -5.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["300F4E3AAD5B0212"]
+			id: "2E9F840FD6C31065"
+			rewards: [
+				{
+					count: 5
+					id: "18CBFE4E75E89FB3"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "1A29C4B5556041F7"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0AE59A0A08B0ADF8"
+					table_id: 5706018968149530875L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "7E4C9D4335AB5125"
+				item: { count: 1, id: "justhammers:reinforced_impact_core" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: -4.0d
 		}
 	]
 }

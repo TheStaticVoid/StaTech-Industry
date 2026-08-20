@@ -717,7 +717,7 @@
 				id: "104C071A4BB6DD9B"
 				type: "checkmark"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: 2.0d
 		}
 		{
@@ -726,6 +726,11 @@
 				id: "kubejs:iron_ore_sample"
 			}
 			id: "32FE4A1534B7B496"
+			rewards: [{
+				id: "08D6F3FC89584224"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "rsquare"
 			size: 1.25d
 			tasks: [{
@@ -733,6 +738,39 @@
 				type: "checkmark"
 			}]
 			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["35CA2712BC60C09E"]
+			id: "489042A0D0AF38D3"
+			rewards: [
+				{
+					id: "2CD3248398D7DDEE"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "32CA37F34C1E19BC"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0587B44FDB075B8D"
+					table_id: 2474147679282294712L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "4E2C522E26CA4978"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:hammer/regular)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
 			y: 2.0d
 		}
 	]

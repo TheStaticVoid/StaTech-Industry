@@ -2130,7 +2130,7 @@
 				item: { count: 1, id: "explorerscompass:explorerscompass" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 33.5d
 			y: 3.5d
 		}
 		{
@@ -3038,7 +3038,7 @@
 				item: { count: 1, id: "extended_industrialization:steam_chainsaw" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 31.5d
 			y: 3.5d
 		}
 		{
@@ -3105,7 +3105,7 @@
 				item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 35.5d
 			y: 3.5d
 		}
 		{
@@ -3145,7 +3145,7 @@
 					type: "item"
 				}
 			]
-			x: 31.0d
+			x: 30.5d
 			y: 3.5d
 		}
 		{
@@ -3463,7 +3463,7 @@
 				item: { count: 1, id: "extended_industrialization:steel_alloy_smelter" }
 				type: "item"
 			}]
-			x: 30.0d
+			x: 29.5d
 			y: 3.5d
 		}
 		{
@@ -3781,7 +3781,7 @@
 				item: { count: 1, id: "torchmaster:megatorch" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 34.5d
 			y: 3.5d
 		}
 		{
@@ -4338,6 +4338,39 @@
 			}]
 			x: 37.5d
 			y: -5.5d
+		}
+		{
+			dependencies: ["26A89C51A7B9FFDE"]
+			id: "6081A118906B9F85"
+			rewards: [
+				{
+					id: "5D7E3F13E5CD0CB4"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "52DE92148F605E9A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "24A763FA8D54E9D3"
+					table_id: 4928307245111940372L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "270C578D93272146"
+				item: { count: 1, id: "justhammers:impact_core" }
+				type: "item"
+			}]
+			x: 32.5d
+			y: 3.5d
 		}
 	]
 }
