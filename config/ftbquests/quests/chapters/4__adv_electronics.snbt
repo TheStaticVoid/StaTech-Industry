@@ -5126,5 +5126,17 @@
 			x: 8.0d
 			y: 5.25d
 		}
+		{
+			dependencies: ["1AA4844D1D10B834"]
+			id: "29880D54EA068D80"
+			shape: "rsquare"
+			tasks: [{
+				id: "3AC00193C09F7E40"
+				item: { count: 1, id: "justhammers:destructor_core" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: -1.5d
+		}
 	]
 }

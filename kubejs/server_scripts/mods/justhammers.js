@@ -10,7 +10,8 @@ ServerEvents.recipes((event) => {
     // -- JUST HAMMERS REMOVED REICPES -- //
     const JUST_HAMMERS_REMOVED_RECIPES = [
         jh('impact_core'),
-        jh('reinforced_impact_core')
+        jh('reinforced_impact_core'),
+        jh('destructor_core')
     ];
     JUST_HAMMERS_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
@@ -33,6 +34,15 @@ ServerEvents.recipes((event) => {
             A: '#c:storage_blocks/aluminum'
         })
         .id(st('reinforced_impact_core'));
+    
+    // -- DESTRUCTION CORE -- //
+    event
+        .shaped(jh('destructor_core'), ['RRR', 'SCS', 'RRR'], {
+            R: '#c:storage_blocks/redstone',
+            S: '#c:storage_blocks/stainless_steel',
+            C: jh('reinforced_impact_core')
+        })
+        .id(st('destructor_core'));
 });
 
 ServerEvents.tags('item', (event) => {
