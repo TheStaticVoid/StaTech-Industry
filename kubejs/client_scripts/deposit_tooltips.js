@@ -43,13 +43,13 @@ ItemEvents.modifyTooltips(event => {
         '#c:ores/peridot',
         '#c:ores/sapphire',
         '#c:ores/antimony',
+        '#c:ores/kernite',
         'minecraft:ancient_debris'
     ];
 
     const NON_NATURAL_ORES = [
         '#c:ores/calorite',
         '#c:ores/desh',
-        '#c:ores/kernite',
         '#c:ores/moon_ice',
         '#c:ores/ostrum'
     ];
@@ -75,11 +75,11 @@ ItemEvents.modifyTooltips(event => {
         event, 
         '#c:ores/bauxite', 
         'Bauxite',
-        '16',
-        '64',
+        '-32',
+        '48',
         'Overworld',
-        '50',
-        '700-1400',
+        '70',
+        '1200-1700',
         'Iron (20%)'
     );
 
@@ -96,8 +96,19 @@ ItemEvents.modifyTooltips(event => {
             '0',
             '80',
             'Overworld',
-            '10',
-            '900-1800',
+            '40',
+            '1500-1800',
+            'Lignite Coal (40%)'
+        );
+
+        createBonusDepositTooltip(
+            event,
+            id,
+            108,
+            256,
+            'Mountain',
+            '15',
+            '800-1000',
             'Lignite Coal (40%)'
         );
     });
@@ -107,11 +118,11 @@ ItemEvents.modifyTooltips(event => {
         event,
         '#c:ores/copper',
         'Copper',
-        '-32',
-        '64',
+        '-16',
+        '108',
         'Overworld',
-        '15',
-        '900-1500',
+        '45',
+        '1200-1600',
     );
 
     // -- DIAMOND -- //
@@ -123,19 +134,30 @@ ItemEvents.modifyTooltips(event => {
         '-16',
         'Overworld',
         '100',
-        '300-600',
+        '200-300',
+        'Coal (10%), Sapphire (10%), Fluorite (10%)'
+    );
+    createBonusDepositTooltip(
+        event,
+        '#c:ores/diamond',
+        '-16',
+        '16',
+        'Taiga',
+        '70',
+        '200-300',
         'Coal (10%), Sapphire (10%), Fluorite (10%)'
     );
 
     // -- EMERALD -- //
-    createStandardTooltip(
+    createBiomeSpecificTooltip(
         event,
         '#c:ores/emerald',
         'Emerald',
-        '48',
+        '128',
         '256',
         'Overworld',
-        '100',
+        'Mountain',
+        '25',
         '200-400',
         'Fluorite (10%), Peridot (10%)'
     );
@@ -153,8 +175,19 @@ ItemEvents.modifyTooltips(event => {
             '-64',
             '16',
             'Overworld',
-            '25',
-            '500-1000',
+            '70',
+            '600-800',
+            'Silver (30%)'
+        );
+
+        createBonusDepositTooltip(
+            event,
+            id,
+            '-64',
+            '16',
+            'Badlands',
+            '10',
+            '500-750',
             'Silver (30%)'
         );
     });
@@ -165,10 +198,21 @@ ItemEvents.modifyTooltips(event => {
         '#c:ores/iron',
         'Iron',
         '16',
-        '256',
+        '96',
         'Overworld',
-        '15',
-        '800-1500',
+        '50',
+        '1100-1500',
+        'Nickel (20%)'
+    );
+
+    createBonusDepositTooltip(
+        event,
+        '#c:ores/iron',
+        '108',
+        '256',
+        'Mountain',
+        '10',
+        '900-1300',
         'Nickel (20%)'
     );
 
@@ -177,10 +221,21 @@ ItemEvents.modifyTooltips(event => {
         event,
         '#c:ores/lapis',
         'Lapis',
-        '-32',
+        '-64',
         '8',
         'Overworld',
-        '50',
+        '80',
+        '400-600',
+        'Ruby (10%), Sapphire (10%), Perdiot (10%), Fluorite (10%)'
+    );
+
+    createBonusDepositTooltip(
+        event,
+        '#c:ores/lapis',
+        '-16',
+        '16',
+        'Taiga',
+        '40',
         '400-600',
         'Ruby (10%), Sapphire (10%), Perdiot (10%), Fluorite (10%)'
     );
@@ -193,8 +248,8 @@ ItemEvents.modifyTooltips(event => {
         '16',
         '64',
         'Overworld',
-        '40',
-        '500-1000',
+        '60',
+        '1300-1500',
         'Silver (30%)'
     );
 
@@ -206,7 +261,7 @@ ItemEvents.modifyTooltips(event => {
         '8',
         '118',
         'Nether',
-        '15',
+        '40',
         '500-1000',
         'Glowstone (5%), Ancient Debris (1%)'
     );
@@ -219,7 +274,7 @@ ItemEvents.modifyTooltips(event => {
         '8',
         '118',
         'Nether',
-        '10',
+        '40',
         '700-1400',
         'Glowstone (5%), Ancient Debris (1%)'
     );
@@ -232,8 +287,8 @@ ItemEvents.modifyTooltips(event => {
         '-64',
         '64',
         'Overworld',
-        '50',
-        '700-1400',
+        '80',
+        '800-1100',
         'Iron (30%)'
     );
 
@@ -245,8 +300,8 @@ ItemEvents.modifyTooltips(event => {
         '-64',
         '0',
         'Overworld',
-        '100',
-        '300-400',
+        '200',
+        '150-250',
         'Iridium (10%), Monazite (20%)'
     );
 
@@ -263,9 +318,9 @@ ItemEvents.modifyTooltips(event => {
             '-32',
             '32',
             'Overworld',
-            '50',
-            '300-500',
-            'Antimony (30%)'
+            '60',
+            '800-1000',
+            'Antimony (30%), Kernite (10%)'
         );
     });
 
@@ -283,21 +338,22 @@ ItemEvents.modifyTooltips(event => {
             '16',
             'Overworld',
             '60',
-            '300-600',
+            '700-1000',
             'Ruby (10%)'
         );
     });
 
     // -- SALT -- //
-    createStandardTooltip(
+    createBiomeSpecificTooltip(
         event,
         '#c:ores/salt',
         'Salt',
-        '48',
-        '128',
+        '16',
+        '96',
         'Overworld',
-        '40',
-        '400-700'
+        'Ocean',
+        '80',
+        '900-1200'
     );
 
     // -- TIN -- //
@@ -305,11 +361,11 @@ ItemEvents.modifyTooltips(event => {
         event,
         '#c:ores/tin',
         'Tin',
-        '16',
-        '64',
+        '0',
+        '108',
         'Overworld',
-        '30',
-        '700-1400'
+        '60',
+        '900-1400'
     );
 
     // -- TITANIUM -- //
@@ -320,8 +376,8 @@ ItemEvents.modifyTooltips(event => {
         '-64',
         '-16',
         'Overworld',
-        '100',
-        '400-600',
+        '200',
+        '300-500',
         'Tungsten (30%), Monazite (10%)'
     );
 
@@ -333,8 +389,8 @@ ItemEvents.modifyTooltips(event => {
         '-64',
         '0',
         'Overworld',
-        '100',
-        '500-1000',
+        '250',
+        '250-500',
         'Iridium (10%)'
     );
 
@@ -346,8 +402,8 @@ ItemEvents.modifyTooltips(event => {
         '0',
         '64',
         'Overworld',
-        '30',
-        '700-1400',
+        '80',
+        '800-1100',
         'Iron (10%)'
     );
 
@@ -384,6 +440,14 @@ ItemEvents.modifyTooltips(event => {
         '#c:ores/iridium',
         'Iridium',
         ['Platinum', 'Uranium']
+    );
+
+    // -- KERNITE -- //
+    createPartOfTooltip(
+        event,
+        '#c:ores/kernite',
+        'Kernite',
+        ['Quartz']
     );
 
     // -- LIGNITE COAL -- //
@@ -486,6 +550,109 @@ let createStandardTooltip = (event, item, name, minY, maxY, dimension, weight, s
         ]));
 
         // Line 7
+        if (other_ores) {
+            tooltip.add(Text.join([
+                Text.aqua('Other ores in deposit: '),
+                Text.green(other_ores)
+            ]));
+        }
+    });
+}
+
+let createBonusDepositTooltip = (event, item, minY, maxY, biome, weight, size, other_ores) => {
+    event.modify(item, {shift: true}, (tooltip) => {
+        // Separating line
+        tooltip.add(Text.yellow('--------------'));
+
+        // Line 1
+        tooltip.add(Text.join([
+            Text.aqua('Special deposits found in: '),
+            Text.green(biome),
+            Text.green(' biomes')
+        ]));
+
+        // Line 2
+        tooltip.add(Text.join([
+            Text.aqua('Rarity: '),
+            Text.green('1 in '),
+            Text.green(weight),
+            Text.green(' chunks')
+        ]));
+
+        // Line 3
+        tooltip.add(Text.join([
+            Text.aqua('Y-Level: '),
+            Text.green(minY),
+            Text.green(' -> '),
+            Text.green(maxY)
+        ]));
+
+        // Line 4
+        tooltip.add(Text.join([
+            Text.aqua('Size: '),
+            Text.green(size),
+            Text.green(' blocks')
+        ]));
+
+        // Line 5
+        if (other_ores) {
+            tooltip.add(Text.join([
+                Text.aqua('Other ores in deposit: '),
+                Text.green(other_ores)
+            ]));
+        }
+    });
+}
+
+let createBiomeSpecificTooltip = (event, item, name, minY, maxY, dimension, biome, weight, size, other_ores) => {
+    event.modify(item, {shift: true}, (tooltip) => {
+        // Line 1
+        tooltip.add(Text.join([
+            Text.red('== '),
+            Text.gold(name),
+            Text.yellow(' Deposit Info '),
+            Text.red('==')
+        ]).bold());
+
+        // Line 2 (blank)
+        // tooltip.add(Text.literal(''));
+
+        // Line 3
+        tooltip.add(Text.join([
+            Text.aqua('Dimension: '),
+            Text.green(dimension)
+        ]));
+
+        // Line 4
+        tooltip.add(Text.join([
+            Text.aqua('Biome: '),
+            Text.green(biome)
+        ]));
+        
+        // Line 5
+        tooltip.add(Text.join([
+            Text.aqua('Rarity: '),
+            Text.green('1 in '),
+            Text.green(weight),
+            Text.green(' chunks')
+        ]));
+
+        // Line 6
+        tooltip.add(Text.join([
+            Text.aqua('Y-Levels: '),
+            Text.green(minY),
+            Text.green(' -> '),
+            Text.green(maxY)
+        ]));
+
+        // Line 7
+        tooltip.add(Text.join([
+            Text.aqua('Size: '),
+            Text.green(size),
+            Text.green(' blocks')
+        ]));
+
+        // Line 8
         if (other_ores) {
             tooltip.add(Text.join([
                 Text.aqua('Other ores in deposit: '),
