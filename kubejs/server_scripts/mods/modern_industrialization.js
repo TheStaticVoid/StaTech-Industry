@@ -192,7 +192,7 @@ ServerEvents.recipes((event) => {
         .shaped(mi('steam_mining_drill'), ['FDD', 'PHD', 'BPF'], {
             F: mc('furnace'),
             D: mc('diamond'),
-            P: mi('steel_large_plate'),
+            P: mi('iron_large_plate'),
             H: mi('copper_drill_head'),
             B: mc('bucket'),
         })

@@ -61,8 +61,8 @@
 				item: { count: 1, id: "minecraft:bucket" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["412958496FE9150E"]
@@ -2029,14 +2029,14 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["26A89C51A7B9FFDE"]
+			dependencies: ["412958496FE9150E"]
 			id: "726994F1ADADFD28"
 			rewards: [
 				{
 					id: "1B0AEB6661C59725"
 					item: {
 						count: 1
-						id: "kubejs:coin_rare"
+						id: "kubejs:coin_common"
 					}
 					type: "item"
 				}
@@ -2047,7 +2047,7 @@
 				}
 				{
 					id: "35B4A53BA89616B7"
-					table_id: 4928307245111940372L
+					table_id: 3409273157072801564L
 					type: "random"
 				}
 			]
@@ -2057,8 +2057,8 @@
 				item: { count: 1, id: "modern_industrialization:steam_mining_drill" }
 				type: "item"
 			}]
-			x: 32.5d
-			y: 3.5d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["26A89C51A7B9FFDE"]
@@ -2130,7 +2130,7 @@
 				item: { count: 1, id: "explorerscompass:explorerscompass" }
 				type: "item"
 			}]
-			x: 33.5d
+			x: 33.0d
 			y: 3.5d
 		}
 		{
@@ -3005,7 +3005,7 @@
 				item: { count: 1, id: "simplemagnets:basicmagnet" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.0d
 			y: 2.0d
 		}
 		{
@@ -3038,7 +3038,7 @@
 				item: { count: 1, id: "extended_industrialization:steam_chainsaw" }
 				type: "item"
 			}]
-			x: 31.5d
+			x: 32.0d
 			y: 3.5d
 		}
 		{
@@ -3105,7 +3105,7 @@
 				item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
 				type: "item"
 			}]
-			x: 35.5d
+			x: 35.0d
 			y: 3.5d
 		}
 		{
@@ -3145,7 +3145,7 @@
 					type: "item"
 				}
 			]
-			x: 30.5d
+			x: 31.0d
 			y: 3.5d
 		}
 		{
@@ -3463,7 +3463,7 @@
 				item: { count: 1, id: "extended_industrialization:steel_alloy_smelter" }
 				type: "item"
 			}]
-			x: 29.5d
+			x: 30.0d
 			y: 3.5d
 		}
 		{
@@ -3781,7 +3781,7 @@
 				item: { count: 1, id: "torchmaster:megatorch" }
 				type: "item"
 			}]
-			x: 34.5d
+			x: 34.0d
 			y: 3.5d
 		}
 		{
@@ -4101,8 +4101,8 @@
 				item: { count: 1, id: "sophisticatedstorage:crafting_upgrade" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["412958496FE9150E"]
