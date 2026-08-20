@@ -1,0 +1,20 @@
+# Default config file that will be copied to instance's config/ftbessentials.snbt location
+# Copy values you wish to override in here
+# Example:
+# 
+# {
+# 	misc: {
+# 		enderchest: {
+# 			enabled: false
+# 		}
+# 	}
+# }
+
+{
+	teleportation: {
+		admins_exempt_dimension_blacklists: false
+		rtp: {
+			dimension_blacklist: ["minecraft:the_end", "javd:void", "spectrum:deeper_down", "ae2:spatial_storage", "stcm:space"]
+        }
+    }
+ }
