@@ -2,6 +2,10 @@
     "feature": "modern_industrialization:ore_generator_peridot",
     "placement": [
         {
+            "type": "minecraft:rarity_filter",
+            "chance": 2
+        },
+        {
             "type": "minecraft:count",
             "count": 1
         },

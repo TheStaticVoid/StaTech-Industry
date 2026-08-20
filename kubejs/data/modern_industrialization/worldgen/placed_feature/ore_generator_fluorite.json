@@ -2,6 +2,10 @@
     "feature": "modern_industrialization:ore_generator_fluorite",
     "placement": [
         {
+            "type": "minecraft:rarity_filter",
+            "chance": 1
+        },
+        {
             "type": "minecraft:count",
             "count": 1
         },
