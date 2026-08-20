@@ -519,6 +519,15 @@ ServerEvents.tags('block', (event) => {
         '#chisel:chiseled_glowstone',
         /^xtonesreworked:glaxx_block_/,
     ]);
+    // -- MI TWEAKS TAGGING -- //
+    const MI_TWEAKS_BLOCKS = Ingredient.of('@mi_tweaks')
+        .except('mi_tweaks:machine_blueprint')
+        .getStacks()
+        .toArray();
+    MI_TWEAKS_BLOCKS.forEach((block) => {
+        event.add('minecraft:mineable/pickaxe', [`${block.id}`]);
+        event.add('minecraft:needs_stone_tool', [`${block.id}`]);
+    });
     const tagsToRemoveFromCopper = [
         'minecraft:incorrect_for_wooden_tool',
         'minecraft:incorrect_for_gold_tool',
