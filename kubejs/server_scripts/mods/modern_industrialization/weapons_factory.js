@@ -1419,6 +1419,294 @@ ServerEvents.recipes((event) => {
             '4x ' + mc('amethyst_shard'),
             750
         ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:mk14"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '16x ' + mi('invar_rod'),
+            '4x ' + mc('leather'),
+            '10x #minecraft:logs',
+            null,
+            750
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:type_81"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '4x ' + mc('leather'),
+            '10x #minecraft:logs',
+            null,
+            500
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:g36k"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_plate'),
+            '4x ' + mc('leather'),
+            null,
+            500
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:qbz_95"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_plate'),
+            '4x ' + mc('leather'),
+            '4x ' + mc('amethyst_shard'),
+            500
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:spr15hb"}'
+            ),
+            '18x ' + mi('steel_large_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_plate'),
+            '4x ' + mi('invar_ring'),
+            '4x ' + mc('leather'),
+            1000
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:qbz_191"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_ring'),
+            '4x ' + mc('leather'),
+            '2x ' + mc('amethyst_shard'),
+            750
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:fn_fal"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_ring'),
+            '4x ' + mc('leather'),
+            '32x #minecraft:logs',
+            750
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:db_short"}'
+            ),
+            '16x ' + mi('steel_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '8x #minecraft:logs',
+            '4x ' + mc('leather'),
+            null,
+            250
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:db_long"}'
+            ),
+            '32x ' + mi('steel_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x #minecraft:logs',
+            '4x ' + mc('leather'),
+            null,
+            500
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:m870"}'
+            ),
+            '32x ' + mi('steel_plate'),
+            '16x ' + mi('steel_rod'),
+            '16x #minecraft:logs',
+            '4x ' + mc('leather'),
+            null,
+            500
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:aa12"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_plate'),
+            '4x ' + mi('invar_ring'),
+            '4x ' + mc('leather'),
+            750
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:spas_12"}'
+            ),
+            '32x ' + mi('steel_large_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_plate'),
+            '4x ' + mi('invar_ring'),
+            '4x ' + mc('leather'),
+            1000
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:m1014"}'
+            ),
+            '16x ' + mi('steel_large_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_plate'),
+            '16x ' + mi('invar_ring'),
+            '4x ' + mc('leather'),
+            1000
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:hk_mp5a5"}'
+            ),
+            '32x ' + mi('steel_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_ring'),
+            '4x ' + mc('leather'),
+            null,
+            500
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:uzi"}'
+            ),
+            '32x ' + mi('steel_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '8x ' + mi('aluminum_ring'),
+            '4x ' + mc('leather'),
+            null,
+            250
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:vector45"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '32x ' + mi('invar_plate'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_ring'),
+            '4x ' + mc('leather'),
+            1000
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:ump45"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '16x ' + mi('invar_plate'),
+            '16x ' + mi('aluminum_ring'),
+            '4x ' + mc('leather'),
+            null,
+            750
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:p90"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '18x ' + mi('invar_ring'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_ring'),
+            '4x ' + mc('leather'),
+            1000
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:rpg7"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '16x ' + mi('invar_ring'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_ring'),
+            '16x #minecraft:logs',
+            1000
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:m320"}'
+            ),
+            '32x ' + mi('steel_plate'),
+            '16x ' + mi('invar_ring'),
+            '16x ' + mi('aluminum_rod'),
+            '16x ' + mi('aluminum_ring'),
+            null,
+            1000
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:m249"}'
+            ),
+            '32x ' + mi('steel_large_plate'),
+            '24x ' + mi('invar_ring'),
+            '16x ' + mi('aluminum_ring'),
+            '16x ' + mi('aluminum_rod'),
+            '8x ' + mc('blaze_rod'),
+            1000
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:rpk"}'
+            ),
+            '64x ' + mi('steel_plate'),
+            '16x ' + mi('steel_rod'),
+            '16x ' + mi('steel_ring'),
+            '16x #minecraft:logs',
+            '4x ' + mc('leather'),
+            1000
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:minigun"}'
+            ),
+            '64x ' + mi('steel_large_plate'),
+            '32x ' + mi('aluminum_rod'),
+            '16x ' + mc('netherite_ingot'),
+            '16x ' + mc('blaze_rod'),
+            '4x ' + mi('diamond_large_plate'),
+            2500
+        ),
+        Gun(
+            Item.of(tz('modern_kinetic_gun'), 1).set(
+                mc('custom_data'),
+                '{GunId:"tacz:fn_evolys"}'
+            ),
+            '32x ' + mi('steel_large_plate'),
+            '32x ' + mi('aluminum_rod'),
+            '16x ' + mi('invar_rod'),
+            '8x ' + mc('blaze_rod'),
+            '2x ' + mi('diamond_large_plate'),
+            1000
+        ),
     ];
 
     function makeGunRecipes(gun) {

@@ -28,7 +28,7 @@ ServerEvents.recipes((event) => {
     ];
     TACZ_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
-    //event.remove({ type: tz('gun_smith_table_crafting') });
+    event.remove({ type: tz('gun_smith_table_crafting') });
 
     // --------------------//
     // ---- ASSEMBLER ---- //
