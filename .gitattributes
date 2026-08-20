@@ -1,2 +1,6 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto eol=lf
+
+*.snbt text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
