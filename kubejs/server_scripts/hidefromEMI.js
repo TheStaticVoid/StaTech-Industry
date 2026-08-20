@@ -32,6 +32,20 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
     ];
     CREATE_CRUSHED.forEach((id) => event.remove(id));
 
+    const JUSTHAMMERS_REMOVED = [
+        jh('stone_hammer'),
+        jh('stone_impact_hammer'),
+        jh('stone_reinforced_hammer'),
+        jh('stone_reinforced_impact_hammer'),
+        jh('stone_destructor_hammer'),
+        jh('gold_hammer'),
+        jh('gold_impact_hammer'),
+        jh('gold_reinforced_hammer'),
+        jh('gold_reinforced_impact_hammer'),
+        jh('gold_destructor_hammer'),
+    ];
+    JUSTHAMMERS_REMOVED.forEach((id) => event.remove(id));
+
     const LIMITED_BARRELS = [
         ss('limited_gold_barrel_1'),
         ss('limited_gold_barrel_2'),

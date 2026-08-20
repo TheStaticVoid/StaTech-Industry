@@ -473,6 +473,26 @@ ServerEvents.recipes((event) => {
 });
 
 ServerEvents.tags('item', (event) => {
+    const HAMMERS = [
+        jh('bronze_hammer'),
+        jh('bronze_impact_hammer'),
+        jh('bronze_reinforced_hammer'),
+        jh('bronze_reinforced_impact_hammer'),
+        jh('bronze_destructor_hammer'),
+        jh('steel_hammer'),
+        jh('steel_impact_hammer'),
+        jh('steel_reinforced_hammer'),
+        jh('steel_reinforced_impact_hammer'),
+        jh('steel_destructor_hammer'),
+    ];
+    HAMMERS.forEach((id) => {
+        event.add(mc('pickaxes'), id);
+        event.add(mc('enchantable/durability'), id);
+        event.add(mc('enchantable/mining'), id);
+        event.add(mc('enchantable/mining_loot'), id);
+        event.add(mc('enchantable/vanishing'), id);
+    });
+
     const COINS = [
         kj('coin_common'),
         kj('coin_rare'),

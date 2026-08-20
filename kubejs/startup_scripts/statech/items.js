@@ -2,6 +2,7 @@
 // CREATED BY STATIC FOR USE IN
 // STATECH INDUSTRY
 // -----------------------------------------
+let HammerItem = Java.loadClass('pro.mikey.justhammers.HammerItem');
 
 const toolSet = [
     ['pickaxe', 'Pickaxe'],
@@ -44,7 +45,465 @@ ItemEvents.toolTierRegistry((event) => {
     });
 });
 
+// -- HAMMER SPEED AND DURABILITY CHANGES -- //
 ItemEvents.modification((event) => {
+    // -- IRON HAMMERS -- //
+    event.modify('justhammers:iron_hammer', (item) => {
+        item.maxDamage = 937; // 3.75
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_iron_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 4, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:iron_impact_hammer', (item) => {
+        item.maxDamage = 2108; // 2.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_iron_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 4, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:iron_reinforced_hammer', (item) => {
+        item.maxDamage = 2108; // 2.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_iron_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 4, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:iron_reinforced_impact_hammer', (item) => {
+        item.maxDamage = 2635; // 1.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_iron_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 4, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:iron_destructor_hammer', (item) => {
+        item.maxDamage = 3294; // 1.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_iron_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 4, // -2
+                },
+            ],
+        };
+    });
+    // -- BRONZE HAMMERS -- //
+    event.modify('justhammers:bronze_hammer', (item) => {
+        item.maxDamage = 1368; // 3.75
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_iron_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 4.5, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:bronze_impact_hammer', (item) => {
+        item.maxDamage = 3078; // 2.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_iron_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 4.5, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:bronze_reinforced_hammer', (item) => {
+        item.maxDamage = 3078; // 2.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_iron_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 4.5, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:bronze_reinforced_impact_hammer', (item) => {
+        item.maxDamage = 3847; // 1.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_iron_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 4.5, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:bronze_destructor_hammer', (item) => {
+        item.maxDamage = 4809; // 1.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_iron_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 4.5, // -2
+                },
+            ],
+        };
+    });
+    // -- STEEL HAMMERS -- //
+    event.modify('justhammers:steel_hammer', (item) => {
+        item.maxDamage = 4912; // 3.75
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_diamond_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 5.5, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:steel_impact_hammer', (item) => {
+        item.maxDamage = 11053; // 2.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_diamond_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 5.5, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:steel_reinforced_hammer', (item) => {
+        item.maxDamage = 11053; // 2.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_diamond_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 5.5, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:steel_reinforced_impact_hammer', (item) => {
+        item.maxDamage = 13816; // 1.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_diamond_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 5.5, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:steel_destructor_hammer', (item) => {
+        item.maxDamage = 17270; // 1.25
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_diamond_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 5.5, // -2
+                },
+            ],
+        };
+    });
+    // -- DIAMOND HAMMERS -- //
+    event.modify('justhammers:diamond_hammer', (item) => {
+        item.maxDamage = 15227; // 3.10
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_diamond_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 6, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:diamond_impact_hammer', (item) => {
+        item.maxDamage = 34264; // 3.10
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_diamond_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 6, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:diamond_reinforced_hammer', (item) => {
+        item.maxDamage = 34264; // 3.10
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_diamond_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 6, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:diamond_reinforced_impact_hammer', (item) => {
+        item.maxDamage = 42829; // 3.10
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_diamond_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 6, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:diamond_destructor_hammer', (item) => {
+        item.maxDamage = 53537; // 3.10
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_diamond_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 6, // -2
+                },
+            ],
+        };
+    });
+    // -- NETHERITE HAMMERS -- //
+    event.modify('justhammers:netherite_hammer', (item) => {
+        item.maxDamage = 19795; // 1.3
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_netherite_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 7, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:netherite_impact_hammer', (item) => {
+        item.maxDamage = 44543; // 1.3
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_netherite_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 7, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:netherite_reinforced_hammer', (item) => {
+        item.maxDamage = 44543; // 1.3
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_netherite_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 7, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:netherite_reinforced_impact_hammer', (item) => {
+        item.maxDamage = 55677; // 1.3
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_netherite_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 7, // -2
+                },
+            ],
+        };
+    });
+    event.modify('justhammers:netherite_destructor_hammer', (item) => {
+        item.maxDamage = 69598; // 1.3
+        item.tool = {
+            defaultMiningSpeed: 1,
+            damagePerBlock: 1,
+            rules: [
+                {
+                    blocks: '#minecraft:incorrect_for_netherite_tool',
+                    correctForDrops: false,
+                },
+                {
+                    blocks: '#minecraft:mineable/pickaxe',
+                    correctForDrops: true,
+                    speed: 7, // -2
+                },
+            ],
+        };
+    });
+
+    // -- COPPER, BRONZE AND STEEL TOOLS ATTRIBUTES -- //
     toolSet.forEach((tool) => {
         event.modify(`kubejs:copper_${tool[0]}`, (item) => {
             item.maxDamage = 196;
@@ -63,44 +522,44 @@ ItemEvents.modification((event) => {
                     },
                 ],
             };
-            event.modify(`kubejs:steel_${tool[0]}`, (item) => {
-                item.maxDamage = 1310;
-                item.tool = {
-                    defaultMiningSpeed: 1,
-                    damagePerBlock: 1,
-                    rules: [
-                        {
-                            blocks: '#minecraft:incorrect_for_diamond_tool',
-                            correctForDrops: false,
-                        },
-                        {
-                            blocks: `#minecraft:mineable/${tool[0]}`,
-                            correctForDrops: true,
-                            speed: 7.5,
-                        },
-                    ],
-                };
-            });
-            event.modify(`kubejs:bronze_${tool[0]}`, (item) => {
-                item.maxDamage = 365;
-                item.tool = {
-                    defaultMiningSpeed: 1,
-                    damagePerBlock: 1,
-                    rules: [
-                        {
-                            blocks: '#minecraft:incorrect_for_iron_tool',
-                            correctForDrops: false,
-                        },
-                        {
-                            blocks: `#minecraft:mineable/${tool[0]}`,
-                            correctForDrops: true,
-                            speed: 6.5,
-                        },
-                    ],
-                };
-            });
         });
-    })
+        event.modify(`kubejs:steel_${tool[0]}`, (item) => {
+            item.maxDamage = 1310;
+            item.tool = {
+                defaultMiningSpeed: 1,
+                damagePerBlock: 1,
+                rules: [
+                    {
+                        blocks: '#minecraft:incorrect_for_diamond_tool',
+                        correctForDrops: false,
+                    },
+                    {
+                        blocks: `#minecraft:mineable/${tool[0]}`,
+                        correctForDrops: true,
+                        speed: 7.5,
+                    },
+                ],
+            };
+        });
+        event.modify(`kubejs:bronze_${tool[0]}`, (item) => {
+            item.maxDamage = 365;
+            item.tool = {
+                defaultMiningSpeed: 1,
+                damagePerBlock: 1,
+                rules: [
+                    {
+                        blocks: '#minecraft:incorrect_for_iron_tool',
+                        correctForDrops: false,
+                    },
+                    {
+                        blocks: `#minecraft:mineable/${tool[0]}`,
+                        correctForDrops: true,
+                        speed: 6.5,
+                    },
+                ],
+            };
+        });
+    });
 });
 
 StartupEvents.registry('armor_material', (event) => {
@@ -414,6 +873,32 @@ StartupEvents.registry('item', (event) => {
         .displayName('Bronze Helmet')
         .maxDamage(165)
         .material('kubejs:bronze');
+
+    // -- CUSTOM HAMMERS -- // https://discord.com/channels/303440391124942858/1484429923505541140/1484429923505541140
+
+    const customHammerMaterials = ['steel', 'bronze'];
+    customHammerMaterials.forEach((material) => {
+        event.createCustom(
+            `justhammers:${material}_hammer`,
+            () => new HammerItem(`${material}`, 3, 1, 1)
+        );
+        event.createCustom(
+            `justhammers:${material}_impact_hammer`,
+            () => new HammerItem(`${material}`, 3, 3, 2)
+        );
+        event.createCustom(
+            `justhammers:${material}_reinforced_hammer`,
+            () => new HammerItem(`${material}`, 5, 1, 3)
+        );
+        event.createCustom(
+            `justhammers:${material}_reinforced_impact_hammer`,
+            () => new HammerItem(`${material}`, 5, 3, 4)
+        );
+        event.createCustom(
+            `justhammers:${material}_destructor_hammer`,
+            () => new HammerItem(`${material}`, 5, 5, 5)
+        );
+    });
 
     toolSet.forEach((tool) => {
         event

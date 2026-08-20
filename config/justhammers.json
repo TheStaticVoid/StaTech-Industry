@@ -1,0 +1,18 @@
+{
+  "disabledDurabilityTooltip": {
+    "value": true,
+    "_comment": "Set to true to disable the durability tooltip on hammers"
+  },
+  "durabilityRepairPercentage": {
+    "value": 25.0,
+    "_comment": "The percentage of durability restored per repair item"
+  },
+  "durabilityRepairPercentageNetherite": {
+    "value": 33.33,
+    "_comment": "The percentage of durability restored per repair item for netherite hammers"
+  },
+  "allowHammerBreaking": {
+    "value": false,
+    "_comment": "Set to true to allow hammers to break when running out of durability"
+  }
+}
