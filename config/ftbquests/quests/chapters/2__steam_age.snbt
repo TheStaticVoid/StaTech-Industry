@@ -4167,5 +4167,177 @@
 			x: -0.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["0C677AFD6CBEE0BC"]
+			id: "7C203AFD98845058"
+			rewards: [
+				{
+					count: 3
+					id: "11D7A7D10D67E3C5"
+					item: {
+						count: 1
+						id: "scannable:blank_module"
+					}
+					type: "item"
+				}
+				{
+					id: "5AF26C83DD1F30D4"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "4C0D42382C29B961"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "655906BECA10AE2F"
+				item: { count: 1, id: "scannable:scanner" }
+				type: "item"
+			}]
+			x: 34.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7C203AFD98845058"]
+			id: "5E56059CE7218C1A"
+			rewards: [{
+				id: "30365943AA2EDC46"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "0D3A9EC5F487119B"
+				item: { count: 1, id: "scannable:block_module" }
+				type: "item"
+			}]
+			x: 36.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7C203AFD98845058"]
+			id: "07ED435448676AE4"
+			rewards: [{
+				id: "3932478B0089F8DC"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "73CE12BDAD02CB09"
+				item: { count: 1, id: "scannable:common_ores_module" }
+				type: "item"
+			}]
+			x: 37.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7C203AFD98845058"]
+			id: "3B0E44AB704B9254"
+			rewards: [{
+				id: "4ACC401DBCEFF304"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "2D91AB52C38B4B38"
+				item: { count: 1, id: "scannable:rare_ores_module" }
+				type: "item"
+			}]
+			x: 38.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7C203AFD98845058"]
+			id: "0BB2ACE122DB2C7F"
+			rewards: [{
+				id: "2F1AD3C69EA85116"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4DA264CE350C7D8A"
+				item: { count: 1, id: "scannable:fluid_module" }
+				type: "item"
+			}]
+			x: 36.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7C203AFD98845058"]
+			id: "6544C9B83AC50F85"
+			rewards: [{
+				id: "3B639C627E98B200"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "4B5B650F3A3C7E37"
+				item: { count: 1, id: "scannable:range_module" }
+				type: "item"
+			}]
+			x: 37.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7C203AFD98845058"]
+			id: "3660674CDEFC1C98"
+			rewards: [{
+				id: "7A135B6B0D9A0ECD"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "74BCB03070883888"
+				item: { count: 1, id: "scannable:entity_module" }
+				type: "item"
+			}]
+			x: 38.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7C203AFD98845058"]
+			id: "20B9111B42503457"
+			rewards: [{
+				id: "325D3859E33F0B7E"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "42859EAD9E3098EA"
+				item: { count: 1, id: "scannable:friendly_entity_module" }
+				type: "item"
+			}]
+			x: 36.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7C203AFD98845058"]
+			id: "38ADE558FBE30716"
+			rewards: [{
+				id: "2424DB781C23703A"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "62042BF09379D242"
+				item: { count: 1, id: "scannable:hostile_entity_module" }
+				type: "item"
+			}]
+			x: 37.5d
+			y: -5.5d
+		}
 	]
 }
