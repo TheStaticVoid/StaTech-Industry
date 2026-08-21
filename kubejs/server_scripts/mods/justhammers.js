@@ -150,7 +150,7 @@ ServerEvents.recipes((event) => {
 });
 
 ServerEvents.tags('item', (event) => {
-    const MATERIALS = ['stone', 'iron', 'gold', 'diamond', 'netherite'];
+    const MATERIALS = ['iron', 'bronze', 'steel', 'diamond', 'netherite'];
     MATERIALS.forEach((material) => {
         event.add('kubejs:hammer/regular', jh(`${material}_hammer`));
         event.add('kubejs:hammer/impact', jh(`${material}_impact_hammer`));
