@@ -45,8 +45,8 @@ ItemEvents.toolTierRegistry((event) => {
     });
 });
 
-// -- HAMMER SPEED AND DURABILITY CHANGES -- //
 ItemEvents.modification((event) => {
+    // -- HAMMER SPEED AND DURABILITY CHANGES -- //
     // -- IRON HAMMERS -- //
     event.modify('justhammers:iron_hammer', (item) => {
         item.maxDamage = 937; // 3.75
@@ -560,6 +560,37 @@ ItemEvents.modification((event) => {
             };
         });
     });
+
+    // -- LUMBERAXES SPEED AND DURABILITY CHANGES -- //
+    const lumberaxesMaterialCharacteristics = [
+        ['iron', 937, 4, 'iron'],
+        ['copper', 735, 3, 'stone'],
+        ['bronze', 1368, 4.5, 'iron'],
+        ['steel', 4912, 5.5, 'diamond'],
+        ['diamond', 5853, 6, 'diamond'],
+        ['netherite', 7616, 7, 'netherite'],
+        ['gold', 120, 10, 'gold'],
+    ];
+    lumberaxesMaterialCharacteristics.forEach((lumberaxe) => {
+        event.modify(`kubejs:${lumberaxe[0]}_lumberaxe`, (item) => {
+            item.maxDamage = `${lumberaxe[1]}`; // 3.75
+            item.tool = {
+                defaultMiningSpeed: 1,
+                damagePerBlock: 1,
+                rules: [
+                    {
+                        blocks: `#minecraft:incorrect_for_${lumberaxe[3]}_tool`,
+                        correctForDrops: false,
+                    },
+                    {
+                        blocks: '#minecraft:mineable/axe',
+                        correctForDrops: true,
+                        speed: `${lumberaxe[2]}`, // -2
+                    },
+                ],
+            };
+        });
+    });
 });
 
 StartupEvents.registry('armor_material', (event) => {
@@ -923,7 +954,7 @@ StartupEvents.registry('item', (event) => {
         ['bronze', 'Bronze'],
         ['diamond', 'Diamond'],
         ['gold', 'Gold'],
-        ['netherite', 'Netherite']
+        ['netherite', 'Netherite'],
     ];
     LUMBERAXE_MATS.forEach((material) => {
         event
