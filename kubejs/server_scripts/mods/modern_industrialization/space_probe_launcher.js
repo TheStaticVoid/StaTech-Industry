@@ -73,7 +73,7 @@ ServerEvents.recipes((event) => {
             { amount: 1, item: mi('calorite_ore'), probability: 0.25 },
             { amount: 1, item: mc('ancient_debris'), probability: 0.1 },
             { amount: 1, item: mi('sapphire_ore'), probability: 0.8 },
-            { amount: 1, item: mc('silver_ore'), probability: 0.9 },
+            { amount: 1, item: mi('silver_ore'), probability: 0.9 },
             { amount: 2, item: mc('iron_ore'), probability: 0.8 },
         ],
         kj('mkiii_probe_computer'),

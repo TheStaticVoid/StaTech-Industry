@@ -1785,7 +1785,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "clienttweaks-neoforge-1.21.1-21.1.14.jar",
+                    "file_name": "clienttweaks-neoforge-1.21.1-21.1.15.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -1793,18 +1793,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8526/31/clienttweaks-neoforge-1.21.1-21.1.14.jar",
-                    "id": "8526031",
+                    "url": "https://edge.forgecdn.net/files/8696/976/clienttweaks-neoforge-1.21.1-21.1.15.jar",
+                    "id": "8696976",
                     "parent_id": "251407",
                     "hashes": {
-                        "sha1": "faf5d806df2dd053178045d6eee0be5fc30734e8",
-                        "md5": "aec7963ea07950d6e5efb5c666c08728"
+                        "sha1": "019ad3127fcef24220d1572f73179d642f6ee0bb",
+                        "md5": "4cbb3150d114f05df9bd6596b96fc551"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 177995,
-                    "date_published": "2026-07-28T11:14:16.193Z"
+                    "size": 178095,
+                    "date_published": "2026-08-21T05:42:30.893Z"
                 }
             ]
         },
@@ -2397,7 +2397,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "craftingtweaks-neoforge-1.21.1-21.1.10.jar",
+                    "file_name": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -2405,18 +2405,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8019/498/craftingtweaks-neoforge-1.21.1-21.1.10.jar",
-                    "id": "8019498",
+                    "url": "https://edge.forgecdn.net/files/8697/50/craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+                    "id": "8697050",
                     "parent_id": "233071",
                     "hashes": {
-                        "sha1": "ff4b3d9ca8e8452a7a0362153c3108634ad2297c",
-                        "md5": "3eeb19061bc1584f08769e3abdd770fc"
+                        "sha1": "b6252039445978a742f439fc398f2a198b86bd4e",
+                        "md5": "35ac6f92498c274935a97498ab221947"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 256064,
-                    "date_published": "2026-05-01T06:45:56.513Z"
+                    "size": 256086,
+                    "date_published": "2026-08-21T05:52:29.193Z"
                 }
             ]
         },
@@ -6373,7 +6373,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "lootr-neoforge-1.21.1-1.11.38.123.jar",
+                    "file_name": "lootr-neoforge-1.21.1-1.11.38.124.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -6381,16 +6381,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8580/31/lootr-neoforge-1.21.1-1.11.38.123.jar",
-                    "id": "8580031",
+                    "url": "https://edge.forgecdn.net/files/8695/784/lootr-neoforge-1.21.1-1.11.38.124.jar",
+                    "id": "8695784",
                     "parent_id": "361276",
                     "hashes": {
-                        "sha1": "0a0cf6475fcd8802de4255dc5046a956899b3081",
-                        "md5": "64c4cc3c9254606f4fd2b21d51559459"
+                        "sha1": "e31c1ec4604ce2c902e8abe64dd3a7ee18860ddc",
+                        "md5": "b90dae76bd6292852baae8dca7a83918"
                     },
                     "required_dependencies": [],
-                    "size": 994419,
-                    "date_published": "2026-08-05T03:21:51.747Z"
+                    "size": 994918,
+                    "date_published": "2026-08-21T00:46:05.107Z"
                 }
             ]
         },
@@ -8943,9 +8943,11 @@
                     },
                     "required_dependencies": [
                         "1173950",
+                        "238086",
                         "405388",
                         "361276",
-                        "580555"
+                        "580555",
+                        "32274"
                     ],
                     "size": 392725,
                     "date_published": "2026-08-21T05:58:10.023Z"
