@@ -77,6 +77,17 @@ ServerEvents.recipes((event) => {
         [{ amount: 100, fluid: mi('polytetrafluoroethylene') }]
     );
 
+    // -- CONCRETE BLOCK -- //
+    canningMachine(
+        event,
+        st('speedy_concrete'),
+        8,
+        100,
+        [{ amount: 1, item: mi('packer_block_template'), probability: 0 }],
+        [{ amount: 2, item: kj('speedy_concrete') }],
+        [{ amount: 500, fluid: mi('concrete') }]
+    );
+
     // -- BATTERY CASING -- //
     canningMachine(
         event,
