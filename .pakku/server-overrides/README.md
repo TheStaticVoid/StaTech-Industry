@@ -10,3 +10,5 @@ To run the Server Pack:
         * ``bash start_server.bat``
     * Or just open the batch file if on a windows machine.
 3. The batch file will start the server, install forge on it and then boot up your world.
+
+See https://github.com/TheStaticVoid/StaTech-Industry/wiki/%5BNEW%5D-Server-Setup-(1.21.1-NeoForge) for more information.

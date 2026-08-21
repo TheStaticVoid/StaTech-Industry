@@ -291,7 +291,6 @@
 
 [building]
 	lapis_bricks = true
-	brittlestone = true
 	deepslate_lamp = true
 	end_stone_lamp = true
 	blackstone_lamp = true
@@ -586,13 +585,25 @@
 		cooldown = true
 
 		[tools.bomb.blue_bomb]
-			#Bomb explosion radius (damage depends on this)
-			# Default: 5.15
+			#Blue bomb explosion radius. Same blast as a normal bomb, just a bit bigger
+			# Default: 3.0
 			# Range: 0.1 ~ 10.0
 			explosion_radius = 5.15
-			#Do bombs break blocks like tnt?
+			#Do blue bombs break blocks like tnt?
 			#Allowed Values: ALL, WEAK, NONE
 			break_blocks = "WEAK"
+			#How many baby bombs a blue bomb scatters when it goes off. Set to 0 to turn it into a plain, bigger bomb
+			# Default: 5
+			# Range: 0 ~ 32
+			split_count = 5
+			#Explosion radius of the baby bombs scattered by a blue bomb
+			# Default: 1.2
+			# Range: 0.1 ~ 10.0
+			baby_explosion_radius = 1.2
+			#Seconds of fire baby bombs set nearby entities on fire for. 0 to disable
+			# Default: 5
+			# Range: 0 ~ 100
+			baby_fire_duration = 5
 
 	[tools.slingshot]
 		enabled = true
@@ -676,7 +687,7 @@
 	[tweaks.placeable_sticks]
 		#Allow placeable sticks
 		sticks = true
-		#Allow placeable blaze rods
+		#Allow placeable blaze and breeze rods
 		blaze_rods = false
 
 	[tweaks.placeable_gunpowder]

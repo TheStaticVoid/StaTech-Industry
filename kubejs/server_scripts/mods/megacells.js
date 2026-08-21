@@ -96,5 +96,5 @@ ServerEvents.recipes((event) => {
 });
 
 MoreJS.villagerTrades((event) => {
-    event.removeModdedTypedTrades('ae2:fluix_researcher', 5);
+    event.removeModdedTypedTrades(ae('fluix_researcher'), 5);
 });

@@ -20,19 +20,6 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mr('red_alloy_ingot') }]
     );
 
-    // -- NETHERITE INGOT -- //
-    alloySmelter(
-        event,
-        st('netherite_ingot'),
-        16,
-        600,
-        [
-            { amount: 4, tag: 'c:ingots/gold' },
-            { amount: 4, item: mc('netherite_scrap') },
-        ],
-        [{ amount: 1, item: mc('netherite_ingot') }]
-    );
-
     // -- BRASS INGOT -- //
     alloySmelter(
         event,

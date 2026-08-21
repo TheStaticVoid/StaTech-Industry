@@ -11,12 +11,6 @@
         "category": "block",
         "sounds": ["mi_sound_addon:modern_industrialization/assembler"]
     },
-    "extended_industrialization/alloy_smelter": {
-        "category": "block",
-        "sounds": [
-            "mi_sound_addon:modern_industrialization/electric_blast_furnace"
-        ]
-    },
     "modern_industrialization/core_drill": {
         "category": "block",
         "sounds": ["mi_sound_addon:modern_industrialization/fission_reactor"]
@@ -51,60 +45,20 @@
         "category": "block",
         "sounds": ["mi_sound_addon:modern_industrialization/mob_crusher"]
     },
-    "modern_industrialization/arrayed_wiremill": {
+    "modern_industrialization/blood_generator": {
         "category": "block",
-        "sounds": ["mi_sound_addon:modern_industrialization/wiremill"]
+        "sounds": ["mi_sound_addon:modern_industrialization/mob_crusher"]
     },
-    "modern_industrialization/blast_alloy_smelter": {
-        "category": "block",
-        "sounds": [
-            "mi_sound_addon:modern_industrialization/electric_blast_furnace"
-        ]
-    },
-    "modern_industrialization/bulk_compactor": {
-        "category": "block",
-        "sounds": ["mi_sound_addon:modern_industrialization/compressor"]
-    },
-    "modern_industrialization/colossal_blast_furnace": {
-        "category": "block",
-        "sounds": [
-            "mi_sound_addon:modern_industrialization/electric_blast_furnace"
-        ]
-    },
-    "modern_industrialization/grand_mass_centrifuge": {
+    "modern_industrialization/recycler": {
         "category": "block",
         "sounds": ["mi_sound_addon:modern_industrialization/centrifuge"]
     },
-    "modern_industrialization/high_capacity_packer": {
-        "category": "block",
-        "sounds": ["mi_sound_addon:modern_industrialization/packer"]
-    },
-    "modern_industrialization/high_capacity_unpacker": {
-        "category": "block",
-        "sounds": ["mi_sound_addon:modern_industrialization/unpacker"]
-    },
-    "modern_industrialization/industrial_mixing_machine": {
-        "category": "block",
-        "sounds": ["mi_sound_addon:modern_industrialization/mixer"]
-    },
-    "modern_industrialization/large_chemical_reactor": {
-        "category": "block",
-        "sounds": ["mi_sound_addon:modern_industrialization/chemical_reactor"]
-    },
-    "modern_industrialization/large_polarization_machine": {
-        "category": "block",
-        "sounds": ["mi_sound_addon:modern_industrialization/polarizer"]
-    },
-    "modern_industrialization/large_scale_assembler": {
+    "modern_industrialization/weapons_factory": {
         "category": "block",
         "sounds": ["mi_sound_addon:modern_industrialization/assembler"]
     },
-    "modern_industrialization/multi_cutter": {
+    "modern_industrialization/matter_fabricator": {
         "category": "block",
-        "sounds": ["mi_sound_addon:modern_industrialization/cutting_machine"]
-    },
-    "modern_industrialization/oversized_electrolysis_chamber": {
-        "category": "block",
-        "sounds": ["mi_sound_addon:modern_industrialization/electrolyzer"]
+        "sounds": ["mi_sound_addon:modern_industrialization/compressor"]
     }
 }

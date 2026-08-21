@@ -2,7 +2,7 @@
 navigation:
     title: 'Colossal Blast Furnace'
     icon: 'mi_tweaks:colossal_blast_furnace'
-    position: 10
+    position: 11
     parent: stcm:batching_machines.md
 item_ids:
     - mi_tweaks:colossal_blast_furnace

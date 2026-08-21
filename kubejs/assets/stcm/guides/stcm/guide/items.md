@@ -2,7 +2,7 @@
 navigation:
     title: 'Items'
     icon: 'kubejs:greg_cola'
-    position: 2
+    position: 4
 ---
 
 # Items

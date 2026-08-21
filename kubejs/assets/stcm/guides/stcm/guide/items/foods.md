@@ -10,6 +10,7 @@ item_ids:
     - kubejs:sulfuric_acid_bottle
     - kubejs:concrete_and_clay_steak
     - kubejs:uranium_cereal
+    - kubejs:fruity_pebbles
     - kubejs:concrete_pizza_slice
     - kubejs:bepsi
     - kubejs:coke_cola
@@ -39,9 +40,12 @@ item_ids:
   <ItemImage id="kubejs:coke_cola" />
   <ItemImage id="kubejs:concrete_bar" />
   <ItemImage id="kubejs:concrete_and_clay_steak" />
+  <ItemImage id="kubejs:fruity_pebbles" />
   <ItemImage id="kubejs:greg_cola" />
   <ItemImage id="kubejs:missing_texture_cookie" />
   <ItemImage id="modern_industrialization:mixed_ingot_iridium" />
+</Row>
+<Row>
   <ItemImage id="kubejs:nuka_cola" />
   <ItemImage id="kubejs:pizza_dough" />
   <ItemImage id="kubejs:uncooked_pizza" />

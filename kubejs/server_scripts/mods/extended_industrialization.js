@@ -10,7 +10,6 @@ ServerEvents.recipes((event) => {
 
     // -- EXTENDED INDUSTRIALIZATION REMOVED RECIPES -- //
     const EI_DELETED_ITEMS = [
-        ei('vanilla_recipes/blast_furnace/blazing_essence'),
         ei('machines/large_electric_furnace/assembler'),
         ei('machines/large_electric_furnace/craft'),
         ei('machines/bending_machine/assembler/bronze'),
@@ -29,6 +28,9 @@ ServerEvents.recipes((event) => {
         ei('machines/large_steam_macerator/craft'),
         ei('machines/large_steam_macerator/assembler'),
         ei('tool/assembler/tesla_handheld_receiver'),
+        ei('vanilla_recipes/blast_furnace/netherite_dust_to_ingot'),
+        ei('component/craft/tin_can'),
+        ei('component/assembler/tin_can'),
     ];
     EI_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
 
@@ -220,22 +222,6 @@ ServerEvents.recipes((event) => {
         [{ amount: 50, fluid: mi('polyethylene') }]
     );
 
-    // ------------------- //
-    // -- BLAST FURNACE -- //
-    // ------------------- //
-
-    // -- BLAZING ESSENCE -- //
-    blastFurnace(
-        event,
-        st('blazing_essence'),
-        2,
-        200,
-        [{ amount: 5, item: mc('blaze_powder') }],
-        null,
-        null,
-        [{ amount: 100, fluid: ei('blazing_essence') }]
-    );
-
     // -- TESLA RECEIVERS FROM ENERGY INPUT HATCH -- //
     TIER_NAMES.forEach((tierName) => {
         assembler(
@@ -252,6 +238,28 @@ ServerEvents.recipes((event) => {
             [{ amount: 1, item: ei(`${tierName}_tesla_receiver_hatch`) }]
         );
     });
+
+    // ------------------- //
+    // --    TIN CAN    -- //
+    // ------------------- //
+
+    event.shaped(`4x ${ei('tin_can')}`, ['C  ', 'C  ', '   '], {
+        C: mi('aluminum_curved_plate'),
+    });
+    assembler(
+        event,
+        sta('component/assembler/tin_can'),
+        8,
+        200,
+        {
+            amount: 2,
+            item: mi('aluminum_curved_plate'),
+        },
+        {
+            amount: 4,
+            item: ei('tin_can'),
+        }
+    );
 });
 
 ServerEvents.tags('item', (event) => {

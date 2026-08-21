@@ -185,8 +185,8 @@ ServerEvents.recipes((event) => {
     electrolyzer(
         event,
         st('uu_liquid_from_matter'),
-        64,
-        400,
+        128,
+        600,
         [{ amount: 1, item: kj('uu_matter') }],
         null,
         null,

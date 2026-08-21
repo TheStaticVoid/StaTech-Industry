@@ -51,12 +51,28 @@ ServerEvents.recipes((event) => {
         })
         .id(st('glowing_calorite_pillar'));
 
+    // -- DIAMOND UPGRADE SMITHING TEMPLATE -- //
     event
-        .shaped(kj('diamond_upgrade_smithing_template'), [' D ', 'DPD', ' D '], {
-            D: mc('diamond'),
-            P: mi('steel_plate')
-        })
+        .shaped(
+            kj('diamond_upgrade_smithing_template'),
+            [' D ', 'DPD', ' D '],
+            {
+                D: mc('diamond'),
+                P: mi('steel_plate'),
+            }
+        )
         .id(st('diamond_upgrade_smithing_template'));
+
+    // -- HIM -- //
+    event
+        .shaped(kj('bartman'), ['PCP', 'BWB', 'BEB'], {
+            P: mi('plutonium_dust'),
+            C: mc('brain_coral_block'),
+            B: mc('beef'),
+            W: mc('black_wool'),
+            E: mc('dragon_egg'),
+        })
+        .id(st('jon_bartman'));
 
     // ------------------- //
     // -- STATECH COINS -- //
@@ -124,18 +140,21 @@ ServerEvents.recipes((event) => {
         })
         .id(st('citrine_shard_from_common'));
 
+    // -- COAL ORE -- //
     event
         .shaped('12x ' + mc('coal_ore'), ['C C', ' C ', 'C C'], {
             C: common,
         })
         .id(st('coal_ore_from_common'));
 
+    // -- COPPER ORE -- //
     event
         .shaped('12x ' + mc('copper_ore'), ['CCC', 'C  ', 'CCC'], {
             C: common,
         })
         .id(st('copper_ore_from_common'));
 
+    // -- ZINC ORE -- //
     event
         .shaped('8x create:zinc_ore', ['CC', 'CC'], {
             C: common,
@@ -148,6 +167,13 @@ ServerEvents.recipes((event) => {
             C: common,
         })
         .id(st('salt_ore_from_common'));
+
+    // -- LIGNITE COAL ORE -- //
+    event
+        .shaped('12x ' + mi('lignite_coal_ore'), ['CC ', ' C ', ' CC'], {
+            C: common,
+        })
+        .id(st('lignite_coal_ore_from_common'));
 
     // -------------- //
     //      RARE      //
@@ -202,6 +228,41 @@ ServerEvents.recipes((event) => {
         })
         .id(st('bauxite_ore_from_rare'));
 
+    // -- FLUORITE ORE -- //
+    event
+        .shaped('8x ' + mi('fluorite_ore'), ['C  ', 'CCC', '  C'], {
+            C: rare,
+        })
+        .id(st('fluorite_ore_from_rare'));
+
+    // -- QUARTZ ORE -- //
+    event
+        .shaped('8x ' + mi('quartz_ore'), ['C C', ' C ', 'C C'], {
+            C: rare,
+        })
+        .id(st('quartz_ore_from_rare'));
+
+    // -- KERNITE ORE -- //
+    event
+        .shaped('8x ' + mi('kernite_ore'), ['CCC', ' C ', 'CCC'], {
+            C: rare,
+        })
+        .id(st('kernite_ore_from_rare'));
+
+    // -- RUBY ORE -- //
+    event
+        .shaped('8x ' + mi('ruby_ore'), ['  C', 'CCC', 'C  '], {
+            C: rare,
+        })
+        .id(st('ruby_ore_from_rare'));
+
+    // -- SAPPHIRE ORE -- //
+    event
+        .shaped('8x ' + mi('sapphire_ore'), ['CCC', '   ', 'CCC'], {
+            C: rare,
+        })
+        .id(st('sapphire_ore_from_rare'));
+
     // -------------- //
     //   LEGENDARY    //
     // -------------- //
@@ -248,6 +309,41 @@ ServerEvents.recipes((event) => {
         })
         .id('ostrum_ore_from_legendary');
 
+    // -- MOON ICE ORE -- //
+    event
+        .shaped('8x ' + mi('moon_ice_ore'), [' CC', ' C ', 'CC '], {
+            C: legendary,
+        })
+        .id('moon_ice_ore_from_legendary');
+
+    // -- TITANIUM ORE -- //
+    event
+        .shaped('8x ' + mi('titanium_ore'), ['C C', 'CCC', 'C C'], {
+            C: legendary,
+        })
+        .id('titanium_ore_from_legendary');
+
+    // -- PLATINUM ORE -- //
+    event
+        .shaped('8x ' + mi('platinum_ore'), ['CCC', 'C C', 'C C'], {
+            C: legendary,
+        })
+        .id('platinum_ore_from_legendary');
+
+    // -- PERIDOT ORE -- //
+    event
+        .shaped('8x ' + mi('peridot_ore'), ['   ', 'C C', 'CCC'], {
+            C: legendary,
+        })
+        .id('peridot_ore_from_legendary');
+
+    // -- EMERALD ORE -- //
+    event
+        .shaped('8x ' + mc('emerald_ore'), [' C ', ' C ', 'CCC'], {
+            C: legendary,
+        })
+        .id('emerald_ore_from_legendary');
+
     // -------------- //
     //     MYTHIC     //
     // -------------- //
@@ -281,153 +377,122 @@ ServerEvents.recipes((event) => {
         })
         .id(st('calorite_ore_from_mythic'));
 
-    // ---------------------- //
-    // -- BRONZE EQUIPMENT -- //
-    // ---------------------- //
-
-    // -- BRONZE BOOTS -- //
+    // -- IRIDIUM ORE -- //
     event
-        .shaped(Item.of(kj('bronze_boots')), ['   ', 'A A', 'A A'], {
-            A: '#c:ingots/bronze',
+        .shaped('8x ' + mi('iridium_ore'), ['C C', 'C C', 'CCC'], {
+            C: mythic,
         })
-        .id(st('bronze_boots'));
+        .id(st('iridium_ore_from_mythic'));
 
-    // -- BRONZE CHESTPLATE -- //
-    event
-        .shaped(Item.of(kj('bronze_chestplate')), ['A A', 'AAA', 'AAA'], {
-            A: '#c:ingots/bronze',
-        })
-        .id(st('bronze_chestplate'));
+    // --------------- //
+    // -- TOOL SETS -- //
+    // --------------- //
 
-    // -- BRONZE LEGGINGS -- //
-    event
-        .shaped(Item.of(kj('bronze_leggings')), ['AAA', 'A A', 'A A'], {
-            A: '#c:ingots/bronze',
-        })
-        .id(st('bronze_leggings'));
+    const toolSetsMaterials = ['bronze', 'steel', 'copper'];
+    const armorSetsMaterials = ['bronze', 'steel'];
 
-    // -- BRONZE HELMET -- //
-    event
-        .shaped(Item.of(kj('bronze_helmet')), ['AAA', 'A A', '   '], {
-            A: '#c:ingots/bronze',
-        })
-        .id(st('bronze_helmet'));
+    // -- BOOTS -- //
+    armorSetsMaterials.forEach((material) => {
+        event
+            .shaped(Item.of(kj(`${material}_boots`)), ['   ', 'A A', 'A A'], {
+                A: `#c:plates/${material}`,
+            })
+            .id(st(`${material}_boots`));
 
-    // -- BRONZE PICKAXE -- //
-    event
-        .shaped(Item.of(kj('bronze_pickaxe')), ['AAA', ' B ', ' B '], {
-            A: '#c:ingots/bronze',
-            B: '#c:rods/wooden',
-        })
-        .id(st('bronze_pickaxe'));
+        // -- CHESTPLATE -- //
+        event
+            .shaped(
+                Item.of(kj(`${material}_chestplate`)),
+                ['A A', 'AAA', 'AAA'],
+                {
+                    A: `#c:plates/${material}`,
+                }
+            )
+            .id(st(`${material}_chestplate`));
 
-    // -- BRONZE AXE -- //
-    event
-        .shaped(Item.of(kj('bronze_axe')), ['AA ', 'AB ', ' B '], {
-            A: '#c:ingots/bronze',
-            B: '#c:rods/wooden',
-        })
-        .id(st('bronze_axe'));
+        // -- LEGGINGS -- //
+        event
+            .shaped(
+                Item.of(kj(`${material}_leggings`)),
+                ['AAA', 'A A', 'A A'],
+                {
+                    A: `#c:plates/${material}`,
+                }
+            )
+            .id(st(`${material}_leggings`));
 
-    // -- BRONZE SHOVEL -- //
-    event
-        .shaped(Item.of(kj('bronze_shovel')), [' A ', ' B ', ' B '], {
-            A: '#c:ingots/bronze',
-            B: '#c:rods/wooden',
-        })
-        .id(st('bronze_shovel'));
+        // -- HELMET -- //
+        event
+            .shaped(Item.of(kj(`${material}_helmet`)), ['AAA', 'A A', '   '], {
+                A: `#c:plates/${material}`,
+            })
+            .id(st(`${material}_helmet`));
+    });
 
-    // -- BRONZE SWORD -- //
-    event
-        .shaped(Item.of(kj('bronze_sword')), [' A ', ' A ', ' B '], {
-            A: '#c:ingots/bronze',
-            B: '#c:rods/wooden',
-        })
-        .id(st('bronze_sword'));
+    toolSetsMaterials.forEach((material) => {
+        // -- PICKAXE -- //
+        event
+            .shaped(Item.of(kj(`${material}_pickaxe`)), ['AAA', ' B ', ' B '], {
+                A: `#c:ingots/${material}`,
+                B: '#c:rods/wooden',
+            })
+            .id(st(`${material}_pickaxe`));
 
-    // -- BRONZE HOE -- //
-    event
-        .shaped(Item.of(kj('bronze_hoe')), ['AA ', ' B ', ' B '], {
-            A: '#c:ingots/bronze',
-            B: '#c:rods/wooden',
-        })
-        .id(st('bronze_hoe'));
+        // -- AXE -- //
+        event
+            .shaped(Item.of(kj(`${material}_axe`)), ['AA ', 'AB ', ' B '], {
+                A: `#c:ingots/${material}`,
+                B: '#c:rods/wooden',
+            })
+            .id(st(`${material}_axe`));
 
-    // ---------------------- //
-    // -- STEEL EQUIPMENT -- //
-    // ---------------------- //
+        // -- SHOVEL -- //
+        event
+            .shaped(Item.of(kj(`${material}_shovel`)), [' A ', ' B ', ' B '], {
+                A: `#c:ingots/${material}`,
+                B: '#c:rods/wooden',
+            })
+            .id(st(`${material}_shovel`));
 
-    // -- STEEL BOOTS -- //
-    event
-        .shaped(Item.of(kj('steel_boots')), ['   ', 'A A', 'A A'], {
-            A: '#c:ingots/steel',
-        })
-        .id(st('steel_boots'));
+        // -- SWORD -- //
+        event
+            .shaped(Item.of(kj(`${material}_sword`)), [' A ', ' A ', ' B '], {
+                A: `#c:ingots/${material}`,
+                B: '#c:rods/wooden',
+            })
+            .id(st(`${material}_sword`));
 
-    // -- STEEL CHESTPLATE -- //
-    event
-        .shaped(Item.of(kj('steel_chestplate')), ['A A', 'AAA', 'AAA'], {
-            A: '#c:ingots/steel',
-        })
-        .id(st('steel_chestplate'));
-
-    // -- STEEL LEGGINGS -- //
-    event
-        .shaped(Item.of(kj('steel_leggings')), ['AAA', 'A A', 'A A'], {
-            A: '#c:ingots/steel',
-        })
-        .id(st('steel_leggings'));
-
-    // -- STEEL HELMET -- //
-    event
-        .shaped(Item.of(kj('steel_helmet')), ['AAA', 'A A', '   '], {
-            A: '#c:ingots/steel',
-        })
-        .id(st('steel_helmet'));
-
-    // -- STEEL PICKAXE -- //
-    event
-        .shaped(Item.of(kj('steel_pickaxe')), ['AAA', ' B ', ' B '], {
-            A: '#c:ingots/steel',
-            B: '#c:rods/wooden',
-        })
-        .id(st('steel_pickaxe'));
-
-    // -- STEEL AXE -- //
-    event
-        .shaped(Item.of(kj('steel_axe')), ['AA ', 'AB ', ' B '], {
-            A: '#c:ingots/steel',
-            B: '#c:rods/wooden',
-        })
-        .id(st('steel_axe'));
-
-    // -- STEEL SHOVEL -- //
-    event
-        .shaped(Item.of(kj('steel_shovel')), [' A ', ' B ', ' B '], {
-            A: '#c:ingots/steel',
-            B: '#c:rods/wooden',
-        })
-        .id(st('steel_shovel'));
-
-    // -- STEEL SWORD -- //
-    event
-        .shaped(Item.of(kj('steel_sword')), [' A ', ' A ', ' B '], {
-            A: '#c:ingots/steel',
-            B: '#c:rods/wooden',
-        })
-        .id(st('steel_sword'));
-
-    // -- STEEL HOE -- //
-    event
-        .shaped(Item.of(kj('steel_hoe')), ['AA ', ' B ', ' B '], {
-            A: '#c:ingots/steel',
-            B: '#c:rods/wooden',
-        })
-        .id(st('steel_hoe'));
+        // -- HOE -- //
+        event
+            .shaped(Item.of(kj(`${material}_hoe`)), ['AA ', ' B ', ' B '], {
+                A: `#c:ingots/${material}`,
+                B: '#c:rods/wooden',
+            })
+            .id(st(`${material}_hoe`));
+    });
 });
 
-
 ServerEvents.tags('item', (event) => {
+    const HAMMERS = [
+        jh('bronze_hammer'),
+        jh('bronze_impact_hammer'),
+        jh('bronze_reinforced_hammer'),
+        jh('bronze_reinforced_impact_hammer'),
+        jh('bronze_destructor_hammer'),
+        jh('steel_hammer'),
+        jh('steel_impact_hammer'),
+        jh('steel_reinforced_hammer'),
+        jh('steel_reinforced_impact_hammer'),
+        jh('steel_destructor_hammer'),
+    ];
+    HAMMERS.forEach((id) => {
+        event.add(mc('pickaxes'), id);
+        event.add(mc('enchantable/durability'), id);
+        event.add(mc('enchantable/mining'), id);
+        event.add(mc('enchantable/mining_loot'), id);
+        event.add(mc('enchantable/vanishing'), id);
+    });
+
     const COINS = [
         kj('coin_common'),
         kj('coin_rare'),
@@ -454,10 +519,47 @@ ServerEvents.tags('block', (event) => {
         '#chisel:chiseled_glowstone',
         /^xtonesreworked:glaxx_block_/,
     ]);
+    // -- MI TWEAKS TAGGING -- //
+    const MI_TWEAKS_BLOCKS = Ingredient.of('@mi_tweaks')
+        .except('mi_tweaks:machine_blueprint')
+        .getStacks()
+        .toArray();
+    MI_TWEAKS_BLOCKS.forEach((block) => {
+        event.add('minecraft:mineable/pickaxe', [`${block.id}`]);
+        event.add('minecraft:needs_stone_tool', [`${block.id}`]);
+    });
+    const tagsToRemoveFromCopper = [
+        'minecraft:incorrect_for_wooden_tool',
+        'minecraft:incorrect_for_gold_tool',
+        'minecraft:needs_stone_tool',
+    ];
+    tagsToRemoveFromCopper.forEach((tag) => {
+        event.remove(`${tag}`, [
+            'minecraft:deepslate_copper_ore',
+            'minecraft:raw_copper_block',
+            'minecraft:copper_ore',
+        ]);
+    });
 });
 
 // -- ITEM TAGGING -- //
 ServerEvents.tags('item', (event) => {
+    const ultimineDisabledTools = [
+        mc('stone_pickaxe'),
+        mc('stone_axe'),
+        mc('stone_shovel'),
+        mc('stone_sword'),
+        mc('stone_hoe'),
+        mc('wooden_pickaxe'),
+        mc('wooden_axe'),
+        mc('wooden_shovel'),
+        mc('wooden_sword'),
+        mc('wooden_hoe'),
+    ];
+    ultimineDisabledTools.forEach((tool) => {
+        event.add('ftbultimine:excluded_tools', `${tool}`);
+    });
+
     // -- MI PARTS TAGGING -- //
     const MATERIALS = [
         'copper',

@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY DINO FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -13,6 +13,32 @@ ServerEvents.recipes((event) => {
         cd('copper_sheet_metal'),
     ];
     CREATEDECO_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
+
+    // ------------------------------------- //
+    // -- METAL STONECUTTING CONFLICT FIX -- //
+    // ------------------------------------- //
+
+    event.replaceInput(
+        { input: mc('copper_ingot'), type: mc('stonecutting') },
+        mc('copper_ingot'),
+        Ingredient.of(mi('copper_plate'))
+    );
+
+    event.replaceInput(
+        { input: mc('iron_ingot'), type: mc('stonecutting') },
+        mc('iron_ingot'),
+        Ingredient.of(mi('iron_plate'))
+    );
+
+    event.replaceInput(
+        { input: mc('gold_ingot'), type: mc('stonecutting') },
+        mc('gold_ingot'),
+        Ingredient.of(mi('gold_plate'))
+    );
+
+    // ---------------- //
+    // ---- SHAPED ---- //
+    // ---------------- //
 
     // -- IRON SHEET METAL -- //
     event
@@ -27,4 +53,56 @@ ServerEvents.recipes((event) => {
             P: '#c:plates/copper',
         })
         .id(st('copper_sheet_metal'));
+
+    // -------------------- //
+    // ---- COMPRESSOR ---- //
+    // -------------------- //
+
+    // -- ANDESITE SHEET -- //
+    compressor(
+        event,
+        st('andesite_sheet'),
+        2,
+        100,
+        [{ amount: 1, item: cr('andesite_alloy') }],
+        [{ amount: 1, item: cd('andesite_sheet') }]
+    );
+
+    // -- INDUSTRIAL IRON SHEET -- //
+    compressor(
+        event,
+        st('industrial_iron_sheet'),
+        2,
+        100,
+        [{ amount: 1, item: cd('industrial_iron_ingot') }],
+        [{ amount: 1, item: cd('industrial_iron_sheet') }]
+    );
+
+    // ---------------- //
+    // ---- PACKER ---- //
+    // ---------------- //
+
+    // -- INDUSTRIAL IRON BLOCK -- //
+    packer(
+        event,
+        st('industrial_iron_ingot_block'),
+        2,
+        100,
+        [{ amount: 9, item: cd('industrial_iron_ingot') }],
+        [{ amount: 1, item: cr('industrial_iron_block') }]
+    );
+
+    // ------------------ //
+    // ---- UNPACKER ---- //
+    // ------------------ //
+
+    // -- INDUSTRIAL IRON INGOT -- //
+    unpacker(
+        event,
+        st('industrial_iron_ingot'),
+        2,
+        100,
+        [{ amount: 1, item: cr('industrial_iron_block') }],
+        [{ amount: 9, item: cd('industrial_iron_ingot') }]
+    );
 });

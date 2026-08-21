@@ -41,7 +41,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			id: "7DF831878A6CF9FF"
@@ -205,7 +205,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6924E189ABFBD718"]
 			id: "16FC60FF6E3A4517"
 			rewards: [{
 				id: "0AE82ADF8734D152"
@@ -249,7 +248,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0799245700C72434"]
@@ -264,7 +263,7 @@
 				item: { count: 1, id: "gag:labeling_tool" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: -3.0d
 		}
 		{
@@ -315,14 +314,11 @@
 				item: { count: 1, id: "gag:sacred_balm" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 3.5d
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"78DFD8815E2AE291"
-				"7C6E6A8331C52A08"
-			]
+			dependencies: ["78DFD8815E2AE291"]
 			id: "1ADACCB1A8BB9E7E"
 			rewards: [{
 				id: "61D470564DCE1FA2"
@@ -334,11 +330,10 @@
 				item: { count: 1, id: "artifacts:eternal_steak" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 5.0d
 			y: 1.5d
 		}
 		{
-			dependencies: ["15417EE9AF265E49"]
 			id: "78DFD8815E2AE291"
 			rewards: [{
 				id: "69638EF091A8AFCE"
@@ -350,7 +345,7 @@
 				item: { count: 1, id: "artifacts:everlasting_beef" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
@@ -419,11 +414,10 @@
 				item: { count: 1, id: "phantoms_utilities:spray_can" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.5d
 			y: -3.0d
 		}
 		{
-			dependencies: ["7EFD1192E201F04A"]
 			id: "48360151E8BFCD9C"
 			rewards: [{
 				id: "12BE550F20ACCA87"
@@ -509,6 +503,70 @@
 			]
 			x: 2.0d
 			y: -4.5d
+		}
+		{
+			id: "712C81B29AF9D306"
+			rewards: [{
+				id: "4673C448C7783A80"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "4F0F7D6873043476"
+					item: { count: 1, id: "transmog:transmogrification_table" }
+					type: "item"
+				}
+				{
+					id: "63D7C489BBB4E62A"
+					item: { count: 1, id: "transmog:void_fragment" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			id: "5C78D3264CBCEC91"
+			rewards: [{
+				id: "319A0A7F47C4DCA7"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "1F54CA01648FFF78"
+				item: { count: 1, id: "artifacts:charm_of_shrinking" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			id: "0590FCBC3E4F6ABB"
+			tasks: [{
+				id: "33703D575D62EEBC"
+				item: { count: 1, id: "tradingpost:trading_post" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "10E972F44ECC66AB"
+			tasks: [
+				{
+					id: "754AB30372EA8589"
+					item: { components: { "ftbfiltersystem:filter": "or(item_tag(comforts:hammocks))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "74156EE7AACD876B"
+					item: { count: 1, id: "comforts:rope_and_nail" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.5d
 		}
 	]
 }

@@ -36,9 +36,6 @@ ItemEvents.modifyTooltips((event) => {
         kj('basic_space_circuit'),
         kj('advanced_space_circuit'),
         kj('anomalous_space_circuit'),
-        kj('uu_matter'),
-        kj('scrap'),
-        mi('recycler'),
         mi('supercomputer'),
         mi('telescope'),
         /^modern_industrialization:.*(cobalt).*/,
@@ -83,6 +80,7 @@ ItemEvents.modifyTooltips((event) => {
         mi('boron_trifluoride'),
         mi('diborane'),
         mi('pentaborane'),
+        mi('molten_gold'),
     ];
 
     const CUSTOM_MACHINES_AND_ITEMS = [
@@ -99,6 +97,9 @@ ItemEvents.modifyTooltips((event) => {
         mt('colossal_blast_furnace'),
         mt('large_polarization_machine'),
         mt('arrayed_wiremill'),
+        mt('extreme_vacuum_cryofreezer'),
+        mt('macrothermic_confluence_unit'),
+        mt('recycling_factory'),
         mi('laser_engraver'),
         mi('photosynthetic_chamber'),
         mi('rocket_part_assembler'),
@@ -114,11 +115,13 @@ ItemEvents.modifyTooltips((event) => {
         mi('clay_dust'),
         mi('clay_tiny_dust'),
         mi('recycler'),
+        mi('matter_fabricator'),
+        mi('weapons_factory'),
         /^modern_industrialization:.*(calorite|tungstensteel|desh|moon_ice|ostrum|polytetrafluoroethylene|cobalt|zinc|dark_ashes|calcite|fluorite|acrylonitrile_butadiene_styrene|enderium|entro|sky_bronze|sky_steel|sapphire|peridot|ruby|boron_trioxide|kernite|lithium_hydride|lithium_tetrafluoroborate|lithium_fluoride).*/,
     ];
 
     // -- ADD TOOLTIP -- //
-    const ADDED_BY_STATECH = Text.gold('Added by StaTech Industry');
+    const ADDED_BY_STATECH = Text.gold('Added by StaTech Industry 2');
     CUSTOM_MACHINES_AND_ITEMS.forEach((item) => {
         event.modify(item, (tooltip) => {
             tooltip.removeExactText(ADDED_BY_STATECH);
@@ -134,8 +137,18 @@ ItemEvents.modifyTooltips((event) => {
             });
         });
     });
+    const SHIFTFORMOREDETAIL = Text.gray('Hold Shift for more details');
+    const KEYFORMOREDETAIL = [
+        '#decorative_blocks:seats',
+        '#decorative_blocks:supports',
+    ];
+    KEYFORMOREDETAIL.forEach((item) => {
+        event.modify(item, (tooltip) => {
+            tooltip.add([SHIFTFORMOREDETAIL]);
+        });
+    });
 
-    const CURRENTLY_DISABLED = Text.red('Not Yet Obtainable');
+    const CURRENTLY_DISABLED = Text.red('Dev Item [WIP]');
     DISABLED_MACHINES_AND_ITEMS.forEach((item) => {
         event.modify(item, (tooltip) => {
             tooltip.add([CURRENTLY_DISABLED]);

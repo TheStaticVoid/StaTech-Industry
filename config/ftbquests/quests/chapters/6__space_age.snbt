@@ -139,18 +139,24 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0A46D4B198C5A206"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "452E54E7A479B3EF"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "4A70D1B4F105E4F6"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]

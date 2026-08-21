@@ -1,5 +1,27 @@
 {
   "layers": {
+    "advancedperipherals:overlay_module_overlay": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "advancedperipherals:overlay_module_overlay"
+    },
+    "advancedperipherals:saddle_turtle_overlay": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "advancedperipherals:saddle_turtle_overlay"
+    },
     "appleskin:exhaustion_level": {
       "displacement": {
         "x": 0,
@@ -87,6 +109,50 @@
         "y": "UP"
       },
       "sync": "artifacts:helium_flamingo_charge"
+    },
+    "brewinandchewin:food_offset": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "brewinandchewin:food_offset"
+    },
+    "brewinandchewin:intoxication": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "brewinandchewin:intoxication"
+    },
+    "brewinandchewin:tipsy": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "brewinandchewin:tipsy"
+    },
+    "craftconfig:singleplayer_tab": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "craftconfig:singleplayer_tab"
     },
     "create:blueprint": {
       "displacement": {
@@ -528,6 +594,17 @@
       },
       "sync": "overloadedarmorbar:overloadedarmorbar"
     },
+    "scannable:scanner_results": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "scannable:scanner_results"
+    },
     "sophisticateditemactions:highlight_directions": {
       "displacement": {
         "x": 0,
@@ -572,6 +649,28 @@
       },
       "sync": "spectrum:azure_dike"
     },
+    "spectrum:paintbrush_info": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "spectrum:paintbrush_info"
+    },
+    "spectrum:staff_overlay": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "spectrum:staff_overlay"
+    },
     "supplementaries:cannon_charge": {
       "displacement": {
         "x": 0,
@@ -604,6 +703,50 @@
         "y": "UP"
       },
       "sync": "supplementaries:slimed"
+    },
+    "tacz:tac_gun_hud_overlay": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "tacz:tac_gun_hud_overlay"
+    },
+    "tacz:tac_heat_bar": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "tacz:tac_heat_bar"
+    },
+    "tacz:tac_interact_key_overlay": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "tacz:tac_interact_key_overlay"
+    },
+    "tacz:tac_kill_amount_overlay": {
+      "displacement": {
+        "x": 0,
+        "y": 0
+      },
+      "direction": {
+        "x": "NONE",
+        "y": "NONE"
+      },
+      "sync": "tacz:tac_kill_amount_overlay"
     }
   },
   "resource": {

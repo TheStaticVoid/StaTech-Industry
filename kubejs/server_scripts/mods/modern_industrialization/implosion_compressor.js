@@ -40,20 +40,34 @@ ServerEvents.recipes((event) => {
         [
             { amount: 2, item: mi('acrylonitrile_butadiene_styrene_dust') },
             { amount: 1, item: mc('red_dye') },
+            { amount: 1, item: mi('industrial_tnt') },
         ],
-        [{ amount: 1, item: kj('abs_building_brick') }]
+        [{ amount: 8, item: kj('abs_building_brick') }]
     );
 
     // -- UU MATTER -- //
     implosionCompressor(
         event,
         st('uu_matter'),
-        1,
+        32,
         10,
         [
-            { amount: 64, item: kj('scrap') },
+            { amount: 24, item: kj('scrap') },
             { amount: 1, item: mi('industrial_tnt') },
         ],
         [{ amount: 1, item: kj('uu_matter') }]
+    );
+
+    // -- COMMON COIN FROM UU MATTER -- //
+    implosionCompressor(
+        event,
+        st('common_coin_from_uu_matter_item'),
+        64,
+        10,
+        [
+            { amount: 1, item: kj('uu_matter') },
+            { amount: 1, item: mi('industrial_tnt') },
+        ],
+        [{ amount: 1, item: kj('coin_common') }]
     );
 });

@@ -21,6 +21,7 @@ jobs:
     outputs:
       project_version: ${{ steps.check.outputs.project_version }}
       project_name: ${{ steps.check.outputs.project_name }}
+      project_release_version: ${{ steps.check.outputs.project_release_version }}
       project_file_name: ${{ steps.check.outputs.project_name }}-${{ steps.check.outputs.project_version }}
       project_full_name: ${{ steps.check.outputs.project_name }} ${{ steps.check.outputs.project_version }}
       mc_version: ${{ steps.check.outputs.minecraft_version }}
@@ -179,6 +180,7 @@ jobs:
           echo "project_version=build_#${{ github.run_number }}" >> $GITHUB_OUTPUT
 
           echo "project_name=${{ steps.pakku_info.outputs.name }}" >> $GITHUB_OUTPUT
+          echo "project_release_version=${{ steps.pakku_info.outputs.version }}" >> $GITHUB_OUTPUT
           echo "release_type=${{ steps.pakku_info.outputs.release_type }}" >> $GITHUB_OUTPUT
           echo "make_release=false" >> $GITHUB_OUTPUT
           echo "make_pr=false" >> $GITHUB_OUTPUT
@@ -223,13 +225,55 @@ jobs:
               )
             )' .pakku/prism-overrides/mmc-pack.json > temp.json
           mv temp.json .pakku/prism-overrides/mmc-pack.json
-
-      - name: Commit changes (if any)
+      
+      - name: Update forge-auto-install.txt
+        id: update-server-neo-version
+        uses: richardrigutins/replace-in-files@v2
+        with:
+          files: '.pakku/server-overrides/forge-auto-install.txt'
+          search-text: 'loaderVersion=**.*.***'
+          replacement-text: 'loaderVersion=${{ needs.info.outputs.loader_version }}\n'
+        
+      - name: Commit If Changed
         run: |
           if ! git diff --quiet .pakku/prism-overrides/mmc-pack.json; then
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add .pakku/prism-overrides/mmc-pack.json
-            git commit -m "Updated mmc-pack.json to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }}"
+            git add .pakku/server-overrides/forge-auto-install.txt
+            git commit -m "Updated mmc-pack.json and forge-auto-install.txt to Minecraft ${{ needs.info.outputs.mc_version }} on ${{ needs.info.outputs.loader_type }} ${{ needs.info.outputs.loader_version }}"
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
+
+  update-bcc-config:
+      name: Update BetterCompatibilityChecker Config
+      needs: [info]
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v5.0.0
+          with:
+            token: ${{ secrets.GITHUB_TOKEN }}
+            fetch-depth: 0
+
+        - name: Update bcc-common.toml
+          uses: cssnr/toml-action@v1
+          with:
+            file: 'config/bcc-common.toml'
+            path: 'general.modpackVersion'
+            value: ${{ needs.info.outputs.project_release_version }}
+            write: true
+
+        - name: Cat File
+          run: |
+            cat "config/bcc-common.toml"
+
+        - name: Commit If Changed
+          run: |
+            if ! git diff --quiet pakku.json; then
+              git config --local user.email "action@github.com"
+              git config --local user.name "GitHub Action"
+              git add config/bcc-common.toml
+              git commit -m "Updated BCC pack version to ${{ needs.info.outputs.project_release_version }}"
+              git push origin HEAD:${{ github.head_ref || github.ref_name }}
+            fi

@@ -2,8 +2,12 @@
     "feature": "modern_industrialization:deepslate_ore_generator_sapphire",
     "placement": [
         {
+            "type": "minecraft:rarity_filter",
+            "chance": 2
+        },
+        {
             "type": "minecraft:count",
-            "count": 3
+            "count": 1
         },
         {
             "type": "minecraft:in_square"

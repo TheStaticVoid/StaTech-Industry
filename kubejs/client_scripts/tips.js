@@ -136,11 +136,11 @@ const tips = [
         tiptext:
             "Artifacts have higher chances to spawn in specific locations. As such, it's a good idea to loot a variety of structures to find them.",
     },
-    {
-        id: 'silver_clean_energy',
-        tiptext:
-            'You can obtain Raw Silver by randomly breaking pots and vases underground to make Solar Boilers before burning any fuel.',
-    },
+    // {
+    //     id: 'silver_clean_energy',
+    //     tiptext:
+    //         'You can obtain Raw Silver by randomly breaking pots and vases underground to make Solar Boilers before burning any fuel.',
+    // },
     {
         id: 'waystones_in_wilderness',
         tiptext:
@@ -214,7 +214,7 @@ const tips = [
     {
         id: 'flawless',
         tiptext:
-            'Flawless Budding Certus Quartz can be moved using a Spectrum enchentment.',
+            'Flawless Budding Certus Quartz can be moved using a Spectrum enchantment.',
     },
     {
         id: 'resin',
@@ -281,7 +281,7 @@ const tips = [
     },
     {
         id: 'cog_blocks',
-        tiptext: 'Cog Blocks allow you to transmit redstone in a full block.',
+        tiptext: 'Cog blocks allow you to transmit redstone in a full block.',
     },
     {
         id: 'spectrum_ruin',
@@ -353,6 +353,20 @@ const tips = [
     {
         id: 'added_herobrine',
         tiptext: 'Jon Bartman may be Herobrine in a mask...',
+    },
+    {
+        id: 'removed_jon_bartman',
+        tiptext: 'We removed Jon Bartman this update. Check the changelog.',
+    },
+    {
+        id: 'little_big_redstone',
+        tiptext:
+            'The Little Big Redstone mod is a powerful way of doing complex logic in one block. It is useful for things like Steam Boiler On/Off Logic™.',
+    },
+    {
+        id: 'guns',
+        tiptext:
+            'Guns from TACZ are an effective way to defend your factory. They are also fun!',
     },
 ];
 

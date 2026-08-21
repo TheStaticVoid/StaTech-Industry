@@ -124,7 +124,7 @@ ServerEvents.recipes((event) => {
     blastFurnace(
         event,
         st('desh_ingot'),
-        16,
+        32,
         600,
         [{ amount: 1, item: mi('desh_dust') }],
         [{ amount: 1, item: mi('desh_hot_ingot') }]
@@ -134,7 +134,7 @@ ServerEvents.recipes((event) => {
     blastFurnace(
         event,
         st('ostrum_ingot'),
-        24,
+        64,
         600,
         [{ amount: 1, item: mi('ostrum_dust') }],
         [{ amount: 1, item: mi('ostrum_hot_ingot') }]
@@ -144,7 +144,7 @@ ServerEvents.recipes((event) => {
     blastFurnace(
         event,
         st('calorite_ingot'),
-        32,
+        192,
         600,
         [{ amount: 1, item: mi('calorite_dust') }],
         [{ amount: 1, item: mi('calorite_hot_ingot') }]
@@ -235,5 +235,31 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mi('lithium_fluoride_dust') }],
         null,
         [{ amount: 1000, fluid: mi('boron_trifluoride') }]
+    );
+
+    // -- MOLTEN GOLD -- //
+    blastFurnace(
+        event,
+        st('molten_gold'),
+        32,
+        200,
+        [{ amount: 1, item: mc('gold_ingot') }],
+        null,
+        null,
+        [{ amount: 1000, fluid: mi('molten_gold') }]
+    );
+
+    // -- HOT NETHERITE INGOT -- //
+    blastFurnace(
+        event,
+        st('hot_netherite_ingot'),
+        32,
+        600,
+        [
+            { amount: 4, item: mc('netherite_scrap') },
+            { amount: 16, item: mi('silicon_dust') },
+        ],
+        [{ amount: 1, item: mi('netherite_hot_ingot') }],
+        [{ amount: 4000, fluid: mi('molten_gold') }]
     );
 });

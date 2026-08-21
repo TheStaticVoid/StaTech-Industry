@@ -81,7 +81,7 @@ ServerEvents.recipes((event) => {
         200,
         [{ amount: 1, item: mc('quartz') }],
         [{ amount: 1, item: cr('polished_rose_quartz') }],
-        [{ amount: 500, fluid: mi('molten_redstone') }]
+        [{ amount: 450, fluid: mi('molten_redstone') }]
     );
 
     // -- EYE OF ENDER -- //
@@ -351,5 +351,16 @@ ServerEvents.recipes((event) => {
         null,
         [{ amount: 6000, fluid: mi('hydrogen') }],
         [{ amount: 1000, fluid: mi('propene') }]
+    );
+
+    // -- EXTREMELY P-DOPED SILICON PLATE -- //
+    chemicalReactor(
+        event,
+        st('extremely_p_doped_silicon_plate'),
+        16,
+        400,
+        [{ amount: 1, item: mi('silicon_p_doped_plate') }],
+        [{ amount: 1, item: kj('silicon_extremely_p_doped_plate') }],
+        [{ amount: 50, fluid: mi('diborane') }]
     );
 });

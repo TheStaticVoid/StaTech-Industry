@@ -16,6 +16,11 @@ ServerEvents.recipes((event) => {
         mi('compat/ae2/printed_logic_processor'),
         mi('compat/ae2/printed_silicon'),
         mi('compat/ae2/printed_silicon_from_ingot'),
+        ei('tool/nano_suit_helmet_quantum_upgrade'),
+        ei('tool/nano_suit_chestplate_quantum_upgrade'),
+        ei('tool/nano_suit_leggings_quantum_upgrade'),
+        ei('tool/nano_suit_boots_quantum_upgrade'),
+        ei('tool/nano_saber_quantum_upgrade')
     ];
     REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
@@ -275,5 +280,144 @@ ServerEvents.recipes((event) => {
         200,
         [{ amount: 9, item: cr('brass_nugget') }],
         [{ amount: 1, item: cr('brass_ingot') }]
+    );
+
+    // ---------------------- //
+    // -- BUFFED BATTERIES -- //
+    // ---------------------- //
+
+    // -- REDSTONE BATTERY -- //
+    packer(
+        event,
+        st('batteries/redstone'),
+        8,
+        200,
+        [
+            { amount: 2, item: kj('battery_casing') },
+            { amount: 2, item: mc('redstone') },
+            { amount: 2, item: mi('tin_cable') },
+        ],
+        [{ amount: 2, item: mi('redstone_battery') }]
+    );
+
+    // -- SILICON BATTERY -- //
+    packer(
+        event,
+        st('batteries/silicon'),
+        8,
+        200,
+        [
+            { amount: 2, item: kj('battery_casing') },
+            { amount: 2, item: mi('silicon_dust') },
+            { amount: 2, item: mi('electrum_cable') },
+        ],
+        [{ amount: 2, item: mi('silicon_battery') }]
+    );
+
+    // -- SODIUM BATTERY -- //
+    packer(
+        event,
+        st('batteries/sodium'),
+        16,
+        200,
+        [
+            { amount: 2, item: kj('battery_casing') },
+            { amount: 2, item: mi('sodium_dust') },
+            { amount: 2, item: mi('aluminum_cable') },
+        ],
+        [{ amount: 2, item: mi('sodium_battery') }]
+    );
+
+    // -- CADMIUM BATTERY -- //
+    packer(
+        event,
+        st('batteries/cadmium'),
+        32,
+        200,
+        [
+            { amount: 2, item: kj('battery_casing') },
+            { amount: 2, item: mi('cadmium_dust') },
+            { amount: 2, item: mi('annealed_copper_cable') },
+        ],
+        [{ amount: 2, item: mi('cadmium_battery') }]
+    );
+
+    // -- PLUTONIUM BATTERY -- //
+    packer(
+        event,
+        st('batteries/plutonium'),
+        64,
+        200,
+        [
+            { amount: 2, item: kj('battery_casing') },
+            { amount: 2, item: mi('plutonium_dust') },
+            { amount: 2, item: mi('superconductor_cable') },
+        ],
+        [{ amount: 2, item: mi('plutonium_battery') }]
+    );
+
+    // -- QUANTUM NANO HELMET -- //
+    packer(
+        event,
+        st('quantum_nano/helmet'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: ei('nano_helmet') },
+            { amount: 1, item: mi('quantum_helmet') }
+        ],
+        [{ amount: 1, item: ei('nano_quantum_helmet')}]
+    );
+
+    // -- QUANTUM NANO CHESTPLATE -- //
+    packer(
+        event,
+        st('quantum_nano/chestplate'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: ei('nano_gravichestplate') },
+            { amount: 1, item: mi('quantum_chestplate') }
+        ],
+        [{ amount: 1, item: ei('nano_quantum_chestplate')}]
+    );
+
+    // -- QUANTUM NANO LEGGINGS -- //
+    packer(
+        event,
+        st('quantum_nano/leggings'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: ei('nano_leggings') },
+            { amount: 1, item: mi('quantum_leggings') }
+        ],
+        [{ amount: 1, item: ei('nano_quantum_leggings')}]
+    );
+
+    // -- QUANTUM NANO BOOTS -- //
+    packer(
+        event,
+        st('quantum_nano/boots'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: ei('nano_boots') },
+            { amount: 1, item: mi('quantum_boots') }
+        ],
+        [{ amount: 1, item: ei('nano_quantum_boots')}]
+    );
+
+    // -- QUANTUM NANO SABER -- //
+    packer(
+        event,
+        st('quantum_nano/saber'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: ei('nano_saber') },
+            { amount: 1, item: mi('quantum_sword') }
+        ],
+        [{ amount: 1, item: ei('nano_quantum_saber')}]
     );
 });

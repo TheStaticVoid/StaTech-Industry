@@ -3,9 +3,9 @@
 // STATECH INDUSTRY
 // -----------------------------------------
 
-StartupEvents.registry('item', (event) => {
-    event.create('empty_can').displayName('Empty Can');
+const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer');
 
+StartupEvents.registry('item', (event) => {
     event
         .create('concrete_bar')
         .displayName('Yummy Concrete Bar')
@@ -118,6 +118,23 @@ StartupEvents.registry('item', (event) => {
         .food((f) => {
             f.nutrition(6).saturation(0.5);
         })
+        .finishUsing(
+            /** @param {$ServerPlayer} entity*/
+            (itemstack, level, entity) => {
+                level.explode(
+                    null,
+                    null,
+                    null,
+                    [entity.getX(), entity.getY(), entity.getZ()],
+                    3,
+                    false,
+                    'none'
+                );
+                itemstack.consume(1, entity);
+                entity.addItem(Item.of(ei('tin_can')));
+                return itemstack;
+            }
+        )
         .useAnimation('drink');
 
     event
@@ -151,5 +168,15 @@ StartupEvents.registry('item', (event) => {
         .tag('c:foods')
         .food((f) => {
             f.nutrition(8).saturation(0.6);
+        });
+
+    event
+        .create('fruity_pebbles')
+        .displayName('Fruity Pebbles')
+        .tag('c:foods')
+        .tooltip('§bTasty!')
+        .maxStackSize(1)
+        .food((f) => {
+            f.nutrition(8).saturation(0.5);
         });
 });

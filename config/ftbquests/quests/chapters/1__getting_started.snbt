@@ -45,7 +45,7 @@
 				item: { count: 1, id: "modern_industrialization:forge_hammer" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.0d
 			y: 0.0d
 		}
 		{
@@ -107,7 +107,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:cobblestones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: 0.0d
 		}
 		{
@@ -140,7 +140,7 @@
 				item: { count: 1, id: "modern_industrialization:iron_large_plate" }
 				type: "item"
 			}]
-			x: 10.0d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -382,7 +382,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["339F676C828C790D"]
+			dependencies: ["35CA2712BC60C09E"]
 			id: "48D186B5AAECDD4E"
 			rewards: [
 				{
@@ -411,14 +411,11 @@
 				item: { count: 1, id: "bankstorage:bank_1" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 5.0d
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"48D186B5AAECDD4E"
-				"35CA2712BC60C09E"
-			]
+			dependencies: ["48D186B5AAECDD4E"]
 			id: "7CB40077EB4E575B"
 			rewards: [
 				{
@@ -448,17 +445,12 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1BD496A10E957F25"]
 			id: "69FC7941B3DAFDA5"
 			rewards: [
-				{
-					id: "4495CAA26BF2651E"
-					type: "xp"
-					xp: 10
-				}
 				{
 					id: "7264F9A44E98CA23"
 					item: {
@@ -518,8 +510,8 @@
 				item: { count: 1, id: "tankstorage:tank_1" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["568452070C18EBE2"]
@@ -551,11 +543,14 @@
 				item: { count: 1, id: "tankstorage:tank_dock" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 3.5d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["35CA2712BC60C09E"]
+			icon: {
+				id: "modern_industrialization:iron_hammer"
+			}
 			id: "7A29CB04322D488B"
 			rewards: [
 				{
@@ -584,7 +579,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(modern_industrialization:forge_hammer_tools)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -627,13 +622,169 @@
 				}
 				{
 					count: 8L
-					id: "2279823CE6ED8B62"
+					id: "0689831EE03C1D8F"
 					item: { count: 1, id: "minecraft:raw_copper" }
 					type: "item"
 				}
+				{
+					count: 8L
+					id: "2570759CCAB39BC4"
+					item: { count: 1, id: "minecraft:coal" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "304400193E5C0D3A"
+					item: { count: 1, id: "modern_industrialization:lignite_coal" }
+					optional_task: true
+					type: "item"
+				}
 			]
-			x: 5.0d
+			x: 5.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["339F676C828C790D"]
+			icon: {
+				id: "kubejs:copper_pickaxe"
+			}
+			id: "5114DECB3214A07C"
+			rewards: [
+				{
+					id: "3AAB351C168DB8DF"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "6AED36D0C9C6C209"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1D6E74D0978355F4"
+					table_id: 2474147679282294712L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.25d
+			tasks: [
+				{
+					id: "00E3E2F15F8D2A67"
+					item: { count: 1, id: "kubejs:copper_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "5EF5D8B98F0554DB"
+					item: { count: 1, id: "kubejs:copper_axe" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "70006679A41702F2"
+					item: { count: 1, id: "kubejs:copper_sword" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "73200BE91A02495F"
+					item: { count: 1, id: "kubejs:copper_shovel" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["35CA2712BC60C09E"]
+			icon: {
+				id: "minecraft:map"
+			}
+			id: "0715024FA6D67EB3"
+			rewards: [{
+				id: "24E611280C88535A"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "104C071A4BB6DD9B"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A29CB04322D488B"]
+			id: "489042A0D0AF38D3"
+			rewards: [
+				{
+					id: "2CD3248398D7DDEE"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "32CA37F34C1E19BC"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0587B44FDB075B8D"
+					table_id: 2474147679282294712L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "4E2C522E26CA4978"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:hammer/regular)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["35CA2712BC60C09E"]
+			id: "1C9F96C925557637"
+			rewards: [
+				{
+					id: "0A4C615591BDA3AE"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "22BB54DB1F446CC7"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F9C5C814246C7AC"
+					table_id: 2474147679282294712L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "1B9AE8D7035F551B"
+				item: { count: 1, id: "stcm:prospector_pick" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
 		}
 	]
 }

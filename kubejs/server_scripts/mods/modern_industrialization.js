@@ -192,7 +192,7 @@ ServerEvents.recipes((event) => {
         .shaped(mi('steam_mining_drill'), ['FDD', 'PHD', 'BPF'], {
             F: mc('furnace'),
             D: mc('diamond'),
-            P: mi('steel_large_plate'),
+            P: mi('iron_large_plate'),
             H: mi('copper_drill_head'),
             B: mc('bucket'),
         })
@@ -320,18 +320,6 @@ ServerEvents.recipes((event) => {
         })
         .id(st('enderium_machine_casing'));
 
-    /*     // -- ENDERIUM MACHINE PIPE CASING -- //
-    event.shaped(mi('enderium_machine_casing_pipe'), [
-        'C C',
-        'CMC',
-        'C C'
-    ],
-    {
-        C: mi('enderium_curved_plate'),
-        M: mi('enderium_machine_casing')
-    })
-    .id(st('enderium_machine_casing_pipe')); */
-
     // -- OSTRUM MACHINE CASING -- //
     event
         .shaped(mi('ostrum_machine_casing'), ['PPP', 'PGP', 'PPP'], {
@@ -403,7 +391,7 @@ ServerEvents.recipes((event) => {
         .shapeless(mi('creative_barrel'), mi('creative_barrel'))
         .id(st('clear_items_from_creative_barrel'));
 
-    // -- Gravichestplate -- //
+    // -- GRAVICHESTPLATE -- //
     event
         .shaped(mi('gravichestplate'), ['PUP', 'PJP', 'CLC'], {
             P: '#c:plates/diamond',
@@ -457,6 +445,36 @@ ServerEvents.recipes((event) => {
             G: mi('hv_steam_turbine'),
         })
         .id(st('large_steam_turbine'));
+
+    // -- RECYCLER -- //
+    event
+        .shaped(mi('recycler'), ['EPE', 'RHR', 'EPE'], {
+            P: mi('large_pump'),
+            R: mi('aluminum_rotor'),
+            H: mi('advanced_machine_hull'),
+            E: mi('electronic_circuit'),
+        })
+        .id(st('recycler'));
+
+    // -- MATTER FABRICATOR -- //
+    event
+        .shaped(mi('matter_fabricator'), ['SDS', 'MHM', 'SDS'], {
+            M: mi('advanced_motor'),
+            S: kj('scrap'),
+            H: mi('turbo_machine_hull'),
+            D: mi('digital_circuit'),
+        })
+        .id(st('matter_fabricator'));
+
+    // -- WEAPONS FACTORY -- //
+    event
+        .shaped(mi('weapons_factory'), ['SCS', 'MHM', 'SCS'], {
+            M: mi('large_motor'),
+            S: mi('heatproof_machine_casing'),
+            H: mi('advanced_machine_hull'),
+            C: mi('cupronickel_coil'),
+        })
+        .id(st('weapons_factory'));
 });
 
 ServerEvents.tags('item', (event) => {

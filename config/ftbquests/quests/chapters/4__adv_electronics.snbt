@@ -107,18 +107,24 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "4AF62BF9F748E005"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "18FC7235D93165E3"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "313A236768D509A5"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -282,7 +288,6 @@
 					xp: 40
 				}
 				{
-					exclude_from_claim_all: true
 					id: "61ADF94D0069D6A2"
 					table_id: 379087119399425756L
 					type: "random"
@@ -314,18 +319,24 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "605E3482C4127DE0"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "1C29ABD5A1F5E652"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "06B95AF21897C47B"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -362,17 +373,34 @@
 				item: { count: 1, id: "modern_industrialization:aluminum_drill" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: -2.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["216B300DF319ED1A"]
 			id: "3EBBB99A3FC5C7F3"
-			rewards: [{
-				id: "03E5BF992444ABB1"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "19A31BDE4473C72D"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "03E5BF992444ABB1"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "14A1962B0CE6571E"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "351BB0A5DA27051A"
@@ -396,8 +424,8 @@
 				id: "27B1627F1682C4E1"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: -5.5d
+			x: -2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3EBBB99A3FC5C7F3"]
@@ -413,8 +441,8 @@
 				id: "75CEF70D8E9CFD8D"
 				type: "checkmark"
 			}]
-			x: 2.0d
-			y: -5.5d
+			x: -2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["3EBBB99A3FC5C7F3"]
@@ -514,36 +542,70 @@
 		{
 			dependencies: ["5556B0DC1C5779DD"]
 			id: "1636AAA1DD4ECC50"
-			rewards: [{
-				id: "0F699C1FE85AB487"
-				type: "xp"
-				xp: 10
-			}]
-			size: 2.0d
+			rewards: [
+				{
+					count: 3
+					id: "0676D973632088DB"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0F699C1FE85AB487"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F78AA5A6D7E85A9"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
+			size: 1.5d
 			tasks: [{
 				id: "26EF1EEEF30C26B6"
 				item: { count: 1, id: "modern_industrialization:sulfuric_acid_bucket" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -10.5d
+			x: -2.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["5556B0DC1C5779DD"]
 			id: "716069E7FC21AF70"
-			rewards: [{
-				id: "0284327343942E3C"
-				type: "xp"
-				xp: 10
-			}]
-			size: 2.0d
+			rewards: [
+				{
+					count: 3
+					id: "4447C8043D8A3027"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0284327343942E3C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F2234E58823EF91"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
+			size: 1.5d
 			tasks: [{
 				id: "1598BA16F9F74B94"
 				item: { count: 1, id: "modern_industrialization:diesel_bucket" }
 				type: "item"
 			}]
 			x: -2.5d
-			y: -10.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["5556B0DC1C5779DD"]
@@ -1429,18 +1491,24 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "54CE588FBD33A6CF"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0D6693504C8C86CE"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2D3AF43538899939"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1501,18 +1569,24 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "70B5D68C2F8990BD"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2E8B8F1991F96FBE"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "183054AF0E270597"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1522,11 +1596,22 @@
 		{
 			dependencies: ["6B122F5D5B245180"]
 			id: "2A5B2CD92B0C2B12"
-			rewards: [{
-				id: "68AEFB5268D47B55"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "7DA4288C05ADEBC8"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "68AEFB5268D47B55"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "2BF403044646E54C"
 				item: { count: 1, id: "modern_industrialization:steel_drill" }
@@ -1538,11 +1623,22 @@
 		{
 			dependencies: ["6B122F5D5B245180"]
 			id: "74C1D42994FAB98C"
-			rewards: [{
-				id: "0D543B952CF4FF20"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "459375A098D813C1"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0D543B952CF4FF20"
+					type: "xp"
+					xp: 10
+				}
+			]
 			tasks: [{
 				id: "49CF934265663770"
 				item: { count: 1, id: "modern_industrialization:gold_drill" }
@@ -1593,18 +1689,24 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "60F319306DFC6303"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "27A42D2D4C49C7DD"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6E9A40DA4118BCAC"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1642,7 +1744,7 @@
 				item: { count: 1, id: "kubejs:concrete_bar" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 11.5d
 			y: 5.5d
 		}
 		{
@@ -1699,28 +1801,38 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "13EAC67F33917489"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "1465848C282046A1"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2A5B148EF77E20F7"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6AAE065090FBF8C8"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "31B5BECCA8FAF040"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1865,6 +1977,9 @@
 		}
 		{
 			dependencies: ["77CDEFA4CBDBEBBF"]
+			icon: {
+				id: "modern_industrialization:chlorine_bucket"
+			}
 			id: "69651A2E1A859FAC"
 			rewards: [{
 				id: "2FD9DE4F09160AE2"
@@ -1872,16 +1987,26 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "1635DB50CC10020F"
-				item: { count: 1, id: "modern_industrialization:chlorine_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1635DB50CC10020F"
+					item: { count: 1, id: "modern_industrialization:chlorine_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D5C086F875DCD77"
+					type: "checkmark"
+				}
+			]
 			x: 15.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["69651A2E1A859FAC"]
+			icon: {
+				id: "modern_industrialization:hydrochloric_acid_bucket"
+			}
 			id: "6E3D5A646FD3CD7A"
 			rewards: [{
 				id: "262557040C4CE6A6"
@@ -1889,11 +2014,18 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "18F76A87BBAC0FAA"
-				item: { count: 1, id: "modern_industrialization:hydrochloric_acid_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "18F76A87BBAC0FAA"
+					item: { count: 1, id: "modern_industrialization:hydrochloric_acid_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "22539EB97302793F"
+					type: "checkmark"
+				}
+			]
 			x: 18.0d
 			y: -4.0d
 		}
@@ -1903,11 +2035,22 @@
 				id: "modern_industrialization:chromium_crushed_dust"
 			}
 			id: "2DC8BCFBC2032D9E"
-			rewards: [{
-				id: "79EF5D0A466D7FA4"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "6386887380AE2D81"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "79EF5D0A466D7FA4"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			tasks: [
 				{
@@ -1927,11 +2070,22 @@
 		{
 			dependencies: ["427144C8EF7A57E5"]
 			id: "22A25288F315601E"
-			rewards: [{
-				id: "7C43CBC43CD887FC"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "6856EE3196D46EE0"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "7C43CBC43CD887FC"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "047CC03C22C3DDA0"
@@ -1946,6 +2100,9 @@
 				"6E3D5A646FD3CD7A"
 				"2DC8BCFBC2032D9E"
 			]
+			icon: {
+				id: "modern_industrialization:chromium_hydrochloric_solution_bucket"
+			}
 			id: "0949D2D8BD487E87"
 			rewards: [{
 				id: "6D869FFED91898D3"
@@ -1953,16 +2110,26 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "476EA5E794A8CBF2"
-				item: { count: 1, id: "modern_industrialization:chromium_hydrochloric_solution_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "476EA5E794A8CBF2"
+					item: { count: 1, id: "modern_industrialization:chromium_hydrochloric_solution_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "39C3A0A7A2781C20"
+					type: "checkmark"
+				}
+			]
 			x: 18.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["22A25288F315601E"]
+			icon: {
+				id: "modern_industrialization:manganese_sulfuric_solution_bucket"
+			}
 			id: "525F1B7E684F1B40"
 			rewards: [{
 				id: "7F992380F7395EE1"
@@ -1970,22 +2137,40 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "280CC058F661BE50"
-				item: { count: 1, id: "modern_industrialization:manganese_sulfuric_solution_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "280CC058F661BE50"
+					item: { count: 1, id: "modern_industrialization:manganese_sulfuric_solution_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "75034EC6812B6626"
+					type: "checkmark"
+				}
+			]
 			x: 18.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["0949D2D8BD487E87"]
 			id: "3A8FFB7736EB8D34"
-			rewards: [{
-				id: "347E572F67C337D2"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "77CA4DCB4B0666CD"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "347E572F67C337D2"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "53B44F1BFF591DEB"
@@ -1998,11 +2183,22 @@
 		{
 			dependencies: ["525F1B7E684F1B40"]
 			id: "13B6434C8DC787E5"
-			rewards: [{
-				id: "32BAD080A9A86060"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "32220B997420D128"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "32BAD080A9A86060"
+					type: "xp"
+					xp: 10
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "1404EAA9759D3A50"
@@ -2067,6 +2263,9 @@
 		}
 		{
 			dependencies: ["701BD496880B03CD"]
+			icon: {
+				id: "modern_industrialization:fluorine_bucket"
+			}
 			id: "0828469D61354400"
 			rewards: [{
 				id: "18578B65D54E832D"
@@ -2074,16 +2273,26 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "2618B5F7EF665D52"
-				item: { count: 1, id: "modern_industrialization:fluorine_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2618B5F7EF665D52"
+					item: { count: 1, id: "modern_industrialization:fluorine_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "17315B61C283C1F7"
+					type: "checkmark"
+				}
+			]
 			x: 23.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["701BD496880B03CD"]
+			icon: {
+				id: "modern_industrialization:chloroform_bucket"
+			}
 			id: "21534F69896E0C20"
 			rewards: [{
 				id: "3760D0BA62B69B04"
@@ -2091,16 +2300,26 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "5B9BA564F41DE664"
-				item: { count: 1, id: "modern_industrialization:chloroform_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5B9BA564F41DE664"
+					item: { count: 1, id: "modern_industrialization:chloroform_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6845EF5063DB6AB5"
+					type: "checkmark"
+				}
+			]
 			x: 25.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["0828469D61354400"]
+			icon: {
+				id: "modern_industrialization:hydrofluoric_acid_bucket"
+			}
 			id: "54BA6F783B61FE61"
 			rewards: [{
 				id: "225DD305F0BDF8C1"
@@ -2108,11 +2327,18 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "4015BB5FC9FCEABE"
-				item: { count: 1, id: "modern_industrialization:hydrofluoric_acid_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4015BB5FC9FCEABE"
+					item: { count: 1, id: "modern_industrialization:hydrofluoric_acid_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "644B548B265B393E"
+					type: "checkmark"
+				}
+			]
 			x: 23.0d
 			y: -10.0d
 		}
@@ -2121,6 +2347,9 @@
 				"54BA6F783B61FE61"
 				"21534F69896E0C20"
 			]
+			icon: {
+				id: "modern_industrialization:tetrafluoroethylene_bucket"
+			}
 			id: "59C5CC514CF9494D"
 			rewards: [{
 				id: "50592ACF49F7BCBC"
@@ -2128,11 +2357,18 @@
 				xp: 10
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "535D3655939BD68D"
-				item: { count: 1, id: "modern_industrialization:tetrafluoroethylene_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "535D3655939BD68D"
+					item: { count: 1, id: "modern_industrialization:tetrafluoroethylene_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6BD8EF79CC1DCCA9"
+					type: "checkmark"
+				}
+			]
 			x: 25.0d
 			y: -10.0d
 		}
@@ -2278,19 +2514,38 @@
 		}
 		{
 			dependencies: ["533C4266A8D1D029"]
+			icon: {
+				id: "modern_industrialization:stainless_steel_hot_ingot"
+			}
 			id: "52F9AD700340E96F"
-			size: 2.0d
-			tasks: [{
-				id: "0831B94342CAF0E7"
-				item: { count: 1, id: "modern_industrialization:stainless_steel_hot_ingot" }
-				type: "item"
+			rewards: [{
+				id: "221BED7DF6AE351B"
+				type: "xp"
+				xp: 25
 			}]
+			size: 2.0d
+			tasks: [
+				{
+					id: "0831B94342CAF0E7"
+					item: { count: 1, id: "modern_industrialization:stainless_steel_hot_ingot" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5FF5EFCF894FA685"
+					type: "checkmark"
+				}
+			]
 			x: 27.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["52F9AD700340E96F"]
+			dependencies: [
+				"52F9AD700340E96F"
+				"533C4266A8D1D029"
+			]
 			id: "1AA4844D1D10B834"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					count: 7
@@ -2402,6 +2657,9 @@
 		}
 		{
 			dependencies: ["473A7E0E59815A89"]
+			icon: {
+				id: "modern_industrialization:argon_bucket"
+			}
 			id: "3FB5440AC80A5A4F"
 			rewards: [
 				{
@@ -2430,17 +2688,24 @@
 				{
 					id: "1B467522D6E60A9D"
 					item: { count: 1, id: "modern_industrialization:oxygen_bucket" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "29A6B1D2D040ABE8"
 					item: { count: 1, id: "modern_industrialization:nitrogen_bucket" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0AA6E53CEAA9BE12"
 					item: { count: 1, id: "modern_industrialization:argon_bucket" }
+					optional_task: true
 					type: "item"
+				}
+				{
+					id: "205076214D1DCE05"
+					type: "checkmark"
 				}
 			]
 			x: 30.0d
@@ -2452,6 +2717,9 @@
 				"75EB9B7B85F791B9"
 			]
 			dependency_requirement: "one_completed"
+			icon: {
+				id: "modern_industrialization:annealed_copper_hot_ingot"
+			}
 			id: "5F7779B00391063B"
 			rewards: [{
 				id: "4D9C47BDA29DD6B8"
@@ -2459,16 +2727,26 @@
 				xp: 25
 			}]
 			size: 2.0d
-			tasks: [{
-				id: "1703FF205E972A81"
-				item: { count: 1, id: "modern_industrialization:annealed_copper_hot_ingot" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1703FF205E972A81"
+					item: { count: 1, id: "modern_industrialization:annealed_copper_hot_ingot" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7E6A8618213C07BC"
+					type: "checkmark"
+				}
+			]
 			x: 30.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["3FB5440AC80A5A4F"]
+			icon: {
+				id: "modern_industrialization:cryofluid_bucket"
+			}
 			id: "6EBE89C8B00F9AF9"
 			rewards: [
 				{
@@ -2502,8 +2780,12 @@
 			y: 5.5d
 		}
 		{
-			dependencies: ["5F7779B00391063B"]
+			dependencies: [
+				"5F7779B00391063B"
+				"75EB9B7B85F791B9"
+			]
 			id: "37D9B9D06AD67FDD"
+			min_required_dependencies: 1
 			rewards: [
 				{
 					count: 7
@@ -2950,11 +3232,6 @@
 			id: "61EA3C1E66FD5ADF"
 			rewards: [
 				{
-					id: "786F9E8FD4B737C6"
-					type: "xp"
-					xp: 10
-				}
-				{
 					count: 5
 					id: "32EC6EFB891536B5"
 					item: {
@@ -3218,11 +3495,28 @@
 		{
 			dependencies: ["427144C8EF7A57E5"]
 			id: "2E7BA735872B4B94"
-			rewards: [{
-				id: "664C7993717CEBB9"
-				type: "xp"
-				xp: 10
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "46E9D7C4AC83A4B0"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "664C7993717CEBB9"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "504A7C05B78C91BC"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			tasks: [{
 				id: "589706C973B83DD2"
@@ -3343,18 +3637,24 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "20E4C085DE2834C9"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6F352A9FCCD9C4BD"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "234DDC2D5DC31273"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -3495,23 +3795,31 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "40BC4C6BAF3BB6C5"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "5CB7170541C955B4"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2E6F90D6FA0A7002"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "3F98D27C8E0BA978"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -3559,6 +3867,9 @@
 		}
 		{
 			dependencies: ["216B300DF319ED1A"]
+			icon: {
+				id: "modern_industrialization:salt_water_bucket"
+			}
 			id: "4C36957653876C0B"
 			rewards: [{
 				id: "618E90DADD8A5363"
@@ -3579,7 +3890,7 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
+			x: 2.5d
 			y: -3.0d
 		}
 		{
@@ -3789,6 +4100,9 @@
 				"75EB9B7B85F791B9"
 				"0A451970D23EF1FB"
 			]
+			icon: {
+				id: "modern_industrialization:molten_enderium_bucket"
+			}
 			id: "487CF916A0FF784D"
 			rewards: [
 				{
@@ -3812,11 +4126,18 @@
 					type: "random"
 				}
 			]
-			tasks: [{
-				id: "741370982E841664"
-				item: { count: 1, id: "modern_industrialization:molten_enderium_bucket" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "741370982E841664"
+					item: { count: 1, id: "modern_industrialization:molten_enderium_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6174C0B8B3CA7D73"
+					type: "checkmark"
+				}
+			]
 			x: 21.5d
 			y: 8.0d
 		}
@@ -3911,17 +4232,27 @@
 				"55425F53F0716479"
 				"404C230FBF97A648"
 			]
+			icon: {
+				id: "modern_industrialization:kanthal_hot_ingot"
+			}
 			id: "7A958D06D18685F0"
 			rewards: [{
 				id: "57DFD8A7016ACC79"
 				type: "xp"
 				xp: 25
 			}]
-			tasks: [{
-				id: "6239BD9E3CD7F2BA"
-				item: { count: 1, id: "modern_industrialization:kanthal_hot_ingot" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6239BD9E3CD7F2BA"
+					item: { count: 1, id: "modern_industrialization:kanthal_hot_ingot" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E966709B2AA219A"
+					type: "checkmark"
+				}
+			]
 			x: 24.0d
 			y: 4.0d
 		}
@@ -4027,49 +4358,79 @@
 		}
 		{
 			dependencies: ["2A5B2CD92B0C2B12"]
+			icon: {
+				id: "modern_industrialization:kernite_dust"
+			}
 			id: "6512025C0A70B6EB"
 			rewards: [{
 				id: "4B01F36672201788"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "0B1A32D1FE7D48A4"
-				item: { count: 1, id: "modern_industrialization:kernite_dust" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0B1A32D1FE7D48A4"
+					item: { count: 1, id: "modern_industrialization:kernite_dust" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "28C8C241900CA267"
+					type: "checkmark"
+				}
+			]
 			x: 6.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["6512025C0A70B6EB"]
+			icon: {
+				id: "modern_industrialization:boron_trioxide_dust"
+			}
 			id: "641117E0F688F40A"
 			rewards: [{
 				id: "4B0A6FBFAE81692D"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "79AEBB3A0499FD8D"
-				item: { count: 1, id: "modern_industrialization:boron_trioxide_dust" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "79AEBB3A0499FD8D"
+					item: { count: 1, id: "modern_industrialization:boron_trioxide_dust" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7BE7236E4F7C1F2D"
+					type: "checkmark"
+				}
+			]
 			x: 5.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["641117E0F688F40A"]
+			icon: {
+				id: "kubejs:boron_quartz_blend"
+			}
 			id: "788B6EC0B441EEC8"
 			rewards: [{
 				id: "136AB44AD7ADB72E"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "27F11AD58BEB27BA"
-				item: { count: 1, id: "kubejs:boron_quartz_blend" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "27F11AD58BEB27BA"
+					item: { count: 1, id: "kubejs:boron_quartz_blend" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3A544D6C55C31BBF"
+					type: "checkmark"
+				}
+			]
 			x: 6.5d
 			y: -8.0d
 		}
@@ -4149,17 +4510,44 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "03D44CD9E74F3497"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
-			x: 6.75d
+			x: 6.5d
 			y: 5.25d
 		}
 		{
 			dependencies: ["788B6EC0B441EEC8"]
+			icon: {
+				id: "modern_industrialization:molten_borosilicate_glass_bucket"
+			}
 			id: "312052D981433E12"
+			rewards: [
+				{
+					count: 5
+					id: "0C587DCC1ABF593A"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "08574878D8AE301D"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2871020C3877A5CB"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
 			tasks: [{
 				id: "560687FFEE30F328"
 				item: { count: 1, id: "modern_industrialization:molten_borosilicate_glass_bucket" }
@@ -4257,27 +4645,35 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "23E94972F126119A"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "60A2890114181863"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "220375750110AF29"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "256017D09D478568"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
-			x: 9.25d
+			x: 9.5d
 			y: 5.25d
 		}
 		{
@@ -4285,7 +4681,7 @@
 			id: "5AD00F71DB16C98F"
 			rewards: [
 				{
-					count: 3
+					count: 5
 					id: "56518CEFBF8985DD"
 					item: {
 						count: 1
@@ -4311,8 +4707,8 @@
 				item: { count: 1, id: "yet_another_industrialization:cryogenic_precipitator" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.0d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["74A64C3ED35AE436"]
@@ -4374,28 +4770,407 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "79DD44BABD0CFA76"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0DBA42D932D77B00"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "376C0CF2BECA7215"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "5F9EF52316789DCF"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
 			x: 4.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["641117E0F688F40A"]
+			icon: {
+				id: "modern_industrialization:pentaborane_bucket"
+			}
+			id: "5F40ED455B249C29"
+			rewards: [{
+				id: "6E3B3455BB70ABE6"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "012E2EA7A45CCEFF"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5F40ED455B249C29"]
+			icon: {
+				id: "modern_industrialization:boron_trifluoride_bucket"
+			}
+			id: "44888B628FA1A31A"
+			rewards: [{
+				id: "5F328F5DE14F1614"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "324091962DC52BCA"
+					item: { count: 1, id: "modern_industrialization:boron_trifluoride_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5E415DE6CEF9D799"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -9.25d
+		}
+		{
+			dependencies: [
+				"44888B628FA1A31A"
+				"12788247344BA3F1"
+			]
+			icon: {
+				id: "modern_industrialization:diborane_bucket"
+			}
+			id: "57277F7FCCD4A983"
+			rewards: [{
+				id: "2B3D2EB79BC4D999"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0136E82EF2F9E12D"
+					item: { count: 1, id: "modern_industrialization:diborane_bucket" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "00BDE78FB59EA2DD"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4C36957653876C0B"]
+			icon: {
+				id: "modern_industrialization:lithium_hydride_dust"
+			}
+			id: "12788247344BA3F1"
+			rewards: [{
+				id: "311D871822D6CFFE"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "73950E387207D1F4"
+					item: { count: 1, id: "modern_industrialization:lithium_hydride_dust" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "478C84E88FC040D7"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["57277F7FCCD4A983"]
+			id: "46E61205DE5130E8"
+			rewards: [
+				{
+					count: 5
+					id: "434D07AE54573651"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "226B36A1C2B6E8E0"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7C11602F64389BBA"
+					table_id: 4745997815160102761L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "7E581D0285854353"
+				item: { count: 1, id: "modern_industrialization:pentaborane_bucket" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["57277F7FCCD4A983"]
+			icon: {
+				id: "modern_industrialization:lithium_tetrafluoroborate_dust"
+			}
+			id: "521FAF6490E47F52"
+			rewards: [{
+				id: "4A3E42E2B547D1EA"
+				type: "xp"
+				xp: 10
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "27BEA43D60D94BB6"
+				type: "checkmark"
+			}]
+			x: 5.75d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4C36957653876C0B"]
+			id: "1C68E96302EA0DBE"
+			rewards: [
+				{
+					count: 3
+					id: "68A22662750FFC56"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "78CAB1B78A1EEA5A"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "72A3380352A0A217"
+					table_id: 4745997815160102761L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				count: 2L
+				id: "7EDFA8505F4A2BFD"
+				item: { count: 1, id: "kubejs:battery_casing" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["57277F7FCCD4A983"]
+			id: "26C057394ED8B2D0"
+			rewards: [
+				{
+					count: 3
+					id: "6420D211145F3FE8"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "61732154792429FF"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "52345309C49250F5"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "1718386073D0364C"
+				item: { count: 1, id: "kubejs:silicon_extremely_p_doped_plate" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["1F46D51397CE34AC"]
+			icon: {
+				id: "modern_industrialization:weapons_factory"
+			}
+			id: "7D9968AB0012B623"
+			rewards: [
+				{
+					count: 5
+					id: "4B3DC75D9C590D6D"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "49EF53B2EF2675BE"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5AA078F528AA6C40"
+					table_id: 8811145634920634486L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2FC0714EA23DA463"
+					item: { count: 1, id: "modern_industrialization:weapons_factory" }
+					type: "item"
+				}
+				{
+					count: 40L
+					id: "6AE1EAE3F559E969"
+					item: { count: 1, id: "modern_industrialization:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "13D28D246625F64F"
+					item: { count: 1, id: "minecraft:tinted_glass" }
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "56931DF1A463FC96"
+					item: { count: 1, id: "modern_industrialization:steel_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6D13450DF1A917D1"
+					item: { count: 1, id: "modern_industrialization:cupronickel_coil" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7B618550EA837992"
+					item: { count: 1, id: "minecraft:obsidian" }
+					type: "item"
+				}
+				{
+					id: "7FB49A46CDDC3CC6"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4AA299CD854B04A8"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7471B655B55B5878"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "060F61F2D8EC5513"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["1AA4844D1D10B834"]
+			id: "29880D54EA068D80"
+			shape: "rsquare"
+			tasks: [{
+				id: "3AC00193C09F7E40"
+				item: { count: 1, id: "justhammers:destructor_core" }
+				type: "item"
+			}]
+			x: 32.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["404C230FBF97A648"]
+			id: "144FC8E2FEFC7FE9"
+			rewards: [
+				{
+					count: 3
+					id: "32254E24C9E436F0"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0192BF431311DAE8"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "136B62AA28A8412D"
+					table_id: 8811145634920634486L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "577C4074910F779E"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 5.5d
 		}
 	]
 }

@@ -1,0 +1,14 @@
+#The minimum amount of XP gained from opening Lootr chests.
+lootr_min_xp = 15
+#The maximum amount of XP gained from opening Lootr chests.
+lootr_max_xp = 20
+#Should nuke explosions do block damage?
+nuke_damage = true
+#The horizontal radius for the prospector to scan
+prospector_x_radius = 16
+#The vertical radius for the prospector to scan
+prospector_y_radius = 256
+#The minimum amount of connected blocks to be considered a deposit
+prospector_min_deposit_size = 32
+#The distance between ore samples of the same type that duplicate waypoint creation should be blocked in
+prospector_proximity = 16

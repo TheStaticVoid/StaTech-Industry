@@ -15,7 +15,7 @@ Those wanting to also automatically sync the modloader version should replace th
 Windows:
 
 ```cmd
-cmd /c "java -jar pakku.jar fetch && copy /Y "$INST_MC_DIR\.pakku\prism-overrides\mmc-pack.json" "$INST_DIR\mmc-pack.json"
+cmd /c java -jar pakku.jar fetch && copy /Y "$INST_MC_DIR\.pakku\prism-overrides\mmc-pack.json" "$INST_DIR\mmc-pack.json"
 ```
 
 Linux and MacOS
