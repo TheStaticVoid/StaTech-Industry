@@ -16,6 +16,11 @@ ServerEvents.recipes((event) => {
         mi('compat/ae2/printed_logic_processor'),
         mi('compat/ae2/printed_silicon'),
         mi('compat/ae2/printed_silicon_from_ingot'),
+        ei('tool/nano_suit_helmet_quantum_upgrade'),
+        ei('tool/nano_suit_chestplate_quantum_upgrade'),
+        ei('tool/nano_suit_leggings_quantum_upgrade'),
+        ei('tool/nano_suit_boots_quantum_upgrade'),
+        ei('tool/nano_saber_quantum_upgrade')
     ];
     REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
@@ -349,5 +354,70 @@ ServerEvents.recipes((event) => {
             { amount: 2, item: mi('superconductor_cable') },
         ],
         [{ amount: 2, item: mi('plutonium_battery') }]
+    );
+
+    // -- QUANTUM NANO HELMET -- //
+    packer(
+        event,
+        st('quantum/helmet'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: ei('nano_helmet') },
+            { amount: 1, item: mi('quantum_helmet') }
+        ],
+        [{ amount: 1, item: ei('nano_quantum_helmet')}]
+    );
+
+    // -- QUANTUM NANO CHESTPLATE -- //
+    packer(
+        event,
+        st('quantum/chestplate'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: ei('nano_gravichestplate') },
+            { amount: 1, item: mi('quantum_chestplate') }
+        ],
+        [{ amount: 1, item: ei('nano_quantum_chestplate')}]
+    );
+
+    // -- QUANTUM NANO LEGGINGS -- //
+    packer(
+        event,
+        st('quantum/leggings'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: ei('nano_leggings') },
+            { amount: 1, item: mi('quantum_leggings') }
+        ],
+        [{ amount: 1, item: ei('nano_quantum_leggings')}]
+    );
+
+    // -- QUANTUM NANO BOOTS -- //
+    packer(
+        event,
+        st('quantum/boots'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: ei('nano_boots') },
+            { amount: 1, item: mi('quantum_boots') }
+        ],
+        [{ amount: 1, item: ei('nano_quantum_boots')}]
+    );
+
+    // -- QUANTUM NANO SABER -- //
+    packer(
+        event,
+        st('quantum/boots'),
+        1000000,
+        200,
+        [
+            { amount: 1, item: ei('nano_saber') },
+            { amount: 1, item: mi('quantum_sword') }
+        ],
+        [{ amount: 1, item: ei('nano_quantum_saber')}]
     );
 });

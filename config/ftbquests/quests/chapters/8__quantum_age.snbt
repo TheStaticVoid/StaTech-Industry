@@ -373,7 +373,7 @@
 				item: { count: 1, id: "modern_industrialization:quantum_sword" }
 				type: "item"
 			}]
-			x: 20.5d
+			x: 20.0d
 			y: 2.25d
 		}
 		{
@@ -402,7 +402,7 @@
 					type: "item"
 				}
 			]
-			x: 20.5d
+			x: 20.0d
 			y: 3.75d
 		}
 		{
@@ -479,8 +479,8 @@
 				"3DDD69F79F436684"
 				"1BE7697603B3C94F"
 				"576E585F8DFC7073"
-				"152140F96FA2944E"
-				"1E378F2F641048F1"
+				"4BA636804B1524D7"
+				"784E6AF2CC87C3F2"
 			]
 			id: "1EE269859E6DD37B"
 			rewards: [{
@@ -1285,6 +1285,45 @@
 			]
 			x: 3.75d
 			y: -4.5d
+		}
+		{
+			dependencies: ["152140F96FA2944E"]
+			id: "4BA636804B1524D7"
+			tasks: [{
+				id: "28FEDAC5D9DDFD94"
+				item: { count: 1, id: "extended_industrialization:nano_saber" }
+				type: "item"
+			}]
+			x: 21.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["1E378F2F641048F1"]
+			id: "784E6AF2CC87C3F2"
+			tasks: [
+				{
+					id: "21590DBC53E98173"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_helmet" }
+					type: "item"
+				}
+				{
+					id: "74F69D0EE088D8A7"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_chestplate" }
+					type: "item"
+				}
+				{
+					id: "0C53A87FE2C95D6A"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_leggings" }
+					type: "item"
+				}
+				{
+					id: "258F05EB8FE88EFD"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_boots" }
+					type: "item"
+				}
+			]
+			x: 21.0d
+			y: 3.75d
 		}
 	]
 }
