@@ -2520,6 +2520,8 @@
 		""
 		"Regular ores still spawn, but at a &cseverely decreased rate&r, so these &alarge deposits are going to be very important to find&r!"
 		""
+		"Some deposits, such as &7Iron&r, &8Coal&r, and &2Emerald&r have&a increased spawn chances in certain biomes&r!"
+		""
 		"If you want more &adetailed information&r on ores and the deposits they spawn in, open &dEMI&r and &ehold shift&r while &bhovering&r over different ores!"
 	]
 	quest.32FE4A1534B7B496.quest_subtitle: "Large ore deposits return!"
@@ -2543,11 +2545,7 @@
 		""
 		"&aRedstone Sand&r behaves like a solid block until it gets a &credstone signal&r. The &credstone&r trigger propagates through &eall connected blocks&r, destabilizing them and causing them to fall."
 	]
-	quest.339F676C828C790D.quest_desc: [
-		"You'll need to make some &abasic tools&r to get started. Using &6Wood&r is a bit &climiting&r, but enough to acquire a &afurnace&r."
-		""
-		"Stone tools &ccannot&r be used with ultimine, so it's highly recommended to make &6copper tools&r."
-	]
+	quest.339F676C828C790D.quest_desc: ["You'll need to make some &abasic tools&r to get started. Using &6Wood&r is a bit &climiting&r, but enough to acquire a &afurnace&r, and some basic tool upgrades."]
 	quest.339F676C828C790D.quest_subtitle: "Welcome to the Stone Age"
 	quest.339F676C828C790D.title: "Cave Man"
 	quest.33A1CC9DFDAF2B13.quest_desc: ["This upgrade to the &aWorkstaff&r allows you to&e Right Click&r to shoot out &fWhite Ink&r which will break blocks on impact. You can also choose from &dResonance&r when switching enchantments."]
@@ -2770,12 +2768,12 @@
 		"If you haven't made any &aFluid Pipes&r yet, you can place the &6Bronze Boiler&r on top to pump the water directly into it. Make sure to &2adjust the output direction&r of the pump using the &6Wrench&r!"
 	]
 	quest.3938FA0F25E9B17C.quest_desc: [
-		"This pack includes &eJourneymap&r. This mod allows for &dbookmarking + claiming&r locations and viewing the world around you!"
+		"This pack includes &eJourneyMap&r. This mod allows for &dbookmarking + claiming&r locations and viewing the world around you!"
 		""
 		"Press '&eN&r' to display all your waypoints"
 		"Press '&eM&r' to open the fullscreen map"
 	]
-	quest.3938FA0F25E9B17C.title: "Journeymap"
+	quest.3938FA0F25E9B17C.title: "JourneyMap"
 	quest.3939773BB1720493.quest_desc: [
 		"&bCable Anchors&r are small decorative cable-mounted spikes that you can use to create ladders with cables, or make the cable appear connected to the walls around it."
 		""
@@ -3977,7 +3975,7 @@
 	quest.510208C885C73669.quest_subtitle: "I am the Villager now!"
 	quest.510208C885C73669.title: "Table Cloths"
 	quest.5114DECB3214A07C.quest_desc: [
-		"&6Copper tools&r are flimsy, but &acheap&r. Unlike your &cwooden/stone tools&r, they will allow you to obtain &eIron&r and make tools worthy of that name. This tool set is the &6first tools&r which allow using &dultimine&r."
+		"&6Copper tools&r are flimsy, but &acheap&r. They offer a cheaper alternative to &eIron&r tools as you get situated in your new world."
 		""
 		"Only the pickaxe is required for completing this quest."
 	]
