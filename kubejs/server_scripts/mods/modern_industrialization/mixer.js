@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
         200,
         [
             { amount: 2, item: mc('spider_eye') },
-            { amount: 1, item: mc('glass_bottle') }
+            { amount: 1, item: mc('glass_bottle') },
         ],
         [{ amount: 1, item: mc('ominous_bottle') }],
         [{ amount: 1000, fluid: mi('synthetic_oil') }]
@@ -362,17 +362,6 @@ ServerEvents.recipes((event) => {
         ],
         null,
         [{ amount: 100, fluid: mc('water') }],
-        [{ amount: 500, fluid: mi('concrete') }]
-    );
-
-    // -- CONCRETE BLOCK -- //
-    mixer(
-        event,
-        st('speedy_concrete'),
-        8,
-        100,
-        [{ amount: 1, item: mi('packer_block_template'), probability: 0 }],
-        [{ amount: 2, item: kj('speedy_concrete') }],
         [{ amount: 500, fluid: mi('concrete') }]
     );
 
