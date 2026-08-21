@@ -36,7 +36,15 @@ This update brings bucketloads more polish to GuideME, the questbook, and recipe
 - Added missing ore-from-coins recipes
 - **Added Batching Vacuum Freezer, Heat Exchanger, and Recycler**
 - Added literal fruity pebbles
-- Removed Jon Bartman due to public backlash
+- **Added large ore deposits back to the pack! Similar to the original, look for ore samples scattered across the world**
+- Reduced the spawn rates of regular ore generation
+- **Added Prospector Pick, a useful tool for finding ore deposits and marking them on your map**
+- Added copper & steel tools
+- Added Just Hammers and added custom bronze / steel variants
+- Added Scannable and gave it its original recipe
+- Removed Ultimine
+- Updated the menus
+- Removed Jon Bartman
 
 Those are the most significant changes, but there were more. This was a very big update and we hope it's pretty close to the final one before the full release.
 
