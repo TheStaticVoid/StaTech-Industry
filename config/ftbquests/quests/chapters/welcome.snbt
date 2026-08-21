@@ -306,24 +306,6 @@
 		{
 			dependencies: ["58F52B959643FF34"]
 			icon: {
-				id: "minecraft:diamond_pickaxe"
-			}
-			id: "71C405D3CB376A14"
-			rewards: [{
-				id: "3E15833EFAABA405"
-				type: "xp"
-				xp: 5
-			}]
-			tasks: [{
-				id: "1B91387FD6E802F3"
-				type: "checkmark"
-			}]
-			x: -3.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["58F52B959643FF34"]
-			icon: {
 				components: {
 					"ftbquests:icon": "ftbteams:textures/add.png"
 				}
@@ -405,6 +387,25 @@
 			}]
 			x: 2.5d
 			y: -2.5d
+		}
+		{
+			dependencies: ["58F52B959643FF34"]
+			icon: {
+				id: "kubejs:iron_ore_sample"
+			}
+			id: "32FE4A1534B7B496"
+			rewards: [{
+				id: "08D6F3FC89584224"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "48B7099FAC5F827D"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 1.5d
 		}
 	]
 }

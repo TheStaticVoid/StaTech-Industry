@@ -415,8 +415,6 @@
 		"Thankfully, &bpipes&r of &edifferent color&r or type can &afit into a single block space&r! You can have, for example, a &nwhite&r &bfluid pipe&r transferring in steam whilst a &9&nblue&r &bfluid pipe&r occupying the &asame block space&r transfers water out of your pump!"
 		""
 		"Up to &6three pipes&r or &6cables&r (or both) can fit into &aa single block space&r. "
-		""
-		"Be wary when &cveinmining&r though, as all the pipes in the same block space is considered as &ea single blocktype&r. Consequently, if you veinmine pipes (of one type) and they are connected to pipes (of multiple types, occupying the same blockspace), veinmining will &eindisciminately&r break &4ALL pipes and cables&r."
 	]
 	quest.09466E977DB6BBAC.title: "Awkward Piping?"
 	quest.0949D2D8BD487E87.quest_desc: ["Combining 9000 mB of &aHydrochloric Acid&r with &bChromium Crushed Dust&r will create 9000 mB of &dChromium Hydrochloric Solution&r."]
@@ -5563,11 +5561,6 @@
 	quest.71636395F7946F8C.quest_subtitle: "Not for the faint of heart"
 	quest.717AC9D60B7E0AEA.quest_desc: ["The &6Exposure mod&r allows you to place &2&oimages&r&r you've taken &3in world&r &olike paintings&r, and also lets you put images from the &9internet&r &oin the world.&r"]
 	quest.717AC9D60B7E0AEA.title: "Exposure Items"
-	quest.71C405D3CB376A14.quest_desc: [
-		"With the change to ore generation, &aFTB Ultimine&r is making a return! You can hold the '&e~&r' key by default to enable veinmining and scroll whilst shifting and holding the veinmining key to change the shape of the area mined."
-		""
-		"It can however &conly be used&r when using a &dtool&r made out of &6copper&r or &aany better material&r!"
-	]
 	quest.71E9A3BD02745351.quest_desc: ["Adds various benefits for fishing."]
 	quest.72066057C80E5E94.quest_desc: ["&aPolytetrafluoroethylene&r, also known as &aPTFE&r or &aTeflon&r, is an advanced polymer known for nonreactivity, low friction, and good insulating properties. It is a necessary material soon as you move to create components for the &2Digital Circuit&r. The following quests will guide you through the process of making it."]
 	quest.72066057C80E5E94.quest_subtitle: "Polytetrafluoroethylene"
@@ -6427,7 +6420,6 @@
 	task.1A74776435036FFE.title: "Any Sixteen Gemstone Chiseled Blocks"
 	task.1ABE1047E52A7B5F.title: "Click to Acknowledge"
 	task.1B20F133B8F9C3E2.title: "Rock Candies"
-	task.1B91387FD6E802F3.title: "Veinmining"
 	task.1BC1F769D39F74B7.title: "Click to Acknowledge"
 	task.1C29ABD5A1F5E652.title: "Any Fluid Input Hatch"
 	task.1CEA066A62EC707C.title: "4x Notched Polished Blocks"
