@@ -7,6 +7,36 @@ ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
 
+    // -- SPIDER EYE -- //
+    chemicalReactor(
+        event,
+        st('spider_eye'),
+        16,
+        200,
+        [
+            { amount: 4, item: mc('string') },
+            { amount: 4, item: mc('rotten_flesh') },
+            { amount: 1, item: mc('oxeye_daisy') }
+        ],
+        [{ amount: 1, item: mc('spider_eye') }],
+        [{ amount: 1000, fluid: mc('water') }]
+    );
+
+    // -- SHULKER SHELL -- //
+    chemicalReactor(
+        event,
+        st('shulker_shell'),
+        16,
+        200,
+        [
+            { amount: 4, item: mc('egg') },
+            { amount: 4, tag: 'c:dyes/purple' },
+            { amount: 4, tag: 'c:dusts/redstone' }
+        ],
+        [{ amount: 1, item: mc('shulker_shell') }],
+        [{ amount: 100, fluid: mi('hydrochloric_acid') }]
+    );
+
     // -- PHANTOM MEMBRANE -- //
     chemicalReactor(
         event,
