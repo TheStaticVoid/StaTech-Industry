@@ -717,11 +717,11 @@
 				id: "104C071A4BB6DD9B"
 				type: "checkmark"
 			}]
-			x: 5.5d
+			x: 5.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["35CA2712BC60C09E"]
+			dependencies: ["7A29CB04322D488B"]
 			id: "489042A0D0AF38D3"
 			rewards: [
 				{
@@ -750,8 +750,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:hammer/regular)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.0d
+			x: 8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["35CA2712BC60C09E"]
@@ -783,7 +783,7 @@
 				item: { count: 1, id: "stcm:prospector_pick" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.0d
 			y: 2.0d
 		}
 	]
