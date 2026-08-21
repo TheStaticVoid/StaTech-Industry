@@ -717,7 +717,7 @@
 				id: "104C071A4BB6DD9B"
 				type: "checkmark"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: 2.0d
 		}
 		{
@@ -770,7 +770,40 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:hammer/regular)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["35CA2712BC60C09E"]
+			id: "1C9F96C925557637"
+			rewards: [
+				{
+					id: "0A4C615591BDA3AE"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "22BB54DB1F446CC7"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7F9C5C814246C7AC"
+					table_id: 2474147679282294712L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "1B9AE8D7035F551B"
+				item: { count: 1, id: "stcm:prospector_pick" }
+				type: "item"
+			}]
+			x: 6.5d
 			y: 2.0d
 		}
 	]
