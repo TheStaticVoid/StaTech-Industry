@@ -32,6 +32,21 @@ ServerEvents.recipes((event) => {
     ];
     REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
+    // -- HEAVY CORE -- //
+    assembler(
+        event,
+        st('heavy_core'),
+        16,
+        400,
+        [
+            { amount: 4, tag: 'c:storage_blocks/steel' },
+            { amount: 4, tag: 'c:storage_blocks/iron' },
+            { amount: 4, tag: 'c:storage_blocks/gold' },
+            { amount: 1, item: mc('ominous_trial_key') }
+        ],
+        [{ amount: 1, item: mc('heavy_core') }]
+    );
+
     // -- WEAPONS FACTORY -- //
     assembler(
         event,

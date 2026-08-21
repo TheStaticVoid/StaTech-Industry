@@ -4,6 +4,11 @@
 
 This is the full release of StaTech Industry 2. 
 TODO: Write a better changelog :gregtroll:
+
+# Changelog:
+- Added Lumberaxes, tools that allow for whole trees to be chopped down at once!
+- Add more recipes for peaceful mode completeness
+- Removed the quest requirements in world of food chapter
 - Removed Jon Bartman
 
 

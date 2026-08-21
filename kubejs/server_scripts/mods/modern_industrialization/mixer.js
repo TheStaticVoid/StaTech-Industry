@@ -11,6 +11,20 @@ ServerEvents.recipes((event) => {
     const REMOVED_RECIPES = [mi('materials/mixer/fire_clay_dust')];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
+    // -- OMINOUS BOTTLE -- //
+    mixer(
+        event,
+        st('bad_omen_bottle'),
+        8,
+        200,
+        [
+            { amount: 2, item: mc('spider_eye') },
+            { amount: 1, item: mc('glass_bottle') }
+        ],
+        [{ amount: 1, item: mc('ominous_bottle') }],
+        [{ amount: 1000, fluid: mi('synthetic_oil') }]
+    );
+
     // -- NETHERRACK -- //
     mixer(
         event,
