@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.0]
+
+This is the full release of StaTech Industry 2. 
+TODO: Write a better changelog :gregtroll:
+- Removed Jon Bartman
+
+
 ## [2.0.0-rc5]
 
 This update brings bucketloads more polish to GuideME, the questbook, and recipes. There are a ton of changes, so I'll just list the highlights here, breaking changes are bolded:
