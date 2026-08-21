@@ -1015,6 +1015,7 @@
 	quest.13DA8C85956D397F.quest_desc: ["The &bMechanical Piston&r can move blocks in front of it. The &aSticky&r variant will also let you retract the blocks. The distance the blocks are pushed can be adjusted by adding &dPiston Extension Poles&r."]
 	quest.13FB4D096D94C939.quest_desc: ["The &aMega Torch&f is a block that cancels hostile mob spawning in 128 blocks radius (in a cube shape). It's useful to protect your base and to clean caves and dungeons."]
 	quest.141AE6600B0DA228.quest_desc: ["This very first &9Probe Computer&r, when placed &aunder&r the controller of the &bSpace Probe Launcher&r &acontroller&r, will allow it to calculate the appropriate trajectory to send &bSpace Probes&r to obtain new &aresources&r such as &6Desh&r and &bMoon Ice&r."]
+	quest.141AE6600B0DA228.quest_subtitle: "Computah, make this multiblock work"
 	quest.143BF2C33D1B8A44.quest_desc: [
 		"This is it: the &eperfection of your recipe&r. A little failure definitely couldn't stop you. This may be the one thing &caggressive enough&r to destroy even some materials previously deemed &6&ounbreakable&r. If you are not careful, you may &cruin the world&r. A necessary sacrifice really."
 		""
@@ -1411,7 +1412,7 @@
 	]
 	quest.1D6BFD70720E391D.quest_desc: ["Mixing your newly created &aCoke Dust&r with &3Iron Dust&r in a &6Mixer&r you can make &eUncooked Steel Dust&r. This is the precursor for &eSteel&r, now you will&2 need another multiblock to smelt it&r!"]
 	quest.1D6BFD70720E391D.quest_subtitle: "Not the soda"
-	quest.1D6BFD70720E391D.title: "4x Coke"
+	quest.1D6BFD70720E391D.title: "Coke"
 	quest.1D6CB3E7EBADB4A0.quest_desc: ["The &dPort Stone&r will allow you to select a destination from the list of &5Waystones&r you have previously visited, but you will not be able to warp back to the &dPortstone&r."]
 	quest.1D6CB3E7EBADB4A0.title: "Portstone"
 	quest.1DBBA5E170B9B5D6.quest_desc: [
@@ -1493,7 +1494,7 @@
 		""
 		"&l&nThanks for playing!"
 		""
-		"It would be greatly appreciated if you join the Discord and provide feedback/suggestions to how to better improve the experience!"
+		"[ \"It would be greatly appreciated if you join the \", { \"text\": \"Discord\", \"underlined\": true, \"clickEvent\": { \"action\": \"open_url\", \"value\": \"https://discord.gg/RDaJEnN3uS\" } }, \" and provide feedback/suggestions to how to better improve the experience!\" ]"
 	]
 	quest.1EE269859E6DD37B.quest_subtitle: "The World is Yours"
 	quest.1EE269859E6DD37B.title: "The Creative Worldshaper"
@@ -1813,6 +1814,7 @@
 	quest.24AAD8AAAD1ED149.quest_subtitle: "Magical AE2????"
 	quest.24AAD8AAAD1ED149.title: "The Pastel Network"
 	quest.250141B40163F07F.quest_desc: ["Do you have a lot of a &9single&r item or block &cclogging up&r your chests? Why not invest in some &aStorage Drawers&r. These allow you to store items &ein bulk&r and have easy access to them!"]
+	quest.250141B40163F07F.title: "Storage Drawers"
 	quest.250D638591B6DA8C.quest_desc: [
 		"You've already used your anvil (lots of anvils, to be precise) plenty. However, both &aItem Crushing&r, &erepairing&r, and &denchanting tools&r always damage them so quickly that they become irreparably damaged. To make the anvil more durable - or even &dindestructable&r - &aBedrock&r seems like the perfect choice."
 		""
@@ -1907,6 +1909,7 @@
 	quest.26C057394ED8B2D0.quest_desc: ["The &cExtremely P-Doped Silicon Plate&r allows you to get &550% improved&r &aTransistor&r yields!"]
 	quest.26DD8B3CAA3D34B5.quest_desc: ["With your new &dSpectrum Palace&r, you can finally round out the last three pigments you have not been able to create up to this point."]
 	quest.26DD8F0FDE61AC95.quest_desc: ["The &bElectric Mining Drill&r is an upgraded &3electric-powered drill&r that features a powered mode for &dmining 3x3&r, adjustable mining speed, and the ability to switch between Silk Touch and Fortune modes."]
+	quest.26DD8F0FDE61AC95.quest_subtitle: "GIGA DRILL BREAK"
 	quest.26EF4E75B844E3BD.quest_desc: [
 		"The &bHigh Pressure Steam Boiler&r can produce up to 2048 EU/t worth of Steam. One mB of &7HP Steam&r is worth 8 mB of regular &7Steam&r. "
 		""
@@ -3213,6 +3216,7 @@
 		"For those of you who have played &bGregTech&r, the &aPacker Templates&r are similar to using &dcircuit numbers&r in recipes. Similar to that system, using one of these items in a recipe will tell the &ePacker&r what recipe to use &cwithout consuming the item&r."
 	]
 	quest.4249FD1A79996FBB.quest_desc: ["With the &dTitanium Drill&r you can obtain infinite &aUranium&r and &bIridium&r. This is not the only way to get these materials at this point, as you can make solid &dUU-Matter&r to craft the raw ores."]
+	quest.4249FD1A79996FBB.title: "Titanium Drill"
 	quest.427144C8EF7A57E5.quest_desc: [
 		"The &aCentrifuge&r splits items by spinning them very fast. You can use it to make &3carbon dust&r and &eunlock better recipes&r for &eSteel&r and &2Silicon&r."
 		""
@@ -3538,6 +3542,7 @@
 		""
 		"In addition to it's storage, it has options to &9automatically pickup blocks&r, &3pickup from a filter&r, or &dvoid blocks&r. Think of all that Cobblestone you no longer have to sort through in your inventory!"
 	]
+	quest.48D186B5AAECDD4E.title: "Banks"
 	quest.4901BE91F31B97A6.quest_desc: ["The &aFeeding Upgrade&f will automatically feed the player with the food stored within the backpack."]
 	quest.4915E23CC60FBD06.quest_desc: ["The &aElectric Alloy Smelter&r is the electric variant of the previous steam version. Along with processing previous recipes &3even faster than before&r, the electric version allows the creation of &dNetherite&r!"]
 	quest.493839A115C46F71.quest_desc: ["The &dVoid Bucket&r does not carry any liquids, instead it deletes any liquid you pick up with it. "]
@@ -3960,8 +3965,12 @@
 		"&cIt cannot be used to charge things in your inventory&r.  "
 	]
 	quest.50C39589C51AB2DA.quest_desc: ["The meals in this section &ccannot be eaten&r while in your inventory, and must be placed in the world before you can eat them."]
-	quest.50D18ACF6401C05D.quest_desc: ["With your &5Plutonium&r byproducts, you can now create &lNukes&r. These unfortunately do not explode like you would expect and are mainly used for crafting &zSingularities&r."]
-	quest.50D18ACF6401C05D.quest_subtitle: "Surprisingly Ineffective"
+	quest.50D18ACF6401C05D.quest_desc: [
+		"With your &5Plutonium&r byproducts, you can now create &lNukes&r. &mThese unfortunately do not explode like you would expect and are mainly used for crafting &zSingularities&r.&r"
+		""
+		"&lScrew that, they blow up now if you right click them with flint and steel, HAVE FUN!&r"
+	]
+	quest.50D18ACF6401C05D.quest_subtitle: "Surprisingly (In)effective"
 	quest.50F4216A8D29E1B9.quest_desc: [
 		"The &blight blue color&r is the trademark of this ore. It is found exclusively in &dThe End&r in small clusters."
 		""
@@ -4191,6 +4200,7 @@
 	]
 	quest.53CABAF5DA73AF92.title: "Cupronickel Coils"
 	quest.53E67D11D3D273B1.quest_desc: ["Your first avenue into &6rocket science&r has netted you a new &9prototype&r of &amining tool&r. The &dBasic Space Probe&r! This new &adevice&r will allow you to gain &briches&r from space and acquire your very first space material: &6Desh&r!"]
+	quest.53E67D11D3D273B1.quest_subtitle: "Flyyy me to the moooon"
 	quest.53E8235B83062412.quest_desc: [
 		"The &bSticker&r can be used to attach blocks to the &bSticker&r itself. The state can be toggled with a &credstone pulse&r. "
 		""
@@ -4219,7 +4229,10 @@
 		"Much like the Steam Mining Drill, the Steam Chainsaw has integrated Silk Touch capabilities and is &9unbreakable&r."
 		""
 		"Right-click a &9water&r source to fill it with water or hold onto a water bucket in your inventory, and make sure to place some fuel in your drill by &2right-clicking the fuel items on it in your inventory&r. The &9water&r block is not consumed to fill the drill, but will be drained alongside the fuel when it is used to mine."
+		""
+		"&o&bBecause um... You were fighting with a Chainsaw...&r"
 	]
+	quest.547CCB129043BEE6.quest_subtitle: "Thank you... Chainsaw man..."
 	quest.5493DFD65096665C.quest_desc: [
 		"The &6Matter Fabricator&r is a machine that can turn &dUU Matter&r into &emany different blocks&r, &eitems&r, and notably &aores&r. "
 		""
@@ -4341,6 +4354,7 @@
 		"There's a lot of mechanics related to &dtrains&r, and I suggest checking the &ePonder&r scenes for all these items if you need to learn everything about &dtrains&r."
 	]
 	quest.568452070C18EBE2.quest_desc: ["Similar to the &mDanks&r &aBanks&r as before, the &aTanks&r can hold a lot of fluids. This basic tier can hold &612,000 mB&r spread across &d3 slots&r."]
+	quest.568452070C18EBE2.title: "Tanks"
 	quest.569821B175311340.quest_desc: ["Combining 3x &aNeodymium&b, 3x &cAnnealed Copper&r, 3x &bYttrium&r, and 1x &dIridium Dust&r you can mix together &bSuperconductor Dust&r. This is an important endgame crafting material. To get the ingot form, you'll need to smelt it in a &bTungstensteel EBF&r and then cool it in a &evacuum freezer&r."]
 	quest.56A30502A268BB60.quest_desc: [
 		"Before you can make a &eNuclear Reactor&r, you will need &bNuclear Alloy Plates&r. These are made with Blastproof, Beryllium, and Cadmium Ingots. "
@@ -4528,6 +4542,7 @@
 		""
 		"If you need help building the various sizes, make sure to hold out a wrench to see where all the blocks need to go. You can also check the &bGuideME&r entry by holding 'G' on the &aLarge Tank&r block in your inventory."
 	]
+	quest.591E854F1CE86E2E.quest_subtitle: "No... Not the fun one with a big gun..."
 	quest.5928172C2A45D5AB.quest_desc: ["The &aEffulgent Feathers&r of the &eKindlings&r are notable, enough so to compel you to regularly give the little bumpkins coat trimmings. However, you've noticed that, sadly quite frequently, drops of blood will come along with the features. When dipped into &6Liquid Crystal&r, it leaves behind a sparkly crystalline residue."]
 	quest.593BDCEDCC91B98C.quest_desc: [
 		"With a few steel plates, you can craft the &aAutomatic Trash Can&r. &dIt will destroy any item, fluid or energy&r that is piped into it&r. (Be careful about that last one!)"
@@ -4630,6 +4645,7 @@
 	quest.5B65EDFC301E0930.quest_desc: ["&l&2Factory Gauges&r&r are somewhat like &9&oAE2 patterns&r&r. They allow you to &3&olink processing steps&r&r."]
 	quest.5B65EDFC301E0930.quest_subtitle: "Powerful but Clunky"
 	quest.5B6A20BD4C70BA52.quest_desc: ["The &aLaser Engraver&r is a fancy &enew machine&r. Its main purpose is the creation of &2Printed AE2 Circuits&r. It can also be used to create &dMob Models&r for use in the &bMob Crusher&r."]
+	quest.5B6A20BD4C70BA52.quest_subtitle: "Best sound in the pack!"
 	quest.5B9A86DA10D7F745.quest_desc: ["The &bRedstone Contact&r can be used to send a &credstone signal&r when another &bRedstone Contact&r comes in contact with the other. This also applies when one of them is a part of the &dcontraption&r."]
 	quest.5BA4E91BBA9B38F4.quest_desc: ["If you already have an &aAdvanced Storage Unit&r, you can create this &bAdvanced Storage Upgrader&r to upgrade your existing storage units without having to break them."]
 	quest.5BE4985239D91BCF.quest_desc: [
@@ -4772,6 +4788,7 @@
 	]
 	quest.5F357A4DCACC5A7A.quest_desc: ["The &bCompacting Chest&r will try to craft all the things you put into it in a &e3x3, 2x2, or 1x1 pattern&r. This can be toggled in its &dGUI&r."]
 	quest.5F40ED455B249C29.quest_desc: ["&aPentaborane&r is the most powerful fluid fuel in the pack. It provides &e1600 mb/t&r!"]
+	quest.5F40ED455B249C29.quest_subtitle: "MMmm So Tasty!"
 	quest.5F40ED455B249C29.title: "Pentaborane"
 	quest.5F56BBCF8B57F434.quest_desc: [
 		"With a few steel plates, you can craft the &aAutomatic Trash Can&r. &dIt will destroy any item or fluid that is piped into it&r."
@@ -6084,6 +6101,7 @@
 		""
 		"You'll need a &eStorage Unit&r in order to charge it. You can do so by clicking on a &eStorage Unit&r that has power to transfer to the scanner."
 	]
+	quest.7C203AFD98845058.quest_subtitle: "Where is everybody hiding?"
 	quest.7C22C0CF7E733D13.quest_desc: [
 		"If you can find some cows near where you spawned you can kill them for their leather and make yourself a &eBackpack&r."
 		""
@@ -6246,6 +6264,7 @@
 		""
 		"You'll need a &9ME Wireless Setup Kit&r to connect them."
 	]
+	quest.7F36A76EB91E6AEB.title: "ME Wireless Connector"
 	quest.7F499A3A91F4AC6D.quest_desc: [
 		"The &aQuantum Tank&f is the highest tier tank offered by &eMI&r. It can store an absolutely absurd &62.14 billion buckets of fluid&r."
 		""
