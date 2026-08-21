@@ -196,7 +196,7 @@
 				item: { count: 1, id: "naturescompass:naturescompass" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: -1.5d
 			y: 2.0d
 		}
 		{
@@ -2033,6 +2033,7 @@
 			id: "726994F1ADADFD28"
 			rewards: [
 				{
+					count: 2
 					id: "1B0AEB6661C59725"
 					item: {
 						count: 1
@@ -2057,7 +2058,7 @@
 				item: { count: 1, id: "modern_industrialization:steam_mining_drill" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: 2.0d
 		}
 		{
@@ -3005,7 +3006,7 @@
 				item: { count: 1, id: "simplemagnets:basicmagnet" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: 2.0d
 		}
 		{
@@ -4325,6 +4326,40 @@
 			}]
 			x: 32.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "20CD46333F1F8228"
+			rewards: [
+				{
+					count: 2
+					id: "46CC33538231AA28"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "10ACA88A7DE66CE4"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6515416D937C8DCB"
+					table_id: 3409273157072801564L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "11BFE5320607A2D9"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:lumberaxes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
 		}
 	]
 }

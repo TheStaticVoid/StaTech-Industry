@@ -915,6 +915,23 @@ StartupEvents.registry('item', (event) => {
             .tier('copper');
     });
 
+    // -- LUMBERAXES -- //
+    const LUMBERAXE_MATS = [
+        ['iron', 'Iron'],
+        ['copper', 'Copper'],
+        ['steel', 'Steel'],
+        ['bronze', 'Bronze'],
+        ['diamond', 'Diamond'],
+        ['gold', 'Gold'],
+        ['netherite', 'Netherite']
+    ];
+    LUMBERAXE_MATS.forEach((material) => {
+        event
+            .create(`${material[0]}_lumberaxe`, 'axe')
+            .displayName(`${material[1]} Lumberaxe`)
+            .tier(`${material[0]}`);
+    });
+
     // -- STEEL EQUIPMENT -- //
 
     event
