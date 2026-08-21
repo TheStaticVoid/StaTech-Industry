@@ -359,7 +359,7 @@ ServerEvents.recipes((event) => {
     // -- QUANTUM NANO HELMET -- //
     packer(
         event,
-        st('quantum/helmet'),
+        st('quantum_nano/helmet'),
         1000000,
         200,
         [
@@ -372,7 +372,7 @@ ServerEvents.recipes((event) => {
     // -- QUANTUM NANO CHESTPLATE -- //
     packer(
         event,
-        st('quantum/chestplate'),
+        st('quantum_nano/chestplate'),
         1000000,
         200,
         [
@@ -385,7 +385,7 @@ ServerEvents.recipes((event) => {
     // -- QUANTUM NANO LEGGINGS -- //
     packer(
         event,
-        st('quantum/leggings'),
+        st('quantum_nano/leggings'),
         1000000,
         200,
         [
@@ -398,7 +398,7 @@ ServerEvents.recipes((event) => {
     // -- QUANTUM NANO BOOTS -- //
     packer(
         event,
-        st('quantum/boots'),
+        st('quantum_nano/boots'),
         1000000,
         200,
         [
@@ -411,7 +411,7 @@ ServerEvents.recipes((event) => {
     // -- QUANTUM NANO SABER -- //
     packer(
         event,
-        st('quantum/boots'),
+        st('quantum_nano/saber'),
         1000000,
         200,
         [
