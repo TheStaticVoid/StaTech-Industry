@@ -45,7 +45,7 @@ ServerEvents.recipes((event) => {
     basicHammerMaterials.forEach((material) => {
         event
             .shaped(Item.of(jh(`${material}_hammer`)), ['ACA', ' BA', ' B '], {
-                A: `#c:ingots/${material}`,
+                A: `#c:plates/${material}`,
                 C: `#c:storage_blocks/${material}`,
                 B: '#c:rods/wooden',
             })
