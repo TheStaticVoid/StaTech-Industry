@@ -157,8 +157,8 @@ ServerEvents.recipes((event) => {
         forgeHammer(
             st(`${material}_dust_from_raw_metal`),
             15,
-            1,
-            { count: 2, tag: `c:raw_materials/${material}` },
+            2,
+            { tag: `c:raw_materials/${material}` },
             { count: 3, id: mi(`${material}_dust`) }
         );
     });
