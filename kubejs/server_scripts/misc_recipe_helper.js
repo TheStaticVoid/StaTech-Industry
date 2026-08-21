@@ -134,9 +134,12 @@ let fusion_shrine = (
     if (disable_boosts) newRecipe.disable_yield_upgrades = disable_boosts;
     if (description) newRecipe.description = description;
     if (copy_nbt) newRecipe.copy_nbt = copy_nbt;
-    if (start_effect) newRecipe.start_crafting_effect = start_effect;
-    if (during_effects) newRecipe['during_crafting_effects'] = during_effects;
-    if (end_effect) newRecipe.finish_crafting_effect = end_effect;
+    if (start_effect) {
+        let effects = { start: start_effect };
+        if (during_effects) effects.during = during_effects;
+        if (end_effect) effects.finish = end_effect;
+        newRecipe.effects = effects;
+    }
     event.custom(newRecipe).id(id);
 };
 

@@ -52,6 +52,11 @@
 	quest.0077DEC226F4A2BE.title: "Semi-Permeable Glass"
 	quest.009D4304EB488366.quest_desc: ["The &eYellow Fertilizer&r prevents mobs from trampling your crops"]
 	quest.00C7C377D0C93D1B.quest_desc: ["The &aWireless Pattern Access Terminal&r acts like the normal &2Pattern Access Terminal&r but wireless!"]
+	quest.00D92CD3F1082729.quest_desc: [
+		"The &aEpitaph&r is a single-use item that is activated when you die to create a &dFleeting Memorial&r - a special kind of waystone that lets you teleport back to your &cplace of death&r."
+		""
+		"The &aEpitaph&r is consumed, and the &zFleeting Memorial&r will disappear once teleported to."
+	]
 	quest.00E0C91FE5B41AAB.quest_desc: [
 		"The &bMechanical Drill&r can be used to automatically mine the block in front of it. It can be used in &dcontraptions&r to make tunnel bores. "
 		""
@@ -2153,6 +2158,18 @@
 		"Hopefully the &bMulti-Cutter&r can keep up. It can do &6batches&r of &68&r at &e60%&r of the regular &eEU cost&r!"
 	]
 	quest.2C1964927A0F7BE3.quest_desc: ["The &bME Pattern Provider&r is the home of your encoded recipes. These need to be put on the same network as your &dCrafting CPU&r itself. When the &dCrafting CPU&e needs to craft the primary result of that pattern, it'll delegate this to the &bPattern Provider&r. Normally the &bPattern Provider&r will then push out the ingredients to an adjancent block (a &aMolecular Assembler&r for crafting recipes, for example), and crafting continues once the result enters the network again. This can be achieved by pushing the crafting result back into the &bPattern Provider&r, an &cME Interface&r, or any other means that would import the crafting result into the network. &aMolecular Assemblers&r are smart enough to automatically return the crafting result to the same &bPattern Provider&r that provided the ingredients, leaving you to focus on ensuring the &eProcessing Recipes&r outputs are put into the network when they're done."]
+	quest.2C2EEC3712E58EFB.quest_desc: [
+		"&aTwinbound Feathers&r can be linked to create a mutual player-to-player warp target. While carrying the feather in your inventory, the players it's linked to will become &dselectable when teleporting from a waystone&r, but only if the target player is also carrying the linked feather with them."
+		""
+		"Usage"
+		"- Hold right-click with the feather in hand to start waving it."
+		"- The player you want to create a link with does the same."
+		"- Face each other and stand in close range, rubbing your feathers together."
+		"- Heart particles should appear at the tips of your feather. Keep going."
+		"- Once heart particles have stopped, the feathers are bound."
+		"- Use a waystone to teleport to the feather's counterpart, as long you both have it in your inventories."
+	]
+	quest.2C2EEC3712E58EFB.quest_subtitle: "It Takes Two"
 	quest.2C2F7F7F0213F118.quest_desc: ["Though seemingly left behind for quite some time now, these &aseeds&r still look very much &2alive&r. Once grown, they become &bAmaranth Bushels&r. These &bBushels&r can be used in various foods, and &eit's also the favorite food of a certain creature down the path of progression&r."]
 	quest.2C66E6E3B6E6FB56.quest_desc: [
 		"&aMalachite&r also needs to be refined. The small fragments you obtain must first grow into full usable crystals - though you're not sure you'll seem them finished in your lifetime."
@@ -4261,11 +4278,13 @@
 	quest.54E44D576AC03FED.quest_desc: [
 		"Before you fully unlock the &dWarp Stone&r, you can use Warp Scrolls as temporary teleportation devices."
 		""
-		"The &dBound Scroll&r is used on existing &eWaystones&rto bind itself to that location. Using the scroll will teleport the user back to that Waystone, consuming the Scroll in the process."
-		""
 		"The &dReturn Scroll&r will teleport the user back to where they just teleported from. Useful in conjunction with the &dBound Scroll&r. Consumed on use."
 		""
-		"&dWarp Scrolls&r act as temporary &dWarp Stones&r, allowing you to select any &eWaystone&r you have previously visited, but taking a use off the Scroll each time it's used. "
+		"The &dBlank Scroll&r can be used on a &eWaystone&r to bind the scroll to that location allowing you to return to that &eWaystone&r. The &aBound Scroll&r is consumed on use."
+		""
+		"The &dWarp Scroll&r acts as temporary &dWarp Stone&r, allowing you to select any &eWaystone&r you have previously visited, but taking a use off the Scroll each time it's used. "
+		""
+		"The &dPortal Scroll&r is like the &dWarp Scroll&r but instead of just teleporting you back to a previously used &eWaystone&r, it creates a temporary portal back to the waystone. After activating a portal, a &a\"Return to Portal\"&r option will be visible on all waystones. Portals last for five minutes."
 	]
 	quest.54E44D576AC03FED.quest_subtitle: "Don't sue me Bethesda"
 	quest.54EC9C18424951EC.quest_desc: [

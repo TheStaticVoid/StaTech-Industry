@@ -564,13 +564,13 @@
 			}]
 			tasks: [
 				{
-					id: "5A8F399BC1C92DE5"
-					item: { count: 1, id: "waystones:bound_scroll" }
+					id: "2DF0EF47BB5CF4BD"
+					item: { count: 1, id: "waystones:return_scroll" }
 					type: "item"
 				}
 				{
-					id: "2DF0EF47BB5CF4BD"
-					item: { count: 1, id: "waystones:return_scroll" }
+					id: "4DE732D7DC492E3F"
+					item: { count: 1, id: "waystones:blank_scroll" }
 					type: "item"
 				}
 				{
@@ -578,8 +578,13 @@
 					item: { count: 1, id: "waystones:warp_scroll" }
 					type: "item"
 				}
+				{
+					id: "0398E6CD8E188890"
+					item: { count: 1, id: "waystones:portal_scroll" }
+					type: "item"
+				}
 			]
-			x: 16.5d
+			x: 16.0d
 			y: -4.0d
 		}
 		{
@@ -595,7 +600,7 @@
 				item: { count: 1, id: "waystones:warp_plate" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 17.0d
 			y: -4.0d
 		}
 		{
@@ -5924,6 +5929,38 @@
 			}]
 			x: 34.5d
 			y: 7.0d
+		}
+		{
+			dependencies: ["43767517C6F6CAA2"]
+			id: "2C2EEC3712E58EFB"
+			rewards: [{
+				id: "2153BE15DED4E7C5"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "6DC7BFEA55BC24A4"
+				item: { count: 1, id: "waystones:twinbound_feather" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["43767517C6F6CAA2"]
+			id: "00D92CD3F1082729"
+			rewards: [{
+				id: "72A7631498C80D08"
+				type: "xp"
+				xp: 5
+			}]
+			tasks: [{
+				id: "0923F0A8151492D4"
+				item: { count: 1, id: "waystones:epitaph" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: -4.0d
 		}
 	]
 }
