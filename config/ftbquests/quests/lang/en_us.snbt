@@ -1078,16 +1078,6 @@
 		""
 		"Make sure you right click the shrine to get the advancement to unlock the further recipes."
 	]
-	quest.15439E59E3AEF582.quest_desc: [
-		"To craft the &ePoint Blank&r weapons, you will first need to create a &9Weapon Printer&r. "
-		""
-		"Next, you will need &7Hardened Iron&r, which is just Iron Ingots run through an EBF. "
-		""
-		"Lastly, you now can make the &aPTFE Plastic&r needed to make the parts for the weapons. "
-		""
-		"Shoot with &aright click&r and aim down sights with &eleft-click&r and melee with &ev&r."
-	]
-	quest.15439E59E3AEF582.title: "Ammu-Nation"
 	quest.156DB9FCCDFE4C57.quest_desc: ["The &bFluix ME Dense Covered Cable&r can carry up to &d64 channels&r unlike standard cable which can only carry 16, however it doesn't support buses, so you must first step down from dense to smaller cable (such as &aFluix ME Glass Cable&r or &eFluix ME Smart Cable&r) before using buses or panels."]
 	quest.156DB9FCCDFE4C57.title: "Dense Covered Cables"
 	quest.1588C024A87F1B21.quest_desc: [
@@ -1237,7 +1227,7 @@
 		""
 		"Requires a channel to be operational."
 	]
-	quest.19F684E8FC74E971.quest_desc: ["The &aPolarizer&r is a machine that will allow you to &amagnetically charge certain types of metals&r. This means you can stop using &cRedstone&r to magnetise Steel Rods, as well as you will be able to &2magnetise certain important metals in the future&r."]
+	quest.19F684E8FC74E971.quest_desc: ["The &aPolarizer&r is a machine that will allow you to &amagnetically charge certain types of metals&r. This means you can use less &cRedstone&r to magnetize Steel Rods, as well as allowing you to &2magnetize other important metals in the future&r."]
 	quest.19F713DD5C1AED48.quest_desc: ["The &aDiesel Chainsaw&r is a suped up axe that can chop down trees really quickly if you feed it &6more powerful fuels&r."]
 	quest.19F713DD5C1AED48.quest_subtitle: "Deforestation"
 	quest.1A26C03F083930CF.quest_desc: [
@@ -1267,6 +1257,12 @@
 	quest.1AC3D17D11B6CAD1.quest_desc: ["Putting &eGold Drills&r in the &aElectric Quarry will&r output &cNether&r related items. This is a great way to get a recurring amount of &2Glowstone&r, &3Netherite&r, and &eQuartz&r."]
 	quest.1AC3D17D11B6CAD1.title: "Gold Drills"
 	quest.1ADACCB1A8BB9E7E.quest_desc: ["Upgraded Everlasting Beef!"]
+	quest.1AE1CDF94F921EF2.quest_desc: [
+		"If you want to, you can now live and work in the &5Void Dimension&r. Consider it a &o&blittle treat&r&r for finishing &cChapter 1&r!"
+		""
+		"&oYou can make &aanother portal&r &oany time using an &6ender pearl&r &oand &9obsidian&r...&r"
+	]
+	quest.1AE1CDF94F921EF2.quest_subtitle: "For Those Who Hate Mining and Crafting"
 	quest.1AFBAD9537A32176.quest_desc: [
 		"The &aElectric Quarry&r is very similar to it's &7Steam&r counterpart, except with the &eFluid Input Hatch&r being changed to the &eEnergy Input Hatch&r. "
 		""
@@ -4357,7 +4353,7 @@
 		"- The &elack of Ad Astra&r,"
 		"- The change from &eOh the Biomes You'll Go&r to &dNo Man's Land&r for world generation,"
 		"- The addition of &dExtended Industrialization&r and &dMI Tweaks&r,"
-		"- The return of &dvanilla ore generation&r."
+		""
 		"{@pagebreak}"
 		"As such, most of the &6space exploration questline&r has been reworked into the progression with the new &bSpace Probe Launcher&r and &bProbe Computers&r progression gated by circuit progression. "
 	]
@@ -6199,12 +6195,6 @@
 	quest.7D701BCCC5BD6418.quest_desc: ["&bCopper Casings&r are a basic casing mainly used in &9fluid&r related items in &eCreate&r."]
 	quest.7D90B29796571A7E.quest_desc: ["This &aTier 3 Bank&r has &d27 slots&r and each can hold a stacksize of &64096 items&r."]
 	quest.7D90B29796571A7E.quest_subtitle: "Bank Storage!"
-	quest.7D9968AB0012B623.quest_desc: [
-		"The &6Weapons Factory&r multiblock allows you to craft the &9guns&r and &aattachments&r from &cTACZ.&r"
-		""
-		"&aAmmunition&r is made in the &bAssembler&r. &oFor more information, search \"&e@tacz&r\" in &dEMI&r.&r"
-	]
-	quest.7D9968AB0012B623.quest_subtitle: "Gun go Brrrrrrrrrr"
 	quest.7D99CA8AE84C0904.quest_desc: ["The &dAssembler Matrix&r is a &amultiblock&r structure from Extended AE that allows to &9fuse&r all your crafting processes into one &abig machine&r instead of having individual &bMolecular Assemblers&r and &bPattern Providers&r."]
 	quest.7D99CA8AE84C0904.title: "Assembler Matrix"
 	quest.7DB69820FE0E6FB4.quest_desc: ["Allows for &2&omanual input&r&r to &l&9Item Vaults&r&r."]
@@ -6536,6 +6526,7 @@
 	task.2A5B148EF77E20F7.title: "Any Item Output Hatch"
 	task.2AB8C71EC731863F.title: "Any Knife"
 	task.2B2797753FC0C3EF.title: "Any Item Output Hatch"
+	task.2B2DA81A6F1F7BD4.title: "Void Dimension"
 	task.2BDC1045D04D624F.title: "Visit &dThe Deeper Down"
 	task.2BE57B36A4ED7A63.title: "Click to Acknowledge"
 	task.2C0CB2CC3F03574C.title: "Any Pigment Spore Blossom"

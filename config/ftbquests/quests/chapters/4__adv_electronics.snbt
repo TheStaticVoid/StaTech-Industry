@@ -4517,7 +4517,7 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
+			x: 7.0d
 			y: 5.25d
 		}
 		{
@@ -4673,7 +4673,7 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
+			x: 9.0d
 			y: 5.25d
 		}
 		{
@@ -5030,101 +5030,6 @@
 			}]
 			x: 4.0d
 			y: -13.0d
-		}
-		{
-			dependencies: ["1F46D51397CE34AC"]
-			icon: {
-				id: "modern_industrialization:weapons_factory"
-			}
-			id: "7D9968AB0012B623"
-			rewards: [
-				{
-					count: 5
-					id: "4B3DC75D9C590D6D"
-					item: {
-						count: 1
-						id: "kubejs:coin_rare"
-					}
-					type: "item"
-				}
-				{
-					id: "49EF53B2EF2675BE"
-					type: "xp"
-					xp: 40
-				}
-				{
-					exclude_from_claim_all: true
-					id: "5AA078F528AA6C40"
-					table_id: 8811145634920634486L
-					type: "random"
-				}
-			]
-			shape: "rsquare"
-			size: 1.5d
-			tasks: [
-				{
-					id: "2FC0714EA23DA463"
-					item: { count: 1, id: "modern_industrialization:weapons_factory" }
-					type: "item"
-				}
-				{
-					count: 40L
-					id: "6AE1EAE3F559E969"
-					item: { count: 1, id: "modern_industrialization:heatproof_machine_casing" }
-					type: "item"
-				}
-				{
-					count: 24L
-					id: "13D28D246625F64F"
-					item: { count: 1, id: "minecraft:tinted_glass" }
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "56931DF1A463FC96"
-					item: { count: 1, id: "modern_industrialization:steel_machine_casing" }
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "6D13450DF1A917D1"
-					item: { count: 1, id: "modern_industrialization:cupronickel_coil" }
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "7B618550EA837992"
-					item: { count: 1, id: "minecraft:obsidian" }
-					type: "item"
-				}
-				{
-					id: "7FB49A46CDDC3CC6"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "4AA299CD854B04A8"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "7471B655B55B5878"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "060F61F2D8EC5513"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 8.0d
-			y: 5.25d
 		}
 		{
 			dependencies: ["1AA4844D1D10B834"]
