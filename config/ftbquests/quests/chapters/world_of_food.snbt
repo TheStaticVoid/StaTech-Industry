@@ -13,6 +13,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			disable_toast: true
 			id: "002B9485CE2AB2E5"
 			rewards: [{
 				id: "2FD94EF4BF5D14DA"
@@ -29,6 +30,7 @@
 		}
 		{
 			dependencies: ["26742A8064D359B5"]
+			disable_toast: true
 			id: "49B7D142AC99744F"
 			rewards: [{
 				id: "488877CB909D3F42"
@@ -44,6 +46,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			id: "36726DD7BF86CEAD"
 			rewards: [{
 				id: "19AF45F3BE4F704E"
@@ -59,6 +62,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "65D7F9C7F3F4F6BE"
 			rewards: [{
 				id: "6C64FE6D1DCA7D2F"
@@ -74,6 +78,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "44623028AD0FB530"
 			rewards: [{
 				id: "1B7789D3D8617521"
@@ -89,6 +94,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "6A21C4EAB90CC753"
 			rewards: [{
 				id: "6868C4C6C13137D3"
@@ -105,6 +111,7 @@
 		}
 		{
 			dependencies: ["17894DFBE89922A5"]
+			disable_toast: true
 			id: "5F1F657E304AECB0"
 			rewards: [{
 				id: "4DE9B608DDC3712A"
@@ -121,6 +128,7 @@
 		}
 		{
 			dependencies: ["5F1F657E304AECB0"]
+			disable_toast: true
 			id: "01F57E2BAF887061"
 			rewards: [{
 				id: "34DF2A3F9A01492D"
@@ -137,6 +145,7 @@
 		}
 		{
 			dependencies: ["5F1F657E304AECB0"]
+			disable_toast: true
 			id: "19A9675C42B6870A"
 			rewards: [{
 				id: "7CC1C7F8CBE63172"
@@ -153,6 +162,7 @@
 		}
 		{
 			dependencies: ["19A9675C42B6870A"]
+			disable_toast: true
 			id: "0093A313FED0180A"
 			rewards: [{
 				id: "7DC18AA8C37CA83A"
@@ -169,6 +179,7 @@
 		}
 		{
 			dependencies: ["26742A8064D359B5"]
+			disable_toast: true
 			id: "1B4FEEBEAEB765EC"
 			rewards: [{
 				id: "57FAFB29D621269E"
@@ -185,6 +196,7 @@
 		}
 		{
 			dependencies: ["26742A8064D359B5"]
+			disable_toast: true
 			id: "74ED38514710CE76"
 			rewards: [{
 				id: "7C32CFD678585669"
@@ -201,6 +213,7 @@
 		}
 		{
 			dependencies: ["26742A8064D359B5"]
+			disable_toast: true
 			id: "1188C1F08EEA296C"
 			rewards: [{
 				id: "498A75DAF7942DF5"
@@ -216,6 +229,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			id: "69D6F9E04B458E58"
 			rewards: [{
 				id: "1F46201AF4F54774"
@@ -232,6 +246,7 @@
 		}
 		{
 			dependencies: ["69D6F9E04B458E58"]
+			disable_toast: true
 			id: "20C471C1E2F728A5"
 			rewards: [{
 				id: "3F686061328D6FCA"
@@ -247,6 +262,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			id: "26742A8064D359B5"
 			rewards: [{
 				id: "11147F93F3AE4086"
@@ -263,6 +279,7 @@
 		}
 		{
 			dependencies: ["6A21C4EAB90CC753"]
+			disable_toast: true
 			id: "17894DFBE89922A5"
 			rewards: [{
 				id: "04506CAD1F2DE7ED"
@@ -278,6 +295,7 @@
 			y: -3.0d
 		}
 		{
+			disable_toast: true
 			id: "62F258EECCFC72ED"
 			tasks: [{
 				id: "76AA7730C55FF32F"
@@ -287,6 +305,7 @@
 			y: -7.5d
 		}
 		{
+			disable_toast: true
 			id: "74481055285F45C2"
 			rewards: [{
 				id: "53B9DF8E162DB800"
@@ -302,6 +321,7 @@
 			y: -26.5d
 		}
 		{
+			disable_toast: true
 			id: "3F1C889B61239F2A"
 			rewards: [{
 				id: "628A1EBBB920B5C0"
@@ -317,6 +337,7 @@
 			y: -27.5d
 		}
 		{
+			disable_toast: true
 			id: "62E16B20B328964B"
 			rewards: [{
 				id: "45F5ED522E3F46D4"
@@ -332,6 +353,7 @@
 			y: -27.5d
 		}
 		{
+			disable_toast: true
 			id: "6D3D6D207A8AE387"
 			rewards: [{
 				id: "22E1D2167EBC7EDA"
@@ -372,6 +394,7 @@
 			y: -26.5d
 		}
 		{
+			disable_toast: true
 			id: "7283239DACDB60FE"
 			rewards: [{
 				id: "19F87C2E4A584016"
@@ -387,6 +410,7 @@
 			y: -27.5d
 		}
 		{
+			disable_toast: true
 			id: "2559D4360D1F58FA"
 			rewards: [{
 				id: "38304D9DB6B08146"
@@ -402,6 +426,7 @@
 			y: -27.5d
 		}
 		{
+			disable_toast: true
 			id: "5DC38DB275BF1BE8"
 			rewards: [{
 				id: "55A67D4AD1A37F3C"
@@ -417,6 +442,7 @@
 			y: -27.5d
 		}
 		{
+			disable_toast: true
 			id: "582A20D409799354"
 			rewards: [{
 				id: "334950285C244CD4"
@@ -432,6 +458,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "09D4E96CB587FDA7"
 			rewards: [{
 				id: "1159F8E2F1C82EAE"
@@ -447,6 +474,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "6DBD88273CC032DD"
 			rewards: [{
 				id: "3149AACC6B306555"
@@ -462,6 +490,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "222B6FCA466AE279"
 			rewards: [{
 				id: "517958D74EFCC8E6"
@@ -477,6 +506,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "7D2482B9ED6B3CB9"
 			rewards: [{
 				id: "74BB67A48FD3DDB6"
@@ -492,6 +522,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "510D6518FB84FBBF"
 			rewards: [{
 				id: "6262EAC876645521"
@@ -507,6 +538,7 @@
 			y: -7.0d
 		}
 		{
+			disable_toast: true
 			id: "50755B673A2E1B03"
 			rewards: [{
 				id: "136E9486D69A3DDA"
@@ -522,6 +554,7 @@
 			y: -7.0d
 		}
 		{
+			disable_toast: true
 			id: "2FBA5C54CB4182F8"
 			rewards: [{
 				id: "79B7844568C11396"
@@ -537,6 +570,7 @@
 			y: -7.0d
 		}
 		{
+			disable_toast: true
 			id: "1B98A84EF8C7D563"
 			rewards: [{
 				id: "5357A8201C2B4592"
@@ -552,6 +586,7 @@
 			y: -6.0d
 		}
 		{
+			disable_toast: true
 			id: "680A7A82F9140024"
 			rewards: [{
 				id: "4C4309468B600259"
@@ -567,6 +602,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "48C2E5D5B1BF6CB9"
 			rewards: [{
 				id: "3A9BFF33DBBF99C6"
@@ -582,6 +618,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "6CE7D33D3B2BDE34"
 			rewards: [{
 				id: "43A6B8B6BC669FC1"
@@ -597,6 +634,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "128565C97DDA3DDC"
 			rewards: [{
 				id: "547D569F3804FDCA"
@@ -612,6 +650,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "60ACA81EA783B7D1"
 			rewards: [{
 				id: "7C38B4F64826D34F"
@@ -627,6 +666,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "358A52C4F282FC6C"
 			rewards: [{
 				id: "397C2C7C395C8AC2"
@@ -642,6 +682,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "2DAE5AB56F13E62C"
 			rewards: [{
 				id: "4D8F504FA8A5FAF3"
@@ -657,6 +698,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "4E9E8319C695C1FC"
 			rewards: [{
 				id: "452A6053CC79663E"
@@ -672,6 +714,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "16772DE650BC15CC"
 			rewards: [{
 				id: "7EEB25395851E7A5"
@@ -687,6 +730,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "30B2F4F2C60B1EC3"
 			rewards: [{
 				id: "3D91D67D8D714355"
@@ -702,6 +746,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "7A2120FB0579230A"
 			rewards: [{
 				id: "5C15417E134CC077"
@@ -717,6 +762,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "7B7C548246571FF0"
 			rewards: [{
 				id: "7F1B2CD66DCC12A3"
@@ -732,6 +778,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "55994B7C6BFE1A31"
 			rewards: [{
 				id: "6EEFFD5AA7CAA14B"
@@ -747,6 +794,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "55DD7CE96BCE2702"
 			rewards: [{
 				id: "35E77900AD8294B0"
@@ -762,6 +810,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "1E9BDA94F2BBEB6A"
 			rewards: [{
 				id: "59B47281FBFEE563"
@@ -777,6 +826,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "4E409B6AADA18E4A"
 			rewards: [{
 				id: "36C8ABF81B4E59E3"
@@ -792,6 +842,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "448C3C4C2EE5A381"
 			rewards: [{
 				id: "65A7B1C54AAB70FF"
@@ -807,6 +858,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "6DFDC608694760FC"
 			rewards: [{
 				id: "228FB536038BBB4C"
@@ -823,6 +875,7 @@
 		}
 		{
 			dependencies: ["34005981ACB540DD"]
+			disable_toast: true
 			id: "15605D4A6FE96E2D"
 			rewards: [{
 				id: "085FDD097DC93D44"
@@ -839,6 +892,7 @@
 		}
 		{
 			dependencies: ["1BB17CCC7FDB5C13"]
+			disable_toast: true
 			id: "3419BC585BC0C094"
 			rewards: [{
 				id: "22327E324185D5E7"
@@ -855,6 +909,7 @@
 		}
 		{
 			dependencies: ["19057549A1A7185D"]
+			disable_toast: true
 			id: "36535EE0029062E1"
 			rewards: [{
 				id: "202AAB1E5BD017ED"
@@ -871,6 +926,7 @@
 		}
 		{
 			dependencies: ["7EA4F0677A4D1C59"]
+			disable_toast: true
 			id: "55B3EB23B2120798"
 			rewards: [{
 				id: "07BF91AEC3BB70DA"
@@ -886,6 +942,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "0B768CFAC9F85C0C"
 			rewards: [{
 				id: "6A5E5AC589C54822"
@@ -901,6 +958,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "6C9DD3CE95B47465"
 			rewards: [{
 				id: "3330DAF63AE01FF7"
@@ -916,6 +974,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "4AC21A2BD75D0895"
 			rewards: [{
 				id: "23F0000B821331CB"
@@ -931,6 +990,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "78BB224FABBDCA93"
 			rewards: [{
 				id: "569FB01A6648ABFF"
@@ -946,6 +1006,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "3F3DBD442A12E0B9"
 			rewards: [{
 				id: "7F81F68C741FC57E"
@@ -961,6 +1022,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "015E3BC206E7FBD3"
 			rewards: [{
 				id: "3B48D74F0192EFEF"
@@ -976,6 +1038,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "673555F79F817F61"
 			rewards: [{
 				id: "519B0856DF59B9EE"
@@ -991,6 +1054,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "2A038F72A7E1BE20"
 			rewards: [{
 				id: "34FA401436A0F3F0"
@@ -1006,6 +1070,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "671B6B927693ADA7"
 			rewards: [{
 				id: "10AA4FE0C490D321"
@@ -1021,6 +1086,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "540423A522C0F9AE"
 			rewards: [{
 				id: "6AC8941E5322AACD"
@@ -1036,6 +1102,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "1F23B2CA4085EFBC"
 			rewards: [{
 				id: "5CE94B7D78133E77"
@@ -1051,6 +1118,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "794F31BBB4BE66D8"
 			rewards: [{
 				id: "02B0D57409ED86E6"
@@ -1066,6 +1134,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "03E7C7566CA7AC92"
 			rewards: [{
 				id: "77B13B03CDF4A23E"
@@ -1081,6 +1150,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "62B5FA02E7EC0A97"
 			rewards: [{
 				id: "772F87DE080EE5F7"
@@ -1096,6 +1166,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "0CEAAEA8B3E74CA1"
 			rewards: [{
 				id: "4CF272FFDAE5F7ED"
@@ -1111,6 +1182,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "6AF0D639F578A358"
 			rewards: [{
 				id: "248F1D9A3B45F680"
@@ -1126,6 +1198,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "0FD0BE21F0DCE4AD"
 			rewards: [{
 				id: "7120D5C722F37676"
@@ -1141,6 +1214,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "76463A9F2E4F6969"
 			rewards: [{
 				id: "707DB2828DC4F9F0"
@@ -1156,6 +1230,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "2790A8A479FEC233"
 			rewards: [{
 				id: "46E92A5AD8B3F87B"
@@ -1171,6 +1246,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "0BFDF04D9B2E91DD"
 			rewards: [{
 				id: "29C194EBF6F875A5"
@@ -1186,6 +1262,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "5775EB60ABD19F88"
 			rewards: [{
 				id: "3ADCC5B96BA8E72F"
@@ -1201,6 +1278,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "34DE4594CDDB3048"
 			rewards: [{
 				id: "18A711F0334D16F5"
@@ -1216,6 +1294,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "64678A3137FD579A"
 			rewards: [{
 				id: "4F480686FDF606DD"
@@ -1231,6 +1310,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "1B13C672FCA2B347"
 			rewards: [{
 				id: "4D4BB706E7FA3153"
@@ -1246,6 +1326,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "34F2252A5EBFD1DD"
 			rewards: [{
 				id: "5A40787A92D9C0F0"
@@ -1261,6 +1342,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "2BBC551C71BB239F"
 			rewards: [{
 				id: "2BA7E6A630A3FF52"
@@ -1276,6 +1358,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "735BDFDFDCE694C2"
 			rewards: [{
 				id: "34882198261C3C8B"
@@ -1291,6 +1374,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "16F6016A70815B50"
 			rewards: [{
 				id: "068C7A64AF8C8159"
@@ -1306,6 +1390,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "232AC824D573E14D"
 			rewards: [{
 				id: "326D08CAF9D573F0"
@@ -1321,6 +1406,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "37407B89A68BE083"
 			rewards: [{
 				id: "546C25386584AEA8"
@@ -1336,6 +1422,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "5F98CDF07A1A78C3"
 			rewards: [{
 				id: "7EF3565A5200C556"
@@ -1351,6 +1438,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "23B1B5B316000063"
 			rewards: [{
 				id: "31023D009DB2EC03"
@@ -1366,6 +1454,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "6E7055FBF87ED8CC"
 			rewards: [{
 				id: "05BE1C86221562C4"
@@ -1381,6 +1470,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "6033D2F862109A76"
 			rewards: [{
 				id: "53821B347F72C90F"
@@ -1396,6 +1486,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "3B293D8C3C9F36EE"
 			rewards: [{
 				id: "32C8FBCF89DA57C5"
@@ -1411,6 +1502,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "38CB0C96CDCE6A90"
 			rewards: [{
 				id: "0DB6F08D8772F420"
@@ -1426,6 +1518,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "16E7140225DB9EC8"
 			rewards: [{
 				id: "31DD1F6BFCF8B8C2"
@@ -1441,6 +1534,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "786EEF70A0941567"
 			rewards: [{
 				id: "5023FE7CE3905EFF"
@@ -1456,6 +1550,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "76976C882C7A1C2A"
 			rewards: [{
 				id: "46ED286655F972E3"
@@ -1472,6 +1567,7 @@
 		}
 		{
 			dependencies: ["582A20D409799354"]
+			disable_toast: true
 			id: "5B9D89DFADDABFF4"
 			rewards: [{
 				id: "6FBF3988BAD9C725"
@@ -1488,6 +1584,7 @@
 		}
 		{
 			dependencies: ["09D4E96CB587FDA7"]
+			disable_toast: true
 			id: "3B7782FE5C680A14"
 			rewards: [{
 				id: "42AAEE7688D369BE"
@@ -1504,6 +1601,7 @@
 		}
 		{
 			dependencies: ["6DBD88273CC032DD"]
+			disable_toast: true
 			id: "4E565B7427490B70"
 			rewards: [{
 				id: "61898D3AAB934A87"
@@ -1520,6 +1618,7 @@
 		}
 		{
 			dependencies: ["222B6FCA466AE279"]
+			disable_toast: true
 			id: "04CE7F334EF8CF4D"
 			rewards: [{
 				id: "1099F6BB705CF01A"
@@ -1535,6 +1634,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "591707001EB8B609"
 			rewards: [{
 				id: "135D744BCF7A2715"
@@ -1550,6 +1650,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "0C5893B8F7BC038E"
 			rewards: [{
 				id: "0FCFD50BDE47D2A6"
@@ -1566,6 +1667,7 @@
 		}
 		{
 			dependencies: ["7283239DACDB60FE"]
+			disable_toast: true
 			id: "1B8A5ACE9C43639D"
 			rewards: [{
 				id: "4298FF75EF18DE28"
@@ -1581,6 +1683,7 @@
 			y: -26.5d
 		}
 		{
+			disable_toast: true
 			id: "5EC74AC28376A31B"
 			rewards: [{
 				id: "6265D28BBD51FCFC"
@@ -1596,6 +1699,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "4273131D65FDB27E"
 			rewards: [{
 				id: "7476283A6D751F06"
@@ -1611,6 +1715,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "74AF00F27D37A5D5"
 			rewards: [{
 				id: "037A8729A738EB7B"
@@ -1626,6 +1731,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "00D24D243BA8EBC1"
 			rewards: [{
 				id: "092B1CA9F2CF1079"
@@ -1641,6 +1747,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "13EF29DA8D5799C2"
 			rewards: [{
 				id: "448E077FEF05511C"
@@ -1656,6 +1763,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "4222514A0A340A0C"
 			rewards: [{
 				id: "03DEDEAE709B30BD"
@@ -1671,6 +1779,7 @@
 			y: -6.0d
 		}
 		{
+			disable_toast: true
 			id: "52F9A1443EE0021D"
 			rewards: [{
 				id: "0892231B0CA28D00"
@@ -1686,6 +1795,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "79FA75F5BFF52492"
 			rewards: [{
 				id: "1D1D568D0EF228AE"
@@ -1701,6 +1811,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "1D1D65997E576117"
 			rewards: [{
 				id: "57EFAF30C4BCD4B5"
@@ -1716,6 +1827,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "719AE86B807CAD14"
 			rewards: [{
 				id: "160A362105BC2A3D"
@@ -1731,6 +1843,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "5F4EDC8C901F7F89"
 			rewards: [{
 				id: "74985128D6414ED7"
@@ -1747,6 +1860,7 @@
 		}
 		{
 			dependencies: ["79FA75F5BFF52492"]
+			disable_toast: true
 			id: "69C2BDF79AD26FF8"
 			rewards: [{
 				id: "7FB21E35E8ECB85D"
@@ -1763,6 +1877,7 @@
 		}
 		{
 			dependencies: ["79FA75F5BFF52492"]
+			disable_toast: true
 			id: "36DD04641F7D3724"
 			rewards: [{
 				id: "530A1E15C459F02B"
@@ -1778,6 +1893,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "55B4E248A476EA73"
 			rewards: [{
 				id: "5CB10E2546D73F56"
@@ -1793,6 +1909,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "404AD9C1488F7FC1"
 			rewards: [{
 				id: "429B43E3FABC1618"
@@ -1808,6 +1925,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "4FEE3A06BA1C1F15"
 			rewards: [{
 				id: "76890DCF9A6D3143"
@@ -1823,6 +1941,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "4BF94F0F644CD540"
 			rewards: [{
 				id: "7336ED7F0EBADB9E"
@@ -1838,6 +1957,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "34005981ACB540DD"
 			rewards: [{
 				id: "2906216ADE92C132"
@@ -1853,6 +1973,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "23061DB524564085"
 			rewards: [{
 				id: "2F7F7FF05DAF0893"
@@ -1868,6 +1989,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "56936BBF67169344"
 			rewards: [{
 				id: "0313C64F248231C9"
@@ -1883,6 +2005,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "2CBCE80B632D1CC4"
 			rewards: [{
 				id: "27DA7E303232241A"
@@ -1898,6 +2021,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "3C644E820AAEF988"
 			rewards: [{
 				id: "42489A27F2A8ACB8"
@@ -1913,6 +2037,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "2187AA220801D46D"
 			rewards: [{
 				id: "042AA8643FEEE98B"
@@ -1928,6 +2053,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "478545531393F991"
 			rewards: [{
 				id: "2285E1154B2D7B96"
@@ -1943,6 +2069,7 @@
 			y: -6.0d
 		}
 		{
+			disable_toast: true
 			id: "5542130ACA0B4E7C"
 			rewards: [{
 				id: "49A737C418E97652"
@@ -1958,6 +2085,7 @@
 			y: -6.0d
 		}
 		{
+			disable_toast: true
 			id: "102A292FD67F07C8"
 			rewards: [{
 				id: "7954E0873910C8A0"
@@ -1973,6 +2101,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "4672B31D9452BF7E"
 			rewards: [{
 				id: "786A68E0A6A52A04"
@@ -1988,6 +2117,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "2448541757AE4829"
 			rewards: [{
 				id: "3C296E7E72EDAF8C"
@@ -2003,6 +2133,7 @@
 			y: -6.0d
 		}
 		{
+			disable_toast: true
 			id: "6DE2831B2AACA832"
 			rewards: [{
 				id: "05FE4992935DAEFF"
@@ -2018,6 +2149,7 @@
 			y: -6.0d
 		}
 		{
+			disable_toast: true
 			id: "44052D7A166B8645"
 			rewards: [{
 				id: "3219DC84FEF706A7"
@@ -2033,6 +2165,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "7108860531008124"
 			rewards: [{
 				id: "4C1C1C2A4D07524A"
@@ -2048,6 +2181,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "64F426AFFF1FA4DF"
 			rewards: [{
 				id: "4C102D552DC8FCF9"
@@ -2063,6 +2197,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "69DAFACC4FBF8565"
 			rewards: [{
 				id: "69A0E679DF94491A"
@@ -2078,6 +2213,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "6A258247CDEE0248"
 			rewards: [{
 				id: "1719B9B03C0510F3"
@@ -2093,6 +2229,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "40D9247644B60ED3"
 			rewards: [{
 				id: "61EB009C0F74CA6B"
@@ -2108,6 +2245,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "3B8AB165D736585A"
 			rewards: [{
 				id: "3E601752A7545AB5"
@@ -2123,6 +2261,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "192CA8786736C0B4"
 			rewards: [{
 				id: "41F37B1AD6439509"
@@ -2138,6 +2277,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "1B6AF1824886057A"
 			rewards: [{
 				id: "3DAC5159A989C8BE"
@@ -2153,6 +2293,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "1F60B93A02A61504"
 			rewards: [{
 				id: "6792D9473D23280B"
@@ -2168,6 +2309,7 @@
 			y: -1.5d
 		}
 		{
+			disable_toast: true
 			id: "6EA1A965D8598778"
 			rewards: [{
 				id: "0D18588D9ECF9843"
@@ -2183,6 +2325,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "1756D4498B0A602C"
 			rewards: [{
 				id: "643BA9B334D59132"
@@ -2198,6 +2341,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "3F9F4784B1559A27"
 			invisible: true
 			rewards: [{
@@ -2214,6 +2358,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "7B5EA56216632202"
 			rewards: [{
 				id: "6F5BAFB8652158CC"
@@ -2229,6 +2374,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "6CCF84BCB7202B49"
 			rewards: [{
 				id: "0B4540EA2FC9ED5E"
@@ -2244,6 +2390,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "7701AFB3004CD6B6"
 			rewards: [{
 				id: "54D61052DF92CEE4"
@@ -2259,6 +2406,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "7C7B33941C37F097"
 			rewards: [{
 				id: "77BB7AFB225BFD18"
@@ -2274,6 +2422,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "773CBB973E31F0E6"
 			rewards: [{
 				id: "274E1FEA8851FD00"
@@ -2289,6 +2438,7 @@
 			y: -1.5d
 		}
 		{
+			disable_toast: true
 			id: "5B17EA88EB7A214E"
 			rewards: [{
 				id: "0F5F0E32873774DA"
@@ -2304,6 +2454,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "18D314F8103548D4"
 			rewards: [{
 				id: "6F7B2F57BF596EC4"
@@ -2319,6 +2470,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "36E62B5DEEC94200"
 			rewards: [{
 				id: "103D7B8272AAD25F"
@@ -2334,6 +2486,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "48D539C1C4C7C673"
 			rewards: [{
 				id: "03D901BC0E44C028"
@@ -2349,6 +2502,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "1481CF0CC3F81104"
 			rewards: [{
 				id: "0720F0C520085E65"
@@ -2364,6 +2518,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "1F209435709C5196"
 			rewards: [{
 				id: "484B2B0440BC0F09"
@@ -2379,6 +2534,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "359C98674DD4234D"
 			rewards: [{
 				id: "67A12D205FBED690"
@@ -2394,6 +2550,7 @@
 			y: -1.5d
 		}
 		{
+			disable_toast: true
 			id: "5E7408822D4A9F70"
 			rewards: [{
 				id: "4132A54DA8538FFF"
@@ -2409,6 +2566,7 @@
 			y: -1.5d
 		}
 		{
+			disable_toast: true
 			id: "16B9643319E74472"
 			rewards: [{
 				id: "2E97BF2D5F00F54D"
@@ -2424,6 +2582,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "0CB16A7D332D2498"
 			rewards: [{
 				id: "42D4ACB120C78214"
@@ -2439,6 +2598,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "6F2BBDF82FD47CA8"
 			rewards: [{
 				id: "725FA790D01F99F5"
@@ -2454,6 +2614,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "3AF0F9ACB4F73D00"
 			rewards: [{
 				id: "49659A63B00FBBA5"
@@ -2469,6 +2630,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "5F6A3D2979BA5BDB"
 			rewards: [{
 				id: "474B44F047BC1BDD"
@@ -2484,6 +2646,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "531112C55B8856B0"
 			rewards: [{
 				id: "2B6F3B59F07595D9"
@@ -2499,6 +2662,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "12A34760D804527A"
 			rewards: [{
 				id: "5204BA1E38F73179"
@@ -2514,6 +2678,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "631682A371BDB903"
 			rewards: [{
 				id: "475FFF5D8BD0574C"
@@ -2529,6 +2694,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "1030535F311876E9"
 			rewards: [{
 				id: "10095296C26A643B"
@@ -2544,6 +2710,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "2C7B474B7E83B2CB"
 			rewards: [{
 				id: "29110EE44E60AE92"
@@ -2559,6 +2726,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "1FF7D8CF5C1BA69D"
 			rewards: [{
 				id: "54187A145FCEC811"
@@ -2574,6 +2742,7 @@
 			y: -14.5d
 		}
 		{
+			disable_toast: true
 			id: "637BC4A732422F33"
 			rewards: [{
 				id: "67D5DC5155CFFFFF"
@@ -2589,6 +2758,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "34AA528B2B7F1518"
 			rewards: [{
 				id: "083C132EE91CFB23"
@@ -2604,6 +2774,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "4DA4F595984C672F"
 			rewards: [{
 				id: "2B195183B269C293"
@@ -2619,6 +2790,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "595BA318005D3230"
 			rewards: [{
 				id: "360CA3C57CE818E6"
@@ -2634,6 +2806,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "5A46BA8060E18A44"
 			tasks: [{
 				id: "1532A74BB23FD4D6"
@@ -2643,6 +2816,7 @@
 			y: -7.5d
 		}
 		{
+			disable_toast: true
 			id: "272A57DE3FA793D0"
 			tasks: [{
 				id: "02428C7005447179"
@@ -2652,6 +2826,7 @@
 			y: -8.0d
 		}
 		{
+			disable_toast: true
 			id: "6CCABA38F0DB91DB"
 			rewards: [{
 				id: "73BB75E5DAC26C81"
@@ -2667,6 +2842,7 @@
 			y: -6.0d
 		}
 		{
+			disable_toast: true
 			id: "19FE371FF81E01D9"
 			rewards: [{
 				id: "186E4256E3512E8B"
@@ -2682,6 +2858,7 @@
 			y: -6.0d
 		}
 		{
+			disable_toast: true
 			id: "1728FBCDD874B359"
 			rewards: [{
 				id: "321ECD0E9D6E132B"
@@ -2698,6 +2875,7 @@
 		}
 		{
 			dependencies: ["6DFDC608694760FC"]
+			disable_toast: true
 			id: "7EA4F0677A4D1C59"
 			rewards: [{
 				id: "60886B3C4CD7A96A"
@@ -2714,6 +2892,7 @@
 		}
 		{
 			dependencies: ["6DFDC608694760FC"]
+			disable_toast: true
 			id: "1BB17CCC7FDB5C13"
 			rewards: [{
 				id: "770214156B6A62EF"
@@ -2730,6 +2909,7 @@
 		}
 		{
 			dependencies: ["6DFDC608694760FC"]
+			disable_toast: true
 			id: "19057549A1A7185D"
 			rewards: [{
 				id: "477CCE2BC0BBF45A"
@@ -2746,6 +2926,7 @@
 		}
 		{
 			dependencies: ["2790A8A479FEC233"]
+			disable_toast: true
 			id: "164D4C7C2A89F978"
 			rewards: [{
 				id: "6CB5AC92543393C2"
@@ -2761,6 +2942,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "508B1865886B1B28"
 			tasks: [{
 				id: "135B6491339FB2A5"
@@ -2770,6 +2952,7 @@
 			y: -14.5d
 		}
 		{
+			disable_toast: true
 			id: "061D213E3BC80CE2"
 			tasks: [{
 				id: "55E5DFB0C4215662"
@@ -2779,6 +2962,7 @@
 			y: -20.5d
 		}
 		{
+			disable_toast: true
 			id: "0AD5A07A7E0C38D2"
 			tasks: [{
 				id: "112CDCD819BD446C"
@@ -2788,6 +2972,7 @@
 			y: -14.5d
 		}
 		{
+			disable_toast: true
 			id: "557F78A78992BC35"
 			tasks: [{
 				id: "60912CE2E822DC7D"
@@ -2797,6 +2982,7 @@
 			y: -14.5d
 		}
 		{
+			disable_toast: true
 			id: "28059136178A5F96"
 			tasks: [{
 				id: "46B50579F9C4EB0D"
@@ -2806,6 +2992,7 @@
 			y: -20.5d
 		}
 		{
+			disable_toast: true
 			id: "3C883FE97253CFBA"
 			tasks: [{
 				id: "51F93CD4A9BD5CA9"
@@ -2815,6 +3002,7 @@
 			y: -20.5d
 		}
 		{
+			disable_toast: true
 			id: "37AB8737D3E3E075"
 			tasks: [{
 				id: "1BC1F769D39F74B7"
@@ -2824,6 +3012,7 @@
 			y: -25.0d
 		}
 		{
+			disable_toast: true
 			id: "7D55BD43F64D1147"
 			tasks: [{
 				id: "5D1B1332FFBD6BE9"
@@ -2833,6 +3022,7 @@
 			y: -25.0d
 		}
 		{
+			disable_toast: true
 			id: "50C39589C51AB2DA"
 			tasks: [{
 				id: "1D5255DBD11F05F6"
@@ -2843,6 +3033,7 @@
 		}
 		{
 			dependencies: ["7283239DACDB60FE"]
+			disable_toast: true
 			id: "57147BC95A8C77E3"
 			rewards: [{
 				id: "522857A6A94431B8"
@@ -2859,6 +3050,7 @@
 		}
 		{
 			dependencies: ["7283239DACDB60FE"]
+			disable_toast: true
 			id: "009D4304EB488366"
 			rewards: [{
 				id: "42E3359C6B4B12A6"
@@ -2874,6 +3066,7 @@
 			y: -26.5d
 		}
 		{
+			disable_toast: true
 			id: "744245ABE9DC506B"
 			rewards: [{
 				id: "13CF5A2EE62DBECB"
@@ -2889,6 +3082,7 @@
 			y: -27.5d
 		}
 		{
+			disable_toast: true
 			id: "6FB23276ED6A2FC6"
 			rewards: [{
 				id: "39FF8F5C978A9C5B"
@@ -2904,6 +3098,7 @@
 			y: -26.5d
 		}
 		{
+			disable_toast: true
 			id: "148AE3384F2C550B"
 			tasks: [{
 				id: "47776753D369C9D5"
@@ -2913,6 +3108,7 @@
 			y: -28.5d
 		}
 		{
+			disable_toast: true
 			id: "59063EF96358BA89"
 			rewards: [{
 				id: "052D1D27F0372B13"
@@ -2928,6 +3124,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "2C73B7046E0A805B"
 			rewards: [{
 				id: "293B9027445FFA44"
@@ -2943,6 +3140,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "30D7A497089051D7"
 			rewards: [{
 				id: "1763E57F5EAA63C6"
@@ -2958,6 +3156,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "6C1BB7AE15C79F00"
 			rewards: [{
 				id: "1BC191409E18F338"
@@ -2973,6 +3172,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "2DA5654BE4773CC7"
 			rewards: [{
 				id: "06677AF2187EE92E"
@@ -2989,6 +3189,7 @@
 		}
 		{
 			dependencies: ["2DA5654BE4773CC7"]
+			disable_toast: true
 			id: "18F079541B15C588"
 			rewards: [{
 				id: "15C6569913818374"
@@ -3005,6 +3206,7 @@
 		}
 		{
 			dependencies: ["2C73B7046E0A805B"]
+			disable_toast: true
 			id: "18C28B635665404C"
 			rewards: [{
 				id: "51654A70613BEB13"
@@ -3020,6 +3222,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "51C5FD4267EE01B3"
 			rewards: [{
 				id: "6403A0D1023D50A3"
@@ -3035,6 +3238,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "616F4A7152085A59"
 			rewards: [{
 				id: "434FC73FEB4E639F"
@@ -3050,6 +3254,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "794831F0168F6CFC"
 			rewards: [{
 				id: "0940609AEF183FCB"
@@ -3066,6 +3271,7 @@
 		}
 		{
 			dependencies: ["794831F0168F6CFC"]
+			disable_toast: true
 			id: "19CF0F6636B0D9C8"
 			rewards: [{
 				id: "021C39E3D01668F6"
@@ -3081,6 +3287,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "138B773A84EDD6A4"
 			rewards: [{
 				id: "53773E7CA161F4A3"
@@ -3096,6 +3303,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "0609FAE36DD9A8AA"
 			rewards: [{
 				id: "3817D232B499CEEE"
@@ -3111,6 +3319,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "2926B8D4C29549E0"
 			rewards: [{
 				id: "58F2FB200F6EE27B"
@@ -3126,6 +3335,7 @@
 			y: -5.0d
 		}
 		{
+			disable_toast: true
 			id: "21BAFB542BBE4690"
 			rewards: [{
 				id: "3A8363EFDC70504D"
@@ -3141,6 +3351,7 @@
 			y: -5.0d
 		}
 		{
+			disable_toast: true
 			id: "7A343C1C405AFB4E"
 			rewards: [{
 				id: "1497B074B5074207"
@@ -3156,6 +3367,7 @@
 			y: -5.0d
 		}
 		{
+			disable_toast: true
 			id: "53EC67EB092492D6"
 			rewards: [{
 				id: "4D89CEAC010926D1"
@@ -3171,6 +3383,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "7225F52AB1DEA7EA"
 			rewards: [{
 				id: "2C93F421056B9CA3"
@@ -3186,6 +3399,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "2568013BDC098C25"
 			rewards: [{
 				id: "22E56430C1CEF674"
@@ -3201,6 +3415,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "72D851E0A1C62B09"
 			rewards: [{
 				id: "0016A2401291CC75"
@@ -3216,6 +3431,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "62D789D7D7A6BBFB"
 			rewards: [{
 				id: "3B89A7DCD8E24484"
@@ -3231,6 +3447,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "05ED2DD58722B68B"
 			rewards: [{
 				id: "2BF961C4238F4162"
@@ -3246,6 +3463,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "3CCCB01E3900F44A"
 			rewards: [{
 				id: "275EEF26C915EA27"
@@ -3261,6 +3479,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "0D480E7888F8CE8A"
 			rewards: [{
 				id: "67FCF67B4EFF9DF0"
@@ -3276,6 +3495,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "055232D23F9981AE"
 			rewards: [{
 				id: "1E51BC145E08DB4D"
@@ -3292,6 +3512,7 @@
 		}
 		{
 			dependencies: ["055232D23F9981AE"]
+			disable_toast: true
 			id: "68297DBE71E03079"
 			rewards: [{
 				id: "5FEDA74AEE8ACF58"
@@ -3307,6 +3528,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "2714F6C1B2F34AA2"
 			rewards: [{
 				id: "5AAA91D6CC5923AB"
@@ -3323,6 +3545,7 @@
 		}
 		{
 			dependencies: ["2714F6C1B2F34AA2"]
+			disable_toast: true
 			id: "70741435776C2008"
 			rewards: [{
 				id: "4578C841C3D94905"
@@ -3338,6 +3561,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "06E7A6BF7FE5A783"
 			rewards: [{
 				id: "2C916049A6815D86"
@@ -3353,6 +3577,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "4EF125CA2A1D2913"
 			rewards: [{
 				id: "5E98D72F3D808ADE"
@@ -3368,6 +3593,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "6CB61B07D22A9F79"
 			rewards: [{
 				id: "4A285309530627AC"
@@ -3383,6 +3609,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "71BC80274066B0A3"
 			rewards: [{
 				id: "6534C94429CCAAB2"
@@ -3398,6 +3625,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "35B2031F7E487B0B"
 			rewards: [{
 				id: "78315A8EB56BA73C"
@@ -3413,6 +3641,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "49B32A8B34A9DF7C"
 			rewards: [{
 				id: "5FA9499BF122672E"
@@ -3428,6 +3657,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "1992674E4D8B6E80"
 			rewards: [{
 				id: "78F1DFF3C716F5D2"
@@ -3443,6 +3673,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "09DCDAB2C169DFC1"
 			rewards: [{
 				id: "647FEF6506C97B22"
@@ -3458,6 +3689,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "3EA816470C561779"
 			rewards: [{
 				id: "5E3209864A98D828"
@@ -3473,6 +3705,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "1D7B70AD7368562B"
 			rewards: [{
 				id: "56C7B9ED271B9E3F"
@@ -3488,6 +3721,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "7D388FE35AF07628"
 			rewards: [{
 				id: "019155D9807A9A08"
@@ -3503,6 +3737,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "3AF0F1FBC3FCFF06"
 			rewards: [{
 				id: "63EC8AC49ED08498"
@@ -3519,6 +3754,7 @@
 		}
 		{
 			dependencies: ["4017D6250057E313"]
+			disable_toast: true
 			hide_until_deps_complete: true
 			id: "65B488F710FEB7ED"
 			rewards: [{
@@ -3535,6 +3771,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "518A40BBBC1FA318"
 			rewards: [{
 				id: "55F2C9C8DE50D29D"
@@ -3550,6 +3787,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "778F41A86C6E9305"
 			rewards: [{
 				id: "3D4AC0B0D8095A73"
@@ -3565,6 +3803,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "1231FF62E35AF30A"
 			rewards: [{
 				id: "54F40F4DD26CDEA0"
@@ -3580,6 +3819,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "618E0E6220FF21C3"
 			rewards: [{
 				id: "795F9218F7BB0976"
@@ -3595,6 +3835,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "532BD3C9E25A56D6"
 			rewards: [{
 				id: "5383FDE70137B997"
@@ -3610,6 +3851,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "6B0117A467BAED41"
 			rewards: [{
 				id: "3B1A87175F65E59E"
@@ -3625,6 +3867,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "3C164138ECBB1053"
 			rewards: [{
 				id: "313C9190952B1A06"
@@ -3640,6 +3883,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "696928F725EDC1BD"
 			rewards: [{
 				id: "2F3E5E5579B5EC76"
@@ -3655,6 +3899,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "2328BB9FD514ABC0"
 			rewards: [{
 				id: "43C30474299840EF"
@@ -3670,6 +3915,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "1932023C9F3F0D14"
 			rewards: [{
 				id: "1AE702497E1DA33D"
@@ -3685,6 +3931,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "751F7EB0BAA7D8F9"
 			rewards: [{
 				id: "05702C667A7AE067"
@@ -3700,6 +3947,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "29B840753FB6D67A"
 			rewards: [{
 				id: "6F188ECB5F1A2BA2"
@@ -3715,6 +3963,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "758D168B42F78DE1"
 			rewards: [{
 				id: "3FF826C3DC88EBB7"
@@ -3730,6 +3979,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "5593B364972787AA"
 			rewards: [{
 				id: "3FCD89561075B38E"
@@ -3745,6 +3995,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "29091D46EF6A0452"
 			rewards: [{
 				id: "63E7FF55CBD69C30"
@@ -3760,6 +4011,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "7AFCD2AFCE6F41AE"
 			rewards: [{
 				id: "18B2586B29349C00"
@@ -3775,6 +4027,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "41980F33035F6C50"
 			rewards: [{
 				id: "0D0CC0E4799266F4"
@@ -3790,6 +4043,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "30BFEEB9E63A926A"
 			rewards: [{
 				id: "1869ED810A8F8755"
@@ -3805,6 +4059,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "3C6AC177F522A81D"
 			rewards: [{
 				id: "3F06818EBAD65CAF"
@@ -3820,6 +4075,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "2494BAAD3E63CF42"
 			rewards: [{
 				id: "6513D8AF05906A55"
@@ -3835,6 +4091,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "785C171E900DA557"
 			rewards: [{
 				id: "3505AC5A6CAD0C0E"
@@ -3850,6 +4107,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "03E578EE340E5E6A"
 			rewards: [{
 				id: "111DDD2B6AD0C81F"
@@ -3865,6 +4123,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "52644994B21CE566"
 			rewards: [{
 				id: "0459BD3BE8066830"
@@ -3880,6 +4139,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "6855BF9E73513520"
 			rewards: [{
 				id: "3C8BC380C5829638"
@@ -3895,6 +4155,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "68DD04280A5DB621"
 			rewards: [{
 				id: "4203B62D40E023AB"
@@ -3910,6 +4171,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "27E54BE5C3C2D2CF"
 			rewards: [{
 				id: "7BAC76012E0B39A0"
@@ -3925,6 +4187,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "69BE46DACCAA7958"
 			rewards: [{
 				id: "3E472C7BD58B0524"
@@ -3940,6 +4203,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "4830C984ECB7758C"
 			rewards: [{
 				id: "32E447051F86A89C"
@@ -3955,6 +4219,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "4994FAB03D4FBB17"
 			rewards: [{
 				id: "67F6B0F7C8E59B29"
@@ -3970,6 +4235,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "0751FD151295B04B"
 			rewards: [{
 				id: "03B5E3E5A678B892"
@@ -3985,6 +4251,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "287CFC9161B314E3"
 			rewards: [{
 				id: "370639000901A2FC"
@@ -4000,6 +4267,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "26FB9FF90A4B0727"
 			rewards: [{
 				id: "1147319DC414947E"
@@ -4015,6 +4283,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "251F70424DC1C2B6"
 			rewards: [{
 				id: "448696744C06FEEF"
@@ -4030,6 +4299,7 @@
 			y: -3.5d
 		}
 		{
+			disable_toast: true
 			id: "01C56B8B110DEDFD"
 			rewards: [{
 				id: "48E87703A868359D"
@@ -4045,6 +4315,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "5E4884863FEA4940"
 			rewards: [{
 				id: "21CCBFB0BEED8B3F"
@@ -4060,6 +4331,7 @@
 			y: -5.5d
 		}
 		{
+			disable_toast: true
 			id: "4F9CE76F426C4C1A"
 			rewards: [{
 				id: "2392CF94369741E8"
@@ -4075,6 +4347,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "314BB059748EA79F"
 			rewards: [{
 				id: "794637879B52E5E5"
@@ -4090,6 +4363,7 @@
 			y: -1.5d
 		}
 		{
+			disable_toast: true
 			id: "67BEF16F01F85A9C"
 			rewards: [{
 				id: "4193769E2D477272"
@@ -4105,6 +4379,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "3DEABBF1C2907DB3"
 			rewards: [{
 				id: "6D037BC87E375903"
@@ -4120,6 +4395,7 @@
 			y: -2.5d
 		}
 		{
+			disable_toast: true
 			id: "06DC38EE86EB4D74"
 			rewards: [{
 				id: "442733047405F704"
@@ -4135,6 +4411,7 @@
 			y: -4.5d
 		}
 		{
+			disable_toast: true
 			id: "23C7841FF259A559"
 			rewards: [{
 				id: "2AC213DF53241ADD"
@@ -4150,6 +4427,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "796E1BA60C458EA6"
 			rewards: [{
 				id: "7AD39F575F1CD841"
@@ -4165,6 +4443,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "23EBC2CCC00F656E"
 			rewards: [{
 				id: "56FD08634BB433B4"
@@ -4180,6 +4459,7 @@
 			y: -6.5d
 		}
 		{
+			disable_toast: true
 			id: "7D3054260EDCF02E"
 			rewards: [{
 				id: "5EF8FF92D56B131D"
@@ -4227,6 +4507,7 @@
 			y: -26.5d
 		}
 		{
+			disable_toast: true
 			id: "6FBAAF7DA59797C6"
 			rewards: [{
 				id: "3ACDE12099F57711"
@@ -4242,6 +4523,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "716B1A92E75D8D76"
 			rewards: [{
 				id: "33BBCA819AED0CEC"
@@ -4257,6 +4539,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "07B40DA19FC869C3"
 			rewards: [{
 				id: "0DC5E161CBA465B6"
@@ -4272,6 +4555,7 @@
 			y: -24.0d
 		}
 		{
+			disable_toast: true
 			id: "23EFF9AEFC656106"
 			rewards: [{
 				id: "6E1B9FE862896AF9"
@@ -4287,6 +4571,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "34ACA278AD5FA698"
 			rewards: [{
 				id: "2662001C650457F2"
@@ -4302,6 +4587,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "4CC60163F156E350"
 			rewards: [{
 				id: "3704FB1BC8613A58"
@@ -4318,6 +4604,7 @@
 		}
 		{
 			dependencies: ["4CC60163F156E350"]
+			disable_toast: true
 			id: "35E82D88159CAA5A"
 			rewards: [{
 				id: "16B89B39CDE27EA8"
@@ -4333,6 +4620,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "02B20A1B68D7C82B"
 			rewards: [{
 				id: "5362DD119A8D69EE"
@@ -4349,6 +4637,7 @@
 		}
 		{
 			dependencies: ["02B20A1B68D7C82B"]
+			disable_toast: true
 			id: "763C44609907B143"
 			rewards: [{
 				id: "1643085669730826"
@@ -4364,6 +4653,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "6C7565A35C4D9DB5"
 			rewards: [{
 				id: "7D474514E15B963C"
@@ -4379,6 +4669,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "6A506A9BAAAFAFA4"
 			rewards: [{
 				id: "7EE9F460673439B3"
@@ -4394,6 +4685,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "73AB89C2192F908E"
 			rewards: [{
 				id: "5AEF4250E8132DF6"
@@ -4409,6 +4701,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "070F55941A510276"
 			rewards: [{
 				id: "3879FF80C913DAE5"
@@ -4424,6 +4717,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "63651149691A7C85"
 			rewards: [{
 				id: "4A14943E067FB560"
@@ -4439,6 +4733,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "2A3A7ED585A15F0C"
 			rewards: [{
 				id: "12277E8ED5F989F8"
@@ -4454,6 +4749,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "0611D67EE135BA41"
 			rewards: [{
 				id: "3E18417EEFE68268"
@@ -4469,6 +4765,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "5CE865E5E816DB2E"
 			rewards: [{
 				id: "17B4B4C4FC337EAF"
@@ -4484,6 +4781,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "72203EC2DE31AD20"
 			rewards: [{
 				id: "4A5117E32C35A52D"
@@ -4499,6 +4797,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "480587B1D5E5A3A7"
 			rewards: [{
 				id: "3042B02640BD30BA"
@@ -4514,6 +4813,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "55998C33C0CCBC36"
 			rewards: [{
 				id: "633EBF96177142D7"
@@ -4529,6 +4829,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "3F45840BB6BD149C"
 			rewards: [{
 				id: "4CA5D538E6CD29A3"
@@ -4544,6 +4845,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "43B9607D108563C4"
 			rewards: [{
 				id: "39C0D4CE675DC254"
@@ -4559,6 +4861,7 @@
 			y: -16.5d
 		}
 		{
+			disable_toast: true
 			id: "7C530D041B4A4DAA"
 			rewards: [{
 				id: "0D8BF93DA1B2ECF2"
@@ -4574,6 +4877,7 @@
 			y: -16.5d
 		}
 		{
+			disable_toast: true
 			id: "62F58A4A4E8DAE3F"
 			rewards: [{
 				id: "360365299F362FBC"
@@ -4589,6 +4893,7 @@
 			y: -16.5d
 		}
 		{
+			disable_toast: true
 			id: "691AB692B9F1445B"
 			rewards: [{
 				id: "76774772AB36E407"
@@ -4604,6 +4909,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "4A0BED7886B29696"
 			rewards: [{
 				id: "205460D145F570DC"
@@ -4619,6 +4925,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "572A1FB6D034E456"
 			rewards: [{
 				id: "10FF9370E7380EBB"
@@ -4634,6 +4941,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "3B3FCCBBBC24DB60"
 			rewards: [{
 				id: "673A37C18DB9261C"
@@ -4649,6 +4957,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "53BB32C88F2AEEA8"
 			rewards: [{
 				id: "34BAF714567B1497"
@@ -4664,6 +4973,7 @@
 			y: -7.0d
 		}
 		{
+			disable_toast: true
 			id: "752CA78135912CBA"
 			rewards: [{
 				id: "0B2EFB22501C230E"
@@ -4679,6 +4989,7 @@
 			y: -7.0d
 		}
 		{
+			disable_toast: true
 			id: "5E1E26ADF925E8CB"
 			rewards: [{
 				id: "74C1CB69C4A8C516"
@@ -4694,6 +5005,7 @@
 			y: -7.0d
 		}
 		{
+			disable_toast: true
 			id: "1953EBB6DF2429BA"
 			rewards: [{
 				id: "5AF738FCB1213B6A"
@@ -4709,6 +5021,7 @@
 			y: -7.0d
 		}
 		{
+			disable_toast: true
 			id: "665E44AEA573C3FE"
 			rewards: [{
 				id: "70CEC0C51ECC8637"
@@ -4724,6 +5037,7 @@
 			y: -12.5d
 		}
 		{
+			disable_toast: true
 			id: "412D9D5FE4E0F530"
 			rewards: [{
 				id: "5E18A9855E111474"
@@ -4739,6 +5053,7 @@
 			y: -11.5d
 		}
 		{
+			disable_toast: true
 			id: "06A1ED5417A04D6F"
 			rewards: [{
 				id: "517E9EDBB2B1B2EB"
@@ -4754,6 +5069,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "1983CB91C068C1C3"
 			rewards: [{
 				id: "1B6B02029808CCFC"
@@ -4769,6 +5085,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "57FE5ED77B3D02D3"
 			rewards: [{
 				id: "23900300EBE1C952"
@@ -4784,6 +5101,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "1E36C916AACA2E93"
 			rewards: [{
 				id: "1E77A54CDF80552B"
@@ -4799,6 +5117,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "00EBD3878398E90C"
 			rewards: [{
 				id: "2E39D6BEA4EA6F4B"
@@ -4814,6 +5133,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "32562860F7A408CF"
 			rewards: [{
 				id: "29DEB2B20460BEBB"
@@ -4829,6 +5149,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "1F2E3E04A7717F6D"
 			rewards: [{
 				id: "611A2B2A439204C3"
@@ -4844,6 +5165,7 @@
 			y: -5.0d
 		}
 		{
+			disable_toast: true
 			id: "15760EB8A2C065D7"
 			rewards: [{
 				id: "2CC1F0BAE3135BC0"
@@ -4859,6 +5181,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "7F6ADDC1DA14B006"
 			rewards: [{
 				id: "5DA09DF640830C56"
@@ -4874,6 +5197,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "58F22080E27DE8A3"
 			rewards: [{
 				id: "20C97E24E4B19CBD"
@@ -4889,6 +5213,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "243150FDEDF94801"
 			rewards: [{
 				id: "0B1C3B00F8859A35"
@@ -4904,6 +5229,7 @@
 			y: -10.5d
 		}
 		{
+			disable_toast: true
 			id: "67A7071B8CCD827D"
 			rewards: [{
 				id: "4709B8FF993DEE3F"
@@ -4919,6 +5245,7 @@
 			y: -9.5d
 		}
 		{
+			disable_toast: true
 			id: "23D21A1AD5F17C8A"
 			rewards: [{
 				id: "6ED37EE81D9F2EBD"
@@ -4934,6 +5261,7 @@
 			y: -9.5d
 		}
 		{
+			disable_toast: true
 			id: "12F861779ABA5FA1"
 			rewards: [{
 				id: "271F90C67BCCCF2C"
@@ -4949,6 +5277,7 @@
 			y: -9.5d
 		}
 		{
+			disable_toast: true
 			id: "17498C7155F60499"
 			rewards: [{
 				id: "599816FFBE0079B7"
@@ -4964,6 +5293,7 @@
 			y: -9.5d
 		}
 		{
+			disable_toast: true
 			id: "262559D88002E595"
 			rewards: [{
 				id: "0A9C120E01025394"
@@ -4979,6 +5309,7 @@
 			y: -9.5d
 		}
 		{
+			disable_toast: true
 			id: "66A36D5620A17E1F"
 			rewards: [{
 				id: "5EAF6B483FC1DC9F"
@@ -4994,6 +5325,7 @@
 			y: -9.5d
 		}
 		{
+			disable_toast: true
 			id: "00AA06D46E0F9127"
 			rewards: [{
 				id: "5717641D90CEAB88"
@@ -5009,6 +5341,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "1F0A88C9B33C897B"
 			rewards: [{
 				id: "3B4722F77F72D2CE"
@@ -5024,6 +5357,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "097C95CC7A8AF296"
 			rewards: [{
 				id: "6DA038EC41F4B915"
@@ -5039,6 +5373,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "2D085326346E83B0"
 			rewards: [{
 				id: "2517273790179647"
@@ -5054,6 +5389,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "31D48FBC45466619"
 			rewards: [{
 				id: "16B5165FEA456524"
@@ -5069,6 +5405,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "72AB257E9C07B0B4"
 			rewards: [{
 				id: "673EF55B7C31825B"
@@ -5084,6 +5421,7 @@
 			y: -19.5d
 		}
 		{
+			disable_toast: true
 			id: "5B0BBB214E16E7C3"
 			rewards: [{
 				id: "454D6BF321654C21"
@@ -5099,6 +5437,7 @@
 			y: -18.5d
 		}
 		{
+			disable_toast: true
 			id: "023305891834BF95"
 			rewards: [{
 				id: "065EA69637249964"
@@ -5114,6 +5453,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "017818950C0715A7"
 			rewards: [{
 				id: "4B0837627CFB4591"
@@ -5129,6 +5469,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "21DDFE8B1E85F35A"
 			rewards: [{
 				id: "38C4BBE37398357D"
@@ -5144,6 +5485,7 @@
 			y: -17.5d
 		}
 		{
+			disable_toast: true
 			id: "4332A4E70D47C9C9"
 			rewards: [{
 				id: "6680E8BDABB953C2"
@@ -5159,6 +5501,7 @@
 			y: -9.5d
 		}
 		{
+			disable_toast: true
 			id: "37BB5F7E0E98E02B"
 			rewards: [{
 				id: "00EB508B49015F50"
@@ -5174,6 +5517,7 @@
 			y: -9.5d
 		}
 		{
+			disable_toast: true
 			id: "4B795376ACC92DFA"
 			rewards: [{
 				id: "16572F5285D5CDC4"
@@ -5189,6 +5533,7 @@
 			y: -9.5d
 		}
 		{
+			disable_toast: true
 			id: "5F8F3495A989B72F"
 			rewards: [{
 				id: "1ACDA37B8DE63F35"
@@ -5204,6 +5549,7 @@
 			y: -16.5d
 		}
 		{
+			disable_toast: true
 			id: "20D959CCFB7CDBFD"
 			rewards: [{
 				id: "543AD471E0C1FC4A"
@@ -5219,6 +5565,7 @@
 			y: -16.5d
 		}
 		{
+			disable_toast: true
 			id: "3A2B92A2302D8B6B"
 			rewards: [{
 				id: "46A399977512AC3E"
@@ -5234,6 +5581,7 @@
 			y: -16.5d
 		}
 		{
+			disable_toast: true
 			id: "544DC2D7578DCEC6"
 			rewards: [{
 				id: "2BE5A4F24819E3D9"
@@ -5250,6 +5598,7 @@
 			y: -9.5d
 		}
 		{
+			disable_toast: true
 			id: "2D7D10278A5F2CD2"
 			rewards: [{
 				id: "3050BFC636ED4C57"
@@ -5266,6 +5615,7 @@
 		}
 		{
 			dependencies: ["2D7D10278A5F2CD2"]
+			disable_toast: true
 			id: "5C0DF20EF0B8192A"
 			rewards: [{
 				id: "57CDF6E4F6BA934D"
@@ -5282,6 +5632,7 @@
 		}
 		{
 			dependencies: ["3AC7E8C2479E7537"]
+			disable_toast: true
 			id: "5102126937825AB9"
 			rewards: [{
 				id: "445D23CA442DF163"
@@ -5297,6 +5648,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "3AC7E8C2479E7537"
 			rewards: [{
 				id: "1A349D6232BDEE3B"
@@ -5312,6 +5664,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "495EE1EC81997D53"
 			rewards: [{
 				id: "6C76D10662376B30"
@@ -5327,6 +5680,7 @@
 			y: -23.0d
 		}
 		{
+			disable_toast: true
 			id: "59A61A502375EDC1"
 			rewards: [{
 				id: "1D5A9B3641919200"
@@ -5342,6 +5696,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "2A5A98BAAF2BA035"
 			rewards: [{
 				id: "5A65D187C757F50F"
@@ -5357,6 +5712,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "44E752B4C1A7F091"
 			rewards: [{
 				id: "204851BAFCC46C25"
@@ -5372,6 +5728,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "63BAAA4B91183162"
 			rewards: [{
 				id: "014D57730F0A4D43"
@@ -5387,6 +5744,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "0544CF266A118EFD"
 			rewards: [{
 				id: "51F0514B8E4D4792"
@@ -5402,6 +5760,7 @@
 			y: -22.0d
 		}
 		{
+			disable_toast: true
 			id: "43D0CBBA4D6C02E6"
 			rewards: [{
 				id: "7F3F0DA37DF3E031"
@@ -5418,6 +5777,7 @@
 		}
 		{
 			dependencies: ["6DFDC608694760FC"]
+			disable_toast: true
 			id: "181AEF6C5D5E646F"
 			rewards: [{
 				id: "487837AB3CD33633"
@@ -5434,6 +5794,7 @@
 		}
 		{
 			dependencies: ["181AEF6C5D5E646F"]
+			disable_toast: true
 			id: "37286E89C3674FFB"
 			rewards: [{
 				id: "61A1856BD0CB5DAF"
@@ -5449,6 +5810,7 @@
 			y: -13.5d
 		}
 		{
+			disable_toast: true
 			id: "2296A8BA205E0229"
 			rewards: [{
 				id: "4164EAB1376BB8F2"
