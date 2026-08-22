@@ -477,7 +477,7 @@ ServerEvents.recipes((event) => {
             B: '#c:storage_blocks/iron',
             P: '#c:plates/iron',
             N: '#c:nuggets/iron',
-            S: '#c:rods/wooden'
+            S: '#c:rods/wooden',
         })
         .id(st('iron_lumberaxe'));
 
@@ -487,7 +487,7 @@ ServerEvents.recipes((event) => {
             B: '#c:storage_blocks/copper',
             P: '#c:plates/copper',
             N: '#c:nuggets/copper',
-            S: '#c:rods/wooden'
+            S: '#c:rods/wooden',
         })
         .id(st('copper_lumberaxe'));
 
@@ -497,7 +497,7 @@ ServerEvents.recipes((event) => {
             B: '#c:storage_blocks/steel',
             P: '#c:plates/steel',
             N: '#c:nuggets/steel',
-            S: '#c:rods/wooden'
+            S: '#c:rods/wooden',
         })
         .id(st('steel_lumberaxe'));
 
@@ -507,7 +507,7 @@ ServerEvents.recipes((event) => {
             B: '#c:storage_blocks/bronze',
             P: '#c:plates/bronze',
             N: '#c:nuggets/bronze',
-            S: '#c:rods/wooden'
+            S: '#c:rods/wooden',
         })
         .id(st('bronze_lumberaxe'));
 
@@ -517,26 +517,29 @@ ServerEvents.recipes((event) => {
             B: '#c:storage_blocks/gold',
             P: '#c:plates/gold',
             N: '#c:nuggets/gold',
-            S: '#c:rods/wooden'
+            S: '#c:rods/wooden',
         })
         .id(st('gold_lumberaxe'));
 
     // -- DIAMOND LUMBERAXE -- //
-    event.smithing(
-        kj('diamond_lumberaxe'),
-        kj('diamond_upgrade_smithing_template'),
-        kj('steel_lumberaxe'),
-        mc('diamond')
-    ).id(st('diamond_lumberaxe'));
+    event
+        .smithing(
+            kj('diamond_lumberaxe'),
+            kj('diamond_upgrade_smithing_template'),
+            kj('steel_lumberaxe'),
+            mc('diamond')
+        )
+        .id(st('diamond_lumberaxe'));
 
     // -- NETHERITE LUMBERAXE -- //
-    event.smithing(
-        kj('netherite_lumberaxe'),
-        mc('netherite_upgrade_smithing_template'),
-        kj('diamond_lumberaxe'),
-        mc('netherite_ingot')
-    ).id(st('netherite_lumberaxe'));
-
+    event
+        .smithing(
+            kj('netherite_lumberaxe'),
+            mc('netherite_upgrade_smithing_template'),
+            kj('diamond_lumberaxe'),
+            mc('netherite_ingot')
+        )
+        .id(st('netherite_lumberaxe'));
 });
 
 ServerEvents.tags('item', (event) => {
@@ -567,7 +570,7 @@ ServerEvents.tags('item', (event) => {
         kj('bronze_lumberaxe'),
         kj('gold_lumberaxe'),
         kj('diamond_lumberaxe'),
-        kj('netherite_lumberaxe')
+        kj('netherite_lumberaxe'),
     ];
     LUMBERAXES.forEach((id) => {
         event.add(kj('lumberaxes'), id);
@@ -576,7 +579,7 @@ ServerEvents.tags('item', (event) => {
         event.add(mc('enchantable/mining_loot'), id);
         event.add(mc('enchantable/vanishing'), id);
         event.remove(mc('axes'), id);
-    })
+    });
 
     const COINS = [
         kj('coin_common'),
@@ -600,6 +603,7 @@ ServerEvents.tags('block', (event) => {
     // -- PREFERRED TOOL FOR GLASS-LIKE BLOCKS -- //
     event.add('minecraft:mineable/pickaxe', [
         '#c:glass_blocks',
+        cm('neoforge_hammer'),
         'minecraft:glowstone',
         '#chisel:chiseled_glowstone',
         /^xtonesreworked:glaxx_block_/,
@@ -625,6 +629,9 @@ ServerEvents.tags('block', (event) => {
             'minecraft:copper_ore',
         ]);
     });
+    // -- NEOFORGE HAMMER BLOCK TAGGING -- //
+    event.add('minecraft:mineable/pickaxe', cm('neoforge_hammer'));
+    event.add('minecraft:needs_stone_tool', cm('neoforge_hammer'));
 });
 
 // -- ITEM TAGGING -- //
