@@ -244,13 +244,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         /^advancedperipherals:ae_disk_cell_.*/,
     ];
     UNUSED_ADVANCED_PERIPHERALS.forEach((id) => event.remove(id));
-
-    const UNUSED_TACZ = [
-        tz('gun_smith_table'),
-        tz('workbench_c'),
-        tz('workbench_a'),
-    ];
-    UNUSED_TACZ.forEach((id) => event.remove(id));
 });
 
 RecipeViewerEvents.removeEntriesCompletely('fluid', (event) => {
@@ -279,9 +272,6 @@ RecipeViewerEvents.removeRecipes((event) => {
 
 RecipeViewerEvents.removeCategories((event) => {
     event.remove([
-        // 'tacz:gun_smith_table/tacz_ammo_workbench',
-        // 'tacz:gun_smith_table/tacz_attachment_workbench',
-        // 'tacz:gun_smith_table/tacz_gun_smith_workbench',
         'functionalstorage:dissolution',
         'emi:anvil_repairing',
         'emi:grinding',
