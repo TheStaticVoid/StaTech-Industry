@@ -1,12 +1,29 @@
-# Set the default behavior, in case people don't have core.autocrlf set.
-* text eol=lf
+* text=auto eol=lf
 
-*.snbt text eol=lf
-*.toml text eol=lf
-*.json text eol=lf
+# Explicitly protect binaries — never touch line endings
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.icns binary
+*.webp binary
+*.bmp binary
+*.tiff binary
+*.svgz binary
 
-*.png -text
-*.ogg -text
-*.icns -text
-*.zip -text
-*.mcmeta -text
+# Other common binaries (add more as needed)
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.7z binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.wasm binary
