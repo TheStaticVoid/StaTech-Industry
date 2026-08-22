@@ -4,3 +4,9 @@
 *.snbt text eol=lf
 *.toml text eol=lf
 *.json text eol=lf
+
+*.png -text
+*.ogg -text
+*.icns -text
+*.zip -text
+*.mcmeta -text
