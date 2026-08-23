@@ -327,15 +327,15 @@
 				}
 				{
 					disable_toast: true
-					id: "1C29ABD5A1F5E652"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					id: "06B95AF21897C47B"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					optional_task: true
 					type: "item"
 				}
 				{
 					disable_toast: true
-					id: "06B95AF21897C47B"
-					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					id: "1C29ABD5A1F5E652"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					optional_task: true
 					type: "item"
 				}
