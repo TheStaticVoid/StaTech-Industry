@@ -7165,6 +7165,48 @@
             ]
         },
         {
+            "pakku_id": "3NfI8nYyBDZRSBcb",
+            "pakku_links": [
+                "Jb13Ji6au0RNpzSB"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "music-and-melody"
+            },
+            "name": {
+                "curseforge": "Music and Melody"
+            },
+            "id": {
+                "curseforge": "1544814"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "music-and-melody-21.1-r4.2-neoforge-cf.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8723/675/music-and-melody-21.1-r4.2-neoforge-cf.jar",
+                    "id": "8723675",
+                    "parent_id": "1544814",
+                    "hashes": {
+                        "sha1": "b8ca0ac1c814e59472b7db978f8637c66736b522",
+                        "md5": "409e217e8a44fcf8c9e67df7c0f14f4f"
+                    },
+                    "required_dependencies": [
+                        "348521"
+                    ],
+                    "size": 246293105,
+                    "date_published": "2026-08-24T12:19:58.947Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "pmAk8zQ9nDBwvhtn",
             "type": "MOD",
             "slug": {
@@ -8383,6 +8425,7 @@
         {
             "pakku_id": "xyH9fL6MHbzMixQr",
             "type": "MOD",
+            "side": "CLIENT",
             "slug": {
                 "curseforge": "simple-music-control"
             },
