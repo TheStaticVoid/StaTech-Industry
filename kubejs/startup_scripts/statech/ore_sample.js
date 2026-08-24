@@ -53,10 +53,5 @@ let createSample = (event, name) => {
             state.set(PLAYER_PLACED, player != null);
 
             state.waterlogged();
-
-            // state.set(
-            //     BlockProperties.WATERLOGGED,
-            //     fluid.isSource() && fluid.type === 'minecraft:water'
-            // );
         });
 };
