@@ -603,7 +603,7 @@
 			]
 			tasks: [{
 				id: "548E4BB296B475B8"
-				item: { count: 1, id: "supplementaries:turn_table" }
+				item: { count: 1, id: "create:turntable" }
 				type: "item"
 			}]
 			x: 10.0d
@@ -1877,7 +1877,7 @@
 			]
 			tasks: [{
 				id: "27F88135AFADE59D"
-				item: { count: 1, id: "create:white_toolbox" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:toolboxes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -2045,7 +2045,7 @@
 			]
 			tasks: [{
 				id: "07AC93CF45CF951D"
-				item: { count: 1, id: "create:yellow_seat" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(create:seats)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -15.5d
