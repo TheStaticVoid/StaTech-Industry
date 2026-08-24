@@ -52,7 +52,9 @@ LootJS.modifiers((event) => {
         .addTableModifier('nomansland:chests/alchemist_pot_alchemy')
         .pool((pool) => {
             pool.addEntry(
-                LootEntry.reference('artifacts:inject/chests/ruined_portal')
+                LootEntry.reference(
+                    'artifacts:inject/chests/ruined_portal'
+                ).randomChance(0.2)
             );
         });
 
@@ -63,7 +65,7 @@ LootJS.modifiers((event) => {
             pool.addEntry(
                 LootEntry.reference(
                     'artifacts:inject/chests/abandoned_mineshaft'
-                )
+                ).randomChance(0.2)
             );
         });
 
@@ -72,7 +74,9 @@ LootJS.modifiers((event) => {
         .addTableModifier('nomansland:chests/alchemist_pot_artisanship')
         .pool((pool) => {
             pool.addEntry(
-                LootEntry.reference('artifacts:inject/chests/pillager_outpost')
+                LootEntry.reference(
+                    'artifacts:inject/chests/pillager_outpost'
+                ).randomChance(0.2)
             );
         });
 
@@ -81,7 +85,9 @@ LootJS.modifiers((event) => {
         .addTableModifier('nomansland:chests/alchemist_pot_potions')
         .pool((pool) => {
             pool.addEntry(
-                LootEntry.reference('artifacts:inject/chests/ruined_portal')
+                LootEntry.reference(
+                    'artifacts:inject/chests/ruined_portal'
+                ).randomChance(0.2)
             );
         });
 
@@ -90,8 +96,10 @@ LootJS.modifiers((event) => {
         .addTableModifier('nomansland:chests/alchemist_pot_treasure')
         .pool((pool) => {
             pool.addEntry(
-                LootEntry.reference('artifacts:inject/chests/woodland_mansion')
-            ).rolls(2);
+                LootEntry.reference(
+                    'artifacts:inject/chests/woodland_mansion'
+                ).randomChance(0.2)
+            );
         });
 });
 
