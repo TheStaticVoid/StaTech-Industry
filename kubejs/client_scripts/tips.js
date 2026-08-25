@@ -371,7 +371,7 @@ const tips = [
     {
         id: 'veinwaypoints',
         tiptext:
-            'The prospecting pick allows you to easily add waypoints for ore veins by right-clicking ore samples on the surface!',
+            'The prospecting pick allows you to easily add waypoints for ore veins by right-clicking ore samples on the surface! Shift right-click to add an inworld beacon for the waypoint.',
     },
     {
         id: 'lumberaxes',
@@ -460,6 +460,11 @@ const tips = [
         id: 'claimallquestrewards',
         tiptext:
             'You can claim your quest rewards all at once by clicking the Select Rewards button in the upper right corner of the quest screen.',
+    },
+    {
+        id: 'prospectorpick',
+        tiptext:
+            "Right clicking the ground with the Prospector Pick will scan the area around you for deposits. Useful if you're struggling to find surface samples or deep in a cave",
     },
 ];
 
