@@ -2,15 +2,38 @@
 
 ## [2.0.0]
 
-This is the full release of StaTech Industry 2. 
+This is the full release of StaTech Industry 2.
 TODO: Write a better changelog :gregtroll:
 
 # Changelog:
-- Added Lumberaxes, tools that allow for whole trees to be chopped down at once!
-- Add more recipes for peaceful mode completeness
-- Removed the quest requirements in world of food chapter
-- Removed Jon Bartman
 
+- **Added Lumberaxes, tools that allow for whole trees to be chopped down at once!**
+- Added more recipes for peaceful mode completeness
+- Removed the quest requirements in world of food chapter
+- Added Music and Melody and Simple Music Control to allow better player control of the wonderful music in the pack.
+- **Removed Weapons Factory multiblock + moved TACZ items back to the TACZ workbenches due to data component incompatibility with MI machines.**
+- Downtiered Steam Chainsaw to be before steel
+- Removed Advanced Peripherals Computer Scientist village structure.
+- Fixed Oil Drilling Rig quest hatch requirements.
+- **Nerfed Artifacts drop rates from NML pots.**
+- Fixed Create quest oversights.
+- Added Brass Block Alloy Smelter recipe.
+- Fixed Spectrum quest oversights.
+- **Fixed Forge Hammer ctrl+click client crash.**
+- Fixed vestigial quest wording.
+- Buffed bread recipe.
+- **Fixed CRLF hell (I hope)**
+- Added more tips + splashes
+- Moved Speedy Concrete recipe to Canning Machine.
+- **Cleaned up Artifacts recycling.**
+- Added more possible SoL hearts.
+- **Rebalanced some Quarry + Space Probe rates + drops.**
+- **Fixed accidental Forge Hammer buff.**
+- Made ore samples logic more robust.
+- Added more speedy blocks.
+- Added Macerator recipes for Spectrum ores.
+- Fixed Spectrum quest oversights (again).
+- Removed Jon Bartman
 
 ## [2.0.0-rc5]
 

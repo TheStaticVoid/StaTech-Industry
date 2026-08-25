@@ -36,7 +36,7 @@ ServerEvents.recipes((event) => {
     // -- BRASS BLOCK -- //
     alloySmelter(
         event,
-        st('brass_ingot'),
+        st('brass_block'),
         4,
         200,
         [
