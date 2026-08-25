@@ -22,4 +22,15 @@ ServerEvents.recipes((event) => {
 
         event.custom(newRecipe).id(id);
     };
+
+    // -- DOUGH -- //
+    mixing(
+        st('wheat_dough'),
+        null,
+        [
+            { item: cr('wheat_flour') },
+            { type: 'neoforge:single', amount: 1000, fluid: mc('water') },
+        ],
+        [{ count: 2, id: cr('dough') }]
+    );
 });

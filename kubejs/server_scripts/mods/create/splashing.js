@@ -81,4 +81,11 @@ ServerEvents.recipes((event) => {
         [{ tag: ae('smart_dense_cable') }],
         [{ id: ae('fluix_smart_dense_cable') }]
     );
+
+    // -- DOUGH -- //
+    splashing(
+        st('wheat_dough'),
+        [{ item: cr('wheat_flour') }],
+        [{ chance: 0.5, count: 3, id: cr('dough') }]
+    );
 });

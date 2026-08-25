@@ -163,7 +163,7 @@ ServerEvents.recipes((event) => {
         2,
         100,
         [{ amount: 1, item: cr('wheat_flour') }],
-        [{ amount: 1, item: cr('dough') }],
+        [{ amount: 3, item: cr('dough') }],
         [{ amount: 1000, fluid: mc('water') }]
     );
 

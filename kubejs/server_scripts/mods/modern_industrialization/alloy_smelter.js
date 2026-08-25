@@ -32,4 +32,17 @@ ServerEvents.recipes((event) => {
         ],
         [{ amount: 2, item: cr('brass_ingot') }]
     );
+
+    // -- BRASS BLOCK -- //
+    alloySmelter(
+        event,
+        st('brass_ingot'),
+        4,
+        200,
+        [
+            { amount: 1, tag: 'c:storage_blocks/copper' },
+            { amount: 1, tag: 'c:storage_blocks/zinc' },
+        ],
+        [{ amount: 2, item: cr('brass_block') }]
+    );
 });
