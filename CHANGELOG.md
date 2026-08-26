@@ -2,8 +2,9 @@
 
 ## [2.0.0]
 
-This is the full release of StaTech Industry 2.
-TODO: Write a better changelog :gregtroll:
+This is the full release of StaTech Industry 2. Took us long enough. Thanks for your patience with the last 5 release candidates, it's been a long road but we're finally here!
+
+As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
 
 # Changelog:
 
@@ -33,6 +34,9 @@ TODO: Write a better changelog :gregtroll:
 - Added more speedy blocks.
 - Added Macerator recipes for Spectrum ores.
 - Fixed Spectrum quest oversights (again).
+- Fixed in game menu alignment + dev options.
+- **Made Large Ore Deposits 2.5x rarer.**
+- Improved documentation on client customization options.
 - Removed Jon Bartman
 
 ## [2.0.0-rc5]

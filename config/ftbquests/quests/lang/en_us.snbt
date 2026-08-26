@@ -1303,6 +1303,15 @@
 	quest.1B8A5ACE9C43639D.quest_desc: ["The &aGreen Fertilizer&r increases &doverall crop output&r when harvesting fully mature crops."]
 	quest.1BBC92A8192D3088.quest_desc: ["The &bPlacard&r is similar to vanilla &eItem Frames&r, except these are &dcontraption&r friendly!"]
 	quest.1BC8C8821CAB3224.quest_desc: ["The &7Stainless Steel Backpack&r has &9108 slots&r for items!"]
+	quest.1BD496A10E957F25.quest_desc: [
+		"Please &c&nread through&r&r the quests in the \"&6Welcome!&r\" section, they have &auseful information&r for the rest of the pack. As such, you &l&4cannot&r&r claim &9&oany quest rewards&r&r until you've read them."
+		""
+		"I'd recommend paying &d&oparticular attention&r&r to:"
+		"[ \"1. \", { \"text\": \"UI Customization\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0EFA60789B064DB4\" } } ]"
+		"[ \"2. \", { \"text\": \"Dude, where's my ores?\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"32FE4A1534B7B496\" } } ]"
+		"[ \"3. \", { \"text\": \"EMI Tips\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0A260F1B9E13182D\" } } ]"
+		"[ \"4. \", { \"text\": \"Crafting made trivial\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"4E1516DE8CDFE5EE\" } } ]"
+	]
 	quest.1BD496A10E957F25.quest_subtitle: "A noble start to an epic journey"
 	quest.1BD496A10E957F25.title: "Punch Trees"
 	quest.1BE7697603B3C94F.quest_desc: [
