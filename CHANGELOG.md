@@ -2,7 +2,7 @@
 
 ## [2.0.0]
 
-This is the full release of StaTech Industry 2. Took us long enough. Thanks for your patience with the last 5 release candidates, it's been a long road but we're finally here!
+This is the full release of StaTech Industry 2. Took us long enough. Thanks for your patience with the last 5 release candidates, it's been a long road but we're finally here! This changelog does not summarize ALL the changes that have been made between 1.0 and 2.0, only the changes made between the release candidates. For a more comprehensive list of changes, check TODO ADD FILE HERE.
 
 As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
 
@@ -42,6 +42,7 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - Clean up mob model + ore sample registration.
 - **Made pack more translator friendly.**
 - Updated AE2 quest organization.
+- Nerfed the durability of JustHammers to be more balanced
 - Removed Jon Bartman
 
 ## [2.0.0-rc5]
