@@ -2271,7 +2271,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -9.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["784BFD67397D2D4E"]
@@ -2415,7 +2415,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -11.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["03A48A124FB9AB5D"]
@@ -2449,7 +2449,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -10.0d
+			y: -9.5d
 		}
 		{
 			dependencies: ["328C369BE0EE3940"]
@@ -3746,6 +3746,40 @@
 			}]
 			x: 8.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "5D6476860C35F0E5"
+			rewards: [
+				{
+					count: 7
+					id: "1E299F84BDBDE95F"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "6FF954CDA87A3192"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "17A2BA3DFEEC0508"
+					table_id: 4552329992159883361L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "7194B7215710344B"
+				item: { count: 1, id: "extendedae:ex_charger" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -11.0d
 		}
 	]
 }

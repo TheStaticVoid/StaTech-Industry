@@ -37,6 +37,11 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - Fixed in game menu alignment + dev options.
 - **Made Large Ore Deposits 2.5x rarer.**
 - Improved documentation on client customization options.
+- Fixed Construction Stick quest.
+- Updated "Added by" tooltips.
+- Clean up mob model + ore sample registration.
+- **Made pack more translator friendly.**
+- Updated AE2 quest organization.
 - Removed Jon Bartman
 
 ## [2.0.0-rc5]

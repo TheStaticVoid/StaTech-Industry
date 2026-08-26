@@ -90,10 +90,11 @@ ServerEvents.recipes((event) => {
 
     // -- CHARGER -- //
     event
-        .shaped(ae('charger'), ['SCS', 'B  ', 'SCS'], {
+        .shaped(ae('charger'), ['SCS', 'BA ', 'SCS'], {
             S: mi('steel_large_plate'),
             C: mi('copper_wire'),
             B: mi('redstone_battery'),
+            A: mi('basic_machine_hull'),
         })
         .id(st('charger'));
 
