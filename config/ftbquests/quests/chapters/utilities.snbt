@@ -198,7 +198,7 @@
 			}]
 			tasks: [{
 				id: "66635FA796FF3AD2"
-				item: { count: 1, id: "constructionstick:copper_stick" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(constructionstick:construction_sticks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.5d
