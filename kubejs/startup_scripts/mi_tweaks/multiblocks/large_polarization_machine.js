@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY DINO FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 let LARGE_POLARIZATION_MACHINE;

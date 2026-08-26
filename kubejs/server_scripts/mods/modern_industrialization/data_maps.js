@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY DINO FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 // Adapted from Team AOE's Data maps script for Craftoria (https://github.com/TeamAOF/Craftoria/blob/4b045109f126f27a0cc584cdb0b3c1edbed11c8e/kubejs/server_scripts/Mods/ModernIndustrialization/DataMaps.js#L4)

@@ -72,8 +72,8 @@ ItemEvents.modifyTooltips(event => {
 
     // -- ALUMINUM -- //
     createStandardTooltip(
-        event, 
-        '#c:ores/bauxite', 
+        event,
+        '#c:ores/bauxite',
         'Bauxite',
         '-32',
         '48',
@@ -112,7 +112,7 @@ ItemEvents.modifyTooltips(event => {
             'Lignite Coal (40%)'
         );
     });
-    
+
     // -- COPPER -- //
     createStandardTooltip(
         event,
@@ -407,7 +407,7 @@ ItemEvents.modifyTooltips(event => {
         'Iron (10%)'
     );
 
-    /* 
+    /*
         Ores that are only part of a deposit. I'm not concrete on this solution, but it should be intuitive enough
     */
     // -- ANCIENT DEBRIS -- //
@@ -525,7 +525,7 @@ let createStandardTooltip = (event, item, name, minY, maxY, dimension, weight, s
             Text.aqua('Dimension: '),
             Text.green(dimension)
         ]));
-        
+
         // Line 4
         tooltip.add(Text.join([
             Text.aqua('Rarity: '),
@@ -628,7 +628,7 @@ let createBiomeSpecificTooltip = (event, item, name, minY, maxY, dimension, biom
             Text.aqua('Biome: '),
             Text.green(biome)
         ]));
-        
+
         // Line 5
         tooltip.add(Text.join([
             Text.aqua('Rarity: '),

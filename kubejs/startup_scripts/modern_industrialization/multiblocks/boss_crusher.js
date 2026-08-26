@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY GW-DEV FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 let BOSS_CRUSHER;

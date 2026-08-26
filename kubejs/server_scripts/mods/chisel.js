@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC AND DINO FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 const chisel = Ingredient.of('@chisel')
     .except('chisel:chisel')
