@@ -54,6 +54,30 @@ In addition to the file organization, the code should also match a certain forma
 
 New materials, fluids, etc. for MI should be placed in the corresponding startup script in the `modern_industrialization` subfolder. It is expected to match the formatting given within that file. Any new multiblocks should utilize the ShapeBuilder functionality added by Modern Industrialization.
 
+## Translations
+
+Before we begin, we would appreciate any translation contributions to be made by someone who is either native or extremely fluent in the language they are translating. AI generated translations will not be accepted. Major translation files are located in four different directories:
+
+- `kubejs/assets/kubejs/lang/en_us.json`
+- `kubejs/assets/modern_industrialization/lang/en_us.json`
+- `kubejs/client_scripts/lang.js`
+- `config/ftbquests/lang/en_us.snbt`
+
+For the KubeJS and Modern Industrialization language files, copy the `en_us.json` and rename the new files to your locale code (i.e. `ru_ru.json`)
+
+For the `lang.js` client script, you will have to add a new event handler for your locale code, following the Russian example, it would look like this:
+
+```
+ClientEvents.lang('ru_ru', (event) => {
+  ...
+}
+```
+Only change the second parameter string in the `event.renameItem()` method!
+
+Lastly, for the FTBQuests language file, copy the `en_us.snbt` file and rename the copy to your language locale code (i.e. `ru_ru.snbt`). You will only change values encapsulated in quotation marks (`""`). Do not adjust any other parts of the file or you will break it!
+
+When you're done, make a PR to the main branch of this repository and we will review your translations. People who make significant translation efforts will receive an ingame cape! To be eligible, you must be in the Discord so we can get your Minecraft name.
+
 ## Design Philosophy
 
 While changes are welcome, they should fall in line with how the pack is overall designed. I've spent the last three months modifying progression, recipes, and designing a questbook to best guide players through the pack. To ensure the best outcome, I adhered to the following principles:

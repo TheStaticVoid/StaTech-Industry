@@ -15,7 +15,6 @@ StartupEvents.registry('block', (event) => {
     decorativeCopper.forEach(([id, name]) => {
         event
             .create(`kubejs:${id}`)
-            .displayName(name)
             .soundType('copper')
             .requiresTool(true)
             .hardness(3)
@@ -33,7 +32,6 @@ StartupEvents.registry('block', (event) => {
     glowingPillars.forEach(([id, name]) => {
         event
             .create(`kubejs:${id}`)
-            .displayName(name)
             .soundType('stone')
             .requiresTool(true)
             .hardness(6)
@@ -48,7 +46,6 @@ StartupEvents.registry('block', (event) => {
 
     event
         .create(`kubejs:borosilicate_glass`)
-        .displayName('Borosilicate Glass')
         .glassSoundType()
         .requiresTool(true)
         .hardness(2)
@@ -59,7 +56,6 @@ StartupEvents.registry('block', (event) => {
         .tagBlock('c:glass_blocks');
     event
         .create('kubejs:speedy_concrete')
-        .displayName('Speedy Concrete')
         .soundType('stone')
         .requiresTool(true)
         .hardness(4)
@@ -68,7 +64,6 @@ StartupEvents.registry('block', (event) => {
 
     event
         .create(`kubejs:computer_casing`)
-        .displayName('Computer Casing')
         .soundType('copper')
         .requiresTool(true)
         .hardness(3)
@@ -77,7 +72,6 @@ StartupEvents.registry('block', (event) => {
 
     event
         .create(`kubejs:charcoal_block`)
-        .displayName('Charcoal Block')
         .soundType('stone')
         .requiresTool(true)
         .hardness(5)
@@ -94,7 +88,6 @@ StartupEvents.registry('block', (event) => {
     tieredProbeComputers.forEach(([id, name]) => {
         event
             .create(`kubejs:${id}`)
-            .displayName(name)
             .soundType('stone')
             .requiresTool(true)
             .hardness(6)
