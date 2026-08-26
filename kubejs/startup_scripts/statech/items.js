@@ -322,7 +322,7 @@ ItemEvents.modification((event) => {
     });
     // -- DIAMOND HAMMERS -- //
     event.modify('justhammers:diamond_hammer', (item) => {
-        item.maxDamage = 15227; // 3.10
+        item.maxDamage = 6140; // 1.25
         item.tool = {
             defaultMiningSpeed: 1,
             damagePerBlock: 1,
@@ -340,7 +340,7 @@ ItemEvents.modification((event) => {
         };
     });
     event.modify('justhammers:diamond_impact_hammer', (item) => {
-        item.maxDamage = 34264; // 3.10
+        item.maxDamage = 13816; // 1.25
         item.tool = {
             defaultMiningSpeed: 1,
             damagePerBlock: 1,
@@ -358,7 +358,7 @@ ItemEvents.modification((event) => {
         };
     });
     event.modify('justhammers:diamond_reinforced_hammer', (item) => {
-        item.maxDamage = 34264; // 3.10
+        item.maxDamage = 13816; // 1.25
         item.tool = {
             defaultMiningSpeed: 1,
             damagePerBlock: 1,
@@ -376,7 +376,7 @@ ItemEvents.modification((event) => {
         };
     });
     event.modify('justhammers:diamond_reinforced_impact_hammer', (item) => {
-        item.maxDamage = 42829; // 3.10
+        item.maxDamage = 17270; // 1.25
         item.tool = {
             defaultMiningSpeed: 1,
             damagePerBlock: 1,
@@ -394,7 +394,7 @@ ItemEvents.modification((event) => {
         };
     });
     event.modify('justhammers:diamond_destructor_hammer', (item) => {
-        item.maxDamage = 53537; // 3.10
+        item.maxDamage = 21587; // 1.25
         item.tool = {
             defaultMiningSpeed: 1,
             damagePerBlock: 1,
@@ -413,7 +413,7 @@ ItemEvents.modification((event) => {
     });
     // -- NETHERITE HAMMERS -- //
     event.modify('justhammers:netherite_hammer', (item) => {
-        item.maxDamage = 19795; // 1.3
+        item.maxDamage = 7982; // 1.3
         item.tool = {
             defaultMiningSpeed: 1,
             damagePerBlock: 1,
@@ -431,7 +431,7 @@ ItemEvents.modification((event) => {
         };
     });
     event.modify('justhammers:netherite_impact_hammer', (item) => {
-        item.maxDamage = 44543; // 1.3
+        item.maxDamage = 17960; // 1.3
         item.tool = {
             defaultMiningSpeed: 1,
             damagePerBlock: 1,
@@ -449,7 +449,7 @@ ItemEvents.modification((event) => {
         };
     });
     event.modify('justhammers:netherite_reinforced_hammer', (item) => {
-        item.maxDamage = 44543; // 1.3
+        item.maxDamage = 17960; // 1.3
         item.tool = {
             defaultMiningSpeed: 1,
             damagePerBlock: 1,
@@ -467,7 +467,7 @@ ItemEvents.modification((event) => {
         };
     });
     event.modify('justhammers:netherite_reinforced_impact_hammer', (item) => {
-        item.maxDamage = 55677; // 1.3
+        item.maxDamage = 22451; // 1.3
         item.tool = {
             defaultMiningSpeed: 1,
             damagePerBlock: 1,
@@ -485,7 +485,7 @@ ItemEvents.modification((event) => {
         };
     });
     event.modify('justhammers:netherite_destructor_hammer', (item) => {
-        item.maxDamage = 69598; // 1.3
+        item.maxDamage = 28063; // 1.3
         item.tool = {
             defaultMiningSpeed: 1,
             damagePerBlock: 1,
@@ -567,8 +567,8 @@ ItemEvents.modification((event) => {
         ['copper', 735, 3, 'stone'],
         ['bronze', 1368, 4.5, 'iron'],
         ['steel', 4912, 5.5, 'diamond'],
-        ['diamond', 5853, 6, 'diamond'],
-        ['netherite', 7616, 7, 'netherite'],
+        ['diamond', 6140, 6, 'diamond'],
+        ['netherite', 7982, 7, 'netherite'],
         ['gold', 120, 10, 'gold'],
     ];
     lumberaxesMaterialCharacteristics.forEach((lumberaxe) => {
@@ -685,9 +685,7 @@ StartupEvents.registry('item', (event) => {
                 ])
         );
 
-    event
-        .create('lens_mold')
-        .unstackable();
+    event.create('lens_mold').unstackable();
 
     event
         .create('short_range_lens')
@@ -764,34 +762,21 @@ StartupEvents.registry('item', (event) => {
             '§aDeliver using a Research Probe\n§cCauses a star to enter supernova'
         );
 
-    event
-        .create('dark_matter')
-        .rarity('Rare');
+    event.create('dark_matter').rarity('Rare');
 
     event
         .create('antimatter_housing')
         .tooltip('§aUsed to safely store antimatter');
 
-    event
-        .create('antimatter')
-        .rarity('Epic')
-        .tooltip('§4What should not be');
+    event.create('antimatter').rarity('Epic').tooltip('§4What should not be');
 
-    event
-        .create('contained_antimatter')
-        .rarity('Epic');
+    event.create('contained_antimatter').rarity('Epic');
 
-    event
-        .create('basic_space_circuit')
-        .rarity('Uncommon');
+    event.create('basic_space_circuit').rarity('Uncommon');
 
-    event
-        .create('advanced_space_circuit')
-        .rarity('Rare');
+    event.create('advanced_space_circuit').rarity('Rare');
 
-    event
-        .create('anomalous_space_circuit')
-        .rarity('Epic');
+    event.create('anomalous_space_circuit').rarity('Epic');
 
     event.create('core_fragment').rarity('Rare');
 
@@ -843,9 +828,9 @@ StartupEvents.registry('item', (event) => {
 
     event.create('uu_matter').rarity('Epic');
 
-    event.create('diamond_upgrade_smithing_template')
+    event.create('diamond_upgrade_smithing_template');
 
-    event.create('silicon_extremely_p_doped_plate')
+    event.create('silicon_extremely_p_doped_plate');
 
     event.create('battery_casing');
 
@@ -898,15 +883,9 @@ StartupEvents.registry('item', (event) => {
     });
 
     toolSet.forEach((tool) => {
-        event
-            .create(`bronze_${tool[0]}`, `${tool[0]}`)
-            .tier('bronze');
-        event
-            .create(`steel_${tool[0]}`, `${tool[0]}`)
-            .tier('steel');
-        event
-            .create(`copper_${tool[0]}`, `${tool[0]}`)
-            .tier('copper');
+        event.create(`bronze_${tool[0]}`, `${tool[0]}`).tier('bronze');
+        event.create(`steel_${tool[0]}`, `${tool[0]}`).tier('steel');
+        event.create(`copper_${tool[0]}`, `${tool[0]}`).tier('copper');
     });
 
     // -- LUMBERAXES -- //
@@ -920,9 +899,7 @@ StartupEvents.registry('item', (event) => {
         ['netherite', 'Netherite'],
     ];
     LUMBERAXE_MATS.forEach((material) => {
-        event
-            .create(`${material[0]}_lumberaxe`, 'axe')
-            .tier(`${material[0]}`);
+        event.create(`${material[0]}_lumberaxe`, 'axe').tier(`${material[0]}`);
     });
 
     // -- STEEL EQUIPMENT -- //
