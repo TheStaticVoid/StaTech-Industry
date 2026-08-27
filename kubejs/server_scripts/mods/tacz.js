@@ -952,7 +952,7 @@ ServerEvents.recipes((event) => {
             [16, mi('aluminum_ring')],
             [4, mi('invar_large_plate')],
             [4, mi('electrum_block')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:p320",
@@ -988,7 +988,7 @@ ServerEvents.recipes((event) => {
             [2, mi('electrum_block')],
             [2, mc('netherite_ingot')],
             [8, mi('diamond_plate')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:taurus943",
@@ -1031,7 +1031,7 @@ ServerEvents.recipes((event) => {
             [2, mc('redstone_block')],
             [4, mc('oak_log')],
             [2, mc('netherite_ingot')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:m9a4",
@@ -1135,7 +1135,7 @@ ServerEvents.recipes((event) => {
             [4, mc('netherite_ingot')],
             [4, mc('leather')],
             [2, mc('blaze_rod')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:scar_l",
@@ -1144,7 +1144,7 @@ ServerEvents.recipes((event) => {
             [4, mc('netherite_ingot')],
             [4, mc('leather')],
             [2, mc('blaze_rod')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:m16a1",
@@ -1225,7 +1225,7 @@ ServerEvents.recipes((event) => {
             [16, mi('aluminum_plate')],
             [4, mi('invar_ring')],
             [4, mc('leather')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:qbz_191",
@@ -1288,7 +1288,7 @@ ServerEvents.recipes((event) => {
             [16, mi('aluminum_plate')],
             [4, mi('invar_ring')],
             [4, mc('leather')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:m1014",
@@ -1297,7 +1297,7 @@ ServerEvents.recipes((event) => {
             [16, mi('aluminum_plate')],
             [16, mi('invar_ring')],
             [4, mc('leather')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:hk_mp5a5",
@@ -1324,7 +1324,7 @@ ServerEvents.recipes((event) => {
             [16, mi('aluminum_rod')],
             [16, mi('aluminum_ring')],
             [4, mc('leather')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:ump45",
@@ -1342,7 +1342,7 @@ ServerEvents.recipes((event) => {
             [16, mi('aluminum_rod')],
             [16, mi('aluminum_ring')],
             [4, mc('leather')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:rpg7",
@@ -1351,7 +1351,7 @@ ServerEvents.recipes((event) => {
             [16, mi('aluminum_rod')],
             [16, mi('aluminum_ring')],
             [16, mc('oak_log')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:m320",
@@ -1360,7 +1360,7 @@ ServerEvents.recipes((event) => {
             [16, mi('aluminum_rod')],
             [16, mi('aluminum_ring')],
             null,
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:m249",
@@ -1369,7 +1369,7 @@ ServerEvents.recipes((event) => {
             [16, mi('aluminum_ring')],
             [16, mi('aluminum_rod')],
             [8, mc('blaze_rod')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:rpk",
@@ -1378,7 +1378,7 @@ ServerEvents.recipes((event) => {
             [16, mi('steel_ring')],
             [16, mc('oak_log')],
             [4, mc('leather')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             "tacz:minigun",
@@ -1396,7 +1396,7 @@ ServerEvents.recipes((event) => {
             [16, mi('invar_rod')],
             [8, mc('blaze_rod')],
             [2, mi('diamond_large_plate')],
-            [100, mi('polytetrafluoroethylene_plate')]
+            [10, mi('polytetrafluoroethylene_plate')]
         ),
     ];
 
