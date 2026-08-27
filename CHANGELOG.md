@@ -42,8 +42,12 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - Clean up mob model + ore sample registration.
 - **Made pack more translator friendly.**
 - Updated AE2 quest organization.
-- Nerfed the durability of JustHammers to be more balanced
-- Removed Jon Bartman
+- Nerfed the durability of JustHammers to be more balanced.
+- Fixed language file bugs.
+- **Re-added custom TACZ recipes.**
+- Fixed Glowing Steel Pillar blockstates.
+- Fixed PTFE amounts in gun recipes.
+- Removed Jon Bartman.
 
 ## [2.0.0-rc5]
 
