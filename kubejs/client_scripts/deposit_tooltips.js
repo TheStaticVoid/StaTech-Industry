@@ -3,7 +3,7 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
-ItemEvents.modifyTooltips(event => {
+ItemEvents.modifyTooltips((event) => {
     const SHIFT_LABEL = Text.yellow('Hold SHIFT to view deposit info');
 
     const ORES_WITH_VEIN = [
@@ -26,10 +26,12 @@ ItemEvents.modifyTooltips(event => {
         'minecraft:coal_ore',
         'minecraft:deepslate_coal_ore',
         'minecraft:redstone_ore',
-        'minecraft:deepslate_redstone_ore'
+        'minecraft:deepslate_redstone_ore',
     ];
-    ORES_WITH_VEIN.forEach(id => {
-        event.modify(id, {shift: false}, (tooltip) => tooltip.add(SHIFT_LABEL));
+    ORES_WITH_VEIN.forEach((id) => {
+        event.modify(id, { shift: false }, (tooltip) =>
+            tooltip.add(SHIFT_LABEL)
+        );
     });
 
     const ORES_PART_OF_VEIN = [
@@ -44,27 +46,27 @@ ItemEvents.modifyTooltips(event => {
         '#c:ores/sapphire',
         '#c:ores/antimony',
         '#c:ores/kernite',
-        'minecraft:ancient_debris'
+        'minecraft:ancient_debris',
     ];
 
     const NON_NATURAL_ORES = [
         '#c:ores/calorite',
         '#c:ores/desh',
         '#c:ores/moon_ice',
-        '#c:ores/ostrum'
+        '#c:ores/ostrum',
     ];
-    NON_NATURAL_ORES.forEach(id => {
+    NON_NATURAL_ORES.forEach((id) => {
         event.modify(id, (tooltip) => {
-            tooltip.add(Text.red('Does not generate naturally'))
+            tooltip.add(Text.red('Does not generate naturally'));
         });
     });
 
     const NON_MODIFIED_ORES = [
         '#spectrum:ores',
         'spectrum:blackslag_coal_ore',
-        'spectrum:blackslag_redstone_ore'
+        'spectrum:blackslag_redstone_ore',
     ];
-    NON_MODIFIED_ORES.forEach(id => {
+    NON_MODIFIED_ORES.forEach((id) => {
         event.modify(id, (tooltip) => {
             tooltip.add(Text.red('Does not generate as part of a deposit'));
         });
@@ -78,17 +80,14 @@ ItemEvents.modifyTooltips(event => {
         '-32',
         '48',
         'Overworld',
-        '70',
+        '175',
         '1200-1700',
         'Iron (20%)'
     );
 
     // -- COAL -- //
-    const REGULAR_COAL = [
-        'minecraft:coal_ore',
-        'minecraft:deepslate_coal_ore'
-    ];
-    REGULAR_COAL.forEach(id => {
+    const REGULAR_COAL = ['minecraft:coal_ore', 'minecraft:deepslate_coal_ore'];
+    REGULAR_COAL.forEach((id) => {
         createStandardTooltip(
             event,
             id,
@@ -96,7 +95,7 @@ ItemEvents.modifyTooltips(event => {
             '0',
             '80',
             'Overworld',
-            '40',
+            '100',
             '1500-1800',
             'Lignite Coal (40%)'
         );
@@ -107,7 +106,7 @@ ItemEvents.modifyTooltips(event => {
             108,
             256,
             'Mountain',
-            '15',
+            '35',
             '800-1000',
             'Lignite Coal (40%)'
         );
@@ -121,8 +120,8 @@ ItemEvents.modifyTooltips(event => {
         '-16',
         '108',
         'Overworld',
-        '45',
-        '1200-1600',
+        '110',
+        '1200-1600'
     );
 
     // -- DIAMOND -- //
@@ -133,7 +132,7 @@ ItemEvents.modifyTooltips(event => {
         '-64',
         '-16',
         'Overworld',
-        '100',
+        '250',
         '200-300',
         'Coal (10%), Sapphire (10%), Fluorite (10%)'
     );
@@ -143,7 +142,7 @@ ItemEvents.modifyTooltips(event => {
         '-16',
         '16',
         'Taiga',
-        '70',
+        '175',
         '200-300',
         'Coal (10%), Sapphire (10%), Fluorite (10%)'
     );
@@ -157,17 +156,14 @@ ItemEvents.modifyTooltips(event => {
         '256',
         'Overworld',
         'Mountain',
-        '25',
+        '60',
         '200-400',
         'Fluorite (10%), Peridot (10%)'
     );
 
     // -- GOLD -- //
-    const REGULAR_GOLD = [
-        'minecraft:gold_ore',
-        'minecraft:deepslate_gold_ore'
-    ];
-    REGULAR_GOLD.forEach(id => {
+    const REGULAR_GOLD = ['minecraft:gold_ore', 'minecraft:deepslate_gold_ore'];
+    REGULAR_GOLD.forEach((id) => {
         createStandardTooltip(
             event,
             id,
@@ -175,7 +171,7 @@ ItemEvents.modifyTooltips(event => {
             '-64',
             '16',
             'Overworld',
-            '70',
+            '175',
             '600-800',
             'Silver (30%)'
         );
@@ -186,7 +182,7 @@ ItemEvents.modifyTooltips(event => {
             '-64',
             '16',
             'Badlands',
-            '10',
+            '25',
             '500-750',
             'Silver (30%)'
         );
@@ -200,7 +196,7 @@ ItemEvents.modifyTooltips(event => {
         '16',
         '96',
         'Overworld',
-        '50',
+        '125',
         '1100-1500',
         'Nickel (20%)'
     );
@@ -211,7 +207,7 @@ ItemEvents.modifyTooltips(event => {
         '108',
         '256',
         'Mountain',
-        '10',
+        '25',
         '900-1300',
         'Nickel (20%)'
     );
@@ -224,7 +220,7 @@ ItemEvents.modifyTooltips(event => {
         '-64',
         '8',
         'Overworld',
-        '80',
+        '200',
         '400-600',
         'Ruby (10%), Sapphire (10%), Perdiot (10%), Fluorite (10%)'
     );
@@ -235,7 +231,7 @@ ItemEvents.modifyTooltips(event => {
         '-16',
         '16',
         'Taiga',
-        '40',
+        '100',
         '400-600',
         'Ruby (10%), Sapphire (10%), Perdiot (10%), Fluorite (10%)'
     );
@@ -248,7 +244,7 @@ ItemEvents.modifyTooltips(event => {
         '16',
         '64',
         'Overworld',
-        '60',
+        '150',
         '1300-1500',
         'Silver (30%)'
     );
@@ -261,7 +257,7 @@ ItemEvents.modifyTooltips(event => {
         '8',
         '118',
         'Nether',
-        '40',
+        '100',
         '500-1000',
         'Glowstone (5%), Ancient Debris (1%)'
     );
@@ -274,7 +270,7 @@ ItemEvents.modifyTooltips(event => {
         '8',
         '118',
         'Nether',
-        '40',
+        '100',
         '700-1400',
         'Glowstone (5%), Ancient Debris (1%)'
     );
@@ -287,7 +283,7 @@ ItemEvents.modifyTooltips(event => {
         '-64',
         '64',
         'Overworld',
-        '80',
+        '200',
         '800-1100',
         'Iron (30%)'
     );
@@ -300,7 +296,7 @@ ItemEvents.modifyTooltips(event => {
         '-64',
         '0',
         'Overworld',
-        '200',
+        '500',
         '150-250',
         'Iridium (10%), Monazite (20%)'
     );
@@ -308,9 +304,9 @@ ItemEvents.modifyTooltips(event => {
     // -- QUARTZ -- //
     const REGULAR_QUARTZ = [
         'modern_industrialization:quartz_ore',
-        'modern_industrialization:deepslate_quartz_ore'
+        'modern_industrialization:deepslate_quartz_ore',
     ];
-    REGULAR_QUARTZ.forEach(id => {
+    REGULAR_QUARTZ.forEach((id) => {
         createStandardTooltip(
             event,
             id,
@@ -318,7 +314,7 @@ ItemEvents.modifyTooltips(event => {
             '-32',
             '32',
             'Overworld',
-            '60',
+            '150',
             '800-1000',
             'Antimony (30%), Kernite (10%)'
         );
@@ -327,9 +323,9 @@ ItemEvents.modifyTooltips(event => {
     // -- REDSTONE -- //
     const REGULAR_REDSTONE = [
         'minecraft:redstone_ore',
-        'minecraft:deepslate_redstone_ore'
+        'minecraft:deepslate_redstone_ore',
     ];
-    REGULAR_REDSTONE.forEach(id => {
+    REGULAR_REDSTONE.forEach((id) => {
         createStandardTooltip(
             event,
             id,
@@ -337,7 +333,7 @@ ItemEvents.modifyTooltips(event => {
             '-64',
             '16',
             'Overworld',
-            '60',
+            '150',
             '700-1000',
             'Ruby (10%)'
         );
@@ -352,7 +348,7 @@ ItemEvents.modifyTooltips(event => {
         '96',
         'Overworld',
         'Ocean',
-        '80',
+        '200',
         '900-1200'
     );
 
@@ -364,7 +360,7 @@ ItemEvents.modifyTooltips(event => {
         '0',
         '108',
         'Overworld',
-        '60',
+        '150',
         '900-1400'
     );
 
@@ -376,7 +372,7 @@ ItemEvents.modifyTooltips(event => {
         '-64',
         '-16',
         'Overworld',
-        '200',
+        '500',
         '300-500',
         'Tungsten (30%), Monazite (10%)'
     );
@@ -389,7 +385,7 @@ ItemEvents.modifyTooltips(event => {
         '-64',
         '0',
         'Overworld',
-        '250',
+        '625',
         '250-500',
         'Iridium (10%)'
     );
@@ -402,7 +398,7 @@ ItemEvents.modifyTooltips(event => {
         '0',
         '64',
         'Overworld',
-        '80',
+        '200',
         '800-1100',
         'Iron (10%)'
     );
@@ -411,256 +407,271 @@ ItemEvents.modifyTooltips(event => {
         Ores that are only part of a deposit. I'm not concrete on this solution, but it should be intuitive enough
     */
     // -- ANCIENT DEBRIS -- //
-    createPartOfTooltip(
-        event,
-        'minecraft:ancient_debris',
-        'Ancient Debris',
-        ['Nether Quartz', 'Nether Gold']
-    );
+    createPartOfTooltip(event, 'minecraft:ancient_debris', 'Ancient Debris', [
+        'Nether Quartz',
+        'Nether Gold',
+    ]);
 
     // -- ANTIMONY -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/antimony',
-        'Antimony',
-        ['Quartz']
-    );
+    createPartOfTooltip(event, '#c:ores/antimony', 'Antimony', ['Quartz']);
 
     // -- FLUORITE -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/fluorite',
-        'Fluorite',
-        ['Diamond', 'Lapis']
-    );
+    createPartOfTooltip(event, '#c:ores/fluorite', 'Fluorite', [
+        'Diamond',
+        'Lapis',
+    ]);
 
     // -- IRIDIUM -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/iridium',
-        'Iridium',
-        ['Platinum', 'Uranium']
-    );
+    createPartOfTooltip(event, '#c:ores/iridium', 'Iridium', [
+        'Platinum',
+        'Uranium',
+    ]);
 
     // -- KERNITE -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/kernite',
-        'Kernite',
-        ['Quartz']
-    );
+    createPartOfTooltip(event, '#c:ores/kernite', 'Kernite', ['Quartz']);
 
     // -- LIGNITE COAL -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/lignite_coal',
-        'Lignite Coal',
-        ['Coal']
-    );
+    createPartOfTooltip(event, '#c:ores/lignite_coal', 'Lignite Coal', [
+        'Coal',
+    ]);
 
     // -- MONAZITE -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/monazite',
-        'Monazite',
-        ['Platinum', 'Titanium']
-    );
+    createPartOfTooltip(event, '#c:ores/monazite', 'Monazite', [
+        'Platinum',
+        'Titanium',
+    ]);
 
     // -- PERIDOT -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/peridot',
-        'Peridot',
-        ['Emerald', 'Lapis']
-    );
+    createPartOfTooltip(event, '#c:ores/peridot', 'Peridot', [
+        'Emerald',
+        'Lapis',
+    ]);
 
     // -- RUBY -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/ruby',
-        'Ruby',
-        ['Redstone', 'Lapis']
-    );
+    createPartOfTooltip(event, '#c:ores/ruby', 'Ruby', ['Redstone', 'Lapis']);
 
     // -- SAPPHIRE -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/sapphire',
-        'Sapphire',
-        ['Diamond', 'Lapis']
-    );
+    createPartOfTooltip(event, '#c:ores/sapphire', 'Sapphire', [
+        'Diamond',
+        'Lapis',
+    ]);
 
     // -- SILVER -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/silver',
-        'Silver',
-        ['Gold', 'Lead']
-    );
+    createPartOfTooltip(event, '#c:ores/silver', 'Silver', ['Gold', 'Lead']);
 
     // -- TUNGSTEN -- //
-    createPartOfTooltip(
-        event,
-        '#c:ores/tungsten',
-        'Tungsten',
-        ['Titanium']
-    );
+    createPartOfTooltip(event, '#c:ores/tungsten', 'Tungsten', ['Titanium']);
 });
 
-let createStandardTooltip = (event, item, name, minY, maxY, dimension, weight, size, other_ores) => {
-    event.modify(item, {shift: true}, (tooltip) => {
+let createStandardTooltip = (
+    event,
+    item,
+    name,
+    minY,
+    maxY,
+    dimension,
+    weight,
+    size,
+    other_ores
+) => {
+    event.modify(item, { shift: true }, (tooltip) => {
         // Line 1
-        tooltip.add(Text.join([
-            Text.red('== '),
-            Text.gold(name),
-            Text.yellow(' Deposit Info '),
-            Text.red('==')
-        ]).bold());
+        tooltip.add(
+            Text.join([
+                Text.red('== '),
+                Text.gold(name),
+                Text.yellow(' Deposit Info '),
+                Text.red('=='),
+            ]).bold()
+        );
 
         // Line 2 (blank)
         // tooltip.add(Text.literal(''));
 
         // Line 3
-        tooltip.add(Text.join([
-            Text.aqua('Dimension: '),
-            Text.green(dimension)
-        ]));
+        tooltip.add(
+            Text.join([Text.aqua('Dimension: '), Text.green(dimension)])
+        );
 
         // Line 4
-        tooltip.add(Text.join([
-            Text.aqua('Rarity: '),
-            Text.green('1 in '),
-            Text.green(weight),
-            Text.green(' chunks')
-        ]));
+        tooltip.add(
+            Text.join([
+                Text.aqua('Rarity: '),
+                Text.green('1 in '),
+                Text.green(weight),
+                Text.green(' chunks'),
+            ])
+        );
 
         // Line 5
-        tooltip.add(Text.join([
-            Text.aqua('Y-Levels: '),
-            Text.green(minY),
-            Text.green(' -> '),
-            Text.green(maxY)
-        ]));
+        tooltip.add(
+            Text.join([
+                Text.aqua('Y-Levels: '),
+                Text.green(minY),
+                Text.green(' -> '),
+                Text.green(maxY),
+            ])
+        );
 
         // Line 6
-        tooltip.add(Text.join([
-            Text.aqua('Size: '),
-            Text.green(size),
-            Text.green(' blocks')
-        ]));
+        tooltip.add(
+            Text.join([
+                Text.aqua('Size: '),
+                Text.green(size),
+                Text.green(' blocks'),
+            ])
+        );
 
         // Line 7
         if (other_ores) {
-            tooltip.add(Text.join([
-                Text.aqua('Other ores in deposit: '),
-                Text.green(other_ores)
-            ]));
+            tooltip.add(
+                Text.join([
+                    Text.aqua('Other ores in deposit: '),
+                    Text.green(other_ores),
+                ])
+            );
         }
     });
-}
+};
 
-let createBonusDepositTooltip = (event, item, minY, maxY, biome, weight, size, other_ores) => {
-    event.modify(item, {shift: true}, (tooltip) => {
+let createBonusDepositTooltip = (
+    event,
+    item,
+    minY,
+    maxY,
+    biome,
+    weight,
+    size,
+    other_ores
+) => {
+    event.modify(item, { shift: true }, (tooltip) => {
         // Separating line
         tooltip.add(Text.yellow('--------------'));
 
         // Line 1
-        tooltip.add(Text.join([
-            Text.aqua('Special deposits found in: '),
-            Text.green(biome),
-            Text.green(' biomes')
-        ]));
+        tooltip.add(
+            Text.join([
+                Text.aqua('Special deposits found in: '),
+                Text.green(biome),
+                Text.green(' biomes'),
+            ])
+        );
 
         // Line 2
-        tooltip.add(Text.join([
-            Text.aqua('Rarity: '),
-            Text.green('1 in '),
-            Text.green(weight),
-            Text.green(' chunks')
-        ]));
+        tooltip.add(
+            Text.join([
+                Text.aqua('Rarity: '),
+                Text.green('1 in '),
+                Text.green(weight),
+                Text.green(' chunks'),
+            ])
+        );
 
         // Line 3
-        tooltip.add(Text.join([
-            Text.aqua('Y-Level: '),
-            Text.green(minY),
-            Text.green(' -> '),
-            Text.green(maxY)
-        ]));
+        tooltip.add(
+            Text.join([
+                Text.aqua('Y-Level: '),
+                Text.green(minY),
+                Text.green(' -> '),
+                Text.green(maxY),
+            ])
+        );
 
         // Line 4
-        tooltip.add(Text.join([
-            Text.aqua('Size: '),
-            Text.green(size),
-            Text.green(' blocks')
-        ]));
+        tooltip.add(
+            Text.join([
+                Text.aqua('Size: '),
+                Text.green(size),
+                Text.green(' blocks'),
+            ])
+        );
 
         // Line 5
         if (other_ores) {
-            tooltip.add(Text.join([
-                Text.aqua('Other ores in deposit: '),
-                Text.green(other_ores)
-            ]));
+            tooltip.add(
+                Text.join([
+                    Text.aqua('Other ores in deposit: '),
+                    Text.green(other_ores),
+                ])
+            );
         }
     });
-}
+};
 
-let createBiomeSpecificTooltip = (event, item, name, minY, maxY, dimension, biome, weight, size, other_ores) => {
-    event.modify(item, {shift: true}, (tooltip) => {
+let createBiomeSpecificTooltip = (
+    event,
+    item,
+    name,
+    minY,
+    maxY,
+    dimension,
+    biome,
+    weight,
+    size,
+    other_ores
+) => {
+    event.modify(item, { shift: true }, (tooltip) => {
         // Line 1
-        tooltip.add(Text.join([
-            Text.red('== '),
-            Text.gold(name),
-            Text.yellow(' Deposit Info '),
-            Text.red('==')
-        ]).bold());
+        tooltip.add(
+            Text.join([
+                Text.red('== '),
+                Text.gold(name),
+                Text.yellow(' Deposit Info '),
+                Text.red('=='),
+            ]).bold()
+        );
 
         // Line 2 (blank)
         // tooltip.add(Text.literal(''));
 
         // Line 3
-        tooltip.add(Text.join([
-            Text.aqua('Dimension: '),
-            Text.green(dimension)
-        ]));
+        tooltip.add(
+            Text.join([Text.aqua('Dimension: '), Text.green(dimension)])
+        );
 
         // Line 4
-        tooltip.add(Text.join([
-            Text.aqua('Biome: '),
-            Text.green(biome)
-        ]));
+        tooltip.add(Text.join([Text.aqua('Biome: '), Text.green(biome)]));
 
         // Line 5
-        tooltip.add(Text.join([
-            Text.aqua('Rarity: '),
-            Text.green('1 in '),
-            Text.green(weight),
-            Text.green(' chunks')
-        ]));
+        tooltip.add(
+            Text.join([
+                Text.aqua('Rarity: '),
+                Text.green('1 in '),
+                Text.green(weight),
+                Text.green(' chunks'),
+            ])
+        );
 
         // Line 6
-        tooltip.add(Text.join([
-            Text.aqua('Y-Levels: '),
-            Text.green(minY),
-            Text.green(' -> '),
-            Text.green(maxY)
-        ]));
+        tooltip.add(
+            Text.join([
+                Text.aqua('Y-Levels: '),
+                Text.green(minY),
+                Text.green(' -> '),
+                Text.green(maxY),
+            ])
+        );
 
         // Line 7
-        tooltip.add(Text.join([
-            Text.aqua('Size: '),
-            Text.green(size),
-            Text.green(' blocks')
-        ]));
+        tooltip.add(
+            Text.join([
+                Text.aqua('Size: '),
+                Text.green(size),
+                Text.green(' blocks'),
+            ])
+        );
 
         // Line 8
         if (other_ores) {
-            tooltip.add(Text.join([
-                Text.aqua('Other ores in deposit: '),
-                Text.green(other_ores)
-            ]));
+            tooltip.add(
+                Text.join([
+                    Text.aqua('Other ores in deposit: '),
+                    Text.green(other_ores),
+                ])
+            );
         }
     });
-}
+};
 
 let createPartOfTooltip = (event, item, item_name, deposits) => {
     event.modify(item, (tooltip) => {
@@ -668,11 +679,8 @@ let createPartOfTooltip = (event, item, item_name, deposits) => {
         tooltip.add(Text.yellow('Found in the these deposits:'));
 
         // Iterate for each deposit
-        deposits.forEach(name => {
-            tooltip.add(Text.join([
-                Text.yellow('- '),
-                Text.yellow(name)
-            ]));
+        deposits.forEach((name) => {
+            tooltip.add(Text.join([Text.yellow('- '), Text.yellow(name)]));
         });
     });
-}
+};
