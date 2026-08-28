@@ -108,10 +108,10 @@ ServerEvents.recipes((event) => {
         // -- DUST FROM ORE -- //
         forgeHammer(
             st(`${material}_dust`),
-            50,
+            30,
             1,
             { tag: `c:ores/${material}` },
-            { count: 3, id: mi(`${material}_dust`) }
+            { count: 2, id: mi(`${material}_dust`) }
         );
 
         // -- DUST FROM CRUSHED DUST -- //
