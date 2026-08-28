@@ -128,35 +128,35 @@ ServerEvents.generateData('after_mods', (event) => {
             values: {
                 'modern_industrialization:steel_machine_casing': {
                     beacon_color: '#3F3F3F',
-                    eu: 128,
-                    range: 24.0,
+                    eu: 64,
+                    range: 36.0,
                     translation_key:
                         'text.yet_another_industrialization.flight_pylon_tier_tiny',
                 },
                 'modern_industrialization:advanced_machine_casing': {
                     beacon_color: '#3FCAFF',
-                    eu: 512,
-                    range: 48.0,
+                    eu: 256,
+                    range: 64.0,
                     translation_key:
                         'text.yet_another_industrialization.flight_pylon_tier_small',
                 },
                 'modern_industrialization:turbo_machine_casing': {
                     beacon_color: '#C8C8DC',
-                    eu: 2048,
-                    range: 72.0,
+                    eu: 1024,
+                    range: 80.0,
                     translation_key:
                         'text.yet_another_industrialization.flight_pylon_tier_medium',
                 },
                 'modern_industrialization:highly_advanced_machine_casing': {
                     beacon_color: '#DCA0F0',
-                    eu: 8192,
+                    eu: 4096,
                     range: 96.0,
                     translation_key:
                         'text.yet_another_industrialization.flight_pylon_tier_large',
                 },
                 'modern_industrialization:quantum_machine_casing': {
                     beacon_color: '#E1E6F5',
-                    eu: 32768,
+                    eu: 16384,
                     range: 128.0,
                     translation_key:
                         'text.yet_another_industrialization.flight_pylon_tier_huge',
