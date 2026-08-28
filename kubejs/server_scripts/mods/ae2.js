@@ -70,6 +70,7 @@ ServerEvents.recipes((event) => {
         ae('network/crystal_resonance_generator'),
         ae('network/blocks/energy_dense_energy_cell'),
         'ae2netanalyser:analyser',
+        'merequester:requester',
     ];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
@@ -561,17 +562,6 @@ ServerEvents.recipes((event) => {
         })
         .id(st('import_bus'));
 
-    // -- STORAGE BUS -- //
-    /*     event.shaped(ae('storage_bus'), [
-        'ABC'
-    ],
-    {
-        A: mc('sticky_piston'),
-        B: ae('interface'),
-        C: mc('piston')
-    })
-    .id(st('storage_bus')); */
-
     // -- EXPORT BUS -- //
     event
         .shaped(ae('export_bus'), ['SFS', ' P '], {
@@ -619,6 +609,18 @@ ServerEvents.recipes((event) => {
             D: ae('sky_dust'),
         })
         .id(st('network_analyzer'));
+
+    // -- REQUESTER -- //
+    event
+        .shaped('merequester:requester', ['SIS', 'CAC', 'BDB'], {
+            S: mg('sky_steel_block'),
+            B: mg('sky_bronze_block'),
+            C: ae('crafting_accelerator'),
+            I: '#ae2:interface',
+            A: ea('concurrent_processor'),
+            D: mi('digital_circuit'),
+        })
+        .id(st('me_requester'));
 });
 
 ServerEvents.tags('item', (event) => {

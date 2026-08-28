@@ -4380,7 +4380,9 @@
 		""
 		"- The &elack of Ad Astra&r,"
 		"- The change from &eOh the Biomes You'll Go&r to &dNo Man's Land&r for world generation,"
-		"- The addition of &dExtended Industrialization&r and &dMI Tweaks&r,"
+		"- The &eremoval of Tech Reborn&r,"
+		"- &dCreate&r has been updated to &e0.6&r and is now &d&ocompletely optional&r&r,"
+		"- The addition of &dExtended Industrialization&r and &dMI Tweaks&r"
 		""
 		"{@pagebreak}"
 		"As such, most of the &6space exploration questline&r has been reworked into the progression with the new &bSpace Probe Launcher&r and &bProbe Computers&r progression gated by circuit progression. "
@@ -5197,7 +5199,11 @@
 		""
 		"You'll need a &aTesla Coil&r to connect it to for &bpower&r to be sent to items in your inventory."
 	]
-	quest.6758A5BC0D25974B.quest_desc: ["If you plan to use &eModern Dynamic&r pipes with your &6Modern Industrialization&r machines, you will quickly notice you &crun out of faces&r to plug the pipes into. Luckily, the &2Machine Extender&r has your back. To explain it simply, it &dextends the connection&r to the machine into itself, allowing you to &bconnect pipes to it that will count as a connection to the machine&r."]
+	quest.6758A5BC0D25974B.quest_desc: [
+		"If you plan to use &eModern Dynamic&r pipes with your &6Modern Industrialization&r machines, you will quickly notice you &crun out of faces&r to plug the pipes into. Luckily, the &2Machine Extender&r has your back. To explain it simply, it &dextends the connection&r to the machine into itself, allowing you to &bconnect pipes to it that will count as a connection to the machine&r."
+		""
+		"&oNote: the &2Machine Extender&r only works when placed on the &etop face&r of the machine.&r"
+	]
 	quest.6762FCBA521FFF4B.quest_desc: ["&aEthylene&r is used in the production of &3Ethylbenzene&r, &2Ethanol&r, and &bPolyethylene&r."]
 	quest.6765B4B8D870CDA0.quest_desc: [
 		"The &aSteam Turbine&r uses &7Steam&r to produce electricity. It converts every mb of &7Steam&r to 1 EU, up to 32 mb converted every tick."
