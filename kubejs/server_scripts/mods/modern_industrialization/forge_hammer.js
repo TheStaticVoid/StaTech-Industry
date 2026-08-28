@@ -108,19 +108,19 @@ ServerEvents.recipes((event) => {
         // -- DUST FROM ORE -- //
         forgeHammer(
             st(`${material}_dust`),
-            25,
+            50,
             1,
             { tag: `c:ores/${material}` },
-            { count: 4, id: mi(`${material}_dust`) }
+            { count: 3, id: mi(`${material}_dust`) }
         );
 
         // -- DUST FROM CRUSHED DUST -- //
         forgeHammer(
             st(`${material}_dust_alt`),
-            15,
+            10,
             1,
             { item: mi(`${material}_crushed_dust`) },
-            { count: 2, id: mi(`${material}_dust`) }
+            { count: 1, id: mi(`${material}_dust`) }
         );
     });
 
@@ -129,37 +129,47 @@ ServerEvents.recipes((event) => {
         if (material != 'tin') {
             forgeHammer(
                 st(`raw_${material}_from_ore`),
-                20,
+                30,
                 1,
                 { tag: `c:ores/${material}` },
-                { count: 4, id: mc(`raw_${material}`) }
+                { count: 3, id: mc(`raw_${material}`) }
             );
         } else {
             forgeHammer(
                 st(`raw_${material}_from_ore`),
-                20,
+                30,
                 1,
                 { tag: `c:ores/${material}` },
-                { count: 4, id: mi(`raw_${material}`) }
+                { count: 3, id: mi(`raw_${material}`) }
             );
         }
 
         // -- DUST FROM ORE -- //
-        forgeHammer(
-            st(`${material}_dust_from_ore`),
-            60,
-            1,
-            { tag: `c:ores/${material}` },
-            { count: 6, id: mi(`${material}_dust`) }
-        );
+        if (material != 'tin') {
+            forgeHammer(
+                st(`${material}_dust_from_ore`),
+                60,
+                1,
+                { tag: `c:ores/${material}` },
+                { count: 3, id: mi(`${material}_dust`) }
+            );
+        } else {
+            forgeHammer(
+                st(`${material}_dust_from_ore`),
+                60,
+                1,
+                { tag: `c:ores/${material}` },
+                { count: 3, id: mi(`${material}_dust`) }
+            );
+        }
 
         // -- DUST FROM RAW METAL -- //
         forgeHammer(
             st(`${material}_dust_from_raw_metal`),
-            15,
-            2,
+            10,
+            1,
             { tag: `c:raw_materials/${material}` },
-            { count: 3, id: mi(`${material}_dust`) }
+            { count: 1, id: mi(`${material}_dust`) }
         );
     });
 
