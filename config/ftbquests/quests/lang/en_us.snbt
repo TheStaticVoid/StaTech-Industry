@@ -4221,6 +4221,13 @@
 		"If you're having trouble forming the multiblock, you can hold the &eWrench&r to see the missing blocks and the errors. You can also hold a hatch to know where it can go."
 	]
 	quest.537D76EA2DFCE794.quest_subtitle: "High Throughput Smelting"
+	quest.5397B3A1202A4067.quest_desc: [
+		"The &dME Requester&r should &l&4not&r&r be used for &6MI crafting&r. If you choose to do so, &9&obuyer beware&r&r."
+		""
+		"[ \"See \", { \"text\": \"Autocrafting\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"62103F0E617EBA7C\" } } ]"
+		"for why you should &4&lnot&r&r use it."
+	]
+	quest.5397B3A1202A4067.quest_subtitle: "Do Not Use Me"
 	quest.53AEA0E74CE842B5.quest_desc: ["The &bTungstensteel Upgrade&r can allow Drawers' storage to be multiplied by 5, allowing them to hold a maximum of &61280000 items&r when fully upgraded."]
 	quest.53AEBDE8C4CA1429.quest_desc: [
 		"The &2Tesla Coil&r can't send power &edirectly to machines&r. You'll need the &aTesla Receiver&r to transfer power to them. The &aTesla Receiver&r has an output side where you can connect &bmachines&r or a &bcable.&r"
@@ -6358,6 +6365,7 @@
 	quest.7FD9582038C29150.title: "HV Cables"
 	reward.1D7A45772F4FCB6E.title: "Unlock Overenchanting"
 	reward.4275DA182DE50F12.title: "Unlock Conflicted Enchanting"
+	reward.4B9E23F799128BCC.title: "Allow Locket Socketing"
 	reward_table.0542C9BA02BA96DC.title: "Chapter 4 Common Reward"
 	reward_table.0A6132BE8A6F09B2.title: "Chapter 6 Rare Reward"
 	reward_table.18F2AF94B48D4DF8.title: "Chapter 7 Reward"

@@ -3781,5 +3781,39 @@
 			x: -3.5d
 			y: -11.0d
 		}
+		{
+			dependencies: ["03A48A124FB9AB5D"]
+			id: "5397B3A1202A4067"
+			rewards: [
+				{
+					count: 7
+					id: "52100EC779D2A005"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "08AC2A41EA95D6A2"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "77C94872B249BAC1"
+					table_id: 4552329992159883361L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "620D1A5E4DCE7CA0"
+				item: { count: 1, id: "merequester:requester" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -10.0d
+		}
 	]
 }

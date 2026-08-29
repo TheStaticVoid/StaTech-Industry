@@ -5136,6 +5136,16 @@
 					type: "xp"
 					xp: 100
 				}
+				{
+					command: "/advancement grant @p only spectrum:unlocks/mysterious_locket_socketing"
+					disable_reward_screen_blur: true
+					icon: {
+						id: "spectrum:moonstone_core"
+					}
+					id: "4B9E23F799128BCC"
+					silent: true
+					type: "command"
+				}
 			]
 			size: 2.0d
 			tasks: [{
