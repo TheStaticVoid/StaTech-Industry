@@ -13,9 +13,9 @@ disableOptimizedDFU = true
 #Early window provider
 earlyWindowProvider = "fmlearlywindow"
 #Early window width
-earlyWindowWidth = 854
+earlyWindowWidth = 2560
 #Early window height
-earlyWindowHeight = 480
+earlyWindowHeight = 1440
 #Early window framebuffer scale
 earlyWindowFBScale = 1
 #Early window starts maximized
@@ -32,3 +32,4 @@ earlyWindowSquir = false
 #dependencyOverrides.targetMod = ["-dep1", "+dep2"]
 [dependencyOverrides]
 	mi_tweaks = ["+extended_industrialization", "+xtonesreworked"]
+	mi_utilities = ["+extended_industrialization", "+xtonesreworked", "+mi_tweaks"]
