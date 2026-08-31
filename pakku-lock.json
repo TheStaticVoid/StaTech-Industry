@@ -2237,42 +2237,6 @@
             ]
         },
         {
-            "pakku_id": "kIRIgt84lEIlnjCz",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "construction-sticks"
-            },
-            "name": {
-                "curseforge": "Construction Sticks"
-            },
-            "id": {
-                "curseforge": "1156098"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "ConstructionSticks-1.21.1-1.5.0.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8763/707/ConstructionSticks-1.21.1-1.5.0.jar",
-                    "id": "8763707",
-                    "parent_id": "1156098",
-                    "hashes": {
-                        "sha1": "acd28b0d7147f55ec8590cef3d58add764543498",
-                        "md5": "1ae64666ff424d05e8c927aa69a8bcdd"
-                    },
-                    "required_dependencies": [],
-                    "size": 264738,
-                    "date_published": "2026-08-29T19:15:32.243Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "bV2cIw95dbd00uM2",
             "pakku_links": [
                 "EZ4zvf3npCLGSpiT"
@@ -3185,6 +3149,43 @@
                     ],
                     "size": 23544,
                     "date_published": "2025-02-24T21:20:01.343Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "xyzjflnSncUN1jTe",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "effortless-building"
+            },
+            "name": {
+                "curseforge": "Effortless Building"
+            },
+            "id": {
+                "curseforge": "302113"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "effortlessbuilding-4.2+1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "fabric",
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8515/718/effortlessbuilding-4.2+1.21.1.jar",
+                    "id": "8515718",
+                    "parent_id": "302113",
+                    "hashes": {
+                        "sha1": "34af0d5e57f771fa9a37e6b1b5e59c38a03afd01",
+                        "md5": "30e7c0829052456a9361726e7cb2404b"
+                    },
+                    "required_dependencies": [],
+                    "size": 958842,
+                    "date_published": "2026-07-26T19:54:14.513Z"
                 }
             ]
         },
@@ -5335,7 +5336,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "JadeAddons-1.21.1-NeoForge-6.1.0.jar",
+                    "file_name": "JadeAddons-1.21.1-NeoForge-6.1.1.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -5343,18 +5344,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6315/149/JadeAddons-1.21.1-NeoForge-6.1.0.jar",
-                    "id": "6315149",
+                    "url": "https://edge.forgecdn.net/files/8777/229/JadeAddons-1.21.1-NeoForge-6.1.1.jar",
+                    "id": "8777229",
                     "parent_id": "583345",
                     "hashes": {
-                        "sha1": "d0aef07e67f9e2dd7ae68f9f27d845511d8eaff3",
-                        "md5": "81f8035bc735c75463add09f923ad372"
+                        "sha1": "6c50a845ac3d336fa88e6466c36aa8b3815ca5c5",
+                        "md5": "26c75b35c8e07ec289a1ab769773c00b"
                     },
                     "required_dependencies": [
                         "324717"
                     ],
-                    "size": 74419,
-                    "date_published": "2025-03-17T11:50:57.657Z"
+                    "size": 75431,
+                    "date_published": "2026-08-31T11:54:55.643Z"
                 }
             ]
         },
@@ -6956,7 +6957,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "modernfix-neoforge-5.27.23+mc1.21.1.jar",
+                    "file_name": "modernfix-neoforge-5.27.24+mc1.21.1.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -6964,16 +6965,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8765/667/modernfix-neoforge-5.27.23+mc1.21.1.jar",
-                    "id": "8765667",
+                    "url": "https://edge.forgecdn.net/files/8774/737/modernfix-neoforge-5.27.24+mc1.21.1.jar",
+                    "id": "8774737",
                     "parent_id": "790626",
                     "hashes": {
-                        "sha1": "54cb4134aa7d39120307f88586fd73e6e830fc3b",
-                        "md5": "6fbfe2a09fc7f842ec032a0a01c61f61"
+                        "sha1": "1fe7f8b4176e86507cc8ed5460b6acdd3dac5529",
+                        "md5": "fc329974db57c6ec176b5a8b51899b3a"
                     },
                     "required_dependencies": [],
-                    "size": 603181,
-                    "date_published": "2026-08-30T00:49:43.463Z"
+                    "size": 604333,
+                    "date_published": "2026-08-31T02:33:39.177Z"
                 }
             ]
         },
@@ -7872,7 +7873,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar",
+                    "file_name": "PuzzlesLib-v21.1.56-mc1.21.1-NeoForge.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -7880,16 +7881,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8251/525/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar",
-                    "id": "8251525",
+                    "url": "https://edge.forgecdn.net/files/8777/693/PuzzlesLib-v21.1.56-mc1.21.1-NeoForge.jar",
+                    "id": "8777693",
                     "parent_id": "495476",
                     "hashes": {
-                        "sha1": "66182c3affb9f99624d1d770ca168d2a63af83f6",
-                        "md5": "4ee80ed6cebef297e3c5a82cf7db559f"
+                        "sha1": "a5bfa91390084a88e9c7f355f833e76e5cdc3f4c",
+                        "md5": "7c844b626ee811a94e9412a0f5593f0a"
                     },
                     "required_dependencies": [],
-                    "size": 1425176,
-                    "date_published": "2026-06-15T08:04:23.567Z"
+                    "size": 1402525,
+                    "date_published": "2026-08-31T13:09:06.393Z"
                 }
             ]
         },
@@ -9992,7 +9993,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "waystones-neoforge-1.21.1-21.1.41.jar",
+                    "file_name": "waystones-neoforge-1.21.1-21.1.42.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -10000,18 +10001,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8645/538/waystones-neoforge-1.21.1-21.1.41.jar",
-                    "id": "8645538",
+                    "url": "https://edge.forgecdn.net/files/8777/999/waystones-neoforge-1.21.1-21.1.42.jar",
+                    "id": "8777999",
                     "parent_id": "245755",
                     "hashes": {
-                        "sha1": "ce8f17600506c2a201c6eb5ff50e16d39f775ad6",
-                        "md5": "7ce116cc180af277241ff51983a99128"
+                        "sha1": "ca21be55f7c25b0a37be70bc699ceaf91d45ca17",
+                        "md5": "d9c36cd03ceeb5f08078768e5cfcf05c"
                     },
                     "required_dependencies": [
                         "531761"
                     ],
-                    "size": 1217415,
-                    "date_published": "2026-08-14T07:53:41.257Z"
+                    "size": 1219457,
+                    "date_published": "2026-08-31T13:55:29.063Z"
                 }
             ]
         },

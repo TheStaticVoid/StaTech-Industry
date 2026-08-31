@@ -75,16 +75,19 @@
 				{
 					id: "1E0F43AC656FC500"
 					item: { count: 1, id: "buildinggadgets2:gadget_exchanging" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "39F6660E0050ACA4"
 					item: { count: 1, id: "buildinggadgets2:gadget_copy_paste" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0D805BB601C7D309"
 					item: { count: 1, id: "buildinggadgets2:gadget_destruction" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -190,17 +193,27 @@
 			y: -3.0d
 		}
 		{
+			icon: {
+				id: "effortlessbuilding:randomizer_tool"
+			}
 			id: "04D26675230550D4"
 			rewards: [{
 				id: "2DE108FBB625EEE0"
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "66635FA796FF3AD2"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(constructionstick:construction_sticks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "40AD61D86FAB44CA"
+					type: "checkmark"
+				}
+				{
+					id: "2F3F6031152292D6"
+					item: { count: 1, id: "effortlessbuilding:randomizer_tool" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 0.5d
 			y: 0.0d
 		}

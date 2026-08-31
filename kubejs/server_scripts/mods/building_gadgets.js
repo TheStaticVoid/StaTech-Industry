@@ -24,7 +24,7 @@ ServerEvents.recipes((event) => {
             I: '#c:plates/iron',
             R: '#c:dusts/redstone',
             D: '#c:gems/diamond',
-            C: mi('electronic_circuit'),
+            C: mi('analog_circuit'),
             L: '#c:gems/lapis',
         })
         .id(st('gadget_building'));
@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
             I: '#c:plates/iron',
             R: '#c:dusts/redstone',
             D: '#c:gems/diamond',
-            C: mi('electronic_circuit'),
+            C: mi('analog_circuit'),
         })
         .id(st('gadget_exchanging'));
 
@@ -45,10 +45,21 @@ ServerEvents.recipes((event) => {
             I: '#c:plates/iron',
             R: '#c:dusts/redstone',
             E: '#c:gems/emerald',
-            C: mi('electronic_circuit'),
+            C: mi('analog_circuit'),
             L: '#c:gems/lapis',
         })
         .id(st('gadget_copy_paste'));
+
+    // -- CUT & PASTE GADGET -- //
+    event
+        .shaped(bg('gadget_cut_paste'), ['ILI', 'ECE', 'IRI'], {
+            I: '#c:plates/iron',
+            R: '#c:dusts/redstone',
+            E: '#c:gems/emerald',
+            C: mi('analog_circuit'),
+            L: '#c:gems/lapis',
+        })
+        .id(st('gadget_cut_paste'));
 
     // -- DESTRUCTION GADGET -- //
     event
@@ -67,7 +78,7 @@ ServerEvents.recipes((event) => {
             G: '#c:plates/gold',
             R: '#c:dusts/redstone',
             E: '#c:ender_pearls',
-            C: mi('electronic_circuit'),
+            C: mi('analog_circuit'),
             F: mi('basic_machine_hull'),
         })
         .id(st('template_manager'));

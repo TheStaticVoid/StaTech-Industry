@@ -57,6 +57,8 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - Fixed Colossal Blast Furnace lang issues.
 - Made menu button textures slightly 3D.
 - **Fixed Spectrum advancement that prevented mod completion.**
+- **Added Effortless Building, removed Construction Sticks and downtiered most Building Gadgets.**
+- Fixed AlmostUnified priority config.
 - Removed Jon Bartman.
 
 ## [2.0.0-rc5]

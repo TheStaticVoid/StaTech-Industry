@@ -20,7 +20,6 @@ let ea = (id) => `extendedae:${id}`;
 let bs = (id) => `bankstorage:${id}`;
 let ts = (id) => `tankstorage:${id}`;
 let bg = (id) => `buildinggadgets2:${id}`;
-let cs = (id) => `constructionstick:${id}`;
 let sd = (id) => `sliceanddice:${id}`;
 let fs = (id) => `functionalstorage:${id}`;
 let sb = (id) => `sophisticatedbackpacks:${id}`;
