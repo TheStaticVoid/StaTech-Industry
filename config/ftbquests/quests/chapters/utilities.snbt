@@ -581,5 +581,76 @@
 			x: -2.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["2121C4F2CF127435"]
+			id: "0E6BBEDF4B0DAB87"
+			rewards: [{
+				id: "01605EA680629831"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "6D9F21CA5CAAC702"
+				item: { count: 1, id: "pipe_connector:pipe_connector" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0C677AFD6CBEE0BC"]
+			id: "1581D6463F958378"
+			rewards: [{
+				id: "5D819F985450CD41"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4EC4AD5E3121AD77"
+				item: { count: 1, id: "scannable:scanner" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1F4A0D43BADF0146"]
+			id: "39B30DBE1DD45D83"
+			rewards: [{
+				id: "68D2FE2996086B0F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7EAD89152401F2D0"
+				item: { count: 1, id: "mi_utilities:tier_swapper" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2121C4F2CF127435"]
+			id: "2572BCBD101E461F"
+			rewards: [{
+				id: "6FE065551AFFF065"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "55E25BFF72C723F0"
+					item: { count: 1, id: "modern_industrialization:config_card" }
+					type: "item"
+				}
+				{
+					id: "71017B6D449E4017"
+					item: { count: 1, id: "extended_industrialization:machine_config_card" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 1.5d
+		}
 	]
 }

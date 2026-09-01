@@ -714,6 +714,11 @@
 		""
 		"Enchanting an &aExchanging Staff&r with &dResonance&r by using the &5Enchanter&r will give it the power to harvest some special blocks as-is."
 	]
+	quest.0E6BBEDF4B0DAB87.quest_desc: [
+		"Digging tunnels underneath your base to hide and connect your &acables&r can be &cannoying&r. Thankfully the &bPipe Connector&r can handle all that process much more easily! "
+		""
+		"The &9tooltip&r indicates how to use it and &9valid pipes&r are listed in &6EMI&r if you press '&eu&r' on the Pipe Connector."
+	]
 	quest.0E6CEE7FB03E1DB3.quest_desc: ["&aAcetylene&r is used in the production of &bPolyvinyl Chloride&r."]
 	quest.0E6CEE7FB03E1DB3.title: "Acetylene"
 	quest.0E9876A8FEF7F7E9.quest_desc: [
@@ -1081,6 +1086,14 @@
 	]
 	quest.156DB9FCCDFE4C57.quest_desc: ["The &bFluix ME Dense Covered Cable&r can carry up to &d64 channels&r unlike standard cable which can only carry 16, however it doesn't support buses, so you must first step down from dense to smaller cable (such as &aFluix ME Glass Cable&r or &eFluix ME Smart Cable&r) before using buses or panels."]
 	quest.156DB9FCCDFE4C57.title: "Dense Covered Cables"
+	quest.1581D6463F958378.quest_desc: [
+		"Having trouble finding &dspecific ores when you need them&r? The &aScanner&r is the tool for you. Now that you have &2circuits&r you can go ahead and craft a &aScanner&r to help in finding ores and other interesting things. "
+		""
+		"Modules can be installed by shift-right clicking while holding the &aScanner.&r"
+		""
+		"You'll need a &eStorage Unit&r in order to charge it. You can do so by clicking on a &eStorage Unit&r that has power to transfer to the scanner."
+	]
+	quest.1581D6463F958378.quest_subtitle: "Where is everybody hiding?"
 	quest.1588C024A87F1B21.quest_desc: [
 		"Do you want to turn that excess &cBlood&r from the &aMob Crusher&r into something useful? Why not use it to &2power your ever expanding factory&r. By providing the &dentity&r within the machine (definitely not &dLilith&r) bountiful amounts of &cBlood&r it will provide you with &ecopious amounts of power&r."
 		""
@@ -1850,6 +1863,12 @@
 	quest.2533F5C184FB0D23.quest_desc: ["&dTrains&r are in reality large moving &eentities&r, and players will find it difficult to stay on the &dtrain&r as it's moving. You can make &bSeats&r to sit down on your &dtrain&r!"]
 	quest.2533F5C184FB0D23.title: "Any Create Seat"
 	quest.2559D4360D1F58FA.quest_desc: ["&aChicken Nests&r &3automatically collect eggs&r dropped from &eChickens&r near it. You can hopper / move the items out from the bottom."]
+	quest.2572BCBD101E461F.quest_desc: [
+		"See the following quests for more details:"
+		"[ { \"text\": \"Machine Config Card\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1C56D3421ED7758F\" } } ]"
+		"[ { \"text\": \"Advanced Pipe Configuration\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"023BA92436AFFCFD\" } } ]"
+	]
+	quest.2572BCBD101E461F.title: "Config Cards"
 	quest.257CA8034EA7B1DB.quest_desc: [
 		"The cables of the EV tier are:"
 		"- &cAnnealed Copper&r"
@@ -2845,6 +2864,14 @@
 	quest.39A4845AB2B8FC83.quest_subtitle: "The metallic form of Ender Pearl"
 	quest.39A53780808097E7.quest_desc: ["The &aEnergy Crystal&r is similar to the &bLithium Ion Batteries&r, but it has a much larger buffer, being able to store &d1 million E&r."]
 	quest.39AD4C222874D63F.quest_desc: ["Increases the user's invulnerability frames after taking a hit"]
+	quest.39B30DBE1DD45D83.quest_desc: [
+		"The &dSwap Card&r can:"
+		"- Swap out &9barrels&r or &ctanks&r &a&oin-place&r&r."
+		"- Bulk &nreplace&r &ecables&r, &bhatches&r, and &8hulls&r within a &o&6Cable Network&r&r."
+		""
+		"When swapping, put the &dSwap Card&r in your &aoff-hand&r and the &9&oitem to swap&r&r in your &cmain hand&r."
+	]
+	quest.39B30DBE1DD45D83.quest_subtitle: "Oddly satisfying!"
 	quest.39D48C79329C6E09.quest_desc: ["An upgrade to the &6Bronze Barrel&r. This barrel can hold up to 128 stacks of the same item. Probably really good for all the cobblestone you've been amassing."]
 	quest.39ED7019F3ACB226.quest_desc: ["An important component in &aStyrene-Butadiene Rubber&r."]
 	quest.39ED7019F3ACB226.title: "Styrene-Butadiene"
@@ -4542,6 +4569,14 @@
 	]
 	quest.587FF748139BA962.quest_subtitle: "Steampunk!"
 	quest.58C2A1D3B3129D29.quest_desc: ["The &cNetherite Chest&r is the ultimate upgrade for your chest, boasting a capacity of &e91 item stacks&r."]
+	quest.58F0D9E55EF206E7.quest_desc: [
+		"The &dSwap Card&r can:"
+		"- Swap out &9barrels&r or &ctanks&r &a&oin-place&r&r."
+		"- Bulk &nreplace&r &ecables&r, &bhatches&r, and &8hulls&r within a &o&6Cable Network&r&r."
+		""
+		"When swapping, put the &dSwap Card&r in your &aoff-hand&r and the &9&oitem to swap&r&r in your &cmain hand&r."
+	]
+	quest.58F0D9E55EF206E7.quest_subtitle: "Oddly satisfying!"
 	quest.58F52B959643FF34.quest_desc: [
 		"Welcome to &aStaTech Industry&r &d2.0&r!"
 		""
@@ -5764,7 +5799,7 @@
 	]
 	quest.73F73336D0140613.title: "Elevators"
 	quest.740BFCE0D14F89D7.quest_desc: ["Enhancing &6Heavy Fuel&r with &aSteam&r will make &eSteam-Cracked Heavy Fuel&r, which can be &2distilled into other byproducts&r."]
-	quest.741C06785329D26C.quest_desc: ["The &aElectric Compressor&r is the &delectric&r upgrade for your compressing needs. It opens up some new recipes that will be &aneeded to advanced&r later, as well as &dfaster processing of existing recipes&r."]
+	quest.741C06785329D26C.quest_desc: ["The &aElectric Compressor&r is the &delectric&r upgrade for your compressing needs. It opens up some new recipes that will be &aneeded to advance&r later, as well as &dfaster processing of existing recipes&r."]
 	quest.741D66D89EE0C684.quest_desc: [
 		"The &bSuperconductor Cable&r is the ultimate tier of electric cable in &eModern Industrialization&r. They can transfer a little over &31 billion EU/t&r and can only connect to Quantum tiered machines/hatches."
 		""
