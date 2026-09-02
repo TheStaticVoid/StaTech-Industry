@@ -72,6 +72,7 @@ pakku.jar
 !/config/create-client.toml
 !/config/modern_industrialization-client.toml
 !/config/NoChatReports/NCR-Client.json
+!/shaderpacks/*.txt
 
 # Configs (generaly ones that tend to edit the date on launch)
 config/fml.toml
@@ -286,30 +287,6 @@ config/tacz-pre.toml
 /config/forgeendertech/*
 /config/spark/*
 !/config/Advancedperipherals/world.toml
-
-# Linux
-*~
-.fuse_hidden*
-.directory
-.Trash-*
-
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-*.lnk
-
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-ponders_watched.json
-servers.dat
-servers.dat_old
-.gitignore
-dynamic-resource-pack-cache/hash.txt
-
 config/adfinders/Targets/miningmaster.cfg
 config/adfinders/Targets/mmorpg.cfg
 config/adfinders/Targets/moreoresinone.cfg
@@ -384,3 +361,26 @@ config/forgeendertech-common.toml
 config/forgeendertech/cached.dat
 config/forgeendertech/Wind.cfg
 config/adfinders/Targets/minecraft.cfg
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+ponders_watched.json
+servers.dat
+servers.dat_old
+.gitignore
+dynamic-resource-pack-cache/hash.txt
