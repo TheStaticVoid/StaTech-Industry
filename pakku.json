@@ -1,6 +1,6 @@
 {
   "name": "StaTech Industry",
-  "version": "2.0.0-rc5",
+  "version": "2.0.0",
   "author": "staitc, Purple Dino, & GronkDev",
   "release_type": "release",
   "overrides": ["config", "defaultconfigs", "kubejs", "!kubejs/probe/**", "shaderpacks"],
@@ -27,6 +27,9 @@
       "side": "CLIENT"
     },
     "betterf3": {
+      "side": "CLIENT"
+    },
+    "bettertabinfo": {
       "side": "CLIENT"
     },
     "better-modlist-neoforge": {
@@ -86,9 +89,6 @@
     "fps-reducer": {
       "side": "CLIENT"
     },
-    "ftb-backups-3": {
-      "side": "SERVER"
-    },
     "fusion": {
       "side": "CLIENT"
     },
@@ -116,6 +116,9 @@
     "modlistmemory": {
       "side": "CLIENT"
     },
+    "music-and-melody": {
+      "side": "CLIENT"
+    },
     "not-enough-animations": {
       "side": "CLIENT"
     },
@@ -141,6 +144,9 @@
       "side": "CLIENT"
     },
     "simple-discord-rich-presence": {
+      "side": "CLIENT"
+    },
+    "simple-music-control": {
       "side": "CLIENT"
     },
     "skin-layers-3d": {

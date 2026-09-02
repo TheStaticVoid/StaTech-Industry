@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC AND DINO FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -51,6 +51,7 @@ ServerEvents.recipes((event) => {
         adp('hotkey_module'),
         adp('overlay_module'),
         adp('nightvision_module'),
+        /^advancedperipherals:ae_disk_cell_.*/,
     ];
     COMPUTERCRAFT_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 

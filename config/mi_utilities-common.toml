@@ -1,0 +1,9 @@
+	[items.tier_swapper]
+		#How long in ticks the swap card will go on cooldown for after swapping a cable grid. This is to prevent spamming swaps to intentionally cause lag.
+		# Default: 30
+		# Range: > 0
+		cableSwapCooldown = 30
+		#How long in ticks the swap card will go on cooldown for after swapping a cable grid. This is to prevent spamming swaps to intentionally cause lag.
+		# Default: 128
+		# Range: > 0
+		maxSwapsBeforeCooldown = 128

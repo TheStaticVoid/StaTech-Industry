@@ -49,6 +49,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["1E4B3098D73D738C"]
 			id: "1BD496A10E957F25"
 			rewards: [
 				{
@@ -784,6 +785,43 @@
 				type: "item"
 			}]
 			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["74C1F78B349FC947"]
+			icon: {
+				id: "javd:portal_block"
+			}
+			id: "1AE1CDF94F921EF2"
+			rewards: [
+				{
+					id: "44C015426CD3FA3F"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "7092BA31FF876E52"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "19C5071AAAA56D22"
+					item: {
+						count: 1
+						id: "javd:portal_block"
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "2B2DA81A6F1F7BD4"
+				type: "checkmark"
+			}]
+			x: 13.0d
 			y: 2.0d
 		}
 	]

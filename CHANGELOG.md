@@ -1,5 +1,66 @@
 # Changelog
 
+## [2.0.0]
+
+This is the full release of StaTech Industry 2. Took us long enough. Thanks for your patience with the last 5 release candidates, it's been a long road but we're finally here! This changelog does not summarize ALL the changes that have been made between 1.0 and 2.0, only the changes made between the release candidates. For a more comprehensive list of changes, check '[2.0 CHANGES.md](https://github.com/TheStaticVoid/StaTech-Industry/blob/main/2.0%20CHANGES.md)'
+
+As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
+
+# Changelog:
+
+- **Added Lumberaxes, tools that allow for whole trees to be chopped down at once!**
+- Added more recipes for peaceful mode completeness
+- Removed the quest requirements in world of food chapter
+- Added Music and Melody and Simple Music Control to allow better player control of the wonderful music in the pack.
+- **Removed Weapons Factory multiblock + moved TACZ items back to the TACZ workbenches due to data component incompatibility with MI machines.**
+- Downtiered Steam Chainsaw to be before steel
+- Removed Advanced Peripherals Computer Scientist village structure.
+- Fixed Oil Drilling Rig quest hatch requirements.
+- **Nerfed Artifacts drop rates from NML pots.**
+- Fixed Create quest oversights.
+- Added Brass Block Alloy Smelter recipe.
+- Fixed Spectrum quest oversights.
+- **Fixed Forge Hammer ctrl+click client crash.**
+- Fixed vestigial quest wording.
+- Buffed bread recipe.
+- **Fixed CRLF hell (I hope)**
+- Added more tips + splashes
+- Moved Speedy Concrete recipe to Canning Machine.
+- **Cleaned up Artifacts recycling.**
+- Added more possible SoL hearts.
+- **Rebalanced some Quarry + Space Probe rates + drops.**
+- **Fixed accidental Forge Hammer buff.**
+- Made ore samples logic more robust.
+- Added more speedy blocks.
+- Added Macerator recipes for Spectrum ores.
+- Fixed Spectrum quest oversights (again).
+- Fixed in game menu alignment + dev options.
+- **Made Large Ore Deposits 2.5x rarer.**
+- Improved documentation on client customization options.
+- Fixed Construction Stick quest.
+- Updated "Added by" tooltips.
+- Clean up mob model + ore sample registration.
+- **Made pack more translator friendly.**
+- Updated AE2 quest organization.
+- Nerfed the durability of JustHammers to be more balanced.
+- Fixed language file bugs.
+- **Re-added custom TACZ recipes.**
+- Fixed Glowing Steel Pillar blockstates.
+- Fixed PTFE amounts in gun recipes.
+- **Nerfed forge hammer rates further.**
+- Removed Advanced Peripherals AE2 Disk Cells.
+- Made ME Requester painful to make.
+- **Buffed Flight Pylon Tiers.**
+- Fixed Factory Blocks CTM visual bugs.
+- Fixed AE2 GuideME.
+- Fixed MI Steam Bucket GuideME recipe.
+- Fixed Colossal Blast Furnace lang issues.
+- Made menu button textures slightly 3D.
+- **Fixed Spectrum advancement that prevented mod completion.**
+- **Added Effortless Building, removed Construction Sticks and downtiered most Building Gadgets.**
+- Fixed AlmostUnified priority config.
+- Removed Jon Bartman.
+
 ## [2.0.0-rc5]
 
 This update brings bucketloads more polish to GuideME, the questbook, and recipes. There are a ton of changes, so I'll just list the highlights here, breaking changes are bolded:

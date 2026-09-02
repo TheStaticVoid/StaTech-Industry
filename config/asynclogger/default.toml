@@ -1,0 +1,7 @@
+# This is the default extra filter file for Async Logger. The filters in this file (and any other *.toml files in this directory) are combined with the filters in the main config.
+# You can freely write comments and format this file as you wish - it will not get overwritten.
+[filtering]
+levels = []
+loggers = []
+strings = []
+regexes = []

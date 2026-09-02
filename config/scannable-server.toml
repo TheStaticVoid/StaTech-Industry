@@ -1,0 +1,124 @@
+[energy]
+	#Whether to consume energy when performing a scan. Will make the scanner a chargeable item.
+	useEnergy = true
+	#Amount of energy that can be stored in a scanner.
+	# Default: 5000
+	# Range: > 0
+	energyCapacityScanner = 5000
+	#Amount of energy used by the range module per scan.
+	# Default: 100
+	# Range: > 0
+	energyCostModuleRange = 100
+	#Amount of energy used by the animal module per scan.
+	# Default: 25
+	# Range: > 0
+	energyCostModuleAnimal = 25
+	#Amount of energy used by the monster module per scan.
+	# Default: 50
+	# Range: > 0
+	energyCostModuleMonster = 50
+	#Amount of energy used by the common ore module per scan.
+	# Default: 75
+	# Range: > 0
+	energyCostModuleOreCommon = 75
+	#Amount of energy used by the rare ore module per scan.
+	# Default: 100
+	# Range: > 0
+	energyCostModuleOreRare = 100
+	#Amount of energy used by the block module per scan.
+	# Default: 100
+	# Range: > 0
+	energyCostModuleBlock = 100
+	#Amount of energy used by the fluid module per scan.
+	# Default: 50
+	# Range: > 0
+	energyCostModuleFluid = 50
+	#Amount of energy used by the entity module per scan.
+	# Default: 75
+	# Range: > 0
+	energyCostModuleEntity = 75
+	#Amount of energy used by the chest module per scan.
+	# Default: 100
+	# Range: > 0
+	energyCostModuleChest = 100
+
+[range]
+	#Relative amount of base scan radius added by each installed range module.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	rangeModifierModuleRange = 0.5
+	#Relative effective range of the common ore module.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	rangeModifierModuleOreCommon = 0.25
+	#Relative effective range of the rare ore module.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	rangeModifierModuleOreRare = 0.25
+	#Relative effective range of the block module.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	rangeModifierModuleBlock = 0.5
+	#Relative effective range of the fluid module.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	rangeModifierModuleFluid = 0.5
+	#Relative effective range of the chest module.
+	# Default: 0.25
+	# Range: 0.0 ~ 1.0
+	rangeModifierModuleChest = 0.25
+	#Relative effective range of the animal module.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	rangeModifierModuleAnimal = 1.0
+	#Relative effective range of the monster module.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	rangeModifierModuleMonster = 1.0
+	#Relative effective range of the entity module.
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
+	rangeModifierModuleEntity = 1.0
+
+[general]
+	#The basic scan radius without range modules. Higher values mean more computational
+	#overhead and thus potentially worse performance while scanning.
+	# Default: 64
+	# Range: 16 ~ 128
+	baseScanRadius = 64
+	#How long the results from a scan should remain visible, in milliseconds.
+	# Default: 10000
+	# Range: 1000 ~ 300000
+	scanStayDuration = 10000
+
+[blocks]
+	#Registry names of blocks that should be ignored.
+	#Blocks in this list will be excluded from the default ore list based on the c:ores
+	#tag and it will be impossible to tune the entity module to this block.
+	ignoredBlocks = ["minecraft:command_block"]
+	#Tag names of block tags that should be ignored.
+	#Blocks matching a tag in this list will be excluded from the default ore list based on the
+	#c:ores tag and it will be impossible to tune the entity module to this block.
+	ignoredBlockTags = []
+
+[ores]
+	#Registry names of blocks considered 'common ores', requiring the common ore scanner module.
+	commonOreBlocks = ["minecraft:clay"]
+	#Block tags of blocks considered 'common ores', requiring the common ore scanner module.
+	commonOreBlockTags = ["c:ores/redstone", "c:ores/tin", "c:ores/coal", "c:ores/quartz", "c:ores/copper", "c:ores/iron"]
+	#Registry names of blocks considered 'rare ores', requiring the rare ore scanner module.
+	rareOreBlocks = ["minecraft:glowstone"]
+	#Block tags of blocks considered 'rare ores', requiring the common ore scanner module.
+	#Any block with the c:ores tag is implicitly in this list, unless the block also
+	#matches an ignored or common ore block tag, or is an ignored or common block.
+	rareOreBlockTags = []
+
+[fluids]
+	#Fluid tags of fluids that should be ignored.
+	ignoredFluidTags = []
+
+[chests]
+	#Registry names of blocks considered 'chests', requiring the chest scanner module.
+	commonChestBlocks = []
+	#Registry names of blocks considered 'chests', requiring the chest scanner module.
+	commonChestTags = ["c:barrels/wooden", "c:chests", "c:shulker_boxes"]

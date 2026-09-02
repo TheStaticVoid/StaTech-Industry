@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -470,6 +470,76 @@ ServerEvents.recipes((event) => {
             })
             .id(st(`${material}_hoe`));
     });
+
+    // -- IRON LUMBERAXE -- //
+    event
+        .shaped(kj('iron_lumberaxe'), ['PBN', 'PSN', ' S '], {
+            B: '#c:storage_blocks/iron',
+            P: '#c:plates/iron',
+            N: '#c:nuggets/iron',
+            S: '#c:rods/wooden',
+        })
+        .id(st('iron_lumberaxe'));
+
+    // -- COPPER LUMBERAXE -- //
+    event
+        .shaped(kj('copper_lumberaxe'), ['PBN', 'PSN', ' S '], {
+            B: '#c:storage_blocks/copper',
+            P: '#c:plates/copper',
+            N: '#c:nuggets/copper',
+            S: '#c:rods/wooden',
+        })
+        .id(st('copper_lumberaxe'));
+
+    // -- STEEL LUMBERAXE -- //
+    event
+        .shaped(kj('steel_lumberaxe'), ['PBN', 'PSN', ' S '], {
+            B: '#c:storage_blocks/steel',
+            P: '#c:plates/steel',
+            N: '#c:nuggets/steel',
+            S: '#c:rods/wooden',
+        })
+        .id(st('steel_lumberaxe'));
+
+    // -- BRONZE LUMBERAXE -- //
+    event
+        .shaped(kj('bronze_lumberaxe'), ['PBN', 'PSN', ' S '], {
+            B: '#c:storage_blocks/bronze',
+            P: '#c:plates/bronze',
+            N: '#c:nuggets/bronze',
+            S: '#c:rods/wooden',
+        })
+        .id(st('bronze_lumberaxe'));
+
+    // -- GOLD LUMBERAXE -- //
+    event
+        .shaped(kj('gold_lumberaxe'), ['PBN', 'PSN', ' S '], {
+            B: '#c:storage_blocks/gold',
+            P: '#c:plates/gold',
+            N: '#c:nuggets/gold',
+            S: '#c:rods/wooden',
+        })
+        .id(st('gold_lumberaxe'));
+
+    // -- DIAMOND LUMBERAXE -- //
+    event
+        .smithing(
+            kj('diamond_lumberaxe'),
+            kj('diamond_upgrade_smithing_template'),
+            kj('steel_lumberaxe'),
+            mc('diamond')
+        )
+        .id(st('diamond_lumberaxe'));
+
+    // -- NETHERITE LUMBERAXE -- //
+    event
+        .smithing(
+            kj('netherite_lumberaxe'),
+            mc('netherite_upgrade_smithing_template'),
+            kj('diamond_lumberaxe'),
+            mc('netherite_ingot')
+        )
+        .id(st('netherite_lumberaxe'));
 });
 
 ServerEvents.tags('item', (event) => {
@@ -491,6 +561,24 @@ ServerEvents.tags('item', (event) => {
         event.add(mc('enchantable/mining'), id);
         event.add(mc('enchantable/mining_loot'), id);
         event.add(mc('enchantable/vanishing'), id);
+    });
+
+    const LUMBERAXES = [
+        kj('iron_lumberaxe'),
+        kj('copper_lumberaxe'),
+        kj('steel_lumberaxe'),
+        kj('bronze_lumberaxe'),
+        kj('gold_lumberaxe'),
+        kj('diamond_lumberaxe'),
+        kj('netherite_lumberaxe'),
+    ];
+    LUMBERAXES.forEach((id) => {
+        event.add(kj('lumberaxes'), id);
+        event.add(mc('enchantable/durability'), id);
+        event.add(mc('enchantable/mining'), id);
+        event.add(mc('enchantable/mining_loot'), id);
+        event.add(mc('enchantable/vanishing'), id);
+        event.remove(mc('axes'), id);
     });
 
     const COINS = [
@@ -515,6 +603,7 @@ ServerEvents.tags('block', (event) => {
     // -- PREFERRED TOOL FOR GLASS-LIKE BLOCKS -- //
     event.add('minecraft:mineable/pickaxe', [
         '#c:glass_blocks',
+        cm('neoforge_hammer'),
         'minecraft:glowstone',
         '#chisel:chiseled_glowstone',
         /^xtonesreworked:glaxx_block_/,
@@ -540,6 +629,9 @@ ServerEvents.tags('block', (event) => {
             'minecraft:copper_ore',
         ]);
     });
+    // -- NEOFORGE HAMMER BLOCK TAGGING -- //
+    event.add('minecraft:mineable/pickaxe', cm('neoforge_hammer'));
+    event.add('minecraft:needs_stone_tool', cm('neoforge_hammer'));
 });
 
 // -- ITEM TAGGING -- //

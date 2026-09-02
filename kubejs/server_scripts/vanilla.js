@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -37,6 +37,15 @@ ServerEvents.recipes((event) => {
     VANILLA_DELETED.forEach((id) => event.remove({ id: id }));
 
     const ALT_METALS = ['lead', 'silver', 'tin', 'nickel'];
+
+    // -- TOTEM OF UNDYING -- //
+    event
+        .shaped(mc('totem_of_undying'), ['EGE', 'GSG', 'EGE'], {
+            E: '#c:gems/emerald',
+            G: '#c:storage_blocks/gold',
+            S: mc('nether_star')
+        })
+        .id(st('totem_of_undying'));
 
     // -- BUNDLE -- //
     event

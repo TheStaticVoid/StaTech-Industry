@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ItemEvents.modifyTooltips((event) => {
@@ -116,7 +116,7 @@ ItemEvents.modifyTooltips((event) => {
         mi('clay_tiny_dust'),
         mi('recycler'),
         mi('matter_fabricator'),
-        mi('weapons_factory'),
+        /^justhammers:*(steel|bronze).*/,
         /^modern_industrialization:.*(calorite|tungstensteel|desh|moon_ice|ostrum|polytetrafluoroethylene|cobalt|zinc|dark_ashes|calcite|fluorite|acrylonitrile_butadiene_styrene|enderium|entro|sky_bronze|sky_steel|sapphire|peridot|ruby|boron_trioxide|kernite|lithium_hydride|lithium_tetrafluoroborate|lithium_fluoride).*/,
     ];
 

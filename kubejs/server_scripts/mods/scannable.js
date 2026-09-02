@@ -1,16 +1,16 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes(e => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- // 
+    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:scannable/${id}`;
 
     // Remove the default Scanner recipe
     e.remove( {id: sc('scanner')} );
 
-    // -- SCANNER -- // 
+    // -- SCANNER -- //
     e.shaped(sc('scanner'), [
         'I I',
         'CAC',

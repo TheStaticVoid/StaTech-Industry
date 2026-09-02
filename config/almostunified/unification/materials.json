@@ -1,8 +1,8 @@
 {
   "mod_priorities": [
     "minecraft",
-    "modern_industrialization",
     "kubejs",
+    "modern_industrialization",
     "create"
   ],
   "priority_overrides": {},
@@ -31,11 +31,9 @@
   ],
   "ignored_tags": [],
   "ignored_items": [],
-  "ignored_recipe_types": [
-      "create:crushing"
-  ],
+  "ignored_recipe_types": ["cucumber:shaped_tag"],
   "ignored_recipe_ids": [],
   "recipe_viewer_hiding": true,
-  "loot_unification": true,
+  "loot_unification": false,
   "ignored_loot_tables": []
 }

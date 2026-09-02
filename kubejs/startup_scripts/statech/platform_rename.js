@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
-Platform.mods.kubejs.name = 'StaTech Industry';
+Platform.mods.kubejs.name = 'StaTech Industry 2';

@@ -61,7 +61,7 @@
 				item: { count: 1, id: "minecraft:bucket" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: 3.0d
 		}
 		{
@@ -95,7 +95,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(elevatorid:elevators)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 3.0d
 		}
 		{
@@ -129,7 +129,7 @@
 				item: { count: 1, id: "hangglider:hang_glider" }
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: 3.0d
 		}
 		{
@@ -162,8 +162,8 @@
 				item: { count: 1, id: "hangglider:reinforced_hang_glider" }
 				type: "item"
 			}]
-			x: 34.0d
-			y: 4.5d
+			x: 35.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["412958496FE9150E"]
@@ -196,8 +196,8 @@
 				item: { count: 1, id: "naturescompass:naturescompass" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.0d
+			x: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["74B14DB45316C4F8"]
@@ -1926,7 +1926,7 @@
 				item: { count: 1, id: "simplemagnets:advancedmagnet" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 30.5d
 			y: 2.5d
 		}
 		{
@@ -1959,7 +1959,7 @@
 				item: { count: 1, id: "modern_industrialization:steel_tank" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 31.5d
 			y: 2.5d
 		}
 		{
@@ -1992,7 +1992,7 @@
 				item: { count: 1, id: "modern_industrialization:steel_barrel" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 32.5d
 			y: 2.5d
 		}
 		{
@@ -2033,6 +2033,7 @@
 			id: "726994F1ADADFD28"
 			rewards: [
 				{
+					count: 2
 					id: "1B0AEB6661C59725"
 					item: {
 						count: 1
@@ -2057,7 +2058,7 @@
 				item: { count: 1, id: "modern_industrialization:steam_mining_drill" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.5d
 			y: 2.0d
 		}
 		{
@@ -2097,7 +2098,7 @@
 					type: "item"
 				}
 			]
-			x: 30.0d
+			x: 29.5d
 			y: 2.5d
 		}
 		{
@@ -2163,8 +2164,8 @@
 				item: { count: 1, id: "mi_sound_addon:mallet" }
 				type: "item"
 			}]
-			x: 31.0d
-			y: 4.5d
+			x: 31.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["26A89C51A7B9FFDE"]
@@ -3005,11 +3006,11 @@
 				item: { count: 1, id: "simplemagnets:basicmagnet" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: 2.0d
 		}
 		{
-			dependencies: ["26A89C51A7B9FFDE"]
+			dependencies: ["412958496FE9150E"]
 			id: "547CCB129043BEE6"
 			rewards: [
 				{
@@ -3038,8 +3039,8 @@
 				item: { count: 1, id: "extended_industrialization:steam_chainsaw" }
 				type: "item"
 			}]
-			x: 31.5d
-			y: 3.5d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["26A89C51A7B9FFDE"]
@@ -3072,7 +3073,7 @@
 				item: { count: 1, id: "bankstorage:bank_3" }
 				type: "item"
 			}]
-			x: 35.0d
+			x: 34.5d
 			y: 2.5d
 		}
 		{
@@ -3313,7 +3314,7 @@
 				item: { count: 1, id: "sophisticatedstorage:basic_to_copper_tier_upgrade" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -3347,7 +3348,7 @@
 				item: { count: 1, id: "sophisticatedstorage:copper_to_iron_tier_upgrade" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: 1.5d
 		}
 		{
@@ -3381,7 +3382,7 @@
 				item: { count: 1, id: "sophisticatedstorage:iron_to_gold_tier_upgrade" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: 3.0d
 		}
 		{
@@ -3530,7 +3531,7 @@
 				item: { count: 1, id: "tankstorage:tank_3" }
 				type: "item"
 			}]
-			x: 34.0d
+			x: 33.5d
 			y: 2.5d
 		}
 		{
@@ -3823,8 +3824,8 @@
 					type: "item"
 				}
 			]
-			x: 33.0d
-			y: 5.5d
+			x: 34.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0C677AFD6CBEE0BC"]
@@ -4067,8 +4068,8 @@
 				item: { count: 1, id: "kubejs:diamond_upgrade_smithing_template" }
 				type: "item"
 			}]
-			x: 32.0d
-			y: 5.5d
+			x: 31.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["412958496FE9150E"]
@@ -4101,7 +4102,7 @@
 				item: { count: 1, id: "sophisticatedstorage:crafting_upgrade" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: 3.0d
 		}
 		{
@@ -4325,6 +4326,72 @@
 			}]
 			x: 32.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["412958496FE9150E"]
+			id: "20CD46333F1F8228"
+			rewards: [
+				{
+					count: 2
+					id: "46CC33538231AA28"
+					item: {
+						count: 1
+						id: "kubejs:coin_common"
+					}
+					type: "item"
+				}
+				{
+					id: "10ACA88A7DE66CE4"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6515416D937C8DCB"
+					table_id: 3409273157072801564L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "11BFE5320607A2D9"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:lumberaxes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1F4A0D43BADF0146"]
+			id: "58F0D9E55EF206E7"
+			rewards: [
+				{
+					id: "7DC4A46228A4B38F"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "4616F35D7570029C"
+					type: "xp"
+					xp: 10
+				}
+				{
+					id: "656B18D0877EF471"
+					table_id: 4928307245111940372L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "490C0AAB7D2C22D4"
+				item: { count: 1, id: "mi_utilities:tier_swapper" }
+				type: "item"
+			}]
+			x: 43.0d
+			y: -4.0d
 		}
 	]
 }
