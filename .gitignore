@@ -7,9 +7,10 @@ logs/
 crash-reports/
 backups/
 resourcepacks/
-shaderpacks/
 server-resource-packs/
 screenshots/
+shaderpacks/*.zip
+shaderpacks/*/*
 downloads/
 modernfix/
 fancymenu_data/
@@ -72,7 +73,7 @@ pakku.jar
 !/config/create-client.toml
 !/config/modern_industrialization-client.toml
 !/config/NoChatReports/NCR-Client.json
-!/shaderpacks/*.txt
+
 
 # Configs (generaly ones that tend to edit the date on launch)
 config/fml.toml
