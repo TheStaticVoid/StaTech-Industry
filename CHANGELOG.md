@@ -59,6 +59,16 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - **Fixed Spectrum advancement that prevented mod completion.**
 - **Added Effortless Building, removed Construction Sticks and downtiered most Building Gadgets.**
 - Fixed AlmostUnified priority config.
+- Added more utilities quests.
+- Cleaned up Spectrum questbook (again again).
+- Fixed many quest typos.
+- Fixed EuphoriaPatcher configs.
+- Updated circuit components quest information.
+- Added void dimension settings information to its quest.
+- Fixed cut eggplant dupe.
+- Made other smoked eggplants obtainable.
+- Added cutting recipe helper.
+- Hid NML pancake from SOL book.
 - Removed Jon Bartman.
 
 ## [2.0.0-rc5]
