@@ -79,6 +79,25 @@ let cinderhearth = (
     event.custom(newRecipe).id(id);
 };
 
+// -- FARMER'S DELIGHT CUTTING -- //
+/**
+ * Cutting
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {![{item: {count: number, id: string}}]} item_inputs - An array of {item: id} or {tag: id}
+ * @param {![{item: {count: number, id: string}}][]} item_outputs
+ * @param {![{type: string, action: string},{tag: string}]} tool - Tool item to cut with
+ */
+let cutting = (event, id, item_inputs, item_outputs, tool) => {
+    let newRecipe = {
+        type: fd('cutting'),
+    };
+    if (item_inputs) newRecipe['ingredients'] = item_inputs;
+    if (item_outputs) newRecipe['result'] = item_outputs;
+    if (tool) newRecipe['tool'] = tool;
+    event.custom(newRecipe).id(id);
+};
+
 // -- SPECTRUM FUSION SHRINE -- //
 /**
  * Fusion Shrine
