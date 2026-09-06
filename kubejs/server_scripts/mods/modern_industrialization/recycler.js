@@ -3,23 +3,34 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
+ServerEvents.tags('item', (event) => {
+    // -- ARTIFACT TAGGING -- //
+    const recycleableArtifacts = Ingredient.of('#artifacts:artifacts')
+        .except([
+            ar('charm_of_shrinking'),
+            ar('everlasting_beef'),
+            ar('eternal_steak'),
+        ])
+        .getStacks()
+        .toArray();
+    recycleableArtifacts.forEach((artifact) => {
+        event.add('kubejs:artifacts/recyclable', `${artifact.id}`);
+    });
+});
+
 ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/recycler/${id}`;
 
-    const recycleableArtifacts = Ingredient.of('#artifacts:artifacts').except([ar('charm_of_shrinking'), ar('everlasting_beef'), ar('eternal_steak')]).getStacks().toArray();
-    recycleableArtifacts.forEach((artifact) =>{
-        let namespace = artifact.id.split(':')[0];
-        let itemName = artifact.id.split(':')[1];
-        recycler(
-            event,
-            st(`artifact_dust_from_${itemName}`),
-            2,
-            50,
-            [{ amount: 1, item: `${artifact.id}` }],
-            [{ amount: 1, item: kj('artifact_dust'), probability: 0.80 }]
-        );
-    })
+    // -- ARTIFACT RECYCLING -- //
+    recycler(
+        event,
+        st('artifact_recycling'),
+        2,
+        50,
+        [{ amount: 1, tag: 'kubejs:artifacts/recyclable' }],
+        [{ amount: 1, item: kj('artifact_dust'), probability: 0.8 }]
+    );
 
     // -- LOW TIER SCRAP -- //
     recycler(

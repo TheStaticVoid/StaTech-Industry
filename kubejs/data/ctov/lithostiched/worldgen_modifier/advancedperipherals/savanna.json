@@ -1,0 +1,44 @@
+{
+	"type": "lithostitched:add_template_pool_elements",
+	"fabric:load_conditions": {
+		"condition": "fabric:all_mods_loaded",
+		"values": [
+			"advancedperipherals"
+		]
+	},
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:never"
+		}
+	],
+	"template_pools": "ctov:village/savanna/house",
+	"elements": [
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"projection": "rigid",
+				"processors": "ctov:village/savanna/house_orange",
+				"location":"ctov:village/savanna/jobsite/computer_lab"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"projection": "rigid",
+				"processors": "ctov:village/savanna/house_red",
+				"location":"ctov:village/savanna/jobsite/computer_lab"
+			}
+		},
+		{
+			"weight": 5,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"projection": "rigid",
+				"processors": "ctov:village/savanna/house_yellow",
+				"location":"ctov:village/savanna/jobsite/computer_lab"
+			}
+		}
+	]
+}

@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -49,7 +49,7 @@ ServerEvents.recipes((event) => {
         .shaped(ei('steam_chainsaw'), ['FDD', 'PGD', 'BPF'], {
             F: mc('furnace'),
             D: '#c:gems/diamond',
-            P: '#c:large_plates/steel',
+            P: '#c:large_plates/iron',
             G: '#c:gears/copper',
             B: mc('bucket'),
         })

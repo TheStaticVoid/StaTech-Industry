@@ -465,16 +465,6 @@ ServerEvents.recipes((event) => {
             D: mi('digital_circuit'),
         })
         .id(st('matter_fabricator'));
-
-    // -- WEAPONS FACTORY -- //
-    event
-        .shaped(mi('weapons_factory'), ['SCS', 'MHM', 'SCS'], {
-            M: mi('large_motor'),
-            S: mi('heatproof_machine_casing'),
-            H: mi('advanced_machine_hull'),
-            C: mi('cupronickel_coil'),
-        })
-        .id(st('weapons_factory'));
 });
 
 ServerEvents.tags('item', (event) => {

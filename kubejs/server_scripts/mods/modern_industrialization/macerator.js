@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -129,11 +129,281 @@ ServerEvents.recipes((event) => {
         });
     };
 
-    const GEM_NAMES = ['amethyst', 'citrine', 'topaz', 'moonstone', 'onyx'];
+    // -- SPECTRUM GEM ORE MACERATING -- //
+    let gemOreRecipes = (gemName) => {
+        const DATA = [
+            {
+                stone: null,
+                inputName: `${gemName}`,
+                shardOutputAmount: 3,
+                chanceShard: 0.5,
+                chanceShardAmount: 1,
+                powderAmount: 2,
+                chancePowder: 0.6,
+                chancePowderAmount: 1,
+            },
+            {
+                stone: 'deepslate',
+                inputName: `${gemName}`,
+                shardOutputAmount: 4,
+                chanceShard: 0.25,
+                chanceShardAmount: 4,
+                powderAmount: 2,
+                chancePowder: 0.25,
+                chancePowderAmount: 1,
+            },
+            {
+                stone: 'blackslag',
+                inputName: `${gemName}`,
+                shardOutputAmount: 4,
+                chanceShard: 0.25,
+                chanceShardAmount: 4,
+                powderAmount: 2,
+                chancePowder: 0.25,
+                chancePowderAmount: 1,
+            },
+        ];
 
-    GEM_NAMES.forEach((name) => {
+        DATA.forEach((data) => {
+            let gemID = data.inputName.includes('amethyst')
+                ? mc(`${data.inputName}_shard`)
+                : sp(`${data.inputName}_shard`);
+            if (data.stone != null) {
+                macerator(
+                    event,
+                    st(`${gemName}_macerating_from_ore_${data.stone}`),
+                    2,
+                    200,
+                    [
+                        {
+                            amount: 1,
+                            item: sp(`${data.stone}_${data.inputName}_ore`),
+                        },
+                    ],
+                    [
+                        {
+                            amount: data.shardOutputAmount,
+                            item: gemID,
+                        },
+                        {
+                            amount: data.chanceShardAmount,
+                            item: gemID,
+                            probability: data.chanceShard,
+                        },
+                        {
+                            amount: data.powderAmount,
+                            item: sp(`${data.inputName}_powder`),
+                        },
+                        {
+                            amount: data.chancePowderAmount,
+                            item: sp(`${data.inputName}_powder`),
+                            probability: data.chancePowder,
+                        },
+                    ]
+                );
+            } else {
+                macerator(
+                    event,
+                    st(`${gemName}_macerating_from_ore`),
+                    2,
+                    200,
+                    [{ amount: 1, item: sp(`${data.inputName}_ore`) }],
+                    [
+                        {
+                            amount: data.shardOutputAmount,
+                            item: gemID,
+                        },
+                        {
+                            amount: data.chanceShardAmount,
+                            item: gemID,
+                            probability: data.chanceShard,
+                        },
+                        {
+                            amount: data.powderAmount,
+                            item: sp(`${data.inputName}_powder`),
+                        },
+                        {
+                            amount: data.chancePowderAmount,
+                            item: sp(`${data.inputName}_powder`),
+                            probability: data.chancePowder,
+                        },
+                    ]
+                );
+            }
+        });
+    };
+
+    const PRIMARY_GEM_NAMES = [
+        'amethyst',
+        'citrine',
+        'topaz',
+        'moonstone',
+        'onyx',
+    ];
+
+    PRIMARY_GEM_NAMES.forEach((name) => {
         gemRecipes(name);
+        gemOreRecipes(name);
     });
+
+    // -- SPECTRUM SECONDARY GEM ORE MACERATING -- //
+    let secondaryGemOreRecipes = (gemName) => {
+        const DATA = [
+            {
+                stone: null,
+                inputName: `${gemName[0]}`,
+                suffixName: `${gemName[1]}`,
+                shardOutputAmount: gemName[2],
+                chanceShard: 0.75,
+                chanceShardAmount: 1,
+            },
+            {
+                stone: 'deepslate',
+                inputName: `${gemName[0]}`,
+                suffixName: `${gemName[1]}`,
+                shardOutputAmount: gemName[2] + 1,
+                chanceShard: 0.25,
+                chanceShardAmount: 1,
+            },
+            {
+                stone: 'blackslag',
+                inputName: `${gemName[0]}`,
+                suffixName: `${gemName[1]}`,
+                shardOutputAmount: gemName[2] + 1,
+                chanceShard: 0.25,
+                chanceShardAmount: 1,
+            },
+        ];
+
+        DATA.forEach((data) => {
+            if (data.stone != null && data.suffixName != 'raw') {
+                macerator(
+                    event,
+                    st(`${data.inputName}_macerating_from_ore_${data.stone}`),
+                    2,
+                    200,
+                    [
+                        {
+                            amount: 1,
+                            item: sp(`${data.stone}_${data.inputName}_ore`),
+                        },
+                    ],
+                    [
+                        {
+                            amount: data.shardOutputAmount,
+                            item: sp(`${data.inputName}_${data.suffixName}`),
+                        },
+                        {
+                            amount: data.chanceShardAmount,
+                            item: sp(`${data.inputName}_${data.suffixName}`),
+                            probability: data.chanceShard,
+                        },
+                    ]
+                );
+            }
+            if (data.stone == null && data.suffixName != 'raw') {
+                macerator(
+                    event,
+                    st(`${data.inputName}_macerating_from_ore`),
+                    2,
+                    200,
+                    [{ amount: 1, item: sp(`${data.inputName}_ore`) }],
+                    [
+                        {
+                            amount: data.shardOutputAmount,
+                            item: sp(`${data.inputName}_${data.suffixName}`),
+                        },
+                        {
+                            amount: data.chanceShardAmount,
+                            item: sp(`${data.inputName}_${data.suffixName}`),
+                            probability: data.chanceShard,
+                        },
+                    ]
+                );
+            }
+            if (data.stone == null && data.suffixName == 'raw') {
+                macerator(
+                    event,
+                    st(`${data.inputName}_macerating_from_ore`),
+                    2,
+                    200,
+                    [{ amount: 1, item: sp(`${data.inputName}_ore`) }],
+                    [
+                        {
+                            amount: data.shardOutputAmount,
+                            item: sp(`${data.suffixName}_${data.inputName}`),
+                        },
+                        {
+                            amount: data.chanceShardAmount,
+                            item: sp(`${data.suffixName}_${data.inputName}`),
+                            probability: data.chanceShard,
+                        },
+                    ]
+                );
+            }
+            if (data.stone != null && data.suffixName == 'raw') {
+                macerator(
+                    event,
+                    st(`${data.inputName}_macerating_from_ore_${data.stone}`),
+                    2,
+                    200,
+                    [
+                        {
+                            amount: 1,
+                            item: sp(`${data.stone}_${data.inputName}_ore`),
+                        },
+                    ],
+                    [
+                        {
+                            amount: data.shardOutputAmount,
+                            item: sp(`${data.suffixName}_${data.inputName}`),
+                        },
+                        {
+                            amount: data.chanceShardAmount,
+                            item: sp(`${data.suffixName}_${data.inputName}`),
+                            probability: data.chanceShard,
+                        },
+                    ]
+                );
+            }
+        });
+    };
+
+    const SECONDARY_GEM_DEF = [
+        ['shimmerstone', 'gem', 3],
+        ['azurite', 'raw', 1],
+        ['malachite', 'raw', 2],
+    ];
+
+    SECONDARY_GEM_DEF.forEach((name) => {
+        secondaryGemOreRecipes(name);
+    });
+
+    // -- STRATINE ORE -- //
+    macerator(
+        event,
+        st('stratine_fragments_from_ore'),
+        2,
+        200,
+        [{ amount: 1, item: sp('stratine_ore') }],
+        [
+            { amount: 2, item: sp('stratine_fragments') },
+            { amount: 1, item: sp('stratine_fragments'), probability: 0.5 },
+        ]
+    );
+
+    // -- PALTAERIA ORE -- //
+    macerator(
+        event,
+        st('paltaeria_fragments_from_ore'),
+        2,
+        200,
+        [{ amount: 1, item: sp('paltaeria_ore') }],
+        [
+            { amount: 2, item: sp('paltaeria_fragments') },
+            { amount: 1, item: sp('paltaeria_fragments'), probability: 0.5 },
+        ]
+    );
 
     // -- QUITOXIC POWDER -- //
     macerator(

@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -23,8 +23,27 @@ ServerEvents.recipes((event) => {
         ei(
             '/canning_machine/generated/canned_food/brewinandchewin/pizza_slice'
         ),
+        'culturalrecipes:smelting/smoked_eggplant',
+        'culturalrecipes:cutting/cut_eggplant',
     ];
     FARMERSDELIGHT_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
+
+    // -- EGGPLANT SMOKING FIX -- //
+    event
+        .smoking(cud('smoked_eggplant'), cud('eggplant'), 0.35, 100)
+        .id(st('smoked_eggplant'));
+
+    // -- EGGPLANT CUTTING FIX -- //
+    cutting(
+        event,
+        st('eggplant_cutting'),
+        [{ item: cud('eggplant') }],
+        [{ item: { count: 2, id: cud('cut_eggplant') } }],
+        [
+            { type: fd('item_ability'), action: 'knife_dig' },
+            { tag: 'c:tools/knife' },
+        ]
+    );
 });
 
 ServerEvents.tags('item', (event) => {

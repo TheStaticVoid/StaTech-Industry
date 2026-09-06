@@ -15,6 +15,9 @@ ServerEvents.recipes((event) => {
         cr('smelting/silver_ingot_compat_modern_industrialization'),
         cr('blasting/silver_ingot_compat_modern_industrialization'),
         cr('crafting/appliances/chain_from_zinc'),
+        cr('crafting/appliances/dough'),
+        cr('splashing/wheat_flour'),
+        cr('mixing/dough_by_mixing'),
     ];
     CREATE_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
     // event.remove( {type: cr('crushing'), output: cr('crushed_platinum_ore')} );

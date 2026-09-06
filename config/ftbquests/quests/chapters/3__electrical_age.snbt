@@ -1608,10 +1608,10 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
-			dependencies: ["21C04730D77746DC"]
+			dependencies: ["4749C508B4B78B5B"]
 			id: "37E716F9D27998E9"
 			rewards: [
 				{
@@ -1641,21 +1641,21 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 7.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["579E6C7DBE9BD476"]
+			dependencies: ["21C04730D77746DC"]
 			id: "5788C82F012FEB6A"
 			shape: "circle"
 			tasks: [{
 				id: "58C680B632D7BE1B"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 8.5d
+			x: -2.0d
+			y: 7.0d
 		}
 		{
-			dependencies: ["21C04730D77746DC"]
+			dependencies: ["0EBD2ACAFF4BDF39"]
 			id: "579E6C7DBE9BD476"
 			rewards: [
 				{
@@ -1685,11 +1685,11 @@
 				item: { count: 1, id: "ae2:controller" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: 3.0d
+			y: 15.0d
 		}
 		{
-			dependencies: ["579E6C7DBE9BD476"]
+			dependencies: ["0EBD2ACAFF4BDF39"]
 			id: "62103F0E617EBA7C"
 			rewards: [{
 				id: "03EB36E6AC2A8C23"
@@ -1701,8 +1701,8 @@
 				id: "7F08D344CEBF5EEA"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: 9.0d
+			x: -2.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -1739,8 +1739,8 @@
 				item: { count: 1, id: "ae2:pattern_encoding_terminal" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 9.0d
+			x: -4.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["19EAC8C0A6889843"]
@@ -1777,8 +1777,8 @@
 				item: { count: 1, id: "ae2:blank_pattern" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 10.5d
+			x: -4.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -1815,8 +1815,8 @@
 				item: { count: 1, id: "ae2:pattern_access_terminal" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 10.5d
+			x: -4.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -1853,8 +1853,8 @@
 				item: { count: 1, id: "ae2:crafting_unit" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: 7.5d
+			x: -3.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -1891,8 +1891,8 @@
 				item: { count: 1, id: "ae2:condenser" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 7.5d
+			x: -2.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -1929,8 +1929,8 @@
 				item: { count: 1, id: "ae2:pattern_provider" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 6.5d
+			x: -2.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["62103F0E617EBA7C"]
@@ -1967,11 +1967,11 @@
 				item: { count: 1, id: "ae2:molecular_assembler" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: 6.5d
+			x: -3.0d
+			y: 16.5d
 		}
 		{
-			dependencies: ["579E6C7DBE9BD476"]
+			dependencies: ["0EBD2ACAFF4BDF39"]
 			id: "25FA24C564DC2B3E"
 			rewards: [
 				{
@@ -2005,7 +2005,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["579E6C7DBE9BD476"]
+			dependencies: ["0EBD2ACAFF4BDF39"]
 			id: "700E2D66148EEE63"
 			rewards: [
 				{
@@ -2563,8 +2563,8 @@
 				item: { count: 1, id: "ae2wtlib:quantum_bridge_card" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 15.0d
+			x: 11.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["13ADC5EC083B64D0"]
@@ -2608,11 +2608,12 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 15.0d
+			x: 9.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0EBD2ACAFF4BDF39"]
+			hide_dependency_lines: true
 			id: "13ADC5EC083B64D0"
 			rewards: [
 				{
@@ -2654,11 +2655,11 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 15.0d
+			x: 8.0d
+			y: 11.0d
 		}
 		{
-			dependencies: ["579E6C7DBE9BD476"]
+			dependencies: ["21C04730D77746DC"]
 			id: "0EBD2ACAFF4BDF39"
 			rewards: [
 				{
@@ -2689,7 +2690,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 13.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0EBD2ACAFF4BDF39"]
@@ -2757,7 +2758,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 15.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0EBD2ACAFF4BDF39"]
@@ -2791,7 +2792,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 14.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0EBD2ACAFF4BDF39"]
@@ -2842,7 +2843,7 @@
 				}
 			]
 			x: -2.5d
-			y: 13.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0EBD2ACAFF4BDF39"]
@@ -2876,7 +2877,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 12.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0EBD2ACAFF4BDF39"]
@@ -2910,7 +2911,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 11.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0EBD2ACAFF4BDF39"]
@@ -2944,7 +2945,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 12.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0EBD2ACAFF4BDF39"]
@@ -2984,8 +2985,8 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
-			y: 13.0d
+			x: -4.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["0EBD2ACAFF4BDF39"]
@@ -3019,7 +3020,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 14.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0BED1964F760756C"]
@@ -3290,8 +3291,8 @@
 				item: { count: 1, id: "ae2netanalyser:network_analyser" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.5d
+			x: -2.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["741C06785329D26C"]
@@ -3476,6 +3477,40 @@
 			}]
 			x: 13.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["2969BA6B88D1EC15"]
+			id: "4749C508B4B78B5B"
+			rewards: [
+				{
+					count: 3
+					id: "69DC0CC73CB99378"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "4AF4406E3E6162F0"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1EBDB86E8C153BA2"
+					table_id: 8811145634920634486L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "5199A847D0DBF414"
+				item: { count: 1, id: "ae2:charger" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
 		}
 	]
 }

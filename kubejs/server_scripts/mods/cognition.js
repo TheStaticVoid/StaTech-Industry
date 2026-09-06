@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
 
     // -- COGNITION REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
-        xp('cognitive_flux'), 
+        xp('cognitive_flux'),
         xp('cognitive_alloy'),
         xp('metamorpher/transformation/netherite_ingot_metamorphosis')
     ];

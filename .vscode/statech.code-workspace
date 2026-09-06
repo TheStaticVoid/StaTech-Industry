@@ -27,6 +27,7 @@
         "editor.formatOnSave": true, // optional
         "editor.formatOnSaveMode": "file", // required to format on save
         "files.autoSave": "off", // optional but recommended
+        "files.eol": "\n",
         "vs-code-prettier-eslint.prettierLast": true,
         "[javascript]": {
             "editor.defaultFormatter": "esbenp.prettier-vscode"

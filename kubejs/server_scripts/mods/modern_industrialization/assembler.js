@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -32,19 +32,19 @@ ServerEvents.recipes((event) => {
     ];
     REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
-    // -- WEAPONS FACTORY -- //
+    // -- HEAVY CORE -- //
     assembler(
         event,
-        st('weapons_factory'),
-        8,
-        200,
+        st('heavy_core'),
+        16,
+        400,
         [
-            { amount: 4, item: mi('heatproof_machine_casing') },
-            { amount: 2, item: mi('large_motor') },
-            { amount: 2, item: mi('cupronickel_coil') },
-            { amount: 1, item: mi('advanced_machine_hull') },
+            { amount: 4, tag: 'c:storage_blocks/steel' },
+            { amount: 4, tag: 'c:storage_blocks/iron' },
+            { amount: 4, tag: 'c:storage_blocks/gold' },
+            { amount: 1, item: mc('ominous_trial_key') }
         ],
-        [{ amount: 1, item: mi('weapons_factory') }]
+        [{ amount: 1, item: mc('heavy_core') }]
     );
 
     // -- MATTER FABRICATOR -- //

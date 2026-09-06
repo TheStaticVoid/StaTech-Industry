@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY DINO FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 const tips = [
@@ -136,11 +136,11 @@ const tips = [
         tiptext:
             "Artifacts have higher chances to spawn in specific locations. As such, it's a good idea to loot a variety of structures to find them.",
     },
-    // {
-    //     id: 'silver_clean_energy',
-    //     tiptext:
-    //         'You can obtain Raw Silver by randomly breaking pots and vases underground to make Solar Boilers before burning any fuel.',
-    // },
+    {
+        id: 'silver_clean_energy',
+        tiptext:
+            'You can obtain Raw Silver in large lead ore veins to make Solar Boilers before burning any fuel.',
+    },
     {
         id: 'waystones_in_wilderness',
         tiptext:
@@ -367,6 +367,104 @@ const tips = [
         id: 'guns',
         tiptext:
             'Guns from TACZ are an effective way to defend your factory. They are also fun!',
+    },
+    {
+        id: 'veinwaypoints',
+        tiptext:
+            'The prospecting pick allows you to easily add waypoints for ore veins by right-clicking ore samples on the surface! Shift right-click to add an inworld beacon for the waypoint.',
+    },
+    {
+        id: 'lumberaxes',
+        tiptext:
+            'Lumberaxes can be used to easily gather a lot of wood after obtaining plates!',
+    },
+    {
+        id: 'mininghammersimpactcore',
+        tiptext:
+            'Impact Mining Hammers can dig in a 3x3x3 area. Great for digging out large ore veins!',
+    },
+    {
+        id: 'oreveinsspecial',
+        tiptext:
+            'Some large ore veins are more common in specific conditions, for example Iron and Emerald veins in mountain biomes.',
+    },
+    {
+        id: 'oregeneration',
+        tiptext:
+            'Vanilla ore veins are less common, but the world is littered with large ore veins that often contain more than a thousand ore blocks.',
+    },
+    {
+        id: 'oresamples',
+        tiptext:
+            'Large ore veins that often contain more than a thousand ore blocks.',
+    },
+    {
+        id: 'expchests',
+        tiptext: 'Opening chests is a great way to gain XP early on.',
+    },
+    {
+        id: 'gearsassembler',
+        tiptext:
+            'Gears have a way better ratio of inputs to outputs when made in the Assembler.',
+    },
+    {
+        id: 'fog',
+        tiptext:
+            "Fog is more dense with the addition of No Man's Land. It can however be configured in the Video Settings.",
+    },
+    {
+        id: 'paperdoll',
+        tiptext:
+            "The Paperdoll in the upper left corner of the screen can be disabled with a configurable keybind or in the mod's config.",
+    },
+    {
+        id: 'artifactrecycling',
+        tiptext:
+            'Artifacts can be recycled in the Recycler and re-rolled by creating Mimic Spawn Eggs!',
+    },
+    {
+        id: 'steeltier',
+        tiptext:
+            'Steel tools and armor are just slightly worse than diamond ones.',
+    },
+    {
+        id: 'bronzetier',
+        tiptext:
+            'Bronze tools and armor are just slightly better than iron ones.',
+    },
+    {
+        id: 'coppertier',
+        tiptext: 'Copper tools are just slightly better than stone ones.',
+    },
+    {
+        id: 'blockspeedmultiplier',
+        tiptext:
+            'Path blocks have a slight bonus to walking speed and Speedy Concrete has a much bigger boost.',
+    },
+    {
+        id: 'mobcatchervillager',
+        tiptext:
+            'Villagers can be more easily transported with the Mob Catcher Upgrade from Sophisticated Backpacks.',
+    },
+    {
+        id: 'earlyrubydust',
+        tiptext:
+            'Ruby Dust can be obtained by centrifuging Redstone to get Chromium Crushed Dust before automating Stainless Steel Drills.',
+    },
+    {
+        id: 'alternatemetalrecipes',
+        tiptext:
+            'Some items (anvil, rails, buckets, hoppers) can be alternatively crafted using metals other than iron (lead, nickel, silver, tin).',
+    },
+    {
+        id: 'claimallquestrewards',
+        tiptext:
+            'You can claim your quest rewards all at once by clicking the Select Rewards button in the upper right corner of the quest screen.',
+    },
+    {
+        id: 'prospectorpick',
+        tiptext:
+            "Right clicking the ground with the Prospector Pick will scan the area around you for deposits. Useful if you're struggling to find surface samples or deep in a cave",
     },
 ];
 

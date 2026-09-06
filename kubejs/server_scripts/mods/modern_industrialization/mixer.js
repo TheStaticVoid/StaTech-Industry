@@ -1,6 +1,6 @@
 // -----------------------------------------
 // CREATED BY STATIC FOR USE IN
-// STATECH INDUSTRY
+// STATECH INDUSTRY 2
 // -----------------------------------------
 
 ServerEvents.recipes((event) => {
@@ -10,6 +10,20 @@ ServerEvents.recipes((event) => {
     // -- MIXER REMOVED RECIPES -- //
     const REMOVED_RECIPES = [mi('materials/mixer/fire_clay_dust')];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
+
+    // -- OMINOUS BOTTLE -- //
+    mixer(
+        event,
+        st('bad_omen_bottle'),
+        8,
+        200,
+        [
+            { amount: 2, item: mc('spider_eye') },
+            { amount: 1, item: mc('glass_bottle') },
+        ],
+        [{ amount: 1, item: mc('ominous_bottle') }],
+        [{ amount: 1000, fluid: mi('synthetic_oil') }]
+    );
 
     // -- NETHERRACK -- //
     mixer(
@@ -149,7 +163,7 @@ ServerEvents.recipes((event) => {
         2,
         100,
         [{ amount: 1, item: cr('wheat_flour') }],
-        [{ amount: 1, item: cr('dough') }],
+        [{ amount: 3, item: cr('dough') }],
         [{ amount: 1000, fluid: mc('water') }]
     );
 
@@ -348,17 +362,6 @@ ServerEvents.recipes((event) => {
         ],
         null,
         [{ amount: 100, fluid: mc('water') }],
-        [{ amount: 500, fluid: mi('concrete') }]
-    );
-
-    // -- CONCRETE BLOCK -- //
-    mixer(
-        event,
-        st('speedy_concrete'),
-        8,
-        100,
-        [{ amount: 1, item: mi('packer_block_template'), probability: 0 }],
-        [{ amount: 2, item: kj('speedy_concrete') }],
         [{ amount: 500, fluid: mi('concrete') }]
     );
 
