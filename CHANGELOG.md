@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.0.1]
+TODO: Write a changelog
+
 ## [2.0.0]
 
 This is the full release of StaTech Industry 2. Took us long enough. Thanks for your patience with the last 5 release candidates, it's been a long road but we're finally here! This changelog does not summarize ALL the changes that have been made between 1.0 and 2.0, only the changes made between the release candidates. For a more comprehensive list of changes, check '[2.0 CHANGES.md](https://github.com/TheStaticVoid/StaTech-Industry/blob/main/2.0%20CHANGES.md)'
