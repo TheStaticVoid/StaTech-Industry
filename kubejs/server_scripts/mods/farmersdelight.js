@@ -23,15 +23,32 @@ ServerEvents.recipes((event) => {
         ei(
             '/canning_machine/generated/canned_food/brewinandchewin/pizza_slice'
         ),
+        ei('/canning_machine/generated/canned_food/rusticdelight/syrup'),
         'culturalrecipes:smelting/smoked_eggplant',
         'culturalrecipes:cutting/cut_eggplant',
+        rd('paper_from_cotton_boll'),
+        rd('cooking/syrup'),
+        rd('sugar_from_syrup'),
     ];
     FARMERSDELIGHT_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
-    // -- EGGPLANT SMOKING FIX -- //
+    // ---------------------------//
+    // --- SHAPELESS CRAFTING --- //
+    // ---------------------------//
+
+    // -- SUGAR FROM MAPLE SYRUP -- //
     event
-        .smoking(cud('smoked_eggplant'), cud('eggplant'), 0.35, 100)
-        .id(st('smoked_eggplant'));
+        .shapeless(Item.of(mc('sugar'), 3), [nm('maple_syrup_bottle')])
+        .id(st('sugar_from_syrup'));
+
+    // -- CANVAS FROM FLAX -- //
+    event
+        .shapeless(fd('canvas'), [Item.of(su('flax'), 4)])
+        .id(st('canvas_from_flax'));
+
+    // --------------------//
+    // ----- CUTTING ----- //
+    // --------------------//
 
     // -- EGGPLANT CUTTING FIX -- //
     cutting(
@@ -44,6 +61,15 @@ ServerEvents.recipes((event) => {
             { tag: 'c:tools/knife' },
         ]
     );
+
+    // --------------------//
+    // ----- SMOKING ----- //
+    // --------------------//
+
+    // -- EGGPLANT SMOKING FIX -- //
+    event
+        .smoking(cud('smoked_eggplant'), cud('eggplant'), 0.35, 100)
+        .id(st('smoked_eggplant'));
 });
 
 ServerEvents.tags('item', (event) => {
@@ -63,4 +89,17 @@ ServerEvents.tags('item', (event) => {
 
     event.add(fd('feasts'), cud('eggplant_parmesan_block'));
     event.add('c:foods/edible_when_placed', cud('eggplant_parmesan_block'));
+
+    // -- SYRUP TAG UNIFICATION -- //
+    event.add(rd('syrup'), nm('maple_syrup_bottle'));
+    event.remove(rd('syrup'), rd('syrup'));
+    event.add(rd('sweet_liquids'), nm('maple_syrup_bottle'));
+
+    // -- DOUGH TAG UNIFICATION -- //
+    event.add('c:foods/dough', cud('corn_dough'));
+    event.removeAllTagsFrom(fd('wheat_dough'));
+
+    // -- COOKING OIL TAG UNIFICATION -- //
+    event.add(rd('cooking_oil_ingredients'), su('flax_seeds'));
+    event.add(rd('cooking_oil_ingredients'), cud('corn_kernels'));
 });

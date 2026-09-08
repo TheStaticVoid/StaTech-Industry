@@ -99,7 +99,7 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
     const UNUSED_NML = [nm('pancake')];
     UNUSED_NML.forEach((id) => event.remove(id));
 
-    const UNUSED_FD = [fd('wheat_dough'), bc('pizza'), bc('pizza_slice')];
+    const UNUSED_FD = [fd('wheat_dough'), bc('pizza'), bc('pizza_slice'), rd('syrup')];
     UNUSED_FD.forEach((id) => event.remove(id));
 
     const UNUSED_GAG = [gag('pigment_jar')];

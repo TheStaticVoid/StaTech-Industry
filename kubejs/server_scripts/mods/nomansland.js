@@ -105,16 +105,6 @@ ServerEvents.recipes((event) => {
         ])
         .id(st('mushroom_stew_shaped'));
 
-    // -- PANCAKE -- //
-    event
-        .shapeless(Item.of(su('pancake'), 2), [
-            '#c:drinks/milk',
-            '#c:foods/dough',
-            mc('egg'),
-            '#supplementaries:pancake_syrup',
-        ])
-        .id(st('pancake'));
-
     // --------------------//
     // ----- COOKING ----- //
     // --------------------//
