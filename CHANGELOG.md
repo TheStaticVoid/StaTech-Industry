@@ -1,7 +1,10 @@
 # Changelog
 
 ## [2.0.1]
-TODO: Write a changelog
+
+TODO BLah blah blah update text goes here
+
+- Fixed You're in Grave Danger graves not spawning properly in Spectrum's dimension
 
 ## [2.0.0]
 
