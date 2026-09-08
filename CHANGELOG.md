@@ -5,6 +5,8 @@
 TODO BLah blah blah update text goes here
 
 - Fixed You're in Grave Danger graves not spawning properly in Spectrum's dimension
+- Added Breeze Model to the Mob Crusher
+- Added peaceful compatable recipe for Breeze Rods
 
 ## [2.0.0]
 
