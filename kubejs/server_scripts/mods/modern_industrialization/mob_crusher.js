@@ -229,7 +229,7 @@ ServerEvents.recipes((event) => {
                 { amount: 1, item: mc('breeze_rod'), probability: 0.5 },
                 { amount: 1, item: cr('experience_nugget'), probability: 0.5 },
             ],
-            mi('blood'),
+            mi('liquid_air'),
         ],
     ];
     // Add all the recipes from the list
