@@ -63,3 +63,4 @@ let bc = (id) => `brewinandchewin:${id}`;
 let adp = (id) => `advancedperipherals:${id}`;
 let tz = (id) => `tacz:${id}`;
 let sc = (id) => `scannable:${id}`;
+let cs = (id) => `constructionstick:${id}`;

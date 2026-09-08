@@ -386,11 +386,6 @@
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "7D00A862F3B52D99"
-					item: { count: 1, id: "yet_another_industrialization:machine_remover" }
-					type: "item"
-				}
 			]
 			x: 2.0d
 			y: -3.0d
@@ -651,6 +646,51 @@
 			]
 			x: -2.5d
 			y: 1.5d
+		}
+		{
+			id: "4BF0F292542A1AF3"
+			rewards: [{
+				id: "5D3EF34C2F9A522C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "714F9CEFE5206528"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(constructionstick:construction_sticks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			id: "39D7C87CFE4CABE0"
+			rewards: [{
+				id: "2ECF697542737FFB"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "0C0DF87DE7AFBA1A"
+				item: { count: 1, id: "sophisticatedstorage:packing_tape" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			id: "1A7458B9AA780B13"
+			rewards: [{
+				id: "2B93EE94C348EE05"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "68CAA00CF4F9DD8A"
+				item: { count: 1, id: "yet_another_industrialization:machine_remover" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.0d
 		}
 	]
 }
