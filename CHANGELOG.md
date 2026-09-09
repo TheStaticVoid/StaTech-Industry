@@ -7,6 +7,8 @@ TODO BLah blah blah update text goes here
 - Fixed You're in Grave Danger graves not spawning properly in Spectrum's dimension
 - Added Breeze Model to the Mob Crusher
 - Added peaceful compatable recipe for Breeze Rods
+- Add option for server hosts to disable Worldshaper usage
+- Add option for server hosts to disable placing Spectrum Ruin. Check STCM config for the setting!
 
 ## [2.0.0]
 
