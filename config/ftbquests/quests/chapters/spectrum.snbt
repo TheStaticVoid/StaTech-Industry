@@ -4152,6 +4152,9 @@
 		}
 		{
 			dependencies: ["02EFA93D1525F456"]
+			icon: {
+				id: "spectrum:spectral_shard"
+			}
 			id: "37C701CDEA359A70"
 			rewards: [
 				{
@@ -5136,16 +5139,6 @@
 					id: "2CD67B63AC61EE5C"
 					type: "xp"
 					xp: 100
-				}
-				{
-					command: "/advancement grant @p only spectrum:unlocks/mysterious_locket_socketing"
-					disable_reward_screen_blur: true
-					icon: {
-						id: "spectrum:moonstone_core"
-					}
-					id: "4B9E23F799128BCC"
-					silent: true
-					type: "command"
 				}
 			]
 			size: 2.0d
