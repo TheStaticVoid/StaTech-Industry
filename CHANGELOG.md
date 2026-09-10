@@ -9,6 +9,8 @@ TODO BLah blah blah update text goes here
 - Added peaceful compatable recipe for Breeze Rods
 - Add option for server hosts to disable Worldshaper usage
 - Add option for server hosts to disable placing Spectrum Ruin. Check STCM config for the setting!
+- Added new advancements for when you craft custom machines and items
+- Moved the Large Storage Unit quest to the MV chapter to match it's crafting requirements
 
 ## [2.0.0]
 
