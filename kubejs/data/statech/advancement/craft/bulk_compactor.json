@@ -1,0 +1,29 @@
+{
+    "parent": "modern_industrialization:digital_circuit",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "mi_tweaks:bulk_compactor"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.bulk_compactor.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "mi_tweaks:bulk_compactor"
+        },
+        "title": {
+            "translate": "advancements.statech.bulk_compactor"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

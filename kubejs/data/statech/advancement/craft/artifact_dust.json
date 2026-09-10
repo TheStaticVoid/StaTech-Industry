@@ -1,0 +1,30 @@
+{
+    "parent": "statech:craft/recycler",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "kubejs:artifact_dust"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.artifact_dust.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "kubejs:artifact_dust"
+        },
+        "title": {
+            "translate": "advancements.statech.artifact_dust"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

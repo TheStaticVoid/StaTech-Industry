@@ -1,0 +1,29 @@
+{
+    "parent": "modern_industrialization:analog_circuit",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "extended_industrialization:lv_solar_panel"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.lv_solar_panel.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "extended_industrialization:lv_solar_panel"
+        },
+        "title": {
+            "translate": "advancements.statech.lv_solar_panel"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

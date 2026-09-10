@@ -1,0 +1,29 @@
+{
+    "parent": "modern_industrialization:implosion_compressor",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "modern_industrialization:recycler"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.recycler.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "modern_industrialization:recycler"
+        },
+        "title": {
+            "translate": "advancements.statech.recycler"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

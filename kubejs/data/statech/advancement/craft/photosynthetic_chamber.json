@@ -1,0 +1,29 @@
+{
+    "parent": "modern_industrialization:analog_circuit",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "modern_industrialization:photosynthetic_chamber"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.photosynthetic_chamber.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "modern_industrialization:photosynthetic_chamber"
+        },
+        "title": {
+            "translate": "advancements.statech.photosynthetic_chamber"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

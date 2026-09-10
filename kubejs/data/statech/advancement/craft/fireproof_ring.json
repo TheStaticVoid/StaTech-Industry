@@ -1,0 +1,30 @@
+{
+    "parent": "statech:root",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "kubejs:fireproof_ring"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.fireproof_ring.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "kubejs:fireproof_ring"
+        },
+        "title": {
+            "translate": "advancements.statech.fireproof_ring"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

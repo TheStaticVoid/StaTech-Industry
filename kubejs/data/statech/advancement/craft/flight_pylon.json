@@ -1,0 +1,30 @@
+{
+    "parent": "modern_industrialization:diesel_jetpack",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "yet_another_industrialization:flight_pylon"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.flight_pylon.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "count": 1,
+            "id": "yet_another_industrialization:flight_pylon"
+        },
+        "title": {
+            "translate": "advancements.statech.flight_pylon"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

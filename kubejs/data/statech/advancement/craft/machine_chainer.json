@@ -1,0 +1,30 @@
+{
+    "parent": "modern_industrialization:distillery",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "extended_industrialization:machine_chainer"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.machine_chainer.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "extended_industrialization:machine_chainer"
+        },
+        "title": {
+            "translate": "advancements.statech.machine_chainer"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}
