@@ -313,6 +313,36 @@ ServerEvents.tags('item', (event) => {
             event.add(`c:seeds/${match[1]}`, seeds);
         }
     });
+
+    const DYE_COLORS = [
+        'white',
+        'orange',
+        'magenta',
+        'yellow',
+        'cyan',
+        'lime',
+        'pink',
+        'gray',
+        'light_blue',
+        'light_gray',
+        'purple',
+        'blue',
+        'brown',
+        'green',
+        'red',
+        'black',
+    ];
+
+    DYE_COLORS.forEach((DYE_COLORS) => {
+        event.add(
+            kj('bell_pepper_rolls'),
+            rd(`bell_pepper_roll_${DYE_COLORS}`)
+        );
+        event.add(
+            kj('stuffed_bell_peppers'),
+            rd(`stuffed_bell_pepper_${DYE_COLORS}`)
+        );
+    });
 });
 
 ServerEvents.tags('block', (event) => {
