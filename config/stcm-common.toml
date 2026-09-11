@@ -12,3 +12,5 @@ prospector_y_radius = 256
 prospector_min_deposit_size = 32
 #The distance between ore samples of the same type that duplicate waypoint creation should be blocked in
 prospector_proximity = 16
+#Prevents Spectrum "Bottle of Ruin" from being placed in the world. Replaces the behavior of clicking on bedrock, mainly for servers
+prevent_ruin = false

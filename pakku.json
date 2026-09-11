@@ -1,9 +1,15 @@
 {
   "name": "StaTech Industry",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "staitc, Purple Dino, & GronkDev",
   "release_type": "release",
-  "overrides": ["config", "defaultconfigs", "kubejs", "!kubejs/probe/**", "shaderpacks"],
+  "overrides": [
+    "config",
+    "defaultconfigs",
+    "kubejs",
+    "!kubejs/probe/**",
+    "shaderpacks"
+  ],
   "server_overrides": [
     "!kubejs/assets",
     "forge-auto-install.txt",
@@ -50,6 +56,9 @@
     "controlling": {
       "side": "CLIENT"
     },
+    "create-schematicchecker": {
+      "side": "SERVER"
+    },
     "ctm": {
       "side": "CLIENT"
     },
@@ -90,9 +99,6 @@
       "side": "CLIENT"
     },
     "fusion": {
-      "side": "CLIENT"
-    },
-    "gnetum": {
       "side": "CLIENT"
     },
     "inventory-hud-forge": {

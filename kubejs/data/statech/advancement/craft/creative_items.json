@@ -1,0 +1,39 @@
+{
+    "parent": "modern_industrialization:quantum_upgrade",
+    "criteria": {
+        "creative_items": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "create:creative_motor"
+                    },
+                    {
+                        "items": "modern_industrialization:creative_storage_unit"
+                    },
+                    {
+                        "items": "modern_industrialization:barrel"
+                    },
+                    {
+                        "items": "modern_industrialization:tank"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.creative_items.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "count": 1,
+            "id": "modern_industrialization:creative_storage_unit"
+        },
+        "title": {
+            "translate": "advancements.statech.creative_items"
+        }
+    },
+    "requirements": [["creative_items"]],
+    "sends_telementry_event": true
+}

@@ -1,0 +1,29 @@
+{
+    "parent": "modern_industrialization:kanthal_coil",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "kubejs:withered_soc"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.withered_soc.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "kubejs:withered_soc"
+        },
+        "title": {
+            "translate": "advancements.statech.withered_soc"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

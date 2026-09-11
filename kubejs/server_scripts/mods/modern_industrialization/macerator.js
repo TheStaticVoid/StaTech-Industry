@@ -7,6 +7,16 @@ ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/macerator/${id}`;
 
+    // -- WIND CHARGE -- //
+    macerator(
+        event,
+        st('wind_charge'),
+        2,
+        200,
+        [{ amount: 1, item: mc('breeze_rod') }],
+        [{ amount: 8, item: mc('wind_charge') }]
+    );
+
     // -- WHEAT DOUGH -- //
     macerator(
         event,

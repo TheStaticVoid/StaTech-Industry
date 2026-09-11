@@ -1,0 +1,29 @@
+{
+    "parent": "modern_industrialization:lv_steam_turbine",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "industrialization_overdrive:pyrolyse_oven"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.pyrolyse_oven.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "industrialization_overdrive:pyrolyse_oven"
+        },
+        "title": {
+            "translate": "advancements.statech.pyrolyse_oven"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

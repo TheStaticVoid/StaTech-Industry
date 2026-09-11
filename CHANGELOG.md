@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.0.1]
+
+This is the first follow-up patch post release that we are looking to clean up a few issues and add some more improvements. This pack version includes an updated Spectrum version which fixes some issues players were having in the last version of the mod.
+
+- **Re-added construction sticks.**
+- Fixed quest typos.
+- Fixed You're in Grave Danger graves not spawning properly in Spectrum's dimension.
+- Added Breeze Model to the Mob Crusher.
+- Added peaceful compatable recipe for Breeze Rods.
+- **Added and integrated Rustic Delight.**
+- **Add option for server hosts to disable Worldshaper usage.**
+- **Add option for server hosts to disable placing Spectrum Ruin. Check STCM config for the setting!**
+- **Fixed food tagging issues.**
+- **Added new advancements for when you craft custom machines and items.**
+- Moved the Large Storage Unit quest to the MV chapter to match it's crafting requirements.
+- Fixed the Configurable Mixed Storage quest title.
+
 ## [2.0.0]
 
 This is the full release of StaTech Industry 2. Took us long enough. Thanks for your patience with the last 5 release candidates, it's been a long road but we're finally here! This changelog does not summarize ALL the changes that have been made between 1.0 and 2.0, only the changes made between the release candidates. For a more comprehensive list of changes, check '[2.0 CHANGES.md](https://github.com/TheStaticVoid/StaTech-Industry/blob/main/2.0%20CHANGES.md)'

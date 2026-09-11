@@ -1,0 +1,30 @@
+{
+    "parent": "statech:craft/creative_items",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "create:handheld_worldshaper"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.handheld_worldshaper.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "count": 1,
+            "id": "create:handheld_worldshaper"
+        },
+        "title": {
+            "translate": "advancements.statech.handheld_worldshaper"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

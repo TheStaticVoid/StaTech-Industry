@@ -355,6 +355,7 @@
 		""
 		"It's kinda complicated, check the &dPonder&r scene."
 	]
+	quest.076EB6031C26137C.title: "Any Bell Pepper"
 	quest.077C957AAB39CC0B.quest_desc: ["While powerful, the &aBoss Crusher&r isn't perfect. Killing the &cWither&r doesn't produce a pristine &dNether Star&r as if you killed it normally. Instead you only will receive &2500mB&r of &2Impure Liquid Nether Star&r per &dWither model&r. This will need to be purified before it can be used."]
 	quest.078843982FA6DF90.quest_desc: [
 		"&bTrain Tracks&r are what your &dtrains&r will move along. "
@@ -1256,6 +1257,7 @@
 	quest.1A4CF8FC20475A01.quest_desc: ["With your new &bProcessing Units&r you can now craft the large versions of the advanced components."]
 	quest.1A4CF8FC20475A01.title: "Large Advanced Components"
 	quest.1A57ADA75B7359B8.quest_desc: ["&aElectronic Circuits&r and &aMV Machine Hulls&r unlocks two &bnew batching multiblocks&r."]
+	quest.1A7458B9AA780B13.quest_desc: ["Lets you &o&cinstantly break&r&r machines with just a little bit of &eenergy&r!"]
 	quest.1A75E897313419C8.quest_desc: [
 		"The &bMechanical Crafter&r allows for automating the crafting of items. Some items can only be crafted with the &bMechanical Crafter&r."
 		""
@@ -2019,6 +2021,7 @@
 		"Both require a &dchannel&r to function."
 	]
 	quest.27D37976F35BB3E7.quest_desc: ["The &aConfigurable Mixed Storage&r is a combination of the &eConfigurable Chest&r and the &eConfigurable Tank&r."]
+	quest.27D37976F35BB3E7.title: "Configurable Mixed Storage"
 	quest.27E1D6ADECEF5F5C.quest_desc: [
 		"The &bMechanical Mixer&r and &aBasin&r will allow you to mix certain dusts and ingots. If you've followed normal &eChapter&r progression, you will have made this to access &eModern Industrialization&r."
 		""
@@ -2221,6 +2224,7 @@
 		"To access the settings menu, you can hold the '&en&r' key whilst holding &aany of the tools&r."
 	]
 	quest.2C84E1C3D7590A49.title: "Building Gadgets"
+	quest.2C91C6D3E0338806.title: "Any Roasted Bell Pepper"
 	quest.2CA069F476518EB2.quest_desc: [
 		"&aHidden mode&r can be toggled with a &eblack dye&r. It makes it so that the drawer doesn't show it's item."
 		""
@@ -2877,6 +2881,7 @@
 	]
 	quest.39B30DBE1DD45D83.quest_subtitle: "Oddly satisfying!"
 	quest.39D48C79329C6E09.quest_desc: ["An upgrade to the &6Bronze Barrel&r. This barrel can hold up to 128 stacks of the same item. Probably really good for all the cobblestone you've been amassing."]
+	quest.39D7C87CFE4CABE0.quest_desc: ["Allows you to &a&omove&r&r &9Sophisticated Storage&r barrels around without &4breaking&r them!"]
 	quest.39ED7019F3ACB226.quest_desc: ["An important component in &aStyrene-Butadiene Rubber&r."]
 	quest.39ED7019F3ACB226.title: "Styrene-Butadiene"
 	quest.39FB6B43C46FC7D7.quest_desc: [
@@ -3355,6 +3360,7 @@
 	quest.4410F770254B4F8F.quest_subtitle: "Upgrades people, upgrades!"
 	quest.4434AD65DF2DD224.quest_desc: ["&aTravel Anchors&r are pulled straight out of &eEnderIO.&r You can place them down, name them, and use the &bwand to warp between them&r. You can also stand on them to warp to others &eby looking at them and pressing right-click&r."]
 	quest.4434AD65DF2DD224.title: "Travel Anchors"
+	quest.44652C4A269EDB98.title: "Any Stuffed Bell Pepper"
 	quest.446E637986CA7147.quest_desc: [
 		"Do you want to turn that excess &cBlood&r from the &aMob Crusher&r into something useful? Why not use it to &2power your ever expanding factory&r. By providing the &dentity&r within the machine (definitely not &dLilith&r) bountiful amounts of &cBlood&r it will provide you with &ecopious amounts of power&r."
 		""
@@ -3762,6 +3768,8 @@
 		"&eScrap&r can be turned into &5UU Matter&r (not the fluid) in the &aImplosion Compressor&r at a &624:1 ratio&r, and &5UU Matter&r (&o&estill&r not the fluid&r) can be turned into &9Tier 1 Coins&r or different blocks and items in the &dMatter Fabricator&r."
 	]
 	quest.4BDF575E8688D537.quest_subtitle: "Environmentally friendly!"
+	quest.4BF0F292542A1AF3.quest_desc: ["&aConstruction Sticks&r are like the classic &eBuilding Wands&r but &cslightly different&r! You can press '&en&r' to open their &aconfiguration menu&r while holding one!"]
+	quest.4BF0F292542A1AF3.title: "Construction Sticks"
 	quest.4BFCCF11AC1E8126.quest_desc: ["The &bDiamond Barrel&r is a long awaited upgrade to your storage barrels. It allows you to store &e72 stacks of items&r."]
 	quest.4BFCCF11AC1E8126.quest_subtitle: "A long awaited storage upgrade v2"
 	quest.4C21AE3DBA1206E0.quest_desc: ["&oIt's a mailbox&r."]
@@ -6371,12 +6379,12 @@
 		"It costs quite a bit of &eTungstensteel&r, so it's recommend to try to &9wallshare&r it to save on &aresources&r!"
 	]
 	quest.7FA070C66DAF5377.quest_desc: [
-		"Extracts of the &dBlood Orchid&r have an intense effect when consumed: they may put you into a &dFrenzy&r. &eDamage, attack speed, speed, and knockback resistance are buffed&r the more you kill. But if you do not score a kill within &215 seconds&r you get &cdebuffs instead&r. The higher the effects level, the higher the amplitude."
+		"Extracts of the &dBlood Orchid&r have an intense effect when consumed: they may put you into a &dFrenzy&r. &eDamage, attack speed, speed, and knockback resistance are buffed&r the more you kill. But if you do not score a kill within &215 seconds&r you get &cdebuffs instead&r. The higher the effect's level, the higher the amplitude."
 		""
 		"&e&lFrenzy Stacking&r"
 		"Instead of resetting the duration, &bapplying another &dFrenzy&b effect will increase its potency instead&r."
 		""
-		"To get teh most out of the effect getting one with long duration first and then stacking up on that seems to be most effective."
+		"To get the most out of the effect, getting one with long duration first, and then stacking up on that &oseems to be most effective&r."
 	]
 	quest.7FB2C2856B76DB74.quest_desc: ["The &bFluid Valve&r can be used to control the flow of fluids through a pipe. Applying &arotational force&r to the &bFluid Valve&r will change which direction it will allow fluids to flow."]
 	quest.7FBD5ED1B6E06B6D.quest_desc: [
@@ -6404,7 +6412,6 @@
 	quest.7FD9582038C29150.title: "HV Cables"
 	reward.1D7A45772F4FCB6E.title: "Unlock Overenchanting"
 	reward.4275DA182DE50F12.title: "Unlock Conflicted Enchanting"
-	reward.4B9E23F799128BCC.title: "Allow Locket Socketing"
 	reward_table.0542C9BA02BA96DC.title: "Chapter 4 Common Reward"
 	reward_table.0A6132BE8A6F09B2.title: "Chapter 6 Rare Reward"
 	reward_table.18F2AF94B48D4DF8.title: "Chapter 7 Reward"
@@ -6431,6 +6438,7 @@
 	task.00D4BABF0A690CA5.title: "Overclocking, part 3"
 	task.012E2EA7A45CCEFF.title: "Pentaborane"
 	task.0176B69E50B6E40E.title: "NYI"
+	task.01C8217D41BC6961.title: "Any Roasted Bell Pepper"
 	task.01F4FDF4C13E2F9A.title: "Any Energy Output Hatch"
 	task.020EEBE3F0987916.title: "I've done this!"
 	task.023CC719D3269423.title: "4x Polished Gemstone Blocks"
@@ -6487,6 +6495,7 @@
 	task.0E49F79E7E70D235.title: "4x Polished Gemstone Blocks"
 	task.0E8A5C744F2B7940.title: "Any Energy Input Hatch"
 	task.0ECA1F32FF71F125.title: "Any Item Output Hatch"
+	task.0ED7C34C211A91D5.title: "Any Bell Pepper"
 	task.0F128E5E9CEF7374.title: "92x Polished Blocks"
 	task.0FC2EC17F4A216F2.title: "Click to Acknowledge"
 	task.10A20CF34D904B6E.title: "Any Colored Sapling"
@@ -6660,6 +6669,7 @@
 	task.356C24BFAC444D8D.title: "NYI"
 	task.35A061877D5EE6C4.title: "NYI"
 	task.367F8C3925763AB8.title: "Click to Acknowledge"
+	task.36B1C25D12D3A03F.title: "Any Bell Pepper Roll"
 	task.36E1D91650DDD7D4.title: "Any Item Input Hatch"
 	task.3750401D20388C6C.title: "Any Fluid Output Hatch"
 	task.3759329D7AB3E02D.title: "Any Energy Input Hatch"
@@ -6899,6 +6909,8 @@
 	task.70389E4EEDC0404A.title: "Any Item Input Hatch"
 	task.70B5D68C2F8990BD.title: "Any Energy Input Hatch"
 	task.70CF3C821C58C99D.title: "NYI"
+	task.711878BBFD6F5BD9.title: "Any Stuffed Bell Pepper"
+	task.714F9CEFE5206528.title: "Any Construction Stick"
 	task.7152BA35FCEA6C75.title: "Any Energy Output Hatch"
 	task.715FCED80BE32380.title: "77x Polished Blocks"
 	task.717FB8F4A7EECBB1.title: "Any Fluid Input Hatch"

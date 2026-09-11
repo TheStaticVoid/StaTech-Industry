@@ -39,6 +39,9 @@ tacz/
 
 modern_industrialization/runtime_datagen/
 
+# Misc
+*.bak
+
 # Pakku
 build/
 .pakku/server-overrides/minecraft_server.jar
@@ -238,7 +241,6 @@ config/waystones-common.toml
 config/wstweaks.cfg
 config/yacl.json5
 config/yet_another_industrialization-startup.toml
-config/yigd.json
 config/zume.json5
 defaultconfigs/biolith/general.json
 defaultconfigs/certain_questing_additions/client-config.snbt
@@ -362,6 +364,9 @@ config/forgeendertech-common.toml
 config/forgeendertech/cached.dat
 config/forgeendertech/Wind.cfg
 config/adfinders/Targets/minecraft.cfg
+config/CSC/CSC_Warn.log
+config/CSC/Data/*
+config/CSC/Log/*
 
 # Linux
 *~
