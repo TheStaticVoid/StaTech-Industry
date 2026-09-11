@@ -4,14 +4,18 @@
 
 This is the first follow-up patch post release that we are looking to clean up a few issues and add some more improvements. This pack version includes an updated Spectrum version which fixes some issues players were having in the last version of the mod.
 
-- Fixed You're in Grave Danger graves not spawning properly in Spectrum's dimension
-- Added Breeze Model to the Mob Crusher
-- Added peaceful compatable recipe for Breeze Rods
-- **Add option for server hosts to disable Worldshaper usage**
+- **Re-added construction sticks.**
+- Fixed quest typos.
+- Fixed You're in Grave Danger graves not spawning properly in Spectrum's dimension.
+- Added Breeze Model to the Mob Crusher.
+- Added peaceful compatable recipe for Breeze Rods.
+- **Added and integrated Rustic Delight.**
+- **Add option for server hosts to disable Worldshaper usage.**
 - **Add option for server hosts to disable placing Spectrum Ruin. Check STCM config for the setting!**
-- **Added new advancements for when you craft custom machines and items**
-- Moved the Large Storage Unit quest to the MV chapter to match it's crafting requirements
-- Fixed the Configurable Mixed Storage quest title
+- **Fixed food tagging issues.**
+- **Added new advancements for when you craft custom machines and items.**
+- Moved the Large Storage Unit quest to the MV chapter to match it's crafting requirements.
+- Fixed the Configurable Mixed Storage quest title.
 
 ## [2.0.0]
 

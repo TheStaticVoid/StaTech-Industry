@@ -55,7 +55,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ae2importexportcard-1.21.1-1.7.0.jar",
+                    "file_name": "ae2importexportcard-1.21.1-1.7.1.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -63,18 +63,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8843/141/ae2importexportcard-1.21.1-1.7.0.jar",
-                    "id": "8843141",
+                    "url": "https://edge.forgecdn.net/files/8850/337/ae2importexportcard-1.21.1-1.7.1.jar",
+                    "id": "8850337",
                     "parent_id": "982512",
                     "hashes": {
-                        "sha1": "7c428e8807f6ff6fc406327329d5dc29dab14e3f",
-                        "md5": "11633b83ad74275295a2e1b1113f13eb"
+                        "sha1": "d1952ffe0cca1096288824d3c87d0432da3fb379",
+                        "md5": "06267d57fd90392be7f2732a79fac0e7"
                     },
                     "required_dependencies": [
                         "223794"
                     ],
-                    "size": 448958,
-                    "date_published": "2026-09-09T10:38:54.077Z"
+                    "size": 491215,
+                    "date_published": "2026-09-10T12:03:18.487Z"
                 }
             ]
         },
@@ -2710,6 +2710,132 @@
                     "required_dependencies": [],
                     "size": 3328498,
                     "date_published": "2026-04-18T03:51:39.807Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "r0CmiazMtzCZQXmQ",
+            "pakku_links": [
+                "wQnX35tn9Xhbjurf",
+                "DugI3h8OJJju1iqr"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-central-kitchen"
+            },
+            "name": {
+                "curseforge": "Create: Central Kitchen"
+            },
+            "id": {
+                "curseforge": "820977"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "create-central-kitchen-2.6.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8616/574/create-central-kitchen-2.6.0.jar",
+                    "id": "8616574",
+                    "parent_id": "820977",
+                    "hashes": {
+                        "sha1": "f0dd0161de70f2177ba2e06c68ef0dbea08cdf2f",
+                        "md5": "935bba621404132b9f50a3597bcd5fd6"
+                    },
+                    "required_dependencies": [
+                        "1216624",
+                        "328085"
+                    ],
+                    "size": 488390,
+                    "date_published": "2026-08-10T14:14:02.347Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "wQnX35tn9Xhbjurf",
+            "pakku_links": [
+                "DugI3h8OJJju1iqr"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "create-dragons-plus"
+            },
+            "name": {
+                "curseforge": "Create: Dragons Plus"
+            },
+            "id": {
+                "curseforge": "1216624"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "CreateDragonsPlus-1.11.8b.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8811/294/CreateDragonsPlus-1.11.8b.jar",
+                    "id": "8811294",
+                    "parent_id": "1216624",
+                    "hashes": {
+                        "sha1": "d7afe1cf1c646d1bb5ce152af06e35afcb60b8dd",
+                        "md5": "472666a9cf7952d2c03b8df8814f6b69"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 1048120,
+                    "date_published": "2026-09-05T03:32:32.447Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "7KX2YAzllk6yb4Nx",
+            "pakku_links": [
+                "DugI3h8OJJju1iqr"
+            ],
+            "type": "MOD",
+            "side": "SERVER",
+            "slug": {
+                "curseforge": "create-schematicchecker"
+            },
+            "name": {
+                "curseforge": "Create: Schematic Checker"
+            },
+            "id": {
+                "curseforge": "1357430"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "createschematicchecker-2.27.45-6.0-neoforge-1.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8729/501/createschematicchecker-2.27.45-6.0-neoforge-1.21.1.jar",
+                    "id": "8729501",
+                    "parent_id": "1357430",
+                    "hashes": {
+                        "sha1": "e617e3740470a0ffec23d5cd4ca06acf2a876673",
+                        "md5": "d09e3ea15c6ab24edf0b00c0b811c026"
+                    },
+                    "required_dependencies": [
+                        "328085"
+                    ],
+                    "size": 348809,
+                    "date_published": "2026-08-25T07:05:34.927Z"
                 }
             ]
         },
@@ -5714,7 +5840,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "jei-1.21.1-neoforge-19.53.0.426.jar",
+                    "file_name": "jei-1.21.1-neoforge-19.54.0.427.jar",
                     "mc_versions": [
                         "1.21",
                         "1.21.1"
@@ -5723,16 +5849,16 @@
                         "neoforge"
                     ],
                     "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8829/744/jei-1.21.1-neoforge-19.53.0.426.jar",
-                    "id": "8829744",
+                    "url": "https://edge.forgecdn.net/files/8850/347/jei-1.21.1-neoforge-19.54.0.427.jar",
+                    "id": "8850347",
                     "parent_id": "238222",
                     "hashes": {
-                        "sha1": "a14078381e5c2c6c84ce3e957aacf48c8e209f83",
-                        "md5": "f11001ec3ff31cabebbbc5af8ee537e8"
+                        "sha1": "dc8804079b1334aeede6ba7168f2af2521d43104",
+                        "md5": "b3409acd16a91c4660939ff7239471f9"
                     },
                     "required_dependencies": [],
-                    "size": 1847607,
-                    "date_published": "2026-09-07T12:41:35.827Z"
+                    "size": 1851426,
+                    "date_published": "2026-09-10T12:05:13.693Z"
                 }
             ]
         },
@@ -7101,7 +7227,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "moonlight-1.21.1-3.6.3-neoforge.jar",
+                    "file_name": "moonlight-1.21.1-3.6.4-neoforge.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -7109,16 +7235,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8821/83/moonlight-1.21.1-3.6.3-neoforge.jar",
-                    "id": "8821083",
+                    "url": "https://edge.forgecdn.net/files/8850/87/moonlight-1.21.1-3.6.4-neoforge.jar",
+                    "id": "8850087",
                     "parent_id": "499980",
                     "hashes": {
-                        "sha1": "eaacc3191758081be86e7d0bb82b5f9572fe9360",
-                        "md5": "9424df41225debb31dead68f52919d36"
+                        "sha1": "04a9656a7085dcc751ac58ff0e7faadee5c2def9",
+                        "md5": "d66e89ca88398921a425de1d51cfd442"
                     },
                     "required_dependencies": [],
-                    "size": 2226437,
-                    "date_published": "2026-09-06T10:20:51.527Z"
+                    "size": 2228649,
+                    "date_published": "2026-09-10T11:30:19.747Z"
                 }
             ]
         },
@@ -9501,7 +9627,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "supplementaries-1.21.1-3.9.8-neoforge.jar",
+                    "file_name": "supplementaries-1.21.1-3.9.9-neoforge.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -9509,18 +9635,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8821/187/supplementaries-1.21.1-3.9.8-neoforge.jar",
-                    "id": "8821187",
+                    "url": "https://edge.forgecdn.net/files/8852/720/supplementaries-1.21.1-3.9.9-neoforge.jar",
+                    "id": "8852720",
                     "parent_id": "412082",
                     "hashes": {
-                        "sha1": "8b9fd12e10550f54eecd6b265fedef585b915024",
-                        "md5": "2bcf5eeedc4d035c1e3b9981c23338fb"
+                        "sha1": "06ed05381a5653d90398dc6ebf3ad1154add6374",
+                        "md5": "68826f7de4c0b7c71a8853d80680423f"
                     },
                     "required_dependencies": [
                         "499980"
                     ],
-                    "size": 13549986,
-                    "date_published": "2026-09-06T10:42:27.903Z"
+                    "size": 13548968,
+                    "date_published": "2026-09-10T19:12:54.583Z"
                 }
             ]
         },
