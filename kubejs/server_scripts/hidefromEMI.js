@@ -267,6 +267,7 @@ RecipeViewerEvents.removeRecipes((event) => {
         yai('/arboreous_greenhouse/4/3'),
         yai('/arboreous_greenhouse/4/4'),
         ca('/rolling/'),
+        'statech:modern_industrialization/blast_furnace/short_range_lens'
     ]);
 });
 
