@@ -80,7 +80,6 @@
 					xp: 40
 				}
 				{
-					exclude_from_claim_all: true
 					id: "67504D0EBBD662E4"
 					table_id: 379087119399425756L
 					type: "random"
@@ -5151,6 +5150,7 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
 			size: 2.0d
 			tasks: [
 				{
@@ -5189,6 +5189,39 @@
 			]
 			x: -5.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["74A64C3ED35AE436"]
+			id: "6993EE4512A54506"
+			rewards: [
+				{
+					count: 5
+					id: "7EC466EB91E666F1"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "315B095CF2D1474F"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "58C611CA05DDCC20"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "3D574D6FEF6ACE79"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -1.5d
 		}
 	]
 }

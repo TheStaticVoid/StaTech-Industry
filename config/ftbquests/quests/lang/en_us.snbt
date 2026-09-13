@@ -71,6 +71,8 @@
 		"The &aStarter Diesel Generator&r is an alternative power generation method that will allow you to burn Creosote to generate up to &e64 EU/t&r."
 		""
 		"I would not recommend making this your main power source and instead relying on &bSteam Turbines&r until you unlock the regular &aDiesel Generator&r."
+		""
+		"Unlike the &eSteam Boilers&r, &aDiesel Generators&r have a &62x efficiency bonus&r for &dfluid fuels&r!"
 	]
 	quest.011FCD9F3A6FB5C6.quest_subtitle: "Good for the environment!"
 	quest.016C498DFB704536.quest_desc: ["Allows you to trade with villagers for much cheaper"]
@@ -1180,9 +1182,9 @@
 	quest.181F0CD6428732B2.quest_desc: ["With &cCopper Plates&r, you can upgrade your normal chests or barrels to &ehold more items&r. This one can store up to &236 stacks of items&r."]
 	quest.183ED29E27120099.quest_desc: ["The &aBig Torch&f is a block that cancels any mob spawning that requires no light in a configurable area. It's useful to protect your base and to clean caves and dungeons."]
 	quest.186B17ECD172A61D.quest_desc: [
-		"The &aDiesel Generator&r can burn various kinds of fuel to generate EU. You can check &dREI&r for how much EU each fuel produces. The &aDiesel Generator&r will produce up to 256 EU/t and will only connect to MV cables."
+		"The &aDiesel Generator&r can burn various kinds of fuel to generate EU. You can check &dEMI&r for how much EU each fuel produces. The &aDiesel Generator&r will produce up to 256 EU/t and will only connect to MV cables."
 		""
-		"&aDiesel Generators&r will only use fuel when they need to, but if you need a constant supply of energy, you can put liquid fuels in the &bLarge Steam Boiler&r instead of items. A fully heated &bLarge Steam Boiler&r will roughly produce twice the amount of energy a &aDiesel Generator&r would produce using the same quantity of fuel."
+		"&aDiesel Generators&r will only use fuel when they need to. Just like &9LV Generators&r, will have a &b2x efficiency bonus&r when using liquid fuels compared to &cno efficiency bonus&r when using it in a &eSteam Boiler&r to generate steam."
 	]
 	quest.18765B0B6FE4E653.quest_desc: ["The &aPlasma Turbine&f can turn &eHelium Plasma&f into EU, at the rate of &d100kEU per mB&r. Its maximum production rate is roughly &21M EU/t&r!"]
 	quest.187E3148FF00C4AE.quest_desc: ["Yes! &aDigital circuits&r and &9Turbo Machine Hulls&r unclock some more very useful &bbatching multiblocks&r!"]
@@ -3525,6 +3527,12 @@
 		"The channel required by a &bP2P Tunnel&r cannot be carried through another &bP2P Tunnel&r."
 	]
 	quest.46C790E5A68A4F00.quest_desc: ["&aExperiment 115&r can be found in the &dUr-Ghast's Tower&r."]
+	quest.46C9C616B0F71B35.quest_desc: [
+		"Allows you to dye &2&ovanilla&r&r and &9&omodded&r&r items!"
+		""
+		"This can be used to change the color of &aModern Industrialization&r and &eAE2&r pipes."
+	]
+	quest.46C9C616B0F71B35.title: "Spray Can"
 	quest.46CAD11B98DF4E03.quest_desc: ["The &aAdvanced Wireless Block Charger&r is an upgrade to the basic one that increases its transfer rate to &6512 EU/t&r and the range to &e11x11x11&r around it."]
 	quest.46DBEC5D497C64D1.quest_desc: ["The &eRedRouter Block&r is a peripheral with the same features as the &cRedstone API&r. By attaching it to a &3Computer&r, every side can be configured."]
 	quest.46E61205DE5130E8.quest_desc: ["&aDiborane&r can be turned into &cPentaborane&r at a &92.5:1&r ratio in the &ePyrolyse Oven&r!"]
@@ -3975,7 +3983,7 @@
 	]
 	quest.4F9372602593A2DB.quest_subtitle: "All the Fractions!"
 	quest.4FB50C49AE5D30B2.quest_desc: [
-		"The &aLarge Steam Boiler&r is an upgraded version of the smaller &6Bronze&r and &eSteel&r Boilers. &cIt uses fuels 8 times faster than the Furnace&r, but it produces &3256 mb/t&r of &7steam&r when fully heated."
+		"The &aLarge Steam Boiler&r is an upgraded version of the smaller &6Bronze&r and &eSteel&r Boilers. &cIt uses fuels 8 times faster than the Furnace&r, but it produces &3256 mb/t&r of &7steam&r when fully heated (16x more!)."
 		""
 		"Unlike its single block counterpart, in the &aLarge Steam Boiler&r, &c80% of any unconsumed heat will be lost&r. This means the ratio of energy produced by fuel consumed will be drastically decreased when the &coutput decreases below maximum&r. This will happen when the &aBoiler&r is &enot used continuously at maximum output&r. It would be a good idea to put the &7steam&r produced into a buffer, such as a &2Large Tank&r multiblock structure. (or &eCreate Tanks&r)"
 		""
@@ -5346,6 +5354,11 @@
 	quest.69651A2E1A859FAC.title: "Chlorine"
 	quest.696D98D3D7D8FDCD.quest_desc: ["The &aTitanium Tank&r is the next tier of portable fluid tank you can create. It can store up to &e1024 buckets&r of any kind of fluid and retains the contents when broken."]
 	quest.6981018F19EDE963.quest_desc: ["The &aFractal Bident&r is combined with &dEcho Shards&r to make it throw an echo version that shatters upon impact while the original will never leave your hand."]
+	quest.6993EE4512A54506.quest_desc: [
+		"A &esingle stack of upgrades&r for multiple simultaneous batches of machines can be &cquite limiting&r for speeding up the &abatching multiblock machines&r."
+		""
+		"Introducing the &bUpgrade Stacker&r! A &abatching multiblock machine&r exclusive \"&9upgrade&r\" that can hold up to &b64 stacks of upgrades&r! It allows you to effectively upgrade batching multiblock machines with &amultiple stacks&r of upgrades &6up to the &nnumber of batches&r! For example, the &eLarge Electric Macerator&r will only be affected by &ethe first 16 stacks of upgrades&r."
+	]
 	quest.69BA71FCCE7AFA07.quest_desc: [
 		"The &bContent Observer&r can be used to... observe the contents... of whatever it's pointed into."
 		""
@@ -6712,6 +6725,7 @@
 	task.3C84BEA2BBA32341.title: "I've done this!"
 	task.3CE135A5298E5A62.title: "Any Fluid Input Hatch"
 	task.3D10F4A50CA6F431.title: "Any Runic Chestplate"
+	task.3D574D6FEF6ACE79.title: "Upgrade Stacker"
 	task.3D79390D2D1352F8.title: "Any Fluid Input Hatch"
 	task.3DB441444B39ECA5.title: "Any Item Input Hatch"
 	task.3EEB76F3C5E9C50D.title: "Click to Acknowledge"
