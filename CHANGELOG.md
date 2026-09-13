@@ -16,6 +16,10 @@ This is the first follow-up patch post release that we are looking to clean up a
 - **Added new advancements for when you craft custom machines and items.**
 - Moved the Large Storage Unit quest to the MV chapter to match it's crafting requirements.
 - Fixed the Configurable Mixed Storage quest title.
+- Cleaned up some vestigial item and block tags.
+- Fixed tip typo.
+- **Added Spectrum advancement sharing quest.**
+- **Updated MI to 2.5.8, bringing the fluid fuel rebalance.**
 
 ## [2.0.0]
 
