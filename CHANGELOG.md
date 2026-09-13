@@ -20,6 +20,7 @@ This is the first follow-up patch post release that we are looking to clean up a
 - Fixed tip typo.
 - **Added Spectrum advancement sharing quest.**
 - **Updated MI to 2.5.8, bringing the fluid fuel rebalance.**
+- Added missing Rustic Delight Farming for Blockheads Market recipes.
 
 ## [2.0.0]
 
