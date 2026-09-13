@@ -1,0 +1,29 @@
+{
+    "parent": "modern_industrialization:analog_circuit",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "extended_industrialization:electric_bending_machine"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.electric_bending_machine.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "extended_industrialization:electric_bending_machine"
+        },
+        "title": {
+            "translate": "advancements.statech.electric_bending_machine"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

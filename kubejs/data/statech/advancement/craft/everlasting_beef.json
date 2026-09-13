@@ -1,0 +1,30 @@
+{
+    "parent": "statech:root",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "artifacts:everlasting_beef"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.everlasting_beef.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "count": 1,
+            "id": "artifacts:everlasting_beef"
+        },
+        "title": {
+            "translate": "advancements.statech.everlasting_beef"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

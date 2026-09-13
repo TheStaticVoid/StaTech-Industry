@@ -1,0 +1,30 @@
+{
+    "parent": "modern_industrialization:electronic_circuit",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "modern_industrialization:mob_crusher"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.mob_crusher.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "modern_industrialization:mob_crusher"
+        },
+        "title": {
+            "translate": "advancements.statech.mob_crusher"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

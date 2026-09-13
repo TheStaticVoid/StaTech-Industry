@@ -1,0 +1,30 @@
+{
+    "parent": "statech:root",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "kubejs:bartman"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.bartman.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "count": 1,
+            "id": "kubejs:bartman"
+        },
+        "title": {
+            "translate": "advancements.statech.bartman"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

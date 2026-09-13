@@ -603,7 +603,6 @@ ServerEvents.tags('block', (event) => {
     // -- PREFERRED TOOL FOR GLASS-LIKE BLOCKS -- //
     event.add('minecraft:mineable/pickaxe', [
         '#c:glass_blocks',
-        cm('neoforge_hammer'),
         'minecraft:glowstone',
         '#chisel:chiseled_glowstone',
         /^xtonesreworked:glaxx_block_/,
@@ -629,9 +628,6 @@ ServerEvents.tags('block', (event) => {
             'minecraft:copper_ore',
         ]);
     });
-    // -- NEOFORGE HAMMER BLOCK TAGGING -- //
-    event.add('minecraft:mineable/pickaxe', cm('neoforge_hammer'));
-    event.add('minecraft:needs_stone_tool', cm('neoforge_hammer'));
 });
 
 // -- ITEM TAGGING -- //

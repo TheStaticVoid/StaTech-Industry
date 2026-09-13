@@ -1,0 +1,9 @@
+{
+  "id": [
+    ["minecraft:item", "path.path.$list"]
+  ],
+  "operate": [
+    ["create:dirt", "path.path.$list,para", "operate.limit$para$0$4"],
+    ["create:item", "path.path.para", "operate.clear$para"]
+  ]
+}

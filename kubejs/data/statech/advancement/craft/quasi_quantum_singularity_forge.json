@@ -1,0 +1,30 @@
+{
+    "parent": "modern_industrialization:quantum_circuit",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "modern_industrialization:singularity_forge"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.singularity_forge.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "count": 1,
+            "id": "modern_industrialization:singularity_forge"
+        },
+        "title": {
+            "translate": "advancements.statech.singularity_forge"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

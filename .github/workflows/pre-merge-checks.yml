@@ -189,6 +189,8 @@ jobs:
     name: Update MMC-Pack
     needs: [info]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5.0.0
@@ -232,11 +234,11 @@ jobs:
         with:
           files: '.pakku/server-overrides/forge-auto-install.txt'
           search-text: 'loaderVersion=**.*.***'
-          replacement-text: 'loaderVersion=${{ needs.info.outputs.loader_version }}\n'
+          replacement-text: 'loaderVersion=${{ needs.info.outputs.loader_version }}'
         
       - name: Commit If Changed
         run: |
-          if ! git diff --quiet .pakku/prism-overrides/mmc-pack.json; then
+          if ! git diff --cached --quiet; then
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add .pakku/prism-overrides/mmc-pack.json
@@ -249,6 +251,8 @@ jobs:
       name: Update BetterCompatibilityChecker Config
       needs: [info]
       runs-on: ubuntu-latest
+      permissions:
+        contents: write
       steps:
         - name: Checkout repository
           uses: actions/checkout@v5.0.0
@@ -270,7 +274,7 @@ jobs:
 
         - name: Commit If Changed
           run: |
-            if ! git diff --quiet pakku.json; then
+            if ! git diff --cached --quiet; then
               git config --local user.email "action@github.com"
               git config --local user.name "GitHub Action"
               git add config/bcc-common.toml

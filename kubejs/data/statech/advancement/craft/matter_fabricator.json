@@ -1,0 +1,30 @@
+{
+    "parent": "statech:craft/recycler",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "modern_industrialization:matter_fabricator"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.matter_fabricator.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "modern_industrialization:matter_fabricator"
+        },
+        "title": {
+            "translate": "advancements.statech.matter_fabricator"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

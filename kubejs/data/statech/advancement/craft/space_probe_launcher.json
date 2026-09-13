@@ -1,0 +1,30 @@
+{
+    "parent": "modern_industrialization:digital_circuit",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "modern_industrialization:space_probe_launcher"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.space_probe_launcher.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "modern_industrialization:space_probe_launcher"
+        },
+        "title": {
+            "translate": "advancements.statech.space_probe_launcher"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

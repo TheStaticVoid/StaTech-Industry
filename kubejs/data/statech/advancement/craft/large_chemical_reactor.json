@@ -1,0 +1,30 @@
+{
+    "parent": "modern_industrialization:digital_circuit",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "modern_industrialization:large_chemical_reactor"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.large_chemical_reactor.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "modern_industrialization:large_chemical_reactor"
+        },
+        "title": {
+            "translate": "advancements.statech.large_chemical_reactor"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

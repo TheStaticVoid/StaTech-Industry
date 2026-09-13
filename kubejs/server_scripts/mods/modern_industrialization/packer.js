@@ -259,6 +259,32 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: ae('quartz_vibrant_glass') }]
     );
 
+    // -- CRAFTING UNITS -- //
+
+    const CRAFTING_UNITS = [
+        ['ae2:crafting_accelerator', 'ae2:engineering_processor'],
+        ['ae2:1k_crafting_storage', 'ae2:cell_component_1k'],
+        ['ae2:4k_crafting_storage', 'ae2:cell_component_4k'],
+        ['ae2:16k_crafting_storage', 'ae2:cell_component_16k'],
+        ['ae2:64k_crafting_storage', 'ae2:cell_component_64k'],
+        ['ae2:256k_crafting_storage', 'ae2:cell_component_256k'],
+        ['ae2:crafting_monitor', 'ae2:storage_monitor'],
+    ]
+    CRAFTING_UNITS.forEach((crafting_unit) => {
+        let itemName = crafting_unit[0].split(':')[1];
+        packer(
+            event,
+            st(`${itemName}`),
+            8,
+            200,
+            [
+                { amount: 1, item: ae('crafting_unit') },
+                { amount: 1, item: `${crafting_unit[1]}` },
+            ],
+            [{ amount: 1, item: `${crafting_unit[0]}` }]
+        );
+    })
+
     // -- BRASS INGOT TO BLOCK -- //
     packer(
         event,
@@ -280,6 +306,16 @@ ServerEvents.recipes((event) => {
         200,
         [{ amount: 9, item: cr('brass_nugget') }],
         [{ amount: 1, item: cr('brass_ingot') }]
+    );
+
+    // -- WOOL -- //
+    packer(
+        event,
+        st('wool'),
+        2,
+        200,
+        [{ amount: 4, item: mc('string') }],
+        [{ amount: 1, item: mc('white_wool') }]
     );
 
     // ---------------------- //

@@ -1,0 +1,44 @@
+#Should squids drop a Calamari item? Disabling also removes all calamari items from the creative tab and disables Calamari villager trades.
+squids_drop_calamari = true
+#Should villagers trade Rustic Delight items? (May reduce chances of other trades appearing)
+enable_villager_trades = true
+#Should the Wandering Trader sell Rustic Delight items?
+enable_wandering_trader_trades = true
+#Should players be able to brew Rustic Delight potions?
+enable_potions = true
+#Should Rustic Delight crops (bell peppers, cotton, coffee) generate in village farm plots?
+generate_village_farm_crops = true
+#Should Rustic Delight items appear in structure chests? They replace an existing item (for example wheat seeds become cotton seeds) rather than being added, so chests never end up fuller than vanilla.
+generate_random_loot = true
+#Enable the Cotton crop family (cotton, seeds, bag, crate, wild cotton, related trades).
+enable_cotton = true
+#Enable the Coffee crop family (coffee beans, all coffee drinks, coffee cookie, coffee-braised beef, Haste potions, related trades).
+enable_coffee = true
+#Enable the Bell Pepper crop family (all colors, slices, roasted, rolls, stuffed, soup, pasta, giant blocks, crates, seeds, related trades).
+enable_bell_peppers = true
+#Enable potato slices. Disabling removes potato slices (raw and baked) from the creative tab and disables their cutting-board recipes.
+enable_potato_slices = true
+#Enable fried foods. Disabling removes Cooking Oil and everything fried with it (fried dough, dumplings, spring rolls, beignet, fried calamari/chicken/mushrooms) from the creative tab and disables their recipes.
+enable_fried_foods = true
+#Enable cherry blossom foods (cherry blossom roll, cookie, pancakes, cheesecake, coffee). Disabling also removes Rice Roll Royale, which needs a Cherry Blossom Roll.
+enable_cherry_blossom_foods = true
+#Enable pancakes (plain, honey, chocolate, cherry blossom, vegetable, pumpkin).
+enable_pancakes = true
+#Enable Syrup and the foods made from it (syrup cookie, sandwich, cheesecake, coffee). Disabling also removes plain and pumpkin pancakes, which are topped with Syrup.
+enable_syrup_foods = true
+#Chance of generating clusters. Smaller value = more frequent.
+# Default: 32
+# Range: > 0
+wild_cotton_chance = 32
+#Chance of generating clusters. Smaller value = more frequent.
+# Default: 15
+# Range: > 0
+wild_bell_peppers_chance = 15
+#Chance of generating clusters. Smaller value = more frequent.
+# Default: 15
+# Range: > 0
+wild_coffee_chance = 15
+#Chance of generating a patch of bell pepper blocks in the jungle. Smaller value = more frequent (vanilla melons use 6).
+# Default: 10
+# Range: > 0
+bell_pepper_block_patch_chance = 10

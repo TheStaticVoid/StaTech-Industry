@@ -4152,6 +4152,9 @@
 		}
 		{
 			dependencies: ["02EFA93D1525F456"]
+			icon: {
+				id: "spectrum:spectral_shard"
+			}
 			id: "37C701CDEA359A70"
 			rewards: [
 				{
@@ -5137,16 +5140,6 @@
 					type: "xp"
 					xp: 100
 				}
-				{
-					command: "/advancement grant @p only spectrum:unlocks/mysterious_locket_socketing"
-					disable_reward_screen_blur: true
-					icon: {
-						id: "spectrum:moonstone_core"
-					}
-					id: "4B9E23F799128BCC"
-					silent: true
-					type: "command"
-				}
 			]
 			size: 2.0d
 			tasks: [{
@@ -5795,7 +5788,7 @@
 				item: { count: 1, id: "artifacts:everlasting_beef" }
 				type: "item"
 			}]
-			x: 40.0d
+			x: 36.5d
 			y: 12.0d
 		}
 		{
@@ -5875,6 +5868,33 @@
 			}]
 			x: 18.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["4DB5F909E2205723"]
+			icon: {
+				id: "spectrum:four_leaf_clover"
+			}
+			id: "4B3431341897D57A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2CB0E420CE18DBFA"
+					table_id: 8875738191125079778L
+					type: "random"
+				}
+				{
+					id: "7137F4D906802FCC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "273F3061C1BB3968"
+				type: "checkmark"
+			}]
+			x: 29.5d
+			y: 3.0d
 		}
 	]
 }

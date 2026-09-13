@@ -1,0 +1,31 @@
+{
+    "criteria": {
+        "coin": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "kubejs:coin_common"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "announce_to_chat": false,
+        "background": "minecraft:textures/block/copper_block.png",
+        "description": {
+            "translate": "advancements.statech.root.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "kubejs:coin_rare"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "advancements.statech.root"
+        }
+    },
+    "requirements": [["coin"]],
+    "sends_telemetry_event": true
+}

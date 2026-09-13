@@ -3,25 +3,6 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
-ServerEvents.tags('worldgen/biome', (event) => {
-    event.add('c:is_cold/overworld', [
-        nm('frozen_shore'),
-        nm('frozen_woods'),
-        nm('maple_grove'),
-        nm('maple_grove'),
-        nm('dark_taiga'),
-        nm('bog'),
-    ]);
-
-    event.add('c:is_hot/overworld', [
-        nm('tropical_beach'),
-        nm('prairie'),
-        nm('lush_river'),
-        nm('desert_river'),
-        nm('bayou'),
-    ]);
-});
-
 ServerEvents.tags('block', (event) => {
     event.add('c:buds', [
         nm('small_quartzite_bud'),
@@ -104,16 +85,6 @@ ServerEvents.recipes((event) => {
             mc('bowl'),
         ])
         .id(st('mushroom_stew_shaped'));
-
-    // -- PANCAKE -- //
-    event
-        .shapeless(Item.of(su('pancake'), 2), [
-            '#c:drinks/milk',
-            '#c:foods/dough',
-            mc('egg'),
-            '#supplementaries:pancake_syrup',
-        ])
-        .id(st('pancake'));
 
     // --------------------//
     // ----- COOKING ----- //

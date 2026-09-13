@@ -74,6 +74,16 @@ ServerEvents.recipes((event) => {
         [{ amount: 8, item: kj('concrete_pizza_slice') }]
     );
 
+    // -- AE2 CABLE ANCHORS -- //
+    cuttingMachine(
+        event,
+        st('cable_anchor'),
+        2,
+        200,
+        [{ amount: 8, tag: 'c:bolts' }],
+        [{ amount: 8, item: ae('cable_anchor') }]
+    );
+
     // -- MINECRAFT MISSING WOOD -- //
     cuttingMachine(
         event,

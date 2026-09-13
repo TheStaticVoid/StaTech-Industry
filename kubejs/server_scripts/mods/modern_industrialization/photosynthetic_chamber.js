@@ -234,6 +234,87 @@ ServerEvents.recipes((event) => {
                 { amount: 1, item: cud('eggplant_seeds'), probability: 0.5 },
             ],
         ],
+
+        // -- COTTON -- //
+        [
+            rd('cotton_seeds'),
+            [
+                { amount: 1, item: rd('cotton_boll') },
+                { amount: 2, item: rd('cotton_boll'), probability: 0.5 },
+                { amount: 1, item: rd('cotton_seeds'), probability: 0.5 },
+            ],
+        ],
+
+        // -- COFFEE BEANS -- //
+        [
+            rd('coffee_beans'),
+            [
+                { amount: 1, item: rd('coffee_beans') },
+                { amount: 4, item: rd('coffee_beans'), probability: 0.5 },
+            ],
+        ],
+
+        // -- BELL PEPPERS -- //
+        [
+            rd('bell_pepper_seeds'),
+            [
+                { amount: 1, item: rd('bell_pepper_red'), probability: 0.75 },
+                {
+                    amount: 1,
+                    item: rd('bell_pepper_green'),
+                    probability: 0.275,
+                },
+                {
+                    amount: 1,
+                    item: rd('bell_pepper_yellow'),
+                    probability: 0.275,
+                },
+            ],
+        ],
+
+        // -- PALE BELL PEPPERS -- //
+        [
+            rd('pale_bell_pepper_seeds'),
+            [
+                {
+                    amount: 1,
+                    item: rd('bell_pepper_orange'),
+                    probability: 0.44,
+                },
+                {
+                    amount: 1,
+                    item: rd('bell_pepper_white'),
+                    probability: 0.44,
+                },
+                {
+                    amount: 1,
+                    item: rd('bell_pepper_pink'),
+                    probability: 0.44,
+                },
+            ],
+        ],
+
+        // -- DARK BELL PEPPERS -- //
+        [
+            rd('dark_bell_pepper_seeds'),
+            [
+                {
+                    amount: 1,
+                    item: rd('bell_pepper_blue'),
+                    probability: 0.44,
+                },
+                {
+                    amount: 1,
+                    item: rd('bell_pepper_purple'),
+                    probability: 0.44,
+                },
+                {
+                    amount: 1,
+                    item: rd('bell_pepper_black'),
+                    probability: 0.44,
+                },
+            ],
+        ],
     ];
 
     // Create recipes for each of the items in the list

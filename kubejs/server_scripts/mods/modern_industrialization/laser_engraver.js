@@ -281,6 +281,7 @@ ServerEvents.recipes((event) => {
         [kj('witch_model'), mc('glass_bottle')],
         [kj('rabbit_model'), mc('rabbit')],
         [kj('phantom_model'), mc('phantom_membrane')],
+        [kj('breeze_model'), mc('breeze_rod')],
     ];
     modelItemList.forEach((modelItem) => {
         let model = modelItem[0];

@@ -19,7 +19,7 @@ StartupEvents.registry('item', (event) => {
             .tag('kubejs:mob_models')
             .tag('kubejs:boss_models')
             .tooltip('§3Designates the output in the Boss Crusher');
-    }
+    };
 
     mobModel('enderman');
     mobModel('zombie');
@@ -41,6 +41,7 @@ StartupEvents.registry('item', (event) => {
     mobModel('witch');
     mobModel('rabbit');
     mobModel('phantom');
+    mobModel('breeze');
 
     bossModel('wither');
     bossModel('dragon');

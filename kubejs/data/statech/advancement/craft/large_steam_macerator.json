@@ -1,0 +1,29 @@
+{
+    "parent": "modern_industrialization:steel_machine_casing",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "extended_industrialization:large_steam_macerator"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.large_steam_macerator.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "extended_industrialization:large_steam_macerator"
+        },
+        "title": {
+            "translate": "advancements.statech.large_steam_macerator"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

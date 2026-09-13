@@ -1,0 +1,39 @@
+{
+    "parent": "modern_industrialization:distillery",
+    "criteria": {
+        "nano_armor": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "extended_industrialization:nano_helmet"
+                    },
+                    {
+                        "items": "extended_industrialization:nano_chestplate"
+                    },
+                    {
+                        "items": "extended_industrialization:nano_leggings"
+                    },
+                    {
+                        "items": "extended_industrialization:nano_boots"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.nano_armor.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "extended_industrialization:nano_chestplate"
+        },
+        "title": {
+            "translate": "advancements.statech.nano_armor"
+        }
+    },
+    "requirements": [["nano_armor"]],
+    "sends_telementry_event": true
+}

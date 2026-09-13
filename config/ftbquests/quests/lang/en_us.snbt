@@ -71,6 +71,8 @@
 		"The &aStarter Diesel Generator&r is an alternative power generation method that will allow you to burn Creosote to generate up to &e64 EU/t&r."
 		""
 		"I would not recommend making this your main power source and instead relying on &bSteam Turbines&r until you unlock the regular &aDiesel Generator&r."
+		""
+		"Unlike the &eSteam Boilers&r, &aDiesel Generators&r have a &62x efficiency bonus&r for &dfluid fuels&r!"
 	]
 	quest.011FCD9F3A6FB5C6.quest_subtitle: "Good for the environment!"
 	quest.016C498DFB704536.quest_desc: ["Allows you to trade with villagers for much cheaper"]
@@ -355,6 +357,7 @@
 		""
 		"It's kinda complicated, check the &dPonder&r scene."
 	]
+	quest.076EB6031C26137C.title: "Any Bell Pepper"
 	quest.077C957AAB39CC0B.quest_desc: ["While powerful, the &aBoss Crusher&r isn't perfect. Killing the &cWither&r doesn't produce a pristine &dNether Star&r as if you killed it normally. Instead you only will receive &2500mB&r of &2Impure Liquid Nether Star&r per &dWither model&r. This will need to be purified before it can be used."]
 	quest.078843982FA6DF90.quest_desc: [
 		"&bTrain Tracks&r are what your &dtrains&r will move along. "
@@ -1179,9 +1182,9 @@
 	quest.181F0CD6428732B2.quest_desc: ["With &cCopper Plates&r, you can upgrade your normal chests or barrels to &ehold more items&r. This one can store up to &236 stacks of items&r."]
 	quest.183ED29E27120099.quest_desc: ["The &aBig Torch&f is a block that cancels any mob spawning that requires no light in a configurable area. It's useful to protect your base and to clean caves and dungeons."]
 	quest.186B17ECD172A61D.quest_desc: [
-		"The &aDiesel Generator&r can burn various kinds of fuel to generate EU. You can check &dREI&r for how much EU each fuel produces. The &aDiesel Generator&r will produce up to 256 EU/t and will only connect to MV cables."
+		"The &aDiesel Generator&r can burn various kinds of fuel to generate EU. You can check &dEMI&r for how much EU each fuel produces. The &aDiesel Generator&r will produce up to 256 EU/t and will only connect to MV cables."
 		""
-		"&aDiesel Generators&r will only use fuel when they need to, but if you need a constant supply of energy, you can put liquid fuels in the &bLarge Steam Boiler&r instead of items. A fully heated &bLarge Steam Boiler&r will roughly produce twice the amount of energy a &aDiesel Generator&r would produce using the same quantity of fuel."
+		"&aDiesel Generators&r will only use fuel when they need to. Just like &9LV Generators&r, will have a &b2x efficiency bonus&r when using liquid fuels compared to &cno efficiency bonus&r when using it in a &eSteam Boiler&r to generate steam."
 	]
 	quest.18765B0B6FE4E653.quest_desc: ["The &aPlasma Turbine&f can turn &eHelium Plasma&f into EU, at the rate of &d100kEU per mB&r. Its maximum production rate is roughly &21M EU/t&r!"]
 	quest.187E3148FF00C4AE.quest_desc: ["Yes! &aDigital circuits&r and &9Turbo Machine Hulls&r unclock some more very useful &bbatching multiblocks&r!"]
@@ -1256,6 +1259,7 @@
 	quest.1A4CF8FC20475A01.quest_desc: ["With your new &bProcessing Units&r you can now craft the large versions of the advanced components."]
 	quest.1A4CF8FC20475A01.title: "Large Advanced Components"
 	quest.1A57ADA75B7359B8.quest_desc: ["&aElectronic Circuits&r and &aMV Machine Hulls&r unlocks two &bnew batching multiblocks&r."]
+	quest.1A7458B9AA780B13.quest_desc: ["Lets you &o&cinstantly break&r&r machines with just a little bit of &eenergy&r!"]
 	quest.1A75E897313419C8.quest_desc: [
 		"The &bMechanical Crafter&r allows for automating the crafting of items. Some items can only be crafted with the &bMechanical Crafter&r."
 		""
@@ -2019,6 +2023,7 @@
 		"Both require a &dchannel&r to function."
 	]
 	quest.27D37976F35BB3E7.quest_desc: ["The &aConfigurable Mixed Storage&r is a combination of the &eConfigurable Chest&r and the &eConfigurable Tank&r."]
+	quest.27D37976F35BB3E7.title: "Configurable Mixed Storage"
 	quest.27E1D6ADECEF5F5C.quest_desc: [
 		"The &bMechanical Mixer&r and &aBasin&r will allow you to mix certain dusts and ingots. If you've followed normal &eChapter&r progression, you will have made this to access &eModern Industrialization&r."
 		""
@@ -2221,6 +2226,7 @@
 		"To access the settings menu, you can hold the '&en&r' key whilst holding &aany of the tools&r."
 	]
 	quest.2C84E1C3D7590A49.title: "Building Gadgets"
+	quest.2C91C6D3E0338806.title: "Any Roasted Bell Pepper"
 	quest.2CA069F476518EB2.quest_desc: [
 		"&aHidden mode&r can be toggled with a &eblack dye&r. It makes it so that the drawer doesn't show it's item."
 		""
@@ -2877,6 +2883,7 @@
 	]
 	quest.39B30DBE1DD45D83.quest_subtitle: "Oddly satisfying!"
 	quest.39D48C79329C6E09.quest_desc: ["An upgrade to the &6Bronze Barrel&r. This barrel can hold up to 128 stacks of the same item. Probably really good for all the cobblestone you've been amassing."]
+	quest.39D7C87CFE4CABE0.quest_desc: ["Allows you to &a&omove&r&r &9Sophisticated Storage&r barrels around without &4breaking&r them!"]
 	quest.39ED7019F3ACB226.quest_desc: ["An important component in &aStyrene-Butadiene Rubber&r."]
 	quest.39ED7019F3ACB226.title: "Styrene-Butadiene"
 	quest.39FB6B43C46FC7D7.quest_desc: [
@@ -3355,6 +3362,7 @@
 	quest.4410F770254B4F8F.quest_subtitle: "Upgrades people, upgrades!"
 	quest.4434AD65DF2DD224.quest_desc: ["&aTravel Anchors&r are pulled straight out of &eEnderIO.&r You can place them down, name them, and use the &bwand to warp between them&r. You can also stand on them to warp to others &eby looking at them and pressing right-click&r."]
 	quest.4434AD65DF2DD224.title: "Travel Anchors"
+	quest.44652C4A269EDB98.title: "Any Stuffed Bell Pepper"
 	quest.446E637986CA7147.quest_desc: [
 		"Do you want to turn that excess &cBlood&r from the &aMob Crusher&r into something useful? Why not use it to &2power your ever expanding factory&r. By providing the &dentity&r within the machine (definitely not &dLilith&r) bountiful amounts of &cBlood&r it will provide you with &ecopious amounts of power&r."
 		""
@@ -3519,6 +3527,12 @@
 		"The channel required by a &bP2P Tunnel&r cannot be carried through another &bP2P Tunnel&r."
 	]
 	quest.46C790E5A68A4F00.quest_desc: ["&aExperiment 115&r can be found in the &dUr-Ghast's Tower&r."]
+	quest.46C9C616B0F71B35.quest_desc: [
+		"Allows you to dye &2&ovanilla&r&r and &9&omodded&r&r items!"
+		""
+		"This can be used to change the color of &aModern Industrialization&r and &eAE2&r pipes."
+	]
+	quest.46C9C616B0F71B35.title: "Spray Can"
 	quest.46CAD11B98DF4E03.quest_desc: ["The &aAdvanced Wireless Block Charger&r is an upgrade to the basic one that increases its transfer rate to &6512 EU/t&r and the range to &e11x11x11&r around it."]
 	quest.46DBEC5D497C64D1.quest_desc: ["The &eRedRouter Block&r is a peripheral with the same features as the &cRedstone API&r. By attaching it to a &3Computer&r, every side can be configured."]
 	quest.46E61205DE5130E8.quest_desc: ["&aDiborane&r can be turned into &cPentaborane&r at a &92.5:1&r ratio in the &ePyrolyse Oven&r!"]
@@ -3706,6 +3720,18 @@
 		"&eAlt&r – deposit &aitems&r selected from &9the hotbar&r"
 		"&eCtrl&r – ignore item matching and allow depositing &aall items&r into empty storage slots"
 	]
+	quest.4B3431341897D57A.quest_desc: [
+		"Ever since I woke up in this world, I &alearnt&r and &bachieved&r an &d&oimmense amount&r&r. "
+		""
+		"And yet – &oor perhaps precisely because of that&r – I sometimes &efeel lonely&r. "
+		""
+		"What is &aprogress&r if there is no one with whom to &c&oshare it&r&r? Share our &dcommon fascination&r? What use is my &6knowledge&r of the &9magical flowers&r and &2plants&r which an untrained eye &dcannot recognize&r &c&oalone&r&r?"
+		""
+		"My mind yearns to express itself! &oJust like when I found that &aone fandom where&r&o...&r"
+		""
+		"&9&oAnd then...&r&r"
+	]
+	quest.4B3431341897D57A.title: "Advancement Sharing"
 	quest.4B59643748E3D4DC.quest_desc: [
 		"You've dug deep to get here, but you must dig deeper."
 		""
@@ -3762,6 +3788,8 @@
 		"&eScrap&r can be turned into &5UU Matter&r (not the fluid) in the &aImplosion Compressor&r at a &624:1 ratio&r, and &5UU Matter&r (&o&estill&r not the fluid&r) can be turned into &9Tier 1 Coins&r or different blocks and items in the &dMatter Fabricator&r."
 	]
 	quest.4BDF575E8688D537.quest_subtitle: "Environmentally friendly!"
+	quest.4BF0F292542A1AF3.quest_desc: ["&aConstruction Sticks&r are like the classic &eBuilding Wands&r but &cslightly different&r! You can press '&en&r' to open their &aconfiguration menu&r while holding one!"]
+	quest.4BF0F292542A1AF3.title: "Construction Sticks"
 	quest.4BFCCF11AC1E8126.quest_desc: ["The &bDiamond Barrel&r is a long awaited upgrade to your storage barrels. It allows you to store &e72 stacks of items&r."]
 	quest.4BFCCF11AC1E8126.quest_subtitle: "A long awaited storage upgrade v2"
 	quest.4C21AE3DBA1206E0.quest_desc: ["&oIt's a mailbox&r."]
@@ -3955,7 +3983,7 @@
 	]
 	quest.4F9372602593A2DB.quest_subtitle: "All the Fractions!"
 	quest.4FB50C49AE5D30B2.quest_desc: [
-		"The &aLarge Steam Boiler&r is an upgraded version of the smaller &6Bronze&r and &eSteel&r Boilers. &cIt uses fuels 8 times faster than the Furnace&r, but it produces &3256 mb/t&r of &7steam&r when fully heated."
+		"The &aLarge Steam Boiler&r is an upgraded version of the smaller &6Bronze&r and &eSteel&r Boilers. &cIt uses fuels 8 times faster than the Furnace&r, but it produces &3256 mb/t&r of &7steam&r when fully heated (16x more!)."
 		""
 		"Unlike its single block counterpart, in the &aLarge Steam Boiler&r, &c80% of any unconsumed heat will be lost&r. This means the ratio of energy produced by fuel consumed will be drastically decreased when the &coutput decreases below maximum&r. This will happen when the &aBoiler&r is &enot used continuously at maximum output&r. It would be a good idea to put the &7steam&r produced into a buffer, such as a &2Large Tank&r multiblock structure. (or &eCreate Tanks&r)"
 		""
@@ -5326,6 +5354,11 @@
 	quest.69651A2E1A859FAC.title: "Chlorine"
 	quest.696D98D3D7D8FDCD.quest_desc: ["The &aTitanium Tank&r is the next tier of portable fluid tank you can create. It can store up to &e1024 buckets&r of any kind of fluid and retains the contents when broken."]
 	quest.6981018F19EDE963.quest_desc: ["The &aFractal Bident&r is combined with &dEcho Shards&r to make it throw an echo version that shatters upon impact while the original will never leave your hand."]
+	quest.6993EE4512A54506.quest_desc: [
+		"A &esingle stack of upgrades&r for multiple simultaneous batches of machines can be &cquite limiting&r for speeding up the &abatching multiblock machines&r."
+		""
+		"Introducing the &bUpgrade Stacker&r! A &abatching multiblock machine&r exclusive \"&9upgrade&r\" that can hold up to &b64 stacks of upgrades&r! It allows you to effectively upgrade batching multiblock machines with &amultiple stacks&r of upgrades &6up to the &nnumber of batches&r! For example, the &eLarge Electric Macerator&r will only be affected by &ethe first 16 stacks of upgrades&r."
+	]
 	quest.69BA71FCCE7AFA07.quest_desc: [
 		"The &bContent Observer&r can be used to... observe the contents... of whatever it's pointed into."
 		""
@@ -6371,12 +6404,12 @@
 		"It costs quite a bit of &eTungstensteel&r, so it's recommend to try to &9wallshare&r it to save on &aresources&r!"
 	]
 	quest.7FA070C66DAF5377.quest_desc: [
-		"Extracts of the &dBlood Orchid&r have an intense effect when consumed: they may put you into a &dFrenzy&r. &eDamage, attack speed, speed, and knockback resistance are buffed&r the more you kill. But if you do not score a kill within &215 seconds&r you get &cdebuffs instead&r. The higher the effects level, the higher the amplitude."
+		"Extracts of the &dBlood Orchid&r have an intense effect when consumed: they may put you into a &dFrenzy&r. &eDamage, attack speed, speed, and knockback resistance are buffed&r the more you kill. But if you do not score a kill within &215 seconds&r you get &cdebuffs instead&r. The higher the effect's level, the higher the amplitude."
 		""
 		"&e&lFrenzy Stacking&r"
 		"Instead of resetting the duration, &bapplying another &dFrenzy&b effect will increase its potency instead&r."
 		""
-		"To get teh most out of the effect getting one with long duration first and then stacking up on that seems to be most effective."
+		"To get the most out of the effect, getting one with long duration first, and then stacking up on that &oseems to be most effective&r."
 	]
 	quest.7FB2C2856B76DB74.quest_desc: ["The &bFluid Valve&r can be used to control the flow of fluids through a pipe. Applying &arotational force&r to the &bFluid Valve&r will change which direction it will allow fluids to flow."]
 	quest.7FBD5ED1B6E06B6D.quest_desc: [
@@ -6404,7 +6437,6 @@
 	quest.7FD9582038C29150.title: "HV Cables"
 	reward.1D7A45772F4FCB6E.title: "Unlock Overenchanting"
 	reward.4275DA182DE50F12.title: "Unlock Conflicted Enchanting"
-	reward.4B9E23F799128BCC.title: "Allow Locket Socketing"
 	reward_table.0542C9BA02BA96DC.title: "Chapter 4 Common Reward"
 	reward_table.0A6132BE8A6F09B2.title: "Chapter 6 Rare Reward"
 	reward_table.18F2AF94B48D4DF8.title: "Chapter 7 Reward"
@@ -6431,6 +6463,7 @@
 	task.00D4BABF0A690CA5.title: "Overclocking, part 3"
 	task.012E2EA7A45CCEFF.title: "Pentaborane"
 	task.0176B69E50B6E40E.title: "NYI"
+	task.01C8217D41BC6961.title: "Any Roasted Bell Pepper"
 	task.01F4FDF4C13E2F9A.title: "Any Energy Output Hatch"
 	task.020EEBE3F0987916.title: "I've done this!"
 	task.023CC719D3269423.title: "4x Polished Gemstone Blocks"
@@ -6487,6 +6520,7 @@
 	task.0E49F79E7E70D235.title: "4x Polished Gemstone Blocks"
 	task.0E8A5C744F2B7940.title: "Any Energy Input Hatch"
 	task.0ECA1F32FF71F125.title: "Any Item Output Hatch"
+	task.0ED7C34C211A91D5.title: "Any Bell Pepper"
 	task.0F128E5E9CEF7374.title: "92x Polished Blocks"
 	task.0FC2EC17F4A216F2.title: "Click to Acknowledge"
 	task.10A20CF34D904B6E.title: "Any Colored Sapling"
@@ -6590,6 +6624,7 @@
 	task.262707154E3ADDE4.title: "I've done this!"
 	task.263444CA8BBFE180.title: "Any Item Input Hatch"
 	task.26F6F7158874ACAA.title: "Any MV Cable"
+	task.273F3061C1BB3968.title: "Advancement Sharing"
 	task.27A42D2D4C49C7DD.title: "Any Item Input Hatch"
 	task.27B1627F1682C4E1.title: "Click to Acknowledge"
 	task.27BEA43D60D94BB6.title: "Lithium Tetrafluoroborate Recycling"
@@ -6660,6 +6695,7 @@
 	task.356C24BFAC444D8D.title: "NYI"
 	task.35A061877D5EE6C4.title: "NYI"
 	task.367F8C3925763AB8.title: "Click to Acknowledge"
+	task.36B1C25D12D3A03F.title: "Any Bell Pepper Roll"
 	task.36E1D91650DDD7D4.title: "Any Item Input Hatch"
 	task.3750401D20388C6C.title: "Any Fluid Output Hatch"
 	task.3759329D7AB3E02D.title: "Any Energy Input Hatch"
@@ -6899,6 +6935,8 @@
 	task.70389E4EEDC0404A.title: "Any Item Input Hatch"
 	task.70B5D68C2F8990BD.title: "Any Energy Input Hatch"
 	task.70CF3C821C58C99D.title: "NYI"
+	task.711878BBFD6F5BD9.title: "Any Stuffed Bell Pepper"
+	task.714F9CEFE5206528.title: "Any Construction Stick"
 	task.7152BA35FCEA6C75.title: "Any Energy Output Hatch"
 	task.715FCED80BE32380.title: "77x Polished Blocks"
 	task.717FB8F4A7EECBB1.title: "Any Fluid Input Hatch"

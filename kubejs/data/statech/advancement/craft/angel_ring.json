@@ -1,0 +1,30 @@
+{
+    "parent": "statech:root",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "kubejs:angel_ring"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.angel_ring.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "count": 1,
+            "id": "kubejs:angel_ring"
+        },
+        "title": {
+            "translate": "advancements.statech.angel_ring"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

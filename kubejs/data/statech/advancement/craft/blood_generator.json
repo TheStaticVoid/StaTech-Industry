@@ -1,0 +1,30 @@
+{
+    "parent": "modern_industrialization:digital_circuit",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "modern_industrialization:blood_generator"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.blood_generator.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "modern_industrialization:blood_generator"
+        },
+        "title": {
+            "translate": "advancements.statech.blood_generator"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

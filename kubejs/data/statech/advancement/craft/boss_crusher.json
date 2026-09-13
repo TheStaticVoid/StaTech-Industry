@@ -1,0 +1,30 @@
+{
+    "parent": "statech:craft/withered_soc",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "modern_industrialization:boss_crusher"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.boss_crusher.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "count": 1,
+            "id": "modern_industrialization:boss_crusher"
+        },
+        "title": {
+            "translate": "advancements.statech.boss_crusher"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

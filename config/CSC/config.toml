@@ -1,0 +1,206 @@
+
+# #----------------------------------------------------------------------
+# CSC config version. If this value is different from the current CSC version, the old config will be archived and a fresh config will be generated.
+ConfigVersion = "2.27.45"
+
+# #----------------------------------------------------------------------
+#     Welcome to CSC! CSC (formerly Create:SchematicChecker | Create: Schematic Validator)
+# is a blueprint scanning mod specifically designed for Create and all its addons. It helps prevent any known potential or malicious exploits.
+# These exploits include, but are not limited to: item duplication, server lag or crashes, unauthorized access to creative items, and even server control takeover.
+# Triggering these issues only requires uploading a blueprint with modified parameters, making server disruption extremely easy. With a schematic cannon, anyone can freely
+# damage the server at minimal cost and in very little time.
+#   This mod was specifically designed to solve these issues and permanently fix blueprint vulnerabilities in Create!
+# CSC allows users to customize blacklist tags and blocks, define exclusion rules, and configure detailed validation behavior for schematics.
+# Thanks to the universal nature of schematics, CSC can scan and validate content from Create and all its related mods!
+# If users opt in, CSC can even connect online to automatically sync rule updates to the local server. Whenever the CSC team discovers a new exploit,
+# the configuration file will be updated automatically, allowing potential threats to be removed without restarting the server.
+# Choose a language you want to use     zh_cn / zh_tw / ja_jp / en_us 
+Language = "en_us"
+
+UUID = "2ad73377-0be6-4229-be46-da80238e2937"
+
+[core]
+    # #----------------------------------------------------------------------
+    # Enable CSC (Create:Schematic Checker) or not
+    Enable = true
+    # #----------------------------------------------------------------------
+    # The time if checker is timeout!
+    DelayTime = 10
+    # #----------------------------------------------------------------------
+    # Whether to enable mod id whitelist mode. Recommended to enable, as it can directly eliminate blueprint vulnerabilities caused by unfamiliar mods
+    WhiteListModEnable = false
+    # #----------------------------------------------------------------------
+    # Whether to show the startup security notice for mod id whitelist mode
+    ShowWhitelistModeNotice = false
+    # #----------------------------------------------------------------------
+    # Only mods listed here will be allowed to retain NBT. Enter the modid (e.g., for minecraft:dirt, enter minecraft)
+    WhiteListModList = [
+        "create",
+        "minecraft",
+        "createdieselgenerators",
+        "createrailwaysnavigator",
+        "createaddition",
+        "railways",
+        "copycats",
+        "createsifter",
+        "computercraft",
+        "mekanism",
+        "simulated",
+        "aeronautics",
+        "offroad",
+        "yuushya" ]
+    # #----------------------------------------------------------------------
+    # The Block or Item you don't want to emerge in Schematic
+    # Any block will clear if remove method failed!
+    BanBlock = [
+        "create:creative_crate",
+        "create:creative_fluid_tank",
+        "create_integrated_farming:chicken_roost",
+        "create:creative_motor",
+        "create:creative_blaze_cake",
+        "create:handheld_worldshaper",
+        "minecraft:spawner",
+        "twilightforest:giant_obsidian",
+        "twilightforest:giant_leaves",
+        "twilightforest:giant_log",
+        "twilightforest:giant_cobblestone",
+        "twilightforest:huge_lily_pad",
+        "ae2:creative_item_cell",
+        "ae2:creative_fluid_cell",
+        "ae2:creative_energy_cell",
+        "appmek:creative_chemical_cell",
+        "vs_clockwork:creative_gravitron",
+        "createbigcannons:creative_autocannon_ammo_container",
+        "createaddition:creative_energy",
+        "create_connected:creative_fluid_vessel",
+        "destroy:creative_pump",
+        "immersiveengineering:capacitor_creative",
+        "mekanism:creative_bin",
+        "mekanism:creative_fluid_tank",
+        "mekanism:creative_energy_cube",
+        "mekanism:creative_chemical_tank",
+        "numismatics:creative_vendor",
+        "mekanism_extras:upgrade_creative",
+        "the_vmod:physgun",
+        "the_vmod:toolgun",
+        "Item.of('tacz:ammo_box', '{Creative:1b}')",
+        "Item.of('tacz:ammo_box', '{AllTypeCreative:1b}')",
+        "minecraft:command_block",
+        "minecraft:chain_command_block",
+        "minecraft:repeating_command_block",
+        "minecraft:structure_block",
+        "quark:grate",
+        "minecraft:kelp" ]
+    # #----------------------------------------------------------------------
+    # BanTag. If any block has tag in this list will be cleared!
+    BanTag = [
+        "AttributeModifiers",
+        "run_command",
+        "using_converts_to",
+        "bundle_contents",
+        "minecraft:container",
+        "minecraft:attribute_modifiers" ]
+    # #----------------------------------------------------------------------
+    # Whether to remove entities. When set to true, entities inside the schematic will be cleared, except those listed in the whitelist.
+    # Enabling this feature can prevent all potential entity NBT duplication exploits, and also block armor stands from obtaining creative items.
+    # It is recommended to enable this feature!
+    KillEntity = true
+    # #----------------------------------------------------------------------
+    # When the KillEntity feature is set to false, this feature will be enabled. Any entity listed here will be removed from the schematic.
+    # However, entities in the whitelist cannot be removed, so do not use the same ID in both lists.
+    BanEntity = [
+        "minecraft:armor_stand",
+        "create:crafting_blueprint" ]
+    # #----------------------------------------------------------------------
+    # Entities in the whitelist. They must not conflict with the blacklist. Once added, these entities will be preserved when the KillEntity feature is enabled.
+    # Note: Only the entities listed below will be validated by the algorithm. Other entities will retain their NBT data using default matching.
+    # Matchable item: Super Glue.
+    whitelistEntity = [
+        "create:super_glue" ]
+
+[debug]
+    # #----------------------------------------------------------------------
+    # Whether to output the list of detected blueprint items in the chat. This may flood the chat, but it shows block statistics within the blueprint.
+    DebugTotalBlock = true
+    # #----------------------------------------------------------------------
+    # Whether to broadcast cheaters and cheating blueprints when CSC detects a cheating blueprint
+    DebugCheatFind = true
+    # #----------------------------------------------------------------------
+    # Whether to allow CSC to back up blueprints. This feature will back up the blueprint file after each upload, named by timestamp/player.
+    # This feature is highly recommended! When new exploits are discovered, it allows scanning historical uploads to trace back past activity.
+    # This feature will consume some storage space, as each uploaded blueprint will be saved.
+    EnableBackup = true
+    # #----------------------------------------------------------------------
+    # enable debug mod
+    problem = false
+
+[function]
+    # #----------------------------------------------------------------------
+    # Whether to check the integrity of belts in the blueprint. If incomplete, the blueprint will be considered vulnerable, as belts spanning thousands of blocks can lag the server.
+    # It may also cause chunk data to include belt entities, increasing bandwidth usage. Additionally, incomplete belts can duplicate shafts and belts.
+    checkBelt = true
+    # #----------------------------------------------------------------------
+    # When incomplete belts are detected, whether to remove them instead of blocking the entire blueprint.
+    # This feature is still in Beta. It allows the blueprint to be printed normally, but incomplete belts will not be printed.
+    TryRemoveBeltNotKill = true
+    # #----------------------------------------------------------------------
+    # When a fluid tank controller/tank count mismatch is detected, remove mismatched fluid tanks instead of blocking the entire blueprint.
+    # If disabled, fluid tank mismatch keeps the original behavior: mark as cheat and block upload.
+    TryRemoveFluidTankNotKill = true
+    # #----------------------------------------------------------------------
+    # Fix Create pipe duplication of lava from Quark lava-logged blocks. Disabled by default; enable it to apply the fix.
+    fixQuarkLavaFluidloggedDuplication = false
+    # #----------------------------------------------------------------------
+    # Validate player chain-conveyor riding packets to prevent forged movement time or position. Enabled by default; disabling restores Create's original behavior.
+    validateChainConveyorRidingPacket = true
+    # #----------------------------------------------------------------------
+    # Validate Create filter item packets so only an identical item truly present in the player's inventory may be stored as a filter sample. Enabled by default; disabling restores Create's original behavior.
+    validateFilterScreenPacket = true
+    # #----------------------------------------------------------------------
+    # Block Create's radial wrench menu packet that lets a client submit a block rotation or state change. Disabled by default; enable only when this protection is required.
+    blockRadialWrenchMenuPacket = false
+    # #----------------------------------------------------------------------
+    # Maximum allowed number of mismatched conveyor belts. If the number of conveyor belts with mismatched checksums in the schematic exceeds this threshold, the schematic will be deemed a cheat schematic
+    # If the number of mismatches in the schematic is less than this value, the problematic conveyor belts will be removed
+    maxBeltCheatLimit = 10
+    # #----------------------------------------------------------------------
+    # Maximum allowed length of chain drive wheels (default is 32 in Create). If there are chain drive wheels in the schematic exceeding this distance, the schematic will be deemed a cheat schematic
+    # If the length of chain drive wheels is less than this threshold, only the problematic drive wheels will be removed
+    maxConveyorCheatDistanceLimit = 50
+    # #----------------------------------------------------------------------
+    # Maximum allowed number of mismatched drive wheels. If the number of drive wheels with mismatched checksums in the schematic exceeds this threshold, the schematic will be deemed a cheat schematic
+    # If the number of checksum mismatches is less than this value, the schematic will only remove the problematic drive wheels
+    maxConveyorCheatLimit = 10
+    # #----------------------------------------------------------------------
+    # Conveyor's max degree, Can't get more than 45degree in Create. Only change nbt can.
+    maxConveyorAllowDegree = 45
+
+[online]
+    # #----------------------------------------------------------------------
+    # Whether to enable cloud-based automatic update synchronization. Note: This feature requires an internet connection!
+    # After enabling this feature, CSC will automatically synchronize the latest vulnerability exclusion rules from the cloud
+    # However, if abnormal schematics or unreadable schematics are detected, CSC will upload these schematics to the cloud to enhance cloud rules
+    # Since cloud checks require schematic samples for continuous updates, the uploaded schematics will only be used for vulnerability detection and no other purposes
+    # Enabling this feature will collect partial schematic data. Therefore, using this feature means you allow CSC to use your schematics for rule enhancement!
+    enableAutoUpdate = false
+    # #----------------------------------------------------------------------
+    # Whether to enable user-configured rules. When enabled, the user's additional configuration file will be used as rules to process schematics
+    # ID is for the exclusion of entity blocks, used as a supplement when the banblock function fails to completely exclude targets
+    # Each object requires two elements: the item's ID and its position. You can query this using the NBTExplorer software
+    # By default, paths are separated by dots (.). If encountering a list, you need to add a $ before the list tag to assist in identification
+    # Operate is for NBT exclusion, used to manipulate the NBT structure of any block with a high degree of flexibility
+    # Limit: When setting Limit, you can specify the upper and lower bounds of a variable. The format required is operate.limit$VariableName$LowerBound$UpperBound
+    # Clear: When set to Clear, the corresponding NBT will be removed. The format required is operate.clear$VariableName
+    # Replace: When set to Replace, the corresponding NBT tag will be replaced (only strings can be replaced). The format required is operate.replace$VariableName$Result
+    enableManualConfig = false
+    # #----------------------------------------------------------------------
+    # Enable automatic update reminders. When set to true, if CSC has vulnerabilities that require a version update to fix, a reminder will be sent
+    UpdateInfo = true
+    # #----------------------------------------------------------------------
+    # Upload samples classified as CannotCheck, Problem, Cheat, or modified by mod whitelist filtering. Default is true; samples are used only to improve CSC detection rules.
+    report = true
+    # #----------------------------------------------------------------------
+    # CSC v2 report endpoint. Keep the default HTTPS address unless you operate a compatible private ingress.
+    reportEndpoint = "https://api.torqueflux.com/v2/uploadfile/"
+    # Per-installation CSC report credential. Generated once; keep it private. Removing it registers this installation as new.
+    reportToken = "3a36bf7b-1a59-4327-8fb6-5493195384767b5a4847-a9b7-40d6-9373-bf4a0e28af53"

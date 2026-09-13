@@ -1,0 +1,29 @@
+{
+    "parent": "modern_industrialization:forge_hammer",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "extended_industrialization:bronze_solar_boiler"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.bronze_solar_boiler.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "extended_industrialization:bronze_solar_boiler"
+        },
+        "title": {
+            "translate": "advancements.statech.bronze_solar_boiler"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}
