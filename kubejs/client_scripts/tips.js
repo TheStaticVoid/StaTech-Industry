@@ -396,7 +396,7 @@ const tips = [
     {
         id: 'oresamples',
         tiptext:
-            'Large ore veins that often contain more than a thousand ore blocks.',
+            'Large ore veins often contain more than a thousand ore blocks.',
     },
     {
         id: 'expchests',
