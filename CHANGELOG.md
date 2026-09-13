@@ -21,6 +21,13 @@ This is the first follow-up patch post release that we are looking to clean up a
 - **Added Spectrum advancement sharing quest.**
 - **Updated MI to 2.5.8, bringing the fluid fuel rebalance.**
 - Added missing Rustic Delight Farming for Blockheads Market recipes.
+- **Disabled seamless_world_loading in FancyMenu, reducing lag in GPU-bound situations.**
+- Tweaked some quest layouts and descriptions.
+- Hid missed dev recipes.
+- Updated quests for MI changes.
+- Fixed Extremely P-Doped Silicon Plate texture.
+- **Added more AE2 compatibility recipes in the Assembler, Cutting Machine and Packer.**
+- **Updated IO to 1.14.0, adding the Upgrade Holder**
 
 ## [2.0.0]
 
