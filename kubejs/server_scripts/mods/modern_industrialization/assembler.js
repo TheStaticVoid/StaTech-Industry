@@ -245,6 +245,260 @@ ServerEvents.recipes((event) => {
         [{ amount: 2, item: ae('formation_core') }]
     );
 
+    // -- ME ANNIHILATION PLANE -- //
+    assembler(
+        event,
+        st('annihilation_plane'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('annihilation_core') },
+            { amount: 3, item: ae('fluix_crystal') },
+            { amount: 2, item: mi('steel_plate') },
+        ],
+        [{ amount: 1, item: ae('annihilation_plane') }]
+    );
+
+    // -- ME FORMATION PLANE -- //
+    assembler(
+        event,
+        st('formation_plane'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('formation_core') },
+            { amount: 3, item: ae('fluix_crystal') },
+            { amount: 2, item: mi('steel_plate') },
+        ],
+        [{ amount: 1, item: ae('formation_plane') }]
+    );
+
+    // -- ME INTERFACE -- //
+    assembler(
+        event,
+        st('interface'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('formation_core') },
+            { amount: 1, item: ae('annihilation_core') },
+            { amount: 2, tag: 'c:glass_blocks' },
+            { amount: 4, item: mi('steel_plate') },
+        ],
+        [{ amount: 1, item: ae('interface') }]
+    );
+
+    // -- ME PATTERN PROVIDER -- //
+    assembler(
+        event,
+        st('pattern_provider'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('formation_core') },
+            { amount: 1, item: ae('annihilation_core') },
+            { amount: 2, item: mc('crafting_table') },
+            { amount: 4, item: mi('aluminum_plate') },
+        ],
+        [{ amount: 1, item: ae('pattern_provider') }]
+    );
+
+    // -- ME PATTERN PROVIDER -- //
+    assembler(
+        event,
+        st('molecular_assembler'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('formation_core') },
+            { amount: 1, item: ae('annihilation_core') },
+            { amount: 1, item: mi('advanced_machine_hull') },
+            { amount: 2, item: ae('quartz_glass') },
+            { amount: 4, item: mi('aluminum_plate') },
+        ],
+        [{ amount: 1, item: ae('molecular_assembler') }]
+    );
+
+    // -- 1K STORAGE COMPONENT -- //
+    assembler(
+        event,
+        st('cell_component_1k'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('logic_processor') },
+            { amount: 4, item: mc('redstone') },
+            { amount: 4, item: ae('certus_quartz_crystal') },
+        ],
+        [{ amount: 1, item: ae('cell_component_1k') }]
+    );
+
+    // -- 4K STORAGE COMPONENT -- //
+    assembler(
+        event,
+        st('cell_component_4k'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('calculation_processor') },
+            { amount: 4, item: mc('redstone') },
+            { amount: 1, item: ae('quartz_glass') },
+            { amount: 3, item: ae('cell_component_1k') },
+        ],
+        [{ amount: 1, item: ae('cell_component_4k') }]
+    );
+
+    // -- 16K STORAGE COMPONENT -- //
+    assembler(
+        event,
+        st('cell_component_16k'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('calculation_processor') },
+            { amount: 4, item: mc('glowstone_dust') },
+            { amount: 1, item: ae('quartz_glass') },
+            { amount: 3, item: ae('cell_component_4k') },
+        ],
+        [{ amount: 1, item: ae('cell_component_16k') }]
+    );
+
+    // -- 64K STORAGE COMPONENT -- //
+    assembler(
+        event,
+        st('cell_component_64k'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('calculation_processor') },
+            { amount: 4, item: mc('glowstone_dust') },
+            { amount: 1, item: ae('quartz_glass') },
+            { amount: 3, item: ae('cell_component_16k') },
+        ],
+        [{ amount: 1, item: ae('cell_component_64k') }]
+    );
+
+    // -- 256K STORAGE COMPONENT -- //
+    assembler(
+        event,
+        st('cell_component_256k'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('calculation_processor') },
+            { amount: 4, item: ae('sky_dust') },
+            { amount: 1, item: ae('quartz_glass') },
+            { amount: 3, item: ae('cell_component_64k') },
+        ],
+        [{ amount: 1, item: ae('cell_component_256k') }]
+    );
+
+    // -- 1M STORAGE COMPONENT -- //
+    assembler(
+        event,
+        st('cell_component_1m'),
+        8,
+        200,
+        [
+            { amount: 1, item: mg('accumulation_processor') },
+            { amount: 4, item: ae('sky_dust') },
+            { amount: 1, item: ae('quartz_vibrant_glass') },
+            { amount: 3, item: ae('cell_component_256k') },
+        ],
+        [{ amount: 1, item: mg('cell_component_1m') }]
+    );
+
+    // -- 4M STORAGE COMPONENT -- //
+    assembler(
+        event,
+        st('cell_component_4m'),
+        8,
+        200,
+        [
+            { amount: 1, item: mg('accumulation_processor') },
+            { amount: 4, item: ae('ender_dust') },
+            { amount: 1, item: ae('quartz_vibrant_glass') },
+            { amount: 3, item: mg('cell_component_1m') },
+        ],
+        [{ amount: 1, item: mg('cell_component_4m') }]
+    );
+
+    // -- 16M STORAGE COMPONENT -- //
+    assembler(
+        event,
+        st('cell_component_16m'),
+        8,
+        200,
+        [
+            { amount: 1, item: mg('accumulation_processor') },
+            { amount: 4, item: ae('ender_dust') },
+            { amount: 1, item: ae('quartz_vibrant_glass') },
+            { amount: 3, item: mg('cell_component_4m') },
+        ],
+        [{ amount: 1, item: mg('cell_component_16m') }]
+    );
+
+    // -- 64M STORAGE COMPONENT -- //
+    assembler(
+        event,
+        st('cell_component_64m'),
+        8,
+        200,
+        [
+            { amount: 1, item: mg('accumulation_processor') },
+            { amount: 4, item: ae('matter_ball') },
+            { amount: 1, item: ae('quartz_vibrant_glass') },
+            { amount: 3, item: mg('cell_component_16m') },
+        ],
+        [{ amount: 1, item: mg('cell_component_64m') }]
+    );
+
+    // -- 256M STORAGE COMPONENT -- //
+    assembler(
+        event,
+        st('cell_component_256m'),
+        8,
+        200,
+        [
+            { amount: 1, item: mg('accumulation_processor') },
+            { amount: 4, item: ae('matter_ball') },
+            { amount: 1, item: ae('quartz_vibrant_glass') },
+            { amount: 3, item: mg('cell_component_64m') },
+        ],
+        [{ amount: 1, item: mg('cell_component_256m') }]
+    );
+
+    // -- ME PATTERN PROVIDER -- //
+    assembler(
+        event,
+        st('molecular_assembler'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('formation_core') },
+            { amount: 1, item: ae('annihilation_core') },
+            { amount: 1, item: mi('advanced_machine_hull') },
+            { amount: 2, item: ae('quartz_glass') },
+            { amount: 4, item: mi('aluminum_plate') },
+        ],
+        [{ amount: 1, item: ae('molecular_assembler') }]
+    );
+
+    // -- CRAFTING UNIT -- //
+    assembler(
+        event,
+        st('crafting_unit'),
+        8,
+        200,
+        [
+            { amount: 1, item: ae('logic_processor') },
+            { amount: 2, item: ae('calculation_processor') },
+            { amount: 2, item: ae('fluix_glass_cable') },
+            { amount: 4, item: mi('aluminum_plate') },
+        ],
+        [{ amount: 1, item: ae('crafting_unit') }]
+    );
+
     // -- ME STORAGE BUS -- //
     assembler(
         event,
@@ -328,20 +582,6 @@ ServerEvents.recipes((event) => {
         [{ amount: 3, item: ae('quartz_fiber') }]
     );
 
-    // -- END CRYSTAL -- //
-    assembler(
-        event,
-        st('end_crystal'),
-        16,
-        200,
-        [
-            { amount: 7, item: mc('glass') },
-            { amount: 1, item: mc('ender_eye') },
-            { amount: 1, item: mc('ghast_tear') },
-        ],
-        [{ amount: 1, item: mc('end_crystal') }]
-    );
-
     // -- BETTER COVERED CABLE -- //
     assembler(
         event,
@@ -354,6 +594,20 @@ ServerEvents.recipes((event) => {
         ],
         [{ amount: 4, item: ae('fluix_covered_cable') }],
         [{ amount: 500, fluid: mi('synthetic_rubber') }]
+    );
+
+    // -- END CRYSTAL -- //
+    assembler(
+        event,
+        st('end_crystal'),
+        16,
+        200,
+        [
+            { amount: 7, item: mc('glass') },
+            { amount: 1, item: mc('ender_eye') },
+            { amount: 1, item: mc('ghast_tear') },
+        ],
+        [{ amount: 1, item: mc('end_crystal') }]
     );
 
     // -- LV TO MV TRANSFORMER -- //
