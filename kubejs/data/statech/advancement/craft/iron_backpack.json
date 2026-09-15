@@ -1,0 +1,29 @@
+{
+    "parent": "statech:craft/copper_backpack",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "sophisticatedbackpacks:iron_backpack"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.iron_backpack.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "sophisticatedbackpacks:iron_backpack"
+        },
+        "title": {
+            "translate": "advancements.statech.iron_backpack"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}
