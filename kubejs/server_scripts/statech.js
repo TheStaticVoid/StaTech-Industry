@@ -580,6 +580,7 @@ ServerEvents.tags('item', (event) => {
         event.add(mc('enchantable/vanishing'), id);
         event.remove(mc('axes'), id);
     });
+    event.add(kj('lumberaxes'), mi('steam_chainsaw'));
 
     const COINS = [
         kj('coin_common'),
