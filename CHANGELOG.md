@@ -9,6 +9,7 @@ TODO: yap about the changes.
 - Removed the Advanced Peripherals villager house spawn
 - Fixed a typo in the Fireproof ring advancement description
 - **Added the Steam Chainsaw to the lumberaxe tag, allowing it to veinmine trees**
+- Fixed weird lighting issues when opening inventories
 
 ## [2.0.1]
 
