@@ -2282,6 +2282,9 @@
 		}
 		{
 			dependencies: ["279FF920B3CA44FF"]
+			icon: {
+				id: "spectrum:enchanter"
+			}
 			id: "37DD0F1D584C6A05"
 			rewards: [
 				{
@@ -2306,11 +2309,62 @@
 				}
 			]
 			size: 3.0d
-			tasks: [{
-				id: "6FD1B948AE06C325"
-				item: { count: 1, id: "spectrum:enchanter" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6FD1B948AE06C325"
+					item: { count: 1, id: "spectrum:enchanter" }
+					type: "item"
+				}
+				{
+					count: 159L
+					id: "1E5366B6D510D2C7"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0571F3A7E3F3FD79"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_slabs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "5E15ABEF1D674965"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_pillar_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "51F9C532AAA92194"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:gemstone_lamps)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4AA909EA18E53036"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:spectrum_item_bowls)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2ADB5179865E28C1"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_gemstones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "038CDC3104A04D35"
+					item: { count: 1, id: "spectrum:liquid_crystal_bucket" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 17.0d
 			y: 4.5d
 		}
@@ -3273,6 +3327,7 @@
 						id: "spectrum:enchanter"
 					}
 					id: "4275DA182DE50F12"
+					permission_level: 2
 					type: "command"
 				}
 				{
