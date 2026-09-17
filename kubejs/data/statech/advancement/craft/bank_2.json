@@ -1,0 +1,29 @@
+{
+    "parent": "statech:craft/bank_1",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "bankstorage:bank_2"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.bank_2.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "bankstorage:bank_2"
+        },
+        "title": {
+            "translate": "advancements.statech.bank_2"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

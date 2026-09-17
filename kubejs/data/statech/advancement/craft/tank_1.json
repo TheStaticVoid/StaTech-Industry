@@ -1,0 +1,29 @@
+{
+    "parent": "statech:root",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "bankstorage:tank_1"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.tank_1.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "bankstorage:tank_1"
+        },
+        "title": {
+            "translate": "advancements.statech.tank_1"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}
