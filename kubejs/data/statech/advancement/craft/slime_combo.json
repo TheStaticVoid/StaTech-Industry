@@ -1,0 +1,32 @@
+{
+    "parent": "statech:root",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "usefulslime:slime_sling"
+                    },
+                    {
+                        "items": "usefulslime:slime_boots"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.slime_combo.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "usefulslime:slime_sling"
+        },
+        "title": {
+            "translate": "advancements.statech.slime_combo"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}
