@@ -5179,6 +5179,9 @@
 		}
 		{
 			dependencies: ["2ED7EE071A7C3ED0"]
+			icon: {
+				id: "spectrum:pedestal_moonstone"
+			}
 			id: "680FAEB2C903AF57"
 			rewards: [
 				{
@@ -5193,12 +5196,21 @@
 				}
 			]
 			size: 2.0d
-			tasks: [{
-				advancement: "spectrum:lategame/build_complex_pedestal_structure"
-				criterion: ""
-				id: "40F5D55D00392794"
-				type: "advancement"
-			}]
+			tasks: [
+				{
+					count: 28L
+					id: "5C85DCB284DFED98"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:moonstone_chiseled_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "spectrum:lategame/build_complex_pedestal_structure"
+					criterion: ""
+					id: "40F5D55D00392794"
+					type: "advancement"
+				}
+			]
 			x: 17.0d
 			y: 21.5d
 		}
