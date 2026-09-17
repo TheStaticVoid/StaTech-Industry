@@ -2135,6 +2135,9 @@
 		}
 		{
 			dependencies: ["10B87446BD9C118D"]
+			icon: {
+				id: "spectrum:cinderhearth"
+			}
 			id: "7C6E6A8331C52A08"
 			rewards: [
 				{
@@ -2157,11 +2160,48 @@
 					xp: 100
 				}
 			]
-			tasks: [{
-				id: "4EC12E9E53D29EE0"
-				item: { count: 1, id: "spectrum:cinderhearth" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4EC12E9E53D29EE0"
+					item: { count: 1, id: "spectrum:cinderhearth" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "34FFA655667FC069"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4D8AADFF8AFCC29A"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_crest_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6D3B43F41E191976"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:glass_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3482F37A7918D697"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:chiseled_polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3C0432710CB36B1B"
+					item: { count: 1, id: "minecraft:lava_bucket" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 22.0d
 			y: 14.5d
 		}
