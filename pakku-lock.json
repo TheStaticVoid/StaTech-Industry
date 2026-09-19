@@ -4,7 +4,7 @@
         "1.21.1"
     ],
     "loaders": {
-        "neoforge": "21.1.250"
+        "neoforge": "21.1.251"
     },
     "projects": [
         {
@@ -2887,6 +2887,49 @@
             ]
         },
         {
+            "pakku_id": "dEit5xglz0x75LMy",
+            "pakku_links": [
+                "dIyAviNtjXHvNzr7",
+                "DugI3h8OJJju1iqr"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "cultural-creators"
+            },
+            "name": {
+                "curseforge": "Cultural Creators (Create and Cultural Delights Addon)"
+            },
+            "id": {
+                "curseforge": "953832"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "cultural-creators-neoforge-1.21.1-1.2.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8642/513/cultural-creators-neoforge-1.21.1-1.2.0.jar",
+                    "id": "8642513",
+                    "parent_id": "953832",
+                    "hashes": {
+                        "sha1": "efc3bdc4dcdc1592193bb8a14eafb88f20519cde",
+                        "md5": "8045e1215d4efaa8e22b6f94b6f1b849"
+                    },
+                    "required_dependencies": [
+                        "574622",
+                        "328085"
+                    ],
+                    "size": 55622,
+                    "date_published": "2026-08-13T20:27:25.353Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "dIyAviNtjXHvNzr7",
             "pakku_links": [
                 "INJIDRH9RKWIVXGx"
@@ -3075,6 +3118,42 @@
                     ],
                     "size": 105507,
                     "date_published": "2026-07-24T06:56:02.980Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "pzDUMRMIFLzlQorE",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "delightful-creators-forge"
+            },
+            "name": {
+                "curseforge": "Delightful Creators [Forge] (Create and Farmer's Delight Addon)"
+            },
+            "id": {
+                "curseforge": "1275340"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "delightfulcreators-1.2.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8530/731/delightfulcreators-1.2.1.jar",
+                    "id": "8530731",
+                    "parent_id": "1275340",
+                    "hashes": {
+                        "sha1": "c9e15a764327fe199c05783197c19ddbd7b439d8",
+                        "md5": "eb5809a711964dacd792a1c0aad31c43"
+                    },
+                    "required_dependencies": [],
+                    "size": 413017,
+                    "date_published": "2026-07-29T00:42:01.673Z"
                 }
             ]
         },
