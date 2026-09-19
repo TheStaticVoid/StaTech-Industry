@@ -42,7 +42,7 @@ ServerEvents.recipes((event) => {
             { amount: 4, tag: 'c:storage_blocks/steel' },
             { amount: 4, tag: 'c:storage_blocks/iron' },
             { amount: 4, tag: 'c:storage_blocks/gold' },
-            { amount: 1, item: mc('ominous_trial_key') }
+            { amount: 1, item: mc('ominous_trial_key') },
         ],
         [{ amount: 1, item: mc('heavy_core') }]
     );
@@ -303,7 +303,7 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: ae('pattern_provider') }]
     );
 
-    // -- ME PATTERN PROVIDER -- //
+    // -- MOLECULAR ASSEMBLER -- //
     assembler(
         event,
         st('molecular_assembler'),
@@ -466,22 +466,6 @@ ServerEvents.recipes((event) => {
             { amount: 3, item: mg('cell_component_64m') },
         ],
         [{ amount: 1, item: mg('cell_component_256m') }]
-    );
-
-    // -- ME PATTERN PROVIDER -- //
-    assembler(
-        event,
-        st('molecular_assembler'),
-        8,
-        200,
-        [
-            { amount: 1, item: ae('formation_core') },
-            { amount: 1, item: ae('annihilation_core') },
-            { amount: 1, item: mi('advanced_machine_hull') },
-            { amount: 2, item: ae('quartz_glass') },
-            { amount: 4, item: mi('aluminum_plate') },
-        ],
-        [{ amount: 1, item: ae('molecular_assembler') }]
     );
 
     // -- CRAFTING UNIT -- //
