@@ -342,33 +342,7 @@
 				id: "minecraft:chain"
 			}
 		}
-		{
-			count: 2
-			id: "1DE9A8FA043CDC0E"
-			item: {
-				count: 1
-				id: "create:stock_link"
-			}
-		}
-		{
-			count: 4
-			id: "52F9728EEF8BB8D3"
-			item: {
-				count: 1
-				id: "create:factory_gauge"
-			}
-		}
-		{ id: "44F104B62E26F20D", item: { count: 1, id: "create:redstone_requester" } }
-		{ id: "32D7C2648C5C142B", item: { count: 1, id: "create:stock_ticker" } }
 		{ id: "19D3B2E348587CC2", item: { count: 1, id: "create:item_hatch" } }
-		{
-			count: 2
-			id: "7134467B39CD7F48"
-			item: {
-				count: 1
-				id: "create:package_frogport"
-			}
-		}
 		{
 			count: 16
 			id: "307091875E04B0AD"
@@ -377,8 +351,6 @@
 				id: "create:cardboard"
 			}
 		}
-		{ id: "7AC87749A16A5128", item: { count: 1, id: "create:packager" } }
-		{ id: "73C1DD889331F13A", item: { count: 1, id: "create:repackager" } }
 		{
 			count: 4
 			id: "17FC0FC1E54F1D70"
@@ -420,7 +392,6 @@
 			weight: 0.25f
 		}
 		{ id: "6E732A4460F26428", item: { count: 1, id: "createaddition:tesla_coil" } }
-		{ id: "74E7F95397978144", item: { count: 1, id: "createaddition:electric_motor" } }
 	]
 	use_title: true
 }
