@@ -18,10 +18,11 @@ ServerEvents.recipes((event) => {
         cr('crafting/appliances/dough'),
         cr('splashing/wheat_flour'),
         cr('mixing/dough_by_mixing'),
+        dc('crafting/mechanical_cutter'),
     ];
     CREATE_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
-    // event.remove( {type: cr('crushing'), output: cr('crushed_platinum_ore')} );
     event.remove({ mod: 'create', output: mi('uranium_ingot') });
+    event.remove({ mod: 'create_dragons_plus' });
 
     // -- TANK -- //
     event
@@ -30,7 +31,7 @@ ServerEvents.recipes((event) => {
             S: '#c:plates/steel',
             G: '#c:glass_blocks',
         })
-        .id('statech:create/fluid_tank');
+        .id(st('fluid_tank'));
 });
 
 ServerEvents.tags('fluid', (event) => {

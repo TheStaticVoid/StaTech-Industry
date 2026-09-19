@@ -1,0 +1,29 @@
+{
+    "parent": "statech:root",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "explorerscompass:explorerscompass"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.explorerscompass.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "explorerscompass:explorerscompass"
+        },
+        "title": {
+            "translate": "advancements.statech.explorerscompass"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

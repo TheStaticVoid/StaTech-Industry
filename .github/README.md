@@ -35,3 +35,7 @@ To download the modpack from this repository, you can clone it and use [Pakku](h
 - @DmitryProskurin - Quest fixes and recipe modifications
 - @JustinMullin - Quest fixes
 - @Quezlar - Quest typo fixes
+
+### Additional Credits
+
+Uses [Mono7 by xlifi](https://modrinth.com/resourcepack/mono7) for the prospector pick chat messages.

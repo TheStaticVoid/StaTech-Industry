@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.2]
+
+TODO: yap about the changes.
+
+- **Add more advancements for items throughout the pack**
+- Fixed some miscellaneous Spectrum quest issues
+- Removed the Advanced Peripherals villager house spawn
+- Fixed a typo in the Fireproof ring advancement description
+- **Added the Steam Chainsaw to the lumberaxe tag, allowing it to veinmine trees**
+- Fixed weird lighting issues when opening inventories
+
 ## [2.0.1]
 
 This is the first follow-up patch post release that we are looking to clean up a few issues and add some more improvements. This pack version includes an updated Spectrum version which fixes some issues players were having in the last version of the mod.

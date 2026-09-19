@@ -10,6 +10,7 @@ ServerEvents.recipes((event) => {
     // -- QUARRY REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         mi('quarry/bronze'),
+        mi('quarry/copper'),
         mi('quarry/gold'),
         mi('quarry/steel'),
         mi('quarry/stainless_steel'),
@@ -31,6 +32,27 @@ ServerEvents.recipes((event) => {
             { amount: 1, item: mi('tin_ore'), probability: 0.3 },
             { amount: 1, item: mc('gold_ore'), probability: 0.15 },
             { amount: 1, item: mc('redstone_ore'), probability: 0.2 },
+        ]
+    );
+
+    // -- COPPER DRILL -- //
+    quarry(
+        event,
+        st('copper_drill'),
+        4,
+        600,
+        [{ amount: 1, item: mi('copper_drill'), probability: 0.1 }],
+        [
+            { amount: 32, item: mc('cobblestone'), probability: 0.5 },
+            { amount: 16, item: mc('diorite'), probability: 0.25 },
+            { amount: 16, item: mc('andesite'), probability: 0.25 },
+            { amount: 16, item: mc('granite'), probability: 0.25 },
+            { amount: 10, item: mc('dirt'), probability: 0.5 },
+            { amount: 10, item: mc('gravel'), probability: 0.5 },
+            { amount: 16, item: mc('cobbled_deepslate'), probability: 0.25 },
+            { amount: 16, item: mc('tuff'), probability: 0.25 },
+            { amount: 16, item: nm('silt'), probability: 0.25 },
+            { amount: 16, item: nm('siltstone'), probability: 0.125 },
         ]
     );
 

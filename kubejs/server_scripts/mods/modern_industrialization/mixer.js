@@ -402,6 +402,21 @@ ServerEvents.recipes((event) => {
         [{ amount: 125, fluid: mi('synthetic_rubber') }]
     );
 
+    // -- CHOCOLATE -- //
+    mixer(
+        event,
+        st('chocolate'),
+        2,
+        200,
+        [
+            { amount: 1, item: mc('sugar') },
+            { amount: 1, item: mc('cocoa_beans') },
+        ],
+        null,
+        [{ amount: 250, fluid: mc('milk') }],
+        [{ amount: 250, fluid: cr('chocolate') }]
+    );
+
     // ---------------------------//
     // -- EI FERTILIZER COMPAT -- //
     // ---------------------------//

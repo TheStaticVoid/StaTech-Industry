@@ -1,0 +1,5 @@
+[mechanicalCutter]
+	#Whether the Mechanical Cutter also processes items placed in a Basin two blocks
+	#below it, the same way Create's own Mechanical Press does. Disable this to keep
+	#the Cutter limited to belt/depot and world item processing only.
+	basinProcessing = false

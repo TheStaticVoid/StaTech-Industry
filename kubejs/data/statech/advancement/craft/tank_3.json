@@ -1,0 +1,29 @@
+{
+    "parent": "statech:craft/tank_2",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "tankstorage:tank_3"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.tank_3.description"
+        },
+        "icon": {
+            "count": 1,
+            "id": "tankstorage:tank_3"
+        },
+        "title": {
+            "translate": "advancements.statech.tank_3"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

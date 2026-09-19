@@ -633,6 +633,12 @@ ServerEvents.tags('item', (event) => {
         event.add(`kubejs:crushed_dusts/${id}`, mi(`${id}_crushed_dust`));
         event.add('kubejs:crushed_dusts', mi(`${id}_crushed_dust`));
     });
+
+    const HOT_INGOTS = ['beryllium', 'netherite'];
+    HOT_INGOTS.forEach((id) => {
+        event.add(`c:hot_ingots/${id}`, mi(`${id}_hot_ingot`));
+        event.add('c:hot_ingots', mi(`${id}_hot_ingot`));
+    });
 });
 
 // -- ADD SILVER DROPS TO CAVE LOOT FOR CLEAN ENERGY RUN -- //

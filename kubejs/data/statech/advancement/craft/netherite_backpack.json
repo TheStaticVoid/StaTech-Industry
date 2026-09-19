@@ -1,0 +1,30 @@
+{
+    "parent": "statech:craft/diamond_backpack",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "sophisticatedbackpacks:netherite_backpack"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.netherite_backpack.description"
+        },
+        "frame": "challenge",
+        "icon": {
+            "count": 1,
+            "id": "sophisticatedbackpacks:netherite_backpack"
+        },
+        "title": {
+            "translate": "advancements.statech.netherite_backpack"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}
