@@ -90,7 +90,6 @@
 				id: "create:chute"
 			}
 		}
-		{ id: "70B6CEC7ABC8C619", item: { count: 1, id: "create:smart_chute" } }
 		{
 			count: 4
 			id: "69211733082BAE1F"
@@ -102,7 +101,6 @@
 		{ id: "573A26FF28B0FE80", item: { count: 1, id: "create:mechanical_pump" } }
 		{ id: "07E04A80810FB710", item: { count: 1, id: "create:copper_valve_handle" } }
 		{ id: "4B01B87EA1FCD528", item: { count: 1, id: "create:fluid_valve" } }
-		{ id: "6179DD12AF0B9EC1", item: { count: 1, id: "create:smart_fluid_pipe" } }
 		{
 			count: 9
 			id: "1D34DEB816F27217"
@@ -129,7 +127,6 @@
 		{ id: "1DDF872C3A2A9515", item: { count: 1, id: "create:gantry_carriage" } }
 		{ id: "4B5E7CEBFE5C7C4D", item: { count: 1, id: "create:windmill_bearing" } }
 		{ id: "44D143E7DDC942C5", item: { count: 1, id: "create:mechanical_bearing" } }
-		{ id: "0183B68EB8442F86", item: { count: 1, id: "create:clockwork_bearing" } }
 		{ id: "2C55AC06EFBEE28A", item: { count: 1, id: "create:rope_pulley" } }
 		{ id: "0B2AC49C734B4C9E", item: { count: 1, id: "create:cart_assembler" } }
 		{ id: "2A8B15C00DADC003", item: { count: 1, id: "create:sticker" } }
@@ -147,14 +144,6 @@
 			item: {
 				count: 1
 				id: "create:mechanical_saw"
-			}
-		}
-		{
-			count: 3
-			id: "5C56C06CBDB1CFF2"
-			item: {
-				count: 1
-				id: "create:deployer"
 			}
 		}
 		{
@@ -191,7 +180,6 @@
 				id: "create:andesite_casing"
 			}
 		}
-		{ id: "6343E7F3AA8E2E08", item: { count: 1, id: "create:rotation_speed_controller" } }
 		{
 			count: 3
 			id: "14A4B4D1371E57B5"
@@ -200,8 +188,6 @@
 				id: "create:placard"
 			}
 		}
-		{ id: "231E74EA63950E36", item: { count: 1, id: "create:content_observer" } }
-		{ id: "7D58A410F0D217C1", item: { count: 1, id: "create:stockpile_switch" } }
 		{
 			count: 4
 			id: "49DC1C5B765ECAEA"
@@ -211,18 +197,6 @@
 			}
 		}
 		{
-			count: 2
-			id: "4BC31556BBA9C254"
-			item: {
-				count: 1
-				id: "create:mechanical_crafter"
-			}
-		}
-		{ id: "3448B5A9778BE1B7", item: { count: 1, id: "create:track_station" } }
-		{ id: "0BDF7C8987C20B1E", item: { count: 1, id: "create:track_signal" } }
-		{ id: "500E336994569BB8", item: { count: 1, id: "create:track_observer" } }
-		{ id: "20F91E822525D330", item: { count: 1, id: "create:controls" } }
-		{
 			count: 3
 			id: "7FB933F85141E2C7"
 			item: {
@@ -230,7 +204,6 @@
 				id: "create:andesite_funnel"
 			}
 		}
-		{ id: "6CDFB54A5199E241", item: { count: 1, id: "create:brass_funnel" } }
 		{
 			count: 3
 			id: "404E098C3AC8EC1A"
@@ -239,8 +212,6 @@
 				id: "create:andesite_tunnel"
 			}
 		}
-		{ id: "252F365805FAA098", item: { count: 1, id: "create:brass_tunnel" } }
-		{ id: "0E7DC677FD67941E", item: { count: 1, id: "create:display_link" } }
 		{
 			count: 6
 			id: "7FD8AB0F768B075C"
@@ -308,24 +279,13 @@
 		}
 		{ id: "782A573F9C4CD14A", item: { count: 1, id: "create:linked_controller" } }
 		{ id: "60971CF48DB7A223", item: { count: 1, id: "create:potato_cannon" } }
-		{ id: "36C13115FFAAA69F", item: { count: 1, id: "create:extendo_grip" } }
-		{ id: "21BBB2A45A40A0B7", item: { count: 1, id: "create:wand_of_symmetry" } }
 		{ id: "76EE26BBFB658E0E", item: { count: 1, id: "create:copper_backtank" } }
 		{ id: "783C6792211DAE28", item: { count: 1, id: "create:copper_diving_helmet" } }
 		{ id: "3C92D84D5C5C84A6", item: { count: 1, id: "create:copper_diving_boots" } }
 		{ id: "4D2118A1CD42C548", item: { count: 1, id: "create:large_water_wheel" } }
 		{ id: "45D8233DFDA3D081", item: { count: 1, id: "create:clipboard" } }
-		{ id: "01CEE82DCFC8F628", item: { count: 1, id: "create:elevator_pulley" } }
 		{ id: "6FEA81C7465B753B", item: { count: 1, id: "create:contraption_controls" } }
 		{ id: "31A91A7523085402", item: { count: 1, id: "create:mechanical_roller" } }
-		{
-			count: 4
-			id: "4173124B898EF0D5"
-			item: {
-				count: 1
-				id: "create:transmitter"
-			}
-		}
 		{
 			count: 2
 			id: "532A4920D636BE44"
@@ -359,39 +319,6 @@
 				id: "create:filter"
 			}
 		}
-		{
-			count: 4
-			id: "34378B9199A45B4F"
-			item: {
-				count: 1
-				id: "create:attribute_filter"
-			}
-		}
-		{
-			count: 4
-			id: "7860A3941739A3D7"
-			item: {
-				count: 1
-				id: "create:package_filter"
-			}
-		}
-		{
-			count: 4
-			id: "298C4987BA35DC7E"
-			item: {
-				count: 1
-				id: "createaddition:straw"
-			}
-		}
-		{
-			id: "1414A94145AA12ED"
-			item: {
-				count: 1
-				id: "createaddition:diamond_grit_sandpaper"
-			}
-			weight: 0.25f
-		}
-		{ id: "6E732A4460F26428", item: { count: 1, id: "createaddition:tesla_coil" } }
 	]
 	use_title: true
 }
