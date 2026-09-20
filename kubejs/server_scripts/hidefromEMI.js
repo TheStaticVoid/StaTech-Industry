@@ -130,6 +130,7 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         ca('gold_rod'),
         ca('rolling_mill'),
         ca('capacitor'),
+        ca('electric_pump'),
         /^create_dragons_plus:.*/,
     ];
     UNUSED_CREATEADDITION.forEach((id) => event.remove(id));
