@@ -3,12 +3,56 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
+/**  PLANT
+ *   @param {string} seed Namespaced identifier of this plant's seed
+ *   @param {MIItem} primaryOutput MIItem object containing an item, quantity, and probability for the primary output of the plant.
+ *   @param {MIItem} secondaryOutput MIItem object containing an item, quantity,  and probability for the secondary output of the plant.
+ *   @param {?MIItem} extraDrop MIItem object containing an item, quantity, and probability for any extra drops a plant may have, like more seeds.
+ *   @param {?string} fluid Namespaced identifier of the fluid needed to grow this plant. Assumes the fluid is water if not supplied.
+ *
+ * @example
+ * ```javascript
+ *  Plant(mc('pumpkin_seeds'), { amount: 1, item: mc('pumpkin') }, { amount: 1, item: mc('pumpkin_seeds'), probability: 0.5 } );
+ *  Plant(mc('wheat_seeds'), { amount: 1, item: mc('wheat') }, { amount: 1, item: mc('wheat'), probability: 0.5 }, { amount: 1, item: mc('wheat_seeds'), probability: 0.5 } );
+ *  Plant(mc('chorus_flower'), { amount: 1, item: mc('chorus_fruit') }, { amount: 1, item: mc('chorus_fruit'), probability: 0.5 }, { amount: 1, item: mc('chorus_flower'), probability: 0.5 }, mi('liquid_ender') );
+ * ```
+ */
+function Plant(seed, primaryOutput, secondaryOutput, extraDrop, fluid) {
+    return {
+        seed: seed,
+        primaryOutput: primaryOutput,
+        secondaryOutput: secondaryOutput,
+        extraDrop: extraDrop,
+        fluid: fluid,
+    };
+}
+
 ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) =>
         `statech:modern_industrialization/photosynthetic_chamber/${id}`;
 
     // This is all the seeds in the game with their respective outputs
+
+    // prettier-ignore
+    const cropList = [
+                // Seed                 Primary Output                               Secondary Output                                               Extra Drop                                                          Fluid
+        Plant(mc('wheat_seeds'),       { amount: 1, item: mc('wheat') },            { amount: 1, item: mc('wheat'), probability: 0.5 },            { amount: 1, item: mc('wheat_seeds'), probability: 0.5 } ),
+        Plant(mc('pumpkin_seeds'),     { amount: 1, item: mc('pumpkin') },          { amount: 1, item: mc('pumpkin_seeds'), probability: 0.5 } ),
+        Plant(mc('melon_seeds'),       { amount: 1, item: mc('melon') },            { amount: 1, item: mc('melon_seeds'), probability: 0.5 } ),
+        Plant(mc('beetroot_seeds'),    { amount: 1, item: mc('beetroot') },         { amount: 1, item: mc('beetroot'), probability: 0.5 },         { amount: 1, item: mc('beetroot_seeds'), probability: 0.5 } ),
+        Plant(mc('carrot'),            { amount: 1, item: mc('carrot') },           { amount: 1, item: mc('carrot'), probability: 0.5 } ),
+        Plant(mc('potato'),            { amount: 1, item: mc('potato') },           { amount: 1, item: mc('potato'), probability: 0.5 },           { amount: 1, item: mc('poisonous_potato'), probability: 0.02 } ),
+        Plant(fd('cabbage_seeds'),     { amount: 1, item: fd('cabbage') },          { amount: 1, item: fd('cabbage'), probability: 0.5 },          { amount: 1, item: fd('cabbage_seeds'), probability: 0.5 } ),
+        Plant(fd('tomato_seeds'),      { amount: 1, item: fd('tomato') },           { amount: 1, item: fd('rotten_tomato'), probability: 0.02 },   { amount: 1, item: fd('tomato_seeds'), probability: 0.5 } ),
+        Plant(fd('onion'),             { amount: 1, item: fd('onion') },            { amount: 1, item: fd('onion'), probability: 0.5 } ),
+        Plant(fd('rice'),              { amount: 1, item: fd('rice_panicle') },     { amount: 1, item: fd('rice_panicle'), probability: 0.5 },     { amount: 1, item: fd('rice'), probability: 0.5 } ),
+        Plant(mc('cactus'),            { amount: 2, item: mc('cactus') },           { amount: 1, item: mc('cactus'), probability: 0.5 } ),
+        Plant(mc('sugar_cane'),        { amount: 2, item: mc('sugar_cane') },       { amount: 1, item: mc('sugar_cane'), probability: 0.5 } ),
+        Plant(mc('cocoa_beans'),       { amount: 2, item: mc('cocoa_beans') },      { amount: 2, item: mc('cocoa_beans'), probability: 0.5 } ),
+        Plant(mc('kelp'),              { amount: 4, item: mc('kelp') },             { amount: 4, item: mc('kelp'), probability: 0.5 } ),
+        Plant(mc('bamboo'),            { amount: 4, item: mc('bamboo') },           { amount: 4, item: mc('bamboo'), probability: 0.5 } ),
+    ];
     const recipeInOut = [
         // -- WHEAT -- //
         [
@@ -73,7 +117,7 @@ ServerEvents.recipes((event) => {
             [
                 { amount: 1, item: su('flax') },
                 { amount: 1, item: su('flax'), probability: 0.5 },
-                { amount: 1, item: su('flax_seeds'), probability: 0.02 },
+                { amount: 1, item: su('flax_seeds'), probability: 0.5 },
             ],
         ],
 

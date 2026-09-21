@@ -656,7 +656,7 @@ let fusion = (event, id, eu, duration, fluid_inputs, fluid_outputs) => {
         .id(id);
 };
 
-// -- GREEN HOUSE -- //
+// -- GREENHOUSE -- //
 /**
  * Greenhouse
  * @param {!string} event
@@ -894,6 +894,8 @@ let packer = (event, id, eu, duration, item_inputs, item_outputs) => {
  * @param {?MIItem[]|MIItem} item_inputs - Array of item inputs
  * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  * @param {?MIFluid[]|MIFluid} fluid_inputs - Array of fluid inputs
+ * @param {?string} adjacent_block - Process condition - adjacent block ID
+ * @param {?string} adjacent_block_pos - Process condition - adjacent block position
  */
 let photoChamber = (
     event,
@@ -902,8 +904,20 @@ let photoChamber = (
     duration,
     item_inputs,
     item_outputs,
-    fluid_inputs
+    fluid_inputs,
+    adjacent_block,
+    adjacent_block_pos
 ) => {
+    let process_conditions;
+    if (adjacent_block && adjacent_block_pos) {
+        process_conditions = [
+            {
+                type: mi('adjacent_block'),
+                block: adjacent_block,
+                position: adjacent_block_pos,
+            },
+        ];
+    }
     event
         .custom(
             newMachineRecipe(
@@ -912,7 +926,9 @@ let photoChamber = (
                 duration,
                 item_inputs,
                 item_outputs,
-                fluid_inputs
+                fluid_inputs,
+                null,
+                process_conditions
             )
         )
         .id(id);
@@ -1047,7 +1063,14 @@ let singularityForge = (
  * @param {MIItem[]|MIItem} item_inputs - Array of item inputs
  * @param {MIItem[]|MIItem} item_outputs - Array of item outputs
  */
-let matter_fabricator = (event, id, eu, duration, item_inputs, item_outputs) => {
+let matter_fabricator = (
+    event,
+    id,
+    eu,
+    duration,
+    item_inputs,
+    item_outputs
+) => {
     event
         .custom(
             newMachineRecipe(
