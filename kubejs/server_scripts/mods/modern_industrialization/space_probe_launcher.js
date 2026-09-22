@@ -32,7 +32,7 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: kj('basic_space_probe'), probability: 0.1 }],
         [
             { amount: 1, item: mi('desh_ore'), probability: 0.25 },
-            { amount: 1, item: mi('moon_ice_ore'), probability: 0.02 },
+            { amount: 1, item: mi('moon_ice_ore'), probability: 0.075 },
             { amount: 1, item: mi('bauxite_ore'), probability: 0.2 },
             { amount: 1, item: mc('gold_ore'), probability: 0.25 },
         ],

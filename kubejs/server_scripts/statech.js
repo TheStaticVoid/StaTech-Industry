@@ -633,22 +633,6 @@ ServerEvents.tags('block', (event) => {
 
 // -- ITEM TAGGING -- //
 ServerEvents.tags('item', (event) => {
-    const ultimineDisabledTools = [
-        mc('stone_pickaxe'),
-        mc('stone_axe'),
-        mc('stone_shovel'),
-        mc('stone_sword'),
-        mc('stone_hoe'),
-        mc('wooden_pickaxe'),
-        mc('wooden_axe'),
-        mc('wooden_shovel'),
-        mc('wooden_sword'),
-        mc('wooden_hoe'),
-    ];
-    ultimineDisabledTools.forEach((tool) => {
-        event.add('ftbultimine:excluded_tools', `${tool}`);
-    });
-
     // -- MI PARTS TAGGING -- //
     const MATERIALS = [
         'copper',

@@ -31,6 +31,9 @@ TODO: yap about the changes.
 - Fixed Helium 3 quest rewards.
 - Removed wild crop recipes from the photosynthetic chamber.
 - **Added Spectrum recipes for the Photosynthetic Chamber.**
+- **Added more Spectrum recipes for the Greenhouse.**
+- Removed FTB Ultimine blacklist tags.
+- **Buffed Moon Ice Ore output from the Tier 1 Space Probe.**
 
 ## [2.0.1]
 
