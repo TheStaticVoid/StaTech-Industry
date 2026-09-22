@@ -4,12 +4,33 @@
 
 TODO: yap about the changes.
 
-- **Add more advancements for items throughout the pack**
-- Fixed some miscellaneous Spectrum quest issues
-- Removed the Advanced Peripherals villager house spawn
-- Fixed a typo in the Fireproof ring advancement description
-- **Added the Steam Chainsaw to the lumberaxe tag, allowing it to veinmine trees**
-- Fixed weird lighting issues when opening inventories
+- **Add more advancements for items throughout the pack.**
+- Fixed some miscellaneous Spectrum quest issues.
+- Removed the Advanced Peripherals villager house spawn.
+- Fixed a typo in the Fireproof ring advancement description.
+- **Added the Steam Chainsaw to the lumberaxe tag, allowing it to veinmine trees.**
+- Fixed weird lighting issues when opening inventories.
+- Disabled the Music & Melody album by default.
+- Updated Hose Pulley quest to note that lava is not infinite.
+- Downtiered Steam Chainsaw quest reward.
+- Updated ExtendedAE to fix Just Hammers outline glitch.
+- **Fixed instances where quest rewards allowed major progression skips in Create, Spectrum, and MI.**
+- Blacklisted some Spectrum structures from the Explorer's Compass.
+- Added monospace font resource pack for overhauled Prospector Pick GUI.
+- **Increased Permission Level for the Enchanter command quest rewards.**
+- **Fixed block lighting issues due to PaperDoll.**
+- Removed rocky dirt packer recipe exploit.
+- **Added and integrated Delightful Creators.**
+- **Made Charcoal Block energy equivalent to 9 charcoal (including packing).**
+- Removed duplicate molecular assembler recipe.
+- Added mixer recipe for chocolate.
+- Fixed Honeyed Apple quest.
+- **Added No Man's Land stones to copper drill quarry recipe.**
+- **Reworked Create quest rewards to add 4 tiers.**
+- **Refactored Photosynthetic Chamber script.**
+- Fixed Helium 3 quest rewards.
+- Removed wild crop recipes from the photosynthetic chamber.
+- **Added Spectrum recipes for the Photosynthetic Chamber.**
 
 ## [2.0.1]
 
