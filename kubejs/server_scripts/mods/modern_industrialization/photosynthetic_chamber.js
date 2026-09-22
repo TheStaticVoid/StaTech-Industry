@@ -126,6 +126,7 @@ ServerEvents.recipes((event) => {
             '#minecraft:leaves',
             'minecraft:chorus_flower',
             '#minecraft:saplings',
+            '#farmersdelight:wild_crops',
         ])
         .getStacks()
         .toArray();
