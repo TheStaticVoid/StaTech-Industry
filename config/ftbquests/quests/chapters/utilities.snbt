@@ -693,5 +693,47 @@
 			x: 0.5d
 			y: -6.0d
 		}
+		{
+			dependencies: ["74A64C3ED35AE436"]
+			id: "109834AF045ED9AF"
+			rewards: [{
+				id: "1848BDD2936C4020"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "5CA070E262179263"
+				item: { count: 1, id: "industrialization_overdrive:upgrade_stacker" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["26A89C51A7B9FFDE"]
+			icon: {
+				id: "toolbelt:belt"
+			}
+			id: "05F61BAA6E9AC949"
+			rewards: [{
+				id: "29EEEEAE108D4A57"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [
+				{
+					id: "413D3BAE169B51A9"
+					item: { count: 1, id: "toolbelt:belt" }
+					type: "item"
+				}
+				{
+					id: "6CBBCD7CC63C2391"
+					item: { count: 1, id: "toolbelt:pouch" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -6.0d
+		}
 	]
 }

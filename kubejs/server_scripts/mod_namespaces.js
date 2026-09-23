@@ -67,3 +67,4 @@ let cs = (id) => `constructionstick:${id}`;
 let rd = (id) => `rusticdelight:${id}`;
 let dc = (id) => `delightfulcreators:${id}`;
 let cuc = (id) => `culturalcreators:${id}`;
+let tb = (id) => `toolbelt:${id}`;

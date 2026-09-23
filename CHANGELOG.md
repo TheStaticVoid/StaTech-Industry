@@ -34,6 +34,11 @@ TODO: yap about the changes.
 - **Added more Spectrum recipes for the Greenhouse.**
 - Removed FTB Ultimine blacklist tags.
 - **Buffed Moon Ice Ore output from the Tier 1 Space Probe.**
+- Fixed Spectrum blackslag ore smelting + blasting recipe unification.
+- **Fixed the Phantom AI bug by removing Advanced Loot Info.**
+- **Migrated all loot injection and loot table modification from LootJS to datapacks.**
+- Fixed canvas recipe from flax.
+- **Integrated Tool Belt mod.**
 
 ## [2.0.1]
 

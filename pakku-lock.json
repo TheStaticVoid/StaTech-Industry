@@ -4,7 +4,7 @@
         "1.21.1"
     ],
     "loaders": {
-        "neoforge": "21.1.252"
+        "neoforge": "21.1.251"
     },
     "projects": [
         {
@@ -2271,42 +2271,6 @@
                     "required_dependencies": [],
                     "size": 65716,
                     "date_published": "2026-03-22T18:53:05.607Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "p4RWWWfjjDqytAK7",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "cosmetic-armor-reworked"
-            },
-            "name": {
-                "curseforge": "Cosmetic Armor Reworked"
-            },
-            "id": {
-                "curseforge": "237307"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/5610/814/cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
-                    "id": "5610814",
-                    "parent_id": "237307",
-                    "hashes": {
-                        "sha1": "5f1e699cd0888b857ec63f01adaeb3571848bfea",
-                        "md5": "881eb025d54ca01165c115a38a8d48c4"
-                    },
-                    "required_dependencies": [],
-                    "size": 92722,
-                    "date_published": "2024-08-09T10:07:57.437Z"
                 }
             ]
         },
@@ -9802,6 +9766,42 @@
                     "required_dependencies": [],
                     "size": 607012,
                     "date_published": "2026-08-29T11:07:37.900Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "4Sdv6ye4VEfOzOTm",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tool-belt"
+            },
+            "name": {
+                "curseforge": "Tool Belt"
+            },
+            "id": {
+                "curseforge": "260262"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "ToolBelt-1.21.1-2.2.10.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8309/722/ToolBelt-1.21.1-2.2.10.jar",
+                    "id": "8309722",
+                    "parent_id": "260262",
+                    "hashes": {
+                        "sha1": "96862e5d8df67d63b749fc15d18262f3736d1828",
+                        "md5": "5aff8812bc2962ec0679be6b0676d56d"
+                    },
+                    "required_dependencies": [],
+                    "size": 217020,
+                    "date_published": "2026-06-24T00:43:33.827Z"
                 }
             ]
         },
