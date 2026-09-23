@@ -1,0 +1,200 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 2.0,
+                                "max": 6.0
+                            },
+                            "add": false
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "moonlight:load_conditions",
+                            "fabric:load_conditions": [
+                                {
+                                    "condition": "supplementaries:flag",
+                                    "flag": "ash"
+                                }
+                            ],
+                            "neoforge:conditions": [
+                                {
+                                    "type": "supplementaries:flag",
+                                    "flag": "ash"
+                                }
+                            ]
+                        }
+                    ],
+                    "name": "supplementaries:ash"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 8.0,
+                                "max": 32.0
+                            },
+                            "add": false
+                        }
+                    ],
+                    "name": "minecraft:iron_nugget"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 8.0,
+                                "max": 32.0
+                            },
+                            "add": false
+                        }
+                    ],
+                    "name": "minecraft:gold_nugget"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 4.0
+                            },
+                            "add": false
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "moonlight:load_conditions",
+                            "fabric:load_conditions": [
+                                {
+                                    "condition": "supplementaries:flag",
+                                    "flag": "flax"
+                                }
+                            ],
+                            "neoforge:conditions": [
+                                {
+                                    "type": "supplementaries:flag",
+                                    "flag": "flax"
+                                }
+                            ]
+                        }
+                    ],
+                    "name": "supplementaries:flax_seeds"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 2.0,
+                                "max": 4.0
+                            },
+                            "add": false
+                        }
+                    ],
+                    "name": "minecraft:bone"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 3,
+                                "min": 1
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "modern_industrialization:raw_silver"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 3.0
+                            },
+                            "add": false
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "moonlight:load_conditions",
+                            "fabric:load_conditions": [
+                                {
+                                    "condition": "supplementaries:flag",
+                                    "flag": "antique_ink"
+                                }
+                            ],
+                            "neoforge:conditions": [
+                                {
+                                    "type": "supplementaries:flag",
+                                    "flag": "antique_ink"
+                                }
+                            ]
+                        }
+                    ],
+                    "name": "supplementaries:antique_ink"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:skeleton_skull"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:zombie_head"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 2.0,
+                                "max": 6.0
+                            },
+                            "add": false
+                        }
+                    ],
+                    "name": "minecraft:emerald"
+                }
+            ]
+        }
+    ]
+}

@@ -640,26 +640,3 @@ ServerEvents.tags('item', (event) => {
         event.add('c:hot_ingots', mi(`${id}_hot_ingot`));
     });
 });
-
-// -- ADD SILVER DROPS TO CAVE LOOT FOR CLEAN ENERGY RUN -- //
-
-LootJS.lootTables((event) => {
-    event
-        .getLootTable(nm('chests/ancient_pot_cave'))
-        .firstPool()
-        .addEntry(
-            LootEntry.of(mi('raw_silver')).withWeight(60).setCount([1, 3])
-        );
-    event
-        .getLootTable('supplementaries:loot/urn_loot/urn_loot')
-        .firstPool()
-        .addEntry(
-            LootEntry.of(mi('raw_silver')).withWeight(3).setCount([1, 3])
-        );
-    event
-        .getLootTable('supplementaries:loot/urn_loot/uncommon')
-        .firstPool()
-        .addEntry(
-            LootEntry.of(mi('raw_silver')).withWeight(1).setCount([1, 3])
-        );
-});

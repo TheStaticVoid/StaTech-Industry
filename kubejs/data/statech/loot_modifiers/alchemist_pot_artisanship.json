@@ -1,0 +1,14 @@
+{
+    "type": "neoforge:add_table",
+    "conditions": [
+        {
+            "condition": "neoforge:loot_table_id",
+            "loot_table_id": "nomansland:chests/alchemist_pot_artisanship"
+        },
+        {
+            "condition": "minecraft:random_chance",
+            "chance": 0.2
+        }
+    ],
+    "table": "artifacts:inject/chests/pillager_outpost"
+}

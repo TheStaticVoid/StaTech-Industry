@@ -244,83 +244,6 @@
             ]
         },
         {
-            "pakku_id": "mqseBe2paULK1h3w",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "advanced-core-info"
-            },
-            "name": {
-                "curseforge": "Advanced Core Info (ACI)"
-            },
-            "id": {
-                "curseforge": "1661923"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "AdvancedCoreInfo-neoforge-1.21.1-1.2.0.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8906/316/AdvancedCoreInfo-neoforge-1.21.1-1.2.0.jar",
-                    "id": "8906316",
-                    "parent_id": "1661923",
-                    "hashes": {
-                        "sha1": "4e3b71bb3a2d320cfe41966249abf4cbaca7531b",
-                        "md5": "f59b0a5831bc88ddb7ffc8532136317d"
-                    },
-                    "required_dependencies": [],
-                    "size": 105784,
-                    "date_published": "2026-09-17T19:52:49.567Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "hVC2WTaCeBYvqtZi",
-            "pakku_links": [
-                "mqseBe2paULK1h3w"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "advanced-loot-info"
-            },
-            "name": {
-                "curseforge": "Advanced Loot Info (ALI)"
-            },
-            "id": {
-                "curseforge": "1205426"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "AdvancedLootInfo-neoforge-1.21.1-2.2.0.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/8906/321/AdvancedLootInfo-neoforge-1.21.1-2.2.0.jar",
-                    "id": "8906321",
-                    "parent_id": "1205426",
-                    "hashes": {
-                        "sha1": "7ce3eec22d44e61086ef662a724ce094790cb7bd",
-                        "md5": "7019180c2b40746eaea5ec2c6391571f"
-                    },
-                    "required_dependencies": [
-                        "1661923"
-                    ],
-                    "size": 673724,
-                    "date_published": "2026-09-17T19:53:04.450Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "S1ke073VZh7RGSdx",
             "pakku_links": [
                 "IKoO24ODLZF0mXrM"
@@ -6602,44 +6525,6 @@
                     ],
                     "size": 4839,
                     "date_published": "2026-09-19T15:57:16.800Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "eYZ8VIlUT2x9g2uf",
-            "type": "MOD",
-            "slug": {
-                "curseforge": "lootjs"
-            },
-            "name": {
-                "curseforge": "LootJS: KubeJS Addon"
-            },
-            "id": {
-                "curseforge": "570630"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "lootjs-neoforge-1.21.1-3.7.0.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8009/262/lootjs-neoforge-1.21.1-3.7.0.jar",
-                    "id": "8009262",
-                    "parent_id": "570630",
-                    "hashes": {
-                        "sha1": "54ffddd1763ae4af84e9bbcb22e4081a1e7f3556",
-                        "md5": "21d3eda21b53344dd1f34759b4428634"
-                    },
-                    "required_dependencies": [
-                        "238086"
-                    ],
-                    "size": 247689,
-                    "date_published": "2026-04-29T10:52:53.330Z"
                 }
             ]
         },

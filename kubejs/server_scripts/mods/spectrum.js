@@ -229,7 +229,7 @@ ServerEvents.tags('item', (event) => {
         event.add('kubejs:sugar_sticks', id);
     });
 
-    event.add('c:foods/berry', sp('sawblade_holly_berry'))
+    event.add('c:foods/berry', sp('sawblade_holly_berry'));
 });
 
 ServerEvents.recipes((event) => {
@@ -244,6 +244,12 @@ ServerEvents.recipes((event) => {
         ar('eternal_steak_smoker'),
         ar('eternal_steak_campfire'),
         sp('fusion_shrine/vanilla/netherite_ingot'),
+        sp('smelting/blackslag_ores/copper'),
+        sp('smelting/blackslag_ores/iron'),
+        sp('smelting/blackslag_ores/gold'),
+        sp('blasting/blackslag_ores/copper'),
+        sp('blasting/blackslag_ores/iron'),
+        sp('blasting/blackslag_ores/gold'),
     ];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
