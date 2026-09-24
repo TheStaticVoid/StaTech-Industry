@@ -468,9 +468,6 @@ ServerEvents.recipes((event) => {
 });
 
 ServerEvents.tags('item', (event) => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
-    let mi = (id) => `modern_industrialization:${id}`;
-
     const LV_WIRE = [mi('copper_cable'), mi('tin_cable'), mi('silver_cable')];
     LV_WIRE.forEach((id) => {
         event.add('kubejs:lv_wire', id);
@@ -639,4 +636,11 @@ ServerEvents.tags('item', (event) => {
         event.add(`c:hot_ingots/${id}`, mi(`${id}_hot_ingot`));
         event.add('c:hot_ingots', mi(`${id}_hot_ingot`));
     });
+});
+
+ServerEvents.tags('block', (event) => {
+    event.add(
+        'modern_industrialization:transparent_pipe_camouflage',
+        /^industrially_plated:.*(grate).*/
+    );
 });
