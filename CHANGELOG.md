@@ -39,7 +39,7 @@ TODO: yap about the changes.
 - **Migrated all loot injection and loot table modification from LootJS to datapacks.**
 - Fixed canvas recipe from flax.
 - **Integrated Tool Belt mod.**
-- Added Grates from Industrially Plated to MI Pipe Camouflage block tag.
+- Added Grates from Industrially Plated, Factory Blocks, & Iden's Decor to MI Pipe Camouflage block tag.
 - Made Brass Alloy Smelter recipe consistent with other Alloy Smelter recipes.
 
 ## [2.0.1]

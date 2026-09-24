@@ -641,6 +641,6 @@ ServerEvents.tags('item', (event) => {
 ServerEvents.tags('block', (event) => {
     event.add(
         'modern_industrialization:transparent_pipe_camouflage',
-        /^industrially_plated:.*(grate).*/
+        /^.*(grate).*/
     );
 });
