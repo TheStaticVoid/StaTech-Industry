@@ -81,6 +81,7 @@ ItemEvents.modifyTooltips((event) => {
         mi('diborane'),
         mi('pentaborane'),
         mi('molten_gold'),
+        mi('supercritical_steam'),
     ];
 
     const CUSTOM_MACHINES_AND_ITEMS = [

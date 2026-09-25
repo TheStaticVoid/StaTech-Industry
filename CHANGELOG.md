@@ -41,6 +41,10 @@ TODO: yap about the changes.
 - **Integrated Tool Belt mod.**
 - Added Grates from Industrially Plated, Factory Blocks, & Iden's Decor to MI Pipe Camouflage block tag.
 - Made Brass Alloy Smelter recipe consistent with other Alloy Smelter recipes.
+- Made credit for textures used more visible.
+- Fixed EBF GuideME page.
+- Fixed some miscellaneous World of Food quest issues.
+- **Added Supercritical Steam as a way to make power from YAI Scorching + Gelid Liquid Airs. Uses the HP Loop.**
 
 ## [2.0.1]
 
