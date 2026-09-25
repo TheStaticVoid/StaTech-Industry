@@ -1,0 +1,6 @@
+#Allow (Applied Flux) energy exports, including terminal charging.
+allowEnergyExport = true
+#Item registry IDs that cards may not export, regardless of components.
+blockedItems = []
+#Fluid registry IDs that cards may not export, regardless of components.
+blockedFluids = []

@@ -468,9 +468,6 @@ ServerEvents.recipes((event) => {
 });
 
 ServerEvents.tags('item', (event) => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
-    let mi = (id) => `modern_industrialization:${id}`;
-
     const LV_WIRE = [mi('copper_cable'), mi('tin_cable'), mi('silver_cable')];
     LV_WIRE.forEach((id) => {
         event.add('kubejs:lv_wire', id);
@@ -633,27 +630,17 @@ ServerEvents.tags('item', (event) => {
         event.add(`kubejs:crushed_dusts/${id}`, mi(`${id}_crushed_dust`));
         event.add('kubejs:crushed_dusts', mi(`${id}_crushed_dust`));
     });
+
+    const HOT_INGOTS = ['beryllium', 'netherite'];
+    HOT_INGOTS.forEach((id) => {
+        event.add(`c:hot_ingots/${id}`, mi(`${id}_hot_ingot`));
+        event.add('c:hot_ingots', mi(`${id}_hot_ingot`));
+    });
 });
 
-// -- ADD SILVER DROPS TO CAVE LOOT FOR CLEAN ENERGY RUN -- //
-
-LootJS.lootTables((event) => {
-    event
-        .getLootTable(nm('chests/ancient_pot_cave'))
-        .firstPool()
-        .addEntry(
-            LootEntry.of(mi('raw_silver')).withWeight(60).setCount([1, 3])
-        );
-    event
-        .getLootTable('supplementaries:loot/urn_loot/urn_loot')
-        .firstPool()
-        .addEntry(
-            LootEntry.of(mi('raw_silver')).withWeight(3).setCount([1, 3])
-        );
-    event
-        .getLootTable('supplementaries:loot/urn_loot/uncommon')
-        .firstPool()
-        .addEntry(
-            LootEntry.of(mi('raw_silver')).withWeight(1).setCount([1, 3])
-        );
+ServerEvents.tags('block', (event) => {
+    event.add(
+        'modern_industrialization:transparent_pipe_camouflage',
+        /^.*(grate).*/
+    );
 });

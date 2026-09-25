@@ -54,6 +54,7 @@ ServerEvents.recipes((event) => {
         ca('mechanical_crafting/electric_motor'),
         ca('mechanical_crafting/tesla_coil'),
         ca('mechanical_crafting/alternator'),
+        ca('mechanical_crafting/electric_pump'),
         ca('crafting/festive_spool'),
         ca('liquid_burning/biofuel'),
         ca('liquid_burning/plantoil'),

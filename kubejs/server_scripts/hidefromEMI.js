@@ -99,7 +99,13 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
     const UNUSED_NML = [nm('pancake')];
     UNUSED_NML.forEach((id) => event.remove(id));
 
-    const UNUSED_FD = [fd('wheat_dough'), bc('pizza'), bc('pizza_slice'), rd('syrup')];
+    const UNUSED_FD = [
+        fd('wheat_dough'),
+        bc('pizza'),
+        bc('pizza_slice'),
+        rd('syrup'),
+        dc('mechanical_cutter'),
+    ];
     UNUSED_FD.forEach((id) => event.remove(id));
 
     const UNUSED_GAG = [gag('pigment_jar')];
@@ -124,6 +130,8 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         ca('gold_rod'),
         ca('rolling_mill'),
         ca('capacitor'),
+        ca('electric_pump'),
+        /^create_dragons_plus:.*/,
     ];
     UNUSED_CREATEADDITION.forEach((id) => event.remove(id));
 
@@ -251,6 +259,7 @@ RecipeViewerEvents.removeEntriesCompletely('fluid', (event) => {
         ca('seed_oil'),
         ca('bioethanol'),
         yai('nutrient_rich_water'),
+        /^create_dragons_plus:.*/,
         mi('dragons_blood'), // might want to do something with this in the future
         mi('impure_resonating_fluid'), // might want to do something with this in the future
     ];
@@ -267,7 +276,7 @@ RecipeViewerEvents.removeRecipes((event) => {
         yai('/arboreous_greenhouse/4/3'),
         yai('/arboreous_greenhouse/4/4'),
         ca('/rolling/'),
-        'statech:modern_industrialization/blast_furnace/short_range_lens'
+        'statech:modern_industrialization/blast_furnace/short_range_lens',
     ]);
 });
 
@@ -278,5 +287,6 @@ RecipeViewerEvents.removeCategories((event) => {
         'emi:grinding',
         'modern_industrialization:supercomputer',
         'modern_industrialization:telescope',
+        dc('mechanical_cutting'),
     ]);
 });

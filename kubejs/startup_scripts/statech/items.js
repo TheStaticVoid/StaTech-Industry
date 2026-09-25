@@ -926,6 +926,6 @@ StartupEvents.registry('item', (event) => {
 
 ItemEvents.modification((event) => {
     event.modify('kubejs:charcoal_block', (item) => {
-        item.burnTime = 14400;
+        item.burnTime = 14600;
     });
 });

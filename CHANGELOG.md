@@ -1,5 +1,51 @@
 # Changelog
 
+## [2.0.2]
+
+TODO: yap about the changes.
+
+- **Add more advancements for items throughout the pack.**
+- Fixed some miscellaneous Spectrum quest issues.
+- Removed the Advanced Peripherals villager house spawn.
+- Fixed a typo in the Fireproof ring advancement description.
+- **Added the Steam Chainsaw to the lumberaxe tag, allowing it to veinmine trees.**
+- Fixed weird lighting issues when opening inventories.
+- Disabled the Music & Melody album by default.
+- Updated Hose Pulley quest to note that lava is not infinite.
+- Downtiered Steam Chainsaw quest reward.
+- Updated ExtendedAE to fix Just Hammers outline glitch.
+- **Fixed instances where quest rewards allowed major progression skips in Create, Spectrum, and MI.**
+- Blacklisted some Spectrum structures from the Explorer's Compass.
+- Added monospace font resource pack for overhauled Prospector Pick GUI.
+- **Increased Permission Level for the Enchanter command quest rewards.**
+- **Fixed block lighting issues due to PaperDoll.**
+- Removed rocky dirt packer recipe exploit.
+- **Added and integrated Delightful Creators.**
+- **Made Charcoal Block energy equivalent to 9 charcoal (including packing).**
+- Removed duplicate molecular assembler recipe.
+- Added mixer recipe for chocolate.
+- Fixed Honeyed Apple quest.
+- **Added No Man's Land stones to copper drill quarry recipe.**
+- **Reworked Create quest rewards to add 4 tiers.**
+- **Refactored Photosynthetic Chamber script.**
+- Fixed Helium 3 quest rewards.
+- Removed wild crop recipes from the photosynthetic chamber.
+- **Added Spectrum recipes for the Photosynthetic Chamber.**
+- **Added more Spectrum recipes for the Greenhouse.**
+- Removed FTB Ultimine blacklist tags.
+- **Buffed Moon Ice Ore output from the Tier 1 Space Probe.**
+- Fixed Spectrum blackslag ore smelting + blasting recipe unification.
+- **Fixed the Phantom AI bug by removing Advanced Loot Info.**
+- **Migrated all loot injection and loot table modification from LootJS to datapacks.**
+- Fixed canvas recipe from flax.
+- **Integrated Tool Belt mod.**
+- Added Grates from Industrially Plated, Factory Blocks, & Iden's Decor to MI Pipe Camouflage block tag.
+- Made Brass Alloy Smelter recipe consistent with other Alloy Smelter recipes.
+- Made credit for textures used more visible.
+- Fixed EBF GuideME page.
+- Fixed some miscellaneous World of Food quest issues.
+- **Added Supercritical Steam as a way to make power from YAI Scorching + Gelid Liquid Airs. Uses the HP Loop.**
+
 ## [2.0.1]
 
 This is the first follow-up patch post release that we are looking to clean up a few issues and add some more improvements. This pack version includes an updated Spectrum version which fixes some issues players were having in the last version of the mod.

@@ -331,4 +331,14 @@ MIRegistrationEvents.registerFluids((event) => {
         false,
         'full'
     );
+
+    // -- SUPERCRITICAL STEAM -- //
+    event.register(
+        'Supercritical Steam',
+        'supercritical_steam',
+        0xf7e1dc,
+        'steam',
+        true,
+        'medium'
+    );
 });

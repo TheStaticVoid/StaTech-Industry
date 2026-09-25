@@ -1,0 +1,51 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 60,
+                    "quality": -5,
+                    "value": "supplementaries:loot/urn_loot/common"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 32,
+                    "quality": -2,
+                    "value": "supplementaries:loot/urn_loot/uncommon"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 7,
+                    "quality": 2,
+                    "value": "supplementaries:loot/urn_loot/rare"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 1,
+                    "quality": 5,
+                    "value": "supplementaries:loot/urn_loot/epic"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 3,
+                                "min": 1
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "modern_industrialization:raw_silver"
+                }
+            ]
+        }
+    ]
+}
