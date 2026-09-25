@@ -23,8 +23,6 @@ The Electric Blast Furnace is the electric version of the Steam Blast Furnace. I
 
 The EBF is made of one layer of Heatproof Machine Casings, two hollow layers of Cupronickel Coils and one other layer of Heatproof Machine Casings. The controller must go on the bottom layer, and hatches on the top or bottom layer.
 
-<Recipe id="modern_industrialization:materials/cupronickel/assembler/coil" />
-
 Don't forget to add Energy Input Hatch(es) or the EBF won't have energy! The LV Energy Input Hatch will only connect to LV cables.
 
 <Recipe id="modern_industrialization:hatches/basic/energy_input_hatch" />
