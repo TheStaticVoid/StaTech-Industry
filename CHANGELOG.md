@@ -2,7 +2,7 @@
 
 ## [2.0.2]
 
-TODO: yap about the changes.
+Largely a bugfix patch, but does bring a few new enhancements and additions! This pack version includes an updated Spectrum version which fixes more (different!) Spectrum issues!
 
 - **Add more advancements for items throughout the pack.**
 - Fixed some miscellaneous Spectrum quest issues.
@@ -45,6 +45,8 @@ TODO: yap about the changes.
 - Fixed EBF GuideME page.
 - Fixed some miscellaneous World of Food quest issues.
 - **Added Supercritical Steam as a way to make power from YAI Scorching + Gelid Liquid Airs. Uses the HP Loop.**
+- Added more oxidizing recipes for modded copper blocks.
+- Made TACZ workbench recipe accept MI hammers.
 
 ## [2.0.1]
 

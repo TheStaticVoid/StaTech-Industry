@@ -1,7 +1,7 @@
 
 # #----------------------------------------------------------------------
 # CSC config version. If this value is different from the current CSC version, the old config will be archived and a fresh config will be generated.
-ConfigVersion = "2.27.45"
+ConfigVersion = "2.27.47"
 
 # #----------------------------------------------------------------------
 #     Welcome to CSC! CSC (formerly Create:SchematicChecker | Create: Schematic Validator)
@@ -27,11 +27,16 @@ UUID = "2ad73377-0be6-4229-be46-da80238e2937"
     # The time if checker is timeout!
     DelayTime = 10
     # #----------------------------------------------------------------------
-    # Whether to enable mod id whitelist mode. Recommended to enable, as it can directly eliminate blueprint vulnerabilities caused by unfamiliar mods
-    WhiteListModEnable = false
-    # #----------------------------------------------------------------------
     # Whether to show the startup security notice for mod id whitelist mode
     ShowWhitelistModeNotice = false
+    # #----------------------------------------------------------------------
+    # Whether to remove entities. When set to true, entities inside the schematic will be cleared, except those listed in the whitelist.
+    # Enabling this feature can prevent all potential entity NBT duplication exploits, and also block armor stands from obtaining creative items.
+    # It is recommended to enable this feature!
+    KillEntity = true
+    # #----------------------------------------------------------------------
+    # Whether to enable mod id whitelist mode. Recommended to enable, as it can directly eliminate blueprint vulnerabilities caused by unfamiliar mods
+    WhiteListModEnable = false
     # #----------------------------------------------------------------------
     # Only mods listed here will be allowed to retain NBT. Enter the modid (e.g., for minecraft:dirt, enter minecraft)
     WhiteListModList = [
@@ -52,6 +57,7 @@ UUID = "2ad73377-0be6-4229-be46-da80238e2937"
     # #----------------------------------------------------------------------
     # The Block or Item you don't want to emerge in Schematic
     # Any block will clear if remove method failed!
+    # Block/entity ID lists support * in the path only. The namespace must match exactly. Example: create:*_valve_handle matches create:brass_valve_handle; * does not match across the colon.
     BanBlock = [
         "create:creative_crate",
         "create:creative_fluid_tank",
@@ -101,13 +107,9 @@ UUID = "2ad73377-0be6-4229-be46-da80238e2937"
         "minecraft:container",
         "minecraft:attribute_modifiers" ]
     # #----------------------------------------------------------------------
-    # Whether to remove entities. When set to true, entities inside the schematic will be cleared, except those listed in the whitelist.
-    # Enabling this feature can prevent all potential entity NBT duplication exploits, and also block armor stands from obtaining creative items.
-    # It is recommended to enable this feature!
-    KillEntity = true
-    # #----------------------------------------------------------------------
     # When the KillEntity feature is set to false, this feature will be enabled. Any entity listed here will be removed from the schematic.
     # However, entities in the whitelist cannot be removed, so do not use the same ID in both lists.
+    # Block/entity ID lists support * in the path only. The namespace must match exactly. Example: create:*_valve_handle matches create:brass_valve_handle; * does not match across the colon.
     BanEntity = [
         "minecraft:armor_stand",
         "create:crafting_blueprint" ]
@@ -115,6 +117,7 @@ UUID = "2ad73377-0be6-4229-be46-da80238e2937"
     # Entities in the whitelist. They must not conflict with the blacklist. Once added, these entities will be preserved when the KillEntity feature is enabled.
     # Note: Only the entities listed below will be validated by the algorithm. Other entities will retain their NBT data using default matching.
     # Matchable item: Super Glue.
+    # Block/entity ID lists support * in the path only. The namespace must match exactly. Example: create:*_valve_handle matches create:brass_valve_handle; * does not match across the colon.
     whitelistEntity = [
         "create:super_glue" ]
 

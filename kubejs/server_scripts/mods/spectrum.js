@@ -331,6 +331,72 @@ ServerEvents.recipes((event) => {
         sp('build_fusion_shrine')
     );
 
+    // -------------------------//
+    // ---- LIQUID DIPPING ---- //
+    // -------------------------//
+
+    const ITEMS_TO_OXIDIZE = [
+        cr('copper_tiles'),
+        cr('copper_tile_slab'),
+        cr('copper_tile_stairs'),
+        cr('copper_shingles'),
+        cr('copper_shingle_slab'),
+        cr('copper_shingle_stairs'),
+        sd('copper_tubing'),
+    ];
+
+    ITEMS_TO_OXIDIZE.forEach((recipe) => {
+        // -- EXPOSED -- //
+        dipping(
+            event,
+            'midnight_solution',
+            st(
+                `midnight_dipping/exposed_${recipe.split(':')[1]}_from_${recipe.split(':')[1]}`
+            ),
+            [{ item: recipe }],
+            {
+                id: `${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
+                count: 1,
+            }
+        );
+
+        // -- WEATHERED -- //
+        dipping(
+            event,
+            'midnight_solution',
+            st(
+                `midnight_dipping/weathered_${recipe.split(':')[1]}_from_exposed_${recipe.split(':')[1]}`
+            ),
+            [
+                {
+                    item: `${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
+                },
+            ],
+            {
+                id: `${recipe.split(':')[0]}:weathered_${recipe.split(':')[1]}`,
+                count: 1,
+            }
+        );
+
+        // -- OXIDIZED -- //
+        dipping(
+            event,
+            'midnight_solution',
+            st(
+                `midnight_dipping/oxidized_${recipe.split(':')[1]}_from_weathered_${recipe.split(':')[1]}`
+            ),
+            [
+                {
+                    item: `${recipe.split(':')[0]}:weathered_${recipe.split(':')[1]}`,
+                },
+            ],
+            {
+                id: `${recipe.split(':')[0]}:oxidized_${recipe.split(':')[1]}`,
+                count: 1,
+            }
+        );
+    });
+
     // -------------------//
     // ---- PEDESTAL ---- //
     // -------------------//

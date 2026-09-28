@@ -172,7 +172,7 @@ let fusion_shrine = (
  * @param {?Map<string!, number!>} colors - Map with required amount of Gemstone Powders, {'spectrum:white': 1}
  * @param {!number} xp - XP output
  * @param {!string[]} pattern - Shaped crafting pattern
- * @param {{item: Special.Item}[]} item_inputs - Array of craftting pattern keys {A: 'minecraft:dirt', B: 'minecraft:cobblestone'}
+ * @param {{item: Special.Item}[]} item_inputs - Array of crafting pattern keys {A: 'minecraft:dirt', B: 'minecraft:cobblestone'}
  * @param {!SPItems} item_outputs - Output ItemStack {item: 'spectrum:onyx_shard', count: 2, chance: 0.5}
  * @param {?string} advancement - advancement prerequisite ID
  * @param {?string} group - Recipe group ID
@@ -211,5 +211,41 @@ let pedestal = (
     if (secret) newRecipe.secret = secret;
     if (skip_remainders) newRecipe.skip_recipe_remainders = skip_remainders;
     if (disable_boosts) newRecipe.disable_yield_upgrades = disable_boosts;
+    event.custom(newRecipe).id(id);
+};
+
+// -- SPECTRUM LIQUID DIPPING -- //
+/**
+ * Liquid Dipping
+ * @param {*} event
+ * @param {!string} type - Non-namespaced identifier of the fluid used in the recipe (ie: 'liquid_crystal')
+ * @param {!string} id - Recipe ID
+ * @param {!ShapelessInput} item_inputs - An array of {item: id} or {tag: id}
+ * @param {!SPItems} item_outputs - Output ItemStack {item: 'spectrum:onyx_shard', count: 2, chance: 0.5}
+ * @param {?string} advancement - advancement prerequisite ID
+ * @param {?string} group - Recipe group ID
+ * @param {?boolean} secret - hide recipe from recipe viewers
+ * @param {?SPItems} additional_results - Items that will be considered an "output" of the recipe for recipe viewers when pressing "R". Has no gameplay relevance, but is a nice QoL thing for your players, if your recipe does something funky.
+ */
+let dipping = (
+    event,
+    type,
+    id,
+    item_inputs,
+    item_outputs,
+    advancement,
+    group,
+    secret,
+    additional_results
+) => {
+    let newRecipe = {
+        type: sp(`${type}_converting`),
+    };
+    if (item_inputs) newRecipe['ingredient'] = item_inputs;
+    if (item_outputs) newRecipe['result'] = item_outputs;
+    if (advancement) newRecipe.advancement = advancement;
+    if (group) newRecipe.group = group;
+    if (secret) newRecipe.secret = secret;
+    if (additional_results) newRecipe.additional_results = additional_results;
     event.custom(newRecipe).id(id);
 };

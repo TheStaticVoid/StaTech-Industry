@@ -407,4 +407,86 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: kj('silicon_extremely_p_doped_plate') }],
         [{ amount: 50, fluid: mi('diborane') }]
     );
+
+    // -------------------------//
+    // --- COPPER OXIDIZING --- //
+    // -------------------------//
+
+    const ITEMS_TO_OXIDIZE = [
+        cr('copper_tiles'),
+        cr('copper_tile_slab'),
+        cr('copper_tile_stairs'),
+        cr('copper_shingles'),
+        cr('copper_shingle_slab'),
+        cr('copper_shingle_stairs'),
+        sd('copper_tubing'),
+        mc('copper_bulb'),
+        mc('copper_door'),
+        mc('copper_trapdoor'),
+        mc('chiseled_copper'),
+    ];
+
+    ITEMS_TO_OXIDIZE.forEach((recipe) => {
+        // -- EXPOSED -- //
+        chemicalReactor(
+            event,
+            st(`exposed_${recipe.split(':')[1]}_from_${recipe.split(':')[1]}`),
+            8,
+            100,
+            [{ item: recipe, amount: 1 }],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [{ amount: 100, fluid: mi('oxygen') }]
+        );
+
+        // -- WEATHERED -- //
+        chemicalReactor(
+            event,
+            st(
+                `weathered_${recipe.split(':')[1]}_from_exposed_${recipe.split(':')[1]}`
+            ),
+            8,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:weathered_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [{ amount: 100, fluid: mi('oxygen') }]
+        );
+
+        // -- OXIDIZED -- //
+        chemicalReactor(
+            event,
+            st(
+                `oxidized_${recipe.split(':')[1]}_from_weathered_${recipe.split(':')[1]}`
+            ),
+            8,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:weathered_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:oxidized_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [{ amount: 100, fluid: mi('oxygen') }]
+        );
+    });
 });
