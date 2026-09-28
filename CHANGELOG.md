@@ -47,6 +47,10 @@ Largely a bugfix patch, but does bring a few new enhancements and additions! Thi
 - **Added Supercritical Steam as a way to make power from YAI Scorching + Gelid Liquid Airs. Uses the HP Loop.**
 - Added more oxidizing recipes for modded copper blocks.
 - Made TACZ workbench recipe accept MI hammers.
+- Fixed instances where quest text color did not have sufficient contrast for improved accessibility.
+- **Downgraded and pinned KubeJS to 2101.7.2-build.374 to resolve asset loading bugs.**
+- Darkened subtext in the 'Select World' screen so the information is legible.
+- **Overhauled assorted recipe helpers on the backend.**
 
 ## [2.0.1]
 
