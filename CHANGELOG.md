@@ -51,6 +51,7 @@ Largely a bugfix patch, but does bring a few new enhancements and additions! Thi
 - **Downgraded and pinned KubeJS to 2101.7.2-build.374 to resolve asset loading bugs.**
 - Darkened subtext in the 'Select World' screen so the information is legible.
 - **Overhauled assorted recipe helpers on the backend.**
+- **Hid JEI tag screens in EMI.**
 
 ## [2.0.1]
 
