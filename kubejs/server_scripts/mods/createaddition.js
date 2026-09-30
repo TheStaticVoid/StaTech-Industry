@@ -92,7 +92,7 @@ ServerEvents.recipes((event) => {
                 count: 1,
             },
         })
-        .id('electric_motor');
+        .id(st('electric_motor'));
 
     // -- ALTERNATOR -- //
     event
@@ -112,7 +112,7 @@ ServerEvents.recipes((event) => {
                 count: 1,
             },
         })
-        .id('alternator');
+        .id(st('alternator'));
 
     // -- TESLA COIL -- //
     event
@@ -135,7 +135,7 @@ ServerEvents.recipes((event) => {
                 count: 1,
             },
         })
-        .id('tesla_coil');
+        .id(st('tesla_coil'));
 
     // -- BOOSTED DIESEL LIQUID BURNING -- //
     liquidBurning(event, st('boosted_diesel_liquid_burning'), 30000, [
