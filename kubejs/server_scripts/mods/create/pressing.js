@@ -11,20 +11,9 @@ ServerEvents.recipes((event) => {
     const REMOVED_RECIPES = [cr('pressing/sugar_cane')];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let pressing = (id, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: cr('pressing'),
-        };
-
-        if (item_inputs) newRecipe['ingredients'] = item_inputs;
-        if (item_outputs) newRecipe['results'] = item_outputs;
-
-        event.custom(newRecipe).id(id);
-    };
-
     // -- BRONZE PLATE -- //
     pressing(
+        event,
         st('bronze_plate'),
         [{ tag: 'c:ingots/bronze' }],
         [{ id: mi('bronze_plate'), count: 1 }]
@@ -32,6 +21,7 @@ ServerEvents.recipes((event) => {
 
     // -- SILVER PLATE -- //
     pressing(
+        event,
         st('silver_plate'),
         [{ tag: 'c:ingots/silver' }],
         [{ id: mi('silver_plate'), count: 1 }]
@@ -39,6 +29,7 @@ ServerEvents.recipes((event) => {
 
     // -- STEEL PLATE -- //
     pressing(
+        event,
         st('steel_plate'),
         [{ tag: 'c:ingots/steel' }],
         [{ id: mi('steel_plate'), count: 1 }]
@@ -46,6 +37,7 @@ ServerEvents.recipes((event) => {
 
     // -- TIN PLATE -- //
     pressing(
+        event,
         st('tin_plate'),
         [{ tag: 'c:ingots/tin' }],
         [{ id: mi('tin_plate'), count: 1 }]

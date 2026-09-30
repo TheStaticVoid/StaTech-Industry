@@ -138,68 +138,40 @@ ServerEvents.recipes((event) => {
         .id('tesla_coil');
 
     // -- BOOSTED DIESEL LIQUID BURNING -- //
-    event
-        .custom({
-            type: ca('liquid_burning'),
-            burn_time: 30000,
-            ingredients: [
-                {
-                    type: 'neoforge:tag',
-                    amount: 1000,
-                    tag: 'c:boosted_diesel',
-                },
-            ],
-            results: [],
-            superheated: true,
-        })
-        .id('boosted_diesel_liquid_burning');
+    liquidBurning(event, st('boosted_diesel_liquid_burning'), 30000, [
+        {
+            type: 'neoforge:tag',
+            amount: 1000,
+            tag: 'c:boosted_diesel',
+        },
+        true,
+    ]);
 
     // -- PENTABORANE LIQUID BURNING -- //
-    event
-        .custom({
-            type: ca('liquid_burning'),
-            burn_time: 60000,
-            ingredients: [
-                {
-                    type: 'neoforge:tag',
-                    amount: 1000,
-                    tag: 'kubejs:pentaborane',
-                },
-            ],
-            results: [],
-            superheated: true,
-        })
-        .id('pentaborane_liquid_burning');
+    liquidBurning(event, st('pentaborane_liquid_burning'), 60000, [
+        {
+            type: 'neoforge:tag',
+            amount: 1000,
+            tag: 'kubejs:pentaborane',
+        },
+        true,
+    ]);
 
     // -- LAVA LIQUID BURNING -- //
-    event
-        .custom({
-            type: ca('liquid_burning'),
-            burn_time: 3600,
-            ingredients: [
-                {
-                    type: 'neoforge:tag',
-                    amount: 1000,
-                    tag: 'minecraft:lava',
-                },
-            ],
-            results: [],
-        })
-        .id('lava_liquid_burning');
+    liquidBurning(event, st('lava_liquid_burning'), 3600, [
+        {
+            type: 'neoforge:tag',
+            amount: 1000,
+            tag: 'minecraft:lava',
+        },
+    ]);
 
     // -- BENZENE LIQUID BURNING -- //
-    event
-        .custom({
-            type: ca('liquid_burning'),
-            burn_time: 8000,
-            ingredients: [
-                {
-                    type: 'neoforge:tag',
-                    amount: 1000,
-                    tag: 'c:benzene',
-                },
-            ],
-            results: [],
-        })
-        .id('benzene_liquid_burning');
+    liquidBurning(event, st('benzene_liquid_burning'), 8000, [
+        {
+            type: 'neoforge:tag',
+            amount: 1000,
+            tag: 'c:benzene',
+        },
+    ]);
 });
