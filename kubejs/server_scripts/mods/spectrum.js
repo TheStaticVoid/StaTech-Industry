@@ -7,10 +7,6 @@ ServerEvents.tags('item', (event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let sp = (id) => `spectrum:${id}`;
 
-    event.add('c:tools/pickaxes', sp('bedrock_pickaxe'));
-    event.add('c:tools/axes', sp('bedrock_axe'));
-    event.add('c:tools/shovels', sp('bedrock_shovel'));
-
     const POLISHED_GEMSTONE = [
         sp('polished_topaz'),
         sp('polished_amethyst'),

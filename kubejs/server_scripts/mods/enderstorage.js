@@ -15,35 +15,54 @@ ServerEvents.recipes((event) => {
     ];
     ENDERSTORAGE_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
+    // --------------------//
+    // ---- ASSEMBLER ---- //
+    // --------------------//
+
     // -- ENDER CHEST -- //
-    event
-        .shaped(es('ender_chest'), ['BWB', 'OCO', 'BEB'], {
-            B: mc('blaze_rod'),
-            W: '#c:wools/white',
-            O: mc('obsidian'),
-            C: mi('configurable_chest'),
-            E: mc('ender_eye'),
-        })
-        .id(st('ender_chest'));
+    assembler(
+        event,
+        st('ender_chest'),
+        8,
+        200,
+        [
+            { amount: 1, item: mi('configurable_chest') },
+            { amount: 1, item: mc('ender_eye') },
+            { amount: 1, tag: 'c:wools/white' },
+            { amount: 2, item: mc('obsidian') },
+        ],
+        [{ amount: 1, item: es('ender_chest') }],
+        [{ amount: 500, fluid: ei('blazing_essence') }]
+    );
 
     // -- ENDER TANK -- //
-    event
-        .shaped(es('ender_tank'), ['BWB', 'OTO', 'BEB'], {
-            B: mc('blaze_rod'),
-            W: '#c:wools/white',
-            O: mc('obsidian'),
-            T: mi('configurable_tank'),
-            E: mc('ender_eye'),
-        })
-        .id(st('ender_tank'));
+    assembler(
+        event,
+        st('ender_tank'),
+        8,
+        200,
+        [
+            { amount: 1, item: mi('configurable_tank') },
+            { amount: 1, item: mc('ender_eye') },
+            { amount: 1, tag: 'c:wools/white' },
+            { amount: 2, item: mc('obsidian') },
+        ],
+        [{ amount: 1, item: es('ender_tank') }],
+        [{ amount: 500, fluid: ei('blazing_essence') }]
+    );
 
     // -- ENDER POUCH -- //
-    event
-        .shaped(es('ender_pouch'), ['BLB', 'LEL', 'BCB'], {
-            B: mc('blaze_powder'),
-            L: mc('leather'),
-            E: mc('ender_eye'),
-            C: es('ender_chest'),
-        })
-        .id(st('ender_pouch'));
+    assembler(
+        event,
+        st('ender_pouch'),
+        8,
+        200,
+        [
+            { amount: 1, item: es('ender_chest') },
+            { amount: 1, item: mc('ender_eye') },
+            { amount: 3, item: mc('leather') },
+        ],
+        [{ amount: 1, item: es('ender_pouch') }],
+        [{ amount: 125, fluid: ei('blazing_essence') }]
+    );
 });

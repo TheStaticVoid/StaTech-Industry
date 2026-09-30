@@ -424,6 +424,7 @@ ServerEvents.recipes((event) => {
         mc('copper_door'),
         mc('copper_trapdoor'),
         mc('chiseled_copper'),
+        mc('copper_grate'),
     ];
 
     ITEMS_TO_OXIDIZE.forEach((recipe) => {
@@ -487,6 +488,168 @@ ServerEvents.recipes((event) => {
                 },
             ],
             [{ amount: 100, fluid: mi('oxygen') }]
+        );
+
+        // -- WAXED EXPOSED -- //
+        chemicalReactor(
+            event,
+            st(
+                `waxed_exposed_${recipe.split(':')[1]}_from_waxed_${recipe.split(':')[1]}`
+            ),
+            8,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_exposed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [{ amount: 100, fluid: mi('oxygen') }]
+        );
+
+        // -- WAXED WEATHERED -- //
+        chemicalReactor(
+            event,
+            st(
+                `waxed_weathered_${recipe.split(':')[1]}_from_waxed_exposed_${recipe.split(':')[1]}`
+            ),
+            8,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_exposed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_weathered_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [{ amount: 100, fluid: mi('oxygen') }]
+        );
+
+        // -- WAXED OXIDIZED -- //
+        chemicalReactor(
+            event,
+            st(
+                `waxed_oxidized_${recipe.split(':')[1]}_from_waxed_weathered_${recipe.split(':')[1]}`
+            ),
+            8,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_weathered_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_oxidized_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [{ amount: 100, fluid: mi('oxygen') }]
+        );
+    });
+
+    // ----------------------//
+    // --- COPPER WAXING --- //
+    // ----------------------//
+
+    ITEMS_TO_OXIDIZE.forEach((recipe) => {
+        // -- WAXED -- //
+        chemicalReactor(
+            event,
+            st(`waxed_${recipe.split(':')[1]}_from_${recipe.split(':')[1]}`),
+            8,
+            100,
+            [
+                { item: recipe, amount: 1 },
+                { amount: 1, item: mi('wax') },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ]
+        );
+
+        // -- EXPOSED -- //
+        chemicalReactor(
+            event,
+            st(
+                `waxed_exposed_${recipe.split(':')[1]}_from_exposed_${recipe.split(':')[1]}`
+            ),
+            8,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+                { amount: 1, item: mi('wax') },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_exposed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ]
+        );
+
+        // -- WEATHERED -- //
+        chemicalReactor(
+            event,
+            st(
+                `waxed_weathered_${recipe.split(':')[1]}_from_weathered_${recipe.split(':')[1]}`
+            ),
+            8,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:weathered_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+                { amount: 1, item: mi('wax') },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_weathered_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ]
+        );
+
+        // -- OXIDIZED -- //
+        chemicalReactor(
+            event,
+            st(
+                `waxed_oxidized_${recipe.split(':')[1]}_from_oxidized_${recipe.split(':')[1]}`
+            ),
+            8,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:oxidized_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+                { amount: 1, item: mi('wax') },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_oxidized_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ]
         );
     });
 });

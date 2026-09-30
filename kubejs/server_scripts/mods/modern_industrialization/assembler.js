@@ -580,6 +580,20 @@ ServerEvents.recipes((event) => {
         [{ amount: 500, fluid: mi('synthetic_rubber') }]
     );
 
+    // -- BETTER COVERED CABLE SBR -- //
+    assembler(
+        event,
+        st('covered_cable_sbr'),
+        8,
+        200,
+        [
+            { amount: 4, item: ae('fluix_glass_cable') },
+            { amount: 1, tag: 'c:wools' },
+        ],
+        [{ amount: 4, item: ae('fluix_covered_cable') }],
+        [{ amount: 100, fluid: mi('styrene_butadiene_rubber') }]
+    );
+
     // -- END CRYSTAL -- //
     assembler(
         event,
