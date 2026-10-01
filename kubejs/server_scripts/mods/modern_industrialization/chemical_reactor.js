@@ -425,6 +425,7 @@ ServerEvents.recipes((event) => {
         mc('copper_trapdoor'),
         mc('chiseled_copper'),
         mc('copper_grate'),
+        ap('copper_nub'),
     ];
 
     ITEMS_TO_OXIDIZE.forEach((recipe) => {

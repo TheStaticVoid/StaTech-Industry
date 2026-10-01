@@ -4,9 +4,6 @@
 // -----------------------------------------
 
 ServerEvents.tags('item', (event) => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
-    let sp = (id) => `spectrum:${id}`;
-
     const POLISHED_GEMSTONE = [
         sp('polished_topaz'),
         sp('polished_amethyst'),
@@ -231,7 +228,6 @@ ServerEvents.tags('item', (event) => {
 ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:spectrum/${id}`;
-    let sp = (id) => `spectrum:${id}`;
 
     // -- SPECTRUM REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -339,6 +335,7 @@ ServerEvents.recipes((event) => {
         cr('copper_shingle_slab'),
         cr('copper_shingle_stairs'),
         sd('copper_tubing'),
+        ap('copper_nub'),
     ];
 
     ITEMS_TO_OXIDIZE.forEach((recipe) => {
@@ -506,8 +503,14 @@ ServerEvents.recipes((event) => {
 
 // Block tagging provided by kevintok
 ServerEvents.tags('block', (event) => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
-    let sp = (id) => `spectrum:${id}`;
+    event.remove(
+        'minecraft:mineable/axe',
+        /^spectral_decorations:.*(copper_tubing).*/
+    );
 
+    event.add(
+        'minecraft:mineable/pickaxe',
+        /^spectral_decorations:.*(copper_tubing).*/
+    );
     event.add('c:lapis_ores', sp('blackslag_lapis_ore'));
 });

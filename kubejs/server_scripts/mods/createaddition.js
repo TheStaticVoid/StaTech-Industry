@@ -63,6 +63,10 @@ ServerEvents.recipes((event) => {
     ];
     CREATEADDITION_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
 
+    // ----------------- //
+    // --- SHAPELESS --- //
+    // ----------------- //
+
     // -- FESTIVE SPOOL -- //
     event
         .shapeless(Item.of(ca('festive_spool')), [
@@ -72,90 +76,130 @@ ServerEvents.recipes((event) => {
         ])
         .id(st('festive_spool'));
 
+    // ------------------ //
+    // ---- CHARGING ---- //
+    // ------------------ //
+
+    const OX_PHASES = ['', 'exposed_', 'weathered_', 'oxidized_'];
+
+    for (let i = OX_PHASES.length - 1; i > 0; i--) {
+        charging(
+            event,
+            st(
+                `${OX_PHASES[i - 1]}copper_tubing_from_${OX_PHASES[i]}copper_tubing`
+            ),
+            4000,
+            200,
+            [{ item: sd(`${OX_PHASES[i]}copper_tubing`) }],
+            [{ id: sd(`${OX_PHASES[i - 1]}copper_tubing`) }]
+        );
+
+        charging(
+            event,
+            st(`${OX_PHASES[i - 1]}copper_nub_from_${OX_PHASES[i]}copper_nub`),
+            4000,
+            200,
+            [{ item: ap(`${OX_PHASES[i]}copper_nub`) }],
+            [{ id: ap(`${OX_PHASES[i - 1]}copper_nub`) }]
+        );
+    }
+
+    // ------------------------- //
+    // -- MECHANICAL CRAFTING -- //
+    // ------------------------- //
+
     // -- ELECTRIC MOTOR -- //
-    event
-        .custom({
-            type: cr('mechanical_crafting'),
-            accept_mirrored: true,
-            category: 'misc',
-            pattern: ['  A  ', ' BSB ', 'BSRSB', 'WBCBW'],
-            key: {
-                A: { item: cr('andesite_alloy') },
-                B: { tag: 'c:plates/brass' },
-                C: { item: mi('capacitor') },
-                R: { item: mi('steel_rod_magnetic') },
-                S: { item: ca('copper_spool') },
-                W: { item: mi('copper_cable') },
-            },
-            result: {
-                id: ca('electric_motor'),
-                count: 1,
-            },
-        })
-        .id(st('electric_motor'));
+    mechanicalCrafting(
+        event,
+        st('electric_motor'),
+        true,
+        ['  A  ', ' BSB ', 'BSRSB', 'WBCBW'],
+        {
+            A: { item: cr('andesite_alloy') },
+            B: { tag: 'c:plates/brass' },
+            C: { item: mi('capacitor') },
+            R: { item: mi('steel_rod_magnetic') },
+            S: { item: ca('copper_spool') },
+            W: { item: mi('copper_cable') },
+        },
+        {
+            id: ca('electric_motor'),
+            count: 1,
+        }
+    );
 
     // -- ALTERNATOR -- //
-    event
-        .custom({
-            type: cr('mechanical_crafting'),
-            accept_mirrored: true,
-            category: 'misc',
-            pattern: ['  A  ', ' ISI ', 'ISRSI', ' ISI ', '  A  '],
-            key: {
-                A: { item: cr('andesite_alloy') },
-                I: { tag: 'c:plates/iron' },
-                R: { item: mi('steel_rod_magnetic') },
-                S: { item: ca('copper_spool') },
-            },
-            result: {
-                id: ca('alternator'),
-                count: 1,
-            },
-        })
-        .id(st('alternator'));
+    mechanicalCrafting(
+        event,
+        st('alternator'),
+        true,
+        ['  A  ', ' ISI ', 'ISRSI', ' ISI ', '  A  '],
+        {
+            A: { item: cr('andesite_alloy') },
+            I: { tag: 'c:plates/iron' },
+            R: { item: mi('steel_rod_magnetic') },
+            S: { item: ca('copper_spool') },
+        },
+        {
+            id: ca('alternator'),
+            count: 1,
+        }
+    );
 
     // -- TESLA COIL -- //
-    event
-        .custom({
-            type: cr('mechanical_crafting'),
-            accept_mirrored: true,
-            category: 'misc',
-            pattern: ['SSS', 'MAM', 'CBC', 'PEP'],
-            key: {
-                A: { item: cr('andesite_alloy') },
-                B: { item: cr('brass_casing') },
-                C: { item: mi('capacitor') },
-                E: { item: cr('electron_tube') },
-                S: { item: ca('copper_spool') },
-                P: { tag: 'c:plates/brass' },
-                M: { item: mi('steel_rod_magnetic') },
-            },
-            result: {
-                id: ca('tesla_coil'),
-                count: 1,
-            },
-        })
-        .id(st('tesla_coil'));
+    mechanicalCrafting(
+        event,
+        st('tesla_coil'),
+        true,
+        ['SSS', 'MAM', 'CBC', 'PEP'],
+        {
+            A: { item: cr('andesite_alloy') },
+            B: { item: cr('brass_casing') },
+            C: { item: mi('capacitor') },
+            E: { item: cr('electron_tube') },
+            S: { item: ca('copper_spool') },
+            P: { tag: 'c:plates/brass' },
+            M: { item: mi('steel_rod_magnetic') },
+        },
+        {
+            id: ca('tesla_coil'),
+            count: 1,
+        }
+    );
+
+    // ---------------------- //
+    // --- LIQUID BURNING --- //
+    // ---------------------- //
 
     // -- BOOSTED DIESEL LIQUID BURNING -- //
-    liquidBurning(event, st('boosted_diesel_liquid_burning'), 30000, [
-        {
-            type: 'neoforge:tag',
-            amount: 1000,
-            tag: 'c:boosted_diesel',
-        },
-        true,
-    ]);
+    liquidBurning(
+        event,
+        st('boosted_diesel_liquid_burning'),
+        30000,
+        [
+            {
+                type: 'neoforge:tag',
+                amount: 1000,
+                tag: 'c:boosted_diesel',
+            },
+        ],
+        true
+    );
 
     // -- PENTABORANE LIQUID BURNING -- //
-    liquidBurning(event, st('pentaborane_liquid_burning'), 60000, [
-        {
-            type: 'neoforge:tag',
-            amount: 1000,
-            tag: 'kubejs:pentaborane',
-        },
-        true,
-    ]);
+    liquidBurning(
+        event,
+        st('pentaborane_liquid_burning'),
+        60000,
+        [
+            {
+                type: 'neoforge:tag',
+                amount: 1000,
+                tag: 'kubejs:pentaborane',
+            },
+        ],
+        true
+    );
 
     // -- LAVA LIQUID BURNING -- //
     liquidBurning(event, st('lava_liquid_burning'), 3600, [

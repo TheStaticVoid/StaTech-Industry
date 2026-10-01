@@ -50,6 +50,57 @@ let crushing = (event, id, duration, item_inputs, item_outputs) => {
     event.custom(newRecipe).id(id);
 };
 
+// -- CREATE DEPLOYING -- //
+/**
+ * Deploying
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!boolean} keep_item - Whether or not the item being deployed is consumed in the recipe
+ * @param {!ShapelessInput[]} item_inputs - An array of {item: id} or {tag: id}. First instance is the item being deployed on, second instance is the item being deployed
+ * @param {!ShapelessInput} item_outputs - An instance of {item: id}, {type: 'neoforge:single', amount: X, fluid: id}, or {tag: id}
+ */
+let deploying = (event, id, keep_item, item_inputs, item_outputs) => {
+    let newRecipe = {
+        type: cr('deploying'),
+        keep_held_item: keep_item,
+    };
+
+    if (item_inputs) newRecipe['ingredients'] = item_inputs;
+    if (item_outputs) newRecipe['results'] = item_outputs;
+
+    event.custom(newRecipe).id(id);
+};
+
+// -- CREATE MECHANICAL CRAFTING -- //
+/**
+ * Mechanical Crafting
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!boolean} allow_mirroring - Whether or not mirrored recipes are allowed
+ * @param {!string[]} pattern - Shaped crafting pattern
+ * @param {!{item|tag: Special.Item}[]} item_inputs - Array of crafting pattern keys {A: {item: 'minecraft:dirt'}, B: {tag: 'c:cobblestones'}}
+ * @param {!CRItem} item_outputs - Output ItemStack {item: 'spectrum:onyx_shard', count: 2, chance: 0.5}
+ */
+let mechanicalCrafting = (
+    event,
+    id,
+    allow_mirroring,
+    pattern,
+    item_inputs,
+    item_outputs
+) => {
+    let newRecipe = {
+        type: cr('mechanical_crafting'),
+        accept_mirrored: allow_mirroring,
+        category: 'misc',
+    };
+    if (item_inputs) newRecipe['key'] = item_inputs;
+    if (pattern) newRecipe['pattern'] = pattern;
+    if (item_outputs) newRecipe['result'] = item_outputs;
+
+    event.custom(newRecipe).id(id);
+};
+
 // -- CREATE MIXING -- //
 /**
  * Mixing
@@ -100,27 +151,6 @@ let pressing = (event, id, item_inputs, item_outputs) => {
 let splashing = (event, id, item_inputs, item_outputs) => {
     let newRecipe = {
         type: cr('splashing'),
-    };
-
-    if (item_inputs) newRecipe['ingredients'] = item_inputs;
-    if (item_outputs) newRecipe['results'] = item_outputs;
-
-    event.custom(newRecipe).id(id);
-};
-
-// -- CREATE DEPLOYING -- //
-/**
- * Deploying
- * @param {*} event
- * @param {!string} id - Recipe ID
- * @param {!boolean} keep_item - Whether or not the item being deployed is consumed in the recipe
- * @param {!ShapelessInput[]} item_inputs - An array of {item: id} or {tag: id}. First instance is the item being deployed on, second instance is the item being deployed
- * @param {!ShapelessInput} item_outputs - An instance of {item: id}, {type: 'neoforge:single', amount: X, fluid: id}, or {tag: id}
- */
-let deploying = (event, id, keep_item, item_inputs, item_outputs) => {
-    let newRecipe = {
-        type: cr('deploying'),
-        keep_held_item: keep_item,
     };
 
     if (item_inputs) newRecipe['ingredients'] = item_inputs;
