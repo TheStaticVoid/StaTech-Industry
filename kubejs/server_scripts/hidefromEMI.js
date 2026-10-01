@@ -29,6 +29,7 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         cr('crushed_raw_lead'),
         cr('crushed_raw_nickel'),
         cr('crushed_raw_uranium'),
+        cr('crushed_raw_silver'),
     ];
     CREATE_CRUSHED.forEach((id) => event.remove(id));
 
