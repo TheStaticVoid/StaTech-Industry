@@ -576,4 +576,112 @@ ServerEvents.recipes((event) => {
             [{ amount: 250, fluid: mi('concrete') }]
         );
     });
+
+    // --------------------------//
+    // -- HONEY WAXING COMPAT -- //
+    // --------------------------//
+
+    // -- COPPER ITEMS -- //
+    const ITEMS_TO_WAX = [
+        cr('copper_tiles'),
+        cr('copper_tile_slab'),
+        cr('copper_tile_stairs'),
+        cr('copper_shingles'),
+        cr('copper_shingle_slab'),
+        cr('copper_shingle_stairs'),
+        sd('copper_tubing'),
+        mc('copper_bulb'),
+        mc('copper_door'),
+        mc('copper_trapdoor'),
+        mc('chiseled_copper'),
+        mc('copper_grate'),
+        ap('copper_nub'),
+    ];
+
+    ITEMS_TO_WAX.forEach((recipe) => {
+        // -- WAXED -- //
+        mixer(
+            event,
+            st(`waxed_${recipe.split(':')[1]}_from_${recipe.split(':')[1]}`),
+            2,
+            100,
+            [{ item: recipe, amount: 1 }],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [{ amount: 1, tag: 'c:honey' }]
+        );
+
+        // -- EXPOSED -- //
+        mixer(
+            event,
+            st(
+                `waxed_exposed_${recipe.split(':')[1]}_from_exposed_${recipe.split(':')[1]}`
+            ),
+            2,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_exposed_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [{ amount: 1, tag: 'c:honey' }]
+        );
+
+        // -- WEATHERED -- //
+        mixer(
+            event,
+            st(
+                `waxed_weathered_${recipe.split(':')[1]}_from_weathered_${recipe.split(':')[1]}`
+            ),
+            2,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:weathered_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_weathered_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [{ amount: 1, tag: 'c:honey' }]
+        );
+
+        // -- OXIDIZED -- //
+        mixer(
+            event,
+            st(
+                `waxed_oxidized_${recipe.split(':')[1]}_from_oxidized_${recipe.split(':')[1]}`
+            ),
+            2,
+            100,
+            [
+                {
+                    item: `${recipe.split(':')[0]}:oxidized_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [
+                {
+                    item: `${recipe.split(':')[0]}:waxed_oxidized_${recipe.split(':')[1]}`,
+                    amount: 1,
+                },
+            ],
+            [{ amount: 1, tag: 'c:honey' }]
+        );
+    });
 });
