@@ -84,4 +84,14 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mc('sugar_cane') }],
         [{ amount: 1, item: mc('paper') }]
     );
+
+    // -- PULP FROM WOOD PULP -- //
+    compressor(
+        event,
+        st('pulp_from_wood_pulp'),
+        2,
+        200,
+        [{ amount: 4, item: mi('wood_pulp') }],
+        [{ amount: 1, item: cr('pulp') }]
+    );
 });

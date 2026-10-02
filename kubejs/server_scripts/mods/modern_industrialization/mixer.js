@@ -170,17 +170,6 @@ ServerEvents.recipes((event) => {
         [{ amount: 1000, fluid: mc('water') }]
     );
 
-    // -- PULP FROM WOOD PULP -- //
-    mixer(
-        event,
-        st('pulp_from_wood_pulp'),
-        2,
-        100,
-        [{ amount: 4, item: mi('wood_pulp') }],
-        [{ amount: 1, item: cr('pulp') }],
-        [{ amount: 250, fluid: mc('water') }]
-    );
-
     // -- LIQUID ENDER -- //
     mixer(
         event,
