@@ -1577,19 +1577,6 @@ ServerEvents.recipes((event) => {
     // -- CREATE COMPAT -- //
     // ------------------- //
 
-    // -- ELECTRON TUBE -- //
-    assembler(
-        event,
-        st('electron_tube'),
-        8,
-        100,
-        [
-            { amount: 1, item: mi('iron_plate') },
-            { amount: 1, item: cr('polished_rose_quartz') },
-        ],
-        [{ amount: 1, item: cr('electron_tube') }]
-    );
-
     // ------------------- //
     // -- XTONES COMPAT -- //
     // ------------------- //

@@ -8,7 +8,10 @@ ServerEvents.recipes((event) => {
     let st = (id) => `statech:modern_industrialization/mixer/${id}`;
 
     // -- MIXER REMOVED RECIPES -- //
-    const REMOVED_RECIPES = [mi('materials/mixer/fire_clay_dust')];
+    const REMOVED_RECIPES = [
+        mi('materials/mixer/fire_clay_dust'),
+        mi('compat/create/mixer/dough'),
+    ];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
     // -- OMINOUS BOTTLE -- //
@@ -165,6 +168,17 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: cr('wheat_flour') }],
         [{ amount: 3, item: cr('dough') }],
         [{ amount: 1000, fluid: mc('water') }]
+    );
+
+    // -- PULP FROM WOOD PULP -- //
+    mixer(
+        event,
+        st('pulp_from_wood_pulp'),
+        2,
+        100,
+        [{ amount: 4, item: mi('wood_pulp') }],
+        [{ amount: 1, item: cr('pulp') }],
+        [{ amount: 250, fluid: mc('water') }]
     );
 
     // -- LIQUID ENDER -- //
@@ -590,11 +604,6 @@ ServerEvents.recipes((event) => {
         cr('copper_shingle_slab'),
         cr('copper_shingle_stairs'),
         sd('copper_tubing'),
-        mc('copper_bulb'),
-        mc('copper_door'),
-        mc('copper_trapdoor'),
-        mc('chiseled_copper'),
-        mc('copper_grate'),
         ap('copper_nub'),
     ];
 

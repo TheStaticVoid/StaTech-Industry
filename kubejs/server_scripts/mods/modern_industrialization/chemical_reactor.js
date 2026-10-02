@@ -7,6 +7,13 @@ ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/chemical_reactor/${id}`;
 
+    // -- CHEMICAL REACTOR REMOVED RECIPES -- //
+    const REMOVED_RECIPE = [
+        mi('compat/create/chemical_reactor/polished_rose_quartz'),
+        mi('compat/create/chemical_reactor/rose_quartz'),
+    ];
+    REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
+
     // -- BREEZE ROD -- //
     chemicalReactor(
         event,
@@ -420,11 +427,6 @@ ServerEvents.recipes((event) => {
         cr('copper_shingle_slab'),
         cr('copper_shingle_stairs'),
         sd('copper_tubing'),
-        mc('copper_bulb'),
-        mc('copper_door'),
-        mc('copper_trapdoor'),
-        mc('chiseled_copper'),
-        mc('copper_grate'),
         ap('copper_nub'),
     ];
 

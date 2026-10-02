@@ -49,6 +49,7 @@ ServerEvents.recipes((event) => {
         mi('materials/iridium/smelting/ore_to_ingot_blasting'),
         mi('materials/iridium/smelting/raw_metal_to_ingot_blasting'),
         mi('materials/iridium/smelting/dust_to_ingot_blasting'),
+        mi('compat/create/craft/polished_rose_quartz'),
     ];
     MI_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
 

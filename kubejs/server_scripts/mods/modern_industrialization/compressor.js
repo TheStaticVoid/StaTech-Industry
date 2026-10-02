@@ -75,16 +75,6 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mc('stone') }]
     );
 
-    // -- BRASS SHEET -- //
-    compressor(
-        event,
-        st('brass_sheet'),
-        2,
-        100,
-        [{ amount: 1, item: cr('brass_ingot') }],
-        [{ amount: 1, item: cr('brass_sheet') }]
-    );
-
     // -- PAPER -- //
     compressor(
         event,

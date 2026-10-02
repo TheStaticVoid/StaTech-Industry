@@ -54,6 +54,7 @@ Largely a bugfix patch, but does bring a few new enhancements and additions! Thi
 - **Hid JEI tag screens in EMI.**
 - Added missing AE2 covered cable recipe using SBR.
 - **Made Ender Chests + Tanks require an Assembler and Blazing Essence.**
+- Integrated new MI-Create compat appropriately for the pack's balance.
 
 ## [2.0.1]
 

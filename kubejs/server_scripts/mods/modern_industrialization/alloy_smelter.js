@@ -7,6 +7,13 @@ ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/alloy_smelter/${id}`;
 
+    // -- ALLOY SMELTER REMOVED RECIPES -- //
+    const REMOVED_RECIPE = [
+        ei('materials/brass/alloy_smelter/ingot'),
+        ei('materials/brass/alloy_smelter/nugget'),
+    ];
+    REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
+
     // -- RED ALLOY INGOT -- //
     alloySmelter(
         event,
@@ -69,18 +76,5 @@ ServerEvents.recipes((event) => {
             },
         ],
         [{ amount: 2, item: cr('brass_ingot') }]
-    );
-
-    // -- BRASS BLOCK -- //
-    alloySmelter(
-        event,
-        st('brass_block'),
-        4,
-        200,
-        [
-            { amount: 1, tag: 'c:storage_blocks/copper' },
-            { amount: 1, tag: 'c:storage_blocks/zinc' },
-        ],
-        [{ amount: 2, item: cr('brass_block') }]
     );
 });
