@@ -7,6 +7,13 @@ ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/alloy_smelter/${id}`;
 
+    // -- ALLOY SMELTER REMOVED RECIPES -- //
+    const REMOVED_RECIPE = [
+        ei('materials/brass/alloy_smelter/ingot'),
+        ei('materials/brass/alloy_smelter/nugget'),
+    ];
+    REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
+
     // -- RED ALLOY INGOT -- //
     alloySmelter(
         event,
@@ -27,22 +34,47 @@ ServerEvents.recipes((event) => {
         4,
         200,
         [
-            { amount: 1, tag: 'c:ingots/copper' },
-            { amount: 1, tag: 'c:ingots/zinc' },
+            {
+                type: 'neoforge:compound',
+                amount: 1,
+                children: [
+                    { tag: 'c:dusts/copper' },
+                    { tag: 'c:ingots/copper' },
+                ],
+            },
+            {
+                type: 'neoforge:compound',
+                amount: 1,
+                children: [{ tag: 'c:dusts/zinc' }, { tag: 'c:ingots/zinc' }],
+            },
         ],
         [{ amount: 2, item: cr('brass_ingot') }]
     );
 
-    // -- BRASS BLOCK -- //
+    // -- BRASS INGOT -- //
     alloySmelter(
         event,
-        st('brass_block'),
+        st('brass_ingot_from_nuggets'),
         4,
         200,
         [
-            { amount: 1, tag: 'c:storage_blocks/copper' },
-            { amount: 1, tag: 'c:storage_blocks/zinc' },
+            {
+                type: 'neoforge:compound',
+                amount: 9,
+                children: [
+                    { tag: 'c:tiny_dusts/copper' },
+                    { tag: 'c:nuggets/copper' },
+                ],
+            },
+            {
+                type: 'neoforge:compound',
+                amount: 9,
+                children: [
+                    { tag: 'c:tiny_dusts/zinc' },
+                    { tag: 'c:nuggets/zinc' },
+                ],
+            },
         ],
-        [{ amount: 2, item: cr('brass_block') }]
+        [{ amount: 2, item: cr('brass_ingot') }]
     );
 });

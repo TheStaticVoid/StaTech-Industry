@@ -4,13 +4,6 @@
 // -----------------------------------------
 
 ServerEvents.tags('item', (event) => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
-    let sp = (id) => `spectrum:${id}`;
-
-    event.add('c:tools/pickaxes', sp('bedrock_pickaxe'));
-    event.add('c:tools/axes', sp('bedrock_axe'));
-    event.add('c:tools/shovels', sp('bedrock_shovel'));
-
     const POLISHED_GEMSTONE = [
         sp('polished_topaz'),
         sp('polished_amethyst'),
@@ -229,13 +222,12 @@ ServerEvents.tags('item', (event) => {
         event.add('kubejs:sugar_sticks', id);
     });
 
-    event.add('c:foods/berry', sp('sawblade_holly_berry'))
+    event.add('c:foods/berry', sp('sawblade_holly_berry'));
 });
 
 ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:spectrum/${id}`;
-    let sp = (id) => `spectrum:${id}`;
 
     // -- SPECTRUM REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
@@ -244,6 +236,12 @@ ServerEvents.recipes((event) => {
         ar('eternal_steak_smoker'),
         ar('eternal_steak_campfire'),
         sp('fusion_shrine/vanilla/netherite_ingot'),
+        sp('smelting/blackslag_ores/copper'),
+        sp('smelting/blackslag_ores/iron'),
+        sp('smelting/blackslag_ores/gold'),
+        sp('blasting/blackslag_ores/copper'),
+        sp('blasting/blackslag_ores/iron'),
+        sp('blasting/blackslag_ores/gold'),
     ];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
@@ -324,6 +322,73 @@ ServerEvents.recipes((event) => {
         'legendary_tool_craft',
         sp('build_fusion_shrine')
     );
+
+    // -------------------------//
+    // ---- LIQUID DIPPING ---- //
+    // -------------------------//
+
+    const ITEMS_TO_OXIDIZE = [
+        cr('copper_tiles'),
+        cr('copper_tile_slab'),
+        cr('copper_tile_stairs'),
+        cr('copper_shingles'),
+        cr('copper_shingle_slab'),
+        cr('copper_shingle_stairs'),
+        sd('copper_tubing'),
+        ap('copper_nub'),
+    ];
+
+    ITEMS_TO_OXIDIZE.forEach((recipe) => {
+        // -- EXPOSED -- //
+        dipping(
+            event,
+            'midnight_solution',
+            st(
+                `midnight_dipping/exposed_${recipe.split(':')[1]}_from_${recipe.split(':')[1]}`
+            ),
+            [{ item: recipe }],
+            {
+                id: `${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
+                count: 1,
+            }
+        );
+
+        // -- WEATHERED -- //
+        dipping(
+            event,
+            'midnight_solution',
+            st(
+                `midnight_dipping/weathered_${recipe.split(':')[1]}_from_exposed_${recipe.split(':')[1]}`
+            ),
+            [
+                {
+                    item: `${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
+                },
+            ],
+            {
+                id: `${recipe.split(':')[0]}:weathered_${recipe.split(':')[1]}`,
+                count: 1,
+            }
+        );
+
+        // -- OXIDIZED -- //
+        dipping(
+            event,
+            'midnight_solution',
+            st(
+                `midnight_dipping/oxidized_${recipe.split(':')[1]}_from_weathered_${recipe.split(':')[1]}`
+            ),
+            [
+                {
+                    item: `${recipe.split(':')[0]}:weathered_${recipe.split(':')[1]}`,
+                },
+            ],
+            {
+                id: `${recipe.split(':')[0]}:oxidized_${recipe.split(':')[1]}`,
+                count: 1,
+            }
+        );
+    });
 
     // -------------------//
     // ---- PEDESTAL ---- //
@@ -438,8 +503,14 @@ ServerEvents.recipes((event) => {
 
 // Block tagging provided by kevintok
 ServerEvents.tags('block', (event) => {
-    // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
-    let sp = (id) => `spectrum:${id}`;
+    event.remove(
+        'minecraft:mineable/axe',
+        /^spectral_decorations:.*(copper_tubing).*/
+    );
 
+    event.add(
+        'minecraft:mineable/pickaxe',
+        /^spectral_decorations:.*(copper_tubing).*/
+    );
     event.add('c:lapis_ores', sp('blackslag_lapis_ore'));
 });

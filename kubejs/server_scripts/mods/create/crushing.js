@@ -32,21 +32,9 @@ ServerEvents.recipes((event) => {
     ];
     REMOVED_CRUSHED.forEach((output) => event.remove({ output: output }));
 
-    // -- CUSTOM RECIPE UTILITY FUNCTION -- //
-    let crushing = (id, duration, item_inputs, item_outputs) => {
-        let newRecipe = {
-            type: cr('crushing'),
-            processing_time: duration,
-        };
-
-        if (item_inputs) newRecipe['ingredients'] = item_inputs;
-        if (item_outputs) newRecipe['results'] = item_outputs;
-
-        event.custom(newRecipe).id(id);
-    };
-
     // -- BRICK DUST FROM BRICKS -- //
     crushing(
+        event,
         st('brick_dust_from_bricks'),
         400,
         [{ item: mc('bricks') }],
@@ -55,6 +43,7 @@ ServerEvents.recipes((event) => {
 
     // -- BRICK DUST FROM BRICK -- //
     crushing(
+        event,
         st('brick_dust_from_brick'),
         100,
         [{ item: mc('brick') }],
@@ -63,6 +52,7 @@ ServerEvents.recipes((event) => {
 
     // -- CLAY DUST FROM CLAY -- //
     crushing(
+        event,
         st('clay_dust_from_clay'),
         400,
         [{ item: mc('clay') }],
@@ -71,6 +61,7 @@ ServerEvents.recipes((event) => {
 
     // -- CLAY DUST FROM CLAY BALL -- //
     crushing(
+        event,
         st('clay_dust_from_clay_ball'),
         100,
         [{ item: mc('clay_ball') }],

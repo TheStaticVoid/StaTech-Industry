@@ -32,6 +32,17 @@ ServerEvents.recipes((event) => {
     ];
     FARMERSDELIGHT_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
+    // ------------------------//
+    // --- SHAPED CRAFTING --- //
+    // ------------------------//
+
+    // -- CANVAS FROM FLAX -- //
+    event
+        .shaped(fd('canvas'), ['FF ', 'FF '], {
+            F: su('flax'),
+        })
+        .id(st('canvas_from_flax'));
+
     // ---------------------------//
     // --- SHAPELESS CRAFTING --- //
     // ---------------------------//
@@ -40,11 +51,6 @@ ServerEvents.recipes((event) => {
     event
         .shapeless(Item.of(mc('sugar'), 3), [nm('maple_syrup_bottle')])
         .id(st('sugar_from_syrup'));
-
-    // -- CANVAS FROM FLAX -- //
-    event
-        .shapeless(fd('canvas'), [Item.of(su('flax'), 4)])
-        .id(st('canvas_from_flax'));
 
     // --------------------//
     // ----- CUTTING ----- //

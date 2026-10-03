@@ -7,6 +7,17 @@ ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:modern_industrialization/macerator/${id}`;
 
+    // -- MACERATOR REMOVED RECIPES -- //
+    const REMOVED_RECIPE = [
+        mi('compat/create/macerator/asurine'),
+        mi('compat/create/macerator/crimsite'),
+        mi('compat/create/macerator/ochrum'),
+        mi('compat/create/macerator/veridium'),
+        mi('compat/create/macerator/obsidian_to_powdered_obsidian'),
+        mi('compat/create/macerator/raw_zinc_to_crushed_raw_zinc'),
+    ];
+    REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
+
     // -- WIND CHARGE -- //
     macerator(
         event,
@@ -15,16 +26,6 @@ ServerEvents.recipes((event) => {
         200,
         [{ amount: 1, item: mc('breeze_rod') }],
         [{ amount: 8, item: mc('wind_charge') }]
-    );
-
-    // -- WHEAT DOUGH -- //
-    macerator(
-        event,
-        st('wheat_flour'),
-        2,
-        200,
-        [{ amount: 1, item: mc('wheat') }],
-        [{ amount: 2, item: cr('wheat_flour') }]
     );
 
     // -- CALCITE DUST FROM LIMESTONE -- //
@@ -55,16 +56,6 @@ ServerEvents.recipes((event) => {
         1200,
         [{ amount: 1, item: mc('obsidian') }],
         [{ amount: 4, item: cr('powdered_obsidian') }]
-    );
-
-    // -- RAW ZINC -- //
-    macerator(
-        event,
-        st('raw_zinc'),
-        2,
-        200,
-        [{ amount: 1, tag: 'c:ores/zinc' }],
-        [{ amount: 3, item: 'create:raw_zinc' }]
     );
 
     // -- ZINC DUST -- //
@@ -468,7 +459,7 @@ ServerEvents.recipes((event) => {
         ]
     );
 
-    // -- ZINC DUST ROM ASURINE -- //
+    // -- ZINC DUST FROM ASURINE -- //
     macerator(
         event,
         st('zinc_dust_from_asurine'),

@@ -230,7 +230,7 @@ ServerEvents.recipes((event) => {
         2,
         100,
         [{ amount: 4, item: mc('dirt') }],
-        [{ amount: 4, item: db('rocky_dirt') }]
+        [{ amount: 1, item: db('rocky_dirt') }]
     );
 
     // -- QUARTZ GLASS -- //

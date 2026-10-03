@@ -1,0 +1,14 @@
+{
+    "type": "neoforge:add_table",
+    "conditions": [
+        {
+            "condition": "neoforge:loot_table_id",
+            "loot_table_id": "nomansland:chests/water_well"
+        },
+        {
+            "condition": "minecraft:random_chance",
+            "chance": 0.5
+        }
+    ],
+    "table": "artifacts:inject/chests/ruined_portal"
+}

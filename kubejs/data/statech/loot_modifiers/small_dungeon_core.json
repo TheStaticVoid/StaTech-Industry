@@ -1,0 +1,14 @@
+{
+    "type": "neoforge:add_table",
+    "conditions": [
+        {
+            "condition": "neoforge:loot_table_id",
+            "loot_table_id": "nomansland:chests/small_dungeon_core"
+        },
+        {
+            "condition": "minecraft:random_chance",
+            "chance": 0.2
+        }
+    ],
+    "table": "artifacts:inject/chests/simple_dungeon"
+}
