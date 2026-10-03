@@ -2,7 +2,7 @@
 
 ## [2.0.2]
 
-Largely a bugfix patch, but does bring a few new enhancements and additions! This pack version includes an updated Spectrum version which fixes more (different!) Spectrum issues!
+Largely a bugfix patch, but does bring a few new enhancements and additions! This pack version includes an updated Spectrum version which fixes more (different!) Spectrum issues! Also comes with a new MI update improving some documentation and fixing some bugs.
 
 - **Add more advancements for items throughout the pack.**
 - Fixed some miscellaneous Spectrum quest issues.
@@ -55,6 +55,7 @@ Largely a bugfix patch, but does bring a few new enhancements and additions! Thi
 - Added missing AE2 covered cable recipe using SBR.
 - **Made Ender Chests + Tanks require an Assembler and Blazing Essence.**
 - Integrated new MI-Create compat appropriately for the pack's balance.
+- **Fixed some TACZ recipes being uncraftable due to Large Invar Plates being unstackable.**
 
 ## [2.0.1]
 

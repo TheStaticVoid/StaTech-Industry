@@ -942,7 +942,7 @@ ServerEvents.recipes((event) => {
             [32, mi('steel_plate')],
             [4, mc('leather')],
             [16, mi('aluminum_ring')],
-            [4, mi('invar_large_plate')],
+            [16, mi('invar_plate')],
             null,
             [8, mi('polytetrafluoroethylene_plate')]
         ),
@@ -960,7 +960,7 @@ ServerEvents.recipes((event) => {
             [32, mi('steel_plate')],
             [4, mc('leather')],
             [16, mi('aluminum_ring')],
-            [4, mi('invar_large_plate')],
+            [16, mi('invar_plate')],
             [4, mi('electrum_block')],
             [10, mi('polytetrafluoroethylene_plate')]
         ),
@@ -1013,7 +1013,7 @@ ServerEvents.recipes((event) => {
             [8, mc('redstone')],
             [5, mc('oak_log')],
             [16, mi('aluminum_ring')],
-            [1, mi('invar_large_plate')],
+            [4, mi('invar_plate')],
             [8, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
@@ -1021,7 +1021,7 @@ ServerEvents.recipes((event) => {
             [40, mi('steel_plate')],
             [8, mc('redstone')],
             [16, mi('aluminum_ring')],
-            [1, mi('invar_large_plate')],
+            [4, mi('invar_plate')],
             null,
             [8, mi('polytetrafluoroethylene_plate')]
         ),
@@ -1030,14 +1030,14 @@ ServerEvents.recipes((event) => {
             [36, mi('steel_plate')],
             [8, mc('redstone')],
             [12, mi('aluminum_ring')],
-            [2, mi('invar_large_plate')],
+            [8, mi('invar_plate')],
             null,
             [8, mi('polytetrafluoroethylene_plate')]
         ),
         Gun(
             'tacz:taurus500',
             [24, mi('steel_large_plate')],
-            [16, mi('invar_large_plate')],
+            [64, mi('invar_plate')],
             [2, mc('redstone_block')],
             [4, mc('oak_log')],
             [2, mc('netherite_ingot')],
@@ -1055,7 +1055,7 @@ ServerEvents.recipes((event) => {
         Gun(
             'tacz:ai_awp',
             [50, mi('steel_large_plate')],
-            [12, mi('invar_large_plate')],
+            [48, mi('invar_plate')],
             [4, mc('redstone_block')],
             [4, mc('leather')],
             [8, mc('netherite_ingot')],
@@ -1064,7 +1064,7 @@ ServerEvents.recipes((event) => {
         Gun(
             'tacz:m95',
             [64, mi('steel_large_plate')],
-            [32, mi('invar_large_plate')],
+            [64, mi('invar_plate')],
             [16, mi('aluminum_rod')],
             [4, mc('leather')],
             [16, mc('netherite_ingot')],
@@ -1082,7 +1082,7 @@ ServerEvents.recipes((event) => {
         Gun(
             'tacz:m107',
             [64, mi('steel_large_plate')],
-            [32, mi('invar_large_plate')],
+            [64, mi('invar_plate')],
             [32, mi('aluminum_rod')],
             [4, mc('leather')],
             [16, mc('netherite_ingot')],
