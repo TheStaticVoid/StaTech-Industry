@@ -4,7 +4,7 @@
         "1.21.1"
     ],
     "loaders": {
-        "neoforge": "21.1.252"
+        "neoforge": "21.1.255"
     },
     "projects": [
         {
@@ -5502,7 +5502,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "JadeAddons-1.21.1-NeoForge-6.1.1.jar",
+                    "file_name": "JadeAddons-1.21.1-NeoForge-6.1.2.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -5510,18 +5510,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8777/229/JadeAddons-1.21.1-NeoForge-6.1.1.jar",
-                    "id": "8777229",
+                    "url": "https://edge.forgecdn.net/files/9056/575/JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+                    "id": "9056575",
                     "parent_id": "583345",
                     "hashes": {
-                        "sha1": "6c50a845ac3d336fa88e6466c36aa8b3815ca5c5",
-                        "md5": "26c75b35c8e07ec289a1ab769773c00b"
+                        "sha1": "479b327078f8f0091e2413675d1236c931f68cf4",
+                        "md5": "653b8b57d8bc4a6d826eb33157f29971"
                     },
                     "required_dependencies": [
                         "324717"
                     ],
-                    "size": 75431,
-                    "date_published": "2026-08-31T11:54:55.643Z"
+                    "size": 82315,
+                    "date_published": "2026-10-04T09:57:48.660Z"
                 }
             ]
         },
@@ -8924,6 +8924,42 @@
             ]
         },
         {
+            "pakku_id": "wy0zrOg0u6XfQvqo",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "sooty-chimneys"
+            },
+            "name": {
+                "curseforge": "Sooty Chimneys"
+            },
+            "id": {
+                "curseforge": "634005"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "sootychimneys-neoforge-1.3.5.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8077/587/sootychimneys-neoforge-1.3.5.jar",
+                    "id": "8077587",
+                    "parent_id": "634005",
+                    "hashes": {
+                        "sha1": "be15102bd2468a224fb02e4d243b54bfca2c9c49",
+                        "md5": "93e3607e043ec68b9f946f532ec050cf"
+                    },
+                    "required_dependencies": [],
+                    "size": 175697,
+                    "date_published": "2026-05-12T11:39:20.637Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "6w3QlS7YlMbdSpOk",
             "pakku_links": [
                 "MGWfSF1QTVXKpuNz",
@@ -10672,7 +10708,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "entity_model_features-3.3.9-1.21-neoforge.jar",
+                    "file_name": "entity_model_features-3.3.10-1.21-neoforge.jar",
                     "mc_versions": [
                         "1.21",
                         "1.21.1"
@@ -10681,18 +10717,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8909/425/entity_model_features-3.3.9-1.21-neoforge.jar",
-                    "id": "8909425",
+                    "url": "https://edge.forgecdn.net/files/9055/325/entity_model_features-3.3.10-1.21-neoforge.jar",
+                    "id": "9055325",
                     "parent_id": "844662",
                     "hashes": {
-                        "sha1": "022780fc9f221fc87ba507c6542d47c8e1e4889a",
-                        "md5": "16013cf5a76cf436bafea125aed2cc33"
+                        "sha1": "48fba5a39217b30751d2b22773204be95122b730",
+                        "md5": "db174c1637665a91a09ad1d7e0418259"
                     },
                     "required_dependencies": [
                         "568563"
                     ],
-                    "size": 641785,
-                    "date_published": "2026-09-18T05:57:10.897Z"
+                    "size": 655582,
+                    "date_published": "2026-10-04T06:55:57.877Z"
                 }
             ]
         },
@@ -10712,7 +10748,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "entity_texture_features-7.2.4-1.21-neoforge.jar",
+                    "file_name": "entity_texture_features-7.2.5-1.21-neoforge.jar",
                     "mc_versions": [
                         "1.21",
                         "1.21.1"
@@ -10721,16 +10757,16 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8908/931/entity_texture_features-7.2.4-1.21-neoforge.jar",
-                    "id": "8908931",
+                    "url": "https://edge.forgecdn.net/files/9055/219/entity_texture_features-7.2.5-1.21-neoforge.jar",
+                    "id": "9055219",
                     "parent_id": "568563",
                     "hashes": {
-                        "sha1": "2551bb98d82d4d4064acecd8b513f1db469c635e",
-                        "md5": "c16df62a5dc282591fd613948f972147"
+                        "sha1": "ae5d4d282221a455ccd87bef7cd0f5122685426d",
+                        "md5": "19ef3582014439ce967f11b002ca8b04"
                     },
                     "required_dependencies": [],
-                    "size": 790080,
-                    "date_published": "2026-09-18T03:48:46.983Z"
+                    "size": 806812,
+                    "date_published": "2026-10-04T06:44:16.803Z"
                 }
             ]
         },
