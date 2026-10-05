@@ -1,0 +1,30 @@
+{
+    "parent": "modern_industrialization:electronic_circuit",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "industrialization_overdrive:upgrade_stacker"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.upgrade_stacker.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "industrialization_overdrive:upgrade_stacker"
+        },
+        "title": {
+            "translate": "advancements.statech.upgrade_stacker"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}

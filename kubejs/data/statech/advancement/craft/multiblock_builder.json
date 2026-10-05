@@ -1,0 +1,30 @@
+{
+    "parent": "modern_industrialization:electric_blast_furnace",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "industrialization_overdrive:terminal"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.multiblock_builder.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "industrialization_overdrive:terminal"
+        },
+        "title": {
+            "translate": "advancements.statech.multiblock_builder"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
+}
