@@ -457,10 +457,6 @@ MIMaterialEvents.modifyMaterial('ruby', (event) => {
         .setMainPart('gem');
 });
 
-MIMaterialEvents.modifyMaterial('electrum', (event) => {
-    event.builder.addParts('rod');
-});
-
 MIMaterialEvents.modifyMaterial('iron', (event) => {
     event.builder.addParts('wire');
 });

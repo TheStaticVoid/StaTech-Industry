@@ -6,7 +6,7 @@
 ServerEvents.tags('item', (event) => {
     event.remove(
         'createaddition:large_connector_usable_rods',
-        ca('electrum_rod')
+        '#c:rods/electrum'
     );
 });
 
