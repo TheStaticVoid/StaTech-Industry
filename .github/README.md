@@ -22,6 +22,7 @@ To download the modpack from this repository, you can clone it and use [Pakku](h
 - @DmitryProskurin - Quest fixes and recipe modifications
 - @fmbellomy - Pakku + PanPack migration / Regular contributor
 - @Spagles - Fixed trial chamber load lag
+- @onion-evan - Sprite work for custom items / MI Animated Components resource pack
 
 ## 1.0 Contributors
 
@@ -39,6 +40,9 @@ To download the modpack from this repository, you can clone it and use [Pakku](h
 ### Additional Credits
 
 Uses [Mono7 by xlifi](https://modrinth.com/resourcepack/mono7) for the prospector pick chat messages.
-Uses the Angel Ring texture from [SimpleAngelRing by LordDeatHunter](https://github.com/ModsByLeo/SimpleAngelRing) for the Angel Ring and as a basis for the Fireproof Ring texture.
+Uses the Angel Ring texture from [SimpleAngelRing by LordDeatHunter](https://github.com/ModsByLeo/SimpleAngelRing) as a basis for the Angel Ring and the Fireproof Ring textures.
 Uses the Electronic Circuit texture from [Modern Industrialization](https://github.com/AztechMC/Modern-Industrialization) as a basis for the Withered SoC texture.
-Uses the Basic/Advanced Card texture from [Applied Energistics 2]([https://github.com/AztechMC/Modern-Industrialization](https://github.com/AppliedEnergistics/Applied-Energistics-2)) as a basis for the Mob/Boss Model textures.
+Uses the Basic/Advanced Card texture from [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) as a basis for the Mob/Boss Model textures.
+Uses the material_dust_quicksilver_amethyst_mixture.png texture from [Unused Textures](https://github.com/malcolmriley/unused-textures/) as a basis for the artifact_dust.png texture.
+Uses the material_dust_green_mix_4.png texture from [Unused Textures](https://github.com/malcolmriley/unused-textures/) as a basis for the scrap.png texture.
+Uses [jonnyloaf's Spectrum Alcohol Models](https://jonnyloaf.art/#) for the Spectrum alcohol 3D models.

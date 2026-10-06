@@ -63,12 +63,8 @@ StartupEvents.registry('item', (event) => {
             f.nutrition(2).saturation(0.4);
         });
 
-    event
-        .create('uncooked_pizza')
-        .tag('c:foods');
-    event
-        .create('pizza')
-        .tag('c:foods');
+    event.create('uncooked_pizza').tag('c:foods');
+    event.create('pizza').tag('c:foods');
 
     event
         .create('pizza_slice')
@@ -77,9 +73,7 @@ StartupEvents.registry('item', (event) => {
             f.nutrition(8).saturation(0.6);
         });
 
-    event
-        .create('concrete_pizza')
-        .tag('c:foods');
+    event.create('concrete_pizza').tag('c:foods');
 
     event
         .create('concrete_pizza_slice')
@@ -163,11 +157,21 @@ StartupEvents.registry('item', (event) => {
 
     event
         .create('fruity_pebbles')
-        .displayName('Fruity Pebbles')
         .tag('c:foods')
         .tooltip('§bTasty!')
         .maxStackSize(1)
         .food((f) => {
-            f.nutrition(8).saturation(0.5);
+            f.nutrition(14).saturation(0.75);
+        });
+
+    event
+        .create('poutine_box')
+        .tag('c:foods')
+        .tooltip('§bThank you Canada!')
+        .maxStackSize(1)
+        .food((f) => {
+            f.nutrition(12)
+                .saturation(0.5)
+                .effect(fd('nourishment'), 6000, 0, 1);
         });
 });

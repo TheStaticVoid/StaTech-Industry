@@ -59,6 +59,10 @@ Largely a bugfix patch, but does bring a few new enhancements and additions! Thi
 - **Replaced Angel Ring and Fireproof Ring textures with animated ones. Thanks Onion-Evan!**
 - Fixed some No Man's Land compat recipe issues.
 - Rebalanced TNT recipes.
+- **Added 3D Spectrum drinks. Thanks jonnyloaf!**
+- Updated README.
+- Fixed assorted lang issues.
+- **Added Poutine.**
 
 ## [2.0.1]
 

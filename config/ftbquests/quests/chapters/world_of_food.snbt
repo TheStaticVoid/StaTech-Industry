@@ -42,8 +42,8 @@
 				item: { count: 1, id: "kubejs:statech_energy" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 7.0d
+			y: -1.0d
 		}
 		{
 			disable_toast: true
@@ -106,7 +106,7 @@
 				item: { count: 1, id: "kubejs:pizza_dough" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: -4.5d
 		}
 		{
@@ -123,7 +123,7 @@
 				item: { count: 1, id: "kubejs:pizza" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: -2.0d
 		}
 		{
@@ -140,7 +140,7 @@
 				item: { count: 1, id: "kubejs:pizza_slice" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 3.5d
 			y: -1.0d
 		}
 		{
@@ -157,7 +157,7 @@
 				item: { count: 1, id: "kubejs:concrete_pizza" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 4.5d
 			y: -1.0d
 		}
 		{
@@ -174,7 +174,7 @@
 				item: { count: 1, id: "kubejs:concrete_pizza_slice" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
@@ -191,8 +191,8 @@
 				item: { count: 1, id: "kubejs:bepsi" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -3.0d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["26742A8064D359B5"]
@@ -241,7 +241,7 @@
 				item: { count: 1, id: "kubejs:nuka_cola" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.5d
 			y: -4.5d
 		}
 		{
@@ -258,8 +258,8 @@
 				item: { count: 1, id: "kubejs:bottle_cap" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: -4.5d
+			x: 5.5d
+			y: -3.5d
 		}
 		{
 			disable_toast: true
@@ -291,7 +291,7 @@
 				item: { count: 1, id: "kubejs:uncooked_pizza" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: -3.0d
 		}
 		{
@@ -4391,8 +4391,8 @@
 				item: { count: 1, id: "yet_another_industrialization:ai_slop" }
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.5d
+			x: 8.0d
+			y: -5.5d
 		}
 		{
 			disable_toast: true
@@ -6721,6 +6721,21 @@
 			}]
 			x: 23.0d
 			y: -7.5d
+		}
+		{
+			id: "101D9455F1B2AF70"
+			rewards: [{
+				id: "3C5970FF294DACA0"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "4FF6C8D1F221A19F"
+				item: { count: 1, id: "kubejs:poutine_box" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.5d
 		}
 	]
 }
