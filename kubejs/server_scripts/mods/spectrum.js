@@ -232,6 +232,7 @@ ServerEvents.recipes((event) => {
     // -- SPECTRUM REMOVED RECIPES -- //
     const REMOVED_RECIPES = [
         sp('pedestal/tier3/bottle_of_failing'),
+        sp('pedestal/tier1/vanilla/unstable_tnt'),
         ar('eternal_steak_furnace'),
         ar('eternal_steak_smoker'),
         ar('eternal_steak_campfire'),
@@ -334,7 +335,6 @@ ServerEvents.recipes((event) => {
         cr('copper_shingles'),
         cr('copper_shingle_slab'),
         cr('copper_shingle_stairs'),
-        sd('copper_tubing'),
         ap('copper_nub'),
     ];
 
@@ -498,6 +498,38 @@ ServerEvents.recipes((event) => {
         },
         { id: ar('charm_of_shrinking'), count: 1 },
         sp('build_basic_pedestal_structure')
+    );
+
+    // -- UNSTABLE TNT -- //
+    pedestal(
+        event,
+        st('unstable_tnt'),
+        80,
+        'basic',
+        {
+            'spectrum:cyan': 0,
+            'spectrum:magenta': 0,
+            'spectrum:yellow': 2,
+            'spectrum:black': 0,
+            'spectrum:white': 0,
+        },
+        2.0,
+        ['QSQ', 'SQS', 'QSQ'],
+        {
+            Q: { item: sp('quitoxic_powder') },
+            S: { tag: mc('sand') },
+        },
+        {
+            id: mc('tnt'),
+            components: {
+                block_state: {
+                    unstable: 'true',
+                },
+                lore: ['{"text":"unstable"}'],
+            },
+            count: 3,
+        },
+        sp('collect_quitoxic_reeds')
     );
 });
 

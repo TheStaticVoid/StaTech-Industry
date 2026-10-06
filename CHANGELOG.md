@@ -56,6 +56,9 @@ Largely a bugfix patch, but does bring a few new enhancements and additions! Thi
 - **Made Ender Chests + Tanks require an Assembler and Blazing Essence.**
 - Integrated new MI-Create compat appropriately for the pack's balance.
 - **Fixed some TACZ recipes being uncraftable due to Large Invar Plates being unstackable.**
+- **Replaced Angel Ring and Fireproof Ring textures with animated ones. Thanks Onion-Evan!**
+- Fixed some No Man's Land compat recipe issues.
+- Rebalanced TNT recipes.
 
 ## [2.0.1]
 

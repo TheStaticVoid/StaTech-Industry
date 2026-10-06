@@ -16,17 +16,6 @@ ServerEvents.recipes((event) => {
     OX_PHASES.forEach((phase) => {
         deploying(
             event,
-            st(`waxed_${phase}copper_tubing_from_${phase}copper_tubing`),
-            true,
-            [
-                { item: sd(`${phase}copper_tubing`) },
-                { item: mc('honeycomb_block') },
-            ],
-            [{ id: sd(`waxed_${phase}copper_tubing`) }]
-        );
-
-        deploying(
-            event,
             st(`waxed_${phase}copper_nub_from_${phase}copper_nub`),
             true,
             [
@@ -34,14 +23,6 @@ ServerEvents.recipes((event) => {
                 { item: mc('honeycomb_block') },
             ],
             [{ id: ap(`waxed_${phase}copper_nub`) }]
-        );
-
-        deploying(
-            event,
-            st(`${phase}copper_tubing_from_waxed_${phase}copper_tubing`),
-            true,
-            [{ item: sd(`waxed_${phase}copper_tubing`) }, { tag: mc('axes') }],
-            [{ id: sd(`${phase}copper_tubing`) }]
         );
 
         deploying(
@@ -54,16 +35,6 @@ ServerEvents.recipes((event) => {
     });
 
     for (let i = OX_PHASES.length - 1; i > 0; i--) {
-        deploying(
-            event,
-            st(
-                `${OX_PHASES[i - 1]}copper_tubing_from_${OX_PHASES[i]}copper_tubing`
-            ),
-            true,
-            [{ item: sd(`${OX_PHASES[i]}copper_tubing`) }, { tag: mc('axes') }],
-            [{ id: sd(`${OX_PHASES[i - 1]}copper_tubing`) }]
-        );
-
         deploying(
             event,
             st(`${OX_PHASES[i - 1]}copper_nub_from_${OX_PHASES[i]}copper_nub`),

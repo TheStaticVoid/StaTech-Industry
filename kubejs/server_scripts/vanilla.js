@@ -83,11 +83,20 @@ ServerEvents.recipes((event) => {
         })
         .id(st('bucket'));
 
+    // -- STICKS -- //
     event
         .shaped('16x ' + mc('stick'), ['L', 'L'], {
             L: '#minecraft:logs',
         })
         .id(st('sticks_from_log'));
+
+    // -- TNT -- //
+    event
+        .shaped(mc('tnt'), ['GSG', 'SGS', 'GSG'], {
+            G: mc('gunpowder'),
+            S: '#minecraft:sand',
+        })
+        .id(st('tnt'));
 
     // -- BUCKET ALT METALS -- //
     ALT_METALS.forEach((id) => {
@@ -216,6 +225,8 @@ ServerEvents.recipes((event) => {
     // --- SHAPELESS CRAFTING --- //
     // ---------------------------//
 
+    // -- MI WAX WAXING COMPAT -- //
+
     const ITEMS_TO_WAX = [
         cr('copper_tiles'),
         cr('copper_tile_slab'),
@@ -254,8 +265,8 @@ ServerEvents.recipes((event) => {
                     1
                 ),
                 [
-                    (`${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
-                    mi('wax')),
+                    `${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
+                    mi('wax'),
                 ]
             )
             .id(
@@ -297,6 +308,23 @@ ServerEvents.recipes((event) => {
             .id(
                 st(
                     `waxed_oxidized_${recipe.split(':')[1]}_from_oxidized_${recipe.split(':')[1]}`
+                )
+            );
+    });
+
+    // -- SPECTRAL DECORATIONS WAXING COMPAT -- //
+
+    const OX_PHASES = ['', 'exposed_', 'weathered_', 'oxidized_'];
+
+    OX_PHASES.forEach((phase) => {
+        event
+            .shapeless(Item.of(sd(`waxed_${phase}copper_tubing`), 1), [
+                { item: sd(`${phase}copper_tubing`) },
+                { item: mc('honeycomb') },
+            ])
+            .id(
+                st(
+                    `waxed_${phase}copper_tubing_from_${phase}copper_tubing_honeycomb`
                 )
             );
     });

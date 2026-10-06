@@ -637,7 +637,6 @@ StartupEvents.registry('item', (event) => {
         .create('angel_ring')
         .unstackable()
         .rarity('Epic')
-        .glow(true)
         .tag('curios:ring')
         .attachCuriosCapability(
             CuriosJSCapabilityBuilder.create()
@@ -655,7 +654,6 @@ StartupEvents.registry('item', (event) => {
         .create('fireproof_ring')
         .unstackable()
         .rarity('Epic')
-        .glow(true)
         .tag('curios:ring')
         .fireResistant()
         .attachCuriosCapability(

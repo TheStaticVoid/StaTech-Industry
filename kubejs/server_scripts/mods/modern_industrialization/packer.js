@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
         ei('tool/nano_suit_chestplate_quantum_upgrade'),
         ei('tool/nano_suit_leggings_quantum_upgrade'),
         ei('tool/nano_suit_boots_quantum_upgrade'),
-        ei('tool/nano_saber_quantum_upgrade')
+        ei('tool/nano_saber_quantum_upgrade'),
     ];
     REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
@@ -269,7 +269,7 @@ ServerEvents.recipes((event) => {
         ['ae2:64k_crafting_storage', 'ae2:cell_component_64k'],
         ['ae2:256k_crafting_storage', 'ae2:cell_component_256k'],
         ['ae2:crafting_monitor', 'ae2:storage_monitor'],
-    ]
+    ];
     CRAFTING_UNITS.forEach((crafting_unit) => {
         let itemName = crafting_unit[0].split(':')[1];
         packer(
@@ -283,7 +283,7 @@ ServerEvents.recipes((event) => {
             ],
             [{ amount: 1, item: `${crafting_unit[0]}` }]
         );
-    })
+    });
 
     // -- BRASS INGOT TO BLOCK -- //
     packer(
@@ -316,6 +316,16 @@ ServerEvents.recipes((event) => {
         200,
         [{ amount: 4, item: mc('string') }],
         [{ amount: 1, item: mc('white_wool') }]
+    );
+
+    // -- TNT -- //
+    packer(
+        event,
+        st('tnt_from_explosive'),
+        2,
+        200,
+        [{ amount: 4, item: nm('explosive') }],
+        [{ amount: 1, item: mc('tnt') }]
     );
 
     // ---------------------- //
@@ -400,9 +410,9 @@ ServerEvents.recipes((event) => {
         200,
         [
             { amount: 1, item: ei('nano_helmet') },
-            { amount: 1, item: mi('quantum_helmet') }
+            { amount: 1, item: mi('quantum_helmet') },
         ],
-        [{ amount: 1, item: ei('nano_quantum_helmet')}]
+        [{ amount: 1, item: ei('nano_quantum_helmet') }]
     );
 
     // -- QUANTUM NANO CHESTPLATE -- //
@@ -413,9 +423,9 @@ ServerEvents.recipes((event) => {
         200,
         [
             { amount: 1, item: ei('nano_gravichestplate') },
-            { amount: 1, item: mi('quantum_chestplate') }
+            { amount: 1, item: mi('quantum_chestplate') },
         ],
-        [{ amount: 1, item: ei('nano_quantum_chestplate')}]
+        [{ amount: 1, item: ei('nano_quantum_chestplate') }]
     );
 
     // -- QUANTUM NANO LEGGINGS -- //
@@ -426,9 +436,9 @@ ServerEvents.recipes((event) => {
         200,
         [
             { amount: 1, item: ei('nano_leggings') },
-            { amount: 1, item: mi('quantum_leggings') }
+            { amount: 1, item: mi('quantum_leggings') },
         ],
-        [{ amount: 1, item: ei('nano_quantum_leggings')}]
+        [{ amount: 1, item: ei('nano_quantum_leggings') }]
     );
 
     // -- QUANTUM NANO BOOTS -- //
@@ -439,9 +449,9 @@ ServerEvents.recipes((event) => {
         200,
         [
             { amount: 1, item: ei('nano_boots') },
-            { amount: 1, item: mi('quantum_boots') }
+            { amount: 1, item: mi('quantum_boots') },
         ],
-        [{ amount: 1, item: ei('nano_quantum_boots')}]
+        [{ amount: 1, item: ei('nano_quantum_boots') }]
     );
 
     // -- QUANTUM NANO SABER -- //
@@ -452,8 +462,8 @@ ServerEvents.recipes((event) => {
         200,
         [
             { amount: 1, item: ei('nano_saber') },
-            { amount: 1, item: mi('quantum_sword') }
+            { amount: 1, item: mi('quantum_sword') },
         ],
-        [{ amount: 1, item: ei('nano_quantum_saber')}]
+        [{ amount: 1, item: ei('nano_quantum_saber') }]
     );
 });

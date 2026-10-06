@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:item/generated",
+  "loader": "neoforge:item_layers",
+  "textures": {
+    "layer0": "kubejs:item/fireproof_ring",
+    "layer1": "kubejs:item/fireproof_ring_glow"
+  },
+  "neoforge_data": {
+    "layers": {
+      "1": { "block_light": 15, "sky_light": 15 }
+    }
+  }
+}
