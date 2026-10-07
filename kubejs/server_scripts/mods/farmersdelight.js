@@ -52,6 +52,62 @@ ServerEvents.recipes((event) => {
         .shapeless(Item.of(mc('sugar'), 3), [nm('maple_syrup_bottle')])
         .id(st('sugar_from_syrup'));
 
+    // -- BASKET OF POUTINE -- //
+    event
+        .shapeless(Item.of(kj('poutine_basket'), 1), [
+            mc('paper'),
+            kj('fries'),
+            kj('gravy_bucket'),
+            '#brewinandchewin:foods/cheese_wedge',
+        ])
+        .id(st('poutine_basket'));
+
+    // --------------------//
+    // ----- COOKING ----- //
+    // --------------------//
+
+    // -- FRIES -- //
+    cooking(
+        event,
+        st('french_fries'),
+        1.0,
+        null,
+        null,
+        [
+            {
+                item: rd('cooking_oil'),
+            },
+            {
+                item: rd('potato_slices'),
+            },
+        ],
+        { count: 1, id: kj('fries') }
+    );
+
+    // -- GRAVY BUCKET -- //
+    cooking(
+        event,
+        st('gravy_bucket'),
+        1.0,
+        null,
+        { count: 1, id: mc('bucket') },
+        [
+            {
+                item: rd('cooking_oil'),
+            },
+            {
+                item: cr('wheat_flour'),
+            },
+            {
+                item: fd('chicken_soup'),
+            },
+            {
+                item: fd('minced_beef'),
+            },
+        ],
+        { count: 2, id: kj('gravy_bucket') }
+    );
+
     // --------------------//
     // ----- CUTTING ----- //
     // --------------------//

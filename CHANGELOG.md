@@ -62,7 +62,8 @@ Largely a bugfix patch, but does bring a few new enhancements and additions! Thi
 - **Added 3D Spectrum drinks. Thanks jonnyloaf!**
 - Updated README.
 - Fixed assorted lang issues.
-- **Added Poutine.**
+- **Added Poutine, Gravy, and French Fries.**
+- Cleaned up custom food tagging.
 
 ## [2.0.1]
 

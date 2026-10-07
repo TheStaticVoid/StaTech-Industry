@@ -46,7 +46,18 @@ ItemEvents.toolTierRegistry((event) => {
 });
 
 ItemEvents.modification((event) => {
+    // -- SET CHARCOAL BLOCK BURN TIME -- //
+    event.modify('kubejs:charcoal_block', (item) => {
+        item.burnTime = 14600;
+    });
+
+    // -- GRAVY BUCKET CRAFTING REMAINDER -- //
+    event.modify('kubejs:gravy_bucket', (item) => {
+        item.craftingRemainder = Item.of(mc('bucket')).item;
+    });
+
     // -- HAMMER SPEED AND DURABILITY CHANGES -- //
+
     // -- IRON HAMMERS -- //
     event.modify('justhammers:iron_hammer', (item) => {
         item.maxDamage = 937; // 3.75
@@ -920,10 +931,4 @@ StartupEvents.registry('item', (event) => {
         .create('steel_helmet', 'helmet')
         .maxDamage(326)
         .material('kubejs:steel');
-});
-
-ItemEvents.modification((event) => {
-    event.modify('kubejs:charcoal_block', (item) => {
-        item.burnTime = 14600;
-    });
 });
