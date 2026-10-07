@@ -3775,7 +3775,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "ExtendedAE-1.21-2.2.40-neoforge.jar",
+                    "file_name": "ExtendedAE-1.21-2.2.41-neoforge.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -3783,20 +3783,20 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9078/385/ExtendedAE-1.21-2.2.40-neoforge.jar",
-                    "id": "9078385",
+                    "url": "https://edge.forgecdn.net/files/9087/65/ExtendedAE-1.21-2.2.41-neoforge.jar",
+                    "id": "9087065",
                     "parent_id": "892005",
                     "hashes": {
-                        "sha1": "aaf40cb5cec489f04b9623040c3a301648e568bd",
-                        "md5": "99151d9a5f8528dcd25bea2f3db822da"
+                        "sha1": "35c40ae1fa8db6b8d9caf37c7394a8bd7fd6f16b",
+                        "md5": "3faca9ad877e85e85d97482d0b1a84c8"
                     },
                     "required_dependencies": [
-                        "223794",
                         "1173950",
-                        "957920"
+                        "957920",
+                        "223794"
                     ],
-                    "size": 5915607,
-                    "date_published": "2026-10-06T08:53:08.850Z"
+                    "size": 5913297,
+                    "date_published": "2026-10-07T06:48:20.470Z"
                 }
             ]
         },
@@ -7016,7 +7016,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "Modern-Industrialization-2.5.9.jar",
+                    "file_name": "Modern-Industrialization-2.5.10.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -7024,18 +7024,18 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9039/18/Modern-Industrialization-2.5.9.jar",
-                    "id": "9039018",
+                    "url": "https://edge.forgecdn.net/files/9091/242/Modern-Industrialization-2.5.10.jar",
+                    "id": "9091242",
                     "parent_id": "405388",
                     "hashes": {
-                        "sha1": "e42ea7759b693f654c41a04ce72ca6178c8e7dbb",
-                        "md5": "67e3bee09e37cf09116d081fd8d239eb"
+                        "sha1": "7f62032ad45a996cd4964a03c5359a5f86a55a54",
+                        "md5": "982e323ba606e2a1f4809d8c076d8694"
                     },
                     "required_dependencies": [
                         "1173950"
                     ],
-                    "size": 7276669,
-                    "date_published": "2026-10-02T16:27:02.667Z"
+                    "size": 7292458,
+                    "date_published": "2026-10-07T17:36:09.933Z"
                 }
             ]
         },
@@ -7690,6 +7690,40 @@
                     ],
                     "size": 388133,
                     "date_published": "2025-06-26T08:09:25.130Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "NVy7c2F7JjZa4j1d",
+            "type": "RESOURCE_PACK",
+            "side": "CLIENT",
+            "slug": {
+                "curseforge": "onions-mi-animated-components"
+            },
+            "name": {
+                "curseforge": "Onion's MI Animated Components"
+            },
+            "id": {
+                "curseforge": "1729308"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "Evan's MI Animated Components.zip",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9081/678/Evan's MI Animated Components.zip",
+                    "id": "9081678",
+                    "parent_id": "1729308",
+                    "hashes": {
+                        "sha1": "ee2c77d4bf05c8644aaf48bac0639f5d32e5128b",
+                        "md5": "2099a8811ea622f07b1328ce40495d18"
+                    },
+                    "required_dependencies": [],
+                    "size": 20600,
+                    "date_published": "2026-10-06T15:52:22.207Z"
                 }
             ]
         },

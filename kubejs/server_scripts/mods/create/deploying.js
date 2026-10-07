@@ -43,12 +43,4 @@ ServerEvents.recipes((event) => {
             [{ id: ap(`${OX_PHASES[i - 1]}copper_nub`) }]
         );
     }
-
-    // -- BULK WASHING MI ITEM PIPES -- //
-    splashing(
-        event,
-        st('item_pipe_cleaning'),
-        [{ tag: mi('item_pipes') }],
-        [{ id: mi('item_pipe') }]
-    );
 });

@@ -1,5 +1,5 @@
 // -----------------------------------------
-// CREATED BY STATIC FOR USE IN
+// CREATED BY GRONK FOR USE IN
 // STATECH INDUSTRY 2
 // -----------------------------------------
 

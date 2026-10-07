@@ -32,9 +32,9 @@ ServerEvents.recipes((event) => {
     ];
     FARMERSDELIGHT_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
-    // ------------------------//
+    // ----------------------- //
     // --- SHAPED CRAFTING --- //
-    // ------------------------//
+    // ----------------------- //
 
     // -- CANVAS FROM FLAX -- //
     event
@@ -43,9 +43,9 @@ ServerEvents.recipes((event) => {
         })
         .id(st('canvas_from_flax'));
 
-    // ---------------------------//
+    // -------------------------- //
     // --- SHAPELESS CRAFTING --- //
-    // ---------------------------//
+    // -------------------------- //
 
     // -- SUGAR FROM MAPLE SYRUP -- //
     event
@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
 
     // -- BASKET OF POUTINE -- //
     event
-        .shapeless(Item.of(kj('poutine_basket'), 1), [
+        .shapeless(Item.of(kj('poutine_basket'), 2), [
             mc('paper'),
             kj('fries'),
             kj('gravy_bucket'),
@@ -62,9 +62,9 @@ ServerEvents.recipes((event) => {
         ])
         .id(st('poutine_basket'));
 
-    // --------------------//
+    // ------------------- //
     // ----- COOKING ----- //
-    // --------------------//
+    // ------------------- //
 
     // -- FRIES -- //
     cooking(
@@ -105,12 +105,12 @@ ServerEvents.recipes((event) => {
                 item: fd('minced_beef'),
             },
         ],
-        { count: 2, id: kj('gravy_bucket') }
+        { count: 1, id: kj('gravy_bucket') }
     );
 
-    // --------------------//
+    // ------------------- //
     // ----- CUTTING ----- //
-    // --------------------//
+    // ------------------- //
 
     // -- EGGPLANT CUTTING FIX -- //
     cutting(
@@ -124,9 +124,128 @@ ServerEvents.recipes((event) => {
         ]
     );
 
-    // --------------------//
+    // --------------- //
+    // -- DEPLOYING -- //
+    // --------------- //
+
+    // -- FRIES -- //
+    deploying(
+        event,
+        st('deploying/french_fries'),
+        false,
+        [
+            {
+                item: rd('potato_slices'),
+            },
+            {
+                item: rd('cooking_oil'),
+            },
+        ],
+        [
+            {
+                id: kj('fries'),
+            },
+        ]
+    );
+
+    // ------------ //
+    // -- MIXING -- //
+    // ------------ //
+
+    // -- COOKING OIL -- //
+    mixing(
+        event,
+        st('mixing/cooking_oil'),
+        'heated',
+        [
+            {
+                tag: rd('cooking_oil_ingredients'),
+            },
+            {
+                tag: rd('cooking_oil_ingredients'),
+            },
+            {
+                tag: rd('cooking_oil_ingredients'),
+            },
+            {
+                tag: rd('cooking_oil_ingredients'),
+            },
+            {
+                tag: rd('cooking_oil_ingredients'),
+            },
+            {
+                tag: rd('cooking_oil_ingredients'),
+            },
+        ],
+        [
+            {
+                amount: 500,
+                id: kj('cooking_oil'),
+            },
+        ]
+    );
+
+    // -- GRAVY -- //
+    mixing(
+        event,
+        st('mixing/gravy'),
+        'heated',
+        [
+            {
+                type: 'neoforge:single',
+                amount: 250,
+                fluid: kj('cooking_oil'),
+            },
+            {
+                item: cr('wheat_flour'),
+            },
+            { item: fd('minced_beef') },
+            {
+                type: 'neoforge:single',
+                amount: 333,
+                fluid: dc('chicken_soup'),
+            },
+        ],
+        [
+            {
+                amount: 1000,
+                id: kj('gravy'),
+            },
+        ]
+    );
+
+    // -- BASKET OF POUTINE -- //
+    mixing(
+        event,
+        st('mixing/poutine_basket'),
+        null,
+        [
+            {
+                item: mc('paper'),
+            },
+            {
+                item: kj('fries'),
+            },
+            {
+                tag: bc('foods/cheese_wedge'),
+            },
+            {
+                type: 'neoforge:single',
+                amount: 1000,
+                fluid: kj('gravy'),
+            },
+        ],
+        [
+            {
+                count: 2,
+                id: kj('poutine_basket'),
+            },
+        ]
+    );
+
+    // ------------------- //
     // ----- SMOKING ----- //
-    // --------------------//
+    // ------------------- //
 
     // -- EGGPLANT SMOKING FIX -- //
     event
@@ -209,6 +328,7 @@ ServerEvents.tags('item', (event) => {
         rd('fried_chicken'),
         rd('fried_mushrooms'),
         rd('coffee_braised_beef'),
+        kj('gravy_bucket'),
     ];
     foodsToTag.forEach((food) => {
         event.add('c:foods', food);
@@ -269,6 +389,7 @@ ServerEvents.tags('item', (event) => {
         cud('fish_taco'),
         cud('chicken_taco'),
         cud('pork_wrap'),
+        kj('gravy_bucket'),
     ];
     snacksToTag.forEach((food) => {
         event.add(fd('snacks'), food);
@@ -285,6 +406,7 @@ ServerEvents.tags('item', (event) => {
         rd('syrup_coffee'),
         rd('pumpkin_coffee'),
         rd('cherry_blossom_coffee'),
+        kj('gravy_bucket'),
     ];
     drinksToTag.forEach((food) => {
         event.add(fd('drinks'), food);

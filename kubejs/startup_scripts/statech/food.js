@@ -11,6 +11,7 @@ StartupEvents.registry('item', (event) => {
         .rarity('Uncommon')
         .tag('c:foods')
         .tag(fd('snacks'))
+        .tag(cr('upright_on_belt'))
         .tooltip('§6A tasty snack for a hard working industrialist')
         .food((f) => {
             f.nutrition(6).saturation(0.6).effect(fd('nourishment'), 600, 0, 1);
@@ -21,6 +22,8 @@ StartupEvents.registry('item', (event) => {
         .rarity('Rare')
         .tag('c:foods')
         .tag('c:drinks')
+        .tag(cr('upright_on_belt'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
         .tooltip('§eUnleash the Greg')
         .food((f) => {
             f.nutrition(6)
@@ -33,6 +36,8 @@ StartupEvents.registry('item', (event) => {
         .create('sulfuric_acid_bottle')
         .tag('c:foods')
         .tag('c:drinks')
+        .tag(cr('upright_on_belt'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
         .food((f) => {
             f.nutrition(3).saturation(0.2).effect('poison', 200, 0, 1);
         })
@@ -43,6 +48,7 @@ StartupEvents.registry('item', (event) => {
         .rarity('Epic')
         .tag('c:foods')
         .tag(fd('meals'))
+        .tag(cr('upright_on_belt'))
         .tooltip('§3Part of a §obalanced§r§3 diet')
         .food((f) => {
             f.nutrition(14)
@@ -56,6 +62,8 @@ StartupEvents.registry('item', (event) => {
         .rarity('Rare')
         .tag('c:foods')
         .tag(fd('meals'))
+        .tag(cr('upright_on_belt'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
         .tooltip('§bTons of calories!')
         .maxStackSize(1)
         .food((f) => {
@@ -102,6 +110,8 @@ StartupEvents.registry('item', (event) => {
         .create('bepsi')
         .tag('c:foods')
         .tag('c:drinks')
+        .tag(cr('upright_on_belt'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
         .food((f) => {
             f.nutrition(6).saturation(0.4);
         })
@@ -111,6 +121,8 @@ StartupEvents.registry('item', (event) => {
         .create('coke_cola')
         .tag('c:foods')
         .tag('c:drinks')
+        .tag(cr('upright_on_belt'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
         .food((f) => {
             f.nutrition(10).saturation(0.5);
         })
@@ -120,6 +132,8 @@ StartupEvents.registry('item', (event) => {
         .create('greg_cola')
         .tag('c:foods')
         .tag('c:drinks')
+        .tag(cr('upright_on_belt'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
         .food((f) => {
             f.nutrition(6).saturation(0.5);
         })
@@ -152,6 +166,8 @@ StartupEvents.registry('item', (event) => {
         .create('nuka_cola')
         .tag('c:foods')
         .tag('c:drinks')
+        .tag(cr('upright_on_belt'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
         .food((f) => {
             f.nutrition(16).saturation(0.5);
         })
@@ -162,6 +178,7 @@ StartupEvents.registry('item', (event) => {
         .tag('c:foods')
         .tag('c:foods/cookie')
         .tag(fd('sweets'))
+        .tag(cr('upright_on_belt'))
         .food((f) => {
             f.nutrition(30)
                 .saturation(0.7)
@@ -172,6 +189,7 @@ StartupEvents.registry('item', (event) => {
         .create('abs_building_brick')
         .tag('c:foods')
         .tag(fd('snacks'))
+        .tag(cr('upright_on_belt'))
         .food((f) => {
             f.nutrition(8).saturation(0.6);
         });
@@ -180,11 +198,13 @@ StartupEvents.registry('item', (event) => {
         .create('fruity_pebbles')
         .tag('c:foods')
         .tag(fd('meals'))
+        .tag(cr('upright_on_belt'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
         .tooltip('§bTasty!')
         .maxStackSize(1)
         .food((f) => {
-            f.nutrition(14)
-                .saturation(0.75)
+            f.nutrition(12)
+                .saturation(0.5)
                 .effect(fd('nourishment'), 1200, 0, 1);
         });
 
@@ -192,11 +212,13 @@ StartupEvents.registry('item', (event) => {
         .create('poutine_basket')
         .tag('c:foods')
         .tag(fd('meals'))
+        .tag(cr('upright_on_belt'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
         .tooltip('§bThank you Canada!')
-        .maxStackSize(1)
+        .maxStackSize(16)
         .food((f) => {
-            f.nutrition(12)
-                .saturation(0.5)
+            f.nutrition(14)
+                .saturation(0.75)
                 .effect(fd('nourishment'), 6000, 0, 1);
         });
 
@@ -204,15 +226,18 @@ StartupEvents.registry('item', (event) => {
         .create('fries')
         .tag('c:foods')
         .tag(fd('snacks'))
+        .tag(cr('upright_on_belt'))
         .food((f) => {
             f.nutrition(4).saturation(0.25);
         });
 
     event
         .create('gravy_bucket')
+        .unstackable()
         .tag('c:foods')
         .tag('c:drinks')
         .tag(fd('snacks'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
         .food((f) => {
             f.nutrition(1).saturation(0.25).effect('slowness', 300, 1, 1);
         })

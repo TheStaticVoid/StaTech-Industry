@@ -290,6 +290,7 @@ RecipeViewerEvents.removeCategories((event) => {
         'modern_industrialization:telescope',
         dc('mechanical_cutting'),
         mc('tag_recipes/item'),
+        mc('tag_recipes/fluid'),
         mc('tag_recipes/block'),
     ]);
 });

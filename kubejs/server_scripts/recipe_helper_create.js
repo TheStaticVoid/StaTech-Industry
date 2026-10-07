@@ -8,6 +8,7 @@
  * @typedef {{item?: Special.Item, tag?: string}} ShapelessInput An type of {item: id}, {type: 'neoforge:single', amount: X, fluid: id}, or {tag: id}
  * @typedef {{item: Special.Item, count: number, chance?: number?}} CRItem A tuple of {id, count?, chance?}
  * @typedef {{type: 'neoforge:single', amount: number, fluid: string?}} CRFluid A tuple of {type: 'neoforge:single', amount, fluid}
+ * @typedef {{type: string, ingredients: ShapelessInput[], results: ShapelessInput[]}} CRSequencedInput A data type for each sequenced assembly step
  */
 
 // -- CREATE COMPACTING -- //
@@ -66,6 +67,44 @@ let deploying = (event, id, keep_item, item_inputs, item_outputs) => {
     };
 
     if (item_inputs) newRecipe['ingredients'] = item_inputs;
+    if (item_outputs) newRecipe['results'] = item_outputs;
+
+    event.custom(newRecipe).id(id);
+};
+
+// -- CREATE EMPTYING -- //
+/**
+ * Emptying
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!ShapelessInput} item_inputs - An instance of {item: id} or {tag: id}
+ * @param {!ShapelessInput, !CRFluid} outputs - An ordered pair of {item: id} or {tag: id} and {type: 'neoforge:single', amount: X, fluid: id}.
+ */
+let emptying = (event, id, item_inputs, outputs) => {
+    let newRecipe = {
+        type: cr('emptying'),
+    };
+
+    if (item_inputs) newRecipe['ingredients'] = item_inputs;
+    if (outputs) newRecipe['results'] = outputs;
+
+    event.custom(newRecipe).id(id);
+};
+
+// -- CREATE FILLING -- //
+/**
+ * Filling
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!ShapelessInput, !CRFluid} inputs - An ordered pair of {item: id} or {tag: id} and {type: 'neoforge:single', amount: X, fluid: id}. First instance is the item being filled, second instance is the fluid being dispensed
+ * @param {!ShapelessInput} item_outputs - An instance of {item: id}, {type: 'neoforge:single', amount: X, fluid: id}, or {tag: id}
+ */
+let filling = (event, id, inputs, item_outputs) => {
+    let newRecipe = {
+        type: cr('filling'),
+    };
+
+    if (inputs) newRecipe['ingredients'] = inputs;
     if (item_outputs) newRecipe['results'] = item_outputs;
 
     event.custom(newRecipe).id(id);
@@ -155,6 +194,39 @@ let splashing = (event, id, item_inputs, item_outputs) => {
 
     if (item_inputs) newRecipe['ingredients'] = item_inputs;
     if (item_outputs) newRecipe['results'] = item_outputs;
+
+    event.custom(newRecipe).id(id);
+};
+
+// -- CREATE SEQUENCED ASSEMBLY -- //
+/**
+ * Sequenced Assembly
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!ShapelessInput} base_item - An instance of {item: id}, {type: 'neoforge:single', amount: X, fluid: id}, or {tag: id}
+ * @param {!number} loop_count: Number of loops to complete the craft
+ * @param {!CRSequencedInput[]} steps - Array of sequenced inputs.
+ * @param {!CRItem[]} item_outputs - Output ItemStack {item: 'spectrum:onyx_shard', count: 2, chance: 0.5}
+ * @param {?{id: string}} recipe_intermediate - Namespaced identifier of the intermediate item
+ */
+let sequencedAssembly = (
+    event,
+    id,
+    base_item,
+    loop_count,
+    steps,
+    item_outputs,
+    recipe_intermediate
+) => {
+    let newRecipe = {
+        type: cr('sequenced_assembly'),
+        ingredient: base_item,
+        loops: loop_count,
+    };
+
+    if (steps) newRecipe['sequence'] = steps;
+    if (item_outputs) newRecipe['results'] = item_outputs;
+    if (recipe_intermediate) newRecipe.transitional_item = recipe_intermediate;
 
     event.custom(newRecipe).id(id);
 };
