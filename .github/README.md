@@ -17,11 +17,11 @@ We recommend the use of [Prism Launcher](https://prismlauncher.org/) for handlin
 
 For more detail and for custom launch options/Java 25 notes, please consult this [wiki page](https://github.com/TheStaticVoid/StaTech-Industry/wiki/%5BNEW%5D-Installation-(1.21.1-NeoForge)).
 
-For server setup information, please consult this [wiki page](https://github.com/TheStaticVoid/StaTech-Industry/wiki/%5BNEW%5D-Server-Setup-(1.21.1-NeoForge))
+For server setup information, please consult this [wiki page](https://github.com/TheStaticVoid/StaTech-Industry/wiki/%5BNEW%5D-Server-Setup-(1.21.1-NeoForge)).
 
 To build the modpack directly from this repository, you can clone it and use [Pakku](https://github.com/juraj-hrivnak/Pakku/releases/) to make an instance file that you can use in Prism Launcher. You can learn how to use it from the [pakku documentation](https://juraj-hrivnak.github.io/Pakku/installing-pakku.html#install-manually).
 
-[Compatible (but not included) Mods](https://github.com/TheStaticVoid/StaTech-Industry/wiki/Additional-and-compatible-mods-not-included-in-the-modpack)
+[Compatible (but not included) Mods](https://github.com/TheStaticVoid/StaTech-Industry/wiki/Additional-and-compatible-mods-not-included-in-the-modpack).
 
 ## 2.0 Contributors
 
