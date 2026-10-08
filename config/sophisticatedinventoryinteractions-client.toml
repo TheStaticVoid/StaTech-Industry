@@ -1,0 +1,35 @@
+#Client settings
+[client]
+	#Remembers your search phrase when you open another inventory.
+	rememberSearchPhrase = true
+
+	#Screen rules accept full class names or prefixes ending in '*'.
+	#They only apply to screens that are safe for inventory interactions.
+	[client.compatibility]
+		#Choose whether compatible screens are allowed unless listed below.
+		#Allowed Values: DENY_BY_DEFAULT, ALLOW_BY_DEFAULT
+		defaultScreenPolicy = "ALLOW_BY_DEFAULT"
+		#Only adds inventory controls to containers with at least this many usable slots.
+		#With the default, anvils (2) are skipped while dispensers and droppers (9) are included.
+		# Default: 9
+		# Range: > 0
+		minimumActionableContainerSlots = 9
+
+		[client.compatibility.exclude]
+			screenClasses = []
+
+		[client.compatibility.include]
+			screenClasses = []
+
+		[client.compatibility.slotExclusions]
+			#Lets you leave specific slots out of inventory interactions.
+			#Use screenClass=menuSlotId[,menuSlotId|-range...]. Screen class prefixes can end in '*'.
+			#Excluded slots are ignored by the slot count, search, sorting, and transfer buttons.
+			#Examples: net.minecraft.client.gui.screens.inventory.HorseInventoryScreen=0,1 or com.example.client.*=0-2,5
+			screenSlotOverrides = ["net.minecraft.client.gui.screens.inventory.HorseInventoryScreen=0,1"]
+
+	#Moves the inventory buttons for specific screens.
+	#Use screenClass=x,y.
+	#Example: net.minecraft.client.gui.screens.inventory.DispenserScreen=54,0
+	[client.layout]
+		anchorOffsetOverrides = ["net.minecraft.client.gui.screens.inventory.DispenserScreen=54,0"]
