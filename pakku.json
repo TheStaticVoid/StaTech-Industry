@@ -1,6 +1,6 @@
 {
   "name": "StaTech Industry",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "staitc, Purple Dino, & GronkDev",
   "release_type": "release",
   "overrides": [
@@ -131,6 +131,9 @@
     "notenoughrecipebook": {
       "side": "CLIENT"
     },
+    "onions-mi-animated-components": {
+      "side": "CLIENT"
+    },
     "overloaded-armor-bar": {
       "side": "CLIENT"
     },
@@ -187,6 +190,9 @@
       "update_strategy": "NONE"
     },
     "cultural-delights": {
+      "update_strategy": "NONE"
+    },
+    "kubejs": {
       "update_strategy": "NONE"
     }
   }

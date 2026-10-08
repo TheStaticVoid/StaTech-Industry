@@ -1,0 +1,189 @@
+{
+  "parent": "brewinandchewin:main/cook_fiery_fondue",
+  "criteria": {
+    "brewinandchewin:apple_jelly": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:apple_jelly"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:cheesy_pasta": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:cheesy_pasta"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:cocoa_fudge": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:cocoa_fudge"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:fiery_fondue": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:fiery_fondue"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:glow_berry_marmalade": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:glow_berry_marmalade"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:ham_and_cheese_sandwich": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:ham_and_cheese_sandwich"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:horror_lasagna": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:horror_lasagna"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:jerky": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:jerky"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:kimchi": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:kimchi"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:kippers": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:kippers"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:pickled_pickles": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:pickled_pickles"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "kubejs:pizza_slice": {
+      "conditions": {
+        "item": {
+          "items": "kubejs:pizza_slice"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:scarlet_pierogi": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:scarlet_pierogi"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:sweet_berry_jam": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:sweet_berry_jam"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    },
+    "brewinandchewin:vegetable_omelet": {
+      "conditions": {
+        "item": {
+          "items": "brewinandchewin:vegetable_omelet"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "brewinandchewin.advancement.chef_of_the_ages.desc"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "brewinandchewin:fiery_fondue_pot"
+    },
+    "title": {
+      "translate": "brewinandchewin.advancement.chef_of_the_ages"
+    }
+  },
+  "requirements": [
+    [
+      "brewinandchewin:kimchi"
+    ],
+    [
+      "brewinandchewin:jerky"
+    ],
+    [
+      "brewinandchewin:pickled_pickles"
+    ],
+    [
+      "brewinandchewin:kippers"
+    ],
+    [
+      "brewinandchewin:cocoa_fudge"
+    ],
+    [
+      "brewinandchewin:vegetable_omelet"
+    ],
+    [
+      "brewinandchewin:cheesy_pasta"
+    ],
+    [
+      "brewinandchewin:scarlet_pierogi"
+    ],
+    [
+      "brewinandchewin:horror_lasagna"
+    ],
+    [
+      "kubejs:pizza_slice"
+    ],
+    [
+      "brewinandchewin:fiery_fondue"
+    ],
+    [
+      "brewinandchewin:ham_and_cheese_sandwich"
+    ],
+    [
+      "brewinandchewin:sweet_berry_jam"
+    ],
+    [
+      "brewinandchewin:glow_berry_marmalade"
+    ],
+    [
+      "brewinandchewin:apple_jelly"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}

@@ -1,5 +1,5 @@
 // -----------------------------------------
-// CREATED BY STATIC FOR USE IN
+// CREATED BY GRONK FOR USE IN
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
@@ -38,7 +38,7 @@ ServerEvents.recipes((event) => {
     // -- NO MANS LAND REMOVED REICPES -- //
     const NOMANSLAND_REMOVED_RECIPES = [
         mc('mushroom_stew'),
-        mc('smoker'),
+        nm('smoker'),
         fd('cooking/mushroom_stew'),
         fd('cooking/mushroom_rice'),
         nm('integration/farmersdelight/pancake'),

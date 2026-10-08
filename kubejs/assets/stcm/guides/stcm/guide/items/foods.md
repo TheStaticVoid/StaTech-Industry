@@ -24,6 +24,9 @@ item_ids:
     - kubejs:concrete_pizza
     - kubejs:pizza_dough
     - kubejs:uncooked_pizza
+    - kubejs:fries
+    - kubejs:gravy_bucket
+    - kubejs:poutine_basket
     - modern_industrialization:mixed_ingot_iridium
     - yet_another_industrialization:cachaca
     - yet_another_industrialization:ai_slop
@@ -57,6 +60,11 @@ item_ids:
   <ItemImage id="kubejs:sulfuric_acid_bottle" />
   <ItemImage id="yet_another_industrialization:ultradense_metal_ball_burger" />
   <ItemImage id="kubejs:uranium_cereal" />
+</Row>
+<Row>
+  <ItemImage id="kubejs:fries" />
+  <ItemImage id="kubejs:gravy_bucket" />
+  <ItemImage id="kubejs:poutine_basket" />
 </Row>
 
 These foods are great for your health! (do not try these in real life)

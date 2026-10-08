@@ -1,0 +1,64 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "spectrum:item/suspicious_brew",
+		"particle": "spectrum:item/suspicious_brew"
+	},
+	"elements": [
+		{
+			"from": [6, 0, 6],
+			"to": [10, 1, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 7]},
+			"faces": {
+				"north": {"uv": [3, 3, 5, 3.5], "texture": "#0"},
+				"east": {"uv": [3, 3, 5, 3.5], "texture": "#0"},
+				"south": {"uv": [3, 3, 5, 3.5], "texture": "#0"},
+				"west": {"uv": [3, 3, 5, 3.5], "texture": "#0"},
+				"up": {"uv": [5, 3.5, 7, 5.5], "texture": "#0"},
+				"down": {"uv": [3, 3.5, 5, 5.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 5, 6],
+			"to": [10, 7, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 5, 7]},
+			"faces": {
+				"north": {"uv": [0, 4, 2, 5], "texture": "#0"},
+				"east": {"uv": [0, 5, 2, 6], "texture": "#0"},
+				"south": {"uv": [0, 4, 2, 5], "texture": "#0"},
+				"west": {"uv": [0, 5, 2, 6], "texture": "#0"},
+				"up": {"uv": [0, 6, 2, 8], "texture": "#0"},
+				"down": {"uv": [0, 8, 2, 10], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 7, 7],
+			"to": [9, 10, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 7, 7]},
+			"faces": {
+				"north": {"uv": [2, 4, 3, 5.5], "texture": "#0"},
+				"east": {"uv": [2, 5.5, 3, 7], "texture": "#0"},
+				"south": {"uv": [2, 4, 3, 5.5], "texture": "#0"},
+				"west": {"uv": [2, 5.5, 3, 7], "texture": "#0"},
+				"up": {"uv": [2, 7, 3, 8], "texture": "#0"},
+				"down": {"uv": [2, 8, 3, 9], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 1, 5],
+			"to": [11, 5, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 1, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 3, 2], "texture": "#0"},
+				"east": {"uv": [0, 2, 3, 4], "texture": "#0"},
+				"south": {"uv": [0, 0, 3, 2], "texture": "#0"},
+				"west": {"uv": [0, 2, 3, 4], "texture": "#0"},
+				"up": {"uv": [3, 0, 6, 3], "texture": "#0"},
+				"down": {"uv": [6, 0, 9, 3], "texture": "#0"}
+			}
+		}
+	],
+	"display": {}
+}

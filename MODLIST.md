@@ -5,8 +5,6 @@
 - [AI\-Improvements](https://www.curseforge.com/projects/233019) by BuiltBrokenModding
 - [Accelerated Decay](https://www.curseforge.com/projects/699872) by ErrorMikey
 - [Advanced Peripherals](https://www.curseforge.com/projects/431725) by Srendi
-- [AdvancedCoreInfo](https://www.curseforge.com/projects/1661923) by Yanny
-- [AdvancedLootInfo](https://www.curseforge.com/projects/1205426) by Yanny
 - [Advancement Plaques](https://www.curseforge.com/projects/499826) by Grend
 - [All The Leaks](https://www.curseforge.com/projects/1091339) by Uncandango
 - [AlmostUnified](https://www.curseforge.com/projects/633823) by Almost Reliable
@@ -22,6 +20,7 @@
 - [Bad Wither No Cookie Reloaded](https://www.curseforge.com/projects/261251) by Kreezxil, Eleksploded
 - [Balm](https://www.curseforge.com/projects/531761) by BlayTheNinth
 - [Bank Storage](https://www.curseforge.com/projects/916710) by Natte
+- [Better Advanced Tooltips](https://www.curseforge.com/projects/1637623) by latvian\.dev
 - [Better Advancements](https://www.curseforge.com/projects/272515) by way2muchnoise
 - [Better Compatibility Checker](https://www.curseforge.com/projects/551894) by Gaz\(Gaz492\)
 - [Better ModList](https://www.curseforge.com/projects/1089803) by foxy, Prospector, haykam821, TerraformersMC
@@ -65,18 +64,24 @@
 - [Create](https://www.curseforge.com/projects/328085) by simibubi
 - [Create Crafts & Additions](https://www.curseforge.com/projects/439890) by MRH0
 - [Create Deco](https://www.curseforge.com/projects/509285) by Kayla, Talrey, Ordana, Cassian
+- [Create: Central Kitchen](https://www.curseforge.com/projects/820977) by DragonsPlus
+- [Create: Dragons Plus](https://www.curseforge.com/projects/1216624) by DragonsPlus
+- [Create:Schematic Checker](https://www.curseforge.com/projects/1357430) by Pink\_Cats
 - [Cryonic Config](https://www.curseforge.com/projects/1208896) by Slainlight
+- [Cultural Creators](https://www.curseforge.com/projects/953832) by Flomik
 - [Cultural Delights](https://www.curseforge.com/projects/574622) by Developer: NCP Bails \| Art: NCP Bails, Raspmary, Bagels, Nive
 - [Cupboard mod](https://www.curseforge.com/projects/326652) by Someaddon
 - [Curios API](https://www.curseforge.com/projects/309927) by C4
 - [Decorative Blocks Reborn](https://www.curseforge.com/projects/1327768) by Lilypuree, Stohun, Big\_Energy
 - [Default Options](https://www.curseforge.com/projects/232131) by BlayTheNinth
+- [Delightful Creators](https://www.curseforge.com/projects/1275340) by Flomik
 - [Drippy Loading Screen](https://www.curseforge.com/projects/511770) by Keksuccino
 - [EMI](https://www.curseforge.com/projects/580555) by Emi
 - [EMI Enchanting](https://www.curseforge.com/projects/936713) by fzzyhmstrs
 - [EMI Loot](https://www.curseforge.com/projects/681783) by fzzyhmstrs, lxly9 \(art\), unilock \(ports\)
 - [EMI Ores](https://www.curseforge.com/projects/974009) by Abbie
 - [EMI Professions \(EMIP\)](https://www.curseforge.com/projects/1065904) by Mrbysco, ShyNieke
+- [Effortless Building](https://www.curseforge.com/projects/302113) by Requios
 - [ElevatorMod](https://www.curseforge.com/projects/250832) by VsnGamer
 - [Elytra Slot](https://www.curseforge.com/projects/317716) by Illusive Soulworks
 - [EnderStorage](https://www.curseforge.com/projects/245174) by ChickenBones, covers1624
@@ -115,12 +120,11 @@
 - [Forgiving Void](https://www.curseforge.com/projects/271009) by BlayTheNinth
 - [FramedBlocks](https://www.curseforge.com/projects/441647) by XFactHD
 - [Functional Storage](https://www.curseforge.com/projects/556861) by Buuz135, Rid
-- [Fusion](https://www.curseforge.com/projects/854949) by SuperMartijn642
+- [Fusion](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures) by SuperMartijn642
 - [Fzzy Config](https://www.curseforge.com/projects/1005914) by fzzyhmstrs
 - [Gadgets Against Grind](https://www.curseforge.com/projects/694962) by MaxNeedsSnacks
 - [GeckoLib 4](https://www.curseforge.com/projects/388172) by Gecko, Eliot, AzureDoom, DerToaster, Tslat, Witixin
 - [Glodium](https://www.curseforge.com/projects/957920) by GlodBlock
-- [Gnetum](https://www.curseforge.com/projects/1220460) by decce
 - [GuideME](https://www.curseforge.com/projects/1173950) by shartte
 - [Hang Glider](https://www.curseforge.com/projects/852668) by gr8pefish, Fuzs
 - [I'm Fast](https://www.curseforge.com/projects/1111501) by Bielhiss
@@ -135,7 +139,7 @@
 - [Iris](https://www.curseforge.com/projects/455508) by coderbot, IMS212
 - [Ixeris](https://www.curseforge.com/projects/1285307) by decce
 - [Jade](https://www.curseforge.com/projects/324717) by Snownee
-- [Jade Addons](https://www.curseforge.com/projects/583345) by Snownee
+- [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons) by Snownee
 - [JamLib](https://www.curseforge.com/projects/623764) by Jamalam
 - [JourneyMap Integration](https://www.curseforge.com/projects/525447) by frankV
 - [Journeymap\-NeoForge](https://www.curseforge.com/projects/32274) by Mysticdrew, Techbrew, MemeSapiens
@@ -143,7 +147,7 @@
 - [Just Another Void Dimension](https://www.curseforge.com/projects/370890) by UnRealDinnerbone
 - [Just Enough Breeding](https://www.curseforge.com/projects/899386) by Christofmeg
 - [Just Enough Effects Descriptions](https://www.curseforge.com/projects/532286) by MehVahdJukaar
-- [Just Enough Items](https://www.curseforge.com/projects/238222) by mezz
+- [Just Enough Items](https://www.curseforge.com/minecraft/mc-mods/jei) by mezz
 - [Just Hammers](https://www.curseforge.com/projects/681606) by ErrorMikey
 - [Konkrete](https://www.curseforge.com/projects/410295) by Keksuccino
 - [KubeJS](https://www.curseforge.com/projects/238086) by latvian\.dev
@@ -157,7 +161,6 @@
 - [Lithostitched](https://www.curseforge.com/projects/936015) by Apollo
 - [Little Big Redstone](https://www.curseforge.com/projects/1180560) by Swedz
 - [Load My F\*\*\*ing Tags](https://www.curseforge.com/projects/656346) by Blodhgarm
-- [LootJS](https://www.curseforge.com/projects/570630) by AlmostReliable
 - [Lootintegrations mod](https://www.curseforge.com/projects/580689) by Someaddon
 - [Lootr](https://www.curseforge.com/projects/361276) by Noobanidus
 - [Luminax](https://www.curseforge.com/projects/1165932) by Satherov
@@ -165,6 +168,7 @@
 - [MEGA Cells](https://www.curseforge.com/projects/622112) by 90
 - [MI Sound Addon](https://www.curseforge.com/projects/910125) by staitc
 - [MI Tweaks](https://www.curseforge.com/projects/1068413) by Swedz
+- [MI Utilities](https://git.quantumgarbage.com/bop/MIUtilities) by esoterica
 - [Measurements](https://www.curseforge.com/projects/478559) by Mrbysco
 - [Melody](https://www.curseforge.com/projects/938643) by Keksuccino
 - [MidnightLib](https://www.curseforge.com/projects/488090) by TeamMidnightDust, Motschen
@@ -206,6 +210,7 @@
 - [Revelationary](https://www.curseforge.com/projects/656526) by DaFuqs
 - [Rhino](https://www.curseforge.com/projects/416294) by latvian\.dev, Mozilla
 - [Right Click Harvest](https://www.curseforge.com/projects/452834) by Jamalam
+- [Rustic Delight](https://www.curseforge.com/projects/1106612) by PhantomWing
 - [Scannable](https://www.curseforge.com/projects/266784) by Sangar
 - [Searchables](https://www.curseforge.com/projects/858542) by Jaredlll08
 - [Showcase Item](https://www.curseforge.com/projects/627196) by Ultramega
@@ -217,11 +222,13 @@
 - [Smoothchunk mod](https://www.curseforge.com/projects/582327) by Someaddon
 - [Sodium](https://www.curseforge.com/projects/394468) by JellySquid \(jellysquid3\), IMS212
 - [Sodium Extra](https://www.curseforge.com/projects/447673) by FlashyReese
-- [Sophisticated Backpacks](https://www.curseforge.com/projects/422301) by P3pp3rF1y, Ridanisaurus
-- [Sophisticated Core](https://www.curseforge.com/projects/618298) by P3pp3rF1y
+- [Sooty Chimneys](https://www.curseforge.com/minecraft/mc-mods/sooty-chimneys) by mortuusars
+- [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks) by P3pp3rF1y, Ridanisaurus
+- [Sophisticated Core](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core) by P3pp3rF1y
 - [Sophisticated Inventory Interactions](https://www.curseforge.com/projects/1491239) by P3pp3rF1y
 - [Sophisticated Item Actions](https://www.curseforge.com/projects/1419142) by P3pp3rF1y
-- [Sophisticated Storage](https://www.curseforge.com/projects/619320) by P3pp3rF1y, Ridanisaurus
+- [Sophisticated Storage](https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage) by P3pp3rF1y, Ridanisaurus
+- [Spectral Decorations](https://www.curseforge.com/minecraft/mc-mods/spectral-decorations) by Brothers\_trouble, Garbage Data, Detrilogue , DaFuqs
 - [Spectrum](https://www.curseforge.com/projects/556967) by DaFuqs, Azzyypaaras, Noaaan, Electro\_593
 - [Spice of Life: Carrot Edition](https://www.curseforge.com/projects/277616) by Cazsius, Talonos, juliand665, Mrbysco
 - [Spiky Spikes](https://www.curseforge.com/projects/666944) by Fuzs
@@ -231,7 +238,7 @@
 - [Structory: Towers](https://www.curseforge.com/projects/783522) by Botany, Starmute, catter1
 - [Structure Layout Optimizer](https://www.curseforge.com/projects/1087831) by TelepathicGrunt
 - [SuperMartijn642's Config Library](https://www.curseforge.com/projects/438332) by SuperMartijn642
-- [SuperMartijn642's Core Lib](https://www.curseforge.com/projects/454372) by SuperMartijn642
+- [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) by SuperMartijn642
 - [Supplementaries](https://www.curseforge.com/projects/412082) by MehVahdJukaar, Plantkillable
 - [Tank Storage](https://www.curseforge.com/projects/1032670) by Natte
 - [Tesseract API](https://www.curseforge.com/projects/1067672) by Swedz
@@ -239,6 +246,7 @@
 - [TipTheScales](https://www.curseforge.com/projects/282313) by Jaredlll08
 - [Tips](https://www.curseforge.com/projects/306549) by Darkhax
 - [Titanium](https://www.curseforge.com/projects/287342) by TheCodedOne, Buuz135
+- [Tool Belt](https://www.curseforge.com/projects/260262) by gigaherz
 - [Torchmaster](https://www.curseforge.com/projects/254268) by Xalcon
 - [Trade Cycling](https://www.curseforge.com/projects/570431) by Max Henkel
 - [Trading Post](https://www.curseforge.com/projects/539057) by Fuzs
@@ -259,7 +267,6 @@
 - [YetAnotherConfigLib](https://www.curseforge.com/projects/667299) by isXander
 - [You're in Grave Danger](https://www.curseforge.com/projects/544912) by b1n\_ry
 - [Zume](https://www.curseforge.com/projects/927564) by Nolij \(@xdMatthewbx\#1337\)
-- chloride\-NEOFORGE\-mc1\.21\.1\-v1\.8\.1\.jar\.duplicate
 - kotlinforforge\-5\.12\.0\-all
 - [lootintegrations\_ctov mod](https://www.curseforge.com/projects/1135500) by Someaddon
 - [spark](https://www.curseforge.com/projects/361579) by Luck

@@ -439,36 +439,42 @@
 					count: 68L
 					id: "2168926F923CB68F"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "235B207E1325395B"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_pillar_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "0928E6EE856DA738"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_gemstones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "4C66E7FD102446FE"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:chiseled_polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "1CEA066A62EC707C"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:notched_polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					advancement: "spectrum:build_basic_pedestal_structure"
 					criterion: ""
 					id: "2D09EEBF6E3DA412"
+					optional_task: true
 					type: "advancement"
 				}
 			]
@@ -957,37 +963,42 @@
 			tasks: [
 				{
 					id: "6665C5BB5E971B65"
-					item: { count: 1, id: "spectrum:fusion_shrine_basalt" }
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fusion_shrines)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 				{
 					count: 77L
 					id: "715FCED80BE32380"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "76F2B65B0FAA16EE"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_slabs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "1D9EA15A12A2932B"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_pillar_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "5EBB86365FEE23B3"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_gemstones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "553DB49E0661F33A"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:chiseled_polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1404,36 +1415,42 @@
 					count: 92L
 					id: "0F128E5E9CEF7374"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 28L
 					id: "17A001916D7A24ED"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_pillar_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "7D730639A33A83F0"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_crest_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
 					id: "7C0E9D75A384FF71"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:gemstone_chiseled_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 8L
 					id: "3138E0798EBA517D"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:gemstone_lamps)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "47852A1841768877"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_gemstones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2118,6 +2135,9 @@
 		}
 		{
 			dependencies: ["10B87446BD9C118D"]
+			icon: {
+				id: "spectrum:cinderhearth"
+			}
 			id: "7C6E6A8331C52A08"
 			rewards: [
 				{
@@ -2140,11 +2160,48 @@
 					xp: 100
 				}
 			]
-			tasks: [{
-				id: "4EC12E9E53D29EE0"
-				item: { count: 1, id: "spectrum:cinderhearth" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4EC12E9E53D29EE0"
+					item: { count: 1, id: "spectrum:cinderhearth" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "34FFA655667FC069"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4D8AADFF8AFCC29A"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_crest_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "6D3B43F41E191976"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:glass_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "3482F37A7918D697"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:chiseled_polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "3C0432710CB36B1B"
+					item: { count: 1, id: "minecraft:lava_bucket" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 22.0d
 			y: 14.5d
 		}
@@ -2225,6 +2282,9 @@
 		}
 		{
 			dependencies: ["279FF920B3CA44FF"]
+			icon: {
+				id: "spectrum:enchanter"
+			}
 			id: "37DD0F1D584C6A05"
 			rewards: [
 				{
@@ -2235,6 +2295,8 @@
 						id: "spectrum:gilded_book"
 					}
 					id: "1D7A45772F4FCB6E"
+					permission_level: 2
+					silent: true
 					type: "command"
 				}
 				{
@@ -2249,11 +2311,62 @@
 				}
 			]
 			size: 3.0d
-			tasks: [{
-				id: "6FD1B948AE06C325"
-				item: { count: 1, id: "spectrum:enchanter" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6FD1B948AE06C325"
+					item: { count: 1, id: "spectrum:enchanter" }
+					type: "item"
+				}
+				{
+					count: 159L
+					id: "1E5366B6D510D2C7"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0571F3A7E3F3FD79"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_slabs)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "5E15ABEF1D674965"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_pillar_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "51F9C532AAA92194"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:gemstone_lamps)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "4AA909EA18E53036"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:spectrum_item_bowls)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2ADB5179865E28C1"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_gemstones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "038CDC3104A04D35"
+					item: { count: 1, id: "spectrum:liquid_crystal_bucket" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 17.0d
 			y: 4.5d
 		}
@@ -2530,15 +2643,6 @@
 			dependencies: ["25EA41ED16945A2C"]
 			id: "22B201A3EF3E77D2"
 			rewards: [
-				{
-					count: 4
-					id: "66F38A5E13CC659E"
-					item: {
-						count: 1
-						id: "spectrum:midnight_aberration"
-					}
-					type: "item"
-				}
 				{
 					id: "3333D7CBA29E81B4"
 					table_id: 8875738191125079778L
@@ -3225,6 +3329,8 @@
 						id: "spectrum:enchanter"
 					}
 					id: "4275DA182DE50F12"
+					permission_level: 2
+					silent: true
 					type: "command"
 				}
 				{
@@ -4901,24 +5007,28 @@
 					count: 36L
 					id: "50A48F2E66939A37"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_crest_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 12L
 					id: "2CC82C3F68C2B199"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "7F45C2A885F40EA7"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:onyx_chiseled_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
 					count: 4L
 					id: "63E8463932F73803"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:polished_gemstones)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -5069,6 +5179,9 @@
 		}
 		{
 			dependencies: ["2ED7EE071A7C3ED0"]
+			icon: {
+				id: "spectrum:pedestal_moonstone"
+			}
 			id: "680FAEB2C903AF57"
 			rewards: [
 				{
@@ -5083,12 +5196,21 @@
 				}
 			]
 			size: 2.0d
-			tasks: [{
-				advancement: "spectrum:lategame/build_complex_pedestal_structure"
-				criterion: ""
-				id: "40F5D55D00392794"
-				type: "advancement"
-			}]
+			tasks: [
+				{
+					count: 28L
+					id: "5C85DCB284DFED98"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:moonstone_chiseled_blocks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					advancement: "spectrum:lategame/build_complex_pedestal_structure"
+					criterion: ""
+					id: "40F5D55D00392794"
+					type: "advancement"
+				}
+			]
 			x: 17.0d
 			y: 21.5d
 		}

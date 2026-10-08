@@ -8,9 +8,7 @@ ServerEvents.recipes((event) => {
     let st = (id) => `statech:extended_industrialization/canning_machine/${id}`;
 
     // -- CANNING MACHINE REMOVED RECIPES -- //
-    let REMOVED_RECIPE = [
-        //    ei(''),
-    ];
+    const REMOVED_RECIPE = [];
     REMOVED_RECIPE.forEach((id) => event.remove({ id: id }));
 
     // -- SULFURIC ACID BOTTLE -- //
@@ -22,6 +20,65 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mc('glass_bottle') }],
         [{ amount: 1, item: kj('sulfuric_acid_bottle') }],
         [{ amount: 100, fluid: mi('sulfuric_acid') }]
+    );
+
+    // -- COOKING OIL BOTTLE -- //
+    canningMachine(
+        event,
+        st('cooking_oil_bottling'),
+        2,
+        100,
+        [{ amount: 1, item: mc('glass_bottle') }],
+        [{ amount: 1, item: rd('cooking_oil') }],
+        [{ amount: 250, fluid: kj('cooking_oil') }]
+    );
+
+    canningMachine(
+        event,
+        st('cooking_oil_unbottling'),
+        2,
+        100,
+        [{ amount: 1, item: rd('cooking_oil') }],
+        [{ amount: 1, item: mc('glass_bottle') }],
+        null,
+        [{ amount: 250, fluid: kj('cooking_oil') }]
+    );
+
+    // -- GRAVY -- //
+    canningMachine(
+        event,
+        st('gravy_bucketing'),
+        2,
+        100,
+        [{ amount: 1, item: mc('bucket') }],
+        [{ amount: 1, item: kj('gravy_bucket') }],
+        [{ amount: 1000, fluid: kj('gravy') }]
+    );
+
+    canningMachine(
+        event,
+        st('gravy_unbucketing'),
+        2,
+        100,
+        [{ amount: 1, item: kj('gravy_bucket') }],
+        [{ amount: 1, item: mc('bucket') }],
+        null,
+        [{ amount: 1000, fluid: kj('gravy') }]
+    );
+
+    canningMachine(
+        event,
+        st('gravy_canning'),
+        2,
+        100,
+        [
+            { amount: 1, item: ei('tin_can') },
+            { amount: 1, item: kj('gravy_bucket') },
+        ],
+        [
+            { amount: 1, item: ei('canned_food') },
+            { amount: 1, item: mc('bucket') },
+        ]
     );
 
     // -- STATECH ENERGY -- //

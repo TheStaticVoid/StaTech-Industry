@@ -32,18 +32,22 @@ ServerEvents.recipes((event) => {
         mc('iron_helmet'),
         mc('iron_chestplate'),
         mc('iron_leggings'),
-        mc('iron_boots')
+        mc('iron_boots'),
     ];
     VANILLA_DELETED.forEach((id) => event.remove({ id: id }));
 
     const ALT_METALS = ['lead', 'silver', 'tin', 'nickel'];
+
+    // ------------------------//
+    // --- SHAPED CRAFTING --- //
+    // ------------------------//
 
     // -- TOTEM OF UNDYING -- //
     event
         .shaped(mc('totem_of_undying'), ['EGE', 'GSG', 'EGE'], {
             E: '#c:gems/emerald',
             G: '#c:storage_blocks/gold',
-            S: mc('nether_star')
+            S: mc('nether_star'),
         })
         .id(st('totem_of_undying'));
 
@@ -79,50 +83,94 @@ ServerEvents.recipes((event) => {
         })
         .id(st('bucket'));
 
+    // -- STICKS -- //
     event
         .shaped('16x ' + mc('stick'), ['L', 'L'], {
             L: '#minecraft:logs',
         })
         .id(st('sticks_from_log'));
 
+    // -- TNT -- //
+    event
+        .shaped(mc('tnt'), ['GSG', 'SGS', 'GSG'], {
+            G: mc('gunpowder'),
+            S: '#minecraft:sand',
+        })
+        .id(st('tnt'));
+
     // -- BUCKET ALT METALS -- //
-    ALT_METALS.forEach(id => {
-        event.shaped(mc('bucket'), [ 'P P', ' P '], { P: `#c:plates/${id}` }).id(st(`bucket_${id}`));
+    ALT_METALS.forEach((id) => {
+        event
+            .shaped(mc('bucket'), ['P P', ' P '], { P: `#c:plates/${id}` })
+            .id(st(`bucket_${id}`));
     });
 
     // -- HOPPER ALT METALS -- //
-    ALT_METALS.forEach(id => {
-        event.shaped(mc('hopper'), [ 'I I', 'ICI', ' I '], { I: `#c:ingots/${id}`, C: '#c:chests/wooden' }).id(st(`hopper_${id}`));
+    ALT_METALS.forEach((id) => {
+        event
+            .shaped(mc('hopper'), ['I I', 'ICI', ' I '], {
+                I: `#c:ingots/${id}`,
+                C: '#c:chests/wooden',
+            })
+            .id(st(`hopper_${id}`));
     });
 
     // -- DETECTOR RAIL ALT METALS -- //
-    ALT_METALS.forEach(id => {
-        event.shaped('6x ' + mc('detector_rail'), [ 'I I', 'IPI', 'IRI'], {I: `#c:ingots/${id}`, P: mc('stone_pressure_plate'), R: '#c:dusts/redstone' }).id(st(`detector_rail_${id}`));
+    ALT_METALS.forEach((id) => {
+        event
+            .shaped('6x ' + mc('detector_rail'), ['I I', 'IPI', 'IRI'], {
+                I: `#c:ingots/${id}`,
+                P: mc('stone_pressure_plate'),
+                R: '#c:dusts/redstone',
+            })
+            .id(st(`detector_rail_${id}`));
     });
 
     // -- ACTIVATOR RAIL ALT METALS -- //
-    ALT_METALS.forEach(id => {
-        event.shaped('6x ' + mc('activator_rail'), ['ISI', 'IRI', 'ISI'], { I: `#c:ingots/${id}`, S: '#c:rods/wooden', R: mc('redstone_torch') }).id(st(`activator_rail_${id}`));
+    ALT_METALS.forEach((id) => {
+        event
+            .shaped('6x ' + mc('activator_rail'), ['ISI', 'IRI', 'ISI'], {
+                I: `#c:ingots/${id}`,
+                S: '#c:rods/wooden',
+                R: mc('redstone_torch'),
+            })
+            .id(st(`activator_rail_${id}`));
     });
 
     // -- RAIL ALT METALS -- //
-    ALT_METALS.forEach(id => {
-        event.shaped('16x ' + mc('rail'), ['I I', 'ISI', 'I I'], { I: `#c:ingots/${id}`, S: '#c:rods/wooden' }).id(st(`rail_${id}`));
+    ALT_METALS.forEach((id) => {
+        event
+            .shaped('16x ' + mc('rail'), ['I I', 'ISI', 'I I'], {
+                I: `#c:ingots/${id}`,
+                S: '#c:rods/wooden',
+            })
+            .id(st(`rail_${id}`));
     });
 
     // -- CAULDRON ALT METALS -- //
-    ALT_METALS.forEach(id => {
-        event.shaped(mc('cauldron'), [ 'I I', 'I I', 'III'], { I: `#c:ingots/${id}`}).id(st(`cauldron_${id}`));
+    ALT_METALS.forEach((id) => {
+        event
+            .shaped(mc('cauldron'), ['I I', 'I I', 'III'], {
+                I: `#c:ingots/${id}`,
+            })
+            .id(st(`cauldron_${id}`));
     });
 
     // -- ANVIL ALT METALS -- //
-    ALT_METALS.forEach(id => {
-        event.shaped(mc('anvil'), [ 'BBB', ' I ', 'III'], { B: `#c:storage_blocks/${id}`, I: `#c:ingots/${id}` }).id(st(`anvil_${id}`));
+    ALT_METALS.forEach((id) => {
+        event
+            .shaped(mc('anvil'), ['BBB', ' I ', 'III'], {
+                B: `#c:storage_blocks/${id}`,
+                I: `#c:ingots/${id}`,
+            })
+            .id(st(`anvil_${id}`));
     });
 
     // -- MINECART ALT METALS -- //
-    ALT_METALS.forEach(id => {
-        event.shaped(mc('minecart'), ['I I', 'III'], { I: `#c:ingots/${id}` }).id(st(`minecart_${id}`));
+    ALT_METALS.forEach((id) => {
+        event
+            .shaped(mc('minecart'), ['I I', 'III'], { I: `#c:ingots/${id}` })
+            .id(st(`minecart_${id}`));
     });
 
     // -- CLOCK -- //
@@ -151,27 +199,139 @@ ServerEvents.recipes((event) => {
     // -- IRON ARMOR -- //
     event
         .shaped(mc('iron_helmet'), ['III', 'I I'], {
-            I: mi('iron_plate')
+            I: mi('iron_plate'),
         })
         .id(st('iron_helmet'));
 
     event
         .shaped(mc('iron_chestplate'), ['I I', 'III', 'III'], {
-            I: mi('iron_plate')
+            I: mi('iron_plate'),
         })
         .id(st('iron_chestplate'));
 
     event
         .shaped(mc('iron_leggings'), ['III', 'I I', 'I I'], {
-            I: mi('iron_plate')
+            I: mi('iron_plate'),
         })
         .id(st('iron_leggings'));
 
     event
         .shaped(mc('iron_boots'), ['I I', 'I I'], {
-            I: mi('iron_plate')
+            I: mi('iron_plate'),
         })
         .id(st('iron_boots'));
+
+    // ---------------------------//
+    // --- SHAPELESS CRAFTING --- //
+    // ---------------------------//
+
+    // -- MI WAX WAXING COMPAT -- //
+
+    const ITEMS_TO_WAX = [
+        cr('copper_tiles'),
+        cr('copper_tile_slab'),
+        cr('copper_tile_stairs'),
+        cr('copper_shingles'),
+        cr('copper_shingle_slab'),
+        cr('copper_shingle_stairs'),
+        sd('copper_tubing'),
+        mc('copper_bulb'),
+        mc('copper_door'),
+        mc('copper_trapdoor'),
+        mc('chiseled_copper'),
+        mc('copper_grate'),
+        ap('copper_nub'),
+    ];
+
+    ITEMS_TO_WAX.forEach((recipe) => {
+        // -- WAXED -- //
+        event
+            .shapeless(
+                Item.of(
+                    `${recipe.split(':')[0]}:waxed_${recipe.split(':')[1]}`,
+                    1
+                ),
+                [recipe, mi('wax')]
+            )
+            .id(
+                st(`waxed_${recipe.split(':')[1]}_from_${recipe.split(':')[1]}`)
+            );
+
+        // -- EXPOSED -- //
+        event
+            .shapeless(
+                Item.of(
+                    `${recipe.split(':')[0]}:waxed_exposed_${recipe.split(':')[1]}`,
+                    1
+                ),
+                [
+                    `${recipe.split(':')[0]}:exposed_${recipe.split(':')[1]}`,
+                    mi('wax'),
+                ]
+            )
+            .id(
+                st(
+                    `waxed_exposed_${recipe.split(':')[1]}_from_exposed_${recipe.split(':')[1]}`
+                )
+            );
+
+        // -- WEATHERED -- //
+        event
+            .shapeless(
+                Item.of(
+                    `${recipe.split(':')[0]}:waxed_weathered_${recipe.split(':')[1]}`,
+                    1
+                ),
+                [
+                    `${recipe.split(':')[0]}:weathered_${recipe.split(':')[1]}`,
+                    mi('wax'),
+                ]
+            )
+            .id(
+                st(
+                    `waxed_weathered_${recipe.split(':')[1]}_from_weathered_${recipe.split(':')[1]}`
+                )
+            );
+
+        // -- OXIDIZED -- //
+        event
+            .shapeless(
+                Item.of(
+                    `${recipe.split(':')[0]}:waxed_oxidized_${recipe.split(':')[1]}`,
+                    1
+                ),
+                [
+                    `${recipe.split(':')[0]}:oxidized_${recipe.split(':')[1]}`,
+                    mi('wax'),
+                ]
+            )
+            .id(
+                st(
+                    `waxed_oxidized_${recipe.split(':')[1]}_from_oxidized_${recipe.split(':')[1]}`
+                )
+            );
+    });
+
+    // -- SPECTRAL DECORATIONS WAXING COMPAT -- //
+
+    const OX_PHASES = ['', 'exposed_', 'weathered_', 'oxidized_'];
+
+    OX_PHASES.forEach((phase) => {
+        event
+            .shapeless(Item.of(sd(`waxed_${phase}copper_tubing`), 1), [
+                { item: sd(`${phase}copper_tubing`) },
+                { item: mc('honeycomb') },
+            ])
+            .id(
+                st(
+                    `waxed_${phase}copper_tubing_from_${phase}copper_tubing_honeycomb`
+                )
+            );
+    });
+
+    // -----------------//
+    // --- SMITHING --- //
+    // -----------------//
 
     // -- DIAMOND ARMOR AND TOOLS -- //
 
@@ -184,18 +344,17 @@ ServerEvents.recipes((event) => {
         ['axe', 'Axe'],
         ['hoe', 'Hoe'],
         ['sword', 'Sword'],
-        ['shovel', 'Shovel' ],
-    ]
+        ['shovel', 'Shovel'],
+    ];
 
-    diamondToolsArmorsSet.forEach(item =>{
+    diamondToolsArmorsSet.forEach((item) => {
         event.smithing(
-        `minecraft:diamond_${item[0]}`,
-        'kubejs:diamond_upgrade_smithing_template',
-        `kubejs:steel_${item[0]}`,
-        'minecraft:diamond'
-        )
-    })
-
+            `minecraft:diamond_${item[0]}`,
+            'kubejs:diamond_upgrade_smithing_template',
+            `kubejs:steel_${item[0]}`,
+            'minecraft:diamond'
+        );
+    });
 });
 
 ServerEvents.tags('item', (event) => {

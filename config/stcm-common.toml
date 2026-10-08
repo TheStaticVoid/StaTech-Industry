@@ -14,3 +14,5 @@ prospector_min_deposit_size = 32
 prospector_proximity = 16
 #Prevents Spectrum "Bottle of Ruin" from being placed in the world. Replaces the behavior of clicking on bedrock, mainly for servers
 prevent_ruin = false
+#The number of ticks to wait before you can use the prospector pick again.
+prospector_cooldown = 100

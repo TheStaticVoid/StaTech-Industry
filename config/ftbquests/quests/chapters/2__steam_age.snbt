@@ -3014,10 +3014,11 @@
 			id: "547CCB129043BEE6"
 			rewards: [
 				{
+					count: 2
 					id: "505CA3C700EF3FF5"
 					item: {
 						count: 1
-						id: "kubejs:coin_rare"
+						id: "kubejs:coin_common"
 					}
 					type: "item"
 				}
@@ -3027,9 +3028,8 @@
 					xp: 10
 				}
 				{
-					exclude_from_claim_all: true
 					id: "5D7ED58AC1DF8248"
-					table_id: 4928307245111940372L
+					table_id: 3409273157072801564L
 					type: "random"
 				}
 			]

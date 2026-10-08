@@ -5,7 +5,7 @@ Join us on [Discord](https://discord.gg/RDaJEnN3uS). Click [here](https://github
 
 ## Installation
 
-I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling modded installs. The following instructions assume you have Prism installed with your Minecraft account signed in already. To install the latest version of StaTech Industry, follow these steps:
+We recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling modded installs. The following instructions assume you have Prism installed with your Minecraft account signed in already. To install the latest version of StaTech Industry, follow these steps:
 
 1. Navigate to the [Releases](https://github.com/TheStaticVoid/StaTech-Industry/releases) and download the .zip of the latest version.
 2. In the Prism Launcher, click "Add Instance" then select the "Import from zip" tab on the left. Navigate to where you downloaded the .zip and click Ok.
@@ -13,7 +13,15 @@ I recommend the use of [Prism Launcher](https://prismlauncher.org/) for handling
 4. Click "Ok" and allow for the process to finish.
 5. Click "Edit" under the StaTech Industry instance and ensure you have at least 4-6 GB or RAM dedicated to the pack, as well as your version of Java is Java 21.
 
-To download the modpack from this repository, you can clone it and use [Pakku](https://github.com/juraj-hrivnak/Pakku/releases/) to make an instance file that you can use in Prism Launcher. You can learn how to use it from the [pakku documentation](https://juraj-hrivnak.github.io/Pakku/installing-pakku.html#install-manually).
+## Advanced Setup (OPTIONAL)
+
+For more detail and for custom launch options/Java 25 notes, please consult this [wiki page](https://github.com/TheStaticVoid/StaTech-Industry/wiki/%5BNEW%5D-Installation-(1.21.1-NeoForge)).
+
+For server setup information, please consult this [wiki page](https://github.com/TheStaticVoid/StaTech-Industry/wiki/%5BNEW%5D-Server-Setup-(1.21.1-NeoForge)).
+
+To build the modpack directly from this repository, you can clone it and use [Pakku](https://github.com/juraj-hrivnak/Pakku/releases/) to make an instance file that you can use in Prism Launcher. You can learn how to use it from the [pakku documentation](https://juraj-hrivnak.github.io/Pakku/installing-pakku.html#install-manually).
+
+[Compatible (but not included) Mods](https://github.com/TheStaticVoid/StaTech-Industry/wiki/Additional-and-compatible-mods-not-included-in-the-modpack).
 
 ## 2.0 Contributors
 
@@ -22,6 +30,7 @@ To download the modpack from this repository, you can clone it and use [Pakku](h
 - @DmitryProskurin - Quest fixes and recipe modifications
 - @fmbellomy - Pakku + PanPack migration / Regular contributor
 - @Spagles - Fixed trial chamber load lag
+- @onion-evan - Sprite work for custom items / MI Animated Components resource pack
 
 ## 1.0 Contributors
 
@@ -35,3 +44,13 @@ To download the modpack from this repository, you can clone it and use [Pakku](h
 - @DmitryProskurin - Quest fixes and recipe modifications
 - @JustinMullin - Quest fixes
 - @Quezlar - Quest typo fixes
+
+### Additional Credits
+
+- Uses [Mono7 by xlifi](https://modrinth.com/resourcepack/mono7) for the prospector pick chat messages.
+- Uses the Angel Ring texture from [SimpleAngelRing by LordDeatHunter](https://github.com/ModsByLeo/SimpleAngelRing) as a basis for the Angel Ring and the Fireproof Ring textures.
+- Uses the Electronic Circuit texture from [Modern Industrialization](https://github.com/AztechMC/Modern-Industrialization) as a basis for the Withered SoC texture.
+- Uses the Basic/Advanced Card texture from [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) as a basis for the Mob/Boss Model textures.
+- Uses the material_dust_quicksilver_amethyst_mixture.png texture from [Unused Textures](https://github.com/malcolmriley/unused-textures/) as a basis for the artifact_dust.png texture.
+- Uses the material_dust_green_mix_4.png texture from [Unused Textures](https://github.com/malcolmriley/unused-textures/) as a basis for the scrap.png texture.
+- Uses [jonnyloaf's Spectrum Alcohol Models](https://jonnyloaf.art/#) for the Spectrum alcohol 3D models.
