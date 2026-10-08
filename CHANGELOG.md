@@ -2,8 +2,12 @@
 
 ## [2.0.2]
 
-Largely a bugfix patch, but does bring a few new enhancements and additions! This pack version includes an updated Spectrum version which fixes more (different!) Spectrum issues! Also comes with a new MI update improving some documentation and fixing some bugs.
+Largely a bugfix patch, but does bring a few new enhancements and additions! This pack version includes an updated Spectrum version which fixes more (different!) Spectrum issues! 
+Also comes with a new MI update improving some documentation and fixing some bugs. A companion mod update was pushed out as well.
 
+As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
+
+### General Changelog
 - **Add more advancements for items throughout the pack.**
 - Fixed some miscellaneous Spectrum quest issues.
 - Removed the Advanced Peripherals villager house spawn.
@@ -64,6 +68,16 @@ Largely a bugfix patch, but does bring a few new enhancements and additions! Thi
 - Fixed assorted lang issues.
 - **Added Poutine, Gravy, and French Fries.**
 - Cleaned up custom food tagging.
+- **Added some integration between custom food items and Delightful Creators.**
+- Cleaned up EI advancements.
+
+### Companion Mod Changelog
+- **Reworked Prospector Pick internals and GUI.**
+- Fixed WATUT water rendering bug with mixin.
+- **Fixed NeoForge Hammer being broken by flowing liquids.**
+- Replaced deprecated methods.
+- Stopped attempting to unobfuscate unobfuscated mod classes/methods.
+
 
 ## [2.0.1]
 

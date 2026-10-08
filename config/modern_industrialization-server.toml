@@ -10,9 +10,17 @@ baseItemPipeTransfer = 16
 spawnWithGuideBook = false
 #Grant guidebook when a player respawns after death.
 respawnWithGuideBook = false
+#How much steam should be produced per mb of water that is boiled.
+# Default: 16
+# Range: 1 ~ 1000
+steamPerWater = 16
 
 [recipes]
 	#Generate plant oil recipes in the centrifuge for all compostable items.
 	compostableToPlantOil = true
 	#Generate cutting machine recipes for all stonecutter recipes.
 	stonecutterToCuttingMachine = true
+
+[compat]
+	#Enable the FTB Quests integration (if present) for machine outputs counting towards quests.
+	ftbQuestsIntegration = false
