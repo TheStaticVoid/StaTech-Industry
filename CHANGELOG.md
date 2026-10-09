@@ -6,6 +6,10 @@ TODO: WRITE SOME BS
 
 As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
 
+### Breaking Changes
+
+-
+
 ### General Changelog
 
 -

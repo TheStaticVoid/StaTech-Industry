@@ -5166,86 +5166,6 @@
 		}
 		{
 			disable_toast: true
-			id: "7F6ADDC1DA14B006"
-			rewards: [{
-				id: "5DA09DF640830C56"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "126AA2CC6C97B6DE"
-				item: { count: 1, id: "culturaldelights:squid" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: -10.5d
-		}
-		{
-			disable_toast: true
-			id: "58F22080E27DE8A3"
-			rewards: [{
-				id: "20C97E24E4B19CBD"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4C36F68D0969DB59"
-				item: { count: 1, id: "culturaldelights:cooked_squid" }
-				type: "item"
-			}]
-			x: 1.0d
-			y: -10.5d
-		}
-		{
-			disable_toast: true
-			id: "243150FDEDF94801"
-			rewards: [{
-				id: "0B1C3B00F8859A35"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "067D3AE71E8BCB2D"
-				item: { count: 1, id: "culturaldelights:glow_squid" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: -10.5d
-		}
-		{
-			disable_toast: true
-			id: "67A7071B8CCD827D"
-			rewards: [{
-				id: "4709B8FF993DEE3F"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "303D2E1782F6AB2F"
-				item: { count: 1, id: "culturaldelights:raw_calamari" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: -9.5d
-		}
-		{
-			disable_toast: true
-			id: "23D21A1AD5F17C8A"
-			rewards: [{
-				id: "6ED37EE81D9F2EBD"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "7992D78C959D6085"
-				item: { count: 1, id: "culturaldelights:cooked_calamari" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: -9.5d
-		}
-		{
-			disable_toast: true
 			id: "12F861779ABA5FA1"
 			rewards: [{
 				id: "271F90C67BCCCF2C"
@@ -5497,8 +5417,8 @@
 				item: { count: 1, id: "brewinandchewin:jerky" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -9.5d
+			x: 2.0d
+			y: -10.5d
 		}
 		{
 			disable_toast: true
@@ -5578,7 +5498,7 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(brewinandchewin:foods/cheese_wedge)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 3.0d
 			y: -9.5d
 		}
 		{
@@ -5705,7 +5625,7 @@
 			}]
 			tasks: [{
 				id: "091F69A04C8CC39B"
-				item: { count: 1, id: "culturaldelights:calamari_roll" }
+				item: { count: 1, id: "rusticdelight:calamari_roll" }
 				type: "item"
 			}]
 			x: 15.0d
@@ -6770,6 +6690,68 @@
 			}]
 			x: 8.0d
 			y: -6.5d
+		}
+		{
+			disable_toast: true
+			id: "67A7071B8CCD827D"
+			rewards: [{
+				id: "4709B8FF993DEE3F"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "303D2E1782F6AB2F"
+				item: { count: 1, id: "rusticdelight:calamari" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			disable_toast: true
+			id: "23D21A1AD5F17C8A"
+			rewards: [{
+				id: "6ED37EE81D9F2EBD"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7992D78C959D6085"
+				item: { count: 1, id: "rusticdelight:cooked_calamari" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -10.5d
+		}
+		{
+			id: "046ADC81EF746D03"
+			rewards: [{
+				id: "389526F12C92E956"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "2886B7EB477FD2B4"
+				item: { count: 1, id: "rusticdelight:cooked_calamari_slice" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.5d
+		}
+		{
+			id: "4C9A5550B34C78B8"
+			rewards: [{
+				id: "45C3BC62752EEDF4"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "053D36D06E9C6B3D"
+				item: { count: 1, id: "rusticdelight:calamari_slice" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.5d
 		}
 	]
 }

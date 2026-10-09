@@ -25,7 +25,19 @@ ServerEvents.recipes((event) => {
         ),
         ei('/canning_machine/generated/canned_food/rusticdelight/syrup'),
         'culturalrecipes:smelting/smoked_eggplant',
+        'culturalrecipes:smelting/cooked_calamari',
+        'culturalrecipes:smelting/cooked_calamari_from_campfire',
+        'culturalrecipes:smelting/cooked_calamari_from_smoking',
+        'culturalrecipes:smelting/cooked_squid',
+        'culturalrecipes:smelting/cooked_squid_from_campfire',
+        'culturalrecipes:smelting/cooked_squid_from_smoking',
+        'culturalrecipes:smelting/cooked_glowsquid',
+        'culturalrecipes:smelting/cooked_glowsquid_from_campfire',
+        'culturalrecipes:smelting/cooked_glowsquid_from_smoking',
         'culturalrecipes:cutting/cut_eggplant',
+        'culturalrecipes:cutting/raw_calamari',
+        'culturalrecipes:cutting/raw_calamari_from_glowsquid',
+        'culturalrecipes:calamari_roll',
         rd('paper_from_cotton_boll'),
         rd('cooking/syrup'),
         rd('sugar_from_syrup'),
@@ -639,6 +651,27 @@ ServerEvents.tags('item', (event) => {
             kj('stuffed_bell_peppers'),
             rd(`stuffed_bell_pepper_${DYE_COLORS}`)
         );
+    });
+
+    // -- SQUID TAGGING -- //
+    const squidToTag = [cud('squid'), cud('glow_squid'), cud('raw_calamari')];
+    squidToTag.forEach((squid) => {
+        event.remove('c:foods/raw_calamari', squid);
+        event.remove('c:foods/raw_fish', squid);
+        event.remove('c:foods/safe_raw_fish', squid);
+    });
+
+    // -- CANNED FOOD BLACKLIST TAGGING -- //
+    const cannedFoodBlacklist = [
+        cud('squid'),
+        cud('glow_squid'),
+        cud('cooked_squid'),
+        cud('raw_calamari'),
+        cud('cooked_calamari'),
+        cud('calamari_roll'),
+    ];
+    cannedFoodBlacklist.forEach((blacklist) => {
+        event.add(ei('generated_recipes_blacklist/canning_food'), blacklist);
     });
 });
 
