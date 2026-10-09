@@ -663,6 +663,10 @@ ServerEvents.tags('item', (event) => {
 
     // -- CANNED FOOD BLACKLIST TAGGING -- //
     const cannedFoodBlacklist = [
+        fd('wheat_dough'),
+        bc('pizza'),
+        bc('pizza_slice'),
+        rd('syrup'),
         cud('squid'),
         cud('glow_squid'),
         cud('cooked_squid'),
