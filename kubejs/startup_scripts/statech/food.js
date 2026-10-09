@@ -113,7 +113,7 @@ StartupEvents.registry('item', (event) => {
         .tag(cr('upright_on_belt'))
         .tag(ei('generated_recipes_blacklist/canning_food'))
         .food((f) => {
-            f.nutrition(6).saturation(0.4);
+            f.nutrition(10).saturation(0.5);
         })
         .useAnimation('drink');
 
@@ -124,7 +124,7 @@ StartupEvents.registry('item', (event) => {
         .tag(cr('upright_on_belt'))
         .tag(ei('generated_recipes_blacklist/canning_food'))
         .food((f) => {
-            f.nutrition(10).saturation(0.5);
+            f.nutrition(6).saturation(0.4);
         })
         .useAnimation('drink');
 

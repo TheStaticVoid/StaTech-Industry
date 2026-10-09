@@ -676,7 +676,7 @@ let createBiomeSpecificTooltip = (
 let createPartOfTooltip = (event, item, item_name, deposits) => {
     event.modify(item, (tooltip) => {
         // Line 1
-        tooltip.add(Text.yellow('Found in the these deposits:'));
+        tooltip.add(Text.yellow('Found in these deposits:'));
 
         // Iterate for each deposit
         deposits.forEach((name) => {

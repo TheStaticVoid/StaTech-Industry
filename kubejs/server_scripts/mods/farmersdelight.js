@@ -148,9 +148,9 @@ ServerEvents.recipes((event) => {
         ]
     );
 
-    // ------------ //
-    // -- MIXING -- //
-    // ------------ //
+    // ------------------- //
+    // -- CREATE MIXING -- //
+    // ------------------- //
 
     // -- COOKING OIL -- //
     mixing(
@@ -239,6 +239,119 @@ ServerEvents.recipes((event) => {
             {
                 count: 2,
                 id: kj('poutine_basket'),
+            },
+        ]
+    );
+
+    // ------------------ //
+    // ---- MI MIXER ---- //
+    // ------------------ //
+
+    // -- COOKING OIL -- //
+    mixer(
+        event,
+        st('mixer/cooking_oil'),
+        8,
+        200,
+        [
+            {
+                amount: 6,
+                tag: rd('cooking_oil_ingredients'),
+            },
+        ],
+        null,
+        null,
+        [
+            {
+                amount: 500,
+                fluid: kj('cooking_oil'),
+            },
+        ]
+    );
+
+    // -- CORN DOUGH -- //
+    mixer(
+        event,
+        st('mixer/corn_dough'),
+        2,
+        100,
+        [
+            {
+                amount: 1,
+                item: cud('corn_cob'),
+            },
+        ],
+        [
+            {
+                amount: 3,
+                item: cud('corn_dough'),
+            },
+        ],
+        [{ amount: 500, fluid: mc('water') }]
+    );
+
+    // -- GRAVY -- //
+    mixer(
+        event,
+        st('mixer/gravy'),
+        8,
+        200,
+        [
+            {
+                amount: 1,
+                item: cr('wheat_flour'),
+            },
+            { amount: 1, item: fd('minced_beef') },
+        ],
+        null,
+        [
+            {
+                amount: 250,
+                fluid: kj('cooking_oil'),
+            },
+            {
+                amount: 333,
+                fluid: dc('chicken_soup'),
+            },
+        ],
+        [
+            {
+                amount: 1000,
+                fluid: kj('gravy'),
+            },
+        ]
+    );
+
+    // -- BASKET OF POUTINE -- //
+    mixer(
+        event,
+        st('mixer/poutine_basket'),
+        8,
+        200,
+        [
+            {
+                count: 1,
+                item: mc('paper'),
+            },
+            {
+                count: 1,
+                item: kj('fries'),
+            },
+            {
+                count: 1,
+                tag: bc('foods/cheese_wedge'),
+            },
+        ],
+        [
+            {
+                amount: 2,
+                item: kj('poutine_basket'),
+            },
+        ],
+        [
+            {
+                amount: 1000,
+                fluid: kj('gravy'),
             },
         ]
     );

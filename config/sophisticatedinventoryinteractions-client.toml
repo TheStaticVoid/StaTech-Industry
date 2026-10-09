@@ -16,7 +16,7 @@
 		minimumActionableContainerSlots = 9
 
 		[client.compatibility.exclude]
-			screenClasses = []
+			screenClasses = ["de.dafuqs.spectrum.inventories.*", "net.natte.bankstorage.client.screen.BankScreen"]
 
 		[client.compatibility.include]
 			screenClasses = []
