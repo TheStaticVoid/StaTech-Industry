@@ -47,7 +47,7 @@ To build the modpack directly from this repository, you can clone it and use [Pa
 
 ### Additional Credits
 
-- Uses [Mono7 by xlifi](https://modrinth.com/resourcepack/mono7) for the prospector pick chat messages.
+- Uses [Mono7 by xlifi](https://modrinth.com/resourcepack/mono7) (in the [StaTech Companion Mod](https://github.com/TheStaticVoid/StaTech-Companion-Mod)) for the prospector pick chat messages.
 - Uses the Angel Ring texture from [SimpleAngelRing by LordDeatHunter](https://github.com/ModsByLeo/SimpleAngelRing) as a basis for the Angel Ring and the Fireproof Ring textures.
 - Uses the Electronic Circuit texture from [Modern Industrialization](https://github.com/AztechMC/Modern-Industrialization) as a basis for the Withered SoC texture.
 - Uses the Basic/Advanced Card texture from [Applied Energistics 2](https://github.com/AppliedEnergistics/Applied-Energistics-2) as a basis for the Mob/Boss Model textures.
