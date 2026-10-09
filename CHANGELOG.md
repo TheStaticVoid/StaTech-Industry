@@ -12,11 +12,21 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 
 ### General Changelog
 
--
+- Unified squid drops.
+- Removed default Steam Chainsaw advancement.
+- **Blacklisted Sophisticated Inventory Interactions from Spectrum UIs and the Bank UI.**
+- Fixed quest lang issues.
+- Fixed KubeJS lang issues.
+- **Retextured the Space Probes, Pizzas, Fries, and ABS Building Brick. Thanks Onion-Evan!**
+- Fixed Deposit tootip typos.
+- Added some MI compat recipes for food items.
+- **Rebalanced Coke Cola and Bepsi.**
+- **Removed Mono7 Font to resolve graphical bug where the standard vanilla space character was overwritten.**
+- Blacklisted removed food items from the Canning Machine.
 
 ### Companion Mod Changelog
 
--
+- **Moved Mono7 Font to the companion mod since it is only needed for the Prospector Pick.**
 
 ## [2.0.2]
 
