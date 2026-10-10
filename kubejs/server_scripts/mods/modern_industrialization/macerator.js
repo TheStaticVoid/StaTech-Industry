@@ -77,10 +77,23 @@ ServerEvents.recipes((event) => {
         st('flax_to_string'),
         2,
         200,
-        [{ amount: 1, item: 'supplementaries:flax' }],
+        [{ amount: 1, item: su('flax') }],
         [
-            { amount: 2, item: 'minecraft:string' },
-            { amount: 1, item: 'minecraft:string', probability: 0.25 },
+            { amount: 2, item: mc('string') },
+            { amount: 1, item: mc('string'), probability: 0.25 },
+        ]
+    );
+
+    // -- COTTON TO STRING -- //
+    macerator(
+        event,
+        st('cotton_to_string'),
+        2,
+        200,
+        [{ amount: 1, item: rd('cotton_boll') }],
+        [
+            { amount: 2, item: mc('string') },
+            { amount: 1, item: mc('string'), probability: 0.25 },
         ]
     );
 
@@ -540,7 +553,7 @@ ServerEvents.recipes((event) => {
         'light_gray',
     ];
     COLORS.forEach((color) => {
-        // -- MACERATE SPECTRUM LOG -- //
+        // -- MACERATE SPECTRUM LOGS -- //
         macerator(
             event,
             st(`${color}_log`),
@@ -567,7 +580,7 @@ ServerEvents.recipes((event) => {
         );
     });
 
-    // -- CERTUS QUARTZ FROM BUDS AND CLUSTER
+    // -- CERTUS QUARTZ FROM BUDS AND CLUSTER -- //
     const CERTUS_DUST_DATA = [
         { inputName: 'small_quartz_bud', outputAmount: 2 },
         { inputName: 'medium_quartz_bud', outputAmount: 2 },
@@ -586,7 +599,7 @@ ServerEvents.recipes((event) => {
         );
     });
 
-    // -- SPECTRUM RESOURCE BUDS AND CLUSTERS
+    // -- SPECTRUM RESOURCE BUDS AND CLUSTERS -- //
     const SPECTRUM_ONE = [
         { in: 'coal', out: mc('coal') },
         { in: 'iron', out: mi('iron_dust') },
@@ -602,11 +615,6 @@ ServerEvents.recipes((event) => {
         { in: 'prismarine', out: mc('prismarine_crystals') },
     ];
 
-    /*     const SPECTRUM_TWO = [
-        { in: "certus_quartz", out: ae("certus_quartz_dust") },
-        { in: "fluix", out: ae("fluix_dust")}
-    ];
- */
     let recipeForSpBudsAndClusters = (inputOutputNames, numberOfOutput) => {
         inputOutputNames.forEach((data) => {
             let outName = data.out.slice(
@@ -640,7 +648,7 @@ ServerEvents.recipes((event) => {
         });
     };
 
-    //  output for [small bud, large bud, cluster]
+    // -- Output for [small bud, large bud, cluster]  -- //
 
     recipeForSpBudsAndClusters(SPECTRUM_ONE, [1, 1, 6]);
     recipeForSpBudsAndClusters(

@@ -8,7 +8,8 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 
 ### Breaking Changes
 
--
+- **Removed String -> Wool Packer recipe due to base MI having the same recipe in the Compressor now.**
+- **Re-added Flax to the Photsynthetic Chamber (it got lost during a refactor).**
 
 ### General Changelog
 
@@ -23,6 +24,8 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - **Rebalanced Coke Cola and Bepsi.**
 - **Removed Mono7 Font to resolve graphical bug where the standard vanilla space character was overwritten.**
 - Blacklisted removed food items from the Canning Machine.
+- **Added Spray Can support for many more blocks.**
+- Added Cotton -> String Macerator recipe.
 
 ### Companion Mod Changelog
 
