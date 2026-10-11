@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
     // ----- COOKING ----- //
     // ------------------- //
 
-    // -- FRIES -- //
+    // -- FRENCH FRIES -- //
     cooking(
         event,
         st('french_fries'),
@@ -136,11 +136,85 @@ ServerEvents.recipes((event) => {
         ]
     );
 
+    // --------------------- //
+    // -- CUTTING MACHINE -- //
+    // --------------------- //
+
+    // -- CABBAGE LEAF -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/cabbage_leaf'),
+        2,
+        100,
+        [{ amount: 1, item: fd('cabbage') }],
+        [{ amount: 2, item: fd('cabbage_leaf') }]
+    );
+
+    // -- CHICKEN CUTS -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/chicken_cuts'),
+        2,
+        200,
+        [{ amount: 1, item: mc('chicken') }],
+        [{ amount: 2, item: fd('chicken_cuts') }]
+    );
+
+    // -- MINCED BEEF -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/minced_beef'),
+        2,
+        200,
+        [{ amount: 1, item: mc('beef') }],
+        [{ amount: 2, item: fd('minced_beef') }]
+    );
+
+    // -- MINCED BEEF ALT -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/minced_beef_alt'),
+        2,
+        200,
+        [{ amount: 1, item: nm('raw_horse') }],
+        [{ amount: 3, item: fd('minced_beef') }]
+    );
+
+    // -- POTATO SLICES -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/potato_slices'),
+        2,
+        100,
+        [{ amount: 1, item: mc('potato') }],
+        [{ amount: 2, item: rd('potato_slices') }]
+    );
+
+    // -- FLAXEN CHEESE WEDGES -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/flaxen_cheese_wedges'),
+        2,
+        200,
+        [{ amount: 1, item: bc('flaxen_cheese_wheel') }],
+        [{ amount: 4, item: bc('flaxen_cheese_wedge') }]
+    );
+
+    // -- SCARLET CHEESE WEDGES -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/scarlet_cheese_wedges'),
+        2,
+        200,
+        [{ amount: 1, item: bc('scarlet_cheese_wheel') }],
+        [{ amount: 4, item: bc('scarlet_cheese_wedge') }]
+    );
+
     // --------------- //
     // -- DEPLOYING -- //
     // --------------- //
 
-    // -- FRIES -- //
+    // -- FRENCH FRIES -- //
     deploying(
         event,
         st('deploying/french_fries'),
@@ -368,6 +442,65 @@ ServerEvents.recipes((event) => {
         ]
     );
 
+    // -- CHICKEN SOUP -- //
+    mixer(
+        event,
+        st('mixer/chicken_soup'),
+        8,
+        200,
+        [
+            {
+                count: 1,
+                tag: 'c:foods/vegetable',
+            },
+            {
+                count: 1,
+                tag: 'c:foods/raw_chicken',
+            },
+            {
+                count: 1,
+                item: mc('carrot'),
+            },
+            {
+                count: 1,
+                tag: 'c:crops/cabbage',
+            },
+        ],
+        null,
+        null,
+        [
+            {
+                amount: 333,
+                fluid: dc('chicken_soup'),
+            },
+        ]
+    );
+
+    // -- FRENCH FRIES -- //
+    mixer(
+        event,
+        st('mixer/french_fries'),
+        8,
+        100,
+        [
+            {
+                count: 1,
+                item: rd('potato_slices'),
+            },
+        ],
+        [
+            {
+                amount: 1,
+                item: kj('fries'),
+            },
+        ],
+        [
+            {
+                amount: 250,
+                fluid: kj('cooking_oil'),
+            },
+        ]
+    );
     // ------------------- //
     // ----- SMOKING ----- //
     // ------------------- //

@@ -1,2 +1,30 @@
 {
+    "parent": "modern_industrialization:forge_hammer",
+    "criteria": {
+        "checkInv": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": "extended_industrialization:steam_chainsaw"
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "description": {
+            "translate": "advancements.statech.steam_chainsaw.description"
+        },
+        "frame": "goal",
+        "icon": {
+            "count": 1,
+            "id": "extended_industrialization:steam_chainsaw"
+        },
+        "title": {
+            "translate": "advancements.statech.steam_chainsaw"
+        }
+    },
+    "requirements": [["checkInv"]],
+    "sends_telementry_event": true
 }

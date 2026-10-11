@@ -244,7 +244,7 @@
 		"You will need it particularly for &eProcessing Unit&r components."
 	]
 	quest.046F01DB0758D7DD.quest_desc: ["With the &aRolling Machine&r, you can now make &bMagnalium Plates&r. To get the &bMagnesium&r required, you can centrifuge &dMarble Dust&r, which is made from &dTiny Obsidian Dust&r, and &aDiorite Dust&r."]
-	quest.04D26675230550D4.quest_desc: ["&9Effortless Building&r allows you to build large structures quickly! It will be very usefule before you unlock &aBuilding Gadgets&r. You can press '&e`&r' to open the &cconfiguration menu&r!"]
+	quest.04D26675230550D4.quest_desc: ["&9Effortless Building&r allows you to build large structures quickly! It will be very useful before you unlock &aBuilding Gadgets&r. You can press '&e`&r' to open the &cconfiguration menu&r!"]
 	quest.04D26675230550D4.title: "Effortless Building"
 	quest.05105071C0E09EB7.quest_desc: ["The highest tier of (regular) fluid storage cell that can store up to 262144 bytes of information."]
 	quest.053A0D5222D7BFCA.quest_desc: [
@@ -1148,7 +1148,11 @@
 	quest.16B36E59F82D7938.quest_desc: ["A very versatile &drubber-like chemical&r. Can be used to make &ecables&r, &2RAM&r, and the best ratio for &3Rubber Sheets&r."]
 	quest.16B36E59F82D7938.title: "Styrene-Butadiene Rubber"
 	quest.16C7A2586255ADCA.quest_desc: ["Grants increased mining speed after having eaten."]
-	quest.16D0778B17CB206A.quest_desc: ["A way to generate energy from &dDragon's Breath&r. Becomes more viable once you unlock the &3&lBoss Crusher&r&r in &9Chapter 5&r."]
+	quest.16D0778B17CB206A.quest_desc: [
+		"A way to generate energy from &dDragon's Breath&r. Becomes more viable once you unlock the &3&lBoss Crusher&r&r in &9Chapter 5&r."
+		""
+		"&oNote: the &dNutrient-Rich recipe&r&o outputs more &eEU per batch&r&o than &9one&r&o &eMV&r&o Energy Output Hatch can hold. &aAdd another one&r&o!&r"
+	]
 	quest.16D396BA471F042E.quest_desc: ["&aEthylene&r is used in the production of &3Ethylbenzene&r, &2Ethanol&r, and &bPolyethylene&r."]
 	quest.16D396BA471F042E.title: "Ethylene"
 	quest.16FC60FF6E3A4517.quest_desc: [
@@ -1338,7 +1342,7 @@
 	quest.1BBC92A8192D3088.quest_desc: ["The &bPlacard&r is similar to vanilla &eItem Frames&r, except these are &dcontraption&r friendly!"]
 	quest.1BC8C8821CAB3224.quest_desc: ["The &7Stainless Steel Backpack&r has &9108 slots&r for items!"]
 	quest.1BD496A10E957F25.quest_desc: [
-		"Please &c&nread through&r&r the quests in the \"&6Welcome!&r\" section, they have &auseful information&r for the rest of the pack. As such, you &l&ccannot&r&r claim &9&oany quest rewards&r&r until you've read them."
+		"Please &cread through&r &n&eALL&r&r the quests on the \"&6Welcome!&r\" page, they have &auseful information&r for the rest of the pack. As such, you &l&ccannot&r&r claim &9&oany quest rewards&r&r until you've read them."
 		""
 		"I'd recommend paying &d&oparticular attention&r&r to:"
 		"[ \"1. \", { \"text\": \"UI Customization\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0EFA60789B064DB4\" } } ]"
@@ -2601,6 +2605,10 @@
 		"Some deposits, such as &7Iron&r, &8Coal&r, and &2Emerald&r have&a increased spawn chances in certain biomes&r!"
 		""
 		"If you want more &adetailed information&r on ores and the deposits they spawn in, open &dEMI&r and &ehold shift&r while &bhovering&r over different ores!"
+		""
+		"The &eProspector Pick&r enables you to &9scan&r and &crecord&r ore &adeposit locations&r as &3JourneyMap waypoints&r."
+		""
+		"[ \"For more information, see \", { \"text\": \"Prospector Pick\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1C9F96C925557637\" } } ]"
 	]
 	quest.32FE4A1534B7B496.quest_subtitle: "Large ore deposits return!"
 	quest.32FE4A1534B7B496.title: "Dude, where's my ores?"
