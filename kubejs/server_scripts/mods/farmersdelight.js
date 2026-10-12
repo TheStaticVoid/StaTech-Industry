@@ -25,7 +25,19 @@ ServerEvents.recipes((event) => {
         ),
         ei('/canning_machine/generated/canned_food/rusticdelight/syrup'),
         'culturalrecipes:smelting/smoked_eggplant',
+        'culturalrecipes:smelting/cooked_calamari',
+        'culturalrecipes:smelting/cooked_calamari_from_campfire',
+        'culturalrecipes:smelting/cooked_calamari_from_smoking',
+        'culturalrecipes:smelting/cooked_squid',
+        'culturalrecipes:smelting/cooked_squid_from_campfire',
+        'culturalrecipes:smelting/cooked_squid_from_smoking',
+        'culturalrecipes:smelting/cooked_glowsquid',
+        'culturalrecipes:smelting/cooked_glowsquid_from_campfire',
+        'culturalrecipes:smelting/cooked_glowsquid_from_smoking',
         'culturalrecipes:cutting/cut_eggplant',
+        'culturalrecipes:cutting/raw_calamari',
+        'culturalrecipes:cutting/raw_calamari_from_glowsquid',
+        'culturalrecipes:calamari_roll',
         rd('paper_from_cotton_boll'),
         rd('cooking/syrup'),
         rd('sugar_from_syrup'),
@@ -66,7 +78,7 @@ ServerEvents.recipes((event) => {
     // ----- COOKING ----- //
     // ------------------- //
 
-    // -- FRIES -- //
+    // -- FRENCH FRIES -- //
     cooking(
         event,
         st('french_fries'),
@@ -124,11 +136,129 @@ ServerEvents.recipes((event) => {
         ]
     );
 
+    // --------------------- //
+    // -- CUTTING MACHINE -- //
+    // --------------------- //
+
+    const cutList = [
+        [100, fd('cabbage'), fd('cabbage_leaf')],
+        [100, mc('potato'), rd('potato_slices')],
+        [200, mc('chicken'), fd('chicken_cuts')],
+        [200, mc('cooked_chicken'), fd('cooked_chicken_cuts')],
+        [200, mc('beef'), fd('minced_beef')],
+        [200, mc('porkchop'), fd('bacon')],
+        [200, mc('cod'), fd('cod_slice')],
+        [200, mc('cooked_cod'), fd('cooked_cod_slice')],
+        [200, mc('salmon'), fd('salmon_slice')],
+        [200, mc('cooked_salmon'), fd('cooked_salmon_slice')],
+        [200, mc('mutton'), fd('mutton_chops')],
+        [200, mc('cooked_mutton'), fd('cooked_mutton_chops')],
+        [200, rd('calamari'), rd('calamari_slice')],
+        [200, rd('cooked_calamari'), rd('cooked_calamari_slice')],
+        [100, cud('cucumber'), cud('cut_cucumber')],
+        [100, cud('pickle'), cud('cut_pickle')],
+        [100, cud('eggplant'), cud('cut_eggplant')],
+    ];
+
+    cutList.forEach((INPUTS) => {
+        let id = st(`cutting_machine/${INPUTS[2].split(':')[1]}`);
+        cuttingMachine(
+            event,
+            id,
+            2,
+            INPUTS[0],
+            [{ amount: 1, item: INPUTS[1] }],
+            [{ amount: 2, item: INPUTS[2] }]
+        );
+    });
+
+    const DYE_COLORS = [
+        'white',
+        'orange',
+        'yellow',
+        'pink',
+        'purple',
+        'blue',
+        'green',
+        'red',
+        'black',
+    ];
+
+    DYE_COLORS.forEach((COLORS) => {
+        cuttingMachine(
+            event,
+            st(`cutting_machine/bell_pepper_slice_${COLORS}`),
+            2,
+            100,
+            [{ amount: 1, item: rd(`bell_pepper_${COLORS}`) }],
+            [{ amount: 2, item: rd(`bell_pepper_slice_${COLORS}`) }]
+        );
+
+        cuttingMachine(
+            event,
+            st(`cutting_machine/roasted_bell_pepper_slice_${COLORS}`),
+            2,
+            100,
+            [{ amount: 1, item: rd(`roasted_bell_pepper_${COLORS}`) }],
+            [{ amount: 2, item: rd(`roasted_bell_pepper_slice_${COLORS}`) }]
+        );
+    });
+
+    // -- MINCED BEEF ALT -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/minced_beef_alt'),
+        2,
+        200,
+        [{ amount: 1, item: nm('raw_horse') }],
+        [{ amount: 3, item: fd('minced_beef') }]
+    );
+
+    // -- PUMPKIN SLICE -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/pumpkin_slice'),
+        2,
+        100,
+        [{ amount: 1, item: mc('pumpkin') }],
+        [{ amount: 4, item: fd('pumpkin_slice') }]
+    );
+
+    // -- RAW PASTA -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/raw_pasta'),
+        2,
+        100,
+        [{ amount: 1, tag: 'c:foods/dough' }],
+        [{ amount: 1, item: fd('raw_pasta') }]
+    );
+
+    // -- FLAXEN CHEESE WEDGES -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/flaxen_cheese_wedges'),
+        2,
+        200,
+        [{ amount: 1, item: bc('flaxen_cheese_wheel') }],
+        [{ amount: 4, item: bc('flaxen_cheese_wedge') }]
+    );
+
+    // -- SCARLET CHEESE WEDGES -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/scarlet_cheese_wedges'),
+        2,
+        200,
+        [{ amount: 1, item: bc('scarlet_cheese_wheel') }],
+        [{ amount: 4, item: bc('scarlet_cheese_wedge') }]
+    );
+
     // --------------- //
     // -- DEPLOYING -- //
     // --------------- //
 
-    // -- FRIES -- //
+    // -- FRENCH FRIES -- //
     deploying(
         event,
         st('deploying/french_fries'),
@@ -148,9 +278,9 @@ ServerEvents.recipes((event) => {
         ]
     );
 
-    // ------------ //
-    // -- MIXING -- //
-    // ------------ //
+    // ------------------- //
+    // -- CREATE MIXING -- //
+    // ------------------- //
 
     // -- COOKING OIL -- //
     mixing(
@@ -243,6 +373,178 @@ ServerEvents.recipes((event) => {
         ]
     );
 
+    // ------------------ //
+    // ---- MI MIXER ---- //
+    // ------------------ //
+
+    // -- COOKING OIL -- //
+    mixer(
+        event,
+        st('mixer/cooking_oil'),
+        8,
+        200,
+        [
+            {
+                amount: 6,
+                tag: rd('cooking_oil_ingredients'),
+            },
+        ],
+        null,
+        null,
+        [
+            {
+                amount: 500,
+                fluid: kj('cooking_oil'),
+            },
+        ]
+    );
+
+    // -- CORN DOUGH -- //
+    mixer(
+        event,
+        st('mixer/corn_dough'),
+        2,
+        100,
+        [
+            {
+                amount: 1,
+                item: cud('corn_cob'),
+            },
+        ],
+        [
+            {
+                amount: 3,
+                item: cud('corn_dough'),
+            },
+        ],
+        [{ amount: 500, fluid: mc('water') }]
+    );
+
+    // -- GRAVY -- //
+    mixer(
+        event,
+        st('mixer/gravy'),
+        8,
+        200,
+        [
+            {
+                amount: 1,
+                item: cr('wheat_flour'),
+            },
+            { amount: 1, item: fd('minced_beef') },
+        ],
+        null,
+        [
+            {
+                amount: 250,
+                fluid: kj('cooking_oil'),
+            },
+            {
+                amount: 333,
+                fluid: dc('chicken_soup'),
+            },
+        ],
+        [
+            {
+                amount: 1000,
+                fluid: kj('gravy'),
+            },
+        ]
+    );
+
+    // -- BASKET OF POUTINE -- //
+    mixer(
+        event,
+        st('mixer/poutine_basket'),
+        8,
+        200,
+        [
+            {
+                count: 1,
+                item: mc('paper'),
+            },
+            {
+                count: 1,
+                item: kj('fries'),
+            },
+            {
+                count: 1,
+                tag: bc('foods/cheese_wedge'),
+            },
+        ],
+        [
+            {
+                amount: 2,
+                item: kj('poutine_basket'),
+            },
+        ],
+        [
+            {
+                amount: 1000,
+                fluid: kj('gravy'),
+            },
+        ]
+    );
+
+    // -- CHICKEN SOUP -- //
+    mixer(
+        event,
+        st('mixer/chicken_soup'),
+        8,
+        200,
+        [
+            {
+                count: 1,
+                tag: 'c:foods/vegetable',
+            },
+            {
+                count: 1,
+                tag: 'c:foods/raw_chicken',
+            },
+            {
+                count: 1,
+                item: mc('carrot'),
+            },
+            {
+                count: 1,
+                tag: 'c:crops/cabbage',
+            },
+        ],
+        null,
+        null,
+        [
+            {
+                amount: 333,
+                fluid: dc('chicken_soup'),
+            },
+        ]
+    );
+
+    // -- FRENCH FRIES -- //
+    mixer(
+        event,
+        st('mixer/french_fries'),
+        8,
+        100,
+        [
+            {
+                count: 1,
+                item: rd('potato_slices'),
+            },
+        ],
+        [
+            {
+                amount: 1,
+                item: kj('fries'),
+            },
+        ],
+        [
+            {
+                amount: 250,
+                fluid: kj('cooking_oil'),
+            },
+        ]
+    );
     // ------------------- //
     // ----- SMOKING ----- //
     // ------------------- //
@@ -501,17 +803,10 @@ ServerEvents.tags('item', (event) => {
     const DYE_COLORS = [
         'white',
         'orange',
-        'magenta',
         'yellow',
-        'cyan',
-        'lime',
         'pink',
-        'gray',
-        'light_blue',
-        'light_gray',
         'purple',
         'blue',
-        'brown',
         'green',
         'red',
         'black',
@@ -526,6 +821,31 @@ ServerEvents.tags('item', (event) => {
             kj('stuffed_bell_peppers'),
             rd(`stuffed_bell_pepper_${DYE_COLORS}`)
         );
+    });
+
+    // -- SQUID TAGGING -- //
+    const squidToTag = [cud('squid'), cud('glow_squid'), cud('raw_calamari')];
+    squidToTag.forEach((squid) => {
+        event.remove('c:foods/raw_calamari', squid);
+        event.remove('c:foods/raw_fish', squid);
+        event.remove('c:foods/safe_raw_fish', squid);
+    });
+
+    // -- CANNED FOOD BLACKLIST TAGGING -- //
+    const cannedFoodBlacklist = [
+        fd('wheat_dough'),
+        bc('pizza'),
+        bc('pizza_slice'),
+        rd('syrup'),
+        cud('squid'),
+        cud('glow_squid'),
+        cud('cooked_squid'),
+        cud('raw_calamari'),
+        cud('cooked_calamari'),
+        cud('calamari_roll'),
+    ];
+    cannedFoodBlacklist.forEach((blacklist) => {
+        event.add(ei('generated_recipes_blacklist/canning_food'), blacklist);
     });
 });
 

@@ -106,6 +106,12 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         bc('pizza_slice'),
         rd('syrup'),
         dc('mechanical_cutter'),
+        cud('squid'),
+        cud('glow_squid'),
+        cud('cooked_squid'),
+        cud('raw_calamari'),
+        cud('cooked_calamari'),
+        cud('calamari_roll'),
     ];
     UNUSED_FD.forEach((id) => event.remove(id));
 

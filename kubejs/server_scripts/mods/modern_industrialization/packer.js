@@ -308,16 +308,6 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: cr('brass_ingot') }]
     );
 
-    // -- WOOL -- //
-    packer(
-        event,
-        st('wool'),
-        2,
-        200,
-        [{ amount: 4, item: mc('string') }],
-        [{ amount: 1, item: mc('white_wool') }]
-    );
-
     // -- TNT -- //
     packer(
         event,

@@ -1,13 +1,49 @@
 # Changelog
 
+## [2.0.3]
+
+Small patch mostly to fix a few oversights from 2.0.2 (ie. re-adding Flax Photosynthetic Chamber recipe) and fix some annoying (but not breaking) bugs.
+
+As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
+
+### Breaking Changes
+
+- **Removed String -> Wool Packer recipe due to base MI having the same recipe in the Compressor now.**
+- **Re-added Flax to the Photsynthetic Chamber (it got lost during a refactor).**
+- **Reduced Dragon Egg Energy Siphon recipe size to allow using 2 MV Energy Output Hatches instead of 3 for the Nutrient Rich recipe.**
+
+### General Changelog
+
+- Unified squid drops.
+- Replaced Steam Chainsaw advancement.
+- **Blacklisted Sophisticated Inventory Interactions from Spectrum UIs and the Bank UI.**
+- Fixed quest typos.
+- Fixed KubeJS lang issues.
+- **Retextured the Space Probes, Pizzas, Fries, and ABS Building Brick. Thanks Onion-Evan!**
+- Fixed Deposit tootip typos.
+- **Rebalanced Coke Cola and Bepsi.**
+- **Removed Mono7 Font to resolve graphical bug where the standard vanilla space character was overwritten.**
+- Blacklisted removed food items from the Canning Machine.
+- **Added Spray Can support for many more blocks.**
+- Added Cotton -> String Macerator recipe.
+- Added Ham to Pig Model Mob Crusher output.
+- Updated some MI quest text to reflect recent changes.
+- **Added several Cutting Machine, Macerator, and Mixer recipes for various food items.**
+
+### Companion Mod Changelog
+
+- Fixed MI forcing a compile time/runtime Create dependency.
+- **Moved Mono7 Font to the companion mod since it is only needed for the Prospector Pick.**
+
 ## [2.0.2]
 
-Largely a bugfix patch, but does bring a few new enhancements and additions! This pack version includes an updated Spectrum version which fixes more (different!) Spectrum issues! 
+Largely a bugfix patch, but does bring a few new enhancements and additions! This pack version includes an updated Spectrum version which fixes more (different!) Spectrum issues!
 Also comes with a new MI update improving some documentation and fixing some bugs. A companion mod update was pushed out as well.
 
 As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
 
 ### General Changelog
+
 - **Add more advancements for items throughout the pack.**
 - Fixed some miscellaneous Spectrum quest issues.
 - Removed the Advanced Peripherals villager house spawn.
@@ -72,12 +108,12 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - Cleaned up EI advancements.
 
 ### Companion Mod Changelog
+
 - **Reworked Prospector Pick internals and GUI.**
 - Fixed WATUT water rendering bug with mixin.
 - **Fixed NeoForge Hammer being broken by flowing liquids.**
 - Replaced deprecated methods.
 - Stopped attempting to unobfuscate unobfuscated mod classes/methods.
-
 
 ## [2.0.1]
 

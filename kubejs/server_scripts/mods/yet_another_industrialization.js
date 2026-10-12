@@ -31,6 +31,66 @@ ServerEvents.recipes((event) => {
     // -- ARBOREOUS GREENHOUSE REMOVAL -- //
     event.remove({ type: yai('arboreous_greenhouse') });
 
+    // -------------------------- //
+    // --- SHAPELESS CRAFTING --- //
+    // -------------------------- //
+
+    // -- MIXED HATCH CRAFTING SWAPS -- //
+    const MIXED_HATCH_TIER = [
+        'bronze',
+        'steel',
+        'advanced',
+        'turbo',
+        'highly_advanced',
+    ];
+
+    MIXED_HATCH_TIER.forEach((id) => {
+        event.shapeless(
+            yai(`${id}_mixed_output_hatch`),
+            yai(`${id}_mixed_input_hatch`)
+        );
+        event.shapeless(
+            yai(`${id}_mixed_input_hatch`),
+            yai(`${id}_mixed_output_hatch`)
+        );
+    });
+
+    // ----------------- //
+    // --- ASSEMBLER --- //
+    // ----------------- //
+
+    // -- DRAGON EGG SIPHON CATALYST -- //
+    assembler(
+        event,
+        st('dragon_egg_siphon_catalyst'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('steel_plate') },
+            { amount: 1, item: mi('quartz_tiny_dust') },
+        ],
+        [{ amount: 1, item: yai('dragon_egg_siphon_catalyst') }],
+        [{ amount: 50, fluid: yai('dragon_breath') }]
+    );
+
+    // -- DRAGON EGG SIPHON CATALYST NUTRIENT -- //
+    assembler(
+        event,
+        st('dragon_egg_siphon_catalyst_nutrient'),
+        8,
+        200,
+        [
+            { amount: 4, item: mi('steel_plate') },
+            { amount: 1, item: mi('quartz_tiny_dust') },
+        ],
+        [{ amount: 4, item: yai('dragon_egg_siphon_catalyst') }],
+        [{ amount: 50, fluid: yai('nutrient_rich_dragon_breath') }]
+    );
+
+    // ---------------------------- //
+    // -- CRYOGENIC PRECIPITATOR -- //
+    // ---------------------------- //
+
     // -- BLUE ICE NUTRIENT -- //
     cryogenicPrecipitator(
         event,
@@ -147,17 +207,27 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, fluid: mi('argon') }]
     );
 
+    // ------------------------------ //
+    // -- DRAGON EGG ENERGY SIPHON -- //
+    // ------------------------------ //
+
     // -- DRAGON BREATH -- //
     dragonEggEnergySiphon(
         event,
         st('dragon_breath'),
         1,
-        100,
-        [{ amount: 1, item: yai('dragon_egg_siphon_catalyst') }],
+        25,
+        [
+            {
+                amount: 1,
+                item: yai('dragon_egg_siphon_catalyst'),
+                probability: 0.25,
+            },
+        ],
         null,
-        [{ amount: 1000, fluid: yai('dragon_breath') }],
-        [{ amount: 1250, fluid: yai('impure_dragon_breath') }],
-        [{ amount: 102400, type: yai('energy_generation') }]
+        [{ amount: 250, fluid: yai('dragon_breath') }],
+        [{ amount: 312.5, fluid: yai('impure_dragon_breath') }],
+        [{ amount: 25600, type: yai('energy_generation') }]
     );
 
     // -- DRAGON BREATH NUTRIENT -- //
@@ -165,61 +235,19 @@ ServerEvents.recipes((event) => {
         event,
         st('dragon_breath_nutrient'),
         1,
-        100,
-        [{ amount: 1, item: yai('dragon_egg_siphon_catalyst') }],
+        25,
+        [
+            {
+                amount: 1,
+                item: yai('dragon_egg_siphon_catalyst'),
+                probability: 0.25,
+            },
+        ],
         null,
-        [{ amount: 1000, fluid: yai('nutrient_rich_dragon_breath') }],
-        [{ amount: 2500, fluid: yai('impure_dragon_breath') }],
-        [{ amount: 204800, type: yai('energy_generation') }]
+        [{ amount: 250, fluid: yai('nutrient_rich_dragon_breath') }],
+        [{ amount: 625, fluid: yai('impure_dragon_breath') }],
+        [{ amount: 51200, type: yai('energy_generation') }]
     );
-
-    // -- DRAGON EGG SIPHON CATALYST -- //
-    assembler(
-        event,
-        st('dragon_egg_siphon_catalyst'),
-        8,
-        200,
-        [
-            { amount: 4, item: mi('steel_plate') },
-            { amount: 1, item: mi('quartz_tiny_dust') },
-        ],
-        [{ amount: 1, item: yai('dragon_egg_siphon_catalyst') }],
-        [{ amount: 50, fluid: yai('dragon_breath') }]
-    );
-
-    // -- DRAGON EGG SIPHON CATALYST NUTRIENT -- //
-    assembler(
-        event,
-        st('dragon_egg_siphon_catalyst_nutrient'),
-        8,
-        200,
-        [
-            { amount: 4, item: mi('steel_plate') },
-            { amount: 1, item: mi('quartz_tiny_dust') },
-        ],
-        [{ amount: 4, item: yai('dragon_egg_siphon_catalyst') }],
-        [{ amount: 50, fluid: yai('nutrient_rich_dragon_breath') }]
-    );
-
-    // -- MIXED HATCH CRAFTING SWAPS -- //
-    const MIXED_HATCH_TIER = [
-        'bronze',
-        'steel',
-        'advanced',
-        'turbo',
-        'highly_advanced',
-    ];
-
-    MIXED_HATCH_TIER.forEach((id) => {
-        event.shapeless(
-            yai(`${id}_mixed_output_hatch`),
-            yai(`${id}_mixed_input_hatch`)
-        );
-        event.shapeless(
-            yai(`${id}_mixed_input_hatch`),
-            yai(`${id}_mixed_output_hatch`)
-        );
-    });
 });
 
 ServerEvents.tags('item', (event) => {
