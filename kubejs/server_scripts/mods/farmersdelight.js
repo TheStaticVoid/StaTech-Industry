@@ -140,35 +140,69 @@ ServerEvents.recipes((event) => {
     // -- CUTTING MACHINE -- //
     // --------------------- //
 
-    // -- CABBAGE LEAF -- //
-    cuttingMachine(
-        event,
-        st('cutting_machine/cabbage_leaf'),
-        2,
-        100,
-        [{ amount: 1, item: fd('cabbage') }],
-        [{ amount: 2, item: fd('cabbage_leaf') }]
-    );
+    const cutList = [
+        [100, fd('cabbage'), fd('cabbage_leaf')],
+        [100, mc('potato'), rd('potato_slices')],
+        [200, mc('chicken'), fd('chicken_cuts')],
+        [200, mc('cooked_chicken'), fd('cooked_chicken_cuts')],
+        [200, mc('beef'), fd('minced_beef')],
+        [200, mc('porkchop'), fd('bacon')],
+        [200, mc('cod'), fd('cod_slice')],
+        [200, mc('cooked_cod'), fd('cooked_cod_slice')],
+        [200, mc('salmon'), fd('salmon_slice')],
+        [200, mc('cooked_salmon'), fd('cooked_salmon_slice')],
+        [200, mc('mutton'), fd('mutton_chops')],
+        [200, mc('cooked_mutton'), fd('cooked_mutton_chops')],
+        [200, rd('calamari'), rd('calamari_slice')],
+        [200, rd('cooked_calamari'), rd('cooked_calamari_slice')],
+        [100, cud('cucumber'), cud('cut_cucumber')],
+        [100, cud('pickle'), cud('cut_pickle')],
+        [100, cud('eggplant'), cud('cut_eggplant')],
+    ];
 
-    // -- CHICKEN CUTS -- //
-    cuttingMachine(
-        event,
-        st('cutting_machine/chicken_cuts'),
-        2,
-        200,
-        [{ amount: 1, item: mc('chicken') }],
-        [{ amount: 2, item: fd('chicken_cuts') }]
-    );
+    cutList.forEach((INPUTS) => {
+        let id = st(`cutting_machine/${INPUTS[2].split(':')[1]}`);
+        cuttingMachine(
+            event,
+            id,
+            2,
+            INPUTS[0],
+            [{ amount: 1, item: INPUTS[1] }],
+            [{ amount: 2, item: INPUTS[2] }]
+        );
+    });
 
-    // -- MINCED BEEF -- //
-    cuttingMachine(
-        event,
-        st('cutting_machine/minced_beef'),
-        2,
-        200,
-        [{ amount: 1, item: mc('beef') }],
-        [{ amount: 2, item: fd('minced_beef') }]
-    );
+    const DYE_COLORS = [
+        'white',
+        'orange',
+        'yellow',
+        'pink',
+        'purple',
+        'blue',
+        'green',
+        'red',
+        'black',
+    ];
+
+    DYE_COLORS.forEach((COLORS) => {
+        cuttingMachine(
+            event,
+            st(`cutting_machine/bell_pepper_slice_${COLORS}`),
+            2,
+            100,
+            [{ amount: 1, item: rd(`bell_pepper_${COLORS}`) }],
+            [{ amount: 2, item: rd(`bell_pepper_slice_${COLORS}`) }]
+        );
+
+        cuttingMachine(
+            event,
+            st(`cutting_machine/roasted_bell_pepper_slice_${COLORS}`),
+            2,
+            100,
+            [{ amount: 1, item: rd(`roasted_bell_pepper_${COLORS}`) }],
+            [{ amount: 2, item: rd(`roasted_bell_pepper_slice_${COLORS}`) }]
+        );
+    });
 
     // -- MINCED BEEF ALT -- //
     cuttingMachine(
@@ -180,14 +214,24 @@ ServerEvents.recipes((event) => {
         [{ amount: 3, item: fd('minced_beef') }]
     );
 
-    // -- POTATO SLICES -- //
+    // -- PUMPKIN SLICE -- //
     cuttingMachine(
         event,
-        st('cutting_machine/potato_slices'),
+        st('cutting_machine/pumpkin_slice'),
         2,
         100,
-        [{ amount: 1, item: mc('potato') }],
-        [{ amount: 2, item: rd('potato_slices') }]
+        [{ amount: 1, item: mc('pumpkin') }],
+        [{ amount: 4, item: fd('pumpkin_slice') }]
+    );
+
+    // -- RAW PASTA -- //
+    cuttingMachine(
+        event,
+        st('cutting_machine/raw_pasta'),
+        2,
+        100,
+        [{ amount: 1, tag: 'c:foods/dough' }],
+        [{ amount: 1, item: fd('raw_pasta') }]
     );
 
     // -- FLAXEN CHEESE WEDGES -- //
@@ -759,17 +803,10 @@ ServerEvents.tags('item', (event) => {
     const DYE_COLORS = [
         'white',
         'orange',
-        'magenta',
         'yellow',
-        'cyan',
-        'lime',
         'pink',
-        'gray',
-        'light_blue',
-        'light_gray',
         'purple',
         'blue',
-        'brown',
         'green',
         'red',
         'black',

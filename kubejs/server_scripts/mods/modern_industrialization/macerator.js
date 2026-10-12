@@ -117,6 +117,45 @@ ServerEvents.recipes((event) => {
         [{ amount: 4, item: mi('tuff_dust') }]
     );
 
+    // -- RICE -- //
+    macerator(
+        event,
+        st('rice'),
+        2,
+        100,
+        [{ amount: 1, item: fd('rice_panicle') }],
+        [
+            { amount: 1, item: fd('rice') },
+            { amount: 1, item: fd('straw') },
+        ]
+    );
+
+    // -- AVOCADO -- //
+    macerator(
+        event,
+        st('avocado'),
+        2,
+        100,
+        [{ amount: 1, item: cud('avocado') }],
+        [
+            { amount: 2, item: cud('cut_avocado') },
+            { amount: 2, item: cud('avocado_pit') },
+        ]
+    );
+
+    // -- CORN KERNELS -- //
+    macerator(
+        event,
+        st('corn_kernels'),
+        2,
+        100,
+        [{ amount: 1, item: cud('corn_cob') }],
+        [
+            { amount: 2, item: cud('corn_kernels') },
+            { amount: 1, item: fd('straw') },
+        ]
+    );
+
     // -- SPECTRUM POWDERS -- //
     let gemRecipes = (gemName) => {
         const DATA = [

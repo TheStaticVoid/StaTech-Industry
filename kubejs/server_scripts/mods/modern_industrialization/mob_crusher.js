@@ -29,6 +29,7 @@ ServerEvents.recipes((event) => {
             kj('pig_model'),
             [
                 { amount: 1, item: mc('porkchop'), probability: 0.85 },
+                { amount: 1, item: fd('ham'), probability: 0.25 },
                 { amount: 1, item: mc('bone'), probability: 0.65 },
                 { amount: 1, item: cr('experience_nugget'), probability: 0.5 },
             ],

@@ -10,22 +10,25 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 
 - **Removed String -> Wool Packer recipe due to base MI having the same recipe in the Compressor now.**
 - **Re-added Flax to the Photsynthetic Chamber (it got lost during a refactor).**
+- **Reduced Dragon Egg Energy Siphon recipe size to allow using 2 MV Energy Output Hatches instead of 3 for the Nutrient Rich recipe.**
 
 ### General Changelog
 
 - Unified squid drops.
-- Removed default Steam Chainsaw advancement.
+- Replaced Steam Chainsaw advancement.
 - **Blacklisted Sophisticated Inventory Interactions from Spectrum UIs and the Bank UI.**
-- Fixed quest lang issues.
+- Fixed quest typos.
 - Fixed KubeJS lang issues.
 - **Retextured the Space Probes, Pizzas, Fries, and ABS Building Brick. Thanks Onion-Evan!**
 - Fixed Deposit tootip typos.
-- Added some MI compat recipes for food items.
 - **Rebalanced Coke Cola and Bepsi.**
 - **Removed Mono7 Font to resolve graphical bug where the standard vanilla space character was overwritten.**
 - Blacklisted removed food items from the Canning Machine.
 - **Added Spray Can support for many more blocks.**
 - Added Cotton -> String Macerator recipe.
+- Added Ham to Pig Model output.
+- Updated some MI quest text to reflect recent changes.
+- **Added several Cutting Machine, Macerator, and Mixer recipes for various food items.**
 
 ### Companion Mod Changelog
 
