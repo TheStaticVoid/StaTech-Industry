@@ -2,7 +2,7 @@
 
 ## [2.0.3]
 
-TODO: WRITE SOME BS
+Small patch mostly to fix a few oversights from 2.0.2 and fix some annoying (but not breaking) bugs. Also brings ME Hatches from the recent Industrialization Overdrive update.
 
 As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
 
@@ -26,12 +26,14 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - Blacklisted removed food items from the Canning Machine.
 - **Added Spray Can support for many more blocks.**
 - Added Cotton -> String Macerator recipe.
-- Added Ham to Pig Model output.
+- Added Ham to Pig Model Mob Crusher output.
 - Updated some MI quest text to reflect recent changes.
 - **Added several Cutting Machine, Macerator, and Mixer recipes for various food items.**
+- Added quests for ME Hatches.
 
 ### Companion Mod Changelog
 
+- Fixed MI forcing a compile time/runtime Create dependency.
 - **Moved Mono7 Font to the companion mod since it is only needed for the Prospector Pick.**
 
 ## [2.0.2]
