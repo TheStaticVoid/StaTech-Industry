@@ -11,16 +11,6 @@ ServerEvents.recipes((event) => {
     const REMOVED_RECIPES = [mi('vanilla_recipes/centrifuge/lava')];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
-    // -- CARBON DUST FROM LIGNITE -- //
-    centrifuge(
-        event,
-        st('carbon_dust_from_lignite'),
-        16,
-        400,
-        [{ amount: 8, item: mi('lignite_coal_dust') }],
-        [{ amount: 1, item: mi('carbon_dust') }]
-    );
-
     // -- CORE SLURRY -- //
     centrifuge(
         event,

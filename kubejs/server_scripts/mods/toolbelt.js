@@ -17,13 +17,17 @@ ServerEvents.recipes((event) => {
 
     // -- TOOL BELT -- //
     event
-        .shaped(tb('belt'), ['SLS', 'LBL', 'PCP'], {
-            S: mc('string'),
-            B: '#c:barrels',
-            L: mc('leather'),
-            P: '#c:plates/steel',
-            C: fd('canvas'),
-        })
+        .shaped(
+            Item.of(tb('belt'), { 'toolbelt:belt_size': 2 }),
+            ['SLS', 'LBL', 'PCP'],
+            {
+                S: mc('string'),
+                B: '#c:barrels',
+                L: mc('leather'),
+                P: '#c:plates/steel',
+                C: fd('canvas'),
+            }
+        )
         .id(st('tool_belt'));
 
     // -- BELT POUCH -- //

@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.4]
+
+TODO: YAP
+
+As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
+
+### Breaking Changes
+
+- **Removed Lignite Coal Dust -> Carbon Centrifuge recipe due to base MI having a more interesting recipe now.**
+
+### General Changelog
+
+- **Fixed first Tool Belt upgrade craft not working due to strict item data matching.**
+
 ## [2.0.3]
 
 Small patch mostly to fix a few oversights from 2.0.2 (ie. re-adding Flax Photosynthetic Chamber recipe) and fix some annoying (but not breaking) bugs.
