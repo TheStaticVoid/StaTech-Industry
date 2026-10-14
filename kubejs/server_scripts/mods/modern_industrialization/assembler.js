@@ -1159,8 +1159,7 @@ ServerEvents.recipes((event) => {
             { amount: 1, item: kj('calorite_fuel_tank') },
             { amount: 1, item: mi('processing_unit') },
             { amount: 1, item: kj('calorite_engine') },
-            { amount: 1, item: mi('titanium_tank') },
-            { amount: 1, item: mi('titanium_tank') },
+            { amount: 2, item: mi('titanium_tank') },
         ],
         [{ amount: 4, item: kj('space_probe') }]
     );
