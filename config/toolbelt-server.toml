@@ -1,7 +1,7 @@
 [general]
 	#List of items to force-allow placing in the belt. Takes precedence over blacklist.
-	whitelist = []
+	whitelist = ["mi_sound_addon:mallet", "measurements:tape_measure",]
 	#List of items to disallow from placing in the belt. (whitelist takes precedence)
-	blacklist = []
+	blacklist = ["bankstorage:bank_1", "bankstorage:bank_2", "bankstorage:bank_3", "bankstorage:bank_4", "bankstorage:bank_5", "bankstorage:bank_6", "bankstorage:bank_7", "bankstorage:bank_link", "tankstorage:tank_1", "tankstorage:tank_2", "tankstorage:tank_3", "tankstorage:tank_4", "tankstorage:tank_5", "tankstorage:tank_6", "tankstorage:tank_7", "tankstorage:tank_link",]
 	#When set to false, stackable items will no longer be allowed by default.
 	allowAllNonStackableItems = true

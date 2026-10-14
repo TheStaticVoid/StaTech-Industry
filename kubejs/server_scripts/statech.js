@@ -571,6 +571,9 @@ ServerEvents.tags('item', (event) => {
         kj('gold_lumberaxe'),
         kj('diamond_lumberaxe'),
         kj('netherite_lumberaxe'),
+        ei('steam_chainsaw'),
+        ei('electric_chainsaw'),
+        mi('diesel_chainsaw'),
     ];
     LUMBERAXES.forEach((id) => {
         event.add(kj('lumberaxes'), id);
@@ -580,7 +583,6 @@ ServerEvents.tags('item', (event) => {
         event.add(mc('enchantable/vanishing'), id);
         event.remove(mc('axes'), id);
     });
-    event.add(kj('lumberaxes'), mi('steam_chainsaw'));
 
     const COINS = [
         kj('coin_common'),

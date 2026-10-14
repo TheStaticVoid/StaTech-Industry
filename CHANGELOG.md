@@ -13,6 +13,9 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 ### General Changelog
 
 - **Fixed first Tool Belt upgrade craft not working due to strict item data matching.**
+- **Fixed Steam Chainsaw Lumberaxe Tagging.**
+- Blacklisted Banks and Tanks from Tool Belt.
+- Whitelisted Steel Mallet and Measuring Tape for Tool Belt.
 
 ## [2.0.3]
 
