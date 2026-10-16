@@ -185,7 +185,7 @@ ServerEvents.recipes((event) => {
         8,
         200,
         [
-            { amount: 4, tag: 'c:stones' },
+            { amount: 4, tag: mc('stone_tool_materials') },
             { amount: 3, tag: mc('wooden_slabs') },
             { amount: 1, tag: 'c:rods/iron' },
             { amount: 1, item: mc('redstone') },
