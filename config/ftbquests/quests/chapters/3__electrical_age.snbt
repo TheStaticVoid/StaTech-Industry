@@ -60,7 +60,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -93,7 +93,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -127,7 +127,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -275,7 +275,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -308,7 +308,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -3269,6 +3269,7 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
 				id: "5B6AA09164F60EE7"
@@ -3428,6 +3429,74 @@
 			}]
 			x: 12.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["2969BA6B88D1EC15"]
+			id: "72BE709180586C77"
+			rewards: [
+				{
+					count: 3
+					id: "0B38FDDB3F69DBC6"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "3A0E2A180F31E0C2"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2BDBAAE8FA3CB33C"
+					table_id: 8811145634920634486L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "76D580D4C19B2B9C"
+				item: { count: 1, id: "extended_industrialization:electric_brewery" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["47D3834E67A0995D"]
+			id: "414BBBFCC6A91271"
+			rewards: [
+				{
+					count: 5
+					id: "34F376945C7D12FE"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "4B8AD1000C368966"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "106FEB9F015FFFB7"
+					table_id: 5706018968149530875L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "4BF8BEAED64E5DA1"
+				item: { count: 1, id: "extended_industrialization:electric_beacon" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.0d
 		}
 	]
 }

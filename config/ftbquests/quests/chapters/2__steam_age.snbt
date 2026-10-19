@@ -1927,7 +1927,7 @@
 				type: "item"
 			}]
 			x: 30.5d
-			y: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["26A89C51A7B9FFDE"]
@@ -2025,7 +2025,7 @@
 				item: { count: 1, id: "modern_industrialization:trash_can" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 33.5d
 			y: 4.5d
 		}
 		{
@@ -2164,8 +2164,8 @@
 				item: { count: 1, id: "mi_sound_addon:mallet" }
 				type: "item"
 			}]
-			x: 31.5d
-			y: 3.5d
+			x: 32.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["26A89C51A7B9FFDE"]
@@ -2864,6 +2864,7 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
 			tasks: [{
 				id: "290DC8526F2F06B7"
 				item: { count: 1, id: "cognition:cognitive_flux" }
@@ -3146,7 +3147,7 @@
 					type: "item"
 				}
 			]
-			x: 30.5d
+			x: 31.5d
 			y: 3.5d
 		}
 		{
@@ -3824,7 +3825,7 @@
 					type: "item"
 				}
 			]
-			x: 34.0d
+			x: 34.5d
 			y: 4.5d
 		}
 		{
@@ -3979,7 +3980,7 @@
 					type: "item"
 				}
 			]
-			x: 32.0d
+			x: 31.5d
 			y: 4.5d
 		}
 		{
@@ -4068,7 +4069,7 @@
 				item: { count: 1, id: "kubejs:diamond_upgrade_smithing_template" }
 				type: "item"
 			}]
-			x: 31.0d
+			x: 30.5d
 			y: 4.5d
 		}
 		{
@@ -4392,6 +4393,39 @@
 			}]
 			x: 43.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["26A89C51A7B9FFDE"]
+			id: "6FCE9410F32E2420"
+			rewards: [
+				{
+					id: "3510ED7DCEDEE222"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "3523079A3645D184"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "276572D613314782"
+					table_id: 4928307245111940372L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "7FE22FD7C0FF4F06"
+				item: { count: 1, id: "extended_industrialization:steel_brewery" }
+				type: "item"
+			}]
+			x: 30.5d
+			y: 2.5d
 		}
 	]
 }
