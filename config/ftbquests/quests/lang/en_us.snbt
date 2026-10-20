@@ -3280,6 +3280,21 @@
 		""
 		"You can also place them &ddiagonally&r."
 	]
+	quest.414BBBFCC6A91271.quest_desc: [
+		"The &dElectric Beacon&r &econsumes potions&r and provides the effect to all nearby players at the cost of &9256 EU/t&r per effect."
+		""
+		"The &aduration&r that a potion lasts in the beacon is determined by its &9shortest effect&r, which is then &chalved&r. "
+		""
+		"In most cases, a potion will only have &bone effect&r. "
+		""
+		"For example, an &e8 minute&r speed potion can be consumed by the beacon which will then &aprovide the effect&r in the area for a total of &d4 minutes&r costing &9256 EU/t&r. "
+		""
+		"Similarly, a &e40 second&r turtle master potion will only last &d20 seconds&r but costs &9512 EU/t&r, since it has &atwo effects&r (slowness and resistance). "
+		""
+		"Because potions are &cconsumed&r by the beacon, it is recommended to create some sort of &9automation loop&r using the &aBrewery&r to keep the beacon running indefinitely."
+		""
+		"&oThe &9range of the beacon&r&o is &elarger&r&o than that of a &dnormal beacon&r&o, as determined by the amount of &clayers beneath&r&o it, excluding the steel casing.&r"
+	]
 	quest.41523DE26590E9FA.quest_desc: [
 		"Created with all the knowledge you have gathered, you have created the &aSpirit Instiller&r. It serves to be able to connect the &eenergies&r of two items, with the help of a third object to &bbind&r them. An almost spiritual process."
 		""
@@ -5666,6 +5681,13 @@
 		""
 		"You can remove the &b4k ME Storage Component&r by fully emptying the storage cell, and sneak right-clicking it in your hand."
 	]
+	quest.6FCE9410F32E2420.quest_desc: [
+		"The &aBrewery&r functions as a normal machine, but it performs &dbrewing stand recipes&r. There are a couple differences, however."
+		""
+		"The &aBrewery&r takes &eBlazing Essence&r rather than blaze powder. Each time the &aBrewery&r brews a set of potions, it consumes exactly &91mb&r of &eBlazing Essence&r."
+		""
+		"The &aBrewery&r brews exactly &b4 potions&r at a time, rather than the brewing stand that allows &d1 to 3&r."
+	]
 	quest.6FEF9845584E6BFA.quest_desc: ["Combining &aSynthetic Oil&r with Paper in a &6Mixer&r will grant you two&2 Rubber Sheets&r. You will unlock a more efficient recipe with petrochemistry in the future."]
 	quest.700E2D66148EEE63.quest_desc: [
 		"The &bME Wireless Access Point&r allows wireless access via a Wireless Terminal. Range and power usage are determined based on the number of &aWireless Boosters&r installed into the ME Wireless Access Point."
@@ -5795,6 +5817,13 @@
 		"&bEnder Pouches&r are able to access the contents of your &bEnder Chest&r on the go."
 		""
 		"Shift right-click an &bEnder Chest&r with an &bEnder Bag&r to link them together."
+	]
+	quest.72BE709180586C77.quest_desc: [
+		"The &aBrewery&r functions as a normal machine, but it performs &dbrewing stand recipes&r. There are a couple differences, however."
+		""
+		"The &aBrewery&r takes &eBlazing Essence&r rather than blaze powder. Each time the &aBrewery&r brews a set of potions, it consumes exactly &91mb&r of &eBlazing Essence&r."
+		""
+		"The &aBrewery&r brews exactly &b4 potions&r at a time, rather than the brewing stand that allows &d1 to 3&r."
 	]
 	quest.72CD3E157F8A0EED.quest_desc: [
 		"The &bCovered Cable&r variant offers no gameplay benefits over its &aFluix ME Glass Cable&r counterpart. It can however be used as an alternate aesthetic choice if you prefer the covered look."
