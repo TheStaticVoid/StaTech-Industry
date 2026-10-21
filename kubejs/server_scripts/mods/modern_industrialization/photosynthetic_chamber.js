@@ -35,7 +35,7 @@ ServerEvents.recipes((event) => {
     // This is all the seeds in the game with their respective outputs
     // prettier-ignore
     const cropList = [
-                // Seed                             Primary Output                                                      Secondary Output                                                      Extra Drop                                                                    Fluid
+                // Seed                             Primary Output                                                      Secondary Output                                                            Extra Drop                                                                Fluid
         Plant(mc('wheat_seeds'),                 { amount: 1, item: mc('wheat') },                                   { amount: 1, item: mc('wheat'), probability: 0.5 },                        { amount: 1, item: mc('wheat_seeds'), probability: 0.5 } ),
         Plant(mc('pumpkin_seeds'),               { amount: 1, item: mc('pumpkin') },                                 { amount: 1, item: mc('pumpkin_seeds'), probability: 0.5 } ),
         Plant(mc('melon_seeds'),                 { amount: 1, item: mc('melon') },                                   { amount: 1, item: mc('melon_seeds'), probability: 0.5 } ),
@@ -65,7 +65,7 @@ ServerEvents.recipes((event) => {
         Plant(rd('pale_bell_pepper_seeds'),      { amount: 1, item: rd('bell_pepper_orange'), probability: 0.44 },   { amount: 1, item: rd('bell_pepper_white'), probability: 0.44 },           { amount: 1, item: rd('bell_pepper_pink'), probability: 0.44 } ),
         Plant(rd('dark_bell_pepper_seeds'),      { amount: 1, item: rd('bell_pepper_blue'), probability: 0.44 },     { amount: 1, item: rd('bell_pepper_purple'), probability: 0.44 },          { amount: 1, item: rd('bell_pepper_black'), probability: 0.44 } ),
         Plant(su('flax_seeds'),                  { amount: 1, item: su('flax') },                                    { amount: 1, item: su('flax'), probability: 0.5 },                         { amount: 1, item: su('flax_seeds'), probability: 0.5 } ),
-        Plant(mc('nether_wart'),                 { amount: 1, item: mc('nether_wart') },                             { amount: 1, item: mc('nether_wart'), probability: 0.5 },                  null,                                                                    mc('lava')),
+        Plant(mc('nether_wart'),                 { amount: 1, item: mc('nether_wart') },                             { amount: 1, item: mc('nether_wart'), probability: 0.5 },                  null,                                                                    mi('blood')),
         Plant(mc('chorus_flower'),               { amount: 1, item: mc('chorus_fruit') },                            { amount: 1, item: mc('chorus_fruit'), probability: 0.5 },                 { amount: 1, item: mc('chorus_flower'), probability: 0.5 },              mi('liquid_ender')),
     ];
 
@@ -93,51 +93,67 @@ ServerEvents.recipes((event) => {
     function makePhotoChamberRecipes(plant, condition) {
         let { seeds, primaryOutput, secondaryOutput, extraDrop, fluid } = plant;
         let id = `${seeds.split(':')[1]}`;
-        let photoChamberOutputs = [primaryOutput, secondaryOutput];
-        let photoChamberFluidInput = [];
-
-        // handle optional third output
-        if (plant.extraDrop) {
-            photoChamberOutputs.push(plant.extraDrop);
-        }
-
         // use water unless otherwise specified
-        if (plant.fluid) {
-            let fluid = {
-                amount: 100,
-                fluid: plant.fluid,
+        if (!plant.fluid) {
+            plant.fluid = mc('water');
+        }
+        // calling the "helper function" directly was SUPER verbose, so this is a more concise wrapper around it.
+        const photoChamberHelper = (fluid, multiplier, id_suffix) => {
+            let primaryOutputMult = {
+                amount: plant.primaryOutput.amount * multiplier,
+                item: plant.primaryOutput.item,
+                probability: plant.primaryOutput.probability,
             };
-            photoChamberFluidInput.push(fluid);
-        } else {
-            photoChamberFluidInput.push({
-                amount: 100,
-                fluid: mc('water'),
-            });
-        }
-        // handle plants with block conditions
-        if (condition.block && condition.direction) {
-            photoChamber(
-                event,
-                st(id),
-                8,
-                600,
-                [{ amount: 1, item: seeds, probability: 0.0 }],
-                photoChamberOutputs,
-                photoChamberFluidInput,
-                condition.block,
-                condition.direction
-            );
-        } else {
-            photoChamber(
-                event,
-                st(id),
-                8,
-                600,
-                [{ amount: 1, item: seeds, probability: 0.0 }],
-                photoChamberOutputs,
-                photoChamberFluidInput
-            );
-        }
+            let secondaryOutputMult = {
+                amount: plant.secondaryOutput.amount * multiplier,
+                item: plant.secondaryOutput.item,
+                probability: plant.secondaryOutput.probability,
+            };
+            let photoChamberOutputs = [primaryOutputMult, secondaryOutputMult];
+
+            // handle optional third output
+            if (plant.extraDrop) {
+                let extraDropMult = {
+                    amount: plant.extraDrop.amount * multiplier,
+                    item: plant.extraDrop.item,
+                    probability: plant.extraDrop.probability,
+                };
+                photoChamberOutputs.push(extraDropMult);
+            }
+
+            // handle plants with block conditions
+            if (condition.block && condition.direction) {
+                photoChamber(
+                    event,
+                    st(id + id_suffix),
+                    8,
+                    600,
+                    [{ amount: 1, item: seeds, probability: 0.0 }],
+                    photoChamberOutputs,
+                    [{ amount: 100, fluid: fluid }],
+                    condition.block,
+                    condition.direction
+                );
+            } else {
+                photoChamber(
+                    event,
+                    st(id + id_suffix),
+                    8,
+                    600,
+                    [{ amount: 1, item: seeds, probability: 0.0 }],
+                    photoChamberOutputs,
+                    [{ amount: 100, fluid: fluid }]
+                );
+            }
+        };
+
+        photoChamberHelper(plant.fluid, 1, '');
+        photoChamberHelper(
+            mi(`nutrient_rich_${plant.fluid.split(':')[1]}`),
+            2,
+            '_bonemeal'
+        );
+        photoChamberHelper(ei('npk_fertilizer'), 4, '_npk');
     }
 
     cropList.forEach((plant) => makePhotoChamberRecipes(plant, false));
@@ -158,74 +174,51 @@ ServerEvents.recipes((event) => {
         .getStacks()
         .toArray();
     flowers.forEach((recipe) => {
+        let intermediateFlower = Plant(
+            recipe.id,
+            { amount: 1, item: recipe.id },
+            { amount: 1, item: recipe.id, probability: 0.5 }
+        );
         let namespace = recipe.id.split(':')[0];
-        let itemName = recipe.id.split(':')[1];
         if (namespace != 'spectrum') {
-            photoChamber(
-                event,
-                st(`${namespace}_${itemName}`),
-                8,
-                600,
-                [{ amount: 1, item: recipe.id, probability: 0.0 }],
-                [
-                    { amount: 1, item: recipe.id },
-                    { amount: 1, item: recipe.id, probability: 0.5 },
-                ],
-                [{ amount: 100, fluid: mc('water') }]
-            );
+            makePhotoChamberRecipes(intermediateFlower, false);
         } else {
-            photoChamber(
-                event,
-                st(`${namespace}_${itemName}`),
-                8,
-                600,
-                [{ amount: 1, item: recipe.id, probability: 0.0 }],
-                [
-                    { amount: 1, item: recipe.id },
-                    { amount: 1, item: recipe.id, probability: 0.5 },
-                ],
-                [{ amount: 100, fluid: mc('water') }],
-                sp('polished_onyx'),
-                'below'
-            );
+            makePhotoChamberRecipes(intermediateFlower, {
+                block: sp('polished_onyx'),
+                direction: 'below',
+            });
         }
     });
 
     // -- HIBERNATING JADE VINE BULB MOONSTONE -- //
-    photoChamber(
-        event,
-        st('hibernating_jade_vine_bulb_moonstone'),
-        8,
-        600,
-        [{ amount: 1, item: sp('hibernating_jade_vine_bulb') }],
-        [
-            { amount: 1, item: sp('germinated_jade_vine_bulb') },
-            {
-                amount: 2,
-                item: sp('hibernating_jade_vine_bulb'),
-                probability: 0.5,
-            },
-            { amount: 3, item: sp('jade_jelly'), probability: 0.33 },
-        ],
-        [{ amount: 100, fluid: mc('water') }],
-        sp('polished_moonstone'),
-        'below'
+    let hibernating_jade_vine_bulb = Plant(
+        sp('hibernating_jade_vine_bulb'),
+        {
+            amount: 1,
+            item: sp('germinated_jade_vine_bulb'),
+        },
+        {
+            amount: 2,
+            item: sp('hibernating_jade_vine_bulb'),
+            probability: 0.5,
+        },
+        { amount: 3, item: sp('jade_jelly'), probability: 0.33 }
     );
 
-    // -- GERMINATED JADE VINE BULB MOONSTONE -- //
-    photoChamber(
-        event,
-        st('germinated_jade_vine_bulb_moonstone'),
-        8,
-        600,
-        [{ amount: 1, item: sp('germinated_jade_vine_bulb') }],
-        [
-            { amount: 1, item: sp('germinated_jade_vine_bulb') },
-            { amount: 9, item: sp('jade_vine_petals'), probability: 0.6 },
-            { amount: 3, item: sp('jade_jelly'), probability: 0.33 },
-        ],
-        [{ amount: 100, fluid: mc('water') }],
-        sp('polished_moonstone'),
-        'below'
+    let germinated_jade_vine_bulb = Plant(
+        sp('germinated_jade_vine_bulb'),
+        { amount: 1, item: sp('germinated_jade_vine_bulb') },
+        { amount: 9, item: sp('jade_vine_petals'), probability: 0.6 },
+        { amount: 3, item: sp('jade_jelly'), probability: 0.33 }
     );
+
+    makePhotoChamberRecipes(hibernating_jade_vine_bulb, {
+        block: sp('polished_moonstone'),
+        direction: 'below',
+    });
+
+    makePhotoChamberRecipes(germinated_jade_vine_bulb, {
+        block: sp('polished_moonstone'),
+        direction: 'below',
+    });
 });

@@ -14,8 +14,17 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 
 - **Fixed first Tool Belt upgrade craft not working due to strict item data matching.**
 - **Fixed Steam Chainsaw Lumberaxe Tagging.**
-- Blacklisted Banks and Tanks from Tool Belt.
+- **Blacklisted Banks and Tanks from Tool Belt.**
 - Whitelisted Steel Mallet and Measuring Tape for Tool Belt.
+- Updated Space Probe recipe for parity with stackable tanks.
+- Fixed cooked chicken tag including raw chicken cuts.
+- Fixed piston compat recipe in the Assembler accepting #c:stones instead of #minecraft:stone_tool_materials for shaped crafting parity.
+- Fixed duplicate XP awards in some early AE2 quests.
+- **Added quests for EI's Breweries and the Electric Beacon.**
+- Fixed Nano Quantum Saber quest accepting the normal Nano Saber.
+- Added Wither Skeleton Skull Fragment packing recipe.
+- **Added Spectrum crafting recipe for Teleportation Range Enchantment.**
+- **Added Photosynthetic Chamber recipes using fertilizer for buffed output.**
 
 ## [2.0.3]
 

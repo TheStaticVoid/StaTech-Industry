@@ -246,18 +246,30 @@ ServerEvents.recipes((event) => {
     ];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
-    // -----------------------//
+    // ---------------------- //
     // ---- CINDERHEARTH ---- //
-    // -----------------------//
+    // ---------------------- //
 
     // -- ETERNAL STEAK -- //
     cinderhearth(event, st('eternal_steak'), 800, 1.0, ar('everlasting_beef'), [
         { id: ar('eternal_steak'), count: 1 },
     ]);
 
-    // ------------------------//
+    // ------------------- //
+    // ---- ENCHANTER ---- //
+    // ------------------- //
+
+    // -- TELEPORTATION RANGE -- //
+
+    // ------------------------ //
+    // -- ENCHANTING UPGRADE -- //
+    // ------------------------ //
+
+    // -- TELEPORTATION RANGE -- //
+
+    // ----------------------- //
     // ---- FUSION SHRINE ---- //
-    // ------------------------//
+    // ----------------------- //
 
     // -- ENDER EYE -- //
     fusion_shrine(
@@ -324,9 +336,9 @@ ServerEvents.recipes((event) => {
         sp('build_fusion_shrine')
     );
 
-    // -------------------------//
+    // ------------------------ //
     // ---- LIQUID DIPPING ---- //
-    // -------------------------//
+    // ------------------------ //
 
     const ITEMS_TO_OXIDIZE = [
         cr('copper_tiles'),
@@ -390,9 +402,9 @@ ServerEvents.recipes((event) => {
         );
     });
 
-    // -------------------//
+    // ------------------ //
     // ---- PEDESTAL ---- //
-    // -------------------//
+    // ------------------ //
 
     // -- BOTTLE OF FAILING -- //
     pedestal(

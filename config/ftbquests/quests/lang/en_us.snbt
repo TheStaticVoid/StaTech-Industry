@@ -308,6 +308,8 @@
 		"While tearing down entire forests definitely &emakes the factory happy&r, it does not &cmake you happy&r. It's a lot of &ctedious work&r for such a &abasic material&r. While you could make a simple &eCreate contraption&r for a &3tree farm&r, it's not the most &clag-friendly&r method, and a lot of larger tree types &cdont get cut down properly&r by &eCreate&r's &6Mechanical Saws&r. Luckily, the &aIndustrial Greenhouse&r can solve all these issues. By feeding it &9Water&r and providing a &2Sapling&r, it will generate &dLogs&r and &2Saplings&r of that respective type after little bit of time. "
 		""
 		"If you provide the &6Nutrient Rich&r version of the fluid with the recipe, it will &2double the output&r. There are three variants for &6Nutrient Rich&r fluids, &9water&r, &cblood&r, and &dliquid ender&r. The &6Nutrient Rich&r versions are used in place of the regular fluid to boost the output. Please note though that it's best to ensure you're &3only running one recipe&r for maximum overclock potential. If you can't supply a steady stream of &6Nutrient Rich Solutions&r to the machine, it's probably better to use the recipes without it."
+		""
+		"&aNPK Fertilizer&r from &9EI&r will &dquadruple the output&r!"
 	]
 	quest.06AB394FC4DB1809.quest_subtitle: "An industrial green thumb"
 	quest.06AEE6B2E97A5CA8.quest_desc: [
@@ -5569,7 +5571,13 @@
 	quest.6DA55FD46CE460F7.quest_desc: ["A high tier fluid storage cell that can store up to 65536 bytes of information."]
 	quest.6DBB476BFA652DFA.quest_desc: ["Found deep in the &dDeeper Down&r, a &bnew gem&r awaits you..."]
 	quest.6DBB476BFA652DFA.title: "A Light In the Darkness"
-	quest.6DC076765D6033C3.quest_desc: ["Lots of &ehard work&r is sure to leave the &cindustrialist very hungry&r. Want a solution that doesn't involve diving into &eCreate&r? If so, then the &aPhotosynthetic Chamber&r is for you. The &aChamber&r &3does not consume the seeds you input into it&r and only requires a steady input of &9water&r. You can use this to generate a &dlarge stockpile of food&r for yourself (or for future &aPlant Oil&r needs)."]
+	quest.6DC076765D6033C3.quest_desc: [
+		"Lots of &ehard work&r is sure to leave the &cindustrialist very hungry&r. Want a solution that doesn't involve diving into &eCreate&r? If so, then the &aPhotosynthetic Chamber&r is for you. The &aChamber&r &3does not consume the seeds you input into it&r and only requires a steady input of &9water&r. You can use this to generate a &dlarge stockpile of food&r for yourself (or for future &aPlant Oil&r needs)."
+		""
+		"If you provide the &6Nutrient Rich&r version of the fluid with the recipe, it will &2double the output&r. There are three variants for &6Nutrient Rich&r fluids, &9water&r, &cblood&r, and &dliquid ender&r. The &6Nutrient Rich&r versions are used in place of the regular fluid to boost the output. Please note though that it's best to ensure you're &3only running one recipe&r for maximum overclock potential. If you can't supply a steady stream of &6Nutrient Rich Solutions&r to the machine, it's probably better to use the recipes without it."
+		""
+		"&aNPK Fertilizer&r from &9EI&r will &dquadruple the output&r!"
+	]
 	quest.6E347907DA022989.quest_desc: ["This necklace will make you &dtiny&r. Very useful to walk through that pipe spaghetti!"]
 	quest.6E347907DA022989.quest_subtitle: "Now Craftable!"
 	quest.6E39043C6369B7A3.quest_desc: ["Unfortunately, &eTinker's Construct&r is not in the pack, however it's &aCrafting Station&r has been added by &6Enhanced Workbenches&r mod. It doesn't appear that it currently can pull from adjacent inventories, &2but it might in the future&r! For now it just retains your items after you close it (&obut wait the default one does that too&r?)"]
