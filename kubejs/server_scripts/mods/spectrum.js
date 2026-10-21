@@ -260,12 +260,54 @@ ServerEvents.recipes((event) => {
     // ------------------- //
 
     // -- TELEPORTATION RANGE -- //
+    enchanter(
+        event,
+        st('teleportation_range_1'),
+        300,
+        100,
+        [
+            { item: mc('book') },
+            { item: sp('green_pigment') },
+            { item: mc('ender_pearl') },
+            { item: mi('steel_large_plate') },
+            { item: sp('radiating_ender') },
+            { item: sp('green_pigment') },
+            { item: mc('ender_pearl') },
+            { item: mi('steel_large_plate') },
+            { item: sp('radiating_ender') },
+        ],
+        {
+            id: mc('enchanted_book'),
+            components: {
+                stored_enchantments: { 'travelanchors:teleportation_range': 1 },
+            },
+        },
+        sp('unlocks/enchantments/travel_anchors_teleportation_range')
+    );
 
     // ------------------------ //
     // -- ENCHANTING UPGRADE -- //
     // ------------------------ //
 
     // -- TELEPORTATION RANGE -- //
+    enchantUpgrade(
+        event,
+        st('teleportation_range_upgrade'),
+        ta('teleportation_range'),
+        [
+            {
+                ingredient: { item: sp('green_pigment') },
+                ingredient_count_per_bowl: 1,
+                experience: 200,
+            },
+            {
+                ingredient: { item: sp('green_pigment') },
+                ingredient_count_per_bowl: 2,
+                experience: 400,
+            },
+        ],
+        sp('unlocks/enchantments/travel_anchors_teleportation_range')
+    );
 
     // ----------------------- //
     // ---- FUSION SHRINE ---- //
