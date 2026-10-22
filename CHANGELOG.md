@@ -2,7 +2,7 @@
 
 ## [2.0.4]
 
-TODO: YAP
+Small patch to fix a few breaking bugs with item tagging and the tool belt, coupled with some minor improvements.
 
 As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
 
