@@ -556,6 +556,10 @@ ServerEvents.recipes((event) => {
 });
 
 ServerEvents.tags('item', (event) => {
+    // -- COOKED CHICKEN TAGGING FIX -- //
+    event.remove(cud('cooked_chickens'), fd('chicken_cuts'));
+    event.add(cud('cooked_chickens'), fd('cooked_chicken_cuts'));
+
     // -- MILK TAG UNIFICATION -- //
     event.add('c:foods/milk', '#c:drinks/milk');
 

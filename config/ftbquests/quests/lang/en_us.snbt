@@ -308,6 +308,8 @@
 		"While tearing down entire forests definitely &emakes the factory happy&r, it does not &cmake you happy&r. It's a lot of &ctedious work&r for such a &abasic material&r. While you could make a simple &eCreate contraption&r for a &3tree farm&r, it's not the most &clag-friendly&r method, and a lot of larger tree types &cdont get cut down properly&r by &eCreate&r's &6Mechanical Saws&r. Luckily, the &aIndustrial Greenhouse&r can solve all these issues. By feeding it &9Water&r and providing a &2Sapling&r, it will generate &dLogs&r and &2Saplings&r of that respective type after little bit of time. "
 		""
 		"If you provide the &6Nutrient Rich&r version of the fluid with the recipe, it will &2double the output&r. There are three variants for &6Nutrient Rich&r fluids, &9water&r, &cblood&r, and &dliquid ender&r. The &6Nutrient Rich&r versions are used in place of the regular fluid to boost the output. Please note though that it's best to ensure you're &3only running one recipe&r for maximum overclock potential. If you can't supply a steady stream of &6Nutrient Rich Solutions&r to the machine, it's probably better to use the recipes without it."
+		""
+		"&aNPK Fertilizer&r from &9EI&r will &dquadruple the output&r!"
 	]
 	quest.06AB394FC4DB1809.quest_subtitle: "An industrial green thumb"
 	quest.06AEE6B2E97A5CA8.quest_desc: [
@@ -1685,7 +1687,7 @@
 		""
 		"The first step in storing your experience is mixing together some &bCognitive Flux&r. The questline for the &eCognition mod&r is &cnot required for progression&r, but may prove useful."
 		""
-		"You will have wait until you have your first &bsteam machines&r, specifically a &eBronze Mixer&r and a &eSteel Alloy Smelter&r to make any of the basic &eCognition materials&r."
+		"You will have to wait until you have your first &bsteam machines&r, specifically a &eBronze Mixer&r and a &eSteel Alloy Smelter&r to make any of the basic &eCognition materials&r."
 	]
 	quest.20FE11ACDC27CA84.quest_desc: ["The &aStorage Upgrades&r allow you to upgrade your chests and barrels &cwithout&r having to break them or move their contents into a new chest."]
 	quest.20FE11ACDC27CA84.title: "Chest Upgrades"
@@ -2039,6 +2041,7 @@
 		""
 		"Both require a &dchannel&r to function."
 	]
+	quest.27B975AF95A03AB0.title: "ME Formation/Annihilation Planes"
 	quest.27D37976F35BB3E7.quest_desc: ["The &aConfigurable Mixed Storage&r is a combination of the &eConfigurable Chest&r and the &eConfigurable Tank&r."]
 	quest.27D37976F35BB3E7.title: "Configurable Mixed Storage"
 	quest.27E1D6ADECEF5F5C.quest_desc: [
@@ -3141,7 +3144,7 @@
 		""
 		"&aInk&r behaves very much like a liquid. It flows from where it is &babundant&r to where is &clittle&r. When two objects that store &aInk&r are connected, such as a &bColor Picker&r and an &eInk Flask&r - the &aInk&r between the two containers slowly &cevens out&r. The &2greater&r the difference, the &9faster&r the &eFlask&r is getting filled."
 	]
-	quest.3E7BA3A61D2C897C.quest_desc: ["After obtaining &bBeryllium Hydroxide&r, you'll need to make it react with some &8carbon&r and &echlorine&r to turn it into &6Beryllium Chloride&r, and form of &2Beryllium&r you'll be able to electrolyze! "]
+	quest.3E7BA3A61D2C897C.quest_desc: ["After obtaining &bBeryllium Hydroxide&r, you'll need to make it react with some &8carbon&r and &echlorine&r to turn it into &6Beryllium Chloride&r, a form of &2Beryllium&r you'll be able to electrolyze! "]
 	quest.3E87F9A3771AA4A4.quest_desc: ["The &aElectric Wiremill&r is the electrical version of the &6Steam Wiremill&r. It doesn't open up any new recipes, but it will process recipes &dmuch faster&r than its &7Steam&r counterpart."]
 	quest.3EA1A45EF8297E67.quest_desc: [
 		"This glistening hoop creates a protective film of air around you."
@@ -3278,6 +3281,21 @@
 		"If an &aEncased Fan&r is powered below pushing upwards, items will be sent up rather than down."
 		""
 		"You can also place them &ddiagonally&r."
+	]
+	quest.414BBBFCC6A91271.quest_desc: [
+		"The &dElectric Beacon&r &econsumes potions&r and provides the effect to all nearby players at the cost of &9256 EU/t&r per effect."
+		""
+		"The &aduration&r that a potion lasts in the beacon is determined by its &9shortest effect&r, which is then &chalved&r. "
+		""
+		"In most cases, a potion will only have &bone effect&r. "
+		""
+		"For example, an &e8 minute&r speed potion can be consumed by the beacon which will then &aprovide the effect&r in the area for a total of &d4 minutes&r costing &9256 EU/t&r. "
+		""
+		"Similarly, a &e40 second&r turtle master potion will only last &d20 seconds&r but costs &9512 EU/t&r, since it has &atwo effects&r (slowness and resistance). "
+		""
+		"Because potions are &cconsumed&r by the beacon, it is recommended to create some sort of &9automation loop&r using the &aBrewery&r to keep the beacon running indefinitely."
+		""
+		"&oThe &9range of the beacon&r&o is &elarger&r&o than that of a &dnormal beacon&r&o, as determined by the amount of &clayers beneath&r&o it, excluding the steel casing.&r"
 	]
 	quest.41523DE26590E9FA.quest_desc: [
 		"Created with all the knowledge you have gathered, you have created the &aSpirit Instiller&r. It serves to be able to connect the &eenergies&r of two items, with the help of a third object to &bbind&r them. An almost spiritual process."
@@ -5553,7 +5571,13 @@
 	quest.6DA55FD46CE460F7.quest_desc: ["A high tier fluid storage cell that can store up to 65536 bytes of information."]
 	quest.6DBB476BFA652DFA.quest_desc: ["Found deep in the &dDeeper Down&r, a &bnew gem&r awaits you..."]
 	quest.6DBB476BFA652DFA.title: "A Light In the Darkness"
-	quest.6DC076765D6033C3.quest_desc: ["Lots of &ehard work&r is sure to leave the &cindustrialist very hungry&r. Want a solution that doesn't involve diving into &eCreate&r? If so, then the &aPhotosynthetic Chamber&r is for you. The &aChamber&r &3does not consume the seeds you input into it&r and only requires a steady input of &9water&r. You can use this to generate a &dlarge stockpile of food&r for yourself (or for future &aPlant Oil&r needs)."]
+	quest.6DC076765D6033C3.quest_desc: [
+		"Lots of &ehard work&r is sure to leave the &cindustrialist very hungry&r. Want a solution that doesn't involve diving into &eCreate&r? If so, then the &aPhotosynthetic Chamber&r is for you. The &aChamber&r &3does not consume the seeds you input into it&r and only requires a steady input of &9water&r. You can use this to generate a &dlarge stockpile of food&r for yourself (or for future &aPlant Oil&r needs)."
+		""
+		"If you provide the &6Nutrient Rich&r version of the fluid with the recipe, it will &2double the output&r. There are three variants for &6Nutrient Rich&r fluids, &9water&r, &cblood&r, and &dliquid ender&r. The &6Nutrient Rich&r versions are used in place of the regular fluid to boost the output. Please note though that it's best to ensure you're &3only running one recipe&r for maximum overclock potential. If you can't supply a steady stream of &6Nutrient Rich Solutions&r to the machine, it's probably better to use the recipes without it."
+		""
+		"&aNPK Fertilizer&r from &9EI&r will &dquadruple the output&r!"
+	]
 	quest.6E347907DA022989.quest_desc: ["This necklace will make you &dtiny&r. Very useful to walk through that pipe spaghetti!"]
 	quest.6E347907DA022989.quest_subtitle: "Now Craftable!"
 	quest.6E39043C6369B7A3.quest_desc: ["Unfortunately, &eTinker's Construct&r is not in the pack, however it's &aCrafting Station&r has been added by &6Enhanced Workbenches&r mod. It doesn't appear that it currently can pull from adjacent inventories, &2but it might in the future&r! For now it just retains your items after you close it (&obut wait the default one does that too&r?)"]
@@ -5664,6 +5688,13 @@
 		"The &b4k Storage Cell&r uses 32 bytes of data to store a single type. When placed inside a drive or chest it will consume an additional 1.0 AE/t of power for the connection."
 		""
 		"You can remove the &b4k ME Storage Component&r by fully emptying the storage cell, and sneak right-clicking it in your hand."
+	]
+	quest.6FCE9410F32E2420.quest_desc: [
+		"The &aBrewery&r functions as a normal machine, but it performs &dbrewing stand recipes&r. There are a couple differences, however."
+		""
+		"The &aBrewery&r takes &eBlazing Essence&r rather than blaze powder. Each time the &aBrewery&r brews a set of potions, it consumes exactly &91mb&r of &eBlazing Essence&r."
+		""
+		"The &aBrewery&r brews exactly &b4 potions&r at a time, rather than the brewing stand that allows &d1 to 3&r."
 	]
 	quest.6FEF9845584E6BFA.quest_desc: ["Combining &aSynthetic Oil&r with Paper in a &6Mixer&r will grant you two&2 Rubber Sheets&r. You will unlock a more efficient recipe with petrochemistry in the future."]
 	quest.700E2D66148EEE63.quest_desc: [
@@ -5794,6 +5825,13 @@
 		"&bEnder Pouches&r are able to access the contents of your &bEnder Chest&r on the go."
 		""
 		"Shift right-click an &bEnder Chest&r with an &bEnder Bag&r to link them together."
+	]
+	quest.72BE709180586C77.quest_desc: [
+		"The &aBrewery&r functions as a normal machine, but it performs &dbrewing stand recipes&r. There are a couple differences, however."
+		""
+		"The &aBrewery&r takes &eBlazing Essence&r rather than blaze powder. Each time the &aBrewery&r brews a set of potions, it consumes exactly &91mb&r of &eBlazing Essence&r."
+		""
+		"The &aBrewery&r brews exactly &b4 potions&r at a time, rather than the brewing stand that allows &d1 to 3&r."
 	]
 	quest.72CD3E157F8A0EED.quest_desc: [
 		"The &bCovered Cable&r variant offers no gameplay benefits over its &aFluix ME Glass Cable&r counterpart. It can however be used as an alternate aesthetic choice if you prefer the covered look."

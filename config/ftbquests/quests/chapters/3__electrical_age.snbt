@@ -60,7 +60,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -93,7 +93,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -127,7 +127,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -275,7 +275,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -308,7 +308,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2969BA6B88D1EC15"]
@@ -1709,11 +1709,6 @@
 			id: "19EAC8C0A6889843"
 			rewards: [
 				{
-					id: "414DE2133224BD31"
-					type: "xp"
-					xp: 10
-				}
-				{
 					id: "4FBD3AA9576536EA"
 					item: {
 						count: 1
@@ -1746,11 +1741,6 @@
 			dependencies: ["19EAC8C0A6889843"]
 			id: "1B4704766DF1A934"
 			rewards: [
-				{
-					id: "585DE93039350789"
-					type: "xp"
-					xp: 10
-				}
 				{
 					id: "570230E1513DCB3D"
 					item: {
@@ -1785,11 +1775,6 @@
 			id: "4584D2A76B87D7F0"
 			rewards: [
 				{
-					id: "4FBFAAE9C69F9205"
-					type: "xp"
-					xp: 10
-				}
-				{
 					id: "612250198EE99025"
 					item: {
 						count: 1
@@ -1822,11 +1807,6 @@
 			dependencies: ["62103F0E617EBA7C"]
 			id: "528CD35EBF5D20F0"
 			rewards: [
-				{
-					id: "68439AD3A88E0E68"
-					type: "xp"
-					xp: 10
-				}
 				{
 					id: "2A3D79A56281AF69"
 					item: {
@@ -1861,11 +1841,6 @@
 			id: "511ACED1E299766B"
 			rewards: [
 				{
-					id: "05F1E56DCC6D50B3"
-					type: "xp"
-					xp: 10
-				}
-				{
 					id: "6CE4BA433BFCE0D6"
 					item: {
 						count: 1
@@ -1899,11 +1874,6 @@
 			id: "2C1964927A0F7BE3"
 			rewards: [
 				{
-					id: "2BC69D66D0398AB3"
-					type: "xp"
-					xp: 10
-				}
-				{
 					id: "7C13E820DEB3EE78"
 					item: {
 						count: 1
@@ -1936,11 +1906,6 @@
 			dependencies: ["62103F0E617EBA7C"]
 			id: "3C433173976A9CCC"
 			rewards: [
-				{
-					id: "596E19E4E92ED1C5"
-					type: "xp"
-					xp: 10
-				}
 				{
 					id: "518B850CC793998C"
 					item: {
@@ -2533,11 +2498,6 @@
 			id: "56F8299D915D92E1"
 			rewards: [
 				{
-					id: "405A200B63F720E6"
-					type: "xp"
-					xp: 10
-				}
-				{
 					id: "79195EEFB6FBA648"
 					item: {
 						count: 1
@@ -2570,11 +2530,6 @@
 			dependencies: ["13ADC5EC083B64D0"]
 			id: "5370C2CEF127113C"
 			rewards: [
-				{
-					id: "0041B2D6B097E9DC"
-					type: "xp"
-					xp: 10
-				}
 				{
 					id: "602F99023BE3472C"
 					item: {
@@ -2616,11 +2571,6 @@
 			hide_dependency_lines: true
 			id: "13ADC5EC083B64D0"
 			rewards: [
-				{
-					id: "166121748321FC6B"
-					type: "xp"
-					xp: 10
-				}
 				{
 					id: "157995798752B90E"
 					item: {
@@ -3319,6 +3269,7 @@
 					type: "random"
 				}
 			]
+			shape: "rsquare"
 			size: 1.0d
 			tasks: [{
 				id: "5B6AA09164F60EE7"
@@ -3478,6 +3429,74 @@
 			}]
 			x: 12.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["2969BA6B88D1EC15"]
+			id: "72BE709180586C77"
+			rewards: [
+				{
+					count: 3
+					id: "0B38FDDB3F69DBC6"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "3A0E2A180F31E0C2"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2BDBAAE8FA3CB33C"
+					table_id: 8811145634920634486L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "76D580D4C19B2B9C"
+				item: { count: 1, id: "extended_industrialization:electric_brewery" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["47D3834E67A0995D"]
+			id: "414BBBFCC6A91271"
+			rewards: [
+				{
+					count: 5
+					id: "34F376945C7D12FE"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "4B8AD1000C368966"
+					type: "xp"
+					xp: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "106FEB9F015FFFB7"
+					table_id: 5706018968149530875L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "4BF8BEAED64E5DA1"
+				item: { count: 1, id: "extended_industrialization:electric_beacon" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.0d
 		}
 	]
 }

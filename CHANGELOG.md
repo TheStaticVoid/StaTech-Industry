@@ -1,5 +1,31 @@
 # Changelog
 
+## [2.0.4]
+
+Small patch to fix a few breaking bugs with item tagging and the tool belt, coupled with some minor improvements.
+
+As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
+
+### Breaking Changes
+
+- **Removed Lignite Coal Dust -> Carbon Centrifuge recipe due to base MI having a more interesting recipe now.**
+
+### General Changelog
+
+- **Fixed first Tool Belt upgrade craft not working due to strict item data matching.**
+- **Fixed Steam Chainsaw Lumberaxe Tagging.**
+- **Blacklisted Banks and Tanks from Tool Belt.**
+- Whitelisted Steel Mallet and Measuring Tape for Tool Belt.
+- Updated Space Probe recipe for parity with stackable tanks.
+- Fixed cooked chicken tag including raw chicken cuts.
+- Fixed piston compat recipe in the Assembler accepting #c:stones instead of #minecraft:stone_tool_materials for shaped crafting parity.
+- Fixed duplicate XP awards in some early AE2 quests.
+- **Added quests for EI's Breweries and the Electric Beacon.**
+- Fixed Nano Quantum Saber quest accepting the normal Nano Saber.
+- Added Wither Skeleton Skull Fragment packing recipe.
+- **Added Spectrum crafting recipe for Teleportation Range Enchantment.**
+- **Added Photosynthetic Chamber recipes using fertilizer for buffed output.**
+
 ## [2.0.3]
 
 Small patch mostly to fix a few oversights from 2.0.2 (ie. re-adding Flax Photosynthetic Chamber recipe) and fix some annoying (but not breaking) bugs.

@@ -246,18 +246,72 @@ ServerEvents.recipes((event) => {
     ];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
-    // -----------------------//
+    // ---------------------- //
     // ---- CINDERHEARTH ---- //
-    // -----------------------//
+    // ---------------------- //
 
     // -- ETERNAL STEAK -- //
     cinderhearth(event, st('eternal_steak'), 800, 1.0, ar('everlasting_beef'), [
         { id: ar('eternal_steak'), count: 1 },
     ]);
 
-    // ------------------------//
+    // ------------------- //
+    // ---- ENCHANTER ---- //
+    // ------------------- //
+
+    // -- TELEPORTATION RANGE -- //
+    enchanter(
+        event,
+        st('teleportation_range_1'),
+        300,
+        100,
+        [
+            { item: mc('book') },
+            { item: sp('green_pigment') },
+            { item: mc('ender_pearl') },
+            { item: mi('steel_large_plate') },
+            { item: sp('radiating_ender') },
+            { item: sp('green_pigment') },
+            { item: mc('ender_pearl') },
+            { item: mi('steel_large_plate') },
+            { item: sp('radiating_ender') },
+        ],
+        {
+            id: mc('enchanted_book'),
+            components: {
+                stored_enchantments: { 'travelanchors:teleportation_range': 1 },
+            },
+        },
+        sp('unlocks/enchantments/travel_anchors_teleportation_range')
+    );
+
+    // ------------------------ //
+    // -- ENCHANTING UPGRADE -- //
+    // ------------------------ //
+
+    // -- TELEPORTATION RANGE -- //
+    enchantUpgrade(
+        event,
+        st('teleportation_range_upgrade'),
+        ta('teleportation_range'),
+        [
+            {
+                ingredient: { item: sp('green_pigment') },
+                ingredient_count_per_bowl: 1,
+                experience: 200,
+            },
+            {
+                ingredient: { item: sp('green_pigment') },
+                ingredient_count_per_bowl: 2,
+                experience: 400,
+            },
+        ],
+        sp('unlocks/enchantments/travel_anchors_teleportation_range')
+    );
+
+    // ----------------------- //
     // ---- FUSION SHRINE ---- //
-    // ------------------------//
+    // ----------------------- //
 
     // -- ENDER EYE -- //
     fusion_shrine(
@@ -324,9 +378,9 @@ ServerEvents.recipes((event) => {
         sp('build_fusion_shrine')
     );
 
-    // -------------------------//
+    // ------------------------ //
     // ---- LIQUID DIPPING ---- //
-    // -------------------------//
+    // ------------------------ //
 
     const ITEMS_TO_OXIDIZE = [
         cr('copper_tiles'),
@@ -390,9 +444,9 @@ ServerEvents.recipes((event) => {
         );
     });
 
-    // -------------------//
+    // ------------------ //
     // ---- PEDESTAL ---- //
-    // -------------------//
+    // ------------------ //
 
     // -- BOTTLE OF FAILING -- //
     pedestal(

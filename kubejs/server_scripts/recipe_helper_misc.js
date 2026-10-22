@@ -6,7 +6,8 @@
 // priority: 10000
 /**
  * @typedef {{item?: Special.Item, tag?: string}} ShapelessInput An array of {item: id} or {tag: id}
- * @typedef {[item: Special.Item, count: number, chance?: number?]} SPItems A tuple of [item, count, chance?]
+ * @typedef {[item: Special.Item, count: number, chance?: number?]} SPItems An object of [item: item, count: count, chance: chance?]
+ * @typedef {{ingredient: Special.Item, ingredient_count_per_bowl: number, experience: number}} SPLevelEntry An object of {ingredient: ingredient, ingredient_count_per_bowl: ingredient_count_per_bowl, experience: experience}
  */
 
 // -- FARMER'S DELIGHT COOKING -- //
@@ -98,6 +99,88 @@ let cutting = (event, id, item_inputs, item_outputs, tool) => {
     event.custom(newRecipe).id(id);
 };
 
+// -- SPECTRUM ENCHANTER -- //
+/**
+ * Enchanter
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!number} time - Recipe duration in ticks (1 second is 20 ticks)
+ * @param {!number} xp - XP input
+ * @param {!ShapelessInput[]} item_inputs - An array of {item: id} or {tag: id}
+ * @param {!SPItems} item_outputs - Output ItemStack {item: 'spectrum:onyx_shard', count: 2, chance: 0.5}
+ * @param {?string} advancement - advancement prerequisite ID
+ * @param {?string} group - Recipe group ID
+ * @param {?boolean} secret - hide recipe from recipe viewers
+ * @param {?SPItems} additional_results - Items that will be considered an "output" of the recipe for recipe viewers when pressing "R". Has no gameplay relevance, but is a nice QoL thing for your players, if your recipe does something funky.
+ * @param {?boolean} copy_nbt - When true, copies the nbt custom name, enchants, ...) of the first item in the recipe
+ * @param {?boolean} disable_boosts - When true, yield upgrades does not affect the output of the recipe
+ */
+let enchanter = (
+    event,
+    id,
+    time,
+    xp,
+    item_inputs,
+    item_outputs,
+    advancement,
+    group,
+    secret,
+    additional_results,
+    copy_nbt,
+    disable_boosts
+) => {
+    let newRecipe = {
+        type: sp('enchanter'),
+        required_experience: xp,
+        time: time,
+    };
+    if (item_inputs) newRecipe['ingredients'] = item_inputs;
+    if (item_outputs) newRecipe['result'] = item_outputs;
+    if (advancement) newRecipe.advancement = advancement;
+    if (group) newRecipe.group = group;
+    if (secret) newRecipe.secret = secret;
+    if (additional_results)
+        newRecipe.additional_recipe_viewer_results = additional_results;
+    if (disable_boosts) newRecipe.disable_yield_upgrades = disable_boosts;
+    if (copy_nbt) newRecipe.copy_nbt = copy_nbt;
+    event.custom(newRecipe).id(id);
+};
+
+// -- SPECTRUM ENCHANTING UPGRADE -- //
+/**
+ * Enchanting Upgrade
+ * @param {*} event
+ * @param {!string} id - Recipe ID
+ * @param {!string} enchantment - Namespaced enchantment identifier
+ * @param {!SPLevelEntry[]} levels - Array of level_entry types.
+ * @param {?string} advancement - advancement prerequisite ID
+ * @param {?string} group - Recipe group ID
+ * @param {?boolean} secret - hide recipe from recipe viewers
+ * @param {?SPItems} additional_results - Items that will be considered an "output" of the recipe for recipe viewers when pressing "R". Has no gameplay relevance, but is a nice QoL thing for your players, if your recipe does something funky.
+ */
+let enchantUpgrade = (
+    event,
+    id,
+    enchantment,
+    levels,
+    advancement,
+    group,
+    secret,
+    additional_results
+) => {
+    let newRecipe = {
+        type: sp('enchantment_upgrade'),
+        enchantment: enchantment,
+    };
+    if (levels) newRecipe['levels'] = levels;
+    if (advancement) newRecipe.advancement = advancement;
+    if (group) newRecipe.group = group;
+    if (secret) newRecipe.secret = secret;
+    if (additional_results)
+        newRecipe.additional_recipe_viewer_results = additional_results;
+    event.custom(newRecipe).id(id);
+};
+
 // -- SPECTRUM FUSION SHRINE -- //
 /**
  * Fusion Shrine
@@ -115,7 +198,7 @@ let cutting = (event, id, item_inputs, item_outputs, tool) => {
  * @param {?string} advancement - advancement prerequisite ID
  * @param {?string} group - Recipe group ID
  * @param {?boolean} secret - hide recipe from recipe viewers
- * @param {?boolean} copy_nbt - When true, copes the nbt custom name, enchants, ...) of the first item in the recipe
+ * @param {?boolean} copy_nbt - When true, copies the nbt custom name, enchants, ...) of the first item in the recipe
  * @param {?boolean} disable_boosts - When true, yield upgrades does not affect the output of the recipe
  * @param {?string} description - A localization string explaining the recipe (like the requirements). Is shown in recipe viewers
  */
@@ -246,6 +329,7 @@ let dipping = (
     if (advancement) newRecipe.advancement = advancement;
     if (group) newRecipe.group = group;
     if (secret) newRecipe.secret = secret;
-    if (additional_results) newRecipe.additional_results = additional_results;
+    if (additional_results)
+        newRecipe.additional_recipe_viewer_results = additional_results;
     event.custom(newRecipe).id(id);
 };

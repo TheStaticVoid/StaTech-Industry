@@ -185,7 +185,7 @@ ServerEvents.recipes((event) => {
         8,
         200,
         [
-            { amount: 4, tag: 'c:stones' },
+            { amount: 4, tag: mc('stone_tool_materials') },
             { amount: 3, tag: mc('wooden_slabs') },
             { amount: 1, tag: 'c:rods/iron' },
             { amount: 1, item: mc('redstone') },
@@ -1159,8 +1159,7 @@ ServerEvents.recipes((event) => {
             { amount: 1, item: kj('calorite_fuel_tank') },
             { amount: 1, item: mi('processing_unit') },
             { amount: 1, item: kj('calorite_engine') },
-            { amount: 1, item: mi('titanium_tank') },
-            { amount: 1, item: mi('titanium_tank') },
+            { amount: 2, item: mi('titanium_tank') },
         ],
         [{ amount: 4, item: kj('space_probe') }]
     );

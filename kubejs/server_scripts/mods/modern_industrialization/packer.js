@@ -456,4 +456,14 @@ ServerEvents.recipes((event) => {
         ],
         [{ amount: 1, item: ei('nano_quantum_saber') }]
     );
+
+    // -- WITHER SKULL FRAGMENTS TO WITHER SKULL -- //
+    packer(
+        event,
+        st('wither_skull_fragments_to_wither_skull'),
+        2,
+        200,
+        [{ amount: 9, item: ws('fragment') }],
+        [{ amount: 1, item: mc('wither_skeleton_skull') }]
+    );
 });
