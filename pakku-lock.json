@@ -244,6 +244,51 @@
             ]
         },
         {
+            "pakku_id": "kdQvDE2jiloJhr6P",
+            "pakku_links": [
+                "LEB6ycUHXFCPVaOh",
+                "ZmRxSd5A9JLj2Ogi",
+                "TUvxu8FXonjQ8SUC"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "ad-astra"
+            },
+            "name": {
+                "curseforge": "Ad Astra"
+            },
+            "id": {
+                "curseforge": "635042"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "adastra-1.21.1-1.16.26-neoforge.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8874/894/adastra-1.21.1-1.16.26-neoforge.jar",
+                    "id": "8874894",
+                    "parent_id": "635042",
+                    "hashes": {
+                        "sha1": "b6c4560cc625a6847e016af576954ff1f0431d99",
+                        "md5": "5343ec2e50c6087dbdc0e9a4fcfa3e65"
+                    },
+                    "required_dependencies": [
+                        "570073",
+                        "1028211",
+                        "714059"
+                    ],
+                    "size": 7301791,
+                    "date_published": "2026-09-13T20:00:49.383Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "S1ke073VZh7RGSdx",
             "pakku_links": [
                 "IKoO24ODLZF0mXrM"
@@ -2032,6 +2077,42 @@
                     "required_dependencies": [],
                     "size": 422658,
                     "date_published": "2026-01-24T04:53:25.220Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ZmRxSd5A9JLj2Ogi",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "common-storage-lib"
+            },
+            "name": {
+                "curseforge": "Common Storage Lib"
+            },
+            "id": {
+                "curseforge": "1028211"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "common-storage-lib-neoforge-1.21.1-0.0.10.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "beta",
+                    "url": "https://edge.forgecdn.net/files/8421/542/common-storage-lib-neoforge-1.21.1-0.0.10.jar",
+                    "id": "8421542",
+                    "parent_id": "1028211",
+                    "hashes": {
+                        "sha1": "e0ba85038480d50a3816d5920014bfcccdbe7329",
+                        "md5": "b77c0efa2d4e8738ce40710cf826ecbd"
+                    },
+                    "required_dependencies": [],
+                    "size": 309860,
+                    "date_published": "2026-07-12T22:02:35.040Z"
                 }
             ]
         },
@@ -8215,6 +8296,43 @@
                     "required_dependencies": [],
                     "size": 341009,
                     "date_published": "2025-04-26T17:59:02.930Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "LEB6ycUHXFCPVaOh",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "resourceful-lib"
+            },
+            "name": {
+                "curseforge": "Resourceful Lib"
+            },
+            "id": {
+                "curseforge": "570073"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "resourcefullib-neoforge-1.21-3.0.12.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/5973/188/resourcefullib-neoforge-1.21-3.0.12.jar",
+                    "id": "5973188",
+                    "parent_id": "570073",
+                    "hashes": {
+                        "sha1": "24389c8e48ff0e8594e4686b750c494c66a5f8df",
+                        "md5": "32da88903167d24bb20febeeb2c79225"
+                    },
+                    "required_dependencies": [],
+                    "size": 484332,
+                    "date_published": "2024-12-08T04:44:11.193Z"
                 }
             ]
         },
