@@ -157,27 +157,6 @@ ServerEvents.recipes((event) => {
         [{ amount: 100, fluid: mi('polytetrafluoroethylene') }]
     );
 
-    // -- PERSONAL SPACE SHIELD -- //
-    assembler(
-        event,
-        st('personal_space_shield'),
-        32,
-        1200,
-        [
-            { amount: 4, item: mi('tungstensteel_tank') },
-            { amount: 8, item: mi('processing_unit') },
-            { amount: 12, item: mi('superconductor_cable') },
-            { amount: 8, item: mi('small_heat_exchanger') },
-            { amount: 2, item: mi('uranium_fuel_rod') },
-            { amount: 16, item: mi('nuclear_alloy_plate') },
-        ],
-        [{ amount: 1, item: kj('personal_space_shield') }],
-        [
-            { amount: 16000, fluid: mi('oxygen') },
-            { amount: 4000, fluid: mi('cryofluid') },
-        ]
-    );
-
     // -- PISTON -- //
     assembler(
         event,

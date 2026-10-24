@@ -7,6 +7,7 @@ let mi = (id) => `modern_industrialization:${id}`;
 let ei = (id) => `extended_industrialization:${id}`;
 let mc = (id) => `minecraft:${id}`;
 let ae = (id) => `ae2:${id}`;
+let ad = (id) => `ad_astra:${id}`;
 let kj = (id) => `kubejs:${id}`;
 let mr = (id) => `morered:${id}`;
 let xp = (id) => `cognition:${id}`;

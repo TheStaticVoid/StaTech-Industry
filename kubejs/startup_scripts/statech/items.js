@@ -636,15 +636,6 @@ StartupEvents.registry('armor_material', (event) => {
 
 StartupEvents.registry('item', (event) => {
     event
-        .create('personal_space_shield')
-        .unstackable()
-        .rarity('Rare')
-        .tag('curios:charm')
-        .tooltip(
-            '§aProvides a personal bubble of safety\n§awhile in low-oxygen environments\n\n§bCan be equipped in a curio slot'
-        );
-
-    event
         .create('angel_ring')
         .unstackable()
         .rarity('Epic')

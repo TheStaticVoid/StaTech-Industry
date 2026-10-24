@@ -7,6 +7,10 @@ ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:space_age/${id}`;
 
+    // -- AD ASTRA REMOVED RECIPES -- //
+    const AD_ASTRA_DELETED_RECIPES = [];
+    AD_ASTRA_DELETED_RECIPES.forEach((id) => event.remove({ id: id }));
+
     // -- PROBE COMPUTERS -- //
     event
         .shaped(kj('mki_probe_computer'), ['SCS', 'THD', 'SES'], {
