@@ -581,7 +581,6 @@ ServerEvents.tags('item', (event) => {
         event.add(mc('enchantable/mining'), id);
         event.add(mc('enchantable/mining_loot'), id);
         event.add(mc('enchantable/vanishing'), id);
-        event.remove(mc('axes'), id);
     });
 
     const COINS = [
