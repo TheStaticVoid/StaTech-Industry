@@ -239,7 +239,7 @@ ServerEvents.recipes((event) => {
         ],
         [{ amount: 4, item: mi('lithium_fluoride_dust') }],
         null,
-        [{ amount: 1500, fluid: mi('boron_trifluoride') }]
+        [{ amount: 2000, fluid: mi('boron_trifluoride') }]
     );
 
     // -- MOLTEN GOLD -- //
