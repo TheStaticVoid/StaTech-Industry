@@ -1244,7 +1244,7 @@ let telescope = (
     let process_conditions = [
         {
             type: mi('dimension'),
-            dimension: 'stcm:space',
+            dimension: 'ad_astra:earth_orbit',
         },
     ];
     event
