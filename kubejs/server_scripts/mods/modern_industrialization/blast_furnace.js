@@ -231,10 +231,15 @@ ServerEvents.recipes((event) => {
         st('lithium_tetrafluoroborate_decompose'),
         16,
         200,
-        [{ amount: 1, item: mi('lithium_tetrafluoroborate_dust') }],
-        [{ amount: 1, item: mi('lithium_fluoride_dust') }],
+        [
+            {
+                amount: 6,
+                item: mi('lithium_tetrafluoroborate_dust'),
+            },
+        ],
+        [{ amount: 4, item: mi('lithium_fluoride_dust') }],
         null,
-        [{ amount: 1000, fluid: mi('boron_trifluoride') }]
+        [{ amount: 1500, fluid: mi('boron_trifluoride') }]
     );
 
     // -- MOLTEN GOLD -- //

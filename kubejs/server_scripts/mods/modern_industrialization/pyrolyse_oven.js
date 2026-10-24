@@ -30,7 +30,7 @@ ServerEvents.recipes((event) => {
         800,
         null,
         null,
-        [{ amount: 2500, fluid: mi('diborane') }],
+        [{ amount: 3000, fluid: mi('diborane') }],
         [{ amount: 1000, fluid: mi('pentaborane') }]
     );
 });
