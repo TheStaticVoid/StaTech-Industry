@@ -22,21 +22,21 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "AE2Blackout-V1.2.8.zip",
+                    "file_name": "AE2Blackout-V1.2.9.zip",
                     "mc_versions": [
                         "1.21.1"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8393/438/AE2Blackout-V1.2.8.zip",
-                    "id": "8393438",
+                    "url": "https://edge.forgecdn.net/files/9313/497/AE2Blackout-V1.2.9.zip",
+                    "id": "9313497",
                     "parent_id": "1060372",
                     "hashes": {
-                        "sha1": "c239127cda4e8ab4c67944863c8bdf8992d9580b",
-                        "md5": "a4d372f2e93f9b6badc4f776eea6fd69"
+                        "sha1": "1c5422eb5efd16aef2eaa727957ba1c0158c9a93",
+                        "md5": "fec555d356156dd8cd618bca3a987c42"
                     },
                     "required_dependencies": [],
-                    "size": 653171,
-                    "date_published": "2026-07-08T12:51:36.463Z"
+                    "size": 729562,
+                    "date_published": "2026-10-24T19:32:52.860Z"
                 }
             ]
         },
@@ -5910,46 +5910,6 @@
             ]
         },
         {
-            "pakku_id": "ZYpB5fBsHMZOGPoW",
-            "type": "MOD",
-            "side": "CLIENT",
-            "slug": {
-                "curseforge": "jei"
-            },
-            "name": {
-                "curseforge": "Just Enough Items (JEI)"
-            },
-            "id": {
-                "curseforge": "238222"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "jei-1.21.1-neoforge-19.69.0.457.jar",
-                    "mc_versions": [
-                        "1.21",
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "beta",
-                    "url": "https://edge.forgecdn.net/files/9267/535/jei-1.21.1-neoforge-19.69.0.457.jar",
-                    "id": "9267535",
-                    "parent_id": "238222",
-                    "hashes": {
-                        "sha1": "d413c60d16f5afd3b7acaa2deb54ce8c7b959c59",
-                        "md5": "ea71d92c0a3e1667ee4643e526ac1e1a"
-                    },
-                    "required_dependencies": [
-                        "1689768"
-                    ],
-                    "size": 7350892,
-                    "date_published": "2026-10-20T14:43:41.307Z"
-                }
-            ]
-        },
-        {
             "pakku_id": "WMKkhhUKKNpJvqTO",
             "type": "MOD",
             "slug": {
@@ -9814,6 +9774,47 @@
                     ],
                     "size": 13840377,
                     "date_published": "2026-10-16T19:44:39.277Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "KxW46ujtUFXrnLYa",
+            "pakku_links": [
+                "jBhCklT57r5FStN1"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "tmrv-updated"
+            },
+            "name": {
+                "curseforge": "TMRV Updated"
+            },
+            "id": {
+                "curseforge": "1727144"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "toomanyrecipeviewers-0.9.2+mc.21.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9231/385/toomanyrecipeviewers-0.9.2+mc.21.1.jar",
+                    "id": "9231385",
+                    "parent_id": "1727144",
+                    "hashes": {
+                        "sha1": "a68a2603908ec7d7b06187d728e3becea9937186",
+                        "md5": "a004308a0d046ea149871f98aad527a4"
+                    },
+                    "required_dependencies": [
+                        "580555"
+                    ],
+                    "size": 1783612,
+                    "date_published": "2026-10-17T20:36:26.437Z"
                 }
             ]
         },
