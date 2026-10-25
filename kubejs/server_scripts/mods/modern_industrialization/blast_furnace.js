@@ -230,7 +230,7 @@ ServerEvents.recipes((event) => {
         event,
         st('lithium_tetrafluoroborate_decompose'),
         16,
-        200,
+        400,
         [
             {
                 amount: 6,

@@ -47,6 +47,22 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mc('heavy_core') }]
     );
 
+    // -- HIM -- //
+    assembler(
+        event,
+        st('jon_bartman'),
+        16,
+        400,
+        [
+            { amount: 4, item: mc('beef') },
+            { amount: 2, item: mi('plutonium_dust') },
+            { amount: 1, item: mc('brain_coral_block') },
+            { amount: 1, item: mc('black_wool') },
+            { amount: 1, item: mc('dragon_egg') },
+        ],
+        [{ amount: 1, item: kj('bartman') }]
+    );
+
     // -- MATTER FABRICATOR -- //
     assembler(
         event,
