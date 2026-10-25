@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.0.5]
+
+TODO: YAP
+
+As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
+
+### Breaking Changes
+
+- **Tweaked Pentaborane Line yields.**
+
+### General Changelog
+
+- Fixed chainsaw axe tagging.
+- Replaced JEI with TMRV Updated.
+- **Added Bartman Assembler recipe due to public backlash.**
+
 ## [2.0.4]
 
 Small patch to fix a few breaking bugs with item tagging and the tool belt, coupled with some minor improvements.
