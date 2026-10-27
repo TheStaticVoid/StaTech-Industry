@@ -3498,5 +3498,71 @@
 			x: 15.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["0EBD2ACAFF4BDF39"]
+			id: "029B75A3C3A253DD"
+			rewards: [
+				{
+					id: "5ED0E49E3E38C77F"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "57F99B828C9AAA1B"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B331C7AB6580E40"
+					table_id: 7100390848848099335L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "4100CE4659417E97"
+				item: { count: 1, id: "appliedflowanalytics:flow_terminal" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0EBD2ACAFF4BDF39"]
+			id: "39C5170869C0A930"
+			rewards: [
+				{
+					id: "69F67FC023C24FA2"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "06F8F335B297D6E5"
+					type: "xp"
+					xp: 50
+				}
+				{
+					exclude_from_claim_all: true
+					id: "278A3C3071C281BC"
+					table_id: 7100390848848099335L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "6FCD674641E0534B"
+				item: { count: 1, id: "appliedflowanalytics:flow_monitor" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 9.0d
+		}
 	]
 }

@@ -15,6 +15,8 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - Fixed chainsaw axe tagging.
 - Replaced JEI with TMRV Updated.
 - **Added Bartman Assembler recipe due to public backlash.**
+- **Added AE2 Throughput Monitoring and quests.**
+- Fixed quest issues.
 
 ## [2.0.4]
 
