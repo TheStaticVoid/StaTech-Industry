@@ -22,28 +22,6 @@ StartupEvents.registry('block', (event) => {
             .tagBlock('minecraft:needs_iron_tool');
     });
 
-    const glowingPillars = [
-        ['glowing_calorite_pillar', 'Glowing Calorite Pillar'],
-        ['glowing_desh_pillar', 'Glowing Desh Pillar'],
-        ['glowing_ostrum_pillar', 'Glowing Ostrum Pillar'],
-        ['glowing_steel_pillar', 'Glowing Steel Pillar'],
-    ];
-
-    glowingPillars.forEach(([id, name]) => {
-        event
-            .create(`kubejs:${id}`)
-            .soundType('stone')
-            .requiresTool(true)
-            .hardness(6)
-            .lightLevel(1.0)
-            .tagBlock('minecraft:mineable/pickaxe')
-            .tagBlock('minecraft:needs_iron_tool')
-            .property(BlockProperties.AXIS)
-            .placementState((event) =>
-                event.set(BlockProperties.AXIS, event.clickedFace.axis)
-            );
-    });
-
     event
         .create(`kubejs:borosilicate_glass`)
         .glassSoundType()

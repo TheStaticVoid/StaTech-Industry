@@ -1148,12 +1148,12 @@ ServerEvents.recipes((event) => {
         32,
         200,
         [
-            { amount: 2, item: kj('rocket_fin') },
+            { amount: 2, item: ad('rocket_fin') },
             { amount: 2, item: mi('enderium_gear') },
             { amount: 1, item: mi('desh_drill') },
-            { amount: 1, item: kj('calorite_fuel_tank') },
+            { amount: 1, item: ad('calorite_tank') },
             { amount: 1, item: mi('processing_unit') },
-            { amount: 1, item: kj('calorite_engine') },
+            { amount: 1, item: ad('calorite_engine') },
             { amount: 2, item: mi('titanium_tank') },
         ],
         [{ amount: 4, item: kj('space_probe') }]
@@ -1527,8 +1527,8 @@ ServerEvents.recipes((event) => {
         [
             { amount: 2, tag: 'c:gears/steel' },
             { amount: 2, item: mi('electrum_cable') },
-            { amount: 1, item: kj('steel_fuel_tank') },
-            { amount: 2, item: kj('rocket_fin') },
+            { amount: 1, item: ad('steel_tank') },
+            { amount: 2, item: ad('rocket_fin') },
             { amount: 1, item: mi('aluminum_drill') },
             { amount: 1, tag: 'modern_industrialization:item_pipes' },
         ],
@@ -1543,8 +1543,8 @@ ServerEvents.recipes((event) => {
         [
             { amount: 2, tag: 'c:gears/desh' },
             { amount: 2, item: mi('aluminum_cable') },
-            { amount: 1, item: kj('desh_fuel_tank') },
-            { amount: 2, item: kj('rocket_fin') },
+            { amount: 1, item: ad('desh_tank') },
+            { amount: 2, item: ad('rocket_fin') },
             { amount: 1, item: mi('stainless_steel_drill') },
             { amount: 1, tag: 'modern_industrialization:item_pipes' },
         ],
@@ -1559,8 +1559,8 @@ ServerEvents.recipes((event) => {
         [
             { amount: 2, tag: 'c:gears/ostrum' },
             { amount: 2, item: mi('annealed_copper_cable') },
-            { amount: 1, item: kj('ostrum_fuel_tank') },
-            { amount: 2, item: kj('rocket_fin') },
+            { amount: 1, item: ad('ostrum_tank') },
+            { amount: 2, item: ad('rocket_fin') },
             { amount: 1, item: mi('titanium_drill') },
             { amount: 1, tag: 'modern_industrialization:item_pipes' },
         ],

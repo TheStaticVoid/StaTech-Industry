@@ -231,6 +231,31 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         /^advancedperipherals:ae_disk_cell_.*/,
     ];
     UNUSED_ADVANCED_PERIPHERALS.forEach((id) => event.remove(id));
+
+    const UNUSED_AD_ASTRA = [
+        ad('steel_cable'),
+        ad('desh_cable'),
+        ad('desh_fluid_pipe'),
+        ad('ostrum_fluid_pipe'),
+        ad('cable_duct'),
+        ad('fluid_pipe_duct'),
+        ad('coal_generator'),
+        ad('compressor'),
+        ad('etrionic_blast_furnace'),
+        ad('nasa_workbench'),
+        ad('fuel_refinery'),
+        ad('water_pump'),
+        ad('energizer'),
+        ad('cryo_freezer'),
+        ad('oxygen_loader'),
+        ad('hydrogen_bucket'),
+        ad('oxygen_bucket'),
+        ad('oil_bucket'),
+        ad('fuel_bucket'),
+        ad('cryo_fuel_bucket'),
+        ad('wrench'),
+    ];
+    UNUSED_AD_ASTRA.forEach((id) => event.remove(id));
 });
 
 RecipeViewerEvents.removeEntriesCompletely('fluid', (event) => {
@@ -239,6 +264,11 @@ RecipeViewerEvents.removeEntriesCompletely('fluid', (event) => {
         ca('bioethanol'),
         yai('nutrient_rich_water'),
         /^create_dragons_plus:.*/,
+        ad('hydrogen'),
+        ad('oxygen'),
+        ad('oil'),
+        ad('fuel'),
+        ad('cryo_fuel'),
         mi('dragons_blood'), // might want to do something with this in the future
         mi('impure_resonating_fluid'), // might want to do something with this in the future
     ];
@@ -267,5 +297,11 @@ RecipeViewerEvents.removeCategories((event) => {
         mc('tag_recipes/item'),
         mc('tag_recipes/fluid'),
         mc('tag_recipes/block'),
+        ad('compressing'),
+        ad('alloying'),
+        ad('nasa_workbench'),
+        ad('refining'),
+        ad('cryo_freezing'),
+        ad('oxygen_loading'),
     ]);
 });

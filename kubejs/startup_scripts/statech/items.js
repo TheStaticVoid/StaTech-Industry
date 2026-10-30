@@ -780,30 +780,6 @@ StartupEvents.registry('item', (event) => {
 
     event.create('core_fragment').rarity('Rare');
 
-    event.create('steel_fuel_tank');
-
-    event.create('desh_fuel_tank');
-
-    event.create('ostrum_fuel_tank');
-
-    event.create('calorite_fuel_tank');
-
-    event.create('engine_framebox');
-
-    event.create('rocket_propeller');
-
-    event.create('rocket_cone');
-
-    event.create('rocket_fin');
-
-    event.create('steel_engine');
-
-    event.create('desh_engine');
-
-    event.create('ostrum_engine');
-
-    event.create('calorite_engine');
-
     event.create('basic_space_probe');
 
     event.create('advanced_space_probe');

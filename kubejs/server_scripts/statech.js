@@ -18,39 +18,6 @@ ServerEvents.recipes((event) => {
         })
         .id(st('angel_ring'));
 
-    // -- GLOWING PILLARS -- //
-    event
-        .shaped('6x ' + kj('glowing_steel_pillar'), ['SDS', 'SGS', 'SDS'], {
-            S: '#c:plates/steel',
-            G: mc('glowstone'),
-            D: '#c:dyes/purple',
-        })
-        .id(st('glowing_steel_pillar'));
-
-    event
-        .shaped('6x ' + kj('glowing_desh_pillar'), ['SDS', 'SGS', 'SDS'], {
-            S: '#c:plates/desh',
-            G: mc('glowstone'),
-            D: '#c:dyes/red',
-        })
-        .id(st('glowing_desh_pillar'));
-
-    event
-        .shaped('6x ' + kj('glowing_ostrum_pillar'), ['SDS', 'SGS', 'SDS'], {
-            S: '#c:plates/ostrum',
-            G: mc('glowstone'),
-            D: '#c:dyes/lime',
-        })
-        .id(st('glowing_ostrum_pillar'));
-
-    event
-        .shaped('6x ' + kj('glowing_calorite_pillar'), ['SDS', 'SGS', 'SDS'], {
-            S: '#c:plates/calorite',
-            G: mc('glowstone'),
-            D: '#c:dyes/orange',
-        })
-        .id(st('glowing_calorite_pillar'));
-
     // -- DIAMOND UPGRADE SMITHING TEMPLATE -- //
     event
         .shaped(

@@ -30,8 +30,8 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
         event.memberOfBlock(
             'modern_industrialization:calorite_machine_casing_pipe'
         );
-    const kubejsGlowingCaloritePillar = event.memberOfBlock(
-        'kubejs:glowing_calorite_pillar'
+    const adAstraGlowingCaloritePillar = event.memberOfBlock(
+        'ad_astra:glowing_calorite_pillar'
     );
     const modernIndustrializationTungstensteelCoil = event.memberOfBlock(
         'modern_industrialization:tungstensteel_coil'
@@ -51,7 +51,7 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
         ])
         .key('A', modernIndustrializationOstrumMachineCasing, noHatch)
         .key('B', modernIndustrializationCaloriteMachineCasingPipe, noHatch)
-        .key('C', kubejsGlowingCaloritePillar, noHatch)
+        .key('C', adAstraGlowingCaloritePillar, noHatch)
         .key('D', modernIndustrializationTungstensteelCoil, noHatch)
         .key('E', modernIndustrializationCaloriteMachineCasing, noHatch)
         .key('e', modernIndustrializationCaloriteMachineCasing, multiblockHatch)

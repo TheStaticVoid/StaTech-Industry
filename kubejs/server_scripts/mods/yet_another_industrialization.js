@@ -25,6 +25,7 @@ ServerEvents.recipes((event) => {
         yai('dragon_egg_energy_siphon/dragon_breath'),
         yai('assembler/dragon_egg_siphon_catalyst/nutrient_rich_dragon_breath'),
         yai('assembler/dragon_egg_siphon_catalyst/dragon_breath'),
+        yai('/item_charger/ad_astra_energizer'),
     ];
     YET_ANOTHER_INDUSTRIALIZATION.forEach((id) => event.remove({ id: id }));
 

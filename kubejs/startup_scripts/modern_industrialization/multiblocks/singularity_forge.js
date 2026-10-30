@@ -27,7 +27,7 @@ MIMachineEvents.registerMachines((event) => {
         mi('iridium_machine_casing_pipe')
     );
     const glowingCaloritePillar = event.memberOfBlock(
-        kj('glowing_calorite_pillar')
+        ad('glowing_calorite_pillar')
     );
     const superConductorCoil = event.memberOfBlock(mi('superconductor_coil'));
     const crypticEndRod = event.memberOfBlock('minecraft:end_rod');

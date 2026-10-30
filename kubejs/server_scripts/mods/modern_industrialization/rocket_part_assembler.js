@@ -19,7 +19,7 @@ ServerEvents.recipes((event) => {
             { amount: 4, item: mi('steel_rod') },
             { amount: 1, item: mi('advanced_motor') },
         ],
-        [{ amount: 1, item: kj('rocket_propeller') }],
+        [{ amount: 1, item: ad('fan') }],
         [{ amount: 100, fluid: mi('molten_enderium') }]
     );
 
@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
             { amount: 4, item: mi('steel_rod') },
             { amount: 2, item: mi('steel_large_plate') },
         ],
-        [{ amount: 1, item: kj('engine_framebox') }],
+        [{ amount: 1, item: ad('engine_frame') }],
         [{ amount: 100, fluid: mi('molten_enderium') }]
     );
 
@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
             { amount: 2, tag: 'c:plates/steel' },
             { amount: 3, item: mi('steel_curved_plate') },
         ],
-        [{ amount: 1, item: kj('rocket_fin') }],
+        [{ amount: 1, item: ad('rocket_fin') }],
         [{ amount: 100, fluid: mi('molten_enderium') }]
     );
 
@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
             { amount: 3, item: mi('steel_curved_plate') },
             { amount: 1, item: mi('redstone_tiny_dust') },
         ],
-        [{ amount: 1, item: kj('rocket_cone') }],
+        [{ amount: 1, item: ad('rocket_nose_cone') }],
         [{ amount: 100, fluid: mi('molten_enderium') }]
     );
 
@@ -77,7 +77,7 @@ ServerEvents.recipes((event) => {
             { amount: 8, item: mi('steel_plate') },
             { amount: 1, tag: 'c:glass_blocks' },
         ],
-        [{ amount: 1, item: kj('steel_fuel_tank') }],
+        [{ amount: 1, item: ad('steel_tank') }],
         [{ amount: 250, fluid: mi('boosted_diesel') }]
     );
 
@@ -93,7 +93,7 @@ ServerEvents.recipes((event) => {
             { amount: 8, item: mi('desh_plate') },
             { amount: 1, tag: 'c:glass_blocks' },
         ],
-        [{ amount: 1, item: kj('desh_fuel_tank') }],
+        [{ amount: 1, item: ad('desh_tank') }],
         [{ amount: 500, fluid: mi('boosted_diesel') }]
     );
 
@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
             { amount: 8, item: mi('ostrum_plate') },
             { amount: 1, tag: 'c:glass_blocks' },
         ],
-        [{ amount: 1, item: kj('ostrum_fuel_tank') }],
+        [{ amount: 1, item: ad('ostrum_tank') }],
         [{ amount: 750, fluid: mi('boosted_diesel') }]
     );
 
@@ -125,7 +125,7 @@ ServerEvents.recipes((event) => {
             { amount: 8, item: mi('calorite_plate') },
             { amount: 1, tag: 'c:glass_blocks' },
         ],
-        [{ amount: 1, item: kj('calorite_fuel_tank') }],
+        [{ amount: 1, item: ad('calorite_tank') }],
         [{ amount: 1000, fluid: mi('boosted_diesel') }]
     );
 
@@ -137,10 +137,10 @@ ServerEvents.recipes((event) => {
         900,
         [
             { amount: 3, tag: 'c:plates/steel' },
-            { amount: 1, item: kj('engine_framebox') },
-            { amount: 1, item: kj('rocket_propeller') },
+            { amount: 1, item: ad('engine_frame') },
+            { amount: 1, item: ad('fan') },
         ],
-        [{ amount: 1, item: kj('steel_engine') }],
+        [{ amount: 1, item: ad('steel_engine') }],
         [{ amount: 100, fluid: mi('molten_enderium') }]
     );
 
@@ -152,10 +152,10 @@ ServerEvents.recipes((event) => {
         1200,
         [
             { amount: 3, tag: 'c:plates/desh' },
-            { amount: 1, item: kj('engine_framebox') },
-            { amount: 1, item: kj('rocket_propeller') },
+            { amount: 1, item: ad('engine_frame') },
+            { amount: 1, item: ad('fan') },
         ],
-        [{ amount: 1, item: kj('desh_engine') }],
+        [{ amount: 1, item: ad('desh_engine') }],
         [{ amount: 100, fluid: mi('molten_enderium') }]
     );
 
@@ -167,10 +167,10 @@ ServerEvents.recipes((event) => {
         1600,
         [
             { amount: 3, tag: 'c:plates/ostrum' },
-            { amount: 1, item: kj('engine_framebox') },
-            { amount: 1, item: kj('rocket_propeller') },
+            { amount: 1, item: ad('engine_frame') },
+            { amount: 1, item: ad('fan') },
         ],
-        [{ amount: 1, item: kj('ostrum_engine') }],
+        [{ amount: 1, item: ad('ostrum_engine') }],
         [{ amount: 100, fluid: mi('molten_enderium') }]
     );
 
@@ -182,10 +182,10 @@ ServerEvents.recipes((event) => {
         2400,
         [
             { amount: 3, tag: 'c:plates/calorite' },
-            { amount: 1, item: kj('engine_framebox') },
-            { amount: 1, item: kj('rocket_propeller') },
+            { amount: 1, item: ad('engine_frame') },
+            { amount: 1, item: ad('fan') },
         ],
-        [{ amount: 1, item: kj('calorite_engine') }],
+        [{ amount: 1, item: ad('calorite_engine') }],
         [{ amount: 100, fluid: mi('molten_enderium') }]
     );
 });

@@ -30,9 +30,9 @@ MIMachineEvents.registerMachines((event) => {
     );
     const deshBlock = event.memberOfBlock(mi('desh_machine_casing'));
     const deshPipe = event.memberOfBlock(mi('desh_machine_casing_pipe'));
-    const glowingIronPillar = event.memberOfBlock(kj('glowing_steel_pillar'));
+    const glowingIronPillar = event.memberOfBlock(ad('glowing_steel_pillar'));
     const glowingOstrumPillar = event.memberOfBlock(
-        kj('glowing_ostrum_pillar')
+        ad('glowing_ostrum_pillar')
     );
     const caloritePipeCasing = event.memberOfBlock(
         mi('calorite_machine_casing_pipe')
