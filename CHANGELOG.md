@@ -9,6 +9,7 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 ### Breaking Changes
 
 - **Tweaked Pentaborane Line yields.**
+- **Tweaked Beryllium Line yields.**
 
 ### General Changelog
 
@@ -17,6 +18,7 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - **Added Bartman Assembler recipe due to public backlash.**
 - **Added AE2 Throughput Monitoring and quests.**
 - Fixed quest issues.
+- **Added 5% EU Discount to Recycling Factory.**
 
 ## [2.0.4]
 
