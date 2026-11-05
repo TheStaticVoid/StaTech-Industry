@@ -220,7 +220,7 @@ ServerEvents.recipes((event) => {
         st('beryllium_sulfate'),
         16,
         100,
-        [{ amount: 3, item: mi('emerald_crushed_dust') }],
+        [{ amount: 2, item: mi('emerald_crushed_dust') }],
         null,
         [{ amount: 150, fluid: mi('sulfuric_acid') }],
         [{ amount: 300, fluid: mi('beryllium_sulfate') }]
@@ -232,7 +232,7 @@ ServerEvents.recipes((event) => {
         st('beryllium_sulfate_alt'),
         16,
         50,
-        [{ amount: 5, item: mi('emerald_dust') }],
+        [{ amount: 6, item: mi('emerald_dust') }],
         null,
         [{ amount: 150, fluid: mi('sulfuric_acid') }],
         [{ amount: 300, fluid: mi('beryllium_sulfate') }]
