@@ -97,7 +97,7 @@ ServerEvents.recipes((event) => {
         200,
         null,
         [
-            { amount: 3, item: mi('beryllium_dust') },
+            { amount: 4, item: mi('beryllium_dust') },
             { amount: 3, item: mi('carbon_dust'), probability: 0.5 },
         ],
         [{ amount: 1100, fluid: mi('beryllium_chloride') }],
