@@ -19,6 +19,10 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - **Added AE2 Throughput Monitoring and quests.**
 - Fixed quest issues.
 - **Added 5% EU Discount to Recycling Factory.**
+- Added Drowned Model for Copper and Nautilus Shells.
+- Added Mermaid's Gems Photosynthetic Chamber Recipe.
+- Added Heart of the Sea Chemical Reactor Recipe.
+- **Added and Integrate IO's ME Output Hatches.**
 
 ## [2.0.4]
 

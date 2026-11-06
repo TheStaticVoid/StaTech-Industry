@@ -46,14 +46,18 @@ ServerEvents.recipes((event) => {
     ];
 
     MIXED_HATCH_TIER.forEach((id) => {
-        event.shapeless(
-            yai(`${id}_mixed_output_hatch`),
-            yai(`${id}_mixed_input_hatch`)
-        );
-        event.shapeless(
-            yai(`${id}_mixed_input_hatch`),
-            yai(`${id}_mixed_output_hatch`)
-        );
+        event
+            .shapeless(
+                yai(`${id}_mixed_output_hatch`),
+                yai(`${id}_mixed_input_hatch`)
+            )
+            .id(st(`${id}_mixed_hatch_swap_1`));
+        event
+            .shapeless(
+                yai(`${id}_mixed_input_hatch`),
+                yai(`${id}_mixed_output_hatch`)
+            )
+            .id(st(`${id}_mixed_hatch_swap_2`));
     });
 
     // ----------------- //

@@ -124,6 +124,19 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mc('ender_pearl') }]
     );
 
+    // -- HEART OF THE SEA -- //
+    chemicalReactor(
+        event,
+        st('heart_of_the_sea'),
+        16,
+        200,
+        [
+            { amount: 2, item: mc('nautilus_shell') },
+            { amount: 4, item: sp('mermaids_gem') },
+        ],
+        [{ amount: 1, item: mc('heart_of_the_sea') }]
+    );
+
     // -- ROSE QUARTZ -- //
     chemicalReactor(
         event,
