@@ -87,6 +87,7 @@ ServerEvents.recipes((event) => {
         Plant(sp('small_pink_dragonjag'),        { amount: 1, item: sp('small_pink_dragonjag') },                    { amount: 1, item: sp('small_pink_dragonjag'), probability: 0.5 } ),
         Plant(sp('small_purple_dragonjag'),      { amount: 1, item: sp('small_purple_dragonjag') },                  { amount: 1, item: sp('small_purple_dragonjag'), probability: 0.5 } ),
         Plant(sp('small_black_dragonjag'),       { amount: 1, item: sp('small_black_dragonjag') },                   { amount: 1, item: sp('small_black_dragonjag'), probability: 0.5 } ),
+        Plant(sp('mermaids_gem'),                { amount: 1, item: sp('mermaids_gem') },                            { amount: 1, item: sp('mermaids_gem'), probability: 0.5 } ),
     ];
 
     // Create recipes for each of the items in the list

@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
 
     // -- ANGEL RING -- //
     event
-        .shaped(kj('angel_ring'), ['FGF', 'TRT', 'CTC'], {
+        .shaped(cm('angel_ring'), ['FGF', 'TRT', 'CTC'], {
             F: mc('feather'),
             R: mi('gold_ring'),
             T: '#c:storage_blocks/titanium',
@@ -581,7 +581,6 @@ ServerEvents.tags('item', (event) => {
         event.add(mc('enchantable/mining'), id);
         event.add(mc('enchantable/mining_loot'), id);
         event.add(mc('enchantable/vanishing'), id);
-        event.remove(mc('axes'), id);
     });
 
     const COINS = [

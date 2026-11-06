@@ -222,7 +222,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
 
     const UNUSED_DEV = [
         kj('computer_casing'),
-        kj('personal_space_shield'),
         kj('lens_mold'),
         kj('short_range_lens'),
         kj('deep_space_lens'),

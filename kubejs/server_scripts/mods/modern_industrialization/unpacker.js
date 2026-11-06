@@ -69,4 +69,30 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: ae('fluix_smart_dense_cable') }],
         [{ amount: 4, item: ae('fluix_smart_cable') }]
     );
+
+    // -- ME MIXED INPUT HATCH UNPACKING -- //
+    unpacker(
+        event,
+        st('me_mixed_input_hatch'),
+        2,
+        200,
+        [{ amount: 1, item: io('me_mixed_input_hatch') }],
+        [
+            { amount: 1, item: io('me_fluid_input_hatch') },
+            { amount: 1, item: io('me_item_input_hatch') },
+        ]
+    );
+
+    // -- ME MIXED OUTPUT HATCH UNPACKING -- //
+    unpacker(
+        event,
+        st('me_mixed_output_hatch'),
+        2,
+        200,
+        [{ amount: 1, item: io('me_mixed_output_hatch') }],
+        [
+            { amount: 1, item: io('me_fluid_output_hatch') },
+            { amount: 1, item: io('me_item_output_hatch') },
+        ]
+    );
 });

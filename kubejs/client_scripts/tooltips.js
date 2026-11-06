@@ -13,7 +13,6 @@ ItemEvents.modifyTooltips((event) => {
     // -- LIST OF ALL DISABLED MACHINES AND ITEMS -- //
     const DISABLED_MACHINES_AND_ITEMS = [
         kj('computer_casing'),
-        kj('personal_space_shield'),
         kj('lens_mold'),
         kj('short_range_lens'),
         kj('deep_space_lens'),

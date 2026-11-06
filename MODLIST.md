@@ -11,6 +11,7 @@
 - [Alternate Current](https://www.curseforge.com/projects/548115) by Space   Walker
 - [AppleSkin](https://www.curseforge.com/projects/248787) by squeek
 - [Applied Energistics 2](https://www.curseforge.com/projects/223794) by Team AppliedEnergistics
+- [Applied Flow Analytics](https://github.com/starforcraft/Applied-Flow-Analytics) by Ultramega, XaMi
 - [Architects Palette](https://www.curseforge.com/projects/433862) by Snakeblock, THX, Smash Brothers, Orisghost, RENREN, Jsburg
 - [Architectury](https://www.curseforge.com/projects/419699) by shedaniel
 - [Artifacts](https://www.curseforge.com/projects/312353) by ochotonida
@@ -24,6 +25,7 @@
 - [Better Advancements](https://www.curseforge.com/projects/272515) by way2muchnoise
 - [Better Compatibility Checker](https://www.curseforge.com/projects/551894) by Gaz\(Gaz492\)
 - [Better ModList](https://www.curseforge.com/projects/1089803) by foxy, Prospector, haykam821, TerraformersMC
+- [Better Statistics Screen](https://github.com/TheCSMods) by TheCSDev
 - [Better Tab](https://www.curseforge.com/projects/1420609) by tricube
 - [BetterF3](https://www.curseforge.com/projects/401648) by TreyRuffy and cominixo
 - [Bigger AE2](https://www.curseforge.com/projects/1013772) by DancingSnow
@@ -118,7 +120,7 @@
 - [FlickerFix](https://www.curseforge.com/projects/431430)
 - [ForgeEndertech](https://www.curseforge.com/projects/244844) by EnderLanky
 - [Forgiving Void](https://www.curseforge.com/projects/271009) by BlayTheNinth
-- [FramedBlocks](https://www.curseforge.com/projects/441647) by XFactHD
+- [FramedBlocks](https://www.curseforge.com/minecraft/mc-mods/framedblocks) by XFactHD
 - [Functional Storage](https://www.curseforge.com/projects/556861) by Buuz135, Rid
 - [Fusion](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures) by SuperMartijn642
 - [Fzzy Config](https://www.curseforge.com/projects/1005914) by fzzyhmstrs
@@ -147,7 +149,6 @@
 - [Just Another Void Dimension](https://www.curseforge.com/projects/370890) by UnRealDinnerbone
 - [Just Enough Breeding](https://www.curseforge.com/projects/899386) by Christofmeg
 - [Just Enough Effects Descriptions](https://www.curseforge.com/projects/532286) by MehVahdJukaar
-- [Just Enough Items](https://www.curseforge.com/minecraft/mc-mods/jei) by mezz
 - [Just Hammers](https://www.curseforge.com/projects/681606) by ErrorMikey
 - [Konkrete](https://www.curseforge.com/projects/410295) by Keksuccino
 - [KubeJS](https://www.curseforge.com/projects/238086) by latvian\.dev
@@ -240,12 +241,14 @@
 - [SuperMartijn642's Config Library](https://www.curseforge.com/projects/438332) by SuperMartijn642
 - [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib) by SuperMartijn642
 - [Supplementaries](https://www.curseforge.com/projects/412082) by MehVahdJukaar, Plantkillable
+- [TCD Commons API](https://github.com/TheCSDev) by TheCSDev
 - [Tank Storage](https://www.curseforge.com/projects/1032670) by Natte
 - [Tesseract API](https://www.curseforge.com/projects/1067672) by Swedz
 - [Timeless & Classics Guns: Zero](https://www.curseforge.com/projects/1353462) by Serene Wave Studio \| Timeless Squad
 - [TipTheScales](https://www.curseforge.com/projects/282313) by Jaredlll08
 - [Tips](https://www.curseforge.com/projects/306549) by Darkhax
 - [Titanium](https://www.curseforge.com/projects/287342) by TheCodedOne, Buuz135
+- [TooManyRecipeViewers](https://legacy.curseforge.com/minecraft/mc-mods/tmrv) by Nolij \(@xdMatthewbx\#1337\) & the Craftoria team
 - [Tool Belt](https://www.curseforge.com/projects/260262) by gigaherz
 - [Torchmaster](https://www.curseforge.com/projects/254268) by Xalcon
 - [Trade Cycling](https://www.curseforge.com/projects/570431) by Max Henkel

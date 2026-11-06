@@ -14,6 +14,6 @@ item_ids:
     <MultiblockShape controller="mi_tweaks:recycling_factory" />
 </GameScene>
 
-The Recycling Factory is a batching version of the Recycler. It can do batches of 16, but it has no EU discount. Sorry.
+The Recycling Factory is a batching version of the Recycler. It can do batches of 16 at a 5% EU discount.
 
 <Recipe id="statech:mi_tweaks/recycling_factory" />

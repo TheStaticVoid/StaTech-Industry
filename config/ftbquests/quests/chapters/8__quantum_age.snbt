@@ -1152,6 +1152,28 @@
 				id: "mi_tweaks:extreme_vacuum_cryofreezer"
 			}
 			id: "1F86FDA8B641EC55"
+			rewards: [
+				{
+					count: 2
+					id: "6EF9589C2456E5B4"
+					item: {
+						count: 1
+						id: "kubejs:coin_mythic"
+					}
+					type: "item"
+				}
+				{
+					id: "2BED9B031639A7D9"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "355F4C213BC8D03A"
+					table_id: 1797692254493429240L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [
@@ -1221,6 +1243,28 @@
 				id: "mi_tweaks:macrothermic_confluence_unit"
 			}
 			id: "5E8335E396D18094"
+			rewards: [
+				{
+					count: 2
+					id: "2686728110FD7FE4"
+					item: {
+						count: 1
+						id: "kubejs:coin_mythic"
+					}
+					type: "item"
+				}
+				{
+					id: "28759741A8BE45AC"
+					type: "xp"
+					xp: 200
+				}
+				{
+					exclude_from_claim_all: true
+					id: "75D7DB3E38A4805A"
+					table_id: 1797692254493429240L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [

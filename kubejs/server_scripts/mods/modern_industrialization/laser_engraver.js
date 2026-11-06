@@ -282,6 +282,7 @@ ServerEvents.recipes((event) => {
         [kj('rabbit_model'), mc('rabbit')],
         [kj('phantom_model'), mc('phantom_membrane')],
         [kj('breeze_model'), mc('breeze_rod')],
+        [kj('drowned_model'), mi('copper_rod')],
     ];
     modelItemList.forEach((modelItem) => {
         let model = modelItem[0];
