@@ -24,6 +24,11 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - Added Heart of the Sea Chemical Reactor Recipe.
 - **Added and Integrate IO's ME Output Hatches.**
 
+### Companion Mod Changelog
+
+- **Migrated Angel Ring and Fireproof Ring to Companion Mod.**
+- **Migrated Structure Modification to Companion Mod.**
+
 ## [2.0.4]
 
 Small patch to fix a few breaking bugs with item tagging and the tool belt, coupled with some minor improvements.
