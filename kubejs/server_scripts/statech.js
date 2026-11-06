@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
 
     // -- ANGEL RING -- //
     event
-        .shaped(kj('angel_ring'), ['FGF', 'TRT', 'CTC'], {
+        .shaped(cm('angel_ring'), ['FGF', 'TRT', 'CTC'], {
             F: mc('feather'),
             R: mi('gold_ring'),
             T: '#c:storage_blocks/titanium',

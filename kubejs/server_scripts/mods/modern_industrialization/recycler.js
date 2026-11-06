@@ -77,6 +77,7 @@ ServerEvents.tags('item', (event) => {
         mc('fire_charge'),
         mc('wind_charge'),
         mc('flint'),
+        mc('magma_block'),
         mc('glass_bottle'),
         mc('bowl'),
         mc('paper'),
