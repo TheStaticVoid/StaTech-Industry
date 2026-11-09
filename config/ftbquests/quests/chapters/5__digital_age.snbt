@@ -3815,5 +3815,39 @@
 			x: 1.0d
 			y: -10.0d
 		}
+		{
+			dependencies: ["5B497F5E8E946999"]
+			id: "2FB4CE90BEA4C158"
+			rewards: [
+				{
+					count: 5
+					id: "2EA4DD55E5239885"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "0BB1C80414BA0271"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1099CF884C0B838D"
+					table_id: 379087119399425756L
+					type: "random"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "483DEB073F5DC942"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:me_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.0d
+		}
 	]
 }
