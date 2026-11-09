@@ -36,6 +36,13 @@ ServerEvents.recipes((event) => {
     ];
     SOPH_DELETED.forEach((id) => event.remove({ id: id }));
 
+    // REPLACE ENDER PEARL WITH ENDER EYE //
+    event.replaceInput(
+        { output: 'sophisticatedcore:ender_linker' },
+        'minecraft:ender_pearl',
+        'minecraft:ender_eye'
+    );
+
     // REPLACE ENDER PEARL WITH TRASH CAN //
     event.replaceInput(
         { output: ss('void_upgrade') },
