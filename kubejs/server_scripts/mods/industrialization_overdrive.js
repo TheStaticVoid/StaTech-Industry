@@ -13,6 +13,10 @@ ServerEvents.recipes((event) => {
         io('shaped/craft/terminal'),
         io('shaped/craft/terminal/assembler'),
         io('assembler/vajra'),
+        io('shaped/craft/me_fluid_input_hatch'),
+        io('shaped/craft/me_fluid_output_hatch'),
+        io('shaped/craft/me_item_input_hatch'),
+        io('shaped/craft/me_item_output_hatch'),
     ];
     IO_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
 
@@ -75,6 +79,42 @@ ServerEvents.recipes((event) => {
             U: mi('highly_advanced_upgrade'),
         })
         .id(st('vajra'));
+
+    // -- ME FLUID INPUT HATCH -- //
+    event
+        .shaped(io('me_fluid_input_hatch'), ['CGC', 'GAG', 'CGC'], {
+            A: mi('advanced_fluid_input_hatch'),
+            G: ae('interface'),
+            C: mi('entro_plate'),
+        })
+        .id(st('me_fluid_input_hatch'));
+
+    // -- ME FLUID OUTPUT HATCH -- //
+    event
+        .shaped(io('me_fluid_output_hatch'), ['CGC', 'GAG', 'CGC'], {
+            A: mi('advanced_fluid_output_hatch'),
+            G: ae('interface'),
+            C: mi('entro_plate'),
+        })
+        .id(st('me_fluid_output_hatch'));
+
+    // -- ME ITEM INPUT HATCH -- //
+    event
+        .shaped(io('me_item_input_hatch'), ['CGC', 'GAG', 'CGC'], {
+            A: mi('advanced_item_input_hatch'),
+            G: ae('interface'),
+            C: mi('entro_plate'),
+        })
+        .id(st('me_item_input_hatch'));
+
+    // -- ME ITEM OUTPUT HATCH -- //
+    event
+        .shaped(io('me_item_output_hatch'), ['CGC', 'GAG', 'CGC'], {
+            A: mi('advanced_item_output_hatch'),
+            G: ae('interface'),
+            C: mi('entro_plate'),
+        })
+        .id(st('me_item_output_hatch'));
 
     // -------------------------- //
     // --- SHAPELESS CRAFTING --- //
