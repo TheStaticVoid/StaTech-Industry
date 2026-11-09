@@ -5,8 +5,9 @@
 
 // Adapted from Team AOE's Data maps script for Craftoria (https://github.com/TeamAOF/Craftoria/blob/4b045109f126f27a0cc584cdb0b3c1edbed11c8e/kubejs/server_scripts/Mods/ModernIndustrialization/DataMaps.js#L4)
 
-// -- LARGE ELECTRIC FURNACE TIERS -- //
 ServerEvents.generateData('after_mods', (event) => {
+
+    // -- LARGE ELECTRIC FURNACE TIERS -- //
     event.json(
         'extended_industrialization:data_maps/block/large_electric_furnace_tier',
         {
@@ -14,6 +15,18 @@ ServerEvents.generateData('after_mods', (event) => {
                 'modern_industrialization:tungstensteel_coil': {
                     batch_size: 64,
                     eu_cost_multiplier: 0.75,
+                },
+            },
+        }
+    );
+
+    // -- MOTORS -- //
+    event.json(
+        'modern_industrialization:data_maps/item/item_pipe_upgrades',
+        {
+            values: {
+                'kubejs:quantum_motor': {
+                    maxExtractedItems: 1024
                 },
             },
         }
@@ -61,14 +74,14 @@ ServerEvents.generateData('after_mods', (event) => {
                 'yet_another_industrialization:demon_core': {
                     type: 'lifespan',
                     eu: 8192,
-                    irradiation: 16384,
+                    irradiation: 24576,
                     probability: 1,
                     probability_check_cooldown: 50,
                 },
                 'modern_industrialization:beryllium_block': {
                     type: 'consumption',
                     eu: 1024,
-                    irradiation: 1280,
+                    irradiation: 2560,
                     probability: 0.05,
                     probability_check_cooldown: 200,
                 },

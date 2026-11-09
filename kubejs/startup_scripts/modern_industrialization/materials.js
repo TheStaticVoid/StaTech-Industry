@@ -134,7 +134,8 @@ MIMaterialEvents.addMaterials((event) => {
                 'blade',
                 'bolt',
                 'curved_plate',
-                'dust'
+                'dust',
+                'rod_magnetic'
             )
             .machineCasing(12.0)
             .pipeCasing(12.0)

@@ -72,4 +72,22 @@ StartupEvents.registry('block', (event) => {
             .tagBlock('minecraft:mineable/pickaxe')
             .tagBlock('minecraft:needs_iron_tool');
     });
+
+    const gearboxBlocks = [
+        ['basic_gearbox_casing', 'Basic Gearbox Casing'],
+        ['advanced_gearbox_casing', 'Advanced Gearbox Casing'],
+        ['turbo_gearbox_casing', 'Turbo Gearbox Casing'],
+        ['highly_advanced_gearbox_casing', 'Highly Advanced Gearbox Casing'],
+        ['quantum_gearbox_casing', 'Quantum Gearbox Casing'],
+    ];
+
+    gearboxBlocks.forEach(([id, name]) => {
+        event
+            .create(`kubejs:${id}`)
+            .soundType('stone')
+            .requiresTool(true)
+            .hardness(6)
+            .tagBlock('minecraft:mineable/pickaxe')
+            .tagBlock('minecraft:needs_iron_tool');
+    });
 });

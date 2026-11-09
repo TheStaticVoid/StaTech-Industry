@@ -810,6 +810,8 @@ StartupEvents.registry('item', (event) => {
 
     event.create('battery_casing');
 
+    event.create('quantum_motor');
+
     // -- BRONZE EQUIPMENT -- //
 
     event
