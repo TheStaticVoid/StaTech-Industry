@@ -57,7 +57,7 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
         event.getRecipeType('modern_industrialization:quarry'), // recipe type
         largeBoreholeQuarryShape, // multiblock shape
         (workstations) =>
-            workstations.add(['modern_industrialization:quarry']),
+            workstations.add(['modern_industrialization:steam_quarry', 'modern_industrialization:electric_quarry']),
         /* Model configuration */
         'modern_industrialization:tungstensteel_machine_casing', // casing of the controller
         'quarry', // overlay folder

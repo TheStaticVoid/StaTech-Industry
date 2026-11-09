@@ -476,6 +476,7 @@ ServerEvents.recipes((event) => {
         [
             { amount: 4, item: ae('interface') },
             { amount: 1, item: mi('advanced_fluid_input_hatch') },
+            { amount: 4, item: mi('entro_plate') },
         ],
         [{ amount: 1, item: io('me_fluid_input_hatch') }]
     );
@@ -489,6 +490,7 @@ ServerEvents.recipes((event) => {
         [
             { amount: 4, item: ae('interface') },
             { amount: 1, item: mi('advanced_fluid_output_hatch') },
+            { amount: 4, item: mi('entro_plate') },
         ],
         [{ amount: 1, item: io('me_fluid_output_hatch') }]
     );
@@ -502,6 +504,7 @@ ServerEvents.recipes((event) => {
         [
             { amount: 4, item: ae('interface') },
             { amount: 1, item: mi('advanced_item_input_hatch') },
+            { amount: 4, item: mi('entro_plate') },
         ],
         [{ amount: 1, item: io('me_item_input_hatch') }]
     );
@@ -515,6 +518,7 @@ ServerEvents.recipes((event) => {
         [
             { amount: 4, item: ae('interface') },
             { amount: 1, item: mi('advanced_item_output_hatch') },
+            { amount: 4, item: mi('entro_plate') },
         ],
         [{ amount: 1, item: io('me_item_output_hatch') }]
     );
