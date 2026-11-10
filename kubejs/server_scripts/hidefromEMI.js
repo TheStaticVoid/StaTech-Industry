@@ -222,7 +222,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
 
     const UNUSED_DEV = [
         kj('computer_casing'),
-        kj('personal_space_shield'),
         kj('lens_mold'),
         kj('short_range_lens'),
         kj('deep_space_lens'),
@@ -247,6 +246,9 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         kj('anomalous_space_circuit'),
         mi('supercomputer'),
         mi('telescope'),
+        mt('large_borehole_quarry'),
+        mt('bedrock_fracking_array'),
+        mt('distillation_megatower'),
         /^modern_industrialization:.*(cobalt).*/,
     ];
     UNUSED_DEV.forEach((id) => event.remove(id));

@@ -13,7 +13,6 @@ ItemEvents.modifyTooltips((event) => {
     // -- LIST OF ALL DISABLED MACHINES AND ITEMS -- //
     const DISABLED_MACHINES_AND_ITEMS = [
         kj('computer_casing'),
-        kj('personal_space_shield'),
         kj('lens_mold'),
         kj('short_range_lens'),
         kj('deep_space_lens'),
@@ -101,6 +100,9 @@ ItemEvents.modifyTooltips((event) => {
         mt('extreme_vacuum_cryofreezer'),
         mt('macrothermic_confluence_unit'),
         mt('recycling_factory'),
+        mt('large_borehole_quarry'),
+        mt('bedrock_fracking_array'),
+        mt('distillation_megatower'),
         mi('laser_engraver'),
         mi('photosynthetic_chamber'),
         mi('rocket_part_assembler'),

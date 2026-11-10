@@ -47,6 +47,22 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: mc('heavy_core') }]
     );
 
+    // -- HIM -- //
+    assembler(
+        event,
+        st('jon_bartman'),
+        16,
+        400,
+        [
+            { amount: 4, item: mc('beef') },
+            { amount: 2, item: mi('plutonium_dust') },
+            { amount: 1, item: mc('brain_coral_block') },
+            { amount: 1, item: mc('black_wool') },
+            { amount: 1, item: mc('dragon_egg') },
+        ],
+        [{ amount: 1, item: kj('bartman') }]
+    );
+
     // -- MATTER FABRICATOR -- //
     assembler(
         event,
@@ -155,27 +171,6 @@ ServerEvents.recipes((event) => {
         [{ amount: 4, item: mi('stainless_steel_plate') }],
         [{ amount: 1, item: kj('lens_mold') }],
         [{ amount: 100, fluid: mi('polytetrafluoroethylene') }]
-    );
-
-    // -- PERSONAL SPACE SHIELD -- //
-    assembler(
-        event,
-        st('personal_space_shield'),
-        32,
-        1200,
-        [
-            { amount: 4, item: mi('tungstensteel_tank') },
-            { amount: 8, item: mi('processing_unit') },
-            { amount: 12, item: mi('superconductor_cable') },
-            { amount: 8, item: mi('small_heat_exchanger') },
-            { amount: 2, item: mi('uranium_fuel_rod') },
-            { amount: 16, item: mi('nuclear_alloy_plate') },
-        ],
-        [{ amount: 1, item: kj('personal_space_shield') }],
-        [
-            { amount: 16000, fluid: mi('oxygen') },
-            { amount: 4000, fluid: mi('cryofluid') },
-        ]
     );
 
     // -- PISTON -- //

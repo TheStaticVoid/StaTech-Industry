@@ -635,65 +635,6 @@ StartupEvents.registry('armor_material', (event) => {
 });
 
 StartupEvents.registry('item', (event) => {
-    event
-        .create('personal_space_shield')
-        .unstackable()
-        .rarity('Rare')
-        .tag('curios:charm')
-        .tooltip(
-            '§aProvides a personal bubble of safety\n§awhile in low-oxygen environments\n\n§bCan be equipped in a curio slot'
-        );
-
-    event
-        .create('angel_ring')
-        .unstackable()
-        .rarity('Epic')
-        .tag('curios:ring')
-        .attachCuriosCapability(
-            CuriosJSCapabilityBuilder.create()
-                .canEquip((slotContext, stack) => true)
-                .canUnequip((slotContext, stack) => true)
-                .addAttribute(
-                    'neoforge:creative_flight',
-                    'kubejs_flight_ring',
-                    1.0,
-                    'add_value'
-                )
-        );
-
-    event
-        .create('fireproof_ring')
-        .unstackable()
-        .rarity('Epic')
-        .tag('curios:ring')
-        .fireResistant()
-        .attachCuriosCapability(
-            CuriosJSCapabilityBuilder.create()
-                .canEquip((slotContext, stack) => true)
-                .canUnequip((slotContext, stack) => true)
-                .curioTick((slotContext, stack) => {
-                    let player = slotContext.entity();
-                    if (player.level.isClientSide()) return;
-                    if (!player.hasEffect('minecraft:fire_resistance')) {
-                        player.potionEffects.add(
-                            'minecraft:fire_resistance',
-                            400,
-                            0,
-                            true,
-                            false
-                        );
-                    }
-                    if (player.isOnFire()) {
-                        player.setRemainingFireTicks(0);
-                    }
-                })
-                .modifyAttributesTooltip((tooltips, stack) => [
-                    '',
-                    '§6When worn as ring:',
-                    '§9Provides a Fire Resistance effect',
-                ])
-        );
-
     event.create('lens_mold').unstackable();
 
     event

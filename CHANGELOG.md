@@ -1,5 +1,37 @@
 # Changelog
 
+## [2.0.5]
+
+Update bringing ME Hatches and a variety of tweaks and fixes. This is looking to be the last minor version before 2.1.0 (The Space Update).
+
+As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
+
+### Breaking Changes
+
+- **Tweaked Pentaborane Line yields.**
+- **Tweaked Beryllium Line yields.**
+- **Existing Angel Rings and Fireproof Rings will despawn.**
+
+### General Changelog
+
+- Fixed chainsaw axe tagging.
+- Replaced JEI with TMRV Updated.
+- **Added Bartman Assembler recipe due to public backlash.**
+- **Added AE2 Throughput Monitoring and quests.**
+- Fixed quest issues.
+- **Added 5% EU Discount to Recycling Factory.**
+- Added Drowned Model for Copper and Nautilus Shells.
+- Added Mermaid's Gems Photosynthetic Chamber Recipe.
+- Added Heart of the Sea Chemical Reactor Recipe.
+- **Added and Integrate IO's ME Output Hatches.**
+- Removed some obsolete items.
+- Made magma blocks recyclable.
+- Partially added batching Distillation Tower, Quarry, and Oil Drilling Rig (Currently Unobtainable).
+
+### Companion Mod Changelog
+
+- **Migrated Angel Ring and Fireproof Ring to Companion Mod.**
+
 ## [2.0.4]
 
 Small patch to fix a few breaking bugs with item tagging and the tool belt, coupled with some minor improvements.

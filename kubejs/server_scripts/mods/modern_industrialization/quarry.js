@@ -14,6 +14,7 @@ ServerEvents.recipes((event) => {
         mi('quarry/gold'),
         mi('quarry/steel'),
         mi('quarry/stainless_steel'),
+        mi('compat/create/quarry/mechanical_arm')
     ];
     REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 

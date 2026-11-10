@@ -5,7 +5,7 @@
 
 ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
-    let st = (id) => `statech:modern_industrialization/${id}`;
+    let st = (id) => `statech:industrialization_overdrive/${id}`;
 
     // -- EXTENDED INDUSTRIALIZATION REMOVED RECIPES -- //
     const IO_DELETED_ITEMS = [
@@ -13,8 +13,16 @@ ServerEvents.recipes((event) => {
         io('shaped/craft/terminal'),
         io('shaped/craft/terminal/assembler'),
         io('assembler/vajra'),
+        io('shaped/craft/me_fluid_input_hatch'),
+        io('shaped/craft/me_fluid_output_hatch'),
+        io('shaped/craft/me_item_input_hatch'),
+        io('shaped/craft/me_item_output_hatch'),
     ];
     IO_DELETED_ITEMS.forEach((id) => event.remove({ id: id }));
+
+    // ----------------------- //
+    // --- SHAPED CRAFTING --- //
+    // ----------------------- //
 
     const IO_ITEMS_MODIFICATION = [
         {
@@ -72,9 +80,68 @@ ServerEvents.recipes((event) => {
         })
         .id(st('vajra'));
 
-    // -------------------------//
-    // -- ASSEMBLER RECIPES -- //
-    // -------------------------//
+    // -- ME FLUID INPUT HATCH -- //
+    event
+        .shaped(io('me_fluid_input_hatch'), ['CGC', 'GAG', 'CGC'], {
+            A: mi('advanced_fluid_input_hatch'),
+            G: ae('interface'),
+            C: mi('entro_plate'),
+        })
+        .id(st('me_fluid_input_hatch'));
+
+    // -- ME FLUID OUTPUT HATCH -- //
+    event
+        .shaped(io('me_fluid_output_hatch'), ['CGC', 'GAG', 'CGC'], {
+            A: mi('advanced_fluid_output_hatch'),
+            G: ae('interface'),
+            C: mi('entro_plate'),
+        })
+        .id(st('me_fluid_output_hatch'));
+
+    // -- ME ITEM INPUT HATCH -- //
+    event
+        .shaped(io('me_item_input_hatch'), ['CGC', 'GAG', 'CGC'], {
+            A: mi('advanced_item_input_hatch'),
+            G: ae('interface'),
+            C: mi('entro_plate'),
+        })
+        .id(st('me_item_input_hatch'));
+
+    // -- ME ITEM OUTPUT HATCH -- //
+    event
+        .shaped(io('me_item_output_hatch'), ['CGC', 'GAG', 'CGC'], {
+            A: mi('advanced_item_output_hatch'),
+            G: ae('interface'),
+            C: mi('entro_plate'),
+        })
+        .id(st('me_item_output_hatch'));
+
+    // -------------------------- //
+    // --- SHAPELESS CRAFTING --- //
+    // -------------------------- //
+
+    // -- ME HATCH CRAFTING SWAPS -- //
+    const ME_HATCH_TIER = ['fluid', 'item'];
+
+    ME_HATCH_TIER.forEach((id) => {
+        event
+            .shapeless(io(`me_${id}_output_hatch`), io(`me_${id}_input_hatch`))
+            .id(st(`me_${id}_hatch_swap_1`));
+        event
+            .shapeless(io(`me_${id}_input_hatch`), io(`me_${id}_output_hatch`))
+            .id(st(`me_${id}_hatch_swap_2`));
+    });
+
+    event
+        .shapeless(io('me_mixed_output_hatch'), io('me_mixed_input_hatch'))
+        .id(st('me_mixed_hatch_swap_1'));
+    event
+        .shapeless(io('me_mixed_input_hatch'), io('me_mixed_output_hatch'))
+        .id(st('me_mixed_hatch_swap_2'));
+
+    // ----------------- //
+    // --- ASSEMBLER --- //
+    // ----------------- //
 
     // -- PYROLYSE OVEN -- //
     assembler(
@@ -105,4 +172,17 @@ ServerEvents.recipes((event) => {
         ],
         [{ amount: 1, item: io('multi_processing_array') }]
     );
+});
+
+ServerEvents.tags('item', (event) => {
+    event.add('kubejs:mixed_input_hatch', io('me_mixed_input_hatch'));
+    event.add('kubejs:mixed_output_hatch', io('me_mixed_output_hatch'));
+
+    // -- ME HATCH TAGGING -- //
+    const ME_HATCH_TYPE = ['item', 'fluid', 'mixed'];
+
+    ME_HATCH_TYPE.forEach((id) => {
+        event.add('kubejs:me_hatch', io(`me_${id}_output_hatch`));
+        event.add('kubejs:me_hatch', io(`me_${id}_input_hatch`));
+    });
 });

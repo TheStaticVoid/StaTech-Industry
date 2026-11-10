@@ -24,6 +24,18 @@ ServerEvents.recipes((event) => {
             mi('blood'),
         ],
 
+        // Drowned model
+        [
+            kj('drowned_model'),
+            [
+                { amount: 1, item: mc('rotten_flesh') },
+                { amount: 1, item: mc('copper_ingot'), probability: 0.25 },
+                { amount: 1, item: mc('nautilus_shell'), probability: 0.1 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.5 },
+            ],
+            mi('blood'),
+        ],
+
         // Pig model
         [
             kj('pig_model'),

@@ -496,7 +496,7 @@ ServerEvents.recipes((event) => {
             R: { item: mi('gold_ring') },
         },
         {
-            id: kj('angel_ring'),
+            id: cm('angel_ring'),
             count: 1,
         },
         sp('endgame/finish_progression')
@@ -523,7 +523,7 @@ ServerEvents.recipes((event) => {
             S: { item: sp('bedrock_dust') },
         },
         {
-            id: kj('fireproof_ring'),
+            id: cm('fireproof_ring'),
             count: 1,
         },
         sp('midgame/break_decayed_bedrock')

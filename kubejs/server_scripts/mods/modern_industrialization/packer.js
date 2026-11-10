@@ -466,4 +466,86 @@ ServerEvents.recipes((event) => {
         [{ amount: 9, item: ws('fragment') }],
         [{ amount: 1, item: mc('wither_skeleton_skull') }]
     );
+
+    // -- ME FLUID INPUT HATCH -- //
+    packer(
+        event,
+        st('me_fluid_input_hatch'),
+        2,
+        200,
+        [
+            { amount: 4, item: ae('interface') },
+            { amount: 1, item: mi('advanced_fluid_input_hatch') },
+            { amount: 4, item: mi('entro_plate') },
+        ],
+        [{ amount: 1, item: io('me_fluid_input_hatch') }]
+    );
+
+    // -- ME FLUID OUTPUT HATCH -- //
+    packer(
+        event,
+        st('me_fluid_output_hatch'),
+        2,
+        200,
+        [
+            { amount: 4, item: ae('interface') },
+            { amount: 1, item: mi('advanced_fluid_output_hatch') },
+            { amount: 4, item: mi('entro_plate') },
+        ],
+        [{ amount: 1, item: io('me_fluid_output_hatch') }]
+    );
+
+    // -- ME ITEM INPUT HATCH -- //
+    packer(
+        event,
+        st('me_item_input_hatch'),
+        2,
+        200,
+        [
+            { amount: 4, item: ae('interface') },
+            { amount: 1, item: mi('advanced_item_input_hatch') },
+            { amount: 4, item: mi('entro_plate') },
+        ],
+        [{ amount: 1, item: io('me_item_input_hatch') }]
+    );
+
+    // -- ME ITEM OUTPUT HATCH -- //
+    packer(
+        event,
+        st('me_item_output_hatch'),
+        2,
+        200,
+        [
+            { amount: 4, item: ae('interface') },
+            { amount: 1, item: mi('advanced_item_output_hatch') },
+            { amount: 4, item: mi('entro_plate') },
+        ],
+        [{ amount: 1, item: io('me_item_output_hatch') }]
+    );
+
+    // -- ME MIXED INPUT HATCH -- //
+    packer(
+        event,
+        st('me_mixed_input_hatch'),
+        2,
+        200,
+        [
+            { amount: 1, item: io('me_fluid_input_hatch') },
+            { amount: 1, item: io('me_item_input_hatch') },
+        ],
+        [{ amount: 1, item: io('me_mixed_input_hatch') }]
+    );
+
+    // -- ME MIXED OUTPUT HATCH -- //
+    packer(
+        event,
+        st('me_mixed_output_hatch'),
+        2,
+        200,
+        [
+            { amount: 1, item: io('me_fluid_output_hatch') },
+            { amount: 1, item: io('me_item_output_hatch') },
+        ],
+        [{ amount: 1, item: io('me_mixed_output_hatch') }]
+    );
 });
