@@ -197,12 +197,11 @@
 - [PacketFixer](https://www.curseforge.com/projects/689467) by TonimatasDEV
 - [Paperdoll](https://www.curseforge.com/projects/537079) by tr7zw
 - [Phantom's Utilities](https://www.curseforge.com/projects/1181116) by White Phantom
-- Phantom's AE2 Tweaks by WhitePhant0m
+- [Phantom's AE2 Tweaks](https://www.curseforge.com/projects/1793293) by WhitePhant0m
 - [Pipe Connector](https://www.curseforge.com/projects/846168) by Heaser, PotatoPoweredWizard
 - [Player Animator](https://www.curseforge.com/projects/658587) by KosmX
 - [PrickleMC](https://www.curseforge.com/projects/1023259) by Darkhax
 - [Prism](https://www.curseforge.com/projects/638111) by Grend
-- [ProbeJS](https://www.curseforge.com/projects/585406) by Prunoideae
 - [Puzzles Lib](https://www.curseforge.com/projects/495476) by Fuzs
 - [Raised](https://www.curseforge.com/projects/570368) by yurisuika
 - [Reese's Sodium Options](https://www.curseforge.com/projects/511319) by FlashyReese
