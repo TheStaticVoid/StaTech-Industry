@@ -2,7 +2,7 @@
 
 ## [2.0.5]
 
-Update bringing ME Hatches and a variety of tweaks and fixes.
+Update bringing ME Hatches and a variety of tweaks and fixes. This is looking to be the last minor version before 2.1.0 (The Space Update).
 
 As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
 
@@ -26,7 +26,7 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - **Added and Integrate IO's ME Output Hatches.**
 - Removed some obsolete items.
 - Made magma blocks recyclable.
-- Partially added batching Distillation Tower, Quarry, and Oil Drilling Rig.
+- Partially added batching Distillation Tower, Quarry, and Oil Drilling Rig (Currently Unobtainable).
 
 ### Companion Mod Changelog
 
