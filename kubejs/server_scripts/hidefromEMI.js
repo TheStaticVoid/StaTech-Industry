@@ -246,6 +246,9 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         kj('anomalous_space_circuit'),
         mi('supercomputer'),
         mi('telescope'),
+        mt('large_borehole_quarry'),
+        mt('bedrock_fracking_array'),
+        mt('distillation_megatower'),
         /^modern_industrialization:.*(cobalt).*/,
     ];
     UNUSED_DEV.forEach((id) => event.remove(id));

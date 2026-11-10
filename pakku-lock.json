@@ -4392,7 +4392,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "fancymenu_neoforge_3.9.14_MC_1.21.1.jar",
+                    "file_name": "fancymenu_neoforge_3.10.0_MC_1.21.1.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -4400,19 +4400,19 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9002/957/fancymenu_neoforge_3.9.14_MC_1.21.1.jar",
-                    "id": "9002957",
+                    "url": "https://edge.forgecdn.net/files/9537/151/fancymenu_neoforge_3.10.0_MC_1.21.1.jar",
+                    "id": "9537151",
                     "parent_id": "367706",
                     "hashes": {
-                        "sha1": "cafbef98afb4f60adea426b950c5452655040c40",
-                        "md5": "d3619a53a017661c51375f20abc13c20"
+                        "sha1": "28e99ab7458e3782d29e6e85120a3d9de3c2f93c",
+                        "md5": "f2222d31d4a58ee622576298f8090b8d"
                     },
                     "required_dependencies": [
                         "938643",
                         "410295"
                     ],
-                    "size": 25922080,
-                    "date_published": "2026-09-28T19:48:11.870Z"
+                    "size": 36346978,
+                    "date_published": "2026-11-10T05:22:41.427Z"
                 }
             ]
         },
@@ -7883,6 +7883,49 @@
             ]
         },
         {
+            "pakku_id": "FICxVlLZEW8gRIlB",
+            "pakku_links": [
+                "fiWqQp9sNNAeedA3",
+                "jBhCklT57r5FStN1"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "phantoms-ae2-tweaks"
+            },
+            "name": {
+                "curseforge": "Phantom's AE2 Tweaks"
+            },
+            "id": {
+                "curseforge": "1793293"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "phantoms_ae2_tweaks-1.0.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9520/844/phantoms_ae2_tweaks-1.0.0.jar",
+                    "id": "9520844",
+                    "parent_id": "1793293",
+                    "hashes": {
+                        "sha1": "4cf226d0f6911dfce54ea0e0d7dfc45f8acd4b40",
+                        "md5": "f97d8992e10f426096c75892ca37ba64"
+                    },
+                    "required_dependencies": [
+                        "223794",
+                        "580555"
+                    ],
+                    "size": 80721,
+                    "date_published": "2026-11-09T03:03:23.147Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "fTXqzAU0lrJ8HnHA",
             "type": "MOD",
             "slug": {
@@ -9416,7 +9459,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "stcm-1.0.5.jar",
+                    "file_name": "stcm-1.0.6.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -9424,23 +9467,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9140/887/stcm-1.0.5.jar",
-                    "id": "9140887",
+                    "url": "https://edge.forgecdn.net/files/9542/375/stcm-1.0.6.jar",
+                    "id": "9542375",
                     "parent_id": "1610931",
                     "hashes": {
-                        "sha1": "ca8bdf8274e4e57d893e30070d25888967d5bd23",
-                        "md5": "ba486f12bc461cb30418da81cade218a"
+                        "sha1": "c28947b13490fb857ac8ae333d296273c8c6da4f",
+                        "md5": "fc207e8d6cad54a1f6f5894e4d3dcc82"
                     },
                     "required_dependencies": [
                         "361276",
-                        "556967",
                         "405388",
+                        "556967",
                         "238086",
                         "1173950",
                         "580555"
                     ],
-                    "size": 446822,
-                    "date_published": "2026-10-12T00:36:56.003Z"
+                    "size": 450562,
+                    "date_published": "2026-11-10T14:36:30.697Z"
                 }
             ]
         },
