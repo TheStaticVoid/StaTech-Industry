@@ -152,7 +152,6 @@
 - [Just Hammers](https://www.curseforge.com/projects/681606) by ErrorMikey
 - [Konkrete](https://www.curseforge.com/projects/410295) by Keksuccino
 - [KubeJS](https://www.curseforge.com/projects/238086) by latvian\.dev
-- [KubeJSCurios](https://www.curseforge.com/projects/1255211) by zhaiji
 - [LambDynamicLights](https://www.curseforge.com/projects/393442) by LambdAurora
 - [Large Ore Deposits](https://www.curseforge.com/projects/318833) by EnderLanky
 - [Legendary Tooltips](https://www.curseforge.com/projects/532127) by Grend
@@ -198,11 +197,11 @@
 - [PacketFixer](https://www.curseforge.com/projects/689467) by TonimatasDEV
 - [Paperdoll](https://www.curseforge.com/projects/537079) by tr7zw
 - [Phantom's Utilities](https://www.curseforge.com/projects/1181116) by White Phantom
+- [Phantom's AE2 Tweaks](https://www.curseforge.com/projects/1793293) by WhitePhant0m
 - [Pipe Connector](https://www.curseforge.com/projects/846168) by Heaser, PotatoPoweredWizard
 - [Player Animator](https://www.curseforge.com/projects/658587) by KosmX
 - [PrickleMC](https://www.curseforge.com/projects/1023259) by Darkhax
 - [Prism](https://www.curseforge.com/projects/638111) by Grend
-- [ProbeJS](https://www.curseforge.com/projects/585406) by Prunoideae
 - [Puzzles Lib](https://www.curseforge.com/projects/495476) by Fuzs
 - [Raised](https://www.curseforge.com/projects/570368) by yurisuika
 - [Reese's Sodium Options](https://www.curseforge.com/projects/511319) by FlashyReese
@@ -213,6 +212,7 @@
 - [Right Click Harvest](https://www.curseforge.com/projects/452834) by Jamalam
 - [Rustic Delight](https://www.curseforge.com/projects/1106612) by PhantomWing
 - [Scannable](https://www.curseforge.com/projects/266784) by Sangar
+- Screw Lib by identidade470
 - [Searchables](https://www.curseforge.com/projects/858542) by Jaredlll08
 - [Showcase Item](https://www.curseforge.com/projects/627196) by Ultramega
 - [Simple Magnets](https://www.curseforge.com/projects/394140) by SuperMartijn642

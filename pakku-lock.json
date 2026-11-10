@@ -4470,6 +4470,7 @@
             "id": {
                 "curseforge": "367706"
             },
+            "update_strategy": "NONE",
             "files": [
                 {
                     "type": "curseforge",
@@ -6152,51 +6153,6 @@
                     ],
                     "size": 2292654,
                     "date_published": "2026-08-23T14:22:12.603Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "9XE1x8egiYoERi7j",
-            "pakku_links": [
-                "2eKmyOuDqXY8WVsT",
-                "QMB9Fb9lSV5wnQ4B",
-                "FhoOmz6ZwsaYJZPX",
-                "8RzP1WFIWQotcT8R"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "kubejs-curios"
-            },
-            "name": {
-                "curseforge": "KubeJS Curios"
-            },
-            "id": {
-                "curseforge": "1255211"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "kubejs_curios_neoforge_1.21.1-1.0.4.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/6825/89/kubejs_curios_neoforge_1.21.1-1.0.4.jar",
-                    "id": "6825089",
-                    "parent_id": "1255211",
-                    "hashes": {
-                        "sha1": "d76c4181e1436bc85f108c7191f1ed7ee374d318",
-                        "md5": "ddd0398a03484e3b44cce920f6985db3"
-                    },
-                    "required_dependencies": [
-                        "309927",
-                        "238086"
-                    ],
-                    "size": 41200,
-                    "date_published": "2025-07-29T13:28:49.913Z"
                 }
             ]
         },
@@ -8009,6 +7965,49 @@
             ]
         },
         {
+            "pakku_id": "FICxVlLZEW8gRIlB",
+            "pakku_links": [
+                "fiWqQp9sNNAeedA3",
+                "jBhCklT57r5FStN1"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "phantoms-ae2-tweaks"
+            },
+            "name": {
+                "curseforge": "Phantom's AE2 Tweaks"
+            },
+            "id": {
+                "curseforge": "1793293"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "phantoms_ae2_tweaks-1.0.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9520/844/phantoms_ae2_tweaks-1.0.0.jar",
+                    "id": "9520844",
+                    "parent_id": "1793293",
+                    "hashes": {
+                        "sha1": "4cf226d0f6911dfce54ea0e0d7dfc45f8acd4b40",
+                        "md5": "f97d8992e10f426096c75892ca37ba64"
+                    },
+                    "required_dependencies": [
+                        "223794",
+                        "580555"
+                    ],
+                    "size": 80721,
+                    "date_published": "2026-11-09T03:03:23.147Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "fTXqzAU0lrJ8HnHA",
             "type": "MOD",
             "slug": {
@@ -8619,6 +8618,42 @@
                     ],
                     "size": 391376,
                     "date_published": "2026-10-12T08:22:08.193Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Gn1uaO8ln3iRukdF",
+            "type": "MOD",
+            "slug": {
+                "curseforge": "screw-lib"
+            },
+            "name": {
+                "curseforge": "Screw Lib"
+            },
+            "id": {
+                "curseforge": "1784005"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "screwlib-1.0.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/9438/936/screwlib-1.0.0.jar",
+                    "id": "9438936",
+                    "parent_id": "1784005",
+                    "hashes": {
+                        "sha1": "cccd3d306d482e718a1b4efdf595e3e65bdd2cce",
+                        "md5": "6f0accc4101877823e5be2923add555f"
+                    },
+                    "required_dependencies": [],
+                    "size": 9075,
+                    "date_published": "2026-11-04T20:55:35.697Z"
                 }
             ]
         },
@@ -9543,7 +9578,7 @@
             "files": [
                 {
                     "type": "curseforge",
-                    "file_name": "stcm-1.0.5.jar",
+                    "file_name": "stcm-1.0.6.jar",
                     "mc_versions": [
                         "1.21.1"
                     ],
@@ -9551,23 +9586,23 @@
                         "neoforge"
                     ],
                     "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/9140/887/stcm-1.0.5.jar",
-                    "id": "9140887",
+                    "url": "https://edge.forgecdn.net/files/9542/375/stcm-1.0.6.jar",
+                    "id": "9542375",
                     "parent_id": "1610931",
                     "hashes": {
-                        "sha1": "ca8bdf8274e4e57d893e30070d25888967d5bd23",
-                        "md5": "ba486f12bc461cb30418da81cade218a"
+                        "sha1": "c28947b13490fb857ac8ae333d296273c8c6da4f",
+                        "md5": "fc207e8d6cad54a1f6f5894e4d3dcc82"
                     },
                     "required_dependencies": [
                         "361276",
-                        "556967",
                         "405388",
+                        "556967",
                         "238086",
                         "1173950",
                         "580555"
                     ],
-                    "size": 446822,
-                    "date_published": "2026-10-12T00:36:56.003Z"
+                    "size": 450562,
+                    "date_published": "2026-11-10T14:36:30.697Z"
                 }
             ]
         },

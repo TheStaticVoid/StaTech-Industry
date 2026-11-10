@@ -2,7 +2,7 @@
 
 ## [2.0.5]
 
-TODO: YAP
+Update bringing ME Hatches and a variety of tweaks and fixes. This is looking to be the last minor version before 2.1.0 (The Space Update).
 
 As always, please make sure to file all issues on GitHub. Feedback in regards to progression, recipes, QoL, or anything else is also most welcome, though the Discord server is the best place for that.
 
@@ -10,6 +10,7 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 
 - **Tweaked Pentaborane Line yields.**
 - **Tweaked Beryllium Line yields.**
+- **Existing Angel Rings and Fireproof Rings will despawn.**
 
 ### General Changelog
 
@@ -23,11 +24,13 @@ As always, please make sure to file all issues on GitHub. Feedback in regards to
 - Added Mermaid's Gems Photosynthetic Chamber Recipe.
 - Added Heart of the Sea Chemical Reactor Recipe.
 - **Added and Integrate IO's ME Output Hatches.**
+- Removed some obsolete items.
+- Made magma blocks recyclable.
+- Partially added batching Distillation Tower, Quarry, and Oil Drilling Rig (Currently Unobtainable).
 
 ### Companion Mod Changelog
 
 - **Migrated Angel Ring and Fireproof Ring to Companion Mod.**
-- **Migrated Structure Modification to Companion Mod.**
 
 ## [2.0.4]
 
