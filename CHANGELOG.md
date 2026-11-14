@@ -1,10 +1,13 @@
 # Changelog
 
 ## [2.0.6]
+
 This is primarily a hotfix patch to address a crash related to the Create mod as well as fix issues introduced to the axes / tree feller interactions from last update.
 
 ### General Changelog
+
 - Updated the companion mod to address a crash related to Create
+- **Readd KubeJS Fireproof and Angel Rings with a 1:1 recipe for the updated item**
 
 ## [2.0.5]
 
