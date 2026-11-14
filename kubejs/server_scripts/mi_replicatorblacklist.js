@@ -6,6 +6,7 @@
 // This list is a modified version from the AOF6 modpack
 ServerEvents.tags('item', (event) => {
     const ITEMS = [
+        kj('angel_ring'),
         cm('angel_ring'),
         cm('fireproof_ring'),
         ae('quantum_entangled_singularity'),
