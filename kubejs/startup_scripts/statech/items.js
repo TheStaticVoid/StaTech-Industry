@@ -784,6 +784,14 @@ StartupEvents.registry('item', (event) => {
 
     event.create('battery_casing');
 
+    event
+        .create('angel_ring')
+        .tooltip('§aPlace in a crafting window to get the proper item');
+
+    event
+        .create('fireproof_ring')
+        .tooltip('§aPlace in a crafting window to get the proper item');
+
     // -- BRONZE EQUIPMENT -- //
 
     event

@@ -7,6 +7,14 @@ ServerEvents.recipes((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
     let st = (id) => `statech:${id}`;
 
+    // -- CONVERSION RECIPES FOR EXISTING WORLDS -- //
+    event
+        .shapeless(cm('angel_ring'), [kj('angel_ring')])
+        .id(st('angel_ring_conversion'));
+    event
+        .shapeless(cm('fireproof_ring'), [kj('fireproof_ring')])
+        .id(st('fireproof_ring_conversion'));
+
     // -- ANGEL RING -- //
     event
         .shaped(cm('angel_ring'), ['FGF', 'TRT', 'CTC'], {
