@@ -6,8 +6,12 @@ This is primarily a hotfix patch to address a crash related to the Create mod as
 
 ### General Changelog
 
-- Updated the companion mod to address a crash related to Create
-- **Readd KubeJS Fireproof and Angel Rings with a 1:1 recipe for the updated item**
+- Fixed Lumberaxe tagging.
+- **Readded KubeJS Fireproof and Angel Rings with a 1:1 recipe for the updated item**
+
+### Companion Mod Changelog
+
+- **Updated the companion mod to address a contraption crash related to Create**
 
 ## [2.0.5]
 

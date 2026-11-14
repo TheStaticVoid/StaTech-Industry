@@ -786,10 +786,12 @@ StartupEvents.registry('item', (event) => {
 
     event
         .create('angel_ring')
+        .tag('curios:ring')
         .tooltip('§aPlace in a crafting window to get the proper item');
 
     event
         .create('fireproof_ring')
+        .tag('curios:ring')
         .tooltip('§aPlace in a crafting window to get the proper item');
 
     // -- BRONZE EQUIPMENT -- //

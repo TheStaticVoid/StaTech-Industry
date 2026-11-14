@@ -591,6 +591,16 @@ ServerEvents.tags('item', (event) => {
         event.add(mc('enchantable/vanishing'), id);
     });
 
+    const AXES = event.get(mc('axes')).getObjectIds();
+
+    const LUMBERAXE_FILTER = Ingredient.of('#kubejs:lumberaxes');
+
+    AXES.forEach((axe) => {
+        if (!LUMBERAXE_FILTER.test(axe)) {
+            event.add(kj('lumberaxe_blacklist'), axe);
+        }
+    });
+
     const COINS = [
         kj('coin_common'),
         kj('coin_rare'),
