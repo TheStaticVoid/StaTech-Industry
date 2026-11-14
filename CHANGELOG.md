@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.6]
+This is primarily a hotfix patch to address a crash related to the Create mod as well as fix issues introduced to the axes / tree feller interactions from last update.
+
+### General Changelog
+- Updated the companion mod to address a crash related to Create
+
 ## [2.0.5]
 
 Update bringing ME Hatches and a variety of tweaks and fixes. This is looking to be the last minor version before 2.1.0 (The Space Update).
