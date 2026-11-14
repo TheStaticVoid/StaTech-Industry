@@ -56,6 +56,19 @@ ItemEvents.modification((event) => {
         item.craftingRemainder = Item.of(mc('bucket')).item;
     });
 
+    // -- ANTIMONY PILL -- //
+    event.modify('modern_industrialization:antimony_nugget', (item) => {
+        item.tooltip("§bMonk's Bane!");
+        item.modifyFood((food) => {
+            food.nutrition(1);
+            food.saturation(1);
+            food.alwaysEdible();
+            food.fastToEat();
+            food.effect(mc('poison'), 400, 0, 1);
+            food.effect(mc('wither'), 200, 1, 1);
+        });
+    });
+
     // -- HAMMER SPEED AND DURABILITY CHANGES -- //
 
     // -- IRON HAMMERS -- //

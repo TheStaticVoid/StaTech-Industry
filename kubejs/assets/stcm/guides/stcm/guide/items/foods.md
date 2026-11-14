@@ -28,6 +28,7 @@ item_ids:
     - kubejs:gravy_bucket
     - kubejs:poutine_basket
     - modern_industrialization:mixed_ingot_iridium
+    - modern_industrialization:antimony_nugget
     - yet_another_industrialization:cachaca
     - yet_another_industrialization:ai_slop
     - yet_another_industrialization:ultradense_metal_ball_burger
@@ -65,6 +66,7 @@ item_ids:
   <ItemImage id="kubejs:fries" />
   <ItemImage id="kubejs:gravy_bucket" />
   <ItemImage id="kubejs:poutine_basket" />
+  <ItemImage id="modern_industrialization:antimony_nugget" />
 </Row>
 
 These foods are great for your health! (do not try these in real life)

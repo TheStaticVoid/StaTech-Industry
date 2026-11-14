@@ -24,3 +24,8 @@ ItemEvents.foodEaten((event) => {
         }
     });
 });
+
+ServerEvents.tags('item', (event) => {
+    event.add(mi('antimony_nugget'), 'c:foods');
+    event.add(mi('antimony_nugget'), cr('upright_on_belt'));
+});
