@@ -82,6 +82,12 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         ss('infinity_upgrade'),
         ss('survival_infinity_upgrade'),
         ss('debug_tool'),
+        ss('tank'),
+        ss('copper_tank'),
+        ss('iron_tank'),
+        ss('gold_tank'),
+        ss('diamond_tank'),
+        ss('netherite_tank'),
     ];
     LIMITED_BARRELS.forEach((id) => event.remove(id));
 

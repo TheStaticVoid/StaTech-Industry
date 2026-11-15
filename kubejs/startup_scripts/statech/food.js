@@ -242,4 +242,29 @@ StartupEvents.registry('item', (event) => {
             f.nutrition(1).saturation(0.25).effect('slowness', 300, 1, 1);
         })
         .useAnimation('drink');
+
+    event
+        .create('beryllium_dusted_donuts')
+        .rarity('Rare')
+        .tag('c:foods')
+        .tag(fd('snacks'))
+        .tag(cr('upright_on_belt'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
+        .tooltip('§aNeutron Reflective!')
+        .maxStackSize(16)
+        .food((f) => {
+            f.nutrition(12)
+                .saturation(0.5)
+                .effect(fd('nourishment'), 3600, 0, 1)
+                .effect('poison', 200, 0, 1);
+        });
+
+    event
+        .create('stainless_steel_bread')
+        .tag('c:foods')
+        .tag(fd('snacks'))
+        .tag(cr('upright_on_belt'))
+        .food((f) => {
+            f.nutrition(6).saturation(0.25);
+        });
 });

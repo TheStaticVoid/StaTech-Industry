@@ -25,7 +25,7 @@
 				item: { count: 1, id: "kubejs:concrete_bar" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: -5.5d
 		}
 		{
@@ -58,7 +58,7 @@
 				item: { count: 1, id: "kubejs:sulfuric_acid_bottle" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.0d
 			y: -5.5d
 		}
 		{
@@ -74,7 +74,7 @@
 				item: { count: 1, id: "kubejs:concrete_and_clay_steak" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: -5.5d
 		}
 		{
@@ -90,7 +90,7 @@
 				item: { count: 1, id: "kubejs:uranium_cereal" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: -5.5d
 		}
 		{
@@ -3104,7 +3104,7 @@
 				item: { count: 1, id: "kubejs:missing_texture_cookie" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: -5.5d
 		}
 		{
@@ -6658,7 +6658,7 @@
 				item: { count: 1, id: "kubejs:poutine_basket" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: -5.5d
 		}
 		{
@@ -6673,8 +6673,8 @@
 				item: { count: 1, id: "kubejs:gravy_bucket" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -5.5d
+			x: 8.5d
+			y: -6.5d
 		}
 		{
 			id: "3BABC01679BD31A1"
@@ -6765,8 +6765,38 @@
 				item: { count: 1, id: "modern_industrialization:antimony_nugget" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -6.5d
+			x: 7.0d
+			y: -5.5d
+		}
+		{
+			id: "02817AACB315C420"
+			rewards: [{
+				id: "7C7815F00672ECD6"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7D156B7AD90985BA"
+				item: { count: 1, id: "kubejs:stainless_steel_bread" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			id: "3859BDFC07905DD6"
+			rewards: [{
+				id: "5DD7F55284E5125C"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "7AC9BA215EE78D77"
+				item: { count: 1, id: "kubejs:beryllium_dusted_donuts" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
 		}
 	]
 }

@@ -41,6 +41,9 @@ ServerEvents.recipes((event) => {
         rd('paper_from_cotton_boll'),
         rd('cooking/syrup'),
         rd('sugar_from_syrup'),
+        dc('cooking_fallback/brewinandchewin/cooking/cheesy_pasta'),
+        dc('cooking_fallback/rusticdelight/cooking/bell_pepper_pasta'),
+        dc('cooking_fallback/nomansland/cooking/pasta_with_pesto'),
     ];
     FARMERSDELIGHT_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
@@ -94,6 +97,33 @@ ServerEvents.recipes((event) => {
             },
         ],
         { count: 1, id: kj('fries') }
+    );
+
+    // -- BERYLLIUM-DUSTED DONUTS -- //
+    cooking(
+        event,
+        st('beryllium_dusted_donuts'),
+        1.0,
+        null,
+        { count: 2, id: mc('paper') },
+        [
+            {
+                item: rd('cooking_oil'),
+            },
+            {
+                tag: 'c:foods/dough',
+            },
+            {
+                item: mc('sugar'),
+            },
+            {
+                item: mi('beryllium_tiny_dust'),
+            },
+            {
+                item: mi('beryllium_tiny_dust'),
+            },
+        ],
+        { count: 2, id: kj('beryllium_dusted_donuts') }
     );
 
     // -- GRAVY BUCKET -- //
@@ -372,6 +402,17 @@ ServerEvents.recipes((event) => {
             },
         ]
     );
+
+    // -- BELL PEPPER PASTA -- //
+    /*     sequencedAssembly(
+        event,
+        st('sequenced_assembly/bell_pepper_pasta'),
+        {
+            item: dc('incomplete_pasta_dish'),
+        },
+        1,
+        [{type: cr('deploying'), ingredients: [{item: }]}]
+    ); */
 
     // ------------------ //
     // ---- MI MIXER ---- //

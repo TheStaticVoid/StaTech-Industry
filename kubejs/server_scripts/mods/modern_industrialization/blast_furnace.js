@@ -77,6 +77,19 @@ ServerEvents.recipes((event) => {
         [{ amount: 1, item: kj('pizza') }]
     );
 
+    // -- STAINLESS STEEL BREAD -- //
+    blastFurnace(
+        event,
+        st('stainless_steel_bread'),
+        32,
+        600,
+        [
+            { amount: 1, tag: 'c:foods/dough' },
+            { amount: 1, item: mi('stainless_steel_dust') },
+        ],
+        [{ amount: 1, item: kj('stainless_steel_bread') }]
+    );
+
     // -- UNCOOKED STEEL DUST -> STEEL INGOT -- //
     blastFurnace(
         event,

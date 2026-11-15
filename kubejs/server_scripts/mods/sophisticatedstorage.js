@@ -33,6 +33,13 @@ ServerEvents.recipes((event) => {
         ss('advanced_pump_upgrade'),
         ss('feeding_upgrade'),
         ss('backpack_feeding_upgrade_from_storage_feeding_upgrade'),
+        ss('tank'),
+        ss('copper_tank'),
+        ss('iron_tank'),
+        ss('gold_tank'),
+        ss('diamond_tank'),
+        ss('netherite_tank'),
+        ss('iron_tank_from_copper_tank'),
     ];
     SOPH_DELETED.forEach((id) => event.remove({ id: id }));
 

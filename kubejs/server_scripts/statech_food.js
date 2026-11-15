@@ -15,6 +15,7 @@ ItemEvents.foodEaten((event) => {
         [kj('fruity_pebbles'),          mc('bowl')],
         [kj('nuka_cola'),               kj('bottle_cap')],
         [kj('poutine_basket'),          mc('paper')],
+        [kj('beryllium_dusted_donuts'), mc('paper')],
         [kj('gravy_bucket'),            mc('bucket')],
     ];
 
