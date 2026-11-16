@@ -29,6 +29,8 @@ ServerEvents.tags('item', (event) => {
     event.add('c:clusters', nm('quartzite_cluster'));
 
     event.add('c:mushrooms', nm('shelf_mushroom'));
+
+    event.add(nm('edible_mushrooms'), '#c:mushrooms');
 });
 
 ServerEvents.recipes((event) => {
@@ -46,13 +48,6 @@ ServerEvents.recipes((event) => {
         nm('food/salmon_and_pesto_gnocchi'),
     ];
     NOMANSLAND_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
-
-    // -- MUSHROOM TAG UNIFICATION -- //
-    event.replaceInput(
-        { input: '#nomansland:edible_mushrooms' },
-        '#nomansland:edible_mushrooms',
-        Ingredient.of('#c:mushrooms')
-    );
 
     // ----------------------- //
     // --- SHAPED CRAFTING --- //

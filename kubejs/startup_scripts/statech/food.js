@@ -25,6 +25,7 @@ StartupEvents.registry('item', (event) => {
         .tag(cr('upright_on_belt'))
         .tag(ei('generated_recipes_blacklist/canning_food'))
         .tooltip('§eUnleash the Greg')
+        .maxStackSize(16)
         .food((f) => {
             f.nutrition(6)
                 .saturation(0.4)
@@ -38,6 +39,7 @@ StartupEvents.registry('item', (event) => {
         .tag('c:drinks')
         .tag(cr('upright_on_belt'))
         .tag(ei('generated_recipes_blacklist/canning_food'))
+        .maxStackSize(16)
         .food((f) => {
             f.nutrition(3).saturation(0.2).effect('poison', 200, 0, 1);
         })
@@ -65,7 +67,7 @@ StartupEvents.registry('item', (event) => {
         .tag(cr('upright_on_belt'))
         .tag(ei('generated_recipes_blacklist/canning_food'))
         .tooltip('§bTons of calories!')
-        .maxStackSize(1)
+        .maxStackSize(16)
         .food((f) => {
             f.nutrition(20)
                 .saturation(0.5)
@@ -112,6 +114,7 @@ StartupEvents.registry('item', (event) => {
         .tag('c:drinks')
         .tag(cr('upright_on_belt'))
         .tag(ei('generated_recipes_blacklist/canning_food'))
+        .maxStackSize(16)
         .food((f) => {
             f.nutrition(10).saturation(0.5);
         })
@@ -123,6 +126,7 @@ StartupEvents.registry('item', (event) => {
         .tag('c:drinks')
         .tag(cr('upright_on_belt'))
         .tag(ei('generated_recipes_blacklist/canning_food'))
+        .maxStackSize(16)
         .food((f) => {
             f.nutrition(6).saturation(0.4);
         })
@@ -134,6 +138,7 @@ StartupEvents.registry('item', (event) => {
         .tag('c:drinks')
         .tag(cr('upright_on_belt'))
         .tag(ei('generated_recipes_blacklist/canning_food'))
+        .maxStackSize(16)
         .food((f) => {
             f.nutrition(6).saturation(0.5);
         })
@@ -168,6 +173,7 @@ StartupEvents.registry('item', (event) => {
         .tag('c:drinks')
         .tag(cr('upright_on_belt'))
         .tag(ei('generated_recipes_blacklist/canning_food'))
+        .maxStackSize(16)
         .food((f) => {
             f.nutrition(16).saturation(0.5);
         })
@@ -201,7 +207,7 @@ StartupEvents.registry('item', (event) => {
         .tag(cr('upright_on_belt'))
         .tag(ei('generated_recipes_blacklist/canning_food'))
         .tooltip('§bTasty!')
-        .maxStackSize(1)
+        .maxStackSize(16)
         .food((f) => {
             f.nutrition(12)
                 .saturation(0.5)
@@ -266,5 +272,38 @@ StartupEvents.registry('item', (event) => {
         .tag(cr('upright_on_belt'))
         .food((f) => {
             f.nutrition(6).saturation(0.25);
+        });
+
+    event
+        .create('incomplete_cheesy_pasta')
+        .tag('c:foods')
+        .tag(fd('meals'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
+        .tag(cr('upright_on_belt'))
+        .maxStackSize(16)
+        .food((f) => {
+            f.nutrition(3).saturation(0.3);
+        });
+
+    event
+        .create('incomplete_bell_pepper_pasta')
+        .tag('c:foods')
+        .tag(fd('meals'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
+        .tag(cr('upright_on_belt'))
+        .maxStackSize(16)
+        .food((f) => {
+            f.nutrition(3).saturation(0.3);
+        });
+
+    event
+        .create('incomplete_pasta_with_pesto')
+        .tag('c:foods')
+        .tag(fd('meals'))
+        .tag(ei('generated_recipes_blacklist/canning_food'))
+        .tag(cr('upright_on_belt'))
+        .maxStackSize(16)
+        .food((f) => {
+            f.nutrition(3).saturation(0.3);
         });
 });

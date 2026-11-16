@@ -43,7 +43,7 @@ ServerEvents.recipes((event) => {
         rd('sugar_from_syrup'),
         dc('cooking_fallback/brewinandchewin/cooking/cheesy_pasta'),
         dc('cooking_fallback/rusticdelight/cooking/bell_pepper_pasta'),
-        dc('cooking_fallback/nomansland/cooking/pasta_with_pesto'),
+        dc('cooking_fallback/nomansland/food/pasta_with_pesto'),
     ];
     FARMERSDELIGHT_REMOVED_RECIPES.forEach((id) => event.remove({ id: id }));
 
@@ -404,15 +404,110 @@ ServerEvents.recipes((event) => {
     );
 
     // -- BELL PEPPER PASTA -- //
-    /*     sequencedAssembly(
+    sequencedAssembly(
         event,
         st('sequenced_assembly/bell_pepper_pasta'),
         {
             item: dc('incomplete_pasta_dish'),
         },
         1,
-        [{type: cr('deploying'), ingredients: [{item: }]}]
-    ); */
+        [
+            {
+                type: cr('deploying'),
+                ingredients: [
+                    { item: kj('incomplete_bell_pepper_pasta') },
+                    { tag: 'c:foods/bell_pepper' },
+                ],
+                results: [{ id: kj('incomplete_bell_pepper_pasta') }],
+            },
+            {
+                type: cr('deploying'),
+                ingredients: [
+                    { item: kj('incomplete_bell_pepper_pasta') },
+                    { tag: 'c:foods/bell_pepper' },
+                ],
+                results: [{ id: kj('incomplete_bell_pepper_pasta') }],
+            },
+            {
+                type: cr('deploying'),
+                ingredients: [
+                    { item: kj('incomplete_bell_pepper_pasta') },
+                    { tag: 'c:foods/bell_pepper' },
+                ],
+                results: [{ id: kj('incomplete_bell_pepper_pasta') }],
+            },
+        ],
+        [{ id: rd('bell_pepper_pasta') }],
+        { id: kj('incomplete_bell_pepper_pasta') }
+    );
+
+    // -- CHEESY PASTA -- //
+    sequencedAssembly(
+        event,
+        st('sequenced_assembly/cheesy_pasta'),
+        {
+            item: dc('incomplete_pasta_dish'),
+        },
+        1,
+        [
+            {
+                type: cr('deploying'),
+                ingredients: [
+                    { item: kj('incomplete_cheesy_pasta') },
+                    { item: bc('flaxen_cheese_wedge') },
+                ],
+                results: [{ id: kj('incomplete_cheesy_pasta') }],
+            },
+            {
+                type: cr('deploying'),
+                ingredients: [
+                    { item: kj('incomplete_cheesy_pasta') },
+                    { item: fd('tomato') },
+                ],
+                results: [{ id: kj('incomplete_cheesy_pasta') }],
+            },
+            {
+                type: cr('deploying'),
+                ingredients: [
+                    { item: kj('incomplete_cheesy_pasta') },
+                    { tag: 'c:foods/safe_raw_fish' },
+                ],
+                results: [{ id: kj('incomplete_cheesy_pasta') }],
+            },
+        ],
+        [{ id: bc('cheesy_pasta') }],
+        { id: kj('incomplete_cheesy_pasta') }
+    );
+
+    // -- PASTA WITH PESTO -- //
+    sequencedAssembly(
+        event,
+        st('sequenced_assembly/pasta_with_pesto'),
+        {
+            item: dc('incomplete_pasta_dish'),
+        },
+        1,
+        [
+            {
+                type: cr('deploying'),
+                ingredients: [
+                    { item: kj('incomplete_pasta_with_pesto') },
+                    { item: nm('pesto_bottle') },
+                ],
+                results: [{ id: kj('incomplete_pasta_with_pesto') }],
+            },
+            {
+                type: cr('deploying'),
+                ingredients: [
+                    { item: kj('incomplete_pasta_with_pesto') },
+                    { tag: nm('edible_mushrooms') },
+                ],
+                results: [{ id: kj('incomplete_pasta_with_pesto') }],
+            },
+        ],
+        [{ id: nm('pasta_with_pesto') }],
+        { id: kj('incomplete_pasta_with_pesto') }
+    );
 
     // ------------------ //
     // ---- MI MIXER ---- //
