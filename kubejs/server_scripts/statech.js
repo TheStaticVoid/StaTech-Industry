@@ -571,6 +571,12 @@ ServerEvents.tags('item', (event) => {
         event.add(mc('enchantable/vanishing'), id);
     });
 
+    const AXES = event.get(mc('axes')).getObjectIds();
+
+    AXES.forEach((axe) => {
+            event.add(kj('lumberaxe_blacklist'), axe);
+    });
+
     const LUMBERAXES = [
         kj('iron_lumberaxe'),
         kj('copper_lumberaxe'),
@@ -584,21 +590,12 @@ ServerEvents.tags('item', (event) => {
         mi('diesel_chainsaw'),
     ];
     LUMBERAXES.forEach((id) => {
+        event.remove(kj('lumberaxe_blacklist'), id);
         event.add(kj('lumberaxes'), id);
         event.add(mc('enchantable/durability'), id);
         event.add(mc('enchantable/mining'), id);
         event.add(mc('enchantable/mining_loot'), id);
         event.add(mc('enchantable/vanishing'), id);
-    });
-
-    const AXES = event.get(mc('axes')).getObjectIds();
-
-    const LUMBERAXE_FILTER = Ingredient.of('#kubejs:lumberaxes');
-
-    AXES.forEach((axe) => {
-        if (!LUMBERAXE_FILTER.test(axe)) {
-            event.add(kj('lumberaxe_blacklist'), axe);
-        }
     });
 
     const COINS = [
