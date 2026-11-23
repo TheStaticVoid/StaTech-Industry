@@ -92,6 +92,7 @@ ServerEvents.recipes((event) => {
             [
                 { amount: 1, item: mc('ink_sac') },
                 { amount: 1, item: mc('ink_sac'), probability: 0.5 },
+                { amount: 3, item: rd('calamari'), probability: 0.5 },
                 { amount: 1, item: mc('glow_ink_sac'), probability: 0.01 },
                 { amount: 1, item: cr('experience_nugget'), probability: 0.3 },
             ],
@@ -308,5 +309,23 @@ ServerEvents.recipes((event) => {
         ],
         [{ amount: 100, fluid: mi('liquid_ender') }],
         [{ amount: 75, fluid: mi('liquid_ender') }]
+    );
+
+    // -- COW MODEL ALT -- //
+    crusher(
+        event,
+        st('cow_model_alt'),
+        8,
+        600,
+        [{ amount: 1, item: kj('cow_model'), probability: 0.05 }],
+        [
+            { amount: 1, item: mc('beef') },
+            { amount: 1, item: mc('beef'), probability: 0.5 },
+            { amount: 1, item: mc('leather'), probability: 0.65 },
+            { amount: 1, item: mc('bone'), probability: 0.5 },
+            { amount: 1, item: cr('experience_nugget'), probability: 0.5 },
+        ],
+        [{ amount: 100, fluid: mi('blood') }],
+        [{ amount: 2000, fluid: mc('milk') }]
     );
 });
