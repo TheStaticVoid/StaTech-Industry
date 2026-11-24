@@ -24,20 +24,20 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
         'fluid_input',
         'fluid_output'
     );
-    const korp4Block = event.memberOfBlock('xtonesreworked:korp_block_4');
-    const korp9Block = event.memberOfBlock('xtonesreworked:korp_block_9');
-    const tunsgtensteelCoil = event.memberOfBlock(
-        'modern_industrialization:tungstensteel_coil'
-    );
+    const heatproofMachineCasing = event.memberOfBlock('modern_industrialization:heatproof_machine_casing');
+    const borosilicateGlass = event.memberOfBlock('kubejs:borosilicate_glass');
+    const cupronickelCoil = event.memberOfBlock('modern_industrialization:cupronickel_coil');
+    const polishedSilverMachineCasing = event.memberOfBlock('extended_industrialization:polished_silver_machine_casing');
     const bulkCanningMachineShape = event
-        .layeredShape('modern_industrialization:korp4_machine_casing', [
-            ['KkkkK', ' t t ', ' t t ', ' t t ', ' KkK '],
-            ['kkkkk', 't t t', 't t t', 't t t', 'KkkkK'],
-            ['Kk#kK', ' t t ', ' t t ', ' t t ', ' KkK '],
+        .layeredShape('modern_industrialization:heatproof_machine_casing', [
+            ['AAA','ABA','ABA',' A '],
+            ['AAA','CDC','CDC','ADA'],
+            ['A#A','ABA','ABA',' A ']
         ])
-        .key('k', korp4Block, cannerHatch)
-        .key('K', korp9Block, event.noHatch())
-        .key('t', tunsgtensteelCoil, event.noHatch())
+        .key('A', heatproofMachineCasing, cannerHatch)
+        .key('B', borosilicateGlass, event.noHatch())
+        .key('C', cupronickelCoil, event.noHatch())
+        .key('D', polishedSilverMachineCasing, event.noHatch())
         .build();
 
     event.electric(

@@ -193,6 +193,17 @@ ServerEvents.recipes((event) => {
         })
         .id(st('extreme_vacuum_cryofreezer'));
 
+    // -- BULK CANNING MACHINE -- //
+    event
+        .shaped(mt('bulk_canning_machine'), ['PCP', 'THT', 'MCM'], {
+            M: mi('large_motor'),
+            T: ei('silver_tesla_top_load'),
+            H: mi('heatproof_machine_casing'),
+            P: mi('large_pump'),
+            C: ei('electric_canning_machine'),
+        })
+        .id(st('bulk_canning_machine'));
+
     // -----------------//
     // -- ASSEMBLER -- //
     // -----------------//
@@ -456,5 +467,21 @@ ServerEvents.recipes((event) => {
             { amount: 2, item: mi('quantum_circuit') },
         ],
         [{ amount: 1, item: mt('extreme_vacuum_cryofreezer') }]
+    );
+
+    // -- BULK CANNING MACHINE -- //
+    assembler(
+        event,
+        sta('bulk_canning_machine'),
+        8,
+        200,
+        [
+            { amount: 2, item: mi('large_pump') },
+            { amount: 2, item: mi('large_motor') },
+            { amount: 1, item: mi('heatproof_machine_casing') },
+            { amount: 2, item: ei('silver_tesla_top_load') },
+            { amount: 2, item: ei('electric_canning_machine') },
+        ],
+        [{ amount: 1, item: mt('bulk_canning_machine') }]
     );
 });

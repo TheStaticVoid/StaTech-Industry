@@ -5226,7 +5226,7 @@
 		{
 			dependencies: ["74A64C3ED35AE436"]
 			icon: {
-				id: "mi_tweaks:multi_cutter"
+				id: "mi_tweaks:bulk_canning_machine"
 			}
 			id: "50EFC5E1F6483ADA"
 			rewards: [
@@ -5255,6 +5255,35 @@
 			size: 1.5d
 			tasks: [
 				{
+					id: "101825B3E1ED2B4F"
+					item: { count: 1, id: "mi_tweaks:bulk_canning_machine" }
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "3819105C5B6EAE13"
+					item: { count: 1, id: "modern_industrialization:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2F9BB5EA0A69303F"
+					item: { count: 1, id: "kubejs:borosilicate_glass" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "013AD90932A90822"
+					item: { count: 1, id: "modern_industrialization:cupronickel_coil" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "2F81401EEF4DEF1E"
+					item: { count: 1, id: "extended_industrialization:polished_silver_machine_casing" }
+					type: "item"
+				}
+				{
 					disable_toast: true
 					id: "4C696CA30C75EBB3"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -5279,6 +5308,12 @@
 					disable_toast: true
 					id: "41D6EC778272DFD5"
 					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "54CE3E08C020ADCB"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					optional_task: true
 					type: "item"
 				}
