@@ -300,6 +300,19 @@ ServerEvents.recipes((event) => {
         );
     });
 
+    // -- FISH MODEL -- //
+    laserEngraver(
+        event,
+        st('fish_model'),
+        32,
+        200,
+        [
+            { amount: 1, item: ae('basic_card') },
+            { amount: 1, tag: 'c:foods/raw_fish' },
+        ],
+        [{ amount: 1, item: kj('fish_model') }]
+    );
+
     // -- BOSS CRUSHER MODELS -- //
     const bossModelItemList = [
         //  Model                           Item        Amount

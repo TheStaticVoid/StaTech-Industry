@@ -209,6 +209,20 @@ ServerEvents.recipes((event) => {
             mi('blood'),
         ],
 
+        // Fish model
+        [
+            kj('fish_model'),
+            [
+                { amount: 1, item: mc('cod'), probability: 0.25 },
+                { amount: 1, item: mc('salmon'), probability: 0.25 },
+                { amount: 1, item: mc('tropical_fish'), probability: 0.25 },
+                { amount: 1, item: nm('billhook_bass'), probability: 0.25 },
+                { amount: 1, item: mc('pufferfish'), probability: 0.1 },
+                { amount: 1, item: cr('experience_nugget'), probability: 0.2 },
+            ],
+            mi('blood'),
+        ],
+
         // Witch model
         [
             kj('witch_model'),

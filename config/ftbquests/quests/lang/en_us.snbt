@@ -70,7 +70,7 @@
 	quest.011FCD9F3A6FB5C6.quest_desc: [
 		"The &aStarter Diesel Generator&r is an alternative power generation method that will allow you to burn Creosote to generate up to &e64 EU/t&r."
 		""
-		"I would not recommend making this your main power source and instead relying on &bSteam Turbines&r until you unlock the regular &aDiesel Generator&r."
+		"I would not recommend making this your main power source and you should instead rely on &bSteam Turbines&r until you unlock the regular &aDiesel Generator&r. &e&oIt is more viable than it used to be, however&r."
 		""
 		"Unlike the &eSteam Boilers&r, &aDiesel Generators&r have a &62x efficiency bonus&r for &dfluid fuels&r!"
 	]
@@ -2009,7 +2009,7 @@
 	quest.2763B0A63FC17046.quest_desc: [
 		"The &bTesla Coil&r is the first iteration of &dwireless power&r transfer. It allows you to send energy to &aTesla Receivers&r and &aHandheld Tesla Receivers&r."
 		""
-		"Each &aTesla Coil&r can has some &cdrain&r associated to wireless energy transfer and can send &eas much energy&r as &athe cable limit of its hull's tier&r (256 EU/t for LV, 1024 EU/t for MV, and so on)."
+		"Each &aTesla Coil&r can have some &cdrain&r associated with wireless energy transfer and they can send &eas much energy&r as &athe cable limit of its hull's tier&r (256 EU/t for LV, 1024 EU/t for MV, and so on)."
 	]
 	quest.2763B0A63FC17046.quest_subtitle: "Wireless Power?"
 	quest.278BE1D13FE8E78E.quest_desc: ["The &aElectric Unpacker&r is the electrical version of the &6Steam Unpacker&r. It doesn't open up any new recipes, but it will process recipes &dmuch faster&r than its &7Steam&r counterpart."]
@@ -5963,7 +5963,7 @@
 		"However, these boilers (logically) only generate fuel when the &asun is high&r and only generate &chalf as much fuel&r as the regular Bronze Boiler. They also &ccalcify&r over a long time and need some &dmaintenance&r to reach peak performance again (read the tooltip!)."
 	]
 	quest.7471230558C78C5D.title: "The Power Of The Sun"
-	quest.74A64C3ED35AE436.quest_desc: ["&aElectronic Circuits&r and &aMV Machine Hulls&r unlocks two &bnew batching multiblocks&r."]
+	quest.74A64C3ED35AE436.quest_desc: ["&aElectronic Circuits&r and &aMV Machine Hulls&r unlocks four &bnew batching multiblocks&r."]
 	quest.74A64C3ED35AE436.title: "More Batching!"
 	quest.74B14DB45316C4F8.quest_desc: [
 		"Your &afirst goal&r for progression with your new &bForge Hammer&r is to crush down &cCopper&r and &7Tin&r into dusts."
@@ -6648,6 +6648,7 @@
 	task.17A001916D7A24ED.title: "28x Polished Pillars"
 	task.1822765C8613DC61.title: "Any Fluid Output Hatch"
 	task.183054AF0E270597.title: "Any Item Output Hatch"
+	task.186CE44BD4B9CAEE.title: "Any Fluid Input Hatch"
 	task.18838BB1D1134393.title: "Digital Storage Redux"
 	task.189BBEB3109D8EC5.title: "Any Basic Netherite Staff"
 	task.18C2FE983DC6D996.title: "8x Either Item Bowl"
@@ -6838,6 +6839,7 @@
 	task.41420F8E297CE369.title: "Any Fluid Output Hatch"
 	task.415377B0AC4EA77A.title: "NYI"
 	task.416A3F9D68C396BC.title: "Any Fluid Output Hatch"
+	task.41D6EC778272DFD5.title: "Any Item Output Hatch"
 	task.42348CA825714275.title: "UI Customization"
 	task.42669508B166C6E7.title: "Any Item Input Hatch"
 	task.42A323867D3F1620.title: "4x Chiseled Polished Blocks"
@@ -6892,6 +6894,7 @@
 	task.4BB2C2DE694002E5.title: "Any Item Output Hatch"
 	task.4BFE4D105EC3C936.title: "Any Energy Input Hatch"
 	task.4C66E7FD102446FE.title: "4x Chiseled Polished Blocks"
+	task.4C696CA30C75EBB3.title: "Any Energy Input Hatch"
 	task.4C9658A211889ABA.title: "I've done this!"
 	task.4CD15BC3F93A0205.title: "NYI"
 	task.4CDC1D47BA49BE77.title: "4x Polished Gemstones"
@@ -6951,6 +6954,7 @@
 	task.5907F6C245DE6BF1.title: "NYI"
 	task.592E1A7F0C40CF45.title: "Find Me"
 	task.593795450DF03DD4.title: "NYI"
+	task.59C52B627D38151D.title: "Any Item Input Hatch"
 	task.59EB7FD6C05547AA.title: "NYI"
 	task.5A5D79F7F5CD9BD9.title: "8x Gemstone Lamps"
 	task.5ACB2533FCDB3FAA.title: "Any Item Input Hatch"

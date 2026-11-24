@@ -4797,7 +4797,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 3.25d
 			y: 3.5d
 		}
 		{
@@ -5222,6 +5222,69 @@
 			}]
 			x: 4.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["74A64C3ED35AE436"]
+			icon: {
+				id: "mi_tweaks:multi_cutter"
+			}
+			id: "50EFC5E1F6483ADA"
+			rewards: [
+				{
+					count: 5
+					id: "78361100728466B7"
+					item: {
+						count: 1
+						id: "kubejs:coin_rare"
+					}
+					type: "item"
+				}
+				{
+					id: "1DB2AA424F707E32"
+					type: "xp"
+					xp: 40
+				}
+				{
+					exclude_from_claim_all: true
+					id: "226B1A35A65B2C31"
+					table_id: 379087119399425756L
+					type: "loot"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [
+				{
+					disable_toast: true
+					id: "4C696CA30C75EBB3"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:energy_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "59C52B627D38151D"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "186CE44BD4B9CAEE"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:fluid_input_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "41D6EC778272DFD5"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(kubejs:item_output_hatch)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.75d
+			y: 3.5d
 		}
 	]
 }

@@ -1,7 +1,7 @@
 
 # #----------------------------------------------------------------------
 # CSC config version. If this value is different from the current CSC version, the old config will be archived and a fresh config will be generated.
-ConfigVersion = "2.27.47"
+ConfigVersion = "3.30.63"
 
 # #----------------------------------------------------------------------
 #     Welcome to CSC! CSC (formerly Create:SchematicChecker | Create: Schematic Validator)
@@ -95,7 +95,6 @@ UUID = "2ad73377-0be6-4229-be46-da80238e2937"
         "minecraft:chain_command_block",
         "minecraft:repeating_command_block",
         "minecraft:structure_block",
-        "quark:grate",
         "minecraft:kelp" ]
     # #----------------------------------------------------------------------
     # BanTag. If any block has tag in this list will be cleared!
