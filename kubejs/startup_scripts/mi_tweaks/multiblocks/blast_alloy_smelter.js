@@ -55,7 +55,7 @@ MITweaksMachineEvents.registerBatchMultiblocks((event) => {
 
         /* Model configuration */
         'modern_industrialization:korp9_machine_casing', // casing of the controller
-        'alloy_smetler', // overlay folder
+        'alloy_smelter', // overlay folder
         true, // front overlay
         false, // top overlay
         false, // side overlay
