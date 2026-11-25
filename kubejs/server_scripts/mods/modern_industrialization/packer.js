@@ -208,7 +208,7 @@ ServerEvents.recipes((event) => {
         [
             { amount: 1, item: mi('titanium_ingot') },
             { amount: 1, item: mi('tungsten_ingot') },
-            { amount: 1, item: mi('ostrum_ingot') },
+            { amount: 1, item: ad('ostrum_ingot') },
         ],
         [{ amount: 1, item: mi('mixed_ingot_blastproof') }]
     );

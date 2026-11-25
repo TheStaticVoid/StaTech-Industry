@@ -90,7 +90,7 @@ ServerEvents.recipes((event) => {
         [
             { amount: 4, item: mi('steel_ring') },
             { amount: 2, item: mi('advanced_pump') },
-            { amount: 8, item: mi('desh_plate') },
+            { amount: 8, item: ad('desh_plate') },
             { amount: 1, tag: 'c:glass_blocks' },
         ],
         [{ amount: 1, item: ad('desh_tank') }],
@@ -106,7 +106,7 @@ ServerEvents.recipes((event) => {
         [
             { amount: 4, item: mi('steel_ring') },
             { amount: 2, item: mi('advanced_pump') },
-            { amount: 8, item: mi('ostrum_plate') },
+            { amount: 8, item: ad('ostrum_plate') },
             { amount: 1, tag: 'c:glass_blocks' },
         ],
         [{ amount: 1, item: ad('ostrum_tank') }],
@@ -122,7 +122,7 @@ ServerEvents.recipes((event) => {
         [
             { amount: 4, item: mi('steel_ring') },
             { amount: 2, item: mi('advanced_pump') },
-            { amount: 8, item: mi('calorite_plate') },
+            { amount: 8, item: ad('calorite_plate') },
             { amount: 1, tag: 'c:glass_blocks' },
         ],
         [{ amount: 1, item: ad('calorite_tank') }],

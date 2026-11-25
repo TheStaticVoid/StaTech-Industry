@@ -16,6 +16,7 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
         'ftbquests:detector',
         'moonlight:spawn_box',
         'nomansland:monster_anchor',
+        'kubejs:dev_stick',
     ];
     VARIOUS_UNOBTAINABLE.forEach((id) => event.remove(id));
 

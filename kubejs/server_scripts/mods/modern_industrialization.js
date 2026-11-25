@@ -280,7 +280,7 @@ ServerEvents.recipes((event) => {
     // -- CALORITE MACHINE CASING -- //
     event
         .shaped(mi('calorite_machine_casing'), ['PPP', 'PGP', 'PPP'], {
-            P: mi('calorite_plate'),
+            P: ad('calorite_plate'),
             G: mi('calorite_gear'),
         })
         .id(st('calorite_machine_casing'));
@@ -300,7 +300,7 @@ ServerEvents.recipes((event) => {
     // -- DESH MACHINE CASING -- //
     event
         .shaped(mi('desh_machine_casing'), ['PPP', 'PGP', 'PPP'], {
-            P: mi('desh_plate'),
+            P: ad('desh_plate'),
             G: mi('desh_gear'),
         })
         .id(st('desh_machine_casing'));
@@ -324,7 +324,7 @@ ServerEvents.recipes((event) => {
     // -- OSTRUM MACHINE CASING -- //
     event
         .shaped(mi('ostrum_machine_casing'), ['PPP', 'PGP', 'PPP'], {
-            P: mi('ostrum_plate'),
+            P: ad('ostrum_plate'),
             G: mi('ostrum_gear'),
         })
         .id(st('ostrum_machine_casing'));

@@ -648,6 +648,8 @@ StartupEvents.registry('armor_material', (event) => {
 });
 
 StartupEvents.registry('item', (event) => {
+    event.create('dev_stick').unstackable();
+
     event.create('lens_mold').unstackable();
 
     event

@@ -31,8 +31,8 @@ ServerEvents.recipes((event) => {
         600,
         [{ amount: 1, item: kj('basic_space_probe'), probability: 0.1 }],
         [
-            { amount: 1, item: mi('desh_ore'), probability: 0.25 },
-            { amount: 1, item: mi('moon_ice_ore'), probability: 0.075 },
+            { amount: 1, item: ad('moon_desh_ore'), probability: 0.25 },
+            { amount: 1, item: ad('moon_ice_shard_ore'), probability: 0.075 },
             { amount: 1, item: mi('bauxite_ore'), probability: 0.2 },
             { amount: 1, item: mc('gold_ore'), probability: 0.25 },
         ],
@@ -47,7 +47,7 @@ ServerEvents.recipes((event) => {
         600,
         [{ amount: 1, item: kj('advanced_space_probe'), probability: 0.1 }],
         [
-            { amount: 1, item: mi('ostrum_ore'), probability: 0.25 },
+            { amount: 1, item: ad('mars_ostrum_ore'), probability: 0.25 },
             { amount: 1, item: mi('ruby_ore'), probability: 0.4 },
             { amount: 1, item: mi('monazite_ore'), probability: 0.3 },
             { amount: 1, item: mi('sapphire_ore'), probability: 0.4 },
@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
             },
         ],
         [
-            { amount: 1, item: mi('calorite_ore'), probability: 0.25 },
+            { amount: 1, item: ad('venus_calorite_ore'), probability: 0.25 },
             { amount: 1, item: mc('ancient_debris'), probability: 0.1 },
             { amount: 1, item: mi('sapphire_ore'), probability: 0.8 },
             { amount: 1, item: mi('silver_ore'), probability: 0.9 },

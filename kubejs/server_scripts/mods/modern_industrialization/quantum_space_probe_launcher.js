@@ -32,10 +32,10 @@ ServerEvents.recipes((e) => {
         6000,
         [{ amount: 1, item: kj('space_probe'), probability: 0.75 }],
         [
-            { amount: 64, item: mi('deepslate_desh_ore') },
-            { amount: 64, item: mi('deepslate_ostrum_ore') },
-            { amount: 64, item: mi('deepslate_calorite_ore') },
-            { amount: 64, item: mi('deepslate_moon_ice_ore') },
+            { amount: 64, item: ad('deepslate_desh_ore') },
+            { amount: 64, item: ad('deepslate_ostrum_ore') },
+            { amount: 64, item: ad('deepslate_calorite_ore') },
+            { amount: 64, item: ad('deepslate_ice_shard_ore') },
         ]
     );
 });

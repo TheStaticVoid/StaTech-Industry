@@ -186,7 +186,7 @@ function getCharForBlock(blockId, block, mapping, charCodeRef, player) {
 
 BlockEvents.rightClicked((event) => {
     const { player, block, item } = event;
-    if (item.id !== 'modern_industrialization:cobalt_bolt') return;
+    if (item.id !== 'kubejs:dev_stick') return;
     const pos = { x: block.x, y: block.y, z: block.z };
 
     if (!player.shiftKeyDown) {
@@ -199,266 +199,262 @@ BlockEvents.rightClicked((event) => {
     event.success();
 });
 
-ItemEvents.firstRightClicked(
-    'modern_industrialization:cobalt_bolt',
-    (event) => {
-        const { player, level, item } = event;
+ItemEvents.firstRightClicked('kubejs:dev_stick', (event) => {
+    const { player, level, item } = event;
 
-        // Only process if it's an air click; block clicks are for setting positions via BlockEvents.rightClicked
-        if (event.target.type === 'block') return;
+    // Only process if it's an air click; block clicks are for setting positions via BlockEvents.rightClicked
+    if (event.target.type === 'block') return;
 
-        const pos1 = player.persistentData.get(POS1_KEY_CRAFTORIA_SHAPE);
-        const pos2 = player.persistentData.get(POS2_KEY_CRAFTORIA_SHAPE);
+    const pos1 = player.persistentData.get(POS1_KEY_CRAFTORIA_SHAPE);
+    const pos2 = player.persistentData.get(POS2_KEY_CRAFTORIA_SHAPE);
 
-        if (!pos1 || !pos2) {
-            player.tell(
-                Text.yellow(
-                    'Both corners must be set first. Use the item on blocks to set corners.'
-                )
-            );
-            return;
-        }
-
-        const min = {
-            x: Math.min(pos1.x, pos2.x),
-            y: Math.min(pos1.y, pos2.y),
-            z: Math.min(pos1.z, pos2.z),
-        };
-        const max = {
-            x: Math.max(pos1.x, pos2.x),
-            y: Math.max(pos1.y, pos2.y),
-            z: Math.max(pos1.z, pos2.z),
-        };
-
-        const sizeX = max.x - min.x + 1;
-        const sizeY = max.y - min.y + 1;
-        const sizeZ = max.z - min.z + 1;
-
-        const totalBlocks = sizeX * sizeY * sizeZ;
-        if (totalBlocks === 0) {
-            player.tell(Text.red('Selection is empty.'));
-            return;
-        }
-
-        const mapping = new Map();
-        let nextCharCode = 65;
-        const dataBuilder = [];
-        let firstControllerBlock = null;
-
-        // Iteration order: X, Y, Z
-        for (let x = min.x; x <= max.x; x++) {
-            for (let y = min.y; y <= max.y; y++) {
-                for (let z = min.z; z <= max.z; z++) {
-                    let currentPos = new BlockPos(x, y, z);
-                    let block = level.getBlock(currentPos);
-                    let blockId = `${block.id}`;
-
-                    let charCodeRef = { value: nextCharCode };
-                    let charForThisBlock = getCharForBlock(
-                        blockId,
-                        block,
-                        mapping,
-                        charCodeRef,
-                        player
-                    );
-                    nextCharCode = charCodeRef.value;
-
-                    if (charForThisBlock === null) return;
-                    if (charForThisBlock === '#' && !firstControllerBlock)
-                        firstControllerBlock = block;
-
-                    dataBuilder.push(charForThisBlock);
-                }
-            }
-        }
-
-        let facingDirection = null;
-        // Determine facing direction from the first controller block found
-        if (
-            firstControllerBlock &&
-            firstControllerBlock.entity instanceof $MultiblockMachineBlockEntity
-        ) {
-            facingDirection = $Direction.from3DDataValue(
-                firstControllerBlock.entityData.get('facingDirection')
-            );
-        } else if (mapping.values().includes('#')) {
-            // A controller was mapped, but we didn't get its block object (should not happen if logic is correct)
-            player.tell(
-                Text.red(
-                    'Critical error: Controller block was mapped but not captured for facing direction.'
-                )
-            );
-            return;
-        }
-        // If no controller ('#') was found, facingDirection remains null and will default to North in rotation logic.
-
-        let mappingBuilder = '';
-        for (let [id, char] of mapping) {
-            mappingBuilder += `${char}=${id}
-`;
-        }
-
-        // ---- START KUBEJS CODE GENERATION ----
-        let kubejsCode = `// Multiblock generated on ${new Date().toISOString()}\n`;
-        kubejsCode += `// Dimensions: X=${sizeX}, Y=${sizeY}, Z=${sizeZ}\n\n`;
-
-        kubejsCode += 'MIMachineEvents.registerMachines(event => {\n';
-        kubejsCode +=
-            "  // Hatches - define these based on your machine's needs\n";
-        kubejsCode += '  const noHatch = event.noHatch();\n';
-        kubejsCode +=
-            "  const multiblockHatch = event.hatchOf(/* 'item_input', 'item_output', 'fluid_input', 'fluid_output', 'energy_input' */); // TODO: Configure hatches\n\n";
-
-        kubejsCode += '  // Block Members\n';
-        const blockVarNames = new Map();
-        let varSuffix = 0;
-        for (const [id, char] of mapping) {
-            if (char === '#' || char === ' ') continue; // Skip controller/air blocks, they are handled automatically
-            // Create a KubeJS-friendly variable name, e.g., "minecraft:stone" -> "minecraftStone"
-            let varName = id
-                .replace(/[:.]/g, '_')
-                .replace(/_([a-z])/g, (g) => g[1].toUpperCase());
-            if (blockVarNames.has(varName)) {
-                varName += varSuffix++;
-            }
-            blockVarNames.set(id, varName);
-            kubejsCode += `  const ${varName} = event.memberOfBlock('${id}');\n`;
-        }
-        kubejsCode += '\n';
-
-        kubejsCode +=
-            "  const generatedShape = event.layeredShape('YOUR_CASING_BLOCK_ID_HERE', [\n"; // Placeholder for casing
-
-        // Shape definition
-        // The KubeJS layeredShape expects an array of layers (Game Z), where each layer is an array of strings (Game Y rows),
-        // and each string contains characters for Game X.
-        // layeredShape[GAME_Z_IDX][GAME_Y_IDX].charAt(GAME_X_IDX)
-        // The loops below construct this based on the scanned data (X,Y,Z) and controller orientation.
-
-        // KubeJS script loops define:
-        // Outer loop (z_def_idx): Defines Game Z layers for KubeJS output (inverted for rotation z_prime).
-        // Middle loop (y_def_idx): Defines Game Y rows within each Z layer.
-        // Inner loop (x_def_idx): Defines Game X characters within each Y row.
-
-        for (let z_def_idx = 0; z_def_idx < sizeZ; z_def_idx++) {
-            // Z layer
-            let z_prime_for_rotation = sizeZ - 1 - z_def_idx; // Inverted Z for North-facing view rotation
-            kubejsCode += '    ['; // Start Z-layer array
-
-            for (let y_def_idx = 0; y_def_idx < sizeY; y_def_idx++) {
-                // Y row
-                let data_y_scan_offset = y_def_idx; // Y maps directly to scan Y for data fetching
-                let x_chars_in_row = '';
-
-                for (let x_def_idx = 0; x_def_idx < sizeX; x_def_idx++) {
-                    // X char
-                    let x_prime_for_rotation = x_def_idx; // X maps directly to x_prime for rotation
-
-                    let data_x_offset;
-                    let data_z_offset;
-
-                    // Rotation logic uses x_prime_for_rotation and z_prime_for_rotation
-                    let rotatedOffsets = getRotatedOffsets(
-                        x_prime_for_rotation,
-                        z_prime_for_rotation,
-                        sizeX,
-                        sizeZ,
-                        facingDirection,
-                        player
-                    );
-                    data_x_offset = rotatedOffsets.data_x_offset;
-                    data_z_offset = rotatedOffsets.data_z_offset;
-
-                    // dataBuilder is ordered: X, then Y, then Z (relative to selection min corner)
-                    // Element at (selX_offset, selY_offset, selZ_offset) is at
-                    // index = (selX_offset * sizeY * sizeZ) + (selY_offset * sizeZ) + selZ_offset
-                    let dataBuilderIndex =
-                        data_x_offset * sizeY * sizeZ +
-                        data_y_scan_offset * sizeZ +
-                        data_z_offset;
-
-                    if (
-                        dataBuilderIndex < 0 ||
-                        dataBuilderIndex >= dataBuilder.length
-                    ) {
-                        x_chars_in_row += '?'; // Error placeholder
-                        console.error(
-                            `GenerateMIMulti: Out of bounds dataBuilderIndex: ${dataBuilderIndex} for z_def_idx:${z_def_idx}(z_prime:${z_prime_for_rotation}), y_def_idx:${y_def_idx}(data_y_scan:${data_y_scan_offset}), x_def_idx:${x_def_idx}(x_prime:${x_prime_for_rotation}). Dir: ${facingDirection}`
-                        );
-                    } else {
-                        x_chars_in_row += dataBuilder[dataBuilderIndex];
-                    }
-                }
-                kubejsCode += `'${x_chars_in_row}'${y_def_idx === sizeY - 1 ? '' : ','}`; // Row for Y
-            }
-            kubejsCode += `]${z_def_idx === sizeZ - 1 ? '' : ','}
-`; // End layer for Z
-        }
-        kubejsCode += '  ])\n';
-
-        // Key definitions
-        for (const [id, char] of mapping) {
-            let varName = blockVarNames.get(id);
-            if (char === '#' || char === ' ')
-                continue; // Skip controller/air blocks, they are handled automatically
-            else kubejsCode += `    .key('${char}', ${varName}, noHatch)\n`;
-        }
-        kubejsCode += '    .build();\n\n';
-
-        kubejsCode +=
-            '  // Example Machine Registration (uncomment and configure)\n';
-        kubejsCode += '  /*\n';
-        kubejsCode += '  event.simpleElectricCraftingMultiBlock(\n';
-        kubejsCode += `    'Generated Machine Name', // English Name
-`;
-        kubejsCode += `    'generated_machine_id', // internal name
-`;
-        kubejsCode += `    YOUR_RECIPE_TYPE_VAR, // Recipe Type (e.g., MODEL_SYNTHESIZER for example)
-`;
-        kubejsCode += '    generatedShape,\n';
-        kubejsCode += `    event.progressBar(77, 33, 'arrow'), // TODO: Adjust progress bar position and texture
-`;
-        kubejsCode += `    itemInputs => itemInputs.addSlots(56, 35, 2, 1), // TODO: Adjust item input slots
-`;
-        kubejsCode += `    itemOutputs => itemOutputs.addSlots(102, 35, 2, 1), // TODO: Adjust item output slots
-`;
-        kubejsCode += `    fluidInputs => fluidInputs.addSlots(56, 35, 2, 1), // TODO: Adjust fluid input slots
-`;
-        kubejsCode += `    fluidOutputs => fluidOutputs.addSlots(102, 35, 2, 1), // TODO: Adjust fluid output slots
-`;
-        kubejsCode += `    'casing_material_here', // controller casing (e.g., 'steel')
-`;
-        kubejsCode += `    'overlay_folder_here', // overlay folder (e.g., 'model_synthesizer')
-`;
-        kubejsCode += `    true, // front overlay
-`;
-        kubejsCode += `    false, // top overlay
-`;
-        kubejsCode += `    false  // side overlay
-`;
-        kubejsCode += '  );\n';
-        kubejsCode += '  */\n';
-        kubejsCode += '});\n';
-
-        // ---- END KUBEJS CODE GENERATION ----
-
-        console.info(
-            `Multiblock shape data for player ${player.username} (${item.id}):`
-        );
-        console.info(kubejsCode);
+    if (!pos1 || !pos2) {
         player.tell(
-            Text.gold(
-                'Shape data has been logged to the server console, or you can click this text to copy it.'
+            Text.yellow(
+                'Both corners must be set first. Use the item on blocks to set corners.'
             )
-                .clickCopy(kubejsCode)
-                .hover('Click to copy KubeJS code')
         );
-
-        player.tell(
-            Text.green(`Processed ${totalBlocks} blocks. Selection cleared.`)
-        );
-
-        player.persistentData.remove(POS1_KEY_CRAFTORIA_SHAPE);
-        player.persistentData.remove(POS2_KEY_CRAFTORIA_SHAPE);
+        return;
     }
-);
+
+    const min = {
+        x: Math.min(pos1.x, pos2.x),
+        y: Math.min(pos1.y, pos2.y),
+        z: Math.min(pos1.z, pos2.z),
+    };
+    const max = {
+        x: Math.max(pos1.x, pos2.x),
+        y: Math.max(pos1.y, pos2.y),
+        z: Math.max(pos1.z, pos2.z),
+    };
+
+    const sizeX = max.x - min.x + 1;
+    const sizeY = max.y - min.y + 1;
+    const sizeZ = max.z - min.z + 1;
+
+    const totalBlocks = sizeX * sizeY * sizeZ;
+    if (totalBlocks === 0) {
+        player.tell(Text.red('Selection is empty.'));
+        return;
+    }
+
+    const mapping = new Map();
+    let nextCharCode = 65;
+    const dataBuilder = [];
+    let firstControllerBlock = null;
+
+    // Iteration order: X, Y, Z
+    for (let x = min.x; x <= max.x; x++) {
+        for (let y = min.y; y <= max.y; y++) {
+            for (let z = min.z; z <= max.z; z++) {
+                let currentPos = new BlockPos(x, y, z);
+                let block = level.getBlock(currentPos);
+                let blockId = `${block.id}`;
+
+                let charCodeRef = { value: nextCharCode };
+                let charForThisBlock = getCharForBlock(
+                    blockId,
+                    block,
+                    mapping,
+                    charCodeRef,
+                    player
+                );
+                nextCharCode = charCodeRef.value;
+
+                if (charForThisBlock === null) return;
+                if (charForThisBlock === '#' && !firstControllerBlock)
+                    firstControllerBlock = block;
+
+                dataBuilder.push(charForThisBlock);
+            }
+        }
+    }
+
+    let facingDirection = null;
+    // Determine facing direction from the first controller block found
+    if (
+        firstControllerBlock &&
+        firstControllerBlock.entity instanceof $MultiblockMachineBlockEntity
+    ) {
+        facingDirection = $Direction.from3DDataValue(
+            firstControllerBlock.entityData.get('facingDirection')
+        );
+    } else if (mapping.values().includes('#')) {
+        // A controller was mapped, but we didn't get its block object (should not happen if logic is correct)
+        player.tell(
+            Text.red(
+                'Critical error: Controller block was mapped but not captured for facing direction.'
+            )
+        );
+        return;
+    }
+    // If no controller ('#') was found, facingDirection remains null and will default to North in rotation logic.
+
+    let mappingBuilder = '';
+    for (let [id, char] of mapping) {
+        mappingBuilder += `${char}=${id}
+`;
+    }
+
+    // ---- START KUBEJS CODE GENERATION ----
+    let kubejsCode = `// Multiblock generated on ${new Date().toISOString()}\n`;
+    kubejsCode += `// Dimensions: X=${sizeX}, Y=${sizeY}, Z=${sizeZ}\n\n`;
+
+    kubejsCode += 'MIMachineEvents.registerMachines(event => {\n';
+    kubejsCode += "  // Hatches - define these based on your machine's needs\n";
+    kubejsCode += '  const noHatch = event.noHatch();\n';
+    kubejsCode +=
+        "  const multiblockHatch = event.hatchOf(/* 'item_input', 'item_output', 'fluid_input', 'fluid_output', 'energy_input' */); // TODO: Configure hatches\n\n";
+
+    kubejsCode += '  // Block Members\n';
+    const blockVarNames = new Map();
+    let varSuffix = 0;
+    for (const [id, char] of mapping) {
+        if (char === '#' || char === ' ') continue; // Skip controller/air blocks, they are handled automatically
+        // Create a KubeJS-friendly variable name, e.g., "minecraft:stone" -> "minecraftStone"
+        let varName = id
+            .replace(/[:.]/g, '_')
+            .replace(/_([a-z])/g, (g) => g[1].toUpperCase());
+        if (blockVarNames.has(varName)) {
+            varName += varSuffix++;
+        }
+        blockVarNames.set(id, varName);
+        kubejsCode += `  const ${varName} = event.memberOfBlock('${id}');\n`;
+    }
+    kubejsCode += '\n';
+
+    kubejsCode +=
+        "  const generatedShape = event.layeredShape('YOUR_CASING_BLOCK_ID_HERE', [\n"; // Placeholder for casing
+
+    // Shape definition
+    // The KubeJS layeredShape expects an array of layers (Game Z), where each layer is an array of strings (Game Y rows),
+    // and each string contains characters for Game X.
+    // layeredShape[GAME_Z_IDX][GAME_Y_IDX].charAt(GAME_X_IDX)
+    // The loops below construct this based on the scanned data (X,Y,Z) and controller orientation.
+
+    // KubeJS script loops define:
+    // Outer loop (z_def_idx): Defines Game Z layers for KubeJS output (inverted for rotation z_prime).
+    // Middle loop (y_def_idx): Defines Game Y rows within each Z layer.
+    // Inner loop (x_def_idx): Defines Game X characters within each Y row.
+
+    for (let z_def_idx = 0; z_def_idx < sizeZ; z_def_idx++) {
+        // Z layer
+        let z_prime_for_rotation = sizeZ - 1 - z_def_idx; // Inverted Z for North-facing view rotation
+        kubejsCode += '    ['; // Start Z-layer array
+
+        for (let y_def_idx = 0; y_def_idx < sizeY; y_def_idx++) {
+            // Y row
+            let data_y_scan_offset = y_def_idx; // Y maps directly to scan Y for data fetching
+            let x_chars_in_row = '';
+
+            for (let x_def_idx = 0; x_def_idx < sizeX; x_def_idx++) {
+                // X char
+                let x_prime_for_rotation = x_def_idx; // X maps directly to x_prime for rotation
+
+                let data_x_offset;
+                let data_z_offset;
+
+                // Rotation logic uses x_prime_for_rotation and z_prime_for_rotation
+                let rotatedOffsets = getRotatedOffsets(
+                    x_prime_for_rotation,
+                    z_prime_for_rotation,
+                    sizeX,
+                    sizeZ,
+                    facingDirection,
+                    player
+                );
+                data_x_offset = rotatedOffsets.data_x_offset;
+                data_z_offset = rotatedOffsets.data_z_offset;
+
+                // dataBuilder is ordered: X, then Y, then Z (relative to selection min corner)
+                // Element at (selX_offset, selY_offset, selZ_offset) is at
+                // index = (selX_offset * sizeY * sizeZ) + (selY_offset * sizeZ) + selZ_offset
+                let dataBuilderIndex =
+                    data_x_offset * sizeY * sizeZ +
+                    data_y_scan_offset * sizeZ +
+                    data_z_offset;
+
+                if (
+                    dataBuilderIndex < 0 ||
+                    dataBuilderIndex >= dataBuilder.length
+                ) {
+                    x_chars_in_row += '?'; // Error placeholder
+                    console.error(
+                        `GenerateMIMulti: Out of bounds dataBuilderIndex: ${dataBuilderIndex} for z_def_idx:${z_def_idx}(z_prime:${z_prime_for_rotation}), y_def_idx:${y_def_idx}(data_y_scan:${data_y_scan_offset}), x_def_idx:${x_def_idx}(x_prime:${x_prime_for_rotation}). Dir: ${facingDirection}`
+                    );
+                } else {
+                    x_chars_in_row += dataBuilder[dataBuilderIndex];
+                }
+            }
+            kubejsCode += `'${x_chars_in_row}'${y_def_idx === sizeY - 1 ? '' : ','}`; // Row for Y
+        }
+        kubejsCode += `]${z_def_idx === sizeZ - 1 ? '' : ','}
+`; // End layer for Z
+    }
+    kubejsCode += '  ])\n';
+
+    // Key definitions
+    for (const [id, char] of mapping) {
+        let varName = blockVarNames.get(id);
+        if (char === '#' || char === ' ')
+            continue; // Skip controller/air blocks, they are handled automatically
+        else kubejsCode += `    .key('${char}', ${varName}, noHatch)\n`;
+    }
+    kubejsCode += '    .build();\n\n';
+
+    kubejsCode +=
+        '  // Example Machine Registration (uncomment and configure)\n';
+    kubejsCode += '  /*\n';
+    kubejsCode += '  event.simpleElectricCraftingMultiBlock(\n';
+    kubejsCode += `    'Generated Machine Name', // English Name
+`;
+    kubejsCode += `    'generated_machine_id', // internal name
+`;
+    kubejsCode += `    YOUR_RECIPE_TYPE_VAR, // Recipe Type (e.g., MODEL_SYNTHESIZER for example)
+`;
+    kubejsCode += '    generatedShape,\n';
+    kubejsCode += `    event.progressBar(77, 33, 'arrow'), // TODO: Adjust progress bar position and texture
+`;
+    kubejsCode += `    itemInputs => itemInputs.addSlots(56, 35, 2, 1), // TODO: Adjust item input slots
+`;
+    kubejsCode += `    itemOutputs => itemOutputs.addSlots(102, 35, 2, 1), // TODO: Adjust item output slots
+`;
+    kubejsCode += `    fluidInputs => fluidInputs.addSlots(56, 35, 2, 1), // TODO: Adjust fluid input slots
+`;
+    kubejsCode += `    fluidOutputs => fluidOutputs.addSlots(102, 35, 2, 1), // TODO: Adjust fluid output slots
+`;
+    kubejsCode += `    'casing_material_here', // controller casing (e.g., 'steel')
+`;
+    kubejsCode += `    'overlay_folder_here', // overlay folder (e.g., 'model_synthesizer')
+`;
+    kubejsCode += `    true, // front overlay
+`;
+    kubejsCode += `    false, // top overlay
+`;
+    kubejsCode += `    false  // side overlay
+`;
+    kubejsCode += '  );\n';
+    kubejsCode += '  */\n';
+    kubejsCode += '});\n';
+
+    // ---- END KUBEJS CODE GENERATION ----
+
+    console.info(
+        `Multiblock shape data for player ${player.username} (${item.id}):`
+    );
+    console.info(kubejsCode);
+    player.tell(
+        Text.gold(
+            'Shape data has been logged to the server console, or you can click this text to copy it.'
+        )
+            .clickCopy(kubejsCode)
+            .hover('Click to copy KubeJS code')
+    );
+
+    player.tell(
+        Text.green(`Processed ${totalBlocks} blocks. Selection cleared.`)
+    );
+
+    player.persistentData.remove(POS1_KEY_CRAFTORIA_SHAPE);
+    player.persistentData.remove(POS2_KEY_CRAFTORIA_SHAPE);
+});

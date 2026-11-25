@@ -1217,7 +1217,7 @@ ServerEvents.recipes((event) => {
         16,
         200,
         [
-            { amount: 8, item: mi('calorite_plate') },
+            { amount: 8, item: ad('calorite_plate') },
             { amount: 1, item: mi('calorite_gear') },
         ],
         [{ amount: 1, item: mi('calorite_machine_casing') }]
@@ -1243,7 +1243,7 @@ ServerEvents.recipes((event) => {
         16,
         200,
         [
-            { amount: 8, item: mi('desh_plate') },
+            { amount: 8, item: ad('desh_plate') },
             { amount: 1, item: mi('desh_gear') },
         ],
         [{ amount: 1, item: mi('desh_machine_casing') }]
@@ -1282,7 +1282,7 @@ ServerEvents.recipes((event) => {
         16,
         200,
         [
-            { amount: 8, item: mi('ostrum_plate') },
+            { amount: 8, item: ad('ostrum_plate') },
             { amount: 1, item: mi('ostrum_gear') },
         ],
         [{ amount: 1, item: mi('ostrum_machine_casing') }]

@@ -264,21 +264,21 @@ ServerEvents.recipes((event) => {
 
     // -- DESH ORE -- //
     event
-        .shaped('8x ' + mi('desh_ore'), ['CC ', 'C C', 'CC '], {
+        .shaped('8x ' + ad('moon_desh_ore'), ['CC ', 'C C', 'CC '], {
             C: legendary,
         })
         .id(st('desh_ore_from_legendary'));
 
     // -- OSTRUM ORE -- //
     event
-        .shaped('8x ' + mi('ostrum_ore'), ['CCC', 'CCC', 'CCC'], {
+        .shaped('8x ' + ad('mars_ostrum_ore'), ['CCC', 'CCC', 'CCC'], {
             C: legendary,
         })
         .id('ostrum_ore_from_legendary');
 
     // -- MOON ICE ORE -- //
     event
-        .shaped('8x ' + mi('moon_ice_ore'), [' CC', ' C ', 'CC '], {
+        .shaped('8x ' + ad('moon_ice_shard_ore'), [' CC', ' C ', 'CC '], {
             C: legendary,
         })
         .id('moon_ice_ore_from_legendary');
@@ -339,7 +339,7 @@ ServerEvents.recipes((event) => {
 
     // -- CALORITE ORE -- //
     event
-        .shaped('8x ' + mi('calorite_ore'), ['CCC', 'C  ', 'CCC'], {
+        .shaped('8x ' + ad('venus_calorite_ore'), ['CCC', 'C  ', 'CCC'], {
             C: mythic,
         })
         .id(st('calorite_ore_from_mythic'));
@@ -533,7 +533,7 @@ ServerEvents.tags('item', (event) => {
     const AXES = event.get(mc('axes')).getObjectIds();
 
     AXES.forEach((axe) => {
-            event.add(kj('lumberaxe_blacklist'), axe);
+        event.add(kj('lumberaxe_blacklist'), axe);
     });
 
     const LUMBERAXES = [

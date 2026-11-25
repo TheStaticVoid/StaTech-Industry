@@ -35,13 +35,12 @@ MIMaterialEvents.addMaterials((event) => {
             .defaultRecipes();
     });
 
-    event.createMaterial('Desh', 'desh', 0xe9ba5d, (builder) => {
+    event.createMaterial('Desh', 'desh', 0xc77142, (builder) => {
         builder
+            .materialSet('shiny')
             .hardness('average')
             .addParts(
-                'plate',
                 'hot_ingot',
-                'ingot',
                 'rod',
                 'gear',
                 'ring',
@@ -51,25 +50,20 @@ MIMaterialEvents.addMaterials((event) => {
                 'drill_head',
                 'dust'
             )
+            .addExternalPart('ingot', ad('desh_ingot'))
+            .addExternalPart('block', ad('desh_block'))
+            .addExternalPart('plate', ad('desh_plate'))
             .machineCasing(12.0)
             .pipeCasing(12.0)
-            .ore({
-                generate: false,
-                ore_set: 'iron',
-            })
-            .block('iron')
-            .rawMetal('copper', true)
-            .rawMetal('copper', false)
             .defaultRecipes();
     });
 
-    event.createMaterial('Ostrum', 'ostrum', 0xbd7666, (builder) => {
+    event.createMaterial('Ostrum', 'ostrum', 0x925e64, (builder) => {
         builder
+            .materialSet('metallic')
             .hardness('average')
             .addParts(
-                'plate',
                 'hot_ingot',
-                'ingot',
                 'rod',
                 'gear',
                 'ring',
@@ -79,15 +73,11 @@ MIMaterialEvents.addMaterials((event) => {
                 'drill_head',
                 'dust'
             )
+            .addExternalPart('ingot', ad('ostrum_ingot'))
+            .addExternalPart('block', ad('ostrum_block'))
+            .addExternalPart('plate', ad('ostrum_plate'))
             .machineCasing(12.0)
             .pipeCasing(12.0)
-            .ore({
-                generate: false,
-                ore_set: 'iron',
-            })
-            .block('iron')
-            .rawMetal('copper', true)
-            .rawMetal('copper', false)
             .defaultRecipes();
     });
 
@@ -121,13 +111,12 @@ MIMaterialEvents.addMaterials((event) => {
         }
     );
 
-    event.createMaterial('Calorite', 'calorite', 0xb63044, (builder) => {
+    event.createMaterial('Calorite', 'calorite', 0xb83145, (builder) => {
         builder
+            .materialSet('shiny')
             .hardness('hard')
             .addParts(
-                'plate',
                 'hot_ingot',
-                'ingot',
                 'rod',
                 'gear',
                 'ring',
@@ -139,13 +128,9 @@ MIMaterialEvents.addMaterials((event) => {
             )
             .machineCasing(12.0)
             .pipeCasing(12.0)
-            .ore({
-                generate: false,
-                ore_set: 'iron',
-            })
-            .block('iron')
-            .rawMetal('copper', true)
-            .rawMetal('copper', false)
+            .addExternalPart('ingot', ad('calorite_ingot'))
+            .addExternalPart('block', ad('calorite_block'))
+            .addExternalPart('plate', ad('calorite_plate'))
             .defaultRecipes();
     });
 
@@ -271,16 +256,10 @@ MIMaterialEvents.addMaterials((event) => {
             .defaultRecipes();
     });
 
-    event.createMaterial('Moon Ice', 'moon_ice', 0x62bbf7, (builder) => {
+    event.createMaterial('Ice Shard', 'ice_shard', 0x62bbf7, (builder) => {
         builder
             .hardness('hard')
             .addParts('dust', 'tiny_dust')
-            .ore({
-                generate: false,
-                ore_set: 'nether_gold',
-            })
-            .rawMetal('copper', true)
-            .rawMetal('iridium', false)
             .defaultRecipes();
     });
 
@@ -474,18 +453,27 @@ MIMaterialEvents.modifyMaterial('silver', (event) => {
         veins_per_chunk: 4,
         max_y: 24,
         min_xp: 0,
-        max_xp: 0
+        max_xp: 0,
     });
 });
 
 MIMaterialEvents.modifyMaterial('quartz', (event) => {
-    event.builder.ore({ generate: false, ore_set: 'quartz', min_xp: 2, max_xp: 5  }, 'minecraft:deepslate');
+    event.builder.ore(
+        { generate: false, ore_set: 'quartz', min_xp: 2, max_xp: 5 },
+        'minecraft:deepslate'
+    );
 });
 
 MIMaterialEvents.modifyMaterial('platinum', (event) => {
-    event.builder.ore({ generate: false, ore_set: 'gold' }, 'minecraft:deepslate');
+    event.builder.ore(
+        { generate: false, ore_set: 'gold' },
+        'minecraft:deepslate'
+    );
 });
 
 MIMaterialEvents.modifyMaterial('titanium', (event) => {
-    event.builder.ore({ generate: false, ore_set: 'copper' }, 'minecraft:deepslate');
+    event.builder.ore(
+        { generate: false, ore_set: 'copper' },
+        'minecraft:deepslate'
+    );
 });
