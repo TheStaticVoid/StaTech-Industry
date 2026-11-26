@@ -10,7 +10,6 @@ MIMaterialEvents.addMaterials((event) => {
             .addParts(
                 'tiny_dust',
                 'dust',
-                'crushed_dust',
                 'hot_ingot',
                 'ingot',
                 'nugget',
@@ -257,10 +256,7 @@ MIMaterialEvents.addMaterials((event) => {
     });
 
     event.createMaterial('Ice Shard', 'ice_shard', 0x62bbf7, (builder) => {
-        builder
-            .hardness('hard')
-            .addParts('dust', 'tiny_dust')
-            .defaultRecipes();
+        builder.hardness('hard').addParts('dust', 'tiny_dust').defaultRecipes();
     });
 
     event.createMaterial('Entro', 'entro', 0x3ed19b, (builder) => {

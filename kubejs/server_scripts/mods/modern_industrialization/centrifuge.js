@@ -33,7 +33,7 @@ ServerEvents.recipes((event) => {
         st('ice_shard'),
         32,
         300,
-        [{ amount: 8, item: mi('moon_ice_dust') }],
+        [{ amount: 8, item: mi('ice_shard_dust') }],
         null,
         null,
         [{ amount: 100, fluid: mi('helium_3') }]

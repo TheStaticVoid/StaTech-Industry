@@ -648,7 +648,7 @@ ServerEvents.tags('item', (event) => {
         'calorite',
         'enderium',
         'polytetrafluoroethylene',
-        'moon_ice',
+        'ice_shard',
         'stone',
         'tuff',
         'calcite',

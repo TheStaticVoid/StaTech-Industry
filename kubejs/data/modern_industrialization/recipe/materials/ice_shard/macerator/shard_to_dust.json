@@ -1,21 +1,21 @@
 {
     "type": "modern_industrialization:macerator",
-    "duration": 100,
+    "duration": 400,
     "eu": 2,
     "item_inputs": [
         {
             "amount": 1,
-            "item": "modern_industrialization:cobalt_crushed_dust"
+            "item": "ad_astra:ice_shard"
         }
     ],
     "item_outputs": [
         {
             "amount": 1,
-            "item": "modern_industrialization:cobalt_dust"
+            "item": "modern_industrialization:ice_shard_dust"
         },
         {
             "amount": 1,
-            "item": "modern_industrialization:cobalt_dust",
+            "item": "modern_industrialization:ice_shard_dust",
             "probability": 0.5
         }
     ]
