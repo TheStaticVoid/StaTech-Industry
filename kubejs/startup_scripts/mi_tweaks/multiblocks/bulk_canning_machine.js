@@ -3,17 +3,6 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
-let BULK_CANNING_MACHINE;
-
-MIMachineEvents.registerRecipeTypes((event) => {
-    BULK_CANNING_MACHINE = event
-        .register('bulk_canning_machine')
-        .withItemInputs()
-        .withItemOutputs()
-        .withFluidInputs()
-        .withFluidOutputs();
-});
-
 MITweaksMachineEvents.registerBatchMultiblocks((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
 

@@ -3,15 +3,6 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
-let BEDROCK_FRACKING_ARRAY;
-
-MIMachineEvents.registerRecipeTypes((event) => {
-    BEDROCK_FRACKING_ARRAY = event
-        .register('bedrock_fracking_array')
-        .withItemInputs()
-        .withFluidOutputs();
-});
-
 MITweaksMachineEvents.registerBatchMultiblocks((event) => {
     const noHatch = event.noHatch();
     const multiblockHatch = event.hatchOf(

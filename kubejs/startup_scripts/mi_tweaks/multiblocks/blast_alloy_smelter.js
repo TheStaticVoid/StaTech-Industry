@@ -3,15 +3,6 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
-let BLAST_ALLOY_SMELTER;
-
-MIMachineEvents.registerRecipeTypes((event) => {
-    BLAST_ALLOY_SMELTER = event
-        .register('blast_alloy_smelter')
-        .withItemInputs()
-        .withItemOutputs();
-});
-
 MITweaksMachineEvents.registerBatchMultiblocks((event) => {
     // -- MOD NAMESPACE UTILITY FUNCTIONS -- //
 

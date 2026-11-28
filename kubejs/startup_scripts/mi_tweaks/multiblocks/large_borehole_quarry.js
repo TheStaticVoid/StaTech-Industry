@@ -3,15 +3,6 @@
 // STATECH INDUSTRY 2
 // -----------------------------------------
 
-let LARGE_BOREHOLE_QUARRY;
-
-MIMachineEvents.registerRecipeTypes((event) => {
-    LARGE_BOREHOLE_QUARRY = event
-        .register('large_borehole_quarry')
-        .withItemInputs()
-        .withItemOutputs();
-});
-
 MITweaksMachineEvents.registerBatchMultiblocks((event) => {
     const noHatch = event.noHatch();
     const multiblockHatch = event.hatchOf(
